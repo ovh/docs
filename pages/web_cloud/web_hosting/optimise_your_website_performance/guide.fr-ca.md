@@ -1,7 +1,7 @@
 ---
 title: 'Optimisation des performances de votre site'
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-updated: 2022-02-03
+updated: 2023-01-08
 ---
 
 ## Objectif
@@ -93,24 +93,24 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Vous pouvez accéder à vos fichiers journaux, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
-Comment accéder aux fichiers journaux :
+CComment accéder aux statistiques et logs :
 
-- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
+- Cliquez sur `Hébergement`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné;
 
-- Cliquez sur l’onglet `Plus +`{.action}, puis sélectionnez `Statistiques et fichiers journaux`{.action} ;
+- sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action};
 
-- Cliquez ensuite sur les liens affichés pour accéder soit aux _statistiques de visite du site web_ ou aux _fichiers journaux_.
+- Cliquez ensuite sur le boutton `Voir les statistiques`{.action} affichés pour accéder aux *statistiques de visite du site web* ou sur `Voir les logs`{.action} pour consulter *les logs disponibles pour votre hébergement web*.
 
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Comment accéder aux graphiques :
 
-- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
+- Cliquez sur `Hébergement`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné;
 
-- Lorsque vous êtes dans la section `Informations générales`{.action}, défilez jusqu’au bas de la page où vous pouvez consulter les graphiques liés à l’utilisation de votre hébergement ;
+- sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}; défilez jusqu’au bas de la page où se trouve le graphique liés à l’utilisation de votre hébergement;
 
-- Sélectionnez le type d’information ainsi que la période des données affichées.
-![graphs](images/graphs_highlighted.png){.thumbnail}
+- Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Quels sont les différents types de renseignements qui peuvent être affichés?
 

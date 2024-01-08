@@ -100,14 +100,14 @@ How to access the logs:
 - Click on the domain in the `Hosting`{.action} section,
 - Click on the `More +`{.action} tab then select `Statistics and logs`{.action}.
 - Then click on the links displayed to access either the _Website visit statistics_ or the _Logs_.
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 How to access the graphs:
 
 - Click on the domain in the `Hosting`{.action} section,
 - Once in the `General information`{.action} section, scroll down to the very bottom of the page, there you can consult the graphs of your hosting usage.
 - There you will be able to select the type of information as well as the time period for the data to be visualised.
-![graphs](images/graphs_highlighted.png){.thumbnail}
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 What are the different types of information that can be displayed?
 

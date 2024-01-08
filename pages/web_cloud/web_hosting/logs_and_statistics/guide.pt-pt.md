@@ -93,7 +93,7 @@ Encontre nesta secção a atividade da infraestrutura do seu alojamento, de form
 
 Clique no separador `Informações gerais`{.action} e, a seguir, desça na parte inferior da página.
 
-![alojamento](images/hosting-activity-graphic.png){.thumbnail}
+![alojamento](images/infrastructure-statistics-graph.png){.thumbnail}
 
 É possível apresentar diferentes tipos de gráficos a partir do menu pendente no canto superior esquerdo:
 

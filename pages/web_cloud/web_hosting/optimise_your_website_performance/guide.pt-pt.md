@@ -100,13 +100,13 @@ Como aceder aos logs:
 \- Clique no domínio na secção `Alojamento`{.action},
 \- Clique no separador `Mais +`{.action} e, de seguida, selecione `Estatísticas e logs`{.action}.
 \- De seguida, clique nas hiperligações apresentadas para aceder às _Estatísticas de visitas do website_ ou aos _Logs_.
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Como aceder aos gráficos:
 \- Clique no domínio da secção `Alojamento`{.action},
 \- Na secção `Informação geral`{.action}, desloque-se para baixo até à parte inferior da página, onde pode consultar os gráficos da utilização do seu alojamento.
 \- Nessa secção, pode selecionar o tipo de informação e o período de tempo para a visualização dos dados.
-![gráficos](images/graphs_highlighted.png){.thumbnail}
+![gráficos](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Quais são os diferentes tipos de informação que podem ser visualizados?
 

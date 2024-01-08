@@ -89,7 +89,7 @@ Retrouvez dans cette section l'activité de l'infrastructure de votre hébergeme
 
 Cliquez sur l'onglet `Informations générales`{.action}, puis descendez en bas de la page.
 
-![hosting](images/hosting-activity-graphic.png){.thumbnail}
+![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Il est possible d'afficher différent types de graphiques, depuis le menu déroulant en haut à gauche :
 

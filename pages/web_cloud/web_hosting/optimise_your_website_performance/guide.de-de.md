@@ -1,7 +1,7 @@
 ---
 title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
-updated: 2022-02-03
+updated: 2023-01-08
 ---
 
 > [!primary]
@@ -81,19 +81,30 @@ Es liegt an Ihnen, diejenigen auszuwählen, die Ihren spezifischen Anforderungen
 Weitere Details zu diesem Thema finden Sie unten in Schritt 5.
 
 ### Schritt 4: Optimieren Ihrer Skripte
+
 Vergleichen Sie die Grafiken der Ressourcennutzung Ihres Hostings (weitere Informationen unten), um den Ursprung der Verzögerungen zu ermitteln, und entnehmen Sie die Daten dieser Spitzenwerte aus den Protokollen.
 
 Sie können direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihre Logs, Statistiken und Verlaufsdiagramme zugreifen.
 
-So greifen Sie auf die Logs zu: Klicken Sie auf die Domain im Abschnitt `Hosting-Pakete`{.action}. Klicken Sie auf die Registerkarte `Mehr+`{.action} und wählen Sie dann `Statistiken und Logs`{.action}. Klicken Sie dann auf die angezeigten Links, um entweder auf die _Besucherstatistiken_ oder die _Logs_ zuzugreifen.
+Zugriff auf Statistiken und Logs:
 
-![logs](images/logs_highlighted.png){.thumbnail}
+- Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus;
 
-So greifen Sie auf die Hosting-Graphen zu: Klicken Sie auf die Domain im Abschnitt `Hosting-Pakete`{.action}. Scrollen Sie im Abschnitt `Allgemeine Informationen`{.action} bis zum Ende der Seite. Dort können Sie die Graphen zur Hosting-Nutzung einsehen.
+- Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action};
 
-Sie können die Art der Informationen sowie den Zeitraum für die Visualisierung der Daten auswählen.
+- Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die *Besucherstatistiken der Website* zuzugreifen, oder auf `Die Logs einsehen`{.action}, um *die für Ihr Webhosting verfügbaren Logs anzuzeigen*.
 
-![graphs](images/graphs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
+
+So greifen Sie auf Grafiken zu:
+
+- Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus;
+
+- Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action}; scrollen Sie bis zum Ende der Seite, auf der sich die Grafik zur Nutzung Ihres Hostings befindet;
+
+- Wählen Sie den Informations**typ** sowie den **Zeitraum** der angezeigten Daten aus.
+
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Welche verschiedenen Arten von Informationen können angezeigt werden?
 

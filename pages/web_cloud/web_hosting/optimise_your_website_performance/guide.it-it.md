@@ -101,14 +101,14 @@ Per accedere ai log:
 - Nella sezione `Hosting`{.action}, clicca sul Dominio.
 - Clicca sulla scheda `More+`{.action} e seleziona `Statistiche e log`{.action}.
 - Quindi clicca sui link visualizzati per accedere alle_Statistiche sito Web_ oppure ai _Log_.
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Per consultare i grafici:
 
 - Nella sezione `Hosting`{.action}, clicca sul Dominio.
 -  Vai alla sezione `Informazioni generali`{.action}, scorri fino in fondo alla pagina e consulta i grafici relativi all’utilizzo del tuo hosting.
 Qui puoi selezionare il tipo di informazione e il periodo di tempo riguardante i dati da visualizzare.
-![graphs](images/graphs_highlighted.png){.thumbnail}
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Che tipo di informazioni è possibile visualizzare?
 

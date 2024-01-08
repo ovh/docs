@@ -89,7 +89,7 @@ In this section you can view your Web Hosting plan’s infrastructure activity a
 
 Switch to the `General information`{.action} tab, then scroll to the bottom of the page.
 
-![hosting](images/hosting-activity-graphic.png){.thumbnail}
+![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 You can display different types of graphics from the drop-down menu in the top left-hand corner:
 

@@ -93,7 +93,7 @@ W tej sekcji znajdziesz opis działalności związanej z infrastrukturą Twojego
 
 Kliknij kartę `Informacje ogólne`{.action}, a następnie przejdź na dół strony.
 
-![hosting](images/hosting-activity-graphic.png){.thumbnail}
+![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Możesz wyświetlić różne rodzaje wykresów z menu rozwijanego w lewym górnym rogu:
 

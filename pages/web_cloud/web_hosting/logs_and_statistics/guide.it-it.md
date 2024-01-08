@@ -93,7 +93,7 @@ In questa sezione trovi l'attività dell'infrastruttura del tuo hosting, per vis
 
 Clicca sulla scheda `Informazioni generali`{.action} e poi giù in fondo alla pagina.
 
-![hosting](images/hosting-activity-graphic.png){.thumbnail}
+![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 È possibile visualizzare diversi tipi di grafici dal menu a tendina in alto a sinistra:
 

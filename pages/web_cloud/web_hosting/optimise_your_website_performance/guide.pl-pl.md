@@ -100,13 +100,13 @@ Dostęp do logów:
 \- Kliknij domenę w sekcji `Hosting`{.action}.
 \- Kliknij kartę `Więcej +`{.action}, a następnie wybierz pozycję `Statystyki i logi`{.action}.
 \- Kliknij wyświetlone linki, aby uzyskać dostęp do _statystyk odwiedzin witryny internetowej_ lub _logów_.
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Dostęp do wykresów:
 \- Kliknij domenę w sekcji `Hosting`{.action}.
 \- W sekcji `Informacje ogólne`{.action} przewiń do dołu strony, gdzie znajdują się wykresy wykorzystania hostingu.
 \- Wybierz typ informacji i zakres dat, dla których chcesz wyświetlić dane.
-![graphs](images/graphs_highlighted.png){.thumbnail}
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Jakie typy informacji można wyświetlić?
 

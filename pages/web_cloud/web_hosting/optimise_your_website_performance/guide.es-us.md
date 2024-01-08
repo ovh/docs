@@ -102,7 +102,7 @@ Cómo acceder a los registros:
 - Haga clic en la pestaña `Más +`{.action} y, a continuación, seleccione `Estadísticas y registros`{.action}.
 - Después, haga clic en los enlaces mostrados para acceder tanto a las _estadísticas de visitas al sitio web_ como a los _registros_.
 
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Cómo acceder a los gráficos:
 
@@ -110,7 +110,7 @@ Cómo acceder a los gráficos:
 - En la sección `Información general`{.action}, desplace la pantalla hasta el final de la página, donde podrá consultar los gráficos de utilización de su hospedaje.
 - Allí, podrá seleccionar el tipo de información, así como el periodo de los datos que desea ver.
 
-![graphs](images/graphs_highlighted.png){.thumbnail}
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 ¿Qué tipo de información puede mostrarse?
 

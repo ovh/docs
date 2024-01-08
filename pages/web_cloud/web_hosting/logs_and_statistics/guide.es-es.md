@@ -93,7 +93,7 @@ Acceda a la sección Actividad de la infraestructura de su alojamiento para visu
 
 En la pestaña `Información general`{.action}, haga clic en el icono con forma de tres puntos.
 
-![hosting](images/hosting-activity-graphic.png){.thumbnail}
+![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Desde el menú desplegable situado en la parte superior izquierda podrá ver distintos tipos de gráficos:
 

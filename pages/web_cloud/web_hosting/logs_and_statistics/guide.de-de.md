@@ -93,7 +93,7 @@ In diesem Abschnitt können Sie die Aktivität der Infrastruktur Ihres Webhostin
 
 Wechseln Sie zum Tab `Allgemeine Informationen`{.action} und scrollen Sie zum Seitenende.
 
-![Hosting](images/hosting-activity-graphic.png){.thumbnail}
+![Hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Sie können im Dropdown-Menü in der oberen linken Ecke verschiedene Arten von Grafiken anzeigen:
 
