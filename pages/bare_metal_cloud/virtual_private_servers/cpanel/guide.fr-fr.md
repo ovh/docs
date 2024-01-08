@@ -50,7 +50,7 @@ Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce l
 
 L'URL générée par la commande « sudo whmlogin » vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
 
-#### Étape 1 : accéptez les conditions d'utilisation de cPanel
+#### Étape 1 : accepter les conditions d'utilisation de cPanel
 
 Lisez et acceptez les conditions d'utilisation de cPanel.
 
