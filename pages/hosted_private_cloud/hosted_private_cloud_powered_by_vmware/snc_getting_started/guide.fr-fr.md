@@ -2,7 +2,7 @@
 title: Mise en route de votre vSphere SecNumCloud
 excerpt: Découvrez comment prendre en main et configurer votre environnement vSphere SecNumCloud
 hidden: true
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -36,7 +36,7 @@ Vous noterez qu'il n'y a pas de mot de passe dans l'email, celui-ci sera obtenu 
 ### Etape 1 : ajouter des adresses IP pour se connecter au vCenter
 
 Pour des raisons de sécurité, les interfaces de gestion sont restreintes par défaut.
-Vous devrez autoriser des adresses IP à se connecter au vCenter.
+Vous devrez autoriser vos adresses IP privées (RFC1918) et vos adresses IP publiques à se connecter au vCenter.
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
@@ -140,7 +140,7 @@ Le guide suivant vous décrit comment effectuer cette manipulation :
 
 Nous allons maintenant basculer l'interface de management vSphere sur un des réseaux privés de l'environnement SecNumCloud.
 
-A l'issue de cette étape, la connexion au vCenter et aux API vSphere ne pourra se faire qu'en passant par les réseaux privés et via le VPN IPSec configuré à l'étape précédente pour l'extérieur.
+A l'issue de cette étape, la connexion au vCenter et aux API vSphere ne pourra se faire qu'en passant par le réseau privé de l'environnement SecNumCloud dans lequel la Private Gateway a été déployée.
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
