@@ -6,7 +6,15 @@ updated: 2024-01-08
 
 ## Objectif
 
-cPanel est un panneau de configuration qui simplifie la gestion d'hébergement web, rendant les tâches complexes accessibles même aux utilisateurs ayant peu de connaissances techniques. Il offre une vaste gamme de fonctionnalités, y compris la gestion des emails, des domaines, des bases de données et de la sécurité. Constitué d'une interface graphique permettant l'automatisation des paramètres, l'hébergement de sites web est ainsi simplifié.
+cPanel est un panneau de configuration qui facilite la gestion d'hébergements web. Il rend les tâches complexes plus accessibles y compris pour les nouveaux utilisateurs. Il offre une vaste gamme de fonctionnalités comme, par exemple, pour la gestion : 
+
+- des e-mails, 
+- des domaines,
+- des bases de données,
+- de la sécurité,
+- etc.
+
+Constitué d'une interface graphique permettant l'automatisation des paramètres, l'hébergement de sites web est ainsi simplifié.
 
 **Découvrez comment déployer cPanel avec les applications pré-installées sur un VPS.**
 
