@@ -25,11 +25,9 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Wybierz odpowiedni hosting i kliknij zakładkę `Statystyki i logi`{.action}
 
-![hosting](images/statistics01.png){.thumbnail}
-
 Okno, które się wyświetla składa się z 3 sekcji. Pierwsza zawiera **statystyki**, druga **logi** brutto Twojego hostingu. Ostatnia jest przeznaczona **do zarządzania użytkownikami** uprawnionymi do dostępu do statystyk.
 
-![hosting](images/statistics02u.png){.thumbnail}
+![hosting](images/tab.png){.thumbnail}
 
 ### Zarządzanie użytkownikami
 
@@ -37,7 +35,7 @@ Utworzenie użytkownika umożliwi osobie uzyskanie dostępu do statystyk hosting
 
 Kliknij przycisk `Utwórz nowego użytkownika`{.action} w sekcji `Administracja użytkownikami` i postępuj zgodnie z instrukcjami podanymi poniżej.  
 
-![hosting](images/user-statistics01.png){.thumbnail}
+![hosting](images/create-a-new-user.png){.thumbnail}
 
 Aby uzyskać dostęp do statystyk Twojej strony WWW dla użytkownika, którego utworzyłeś, wpisz następujący adres zastępując `000` numerem klastra Twojego hostingu, `mydomain.ovh` nazwą domeny Twojej strony WWW (bez znaków "www"):
 
@@ -48,7 +46,7 @@ https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
 W sekcji `Statystyki i logi`{.action} kliknij `Wyświetl statystyki`{.action}.<br>
 Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który będzie używany do łączenia się z jednym z utworzonych użytkowników.
 
-![hosting](images/OWStatslink.png){.thumbnail}
+![hosting](images/view-statistics.png){.thumbnail}
 
 > [!warning] 
 >
@@ -59,7 +57,7 @@ Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który b�
 
 Aby lepiej monitorować ruch na Twoich stronach WWW i zarządzać nim, masz do dyspozycji narzędzie do statystyki odwiedzin i pomiaru odwiedzin Twoich stron WWW hostowanych na hostingu **OVHcloud Web Statistics**.
 
-![hosting](images/OWStats01.gif){.thumbnail}
+![hosting](images/ows-presentation.gif){.thumbnail}
 
 Panel zarządzania OVHcloud Web Statistics dostępny jest w 6 sekcjach w panelu po lewej stronie.
 
@@ -77,7 +75,7 @@ Ramka `Period selection` w prawym górnym rogu pozwala wybrać określony czas.
 
 Możesz wyświetlić logi brutto swojej strony z opóźnieniem wynoszącym około 5 minut.
 
-![hosting](images/logs01.png){.thumbnail}
+![hosting](images/osl-statistics-board.png){.thumbnail}
 
 Dostępne są różne typy logów:
 
@@ -95,7 +93,7 @@ W tej sekcji znajdziesz opis działalności związanej z infrastrukturą Twojego
 
 Kliknij kartę `Informacje ogólne`{.action}, a następnie przejdź na dół strony.
 
-![hosting](images/statistics03.png){.thumbnail}
+![hosting](images/hosting-activity-graphic.png){.thumbnail}
 
 Możesz wyświetlić różne rodzaje wykresów z menu rozwijanego w lewym górnym rogu:
 

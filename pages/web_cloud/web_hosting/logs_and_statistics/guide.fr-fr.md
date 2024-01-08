@@ -21,11 +21,9 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques et logs`{.action}
 
-![hosting](images/statistics01.png){.thumbnail}
-
 La fenêtre qui s’affiche alors est composée de 3 sections. La première présente les **statistiques**, la seconde les **logs** bruts de votre hébergement, la dernière est dédiée à **l'administration des utilisateurs** autorisés à accéder aux statistiques.
 
-![hosting](images/statistics02u.png){.thumbnail}
+![hosting](images/tab.png){.thumbnail}
 
 ### Administration des utilisateurs
 
@@ -33,7 +31,7 @@ La création d'un utilisateur permettra à une personne d'accéder aux statistiq
 
 Cliquez sur le bouton `Créer un nouvel utilisateur`{.action} dans la section `Administration des utilisateurs` et suivez les instructions comme ci-dessous.
 
-![hosting](images/user-statistics01.png){.thumbnail}
+![hosting](images/create-a-new-user.png){.thumbnail}
 
 Pour accéder aux statistiques de votre site web avec un utilisateur que vous avez créé, vous devez saisir l'adresse suivante en remplaçant `000` par le numéro du cluster de votre hébergement et `mydomain.ovh` par le nom de domaine de votre site web (sans les « www »):
 
@@ -44,7 +42,7 @@ https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
 Depuis la section `Statistiques et logs`{.action}, cliquez sur `Voir les statistiques`{.action}.<br>
 Depuis l'onglet de votre navigateur qui affiche la fenêtre de statistiques, récupérez le lien qui servira à vous connecter avec l'un des utilisateurs créés.
 
-![hosting](images/OWStatslink.png){.thumbnail}
+![hosting](images/view-statistics.png){.thumbnail}
 
 > [!warning]
 >
@@ -55,7 +53,7 @@ Depuis l'onglet de votre navigateur qui affiche la fenêtre de statistiques, ré
 
 Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disposez d'un outil de statistiques de fréquentation et de mesure d’audience de vos sites internet hébergés sur votre hébergement mutualisé, **OVHcloud Web Statistics**.
 
-![hosting](images/OWStats01.gif){.thumbnail}
+![hosting](images/ows-presentation.gif){.thumbnail}
 
 Le tableau de bord de OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
 
@@ -73,7 +71,7 @@ Le cadre `Period selection` en haut à droite vous permet de sélectionner une p
 
 Vous avez la possibilité de visualiser les logs bruts de votre site avec un différé d'environ 5 minutes.
 
-![hosting](images/logs01.png){.thumbnail}
+![hosting](images/osl-statistics-board.png){.thumbnail}
 
 Différents type de logs sont à votre disposition :
 
@@ -91,7 +89,7 @@ Retrouvez dans cette section l'activité de l'infrastructure de votre hébergeme
 
 Cliquez sur l'onglet `Informations générales`{.action}, puis descendez en bas de la page.
 
-![hosting](images/statistics03.png){.thumbnail}
+![hosting](images/hosting-activity-graphic.png){.thumbnail}
 
 Il est possible d'afficher différent types de graphiques, depuis le menu déroulant en haut à gauche :
 
