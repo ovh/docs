@@ -16,7 +16,7 @@ Whether it is a hardware failure or accidentally deleting an important file, mai
 - [Veeam Backup & Replication installed and registered](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!warning]
-> This guide presupposes that you have followed the steps detailed in our first guuide [Preparing a Bare Metal Server backup with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation).
+> This guide presupposes that you have followed the steps detailed in our first guide [Preparing a Bare Metal Server backup with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation).
 
 ## Instructions
 
