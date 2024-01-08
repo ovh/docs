@@ -1,7 +1,7 @@
 ---
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -96,16 +96,23 @@ Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów ho
 
 Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-Dostęp do logów:
-\- Kliknij domenę w sekcji `Hosting`{.action}.
-\- Kliknij kartę `Więcej +`{.action}, a następnie wybierz pozycję `Statystyki i logi`{.action}.
-\- Kliknij wyświetlone linki, aby uzyskać dostęp do _statystyk odwiedzin witryny internetowej_ lub _logów_.
-![logs](images/tab.png){.thumbnail}
+Dostęp do statystyk i logów:
+
+- W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www;
+
+- na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action};
+
+- Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do *statystyk odwiedzin strony www* lub `Sprawdź logi`{.action}, aby sprawdzić *logi dostępne dla Twojego hostingu www*.
+
+![logi](images/tab.png){.thumbnail}
 
 Dostęp do wykresów:
-\- Kliknij domenę w sekcji `Hosting`{.action}.
-\- W sekcji `Informacje ogólne`{.action} przewiń do dołu strony, gdzie znajdują się wykresy wykorzystania hostingu.
-\- Wybierz typ informacji i zakres dat, dla których chcesz wyświetlić dane.
+
+- W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www;
+
+- na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}; przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu;
+
+- Wybierz **typ** informacji oraz **okres** wyświetlanych danych.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Jakie typy informacji można wyświetlić?

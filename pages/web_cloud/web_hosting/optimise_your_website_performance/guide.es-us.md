@@ -1,7 +1,7 @@
 ---
 title: 'Optimizar el rendimiento de su sitio web'
 excerpt: 'Cómo analizar la latencia de su sitio web y cómo mejorarla'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -96,20 +96,23 @@ Correlacione los gráficos de recursos utilizados de su hospedaje (más informac
 
 Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
-Cómo acceder a los registros:
+Cómo acceder a las estadísticas y los logs:
 
-- Haga clic en el dominio en la sección `Hospedaje`{.action}.
-- Haga clic en la pestaña `Más +`{.action} y, a continuación, seleccione `Estadísticas y registros`{.action}.
-- Después, haga clic en los enlaces mostrados para acceder tanto a las _estadísticas de visitas al sitio web_ como a los _registros_.
+- haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente;
+
+- en la página que se abre, haga clic en la pestaña `Estadísticas y logs`{.action};
+
+- Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las *estadísticas de visita del sitio web* o en `Ver los logs`{.action} para consultar *los logs disponibles para su alojamiento web*.
 
 ![logs](images/tab.png){.thumbnail}
 
 Cómo acceder a los gráficos:
 
-- En la sección `Hospedaje`{.action}, haga clic en el dominio.
-- En la sección `Información general`{.action}, desplace la pantalla hasta el final de la página, donde podrá consultar los gráficos de utilización de su hospedaje.
-- Allí, podrá seleccionar el tipo de información, así como el periodo de los datos que desea ver.
+- haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente;
 
+- En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento;
+
+- Seleccione el **tipo** de información y el **período** de los datos mostrados.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 ¿Qué tipo de información puede mostrarse?

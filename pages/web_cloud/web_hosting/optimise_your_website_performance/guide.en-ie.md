@@ -1,7 +1,7 @@
 ---
 title: 'Optimising your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 ## Objective
@@ -95,18 +95,23 @@ Correlate the graphs of resource usage of your hosting (more information below) 
 
 You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
-How to access the logs:
+How to access statistics and logs:
 
-- Click on the domain in the `Hosting`{.action} section,
-- Click on the `More +`{.action} tab then select `Statistics and logs`{.action}.
-- Then click on the links displayed to access either the _Website visit statistics_ or the _Logs_.
+- Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned;
+
+- on the page that pops up, click on the `Statistics and logs`{.action} tab;
+
+- Then click the `View statistics`{.action} button to access the *website visit statistics* or `View logs`{.action} to view *the logs available for your web hosting plan*.
+
 ![logs](images/tab.png){.thumbnail}
 
-How to access the graphs:
+How to access charts:
 
-- Click on the domain in the `Hosting`{.action} section,
-- Once in the `General information`{.action} section, scroll down to the very bottom of the page, there you can consult the graphs of your hosting usage.
-- There you will be able to select the type of information as well as the time period for the data to be visualised.
+- Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned;
+
+- on the page that pops up, click on the `Statistics and logs`{.action} tab; scroll down to the bottom of the page, where you will find the graph linked to your hosting usage;
+
+- Select the **type** of information as well as the **period** of the data displayed.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 What are the different types of information that can be displayed?

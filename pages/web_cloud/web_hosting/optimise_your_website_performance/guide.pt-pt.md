@@ -1,7 +1,7 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -96,16 +96,23 @@ Correlacione os gráficos da utilização de recursos do seu alojamento (mais in
 
 Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-Como aceder aos logs:
-\- Clique no domínio na secção `Alojamento`{.action},
-\- Clique no separador `Mais +`{.action} e, de seguida, selecione `Estatísticas e logs`{.action}.
-\- De seguida, clique nas hiperligações apresentadas para aceder às _Estatísticas de visitas do website_ ou aos _Logs_.
+Como aceder às estatísticas e logs:
+
+- Clique em `Alojamento`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente;
+
+- na página que se abrir, clique no separador `Estatísticas e logs`{.action};
+
+- De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às *estatísticas de visita do website* ou em `Consultar os logs`{.action} para consultar *os logs disponíveis para o seu alojamento web*.
+
 ![logs](images/tab.png){.thumbnail}
 
 Como aceder aos gráficos:
-\- Clique no domínio da secção `Alojamento`{.action},
-\- Na secção `Informação geral`{.action}, desloque-se para baixo até à parte inferior da página, onde pode consultar os gráficos da utilização do seu alojamento.
-\- Nessa secção, pode selecionar o tipo de informação e o período de tempo para a visualização dos dados.
+
+- Clique em `Alojamento`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente;
+
+- na página que se abrir, clique no separador `Estatísticas e logs`{.action}; desloque-se até à parte inferior da página onde se encontra o gráfico relativo à utilização do seu alojamento;
+
+- Selecione o **tipo** de informação bem como o **período** dos dados apresentados.
 ![gráficos](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Quais são os diferentes tipos de informação que podem ser visualizados?

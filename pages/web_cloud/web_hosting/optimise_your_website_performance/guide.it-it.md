@@ -1,7 +1,7 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -96,18 +96,23 @@ Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulterio
 
 Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external}.
 
-Per accedere ai log:
+Come accedere alle statistiche e ai log:
 
-- Nella sezione `Hosting`{.action}, clicca sul Dominio.
-- Clicca sulla scheda `More+`{.action} e seleziona `Statistiche e log`{.action}.
-- Quindi clicca sui link visualizzati per accedere alle_Statistiche sito Web_ oppure ai _Log_.
+- clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione;
+
+- clicca sulla scheda `Statistiche e log`{.action};
+
+- Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle *statistiche di visita del sito Web* o su `Visualizza i log`{.action} per consultare *i log disponibili per il tuo hosting Web*.
+
 ![logs](images/tab.png){.thumbnail}
 
-Per consultare i grafici:
+Come accedere ai grafici:
 
-- Nella sezione `Hosting`{.action}, clicca sul Dominio.
--  Vai alla sezione `Informazioni generali`{.action}, scorri fino in fondo alla pagina e consulta i grafici relativi all’utilizzo del tuo hosting.
-Qui puoi selezionare il tipo di informazione e il periodo di tempo riguardante i dati da visualizzare.
+- clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione;
+
+- nella nuova pagina, clicca sulla scheda `Statistiche e log`{.action}; sfoglia fino in fondo alla pagina in cui si trova il grafico associato all’utilizzo dell’hosting;
+
+- Seleziona il **tipo** di informazioni e il **periodo** dei dati visualizzati.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Che tipo di informazioni è possibile visualizzare?
