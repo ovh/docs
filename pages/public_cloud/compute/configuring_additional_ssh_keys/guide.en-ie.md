@@ -1,7 +1,7 @@
 ---
 title: 'Configuring additional SSH keys'
 excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
-updated: 2022-02-04
+updated: 2024-01-08
 ---
 
 ## Objective
@@ -20,7 +20,7 @@ When creating an instance, only one SSH key for the initial connection can be co
 
 > [!primary]
 >
-If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
+We currently support the following ssh key formats: **RSA**, **ECDSA** and **ED25519**.
 >
 
 ### Creating the SSH key
