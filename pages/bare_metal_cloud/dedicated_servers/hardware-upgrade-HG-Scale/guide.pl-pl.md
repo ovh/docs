@@ -1,6 +1,6 @@
 ---
 title: "Modernizacja sprzętu na serwerze dedykowanym High Grade lub Scale"
-excerpt: 'Dowiedz się, jak przeprowadzić modernizację sprzętu zarówno dla gam High Grade, jak i Scale, z poziomu Panelu klienta'
+excerpt: "Dowiedz się, jak przeprowadzić modernizację sprzętu zarówno dla gam High Grade, jak i Scale, z poziomu Panelu klienta"
 updated: 2024-01-04
 ---
 
@@ -66,7 +66,7 @@ Po opłaceniu zamówienia na konto użytkownika zostanie wysłana wiadomość e-
 
 Po kliknięciu na link znajdujący się w e-mailu zostaniesz przekierowany do dashboardu serwera dedykowanego. Tym razem kliknij `Zaplanuj interwencję`{.action}.
 
-![schedule intervention](images/scheduleintervention.png){.thumbnail}
+![schedule intervention](images/storageintervention.png){.thumbnail}
 
 Zaznacz kratkę poniżej `Czy sporządziłaś/-eś kopię zapasową swoich danych?`{.action} i wybierz datę i godzinę spośród zaproponowanych czasów na start lub lądowanie. Wsparcie techników w naszych centrach danych wymaga przygotowania. Pierwsza data dostępności jest zatem określona po upływie minimalnego okresu 10 dni.
 

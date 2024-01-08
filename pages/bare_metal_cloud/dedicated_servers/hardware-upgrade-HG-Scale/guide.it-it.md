@@ -1,6 +1,6 @@
 ---
 title: "Aggiornamento dell'hardware su un server dedicato High Grade o Scale"
-excerpt: 'Scopri come richiedere un aggiornamento dell'hardware per le gamme High Grade e SCALE dal tuo Spazio Cliente'
+excerpt: "Scopri come richiedere un aggiornamento dell'hardware per le gamme High Grade e SCALE dal tuo Spazio Cliente"
 updated: 2024-01-04
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Atualização do hardware num servidor dedicado High Grade ou Scale"
-excerpt: 'Saiba como solicitar uma atualização de hardware para as gamas High Grade e SCALE através da Área de Cliente'
+excerpt: "Saiba como solicitar uma atualização de hardware para as gamas High Grade e SCALE através da Área de Cliente"
 updated: 2024-01-04
 ---
 
@@ -66,7 +66,7 @@ Após o pagamento da encomenda, será enviado um e-mail de confirmação à sua 
 
 Clique no link presente no e-mail e será reencaminhado para o painel de controlo do servidor dedicado. Desta vez, clique em ‘Planear a intervenção`{.action}.
 
-![schedule intervenção](images/storageaction.png){.thumbnail}
+![schedule intervenção](images/storageintervention.png){.thumbnail}
 
 Marque a caixa em `Efetuou um backup dos seus dados?`{.action} e selecione a data e a hora entre as faixas horárias propostas. Tenha em conta que a intervenção dos técnicos dos nossos datacenters requer um período de preparação. A primeira data de disponibilidade é definida após um período mínimo de 10 dias.
 
