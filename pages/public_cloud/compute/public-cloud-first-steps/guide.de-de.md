@@ -27,7 +27,7 @@ Das SSH-Protokoll sorgt für eine verschlüsselte Client-Server-Kommunikation. D
 
 > [!primary]
 >
-Bitte beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können verschlüsselte Schlüssel **RSA**, **ECDSA** und **ED25519** speichern.
+Bitte beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können verschlüsselte Schlüssel speichern **RSA**, **ECDSA** und **ED25519**.
 >
 Für die Login-Authentifizierung auf Windows-Instanzen sind Benutzername und Passwort erforderlich.
 >
