@@ -27,7 +27,7 @@ Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connec
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Ruby est bien activé. Si tel est le cas, poursuivez vers l’étape 2  *Associer Ruby à un multisite* 
 
-![Le moteur d'exécution Ruby doit être présent](images/tab.png){.thumbnail} 
+![Le moteur d'exécution Ruby doit être présent](images/tab-phpfpm7-4.png){.thumbnail} 
 
 Si ce n’est pas le cas, ajoutez-en un nouveau (si votre offre vous le permet) ou modifiez le moteur d’exécutionexistant.
 
@@ -46,13 +46,13 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées avec le
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide *[Gérer les moteurs d’exécution de Cloud Web](/pages/web_cloud/web_hosting/manage-runtime)*. 
 
-![Ajouter le moteur d'exécution Ruby](images/modify-a-runtime-software-application.png){.thumbnail} 
+![Ajouter le moteur d'exécution Ruby](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail} 
 
 ### Étape 2 : associer Ruby à un multisite
 
 Maintenant que Ruby est activé en tant que moteur d’exécution, vous devez l’associer à l’un de vos multisites. Pour cela, positionnez-vous sur l’onglet `Multisite`{.action}. Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés en tant que multisite. 
 
-![Associer Ruby à un multisite](images/tab-full-disabled.png){.thumbnail} 
+![Associer Ruby à un multisite](images/tab-phpfpm7-4-full-disabled.png){.thumbnail} 
 
 Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d’exécution Ruby est bien lié aux domaines concernés et que le dossier racine est correct. Aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l’étape 3 [Se connecter à votre Cloud Web via SSH](#sshconnexion).
 
@@ -76,7 +76,7 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées selon v
 
 En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu’à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». 
 
-![Partager son hébergement entre plusieurs sites](images/add-a-domain-or-sub-domain-step-2.png){.thumbnail} 
+![Partager son hébergement entre plusieurs sites](images/add-a-domain-or-sub-domain-step-2-django.png){.thumbnail} 
 
 ### Étape 3 : se connecter à votre Cloud Web via SSH <a name="sshconnexion"></a>
 
