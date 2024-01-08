@@ -98,21 +98,18 @@ Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spa
 
 Come accedere alle statistiche e ai log:
 
-- clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione;
-
-- clicca sulla scheda `Statistiche e log`{.action};
-
-- Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle *statistiche di visita del sito Web* o su `Visualizza i log`{.action} per consultare *i log disponibili per il tuo hosting Web*.
+1. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione.
+2. Clicca sulla scheda `Statistiche e log`{.action}.
+3. Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
 
 ![logs](images/tab.png){.thumbnail}
 
 Come accedere ai grafici:
 
-- clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione;
+1. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione.
+2. Nella nuova pagina, clicca sulla scheda `Statistiche e log`{.action}. Sfoglia fino in fondo alla pagina in cui si trova il grafico associato all’utilizzo dell’hosting.
+3. Seleziona il **tipo** di informazioni e il **periodo** dei dati visualizzati.
 
-- nella nuova pagina, clicca sulla scheda `Statistiche e log`{.action}; sfoglia fino in fondo alla pagina in cui si trova il grafico associato all’utilizzo dell’hosting;
-
-- Seleziona il **tipo** di informazioni e il **periodo** dei dati visualizzati.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Che tipo di informazioni è possibile visualizzare?

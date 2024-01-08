@@ -97,24 +97,21 @@ Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement
 
 Comment accéder aux statistiques et logs :
 
-- Cliquez sur `Hébergement`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné;
-
-- sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action};
-
-- Cliquez ensuite sur le boutton `Voir les statistiques`{.action} affichés pour accéder aux *statistiques de visite du site web* ou sur `Voir les logs`{.action} pour consulter *les logs disponibles pour votre hébergement web*.
+1. Cliquez sur `Hébergement`{.action} dans la colonne de gauche puis sélectionnez l'hébergement web concerné.
+2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}.
+3. Cliquez ensuite sur le bouton `Voir les statistiques`{.action} affiché pour accéder aux statistiques de visite du site web ou sur `Voir les logs`{.action} pour consulter les logs disponibles pour votre hébergement web.
 
 ![logs](images/tab.png){.thumbnail}
 
 Comment accéder aux graphiques :
 
-- Cliquez sur `Hébergement`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné;
+1. Cliquez sur `Hébergement`{.action} dans la colonne de gauche puis sélectionnez l'hébergement web concerné.
+2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}. Défilez jusqu’au bas de la page où se trouve le graphique lié à l’utilisation de votre hébergement.
+3. Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
 
-- sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}; défilez jusqu’au bas de la page où se trouve le graphique liés à l’utilisation de votre hébergement;
-
-- Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
-Quels sont les différents types de renseignements qui peuvent être affichés?
+Quels sont les différents types de renseignements qui peuvent être affichés ?
 
 - **Requêtes HTTP**: Indique le nombre moyen de consultations du site. Les consultations sont classées selon le statut HTTP 2xx/3xx/4xx/5xx.
 

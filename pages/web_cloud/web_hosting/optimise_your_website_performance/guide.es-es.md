@@ -98,21 +98,18 @@ Puede acceder a sus registros, estadísticas y gráficos directamente desde el p
 
 Cómo acceder a las estadísticas y los logs:
 
-- haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente;
-
-- en la página que se abre, haga clic en la pestaña `Estadísticas y logs`{.action};
-
-- Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las *estadísticas de visita del sitio web* o en `Ver los logs`{.action} para consultar *los logs disponibles para su alojamiento web*.
+1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
+2. En la página que se abre, haga clic en la pestaña `Estadísticas y logs`{.action}.
+3. Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las estadísticas de visita del sitio web o en `Ver los logs`{.action} para consultar los logs disponibles para su alojamiento web.
 
 ![logs](images/tab.png){.thumbnail}
 
 Cómo acceder a los gráficos:
 
-- haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente;
+1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
+2. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento.
+3. Seleccione el **tipo** de información y el **período** de los datos mostrados.
 
-- En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento;
-
-- Seleccione el **tipo** de información y el **período** de los datos mostrados.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 ¿Qué tipo de información puede mostrarse?

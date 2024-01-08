@@ -98,21 +98,18 @@ Puede acceder a sus registros, estadísticas y gráficos directamente desde el p
 
 Cómo acceder a las estadísticas y los logs:
 
-- haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente;
-
-- en la página que se abre, haga clic en la pestaña `Estadísticas y logs`{.action};
-
-- Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las *estadísticas de visita del sitio web* o en `Ver los logs`{.action} para consultar *los logs disponibles para su alojamiento web*.
+1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
+2. En la página que se abre, haga clic en la pestaña `Estadísticas y logs`{.action}.
+3. Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las estadísticas de visita del sitio web o en `Ver los logs`{.action} para consultar los logs disponibles para su alojamiento web.
 
 ![logs](images/tab.png){.thumbnail}
 
 Cómo acceder a los gráficos:
 
-- haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente;
+1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
+2. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento.
+3. Seleccione el **tipo** de información y el **período** de los datos mostrados.
 
-- En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento;
-
-- Seleccione el **tipo** de información y el **período** de los datos mostrados.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 ¿Qué tipo de información puede mostrarse?
@@ -229,11 +226,18 @@ Ejemplo:
 
 Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. También debería evitar el uso de «GROUP BY», a menos que sea estrictamente necesario.
 
+#### Web Cloud Databases
+Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de Web Cloud Databases para disponer de más recursos.
+
+[Consultar la solución Web Cloud Databases en nuestro sitio web](https://www.ovh.es/cloud/cloud-databases/){.external}.
+
 ## Más información
 
 [Modificar la configuración de un plan de hospedaje web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Gestionar una base de datos en un paquete de hospedaje web](/pages/web_cloud/web_hosting/sql_create_database){.external}
+
+[Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

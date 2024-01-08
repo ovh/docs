@@ -98,21 +98,18 @@ Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHclou
 
 Dostęp do statystyk i logów:
 
-- W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www;
-
-- na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action};
-
-- Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do *statystyk odwiedzin strony www* lub `Sprawdź logi`{.action}, aby sprawdzić *logi dostępne dla Twojego hostingu www*.
+1. W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www.
+2. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+3. Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do statystyk odwiedzin strony www lub `Sprawdź logi`{.action}, aby sprawdzić logi dostępne dla Twojego hostingu www.
 
 ![logi](images/tab.png){.thumbnail}
 
 Dostęp do wykresów:
 
-- W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www;
+1. W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www.
+2. na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}. Przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu.
+3. Wybierz **typ** informacji oraz **okres** wyświetlanych danych.
 
-- na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}; przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu;
-
-- Wybierz **typ** informacji oraz **okres** wyświetlanych danych.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Jakie typy informacji można wyświetlić?

@@ -97,21 +97,18 @@ You can access your logs, statistics and graphs directly from the [OVHcloud Cont
 
 How to access statistics and logs:
 
-- Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned;
-
-- on the page that pops up, click on the `Statistics and logs`{.action} tab;
-
-- Then click the `View statistics`{.action} button to access the *website visit statistics* or `View logs`{.action} to view *the logs available for your web hosting plan*.
+1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
+2. In the pop-up window, click the `Statistics and logs`{.action} tab.
+3. Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
 
 ![logs](images/tab.png){.thumbnail}
 
 How to access charts:
 
-- Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned;
+1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
+2. In the pop-up window, click the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph linked to your hosting usage.
+3. Select the **type** of information as well as the **period** of the data displayed.
 
-- on the page that pops up, click on the `Statistics and logs`{.action} tab; scroll down to the bottom of the page, where you will find the graph linked to your hosting usage;
-
-- Select the **type** of information as well as the **period** of the data displayed.
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 What are the different types of information that can be displayed?
@@ -231,7 +228,7 @@ Avoid using the "HAVING" clause which can slow down queries. You should also avo
 #### Web Cloud Databases
 If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Web Cloud Databases offer to have more resources available.
 
-[See the Web Cloud Databases offer on our website](https://www.ovh.co.uk/cloud/cloud-databases/).
+[See the Web Cloud Databases offer on our website](https://www.ovhcloud.com/en-gb/web-cloud/databases/).
 
 ## Go further
 
