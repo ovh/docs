@@ -122,6 +122,10 @@ Questa azione comporta la cancellazione definitiva dell'istanza e di tutti i suo
 
 Nella nuova finestra, conferma l'operazione.
 
+> [!warning]
+> L'eliminazione di un'istanza non comporta l'eliminazione automatica di tutte le opzioni associate (storage, snapshot, backup, ecc...). Assicurati che tutte le altre opzioni associate all'istanza siano eliminate per interrompere la fatturazione.
+>
+
 ### Accedi alla console VNC <a name="accessvnc"></a>
 
 Clicca sulle `Instances`{.action} nel menu a sinistra. Nella pagina di gestione delle istanze, clicca sul nome dell'istanza nella tabella.

@@ -122,6 +122,10 @@ Esta acción eliminará definitivamente la instancia y todos sus datos.
 
 Confirme la solicitud de eliminación en la nueva ventana.
 
+> [!warning]
+> La eliminación de una instancia no elimina automáticamente todas las opciones asociadas a ella (almacenamiento, snapshot, backup, etc.). Asegúrese de que todas las demás opciones asociadas a la instancia también se eliminan para dejar de facturarse.
+>
+
 ### Acceder a la consola VNC <a name="accessvnc"></a>
 
 En el menú de la izquierda, haga clic en `Instances`{.action}. En la página de gestión de las instancias, haga clic en el nombre de la instancia en la tabla.

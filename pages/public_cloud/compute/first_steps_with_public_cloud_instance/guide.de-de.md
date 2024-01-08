@@ -122,6 +122,10 @@ Die Instanz und alle zugehörigen Daten werden damit endgültig entfernt.
 
 Bestätigen Sie die Löschungsanfrage im angezeigten Fenster.
 
+> [!warning]
+> Wenn Sie eine Instanz löschen, werden nicht automatisch alle zugehörigen Optionen gelöscht (Storage, Snapshot, Backup...). Stellen Sie sicher, dass alle anderen Optionen, die mit der Instanz verbunden sind, ebenfalls gelöscht werden, um die Abrechnung zu stoppen.
+>
+
 ### Auf die VNC-Konsole zugreifen <a name="accessvnc"></a>
 
 Klicken Sie im linken Menü auf `Instances`{.action}. Klicken Sie auf der Instanzverwaltungsseite in der Tabelle auf den Namen der Instanz.

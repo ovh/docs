@@ -122,6 +122,10 @@ Operacja ta spowoduje definitywne usunięcie instancji oraz wszystkich jej danyc
 
 Potwierdź zlecenie usunięcia w oknie, które się wyświetli.
 
+> [!warning]
+> Usunięcie instancji nie powoduje automatycznego usunięcia wszystkich powiązanych z nią opcji (storage, snapshot, backup, itp...). Upewnij się, że wszystkie inne opcje powiązane z instancją również zostały usunięte, dzięki czemu przestaniesz być fakturowany.
+>
+
 ### Dostęp do konsoli VNC <a name="accessvnc"></a>
 
 Kliknij `Instances`{.action} w menu po lewej stronie. Na stronie z interfejsem zarządzania instancjami kliknij nazwę instancji w tabeli.

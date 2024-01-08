@@ -122,6 +122,10 @@ Esta ação terá por efeito eliminar definitivamente a instância, bem como tod
 
 Confirme o pedido de eliminação na janela que aparecer.
 
+> [!warning]
+> A eliminação de uma instância não elimina automaticamente todas as opções que lhe estão associadas (armazenamento, snapshot, backup, etc...), certifique-se de que todas as outras opções associadas à instância são igualmente eliminadas para deixar de ser faturado.
+>
+
 ### Aceder à consola VNC <a name="accessvnc"></a>
 
 Clique em `Instances`{.action} no menu à esquerda. Na página de gestão das instâncias, clique no nome da instância.
