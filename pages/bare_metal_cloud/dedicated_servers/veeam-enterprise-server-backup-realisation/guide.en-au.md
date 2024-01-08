@@ -15,6 +15,9 @@ Whether it is a hardware failure or accidentally deleting an important file, mai
 - An [OVHcloud Bare Metal server](https://www.ovhcloud.com/en-au/bare-metal/)
 - [Veeam Backup & Replication installed and registered](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
+> [!warning]
+> This guide presupposes that you have followed the steps detailed in our first guuide [Preparing a Bare Metal Server backup with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation).
+
 ## Instructions
 
 To begin, from the `Home`{.action} tab, click the `Backup Job`{.action} button and select one of the `<OS> computer...` options to backup. For this guide, we are selecting Windows.
