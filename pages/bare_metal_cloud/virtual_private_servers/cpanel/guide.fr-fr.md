@@ -20,7 +20,7 @@ Constitué d'une interface graphique permettant l'automatisation des paramètres
 
 ## Prérequis
 
-- Posséder un [VPS de la gamme actuelle](https://www.ovhcloud.com/fr/vps/){.external} (offres Value, Essential, Comfort ou Elite).
+- Disposer d'une offre [VPS récente](https://www.ovhcloud.com/fr/vps/){.external} (offres Value, **Essential**, **Comfort** ou **Elite**).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
