@@ -37,7 +37,7 @@ Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour v
  |    Vous pouvez vous connecter à cpanel depuis https://<nomduserveur>:2087/<session_parameters>
 ```
 
-Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) via un [OS compatible avec cPanel](https://www.ovhcloud.com/en/vps/os/).
+Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) via un [OS compatible avec cPanel](https://www.ovhcloud.com/fr/vps/os/).
 
 > [!warning]
 >
