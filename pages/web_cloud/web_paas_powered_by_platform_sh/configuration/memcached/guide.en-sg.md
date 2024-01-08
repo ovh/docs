@@ -70,7 +70,7 @@ Note that the information about the relationship can change when an app is redep
 
 ## Usage example
 
-## 1. Configure the service 
+### 1. Configure the service 
 
 To define the service, use the `memcached` type
 
@@ -84,7 +84,7 @@ In your ``.platform/services.yaml``:
 
 Note that changing the name of the service replaces it with a brand new service and all existing data is lost. Back up your data before changing the service.
 
-## 2. Add the relationship
+### 2. Add the relationship
 
 To define the relationship, use the following configuration:
 
@@ -118,7 +118,7 @@ dependencies:
 
 ## Example Configuration 
 
-## Service Configuration
+### Service Configuration
 
 ```yaml
 # The name of the service container. Must be unique within a project.
@@ -126,7 +126,7 @@ memcached:
     type: memcached:1.6
 ```
 
-## App configuration
+### App configuration
 ```yaml
 # Relationships enable access from this app to a given service.
 # The example below shows simplified configuration leveraging a default service (identified from the relationship name) and a default endpoint.
