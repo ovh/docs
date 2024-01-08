@@ -1,7 +1,7 @@
 ---
 title: Preparing a Bare Metal Server backup with Veeam Enterprise
-excerpt: Learn how to prepare to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise).
-updated: 2024-01-05
+excerpt: Learn how to prepare to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise)
+updated: 2024-01-08
 ---
 
 ## Objective

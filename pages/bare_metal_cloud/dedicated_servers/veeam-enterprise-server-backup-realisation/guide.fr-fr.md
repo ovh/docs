@@ -1,7 +1,7 @@
 ---
 title: Sauvegarder un serveur Bare Metal avec Veeam Enterprise
 excerpt: Découvrez comment faire un backup de votre serveur Bare Metal avec Veeam Backup and Replication (Enterprise)
-updated: 2024-01-05
+updated: 2024-01-08
 ---
 
 ## Objectif
