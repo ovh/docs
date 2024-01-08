@@ -35,13 +35,13 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
 
-![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
+![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
 Hier können Sie über Ihr [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) versendete automatische E-Mails verwalten.
 
 ### Informationen im Tab "E-Mail-Skripte"
 
-![hosting](images/Interface.png){.thumbnail}
+![hosting](images/tab.png){.thumbnail}
 
 Diese Seite zeigt diverse Informationen zur Nachverfolgung des von Ihren Skripten generierten E-Mail-Versands:
 
@@ -129,7 +129,7 @@ Dieser Zustand tritt ein, wenn Ihr Hosting E-Mails sendet, die als SPAM eingestu
 
 Normalerweise wird diese Sperrung begleitet von einer E-Mail der Art **"Missbrauch mit Ihrem Hosting domain.tld"**, die automatisch von unseren Sicherheitsrobotern generiert wird.
 
-![hosting](images/AbuseMail.png){.thumbnail}
+![hosting](images/email-script-disabled.png){.thumbnail}
 
 Drei Szenarien sind möglich:
 

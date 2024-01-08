@@ -35,13 +35,13 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
-![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
+![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
 Se abrirá una página en la que podrá consultar y gestionar los mensajes de correo automatizados enviados desde su [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
 
 ### Presentación del apartado "Scripts de correo electrónico"
 
-![hosting](images/Interface.png){.thumbnail}
+![hosting](images/tab.png){.thumbnail}
 
 La página muestra varios datos que le permiten visualizar la actividad del envío de mensajes de correo automatizados generados desde sus scripts:
 
@@ -129,7 +129,7 @@ Este estado se produce cuando se han enviado mensajes considerados de spam desde
 
 Por lo general, el bloqueo se acompaña por el envío de un email titulado **"Abuso con su alojamiento dominio.tld"** generado automáticamente por nuestros robots de seguridad:
 
-![hosting](images/AbuseMail.png){.thumbnail}
+![hosting](images/email-script-disabled.png){.thumbnail}
 
 Existen tres posibles situaciones en relación con esta situación:
 
