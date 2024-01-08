@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie instancjami Public Cloud'
 excerpt: 'Dowiedz się, jak zarządzać instancjami Public Cloud w Panelu klienta OVHcloud'
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Managing your Public Cloud instances
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 ## Objective
@@ -117,6 +117,10 @@ Click on `Delete`{.action}.
 This action will permanently delete the instance, as well as all of the data stored on it.
 
 Confirm the request in the popup window.
+
+> [!warning]
+> Deleting an instance does not automatically delete all the options associated with it (storage, snapshot, backup, etc...), so make sure that all other options associated with the instance are also deleted to stop being billed.
+>
 
 ### Accessing the VNC console <a name="accessvnc"></a>
 

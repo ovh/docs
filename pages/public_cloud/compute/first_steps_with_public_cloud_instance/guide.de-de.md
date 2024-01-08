@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instanzen verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kundencenter verwalten
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]

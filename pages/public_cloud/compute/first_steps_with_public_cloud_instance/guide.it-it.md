@@ -1,7 +1,7 @@
 ---
 title: Gestire le istanze Public Cloud
 excerpt: Come gestire le istanze Public Cloud dallo Spazio Cliente OVHcloud
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]
