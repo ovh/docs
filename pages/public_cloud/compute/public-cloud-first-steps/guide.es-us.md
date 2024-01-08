@@ -1,7 +1,7 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ El protocolo SSH garantiza una comunicación encriptada entre el cliente y el se
 
 > [!primary]
 >
-Tenga en cuenta que es obligatorio disponer de un par de claves SSH para conectarse a sus instancias de Public Cloud, salvo en aquellas que funcionan con sistemas operativos Windows. Las claves SSH públicas que añada en su área de cliente de OVHcloud estarán disponibles para sus servicios de Public Cloud, en todas las regiones y en todos los datacenters. Solo es posible almacenar claves encriptadas **RSA** y **ECDSA**. Las claves ED25519 no son compatibles. 
+Tenga en cuenta que es obligatorio disponer de un par de claves SSH para conectarse a sus instancias de Public Cloud, salvo en aquellas que funcionan con sistemas operativos Windows. Las claves SSH públicas que añada en su área de cliente de OVHcloud estarán disponibles para sus servicios de Public Cloud, en todas las regiones y en todos los datacenters. Puede almacenar claves cifradas **RSA**, **ECDSA** y **ED25519**.
 >
 Para autenticarse en instancias Windows solo necesitará el nombre de usuario y la contraseña.
 >
@@ -54,6 +54,11 @@ El uso del parámetro «-t» con este comando permite especificar un método de 
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+o
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 El comando le pedirá que guarde la clave que acaba de crear en un archivo estándar:

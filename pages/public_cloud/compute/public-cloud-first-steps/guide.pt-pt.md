@@ -1,7 +1,7 @@
 ---
 title: 'Criação e conexão a uma primeira instância Public Cloud'
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ O protocolo SSH assegura a encriptação das comunicações cliente-servidor. O 
 
 > [!primary]
 >
-Tenha em atenção que as conexões a instâncias de Public Cloud exigem um login SSH com chave, com exceção das que se baseiam em sistemas operativos Windows. As chaves públicas SSH adicionadas à sua Área de Cliente OVHcloud ficarão disponíveis para serviços Public Cloud em todas as regiões e datacenters. Só poderá armazenar chaves encriptadas **RSA** e **ECDSA**; a ED25519 não é suportada atualmente. 
+Tenha em atenção que as conexões a instâncias de Public Cloud exigem um login SSH com chave, com exceção das que se baseiam em sistemas operativos Windows. As chaves públicas SSH adicionadas à sua Área de Cliente OVHcloud ficarão disponíveis para serviços Public Cloud em todas as regiões e datacenters. Pode armazenar chaves encriptadas **RSA**, **ECDSA** e **ED25519**.
 >
 A autenticação de conexão em instâncias Windows só requer o nome de utilizador e a palavra-passe.
 >
@@ -54,6 +54,11 @@ A utilização da opção «-t» com este comando permite-lhe especificar um mé
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+ou
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 O comando irá solicitar-lhe que guarde a chave recém-criada no ficheiro padrão:

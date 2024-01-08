@@ -1,7 +1,7 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -29,7 +29,7 @@ Le protocole SSH assure une communication client-serveur chiffrée. L'utilisatio
 
 > [!primary]
 >
-Notez qu'une connexion SSH basée sur des clés est obligatoire pour les connexions aux instances Public Cloud, à l'exception de celles qui exécutent des systèmes d'exploitation Windows. Les clés SSH publiques ajoutées à votre Panneau de configuration OVHcloud seront disponibles pour les services Public Cloud de toutes les régions et de tous les data centres. Vous ne pouvez stocker que les clés cryptées **RSA** et **ECDSA** ; ED25519 n'est pas pris en charge actuellement. 
+Notez qu'une connexion SSH basée sur des clés est obligatoire pour les connexions aux instances Public Cloud, à l'exception de celles qui exécutent des systèmes d'exploitation Windows. Les clés SSH publiques ajoutées à votre Panneau de configuration OVHcloud seront disponibles pour les services Public Cloud de toutes les régions et de tous les data centres. Vous pouvez stocker des clés cryptées **RSA**, **ECDSA** et **ED25519**.
 >
 L'authentification de connexion sur les instances Windows nécessite uniquement le nom d'utilisateur et le mot de passe.
 >
@@ -53,6 +53,11 @@ L'utilisation de l'option « -t » avec cette commande vous permet de spécifier
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+ou
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 La commande vous invite à enregistrer la nouvelle clé dans le fichier standard :
