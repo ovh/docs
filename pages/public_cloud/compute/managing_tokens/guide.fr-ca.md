@@ -130,7 +130,7 @@ export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 C'est l'adresse du endpoint du service d'object storage qui va permettre de requêter les informations sur l'objet.
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^x-subject-token' | cut -d" " -f2)
 ```
 
 Ce token est maintenant l'élément d'authentification qui sera utilisé pour la requête suivante.
