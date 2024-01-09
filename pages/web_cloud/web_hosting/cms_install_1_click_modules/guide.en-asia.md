@@ -47,7 +47,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 You will find any 1-click modules already installed. You can manage your 1-click modules and install new ones.
 
-![Access to the 1-click modules section](images/1-click-modules-section.png){.thumbnail}
+![Access to the 1-click modules section](images/tab.png){.thumbnail}
 
 ### Step 3: Add a 1-click module
 

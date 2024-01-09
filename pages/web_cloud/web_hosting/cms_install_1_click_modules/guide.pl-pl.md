@@ -49,7 +49,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Na stronie znajdziesz ewentualne "moduły za 1 kliknięciem" już zainstalowane. Możesz zarządzać Twoimi "modułami za 1 kliknięciem" i instalować nowe.
 
-![Dostęp do sekcji Moduły OVHcloud](images/1-click-modules-section.png){.thumbnail}
+![Dostęp do sekcji Moduły OVHcloud](images/tab.png){.thumbnail}
 
 ### Etap 3 - dodaj "moduł za 1 kliknięciem"
 
