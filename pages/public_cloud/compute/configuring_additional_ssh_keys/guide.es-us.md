@@ -1,7 +1,7 @@
 ---
 title: Configurar llaves SSH adicionales
 excerpt: Cómo configurar llaves SSH adicionales para la instancia de Public Cloud
-updated: 2022-02-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ Al crear una instancia, solo es posible configurar una llave SSH para la conexi�
 
 > [!primary]
 >
-Si quiere registrar una llave SSH en el Panel de configuración de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
+Actualmente soportamos los siguientes formatos de llave SSH: **RSA**, **ECDSA** y **ED25519**.
 >
 
 ### Creación de la llave SSH

@@ -1,7 +1,7 @@
 ---
 title: 'Erste Public Cloud Instanz erstellen und auf dieser einloggen'
 excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 ## Ziel
@@ -27,7 +27,7 @@ Das SSH-Protokoll sorgt für eine verschlüsselte Client-Server-Kommunikation. D
 
 > [!primary]
 >
-Bitte beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können nur **RSA**\- und **ECDSA**-verschlüsselte Schlüssel speichern; ED25519 wird aktuell nicht unterstützt. 
+Beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können für Schlüssel **RSA**, **ECDSA** oder **ED25519** verwenden.
 >
 Für die Login-Authentifizierung auf Windows-Instanzen sind Benutzername und Passwort erforderlich.
 >
@@ -46,10 +46,17 @@ Verwenden Sie folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
 ```bash
 $ ssh-keygen -b 4096
 ```
+
 Indem Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+
+Oder:
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 Nach Ausführen des Befehls werden Sie aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
@@ -101,7 +108,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 > [!primary]
 >
->In einem MacOS-Terminal können Sie auch die -Befehle  “pbcopy” und “pbpaste”verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel den folgenden Befehl, um den Schlüssel aus der Datei “id_rsa.pub” in der Zwischenablage zu speichern.
+>In einem MacOS-Terminal können Sie auch die Befehle `pbcopy` und `pbpaste` verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel den folgenden Befehl, um den Schlüssel aus der Datei `id_rsa.pub` in der Zwischenablage zu speichern.
 >
 
 ```bash

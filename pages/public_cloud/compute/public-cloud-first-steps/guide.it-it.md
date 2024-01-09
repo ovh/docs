@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ Il protocollo SSH assicura una comunicazione client-server criptata. L’utilizz
 
 > [!primary]
 >
-Ricordati che per connettersi alle istanze Public Cloud, è obbligatorio l’accesso in SSH basato sull’utilizzo di una chiave, ad eccezione di quelle che eseguono sistemi operativi Windows. Le chiavi SSH pubbliche aggiunte al tuo Spazio Cliente OVHcloud saranno disponibili per i servizi Public Cloud di tutte le regioni e i datacenter. È possibile salvare solo chiavi criptata **RSA** e **ECDSA**; ED25519 non è attualmente supportata. 
+Ricordati che per connettersi alle istanze Public Cloud, è obbligatorio l’accesso in SSH basato sull’utilizzo di una chiave, ad eccezione di quelle che eseguono sistemi operativi Windows. Le chiavi SSH pubbliche aggiunte al tuo Spazio Cliente OVHcloud saranno disponibili per i servizi Public Cloud di tutte le regioni e i datacenter. È possibile salvare chiavi crittografate **RSA**, **ECDSA** e **ED25519**.
 >
 La fase di autenticazione sulle istanze Windows richiede soltanto nome utente e password.
 >
@@ -53,7 +53,12 @@ $ ssh-keygen -b 4096
 L’utilizzo dell’opzione “-t” con il comando sopra citato consente di specificare un metodo crittografico, ad esempio:
 
 ```bash
-$ ssh-keygen -t ed25519 -a 256
+$ ssh-keygen -t ecdsa -a 256
+```
+oppure
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 Il comando ti chiederà di salvare la chiave appena creata nel file standard:

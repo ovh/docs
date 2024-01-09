@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 ## Objective
@@ -27,7 +27,7 @@ The SSH protocol ensures encrypted client-server communication. Using SSH keys f
 
 > [!primary]
 >
-Please note that a key-based SSH login is mandatory for connections to Public Cloud instances with the exception of those running Windows operating systems. Public SSH keys added to your OVHcloud Control Panel will be available for Public Cloud services of all regions and data centres. You can only store **RSA** and **ECDSA** encrypted keys; ED25519 is currently not supported. 
+Please note that a key-based SSH login is mandatory for connections to Public Cloud instances with the exception of those running Windows operating systems. Public SSH keys added to your OVHcloud Control Panel will be available for Public Cloud services of all regions and data centres. You can store **RSA**, **ECDSA** and **ED25519** encrypted keys. 
 >
 Login authentication on Windows instances requires only username and password.
 >
@@ -50,6 +50,11 @@ Using the "-t" option with this command allows you to specify a different encryp
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+or
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 The command will prompt you to save the newly created key in the standard file:

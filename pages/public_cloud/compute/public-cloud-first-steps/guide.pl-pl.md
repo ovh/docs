@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie pierwszej instancji Public Cloud i łączenie się z nią'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ Protokół SSH wymaga szyfrowania komunikacji między klientem a serwerem. Korzy
 
 > [!primary]
 >
-Logowanie przy użyciu kluczy SSH jest obowiązkowe w przypadku połączeń z instancjami Public Cloud z wyjątkiem tych, w których działają systemy operacyjne Windows. Publiczne klucze SSH dodane do Panelu klienta OVHcloud będą dostępne dla usług Public Cloud we wszystkich regionach i centrach danych. Przechowywać można tylko zaszyfrowane klucze **RSA** i **ECDSA**, klucze ED25519 obecnie nie są obsługiwane. 
+Logowanie przy użyciu kluczy SSH jest obowiązkowe w przypadku połączeń z instancjami Public Cloud z wyjątkiem tych, w których działają systemy operacyjne Windows. Publiczne klucze SSH dodane do Panelu klienta OVHcloud będą dostępne dla usług Public Cloud we wszystkich regionach i centrach danych. Można przechowywać klucze szyfrowane **RSA**, **ECDSA** i **ED25519**.
 >
 Do uwierzytelnienia logowania w instancjach z systemem Windows są wymagane tylko nazwa użytkownika i hasło.
 >
@@ -54,6 +54,11 @@ Aby określić inną metodę szyfrowania, użyj tego polecenia z opcją “-t”
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+lub
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 Zostanie wyświetlony monit o zapisanie nowo utworzonego klucza w standardowym pliku:
