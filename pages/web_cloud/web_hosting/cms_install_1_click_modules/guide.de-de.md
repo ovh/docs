@@ -49,7 +49,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
 
-![Zugang zur Verwaltung der 1-Klick-Module](images/1-click-modules-section.png){.thumbnail}
+![Zugang zur Verwaltung der 1-Klick-Module](images/tab.png){.thumbnail}
 
 ## Schritt 3: 1-Klick-Modul hinzufügen
 

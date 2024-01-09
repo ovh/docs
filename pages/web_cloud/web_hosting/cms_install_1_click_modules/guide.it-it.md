@@ -49,7 +49,7 @@ Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoman
 
 In questa interfaccia sono elencati gli eventuali "moduli in 1 click" già installati. è possibile gestire i "moduli in 1 click" e installarne di nuovi.
 
-![Accesso alla sezione Moduli in 1 click](images/1-click-modules-section.png){.thumbnail}
+![Accesso alla sezione Moduli in 1 click](images/tab.png){.thumbnail}
 
 ### Step 3 - Aggiungi un "modulo in 1 click"
 

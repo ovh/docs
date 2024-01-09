@@ -49,7 +49,7 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 Aquí encontrará los módulos en 1 clic que haya instalado. Desde ahí podrá gestionar sus módulos en 1 clic e instalar nuevos módulos.
 
-![Acceso a la sección Módulos en un clic](images/1-click-modules-section.png){.thumbnail}
+![Acceso a la sección Módulos en un clic](images/tab.png){.thumbnail}
 
 ### Etapa 3 - añadir un "módulo en 1 clic"
 
