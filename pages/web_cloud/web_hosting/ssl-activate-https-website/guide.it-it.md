@@ -26,7 +26,7 @@ La sicurezza svolge un ruolo sempre più importante sul Web. Gli utenti rivolgon
 
 Quando il sito visitato utilizza una connessione sicura, viene indicato nella barra degli indirizzi del browser in diversi modi: un logo (generalmente un lucchetto), un messaggio, un codice cromatico o il protocollo attivo (HTTPS invece di HTTP). Riconoscere a colpo d’occhio se un sito è sicuro è sempre più facile.
 
-![httpswebsite](images/activate-https-website-ssl-step1.png){.thumbnail}
+![httpswebsite](images/url-not-secure.png){.thumbnail}
 
 **Attivare il protocollo *HTTPS* su un sito Web è un’operazione delicata**, che implica operazioni dirette sulla configurazione del sito (il suo codice). Una o più azioni errate potrebbero avere conseguenze negative, come una peggiore indicizzazione sui motori di ricerca o persino l’irraggiungibilità del sito. 
 
@@ -52,11 +52,11 @@ Per maggiori informazioni sulla procedura completa da seguire per effettuare que
 
 Per verificarlo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca nella scheda `Informazioni generali`{.action}. Nel riquadro <b>Configurazione</b>, verifica se sotto <b>Certificato SSL</b> compare la voce <b>Sì</b>: in questo caso, significa che sull’hosting Web è già installato un certificato SSL. 
 
-![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
+![httpswebsite](images/tab-ssl-le.png){.thumbnail}
 
 A questo punto, clicca sulla scheda `Multisito`{.action}. Visualizzi una tabella con tutti i domini aggiunti alla tua soluzione di hosting. Nella colonna <b>SSL</b> viene mostrato lo stato di attivazione della connessione SSL per i tuoi multisiti. 
 
-![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
+![httpswebsite](images/ssls.png){.thumbnail}
 
 Se hai difficoltà a verificare che il certificato SSL sia installato sull’hosting o sia attivo sul multisito corrispondente, consulta la nostra guida [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}.
 
@@ -84,7 +84,7 @@ In caso contrario il rischio è che si presenti il problema del <i>mixed content
 - **alcune sezioni del sito non vengono visualizzate e nella barra degli indirizzi compare un avviso** che indica che il contenuto considerato attivo (script, iframe, file CSS, ecc...) dal browser è stato bloccato in quanto proveniente da una fonte non sicura.
  
 
-![httpswebsite](images/activate-https-website-ssl-step4.png){.thumbnail}
+![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
 
 Ricordati che, anche nel caso in cui l’hosting disponga di un certificato SSL, i file ospitati possono essere caricati in *HTTP* o *HTTPS* in base al modo in cui questi elementi sono identificati nel codice del sito. Assicurati che il contenuto del tuo sito utilizzi il protocollo *HTTPS*, ad esempio prestando una particolare attenzione agli indirizzi presenti nel codice del sito. Se possibile:
 

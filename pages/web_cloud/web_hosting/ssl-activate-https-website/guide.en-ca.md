@@ -22,7 +22,7 @@ With strong cyber security gaining increasing importance, it is absolutely essen
 
 When you visit a website with a secure connection, your web browser will show this in the URL address bar in the form of a logo (usually a padlock), a message, a colour code, or the use of *HTTPS* protocol rather than *HTTP*. With this many visible indicators of a secure connection, websites that do not offer this security are becoming increasingly conspicuous.
 
-![httpswebsite](images/activate-https-website-ssl-step1.png){.thumbnail}
+![httpswebsite](images/url-not-secure.png){.thumbnail}
 
 **Please take special care when switching your website to *HTTPS*.** Several steps of the process involve making changes to your website’s configuration (i.e. its code). Incorrect changes to the code could result in a number of issues, such as lower SEO ranking, and in the worst case, your website could become inaccessible. 
 
@@ -48,11 +48,11 @@ You can read a detailed version of the changes you need to make in our guide to 
 
 To check this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Click `Web hosting`{.action}, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
 
-![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
+![httpswebsite](images/tab-ssl-le.png){.thumbnail}
 
 Go to the `Multisite`{.action} tab. The table displayed will contain all of the domain names that have been added to your Web Hosting plan. In the ‘SSL’ column, you will see the activation status for secure SSL connections on your multisites. 
 
-![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
+![httpswebsite](images/ssls.png){.thumbnail}
 
 If, from these verifications, it seems that an SSL certificate may not be set up properly on your Web Hosting plan and/or is not active on the multisite concerned, please read our guide to [Managing an SSL certificate on a Web Hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
@@ -81,7 +81,7 @@ If this is not the case, you are providing web browsers with what is known as "m
 
 For this reason, it is absolutely vital to ensure that all of the content loaded from your website comes from a secure source. 
 
-![httpswebsite](images/activate-https-website-ssl-step4.png){.thumbnail}
+![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
 
 Please note that even if your Web Hosting plan has an SSL certificate, the content hosted on it can be loaded in *HTTP* or *HTTPS*. This will depend on the way you have identified the content in your website’s code. As a result, you will need to ensure that the content loaded from your website uses *HTTPS* protocol.
 

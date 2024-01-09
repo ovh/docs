@@ -26,7 +26,7 @@ Bezpieczeństwo jest niezwykle istotnym aspektem korzystania z Internetu. Z pewn
 
 Kiedy odwiedzasz stronę WWW używającą bezpiecznego połączenia, na pasku adresowym Twojej przeglądarki może być to widoczne na kilka sposobów: logo (zazwyczaj kłódkę), odpowiednia informacja, nazwa firmy zaznaczoną innym kolorem lub protokół *HTTPS* zamiast *HTTP*. A zatem, czy Twoja strona WWW używa bezpiecznego połączenia czy też nie, staje się dla internautów coraz bardziej widoczny.
 
-![https na stronie www](images/activate-https-website-ssl-step1.png){.thumbnail}
+![https na stronie www](images/url-not-secure.png){.thumbnail}
 
 **Proces uruchomienia protokołu *HTTPS* na stronie WWW może być wrażliwą operacją.** Składa się on z kilku etapów wymagających zmiany konfiguracji Twojej strony WWW (a dokładniej jej kodu). Jeśli działania nie zostaną przeprowadzone prawidłowo, mogą mieć różne negatywne skutki: gorsze pozycjonowanie strony WWW w wyszukiwarkach internetowych lub nawet niedostępność Twojej strony. 
 
@@ -52,11 +52,11 @@ Dokładny opis realizacji tych dwóch operacji dostępny jest w naszej dokumenta
 
 Aby to sprawdzić, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Pod napisem „Certyfikat SSL” powinna pojawić się informacja „Tak” wskazująca, że certyfikat SSL jest zainstalowany na Twoim hostingu. 
 
-![https na stronie www](images/activate-https-website-ssl-step2.png){.thumbnail}
+![https na stronie www](images/tab-ssl-le.png){.thumbnail}
 
 Przejdź następnie do zakładki MultiSite. Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie „SSL” możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich poszczególnych domen w opcji MultiSite. 
 
-![https na stronie www](images/activate-https-website-ssl-step3.png){.thumbnail}
+![https na stronie www](images/ssls.png){.thumbnail}
 
 Jeśli nie udało Ci się potwierdzić, że certyfikat SSL jest zainstalowany na Twoim hostingu i/lub że jest aktywny w wybranej opcji MultiSite, skorzystaj z naszej dokumentacji: [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}.
 
@@ -85,7 +85,7 @@ Jeśli tak się nie dzieje, istnieje ryzyko, że udostępniasz na Twojej stronie
 
 Kluczowe zatem jest upewnienie się, czy całość treści, która została załadowana z Twojej strony WWW pochodzi z zabezpieczonego źródła. 
 
-![https na stronie www](images/activate-https-website-ssl-step4.png){.thumbnail}
+![https na stronie www](images/connection-isnt-secure.png){.thumbnail}
 
 Pamiętaj, że nawet jeśli na Twoim hostingu zainstalowany jest certyfikat SSL, treści hostowane na hostingu mogą być ładowane przy użyciu protokołu *HTTP* lub *HTTPS*. To zależy od sposobu, w jaki oznaczyłeś te treści w kodzie Twojej strony. Upewnij się zatem, czy treści ładowane z Twojej strony używają protokołu *HTTPS*.
 
