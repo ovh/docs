@@ -188,7 +188,7 @@ Następnie wróć na stronę, aby zobaczyć wynik:
 
 Jeśli wolisz używać Twojego zwykłego edytora kodu, zaloguj się z klientem FTP do Twojego serwera, aby pobrać pliki na komputerze:
 
-![Do pobrania z FileZilla](images/static_website_installation_cecil11.png){.thumbnail}
+![Do pobrania z FileZilla](images/cecil-folder.png){.thumbnail}
 
 Teraz możesz edytować pliki I.D.E. w swoim repozytorium:
 

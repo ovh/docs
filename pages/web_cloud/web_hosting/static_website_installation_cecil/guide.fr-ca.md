@@ -184,7 +184,7 @@ Puis retournez sur votre page pour voir le résultat:
 
 Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateur:
 
-![Téléchargement avec FileZilla](images/static_website_installation_cecil11.png){.thumbnail}
+![Téléchargement avec FileZilla](images/cecil-folder.png){.thumbnail}
 
 Vous pouvez maintenant éditer les fichiers dans votre I.D.E.:
 

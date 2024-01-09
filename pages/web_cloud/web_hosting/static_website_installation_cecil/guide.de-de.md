@@ -195,7 +195,7 @@ Kehren Sie dann zu Ihrer Seite zurück, um das Ergebnis zu sehen:
 
 Wenn Sie es vorziehen, Ihren gewohnten Code-Editor zu verwenden, melden Sie sich mit einem FTP-Client auf Ihrem Server an, um die Dateien auf Ihren Computer zu übertragen:
 
-![FileZilla Download](images/static_website_installation_cecil11.png){.thumbnail}
+![FileZilla Download](images/cecil-folder.png){.thumbnail}
 
 Sie können nun die Dateien in Ihrer I.D.E. bearbeiten:
 
