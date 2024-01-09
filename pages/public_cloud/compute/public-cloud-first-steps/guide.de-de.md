@@ -27,7 +27,7 @@ Das SSH-Protokoll sorgt für eine verschlüsselte Client-Server-Kommunikation. D
 
 > [!primary]
 >
-Bitte beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können verschlüsselte Schlüssel speichern **RSA**, **ECDSA** und **ED25519**.
+Beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können für Schlüssel **RSA**, **ECDSA** oder **ED25519** verwenden.
 >
 Für die Login-Authentifizierung auf Windows-Instanzen sind Benutzername und Passwort erforderlich.
 >
@@ -46,12 +46,14 @@ Verwenden Sie folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
 ```bash
 $ ssh-keygen -b 4096
 ```
+
 Indem Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
 ```
-oder
+
+Oder:
 
 ```bash
 $ ssh-keygen -t ed25519
@@ -106,7 +108,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 > [!primary]
 >
->In einem MacOS-Terminal können Sie auch die -Befehle  “pbcopy” und “pbpaste”verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel den folgenden Befehl, um den Schlüssel aus der Datei “id_rsa.pub” in der Zwischenablage zu speichern.
+>In einem MacOS-Terminal können Sie auch die Befehle `pbcopy` und `pbpaste` verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel den folgenden Befehl, um den Schlüssel aus der Datei `id_rsa.pub` in der Zwischenablage zu speichern.
 >
 
 ```bash
