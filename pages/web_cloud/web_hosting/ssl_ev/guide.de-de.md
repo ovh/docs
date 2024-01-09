@@ -64,7 +64,7 @@ Lesen Sie unsere Anleitung "[SSL-Zertifikat auf Ihrem Webhosting verwalten](/pag
 
 Geben Sie die von **Sectigo** angeforderten Informationen ein, bevor Ihnen das EV SSL-Zertifikat ausgestellt wird. 
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Klicken Sie auf `Fortfahren`{.action}, sobald **alle Elemente** korrekt eingegeben sind.
 
@@ -83,19 +83,19 @@ Führen Sie die Bestellung bis zur Zahlung durch, um die Anfrage zur Erstellung 
 
 Wenn Sie Ihren Domainnamen und das dazugehörige Hosting noch nicht bestellt haben, gehen Sie auf die [Startseite von OVHcloud](https://www.ovhcloud.com/de/), geben Sie einen Domainnamen in das dafür vorgesehene **Suchformular** ein und klicken Sie anschließend auf `Suchen`{.action}, um Ihre Bestellung zu starten.
 
-![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
+![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
 Wählen Sie anschließend Ihren Domainnamen, das Hosting und die Optionen aus, bis Sie zum Schritt `Konfigurieren Sie Ihr Webhosting` gelangen.
 
 Wählen Sie die Installationsoptionen für `1-Klick-Modul`{.action} und `CDN`{.action} aus und gehen Sie dann unten zum Bereich `Absicherung Ihrer Website mit unseren SSL Zertifikaten`{.action}.
 
-![SSL EV order](images/ssl_ev_order.png){.thumbnail}
+![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
 
 Wählen Sie `Sectigo EV SSL`{.action} und klicken Sie dann auf `Weiter`{.action}.
 
 Geben Sie auf der neuen Seite die von **Sectigo*** angeforderten Informationen ein, bevor das EV SSL-Zertifikat ausgestellt wird:
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Klicken Sie auf `Fortfahren`{.action}, sobald **alle Elemente** korrekt eingegeben sind.
 
