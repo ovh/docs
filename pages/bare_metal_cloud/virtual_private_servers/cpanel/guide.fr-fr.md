@@ -1,20 +1,20 @@
 ---
 title: 'Déployer cPanel sur un VPS'
 excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
-updated: 2024-01-08
+updated: 2024-01-09
 ---
 
 ## Objectif
 
-cPanel est un panneau de configuration qui facilite la gestion d'hébergements web. Il rend les tâches complexes plus accessibles y compris pour les nouveaux utilisateurs. Il offre une vaste gamme de fonctionnalités comme, par exemple, pour la gestion : 
+cPanel est un panneau de configuration qui facilite la gestion d'hébergements web. Il rend les tâches complexes plus accessibles, y compris pour les nouveaux utilisateurs. Il offre une vaste gamme de fonctionnalités comme, par exemple, pour la gestion : 
 
-- des e-mails, 
-- des domaines,
-- des bases de données,
-- de la sécurité,
+- des e-mails
+- des domaines
+- des bases de données
+- de la sécurité
 - etc.
 
-Constitué d'une interface graphique permettant l'automatisation des paramètres, l'hébergement de sites web est ainsi simplifié.
+Grâce à une interface graphique permettant l'automatisation des paramètres, l'hébergement de sites web est ainsi simplifié.
 
 **Découvrez comment déployer cPanel avec les applications pré-installées sur un VPS.**
 
@@ -50,7 +50,7 @@ Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce l
 
 L'URL générée par la commande « sudo whmlogin » vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
 
-#### Étape 1 : accepter les conditions d'utilisation de cPanel
+#### Étape 1 : lire et accepter les conditions d'utilisation de cPanel
 
 Lisez et acceptez les conditions d'utilisation de cPanel.
 
@@ -91,17 +91,18 @@ Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire c
 > [!primary]
 >
 > Dans la barre de navigation de votre navigateur, entrez les URLs suivantes pour vous connecter à :
+>
 > - cPanel : https://<IP_V4>:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
 > - WHM : https://<IP_V4>:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’e-mail d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
 >
-> Retrouvez votre adresse IPv4 dans le mail que vous avez reçu suite à la commande de votre VPS avec la distribution cPanel.
+> Retrouvez votre adresse IPv4 dans l'e-mail que vous avez reçu suite à la commande de votre VPS avec la distribution cPanel.
 >
 
 ### Sécurisation de votre service
 
-Nous vous recommandons de prendre toutes les mesures nécessaires pour sécuriser votre WHM et votre VPS. Pour cela, nous vous recommandons de lire les recommandations de cPanel [ici](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+Nous vous recommandons de prendre toutes les mesures nécessaires pour sécuriser votre WHM et votre VPS. Pour cela, nous vous recommandons de lire [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Nous vous recommandons également de consulter notre guide pour [sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), d'utiliser [nos solutions de sauvegarde](/products/bare-metal-cloud-virtual-private-servers) et de configurer le [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+Nous vous recommandons également de consulter notre guide pour [sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), d'utiliser [nos solutions de sauvegarde](/products/bare-metal-cloud-virtual-private-servers) et de configurer le [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 ## Aller plus loin
 
