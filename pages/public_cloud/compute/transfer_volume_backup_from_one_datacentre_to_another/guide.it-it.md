@@ -1,7 +1,7 @@
 ---
 title: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
 excerpt: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
-updated: 2021-01-19
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ In alcuni casi, potresti avere bisogno di trasferire i tuoi dischi aggiuntivi da
 
 > [!primary]
 >
-I comandi utilizzati in questa guida sono basati sulla CLI OpenStack e non sulle API `Nova` e `Glance`.
+I comandi utilizzati in questa guida sono basati sulla CLI OpenStack.
 >
 
 ## Procedura

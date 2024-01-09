@@ -1,7 +1,7 @@
 ---
 title: 'Transfer a volume backup from one datacentre to another'
 excerpt: 'This guide will show you how to transfer a volume backup from one datacentre to another'
-updated: 2021-01-19
+updated: 2024-01-09
 ---
 
 ## Objective
@@ -23,7 +23,7 @@ You will also need the following:
 
 > [!primary]
 >
-The commands in this guide are based on the OpenStack CLI, as opposed to the `NOVA` and `GLANCE` APIs.
+The commands in this guide are based on the OpenStack CLI.
 >
 
 ## Instructions

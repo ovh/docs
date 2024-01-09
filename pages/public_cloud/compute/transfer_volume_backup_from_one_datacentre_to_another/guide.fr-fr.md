@@ -1,7 +1,7 @@
 ---
-title: 'Transférer la sauvegarde d’un volume d’un datacenter à l’autre'
-excerpt: 'Apprenez à déplacer une sauvegarde de volume entre différents centres de données'
-updated: 2021-01-19
+title: "Transférer la sauvegarde d’un volume d’un datacenter à l’autre"
+excerpt: "Apprenez à déplacer une sauvegarde de volume entre différents centres de données"
+updated: 2024-01-09
 ---
 
 ## Objectif

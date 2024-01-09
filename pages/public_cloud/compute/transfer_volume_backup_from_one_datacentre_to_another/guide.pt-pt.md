@@ -1,7 +1,7 @@
 ---
 title: Transferir o backup de um volume de um datacenter para outro
 excerpt: Transferir o backup de um volume de um datacenter para outro
-updated: 2021-01-19
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Poderá necessitar de migrar os seus volumes adicionais de um datacenter para ou
 
 > [!primary]
 >
-Os comandos deste manual baseiam-se na CLI OpenStack, ao contrário das API `Nova` e `Glance`.
+Os comandos deste manual baseiam-se na CLI OpenStack.
 >
 
 ## Instruções
