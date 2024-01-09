@@ -1,6 +1,6 @@
 ---
 title: Local Zone Compute - Funktionen, Kapazitäten und Einschränkungen
-excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones-Instanzen
+excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones Instanzen
 updated: 2024-01-05
 ---
 
@@ -12,15 +12,16 @@ updated: 2024-01-05
 
 > [!primary]
 >
-> Die Local Zone Instances werden derzeit nur in der Alphaversion bereitgestellt. Wenn Sie Schwierigkeiten haben und/oder Ihre Erfahrungen mit anderen Benutzern diskutieren möchten, kontaktieren Sie uns bitte über Discord <https://discord.gg/ovhcloud> oder kontaktieren Sie unsere Community-Plattform: <https://community.ovh.com/en/>.
+> Local Zones Instanzen werden derzeit nur in der Alphaversion bereitgestellt. Wenn Sie Schwierigkeiten haben oder Ihre Erfahrungen mit anderen Benutzern diskutieren möchten, kontaktieren Sie uns über Discord <https://discord.gg/ovhcloud> oder treten Sie unserer Community bei: <https://community.ovh.com/en/>.
 > 
 
-Local Zones Instances sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen.
-Die Local Zones-Instanzen befinden sich strategisch in der Nähe von Bereichen mit hoher Benutzeranforderung. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um die Dienste schneller und reaktionsschneller zu machen und die Anforderungen von Data Residency zu erfüllen.
+Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen.
 
-Weitere Informationen finden Sie auf unserer [Seite für Local Zone-Instanzen](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/).
+Die Local Zones Instanzen befinden sich strategisch in der Nähe von Bereichen mit hoher Benutzeranforderung. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um die Dienste reaktionsschneller zu machen und Anforderungen für Data Residency zu erfüllen.
 
-**Erfahren Sie mehr über die aktuellen und zukünftigen Funktionen und Funktionen der Local Zones Instanzen.**
+Weitere Informationen finden Sie auf unserer [Seite für Local Zones](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/).
+
+**Erfahren Sie mehr über die aktuellen und zukünftigen Funktionen der Local Zones Instanzen.**
 
 ## Verfügbare Funktionen
 
@@ -30,13 +31,13 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zone-Instanzen](h
 | User-data/cloud-init Support | Ja|
 | Neues/vorhandenes privates LAN hinzufügen | Ja |
 | Public IPv6 Support | Ja |
-| Öffentlicher IPv4-Support | Ja |
-| boot/start | Ja |
-| Stopp | Ja |
+| Public IPv4 Support | Ja |
+| Boot/Start | Ja |
+| Stop | Ja |
 
 ## Kapazitäten und Einschränkungen
 
-Alle hier nicht aufgeführten Instanzfunktionen wie Neustart (Reboot) der Instanzen, Unterstützung von Block oder Object Storage werden in den nächsten Monaten verfügbar sein. Unser Ziel ist es, alle Funktionen zu unterstützen, die in globalen Regionen bereits unterstützt werden.
+Alle hier nicht aufgeführten Funktionen wie Neustart (Reboot) von Instanzen, Unterstützung von Block Storage oder Object Storage werden in den nächsten Monaten verfügbar sein. Unser Ziel ist es, alle Funktionen zu unterstützen, die in globalen Regionen bereits unterstützt werden.
 
 ## Feedback
 
