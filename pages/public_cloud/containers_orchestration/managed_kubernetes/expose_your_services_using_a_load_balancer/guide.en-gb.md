@@ -1,34 +1,45 @@
 ---
 title: Expose your services using OVHCloud Public Cloud Load Balancer
 excerpt: ""
-updated: 2023-12-08
+updated: 2024-01-09
 ---
+
+> [!warning]
+>
+> Usage of the [Public Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Beta phase.
+>
 
 ## Objective
 
-This guide aim to know how to use our Public Cloud Load Balancer to expose your te
+This guide aim to know how to use our Public Cloud Load Balancer to expose your app using Public Cloud Load Balancer.
+If you're not comfortable with the different ways of exposing your applications in Kubernetes, or if you're not familiar with the notion of service type 'loadbalancer', we recommend you start by reading [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-using-lb?id=kb_article_view&sysparm_article=KB0050008) detailing the different methods for exposing your containerized applications hosted in Kubernetes.
+
+Our Public Cloud Load Balancer is relying on Openstack Octavia project, you can find the official documentation [here](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md).
+
+To be able to deploy Octavia load balancers, your Managed Kubernetes Service must have been upgraded to //INSERT VERSION HERE patch version. This feature is also available to customers using the services of our US subsidiary.
 
 ## Billing
 
-- One OVHcloud Gateway gateway is billed for all Octavia LoadBalancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+- When exposing your load balancer publicly (pub-to-pub or pub-to-private), if it does not already exist, an OVHcloud Gateway  is automatically creation and charged for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+
+
+- Each Public CLoud Load Balancer is billed according to his flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
+- If the Public Cloud Load Balancer is a public one, a Public Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 
     > [!primay]
     >
-    > Note: Each Managed Load Balancer has his own bandwidth. Outgoing traffic doesn't consume OpenStack gateway bandwidth.
+    > Note: Each Public Cloud Load Balancer has his own Public Floating IP. Outgoing traffic doesn't consume OVHcloud Gateway bandwidth.
     >
-
-- Each Managed Load Balancer is billed regarding his flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
-- If the Octavia is a public one, an OpenStack Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 
 ## Process
 
-During the beta phase, if you want a load balancer service to be deployed on Octavia rather than the current load balancing solution, you'll need to add an annotation: loadbalancer.ovhcloud.com/class: "octavia".  
+During the beta phase, if you want a Kubernetes load balancer service to be deployed using Public Cloud Load Balancer rather than the current Loadbalancer for Kubernetes solution, you'll need to add an annotation: loadbalancer.ovhcloud.com/class: "octavia".  
 
-Here's a simple example of how to use a LB Octavia
+Here's a simple example of how to use the Public Cloud Load Balancer
 
-1. Creation of a functional cluster via the OVHcloud manager, Terraform or API.
-2. Retrieve the kubeconfig needed to use kubectl tool (via OVHcloud manager, Terraform or API).
-3. Create a "deployment" using the following command: kubectl create deploy test-octavia --image=nginx
+1. Creation of a functional Managed Kubernetes (MKS) cluster using the OVHcloud manager, Terraform or APIs.
+2. Retrieve the kubeconfig needed to use kubectl tool (via OVHcloud manager, Terraform or API). You can use [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049658)
+3. Create a "deployment" using the following command: kubectl create deployment test-octavia --image=nginx
 4. Create a service using the following configuration
 5. Retrieve service IP address using the following command line: `kubectl describe service test-octavia-todel`
 6. Open a web browser at: http://IP-retrieved-in-prevous-step
@@ -57,204 +68,93 @@ spec:
 
 ## Use cases
 
-### Public to Public (you are using a public Managed Kubernetes Cluster)
+### Public-to-Public (you are using a public Managed Kubernetes Cluster)
+
+- Useful Annotations and Specs
+
+**annotations:**
+
+- `loadbalancer.openstack.org/flavor` //not standard Openstack annotations values => small,medium,large. Default => 'small'
+- `loadbalancer.openstack.org/flavor-id` //if 'flavor' is not used
+- `loadbalancer.openstack.org/keep-floatingip` // useful if you want to keep your floating API after Load Balancer deletion
+
+**spec:**
+- `spec.loadbalancerIP` // A CONFIRMER (DEPRECATED ON 1.24)
+
+**Example:**
+
+
+
+### Public to Private (your cluster is attached to a private network/subnet)
+
+- Useful Annotations and Specs
+
+**annotations:**
+
+- `loadbalancer.openstack.org/flavor` //not standard Openstack annotations values => small,medium,large. Default => 'small'
+- `loadbalancer.openstack.org/flavor-id` // if 'flavor' is not used
+- `loadbalancer.openstack.org/keep-floatingip` // useful if you want to keep your floating API after Load Balancer deletion
+
+
+**spec:**
+
+- `spec.loadbalancerIP` // A CONFIRMER (DEPRECATED ON 1.24)
+
+**Example:**
+
+### Private to Private
 
 - From service annotations or spec
 
 **annotations:**
 
-- `loadbalancer.openstack.org/flavor` //not openstack annotation values => small,medium,large
-- `loadbalancer.openstack.org/flavor-id`
-- `loadbalancer.openstack.org/keep-floatingip` //for deletion
-- `loadbalancer.openstack.org/class`
-- `service.beta.kubernetes.io/openstack-internal-load-balancer` // for priv to priv
-
-**spec:**
-- `spec.loadbalancerIP`
-
-**PCI call**
-
-Input
-```
-{
-"flavor":"small"//by default/not present, otherwise the annotation from service flavor-id resolved by its name
-"floatingip":true//by default except if spec.loadbalancerip specified
-"creategateway":true//by default for priv to priv
-"name":cellid+clusterid+service namespace+ service name
-"subnet_id"://nothing here this is pub to pub
-}
-```
-
-Output
-```
-{
-"flavor"://computed or the same as input
-"flavor_id"://computed or the same as input
-"floatingips"://its an array but it will be one ip
-"id"://openstack octavia id
-"name"://same as input
-"project_id"://same as input
-"status"://error/provisionning/active
-"status_info"://additionnal info
-"vip_network_id"://network id
-"vip_port_id"://additionnal info
-"vip_subnet_id"://subnet id
-}
-```
-
-**Annotate service**
-
-- `loadbalancer.openstack.org/network-id`
-- `loadbalancer.openstack.org/subnet-id`
-- `loadbalancer.openstack.org/load-balancer-id`
-
-Call upstream
-
-### Public to Private (this is a private subnet associated to cluster)
-
-- From service annotations or spec
-
-**annotations:**
-
-- `loadbalancer.openstack.org/flavor` //not openstack annotation values => small,medium,large
-- `loadbalancer.openstack.org/flavor-id`
-- `loadbalancer.openstack.org/keep-floatingip` // for deletion
-- `loadbalancer.openstack.org/class`
-- `service.beta.kubernetes.io/openstack-internal-load-balancer //` for priv to priv
+- `loadbalancer.openstack.org/flavor` //not standard Openstack annotations values => small,medium,large. Default => 'small'
+- `loadbalancer.openstack.org/flavor-id` // if 'flavor' is not used
+- `loadbalancer.openstack.org/keep-floatingip` // useful if you want to keep your floating API after Load Balancer deletion
+- `service.beta.kubernetes.io/openstack-internal-load-balancer`
 
 **spec:**
 
-- `spec.loadbalancerIP`
+- `spec.loadbalancerIP` // A CONFIRMER (DEPRECATED ON 1.24)
 
-**PCI call**
-
-Input
-```
-{
-"flavor":"small"//by default/not present, otherwise the annotation from service flavor-id resolved by its name
-"floatingip":true//by default except if spec.loadbalancerip specified
-"creategateway":true//by default for priv to priv
-"name":cellid+clusterid+service namespace+ service name
-"subnet_id"://the openstack private subnet id
-}
-```
-
-Output
-```
-{
-"flavor"://computed or the same as input
-"flavor_id"://computed or the same as input
-"floatingips"://its an array but it will be one ip
-"id"://openstack octavia id
-"name"://same as input
-"project_id"://same as input
-"status"://error/provisionning/active
-"status_info"://additionnal info
-"vip_network_id"://network id
-"vip_port_id"://additionnal info
-"vip_subnet_id"://subnet id
-}
-```
-
-**Annotate service**
-
-- `loadbalancer.openstack.org/network-id`
-- `loadbalancer.openstack.org/subnet-id`
-- `loadbalancer.openstack.org/load-balancer-id`
-
-Call upstream
-
-### Private to Private (annotation is present service.beta.kubernetes.io/openstack-internal-load-balancer)
-
-- From service annotations or spec
-
-**annotations:**
-
-- `loadbalancer.openstack.org/flavor` //not openstack annotation values => small,medium,large
-- `loadbalancer.openstack.org/flavor-id`
-- `loadbalancer.openstack.org/keep-floatingip` //for deletion
-- `loadbalancer.openstack.org/class`
-- `service.beta.kubernetes.io/openstack-internal-load-balancer` //priv to priv
-
-**spec:**
-
-- `spec.loadbalancerIP`
-
-**PCI call**
-
-Input
-```
-{
-"flavor":"small"//by default/not present, otherwise the annotation from service flavor-id resolved by its name
-"floatingip":false// do not create priv to priv mode
-"creategateway":false// do not create priv to priv
-"name":cellid+clusterid+service namespace+ service name
-"subnet_id"://nothing here this is pub to pub
-}
-```
-
-Output
-```
-{
-"flavor"://computed or the same as input
-"flavor_id"://computed or the same as input
-"floatingips"://its an array but it will be one ip
-"id"://openstack octavia id
-"name"://same as input
-"project_id"://same as input
-"status"://error/provisionning/active
-"status_info"://additionnal info
-"vip_network_id"://network id
-"vip_port_id"://additionnal info
-"vip_subnet_id"://subnet id
-}
-```
-
-**Annotate service**
-
-- `loadbalancer.openstack.org/network-id`
-- `loadbalancer.openstack.org/subnet-id`
-- `loadbalancer.openstack.org/load-balancer-id`
-
-
-Call upstream
 
 
 ## Supported Features
 
 ### Service annotations
 
-- `loadbalancer.openstack.org/floating-network-id`
+- `loadbalancer.openstack.org/floating-network-id`   //NOT SUPPORTED on OVH
 
   The public network id which will allocate public IP for loadbalancer. This annotation works when the value of `service.beta.kubernetes.io/openstack-internal-load-balancer` is false.
 
-- `loadbalancer.openstack.org/floating-subnet`
+
+- `loadbalancer.openstack.org/floating-subnet` //NOT SUPPORTED on OVH
 
   A public network can have several subnets. This annotation is the name of subnet belonging to the floating network. This annotation is optional.
 
-- `loadbalancer.openstack.org/floating-subnet-id`
+- `loadbalancer.openstack.org/floating-subnet-id` //NOT SUPPORTED on OVH
 
   This annotation is the ID of a subnet belonging to the floating network, if specified, it takes precedence over `loadbalancer.openstack.org/floating-subnet` or `loadbalancer.openstack.org/floating-tag`.
 
-- `loadbalancer.openstack.org/floating-subnet-tags`
+- `loadbalancer.openstack.org/floating-subnet-tags` //NOT SUPPORTED on OVH
 
   This annotation is the tag of a subnet belonging to the floating network.
 
-- `loadbalancer.openstack.org/class`
+- `loadbalancer.openstack.org/class` //NOT SUPPORTED on OVH
 
   The name of a preconfigured class in the config file. If provided, this config options included in the class section take precedence over the annotations of floating-subnet-id, floating-network-id, network-id, subnet-id and member-subnet-id . See the section below for how it works.
 
 - `loadbalancer.openstack.org/subnet-id`
 
-  VIP subnet ID of load balancer created.
+  VIP subnet ID of load balancer created. By default, the subnet-id of the subnet configured for your OVHcloud Managed Kubernetes Cluster will be used.
 
 - `loadbalancer.openstack.org/member-subnet-id`
 
-  Member subnet ID of the load balancer created.
+  Member subnet ID of the load balancer created. By default, the subnet-id of the subnet configured for your OVHcloud Managed Kubernetes Cluster will be used.
 
 - `loadbalancer.openstack.org/network-id`
 
-  The network ID which will allocate virtual IP for loadbalancer.
+  The network ID which will allocate virtual IP for loadbalancer. By default, the network-id of the network configured for your OVHcloud Managed Kubernetes Cluster will be used.
 
 - `loadbalancer.openstack.org/port-id`
 
@@ -272,63 +172,47 @@ Call upstream
 
   If 'true', the loadbalancer pool protocol will be set as `PROXY`. Default is 'false'.
 
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
-
 - `loadbalancer.openstack.org/x-forwarded-for`
 
-  If 'true', `X-Forwarded-For` is inserted into the HTTP headers which contains the original client IP address so that the backend HTTP service is able to get the real source IP of the request. Please note that the cloud provider will force the creation of an Octavia listener of type `HTTP` if this option is set. Only applies when using Octavia.
+  **Not supported**. If you want to keep the source IP we do recommend to use an Ingress-controller, for example: https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md  
 
-  This annotation also works in conjunction with the `loadbalancer.openstack.org/default-tls-container-ref` annotation. In this case the cloud provider will create an Octavia listener of type `TERMINATED_HTTPS` instead of an `HTTP` listener.
-
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
-
-- `loadbalancer.openstack.org/timeout-client-data`
+- `loadbalancer.openstack.org/timeout-client-data` //SUPPORTED
 
   Frontend client inactivity timeout in milliseconds for the load balancer.
 
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
-
-- `loadbalancer.openstack.org/timeout-member-connect`
+- `loadbalancer.openstack.org/timeout-member-connect` //SUPPORTED
 
   Backend member connection timeout in milliseconds for the load balancer.
 
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
-
-- `loadbalancer.openstack.org/timeout-member-data`
+- `loadbalancer.openstack.org/timeout-member-data` //SUPPORTED
 
   Backend member inactivity timeout in milliseconds for the load balancer.
 
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
-
-- `loadbalancer.openstack.org/timeout-tcp-inspect`
+- `loadbalancer.openstack.org/timeout-tcp-inspect` //SUPPORTED
 
   Time to wait for additional TCP packets for content inspection in milliseconds for the load balancer.
 
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
-
-- `service.beta.kubernetes.io/openstack-internal-load-balancer`
+- `service.beta.kubernetes.io/openstack-internal-load-balancer` //SUPPORTED
 
   If 'true', the loadbalancer VIP won't be associated with a floating IP. Default is 'false'. This annotation is ignored if only internal Service is allowed to create in the cluster.
 
-- `loadbalancer.openstack.org/enable-health-monitor`
+- `loadbalancer.openstack.org/enable-health-monitor` //TO BE CHECKED, WE WILL PROBABLY CHANGE DEFAULT VALUE TO TRUE
 
-  Defines whether to create health monitor for the load balancer pool, if not specified, use `create-monitor` config. The health monitor can be created or deleted dynamically. A health monitor is required for services with `externalTrafficPolicy: Local`.
-
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
+  Defines whether to create health monitor for the load balancer pool, if not specified, default value is True. The health monitor can be created or deleted dynamically. A health monitor is required for services with `externalTrafficPolicy: Local`.
 
 - `loadbalancer.openstack.org/health-monitor-delay`
 
-  Defines the health monitor delay in seconds for the loadbalancer pools.
+  Defines the health monitor delay in seconds for the loadbalancer pools. Default value (ms) = 5000
 
 - `loadbalancer.openstack.org/health-monitor-timeout`
 
-  Defines the health monitor timeout in seconds for the loadbalancer pools. This value should be less than delay
+  Defines the health monitor timeout in seconds for the loadbalancer pools. This value should be less than delay. Default value (ms) = 3000
 
 - `loadbalancer.openstack.org/health-monitor-max-retries`
 
-  Defines the health monitor retry count for the loadbalancer pool members.
+  Defines the health monitor retry count for the loadbalancer pool members. Default value = 1
 
-- `loadbalancer.openstack.org/health-monitor-max-retries-down`
+- `loadbalancer.openstack.org/health-monitor-max-retries-down` //NOT SUPPORTED .
 
   Defines the health monitor retry count for the loadbalancer pool members to be marked down.
 
@@ -336,13 +220,9 @@ Call upstream
 
   The id of the flavor that is used for creating the loadbalancer.
 
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
-
-- `loadbalancer.openstack.org/availability-zone`
+- `loadbalancer.openstack.org/availability-zone` //NOT SUPPORTED
 
   The name of the loadbalancer availability zone to use. It is ignored if the Octavia version doesn't support availability zones yet.
-
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
 
 - `loadbalancer.openstack.org/default-tls-container-ref`
 
@@ -395,7 +275,7 @@ In order to use a FloatingIP, we need to setup an Openstack Router.
 
 ## Go further
 
-Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra) to find how to connect to your database with several languages.
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra) to find how to connect to your database with several languages. //NOT EXISTING FOR MKS, TO BE CREATED
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
