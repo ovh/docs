@@ -25,11 +25,9 @@ Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
 
-![Hosting](images/statistics01.png){.thumbnail}
-
 Dieser Tab besteht aus 3 Abschnitten. Der erste zeigt die **Statistiken** an, der zweite die **Website Logs** Ihres Webhostings, und der letzte ist für die **Verwaltung der Nutzer** bestimmt, die Zugriff auf die Statistiken haben.
 
-![Hosting](images/statistics02u.png){.thumbnail}
+![Hosting](images/tab.png){.thumbnail}
 
 ### Verwaltung der Nutzer
 
@@ -37,7 +35,7 @@ Die Erstellung eines Benutzers ermöglicht es einer Person, auf die Statistiken 
 
 Klicken Sie im Bereich `Verwaltung der Nutzer` auf den Button `Einen neuen Nutzer erstellen`{.action} und folgen Sie den Anweisungen.  
 
-![Hosting](images/user-statistics01.png){.thumbnail}
+![Hosting](images/create-a-new-user.png){.thumbnail}
 
 Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, geben Sie die folgende Adresse ein. Ersetzen Sie dabei `000` mit der Cluster-Nummer Ihres Hostings und `mydomain.ovh` mit dem Domainnamen Ihrer Website (ohne "www""):
 
@@ -48,7 +46,7 @@ https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
 Klicken Sie im Bereich `Statistiken und Logs`{.action} auf `Die Statistiken anzeigen`{.action}.<br>
 Rufen Sie im Tab Ihres Browsers, in dem das Statistikfenster angezeigt wird, den Link auf, über den Sie sich mit einem der erstellten Benutzer verbinden können.
 
-![hosting](images/OWStatslink.png){.thumbnail}
+![hosting](images/view-statistics.png){.thumbnail}
 
 > [!warning] 
 >
@@ -59,7 +57,7 @@ Rufen Sie im Tab Ihres Browsers, in dem das Statistikfenster angezeigt wird, den
 
 Das **OVHcloud Web Statistics** Tool hilft Ihnen dabei, den Traffic der auf Ihrem Webhosting gehosteten Webseiten nachzuverfolgen und zu steuern, indem es Statistiken über Seitenbesuche und die Messung der Zuschauerzahlen visuell aufbereitet.
 
-![Hosting](images/OWStats01.gif){.thumbnail}
+![Hosting](images/ows-presentation.gif){.thumbnail}
 
 Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitte im linken Bereich aufgeteilt.
 
@@ -77,7 +75,7 @@ Mit `Period selection` können Sie einen bestimmten Zeitraum auswählen.
 
 Sie können die ungefilterten Logs Ihres Hostings mit einer Verzögerung von etwa 5 Minuten anzeigen lassen.
 
-![Hosting](images/logs01.png){.thumbnail}
+![Hosting](images/osl-statistics-board.png){.thumbnail}
 
 Es stehen Ihnen verschiedene Log-Typen zur Verfügung:
 
@@ -95,7 +93,7 @@ In diesem Abschnitt können Sie die Aktivität der Infrastruktur Ihres Webhostin
 
 Wechseln Sie zum Tab `Allgemeine Informationen`{.action} und scrollen Sie zum Seitenende.
 
-![Hosting](images/statistics03.png){.thumbnail}
+![Hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Sie können im Dropdown-Menü in der oberen linken Ecke verschiedene Arten von Grafiken anzeigen:
 

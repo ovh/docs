@@ -21,11 +21,9 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 From `Hosting plans`{.action}, choose the Web Hosting plan concerned and open the `Statistics and logs`{.action} tab.
 
-![hosting](images/statistics01.png){.thumbnail}
-
 This tab consists of 3 sections. The first one presents the **statistics**, the second the raw **logs** of your hosting, and the last one is dedicated to the **administration of users** authorised to access the statistics.
 
-![hosting](images/statistics02u.png){.thumbnail}
+![hosting](images/tab.png){.thumbnail}
 
 ### User administration
 
@@ -33,7 +31,7 @@ Creating a user will allow someone to access your hosting plan’s statistics wi
 
 Click the `Create a new user`{.action} button in the `User Administration` section and follow the instructions as shown below.  
 
-![hosting](images/user-statistics01.png){.thumbnail}
+![hosting](images/create-a-new-user.png){.thumbnail}
 
 To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with your hosting cluster number and `mydomain.ovh` with your website's domain name (without "www"):
 
@@ -44,7 +42,7 @@ https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
 In the `Statistics and logs`{.action} section, click `View statistics`{.action}.<br>
 From the tab of your browser that displays the statistics window, retrieve the link that will be used to log in with one of the users you have created.
 
-![hosting](images/OWStatslink.png){.thumbnail}
+![hosting](images/view-statistics.png){.thumbnail}
 
 > [!warning] 
 >
@@ -55,7 +53,7 @@ From the tab of your browser that displays the statistics window, retrieve the l
 
 The **OVHcloud Web Statistics** tool helps you to track and control the traffic of websites hosted on your Web Hosting plan, by visually compiling statistics of page visits and audience measurement.
 
-![hosting](images/OWStats01.gif){.thumbnail}
+![hosting](images/ows-presentation.gif){.thumbnail}
 
 The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left-hand panel.
 
@@ -73,7 +71,7 @@ The `Period selection` box allows you to select a specific time frame.
 
 You can view the raw logs of your site with a delay of about 5 minutes.
 
-![hosting](images/logs01.png){.thumbnail}
+![hosting](images/osl-statistics-board.png){.thumbnail}
 
 Different types of logs are available:
 
@@ -91,7 +89,7 @@ In this section you can view your Web Hosting plan’s infrastructure activity a
 
 Switch to the `General information`{.action} tab, then scroll to the bottom of the page.
 
-![hosting](images/statistics03.png){.thumbnail}
+![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
 
 You can display different types of graphics from the drop-down menu in the top left-hand corner:
 

@@ -12,7 +12,7 @@ updated: 2023-11-24
 
 Möglicherweise wird in Ihrem Webbrowser die Fehlerseite **Seite nicht installiert** angezeigt, insbesondere bei der ersten Installation Ihrer Website.
 
-![website not installed](images/site-not-installed2021.png){.thumbnail}
+![website not installed](images/site-not-installed.png){.thumbnail}
 
 **Diese Anleitung erklärt, wie Sie die Ursachen dieses Fehlers ermitteln und beheben.**
 
@@ -69,7 +69,7 @@ Um die IP-Adresse Ihres Webhostings zu finden, loggen Sie sich in Ihrem [OVHclou
 
 Die `IPv4` Adresse finden Sie in der Box `Allgemeine Informationen`{.action}.
 
-![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
+![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
 Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung „[Liste der IP-Adressen, die den OVHcloud Webhostings zugewiesen sind](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)“.
 
@@ -90,10 +90,10 @@ Eine Tabelle mit verschiedenen DNS-Einträgen wird angezeigt.
 
 |Mögliche Szenarien|Auszuführende Aktion|
 |---|---|
-|In der aktiven DNS-Zone zeigt Ihr Domainname/Ihre Subdomain auf die IP-Adresse Ihres Webhostings mit einem A-Eintrag (für eine IPv4) oder AAAA-Eintrag (für eine IPv6).<br><br>![DNS-Zone_IP2](images/zonedns_ip2.png){.thumbnail}|Dies weist darauf hin, dass die Konfiguration Ihres Domainnamens korrekt ist.<br><br> Warten Sie, bis die DNS Propagation abgeschlossen ist.<br><br> (Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und leeren Sie den Cache Ihres Browsers). Die alte Konfiguration Ihrer Domain kann im Cache gespeichert werden, was die Anzeige Ihres Updates verzögern kann.|
+|In der aktiven DNS-Zone zeigt Ihr Domainname/Ihre Subdomain auf die IP-Adresse Ihres Webhostings mit einem A-Eintrag (für eine IPv4) oder AAAA-Eintrag (für eine IPv6).<br><br>![DNS-Zone_IP2](images/dashboard-entry-a.png){.thumbnail}|Dies weist darauf hin, dass die Konfiguration Ihres Domainnamens korrekt ist.<br><br> Warten Sie, bis die DNS Propagation abgeschlossen ist.<br><br> (Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und leeren Sie den Cache Ihres Browsers). Die alte Konfiguration Ihrer Domain kann im Cache gespeichert werden, was die Anzeige Ihres Updates verzögern kann.|
 |Die aktive DNS-Zone enthält keine A- oder AAAA-Einträge, die Ihre Domain/Subdomain mit der IP-Adresse Ihres Webhostings verbinden. Oder der vorhandene Eintrag verweist auf eine andere IP-Adresse.|Fügen Sie den neuen A- oder AAAA-Eintrag hinzu, oder korrigieren Sie den vorhandenen Eintrag, indem Sie [diese Anleitung](/pages/web_cloud/domains/dns_zone_edit) befolgen.|
-|Ihre Domain wird nicht im Bereich `Domainnamen`{.action} Ihres OVHcloud Kundencenters angezeigt.<br><br>Oder der Tab `DNS-Zone`{.action} Ihres Domainnamens erscheint wie folgt:<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Das bedeutet, dass Ihr Domainname nicht über Ihr OVHcloud Kundencenter verwaltet wird.<br><br>Finden Sie über unser [WHOIS-Tool](https://www.ovhcloud.com/de/domains/whois/) den Registrar heraus sowie die zugehörigen DNS-Server. <br><br>Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.|
-|Diese Warnung erscheint in der Registerkarte `DNS Zone`{.action}:<br><br>![Warnung_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain entsprechend anpassen, indem Sie unsere Anleitung „[DNS Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“ befolgen.|
+|Ihre Domain wird nicht im Bereich `Domainnamen`{.action} Ihres OVHcloud Kundencenters angezeigt.<br><br>Oder der Tab `DNS-Zone`{.action} Ihres Domainnamens erscheint wie folgt:<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Das bedeutet, dass Ihr Domainname nicht über Ihr OVHcloud Kundencenter verwaltet wird.<br><br>Finden Sie über unser [WHOIS-Tool](https://www.ovhcloud.com/de/domains/whois/) den Registrar heraus sowie die zugehörigen DNS-Server. <br><br>Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.|
+|Diese Warnung erscheint in der Registerkarte `DNS Zone`{.action}:<br><br>![Warnung_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain entsprechend anpassen, indem Sie unsere Anleitung „[DNS Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“ befolgen.|
 
 ## Weitere Informationen <a name="go-further"></a>
 

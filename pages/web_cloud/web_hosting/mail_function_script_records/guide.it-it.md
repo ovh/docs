@@ -35,13 +35,13 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
-![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
+![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
 La nuova pagina ti permette di seguire e gestire le email automatiche inviate dal tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
 
 ### Presentazione della sezione "Script email"
 
-![hosting](images/Interface.png){.thumbnail}
+![hosting](images/tab.png){.thumbnail}
 
 Visualizzi una serie di informazioni per visualizzare l'attività dell'invio di email automatiche generate dai tuoi script:
 
@@ -129,7 +129,7 @@ Questo stato di cose si verifica quando le email considerate SPAM sono state eme
 
 In genere, questo blocco è accompagnato dall'invio di un'email intitolata **"Abuso con il tuo hosting domain.tld"** generato automaticamente dai nostri sistemi di sicurezza:
 
-![hosting](images/AbuseMail.png){.thumbnail}
+![hosting](images/email-script-disabled.png){.thumbnail}
 
 A fronte di questa situazione, sono possibili tre casi:
 

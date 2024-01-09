@@ -1,7 +1,7 @@
 ---
 title: 'Optimisation des performances de votre site'
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -93,28 +93,25 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
-Vous pouvez accéder à vos fichiers journaux, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Comment accéder aux fichiers journaux :
+Comment accéder aux statistiques et logs :
 
-- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
+1. Cliquez sur `Hébergement`{.action} dans la colonne de gauche puis sélectionnez l'hébergement web concerné.
+2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}.
+3. Cliquez ensuite sur le bouton `Voir les statistiques`{.action} affiché pour accéder aux statistiques de visite du site web ou sur `Voir les logs`{.action} pour consulter les logs disponibles pour votre hébergement web.
 
-- Cliquez sur l’onglet `Plus +`{.action}, puis sélectionnez `Statistiques et fichiers journaux`{.action} ;
-
-- Cliquez ensuite sur les liens affichés pour accéder soit aux _statistiques de visite du site web_ ou aux _fichiers journaux_.
-
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Comment accéder aux graphiques :
 
-- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
+1. Cliquez sur `Hébergement`{.action} dans la colonne de gauche puis sélectionnez l'hébergement web concerné.
+2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}. Défilez jusqu’au bas de la page où se trouve le graphique lié à l’utilisation de votre hébergement.
+3. Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
 
-- Lorsque vous êtes dans la section `Informations générales`{.action}, défilez jusqu’au bas de la page où vous pouvez consulter les graphiques liés à l’utilisation de votre hébergement ;
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
-- Sélectionnez le type d’information ainsi que la période des données affichées.
-![graphs](images/graphs_highlighted.png){.thumbnail}
-
-Quels sont les différents types de renseignements qui peuvent être affichés?
+Quels sont les différents types de renseignements qui peuvent être affichés ?
 
 - **Requêtes HTTP**: Indique le nombre moyen de consultations du site. Les consultations sont classées selon le statut HTTP 2xx/3xx/4xx/5xx.
 
