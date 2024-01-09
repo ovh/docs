@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar las instancias de Public Cloud'
 excerpt: 'Cómo gestionar las instancias de Public Cloud desde el Panel de configuración de OVHcloud'
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -121,6 +121,10 @@ Haga clic en `Eliminar`{.action}.
 Esta acción eliminará definitivamente la instancia y todos sus datos.
 
 Confirme la solicitud de eliminación en la nueva ventana.
+
+> [!warning]
+> La eliminación de una instancia no elimina automáticamente todas las opciones asociadas a ella (almacenamiento, snapshot, backup, etc.). Asegúrese de que todas las demás opciones asociadas a la instancia también se eliminan para dejar de facturarse.
+>
 
 ### Acceder a la consola VNC <a name="accessvnc"></a>
 

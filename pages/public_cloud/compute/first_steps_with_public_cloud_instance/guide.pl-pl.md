@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie instancjami Public Cloud'
 excerpt: 'Dowiedz się, jak zarządzać instancjami Public Cloud w Panelu klienta OVHcloud'
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -121,6 +121,10 @@ Kliknij `Usuń`{.action}.
 Operacja ta spowoduje definitywne usunięcie instancji oraz wszystkich jej danych.
 
 Potwierdź zlecenie usunięcia w oknie, które się wyświetli.
+
+> [!warning]
+> Usunięcie instancji nie powoduje automatycznego usunięcia wszystkich powiązanych z nią opcji (storage, snapshot, backup, itp...). Upewnij się, że wszystkie inne opcje powiązane z instancją również zostały usunięte, dzięki czemu przestaniesz być fakturowany.
+>
 
 ### Dostęp do konsoli VNC <a name="accessvnc"></a>
 

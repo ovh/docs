@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos instances Public Cloud'
 excerpt: 'Découvrez comment gérer vos instances Public Cloud dans l’espace client OVHcloud'
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -117,6 +117,10 @@ Cliquez sur `Supprimer`{.action}.
 Cette action aura pour effet de supprimer définitivement l'instance ainsi que toutes ses données.
 
 Confirmez la demande de suppression dans la fenêtre qui apparaît.
+
+> [!warning]
+> La suppression d'une instance ne supprime pas automatiquement toutes les options qui lui sont associées (storage, snapshot, backup, etc...), assurez-vous que toutes les autres options associées à l'instance sont également supprimées pour arrêter d'être facturé.
+>
 
 ### Accéder à la console VNC <a name="accessvnc"></a>
 

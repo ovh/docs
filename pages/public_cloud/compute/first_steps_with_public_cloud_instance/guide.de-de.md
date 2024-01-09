@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instanzen verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kundencenter verwalten
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -122,6 +122,10 @@ Die Instanz und alle zugehörigen Daten werden damit endgültig entfernt.
 
 Bestätigen Sie die Löschungsanfrage im angezeigten Fenster.
 
+> [!warning]
+> Wenn Sie eine Instanz löschen, werden nicht automatisch alle zugehörigen Optionen gelöscht (z.B. Storage, Snapshot, Backup). Stellen Sie sicher, dass **alle** Optionen, die mit der Instanz verbunden sind, ebenfalls gelöscht werden, um deren Abrechnung zu stoppen.
+>
+
 ### Auf die VNC-Konsole zugreifen <a name="accessvnc"></a>
 
 Klicken Sie im linken Menü auf `Instances`{.action}. Klicken Sie auf der Instanzverwaltungsseite in der Tabelle auf den Namen der Instanz.
@@ -132,7 +136,7 @@ Wechseln Sie dann vom Dashboard zum Tab `VNC-Konsole`{.action}.
 
 Die VNC-Konsole bietet direkten Zugriff auf Ihre Instanz. Damit dieser Zugang funktioniert, müssen Sie zuerst einen Benutzernamen und ein Passwort auf der Instanz konfigurieren. 
 
-Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
+Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 ## Weiterführende Informationen
 

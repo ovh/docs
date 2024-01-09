@@ -1,7 +1,7 @@
 ---
 title: Gestire le istanze Public Cloud
 excerpt: Come gestire le istanze Public Cloud dallo Spazio Cliente OVHcloud
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -121,6 +121,10 @@ Clicca su `Elimina`{.action}.
 Questa azione comporta la cancellazione definitiva dell'istanza e di tutti i suoi dati.
 
 Nella nuova finestra, conferma l'operazione.
+
+> [!warning]
+> L'eliminazione di un'istanza non comporta l'eliminazione automatica di tutte le opzioni associate (storage, snapshot, backup, ecc...). Assicurati che tutte le altre opzioni associate all'istanza siano eliminate per interrompere la fatturazione.
+>
 
 ### Accedi alla console VNC <a name="accessvnc"></a>
 

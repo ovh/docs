@@ -1,7 +1,7 @@
 ---
 title: 'Gerir as suas instâncias Public Cloud'
 excerpt: 'Saiba como gerir as suas instâncias Public Cloud na Área de Cliente OVHcloud'
-updated: 2023-01-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -121,6 +121,10 @@ Clique em `Eliminar`{.action}.
 Esta ação terá por efeito eliminar definitivamente a instância, bem como todos os seus dados.
 
 Confirme o pedido de eliminação na janela que aparecer.
+
+> [!warning]
+> A eliminação de uma instância não elimina automaticamente todas as opções que lhe estão associadas (armazenamento, snapshot, backup, etc...), certifique-se de que todas as outras opções associadas à instância são igualmente eliminadas para deixar de ser faturado.
+>
 
 ### Aceder à consola VNC <a name="accessvnc"></a>
 
