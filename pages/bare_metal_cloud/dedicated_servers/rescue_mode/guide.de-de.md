@@ -23,6 +23,11 @@ Der Rescue-Modus ist generell an folgende Aufgaben angepasst:
 
 Falls Sie nicht schon über aktuelle Backups verfügen sollte der erste Schritt im Troubleshooting, auch im Rescue-Modus, immer darin bestehen, ein Backup Ihrer Daten zu erstellen.
 
+> [!warning]
+>
+> Wenn Sie Dienste auf Ihrem VPS im laufenden Betrieb haben, wird der Rescue-Modus diese Dienste unterbrechen, da der VPS in das Hilfsbetriebssystem neu gestartet wird.
+> 
+
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Dedicated Server im Rescue-Modus neu starten.**
 
 ## Voraussetzungen
