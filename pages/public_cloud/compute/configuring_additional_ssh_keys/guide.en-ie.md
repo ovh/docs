@@ -20,7 +20,7 @@ When creating an instance, only one SSH key for the initial connection can be co
 
 > [!primary]
 >
-We currently support the following ssh key formats: **RSA**, **ECDSA** and **ED25519**.
+We currently support the following SSH key formats: **RSA**, **ECDSA** and **ED25519**.
 >
 
 ### Creating the SSH key

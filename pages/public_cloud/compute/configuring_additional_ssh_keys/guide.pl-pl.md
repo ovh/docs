@@ -24,7 +24,7 @@ Podczas tworzenia instancji można skonfigurować tylko jeden klucz SSH do pocz�
 
 > [!primary]
 >
-Obecnie obsługujemy następujące formaty kluczy ssh: **RSA**, **ECDSA** i **ED25519**.
+Obecnie obsługujemy następujące formaty kluczy SSH: **RSA**, **ECDSA** i **ED25519**.
 >
 
 ### Tworzenie klucza SSH

@@ -24,7 +24,7 @@ Al crear una instancia, solo es posible configurar una llave SSH para la conexi√
 
 > [!primary]
 >
-Actualmente soportamos los siguientes formatos de clave ssh: **RSA**, **ECDSA** y **ED25519**.
+Actualmente soportamos los siguientes formatos de llave SSH: **RSA**, **ECDSA** y **ED25519**.
 >
 
 ### Creaci√≥n de la llave SSH

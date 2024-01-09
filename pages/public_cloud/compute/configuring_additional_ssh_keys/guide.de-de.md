@@ -24,7 +24,7 @@ Bei der Erstellung einer Instanz kann nur ein SSH-Schlüssel für den Erstzugrif
 
 > [!primary]
 >
-Wir unterstützen derzeit die folgenden ssh-Schlüsselformate: **RSA**, **ECDSA** und **ED25519**.
+Wir unterstützen derzeit die folgenden SSH-Schlüsselformate: **RSA**, **ECDSA** und **ED25519**.
 >
 
 ### SSH-Schlüssel erstellen

@@ -20,7 +20,7 @@ Lors de la création d’une instance, une seule clé SSH peut être configurée
 
 > [!primary]
 >
-Nous prenons actuellement en charge les formats de clés ssh suivants : **RSA**, **ECDSA** et **ED25519**.
+Nous prenons actuellement en charge les formats de clés SSH suivants : **RSA**, **ECDSA** et **ED25519**.
 >
 
 ### Création de la clé SSH

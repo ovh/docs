@@ -24,7 +24,7 @@ Ao criar uma instância, pode ser configurada uma única chave SSH para a ligaç
 
 > [!primary]
 >
-Atualmente, suportamos os seguintes formatos de chave ssh: **RSA**, **ECDSA** e **ED25519**.
+Atualmente, suportamos os seguintes formatos de chave SSH: **RSA**, **ECDSA** e **ED25519**.
 >
 
 ### Criação da chave SSH

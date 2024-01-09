@@ -24,7 +24,7 @@ Durante la creazione di un'istanza, è possibile configurare una sola chiave SSH
 
 > [!primary]
 >
-Attualmente supportiamo i seguenti formati di chiavi ssh: **RSA**, **ECDSA** e **ED25519**.
+Attualmente supportiamo i seguenti formati di chiavi SSH: **RSA**, **ECDSA** e **ED25519**.
 >
 
 ### Crea la chiave SSH
