@@ -106,7 +106,7 @@ You can carry out reinstallations in your Control Panel. Click on `...`{.action}
 
 ![VPSnewreinstallation](images/2023panel_01.png){.thumbnail}
 
-In the popup window, choose an operating system from the drop-down list. The options offered represent [images compatible with an OVHcloud VPS](/pages/public_cloud/compute/image-life-cycle) and are immediately functional ater installation.
+In the popup window, choose an operating system from the drop-down list. The options offered represent [images compatible with an OVHcloud VPS](/pages/public_cloud/compute/image-life-cycle) and are immediately functional after installation.
 
 You can also select an **SSH key** to install on the system, if you have stored one previously in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). To find out all about this topic, please consult our guide [Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 

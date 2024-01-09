@@ -1,7 +1,7 @@
 ---
 title: 'Activer et utiliser le mode rescue'
 excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 ## Objectif
@@ -18,6 +18,11 @@ Le mode rescue est généralement adapté aux tâches suivantes :
 - Test du processeur et de la mémoire RAM
 
 Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegardes récentes.
+
+> [!warning]
+>
+> Si vous avez des services en production sur votre VPS, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
+> 
 
 **Découvrez comment activer et utiliser le mode rescue de votre serveur.**
 

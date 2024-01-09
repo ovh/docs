@@ -1,7 +1,7 @@
 ---
 title: 'Rescue-Modus aktivieren und verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für einen Dedicated Server aktivieren und verwenden'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ Der Rescue-Modus ist generell an folgende Aufgaben angepasst:
 - Test des Prozessors und des RAM
 
 Falls Sie nicht schon über aktuelle Backups verfügen sollte der erste Schritt im Troubleshooting, auch im Rescue-Modus, immer darin bestehen, ein Backup Ihrer Daten zu erstellen.
+
+> [!warning]
+>
+> Wenn Sie Dienste auf Ihrem VPS im laufenden Betrieb haben, wird der Rescue-Modus diese Dienste unterbrechen, da der VPS in das Hilfsbetriebssystem neu gestartet wird.
+> 
 
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Dedicated Server im Rescue-Modus neu starten.**
 

@@ -1,7 +1,7 @@
 ---
 title: 'Uruchamianie i korzystanie z trybu Rescue'
 excerpt: 'Dowiedz się, jak uruchomić i korzystać z trybu Rescue na serwerze dedykowanym'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ Tryb zapasowy jest zazwyczaj dostosowany do następujących zadań:
 - Test procesora i pamięci RAM
 
 Tworzenie kopii zapasowych danych musi być pierwszym krokiem w sposobie odzyskiwania danych, jeśli nie posiadasz jeszcze aktualnych kopii zapasowych.
+
+> [!warning]
+>
+> Jeśli posiadasz usługi produkcyjne na serwerze VPS, tryb Rescue je wyłącza, dopóki maszyna nie zostanie zrestartowana do trybu normalnego.
+> 
 
 **Dowiedz się, jak aktywować i korzystać z trybu Rescue na Twoim serwerze.**
 

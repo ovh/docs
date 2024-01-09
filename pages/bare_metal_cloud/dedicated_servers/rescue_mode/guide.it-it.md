@@ -1,7 +1,7 @@
 ---
 title: 'Attivare e utilizzare il Rescue mode'
 excerpt: 'Come riavviare il tuo server dedicato in modalità Rescue'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ La modalità Rescue è generalmente adatta alle seguenti operazioni:
 - Test del processore e della memoria RAM
 
 Se non disponi ancora di backup recenti, effettua un backup dei tuoi dati.
+
+> [!warning]
+>
+> Se i tuoi servizi sono in produzione sul tuo VPS, la modalità Rescue interrompe la macchina fino a quando non sarà stata riavviata in modalità normale.
+> 
 
 **Questa guida ti mostra come attivare e utilizzare il Rescue mode sul tuo server.**
 
