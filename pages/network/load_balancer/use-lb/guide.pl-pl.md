@@ -16,9 +16,9 @@ Niniejsza instrukcja ma na celu zapewnienie użytkownikowi pomocy we wdrożeniu 
 
 ### Zarządzanie usługą Load Balancer z Panelu klienta
 
-W celu rozpoczęcia konfiguracji rozwiązania Load Balancer z Panelu klienta, przejdź w lewym menu do sekcji `Cloud` (1), a następnie do sekcji `Load Balancer` (2). Pojawi się strona główna usługi:
+Aby zarządzać usługą Load Balancer w Panelu klienta, przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie kliknij pozycję `Sieć`{.action} i `Load Balancer`{.action}. Wybierz usługę.
 
-![Load Balancer](images/lb_main_page.png){.thumbnail}
+![Load Balancer](images/lbip-main.png){.thumbnail}
 
 Na stronie głównej znajdują się następujące informacje:
 

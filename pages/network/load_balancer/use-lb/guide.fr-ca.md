@@ -17,9 +17,9 @@ Ce guide a pour but de vous aider lors de la première prise en main de votre R�
 
 ### Gérer son Répartiteur de charge via l'espace client
 
-Pour gérer votre Répartiteur de charge via l'espace client, rendez-vous dans la partie `Cloud`{.action} (1) puis dans la partie `Répartiteur de charge`{.action} (2) du menu de gauche. La page principale du service apparaîtra ensuite:
+Pour gérer votre Load Balancer via l'espace client, rendez-vous dans la partie `Bare metal Cloud`{.action} puis cliquez sur `Network`{.action} et `Load Balancer`{.action}. Sélectionnez votre service.
 
-![Répartiteur de charge](images/lbip-main.png){.thumbnail}
+![Load Balancer](images/lbip-main.png){.thumbnail}
 
 Sur cette page principale, vous trouverez les informations suivantes:
 
