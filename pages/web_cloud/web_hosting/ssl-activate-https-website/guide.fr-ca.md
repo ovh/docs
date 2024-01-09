@@ -22,7 +22,7 @@ La sécurité prend une place de plus en plus conséquente sur internet. Vous ac
 
 Lorsque vous visitez un site internet disposant d'une connexion sécurisée, votre navigateur internet vous l'indique dans sa barre d'adresse grâce à plusieurs moyens : un logo (généralement un cadenas), un message, parfois par un code couleur, mais aussi grâce au protocole utilisé, *HTTPS* plutôt que *HTTP*. Le fait que votre site internet possède ou non une connexion sécurisée devient alors de plus en plus visible.
 
-![httpswebsite](images/activate-https-website-ssl-step1.png){.thumbnail}
+![httpswebsite](images/url-not-secure.png){.thumbnail}
 
 **Passer son site internet en *HTTPS* peut être une manipulation sensible.** Celle-ci implique plusieurs étapes liées essentiellement à des actions dans la configuration de votre site internet (son code). Ces dernières, si elles ne sont pas effectuées correctement, peuvent avoir diverses répercussions négatives : une moins bonne optimisation de votre référencement sur les moteurs de recherche, ou dans le pire des cas, votre site internet inaccessible. 
 
@@ -48,11 +48,11 @@ La marche à suivre complète de ces deux manipulations est accessible sur notre
 
 Pour le vérifier, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. En dessous de « Certificat SSL », la mention « Oui » devrait apparaître, vous indiquant qu'un certificat SSL est installé sur votre hébergement web. 
 
-![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
+![httpswebsite](images/tab-ssl-le.png){.thumbnail}
 
 Positionnez-vous ensuite sur l'onglet `Multisite`{.action}. Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés à votre hébergement. La colonne « SSL » vous permet de voir l'état d'activation de la connexion sécurisée SSL pour vos différents multisites. 
 
-![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
+![httpswebsite](images/ssls.png){.thumbnail}
 
 Si l'une de ces vérifications n'a pas permis de vous assurer qu'un certificat SSL est bien installé sur votre hébergement web et/ou actif sur le multisite concerné, reportez-vous alors à notre documentation « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external} ».
 
@@ -81,7 +81,7 @@ Si ce n'est pas le cas, vous vous exposez alors à proposer du contenu mixte sur
 
 En ce sens, il est donc primordial de vous assurer que l'intégralité du contenu qui sera chargé depuis votre site internet provient d'une source sécurisée. 
 
-![httpswebsite](images/activate-https-website-ssl-step4.png){.thumbnail}
+![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
 
 Sachez que même si votre hébergement dispose d'un certificat SSL, le contenu hébergé sur ce dernier peut être chargé en *HTTP* ou en *HTTPS*. Ceci est dépendant de la manière dont vous avez identifié ces contenus dans le code de votre site. Ainsi, vous devrez vous assurer que le contenu chargé depuis votre site utilise bien le protocole *HTTPS*.
 

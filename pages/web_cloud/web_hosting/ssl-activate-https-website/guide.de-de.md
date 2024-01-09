@@ -26,7 +26,7 @@ Sicherheit wird im Internet immer wichtiger. Auch Sie selbst achten sicherlich b
 
 Wenn Sie eine Internetseite mit sicherer Verbindung besuchen, kann Ihr Browser dies in der Adresszeile auf mehrere Arten anzeigen: ein Icon (normalerweise ein Vorhängeschloss), eine Meldung, eine farbige Hervorhebung und nicht zuletzt die Verwendung des *HTTPS*-Protokolls statt *HTTP*. Es ist also für jeden Besucher offensichtlich, ob Ihre Website gesichert ist oder nicht.
 
-![HTTPS Website](images/activate-https-website-ssl-step1.png){.thumbnail}
+![HTTPS Website](images/url-not-secure.png){.thumbnail}
 
 **Die Umstellung Ihrer Website auf *HTTPS* ist ein heikler Vorgang.** Sie umfasst einige Schritte, bei denen Änderungen an der Konfiguration Ihrer Website (dem Code) nötig sind. Wenn diese nicht korrekt durchgeführt werden, kann dies verschiedene negative Folgen haben, etwa ein schlechteres SEO-Ranking oder schlimmstenfalls die Nichtverfügbarkeit Ihrer Website. 
 
@@ -52,11 +52,11 @@ Wie diese beiden Schritte genau funktionieren, erfahren Sie in unserer Anleitung
 
 Um dies zu überprüfen, loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden. Unter „SSL-Zertifikat“ müsste ein kleines „Ja“ stehen, was anzeigt, dass bereits ein SSL-Zertifikat auf Ihrem Webhosting installiert ist. 
 
-![HTTPS Website](images/activate-https-website-ssl-step2.png){.thumbnail}
+![HTTPS Website](images/tab-ssl-le.png){.thumbnail}
 
 Gehen Sie dann auf den Tab `Multisite`{.action}. Die angezeigte Tabelle listet alle Domains auf, die Ihrem Hosting hinzugefügt wurden. In der Spalte „SSL“ finden Sie Informationen zum Aktivierungsstatus der sicheren SSL-Verbindung für die verschiedenen Multisites. 
 
-![HTTPS Website](images/activate-https-website-ssl-step3.png){.thumbnail}
+![HTTPS Website](images/ssls.png){.thumbnail}
 
 Sollte sich bei dieser Kontrolle herausstellen, dass offenbar kein SSL-Zertifikat korrekt auf Ihrem Webhosting installiert und/oder für die betreffende Multisite aktiviert wurde, lesen Sie bitte unsere Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}“.
 
@@ -85,7 +85,7 @@ Ist dies nicht der Fall, bietet Ihre Website gemischte Inhalte an, was von Brows
 
 Daher ist es unerlässlich, dass sämtliche Inhalte Ihrer Website aus einer sicheren Quelle geladen werden. 
 
-![HTTPS Website](images/activate-https-website-ssl-step4.png){.thumbnail}
+![HTTPS Website](images/connection-isnt-secure.png){.thumbnail}
 
 Beachten Sie, dass auch wenn Ihr Hosting über ein SSL-Zertifikat verfügt, die darauf gehosteten Inhalte via *HTTP* oder *HTTPS* geladen werden können. Dies hängt davon ab, wie Sie die Inhalte im Code Ihrer Website identifiziert haben. Stellen Sie daher sicher, dass alle über Ihre Website geladenen Inhalte das *HTTPS*-Protokoll verwenden.
 

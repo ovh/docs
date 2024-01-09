@@ -26,7 +26,7 @@ Puede consultar esta información en el Panel de control. Acceda a la sección F
 - Marque la casilla «SSH». 
 - Haga clic en «Open».
 
-![Putty](images/3094.png){.thumbnail}
+![Putty](images/configuration.png){.thumbnail}
 
 ## Conexión a su alojamiento
 

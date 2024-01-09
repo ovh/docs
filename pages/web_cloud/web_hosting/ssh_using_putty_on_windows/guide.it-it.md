@@ -25,7 +25,7 @@ Queste informazioni sono disponibili nella cartella di configurazione. Accedi al
 - Seleziona SSH.
 - Clicca su Open.
 
-![Putty](images/3094.png){.thumbnail}
+![Putty](images/configuration.png){.thumbnail}
 
 ## Accedi al tuo hosting
 

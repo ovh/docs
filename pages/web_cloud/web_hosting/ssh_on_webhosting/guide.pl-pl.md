@@ -32,7 +32,7 @@ Rozpocznij od zalogowania się do [panelu klienta OVHcloud](https://www.ovh.com/
 
 Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (lub „Login”) posiada aktywny dostęp przez protokół SSH. Jeżeli tak nie jest, pojawi się informacja „Wyłączony”.
 
-![usessh](images/use-ssh-step1.png){.thumbnail}
+![usessh](images/tab-ssh.png){.thumbnail}
 
 Jeżeli dostęp nie jest aktywny, kliknij przycisk `...`{.action} po prawej stronie wybranego użytkownika, a następnie `Zmień`{.action}. W oknie, które się wyświetli, włącz dostęp SSH, a następnie dokończ procedurę zmiany ustawienia. Jeżeli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa www OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) posiada dostęp przez protokół SSH.
 
@@ -68,7 +68,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika SSH. Po zalogowaniu przejdź do etapu kolejnego: „[Operacje na przestrzeni dyskowej za pomocą SSH](./#etap-4-przeprowadzanie-operacji-na-przestrzeni-dyskowej-z-wykorzystaniem-ssh)”.
 
-![usessh](images/use-ssh-step3.png){.thumbnail}
+![usessh](images/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2 Za pomocą oprogramowania
 

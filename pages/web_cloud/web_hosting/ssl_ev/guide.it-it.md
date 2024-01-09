@@ -65,7 +65,7 @@ Consulta la nostra guida su come [gestire un certificato SSL su un hosting Web](
 
 Inserisci con esattezza le informazioni richieste da **Sectigo** prima di ricevere il certificato SSL EV. 
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Clicca su `Continua`{.action} una volta **tutti gli elementi** inseriti correttamente.
 
@@ -84,19 +84,19 @@ Continua l'ordine fino al pagamento per confermare la richiesta di creazione del
 
 Se non hai ancora ordinato il tuo dominio e il servizio di hosting associato, accedi alla pagina [homepage OVHcloud](https://www.ovhcloud.com/it/), inserisci un dominio nel**form di ricerca previsto a questo scopo** e clicca su `Cerca`{.action} per avviare il tuo ordine.
 
-![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
+![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
 Seleziona il tuo dominio, scegli il tuo hosting e le opzioni fino allo step `Configura il tuo hosting Web`
 
 Seleziona `Modulo in 1 click`{.action} e `CDN`{.action} poi scendi giù dalla sezione `Proteggi il tuo sito Web con i nostri certificati SSL`{.action}
 
-![SSL EV order](images/ssl_ev_order.png){.thumbnail}
+![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
 
 Scegli `Sectigo EV SSL`{.action} e clicca su `Seguente`{.action}.
 
 Nella nuova pagina, inserisci correttamente le informazioni richieste da **Sectigo** prima di ricevere il certificato SSL EV:
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Clicca su `Seguente`{.action} una volta **tutti gli elementi** inseriti correttamente.
 

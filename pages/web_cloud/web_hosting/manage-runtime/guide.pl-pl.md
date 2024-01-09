@@ -129,8 +129,6 @@ Sprawdź w tabeli, w kolumnie `Framework`, czy dla poszczególnych domen wyświe
 
 Jeśli chcesz zmienić framework powiązany ze stroną podpiętą w opcji MultiSite, kliknij koło zębate po prawej stronie odpowiedniej domeny, po czym kliknij `Zmień`{.action}.
 
-![cloud web hosting ssd](images/cloud-web-runtime-step5.png){.thumbnail}
-
 W oknie, które się wyświetla wybierz odpowiedni framework w polu `Framework`.  Przypominamy, że nazwy, które się wyświetlają odpowiadają „nazwie spersonalizowanej” przez Ciebie. Pamiętaj, że strona lub aplikacja dostępne w ramach wybranej domeny muszą być kompatybilne z frameworkiem. 
 
 Po dokonaniu wyboru wykonaj poszczególne kroki aż do zakończenia operacji.

@@ -129,8 +129,6 @@ En la columna `«Motor de ejecución»` de la tabla, compruebe que el motor de e
 
 Si quiere cambiar el motor de ejecución asociado a un multisitio, haga clic en el pictograma con forma de rueda dentada situado a la derecha del dominio de su interés y, seguidamente, seleccione `«Editar»`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
-
 A continuación, seleccione el motor correcto al lado de `«Motor de ejecución»` en la ventana que aparece. Le recordamos que los nombres que aparecen corresponden al «Nombre personalizado» que haya establecido. Es absolutamente necesario que el sitio o la aplicación accesible desde el dominio en cuestión sea compatible con el motor de ejecución seleccionado. 
 
 Una vez seleccionado, prosiga con las etapas correspondientes hasta finalizar.

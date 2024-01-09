@@ -72,9 +72,9 @@ Utilizzando PHP-FPM cambiano alcune variabili del server:
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Per configurare una nuova versione di PHP, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Per configurare una nuova versione di PHP, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informazioni sulle opzioni più avanzate del tuo Web hosting, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informazioni sulle opzioni più avanzate del tuo Web hosting, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Il file _.ovhconfig_ funziona nella root del tuo hosting o nella sottodirectory di livello 1 (es.:_/www/_), ma non nella directory di livello 2 o superiore (es.: _/www/test/_, _/www/test/test2/_)
 
@@ -235,7 +235,7 @@ Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è
 
 ## Per saperne di più 
 
-[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
+[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Gestisci un database dal tuo hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

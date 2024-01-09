@@ -28,7 +28,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 
-![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
 
 Na tabela, as bases de dados podem ter vários Status diferentes:
 
@@ -52,7 +52,7 @@ Pode criar uma nova base de dados de duas formas:
 
 Na nova janela, selecione as seguintes informações:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Informação|Descrição|  
 |---|---| 
@@ -64,7 +64,7 @@ De seguida, clique em `Seguinte`{.action}.
 
 Ser-lhe-á exibida uma nova janela:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Informação|Descrição|
 |---|---| 
@@ -92,7 +92,7 @@ Ser-lhe-á exibida uma nova janela:
 
 Preencha as informações necessárias e clique em `Seguinte`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Certifique-se de que todas as informações apresentadas no resumo estão corretas. Se for o caso, clique em `Validar`{.action} para lançar a criação da sua base de dados.
 

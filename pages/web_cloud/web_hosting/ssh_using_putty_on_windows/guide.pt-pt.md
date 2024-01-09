@@ -26,7 +26,7 @@ Encontrará estas informações no Painel de configuração. Aceda à secção F
 - Selecione SSH.
 - Clique em Open.
 
-![Putty](images/3094.png){.thumbnail}
+![Putty](images/configuration.png){.thumbnail}
 
 ## Ligação ao seu alojamento
 

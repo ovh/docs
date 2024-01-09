@@ -28,7 +28,7 @@ Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=
 
 La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 
-![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
 
 En la tabla, las bases de datos pueden tener varios tipos diferentes:
 
@@ -52,7 +52,7 @@ Existen dos formas de crear una nueva base de datos:
 
 En la nueva ventana, seleccione la siguiente información:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Información|Descripción|  
 |---|---|
@@ -64,7 +64,7 @@ A continuación, haga clic en `Siguiente`{.action}.
 
 Se abrirá una nueva ventana:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Información|Descripción|
 |---|---|
@@ -92,7 +92,7 @@ crear una contraseña que no contenga datos personales (nombre, apellidos, fecha
 
 Complete la información solicitada y haga clic en `Siguiente`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Asegúrese de que toda la información mostrada en el resumen es correcta. En ese caso, haga clic en `Aceptar`{.action} para iniciar la creación de la base de datos.
 

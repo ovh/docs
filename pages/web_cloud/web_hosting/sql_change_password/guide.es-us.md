@@ -53,7 +53,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root-folders](images/root-folders.png){.thumbnail}
 
 A continuación, abra la pestaña `FTP-SSH`{.action} y acceda al espacio que contiene los archivos y carpetas de su sitio web (*espacio FTP*) haciendo clic en el botón `Explorador FTP`{.action}.
 
@@ -169,15 +169,15 @@ Guarde el cambio.
 
 En la sección `Alojamientos`{.action} del área de cliente, acceda a la pestaña `Bases de datos`{.action} que aparece a la derecha de la pantalla.
 
-![database-password-step1](images/database-password-step1.png){.thumbnail}
+![database-password-step1](images/tab.png){.thumbnail}
 
 Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos del sitio web y seleccione `Cambiar la contraseña`{.action}.
 
-![database-password-step2](images/database-password-step2.png){.thumbnail}
+![database-password-step2](images/change-password.png){.thumbnail}
 
 Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [Etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
-![database-password-step3](images/database-password-step3.png){.thumbnail}
+![database-password-step3](images/change-password-window.png){.thumbnail}
 
 ## Más información <a name="go-further"></a>
 

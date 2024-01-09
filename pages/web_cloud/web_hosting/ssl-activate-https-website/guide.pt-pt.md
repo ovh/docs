@@ -26,7 +26,7 @@ A segurança assume um lugar cada vez mais importante na Internet. Muitos dedica
 
 Quando visita um website que dispõe de uma ligação protegida, o navegador indica-o na barra de endereço, seja através de uma imagem (normalmente, um cadeado), de uma mensagem, de um código de cor ou do protocolo utilizado (HTTPS em vez de HTTP). Assim, o facto de o seu website possuir ou não uma ligação segura torna-se cada vez mais visível.
 
-![httpswebsite](images/activate-https-website-ssl-step1.png){.thumbnail}
+![httpswebsite](images/url-not-secure.png){.thumbnail}
 
 **Ativar o *HTTPS* num website pode revelar-se uma operação sensível**, uma vez que requer efetuar diferentes ações na configuração do website, ou seja, no código. Uma manipulação incorreta pode ter repercussões negativas: como uma pior referenciação nos motores de busca ou, no pior cenário, a impossibilidade de aceder ao website. 
 
@@ -52,11 +52,11 @@ Para mais informações sobre estas ações, consulte o manual [Gerir um certifi
 
 Para o verificar, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Certifique-se de que está no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve estar indicado “Sim”, o que significa que já está instalado no alojamento web um certificado SSL. 
 
-![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
+![httpswebsite](images/tab-ssl-le.png){.thumbnail}
 
 Por fim, clique no separador `Multi-site`{.action}. Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento. Na coluna “SSL”, poderá ver se a ligação segura SSL está ativada ou desativada nos vários multi-sites. 
 
-![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
+![httpswebsite](images/ssls.png){.thumbnail}
 
 Se tiver dificuldades em verificar se o certificado SSL está instalado no seu alojamento e/ou ativado no multi-site correspondente, consulte o manual [Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external} (versão em inglês).
 
@@ -85,7 +85,7 @@ Se assim não for, corre o risco de oferecer no seu website aquilo que os navega
 
 Assim, é primordial assegurar que a integralidade do conteúdo a ser carregado pelo seu website provém de uma fonte segura. 
 
-![httpswebsite](images/activate-https-website-ssl-step4.png){.thumbnail}
+![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
 
 Note que, mesmo que o seu alojamento disponha de um certificado SSL, o conteúdo armazenado neste último pode ser carregado em *HTTP* ou em *HTTPS*. Isto depende da forma como identificou tais conteúdos no código do seu site. Desta forma, tem de se certificar de que o conteúdo carregado pelo seu site utiliza o protocolo *HTTPS*.
 

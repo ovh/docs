@@ -26,7 +26,7 @@ La seguridad desempeña un papel cada día más relevante en el mundo de interne
 
 Cuando navegamos por internet, existen varias formas de identificar los sitios web que disponen de una conexión segura: mediante un icono (normalmente un candado) en la barra de navegación de nuestro explorador, un mensaje, un código de colores... El protocolo *HTTPS*, en lugar del tradicional *HTTP*, también nos permite reconocer este tipo de conexiones. Cada vez es más fácil, pues, identificar a simple vista si un sitio web dispone o no de una conexión segura.
 
-![Sitio web en HTTPS](images/activate-https-website-ssl-step1.png){.thumbnail}
+![Sitio web en HTTPS](images/url-not-secure.png){.thumbnail}
 
 **Habilitar *HTTPS* en un sitio web es una operación delicada**, ya que requiere realizar diversas acciones en la configuración del sitio web, es decir, en el código. Una manipulación incorrecta podría tener consecuencias negativas: desde un peor posicionamiento en los motores de búsqueda hasta la imposibilidad de acceder al sitio web, en el peor de los casos. 
 
@@ -52,11 +52,11 @@ Para más información sobre estas dos acciones, consulte nuestra guía [Gestion
 
 Para comprobarlo, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña **Información general**. En el panel **Configuración**, consulte la información que aparece bajo el epígrafe **Certificado SSL**. Si se indica «Sí», significa que hay un certificado SSL instalado en el alojamiento web. 
 
-![Sitio web en HTTPS](images/activate-https-website-ssl-step2.png){.thumbnail}
+![Sitio web en HTTPS](images/tab-ssl-le.png){.thumbnail}
 
 A continuación, abra la pestaña `Multisitio`{.action}. Aparecerá una tabla en la que se muestran todos los dominios añadidos al alojamiento. En la columna **SSL** puede consultar si la conexión segura SSL está activada o desactivada en los diferentes multisitios. 
 
-![Sitio web en HTTPS](images/activate-https-website-ssl-step3.png){.thumbnail}
+![Sitio web en HTTPS](images/ssls.png){.thumbnail}
 
 Si tiene dificultades para comprobar si el certificado SSL está instalado en su alojamiento web y/o está activo en el multisitio correspondiente, consulte la guía [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}.
 
@@ -85,7 +85,7 @@ De lo contrario, corre el riesgo de ofrecer en su sitio web lo que los navegador
 
 En ese sentido, debe asegurarse de que todo el contenido que se carga desde el sitio web proviene de una fuente segura. 
 
-![Contenido mixto en el sitio web](images/activate-https-website-ssl-step4.png){.thumbnail}
+![Contenido mixto en el sitio web](images/connection-isnt-secure.png){.thumbnail}
 
 Tenga en cuenta que, aunque el alojamiento tenga un certificado SSL, el contenido alojado podría cargarse tanto en *HTTP* como en *HTTPS* en función de cómo haya identificado dicho contenido en el código del sitio web. Por lo tanto, debe comprobar que el contenido que se carga desde el sitio web utiliza el protocolo *HTTPS*.
 
