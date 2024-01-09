@@ -1,7 +1,7 @@
 ---
 title: 'Activar y utilizar el modo de rescate'
 excerpt: 'Cómo activar y utilizar el modo de rescate en un servidor dedicado'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ El modo de rescate se adapta generalmente a las siguientes tareas:
 - Prueba del procesador y la memoria RAM
 
 Si todavía no dispone de backups recientes, la copia de seguridad de sus datos debe ser la primera etapa del modo de recuperación.
+
+> [!warning]
+>
+> Si tiene servicios en producción en su VPS, el modo de rescate los interrumpe mientras la máquina no se haya reiniciado en modo normal.
+> 
 
 **Esta guía explica cómo activar y utilizar el modo de rescate en un servidor dedicado.**
 

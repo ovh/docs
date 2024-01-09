@@ -1,7 +1,7 @@
 ---
 title: 'Ativar e utilizar o modo rescue'
 excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ O modo de segurança é geralmente adaptado às seguintes tarefas:
 - Teste do processador e da memória RAM
 
 O backup dos seus dados deve ser a primeira etapa do modo de recuperação se ainda não dispõe de backups recentes.
+
+> [!warning]
+>
+> Se tem serviços em produção no seu VPS, o modo rescue interrompe-os enquanto a máquina não for reiniciada no modo normal.
+> 
 
 **Saiba como ativar e utilizar o modo rescue do seu servidor.**
 

@@ -1,7 +1,7 @@
 ---
 title: 'Rescue-Modus aktivieren und verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für einen Dedicated Server aktivieren und verwenden'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: 'Activating and using rescue mode'
 excerpt: 'Find out how to activate and use rescue mode on a dedicated server'
-updated: 2023-09-05
+updated: 2024-01-09
 ---
 
 ## Objective
@@ -18,6 +18,11 @@ Usual tasks the rescue mode is appropriate for include:
 - Testing CPU and RAM
 
 Backing up your data should be the first step in rescue mode if you do not already have recent backups available.
+
+> [!warning]
+>
+> If you have any services still online, rescue mode will interrupt them as the machine is being rebooted into the auxiliary rescue environment.
+>
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
