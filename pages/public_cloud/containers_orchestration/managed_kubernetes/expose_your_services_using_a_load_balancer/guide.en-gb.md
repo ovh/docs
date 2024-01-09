@@ -1,12 +1,12 @@
 ---
-title: Expose your services using a Load Balancer
+title: Expose your services using OVHCloud Public Cloud Load Balancer
 excerpt: ""
 updated: 2023-12-08
 ---
 
 ## Objective
 
-This guide aim to know how to use our Network Load Balancer as a Service
+This guide aim to know how to use our Public Cloud Load Balancer to expose your te
 
 ## Billing
 
@@ -28,9 +28,9 @@ Here's a simple example of how to use a LB Octavia
 
 1. Creation of a functional cluster via the OVHcloud manager, Terraform or API.
 2. Retrieve the kubeconfig needed to use kubectl tool (via OVHcloud manager, Terraform or API).
-3. Create a "deployment" using the following command: kubectl create deploy test-octavia --image=nginx 
+3. Create a "deployment" using the following command: kubectl create deploy test-octavia --image=nginx
 4. Create a service using the following configuration
-5. Retrieve service IP address using the following command line: `kubectl describe service test-octavia-todel` 
+5. Retrieve service IP address using the following command line: `kubectl describe service test-octavia-todel`
 6. Open a web browser at: http://IP-retrieved-in-prevous-step
 
 ```yaml
@@ -366,7 +366,7 @@ Call upstream
   This annotations explicitly sets a hostname in the status of the load balancer service.
 
 - `loadbalancer.openstack.org/load-balancer-address`
-  
+
   This annotation is automatically added and it contains the floating ip address of the load balancer service.
   When using `loadbalancer.openstack.org/hostname` annotation it is the only place to see the real address of the load balancer.
 
