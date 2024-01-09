@@ -130,8 +130,6 @@ Wenn Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen, verge
 
 Wenn Sie eine mit einer Multisite verbundene Engine ändern möchten, klicken Sie rechts neben der betreffenden Domain auf das Zahnradsymbol und dann auf `Ändern`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
-
 Wählen Sie dann im angezeigten Fenster neben `Runtime Engine` die richtige Engine aus. Zur Erinnerung: Die angezeigten Namen entsprechen den „angepassten Namen“, die Sie zuvor festgelegt haben. Es ist wichtig, dass die Webseite oder Anwendung, die über die betreffende Domain erreichbar ist, mit der gewählten Engine kompatibel ist. 
 
 Wenn Sie die Engine ausgewählt haben, folgen Sie den angezeigten Schritten, bis der Vorgang abgeschlossen ist.

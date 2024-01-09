@@ -127,8 +127,6 @@ In the table, check if the displayed runtime environment is correct for the doma
 
 If you want to modify a runtime environment associated with a multisite, click on the cogwheel icon to the right of the domain concerned, and click `Modify`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
-
 Then select the environment next to `Runtime environment` in the popup window. As a reminder, the names displayed correspond to the "custom name" you have defined. The website or application accessible from the domain concerned must be compatible with the runtime environment you have chosen. 
 
 Once you have selected it, follow the remaining steps.

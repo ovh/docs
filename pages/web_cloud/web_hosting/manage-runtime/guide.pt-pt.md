@@ -131,8 +131,6 @@ Na tabela, consulte a coluna `Motor de execução` para verificar se o motor apr
 
 Se pretender alterar um motor associado a um multi-site, clique no ícone em forma de roda dentada à direita do domínio em questão e, em seguida, em `Alterar`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
-
 De seguida, selecione o motor certo junto da opção `Motor de execução` na janela que irá aparecer. Lembrete: os nomes que aparecem correspondem ao “nome personalizado” que definiu. É imperativo que o website ou a aplicação acessível a partir do domínio em questão seja compatível com o motor escolhido. 
 
 Depois de selecionado, siga os passos até ao fim.

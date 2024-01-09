@@ -131,8 +131,6 @@ e verifica che i nomi mostrati nella colonna `Motore di esecuzione` della tabell
 
 Per modificare un motore associato a un multisito, clicca sull’icona a forma di ingranaggio in corrispondenza del dominio in questione e clicca su `Modifica`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
-
 Nella nuova finestra, accanto a `Motore di esecuzione`, seleziona il motore corretto. Ti ricordiamo che i nomi visualizzati corrispondono al “nome personalizzato” che hai definito e che è necessario che il sito o l’applicazione accessibile dal dominio in questione siano compatibili con il motore scelto. 
 
 Una volta selezionato il motore, segui gli step fino al completamento dell’operazione.
