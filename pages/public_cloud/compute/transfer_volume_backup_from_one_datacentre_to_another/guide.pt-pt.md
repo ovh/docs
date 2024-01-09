@@ -36,7 +36,7 @@ root@server:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+------------------------------------+
 | ID                                   | Display Name | Status | Size | Attached to                        |
 +--------------------------------------+--------------+--------+------+------------------------------------+
-| 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 | volume       | in-use |   10 | Attached to server 1 on /dev/sdb  |
+| 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 | volume       | in-use |   10 | Attached to Server 1 on /dev/sdb   |
 +--------------------------------------+--------------+--------+------+------------------------------------+
 ```
 
@@ -72,25 +72,29 @@ Execute o seguinte comando para listar as imagens disponíveis:
 
 ```sh
 root@server:~$ openstack image list
-+--------------------------------------+-----------------------------------------------+--------+
-| ID                                   | Name                                          | Status |
-+--------------------------------------+-----------------------------------------------+--------+
-| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                                   | active |
-| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7                                      | active |
-| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8                                      | active |
-| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19                                     | active |
-| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20                                     | active |
-| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                                   | active |
-| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04                                  | active |
-| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04                                  | active |
-| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2                        | active |
-+--------------------------------------+-----------------------------------------------+--------+
++--------------------------------------+--------------------------------+--------+
+| ID                                   | Name                           | Status |
++--------------------------------------+--------------------------------+--------+
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                    | active |
+| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7                       | active |
+| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8                       | active |
+| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19                      | active |
+| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20                      | active |
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                    | active |
+| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04                   | active |
+| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04                   | active |
+| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2         | active |
++--------------------------------------+--------------------------------+--------+
 ```
 
 De seguida, identifique o backup na lista:
 
 ```sh
-| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume | qcow2 | bare | 319356928 | active | 
++--------------------------------------+-------------+-------------+----------------+-----------+--------+
+| ID                                   | Name        | disk_format |container_format|           | Status |
++--------------------------------------+---------------------------+----------------+-----------+--------+
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume | qcow2       | bare           | 319356928 | active |
++--------------------------------------+-------------+-------------+----------------+-----------+--------+
 ```
 
 Por fim, execute este comando para descarregar o backup:
@@ -152,7 +156,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Utilize o ID da backup como imagem com o seguinte comando:
 
 ```sh
-root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
+root@server:~$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
