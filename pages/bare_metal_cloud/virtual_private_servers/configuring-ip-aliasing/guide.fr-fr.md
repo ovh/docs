@@ -25,7 +25,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 ## Prérequis
 
 - un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- une [adresse Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) ou un bloc Additional IP
+- une [adresse Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
 - un accès administrateur (root) via SSH ou GUI sur votre serveur
 - des connaissances de base sur les réseaux et leur administration
 

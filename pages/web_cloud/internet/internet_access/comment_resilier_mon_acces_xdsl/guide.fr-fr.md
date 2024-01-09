@@ -10,7 +10,7 @@ Si votre offre d'accès à Internet ne vous convient plus, vous pouvez en demand
 La résiliation sera effective à la prochaine facturation de votre accès à Internet. Les instructions pour retourner votre modem vous seront envoyées par e-mail.
 
 > [!success]
-> Si vous souhaitez changer d'offre, consultez notre guide « [Comment changer mon offre xDSL/FTTH](/ages/web_cloud/internet/internet_access/comment_changer_mon_offre_xdsl) ».
+> Si vous souhaitez changer d'offre, consultez notre guide « [Comment changer mon offre xDSL/FTTH](/pages/web_cloud/internet/internet_access/comment_changer_mon_offre_xdsl) ».
 
 ## Prérequis
 
