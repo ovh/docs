@@ -62,13 +62,13 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Tabela z listą baz danych wyświetla się u dołu ekranu.
 
-![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
+![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
 
 Zwróć uwagę, **dla bazy danych, która jest wysycona**, jego `Nazwa użytkownika` i `Adres serwera`, które są zawarte w tabeli zawierającej listę Twoich baz danych. 
 
 W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, która jest wysycona, a następnie kliknij `Dostęp do phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
 Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 

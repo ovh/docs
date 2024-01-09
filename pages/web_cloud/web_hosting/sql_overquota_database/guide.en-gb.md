@@ -58,13 +58,13 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 A table listing your databases will appear at the bottom of the screen.
 
-![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
+![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
 
 Note that `User name` and `Server address` of your database are listed in the table.
 
 In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
 Enter the login information for your database, then click `Login`{.action}.
 

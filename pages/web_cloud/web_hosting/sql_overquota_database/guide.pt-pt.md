@@ -62,13 +62,13 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
 
-![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
+![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
 
 Anote, **para a sua base de dados saturada**, o seu `Nome de utilizador` e o seu `Endereço do servidor` presentes na tabela que lista as suas bases de dados. 
 
 Ainda no separador `Bases de dados`{.action}", clique no botão `...`{.action} à direita da base de dados que está saturada e, a seguir, em `Aceder ao phpMyAdmin`{.action}".
 
-![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
 Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
 
