@@ -28,7 +28,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hostingu.
 
-![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
 
 W tabeli bazy danych mogą mieć kilka różnych Opcje:
 
@@ -52,7 +52,7 @@ Istnieją dwa sposoby tworzenia nowej bazy danych:
 
 W wyświetlonym oknie wybierz następujące informacje:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Informacje|Opis|  
 |---|---| 
@@ -64,7 +64,7 @@ Następnie kliknij przycisk `Dalej`{.action}.
 
 Pojawi się nowe okno:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Informacje|Opis|
 |---|---| 
@@ -92,7 +92,7 @@ Pojawi się nowe okno:
 
 Uzupełnij wymagane informacje i kliknij na `Dalej`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Sprawdź, czy wszystkie wyświetlane informacje są poprawne. Jeśli tak, kliknij przycisk `Zatwierdź`{.action}, aby uruchomić proces tworzenia bazy danych.
 

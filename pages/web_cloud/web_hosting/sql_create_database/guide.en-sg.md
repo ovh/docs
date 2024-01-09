@@ -24,7 +24,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 The table in this section contains all of the databases created with your web hosting plan.
 
-![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
 
 Databases in the table can have several different types:
 
@@ -48,7 +48,7 @@ There are two ways to create a new database:
 
 In the window that opens, select the following information:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Information|Description|  
 |---|---|
@@ -60,7 +60,7 @@ Click on `Next`{.action}.
 
 A new window will appear:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
@@ -88,7 +88,7 @@ A new window will appear:
 
 Fill in the required information and click `Next`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Verify that all information displayed in the summary is correct. If this is the case, click `Confirm`{.action} to launch the creation of your database.
 

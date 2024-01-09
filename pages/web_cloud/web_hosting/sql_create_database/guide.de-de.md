@@ -28,7 +28,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting erstellt wurden.
 
-![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
 
 In der Tabelle können Datenbanken verschiedene Typen haben:
 
@@ -52,7 +52,7 @@ Es gibt zwei Möglichkeiten, eine neue Datenbank zu erstellen:
 
 Wählen Sie im angezeigten Fenster unter den folgenden Optionen aus:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Information|Beschreibung|  
 |---|---|
@@ -64,7 +64,7 @@ Klicken Sie auf `Weiter`{.action}.
 
 Ein neues Fenster wird angezeigt:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Information|Beschreibung|
 |---|---|
@@ -92,7 +92,7 @@ Ein neues Fenster wird angezeigt:
 
 Geben Sie die erforderlichen Informationen ein und klicken Sie auf `Weiter`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Überprüfen Sie, ob alle Informationen in der Zusammenfassung korrekt sind. Ist das der Fall, klicken Sie auf `Bestätigen`{.action}, um mit der Erstellung der Datenbank zu beginnen.
 
