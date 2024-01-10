@@ -31,7 +31,7 @@ Votre site web ne charge pas d'éléments externes, comme les boutons *Facebook*
 
 Depuis quelques années, les navigateurs comme *Google Chrome*, *Mozilla Firefox* et *Internet Explorer* empêchent les sites web en « HTTPS » de charger des éléments de page s'ils sont accessible via une URL en « HTTP ». Ceci afin que la confidentialité fournie par le protocole « HTTPS » ne soit pas compromise par un élément chargé en « HTTP ». 
 
-Dans la plupart des cas, il s'agit de scripts externes, provenant d'autres sites web comme les réseaux sociaux. Dans ce cas, il suffit de remplacer vos URLs en « HTTP » par des URLs en « HTTPS » pour pouvoir charger ces scripts.
+Dans la plupart des cas, il s'agit de scripts externes, provenant d'autres sites web comme les réseaux sociaux. Dans ce cas, il suffit de remplacer dans vos scripts les URLs en « HTTP » par des URLs en « HTTPS » pour pouvoir charger ces scripts.
 
 > [!primary]
 >
