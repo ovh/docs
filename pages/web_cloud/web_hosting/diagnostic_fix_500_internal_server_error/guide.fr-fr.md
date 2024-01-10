@@ -116,4 +116,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
-![error500](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}
+![OVHcloud](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}
