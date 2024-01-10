@@ -841,6 +841,7 @@
                 + [Scanning Docker images for vulnerabilities with OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/scan-docker-images-vulnerabilities)
                 + [Sign OCI artifacts with Cosign on OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/sign-artifacts-with-cosign)
                 + [Configure the authentication via an OIDC provider on an OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/configure-oidc-provider-authentication)
+                + [Adding IP restrictions on an OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/add-ip-restrictions)
     + [AI & Machine Learning](products/public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
             + [Comparative tables - AI Notebooks, AI Training, AI Deploy](public_cloud/ai_machine_learning/gi_00_ai_comparative-table)
