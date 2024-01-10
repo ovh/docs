@@ -76,7 +76,7 @@ Nachstehend finden Sie eine Beschreibung der wesentlichen Informationen, die auf
 
 Wenn Sie das Passwort eines FTP- oder SSH-Benutzers nicht mehr kennen, lesen Sie unsere Anleitung "[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ftp login](images/change-ftp-password.png){.thumbnail}
+![ftp login](images/change-password.png){.thumbnail}
 
 An diesem Punkt verfügen Sie über alle notwendigen Elemente, um sich mit Ihrem FTP-Speicherplatz zu verbinden.
 

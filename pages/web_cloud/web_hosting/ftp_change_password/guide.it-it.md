@@ -58,11 +58,11 @@ In base al piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosti
 
 - **per le offerte che non permettono di creare un secondo utente FTP** (offerte *Personale* e *Hosting gratuito 100M*): clicca sul *pittogramma a forma di matita* nella colonna `Password`{.action} della tabella che appare, inserisci la nuova password **seguendo la politica delle password** e confermala cliccando sul *pulsante verde* di conferma.
 
-![change-ftp-password-step1-perso](images/change-ftp-password-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
 
 - **per le offerte che permettono di creare diversi utenti FTP** (offerte *Pro* e *Performance*): clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modifica la password`{.action}. Nella nuova finestra, inserisci la nuova password**seguendo la politica delle password**, confermala inserendola una seconda volta e clicca su `Conferma`{.action}.
 
-![change-ftp-password-pro](images/change-ftp-password-pro.png){.thumbnail}
+![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
 
 Consulta la scheda `Operazioni in corso`{.action} e aggiorna regolarmente la pagina. La modifica richiede solo pochi minuti per essere effettiva.
 
