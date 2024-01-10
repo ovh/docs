@@ -13,14 +13,14 @@ Notre nouvelle solution Load Balancer as a Service (LBaaS) est basée sur le ser
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/)
-- Utiliser [l'environnement de commande Openstack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
+- Utiliser [l'environnement de commande Openstack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - Avoir installé le client Openstack Octavia
 
 ## En pratique
 
 ### Configurer votre réseau privé
 
-Avant de commencer à utiliser un Load Balancer, il vous faut créer un réseau privé:
+Avant de commencer à utiliser un Load Balancer, il vous faut créer un réseau privé :
 
 ```bash
 openstack network create my_network
