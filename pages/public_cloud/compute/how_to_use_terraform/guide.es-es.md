@@ -3,7 +3,7 @@ title: Terraform Tutorial (EN)
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2022-05-27
+updated: 2024-01-10
 ---
 
 ## Objective
@@ -34,6 +34,10 @@ As an example, this video shows how to easily scale the number of instances whil
 >
 
 ## Instructions
+
+> [!warning]
+>
+> Since the names of official images may change, it is best to use their IDs in your installation scripts.
 
 ### Creating the Terraform environment
 
@@ -92,13 +96,13 @@ provider "ovh" {
 
 > [!primary]
 > If you don't want to define your secrets in the Terraform configuration file, you can also define them in environment variables:
-> 
-> ```console
-> $ export OVH_ENDPOINT=ovh-eu
-> $ export OVH_APPLICATION_KEY=Your_key_application_OVH(or_AK)
-> $ export OVH_APPLICATION_SECRET=Your_secret_application_key_OVH(or_AS)
-> $ export OVH_CONSUMER_KEY=Your_token(or_CK)
-> ```
+
+```console
+$ export OVH_ENDPOINT=ovh-eu
+$ export OVH_APPLICATION_KEY=Your_key_application_OVH(or_AK)
+$ export OVH_APPLICATION_SECRET=Your_secret_application_key_OVH(or_AS)
+$ export OVH_CONSUMER_KEY=Your_token(or_CK)
+```
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
 

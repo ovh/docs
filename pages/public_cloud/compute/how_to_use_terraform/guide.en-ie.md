@@ -3,7 +3,7 @@ title: How to use Terraform
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2022-05-27
+updated: 2024-01-10
 ---
 
 ## Objective
@@ -34,6 +34,10 @@ As an example, this video shows how to easily scale the number of instances whil
 >
 
 ## Instructions
+
+> [!warning]
+>
+> Since the names of official images may change, it is best to use their IDs in your installation scripts.
 
 ### Creating the Terraform environment
 
