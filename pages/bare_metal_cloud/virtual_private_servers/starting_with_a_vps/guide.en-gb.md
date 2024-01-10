@@ -1,7 +1,7 @@
 ---
 title: Getting started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2023-11-13
+updated: 2024-01-10
 ---
 
 ## Objective
@@ -22,6 +22,8 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 ### Control Panel interface
 
 This dashboard (tab `Home`{.action}) contains important information about your service and allows you to perform essential operations.
+
+![VPS Home](images/vpshome.png){.thumbnail}
 
 #### Your VPS <a name="yourvps"></a>
 
@@ -124,7 +126,7 @@ A progress bar for the installation will appear in your Control Panel. Please no
 
 ### Restarting your VPS <a name="reboot-current-range"></a>
 
-A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" from the server's GUI or via the command line:
+A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" from the server's GUI (Windows, Plesk, etc.) or via the command line:
 
 ```bash
 sudo reboot

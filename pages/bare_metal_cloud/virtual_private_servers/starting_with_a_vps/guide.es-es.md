@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un VPS
 excerpt: Aprenda a gestionar un VPS en su área de cliente y descubra las primeras etapas de su uso, incluyendo las conexiones a distancia y las medidas de seguridad
-updated: 2023-11-13
+updated: 2024-01-10
 ---
 
 > [!primary]
@@ -27,6 +27,8 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 ### Panel de control
 
 La pestaña `Inicio`{.action} contiene información importante sobre su servicio y le permite realizar operaciones esenciales.
+
+![VPS Home](images/vpshome.png){.thumbnail}
 
 #### Su VPS <a name="yourvps"></a>
 
@@ -129,7 +131,7 @@ En el área de cliente de OVHcloud podrá consultar el progreso de la instalaci�
 
 ### Reinicio del VPS <a name="reboot-current-range"></a>
 
-Es posible que sea necesario reiniciar para aplicar configuraciones actualizadas o solucionar un problema. En la medida de lo posible, realice un reinicio por software»desde la interfaz gráfica del servidor o desde la línea de comandos:
+Es posible que sea necesario reiniciar para aplicar configuraciones actualizadas o solucionar un problema. En la medida de lo posible, realice un reinicio por software desde la interfaz gráfica del servidor (Windows, Plesk, etc.) o desde la línea de comandos:
 
 ```bash
 sudo reboot

@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2023-11-13
+updated: 2024-01-10
 ---
 
 > [!primary]
@@ -27,6 +27,8 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 ### Panel klienta
 
 Karta `Strona`{.action} główna zawiera ważne informacje o Twojej usłudze i umożliwia przeprowadzenie najważniejszych operacji.
+
+![VPS Home](images/vpshome.png){.thumbnail}
 
 #### Twój VPS <a name="yourvps"></a>
 
@@ -129,7 +131,7 @@ W Panelu klienta wyświetli się pasek postępu instalacji. Operacja ta może po
 
 ### Restart serwera VPS <a name="reboot-current-range"></a>
 
-Ponowne uruchomienie może być konieczne w celu zastosowania zaktualizowanych konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "restart oprogramowania" w graficznym interfejsie serwera lub za pomocą wiersza poleceń:
+Ponowne uruchomienie może być konieczne w celu zastosowania zaktualizowanych konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "restart oprogramowania" w graficznym interfejsie serwera (Windows, Plesk, ...) lub za pomocą wiersza poleceń:
 
 ```bash
 sudo reboot
