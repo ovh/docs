@@ -1,12 +1,12 @@
 ---
-title: 'Créer et gérer des utilisateurs sur un compte OVHcloud'
-excerpt: 'Découvrez comment ajouter des utilisateurs depuis votre compte OVHcloud'
+title: 'Créer et gérer des utilisateurs locaux sur un compte OVHcloud'
+excerpt: 'Découvrez comment ajouter des utilisateurs locauxdepuis votre compte OVHcloud'
 updated: 2023-07-19
 ---
 
 ## Objectif
 
-OVHcloud vous donne la possibilité de créer des utilisateurs, qui peuvent agir en lecture ou en écriture sur votre espace client. Cela vous permet de donner aux membres de votre entreprise un accès à vos services OVHcloud. Et ce, sans avoir à recourir à des pratiques hasardeuses de partage de mot de passe ou de code de double authentification.
+OVHcloud vous donne la possibilité de créer des utilisateurs locaux, qui peuvent agir en lecture ou en écriture sur votre espace client. Cela vous permet de donner aux membres de votre entreprise un accès à vos services OVHcloud. Et ce, sans avoir à recourir à des pratiques hasardeuses de partage de mot de passe ou de code de double authentification.
 
 > [!primary]
 >
@@ -15,7 +15,7 @@ OVHcloud vous donne la possibilité de créer des utilisateurs, qui peuvent agir
 > La gestion de contacts vise quant à elle à déléguer l'administration complète des aspects administratifs, techniques ou de facturation d'un ou plusieurs services sur votre compte OVHcloud. Pour plus de détails sur la gestion des contacts, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
-**Ce guide détaille les différents privilèges qu'un utilisateur peut détenir ainsi que la méthode pour ajouter et gérer vos utilisateurs.**
+**Ce guide détaille les différents privilèges qu'un utilisateur local peut détenir ainsi que la méthode pour ajouter et gérer vos utilisateurs.**
 
 ## Prérequis
 
@@ -24,11 +24,15 @@ OVHcloud vous donne la possibilité de créer des utilisateurs, qui peuvent agir
 
 ## En pratique
 
-### Gestion des utilisateurs
+### Présentation des identités
+
+Les utilisateurs locaux sont un des types d'identités pouvant être mis en place sur votre compte OVHcloud. Les autres types de comptes sont décrits dans la [documentation associée](/pages/manage_and_operate/iam/identities-management)
+
+### Gestion des utilisateurs locaux
 
 #### Ajouter un utilisateur
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez en haut à droite sur`votre nom`{.action} (1), puis sur vos initiales (2). 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez en haut à droite sur`votre nom`{.action} (1), puis sur vos initiales (2).
 Cliquez alors sur l'onglet `Gestion des utilisateurs`{.action} (3) puis sur `Ajouter un utilisateur`{.action} (4).
 
 ![users-management](images/hubusers.png){.thumbnail}
@@ -51,7 +55,7 @@ Exemple : **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-L'utilisateur créé pourra dès lors se connecter à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} en utilisant cet identifiant. 
+L'utilisateur créé pourra dès lors se connecter à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} en utilisant cet identifiant.
 
 Il pourra également modifier son mot de passe et sécuriser son propre accès à votre compte en activant une mesure de double authentification (celle-ci concernera uniquement son accès en tant qu'utilisateur). Vous pouvez consulter à cet effet [le guide sur la mise en place de la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
 
