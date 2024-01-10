@@ -21,8 +21,8 @@ OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retr
 ## Prérequis
 
 - Un accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud avec :  
-&emsp;○ [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture
+- [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud avec :
+    - [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d'écriture
 - Une base de données SAP HANA installée
 
 ## En pratique
@@ -41,7 +41,7 @@ OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retr
 > Il n'est pas obligatoire d'installer AWS S3 CLI sur votre serveur hébergeant votre base de données SAP HANA. Les actions de ce chapitre peuvent être réalisées depuis votre serveur d'administration ou également depuis votre poste client.
 >
 
-Le versioning du bucket doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent. Le versioning permet de garder plusieurs versions d'un même objet dans votre bucket Object Storage S3.
+Le versioning du bucket Object Storage S3 doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent. Le versioning permet de garder plusieurs versions d'un même objet dans votre bucket Object Storage S3.
 
 Dans le cas des sauvegardes SAP HANA, le versioning vous permet de réaliser plusieurs sauvegardes avec le même nom, comme par exemple « COMPLETE_DATA_BACKUP » et de garder la possibilité de restaurer une version spécifique de la sauvegarde « COMPLETE_DATA_BACKUP ». Si le versioning n'est pas activé, seule la dernière version de la sauvegarde « COMPLETE_DATA_BACKUP » peut être restaurée.
 
@@ -93,7 +93,7 @@ L'archive `ovhcloud-backint-agent.zip` doit être décompressée, vous pouvez ut
 unzip /usr/sap/<SID>/SYS/global/hdb/opt/ovhcloud-backint-agent.zip -d /usr/sap/<SID>/SYS/global/hdb/opt/
 ```
 
-À présent, quatre fichiers sont présents dans le répertoire `/usr/sap/<SID>/SYS/global/hdb/opt/` :
+À présent, cinq fichiers sont présents dans le répertoire `/usr/sap/<SID>/SYS/global/hdb/opt/` :
 
 - LICENSE
 - NOTICE
@@ -129,7 +129,7 @@ Sortie attendue :
 
 ### Configuration
 
-Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre chevrons par les informations liées à votre bucket Object Storage S3. Ci-dessous, un exemple de son contenu.
+Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre chevrons par les informations liées à votre bucket Object Storage S3. Ci-dessous, un exemple de son contenu après édition.
 
 ```ini
 [trace]
@@ -152,7 +152,7 @@ Les paramètres `multipart_chunksize` et `multipart_threshold` acceptent les val
 - Le paramètre `multipart_threshold` permet le déclenchement de l'envoi de l'objet en plusieurs parties (multipart).
 - Le paramètre `multipart_chunksize` spécifie la taille des parties de l'objet à envoyer.
 
-Les valeurs des paramètres `multipart_chunksize` et `multipart_threshold` ont été configurées pour offrir une performance optimale dans de nombreux cas, mais elles peuvent être augmentées ou diminuées en fonction de votre environnement.
+Les valeurs fournies par défaut des paramètres `multipart_chunksize` et `multipart_threshold` dans le fichier `hdbbackint.cfg` offrent une performance optimale dans de nombreux cas, mais elles peuvent être augmentées ou diminuées en fonction de votre environnement.
 
 >[!warning]
 >
@@ -161,7 +161,7 @@ Les valeurs des paramètres `multipart_chunksize` et `multipart_threshold` ont �
 > Il est également conseillé de réaliser une sauvegarde complète de votre base de données SAP HANA après la modification de la configuration, dans le but de valider cette dernière.
 >
 
-Veuillez exécuter ces commandes SQL suivante afin de mettre à jour la configuration de sauvegarde de votre base de données SAP HANA.
+Veuillez exécuter ces commandes SQL afin de mettre à jour la configuration de sauvegarde de votre base de données SAP HANA.
 
 *Remplacez, dans les commandes SQL ci-dessous, les caractères* `<SID>` *par le SID de votre base de données SAP HANA.*
 
@@ -185,8 +185,7 @@ Sa valeur est le résultat de l'opération « 512 x `parallel_data_backup_backin
 
 >[!primary]
 >
-> Pour connaître l'exhaustivité des paramètres liés à la sauvegarde SAP HANA, nous vous recommandons la [documentation SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/e28fbdf1024c40e1a97fca48380aad98.html?locale=en-US).  
-> Dans la colonne "Section", indiquez "Backup".
+> Pour connaître l'exhaustivité des paramètres liés à la sauvegarde SAP HANA, nous vous recommandons la [documentation SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/e28fbdf1024c40e1a97fca48380aad98.html?locale=en-US). Dans la colonne « Section », indiquez « Backup ».
 >
 
 ### Sauvegarde
