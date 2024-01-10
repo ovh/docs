@@ -1,7 +1,7 @@
 ---
 title: "Erreurs courantes liées à la sécurisation de votre site web avec le SSL"
 excerpt: "Découvrez comment éviter les erreurs courantes de sécurisation de son site web avec le SSL"
-updated: 2024-01-09
+updated: 2024-01-10
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Retrouvez, dans ce tutoriel, quelques exemples de situations concernant la sécu
 - Posséder un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Avoir enregistré au moins un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Web ».
-  
+
 ## En pratique
 
 ### Contenu mixte (mixed content)
@@ -31,7 +31,7 @@ Votre site web ne charge pas d'éléments externes, comme les boutons *Facebook*
 
 Depuis quelques années, les navigateurs comme *Google Chrome*, *Mozilla Firefox* et *Internet Explorer* empêchent les sites web en « HTTPS » de charger des éléments de page s'ils sont accessible via une URL en « HTTP ». Ceci afin que la confidentialité fournie par le protocole « HTTPS » ne soit pas compromise par un élément chargé en « HTTP ». 
 
-Dans la plupart des cas, il s'agit de scripts externes, provenant d'autres sites web comme les réseaux sociaux. Dans ce cas il suffit de remplacer vos URLs en « HTTP » par des URLs en « HTTPS » pour pouvoir charger ces scripts. 
+Dans la plupart des cas, il s'agit de scripts externes, provenant d'autres sites web comme les réseaux sociaux. Dans ce cas, il suffit de remplacer vos URLs en « HTTP » par des URLs en « HTTPS » pour pouvoir charger ces scripts.
 
 > [!primary]
 >
@@ -45,11 +45,11 @@ Les outils de débogage fournis par *Mozilla Firefox* et *Google Chrome* peuvent
 
 ### Contenu dupliqué (duplicate content)
 
-« Dupliquer du contenu » signifie avoir le même contenu sur plusieurs URLs différentes. Les moteurs de recherche voient cela comme une tentative d'améliorer le référencement (SEO). Ils pénalisent donc les sites web dont le contenu est dupliqué. 
+« Dupliquer du contenu » signifie avoir le même contenu sur plusieurs URLs différentes. Les moteurs de recherche voient cela comme une tentative d'améliorer le référencement (SEO). Ils pénalisent donc les sites web dont le contenu est dupliqué.
 
-Afin d'éviter ce type de situation, nous vous suggérons, lorsque votre site fonctionne correctement en « HTTPS », de rediriger le contenu « HTTP » vers « HTTPS ». Cela permettra à vos visiteurs d'être automatiquement redirigés vers l'adresse de votre contenu web en « HTTPS » et qu'une seule adresse sera disponible pour ce même contenu. 
+Afin d'éviter ce type de situation, nous vous suggérons, lorsque votre site fonctionne correctement en « HTTPS », de rediriger le contenu « HTTP » vers « HTTPS ». Cela permettra à vos visiteurs d'être automatiquement redirigés vers l'adresse de votre contenu web en « HTTPS » et qu'une seule adresse soit disponible pour ce même contenu. 
 
-Voici un exemple de redirection que vous pouvez ajouter dans un fichier « .htaccess » à la racine de votre site web (en remplacant l'URL *https://www.yourdomain.tld* par la vôtre):
+Voici un exemple de redirection que vous pouvez ajouter dans un fichier « .htaccess », à la racine de votre site web (en remplacant l'URL *https://www.yourdomain.tld* par la vôtre):
 
 ```
 RewriteEngine On
@@ -58,7 +58,7 @@ RewriteRule ^(.*)$ https://www.yourdomain.tld/$1 [R,L]
 ```
 
 ## Aller plus loin <a name="go-further"></a>
- 
+
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
-  
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
