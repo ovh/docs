@@ -71,7 +71,7 @@ Below is a description of the essential information displayed on the `FTP-SSH` p
 
 If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ftpconnect](images/change-ftp-password.png){.thumbnail}
+![ftpconnect](images/change-password.png){.thumbnail}
 
 At this stage, you have everything you need to log in to your FTP storage space.
 

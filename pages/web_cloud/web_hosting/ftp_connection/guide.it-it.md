@@ -75,7 +75,7 @@ Di seguito trovi una descrizione delle informazioni essenziali visualizzate sull
 
 Se non conosci più la password di un utente FTP o SSH, consulta la nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ftpconnect](images/change-ftp-password.png){.thumbnail}
+![ftpconnect](images/change-password.png){.thumbnail}
 
 A questo punto, disporrai di tutti gli elementi che ti permetteranno di accedere al tuo spazio di archiviazione FTP.
 
