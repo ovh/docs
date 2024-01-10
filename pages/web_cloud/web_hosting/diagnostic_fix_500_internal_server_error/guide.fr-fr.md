@@ -115,5 +115,3 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
-![OVHcloud](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}

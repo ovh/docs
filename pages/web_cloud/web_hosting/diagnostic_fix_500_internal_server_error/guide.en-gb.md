@@ -114,5 +114,3 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.
-
-[OVHcloud](/pages/assets/screens/other/browsers/errors/http-500.png)
