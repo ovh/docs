@@ -3,7 +3,7 @@ title: How to use Terraform
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2022-05-27
+updated: 2024-01-10
 ---
 
 ## Objective
@@ -34,6 +34,10 @@ As an example, this video shows how to easily scale the number of instances whil
 >
 
 ## Instructions
+
+> [!warning]
+>
+> Since the names of official images may change, it is best to use their IDs in your installation scripts.
 
 ### Creating the Terraform environment
 
@@ -573,7 +577,7 @@ If one of these business rules is not met, you will receive the following error:
 In that case, the only solution is to use the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to create a project.<br>
 You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
 
-Please understand these rules and extra human steps have been put in place as an extra safety for customers that migh have leaked their OVHcloud credentials.<br>
+Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
 We will try to continue improving those rules in the future to facilitate Infra-as-code scenarios, such as this "public cloud project as code" scenario.
 
 Create a file named `project.tf` and enter the following lines:

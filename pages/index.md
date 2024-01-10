@@ -507,6 +507,8 @@
             + [Delegating projects](public_cloud/compute/delegate_projects)
             + [Changing project contacts](public_cloud/compute/change_project_contacts)
             + [Information regarding Public Cloud billing options](public_cloud/compute/analyze_billing)
+            + [Adding cloud credit](account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project)
+            + [Switching from hourly to monthly billing](account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing)
             + [Activation de la mise en conformité Healthcare (HDS)](public_cloud/compute/activate-hds-certification)
         + [Instances management](products/public-cloud-compute-instance-management)
             + [Getting started](public-cloud-compute-instance-management-getting-started)
