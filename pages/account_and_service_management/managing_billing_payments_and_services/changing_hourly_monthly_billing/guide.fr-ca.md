@@ -1,5 +1,5 @@
 ---
-title: "Passer d'une facturation à l'heure à mensuelle"
+title: "Instances Public Cloud - Passer d'une facturation horaire à mensuelle"
 excerpt: 'Découvrez comment modifier le type de facturation de votre instance Public Cloud'
 updated: 2023-01-23
 ---
