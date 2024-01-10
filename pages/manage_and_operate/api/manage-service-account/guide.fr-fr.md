@@ -1,7 +1,7 @@
 ---
 title: "Gérer les comptes de service OVHcloud via l'API"
 excerpt: "Comment créer et utiliser un token permettant de se connecter à l'ensemble des API de OVHcloud"
-updated: 2023-08-24
+updated: 2024-01-10
 ---
 
  
