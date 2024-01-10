@@ -1,6 +1,6 @@
 ---
-title: "MXplan - Konfiguration einer E-Mail-Adresse in Gmail für Android"
-excerpt: "Hier erfahren Sie, wie Sie eine MX Plan Adresse in Android über die Gmail-App einrichten"
+title: "MX Plan - Konfiguration eines E-Mail-Accounts in Gmail für Android"
+excerpt: "Erfahren Sie hier, wie Sie einen MX Plan Account in Android über die Gmail-App einrichten"
 updated: 2023-12-15
 ---
 
@@ -16,58 +16,58 @@ updated: 2023-12-15
 
 ## Ziel
 
-E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden. In dieser Anleitung erfahren Sie, wie Sie eine MXplan-E-Mail-Adresse über die Gmail-App auf Android-Geräten einrichten.
+E-Mail-Accounts aus dem MX Plan Angebot können auf allen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden.
 
-**Hier erfahren Sie, wie Sie eine MX Plan E-Mail-Adresse in Android über die Gmail-App einrichten.**
+**Diese Anleitung erklärt, wie Sie einen MX Plan E-Mail-Account in Android über die Gmail-App einrichten.**
 
 > [!warning]
->
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Sie haben einen MX Plan E-Mail-Account (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren, wenn sie noch nicht vorhanden ist.
-- Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+- Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
 > [!primary]
 >
-> Diese Anleitung wurde auf einem Gerät mit Android Version 13 erstellt.
+> Diese Anleitung wurde anhand eines Geräts mit Android Version 13 erstellt.
 >
 
 ## In der praktischen Anwendung
 
-### So fügen Sie Ihren E-Mail-Account hinzu
+### Hinzufügen des E-Mail-Accounts
 
-Tippen Sie auf dem Bildschirm Ihres Geräts auf die `Gmail`{.action}-App.
+Öffnen Sie auf Ihrem Gerät die App für `Gmail`{.action}.
 
 ![mxplan](images/mxplan-android-00.png){.thumbnail .w-400}
 
-Das Hinzufügen eines Accounts erfolgt anders, **wenn noch kein Account eingerichtet** ist oder **wenn bereits ein Account eingerichtet** wurde. Wählen Sie die Registerkarte für eine der beiden Situationen aus:
+Das Einrichten eines Accounts erfolgt **wenn noch kein Account eingerichtet** anders als **wenn bereits ein Account eingerichtet** wurde. Wählen Sie daher den Tab für eine der beiden Situationen aus:
 
 > [!tabs]
 > **Erste Konfiguration**
 >>
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-first.png){.thumbnail}|Wählen Sie `E-Mail-Adresse hinzufügen aus`{.action}|
+>> |![mxplan](images/mxplan-android-first.png){.thumbnail}|Wählen Sie `E-Mail-Account hinzufügen`{.action}.|
 >>
 > **Vorhandene Konfiguration**
 >>
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-existing.png){.thumbnail}|1 . Gehen Sie zum Menü oben links auf dem Bildschirm<br><br>2 . Wählen Sie `Einstellungen aus`{.action}<br><br>3 . Wählen Sie `Konto hinzufügen aus`{.action}|
+>> |![mxplan](images/mxplan-android-existing.png){.thumbnail}|1 . Gehen Sie zum Menü oben links auf dem Bildschirm.<br><br>2 . Wählen Sie `Einstellungen`{.action} aus.<br><br>3 . Wählen Sie `Konto hinzufügen`{.action}.|
 >>
 
-Gehen Sie wie folgt vor, indem Sie die folgenden Registerkarten durchsuchen:
+Folgen Sie den Anleitungsschritten indem Sie nacheinander die Tabs aufrufen:
 
 >  [!tabs]
 > **Schritt 1**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-01.png){.thumbnail}|Wählen Sie im Menü „E-Mail-Kontotypen“ die Option „`Andere`{.action}“.|
+>> |![mxplan](images/mxplan-android-01.png){.thumbnail}|Wählen Sie im Menü „E-Mail-Kontotypen“ die Option `Andere`{.action}.|
 >>
 > **Schritt 2**
 >> | | |
@@ -77,22 +77,22 @@ Gehen Sie wie folgt vor, indem Sie die folgenden Registerkarten durchsuchen:
 > **Schritt 3**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-03.png){.thumbnail}|Wählen Sie das Protokoll für den E-Mail-Empfang aus. Es wird empfohlen, `Personal (IMAP) auszuwählen`{.action}<br><br>Am Ende dieser Anleitung finden Sie [weitere Informationen zu POP und IMAP](#popimap), um die Unterschiede zu verstehen.|
+>> |![mxplan](images/mxplan-android-03.png){.thumbnail}|Wählen Sie das Protokoll für den E-Mail-Empfang aus. Es wird empfohlen, `Personal (IMAP)`{.action} auszuwählen.<br><br>Am Ende dieser Anleitung finden Sie [weitere Informationen zu POP und IMAP](#popimap), um die Unterschiede zu verstehen.|
 >>
 > **Schritt 4**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-04.png){.thumbnail}|Geben Sie das Passwort Ihrer E-Mail-Adresse ein. |
+>> |![mxplan](images/mxplan-android-04.png){.thumbnail}|Geben Sie das Passwort Ihres E-Mail-Accounts ein. |
 >>
 > **Schritt 5**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-05.png){.thumbnail}|Füllen Sie die „**Eingangsservereinstellungen**“ aus<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort Ihrer E-Mail-Adresse<br>- **Server** : Geben Sie **ssl0.ovh.net** ein |
+>> |![mxplan](images/mxplan-android-05.png){.thumbnail}|Füllen Sie die **Eingangsservereinstellungen** aus<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort Ihres E-Mail-Accounts<br>- **Server**: Geben Sie **ssl0.ovh.net** ein. |
 >>
 > **Schritt 6**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Füllen Sie die „**Einstellungen für Ausgangsserver**“ aus<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort Ihrer E-Mail-Adresse<br> - SMTP **Server** : Geben Sie **ssl0.ovh.net** ein|
+>> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Füllen Sie die „**Einstellungen für Ausgangsserver**“ aus<br><br>- **Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Das Passwort Ihres E-Mail-Accounts<br> - SMTP **Server**: Geben Sie **ssl0.ovh.net** ein.|
 >>
 > **Schritt 7**
 >> | | |
@@ -102,25 +102,25 @@ Gehen Sie wie folgt vor, indem Sie die folgenden Registerkarten durchsuchen:
 > **Schritt 8**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-08.png){.thumbnail}|Bestimmen Sie den Anzeigenamen Ihrer E-Mail-Adresse in der Gmail-App und tippen Sie dann auf `Weiter`{.action}|
+>> |![mxplan](images/mxplan-android-08.png){.thumbnail}|Bestimmen Sie den Anzeigenamen Ihres E-Mail-Accounts in der Gmail-App und tippen Sie dann auf `Weiter`{.action}.|
 >>
 
-Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails über Ihre Gmail-App versenden und empfangen.
+Wenn Ihr E-Mail-Account eingerichtet ist, können Sie ab sofort E-Mails über Ihre Gmail-App versenden und empfangen.
 
 > [!success]
 >
-> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 ### POP-, IMAP- und SMTP-Einstellungen
 
-Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können auch **POP** auswählen. Um zu verstehen, wie diese funktionieren, lesen Sie unseren Abschnitt [„POP oder IMAP, was ist der Unterschied?“](#popimap)
+Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können auch **POP** auswählen. Wie diese funktionieren, erfahren Sie im Abschnitt [„POP oder IMAP, was ist der Unterschied?“](#popimap)
 
 - **POP-Konfiguration**
 
 |Information|Beschreibung|
 |---|---|
 |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
 |POP-Server|ssl0.ovh.net|
 |Port|995|
 |Sicherheitstyp|SSL/TLS|
@@ -130,7 +130,7 @@ Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps d
 |Information|Beschreibung|
 |---|---|
 |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
 |POP-Server|ssl0.ovh.net|
 |Port|993|
 |Sicherheitstyp|SSL/TLS|
@@ -142,39 +142,39 @@ Wenn Sie die **SMTP**-Einstellungen für den E-Mail-Versand manuell in den Konto
 |Information|Beschreibung|
 |---|---|
 |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
 |POP-Server|ssl0.ovh.net|
 |Port|465|
 |Sicherheitstyp|SSL/TLS|
 
 ### POP oder IMAP, was ist der Unterschied? <a name="popimap"></a>
 
-Wenn Sie Ihre E-Mail-Adresse manuell konfigurieren, werden Sie von Ihrem E-Mail-Client gefragt, ob Sie **POP** (**P**ost **O**ffice **P**rotocol) oder **IMAP** (**I**nternet **M**essage **A**ccess **P**rotocol) verwenden möchten. Um dies zu verstehen, lokalisieren Sie die POP- und IMAP-Protokolle in der Konfiguration Ihrer E-Mail-Adresse.
+Wenn Sie Ihren E-Mail-Account manuell konfigurieren, werden Sie von Ihrem E-Mail-Client gefragt, ob Sie **POP** (**P**ost **O**ffice **P**rotocol) oder **IMAP** (**I**nternet **M**essage **A**ccess **P**rotocol) verwenden möchten. Lokalisieren Sie die POP- und IMAP-Protokolle in der Konfiguration Ihres E-Mail-Accounts.
 
-Bei der Konfiguration Ihres E-Mail-Clients müssen Sie die Informationen des **eingehenden Servers** angeben, um E-Mails zu empfangen, und den **ausgehenden Server**, um E-Mails zu senden. Für den Versand von E-Mails gibt es keine Wahl, sondern es wird das **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) verwendet. Für den Empfang haben Sie somit die Wahl zwischen **POP** oder **IMAP**.
+Bei der Konfiguration Ihres E-Mail-Clients müssen Sie die Informationen des **eingehenden Servers** angeben, um E-Mails zu empfangen, und den **ausgehenden Server**, um E-Mails zu senden. Für den Versand von E-Mails gibt es keine Wahl, sondern es wird **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) verwendet. Für den Empfang haben Sie somit die Wahl zwischen **POP** oder **IMAP**.
 
 ![mxplan](images/mxplan-android-popimap-01.png){.thumbnail}
 
 Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verstehen, werden wir die Elemente aufteilen, aus denen die Verarbeitung Ihrer empfangenen E-Mails besteht:
 
-1. **Ihr Gerät** : ein Computer, Smartphone oder Tablet. Dies ist Ihr Beratungsmedium.
+1. **Ihr Gerät**: Ein Computer, Smartphone oder Tablet.
 
-2. **Ihr E-Mail-Client**: Software oder Applikation zur Verwaltung Ihrer E-Mails. Die Wahl der Option bestimmt, wie ergonomisch und funktional der E-Mail-Zugriff sein muss.
+2. **Ihr E-Mail-Client**: Software zur Verwaltung Ihrer E-Mails.
 
-3. **Empfangsprotokoll** : Wahl, wie E-Mails auf Ihrem Gerät abgerufen werden. Ihre Wahl wirkt sich auf andere Geräte aus, die denselben E-Mail-Account nutzen.
-    - **IMAP** : Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Wenn Sie eine ungelesene E-Mail anzeigen, wird diese vom Server standardmäßig als „gelesen“ markiert. Andere IMAP-fähige Geräte können diesen Status sehen und diese E-Mail sehen, bis sie auf einem der Geräte gelöscht wurde.
-    - **POP** : Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Standardmäßig wird die Nachricht vom Server gelöscht, sobald sie auf Ihr Gerät heruntergeladen wurde. Daher können andere Geräte, die mit dieser E-Mail-Adresse verbunden sind, diese E-Mail nicht anzeigen.
+3. **Empfangsprotokoll**: Wahl, wie E-Mails auf Ihrem Gerät abgerufen werden. Ihre Wahl wirkt sich auf andere Geräte aus, die denselben E-Mail-Account nutzen.
+    - **IMAP**: Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Wenn Sie eine ungelesene E-Mail anzeigen, wird diese vom Server standardmäßig als „gelesen“ markiert. Andere IMAP-fähige Geräte können diesen Status sehen und die E-Mail besteht, bis sie auf einem der Geräte gelöscht wurde.
+    - **POP**: Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Standardmäßig wird die Nachricht vom Server gelöscht, sobald sie auf Ihr Gerät heruntergeladen wurde. Daher können andere Geräte, die mit diesem E-Mail-Account verbunden sind, diese E-Mail nicht mehr anzeigen.
 
 ![mxplan](images/mxplan-android-popimap-02.png){.thumbnail}
 
 > [!primary]
 >
-> Diese Beschreibung ist eine Zusammenfassung, sie stellt die Standardfunktionen beider Protokolle dar. Sie können den POP so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Das Ziel hier ist es, die native Funktionsweise dieser beiden Protokolle zu beschreiben und zusätzliche Manipulationen zu vermeiden, um Ihren Anforderungen gerecht zu werden.
+> Diese Beschreibung ist eine Zusammenfassung der Standardfunktionen beider Protokolle. Sie können auch **POP** so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Die Ausführungen ober dienen dazu, die native Funktionsweise dieser beiden Protokolle zu beschreiben und Ihren Aufwand zu minimieren.
 
 ## Weiterführende Informationen
 
 [Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android)
 
 [Konfiguration Ihres Exchange Accounts in Android über die Gmail-App](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)
-/
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

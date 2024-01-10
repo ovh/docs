@@ -76,7 +76,7 @@ Klicken Sie dann auf `Bestätigen`{.action}.
 
 Sie erhalten dann eine E-Mail, in der Datum und Uhrzeit des Eingriffs bestätigt werden.
 
-Möchten Sie gleichzeitig Ihren Storage und RAM erweitern? Dann bestellen und bezahlen Sie bitte diese beiden Optionen eine nach der anderen binnen einer Stunde.
+Möchten Sie gleichzeitig Storage und RAM erweitern? Dann bestellen und bezahlen Sie einfach die beiden Upgrades innerhalb eines Zeitraums von einer Stunde.
 
 ## Weiterführende Informationen <a name="go-further"></a>
  

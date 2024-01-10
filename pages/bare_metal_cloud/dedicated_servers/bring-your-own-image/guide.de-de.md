@@ -35,25 +35,25 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 **Technische Einschränkungen**
 
 Es gibt noch einige technische Einschränkungen bei der Verwendung physischer Dienste wie Dedicated Server.
-Bitte beachten Sie die unten aufgeführten Anforderungen bei der Vorbereitung Ihres Deployments. Diese Liste ist nicht erschöpfend.
+Beachten Sie die unten aufgeführten Anforderungen bei der Vorbereitung Ihres Deployments. Diese Liste ist nicht erschöpfend.
 
-- Boot-Modus: **uefi** oder **legacy**
+- Boot-Modus: **UEFI** oder **legacy**
 - Partitionstyp: **MBR** oder **GPT**
 - Imageformat: **qcow2** oder **raw**
 
-Wenn Ihr Server über **uefi** Boot verfügt, müssen Sie in Ihrem Image unbedingt eine **EFI**-Partition hinzufügen.
+Wenn Ihr Server über **UEFI** Boot verfügt, müssen Sie in Ihrem Image unbedingt eine **EFI**-Partition hinzufügen.
 
-**Informationen zum RAID**
+**Informationen zu RAID**
 
 Bring Your Own Image unterstützt keine Software-RAID-Konfiguration zum Zeitpunkt der Installation.
 
-Sie können es später in einem Post-Installations-Skript konfigurieren, wenn Ihr Image beispielsweise md RAID 1-Arrays enthält.
+Sie können es später in einem Post-Installationsskript konfigurieren, wenn Ihr Image beispielsweise md RAID 1-Arrays enthält.
 
-Hardware-RAID wird unterstützt, wenn Ihr Server dies unterstützt, da es vor der Bereitstellung des Images auf der Festplatte konfiguriert wird.
+Hardware-RAID wird unterstützt, wenn Ihr Server dies unterstützt, da es schon vor der Installation konfiguriert ist.
 
 **Deployment-Methoden**
 
-- [Über das Kundencenter](#viacontrolpanel): ermöglicht es Ihnen, Ihr Image schnell und einfach über Ihr OVHcloud Kundencenter bereitzustellen.
+- [Über das Kundencenter](#viacontrolpanel): Ermöglicht es Ihnen, Ihr Image schnell und einfach über Ihr OVHcloud Kundencenter bereitzustellen.
 - [Über die API](#viaapi): Sie können die OVHcloud API verwenden, um sie in Ihre eigenen Skripte zu integrieren, um die Inbetriebnahme zu automatisieren.
 
 ### Ihr Image über das OVHcloud Kundencenter deployen <a name="viacontrolpanel"></a>

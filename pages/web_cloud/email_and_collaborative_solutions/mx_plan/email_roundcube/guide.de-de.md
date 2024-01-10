@@ -292,15 +292,15 @@ Um eine Antwort hinzuzufügen, klicken Sie unten in der Spalte `Schnellantworten
 > 
 > "Schnellantworten" sind immer im Textformat verfasst.
 
-### Eine automatische Antwort oder einen Beantworter hinzufügen
+### Auto-Responder hinzufügen
 
-Sie möchten Ihrer E-Mail-Adresse eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind. Diese Funktion kann nicht über Webmail, sondern über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihrer E-Mail-Adressen aktiviert werden. Lesen Sie unsere Anleitung "[Einen Beantworter für seine E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+Um Ihrem E-Mail-Account eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind, kann ein Auto-Responder genutzt werden. Diese Funktion kann aber nicht im Webmail, sondern nur im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihrer E-Mail-Accounts aktiviert werden. Lesen Sie unsere Anleitung "[Einrichten von Auto-Antworten für E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
-### Passwort Ihrer E-Mail-Adresse ändern
+### Passwort Ihres E-Mail-Accounts ändern
 
-Um das Passwort Ihrer E-Mail-Adresse zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihrer E-Mail-Adressen ein. Lesen Sie unsere Anleitung "[Passwort einer E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+Um das Passwort Ihres E-Mail-Accounts zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihres E-Mail-Accounts ein. Lesen Sie unsere Anleitung "[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
-### E-Mail Redaktion
+### E-Mail verfassen
 
 Klicken Sie im Tab `E-Mail`{.action} im oberen Menü auf `Verfassen`{.action}.
 
