@@ -314,20 +314,67 @@ spec:
 
 ### Features
 #### Resize your LoadBalancer //TODO (sample on github)
-#### [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
+There is no proper way to 'resize' your loadbalancer yet (work in progress). The best alternative to change the flavor, is to recreate a new Kubernetes Service that will use the same public IP than the previous one.
+You can find the HowTo and example on our public Github: https://github.com/ovh/public-cloud-examples
+
+
+- First, make sure that the existing service is using the `loadbalancer.openstack.org/keep-floatingip` annotation, if not the public floating IP will be released. (It can be added after the service creation).
+- Get the public IP of your existing service
+```shell
+$ kubectl get service my-small-lb
+NAME                 TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)        AGE
+test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP   12m
+```
+- Create a new service  with the new expected flavor:
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: my-medium-lb
+    annotations:
+      loadbalancer.ovhcloud.com/class: "octavia"
+      loadbalancer.ovhcloud.com/flavor: "medium"
+    labels:
+      app: demo-upgrade
+  spec:
+    loadBalancerIP: 141.94.215.240 # Use the IP address from the previous service
+    ports:
+    - name: client
+      port: 80
+      protocol: TCP
+      targetPort: 80
+    selector:
+      app: nginx
+    type: LoadBalancer
+    ```
+- Until the deletion of the previous service, this Service will only deploy the LoadBalancer without a floating IP.
+- When the Floating IP is available (the deletion of the initial LB service will unbound the IP), the floating ip will be attach to this new LB.
+
+> [!warning]
+>
+> Changing the flavor will create some outage.
+>
+
+
 #### [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
 ####  [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip)
 
 
-#### Migrate from LoadBalancer for Managed Kubenertes to Public Load Balancer //TODO
-- Migration from IOLB to Octavia : Warning, it is not possible to keep existing public IP //TODO
-- modop (annotation Octavia) -> replacer 'iolb' par 'Octavia'
+#### Migrate from LoadBalancer for Managed Kubernetes to Public Load Balancer //TODO
+(Migration from IOLB to Octavia)
+> [!warning]
+>
+> It is not possible to keep the existing public IP
+>
 
-## Ressources Naming //TODO
-Explication sur le nomage des ressources créés par Octavia / LB name
+- How to: change annotation lb/class from 'iolb' par 'Octavia'
+
+## Ressources Naming //TODO , WIP
+Explain how ressource created by LB are named.
 
 
 ## Others resources
+- [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
 - [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
 - [OVHcloud Load Balancer concept](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 
