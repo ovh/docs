@@ -39,6 +39,14 @@ As an example, this video shows how to easily scale the number of instances whil
 >
 > Since the names of official images may change, it is best to use their IDs in your installation scripts.
 
+### Token creation
+
+Besides the API end-point, the required keys are the application_key, the application_secret, and the consumer_key. These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+
+![token](images/example_create_token.png){.thumbnail}
+
+![token created](images/create_token.png){.thumbnail}
+
 ### Creating the Terraform environment
 
 After the Terraform installation, create a directory for all text files that will describe your infrastructure:
