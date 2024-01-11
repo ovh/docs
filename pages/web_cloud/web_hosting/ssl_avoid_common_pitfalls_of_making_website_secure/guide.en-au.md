@@ -1,7 +1,7 @@
 ---
 title: Avoid the common pitfalls of making your website secure with SSL
 excerpt: Avoid the common pitfalls of making your website secure with SSL
-updated: 2020-05-05
+updated: 2024-01-11
 ---
 
 ## Mixed content

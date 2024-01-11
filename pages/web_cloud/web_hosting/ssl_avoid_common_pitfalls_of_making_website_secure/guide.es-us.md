@@ -1,7 +1,7 @@
 ---
 title: Evitar las trampas del SSL en un sitio web
 excerpt: Evitar las trampas del SSL en un sitio web
-updated: 2020-05-05
+updated: 2024-01-11
 ---
 
 ## El contenido mixto

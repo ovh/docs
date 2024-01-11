@@ -1,7 +1,7 @@
 ---
 title: 'Wdrożenie certyfikatu SSL na istniejącej stronie WWW'
 excerpt: 'Dowiedz się, na co zwrócić uwagę przy wdrożeniu certyfikatu SSL na stronie internetowej'
-updated: 2020-05-05
+updated: 2024-01-11
 ---
 
 ## Wprowadzenie 

@@ -1,7 +1,7 @@
 ---
 title: Evitar os erros comuns de SSL no meu website
 excerpt: Evitar os erros comuns de SSL no meu website
-updated: 2020-05-05
+updated: 2024-01-11
 ---
 
 ## O 'mixed content'
