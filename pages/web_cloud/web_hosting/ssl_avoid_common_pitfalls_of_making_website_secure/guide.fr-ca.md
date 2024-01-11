@@ -1,7 +1,7 @@
 ---
 title: "Erreurs courantes liées à la sécurisation de votre site web avec le SSL"
 excerpt: "Découvrez comment éviter les erreurs courantes de sécurisation de son site web avec le SSL"
-updated: 2024-01-10
+updated: 2024-01-11
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ Retrouvez, dans ce tutoriel, quelques exemples de situations concernant la sécu
 
 - Posséder un [hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Avoir enregistré au moins un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
-- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie « Web ».
+- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie « Web cloud ».
 
 ## En pratique
 
