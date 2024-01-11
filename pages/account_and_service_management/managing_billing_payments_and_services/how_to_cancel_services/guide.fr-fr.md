@@ -68,45 +68,29 @@ La résiliation de votre service aura lieu à la **date d'effet** indiquée dans
 
 #### E-mail MX Plan <a name="mxplan"></a>
 
-La plupart des services MX Plan sont liés à un hébergement ou un nom de domaine. A ce titre, un service MX Plan ne peut pas être résilié indépendamment de l'offre à laquelle il est lié.
+La plupart des services MX Plan sont liés à un hébergement. Si c'est le cas et que vous souhaitez supprimer cette option e-mail, suivez [les instructions de ce guide](/pages/web_cloud/web_hosting/activate-email-hosting/#suppression-de-loffre-e-mail-liee-a-votre-hebergement-web). **Attention**, la suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes et n'octroie aucun remboursement.
 
-Seule une offre e-mail MX Plan commandée indépendamment de tout hébergement ou nom de domaine peut être résiliée via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) en suivant [la procédure détaillée ci-dessus](#terminate).
-
-Pour tout autre service MX Plan (lié à un hébergement ou un nom de domaine), vous pouvez toutefois demander la suppression de l'offre. **Veuillez noter que l'action de supprimer un MX Plan est définitive et n'octroie aucun remboursement.**
-
-Pour supprimer votre offre [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à supprimer puis sur `Supprimer immédiatement le MX Plan`{.action}.
-
-Précisez les raisons de votre demande de suppression puis cliquez sur `Valider`{.action}.
-
-Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors envoyé, vous permettant de valider la suppression immédiate.
-
-> [!warning]
->
-> La suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes. 
-> Pour rappel, l'action de supprimer un MX Plan n'octroie aucun remboursement.
->
+Si votre offre e-mail MX Plan a été commandée indépendamment de tout hébergement, suivez [la procédure détaillée ci-dessus](#terminate).
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#supprimer-un-compte).
+Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#supprimer-un-compte).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes).
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes).
 
 #### Private Exchange <a name="private"></a>
 
-Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes_1).
+Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gerer-vos-abonnements).
+Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gerer-vos-abonnements).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerer-vos-abonnements).
+Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerer-vos-abonnements).
 
 #### Sharepoint <a name="sharepoint"></a>
 
@@ -153,11 +137,11 @@ Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instr
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de ce [guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
+Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de [ce guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 
