@@ -1,7 +1,7 @@
 ---
 title: Comment résilier vos services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
-updated: 2023-12-29
+updated: 2024-01-11
 ---
 
 ## Objectif
@@ -45,9 +45,11 @@ La procédure de résiliation est identique pour la majorité des services OVHcl
 
 Pour résilier l'abonnement à votre service, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
 
-![produits et services](images/products-services.png){.thumbnail}
+![produits et services](images/products-services-fr.png){.thumbnail}
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
+
+![résilier](images/cancel-fr.png){.thumbnail}
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
@@ -60,17 +62,21 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 La résiliation de votre service aura lieu à la **date d'effet** indiquée dans le tableau « Mes services ». Si vous ne voyez pas le statut « Résiliation demandée » apparaître, rafraîchissez la page.
 
-![demande de résiliation](images/cancellation-request.png){.thumbnail}
+![demande de résiliation](images/cancellation-request-fr.png){.thumbnail}
 
 ### Cas particuliers <a name="specific-cases"></a>
 
 #### E-mail MX Plan <a name="mxplan"></a>
 
-Une offre MX Plan n'est pas soumise à un abonnement périodique. Elle ne peut donc pas faire l'objet d'une résiliation mais, si tel est votre souhait, vous pouvez supprimer votre offre.
+La plupart des services MX Plan sont liés à un hébergement ou un nom de domaine. A ce titre, un service MX Plan dépendant d'une de ces offres ne peut pas être résilié indépendamment.
+
+Seule une offre e-mail MX Plan commandée indépendamment de tout hébergement ou nom de domaine peut être résiliée via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) en suivant [la procédure détaillée ci-dessus](#terminate).
+
+Pour tout autre service MX Plan (lié à un hébergement ou un nom de domaine), vous pouvez toutefois demander la suppression de l'offre. Veuillez noter que l'action de supprimer un MX Plan n'octroie aucun remboursement.
 
 Pour supprimer votre offre [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
 
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier puis sur `Supprimer immédiatement le MX Plan`{.action}.
+Cliquez ensuite sur le bouton `...`{.action} à droite du service à supprimer puis sur `Supprimer immédiatement le MX Plan`{.action}.
 
 Précisez les raisons de votre demande de suppression puis cliquez sur `Valider`{.action}.
 
@@ -78,7 +84,8 @@ Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors 
 
 > [!warning]
 >
-> La suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes. L'action de supprimer un MX Plan n'octroie aucun remboursement.
+> La suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes. 
+> Pour rappel, l'action de supprimer un MX Plan n'octroie aucun remboursement.
 >
 
 #### E-mail Pro <a name="emailpro"></a>
@@ -154,9 +161,11 @@ Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/ente
 
 #### Public Cloud <a name="publiccloud"></a>
 
-Chaque service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) peut être supprimé en cliquant sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
+Chaque service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
 
-![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
+Sélectionnez un service à gauche, cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
+
+![public cloud instance deletion](images/pci-deletion-fr.png){.thumbnail}
 
 Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (retrouvez plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
@@ -173,7 +182,7 @@ Pour annuler une demande de résiliation, connectez-vous à votre [espace client
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
 
-![cancel_termination](images/cancel_termination.png){.thumbnail}
+![cancel_termination](images/cancel_termination-fr.png){.thumbnail}
 
 Enfin, cliquez sur `Confirmer l'annulation`{.action}.
 
