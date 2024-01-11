@@ -21,7 +21,7 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 - You must have a [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}.
 - at least one [domain name](https://www.ovhcloud.com/en-au/domains/){.external}.
-- access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, in the “Web” section.
+- access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, in the "Web cloud" section.
 
 ## Instructions
 

@@ -25,7 +25,7 @@ In dieser Anleitung finden Sie einige Beispiele für Situationen, in denen Sie I
 
 - Sie besitzen ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
 - Sie haben mindestens eine [Domain](https://www.ovhcloud.com/de/domains/){.external} registriert.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, Teil „Web“.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, Teil „Web cloud“.
 
 ## In der praktischen Anwendung
 
