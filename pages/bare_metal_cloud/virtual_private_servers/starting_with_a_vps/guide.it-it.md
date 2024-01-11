@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un VPS
 excerpt: Come gestire un VPS dallo Spazio Cliente OVHcloud e scopri gli step iniziali del suo utilizzo, incluse le connessioni remote e le misure di sicurezza
-updated: 2023-11-13
+updated: 2024-01-10
 ---
 
 > [!primary]
@@ -27,6 +27,8 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 ### Interfaccia del Pannello di controllo
 
 La scheda `Home`{.action} contiene informazioni importanti sul tuo servizio e ti permette di effettuare operazioni essenziali.
+
+![VPS Home](images/vpshome.png){.thumbnail}
 
 #### Il tuo VPS <a name="yourvps"></a>
 
@@ -129,7 +131,7 @@ Nello Spazio Cliente viene visualizzato un indicatore di stato dell’installazi
 
 ### Riavvio del VPS <a name="reboot-current-range"></a>
 
-Potrebbe essere necessario riavviare il sistema per applicare configurazioni aggiornate o risolvere un problema. Se possibile, riavviare il software dall'interfaccia grafica del server o dalla riga di comando:
+Potrebbe essere necessario riavviare il sistema per applicare configurazioni aggiornate o risolvere un problema. Se possibile, riavviare il software dall'interfaccia grafica del server (Windows, Plesk, ecc.) o dalla riga di comando:
 
 ```bash
 sudo reboot

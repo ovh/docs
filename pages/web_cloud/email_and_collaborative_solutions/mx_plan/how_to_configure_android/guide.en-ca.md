@@ -1,5 +1,5 @@
 ---
-title: "MXplan - Configuring an email address in Gmail for Android"
+title: "MX Plan - Configuring an email address in Gmail for Android"
 excerpt: "Find out how to configure an MX Plan email address on Android, via the Gmail app"
 updated: 2023-12-15
 ---
@@ -169,6 +169,6 @@ To understand the difference between POP and IMAP, we will break down the elemen
 
 ## Go further
 
-[Configuring an Exchange account on Android via the Gmail app](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
+[Configuring an Exchange account on Android via the Gmail app](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)
 
 Join our community of users on <https://community.ovh.com/en/>.

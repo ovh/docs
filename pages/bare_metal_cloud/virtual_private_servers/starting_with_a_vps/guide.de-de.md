@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2022-03-25
+updated: 2024-01-10
 ---
 
 > [!primary]
@@ -27,6 +27,8 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 ### Kundencenter Interface
 
 Der Tab `Start`{.action} enthält wichtige Informationen zu Ihrem Dienst und ermöglicht Ihnen die Durchführung grundlegender Operationen.
+
+![VPS Home](images/vpshome.png){.thumbnail}
 
 #### Ihr VPS <a name="yourvps"></a>
 
@@ -129,7 +131,7 @@ Eine Fortschrittsanzeige für die Installation wird in Ihrem Kundencenter angeze
 
 ### Neustart Ihres VPS <a name="reboot-current-range"></a>
 
-Möglicherweise ist ein Neustart erforderlich, um aktualisierte Konfigurationen anzuwenden oder ein Problem zu beheben. Wenn möglich, führen Sie einen "Soft Reboot" des Servers über die grafische Benutzeroberfläche des Servers oder die Befehlszeile aus:
+Möglicherweise ist ein Neustart erforderlich, um aktualisierte Konfigurationen anzuwenden oder ein Problem zu beheben. Wenn möglich, führen Sie einen "Soft Reboot" des Servers über die grafische Benutzeroberfläche des Servers (Windows, Plesk, etc.) oder die Befehlszeile aus:
 
 ```bash
 sudo reboot
