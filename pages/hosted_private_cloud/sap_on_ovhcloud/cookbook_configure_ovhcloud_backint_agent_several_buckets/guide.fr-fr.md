@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3"
 excerpt: "Ce guide fournit des instructions générales pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage S3"
-updated: 2024-01-04
+updated: 2024-01-11
 ---
 
 ## Objectif
@@ -40,7 +40,7 @@ OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retr
 
 Le versioning des buckets Object Storage S3 doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent. Le versioning permet de garder plusieurs versions d'un même objet dans vos buckets Object Storage S3.
 
-Dans le cas des sauvegardes SAP HANA, le versioning vous permet de réaliser plusieurs sauvegardes avec le même nom, comme par exemple « COMPLETE_DATA_BACKUP » et de garder la possibilité de restaurer une version spécifique de la sauvegarde « COMPLETE_DATA_BACKUP ». Si le versioning n'est pas activé, seule la dernière version de la sauvegarde « COMPLETE_DATA_BACKUP » peut être restaurée.
+Dans le cas des sauvegardes SAP HANA, le versioning vous permet de réaliser plusieurs sauvegardes avec le même nom (comme par exemple « COMPLETE_DATA_BACKUP ») et de garder la possibilité de restaurer une version spécifique de la sauvegarde « COMPLETE_DATA_BACKUP ». Si le versioning n'est pas activé, seule la dernière version de la sauvegarde « COMPLETE_DATA_BACKUP » peut être restaurée.
 
 Pour vérifier si le versioning est activé sur vos buckets Object Storage S3, exécutez la commande suivante :
 
@@ -90,7 +90,7 @@ multipart_chunksize = 1GB
 multipart_threshold = 1GB
 ```
 
-Les paramètres `multipart_chunksize` et `multipart_threshold` acceptent les valeurs en bytes (exemple 52428800 équivaut à 50MB), en KB, en GB et en TB. Si l'unité de mesure n'est pas indiquée, l'unité par défaut est le byte.
+Les paramètres `multipart_chunksize` et `multipart_threshold` acceptent les valeurs en bytes (exemple : 52428800 équivaut à 50MB), en KB, en GB et en TB. Si l'unité de mesure n'est pas indiquée, l'unité par défaut est le byte.
 
 - Le paramètre `multipart_threshold` permet le déclenchement de l'envoi de l'objet en plusieurs parties (multipart).
 - Le paramètre `multipart_chunksize` spécifie la taille des parties de l'objet à envoyer.
@@ -117,7 +117,7 @@ multipart_threshold = 1GB
 
 >[!warning]
 >
-> Les commandes qui vont suivre vont modifier la configuration de sauvegarde de votre base de données SAP HANA, veillez à exécutez ces commandes avec précaution.
+> Les commandes qui vont suivre vont modifier la configuration de sauvegarde de votre base de données SAP HANA, veillez à exécuter ces commandes avec précaution.
 >
 > Il est également conseillé de réaliser une sauvegarde complète de votre base de données SAP HANA après la modification de la configuration, dans le but de valider cette dernière.
 >
