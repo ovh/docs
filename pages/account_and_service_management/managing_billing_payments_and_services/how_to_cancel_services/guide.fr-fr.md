@@ -68,11 +68,11 @@ La résiliation de votre service aura lieu à la **date d'effet** indiquée dans
 
 #### E-mail MX Plan <a name="mxplan"></a>
 
-La plupart des services MX Plan sont liés à un hébergement ou un nom de domaine. A ce titre, un service MX Plan dépendant d'une de ces offres ne peut pas être résilié indépendamment.
+La plupart des services MX Plan sont liés à un hébergement ou un nom de domaine. A ce titre, un service MX Plan ne peut pas être résilié indépendamment de l'offre à laquelle il est lié.
 
 Seule une offre e-mail MX Plan commandée indépendamment de tout hébergement ou nom de domaine peut être résiliée via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) en suivant [la procédure détaillée ci-dessus](#terminate).
 
-Pour tout autre service MX Plan (lié à un hébergement ou un nom de domaine), vous pouvez toutefois demander la suppression de l'offre. Veuillez noter que l'action de supprimer un MX Plan n'octroie aucun remboursement.
+Pour tout autre service MX Plan (lié à un hébergement ou un nom de domaine), vous pouvez toutefois demander la suppression de l'offre. **Veuillez noter que l'action de supprimer un MX Plan est définitive et n'octroie aucun remboursement.**
 
 Pour supprimer votre offre [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
 
