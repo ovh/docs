@@ -30,11 +30,12 @@ Our Public Cloud Load Balancer is relying on Openstack Octavia project, this pro
 | 1.27>=      |  
 
 #### Network topologie to expose your Load Balancers publicly   //à reformuler
-- If you plan to expose your Load Balancer publicly, in order to attach a FloatingIP to your Load Balancer, an OVHcloud Gateway (an Openstack router) is mandatory on the subnet hosting your Load Balancer.
-For such use case we do recommend to create your MKS clusters on a network and subnet using our OVHcloud Gateway. For existing clusters, if:
-    - **The Subnet's GatewayIP is already an OVHcloud Gateway**, nothing needs to be done. The current Openstack Router will be used.
-    - **The subnet doest not have an IP reserved for a Gateway** --> You will have to provide/create a compatible subnet. You can edit the existing subnet (modop CLI Openstack/Horizon) or use another dedicated subnet (doc LoadBalancerSubnetID)//TODO
-    - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)** --> You will have to provide/create a compatible subnet. To do so you select another dedicated subnet (doc LoadBalancerSubnetID)//TODO
+If you plan to expose your Load Balancer publicly, in order to attach a FloatingIP to your Load Balancer, an OVHcloud Gateway (an Openstack router) is mandatory on the subnet hosting your Load Balancer.
+For such use case we do recommend to create your MKS clusters on a network and subnet using our OVHcloud Gateway.
+For existing clusters, if:
+- **The Subnet's GatewayIP is already an OVHcloud Gateway**, nothing needs to be done. The current Openstack Router will be used.
+- **The subnet doest not have an IP reserved for a Gateway** --> You will have to provide/create a compatible subnet. You can edit the existing subnet (modop CLI Openstack/Horizon) or use another dedicated subnet (doc LoadBalancerSubnetID)//TODO
+- **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)** --> You will have to provide/create a compatible subnet. To do so you select another dedicated subnet (doc LoadBalancerSubnetID)//TODO
 
 
 ## Limitations
@@ -66,14 +67,14 @@ Here's a simple example of how to use the Public Cloud Load Balancer
 ```shell
 kubectl create deployment test-octavia --image=nginx
 ```
-4. Copy/Paste the following code on a file named `test-octavia-todel.yaml`
+4. Copy/Paste the following code on a file named `test-lb-todel.yaml`
 ```yaml
 apiVersion: v1
 kind: Service
 metadata:
   labels:
     app: test-octavia
-  name: test-octavia-todel
+  name: test-lb-todel
   namespace: default
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia"
@@ -90,13 +91,13 @@ spec:
 ```
 6. Create a 'service' using the following command:
 ```shell
-kubectl create service test-octavia-todel -f test-octavia-todel.yaml
+kubectl create service test-lb-todel -f test-lb-todel.yaml
 ```
 7. Retrieve service IP address using the following command line:
 ```shell
-$ kubectl get service test-octavia-todel
+$ kubectl get service test-lb-todel
 NAME                 TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)        AGE
-test-octavia-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP   12m
+test-lb-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP   12m
 ```
 8. Open a web browser and access: http://IP-retrieved-in-prevous-step
 
@@ -104,23 +105,81 @@ test-octavia-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 
 ## Use cases
 
-### Public-to-Public (you are using a public Managed Kubernetes Cluster)
+You can find a set a examples on how to use our Public Cloud Load Balancer with Managed Kubernetes Service (MKS) on our dedicated Github repository https://github.com/ovh/public-cloud-examples
+
+#### Public-to-Public (you are using a public Managed Kubernetes Cluster)
+//TODO
 
 
+#### Public to Private (your cluster is attached to a private network/subnet)
+In a public-to-private scenario you will use your Load Balance to publicly expose app that are hosted on your Managed Kubernetes Cluster. Main benefit is that your Kubernetes nodes does not need to be exposed on internet and have and public floating IP attached.
 
-### Public to Private (your cluster is attached to a private network/subnet)
+Service example:
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-lb-service
+  annotations:
+    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/flavor: "medium"
+  labels:
+    app: test-octavia
+spec:
+  ports:
+  - name: client
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx
+  type: LoadBalancer
+```
 
 
+#### Private to Private
+In a private-to-private scenario your Load Balancer is not exposed publicly, it might be useful if you want to expose your containerized service inside you OVHcloud private network.
 
-### Private to Private
+Service example:
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-lb-service
+  annotations:
+    loadbalancer.ovhcloud.com/class: "octavia"
+    service.beta.kubernetes.io/openstack-internal-load-balancer: "true"
+  labels:
+    app: test-octavia
+spec:
+  ports:
+  - name: client
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx
+  type: LoadBalancer
+```
 
 
+## Supported Annotations & Features
 
-## Supported Features/Annotations
+### Service annotations
 
-- `loadbalancer.openstack.org/flavor`
+- `loadbalancer.ovhcloud.com/class`
+
+  During the Beta phase it is mandatory to specify the class of the load balancer you want to create.
+  Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer for Managed Kubernetes Service (will be deprecated in futur versions). Default value is 'iolb'.
+
+- `loadbalancer.ovhcloud.com/flavor:`
 
   Not a standard Openstack Octavia annotations (specific to OVHcloud). The size used for creating the loadbalancer, specifications can be found [here](https://www.ovhcloud.com/fr/public-cloud/load-balancer/). Authorized values => `small`,`medium`,`large`. Default is 'small'
+
+- `service.beta.kubernetes.io/openstack-internal-load-balancer`
+
+  If 'true', the loadbalancer VIP won't be associated with a floating IP. Default is 'false'.
+
 
 - `loadbalancer.openstack.org/subnet-id`
 
@@ -154,27 +213,23 @@ test-octavia-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 
   **Not supported**. If you want perform Layer 7 load balancing we do recommend to use the official Octavia Ingress-controller: https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md  
 
-- `loadbalancer.openstack.org/timeout-client-data` //SUPPORTED
+- `loadbalancer.openstack.org/timeout-client-data`
 
-  Frontend client inactivity timeout in milliseconds for the load balancer.
+  Frontend client inactivity timeout in milliseconds for the load balancer. Default value (ms) = 50000.
 
-- `loadbalancer.openstack.org/timeout-member-connect` //SUPPORTED
+- `loadbalancer.openstack.org/timeout-member-connect`
 
-  Backend member connection timeout in milliseconds for the load balancer.
+  Backend member connection timeout in milliseconds for the load balancer. Default value (ms) = 5000.
 
-- `loadbalancer.openstack.org/timeout-member-data` //SUPPORTED
+- `loadbalancer.openstack.org/timeout-member-data`
 
-  Backend member inactivity timeout in milliseconds for the load balancer.
+  Backend member inactivity timeout in milliseconds for the load balancer. Default value (ms) = 50000.
 
-- `loadbalancer.openstack.org/timeout-tcp-inspect` //SUPPORTED
+- `loadbalancer.openstack.org/timeout-tcp-inspect`
 
-  Time to wait for additional TCP packets for content inspection in milliseconds for the load balancer.
+  Time to wait for additional TCP packets for content inspection in milliseconds for the load balancer. Default value (ms) = 0.
 
-- `service.beta.kubernetes.io/openstack-internal-load-balancer` //SUPPORTED
-
-  If 'true', the loadbalancer VIP won't be associated with a floating IP. Default is 'false'. This annotation is ignored if only internal Service is allowed to create in the cluster.
-
-- `loadbalancer.openstack.org/enable-health-monitor` /SUPPORTED
+- `loadbalancer.openstack.org/enable-health-monitor`
 
   Defines whether to create health monitor for the load balancer pool, if not specified, default value is True. The health monitor can be created or deleted dynamically. A health monitor is required for services with `externalTrafficPolicy: Local`.
 
@@ -190,27 +245,11 @@ test-octavia-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 
   Defines the health monitor retry count for the loadbalancer pool members. Default value = 1
 
-- `loadbalancer.openstack.org/health-monitor-max-retries-down` //NOT SUPPORTED YET
-
-  Defines the health monitor retry count for the loadbalancer pool members to be marked down.
-
 - `loadbalancer.openstack.org/flavor-id`
 
-  The id of the flavor that is used for creating the loadbalancer.
+  The id of the flavor that is used for creating the loadbalancer. Not useful as we provide `loadbalancer.ovhcloud.com/flavor`
 
-- `loadbalancer.openstack.org/availability-zone` //NOT SUPPORTED
-
-  The name of the loadbalancer availability zone to use. It is ignored if the Octavia version doesn't support availability zones yet.
-
-- `loadbalancer.openstack.org/default-tls-container-ref` // NOT SUPPORTED
-
-  Reference to a tls container. This option works with Octavia, when this option is set then the cloud provider will create an Octavia Listener of type `TERMINATED_HTTPS` for a TLS Terminated loadbalancer.
-  Format for tls container ref: `https://{keymanager_host}/v1/containers/{uuid}`
-
-  When `container-store` parameter is set to `external` format for `default-tls-container-ref` could be any string.
-
-
-- `loadbalancer.openstack.org/load-balancer-id` //SUPPORTED
+- `loadbalancer.openstack.org/load-balancer-id`
 
   This annotation is automatically added to the Service if it's not specified when creating. After the Service is created successfully it shouldn't be changed, otherwise the Service won't behave as expected.
 
@@ -227,9 +266,22 @@ test-octavia-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
   This annotation is automatically added and it contains the floating ip address of the load balancer service.
   When using `loadbalancer.openstack.org/hostname` annotation it is the only place to see the real address of the load balancer.
 
+//
+// NOT SUPPORTED YET
+//
+
+- `loadbalancer.openstack.org/health-monitor-max-retries-down` //NOT SUPPORTED YET
+
+  Defines the health monitor retry count for the loadbalancer pool members to be marked down.
+
+- `loadbalancer.openstack.org/availability-zone` //NOT SUPPORTED
+
+  The name of the loadbalancer availability zone to use. It is ignored if the Octavia version doesn't support availability zones yet.
+
+
 
 //
-// NOT SUPPORTED, TO BE REMOVED FROM THE DOC
+// NOT REVELANT or NOT SUPPORTED, TO BE REMOVED FROM THE DOC
 //
 - `loadbalancer.openstack.org/floating-network-id`   //NOT SUPPORTED on OVH
 
@@ -251,7 +303,23 @@ test-octavia-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 - `loadbalancer.openstack.org/class` //NOT SUPPORTED on OVH
 
   The name of a preconfigured class in the config file. If provided, this config options included in the class section take precedence over the annotations of floating-subnet-id, floating-network-id, network-id, subnet-id and member-subnet-id . See the section below for how it works.
-## Migrate from LoadBalancer for Managed Kubenertes to Public Load Balancer //TODO
+
+
+- `loadbalancer.openstack.org/default-tls-container-ref` // NOT SUPPORTED
+
+  Reference to a tls container. This option works with Octavia, when this option is set then the cloud provider will create an Octavia Listener of type `TERMINATED_HTTPS` for a TLS Terminated loadbalancer.
+  Format for tls container ref: `https://{keymanager_host}/v1/containers/{uuid}`
+
+  When `container-store` parameter is set to `external` format for `default-tls-container-ref` could be any string.
+
+### Features
+#### Resize your LoadBalancer //TODO (sample on github)
+#### [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
+#### [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
+####  [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip)
+
+
+#### Migrate from LoadBalancer for Managed Kubenertes to Public Load Balancer //TODO
 - Migration from IOLB to Octavia : Warning, it is not possible to keep existing public IP //TODO
 - modop (annotation Octavia) -> replacer 'iolb' par 'Octavia'
 
@@ -260,17 +328,13 @@ Explication sur le nomage des ressources créés par Octavia / LB name
 
 
 ## Others resources
-- Resize your LoadBalancer //TODO (sample on github)
-- [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
-- [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
-- [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip)
 - [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
 - [OVHcloud Load Balancer concept](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 
 
 ## Go further
 
-Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra) to find how to connect to your database with several languages. //NOT EXISTING FOR MKS, TO BE CREATED
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra) . //NOT EXISTING FOR MKS, TO BE CREATED
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
