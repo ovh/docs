@@ -49,7 +49,7 @@ As ferramentas de depuração fornecidas por *Mozilla Firefox* e *Google Chrome*
 
 ### Conteúdo duplicado (duplicate content)
 
-"duplicar conteúdo" significa ter o mesmo conteúdo em vários URLs diferentes. Os motores de busca encaram isto como uma tentativa de melhorar o referenciamento (SEO). Assim, penalizam os websites cujo conteúdo é duplicado.
+"Duplicar conteúdo" significa ter o mesmo conteúdo em vários URLs diferentes. Os motores de busca encaram isto como uma tentativa de melhorar o referenciamento (SEO). Assim, penalizam os websites cujo conteúdo é duplicado.
 
 Para evitar este tipo de situação, sugerimos que, quando o website funciona corretamente em "HTTPS", reencaminhe o conteúdo "HTTP" para "HTTPS". Isto permitirá que os seus visitantes sejam automaticamente reencaminhados para o endereço do seu conteúdo web em "HTTPS" e que apenas um endereço esteja disponível para esse mesmo conteúdo. 
 

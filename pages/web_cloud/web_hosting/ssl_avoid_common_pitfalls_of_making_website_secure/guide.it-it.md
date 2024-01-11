@@ -16,7 +16,7 @@ Questo tutorial contiene alcuni esempi di situazioni in cui proteggere il sito W
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 **Questa guida ti mostra come evitare i comuni errori di protezione del tuo sito Web con SSL**
@@ -53,7 +53,7 @@ Gli strumenti di debug disponibili in *Mozilla Firefox* e *Google Chrome* posson
 
 Per evitare situazioni di questo tipo, ti consigliamo di reindirizzare il contenuto "HTTP" verso "HTTPS" quando il sito funziona correttamente in "HTTPS". In questo modo i tuoi visitatori saranno automaticamente reindirizzati verso l’indirizzo del tuo contenuto Web in "HTTPS" e sarà disponibile un solo indirizzo per lo stesso contenuto. 
 
-Ecco un esempio di reindirizzamento che potete aggiungere a un file "[.htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)", alla radice del vostro sito web (sostituendo il vostro URL *https://www.yourdomain.tld*):
+Ecco un esempio di reindirizzamento che potete aggiungere a un file "[.htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)", alla radice del vostro sito web (sostituendo l'URL *https://www.yourdomain.tld* con il vostro):
 
 ```
 RewriteEngine On
