@@ -1,7 +1,6 @@
 ---
-title: 'DMZ &#58; couplage OverTheBox avec un autre routeur'
-keywords: 'DMZ, Routeur'
-description: 'DMZ &#58; couplage OverTheBox avec un autre routeur'
+title: 'Utiliser votre propre routeur pour OverTheBox'
+excerpt: 'Découvrez comment configurer un autre routeur pour OverTheBox en créant une DMZ'
 updated: 2021-11-26
 ---
 

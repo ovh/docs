@@ -1,7 +1,6 @@
 ---
 title: 'FAQ OverTheBox'
-keywords: 'FAQ OverTheBox'
-description: 'FAQ OverTheBox'
+excerpt: 'Foire aux questions concernant OverTheBox'
 updated: 2021-05-17
 ---
 

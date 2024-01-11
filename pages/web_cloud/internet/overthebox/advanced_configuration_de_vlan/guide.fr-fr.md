@@ -1,8 +1,6 @@
 ---
-title: 'Configuration de VLAN'
-keywords: VLAN
-description: 'Configuration de VLAN'
-excerpt: 'Nous allons vous présenter comment créer un vlan, par exemple vlan 666'
+title: 'Configurer un VLAN sur OverTheBox'
+excerpt: 'Découvrez comment créer un VLAN sur votre OverTheBox'
 updated: 2021-04-13
 ---
 
