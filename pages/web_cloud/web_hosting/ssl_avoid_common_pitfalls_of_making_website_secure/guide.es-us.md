@@ -16,16 +16,16 @@ En este tutorial encontrará algunos ejemplos de situaciones relativas a la segu
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
 >
 
 **Descubra cómo evitar los errores habituales de seguridad de su sitio web con el SSL**
 
 ## Requisitos
 
-- Tener un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Haber registrado al menos un [dominio](https://www.ovhcloud.com/es-es/domains/){.external}.
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, parte "Web".
+- Tener un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Haber registrado al menos un [dominio](https://www.ovhcloud.com/es/domains/){.external}.
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, parte "Web".
 
 ## Procedimiento
 
@@ -63,6 +63,6 @@ RewriteRule ^(.*)$ https://www.yourdomain.tld/$1 [R,L]
 
 ## Más información <a name="go-further"></a>
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
