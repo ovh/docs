@@ -10,18 +10,18 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
-> 
-> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
-**Find out how to avoid common website security errors with SSL**
+**This guide explains how to avoid common website security errors with SSL.**
 
 ## Requirements
 
-- You must have a [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}.
-- at least one [domain name](https://www.ovhcloud.com/en-gb/domains/){.external}.
-- access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the "Web cloud" section.
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- At least one [domain name](https://www.ovhcloud.com/en-gb/domains/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the "Web Cloud" section
 
 ## Instructions
 
@@ -29,14 +29,14 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 Does your website not load external elements, such as the *Facebook* and *Twitter* buttons? Do interactions on your web pages not work the same way as when you access your website in HTTP? This is probably because your website contains mixed content. 
 
-In recent years, browsers such as *Google Chrome*, *Mozilla Firefox* and *Internet Explorer* have prevented websites with "HTTPS" from loading page elements if they are accessible via a URL with "HTTP". This is so that the confidentiality provided by the HTTPS protocol is not compromised by an element loaded with HTTP. 
+In recent years, browsers such as *Google Chrome*, *Mozilla Firefox* and *Internet Explorer* have prevented websites with HTTPS from loading page elements if they are accessible via a URL with HTTP. This is so that the confidentiality provided by the HTTPS protocol is not compromised by an element loaded with HTTP. 
 
-In most cases, these are external scripts, from other websites such as social networks. In this case, you just need to replace the URLs in "HTTP" with URLs in "HTTPS" in your scripts to load these scripts.
+In most cases, these are external scripts, from other websites such as social networks. In this case, you just need to replace the URLs in HTTP with URLs in HTTPS in your scripts to load these scripts.
 
 > [!primary]
 >
-> Some websites use [Content Delivery Network (CDN)](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) to host, for example, *Javascript* libraries (such as *JQuery*). 
-> If the CDN delivers the library with a URL in "HTTP", your website may be affected by the **mixed content**. 
+> Some websites use a [Content Delivery Network (CDN)](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) to host, for example, *Javascript* libraries (such as *JQuery*). 
+> If the CDN delivers the library with a URL in HTTP, your website may be affected by **mixed content**. 
 >
 
 How do I know if my website is affected?
@@ -45,11 +45,11 @@ The debugging tools provided by *Mozilla Firefox* and *Google Chrome* can tell y
 
 ### Duplicate content
 
-Duplicating content means having the same content on multiple different URLs. Search engines see this as an attempt to improve SEO. This means that websites with duplicate content are penalized.
+Duplicating content means having the same content on multiple different URLs. Search engines see this as an attempt to improve SEO. This means that websites with duplicate content are penalised.
 
-To avoid this type of situation, when your website works properly in HTTPS, we recommend redirecting the content from HTTP to HTTPS. This will allow your visitors to be automatically redirected to the address of your web content in “HTTPS” and only one address will be available for this same content. 
+To avoid this type of situation, when your website works properly in HTTPS, we recommend redirecting the content from HTTP to HTTPS. This will allow your visitors to be automatically redirected to the address of your web content in HTTPS and only one address will be available for this same content. 
 
-Here is an example of a redirection that you can add in a file "[.htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)", at the root of your website (by replacing the URL *https://www.yourdomain.tld* with your own):
+Here is an example of a redirection that you can add to the file "[.htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)", at the root of your website (by replacing the URL *https://www.yourdomain.tld* with your own):
 
 ```
 RewriteEngine On
