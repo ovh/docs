@@ -1,7 +1,7 @@
 ---
 title: "Typowe błędy związane z zabezpieczaniem strony www za pomocą certyfikatu SSL"
 excerpt: "Dowiedz się, jak uniknąć typowych błędów dotyczących zabezpieczania strony WWW za pomocą certyfikatu SSL"
-Updated: 2024-01-10
+updated: 2024-01-11
 ---
 
 > [!primary]
