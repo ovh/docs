@@ -1,6 +1,6 @@
 ---
 title: FAQ zimbra OVHcloud
-excerpt: 'Retrouvez les questions concernant la migration vers Zimbra pour l'offre Mxplan OVHcloud'
+excerpt: "Retrouvez les questions concernant la migration vers Zimbra pour l'offre Mxplan OVHcloud"
 updated: 2024-01-11
 ---
 
