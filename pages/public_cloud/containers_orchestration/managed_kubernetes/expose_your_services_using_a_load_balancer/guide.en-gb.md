@@ -1,32 +1,57 @@
 ---
-title: Expose your services using OVHCloud Public Cloud Load Balancer
+title: Expose your services using OVHcloud Public Cloud Load Balancer
 excerpt: ""
 updated: 2024-01-09
 ---
 
 > [!warning]
 >
-> Usage of the [Public Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Beta phase.
+> Usage of the [Public Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) with a Managed Kubernetes Service (MKS) is currently in Beta phase. This feature is also available to customers using the services of our US subsidiary.
 >
 
 ## Objective
 
-This guide aim to know how to use our Public Cloud Load Balancer to expose your app using Public Cloud Load Balancer.
+This guide aim to know how to use our Public Cloud Load Balancer to expose your app hosted on our [Managed Kubernetes Service (MKS)](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
 If you're not comfortable with the different ways of exposing your applications in Kubernetes, or if you're not familiar with the notion of service type 'loadbalancer', we recommend you start by reading [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-using-lb?id=kb_article_view&sysparm_article=KB0050008) detailing the different methods for exposing your containerized applications hosted in Kubernetes.
 
 Our Public Cloud Load Balancer is relying on Openstack Octavia project, you can find the official documentation [here](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md).
 
-To be able to deploy Octavia load balancers, your Managed Kubernetes Service must have been upgraded to //INSERT VERSION HERE patch version. This feature is also available to customers using the services of our US subsidiary.
+
+
+## Prerequisites
+
+#### MKS Kubernetes version
+- To be able to deploy Octavia load balancers, your Managed Kubernetes Service must have been upgraded to the following patch version:
+
+| Kubenertes versions    |
+|-------------|
+| 1.24.13-3>= |   
+| 1.25.9-3>=  |   
+| 1.26.4-3>=  |   
+| 1.27>=      |  
+
+#### Network topologie for Public exposition //à reformuler
+- If you plan to expose your Load Balancer publicly, in order to use a FloatingIP, an OVHcloud Gateway (or Openstack router) is mandatory on subnet hosting your Load Balancer. We do recommend to create your MKS clusters on a network and subnet using our OVHcloud Gateway. Here is a list of situation you may face:
+    - **The Subnet's GatewayIP is already an OVHcloud Gateway**, nothing needs to be done. The current Openstack Router will be used.
+    - **The subnet doest not have an IP reserved for a Gateway** --> You will have to provide/create a compatible subnet. You can edit the existing subnet (modop CLI Openstack/Horizon) or use another dedicated subnet (doc LoadBalancerSubnetID)//TODO
+    - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)** --> You will have to provide/create a compatible subnet. To do so you select another dedicated subnet (doc LoadBalancerSubnetID)//TODO
+
+// FAIRE UN TABLEAU POUR LISTER LES CAS + SOLUTIONS ?
+
+
+## Limitations
+
+- Layer 7 and TLS Termination are not available yet. For such use cases you can rely on [Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
+- UDP proxy protocol is not supported
+
 
 ## Billing
 
 - When exposing your load balancer publicly (pub-to-pub or pub-to-private), if it does not already exist, an OVHcloud Gateway  is automatically creation and charged for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
-
-
 - Each Public CLoud Load Balancer is billed according to his flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
 - If the Public Cloud Load Balancer is a public one, a Public Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 
-    > [!primay]
+    > [!primary]
     >
     > Note: Each Public Cloud Load Balancer has his own Public Floating IP. Outgoing traffic doesn't consume OVHcloud Gateway bandwidth.
     >
@@ -119,9 +144,7 @@ spec:
 
 
 
-## Supported Features
-
-### Service annotations
+## Supported Features/Annotations
 
 - `loadbalancer.openstack.org/floating-network-id`   //NOT SUPPORTED on OVH
 
@@ -174,7 +197,7 @@ spec:
 
 - `loadbalancer.openstack.org/x-forwarded-for`
 
-  **Not supported**. If you want to keep the source IP we do recommend to use an Ingress-controller, for example: https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md  
+  **Not supported**. If you want perform Layer 7 load balancing we do recommend to use the official Octavia Ingress-controller: https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md  
 
 - `loadbalancer.openstack.org/timeout-client-data` //SUPPORTED
 
@@ -212,7 +235,7 @@ spec:
 
   Defines the health monitor retry count for the loadbalancer pool members. Default value = 1
 
-- `loadbalancer.openstack.org/health-monitor-max-retries-down` //NOT SUPPORTED .
+- `loadbalancer.openstack.org/health-monitor-max-retries-down` //NOT SUPPORTED YET
 
   Defines the health monitor retry count for the loadbalancer pool members to be marked down.
 
@@ -224,14 +247,13 @@ spec:
 
   The name of the loadbalancer availability zone to use. It is ignored if the Octavia version doesn't support availability zones yet.
 
-- `loadbalancer.openstack.org/default-tls-container-ref`
+- `loadbalancer.openstack.org/default-tls-container-ref` // NOT SUPPORTED
 
   Reference to a tls container. This option works with Octavia, when this option is set then the cloud provider will create an Octavia Listener of type `TERMINATED_HTTPS` for a TLS Terminated loadbalancer.
   Format for tls container ref: `https://{keymanager_host}/v1/containers/{uuid}`
 
   When `container-store` parameter is set to `external` format for `default-tls-container-ref` could be any string.
 
-  Not supported when `lb-provider=ovn` is configured in openstack-cloud-controller-manager.
 
 - `loadbalancer.openstack.org/load-balancer-id`
 
@@ -241,9 +263,9 @@ spec:
 
   If this annotation is specified, the other annotations which define the load balancer features will be ignored.
 
-- `loadbalancer.openstack.org/hostname`
+- `loadbalancer.openstack.org/hostname` //nipio
 
-  This annotations explicitly sets a hostname in the status of the load balancer service.
+  This annotations explicitly sets a hostname in the status of the load balancer service. Used beside proxy protocol.
 
 - `loadbalancer.openstack.org/load-balancer-address`
 
@@ -251,27 +273,21 @@ spec:
   When using `loadbalancer.openstack.org/hostname` annotation it is the only place to see the real address of the load balancer.
 
 
-## Limitations
+## Migrate from LoadBalancer for Managed Kubenertes to Public Load Balancer //TODO
+- Migration from IOLB to Octavia : Warning, it is not possible to keep existing public IP //TODO
+- modop (annotation Octavia) -> replacer 'iolb' par 'Octavia'
 
-- L7 and TLS Termination are not available yet.
-- You have to set a GatewayIP for your Subnet.
-
-> [!primary]
->
-> If you need help to set this up, you can request help from an Administrator on Discord.
->
-
-In case the GatewayIP is already assigned to a non-Openstack Gateway router
-
-In order to use a FloatingIP, we need to setup an Openstack Router.
-
-- In case the Subnet's GatewayIP is already an Openstack Router, nothing needs to be done. The current Openstack Router will be used.
-- In case the Subnet's GatewayIP is not an Openstack Router, you need to provide a technical Subnet where we are going to spawn all OpenStack needs. Ping an administrator on Discord if it is your case.
+## Ressources Naming //TODO
+Explication sur le nomage des ressources créés par Octavia / LB name
 
 ## Others resources
 
 - [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
+- [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
+- [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip)
 - [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
+- [OVHcloud Load Balancer concept](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
+
 
 ## Go further
 
