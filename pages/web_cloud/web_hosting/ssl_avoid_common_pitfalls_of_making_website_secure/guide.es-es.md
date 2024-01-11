@@ -1,7 +1,7 @@
 ---
 title: "Errores comunes relacionados con la seguridad de su sitio web con el SSL"
 excerpt: "Descubra cómo evitar los errores comunes de seguridad de su sitio web con el SSL"
-updated: 2024-01-10
+updated: 2024-01-11
 ---
 
 > [!primary]

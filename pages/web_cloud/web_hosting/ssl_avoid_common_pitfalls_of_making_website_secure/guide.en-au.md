@@ -1,7 +1,7 @@
 ---
 title: "Common errors related to securing your website with SSL"
 excerpt: "Find out how to avoid common errors in securing your website with SSL"
-updated: 2024-01-10
+updated: 2024-01-11
 ---
 
 ## Objective

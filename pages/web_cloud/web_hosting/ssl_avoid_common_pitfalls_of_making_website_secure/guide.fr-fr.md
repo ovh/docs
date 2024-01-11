@@ -1,7 +1,7 @@
 ---
 title: "Erreurs courantes liées à la sécurisation de votre site web avec le SSL"
 excerpt: "Découvrez comment éviter les erreurs courantes de sécurisation de son site web avec le SSL"
-updated: 2024-01-10
+updated: 2024-01-11
 ---
 
 ## Objectif
