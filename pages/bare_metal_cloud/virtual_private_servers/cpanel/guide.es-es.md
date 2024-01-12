@@ -1,6 +1,6 @@
 ---
 title: "Desplegar cPanel en un VPS"
-excerpt: "Cómo instanciar un VPS con la aplicación cPanel preinstalada"
+excerpt: "Descubra cómo instanciar un VPS con la aplicación cPanel preinstalada"
 updated: 2024-01-12
 ---
 
