@@ -1,6 +1,6 @@
 ---
 title: 'FAQ OverTheBox'
-excerpt: 'Foire aux questions concernant OverTheBox'
+excerpt: 'Foire aux questions sur la solution OverTheBox'
 updated: 2021-05-17
 ---
 
