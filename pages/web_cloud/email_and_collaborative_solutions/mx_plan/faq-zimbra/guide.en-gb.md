@@ -76,7 +76,7 @@ You can migrate your accounts at any time to Email Pro or Exchange in order to k
 
 ### Can I oppose the migration?
 
-No. OVHcloud is committed to providing a service with the best price performance ratio for its MX Plan offerings. This is why we have chosen to migrate the current offers to the Zimbra solution.
+No. OVHcloud is committed to providing a service with the best price performance ratio for its MX Plan offers. This is why we have chosen to migrate the current offers to the Zimbra solution.
 
 However, you can still take advantage of the OWA interface [by migrating your email accounts to an Email Pro or Exchange solution](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform).
 
