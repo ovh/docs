@@ -30,9 +30,9 @@ In dieser Anleitung finden Sie einige Beispiele für mögliche Problemsituatione
 
 ### Mixed Content (Gemischter Inhalt)
 
-Ihre Website lädt keine externen Elemente wie Schaltflächen für *Facebook* und *Twitter*? Interaktionen auf Ihren Webseiten funktionieren nicht wie beim Zugriff auf Ihre Webseite per HTTP? Das liegt wahrscheinlich daran, dass die Website gemischte Inhalte enthält. 
+Ihre Website lädt keine externen Elemente wie Schaltflächen für *Facebook* und *X/Twitter*? Interaktionen auf Ihren Webseiten funktionieren nicht wie beim Zugriff auf Ihre Webseite per HTTP? Das liegt wahrscheinlich daran, dass die Website gemischte Inhalte enthält. 
 
-Seit einiger Zeit verhindern Browser wie *Google Chrome*, *Mozilla Firefox* und *Internet Explorer* das Laden von Seitenelementen, wenn sie über eine HTTP-URL aufgerufen werden können. Dadurch wird sichergestellt, dass die durch das HTTPS-Protokoll gewährte Sicherheit nicht durch ein als HTTP geladenes Element beeinträchtigt wird. 
+Seit einiger Zeit verhindern Browser wie *Google Chrome*, *Mozilla Firefox* und *Microsoft Edge/Internet Explorer* das Laden von Seitenelementen, wenn sie über eine HTTP-URL aufgerufen werden können. Dadurch wird sichergestellt, dass die durch das HTTPS-Protokoll gewährte Sicherheit nicht durch ein als HTTP geladenes Element beeinträchtigt wird. 
 
 In den meisten Fällen handelt es sich dabei um externe Skripte von anderen Websites wie Social Media. In diesem Fall genügt es, die URLs in HTTP durch die URLs in HTTPS in Ihren Skripten zu ersetzen, um diese Skripte laden zu können.
 

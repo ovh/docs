@@ -27,9 +27,9 @@ Retrouvez, dans ce tutoriel, quelques exemples de situations concernant la sécu
 
 ### Contenu mixte (mixed content)
 
-Votre site web ne charge pas d'éléments externes, comme les boutons *Facebook* et *Twitter* ? Les interactions sur vos pages web ne fonctionnent pas comme lorsque vous accédez à votre site web en « HTTP » ? Cela provient probablement du fait que votre site web contient du contenu mixte. 
+Votre site web ne charge pas d'éléments externes, comme les boutons *Facebook* et *X/Twitter* ? Les interactions sur vos pages web ne fonctionnent pas comme lorsque vous accédez à votre site web en « HTTP » ? Cela provient probablement du fait que votre site web contient du contenu mixte. 
 
-Depuis quelques années, les navigateurs comme *Google Chrome*, *Mozilla Firefox* et *Internet Explorer* empêchent les sites web en « HTTPS » de charger des éléments de page s'ils sont accessible via une URL en « HTTP ». Ceci afin que la confidentialité fournie par le protocole « HTTPS » ne soit pas compromise par un élément chargé en « HTTP ». 
+Depuis quelques années, les navigateurs comme *Google Chrome*, *Mozilla Firefox* et *Microsoft Edge/Internet Explorer* empêchent les sites web en « HTTPS » de charger des éléments de page s'ils sont accessible via une URL en « HTTP ». Ceci afin que la confidentialité fournie par le protocole « HTTPS » ne soit pas compromise par un élément chargé en « HTTP ». 
 
 Dans la plupart des cas, il s'agit de scripts externes, provenant d'autres sites web comme les réseaux sociaux. Dans ce cas, il suffit de remplacer dans vos scripts les URLs en « HTTP » par des URLs en « HTTPS » pour pouvoir charger ces scripts.
 

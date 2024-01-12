@@ -31,9 +31,9 @@ En este tutorial encontrará algunos ejemplos de situaciones relativas a la segu
 
 ### Contenido mixto (mixed content)
 
-¿Su sitio web no carga elementos externos, como los botones *Facebook* y *Twitter*? ¿Las interacciones en sus páginas web no funcionan como cuando accede a su sitio web en HTTP? Probablemente se deba a que el sitio web contiene contenido mixto. 
+¿Su sitio web no carga elementos externos, como los botones *Facebook* y *X/Twitter*? ¿Las interacciones en sus páginas web no funcionan como cuando accede a su sitio web en HTTP? Probablemente se deba a que el sitio web contiene contenido mixto. 
 
-En los últimos años, los navegadores como *Google Chrome*, *Mozilla Firefox* e *Internet Explorer* impiden que los sitios web en HTTPS carguen elementos de página si se puede acceder a ellos a través de una URL en HTTP. De este modo, la confidencialidad que proporciona el protocolo HTTPS no se ve comprometida por un elemento cargado en HTTP. 
+En los últimos años, los navegadores como *Google Chrome*, *Mozilla Firefox* e *Microsoft Edge/Internet Explorer* impiden que los sitios web en HTTPS carguen elementos de página si se puede acceder a ellos a través de una URL en HTTP. De este modo, la confidencialidad que proporciona el protocolo HTTPS no se ve comprometida por un elemento cargado en HTTP. 
 
 En la mayoría de los casos, se trata de scripts externos de otros sitios web, como las redes sociales. En ese caso, solo tiene que sustituir en sus scripts las URL "HTTP" por URL "HTTPS" para poder cargar estos scripts.
 

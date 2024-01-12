@@ -31,9 +31,9 @@ Encontre, neste tutorial, alguns exemplos de situações relativas à segurança
 
 ### Conteúdo misto (mixed content)
 
-O seu website não carrega elementos externos, como os botões *Facebook* e *Twitter*? As interações nas páginas web não funcionam como quando acede ao website em "HTTP"? Provavelmente, é o resultado do conteúdo misto do seu website. 
+O seu website não carrega elementos externos, como os botões *Facebook* e *X/Twitter*? As interações nas páginas web não funcionam como quando acede ao website em "HTTP"? Provavelmente, é o resultado do conteúdo misto do seu website. 
 
-Nos últimos anos, browsers como o Google Chrome*, *Mozilla Firefox* e *Internet Explorer* têm impedido que websites com "HTTPS" carreguem elementos de página se estes estiverem acessíveis através de um URL em "HTTP". Isto é feito para que a confidencialidade fornecida pelo protocolo "HTTPS" não seja comprometida por um elemento carregado em "HTTP". 
+Nos últimos anos, browsers como o Google Chrome*, *Mozilla Firefox* e *Microsoft Edge/Internet Explorer* têm impedido que websites com "HTTPS" carreguem elementos de página se estes estiverem acessíveis através de um URL em "HTTP". Isto é feito para que a confidencialidade fornecida pelo protocolo "HTTPS" não seja comprometida por um elemento carregado em "HTTP". 
 
 Na maioria dos casos, são scripts externos, provenientes de outros websites, como as redes sociais. Neste caso, basta substituir nos seus scripts os URLs em "HTTP" por URLs em "HTTPS" para poder carregar estes scripts.
 

@@ -31,9 +31,9 @@ Questo tutorial contiene alcuni esempi di situazioni in cui proteggere il sito W
 
 ### Contenuto misto (mixed content)
 
-Il sito Web non carica elementi esterni, come i pulsanti *Facebook* e *Twitter*? Le interazioni sulle pagine Web non funzionano come quando si accede al sito Web in "HTTP"? Questo problema può essere dovuto al fatto che il sito contiene contenuto misto. 
+Il sito Web non carica elementi esterni, come i pulsanti *Facebook* e *X/Twitter*? Le interazioni sulle pagine Web non funzionano come quando si accede al sito Web in "HTTP"? Questo problema può essere dovuto al fatto che il sito contiene contenuto misto. 
 
-Da alcuni anni, i browser come *Google Chrome*, *Mozilla Firefox* e *Internet Explorer* impediscono ai siti Web in "HTTPS" di caricare gli elementi della pagina se sono accessibili tramite un URL in "HTTP". in modo che la confidenzialità fornita dal protocollo "HTTPS" non sia compromessa da un elemento caricato in "HTTP". 
+Da alcuni anni, i browser come *Google Chrome*, *Mozilla Firefox* e *Microsoft Edge/Internet Explorer* impediscono ai siti Web in "HTTPS" di caricare gli elementi della pagina se sono accessibili tramite un URL in "HTTP". in modo che la confidenzialità fornita dal protocollo "HTTPS" non sia compromessa da un elemento caricato in "HTTP". 
 
 Nella maggior parte dei casi, si tratta di script esterni, provenienti da altri siti web come i social network. In questo caso, è sufficiente sostituire nei tuoi script gli URL in "HTTP" con gli URL in "HTTPS" per poter caricare questi script.
 

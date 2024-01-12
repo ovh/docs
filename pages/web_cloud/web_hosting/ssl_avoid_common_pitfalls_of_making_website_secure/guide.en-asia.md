@@ -27,9 +27,9 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 ### Mixed content
 
-Does your website not load external elements, such as the *Facebook* and *Twitter* buttons? Do interactions on your web pages not work the same way as when you access your website in HTTP? This is probably because your website contains mixed content. 
+Does your website not load external elements, such as the *Facebook* and *X/Twitter* buttons? Do interactions on your web pages not work the same way as when you access your website in HTTP? This is probably because your website contains mixed content. 
 
-In recent years, browsers such as *Google Chrome*, *Mozilla Firefox* and *Internet Explorer* have prevented websites with HTTPS from loading page elements if they are accessible via a URL with HTTP. This is so that the confidentiality provided by the HTTPS protocol is not compromised by an element loaded with HTTP. 
+In recent years, browsers such as *Google Chrome*, *Mozilla Firefox* and *Microsoft Edge/Internet Explorer* have prevented websites with HTTPS from loading page elements if they are accessible via a URL with HTTP. This is so that the confidentiality provided by the HTTPS protocol is not compromised by an element loaded with HTTP. 
 
 In most cases, these are external scripts, from other websites such as social networks. In this case, you just need to replace the URLs in HTTP with URLs in HTTPS in your scripts to load these scripts.
 
