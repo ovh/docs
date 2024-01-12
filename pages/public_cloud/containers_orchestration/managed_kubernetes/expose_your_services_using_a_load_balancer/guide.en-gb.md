@@ -14,7 +14,9 @@ updated: 2024-01-09
 This guide aim to explain how to use our Public Cloud Load Balancer to expose your app hosted on our [Managed Kubernetes Service (MKS)](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
 If you're not comfortable with the different ways of exposing your applications in Kubernetes, or if you're not familiar with the notion of service type 'loadbalancer', we recommend you start by reading [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-using-lb?id=kb_article_view&sysparm_article=KB0050008) detailing the different methods for exposing your containerized applications hosted in Kubernetes.
 
-Our Public Cloud Load Balancer is relying on Openstack Octavia project, this project does provide a Cloud Controler Manager allowing Kubernetes clusters to interact with Load Balancers. For Managed Kubernetes Service (MKS), this Cloud Controler is installed and configured by our team allowing you to easily create, use and configure our Public Cloud Load Balancers. You can find the official documentation [here](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md).
+Our Public Cloud Load Balancer is relying on Openstack Octavia project, this project provides a Cloud Controller Manager (CCM) allowing Kubernetes clusters to interact with Load Balancers. For Managed Kubernetes Service (MKS), this Cloud Controller is installed and configured by our team allowing you to easily create, use and configure our Public Cloud Load Balancers. You can find the CCM opensource project documentation [here](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
+
+This guide uses some concepts that are specific to our Public Cloud Load Balancer (listener, pool, health monitor, member, ...)  and to the Public Cloud Network (Gateway, Floating IP). You can find concepts description on this [page](../../../public_cloud_network_services/concepts-03-loadbalancer/guide.en-gb.md) for the Load Balancer and on that [page](../../../public_cloud_network_services/concepts-01-public-cloud-networking-concepts/guide.en-gb.md) for the Public Cloud Network products.
 
 
 ## Prerequisites
@@ -38,21 +40,28 @@ For existing clusters, if:
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)** --> You will have to provide/create a compatible subnet. To do so you select another dedicated subnet (doc LoadBalancerSubnetID)//TODO
 
 
+
 ## Limitations
 
-- Layer 7 and TLS Termination are not available yet. For such use cases you can rely on [Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
+- Layer 7 Policy & Rules and TLS Termination (`TERMINATED_HTTPS` listener) are not available yet. For such use cases you can rely on [Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
 - UDP proxy protocol is not supported
 
 
 ## Billing
 
-- When exposing your load balancer publicly (pub-to-pub or pub-to-private), if it does not already exist, an OVHcloud Gateway  is automatically creation and charged for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+- When exposing your load balancer publicly (pub-to-pub or pub-to-private):
+  - if it does not already exist, an OVHcloud Gateway is automatically created and charged for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+  - a Public Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 - Each Public CLoud Load Balancer is billed according to his flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
-- If the Public Cloud Load Balancer is a public one, a Public Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 
     > [!primary]
     >
-    > Note: Each Public Cloud Load Balancer has his own Public Floating IP. Outgoing traffic doesn't consume OVHcloud Gateway bandwidth.
+    > Note: Each publicly exposed Load Balancer has his own Public Floating IP. Outgoing traffic doesn't consume OVHcloud Gateway bandwidth.
+    >
+
+    > [!warning]
+    >
+    > During the CCM Beta, since the Public Cloud Load Balancer is GA, the Public Cloud Load Balancer usage as well as the other network components (Gateway & Floating IPs) will be billed
     >
 
 ## Process
@@ -112,7 +121,7 @@ You can find a set a examples on how to use our Public Cloud Load Balancer with 
 
 
 #### Public to Private (your cluster is attached to a private network/subnet)
-In a public-to-private scenario you will use your Load Balance to publicly expose app that are hosted on your Managed Kubernetes Cluster. Main benefit is that your Kubernetes nodes does not need to be exposed on internet and have and public floating IP attached.
+In a public-to-private scenario you will use your Load Balancer to publicly expose app that are hosted on your Managed Kubernetes Cluster. Main benefit is that your Kubernetes nodes are not exposed on internet with that scenario.
 
 Service example:
 ```yaml
@@ -174,16 +183,16 @@ spec:
 
 - `loadbalancer.ovhcloud.com/flavor:`
 
-  Not a standard Openstack Octavia annotations (specific to OVHcloud). The size used for creating the loadbalancer, specifications can be found [here](https://www.ovhcloud.com/fr/public-cloud/load-balancer/). Authorized values => `small`,`medium`,`large`. Default is 'small'
+  Not a standard Openstack Octavia annotations (specific to OVHcloud). The size used for creating the loadbalancer, specifications can be found [here](https://www.ovhcloud.com/en/public-cloud/load-balancer/). Authorized values => `small`,`medium`,`large`. Default is 'small'.
 
 - `service.beta.kubernetes.io/openstack-internal-load-balancer`
 
-  If 'true', the loadbalancer VIP won't be associated with a floating IP. Default is 'false'.
+  If 'true', the loadbalancer will only have an IP on the private network (no Floating IP is associated with the Load Balancer). Default is 'false'.
 
 
 - `loadbalancer.openstack.org/subnet-id`
 
-  VIP subnet ID of load balancer created. By default, the subnet-id of the subnet configured for your OVHcloud Managed Kubernetes Service cluster will be used.
+  The subnet ID where the private IP of the load balancer will be retrieved. By default, the subnet-id of the subnet configured for your OVHcloud Managed Kubernetes Service cluster will be used.
 
 - `loadbalancer.openstack.org/member-subnet-id`
 
@@ -195,7 +204,7 @@ spec:
 
 - `loadbalancer.openstack.org/port-id`
 
-  The VIP port ID for load balancer created. Can be used if you want to use a specific private IP.
+  The port ID for load balancer private IP. Can be used if you want to use a specific private IP.
 
 - `loadbalancer.openstack.org/connection-limit`
 
@@ -203,7 +212,7 @@ spec:
 
 - `loadbalancer.openstack.org/keep-floatingip`
 
-  If 'true', the floating IP will **NOT** be deleted. Default is 'false'. Useful if you want to keep your floating API after Load Balancer deletion.
+  If 'true', the floating IP will **NOT** be deleted upon load balancer deletion. Default is 'false'. Useful if you want to keep your floating API after Load Balancer deletion.
 
 - `loadbalancer.openstack.org/proxy-protocol`
 
@@ -231,7 +240,7 @@ spec:
 
 - `loadbalancer.openstack.org/enable-health-monitor`
 
-  Defines whether to create health monitor for the load balancer pool, if not specified, default value is True. The health monitor can be created or deleted dynamically. A health monitor is required for services with `externalTrafficPolicy: Local`.
+  Defines whether to create health monitor for the load balancer pool. Default is `true`. The health monitor can be created or deleted dynamically. A health monitor is required for services with `externalTrafficPolicy: Local`.
 
 - `loadbalancer.openstack.org/health-monitor-delay`
 
@@ -257,7 +266,7 @@ spec:
 
   If this annotation is specified, the other annotations which define the load balancer features will be ignored.
 
-- `loadbalancer.openstack.org/hostname` //SUPPORTED
+- `loadbalancer.openstack.org/hostname`
 
   This annotations explicitly sets a hostname in the status of the load balancer service.
 
