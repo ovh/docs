@@ -26,7 +26,7 @@ La migration vers le nouveau webmail maintient le même niveau de services que l
 
 ### Quand aura lieu la migration de mes services ?
 
-Des e-mails de notifications pour chaque service vous seront transmis **1 semaine** puis **1 jour** avant la migration.
+Des e-mails de notification pour chaque service vous seront transmis **1 semaine** puis **1 jour** avant la migration.
 
 Vos services seront migrés de manière progressive, il est donc possible que vos différents services soient migrés avec plusieurs semaines d’écart.
 
@@ -38,10 +38,10 @@ Cependant, une courte interruption de service est nécessaire durant la phase de
 
 ### Ai-je des manipulations à effectuer dans le cadre de la migration vers Zimbra?
 
-Cette migration a été pensée pour minimiser l'impact sur nos clients. Aucune manipulation n'est attendue de votre part.
+Cette migration a été pensée pour minimiser l'impact du processus de migration sur l’utilisation du produit MXplan.
 
-Cependant, les bonnes pratiques en termes de gestion des mots de passe impliquent une manipulation.<br>
-Avant la migration, vous serez informé si un changement de mot de passe doit être réalisé à votre niveau. Si tel est le cas, vous recevrez par voie sécurisée une liste de mots de passe provisoires pour les comptes e-mails à manipuler après migration.<br>
+Cependant, en ce qui concerna la gestion des mots de passe, des manipulations sont à envisager.
+Avant la migration, vous serez informé si un changement de mot de passe doit être réalisé à votre niveau. Si tel est le cas, vous recevrez par voie sécurisée une liste de mots de passe provisoires pour les comptes e-mails à manipuler après migration.
 Ces mots de passe à usage unique permettront à vos utilisateurs de se connecter à l'interface web Zimbra. Une fois connectés à Zimbra, chaque utilisateur sera contraint de réinitialiser son mot de passe.
 
 ### Des changements sont-ils à prévoir dans l'espace client OVHcloud ?
@@ -50,7 +50,7 @@ Aucun changement n'est prévu dans l'espace client. La migration se faisant sous
 
 ### Vais-je devoir reconfigurer mon logiciel de messagerie ?
 
-Non, la migration ne nécessite pas de reconfiguration sur votre logiciel de messagerie .
+Non, la migration ne nécessite pas de reconfiguration sur votre logiciel de messagerie.
 
 Dans le cas d'un changement de mot de passe, il est nécessaire de saisir le nouveau mot de passe dans votre logiciel de messagerie.
 
@@ -72,7 +72,7 @@ Aucun changement n'est prévu concernant le traitement des données et leur util
 
 ### Comment rester sur le webmail actuel (OWA) ?
 
-Il vous est possible à tout moment, si vous le souhaitez, de migrer vers une offre qui utilise le webmail OWA, à savoir E-mail Pro ou Exchange. Pour cela, nous vous invitons à consulter notre guide « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
+Il vous est possible à tout moment de migrer vers une offre qui utilise le webmail OWA, à savoir E-mail Pro ou Exchange. Pour cela, nous vous invitons à consulter notre guide « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
 
 ### Puis je m'opposer à la migration ?
 
