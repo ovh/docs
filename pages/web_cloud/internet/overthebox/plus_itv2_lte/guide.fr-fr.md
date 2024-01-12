@@ -1,6 +1,6 @@
 ---
-title: 'Ajouer un lien LTE sur OverTheBox'
-excerpt: 'Découvrez comment ajouter un lien LTE afin d'améliorer les performances de votre OverTheBox'
+title: 'Ajouter un lien LTE sur OverTheBox'
+excerpt: "Découvrez comment ajouter un lien LTE afin d'améliorer les performances de votre OverTheBox"
 updated: 2021-04-29
 ---
 
