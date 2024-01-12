@@ -776,7 +776,7 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 > Je dois upgrader 2 infrastructures VMware, actuellement utilisées dans le cadre d'un PRA zerto avec la réplication des données. Est-il nécessaire de faire d'abord un upgrade de mon infrastructure secondaire ou primaire ?
 >> Il n'y a pas d'obligation, nous vous recommandons d'upgrader d'abord l'infrastructure secondaire pour maîtriser le processus avant d'upgrader l'infrastructure principale.
 > Le plafond historique sur les ressources horaires sera-t-il toujours déployé ?
->> Non, le plafond de facturation horaire est désactivé sur les offres 2020 (Premier & Essentials). Toutes les anciennes gammes continueront à fonctionner avec le plafond de facturation horaire en place
+>> Non, le plafond de facturation horaire est désactivé sur les offres 2020 (Premier & Essentials). Toutes les anciennes gammes continueront à fonctionner avec le plafond de facturation horaire en place.
 > Le prix des anciennes offres va-t-il évoluer?
 >> Non, il n'y a pas de modification tarifaire des anciennes offres prévue.
 > Dans quelle langue les Services Professionnels d'OVHcloud sont-ils disponibles ?
