@@ -3,10 +3,9 @@ title: "Install and use OVHcloud Backint Agent for SAP HANA"
 excerpt: "This guide provides instructions for installing OVHcloud Backint Agent for SAP HANA and its usage"
 updated: 2024-01-11
 ---
- 
- 
+
 ## Objective
-  
+
 This guide provides detailed steps for the installation and usage of OVHcloud Backint Agent for SAP HANA.
 
 OVHcloud Backint Agent for SAP HANA allows you to back up and recover your SAP HANA database on one or many OVHcloud S3 Object Storage buckets.
@@ -42,9 +41,9 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 > It's not mandatory to install AWS S3 CLI on your SAP HANA server. All actions in this chapter can be done from your admin server or also from your laptop.
 >
 
-The S3 Object Storage bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows to keep several versions of a same object in your S3 Object Storage bucket.
+The S3 Object Storage bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your S3 Object Storage bucket.
 
-With SAP HANA backups, the versioning allows you to trigger several backups with the same name (for example "COMPLETE_DATA_BACKUP") and keeping the capacity to recover a specific version of the backup named "COMPLETE_DATA_BACKUP". If the versioning is not enabled, only the latest version of the backup named "COMPLETE_DATA_BACKUP" could be recovered.
+With SAP HANA backups, the versioning allows you to trigger several backups with the same name (for example "COMPLETE_DATA_BACKUP") and keeping the capacity to recover a specific version of the backup named "COMPLETE_DATA_BACKUP". If the versioning is not enabled, only the latest version of the backup named "COMPLETE_DATA_BACKUP" can be recovered.
 
 To check if the versioning is enabled on your S3 Object Storage bucket, please execute the following command:
 
@@ -55,7 +54,7 @@ aws --profile <profile_name> s3api get-bucket-versioning --bucket <bucket_name>
 # aws --profile default s3api get-bucket-versioning --bucket my-sap-hana-bucket
 ```
 
-Output expected:
+Expected output:
 
 ```console
 {
@@ -122,7 +121,7 @@ Check that you are able to execute OVHcloud Backint Agent with the SAP HANA user
 su - <sid>adm -c "/usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint -v"
 ```
 
-Output expected:
+Expected output:
 
 ```console
 "Backint 1.04" "OVHcloud Backint Agent version 1.0 for SAP HANA"
@@ -130,7 +129,7 @@ Output expected:
 
 ### Configuration
 
-Edit the content of the `hdbbackint.cfg` file and replace all values between chevron by your S3 Object Storage bucket information. Below, an example of its content after edition.
+Edit the content of the `hdbbackint.cfg` file and replace all values between chevrons by your S3 Object Storage bucket information. Below is an example of its content after edition.
 
 ```ini
 [trace]
@@ -148,18 +147,18 @@ multipart_chunksize = 1GB
 multipart_threshold = 1GB
 ```
 
-The `multipart_chunksize` and `multipart_threshold` parameters can be set with value in byte (example: 52428800 equal 50MB), in KB, in GB, or in TB. If the value is set without unit, the default unit is byte.
+The `multipart_chunksize` and `multipart_threshold` parameters can be set with values in byte (example: 52428800 equal 50MB), in KB, in GB, or in TB. If the value is set without unit, the default unit is byte.
 
 - The `multipart_threshold` parameter triggers the upload of an object in multipart.
-- The `multipart_chunksize` parameter set the size of each part to be uploaded.
+- The `multipart_chunksize` parameter sets the size of each part to be uploaded.
 
-The default values for `multipart_chunksize` and `multipart_threshold` parameters in the `hdbbackint.cfg` file offers an optimal performance in many cases, but you can increase or decrease it depends of your environment.
+The default values for `multipart_chunksize` and `multipart_threshold` parameters in the `hdbbackint.cfg` file offer an optimal performance in many cases, but you can increase or decrease it, depending on your environment.
 
 > [!warning]
 >
-> The following commands modify the backup configuration of your SAP HANA database, please execute these commands with precaution.
+> The following commands modify the backup configuration of your SAP HANA database, please execute these commands with caution.
 >
-> We recommend to trigger a full backup of your SAP HANA database after this operation to validate the configuration.
+> We recommend triggering a full backup of your SAP HANA database after this operation to validate the configuration.
 >
 
 Execute the following SQL commands to update the backup configuration of your SAP HANA database.
@@ -182,7 +181,7 @@ ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','data_backu
 ```
 
 The value of the `data_backup_buffer_size` parameter depends from that `parallel_data_backup_backint_channels` parameter.
-Its value is the result of "512 x `parallel_data_backup_backint_channels`" operation.
+Its value is the result of the "512 x `parallel_data_backup_backint_channels`" operation.
 
 > [!primary]
 >
@@ -257,7 +256,7 @@ A scheduling example via crontab:
 
 > [!primary]
 >
-> The `-U` option allows you to call a stored key in the hdbuserstore. To know more about the adding of a key in the hdbuserstore, we invite you to take note of the SAP documentation available at [this address](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/ddbdd66b632d4fe7b3c2e0e6e341e222.html?version=2.0.02&locale=en-US).
+> The `-U` option allows you to call a stored key in the hdbuserstore. To know more about the addition of a key in the hdbuserstore, we suggest you to read the SAP documentation available at [this address](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/ddbdd66b632d4fe7b3c2e0e6e341e222.html?version=2.0.02&locale=en-US).
 >
 > In this example, the `BACKUP` key has been created with a login and password for a SAP HANA user which has the role BACKUP. The privileges to grant to this user are explained in [the SAP HANA documentation](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/c4b71703bb571014810ebb38dc59cf51.html).
 >
