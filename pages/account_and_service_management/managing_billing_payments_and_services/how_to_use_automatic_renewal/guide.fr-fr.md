@@ -1,7 +1,7 @@
 ---
 title: Gérer mes services OVHcloud
 excerpt: Découvrez comment gérer le renouvellement de vos services dans votre espace client
-updated: 2024-01-11
+updated: 2024-01-12
 ---
 
 ## Objectif
@@ -64,16 +64,17 @@ Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Produits et
 
 ### Afficher le type de renouvellement
 
-La page `Mes services` contient un tableau de gestion de vos services OVHcloud. Vous pouvez y retrouver leurs noms, le type de service, la disponibilité du service (`Actif` par défaut), son statut (type de renouvellement, action à réaliser, etc.), la prochaine date d'effet du renouvellement ou de la résiliation ainsi qu'un bouton `...` dédié aux actions possibles pour chaque service.
+La page **Mes services** contient un tableau de gestion de vos services OVHcloud. Vous pouvez y retrouver leurs noms, le type de service, la disponibilité du service (`Actif` par défaut), son statut (type de renouvellement, action à réaliser, etc.), la prochaine date d'effet du renouvellement ou de la résiliation ainsi qu'un bouton `...`{.action} dédié aux actions possibles pour chaque service.
 
 ![mes services](images/my-services-fr.png){.thumbnail}
 
 > [!success]
 > Des outils de tri, de filtre et de recherche sont disponibles au-dessus du tableau.
 > Vous pouvez ainsi trier les colonnes par ordre croissant ou décroissant, rechercher le nom d'un de vos services ou encore appliquer un filtre pour n'afficher que certains de vos services selon les critères de votre choix.
-> ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
-> Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un exemple de filtre permettant d'afficher les hébergements pour lesquels une facture est en attente de réglement.
-> ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
+>
+> Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un exemple de filtre permettant d'afficher les noms de domaines dont le renouvellement est manuel et dont la date de fin d'abonnement expire avant un mois.
+>
+> ![manageautomaticrenewal](images/filters-fr.png){.thumbnail}
 
 ### Les actions pour chaque service
 
@@ -90,6 +91,9 @@ La page `Mes services` contient un tableau de gestion de vos services OVHcloud. 
 
 > [!tabs]
 > **Configurer le renouvellement**
+>>
+>> ![configurer le renouvellement](images/configure-renewal-fr.png){.thumbnail}
+>>
 >> Cliquez sur l'action `Configurer le renouvellement`{.action}.
 >>
 >> Selon le service choisi, vous pouvez le paramétrer en renouvellement manuel ou choisir la fréquence de renouvellement automatique. Le cas échéant, vous pourrez donc choisir le type de renouvellement, ainsi que la fréquence de celui-ci.
@@ -103,6 +107,9 @@ La page `Mes services` contient un tableau de gestion de vos services OVHcloud. 
 >> - la date d'expiration du service.
 >>
 > **Anticiper le paiement**
+>>
+>> ![anticiper le paiement](images/forward-payment-fr.png){.thumbnail}
+>>
 >> Cette action est proposée pour les services en **renouvellement automatique**. 
 >>
 >> Vous serez redirigé vers une interface de paiement en ligne.
@@ -111,13 +118,19 @@ La page `Mes services` contient un tableau de gestion de vos services OVHcloud. 
 >> Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
 >>
 > **Résilier**
+>>
+>> ![résilier](images/cancel-fr.png){.thumbnail}
+>>
 >> Cette action est proposée pour les services paramétrés en **renouvellement automatique**.
 >>
 >> En choisissant cette action, le renouvellement et le prélèvement automatiques sont désactivés pour le service que vous avez sélectionné.
 >>
->> Pour plus d'informations sur la résiliation des services OVHcloud, suivez les [instructions de ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)
+>> Pour plus d'informations sur la résiliation des services OVHcloud, suivez les instructions du guide « **[Comment résilier vos services OVHcloud ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
 >>
 > **Renouveler le service**
+>>
+>> ![Renouveler le service](images/renew-service-fr.png){.thumbnail}
+>>
 >> Cette action est uniquement proposée pour les services en **renouvellement manuel**.
 >>
 >> Vous serez alors redirigé vers une interface de paiement en ligne.
@@ -149,6 +162,8 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 |Aligner les dates de renouvellement|Permet d'aligner la date d'expiration de vos services à un jour calendaire. Seuls les services éligibles pourront être mis à jour.|
 
 ## Aller plus loin
+
+Ce guide n'a pas répondu à votre question ? Consultez notre [FAQ sur la facturation et le paiement](/pages/account_and_service_management/managing_billing_payments_and_services/faq-billing)
 
 [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)
 
