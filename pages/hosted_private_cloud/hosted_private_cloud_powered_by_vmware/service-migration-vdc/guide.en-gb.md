@@ -736,7 +736,7 @@ Below is a list of frequently asked questions about vDC migration.
 >> Yes, it is even necessary to have 2 different PFSENSEs to avoid IP conflicts.
 > Are the VXLANs available on both vDCs?
 >> VXLANs are only available on Premier, not Essentials.
-> We do not use NSX. The migration procedure specifies that the source/destination vDS must have the same version. On the source, our only vDS is in 6.0.0, so I guess we have to update it. The documentation/video/and interface indicate that we can do it ourselves without any downtime if it's vRack. I thought it was vRack but we can't update (the menu is grayed out). Does that mean it's vxlan? How do I tell the difference between vRack and vLAN?
+> We do not use NSX. The migration procedure specifies that the source/destination vDS must have the same version. On the source, our only vDS is in 6.0.0, so I guess we have to update it. The documentation/video/interface indicate that we can do it ourselves without any downtime if it's vRack. I thought it was vRack but we can't update (the menu is grayed out). Does that mean it's vxlan? How do I tell the difference between vRack and vLAN?
 >> If it is grayed out, it is probably the public DVS (vmnetwork) /vxlan. The vrack DVS is a second DVS with the word "vrack" at the end. Please open a support ticket so that we can confirm this with you and perform the DVS upgrade if required.
 > How do I know if my network adapters are VLAN or VxLAN and compatible with Essentials? In vSphere, I see for example and without further details: vxw-dvs-74-virtualwire-20-sid-...
 >> All that is %-virtual-% is vxlan.
@@ -765,7 +765,7 @@ Below is a list of frequently asked questions about vDC migration.
 > What is the duration of the credits in the Pack of Technical Advice Services?
 >> The pack is valid for 3 months from the order date.
 > How do I know how many hours of Credits have been used and are still outstanding?
->> Your OVHcloud sales representative or technical referrer is able to provide this information.
+>> Your OVHcloud sales representative or technical referrer is able to provide you with this information.
 > What happens if the consulting session takes less time than expected?
 >> A session is scheduled and counted in 1-hour blocks. For example, a session scheduled for 2 hours and 1.5 hours would be billed for 2 hours. A session scheduled for 3 hours but only 1.5 hours would be charged at 2 hours.
 
