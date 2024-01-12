@@ -76,13 +76,13 @@ Es sind keine Änderungen in Bezug auf die Datenverarbeitung und deren Verwendun
 
 ### Wie bleibe ich auf dem aktuellen Webmail (OWA)?
 
-Sie können jederzeit zu einem Angebot migrieren, das OWA-Webmail verwendet, also E-Mail Pro oder Exchange. Folgen Sie hierzu der Anleitung "[Ihre E-Mail-Adressen von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
+Sie können jederzeit zu einem Angebot migrieren, das OWA-Webmail verwendet, also E-Mail Pro oder Exchange. Folgen Sie hierzu der Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)".
 
 ### Kann ich die Migration ablehnen?
 
 Nein. OVHcloud verpflichtet sich, für seine MX Plan Angebote einen Dienst mit dem besten Preis-Leistungsverhältnis anzubieten. Aus diesem Grund wurde beschlossen, die aktuellen Angebote auf Zimbra zu migrieren.
 
-Sie können aber weiterhin das OWA Interface nutzen, indem Sie Ihre [E-Mail-Accounts auf eine E-Mail Pro oder Exchange Lösung migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform).
+Sie können aber weiterhin das OWA Interface nutzen, indem Sie Ihre [E-Mail-Accounts auf eine E-Mail Pro oder Exchange Lösung migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
 ### Kann ich mein MX Plan Angebot kündigen?
 
