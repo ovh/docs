@@ -1,7 +1,7 @@
 ---
 title: Adding IP restrictions on an OVHcloud Managed Private Registry
 excerpt: 'Find out how to add IP restrictions/manage access to the HMI/API & registry of an OVHcloud Managed Private Registry'
-updated: 2024-01-10
+updated: 2024-01-12
 ---
 
 ## Objective
@@ -14,28 +14,28 @@ This guide will cover the feature that allows you to manage access to the HMI of
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- An OVHcloud Managed Private registry
+- An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) guide for more information)
 
 ## Instructions
 
 The IP restrictions feature allows you to add whitelisted IP for two parts of the OVHcloud Managed Private Registry:
 
 - `/management` -> HMI/Harbor user interface
-- `/registry` -> client/CLI side: docker login/pull/push, helm...
+- `/registry` -> Client/CLI side: docker login/pull/push, helm...
 
-This means that you can configure IP restrictions for the HMI with IP blocks (CIDR) and different IP blocks for the registry part, depending on your teams, environments, needs...
+This means that you can configure different IP blocks (CIDR) for the HMI and the registry part, depending on your teams, environments, needs...
 
 ### Adding IP restrictions through the API
 
 #### The API Explorer
 
-To simplify things, we are using the [API Explorer](https://ca.api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVHcloud customer ID (NIC handle).
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/%7bservicename%7d/kube~get) of the API Explorer, you will see the available endpoints:
+If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/project/%7bservicename%7d/kube~get) of the API Explorer, you will see the available endpoints:
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 
@@ -83,14 +83,19 @@ If you go to the [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/pro
 null
 ```
 
-You should obtain a HTTP status code that equals to 201 and a `null` response as a response.
+You should obtain an HTTP status code that equals to 201 and a `null` response as a response.
+
+> [!primary]
+>
+> The list of specified IPs override the existing IP restrictions if there are any, always specify the complete list of IPs.
+>
 
 > [!primary]
 >
 > If you specify an IP address instead of an IP block/CIDR, we will add `/32` at the end of the IP.
 >
 
-After adding IP restrictions for the `management` endpoint, an unauthorized IP will have an "UNAUTHENTICATED" error message:
+After adding IP restrictions for the `management` endpoint, an unauthorized IP will have an "UNAUTHENTICATED" error message on the Harbor user interface:
 
 ![Alt text](images/unauthenticated-hmi.png)
 
@@ -133,6 +138,11 @@ After adding IP restrictions for the `management` endpoint, an unauthorized IP w
 ```json
 null
 ```
+
+> [!primary]
+>
+> The list of specified IPs override the existing IP restrictions if there are any, always specify the complete list of IPs.
+>
 
 > [!primary]
 >
