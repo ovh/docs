@@ -1,7 +1,7 @@
 ---
-title: Deploying cPanel on a VPS'
-excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel application'
-updated: 2021-10-14
+title: Deploying cPanel on a VPS"
+excerpt: "Find out how to instantiate a VPS with the pre-installed cPanel application"
+updated: 2024-01-12
 ---
 
 ## Objective

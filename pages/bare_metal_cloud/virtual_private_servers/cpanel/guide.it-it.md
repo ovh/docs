@@ -1,7 +1,7 @@
 ---
 title: Deploy di cPanel su un VPS
 excerpt: Come installare un VPS con l'applicazione cPanel preinstallata.
-updated: 2021-10-14
+updated: 2024-01-12
 ---
 
 > [!primary]

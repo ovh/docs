@@ -1,7 +1,7 @@
 ---
-title: 'cPanel auf einem VPS installieren'
-excerpt: 'So instanziieren Sie einen VPS mit cPanel-Template'
-updated: 2021-10-14
+title: "cPanel auf einem VPS installieren"
+excerpt: "So instanziieren Sie einen VPS mit cPanel-Template"
+updated: 2024-01-12
 ---
 
 ## Ziel

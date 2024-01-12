@@ -1,7 +1,7 @@
 ---
-title: 'Implementar o cPanel num VPS'
-excerpt: 'Saiba como instanciar um VPS com a aplicação cPanel pré-instalada.'
-updated: 2021-10-14
+title: "Implementar o cPanel num VPS"
+excerpt: "Saiba como instanciar um VPS com a aplicação cPanel pré-instalada."
+updated: 2024-01-12
 ---
 
 > [!primary]

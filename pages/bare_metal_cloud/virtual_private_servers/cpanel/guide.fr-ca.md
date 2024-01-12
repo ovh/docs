@@ -1,7 +1,7 @@
 ---
-title: 'Déployer cPanel sur un VPS'
-excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
-updated: 2024-01-09
+title: "Déployer cPanel sur un VPS"
+excerpt: "Découvrez comment instancier un VPS avec l’application cPanel pré-installée."
+updated: 2024-01-12
 ---
 
 ## Objectif
