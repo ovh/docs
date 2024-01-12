@@ -1,7 +1,6 @@
 ---
-title: 'OverTheBox - Créer une redirection de port'
+title: 'Configurer une redirection de port sur OverTheBox'
 excerpt: "Découvrez comment rediriger un port ou une plage de ports sur votre OverTheBox"
-keywords: 'redirection, port, forward, nat'
 updated: 2023-12-21
 ---
 
