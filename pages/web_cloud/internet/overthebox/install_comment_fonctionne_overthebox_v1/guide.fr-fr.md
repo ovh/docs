@@ -1,6 +1,6 @@
 ---
 title: 'Comment fonctionne OverTheBox v1 (Intel & IT) ?'
-excerpt: 'Découvrez le fonctionnement d'OverTheBox Intel et IT v1'
+excerpt: "Découvrez le fonctionnement d'OverTheBox Intel et IT v1"
 updated: 2021-04-14
 ---
 

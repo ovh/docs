@@ -1506,7 +1506,7 @@
                 + [Utiliser votre propre routeur pour OverTheBox](web_cloud/internet/overthebox/advanced_dmz_couplage_overthebox_avec_un_autre_routeur)
             + [OverTheBox v2 (Plus & IT)](web-cloud-internet-overthebox-overthebox-plus-and-it-v2)
                 + [Installer OverTheBox v2 (Plus & IT)](web_cloud/internet/overthebox/plus_itv2_installation)
-                + [Ajouer un lien LTE sur OverTheBox](web_cloud/internet/overthebox/plus_itv2_lte)
+                + [Ajouter un lien LTE sur OverTheBox](web_cloud/internet/overthebox/plus_itv2_lte)
             + [OverTheBox v1 (Intel & IT)](web-cloud-internet-overthebox-overthebox-intel-and-it-v1)
                 + [Comment fonctionne OverTheBox v1 (Intel & IT) ?](web_cloud/internet/overthebox/install_comment_fonctionne_overthebox_v1)
                 + [Installer OverTheBox v1 (Intel & IT)](web_cloud/internet/overthebox/intel_itv1_installation)
