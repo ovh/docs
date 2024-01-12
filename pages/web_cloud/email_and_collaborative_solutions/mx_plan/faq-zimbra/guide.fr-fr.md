@@ -38,9 +38,9 @@ Cependant, une courte interruption de service est nécessaire durant la phase de
 
 ### Ai-je des manipulations à effectuer dans le cadre de la migration vers Zimbra?
 
-Cette migration a été pensée pour minimiser l'impact du processus de migration sur l’utilisation du produit MXplan.
+Cette migration a été pensée pour minimiser l'impact du processus de migration sur l’utilisation du produit MX Plan.
 
-Cependant, en ce qui concerna la gestion des mots de passe, des manipulations sont à envisager.
+Cependant, en ce qui concerne la gestion des mots de passe, des manipulations sont à envisager.
 Avant la migration, vous serez informé si un changement de mot de passe doit être réalisé à votre niveau. Si tel est le cas, vous recevrez par voie sécurisée une liste de mots de passe provisoires pour les comptes e-mails à manipuler après migration.
 Ces mots de passe à usage unique permettront à vos utilisateurs de se connecter à l'interface web Zimbra. Une fois connectés à Zimbra, chaque utilisateur sera contraint de réinitialiser son mot de passe.
 
