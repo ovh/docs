@@ -10,9 +10,19 @@ updated: 2024-01-12
 
 ## Obiettivo
 
-cPanel è un pannello di controllo sviluppato per gli hosting Web. Grazie a un’interfaccia grafica che consente di automatizzare i parametri, l’hosting Web diventa più semplice.
+## Obiettivo
 
-**Questa guida ti mostra come configurare cPanel con le applicazioni preinstallate su un VPS.**
+cPanel è un pannello di controllo che facilita la gestione degli hosting Web. Rende le operazioni complesse più accessibili, anche per i nuovi utenti. Offre un'ampia gamma di funzionalità, ad esempio per la gestione: 
+
+- delle email
+- dei domini
+- database
+- della sicurezza
+- ecc.
+
+Grazie a un’interfaccia grafica che permette di automatizzare i parametri, l’hosting dei siti Web è semplificato.
+
+**Questa guida ti mostra come installare cPanel con le applicazioni preinstallate su un VPS.**
 
 ## Prerequisiti
 

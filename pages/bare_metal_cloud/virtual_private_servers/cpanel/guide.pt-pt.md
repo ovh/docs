@@ -10,9 +10,17 @@ updated: 2024-01-12
 
 ## Objetivo
 
-O cPanel é um painel de configuração concebido para alojamentos web. Graças à sua interface gráfica, que permite a automatização dos parâmetros, o alojamento web torna-se mais simples.
+O cPanel é um painel de configuração que facilita a gestão dos alojamentos web. Torna as tarefas complexas mais acessíveis, incluindo para os novos utilizadores. Oferece uma vasta gama de funcionalidades como, por exemplo, para a gestão: 
 
-**Saiba como implementar o cPanel com as aplicações pré-instaladas num VPS.**
+- e-mails
+- domínios
+- Bases de dados
+- da segurança
+- etc.
+
+Graças a uma interface gráfica que permite a automatização dos parâmetros, o alojamento de websites é simplificado.
+
+**Saiba como implementar o cPanel com aplicações pré-instaladas num VPS.**
 
 ## Requisitos
 

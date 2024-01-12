@@ -10,9 +10,17 @@ updated: 2024-01-12
 
 ## Wprowadzenie
 
-cPanel to panel konfiguracyjny zaprojektowany dla dostawców hostingu WWW. Składa się z interfejsu graficznego umożliwiającego automatyzację parametrów, co ułatwia hostowanie witryny internetowej.
+cPanel to panel konfiguracyjny ułatwiający zarządzanie hostingiem WWW. Ułatwia dostęp do złożonych zadań, również nowym użytkownikom. Posiada wiele funkcji, takich jak na przykład zarządzanie: 
 
-**Dowiedz się, jak wdrożyć cPanel przy użyciu wstępnie zainstalowanych aplikacji na serwerze VPS.**
+- kont email
+- domeny
+- bazy danych
+- bezpieczeństwa
+- itp.
+
+Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, hosting stron WWW stał się prostszy.
+
+**Dowiedz się, jak zainstalować cPanel za pomocą wstępnie zainstalowanych aplikacji na serwerze VPS.**
 
 ## Wymagania początkowe
 

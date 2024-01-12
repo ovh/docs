@@ -10,9 +10,17 @@ updated: 2024-01-12
 
 ## Ziel
 
-cPanel ist eine Verwaltungsoberfläche für Web Hosting. Es besteht aus einem grafischen Interface, das die Automatisierung von Einstellungen ermöglicht und so Hosting-Management vereinfacht.
+cPanel ist ein Konfigurationspanel, das die Verwaltung von Webhostings vereinfacht. Es macht komplexe Aufgaben leichter zugänglich, auch für neue Benutzer. Es bietet eine breite Palette von Funktionen, wie zum Beispiel für die Verwaltung: 
 
-**Diese Anleitung erläutert die Installation eines VPS mit dem cPanel-Template.**
+- E-Mails
+- Domains
+- Datenbanken
+- Sicherheit
+- usw.
+
+Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erlaubt, wird das Hosting von Webseiten vereinfacht.
+
+**Erfahren Sie, wie Sie cPanel mit vorinstallierten Anwendungen auf einem VPS einrichten.**
 
 ## Voraussetzungen
 

@@ -6,9 +6,17 @@ updated: 2024-01-12
 
 ## Objective
 
-cPanel is a control panel designed for web hosting. Web hosting tasks are simplified, as it is made up of a graphical interface that allows the automation of settings.
+cPanel is a control panel that facilitates the management of web hosting. It makes complex tasks more accessible, including to new users. It offers a wide range of features, such as: 
 
-**Learn how to deploy cPanel with pre-installed applications on a VPS.**
+- emails
+- domains
+- databases
+- Security
+- etc.
+
+This simplifies website hosting, thanks to a graphical interface for automating settings.
+
+**Find out how to deploy cPanel with pre-installed applications on a VPS.**
 
 ## Requirements
 
