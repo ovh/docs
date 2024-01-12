@@ -3,7 +3,7 @@ title: How to use Terraform
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2024-01-10
+updated: 2024-01-12
 ---
 
 ## Objective
@@ -41,7 +41,7 @@ As an example, this video shows how to easily scale the number of instances whil
 
 ### Token creation
 
-Besides the API end-point, the required keys are the application_key, the application_secret, and the consumer_key. These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+Besides the API end-point, the required keys are the `application_key`, the `application_secret`, and the `consumer_key`. These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
 
 ![token](images/example_create_token.png){.thumbnail}
 
