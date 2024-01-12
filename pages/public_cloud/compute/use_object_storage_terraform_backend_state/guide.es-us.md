@@ -88,6 +88,7 @@ terraform {
       endpoint = "s3.gra.perf.cloud.ovh.net"
       skip_credentials_validation = true
       skip_region_validation      = true
+      skip_s3_checksum            = true
     }
 }
 ```
@@ -106,6 +107,7 @@ terraform {
       skip_credentials_validation = true
       skip_region_validation      = true
       skip_requesting_account_id  = true
+      skip_s3_checksum            = true
     }
 }
 ```
