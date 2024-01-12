@@ -20,7 +20,7 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 
 ## Requirements
 
-- A current [VPS solution](https://www.ovhcloud.com/en-gb/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
+- You must have a [recent VPS](https://www.ovhcloud.com/en-gb/vps/){.external} solution  (Value, **Essential**, **Comfort** or **Elite** solutions)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions

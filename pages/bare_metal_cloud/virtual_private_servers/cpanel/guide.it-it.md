@@ -26,7 +26,7 @@ Grazie a unâ€™interfaccia grafica che permette di automatizzare i parametri, lâ€
 
 ## Prerequisiti
 
-- Un [VPS della gamma attuale](https://www.ovhcloud.com/it/vps/) (offerte Value, Essential, Comfort o Elite).
+- Disporre di una soluzione [VPS recente](https://www.ovhcloud.com/it/vps/){.external} (offerte Value, **Essential**, **Comfort** o **Elite**).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ## Procedura

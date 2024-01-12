@@ -26,7 +26,7 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 
 ## Requisitos
 
-- Un [VPS de la gama actual](https://www.ovhcloud.com/es-es/vps/) (oferta Value, Essential, Comfort o Elite).
+- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es-es/vps/){.external} (ofertas Value, **Essential**, **Comfort** o **Elite**).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento

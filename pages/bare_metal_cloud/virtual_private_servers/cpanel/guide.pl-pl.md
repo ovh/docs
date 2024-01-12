@@ -24,7 +24,7 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 
 ## Wymagania początkowe
 
-- [aktualne rozwiązanie VPS](https://www.ovhcloud.com/pl/vps/) (Value, Essential, Comfort lub Elite).
+- Wykupienie usługi [VPS](https://www.ovhcloud.com/pl/vps/){.external} (oferty Value, **Essential**, **Comfort** lub **Elite**).
 - zalogowanie do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce

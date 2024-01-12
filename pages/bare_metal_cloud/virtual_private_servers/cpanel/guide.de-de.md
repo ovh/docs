@@ -24,7 +24,7 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) der neueren Generation (Reihen Value, Essential, Comfort, Elite) in Ihrem Kunden-Account.
+- Sie verfügen über ein Angebot [VPS neueren Datums](https://www.ovhcloud.com/de/vps/){.external} (Value-Angebote, **Essential**, **Comfort** oder **Elite**).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
