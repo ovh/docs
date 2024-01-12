@@ -29,7 +29,7 @@ Graças a uma interface gráfica que permite a automatização dos parâmetros, 
 
 ## Instruções
 
-Para instalar o seu servidor cPanel, primeiro tem de encomendar um VPS com a distribuição cPanel.
+Para instalar o seu servidor cPanel, encomende um VPS com a distribuição cPanel.
 
 ![cPanel](images/cpanel_order.png){.thumbnail}
 
@@ -37,6 +37,7 @@ Quando o VPS estiver pronto, receberá um e-mail a dar-lhe as informações de a
 
 ```
  |    As suas aplicações:
+ |    Application: cpanel
  |    Pode conectar-se ao cPanel a partir de https://<ip>:2087/<session_parameters>
 ```
 

@@ -31,7 +31,7 @@ Grazie a un’interfaccia grafica che permette di automatizzare i parametri, l�
 
 ## Procedura
 
-Per installare il tuo server cPanel, è necessario ordinare un VPS con la distribuzione cPanel.
+Per installare il tuo server cPanel, ordina un VPS con la distribuzione cPanel.
 
 ![cPanel](images/cpanel_order.png){.thumbnail}
 
@@ -39,6 +39,7 @@ Quando il VPS è pronto, ricevi un’email con le credenziali di accesso al serv
 
 ```
  |    Le tue applicazioni:
+ |    Application: cpanel
  |    Puoi accedere a cPanel da https://<ip>:2087/<session_parameters>
 ```
 

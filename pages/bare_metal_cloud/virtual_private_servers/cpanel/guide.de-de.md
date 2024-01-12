@@ -29,15 +29,17 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 
 ## In der praktischen Anwendung
 
-Um einen cPanel-Server einzurichten, muss zuerst ein VPS mit cPanel-Distribution bestellt werden.
+Um Ihren cPanel Server zu installieren, bestellen Sie einen VPS mit cPanel Distribution.
 
 ![horizon](images/cpanel_order.png){.thumbnail}
 
 Wenn Ihr VPS bereit ist, erhalten Sie eine E-Mail mit den Zugangsdaten, um sich mit Ihrem cPanel-Server zu verbinden:
 
->Ihre Anwendung(en):
->
->Sie können sich mit cPanel verbinden über: https://*hostname*:2087/*session_parameters*
+```
+ |    Ihre Anwendung(en):
+ |    Application: cPanel
+ |    Sie können sich mit cPanel verbinden über: https://*hostname*:2087/<session_parameters>
+```
 
 Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann "CentOS 7 - cPanel" als Template (nur auswählbar bei einem kompatiblen VPS Modell).
 

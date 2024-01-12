@@ -29,15 +29,17 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 
 ## Procedimiento
 
-Para instalar su servidor cPanel, primero necesita contratar un VPS con una distribución cPanel.
+Para instalar su servidor cPanel, contrate un VPS con la distribución cPanel.
 
-![horizon](images/cpanel_order.png){.thumbnail}
+![cPanel](images/cpanel_order.png){.thumbnail}
 
-Cuando su VPS esté listo, recibirá un correo electrónico proporcionando la información para conectarse a su servidor Cpanel.
+Cuando su VPS esté listo, recibirá un correo electrónico con los datos de acceso para conectarse a su servidor cPanel:
 
-> Su aplicación:
->
-> Puede conectarse a su cPanel desde: https://hostname:2087/session_parameters
+```
+ |    Sus aplicaciones:
+ |    Application: cpanel
+ |    Puede conectarse a cpanel desde https://<ip>:2087/<session_parameters>
+```
 
 Si su VPS ya esta listo y quiere tener cPanel, puede reinstalar el VPS desde su panel de control OVHcloud  con la plantilla  "Centos 7 - cPanel" (disponible solo con una solución de VPS compatible).
 

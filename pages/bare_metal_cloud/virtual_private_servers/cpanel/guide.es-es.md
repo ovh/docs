@@ -31,7 +31,7 @@ Gracias a una interfaz gráfica que permite automatizar los parámetros, el aloj
 
 ## Procedimiento
 
-Para instalar su servidor cPanel, primero debe contratar un VPS con la distribución cPanel.
+Para instalar su servidor cPanel, contrate un VPS con la distribución cPanel.
 
 ![cPanel](images/cpanel_order.png){.thumbnail}
 
@@ -39,6 +39,7 @@ Cuando su VPS esté listo, recibirá un correo electrónico con los datos de acc
 
 ```
  |    Sus aplicaciones:
+ |    Application: cpanel
  |    Puede conectarse a cpanel desde https://<ip>:2087/<session_parameters>
 ```
 

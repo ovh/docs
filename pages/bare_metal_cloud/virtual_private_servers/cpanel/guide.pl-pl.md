@@ -29,7 +29,7 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 
 ## W praktyce
 
-Aby zainstalować serwer cPanel, należy najpierw zamówić VPS z dystrybucją cPanel.
+Aby zainstalować serwer cPanel, zamów VPS z dystrybucją cPanel.
 
 ![cPanel](images/cpanel_order.png){.thumbnail}
 
@@ -37,6 +37,7 @@ Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania 
 
 ```
  |    Twoje aplikacje:
+ |    aplikacja: cpanel
  |    Możesz zalogować się do cpanel ze strony https://<ip>:2087/<session_parameters>
 ```
 
