@@ -730,7 +730,7 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 Avec l'API, demandez la suppression du vDC :
 
 > [!api]
->
+>x
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
@@ -738,7 +738,10 @@ Avec l'API, demandez la suppression du vDC :
 
 ### Etape 7 Recréer une architecture NSX-v avancée sur NSX
 
-Vous trouverez toutes les informations relatives à la mise en place d'une architecture NSX-v avancée sur NSX en visionnant [cette vidéo](https://vimeo.com/891113062?share=copy).
+Vous trouverez toutes les informations relatives à la mise en place d'une architecture NSX-v avancée sur NSX en visionnant cette vidéo.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/891113062?h=dfd1a3d5dc&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/891113062">Recréer une architecture NSX-v avancée sur NSX</a> de <a href="https://vimeo.com/ovhcloud">OVHcloud</a> sur <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## FAQ
 
@@ -776,10 +779,10 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 >> Non, le plafond de facturation horaire est désactivé sur les offres 2020 (Premier & Essentials). Toutes les anciennes gammes continueront à fonctionner avec le plafond de facturation horaire en place
 > Le prix des anciennes offres va-t-il évoluer?
 >> Non, il n'y a pas de modification tarifaire des anciennes offres prévue.
->  Dans quelle langue les Services Professionnels d'OVHcloud sont-ils disponibles ?
+> Dans quelle langue les Services Professionnels d'OVHcloud sont-ils disponibles ?
 >> Les Services professionnels OVHcloud sont disponibles en français et en anglais.
 > Est-ce que les Services Professionnels d'OVHcloud peuvent recréer mes comptes utilisateurs & configurations NSX pour moi ?
->> Nos Services Professionnels n'effectuent aucune opération sur l'infrastructure du client. Nous sommes là pour vous aider, vous guider et vous conseiller. Dans ce cas de figure, nous allons diriger notre client vers un partenaire qui pourra exécuter les opérations dans l'infrastructure client. 
+>> Nos Services Professionnels n'effectuent aucune opération sur l'infrastructure du client. Nous sommes là pour vous aider, vous guider et vous conseiller. Dans ce cas de figure, nous allons diriger notre client vers un partenaire qui pourra exécuter les opérations dans l'infrastructure client.
 > Quelle est la durée de vie des crédits du Pack of Technical Advice Services ?
 >> Le pack est valide pour une durée de 3 mois à compter de la commande.
 > Comment savoir combien d'heures de Crédits ont été utilisées et sont restantes ?
@@ -788,7 +791,6 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 >> Une session est planifiée et comptabilisée en blocs de 1 heure. Par exemple, une session programmée sur 2 heures et durant 1,5 heure serait facturée sur 2 heures. Une session prévue pour 3 heures mais durant seulement 1,5 heure serait facturée à 2 heures.
 
 ## Aller plus loin
-
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
