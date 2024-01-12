@@ -1,7 +1,7 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2023-12-22
+updated: 2024-01-12
 ---
 
 <style>
@@ -728,8 +728,8 @@ Below is a list of frequently asked questions about vDC migration.
 
 > [!faq]
 >
-> Quels sont les impacts lors du partage de mes datastores entre mes vDC ?
->> Il n'y a aucun impact sur votre production, sur la facturation ou sur les snapshots ZFS. Cependant, il n'est actuellement pas possible d'annuler le partage d'un datastore. Nous modifierons cela plus tard.
+> What are the impacts when sharing my datastores between my vDCs?
+>> There is no impact on your production, billing or ZFS snapshots. However, it is not currently possible to unshare a datastore. We'll change that later.
 > Will the VMs (with public IPs) be accessible from the outside if they are in the new vDC when the PFSENSEs are in the old vDC?
 >> Yes, the VM network is at the level of the VMware infrastructure and therefore on the 2 vDC.
 > Is it possible to set up a PFSENSE in the old vDC and another in the new vDC?

@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2023-12-23
+updated: 2024-01-12
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -730,7 +730,7 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 Avec l'API, demandez la suppression du vDC :
 
 > [!api]
->x
+>
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
