@@ -31,9 +31,9 @@ W tym tutorialu znajdziesz przykłady sytuacji dotyczących zabezpieczenia Twoje
 
 ### Zawartość mieszana (mixed content)
 
-Twoja strona WWW nie ładuje elementów zewnętrznych, takich jak przyciski *Facebook* i *Twitter*? Interakcje na Twojej stronie WWW nie działają tak, jak gdy wchodzisz na Twoją stronę z "HTTP"? Przyczyną może być to, że witryna sieci Web zawiera treści mieszane. 
+Twoja strona WWW nie ładuje elementów zewnętrznych, takich jak przyciski *Facebook* i *X/Twitter*? Interakcje na Twojej stronie WWW nie działają tak, jak gdy wchodzisz na Twoją stronę z "HTTP"? Przyczyną może być to, że witryna sieci Web zawiera treści mieszane. 
 
-Od kilku lat przeglądarki, takie jak *Google Chrome*, *Mozilla Firefox* i *Internet Explorer* uniemożliwiają stronom WWW używającym "HTTPS" ładowanie elementów stron, jeśli są one dostępne za pośrednictwem "HTTP". Dzięki temu poufność dostarczona przez protokół "HTTPS" nie zostanie naruszona przez element załadowany przy użyciu "HTTP". 
+Od kilku lat przeglądarki, takie jak *Google Chrome*, *Mozilla Firefox* i *Microsoft Edge/Internet Explorer* uniemożliwiają stronom WWW używającym "HTTPS" ładowanie elementów stron, jeśli są one dostępne za pośrednictwem "HTTP". Dzięki temu poufność dostarczona przez protokół "HTTPS" nie zostanie naruszona przez element załadowany przy użyciu "HTTP". 
 
 W większości przypadków są to skrypty zewnętrzne pochodzące z innych stron internetowych, takich jak sieci społecznościowe. W takim przypadku wystarczy zastąpić w skryptach adresy URL "HTTP" przez adresy URL "HTTPS", aby można było załadować te skrypty.
 
