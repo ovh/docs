@@ -1,7 +1,7 @@
 ---
-title: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
-excerpt: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
-updated: 2024-01-09
+title: "Trasferire il backup di un volume da una Region OpenStack ad un'altra"
+excerpt: "Scopri come trasferire un backup di volume da una Region OpenStack ad un’altra"
+updated: 2024-01-11
 ---
 
 > [!primary]
@@ -10,29 +10,24 @@ updated: 2024-01-09
 
 ## Obiettivo
 
-In alcuni casi, potresti avere bisogno di trasferire i tuoi dischi aggiuntivi da un datacenter a un altro, sia perché è disponibile un nuovo datacenter, sia perché vuoi migrare da [OVHcloud Labs](https://labs.ovh.com/){.external} a [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}.
+In alcuni casi potrebbe essere necessario spostare volumi aggiuntivi da una Region OpenStack a un'altra, perché è disponibile una nuova Region o perché si desidera migrare da [OVHcloud Labs](https://labs.ovh.com/){.external} al [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}.
 
-**Questa guida ti mostra come trasferire il backup di un disco aggiutivo da un datacenter a un altro.**
+**Questa guida ti mostra come migrare un backup di un volume da una Region OpenStack ad un'altra.**
 
 ## Prerequisiti
 
-- Disporre di un'[istanza Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} attiva nel tuo account OVHcloud
-- Avere accesso in SSH al datacenter (root)
-- Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external} (consigliato)
+- CLI OpenStack. Consulta la nostra guida "[Come preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)".
+- Connettività con le API OVHcloud OpenStack.
+- Spazio di storage disponibile corrispondente alla dimensione del disco del volume (per lo storage di backup temporaneo).
 
-> [!primary]
->
-I comandi utilizzati in questa guida sono basati sulla CLI OpenStack.
->
+Questo ambiente verrà utilizzato come "jump host" per trasferire il backup da una regione all'altra. L’ambiente può essere costituito da un’istanza ospitata in OVHcloud o sulla macchina locale.
 
 ## Procedura
 
 ### Crea un backup
 
-Crea una connessione SSH al tuo datacenter ed esegui questo comando per identificare i tuoi volumi esistenti:
-
 ```sh
-root@server:~$ openstack volume list 
+$ openstack volume list 
 +--------------------------------------+--------------+--------+------+----------------------------------+
 | ID                                   | Display Name | Status | Size | Attached to                      |
 +--------------------------------------+--------------+--------+------+----------------------------------+
@@ -40,16 +35,29 @@ root@server:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+----------------------------------+
 ```
 
+Se il volume è associato a un’istanza, è necessario scollegarlo prima di creare il backup.
+
+Utilizza il comando qui sotto per recuperare l’ID dell’istanza:
+
+```sh
+$ openstack server list
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+| ID                                   | Name      | Status | Networks                                       | Image    | Flavor |
++--------------------------------------+-----------+--------+--------------------------------------------------------------------+
+| a8b6b51-4413-4d1a-8113-9597d804b07e  | Server 1  | ACTIVE | Ext-Net=155.55.55.155, 2607:5300:23x:5000::8d5 | Centos 7 | b2-7   |
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+```
+
 Eseguire quindi il comando seguente per smontare il volume dalla sua istanza:
 
 ```sh
-root@server:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
+$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
 Crea un backup sotto forma di immagine utilizzando questo comando:
 
 ```sh
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
+$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
 +---------------------+------------------------------------------------------+
 |       Property      |                         Value                        |
 +---------------------+------------------------------------------------------+
@@ -71,7 +79,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Per visualizzare le immagini disponibili, esegui questo comando:
 
 ```sh
-root@server:~$ openstack image list
+$ openstack image list
 +--------------------------------------+--------------------------------+--------+
 | ID                                   | Name                           | Status |
 +--------------------------------------+--------------------------------+--------+
@@ -100,32 +108,32 @@ Identifica il backup nella lista:
 Esegui questo comando per scaricare il backup:
 
 ```sh 
-root@server:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
+$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
-### Trasferisci il backup in un altro datacenter
+### Trasferisci il backup in un'altra Region Openstack
 
 Prima di avviare il processo di trasferimento è necessario impostare le nuove variabili d’ambiente.
 
 > [!warning]
 >
-Per migrare il backup in un altro datacenter utilizzato nell’ambito dello stesso progetto, è sufficiente modificare la variabile OS_REGION_NAME.
+Se si trasferisce il backup in una regione Openstack dello stesso progetto, è sufficiente modificare la variabile OS_REGION_NAME.
 >
 
 ```sh 
-root@server:~$ export OS_REGION_NAME=SBG1
+$ export OS_REGION_NAME=SBG1
 ```
 
 Per migrare il backup verso un altro progetto o account, è necessario ricaricare le variabili d'ambiente associate a questo account utilizzando il seguente comando:
 
 ```sh
-root@server:~$ source openrc.sh
+$ source openrc.sh
 ```
 
-Per trasferire il backup nel nuovo datacenter, utilizza questo comando:
+Per trasferire il backup nella nuova Region Openstack, esegui il comando:
 
 ```sh
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume
+$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume
 +------------------+------------------------------------------------------+
 | Field            | Value                                                |
 +------------------+------------------------------------------------------+
@@ -156,7 +164,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Per effettuare questa operazione, esegui il seguente comando utilizzando l’identificativo dell’immagine del backup:
 
 ```sh
-root@server:~$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
+$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
@@ -184,6 +192,6 @@ root@server:~$ openstack volume create --type classic --image aa2a39c6-433c-4e94
 
 ## Per saperne di più
 
-[Trasferire il backup di un’istanza tra datacenter](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
+[Trasferire il backup di un’istanza da una Region OpenStack ad un’altra ](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,35 +1,31 @@
 ---
-title: "Przenoszenie kopii zapasowej woluminu z jednego centrum danych do drugiego" 
-excerpt: "Dowiedz się, jak przenieść kopię zapasową woluminu między różnymi centrami danych"
-updated: 2024-01-09
+title: "Przenoszenie kopii zapasowej wolumenu z jednego regionu OpenStack do innego"
+excerpt: "Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regionu OpenStack do innego"
+updated: 2024-01-11
 ---
 
 ## Wprowadzenie
 
-Może zajść potrzeba przeniesienia dodatkowych wolumenów z jednego centrum danych do innego, ponieważ dostępne jest nowe centrum danych lub chcesz przenieść swoje zasoby z [OVHcloud Labs](https://labs.ovh.com/){.external} na [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}.
+Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu OpenStack do innego, ponieważ jest dostępny nowy region lub chcesz przenieść z [OVHcloud Labs](https://labs.ovh.com/){.external} do [Public Cloud](https://www.ovh.com/pl/public-cloud){.external}.
 
-**Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego centrum danych do innego.**
+**Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regionu OpenStack do innego.**
 
-## Wymagania początkowe
+## Wymagania
 
-* Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud.
-* Dostęp administratora (root) do centrum danych przez SSH.
-* Zapoznaj się z przewodnikiem "[Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}" (zalecane).
+Do przeniesienia będziesz potrzebował środowiska z:
 
+- CLI OpenStack. Zapoznaj się z przewodnikiem "[Jak przygotować środowisko do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)".
+- Łączność z API OVHcloud OpenStack.
+- Dostępnego miejsca do magazynowania odpowiadającego rozmiarowi dysku woluminu (dla tymczasowego magazynu kopii zapasowych).
 
-> [!primary]
->
-Polecenia w tym przewodniku są oparte na OpenStack CLI.
->
+Środowisko to będzie używane jako "jump host" do przenoszenia kopii zapasowej z jednego regionu do innego. Środowisko to może być instancją hostowaną w OVHcloud lub na Twojej maszynie lokalnej.
 
 ## W praktyce
 
 ### Utwórz kopię zapasową
 
-Nawiąż połączenie SSH z Twoim centrum danych, a następnie wprowadź następującą komendę, aby wyświetlić listę Twoich istniejących wolumenów:
-
 ```sh
-root@server:~$ openstack volume list
+$ openstack volume list
 +--------------------------------------+--------------+--------+------+----------------------------------+
 | ID                                   | Display Name | Status | Size | Attached to                      |
 +--------------------------------------+--------------+--------+------+----------------------------------+
@@ -37,16 +33,29 @@ root@server:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+----------------------------------+
 ```
 
+Jeśli wolumin jest podłączony do instancji, przed utworzeniem kopii zapasowej należy go odłączyć.
+
+Użyj poniższego polecenia, aby pobrać ID instancji:
+
+```sh
+$ openstack server list
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+| ID                                   | Name      | Status | Networks                                       | Image    | Flavor |
++--------------------------------------+-----------+--------+--------------------------------------------------------------------+
+| a8b6b51-4413-4d1a-8113-9597d804b07e  | Server 1  | ACTIVE | Ext-Net=155.55.55.155, 2607:5300:23x:5000::8d5 | Centos 7 | b2-7   |
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+```
+
 Następnie wprowadź poniższą komendę, aby odmontować wolumin z jego instancji:
 
 ```sh 
-root@server:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
+$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
 Teraz utwórz obrazkową kopię zapasową, używając następującego polecenia:
 
 ```sh
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume 
+$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume 
 +---------------------+------------------------------------------------------+
 |       Property      |                         Value                        |
 +---------------------+------------------------------------------------------+
@@ -68,7 +77,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Aby wyświetlić dostępne obrazy, wprowadź następującą komendę:
 
 ```sh
-root@server:~$ openstack image list 
+$ openstack image list 
 +--------------------------------------+--------------------------------+--------+
 | ID                                   | Name                           | Status |
 +--------------------------------------+--------------------------------+--------+
@@ -97,32 +106,32 @@ Wyszukaj następnie kopię zapasową na liście:
 Następnie wprowadź następującą komendę, aby pobrać kopię zapasową:
 
 ```sh 
-root@server:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
+$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
-### Przenoszenie kopii zapasowej do innego centrum danych
+### Przeniesienie kopii zapasowej do innego regionu Openstack
 
 Aby rozpocząć proces transferu, należy najpierw załadować nowe zmienne środowiskowe.
 
 > [!warning]
 >
-Jeśli przenosisz kopię zapasową do centrum danych w tym samym projekcie, po prostu zmodyfikuj zmienną OS_REGION_NAME.
+Jeśli przenosisz Twoją kopię zapasową do regionu Openstack w tym samym projekcie, zmień zmienną OS_REGION_NAME.
 >
 
 ```sh 
-root@server:~$ export OS_REGION_NAME=SBG1
+$ export OS_REGION_NAME=SBG1
 ```
 
 Jeśli przenosisz kopię zapasową instancji do innego projektu lub na inne konto, pobierz ponownie zmienne środowiskowe powiązane z tym kontem, używając następującej komendy:
 
 ```sh
-root@server:~$ source openrc.sh
+$ source openrc.sh
 ```
 
-Aby przenieść kopię zapasową do nowego centrum danych, użyj poniższej komendy:
+Aby przenieść kopię zapasową do nowego regionu Openstack, użyj poniższego polecenia:
 
 ```sh 
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume 
+$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume 
 +------------------+------------------------------------------------------+
 | Field            | Value                                                |
 +------------------+------------------------------------------------------+
@@ -148,12 +157,12 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 +------------------+------------------------------------------------------+
 ```
 
-### Utwórz wolumin z kopii zapasowej
+### Utwórz wolumen z kopii zapasowej
 
-Użyj identyfikatora kopii zapasowej jako obrazu za pomocą następującego polecenia :
+Użyj identyfikatora kopii zapasowej jako obrazu za pomocą następującego polecenia:
 
 ```sh
-root@server:~$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
+$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+

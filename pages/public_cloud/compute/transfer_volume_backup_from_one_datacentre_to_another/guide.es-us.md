@@ -1,31 +1,28 @@
 ---
-title: 'Transferir la copia de seguridad de un volumen de un datacenter a otro'
-excerpt: "Cómo transferir una copia de seguridad de un volumen entre diferentes centros de datos"
-updated: 2024-01-09
+title: "Transferir la copia de seguridad de un volumen de una región de OpenStack a otra"
+excerpt: "Cómo transferir una copia de seguridad de un volumen de una región de OpenStack a otra"
+updated: 2024-01-11
 ---
 
 ## Objetivo
 
-Es posible que necesite mover volúmenes adicionales de un datacenter a otro, bien porque haya un nuevo datacenter disponible, bien porque quiera migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} al [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}.
+Es posible que necesite mover volúmenes adicionales de una región de OpenStack a otra, bien porque haya una nueva región disponible, bien porque quiera migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} al [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}.
 
-**Descubra cómo transferir una copia de seguridad de un volumen de un datacenter a otro.**
+**Descubra cómo transferir una copia de seguridad de un volumen de una región de OpenStack a otra.**
 
 ## Requisitos
 
-* Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud.
-* Tener acceso de administrador (root) a su datacenter por SSH.
-* Lea la guía « [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external} » (recomendado).
+Para realizar la transferencia, necesitará un entorno con:
 
-> [!primary]
->
-Los comandos de esta guía están basados en la CLI de OpenStack.
->
+- CLI OpenStack. Consulte nuestra guía «[Cómo preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)».
+- Conectividad a la API OpenStack de OVHcloud.
+- Espacio de almacenamiento disponible correspondiente al tamaño del disco del volumen (para el almacenamiento de copia de seguridad temporal).
+
+Este entorno se utilizará como «jump host» para transferir la copia de seguridad de una región a otra. Este entorno puede ser una instancia alojada en OVHcloud o en su máquina local.
 
 ## Procedimiento
 
 ### Crear una copia de seguridad
-
-Conéctese por SSH a su datacenter y ejecute el siguiente comando para consultar los volúmenes existentes:
 
 ```sh
 root@server:~$ openstack volume list
@@ -36,16 +33,29 @@ root@server:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+----------------------------------+
 ```
 
+Si el volumen está conectado a una instancia, primero deberá desvincularlo antes de crear la copia de seguridad.
+
+Utilice el siguiente comando para obtener el ID de la instancia:
+
+```sh
+$ openstack server list
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+| ID                                   | Name      | Status | Networks                                       | Image    | Flavor |
++--------------------------------------+-----------+--------+--------------------------------------------------------------------+
+| a8b6b51-4413-4d1a-8113-9597d804b07e  | Server 1  | ACTIVE | Ext-Net=155.55.55.155, 2607:5300:23x:5000::8d5 | Centos 7 | b2-7   |
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+```
+
 A continuación, ejecute el siguiente comando para desmontar el volumen desde su instancia:
 
 ```sh 
-root@server:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
+$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
 Ahora cree una copia de seguridad como imagen con el siguiente comando:
 
 ```sh
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume 
+$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume 
 +---------------------+------------------------------------------------------+
 |       Property      |                         Value                        |
 +---------------------+------------------------------------------------------+
@@ -67,7 +77,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Ejecute el siguiente comando para enumerar las imágenes disponibles:
 
 ```sh
-root@server:~$ openstack image list 
+$ openstack image list 
 +--------------------------------------+--------------------------------+--------+
 | ID                                   | Name                           | Status |
 +--------------------------------------+--------------------------------+--------+
@@ -96,33 +106,33 @@ Identifique la copia de seguridad en la lista:
 Por último, ejecute este comando para descargar la copia de seguridad:
 
 ```sh 
-root@server:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
+$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
 
-### Transferir el backup a otro datacenter
+### Transferir la copia de seguridad a otra región OpenStack
 
 Para iniciar el proceso de transferencia, primero debe cargar nuevas variables de entorno.
 
 > [!warning]
 >
-Si va a transferir el backup a un datacenter del mismo proyecto, solo tiene que modificar la variable OS_REGION_NAME.
+Si va a transferir su copia de seguridad a una región OpenStack del mismo proyecto, solo tiene que modificar la variable OS_REGION_NAME.
 >
 
 ```sh 
-root@server:~$ export OS_REGION_NAME=SBG1
+$ export OS_REGION_NAME=SBG1
 ```
 
-Si transfiere su copia de seguridad a otro proyecto o cuenta, debe volver a cargar las variables de entorno vinculadas a esta cuenta mediante el siguiente comando:
+Si va a transferir el backup a otro proyecto o cuenta, deberá volver a cargar las variables de entorno asociadas a dicha cuenta utilizando el siguiente comando:
 
 ```sh
-root@server:~$ source openrc.sh
+$ source openrc.sh
 ```
 
-Para transferir el backup al nuevo datacenter, utilice el siguiente comando:
+Para transferir la copia de seguridad a la nueva región OpenStack, utilice el siguiente comando:
 
 ```sh 
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume 
+$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume 
 +------------------+------------------------------------------------------+
 | Field            | Value                                                |
 +------------------+------------------------------------------------------+
@@ -153,7 +163,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Utilice el ID de copia de seguridad como imagen con el siguiente comando:
 
 ```sh
-root@server:~$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
+$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+

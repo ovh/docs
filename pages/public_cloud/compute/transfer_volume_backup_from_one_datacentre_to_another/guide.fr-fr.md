@@ -1,34 +1,31 @@
 ---
-title: "Transférer la sauvegarde d’un volume d’un datacenter à l’autre"
-excerpt: "Apprenez à déplacer une sauvegarde de volume entre différents centres de données"
-updated: 2024-01-09
+title: "Transférer la sauvegarde d'un volume d'une région OpenStack à une autre"
+excerpt: "Découvrez comment transférer une sauvegarde de volume d'une région OpenStack à une autre"
+updated: 2024-01-11
 ---
 
 ## Objectif
 
-Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter à un autre, soit parce qu'un nouveau centre de données est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers le [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
+Vous pouvez avoir besoin de déplacer des volumes additionnels d'une région OpenStack à une autre, soit parce qu'une nouvelle région est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers le [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
 
-**Découvrez comment transférer une sauvegarde de volume d'un datacenter à un autre.**
+**Découvrez comment transférer une sauvegarde de volume d'une région OpenStack à une autre.**
 
 ## Prérequis
 
-* Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} dans votre compte OVHcloud.
-* Disposer d’un accès administrateur (root) à votre datacenter via SSH.
-* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external} » (recommandé).
+Pour effectuer le transfert, vous aurez besoin d'un environnement avec :
 
-> [!primary]
->
-Les commandes de ce guide sont basées sur la CLI OpenStack, par opposition aux API `Nova` et `Glance`.
->
+- CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ».
+- La Connectivité aux API OVHcloud OpenStack.
+- De l'espace de stockage disponible correspondant à la taille du disque du volume (pour le stockage de sauvegarde temporaire).
+
+Cet environnement sera utilisé comme « jump host » pour transférer la sauvegarde d'une région à une autre. Cet environnement peut être une instance hébergée sur OVHcloud ou sur votre machine locale.
 
 ## En pratique
 
 ### Créer une sauvegarde
 
-Établissez une connexion SSH à votre datacenter, puis exécutez la commande suivante pour répertorier vos volumes existants :
-
 ```sh
-root@server:~$ openstack volume list 
+$ openstack volume list 
 +--------------------------------------+--------------+--------+------+----------------------------------+
 | ID                                   | Display Name | Status | Size | Attached to                      |
 +--------------------------------------+--------------+--------+------+----------------------------------+
@@ -36,16 +33,29 @@ root@server:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+----------------------------------+
 ```
 
-Lancez ensuite la commande ci-dessous pour démonter le volume à partir de son instance :
+Si le volume est attaché à une instance, il faut d'abord le détacher avant de créer la sauvegarde.
+
+Utiliser la commande ci-dessous pour récupérer l'ID de l'instance :
+
+```sh
+$ openstack server list
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+| ID                                   | Name      | Status | Networks                                       | Image    | Flavor |
++--------------------------------------+-----------+--------+--------------------------------------------------------------------+
+| a8b6b51-4413-4d1a-8113-9597d804b07e  | Server 1  | ACTIVE | Ext-Net=155.55.55.155, 2607:5300:23x:5000::8d5 | Centos 7 | b2-7   |
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+```
+
+Ensuite, exécutez la commande suivante pour détacher le volume de son instance :
 
 ```sh 
-root@server:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
+$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
 Maintenant, créez une sauvegarde sous forme d'image à l'aide de cette commande suivante :
 
 ```sh
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume 
+$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume 
 +---------------------+------------------------------------------------------+
 |       Property      |                         Value                        |
 +---------------------+------------------------------------------------------+
@@ -67,7 +77,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Exécutez la commande suivante pour répertorier les images disponibles :
 
 ```sh
-root@server:~$ openstack image list 
+$ openstack image list 
 +--------------------------------------+--------------------------------+--------+
 | ID                                   | Name                           | Status |
 +--------------------------------------+--------------------------------+--------+
@@ -96,32 +106,32 @@ Identifiez alors la sauvegarde dans la liste :
 Lancez enfin cette commande pour télécharger la sauvegarde :
 
 ```sh 
-root@server:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
+$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
-### Transférer la sauvegarde vers un autre datacenter
+### Transférer la sauvegarde vers une autre région OpenStack
 
 Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelles variables d'environnement.
 
 > [!warning]
 >
-Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS_REGION_NAME.
+Si vous transférez votre sauvegarde vers une région OpenStack au sein du même projet, vous devrez changer la variable `OS_REGION_NAME`.
 >
 
 ```sh 
-root@server:~$ export OS_REGION_NAME=SBG1
+$ export OS_REGION_NAME=SBG1
 ```
 
-Si vous transférez votre sauvegarde vers un autre projet ou compte, vous devez recharger les variables d'environnement liées à ce compte à l'aide de la commande suivante :
+Si vous transférez votre sauvegarde vers un autre projet ou compte, vous devrez recharger les variables d'environnement liées à ce compte à l'aide de la commande suivante :
 
 ```sh
-root@server:~$ source openrc.sh
+$ source openrc.sh
 ```
 
-Pour transférer la sauvegarde vers le nouveau datacenter, utilisez la commande ci-dessous :
+Pour transférer la sauvegarde vers la nouvelle région OpenStack, utilisez cette commande :
 
 ```sh 
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume 
+$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume 
 +------------------+------------------------------------------------------+
 | Field            | Value                                                |
 +------------------+------------------------------------------------------+
@@ -149,10 +159,10 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 
 ### Créer un volume à partir de votre sauvegarde
 
-Utilisez l'ID de sauvegarde comme image avec la commande suivante :
+Pour créer un volume à partir de votre sauvegarde, utilisez l'ID de la sauvegarde comme image avec cette commande :
 
 ```sh
-root@server:~$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
+$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
@@ -180,6 +190,6 @@ root@server:~$ openstack volume create --type classic --image aa2a39c6-433c-4e94
 
 ## Aller plus loin
 
-[Transférer la sauvegarde d’une instance d’un datacenter à un autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
+[Transférer la sauvegarde d'une instance d'une région OpenStack à une autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
