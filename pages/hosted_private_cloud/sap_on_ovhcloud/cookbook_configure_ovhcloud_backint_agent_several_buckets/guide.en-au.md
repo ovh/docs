@@ -1,98 +1,126 @@
 ---
 title: "Use OVHcloud Backint Agent with several S3 Object Storage buckets"
 excerpt: "This guide provides instructions for using OVHcloud Backint Agent for SAP HANA with several S3 Object Storage buckets"
-updated: 2023-09-05
+updated: 2024-01-11
 ---
- 
- 
+
 ## Objective
 
 This guide provides the details of using OVHcloud Backint Agent for SAP HANA with several S3 Object Storage buckets.
 
-OVHcloud Backint Agent for SAP HANA allows you to back up your SAP HANA database on an OVHcloud S3 Object Storage bucket.
+OVHcloud Backint Agent for SAP HANA allows you to back up and recover your SAP HANA database on one or many OVHcloud S3 Object Storage buckets.
 
-The advantage of using several S3 Object Storage buckets is to separate the data backup named "DATA" from the log backup named "LOG", for example to store it on an S3 Object Storage bucket with different needs or another location.
+The advantage of using several S3 Object Storage buckets is to separate the data backup named "DATA" from the log backup named "LOG", or to store into a S3 Object Storage bucket with a different retention policy or also another location.
 
 ![two_buckets](images/two_buckets.png){.thumbnail}
 
+OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find certification information here:
+
+- [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389)
+- [SAP Note 2031547](https://me.sap.com/notes/0002031547)
+- [SAP Note 3344150](https://me.sap.com/notes/3344150)
+
 ## Requirements
 
-- [A Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)deployed.
-- [An S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) created.
-- [At least two S3 Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) created.
-- [The read and write rights configured](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) on the S3 Object Storage buckets for the S3 user.
-- An SAP HANA database installed.
-- [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent#ovhcloud-backint-agent-for-sap-hana).
-
-> [!warning]
-> The access key and the secret key should not be communicated. They grant the rights to write, read and delete the data which will be stored in the S3 Object Storage bucket.
->
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- [A Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account with:
+    - Two [S3 Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) and an [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights
+- A SAP HANA database installed
+- [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
 
 ## Instructions
 
 ### S3 Object Storage
 
 > [!primary]
+>
 > To get more information about the configuration and the usage of the AWS S3 CLI commands, please refer to the documentation [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 >
+> It's not mandatory to install AWS S3 CLI on your SAP HANA server. All actions in this chapter can be done from your admin server or also from your laptop.
+>
 
-The bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent.
+The S3 Object Storage buckets versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your S3 Object Storage buckets.
 
-To check if the versioning is enabled on your S3 Object Storage bucket, execute the following command:
+With SAP HANA backups, the versioning allows you to trigger several backups with the same name (for example "COMPLETE_DATA_BACKUP") and keeping the capacity to recover a specific version of the backup named "COMPLETE_DATA_BACKUP". If the versioning is not enabled, only the latest version of the backup named "COMPLETE_DATA_BACKUP" can be recovered.
+
+To check if the versioning is enabled on your S3 Object Storage buckets, please execute the following command:
 
 ```bash
-aws --profile <profile_name> \
-s3api get-bucket-versioning \
---bucket <bucket_name>
+aws --profile <profile_name> s3api get-bucket-versioning --bucket <bucket_name>
+
+# Example :
+# aws --profile default s3api get-bucket-versioning --bucket my-sap-hana-bucket-data
+# aws --profile default s3api get-bucket-versioning --bucket my-sap-hana-bucket-log
 ```
 
-Output expected:
+Expected output for each S3 Object Storage bucket:
 
-```bash
+```console
 {
     "Status": "Enabled"
 }
 ```
 
-If the versioning status of your S3 Object Storage bucket is different from `Enabled`, execute the following command:
+If the output is empty, it means that the versioning of your S3 Object Storage buckets is not enabled. To fix it, please execute the following command:
 
 ```bash
-aws --profile <profile_name> \
-s3api put-bucket-versioning \
---bucket <bucket_name> \
---versioning-configuration Status=Enabled
-```
+aws --profile <profile_name> s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
 
-> [!warning]
-> This step has to be done on all S3 Object Storage buckets which will be used to back up your SAP HANA database with OVHcloud Backint Agent.
->
+# Example :
+# aws --profile default s3api put-bucket-versioning --bucket my-sap-hana-bucket-data --versioning-configuration Status=Enabled
+# aws --profile default s3api put-bucket-versioning --bucket my-sap-hana-bucket-log --versioning-configuration Status=Enabled
+```
 
 ### Configuration
 
-Edit the content of the `hdbbackint.cfg` file and replace all values between round brackets by your S3 Object Storage bucket information.
+Edit the content of the `hdbbackint.cfg` file and replace all values between chevrons by your first S3 Object Storage bucket information. Below, an example of its content after edition.
 
-```{.console}
+```ini
 [trace]
 default = INFO
 destination = outputfile
- 
+
 [ovhcloud]
-endpoint_url = https://s3.(region).io.cloud.ovh.net # example : https://s3.rbx.io.cloud.ovh.net
-bucket = (bucket_name) # example : sap-hana-backup
-region = (region) # example : rbx
-access_key = (s3_user_access_key) # example : 12345678901234567890123456789012
-secret_key = (s3_user_secret_key) # example : 12345678901234567890123456789012
+endpoint_url = https://s3.rbx.io.cloud.ovh.net
+bucket = my-sap-hana-bucket-data
+region = rbx
+access_key = 12345678901234567890123456789012
+secret_key = 12345678901234567890123456789012
 max_concurrency = 10
-multipart_chunksize = 51916800
-multipart_threshold = 51916800
+multipart_chunksize = 1GB
+multipart_threshold = 1GB
 ```
+
+The `multipart_chunksize` and `multipart_threshold` parameters can be set with values in byte (example: 52428800 equal 50MB), in KB, in GB, or in TB. If the value is set without unit, the default unit is byte.
+
+- The `multipart_threshold` parameter triggers the upload of an object in multipart.
+- The `multipart_chunksize` parameter sets the size of each part to be uploaded.
+
+The default values for `multipart_chunksize` and `multipart_threshold` parameters in the `hdbbackint.cfg` file offer an optimal performance in many cases, but you can increase or decrease it, depending on your environment.
 
 Create a copy of the `hdbbackint.cfg` file with another name, for example `hdbbackint-log.cfg` and replace its values by the details of your second S3 Object Storage bucket.
 
+```ini
+[trace]
+default = INFO
+destination = outputfile
+
+[ovhcloud]
+endpoint_url = https://s3.rbx.io.cloud.ovh.net
+bucket = my-sap-hana-bucket-log
+region = rbx
+access_key = 12345678901234567890123456789012
+secret_key = 12345678901234567890123456789012
+max_concurrency = 10
+multipart_chunksize = 1GB
+multipart_threshold = 1GB
+```
+
 > [!warning]
-> The following commands modify the backup configuration of your SAP HANA database. Execute these commands with precaution.
 >
-> We recommend to trigger a full backup of your SAP HANA database after this operation to validate the configuration.
+> The following commands modify the backup configuration of your SAP HANA database, please execute these commands with caution.
+>
+> We recommend triggering a full backup of your SAP HANA database after this operation to validate the configuration.
 >
 
 Execute the following SQL commands to update the backup configuration of your SAP HANA database.
@@ -108,6 +136,7 @@ ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','log_backup
 ```
 
 > [!primary]
+>
 > To discover all backup parameters for SAP HANA, we recommend the [SAP documentation](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/e28fbdf1024c40e1a97fca48380aad98.html?locale=en-US). In the column "Section", set "Backup".
 >
 
@@ -115,14 +144,14 @@ ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','log_backup
 
 To validate the configuration, you can trigger manual backups with the following commands via SSH access:
 
-*Replace in the following commands the* `<SID>` *characters by the SID of your SAP HANA database.*
+*Replace in the following commands the* `<SID>` *characters by the SID of your SAP HANA database and* `<NI>` *characters by the instance number of your SAP HANA database.*
 
 ```bash
 # SYSTEMDB Backup
-/usr/sap/<SID>/HDB00/exe/hdbsql -u SYSTEM -d SYSTEMDB "BACKUP DATA USING BACKINT ('MANUAL_COMPLETE_BACKUP');"
+/usr/sap/<SID>/HDB<NI>/exe/hdbsql -u SYSTEM -d SYSTEMDB "BACKUP DATA USING BACKINT ('MANUAL_COMPLETE_BACKUP');"
 
 # TENANTDB Backup
-/usr/sap/<SID>/HDB00/exe/hdbsql -u SYSTEM -d SYSTEMDB "BACKUP DATA FOR <SID> USING BACKINT ('MANUAL_COMPLETE_BACKUP');"
+/usr/sap/<SID>/HDB<NI>/exe/hdbsql -u SYSTEM -d SYSTEMDB "BACKUP DATA FOR <SID> USING BACKINT ('MANUAL_COMPLETE_BACKUP');"
 ```
 
 You also have the possibility to trigger these backups via the SAP HANA Studio software. Select `Backint`{.action} in the `Destination Type`{.action} category.
@@ -136,10 +165,6 @@ After the execution of these backups, several "DATA_BACKUP" files are now presen
 In your second S3 Object Storage bucket, "LOG_BACKUP" files corresponding to log backups are present.
 
 ![log_backup](images/backup_log.png){.thumbnail}
-
-> [!success]
-> If you see these files in your S3 Object Storage bucket, congratulations, you have successfully configured your SAP HANA backups with OVHcloud Backint Agent on two S3 Object Storage buckets.
->
 
 If these backups have not been done as expected, check the content of the following files to search for errors:
 
@@ -172,26 +197,27 @@ In order to target the right S3 Object Storage bucket, OVHcloud Backint Agent ne
 
 A scheduling example via crontab with several S3 Object Storage buckets:
 
-*Replace in the following commands the* `<SID>` *characters by the SID of your SAP HANA database.*
+*Replace in the following commands the* `<SID>` *characters by the SID of your SAP HANA database and* `<NI>` *characters by the instance number of your SAP HANA database.*
 
 ```bash
 # TENANTDB Full Backup - MON THU SUN
-0 0 * * 1,4,7 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP');"
+0 0 * * 1,4,7 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP');"
  
 # TENANTDB Differential Backup - TUE WED FRI SAT
-0 0 * * 2,3,5,6 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA DIFFERENTIAL FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_DIFFERENTIAL_BACKUP');"
+0 0 * * 2,3,5,6 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA DIFFERENTIAL FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_DIFFERENTIAL_BACKUP');"
  
 # SYSTEMDB Full Backup - SUN
-0 0 * * 7 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP);"
+0 0 * * 7 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP);"
 
 # TENANTDB Full Backup - MONTHLY (LONG RETENTION)
-0 0 1 * * /usr/sap/<SID>/HDB00/monthly_backup.sh
+0 0 1 * * /usr/sap/<SID>/HDB<NI>/monthly_backup.sh
 ```
 
 > [!primary]
-> The `-U` option allows you to call a stored key in the *hdbuserstore*. To know more about the addition of keys in the *hdbuserstore*, we invite you to take note of the SAP documentation available at [this address](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/ddbdd66b632d4fe7b3c2e0e6e341e222.html?version=2.0.02&locale=en-US).
 >
-> In this example, the "BACKUP" key has been created with a login and password for a SAP HANA user which has the role BACKUP. The privileges to grant to this user are explained in [the SAP HANA documentation](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/c4b71703bb571014810ebb38dc59cf51.html).
+> The `-U` option allows you to call a stored key in the hdbuserstore. To know more about the addition of keys in the hdbuserstore, we suggest you to read the SAP documentation available at [this address](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/ddbdd66b632d4fe7b3c2e0e6e341e222.html?version=2.0.02&locale=en-US).
+>
+> In this example, the `BACKUP` key has been created with a login and password for a SAP HANA user which has the role BACKUP. The privileges to grant to this user are explained in [the SAP HANA documentation](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/c4b71703bb571014810ebb38dc59cf51.html).
 >
 
 Content example of the `monthly_backup.sh` file:
@@ -203,7 +229,7 @@ Content example of the `monthly_backup.sh` file:
 ln -sf /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint-monthly.cfg /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint.cfg
 
 # Trigger the TENANTDB Full Backup - MONTHLY (LONG RETENTION) to the S3 Object Storage bucket with a long retention policy
-/usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP');"
+/usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP');"
 
 # Roll back the hdbbackint.cfg file to use the hdbbackint-daily.cfg file
 ln -sf /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint-daily.cfg /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint.cfg
@@ -265,10 +291,10 @@ To recover a SAP HANA database from a backup done with OVHcloud Backint Agent, f
 >> Then click on `Next`{.action}.
 >>
 >> ![hana_studio_recover_5](images/hana_studio_recover_5.png){.thumbnail}
->> 
+>>
 > **Step 7**
 >> In the case of recovery from a specific backup, no option is available.
->> 
+>>
 >> ![hana_studio_recover_6](images/hana_studio_recover_6.png){.thumbnail}
 >>
 > **Step 8**
@@ -289,5 +315,7 @@ To recover a SAP HANA database from a backup done with OVHcloud Backint Agent, f
 ## Go further
 
 To improve the security of your backups, we advise you to set the [object immutability](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

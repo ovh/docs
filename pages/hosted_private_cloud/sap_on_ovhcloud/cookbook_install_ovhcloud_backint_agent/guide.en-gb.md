@@ -176,8 +176,8 @@ ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','log_backup
 If the size of your SAP HANA database is greater than 128GB, it is possible to optimise the performance of the back up and recover with enabling the multi-streaming. To do this, please execute the following SQL commands:
 
 ```SQL
-ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','parallel_data_backup_backint_channels')='8' WITH RECONFIGURE COMMENT 'SAP NOTE 2458043';
-ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','data_backup_buffer_size')='4096' WITH RECONFIGURE COMMENT 'SAP NOTE 2458043';
+ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','parallel_data_backup_backint_channels')='4' WITH RECONFIGURE COMMENT 'SAP NOTE 2458043';
+ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','data_backup_buffer_size')='2048' WITH RECONFIGURE COMMENT 'SAP NOTE 2458043';
 ```
 
 The value of the `data_backup_buffer_size` parameter depends from that `parallel_data_backup_backint_channels` parameter.
