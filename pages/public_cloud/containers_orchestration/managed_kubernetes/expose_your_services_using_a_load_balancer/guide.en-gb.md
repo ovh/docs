@@ -357,7 +357,7 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
     type: LoadBalancer
     ```
 - Until the deletion of the previous service, this Service will only deploy the LoadBalancer without a floating IP.
-- When the Floating IP is available (the deletion of the initial LB service will unbound the IP), the floating ip will be attach to this new LB.
+- When the Floating IP is available (the deletion of the initial LB service will unbound the IP), the floating IP will be attach to this new LB.
 
 > [!warning]
 >
