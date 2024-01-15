@@ -32,7 +32,7 @@ This guide uses some concepts that are specific to our Public Cloud Load Balance
 | 1.27>=      |  
 
 #### Network topologie to expose your Load Balancers publicly   //à reformuler
-If you plan to expose your Load Balancer publicly, in order to attach a FloatingIP to your Load Balancer, an OVHcloud Gateway (an Openstack router) is mandatory on the subnet hosting your Load Balancer.
+If you plan to expose your Load Balancer publicly, in order to attach a FloatingIP to your Load Balancer, an OVHcloud Gateway (an OpenStack router) is mandatory on the subnet hosting your Load Balancer.
 For such use case we do recommend to create your MKS clusters on a network and subnet using our OVHcloud Gateway.
 For existing clusters, if:
 - **The Subnet's GatewayIP is already an OVHcloud Gateway**, nothing needs to be done. The current Openstack Router will be used.
