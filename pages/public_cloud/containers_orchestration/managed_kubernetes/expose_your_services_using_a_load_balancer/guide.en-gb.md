@@ -16,7 +16,7 @@ If you're not comfortable with the different ways of exposing your applications 
 
 Our Public Cloud Load Balancer is relying on Openstack Octavia project, this project provides a Cloud Controller Manager (CCM) allowing Kubernetes clusters to interact with Load Balancers. For Managed Kubernetes Service (MKS), this Cloud Controller is installed and configured by our team allowing you to easily create, use and configure our Public Cloud Load Balancers. You can find the [CCM open source project documentation](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md).
 
-This guide uses some concepts that are specific to our Public Cloud Load Balancer (listener, pool, health monitor, member, ...)  and to the Public Cloud Network (Gateway, Floating IP). You can find concepts description on this [page](../../../public_cloud_network_services/concepts-03-loadbalancer/guide.en-gb.md) for the Load Balancer and on that [page](../../../public_cloud_network_services/concepts-01-public-cloud-networking-concepts/guide.en-gb.md) for the Public Cloud Network products.
+This guide uses some concepts that are specific to our Public Cloud Load Balancer (listener, pool, health monitor, member, ...) and to the Public Cloud Network (Gateway, Floating IP). You can find [concepts description for the Load Balancer](../../../public_cloud_network_services/concepts-03-loadbalancer/guide.en-gb.md) and [concepts description for the Public Cloud Network products](../../../public_cloud_network_services/concepts-01-public-cloud-networking-concepts/guide.en-gb.md).
 
 
 ## Prerequisites
