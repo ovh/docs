@@ -1,7 +1,7 @@
 ---
 title: vSphere SDK verwenden
 excerpt: Erfahren Sie hier, wie Sie das vSphere SDK einrichten und verwenden
-updated: 2020-11-18
+updated: 2024-01-15
 ---
 
 ## Ziel
@@ -22,27 +22,31 @@ Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [f
 
 ##### Voraussetzungen
 
+> [!warning]
+> Die folgenden Code-Beispiele wurden mit Python 2.7 erstellt. Beachten Sie, dass Sie Ihre Befehle möglicherweise entsprechend anpassen müssen, wenn Ihre Umgebung python 3.6 verwendet.
+>
+
 Folgende Pakete müssen installiert werden: 
 
-```
+```bash
 apt-get install python git python-pip
 ```
 ##### vSphere SDK
 
 Laden Sie das vSphere SDK mit folgendem Befehl herunter: 
 
-```
+```bash
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
 Das Verzeichnis “/vsphere-automation-sdk-python” wird erstellt. Gehen Sie in diesen Ordner, um den Installationsbefehl auszuführen: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
 Im vorliegenden Beispiel handelt es sich um folgenden Befehl: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
@@ -160,17 +164,17 @@ In diesem Beispiel ist die heruntergeladene Datei: “VMware-vSphere-Perl-SDK-6.
 
 Extrahieren Sie die soeben heruntergeladene Datei mit folgendem Befehl:
 
-```
+```bash
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
 Starten Sie den Installer mit den folgenden Befehlen: 
 
-```
+```bash
 cd vmware-vsphere-cli-distrib
 ```
 
-```
+```bash
 ./vmware-install.pl
 ```
 
@@ -243,14 +247,14 @@ Im vorliegenden Beispiel wird ein bereits erstelltes Skript aus dem Verzeichnis 
 
 Hier ist die Liste der Skripte, die bereits in diesem Verzeichnis verfügbar sind:
 
-```
+```bash
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
 
 Um einen Snapshot "test" der VM "Debian1" zu erstellen, verwenden Sie diesen Befehl (vorher die Platzhalter mit Ihren Anmeldeinformationen ersetzen):
 
-```
+```bash
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
 ```
 

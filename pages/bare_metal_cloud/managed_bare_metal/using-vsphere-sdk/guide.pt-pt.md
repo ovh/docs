@@ -1,7 +1,7 @@
 ---
 title: Utilização do SDK vSphere
 excerpt: Utilização e implementação do SDK vSphere
-updated: 2020-11-18
+updated: 2024-01-15
 ---
 
 ## Objetivo
@@ -22,9 +22,13 @@ Aqui, iremos utilizar uma VM instalada em Debian 9, implementada através dos [t
 
 ##### Requisitos
 
+> [!warning]
+> Os exemplos de código abaixo foram criados usando python 2.7. Poderá ter de ajustar os seus comandos em conformidade se o seu ambiente usar python 3.6.
+>
+
 É necessário instalar os seguintes packs: 
 
-```
+```bash
 apt-get install python git python-pip
 ```
 
@@ -32,19 +36,19 @@ apt-get install python git python-pip
 
 Descarregue o SDK vSphere com o seguinte comando: 
 
-```
+```bash
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
 
 O diretório “/vsphere-automation-sdk-python” será criado. Aceda a esta pasta para efetuar o seguinte comando de instalação: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
 Neste exemplo, será o seguinte comando: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
@@ -142,12 +146,12 @@ Aqui, iremos utilizar uma VM instalada em Ubuntu 18.04, implementada através do
 
 É necessário instalar os seguintes packs: 
 
-```
+```bash
 apt-get install lib32z1 lib32ncurses5 uuid uuid-dev libssl-dev perl-doc libxml-libxml-perl libcrypt-ssleay-perl libsoap-lite-perl libdata-compare-perl libmodule-build-perl libuuid-perl libsocket6-perl libnet-inet6glue-perl libarchive-zip-perl
 
 ```
 
-```
+```bash
 cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List::MoreUtils
 
 ```
@@ -164,19 +168,19 @@ Neste exemplo, iremos descarregar o "VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_6
 
 Descomprima o ficheiro que acabou de descarregar através do comando:
 
-```
+```bash
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
 Inicie o instalador utilizando o seguinte comando: 
 
-```
+```bash
 cd vmware-vsphere-cli-distrib
 ```
 
 A partir daí: 
 
-```
+```bash
 ./vmware-install.pl
 ```
 
@@ -249,7 +253,7 @@ Neste exemplo, iremos utilizar um script já criado e presente no diretório “
 
 Esta é a lista dos scripts disponíveis neste diretório:
 
-```
+```bash
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
@@ -258,7 +262,7 @@ Iremos criar uma snapshot “test” na VM “Debian1”.
 
 Para o fazer, utilize o seguinte comando:
 
-```
+```bash
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z SDK vSphere
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
-updated: 2020-11-18
+updated: 2024-01-15
 ---
 
 ## Wprowadzenie
@@ -24,25 +24,25 @@ Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdro�
 
 Zainstalowanie następujących pakietów: 
 
-```
+```bash
 apt-get install python git python-pip
 ```
 ##### SDK vSphere
 
 Pobierz SDK vSphere za pomocą następującego polecenia: 
 
-```
+```bash
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
 Zostanie utworzony folder “/vsphere-automation-sdk-python”. Przejdź do tego folderu, aby wykonać polecenie instalacji: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
 ```
 
 W tym przykładzie mówimy o następującym poleceniu: 
 
-```
+```bash
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
@@ -140,12 +140,12 @@ Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i w
 
 Zainstalowanie następujących pakietów: 
 
-```
+```bash
 apt-get install lib32z1 lib32ncurses5 uuid uuid-dev libssl-dev perl-doc libxml-libxml-perl libcrypt-ssleay-perl libsoap-lite-perl libdata-compare-perl libmodule-build-perl libuuid-perl libsocket6-perl libnet-inet6glue-perl libarchive-zip-perl
 
 ```
 
-```
+```bash
 cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List::MoreUtils
 
 ```
@@ -162,19 +162,19 @@ W tym przykładzie pobieramy “VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar
 
 Rozpakuj pobrany plik przy użyciu polecenia:
 
-```
+```bash
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
 Uruchom instalator przy użyciu następującego polecenia: 
 
-```
+```bash
 cd vmware-vsphere-cli-distrib
 ```
 
 Następnie: 
 
-```
+```bash
 ./vmware-install.pl
 ```
 
@@ -247,7 +247,7 @@ W tym przykładzie użyjemy już utworzonego skryptu, znajdującego się w folde
 
 Oto lista skryptów dostępnych już w tym folderze:
 
-```
+```bash
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
@@ -255,7 +255,7 @@ Utworzymy snapshot “test” na maszynie wirtualnej “Debian1”
 
 W tym celu wpisz następujące polecenie:
 
-```
+```bash
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
 ```
 
