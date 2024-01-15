@@ -36,7 +36,7 @@ If you plan to expose your Load Balancer publicly, in order to attach a Floating
 For such use case we do recommend to create your MKS clusters on a network and subnet using our OVHcloud Gateway.
 For existing clusters, if:
 - **The Subnet's GatewayIP is already an OVHcloud Gateway**, nothing needs to be done. The current OpenStack Router will be used.
-- **The subnet doest not have an IP reserved for a Gateway** --> You will have to provide/create a compatible subnet. You can edit the existing subnet (modop CLI Openstack/Horizon) or use another dedicated subnet (doc LoadBalancerSubnetID)//TODO
+- **The subnet does not have an IP reserved for a Gateway** --> You will have to provide/create a compatible subnet. You can edit the existing subnet (modop CLI Openstack/Horizon) or use another dedicated subnet (doc LoadBalancerSubnetID)//TODO
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)** --> You will have to provide/create a compatible subnet. To do so you select another dedicated subnet (doc LoadBalancerSubnetID)//TODO
 
 
