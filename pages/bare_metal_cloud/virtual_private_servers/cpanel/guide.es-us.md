@@ -50,16 +50,13 @@ Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [á
 
 ### Primera conexión
 
-Una vez que reciba el email con el enlace único, por favor proceda al enlace para realizar la configuración inicial.
+Una vez que haya recibido el mensaje de correo electrónico con el enlace único, haga clic en este enlace para realizar la configuración inicial. Si el enlace ya ha expirado, conéctese al servidor por SSH y ejecute el comando «sudo whmlogin» para generar un nuevo enlace.
 
-> [!primary]
->
-> Si el enlace ya ha caducado, por favor conéctese a su VPS vía SSH usando el usuario CentOS y ejecute el comando "sudo whmlogin" para generar un nuevo enlace.
->
+La URL generada por el comando sudo whmlogin le permite conectarse sin credenciales (usuario y contraseña) a su interfaz WHM. WHM es una capa de cPanel. Puede acceder a cPanel después de realizar los siguientes pasos.
 
-La URL anterior permite iniciar sesión sin credenciales (usuario y contraseña) en su administrador WHM.
+#### Etapa 1: leer y aceptar las condiciones de uso de cPanel
 
-#### Paso 1: Lea y acepte los términos de cPanel.
+Lea y acepte las condiciones de uso de cPanel.
 
 ![horizon](images/license_validation.png){.thumbnail}
 

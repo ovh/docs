@@ -52,18 +52,13 @@ Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Client
 
 ### Prima connessione
 
-Una volta ricevuto l'email con il link unico, clicca su questo link per effettuare la configurazione iniziale.
+Una volta ricevuta l’email con il link univoco, clicca su questo link per effettuare la configurazione iniziale. Se il link è già scaduto, connettiti in SSH al server ed esegui il comando "sudo whmlogin" per generare un nuovo link.
 
-> [!primary]
->
-> Se il link è già scaduto, connettiti al tuo VPS via SSH usando l'utente CentOS ed esegui il comando « sudo whmlogin » per generare un nuovo link.
->
+L’URL generato dal comando "sudo whmlogin" ti permette di accedere senza informazioni di identificazione (utente e password) alla tua interfaccia WHM. WHM è un livello aggiuntivo di cPanel. Dopo aver completato gli step successivi, è possibile accedere a cPanel.
 
-L'URL di cui sopra ti permette di connetterti senza informazioni di identificazione (utente e password) alla tua interfaccia WHM.
+#### Step 1: leggi e accetta le condizioni di utilizzo di cPanel
 
-#### Step 1: leggi le condizioni di utilizzo di cPanel
-
-Leggi e accetta le condizioni di utilizzo di cPanel
+Leggi e accetta le condizioni di utilizzo di cPanel.
 
 ![cPanel](images/license_validation.png){.thumbnail}
 
