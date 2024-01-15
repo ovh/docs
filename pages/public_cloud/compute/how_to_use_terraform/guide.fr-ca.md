@@ -41,7 +41,7 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 
 ### Création de Token
 
-Outre le "end point" de l'API, les clés nécessaires sont `application_key`, `application_secret` et `consumer_key`. Ces clés peuvent être générées via la [page de génération de token OVHcloud](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+Outre le *end point* de l'API, les clés nécessaires sont `application_key`, `application_secret` et `consumer_key`. Ces clés peuvent être générées via la [page de génération de token OVHcloud](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
 
 ![token](images/example_create_token.png){.thumbnail}
 
