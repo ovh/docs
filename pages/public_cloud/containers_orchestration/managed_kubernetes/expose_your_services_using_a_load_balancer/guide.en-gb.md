@@ -49,7 +49,7 @@ For existing clusters, if:
 
 ## Billing
 
-- When exposing your load balancer publicly (pub-to-pub or pub-to-private):
+- When exposing your load balancer publicly (public-to-public or public-to-private):
   - if it does not already exist, an OVHcloud Gateway is automatically created and charged for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
   - a Public Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 - Each Public CLoud Load Balancer is billed according to his flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
