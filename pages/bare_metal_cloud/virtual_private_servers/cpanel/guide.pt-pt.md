@@ -70,13 +70,43 @@ Indique os servidores de e-mail e nomes (nameservers) que deseja definir no serv
 
 ![cPanel](images/change_root.png){.thumbnail}
 
-Já deve poder ligar-se ao WHM e ao SSH através do utilizador root com a palavra-passe que acaba de ser definida.
+Agora, pode ligar-se ao servidor em SSH utilizando o utilizador root com a palavra-passe que acabou de definir.
+
+### Criar uma conta cPanel a partir da interface WHM
+
+Depois de aceder à interface WHM, clique em Create a New Account`{.action} para criar uma conta cPanel.
+
+![cPanel](images/create_new_account.png){.thumbnail}
+
+Preencha o formulário e valide para confirmar a criação da sua conta cPanel.
+
+![cPanel](images/create_new_account_form.png){.thumbnail}
+
+No novo ecrã que se abrir, clique no botão "Go to cPanel" {.action} à direita do ecrã.
+
+![cPanel](images/go_to_cpanel.png){.thumbnail}
+
+Será redirecionado para a sua interface cPanel.
+
+![cPanel](images/manager_cpanel.png){.thumbnail}
+
+Já pode utilizar o cPanel. Para obter mais informações sobre o cPanel, consulte a [documentação oficial](https://docs.cpanel.net/).
+
+> [!primary]
+>
+> Na barra de navegação do browser, introduza estes URL para iniciar sessão no:
+>
+> - cPanel: https://<IP_V4>:2083/ (utilize os identificadores que acabaram de ser criados na interface WHM)
+> - WHM: https://<IP_V4>:2087/ (utilize o nome de utilizador « root » e a palavra-passe recebida no e-mail de aquisição do serviço ou a palavra-passe SSH modificada na interface WHM)
+>
+> Encontre o seu endereço IPv4 no e-mail que recebeu no seguimento da encomenda do seu VPS com a distribuição cPanel.
+>
 
 ### Segurança do seu serviço
 
-Recomendamos que tome todas as medidas necessárias para proteger a sua WHM e o seu VPS. Para isso, recomendamos que leia as recomendações do cPanel [aqui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
+Recomendamos que tome todas as medidas necessárias para proteger o seu WHM e o seu VPS. Para isso, recomendamos que leia [as recomendações da cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Também recomendamos que consulte o nosso manual para [proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), que utilize as [nossas soluções de backup](/products/bare-metal-cloud-virtual-private-servers) e que configure a [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+Além disso, recomendamos que consulte o nosso manual para [proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), que utilize [as nossas soluções de backup](/products/bare-metal-cloud-virtual-private-servers) e que configure o [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 ## Quer saber mais?
 

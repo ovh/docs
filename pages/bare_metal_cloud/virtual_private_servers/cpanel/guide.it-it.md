@@ -72,13 +72,43 @@ Indica i server di posta e di nome (nameserver) che vuoi definire sul server VPS
 
 ![cPanel](images/change_root.png){.thumbnail}
 
-A questo punto dovresti essere in grado di connetterti a WHM e in SSH utilizzando l'utente root con la password appena definita.
+Da questo momento è possibile accedere al server in SSH utilizzando l’utente root con la password definita.
 
-### Protezione del tuo servizio
+### Creare un account cPanel dall'interfaccia WHM
 
-Ti consigliamo di adottare tutte le misure necessarie a proteggere il tuo WHM e il tuo VPS. Per effettuare questa operazione, ti consigliamo di consultare [qui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} le raccomandazioni di cPanel.
+Una volta connesso all’interfaccia WHM, clicca su `Create a New Account`{.action} per creare un account cPanel.
 
-Ti consigliamo inoltre di consultare la nostra guida per [proteggere un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), utilizzare [le nostre soluzioni di backup](/products/bare-metal-cloud-virtual-private-servers) e configurare il [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+![cPanel](images/create_new_account.png){.thumbnail}
+
+Compila il form e conferma la creazione dell’account cPanel.
+
+![cPanel](images/create_new_account_form.png){.thumbnail}
+
+Clicca sul pulsante `Go to cPanel`{.action} a destra della nuova schermata.
+
+![cPanel](images/go_to_cpanel.png){.thumbnail}
+
+Verrai reindirizzato alla tua interfaccia cPanel.
+
+![cPanel](images/manager_cpanel.png){.thumbnail}
+
+Ora è possibile utilizzare cPanel. Per ulteriori informazioni su cPanel, consultare la [documentazione ufficiale](https://docs.cpanel.net/).
+
+> [!primary]
+>
+> Nella barra di navigazione del browser, immettere i seguenti URL per accedere a:
+>
+> - cPanel: https://<IP_V4>:2083/ (utilizza le credenziali appena create nell’interfaccia WHM)
+> - WHM: https://<IP_V4>:2087/ (utilizza il nome utente "root" e la password ricevuta nell’email di acquisto del servizio o la password SSH che è stata modificata nell’interfaccia WHM)
+>
+> Recupera il tuo indirizzo IPv4 nell'email che hai ricevuto in seguito all'ordine del tuo VPS con la distribuzione cPanel.
+>
+
+### Protezione del servizio
+
+Ti consigliamo di adottare tutte le misure necessarie per proteggere il tuo WHM e il tuo VPS. Per farlo, ti consigliamo di consultare [le raccomandazioni di cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Per [proteggere un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), utilizzare [le nostre soluzioni di backup](/products/bare-metal-cloud-virtual-private-servers) e configurare il [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network), consulta la nostra guida.
 
 ## Per saperne di più
 

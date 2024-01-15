@@ -60,21 +60,53 @@ Lea y acepte las condiciones de uso de cPanel.
 
 ![horizon](images/license_validation.png){.thumbnail}
 
-#### Paso 2: Proporcione la dirección de correo electrónico y los servidores DNS que desea configurar en su VPS
+#### Etapa 2: Completar los campos obligatorios
 
-![horizon](images/setup_config_cpanel.png){.thumbnail}
+Indique los servidores de correo y de nombres (nameservers) que quiera configurar en el servidor VPS.
 
-#### Paso 3: Establecer la contraseña de root
+![cPanel](images/setup_config_cpanel.png){.thumbnail}
 
-![horizon](images/change_root.png){.thumbnail}
+#### Etapa 3: Establecer la contraseña root
 
-Ahora usted debería poder iniciar sesión en WHM y SSH usando el usuario y la contraseña de root que acaba de configurar.
+![cPanel](images/change_root.png){.thumbnail}
 
-### Proteja su servicio
+A partir de ahora, puede conectarse a su servidor por SSH utilizando el usuario root con la contraseña que acaba de establecer.
 
-Le recomendamos que tome más medias adicionales para proteger su WHM y VPS. Por esto le recomendamos que lea las recomendamos proporcionadas por cPanel aquí:
+### Crear una cuenta cPanel desde la interfaz WHM
 
-Además, le recomendamos configurar el [firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) y una [solución de backup](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) en su VPS.
+Una vez conectado a su interfaz WHM, haga clic en `Create a New Account`{.action} para crear una cuenta cPanel.
+
+![cPanel](images/create_new_account.png){.thumbnail}
+
+Rellene el formulario y confirme la creación de su cuenta cPanel.
+
+![cPanel](images/create_new_account_form.png){.thumbnail}
+
+En la nueva pantalla, haga clic en el botón `Go to cPanel`{.action} a la derecha de la pantalla.
+
+![cPanel](images/go_to_cpanel.png){.thumbnail}
+
+Será redirigido a su interfaz cPanel.
+
+![cPanel](images/manager_cpanel.png){.thumbnail}
+
+Ya puede utilizar cPanel. Para más información sobre cPanel, consulte la [documentación oficial](https://docs.cpanel.net/).
+
+> [!primary]
+>
+> En la barra de navegación de su navegador, introduzca las siguientes URL para conectarse a:
+>
+> - cPanel: https://<IP_V4>:2083/ (utilice las claves recién creadas en la interfaz WHM)
+> - WHM: https://<IP_V4>:2087/ (utilice el nombre de usuario «root» y la contraseña recibida en el email de compra del servicio o la contraseña SSH que haya cambiado en la interfaz WHM)
+>
+> Encuentre su dirección IPv4 en el mensaje de correo electrónico que recibió al contratar su VPS con la distribución cPanel.
+>
+
+### Proteger el servicio
+
+Le recomendamos que tome todas las medidas necesarias para proteger su WHM y su VPS. Para ello, le recomendamos que lea [las recomendaciones de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Asimismo, le recomendamos que consulte nuestra guía para [proteger un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), utilice [nuestras soluciones de backup](/products/bare-metal-cloud-virtual-private-servers) y configure el [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 ## Más información
 

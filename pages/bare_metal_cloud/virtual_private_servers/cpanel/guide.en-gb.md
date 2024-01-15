@@ -64,13 +64,43 @@ Read and accept the cPanel Terms of Use.
 
 ![horizon](images/change_root.png){.thumbnail}
 
-Now you should be able to login to WHM and SSH using the root user with the password that was just set.
+You can now log in to your server via SSH, using the root user password you have just set.
+
+### Create a cPanel account from the WHM interface
+
+Once you have logged in to your WHM interface, click `Create a New Account`{.action} to create a cPanel account.
+
+![cPanel](images/create_new_account.png){.thumbnail}
+
+Fill in the form, then confirm to create your cPanel account.
+
+![cPanel](images/create_new_account_form.png){.thumbnail}
+
+On the new screen that pops up, click the `Go to cPanel`{.action} button to the right of the screen.
+
+![cPanel](images/go_to_cpanel.png){.thumbnail}
+
+You are redirected to your cPanel interface.
+
+![cPanel](images/manager_cpanel.png){.thumbnail}
+
+You can now use cPanel. For more information about cPanel, see the [official documentation](https://docs.cpanel.net/).
+
+> [!primary]
+>
+> In your browser's navigation bar, enter the following URLs to connect to:
+>
+> - cPanel: https://<IP_V4>:2083/ (use the credentials that have just been created in the WHM interface)
+> - WHM: https://<IP_V4>:2087/ (use the root username and password received in the service purchase email or the SSH password that has been changed in the WHM interface)
+>
+> Find your IPv4 address in the email you received when ordering your VPS with the cPanel distribution.
+>
 
 ### Securing your service
 
-We recommend that you take additional steps to ensure you secure your WHM and VPS. For this we recommend reading the recommendations provided by cPanel [here](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+We recommend taking all the necessary measures to secure your WHM and VPS. To do this, we recommend reading [cPanel recommendations](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Furthermore we recommend setting up the [OVHcloud network firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) and [configure a backup solution](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#backing-up-your-system-and-your-data) on your VPS.
+We also recommend reading our guide to [securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), using [our backup solutions](/products/bare-metal-cloud-virtual-private-servers) and configuring the [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 ## Go further
 
