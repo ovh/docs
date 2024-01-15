@@ -61,14 +61,14 @@ For existing clusters, if:
 
     > [!warning]
     >
-    > During the CCM Beta, since the Public Cloud Load Balancer is GA, the Public Cloud Load Balancer usage as well as the other network components (Gateway & Floating IPs) will be billed
+    > During the Public Cloud Load Balancer with Manage Kubernetes Service Beta, since the Public Cloud Load Balancer is GA, the Load Balancer usages as well as the other network components (Gateway & Floating IPs) will be charged
     >
 
 ## Process
 
 During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) rather than the current [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer-kubernetes/) solution, you'll need to add an annotation: loadbalancer.ovhcloud.com/class: "octavia" on your Kubernetes Service manifest.
 
-Here's a simple example of how to use the Public Cloud Load Balancer
+Here's a simple example of how to use the Public Cloud Load Balancer:
 
 1. Creation of a functional Managed Kubernetes (MKS) cluster using the OVHcloud manager, Terraform or APIs.
 2. Retrieve the kubeconfig needed to use kubectl tool (via OVHcloud manager, Terraform or API). You can use [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049658)
