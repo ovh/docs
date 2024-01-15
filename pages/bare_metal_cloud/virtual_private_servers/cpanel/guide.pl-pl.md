@@ -41,7 +41,7 @@ Gdy VPS jest gotowy, otrzymasz wiadomość e-mail dającą dostęp do logowania 
  |    Możesz zalogować się do cpanel ze strony https://<ip>:2087/<session_parameters>
 ```
 
-Jeśli posiadasz już VPS i chcesz zainstalować cPanel, możesz wykonać reinstalację serwera VPS z [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), używając szablonu "CentOS 7 - cPanel" (dostępny tylko z kompatybilną ofertą VPS).
+Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz wykonać reinstalację serwera VPS z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przez [OS kompatybilny z cPanelem](https://www.ovhcloud.com/pl/vps/os/).
 
 > [!warning]
 >

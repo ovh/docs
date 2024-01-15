@@ -43,7 +43,7 @@ Cuando su VPS esté listo, recibirá un correo electrónico con los datos de acc
  |    Puede conectarse a cpanel desde https://<ip>:2087/<session_parameters>
 ```
 
-Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) utilizando el modelo CentOS 7 - cPanel (disponible únicamente con un VPS compatible).
+Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) a través de un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
 
 > [!warning]
 >

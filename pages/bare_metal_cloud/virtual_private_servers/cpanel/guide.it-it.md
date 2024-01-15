@@ -43,7 +43,7 @@ Quando il VPS è pronto, ricevi un’email con le credenziali di accesso al serv
  |    Puoi accedere a cPanel da https://<ip>:2087/<session_parameters>
 ```
 
-Se disponi già di un VPS e vuoi installare cPanel, è possibile reinstallare il VPS dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) utilizzando il modello "CentOS 7 - cPanel" (disponibile solo con un'offerta VPS compatibile).
+Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) tramite un [OS compatibile con cPanel](https://www.ovhcloud.com/it/vps/os/).
 
 > [!warning]
 >

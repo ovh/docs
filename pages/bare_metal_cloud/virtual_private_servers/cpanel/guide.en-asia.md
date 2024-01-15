@@ -37,7 +37,7 @@ When your VPS is ready, you will receive an email providing the information to c
  |    You can connect to cPanel from https://<hostname>:2087/<session_parameters>
 ```
 
-If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) with the "CentOS 7 - cPanel" template (available only with a compatible VPS solution).
+If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) via a [cPanel-compatible OS](https://www.ovhcloud.com/asia/vps/os/).
 
 > [!warning]
 >
