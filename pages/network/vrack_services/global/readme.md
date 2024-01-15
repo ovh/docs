@@ -28,6 +28,17 @@ For each spawned Managed Services, the service provider publishes the number of 
 Then, those private IPs are dynamically allocated by the vRack Services automation at the primitive creation request. 
 
 
+# Product configuration experience
+## Requirements
+
+## By API
+### 1. Initial state
+### 2. Create a Subnet
+### 3. Create a Service Endpoint
+### 4. Associate to a vRack
+### 
+
+## By Manager
 
 # Contraints and limits
 ## Vrack Services
