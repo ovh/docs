@@ -46,9 +46,9 @@ Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous 
 
 ### Première connexion
 
-Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce lien pour effectuer la configuration initiale. Si le lien a déjà expiré, connectez-vous en SSH au serveur et exécutez la commande « sudo whmlogin » pour générer un nouveau lien.
+Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce lien pour effectuer la configuration initiale. Si le lien a déjà expiré, connectez-vous en SSH au serveur et exécutez la commande `sudo whmlogin` pour générer un nouveau lien.
 
-L'URL générée par la commande « sudo whmlogin » vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
+L'URL générée par la commande `sudo whmlogin` vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
 
 #### Étape 1 : lire et accepter les conditions d'utilisation de cPanel
 

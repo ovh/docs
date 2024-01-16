@@ -1,6 +1,6 @@
 ---
 title: "Implementar o cPanel num VPS"
-excerpt: "Saiba como instanciar um VPS com a aplicação cPanel pré-instalada."
+excerpt: "Saiba como instanciar um VPS com a aplicação cPanel pré-instalada"
 updated: 2024-01-12
 ---
 
@@ -50,9 +50,9 @@ Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a par
 
 ### Primeira ligação
 
-Quando tiver recebido a mensagem de correio eletrónico com a hiperligação única, clique nesta hiperligação para concluir a configuração inicial. Se a ligação já expirou, ligue-se ao servidor em SSH e execute o comando « sudo whmlogin » para gerar uma nova ligação.
+Quando tiver recebido a mensagem de correio eletrónico com a hiperligação única, clique nesta hiperligação para concluir a configuração inicial. Se a ligação já expirou, ligue-se ao servidor em SSH e execute o comando `sudo whmlogin` para gerar uma nova ligação.
 
-O URL gerado pelo comando « sudo whmlogin » permite que se ligue sem informações de identificação (utilizador e palavra-passe) à sua interface WHM. WHM é uma camada de cPanel. Pode aceder ao cPanel após ter efetuado os seguintes passos.
+O URL gerado pelo comando `sudo whmlogin` permite que se ligue sem informações de identificação (utilizador e palavra-passe) à sua interface WHM. WHM é uma camada de cPanel. Pode aceder ao cPanel após ter efetuado os seguintes passos.
 
 #### Etapa 1: ler e aceitar as condições de utilização do cPanel
 
@@ -74,7 +74,7 @@ Agora, pode ligar-se ao servidor em SSH utilizando o utilizador root com a palav
 
 ### Criar uma conta cPanel a partir da interface WHM
 
-Depois de aceder à interface WHM, clique em Create a New Account`{.action} para criar uma conta cPanel.
+Depois de aceder à interface WHM, clique em `Create a New Account`{.action} para criar uma conta cPanel.
 
 ![cPanel](images/create_new_account.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Preencha o formulário e valide para confirmar a criação da sua conta cPanel.
 
 ![cPanel](images/create_new_account_form.png){.thumbnail}
 
-No novo ecrã que se abrir, clique no botão "Go to cPanel" {.action} à direita do ecrã.
+No novo ecrã que se abrir, clique no botão `Go to cPanel`{.action} à direita do ecrã.
 
 ![cPanel](images/go_to_cpanel.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Já pode utilizar o cPanel. Para obter mais informações sobre o cPanel, consul
 > Na barra de navegação do browser, introduza estes URL para iniciar sessão no:
 >
 > - cPanel: https://<IP_V4>:2083/ (utilize os identificadores que acabaram de ser criados na interface WHM)
-> - WHM: https://<IP_V4>:2087/ (utilize o nome de utilizador « root » e a palavra-passe recebida no e-mail de aquisição do serviço ou a palavra-passe SSH modificada na interface WHM)
+> - WHM: https://<IP_V4>:2087/ (utilize o nome de utilizador "root" e a palavra-passe recebida no e-mail de aquisição do serviço ou a palavra-passe SSH modificada na interface WHM)
 >
 > Encontre o seu endereço IPv4 no e-mail que recebeu no seguimento da encomenda do seu VPS com a distribuição cPanel.
 >

@@ -52,9 +52,9 @@ Si ya tiene un VPS y desea instalar cPanel, puede reinstalar el VPS desde su [á
 
 ### Primera conexión
 
-Una vez que haya recibido el mensaje de correo electrónico con el enlace único, haga clic en este enlace para realizar la configuración inicial. Si el enlace ya ha expirado, conéctese al servidor por SSH y ejecute el comando «sudo whmlogin» para generar un nuevo enlace.
+Una vez que haya recibido el mensaje de correo electrónico con el enlace único, haga clic en este enlace para realizar la configuración inicial. Si el enlace ya ha expirado, conéctese al servidor por SSH y ejecute el comando `sudo whmlogin` para generar un nuevo enlace.
 
-La URL generada por el comando sudo whmlogin le permite conectarse sin credenciales (usuario y contraseña) a su interfaz WHM. WHM es una capa de cPanel. Puede acceder a cPanel después de realizar los siguientes pasos.
+La URL generada por el comando `sudo whmlogin` le permite conectarse sin credenciales (usuario y contraseña) a su interfaz WHM. WHM es una capa de cPanel. Puede acceder a cPanel después de realizar los siguientes pasos.
 
 #### Etapa 1: leer y aceptar las condiciones de uso de cPanel
 
@@ -99,7 +99,7 @@ Ya puede utilizar cPanel. Para más información sobre cPanel, consulte la [docu
 > En la barra de navegación de su navegador, introduzca las siguientes URL para conectarse a:
 >
 > - cPanel: https://<IP_V4>:2083/ (utilice las claves recién creadas en la interfaz WHM)
-> - WHM: https://<IP_V4>:2087/ (utilice el nombre de usuario «root» y la contraseña recibida en el email de compra del servicio o la contraseña SSH que haya cambiado en la interfaz WHM)
+> - WHM: https://<IP_V4>:2087/ (utilice el nombre de usuario "root" y la contraseña recibida en el email de compra del servicio o la contraseña SSH que haya cambiado en la interfaz WHM)
 >
 > Encuentre su dirección IPv4 en el mensaje de correo electrónico que recibió al contratar su VPS con la distribución cPanel.
 >
