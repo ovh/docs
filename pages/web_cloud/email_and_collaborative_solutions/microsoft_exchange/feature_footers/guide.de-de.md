@@ -53,7 +53,7 @@ Bitte beachten Sie die folgenden Hinweise, bevor Sie Signaturen für Benutzer ei
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Verwendung der Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Berechtigungen für einen E-Mail Account übertragen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

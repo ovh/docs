@@ -8,7 +8,7 @@ updated: 2020-07-20
 
 Esta funcionalidade do Exchange permite-lhe configurar respostas automáticas aos e-mails enviados para a sua conta, por exemplo mensagens de ausência (fora do escritório).
 
-**Descubra como ativar respostas automáticas utilizando o Outlook Web App (OWA).**
+**Descubra como ativar respostas automáticas utilizando o Outlook Web Access (OWA).**
 
 ## Requisitos
 
@@ -49,7 +49,7 @@ Poderá inserir uma mensagem alternativa para remetentes externos na segunda cai
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guia de utilização do Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Atribuir permissões a uma conta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

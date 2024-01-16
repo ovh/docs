@@ -154,7 +154,7 @@ Per scaricare il file.`eml`, seleziona l'email che preferisci. Clicca sul pulsan
 
 ![email](images/roundcube02.png){.thumbnail}
 
-#### Outlook Web App (OWA) <a name="owa"></a>
+#### Outlook Web Access (OWA) <a name="owa"></a>
 
 ##### **Recupera l'intestazione**
 
@@ -186,7 +186,7 @@ Per recuperare l'intestazione, seleziona l'email in questione, clicca sui 3 punt
 
 #### Outlook.com
 
-Per visualizzare l'intestazione nell'interfaccia Web <Outlook.com>, consulta la sezione [Outlook Web Application](#owa) di questa guida.
+Per visualizzare l'intestazione nell'interfaccia Web <Outlook.com>, consulta la sezione [Outlook Web Access](#owa) di questa guida.
 
 ## Per saperne di più
 

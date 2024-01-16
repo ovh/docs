@@ -8,7 +8,7 @@ updated: 2020-02-19
 
 La funzionalità Exchange ti consente di fornire l’accesso ai tuoi calendari ad altre persone.
 
-**Questa guida ti mostra come condividere e recuperare i tuoi calendari tramite Outlook Web App (OWA).**
+**Questa guida ti mostra come condividere e recuperare i tuoi calendari tramite Outlook Web Access (OWA).**
 
 ## Prerequisiti
 
@@ -78,7 +78,7 @@ Cliccando su un calendario della lista, è possibile visualizzarlo o nasconderlo
 
 ## Per saperne di più 
 
-[Guida all’utilizzo di Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guida all’utilizzo di Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Condividi una cartella con la Webmail OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
 

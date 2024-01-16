@@ -8,7 +8,7 @@ updated: 2020-02-19
 
 Mit dieser Exchange Funktion können Sie anderen Personen Zugriff auf Ihre Kalender gewähren.
 
-**In dieser Anleitung wird erläutert, wie Kalender freigegeben und mit der Outlook Web App (OWA) abgerufen werden.**
+**In dieser Anleitung wird erläutert, wie Kalender freigegeben und mit der Outlook Web Access (OWA) abgerufen werden.**
 
 ## Voraussetzungen
 

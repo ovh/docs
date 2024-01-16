@@ -1,5 +1,5 @@
 ---
-title: 'Creare regole di posta in arrivo in Outlook Web App (OWA)'
+title: 'Creare regole di posta in arrivo in Outlook Web Access (OWA)'
 excerpt: 'Come impostare l’inoltro delle email e creare filtri in OWA'
 updated: 2020-03-11
 ---
@@ -8,7 +8,7 @@ updated: 2020-03-11
 
 Tramite l’opzione “Regole Posta in arrivo” è possibile creare una serie di regole per gestire i messaggi in arrivo. In questo modo puoi mantenere la posta elettronica organizzata, spostando automaticamente le email in diverse cartelle. È anche un metodo per definire le impostazioni di inoltro (o reindirizzamento) e per filtrare i messaggi indesiderati.
 
-**Questa guida ti mostra come creare filtri e inoltrare le tue email tramite Outlook Web App (OWA).**
+**Questa guida ti mostra come creare filtri e inoltrare le tue email tramite Outlook Web Access (OWA).**
 
 ## Prerequisiti
 
@@ -88,7 +88,7 @@ Dato che nessuna protezione automatica antispam è in grado di determinare con l
 
 > [!primary]
 >
-Ricordati che non è possibile segnalare i falsi positivi direttamente da Outlook Web App. Se ricevi messaggi di posta falsamente contrassegnati come [SPAM], ti consigliamo di informare il nostro team di Supporto aprendo un ticket di assistenza dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+Ricordati che non è possibile segnalare i falsi positivi direttamente da Outlook Web Access. Se ricevi messaggi di posta falsamente contrassegnati come [SPAM], ti consigliamo di informare il nostro team di Supporto aprendo un ticket di assistenza dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
 >
 
 ## Per saperne di più 

@@ -26,7 +26,7 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
 > [!warning]
 >
-> La siguiente guía se dirige a los titulares de la solución MX Plan "histórico". Para el nuevo plan, la gestión de los filtros se realiza directamente a través del webmail OWA (**O**utlook **W**eb **A**pplication). Identifique su producto utilizando la siguiente tabla.
+> La siguiente guía se dirige a los titulares de la solución MX Plan "histórico". Para el nuevo plan, la gestión de los filtros se realiza directamente a través del webmail OWA (**O**utlook **W**eb **A**ccess). Identifique su producto utilizando la siguiente tabla.
 >
 
 Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|

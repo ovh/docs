@@ -12,7 +12,7 @@ updated: 2020-03-11
 
 Unter der Option „Posteingangsregeln“ können Sie ein umfangreiches Regelwerk für die Verarbeitung eingehender E-Mails erstellen. Diese können Ihnen helfen, Ihr E-Mail-Konto zu organisieren, indem E-Mails automatisch in die passenden Ordner sortiert werden. Auf diese Weise können Sie auch Weiterleitungen definieren und Spam-Nachrichten herausfiltern.
 
-**Diese Anleitung erläutert, wie Sie mit der Outlook Web App (OWA) E-Mail-Filter und Weiterleitungsregeln erstellen.**
+**Diese Anleitung erläutert, wie Sie mit der Outlook Web Access (OWA) E-Mail-Filter und Weiterleitungsregeln erstellen.**
 
 ## Voraussetzungen
 
@@ -101,6 +101,6 @@ Da kein automatisierter Spam-Schutz definitiv entscheiden kann, ob es sich bei e
 
 [Kalender via OWA freigeben](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 
-[Outlook Web App mit einem E-Mail-Konto verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Outlook Web Access mit einem E-Mail-Konto verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

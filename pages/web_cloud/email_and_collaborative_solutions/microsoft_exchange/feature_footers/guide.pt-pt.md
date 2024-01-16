@@ -53,7 +53,7 @@ Antes de criar assinaturas, tenha em consideração o seguinte:
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guia de utilização do Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Atribuir permissões a uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

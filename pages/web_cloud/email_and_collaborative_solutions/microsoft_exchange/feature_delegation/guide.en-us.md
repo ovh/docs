@@ -63,7 +63,7 @@ This will work differently depending on the permissions you have delegated, and 
 
 #### 2.1 Using your access permissions
 
-- **From the Outlook Web Application (OWA)**
+- **From the Outlook Web Access (OWA)**
 
 Log in via the [OVHcloud webmail](https://www.ovh.com/world/mail/) using the credentials for the Exchange account that has been delegated permissions. Once you are logged in, right-click on the name of the account in the menu on the left-hand side, then select `Add shared folder`{.action}.
 
@@ -83,7 +83,7 @@ Next, click on `More Settings`{.action}. In the new window, go to the `Advanced`
 
 #### 2.2 Using the "Send As" permission
 
-- **From the Outlook Web Application (OWA)**
+- **From the Outlook Web Access (OWA)**
 
 Log in via the [OVHcloud webmail](https://www.ovh.com/world/mail/) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
@@ -105,7 +105,7 @@ At this stage, you are now ready to write and send your email.
 
 #### 2.3 Use the "Send on Behalf" permission.
 
-- **From the Outlook Web Application (OWA)**
+- **From the Outlook Web Access (OWA)**
 
 Log in via the [OVHcloud webmail](https://www.ovh.com/world/mail/) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
@@ -127,7 +127,7 @@ At this stage, you are now ready to write and send your email.
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Using the Outlook Web Access with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Sharing folders in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
 

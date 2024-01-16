@@ -53,7 +53,7 @@ Tenga en cuenta los siguientes datos antes de introducir firmas para los usuario
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Usar Outlook Web Access con una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegar permisos en una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

@@ -8,7 +8,7 @@ updated: 2020-02-26
 
 I gruppi Exchange consentono agli utenti di comunicare inviando email a un unico indirizzo di gruppo. Grazie a questa funzionalità di collaborazione, è possibile creare e gestire mailing list che includono utenti Exchange o utenti esterni.
 
-**Questa guida ti mostra come utilizzare i gruppi Exchange tramite lo Spazio Cliente OVHcloud e Outlook Web App (OWA).**
+**Questa guida ti mostra come utilizzare i gruppi Exchange tramite lo Spazio Cliente OVHcloud e Outlook Web Access (OWA).**
 
 ## Prerequisiti
 
@@ -74,7 +74,7 @@ Per verificare la tua Mailing List tramite [OVHcloud Webmail](https://www.ovh.it
 
 [Delegare i diritti su un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 
-[Guida all’utilizzo di Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guida all’utilizzo di Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Condividi un calendario con la Webmail OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 

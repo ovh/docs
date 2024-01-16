@@ -8,7 +8,7 @@ updated: 2020-07-20
 
 Mit dieser Exchange-Funktion können Sie für verschiedene Anwendungsfälle automatische Antworten auf E-Mails einrichten, die an Ihr Konto gesendet werden (z.B. Abwesenheitsnotizen).
 
-**Diese Anleitung erläutert, wie Sie automatische Antworten mit der Outlook Web App (OWA) einrichten.**
+**Diese Anleitung erläutert, wie Sie automatische Antworten mit der Outlook Web Access (OWA) einrichten.**
 
 ## Voraussetzungen
 
@@ -49,7 +49,7 @@ In das zweite Feld kann eine alternative Nachricht für externe Absender eingege
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Verwendung der Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Berechtigungen für einen Exchange Account übertragen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

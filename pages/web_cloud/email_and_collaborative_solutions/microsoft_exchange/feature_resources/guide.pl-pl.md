@@ -12,7 +12,7 @@ updated: 2020-06-05
 
 Funkcja Exchange pozwala na tworzenie kont e-mail dedykowanych do zasobów Twojej firmy, takich jak sale konferencyjne i wspólne urządzenia. Korzystanie z tych kont zasobów pozwala na zoptymalizowanie organizacji wydarzeń w środowisku pracy zespołowej, poprzez dostarczanie kontroli dostępności i przejrzyste integrowanie zasobów z kalendarzami Exchange.
 
-**Niniejszy przewodnik wyjaśnia, jak zarządzać zasobami przy użyciu Panelu klienta OVHcloud oraz aplikacji Outlook Web App (OWA).**
+**Niniejszy przewodnik wyjaśnia, jak zarządzać zasobami przy użyciu Panelu klienta OVHcloud oraz aplikacji Outlook Web Access (OWA).**
 
 ## Wymagania początkowe
 

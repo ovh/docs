@@ -8,7 +8,7 @@ updated: 2020-02-19
 
 Esta funcionalidade do Exchange permite que outras pessoas tenham acesso aos seus calendários.
 
-**Este guia explica como partilhar e obter calendários através do Outlook Web App (OWA).**
+**Este guia explica como partilhar e obter calendários através do Outlook Web Access (OWA).**
 
 ## Requisitos
 
@@ -78,7 +78,7 @@ Se clicar num calendário da lista, pode exibi-los ou ocultá-los. Através do c
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guia de utilização do Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Partilhar uma pasta através do webmail OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
 

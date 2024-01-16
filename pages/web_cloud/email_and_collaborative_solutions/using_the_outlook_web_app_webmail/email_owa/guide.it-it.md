@@ -6,7 +6,7 @@ updated: 2021-06-25
 
 ## Obiettivo
 
-Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web Application (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
+Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web Access (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
 
 **Questa guida spiega come eseguire azioni di carattere generale con il tuo indirizzo email nell’interfaccia OWA.**
 
@@ -208,7 +208,7 @@ Puoi quindi consultare la visualizzazione ad albero delle "Opzioni" sul lato sin
 
 ### Gestione dei cookies
 
-La Webmail utilizzata per le nostre soluzioni email è basata sul software Microsoft Outlook Web Application. È quindi in grado di scambiare metadati con i server di Microsoft, sotto forma di cookies denominati `appsforoffice.microsoft.com`.
+La Webmail utilizzata per le nostre soluzioni email è basata sul software Microsoft Outlook Web Access. È quindi in grado di scambiare metadati con i server di Microsoft, sotto forma di cookies denominati `appsforoffice.microsoft.com`.
 
 Per disattivare questi scambi, è possibile utilizzare sul browser un'estensione di tipo "block" di contenuti (ad esempio, uBlock Origin o Ghostery).
 La disattivazione di questi cookies può compromettere la stabilità della webmail.

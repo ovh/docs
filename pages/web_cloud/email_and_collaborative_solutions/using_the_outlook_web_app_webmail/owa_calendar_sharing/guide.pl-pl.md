@@ -8,7 +8,7 @@ updated: 2020-02-19
 
 Ta funkcja programu Exchange umożliwia udzielanie dostępu do Twoich kalendarzy innym osobom.
 
-**Dowiedz się, jak udostępnić kalendarze i pobierać je przy użyciu aplikacji OWA (Outlook Web App).**
+**Dowiedz się, jak udostępnić kalendarze i pobierać je przy użyciu aplikacji OWA (Outlook Web Access).**
 
 ## Wymagania początkowe
 
@@ -78,7 +78,7 @@ Kliknięcie kalendarza na liście powoduje jego dodanie do przeglądu widocznego
 
 ## Sprawdź również
 
-[Przewodnik dotyczący korzystania z Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Przewodnik dotyczący korzystania z Outlook Web Access (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Exchange : współdzielenie katalogu w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
 

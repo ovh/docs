@@ -132,7 +132,7 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Usar Outlook Web Access con una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Crear reglas de la bandeja de entrada en OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)
 

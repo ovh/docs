@@ -56,13 +56,13 @@ Once you have completed the text fields, click `Next`{.action} and then check th
 
 #### Using your email accounts
 
-Once you have created your email addresses, you can start using them straight away. You can do this using Outlook Web App (OWA) webmail, or you can use any software you want.
+Once you have created your email addresses, you can start using them straight away. You can do this using Outlook Web Access (OWA) webmail, or you can use any software you want.
 
-##### **1. Using Outlook Web App (OWA) webmail**
+##### **1. Using Outlook Web Access (OWA) webmail**
 
 Go to the [Webmail login](https://www.ovh.ie/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web Access user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 

@@ -8,7 +8,7 @@ updated: 2020-03-11
 
 Avec l’option « Règles de gestion de la boîte de réception », vous pouvez créer un ensemble de règles pour gérer votre courrier entrant. Ces règles vous permettent de maintenir l’ordre dans votre compte de messagerie en acheminant automatiquement les e-mails dans différents dossiers. Il s’agit également d’une méthode qui permet de définir les paramètres de transfert (redirections) et de filtrer les messages indésirables.
 
-**Découvrez comment créer des filtres et des redirections e-mails depuis Outlook Web App (OWA).**
+**Découvrez comment créer des filtres et des redirections e-mails depuis Outlook Web Access (OWA).**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -108,6 +108,6 @@ Veuillez noter que les faux-positifs ne peuvent pas être identifiés directemen
 
 [Partage de calendriers depuis OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 
-[Utilisation de Outlook Web App avec un compte de messagerie](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Utilisation de Outlook Web Access avec un compte de messagerie](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

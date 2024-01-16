@@ -53,7 +53,7 @@ Prima di creare una firma per utenti, prendi in considerazione queste informazio
 
 ## Per saperne di più
 
-[Guida all’utilizzo di Outlook Web App con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guida all’utilizzo di Outlook Web Access con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegare i diritti su un account email](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

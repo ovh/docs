@@ -8,7 +8,7 @@ updated: 2020-06-05
 
 This Exchange collaborative feature enables the creation of email addresses dedicated to resources in your organisation, such as conference rooms and shared equipment. Using these resource accounts helps with organising events in a collaborative environment by providing availability checks and seamlessly integrating resources with your Exchange calendars.
 
-**This guide explains the managing of resources using the OVHcloud Control Panel and the Outlook Web App (OWA).**
+**This guide explains the managing of resources using the OVHcloud Control Panel and the Outlook Web Access (OWA).**
 
 ## Requirements
 
@@ -113,7 +113,7 @@ After creating the event (clicking `Send`{.action} in the top menu bar) Exchange
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Using the Outlook Web Access with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Sharing calendars in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 

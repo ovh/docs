@@ -8,7 +8,7 @@ updated: 2020-04-07
 
 Es ist nicht immer sinnvoll, anderen Benutzern die Verwendung eines gesamten E-Mail-Accounts zu erlauben. Die Ordnerfreigabefunktion in Exchange ermöglicht es Ihnen, anderen Benutzern Zugriff auf ausgewählte Ordner in Ihrem Account zu gewähren, indem Sie sehr spezifische Berechtigungen zuweisen.
 
-**Diese Anleitung erläutert, wie Sie Ordner mithilfe der Outlook Web App (OWA) freigeben und die zugehörigen Zugriffsrechte festlegen.**
+**Diese Anleitung erläutert, wie Sie Ordner mithilfe der Outlook Web Access (OWA) freigeben und die zugehörigen Zugriffsrechte festlegen.**
 
 > [!primary]
 >
@@ -88,7 +88,7 @@ Loggen Sie sich über das [OVHcloud Webmail](https://www.ovhcloud.com/de/mail) i
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Verwendung der Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Berechtigungen für einen Exchange Account übertragen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

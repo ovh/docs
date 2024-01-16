@@ -128,7 +128,7 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Verwendung der Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Posteingangsregeln in OWA erstellen](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 

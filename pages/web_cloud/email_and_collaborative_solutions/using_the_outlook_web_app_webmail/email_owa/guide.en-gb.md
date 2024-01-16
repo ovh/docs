@@ -1,12 +1,12 @@
 ---
-title: 'Using the Outlook Web App with an email account'
+title: 'Using the Outlook Web Access with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
 updated: 2021-06-25
 ---
 
 ## Objective
 
-With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.co.uk/mail) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
+With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Access (OWA). Our [webmail login page](https://www.ovh.co.uk/mail) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
@@ -208,7 +208,7 @@ You can then browse the "Options" tree-view on the left-hand side of the page. F
 
 ### Cookie management
 
-The webmail that is used for our email offers is based on Microsoft Outlook Web Application software. It is therefore likely to exchange metadata with Microsoft servers, in the form of cookies called `appsforoffice.microsoft.com`.
+The webmail that is used for our email offers is based on Microsoft Outlook Web Access software. It is therefore likely to exchange metadata with Microsoft servers, in the form of cookies called `appsforoffice.microsoft.com`.
 
 If you want to disable these exchanges, you can use a content blocking extension (such as uBlock Origin or Ghostery) on your browser.
 However, disabling these cookies may affect the stability of your webmail.

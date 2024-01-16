@@ -1,12 +1,12 @@
 ---
-title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)'
+title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web Access (OWA)'
 excerpt: 'Saiba como utilizar o seu endereço de e-mail a partir do webmail OWA'
 updated: 2021-06-25
 ---
 
 ## Sumário
 
-Com as soluções de e-mail OVHcloud pode enviar e receber e-mails utilizando um dispositivo e um cliente à sua escolha. Para aceder a uma conta a partir de qualquer local através do seu browser, a OVHcloud disponibiliza-lhe um cliente de e-mail online denominado Outlook Web Application (OWA). A nossa [página de login](https://www.ovh.pt/mail/) é o único ponto de acesso à interface OWA para todas as contas de e-mail ativas no MX Plan, Email Pro e Hosted Exchange.
+Com as soluções de e-mail OVHcloud pode enviar e receber e-mails utilizando um dispositivo e um cliente à sua escolha. Para aceder a uma conta a partir de qualquer local através do seu browser, a OVHcloud disponibiliza-lhe um cliente de e-mail online denominado Outlook Web Access (OWA). A nossa [página de login](https://www.ovh.pt/mail/) é o único ponto de acesso à interface OWA para todas as contas de e-mail ativas no MX Plan, Email Pro e Hosted Exchange.
 
 **Este guia explica-lhe como desempenhar ações comuns com o seu endereço de e-mail na interface OWA.**
 
@@ -208,7 +208,7 @@ Depois aceda à vista de árvore do menu “Opções” situado do lado esquerdo
 
 ### Gestão dos cookies
 
-O webmail que é utilizado para as nossas ofertas de e-mail está baseado no software Microsoft Outlook Web Application. Portanto, é suscetível de trocar metadados com os servidores da Microsoft, sob a forma de cookies designados `appsforoffice.microsoft.com`.
+O webmail que é utilizado para as nossas ofertas de e-mail está baseado no software Microsoft Outlook Web Access. Portanto, é suscetível de trocar metadados com os servidores da Microsoft, sob a forma de cookies designados `appsforoffice.microsoft.com`.
 
 Se pretender desativar esta troca de informações, pode utilizar no seu browser uma extensão do tipo de bloqueador de conteúdos (como o uBlock Origin ou Ghostery).
 A desativação destes cookies pode afetar a estabilidade do webmail.

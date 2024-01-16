@@ -11,7 +11,7 @@ updated: 2020-03-11
 
 Przy użyciu opcji „Reguły skrzynki odbiorczej” można utworzyć złożone zestawy reguł do obsługi e-maili przychodzących. Ułatwia to utrzymanie porządku na koncie poczty elektronicznej dzięki automatycznemu sortowaniu wiadomości w folderach. Jest też możliwe zdefiniowanie ustawień przesyłania dalej e-maili (przekierowywania) i filtrowanie wiadomości będących spamem.
 
-**Dowiedz się, jak utworzyć filtry poczty e-mail i przekierowania przy użyciu aplikacji Outlook Web App (OWA).**
+**Dowiedz się, jak utworzyć filtry poczty e-mail i przekierowania przy użyciu aplikacji Outlook Web Access (OWA).**
 
 ## Wymagania początkowe
 
@@ -100,6 +100,6 @@ Ponieważ żadne mechanizmy ochrony antyspamowej nie są w stanie precyzyjnie ok
 
 [Exchange 2016: współdzielenie kalendarza w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 
-[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

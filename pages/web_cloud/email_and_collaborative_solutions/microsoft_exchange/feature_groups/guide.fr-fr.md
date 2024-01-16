@@ -8,7 +8,7 @@ updated: 2020-02-26
 
 Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par envoi d’ e-mails à une seule adresse, celle du groupe. Cette fonction collaborative vous permet de créer et gérer des listes de diffusion constituées aussi bien d’utilisateurs d’Exchange que de contacts externes.
 
-**Ce guide va vous expliquer comment utiliser les groupes Exchange via l’espace client OVHcloud et le service Outlook Web App (OWA).**
+**Ce guide va vous expliquer comment utiliser les groupes Exchange via l’espace client OVHcloud et le service Outlook Web Access (OWA).**
 
 ## Prérequis
 

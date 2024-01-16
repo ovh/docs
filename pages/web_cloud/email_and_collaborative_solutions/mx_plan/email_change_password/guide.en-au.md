@@ -36,7 +36,7 @@ Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue">
 
 ### Changing the password via webmail
 
-Changing your password via webmail is available for OVHcloud email offer using **OWA** (**O**utlook **W**eb **A**pplication):
+Changing your password via webmail is available for OVHcloud email offer using **OWA** (**O**utlook **W**eb **A**ccess):
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

@@ -12,7 +12,7 @@ updated: 2020-06-05
 
 Diese kollaborative Exchange-Funktion erlaubt die Erstellung von E-Mail-Adressen, die den Ressourcen Ihrer Organisation zugewiesen sind, etwa für Konferenzräume und gemeinsam genutzte Hardware. Die Verwendung dieser Ressourcen-Accounts erlaubt es, die Organisation von Events in einer kollaborativen Arbeitsumgebung zu optimieren, indem Verfügbarkeitsprüfungen automatisch ausgeführt und die Ressourcen unmittelbar im Exchange Kalender integriert werden können.
 
-**Diese Anleitung erklärt, wie Sie Ressourcen mithilfe des OVHcloud Kundencenters und der Outlook Web App (OWA) verwalten.**
+**Diese Anleitung erklärt, wie Sie Ressourcen mithilfe des OVHcloud Kundencenters und der Outlook Web Access (OWA) verwalten.**
 
 ## Voraussetzungen
 
@@ -120,7 +120,7 @@ Nach Erstellung des Events (indem Sie auf `Senden`{.action} im oberen Menü klic
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Verwendung der Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Kalender in OWA freigeben](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 

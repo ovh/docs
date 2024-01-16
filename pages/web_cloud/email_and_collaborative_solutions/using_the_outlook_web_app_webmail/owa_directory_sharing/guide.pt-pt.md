@@ -8,7 +8,7 @@ updated: 2020-04-07
 
 Nem sempre convém delegar o uso ilimitado de uma conta de e-mail. A funcionalidade de partilha de pastas do Exchange permite-lhe conceder acesso a outros utilizadores a determinadas pastas da sua conta, por meio de autorizações muito específicas.
 
-**Este guia explica como partilhar pastas e definir autorizações de acesso através do Outlook Web App (OWA).**
+**Este guia explica como partilhar pastas e definir autorizações de acesso através do Outlook Web Access (OWA).**
 
 > [!primary]
 >
@@ -88,7 +88,7 @@ Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/ma
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guia de utilização do Outlook Web Access](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Atribuir permissões a uma conta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

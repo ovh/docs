@@ -58,11 +58,11 @@ Once you have completed the text fields, click `Next`{.action} and then check th
 
 Once you have configured your email addresses, you can start using them straight away. There are two ways you can do this.
 
-##### 1. Use Outlook Web App (OWA) webmail.
+##### 1. Use Outlook Web Access (OWA) webmail.
 
 Go to the [Webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 
-When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external}.
+When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web Access user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external}.
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 

@@ -53,7 +53,7 @@ Przed zastosowaniem podpisów u użytkowników weź pod uwagę następujące asp
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Korzystanie z interfejsu Outlook Web Access wraz z kontem e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegowanie uprawnień do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

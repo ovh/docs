@@ -8,7 +8,7 @@ updated: 2020-02-19
 
 This Exchange feature allows you to grant other people access to your calendars.
 
-**This guide explains how to share calendars and retrieve them using the Outlook Web App (OWA).**
+**This guide explains how to share calendars and retrieve them using the Outlook Web Access (OWA).**
 
 ## Requirements
 
@@ -78,7 +78,7 @@ Clicking on a calendar in the list adds or removes them from the overview displa
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Using the Outlook Web Access with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Sharing folders in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
 

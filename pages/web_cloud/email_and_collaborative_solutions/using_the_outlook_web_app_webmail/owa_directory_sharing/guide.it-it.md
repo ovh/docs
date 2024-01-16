@@ -8,7 +8,7 @@ updated: 2020-04-07
 
 Non è sempre opportuno delegare l’utilizzo di un intero account di posta elettronica. La funzionalità di condivisione di una cartella Exchange ti  consente di concedere ad altri utenti l’accesso a determinate cartelle nel tuo account, assegnando autorizzazioni molto specifiche.
 
-**Questa guida ti mostra come condividere cartelle e definire i diritti di accesso con Outlook Web App (OWA).**
+**Questa guida ti mostra come condividere cartelle e definire i diritti di accesso con Outlook Web Access (OWA).**
 
 > [!primary]
 >
@@ -89,7 +89,7 @@ Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/
 
 ## Per saperne di più
 
-[ Guida all’utilizzo di Outlook Web App con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[ Guida all’utilizzo di Outlook Web Access con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegare i diritti su un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

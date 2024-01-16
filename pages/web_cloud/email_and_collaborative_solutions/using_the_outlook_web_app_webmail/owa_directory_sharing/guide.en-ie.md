@@ -8,7 +8,7 @@ updated: 2020-04-07
 
 It is not always appropriate to delegate the usage of an entire email account. The Exchange folder sharing feature allows you to grant other users access to selected folders in your account by assigning very specific permissions.
 
-**This guide explains how to share folders and define their access permissions using the Outlook Web App (OWA).**
+**This guide explains how to share folders and define their access permissions using the Outlook Web Access (OWA).**
 
 > [!primary]
 >
@@ -88,7 +88,7 @@ Log in to your Exchange account via the [OVHcloud webmail](https://www.ovhcloud.
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Using the Outlook Web Access with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegating permissions on an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

@@ -8,7 +8,7 @@ updated: 2020-02-26
 
 Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz przez wysyłanie e-maili na unikatowy adres grupy. Dzięki tej funkcji współpracy można tworzyć listy wysyłkowe obejmujące nie tylko użytkowników programu Exchange, ale też kontakty zewnętrzne, a także zarządzać nimi.
 
-**Dowiedz się, jak korzystać z grup programu Exchange za pośrednictwem Panelu klienta OVHcloud oraz interfejsu OWA (Outlook Web App).**
+**Dowiedz się, jak korzystać z grup programu Exchange za pośrednictwem Panelu klienta OVHcloud oraz interfejsu OWA (Outlook Web Access).**
 
 ## Wymagania początkowe
 
@@ -74,7 +74,7 @@ Listę wysyłkową można przetestować za pośrednictwem interfejsu [OVHcloud w
 
 [Delegowanie uprawnień do konta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 
-[Przewodnik dotyczący korzystania z Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Przewodnik dotyczący korzystania z Outlook Web Access (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Exchange 2016: współdzielenie kalendarza w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 

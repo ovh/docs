@@ -8,7 +8,7 @@ updated: 2020-04-07
 
 Delegar permisos sobre toda una cuenta de correo no siempre es recomendable. La funcionalidad de carpetas compartidas de Exchange permite conceder acceso a determinadas carpetas de la cuenta mediante la asignación de permisos específicos.
 
-**Esta guía explica cómo compartir carpetas y definir los permisos de acceso utilizando Outlook Web App (OWA).**
+**Esta guía explica cómo compartir carpetas y definir los permisos de acceso utilizando Outlook Web Access (OWA).**
 
 > [!primary]
 >
@@ -88,7 +88,7 @@ Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](http
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Usar Outlook Web Access con una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegar permisos en una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

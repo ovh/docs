@@ -154,7 +154,7 @@ Para descargar el archivo `.eml`, seleccione el email que desee. Haga clic en el
 
 ![correo electrónico](images/roundcube02.png){.thumbnail}
 
-#### Outlook Web Application (OWA) <a name="owa"></a>
+#### Outlook Web Access (OWA) <a name="owa"></a>
 
 ##### **Obtener la cabecera**
 
@@ -186,7 +186,7 @@ Para consultar la cabecera, seleccione el mensaje de correo electrónico corresp
 
 #### Outlook.com
 
-Para ver la cabecera en la interfaz webmail <Outlook.com>, consulte la sección [Outlook Web Application](#owa) de esta guía.
+Para ver la cabecera en la interfaz webmail <Outlook.com>, consulte la sección [Outlook Web Access](#owa) de esta guía.
 
 ## Más información
 

@@ -26,7 +26,7 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 
 > [!warning]
 >
-> O seguinte guia é endereçado aos detentores da oferta MX Plan "Histórico". Para a nova oferta, a gestão dos filtros é feita diretamente através do webmail OWA (**O**utlook **W**eb **A**pplication). Identifique a sua oferta através da tabela abaixo.
+> O seguinte guia é endereçado aos detentores da oferta MX Plan "Histórico". Para a nova oferta, a gestão dos filtros é feita diretamente através do webmail OWA (**O**utlook **W**eb **A**ccess). Identifique a sua oferta através da tabela abaixo.
 >
 
 Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|

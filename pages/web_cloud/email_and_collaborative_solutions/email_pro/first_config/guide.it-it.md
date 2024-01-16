@@ -133,9 +133,9 @@ Per configurare l’account su un altro client di posta o dispositivi come _smar
 
 ## Per saperne di più
 
-[Guida all’utilizzo di Outlook Web App con un account email](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guida all’utilizzo di Outlook Web Access con un account email](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-[Creare regole di posta in arrivo in Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)
+[Creare regole di posta in arrivo in Outlook Web Access (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)
 
 [Aggiungi un alias al tuo account email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 

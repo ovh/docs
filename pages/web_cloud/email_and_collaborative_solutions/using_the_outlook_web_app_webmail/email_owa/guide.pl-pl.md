@@ -1,5 +1,5 @@
 ---
-title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
+title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)'
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
 updated: 2021-06-25
 ---
@@ -10,7 +10,7 @@ updated: 2021-06-25
 
 ## Wprowadzenie
 
-Dzięki rozwiązaniom poczty elektronicznej OVHcloud można wysyłać oraz odbierać e-maile przy użyciu wybranego urządzenia i klienta poczty. Aby umożliwić dostęp do konta z dowolnego miejsca przy użyciu przeglądarki, OVHcloud udostępnia klient poczty e-mail online o nazwie Outlook Web Application (OWA). [Strona logowania do interfejsu webmail](https://www.ovh.pl/mail/) zapewnia dostęp do odpowiednich interfejsów OWA dla wszystkich aktywnych kont e-mail w ramach usług MX Plan, E-mail Pro i Hosted Exchange.
+Dzięki rozwiązaniom poczty elektronicznej OVHcloud można wysyłać oraz odbierać e-maile przy użyciu wybranego urządzenia i klienta poczty. Aby umożliwić dostęp do konta z dowolnego miejsca przy użyciu przeglądarki, OVHcloud udostępnia klient poczty e-mail online o nazwie Outlook Web Access (OWA). [Strona logowania do interfejsu webmail](https://www.ovh.pl/mail/) zapewnia dostęp do odpowiednich interfejsów OWA dla wszystkich aktywnych kont e-mail w ramach usług MX Plan, E-mail Pro i Hosted Exchange.
 
 **Dowiedz się, jak wykonać typowe działania dotyczące adresu e-mail w interfejsie OWA.**
 
@@ -212,7 +212,7 @@ Po lewej stronie pojawi się drzewo menu „Opcje”. W tym widoku można dostos
 
 ### Zarządzanie plikami cookie
 
-Aplikacja webmail, która jest używana w naszych ofertach e-mail, jest oparta na oprogramowaniu Microsoft Outlook Web Application. Może więc wymieniać metadane z serwerami Microsoft w postaci plików cookie nazywanych `appsforoffice.microsoft.com`.
+Aplikacja webmail, która jest używana w naszych ofertach e-mail, jest oparta na oprogramowaniu Microsoft Outlook Web Access. Może więc wymieniać metadane z serwerami Microsoft w postaci plików cookie nazywanych `appsforoffice.microsoft.com`.
 
 Jeśli chcesz wyłączyć tę wymianę, możesz w przeglądarce używać rozszerzenia typu bloker treści (takiego jak uBlock Origin lub Ghostery).
 Wyłączenie tych plików cookie może mieć wpływ na stabilność usługi webmail.

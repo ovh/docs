@@ -8,7 +8,7 @@ updated: 2020-03-11
 
 Através da opção "Regras inbox", poderá criar um conjunto elaborado de regras para gerir os e-mails que entram na sua caixa de correio eletrónica. Estas regras podem ajudar a manter a sua conta de e-mail organizada, colocando automaticamente os e-mails em pastas. É também a forma de definir as configurações de redirecionamento e de filtrar mensagens de SPAM.
 
-**Saiba como criar filtros e redirecionar e-mails através do Outlook Web App (OWA).**
+**Saiba como criar filtros e redirecionar e-mails através do Outlook Web Access (OWA).**
 
 ## Requisitos
 
@@ -97,6 +97,6 @@ Tenha em atenção que os falsos positivos de SPAM não podem ser declarados atr
 
 [Partilhar calendários em OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 
-[Utilizar o Outlook Web App com uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Utilizar o Outlook Web Access com uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

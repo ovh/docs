@@ -8,7 +8,7 @@ updated: 2020-03-12
 
 With the "Inbox rules" option, you can create an elaborate set of rules to handle incoming emails. These can help you to keep your email account organised by automatically sorting emails into folders. This is also the way to define forwarding settings (redirections) and to filter out spam messages.
 
-**Find out how to create email filters and redirections using the Outlook Web App (OWA).**
+**Find out how to create email filters and redirections using the Outlook Web Access (OWA).**
 
 ## Requirements
 
@@ -93,6 +93,6 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 ## Go further
 
-[Using the Outlook Web App with an email account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Using the Outlook Web Access with an email account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 Join our community of users on <https://community.ovh.com/en/>.

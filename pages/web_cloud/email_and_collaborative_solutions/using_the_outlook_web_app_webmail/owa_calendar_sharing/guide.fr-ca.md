@@ -8,7 +8,7 @@ updated: 2020-02-19
 
 Grâce à cette fonction d’Exchange, autorisez l'accès à vos calendriers par d’autres utilisateurs.
 
-**Ce guide vous explique comment partager et afficher vos calendriers depuis l'interface Outlook Web App (OWA).**
+**Ce guide vous explique comment partager et afficher vos calendriers depuis l'interface Outlook Web Access (OWA).**
 
 ## Prérequis
 

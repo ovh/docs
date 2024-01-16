@@ -6,7 +6,7 @@ updated: 2024-01-15
 
 ## Objective
 
-As part of the MX Plan solution upgrade, a migration is planned from the current solution using Outlook Web App (OWA) webmail to the Zimbra solution and its webmail.
+As part of the MX Plan solution upgrade, a migration is planned from the current solution using Outlook Web Access (OWA) webmail to the Zimbra solution and its webmail.
 
 If you are affected by this migration, you will find the most frequently asked questions here.
 
@@ -16,7 +16,7 @@ Zimbra is a popular open-source collaborative solution. Your service will be mig
 
 Zimbra offers many features that will soon be available in OVHcloud catalogues.
 
-### What are the differences between Outlook Web App (OWA) and Zimbra webmail?
+### What are the differences between Outlook Web Access (OWA) and Zimbra webmail?
 
 Zimbra offers similar features and a user experience close to OWA. A guide to getting started with Zimbra will be available soon.
 

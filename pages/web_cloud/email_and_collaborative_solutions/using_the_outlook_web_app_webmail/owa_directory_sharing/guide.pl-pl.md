@@ -8,7 +8,7 @@ updated: 2020-04-07
 
 Przyznanie pełnomocnictwa do korzystania z całego konta e-mail nie zawsze jest właściwe. Funkcja współdzielenia folderów Exchange umożliwia przyznanie innym użytkownikom dostępu do wybranych folderów na koncie przez przypisanie konkretnych uprawnień.
 
-**Dowiedz się, jak współdzielić foldery i zdefiniować uprawnienia dostępu do nich przy użyciu interfejsu OWA (Outlook Web App).**
+**Dowiedz się, jak współdzielić foldery i zdefiniować uprawnienia dostępu do nich przy użyciu interfejsu OWA (Outlook Web Access).**
 
 > [!primary]
 >
@@ -88,7 +88,7 @@ Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https:
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Korzystanie z interfejsu Outlook Web Access wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegowanie uprawnień do konta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

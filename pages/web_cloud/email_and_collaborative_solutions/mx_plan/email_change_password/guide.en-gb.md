@@ -66,7 +66,7 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ### Changing the password via webmail
 
-Changing your password via webmail is available for OVHcloud email offers using **OWA** (**O**utlook **W**eb **A**pplication):
+Changing your password via webmail is available for OVHcloud email offers using **OWA** (**O**utlook **W**eb **A**ccess):
 
 - MX Plan email (new version)
 - Email Pro

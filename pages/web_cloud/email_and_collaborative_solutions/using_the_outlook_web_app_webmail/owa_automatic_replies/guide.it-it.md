@@ -8,7 +8,7 @@ updated: 2020-07-20
 
 Questa funzionalità di Exchange consente di impostare risposte automatiche alle email ricevute dal tuo account per diverse modalità di utilizzo, ad esempio per messaggi “fuori sede”.
 
-**Scopri come abilitare le risposte automatiche utilizzando Outlook Web App (OWA).**
+**Scopri come abilitare le risposte automatiche utilizzando Outlook Web Access (OWA).**
 
 ## Prerequisiti
 
@@ -50,7 +50,7 @@ Nel secondo riquadro dell’editor è possibile digitare un messaggio alternativ
 
 ## Per saperne di più
 
-[Guida all’utilizzo di Outlook Web App con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Guida all’utilizzo di Outlook Web Access con un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Concedere autorizzazioni di accesso a un account Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

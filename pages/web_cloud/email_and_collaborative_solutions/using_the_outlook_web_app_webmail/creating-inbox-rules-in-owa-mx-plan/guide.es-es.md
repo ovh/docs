@@ -8,7 +8,7 @@ updated: 2020-03-11
 
 Con la opción «Reglas de la bandeja de entrada», puede crear un elaborado conjunto de reglas para gestionar los mensajes de correo electrónico entrantes. Estas reglas le permiten mantener su cuenta de correo electrónico organizada mediante la clasificación automática de los mensajes de correo electrónico en carpetas. También permiten establecer la configuración de reenvío (redireccionamientos) y filtrar los mensajes de correo no deseado.
 
-**Descubra cómo crear filtros y redireccionamientos para los mensajes de correo electrónico con Outlook Web App (OWA).**
+**Descubra cómo crear filtros y redireccionamientos para los mensajes de correo electrónico con Outlook Web Access (OWA).**
 
 ## Requisitos
 
@@ -97,6 +97,6 @@ Tenga en cuenta que no es posible declarar falsos positivos de correo no deseado
 
 [Compartir calendarios en OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 
-[Usar Outlook Web App con una cuenta de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Usar Outlook Web Access con una cuenta de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

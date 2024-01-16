@@ -134,7 +134,7 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 ## Quer saber mais?
 
-[Utilizar o Outlook Web App com uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Utilizar o Outlook Web Access com uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Criar regras inbox no OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)
 

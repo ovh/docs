@@ -8,7 +8,7 @@ updated: 2020-07-20
 
 Ta funkcja programu Exchange umożliwia skonfigurowanie automatycznych odpowiedzi na e-maile przysłane na Twoje konto w różnych sytuacjach, na przykład podczas nieobecności.
 
-**Dowiedz się, jak włączyć odpowiedzi automatyczne przy użyciu interfejsu Outlook Web App (OWA).**
+**Dowiedz się, jak włączyć odpowiedzi automatyczne przy użyciu interfejsu Outlook Web Access (OWA).**
 
 ## Wymagania początkowe
 
@@ -49,7 +49,7 @@ Alternatywną wiadomość dla nadawców zewnętrznych można wprowadzić w drugi
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Korzystanie z interfejsu Outlook Web Access wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegowanie uprawnień do konta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

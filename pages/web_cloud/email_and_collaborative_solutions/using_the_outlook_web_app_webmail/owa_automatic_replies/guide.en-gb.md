@@ -8,7 +8,7 @@ updated: 2020-07-20
 
 This Exchange feature allows you to set up automatic responses to emails sent to your account for various use cases, for example out-of-office messages.
 
-**Find out how to enable automatic replies using the Outlook Web App (OWA).**
+**Find out how to enable automatic replies using the Outlook Web Access (OWA).**
 
 ## Requirements
 
@@ -49,7 +49,7 @@ An alternative message for external senders can be entered into the second edito
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Using the Outlook Web Access with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 [Delegating permissions on an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation)
 

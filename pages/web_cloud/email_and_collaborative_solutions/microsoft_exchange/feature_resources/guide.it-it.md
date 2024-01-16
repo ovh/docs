@@ -12,7 +12,7 @@ updated: 2020-06-05
 
 Questa funzione collaborativa di Exchange permette di creare indirizzi di posta dedicati alle risorse della tua organizzazione, come sale di conferenza e dispositivi condivisi. L'utilizzo di questi account di risorse permette di ottimizzare l'organizzazione di eventi in un ambiente di lavoro collaborativo, fornendo controlli di disponibilità e integrando le risorse in modo trasparente nei calendari Exchange.
 
-**Questa guida ti mostra come gestire le risorse utilizzando lo Spazio Cliente OVHcloud e l'applicazione Outlook Web App (OWA).**
+**Questa guida ti mostra come gestire le risorse utilizzando lo Spazio Cliente OVHcloud e l'applicazione Outlook Web Access (OWA).**
 
 ## Prerequisiti
 

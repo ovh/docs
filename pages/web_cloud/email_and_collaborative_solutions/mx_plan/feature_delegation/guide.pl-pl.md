@@ -25,7 +25,7 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 
 > [!warning]
 >
-> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty nie ma delegacji. Zmiana hasła, filtrów i autoresponderów konta e-mail może zostać bezpośrednio zmieniona przez Webmail OWA (**O**utlook **W**eb **A**pplication). **Zidentyfikuj ofertę korzystając z poniższej tabeli.**
+> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty nie ma delegacji. Zmiana hasła, filtrów i autoresponderów konta e-mail może zostać bezpośrednio zmieniona przez Webmail OWA (**O**utlook **W**eb **A**ccess). **Zidentyfikuj ofertę korzystając z poniższej tabeli.**
 >
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|

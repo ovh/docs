@@ -66,7 +66,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ### Alterar a palavra-passe a partir do webmail
 
-A modificação da sua palavra-passe através do webmail está disponível para as ofertas de e-mail OVHcloud que utilizam **OWA** (**O**utlook **W**eb **A**pplication):
+A modificação da sua palavra-passe através do webmail está disponível para as ofertas de e-mail OVHcloud que utilizam **OWA** (**O**utlook **W**eb **A**ccess):
 
 - E-mails MXplan (Nova versão)
 - Email Pro
