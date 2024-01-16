@@ -91,7 +91,7 @@ Ponieważ żadne mechanizmy ochrony antyspamowej nie są w stanie precyzyjnie ok
 
 > [!primary]
 >
-> Wiadomości błędnie oznaczonych jako spam (tzw. fałszywie pozytywnych) nie można zgłosić bezpośrednio w aplikacji OWA. Jeśli otrzymujesz e-maile błędnie oznaczone jako \[SPAM], zalecamy powiadomienie naszego zespołu wsparcia klienta przez utworzenie zgłoszenia w [Panelu klienta OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+> Wiadomości błędnie oznaczonych jako spam (tzw. fałszywie pozytywnych) nie można zgłosić bezpośrednio w aplikacji OWA. Jeśli otrzymujesz e-maile błędnie oznaczone jako \[SPAM], zalecamy powiadomienie naszego zespołu wsparcia klienta [przez utworzenie zgłoszenia](https://help.ovhcloud.com/csm?id=csm_cases_requests).  
 >
 
 ## Sprawdź również
