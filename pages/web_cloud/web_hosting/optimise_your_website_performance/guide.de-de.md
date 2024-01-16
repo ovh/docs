@@ -89,16 +89,16 @@ Sie können direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?a
 Zugriff auf Statistiken und Logs:
 
 1. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action}.
+2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
 3. Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
 
 ![logs](images/tab.png){.thumbnail}
 
-So greifen Sie auf Grafiken zu:
+Zugriff auf Nutzungsgraphen:
 
 1. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
-2. Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action}. Scrollen Sie bis zum Ende der Seite, auf der sich die Grafik zur Nutzung Ihres Hostings befindet.
-3. Wählen Sie den Informations**typ** sowie den **Zeitraum** der angezeigten Daten aus.
+2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Scrollen Sie bis zum Ende der Seite, um die Graphen zur Webhosting-Nutzung einzusehen.
+3. Wählen Sie den **Informationstyp** sowie den **Zeitraum** der angezeigten Daten aus.
 
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 

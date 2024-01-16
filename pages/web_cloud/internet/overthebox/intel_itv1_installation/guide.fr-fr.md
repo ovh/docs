@@ -1,6 +1,6 @@
 ---
-title: 'Installation OverTheBox Intel ou IT v1'
-excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox Intel ou IT v1 afin de profiter de votre offre OverTheBox"
+title: 'Installer OverTheBox v1 (Intel & IT)'
+excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox v1 (Intel & IT)"
 updated: 2021-04-14
 ---
 

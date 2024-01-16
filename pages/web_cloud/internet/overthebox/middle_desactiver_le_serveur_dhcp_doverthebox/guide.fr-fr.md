@@ -1,8 +1,6 @@
 ---
 title: "Désactiver le serveur DHCP d'OverTheBox"
-keywords: 'DHCP, désactiver'
-description: "Désactiver le serveur DHCP d'OverTheBox"
-excerpt: "Vous souhaitez réaliser le service DHCP par un autre équipement qu'OverTheBox, voici le guide pour désactiver le DHCP."
+excerpt: "Découvrez comment désactiver le serveur DHCP de votre OverTheBox"
 updated: 2021-04-13
 ---
 

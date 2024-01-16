@@ -1,6 +1,6 @@
 ---
 title: "Installer l'image OverTheBox sur votre matériel"
-excerpt: "Découvrez comment installer une image OverTheBox manuellement sur votre matériel"
+excerpt: "Découvrez comment installer manuellement une image OverTheBox sur votre matériel"
 updated: 2023-11-21
 ---
 
