@@ -31,15 +31,13 @@ This guide uses some concepts that are specific to our Public Cloud Load Balance
 | 1.26.4-3>=  |   
 | 1.27>=      |  
 
-#### Network topologie to expose your Load Balancers publicly   //à reformuler
+#### Network prerequisite to expose your Load Balancers publicly   //TODO
 If you plan to expose your Load Balancer publicly, in order to attach a FloatingIP to your Load Balancer, an OVHcloud Gateway (an OpenStack router) is mandatory on the subnet hosting your Load Balancer.
 For such use case we do recommend to create your MKS clusters on a network and subnet using our OVHcloud Gateway.
 For existing clusters, if:
 - **The Subnet's GatewayIP is already an OVHcloud Gateway**, nothing needs to be done. The current Openstack Router will be used.
-- **The subnet doest not have an IP reserved for a Gateway** --> You will have to provide/create a compatible subnet. You can edit the existing subnet (modop CLI Openstack/Horizon) or use another dedicated subnet (doc LoadBalancerSubnetID)//TODO
-- **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)** --> You will have to provide/create a compatible subnet. To do so you select another dedicated subnet (doc LoadBalancerSubnetID)//TODO
-
-
+- **The subnet does not have an IP reserved for a Gateway** --> You will have to provide/create a compatible subnet. You can edit the existing subnet (modop CLI Openstack/Horizon) or use another dedicated subnet (doc LoadBalancerSubnetID) //TODO
+- **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)** --> You will have to provide/create a compatible subnet. To do so you select another dedicated subnet (doc LoadBalancerSubnetID) //TODO
 
 ## Limitations
 
@@ -64,27 +62,28 @@ For existing clusters, if:
     > During the CCM Beta, since the Public Cloud Load Balancer is GA, the Public Cloud Load Balancer usage as well as the other network components (Gateway & Floating IPs) will be billed
     >
 
-## Process
+## Instructions
 
-During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) rather than the current [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer-kubernetes/) solution, you'll need to add an annotation: loadbalancer.ovhcloud.com/class: "octavia" on your Kubernetes Service manifest.
+During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) rather than the historical [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer-kubernetes/) solution, you'll need to add the annotation: loadbalancer.ovhcloud.com/class: "octavia" on your Kubernetes Service manifest.
 
 Here's a simple example of how to use the Public Cloud Load Balancer
 
-1. Creation of a functional Managed Kubernetes (MKS) cluster using the OVHcloud manager, Terraform or APIs.
-2. Retrieve the kubeconfig needed to use kubectl tool (via OVHcloud manager, Terraform or API). You can use [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049658)
-3. Create a 'deployment' using the following command:
+1. Deployment of a functional Managed Kubernetes (MKS) cluster using the [OVHcloud manager](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster?id=kb_article_view&sysparm_article=KB0037221),   [Terraform](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster-with-terraform?id=kb_article_view&sysparm_article=KB0049684), [Pulimi](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster-with-pulumi?id=kb_article_view&sysparm_article=KB0059712) or [APIs](https://api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube).
+2. Retrieve the kubeconfig file needed to use kubectl tool (via OVHcloud manager, Terraform, Pulumi or API). You can use [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049658)
+3. Create a 'deployment' ressource using the following command:
 ```shell
-kubectl create deployment test-octavia --image=nginx
+kunectl create Namespace test-lb-ns
+kubectl create Deployment test-lb --image=nginx -n=test-lb-ns
 ```
-4. Copy/Paste the following code on a file named `test-lb-todel.yaml`
+4. Copy/Paste the following code on a file named `test-lb-service.yaml`
 ```yaml
 apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: test-octavia
-  name: test-lb-todel
-  namespace: default
+    app: test-lb
+  name: test-lb-service
+  namespace: test-lb-ns
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia"
     loadbalancer.ovhcloud.com/flavor: "small"
@@ -95,20 +94,20 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: test-octavia
+    app: test-lb
   type: LoadBalancer
 ```
 6. Create a 'service' using the following command:
 ```shell
-kubectl create service test-lb-todel -f test-lb-todel.yaml
+kubectl apply -f test-lb-service.yaml
 ```
-7. Retrieve service IP address using the following command line:
+7. Retrieve Service IP address using the following command line:
 ```shell
-$ kubectl get service test-lb-todel
+$ kubectl get service test-lb-service -n=test-lb-ns
 NAME                 TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)        AGE
-test-lb-todel   LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP   12m
+test-lb-service      LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP   12m
 ```
-8. Open a web browser and access: http://IP-retrieved-in-prevous-step
+8. Open a web browser and access: http://141.94.215.240
 
 
 
@@ -129,9 +128,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: my-lb-service
+  namespace: test-lb-ns
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia"
-    loadbalancer.ovhcloud.com/flavor: "medium"
+    loadbalancer.ovhcloud.com/flavor: "medium" //optional, default = small
   labels:
     app: test-octavia
 spec:
@@ -155,6 +155,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: my-lb-service
+  namespace: test-lb-ns
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia"
     service.beta.kubernetes.io/openstack-internal-load-balancer: "true"
@@ -183,7 +184,7 @@ spec:
 
 - `loadbalancer.ovhcloud.com/flavor:`
 
-  Not a standard Openstack Octavia annotations (specific to OVHcloud). The size used for creating the loadbalancer, specifications can be found [here](https://www.ovhcloud.com/en/public-cloud/load-balancer/). Authorized values => `small`,`medium`,`large`. Default is 'small'.
+  Not a standard Openstack Octavia annotations (specific to OVHcloud). The size used for creating the loadbalancer. Specifications can be found on [Load Balancer specifications](https://www.ovhcloud.com/en/public-cloud/load-balancer/) page. Authorized values => `small`,`medium`,`large`. Default is 'small'.
 
 - `service.beta.kubernetes.io/openstack-internal-load-balancer`
 
