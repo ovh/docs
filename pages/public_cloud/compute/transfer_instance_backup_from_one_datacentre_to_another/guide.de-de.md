@@ -68,7 +68,7 @@ Ermitteln Sie nun mithilfe der Liste das erstellte Backup:
 | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
-Führen Sie abschließend folgenden Befehl aus, um die Sicherung auf den Jump Host zu laden:
+Führen Sie abschließend folgenden Befehl aus, um das Backup auf den Jump Host zu laden:
 
 ```bash
 $ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
