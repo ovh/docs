@@ -50,7 +50,7 @@ Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a par
 
 ### Primeira ligação
 
-Quando tiver recebido a mensagem de correio eletrónico com a hiperligação única, clique nesta hiperligação para concluir a configuração inicial. Se a ligação já expirou, ligue-se ao servidor em SSH e execute o comando `sudo whmlogin` para gerar uma nova ligação.
+Quando tiver recebido a mensagem de correio eletrónico com a hiperligação única, clique nesta hiperligação para concluir a configuração inicial. Se a ligação já expirou, ligue-se ao servidor em [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) e execute o comando `sudo whmlogin` para gerar uma nova ligação.
 
 O URL gerado pelo comando `sudo whmlogin` permite que se ligue sem informações de identificação (utilizador e palavra-passe) à sua interface WHM. WHM é uma camada de cPanel. Pode aceder ao cPanel após ter efetuado os seguintes passos.
 

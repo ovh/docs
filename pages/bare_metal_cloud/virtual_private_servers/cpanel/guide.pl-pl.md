@@ -50,7 +50,7 @@ Jeśli posiadasz już serwer VPS i chcesz na nim zainstalować cPanel, możesz w
 
 ### Pierwsze logowanie
 
-Po otrzymaniu wiadomości e-mail z unikalnym łączem kliknij ten link, aby przeprowadzić wstępną konfigurację. Jeśli łącze już wygasło, połącz się z serwerem za pomocą SSH i wprowadź komendę `sudo whmlogin`, aby wygenerować nowe łącze.
+Po otrzymaniu wiadomości e-mail z unikalnym łączem kliknij ten link, aby przeprowadzić wstępną konfigurację. Jeśli łącze już wygasło, połącz się z serwerem za pomocą [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) i wprowadź komendę `sudo whmlogin`, aby wygenerować nowe łącze.
 
 Adres URL wygenerowany przy użyciu polecenia `sudo whmlogin` umożliwia zalogowanie się do interfejsu WHM bez danych identyfikacyjnych (nazwa użytkownika i hasło). WHM to warstwa cPanel. Po wykonaniu kolejnych kroków będziesz mógł uzyskać dostęp do cPanel.
 
