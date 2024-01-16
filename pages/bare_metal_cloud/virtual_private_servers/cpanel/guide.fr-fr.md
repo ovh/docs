@@ -92,8 +92,8 @@ Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire c
 >
 > Dans la barre de navigation de votre navigateur, entrez les URLs suivantes pour vous connecter à :
 >
-> - cPanel : https://<IP_V4>:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
-> - WHM : https://<IP_V4>:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’e-mail d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
+> - cPanel : https&#58;//&#60;IP_V4&#62;:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
+> - WHM : https&#58;//&#60;IP_V4&#62;:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’e-mail d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
 >
 > Retrouvez votre adresse IPv4 dans l'e-mail que vous avez reçu suite à la commande de votre VPS avec la distribution cPanel.
 >
