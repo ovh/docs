@@ -130,13 +130,7 @@ On Windows, the location of the `known_hosts` file and the line you have to dele
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 
-To resolve this, use the following command with the IP address of your server:
-
-```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
-```
-
-Alternatively, navigate to this folder, right-click on the file and open it with the Notepad application.
+Navigate to this folder, right-click on the file and open it with the Notepad application.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
