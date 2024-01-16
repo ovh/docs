@@ -1,7 +1,7 @@
 ---
 title: Übertragen von Volume-Backups von einer OpenStack-Region in eine andere
 excerpt: Erfahren Sie hier, wie Sie das Backup eines Volumes von einer OpenStack-Region in eine andere verschieben können
-updated: 2024-01-09
+updated: 2024-01-11
 ---
 
 > [!primary]
