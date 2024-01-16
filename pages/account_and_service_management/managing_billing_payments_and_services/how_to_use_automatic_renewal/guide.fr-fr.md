@@ -1,14 +1,21 @@
 ---
-title: Gérer mes services OVHcloud
-excerpt: Découvrez comment gérer le renouvellement de vos services dans votre espace client
-updated: 2024-01-12
+title: Renouveler mes services OVHcloud
+excerpt: Découvrez comment gérer vos services et leur renouvellement dans votre espace client
+updated: 2024-01-16
 ---
 
 ## Objectif
 
-Le menu **Mes services** de votre espace client OVHcloud vous permet de vérifier le statut de vos services, de modifier leur type de renouvellement, de régulariser des factures ou d'anticiper leur paiement.
+Le menu **Mes services** de votre espace client OVHcloud vous permet de vérifier le statut de vos services, de les renouveler, de modifier leur type de renouvellement, de régulariser des factures ou d'anticiper leur paiement.
 
-**Découvrez comment fonctionne le renouvellement de vos services OVHcloud.**
+Ce guide vous permettra de :
+
+- [Comprendre les différences entre le renouvellement automatique et le renouvellement manuel](#auto-vs-manual)
+- [Déterminer quel type de renouvellement est appliqué sur vos services](#renewal-type)
+- [Connaître les différentes actions possibles pour chacun de vos services](#actions)
+- [Découvrir quelles actions peuvent être groupées sur plusieurs services](#group-actions)
+
+**Découvrez comment gérer vos services et leur renouvellement dans votre espace client OVHcloud.**
 
 > [!primary]
 >
@@ -19,25 +26,29 @@ Le menu **Mes services** de votre espace client OVHcloud vous permet de vérifie
 
 ## Prérequis
 
+Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions suivantes :
+
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Posséder des services OVHcloud actifs
 - Être [contact de facturation](/pages/account_and_service_management/account_information/managing_contacts#definition) de vos services OVHcloud
 - Disposer d'un moyen de paiement valide dans votre compte OVHcloud. Consultez notre guide « [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ».
 
-## Les différents types de renouvellement
+## Les différents types de renouvellement <a name="auto-vs-manual"></a>
 
 **Cliquez sur l'un ou l'autre des onglets ci-dessous.**
 
 > [!tabs]
 > **Le renouvellement automatique**
 >>
->> Par défaut, à la souscription, vos services sont paramétrés en **renouvellement automatique**. Ce mode vous permet de vous assurer que vos services soient systématiquement reconduits à échéance de l'abonnement.
+>> Par défaut, à la souscription, vos services sont paramétrés en **renouvellement automatique**. Ce mode vous permet de vous assurer que vos services sont systématiquement reconduits à échéance de l'abonnement.
+>> Exemple : vous avez souscrit un hébergement Web le 15 janvier 2024. Il sera automatiquement renouvelé le 15 janvier 2025 et le montant correspondant à son abonnement annuel sera prélevé de votre moyen de paiement par défaut.
 >>
 >> Si vous avez enregistré un moyen de paiement dans votre espace client, vos factures seront automatiquement prélevées sur celui-ci.
 >> Si vous n'avez enregistré aucun [moyen de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods), une facture vous sera adressée par e-mail. Il vous suffira alors de la régler en ligne.
 >>
->> Pour les services ayant une fréquence de renouvellement automatique supérieure à 1 mois (3 mois, 6 mois, 12 mois), un rappel vous est également envoyé par e-mail le mois précédent, récapitulant les services allant être renouvelés prochainement.
+>> Pour les services ayant une fréquence de renouvellement automatique supérieure à 1 mois (3 mois, 6 mois, 12 mois), un rappel vous est également envoyé par e-mail le mois précédent la date de renouvellement automatique, récapitulant les services allant être renouvelés prochainement.
 >>Si vous ne souhaitez pas prolonger l'un de ces services, il vous suffit alors [de le résilier dans votre espace client](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+>> **Attention**, l'absence d'un moyen de paiement dans votre compte ne déclenche pas une résiliation automatique de vos services. Pour résilier des services, consultez notre guide « [Comment résilier vos services OVHcloud ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services) ».
 >>
 > **Le renouvellement manuel**
 >>
@@ -62,7 +73,7 @@ Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Produits et
 
 ![produits et services](images/products-services-fr.png){.thumbnail}
 
-### Afficher le type de renouvellement
+### Afficher le type de renouvellement <a name="renewal-type"></a>
 
 La page **Mes services** contient un tableau de gestion de vos services OVHcloud. Vous pouvez y retrouver leurs noms, le type de service, la disponibilité du service (`Actif` par défaut), son statut (type de renouvellement, action à réaliser, etc.), la prochaine date d'effet du renouvellement ou de la résiliation ainsi qu'un bouton `...`{.action} dédié aux actions possibles pour chaque service.
 
@@ -76,7 +87,7 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 >
 > ![manageautomaticrenewal](images/filters-fr.png){.thumbnail}
 
-### Les actions pour chaque service
+### Les actions pour chaque service <a name="actions"></a>
 
 > [!primary]
 >
@@ -145,7 +156,7 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 >> Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous redirigera vers une plateforme de paiement en ligne.
 >>
 
-### Les actions groupées
+### Les actions groupées <a name="group-actions"></a>
 
 Vous avez la possibilité d'effectuer des actions groupées, en sélectionnant plusieurs services dans le tableau puis en cliquant sur le bouton `Actions`{.action}.
 
@@ -160,6 +171,25 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 |Activer le paiement automatique|Réactivez le renouvellement automatique sur plusieurs services en une seule fois. Seuls les services éligibles seront mis à jour.|
 |Exporter en CSV|Exportez dans un fichier csv l'ensemble de vos services et leurs dates d'expiration.|
 |Aligner les dates de renouvellement|Permet d'aligner la date d'expiration de vos services à un jour calendaire. Seuls les services éligibles pourront être mis à jour.|
+
+## FAQ
+
+> [!faq]
+>
+> On me demande de saisir un  « NIC » et un mot de passe lorsque je veux anticiper le paiement de mon service. Qu'est-ce que le NIC ?
+>> Le NIC (ou NIC-handle) désigne votre identifiant client OVHcloud qui se présente sous la forme **xx11111-ovh**. Le mot de passe demandé est le mot de passe d'accès à votre compte OVHcloud. Si vous ne le connaissez plus, modifiez-le en suivant [ces instructions](/pages/account_and_service_management/account_information/manage-ovh-password).
+> Où puis-je retrouver mon identifiant client (NIC) OVHcloud ?
+>> Il est affiché dans votre espace client, en cliquant sur votre nom en haut à droite. Il figure également en haut à droite de toutes vos factures. Il est aussi renseigné dans l'e-mail de confirmation de création du compte, les messages de confirmation de commande ou de renouvellement, ainsi que dans les notifications de connexion à votre compte.
+> Je n'arrive pas à me connecter à mon compte OVHcloud pour renouveler mes services, que faire ?
+>> Consultez la partie « [Que faire si je ne parviens pas à me connecter ?](/pages/account_and_service_management/account_information/ovhcloud-account-login#que-faire-si-je-ne-parviens-pas-a-me-connecter) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login) ».
+> Mon moyen de paiement n'est plus valide. Comment ajouter un nouveau moyen de paiement ?
+>> Consultez notre guide « [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ». Avant de pouvoir supprimer un moyen de paiement obsolète, vous devez ajouter un nouveau moyen de paiement valide dans votre compte OVHcloud.
+> J'ai oublié de renouveler mon nom de domaine à temps, que faire ?
+>> Commencez par vérifier le statut du nom de domaine en utilisant l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/).
+>> S'il s'agit d'un nom de domaine générique (.com, .org. net, etc.), celui-ci vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendant de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
+>> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
+>> Pendant la periode de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (qui varient en fonction de l'extension).
+>> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité.
 
 ## Aller plus loin
 
