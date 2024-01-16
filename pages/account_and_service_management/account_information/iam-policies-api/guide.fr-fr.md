@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-updated: 2023-10-26
+updated: 2024-01-16
 ---
 
 ## Objectif
@@ -195,7 +195,7 @@ Cette politique ne concerne pas un compte mais un utilisateur. L'URN de l'identi
 }
 ```
 
-Cette politique utilise un wildcard et un except. Cela permet de donner un ensemble de permissions facilement. Ici l'utilisateur `user2` aura tous les droits de type **vps** sur `vps-5b48d78b.vps.ovh.net` à l'exception du droit de suppression de snapshot.
+Cette politique utilise un wildcard et un *except*. Cela permet de donner un ensemble de permissions facilement. Ici l'utilisateur `user2` aura tous les droits de type **vps** sur `vps-5b48d78b.vps.ovh.net`, à l'exception du droit de suppression des snapshots.
 
 Avec ces requêtes `POST /iam/policy`, les politiques seront créées.
 
@@ -285,7 +285,7 @@ Vérifiez cela avec `GET /iam/policy`:
 ]
 ```
 
-Les politiques ont été créées avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots)** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" peut **effectuer toutes les actions vps à l'exception de la suppression de snapshot** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
+Les politiques ont été créées avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots)** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" peut **effectuer toutes les actions vps à l'exception de la suppression des snapshots** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
 ### Identités
 
