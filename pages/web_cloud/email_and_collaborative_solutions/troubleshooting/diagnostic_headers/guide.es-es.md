@@ -186,7 +186,7 @@ Para consultar la cabecera, seleccione el mensaje de correo electrónico corresp
 
 #### Outlook.com
 
-Para ver la cabecera en la interfaz webmail <Outlook.com>, consulte la sección [Outlook Web Application](#owa) de esta guía.
+Para ver la cabecera en la interfaz webmail &#60;Outlook.com&#62;, consulte la sección [Outlook Web Application](#owa) de esta guía.
 
 ## Más información
 

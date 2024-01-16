@@ -181,7 +181,7 @@ To retrieve the header, select the email concerned, then click the 3 vertical do
 
 #### Outlook.com
 
-To view the header in the <Outlook.com> webmail interface, see the [Outlook Web Application](#owa) topic in this guide.
+To view the header in the &#60;Outlook.com&#62; webmail interface, see the [Outlook Web Application](#owa) topic in this guide.
 
 ## Go further
 

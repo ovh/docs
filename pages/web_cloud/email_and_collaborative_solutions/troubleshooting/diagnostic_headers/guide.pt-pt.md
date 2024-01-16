@@ -189,7 +189,7 @@ Para obter o cabeçalho, selecione o e-mail em causa e clique nos 3 pontos verti
 
 #### Outlook.com (versão em francês)
 
-Para apresentar o cabeçalho na interface webmail <Outlook.com>, consulte a secção [Outlook Web Application](#owa) deste guia.
+Para apresentar o cabeçalho na interface webmail &#60;Outlook.com&#62;, consulte a secção [Outlook Web Application](#owa) deste guia.
 
 ## Saiba mais
 

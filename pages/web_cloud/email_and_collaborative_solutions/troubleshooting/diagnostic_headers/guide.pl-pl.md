@@ -186,7 +186,7 @@ Aby pobrać nagłówek, wybierz odpowiedni e-mail, po czym kliknij 3 pionowe kro
 
 #### Outlook.com
 
-Aby wyświetlić nagłówek w interfejsie webmail <Outlook.com>, zapoznaj się z sekcją [Outlook Web Application](#owa) tego przewodnika.
+Aby wyświetlić nagłówek w interfejsie webmail &#60;Outlook.com&#62;, zapoznaj się z sekcją [Outlook Web Application](#owa) tego przewodnika.
 
 ## Sprawdź również
 

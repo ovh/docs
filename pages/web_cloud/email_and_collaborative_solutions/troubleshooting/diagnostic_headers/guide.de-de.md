@@ -186,7 +186,7 @@ Um den Header abzurufen, wählen Sie die betreffende E-Mail aus und klicken Sie 
 
 #### Outlook.com
 
-Um den Header im Webmail-Interface von <Outlook.com> anzuzeigen, folgen Sie dem Abschnitt [Outlook Web Application](#owa) dieser Anleitung.
+Um den Header im Webmail-Interface von &#60;Outlook.com&#62; anzuzeigen, folgen Sie dem Abschnitt [Outlook Web Application](#owa) dieser Anleitung.
 
 ## Weiterführende Informationen
 
