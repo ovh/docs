@@ -1,7 +1,7 @@
 ---
-title: 'Déployer cPanel sur un VPS'
-excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
-updated: 2024-01-09
+title: "Déployer cPanel sur un VPS"
+excerpt: "Découvrez comment instancier un VPS avec l’application cPanel pré-installée."
+updated: 2024-01-12
 ---
 
 ## Objectif
@@ -46,9 +46,9 @@ Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous 
 
 ### Première connexion
 
-Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce lien pour effectuer la configuration initiale. Si le lien a déjà expiré, connectez-vous en SSH au serveur et exécutez la commande « sudo whmlogin » pour générer un nouveau lien.
+Une fois que vous avez reçu l'e-mail contenant le lien unique, cliquez sur ce lien pour effectuer la configuration initiale. Si le lien a déjà expiré, connectez-vous en [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) au serveur et exécutez la commande `sudo whmlogin` pour générer un nouveau lien.
 
-L'URL générée par la commande « sudo whmlogin » vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
+L'URL générée par la commande `sudo whmlogin` vous permet de vous connecter sans informations d'identification (utilisateur et mot de passe) à votre interface WHM. WHM est une surcouche de cPanel. Vous pourrez accéder à cPanel après avoir effectué les étapes suivantes.
 
 #### Étape 1 : lire et accepter les conditions d'utilisation de cPanel
 
@@ -92,8 +92,8 @@ Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire c
 >
 > Dans la barre de navigation de votre navigateur, entrez les URLs suivantes pour vous connecter à :
 >
-> - cPanel : https://<IP_V4>:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
-> - WHM : https://<IP_V4>:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’e-mail d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
+> - cPanel : https&#58;//&#60;IP_V4&#62;:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
+> - WHM : https&#58;//&#60;IP_V4&#62;:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’e-mail d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
 >
 > Retrouvez votre adresse IPv4 dans l'e-mail que vous avez reçu suite à la commande de votre VPS avec la distribution cPanel.
 >
