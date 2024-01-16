@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud API
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2023-10-26
+updated: 2024-01-16
 ---
 
 ## Objective
@@ -103,15 +103,15 @@ Items in policies are defined by URNs. These URNs are defined by the following p
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-The URNs and actions can end in a `*` wildcard character. This allows to refer to multiple resources, identities or actions in a single line.
+The URNs and actions can end with a `*` wildcard character. This allows referring to multiple resources, identities or actions in a single line.
 
 *Example of a resource URN with a wildcard :*
 
-`urn:v1:eu:resource:vps:*` will match with any vps resource.
+`urn:v1:eu:resource:vps:*` will match any vps resource.
 
 *Example of an action with a wildcard :*
 
-`vps:apiovh:*` will match with any action of the vps type.
+`vps:apiovh:*` will match any action of the vps type.
 
 #### Policy attributes
 
@@ -194,7 +194,7 @@ This policy is not for an account but for a user, so the identity URN correspond
 }
 ```
 
-This policy uses a wildcard with an except. This allows to easily give a large set of permissions. Here the user `user2` will have all permissions of the **vps** type on `vps-5b48d78b.vps.ovh.net` except for the permission to delete a snapshot.
+This policy uses a wildcard with an except. This allows you to easily give a large set of permissions. Here the user `user2` will have all permissions of the **vps** type on `vps-5b48d78b.vps.ovh.net` except for the permission to delete a snapshot.
 
 With these `POST /iam/policy` requests, the policies will be created.
 
