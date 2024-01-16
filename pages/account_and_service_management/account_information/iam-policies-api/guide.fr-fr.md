@@ -104,7 +104,7 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-Les actions et les URNs peuvent débuter ou finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou identités en une seule ligne.
+Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou identités en une seule ligne.
 
 *Exemple d'une URN avec un wildcard :*
 
