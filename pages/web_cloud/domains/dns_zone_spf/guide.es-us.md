@@ -75,7 +75,7 @@ Para encontrar la línea correspondiente al SPF de OVHcloud, puede utilizar un f
 > Un SPF se compone siempre de la forma siguiente : "v=spf1 `orígenes` `calificador`". Por ejemplo, el SPF de OVHcloud es: "v=spf1 include:mx.ovh.ca ~all".
 >
 
-![Dominio](images/spf_records_check_OVH_configuration.png){.thumbnail}
+![Dominio](images/spf_records_check_OVH_configuration_ca.png){.thumbnail}
 
 ### Configurar el registro SPF
 
@@ -104,7 +104,7 @@ Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHc
 
 Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.action}, situado en la parte superior de la ventana de asistencia. Se mostrará la información relativa al SPF de OVHcloud. Haga clic en `Aceptar`{.action} para aplicar los cambios.
 
-![Dominio](images/spf_records_add_entry_step2.png){.thumbnail}
+![Dominio](images/spf_records_add_entry_step2_ca.png){.thumbnail}
 
 > [!primary]
 >
@@ -119,7 +119,7 @@ El asistente de configuración le ayudará a personalizar el SPF. Para ello, deb
 
 A continuación, los explicamos en detalle:
 
-![Dominio](images/spf_records_add_entry_personnalize_step1.png){.thumbnail}
+![Dominio](images/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
 
 |Detalles|Descripción|
 |---|---|
@@ -166,7 +166,7 @@ Para finalizar, haga clic en `Siguiente`{.action}. Asegúrese de que la informac
 > Los cambios tardan entre 4 y 24 horas en propagarse y ser efectivos.
 >
 
-![Dominio](images/spf_records_add_TXT_entry.png){.thumbnail}
+![Dominio](images/spf_records_add_TXT_entry_ca.png){.thumbnail}
 
 ### Editar un registro SPF
 
