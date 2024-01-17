@@ -124,7 +124,7 @@ A continuación se muestra una lista de las etiquetas utilizadas para crear un *
      - **d**: genera un informe de errores de DKIM si se produce un error en el mecanismo de autenticación de DKIM, independientemente de su alineación.
      - **s**: genera un informe de fallos de SPF si falla el mecanismo de autenticación de SPF, independientemente de su alineación.
 
-- **rf** (valores de texto sin formato separados por comas, el valor predeterminado es `afrf`): esta etiqueta indica el tipo de formato esperado para los informes que proporcionan detalles específicos sobre los errores de autenticación de mensajes. Actualmente solo se admite el `formato de notificación automática de informes (afrf`).
+- **rf** (valores de texto sin formato separados por comas, el valor predeterminado es `afrf`): esta etiqueta indica el tipo de formato esperado para los informes que proporcionan detalles específicos sobre los errores de autenticación de mensajes. Actualmente solo se admite el `afrf` (Auth Failure Reporting Format).
 
 - **ri** (entero sin signo de 32 bits en texto sin formato; el valor predeterminado es 86400): intervalo necesario, en segundos, entre informes agregados. Esta etiqueta especifica la frecuencia con la que los destinatarios de correo electrónico deben generar informes agregados sobre los resultados de la evaluación de DMARC para el dominio en cuestión.
 
