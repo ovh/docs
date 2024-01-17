@@ -1,7 +1,7 @@
 ---
 title: "Proteger um servidor dedicado"
 excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
-updated: 2023-02-24
+updated: 2024-01-17
 ---
 
 > [!primary]
@@ -71,14 +71,23 @@ Para isso, altere o ficheiro de configuração do serviço com o editor de texto
 Deve encontrar as seguintes linhas ou equivalentes:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Substitua o número **22** pelo número de porta à sua escolha.<br>
 **No entanto, certifique-se de que não indica um número de porta já utilizado no seu sistema**.
 Para uma maior segurança, utilize um número entre 49152 e 65535.<br>
 Registe e saia do ficheiro de configuração.
+
+Elimine o `#` no início da linha para a descomentar. Por exemplo:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Reinicie o serviço:
 

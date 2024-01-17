@@ -1,7 +1,8 @@
 ---
 title: Einen VPS absichern
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
-updated: 2022-05-05
+updated: 2024-01-17
+
 ---
 
 > [!primary]
@@ -70,14 +71,21 @@ Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening
 Sie sollten diese oder ähnliche Zeilen vorfinden:
 
 ```console
-# What Ports, IPs and Protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl.<br>
 **Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Um sicher zu gehen, verwenden Sie eine Zahl zwischen 49152 und 65535. <br>Speichern und schließen Sie die Konfigurationsdatei.
 
-Wenn die Zeile "auskommentiert" ist (d. h. wenn ihr ein "#" vorangestellt ist), achten Sie darauf, das "#" vor dem Speichern der Datei zu entfernen, damit die Änderung wirksam wird.
+Löschen Sie das `#` am Anfang der Zeile, um sie zu dekomentieren. Beispiel:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Starten Sie den Dienst neu:
 

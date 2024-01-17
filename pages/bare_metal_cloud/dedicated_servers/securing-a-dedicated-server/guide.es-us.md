@@ -1,7 +1,7 @@
 ---
 title: "Proteger un servidor dedicado"
 excerpt: "Descubra los elementos básicos que le permiten proteger un servidor dedicado"
-updated: 2023-02-24
+updated: 2024-01-17
 ---
 
 > [!primary]
@@ -71,8 +71,9 @@ Para ello, edite el archivo de configuración del servicio con el editor de text
 Encontrará las siguientes líneas o equivalentes:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Sustituya el número **22** por el número de puerto que desee.<br>

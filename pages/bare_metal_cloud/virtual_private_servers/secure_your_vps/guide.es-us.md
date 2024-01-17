@@ -1,7 +1,8 @@
 ---
 title: 'Proteger un VPS'
 excerpt: 'Descubra los elementos básicos que le permiten proteger su VPS'
-updated: 2022-05-05
+updated: 2024-01-17
+
 ---
 
 > [!primary]
@@ -71,16 +72,24 @@ Para ello, edite el archivo de configuración del servicio con el editor de text
 Encontrará las siguientes líneas o equivalentes:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Sustituya el número **22** por el número de puerto que desee.<br>
 **Recuerde que no debe indicar un número de puerto que ya esté en uso en su sistema**.
 Para mayor seguridad, utilice un número entre 49152 y 65535.<br>
-Guarde y cierre el archivo de configuración.
 
-Si la línea está "comentada" (es decir, precedida de un "#"), asegúrese de borrar el "#" antes de guardar el archivo para que el cambio surta efecto.
+Borre el `#` al principio de la línea para descomentarla. Por ejemplo
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
+
+Guarde y cierre el archivo de configuración.
 
 Reinicie el servicio:
 

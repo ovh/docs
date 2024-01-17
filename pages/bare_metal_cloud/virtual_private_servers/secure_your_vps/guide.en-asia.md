@@ -1,7 +1,8 @@
 ---
 title: 'Securing a VPS'
 excerpt: 'Find out the basics of securing your VPS'
-updated: 2022-05-05
+updated: 2024-01-17
+
 ---
 
 ## Objective
@@ -63,16 +64,25 @@ To do this, modify the service configuration file with a text editor of your cho
 ~$ sudo nano /etc/ssh/sshd_config
 ```
 
-You should find the following or similar lines:
+Find the following or similar lines:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
-Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535. <br>Save and exit the configuration file.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.
 
-If the line is "commented out" (i.e. preceded by a "#"), be sure to remove the "#" before saving the file for the change to take effect.
+Remove the `#` at the beginning of the line to uncomment it. For example:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
+
+<br>Save and exit the configuration file.
 
 Restart the service:
 

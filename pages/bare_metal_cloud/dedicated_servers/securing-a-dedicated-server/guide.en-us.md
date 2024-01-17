@@ -1,7 +1,7 @@
 ---
 title: Securing a dedicated server
 excerpt: Find out the basics of securing your dedicated server
-updated: 2023-02-24
+updated: 2024-01-17
 ---
 
 ## Objective
@@ -60,15 +60,24 @@ To do this, modify the service configuration file with a text editor of your cho
 ~$ sudo nano /etc/ssh/sshd_config
 ```
 
-You should find the following or similar lines:
+Find the following or similar lines:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.<br>
 Save and exit the configuration file.
+
+Remove the `#` at the beginning of the line to uncomment it. For example:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Restart the service:
 

@@ -1,7 +1,7 @@
 ---
 title: "Mettere in sicurezza un server dedicato"
 excerpt: "Scopri come proteggere un server dedicato grazie ad alcuni suggerimenti"
-updated: 2023-02-24
+updated: 2024-01-17
 ---
 
 > [!primary]
@@ -70,14 +70,23 @@ Per farlo, modifica il file di configurazione del servizio con l'editor di testo
 Dovrai trovare queste linee o equivalenti:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Sostituisci il numero **22** con il numero di porta che preferisci.<br>
 **Ricordati di non inserire un numero di porta già utilizzato sul tuo sistema**.
 Per una maggiore sicurezza, utilizza un numero tra 49152 e 65535.<br>
 Salva e lascia il file di configurazione.
+
+Cancellare il `#` all'inizio della riga per decommentarla. Ad esempio:
+
+```console
+Porta 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Riavvia il servizio:
 
