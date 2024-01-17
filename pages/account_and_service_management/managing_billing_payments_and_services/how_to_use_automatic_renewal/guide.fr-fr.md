@@ -114,7 +114,7 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 >>
 >> ![configurer le renouvellement](images/configure-renew-fr.png){.thumbnail}
 >>
->> En fonction du choix effectué, vous seront précisées les futures dates de prélèvement, le moyen de paiement qui sera utilisé, la date d'expiration du service.
+>> En fonction du choix effectué, vous seront précisées les futures dates de prélèvement, le moyen de paiement qui sera utilisé et la date d'expiration du service.
 >>
 > **Anticiper le paiement**
 >>
@@ -191,6 +191,9 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
 >> Pendant la periode de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (qui varient en fonction de l'extension).
 >> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité.
+> Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'entregistrement que OVHcloud. Comment faire ?
+>> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
+
 
 ## Aller plus loin
 
