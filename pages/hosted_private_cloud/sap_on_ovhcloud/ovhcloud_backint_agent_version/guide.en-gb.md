@@ -9,7 +9,7 @@ updated: 2024-01-11
 ### Version 1.0.8
 
 - Transfer performance improvement with S3 Object Storage bucket.
-- The `multipart_chunksize` and `multipart_threshold` parameters handle now value with units (KB, MB, GB and TB). If no unit has been set, the default unit is the byte.
+- The `multipart_chunksize` and `multipart_threshold` parameters now handle values with units (KB, MB, GB and TB). If no unit has been set, the default unit is the byte.
 
 ### Version 1.0.7
 
