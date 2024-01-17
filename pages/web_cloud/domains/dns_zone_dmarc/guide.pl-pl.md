@@ -123,7 +123,7 @@ Poniżej znajduje się lista znaczników używanych do tworzenia **rekordu TXT**
      - **d**: generuje raport o niepowodzeniu DKIM, jeśli mechanizm uwierzytelniania DKIM nie powiedzie się, niezależnie od jego wyrównania.
      - **s**: generuje raport o niepowodzeniu SPF, jeśli mechanizm uwierzytelniania SPF nie powiedzie się bez względu na jego wyrównanie.
 
-- **rf** (wartości w postaci zwykłego tekstu oddzielone przecinkami, wartością domyślną jest `afrf`): Ten znacznik wskazuje oczekiwany typ formatu raportów, które podają szczegółowe informacje o błędach uwierzytelniania wiadomości. Aktualnie obsługiwany jest tylko `format raportowania` awaryjnego (afrf).
+- **rf** (wartości w postaci zwykłego tekstu oddzielone przecinkami, wartością domyślną jest `afrf`): Ten znacznik wskazuje oczekiwany typ formatu raportów, które podają szczegółowe informacje o błędach uwierzytelniania wiadomości. Obecnie obsługiwany jest tylko format `afrf` (Auth Failure Reporting Format).
 
 - **ri** (32-bitowa liczba całkowita niepodpisana jako zwykły tekst; domyślnie 86400): wymagany interwał w sekundach między raportami zagregowanymi. Ten znacznik określa częstotliwość, z jaką odbiorcy wiadomości e-mail mają generować zbiorcze raporty dotyczące wyników oceny DMARC dla danej domeny.
 
