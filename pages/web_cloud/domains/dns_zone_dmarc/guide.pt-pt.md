@@ -18,7 +18,7 @@ O registo **D**omain-based **M**essage **A**uthentication, **R**eporting, and **
 >
 > A OVHcloud oferece serviços cuja configuração, gestão e responsabilidade são da sua responsabilidade. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção [« Vá mais longe »](#go-further) deste tutorial.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção [Quer saber mais?](#go-further) deste tutorial.
 >
 > Além disso, a implementação de um registo **DMARC**, independentemente do [serviço de e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), está atualmente indisponível. Este guia diz **unicamente** respeito aos clientes que possuem uma zona DNS ativa na OVHcloud para o seu nome de domínio associado a uma **solução de e-mail externa**.
 >
