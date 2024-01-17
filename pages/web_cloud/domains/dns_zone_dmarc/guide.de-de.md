@@ -87,7 +87,7 @@ Nachfolgend finden Sie eine vollständige Beschreibung der Tags, die für die OV
 
 - **SPF-Ausrichtungsmodus (aspf=)** (der Standardwert ist `r`) : Gibt den SPF-Ausrichtungsmodus an. Die Werte sind:
     - `r`(Relaxed) für den Soft-Mode: E-Mails können zum Beispiel über eine Subdomain der registrierten Domain versandt werden. Man spricht hier von einer teilweisen Ausrichtung.
-    - `s`(streng) für den strikten Modus: E-Mails sollten nur über die angegebene Domain und nur über diese versendet werden. Das Ergebnis ist also „ausgerichtet“.
+    - `s`(strict) für den strikten Modus: E-Mails sollten nur über die angegebene Domain und nur über diese versendet werden. Das Ergebnis ist also „ausgerichtet“.
 
 > [!primary]
 >
@@ -113,7 +113,7 @@ Im Folgenden finden Sie eine Liste der Tags, die zum Erstellen eines **TXT-Daten
 
 - **adkim** (der Standardwert ist `r`) : Gibt den DKIM-Ausrichtungsmodus an. Die Werte sind:
     - `r`(Relaxed) für den Soft-Mode: E-Mails, bei denen die DKIM-Authentifizierung fehlschlägt, werden vom Empfängerserver als „Junk-E-Mails“ markiert.
-    - `s`(streng) für den strikten Modus: E-Mails, die bei der DKIM-Authentifizierung nicht erfolgreich sind, werden vom Empfängerserver zurückgewiesen.
+    - `s`(strict) für den strikten Modus: E-Mails, die bei der DKIM-Authentifizierung nicht erfolgreich sind, werden vom Empfängerserver zurückgewiesen.
 
 - **ruf** (durch Kommas getrennte Liste im Nur-Text-Format): Adressen, an die meldungsspezifische Fehlerinformationen gemeldet werden sollen. Wenn dieses Tag vorhanden ist, fordert der Besitzer der Sender-Domain die Empfänger auf, detaillierte Fehlerberichte über E-Mails zu senden, die bei der DMARC-Bewertung einen bestimmten Fehler aufweisen (siehe `fo` unten). Das Format der zu generierenden Meldung muss dem für das `rf`-Tag angegebenen Format entsprechen. Vor dem E-Mail-Empfänger muss „mailto:“ stehen (Beispiel: `mailto:address@example.com`).
 

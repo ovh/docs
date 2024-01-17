@@ -87,7 +87,7 @@ Di seguito trovi la descrizione completa dei tag utilizzati per **la registrazio
 
 - **Modalità di allineamento SPF (aspf=)** (il valore predefinito è `r`): indica la modalità di allineamento SPF. I valori sono i seguenti:
     - `r`(relaxed) per la modalità flessibile: le email possono essere, ad esempio, inviate da un sottodominio del nome di dominio dichiarato. Parliamo di allineamento parziale.
-    - `s`(rigoroso) per la modalità rigorosa: le email devono essere inviate dal dominio dichiarato e solo da questo. Il risultato è quindi "allineato".
+    - `s`(strict) per la modalità strict: le email devono essere inviate dal dominio dichiarato e solo da questo. Il risultato è quindi "allineato".
 
 > [!primary]
 >
@@ -113,7 +113,7 @@ Di seguito è riportato un elenco dei tag utilizzati per creare un **record TXT*
 
 - **adkim** (il valore predefinito è `r`) : Specifica la modalità di allineamento DKIM. I valori sono i seguenti:
     - `r`(relaxed) per la modalità flessibile: le email che non superano l’autenticazione DKIM vengono contrassegnate come "indesiderate" dal server ricevente.
-    - `s`(rigoroso) per la modalità rigorosa: le email che non superano l'autenticazione DKIM vengono rifiutate dal server di destinazione.
+    - `s`(strict) per la modalità strict: le email che non superano l'autenticazione DKIM vengono rifiutate dal server di destinazione.
 
 - **ruf** (elenco in testo normale separato da virgole): indirizzi a cui devono essere segnalate le informazioni specifiche sull'errore del messaggio. Se questo tag è presente, il proprietario del dominio di invio richiede ai destinatari di inviare rapporti dettagliati sugli errori dei messaggi di posta elettronica che non superano la valutazione DMARC in modo specifico (vedere il tag `fo` di seguito). Il formato del messaggio da generare deve essere il formato specificato per il tag `rf`. La dicitura "mailto:" deve precedere il destinatario email (esempio: `mailto:address@example.com`).
 
@@ -149,7 +149,7 @@ Otteniamo il seguente risultato:
 "v=DMARC1;p=quarantine;pct=100;rua=mailto:report@mydomain.ovh;aspf=s;"
 ```
 
-Tutte le email inviate (**pct=100**) vengono gestite dai meccanismi di autenticazione SPF e/o DKIM. Le email che non superano il test SPF vengono automaticamente rifiutate perché "**aspf=s**" (meccanismo SPF in modalità rigorosa). Una segnalazione degli errori relativi all’esito negativo dei meccanismi di autenticazione SPF e/o DKIM viene inviata all’indirizzo `report@mydomain.ovh` (**rua=mailto:report@mydomain.ovh**).
+Tutte le email inviate (**pct=100**) vengono gestite dai meccanismi di autenticazione SPF e/o DKIM. Le email che non superano il test SPF vengono automaticamente rifiutate perché "**aspf=s**" (meccanismo SPF in modalità strict). Una segnalazione degli errori relativi all’esito negativo dei meccanismi di autenticazione SPF e/o DKIM viene inviata all’indirizzo `report@mydomain.ovh` (**rua=mailto:report@mydomain.ovh**).
 
 ##### Secondo esempio
 
@@ -173,7 +173,7 @@ Otteniamo il seguente risultato:
 
 - **adkim=r**: la modalità di allineamento dell'identificativo DKIM richiesta dal proprietario del dominio è "relaxed" (modalità flessibile). In questa modalità, DKIM deve fornire una firma valida e l'identificativo dell'intestazione "From" può essere parzialmente allineato.
 
-- **aspf=s** - La modalità di allineamento dell'identificativo SPF richiesto è "rigorosa". L'identificativo SPF del dominio allineato deve corrispondere esattamente all'indirizzo IP che invia il messaggio.
+- **aspf=s** - La modalità di allineamento dell'identificativo SPF richiesto è "strict". L'identificativo SPF del dominio allineato deve corrispondere esattamente all'indirizzo IP che invia il messaggio.
 
 - **adkim=r**: la modalità di allineamento dell’identificativo DKIM richiesta dal proprietario del dominio è "relaxed" (modalità flessibile). In questa modalità DKIM deve fornire una firma valida e l'identificativo dell'intestazione "From" può essere parzialmente allineato.
 

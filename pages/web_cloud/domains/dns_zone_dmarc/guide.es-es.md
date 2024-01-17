@@ -88,7 +88,7 @@ A continuación ofrecemos una descripción completa de las etiquetas utilizadas 
 
 - **Modo de alineación para SPF (aspf=)** (el valor predeterminado es `r`): especifica el modo de alineación SPF. Los valores son los siguientes:
     - `R`(Relaxed) para el modo flexible: los mensajes de correo electrónico pueden enviarse, por ejemplo, desde un subdominio del dominio declarado. Esto se conoce como alineación parcial.
-    - `s`(estricto) para el modo estricto: los mensajes de correo deben enviarse desde el dominio declarado y únicamente desde este. El resultado es «alineado».
+    - `s`(strict) para el modo strict: los mensajes de correo deben enviarse desde el dominio declarado y únicamente desde este. El resultado es «alineado».
 
 > [!primary]
 >
@@ -114,7 +114,7 @@ A continuación se muestra una lista de las etiquetas utilizadas para crear un *
 
 - **adkim** (el valor predeterminado es `r`): especifica el modo de alineación DKIM. Los valores son los siguientes:
     - `r`(relaxed) para el modo flexible: los mensajes de correo electrónico que no superen la autenticación DKIM son marcados como «no deseados» por el servidor de destino.
-    - `s`(estricto) para el modo estricto: los mensajes de correo electrónico que fallan en la autenticación DKIM son rechazados por el servidor de destino.
+    - `s`(strict) para el modo strict: los mensajes de correo electrónico que fallan en la autenticación DKIM son rechazados por el servidor de destino.
 
 - **ruf** (lista de texto sin formato delimitada por comas): direcciones a las que se debe notificar la información de error específica del mensaje. Si esta etiqueta está presente, el propietario del dominio remitente solicita a los destinatarios que envíen informes de errores detallados sobre los mensajes de correo electrónico que no superen la evaluación DMARC de forma específica (consulte la etiqueta `fo` a continuación). El formato del mensaje que se va a generar debe seguir el formato especificado para la etiqueta `rf`. La mención « mailto: » debe preceder al destinatario de correo (por ejemplo: `mailto:address@example.com`).
 
@@ -150,7 +150,7 @@ Obtenemos el siguiente resultado:
 "v=DMARC1;p=quarantine;pct=100;rua=mailto:report@mydomain.ovh;aspf=s;"
 ```
 
-Todos los mensajes de correo enviados (**pct=100**) se procesan mediante los mecanismos de autenticación SPF y/o DKIM. Los mensajes de correo electrónico que no superen la prueba SPF se rechazarán automáticamente porque «**aspf=s**» (mecanismo SPF en modo estricto). Se envía un informe de errores sobre el fallo de los mecanismos de autenticación SPF y/o DKIM a `report@mydomain.ovh` (**rua=mailto:report@mydomain.ovh**).
+Todos los mensajes de correo enviados (**pct=100**) se procesan mediante los mecanismos de autenticación SPF y/o DKIM. Los mensajes de correo electrónico que no superen la prueba SPF se rechazarán automáticamente porque «**aspf=s**» (mecanismo SPF en modo strict). Se envía un informe de errores sobre el fallo de los mecanismos de autenticación SPF y/o DKIM a `report@mydomain.ovh` (**rua=mailto:report@mydomain.ovh**).
 
 ##### Segundo ejemplo
 
@@ -174,7 +174,7 @@ Obtenemos el siguiente resultado:
 
 - **adkim=r**: el modo de alineación de ID de DKIM requerido por el propietario del dominio es "relaxed" (modo flexible). En este modo, DKIM debe proporcionar una firma válida y el identificador del encabezado "From" se puede alinear parcialmente.
 
-- **aspf=s**: el modo de alineación del identificador SPF requerido es "estricto". Esto significa que el SPF del dominio alineado debe coincidir exactamente con la dirección IP remitente del mensaje.
+- **aspf=s**: el modo de alineación del identificador SPF requerido es "strict". Esto significa que el SPF del dominio alineado debe coincidir exactamente con la dirección IP remitente del mensaje.
 
 - **adkim=r**: el modo de alineación de ID de DKIM requerido por el propietario del dominio es «relaxed» (modo flexible). En este modo, DKIM debe proporcionar una firma válida y el identificador del encabezado 'From' se puede alinear parcialmente.
 
