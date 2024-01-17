@@ -11,7 +11,7 @@ updated: 2022-02-08
  
 ## Objetivo
 
-Eliminou por erro um ou vários elementos (e-mail, contacto, calendário) e esvaziou o caixote do lixo. É sempre possível restaurá-los até 14 dias após a sua eliminação através do webmail OWA (Outlook Web Application).
+Eliminou por erro um ou vários elementos (e-mail, contacto, calendário) e esvaziou o caixote do lixo. É sempre possível restaurá-los até 14 dias após a sua eliminação através do webmail OWA (Outlook Web App).
 
 **Saiba como restaurar os elementos eliminados a partir da sua conta de e-mail através do webmail (OWA)**
  

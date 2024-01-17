@@ -70,7 +70,7 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 
 ### Passwort über Webmail ändern
 
-Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebote unter Verwendung von **OWA** (**O**utlook **W**eb **A**pplication) verfügbar:
+Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebote unter Verwendung von **OWA** (**O**utlook **W**eb **A**pp) verfügbar:
 
 - MX Plan E-Mail (Neue Version)
 - E-Mail Pro

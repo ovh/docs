@@ -22,7 +22,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 > [!warning]
 >
-> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pplication). You can identify which version you are using with the table below.
+> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pp). You can identify which version you are using with the table below.
 >
 
 MX Plan legacy version|MX Plan new version|

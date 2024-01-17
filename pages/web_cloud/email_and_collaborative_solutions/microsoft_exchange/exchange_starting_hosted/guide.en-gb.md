@@ -124,7 +124,7 @@ The accounts that have not yet been configured configuration will appear in the 
 
 ### Use your email addresses
 
-Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web Application** (OWA) webmail app. You can access this via the following address: <https://www.ovhcloud.com/en-gb/mail/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web App** (OWA) webmail app. You can access this via the following address: <https://www.ovhcloud.com/en-gb/mail/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 If you would like to configure your email address on an email client or mobile device (e.g. a smartphone or tablet), please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 

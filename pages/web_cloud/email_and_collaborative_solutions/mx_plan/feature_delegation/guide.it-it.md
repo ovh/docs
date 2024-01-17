@@ -25,7 +25,7 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 
 > [!warning]
 >
-> Questa guida ti mostra come utilizzare il servizio MXplan storico. Per la nuova offerta non ci sono delegazioni. La modifica della password, i filtri e le risposte automatiche di un indirizzo email possono essere cambiati direttamente tramite la webmail OWA (**O**utlook **W**eb **A**pplication). **Utilizza la tabella qui sotto per identificare la tua offerta.**
+> Questa guida ti mostra come utilizzare il servizio MXplan storico. Per la nuova offerta non ci sono delegazioni. La modifica della password, i filtri e le risposte automatiche di un indirizzo email possono essere cambiati direttamente tramite la webmail OWA (**O**utlook **W**eb **A**pp). **Utilizza la tabella qui sotto per identificare la tua offerta.**
 >
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|

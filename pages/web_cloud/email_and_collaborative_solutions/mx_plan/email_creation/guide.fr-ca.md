@@ -51,7 +51,7 @@ Réalisez cette étape autant de fois que nécessaire, selon le nombre de compte
 
 Accédez à la page « [Connexion au webmail](https://www.ovhcloud.com/fr-ca/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail Outlook Web Access (OWA), aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external} ».
+Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail Outlook Web App (OWA), aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external} ».
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 

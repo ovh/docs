@@ -74,7 +74,7 @@ Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzie
 
 #### 2.1 Korzystanie z „prawa dostępu”
 
-- **Przy użyciu webmail Outlook Web Application (OWA)**
+- **Przy użyciu webmail Outlook Web App (OWA)**
 
 Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
 
@@ -94,7 +94,7 @@ Teraz kliknij `Ustawienia dodatkowe`{.action}. W nowym oknie przejdź do zakład
 
 #### 2.2 Korzystanie z „prawa do wysyłki poczty”
 
-- **Przy użyciu webmail Outlook Web Application (OWA)**
+- **Przy użyciu webmail Outlook Web App (OWA)**
 
 Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
@@ -116,7 +116,7 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 #### 2.3 Korzystanie z „prawa do wysyłki poczty w imieniu” 
 
-- **Przy użyciu webmail Outlook Web Application (OWA)**
+- **Przy użyciu webmail Outlook Web App (OWA)**
 
 Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
