@@ -153,7 +153,8 @@ A partition layout is a list of partitions. Here is an example of a partition st
 
 > [!primary]
 >
-> >
+> order: is the partition order within the partition array
+>
 
 > [!primary]
 >
