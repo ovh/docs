@@ -81,7 +81,7 @@ A seguir, poderá encontrar uma descrição completa das tags utilizadas para **
 
 - **Percentagem de mensagens filtradas (pct=)** (valor entre 0 e 100, o padrão é 100) - a percentagem do fluxo de mensagens ao qual a política DMARC deve ser aplicada. O objetivo da marca « pct » é permitir aos proprietários de domínios uma implementação lenta do mecanismo DMARC.
 
-- **URI de criação de relatórios globais (rua=)** - endereços para os quais os relatórios devem ser enviados (lista de texto simples, separada por vírgulas). Qualquer URI válido pode ser especificado. A menção « mailto:» deve preceder o destinatário de e-mail (exemplo: `mailto:address@exemplo.com`).
+- **URI de criação de relatórios globais (rua=)** - endereços para os quais os relatórios devem ser enviados (lista de texto simples, separada por vírgulas). Qualquer URI válido pode ser especificado. A menção « mailto:» deve preceder o destinatário de e-mail (exemplo: `mailto:address@example.com`).
 
 - **Regra para os subdomínios (sp=)**: política a adotar pelo destinatário para todos os subdomínios. Aplica-se unicamente aos subdomínios do domínio inquirido e não ao próprio domínio. A sintaxe é idêntica à da tag « p » definida acima. Se esta tag estiver ausente, a política especificada pela tag « p » será aplicada para os subdomínios.
 
@@ -97,7 +97,7 @@ A seguir, poderá encontrar uma descrição completa das tags utilizadas para **
 >
 > - **Alinhado**: quando o endereço *john.smith@mydomain.ovh* transmite uma mensagem do serviço de e-mail associado ao nome de domínio *mydomain.ovh* e os mecanismos de autenticação SPF e DKIM estão configurados, obtém-se um resultado alinhado.
 > - **Parcialmente alinhado**: quando o endereço *john.smith@subdomain.mydomain.ovh* transmite uma mensagem a partir do serviço de e-mail associado ao nome de domínio *mydomain.ovh*, mas os mecanismos de autenticação SPF e DKIM foram configurados unicamente no domínio principal (ou seja, *mydomain.ovh*), obtém-se um resultado parcialmente alinhado.
-> - **Falha dos mecanismos de autenticação**: o remetente tenta enviar um e-mail como *john.smith@mydomain.ovh* passando por outro endereço (como *robert@exemplo.com*) ou utilizando um serviço de envio de e-mail que não está listado no SPF. Quando isso acontece, os mecanismos de autenticação SPF e DKIM devolvem uma falha como resultado.
+> - **Falha dos mecanismos de autenticação**: o remetente tenta enviar um e-mail como *john.smith@mydomain.ovh* passando por outro endereço (como *robert@example.com*) ou utilizando um serviço de envio de e-mail que não está listado no SPF. Quando isso acontece, os mecanismos de autenticação SPF e DKIM devolvem uma falha como resultado.
 
 ![dmarc](images/dns-dmarc-01.png){.thumbnail}
 
@@ -115,7 +115,7 @@ Abaixo, poderá encontrar a lista das tags utilizadas para criar um **registo TX
     - `r`(relaxed) para o modo flexível: Os e-mails que falham na autenticação DKIM são marcados como « indesejados » pelo servidor destinatário.
     - `s`(restrito) para o modo restrito: os e-mails que falham na autenticação DKIM são rejeitados pelo servidor destinatário.
 
-- **ruf** - Endereços aos quais devem ser comunicadas as informações de erro específicas da mensagem, incluindo uma lista de texto simples separada por vírgulas Se esta tag estiver presente, o proprietário do domínio remetente pede aos destinatários que enviem relatórios de falhas detalhados sobre os e-mails que falham na avaliação DMARC de forma específica (ver a tag `fo` abaixo). O formato da mensagem a gerar deve seguir o formato especificado para a etiqueta `rf`. A menção « mailto:» deve preceder o destinatário de e-mail (exemplo: `mailto:address@exemplo.com`).
+- **ruf** - Endereços aos quais devem ser comunicadas as informações de erro específicas da mensagem, incluindo uma lista de texto simples separada por vírgulas Se esta tag estiver presente, o proprietário do domínio remetente pede aos destinatários que enviem relatórios de falhas detalhados sobre os e-mails que falham na avaliação DMARC de forma específica (ver a tag `fo` abaixo). O formato da mensagem a gerar deve seguir o formato especificado para a etiqueta `rf`. A menção « mailto:» deve preceder o destinatário de e-mail (exemplo: `mailto:address@example.com`).
 
 - **fo** (texto simples; o padrão é `0`) - Opções detalhadas do relatório de falha. Os geradores de relatórios podem optar por cumprir as opções solicitadas. O conteúdo desta tag deve ser ignorado se uma tag `ruf` (acima) não for igualmente especificada. O valor desta tag é uma lista de caracteres separados por dois pontos (`:`) que mostram as seguintes opções de geração de relatórios de falhas:
      - **0** : gera um relatório de falha DMARC se todos os mecanismos de autenticação (DKIM **ET** SPF) não conseguem produzir um resultado « não » alinhado.
