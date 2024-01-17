@@ -74,7 +74,7 @@ To find the row for the OVHcloud SPF record, a display filter can be applied to 
 > An SPF record always follows this form: "v=spf1 `sources` `qualifier`". For example, the OVHcloud SPF is: "v=spf1 include:mx.ovh.ca ~all".
 >
 
-![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
+![domain](images/spf_records_check_OVH_configuration_ca.png){.thumbnail}
 
 ### Configuring a new SPF record 
 
@@ -103,7 +103,7 @@ You have chosen the `SPF`{.action} record and would like to apply the OVHcloud c
 
 Choose the `SPF`{.action} type record and then click on the button `Use the SPF for OVHcloud web hosting`{.action}. In the following step, click on `Confirm`{.action} to approve the action.
 
-![domain](images/spf_records_add_entry_step2.png){.thumbnail}
+![domain](images/spf_records_add_entry_step2_ca.png){.thumbnail}
 
 > [!primary]
 >
@@ -114,7 +114,7 @@ Choose the `SPF`{.action} type record and then click on the button `Use the SPF 
 
 The configuration wizard enables you to customise your SPF record according to your needs. In order to apply your settings, answer the questions on this page. Some information requested may be aimed at advanced users. Please refer to the tables below for details.
 
-![domain](images/spf_records_add_entry_personnalize_step1.png){.thumbnail}
+![domain](images/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
 
 |Details|Description|
 |---|---|
@@ -161,7 +161,7 @@ Click on `Next`{.action} and verify that the SPF you have entered is correct by 
 > It can take between 4 and 24 hours until the configuration is fully effectual.
 >
 
-![domain](images/spf_records_add_TXT_entry.png){.thumbnail}
+![domain](images/spf_records_add_TXT_entry_ca.png){.thumbnail}
 
 ### Modifying an SPF record <a name="modifyspf"></a>
 
