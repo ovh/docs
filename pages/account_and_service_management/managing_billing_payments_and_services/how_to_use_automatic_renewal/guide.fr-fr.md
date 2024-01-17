@@ -1,7 +1,7 @@
 ---
 title: Renouveler mes services OVHcloud
 excerpt: Découvrez comment gérer vos services et leur renouvellement dans votre espace client
-updated: 2024-01-16
+updated: 2024-01-17
 ---
 
 ## Objectif
@@ -33,7 +33,9 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 - Être [contact de facturation](/pages/account_and_service_management/account_information/managing_contacts#definition) de vos services OVHcloud
 - Disposer d'un moyen de paiement valide dans votre compte OVHcloud. Consultez notre guide « [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ».
 
-## Les différents types de renouvellement <a name="auto-vs-manual"></a>
+<a name="auto-vs-manual"></a>
+
+## Les différents types de renouvellement
 
 **Cliquez sur l'un ou l'autre des onglets ci-dessous.**
 
@@ -48,6 +50,7 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 >>
 >> Pour les services ayant une fréquence de renouvellement automatique supérieure à 1 mois (3 mois, 6 mois, 12 mois), un rappel vous est également envoyé par e-mail le mois précédent la date de renouvellement automatique, récapitulant les services allant être renouvelés prochainement.
 >>Si vous ne souhaitez pas prolonger l'un de ces services, il vous suffit alors [de le résilier dans votre espace client](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+>>
 >> **Attention**, l'absence d'un moyen de paiement dans votre compte ne déclenche pas une résiliation automatique de vos services. Pour résilier des services, consultez notre guide « [Comment résilier vos services OVHcloud ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services) ».
 >>
 > **Le renouvellement manuel**
@@ -87,7 +90,9 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 >
 > ![manageautomaticrenewal](images/filters-fr.png){.thumbnail}
 
-### Les actions pour chaque service <a name="actions"></a>
+<a name="actions"></a>
+
+### Les actions pour chaque service
 
 > [!primary]
 >
@@ -105,17 +110,11 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 >>
 >> ![configurer le renouvellement](images/configure-renewal-fr.png){.thumbnail}
 >>
->> Cliquez sur l'action `Configurer le renouvellement`{.action}.
->>
->> Selon le service choisi, vous pouvez le paramétrer en renouvellement manuel ou choisir la fréquence de renouvellement automatique. Le cas échéant, vous pourrez donc choisir le type de renouvellement, ainsi que la fréquence de celui-ci.
+>> Cliquez sur l'action `Configurer le renouvellement`{.action}. Selon le service choisi, vous pouvez le paramétrer en renouvellement manuel ou choisir la fréquence de renouvellement automatique. Le cas échéant, vous pourrez donc choisir le type de renouvellement, ainsi que la fréquence de celui-ci.
 >>
 >> ![configurer le renouvellement](images/configure-renew-fr.png){.thumbnail}
 >>
->> En fonction du choix effectué, les informations suivantes vous seront précisées :
->>
->> - les futures dates de prélèvement ;
->> - le moyen de paiement qui sera utilisé ;
->> - la date d'expiration du service.
+>> En fonction du choix effectué, vous seront précisées les futures dates de prélèvement, le moyen de paiement qui sera utilisé, la date d'expiration du service.
 >>
 > **Anticiper le paiement**
 >>
@@ -156,7 +155,9 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 >> Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous redirigera vers une plateforme de paiement en ligne.
 >>
 
-### Les actions groupées <a name="group-actions"></a>
+<a name="group-actions"></a>
+
+### Les actions groupées
 
 Vous avez la possibilité d'effectuer des actions groupées, en sélectionnant plusieurs services dans le tableau puis en cliquant sur le bouton `Actions`{.action}.
 
@@ -189,7 +190,7 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> S'il s'agit d'un nom de domaine générique (.com, .org. net, etc.), celui-ci vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendant de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
 >> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
 >> Pendant la periode de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (qui varient en fonction de l'extension).
->> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité.
+>> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité.
 
 ## Aller plus loin
 
