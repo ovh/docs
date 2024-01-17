@@ -35,7 +35,7 @@ $ openstack volume list
 
 Si le volume est attaché à une instance, il faut d'abord le détacher avant de créer la sauvegarde.
 
-Utiliser la commande ci-dessous pour récupérer l'ID de l'instance :
+Utilisez la commande ci-dessous pour récupérer l'ID de l'instance :
 
 ```sh
 $ openstack server list
