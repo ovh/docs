@@ -13,7 +13,7 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 > [!warning]
 >
 > OVHcloud propose des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
+>
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 > De plus, la mise en place d'un enregistrement **DMARC**, quelle que soit l'[offre e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), est indisponible actuellement. Ce guide concerne **uniquement** les clients qui possèdent une zone DNS active chez OVHcloud pour leur nom de domaine associé à une **solution e-mail externe**.
@@ -89,7 +89,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 >
 > Dans le cadre des mécanismes d'authentification SPF et DKIM, l'**alignement** fait référence à la correspondance entre le nom de domaine (et/ou la signature du domaine) utilisé lors de l'envoi **et** le nom de domaine inscrit dans ces mécanismes.
 >
-> **Exemples** 
+> **Exemples**
 >
 > - **Aligné** : lorsque l'adresse *john.smith@mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh* et que les mécanismes d'authentification SPF et DKIM ont été configurés, on obtient un résultat aligné.
 > - **Partiellement aligné** : lorsque l'adresse *john.smith@subdomain.mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh*, mais que les mécanismes d'authentification SPF et DKIM ont été configurés uniquement sur le domaine principal (c'est à dire *mydomain.ovh*), on obtient un résultat partiellement aligné.
@@ -129,7 +129,7 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 
 > [!warning]
 >
-> Dans nos 2 exemples, le paramètre `p=`est utilisé sous sa forme restrictive pour illustrer le comportement d'un service e-mail dans ce cas de figure.
+> Dans nos 2 exemples, le paramètre `p=` est utilisé sous sa forme restrictive pour illustrer le comportement d'un service e-mail dans ce cas de figure.
 >
 > La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des e-mails de votre nom de domaine. Il est conseillé de configurer `p=none` et d'effectuer une analyse des rapports d’échec pendant plusieurs semaines, afin de régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maîtrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté ci-dessous, permet une transition progressive.
 

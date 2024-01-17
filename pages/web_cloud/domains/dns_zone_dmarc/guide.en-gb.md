@@ -27,6 +27,11 @@ The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**omp
 
 ## Instructions
 
+The DMARC allows the domain name holder to manage the security of emails sent with their domain name. Its purpose is to:
+
+- Declare, to the recipient server, the actions to be carried out in the event of failure of the SPF and/or DKIM authentication mechanisms.
+- Get a better handle on how your domain name is used, and detect spoofing attempts using reports sent if email authentication fails. It also improves security by linking SPF and DKIM protocols.
+
 The DMARC record contains policy information for malicious emails that attempt to spoof your domain name.<br>
 DMARC queries authentication mechanisms [SPF](/pages/web_cloud/domains/dns_zone_spf) and [DKIM](/pages/web_cloud/domains/dns_zone_dkim) to verify incoming emails.<br>
 The result of these SPF and/or DKIM checks is translated by DMARC into "actions to take" when an email fails the checks. These measures can include quarantining or rejecting the emails concerned.
@@ -58,6 +63,8 @@ You can add the DMARC record to your DNS zone from the OVHcloud Control Panel. T
 
 Once you have viewed your DNS zone, click on the `Add an entry`{.action} button, then click on "Mail records" in `DMARC`{.action}.
 
+- **Sub-domain**: this entry must **start** `with _dmarc`. If you are applying your DMARC to the entire domain, do not enter anything other than `_dmarc` in this box. If you are defining your DMARC to a subdomain of your primary domain, add your subdomain after `_dmarc`. For example, if you need to apply the DMARC to a subdomain *subdomain.mydomain.ovh*, you will need to enter `_dmarc.subdomain` in the “subdomain” box for the *mydomain.ovh* domain name.
+
 Below is a full description of the tags used for the OVHcloud **DMARC record**:
 
 - **Version (v=)** : Mandatory field determining the version of the DMARC protocol.
@@ -66,6 +73,10 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
     - *None* : The domain owner does not request any specific action regarding message delivery.
     - *quarantine* : If the DMARC verification fails, the recipients must treat the emails as suspicious. Depending on the capabilities of the recipient server, this may mean "put in the spam folder" and/or "report as suspicious".
     - *reject* : Rejects emails that fail the DMARC verification.
+
+> [!warning]
+>
+> Configuring the `p=` parameter can have a significant impact on the deliverability of your domain name’s emails. It is recommended that you configure `p=none` and perform a failure report analysis for several weeks , in order to resolve any anomalies. Switching to `p=quarantine` or `p=reject` requires full control of the email security settings, concerning the [SPF](/pages/web_cloud/domains/dns_zone_spf) and [DKIM](/pages/web_cloud/domains/dns_zone_dkim). The use of the `pct=` factor, shown below, allows for a gradual transition.
 
 - **Percentage of messages filtered (pct=)** (value between 0 and 100, default is 100): The percentage of the message flow to which the DMARC policy should be applied. The purpose of the "pct" tag is to enable domain owners to adopt a slow implementation of the DMARC mechanism.
 
@@ -95,6 +106,8 @@ You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](ht
 
 Once you have viewed your DNS zone, click on the `Add a record`{.action} button, then click on "Extended fields" in `TXT`{.action}.
 
+- **Sub-domain**: this entry must **start** `with _dmarc`. If you are applying your DMARC to the entire domain, do not enter anything other than `_dmarc` in this box. If you are defining your DMARC to a subdomain of your primary domain, add your subdomain after `_dmarc`. For example, if you need to apply the DMARC to a subdomain *subdomain.mydomain.ovh*, you will need to enter `_dmarc.subdomain` in the “subdomain” box for the *mydomain.ovh domain name*
+
 The following is a list of tags used to create a **TXT record** with DMARC settings. This list is complementary to the tags mentioned in the previous [DMARC record](#dmarc-record) section.
 
 - **adkim** (default is `r`) : Specifies the DKIM alignment mode. The values are as follows :
@@ -116,6 +129,12 @@ The following is a list of tags used to create a **TXT record** with DMARC setti
 ![dmarc](images/dns-dmarc-02.png){.thumbnail}
 
 #### Records examples<a name="record-example"></a>
+
+> [!warning]
+>
+> In our two examples, the parameter `p=`is used in its restrictive form to illustrate the behavior of an email service in this case.
+>
+> Configuring the `p=` parameter can have a significant impact on the deliverability of your domain name’s emails. It is recommended that you configure `p=none` and perform a failure report analysis for several weeks to resolve any anomalies. Switching to `p=quarantine` or `p=reject` requires full control of the email security settings, concerning the [SPF](/pages/web_cloud/domains/dns_zone_spf) and [DKIM](/pages/web_cloud/domains/dns_zone_dkim). The use of the `pct=` factor, shown below, allows for a gradual transition.
 
 ##### First example
 
