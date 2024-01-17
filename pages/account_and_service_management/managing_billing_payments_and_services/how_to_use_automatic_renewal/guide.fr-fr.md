@@ -55,14 +55,14 @@ Avant de poursuivre la lecture de ce guide, vous devez remplir les conditions su
 >>
 > **Le renouvellement manuel**
 >>
->> Si vous ne souhaitez pas de renouvellements et de prélèvements automatiques, vous pouvez modifier le type de renouvellement pour certains produits (Domaines, Hébergements, VPS, Serveurs dédiés) et les passer en renouvellement **manuel**.
+>> Si vous ne souhaitez pas de renouvellement automatique et donc de prélèvement automatique, vous pouvez modifier le type de renouvellement pour certains produits (Domaines, Hébergements, VPS, Serveurs dédiés) et les passer en renouvellement **manuel**.
 >>
 >> Ce mode de renouvellement peut être utile :
 >>
 >> - si vous n'êtes pas certain de vouloir conserver le service à échéance ;
 >> - si vous ne souhaitez pas que vos factures soient prélevées automatiquement sur votre moyen de paiement.
 >>
->> Si vous choisissez le renouvellement manuel, vous recevrez plusieurs relances par e-mail avant échéance, chacune contenant un lien permettant de renouveler en ligne les services arrivant à expiration. 
+>> Si vous choisissez le renouvellement manuel, vous recevrez plusieurs relances par e-mail avant échéance, chacune contenant un lien permettant de renouveler en ligne les services arrivant à expiration.
 >> Vous pourrez aussi simplement effectuer le règlement depuis votre espace client.
 >>
 >> **Attention**, si vous n'effectuez pas de paiement pour un service en renouvellement manuel, celui-ci sera **suspendu** à sa date d'expiration puis **supprimé** au bout de quelques jours.
@@ -83,7 +83,7 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 ![mes services](images/my-services-fr.png){.thumbnail}
 
 > [!success]
-> Des outils de tri, de filtre et de recherche sont disponibles au-dessus du tableau.
+> Des outils de tri, de filtrage et de recherche sont disponibles au-dessus du tableau.
 > Vous pouvez ainsi trier les colonnes par ordre croissant ou décroissant, rechercher le nom d'un de vos services ou encore appliquer un filtre pour n'afficher que certains de vos services selon les critères de votre choix.
 >
 > Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un exemple de filtre permettant d'afficher les noms de domaines dont le renouvellement est manuel et dont la date de fin d'abonnement expire avant un mois.
@@ -187,13 +187,12 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Consultez notre guide « [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ». Avant de pouvoir supprimer un moyen de paiement obsolète, vous devez ajouter un nouveau moyen de paiement valide dans votre compte OVHcloud.
 > J'ai oublié de renouveler mon nom de domaine à temps, que faire ?
 >> Commencez par vérifier le statut du nom de domaine en utilisant l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/).
->> S'il s'agit d'un nom de domaine générique (.com, .org. net, etc.), celui-ci vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendant de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
+>> S'il s'agit d'un nom de domaine générique (.com, .org. net, etc.), celui-ci vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Ces délais sont variables et dépendent de l'extension et des règles du registre détenant l'extension. Pendant ces deux périodes, vous seul serez en mesure de renouveler le nom de domaine.
 >> Pendant la période de grâce, vous pourrez le renouveler via l'espace client, en suivant les étapes de ce guide.
 >> Pendant la periode de rédemption, le domaine n'est plus géré par OVHcloud. Son renouvellement via votre espace client occasionnera des frais supplémentaires (qui varient en fonction de l'extension).
->> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité.
+>> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité régulièrement.
 > Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'entregistrement que OVHcloud. Comment faire ?
 >> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
-
 
 ## Aller plus loin
 
