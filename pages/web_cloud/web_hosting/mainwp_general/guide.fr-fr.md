@@ -6,7 +6,7 @@ updated: 2024-01-19
 
 ## Objectif
 
-Administrer plusieurs sites web est une entreprise complexe qui prend du temps. Si vous gérez plusieurs sites web WordPress, il est possible que vous rencontriez des problèmes concernant la maintenance technique des sites, les mises à jour de plugins et de thèmes ou encore la gestion des identifiants de connexion. Le plugin MainWP pour WordPress est une solution efficace pour administrer efficacement plusieurs site web WordPress depuis un seul et même dashboard. Il permet entre autres de : 
+Administrer plusieurs sites web est une entreprise complexe qui prend du temps. Si vous gérez plusieurs sites web WordPress, il est possible que vous rencontriez des problèmes concernant la maintenance technique des sites, les mises à jour de plugins et de thèmes ou encore la gestion des identifiants de connexion. Le plugin MainWP pour WordPress est une solution efficace pour administrer efficacement plusieurs site web WordPress depuis un seul et même dashboard. Il permet entre autres de :
 - Contrôler l'intégralité de ses sites web depuis un seul dashboard
 - Mettre à jour en un clic les composants techniques
 - [Gérer ses clients](/pages/web_cloud/web_hosting/mainwp-client-management/)
