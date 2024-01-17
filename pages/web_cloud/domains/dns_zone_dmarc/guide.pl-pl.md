@@ -93,7 +93,7 @@ Poniżej znajduje się wyczerpujący opis tagów używanych do **rejestracji DMA
 >
 > W ramach mechanizmów uwierzytelniania SPF i DKIM, **wyrównanie** odnosi się do zgodności między nazwą domeny (i/lub podpisem domeny) użytą podczas przesyłania **a** nazwą domeny zarejestrowaną w tych mechanizmach.
 >
-> **Przykłady** 
+> **Przykłady**
 >
 > - **Wyrównanie**: gdy adres *john.smith@mydomain.ovh* przekazuje wiadomość z usługi e-mail powiązanej z domeną *mydomain.ovh* i gdy mechanizmy uwierzytelniania SPF i DKIM zostały skonfigurowane, otrzymujemy wyrównany wynik.
 > - **Częściowo wyrównany**: gdy adres *john.smith@subdomain.mydomain.ovh* przekazuje wiadomość z usługi e-mail powiązanej z domeną *mydomain.ovh*, ale mechanizmy uwierzytelniania SPF i DKIM zostały skonfigurowane tylko dla domeny głównej (czyli *mydomain.ovh*), otrzymujemy częściowo wyrównany wynik.

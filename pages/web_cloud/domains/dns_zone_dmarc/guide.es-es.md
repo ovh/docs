@@ -22,8 +22,6 @@ El registro **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 >
 > Además, la creación de un registro **DMARC**, independientemente del [servicio de correo de OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), no está disponible en este momento. Esta guía **solo** se aplica a los clientes que tengan una zona DNS activa en OVHcloud para su dominio asociado a una **solución de correo externa**.
 
-
-
 ## Requisitos
 
 - Tener acceso a la gestión del dominio (asociado a la solución de correo) desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
@@ -94,7 +92,7 @@ A continuación ofrecemos una descripción completa de las etiquetas utilizadas 
 >
 > En el contexto de los mecanismos de autenticación SPF y DKIM, la **alineación** se refiere a la correspondencia entre el nombre de dominio (y/o la firma de dominio) utilizado en el envío **y** el nombre de dominio registrado en estos mecanismos.
 >
-> **Ejemplos** 
+> **Ejemplos**
 >
 > - **Alineado**: cuando la dirección *john.smith@mydomain.ovh* transmite un mensaje desde el servicio de correo asociado al dominio *mydomain.ovh* y se han configurado los mecanismos de autenticación SPF y DKIM, se obtiene un resultado alineado.
 > - **Parcialmente alineado**: cuando la dirección *john.smith@subdomain.mydomain.ovh* transmite un mensaje desde el servicio de correo asociado al dominio *mydomain.ovh*, pero los mecanismos de autenticación SPF y DKIM se han configurado únicamente en el dominio principal (es decir, *mydomain.ovh*), se obtiene un resultado parcialmente alineado.

@@ -93,7 +93,7 @@ Nachfolgend finden Sie eine vollständige Beschreibung der Tags, die für die OV
 >
 > Im Rahmen der SPF und DKIM Authentifizierungsmechanismen bezieht sich die **Ausrichtung** auf die Übereinstimmung zwischen dem beim Versand verwendeten Domainnamen (und/oder der Signatur der Domain) **und** dem bei diesen Mechanismen registrierten Domainnamen.
 >
-> **Beispiele** 
+> **Beispiele**
 >
 > - **Abgestimmt**: Wenn die Adresse *john.smith@mydomain.ovh* eine Nachricht von dem E-Mail-Dienst sendet, der mit der Domain *mydomain.ovh* verbunden ist, und die Authentifizierungsmechanismen SPF und DKIM konfiguriert wurden, erhalten Sie ein abgestimmtes Ergebnis.
 > - **Teilweise ausgerichtet**: Wenn die Adresse *john.smith@subdomain.mydomain.ovh* eine Nachricht von dem E-Mail-Dienst sendet, der mit dem Domainnamen *mydomain.ovh* verbunden ist, die Authentifizierungsmechanismen SPF und DKIM jedoch nur für die Hauptdomain konfiguriert wurden (also *mydomain.ovh*), erhält man ein teilweise ausgerichtetes Ergebnis.
@@ -178,7 +178,6 @@ Wir erhalten folgendes Ergebnis:
 - **adkim=r**: Der vom Domaininhaber angeforderte DKIM-ID-Ausrichtungsmodus lautet „Relaxed“ (flexibler Modus). In diesem Modus muss DKIM eine gültige Signatur bereitstellen, und der Bezeichner des „From“-Headers kann teilweise ausgerichtet werden.
 
 - **RI=86400**: Legt das angeforderte Intervall zwischen den aggregierten Berichten in Sekunden fest. In diesem Fall muss ein aggregierter Bericht mindestens alle 86400 Sekunden (d. h. einmal täglich) generiert werden.
-
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
