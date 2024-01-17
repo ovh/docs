@@ -37,7 +37,7 @@ Il DMARC permette al proprietario di un dominio di gestire la sicurezza delle em
 
 Il record DMARC contiene informazioni sulle policy per le email dannose che tentano di falsificare il tuo nome di dominio.<br>
 DMARC interroga i meccanismi di autenticazione [SPF](/pages/web_cloud/domains/dns_zone_spf) e [DKIM](/pages/web_cloud/domains/dns_zone_dkim) per verificare le email in arrivo.<br>
-Il risultato di questi controlli SPF e/o DKIM viene tradotto da DMARC in "elementi di azione" quando un'e-mail non supera i controlli. Queste misure possono includere la messa in quarantena o il rifiuto delle e-mail interessate.
+Il risultato di questi controlli SPF e/o DKIM viene tradotto da DMARC in "elementi di azione" quando un'e-mail non supera i controlli. Queste misure possono includere la messa in quarantina o il rifiuto delle e-mail interessate.
 
 ### Come agisce il DMARC? <a name="how-dmarc-works"></a>
 
@@ -72,12 +72,12 @@ Di seguito trovi la descrizione completa dei tag utilizzati per **la registrazio
 
 - **Regola per il dominio (p=)**: policy che deve essere adottata dal destinatario su richiesta del proprietario del dominio del mittente. Il criterio viene applicato al dominio richiesto e ai sottodomini, a meno che il tag sottodominio **sp=** non indichi istruzioni diverse. I valori possibili sono:
     - *none* : il proprietario del dominio non richiede alcuna azione specifica riguardante la consegna dei messaggi.
-    - *quarantena*: in caso di fallimento della verifica del meccanismo DMARC, le email devono essere considerate sospette dai destinatari. In base alla capacità del server ricevente, ciò può significare "inserire nella cartella spam" e/o "segnalare come sospetto".
+    - *quarantine*: in caso di fallimento della verifica del meccanismo DMARC, le email devono essere considerate sospette dai destinatari. In base alla capacità del server ricevente, ciò può significare "inserire nella cartella spam" e/o "segnalare come sospetto".
     - *reject*: rifiuto delle email che non superano la verifica del meccanismo DMARC.
 
 > [!warning]
 >
-> L’impostazione del parametro `p=` può avere un impatto importante sull’evasione delle email del dominio. È consigliabile configurare `p=none` ed eseguire un'analisi dei rapporti di errore per diverse settimane, per correggere eventuali anomalie. L’upgrade a `p=quarantina` o `p=reject` richiede il pieno controllo delle impostazioni di sicurezza email relative a [SPF](/pages/web_cloud/domains/dns_zone_spf) e [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’uso del fattore `pct=`, presentato di seguito, consente una transizione graduale.
+> L’impostazione del parametro `p=` può avere un impatto importante sull’evasione delle email del dominio. È consigliabile configurare `p=none` ed eseguire un'analisi dei rapporti di errore per diverse settimane, per correggere eventuali anomalie. L’upgrade a `p=quarantine` o `p=reject` richiede il pieno controllo delle impostazioni di sicurezza email relative a [SPF](/pages/web_cloud/domains/dns_zone_spf) e [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’uso del fattore `pct=`, presentato di seguito, consente una transizione graduale.
 
 - **Percentuale di messaggi filtrati (pct=)** (valore compreso tra 0 e 100, valore predefinito 100): percentuale del flusso di messaggi a cui applicare la politica DMARC. Lo scopo del tag pct è consentire ai proprietari di domini di adottare un'implementazione lenta del meccanismo DMARC.
 
@@ -135,7 +135,7 @@ Di seguito è riportato un elenco dei tag utilizzati per creare un **record TXT*
 >
 > Nei nostri 2 esempi, il parametro `p=`viene utilizzato nella sua forma restrittiva per illustrare il comportamento di un servizio di posta elettronica in questo caso.
 >
-> L’impostazione del parametro `p=` può avere un impatto importante sull’evasione delle email del dominio. Si consiglia di configurare `p=none` ed eseguire un'analisi dei rapporti di errore per diverse settimane, per correggere eventuali anomalie. L’upgrade a `p=quarantina` o `p=reject` richiede il pieno controllo delle impostazioni di sicurezza email relative a [SPF](/pages/web_cloud/domains/dns_zone_spf) e [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’uso del fattore `pct=`, presentato di seguito, consente una transizione graduale.
+> L’impostazione del parametro `p=` può avere un impatto importante sull’evasione delle email del dominio. Si consiglia di configurare `p=none` ed eseguire un'analisi dei rapporti di errore per diverse settimane, per correggere eventuali anomalie. L’upgrade a `p=quarantine` o `p=reject` richiede il pieno controllo delle impostazioni di sicurezza email relative a [SPF](/pages/web_cloud/domains/dns_zone_spf) e [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’uso del fattore `pct=`, presentato di seguito, consente una transizione graduale.
 
 ##### Primo esempio
 
@@ -160,10 +160,10 @@ In questo secondo esempio, è stato utilizzato un [record TXT](#txt-record) per 
 Otteniamo il seguente risultato:
 
 ```
-"v=DMARC1; p=quarantina; pct=100; ruf=mailto:report@mydomain.ovh; fo=0; adkim=r; aspf=s; adkim=r; ri=86400"
+"v=DMARC1; p=quarantine; pct=100; ruf=mailto:report@mydomain.ovh; fo=0; adkim=r; aspf=s; adkim=r; ri=86400"
 ```
 
-- **p=quarantena**: le email che non superano i test DMARC vengono trattate come "sospette".
+- **p=quarantine**: le email che non superano i test DMARC vengono trattate come "sospette".
 
 - **pct=100**: la politica DMARC si applica al 50% dei messaggi provenienti dal flusso di posta elettronica del proprietario del dominio.
 

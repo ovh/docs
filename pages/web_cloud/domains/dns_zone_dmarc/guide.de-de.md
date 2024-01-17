@@ -72,7 +72,7 @@ Nachfolgend finden Sie eine vollständige Beschreibung der Tags, die für die OV
 
 - **Regel für die Domain (p=)**: Die vom Empfänger auf Anfrage des Inhabers der Sender-Domain einzunehmende Regelung. Die Richtlinie gilt für die abgefragte Domäne und die Subdomains, es sei denn, das Subdomain-Tag **sp=** enthält andere Anweisungen. Mögliche Werte sind:
     - *None*: Der Domaininhaber fordert keine spezifischen Maßnahmen zur Zustellung von Nachrichten an.
-    - *Quarantäne*: Wenn die Überprüfung des DMARC-Mechanismus fehlschlägt, müssen die Empfänger die E-Mails als verdächtig einstufen. Je nach den Fähigkeiten des Empfängerservers kann dies bedeuten, „in den Spam-Ordner zu verschieben“ und/oder „als verdächtig melden“.
+    - *quarantine*: Wenn die Überprüfung des DMARC-Mechanismus fehlschlägt, müssen die Empfänger die E-Mails als verdächtig einstufen. Je nach den Fähigkeiten des Empfängerservers kann dies bedeuten, „in den Spam-Ordner zu verschieben“ und/oder „als verdächtig melden“.
     - *reject*: E-Mails, die bei der DMARC-Verifizierung fehlschlagen, werden abgelehnt.
 
 > [!warning]
@@ -163,7 +163,7 @@ Wir erhalten folgendes Ergebnis:
 „v=DMARC1; p=Quarantine; pct=100; ruf=mailto:report@mydomain.ovh; fo=0; adkim=r; aspf=s; adkim=r; ri=86400“
 ```
 
-- **p=Quarantäne**: E-Mails, die die DMARC-Tests nicht bestehen, werden als „verdächtig“ behandelt.
+- **p=quarantine**: E-Mails, die die DMARC-Tests nicht bestehen, werden als „verdächtig“ behandelt.
 
 - **pct=100**: Die DMARC-Richtlinie gilt für 50% der Nachrichten, die vom E-Mail-Stream des Domaininhabers stammen.
 

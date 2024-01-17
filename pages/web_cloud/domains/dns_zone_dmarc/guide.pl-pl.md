@@ -72,8 +72,8 @@ Poniżej znajduje się wyczerpujący opis tagów używanych do **rejestracji DMA
 
 - **Reguła dla domeny (p=)**: zasady do przyjęcia przez adresata na wniosek właściciela domeny nadawcy. Polityka dotyczy badanej domeny i subdomen, chyba że znacznik subdomeny **sp=** wskazuje na inne instrukcje. Możliwe wartości to:
     - *none*: Właściciel domeny nie żąda żadnych konkretnych działań dotyczących dostarczania wiadomości.
-    - *kwarantanna*: jeśli weryfikacja mechanizmu DMARC nie powiedzie się, adresaci muszą uznać e-maile za podejrzane. W zależności od możliwości serwera docelowego może to oznaczać "umieszczenie w folderze spamu" i/lub "zgłoś jako podejrzanego".
-    - *odrzucenie*: odrzucanie e-maili, które nie powiodły się podczas weryfikacji mechanizmu DMARC.
+    - *quarantine*: jeśli weryfikacja mechanizmu DMARC nie powiedzie się, adresaci muszą uznać e-maile za podejrzane. W zależności od możliwości serwera docelowego może to oznaczać "umieszczenie w folderze spamu" i/lub "zgłoś jako podejrzanego".
+    - *reject*: odrzucanie e-maili, które nie powiodły się podczas weryfikacji mechanizmu DMARC.
 
 > [!warning]
 >
@@ -135,7 +135,7 @@ Poniżej znajduje się lista znaczników używanych do tworzenia **rekordu TXT**
 >
 > W naszych dwóch przykładach parametr `p=`jest używany w formie zawężającej, aby zilustrować zachowanie usługi e-mail w tym przypadku.
 >
-> Konfiguracja parametru `p=` może mieć duży wpływ na dostarczalność e-maili Twojej domeny. Zalecamy skonfigurowanie `p=none` i przeprowadzenie przez kilka tygodni analizy raportów o niepowodzeniach, aby naprawić ewentualne anomalie. Zmiana na `p=kwarantanna` lub `p=odrzucenie` wymaga pełnej kontroli nad ustawieniami bezpieczeństwa e-mail dla [SPF](/pages/web_cloud/domains/dns_zone_spf) i [DKIM](/pages/web_cloud/domains/dns_zone_dkim). Zastosowanie czynnika `pct=`, przedstawionego poniżej, umożliwia stopniowe przechodzenie.
+> Konfiguracja parametru `p=` może mieć duży wpływ na dostarczalność e-maili Twojej domeny. Zalecamy skonfigurowanie `p=none` i przeprowadzenie przez kilka tygodni analizy raportów o niepowodzeniach, aby naprawić ewentualne anomalie. Zmiana na `p=quarantine` lub `p=reject` wymaga pełnej kontroli nad ustawieniami bezpieczeństwa e-mail dla [SPF](/pages/web_cloud/domains/dns_zone_spf) i [DKIM](/pages/web_cloud/domains/dns_zone_dkim). Zastosowanie czynnika `pct=`, przedstawionego poniżej, umożliwia stopniowe przechodzenie.
 
 ##### Pierwszy przykład
 
@@ -146,7 +146,7 @@ Aby zilustrować ten pierwszy przykład, użyliśmy [rekordu DMARC](#dmarc-recor
 Otrzymujemy następujący wynik:
 
 ```
-"v=;p=kwarantanna;pct=100;rua=mailto:report@mydomain.ovh;aspf=s;"
+"v=;p=quarantine;pct=100;rua=mailto:report@mydomain.ovh;aspf=s;"
 ```
 
 Wszystkie wysłane e-maile (**pct=100**) są przetwarzane przez mechanizmy uwierzytelniania SPF i/lub DKIM. E-maile, które nie przeszły testu SPF są automatycznie odrzucane, ponieważ "**aspf=s**" (mechanizm SPF w trybie ścisłym). Raport o błędach mechanizmów uwierzytelniania SPF i/lub DKIM jest wysyłany na adres `report@mydomain.ovh` (**rua=mailto:report@mydomain.ovh**).
@@ -160,10 +160,10 @@ W tym drugim przykładzie użyliśmy [rekordu TXT](#txt-record), aby użyć tag�
 Otrzymujemy następujący wynik:
 
 ```
-"v=; p=kwarantanna; pct=100; ruf=mailto:report@mydomain.ovh; fo=0; adkim=r; aspf=s; adkim=r; ri=86400"
+"v=; p=quarantine; pct=100; ruf=mailto:report@mydomain.ovh; fo=0; adkim=r; aspf=s; adkim=r; ri=86400"
 ```
 
-- **p=kwarantanna**: e-maile, które nie przeszły testu DMARC są traktowane jako "podejrzane".
+- **p=quarantine**: e-maile, które nie przeszły testu DMARC są traktowane jako "podejrzane".
 
 - **pct=100**: Polityka DMARC dotyczy 50% wiadomości wysyłanych z kanałów e-mail właściciela domeny.
 
