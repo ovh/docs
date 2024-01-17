@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud Backint Agent versions"
 excerpt: "This guide provides information about OVHcloud Backint Agent versions"
-updated: 2024-01-11
+updated: 2024-01-17
 ---
 
 ## Version history

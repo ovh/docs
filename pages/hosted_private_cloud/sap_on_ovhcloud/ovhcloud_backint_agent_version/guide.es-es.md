@@ -1,9 +1,7 @@
 ---
 title: "OVHcloud Backint Agent versions"
 excerpt: "This guide provides information about OVHcloud Backint Agent versions"
-updated: 2024-01-11
-routes:
-    canonical: 'https://docs.ovh.com/gb/en//'
+updated: 2024-01-17
 ---
 
 ## Version history
