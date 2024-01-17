@@ -10,7 +10,7 @@ updated: 2024-01-15
 
 ## Objetivo
 
-Como parte de la evolución de la solución MX Plan, se ha planificado una migración desde la solución actual que utiliza el webmail Outlook Web Access (OWA) hacia la solución Zimbra y su webmail.
+Como parte de la evolución de la solución MX Plan, se ha planificado una migración desde la solución actual que utiliza el webmail Outlook Web App (OWA) hacia la solución Zimbra y su webmail.
 
 Si esta migración le afecta, encontrará aquí las preguntas más frecuentes.
 
@@ -20,7 +20,7 @@ Zimbra es una popular solución colaborativa de código abierto. Se migrará a u
 
 Zimbra ofrece numerosas funcionalidades que pronto estarán disponibles en los catálogos de OVHcloud.
 
-### ¿En qué se diferencian los webmail Outlook Web Access (OWA) y Zimbra?
+### ¿En qué se diferencian los webmail Outlook Web App (OWA) y Zimbra?
 
 Zimbra ofrece las mismas funcionalidades y una usabilidad cercana a OWA. Próximamente estará disponible una guía de uso de Zimbra.
 

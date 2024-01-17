@@ -7,7 +7,7 @@ updated: 2022-02-08
  
 ## Objective
 
-You have mistakenly deleted one or more items (email, contact, calendar appointment) and emptied your "trash". You can still restore these items up to 14 days after they have been deleted via OWA (Outlook Web Application).
+You have mistakenly deleted one or more items (email, contact, calendar appointment) and emptied your "trash". You can still restore these items up to 14 days after they have been deleted via OWA (Outlook Web App).
 
 **This guide explains how to restore deleted items from your email account via webmail (OWA)**
  

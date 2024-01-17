@@ -25,7 +25,7 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 
 > [!warning]
 >
-> O seguinte guia é endereçado aos detentores da oferta MX Plan "Histórico". Para a nova oferta, não há delegações. A alteração da password, os filtros e atendedores de um endereço de e-mail podem ser diretamente alterados através do webmail OWA (**O**utlook **W**eb **A**pplication). **Identifique a sua oferta através da tabela abaixo.**
+> O seguinte guia é endereçado aos detentores da oferta MX Plan "Histórico". Para a nova oferta, não há delegações. A alteração da password, os filtros e atendedores de um endereço de e-mail podem ser diretamente alterados através do webmail OWA (**O**utlook **W**eb **A**pp). **Identifique a sua oferta através da tabela abaixo.**
 >
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
