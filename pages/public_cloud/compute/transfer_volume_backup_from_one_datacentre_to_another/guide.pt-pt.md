@@ -10,7 +10,7 @@ updated: 2024-01-11
 
 ## Objetivo
 
-Poderá ter de migrar volumes adicionais de uma região OpenStack para outra, quer seja porque uma nova região está disponível, quer seja porque deseja migrar de[OVHcloud Labs](https://labs.ovh.com/){.external} para [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/compute/){.external}.
+Poderá ter de migrar volumes adicionais de uma região OpenStack para outra, quer seja porque uma nova região está disponível, quer seja porque deseja migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} para [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/compute/){.external}.
 
 **Descubra como transferir um backup de volume de uma região do OpenStack para outra..**
 
