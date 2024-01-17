@@ -67,7 +67,7 @@ Pour les services ayant une fréquence de renouvellement automatique supérieure
 
 Si vous ne souhaitez pas prolonger l'un de ces services, il vous suffit alors [de le résilier dans votre espace client](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 
-### Le renouvellement manuel <a name="manual-renewal"></a>
+### Le renouvellement manuel
 
 Vous avez également la possibilité, pour certains produits OVHcloud (domaines, hébergements, VPS, serveurs dédiés), de les passer en **renouvellement manuel**. Ce mode de renouvellement est utile si vous n'êtes pas certain de vouloir conserver le service à échéance ou si vous ne souhaitez pas que vos factures soient prélevées automatiquement sur votre moyen de paiement. 
 
