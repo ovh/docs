@@ -1,7 +1,7 @@
 ---
 title: "Gérer les clients de ses sites web avec MainWP"
-excerpt: "Découvrez comment gérer tous les clients de ses sites web WordPress depuis un seul endroit grâce au plugin MainWP"
-updated: 2024-01-17
+excerpt: "Découvrez comment gérer tous les clients de ses sites web WordPress depuis le dashboard MainWP"
+updated: 2024-01-19
 ---
 
 ## Objectif
@@ -13,35 +13,36 @@ La fidélisation de vos clients est primordiale pour le développement de votre 
 ## Prérequis
 
 - Disposer d'une offre d'hébergement [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-- Être connecté à l'interface d'administration de MainWP.
+- Être connecté à votre dashboard MainWP.
 
 ## En pratique
 
 Dans le menu principal de MainWP, cliquez sur `Clients`{.action}. Sur l'écran qui s'affiche, trois onglets sont présents :
 - Clients : affiche la liste de tous vos clients
 - Add Client : permet de créer de nouveaux clients
-- Client Fields : permet de créer de nouveau champs relatifs à vos clients
+- Client Fields : permet de créer de nouveaux champs relatifs à vos clients
 
 ### Ajouter un client
 
-Pour commencer, ajoutez votre premier client. Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Add Client`{.action}. Dans le formulaire qui apparaît, remplissez les informations de votre client. A droite de l'écran, sélectionnez les sites web sur lesquels vous voulez créer votre nouveau client, puis cliquez sur `Add Client`{.action}.
+Pour commencer, ajoutez votre premier client. Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Add Client`{.action}. Dans le formulaire qui apparaît, remplissez les informations de votre client. À droite de l'écran, sélectionnez les sites web sur lesquels vous voulez créer votre nouveau client, puis cliquez sur `Add Client`{.action}.
 
 ![mainWPClientMngt](images/add_client.png){.thumbnail}
 
 ### Visualiser vos clients
 
-Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Clients`{.action}. La liste de tous vos clients s'affiche ici. Vous pouvez rechercher un client spécifique (dans le champ Search en haut à droite du tableau) en entrant la valeur d'un de ses champs, comme son nom par exemple.
+Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Clients`{.action}. La liste de tous vos clients s'affiche. Vous pouvez rechercher un client spécifique (dans le champ `Search`{.action} en haut à droite du tableau) en entrant la valeur d'un de ses champs, comme son nom par exemple.
 
 ![mainWPClientMngt](images/search_client.png){.thumbnail}
 
-Vous pouvez effectuer un drag and drop des colonnes de votre choix pour mettre en avant les informations pertinentes de vos clients, comme l'adresse mail (colonne `Client Email`{.action}) ou encore le nombre de sites web auxquels il est rattaché (colonne `Websites`{.action}).
+Vous pouvez effectuer un drag and drop des colonnes de votre choix pour mettre en avant les informations pertinentes de vos clients, comme l'adresse mail (colonne `Client Email`{.action}) ou encore le nombre de sites web auxquels votre client est rattaché (colonne `Websites`{.action}).
 
 Depuis ce tableau, vous pouvez supprimer les clients de votre choix. Sélectionnez les lignes correspondant aux clients que vous souhaitez supprimer, cliquez sur `Bulk actions`{.action}, `Delete`{.action}, puis sur `Apply`{.action} pour confirmer.
 
 ![mainWPClientMngt](images/delete_client.png){.thumbnail}
 
 Enfin, cliquez sur `Yes, proceed`{.action} pour confirmer la suppression des clients.
-Dans le tableau représentant vos clients, identifiez le client de votre choix et cliquez sur le bouton représenté par trois petit points (…). 
+
+Dans le tableau représentant vos clients, identifiez le client de votre choix et cliquez sur le bouton représenté par trois points (…). 
 
 ![mainWPClientMngt](images/more_client.png){.thumbnail}
 
@@ -57,7 +58,7 @@ Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Clien
 
 ![mainWPClientMngt](images/new_field_client.png){.thumbnail}
 
-Dans notre exemple, nous avons créé un nouveau champ « fidélité », ainsi qu'une description associée. Pour confirmer la création du nouveau champ, cliquez sur `Save Field`{.action}. Maintenant, lors de la création d'un nouveau client, le nouveau champ « fidélité » sera disponible.
+Dans notre exemple, nous créons un nouveau champ « fidélité », ainsi qu'une description associée. Pour confirmer la création du nouveau champ, cliquez sur `Save Field`{.action}. Maintenant, lors de la création d'un nouveau client, le nouveau champ « fidélité » sera disponible.
 
 ![mainWPClientMngt](images/new_field_add_client.png){.thumbnail}
 
@@ -66,3 +67,9 @@ Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients.
 ![mainWPClientMngt](images/details_client.png){.thumbnail}
 
 ## Aller plus loin
+
+[Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general/)
+
+[Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
+
+[Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup/)
