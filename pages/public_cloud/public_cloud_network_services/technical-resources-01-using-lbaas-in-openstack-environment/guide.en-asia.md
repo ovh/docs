@@ -1,7 +1,7 @@
 ---
 title: Deploying an Octavia Load Balancer
 excerpt: Find out how to configure the Octavia LBaaS for Public Cloud
-updated: 2023-08-08
+updated: 2024-01-10
 ---
 
 ## Objective
@@ -304,6 +304,12 @@ Backend 2
 The public Gateway is defined by an L3 router attached to a private network with an external Gateway.
 
 ![diagram](images/topology.png){.thumbnail}
+
+### Delete the Load Balancer
+
+```bash
+openstack loadbalancer delete [--cascade] [--wait] <load_balancer>
+```
 
 ## Go further
 

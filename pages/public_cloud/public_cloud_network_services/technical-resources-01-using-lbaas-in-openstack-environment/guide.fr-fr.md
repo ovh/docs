@@ -1,7 +1,7 @@
 ---
 title: "Déployer un Load Balancer Octavia"
 excerpt: Découvrez comment configurer Octavia LBaaS pour Public Cloud
-updated: 2023-08-08
+updated: 2024-01-10
 ---
 
 ## Objectif
@@ -299,15 +299,21 @@ La passerelle publique est définie par un routeur L3 attaché à un réseau pri
 
 ![diagram](images/topology.png){.thumbnail}
 
+### Supprimer le Load Balancer
+
+```bash
+openstack loadbalancer delete [--cascade] [--wait] <load_balancer>
+```
+
 ## Aller plus loin
 
-[Premiers pas avec le service Load Balancer pour Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service)
+[Premiers pas avec le service Load Balancer pour Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 
 [Documentation officielle d'OpenStack Octavia](https://docs.openstack.org/octavia/latest/).
 
 [Cookbook OpenStack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html).
 
-[OpenStack Floating IP](https://docs.openstack.org/ocata/user-guide/cli-manage-ip-addresses.html)
+[OpenStack Floating IP](https://docs.openstack.org/ocata/user-guide/cli-manage-ip-addresses.html).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

@@ -1,31 +1,35 @@
 ---
-title: "Transférer la sauvegarde d'un volume d'une région OpenStack à une autre"
-excerpt: "Découvrez comment transférer une sauvegarde de volume d'une région OpenStack à une autre"
+title: "Przenoszenie kopii zapasowej wolumenu z jednego regionu OpenStack do innego"
+excerpt: "Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regionu OpenStack do innego"
 updated: 2024-01-11
 ---
 
-## Objectif
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
-Vous pouvez avoir besoin de déplacer des volumes additionnels d'une région OpenStack à une autre, soit parce qu'une nouvelle région est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers le [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
+## Wprowadzenie
 
-**Découvrez comment transférer une sauvegarde de volume d'une région OpenStack à une autre.**
+Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu OpenStack do innego, ponieważ jest dostępny nowy region lub chcesz przenieść z [OVHcloud Labs](https://labs.ovh.com/){.external} do [Public Cloud](https://www.ovh.com/pl/public-cloud){.external}.
 
-## Prérequis
+**Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regionu OpenStack do innego.**
 
-Pour effectuer le transfert, vous aurez besoin d'un environnement avec :
+## Wymagania
 
-- CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ».
-- La Connectivité aux API OVHcloud OpenStack.
-- De l'espace de stockage disponible correspondant à la taille du disque du volume (pour le stockage de sauvegarde temporaire).
+Do przeniesienia będziesz potrzebował środowiska z:
 
-Cet environnement sera utilisé comme « jump host » pour transférer la sauvegarde d'une région à une autre. Cet environnement peut être une instance hébergée sur OVHcloud ou sur votre machine locale.
+- CLI OpenStack. Zapoznaj się z przewodnikiem "[Jak przygotować środowisko do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)".
+- Łączność z API OVHcloud OpenStack.
+- Dostępnego miejsca do magazynowania odpowiadającego rozmiarowi dysku woluminu (dla tymczasowego magazynu kopii zapasowych).
 
-## En pratique
+Środowisko to będzie używane jako "jump host" do przenoszenia kopii zapasowej z jednego regionu do innego. Środowisko to może być instancją hostowaną w OVHcloud lub na Twojej maszynie lokalnej.
 
-### Créer une sauvegarde
+## W praktyce
+
+### Utwórz kopię zapasową
 
 ```sh
-$ openstack volume list 
+$ openstack volume list
 +--------------------------------------+--------------+--------+------+----------------------------------+
 | ID                                   | Display Name | Status | Size | Attached to                      |
 +--------------------------------------+--------------+--------+------+----------------------------------+
@@ -33,9 +37,9 @@ $ openstack volume list
 +--------------------------------------+--------------+--------+------+----------------------------------+
 ```
 
-Si le volume est attaché à une instance, il faut d'abord le détacher avant de créer la sauvegarde.
+Jeśli wolumin jest podłączony do instancji, przed utworzeniem kopii zapasowej należy go odłączyć.
 
-Utilisez la commande ci-dessous pour récupérer l'ID de l'instance :
+Użyj poniższego polecenia, aby pobrać ID instancji:
 
 ```sh
 $ openstack server list
@@ -46,13 +50,13 @@ $ openstack server list
 +--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
 ```
 
-Ensuite, exécutez la commande suivante pour détacher le volume de son instance :
+Następnie wprowadź poniższą komendę, aby odmontować wolumin z jego instancji:
 
 ```sh 
 $ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
-Maintenant, créez une sauvegarde sous forme d'image à l'aide de cette commande suivante :
+Teraz utwórz obrazkową kopię zapasową, używając następującego polecenia:
 
 ```sh
 $ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume 
@@ -72,9 +76,9 @@ $ openstack image create --disk-format qcow2 --container-format bare --volume 67
 +---------------------+------------------------------------------------------+
 ```
 
-### Télécharger la sauvegarde
+### Pobierz kopię zapasową
 
-Exécutez la commande suivante pour répertorier les images disponibles :
+Aby wyświetlić dostępne obrazy, wprowadź następującą komendę:
 
 ```sh
 $ openstack image list 
@@ -93,7 +97,7 @@ $ openstack image list
 +--------------------------------------+--------------------------------+--------+
 ```
 
-Identifiez alors la sauvegarde dans la liste :
+Wyszukaj następnie kopię zapasową na liście:
 
 ```sh
 +--------------------------------------+-------------+-------------+----------------+-----------+--------+
@@ -103,32 +107,32 @@ Identifiez alors la sauvegarde dans la liste :
 +--------------------------------------+-------------+-------------+----------------+-----------+--------+
 ```
 
-Lancez enfin cette commande pour télécharger la sauvegarde :
+Następnie wprowadź następującą komendę, aby pobrać kopię zapasową:
 
 ```sh 
 $ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
-### Transférer la sauvegarde vers une autre région OpenStack
+### Przeniesienie kopii zapasowej do innego regionu Openstack
 
-Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelles variables d'environnement.
+Aby rozpocząć proces transferu, należy najpierw załadować nowe zmienne środowiskowe.
 
 > [!warning]
 >
-Si vous transférez votre sauvegarde vers une région OpenStack au sein du même projet, vous devrez changer la variable `OS_REGION_NAME`.
+Jeśli przenosisz Twoją kopię zapasową do regionu Openstack w tym samym projekcie, zmień zmienną OS_REGION_NAME.
 >
 
 ```sh 
 $ export OS_REGION_NAME=SBG1
 ```
 
-Si vous transférez votre sauvegarde vers un autre projet ou compte, vous devrez recharger les variables d'environnement liées à ce compte à l'aide de la commande suivante :
+Jeśli przenosisz kopię zapasową instancji do innego projektu lub na inne konto, pobierz ponownie zmienne środowiskowe powiązane z tym kontem, używając następującej komendy:
 
 ```sh
 $ source openrc.sh
 ```
 
-Pour transférer la sauvegarde vers la nouvelle région OpenStack, utilisez cette commande :
+Aby przenieść kopię zapasową do nowego regionu Openstack, użyj poniższego polecenia:
 
 ```sh 
 $ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume 
@@ -157,9 +161,9 @@ $ openstack image create --disk-format qcow2 --container-format bare --file snap
 +------------------+------------------------------------------------------+
 ```
 
-### Créer un volume à partir de votre sauvegarde
+### Utwórz wolumen z kopii zapasowej
 
-Pour créer un volume à partir de votre sauvegarde, utilisez l'ID de la sauvegarde comme image avec cette commande :
+Użyj identyfikatora kopii zapasowej jako obrazu za pomocą następującego polecenia:
 
 ```sh
 $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
@@ -188,8 +192,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 +---------------------+--------------------------------------+
 ```
 
-## Aller plus loin
+## Sprawdź również
 
-[Transférer la sauvegarde d'une instance d'une région OpenStack à une autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
