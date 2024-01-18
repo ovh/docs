@@ -32,11 +32,11 @@ Il permet, depuis un terminal et à l'aide d'une commande linux, de copier un fi
   
 ## En pratique
 
-### Etape 1 : récupérer les accès SSH de votre hébergement web :
+### Etape 1 - Récupérer les accès SSH de votre hébergement web :
 
 Pour retrouver les accès SSH de votre hébergement web, consultez notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) ».
 
-### Etape 2 : récupérer le chemin d'accès complet à l'espace de stockage FTP de votre hébergement web :
+### Etape 2 - Récupérer le chemin d'accès complet à l'espace de stockage FTP de votre hébergement web :
 
 Pour retrouver le chemin d'accès complet à l'espace de stockage FTP depuis votre terminal, ouvrez votre terminal, puis connectez-vous à votre hébergement web en SSH à l'aide de notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) ».
 
@@ -75,4 +75,4 @@ En effet, lorsque vous vous connectez de manière classique à l'espace FTP d'un
 
 C'est à ce niveau que ce trouve notamment par défaut le dossier `www` et le fichier `.ovhconfig` de votre hébergement web.
 
-### Etape 3 : utiliser la commande « scp » avec votre hébergement web :
+### Etape 3 - Utiliser la commande « scp » avec votre hébergement web :
