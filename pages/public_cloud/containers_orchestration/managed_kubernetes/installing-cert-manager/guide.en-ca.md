@@ -56,8 +56,6 @@ helm install \
   --namespace cert-manager \
   --create-namespace \
  --set installCRDs=true
-WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /Users/avache/.kube/my-desired-cluster.yml
-WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: /Users/avache/.kube/my-desired-cluster.yml
 NAME: cert-manager
 LAST DEPLOYED: Thu Jan 18 15:28:23 2024
 NAMESPACE: cert-manager
