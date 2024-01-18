@@ -1,7 +1,7 @@
 ---
 title: Comment renouveler mes services OVHcloud
 excerpt: Découvrez comment gérer vos services et leur renouvellement dans votre espace client
-updated: 2024-01-17
+updated: 2024-01-18
 ---
 
 ## Objectif
@@ -193,6 +193,15 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Au delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de retomber dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité régulièrement.
 > Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'entregistrement que OVHcloud. Comment faire ?
 >> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
+> Je ne veux plus de prélèvement automatique mais je ne veux pas résilier mon service. Que dois-je faire ?
+>> Si votre service le permet, vous pouvez utiliser l'action [Configurer le renouvellement](#actions) et ainsi choisir un renouvellement manuel.
+> J'ai renouvelé mon service pour 12 mois. Est-ce que je peux revenir sur mon choix ?
+>> Une fois le renouvellement d'un service effectué, il 'est pas possible de l'annuler. Vous pouvez néanmoins choisir un autre type de renouvellement ou de résilier le service mais ces 2 options ne pourront être prises en compte qu'à la fin de l'abonnement en cours, c'est à dire à l'issue des 12 mois.
+> Mon site web était suspendu car je n'avais pas renouvelé mes services à temps. Je viens de renouveler mes services. Combien de temps dois-je attendre pour que mon site web soit de nouveau accessible ?
+>> Le délai de rétablissement varie en fonction des services concernés.
+>> Si uniquement votre Hébergement Web était suspendu et a été renouvelé, il faut compter un délai moyen de 2 heures pour que votre site soit de nouveau accessible.
+>> Si votre nom de domaine était également suspendu et a été renouvelé, le délai peut alors être plus long et aller jusqu'à 48 heures, correspondant au délai de propagation DNS.
+>> Afin de vous prémunir d'une indisponibilité d'accès pour tous vos services critiques, nous vous préconisons de privilégier le renouvellement automatique et de [vérifier régulièrement que vos moyens de paiment sont à jour](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 
 ## Aller plus loin
 
