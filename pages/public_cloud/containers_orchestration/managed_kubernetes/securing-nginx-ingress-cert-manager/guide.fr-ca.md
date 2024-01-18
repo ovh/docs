@@ -3,8 +3,6 @@ title: Secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes'
 updated: 2024-01-18
 ---
-routes:
-    canonical: 
 
 ## Objective
 
