@@ -145,8 +145,6 @@ The install process will begin and a new `ingress-nginx` namespace will be creat
 
 ```console
 $ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
-WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /Users/avache/.kube/my-desired-cluster.yml
-WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: /Users/avache/.kube/my-desired-cluster.yml
 NAME: ingress-nginx
 LAST DEPLOYED: Thu Jan 18 15:20:47 2024
 NAMESPACE: ingress-nginx
