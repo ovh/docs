@@ -201,7 +201,7 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Le délai de rétablissement varie en fonction des services concernés.
 >> Si uniquement votre Hébergement Web était suspendu et a été renouvelé, il faut compter un délai moyen de 2 heures pour que votre site soit de nouveau accessible.
 >> Si votre nom de domaine était également suspendu et a été renouvelé, le délai peut alors être plus long et aller jusqu'à 48 heures, correspondant au délai de propagation DNS.
->> Afin de vous prémunir d'une indisponibilité d'accès pour tous vos services critiques, nous vous préconisons de privilégier le renouvellement automatique et de [vérifier régulièrement que vos moyens de paiment sont à jour](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+>> Afin de vous prémunir d'une indisponibilité d'accès pour tous vos services critiques, nous vous préconisons de privilégier le renouvellement automatique et de [vérifier régulièrement que vos moyens de paiement sont à jour](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 
 ## Aller plus loin
 
