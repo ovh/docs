@@ -10,7 +10,7 @@ Le Secure Copy Protocol (SCP) permet de copier de manière sécurisée (grâce a
 
 - présent en local depuis votre ordinateur vers un appareil distant ;
 - d'un appareil distant vers votre ordinateur ;
-- d'un serveur vers un autre serveur (indisponible entre deux hébergements web).
+- d'un serveur vers un autre serveur (indisponible entre deux hébergements web OVHcloud).
 
 Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fichier ou un dossier contenant un ou plusieurs fichiers.
 
@@ -32,7 +32,7 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 
 ## En pratique
 
-L'idée de ce guide est de vous présenter uniquement quelques fonctionnalités disponibles avec la commande `scp`. Nous vous invitons à consulter la documentation officielle sur cette commande si vous souahitez approfondir d'avantage sur le sujet.
+Ce guide vous détaille de manière non exhaustive des fonctionnalités disponibles avec la commande `scp`. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
 
 ### Etape 1 - Récupérer les accès SSH de votre hébergement web
 
