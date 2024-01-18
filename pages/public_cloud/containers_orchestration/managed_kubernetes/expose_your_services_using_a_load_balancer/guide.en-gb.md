@@ -320,7 +320,7 @@ spec:
 
 
 //
-// NOT REVELANT or NOT SUPPORTED, TO BE REMOVED FROM THE DOC
+// NOT REVELANT or NOT SUPPORTED, STILL HERE FOR VALIDATION BUT TO BE REMOVED FROM THE DOC
 //
 - `loadbalancer.openstack.org/floating-network-id`   //NOT SUPPORTED on OVH
 
@@ -352,7 +352,7 @@ spec:
   When `container-store` parameter is set to `external` format for `default-tls-container-ref` could be any string.
 
 ### Features
-#### Resize your LoadBalancer //TODO (sample on github)
+#### Resize your LoadBalancer //TODO (upload sample on github)
 There is no proper way to 'resize' your loadbalancer yet (work in progress). The best alternative to change the flavor of your load balancer is to recreate a new Kubernetes Service that will use the same public IP as an existing one.
 You can find the complete HowTo and examples on our public Github repository: https://github.com/ovh/public-cloud-examples
 
@@ -395,9 +395,11 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 >
 
 
-#### [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
-#### [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip)
+#### Sharing load balancer with multiple Services
+By default, different Services of LoadBalancer type should have different corresponding cloud load balancers, however, the Cloud Controleler Manager (CCM) allows multiple Services to share a single load balancer. To do so you can follow the official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
 
+#### Use PROXY protocol to preserve client IP 
+[Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip)
 
 ### Migrate from Loadbalancer for Kubernetes to Public Cloud Load Balancer
 In order to migrate from an existing [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer-kubernetes/) to a [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) you will have to modify an existing Service and change its LoadBalancer class.
