@@ -6,43 +6,62 @@ updated: 2022-11-02
 
 ## Objective
 
-Our new Load Balancer as a Service (LBaaS) solution is based on [OpenStack Octavia](https://docs.openstack.org/octavia/queens/reference/introduction.html){.external} and is fully integrated into the Public Cloud universe.
+Our new Public Cloud Load Balancer is based on [OpenStack Octavia](https://docs.openstack.org/octavia/latest/reference/introduction.html){.external} and is fully integrated into the Public Cloud universe.
 
 **Learn how to configure an OVHcloud Load Balancer with the help of this guide.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Using the [OpenStack command line environment](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment
+- Understand the [Load Balancer concepts](../concepts-03-loadbalancer/guide.en-gb.md)
+- Understand the [Public Cloud Networking concepts](../concepts-01-public-cloud-networking-concepts/guide.en-gb.md)
+- A Load Balancer requires a subnet, see this [guide](../getting-started-07-creating-vrack/)
+- [Optional] This guide explains the load balancer configuration through Graphical Interface & Command Line Interface, if you want to use the latter, then install the [OpenStack Command Line environment](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api/guide.en-gb.md)
+
+
 
 ## Instructions
 
-### Configuring your private network
+### Creating the Load Balancer with OVHCloud Control Panel
+Open your public cloud project and click to `Network > Load Balancer` in the left menu, then click on `Create a Load Balancer` button.
 
-Before creating a Load Balancer, you will need to set up a private network:
+The configuration page will open with 5 steps
+#### Step 1 : Size choice 
+![Size choice](images/size.png){.thumbnail}
+The interface contains a link to the website where the characteristics / benchmark of all size are provided. Once you have chosen your size, click on `Next`
 
-```bash
-openstack network create my_network
+#### Step 2 : Region choice 
+ ![Region choice](images/region.png){.thumbnail}
+ Only regions where you have private network and at least one subnet can be selected. Select the region and click on `Next` 
 
-openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
+ #### Step 3 : Attach a public IP (or not)
+ ![Public IP choice](images/floating_IP.png){.thumbnail}
+ At this step, you need to know which architecture if your load balancer will be receiving public traffic or not (for more details, see [Public Cloud Networking concepts](../concepts-01-public-cloud-networking-concepts/guide.en-gb.md)). 
+If your load balancer is processing public traffic, you have 2 choices :
+* `New Public IP`: this option will create a new Floating IP for your load balancer. 
+* If you have some floating IPs, the interface will propose you to pick one.
+If your load balancer is processing private traffic, choose `No Public IP`
 
-openstack router create my_router
+ #### Step 4 : Select the private network and the subnet where the load balancer will be spawned. 
+![Network choice](images/private_network.png){.thumbnail}
+ The interface will inform you if the private network / subnet is not compliant with the pre requisites (see [Public Cloud Networking concepts](concepts-01-public-cloud-networking-concepts/guide.en-gb.md###Network pre requisites))
 
-openstack router add subnet my_router my_subnet
+ #### Step 5 (Optional) Define the listener(s) and the members
+![Listener choice](images/listener.png){.thumbnail}
 
-openstack router set --external-gateway Ext-Net my_router
-```
+  * First, choose the listener protocol & the port according to the traffic you will receive. Note that a specific listener called `Prometheus` is available to monitor your load balancer. In that case, it is not possible to add members. For more information on this listener, check this [page](../technical-resources-02-octavia-monitoring-prometheus/guide.en-gb.md)
+  * Then, choose the Health monitor type. Note that since some health monitor types are not compatible with some protocols, the user interface filters those types so that you can only choose compatible items. For more information, on the health monitor compatibility, check this [page](../concepts-01-public-cloud-networking-concepts/guide.en-gb.md)
+  * Finally, from the instances of your region, choose the member IP & port that will be part of the pool. Note that in order to simplify the configuration workflow, it is only possible to have a pool with the same protocol as the listener, and that the member can only be chosen from the instance. Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
 
-You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration). List the addresses of your instances in your network with the following command:
+  
+ #### Step 6 Define the name of Load Balancer 
+![Name](images/name.png){.thumbnail}
+You can update the name according to your choice and click on `Create a Load Balancer`.
 
-```bash
-openstack server list
-```
+You will be redirected to the Load Balancer listing page. Among the attributes that are displayed, the `Operating status` and `Provisioning status` provide information on the state of your load balancer. More information on the [Load Balancer concepts page](../concepts-03-loadbalancer/guide.en-gb.md##Operating and Provisioning status)
 
-In the next step, configure the network interfaces of your instances according to this output.
 
-### Creating the Load Balancer
+### Creating the Load Balancer with Openstack Command Line Interface
 
 You can view a list of the different Load Balancer flavors we offer with this command:
 
