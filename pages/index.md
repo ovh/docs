@@ -1105,6 +1105,7 @@
             + [Accessing a web hosting plan via SSH](web_cloud/web_hosting/ssh_on_webhosting)
             + [Using PuTTy for Windows](web_cloud/web_hosting/ssh_using_putty_on_windows)
             + [Using SVN](web_cloud/web_hosting/svn_using_svn)
+            + [Web Hosting: the Secure Copy Protocol](web_cloud/web_hosting/using-scp-command)
         + [SSL](web-cloud-hosting-ssl)
             + [Managing SSL certificates on a Web Hosting plan](web_cloud/web_hosting/ssl_on_webhosting)
             + [Activating HTTPS on your website with an SSL certificate](web_cloud/web_hosting/ssl-activate-https-website)
