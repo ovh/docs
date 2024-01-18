@@ -39,13 +39,13 @@ That is why we do recommend to deploy your MKS clusters on a network and subnet 
 
 For existing/already deployed clusters, if:
 - **The Subnet's GatewayIP is already used by an OVHcloud Gateway**, nothing needs to be done. The current OVHcloud Gateway (Openstack Router) will be used.
-- **The subnet does not have an IP reserved for a Gateway**, you will have to provide or create a compatible subnet. Two options:
+- **The subnet does not have an IP reserved for a Gateway**, you will have to provide or create a compatible subnet. Three options:
   - Edit an existing subnet to reserve an IP for a Gateway : //TODO, doc Console Horizon et CLI/script
-  - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP adress reserved for a Gateway //Doc
+  - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
   - Use a subnet dedicated for your load balancers: this option can be used on the Managed under 'advanced parameters'/'LoadbalancerSubnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)**, two options:
-  - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP adress reserved for a Gateway //Doc
-  - Use a subnet dedicated for your load balancers: this option can be used on the Managed under 'advanced parameters'/'LoadbalancerSubnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
+  - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
+  - Use a subnet dedicated for your load balancers: this option can be used on the Managed under 'advanced parameters'/'Loadbalancer Subnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
 
 ## Limitations
 
@@ -396,10 +396,10 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 
 
 #### Sharing load balancer with multiple Services
-By default, different Services of LoadBalancer type should have different corresponding cloud load balancers, however, the Cloud Controleler Manager (CCM) allows multiple Services to share a single load balancer. To do so you can follow the official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
+By default, different Services of LoadBalancer type should have different corresponding cloud load balancers, however, the Cloud Controller Manager (CCM) allows multiple Services to share a single load balancer. To do so you can follow the official documentation: [Sharing load balancer with multiple Services](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#sharing-load-balancer-with-multiple-services)
 
-#### Use PROXY protocol to preserve client IP 
-[Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip)
+#### Use PROXY protocol to preserve client IP
+When exposing services like nginx-ingress-controller, it's a common requirement that the client connection information could pass through proxy servers and load balancers, therefore visible to the backend services. Knowing the originating IP address of a client may be useful for setting a particular language for a website, keeping a denylist of IP addresses, or simply for logging and statistics purposes. You can follow the official Cloud Controller Manager documentation on how to [Use PROXY protocol to preserve client IP](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md#use-proxy-protocol-to-preserve-client-ip).
 
 ### Migrate from Loadbalancer for Kubernetes to Public Cloud Load Balancer
 In order to migrate from an existing [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer-kubernetes/) to a [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) you will have to modify an existing Service and change its LoadBalancer class.
@@ -449,9 +449,9 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 
 ## Go further
 
-Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra) . //NOT EXISTING FOR MKS, TO BE CREATED
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra) .
 
-Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
