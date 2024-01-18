@@ -46,6 +46,8 @@ La création des comptes de services est abordée dans la [documentation dédié
 
 Un compte de service peut ensuite être utilisé pour la [connexion sur les APIs OVHcloud](/pages/account_and_service_management/account_information/authenticate-api-with-service-account) ainsi que sur des API tierce comme celles exposées par [OpenStack](/pages/manage_and_operate/iam/authenticate-api-openstack-with-service-account)
 
+La connexion avec des comptes de services n'est pas encore supportée sur les SDK et le provider Terraform.
+
 ### Utilisateurs fédérés
 
 Ce sont les comptes utilisateurs provenant d'une [fédération d'identité](/products/manage-operate-user-federation). Ces utilisateurs proviennent d'un annuaire tiers et ne sont donc pas gérés directement par OVHcloud et dont les droits d'accès dépendent des [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui) mise en oeuvre.
