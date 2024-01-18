@@ -72,7 +72,7 @@ When exposing your load balancer publicly (public-to-public or public-to-private
 
 ## Instructions
 
-During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) rather than the historical [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer-kubernetes/) solution, you'll need to add the annotation: loadbalancer.ovhcloud.com/class: "octavia" on your Kubernetes Service manifest.
+During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) rather than the historical [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer-kubernetes/) solution, you'll need to add the annotation: `loadbalancer.ovhcloud.com/class: "octavia"` on your Kubernetes Service manifest.
 
 Here's a simple example of how to use the Public Cloud Load Balancer
 
