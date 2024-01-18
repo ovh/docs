@@ -105,7 +105,7 @@ spec:
     app: test-lb
   type: LoadBalancer
 ```
-6. Create a 'service' using the following command:
+6. Create a 'Service' using the following command:
 ```shell
 kubectl apply -f test-lb-service.yaml
 ```
