@@ -122,3 +122,7 @@ Pour copier un dossier présent sur votre hébergement web ainsi que l'intégral
 ```ssh
 scp -r FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main-login/source_folder target_folder
 ```
+
+#### 3.3 : copier du contenu présent sur votre hébergement web vers un autre hébergement web :
+
+Pour des raisons de sécurité, la commande `scp` est, à date, refusée en SSH par l'infrastructure d'hébergements web.
