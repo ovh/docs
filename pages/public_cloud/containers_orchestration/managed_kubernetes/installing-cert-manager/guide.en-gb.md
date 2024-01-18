@@ -56,6 +56,16 @@ helm install \
   --namespace cert-manager \
   --create-namespace \
  --set installCRDs=true
+```
+
+This command will install the latest version of cert-manager, create a new `cert-manager` namespace and install the new CRD (CustomResourceDefinitions):
+
+```console
+$ helm install \
+  cert-manager jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+ --set installCRDs=true
 NAME: cert-manager
 LAST DEPLOYED: Thu Jan 18 15:28:23 2024
 NAMESPACE: cert-manager
