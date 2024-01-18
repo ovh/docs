@@ -32,13 +32,13 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 
 ## En pratique
 
-Ce guide vous détaille de manière non exhaustive des fonctionnalités disponibles avec la commande `scp`. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
+Ce guide vous détaille de manière non exhaustive des fonctionnalités disponibles avec la commande `scp`. N'hésitez pas à échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/> si vous souhaitez approfondir vos connaissances sur cette commande.
 
-### Etape 1 - Récupérer les accès SSH de votre hébergement web
+### Étape 1 - Récupérer les accès SSH de votre hébergement web
 
 Pour retrouver les accès SSH de votre hébergement web, consultez notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) ».
 
-### Etape 2 - Récupérer le chemin d'accès complet à l'espace de stockage FTP de votre hébergement web<a name="step2"></a>
+### Étape 2 - Récupérer le chemin d'accès complet à l'espace de stockage FTP de votre hébergement web<a name="step2"></a>
 
 Ouvrez votre terminal et connectez-vous à votre hébergement web en SSH.
 
@@ -77,7 +77,7 @@ En effet, lorsque vous vous connectez de manière classique à l'espace FTP d'un
 
 C'est à ce niveau que se trouvent notamment, par défaut, le dossier `www` et le fichier `.ovhconfig` de votre hébergement web.
 
-### Etape 3 - Utiliser la commande « scp » avec votre hébergement web
+### Étape 3 - Utiliser la commande « scp » avec votre hébergement web
 
 > [!success]
 >
@@ -125,11 +125,11 @@ Pour copier un dossier présent sur votre hébergement web ainsi que l'intégral
 scp -r FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main-login/source_folder target_folder
 ```
 
-#### Copier du contenu présent sur votre hébergement web vers un autre hébergement web
+#### Copier du contenu présent sur votre hébergement web OVHcloud vers un autre hébergement web OVHcloud
 
-Pour des raisons de sécurité, la commande `scp` est, à date, refusée en SSH par l'infrastructure d'hébergements web lorsque deux hébergements web tentent de copier du contenu entre eux.
+Pour des raisons de sécurité, la commande `scp` est, à date, refusée en SSH par l'infrastructure d'hébergements web OVHcloud lorsque deux hébergements web tentent de copier du contenu entre eux.
 
-### Etape 4 - S'assurer que le contenu a bien été copié
+### Étape 4 - S'assurer que le contenu a bien été copié
 
 Pour vérifier que du contenu présent en local sur votre ordinateur a bien été copié sur votre hébergement web, vous pouvez vous [connecter à l'espace de stockage FTP de votre hébergement web](/pages/web_cloud/web_hosting/ftp_connection), puis vous rendre dans le répertoire cible où le contenu est censé être copié.
 
