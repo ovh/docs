@@ -80,7 +80,7 @@ Here's a simple example of how to use the Public Cloud Load Balancer
 2. Retrieve the kubeconfig file needed to use kubectl tool (via OVHcloud manager, Terraform, Pulumi or API). You can use [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049658)
 3. Create a Namespace and a Deployment resource using the following command:
 ```shell
-kunectl create Namespace test-lb-ns
+kunectl create namespace test-lb-ns
 kubectl create deployment test-lb --image=nginx -n=test-lb-ns
 ```
 4. Copy/Paste the following code on a file named `test-lb-service.yaml`
