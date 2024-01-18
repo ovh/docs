@@ -197,7 +197,7 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Si votre service le permet, vous pouvez utiliser l'action [Configurer le renouvellement](#actions) et ainsi choisir un renouvellement manuel.
 > J'ai renouvelé mon service pour 12 mois. Est-ce que je peux revenir sur mon choix ?
 >> Une fois le renouvellement d'un service effectué, il 'est pas possible de l'annuler. Vous pouvez néanmoins choisir un autre type de renouvellement ou de résilier le service mais ces 2 options ne pourront être prises en compte qu'à la fin de l'abonnement en cours, c'est à dire à l'issue des 12 mois.
-> Mon site web était suspendu car je n'avais pas renouvelé mes services à temps. Je viens de renouveler mes services. Combien de temps dois-je attendre pour que mon site web soit de nouveau accessible ?
+> Mon site web est suspendu car je n'ai pas renouvelé mes services à temps. Je viens de renouveler mes services. Combien de temps dois-je attendre pour que mon site web soit de nouveau accessible ?
 >> Le délai de rétablissement varie en fonction des services concernés.
 >> Si uniquement votre Hébergement Web était suspendu et a été renouvelé, il faut compter un délai moyen de 2 heures pour que votre site soit de nouveau accessible.
 >> Si votre nom de domaine était également suspendu et a été renouvelé, le délai peut alors être plus long et aller jusqu'à 48 heures, correspondant au délai de propagation DNS.
