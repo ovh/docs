@@ -391,7 +391,7 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 
 > [!warning]
 >
-> Changing the flavor will create some outage.
+> Changing the flavor will lead to a new LoadBalancer creation and old LoadBalancer deletion. During this changeover your applications may become inaccessible.
 >
 
 
