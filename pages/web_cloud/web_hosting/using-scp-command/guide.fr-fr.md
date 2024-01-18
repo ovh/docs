@@ -36,7 +36,7 @@ Il permet, depuis un terminal et à l'aide d'une commande linux, de copier un fi
 
 Pour retrouver les accès SSH de votre hébergement web, consultez notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) ».
 
-### Etape 2 - Récupérer le chemin d'accès complet à l'espace de stockage FTP de votre hébergement web :
+### Etape 2 - Récupérer le chemin d'accès complet à l'espace de stockage FTP de votre hébergement web : <a name="step2"></a>
 
 Pour retrouver le chemin d'accès complet à l'espace de stockage FTP depuis votre terminal, ouvrez votre terminal, puis connectez-vous à votre hébergement web en SSH à l'aide de notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) ».
 
@@ -76,3 +76,49 @@ En effet, lorsque vous vous connectez de manière classique à l'espace FTP d'un
 C'est à ce niveau que ce trouve notamment par défaut le dossier `www` et le fichier `.ovhconfig` de votre hébergement web.
 
 ### Etape 3 - Utiliser la commande « scp » avec votre hébergement web :
+
+> [!success]
+>
+> Tous les exemples ci-après s'effectuent depuis le terminal de votre appareil/ordinateur **en local**. Vous ne devez donc pas être connecté en SSH dans votre terminal sur votre hébergement web.
+>
+> Si vous désirez copier du contenu vers votre hébergement web, positionnez votre utilisateur **local** suffisamment en amont des fichiers/dossiers que vous souhaitez copier vers votre hébergement web.
+>
+> Si vous désirez récupérer une copie des fichiers/dossiers présents sur votre hébergement web en local sur votre appareil/ordinateur, positionnez votre utilisateur **local** suffisamment en amont du dossier qui va récupérer la copie de vos données hébergées.
+>
+
+N'oubliez pas également de remplacer tous les paramètres généraux suivants par vos propres paramètres :
+
+- `FTP-login` : login FTP de votre hébergement web;
+- `ssh.cluster0XX.hosting.ovh.net` : changez les `XX` par le numéro du cluster où se trouve votre hébergement web. Si besoin, consultez notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) » pour retrouver cette information;
+- `/homez.XXX/FTP-main-login/` : modifiez les `XXX` par le numéro du filer et le `FTP-main-login` par les paramètres récupérés lors de l'[étape 2](#step2) du présent guide.
+- `source_folder` : nom du dossier source à copier ou dans lequel ce trouve le fichier à copier. *Si l'arboresce correspond à une succession de dossiers imbriqués, vous devrez préciser tous les noms des dossiers en les séparant par un `/`*;
+- `target_folder` : nom du dossier cible qui va recevoir le dossier ou le fichier local à copier. *Si l'arboresce correspond à une succession de dossiers imbriqués, vous devrez préciser tous les noms des dossiers en les séparant par un `/`*;
+- `file` : nom du fichier à copier à l'aide de la commande `scp`, n'oubliez pas également de préciser l'extension de ce fichier (exemples : *.html*, *.css*, *.php*, *.txt*, etc.).
+
+#### 3.1 : copier du contenu présent en local sur votre appareil vers votre hébergement web :
+
+Pour copier un seul fichier local sur votre hébergement web, utilisez la commande suivante :
+
+```ssh
+scp source_folder/file FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main-login/target_folder
+```
+
+Pour copier un dossier local ainsi que l'intégralité de son contenu sur votre hébergement web, utilisez la commande suivante :
+
+```ssh
+scp -r source_folder FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main-login/target_folder 
+```
+
+#### 3.2 : copier du contenu présent sur votre hébergement web en local sur votre appareil :
+
+Pour copier un seul fichier présent sur votre hébergement web en local sur votre appareil, utilisez la commande suivante :
+
+```ssh
+scp FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main/login/source_folder/file target_folder 
+```
+
+Pour copier un dossier présent sur votre hébergement web ainsi que l'intégralité de son contenu en local sur votre appareil, utilisez la commande suivante :
+
+```ssh
+scp -r FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main-login/source_folder target_folder
+```
