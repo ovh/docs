@@ -55,7 +55,7 @@ If your Load Balancer is processing private traffic, choose `No Public IP`.
 
 ![Network choice](images/private_network.png){.thumbnail}
 
-The interface will inform you if the private network / subnet is not compliant with the prerequisites (see [Public Cloud Networking concepts](concepts-01-public-cloud-networking-concepts/guide.en-gb.md###Network pre requisites)).
+The interface will inform you if the private network / subnet is not compliant with the prerequisites (see [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#network-prerequisites)).
 
 #### Step 5 (optional) : Define the listener(s) and the members
 
