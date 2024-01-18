@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web: utiliser le Secure Copy Protocol (SCP)"
 excerpt: "Découvrez comment utiliser la commande Secure Copy Protocol (SCP) en SSH pour copier des fichiers depuis ou vers votre hébergement web"
-updated: 2024-01-17
+updated: 2024-01-18
 ---
 
 ## Objectif
@@ -27,7 +27,7 @@ Il permet, depuis un terminal et à l'aide d'une commande linux, de copier un fi
 
 - Disposer d'un terminal compatible avec les commandes Linux et SSH (Par exemple, le *terminal* de MacOS ou l'émulateur *Ubuntu* sur Windows);
 - Être familiarisé avec les commandes Linux et SSH;
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) disposant d'un accès en SSH;
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) bénéficiant d'un accès en SSH;
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
   
 ## En pratique
@@ -65,7 +65,7 @@ Dans notre exemple :
 
 - `FTP-login` : nom d'un des utilisateurs FTP (principal ou non) de votre hébergement web;
 - `/homez.XXX` : filer sur lequel se trouve votre hébergement web;
-- `FTP-main-login` : chemin répertoire de l'espace de stockage FTP de votre hébergement web (généralement, ce répertoire est nommé de manière identique au login FTP principal de votre hébergement web).
+- `FTP-main-login` : chemin répertoire de l'espace de stockage FTP de votre hébergement web. Généralement, ce répertoire est nommé de manière identique au login FTP principal de votre hébergement web).
 
 Dans notre exemple, le chemin d'accès complet à l'espace de stockage FTP pour accéder à la racine FTP de l'hébergement web est le suivant : `/homez.XXX/FTP-main-login`.
 
@@ -73,7 +73,7 @@ Ce n'est qu'à partir d'un répertoire équivalent au répertoire `FTP-main-logi
 
 En effet, lorsque vous vous connectez de manière classique à l'espace FTP d'un hébergement web, la connection s'effectue directement en vous positionnant à l'intérieur du dossier équivalent au dossier `FTP-main-login` de notre exemple.
 
-C'est à ce niveau que ce trouve notamment par défaut le dossier `www` et le fichier `.ovhconfig` de votre hébergement web.
+C'est à ce niveau que ce trouve notamment, par défaut, le dossier `www` et le fichier `.ovhconfig` de votre hébergement web.
 
 ### Etape 3 - Utiliser la commande « scp » avec votre hébergement web :
 
@@ -90,7 +90,7 @@ N'oubliez pas également de remplacer tous les paramètres généraux suivants p
 
 - `FTP-login` : login FTP de votre hébergement web;
 - `ssh.cluster0XX.hosting.ovh.net` : changez les `XX` par le numéro du cluster où se trouve votre hébergement web. Si besoin, consultez notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) » pour retrouver cette information;
-- `/homez.XXX/FTP-main-login/` : modifiez les `XXX` par le numéro du filer et le `FTP-main-login` par les paramètres récupérés lors de l'[étape 2](#step2) du présent guide.
+- `/homez.XXX/FTP-main-login/` : modifiez les `XXX` par le numéro du filer et le `FTP-main-login` par les paramètres récupérés lors de l'[étape 2](#step2) du présent guide;
 - `source_folder` : nom du dossier source à copier ou dans lequel ce trouve le fichier à copier. *Si l'arboresce correspond à une succession de dossiers imbriqués, vous devrez préciser tous les noms des dossiers en les séparant par un `/`*;
 - `target_folder` : nom du dossier cible qui va recevoir le dossier ou le fichier local à copier. *Si l'arboresce correspond à une succession de dossiers imbriqués, vous devrez préciser tous les noms des dossiers en les séparant par un `/`*;
 - `file` : nom du fichier à copier à l'aide de la commande `scp`, n'oubliez pas également de préciser l'extension de ce fichier (exemples : *.html*, *.css*, *.php*, *.txt*, etc.).
@@ -127,9 +127,18 @@ scp -r FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main-login/source
 
 Pour des raisons de sécurité, la commande `scp` est, à date, refusée en SSH par l'infrastructure d'hébergements web.
 
-### Etape 4 - S'assurer que les fichier ont bien été copiés :
+### Etape 4 - S'assurer que le contenu a bien été copié :
 
 Pour vérifier que du contenu présent en local sur votre ordinateur a bien été copié sur votre hébergement web, vous pouvez vous « [Connecter à l'espace de stockage FTP de votre hébergement web](/pages/web_cloud/web_hosting/ftp_connection) », puis vous rendre dans le répertoire cible où le contenu est censé être copié.
 
 Pour vérifier que du contenu présent sur votre hébergement web a bien été copié en local sur votre ordinateur, rendez-vous dans le répertoire cible sur votre appareil/ordinateur, puis vérifier que le contenu censé être copié y est présent.
 
+## Aller plus loin <a name="go-further"></a>
+
+[Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+[Se connecter à l'espace de stockage FTP de votre hébergement web](/pages/web_cloud/web_hosting/ftp_connection)
+ 
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+ 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
