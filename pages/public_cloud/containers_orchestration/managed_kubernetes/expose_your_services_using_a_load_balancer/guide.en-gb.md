@@ -81,7 +81,7 @@ Here's a simple example of how to use the Public Cloud Load Balancer
 3. Create a Namespace and a Deployment resource using the following command:
 ```shell
 kunectl create Namespace test-lb-ns
-kubectl create Deployment test-lb --image=nginx -n=test-lb-ns
+kubectl create deployment test-lb --image=nginx -n=test-lb-ns
 ```
 4. Copy/Paste the following code on a file named `test-lb-service.yaml`
 ```yaml
