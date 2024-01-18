@@ -126,3 +126,10 @@ scp -r FTP-login@ssh.cluster0XX.hosting.ovh.net:/homez.XXX/FTP-main-login/source
 #### 3.3 : copier du contenu présent sur votre hébergement web vers un autre hébergement web :
 
 Pour des raisons de sécurité, la commande `scp` est, à date, refusée en SSH par l'infrastructure d'hébergements web.
+
+### Etape 4 - S'assurer que les fichier ont bien été copiés :
+
+Pour vérifier que du contenu présent en local sur votre ordinateur a bien été copié sur votre hébergement web, vous pouvez vous « [Connecter à l'espace de stockage FTP de votre hébergement web](/pages/web_cloud/web_hosting/ftp_connection) », puis vous rendre dans le répertoire cible où le contenu est censé être copié.
+
+Pour vérifier que du contenu présent sur votre hébergement web a bien été copié en local sur votre ordinateur, rendez-vous dans le répertoire cible sur votre appareil/ordinateur, puis vérifier que le contenu censé être copié y est présent.
+
