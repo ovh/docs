@@ -76,12 +76,12 @@ During the beta phase, if you want a Kubernetes load balancer service to be depl
 
 Here's a simple example of how to use the Public Cloud Load Balancer
 
-1. Deployment of a functional Managed Kubernetes (MKS) cluster using the [OVHcloud manager](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster?id=kb_article_view&sysparm_article=KB0037221),   [Terraform](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster-with-terraform?id=kb_article_view&sysparm_article=KB0049684), [Pulimi](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster-with-pulumi?id=kb_article_view&sysparm_article=KB0059712) or [APIs](https://api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube).
+1. Deployment of a functional Managed Kubernetes (MKS) cluster using the [OVHcloud manager](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster?id=kb_article_view&sysparm_article=KB0037221), [Terraform](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster-with-terraform?id=kb_article_view&sysparm_article=KB0049684), [Pulumi](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-create-cluster-with-pulumi?id=kb_article_view&sysparm_article=KB0059712) or [APIs](https://api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube).
 2. Retrieve the kubeconfig file needed to use kubectl tool (via OVHcloud manager, Terraform, Pulumi or API). You can use [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049658)
-3. Create a 'deployment' ressource using the following command:
+3. Create a Namespace and a Deployment resource using the following command:
 ```shell
-kunectl create Namespace test-lb-ns
-kubectl create Deployment test-lb --image=nginx -n=test-lb-ns
+kunectl create namespace test-lb-ns
+kubectl create deployment test-lb --image=nginx -n=test-lb-ns
 ```
 4. Copy/Paste the following code on a file named `test-lb-service.yaml`
 ```yaml
