@@ -364,7 +364,7 @@ $ kubectl get service my-small-lb
 NAME                 TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)        AGE
 test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP   12m
 ```
-- Create a new service  with the new expected flavor:
+- Create a new service with the new expected flavor:
   ```yaml
   apiVersion: v1
   kind: Service
