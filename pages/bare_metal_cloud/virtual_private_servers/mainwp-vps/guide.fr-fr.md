@@ -6,7 +6,8 @@ updated: 2024-01-19
 
 ## Objectif
 
-Administrer plusieurs sites web est une entreprise complexe qui prend du temps. Si vous gérez plusieurs sites web WordPress, il est possible que vous rencontriez des problèmes concernant la maintenance technique des sites, les mises à jour de plugins et de thèmes ou encore la gestion des identifiants de connexion. Le plugin MainWP pour WordPress est une solution efficace pour administrer efficacement plusieurs site web WordPress depuis un seul et même dashboard. Il permet entre autres de : 
+Administrer plusieurs sites web est une entreprise complexe qui prend du temps. Si vous gérez plusieurs sites web WordPress, il est possible que vous rencontriez des problèmes concernant la maintenance technique des sites, les mises à jour de plugins et de thèmes ou encore la gestion des identifiants de connexion. Le plugin MainWP pour WordPress est une solution efficace pour administrer efficacement plusieurs site web WordPress depuis un seul et même dashboard. Il permet entre autres de :
+
 - Contrôler l'intégralité de ses sites web depuis un seul dashboard
 - Mettre à jour en un clic les composants techniques
 - [Gérer ses clients](/pages/web_cloud/web_hosting/mainwp-client-management/)
@@ -39,6 +40,7 @@ Dirigez-vous dans le menu principal de WordPress, à gauche de l'écran, et cliq
 ![mainWP VPS](images/add_new_plugin.png){.thumbnail}
 
 La liste des plugins WordPress les plus populaires s'affiche. En haut à droite, dans la barre de recherche, tapez « MainWP » puis validez. Parmi les résultats, plusieurs plugins proposés par « MainWP » s'affichent. Installez les deux plugins suivants :
+
 - MainWP Dashboard
 - MainWP Child
 
@@ -65,6 +67,7 @@ Dans le menu principal à gauche, cliquez sur `Sites`{.action}, puis sur `Add Ne
 ![mainWP VPS](images/add_new_site.png){.thumbnail}
 
 Renseignez l'URL du site enfant que voulez connecter au dashboard MainWP. Juste en dessous, sélectionnez le bouton pour indiquer que vous avez bien installé et activé le plugin MainWP Child sur votre site enfant. Les deux nouveaux champs suivants s'affichent :
+
 - Administrator username (nom d'administrateur) : rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
 - Site title (titre du site) : renseignez la valeur que vous souhaitez. Si vous connectez de nombreux sites web enfants, pensez à renseigner un titre de site explicite.
 
@@ -90,6 +93,7 @@ Dans notre exemple, le site web « mon site » apparait bien dans la liste des s
 ### Gérer les mises à jour logiciels depuis le dashboard MainWP
 
 Si vous utilisez plusieurs plugins et thèmes pour vos sites web, il se peut que vous rencontriez des erreurs à cause des différentes versions. Grâce au dashboard MainWP, vous pouvez gérer à un seul endroit les mises à jour de :
+
 - WordPress
 - Plugins
 - Thèmes
@@ -117,6 +121,7 @@ Effectuez la même opération pour mettre à jour WordPress, vos plugins ou vos 
 MainWP propose des fonctionnalités natives, telles que la gestion des mises à jour logiciels ou encore la [gestion des clients](/pages/web_cloud/web_hosting/mainwp-client-management/). Cependant, MainWP devient encore plus puissant grâce à ses nombreuses extensions, proposant un large éventail de fonctionnalités.
 
 Il existe différentes [catégories d'extensions](https://mainwp.com/mainwp-extensions/), comme Administrative, Backups, Analytics, Security etc. Pour chacune des catégories, il existe trois différents types d'extensions :
+
 - Free : extensions gratuites développées par MainWP
 - Pro : extensions premium développées par MainWP
 - .Org : extensions gratuites développées par un éditeur tiers

@@ -49,6 +49,7 @@ Cliquez sur `Show Report`{.action} pour visualiser le rapport de sécurité.
 ![mainWP security](images/security_report_details.png){.thumbnail}
 
 Le rapport du scan de sécurité fournit de nombreuses informations importantes concernant la sécurité de votre site web, comme :
+
 - Présence de virus et de logiciels malveillants
 - Détection d'anomalies
 - Liens dangereux
@@ -56,6 +57,23 @@ Le rapport du scan de sécurité fournit de nombreuses informations importantes 
 - Etc.
 
 Pensez à effectuer régulièrement des scans de sécurité. Avec Sucuri, il est possible d'activer un rappel. En bas de la liste de vos rapports de sécurité, cliquez sur la liste déroulante à droite de `Remind me if I don't scan my child site for`{.action}. Par exemple, si vous choisissez `1 week`{.action}, Sucuri vous rappellera chaque semaine d'effectuer un scan de sécurité.
+
+### Identifier et résoudre les problèmes de sécurité
+
+Dans le menu principal de MainWP, cliquez sur `Sites`{.action} puis sélectionnez le site enfant de votre choix. En haut de l'écran, cliquez sur l'onglet `Security`{.action}. Sur le dashboard qui s'affiche, vous pouvez voir si des problèmes de sécurité ont été identifiés par Sucuri.
+
+![mainWP security](images/security_overview.png){.thumbnail}
+
+Dans notre exemple, Sucuri nous indique que trois problèmes de sécurité ont été identifiés. Cliquez sur `Fix all issues`{.action} pour résoudre tous les problèmes de sécurité. Si vous voulez en savoir plus sur les problèmes identifiés, cliquez sur l'onglet `Security`{.action} en haut de l'interface. La liste des problèmes de sécurité s'affiche.
+
+![mainWP security](images/security_list.png){.thumbnail}
+
+Pour résoudre un problème, identifiez la ligne correspondante et cliquez sur le bouton `Fix`{.action} à droite de la ligne.
+
+![mainWP security](images/security_unfix.png){.thumbnail}
+
+Une fois le problème résolu, vous pouvez annuler les modifications apportées en cliquant sur le bouton `Unfix`{.action}.
+
 
 ## Aller plus loin
 

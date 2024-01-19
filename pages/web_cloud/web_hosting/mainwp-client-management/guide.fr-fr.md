@@ -18,6 +18,7 @@ La fidélisation de vos clients est primordiale pour le développement de votre 
 ## En pratique
 
 Dans le menu principal de MainWP, cliquez sur `Clients`{.action}. Sur l'écran qui s'affiche, trois onglets sont présents :
+
 - Clients : affiche la liste de tous vos clients
 - Add Client : permet de créer de nouveaux clients
 - Client Fields : permet de créer de nouveaux champs relatifs à vos clients
@@ -47,6 +48,7 @@ Dans le tableau représentant vos clients, identifiez le client de votre choix e
 ![mainWPClientMngt](images/more_client.png){.thumbnail}
 
 Vous pouvez :
+
 - Editer les informations du client (`Edit`{.action})
 - Supprimer le client (`Delete`{.action})
 - Voir les sites web concernés par votre client (`View Sites`{.action})
@@ -58,11 +60,11 @@ Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Clien
 
 ![mainWPClientMngt](images/new_field_client.png){.thumbnail}
 
-Dans notre exemple, nous créons un nouveau champ « fidélité », ainsi qu'une description associée. Pour confirmer la création du nouveau champ, cliquez sur `Save Field`{.action}. Maintenant, lors de la création d'un nouveau client, le nouveau champ « fidélité » sera disponible.
+Dans notre exemple, nous créons un nouveau champ « loyalty » (fidélité), ainsi qu'une description associée. Pour confirmer la création du nouveau champ, cliquez sur `Save Field`{.action}. Maintenant, lors de la création d'un nouveau client, le nouveau champ « loyalty » sera disponible.
 
 ![mainWPClientMngt](images/new_field_add_client.png){.thumbnail}
 
-Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients. Cliquez sur le client que vous venez de créer. Le nouveau champ fidélité et la valeur correspondante s'affiche.
+Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients. Cliquez sur le client que vous venez de créer. Le nouveau champ « loyalty » et la valeur correspondante s'affiche.
 
 ![mainWPClientMngt](images/details_client.png){.thumbnail}
 

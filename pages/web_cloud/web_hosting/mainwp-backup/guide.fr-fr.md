@@ -7,6 +7,7 @@ updated: 2024-01-19
 ## Objectif
 
 La sauvegarde d'un site web est une pratique cruciale pour la gestion de votre entreprise. Elle offre plusieurs avantages :
+
 - Sécurité des données : les sauvegardes régulières garantissent que les données de votre site sont protégées en cas de cyberattaque, de défaillance technique ou d'erreur humaine.
 - Protection contre des erreurs de mise à jour : une sauvegarde effectuée avant la mise à jour de WordPress, d'un plugin ou d'un thème permet de revenir en arrière en cas d'erreur ou de conflit de versions lors de la mise à jour.
 - Restauration rapide : en cas d'erreur technique, la sauvegarde permet de revenir à une version précédente pour proposer à vos clients un site web fonctionnel et une continuité des opérations commerciales.
