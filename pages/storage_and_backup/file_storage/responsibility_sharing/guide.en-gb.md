@@ -63,8 +63,8 @@ This shared model can help relieve the customer’s operational burden.
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage access to the OVHcloud Control Panel and the storage service using user interface, API, ACL | RA | I |
-| Managing OVHcloud teams’ physical access to infrastructures |  | RA |
-| Managing OVHcloud teams’ logical access to infrastructures | I | RA |
+| Manage OVHcloud teams’ physical access to infrastructures |  | RA |
+| Manage OVHcloud teams’ logical access to infrastructures | I | RA |
 
 
 ##### **3.1.3. Monitoring**
