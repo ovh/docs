@@ -431,7 +431,7 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 
 | Ressource                                                          | Naming                                                                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Public Cloud Load Balancer                                         | mks_ressource_$mks_cluster_shortname_$namespace_$mks_service_name(name of the service in the manifest)_$mks-service-id |
+| Public Cloud Load Balancer                                         | mks_ressource_$mks_cluster_shortname_$namespace_$k8s_service_name_$mks-service-id |
 | Listener                                                           | listener_mks_ressource_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
 | Pool                                                               | pool_mks_ressource_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
 | Health-monitor                                                     | monitor_mks_ressource_$mks_cluster_shortname_$namespace_$service-name                                                  |
