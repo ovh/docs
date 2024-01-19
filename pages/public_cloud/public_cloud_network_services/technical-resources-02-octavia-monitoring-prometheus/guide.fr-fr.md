@@ -1,5 +1,5 @@
 ---
-title: "Mettre en place un monitoring de Octavia Load Balancer avec Prometheus (EN)"
+title: "Mettre en place un monitoring du Load Balancer Public Cloud avec Prometheus (EN)"
 excerpt: "Découvrez les différentes options disponibles pour monitorer votre Load Balancer Octavia"
 updated: 2023-12-22
 ---

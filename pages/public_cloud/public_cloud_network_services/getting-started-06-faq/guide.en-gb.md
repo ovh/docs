@@ -23,9 +23,9 @@ As of today, other setups (including cross-universe usage with baremetal servers
 
 A beta is ongoing to provide integration with Managed Kubernetes Service. Please reach out on the [Discord community](https://discord.gg/ovhcloud) on the channel **#beta-lb-for-k8s**
 
-### I want to monitor Octavia Load Balancer. Is it possible to enable [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatically on Load Balancer?
+### I want to monitor my Public Cloud Load Balancer. Is it possible to enable [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatically on Load Balancer?
 
-Yes this feature is available since we rolled out Zed version in June 2023.
+Yes this feature is available since we rolled out Zed version in June 2023. Check this [page](../technical-resources-02-octavia-monitoring-prometheus/guide.en-gb.md)
 
 ### How is the redundancy implemented for each type of service plan? Are the Amphoras configured in a ACT/STBY mode?
 
@@ -39,7 +39,7 @@ No. A new type of IP has been introduced for this purpose, Floating IP. It's mor
 
 Yes, multiple listeners (frontends) and pool (backends) can be configured. There is only a limitation of a single Floating IP per Load Balancer.
 
-### What's happening if our Octavia Load Balancer receives more requests than indicated? Will the price increase? Will I be notified?
+### What's happening if our Public Cloud Load Balancer receives more requests than indicated? Will the price increase? Will I be notified?
 
 First of all, the values shown are only a rough estimate of the Load Balancer's capabilities. The price will not increase. Pricing is linked to the flavors (small, medium, large) and we cannot change the flavor at this time. This is up to customers' orchestration services. 
 
