@@ -28,7 +28,7 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 > [!primary]
 > **Résiliation d'un nom de domaine**
 >
-> Suite à votre résiliation et à la fin de l'abonnement en cours, votre nom de domaine générique (.com, .org. net, etc.) vous reste « réservé » pendant une période dite « de « *grâce* » (5 jours) puis pendant celle de « *rédemption* » (35 à 40 jours supplémentaires). Cela signifie que vous seul serez en mesure de le renouveler pendant ces périodes.
+> Suite à votre résiliation et à la fin de l'abonnement en cours, votre nom de domaine générique (.com, .org. net, etc.) vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Cela signifie que vous seul serez en mesure de le renouveler pendant ces périodes. Pour plus de détails, consultez la [FAQ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#faq) en bas de notre guide « [Comment renouveler mes services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) ».
 >
 
 ## Prérequis
@@ -39,7 +39,9 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 
 ## En pratique
 
-La procédure de résiliation est identique pour la majorité des services OVHcloud. Des cas particuliers existent néanmoins et sont détaillés [plus bas](#specific-cases) dans ce guide.
+La procédure de résiliation est identique pour la majorité des services OVHcloud.
+
+Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#specific-cases) dans ce guide.
 
 ### Comment résilier votre abonnement ? <a name="terminate"></a>
 
@@ -181,7 +183,7 @@ L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page �
 >> Vérifiez également que les conditions suivantes sont bien remplies :
 >>
 >> - Vous devez être le « contact administrateur » du service. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
->> - Le service est en **renouvellement automatique**. Si votre service est en [renouvellement manuel](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal), il sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
+>> - Le service est en **renouvellement automatique**. Si votre service est en [renouvellement manuel](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), il sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
 >> - Le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture. Vérifiez que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
 >>
 >> Si vous ne parvenez toujours pas à résilier votre service, contactez nos équipes du support en ouvrant un ticket depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_cases_requests).
