@@ -151,7 +151,9 @@ This shared model can help relieve the customer’s operational burden.
 | Delete storage services (with API or user interface on user interface)  | RA | I |
 | Decommission of the client service following contract termination  | I | RA |
 
-#### 5.1. Data destruction
+#### 5.2. Data destruction
+
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Operate a secure data erasure on storage media |  | RA |
 
