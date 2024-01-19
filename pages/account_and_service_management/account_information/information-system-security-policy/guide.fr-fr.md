@@ -1,6 +1,6 @@
 ---
 title: "Politique de sécurité du système d'information (PSSI)"
-updated: 2022-07-21
+updated: 2023-09-29
 ---
 
 ## Objectifs
@@ -114,3 +114,33 @@ L'engagement d'OVHcloud vis à vis des clients et partenaires est avant tout por
 OVHcloud respecte les lois et règlementations applicables dans le cadre de la fourniture des services dans chaque pays. Aussi, OVHcloud s'engage contractuellement à respecter certaines règlementations sectorielles spécifiques, par exemple pour les systèmes d'information de santé ou financiers.
 
 Au-delà des liens contractuels, OVHcloud s'engage auprès de son écosystème, ses clients et prospects en s’assurant de la clarté et de la transparence des messages en toutes circonstances.
+
+### Implémentation de la sécurité 
+01-Gouvernance de la sécurité
+02-Modèle de sécurité
+03-Fonctionnalité sécurité pour les clients
+04-Protection des données
+05-Conformité en sécurité
+06-Gestion des risques de sécurité
+07-Ecosystème de la sécurité
+08-Sécurité pour les clients
+09-Réputation technique à l'externe
+10-Audit et contrôle
+11-Gestion des actifs
+12-Ressources humaines, sensibilitation et formation
+13-Identification, authentification et gestion des accès
+14-Utilisateur final du système d'information
+15-Chaine d'approvisionnement et gestion des fournisseurs de service
+16-Gestion de projet
+17-Gestion des changements
+18-Sécurité du continuous delivery (développements et environnements de développement).
+19-Cryptographie
+20-Configuration et durcissement
+21-Sécurité réseau
+22-Opérations et maintien en condition de sécurité
+23-Journalisation, surveillance et détection
+24-Gestion des vulnérabilités et des correctifs
+25-Gestion des incidents de sécurité
+26-Sécurité physique
+27-Sécurité du matériel
+28-Résilience
