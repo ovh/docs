@@ -46,10 +46,10 @@ Créez une nouvelle paire de clés SSH sur votre poste de travail, tel que décr
 
 ### Étape 3 - Accéder à votre serveur en mode rescue et remplacer la clé
 
-Suivez les étapes du guide sur le mode rescue pour vous connecter à votre serveur et monter vos partitions:
+Suivez les étapes de nos guides sur le mode rescue pour vous connecter à votre serveur et monter vos partitions :
 
-- [Mode rescue serveur dédié](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
-- [VPS mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
+- [Utiliser le mode rescue sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+- [Utiliser le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
 Lorsque vous avez accès à vos fichiers, ouvrez le fichier « authorized_keys » concerné dans un éditeur de texte. Ce fichier stocke les clés SSH et se trouve dans le dossier `home` de l'utilisateur connecté à votre serveur. (Remplacez « USER_NAME » par votre nom d'utilisateur.)
 
@@ -76,8 +76,8 @@ Vous avez maintenant accès au serveur avec votre nouvelle paire de clés SSH.
 
 [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
-[Mode rescue serveur dédié](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+[Utiliser le mode rescue sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-[VPS mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
+[Utiliser le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
