@@ -35,8 +35,11 @@ Then, those private IPs are dynamically allocated by the vRack Services automati
 >
 > As an helper, a summary of the configuration is available with the VrackServices.productStatus attribut.
 It answers the question `does my current configuration makes the Managed Services to be reachable from the vRack ?`
+> 
 > ACTIVE - yes, it does
+> 
 > DRAFT - no, either a Service Endpoint needs to be created or a vRack needs to be associated to the vRack Services
+> 
 > SUSPENDED - no, product is in Agora `suspension` state
 > 
 
