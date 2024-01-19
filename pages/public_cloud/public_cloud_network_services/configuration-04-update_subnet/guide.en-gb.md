@@ -1,13 +1,13 @@
 ---
-title: Update a subnet options
-excerpt: Find out how to update the options of an existing subnet
+title: Update a subnet properties
+excerpt: Find out how to update the properties of an existing subnet
 updated: 2024-01-19
 ---
 
 ## Objective
 
-This page explains how to update the options of an existing subnet. This can be needed if you want to comply with the pre requisites to be able to use the Public Cloud Gateway : have a gateway IP defined in your subnet.
-For this example, we will use a private network and a subnet with the following attributes :
+This page explains how to update the properties of an existing subnet. This can be needed if you want to comply with the pre requisites to be able to use the Public Cloud Gateway : have a gateway IP defined in your subnet.
+For this example, we will use a private network and a subnet with the following properties :
 - CIDR 10.1.0.0/16
 - DHCP enabled with allocation pool on the global range
 - No gateway IP 
@@ -22,11 +22,11 @@ You shall have created a private network and a subnet as explained in that [guid
 ## Instructions
 
 ### OVHCloud Control Panel
-It is currently not possible to update a subnet through this interface
+It is currently not possible to update a subnet through this interface but you can use our Horizon interface instead (cf. bellow). 
 
 ### Horizon
 - Connect to Horizon & choose the region where the subnet is defined as explained in that [guide](../../compute/introducing_horizon/guide.en-gb.md)
-- Click on `Network > Networks`. The page will display the list of network available which contains OVHCloud managed network for public connectivity (`Ext-Net`) as well as your network.
+- Click on `Project > Network > Networks`. The page will display the list of network available which contains OVHCloud managed network for public connectivity (`Ext-Net`) as well as your network.
 ![network list](images/network_list.png){thumbnail}
 - In that list, click on your network name ("private_network_GRA11" in this example), the network detail page is displayed.
   
