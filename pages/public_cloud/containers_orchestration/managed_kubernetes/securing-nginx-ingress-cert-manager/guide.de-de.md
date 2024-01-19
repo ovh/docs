@@ -431,11 +431,11 @@ Describe the certificate again and wait until you see "Certificate issued succes
 
 ### Certificate renewal
 
-Cert-manager is a very powerful tool that manage certificate creation and also automatic certificate renewal.
+Cert-manager is a very powerful tool that manages certificate creation and also automatic certificate renewal.
 
-Once an X.509 certificate has been issued, cert-manager will calculate the renewal time for the `Certificate` and will set Certificate's status.`RenewalTime` to the time when the renewal will be attempted.
+Once an X.509 certificate has been issued, cert-manager will calculate the renewal time for the `Certificate` and will set the Certificate's `RenewalTime` status to the time when the renewal is attempted.
 
-You can check you're certificate renewal:
+You can check your certificate renewal:
 
 ```console
 $ kubectl get certificate -o yaml | grep renew
