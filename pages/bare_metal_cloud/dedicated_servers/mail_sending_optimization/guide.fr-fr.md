@@ -6,9 +6,9 @@ updated: 2024-01-19
 
 ## Objectif
 
-La politique anti-spam globale est stricte. Pour fluidifier les envois d'e-mails et que les destinataires les reçoivent sans subir un blocage des outils de sécurité, des paramétrages sont nécessaires pour authentifier vos messages et leur contenu sur les serveurs destinataires qui les traites.
+De manière générale, les politiques anti-spam sont strictes. Afin de fluidifier les envois d'e-mails et pour que les destinataires les reçoivent sans subir un blocage des outils de sécurité, des paramétrages sont nécessaires pour authentifier vos messages et leur contenu sur les serveurs destinataires qui les traitent.
 
-**Découvrez quelques conseils pour optimiser l'envoi de vos e-mails.**
+**Ce guide vous donne quelques conseils pour optimiser l'envoi de vos e-mails.**
 
 > [!warning]
 >
@@ -43,19 +43,19 @@ Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public
 > - `?` : neutre
 >
 
-Vous pouvez bien entendu aller plus loin, en configurant l'enregistrement SPF pour un nom de domaine spécifique ou en utilisant l'adresse IPv6. Pour bien comprendre l'enregistrement SPF, consultez notre guide sur comment [configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf).
+Vous pouvez bien entendu aller plus loin, en configurant l'enregistrement SPF pour un nom de domaine spécifique ou en utilisant l'adresse IPv6. Pour bien comprendre l'enregistrement SPF, consultez notre guide sur la [configuration d'un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf).
 
 ### Configurer l'enregistrement DKIM
 
-L'enregistrement DKIM (DomainKeys Identified Mail) permet de signer les e-mails pour éviter l'usurpation de celles-ci. Cette signature fonctionne sur le principe de clé privée / clé publique, permettant d'authentifier le domaine expéditeur.
+L'enregistrement DKIM (DomainKeys Identified Mail) permet de signer les e-mails pour éviter l'usurpation de ceux-ci. Cette signature fonctionne sur le principe d'un couple clé privée / clé publique, permettant d'authentifier le domaine expéditeur.
 
-Pour plus d'information, consultez notre guide [Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim).
+Pour plus d'informations, consultez notre guide sur la [configuration d'un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 ### Configurer l'enregistrement DMARC
 
-L'enregistrement DMARC (Domain-based Message Authentication, Reporting and Conformance) est une norme de sécurité qui s'appuie sur les 2 méthodes de sécurité e-mail SPF et DKIM. Les arguments inscrits dans l'enregistrement DMARC orientent le destinataire sur la manière de traiter les e-mails selon le résultat SPF et/ou DKIM. Une adresse e-mail peut être définie dans l'enregistrement DMARC, celle-ci recevra un rapport sur les échecs d'authentification.
+L'enregistrement DMARC (Domain-based Message Authentication, Reporting and Conformance) est une norme de sécurité qui s'appuie sur les 2 méthodes de sécurité e-mail SPF et DKIM. Les arguments inscrits dans l'enregistrement DMARC orientent le destinataire sur la manière de traiter les e-mails, selon le résultat SPF et/ou DKIM. Une adresse e-mail peut être définie dans l'enregistrement DMARC, celle-ci recevra un rapport sur les échecs d'authentification.
 
-Pour plus d'information, consultez notre guide [Configurer un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
+Pour plus d'informations, consultez notre guide sur la [configuration d'un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
 ### Configurer le *reverse IP* <a name="reverseip"></a>
 
@@ -63,7 +63,7 @@ Toujours dans le but d'optimiser l'envoi et de réduire les risques de blocage d
 
 Vous devez tout d'abord créer un enregistrement A dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
 
-Si vos serveurs DNS sont gérés par OVHcloud, veuillez consulter notre guide sur [comment éditer une zone DNS OVHcloud via votre espace client](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
+Si vos serveurs DNS sont gérés par OVHcloud, consultez notre guide sur [l'édition d'une zone DNS OVHcloud via votre espace client](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
@@ -140,7 +140,7 @@ Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://sup
 
 #### Vers un serveur Gmail
 
-L'ajout d'enregistrements spécifiques , tel qu'un enregistrement DMARC (Domain-based Message Authentication, Reporting, and Conformance) ou DKIM (DomainKeys Identified Mail) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Consultez nos guides mentionnés [au bas de cette pas](#go-further) pour les configurer.
+L'ajout d'enregistrements spécifiques, tel qu'un enregistrement DMARC (Domain-based Message Authentication, Reporting, and Conformance) ou DKIM (DomainKeys Identified Mail) peut faciliter la réception des e-mails si votre destinataire est chez Gail. Consultez nos guides mentionnés [en bas de cette page](#go-further) pour les configurer.
 
 ### Vérifier vos informations
 
