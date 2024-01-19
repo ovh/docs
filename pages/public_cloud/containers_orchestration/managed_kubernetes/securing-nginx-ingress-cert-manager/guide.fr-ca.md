@@ -1,7 +1,7 @@
 ---
 title: Secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes'
-updated: 2022-06-27
+updated: 2024-01-18
 ---
 
 ## Objective
@@ -145,17 +145,16 @@ The install process will begin and a new `ingress-nginx` namespace will be creat
 
 ```console
 $ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
-
 NAME: ingress-nginx
-LAST DEPLOYED: Mon Jun 27 09:53:25 2022
+LAST DEPLOYED: Thu Jan 18 15:20:47 2024
 NAMESPACE: ingress-nginx
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
 The ingress-nginx controller has been installed.
-It may take a few minutes for the LoadBalancer IP to be available.
-You can watch the status by running 'kubectl --namespace ingress-nginx get services -o wide -w ingress-nginx-controller'
+It may take a few minutes for the load balancer IP to be available.
+You can watch the status by running 'kubectl get service --namespace ingress-nginx ingress-nginx-controller --output wide --watch'
 
 An example Ingress that makes use of the controller:
   apiVersion: networking.k8s.io/v1
@@ -163,13 +162,13 @@ An example Ingress that makes use of the controller:
   metadata:
     name: example
     namespace: foo
+apiVersion: cert-manager.io/v1
   spec:
     ingressClassName: nginx
     rules:
       - host: www.example.com
         http:
           paths:
-apiVersion: networking.k8s.io/v1
             - pathType: Prefix
               backend:
                 service:
@@ -267,9 +266,12 @@ spec:
 
 And deploy it:
 
-```
+```console
 kubectl apply -f issuer.yaml
 ```
+
+To certificate a resource, the Ingress in our case, we will use annotations.
+Thanks to that, Cert-manager will create the `Certificate` resource that represents a human readable definition of a certificate request. Cert-manager uses this input to generate a private key and `CertificateRequest` resource in order to obtain a signed certificate from an `Issuer` or `ClusterIssuer`. The signed certificate and private key are then stored in the specified `Secret` resource.
 
 At this step, you need to deploy an Ingress resource and configure it to use the SSL/TLS terminaison.
 
@@ -280,15 +282,15 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: "letsencrypt-staging"
   name: ingress
   namespace: default
 spec:
+  ingressClassName: nginx
   tls:
     - hosts:
         - [YOUR_DN]
-      secretName: hello-world-tls
+      secretName: hello-world-tls # < cert-manager will store the created certificate in this secret.
   rules:
   - http:
       paths:
@@ -364,7 +366,7 @@ Annotations:  cert-manager.io/certificate-name: hello-world-tls
 API Version:  cert-manager.io/v1
 Kind:         CertificateRequest
 Metadata:
-  Creation Timestamp:  2022-06-27T11:14:40Z
+  Creation Timestamp:  2024-01-18T14:34:41Z
   Generate Name:       hello-world-tls-
   Generation:          1
   ...
@@ -374,7 +376,9 @@ Events:
   Normal  cert-manager.io  18m   cert-manager-certificaterequests-approver     Certificate request has been approved by cert-manager.io
   Normal  OrderCreated     18m   cert-manager-certificaterequests-issuer-acme  Created Order resource default/hello-world-tls-4fzl2-2471308949
   Normal  OrderPending     18m   cert-manager-certificaterequests-issuer-acme  Waiting on certificate issuance from order default/hello-world-tls-4fzl2-2471308949: ""
+```
 
+```console
 $ kubectl describe order
 Name:         hello-world-tls-4fzl2-2471308949
 Namespace:    default
@@ -385,14 +389,16 @@ Annotations:  cert-manager.io/certificate-name: hello-world-tls
 API Version:  acme.cert-manager.io/v1
 Kind:         Order
 Metadata:
-  Creation Timestamp:  2022-06-27T11:14:40Z
+  Creation Timestamp:  2024-01-18T14:34:41Z
   Generation:          1
   ...
 Events:
   Type    Reason   Age   From                 Message
   ----    ------   ----  ----                 -------
   Normal  Created  16m   cert-manager-orders  Created Challenge resource "hello-world-tls-4fzl2-2471308949-3172376200" for domain "example.com"
+```
 
+```console
 $ kubectl describe challenge
 Name:         hello-world-tls-4fzl2-2471308949-3172376200
 Namespace:    default
@@ -401,7 +407,7 @@ Annotations:  <none>
 API Version:  acme.cert-manager.io/v1
 Kind:         Challenge
 Metadata:
-  Creation Timestamp:  2022-06-27T11:14:41Z
+  Creation Timestamp:  2024-01-18T14:34:42Z
   Finalizers:
     finalizer.acme.cert-manager.io
   Generation:  1
@@ -423,8 +429,21 @@ dig +short [YOUR_DN]
 
 Describe the certificate again and wait until you see "Certificate issued successfully" when you describe the certificate.
 
+### Certificate renewal
+
+Cert-manager is a very powerful tool that manages certificate creation and also automatic certificate renewal.
+
+Once an X.509 certificate has been issued, cert-manager will calculate the renewal time for the `Certificate` and will set the Certificate's `RenewalTime` status to the time when the renewal is attempted.
+
+You can check your certificate renewal:
+
+```console
+$ kubectl get certificate -o yaml | grep renew
+    renewalTime: "2024-03-18T14:05:35Z"
+```
+
 ## Go further
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/>.
+- Join our community of users on <https://community.ovh.com/en/>.
