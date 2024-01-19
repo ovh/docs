@@ -113,7 +113,7 @@ Le message de confirmation suivant s'affiche, indiquant les sites sur lesquels l
 
 ![mainWP](images/update_confirmation_message.png){.thumbnail}
 
-Dans notre exemple, les thèmes sélectionnés seront mis à jour pour le site « mon site ». Cliquez sur `Yes, proceed`{.action} pour confirmer. La fenêtre de progression s'affiche et disparaît lorsque les mises à jour sont terminées.
+Dans notre exemple, les thèmes sélectionnés seront mis à jour pour les sites « www.example.fr », « www.example2.ovh », « blog 1 », « blog 2 » et « blog 3 ». Cliquez sur `Yes, proceed`{.action} pour confirmer. La fenêtre de progression s'affiche et disparaît lorsque les mises à jour sont terminées.
 
 Effectuez la même opération pour mettre à jour WordPress, vos plugins ou vos traductions.
 
