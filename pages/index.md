@@ -603,6 +603,7 @@
             + [L3 services SNAT configuration](public_cloud/public_cloud_network_services/configuration-01-snat-configuration)
             + [Configuring IPv6 on a Public Cloud instance](public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
             + [Changing the MTU size for an existing network using OpenStack CLI/API](public_cloud/public_cloud_network_services/configuration-03-change-mtu-size)
+            + [Update a subnet options](public_cloud/public_cloud_network_services/configuration-04-update_subnet)
         + [Technical resources](public-cloud-network-technical-resources)
             + [Deploying a Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-01-using-lbaas-in-openstack-environment)
             + [Known limits](public_cloud/public_cloud_network_services/known-limits)
