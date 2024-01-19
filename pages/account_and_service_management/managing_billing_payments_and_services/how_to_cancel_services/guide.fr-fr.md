@@ -1,7 +1,7 @@
 ---
 title: Comment résilier mes services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
-updated: 2024-01-17
+updated: 2024-01-19
 ---
 
 ## Objectif
@@ -180,7 +180,7 @@ L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page �
 >> Si vous ne parvenez pas à résilier un service (le bouton `Résilier`{.action} n'est pas proposé), celui-ci peut faire partie des cas particuliers détaillés [plus haut dans ce guide](#specific-cases).
 >> Vérifiez également que les conditions suivantes sont bien remplies :
 >>
->> - Vous devez être le « contact administrateur » du service. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition)).
+>> - Vous devez être le « contact administrateur » du service. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
 >> - Le service est en **renouvellement automatique**. Si votre service est en [renouvellement manuel](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal), il sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
 >> - Le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture. Vérifiez que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
 >>
