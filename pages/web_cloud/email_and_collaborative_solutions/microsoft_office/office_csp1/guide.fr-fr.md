@@ -1,7 +1,7 @@
 ---
 title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
 excerpt: Découvrez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
-updated: 2021-09-09
+updated: 2024-01-19
 ---
 
 ## Objectif 
@@ -93,6 +93,8 @@ Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le 
 
 Pour résilier votre groupe de licence Microsoft Office 365 CSP1, cliquez sur votre nom en haut à droite de l'espace client OVHcloud puis sur le bouton `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du groupe de licences à résilier, puis sur `Résilier`{.action}.<br>
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
+Si vous ne parvenez pas à résilier votre groupe de licences, contactez nos équipes du support en ouvrant un ticket depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
 > [!primary]
 > Les consommations du mois en cours seront facturées à la fin de ce dernier.
