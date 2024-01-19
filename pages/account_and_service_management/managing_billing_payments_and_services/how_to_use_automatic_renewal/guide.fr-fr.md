@@ -1,7 +1,7 @@
 ---
 title: Comment renouveler mes services OVHcloud
 excerpt: Découvrez comment gérer vos services et leur renouvellement dans votre espace client
-updated: 2024-01-18
+updated: 2024-01-19
 ---
 
 ## Objectif
@@ -147,6 +147,9 @@ La page **Mes services** contient un tableau de gestion de vos services OVHcloud
 >> Vous pouvez renouveler ces services à tout moment avant leur expiration, ainsi que choisir la durée de leur renouvellement.
 >>
 > **Régler ma facture**
+>>
+>> ![Payer une facture](images/pay-bill-fr.png){.thumbnail}
+>>
 >> Une mention `Facture à payer` s'affiche lorsqu'une facture est en attente de règlement et lorsque :
 >>
 >> - vous possédez des services en renouvellement automatique ;
@@ -183,6 +186,8 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Il est affiché dans votre espace client, en cliquant sur votre nom en haut à droite. Il figure également en haut à droite de toutes vos factures. Il est aussi renseigné dans l'e-mail de confirmation de création du compte, les messages de confirmation de commande ou de renouvellement, ainsi que dans les notifications de connexion à votre compte.
 > Je n'arrive pas à me connecter à mon compte OVHcloud pour renouveler mes services, que faire ?
 >> Consultez la partie « [Que faire si je ne parviens pas à me connecter ?](/pages/account_and_service_management/account_information/ovhcloud-account-login#que-faire-si-je-ne-parviens-pas-a-me-connecter) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login) ».
+> Je veux activer le renouvellement automatique mais j'obtiens un message d'erreur. Que dois-je faire ?
+>> Pour que le renouvellement automatique puisse être activé sur vos services, vous devez avoir ajouté un moyen de paiement valide dans votre compte OVHcloud. Si ce n'est pas le cas ou si le moyen de paiement est expiré, un message d'erreur appparaîtra dans l'espace client lors de vos tentatives d'activation du renouvellement automatique. Consultez notre guide « [Gérer vos moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) » pour vérifier ou ajouter un moyen de paiement.
 > Mon moyen de paiement n'est plus valide. Comment ajouter un nouveau moyen de paiement ?
 >> Consultez notre guide « [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) ». Avant de pouvoir supprimer un moyen de paiement obsolète, vous devez ajouter un nouveau moyen de paiement valide dans votre compte OVHcloud.
 > J'ai oublié de renouveler mon nom de domaine à temps, que faire ?
@@ -196,7 +201,7 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 > Je ne veux plus de prélèvement automatique mais je ne veux pas résilier mon service. Que dois-je faire ?
 >> Si votre service le permet, vous pouvez utiliser l'action [Configurer le renouvellement](#actions) et ainsi choisir un renouvellement manuel.
 > J'ai renouvelé mon service pour 12 mois. Est-ce que je peux revenir sur mon choix ?
->> Une fois le renouvellement d'un service effectué, il 'est pas possible de l'annuler. Vous pouvez néanmoins choisir un autre type de renouvellement ou de résilier le service mais ces 2 options ne pourront être prises en compte qu'à la fin de l'abonnement en cours, c'est à dire à l'issue des 12 mois.
+>> Une fois le renouvellement d'un service effectué, il n'est pas possible de l'annuler. Vous pouvez néanmoins choisir un autre type de renouvellement ou de résilier le service mais ces 2 options ne pourront être prises en compte qu'à la fin de l'abonnement en cours, c'est à dire à l'issue des 12 mois.
 > Mon site web est suspendu car je n'ai pas renouvelé mes services à temps. Je viens de renouveler mes services. Combien de temps dois-je attendre pour que mon site web soit de nouveau accessible ?
 >> Le délai de rétablissement varie en fonction des services concernés.
 >> Si uniquement votre Hébergement Web était suspendu et a été renouvelé, il faut compter un délai moyen de 2 heures pour que votre site soit de nouveau accessible.
