@@ -140,7 +140,7 @@ Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://sup
 
 #### Vers un serveur Gmail
 
-L'ajout d'enregistrements spécifiques, tel qu'un enregistrement DMARC (Domain-based Message Authentication, Reporting, and Conformance) ou DKIM (DomainKeys Identified Mail) peut faciliter la réception des e-mails si votre destinataire est chez Gail. Consultez nos guides mentionnés [en bas de cette page](#go-further) pour les configurer.
+L'ajout d'enregistrements spécifiques, tel qu'un enregistrement DMARC (Domain-based Message Authentication, Reporting, and Conformance) ou DKIM (DomainKeys Identified Mail) peut faciliter la réception des e-mails si votre destinataire est chez Gmail. Consultez nos guides mentionnés [en bas de cette page](#go-further) pour les configurer.
 
 ### Vérifier vos informations
 
