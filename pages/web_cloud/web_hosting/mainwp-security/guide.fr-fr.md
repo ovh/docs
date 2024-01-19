@@ -1,5 +1,5 @@
 ---
-title: "Améliorer la sécurité de son site web avec MainWP"
+title: "Améliorer la sécurité de son site web avec le plugin MainWP pour WordPress"
 excerpt: "Découvrez comment contrôler la sécurité de vos sites web depuis un seul endroit grâce à MainWP"
 updated: 2024-01-19
 ---

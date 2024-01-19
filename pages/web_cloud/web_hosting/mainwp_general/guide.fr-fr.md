@@ -1,27 +1,27 @@
 ---
 title: "Administrer plusieurs sites web WordPress avec le plugin MainWP"
-excerpt: "Découvrez comment gérer plusieurs sites web WordPress depuis un seul endroit grâce au plugin MainWP"
+excerpt: "Découvrez comment gérer plusieurs sites web WordPress depuis un seul outil grâce au plugin MainWP"
 updated: 2024-01-19
 ---
 
 ## Objectif
 
-Administrer plusieurs sites web est une entreprise complexe qui prend du temps. Si vous gérez plusieurs sites web WordPress, il est possible que vous rencontriez des problèmes concernant la maintenance technique des sites, les mises à jour de plugins et de thèmes ou encore la gestion des identifiants de connexion. Le plugin MainWP pour WordPress est une solution efficace pour administrer efficacement plusieurs site web WordPress depuis un seul et même dashboard. Il permet entre autres de :
+Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous gérez plusieurs sites web WordPress, vous devez gérer la maintenance technique des sites, les mises à jour de plugins et de thèmes ou encore la gestion des identifiants de connexion. Le plugin MainWP pour WordPress est une solution efficace pour administrer plusieurs sites web WordPress depuis un seul et même tableau de bord (*dashboard*). MainWP permet entre autres de :
 
-- Contrôler l'intégralité de ses sites web depuis un seul dashboard
-- Mettre à jour en un clic les composants techniques
-- [Gérer ses clients](/pages/web_cloud/web_hosting/mainwp-client-management/)
-- Télécharger des extensions pour effectuer de multiples tâches
+- contrôler l'intégralité de vos sites web depuis un seul dashboard ;
+- mettre à jour en un clic les composants techniques ;
+- [gérer les informations de vos clients](/pages/web_cloud/web_hosting/mainwp-client-management/) ;
+- télécharger des extensions pour effectuer de multiples tâches.
 
 **Ce guide vous explique comment utiliser le dashboard MainWP pour administrer plusieurs sites web WordPress.**
 
 > [!primary]
-> Dans ce guide, nous avons choisi le plugin MainWP, mais vous êtes libre de choisir le plugin que vous souhaitez.
+> Dans ce guide, nous avons choisi le plugin MainWP. D'autres solutions analogues existent, vous êtes bein entendu libre de choisir le plugin que vous souhaitez.
 > 
 
 ## Prérequis
 
-- Disposer d'une offre d'hébergement [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 - Être connecté à l'interface d'administration de WordPress.
 
@@ -35,7 +35,7 @@ Entrez votre login et votre mot de passe pour vous connecter. Le dashboard WordP
 
 ### Installer le plugin MainWP 
 
-Dirigez-vous dans le menu principal de WordPress, à gauche de l'écran, et cliquez sur `Plugins`{.action}, puis sur `Add New Plugin`{.action}.
+Dirigez-vous dans le menu principal de WordPress, à gauche de l'écran, et cliquez sur `Plugins`{.action} puis sur `Add New Plugin`{.action}.
 
 ![mainWP](images/add_new_plugin.png){.thumbnail}
 
@@ -46,11 +46,12 @@ La liste des plugins WordPress les plus populaires s'affiche. En haut à droite,
 
 ![mainWP](images/plugins_mainwp_result.png){.thumbnail}
 
-MainWP Dashboard correspond au plugin principal, celui vous permettant de gérer vos sites web depuis un seul et même dashboard. MainWP Child permet de connecter votre site WordPress (aussi appelé site enfant) au dashboard MainWP.
+MainWP Dashboard correspond au plugin principal, celui vous permettant de gérer vos sites web depuis un seul et même dashboard.<br>
+MainWP Child permet de connecter votre site WordPress (aussi appelé « site enfant ») au MainWP Dashboard.
 
 > [!warning]
 >
-> Il se peut qu'une erreur survienne si vous installez MainWP Child en premier. Prenez soin d'installer MainWP Dashboard avant MainWP Child.
+> Il se peut qu'une erreur survienne si vous installez MainWP Child en premier. Prenez soin d'installer MainWP Dashboard **avant** MainWP Child.
 >
 
 Après avoir installé les deux plugins, n'oubliez pas de les activer pour pouvoir les utiliser.
@@ -68,20 +69,20 @@ Dans le menu principal à gauche, cliquez sur `Sites`{.action}, puis sur `Add Ne
 
 Renseignez l'URL du site enfant que voulez connecter au dashboard MainWP. Juste en dessous, sélectionnez le bouton pour indiquer que vous avez bien installé et activé le plugin MainWP Child sur votre site enfant. Les deux nouveaux champs suivants s'affichent :
 
-- Administrator username (nom d'administrateur) : rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
-- Site title (titre du site) : renseignez la valeur que vous souhaitez. Si vous connectez de nombreux sites web enfants, pensez à renseigner un titre de site explicite.
+- `Administrator username` (nom d'administrateur) : rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis cliquez sur `Web Cloud`{.action} et sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
+- `Site title` (titre du site) : renseignez la valeur que vous souhaitez. Si vous connectez de nombreux sites web enfants, pensez à renseigner un titre de site explicite.
 
 ![mainWP](images/add_site.png){.thumbnail}
 
-Lorsque tous les champs du formulaire sont remplis, cliquez sur le bouton `Add Site`{.action} en-dessous du formulaire pour valider. S'il n'y a aucune erreur, le message de confirmation suivant s'affiche, vous indiquant que votre site enfant est désormais connecté au dashboard MainWP.
+Lorsque tous les champs du formulaire sont remplis, cliquez sur le bouton `Add Site`{.action} en-dessous du formulaire pour valider. S'il n'y a aucune erreur, le message de confirmation suivant s'affiche, vous indiquant que votre site enfant est désormais connecté au dashboard MainWP :
 
 ![mainWP](images/add_site_success_message.png){.thumbnail}
 
-Pour vérifier que votre site enfant est bien disponible dans le dashboard MainWP, cliquez sur `Sites`{.action} dans le menu principal à gauche, puis `Manage Sites`{.action}.
+Pour vérifier que votre site enfant est bien disponible dans le dashboard MainWP, cliquez sur `Sites`{.action} dans le menu principal à gauche puis sur `Manage Sites`{.action}.
 
 ![mainWP](images/sites_dashboard.png){.thumbnail}
 
-Dans notre exemple, le site web « mon site » apparait bien dans la liste des sites enfants connectés au dashboard MainWP. Vous pouvez ajouter le nombre de sites enfants que vous souhaitez.
+Dans notre exemple, le site web « mon site » apparait bien dans la liste des sites enfants connectés au dashboard MainWP. Vous pouvez ajouter autant de sites enfants que vous le souhaitez.
 
 ![mainWP](images/grid_all_sites.png){.thumbnail}
 
@@ -90,16 +91,16 @@ Dans notre exemple, le site web « mon site » apparait bien dans la liste des s
 > Pensez à installer le plugin MainWP child sur chaque site enfant que vous souhaitez connecter au dashboard MainWP.
 >
 
-### Gérer les mises à jour logiciels depuis le dashboard MainWP
+### Gérer les mises à jour logicielles depuis le dashboard MainWP
 
-Si vous utilisez plusieurs plugins et thèmes pour vos sites web, il se peut que vous rencontriez des erreurs à cause des différentes versions. Grâce au dashboard MainWP, vous pouvez gérer à un seul endroit les mises à jour de :
+Si vous utilisez plusieurs plugins et thèmes pour vos sites web, il se peut que vous rencontriez des erreurs à cause des différentes versions. Grâce au dashboard MainWP, vous pouvez gérer à un seul endroit les mises à jour suivantes :
 
 - WordPress
 - Plugins
 - Thèmes
 - Traductions
 
-Dans le menu principal à gauche, cliquez sur `Sites`{.action}, puis sur `Updates`{.action}. L'écran suivant s'affiche.
+Dans le menu principal à gauche, cliquez sur `Sites`{.action} puis sur `Updates`{.action}. L'écran suivant s'affiche :
 
 ![mainWP](images/updates_screen.png){.thumbnail}
 
@@ -107,54 +108,54 @@ En haut de l'interface, les onglets indiquent que la mise à jour d'un plugin et
 
 ![mainWP](images/update_themes.png){.thumbnail}
 
-Si vous souhaitez mettre à jour plusieurs thèmes (ou tous les thèmes en même temps), sélectionnez les lignes correspondantes (en cochant le bouton à gauche de chaque ligne), puis cliquez sur `Update Selected Themes`{.action}.
+Si vous souhaitez mettre à jour plusieurs thèmes (ou tous les thèmes en même temps), sélectionnez les lignes correspondantes (en cochant le bouton à gauche de chaque ligne) puis cliquez sur `Update Selected Themes`{.action}.
 Le message de confirmation suivant s'affiche, indiquant les sites sur lesquels les thèmes précédemment sélectionnés vont être mis à jour.
 
 ![mainWP](images/update_confirmation_message.png){.thumbnail}
 
-Dans notre exemple, les thèmes sélectionnés seront mis à jour pour le site « mon site ». Cliquez sur `Yes, proceed`{.action} pour confirmer. La fenêtre de progression suivante s'affiche et disparaît lorsque les mises à jour sont terminées.
+Dans notre exemple, les thèmes sélectionnés seront mis à jour pour le site « mon site ». Cliquez sur `Yes, proceed`{.action} pour confirmer. La fenêtre de progression s'affiche et disparaît lorsque les mises à jour sont terminées.
 
 Effectuez la même opération pour mettre à jour WordPress, vos plugins ou vos traductions.
 
-## Extensions
+### Extensions
 
-MainWP propose des fonctionnalités natives, telles que la gestion des mises à jour logiciels ou encore la [gestion des clients](/pages/web_cloud/web_hosting/mainwp-client-management/). Cependant, MainWP devient encore plus puissant grâce à ses nombreuses extensions, proposant un large éventail de fonctionnalités.
+MainWP propose des fonctionnalités natives, telles que la gestion des mises à jour logicielles ou encore la [gestion des informations clients](/pages/web_cloud/web_hosting/mainwp-client-management/). Cependant, MainWP devient encore plus puissant grâce à ses nombreuses extensions, proposant un large éventail de fonctionnalités.
 
-Il existe différentes [catégories d'extensions](https://mainwp.com/mainwp-extensions/), comme Administrative, Backups, Analytics, Security etc. Pour chacune des catégories, il existe trois différents types d'extensions :
+Il existe différentes [catégories d'extensions](https://mainwp.com/mainwp-extensions/), comme Administrative, Backups, Analytics, Security, etc. Pour chacune des catégories, trois différents types d'extensions existent :
 
 - Free : extensions gratuites développées par MainWP
 - Pro : extensions premium développées par MainWP
 - .Org : extensions gratuites développées par un éditeur tiers
 
-Avant de pouvoir installer une extension, rendez-vous sur [MainWP](mainwp.com/my-account) pour créer votre compte.
+Avant de pouvoir installer une extension, rendez-vous sur [MainWP](https://mainwp.com/my-account/) pour créer votre compte.
 
-### Commander une extension
+#### Commander une extension
 
 Après avoir créé votre compte MainWP, rendez-vous sur la rubrique [extensions](https://mainwp.com/mainwp-extensions/) de MainWP. Pour notre exemple, nous choisissons l'extension gratuite UpdraftPlus. Cliquez sur l'extension UpdraftPlus.
 
 ![mainWP](images/updraftPlus_card.png){.thumbnail}
 
-Une page dédiée à l'extension s'affiche. Cliquez sur `Get the free Bundle`{.action}, puis sur `Proceed to checkout`{.action}. Vous n'avez pas besoin de renseigner vos informations de paiement car cette extension est gratuite. Entrez uniquement les informations obligatoires. Cochez les boutons requis, puis terminez en cliquant sur `Place order`{.action}.
+Une page dédiée à l'extension s'affiche. Cliquez sur `Get the free Bundle`{.action}, puis sur `Proceed to checkout`{.action}. Vous n'avez pas besoin de renseigner vos informations de paiement car cette extension est gratuite. Entrez uniquement les informations obligatoires. Cochez les boutons requis puis terminez en cliquant sur `Place order`{.action}.
 
 Vous devez maintenant récupérer la clé API correspondant à votre identifiant MainWP, ce qui vous permettra de vous identifier dans le dashboard de MainWP pour télécharger les extensions de votre choix.
 
-### Renseigner la clé API
+#### Renseigner la clé API
 
-Rendez-vous sur [votre compte MainWP](https://mainwp.com/my-account/my-api-keys/), puis copiez la clé API.
+Rendez-vous sur [votre compte MainWP](https://mainwp.com/my-account/my-api-keys/) puis copiez la clé API.
 
 ![mainWP](images/API_key_mainwp.png){.thumbnail}
 
-Retournez sur le dashboard MainWP, puis cliquez sur `Extensions`{.action} dans le menu principal à gauche. En haut à droite de l'écran qui s'affiche, cliquez sur `Install and Activate Extensions`{.action}.
+Retournez sur le dashboard MainWP et cliquez sur `Extensions`{.action} dans le menu principal à gauche. En haut à droite de l'écran qui s'affiche, cliquez sur `Install and Activate Extensions`{.action}.
 
 ![mainWP](images/install_activate_extensions.png){.thumbnail}
 
-Dans le champ `Enter your MainWP API Key`{.action}, collez la clé API que vous avez précédemment copié, cochez la case `Remember MainWP Main API Key`{.action} et cliquez sur `Validate my MainWP Main API Key`{.action}. S'il n'y a aucune erreur, le message de confirmation suivant s'affiche.
+Dans le champ `Enter your MainWP API Key`{.action}, collez la clé API que vous avez précédemment copiée, cochez la case `Remember MainWP Main API Key`{.action} et cliquez sur `Validate my MainWP Main API Key`{.action}. S'il n'y a aucune erreur, le message de confirmation suivant s'affiche :
 
 ![mainWP](images/API_key_valid.png){.thumbnail}
 
 Enfin, cliquez sur `Install Extension`{.action} pour installer les extensions de votre choix.
 
-### Installer une extension
+#### Installer une extension
 
 Après avoir cliqué sur `Install Extensions`{.action}, une fenêtre s'affiche avec la liste des extensions disponibles, classées par catégories. Dans notre exemple, nous choisissons l'extension gratuite « UpdraftPlus » de la catégorie Backups. Après avoir sélectionné UpdraftPlus, cliquez sur `Install Selected Extensions`{.action}.
 
@@ -168,7 +169,7 @@ Cliquez sur `Enable`{.action} pour activer l’extension. Si un message d’erre
 
 ## Aller plus loin
 
-[Gérer les clients de ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management/)
+[Gérer les informations des clients de vos sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management/)
 
 [Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
 

@@ -1,5 +1,5 @@
 ---
-title: "Sauvegarder ses sites web avec MainWP"
+title: "Sauvegarder ses sites web WordPress avec MainWP"
 excerpt: "Découvrez comment sauvegarder et restaurer vos sites web WordPress avec MainWP"
 updated: 2024-01-19
 ---
@@ -8,18 +8,18 @@ updated: 2024-01-19
 
 La sauvegarde d'un site web est une pratique cruciale pour la gestion de votre entreprise. Elle offre plusieurs avantages :
 
-- Sécurité des données : les sauvegardes régulières garantissent que les données de votre site sont protégées en cas de cyberattaque, de défaillance technique ou d'erreur humaine.
-- Protection contre des erreurs de mise à jour : une sauvegarde effectuée avant la mise à jour de WordPress, d'un plugin ou d'un thème permet de revenir en arrière en cas d'erreur ou de conflit de versions lors de la mise à jour.
-- Restauration rapide : en cas d'erreur technique, la sauvegarde permet de revenir à une version précédente pour proposer à vos clients un site web fonctionnel et une continuité des opérations commerciales.
-- Conformité légale : pour votre entreprise, maintenir des sauvegardes régulières peut correspondre à une exigence de conformité réglementaire et vous protéger contre des actions en justice.
-MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
+- **Sécurité des données** : les sauvegardes régulières garantissent que les données de votre site sont protégées en cas de cyberattaque, de défaillance technique ou d'erreur humaine.
+- **Protection contre des erreurs de mise à jour** : une sauvegarde effectuée avant la mise à jour de WordPress, d'un plugin ou d'un thème permet de revenir en arrière en cas d'erreur ou de conflit de versions lors de la mise à jour.
+- **Restauration rapide** : en cas d'erreur technique, la sauvegarde permet de revenir à une version précédente pour proposer à vos clients un site web fonctionnel et une continuité des opérations commerciales.
+- **Conformité légale** : pour votre entreprise, maintenir des sauvegardes régulières peut correspondre à une exigence de conformité réglementaire et vous protéger contre des actions en justice.
 
+MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
 
 **Ce guide vous explique comment sauvegarder vos sites web WordPress avec l'extension UpdraftPlus.**
 
 ## Prérequis
 
-- Disposer d'une offre d'hébergement [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre dashboard MainWP.
 
 ## En pratique
@@ -30,11 +30,14 @@ MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
 > Si vous n'avez jamais installé d'extension MainWP, découvrez dans [ce guide](/pages/web_cloud/web_hosting/mainwp_general/) comment installer une extension.
 >
 
-Pour retrouver toutes les extensions liées à la sauvegarde, rendez-vous sur la rubrique [sauvegarde](https://mainwp.com/mainwp-extensions/extension-category/backup/) de MainWP. Vous pouvez également chercher une extension en cliquant sur `Extensions`{.action} depuis le menu principal de MainWP, puis sur `Install Extensions`{.action}. Cliquez sur l'onglet `Backup`{.action} pour afficher la liste des extensions liées à la sauvegarde. Dans cet exemple, nous choisissons l'extension gratuite UpdraftPlus, mais vous êtes libre de choisir l'extension de votre choix. 
+Pour retrouver toutes les extensions liées à la sauvegarde, rendez-vous sur la rubrique [sauvegarde](https://mainwp.com/mainwp-extensions/extension-category/backup/) de MainWP. Vous pouvez également chercher une extension en cliquant sur `Extensions`{.action} depuis le menu principal de MainWP, puis sur `Install Extensions`{.action}. Cliquez sur l'onglet `Backup`{.action} pour afficher la liste des extensions liées à la sauvegarde.
+
+Dans cet exemple, nous choisissons l'extension gratuite UpdraftPlus, mais vous êtes libre de choisir l'extension de votre choix.
 
 ![mainWP backup](images/install_updraftPlus.png){.thumbnail}
 
 Une fois l'extension sélectionnée, cliquez sur `Install Selected Extensions`{.action}.
+
 Dans le menu principal de MainWP, cliquez sur `Extensions`{.action} puis sur `Manage Extensions`{.action}. L'extension UpdraftPlus précédemment installée apparaît.
 
 ![mainWP backup](images/extensions_dashboard_updraftPlus.png){.thumbnail}
@@ -48,12 +51,14 @@ Dans le menu principal de MainWP, cliquez sur `Sites`{.action} puis sur `Install
 ![mainWP backup](images/search_updraftplus.png){.thumbnail}
 
 Une fois le plugin « UpdraftPlus : WordPress Backup & Migration » identifié, cliquez sur `Install Plugin`{.action} puis, à droite de l'écran, sélectionnez le site enfant sur lequel vous souhaitez installer UpdraftPlus. Cliquez sur `Complete Installation`{.action}. N'oubliez pas de cocher `Activate after installation`{.action}.
-Une fois l'installation terminée, dirigez-vous dans le menu principal de MainWP. Cliquez sur `Sites`{.action}, `Plugins`{.action} puis `Manage Plugins`{.action}. Pour vérifier que UpdraftPlus est bien installé sur vos sites web, sélectionnez les sites enfants de votre choix, à droite de l'écran. Plus bas, dans le champ de recherche `Search Options`{.action}, tapez « UpdraftPlus », puis sélectionnez `Show Plugins`{.action}.
+
+Une fois l'installation terminée, dirigez-vous dans le menu principal de MainWP. Cliquez sur `Sites`{.action}, `Plugins`{.action} puis `Manage Plugins`{.action}. Pour vérifier que UpdraftPlus est bien installé sur vos sites web, sélectionnez les sites enfants de votre choix, à droite de l'écran. Plus bas, dans le champ de recherche `Search Options`{.action}, tapez « UpdraftPlus » puis sélectionnez `Show Plugins`{.action}.
 
 ![mainWP backup](images/show_plugins.png){.thumbnail}
 
 L'extension « MainWP UpdraftPlus Extension » et le plugin « UpdraftPlus – Backup/Retore » s'affichent, ce qui veut dire qu'ils sont bien installés sur les sites enfants concernés.
-Sélectionnez l'extension « MainWP UpdraftPlus Extension » et le plugin « UpdraftPlus – Backup/Retore » , puis cliquez sur `Install to Selected Site(s)`{.action} (bouton en haut à droite).
+
+Sélectionnez l'extension « MainWP UpdraftPlus Extension » et le plugin « UpdraftPlus – Backup/Retore » puis cliquez sur `Install to Selected Site(s)`{.action} (bouton en haut à droite).
 
 Pour être sûr que les plugins sont bien activés sur votre site enfant, cliquez sur `Sync Dashboard with Sites`{.action}, en haut à droite de l'interface.
 
@@ -63,11 +68,11 @@ Vous pouvez désormais effectuer des sauvegardes de vos sites enfants avec Updra
 
 ### Effectuer des sauvegardes avec UpdraftPlus
 
-Dans le menu principal de MainWP, cliquez sur `Sites`{.action}, puis sur `Manage Sites`{.action}. Cliquez sur le site enfant sur lequel vous voulez effectuer votre sauvegarde, puis sur l'onglet `UpdraftPlus Backups`{.action}.
+Dans le menu principal de MainWP, cliquez sur `Sites`{.action} puis sur `Manage Sites`{.action}. Cliquez sur le site enfant sur lequel vous voulez effectuer votre sauvegarde puis cliquez sur l'onglet `UpdraftPlus Backups`{.action}.
 
 ![mainWP backup](images/tab_updraftPlus.png){.thumbnail}
 
-Sur l'écran qui s'affiche, cliquez sur `Backup Now`{.action}, puis suivez les instructions. Pour valider la sauvegarde, cliquez sur `Backup Now`{.action}.
+Sur l'écran qui s'affiche, cliquez sur `Backup Now`{.action} et suivez les instructions. Pour valider la sauvegarde, cliquez sur `Backup Now`{.action}.
 
 ![mainWP backup](images/backup_now.png){.thumbnail}
 
@@ -79,15 +84,19 @@ Une nouvelle ligne correspondant à votre sauvegarde apparait. Vous pouvez effec
 
 ### Restaurer une version sauvegardée d'un site enfant
 
-Dans le menu principal de MainWP, cliquez sur `Extensions`{.action}, puis sur `UpdraftPlus`{.action}. Si vous cliquez sur `Existing Backups`{.action}, la liste de vos sauvegardes s'affiche. Pour restaurer votre site web, identifiez la ligne correspondant à votre sauvegarde, puis cliquez sur `Restore`{.action}.
+Dans le menu principal de MainWP, cliquez sur `Extensions`{.action} puis sur `UpdraftPlus`{.action}. Si vous cliquez sur `Existing Backups`{.action}, la liste de vos sauvegardes s'affiche.
+
+Pour restaurer votre site web, identifiez la ligne correspondant à votre sauvegarde puis cliquez sur `Restore`{.action}.
 
 ![mainWP backup](images/restore_backup_line.png){.thumbnail}
 
-Une nouvelle fenêtre s'affiche, contenant un certain nombre d'informations, dont la liste de vos sauvegardes. Identifiez la sauvegarde que vous souhaitez restaurer, puis cliquez sur `Restore`{.action}. Pensez à vérifier la date pour éviter toute erreur.
+Une nouvelle fenêtre s'affiche. Elle contient un certain nombre d'informations dont la liste de vos sauvegardes.
+
+Identifiez la sauvegarde que vous souhaitez restaurer puis cliquez sur `Restore`{.action}. Pensez à vérifier la date pour éviter toute erreur.
 
 ![mainWP backup](images/restoration_message.png){.thumbnail}
 
-Sélectionnez les éléments que vous souhaitez restaurer puis validez. Le message de confirmation suivant s'affiche.
+Sélectionnez les éléments que vous souhaitez restaurer puis validez. Le message de confirmation suivant s'affiche :
 
 ![mainWP backup](images/restoration_success.png){.thumbnail}
 
@@ -95,10 +104,10 @@ Sélectionnez les éléments que vous souhaitez restaurer puis validez. Le messa
 
 [Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general/)
 
-[Gérer les clients de ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management/)
+[Gérer les informations clients de vos sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management/)
 
 [Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
 
-[Tutoriel - Sauvegarder votre site WordPress](https://help.ovhcloud.com/csm/fr-web-hosting-wordpress-backup?id=kb_article_view&sysparm_article=KB0056290)
+[Tutoriel - Sauvegarder votre site WordPress](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress)
 
-[Restaurer l'espace de stockage de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-restore-storage-space?id=kb_article_view&sysparm_article=KB0052754)
+[Restaurer l'espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup)
