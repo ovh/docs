@@ -1,5 +1,5 @@
 ---
-title: Update a subnet properties
+title: Update a subnet properties (EN)
 excerpt: Find out how to update the properties of an existing subnet
 updated: 2024-01-22
 ---
@@ -170,6 +170,6 @@ You can check that the subnet has been updated:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
