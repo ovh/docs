@@ -1,7 +1,7 @@
 ---
 title: "Utiliser l'accès SSH de son hébergement web"
 excerpt: "Apprenez à vous connecter et utiliser l'accès SSH de votre hébergement web OVHcloud"
-updated: 2022-01-19
+updated: 2024-01-22
 ---
 
 ## Objectif
@@ -98,6 +98,19 @@ Via une commande, vous pouvez également lancer un script en utilisant une versi
 ```
 
 Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution doive être modifié pour une question de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting) » pour en apprendre plus.
+
+> [!primary]
+>
+> Il est également possible de copier des fichiers et/ou dossiers à l'aide du **S**ecure **C**opy **P**rotocol (**SCP**).
+> Ce protocol utilise le protocol SSH pour dupliquer du contenu de manière sécurité entre :
+> 
+> - un ordinateur/appareil local vers un serveur distant
+> - un serveur distant et un ordinateur/appareil local
+> - deux serveurs distants
+>
+> Retrouvez plus d'information sur l'utilisation de la commande `scp` avec nos hébergements web OVHcloud dans notre guide « [Hébergement Web - Copier des fichiers avec la commande SCP](/pages/web_cloud/web_hosting/using-scp-command) »
+>
+
 ## Aller plus loin
 
 [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
