@@ -1,11 +1,14 @@
 ---
-title: Storage services  - Responsibility model
-excerpt: 'Shared responsibilities between OVHcloud and the customer'
-updated: 2024-01-19
+title: File Storage services - Responsibility model
+excerpt: 'Shared responsibilities between OVHcloud and the customer for NAS-HA and Enterprise File Storage solutions'
+updated: 2024-01-22
 ---
 
+The RACI below details shared responsibilities between OVHcloud and the customer for the following File Storage solutions:
 
-The RACI below details shared responsibilities between OVHcloud and the customer for NAS-HA and File Enterprise Storage services.
+- NAS-HA 
+- Enterprise File Enterprise Storage
+
 This shared model can help relieve the customer’s operational burden.
 
 ## RACI definition
@@ -17,7 +20,6 @@ This shared model can help relieve the customer’s operational burden.
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
-
 ### 1. Before subscription
 
 #### 1.1. Specify service as needed
@@ -28,7 +30,6 @@ This shared model can help relieve the customer’s operational burden.
 | Choose service location | RA | I |
 | Size services as needed | RA | I |
 
-
 ### 2. Service availability
 
 #### 2.1. Install service
@@ -37,7 +38,6 @@ This shared model can help relieve the customer’s operational burden.
 | --- | --- | --- |
 | Produce, route, deliver and maintain physical machines, virtual machines and hosting buildings |  | RA |
 | Buy and hold licences and usage rights for software provided by OVHcloud |  | RA |
-
 
 #### 2.2. Reversibility model
 
@@ -65,7 +65,6 @@ This shared model can help relieve the customer’s operational burden.
 | Manage access to the OVHcloud Control Panel and the storage service using user interface, API, ACL | RA | I |
 | Manage OVHcloud teams’ physical access to infrastructures |  | RA |
 | Manage OVHcloud teams’ logical access to infrastructures | I | RA |
-
 
 ##### **3.1.3. Monitoring**
 
@@ -97,15 +96,14 @@ This shared model can help relieve the customer’s operational burden.
 | --- | --- | --- |
 | Provide inventory of storage volumes used | I | RA |
 | Manage the security of management infrastructures (API, Control Panel) following security standards like ISO 2700x, SOC 2 type 2 and HDS |  | RA |
-| Manage security of the operating systems (major updates and upgrades) and software installed following service delivering | I | RA |
+| Manage security of the operating systems (major updates and upgrades) and software installed following service delivery | I | RA |
 | Manage physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
-
 
 ##### **3.1.7. Business continuity**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage automatic management systems for the infrastructure provided | I | RA |
+| Manage automatic management systems for the provided infrastructure | I | RA |
 | Maintain a business continuity and disaster recovery plan for hosted services | RA | I |
 | Perform periodic restoration tests | RA |  |
 
@@ -124,7 +122,6 @@ This shared model can help relieve the customer’s operational burden.
 | Comply with the service Lifecycle Policy (EoL) | I | RA |
 | Deploy patches, update software on the management infrastructure of the service |  | RA |
 | Perform preventive interventions on managed elements of the service |  | AR |
-
 
 ### 4. Reverting
 
@@ -148,7 +145,7 @@ This shared model can help relieve the customer’s operational burden.
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Delete storage services (with API or user interface on user interface)  | RA | I |
+| Delete storage services (with API or user interface ) | RA | I |
 | Decommission of the client service following contract termination  | I | RA |
 
 #### 5.2. Data destruction
