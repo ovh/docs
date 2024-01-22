@@ -146,7 +146,5 @@ Para comprobar que el contenido de su alojamiento web se ha copiado localmente e
 [Conectarse al espacio de almacenamiento FTP de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
- 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
- 
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
