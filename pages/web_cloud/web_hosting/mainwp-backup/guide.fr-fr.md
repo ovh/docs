@@ -22,6 +22,13 @@ MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
 - Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre dashboard MainWP.
 
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur du du plugin MainWP](https://mainwp.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+>
+
 ## En pratique
 
 ### Installer l'extension UpdraftPlus
@@ -111,3 +118,9 @@ Sélectionnez les éléments que vous souhaitez restaurer puis validez. Le messa
 [Tutoriel - Sauvegarder votre site WordPress](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress)
 
 [Restaurer l'espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

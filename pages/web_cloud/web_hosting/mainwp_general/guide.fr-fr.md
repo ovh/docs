@@ -25,6 +25,13 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 - Être connecté à l'interface d'administration de WordPress.
 
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur du du plugin MainWP](https://mainwp.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+>
+
 ## En pratique
 
 Si vous n'êtes pas déjà connecté, accédez à l'interface d'administration de votre module en un clic sur lequel vous voulez installer le dashboard MainWP.
@@ -174,3 +181,9 @@ Cliquez sur `Enable`{.action} pour activer l’extension. Si un message d’erre
 [Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
 
 [Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

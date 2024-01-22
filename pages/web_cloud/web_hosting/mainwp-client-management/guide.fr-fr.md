@@ -1,19 +1,26 @@
 ---
 title: "Gérer les informations des clients de vos sites web WordPress avec MainWP"
-excerpt: "Découvrez comment gérer tous les clients de ses sites web WordPress depuis le dashboard MainWP"
+excerpt: "Découvrez comment gérer tous les clients de vos sites web WordPress depuis le dashboard MainWP"
 updated: 2024-01-19
 ---
 
 ## Objectif
 
-La fidélisation de vos clients est primordiale pour le développement de votre société. Que vous possédiez un ou plusieurs sites web, il est important de connaitre au mieux vos clients pour les fidéliser et les satisfaire. Le plugin WordPress MainWP vous permet de gérer efficacement les clients de vos sites web. Comme le proposerait un CRM (Customer Relationship Management), vous pouvez ajouter, supprimer et mettre à jours les informations de tous vos clients, gratuitement, en quelques clics.
+La fidélisation de vos clients est primordiale pour le développement de votre société. Que vous possédiez un ou plusieurs sites web, il est important de connaitre au mieux vos clients pour les fidéliser et les satisfaire. Le plugin WordPress MainWP vous permet de gérer efficacement les clients de vos sites web. Comme le proposerait un CRM (Customer Relationship Management), vous pouvez ajouter, supprimer et mettre à jour les informations de tous vos clients, gratuitement, en quelques clics.
 
-**Ce guide vous explique comment gérer efficacement les clients de vos sites web grâce à MainWP.**
+**Ce guide vous explique comment gérer efficacement les données des clients de vos sites web grâce à MainWP.**
 
 ## Prérequis
 
-- Disposer d'une offre d'hébergement [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-- Être connecté à votre dashboard MainWP.
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Être connecté à votre dashboard MainWP. Pour plus d'informations, consultez notre guide « [Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general) ».
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur du du plugin MainWP](https://mainwp.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+>
 
 ## En pratique
 
@@ -25,7 +32,7 @@ Dans le menu principal de MainWP, cliquez sur `Clients`{.action}. Sur l'écran q
 
 ### Ajouter un client
 
-Pour commencer, ajoutez votre premier client. Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Add Client`{.action}. Dans le formulaire qui apparaît, remplissez les informations de votre client. À droite de l'écran, sélectionnez les sites web sur lesquels vous voulez créer votre nouveau client, puis cliquez sur `Add Client`{.action}.
+Pour commencer, ajoutez votre premier client. Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Add Client`{.action}. Dans le formulaire qui apparaît, remplissez les informations de votre client. À droite de l'écran, sélectionnez les sites web sur lesquels vous voulez créer votre nouveau client puis cliquez sur `Add Client`{.action}.
 
 ![mainWPClientMngt](images/add_client.png){.thumbnail}
 
@@ -35,23 +42,23 @@ Dans le menu principal de MainWP, cliquez sur `Clients`{.action} puis sur `Clien
 
 ![mainWPClientMngt](images/search_client.png){.thumbnail}
 
-Vous pouvez effectuer un drag and drop des colonnes de votre choix pour mettre en avant les informations pertinentes de vos clients, comme l'adresse mail (colonne `Client Email`{.action}) ou encore le nombre de sites web auxquels votre client est rattaché (colonne `Websites`{.action}).
+Vous pouvez effectuer un glisser-déposer des colonnes de votre choix pour mettre en avant les informations pertinentes de vos clients, comme l'adresse e-mail (colonne `Client Email`{.action}) ou encore le nombre de sites web auxquels votre client est rattaché (colonne `Websites`{.action}).
 
-Depuis ce tableau, vous pouvez supprimer les clients de votre choix. Sélectionnez les lignes correspondant aux clients que vous souhaitez supprimer, cliquez sur `Bulk actions`{.action}, `Delete`{.action}, puis sur `Apply`{.action} pour confirmer.
+Depuis ce tableau, vous pouvez supprimer les clients de votre choix. Sélectionnez les lignes correspondant aux clients que vous souhaitez supprimer, cliquez sur `Bulk actions`{.action}, `Delete`{.action} puis sur `Apply`{.action} pour confirmer.
 
 ![mainWPClientMngt](images/delete_client.png){.thumbnail}
 
 Enfin, cliquez sur `Yes, proceed`{.action} pour confirmer la suppression des clients.
 
-Dans le tableau représentant vos clients, identifiez le client de votre choix et cliquez sur le bouton représenté par trois points (…). 
+Dans le tableau représentant vos clients, identifiez le client de votre choix et cliquez sur le bouton représenté par trois points (…).
 
 ![mainWPClientMngt](images/more_client.png){.thumbnail}
 
 Vous pouvez :
 
-- Editer les informations du client (`Edit`{.action})
-- Supprimer le client (`Delete`{.action})
-- Voir les sites web concernés par votre client (`View Sites`{.action})
+- éditer les informations du client (`Edit`{.action}) ;
+- supprimer le client (`Delete`{.action}) ;
+- voir les sites web concernés par votre client (`View Sites`{.action}).
 
 ### Créer de nouveaux champs pour vos clients
 
@@ -64,7 +71,7 @@ Dans notre exemple, nous créons un nouveau champ « loyalty » (fidélité), ai
 
 ![mainWPClientMngt](images/new_field_add_client.png){.thumbnail}
 
-Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients. Cliquez sur le client que vous venez de créer. Le nouveau champ « loyalty » et la valeur correspondante s'affiche.
+Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients. Cliquez sur le client que vous venez de créer. Le nouveau champ « loyalty » et la valeur correspondante s'affichent.
 
 ![mainWPClientMngt](images/details_client.png){.thumbnail}
 
@@ -75,3 +82,9 @@ Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients.
 [Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
 
 [Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

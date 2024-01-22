@@ -1,19 +1,26 @@
 ---
 title: "Améliorer la sécurité de son site web avec le plugin MainWP pour WordPress"
-excerpt: "Découvrez comment contrôler la sécurité de vos sites web depuis un seul endroit grâce à MainWP"
+excerpt: "Découvrez comment contrôler la sécurité de vos sites web depuis une seule interface grâce à MainWP"
 updated: 2024-01-19
 ---
 
 ## Objectif
 
-Maintenir la sécurité de vos sites web est crucial pour le développement de votre marque. Une sécurité optimale sur vos sites web permet de protéger les données de votre entreprise, mais aussi celles de vos clients, préservant ainsi la confiance et l'image de votre société. Grâce aux extensions du plugin WordPress MainWP, vous pouvez contrôler la sécurité de vos sites web depuis un seul et même endroit.
+Maintenir la sécurité de vos sites web est crucial pour le développement de votre marque. Une sécurité optimale sur vos sites web permet de protéger les données de votre entreprise, mais aussi celles de vos clients, préservant ainsi la confiance et l'image de votre société. Grâce aux extensions du plugin WordPress MainWP, vous pouvez contrôler la sécurité de vos sites web depuis une seule et même interface.
 
 **Ce guide vous explique comment améliorer la sécurité de vos sites web depuis le dashboard MainWP**
 
 ## Prérequis
 
-- Disposer d'une offre d'hébergement [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre dashboard MainWP.
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur du du plugin MainWP](https://mainwp.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+>
 
 ## En pratique
 
@@ -23,8 +30,11 @@ Maintenir la sécurité de vos sites web est crucial pour le développement de v
 > Si vous n'avez jamais installé d'extension MainWP, découvrez dans [ce guide](/pages/web_cloud/web_hosting/mainwp_general/) comment installer une extension.
 >
 
-Pour retrouver toutes les extensions liées à la sécurité, rendez-vous sur la rubrique [sécurité](https://mainwp.com/mainwp-extensions/extension-category/security/) de MainWP. Vous pouvez également chercher une extension en cliquant sur `Extensions`{.action} depuis le menu principal de MainWP, puis sur `Install Extensions`{.action}. Cliquez sur l'onglet `Security`{.action} pour afficher la liste des extensions liées à la sécurité. Dans cet exemple, nous choisissons l'extension gratuite Sucuri, mais vous êtes libre de choisir l'extension de votre choix. Une fois l'extension sélectionnée, cliquez sur `Install Selected Extensions`{.action}.
-Dans le menu principal de MainWP, cliquez sur `Extensions`{.action} puis sur `Manage Extensions`{.action}. L'extension Sucuri précédemment installée apparaît. 
+Pour retrouver toutes les extensions liées à la sécurité, rendez-vous dans la rubrique [sécurité](https://mainwp.com/mainwp-extensions/extension-category/security/) de MainWP. Vous pouvez également chercher une extension en cliquant sur `Extensions`{.action} depuis le menu principal de MainWP puis sur `Install Extensions`{.action}.
+
+Cliquez sur l'onglet `Security`{.action} pour afficher la liste des extensions liées à la sécurité. Dans cet exemple, nous choisissons l'extension gratuite Sucuri mais vous êtes libre de choisir l'extension de votre choix. Une fois l'extension sélectionnée, cliquez sur `Install Selected Extensions`{.action}.
+
+Dans le menu principal de MainWP, cliquez sur `Extensions`{.action} puis sur `Manage Extensions`{.action}. L'extension Sucuri précédemment installée apparaît.
 
 ![mainWP security](images/sucuri_extension.png){.thumbnail}
 
@@ -40,7 +50,7 @@ Pour effectuer un scan de sécurité sur votre site web, cliquez sur `Scan Websi
 
 ![mainWP](images/sucuri_scanner.png){.thumbnail}
 
-Une fois le scan de sécurité effectué, une nouvelle ligne s'affiche correspondant au rapport du scan de sécurité.
+Une fois le scan de sécurité effectué, une nouvelle ligne s'affiche, correspondant au rapport du scan de sécurité.
 
 ![mainWP security](images/report_security_line.png){.thumbnail}
 
@@ -48,13 +58,13 @@ Cliquez sur `Show Report`{.action} pour visualiser le rapport de sécurité.
 
 ![mainWP security](images/security_report_details.png){.thumbnail}
 
-Le rapport du scan de sécurité fournit de nombreuses informations importantes concernant la sécurité de votre site web, comme :
+Le rapport du scan de sécurité fournit de nombreuses informations importantes concernant la sécurité de votre site web :
 
-- Présence de virus et de logiciels malveillants
-- Détection d'anomalies
-- Liens dangereux
-- Tentative de Spam
-- Etc.
+- présence de virus et de logiciels malveillants ;
+- détection d'anomalies ;
+- liens dangereux ;
+- tentatives de SPAM ;
+- etc.
 
 Pensez à effectuer régulièrement des scans de sécurité. Avec Sucuri, il est possible d'activer un rappel. En bas de la liste de vos rapports de sécurité, cliquez sur la liste déroulante à droite de `Remind me if I don't scan my child site for`{.action}. Par exemple, si vous choisissez `1 week`{.action}, Sucuri vous rappellera chaque semaine d'effectuer un scan de sécurité.
 
@@ -74,7 +84,6 @@ Pour résoudre un problème, identifiez la ligne correspondante et cliquez sur l
 
 Une fois le problème résolu, vous pouvez annuler les modifications apportées en cliquant sur le bouton `Unfix`{.action}.
 
-
 ## Aller plus loin
 
 [Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general/)
@@ -83,9 +92,8 @@ Une fois le problème résolu, vous pouvez annuler les modifications apportées 
 
 [Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup/)
 
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
-
-
-
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
