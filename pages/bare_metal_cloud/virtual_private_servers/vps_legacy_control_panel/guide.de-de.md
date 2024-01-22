@@ -1,7 +1,7 @@
 ---
 title: Legacy VPS verwalten
 excerpt: Erfahren Sie hier, wie Sie einen VPS einer älteren Reihe über Ihr OVHcloud Kundencenter verwalten
-updated: 2023-06-27
+updated: 2024-01-22
 ---
 
 > [!primary]
@@ -39,6 +39,12 @@ Mit dieser Option wird ein Popup-Fenster geöffnet, um den [Kündigungsvorgang I
 ### Neustart im Rescue-Modus
 
 Klicken Sie hier, um den VPS im Rescue-Modus neu zu starten. Weitere Informationen finden Sie in [unserer Anleitung](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+Bei den alten VPS Reihen werden Ihre Partitionen automatisch im Rescue-Modus erstellt. Sie können folgenden Befehl verwenden, um den Mountpunkt Ihrer Partition zu identifizieren:
+
+```bash
+lsblk
+```
 
 ### VPS neu starten
 
