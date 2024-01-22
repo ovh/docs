@@ -58,7 +58,7 @@ Bestätigen Sie den Befehl mit der Taste `enter`(↲) auf Ihrer Tastatur, und ge
 ls
 ```
 
-Bestätigen Sie diesen zweiten Befehl mit der Taste `enter` (↲) auf Ihrer Tastatur.
+Bestätigen Sie diesen zweiten Befehl mit der Taste `enter`(↲) auf Ihrer Tastatur.
 
 In Ihrem Terminal wird ein ähnliches Ergebnis wie das folgende Beispiel angezeigt:
 

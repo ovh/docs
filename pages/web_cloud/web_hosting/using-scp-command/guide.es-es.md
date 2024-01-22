@@ -58,7 +58,7 @@ Valide el comando utilizando la tecla `enter`(↲) del teclado e introduzca el s
 ls
 ```
 
-Confirme este segundo comando con la tecla `enter` (↲) del teclado.
+Confirme este segundo comando con la tecla `enter`(↲) del teclado.
 
 En su terminal, aparece un resultado similar al que se muestra a continuación:
 

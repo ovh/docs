@@ -58,7 +58,7 @@ Zatwierdź polecenie za pomocą przycisku `enter`(↲) na klawiaturze i wprowad�
 ls
 ```
 
-Zatwierdź to drugie polecenie za pomocą przycisku `enter` (↲) na klawiaturze.
+Zatwierdź to drugie polecenie za pomocą przycisku `enter`(↲) na klawiaturze.
 
 W Twoim terminalu pojawia się wynik podobny do naszego poniższego przykładu:
 

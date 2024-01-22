@@ -54,7 +54,7 @@ Validez la commande à l'aide de la touche `enter`(↲) de votre clavier, puis e
 ls
 ```
 
-Validez cette seconde commande à l'aide de la touche `enter` (↲) de votre clavier.
+Validez cette seconde commande à l'aide de la touche `enter`(↲) de votre clavier.
 
 Dans votre terminal, un résultat similaire à notre exemple ci-dessous apparaît :
 
