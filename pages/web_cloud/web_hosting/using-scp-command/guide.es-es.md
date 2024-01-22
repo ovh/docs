@@ -4,6 +4,10 @@ excerpt: "Descubra cómoómo utilizar el comando Secure Copy Protocol (SCP) en S
 updated: 2024-01-22
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 ## Objetivo
 
 El Secure Copy Protocol (SCP) permite copiar datos de forma segura (gracias al protocolo SSH) entre dos dispositivos. De esta forma, puede copiar el contenido:
