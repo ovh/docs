@@ -1,12 +1,12 @@
 ---
 title: 'Optimising the sending of emails'
 excerpt: 'Find out how to send emails and limit the risk of them being marked as spam'
-updated: 2022-12-20
+updated: 2024-01-19
 ---
 
 ## Objective
 
-Anti-spam policies are becoming increasingly strict. To ensure that your emails reach recipients without getting blocked by security tools, you will need to configure your service to authenticate your emails and validate their content.
+In general, anti-spam policies are strict. To ensure that emails reach recipients without being blocked by security tools, you will need to configure your services to authenticate your messages and their content on the recipient servers that process them.
 
 **This guide will give you a few tips on optimising how your emails are sent.**
 
@@ -18,7 +18,8 @@ Anti-spam policies are becoming increasingly strict. To ensure that your emails 
 
 ## Requirements
 
-- a configured email server
+- You must be an administrator of a configured email server.
+- You must be able to manage the DNS zone for the domain name(s) used for sending
 
 > [!warning]
 >
@@ -29,27 +30,31 @@ Anti-spam policies are becoming increasingly strict. To ensure that your emails 
 
 ### Configure the SPF record <a name="spfrecord"></a>
 
-If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public Cloud instance or Hosted Private Cloud VM), the optimal SPF record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
+If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Public Cloud instance or Hosted Private Cloud VM), the optimal SPF (Sender Policy Framework) record is: `v=spf1 ip4:server_ipv4 ~all`. Please remember to replace 'server_ipv4' with your server's IPv4 address.
 
 > [!primary]
 >
 > The symbol before **all** is very important:
 >
 > - `+`: accept
-> - `-`: do not accept
+> - `-`: reject
 > - `~`: soft fail
 > - `?`: neutral
 >
 
-For further information on the SPF record, refer to the following page: <http://www.open-spf.org/>.
-
-You can go even further by configuring the SPF record of a specific domain, or by specifying an IPv6 address. You can find out how to do this in our guide to [adding an SPF record](/pages/web_cloud/domains/dns_zone_spf).
+You can go even further, by configuring the SPF record for a specific domain name, or by using the IPv6 address. To understand SPF registration, please refer to our guide on [configuring an SPF](/pages/web_cloud/domains/dns_zone_spf) record.
 
 ### Configure the DKIM record
 
-By configuring the DKIM (DomainKeys Identified Mail) record, you add extra protection to prevent your emails from getting marked as spam. In simple terms, the DKIM is a signature that enables the sender’s domain to be authenticated.
+The DKIM (DomainKeys Identified Mail) record is used to sign emails to avoid spoofing them. This signature works on the principle of a private key/public key pair, allowing the sender domain to be authenticated.
 
-The authentication is carried out by a DKIM key that needs to be added in your DNS zone. There are different generators for DKIM keys, including: <http://dkimcore.org/tools/keys.html>. Please follow the instructions listed on your chosen generator website.
+For more information, see our guide to [configuring a DKIM](/pages/web_cloud/domains/dns_zone_dkim) record.
+
+### Configure DMARC record
+
+DMARC (Domain-based Message Authentication, Reporting and Compliance) is a security standard that relies on the two methods of SPF and DKIM email security. The arguments in the DMARC record guide the recipient on how to handle emails, depending on the SPF and/or DKIM result. An email address can be defined in the DMARC record, which will receive a report on authentication failures.
+
+For more information, see our guide to [configuring a DMARC](/pages/web_cloud/domains/dns_zone_dmarc) record.
 
 ### Configure the reverse IP <a name="reverseip"></a>
 
@@ -57,7 +62,7 @@ To further optimise email sending and lower the risk of your emails being blocke
 
 To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
-If your DNS Servers are managed by OVHcloud, please consult this [guide](/pages/web_cloud/domains/dns_zone_edit#instructions).
+If your DNS servers are managed by OVHcloud, please refer to our guide on editing [an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
@@ -87,7 +92,7 @@ Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.acti
 >  - It cannot contain uppercase characters
 >  - it must end with a `.`
 >
-> Example : "MyDomain.ca" in the reverse field would be **"mydomain.ca."**
+> Example : "MyDomain.ca" in the reverse record would be **"mydomain.ca."**
 >
 
 ### Specific types of email sending
@@ -98,7 +103,7 @@ Microsoft uses a whitelist policy. This means that initially, everything starts 
 
 Before starting the procedure to whitelist your IP, make sure you have a [reverse IP](#reverseip) configured.<br>
 
-Microsoft also checks the SPF field, so we recommend having set an [SPF record](#spfrecord) as well.
+Microsoft also checks the SPF record, so it is recommended that you configure it.
 
 Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Junk Mail Reporting Partner Program) contracts. To subscribe, create a free account at <https://postmaster.live.com/snds/JMRP.aspx?wa=wsignin1.0>.
 
@@ -131,9 +136,7 @@ For additional information, please open a [support request](https://support.micr
 
 #### To a Gmail server
 
-If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
-
-Google also has a [dedicated article](https://support.google.com/mail/answer/81126?hl=en){.external} regarding spam prevention to Gmail users.
+Adding specific records, such as a Domain-based Message Authentication, Reporting, and Compliance (DMARC) or DomainKeys Identified Mail (DKIM) record, can make it easier to receive emails if your recipient is at Gmail. Please refer to our guides listed [at the bottom of this page](#go-further) to configure them.
 
 ### Check your information
 
@@ -141,7 +144,12 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 ## Go further
 
+[Configure a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+
+[Configure an SPF record](/pages/web_cloud/domains/dns_zone_spf)
+
+[Configure a DMARC record](/pages/web_cloud/domains/dns_zone_dmarc)
+
 To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.
-

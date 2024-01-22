@@ -1,7 +1,7 @@
 ---
 title: Den Versand von E-Mails optimieren
 excerpt: Erfahren Sie hier, wie Sie das Spam-Risiko reduzieren, wenn Sie E-Mails versenden 
-updated: 2022-12-20
+updated: 2024-01-19
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-12-20
 
 ## Ziel
 
-Antispam-Strategien werden immer strikter. Um ein Blockieren Ihrer E-Mails durch Sicherheitsfunktionen zu vermeiden, sind Einstellungen erforderlich, die Ihre Nachrichten validieren und beim Empfänger authentifizieren.
+Im Allgemeinen sind die Anti-Spam-Richtlinien streng. Um den Versand von E-Mails zu beschleunigen und die Empfänger zu erreichen, ohne dass die Sicherheitswerkzeuge blockiert werden, sind Einstellungen erforderlich, um Ihre Nachrichten und deren Inhalt auf den Empfängerservern zu authentifizieren, die sie verarbeiten.
 
 **Diese Anleitung erklärt, wie Sie den Versand Ihrer E-Mails optimieren.**
 
@@ -23,7 +23,8 @@ Antispam-Strategien werden immer strikter. Um ein Blockieren Ihrer E-Mails durch
 
 ## Voraussetzungen
 
-- Sie haben einen bereits konfigurierten E-Mail-Server.
+ Sie sind Administrator eines konfigurierten E-Mail-Servers.
+- Sie können die DNS-Zone der Domains verwalten, die für den Versand verwendet werden
 
 > [!warning]
 >
@@ -34,27 +35,31 @@ Antispam-Strategien werden immer strikter. Um ein Blockieren Ihrer E-Mails durch
 
 ### SPF-Eintrag konfigurieren <a name="spfrecord"></a>
 
-Bei dedizierten Infrastrukturen (Dedicated Server, VPS, Public Cloud Instanz oder Hosted Private Cloud) hat der optimale SPF-Eintrag folgende Form: `v=spf1 ip4:server_ipv4 ~all`. Denken Sie daran, 'server_ipv4' durch die IPv4-Adresse Ihres Servers zu ersetzen.
+Bei dedizierten Infrastrukturen (Dedicated Server, VPS, Public Cloud Instanz oder Hosted Private Cloud) hat der optimale SPF-Eintrag (Sender Policy Framework) folgende Form: `v=spf1 ip4:server_ipv4 ~all`. Denken Sie daran, 'server_ipv4' durch die IPv4-Adresse Ihres Servers zu ersetzen.
 
 > [!primary]
 >
 > Das Symbol vor *all* hat folgende Bedeutung:
 >
 > - `+`: Akzeptieren
-> - `-`: Nicht akzeptieren
-> - `~`: Zu überprüfen (*soft fail*)
+> - `-`: Ablehnen
+> - `~`: Fehler (*soft fail*)
 > - `?`: Neutral
 >
 
-Weitere Informationen zur Syntax des SPF-Eintrags finden Sie unter: <http://www.open-spf.org/>.
-
-Sie können den SPF-Eintrag noch genauer gestalten, indem Sie etwa eine bestimmte Domain konfigurieren oder eine IPv6 angeben. Um Ihren SPF-Eintrag zu konfigurieren, folgen Sie [dieser Anleitung](/pages/web_cloud/domains/dns_zone_spf).
+Sie können natürlich noch einen Schritt weiter gehen, indem Sie den SPF-Eintrag für einen bestimmten Domainnamen konfigurieren oder die IPv6-Adresse verwenden. Weitere Informationen zum SPF-Eintrag finden Sie in unserer Anleitung zum [Konfigurieren eines SPF](/pages/web_cloud/domains/dns_zone_spf)-Eintrags.
 
 ### DKIM-Eintrag konfigurieren
 
-Die Konfiguration eines DKIM-Eintrags (DomainKeys Identified Mail) bietet zusätzlichen Schutz, um zu verhindern, dass Ihre E-Mails als Spam gekennzeichnet werden. DKIM ist eine einfache Signatur, mit der die Sender-Domain authentifiziert werden kann.
+Mit dem DKIM-Eintrag (DomainKeys Identified Mail) können Sie E-Mails signieren, um deren Spoofing zu verhindern. Diese Signatur funktioniert nach dem Prinzip eines Paars aus privatem und öffentlichem Schlüssel, das die Authentifizierung der Sender-Domain ermöglicht.
 
-Diese Authentifizierung erfolgt mit einem DKIM-Schlüssel, der in Ihrer DNS-Zone hinzugefügt werden muss. Sie können dazu einen DKIM-Schlüsselgenerator verwenden, zum Beispiel: <http://dkimcore.org/tools/keys.html>. Folgen Sie den Anweisungen auf der Seite des Generators Ihrer Wahl.
+Weitere Informationen finden Sie in unserer Anleitung zur [Konfiguration eines DKIM](/pages/web_cloud/domains/dns_zone_dkim)-Eintrags.
+
+### DMARC-Eintrag konfigurieren
+
+Domain-based Message Authentication, Reporting and Conformance (DMARC) ist ein Sicherheitsstandard, der auf den beiden E-Mail-Sicherheitsmethoden SPF und DKIM basiert. Argumente, die im DMARC-Datensatz registriert sind, leiten den Empfänger abhängig vom SPF- und/oder DKIM-Ergebnis an, wie E-Mails verarbeitet werden sollen. Im DMARC-Eintrag kann eine E-Mail-Adresse eingerichtet werden, die einen Bericht über Authentifizierungsfehler erhält.
+
+Weitere Informationen finden Sie in unserer Anleitung zum [Konfigurieren eines DMARC-Eintrags](/pages/web_cloud/domains/dns_zone_dmarc).
 
 ### *Reverse IP* konfigurieren <a name="reverseip"></a>
 
@@ -62,7 +67,7 @@ Um den Versand zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu v
 
 Erstellen Sie zunächst einen A-Eintrag in der DNS-Zone Ihres Domainnamens mit der IP-Adresse Ihres Servers als Ziel.
 
-Wenn Sie DNS-Server von OVHcloud nutzen, verwenden Sie dazu [unsere Anleitung](/pages/web_cloud/domains/dns_zone_edit#zugang-zur-verwaltung-einer-ovhcloud-dns-zone).
+Wenn Ihre DNS-Server von OVHcloud verwaltet werden, lesen Sie unsere Anleitung zur Bearbeitung [der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
 
 Nach der Änderung der DNS-Zone Ihres Domainnamens ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
@@ -101,9 +106,9 @@ Geben Sie Ihren Domainnamen in den Bereich `Reverse` ein und klicken Sie auf `Be
  
 Microsoft verwendet eine *Whitelist Policy*. Dies bedeutet, dass Servern generell nicht vertraut wird und ein spezifischer Vorgang erforderlich ist, um Ihren E-Mail-Server validieren zu lassen.
 
-Bevor Sie mit der Whitelist-Operation Ihrer IP-Adresse beginnen, überprüfen Sie, ob Sie einen [*Reverse*](#reverseip)-Eintrag für Ihre IP eingerichtet haben (und nicht den Standard-Eintrag von OVHcloud).
+Bevor Sie mit der Whitelist Ihrer IP beginnen, überprüfen Sie, dass Sie einen [Reverse](#reverseip) für Ihre IP-Adresse eingerichtet haben (und nicht den standardmäßigen Reverse von OVHcloud).
 
-Microsoft überprüft auch den SPF-Eintrag. Es wird daher empfohlen, einen [zu konfigurieren](#spfrecord).
+Microsoft überprüft auch den SPF-Eintrag, daher wird empfohlen, ihn zu konfigurieren.
 
 Anschließend müssen Sie die Verträge zu SNDS (Smart Network Data Services) und JMRP (Junk Mail Reporting Partner Program) unterzeichnen.
 
@@ -138,15 +143,19 @@ Für mehr Informationen hierzu können Sie bei Microsoft eine [Support-Anfrage e
 
 #### Gmail Server
 
-Das Hinzufügen spezifischer Einträge (z.B. DMARC-Einträge) kann den Empfang von E-Mails erleichtern, wenn Ihr Empfänger bei Gmail ist. Hier ein Artikel von Google, der Ihnen dabei helfen kann: [Add a DMARC record](https://support.google.com/a/answer/2466563?){.external}.
-
-Google bietet auch einen [Artikel zur Spam-Prävention](https://support.google.com/mail/answer/81126?hl=en){.external} für Gmail-Benutzer.
+Das Hinzufügen bestimmter Datensätze, wie z. B. DMARC (Domain-based Message Authentication, Reporting, and Conformance) oder DKIM (DomainKeys Identified Mail), kann den Empfang von E-Mails vereinfachen, wenn der Empfänger bei Gmail ist. Für die Konfiguration lesen Sie bitte unsere [unten auf dieser Seite](#go-further) aufgeführten Anleitungen.
 
 ### Ihre Konfiguration überprüfen
 
 Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/) zu verwenden, um zu überprüfen, dass alle Ihre Einstellungen korrekt sind.
 
 ## Weiterführende Informationen
+
+[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)
+
+[SPF-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_spf)
+
+[DMARC-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](https://partner.ovhcloud.com/de/directory/), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
 
