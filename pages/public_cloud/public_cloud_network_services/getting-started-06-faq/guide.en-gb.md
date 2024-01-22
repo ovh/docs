@@ -25,7 +25,7 @@ A beta is ongoing to provide integration with Managed Kubernetes Service. Please
 
 ### I want to monitor my Public Cloud Load Balancer. Is it possible to enable [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatically on Load Balancer?
 
-Yes this feature is available since we rolled out Zed version in June 2023. Check this [page](../technical-resources-02-octavia-monitoring-prometheus/guide.en-gb.md)
+Yes this feature is available since we rolled out Zed version in June 2023. You can find more information on [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 
 ### How is the redundancy implemented for each type of service plan? Are the Amphoras configured in a ACT/STBY mode?
 
