@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3"
 excerpt: "Ce guide fournit des instructions générales pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage S3"
-updated: 2024-01-17
+updated: 2024-01-22
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Ce guide vous détaille les étapes pour utiliser OVHcloud Backint Agent pour SA
 
 OVHcloud Backint Agent pour SAP HANA vous permet de sauvegarder et de restaurer votre base de données SAP HANA sur un ou plusieurs buckets Object Storage S3 OVHcloud.
 
-L'intérêt d'utiliser plusieurs buckets Object Storage S3 est de séparer les sauvegardes de données dites "DATA" des sauvegardes de données de fichiers de log dites "LOG", ou de stocker sur un bucket Object Storage S3 ayant des besoins de rétention différents ou encore sur une région différente.
+L'intérêt d'utiliser plusieurs buckets Object Storage S3 est de séparer les sauvegardes de données dites `databackup` des sauvegardes de fichiers de logs dites `log_backup`, ou de stocker sur un bucket Object Storage S3 ayant des besoins de rétention différents ou encore sur une région différente.
 
 ![two_buckets](images/two_buckets.png){.thumbnail}
 
@@ -153,17 +153,17 @@ Afin de valider les fichiers de configuration précédemment créés, vous pouve
 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -u SYSTEM -d SYSTEMDB "BACKUP DATA FOR <SID> USING BACKINT ('MANUAL_COMPLETE_BACKUP');"
 ```
 
-Vous pouvez également réaliser ces sauvegardes via le logiciel SAP HANA Studio, en sélectionnant `Backint`{.action} dans la catégorie `Destination Type`{.action}.
+Vous pouvez également réaliser ces sauvegardes via SAP HANA Cockpit, en sélectionnant `Backint`{.action} dans la catégorie `Destination Type`{.action}.
 
-![hana_studio](images/hana_studio.png){.thumbnail}
+![backup_hana_cockpit](images/backup_hana_cockpit.png){.thumbnail}
 
-Suite à la réalisation de ces sauvegardes, plusieurs fichiers nommés "DATA_BACKUP" sont présents sur votre premier bucket Object Storage S3, ils correspondent aux sauvegardes de votre base de données SAP HANA via OVHcloud Backint Agent.
+Suite à la réalisation de ces sauvegardes, plusieurs fichiers nommés `_databackup_` sont présents sur votre premier bucket Object Storage S3, ils correspondent aux sauvegardes de votre base de données SAP HANA via OVHcloud Backint Agent. Deux fichiers nommés `log_backup_0_0_0_0` ayant pour préfixe `DB_<SID>` et `SYSTEMDB` se trouvent également dans votre premier bucket Object Storage S3. Ces fichiers correspondent aux sauvegardes du catalogue de sauvegardes SAP HANA, vous permettant de lister les sauvegardes connues par SAP HANA.
 
-![data_backup](images/backup.png){.thumbnail}
+![bucket_data_backup](images/bucket_data_backup.png){.thumbnail}
 
-Dans votre second bucket Object Storage S3, sont présents les fichiers nommés "LOG_BACKUP" qui correspondent aux sauvegardes des fichiers de log.
+Dans votre second bucket Object Storage S3, sont présents les fichiers nommés `log_backup` qui correspondent aux sauvegardes des fichiers de logs.
 
-![log_backup](images/backup_log.png){.thumbnail}
+![bucket_log_backup](images/bucket_log_backup.png){.thumbnail}
 
 Si les sauvegardes ne sont pas effectuées comme attendu, vous avez la possibilité de démarrer votre diagnostic en étudiant le contenu de deux fichiers :
 
@@ -190,128 +190,15 @@ ERROR   BACKUP   SAVE DATA finished with error: [447] backup could not be comple
 
 Vous pouvez créer et utiliser plusieurs buckets Object Storage S3 pour y appliquer des paramètres supplémentaires comme une politique de rétention ou encore la gestion de l'immutabilité.
 
-En fonction du bucket Object Storage S3 souhaité, vous devrez fournir à OVHcloud Backint Agent le fichier `hdbbackint.cfg` correspondant.
-
 ### Planification
 
-Un exemple de planification via crontab avec plusieurs buckets Object Storage S3 :
-
-*Remplacez, dans les commandes ci-dessous, les caractères* `<SID>` *par le SID de votre base de données SAP HANA et les caractères* `<NI>` *par le numéro d'instance de votre base de données SAP HANA.*
-
-```bash
-# Sauvegarde complète du TENANTDB - LUN JEU DIM
-0 0 * * 1,4,7 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP');"
-
-# Sauvegarde différentielle du TENANTDB - MAR MER VEN SAM
-0 0 * * 2,3,5,6 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA DIFFERENTIAL FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_DIFFERENTIAL_BACKUP');"
-
-# Sauvegarde complète du SYSTEMDB - DIM
-0 0 * * 7 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP);"
-
-# Sauvegarde complète du TENANTDB - Mensuelle (LONGUE RETENTION)
-0 0 1 * * /usr/sap/<SID>/HDB00/monthly_backup.sh
-```
-
-> [!primary]
->
-> L'option `-U` permet d'appeler une clé stockée dans le hdbuserstore. Pour en savoir plus sur l'ajout d'une clé dans le hdbuserstore, nous vous invitons à prendre connaissance de la documentation SAP disponible à [cette adresse](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/ddbdd66b632d4fe7b3c2e0e6e341e222.html?version=2.0.02&locale=en-US).
->
-> Dans cet exemple, la clé `BACKUP` a été créée contenant le couple identifiant / mot de passe d'un utilisateur sur la base de données SAP HANA ayant le rôle de sauvegarde. La liste des rôles devant être associés à cet utilisateur est disponible à [cette adresse](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/c4b71703bb571014810ebb38dc59cf51.html).
->
-
-Le contenu du fichier `monthly_backup.sh` pourrait être :
-
-```bash
-#!/bin/bash
-
-# Changement du fichier hdbbackint.cfg pour utiliser le fichier hdbbackint-monthly.cfg
-ln -sf /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint-monthly.cfg /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint.cfg
-
-# Déclenchement de la sauvegarde complète du TENANTDB - Mensuelle (LONGUE RETENTION) vers le bucket S3 Object Storage avec une police de rétention longue
-/usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP');"
-
-# Retour arrière du fichier hdbbackint.cfg pour utiliser le fichier hdbbackint-daily.cfg
-ln -sf /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint-daily.cfg /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint.cfg
-```
+Pour la planification de vos sauvegardes SAP HANA, veuillez vous référer à notre guide [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent#planification).
 
 ### Restauration
 
-Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalisée avec OVHcloud Backint Agent, vous pouvez réaliser les étapes suivantes depuis SAP HANA Studio :
+Pour la restauration de votre base de données SAP HANA, veuillez vous référer à notre guide [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent#restauration).
 
-> [!tabs]
-> **Étape 1**
->> Déterminez sur quel bucket Object Storage S3 votre sauvegarde se trouve et pointez votre fichier `hdbbackint.cfg` vers la bonne configuration.
->>
->> Dans cet exemple, nous souhaitons utiliser une sauvegarde mensuelle précise.
->>
->> ```bash
->> ln -sf /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint-monthly.cfg /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint.cfg
->> ```
->>
-> **Étape 2**
->> Sélectionnez votre TENANTDB que vous souhaitez restaurer.
->>
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_1](images/hana_studio_recover_1.png){.thumbnail}
->>
-> **Étape 3**
->> Sélectionnez l'option que vous souhaitez utiliser pour restaurer votre TENANTDB :
->>
->> - Restaure à l'état le plus récent possible
->> - Restaure à une date et une heure précise
->> - Restaure via une sauvegarde précise
->>
->> Dans cet exemple, nous souhaitons restaurer via une sauvegarde précise.
->>
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_2](images/hana_studio_recover_2.png){.thumbnail}
->>
-> **Étape 4**
->> Veillez à sélectionner les options `Recover using the backup catalog`{.action} et `Search for the backup catalog in Backint only`{.action}.
->>
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_3](images/hana_studio_recover_3.png){.thumbnail}
->>
-> **Étape 5**
->> Le TENANTDB doit être éteint pour réaliser sa restauration.
->>
->> Veillez à arrêter votre système SAP lié à cette base de données SAP HANA avant de démarrer la restauration.
->>
->> ![hana_studio_recover_4](images/hana_studio_recover_4.png){.thumbnail}
->>
-> **Étape 6**
->> Après quelques secondes, SAP HANA Studio affiche les sauvegardes complètes inscrites dans le catalogue de sauvegarde de votre base de données SAP HANA.
->>
->> Il est recommandé de cliquer sur `Check Availability`{.action} afin de s'assurer que la sauvegarde soit toujours disponible dans le bucket Object Storage S3.
->>
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_5](images/hana_studio_recover_5.png){.thumbnail}
->>
-> **Étape 7**
->> Dans le cas d'une restauration avec une sauvegarde précise, aucune option n'est disponible à cette étape.
->>
->> Cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_7](images/hana_studio_recover_6.png){.thumbnail}
->>
-> **Étape 8**
->> La restauration de votre base de données SAP HANA démarre.
->>
->> ![hana_studio_recover_8](images/hana_studio_recover_7.png){.thumbnail}
->>
-> **Étape 9**
->> Une fois la restauration réalisée avec succès, votre base de données SAP HANA est démarrée et disponible.
->>
->> Pointez votre fichier `hdbbackint.cfg` vers la configuration utilisée pour les sauvegardes quotidiennes.
->>
->> ```bash
->> ln -sf /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint-daily.cfg /usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint.cfg
->> ```
->>
+Les étapes sont identiques, même si vous utilisez des buckets Object Storage S3 différents pour vos sauvegardes `DATA` et `LOG`.
 
 ## Aller plus loin
 
