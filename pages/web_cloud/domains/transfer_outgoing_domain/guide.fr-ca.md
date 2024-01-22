@@ -4,8 +4,6 @@ excerpt: "Découvrez comment effectuer le transfert d’un nom de domaine OVHclo
 updated: 2024-01-22
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mbyfj1JyK7w?si=r58j3fGglskqlbHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Objectif
 
 Un **transfert de domaine** fait référence au déplacement d'un nom de domaine d'un bureau d'enregistrement à un autre. Par exemple, si vous avez commandé un nom de domaine sur notre site Web, OVHcloud est son bureau d'enregistrement actuel. Un transfert de domaine sortant doit être initié par le nouveau bureau d'enregistrement.
