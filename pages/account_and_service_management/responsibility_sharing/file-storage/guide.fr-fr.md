@@ -1,5 +1,5 @@
 ---
-title: File Storage services - Responsibility model
+title: File Storage services - Responsibility model (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer for NAS-HA and Enterprise File Storage solutions'
 updated: 2024-01-22
 ---
@@ -158,6 +158,6 @@ This shared model can help relieve the customer’s operational burden.
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
