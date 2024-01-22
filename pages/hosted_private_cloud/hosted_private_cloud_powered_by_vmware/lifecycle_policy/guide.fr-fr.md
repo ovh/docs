@@ -1,7 +1,7 @@
 ---
 title: Cycle de vie de la solution VMware on OVHcloud
 excerpt: VMware on OVHcloud
-updated: 2023-12-29
+updated: 2024-01-22
 ---
 
 > [!warning]
