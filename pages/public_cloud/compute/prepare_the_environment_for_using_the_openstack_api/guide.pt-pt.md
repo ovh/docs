@@ -1,7 +1,7 @@
 ---
 title: 'Preparar o ambiente para utilizar a API OpenStack'
 excerpt: 'Instale o ambiente OpenStack para controlar as suas instâncias através da API'
-updated: 2023-11-29
+updated: 2024-01-22
 ---
 
 > [!primary]
@@ -26,12 +26,6 @@ Graças à API OpenStack, pode automatizar esta gestão gerando scripts.
 - Dispor de um acesso **root** ao ambiente que pretende configurar.
 
 ## Instruções
-
-Para configurar o Load Balancer Public Cloud, deve instalar o cliente Python Octavia :
-
-```console
-pip3 install python-octaviaclient
-```
 
 ### Em Debian
 
