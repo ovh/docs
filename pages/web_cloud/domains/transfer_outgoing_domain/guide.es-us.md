@@ -1,7 +1,7 @@
 ---
 title: "Transferir un dominio a otro agente registrador"
 excerpt: "Descubra cómo transferir un dominio de OVHcloud al agente registrador que elija"
-updated: 2024-01-22
+updated: 2023-06-28
 ---
 
 > [!primary]
