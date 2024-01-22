@@ -951,11 +951,6 @@
                 + [AI Partners Ecosystem - Voxist - Models features, capabilities and billing](public_cloud/ai_machine_learning/ecosystem_03_voxist_billing_features_capabilities)tuto_15_rock-paper-scissors/
                 + [AI Partners Ecosystem - Voxist - Models concept](public_cloud/ai_machine_learning/ecosystem_04_voxist_models)
     + [Data Analytics](products/public-cloud-data-analytics)
-        + [Data Integration](products/public-cloud-data-analytics-data-integration)
-            + [Guides](public-cloud-data-analytics-data-integration-guides)
-                + [Data Integration - CLI - Installation](public_cloud/data_analytics/data_integration/guide_01_cli_installation)
-                + [Data Integration - CLI - Commands reference](public_cloud/data_analytics/data_integration/guide_02_cli_commands_reference)
-                + [Data Integration - UI - Visualize workflows and jobs](public_cloud/data_analytics/data_integration/guide_03_ui_visualize)
         + [Data Processing](products/public-cloud-data-analytics-data-processing)
             + [Concepts](public-cloud-data-analytics-data-processing-concepts)
                 + [Data Processing Overview](public_cloud/data_analytics/data_processing/00_CONCEPTS_Overview)
