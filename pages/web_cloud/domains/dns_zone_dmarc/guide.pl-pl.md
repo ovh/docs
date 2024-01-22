@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu DMARC w Twojej domenie
 excerpt: Dowiedz się, jak działa DMARC i jak wdrożyć go dla Twojej usługi e-mail
-Updated: 2023-12-13
+updated: 2023-12-13
 ---
 
 > [!primary]
