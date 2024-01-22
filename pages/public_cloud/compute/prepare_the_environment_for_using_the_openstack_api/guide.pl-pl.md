@@ -17,7 +17,8 @@ Dzięki API OpenStack możesz zautomatyzować zarządzanie usługami, tworząc s
 > [!primary]
 >
 > OpenStack wymaga języka Python >=3.8.
->
+> Ten przewodnik opisuje instalację pakietu `python-openstackclient`, który zawiera wiersz poleceń dla większości projektów OpenStack.
+> Projekt Octavia (który zasila `Public Cloud Load Balancer`) nie jest dołączony. W związku z tym należy uruchomić `pip3 install python-octaviaclient` oprócz instrukcji instalacji znajdujących się poniżej.
 
 **Dowiedz się, jak zainstalować narzędzia OpenStack.**
 

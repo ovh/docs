@@ -13,6 +13,8 @@ Grâce à l'API OpenStack, vous pouvez automatiser cette gestion en générant d
 > [!primary]
 >
 > OpenStack requiert Python >=3.8.
+> Ce guide décrit l'installation du paquet `python-openstackclient` qui regroupe la ligne de commande pour la majorité des projets OpenStack.
+> Le projet Octavia (qui alimente le `Load Balancer Public Cloud`) n’est pas inclus. Vous devez donc exécuter `pip3 install python-octaviaclient` en plus des instructions d'installation ci-dessous.
 >
 
 **Découvrez comment installer ces outils OpenStack.**
@@ -52,9 +54,9 @@ openstack --help
 ```
 
 > [!primary]
-> 
+>
 > La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
-> 
+>
 
 ### Sous CentOS
 
@@ -85,9 +87,9 @@ openstack --help
 ```
 
 > [!primary]
-> 
+>
 > La documentation relative à l’API OpenStack est disponible [sur cette page](https://docs.openstack.org/python-openstackclient/latest/){.external}.
-> 
+>
 
 ### Sous Windows
 
@@ -109,7 +111,7 @@ Passez à l’onglet `Avancé`{.action} et cliquez sur `Variables environnement`
 
 ![Paramètres de performance](images/3_preparation_openstack_environment_windows.png){.thumbnail}
 
-#### Étape 3 : configurer les variables d'environnement 
+#### Étape 3 : configurer les variables d'environnement
 
 Dans la section « Variables système », choisissez « Nouveau », attribuez le nom « PYTHON_HOME » et ajoutez le chemin jusqu'à Python.
 
