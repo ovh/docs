@@ -6,7 +6,7 @@ updated: 2022-11-02
 
 ## Objective
 
-Our new Load Balancer as a Service (LBaaS) solution is based on [OpenStack Octavia](https://docs.openstack.org/octavia/queens/reference/introduction.html){.external} and is fully integrated into the Public Cloud universe.
+Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.openstack.org/wiki/Octavia) and is fully integrated into the Public Cloud universe. 
 
 **Learn how to configure an OVHcloud Load Balancer with the help of this guide.**
 
