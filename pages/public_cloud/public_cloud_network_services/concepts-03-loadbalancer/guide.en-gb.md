@@ -22,7 +22,7 @@ The listener specifies a listening endpoint where the incoming traffic is receiv
 
 The following protocols are available for incoming traffic: `HTTP`, `HTTPS`, `TCP`, `UDP`, `SCTP`.
 
-A specific protocol is `PROMETHEUS`, this enables configuring a prometheus endpoint and does not handle traffic itself. Find more information about this configuration on [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
+A specific protocol is `PROMETHEUS`, it enables configuring a prometheus endpoint and does not handle traffic itself. Find more information about this configuration on [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 
 ### Pool
 
