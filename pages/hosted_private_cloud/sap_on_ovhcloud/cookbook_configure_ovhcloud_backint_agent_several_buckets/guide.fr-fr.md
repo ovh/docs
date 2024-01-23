@@ -10,7 +10,11 @@ Ce guide vous détaille les étapes pour utiliser OVHcloud Backint Agent pour SA
 
 OVHcloud Backint Agent pour SAP HANA vous permet de sauvegarder et de restaurer votre base de données SAP HANA sur un ou plusieurs buckets Object Storage S3 OVHcloud.
 
-L'intérêt d'utiliser plusieurs buckets Object Storage S3 est de séparer les sauvegardes de données dites `databackup` des sauvegardes de fichiers de logs dites `log_backup`, ou de stocker sur un bucket Object Storage S3 ayant des besoins de rétention différents ou encore sur une région différente.
+Utiliser plusieurs buckets Object Storage S3 peut être notamment utile pour :
+
+- séparer les sauvegardes de données dites `databackup` des sauvegardes de fichiers de logs dites `log_backup` ;
+- stocker sur des buckets Object Storage S3 ayant des besoins de rétention différents ;
+- utiliser des régions différentes.
 
 ![two_buckets](images/two_buckets.png){.thumbnail}
 

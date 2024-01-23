@@ -245,55 +245,37 @@ Nous vous conseillons de vous référer à la SAP Note [2782059](https://launchp
 
 Voici un exemple de planification quotidienne de sauvegardes du TENANTDB SAP HANA via SAP HANA Cockpit :
 
-> [!tabs]
-> **Étape 1**
->>
->> Sélectionnez le TENANTDB sur lequel vous souhaitez planifier les sauvegardes. Cliquez sur `+`{.action} pour ajouter une planification.
->>
->> ![backup_scheduling_01](images/backup_scheduling/backup_scheduling_01.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Sélectionnez l'option `Schedule a Series of Backups`{.action}.
->>
->> ![backup_scheduling_02](images/backup_scheduling/backup_scheduling_02.png){.thumbnail}
->>
-> **Étape 3**
->>
->> Donnez un nom à votre planification.
->>
->> ![backup_scheduling_03](images/backup_scheduling/backup_scheduling_03.png){.thumbnail}
->>
-> **Étape 4**
->>
->> Sélectionnez l'option `Complete`{.action} puis `Backint`{.action}. Vous avez la possibilité de configurer un préfixe à vos sauvegardes. Par défaut, la date et l'heure sont préfixées.
->>
->> ![backup_scheduling_04](images/backup_scheduling/backup_scheduling_04.png){.thumbnail}
->>
-> **Étape 5**
->>
->> Sélectionnez l'option `Weekly`{.action}.
->>
->> ![backup_scheduling_05](images/backup_scheduling/backup_scheduling_05.png){.thumbnail}
->>
-> **Étape 6**
->>
->> Sélectionnez votre fuseau horaire, l'heure du déclenchement de votre sauvegarde et les jours de déclenchement. Dans cet exemple de sauvegardes quotidiennes, nous cochons tous les jours de la semaine.
->>
->> ![backup_scheduling_06](images/backup_scheduling/backup_scheduling_06.png){.thumbnail}
->>
-> **Étape 7**
->>
->> Veuillez vérifier les paramètres de votre planification avant de valider.
->>
->> ![backup_scheduling_07](images/backup_scheduling/backup_scheduling_07.png){.thumbnail}
->>
-> **Étape 8**
->>
->> La planification quotidienne est à présent opérationnelle pour votre TENANTDB.
->>
->> ![backup_scheduling_08](images/backup_scheduling/backup_scheduling_08.png){.thumbnail}
->>
+1\. Sélectionnez le TENANTDB sur lequel vous souhaitez planifier les sauvegardes. Cliquez sur `+`{.action} pour ajouter une planification.
+
+![backup_scheduling_01](images/backup_scheduling/backup_scheduling_01.png){.thumbnail}
+
+2\. Sélectionnez l'option `Schedule a Series of Backups`{.action}.
+
+![backup_scheduling_02](images/backup_scheduling/backup_scheduling_02.png){.thumbnail}
+
+3\. Donnez un nom à votre planification.
+
+![backup_scheduling_03](images/backup_scheduling/backup_scheduling_03.png){.thumbnail}
+
+4\. Sélectionnez l'option `Complete`{.action} puis `Backint`{.action}. Vous avez la possibilité de configurer un préfixe à vos sauvegardes. Par défaut, la date et l'heure sont préfixées.
+
+![backup_scheduling_04](images/backup_scheduling/backup_scheduling_04.png){.thumbnail}
+
+5\. Sélectionnez l'option `Weekly`{.action}.
+
+![backup_scheduling_05](images/backup_scheduling/backup_scheduling_05.png){.thumbnail}
+
+6\. Sélectionnez votre fuseau horaire, l'heure du déclenchement de votre sauvegarde et les jours de déclenchement. Dans cet exemple de sauvegardes quotidiennes, nous cochons tous les jours de la semaine.
+
+![backup_scheduling_06](images/backup_scheduling/backup_scheduling_06.png){.thumbnail}
+
+7\. Veuillez vérifier les paramètres de votre planification avant de valider.
+
+![backup_scheduling_07](images/backup_scheduling/backup_scheduling_07.png){.thumbnail}
+
+8\. La planification quotidienne est à présent opérationnelle pour votre TENANTDB.
+
+![backup_scheduling_08](images/backup_scheduling/backup_scheduling_08.png){.thumbnail}
 
 Retrouvez ci-dessous la même planification quotidienne de sauvegardes du TENANTDB SAP HANA via crontab :
 
@@ -315,101 +297,75 @@ Retrouvez ci-dessous la même planification quotidienne de sauvegardes du TENANT
 
 Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalisée avec OVHcloud Backint Agent, vous pouvez réaliser les étapes suivantes depuis SAP HANA Cockpit :
 
-> [!tabs]
-> **Étape 1**
->>
->> Dans l'onglet `Database Management`{.action}, sélectionnez votre TENANTDB. Cliquez sur `Tenant Actions`{.action} puis sélectionnez `Recover Tenant`{.action}.
->>
->> ![recover_tenant_01](images/recover_tenant/recover_tenant_01.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Le TENANTDB doit être éteint pour réaliser sa restauration.
->>
->> Veillez à arrêter votre système SAP lié à cette base de données SAP HANA avant de démarrer la restauration.
->>
->> ![recover_tenant_02](images/recover_tenant/recover_tenant_02.png){.thumbnail}
->>
-> **Étape 3**
->>
->> Sélectionnez l'option souhaitée :
->>
->> 1. `Data and logs backups`{.action} vous permet de revenir à une date et une heure précise.
->> 2. `Full data backup only`{.action} vous permet de revenir à un état d'une sauvegarde complète.
->>
->> Dans notre exemple, nous choisissons l'option `Data and logs backups`{.action}.
->>
->> ![recover_tenant_03](images/recover_tenant/recover_tenant_03.png){.thumbnail}
->>
-> **Étape 4**
->>
->> Si vous avez sélectionné l'option précédente `Data and logs backups`{.action}, vous avez deux possibilités :
->>  
->> 1. `Recover to the most recent state`{.action} vous permet de revenir à l'état le plus récent possible.
->> 2. `Recover to a specific point in time`{.action} vous permet de revenir à une date et une heure précise.
->>
->> Dans notre exemple, nous choisissons l'option `Recover to the most recent state`{.action}.
->>
->> ![recover_tenant_04](images/recover_tenant/recover_tenant_04.png){.thumbnail}
->>
-> **Étape 5**
->>
->> Si vous n'avez pas modifié la localisation du catalogue de sauvegardes, l'option `Backup location only`{.action} est correcte.
->>
->> Dans le cas contraire, veuillez indiquer le chemin.
->>
->> ![recover_tenant_05](images/recover_tenant/recover_tenant_05.png){.thumbnail}
->>
-> **Étape 6**
->>
->> Après quelques secondes, les sauvegardes complètes inscrites dans le catalogue de sauvegardes de votre base de données SAP HANA sont listées.
->>
->> ![recover_tenant_06](images/recover_tenant/recover_tenant_06.png){.thumbnail}
->>
-> **Étape 7**
->>
->> Vous pouvez laisser l'option `Yes (recommended)`{.action} sélectionnée.
->>
->> ![recover_tenant_07](images/recover_tenant/recover_tenant_07.png){.thumbnail}
->>
-> **Étape 8**
->>
->> Si vous n'avez pas modifié la localisation des sauvegardes et des sauvegardes de logs, laissez les champs vides.
->>
->> Dans le cas contraire, veuillez indiquer le chemin.
->>
->> ![recover_tenant_08](images/recover_tenant/recover_tenant_08.png){.thumbnail}
->>
-> **Étape 9**
->>
->> Nous vous recommandons de sélectionner l'option `Yes`{.action} pour la catégorie `Backint`{.action}. Cette option permet de vérifier la disponibilité des sauvegardes avant de déclencher la restauration.
->>
->> ![recover_tenant_09](images/recover_tenant/recover_tenant_09.png){.thumbnail}
->>
-> **Étape 10**
->>
->> Dans notre exemple, nous sélectionnons l'option `No`{.action} pour l'étape `Initialize the log area`{.action}.
->>
->> ![recover_tenant_10](images/recover_tenant/recover_tenant_10.png){.thumbnail}
->>
-> **Étape 11**
->>
->> Veuillez vérifier les paramètres de restauration avant de valider.
->>
->> ![recover_tenant_11](images/recover_tenant/recover_tenant_11.png){.thumbnail}
->>
-> **Étape 12**
->>
->> La restauration des services du TENANTDB démarre.
->>
->> ![recover_tenant_12](images/recover_tenant/recover_tenant_12.png){.thumbnail}
->>
-> **Étape 13**
->>
->> Une fois la restauration réalisée avec succès, votre base de données SAP HANA est démarrée et disponible.
->>
->> ![recover_tenant_13](images/recover_tenant/recover_tenant_13.png){.thumbnail}
->>
+1\. Dans l'onglet `Database Management`{.action}, sélectionnez votre TENANTDB. Cliquez sur `Tenant Actions`{.action} puis sélectionnez `Recover Tenant`{.action}.
+
+![recover_tenant_01](images/recover_tenant/recover_tenant_01.png){.thumbnail}
+
+2\. Le TENANTDB doit être éteint pour réaliser sa restauration.
+
+Veillez à arrêter votre système SAP lié à cette base de données SAP HANA avant de démarrer la restauration.
+
+![recover_tenant_02](images/recover_tenant/recover_tenant_02.png){.thumbnail}
+
+3\. Sélectionnez l'option souhaitée :
+
+- `Data and logs backups`{.action} vous permet de revenir à une date et une heure précise.
+- `Full data backup only`{.action} vous permet de revenir à un état d'une sauvegarde complète.
+
+Dans notre exemple, nous choisissons l'option `Data and logs backups`{.action}.
+
+![recover_tenant_03](images/recover_tenant/recover_tenant_03.png){.thumbnail}
+
+4\.
+
+Si vous avez sélectionné l'option précédente `Data and logs backups`{.action}, vous avez deux possibilités :
+  
+- `Recover to the most recent state`{.action} vous permet de revenir à l'état le plus récent possible.
+- `Recover to a specific point in time`{.action} vous permet de revenir à une date et une heure précise.
+
+Dans notre exemple, nous choisissons l'option `Recover to the most recent state`{.action}.
+
+![recover_tenant_04](images/recover_tenant/recover_tenant_04.png){.thumbnail}
+
+5\. Si vous n'avez pas modifié la localisation du catalogue de sauvegardes, l'option `Backup location only`{.action} est correcte.
+
+Dans le cas contraire, veuillez indiquer le chemin.
+
+![recover_tenant_05](images/recover_tenant/recover_tenant_05.png){.thumbnail}
+
+6\. Après quelques secondes, les sauvegardes complètes inscrites dans le catalogue de sauvegardes de votre base de données SAP HANA sont listées.
+
+![recover_tenant_06](images/recover_tenant/recover_tenant_06.png){.thumbnail}
+
+7\. Vous pouvez laisser l'option `Yes (recommended)`{.action} sélectionnée.
+
+![recover_tenant_07](images/recover_tenant/recover_tenant_07.png){.thumbnail}
+
+8\. Si vous n'avez pas modifié la localisation des sauvegardes et des sauvegardes de logs, laissez les champs vides.
+
+Dans le cas contraire, veuillez indiquer le chemin.
+
+![recover_tenant_08](images/recover_tenant/recover_tenant_08.png){.thumbnail}
+
+9\. Nous vous recommandons de sélectionner l'option `Yes`{.action} pour la catégorie `Backint`{.action}. Cette option permet de vérifier la disponibilité des sauvegardes avant de déclencher la restauration.
+
+![recover_tenant_09](images/recover_tenant/recover_tenant_09.png){.thumbnail}
+
+10\. Dans notre exemple, nous sélectionnons l'option `No`{.action} pour l'étape `Initialize the log area`{.action}.
+
+![recover_tenant_10](images/recover_tenant/recover_tenant_10.png){.thumbnail}
+
+11\. Veuillez vérifier les paramètres de restauration avant de valider.
+
+![recover_tenant_11](images/recover_tenant/recover_tenant_11.png){.thumbnail}
+
+12\. La restauration des services du TENANTDB démarre.
+
+![recover_tenant_12](images/recover_tenant/recover_tenant_12.png){.thumbnail}
+
+13\. Une fois la restauration réalisée avec succès, votre base de données SAP HANA est démarrée et disponible.
+
+![recover_tenant_13](images/recover_tenant/recover_tenant_13.png){.thumbnail}
 
 ## Aller plus loin
 
