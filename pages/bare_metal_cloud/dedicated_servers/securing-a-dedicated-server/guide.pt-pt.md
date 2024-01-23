@@ -1,7 +1,7 @@
 ---
 title: "Proteger um servidor dedicado"
 excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
-updated: 2024-01-17
+updated: 2024-01-23
 ---
 
 > [!primary]
@@ -81,7 +81,7 @@ Substitua o número **22** pelo número de porta à sua escolha.<br>
 Para uma maior segurança, utilize um número entre 49152 e 65535.<br>
 Registe e saia do ficheiro de configuração.
 
-Elimine o `#` no início da linha para a descomentar. Por exemplo:
+Se a linha estiver "comentada" (ou seja, precedida por um "#") como no exemplo acima, certifique-se de que remove o "#" antes de guardar o ficheiro para que a alteração seja tida em conta. Exemplo:
 
 ```console
 Port 49152

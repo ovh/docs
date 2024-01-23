@@ -1,7 +1,7 @@
 ---
 title: "Proteger un servidor dedicado"
 excerpt: "Descubra los elementos básicos que le permiten proteger un servidor dedicado"
-updated: 2024-01-17
+updated: 2024-01-23
 ---
 
 > [!primary]
@@ -81,7 +81,7 @@ Sustituya el número **22** por el número de puerto que desee.<br>
 Para mayor seguridad, utilice un número entre 49152 y 65535.<br>
 Guarde y cierre el archivo de configuración.
 
-Borre el `#` al principio de la línea para descomentarla. Por ejemplo
+Si la línea está "comentada" (es decir, precedida de un "#") como en el ejemplo anterior, asegúrese de eliminar el "#" antes de guardar el archivo para que se tenga en cuenta el cambio. Ejemplo:
 
 ```console
 Port 49152

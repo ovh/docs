@@ -1,7 +1,7 @@
 ---
 title: "Proteger um VPS"
 excerpt: "Descubra os elementos de base que lhe permitem proteger o seu VPS"
-updated: 2024-01-17
+updated: 2024-01-23
 
 ---
 
@@ -81,7 +81,7 @@ Substitua o número **22** pelo número de porta à sua escolha.<br>
 **No entanto, certifique-se de que não indica um número de porta já utilizado no seu sistema**.
 Para uma maior segurança, utilize um número entre 49152 e 65535.<br>
 
-Elimine o `#` no início da linha para a descomentar. Por exemplo:
+Se a linha estiver "comentada" (ou seja, precedida por um "#") como no exemplo acima, certifique-se de que remove o "#" antes de guardar o ficheiro para que a alteração seja tida em conta. Exemplo:
 
 ```console
 Port 49152

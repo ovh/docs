@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser un VPS'
 excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre VPS'
-updated: 2024-01-17
+updated: 2024-01-23
 
 ---
 
@@ -75,17 +75,16 @@ Vous devriez trouver les lignes suivantes ou équivalentes :
 
 Remplacez le nombre **22** par le numéro de port de votre choix.<br>
 **Veillez toutefois à ne pas renseigner un numéro de port déjà utilisé sur votre système**. 
-Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>
+Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>Enregistrez et quittez le fichier de configuration.
 
-Supprimez le `#` au début de la ligne pour la décommenter. Par exemple :
+
+Si la ligne est "commentée" (c'est-à-dire si elle est précédée d'un "#") comme dans l'exemple ci-dessus, veillez à supprimer le "#" avant d'enregistrer le fichier pour que la modification soit prise en compte. Exemple :
 
 ```console
 Port 49152
 #AddressFamily any
 #ListenAddress 0.0.0.0
 ```
-
-Enregistrez et quittez le fichier de configuration.
 
 Redémarrez le service :
 

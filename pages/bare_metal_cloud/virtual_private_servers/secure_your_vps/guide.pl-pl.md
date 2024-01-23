@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS"
-updated: 2024-01-17
+updated: 2024-01-23
 
 ---
 
@@ -79,17 +79,15 @@ Należy znaleźć następujące lub równoważne linie:
 
 Zamień liczbę **22** na wybrany numer portu.<br>
 **Pamiętaj, aby nie wpisywać numeru portu już używanego w systemie**.
-Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.<br>
+Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.<br>Zapisz i wyjdź z pliku konfiguracyjnego.
 
-Usuń `#` na początku linii, aby ją odkomentować. Na przykład:
+Jeśli linia jest "zakomentowana" (tj. poprzedzona znakiem "#"), jak w powyższym przykładzie, należy usunąć znak "#" przed zapisaniem pliku, aby zmiana została uwzględniona. Przykład:
 
 ```console
 Port 49152
 #AddressFamily any
 #ListenAddress 0.0.0.0
 ```
-
-Zapisz i wyjdź z pliku konfiguracyjnego.
 
 Zrestartuj usługę:
 

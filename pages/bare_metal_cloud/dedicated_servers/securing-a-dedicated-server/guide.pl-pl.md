@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczanie serwera dedykowanego"
 excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo serwera dedykowanego"
-updated: 2024-01-17
+updated: 2024-01-23
 ---
 
 > [!primary]
@@ -81,7 +81,7 @@ Zamień liczbę **22** na wybrany numer portu.<br>
 Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.<br>
 Zapisz i wyjdź z pliku konfiguracyjnego.
 
-Usuń `#` na początku linii, aby ją odkomentować. Na przykład:
+Jeśli linia jest "zakomentowana" (tj. poprzedzona znakiem "#"), jak w powyższym przykładzie, należy usunąć znak "#" przed zapisaniem pliku, aby zmiana została uwzględniona. Przykład:
 
 ```console
 Port 49152

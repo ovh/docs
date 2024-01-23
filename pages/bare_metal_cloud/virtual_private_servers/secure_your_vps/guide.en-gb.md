@@ -70,17 +70,15 @@ Find the following or similar lines:
 #ListenAddress 0.0.0.0
 ```
 
-Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.<br>Save and exit the configuration file.
 
-Remove the `#` at the beginning of the line to uncomment it. For example:
+If the line is "commented out" (i.e. if it is preceded by a "#") as shown in the example above, make sure to remove the "#" before saving the file so that the change takes effect. Example:
 
 ```console
 Port 49152
 #AddressFamily any
 #ListenAddress 0.0.0.0
 ```
-
-<br>Save and exit the configuration file.
 
 Restart the service:
 

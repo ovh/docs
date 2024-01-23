@@ -1,7 +1,7 @@
 ---
 title: "Mettere in sicurezza un server dedicato"
 excerpt: "Scopri come proteggere un server dedicato grazie ad alcuni suggerimenti"
-updated: 2024-01-17
+updated: 2024-01-23
 ---
 
 > [!primary]
@@ -80,7 +80,7 @@ Sostituisci il numero **22** con il numero di porta che preferisci.<br>
 Per una maggiore sicurezza, utilizza un numero tra 49152 e 65535.<br>
 Salva e lascia il file di configurazione.
 
-Cancellare il `#` all'inizio della riga per decommentarla. Ad esempio:
+Se la riga è "commentata" (cioè preceduta da un "#") come nell'esempio precedente, assicurarsi di rimuovere il "#" prima di salvare il file, in modo che la modifica venga presa in considerazione. Esempio:
 
 ```console
 Porta 49152
