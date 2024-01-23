@@ -295,7 +295,7 @@ Voici un exemple de planification quotidienne de sauvegardes du TENANTDB SAP HAN
 >> ![backup_scheduling_08](images/backup_scheduling/backup_scheduling_08.png){.thumbnail}
 >>
 
-La même planification quotidienne de sauvegardes du TENANTDB SAP HANA via crontab.
+Retrouvez ci-dessous la même planification quotidienne de sauvegardes du TENANTDB SAP HANA via crontab :
 
 *Remplacez, dans les commandes ci-dessous, les caractères* `<SID>` *par le SID de votre base de données SAP HANA et les caractères* `<NI>` *par le numéro d'instance de votre base de données SAP HANA.*
 
