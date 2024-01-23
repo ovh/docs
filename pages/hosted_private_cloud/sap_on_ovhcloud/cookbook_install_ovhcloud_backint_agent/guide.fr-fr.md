@@ -266,7 +266,7 @@ Voici un exemple de planification quotidienne de sauvegardes du TENANTDB SAP HAN
 >>
 > **Étape 4**
 >>
->> Sélectionnez l'option `Complete`{.action}, puis `Backint`{.action}. Vous avez la possibilité de configurer un préfixe à vos sauvegardes, par défaut, la date et l'heure sont préfixées.
+>> Sélectionnez l'option `Complete`{.action} puis `Backint`{.action}. Vous avez la possibilité de configurer un préfixe à vos sauvegardes. Par défaut, la date et l'heure sont préfixées.
 >>
 >> ![backup_scheduling_04](images/backup_scheduling/backup_scheduling_04.png){.thumbnail}
 >>
