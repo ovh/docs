@@ -377,6 +377,7 @@ Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalis�
 >> Si vous n'avez pas modifié la localisation des sauvegardes et des sauvegardes de logs, laissez les champs vides.
 >>
 >> Dans le cas contraire, veuillez indiquer le chemin.
+>>
 >> ![recover_tenant_08](images/recover_tenant/recover_tenant_08.png){.thumbnail}
 >>
 > **Étape 9**
@@ -413,7 +414,7 @@ Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalis�
 ## Aller plus loin
 
 - Afin d'améliorer la sécurité de vos sauvegardes, nous vous conseillons de mettre en place la [gestion de l'immutabilité](/pages/storage_and_backup/object_storage/s3_managing_object_lock/)
-- Vous pouvez également [réaliser les sauvegardes SAP HANA avec OVHcloud Backint Agent pour SAP HANA sur plusieurs buckets Object Storage](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets/)
+- Vous pouvez également [réaliser les sauvegardes SAP HANA avec OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets/)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
