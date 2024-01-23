@@ -243,7 +243,7 @@ La planification de vos sauvegardes de votre base de données SAP HANA doit êtr
 
 Nous vous conseillons de vous référer à la SAP Note [2782059](https://launchpad.support.sap.com/#/notes/2782059), qui présente quatre options pour planifier les sauvegardes sur une base de données SAP HANA.
 
-Voici un exemple de planification quotidienne de sauvegardes du TENANTDB SAP HANA via SAP HANA Cockpit.
+Voici un exemple de planification quotidienne de sauvegardes du TENANTDB SAP HANA via SAP HANA Cockpit :
 
 > [!tabs]
 > **Étape 1**
