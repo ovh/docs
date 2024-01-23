@@ -51,7 +51,7 @@ Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomana
 
 ### Cambiar la contraseña desde el webmail
 
-La modificación de su contraseña a través del webmail está disponible para los servicios de correo electrónico de OVHcloud que utilizan **OWA** (**O**utlook **W**eb **A**pplication):
+La modificación de su contraseña a través del webmail está disponible para los servicios de correo electrónico de OVHcloud que utilizan **OWA** (**O**utlook **W**eb **A**pp):
 
 - Emails MXplan
 - Exchange

@@ -21,7 +21,7 @@ By creating a delegation, you can enable an email account user to manage their o
 
 > [!warning]
 >
-> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, there are no delegations. You can manage your password, filters and auto-replies for an email account directly via OWA (**O**utlook **W**eb **A**pplication). **You can identify which version you are using with the table below.**
+> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, there are no delegations. You can manage your password, filters and auto-replies for an email account directly via OWA (**O**utlook **W**eb **A**pp). **You can identify which version you are using with the table below.**
 >
 
 |MX Plan legacy version|MX Plan new version|

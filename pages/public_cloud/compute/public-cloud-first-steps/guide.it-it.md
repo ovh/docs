@@ -201,7 +201,7 @@ Lo Step 4 consente di configurare opzioni aggiuntive.
 ![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - È possibile implementare più istanze con la configurazione selezionata (nella quota iniziale di cui sopra).
-- È possibile scegliere di creare un’istanza flessibile che consenta di effettuare, in un secondo momento, il downgrade per un modello più piccolo (anche cambiando categoria del modello di server). Tuttavia, questo limiterà l’istanza a 50GB di**storage incluso**, a prescindere dalle operazioni di upgrade o downgrade.
+- È possibile scegliere di creare un’istanza flessibile che consenta di effettuare, in un secondo momento, il downgrade per un modello più piccolo (anche cambiando categoria del modello di server). Tuttavia, questo limiterà l’istanza a 50GB di **storage incluso**, a prescindere dalle operazioni di upgrade o downgrade.
 - È possibile modificare il nome dell’istanza.
 - È possibile aggiungere uno script post-installazione. 
 - È possibile attivare i backup automatici per l’istanza. Ti consigliamo di consultare i dettagli relativi ai prezzi e alle opzioni di rotazione.

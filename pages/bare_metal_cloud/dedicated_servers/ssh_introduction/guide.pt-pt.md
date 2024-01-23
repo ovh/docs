@@ -1,7 +1,7 @@
 ---
 title: Introdução ao SSH
 excerpt: "Saiba como utilizar as ligações SSH para aceder ao servidor"
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 > [!primary]
@@ -138,7 +138,13 @@ Em Windows, a localização do ficheiro `known_hosts` e a linha a eliminar são 
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 
-Aceda a esta pasta, clique com o botão direito do rato sobre o ficheiro e abra-o com a aplicação Bloco de notas.
+Para resolver este problema, utilize o seguinte comando com o endereço IP do seu servidor:
+
+```bash
+ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+```
+
+Também pode aceder à pasta, clicar com o botão direito do rato no ficheiro e abri-lo com a aplicação do Bloco de Notas.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 

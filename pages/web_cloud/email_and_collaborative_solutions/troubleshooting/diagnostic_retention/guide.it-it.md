@@ -11,7 +11,7 @@ updated: 2022-02-08
  
 ## Obiettivo
 
-Hai eliminato per errore uno o più elementi (email, contatti, appuntamento con il calendario) e hai svuotato il cestino. È possibile ripristinarli fino a 14 giorni dopo la loro eliminazione tramite la Webmail OWA (Outlook Web Application).
+Hai eliminato per errore uno o più elementi (email, contatti, appuntamento con il calendario) e hai svuotato il cestino. È possibile ripristinarli fino a 14 giorni dopo la loro eliminazione tramite la Webmail OWA (Outlook Web App).
 
 **Come ripristinare gli elementi eliminati dal tuo account email tramite la Webmail (OWA)**
  

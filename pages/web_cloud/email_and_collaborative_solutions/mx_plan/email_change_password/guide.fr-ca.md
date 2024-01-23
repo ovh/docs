@@ -51,7 +51,7 @@ Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanage
 
 ### Modifier le mot de passe depuis le webmail
 
-La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pplication) :
+La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pp) :
 
 - Emails MXplan
 - Exchange

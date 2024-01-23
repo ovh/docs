@@ -6,7 +6,7 @@ updated: 2024-01-22
 
 ## Objectif
 
-Notre Load Balancer est basé sur le service [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia){.external} et est entièrement intégré dans l'univers Public Cloud.
+Notre Load Balancer Public Cloud est basé sur le service [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia){.external} et est entièrement intégré dans l'univers Public Cloud.
 
 **Découvrez comment débuter avec un Load Balancer sur le Public Cloud.**
 
@@ -17,6 +17,7 @@ Notre Load Balancer est basé sur le service [Openstack Octavia](https://wiki.op
 - Comprendre les [concepts de réseau Public Cloud](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)
 - Un Load Balancer nécessite un sous-réseau, lisez [ce guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) pour plus d'informations
 - (Facultatif) : Ce guide explique la configuration du load balancer via l'interface graphique et l'interface en ligne de commande. Si vous souhaitez utiliser cette dernière, installez [l'environnement en ligne de commande OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+
 
 ## En pratique
 

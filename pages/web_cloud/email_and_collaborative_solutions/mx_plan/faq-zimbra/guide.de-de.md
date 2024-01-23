@@ -86,7 +86,7 @@ Sie können aber weiterhin das OWA Interface nutzen, indem Sie Ihre [E-Mail-Acco
 
 ### Kann ich mein MX Plan Angebot kündigen?
 
-Um Ihr Angebot unter "Meine Dienste" im OVHCloud Kundencenter zu kündigen, folgen Sie der Anleitung "[OVHcloud Dienste kündigen](/pages/account_and_service_management/managing_billing_zahlungs_and_services/how_to_cancel_services#mxplan)" im Abschnitt zu MX Plan.
+Um Ihr Angebot unter "Meine Dienste" im OVHCloud Kundencenter zu kündigen, folgen Sie der Anleitung "[OVHcloud Dienste kündigen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)" im Abschnitt zu MX Plan.
 
 ## Weiterführende Informationen
 

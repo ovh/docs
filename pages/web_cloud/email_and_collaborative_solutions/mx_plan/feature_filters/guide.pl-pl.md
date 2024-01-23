@@ -26,7 +26,7 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 
 > [!warning]
 >
-> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty zarządzanie filtrami odbywa się bezpośrednio w Webmail OWA (**O**utlook **W**eb **A**pplication). Zidentyfikuj ofertę korzystając z poniższej tabeli.
+> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty zarządzanie filtrami odbywa się bezpośrednio w Webmail OWA (**O**utlook **W**eb **A**pp). Zidentyfikuj ofertę korzystając z poniższej tabeli.
 >
 
 Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|

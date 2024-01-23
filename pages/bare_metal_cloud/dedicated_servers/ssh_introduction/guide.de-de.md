@@ -1,7 +1,7 @@
 ---
 title: Einführung in SSH
 excerpt: Erfahren Sie hier, wie Sie SSH-Verbindungen verwenden, um auf Ihren Server zuzugreifen
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 > [!primary]
@@ -112,7 +112,7 @@ Offending ECDSA key in /home/user/.ssh/known_hosts:3
 
 Das bedeutet, dass eine der folgenden Situationen eingetreten ist:
 
-- Der Server wurde reinstalliert.
+- Das Server-Betriebssystem wurde reinstalliert.
 - Der SSH-Dienst auf dem Server wurde reinstalliert.
 - Sie verbinden sich mit einem anderen Host, der die selbe IP-Adresse hat.
 
@@ -140,11 +140,17 @@ Unter Windows werden ebenfalls der Pfad der Datei `known_hosts` und die zu lösc
 Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
-Öffnen Sie den angegebenen Ordner, klicken Sie mit der rechten Maustaste auf die Datei und öffnen Sie diese mit der Anwendung Notepad (oder einem beliebigen Texteditor).
+Um dies zu beheben, geben Sie folgenden Befehl unter Angabe der IP-Adresse Ihres Servers ein:
+
+```bash
+ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+```
+
+Alternativ öffnen Sie den angegebenen Ordner, klicken Sie mit der rechten Maustaste auf die Datei und öffnen Sie diese mit der Anwendung Notepad (oder einem beliebigen Texteditor).
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
-Löschen Sie die betreffende Zeile, in diesem Beispiel wäre es die dritte von oben. Speichern Sie die Änderungen und verlassen Sie den Editor. Der neue Schlüssel-Fingerprint muss bei der nächsten Verbindung zum Server akzeptiert werden.
+Löschen Sie die betreffende Zeile, in diesem Beispiel wäre es die dritte von oben. Speichern Sie die Änderungen und verlassen Sie den Editor. Der neue Schlüssel-Fingerprint muss bei der nächsten Verbindung zum Server bestätigt werden.
 
 ### Verwendung von GUI-Clients oder SSH-kompatibler Software
 

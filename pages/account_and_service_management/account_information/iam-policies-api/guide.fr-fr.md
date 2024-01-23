@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-updated: 2023-10-26
+updated: 2024-01-16
 ---
 
 ## Objectif
@@ -104,7 +104,15 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-L'URN peut débuter ou finir par un caractère *wildcard* `*`.
+Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou identités en une seule ligne.
+
+*Exemple d'une URN avec un wildcard :*
+
+`urn:v1:eu:resource:vps:*` fera référence à n'importe quel vps.
+
+*Exemple d'une action avec un wildcard :*
+
+`vps:apiovh:*` fera référence à toutes les actions de type vps.
 
 #### Attributs d'une politique
 
@@ -114,7 +122,7 @@ L'URN peut débuter ou finir par un caractère *wildcard* `*`.
 - **readOnly**: S'il est en « true », il indique que la politique ne peut pas être modifiée. Il représente souvent les politiques gérées par OVHcloud.
 - **identities**: Les identités concernées par la politique. Elles sont spécifiées par un URN. **account**: **account-id** pour le compte client OVHcloud, **user**: **account-id**/**username** pour le compte utilisateur, **group**: **account-id**/**username** pour un groupe utilisateur.
 - **resources**: Les ressources concernées par la politique. Elles sont spécifiées par un URN, **resource** pour une ressource, **resourceGroup** pour un groupe de ressources.
-- **permissions**: 
+- **permissions**:
     - **allow**: Ensemble des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
     - **deny**: Ensemble des actions explicitement interdites pour les identitités concernant les ressources. Une action interdite sera refusée quelque soient les actions autorisées dans d'autres politiques.
     - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **allow**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard. Contrairement au **deny**, **except** est limité au périmètre d'une seule politique.
@@ -131,7 +139,7 @@ Créez une nouvelle politique en utilisant cet appel API :
 
 Par exemple, créez une politique autorisant l'utilisateur nommé "*user1*" à faire des actions sur un VPS :
 
-**Exemple de création de politique**
+**Exemples de création de politique**
 
 ```json
 {
@@ -146,7 +154,7 @@ Par exemple, créez une politique autorisant l'utilisateur nommé "*user1*" à f
                 "action": "vps:apiovh:reboot"
             },
             {
-                "action": "vps:apiovh:createSnapshot"
+                "action": "vps:apiovh:snapshot/create"
             }
         ]
     },
@@ -160,7 +168,36 @@ Par exemple, créez une politique autorisant l'utilisateur nommé "*user1*" à f
 
 Cette politique ne concerne pas un compte mais un utilisateur. L'URN de l'identité correspond donc au format suivant : "*urn:v1:eu:identity:**user**:**account-id**/**username***".
 
-Avec ce JSON comme body pour l'appel `POST /iam/policy`, la politique sera créée.
+```json
+{
+    "description": "VPS - all except delete snapshot",
+    "identities": [
+        "urn:v1:eu:identity:user:xx1111-ovh/user2"
+    ],
+    "name": "vps-all-but-delete-snapshot",
+    "permissions": {
+        "allow": [
+            {
+                "action": "vps:apiovh:*"
+            }
+        ],
+        "except": [
+            {
+                "action": "vps:apiovh:snapshot/delete"
+            }
+        ]
+    },
+    "resources": [
+        {
+            "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net"
+        }
+    ]
+}
+```
+
+Cette politique utilise un wildcard et un *except*. Cela permet de donner un ensemble de permissions facilement. Ici l'utilisateur `user2` aura tous les droits de type **vps** sur `vps-5b48d78b.vps.ovh.net`, à l'exception du droit de suppression des snapshots.
+
+Avec ces requêtes `POST /iam/policy`, les politiques seront créées.
 
 Vérifiez cela avec `GET /iam/policy`:
 
@@ -211,16 +248,44 @@ Vérifiez cela avec `GET /iam/policy`:
                     "action": "vps:apiovh:reboot"
                 },
                 {
-                    "action": "vps:apiovh:createSnapshot"
+                    "action": "vps:apiovh:snapshot/create"
                 }
             ]
         },
         "createdAt": "2023-02-07T15:24:57.680037Z"
+    },
+    {
+        "id": "73a220d0-8346-4d4a-bdab-c0f671d62368",
+        "owner": "xx1111-ovh",
+        "name": "vps-all-but-delete-snapshot",
+        "readOnly": false,
+        "description": "VPS - all except delete snapshot",
+        "identities": [
+            "urn:v1:eu:identity:user:xx1111-ovh/user2"
+        ],
+        "resources": [
+            {
+                "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net"
+            }
+        ],
+        "permissions": {
+            "allow": [
+                {
+                    "action": "vps:apiovh:*"
+                }
+            ],
+            "except": [
+                {
+                    "action": "vps:apiovh:snapshot/delete"
+                }
+            ]
+        },
+        "createdAt": "2023-02-07T15:32:18.957023Z"
     }
 ]
 ```
 
-La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots)** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
+Les politiques ont été créées avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots)** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" peut **effectuer toutes les actions vps à l'exception de la suppression des snapshots** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
 ### Identités
 
@@ -430,7 +495,7 @@ Dans cet exemple, nous pouvons voir que ce groupe de ressources "*urn:v1:eu:reso
 - **readOnly**: Ne peut pas être modifié si `true`. Les groupes de ressources par défaut sont en lecture seule.
 - **name**: Nom du groupe de ressources.
 - **owner**: Détenteur du groupe de ressources (Account ID).
-- **resources**: 
+- **resources**:
     - Si details = **false** : Ensemble des UUID des ressources.
     - Si details = **true** : Les ressources seront développées avec leurs attributs (comme le résultat que nous obtenons via l'API des ressources).
 - **createdAt**: Date de création du groupe de ressources.

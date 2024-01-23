@@ -1,7 +1,7 @@
 ---
 title: Introducción al SSH
 excerpt: "Cómo utilizar las conexiones SSH para acceder al servidor"
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 > [!primary]
@@ -138,7 +138,13 @@ En Windows, también se especifica la ruta del archivo `known_hosts` y la línea
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 
-Acceda a esta carpeta, haga clic derecho en el archivo y abra con la aplicación Bloc de notas.
+Para solucionar este problema, utilice el siguiente comando con la dirección IP del servidor:
+
+```bash
+ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+```
+
+También puede tener acceso a esta carpeta, hacer clic derecho en el archivo y abrirlo con la aplicación Bloc de notas.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
