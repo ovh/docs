@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2022-12-01
+updated: 2023-01-22
 ---
 
 ## Objective
@@ -25,6 +25,13 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) / to the [OVHcloud API](https://ca.api.ovh.com/)
 
 ## Instructions
+
+The following sections contain configurations for the distributions we currently offer, as well as the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+
+> [!warning]
+>
+> Please note that on most of the Linux operating systems we offer for the Public Cloud, the IPv6 address is configured by default. Please check your operating system configuration file before making any changes.
+>
 
 Configuring IPv6 on your VPS is done in multiple steps. At several points in the process you will be prompted to enter commands or to customise configuration files of your server.
 
@@ -59,14 +66,14 @@ Use this call to retrieve the IPv6 address assigned to your server:
 
 > [!api]
 >
-> @api {v1} /vps GET /vps/{serviceName}/ips
+> @api {v1} /vps/ GET /vps/{serviceName}/ips
 >
 
 The following call allows you to recover the IPv6 gateway assigned to your server:
 
 > [!api]
 >
-> @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
+> @api {v1} /vps/ GET /vps/{serviceName}/ips/{ipAddress}
 >
 
 Once you have retrieved these addresses, continue with [applying the IPv6 configuration](#applyipv6).
@@ -109,45 +116,51 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 There are two ways to configure your network depending on the operating system installed on your server:
 
-- **for Debian 11 and earlier, Ubuntu 16.04 and earlier**: use the [method based on the *interfaces* files](#interfaces)
+- **for Debian 10 and 11**: use the [method based on the *interfaces* files](#interfaces)
 
-- **for Ubuntu 17.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
+- **for Debian 12, Ubuntu 20.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
-In some cases (such as Debian 9), the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.<br>
+In some cases, the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.<br>
 Moreover, keep in mind that the exact file names may vary.
 
 ##### Configuration of *interfaces* files <a name="interfaces"></a>
 
-The best practice approach is to create a configuration file in the directory `/etc/network/interfaces.d/`:
+By defauly, the configuration files are located in `/etc/network/interfaces.d/`. 
+
+The best practice is to create a separate configuration file in the `/etc/network/interfaces.d/` directory to configure IPV6. In our example, our file is called `51-cloud-init-ipv6`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6
+~# sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
-This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
+Creating a seperate file allows you to easily revert the changes in case of an error.
 
-Add the following lines to the file. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
+Add the following lines to the file. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values:
 
 ```console
 auto eth0
 iface eth0 inet6 static
 mtu 1500
-address YOUR_IPV6
+address 2607:5300:201:abcd::7c5
 netmask IPV6_PREFIX
-post-up /sbin/ip -6 route add IPV6_GATEWAY dev eth0
-post-up /sbin/ip -6 route add default via IPV6_GATEWAY dev eth0
-pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
-pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
+post-up /sbin/ip -6 route add 2607:5300:201:abcd::1 dev eth0
+post-up /sbin/ip -6 route add default via 2607:5300:201:abcd::1 dev eth0
+pre-down /sbin/ip -6 route del default via 2607:5300:201:abcd::1 dev eth0
+pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 ```
+
+
+**Configuration example**:
+
 
 Then restart your network service with one of the following commands:
 
 ```bash
-service networking restart
+~# sudo service networking restart
 ```
 
 ```bash
-systemctl restart networking
+~# sudo systemctl restart networking
 ```
 
 Alternatively, you can add the configuration above to one of the following files (with *sudo* privileges), depending on the generation of the operating system installed on the server:
@@ -155,41 +168,29 @@ Alternatively, you can add the configuration above to one of the following files
 - the `/etc/network/interfaces` file
 - the `/etc/network/interfaces.d/50-cloud-init.cfg` file
 
-We recommend that you back up up the relevant configuration file. For example, use the following command:
+We recommend that you back up the relevant configuration file. For example, use the following command:
 
 ```bash
-cp /etc/network/interfaces /etc/network/interfaces.back
+~# sudo cp /etc/network/interfaces.d /etc/network/interfaces.d.bak
 ```
 
 You will then be able to revert the changes, using the commands below:
 
 ```bash
-rm -f /etc/network/interfaces
-cp /etc/network/interfaces.back /etc/network/interfaces
+~# sudo rm -f /etc/network/interfaces.d
+~# sudo cp /etc/network/interfaces.d.bak /etc/network/interfaces.d
 ```
 
 ##### Configuration using Netplan <a name="netplan"></a>
 
-The network configuration files are located in the `/etc/netplan/` directory. We recommend that you start by backing up the relevant configuration file. In this case, copy the `50-cloud-init.yaml` file using the following commands:
+The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called ~ `50-cloud-init.yaml`.
+
+The best approach is to create a separate configuration file for setting up IPv6 addresses in the `/etc/netplan/` directory. This way, you can easily revert the changes in case of an error.
+
+In our example, our file is named `51-cloud-init-ipv6.yaml`:
 
 ```bash
-cd /etc/netplan/
-mkdir backup
-cp 50-cloud-init.yaml backup/50-cloud-init.yaml
-```
-
-You will then be able to revert the changes, using the commands below:
-
-```bash
-rm -f /etc/netplan/50-cloud-init.yaml
-cp /etc/netplan/backup/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
-```
-
-Before editing it, create a copy of the IPv6 configuration file:
-
-```bash
-cd /etc/netplan
-cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 Then edit the `51-cloud-init-ipv6.yaml` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
@@ -204,12 +205,26 @@ network:
               name: eth0
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
-            gateway6: IPv6_GATEWAY
             routes:
-              - to: IPv6_GATEWAY
-                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
+```
+
+**Configuration example**:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eth0:
+            dhcp6: no
+            match:
+              name: eth0
+            addresses:
+              - 2607:5300:201:abcd::7c5/128
+            routes:
+              - to: ::/0
+                via: 2607:5300:201:abcd::1
 ```
 
 > [!warning]
@@ -220,18 +235,18 @@ network:
 You can test your configuration using this command:
 
 ```bash
-netplan try
+~# sudo netplan try
 ```
 
 If it is correct, apply it using the following command:
 
 ```bash
-netplan apply
+~# sudo netplan apply
 ```
 
 #### Persistent application on Red Hat and its derivatives (CentOS, ClearOS, etc.) <a name="persistentredhat"></a>
 
-The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file. For example, copy the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary.
+The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file. For example, copy the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary. 
 
 ```bash
 cd /etc/sysconfig/network-scripts/
@@ -246,7 +261,7 @@ rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
 cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Then edit the `ifcfg-eth0` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values.
+Then edit the `ifcfg-eth0` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
 ```console
 IPV6INIT=yes
@@ -259,7 +274,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 - Create a file (with *sudo* privileges), indicating the default IPv6 routes:
 
 ```bash
-# touch /etc/sysconfig/network-scripts/route6-eth0
+~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
 - Edit the file and add the lines below. Replace the generic elements (*IPV6_GATEWAY* and **eth0** interface, if necessary) with your specific values.
@@ -269,14 +284,31 @@ IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
 
-Finally, restart your network service to allow the system to apply the new configuration with one of the following commands:
+**Configuration example**:
 
-```bash
-service networking restart
+```console
+IPV6INIT=yes
+IPV6ADDR=2607:5300:201:abcd::7c5/128
+IPV6_DEFAULTGW=2607:5300:201:abcd::1
 ```
 
 ```bash
-systemctl restart networking
+~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
+```
+
+```console
+2607:5300:201:abcd::1 dev eth0
+default via 2607:5300:201:abcd::1
+```
+
+Finally, restart your network service to allow the system to apply the new configuration with one of the following commands:
+
+```bash
+~# sudo service networking restart
+```
+
+```bash
+~# sudo systemctl restart networking
 ```
 
 #### Persistent application on Windows Server <a name="persistentwindows"></a>
@@ -354,7 +386,7 @@ To test the connection, you can use the following command:
 ping -6 proof.ovh.net
 ```
 
-You can also test the connection to another remote server. However, it is necessary for IPv6 to be active on the remote server for this operation to work.
+You can also test the connection to another remote server. However, IPv6 must be active on the remote server for this operation to work.
 
 > [!primary]
 >
