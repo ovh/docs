@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3"
 excerpt: "Ce guide fournit des instructions générales pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage S3"
-updated: 2024-01-22
+updated: 2024-01-23
 ---
 
 ## Objectif
