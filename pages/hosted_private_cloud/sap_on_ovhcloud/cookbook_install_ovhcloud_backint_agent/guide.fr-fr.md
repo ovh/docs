@@ -318,7 +318,7 @@ Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalis�
 > [!tabs]
 > **Étape 1**
 >>
->> Dans l'onglet `Database Management`{.action}, sélectionnez votre TENANTDB. Cliquez sur `Tenant Actions`{.action}, puis sélectionnez `Recover Tenant`{.action}.
+>> Dans l'onglet `Database Management`{.action}, sélectionnez votre TENANTDB. Cliquez sur `Tenant Actions`{.action} puis sélectionnez `Recover Tenant`{.action}.
 >>
 >> ![recover_tenant_01](images/recover_tenant/recover_tenant_01.png){.thumbnail}
 >>
