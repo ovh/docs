@@ -1,7 +1,7 @@
 ---
 title: Getting started with Load Balancer on Public Cloud
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-updated: 2024-01-18
+updated: 2024-01-22
 ---
 
 ## Objective
@@ -75,6 +75,32 @@ You will be redirected to the Load Balancer listing page. Among the attributes t
 
 ### Creating the Load Balancer from the Openstack Command Line Interface
 
+#### Configuring your private network
+
+Before creating a Load Balancer, you will need to set up a private network:
+
+```bash
+openstack network create my_network
+
+openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
+
+openstack router create my_router
+
+openstack router add subnet my_router my_subnet
+
+openstack router set --external-gateway Ext-Net my_router
+```
+
+You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration). List the addresses of your instances in your network with the following command:
+
+```bash
+openstack server list
+```
+
+In the next step, configure the network interfaces of your instances according to this output.
+
+#### Creating the Load Balancer
+
 You can view a list of the different Load Balancer flavors we offer with this command:
 
 ```bash
@@ -89,7 +115,7 @@ openstack loadbalancer create --name my_load_balancer --flavor small --vip-subne
 
 Your Load Balancer will be configured with an IP address of the private network. If you want to have access from the internet, you will need to attach a Floating IP address.
 
-### Attaching a Floating IP address to a Load Balancer
+#### Attaching a Floating IP address to a Load Balancer
 
 This is how to attach a Floating IP address to a Load Balancer:
 
@@ -102,7 +128,7 @@ openstack floating ip set --port <my_load_balancer_vip_port_id> <floating_ip>
 >
 > To retrieve the VIP port ID of your Load Balancer, use `openstack loadbalancer show my_load_balancer`.
 
-### Configuring your Load Balancer
+#### Configuring your Load Balancer
 
 In this example we will configure an HTTP Load Balancer. In order to listen on port 80 of the Load Balancer, create a Listener with this command:
 

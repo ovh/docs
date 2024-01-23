@@ -76,6 +76,34 @@ Vous allez être redirigé vers la page qui liste les Load Balancers. Parmi les 
 
 ### Création du Load Balancer via l'interface en ligne de commande (CLI) Openstack
 
+#### Configurer votre réseau privé
+
+Avant de commencer à utiliser un Load Balancer, il vous faut créer un réseau privé :
+
+```bash
+openstack network create my_network
+
+openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
+
+openstack router create my_router
+
+openstack router add subnet my_router my_subnet
+
+openstack router set --external-gateway Ext-Net my_router
+```
+
+Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommandons de suivre la documentation pour [attacher vos instances au vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration). 
+
+Prenez note des adresses de vos instances dans votre réseau avec la commande suivante :
+
+```bash
+openstack server list
+```
+
+Vous devez maintenant configurer vos instances pour qu'elles aient leurs adresses IP configurées sur leur interfaces.
+
+#### Créer votre Load Balancer
+
 Vous pouvez consulter la liste des différents types de Load Balancer que nous offrons avec cette commande :
 
 ```bash
@@ -90,7 +118,7 @@ openstack loadbalancer create --name my_load_balancer --flavor small --vip-subne
 
 Votre Load Balancer sera configuré avec une adresse IP dans le réseau privé. Si vous souhaitez avoir un accès depuis Internet, il vous faudra attacher une adresse Floating IP.
 
-### Attacher une adresse Floating IP à un Load Balancer
+#### Attacher une adresse Floating IP à un Load Balancer
 
 Voici comment attacher une adresse Floating IP à un Load Balancer.
 
@@ -103,7 +131,7 @@ openstack floating ip set --port <my_load_balancer_vip_port_id> <floating_ip>
 >
 > Pour récupérer l'identifiant du port VIP de votre Load Balancer, utilisez `openstack loadbalancer show my_load_balancer`.
 
-### Configurer votre Load Balancer
+#### Configurer votre Load Balancer
 
 Dans cet exemple, nous ferons juste un Load Balancer HTTP. Pour ce faire, il faut tout d'abord créer un Listener qui permettra d'écouter sur le port 80 du Load Balancer, avec cette commande :
 
