@@ -345,7 +345,7 @@ Otherwise, please set paths.
 
 ![recover_tenant_08](images/recover_tenant/recover_tenant_08.png){.thumbnail}
 
-9\. We recommend selecting `Yes`{.action} for `Backint`{.action} category. This option allows to check the availability of backups before triggering the recover.
+9\. We recommend selecting `Yes`{.action} for the `Backint`{.action} category. This option allows you to check the availability of backups before triggering the recovery.
 
 ![recover_tenant_09](images/recover_tenant/recover_tenant_09.png){.thumbnail}
 
