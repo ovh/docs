@@ -243,7 +243,7 @@ The scheduling of your SAP HANA database backups has to be modified.
 
 We advise you to refer to the SAP Note [2782059](https://launchpad.support.sap.com/#/notes/2782059) which sets out four options to schedule the backup of SAP HANA databases.
 
-A daily scheduling of TENANTDB SAP HANA backup via SAP HANA Cockpit example:
+An example of a daily scheduling of a TENANTDB SAP HANA backup via the SAP HANA Cockpit:
 
 1\. Select the TENANTDB on which you want to schedule backups. Click on `+`{.action} to add the scheduling.
 
