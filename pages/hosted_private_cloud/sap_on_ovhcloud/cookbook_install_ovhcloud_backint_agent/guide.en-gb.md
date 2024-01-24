@@ -335,7 +335,7 @@ Otherwise, please give the path.
 
 ![recover_tenant_06](images/recover_tenant/recover_tenant_06.png){.thumbnail}
 
-7\. You can leave the `Yes (recommended)`{.action} option select.
+7\. You can leave the `Yes (recommended)`{.action} option selected.
 
 ![recover_tenant_07](images/recover_tenant/recover_tenant_07.png){.thumbnail}
 
