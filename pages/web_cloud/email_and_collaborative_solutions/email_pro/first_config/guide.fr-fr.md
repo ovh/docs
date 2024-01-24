@@ -63,7 +63,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 
 > [!warning]
 >
-> Si vous obtenez le message « **authoritative domain detected** » lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez donc le passer en mode **non-autoritatif** pour les deux plateformes pour qu'elles puissent cohabiter.
+> Si vous obtenez le message « **authoritative domain detected** » lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez donc le passer en mode **non-autoritatif** pour les deux plateformes afin qu'elles puissent cohabiter.
 
 Si vous choisissez le mode **non-autoritatif** et que vous utilisez un service :
 
