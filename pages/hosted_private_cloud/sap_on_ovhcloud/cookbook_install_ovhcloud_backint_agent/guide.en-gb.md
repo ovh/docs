@@ -339,7 +339,7 @@ Otherwise, please give the path.
 
 ![recover_tenant_07](images/recover_tenant/recover_tenant_07.png){.thumbnail}
 
-8\. If you did not modify the backups and logs backup localisation, please leave fields empty.
+8\. If you did not modify the backups and logs backup location, please leave the fields empty.
 
 Otherwise, please set paths.
 
