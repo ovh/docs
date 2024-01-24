@@ -162,7 +162,7 @@ You also have the possibility to trigger these backups via the SAP HANA Cockpit.
 
 ![backup_hana_cockpit](images/backup_hana_cockpit.png){.thumbnail}
 
-After the execution of these backups, several files named `_databackup_` are now present in your first S3 Object Storage bucket, these files correspond to backups of your SAP HANA database via OVHcloud Backint Agent.
+After the execution of these backups, several files named `_databackup_` are now present in your first S3 Object Storage bucket, these files correspond to backups of your SAP HANA database via the OVHcloud Backint Agent.
 
 Two files named `log_backup_0_0_0_0` have `DB_<SID>` and `SYSTEMDB` prefix are also present in your first S3 Object Storage bucket. These files correspond to backups of the SAP HANA backup catalog, allowing you to list backups known by SAP HANA.
 
