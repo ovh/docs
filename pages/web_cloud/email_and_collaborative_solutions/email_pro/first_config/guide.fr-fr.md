@@ -68,7 +68,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 Si vous choisissez le mode **non-autoritatif** et que vous utilisez un service :
 
 - **E-mail OVHcloud (Exchange ou MXplan)**, saisissez directement comme serveur e-mail cible « *mx1.mail.ovh.net* » ( fonctionne de la même façon avec *mx0.mail.ovh.net*, *mx2.mail.ovh.net**, *mx3.mail.ovh.net**, *mx4.mail.ovh.net* ).
-- **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro
+- **Email externe à OVHcloud (offre e-mail concurrente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en vous assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro
 
 Le choix du mode n'est pas définitif et peut être modifié par la suite depuis l'espace client OVHcloud.
 
