@@ -23,6 +23,19 @@ Si vous rencontrez un problème avec votre système, effectuer des vérification
 
 **Ce guide vous explique comment activer le mode rescue dans votre espace client OVHcloud et comment l'utiliser pour accéder à votre système de fichiers VPS.**
 
+## Prérequis
+
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} déjà configuré.
+
+ > [!warning]
+>OVHcloud fournit des services dont la configuration et la gestion relèvent de votre responsabilité. Il est donc de votre responsabilité de vous assurer de leur bon fonctionnement.
+>
+>Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de contacter [notre communauté](https://community.ovh.com/) si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
+>
+
+## En pratique
+
 ### Activation du mode rescue
 
 > [!warning]
