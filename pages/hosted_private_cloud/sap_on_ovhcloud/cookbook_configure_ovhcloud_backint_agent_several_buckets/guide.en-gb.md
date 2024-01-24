@@ -207,7 +207,7 @@ About the backups scheduling, please refer to our guide [Install and use OVHclou
 
 About the recovery of your SAP HANA database, please refer to our guide [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent#recovery).
 
-Steps are same, even if you use different S3 Object Storage buckets for your `DATA` and `LOG` backups.
+The steps are the same, even if you use different S3 Object Storage buckets for your `DATA` and `LOG` backups.
 
 ## Go further
 
