@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un serveur dédié"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre serveur dédié"
-updated: 2023-02-24
+updated: 2024-01-23
 ---
 
 ## Objectif
@@ -70,14 +70,23 @@ Pour cela, modifiez le fichier de configuration du service avec l'éditeur de te
 Vous devriez trouver les lignes suivantes ou équivalentes :
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Remplacez le nombre **22** par le numéro de port de votre choix.<br>
 **Veillez toutefois à ne pas renseigner un numéro de port déjà utilisé sur votre système**. 
 Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>
 Enregistrez et quittez le fichier de configuration.
+
+Si la ligne est "commentée" (c'est-à-dire si elle est précédée d'un "#") comme dans l'exemple ci-dessus, veillez à supprimer le "#" avant d'enregistrer le fichier pour que la modification soit prise en compte. Exemple :
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Redémarrez le service :
 

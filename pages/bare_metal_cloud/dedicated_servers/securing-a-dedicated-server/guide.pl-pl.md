@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczanie serwera dedykowanego"
 excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo serwera dedykowanego"
-updated: 2023-02-24
+updated: 2024-01-23
 ---
 
 > [!primary]
@@ -71,14 +71,23 @@ W tym celu zmodyfikuj plik konfiguracyjny usługi za pomocą wybranego edytora t
 Należy znaleźć następujące lub równoważne linie:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Zamień liczbę **22** na wybrany numer portu.<br>
 **Pamiętaj, aby nie wpisywać numeru portu już używanego w systemie**.
 Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.<br>
 Zapisz i wyjdź z pliku konfiguracyjnego.
+
+Jeśli linia jest "zakomentowana" (tj. poprzedzona znakiem "#"), jak w powyższym przykładzie, należy usunąć znak "#" przed zapisaniem pliku, aby zmiana została uwzględniona. Przykład:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Zrestartuj usługę:
 
