@@ -357,7 +357,7 @@ Otherwise, please set paths.
 
 ![recover_tenant_11](images/recover_tenant/recover_tenant_11.png){.thumbnail}
 
-12\. The recover of your TENANTDB services starts.
+12\. The recovery of your TENANTDB services starts.
 
 ![recover_tenant_12](images/recover_tenant/recover_tenant_12.png){.thumbnail}
 
