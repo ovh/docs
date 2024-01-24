@@ -25,6 +25,8 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 - que vous possédez une solution **fonctionnelle** pour le remplacer ;
 - que vous avez sauvegardé l'ensemble des données concernées.
 
+<a name="domain"></a>
+
 > [!primary]
 > **Résiliation d'un nom de domaine**
 >
