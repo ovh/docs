@@ -10,7 +10,7 @@ This guide provides the details of using OVHcloud Backint Agent for SAP HANA wit
 
 OVHcloud Backint Agent for SAP HANA allows you to back up and recover your SAP HANA database on one or many OVHcloud S3 Object Storage buckets.
 
-Using several S3 Object Storage buckets can be useful for:
+Using several S3 Object Storage buckets can be useful to:
 
 - separate the data backup named `databackup` from the log backup named `log_backup` ;
 - store into S3 Object Storage buckets with a different retention policy ;
