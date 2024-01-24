@@ -99,7 +99,7 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
     - *Pour un enregistrement MX*, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».
     - *Pour un enregistrement SRV*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille rouge. Vous pouvez vous aider du guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour ajouter cet enregistrement.
     - *Pour un enregistrement SPF*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) » pour ajouter cet enregistrement.
-    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement DKIM ](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
+    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
