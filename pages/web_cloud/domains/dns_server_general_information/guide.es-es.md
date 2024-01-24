@@ -30,7 +30,7 @@ Para más información sobre las zonas DNS, consulte nuestra guía "[Editar una 
 
 Por lo tanto, los **servidores DNS** deben estar declarados con el nombre de dominio para utilizar la zona DNS que alojan. 
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Los **servidores DNS** suelen funcionar por pares:
 
@@ -85,7 +85,7 @@ Se mostrará una tabla con los servidores DNS actualmente definidos por OVHcloud
 >
 > Al utilizar los servidores DNS de OVHcloud, los números que aparecen en los nombres de los servidores no tienen relación con los servicios que utiliza. Solo la opción [DNS anycast](https://www.ovhcloud.com/es-es/domains/options/) utiliza servidores DNS específicos que se le asignan automáticamente. 
 
-![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
+![dns-server](images/tab.png){.thumbnail}
 
 ### Cambiar los servidores DNS
 
@@ -106,7 +106,7 @@ En los formularios de datos, **sustituya** los valores actuales de los servidore
 
 Una vez que haya introducido los datos, haga clic en `Aplicar la configuración`{.action}. Los estados de los servidores DNS se actualizarán en la tabla mostrando la nueva información que acaba de proporcionar.
 
-![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
+![dns-server](images/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -117,7 +117,7 @@ Una vez que haya introducido los datos, haga clic en `Aplicar la configuración`
 
 El botón `Restaurar los servidores DNS`{.action} permite restaurar los servidores DNS actuales sustituyéndolos automáticamente por los servidores DNS de OVHcloud de origen. Utilice esta opción **únicamente** si quiere reutilizar los servidores DNS de OVHcloud (y la zona DNS de OVHcloud asociada a sus servidores DNS). 
 
-![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
+![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
 Una vez realizados los cambios necesarios, debe esperar a que los cambios surtan efecto. Hay que tener en cuenta dos períodos sucesivos:
 

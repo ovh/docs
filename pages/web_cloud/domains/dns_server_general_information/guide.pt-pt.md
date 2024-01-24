@@ -29,7 +29,7 @@ Para mais informações sobre as zonas DNS, consulte o guia "[Editar uma zona DN
 
 Por este motivo, os **servidores DNS** devem ser declarados no domínio para utilizarem a zona DNS que alojam. 
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Os **servidores DNS** funcionam normalmente ao par:
 
@@ -84,7 +84,7 @@ Aparecerá uma tabela com os servidores DNS atualmente definidos pela OVHcloud p
 >
 > Quando utiliza os servidores DNS da OVHcloud, os números presentes nos nomes dos servidores não têm qualquer ligação com o(s) serviço(s) que utiliza. Apenas a opção [DNS anycast](https://www.ovhcloud.com/pt/domains/options/) utiliza servidores DNS específicos que lhe são automaticamente atribuídos.
 
-![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
+![dns-server](images/tab.png){.thumbnail}
 
 ### Modificar os servidores DNS
 
@@ -105,7 +105,7 @@ Nos formulários de introdução, **substitua** os valores atuais dos servidores
 
 Depois de introduzir estas informações, clique em `Aplicar configuração`{.action}. Os estados dos servidores DNS serão atualizados na tabela e as novas informações aparecerão.
 
-![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
+![dns-server](images/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -116,7 +116,7 @@ Depois de introduzir estas informações, clique em `Aplicar configuração`{.ac
 
 O botão `Reiniciar os servidores DNS`{.action} permite reiniciar os servidores DNS atuais, substituindo-os automaticamente pelos servidores DNS da OVHcloud de origem. Utilize esta opção **apenas** se pretender reutilizar os servidores DNS da OVHcloud (e a zona DNS da OVHcloud associada aos seus servidores DNS). 
 
-![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
+![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
 Depois de realizar as alterações necessárias, deverá esperar que as alterações se propaguem. Devem ser tidos em conta dois períodos sucessivos:
 
