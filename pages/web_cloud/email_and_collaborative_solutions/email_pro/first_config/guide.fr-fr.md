@@ -80,7 +80,7 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 - **SRV** : enregistrement DNS permettant la configuration automatique de votre logiciel de messagerie lorsque vous y ajoutez votre adresse e-mail.
 - **MX** : enregistrement DNS des serveurs e-mail nécessaire à la réception des e-mails sur le nom de domaine concerné.
-- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Configurer un enregistrement DKIM ](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
+- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
 
 **Pour un nom de domaine non géré par OVHcloud**, suivez l'étape 3.
 
