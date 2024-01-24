@@ -11,15 +11,15 @@ In general, anti-spam policies are strict. To ensure that emails reach recipient
 **This guide will give you a few tips on optimising how your emails are sent.**
 
 > [!warning]
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> OVHcloud provides services that you are responsible for. In fact, as we do not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily. 
-> We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
 
 - You must be an administrator of a configured email server.
-- You must be able to manage the DNS zone for the domain name(s) used for sending
+- You must be able to manage the DNS zone for the domain name(s) used for sending.
 
 > [!warning]
 >
@@ -46,9 +46,9 @@ You can go even further, by configuring the SPF record for a specific domain nam
 
 ### Configure the DKIM record
 
-The DKIM (DomainKeys Identified Mail) record is used to sign emails to avoid spoofing them. This signature works on the principle of a private key/public key pair, allowing the sender domain to be authenticated.
+The DKIM (DomainKeys Identified Mail) record is used to sign emails in order to counter email spoofing. This signature works on the principle of a private key/public key pair, allowing the sender domain to be authenticated.
 
-For more information, see our guide to [configuring a DKIM](/pages/web_cloud/domains/dns_zone_dkim) record.
+For more information, see our guide to [configure a DKIM record](/pages/web_cloud/domains/dns_zone_dkim).
 
 ### Configure DMARC record
 
@@ -62,7 +62,7 @@ To further optimise email sending and lower the risk of your emails being blocke
 
 To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
-If your DNS servers are managed by OVHcloud, please refer to our guide on editing [an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit#access-the-area-for-managing-an-ovhcloud-dns-zone).
+If your DNS servers are managed by OVHcloud, please refer to our guide on [editing an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit#access-the-area-for-managing-an-ovhcloud-dns-zone).
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
@@ -87,12 +87,12 @@ Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.acti
 > [!primary]
 > When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
 > 
->  - it cannot start with a `-`
->  - it cannot be longer than 80 characters
->  - It cannot contain uppercase characters
->  - it must end with a `.`
+>  - It cannot start with a `-`.
+>  - It cannot be longer than 80 characters.
+>  - It cannot contain uppercase characters.
+>  - It must end with a `.`.
 >
-> Example : "MyDomain.ca" in the reverse record would be **"mydomain.ca."**
+> Example: "MyDomain.ca" in the reverse record would be **"mydomain.ca."**.
 >
 
 ### Specific types of email sending
@@ -110,12 +110,12 @@ Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Jun
 Once your account is created, you must fill in the following form: 
 
 - **Company name**
-- **Contact email address**: (A valid email address where Microsoft can contact you)
+- **Contact email address**: (A valid email address where Microsoft can contact you.)
 - **Complaint feedback email address**: (A valid email address where you will receive spam complaints. The **best practices** want the email to be in the form: **abuse@mydomain.com**.)
 
 Next, add your IP addresse(s) in the section `IP address or range`.
 
-When clicking on `Add new Network`, you will be asked to choose a contact email to authorize the request. Enter the address **abuse@mydomain.com**  (obviously replace it with your own address) previously defined to receive spam complaints.
+When clicking on `Add new Network`, you will be asked to choose a contact email to authorize the request. Enter the address **abuse@mydomain.com** (obviously replace it with your own address) previously defined to receive spam complaints.
 
 Once the information is filled in, click on `Begin Setup` to transmit the request. Microsoft will then send you an `SNDS-JMRP Contract` email, and a second email to **mydomain.com**.
 
@@ -123,7 +123,7 @@ Once the confirmations are approved, the subscription to JMRP/SNDS will be compl
 
 Once this is done and if your IP appears to be blocked, you can then request to delist it via the [junkmail procedure](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062){.external} (usually within 48H).
 
-In some cases, Microsoft may ask the date of the first billing of your IP/server. In this situation, you can send a copy of your bill and add your IP/server (ex : host nsXXX) in your reply.
+In some cases, Microsoft may ask the date of the first billing of your IP/server. In this situation, you can send a copy of your bill and add your IP/server (ex.: host nsXXX) in your reply.
 
 For additional information, please open a [support request](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656){.external} with Microsoft. 
 
