@@ -229,7 +229,6 @@
             + [How to create a Minecraft server on a VPS](bare_metal_cloud/virtual_private_servers/minecraft_server_on_vps)
             + [Retrieving databases in rescue mode](bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
             + [Setting up a web server (LAMP) on Debian or Ubuntu](bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
-            + [Managing multiple WordPress websites on a VPS with the MainWP plugin](web_cloud/web_hosting/mainwp_general)
     + [Managed Bare Metal](products/bare-metal-cloud-managed-bare-metal)
         + [OVHcloud services and options](bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options)
             + [Setting up a VPN for OVHcloud Zerto DRP](bare_metal_cloud/managed_bare_metal/zerto-virtual-replication-customer-to-ovhcloud)

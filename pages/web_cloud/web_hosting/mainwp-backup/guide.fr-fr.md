@@ -1,7 +1,7 @@
 ---
 title: "Sauvegarder ses sites web WordPress avec MainWP"
 excerpt: "Découvrez comment sauvegarder et restaurer vos sites web WordPress avec MainWP"
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 ## Objectif

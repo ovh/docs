@@ -1,7 +1,7 @@
 ---
 title: "Gérer les informations des clients de vos sites web WordPress avec MainWP"
 excerpt: "Découvrez comment gérer tous les clients de vos sites web WordPress depuis le dashboard MainWP"
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 ## Objectif
