@@ -1,7 +1,7 @@
 ---
 title: Ativar e utilizar o modo rescue no seu VPS
 excerpt: Saiba como ativar e utilizar o modo rescue no seu VPS
-updated: 2022-05-02
+updated: 2024-01-23
 ---
 
 > [!primary]
@@ -45,21 +45,11 @@ Verificar o modo rescue também ajuda a determinar se existe um problema relacio
 
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
-#### Com uma oferta VPS atual
-
 No separador `Acolhimento`{.action}, clique em `...`{.action} junto de "Boot" na zona **O seu VPS**.
 
 ![configuração do modo rescue](images/rescue_new.png){.thumbnail}
 
 Selecione `Reiniciar em modo de rescue`{.action} no menu.
-
-#### Com uma oferta VPS antiga
-
-No separador `Acolhimento`{.action}, clique no link de atalho intitulado `Reiniciar em modo rescue`{.action}.
-
-![configuração do modo rescue](images/rescue_legacy.png){.thumbnail}
-
-Aparecerá uma janela, clique em `Confirmar`{.action} para lançar o reboot em modo rescue.
 
 ### Utilização do modo rescue
 
@@ -76,6 +66,9 @@ Por exemplo:
 
 ```bash
 ssh root@vps-x11x11xyy.vps.ovh.net
+```
+
+```console
 root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 

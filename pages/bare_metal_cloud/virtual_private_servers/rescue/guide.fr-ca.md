@@ -41,21 +41,11 @@ Effectuer des vérifications en mode rescue vous aide également à déterminer 
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
-#### Avec une offre VPS actuelle
-
 Sous l'onglet `Accueil`{.action}, cliquez sur `...`{.action} à côté de « Boot » dans la zone **Votre VPS**.
 
 ![configuration du mode rescue](images/rescue_new.png){.thumbnail}
 
 Sélectionnez `Redémarrer en mode rescue`{.action} dans le menu.
-
-#### Avec une ancienne offre VPS
-
-Sous l'onglet `Accueil`{.action}, cliquez sur le lien de raccourci intitulé `Redémarrer en mode rescue`{.action}.
-
-![configuration du mode rescue](images/rescue_legacy.png){.thumbnail}
-
-Une fenêtre s'affiche, cliquez sur `Confirmer`{.action} pour lancer le redémarrage en mode rescue.
 
 ### Utilisation du mode rescue
 
@@ -72,6 +62,9 @@ Par exemple :
 
 ```bash
 ssh root@vps-x11x11xyy.vps.ovh.net
+```
+
+```console
 root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 

@@ -45,21 +45,11 @@ Verificare il Rescue mode aiuta anche a stabilire se il software o l'hardware so
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
-#### Con l'offerta VPS corrente
-
 Nella scheda `Home`{.action} clicca sui tre puntini `...`{.action} in corrispondenza di "Boot" nella zona **Il tuo VPS**.
 
 ![configurazione della modalità rescue](images/rescue_new.png){.thumbnail}
 
 Seleziona `Riavvia in modalità Rescue`{.action} nel menu.
-
-#### Con la soluzione VPS precedente
-
-Nella scheda `Home`{.action}, clicca sul link di accesso intitolato `Riavviare in Rescue mode`{.action}.
-
-![configurazione della modalità rescue](images/rescue_legacy.png){.thumbnail}
-
-Si apre una finestra, clicca su `Conferma`{.action} per avviare il riavvio in modalità Rescue.
 
 ### Utilizzo della modalità Rescue
 
@@ -76,6 +66,9 @@ ad esempio:
 
 ```bash
 ssh root@vps-x11x11xyy.vps.ovh.net
+```
+
+```console
 root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 

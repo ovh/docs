@@ -32,7 +32,7 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch festzuste
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen bereits eingerichteten [OVHcloud VPS](https://www.ovhcloud.com/de/vps/){.external} in Ihrem Kunden-Account.
+- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kundencenter
 
 > [!warning]
 >
@@ -47,21 +47,11 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch festzuste
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren VPS unter `Virtual Private Server`{.action} aus.
 
-#### Mit einem aktuellen VPS Angebot
-
 Klicken Sie im Tab `Start`{.action} auf `...`{.action} neben "Boot" im Bereich **Ihr VPS**.
 
 ![Konfiguration des Rescue-Modus](images/rescue_new.png){.thumbnail}
 
 Wählen Sie Im Menü `Neustart im Rescue-Modus`{.action}.
-
-#### Mit einem alten VPS Angebot
-
-Klicken Sie im Tab `Start`{.action} auf den Shortcut-Link `Neustart im Rescue-Modus`{.action}.
-
-![Konfiguration des Rescue-Modus](images/rescue_legacy.png){.thumbnail}
-
-Klicken Sie im neuen Fenster auf `Bestätigen`{.action}, um den Neustart im Rescue-Modus auszuführen.
 
 ### Verwendung des Rescue-Modus
 
@@ -76,8 +66,11 @@ Sie müssen dann über die Befehlszeile oder über ein SSH-Tool auf Ihren Server
 
 Beispiel:
 
-```sh
+```bash
 ssh root@vps-x11x11xyy.vps.ovh.net
+```
+
+```console
 root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 
