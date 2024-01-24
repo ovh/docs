@@ -1,7 +1,7 @@
 ---
 title: Ottimizza l'invio delle email
 excerpt: Scopri come inviare email limitando il rischio di spam
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Zoptymalizuj wysyłkę e-maili
 excerpt: Dowiedz się, jak wysyłać e-maile zmniejszając ryzyko spamu
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Optimiser l'envoi d'e-mails
 excerpt: Découvrez comment envoyer des e-mails en limitant le risque de spam
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 ## Objectif

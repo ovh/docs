@@ -1,7 +1,7 @@
 ---
 title: Den Versand von E-Mails optimieren
 excerpt: Erfahren Sie hier, wie Sie das Spam-Risiko reduzieren, wenn Sie E-Mails versenden 
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 > [!primary]

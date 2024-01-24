@@ -1,7 +1,7 @@
 ---
 title: 'Optimising the sending of emails'
 excerpt: 'Find out how to send emails and limit the risk of them being marked as spam'
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 ## Objective

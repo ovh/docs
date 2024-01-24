@@ -1,7 +1,7 @@
 ---
 title: 'Optimización del envío de correos electrónicos'
 excerpt: 'Averigüe cómo enviar correos electrónicos y limite el riesgo de que se marquen como spam'
-updated: 2024-01-19
+updated: 2024-01-24
 ---
 
 > [!primary]
@@ -59,12 +59,11 @@ El registro DMARC (Domain-based Message Authentication, Reporting and Conformanc
 
 Para más información, consulte nuestra guía sobre la [configuración de un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### Configurar el Registro inverso <a name="reverseip"></a>
+### Configurar el *Reverse IP* <a name="reverseip"></a>
 
-Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il Registro inverso con su nombre de dominio.
+Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il *Reverse IP* con su nombre de dominio.
 
 Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
-
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse.
 
@@ -82,7 +81,7 @@ Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente 
 
 ![IP inversa](images/addreverse2022.png){.thumbnail}
 
-Introduzca su dominio en la sección `Registro inverso` y haga clic en `Aceptar`{.action}.
+Introduzca su dominio en la sección `*Reverse IP*` y haga clic en `Aceptar`{.action}.
 
 ![IP inversa](images/enterreverse.png){.thumbnail}
 
