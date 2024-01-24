@@ -22,17 +22,17 @@ Habida cuenta de las operaciones que deberá realizar en el área de cliente, es
 
 Para más información sobre los **servidores DNS** y sus modificaciones, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information) .
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Si seguimos el ejemplo anterior, cuando escriba *mydomain.ovh*, los **servidores DNS** asociados a este dominio serán interrogados. Estos registros contienen la **zona DNS** del dominio *mydomain.ovh* en la que se indica la dirección IP del alojamiento de *mydomain.ovh*. Así, su navegador puede ver el sitio web *mydomain.ovh* contenido en el alojamiento. Se denomina resolución DNS.
 
-![DNS](images/dnssolve.gif){.thumbnail}
+![DNS](images/dns-resolution.gif){.thumbnail}
 
 ### La zona DNS 
 
 La zona DNS de un dominio es un archivo de configuración compuesto por **registros**. Estos registros sirven de enlace entre el dominio y los servidores que alojan los servicios de internet, como sitios web (a través del registro A) o direcciones de correo (registro MX).
 
-![DNS](images/dnszone.png){.thumbnail}
+![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
 
 **Esta guía explica cómo editar la zona DNS de OVHcloud desde el área de cliente.**
 
@@ -64,7 +64,7 @@ Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=got
 
 Se mostrará una tabla con un registro DNS asociado a su dominio en OVHcloud para cada línea. Puede filtrar el contenido por tipo de registro o por dominio.
 
-![Zona DNS](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
+![Zona DNS](images/tab.png){.thumbnail}
 
 ### Los registros DNS
 
@@ -202,7 +202,7 @@ Para añadir un nuevo registro DNS, abra la pestaña `Zona DNS`{.action} del dom
 
 Compruebe que el registro no exista ya y que no apunte a un destino diferente. Para ello, puede filtrar el contenido de la tabla por tipo de registro o por dominio. Si el registro ya existe, modifíquelo utilizando las operaciones que se describen a continuación.
 
-![Zona DNS](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
+![Zona DNS](images/add-an-entry.png){.thumbnail}
 
 > Cuando el destino del registro sea una URL, no olvide ponerla en blanco. Si no lo hace, el dominio se añadirá automáticamente al final del destino.
 >
@@ -214,7 +214,7 @@ Compruebe que el registro no exista ya y que no apunte a un destino diferente. P
 
 Para modificar un registro DNS, abra la pestaña `Zona DNS`{.action} del área de cliente y haga clic en el icono con forma de gráfica...` `{.action} situado a la derecha del registro que quiera modificar. Haga clic en `Editar el registro`{.action} y siga los pasos que se indican.
 
-![Zona DNS](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
+![Zona DNS](images/modify-record.png){.thumbnail}
 
 #### Eliminar un registro DNS
 
@@ -222,7 +222,7 @@ Para eliminar un registro DNS, abra la pestaña `Zona DNS`{.action} del área de
 
 Puede borrar varias entradas de una vez marcándolas desde la parte izquierda de la tabla y haciendo clic en el botón `Eliminar`{.action}.
 
-![Zona DNS](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+![Zona DNS](images/delete-record.png){.thumbnail}
 
 #### Restaurar la zona DNS
 
@@ -233,7 +233,7 @@ Restaurar la zona DNS le permite:
 
 En la pestaña `Zona DNS`{.action}, haga clic en `Restaurar mi zona DNS`{.action} y siga los pasos que se indican.
 
-![Zona DNS](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+![Zona DNS](images/reset-my-dns-zone.png){.thumbnail}
 
 Puede elegir entre:
 
