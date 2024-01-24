@@ -37,7 +37,7 @@ Après la commande de votre service E-mail Pro, une fenêtre s'affiche automatiq
 Deux choix sont possibles :
 
 - **sélectionner un domaine dans la liste** : seuls s'affichent les noms de domaines dont vous avez la gestion dans votre espace client OVHcloud. Si le nom de domaine est enregistré chez OVHcloud mais n'apparait pas dans votre espace client, vous devrez l'ajouter avec l'option « saisir un nom de domaine non géré par votre compte OVHcloud ».
-- **saisir un nom de domaine non géré par votre compte OVHcloud** : choisisez cette option si le nom de domaine concerné est enregistré chez OVHcloud mais configurable depuis un autre espace client OVHcloud, **ou** si votre nom de domaine est enregistré dans un autre bureau d'enregistrement. Vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service E-mail Pro puisse fonctionner correctement.
+- **saisir un nom de domaine non géré par votre compte OVHcloud** : choisissez cette option si le nom de domaine concerné est enregistré chez OVHcloud mais configurable depuis un autre compte client OVHcloud, **ou** si votre nom de domaine est enregistré dans un autre bureau d'enregistrement. Vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service E-mail Pro puisse fonctionner correctement.
 
 Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
 
