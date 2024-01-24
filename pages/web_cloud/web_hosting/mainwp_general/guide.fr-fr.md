@@ -10,7 +10,7 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 
 - contrôler l'intégralité de vos sites web depuis un seul dashboard ;
 - mettre à jour en un clic les composants techniques ;
-- [gérer les informations de vos clients](/pages/web_cloud/web_hosting/mainwp-client-management/) ;
+- [gérer les informations de vos clients](/pages/web_cloud/web_hosting/mainwp-client-management) ;
 - télécharger des extensions pour effectuer de multiples tâches.
 
 **Ce guide vous explique comment utiliser le dashboard MainWP pour administrer plusieurs sites web WordPress.**
@@ -21,7 +21,7 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 - Être connecté à l'interface d'administration de WordPress.
 
@@ -76,7 +76,7 @@ Dans le menu principal à gauche, cliquez sur `Sites`{.action}, puis sur `Add Ne
 
 Renseignez l'URL du site enfant que voulez connecter au dashboard MainWP. Juste en dessous, sélectionnez le bouton pour indiquer que vous avez bien installé et activé le plugin MainWP Child sur votre site enfant. Les deux nouveaux champs suivants s'affichent :
 
-- `Administrator username` (nom d'administrateur) : rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis cliquez sur `Web Cloud`{.action} et sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
+- `Administrator username` (nom d'administrateur) : connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Sélectionnez l'hébergement web concerné et cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
 - `Site title` (titre du site) : renseignez la valeur que vous souhaitez. Si vous connectez de nombreux sites web enfants, pensez à renseigner un titre de site explicite.
 
 ![mainWP](images/add_site.png){.thumbnail}
@@ -126,7 +126,7 @@ Effectuez la même opération pour mettre à jour WordPress, vos plugins ou vos 
 
 ### Extensions
 
-MainWP propose des fonctionnalités natives, telles que la gestion des mises à jour logicielles ou encore la [gestion des informations clients](/pages/web_cloud/web_hosting/mainwp-client-management/). Cependant, MainWP devient encore plus puissant grâce à ses nombreuses extensions, proposant un large éventail de fonctionnalités.
+MainWP propose des fonctionnalités natives, telles que la gestion des mises à jour logicielles ou encore la [gestion des informations clients](/pages/web_cloud/web_hosting/mainwp-client-management). Cependant, MainWP devient encore plus puissant grâce à ses nombreuses extensions, proposant un large éventail de fonctionnalités.
 
 Il existe différentes [catégories d'extensions](https://mainwp.com/mainwp-extensions/), comme Administrative, Backups, Analytics, Security, etc. Pour chacune des catégories, trois différents types d'extensions existent :
 
@@ -174,16 +174,14 @@ Une fois l'installation terminée, UpdraftPlus est disponible dans la liste des 
 
 Cliquez sur `Enable`{.action} pour activer l’extension. Si un message d’erreur vous indique que la licence n’est pas activée, cliquez simplement sur le bouton `License`{.action}.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
-[Gérer les informations des clients de vos sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management/)
+[Gérer les informations des clients de vos sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management)
 
-[Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
+[Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security)
 
-[Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup/)
+[Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
-
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
