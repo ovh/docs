@@ -353,7 +353,7 @@ Otherwise, please set paths.
 
 ![recover_tenant_10](images/recover_tenant/recover_tenant_10.png){.thumbnail}
 
-11\. Please check parameters of your recover before applying.
+11\. Please check parameters of your recovery before applying.
 
 ![recover_tenant_11](images/recover_tenant/recover_tenant_11.png){.thumbnail}
 
