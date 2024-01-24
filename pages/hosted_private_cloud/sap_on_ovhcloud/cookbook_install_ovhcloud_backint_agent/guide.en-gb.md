@@ -303,7 +303,7 @@ To recover a SAP HANA database from a backup done with OVHcloud Backint Agent, f
 
 2\. The TENANTDB has to be stopped to do the recovery.
 
-Ensure to stop your SAP system linked to this SAP HANA database before starting the recovery.
+Make sure to stop your SAP system linked to this SAP HANA database before starting the recovery.
 
 ![recover_tenant_02](images/recover_tenant/recover_tenant_02.png){.thumbnail}
 
