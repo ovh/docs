@@ -325,7 +325,7 @@ In our example, we select the `Recover to the most recent state`{.action} option
 
 ![recover_tenant_04](images/recover_tenant/recover_tenant_04.png){.thumbnail}
 
-5\. If you did not modify the backups catalog localisation, the `Backup location only`{.action} option is right.
+5\. If you did not modify the backups catalog location, the `Backup location only`{.action} option is right.
 
 Otherwise, please give the path.
 
