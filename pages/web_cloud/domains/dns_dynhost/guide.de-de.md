@@ -50,7 +50,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 Um einen DynHost-Benutzer zu erstellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie den Domainnamen aus. Klicken Sie auf dieser Seite auf den Tab `DynHost`{.action}.
 
-![dynhost](images/use-dynhost-step1.png){.thumbnail}
+![dynhost](images/tab.png){.thumbnail}
 
 Klicken Sie auf den Button `Zugriff verwalten`{.action} und dann auf `DynHost-Kennung erstellen`{.action}. Geben Sie im neuen Fenster die notwendigen Informationen ein.
 
@@ -67,7 +67,7 @@ Klicken Sie auf den Button `Zugriff verwalten`{.action} und dann auf `DynHost-Ke
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Die Kennung erscheint dann in der Tabelle auf der aktuellen Seite. Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Kennungen anlegen möchten.
 
-![dynhost](images/use-dynhost-step2.png){.thumbnail}
+![dynhost](images/create-a-dynhost-username.png){.thumbnail}
 
 ### Schritt 2: Dynamischen DNS-Eintrag (DynHost) erstellen <a name="step2"></a>
 
@@ -87,7 +87,7 @@ Gehen Sie für die Erstellung des DynHost-Eintrags nun zurück auf den Tab `DynH
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Der DynHost-Eintrag erscheint dann in der Tabelle auf der aktuell geöffneten Seite. Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Einträge erstellen möchten.
 
-![dynhost](images/use-dynhost-step3.png){.thumbnail}
+![dynhost](images/create-a-dynhost.png){.thumbnail}
 
 ### Schritt 3: DynHost-Update automatisieren
 
@@ -126,7 +126,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Loggen Sie sich hie
 > Jede Änderung der aktiven DNS Zone eines Domainnamenns kann zu einer Propagationszeit von 4 bis 24 Stunden führen.
 >
 
-![dynhost](images/use-dynhost-step4.png){.thumbnail}
+![dynhost](images/target.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
