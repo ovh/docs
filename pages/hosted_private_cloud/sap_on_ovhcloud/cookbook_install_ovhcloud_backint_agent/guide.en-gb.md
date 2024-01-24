@@ -349,7 +349,7 @@ Otherwise, please set paths.
 
 ![recover_tenant_09](images/recover_tenant/recover_tenant_09.png){.thumbnail}
 
-10\. In our example, we select `No`{.action} for `Initialize the log area`{.action} step.
+10\. In our example, we select `No`{.action} for the `Initialize the log area`{.action} step.
 
 ![recover_tenant_10](images/recover_tenant/recover_tenant_10.png){.thumbnail}
 
