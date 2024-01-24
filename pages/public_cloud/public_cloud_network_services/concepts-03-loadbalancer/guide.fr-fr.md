@@ -111,17 +111,17 @@ Le trafic entrant provient d'Internet et atteint une adresse Floating IP associ�
 
 \* : selon l'interface de contrôle que vous choisissez, soit ces composants seront créés pour vous (via l'espace client OVHcloud), soit vous devrez les créer spécifiquement (CLI OpenStack, Terraform ou GUI).
 
-## Statuts de fonctionnement et de provisioning <a name="operating-provisioning-status"></a>
+## Operating status et Provisioning status<a name="operating-provisioning-status"></a>
 
 Deux statuts sont utilisés pour tous les concepts de Load Balancer. 
 
-Le statut du fonctionnement décrit le fonctionnement du composant, tandis que le statut du provisioning décrit l'état du cycle de vie. 
+Le *operating status* décrit le fonctionnement du composant, tandis que le *provisioning status* décrit l'état du cycle de vie. 
 
-Le statut du provisioning est hérité des composants qui sont « contenus » par le composant père. Par exemple, si un membre est mis à jour, son statut de provisioning change, de même que le statut de provisioning du pool, du listener et du load balancer.
+Le *provisioning status* est hérité des composants qui sont « contenus » par le composant père. Par exemple, si un membre est mis à jour, son *provisioning status* change, de même que le *provisioning status* du pool, du listener et du load balancer.
 
 Dans la suite de la description, lorsque l'on utilise le terme « composant », il s'agit du composant et de tous les « composants » qu'il contient.
 
-### Statut du provisioning
+### Provisioning status
 
 - `ACTIVE` : le composant a été correctement provisioné.
 - `DELETED` : Le composant a été supprimé avec succès.
@@ -130,14 +130,14 @@ Dans la suite de la description, lorsque l'on utilise le terme « composant », 
 - `PENDING_UPDATE` : Le composant est en cours de mise à jour.
 - `PENDING_DELETE` : Le composant est en cours de suppression.
 
-### Statut du fonctionnement
+### Operating status
 
 - `ONLINE` : le composant fonctionne normalement, ce qui signifie que tous les membres du pool sont en bonne santé.
 - `DRAINING` : applicable à un membre d'un pool UDP : le membre n'accepte pas de nouvelles connexions, cela se produit parce que son `weight` a été défini sur `0`.
 - `OFFLINE` : il s'agit de l'état après une action de désactivation ou si le paramétrage de `admin_state_up` sur `false` est effectué sur un composant (listener ou load balancer). Ce statut est également utilisé lors de la création du composant. 
 - `DEGRADED` : Applicable au pool et au load balancer uniquement. Un ou plusieurs des composants contenus sont en erreur. Par exemple, si un membre est en `ERROR`, le pool et le load balancer sont également en mode `DEGRADED`.
 - `ERROR` : le composant a échoué. Par exemple, le membre est considéré comme défaillant si son contrôle d'état (health monitoring) échoue. Un pool est considéré comme ayant échoué si tous ses membres sont en erreur.
-- `NO_MONITOR` : Lorsqu'aucun health monitor n'est configuré pour ce pool, le membre et le pool auront un statut `NO_MONITOR`. Cela n'a aucun impact sur le listener ou sur l'état de fonctionnement du load balancer.
+- `NO_MONITOR` : Lorsqu'aucun health monitor n'est configuré pour ce pool, le membre et le pool auront un statut `NO_MONITOR`. Cela n'a aucun impact sur le listener ou sur le *operating status* du load balancer.
 
 ## Aller plus loin
 

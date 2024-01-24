@@ -41,7 +41,7 @@ Seules les régions sur lesquelles vous avez un réseau privé et au moins un so
 
 #### Étape 3 : attacher une IP publique (ou non)
 
-![Public IP choice](images/IP_flottante.png){.thumbnail}
+![Public IP choice](images/floating_IP.png){.thumbnail}
 
 À ce stade, vous devez savoir si votre Load Balancer recevra du trafic public ou non (pour plus de détails, consultez notre page « [Concepts - Réseau Public Cloud](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)) ». 
 
@@ -52,7 +52,7 @@ Si votre Load Balancer reçoit du trafic public, vous disposez de 2 options :
 
 Si votre Load Balancer ne doit recevoir que du trafic privé, choisissez « Aucune IP publique ».
 
-#### Étape 4 : sélectionnez le réseau privé et le sous-réseau sur lesquels le Load Balancer sera généré
+#### Étape 4 : sélectionnez le réseau privé et le sous-réseau sur lesquels le Load Balancer sera créé
 
 ![Choix du réseau](images/private_network.png){.thumbnail}
 
@@ -62,7 +62,7 @@ L'interface vous informera si le réseau privé ou le sous-réseau ne sont pas c
 
 ![Choix du listener](images/listener.png){.thumbnail}
 
-- Dans un premier temps, choisissez le protocole et le portdu listener en fonction du trafic que vous allez recevoir. Notez qu'un listener spécifique appelé `Prometheus` est disponible pour monitorer votre Load Balancer. Dans ce cas, il n'est pas possible d'ajouter des membres. Pour plus d'informations sur ce processus d'écoute, consultez [cette page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
+- Dans un premier temps, choisissez le protocole et le port du listener en fonction du trafic que vous allez recevoir. Notez qu'un listener spécifique appelé `Prometheus` est disponible pour monitorer votre Load Balancer. Dans ce cas, il n'est pas possible d'ajouter des membres. Pour plus d'informations sur ce listener, consultez [cette page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 - Choisissez ensuite le type de moniteur d'intégrité (Health Monitor). Notez que certains types de health monitors n'étant pas compatibles avec certains protocoles, l'interface utilisateur filtre ces types afin que vous puissiez uniquement choisir des éléments compatibles. Pour plus d'informations sur la compatibilité du health monitor, consultez [cette page](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 - Enfin, parmi les instances de votre région, choisissez l'IP et le port membre qui feront partie du pool. Notez que pour simplifier le processus de configuration, votre pool doit avoir le même protocole que le listener, et que le membre ne peut être choisi qu'à partir de l'instance. Ces limitations peuvent être contournées en ignorant cette partie de la configuration et en utilisant la configuration du pool/membre une fois le Load Balancer créé. 
 
