@@ -1511,7 +1511,7 @@
             + [OverTheBox v1 (Intel & IT)](web-cloud-internet-overthebox-overthebox-intel-and-it-v1)
                 + [Comment fonctionne OverTheBox v1 (Intel & IT) ?](web_cloud/internet/overthebox/install_comment_fonctionne_overthebox_v1)
                 + [Installer OverTheBox v1 (Intel & IT)](web_cloud/internet/overthebox/intel_itv1_installation)
-                + [Désactiver le serveur DHCP d'OverTheBox](web_cloud/internet/overthebox/intel_itv1_desactiver_dhcp_modem)
+                + [Désactiver le serveur DHCP de votre modem](web_cloud/internet/overthebox/intel_itv1_desactiver_dhcp_modem)
                 + [Intégrer un décodeur TV à votre OverTheBox v1 (Intel & IT)](web_cloud/internet/overthebox/intel_itv1_integration_decodeur_tv)
     + [Phone and Fax](products/web-cloud-phone-and-fax)
         + [VoIP](products/web-cloud-phone-and-fax-voip)
