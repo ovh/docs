@@ -168,7 +168,7 @@ Two files named `log_backup_0_0_0_0` and which have `DB_<SID>` and `SYSTEMDB` pr
 
 ![bucket_data_backup](images/bucket_data_backup.png){.thumbnail}
 
-In your second S3 Object Storage bucket, are preset files named `log_backup` corresponding to logs backups.
+In your second S3 Object Storage bucket,  some files named `log_backup` are present and correspond to logs backups.
 
 ![bucket_log_backup](images/bucket_log_backup.png){.thumbnail}
 
