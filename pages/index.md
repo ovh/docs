@@ -1485,6 +1485,7 @@
                 + [Configurer un routeur manuellement](web_cloud/internet/internet_access/advanced_config_router_manually)
         + [OverTheBox](products/web-cloud-internet-overthebox)
             + [Getting started](web-cloud-internet-overthebox-getting-started)
+                + [Premiers pas avec OverTheBox](web_cloud/internet/overthebox/start-with-overthebox)
                 + [FAQ OverTheBox](web_cloud/internet/overthebox/install_faq)
             + [Initial setup](web-cloud-internet-overthebox-initial-setup)
                 + [Comment mettre à jour OverTheBox ?](web_cloud/internet/overthebox/config_upgrade)
