@@ -10,7 +10,7 @@ Encuentre aquí las preguntas más frecuentes sobre el soporte de OVHcloud
 
 ### ¿Qué hacer si no consigo contactar con el soporte por teléfono?
 
-Para evitar tener que esperar por teléfono, le invitamos a crear una solicitud de soporte desde el [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests). Haga clic en el botón `Crear tíquet`{.action}.
+Para evitar tener que esperar por teléfono, le invitamos a crear una solicitud de soporte desde el [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Haga clic en el botón `Crear tíquet`{.action}.
 
 También puede consultar toda nuestra documentación (FAQ, guías, herramientas de diagnóstico, etc.) en el [Centro de ayuda](https://help.ovhcloud.com/csm/es-es-documentation?id=kb_home).
 
@@ -22,7 +22,7 @@ El objetivo del nuevo formulario es que el proceso de creación de un tíquet se
 
 Puede transmitir archivos en los siguientes formatos (tamaño máx.: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Cree una solicitud de asistencia en el [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests) y adjunte sus archivos.
+Cree una solicitud de asistencia en el [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) y adjunte sus archivos.
 
 ### ¿Qué nivel de soporte tengo?
 

@@ -127,7 +127,7 @@ Weitere Informationen zur Konfiguration dieser Regeln finden Sie in der Anleitun
 
 ### Mein Dienst wird angegriffen und ich habe Probleme mit meinem Server. Was kann ich sonst noch tun?
 
-DDoS-Schutz-Infrastrukturen sind eine Lösung, die auf höchste Effizienz und ein breites Spektrum an zu schützenden Diensten ausgelegt ist. In einigen Fällen kann eine zusätzliche Feinabstimmung erforderlich sein (z.B. für die Anwendungsspezifität oder Volumen). Um dies anzufordern, besuchen Sie unser [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) und suchen Sie nach der entsprechenden Aktion innerhalb der Kategorie "Netzwerkangriff und/oder DDoS-Schutz".
+DDoS-Schutz-Infrastrukturen sind eine Lösung, die auf höchste Effizienz und ein breites Spektrum an zu schützenden Diensten ausgelegt ist. In einigen Fällen kann eine zusätzliche Feinabstimmung erforderlich sein (z.B. für die Anwendungsspezifität oder Volumen). Um dies anzufordern, besuchen Sie unser [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) und suchen Sie nach der entsprechenden Aktion innerhalb der Kategorie "Netzwerkangriff und/oder DDoS-Schutz".
 
 Um Ihren Fall zu verstehen und Ihnen besser helfen zu können, senden Sie uns einige Details mit:
 

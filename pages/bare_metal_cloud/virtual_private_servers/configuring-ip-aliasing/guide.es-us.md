@@ -297,7 +297,7 @@ Una vez que se haya conectado al servidor por SSH, introduzca el siguiente coman
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Para probar la conexión, solo tiene que enviar un ping a su dirección Additional IP desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un [tíquet de soporte](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+Para probar la conexión, solo tiene que enviar un ping a su dirección Additional IP desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un [tíquet de soporte](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ## Más información
 

@@ -78,7 +78,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 > 
 > If the change is declined by one of the two parties, the action will be cancelled.
 >
-> If the current owner's email address is obsolete or inaccessible, you can **in this case**, contact support directly by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+> If the current owner's email address is obsolete or inaccessible, you can **in this case**, contact support directly by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 
 > [!warning]

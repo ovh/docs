@@ -81,7 +81,7 @@ Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de propriét
 > 
 > Si la modification est refusée par l'une des deux parties, la demande est annulée.
 >
-> Si l'adresse e-mail de l'actuel propriétaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+> Si l'adresse e-mail de l'actuel propriétaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 
 > [!warning]

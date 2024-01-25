@@ -12,7 +12,7 @@ Hier finden Sie Antworten zu den häufigsten Fragen zum OVHcloud Support.
 
 ### Was kann ich tun, wenn ich den Support telefonisch nicht erreiche?
 
-Um Wartezeiten am Telefon zu vermeiden, erstellen Sie eine Support-Anfrage über das [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests). Klicken Sie auf `Ticket erstellen`{.action}.
+Um Wartezeiten am Telefon zu vermeiden, erstellen Sie eine Support-Anfrage über das [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help). Klicken Sie auf `Ticket erstellen`{.action}.
 
 Sie können auch unsere gesamte Dokumentation (FAQ, Anleitungen, Diagnosetools, etc.) im [Help Center](https://help.ovhcloud.com/csm/de-documentation?id=kb_home) einsehen.
 
@@ -24,7 +24,7 @@ Mit dem neuen Anfrage-Formular wird die Ticket-Erstellung vollständiger und gen
 
 Sie können Dateien in den folgenden Formaten übertragen (max. Größe: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Erstellen Sie eine Support-Anfrage im [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) und hängen Sie Ihre Dateien an.
+Erstellen Sie eine Support-Anfrage im [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) und hängen Sie Ihre Dateien an.
 
 ### Wo kann ich mein Support-Level finden?
 

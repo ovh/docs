@@ -123,7 +123,7 @@ For more information how to configure Edge Network Firewall rules, please see ou
 
 ### My service is attacked and I experience problems on my server. What more can I do?
 
-Anti-DDoS infrastructure is a solution designed for best efficiency and wide ranges of services to protect. In some specific cases, it may need additional tuning (e.g. for application specificity or size). To request this, please visit our [Help Centre](https://help.ovhcloud.com/csm?id=csm_cases_requests) and search for the appropriate action inside the "network attack and/or Anti-DDoS related" category.
+Anti-DDoS infrastructure is a solution designed for best efficiency and wide ranges of services to protect. In some specific cases, it may need additional tuning (e.g. for application specificity or size). To request this, please visit our [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) and search for the appropriate action inside the "network attack and/or Anti-DDoS related" category.
 
 To let us better understand your case and to be able to help you, please provide us with some more details:
 
