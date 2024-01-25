@@ -89,12 +89,147 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 }
 ```
 
+
+
 ### 2. Create a Subnet (productStatus=DRAFT)
+
+Request Subnet creation (always synchronous)
+
+
+```bash
+$ curl -XPOST -d '{"range": "172.16.0.0/26", "serviceRange": "172.16.0.0/27"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet
+```
+
+```console
+HTTP/1.1 201 Created
+Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-9876543
+{
+  "id": "sub-9876543",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "",
+    "serviceRange": "172.16.0.0/27"
+  },
+  "currentState": {
+    "displayName": "",
+    "vrackServicesId": "vrs-1234567",
+    "range": "172.16.0.0/26",
+    "serviceRange": "172.16.0.0/27",
+    "vlan": 0
+  },
+  "createdAt": "2024-01-19T14:49:22.323452Z",
+  "updatedAt": "2024-01-19T14:49:22.323452Z"
+}
+```
+
 ### 3. Create a Service Endpoint (productStatus=DRAFT)
+
+1. List all Managed Services compatible with the vRack Services (here: same zone and not already linked to a
+vRack Services)
+
+```bash
+$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-2034567/compatibleManagedService
+```
+
+```console
+[
+    "1a994681-661d-4f12-ae10-597cbc124f48",
+    "1fd7bf30-6722-4658-b3db-92e269185f46",
+    "1c2c74b5-de0f-4deb-bb34-e4f63d7dcf5e",
+    "15edf087-2b94-4980-9fdf-792ecdd414ca",
+    "1d65f8e0-edde-448f-b907-a85404eb0752"
+]
+```
+
+2. Request Service Endpoint creation (synchronous as no vRack association exists)
+
+```bash
+$ curl -XPOST -d '{"name": "end-11", "serviceType": "entreprise-file-storage", "serviceId": "1a994681-661d-4f12-
+ae10-597cbc124f48"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-9876543/serviceEndpoint
+```
+
+```console
+HTTP/1.1 201 Created
+Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-9876543/serviceEndpoint/end-2345678
+{
+  "id": "end-2345678",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "EFS_critical_data"
+  },
+  "currentState": {
+    "displayName": "EFS_critical_data",
+    "subnetId": "sub-9876543",
+    "serviceType": "entreprise-file-storage",
+    "serviceId": "1a994681-661d-4f12-ae10-597cbc124f48",
+    "endpoints": {
+      1: {
+        "ip": "172.16.0.1",
+        "description": "Nominal"
+      },
+      2: {
+        "ip": "172.16.0.2",
+        "description": "Replication"
+      }
+    }
+  },
+  "createdAt": "2024-01-19T14:50:22.323452Z",
+  "updatedAt": "2024-01-19T14:50:22.323452Z"
+}
+```
+
+
+
+
 ### 4. Associate to a vRack
+
+```bash
+
+```
+
+```console
+
+```
+
 ### 5. Create a Subnet (productStatus=ACTIVE)
+
+```bash
+
+```
+
+```console
+
+```
+
 ### 6. Create a Service Endpoint (productStatus=ACTIVE)
+
+```bash
+
+```
+
+```console
+
+```
+
 ### 7. Create a Service Endpoint with a wrong Managed Service localization [Error]
+
+
+```bash
+
+```
+
+```console
+
+```
+
+
+```bash
+
+```
+
+```console
+
+```
 
 ## By Manager
 
