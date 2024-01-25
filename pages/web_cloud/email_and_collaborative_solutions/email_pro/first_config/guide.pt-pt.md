@@ -4,6 +4,10 @@ excerpt: 'Saiba como configurar o serviço E-mail Pro.'
 updated: 2024-01-24
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Sumário
 
 Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-mail profissionais a preços muito vantajosos para o seu negócio ou atividade.
@@ -130,7 +134,7 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 
 ### 5 - Usar o serviço de e-mail
 
-As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço [https://www.ovh.pt/mail](https://www.ovh.pt/mail/){.external}, onde deve introduzir os dados de acesso à sua conta.
+As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço <https://www.ovhcloud.com/pt/mail/>, onde deve introduzir os dados de acesso à sua conta.
 
 Se desejar associar o seu endereço de e-mail a um software de correio eletrónico ou a um dispositivo, como um smartphone ou tablet, [consulte os nossos manuais de configuração](/products/web-cloud-email-collaborative-solutions-email-pro). Se pretender obter mais informações sobre os elementos necessários para configurar a sua conta E-mail Pro, consulte as configurações que deverá utilizar:
 

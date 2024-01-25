@@ -4,6 +4,10 @@ excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
 updated: 2024-01-24
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
+
 ## Wprowadzenie
 
 Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjonalnych kont e-mail w najlepszej cenie pozwalającej na prowadzenie bieżącej działalności lub rozpoczęcie nowej.
@@ -130,7 +134,7 @@ Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, kt
 
 ### Etap 5: korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [webmail](https://www.ovh.pl/mail/){.external}. Zaloguj się, wprowadzając dane identyfikacyjne dla Twojego adresu e-mail.
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [webmail](https://www.ovhcloud.com/pl/mail/). Zaloguj się, wprowadzając dane identyfikacyjne dla Twojego adresu e-mail.
 
 Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu _smartfon_ lub tablet, [skorzystaj z przewodników dotyczących konfiguracji](/products/web-cloud-email-collaborative-solutions-email-pro). Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
 

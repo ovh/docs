@@ -4,6 +4,10 @@ excerpt: 'Come eseguire le prime operazioni sul servizio Email Pro'
 updated: 2024-01-24
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
 ## Obiettivo
 
 La soluzione Email Pro permette di usufruire di un servizio di posta elettronica professionale a un prezzo competitivo, per supportare o avviare la tua attività.
@@ -130,7 +134,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 ### Step 5: utilizza gli indirizzi email
 
-Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} usando le credenziali associate al tuo indirizzo di posta elettronica.
+Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo <https://www.ovhcloud.com/it/mail/> usando le credenziali associate al tuo indirizzo di posta elettronica.
 
 Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](/products/web-cloud-email-collaborative-solutions-email-pro). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 

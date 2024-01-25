@@ -36,54 +36,72 @@ If you have just ordered your Email Pro service, a window will automatically pop
 
 You will need to choose from:
 
-- **Choose a domain from the list.** Only the domains that use the OVHcloud configuration and are connected to your NIC handle will appear.
-- **Enter a domain name which is not managed by your OVHcloud account.** You should be able to modify the domain name’s configuration (its DNS zone) so that the Email Pro service can function correctly.
+- **Select a domain from the list**. Only the domain names that you manage are displayed in the OVHcloud Control Panel. If the domain name is registered with OVHcloud but does not appear in your Control Panel, you will need to add it with the option to "Enter a domain name not managed by your OVHcloud account"
+- **Enter a domain name that is not managed by your OVHcloud** account. Choose this option if the domain name concerned is registered with OVHcloud, but configurable from another OVHcloud Control Panel, **or** if your domain name is registered with another registrar. You will need to be able to modify the domain name’s configuration (its DNS zone) in order for the Email Pro service to work correctly.
 
 Once you have selected an option, click on the `Next`{.action} button.
 
-![emailpro](images/first_config_email_pro_add_domain.png){.thumbnail}
+![emailpro](images/emailpro-01.png){.thumbnail}
 
-The window will then appear, showing information on configuring a mode.
+The window will then show information on configuring modes.
 
-- **If you have entered a non-OVHcloud domain name**: Non-authoritative mode will be configured by default.
-- **If you have selected an OVHcloud domain name in the list**: you must choose between two modes.
+![emailpro](images/emailpro-02.png){.thumbnail}
 
-|Mode|Description|
-|---|---|
-|Authoritative|Choose this if you only use the Email Pro solution with your domain name. In authoritative mode, you cannot use another email solution with your Email Pro service.|
-|Non-authoritative|Choose this if you use your Email Pro solution domain name with another email solution.| 
+- **If you have entered a non-OVHcloud** domain name : non-authoritative mode will be configured by default.
 
-> [!primary]
+- **If you have selected a domain name managed by OVHcloud** from the list, you will need to choose between two modes.
+    - **Authoritative**: Choose this if your Email Pro solution is the only email solution you use with your domain name. It does not allow the use of another email solution with your service.
+    - **Non-authoritative**: Choose this if you use the Email Pro solution, along **with another email** solution, along with your domain name.
+
+> **Understanding Authoritative and Non-Authoritative Modes**
 >
-> The mode choice is not definitive. It can be modified via the OVHcloud Control Panel later on.
+> - When an email is sent to your Email Pro (*Inbound mail server Email Pro*) platform in **authoritative** mode, this means that all of your domain name’s email addresses are only hosted on this platform. <br> <br> For example, if you send an email to the address *mary.johnson@mydomain.ovh*, the Email Pro server *Inbound mail server Email Pro* will send a failure message to the sender, because that address does not exist on the Email Pro server "*Inbound mail server Email Pro*".
+> - When an email is sent to your Email Pro (*Inbound mail server Email Pro*) email platform in **non-authoritative** mode, this means that the email addresses for your domain name are divided between your main email platform (*Inbound mail server Email Pro*) and another email service (*Inbound mail server MXplan*). <br> <br> For example, if you send an email to the address *mary.johnson@mydomain.ovh*, the Email Pro "*Inbound mail server Email Pro*" will send the email to the MXplan server *Inbound mail server MXplan* so that it can deliver it.
 >
+> ![Add Domain](images/authoritative-mode.png){.thumbnail}
+>
+
+> [!warning]
+>
+> If you receive the message "**authoritative domain detected**" when adding your domain name to your email platform, this means that this domain name is declared in **authoritative** mode on another email platform. You will need to switch it to **non-authoritative** mode for both platforms so that they can coexist.
+
+If you choose **non-authoritative** mode and use a service:
+
+- **OVHcloud email (Exchange or MXplan)**, enter "*mx1.mail.ovh.net*" as the target email server ( works the same way with *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
+- **Email external to OVHcloud (competitive email solution, private email server)**. In the Target email server box, enter the host name of the incoming server for this external service, and ensure that it authorizes email requests from your Email Pro service
+
+The choice of mode is not definitive, and can be changed later from the OVHcloud Control Panel.
 
 Click on the `Next`{.action} button to continue adding the domain.
 
-![emailpro](images/first_config_email_pro_add_domain_step2.png){.thumbnail}
+**If you have selected a domain name managed by OVHcloud**, it can be configured automatically. To do this, tick the boxes you want, and click the `Next`{.action} button to continue adding the domain.
 
-**If you have selected an OVHcloud domain name in the list**, it will be automatically configured. To do this, tick the boxes and click on the `Next`{.action} button to continue adding the domain.
+![emailpro](images/emailpro-03.png){.thumbnail}
 
-![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
+- **SRV**: A DNS record that automatically configures your email software when you add your email address to it.
+- **MX**: DNS record for email servers required to receive emails on the domain name concerned.
+- **DKIM**: Setting up an encrypted digital signature to secure email exchanges. Refer to our guide on [Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim) for more information.
 
-- **SRV**: DNS records defining specific information used to identify the values necessary to connect to a service; in this case they enable an email client software to be automatically configured for your email account ("Autodiscover").
-- **MX**: DNS records pointing a domain name to an email server and therefore necessary for the reception of emails.
+**For a non-OVHcloud** domain name, follow Step 3.
 
-**For a non-OVHcloud domain name**, continue with step 3.
+At the end of the configuration process, check the information displayed, then click on the `Confirm`{.action} button to start adding the domain.
 
-At the end of the configuration process, please check the information you have entered, then click on the `Confirm`{.action} button to add the domain.
+### Step 3: Configure your domain name.
 
-### Step 3: Configure your domain name
+Once you have added the domain name as an associated domain, check its configuration using the table that pops up.
 
-Once you have added the domain name as an associated domain, you can check its configuration using the table on the `Associated domains`{.action} tab.
+You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two possibilities:
 
-You can use the `Diagnosis`{.action} column to modify the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two options:
+- **Automatic configuration when you add an OVHcloud** domain name : if you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
-- **Automatic configuration, when adding an OVHcloud domain name:** it may take a few hours after the modification before it is correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- **Manual configuration for a non-OVHcloud** domain name : click on the red box to view the changes you will need to make.
+    - *For a CNAME* record, you can use our guide on "[Creating a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".
+    - *For an MX* record, please refer to our guide on "[Adding an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx)".
+    - *For an SRV* record, enter your DNS zone using the information you entered when you clicked on the red box. You can use our guide on "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)" to add this record.
+    - *For an SPF* record, enter your DNS zone using the information you enter when you click on the box. You can use our guide on "[Configuring an SPF record](/pages/web_cloud/domains/dns_zone_spf)" to add this record.
+    *For a DKIM* record, enter your DNS zone using the information provided when you click on the box. You can refer to our guide on "[Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)" to add this record.
 
-- **Manual configuration, when adding a non-OVHcloud domain name:** click on the red box to verify the changes you need to make. <br>_For a CNAME record_, please refer to our guide on [Creating a CNAME record to add an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname). <br>_For an MX record_, please refer to our guide [Add an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx). <br>_For an SRV record_, you can edit your DNS zone using the information provided when you click on the red "SRV" box. We recommend to consult [our guide](/pages/web_cloud/domains/dns_zone_edit) regarding these modifications. If you have just made the changes, they may take a few hours to be correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
-
-![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
+![emailpro](images/emailpro-04.png){.thumbnail}
 
 ### Step 4: Configure the Email Pro accounts
 
@@ -110,11 +128,11 @@ Once the information is complete, click on the `Next`{.action} button, check the
 > Repeat this step as necessary according to the number of accounts you have. You can order additional accounts using the `Order accounts`{.action} button.
 >
 
-![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
+![emailpro](images/emailpro-06.png){.thumbnail}
 
 ### Step 5: Use your email addresses
 
-Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.ie/mail/), and you will need to enter your email credentials.
+Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovhcloud.com/en-ie/mail/), and you will need to enter your email credentials.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](/products/web-cloud-email-collaborative-solutions-email-pro). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
