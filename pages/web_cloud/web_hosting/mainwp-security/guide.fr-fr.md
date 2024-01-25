@@ -1,7 +1,7 @@
 ---
 title: "Améliorer la sécurité de son site web avec le plugin MainWP pour WordPress"
 excerpt: "Découvrez comment contrôler la sécurité de vos sites web depuis une seule interface grâce à MainWP"
-updated: 2024-01-24
+updated: 2024-01-25
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Maintenir la sécurité de vos sites web est crucial pour le développement de v
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre dashboard MainWP.
 
 > [!warning]
@@ -27,7 +27,7 @@ Maintenir la sécurité de vos sites web est crucial pour le développement de v
 ### Installer l'extension Sucuri
 
 > [!primary]
-> Si vous n'avez jamais installé d'extension MainWP, découvrez dans [ce guide](/pages/web_cloud/web_hosting/mainwp_general/) comment installer une extension.
+> Si vous n'avez jamais installé d'extension MainWP, découvrez dans [ce guide](/pages/web_cloud/web_hosting/mainwp_general) comment installer une extension.
 >
 
 Pour retrouver toutes les extensions liées à la sécurité, rendez-vous dans la rubrique [sécurité](https://mainwp.com/mainwp-extensions/extension-category/security/) de MainWP. Vous pouvez également chercher une extension en cliquant sur `Extensions`{.action} depuis le menu principal de MainWP puis sur `Install Extensions`{.action}.
@@ -84,16 +84,14 @@ Pour résoudre un problème, identifiez la ligne correspondante et cliquez sur l
 
 Une fois le problème résolu, vous pouvez annuler les modifications apportées en cliquant sur le bouton `Unfix`{.action}.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
-[Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general/)
+[Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general)
 
-[Gérer les clients de ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management/)
+[Gérer les clients de ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management)
 
-[Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup/)
+[Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
-
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
