@@ -316,9 +316,7 @@ Dans notre exemple, nous choisissons l'option `Data and logs backups`{.action}.
 
 ![recover_tenant_03](images/recover_tenant/recover_tenant_03.png){.thumbnail}
 
-4\.
-
-Si vous avez sélectionné l'option précédente `Data and logs backups`{.action}, vous avez deux possibilités :
+4\. Si vous avez sélectionné l'option précédente `Data and logs backups`{.action}, vous avez deux possibilités :
   
 - `Recover to the most recent state`{.action} vous permet de revenir à l'état le plus récent possible.
 - `Recover to a specific point in time`{.action} vous permet de revenir à une date et une heure précise.
