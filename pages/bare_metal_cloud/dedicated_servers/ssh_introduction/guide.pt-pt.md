@@ -81,6 +81,8 @@ Se a porta SSH do servidor não é a porta standard, utilize este comando:
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Ligação e fingerprint
 
 Quando for convidado a introduzir uma palavra-passe, introduza a do utilizador que se liga e prima a `Enter`.

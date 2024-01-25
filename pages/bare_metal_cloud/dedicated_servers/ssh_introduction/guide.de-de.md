@@ -20,7 +20,7 @@ Das Kommunikationsprotokoll SSH (*Secure Shell*) ist das meistgenutzte Verfahren
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
 ## Voraussetzungen
@@ -83,6 +83,8 @@ Wenn der SSH-Port des Servers nicht der Standard-Port ist, verwenden Sie folgend
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Login und Fingerprint
 
 Wenn Sie zur Eingabe eines Passworts aufgefordert werden, geben Sie das Passwort des Benutzers ein, der sich verbindet, und drücken Sie auf `Enter`.
@@ -143,7 +145,7 @@ Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 Um dies zu beheben, geben Sie folgenden Befehl unter Angabe der IP-Adresse Ihres Servers ein:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh/known_hosts" -R 169.254.10.254
 ```
 
 Alternativ öffnen Sie den angegebenen Ordner, klicken Sie mit der rechten Maustaste auf die Datei und öffnen Sie diese mit der Anwendung Notepad (oder einem beliebigen Texteditor).
