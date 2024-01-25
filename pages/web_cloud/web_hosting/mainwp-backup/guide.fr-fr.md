@@ -19,7 +19,7 @@ MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre dashboard MainWP.
 
 > [!warning]
@@ -34,7 +34,7 @@ MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
 ### Installer l'extension UpdraftPlus
 
 > [!primary]
-> Si vous n'avez jamais installé d'extension MainWP, découvrez dans [ce guide](/pages/web_cloud/web_hosting/mainwp_general/) comment installer une extension.
+> Si vous n'avez jamais installé d'extension MainWP, découvrez dans [ce guide](/pages/web_cloud/web_hosting/mainwp_general) comment installer une extension.
 >
 
 Pour retrouver toutes les extensions liées à la sauvegarde, rendez-vous sur la rubrique [sauvegarde](https://mainwp.com/mainwp-extensions/extension-category/backup/) de MainWP. Vous pouvez également chercher une extension en cliquant sur `Extensions`{.action} depuis le menu principal de MainWP, puis sur `Install Extensions`{.action}. Cliquez sur l'onglet `Backup`{.action} pour afficher la liste des extensions liées à la sauvegarde.
@@ -107,20 +107,18 @@ Sélectionnez les éléments que vous souhaitez restaurer puis validez. Le messa
 
 ![mainWP backup](images/restoration_success.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
-[Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general/)
+[Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general)
 
-[Gérer les informations clients de vos sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management/)
+[Gérer les informations clients de vos sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-client-management)
 
-[Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
+[Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security)
 
 [Tutoriel - Sauvegarder votre site WordPress](/pages/web_cloud/web_hosting/how_to_backup_your_wordpress)
 
 [Restaurer l'espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
-
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
