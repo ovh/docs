@@ -326,7 +326,7 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 >> As you can see, the VM only has a private IP but it is available from the Internet via the Floating IP.
 >>
 >> ```bash
->> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 1.1.1.1
+>> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 213.186.33.99
 >> ubuntu@vm4fip:~$ curl ifconfig.me/ip
 >> 169.254.10.25
 >> ```
