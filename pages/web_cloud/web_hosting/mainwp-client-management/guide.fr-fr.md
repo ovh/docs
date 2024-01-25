@@ -1,7 +1,7 @@
 ---
 title: "Gérer les informations des clients de vos sites web WordPress avec MainWP"
 excerpt: "Découvrez comment gérer tous les clients de vos sites web WordPress depuis le dashboard MainWP"
-updated: 2024-01-24
+updated: 2024-01-25
 ---
 
 ## Objectif
@@ -77,11 +77,11 @@ Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients.
 
 ## Aller plus loin
 
-[Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general/)
+[Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general)
 
-[Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security/)
+[Améliorer la sécurité de son site web avec MainWP](/pages/web_cloud/web_hosting/mainwp-security)
 
-[Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup/)
+[Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
