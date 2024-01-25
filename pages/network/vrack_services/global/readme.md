@@ -31,6 +31,12 @@ Then, those private IPs are dynamically allocated by the vRack Services automati
 # Product configuration experience
 ## Requirements
 
+- You can start configuring the vRack Services product before associating any vRack.
+- You can switch the vRack associated with a vRack Services from one vRack (x) to another (y).
+- You have the flexibility to acquire a vRack, vRack Services, and a Managed Service in any order, at any time.
+- The vRack Services product incurs charges based on the Managed Services price. Infrastructure involved in the vRack Services configuration should not be used until a Managed Service is ordered.
+- According to the OneAPI consumption requirements, a Subnet primitive cannot exist without an associated Network relationship.
+
 > [!primary]
 >
 > As an helper, a summary of the configuration is available with the VrackServices.productStatus attribut.
