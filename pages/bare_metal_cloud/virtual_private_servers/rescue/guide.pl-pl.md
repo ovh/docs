@@ -45,21 +45,11 @@ Wykonanie weryfikacji w trybie Rescue pomoże Ci również ustalić, czy problem
 
 Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
-#### W ofercie VPS
-
 W zakładce `Strona główna`{.action} kliknij przycisk `...`{.action} obok "Boot" w obszarze **Twój VPS**.
 
 ![konfiguracja trybu Rescue](images/rescue_new.png){.thumbnail}
 
 Wybierz `Zrestartuj w trybie Rescue`{.action} w menu.
-
-#### Z poprzednią ofertą VPS
-
-W zakładce `Strona główna`{.action} kliknij link skrócony zatytułowany `Uruchom ponownie w trybie Rescue`{.action}.
-
-![konfiguracja trybu Rescue](images/rescue_legacy.png){.thumbnail}
-
-Pojawi się okno, kliknij `Zatwierdź`{.action}, aby uruchomić restart w trybie rescue.
 
 ### Korzystanie z trybu Rescue
 
@@ -76,6 +66,9 @@ Przykład:
 
 ```bash
 ssh root@vps-x11x11xyy.vps.ovh.net
+```
+
+```console
 root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 

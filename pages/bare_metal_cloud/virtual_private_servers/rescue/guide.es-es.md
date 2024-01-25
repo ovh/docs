@@ -45,21 +45,11 @@ Realizar comprobaciones en modo de rescate también le ayudará a determinar si 
 
 Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
-#### Con una solución VPS actual
-
 En la pestaña `Inicio`{.action}, haga clic en `...`{.action} junto al botón derecho en la zona **Su VPS**.
 
 ![configuración del modo de rescate](images/rescue_new.png){.thumbnail}
 
 Seleccione `Reiniciar en modo de rescate`{.action} en el menú.
-
-#### Con una antigua solución de VPS
-
-En la pestaña `Inicio`{.action}, haga clic en el enlace de acceso rápido `Reiniciar en modo de rescate`{.action}.
-
-![configuración del modo de rescate](images/rescue_legacy.png){.thumbnail}
-
-Se abrirá una ventana en la que deberá hacer clic en `Confirmar`{.action} para iniciar el reinicio en modo de rescate.
 
 ### Uso del modo de rescate
 
@@ -76,6 +66,9 @@ Por ejemplo:
 
 ```bash
 ssh root@vps-x11x11xyy.vps.ovh.net
+```
+
+```console
 root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 
