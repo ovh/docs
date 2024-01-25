@@ -1,7 +1,7 @@
 ---
 title: "Install and use OVHcloud Backint Agent for SAP HANA"
 excerpt: "This guide provides instructions for installing OVHcloud Backint Agent for SAP HANA and its usage"
-updated: 2024-01-17
+updated: 2024-01-25
 ---
 
 ## Objective
@@ -202,13 +202,17 @@ To validate the configuration, you can trigger manual backups with the following
 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -u SYSTEM -d SYSTEMDB "BACKUP DATA FOR <SID> USING BACKINT ('MANUAL_COMPLETE_BACKUP');"
 ```
 
-You also have the possibility to trigger these backups via the SAP HANA Studio software. Select `Backint`{.action} in the `Destination Type`{.action} category.
+You also have the possibility to trigger these backups via SAP HANA Cockpit. Select `Backint`{.action} in the `Destination Type`{.action} category.
 
-![hana_studio](images/hana_studio.png){.thumbnail}
+![backup_hana_cockpit](images/backup_hana_cockpit.png){.thumbnail}
 
-After the execution of these backups, several files corresponding to backups of your SAP HANA database via OVHcloud Backint Agent are now present in your S3 Object Storage bucket.
+After the execution of these backups, several files named `_databackup_` are now present in your S3 Object Storage bucket, these files correspond to backups of your SAP HANA database via OVHcloud Backint Agent.
 
-![backup](images/backup.png){.thumbnail}
+Two files named `log_backup_0_0_0_0` and which have `DB_<SID>` and `SYSTEMDB` prefixes are also present in your S3 Object Storage bucket. These files correspond to backups of the SAP HANA backup catalog, allowing you to list backups known by SAP HANA.
+
+Files named `log_backup` correspond to backups of SAP HANA logs backups.
+
+![bucket](images/bucket.png){.thumbnail}
 
 If these backups have not been done as expected, check the content of the following files to search for errors:
 
@@ -239,19 +243,47 @@ The scheduling of your SAP HANA database backups has to be modified.
 
 We advise you to refer to the SAP Note [2782059](https://launchpad.support.sap.com/#/notes/2782059) which sets out four options to schedule the backup of SAP HANA databases.
 
-A scheduling example via crontab:
+An example of a daily scheduling of a TENANTDB SAP HANA backup via the SAP HANA Cockpit:
+
+1\. Select the TENANTDB on which you want to schedule backups. Click on `+`{.action} to add the scheduling.
+
+![backup_scheduling_01](images/backup_scheduling/backup_scheduling_01.png){.thumbnail}
+
+2\. Select the `Schedule a Series of Backups`{.action} option.
+
+![backup_scheduling_02](images/backup_scheduling/backup_scheduling_02.png){.thumbnail}
+
+3\. Give a name to your scheduling.
+
+![backup_scheduling_03](images/backup_scheduling/backup_scheduling_03.png){.thumbnail}
+
+4\. Select `Complete`{.action} option then `Backint`{.action}. You have the possibility to configure a backup prefix. By default, backups are prefixed with the date and time.
+
+![backup_scheduling_04](images/backup_scheduling/backup_scheduling_04.png){.thumbnail}
+
+5\. Select `Weekly`{.action} option.
+
+![backup_scheduling_05](images/backup_scheduling/backup_scheduling_05.png){.thumbnail}
+
+6\. Select your time zone, the time and the day when the backup has to be triggered. In this daily backups example, we check all days of the week.
+
+![backup_scheduling_06](images/backup_scheduling/backup_scheduling_06.png){.thumbnail}
+
+7\. Please check parameters of your scheduling before applying.
+
+![backup_scheduling_07](images/backup_scheduling/backup_scheduling_07.png){.thumbnail}
+
+8\. The daily scheduling is now configured for your TENANTDB.
+
+![backup_scheduling_08](images/backup_scheduling/backup_scheduling_08.png){.thumbnail}
+
+Find below the same daily backups scheduling of the TENANTDB SAP HANA via crontab:
 
 *Replace in the following commands the* `<SID>` *characters by the SID of your SAP HANA database and* `<NI>` *characters by the instance number of your SAP HANA database.*
 
 ```bash
-# TENANTDB Full Backup - MON THU SUN
-0 0 * * 1,4,7 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP');"
- 
-# TENANTDB Differential Backup - TUE WED FRI SAT
-0 0 * * 2,3,5,6 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA DIFFERENTIAL FOR <SID> USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_DIFFERENTIAL_BACKUP');"
- 
-# SYSTEMDB Full Backup - SUN
-0 0 * * 7 /usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA USING BACKINT ('SCHEDULED_$(date +\%H\%M\%S\%s)_COMPLETE_BACKUP);"
+# TENANTDB Full Backup - Everyday
+30 1 * * * /usr/sap/<SID>/HDB<NI>/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('$(date +\%d\%m\%Y_\%H\%M\%S\%s)_COMPLETE_BACKUP');"
 ```
 
 > [!primary]
@@ -263,71 +295,75 @@ A scheduling example via crontab:
 
 ### Recovery
 
-To recover a SAP HANA database from a backup done with OVHcloud Backint Agent, follow these steps in SAP HANA Studio:
+To recover a SAP HANA database from a backup done with OVHcloud Backint Agent, follow these steps in SAP HANA Cockpit:
 
-> [!tabs]
-> **Step 1**
->> Select your TENANTDB that you want to recover.
->>
->> Then click on `Next`{.action}.
->>
->> ![hana_studio_recover_1](images/hana_studio_recover_1.png){.thumbnail}
->>
-> **Step 2**
->> Select the option that you want to use to recover your TENANTDB:
->>
->> - Recover the database to its most recent state.
->> - Recover the database to the following point in time.
->> - Recover the database to a specific data backup.
->>
->> Then click on `Next`{.action}.
->>
->> ![hana_studio_recover_2](images/hana_studio_recover_2.png){.thumbnail}
->>
-> **Step 3**
->> Ensure that the options `Recover using the backup catalog`{.action} and `Search for the backup catalog in Backint only`{.action} are selected.
->>
->> Then click on `Next`{.action}.
->>
->> ![hana_studio_recover_3](images/hana_studio_recover_3.png){.thumbnail}
->>
-> **Step 4**
->> The TENANTDB has to be stopped to do the recovery.
->>
->> Ensure to stop your SAP system linked to this SAP HANA database before starting the recovery.
->>
->> ![hana_studio_recover_4](images/hana_studio_recover_4.png){.thumbnail}
->>
-> **Step 5**
->> After few seconds, SAP HANA Studio displays the full backup list recorded in the backup catalog of your SAP HANA database.
->>
->> We recommend to click on `Check Availability`{.action} to check the availability of the backup in the S3 Object Storage bucket.
->>
->> Then click on `Next`{.action}.
->>
->> ![hana_studio_recover_5](images/hana_studio_recover_5.png){.thumbnail}
->>
-> **Step 6**
->> If you did not modify the backup log localisation, you can click on `Next`{.action}.
->>
->> Otherwise set the right path first. Then click on `Next`{.action}.
->>
->> ![hana_studio_recover_6](images/hana_studio_recover_6.png){.thumbnail}
->>
-> **Step 7**
->> Ensure to check the `Third-Party Backup Tool (Backint)`{.action} option and to uncheck the `File System`{.action} option.
->>
->> Then click on `Next`{.action}.
->>
->> ![hana_studio_recover_7](images/hana_studio_recover_7.png){.thumbnail}
->>
-> **Step 8**
->> The recovery of your SAP HANA database starts.
->>
->> ![hana_studio_recover_8](images/hana_studio_recover_8.png){.thumbnail}
->>
+1\. In the `Database Management`{.action} tab, select your TENANTDB. Click on `Tenant Actions`{.action} then select `Recover Tenant`{.action}.
 
-Once the recovery has been done successfully, your SAP HANA database is started and available.
+![recover_tenant_01](images/recover_tenant/recover_tenant_01.png){.thumbnail}
+
+2\. The TENANTDB has to be stopped to do the recovery.
+
+Make sure to stop your SAP system linked to this SAP HANA database before starting the recovery.
+
+![recover_tenant_02](images/recover_tenant/recover_tenant_02.png){.thumbnail}
+
+3\. Select the wanted option :
+
+- `Data and logs backups`{.action} allows you to recover to a specific point in time.
+- `Full data backup only`{.action} allows you to recover to a state of a full backup.
+
+In our example, we select the `Data and logs backups`{.action} option.
+
+![recover_tenant_03](images/recover_tenant/recover_tenant_03.png){.thumbnail}
+
+4\. If you previously selected the `Data and logs backups`{.action} option, you have two options:
+
+- `Recover to the most recent state`{.action} allows you to recover to the most recent state.
+- `Recover to a specific point in time`{.action} allows you to recover to a specific point in time.
+
+In our example, we select the `Recover to the most recent state`{.action} option.
+
+![recover_tenant_04](images/recover_tenant/recover_tenant_04.png){.thumbnail}
+
+5\. If you did not modify the backups catalog location, the `Backup location only`{.action} option is right.
+
+Otherwise, please give the path.
+
+![recover_tenant_05](images/recover_tenant/recover_tenant_05.png){.thumbnail}
+
+6\. After few seconds, all full data backups recorded in the backups catalog of your SAP HANA database are listed.
+
+![recover_tenant_06](images/recover_tenant/recover_tenant_06.png){.thumbnail}
+
+7\. You can leave the `Yes (recommended)`{.action} option selected.
+
+![recover_tenant_07](images/recover_tenant/recover_tenant_07.png){.thumbnail}
+
+8\. If you did not modify the backups and logs backup location, please leave the fields empty.
+
+Otherwise, please set paths.
+
+![recover_tenant_08](images/recover_tenant/recover_tenant_08.png){.thumbnail}
+
+9\. We recommend selecting `Yes`{.action} for the `Backint`{.action} category. This option allows you to check the availability of backups before triggering the recovery.
+
+![recover_tenant_09](images/recover_tenant/recover_tenant_09.png){.thumbnail}
+
+10\. In our example, we select `No`{.action} for the `Initialize the log area`{.action} step.
+
+![recover_tenant_10](images/recover_tenant/recover_tenant_10.png){.thumbnail}
+
+11\. Please check parameters of your recovery before applying.
+
+![recover_tenant_11](images/recover_tenant/recover_tenant_11.png){.thumbnail}
+
+12\. The recovery of your TENANTDB services starts.
+
+![recover_tenant_12](images/recover_tenant/recover_tenant_12.png){.thumbnail}
+
+13\. Once the recovery has been done successfully, your SAP HANA database is started and available.
+
+![recover_tenant_13](images/recover_tenant/recover_tenant_13.png){.thumbnail}
 
 ## Go further
 

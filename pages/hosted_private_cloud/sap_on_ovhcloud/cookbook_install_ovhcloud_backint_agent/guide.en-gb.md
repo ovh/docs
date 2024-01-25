@@ -1,7 +1,7 @@
 ---
 title: "Install and use OVHcloud Backint Agent for SAP HANA"
 excerpt: "This guide provides instructions for installing OVHcloud Backint Agent for SAP HANA and its usage"
-updated: 2024-01-23
+updated: 2024-01-25
 ---
 
 ## Objective
