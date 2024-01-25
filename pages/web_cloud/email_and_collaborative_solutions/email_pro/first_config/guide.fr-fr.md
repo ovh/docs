@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec la solution E-mail Pro'
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
-updated: 2020-04-09
+updated: 2024-01-24
 ---
 
 ## Objectif
@@ -68,7 +68,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 Si vous choisissez le mode **non-autoritatif** et que vous utilisez un service :
 
 - **E-mail OVHcloud (Exchange ou MXplan)**, saisissez directement comme serveur e-mail cible « *mx1.mail.ovh.net* » ( fonctionne de la même façon avec *mx0.mail.ovh.net*, *mx2.mail.ovh.net**, *mx3.mail.ovh.net**, *mx4.mail.ovh.net* ).
-- **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro
+- **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro.
 
 Le choix du mode n'est pas définitif et peut être modifié après depuis l'espace client OVHcloud.
 
@@ -80,7 +80,7 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 - **SRV** : enregistrement DNS permettant la configuration automatique de votre logiciel de messagerie lorsque vous y ajoutez votre adresse e-mail.
 - **MX** : enregistrement DNS des serveurs e-mail nécessaire à la réception des e-mails sur le nom de domaine concerné.
-- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Configurer un enregistrement DKIM ](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
+- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
 
 **Pour un nom de domaine non géré par OVHcloud**, suivez l'étape 3.
 
