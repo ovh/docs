@@ -61,10 +61,40 @@ It answers the question `does my current configuration makes the Managed Service
 > 
 
 ### 1. Initial state
-### 2. Create a Subnet
-### 3. Create a Service Endpoint
+A vRack Services has been ordered at 'eu-east-1' Region
+
+```bash
+$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
+```
+
+```console
+{
+  "id": "vrs-1234567",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "Backup_infra."
+  },
+  "currentState": {
+    "productStatus": "DRAFT",
+    "displayName": "Sample_Display_Name",
+    "nicAdmin": "dp12345-ovh",
+    "nicTech": "dp12345-ovh",
+    "vrackId": null,
+    "zone": "rbx",
+    "region": "eu-east-1",
+    "az": "eu-east-1"
+  },
+  "createdAt": "2024-01-20T14:30:22.323452Z",
+  "updatedAt": "2024-01-20T14:30:22.323452Z"
+}
+```
+
+### 2. Create a Subnet (productStatus=DRAFT)
+### 3. Create a Service Endpoint (productStatus=DRAFT)
 ### 4. Associate to a vRack
-### 
+### 5. Create a Subnet (productStatus=ACTIVE)
+### 6. Create a Service Endpoint (productStatus=ACTIVE)
+### 7. Create a Service Endpoint with a wrong Managed Service localization [Error]
 
 ## By Manager
 
