@@ -135,4 +135,4 @@ Votre nouveau registrar procédera alors au transfert.
 
 > [!warning]
 >
-> Si le nom de domaine est suspendu ou expiré, il est nécessaire de [créer un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+> Si le nom de domaine est suspendu ou expiré, il est nécessaire de [créer un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).

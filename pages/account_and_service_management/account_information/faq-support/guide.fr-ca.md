@@ -10,7 +10,7 @@ Retrouvez ici les questions les plus fréquemment posées sur le support OVHclou
 
 ### Que dois-je faire si je n'arrive pas à joindre le support par téléphone ?
 
-Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande de support depuis le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests). Cliquez sur le bouton `Création de ticket`{.action}.
+Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande de support depuis le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur le bouton `Création de ticket`{.action}.
 
 Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic…) dans le [Centre d'aide](https://help.ovhcloud.com/csm/fr-ca-documentation?id=kb_home).
 
@@ -22,7 +22,7 @@ Ce nouveau formulaire a pour objectif de rendre le parcours de création de tick
 
 Vous pouvez transmettre des fichiers dans les formats suivants (taille max. : 1024 Mo) : bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Créez une demande d’assistance dans le [Centre d’aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests) et joignez vos fichiers.
+Créez une demande d’assistance dans le [Centre d’aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) et joignez vos fichiers.
 
 ### Où puis-je trouver mon niveau de support ?
 

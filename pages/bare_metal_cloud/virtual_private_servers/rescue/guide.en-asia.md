@@ -77,7 +77,7 @@ root@vps-x11x11xyy.vps.ovh.net's password:
 > 
 > Your SSH client will likely block the connection at first due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary SSH server.
 >
-> One way around this is "commenting out" the fingerprint of your VPS by adding a `#` in front of its line in the `known_hosts` file. Remember to revert this change before switching the netboot back to "normal" mode.<br>You can also delete the line from the file. Your SSH client will then add a new fingerprint entry for the VPS when the connection is established anew. If you require more detailed instructions, please refer to our guide "[Getting started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)".
+> One way around this is "commenting out" the fingerprint of your VPS by adding a `#` in front of its line in the `known_hosts` file. Remember to revert this change before switching the netboot back to "normal" mode.<br>You can also delete the line from the file. Your SSH client will then add a new fingerprint entry for the VPS when the connection is established anew. If you require more detailed instructions, please refer to our guide "[Getting started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login)".
 >
 
 For most changes you make to your server via SSH while in rescue mode, you will need to mount the system partition.

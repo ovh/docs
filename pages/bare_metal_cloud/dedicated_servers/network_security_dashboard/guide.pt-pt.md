@@ -127,7 +127,7 @@ Para mais informações sobre como configurar as regras do Edge Network Firewall
 
 ### O meu serviço é atacado e encontro problemas no meu servidor. O que mais eu posso fazer?
 
-A infraestrutura anti-DDoS é uma solução concebida para assegurar a melhor eficiência e uma vasta gama de serviços a proteger. Em alguns casos específicos, pode requerer ajustes adicionais (por exemplo, para especificidade ou tamanho da aplicação). Para o solicitar, visite o nosso [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_cases_requests) e procure a ação adequada na categoria "Ataques de rede e/ou Anti-DDoS".
+A infraestrutura anti-DDoS é uma solução concebida para assegurar a melhor eficiência e uma vasta gama de serviços a proteger. Em alguns casos específicos, pode requerer ajustes adicionais (por exemplo, para especificidade ou tamanho da aplicação). Para o solicitar, visite o nosso [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help) e procure a ação adequada na categoria "Ataques de rede e/ou Anti-DDoS".
 
 Para podermos compreender melhor o seu caso e podermos ajudá-lo, forneça-nos alguns detalhes adicionais:
 

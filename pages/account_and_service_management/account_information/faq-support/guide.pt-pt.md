@@ -10,7 +10,7 @@ Encontre as questões mais frequentes sobre o suporte da OVHcloud
 
 ### O que devo fazer se não conseguir contactar o Apoio ao Cliente por telefone?
 
-Para evitar esperar ao telefone, convidamo-lo a criar um pedido de suporte a partir do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests). Clique no botão `Criação de ticket`{.action}.
+Para evitar esperar ao telefone, convidamo-lo a criar um pedido de suporte a partir do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Clique no botão `Criação de ticket`{.action}.
 
 Pode igualmente consultar o conjunto da nossa documentação (FAQ, guias, ferramentas de diagnóstico, etc.) no [Centro de Ajuda](https://help.ovhcloud.com/csm/pt-documentation?id=kb_home).
 
@@ -22,7 +22,7 @@ O novo formulário tem por objetivo tornar o processo de criação de tickets ma
 
 Pode transmitir ficheiros nos seguintes formatos (tamanho máximo: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Crie um pedido de assistência no [Centro de Ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests) e anexe os seus ficheiros.
+Crie um pedido de assistência no [Centro de Ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) e anexe os seus ficheiros.
 
 ### Onde posso encontrar o nível de suporte que tenho?
 

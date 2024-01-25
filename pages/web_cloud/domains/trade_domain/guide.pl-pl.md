@@ -85,7 +85,7 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 > 
 > Jeżeli jedna ze stron odrzuci zmianę, wniosek zostaje anulowany.
 >
-> Jeśli adres e-mail aktualnego właściciela jest przestarzały lub niedostępny, możesz **w tym przypadku** skontaktować się bezpośrednio z działem pomocy, wysyłając zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+> Jeśli adres e-mail aktualnego właściciela jest przestarzały lub niedostępny, możesz **w tym przypadku** skontaktować się bezpośrednio z działem pomocy, wysyłając zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 
 > [!warning]

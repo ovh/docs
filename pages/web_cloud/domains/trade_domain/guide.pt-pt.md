@@ -85,7 +85,7 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 >
 > Se uma das partes recusar a alteração, o pedido será anulado.
 >
-> Se o endereço de e-mail do atual proprietário estiver obsoleto ou inacessível, pode, **neste caso preciso**, contactar diretamente o suporte através da criação de um ticket de assistência a partir do seu [centro de ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+> Se o endereço de e-mail do atual proprietário estiver obsoleto ou inacessível, pode, **neste caso preciso**, contactar diretamente o suporte através da criação de um ticket de assistência a partir do seu [centro de ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 
 > [!warning]

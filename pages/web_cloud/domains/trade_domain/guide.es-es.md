@@ -85,7 +85,7 @@ Si la dirección de correo electrónico no se modifica como parte del cambio de 
 >
 > Si una de las partes rechaza la modificación, la solicitud se anulará.
 >
-> Si la dirección de correo electrónico del propietario actual no está actualizada o no se puede acceder a ella, **en este caso**, puede contactar directamente con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+> Si la dirección de correo electrónico del propietario actual no está actualizada o no se puede acceder a ella, **en este caso**, puede contactar directamente con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 
 > [!warning]

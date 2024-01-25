@@ -10,7 +10,7 @@ Najczęściej zadawane pytania znajdziesz w pomocy OVHcloud.
 
 ### Co zrobić, kiedy nie mogę połączyć się z działem wsparcia klienta przez telefon?
 
-Aby nie przedłużać oczekiwania na pomoc przez telefon, prosimy o utworzenie zgłoszenia w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests). Kliknij przycisk `Utwórz zgłoszenie`{.action}.
+Aby nie przedłużać oczekiwania na pomoc przez telefon, prosimy o utworzenie zgłoszenia w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Kliknij przycisk `Utwórz zgłoszenie`{.action}.
 
 Możesz również zapoznać się z całością naszej dokumentacji (FAQ, przewodniki, narzędzia do diagnostyki, ...) dostępnej w [Centrum Pomocy](https://help.ovhcloud.com/csm/pl-documentation?id=kb_home).
 
@@ -22,7 +22,7 @@ Dzięki systemowi pytań, na jakich opiera się nowy formularz, procedura otwier
 
 Pliki można przesyłać w następujących formatach (maksymalny rozmiar: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Utwórz zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests) i dołącz pliki.
+Utwórz zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) i dołącz pliki.
 
 ### Gdzie znajdę informację o przysługującym mi poziomie wsparcia klienta?
 

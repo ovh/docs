@@ -81,6 +81,8 @@ Si el puerto SSH del servidor no es el puerto estándar, utilice el siguiente co
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Conexión y finalización
 
 Cuando se le pida una contraseña, escriba la del usuario que se conecta y pulse `Enter`.

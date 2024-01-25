@@ -10,7 +10,7 @@ Le domande più frequenti sul supporto OVHcloud.
 
 ### Cosa fare in caso di difficoltà a contattare il supporto telefonicamente?
 
-Per evitare di aspettare al telefono, ti invitiamo a creare una richiesta di supporto dal [Centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests). Clicca sul pulsante `Creazione ticket`{.action}.
+Per evitare di aspettare al telefono, ti invitiamo a creare una richiesta di supporto dal [Centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Clicca sul pulsante `Creazione ticket`{.action}.
 
 Per consultare tutta la nostra documentazione (FAQ, guide, strumenti di diagnostica, ecc.), accedi al [Centro assistenza](https://help.ovhcloud.com/csm/it-documentation?id=kb_home).
 
@@ -22,7 +22,7 @@ Il nuovo form è pensato per rendere più precise e complete le informazioni for
 
 Potete trasmettere file nei seguenti formati (dimensioni massime: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Crea una richiesta di assistenza nel [Centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests) e allega i file.
+Crea una richiesta di assistenza nel [Centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) e allega i file.
 
 ### Dove verificare il livello di supporto attivo?
 
