@@ -12,7 +12,7 @@ La fidélisation de vos clients est primordiale pour le développement de votre 
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre dashboard MainWP. Pour plus d'informations, consultez notre guide « [Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general) ».
 
 > [!warning]
@@ -75,7 +75,7 @@ Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients.
 
 ![mainWPClientMngt](images/details_client.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general)
 
@@ -84,7 +84,5 @@ Une fois votre nouveau client créé, dirigez-vous dans la liste de vos clients.
 [Sauvegarder ses sites web avec MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
-
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
