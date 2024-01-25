@@ -318,6 +318,84 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-2034567/subnet/sub-4567890
 
 ```
 
+### 8. Create two Service Endpoints (productStatus=ACTIVE)
+
+
+```bash
+
+```
+
+```console
+
+```
+
+### 9. Create a Service Endpoint while Subnet ServiceRange is fully allocated [Error]
+
+
+```bash
+
+```
+
+```console
+
+```
+
+### 10. Extend the Subnet service range
+
+
+```bash
+
+```
+
+```console
+
+```
+
+
+### 11. Delete a Subnet that is associated to Service Endpoints [Error]
+
+
+```bash
+
+```
+
+```console
+
+```
+
+### 12. Dissociate the vRack Services from the vRack
+
+
+```bash
+
+```
+
+```console
+
+```
+
+### 12bis. Suspend the vRack Services
+
+
+```bash
+
+```
+
+```console
+
+```
+
+### 13. Delete the vRack Services
+
+
+```bash
+
+```
+
+```console
+
+```
+
 
 ```bash
 
