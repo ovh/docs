@@ -36,8 +36,8 @@ Après la commande de votre service E-mail Pro, une fenêtre s'affiche automatiq
 
 Deux choix sont possibles :
 
-- **sélectionner un domaine dans la liste** : seuls s'affichent les noms de domaines dont vous avez la gestion dans votre espace client OVHcloud. Si le nom de domaine est enregistré chez OVHcloud mais n'apparait pas dans votre espace client, vous devrez l'ajouter avec l'option « saisir un nom de domaine non géré par votre compte OVHcloud »
-- **saisir un nom de domaine non géré par votre compte OVHcloud** : choisisez cette option si le nom de domaine concerné est enregistré chez OVHcloud mais configurable depuis un autre espace client OVHcloud, **ou** si votre nom de domaine est enregistré dans un autre bureau d'enregistrement. Vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service E-mail Pro puisse fonctionner correctement.
+- **sélectionner un domaine dans la liste** : seuls s'affichent les noms de domaines dont vous avez la gestion dans votre espace client OVHcloud. Si le nom de domaine est enregistré chez OVHcloud mais n'apparait pas dans votre espace client, vous devrez l'ajouter avec l'option « saisir un nom de domaine non géré par votre compte OVHcloud ».
+- **saisir un nom de domaine non géré par votre compte OVHcloud** : choisissez cette option si le nom de domaine concerné est enregistré chez OVHcloud mais configurable depuis un autre compte client OVHcloud, **ou** si votre nom de domaine est enregistré dans un autre bureau d'enregistrement. Vous devrez être en mesure de modifier la configuration du nom de domaine (sa zone DNS) afin que le service E-mail Pro puisse fonctionner correctement.
 
 Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
 
@@ -55,22 +55,22 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 
 > **Comprendre les modes Autoritatif et Non-autoritatif**
 >
-> - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **autoritatif**, cela signifie que toutes les adresses e-mail de votre nom de domaine sont uniquement hébergées sur cette plateforme. <br> <br> Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro « *Inbound mail server Email Pro* » renvoie un message d'échec à l'expéditeur, car cette adresse n'existe pas sur le serveur E-mail Pro « *Inbound mail server Email Pro* ».
-> - Lorsqu'un e-mail est transmis vers votre plateforme e-mail E-mail Pro (*Inbound mail server Email Pro*) en mode **non-autoritatif**, cela signifie que les adresses e-mail de votre nom de domaine sont réparties entre votre plateforme e-mail principale (*Inbound mail server Email Pro*) et un autre service e-mail (*Inbound mail server MXplan*). <br> <br> Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro *Inbound mail server Email Pro* transmettra l'e-mail au serveur MXplan « *Inbound mail server MXplan* » pour que ce dernier puisse le délivrer.
+> - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **autoritatif**, cela signifie que toutes les adresses e-mail de votre nom de domaine sont uniquement hébergées sur cette plateforme.<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro « *Inbound mail server Email Pro* » renvoie un message d'échec à l'expéditeur, car cette adresse n'existe pas sur le serveur E-mail Pro « *Inbound mail server Email Pro* ».
+> - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **non-autoritatif**, cela signifie que les adresses e-mail de votre nom de domaine sont réparties entre votre plateforme e-mail principale (*Inbound mail server Email Pro*) et un autre service e-mail (*Inbound mail server MXplan*).<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro *Inbound mail server Email Pro* transmettra l'e-mail au serveur MXplan « *Inbound mail server MXplan* » pour que ce dernier puisse le délivrer.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
 
 > [!warning]
 >
-> Si vous obtenez le message « **authoritative domain detected** » lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez donc le passer en mode **non-autoritatif** pour les deux plateformes pour qu'elles puissent cohabiter.
+> Si vous obtenez le message « **authoritative domain detected** » lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez donc le passer en mode **non-autoritatif** pour les deux plateformes afin qu'elles puissent cohabiter.
 
 Si vous choisissez le mode **non-autoritatif** et que vous utilisez un service :
 
 - **E-mail OVHcloud (Exchange ou MXplan)**, saisissez directement comme serveur e-mail cible « *mx1.mail.ovh.net* » ( fonctionne de la même façon avec *mx0.mail.ovh.net*, *mx2.mail.ovh.net**, *mx3.mail.ovh.net**, *mx4.mail.ovh.net* ).
-- **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro.
+- **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro
 
-Le choix du mode n'est pas définitif et peut être modifié après depuis l'espace client OVHcloud.
+Le choix du mode n'est pas définitif et peut être modifié par la suite depuis l'espace client OVHcloud.
 
 Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
@@ -99,7 +99,7 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
     - *Pour un enregistrement MX*, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».
     - *Pour un enregistrement SRV*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille rouge. Vous pouvez vous aider du guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour ajouter cet enregistrement.
     - *Pour un enregistrement SPF*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) » pour ajouter cet enregistrement.
-    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement DKIM ](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
+    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
