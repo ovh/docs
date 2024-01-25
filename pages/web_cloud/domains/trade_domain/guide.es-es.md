@@ -1,7 +1,7 @@
 ---
 title: "Cómo cambiar el propietario de un nombre de dominio"
 excerpt: "En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio."
-updated: 2023-12-04
+updated: 2024-01-26
 ---
 
 > [!primary]
@@ -79,18 +79,15 @@ Una vez que haya confirmado su solicitud de cambio, recibirá dos mensajes de co
 Si la dirección de correo electrónico no se modifica como parte del cambio de propietario, la dirección de correo de referencia recibirá los dos mensajes, pero es necesario confirmar cada uno de ellos.
 <br>Una vez que los dos destinatarios hayan confirmado la solicitud por correo electrónico, el cambio de propietario del dominio se hará efectivo.
 
-> [!primary]
->
-> El procedimiento deberá ser validado por ambas partes en un plazo de 14 días a partir de la solicitud.
->
-> Si una de las partes rechaza la modificación, la solicitud se anulará.
->
-> Si la dirección de correo electrónico del propietario actual no está actualizada o no se puede acceder a ella, **en este caso**, puede contactar directamente con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-
 > [!warning]
 >
-> Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain) durante un período de 60 días.
+> - El procedimiento deberá ser validado por ambas partes en un plazo de 14 días a partir de la solicitud. **Pasado este plazo, el procedimiento queda cancelado**.
+>
+> - Si una de las partes rechaza la modificación, la solicitud se anulará.
+>
+> - Si la dirección de correo electrónico del propietario actual no está actualizada o no se puede acceder a ella, **en este caso**, puede contactar directamente con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain) durante un período de 60 días.
 
 ### Actualización de la información del propietario <a name="updateownerinformation"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Changing the owner of a domain name"
 excerpt: "Find out how to change the owner of a a domain name in the OVHcloud Control Panel"
-updated: 2023-12-04
+updated: 2024-01-26
 ---
 
 ## Objective
@@ -72,18 +72,15 @@ Once you have confirmed your trade request, two emails will be sent to confirm o
 If the email address is not changed as part of the domain trade, one recipient will receive both emails but each of them needs to be confirmed regardless.
 <br>Once the two recipients confirm the agreement via email, the domain name owner change will become effective.
 
-> [!primary]
->
-> The procedure can be validated by both parties during a period of 14 days.
-> 
-> If the change is declined by one of the two parties, the action will be cancelled.
->
-> If the current owner's email address is obsolete or inaccessible, you can **in this case**, contact support directly by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-
 > [!warning]
 >
-> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain) for a period of 60 days. 
+> - The procedure can be validated by both parties during a period of 14 days. **After this period, the procedure is canceled**.
+> 
+> - If the change is declined by one of the two parties, the action will be cancelled.
+>
+> - If the current owner's email address is obsolete or inaccessible, you can **in this case**, contact support directly by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain) for a period of 60 days.
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 

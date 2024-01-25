@@ -1,7 +1,7 @@
 ---
 title: "Alterar o titular de um nome de domínio"
 excerpt: "Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio."
-updated: 2023-12-04
+updated: 2024-01-26
 ---
 
 > [!primary]
@@ -79,18 +79,15 @@ Uma vez confirmado o seu pedido de troca de dados, ser-lhe-ão enviados dois e-m
 Se o endereço de e-mail não for alterado devido à mudança de proprietário, o endereço de e-mail de referência receberá os dois e-mails, mas cada um deles deve ser confirmado.
 <br>Uma vez que os dois destinatários confirmaram o pedido por e-mail, a alteração do proprietário do nome de domínio terá efeito.
 
-> [!primary]
->
-> O procedimento deve ser validado por ambas as partes no prazo de 14 dias a contar do pedido.
->
-> Se uma das partes recusar a alteração, o pedido será anulado.
->
-> Se o endereço de e-mail do atual proprietário estiver obsoleto ou inacessível, pode, **neste caso preciso**, contactar diretamente o suporte através da criação de um ticket de assistência a partir do seu [centro de ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-
 > [!warning]
 >
-> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](/pages/web_cloud/domains/transfer_outgoing_domain) durante um período de 60 dias.
+> - O procedimento deve ser validado por ambas as partes no prazo de 14 dias a contar do pedido. **Po tym terminie zabieg zostaje anulowany**.
+>
+> - Se uma das partes recusar a alteração, o pedido será anulado.
+>
+> - Se o endereço de e-mail do atual proprietário estiver obsoleto ou inacessível, pode, **neste caso preciso**, contactar diretamente o suporte através da criação de um ticket de assistência a partir do seu [centro de ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](/pages/web_cloud/domains/transfer_outgoing_domain) durante um período de 60 dias.
 
 ### Atualização das informações do proprietário <a name="updateownerinformation"></a>
 
