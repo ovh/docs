@@ -37,6 +37,16 @@ Then, those private IPs are dynamically allocated by the vRack Services automati
 - The vRack Services product incurs charges based on the Managed Services price. Infrastructure involved in the vRack Services configuration should not be used until a Managed Service is ordered.
 - According to the OneAPI consumption requirements, a Subnet primitive cannot exist without an associated Network relationship.
 
+## By API
+
+Behind the scenes, the status of VrackServices (VrackServices.productStatus) mirrors the state of the infrastructure configuration. This configuration is initiated once the following three criteria are met:
+
+- The product is not suspended.
+- There is an existing vRack association.
+- At least one Service Endpoint has been set up.
+
+If any of these requirements are no longer satisfied, the configuration is withdrawn from the OneAPI (either marked as DRAFT or SUSPENDED).
+
 > [!primary]
 >
 > As an helper, a summary of the configuration is available with the VrackServices.productStatus attribut.
@@ -47,9 +57,9 @@ It answers the question `does my current configuration makes the Managed Service
 > DRAFT - no, either a Service Endpoint needs to be created or a vRack needs to be associated to the vRack Services
 > 
 > SUSPENDED - no, product is in Agora `suspension` state
+>
 > 
 
-## By API
 ### 1. Initial state
 ### 2. Create a Subnet
 ### 3. Create a Service Endpoint
