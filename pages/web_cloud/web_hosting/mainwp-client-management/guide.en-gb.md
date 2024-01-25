@@ -12,27 +12,27 @@ Retaining customers is vital to your company’s development. Whether you have o
 
 ## Requirements
 
-- a [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
-- You need to be logged in to your MainWP dashboard. For more information, please read our guide on [Administering multiple WordPress websites with the MainWP plugin](/pages/web_cloud/web_hosting/mainwp_general).
+- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- Access to your MainWP dashboard. For more information, please read our guide on [Managing multiple WordPress websites with the MainWP plugin](/pages/web_cloud/web_hosting/mainwp_general).
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> We offer this tutorial to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 ## Instructions
 
 In the MainWP main menu, click `Clients`{.action}. On the screen that opens, there are three tabs:
 
-- Customers: Displays a list of all your customers
-- Add Client : allows you to create new clients
-- Client Fields: allows you to create new fields related to your clients
+- Customers: displays a list of all your customers
+- Add Client : allows you to create new customers
+- Client Fields: allows you to create new fields related to your customers
 
 ### Add a customer
 
-To get started, add your first customer. In the main menu of MainWP, click `Clients`{.action} then `Add Client`{.action}. In the form that appears, fill in your customer’s details. On the right-hand side of the screen, select the websites on which you want to create your new client, then click `Add Client`{.action}.
+To get started, add your first customer. In the main menu of MainWP, click `Clients`{.action} then `Add Client`{.action}. In the form that appears, fill in your customer’s details. On the right-hand side of the screen, select the websites on which you want to create your new customer, then click `Add Client`{.action}.
 
 ![mainWPClientMngt](images/add_client.png){.thumbnail}
 
@@ -50,15 +50,15 @@ From this table, you can delete any customer. Select the lines corresponding to 
 
 Finally, click `Yes, proceed`{.action} to confirm the deletion of the customers.
 
-In the table representing your customers, identify the customer of your choice and click on the three dots (...).
+In the table representing your customers, identify the customer of your choice and click on the `...`{.action}.
 
 ![mainWPClientMngt](images/more_client.png){.thumbnail}
 
 You can:
 
-- edit customer information (`Edit`{.action});
-- delete the customer (`Delete`{.action});
-- see the websites concerned by your customer (`View Sites`{.action}).
+- edit customer information (`Edit`{.action})
+- delete the customer (`Delete`{.action})
+- see the websites concerned by your customer (`View Sites`{.action})
 
 ### Create new fields for your customers
 
@@ -71,7 +71,7 @@ In our example, we create a new “loyalty” field, along with an associated de
 
 ![mainWPClientMngt](images/new_field_add_client.png){.thumbnail}
 
-Once you have created your new customer, go to your customer list. Click the client you just created. The new “loyalty” field and the corresponding value are displayed.
+Once you have created your new customer, go to your customers list. Click the customer you just created. The new “loyalty” field and the corresponding value are displayed.
 
 ![mainWPClientMngt](images/details_client.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Once you have created your new customer, go to your customer list. Click the cli
 [Improve your website's security with MainWP](/pages/web_cloud/web_hosting/mainwp-security)
 
 [Backing up your websites with MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
- 
+
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
- 
+
 Join our community of users on <https://community.ovh.com/en/>.

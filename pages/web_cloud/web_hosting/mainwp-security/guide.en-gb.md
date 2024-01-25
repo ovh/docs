@@ -12,14 +12,14 @@ Maintaining the security of your websites is crucial for the development of your
 
 ## Requirements
 
-- a [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
-- You need to be logged in to your MainWP dashboard.
+- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- Access to your MainWP dashboard.
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
-> 
-> We offer this tutorial to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 ## Instructions
@@ -38,7 +38,7 @@ In the MainWP main menu, click `Extensions`{.action} then `Manage Extensions`{.a
 
 ![mainWP security](images/sucuri_extension.png){.thumbnail}
 
-If you have not already done so, click `Enable`{.action} , then `License`{.action} to use the extension.
+If you have not already done so, click `Enable`{.action}, then `License`{.action} to use the extension.
 
 ### Perform a security scan
 
@@ -60,21 +60,21 @@ Click `Show Report`{.action} to view the security report.
 
 The security scan report provides a lot of important information about the security of your website:
 
-- presence of viruses and malicious software;
-- anomaly detection;
-- dangerous links;
-- SPAM attempts;
+- presence of viruses and malicious software
+- anomaly detection
+- dangerous links
+- SPAM attempts
 - etc.
 
 Remember to carry out regular security scans. With Sucuri, you can enable a reminder. At the bottom of the list of your security reports, click on the dropdown list to the right of `Remind me if I don't scan my child site for`{.action}. For example, if you choose `1 week`{.action}, Sucuri will remind you every week to carry out a security scan.
 
 ### Identify and resolve security issues
 
-In the main menu of MainWP, click `Sites`{.action} then select the child site of your choice. At the top of the screen, click on the `Security`{.action} tab. On the dashboard that pops up, you can see if any security issues have been identified by Sucuri.
+In the main menu of MainWP, click `Sites`{.action} then select the child site of your choice. At the top of the screen, click the `Security`{.action} tab. On the dashboard that pops up, you can see if any security issues have been identified by Sucuri.
 
 ![mainWP security](images/security_overview.png){.thumbnail}
 
-In our example, Sucuri tells us that three security issues have been identified. Click `Fix all issues`{.action} to resolve all security issues. If you would like to find out more about the issues identified, click on the `Security`{.action} tab at the top of the interface. A list of security issues is displayed.
+In our example, Sucuri tells us that three security issues have been identified. Click `Fix all issues`{.action} to resolve all security issues. If you would like to find out more about the issues identified, click the `Security`{.action} tab at the top of the interface. A list of security issues is displayed.
 
 ![mainWP security](images/security_list.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Once the problem has been resolved, you can cancel the changes made by clicking 
 [Manage customers for your websites with MainWP](/pages/web_cloud/web_hosting/mainwp-client-management)
 
 [Backing up your websites with MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
- 
+
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
- 
+
 Join our community of users on <https://community.ovh.com/en/>.

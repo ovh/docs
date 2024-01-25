@@ -6,12 +6,12 @@ updated: 2024-01-25
 
 ## Objective
 
-Administering multiple websites can be complex and time-consuming. If you manage multiple WordPress websites, you will need to manage the technical maintenance of the websites, updates to plugins and themes, or even login credentials. The MainWP plugin for WordPress is an effective solution for managing multiple WordPress websites from a single dashboard (*dashboard*). MainWP allows you to:
+Managing multiple websites can be complex and time-consuming. If you manage multiple WordPress websites, you will need to manage the technical maintenance of the websites, plugins and themes updates, or even login credentials. The MainWP plugin for WordPress is an efficient solution for managing multiple WordPress websites from a single dashboard. MainWP allows you to:
 
-- control all your websites from a single dashboard;
-- update the technical components in one click;
-- [manage your customer information](/pages/web_cloud/web_hosting/mainwp-client-management);
-- download extensions to perform multiple tasks.
+- control all your websites from a single dashboard
+- update the technical components in one click
+- [manage your customer information](/pages/web_cloud/web_hosting/mainwp-client-management)
+- download extensions to perform multiple tasks
 
 **Find out how to use the MainWP dashboard to manage multiple WordPress websites.**
 
@@ -21,20 +21,20 @@ Administering multiple websites can be complex and time-consuming. If you manage
 
 ## Requirements
 
-- You must have a [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section.
-- You must be logged in to the WordPress administration interface.
+- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section.
+- Access to the WordPress administration interface.
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> We offer this tutorial to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 ## Instructions
 
-If you are not already logged in, access the administration interface of your one-click module where you want to install the MainWP dashboard.
+If you are not already logged in, access the administration interface of your one-click module for which you want to install the MainWP dashboard.
 
 ![mainWP](images/connect_WP_admin.png){.thumbnail}
 
@@ -58,7 +58,7 @@ MainWP Child enables you to connect your WordPress website (also called a "child
 
 > [!warning]
 >
-> An error may occur if you install MainWP Child first. Be sure to install MainWP Dashboard **before** MainWP Child.
+> An error may occur if you install MainWP Child first. Make sure to install MainWP Dashboard **before** MainWP Child.
 >
 
 Once you have installed both plugins, please remember to enable them in order to use them.
@@ -66,7 +66,7 @@ Once the two plugins are installed and enabled, the following warning message wi
 
 ![mainWP](images/warning_message_child.png){.thumbnail}
 
-This message tells you that you have just activated the MainWP Child plugin, and that you now need to connect your child website to the MainWP Dashboard. For security reasons, disable the MainWP Child plugin if you do not want to connect your child website now. Reactivate the MainWP Child plugin when you are ready to connect your WordPress website to the MainWP dashboard.
+This message informs you that you have just activated the MainWP Child plugin, and that you now need to connect your child website to the MainWP Dashboard. For security reasons, disable the MainWP Child plugin if you do not want to connect your child website now. Reactivate the MainWP Child plugin when you are ready to connect your WordPress website to the MainWP dashboard.
 
 ### Connect a child site to the MainWP dashboard
 
@@ -76,7 +76,7 @@ In the main menu on the left, click `Sites`{.action}, then `Add New`{.action}. T
 
 Enter the URL of the child site you want to connect to the MainWP dashboard. Just below, select the button to indicate that you have installed and activated the MainWP Child plugin on your child website. The following two new fields are displayed:
 
-- `Administrator username` (admin name): log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the `Web Cloud`{.action} section. Select the web hosting plan concerned, and click on the `1-click modules`{.action} tab. In the table that pops up, identify the row that corresponds to your module in one click. Your admin name is in the `Login`{.action} column.
+- `Administrator username`: log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the `Web Cloud`{.action} section. Select the web hosting plan concerned, and click the `1-click modules`{.action} tab. In the table that pops up, identify the row that corresponds to your 1-click module. Your admin name is in the `Login`{.action} column.
 - `Site title`: enter the value you want. If you connect many child websites, remember to enter an explicit site title.
 
 ![mainWP](images/add_site.png){.thumbnail}
@@ -89,7 +89,7 @@ To check that your child website is available in the MainWP dashboard, click `Si
 
 ![mainWP](images/sites_dashboard.png){.thumbnail}
 
-In our example, the website “my website” will appear in the list of child sites connected to the MainWP dashboard. You can add as many child sites as you want.
+In our example, the website "my website" will appear in the list of child sites connected to the MainWP dashboard. You can add as many child sites as you want.
 
 ![mainWP](images/grid_all_sites.png){.thumbnail}
 
@@ -115,12 +115,12 @@ At the top of the interface, the tabs indicate that a plugin and four themes are
 
 ![mainWP](images/update_themes.png){.thumbnail}
 
-If you want to update several themes (or all the themes at the same time), select the corresponding lines (by ticking the button to the left of each line) then click `Update Selected Themes`{.action}.
+If you want to update several themes (or all the themes at the same time), select the corresponding lines (by ticking the box to the left of each line) then click `Update Selected Themes`{.action}.
 The following confirmation message appears, indicating the sites where the previously selected themes will be updated.
 
 ![mainWP](images/update_confirmation_message.png){.thumbnail}
 
-In our example, the selected themes will be updated for the websites "www.example.fr", "www.example2.ovh", "blog 1", "blog 2" and "blog 3". Click `Yes, proceed`{.action} to confirm. The progress window appears and disappears when the updates are complete.
+In our example, the selected themes will be updated for the websites "www.example.fr", "www.example2.ovh", "blog 1", "blog 2" and "blog 3". Click `Yes, proceed`{.action} to confirm. The progress window appears. It will close when the updates are complete.
 
 Do the same to update WordPress, your plugins or your translations.
 
@@ -134,11 +134,11 @@ There are different [extension categories](https://mainwp.com/mainwp-extensions/
 - Professional: premium extensions developed by MainWP
 - .Org: free extensions developed by a third-party publisher
 
-Before you can install an extension, go to [MainWP](https://mainwp.com/my-account/) to create your account.
+Before you can install an extension, go to [MainWP.com](https://mainwp.com/my-account/) to create your account.
 
 #### Order an extension
 
-Once you have created your MainWP account, go to the MainWP [extensions](https://mainwp.com/mainwp-extensions/) section . For our example, we choose the free UpdraftPlus extension. Click the UpdraftPlus extension.
+Once you have created your MainWP account, go to the [MainWP.com extensions section](https://mainwp.com/mainwp-extensions/). For our example, we choose the free UpdraftPlus extension. Click the UpdraftPlus extension.
 
 ![mainWP](images/updraftPlus_card.png){.thumbnail}
 
@@ -181,7 +181,7 @@ Click `Enable`{.action} to enable the extension. If an error message indicates t
 [Improve your website's security with MainWP](/pages/web_cloud/web_hosting/mainwp-security)
 
 [Backing up your websites with MainWP](/pages/web_cloud/web_hosting/mainwp-backup)
- 
+
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
- 
+
 Join our community of users on <https://community.ovh.com/en/>.
