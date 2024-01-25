@@ -299,12 +299,16 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-2034567/subnet/sub-4567890
 
 ### 6. Create a Service Endpoint (productStatus=ACTIVE)
 
-```bash
+1. Request Service Endpoint creation (asynchronous as a vRack association exists)
 
+```bash
+$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7bf30-6722-4658-b3db-
+92e269185f46"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
 ```
 
 ```console
-
+HTTP/1.1 201 Created
+Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint/end-5678901
 ```
 
 ### 7. Create a Service Endpoint with a wrong Managed Service localization [Error]
