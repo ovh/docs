@@ -135,7 +135,6 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-2034567/compatibleManaged
 [
     "1a994681-661d-4f12-ae10-597cbc124f48",
     "1fd7bf30-6722-4658-b3db-92e269185f46",
-    "1c2c74b5-de0f-4deb-bb34-e4f63d7dcf5e",
     "15edf087-2b94-4980-9fdf-792ecdd414ca",
     "1d65f8e0-edde-448f-b907-a85404eb0752"
 ]
@@ -165,11 +164,11 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-9876543/s
     "endpoints": {
       1: {
         "ip": "172.16.0.1",
-        "description": "Nominal"
+        "description": "Nominal"         // Fetched from the Managed Service 'create' event
       },
       2: {
         "ip": "172.16.0.2",
-        "description": "Replication"
+        "description": "Replication"     // Fetched from the Managed Service 'create' event
       }
     }
   },
@@ -183,22 +182,119 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-9876543/s
 
 ### 4. Associate to a vRack
 
-```bash
+1. Check eligibility to the vRack
 
+```bash
+$ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/allowedServices?serviceFamily=vrackServices
 ```
 
 ```console
+{
+  "ipLoadbalancing": null,
+  "dedicatedConnect": null,
+  "dedicatedServer": null,
+  "vrackServices": [
+    "vrs-2345678",
+    "vrs-1234567"
+  ],
+  "ip": null,
+  "dedicatedCloudDatacenter": null,
+  "ovhCloudConnect": null,
+  "cloudProject": null,
+  "dedicatedCloud": null,
+  "legacyVrack": null,
+  "dedicatedServerInterface": null
+}
+```
 
+2. Request vRack association
+
+```bash
+$ curl -XPOST -d '{"vrackServices": "vrs-1234567"}' https://api.ovh.com/1.0/vrack/pn-12345/vrackServices
+```
+
+```console
+[
+    todoDate: "2024-01-19T14:51:22.323452Z"
+    status: "init"
+    serviceName: "pn-12345"
+    orderId: null
+    lastUpdate: "2024-01-19T14:51:22.323452Z"
+    targetDomain: "vrs-1234567"
+    function: "addVrackServices"
+    id: 3456789
+]
+```
+
+3. Fetch asynchronous task because it can takes few secondes. Perhaps you can have some error during the execution of this task
+
+```bash
+$ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/3456789
+```
+
+```console
+HTTP/1.1 404 Not Found
+{
+    "message": "The requested object (taskId = 3456789) does not exist"
+}
+```
+
+4. When this synchronous task is done you can fetch the vRack Services status
+
+```bash
+$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
+```
+
+```console
+{
+  "id": "vrs-1234567",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "Sample_Display_Name"
+  },
+  "currentState": {
+    "productStatus": "ACTIVE",
+    "displayName": "Sample_Display_Name",
+    "nicAdmin": "dp12345-ovh",
+    "nicTech": "dp12345-ovh",
+    "vrackId": "pn-12345",
+    "zone": "rbx",
+    "region": "eu-east-1",
+    "az": "eu-east-1-a"
+  },
+  "createdAt": "2024-01-19T14:40:22.323452Z",
+  "updatedAt": "2024-01-19T14:52:22.323452Z"
+}
 ```
 
 ### 5. Create a Subnet (productStatus=ACTIVE)
 
-```bash
+Request Subnet creation (always synchronous)
 
+```bash
+$ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "vlan": "10"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet
 ```
 
 ```console
-
+HTTP/1.1 201 Created
+Location: https://api.ovh.com/2.0/vrackServices/vrs-2034567/subnet/sub-4567890
+{
+    "id": "sub-4567890",
+    "resourceStatus": "READY",
+    "targetSpec" : {
+        "displayName": "rbx_nominal_services",
+        "serviceRange": "172.21.0.0/29"
+    },
+    "currentState": {
+        "displayName": "rbx_nominal_services",
+        "vrackServicesId": "vrs-1234567",
+        "range": "172.21.0.0/27",
+        "serviceRange": "172.21.0.0/29",
+        "vlan": 10,
+    },
+    "createdAt": "2024-01-19T14:53:22.323452Z",
+    "updatedAt": "2024-01-19T14:53:22.323452Z"
+}
 ```
 
 ### 6. Create a Service Endpoint (productStatus=ACTIVE)
