@@ -84,8 +84,8 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
     "region": "eu-east-1",
     "az": "eu-east-1"
   },
-  "createdAt": "2024-01-20T14:30:22.323452Z",
-  "updatedAt": "2024-01-20T14:30:22.323452Z"
+  "createdAt": "2024-01-19T14:30:22.323452Z",
+  "updatedAt": "2024-01-19T14:30:22.323452Z"
 }
 ```
 
