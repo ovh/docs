@@ -1,6 +1,6 @@
 ---
-title: Expose your services using OVHcloud Public Cloud Load Balancer
-excerpt: "How to expose your services hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
+title: Expose your applications using OVHcloud Public Cloud Load Balancer
+excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
 updated: 2024-01-18
 ---
 
