@@ -53,7 +53,7 @@ No entanto, existem **casos especiais** que são detalhados [mais abaixo](#speci
 
 Para rescindir a subscrição do seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome em cima à direita e, a seguir, clique no botão `Produtos e serviços`{.action}.
 
-![produtos e serviços](imagens/products-services.png){.thumbnail}
+![produtos e serviços](images/products-services.png){.thumbnail}
 
 Clique então no botão `...`{.action} à direita do serviço a rescindir, e depois em `Rescindir o meu compromisso`{.action}.
 
@@ -76,7 +76,7 @@ O cancelamento do seu serviço terá lugar na **data de entrada em vigor** indic
 
 #### E-mail MX Plan <a name="mxplan"></a>
 
-A maior parte dos serviços MX Plan estão associados a um alojamento. Se for o caso, e pretender eliminar esta opção de e-mail, siga [as instruções deste manual](/pages/web_cloud/web_hosting/ativate-email-hosting/#supressao-da-oferta-de-e-mail-associada-ao-seu-alojamento-web). **Atenção**, a eliminação de um MX Plan apaga definitivamente todos os dados correspondentes e não garante nenhum reembolso.
+A maior parte dos serviços MX Plan estão associados a um alojamento. Se for o caso, e pretender eliminar esta opção de e-mail, siga [as instruções deste manual](/pages/web_cloud/web_hosting/activate-email-hosting#supressao-da-oferta-de-e-mail-associada-ao-seu-alojamento-web). **Atenção**, a eliminação de um MX Plan apaga definitivamente todos os dados correspondentes e não garante nenhum reembolso.
 
 Se a sua oferta de e-mail MX Plan tiver sido encomendada independentemente de qualquer alojamento, siga o [procedimento descrito acima](#terminate).
 
@@ -162,8 +162,8 @@ A anulação da rescisão produz efeitos imediatos. Atualize a página "O meus S
 >> Verifique também se estão preenchidas as seguintes condições:
 >>
 >> - Deve ser o "contacto administradoa" do serviço. Para obter mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contact#definition).
->> - O serviço está em **renovação automática**. Se o seu serviço estiver em [renovação manual](/pages/account_and_service_management/managing_billing_payments_and_services/how_use_automatic_renewal#auto-vs-manual), será suspenso à data de expiração e eliminado passado alguns dias.
->> - O serviço não é suspenso, nomeadamente devido a um problema de regularização de uma fatura. Certifique-se de que está atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal-management) em todos os seus serviços.
+>> - O serviço está em **renovação automática**. Se o seu serviço estiver em [renovação manual](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), será suspenso à data de expiração e eliminado passado alguns dias.
+>> - O serviço não é suspenso, nomeadamente devido a um problema de regularização de uma fatura. Certifique-se de que está atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) em todos os seus serviços.
 >>
 >> Se ainda não conseguir rescindir o seu serviço, contacte as nossas equipas de suporte abrindo um ticket a partir do [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help).
 > Como cancelar todos os meus serviços?

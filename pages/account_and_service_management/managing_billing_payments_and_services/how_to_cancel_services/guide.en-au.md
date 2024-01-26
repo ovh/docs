@@ -49,7 +49,7 @@ However, there are **special cases** that are detailed [below](#specific-cases) 
 
 To cancel your service subscription, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on the `Products and services`{.action} button.
 
-![products and services](images/products-services-en.png){.thumbnail}
+![products and services](images/products-services.png){.thumbnail}
 
 Next, click the `...`{.action} button to the right of the service you want to cancel, then `Cancel`{.action}.
 
@@ -66,7 +66,7 @@ Specify the reasons for your termination request, then click `Confirm`{.action}.
 
 Your service will be cancelled on the **date of effect** listed in the “My services” table. If you do not see the status “Cancellation requested”, please refresh the page.
 
-![termination request](images/cancellation-request-en.png){.thumbnail}
+![termination request](images/cancellation-request.png){.thumbnail}
 
 ### Special cases <a name="specific-cases"></a>
 
