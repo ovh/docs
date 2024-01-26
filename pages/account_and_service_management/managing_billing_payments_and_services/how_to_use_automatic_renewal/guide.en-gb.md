@@ -1,7 +1,7 @@
 ---
 title: How to renew OVHcloud services
 excerpt: Find out how to manage your services and their renewal via the OVHcloud Control Panel
-updated: 2024-01-19
+updated: 2024-01-26
 ---
 
 ## Objective
@@ -204,6 +204,10 @@ The table below details the possible group actions.
 >> If only your Web Hosting plan was suspended and renewed, you will need to wait an average of 2 hours for your website to be accessible again.
 >> If your domain name was also suspended and has been renewed, the delay may be longer, and may take up to 48 hours, corresponding to the DNS propagation delay.
 >> To protect your critical services from becoming inaccessible, we recommend to prioritise automatic renewal and to [check regularly that your payment methods are up to date](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+> My service subscription expires in July 2024. It's January 2024, and I want to renew it for another year. Will the subscription then expire in July 2025 or January 2025?
+>> When you extend the renewal period for a service (for 1 year or a shorter period), this period is added to the next date of effect shown in the "My services" table. In your case, your service will be renewed until July 2025.
+> My service subscription expired on January 1st 2024 and I forgot to renew it. I have just renewed it on January 16, 2024, for six months, but I note that it will expire on July 1, 2024, and not on July 16, 2024. Is that normal?
+>> Yes, it is normal, the renewal starts on the expiry date of the subscription. 
 
 ## Go further
 

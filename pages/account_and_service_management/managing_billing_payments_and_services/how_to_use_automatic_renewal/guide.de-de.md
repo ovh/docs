@@ -1,7 +1,7 @@
 ---
 title: Wie verlängere ich meine OVHcloud Dienste?
 excerpt: Erfahren Sie hier, wie Sie Ihre Dienstleistungen und deren Verlängerung in Ihrem Kundencenter verwalten
-updated: 2024-01-19
+updated: 2024-01-26
 ---
 
 > [!primary]
@@ -208,6 +208,10 @@ In der folgenden Tabelle sind die möglichen gruppierten Aktionen aufgeführt.
 >> Wenn nur Ihr Webhosting gesperrt und dann verlängert wurde, dauert es durchschnittlich 2 Stunden, bis Ihre Website wieder verfügbar ist.
 >> Wenn Ihr Domainname ebenfalls gesperrt und dann verlängert wurde, kann die Frist bis zu 48 Stunden betragen, entsprechend der möglichen Propagationszeit für DNS.
 >> Um Ihre kritischen Dienste vor Unerreichbarkeit zu schützen, empfehlen wir, die automatische Verlängerung zu verwenden und [regelmäßig sicherzustellen, dass Ihre Zahlungsarten gültig sind](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+> Das Abonnement meiner Dienstleistung läuft im Juli 2024 ab. Es ist Januar 2024 und ich möchte es für ein Jahr verlängern. Wird das Abonnement dann im Juli 2025 oder im Januar 2025 ablaufen?
+>> Wenn Sie die Verlängerung eines Dienstes verlängern (um ein Jahr oder einen kürzeren Zeitraum), wird dieser Zeitraum zum nächsten in der Tabelle „Meine Dienste“ sichtbaren Gültigkeitsdatum hinzugefügt. In Ihrem Fall wird Ihr Dienst bis Juli 2025 verlängert.
+> Das Abonnement meiner Dienstleistung ist am 1. Januar 2024 abgelaufen und ich habe vergessen, es zu verlängern. Ich habe es soeben am 16. Januar 2024 für 6 Monate verlängert, aber ich stelle fest, dass es am 1. Juli 2024 und nicht am 16. Juli 2024 ausläuft. Ist das normal?
+>> Ja, dies ist normal, die Verlängerung beginnt zum Ablaufdatum des Abonnements.
 
 ## Weiterführende Informationen
 
