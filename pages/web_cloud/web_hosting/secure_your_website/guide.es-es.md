@@ -116,7 +116,19 @@ Puede realizar estas pruebas localmente, por ejemplo importando sus datos en un 
 
 También puede crear una **versión de prueba** del sitio web (p. ej.: test.mondominio.tld) en otra carpeta de su alojamiento (podrá utilizar una plantilla de base).
 
+### Etapa 12 - Proteger el acceso a su sitio web con el archivo ".htaccess"
+
+El archivo ".htaccess" es un archivo de configuración (HTTP) Apache que ejecuta el servidor web de su alojamiento web. Gracias a él, puede sobre todo:
+
+- [bloquear el acceso a su sitio web para determinadas direcciones IP](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website);
+- [proteger un directorio o la interfaz de administración de su sitio web asociándolo con un archivo ".htpasswd"](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password);
+- [proteger su CMS WordPress](/pages/web_cloud/web_hosting/htaccess_how_to_protect_wordpress).
+
 ## Más información <a name="go-further"></a>
+
+[Consejos sobre la piratería de su sitio WordPress](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
+
+[Reaccionar en caso de desactivación por seguridad de un alojamiento](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
