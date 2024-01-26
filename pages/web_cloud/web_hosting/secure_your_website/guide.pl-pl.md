@@ -120,6 +120,4 @@ Możesz również utworzyć **wersję testową** Twojej strony (np.: test.mojado
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/).
-
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
