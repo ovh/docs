@@ -20,10 +20,18 @@ classes: {
   whiteTag: {
     style: {
       stroke: "#53C0D8"
-      stroke-width: 1
-      shadow: true
+      stroke-width: 3
       fill: white
       opacity: 1
+    }
+  }
+  whiteTagDash: {
+    style: {
+      stroke: "#53C0D8"
+      stroke-width: 3
+      fill: white
+      opacity: 1
+      stroke-dash: 5
     }
   }
 }
