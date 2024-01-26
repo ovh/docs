@@ -61,10 +61,7 @@ Vamos explicar-lhe as 4 etapas principais a realizar para proteger o acesso a um
 > Os passos que se seguirão irão otimizar a segurança dos seus dados alojados.
 > Assim, e se os seus websites forem compatíveis, recomendamos vivamente que utilize a versão de PHP mais recente possível.
 > 
-> Para alterar a versão de PHP dos seus websites no seu alojamento web, consulte os seguintes guias:
-> 
-> - [Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+> Para alterar a versão de PHP dos seus websites no seu alojamento web, consulte consulte o guia "[Alojamento web : ambiente, versão PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 >
 > De facto, os scripts e informações descritas abaixo neste tutorial apenas funcionam com um ambiente de execução e uma versão PHP recente.
 > 

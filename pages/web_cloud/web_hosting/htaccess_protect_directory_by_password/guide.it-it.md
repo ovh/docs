@@ -61,11 +61,7 @@ Per proteggere l'accesso a una directory o a una parte del tuo sito, ti spieghia
 > Gli step successivi per ottimizzare la sicurezza dei tuoi dati ospitati.
 > Se i tuoi siti Web sono compatibili, ti consigliamo di utilizzare la versione più recente possibile di PHP.
 > 
-> Per modificare la versione di PHP sui tuoi siti Web, consulta queste guide:
-> 
-> - [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [Cambiare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
->
+> Per modificare la versione di PHP sui tuoi siti Web, consulta la nostra guida "[Hosting Web : ambiente, versione PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 > In effetti, gli script e le informazioni descritte in questa guida funzionano solo con un ambiente di esecuzione e una versione PHP recente.
 > 
 > In caso contrario, ti consigliamo di ottimizzare il tuo sito Web per renderlo compatibile prima di installare quello che seguirà. Questa operazione ridurrà ulteriormente il rischio di pirateria informatica attraverso falle di sicurezza.
