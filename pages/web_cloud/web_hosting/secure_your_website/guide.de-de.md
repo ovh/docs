@@ -33,7 +33,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Überprüfen Sie die Sicherheit Ihrer Geräte <a name="local"></a>
+### Schritt 1 - Überprüfen Sie die Sicherheit Ihrer Geräte <a name="local"></a>
 
 Dieser erste Schritt ist von entscheidender Bedeutung. Die Infektion Ihrer Geräte mit böswilliger Software kann dazu führen, dass Angreifer Zugriff auf alle Ihre Tastatur-Eingaben haben. Jegliche Login-Daten, die Sie für die das OVHcloud Kundencenter oder dem Verwaltungsinterface Ihrer Website verwenden, könnten somit beeinträchtigt sein.
 
@@ -45,14 +45,14 @@ Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https:/
 - Führen Sie einen vollständigen Scan aus, nachdem Sie Ihr Anti-Virus-/Anti-Malware-Programm aktualisiert haben.
 - Ändern Sie regelmäßig das Administratorpasswort Ihrer Systeme (für mehr Informationen zu angemessenen Passwörtern folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/account_information/all_about_username#ein-starkes-und-einzigartiges-passwort-erstellen)).
 
-### Schritt 2: Ihr OVHcloud Kundencenter absichern
+### Schritt 2 - Ihr OVHcloud Kundencenter absichern
 
 Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) und folgen Sie den Anweisungen in dieser [Anleitung](/pages/account_and_service_management/account_information/all_about_username).
 
 Denken Sie daran, [Ihre Account-Informationen](/pages/account_and_service_management/account_information/all_about_username#personliche-daten-im-account-verwalten) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
 Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts nicht verfügbar ist, sind eine Backup-E-Mail-Adresse sowie aktuelle persönliche Daten wichtig, um Ihnen schnell weiterhelfen zu können.
 
-### Schritt 3: Führen Sie regelmäßig Backups Ihrer Website durch <a name="backup"></a>
+### Schritt 3 - Führen Sie regelmäßig Backups Ihrer Website durch <a name="backup"></a>
 
 > [!primary]
 >
@@ -66,11 +66,11 @@ Speichern Sie zunächst die Daten Ihrer Datenbank (FTP **UND** Datenbank-Dateien
 Webseitensoftware (CMS) bietet die Möglichkeit, automatische Backup-Plugins zu installieren.<br>
 Konsultieren Sie die offiziellen Foren Ihres bevorzugten CMS oder kontaktieren Sie die [OVHcloud Community](https://community.ovh.com/en/) zu diesem Thema.
 
-### Schritt 4: Lernen, wie man betrügerische E-Mails erkennt
+### Schritt 4 - Lernen, wie man betrügerische E-Mails erkennt
 
 Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Website dar, da sie Schadsoftware enthalten deren Installation auslösen können. Lesen Sie in [dieser Anleitung](/pages/account_and_service_management/account_information/phishing_care), wie Sie diese erkennen und sich davor schützen können.
 
-### Schritt 5: Die automatische Verlängerung einrichten
+### Schritt 5 - Die automatische Verlängerung einrichten
 
 Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.<br>
 Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts ist möglicherweise unverfügbar.
@@ -78,21 +78,21 @@ Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E
 Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
 Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsmittel** regelmäßig zu überprüfen.
 
-### Schritt 6: Überprüfen Sie, ob Ihre Website auf dem neuesten Stand ist
+### Schritt 6 - Überprüfen Sie, ob Ihre Website auf dem neuesten Stand ist
 
 Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
 
 Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) auf Ihrem Hosting zu verwenden.
 
-### Schritt 7: HTTPS aktivieren
+### Schritt 7 - HTTPS aktivieren
 
 Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das Protokoll **HTTPS** gemäß dieser [Anleitung](/pages/web_cloud/web_hosting/ssl-activate-https-website). Die Aktivierung dieses Protokolls erlaubt es, den Datenaustausch über Ihre Website zu verschlüsseln (insbesondere Angaben, die Benutzer in Formulare eingeben).
 
-### Schritt 8: Formulare schützen
+### Schritt 8 - Formulare schützen
 
 Eingabe-Formulare auf Webseiten sind bevorzugte Ziele von Hackern/Spammern. Schützen Sie Ihre Formulare vor Angriffen, indem Sie **CAPTCHA**-Plugins einrichten.
 
-### Schritt 9: Ein Sicherheits-Plugin auf Ihrer Website einrichten
+### Schritt 9 - Ein Sicherheits-Plugin auf Ihrer Website einrichten
 
 Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplugin hinzu:
 
@@ -101,13 +101,13 @@ Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplug
 - [Drupal](https://www.drupal.de/){.external}
 - [PrestaShop](https://www.prestashop.com/de){.external}
 
-### Schritt 10: Überprüfen Sie Ihr Webhosting auf schädliche Dateien
+### Schritt 10 - Überprüfen Sie Ihr Webhosting auf schädliche Dateien
 
 Loggen Sie sich hierzu in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) ein. Es erfordert technische Kenntnisse, um kompromittierte Dateien auf Ihrem Hosting zu erkennen. Sollten Sie Schwierigkeiten haben, diese Überprüfung durchzuführen, wenden Sie sich an unsere [Partner](https://partner.ovhcloud.com/de/directory/).
 
 Im Zweifelsfall können Sie auch die in [Schritt 1](#local) dieser Anleitung beschriebenen Überprüfungen durchführen und das [Passwort Ihres FTP-Bereichs ändern](/pages/web_cloud/web_hosting/ftp_change_password).
 
-### Schritt 11: Testen Sie die Backups Ihrer Website
+### Schritt 11 - Testen Sie die Backups Ihrer Website
 
 Die [Sicherungen](#backup) der Daten Ihrer Webseite (FTP-Dateien und Datenbanken) sollten regelmäßig durchgeführt werden. Es besteht aber keine Garantie, dass diese auch im Ernstfall Ihre Daten korrekt wiederherstellen können. Testen Sie auch die Sicherungen Ihrer Datenbank, um sicherzustellen, dass sie nicht korrupt sind.
 
