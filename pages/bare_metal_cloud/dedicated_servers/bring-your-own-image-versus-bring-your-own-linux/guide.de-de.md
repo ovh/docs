@@ -1,14 +1,14 @@
 ---
-title: Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet
+title: Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet (EN)
 excerpt: Find out which custom OS image service is best for your usage
 updated: 2024-01-31
 ---
 
 ## Objective
 
-Despite OVHcloud provides its customers with [a wide range of Operating System (OS) for your dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/os/), you might have good reasons to need to install a custom OS:
+Despite OVHcloud provides its customers with [a wide range of Operating System (OS) for your dedicated servers](https://www.ovhcloud.com/de/bare-metal/os/), you might have good reasons to need to install a custom OS:
 
-- OS is not part of [the OVHcloud catalog](https://www.ovhcloud.com/en-gb/bare-metal/os/),
+- OS is not part of [the OVHcloud catalog](https://www.ovhcloud.com/de/bare-metal/os/),
 - Specific OS build version,
 - OS with specific kernel version.
 
