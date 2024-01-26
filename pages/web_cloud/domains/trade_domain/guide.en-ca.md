@@ -74,7 +74,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 > [!warning]
 >
-> - The procedure can be validated by both parties during a period of 14 days. **After this period, the procedure is canceled**.
+> - The procedure can be validated by both parties during a period of 14 days. **After this period, the procedure is cancelled**.
 > 
 > - If the change is declined by one of the two parties, the action will be cancelled.
 >
