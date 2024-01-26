@@ -1,7 +1,7 @@
 ---
-title: "Comment sécuriser votre site Web ?"
-excerpt: "Apprenez à renforcer la sécurité de votre site Web"
-updated: 2024-01-25
+title: "Comment sécuriser un site Web ?"
+excerpt: "Découvrez les bonnes pratiques pour renforcer la sécurité de votre site Web en quelques étapes"
+updated: 2024-01-26
 ---
 
 ## Objectif
@@ -112,13 +112,13 @@ Vous pourrez effectuer ces tests localement, par exemple en important vos donné
 
 Vous pouvez également créer une **version de test** de votre site (ex : test.mondomaine.tld) dans un autre dossier de votre hébergement (il vous sera tout à fait possible d'utiliser un template de base).
 
-### Étape 12. Sécuriser l'accès à votre site web à l'aide du fichier « .htaccess »
+### Étape 12 - Sécuriser l'accès à votre site web à l'aide du fichier « .htaccess »
 
 Le fichier « .htaccess » est un fichier de configuration (HTTP) Apache exécuté par le serveur Web de votre hébergement Web. Grâce à lui, vous pouvez notamment :
 
-- [bloquer l'accès à votre site web pour certaines adresses IP](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website);
-- [protéger un répertoire ou l'interface d'administration de votre site web en le couplant avec un fichier « .htpasswd »](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password);
-- [protéger votre CMS Wordpress](/pages/web_cloud/web_hosting/htaccess_how_to_protect_wordpress).
+- [bloquer l'accès à votre site web pour certaines adresses IP](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website) ;
+- [protéger un répertoire ou l'interface d'administration de votre site web en le couplant avec un fichier « .htpasswd »](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password) ;
+- [protéger votre CMS WordPress](/pages/web_cloud/web_hosting/htaccess_how_to_protect_wordpress).
 
 ## Aller plus loin <a name="go-further"></a>
 
