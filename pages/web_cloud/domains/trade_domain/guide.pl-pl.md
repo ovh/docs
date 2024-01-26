@@ -1,7 +1,7 @@
 ---
 title: "Zmiana właściciela domeny"
 excerpt: "W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny."
-updated: 2023-12-04
+updated: 2024-01-26
 ---
 
 > [!primary]
@@ -79,18 +79,15 @@ Po potwierdzeniu zlecenia wymiany otrzymasz dwa e-maile, które pozwolą na potw
 Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, referencyjny adres e-mail otrzyma oba e-maile, ale każdy z nich musi zostać potwierdzony.
 <br>Zmiana właściciela domeny wejdzie w życie po potwierdzeniu wniosku przez e-mail.
 
-> [!primary]
->
-> Procedura musi zostać zatwierdzona przez obie strony w ciągu 14 dni od złożenia wniosku.
-> 
-> Jeżeli jedna ze stron odrzuci zmianę, wniosek zostaje anulowany.
->
-> Jeśli adres e-mail aktualnego właściciela jest przestarzały lub niedostępny, możesz **w tym przypadku** skontaktować się bezpośrednio z działem pomocy, wysyłając zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-
 > [!warning]
 >
-> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain) przez 60 dni.
+> - Procedura musi zostać zatwierdzona przez obie strony w ciągu 14 dni od złożenia wniosku. **Po tym terminie zabieg zostaje anulowany**.
+> 
+> - Jeżeli jedna ze stron odrzuci zmianę, wniosek zostaje anulowany.
+>
+> - Jeśli adres e-mail aktualnego właściciela jest przestarzały lub niedostępny, możesz **w tym przypadku** skontaktować się bezpośrednio z działem pomocy, wysyłając zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain) przez 60 dni.
 
 ### Aktualizacja danych właściciela <a name="updateownerinformation"></a>
 

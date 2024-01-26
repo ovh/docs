@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un nom de domaine"
 excerpt: "Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine."
-updated: 2023-12-04
+updated: 2024-01-26
 ---
 
 ## Objectif
@@ -75,18 +75,15 @@ Une fois que vous avez confirmé votre demande d'échange, deux e-mails vous ser
 Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de propriétaire, l'adresse e-mail de référence recevra les deux e-mails, mais chacun d'entre eux doivent être confirmés.
 <br>Une fois que les deux destinataires ont confirmé la demande par e-mail, le changement de propriétaire du nom de domaine prendra effet.
 
-> [!primary]
->
-> La procédure doit-être validée par les deux parties dans les 14 jours qui suivent la demande.
-> 
-> Si la modification est refusée par l'une des deux parties, la demande est annulée.
->
-> Si l'adresse e-mail de l'actuel propriétaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-
 > [!warning]
 >
-> Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) pendant une période de 60 jours. 
+> - La procédure doit-être validée par les deux parties dans les 14 jours qui suivent la demande. **Passé ce délai, la procédure est annulée**.
+> 
+> - Si la modification est refusée par l'une des deux parties, la demande est annulée.
+>
+> - Si l'adresse e-mail de l'actuel propriétaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) pendant une période de 60 jours.
 
 ### Mise à jour des informations de propriétaire <a name="updateownerinformation"></a>
 

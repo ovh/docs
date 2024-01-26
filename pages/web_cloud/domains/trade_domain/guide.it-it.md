@@ -1,7 +1,7 @@
 ---
 title: "Cambiare il proprietario di un dominio"
 excerpt: "In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio"
-updated: 2023-12-04
+updated: 2024-01-26
 ---
 
 > [!primary]
@@ -79,18 +79,15 @@ Una volta confermata la tua richiesta, riceverai due email per confermare o annu
 Se l'indirizzo email non viene modificato in seguito alla modifica del proprietario, l'indirizzo email di riferimento riceverà le due email, ciascuna delle quali deve essere confermata.
 <br>Una volta che entrambi i destinatari avranno confermato la richiesta tramite email, la modifica del proprietario del dominio diventerà effettiva.
 
-> [!primary]
->
-> La procedura deve essere convalidata da entrambe le parti entro 14 giorni dalla richiesta.
->
-> Se la modifica è rifiutata da una delle parti, la domanda è annullata.
->
-> Se l'indirizzo e-mail del proprietario attuale è obsoleto o inaccessibile, è possibile, **in questo caso specifico**, contattare direttamente l'assistenza creando un ticket di assistenza dal proprio [centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-
 > [!warning]
 >
-> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain) per un periodo di 60 giorni.
+> - La procedura deve essere convalidata da entrambe le parti entro 14 giorni dalla richiesta. **Trascorsi tali termini la procedura viene annullata**.
+>
+> - Se la modifica è rifiutata da una delle parti, la domanda è annullata.
+>
+> - Se l'indirizzo e-mail del proprietario attuale è obsoleto o inaccessibile, è possibile, **in questo caso specifico**, contattare direttamente l'assistenza creando un ticket di assistenza dal proprio [centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain) per un periodo di 60 giorni.
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 
