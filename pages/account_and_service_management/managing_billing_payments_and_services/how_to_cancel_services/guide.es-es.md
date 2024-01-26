@@ -74,6 +74,8 @@ La baja del servicio tendrá lugar el **fecha de aplicación** que se indica en 
 
 ### Casos particulares <a name="specific-cases"></a>
 
+#### E-mail MX Plan <a name="mxplan"></a>
+
 La mayoría de los servicios MX Plan están asociados a un alojamiento. Si es el caso y desea eliminar esta opción de correo, siga [las instrucciones de esta guía](/pages/web_cloud/web_hosting/activate-email-hosting/#eliminación-de-la-oferta-correo-asociada-a-un-alojamiento-web). **Atención**: La eliminación de un MX Plan conlleva la eliminación definitiva de todos los datos correspondientes y no implica ninguna devolución.
 
 Si su servicio MX Plan se ha contratado independientemente de cualquier alojamiento, siga el procedimiento [detallado anteriormente](#terminate).
