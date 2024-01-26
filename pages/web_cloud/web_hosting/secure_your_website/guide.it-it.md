@@ -1,7 +1,7 @@
 ---
-title: Come proteggere il tuo sito Web?
-excerpt: Questa guida ti mostra come migliorare la sicurezza del tuo sito Web
-updated: 2021-12-10
+title: "Come proteggere il tuo sito Web?"
+excerpt: "Questa guida ti mostra come migliorare la sicurezza del tuo sito Web"
+updated: 2024-01-26
 ---
 
 > [!primary]

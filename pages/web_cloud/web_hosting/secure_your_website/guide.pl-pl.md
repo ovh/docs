@@ -1,7 +1,7 @@
 ---
-title: Jak zabezpieczyć Twoją stronę WWW?
-excerpt: Dowiedz się, jak zwiększyć bezpieczeństwo Twojej strony WWW
-updated: 2021-12-10
+title: "Jak zabezpieczyć Twoją stronę WWW?"
+excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo Twojej strony WWW"
+updated: 2024-01-26
 ---
 
 > [!primary]

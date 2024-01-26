@@ -1,7 +1,7 @@
 ---
-title: Die Sicherheit Ihrer Website optimieren
-excerpt: Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen
-updated: 2021-12-10
+title: "Die Sicherheit Ihrer Website optimieren"
+excerpt: "Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen"
+updated: 2024-01-26
 ---
 
 > [!primary]

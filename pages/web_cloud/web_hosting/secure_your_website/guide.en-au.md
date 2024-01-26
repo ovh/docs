@@ -1,7 +1,7 @@
 ---
-title: How to secure your website?
-excerpt: Learn how to make your website more secure
-updated: 2021-12-10
+title: "How to secure your website?"
+excerpt: "Find out how to make your website more secure"
+updated: 2024-01-26
 ---
 
 ## Objective

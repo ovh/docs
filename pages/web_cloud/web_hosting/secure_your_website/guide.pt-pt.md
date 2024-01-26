@@ -1,7 +1,7 @@
 ---
-title: Como proteger o seu website?
-excerpt: Saiba como reforçar a segurança do seu website 
-updated: 2021-12-10
+title: "Como proteger o seu website?"
+excerpt: "Saiba como reforçar a segurança do seu website"
+updated: 2024-01-26
 ---
 
 > [!primary]
