@@ -101,7 +101,7 @@ You can also run a command to launch a script using a specific PHP version. E.g.
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation "[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation "[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 
 > [!primary]
 >
@@ -117,9 +117,7 @@ Depending on the PHP version you want to use, the runtime environment may need t
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
