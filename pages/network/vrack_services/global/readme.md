@@ -88,7 +88,9 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
   "updatedAt": "2024-01-19T14:30:22.323452Z"
 }
 ```
-
+| ![initiate_state](images/initiate_state.png) | 
+|:--:| 
+| Initial state |
 
 
 ### 2. Create a Subnet (productStatus=DRAFT)
