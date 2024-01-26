@@ -132,6 +132,10 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-9876543
 |:--:| 
 | Create a Subnet (productStatus=DRAFT) |
 
+| ![initiate_state](images/create_subnet_productStatus_draft___33p.png) | 
+|:--:| 
+| Create a Subnet (productStatus=DRAFT) |
+
 ### 3. Create a Service Endpoint (productStatus=DRAFT)
 
 1. List all Managed Services compatible with the vRack Services (here: same zone and not already linked to a
