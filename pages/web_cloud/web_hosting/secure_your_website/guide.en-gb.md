@@ -22,7 +22,7 @@ However, if you experience any difficulties carrying out some of them, please do
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - The [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
