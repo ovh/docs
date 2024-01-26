@@ -60,10 +60,7 @@ Wir erklären die 4 wichtigsten Schritte zum Schutz des Zugriffs auf ein Verzeic
 > Die folgenden Schritte optimieren die Sicherheit Ihrer gehosteten Daten.
 > Deshalb empfehlen wir Ihnen, wenn Ihre Websites kompatibel sind, die aktuellste Version von PHP zu verwenden.
 > 
-> Um die PHP-Version Ihrer Webseiten auf Ihrem Webhosting zu ändern, lesen Sie folgende Anleitungen:
-> 
-> - [Konfiguration eines Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [PHP-Version eines Webhostings ändern](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+> Um die PHP-Version Ihrer Webseiten auf Ihrem Webhosting zu ändern, lesen Sie unsere Anleitung „[Webhosting : umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)“.
 >
 > Die hier beschriebenen Skripte und Informationen funktionieren nur im Modus "Produktion" und mit einer aktuellen PHP-Version.
 > 
