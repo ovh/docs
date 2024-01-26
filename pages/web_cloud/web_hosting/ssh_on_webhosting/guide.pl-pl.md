@@ -105,7 +105,7 @@ Za pomocą specjalnego polecenia możesz również uruchomić skrypt korzystają
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniowe może wymagać modyfikacji, aby zagwarantować kompatybilność. Sprawdź naszą dokumentację [Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniowe może wymagać modyfikacji, aby zagwarantować kompatybilność. Sprawdź naszą dokumentację [Hosting WWW : środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 > [!primary]
 >
@@ -121,9 +121,7 @@ W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniow
 
 ## Sprawdź również
 
-[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
-
-[Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+[Hosting WWW : środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
