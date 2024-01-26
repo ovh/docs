@@ -1,6 +1,6 @@
 ---
-title: 'Utilizar o acesso SSH do seu alojamento web'
-excerpt: 'Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud'
+title: "Utilizar o acesso SSH do seu alojamento web"
+excerpt: "Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud"
 updated: 2024-01-26
 ---
 
@@ -105,7 +105,19 @@ Através de um comando, pode igualmente lançar um script utilizando uma versão
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra [ao guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) «Alterar a configuração do alojamento web».
+Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra ao guia "[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+
+> [!primary]
+>
+> Também é possível copiar ficheiros e/ou pastas com o **S**ecure **C**opy **P**rotocol (**SCP**).
+> Este protocolo utiliza o protocolo SSH para duplicar conteúdo de forma segura entre:
+> 
+> - um computador/dispositivo local para um servidor remoto
+> - um servidor remoto e um PC/dispositivo local
+> - dois servidores remotos
+>
+> Encontre mais informações sobre a utilização do comando `scp` com os nossos alojamentos web OVHcloud no nosso guia "[Alojamento Web - Copiar ficheiros com o comando SCP](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Quer saber mais?
 
