@@ -124,15 +124,7 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-9876543
 }
 ```
 
-| ![initiate_state](images/create_subnet_productStatus_draft.png) | 
-|:--:| 
-| Create a Subnet (productStatus=DRAFT) |
-
 | ![initiate_state](images/create_subnet_productStatus_draft___50p.png) | 
-|:--:| 
-| Create a Subnet (productStatus=DRAFT) |
-
-| ![initiate_state](images/create_subnet_productStatus_draft___33p.png) | 
 |:--:| 
 | Create a Subnet (productStatus=DRAFT) |
 
