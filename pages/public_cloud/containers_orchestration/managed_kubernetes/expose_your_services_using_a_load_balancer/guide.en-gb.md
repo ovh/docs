@@ -352,7 +352,7 @@ spec:
   When `container-store` parameter is set to `external` format for `default-tls-container-ref` could be any string.
 
 ### Features
-#### Resize your LoadBalancer //TODO (upload sample on github)
+#### Resize your LoadBalancer 
 There is no proper way to 'resize' your loadbalancer yet (work in progress). The best alternative to change the flavor of your load balancer is to recreate a new Kubernetes Service that will use the same public IP as an existing one.
 You can find the complete HowTo and examples on our public Github repository: https://github.com/ovh/public-cloud-examples
 
