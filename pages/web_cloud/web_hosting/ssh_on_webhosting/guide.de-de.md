@@ -1,7 +1,7 @@
 ---
-title: 'SSH-Zugang Ihres Webhostings verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen'
-updated: 2022-01-19
+title: "SSH-Zugang Ihres Webhostings verwenden"
+excerpt: "Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen"
+updated: 2024-01-26
 ---
 
 > [!primary]
@@ -106,6 +106,18 @@ Sie können über einen Befehl auch ein Skript ausführen, indem Sie eine bestim
 ```
 
 Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in den unten aufgeführten Anleitungen.
+
+> [!primary]
+>
+> Dateien und Ordner können auch mit dem **S**ecure **C**opy **P**rotocol (**SCP**) kopiert werden.
+> Dieses Protokoll verwendet das SSH-Protokoll, um Inhalte sicher zu duplizieren zwischen:
+>
+> - Lokaler Computer/Gerät und Remote-Server
+> - Remote-Serverund lokaler Computer/Gerät
+> - Zwei Remote-Server
+>
+> Weitere Informationen zur Verwendung des Befehls `scp` mit unseren OVHcloud Webhostings finden Sie in unserer Anleitung "[Webhosting - Kopieren von Dateien mit dem Befehl SCP](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Weiterführende Informationen
 
