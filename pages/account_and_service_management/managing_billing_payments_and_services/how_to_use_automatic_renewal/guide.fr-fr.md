@@ -1,7 +1,7 @@
 ---
 title: Comment renouveler mes services OVHcloud
 excerpt: Découvrez comment gérer vos services et leur renouvellement dans votre espace client
-updated: 2024-01-19
+updated: 2024-01-26
 ---
 
 ## Objectif
@@ -207,6 +207,10 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 >> Si uniquement votre Hébergement Web était suspendu et a été renouvelé, il faut compter un délai moyen de 2 heures pour que votre site soit de nouveau accessible.
 >> Si votre nom de domaine était également suspendu et a été renouvelé, le délai peut alors être plus long et aller jusqu'à 48 heures, correspondant au délai de propagation DNS.
 >> Afin de vous prémunir d'une indisponibilité d'accès pour tous vos services critiques, nous vous préconisons de privilégier le renouvellement automatique et de [vérifier régulièrement que vos moyens de paiement sont à jour](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
+> L'abonnement de mon service expire en juillet 2024. Nous sommes en janvier 2024 et je veux le renouveler pour un an. Est-ce que l'abonnement expirera alors en juillet 2025 ou en janvier 2025 ?
+>> Lorsque vous prolongez le renouvellement d'un service (pour 1 an ou une période plus courte), cette période s'ajoute à la prochaine date d'effet visible dans le tableau « Mes services » . Dans votre cas, votre service sera renouvelé jusqu'en juillet 2025.
+> L'abonnement de mon service a expiré le 1er janvier 2024 et j'ai oublié de le renouveler. Je viens de le renouveler le 16 janvier 2024 pour 6 mois mais je constate qu'il expirera le 1er juillet 2024 et non le 16 juillet 2024. Est-ce que c'est normal ?
+>> Oui, c'est en effet normal, le renouvellement commence à la date d'expiration de l'abonnement.
 
 ## Aller plus loin
 
