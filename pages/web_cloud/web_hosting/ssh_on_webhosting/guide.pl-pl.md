@@ -1,6 +1,6 @@
 ---
-title: 'Korzystanie z dostępu do hostingu WWW przez SSH'
-excerpt: 'Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH'
+title: "Korzystanie z dostępu do hostingu WWW przez SSH"
+excerpt: "Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH"
 updated: 2024-01-26
 ---
 
@@ -105,7 +105,19 @@ Za pomocą specjalnego polecenia możesz również uruchomić skrypt korzystają
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniowe może wymagać modyfikacji, aby zagwarantować kompatybilność. Sprawdź naszą dokumentację”>.
+W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniowe może wymagać modyfikacji, aby zagwarantować kompatybilność. Sprawdź naszą dokumentację [Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+
+> [!primary]
+>
+> Można również kopiować pliki i/lub foldery za pomocą **S**ecure **C**opy **P**rotocol (**SCP**).
+> Protokół SSH służy do bezpiecznego duplikowania treści między:
+> 
+> - z komputera/urządzenia lokalnego na serwer zdalny
+> - serwer zdalny i komputer/urządzenie lokalne
+> - dwa zdalne serwery
+>
+> Więcej informacji na temat korzystania z komendy `scp` z naszym hostingiem OVHcloud znajdziesz w przewodniku "[Hosting WWW - Kopiowanie plików za pomocą komendy SCP](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Sprawdź również
 
