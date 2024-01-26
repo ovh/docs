@@ -55,7 +55,7 @@ Antes de continuar a ler este guia, deve preencher as seguintes condições:
 >> Para os serviços com uma frequência de renovação automática superior a 1 mês (3 meses, 6 meses, 12 meses), um lembrete ser-lhe-á igualmente enviado por e-mail no mês anterior à data de renovação automática, com um resumo dos serviços a renovar brevemente.
 >>Se não pretender prolongar um destes serviços, basta [rescindi-lo na sua Área de Cliente](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >>
->> **Atenção**, a ausência de um método de pagamento na sua conta não despoleta uma rescisão automática dos seus serviços. Para rescindir serviços, consulte o guia « [Como rescindir os seus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services])».
+>> **Atenção**, a ausência de um método de pagamento na sua conta não despoleta uma rescisão automática dos seus serviços. Para rescindir serviços, consulte o guia « [Como rescindir os seus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)».
 >>
 > **A renovação manual**
 >>
