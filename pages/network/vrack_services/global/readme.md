@@ -313,7 +313,8 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-2034567/subnet/sub-4567890
 
 ### 6. Create a Service Endpoint (productStatus=ACTIVE)
 
-1. Request Service Endpoint creation (asynchronous as a vRack association exists)
+1. Request Service Endpoint creation (asynchronous as a vRack association exists)   
+Here we use the second managed serice listed previously in 3.1 section "List all Managed Services compatible with the vRack Services"
 
 ```bash
 $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7bf30-6722-4658-b3db-
@@ -323,6 +324,52 @@ $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7b
 ```console
 HTTP/1.1 201 Created
 Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint/end-5678901
+{
+  "id": "end-5678901",
+  "resourceStatus": "CREATING",
+  "targetSpec": {
+    "displayName": "secured_data"
+  },
+  "currentState": {
+    "displayName": "secured_data",
+    "subnetId": "sub-4567890",
+    "serviceType": "entreprise-file-storage",
+    "serviceId": "1fd7bf30-6722-4658-b3db-92e269185f46",
+    "endpoints": {
+      1: {
+        "ip": "172.21.0.1",
+        "description": null        // Fetched from the Managed Service 'create' event
+      },
+      2: {
+        "ip": "172.21.0.2",
+        "description": null        // Fetched from the Managed Service 'create' event
+      },
+      3: {
+        "ip": "172.21.0.3",
+        "description": null        // Fetched from the Managed Service 'create' event
+      }
+    }
+  },
+  "createdAt": "2024-01-19T14:54:22.323452Z",
+  "updatedAt": "2024-01-19T14:54:22.323452Z"
+}
+```
+
+2. Request a second Service Endpoint creation
+
+```bash
+$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569efa-61f2-4deb-8beea60b4213e1dc"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
+```
+
+```console
+HTTP/1.1 409 Conflict
+{
+  "class": "Client::Conflict::ResourceBusy",
+  "message": "Subnet sub-1234567 is busy",
+  "details": {
+    "subnetId": "sub-1234567"
+  }
+}
 ```
 
 ### 7. Create a Service Endpoint with a wrong Managed Service localization [Error]
