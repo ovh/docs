@@ -482,14 +482,14 @@ $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "45edf
 HTTP/1.1 201 Created
 Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint/end-7654321
 {
-  "id": "end-2394839",
+  "id": "end-7654321",
   "resourceStatus": "CREATING",
   "targetSpec": {
     "displayName": "snapshots"
   },
   "currentState": {
     "displayName": "snapshots",
-    "subnetId": "sub-2778273",
+    "subnetId": "sub-4567890",
     "serviceType": "entreprise-file-storage",
     "serviceId": "45edf087-2b94-4980-9fdf-792ecdd414ca",
     "endpoints": {
@@ -512,11 +512,22 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/s
 
 
 ```bash
-
+$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "2d65f8e0-edde-448f-b907-
+a85404eb0752"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
 ```
 
 ```console
-
+HTTP/1.1 400 Bad Request
+{
+  "class": "Client::BadRequest::ServiceRangeFullyAllocated",
+  "message": "Service 2d65f8e0-edde-448f-b907-a85404eb0752 requires 2 IPs while 0 IP(s) still available on the Subnet sub-2778273",
+  "details": {
+    "serviceId": "2d65f8e0-edde-448f-b907-a85404eb0752",
+    "requestedIPsCount": "2",
+    "availableIPsCount": "0",
+    "SubnetId": "sub-4567890"
+  }
+}
 ```
 
 ### 10. Extend the Subnet service range
