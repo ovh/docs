@@ -697,6 +697,84 @@ Then every resources deleted in cascade
 
 ## By Manager
 
+### 1. Vrack Creation
+
+### 2. Overview
+
+### 3. Subnet creation
+
+### 4. Endpoint creation
+
+____________________
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/02_vrack_creation.png) | 
+|:--:| 
+| 02 |
+
+| ![initiate_state](images/03_vrack_creation.png) | 
+|:--:| 
+| 03 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
+| ![initiate_state](images/01_empty_page.png) | 
+|:--:| 
+| 01 |
+
 # Contraints and limits
 ## Vrack Services
 - A vRack Services is attached to a unique Zone.
