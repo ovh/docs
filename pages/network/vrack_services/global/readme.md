@@ -418,11 +418,22 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 
 ```bash
-
+$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569efa-61f2-4deb-8beea60b4213e1dc"}'
+https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
 ```
 
 ```console
-
+HTTP/1.1 400 Bad Request
+{
+  "class": "Client::BadRequest::LocalizationMismatch",
+  "message": "Service 95569efa-61f2-4deb-8bee-a60b4213e1dc zone (rbx) does not match vRack Services vrs-2034567 zone (sbg)",
+  "details": {
+    "serviceId": "95569efa-61f2-4deb-8bee-a60b4213e1dc",
+    "vrackServiceZone": "rbx",
+    "vrackServiceId": "vrs-2034567",
+    "serviceZone": "sbg"
+  }
+}
 ```
 
 ### 8. Create two Service Endpoints (productStatus=ACTIVE)
