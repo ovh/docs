@@ -532,13 +532,73 @@ HTTP/1.1 400 Bad Request
 
 ### 10. Extend the Subnet service range
 
+1. Create a 'extend-subnet-service-range.json' text file with these informations inside
 
 ```bash
-
+$ cat extend-subnet-service-range.json
 ```
 
 ```console
+{
+  "targetSpec": {
+    "displayName": "rbx_nominal_services",
+    "serviceRange": "172.21.0.0/28"
+  }
+}
+```
 
+2. Request service range extension (asynchronous)
+
+```bash
+$ curl -XPUT -d@extend-subnet-service-range.json https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-
+4567890
+```
+
+```console
+{
+  "id": "sub-4567890",
+  "resourceStatus": "UPDATING",
+  "targetSpec": {
+    "displayName": "rbx_nominal_services",
+    "serviceRange": "172.21.0.0/28"
+  },
+  "currentState": {
+    "displayName": "rbx_nominal_services",
+    "vrackServicesId": "vrs-1234567",
+    "range": "172.21.0.0/27",
+    "serviceRange": "172.21.0.0/29",
+    "vlan": 10
+  },
+  "createdAt": "2022-05-04T14:53:22.323452Z",
+  "updatedAt": "2022-05-04T14:58:22.323452Z"
+}
+```
+
+3. Fetch final state
+
+
+```bash
+$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890
+```
+
+```console
+{
+  "id": "sub-2778273",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "rbx_nominal_services",
+    "serviceRange": "172.21.0.0/28"
+  },
+  "currentState": {
+    "displayName": "rbx_nominal_services",
+    "vrackServicesId": "vrs-2034567",
+    "range": "172.21.0.0/27",
+    "serviceRange": "172.21.0.0/28",
+    "vlan": 10
+  },
+  "createdAt": "2022-05-04T14:53:22.323452Z",
+  "updatedAt": "2022-05-04T14:58:33.323452Z"
+}
 ```
 
 
