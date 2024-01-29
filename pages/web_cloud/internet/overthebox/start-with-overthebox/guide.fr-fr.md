@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OverTheBox"
 excerpt: "Découvrez par où commencer lorsque vous recevez votre OverTheBox"
-updated: 2024-01-25
+updated: 2024-01-26
 ---
 
 ## Objectif
@@ -20,7 +20,9 @@ Que vous soyez à la recherche d'une solution pour une entreprise, d'une configu
 
 ## Prérequis
 
-- Disposer d'une [OverTheBox](https://www.ovhtelecom.fr/overthebox/)
+- Disposer d'un service [OverTheBox](https://www.ovhtelecom.fr/overthebox/)
+- Au moins un accès à Internet, par [OVHcloud](https://www.ovhtelecom.fr/offre-internet/) ou un autre founisseur d'accès
+- Un matériel OverTheBox fourni par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
 
 ## En pratique
 
@@ -61,6 +63,5 @@ De nombreuses autres configurations possibles existent, plus ou moins techniques
 
 ## Aller plus loin
 
-N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
-
-[FAQ OverTheBox](/pages/web_cloud/internet/overthebox/install_faq)
+- N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
+- Consultez la [FAQ OverTheBox](/pages/web_cloud/internet/overthebox/install_faq)
