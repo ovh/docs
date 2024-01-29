@@ -650,6 +650,7 @@
                 + [MongoDB - Migrate to Production or Advanced](public_cloud/public_cloud_databases/mongodb_12_howto_migrate_to_production_or_advanced)
             + [Tutorials](public-cloud-databases-mongodb-tutorials)
                 + [MongoDB - Tutorial - Build a NodeJS application connected to OVHcloud Managed MongoDB service](public_cloud/public_cloud_databases/mongodb_tuto_01_connect_nodejs_to_managed_mongodb)
+                * [MongoDB - How to deploy a MongoDB database on OVHcloud using Terraform](public_cloud/public_cloud_databases/mongodb_14_deploy_with_terraform)
         + [MySQL](products/public-cloud-databases-mysql)
             + [Guides](public-cloud-databases-mysql-guides)
                 + [MySQL - Capabilities and Limitations](public_cloud/public_cloud_databases/mysql_01_capabilities)
