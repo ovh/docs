@@ -569,8 +569,8 @@ $ curl -XPUT -d@extend-subnet-service-range.json https://api.ovh.com/2.0/vrackSe
     "serviceRange": "172.21.0.0/29",
     "vlan": 10
   },
-  "createdAt": "2022-05-04T14:53:22.323452Z",
-  "updatedAt": "2022-05-04T14:58:22.323452Z"
+  "createdAt": "2024-01-19T14:53:22.323452Z",
+  "updatedAt": "2024-01-19T14:58:22.323452Z"
 }
 ```
 
@@ -583,7 +583,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 ```console
 {
-  "id": "sub-2778273",
+  "id": "sub-4567890",
   "resourceStatus": "READY",
   "targetSpec": {
     "displayName": "rbx_nominal_services",
@@ -591,13 +591,13 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
   },
   "currentState": {
     "displayName": "rbx_nominal_services",
-    "vrackServicesId": "vrs-2034567",
+    "vrackServicesId": "vrs-1234567",
     "range": "172.21.0.0/27",
     "serviceRange": "172.21.0.0/28",
     "vlan": 10
   },
-  "createdAt": "2022-05-04T14:53:22.323452Z",
-  "updatedAt": "2022-05-04T14:58:33.323452Z"
+  "createdAt": "2024-01-19T14:53:22.323452Z",
+  "updatedAt": "2024-01-19T14:58:33.323452Z"
 }
 ```
 
@@ -606,54 +606,94 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 
 ```bash
-
+$ curl -XDELETE https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890
 ```
 
 ```console
-
+HTTP/1.1 409 Conflict
+{
+  "class": "Client::Conflict::SubnetNotEmpty",
+  "message": "Subnet sub-4567890 contains 3 Service Endpoints",
+  "details": {
+    "subnetId": "sub-4567890",
+    "serviceEndpointsCount": 3
+  }
+}
 ```
 
 ### 12. Dissociate the vRack Services from the vRack
 
+1. Request vRack disassociation
 
 ```bash
-
+$ curl -XDELETE https://api.ovh.com/1.0/vrack/pn-12345/vrackServices/vrs-1234567
 ```
 
 ```console
+{
+    todoDate: "2022-05-04T14:59:22.323452Z"
+    status: "init"
+    serviceName: "pn-12345"
+    orderId: null
+    lastUpdate: "2022-05-04T14:58:55.323452Z"
+    function: "removeVrackServices"
+    id: 5678901
+}
+```
 
+2. Fetch asynchronous task using the created task id
+
+
+```bash
+$ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/5678901
+```
+
+```console
+HTTP/1.1 404 Not Found
+{
+    "message": "The requested object (taskId = 3205546) does not exist"
+}
+```
+
+3. Asynchronous task done -> Fetch the vRack Services status
+
+```bash
+$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
+```
+
+```console
+{
+    "id": "vrs-1234567",
+    "resourceStatus": "READY",
+    "targetSpec" : {
+        "displayName": "Backup_infra.",
+    },
+    "currentState": {
+        "productStatus": "DRAFT",
+        "displayName": "Backup_infra.",
+        "nicAdmin": "dp12345-ovh",
+        "nicTech": "dp12345-ovh",
+        "vrackId": null,
+        "zone": "rbx",
+        "region": "eu-east-1",
+        "az": "eu-east-1-a"
+    },
+    "createdAt": "2024-01-19T14:40:22.323452Z",
+    "updatedAt": "2024-01-19T14:59:55.323452Z"
+}
 ```
 
 ### 12bis. Suspend the vRack Services
 
+Suspend triggered on Agora 'SUSPENSION' event consumption
+Here we have the same result than dissociation
 
-```bash
-
-```
-
-```console
-
-```
 
 ### 13. Delete the vRack Services
 
+Deletion triggered on Agora 'TERMINATION' event consumption
+Then every resources deleted in cascade
 
-```bash
-
-```
-
-```console
-
-```
-
-
-```bash
-
-```
-
-```console
-
-```
 
 ## By Manager
 
