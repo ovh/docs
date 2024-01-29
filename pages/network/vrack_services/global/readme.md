@@ -719,25 +719,25 @@ ____________________
 |:--:| 
 | 03 |
 
-| ![initiate_state](images/01_empty_page.png) | 
+| ![initiate_state](images/04_vrack_creation.png) | 
 |:--:| 
-| 01 |
+| 04 |
 
-| ![initiate_state](images/01_empty_page.png) | 
+| ![initiate_state](images/05_vrack_cration.png) | 
 |:--:| 
-| 01 |
+| 05 |
 
-| ![initiate_state](images/01_empty_page.png) | 
+| ![initiate_state](images/06_vrack_creation.png) | 
 |:--:| 
-| 01 |
+| 06 |
 
-| ![initiate_state](images/01_empty_page.png) | 
+| ![initiate_state](images/07_vrack_creation.png) | 
 |:--:| 
-| 01 |
+| 07 |
 
-| ![initiate_state](images/01_empty_page.png) | 
+| ![initiate_state](images/08_vrack_creation.png) | 
 |:--:| 
-| 01 |
+| 08 |
 
 | ![initiate_state](images/01_empty_page.png) | 
 |:--:| 
