@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteger um diretório ou a interface de administração do seu website por ficheiros .htaccess e .htpasswd"
 excerpt: "Descruba como proteger um diretório ou o acesso à administração do seu website através de uma autenticação com os ficheiros .htaccess e .htpasswd"
-updated: 2023-06-01
+updated: 2024-01-29
 ---
 
 > [!primary]

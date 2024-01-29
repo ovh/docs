@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Protect a directory or administration interface of your website with .htaccess and .htpasswd files"
 excerpt: "Find out how to protect a directory or administration interface by authenticating with .htaccess and .htpasswd files"
-updated: 2023-06-01
+updated: 2024-01-29
 ---
 
 ## Objective
