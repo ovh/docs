@@ -355,7 +355,8 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/s
 }
 ```
 
-2. Request a second Service Endpoint creation
+2. Request a second Service Endpoint creation   
+Just in order to show you the behavior when you want launch a new request during the execution of the previous one.
 
 ```bash
 $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569efa-61f2-4deb-8beea60b4213e1dc"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
@@ -371,6 +372,47 @@ HTTP/1.1 409 Conflict
   }
 }
 ```
+
+3. So you can fetch resource status of the first requested Service Endpoint.
+In this way we can see the status of the resource is now READY
+   
+
+```bash
+$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint/end-5678901
+```
+
+```console
+{
+  "id": "end-5678901",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "critical_business"
+  },
+  "currentState": {
+    "displayName": "critical_business",
+    "subnetId": "sub-4567890",
+    "serviceType": "entreprise-file-storage",
+    "serviceId": "1fd7bf30-6722-4658-b3db-92e269185f46",
+    "endpoints": {
+      1: {
+        "ip": "172.21.0.1",
+        "description": null        // Fetched from the Managed Service 'create' event
+      },
+      2: {
+        "ip": "172.21.0.2",
+        "description": null        // Fetched from the Managed Service 'create' event
+      },
+      3: {
+        "ip": "172.21.0.3",
+        "description": null        // Fetched from the Managed Service 'create' event
+      }
+    }
+  },
+  "createdAt": "2024-01-19T14:54:22.323452Z",
+  "updatedAt": "2024-01-19T14:54:22.323452Z"
+}
+```
+
 
 ### 7. Create a Service Endpoint with a wrong Managed Service localization [Error]
 
