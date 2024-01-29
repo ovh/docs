@@ -1,12 +1,14 @@
 ---
 title: MongoDB - Getting started
 excerpt: Get started with MongoDB through the OVHcloud Control Panel
-updated: 2023-12-29
+updated: 2024-01-29
 ---
 
 ## Objective
 
 **This guide explains how to get started with MongoDB on OVHcloud for free.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yVUqdhe71Ps?si=ADCQJyVFBhed3_Ms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Requirements
 
