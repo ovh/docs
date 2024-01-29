@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Protéger un répertoire ou l'interface d'administration de votre site web par des fichiers « .htaccess » et « .htpasswd »"
 excerpt: "Decouvrez comment protéger un répertoire ou l'accès à l'administration de votre site web via une authentification avec les fichiers « .htaccess » et « .htpasswd »"
-updated: 2023-05-31
+updated: 2024-01-29
 ---
 
 ## Objectif
@@ -57,10 +57,7 @@ Nous allons vous expliquer les 4 étapes principales à réaliser pour protéger
 > Les étapes qui vont suivre optimiseront la sécurité de vos données hébergées.
 > De ce fait et si vos sites web sont compatibles, nous vous recommandons fortement d'utiliser la version de PHP la plus récente possible.
 > 
-> Pour modifier la version de PHP de vos sites web sur votre hébergement web, consultez les guides suivants :
-> 
-> - [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [Changer la version de PHP de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+> Pour modifier la version de PHP de vos sites web sur votre hébergement web, consultez notre guide « [Hébergement web : environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting) ».
 >
 > En effet, les scripts et informations décrites plus bas dans ce tutoriel ne fonctionnent qu'avec un environnement d'exécution et une version PHP récente.
 > 
