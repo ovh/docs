@@ -79,7 +79,7 @@ Vérifiez régulièrement les mises à jour de votre site en suivant les instruc
 
 Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
 
-### Étape 7 - Activer le https
+### Étape 7 - Activer le HTTPS
 
 Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](/pages/web_cloud/web_hosting/ssl-activate-https-website). L'activation de ce protocole va permettre de chiffrer l'ensemble des informations qui transitent par votre site web (notamment les saisies effectuées par vos utilisateurs sur ses formulaires).
 

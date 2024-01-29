@@ -22,7 +22,7 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) OVHcloud.
+- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) OVHcloud.
 - Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
@@ -79,7 +79,7 @@ Vérifiez régulièrement les mises à jour de votre site en suivant les instruc
 
 Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
 
-### Étape 7 - Activer le https
+### Étape 7 - Activer le HTTPS
 
 Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](/pages/web_cloud/web_hosting/ssl-activate-https-website). L'activation de ce protocole va permettre de chiffrer l'ensemble des informations qui transitent par votre site web (notamment les saisies effectuées par vos utilisateurs sur ses formulaires).
 
