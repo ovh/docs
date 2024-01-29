@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo proteger su sitio web?"
 excerpt: "Descubra cómo aumentar la seguridad de su sitio web"
-updated: 2024-01-26
+updated: 2024-01-29
 ---
 
 > [!primary]
