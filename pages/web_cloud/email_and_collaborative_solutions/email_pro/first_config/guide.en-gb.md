@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your Email Pro solution'
 excerpt: 'Find out how to configure your Email Pro solution'
-updated: 2024-01-24
+updated: 2024-01-29
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration von E-Mail Pro'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
-updated: 2024-01-24
+updated: 2024-01-29
 ---
 
 > [!primary]

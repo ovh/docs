@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja konta E-mail Pro'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
-updated: 2024-01-24
+updated: 2024-01-29
 ---
 
 > [!primary]
