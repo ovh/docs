@@ -699,14 +699,6 @@ Then every resources deleted in cascade
 
 ### 1. Vrack Creation
 
-### 2. Overview
-
-### 3. Subnet creation
-
-### 4. Endpoint creation
-
-____________________
-
 | ![initiate_state](images/01_empty_page.png) | 
 |:--:| 
 | 01 |
@@ -747,9 +739,22 @@ ____________________
 |:--:| 
 | 10 |
 
+### 2. Overview
+
 | ![initiate_state](images/11_overview.png) | 
 |:--:| 
-| 11 |
+| Details |
+
+| ![initiate_state](images/15_listing_subnets.png) | 
+|:--:| 
+| Subnets listing |
+
+| ![initiate_state](images/17_vrack_listing_endpoints.png) | 
+|:--:| 
+| Endpoints listing |
+
+
+### 3. Subnet creation
 
 | ![initiate_state](images/12_vrack_subnet_creation.png) | 
 |:--:| 
@@ -763,17 +768,20 @@ ____________________
 |:--:| 
 | 14 |
 
-| ![initiate_state](images/15_listing_subnets.png) | 
-|:--:| 
-| 15 |
+### 4. Endpoint creation
+
 
 | ![initiate_state](images/16_vrack_endpoint_creation.png) | 
 |:--:| 
 | 16 |
 
-| ![initiate_state](images/17_vrack_listing_endpoints.png) | 
-|:--:| 
-| 17 |
+
+
+
+
+
+
+
 
 # Contraints and limits
 ## Vrack Services
