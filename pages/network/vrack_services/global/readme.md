@@ -57,8 +57,11 @@ It answers the question `does my current configuration makes the Managed Service
 > DRAFT - no, either a Service Endpoint needs to be created or a vRack needs to be associated to the vRack Services
 > 
 > SUSPENDED - no, product is in Agora `suspension` state
->
-> 
+
+
+| ![initiate_state](images/resources___50p.png) | 
+|:--:| 
+| Legend |
 
 ### 1. Initial state
 A vRack Services has been ordered at 'eu-east-1' Region
