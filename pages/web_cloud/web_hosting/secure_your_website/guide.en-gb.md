@@ -115,11 +115,11 @@ You can also create a **test version** of your website (e.g. test.mydomain.tld) 
 
 ### Step 12 - Secure access to your website using the ".htaccess" file
 
-The .htaccess file is an Apache configuration (HTTP) file that is run by your Web Hosting plan’s Web server. With it, you can notably:
+The .htaccess file is an Apache configuration (HTTP) file that is run by your Web Hosting plan’s web server. With it, you can notably:
 
-- [block access to your website for certain IP addresses](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website);
-- [protect a directory or your website’s administration interface by attaching it to a .htpasswd file](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password);
-- [protect your WordPress CMS](/pages/web_cloud/web_hosting/htaccess_how_to_protect_wordpress).
+- [Block access to your website for certain IP addresses](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
+- [Protect a directory or your website’s administration interface by attaching it to a .htpasswd file](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+- [Protect your WordPress CMS](/pages/web_cloud/web_hosting/htaccess_how_to_protect_wordpress).
 
 ## Go further <a name="go-further"></a>
 
