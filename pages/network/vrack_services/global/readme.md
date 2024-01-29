@@ -701,27 +701,27 @@ Then every resources deleted in cascade
 
 | ![initiate_state](images/01_empty_page.png) | 
 |:--:| 
-| 01 |
+| When you don't have any vrack services on, you have this screen |
 
 | ![initiate_state](images/02_vrack_creation.png) | 
 |:--:| 
-| 02 |
+| First you need to define a name for this Vrack Service |
 
 | ![initiate_state](images/03_vrack_creation.png) | 
 |:--:| 
-| 03 |
+| Then you need to attach this service to an existing Vrack ...  |
 
 | ![initiate_state](images/04_vrack_creation.png) | 
 |:--:| 
-| 04 |
+| ... by selecting in your crack existing list |
 
 | ![initiate_state](images/05_vrack_cration.png) | 
 |:--:| 
-| 05 |
+| Then you need to select a region |
 
 | ![initiate_state](images/06_vrack_creation.png) | 
 |:--:| 
-| 06 |
+| Now you can create your new Vrack Service |
 
 | ![initiate_state](images/07_vrack_creation.png) | 
 |:--:| 
