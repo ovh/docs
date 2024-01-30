@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Références des paramètres avancés (EN)
 excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for PostgreSQL according to your use cases
-updated: 2023-02-06
+updated: 2024-01-30
 ---
 
 <style>
@@ -570,6 +570,24 @@ Below you can find a summary of every configuration option available for Postgre
 | Maximum | 4096 |
 | Values | |
 | Description | The number of background workers for timescaledb operations. You should configure this setting to the sum of your number of databases and the total number of concurrent background workers you want running at any given point in time. |
+
+| | |
+|---|---|
+| Parameter | `shared_buffers_percentage` |
+| Value type | long |
+| Minimum | 20 |
+| Maximum | 60 |
+| Values | |
+| Description | Percentage of total RAM that the database server uses for shared memory buffers. Valid range is 20-60 (float), which corresponds to 20% - 60%. This setting adjusts the shared_buffers configuration value. |
+
+| | |
+|---|---|
+| Parameter | `work_mem` |
+| Value type | long |
+| Minimum | 1 |
+| Maximum | 1024 |
+| Values | |
+| Description | Sets the maximum amount of memory to be used by a query operation (such as a sort or hash table) before writing to temporary disk files, in MB. Default is 1MB + 0.075% of total RAM (up to 32MB). |
 
 ## Go further
 
