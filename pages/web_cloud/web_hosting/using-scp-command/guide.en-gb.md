@@ -83,9 +83,7 @@ This is where your web hosting plan’s `www` folder and `.ovhconfig` file are l
 >
 > All of the commands below are carried out from your device's terminal **locally**. You do not need to first establish an SSH connnection to your web hosting plan.
 >
-> If you want to copy content to your web hosting plan, position your **local** user far enough upstream of the files/folders you want to copy to your web hosting plan.
->
-> If you would like to retrieve a copy of the files/folders stored on your web hosting plan locally on your device/computer, please position your **local** user far enough upstream of the folder that will retrieve the copy of your hosted data.
+> The file path used with the `scp` command is relative to the current local directory. To transfer data to your web hosting or from the web hosting to your local device, be sure to execute your commands from the local parent directory, as shown in the examples below.
 >
 
 Remember to replace all of the following general settings with your own:
