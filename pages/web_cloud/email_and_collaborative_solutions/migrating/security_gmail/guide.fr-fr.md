@@ -1,6 +1,6 @@
 ---
 title: 'Comment autoriser les connexions moins sécurisées sur Gmail'
-hidden: true
+flag: hidden
 updated: 2022-04-06
 ---
 

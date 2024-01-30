@@ -28,7 +28,7 @@ You will then be redirected to the RoundCube interface.
 
 > [!warning]
 > 
-> If you are redirected to an **O**utlook **W**eb **A**ccess (OWA) interface, this means that you are on the latest version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+> If you are redirected to an **O**utlook **W**eb **A**pp (OWA) interface, this means that you are on the latest version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
 > To familiarise yourself with the **OWA** interface, please refer to our guide on [Using an email account in the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 

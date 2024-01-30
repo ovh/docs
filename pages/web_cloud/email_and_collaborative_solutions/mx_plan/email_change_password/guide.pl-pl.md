@@ -66,7 +66,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 ### Zmiana hasła w interfejsie Webmail
 
-Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-mail OVHcloud wykorzystujących **OWA** (**O**utlook **W**eb **A**pplication):
+Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-mail OVHcloud wykorzystujących **OWA** (**O**utlook **W**eb **A**pp):
 
 - E-maile MXplan (Nowa wersja)
 - Email Pro

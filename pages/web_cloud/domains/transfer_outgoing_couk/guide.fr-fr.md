@@ -54,11 +54,11 @@ Dans l'onglet `Informations générales`{.action}, vous pouvez vérifier que les
 
 Cliquez sur le lien `Tag de transfert sortant`{.action} dans la section intitulée **Sécurité**.
 
-![transfert sortant](images/img_4267.jpg){.thumbnail}
+![transfert sortant](images/outgoing-transfer-tag.jpg){.thumbnail}
 
 Dans la fenêtre qui s'affiche, renseignez le TAG de votre nouveau bureau d'enregistrement puis cliquez sur `Confirmer`{.action}.
 
-![transfert sortant](images/img_4268.jpg){.thumbnail}
+![transfert sortant](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Si vous n'arrivez pas à modifier le TAG de votre nom de domaine depuis votre espace client, vous pouvez en demander la modification auprès du Registre Nominet. Retrouvez plus d’informations sur le [site officiel de Nominet](https://www.nominet.uk/domain-support/).
 
@@ -72,4 +72,6 @@ Contactez dès lors votre nouveau fournisseur pour obtenir davantage de détails
 
 [Transférer un nom de domaine vers un autre bureau d’enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

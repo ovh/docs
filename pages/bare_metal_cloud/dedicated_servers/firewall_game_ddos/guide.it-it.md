@@ -110,7 +110,7 @@ Minecraft è ben supportato nelle seguenti versioni:
 - Minecraft Query
 
 > [!primary]
-> Per il momento Minecraft Java Edition è protetto in modalità "default" e non sono esposte ulteriori configurazioni. Se ospiti server Minecraft di dimensioni maggiori o con esigenze specifiche, contatta il nostro supporto utilizzando il [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) con tutti i dettagli necessari per ottimizzare il profilo dell'applicazione.
+> Per il momento Minecraft Java Edition è protetto in modalità "default" e non sono esposte ulteriori configurazioni. Se ospiti server Minecraft di dimensioni maggiori o con esigenze specifiche, contatta il nostro supporto utilizzando il [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) con tutti i dettagli necessari per ottimizzare il profilo dell'applicazione.
 >
 
 ## FAQ
@@ -129,7 +129,7 @@ Ciò è possibile, se non consigliato. Per farlo, rimuovi tutte le regole del pr
 
 ### Mentre ho configurato il gioco con le porte appropriate e i criteri predefiniti da eliminare, ricevo ancora attacchi che hanno un impatto sul mio server di gioco. Cosa fare?
 
-A tale scopo, è necessario condividere i dump del traffico di rete rilevanti come esempi per tali attacchi (*.pcap* file) e richiedere l'ottimizzazione della protezione del proprio profilo. Per farlo, utilizza il nostro [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+A tale scopo, è necessario condividere i dump del traffico di rete rilevanti come esempi per tali attacchi (*.pcap* file) e richiedere l'ottimizzazione della protezione del proprio profilo. Per farlo, utilizza il nostro [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ## Per saperne di più
 

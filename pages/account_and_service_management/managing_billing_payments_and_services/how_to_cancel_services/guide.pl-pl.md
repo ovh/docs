@@ -1,7 +1,7 @@
 ---
 title: Jak zrezygnować z usług OVHcloud
-excerpt: Dowiedz się, jak przerwać subskrypcję OVHcloud
-updated: 2023-11-16
+excerpt: Dowiedz się, jak przerwać subskrypcję OVHcloud z poziomu Panelu klienta
+updated: 2024-01-19
 ---
 
 > [!primary]
@@ -10,18 +10,12 @@ updated: 2023-11-16
 
 ## Wprowadzenie
 
-Chcesz zrezygnować z jednej lub kilku usług OVHcloud. Niniejszy przewodnik wyjaśnia, jak przerwać subskrypcję w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Chcesz zrezygnować z jednej lub kilku usług OVHcloud. Z tego przewodnika dowiesz się, jak przerwać subskrypcję w Panelu klienta OVHcloud.
 
-Po pierwsze, zapoznaj się z częścią "[Co się stanie, gdy usługa OVHcloud zostanie wyłączona?](#consequences)".<br> Następnie wybierz produkt w części "[Jak zrezygnować z abonamentu?](#terminate)".
+- Zapoznaj się z częścią "Co się stanie, gdy usługa OVHcloud zostanie wyłączona?" znajdującą się poniżej.
+- Następnie wybierz odpowiedni produkt w sekcji "[Jak zrezygnować z abonamentu?](#terminate)".
 
-> [!primary]
->
-> Pierwsze zdanie jest dla nas bardzo ważne. Pozwala nam to na dostosowanie usług do potrzeb i oczekiwań klientów.
->
-> Więcej informacji o Twoich doświadczeniach z OVHcloud znajdziesz w formularzu proponowanym podczas rozwiązania umowy. Z góry dziękujemy za wkład w ulepszanie naszych produktów.
->
-
-## Co się stanie, gdy usługa OVHcloud zostanie wyłączona? <a name="consequences"></a>
+### Co się stanie, gdy usługa OVHcloud zostanie wyłączona? <a name="consequences"></a>
 
 "Zrezygunj" z usługi OVHcloud oznacza, że zostanie ona **ostatecznie** przerwana po zakończeniu abonamentu (z wyjątkiem [domen](#domain)). Możesz zrezygnować z usługi lub [anulować zlecenie rezygnacji](#cancel) do 24 godzin przed datą zakończenia abonamentu.
 
@@ -35,179 +29,56 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 - w razie potrzeby posiadasz *funkcjonalne* rozwiązanie do jego wymiany;
 - że w razie potrzeby zapisałeś wszystkie dane, których dotyczy operacja.
 
-## Jak zrezygnować z abonamentu? <a name="terminate"></a>
+<a name="domain"></a>
 
-> [!warning]
+> [!primary]
+> **Rezygnacja z domeny**
 >
-> Rozwiązanie umowy może być stosowane tylko wówczas, gdy spełnione są następujące warunki:
->
-> * jesteś "kontaktem administracyjnym" usługi (więcej informacji znajdziesz w [tym przewodniku](/pages/account_and_service_management/account_information/managing_contacts#definicja));
-> * usługa nie jest odnawiana ręcznie;
-> * usługa nie zostaje zawieszona, w szczególności z powodu nieuregulowania faktury.
+> Po zakończeniu aktualnego abonamentu Twoja domena ogólna (.com, .org. net, itp.) pozostaje "zarezerwowana" przez okres "*Grace*" (około 7 dni), a następnie przez okres "*redemption*" (około 35 do 40 dodatkowych dni). Oznacza to, że tylko Ty będziesz mógł go odnowić w tych okresach. Aby uzyskać więcej informacji, zapoznaj się z [FAQ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#faq) na dole naszego przewodnika "[Jak odnawiać usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 >
 
-Kliknij na rodzaj produktu, który chcesz zrezygnować z usługi na poniższej liście głównych ofert OVHcloud: 
+## Wymagania
 
-[Bare Metal Cloud](#baremetalcloud)<br />
-&emsp;&emsp;[Serwer dedykowany](#dedicated)<br />
-&emsp;&emsp;[VPS](#vps)<br />
-&emsp;&emsp;[Managed Bare Metal](#managedbaremetal)<br />
-&emsp;&emsp;[Serwer NAS-HA](#nas)<br />
-&emsp;&emsp;[Load Balancer](#iplb)<br />
-&emsp;&emsp;[Licencje](#licences)<br />
+- Pełnienie funkcji "kontaktu administracyjnego" dla usługi, z której chcesz zrezygnować (aby uzyskać więcej informacji, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts#definition))
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie aktywnych usług OVHcloud (nie zawieszonych z powodu braku płatności)
 
-[Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
+## W praktyce
 
-[Public Cloud](#publiccloud)<br />
+Procedura rezygnacji jest taka sama w przypadku większości usług OVHcloud.
 
-[Web Cloud](#webcloud)<br />
-&emsp;&emsp;[Domena](#domain)<br />
-&emsp;&emsp;[Hosting](#hosting)<br />
-&emsp;&emsp;[Certyfikat SSL Sectigo](#ssl_sectigo)<br />
-&emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
-&emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
-&emsp;&emsp;[E-mail Pro](#emailpro)<br />
-&emsp;&emsp;[Hosted Exchange](#hosted)<br />
-&emsp;&emsp;[Private Exchange](#private)<br />
-&emsp;&emsp;[Office 365 csp 1](#office-csp1)<br />
-&emsp;&emsp;[Office 365 csp 2](#office-csp2)<br />
-&emsp;&emsp;[Sharepoint](#sharepoint)<br />
+Istnieją jednak **przypadki szczególne**, które są opisane [poniżej] (#specific-cases) w tym przewodniku.
 
-[Rozwiązania poprzeczne](#transversal)<br />
-&emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />
+### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
-### Bare Metal Cloud <a name="baremetalcloud"></a>
+Aby zrezygnować z abonamentu, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
 
-#### Serwer dedykowany <a name="dedicated"></a>
+![produkty i usługi](images/products-services.png){.thumbnail}
 
-Aby zrezygnować z [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zrezygnować, po czym kliknij `Rezygnacja z umowy terminowej`{.action}.
 
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
+![Zrezygnuj](images/cancel-en.png){.thumbnail}
 
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-#### VPS <a name="vps"></a>
-
-Aby zrezygnować z serwera [VPS](https://www.ovhcloud.com/pl/vps/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-#### Managed Bare Metal <a name="managedbaremetal"></a>
-
-Aby zrezygnować z usługi [Managed bare metal](https://www.ovhcloud.com/pl/managed-bare-metal/), zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
-
-#### Serwer NAS-HA <a name="nas"></a>
-
-Aby zrezygnować z [serwera NAS HA](https://www.ovh.pl/nas/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-#### Load Balancer <a name="iplb"></a>
-
-Aby zrezygnować z usługi [Load Balancer](https://www.ovh.pl/rozwiazania/load-balancer/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-#### Licencje <a name="licences"></a>
-
-Aby zrezygnować z licencji wykupionej w OVHcloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie licencji do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-### Hosted Private Cloud <a name="privatecloud"></a>
-
-#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
-
-Aby zrezygnować z usługi [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
-
-#### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
-
-Aby zrezygnować z usługi [Veeam Cloud Connect](https://www.ovhcloud.com/pl/storage-solutions/veeam-cloud-connect/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-### Public Cloud <a name="publiccloud"></a>
-
-Każda usługa [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) może zostać usunięta, klikając przycisk `...`{.action} po prawej stronie wybranej usługi, a następnie `Usuń`{.action}, jak w poniższym przykładzie dla instancji:
-
-![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
-
-Public Cloud OVHcloud opiera się na zasadzie *Pay as you go* (więcej szczegółów na naszej stronie [informacyjnej o sposobie rozliczania usługi Public Cloud](/pages/public_cloud/compute/analyze_billing)). Płacisz pod koniec miesiąca tylko za czas rzeczywistego wykorzystania zasobów.
-
-Możesz również [sprawdzić aktualne](/pages/public_cloud/compute/analyze_billing#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
-
-### Web Cloud <a name="webcloud"></a>
-
-#### Domena <a name="domain"></a>
+Podaj powody złożenia wniosku o rezygnację z usługi i kliknij przycisk `Zatwierdź`{.action}.
 
 > [!primary]
 >
-> Po rezygnacji z abonamentu i po zakończeniu abonamentu, domena globalna (.com, .org. netto itp.) pozostajesz "zarezerwowany" w okresie "*łaski*" (5 dni), a następnie w okresie "*odkupienia*" (35 do 40 dni), co oznacza, że tylko Ty będziesz mógł go odnowić w tych okresach.
+> Pierwsze zdanie jest dla nas bardzo ważne. Pozwala nam to na dostosowanie usług do potrzeb i oczekiwań klientów.
+>
+> Więcej informacji o Twoich doświadczeniach z OVHcloud znajdziesz w formularzu proponowanym podczas rozwiązania umowy. Z góry dziękujemy za wkład w ulepszanie naszych produktów.
 >
 
-Aby zrezygnować z [domeny](https://www.ovhcloud.com/pl/domains/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Rezygnacja z usługi nastąpi w dniu **date d'effet** wskazanym w tabeli "Moje usługi". Jeśli nie widzisz statusu "Złożona rezygnacja", odśwież stronę.
 
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
+![dyspozycja zakończenia](images/cancellation-request.png){.thumbnail}
 
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
+### Przypadki szczególne <a name="specific-cases"></a>
 
-#### Hosting <a name="hosting"></a>
+### E-mail MX Plan <a name="mxplan"></a>
 
-Aby zrezygnować z [hostingu](https://www.ovhcloud.com/pl/web-hosting/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Większość usług MX Plan jest powiązana z hostingiem. Jeśli tak jest i chcesz usunąć tę opcję e-mail, postępuj zgodnie z [instrukcjami zawartymi w tym przewodniku](/pages/web_cloud/web_hosting/activate-email-hosting/#usuniecie-usugi-e-mail-powiazanej-z-twoim-hostingiem). **Uwaga**, usunięcie usługi MX Plan spowoduje trwałe usunięcie wszystkich powiązanych z nią danych i nie wiąże się ze zwrotem płatności.
 
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-#### Certyfikat SSL Sectigo <a name="ssl_sectigo"></a>
-
-Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/), ponieważ nie są one odnawiane automatycznie. Dlatego wystarczy, że nie odnawiacie ich w najbliższym terminie.
-
-#### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
-
-Aby zrezygnować z usługi [Web Paas](https://www.ovhcloud.com/pl/web-paas/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-#### Web Cloud Databases <a name="webclouddatabases"></a>
-
-Aby zrezygnować z usługi [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-#### E-mail MX Plan <a name="mxplan"></a>
-
-Oferta MX Plan nie jest objęta abonamentem okresowym. Nie może ona zatem zostać rozwiązana, ale jeśli tak jest Twoje życzenie, możesz usunąć swoją ofertę.
-
-Aby usunąć ofertę [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zrezygnować, a następnie `Usuń natychmiast MX Plan`{.action}.
-
-Podaj przyczyny usunięcia usługi, a następnie kliknij `Zatwierdź`{.action}.
-
-Otrzymasz e-mail z opisem procedury zamknięcia usługi MX Plan.
-
-> [!warning]
->
-> Usunięcie usługi MX Plan spowoduje trwałe usunięcie wszystkich powiązanych z nią danych. Usunięcie usługi MX Plan nie stanowi podstawy do zwrotu środków.
->
+Jeśli Twoja oferta e-mail MX Plan została zamówiona niezależnie od hostingu, wykonaj [procedurę opisaną powyżej](#terminate).
 
 #### E-mail Pro <a name="emailpro"></a>
 
@@ -234,24 +105,42 @@ Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collabor
 Możesz albo **usunąć** indywidualne konto z Twojej usługi [Sharepoint](https://www.ovhcloud.com/pl/collaborative-tools/sharepoint/), albo zrezygnować z całej usługi Sharepoint.
 Jeśli chcesz zrezygnować z usługi, zalecamy usunięcie każdego konta z osobna.
 
-* Aby usunąć indywidualne konto Sharepoint, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części `Web Cloud`{.action}. Następnie kliknij `Microsoft`{.action}, `Sharepoint`{.action}, następnie na platformę Sharepoint.<br>
+- Aby usunąć indywidualne konto Sharepoint, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części `Web Cloud`{.action}. Następnie kliknij `Microsoft`{.action}, `Sharepoint`{.action}, następnie na platformę Sharepoint.<br>
 W karcie `Użytkownicy`{.action} kliknij przycisk `...`{.action} po prawej stronie konta do usunięcia, a następnie kliknij `Usuń konto`{.action}. Zapoznaj się z informacjami i kliknij na 'Zatwierdź`{.action}.
 
-* Aby zrezygnować z usługi Sharepoint, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+- Aby zrezygnować z usługi Sharepoint, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
 
-Następnie kliknij przycisk po prawej stronie `...`{.action} Sharepoint, który chcesz zrezygnować, a następnie `Zrezygunj`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
-### Rozwiązania poprzeczne <a name="transversal"></a>
-
-#### SSL Gateway <a name="ssl_gateway"></a>
-
-Aby zrezygnować z usługi [SSL Gateway](https://www.ovh.pl/ssl-gateway/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
+Następnie kliknij przycisk po prawej stronie `...`{.action} Sharepoint, który chcesz zrezygnować, a następnie `Rezygnacja z umowy terminowej`{.action}.
 
 Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
+
+#### Certyfikat SSL Sectigo <a name="ssl_sectigo"></a>
+
+Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/), ponieważ nie są one odnawiane automatycznie. Dlatego wystarczy, że nie odnawiacie ich w najbliższym terminie.
+
+#### SMS <a name="sms"></a>
+
+Nie istnieje procedura rozwiązania umowy w odniesieniu do [ofert SMS] (https://www.ovhtelecom.fr/sms/). Konto SMS nie generuje miesięcznej subskrypcji ani opłat. Kredyty SMS są ważne bezterminowo.
+
+Jeśli chcesz usunąć konto SMS, otwierając zgłoszenie w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+#### Managed Bare Metal <a name="managedbaremetal"></a>
+
+Aby zrezygnować z usługi [Managed bare metal](https://www.ovhcloud.com/pl/managed-bare-metal/), zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
+
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
+
+Aby zrezygnować z usługi [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+
+### Public Cloud <a name="publiccloud"></a>
+
+Każda usługa [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) może zostać usunięta, klikając przycisk `...`{.action} po prawej stronie wybranej usługi, a następnie `Usuń`{.action}, jak w poniższym przykładzie dla instancji:
+
+![public cloud instance deletion](images/pci-deletion-en.png){.thumbnail}
+
+Public Cloud OVHcloud opiera się na zasadzie *Pay as you go* (więcej szczegółów na naszej stronie [informacyjnej o sposobie rozliczania usługi Public Cloud](/pages/public_cloud/compute/analyze_billing)). Płacisz pod koniec miesiąca tylko za czas rzeczywistego wykorzystania zasobów.
+
+Możesz również [sprawdzić aktualne](/pages/public_cloud/compute/analyze_billing#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
 
 ## Jak anulować rezygnację z abonamentu? <a name="cancel"></a>
 
@@ -264,9 +153,41 @@ Aby anulować zlecenie rezygnacji z usługi, zaloguj się do [Panelu klienta OVH
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, w odniesieniu do której złożono wniosek o rezygnację, a następnie `Anuluj rezygnację z usługi`{.action} 
 
-![cancel_termination](images/cancel_termination.png){.thumbnail}
+![cancel_termination](images/cancel_termination-en.png){.thumbnail}
 
 Na koniec kliknij `Potwierdź anulowanie`{.action}.
+
+Anulowanie rezygnacji obowiązuje natychmiastowo. Odśwież stronę "Moje usługi", jeśli nadal widzisz status "Złożona rezygnacja".
+
+## FAQ
+
+> [!faq]
+>
+> Nie mogę zrezygnować z usługi. Co mogę zrobić?
+>> Jeśli nie możesz zrezygnować z usługi (przycisk ``Rezygnacja z umowy terminowej`{.action} nie jest proponowany), może to być jeden z przypadków szczególnych [powyżej w tym przewodniku](#specific-cases).
+>> Sprawdź również, czy spełnione są następujące warunki:
+>>
+>> - Musisz być "kontaktem administracyjnym" usługi. Aby uzyskać więcej informacji, zobacz [ten przewodnik](/pages/account_and_service_management/account_information/managing_contacts#definition).
+>> - Usługa jest odnawiana automatycznie **automatyczne odnawianie**. Jeśli Twoja usługa jest w trakcie [odnowienie ręczne](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), zostanie zawieszona w dniu wygaśnięcia i usunięta po kilku dniach.
+>> - Usługa nie jest zawieszona, głównie z powodu braku uregulowania faktury. Sprawdź, czy Twoje usługi są aktualne w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [Odnowienia](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management).
+>>
+>> Jeśli nadal nie możesz zrezygnować z usługi, skontaktuj się z zespołem pomocy, otwierając zgłoszenie w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
+> Jak zrezygnować ze wszystkich usług?
+>> Przeprowadź procedurę rezygnacji z każdej usługi pojedynczo. Nie ma możliwości zrezygnowania z kilku usług jednocześnie ani poproszenia naszych zespołów obsługi klienta o globalne rozwiązanie umowy.
+> Jak usunąć moje konto OVHcloud?
+>> Zamknięcie konta klienta OVHcloud i usunięcie danych osobowych jest możliwe tylko wtedy, gdy:
+>>
+>> 1. Nie masz już widocznych usług w sekcji "[Moje usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie najpierw poproś o ich rozwiązanie i zaczekaj na ich usunięcie.
+>> 2. Nie masz faktur oczekujących na płatność. W przeciwnym razie należy uregulować należność, klikając przycisk `Zapłać teraz`{.action} w akcjach masowych na stronie "[Moje faktury](https://www.ovh.com/manager/#/dedicated/billing/history)".
+>> 3. Nie posiadasz zamówień w trakcie realizacji. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+>> 4. Twoje konto przedpłacone nie jest dodatnie. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+>>
+>> Jeśli powyższe warunki są spełnione, możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wykonując następujące kroki:
+>>
+>> 1. Zaloguj się do [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+>> 2. Kliknij przycisk `Utwórz zgłoszenie`{.action}
+>> 3. Wybierz motyw `Zarządzaj kontem klienta OVHcloud`
+>> 4. Prosimy o sprecyzowanie opcji `Chcę zamknąć konto klienta OVHcloud` i postępowanie zgodnie z instrukcjami zawartymi w tej operacji.
 
 ## Sprawdź również <a name="gofurther"></a>
 

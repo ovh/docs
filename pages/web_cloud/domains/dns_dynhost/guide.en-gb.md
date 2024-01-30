@@ -46,7 +46,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 To create a DynHost user, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab.
 
-![dynhost](images/use-dynhost-step1.png){.thumbnail}
+![dynhost](images/tab.png){.thumbnail}
 
 Click on the `Manage access`{.action} button, then `Create a username`{.action}. In the popup window, enter the following information:
 
@@ -63,7 +63,7 @@ Click on the `Manage access`{.action} button, then `Create a username`{.action}.
 
 Once you have filled in all of the required fields, click `Confirm`{.action}. The username will then appear in the table on the current page. Repeat this step if you need additional DynHost usernames.
 
-![dynhost](images/use-dynhost-step2.png){.thumbnail}
+![dynhost](images/create-a-dynhost-username.png){.thumbnail}
 
 ### Step 2: Create the dynamic DNS record (DynHost) <a name="step2"></a>
 
@@ -83,7 +83,7 @@ Once you are ready to create the DynHost record, go to the `DynHost`{.action} ta
 
 Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
 
-![dynhost](images/use-dynhost-step3.png){.thumbnail}
+![dynhost](images/create-a-dynhost.png){.thumbnail}
 
 ### Step 3: Automate the DynHost update
 
@@ -120,7 +120,7 @@ You can check if the destination IP address has been updated. To do this, log in
 > Any changes made to a domain name’s active DNS zone can take between 4 and 24 hours to propagate.
 >
 
-![dynhost](images/use-dynhost-step4.png){.thumbnail}
+![dynhost](images/target.png){.thumbnail}
 
 ## Go further <a name="go-further"></a>
 

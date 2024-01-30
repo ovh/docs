@@ -99,7 +99,7 @@ Nommez votre règle et sélectionnez comme conditions « comprend les mots suiva
 
 > [!primary]
 >
-Veuillez noter que les faux-positifs ne peuvent pas être identifiés directement depuis OWA. Si vous recevez des e-mails marqués par erreur comme [SPAM], il est recommandé d’informer notre équipe d’assistance technique en créant une requête dans votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+Veuillez noter que les faux-positifs ne peuvent pas être identifiés directement depuis OWA. Si vous recevez des e-mails marqués par erreur comme [SPAM], il est recommandé d’informer notre équipe d’assistance technique [en créant une requête](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 
 ## Aller plus loin

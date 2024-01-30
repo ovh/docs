@@ -847,7 +847,7 @@ Im Folgenden finden Sie die Zustände, die zu einem roten DKIM-Symbol in Ihrem K
  - `ready`: DNS-Einträge sind in der Zone vorhanden. DKIM kann jetzt aktiviert werden, indem Sie dem Abschnitt „[DKIM aktivieren oder ändern](#enable-switch)“ folgen.
  - `deleting`: DKIM wird gelöscht. Nach dem Löschen folgen Sie dem Abschnitt „[Vollständige DKIM-Konfiguration](#firststep)“.
  - `disabling`: DKIM wird deaktiviert. Danach können Sie ihn reaktivieren, indem Sie den Abschnitt „[DKIM aktivieren oder ändern](#enable-switch)“ verwenden.
- - `todo`: Der Task wurde initialisiert und muss gestartet werden. Wenn er sich nach 24 Stunden noch in diesem Status befindet, können Sie ein [Ticket beim Support](https://help.ovhcloud.com/csm?id=csm_cases_requests) unter Angabe der Selektor-ID öffnen.
+ - `todo`: Der Task wurde initialisiert und muss gestartet werden. Wenn er sich nach 24 Stunden noch in diesem Status befindet, können Sie ein [Ticket beim Support](https://help.ovhcloud.com/csm?id=csm_get_help) unter Angabe der Selektor-ID öffnen.
 
 ## Weiterführende Informationen
 

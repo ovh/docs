@@ -186,7 +186,7 @@ Per recuperare l'intestazione, seleziona l'email in questione, clicca sui 3 punt
 
 #### Outlook.com
 
-Per visualizzare l'intestazione nell'interfaccia Web <Outlook.com>, consulta la sezione [Outlook Web Application](#owa) di questa guida.
+Per visualizzare l'intestazione nell'interfaccia Web &#60;Outlook.com&#62;, consulta la sezione [Outlook Web App](#owa) di questa guida.
 
 ## Per saperne di più
 

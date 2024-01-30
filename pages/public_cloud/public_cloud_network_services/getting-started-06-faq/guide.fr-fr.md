@@ -23,10 +23,9 @@ Actuellement, ces modes ne sont pas pris en charge. Pour du load balancing publi
 
 Une version bêta est en cours pour fournir une intégration avec Managed Kubernetes Service. Merci de contacter notre [communauté Discord](https://discord.gg/ovhcloud) sur le canal **#beta-lb-for-k8s**
 
+### Je souhaite monitorer mon Load Balancer Public Cloud. Est-il possible d’activer [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatiquement sur le Load Balancer ?
 
-### Je souhaite monitorer le Load Balancer Octavia. Est-il possible d’activer [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatiquement sur le Load Balancer ?
-
-Oui cette fonctionnalité est disponible depuis le déploiement de la version Zed en juin 2023.
+Oui cette fonctionnalité est disponible depuis le déploiement de la version Zed en juin 2023. Retrouvez plus d'informations sur [cette page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 
 ### Comment est mise en oeuvre la redondance pour chaque type d'offre ? Les Amphoras sont-ils configurés en mode ACT/STBY ?
 
@@ -40,7 +39,7 @@ Non, un nouveau type d’adresse IP a été créé pour ce rôle, Floating IP. C
 
 Oui, plusieurs *listeners* (frontends) et *pools* (backends) peuvent être configurés. Il n'y a qu'une limitation d'une seule Floating IP par Load Balancer.
 
-### Que se passe-t-il si l'Octavia Load Balancer reçoit plus de requêtes que prévu ? Le prix va-t-il augmenter ? En serai-je informé ?
+### Que se passe-t-il si le Load Balancer Public Cloud reçoit plus de requêtes que prévu ? Le prix va-t-il augmenter ? En serai-je informé ?
 
 Tout d'abord, les valeurs indiquées ne sont qu'une estimation des capacités du Load Balancer. Le prix n'augmentera pas. La tarification est liée aux types (small, medium, large) et nous ne pouvons pas changer la flavor pour le moment. Le choix d'orchestration de ses services est à la charge du client.
 

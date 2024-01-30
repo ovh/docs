@@ -74,7 +74,7 @@ A forma de o fazer é diferente consoante os direitos que delegou e o software o
 
 #### 2.1 Utilizar o seu "direito de acesso" <a name="access"></a>
 
-- **A partir do webmail Outlook Web Application (OWA)**
+- **A partir do webmail Outlook Web App (OWA)**
 
 Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Depois de aceder, clique com o botão direito do rato no nome da conta no menu à esquerda e selecione `Adicionar uma pasta partilhada`{.action}.
 
@@ -94,7 +94,7 @@ Clique agora em `Parâmetros adicionais`{.action}. Na nova janela, aceda ao sepa
 
 #### 2.2 Utilizar o seu "direito de envio" <a name="send-as"></a>
 
-- **A partir do webmail Outlook Web Application (OWA)**
+- **A partir do webmail Outlook Web App (OWA)**
 
 Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
 
@@ -116,7 +116,7 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 #### 2.3 Utilizar o seu "direito de enviar da parte de" <a name="send-on-behalf"></a>
 
-- **A partir do webmail Outlook Web Application (OWA)**
+- **A partir do webmail Outlook Web App (OWA)**
 
 Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
 

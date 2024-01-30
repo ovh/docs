@@ -1,7 +1,7 @@
 ---
 title: Gestionar un VPS Legacy
 excerpt: Cómo administrar un VPS de una antigua gama desde el área de cliente de OVHcloud
-updated: 2023-06-29
+updated: 2024-01-22
 ---
 
 > [!primary]
@@ -38,6 +38,12 @@ Esta opción abrirá una ventana emergente para iniciar el proceso de [baja del 
 ### Reiniciar en modo de rescate
 
 Haga clic en esta opción para reiniciar el VPS en modo de rescate. Para más información, consulte [nuestra guía](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Puede utilizar el siguiente comando para identificar el punto de montaje de su partición:
+
+```bash
+lsblk
+```
 
 ### Reiniciar mi VPS
 

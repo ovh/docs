@@ -10,7 +10,7 @@ Find the most frequently asked questions about the OVHcloud support.
 
 ### What should I do if I can't reach support by phone?
 
-To avoid waiting on the phone, please create a support request via the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_cases_requests). Click on the button `Create a ticket`{.action}.
+To avoid waiting on the phone, please create a support request via the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Click on the button `Create a ticket`{.action}.
 
 You can also refer to our documentation (FAQs, guides, diagnostic tools, etc.) in the [Help Centre](https://help.ovhcloud.com/csm/en-au-documentation?id=kb_home).
 
@@ -22,7 +22,7 @@ The aim of this new form is to make the ticket creation process more comprehensi
 
 You can transmit files in these formats (max. size: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Create a support request in the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_cases_requests) and attach your files.
+Create a support request in the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) and attach your files.
 
 ### Where can I find my support level?
 

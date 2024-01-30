@@ -1,6 +1,6 @@
 ---
 title: 'Weniger sichere Verbindungen in Google Mail zulassen'
-hidden: true
+flag: hidden
 updated: 2022-04-06
 ---
 

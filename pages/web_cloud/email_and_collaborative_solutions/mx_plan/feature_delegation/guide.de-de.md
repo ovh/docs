@@ -25,7 +25,7 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 
 > [!warning]
 >
-> Die folgende Anleitung ist nur anwendbar auf den Dienst MX Plan *Legacy*. Für unsere aktuelle Version dieses Angebots gibt es keine Delegationsverwaltung. Die Änderung des Passworts, die Eingangsfilter und Auto-Antworten eines E-Mail-Accounts können direkt über das OWA Webmail (**O**utlook **W**eb **A**pplication) verwaltet werden. Sie können anhand der nachstehenden Tabelle identifizieren, welche Version des MX Plan Sie verwenden.
+> Die folgende Anleitung ist nur anwendbar auf den Dienst MX Plan *Legacy*. Für unsere aktuelle Version dieses Angebots gibt es keine Delegationsverwaltung. Die Änderung des Passworts, die Eingangsfilter und Auto-Antworten eines E-Mail-Accounts können direkt über das OWA Webmail (**O**utlook **W**eb **A**pp) verwaltet werden. Sie können anhand der nachstehenden Tabelle identifizieren, welche Version des MX Plan Sie verwenden.
 >
 
 |MX Plan Legacy|MX Plan neuere Version|

@@ -719,7 +719,7 @@ With the API, ask for the vDC deletion:
 
 You can find all the information on setting up an advanced NSX-v architecture on NSX by watching this video.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/891113062?h=dfd1a3d5dc&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/891113062?h=dfd1a3d5dc&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/891113062">Recreate an advanced NSX-v architecture on NSX</a> from <a href="https://vimeo.com/ovhcloud">OVHcloud</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## FAQ

@@ -1,7 +1,8 @@
 ---
 title: "Mettere in sicurezza un VPS"
 excerpt: "Scopri gli elementi di base per rendere sicuro il tuo VPS"
-updated: 2022-05-05
+updated: 2024-01-23
+
 ---
 
 > [!primary]
@@ -70,16 +71,23 @@ Per farlo, modifica il file di configurazione del servizio con l'editor di testo
 Dovrai trovare queste linee o equivalenti:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Sostituisci il numero **22** con il numero di porta che preferisci.<br>
 **Ricordati di non inserire un numero di porta già utilizzato sul tuo sistema**.
-Per una maggiore sicurezza, utilizza un numero tra 49152 e 65535.<br>
-Salva e lascia il file di configurazione.
+Per una maggiore sicurezza, utilizza un numero tra 49152 e 65535.<br>Salva e lascia il file di configurazione.
 
-Se la riga è "commentata" (cioè preceduta da un "#"), assicurarsi di rimuovere il "#" prima di salvare il file affinché la modifica abbia effetto.
+
+Se la riga è "commentata" (cioè preceduta da un "#") come nell'esempio precedente, assicurarsi di rimuovere il "#" prima di salvare il file, in modo che la modifica venga presa in considerazione. Esempio:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Riavvia il servizio:
 

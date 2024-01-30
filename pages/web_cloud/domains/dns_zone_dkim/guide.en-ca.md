@@ -571,7 +571,7 @@ Here are the 4 states that result in a red DKIM box in your Control Panel:
  - `ready`: The DNS  are present in the zone. The DKIM can now be enabled. Simply activate the selector by going to the section [Enable or change a DKIM selector](#enable-switch).
  - `deleting`: The DKIM is being deleted. Once you have deleted it, you will need to follow the section “[Full DKIM configuration](#firststep)”.
  - `disabling`: The DKIM is being disabled. Once you have done this, you can activate the selector by going to [Activate or change a DKIM selector](#enable-switch).
- - `todo`: The task has been initialised, it must be launched. After 24 hours, if your selector is still in this state, please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_cases_requests), specifying the number of the selector concerned.
+ - `todo`: The task has been initialised, it must be launched. After 24 hours, if your selector is still in this state, please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help), specifying the number of the selector concerned.
 
 ## Go further
 

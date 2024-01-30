@@ -88,7 +88,7 @@ Dado que ninguna protección automatizada contra correo no deseado puede determi
 
 > [!primary]
 >
-Tenga en cuenta que no es posible declarar falsos positivos de correo no deseado directamente desde OWA. Si recibe mensajes de correo electrónicos marcados erróneamente como \[SPAM], le recomendamos crear una solicitud de asistencia en el [panel de control de OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+Tenga en cuenta que no es posible declarar falsos positivos de correo no deseado directamente desde OWA. Si recibe mensajes de correo electrónicos marcados erróneamente como \[SPAM], le recomendamos crear una [solicitud de asistencia](https://help.ovhcloud.com/csm?id=csm_get_help).  
 >
 
 ## Más información

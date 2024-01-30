@@ -1,7 +1,7 @@
 ---
 title: Introducción al SSH
 excerpt: "Cómo utilizar las conexiones SSH para acceder al servidor"
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 > [!primary]
@@ -81,6 +81,8 @@ Si el puerto SSH del servidor no es el puerto estándar, utilice el siguiente co
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Conexión y finalización
 
 Cuando se le pida una contraseña, escriba la del usuario que se conecta y pulse `Enter`.
@@ -138,7 +140,13 @@ En Windows, también se especifica la ruta del archivo `known_hosts` y la línea
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 
-Acceda a esta carpeta, haga clic derecho en el archivo y abra con la aplicación Bloc de notas.
+Para solucionar este problema, utilice el siguiente comando con la dirección IP del servidor:
+
+```bash
+ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+```
+
+También puede tener acceso a esta carpeta, hacer clic derecho en el archivo y abrirlo con la aplicación Bloc de notas.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 

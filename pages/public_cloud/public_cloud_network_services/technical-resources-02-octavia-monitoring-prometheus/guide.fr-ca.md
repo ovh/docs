@@ -1,5 +1,5 @@
 ---
-title: "Mettre en place un monitoring de Octavia Load Balancer avec Prometheus (EN)"
+title: "Mettre en place un monitoring du Load Balancer Public Cloud avec Prometheus (EN)"
 excerpt: "Découvrez les différentes options disponibles pour monitorer votre Load Balancer Octavia"
 updated: 2023-12-22
 ---
@@ -50,7 +50,7 @@ $ openstack loadbalancer listener stats show <listener id>
 
 ### Monitoring with Prometheus
 
-To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener with a `PROMETHEUS` special protocol. This will enable the endpoint `/metrics` on the listener. The listener supports all of the features of an Octavia Load Balancer, such as `allowed_cidrs`, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
+To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener with a `PROMETHEUS` special protocol. This will enable the endpoint `/metrics` on the listener. This listener type provides the same features as the "regular" listeners, such as `allowed_cidrs`, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
 
 > [!primary]
 >

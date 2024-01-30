@@ -213,7 +213,7 @@ ping6 ipv6.google.com
 
 Wenn Ihre Instanz antwortet, wurde wahrscheinlich ein Schritt in Ihrer ursprünglichen Konfigurierung nicht korrekt ausgeführt.
 
-Zögern Sie jedenfalls nicht, sich mit Testergebnissen zu den oben erwähnten Angaben an unseren [Kundendienst zu wenden](https://www.ovh.com/manager/dedicated/#/support/tickets/new), um eine Analyse von unserer Seite zu erhalten.
+Zögern Sie jedenfalls nicht, sich mit Testergebnissen zu den oben erwähnten Angaben an unseren [Kundendienst zu wenden](https://help.ovhcloud.com/csm?id=csm_get_help), um eine Analyse von unserer Seite zu erhalten.
 
 ## Weiterführende Informationen
 

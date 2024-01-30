@@ -1,7 +1,7 @@
 ---
 title: Getting started with SSH
 excerpt: Find out how to use SSH connections to access your server
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 ## Objective
@@ -73,6 +73,8 @@ If the SSH port of the server is not the standard one, use this command:
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Login and fingerprint
 
 When prompted for a password, type the password of the connecting user and press `Enter`.
@@ -130,11 +132,17 @@ On Windows, the location of the `known_hosts` file and the line you have to dele
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 
-Navigate to this folder, right-click on the file and open it with the Notepad application.
+To resolve this, use the following command with the IP address of your server:
+
+```bash
+ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+```
+
+Alternatively, navigate to this folder, right-click on the file and open it with the Notepad application.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
-Delete the pertinent line, in this case the third one. Save the changes and exit the editor. You will have to confirm the new fingerprint at the next server login.
+Delete the pertinent line, in this example it would be the third one. Save the changes and exit the editor. You will have to confirm the new fingerprint at the next server login.
 
 ### Using GUI clients or SSH-compatible software
 
