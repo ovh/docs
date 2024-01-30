@@ -87,9 +87,7 @@ Aquí se encuentran, por defecto, la carpeta `www` y el archivo `.ovhconfig` del
 >
 > Todos los comandos siguientes se realizan desde el terminal de su dispositivo/ordenador **en local**. Por lo tanto, no debe estar conectado por SSH en su terminal del alojamiento web.
 >
-> Si quiere copiar contenido en su alojamiento web, sitúe a su usuario **local** suficientemente arriba de los archivos y carpetas que quiera copiar en su alojamiento web.
->
-> Si desea recuperar una copia de los archivos y carpetas presentes en su alojamiento web local en su dispositivo o ordenador, sitúe a su usuario **local** suficientemente antes de la carpeta que va a recuperar la copia de los datos alojados.
+> La ruta de acceso al fichero utilizada con el comando `scp` es relativa al directorio local actual. Para transferir datos a su alojamiento web o desde un alojamiento web a su dispositivo local, asegúrese de ejecutar sus comandos desde el directorio principal local, como se muestra en los ejemplos siguientes.
 >
 
 No olvide sustituir toda la siguiente configuración general por su propia configuración:

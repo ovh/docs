@@ -87,9 +87,7 @@ Na tym właśnie poziomie znajdują się domyślnie katalog `www` oraz plik`.ovh
 >
 > Wszystkie poniższe polecenia są wykonywane z terminala urządzenia/komputera **lokalnie**. Nie musisz więc logować się przez SSH do terminala na Twoim hostingu.
 >
-> Jeśli chcesz skopiować zawartość na Twój hosting, ustaw użytkownika **local** wystarczająco wcześnie przed kopiowaniem plików/katalogów na Twój hosting.
->
-> Jeśli chcesz pobrać kopię plików/katalogów z Twojego hostingu www lokalnie na Twoim urządzeniu/komputerze, ustaw użytkownika **local** wystarczająco wcześnie przed folderem, z którego ma zostać pobrana kopia przechowywanych danych.
+> Ścieżka pliku użyta wraz z poleceniem `scp` odnosi się do bieżącego katalogu lokalnego. Aby przenieść dane do hostingu lub z hostingu na urządzenie lokalne, upewnij się, że uruchamiasz polecenia z lokalnego katalogu nadrzędnego, jak pokazano w poniższych przykładach.
 >
 
 Pamiętaj, aby zastąpić wszystkie następujące ustawienia ogólne własnymi ustawieniami:

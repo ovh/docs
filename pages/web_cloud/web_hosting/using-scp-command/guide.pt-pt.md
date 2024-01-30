@@ -87,9 +87,7 @@ Quando se liga de forma clássica ao espaço FTP de um alojamento web, a ligaç�
 >
 > Todos os comandos abaixo são efetuados a partir do terminal do seu dispositivo/computador **localmente**. Por isso, não deve estar conectado ao seu terminal no alojamento web.
 >
-> Se deseja copiar conteúdos para o seu alojamento web, posicione o seu utilizador **local** suficientemente a montante dos ficheiros/pastas que deseja copiar para o seu alojamento web.
->
-> Se pretender obter uma cópia dos ficheiros/pastas presentes no seu alojamento web local no seu dispositivo/computador, posicione o seu utilizador **local** suficientemente a montante da pasta que vai recuperar a cópia dos seus dados alojados.
+> O caminho de acesso ao ficheiro utilizado com o comando `scp` diz respeito ao diretório local corrente. Para transferir dados para o seu alojamento web ou alojamento web para o seu dispositivo local, certifique-se de que executa os seus comandos a partir do diretório pai local, tal como indicado nos exemplos abaixo.
 >
 
 Não se esqueça de substituir todas as seguintes definições gerais pelos seus próprios parâmetros:

@@ -87,9 +87,7 @@ Quando ti connetti in modo classico allo spazio FTP di un hosting Web, la connes
 >
 > Tutti i comandi seguenti vengono eseguiti dal terminale del tuo dispositivo/computer **in locale**. Non è quindi necessario essere connessi in SSH nel terminale dell’hosting Web.
 >
-> Per copiare contenuti sul tuo hosting Web, posiziona il tuo utente **locale** a monte dei file/cartelle che vuoi copiare sul tuo hosting Web.
->
-> Per recuperare una copia dei file e delle cartelle dell’hosting Web in locale sul proprio dispositivo o computer, posiziona il tuo utente **locale** a monte della cartella che recupererà la copia dei dati ospitati.
+> Il percorso del file utilizzato con il comando `scp` è relativo alla directory locale corrente. Per trasferire dati verso un hosting Web o un hosting Web verso un dispositivo locale, assicurati di eseguire i comandi dalla directory principale locale, come mostrato negli esempi di seguito.
 >
 
 Ricordarsi di sostituire tutte le seguenti impostazioni generali con le proprie:
