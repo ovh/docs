@@ -29,7 +29,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 ## Instructions
 
-**Technical limitations**
+**Technical limitations:**
 
 There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
@@ -37,16 +37,16 @@ There are some technical limitations linked to the use of physical products such
 - Partition type: **MBR** or **GPT**
 - Image format: **qcow2**
 
-**Deployment methods**
+**Deployment methods:**
 
 - [Deployment via the Control Panel](#viacontrolpanel): allows you to simply deploy your image using the OVHcloud Control Panel.
 - [Deployment via API](#viaapi): you can use the OVHcloud API to integrate images into your own scripts to automate deployments.
 
-### Deploy your image via the Control Panel <a name="viapanel"></a>
+### Deploy your image via the Control Panel <a name="viacontrolpanel"></a>
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and go to the `Bare Metal Cloud`{.action} section, then select your server under `Dedicated servers`{.action}.
 
-In the `General information` tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
+In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
 ![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
 
@@ -54,7 +54,7 @@ In the window that appears, select `Install from OVHcloud template`{.action} and
 
 ![BringYourOwnLinux Control Panel 02](images/byolinux-controlpanel02.png){.thumbnail}
 
-In the window that appears, select `CUSTOM` in the menu, then `Bring Your Own Linux - byolinux`, and click `Next`{.action}.
+In the window that appears, select `Custom` in the menu, then `Bring Your Own Linux - byolinux`, and click `Next`{.action}.
 
 ![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
 
@@ -139,7 +139,6 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 [Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)<br />
 [OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)<br />
-[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)<br />
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)<br />
 [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)<br />
 Join our user community on <https://community.ovh.com/en/>.
