@@ -13,8 +13,8 @@ The vRack offered by OVHcloud is a private network solution that allows our cust
 ## Requirements
 
 - **OVHcloud requirements**
-    - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-    - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+    - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
+    - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
     - A private vRack network that can be accessed from your Public Cloud project (if you don’t have one, please refer to our guide [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
     - An OpenStack user account in your Public Cloud project (if you don’t have one, please refer to the following guide: [Creating and deleting OpenStack users](/pages/public_cloud/compute/create_and_delete_a_user/).
 - **Terraform requirements**
@@ -298,4 +298,4 @@ Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask question
 
 Join our community of users on <https://community.ovh.com/en/>.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
