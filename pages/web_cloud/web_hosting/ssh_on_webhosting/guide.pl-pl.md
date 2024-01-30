@@ -1,7 +1,7 @@
 ---
 title: "Korzystanie z dostępu do hostingu WWW przez SSH"
 excerpt: "Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH"
-updated: 2024-01-26
+updated: 2024-01-30
 ---
 
 > [!primary]
