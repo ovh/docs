@@ -56,7 +56,7 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 En la pestaña `Información general`{.action}, acceda a la sección **Suscripción** en la esquina inferior derecha. Haga clic en `...`{.action} delante de **Contactos** y, seguidamente, en `Cambiar de propietario`{.action}.
 
-![cambio de propietario](images/3652-2.png){.thumbnail}
+![cambio de propietario](images/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -67,7 +67,7 @@ En la pestaña `Información general`{.action}, acceda a la sección **Suscripci
 
 Se abrirá una nueva pestaña de su navegador con todos los dominios compatibles con el cambio de propietario. Seleccione un dominio de la lista marcando la casilla situada a la izquierda. Este paso también puede utilizarse para iniciar una operación conjunta: es posible cambiar el propietario de varios dominios a la vez, por ejemplo para cambiar el propietario de todos los dominios *.ovh*. A continuación, haga clic en `Continuar`{.action}.
 
-![cambio de propietario](images/3657.PNG){.thumbnail}
+![cambio de propietario](images/available-domains.png){.thumbnail}
 
 En el formulario de información del propietario, asegúrese de ingresar información válida en todos los campos obligatorios. Manténgase alerta sobre los errores de entrada y, en la medida de lo posible, utilice [caracteres imprimibles ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenga en cuenta que cualquier información inexacta o falsa puede conllevar un error técnico y, por tanto, un retraso de todo el proceso de intercambio.
 
@@ -95,7 +95,7 @@ Si tiene que actualizar algunos datos secundarios como el número de teléfono, 
 
 En la sección **Suscripción** de la pestaña `Información general`{.action}, haga clic en `...`{.action} delante de **Contactos** y seleccione `Actualizar la información del propietario`{.action}.
 
-![cambio de propietario](images/3658.png){.thumbnail}
+![cambio de propietario](images/refresh-owner-information.png){.thumbnail}
 
 No es necesario confirmar los cambios por correo electrónico.
 
