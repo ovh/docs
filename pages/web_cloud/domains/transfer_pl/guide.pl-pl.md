@@ -132,4 +132,8 @@ Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta
 
 [Migracja strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
