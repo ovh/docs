@@ -83,4 +83,8 @@ Skontaktuj się z nowym dostawcą, aby uzyskać więcej informacji oraz wszelkie
 
 [Transfer domeny do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

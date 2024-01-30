@@ -81,4 +81,6 @@ Contacte con su nuevo proveedor para más información y para conocer cualquier 
 
 [Transferir un dominio a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain)
 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

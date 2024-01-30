@@ -83,4 +83,6 @@ Contatta il tuo nuovo provider per maggiori informazioni e per qualsiasi domanda
 
 [Trasferire un dominio verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
