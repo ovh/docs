@@ -86,9 +86,7 @@ Auf dieser Ebene befinden sich standardmäßig der Ordner `www` und die Datei `.
 >
 > Alle folgenden Beispiel-Befehle werden über das Terminal Ihres Geräts/Computers **lokal** ausgeführt. Sie müssen also nicht via SSH auf Ihrem Webhosting eingeloggt sein.
 >
-> Wenn Sie Inhalte auf Ihr Webhosting kopieren möchten, positionieren Sie Ihren **lokalen** Benutzer rechtzeitig vor den Dateien/Ordnern, die Sie auf Ihr Webhosting kopieren möchten.
->
-> Wenn Sie eine Kopie der Dateien/Ordner auf Ihrem Webhosting lokal auf Ihrem Gerät/Computer abrufen möchten, positionieren Sie Ihren **lokalen** Benutzer rechtzeitig vor dem Ordner, der die Kopie Ihrer gehosteten Daten abrufen wird.
+> Der mit dem Befehl `scp` verwendete Dateipfad ist relativ zum aktuellen lokalen Verzeichnis. Bevor Sie also Inhalte auf Ihr Webhosting oder vom Webhosting zu Ihrem lokalem Gerät übertragen, wechseln Sie zum jeweils übergeordneten lokalen Verzeichnis, entsprechend der unten aufgeführten Beispiele.
 >
 
 Denken Sie daran, alle folgenden Werte mit Ihren eigenen Daten zu ersetzen:
