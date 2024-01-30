@@ -1,6 +1,6 @@
 ---
 title: 'Using Cyberduck (on Mac)'
-excerpt: 'Cyberduck user guide'
+excerpt: Cyberduck user guide
 updated: 2020-05-05
 ---
 

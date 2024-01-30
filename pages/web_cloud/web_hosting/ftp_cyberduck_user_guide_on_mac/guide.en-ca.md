@@ -1,6 +1,6 @@
 ---
 title: 'Web Hosting: Cyberduck user guide (on Mac)'
-excerpt: Insert Here A Short Desc
+excerpt: Cyberduck user guide
 updated: 2020-05-05
 ---
 

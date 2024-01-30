@@ -62,6 +62,8 @@ Una vez que haya configurado el servidor, compruebe el tamaño de las particione
 df -h
 ```
 
+```console```
+
 ### Utilizar el modo de rescate
 
 En el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}.

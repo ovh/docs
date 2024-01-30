@@ -63,6 +63,8 @@ Una volta configurato il server, verifica la dimensione delle partizioni acceden
 df -h
 ```
 
+```console```
+
 ### Utilizza la modalità Rescue
 
 Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.
