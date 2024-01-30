@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - Copier des fichiers avec la commande SCP"
 excerpt: "Découvrez comment utiliser la commande Secure Copy Protocol (SCP) en SSH pour copier des fichiers depuis ou vers votre hébergement web"
-updated: 2024-01-19
+updated: 2024-01-30
 ---
 
 ## Objectif

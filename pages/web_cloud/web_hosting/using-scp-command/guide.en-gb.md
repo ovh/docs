@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Copy files using SCP command"
 excerpt: "Find out how to use the Secure Copy Protocol (SCP) command in SSH to copy files to and from your web hosting plan"
-updated: 2024-01-22
+updated: 2024-01-30
 ---
 
 ## Objective

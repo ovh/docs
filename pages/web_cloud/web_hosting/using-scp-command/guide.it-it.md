@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Copiare file con il comando SCP"
 excerpt: "Questa guida ti mostra come utilizzare il comando Secure Copy Protocol (SCP) in SSH per copiare file da o verso il tuo hosting Web"
-updated: 2024-01-22
+updated: 2024-01-30
 ---
 
 > [!primary]

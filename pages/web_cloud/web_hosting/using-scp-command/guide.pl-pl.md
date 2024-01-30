@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Kopiowanie plików za pomocą polecenia SCP"
 excerpt: "Dowiedz się, jak używać komendy Secure Copy Protocol (SCP) przez SSH do kopiowania plików z lub na Twój hosting"
-updated: 2024-01-22
+updated: 2024-01-30
 ---
 
 > [!primary]

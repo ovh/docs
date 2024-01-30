@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Dateien mit dem Befehl SCP kopieren"
 excerpt: "Erfahren Sie hier, wie Sie mit SSH und dem Secure Copy Protocol (SCP) Dateien auf Ihr Webhosting kopieren"
-updated: 2024-01-22
+updated: 2024-01-30
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Alojamento Web - Copiar ficheiros com o comando SCP"
 excerpt: "Saiba como utilizar o comando Secure Copy Protocol (SCP) em SSH para copiar ficheiros de ou para o seu alojamento web"
-updated: 2024-01-22
+updated: 2024-01-30
 ---
 
 > [!primary]
