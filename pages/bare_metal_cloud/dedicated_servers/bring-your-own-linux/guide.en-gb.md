@@ -6,20 +6,20 @@ updated: 2024-01-31
 
 ## Objective
 
-The Bring Your Own Linux feature (BYOLinux) enables you to deploy *cloudready* linux images directly on your dedicated server. You can therefore use the bare metal service as a resource for your deployments.
+The Bring Your Own Linux feature (BYOLinux) enables you to deploy *cloudready* Linux images directly on your dedicated server. You can therefore use the bare metal service as a resource for your deployments.
 
 **What does *cloudready* mean?**
 
-The *cloudready* standard generally means to be agnostic of the infrastructure on which the image is deployed.
-In addition to the prerequisites and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
+The *cloudready* standard generally means being agnostic of the infrastructure on which the image is deployed.
+In addition to the requirement and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
 
 **This guide explains how to use BYOLinux on your OVHcloud dedicated server.**
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) (for the method "[Deployment via Control Panel](#viacontrolpanel)")
-- Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the section "[Deployment via API](#viaapi)" of this guide)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
+- Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
 
 > [!warning]
@@ -46,23 +46,23 @@ There are some technical limitations linked to the use of physical products such
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and go to the `Bare Metal Cloud`{.action} section, then select your server under `Dedicated servers`{.action}.
 
-In the `General information` tab, click on the `...`{.action} button next to "System (OS)" and then on `Install`{.action}.
+In the `General information` tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
 ![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
 
-In the window that appears, select `Install from OVHcloud template`{.action} and click on `Next`{.action}.
+In the window that appears, select `Install from OVHcloud template`{.action} and click `Next`{.action}.
 
 ![BringYourOwnLinux Control Panel 02](images/byolinux-controlpanel02.png){.thumbnail}
 
-In the windoe that appears, select `CUSTOM`, in the menu, then `Bring Your Own Linux - byolinux`, and click on `Next`{.action}.
+In the window that appears, select `CUSTOM` in the menu, then `Bring Your Own Linux - byolinux`, and click `Next`{.action}.
 
 ![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
 
 You will be redirected to the configuration page. Make sure your image URL is in the correct format. Complete the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Confirm`{.action}.
 
-You can find more details on the options in the "[Deployment options](#options)" section below.
+You can find more details on the options in the [deployment options](#options) section below.
 
-For more information and examples about Cloud-Init's ConfigDrive, please consult the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
+For more information and examples about Cloud-Init's ConfigDrive, please read the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
 ![BringYourOwnLinux Control Panel 04](images/byolinux-controlpanel04.png){.thumbnail}
 
@@ -73,11 +73,11 @@ For more information and examples about Cloud-Init's ConfigDrive, please consult
 > @api {v1} /dedicated/server/{serviceName}/install/start POST /dedicated/server/{serviceName}/install/start
 >
 
-The `BringYourOwnLinux` payload should look something like this
+The `BringYourOwnLinux` payload should be similar to the following:
 
 > [!warning]
 >
-> In the `userMetadata` section, only `imageURL` is mandatory
+> In the `userMetadata` section, only `imageURL` is mandatory.
 >
 
 ```json
@@ -120,11 +120,11 @@ The `BringYourOwnLinux` payload should look something like this
 
 | Field | Description | Required |
 |-|-|-|
-| userMetadata/imageURL | your linux image URL | ✅ |
+| userMetadata/imageURL | Your Linux image URL | ✅ |
 | userMetadata/imageCheckSum | Your image's checksum. | ❌ |
-| userMetadata/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512). | ❌ (except if checksum provided)|
-| userMetadata/configDriveUserData | Your configDrive file content¹ | ❌|
-| userMetadata/configDriveMetadata | Custom Cloud-Init metadatas  | ❌ |
+| userMetadata/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512). | ❌ (except if checksum provided) |
+| userMetadata/configDriveUserData | Your configDrive file content¹ | ❌ |
+| userMetadata/configDriveMetadata | Custom Cloud-Init metadatas | ❌ |
 | userMetadata/httpHeaders?Key | HTTP Headers key  | ❌² |
 | userMetadata/httpHeaders?Value | HTTP Headers value | ❌² |
 
@@ -133,11 +133,11 @@ The `BringYourOwnLinux` payload should look something like this
 
 The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
 
-After you have completed the fields, start the deployment by clicking `Execute`{.action}.
+Once you completed the fields, start the deployment by clicking `Execute`{.action}.
 
 ## Go further
 
-[Check the extensive explanation](https://github.com/ovh/BringYourOwnLinux)<br />
+[Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)<br />
 [OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)<br />
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)<br />
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)<br />
