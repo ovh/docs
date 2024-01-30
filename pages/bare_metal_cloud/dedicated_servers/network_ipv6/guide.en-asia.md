@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2024-01-16
+updated: 2024-01-29
 ---
 
 ## Objective
@@ -44,6 +44,8 @@ Please take note of the following terminology that will be used in code examples
 |IPv6_PREFIX|The prefix (or *netmask*) of your IPv6 block, usually 64|2607:5300:xxxx:xxxx::/64|
 |IPv6_GATEWAY|The gateway of your IPv6 block|2607:5300:xxxx:ff:ff:ff:ff:ff or fe80::1|
 
+In our examples, we'll use the `nano` text editor. You can also use another text editor such as `vi`.
+
 ### Default Gateway
 
 The first step is to identify the IPv6 block and gateway assigned to your server. There are two ways of doing this:
@@ -67,8 +69,15 @@ Execute the following API call, indicating the internal server name (example: `n
 
 > [!api]
 >
-> @api {v1} /dedicated/server/ {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
+
+Please note that the leading "0's" can be removed in an IPv6 gateway.
+
+Example:
+
+The IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` can also been written as `2607:5300:60:62FF:FF:FF:FF:FF`.
+
 
 > [!warning]
 >
@@ -88,32 +97,34 @@ Execute the following API call, indicating the internal server name (example: `n
 > Once this has been done, you can apply those rules by executing the following command: `sh sysctl -p`.
 > 
 
-#### Step 1: Use SSH to connect to your server
+#### Step 1: Connect to your server via SSH
 
-Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#logging-on-to-your-server).
+```sh
+~# ssh user@serverIP
+```
 
 #### Step 2: Create a backup
 
-Your server's network configuration file is either located in `/etc/network/interfaces` or `/etc/network/interfaces.d`. Before proceeding, create a backup of your file using one of the following commands:
+Your server's network configuration file is either located in `/etc/network/interfaces` or `/etc/network/interfaces.d` depending on the version of your Debian operating system. Before proceeding, create a backup of your file using one of the following commands:
 
 ```sh
-cp /etc/network/interfaces/50-cloud-init /etc/network/interfaces/50-cloud-init.bak
+~# sudo cp /etc/network/interfaces/50-cloud-init /etc/network/interfaces/50-cloud-init.bak
 ```
 
 Or
 
 ```sh
-cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+~# sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
 #### Step 3: Amend the network configuration file
 
-Amend the file so that it looks like the example below, replacing `YOUR_IPv6` and `IPv6_GATEWAY` with your own values. In this example, the network interface is called `eth0`. The interface on your server may differ.
+Amend the file so that it looks like the example below, replacing `YOUR_IPv6`, `IPv6_GATEWAY` and `IPv6_PREFIX` with your own values. In this example, the network interface is called `eth0`. The interface on your server may differ.
 
 ```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
-    netmask 64
+    netmask IPv6_PREFIX
 
 post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0 
 post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY 
@@ -128,10 +139,6 @@ Additional IPv6 addresses can be added using the following command:
 ```
 
 **Configuration example:**
-
-If we want to configure the main IPV6 `2607:5300:adce:f2cd::1/64` in the block `2607:5300:adce:f2cd::/64` with gateway `2607:5300:adce:ff:ff:ff:ff:ff`.
-
-First we open our configuration file with an editor tool, in this example, we are using `nano`:
 
 ```sh
 ~# sudo nano /etc/network/interfaces.d/50-cloud-init
@@ -150,7 +157,7 @@ pre-down /sbin/ip -f inet6 route del 2607:5300:adce:ff:ff:ff:ff:ff dev eth0
 pre-down /sbin/ip -f inet6 route del default via 2607:5300:adce:ff:ff:ff:ff:ff
 ```
 
-For multiple IPv6 addresses:
+Adding additional IPv6 addresses:
 
 ```sh
 ~# sudo /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64
@@ -208,18 +215,18 @@ In this example, our file is called `cloud-init-eno1.nmconnection`.
 First, make a copy of the configuration file, so that you can revert at any time:
 
 ```sh
-~# cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+~# sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
 #### Step 3: Amend the network configuration file
 
-Amend the file by adding the following lines to it, do not modify any thing in the original file. Replace the generic elements (i.e. YOUR_IPV6, PREFIX and IPV6_GATEWAY) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+Amend the file by adding the following lines to it, do not modify any thing in the original file. Replace the generic elements (i.e. YOUR_IPV6, IPv6_PREFIX and IPV6_GATEWAY) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
 ```bash
 [ipv6]
 method=auto
 may-fail=true
-address1=YOUR_IPV6/PREFIX
+address1=YOUR_IPV6/IPv6_PREFIX
 gateway=IPv6_GATEWAY
 ```
 
@@ -229,17 +236,13 @@ If you need to configure more IPv6 addresses, your configuration should look lik
 [ipv6]
 method=auto
 may-fail=true
-address1=YOUR_IPV6/PREFIX
-address2=YOUR_2nd_IPV6/PREFIX
-address3=YOUR_3rd_IPV6/PREFIX
+address1=YOUR_IPV6/IPv6_PREFIX
+address2=YOUR_2nd_IPV6/IPv6_PREFIX
+address3=YOUR_3rd_IPV6/IPv6_PREFIX
 gateway=IPv6_GATEWAY
 ```
 
 **Configuration example:**
-
-If we want to configure the main IPV6 `2607:5300:adce:f2cd::1/64` in the block `2607:5300:adce:f2cd::/64` with gateway `2607:5300:adce:ff:ff:ff:ff:ff`.
-
-First we open our configuration file with an editor tool, in this example, we are using `nano`:
 
 ```sh
 ~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -321,8 +324,6 @@ Using a text editor, amend the `51-cloud-init-ipv6.yaml` file by adding the foll
 
 Replace the generic elements (i.e. YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using **eno3**) with your specific values.
 
-The configuration file should look like the example below:
-
 ```yaml
 network:
     version: 2
@@ -363,10 +364,6 @@ network:
 >
 
 **Configuration example:**
-
-If we want to configure the main IPV6 `2607:5300:adce:f2cd::1/64` in the block `2607:5300:adce:f2cd::/64` with gateway `2607:5300:adce:ff:ff:ff:ff:ff`.
-
-First we open our configuration file with an editor tool, in this example, we are using `nano`:
 
 ```sh
 ~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
@@ -460,8 +457,9 @@ The network configuration file is located in the directory `/etc/sysconfig/netwo
 First, make a copy of the configuration file, so that you can revert at any time:
 
 ```sh
-~# cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+~# sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
 ```
+
 #### Step 3: Amend the network configuration file
 
 Amend the file by adding the following lines if they are missing. Replace the generic elements (i.e. YOUR_IPV6 and IPV6_GATEWAY) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
@@ -475,14 +473,10 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 If you need to configure more IPv6 addresses, add the following line:
 
 ```console
-IPV6ADDR_SECONDARIES=YOUR_2nd_IPV6 YOUR_3rd_IPV6 etc..."
+IPV6ADDR_SECONDARIES="YOUR_2nd_IPV6 YOUR_3rd_IPV6 etc..."
 ```
 
 **Configuration example:**
-
-If we want to configure the main IPV6 `2607:5300:adce:f2cd::1/64` in the block `2607:5300:adce:f2cd::/64` with gateway `2607:5300:adce:ff:ff:ff:ff:ff`.
-
-First we open our configuration file with an editor tool, in this example, we are using `nano`:
 
 ```sh
 ~# sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -491,13 +485,6 @@ First we open our configuration file with an editor tool, in this example, we ar
 Next, we amend the configuration file:
 
 ```console
-BOOTPROTO=dhcp
-DEVICE=eth0
-HWADDR=00:3a:de:45:Cs:22
-ONBOOT=yes
-STARTMODE=auto
-TYPE=Ethernet
-USERCTL=no
 IPV6INIT=yes
 IPV6ADDR=2607:5300:adce:f2cd::1
 IPV6_DEFAULTGW=2607:5300:adce:ff:ff:ff:ff:ff
@@ -506,13 +493,6 @@ IPV6_DEFAULTGW=2607:5300:adce:ff:ff:ff:ff:ff
 For multiple IPV6 addresses:
 
 ```console
-BOOTPROTO=dhcp
-DEVICE=eth0
-HWADDR=00:3a:de:45:Cs:22
-ONBOOT=yes
-STARTMODE=auto
-TYPE=Ethernet
-USERCTL=no
 IPV6INIT=yes
 IPV6ADDR=2607:5300:adce:f2cd::1
 IPV6_DEFAULTGW=2607:5300:adce:ff:ff:ff:ff:ff
@@ -521,11 +501,19 @@ IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::2 2607:5300:adce:f2cd::3"
 
 #### Step 4: Save the file and apply the changes
 
-Save your changes to the file and then restart the network or reboot your server to apply the changes.
+Save your changes to the file and then restart the network with one of the following commands:
 
 ```sh
 ~# sudo systemctl restart network
 ```
+
+**For AlmaLinux and Rocky Linux**
+
+```sh
+~# sudo systemctl restart NetworkManager
+```
+
+You can also reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
@@ -571,13 +559,34 @@ Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 
 #### Step 3: Amend the network configuration 
 
-Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `OK`{.action}.
+Enter your IPv6 configuration (`IPv6 address` and `Default gateway`), check the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
 
-### Troubleshooting
+### Diagnostic
 
-If after testing your connection you are still experiencing problems, please create a support request to review your configurations. It is necessary to provide:
+Have you configured your IPv6, but found that nothing works? 
+
+There is a simple operation to determine whether the error is in your configuration, or on the OVHcloud network.
+
+Firstly, [put your server into rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode/).
+
+Next, use the template commands below to configure your IPv6 non-persistently, replacing ‘YOUR_IPV6’, ‘IPV6_PREFIX’ and 'IPV6_GATEWAY' with your own details:
+
+```bash
+ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
+ip -6 route add IPV6_GATEWAY dev eth0
+ip -6 route add default via IPV6_GATEWAY dev eth0
+```
+
+Test your network again via a ping6, for example:
+
+```bash
+ping6 ipv6.google.com
+```
+If your server responds, it is likely that there is an error in one of the steps taken for your initial configuration.
+
+In any case, please feel free to reach out to our support team with the request to review your configurations. It is necessary to provide:
 
 - The operating system name and version you are using on your server.
 - The name and directory of the network configuration file.

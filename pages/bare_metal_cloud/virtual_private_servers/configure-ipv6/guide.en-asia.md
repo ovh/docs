@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2023-01-22
+updated: 2023-01-29
 ---
 
 ## Objective
@@ -30,7 +30,7 @@ The following sections contain configurations for the distributions we currently
 
 > [!warning]
 >
-> Please note that on most of the Linux operating systems we offer for the Public Cloud, the IPv6 address is configured by default. Please check your operating system configuration file before making any changes.
+> Please note that on the recent Linux operating systems we offer for VPS, the IPv6 address is configured by default. In this case, you do not need to configure it. Make sure to check your operating system configuration file before making any changes.
 >
 
 Configuring IPv6 on your VPS is done in multiple steps. At several points in the process you will be prompted to enter commands or to customise configuration files of your server.
@@ -125,7 +125,7 @@ Moreover, keep in mind that the exact file names may vary.
 
 ##### Configuration of *interfaces* files <a name="interfaces"></a>
 
-By defauly, the configuration files are located in `/etc/network/interfaces.d/`. 
+By default, the configuration files are located in `/etc/network/interfaces.d/`.
 
 The best practice is to create a separate configuration file in the `/etc/network/interfaces.d/` directory to configure IPV6. In our example, our file is called `51-cloud-init-ipv6`:
 
@@ -141,17 +141,27 @@ Add the following lines to the file. Replace the generic elements (i.e. *YOUR_IP
 auto eth0
 iface eth0 inet6 static
 mtu 1500
-address 2607:5300:201:abcd::7c5
+address YOUR_IPV6
 netmask IPV6_PREFIX
+post-up /sbin/ip -6 route add IPV6_GATEWAY dev eth0
+post-up /sbin/ip -6 route add default via IPV6_GATEWAY dev eth0
+pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
+pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
+```
+
+**Configuration example**:
+
+```console
+auto eth0
+iface eth0 inet6 static
+mtu 1500
+address 2607:5300:201:abcd::7c5
+netmask 128
 post-up /sbin/ip -6 route add 2607:5300:201:abcd::1 dev eth0
 post-up /sbin/ip -6 route add default via 2607:5300:201:abcd::1 dev eth0
 pre-down /sbin/ip -6 route del default via 2607:5300:201:abcd::1 dev eth0
 pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 ```
-
-
-**Configuration example**:
-
 
 Then restart your network service with one of the following commands:
 
@@ -183,7 +193,7 @@ You will then be able to revert the changes, using the commands below:
 
 ##### Configuration using Netplan <a name="netplan"></a>
 
-The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called ~ `50-cloud-init.yaml`.
+The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called `50-cloud-init.yaml`.
 
 The best approach is to create a separate configuration file for setting up IPv6 addresses in the `/etc/netplan/` directory. This way, you can easily revert the changes in case of an error.
 
@@ -193,7 +203,7 @@ In our example, our file is named `51-cloud-init-ipv6.yaml`:
 ~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
-Then edit the `51-cloud-init-ipv6.yaml` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
+Then edit the `51-cloud-init-ipv6.yaml` file, adding the following lines for the IPv6 configuration. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
 
 ```yaml
 network:
@@ -244,29 +254,37 @@ If it is correct, apply it using the following command:
 ~# sudo netplan apply
 ```
 
-#### Persistent application on Red Hat and its derivatives (CentOS, ClearOS, etc.) <a name="persistentredhat"></a>
+#### Persistent application on Red Hat and its derivatives (CentOS, Rocky & Alma Linux, etc.) <a name="persistentredhat"></a>
 
-The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file. For example, copy the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary. 
+The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file. In our example, our file is called `ifcfg-eth0`, so we copy the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary. 
 
 ```bash
-cd /etc/sysconfig/network-scripts/
-mkdir backup
-cp ifcfg-eth0 backup/ifcfg-eth0
+~# cd /etc/sysconfig/network-scripts/
+~# mkdir backup
+~# cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
 You will then be able to revert the changes, using the commands below:
 
 ```bash
-rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
-cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+~# rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
+~# cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Then edit the `ifcfg-eth0` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+Then we edit the `ifcfg-eth0` file, adding only the lines for the IPv6 configuration of the server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values.
 
 ```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
+```
+
+**Configuration example**:
+
+```console
+IPV6INIT=yes
+IPV6ADDR=2607:5300:201:abcd::7c5/128
+IPV6_DEFAULTGW=2607:5300:201:abcd::1
 ```
 
 **On CentOS 7, you have to create a routing file in addition to the steps above:**
@@ -284,17 +302,7 @@ IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
 
-**Configuration example**:
-
-```console
-IPV6INIT=yes
-IPV6ADDR=2607:5300:201:abcd::7c5/128
-IPV6_DEFAULTGW=2607:5300:201:abcd::1
-```
-
-```bash
-~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
-```
+**Example:**
 
 ```console
 2607:5300:201:abcd::1 dev eth0
@@ -309,6 +317,40 @@ Finally, restart your network service to allow the system to apply the new confi
 
 ```bash
 ~# sudo systemctl restart networking
+```
+
+#### Persistent application on Fedora 37 and later <a name="persistentfedora"></a>
+
+The network configuration file is located in the `/etc/NetworkManager/system-connections/`. We recommend that you start by backing up the relevant configuration file. In our example, our file  is called `cloud-init-eth0.nmconnection`, so we copy the `cloud-init-eth0.nmconnection` file using the following commands. Remember to replace **eth0** with your actual interface if necessary. 
+
+```bash
+~# cd /etc/NetworkManager/system-connections/
+~# sudo mkdir backup
+~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
+```
+
+Then we edit the `cloud-init-eth0.nmconnection` file, adding only the lines for the IPv6 configuration of the server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values.
+
+If we assume that your interface is eth0, the configuration should look like this:
+
+```bash
+[ipv6]
+method=auto
+may-fail=true
+address1=YOUR_IPV6/IPV6_PREFIX
+route1=::/0,IPV6_GATEWAY
+```
+
+We have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+
+Here is a concrete example:
+
+```bash
+[ipv6]
+method=auto
+may-fail=true
+address1=2607:5300:201:abcd::7c5/128
+route1=::/0,2607:5300:201:abcd::1
 ```
 
 #### Persistent application on Windows Server <a name="persistentwindows"></a>
@@ -340,7 +382,7 @@ To verify that the configuration is functional, there are several possible comma
 ```bash
 ip -6 addr show eth0
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qlen 1000
-    inet6 2001:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz/128 scope global
+    inet6 2607:5300:201:abcd::7c5/128 scope global
        valid_lft forever preferred_lft forever
     inet6 fe80::f816:3eff:fec0:c336/64 scope link
        valid_lft forever preferred_lft forever
@@ -350,7 +392,7 @@ ip -6 addr show eth0
 ifconfig eth0
 eth0      Link encap:Ethernet  HWaddr ab:cd:ef:gf:ij:kl
           inet addr:aa.bb.cc.dd  Bcast:aa.bb.cc.ee  Mask:255.255.255.255
-          inet6 addr: 2001:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz/128 Scope:Global
+          inet6 addr: 2607:5300:201:abcd::7c5/128 Scope:Global
           inet6 addr: fe80::f816:3eff:fec0:c336/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
           [...]
@@ -372,11 +414,11 @@ Windows IP Configuration
 Ethernet adapter Ethernet:
 
    Connection-specific DNS Suffix  . : openstacklocal
-   IPv6 Address. . . . . . . . . . . : 2001:xxxx:xxxx:xxxx::zzzz
+   IPv6 Address. . . . . . . . . . . : 2607:5300:201:abcd::7c5/128
    Link-local IPv6 Address . . . . . : fe80::d928:7a00:5ba6:951b%3
    IPv4 Address. . . . . . . . . . . : 51.xxx.xxx.xxx
    Subnet Mask . . . . . . . . . . . : 255.255.255.255
-   Default Gateway . . . . . . . . . : 2001:xxxx:xxxx:xxxx::y
+   Default Gateway . . . . . . . . . : 2607:5300:201:abcd::1
                                        51.xxx.xxx.y
 ```
 
@@ -423,6 +465,7 @@ echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-c
 >
 
 In order to return to automatic management of your network by Cloud-init, delete the newly created file or move it to another directory.
+
 
 ## Go further
 
