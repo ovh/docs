@@ -65,11 +65,11 @@ W zakładce `Informacje ogólne`{.action} możesz sprawdzić, czy spełnione są
 
 Kliknij link `Tag transferu wychodzącego`{.action} w sekcji zatytułowanej **Bezpieczeństwo**.
 
-![transfer wychodzący](images/img_4267.jpg){.thumbnail}
+![transfer wychodzący](images/outgoing-transfer-tag.jpg){.thumbnail}
 
 W oknie, które się wyświetli wprowadź TAG nowego operatora, po czym kliknij `Zatwierdź`{.action}.
 
-![transfer wychodzący](images/img_4268.jpg){.thumbnail}
+![transfer wychodzący](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Jeśli nie możesz zmienić wpisu TAG Twojej domeny w Panelu klienta, możesz zlecić jego zmianę w rejestrze Nominet. Więcej informacji znajduje się na oficjalnej [stronie internetowej Nominet](https://www.nominet.uk/domain-support/).
 
