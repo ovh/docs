@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Frequently Asked Questions on Public Cloud Network Services
-updated: 2023-12-12
+updated: 2024-01-30
 ---
 
 ## Objective
@@ -85,7 +85,6 @@ You can create a private network in a selected region and attach Gateway to it. 
 ### Is the Gateway outbound public IP protected against DDoS attacks?
 
 Yes, the [OHVcloud Anti-DDoS infrastructure](https://www.ovhcloud.com/en-gb/security/anti-ddos/) is activated on all those IPs. You can view that information in the `Bare Metal Cloud > Network > IP` section of the Control Panel. 
-
 
 ### I created an instance in private mode (it only has private ports). How can I connect to it?
 
