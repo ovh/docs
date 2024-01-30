@@ -34,7 +34,7 @@ Il tool Zonemaster permette di verificare una configurazione DNS installata su u
 
 Per verificare l'attuale configurazione di un dominio, inserisci il tuo dominio e clicca su `Run`{.action}
 
-![Screenshot dal modulo di Zonemaster. Il dominio "mydomain.ovh" è stato inserito ed è pronto per essere testato.](images/zonemaster01.png){.thumbnail}
+![Screenshot dal modulo di Zonemaster. Il dominio "mydomain.ovh" è stato inserito ed è pronto per essere testato.](images/run-domain-test.png){.thumbnail}
 
 Per verificare una configurazione DNS preparata ma non ancora applicata al dominio interessato, seleziona la casella `Options`{.action} e inserisci le seguenti informazioni:
 
@@ -47,13 +47,13 @@ Per verificare una configurazione DNS preparata ma non ancora applicata al domin
 >
 > Prima di modificare i server DNS, puoi effettuare una ricerca avanzata utilizzando la casella `Options`{.action} inserendo "mydns.test.ovh" e "mydns2.test.ovh" nelle caselle `Nameservers`.<br>
 > Zonemaster eseguirà un test come se utilizzaste i server "mydns.test.ovh" e "mydns2.test.ovh" su "mydomain.ovh".<br>
-> ![Screenshot delle opzioni avanzate del modulo di Zonemaster. I due server con i nomi "myns.test.ovh" e "myDNS2.test.ovh" sono stati inseriti nella sezione "Server con i nomi" del form.](images/zonemaster02.png){.thumbnail}
+> ![Screenshot delle opzioni avanzate del modulo di Zonemaster. I due server con i nomi "myns.test.ovh" e "myDNS2.test.ovh" sono stati inseriti nella sezione "Server con i nomi" del form.](images/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Quando inserisci un dominio e clicca sui pulsanti `Fetch NS from parent zone`{.action} principale e `Fetch DS from parent zone`{.action} principale, se configurato, i server DNS associati al dominio appariranno insieme alle informazioni del record DS (DNSSEC).
 >
-> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "mydomain.ovh". Se desarrolla la sección "Address".](images/zonemaster03.png){.thumbnail}
+> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "mydomain.ovh". Se desarrolla la sección "Address".](images/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### I Risultati
 
@@ -66,7 +66,7 @@ Una volta convalidato il modulo, i risultati sono classificati per codice colore
 
 Per ciascun test è possibile ottenere maggiori dettagli, ad esempio per comprendere l'errore nel caso di un malfunzionamento, o semplicemente a titolo indicativo.
 
-![Screenshot della pagina dei risultati di Zonemaster per il dominio "mydomain.ovh". La sezione "Address" viene espansa.](images/zonemaster04.png){.thumbnail}
+![Screenshot della pagina dei risultati di Zonemaster per il dominio "mydomain.ovh". La sezione "Address" viene espansa.](images/domain-analysis.png){.thumbnail}
 
 ### Informazioni utili
 
