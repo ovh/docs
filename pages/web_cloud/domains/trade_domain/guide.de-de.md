@@ -55,7 +55,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den **Kontakten** und danach auf `Inhaber ändern`{.action}.
 
-![Änderung des Inhabers](images/3652-2.png){.thumbnail}
+![Änderung des Inhabers](images/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -66,7 +66,7 @@ Klicken Sie im Tab `Allgemeine Informationen`{.action} im Rahmen **Abo** auf die
 
 Es öffnet sich ein neuer Browser-Tab mit allen in Frage kommenden Domains. Wählen Sie einen Domainnamen in der Liste aus, indem Sie das Feld links davon ankreuzen. Dieser Schritt kann auch verwendet werden, um eine Gruppenoperation zu starten: Es ist möglich, einen Inhaberwechsel für mehrere Domainnamen gleichzeitig durchzuführen, zum Beispiel um den Inhaber aller *.ovh*-Domainnamen zu ändern. Klicken Sie nach der Auswahl auf `Weiter`{.action}.
 
-![Änderung des Inhabers](images/3657.PNG){.thumbnail}
+![Änderung des Inhabers](images/available-domains.png){.thumbnail}
 
 Achten Sie im Formular für die Angaben des Inhabers darauf, dass alle Pflichtfelder gültige Informationen enthalten. Achten Sie auf Eingabefehler und vermeiden Sie möglichst Zeichen außerhalb des *[ASCII printable](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm)*-Bereichs. Bitte beachten Sie auch, dass falsche oder ungenaue Angaben zu einem technischen Fehler und damit zu einer Verzögerung des gesamten Prozesses führen können.
 
@@ -95,7 +95,7 @@ Wenn Sie nur bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. ak
 
 Klicken Sie dazu im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den **Kontakten** und danach auf `Angaben des Inhabers aktualisieren`{.action}.
 
-![Änderung des Inhabers](images/3658.png){.thumbnail}
+![Änderung des Inhabers](images/refresh-owner-information.png){.thumbnail}
 
 Für diese Aktion müssen die Änderungen nicht per E-Mail bestätigt werden.
 

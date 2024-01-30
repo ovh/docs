@@ -56,7 +56,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 W karcie `Informacje ogólne`{.action} przejdź do sekcji **Abonament** w prawym dolnym rogu. Kliknij `...`{.action} przed **kontaktami**, po czym kliknij `Zmień właściciela`{.action}.
 
-![zmiana właściciela](images/3652-2.png){.thumbnail}
+![zmiana właściciela](images/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -67,7 +67,7 @@ W karcie `Informacje ogólne`{.action} przejdź do sekcji **Abonament** w prawym
 
 Otworzy się nowa zakładka przeglądarki z wszystkimi domenami uprawnionymi do zmiany właściciela. Wybierz z listy nazwę domeny, zaznaczając kratkę po lewej stronie. Etap ten może być również wykorzystany do rozpoczęcia operacji zbiorczej: można zainicjować zmianę właściciela dla kilku domen jednocześnie, na przykład w celu zmiany właściciela dla wszystkich domen *.ovh*. Po dokonaniu wyboru kliknij `Dalej`{.action}.
 
-![zmiana właściciela](images/3657.PNG){.thumbnail}
+![zmiana właściciela](images/available-domains.png){.thumbnail}
 
 W formularzu szczegółów właściciela wprowadź poprawne informacje we wszystkich obowiązkowych polach. Uważaj na błędy podczas wprowadzania danych i unikaj używania [znaków ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm), jeśli to możliwe. Należy pamiętać, że wszelkie niedokładne lub błędne informacje mogą powodować błąd techniczny, a tym samym opóźnienie w całym procesie wymiany informacji.
 
@@ -95,7 +95,7 @@ Jeśli musisz zaktualizować niektóre informacje uboczne, takie jak numer telef
 
 W sekcji **Abonament** w zakładce `Informacje ogólne`{.action} kliknij `...`{.action} przed **kontaktami**, a następnie kliknij `Aktualizuj dane właściciela`{.action}.
 
-![zmiana właściciela](images/3658.png){.thumbnail}
+![zmiana właściciela](images/refresh-owner-information.png){.thumbnail}
 
 W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 

@@ -94,7 +94,7 @@ You can also complete your order with a [web hosting plan](https://www.ovhcloud.
 
 - In some cases, the transfer process may require additional information about the domain name owner. To add this information, click `Manage Contacts/Owner`{.action}.
 
-![domain](images/Order_summary.png){.thumbnail}
+![domain](images/order-summary.png){.thumbnail}
 
 Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To track the progress, click `Domain`{.action} names , then`Ongoing`{.action} operations.
 
