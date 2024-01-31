@@ -126,7 +126,7 @@ GET   /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
 ```   
 ###### 2/ Create your subscription
 
-As per below example, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you aim your Kubernetes cluster Audit logs will be forwarded.
+As per below example, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you aim your Kubernetes cluster Audit logs will be forwarded. You also need to specifiy the 'kind' of log you want to forward, note that currenlty the only supported value for Managed Kubernetes Service is 'audit' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/capabilities/kube/log/kind) call) :
 ```shell
 POST /cloud/project/{serviceName}/kube/{kubeId}/log/subscription
 {
