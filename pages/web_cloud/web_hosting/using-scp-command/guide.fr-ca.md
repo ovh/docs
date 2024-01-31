@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - Copier des fichiers avec la commande SCP"
 excerpt: "Découvrez comment utiliser la commande Secure Copy Protocol (SCP) en SSH pour copier des fichiers depuis ou vers votre hébergement web"
-updated: 2024-01-19
+updated: 2024-01-30
 ---
 
 ## Objectif
@@ -54,7 +54,7 @@ Validez la commande à l'aide de la touche `enter`(↲) de votre clavier, puis e
 ls
 ```
 
-Validez cette seconde commande à l'aide de la touche `enter` (↲) de votre clavier.
+Validez cette seconde commande à l'aide de la touche `enter`(↲) de votre clavier.
 
 Dans votre terminal, un résultat similaire à notre exemple ci-dessous apparaît :
 
@@ -83,9 +83,7 @@ C'est à ce niveau que se trouvent notamment, par défaut, le dossier `www` et l
 >
 > Toutes les commandes ci-dessous s'effectuent depuis le terminal de votre appareil/ordinateur **en local**. Vous ne devez donc pas être connecté en SSH dans votre terminal sur votre hébergement web.
 >
-> Si vous désirez copier du contenu vers votre hébergement web, positionnez votre utilisateur **local** suffisamment en amont des fichiers/dossiers que vous souhaitez copier vers votre hébergement web.
->
-> Si vous désirez récupérer une copie des fichiers/dossiers présents sur votre hébergement web en local sur votre appareil/ordinateur, positionnez votre utilisateur **local** suffisamment en amont du dossier qui va récupérer la copie de vos données hébergées.
+> Le chemin d'accès au fichier utilisé avec la commande `scp` est relatif au répertoire local courant. Pour transférer des données vers votre hébergement web ou de l'hébergement web vers votre appareil local, assurez-vous d'exécuter vos commandes à partir du répertoire parent local, comme indiqué dans les exemples ci-dessous.
 >
 
 N'oubliez pas de remplacer tous les paramètres généraux suivants par vos propres paramètres :
