@@ -94,6 +94,9 @@ Verwenden Sie in diesem Fall den folgenden Befehl und versuchen Sie dann, die Pa
 
 ```bash
 ntfsfix /dev/sda4
+```
+
+```bash
 mount /dev/sda4 /mnt
 ```
 
