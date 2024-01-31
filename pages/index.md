@@ -126,6 +126,7 @@
             + [Changing a Windows Server product key](bare_metal_cloud/dedicated_servers/windows_key)
             + [Changing the admin password on a Windows dedicated server](bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
             + [OVHcloud AntiSpam - Best Practices and Unblocking an IP](bare_metal_cloud/dedicated_servers/antispam_best_practices)
+            + [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
             + [How to use the Bring Your Own Image feature](bare_metal_cloud/dedicated_servers/bring-your-own-image)
             + [Bring Your Own Linux](bare_metal_cloud/dedicated_servers/bring-your-own-linux)
             + [Configuring OVHcloud Secondary DNS on a dedicated server](bare_metal_cloud/dedicated_servers/adding-secondary-dns-on-dedicated-server)
