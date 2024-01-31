@@ -149,6 +149,11 @@ aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
 
 **Deleting objects and buckets**
 
+> [!primary]
+>
+> A bucket can only be deleted if it is empty!
+>
+
 ```bash
 # Delete an object
 aws s3 rm s3://<bucket_name>/test1
@@ -160,6 +165,33 @@ aws s3 rb s3://<bucket_name>
 # This command deletes all objects from the bucket, then deletes the bucket.
 aws s3 rb s3://<bucket_name> --force
 ```
+
+
+
+**Deleting objects and buckets with versioning enabled**
+
+If versioning is enabled, a simple delete operation on your objects will not permanently remove them.
+
+In order to permanently delete an object, you must specify a version id.
+```bash
+aws s3api delete-object --bucket <NAME> --key <KEY> --version-id <VERSION_ID>
+```
+To list all objects and all version ids, you can use the following command:
+```bash
+aws s3api list-object-versions --bucket <NAME>
+```
+
+With  the previous delete-object command, you will have to iterate over all your object versions. Alternatively, you can use the following one-liner to empty your bucket:
+```bash
+aws s3api delete-objects --bucket <NAME> --delete "$(aws s3api list-object-versions --bucket <NAME> --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
+```
+
+> [!primary]
+>
+> If your bucket has Object Lock enabled, you will not be able to permanently delete your objects. See our [documentation](pages/storage_and_backup/object_storage/s3_managing_object_lock) to learn more about Object Lock.
+> If you use object lock in GOVERNANCE mode and have the permission to bypass GOVERNANCE mode, you will have to add the `--bypass-governance-retention` option to your delete commands.
+> 
+
 
 **Setting tags on a bucket**
 
