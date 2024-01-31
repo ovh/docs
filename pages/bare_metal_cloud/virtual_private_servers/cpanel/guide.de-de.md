@@ -1,7 +1,7 @@
 ---
 title: "cPanel auf einem VPS installieren"
 excerpt: "Erfahren Sie hier, wie Sie einen VPS mit cPanel-Template einrichten"
-updated: 2024-01-12
+updated: 2024-01-31
 ---
 
 > [!primary]
@@ -24,10 +24,17 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
+
+Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann ein [Betriebssystem, das mit cPanel kompatibel ist](https://www.ovhcloud.com/de/vps/os/).
+
+> [!warning]
+>
+> Wenn Sie einen VPS reinstallieren, werden alle Daten darauf überschrieben.
+>
 
 Um Ihren cPanel Server zu installieren, bestellen Sie einen VPS mit cPanel Distribution.
 
@@ -40,13 +47,6 @@ Wenn Ihr VPS bereit ist, erhalten Sie eine E-Mail mit den Zugangsdaten, um sich 
  |    Application: cpanel
  |    You can connect to cPanel from https://<hostname>:2087/<session_parameters>
 ```
-
-Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann ein [Betriebssystem, das mit cPanel kompatibel ist](https://www.ovhcloud.com/de/vps/os/).
-
-> [!warning]
->
-> Wenn Sie einen VPS reinstallieren, werden alle Daten darauf überschrieben.
->
 
 ### Erste Verbindung
 

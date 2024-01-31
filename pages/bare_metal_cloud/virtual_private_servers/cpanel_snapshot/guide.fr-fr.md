@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarde automatique - Kernel panic (cPanel)'
 excerpt: 'Découvrez comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud'
-updated: 2023-06-05
+updated: 2024-01-31
 ---
 
 ## Objectif
@@ -18,7 +18,7 @@ Lors de la création d'une sauvegarde de votre VPS (dans le cas d'une souscripti
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) (VPS Value, Essential, Comfort ou Elite) sur votre compte OVHcloud
+- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) avec une distribution [compatible](https://www.ovhcloud.com/fr/vps/os/)
 - cPanel doit être installé sur votre serveur
 
 ## En pratique

@@ -1,7 +1,7 @@
 ---
 title: 'Automated Backup - Kernel panic (cPanel)'
 excerpt: 'Find out how to fix issues with cPanel servers getting stuck during OVHcloud automated backup'
-updated: 2023-06-06
+updated: 2024-01-31
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ However, if Jailed Shell access is enabled, cPanel creates a *virtfs* which cann
 
 ## Requirements
 
-- A current [VPS solution](https://www.ovhcloud.com/en-sg/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
+- A [VPS](https://www.ovhcloud.com/en-sg/vps) solution with a [compatible distribution](https://www.ovhcloud.com/en-sg/vps/os/)
 - cPanel installed on your server
 
 ## Instructions
