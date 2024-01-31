@@ -20,7 +20,7 @@ Grâce à une interface graphique permettant l'automatisation des paramètres, l
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr-ca/vps/){.external} avec une distribution [compatible](https://www.ovhcloud.com/fr/vps/os/).
+- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr-ca/vps/){.external} avec une distribution [compatible](https://www.ovhcloud.com/fr-ca/vps/os/).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
