@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Introdução ao Object Storage (EN)
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2023-04-28
+updated: 2024-01-31
 ---
 
 ## Objective
@@ -39,7 +39,15 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 
 #### Configuration
 
-Configure the aws client as follows:
+You can either use the interactive configuration to generate the configuration files or manually create them.
+
+> [!primary]
+>
+> To use the interactive configuration, run the following command:
+> `aws --configure`
+>
+
+The configuration file format in the aws client is as follows:
 
 ```bash
 user@host:~$ cat ~/.aws/credentials
@@ -62,12 +70,6 @@ s3 =
 s3api =
   endpoint_url = <url_endpoint>
 ```
-
-> [!primary]
->
-> You can also use interactive configuration by running the following command:
-> `aws --configure`
->
 
 Here are the configuration values that you can specifically set:
 
@@ -122,7 +124,7 @@ aws s3 cp /datas/test1 s3://<bucket_name>/other-filename
 **Downloading an object from a bucket**
 
 ```bash
-aws s3 cp s3://<bucket_name>/test1.
+aws s3 cp s3://<bucket_name>/test1 .
 ```
 
 **Uploading an object from one bucket to another bucket**
