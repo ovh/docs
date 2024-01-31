@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarde automatique - Kernel panic (cPanel)'
 excerpt: 'Découvrez comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud'
-updated: 2023-01-31
+updated: 2024-01-31
 ---
 
 ## Objectif
