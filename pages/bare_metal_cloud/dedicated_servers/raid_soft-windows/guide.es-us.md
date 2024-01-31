@@ -37,7 +37,7 @@ El método depende del tipo de partición de los discos. Siga las instrucciones 
 
 En el pedido, abra DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -164,7 +164,7 @@ Es preferible no reiniciar el servidor hasta que el proceso de reconstrucción n
 
 En el pedido, abra DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 

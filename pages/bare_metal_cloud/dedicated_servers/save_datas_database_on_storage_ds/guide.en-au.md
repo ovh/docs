@@ -73,7 +73,9 @@ To ensure that we organise our backups clearly, we will create target directorie
 
 ```sh
 df -h
+```
 
+```console
 Filesystem      Size    Used Avail Use% Mounted on
 udev            7.8G       0  7.8G   0% /dev
 tmpfs           1.6G     51M  1.6G   4% /run
@@ -127,6 +129,9 @@ Now that you have configured your SSH service, you can go to your production ser
 ```sh
 scp your_dump_file user@IP_Storage:/home/backups/server1/dump
 
+```
+
+```console
 The authenticity of host 'IP_Storage (IP_Storage)' can't be established.
 ECDSA key fingerprint is SHA256:fmmeu5feHlnaUC56+2DB73sgNd4aMPVkS7oEtcyO2o8.
 Are you sure you want to continue connecting (yes/no)? yes

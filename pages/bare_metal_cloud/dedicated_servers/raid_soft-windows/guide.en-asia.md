@@ -33,7 +33,7 @@ The method to use depends on the partition style of your disks. Follow the instr
 
 At the command prompt, open DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -160,7 +160,7 @@ It is best not to restart the server until the rebuild process is complete.
 
 At the command prompt, open DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 

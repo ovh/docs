@@ -59,6 +59,8 @@ After your server has been installed, check the partition sizes by logging on to
 df -h
 ```
 
+```console```
+
 ### Using rescue mode
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 

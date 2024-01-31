@@ -63,6 +63,8 @@ Po skonfigurowaniu Twojego serwera sprawdź rozmiar partycji, łącząc się z n
 df -h
 ```
 
+```console```
+
 ### Korzystanie z trybu Rescue
 
 W [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz Twój serwer, przechodząc do części `Bare Metal Cloud`{.action}, następnie wybierz `Serwery dedykowane`{.action}.

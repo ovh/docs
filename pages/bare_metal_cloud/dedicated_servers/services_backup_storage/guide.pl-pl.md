@@ -157,7 +157,7 @@ Zostanie utworzone zamówienie. Po zaksięgowaniu płatności otrzymasz powiadom
 Aby zapisać jeden plik, możesz użyć następującej komendy:
 
 ```sh
-# ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
+ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 ```
 
 **Komenda ta nie wspiera protokołu FTPS. Jeśli chcesz wykonać bezpieczny transfer, skorzystaj z klienta lftp lub cURL.**
@@ -173,7 +173,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 Aby zapisać katalog, wystarczy go zarchiwizować i przesłać do katalogu kopii zapasowych:
 
 ```sh
-# tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
+tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
 ```
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
@@ -187,7 +187,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 Aby pobrać plik archiwalny z Backup Storage, możesz użyć następującej komendy:
 
 ```sh
-# ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
+ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 ```
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
@@ -208,7 +208,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 Aby zapisać jeden plik, możesz użyć następującej komendy:
 
 ```sh
-# curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
+curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 ```
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
@@ -222,7 +222,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 Aby zapisać katalog, wystarczy go zarchiwizować i przesłać do katalogu kopii zapasowych:
 
 ```sh
-# tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
+tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
 ```
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
@@ -237,8 +237,8 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 Aby pobrać plik archiwalny z Backup Storage, możesz użyć następującej komendy:
 
 ```sh
-# cd /LocalFolder
-# curl -u FtpUsername:FtpPassword ftp://HostName/File 
+cd /LocalFolder
+curl -u FtpUsername:FtpPassword ftp://HostName/File 
 ```
 
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
@@ -249,7 +249,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 * **LocalFolder**\: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
 * **File**\: ścieżka dostępu pliku do pobrania
 
-##### lftp (na Linux)
+####lftp (na Linux)
 
 > [!primary]
 >
@@ -355,7 +355,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 * **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
 * **File**: ścieżka dostępu pliku do pobrania. 
 
-##### lftp (Linux)
+####lftp (Linux)
 
 > [!primary]
 >

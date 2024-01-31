@@ -37,7 +37,7 @@ Welche Methode zu verwenden ist, hängt vom Partitionstyp Ihrer Disks ab. Befolg
 
 Öffnen Sie an der Eingabeaufforderung DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -164,7 +164,7 @@ Es ist empfehlenswert, den Server erst nach Abschluss der Wiederherstellung neu 
 
 Öffnen Sie an der Eingabeaufforderung DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 

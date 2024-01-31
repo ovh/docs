@@ -63,6 +63,8 @@ Klicken Sie schließlich auf `Bestätigen`{.action}.
 df -h
 ```
 
+```console```
+
 ### Rescue-Modus verwenden
 
 Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.

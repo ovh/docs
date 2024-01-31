@@ -248,7 +248,7 @@ En el comando anterior, sustituya las siguientes variables por el valor correspo
 * **LocalFolder**: Nombre del directorio local en el que quiere guardar el archivo
 * **File**: Ruta de acceso del archivo que quiere descargar
 
-##### LFTP (para Linux)
+####lftp (para Linux)
 
 > [!primary]
 >
