@@ -109,7 +109,7 @@ To configure your email accounts, go to the `Email accounts`{.action} tab. The t
 
 To configure them, click the `...`{.action} icon then `Edit`{.action}.
 
-![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
+![emailpro](images/emailpro-05.png){.thumbnail}
 
 Enter the information requested.
 
@@ -127,8 +127,6 @@ Once the information is complete, click on the `Next`{.action} button, check the
 >
 > Repeat this step as necessary according to the number of accounts you have. You can order additional accounts using the `Order accounts`{.action} button.
 >
-
-![emailpro](images/emailpro-06.png){.thumbnail}
 
 ### Step 5: Use your email addresses
 

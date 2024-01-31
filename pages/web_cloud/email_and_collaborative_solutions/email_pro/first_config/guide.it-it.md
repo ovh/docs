@@ -130,8 +130,6 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 > Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione. Per ordinare account aggiuntivi, clicca sul pulsante `Ordina account`{.action}.
 >
 
-![emailpro](images/emailpro-06.png){.thumbnail}
-
 ### Step 5: utilizza gli indirizzi email
 
 Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo <https://www.ovhcloud.com/it/mail/> usando le credenziali associate al tuo indirizzo di posta elettronica.
