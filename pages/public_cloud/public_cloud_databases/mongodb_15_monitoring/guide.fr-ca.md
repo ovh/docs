@@ -31,7 +31,7 @@ For each Public Cloud Database service, in the `Metrics`{.action} tab, you can f
 - Disk space used
 - Number of read IOPS
 - Number of write IOPS
-- Memory used
+- Memory used (only available for **Production** and **Advanced** service plans)
 - Network reception (Mbps)
 - Network transmission (Mbps)
 
