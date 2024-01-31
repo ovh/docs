@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2023-04-28
+updated: 2024-01-31
 ---
 
 ## Objectif
@@ -39,7 +39,15 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 
 #### Configuration
 
-Configurez le client aws comme suit :
+Vous pouvez utiliser la configuration interactive pour générer les fichiers de configuration ou les créer manuellement.
+
+> [!primary]
+>
+> Pour utiliser la configuration interactive en exécutant la commande suivante :
+> `aws --configure`
+>
+
+Le format du fichier de configuration dans le client aws est le suivant :
 
 ```bash
 user@host:~$ cat ~/.aws/credentials
@@ -62,12 +70,6 @@ s3 =
 s3api =
   endpoint_url = <url_endpoint>
 ```
-
-> [!primary]
->
-> Vous pouvez aussi utiliser la configuration interactive en exécutant la commande suivante :
-> `aws --configure`
->
 
 Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 

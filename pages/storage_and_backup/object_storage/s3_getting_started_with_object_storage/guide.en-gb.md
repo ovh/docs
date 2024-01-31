@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started with Object Storage
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2023-04-28
+updated: 2024-01-31
 ---
 
 ## Objective
@@ -39,7 +39,7 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 
 #### Configuration
 
-In this case, you can either use the interactive configuration to generate the configuration files or manually create them.
+You can either use the interactive configuration to generate the configuration files or manually create them.
 
 > [!primary]
 >
