@@ -82,7 +82,7 @@ Tout dépend de l’usage :
 
 Vous pouvez créer un réseau privé dans une région sélectionnée et y attacher la Gateway. Puis, lors de la création d’une instance, sélectionnez « Attacher au réseau privé » et validez à l’aide du bouton « Oui, je veux que mon instance soit totalement privée ».
 
-### L’IP publique de sortie de la Gateway est-elle protégée contre les attaques DDoS ?
+### L’IP publique de la Gateway est-elle protégée contre les attaques DDoS ?
 
 Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr/security/anti-ddos/) est activée sur toutes ces adresses IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
 
