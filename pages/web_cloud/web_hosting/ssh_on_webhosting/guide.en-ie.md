@@ -1,7 +1,7 @@
 ---
-title: 'Accessing a web hosting plan via SSH'
-excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting plan'
-updated: 2022-01-19
+title: "Accessing a web hosting plan via SSH"
+excerpt: "Find out how to connect and use SSH access on an OVHcloud web hosting plan"
+updated: 2024-01-30
 ---
 
 ## Objective
@@ -101,13 +101,23 @@ You can also run a command to launch a script using a specific PHP version. E.g.
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation.
+Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation "[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+
+> [!primary]
+>
+> Files and folders can also be copied using the **S**ecure **C**opy **P**protocol (**SCP**).
+> This protocol uses the SSH protocol to duplicate content securely between:
+>
+> - A local computer/device and a remote server.
+> - A remote server and a local computer/device.
+> - Two remote servers.
+>
+> Find more information on using the `scp` command with our OVHcloud web hosting plans in our guide "[Web Hosting - Copying files with the SCP command](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 

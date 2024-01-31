@@ -1,7 +1,7 @@
 ---
-title: 'Utilizar SSH en un web hosting'
-excerpt: 'Cómo conectarse y utilizar el acceso SSH en un alojamiento web de OVHcloud'
-updated: 2022-01-19
+title: "Utilizar SSH en un web hosting"
+excerpt: "Descubra cómo conectarse y utilizar el acceso SSH en un alojamiento web de OVHcloud"
+updated: 2024-01-30
 ---
 
 > [!primary]
@@ -105,13 +105,23 @@ A través del comando, también podrá lanzar un script utilizando una versión 
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Según la versión de PHP que utilice, es posible que tenga que modificar el entorno de ejecución por motivos de compatibilidad. Para más información, consulte nuestra documentación >
+Según la versión de PHP que utilice, es posible que tenga que modificar el entorno de ejecución por motivos de compatibilidad. Para más información, consulte nuestra documentación "[Web hosting : entorno, versión PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+
+> [!primary]
+>
+> También es posible copiar archivos y/o carpetas utilizando **S**ecure **C**opy **P**rotocol (**SCP**).
+> Este protocolo utiliza el protocolo SSH para duplicar contenido de forma segura entre:
+> 
+> - un equipo/dispositivo local a un servidor remoto
+> - un servidor remoto y un equipo/dispositivo local
+> - dos servidores remotos
+>
+> Para más información sobre el uso del comando `scp` con nuestros planes de hosting de OVHcloud, consulte nuestra guía "[Web hosting - Copiar archivos con el comando SCP](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Más información
 
-[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Web hosting : entorno, versión PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
