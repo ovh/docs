@@ -257,6 +257,11 @@ user_password = <sensitive>
 
 ### Connection test using an instance of the same private network
 
+> [!success]
+>
+> You can also use a Floating IP to reach your private network from a public IP address. For more information, read our guide "[Attaching a Floating IP to a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance)".
+>
+
 **Requirements**: MongoDB CLI, or `mongos`”, installed on the server from which you want to initiate connection.
 
 ```bash
