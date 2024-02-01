@@ -10,6 +10,8 @@ The vRack offered by OVHcloud is a private network solution that allows our cust
 
 **This tutorial shows you how to set up an OVHcloud managed MongoDB service via Terraform within a vRack, as well as how to access it from other parts of your infrastructure.**
 
+However, if you would like to know how to do the same with Terraform, but over a public network, read our guide "[Getting started with Public Cloud Databases via Terraform ](/pages/public_cloud/public_cloud_databases/databases_09_order_terraform)".
+
 ## Requirements
 
 - **OVHcloud requirements**
