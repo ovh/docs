@@ -21,7 +21,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the SQL instance concerned. Click on the `Databases` tab, then on `Add database`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-createdb01.png){.thumbnail}
+![web-cloud-databases](images/add-database.png){.thumbnail}
 
 Fill in the fields by following the criteria listed. You can create a user directly by ticking the **Create User** box.
 
@@ -32,7 +32,7 @@ Fill in the fields by following the criteria listed. You can create a user direc
 
 Finally, click `Confirm`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-createdb02.png){.thumbnail}
+![web-cloud-databases](images/add-database-confirmation.png){.thumbnail}
 
 ### Adding a user
 
@@ -40,7 +40,7 @@ To use an OVHcloud database server, you need to create users with specific right
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the database name concerned. Next, switch to the `Users and rights` tab and click `Add user`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-user01.png){.thumbnail}
+![web-cloud-databases](images/add-user.png){.thumbnail}
 
 Enter a “username” and a “password”, then click `Confirm`{.action}. 
 
@@ -50,7 +50,7 @@ To allow a user to perform actions on a database, it is necessary to assign perm
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the database name concerned. Next, switch to the `Users and rights` tab. Click on the  `...`{.action} button to the right of the user concerned, then on `Manage rights`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-rights01.png){.thumbnail}
+![web-cloud-databases](images/manage-rights.png){.thumbnail}
 
 In the left-hand column, **Database**, you will see a list of the databases on your database server.
 
@@ -65,7 +65,7 @@ The 3 types of permissions proposed are described below:
 > 
 > The distribution of rights mentioned above is unique to OVHcloud. This will allow a user with `Administrator` rights to use **DLL** (Data Definition Language) and **DML** (Data Manipulation Language), while a user with `Reading/Writing` rights will only use **DML**.
 
-![web-cloud-databases](images/web-cloud-databases-rights02.png){.thumbnail}
+![web-cloud-databases](images/changing-user-rights.png){.thumbnail}
 
 #### Deleting a database
 
@@ -81,7 +81,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 To delete a database on your database server, go to the `Databases` tab, then click on the `...`{.action} button to the right of the database concerned, then click `Delete the database`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-deldb01.png){.thumbnail}
+![web-cloud-databases](images/delete-the-database.png){.thumbnail}
 
 ## Go further
 
