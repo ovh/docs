@@ -17,7 +17,7 @@ Die unter [https://api.ovh.com/](https://api.ovh.com/){.external} verfügbare AP
 ## Voraussetzungen
 
 - Sie verfügen über einen aktiven OVHcloud Kunden-Account und kennen dessen Zugangsdaten.
-- Sie sind auf der Webseite der [OVHcloud APIs](https://api.ovh.com/){.external}.
+- Sie sind auf der Webseite der [OVHcloud API](https://api.ovh.com/){.external}.
 
 ## In der praktischen Anwendung
 
@@ -201,16 +201,16 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Schlüssel auflisten und widerrufen
 
-Es gibt derzeit keine Option in der Systemsteuerung, mit der Sie Ihre Schlüssel auflisten und zurückziehen können. Dazu kann das API-Portal verwendet werden:
+Es gibt derzeit keine Option im Kundencenter, mit der Sie Ihre Schlüssel auflisten und widerrufen können. Dazu kann das API-Portal verwendet werden:
 
-- Listen Sie die Schlüssel-IDs mit dem folgenden Aufruf auf:
+- Erhalten Sie die Schlüssel-IDs mit dem folgenden Aufruf:
 
 > [!api]
 >
 > @api {v1} /me GET /me/api/application/
 >
 
-- Erhalten Sie die Schlüsseldetails mit dem folgenden Anruf:
+- Erhalten Sie die Schlüsseldetails mit dem folgenden Aufruf:
 
 > [!api]
 >
