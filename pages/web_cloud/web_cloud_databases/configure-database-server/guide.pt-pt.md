@@ -38,7 +38,7 @@ Esta secção apresenta as informações essenciais da instância SQL. Sugerimos
 |Datacenter|Indica o datacenter onde instância está alojada. Certifique-se de que o datacenter da sua instância é o mesmo do alojamento web OVHcloud em que o seu site se encontra, ou se encontrará, alojado.|
 |Host|Indica o servidor OVHcloud onde a instância foi criada. Esta informação, inerente à infraestrutura da OVHcloud, poderá ser incluída na página sobre o [Estado dos Serviços](https://web-cloud.status-ovhcloud.com/).|
 
-![Informações gerais](images/web-cloud-databases-General-information.png){.thumbnail}
+![Informações gerais](images/general-information.png){.thumbnail}
 
 ### Gerir os seus acessos
 
@@ -52,17 +52,17 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 Clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
 
 Na janela que se abrir, indique em `IP/máscara`{.action} o endereço IP ou a máscara que pretende autorizar e adicione uma descrição se desejar. Decida se quer dar acesso apenas às bases de dados ou ao SFTP. Por fim, clique em `Validar`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 #### Autorizar conexões a um alojamento web OVHcloud 
 
 Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os alojamentos web da OVHcloud a aceder à base de dados`.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
+![Web Cloud Databases](images/tab-empty.png){.thumbnail}
 
 ### Alterar a sua oferta Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
 
@@ -80,7 +80,7 @@ Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os a
 Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 No separador **«Informações gerais»**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção «RAM» e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
-![Web Cloud Databases](images/web-cloud-databases-order-ram01.png){.thumbnail}
+![Web Cloud Databases](images/change-the-amount-of-ram.png){.thumbnail}
 
 Escolha o volume de RAM desejado e clique no botão `Seguinte`{.action}. Poderá então escolher a duração desejada.
 
@@ -106,7 +106,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 No quadro **Configuração geral do MySql**, vai encontrar a configuração definida atualmente para a base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-config02.png){.thumbnail}
+![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
 
 - **Tmpdir**: Diretório de ficheiros temporários. **/dev/shm** corresponde à memória RAM da instância. **/tmp** corresponde ao disco rígido da instância.
 - **MaxAllowedPacket**: Tamanho máximo dos pacotes.
@@ -165,7 +165,7 @@ Não é possível modificar a configuração de uma instância PostgreSQL.
 
 No entanto, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados` e clique no ícone da tabela junto à base de dados, sob a coluna **«Extensões»**.
 
-![Web Cloud Databases](images/web-cloud-databases-config03.png){.thumbnail}
+![Web Cloud Databases](images/extensions.png){.thumbnail}
 
 ### Alterar a versão MySQL, PostgreSQL ou MariaDB do servidor de bases de dados
 
@@ -175,7 +175,7 @@ A versão atual surge na linha **«Versão»**.
 
 Para modificar esta versão, clique em `Alterar a versão`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-config04.png){.thumbnail}
+![Web Cloud Databases](images/postgre-12-update-version.png){.thumbnail}
 
 #### Como saber a versão exata de PostgreSQL que utilizo?
 
@@ -215,7 +215,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gráfico **«Estatísticas do tempo de execução dos pedidos»**.
 
-![Web Cloud Databases](images/web-cloud-databases-metrics01.png){.thumbnail}
+![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
 
 #### Acesso aos logs «Slow Query»
 
@@ -229,7 +229,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 No separador `Informações gerais`, vai encontrar a secção **«SFTP»** no quadro **«Informações de conexão»**.
 
-![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
+![Web Cloud Databases](images/sftp-login.png){.thumbnail}
 
 Para se conectar em **SFTP**, pode recorrer ao programa Filezilla. Se necessário, consulte o guia: [ «Guia de utilização do FileZilla»](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
@@ -241,7 +241,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas de memória RAM utilizada»**.
 
-![Web Cloud Databases](images/web-cloud-databases-metrics02.png){.thumbnail}
+![Web Cloud Databases](images/ram-memory-usage-statistics.png){.thumbnail}
 
 #### Acompanhar o número de conexões por minuto
 
@@ -251,7 +251,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas do total de conexões por minuto»**.
 
-![Web Cloud Databases](images/web-cloud-databases-metrics03.png){.thumbnail}
+![Web Cloud Databases](images/statistics-for-total-connections-per-minute.png){.thumbnail}
 
 ### Otimizar as bases de dados
 
