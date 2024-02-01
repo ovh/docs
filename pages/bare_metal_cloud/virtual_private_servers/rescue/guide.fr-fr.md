@@ -104,21 +104,17 @@ En mode rescue, `sda` est le disque en mode rescue et `sda1` est la partition de
 
 Dans cet exemple, le disque principal du VPS est `sdb` et la partition système est `sdb1` (indiquée par la taille).
 
-Montez cette partition avec les commandes suivantes :
+Montez cette partition avec la commande suivante :
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Vos fichiers sont maintenant accessibles depuis le point de montage `/mnt/sdb1` :
+Vos fichiers sont maintenant accessibles depuis le point de montage `/mnt` :
 
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -134,7 +130,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Cependant, avant de pouvoir manipuler cette partition, vous devez l'ouvrir pour un accès en écriture, ce que vous pouvez faire avec la commande suivante :
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 Vous pouvez maintenant appliquer des modifications à votre système, par exemple [réinitialiser les mots de passe utilisateur et les clés SSH](#gofurther).

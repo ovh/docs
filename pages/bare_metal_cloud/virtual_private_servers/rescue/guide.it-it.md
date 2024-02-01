@@ -108,21 +108,17 @@ In modalità Rescue, `sda` è il disco in modalità Rescue e `sda1` è la partiz
 
 In questo esempio, il disco principale del VPS è `sdb` e la partizione di sistema è `sdb1` (indicata dalla dimensione).
 
-Montare questa partizione con i seguenti comandi:
+Monta questa partizione con questo comando:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-A questo punto i tuoi file sono accessibili dal punto di mount `/mnt/sdb1`:
+A questo punto i tuoi file sono accessibili dal punto di mount `/mnt`:
 
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -138,7 +134,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Tuttavia, prima di poter modificare questa partizione, è necessario aprirla per l'accesso in scrittura, operazione che può essere eseguita con il comando:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 A questo punto è possibile apportare modifiche al sistema, ad esempio [reimpostare le password utente e le chiavi SSH](#gofurther).
@@ -159,6 +155,8 @@ In caso di errore durante il riavvio di un VPS, segui questi step:
 ## Per saperne di più
 
 [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Recupera l'accesso al server in caso di perdita della password utente](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Sostituire una coppia di chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

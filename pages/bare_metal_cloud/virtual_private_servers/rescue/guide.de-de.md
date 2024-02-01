@@ -110,20 +110,16 @@ Im Rescue-Modus ist `sda` die Disk und `sda1` die primäre Partition des Rescue-
 
 In diesem Beispiel ist die primäre Disk des VPS `sdb` und die Systempartition ist `sdb1` (an der Größe ersichtlich).
 
-Mounten Sie diese Partition mit folgenden Befehlen:
+Mounten Sie diese Partition mit dem folgenden Befehl:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Ihre Dateien sind nun über den Mountpunkt `/mnt/sdb1` verfügbar:
+Ihre Dateien sind nun über den Mountpunkt `/mnt` verfügbar:
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -139,7 +135,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Bevor Sie diese Partition bearbeiten können, müssen Sie sie jedoch für Schreibzugriff öffnen. Verwenden Sie hierzu folgenden Befehl:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 Sie können jetzt Änderungen auf Ihr System anwenden, zum Beispiel [Benutzerkennwörter und SSH-Schlüssel zurücksetzen](#gofurther).
@@ -160,6 +156,8 @@ Wenn beim Neustart eines VPS ein Fehler auftritt, folgen Sie diesen Schritten:
 ## Weiterführende Informationen
 
 [Einführung in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Wiederherstellen des Serverzugriffs bei Passwortverlust](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Austauschen eines SSH-Schlüsselpaars](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

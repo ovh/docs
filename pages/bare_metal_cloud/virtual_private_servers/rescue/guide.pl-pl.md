@@ -108,21 +108,17 @@ W trybie rescue `sda` to dysk w trybie rescue i `sda1` to główna partycja zapa
 
 W tym przykładzie głównym dyskiem VPS jest `sdb`, a partycja systemowa to `sdb1` (określana przez rozmiar).
 
-Zamontuj tę partycję za pomocą następujących poleceń:
+Zamontuj tę partycję za pomocą polecenia:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Twoje pliki są teraz dostępne z punktu montowania `/mnt/sdb1`:
+Twoje pliki są teraz dostępne z punktu montowania `/mnt`:
 
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -138,7 +134,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Zanim jednak będziesz mógł obsłużyć tę partycję, musisz ją otworzyć, aby uzyskać dostęp do zapisu. Możesz to zrobić za pomocą polecenia:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 Możesz teraz zastosować zmiany w systemie, na przykład [zresetować hasła użytkownika i klucze SSH](#gofurther).
@@ -159,6 +155,8 @@ Jeśli podczas restartu serwera VPS wystąpi błąd, wykonaj następujące kroki
 ## Sprawdź również
 
 [Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Odzyskaj dostęp do serwera w przypadku utraty hasła użytkownika](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Zastąp parę kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 
