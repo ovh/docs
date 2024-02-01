@@ -4,23 +4,23 @@ excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos co
 updated: 2024-01-31
 ---
 
-## Objective
+## Objectif
 
-This guide is designed to familiarise you with the management of your containers/objects.
+Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets.
 
-## Requirements
+## Prérequis
 
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
+- Un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir créé un [utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management)
 
-## Instructions
+## En pratique
 
-### Using AWS CLI
+### Utilisation de AWS CLI
 
 #### Installation
 
-Enter the following command:
+Entrez la commande suivante :
 
 ```bash
 user@host:~$ pip3 install awscli awscli-plugin-endpoint
@@ -28,26 +28,26 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 
 > [!primary]
 >
-> - awscli-plugin-endpoint is optional
-> - Install the groff package if you want to use command line help.
+> - `awscli-plugin-endpoint` est optionel  
+> - Installez le package `groff` si vous souhaitez utiliser l'aide en ligne de commande.
 >
 
-#### Collect Credentials
+#### Collecter les informations d'identification
 
-- You will need your user's Access key* and *Secret key*. You can access this information in the ‘S3 users’ tab in your Control Panel.
-- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
+- Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs S3` dans votre espace client.
+- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Configuration
 
-You can either use the interactive configuration to generate the configuration files or manually create them.
+Vous pouvez utiliser la configuration interactive pour générer les fichiers de configuration ou les créer manuellement.
 
 > [!primary]
 >
-> To use the interactive configuration, run the following command:
+> Pour utiliser la configuration interactive en exécutant la commande suivante :
 > `aws --configure`
 >
 
-The configuration file format in the aws client is as follows:
+Le format du fichier de configuration dans le client aws est le suivant :
 
 ```bash
 user@host:~$ cat ~/.aws/credentials
@@ -71,136 +71,102 @@ s3api =
   endpoint_url = <url_endpoint>
 ```
 
-Here are the configuration values that you can specifically set:
+Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
-| Variable | Type | Value | Definition |
-|------|:------|:------|:------|
-| max_competitor_requests | Integer | **Default:** 10 | The maximum number of simultaneous requests. |
-| max_queue_size | Integer | **Default:** 1000 | The maximum number of tasks in the task queue. |
-| multipart_threshold | Integer<br>String | **Default:** 8MB | The size threshold that the CLI uses for multipart transfers of individual files. |
-| multipart_chunksize | Integer<br>String | **Default:** 8MB<br>**Minimum for uploads:** 5MB | When using multipart transfers, this is the bit size that the CLI uses for multipart transfers of individual files. |
-| max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be used to load and download data to and from your buckets. |
-| verify_ssl | Boolean | **Default:** true | Enable / Disable SSL certificate verification |
+| Variable  | Type | Valeur | Définition  |
+|:--|:--|:--|:--|
+| max_concurrent_requests | Integer | **Défaut :** 10 | Le nombre maximum de requêtes simultanées. |
+| max_queue_size | Integer | **Défaut :** 1000 | Le nombre maximal de tâches dans la file d'attente des tâches. |
+| multipart_threshold | Integer<br>String | **Défaut :** 8MB | Le seuil de taille que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
+| multipart_chunksize | Integer<br>String | **Défaut :** 8MB<br>**Minimum for uploads:** 5MB | Lors de l'utilisation de transferts multipart, il s'agit de la taille de morceau que l'interface CLI utilise pour les transferts multipart de fichiers individuels. |
+| max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
+| verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
-For a list of endpoints by region and storage class, refer to [this page](/pages/storage_and_backup/object_storage/s3_location).
+Pour connaître la liste des endpoints par région et par classe de stockage, vous pouvez vous référer à [cette page](/pages/storage_and_backup/object_storage/s3_location).
 
-#### Usage
-
-> [!primary]
->
-> If you have not installed `awscli-plugin-endpoint`, you must add `--endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net` to the command line.
->
+#### Utilisation
 
 > [!primary]
 >
-> If you have more than one profile, add `--profile <profile>` to the command line.
+> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net` à la ligne de commande.
 >
 
-**Creating a bucket**
+> [!primary]
+>
+> Si vous avez défini plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande
+>
+
+**Créer un bucket**
 
 ```bash
 aws s3 mb s3://<bucket_name>
 aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
-**Listing your buckets**
+**Lister vos buckets**
 
 ```bash
 aws s3 ls
 ```
 
-**Uploading your files as objects in your bucket**
+**Téléverser vos fichiers en tant qu'objets dans votre bucket**
 
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>
 ```
 
-**By default, objects are named after files, but can be renamed**
+**Par défaut, les objets prennent le nom des fichiers mais ils peuvent être renommés**
 
 ```bash
 aws s3 cp /datas/test1 s3://<bucket_name>/other-filename
 ```
 
-**Downloading an object from a bucket**
+**Télécharger un objet depuis un bucket**
 
 ```bash
 aws s3 cp s3://<bucket_name>/test1 .
 ```
 
-**Uploading an object from one bucket to another bucket**
+**Télécharger un objet d'un bucket vers un autre bucket**
 
 ```bash
-aws s3 cp s3://<bucket_name>/test1 s3://<bucket_name_2
+aws s3 cp s3://<bucket_name>/test1 s3://<bucket_name_2>
 ```
 
-**Downloading or uploading an entire bucket to the host/bucket**
+**Télécharger ou téléverser un bucket entier vers l'hôte/bucket**
 
 ```bash
 aws s3 cp s3://<bucket_name> . --recursive
 aws s3 cp s3://<bucket_name> s3://<bucket_name_2> --recursive
 ```
 
-**Synchronising buckets**
+**Synchronisation des buckets**
 
 ```bash
-aws s3 sync. s3://<bucket_name>
+aws s3 sync . s3://<bucket_name>
 aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
 ```
 
-**Deleting objects and buckets**
-
-> [!primary]
->
-> A bucket can only be deleted if it is empty.
->
+**Supprimer des objets et des buckets**
 
 ```bash
-# Delete an object
+# Suppression d'un objet
 aws s3 rm s3://<bucket_name>/test1
-# Removing all objects from a bucket
+# Suppression de tous les objets d'un bucket
 aws s3 rm s3://<bucket_name> --recursive
-# Delete a storage area. To delete a bucket, it must be empty.
+# Suppression d'une zone de stockage. Pour supprimer un bucket, il doit être vide.
 aws s3 rb s3://<bucket_name>
-# If the compartment is not removed, you can use the same command with the --force option.
-# This command deletes all objects from the bucket, then deletes the bucket.
+# Si le bucket n'est pas supprimé, vous pouvez utiliser la même commande avec l'option --force.
+# Cette commande supprime tous les objets du bucket, puis supprime le bucket.
 aws s3 rb s3://<bucket_name> --force
 ```
 
-**Deleting objects and buckets with versioning enabled**
-
-If versioning is enabled, a simple delete operation on your objects will not permanently remove them.
-
-In order to permanently delete an object, you must specify a version id:
-
-```bash
-aws s3api delete-object --bucket <NAME> --key <KEY> --version-id <VERSION_ID>
-```
-
-To list all objects and all version ID, you can use the following command:
-
-```bash
-aws s3api list-object-versions --bucket <NAME>
-```
-
-With the previous delete-object command, you will have to iterate over all your object versions. Alternatively, you can use the following one-liner to empty your bucket:
-
-```bash
-aws s3api delete-objects --bucket <NAME> --delete "$(aws s3api list-object-versions --bucket <NAME> --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
-```
-
-> [!primary]
->
-> If your bucket has Object Lock enabled, you will not be able to permanently delete your objects. See our [documentation](/pages/storage_and_backup/object_storage/s3_managing_object_lock) to learn more about Object Lock.
-> If you use Object Lock in GOVERNANCE mode and have the permission to bypass GOVERNANCE mode, you will have to add the `--bypass-governance-retention` option to your delete commands.
->
-
-**Setting tags on a bucket**
+**Définir des tags sur un bucket**
 
 ```bash
 aws s3api put-bucket-tagging --bucket <bucket_name> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
 aws s3api get-bucket-tagging --bucket <bucket_name>
 ```
-
 ```json
 {
   "TagSet": [
@@ -212,19 +178,18 @@ aws s3api get-bucket-tagging --bucket <bucket_name>
 }
 ```
 
-**Deleting tags on a bucket**
+**Supprimer les tags sur un bucket**
 
 ```bash
 aws s3api s3api delete-bucket-tagging --bucket <bucket_name>
 ```
 
-**Setting tags on an object**
+**Définir des tags sur un objet**
 
 ```bash
 aws s3api put-object-tagging --bucket <bucket_name> --key test1 --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
 aws s3api get-bucket-tagging --bucket <bucket_name>
 ```
-
 ```json
 {
   "TagSet": [
@@ -236,14 +201,14 @@ aws s3api get-bucket-tagging --bucket <bucket_name>
 }
 ```
 
-**Deleting tags on an object**
+**Supprimer les tags sur un objet**
 
 ```bash
 aws s3api s3api delete-object-tagging --bucket <bucket_name> --key test1
 ```
 
-## Go further
+## Aller plus loin
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
