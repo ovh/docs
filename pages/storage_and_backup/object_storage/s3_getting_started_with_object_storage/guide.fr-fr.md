@@ -149,6 +149,11 @@ aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
 
 **Supprimer des objets et des buckets**
 
+> [!primary]
+>
+> Un bucket ne peut être supprimé que s'il est vide.
+>
+
 ```bash
 # Suppression d'un objet
 aws s3 rm s3://<bucket_name>/test1
@@ -160,6 +165,34 @@ aws s3 rb s3://<bucket_name>
 # Cette commande supprime tous les objets du bucket, puis supprime le bucket.
 aws s3 rb s3://<bucket_name> --force
 ```
+
+**Suppression d'objets et de buckets avec le versionning activé**
+
+Si le versioning est activé, une simple opération de suppression sur vos objets ne les supprimera pas définitivement.
+
+Pour supprimer définitivement un objet, vous devez spécifier un ID de version :
+
+```bash
+aws s3api delete-object --bucket <NAME> --key <KEY> --version-id <VERSION_ID>
+```
+
+Pour répertorier tous les objets et tous les ID de version, vous pouvez utiliser la commande suivante :
+
+```bash
+aws s3api list-object-versions --bucket <NAME>
+```
+
+Avec la commande delete-object précédente, vous devrez parcourir toutes les versions de vos objets. Vous pouvez également utiliser la ligne suivante pour vider votre bucket :
+
+```bash
+aws s3api delete-objects --bucket <NAME> --delete "$(aws s3api list-object-versions --bucket <NAME> --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
+```
+
+> [!primary]
+>
+> Si l'Object Lock est activé pour votre bucket, vous ne pourrez pas supprimer définitivement vos objets. Consultez notre [documentation](/pages/storage_and_backup/object_storage/s3_manage_object_lock) pour en savoir plus sur Object Lock.
+> Si vous utilisez Object Lock en mode GOUVERNANCE et que vous avez l'autorisation de contourner le mode GOUVERNANCE, vous devrez ajouter l'option `--bypass-governance-retention` à vos commandes de suppression.
+>
 
 **Définir des tags sur un bucket**
 
