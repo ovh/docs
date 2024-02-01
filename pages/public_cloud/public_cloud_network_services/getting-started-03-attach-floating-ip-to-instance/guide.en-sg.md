@@ -39,7 +39,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 #### Attaching a Floating IP to an instance
 
 > [!success]
-> Click one of the two tabs below depending on whether you want to attach a Floating IP to a new instance (**Option 1**) or an existing instance (**Option 2*).
+> Click one of the two tabs below depending on whether you want to attach a Floating IP to a new instance (**Option 1**) or an existing instance (**Option 2**).
 
 > [!tabs]
 > **Option 1**
