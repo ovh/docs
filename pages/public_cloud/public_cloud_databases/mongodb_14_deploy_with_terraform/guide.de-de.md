@@ -111,7 +111,7 @@ resource "openstack_networking_subnet_v2" "my_subnet" {
   cidr            = "192.168.12.0/24"
   enable_dhcp     = true
   no_gateway      = false
-  dns_nameservers = ["1.1.1.1", "1.0.0.1"]
+  dns_nameservers = ["213.186.33.99"]
 
   allocation_pool {
     start = "192.168.12.100"
