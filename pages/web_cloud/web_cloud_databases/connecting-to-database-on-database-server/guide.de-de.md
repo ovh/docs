@@ -41,7 +41,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Im Tab `Allgemeine Informationen` finden Sie den Zugangslink zu phpMyAdmin im Rahmen **„Administration der Datenbank“** unter „Benutzer-Interface“.
 
-![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/database-administration.png){.thumbnail}
 
 Damit gelangen Sie zur Loginseite von phpMyAdmin.
 
@@ -107,7 +107,7 @@ mysql --host=server --user=benutzername --port=port --password=passwort datenban
 
 - Starten Sie SQuirreL und klicken Sie auf `Aliases`{.action} und dann auf `+`{.action}.
 
-![launch SQuirreL SQL](images/1.png){.thumbnail}
+![launch SQuirreL SQL](images/aliases.png){.thumbnail}
 
 - Füllen Sie die folgenden Felder aus und bestätigen Sie mit dem Button `OK`{.action}:
     - **Name**: Wählen Sie den Namen aus.
@@ -116,7 +116,7 @@ mysql --host=server --user=benutzername --port=port --password=passwort datenban
     - **User Name**: Geben Sie den Benutzernamen ein.
     - **Password**: Geben Sie das Passwort ein.
 
-![config](images/2.png){.thumbnail}
+![config](images/add-alias.png){.thumbnail}
 
 - Bestätigen Sie erneut mit dem Button `Connect`{.action}.
 
@@ -124,7 +124,7 @@ mysql --host=server --user=benutzername --port=port --password=passwort datenban
 
 Sie sind nun mit Ihrer Datenbank verbunden.
 
-![config](images/4.PNG){.thumbnail}
+![config](images/general-dashboard.png){.thumbnail}
 
 ##### 4\. phpMyAdmin Verbindung
 
@@ -162,7 +162,7 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 
 - Starten Sie SQuirreL und klicken Sie auf `Aliases`{.action} und dann auf `+`{.action}.
 
-![launch SQuirreL SQL](images/1.png){.thumbnail}
+![launch SQuirreL SQL](images/aliases.png){.thumbnail}
 
 - Füllen Sie die folgenden Felder aus und bestätigen Sie mit dem Button `OK`{.action}:
     - **Name**: Wählen Sie den Namen aus.
@@ -171,7 +171,7 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
     - **User Name**: Geben Sie den Benutzernamen ein.
     - **Password**: Geben Sie das Passwort ein.
 
-![config](images/2.png){.thumbnail}
+![config](images/add-alias.png){.thumbnail}
 
 - Bestätigen Sie erneut mit dem Button `Connect`{.action}.
 
@@ -179,7 +179,7 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 
 Sie sind nun mit Ihrer Datenbank verbunden.
 
-![config](images/4.PNG){.thumbnail}
+![config](images/general-dashboard.png){.thumbnail}
 
 ## Weiterführende Informationen
 
