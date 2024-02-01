@@ -207,7 +207,7 @@ Es gibt derzeit keine Option im Kundencenter, mit der Sie Ihre Schlüssel auflis
 
 > [!api]
 >
-> @api {v1} /me GET /me/api/application/
+> @api {v1} /me GET /me/api/application
 >
 
 - Erhalten Sie die Schlüsseldetails mit dem folgenden Aufruf:

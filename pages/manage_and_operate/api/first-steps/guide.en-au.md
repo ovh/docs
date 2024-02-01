@@ -206,7 +206,7 @@ There is currently no Control Panel option to list and revoke your keys. The API
 
 > [!api]
 >
-> @api {v1} /me GET /me/api/application/
+> @api {v1} /me GET /me/api/application
 >
 
 - Get key details with the following call:

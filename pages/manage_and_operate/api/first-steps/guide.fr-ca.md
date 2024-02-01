@@ -204,7 +204,7 @@ Il n'y a actuellement aucune option dans l'espace client pour lister et révoque
 
 > [!api]
 >
-> @api {v1} /me GET /me/api/application/
+> @api {v1} /me GET /me/api/application
 >
 
 - Obtenez les détails d'une clé avec l'appel suivant :

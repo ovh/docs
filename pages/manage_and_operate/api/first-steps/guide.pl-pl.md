@@ -208,7 +208,7 @@ Aktualnie w Panelu klienta nie ma opcji wyświetlania i usuwania kluczy. Możesz
 
 > [!api]
 >
-> @api {v1} /me GET /me/api/application/
+> @api {v1} /me GET /me/api/application
 >
 
 - Pobierz informacje na temat klucza z następującego połączenia:

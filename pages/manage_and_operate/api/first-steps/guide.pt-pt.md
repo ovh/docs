@@ -208,7 +208,7 @@ Não existe atualmente nenhuma opção do Painel de Controlo para listar e revog
 
 > [!api]
 >
-> @api {v1} /me GET /me/api/application/
+> @api {v1} /me GET /me/api/application
 >
 
 - Obtenha os detalhes da chave com a seguinte chamada:

@@ -208,7 +208,7 @@ Al momento non è disponibile un'opzione del Pannello di controllo per elencare 
 
 > [!api]
 >
-> @api {v1} /me GET /me/api/application/
+> @api {v1} /me GET /me/api/application
 >
 
 - Ottieni i dettagli della chiave con la seguente chiamata:

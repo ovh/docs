@@ -208,7 +208,7 @@ Actualmente no hay ninguna opción en el área de cliente para mostrar o revocar
 
 > [!api]
 >
-> @api {v1} /me GET /me/api/application/
+> @api {v1} /me GET /me/api/application
 >
 
 - Obtenga los detalles de la clave con la siguiente llamada:
