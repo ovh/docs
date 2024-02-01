@@ -28,7 +28,7 @@ The products covered by this end-of-life policy are:
 
 ### Definitions and guidelines for the end-of-life policy
 
-![timeline](images/ovh.eol.policy.timeline.png)
+![timeline](images/ovhcloud-eol-policy-for-managed-databases-timeline.png)
 
 EOL = End Of Life
 
