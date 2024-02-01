@@ -120,7 +120,7 @@ mysql --host=server --user=username --port=port --password=password database_nam
 
 - Conferma di nuovo con il pulsante `Connect`{.action}
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Da questo momento sei connesso correttamente al tuo database:
 
@@ -175,7 +175,7 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 - Conferma di nuovo con il pulsante `Connect`{.action}
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Da questo momento sei connesso correttamente al tuo database:
 
