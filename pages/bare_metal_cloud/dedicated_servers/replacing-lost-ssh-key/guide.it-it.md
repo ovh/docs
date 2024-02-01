@@ -58,7 +58,7 @@ Segui gli step della guida sulla modalità Rescue per connetterti al tuo server 
 Quando hai accesso ai tuoi file, apri il file "authorized_keys" in un editor di testo. Questo file salva le chiavi SSH e si trova nella cartella `home` dell'utente connesso al tuo server. (Sostituisci "USER_NAME" con il tuo nome utente)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copia e incolla la tua nuova chiave pubblica (creata allo Step 2) nel file. Il contenuto del file dovrebbe essere simile a questo esempio:
