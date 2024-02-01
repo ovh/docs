@@ -195,6 +195,13 @@ client = ovh.Client(
 print("Welcome", client.get('/me')['firstname'])
 ```
 
+#### List and revoke your keys
+
+There is currently no Control Panel to list and revoke your keys. The API portal can be used to do that : 
+* List the keys ids through [GET /me/api/application](https://eu.api.ovh.com/console-preview/?section=%2Fme&branch=v1#get-/me/api/application)
+* Get key details with [GET  /me/api/application/{applicationId}](https://eu.api.ovh.com/console-preview/?section=%2Fme&branch=v1#get-/me/api/application/-applicationId-)
+* Revoke a key with [DELETE /me/api/application/{applicationId}](https://eu.api.ovh.com/console-preview/?section=%2Fme&branch=v1#delete-/me/api/application/-applicationId-)
+
 ## Go further <a name="gofurther"></a>
 
 [Managing a Domain Name with the OVHcloud API](/pages/web_cloud/domains/api_domain_intro)
