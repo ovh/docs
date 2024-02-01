@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec les API OVHcloud'
 excerpt: 'Découvrez comment utiliser les API OVHcloud'
-updated: 2023-09-08
+updated: 2024-02-01
 ---
 
 ## Objectif
@@ -195,6 +195,31 @@ client = ovh.Client(
 # Print nice welcome message
 print("Welcome", client.get('/me')['firstname'])
 ```
+
+#### Lister et révoquer vos clés
+
+Il n'y a actuellement aucune option dans l'espace client pour lister et révoquer vos clés. Pour cela, il est possible d’utiliser le portail API :
+
+- Listez les ID des clés avec l'appel suivant :
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application
+>
+
+- Obtenez les détails d'une clé avec l'appel suivant :
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application/{applicationId}
+>
+
+- Révoquez une clé avec l'appel suivant :
+
+> [!api]
+>
+> @api {v1} /me DELETE /me/api/application/{applicationId}
+>
 
 ## Aller plus loin <a name="gofurther"></a>
 
