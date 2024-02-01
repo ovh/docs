@@ -120,7 +120,7 @@ mysql --host=servidor --user=utilizador --port=port --password=password nome_da_
 
 - Torne a validar clicando no botão `Connect`{.action}.
 
-![valid conexao](images/3.png){.thumbnail}
+![valid conexao](images/connect-to-mysql.png){.thumbnail}
 
 Já está conectado à base de dados:
 
@@ -175,7 +175,7 @@ psql --host=servidor --port=port --user=utilizador --password=password nome_da_b
 
 - Torne a validar clicando no botão `Connect`{.action}.
 
-![valid conexao](images/3.png){.thumbnail}
+![valid conexao](images/connect-to-mysql.png){.thumbnail}
 
 Já está conectado à base de dados:
 

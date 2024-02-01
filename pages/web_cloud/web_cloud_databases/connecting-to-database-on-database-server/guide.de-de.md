@@ -120,7 +120,7 @@ mysql --host=server --user=benutzername --port=port --password=passwort datenban
 
 - Bestätigen Sie erneut mit dem Button `Connect`{.action}.
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Sie sind nun mit Ihrer Datenbank verbunden.
 
@@ -175,7 +175,7 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 
 - Bestätigen Sie erneut mit dem Button `Connect`{.action}.
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Sie sind nun mit Ihrer Datenbank verbunden.
 

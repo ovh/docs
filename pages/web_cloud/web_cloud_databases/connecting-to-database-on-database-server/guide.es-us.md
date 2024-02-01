@@ -120,7 +120,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
 
 - Confirme con el botón `{.action}Connect.
 
-![](images/3.png){.thumbnail} confirmación de la conexión
+![](images/connect-to-mysql.png){.thumbnail} confirmación de la conexión
 
 Se establecerá la conexión a la base de datos:
 
@@ -179,7 +179,7 @@ mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contrase
 
 - Confirme con el botón `{.action}Connect.
 
-![](images/3.png){.thumbnail} confirmación de la conexión
+![](images/connect-to-mysql.png){.thumbnail} confirmación de la conexión
 
 Se establecerá la conexión a la base de datos:
 

@@ -120,7 +120,7 @@ mysql —host=serwer —user=uzytkownik —port=port —password=password nazwa_
 
 - Zatwierdź ponownie za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Jesteś teraz zalogowany do bazy danych:
 
@@ -175,7 +175,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 - Zatwierdź ponownie za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Jesteś teraz zalogowany do bazy danych:
 
