@@ -42,13 +42,13 @@ En la columna **"Copias de seguridad"**, la cifra corresponde al número de copi
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
+![Web Cloud Databases](images/back-up-now.png){.thumbnail}
 
 #### 2\. Exportar una copia de seguridad
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, seguidamente, en `Mostrar las copias de seguridad`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
+![Web Cloud Databases](images/show-backups.png){.thumbnail}
 
 Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, seguidamente, en `Descargar la copia de seguridad`{.action} para descargar la copia de seguridad.
 

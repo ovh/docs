@@ -38,13 +38,13 @@ In the **Backups** column, the number corresponds to the number of backups avail
 
 Click the `...`{.action} button to the right of the database, then click `Back up now`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
+![Web Cloud Databases](images/back-up-now.png){.thumbnail}
 
 #### 2\. Exporting a backup
 
 Click the `...`{.action} button to the right of the database, then click `Show backups`{.action}
 
-![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
+![Web Cloud Databases](images/show-backups.png){.thumbnail}
 
 The list of available backups will appear. Click on the `...`{.action} button to the right of the backup you want to create, then click `Download the backup`{.action} to retrieve this backup.
 
