@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit der OVHcloud API
 excerpt: Erfahren Sie hier, wie Sie die OVHcloud API verwenden
-updated: 2023-09-08
+updated: 2024-02-01
 ---
 
 > [!primary]
@@ -198,6 +198,31 @@ client = ovh.Client(
 # Print nice welcome message
 print("Welcome", client.get('/me')['firstname'])
 ```
+
+#### Schlüssel auflisten und widerrufen
+
+Es gibt derzeit keine Option in der Systemsteuerung, mit der Sie Ihre Schlüssel auflisten und zurückziehen können. Dazu kann das API-Portal verwendet werden:
+
+- Listen Sie die Schlüssel-IDs mit dem folgenden Aufruf auf:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application/
+>
+
+- Erhalten Sie die Schlüsseldetails mit dem folgenden Anruf:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application/{applicationId}
+>
+
+- Widerrufen Sie einen Schlüssel mit dem folgenden Aufruf:
+
+> [!api]
+>
+> @api {v1} /me DELETE /me/api/application/{applicationId}
+>
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
