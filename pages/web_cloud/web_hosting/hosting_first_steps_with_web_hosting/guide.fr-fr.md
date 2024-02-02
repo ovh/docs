@@ -46,7 +46,7 @@ Dans ce qui va suivre, le guide va s'organiser de la façon suivante :
 
  - [Étape 1 - Délimiter votre projet](#project-delimitation)
  - [Étape 2 - Installer votre site web](#website-installation)
- - 
+ - [Étape 3 - Créer votre (vos) adresse(s) e-mail incluse(s) avec votre hébergement web](#email-creation)
 
 ### Étape 1 - Délimiter votre projet <a name="project-delimitation"></a>
 
@@ -68,7 +68,7 @@ Une fois votre projet déterminé avec précision, vous pouvez démarrer l'insta
 
 S'il s'agit de la migration d'un site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse e-mail, etc.).
 
-#### 2.2 - Créer un nouveau site web
+#### 2.2 - Créer votre nouveau site web
 
 Dans ce cas de figure, plusieurs solutions s'offrent à vous.
 
@@ -81,7 +81,7 @@ Pour cela, nous vous invitons à suivre directement notre guide détaillé « [M
 - placer votre base de données locale sur la base de données liée à votre hébergement web ;
 - lier votre base de données au site web présent sur votre hébergement web.
 
-#### 2.2.2 - Créer un site web en utilisant un CMS
+#### 2.2.2 - Créer votre site web en utilisant un CMS
 
 OVHcloud met à disposition l'option « Modules en 1 clic ». Connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et via votre hébergement web, elle permet d'installer rapidement les CMS WordPress, Joomla!, PrestaShop et Drupal.
 
@@ -92,13 +92,11 @@ Pour utiliser cette option, nous vous recommandons de consulter directement notr
 > Si vous préférez installer manuellement votre CMS sans passer par l'option « Modules en 1 clic », consultez notre documentation intitulée « [Installer manuellement un CMS sur mon hébergement web](/pages/web_cloud/web_hosting/cms_manual_installation) ».
 >
 
-### Étape 3 : créer vos adresses e-mail
+### Étape 3 - Créer votre (vos) adresse(s) e-mail incluse(s) avec votre hébergement web <a name="email-creation"></a>
 
-Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}. Pour créer une ou plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
+Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
-![Créer une adresse e-mail](images/create-an-email-address.png){.thumbnail}
-
-Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
+//////////////////////////////////////////////////////////////// memo perso => check si l'étape liaison ndd est nécessaire avant activation de la solution mail incluse ovhcloud ou si ndd odit être obligatoirement chez ovh pour ça ///////////////////////////////////////////////////////////////////////////////
 
 Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external} et [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} si ce dernier s'applique.
 
