@@ -147,7 +147,7 @@ Al instalar por primera vez o al reinstalar desde el Panel de control, se crea a
 
 Recibirá por correo electrónico el nombre de usuario y la contraseña necesarios para conectarse a su VPS por SSH. SSH es un protocolo de comunicación seguro que se utiliza para establecer conexiones cifradas con un host remoto.
 
-La mayoría de los sistemas operativos de escritorio actuales tendrán un cliente **Open SSH** instalado de forma nativa. Esto significa que sus claves de acceso le permiten establecer rápidamente una conexión con su VPS en la aplicación de línea de comandos adecuada («Terminal», «Símbolo del sistema», «Powershell», etc.). Introduzca el siguiente comando:
+La mayoría de los sistemas operativos de escritorio actuales tendrán un cliente **Open SSH** instalado de forma nativa. Esto significa que sus claves de acceso le permiten establecer rápidamente una conexión con su VPS en la aplicación de línea de comandos adecuada (`Terminal`, `Command prompt`, `Powershell`, etc.). Introduzca el siguiente comando:
 
 ```bash
 ssh username@IPv4_VPS
@@ -161,11 +161,15 @@ ssh ubuntu@169.254.10.250
 
 También puede utilizar cualquier aplicación de terceros compatible con **Open SSH**.
 
-Una vez que se haya conectado, puede sustituir la contraseña predefinida del usuario estándar por una frase de contraseña segura utilizando este comando:
+Una vez que se haya conectado, puede sustituir la contraseña predefinida del usuario actual por una frase de contraseña segura utilizando este comando:
 
 ```bash
 passwd
 ```
+
+En una distribución GNU/Linux, **una petición de contraseña no mostrará sus entradas de teclado**.
+
+Escriba su contraseña actual y pulse `Enter`{.action}. Escriba la nueva frase de contraseña y vuelva a escribirla en el siguiente mensaje para confirmarla.
 
 ```console
 Changing password for ubuntu.
@@ -174,6 +178,15 @@ New password:
 Retype new password: 
 passwd: password updated successfully
 ```
+
+> [!warning]
+> 
+> **Activación de la cuenta de usuario root**
+>
+> No es necesario utilizar la cuenta de usuario root para iniciar la administración del servidor. Esta cuenta debe estar habilitada en el sistema operativo del servidor para poder usarla. Además, como medida de seguridad, las conexiones SSH con el usuario root están **desactivadas** por defecto.
+> 
+A menos que se indique lo contrario, todas las acciones de administración descritas en nuestra documentación pueden ser realizadas por la cuenta de usuario por defecto, es decir, escribiendo `sudo` seguido del pedido correspondiente. Para más información, consulte nuestra guía [Configuración del acceso root](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 **Le recomendamos que siga estos pasos**:
 
@@ -185,17 +198,6 @@ passwd: password updated successfully
 >
 Tenga en cuenta que si ha seleccionado una **distribución con aplicación** (Plesk, cPanel, Docker), es posible que las medidas de seguridad genéricas no se apliquen a su sistema. Consulte nuestras guías [Primeros pasos con las aplicaciones preinstaladas](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) y [Desplegar cPanel en un VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), así como la documentación oficial del editor correspondiente.
 >
-
-#### Activación de las conexiones root
-
-> [!warning]
->
-> Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si desea permitir estas conexiones, consulte las instrucciones de [esta guía](/pages/bare_metal_cloud/virtual_private_servers/root_password#enable-root-login).
->
-
-#### Actualización de la contraseña root
-
-Para cambiar o actualizar su contraseña *root*, consulte las instrucciones de [esta guía](/pages/bare_metal_cloud/virtual_private_servers/root_password).
 
 ### Conexión a su VPS Windows
 

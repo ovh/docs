@@ -157,7 +157,7 @@ ssh ubuntu@169.254.10.250
 
 You can use any third-party application compatible with **Open SSH** as well.
 
-Once connected, you can replace the predefined password for the standard user with a longer passphrase by using this command:
+Once connected, you can replace the predefined password for the current user with a better passphrase by using this command:
 
 ```bash
 passwd
@@ -183,7 +183,7 @@ passwd: password updated successfully
 
 Type your current password and press `Enter`{.action}. Enter the new passphrase and type it again at the next prompt to confirm it..
 > 
-Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure root access](/pages/bare_metal_cloud\dedicated_servers\changing_root_password_linux_ds).
+Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure root access](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 >
 
 **We recommend the following steps to proceed**:
