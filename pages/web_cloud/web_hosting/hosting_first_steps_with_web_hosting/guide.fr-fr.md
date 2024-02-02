@@ -12,7 +12,7 @@ OVHcloud propose plusieurs offres d'[hébergement web](https://www.ovhcloud.com/
 - créer un site web (professionnel ou non), un blog, un CMS ou encore une boutique en ligne rapidement ;
 - personnaliser au moins une adresse e-mail avec le nom de domaine qu'il désire utiliser pour son site web ;
 - gérer plusieurs sites web sur une seule offre d'hébergement web ;
-- disposer de bases de données incluses avec certaines de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- disposer d'au moins une base de données incluse avec certaines de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 
 Le tout sans devoir gérer la maintenance, la mise à jour et la sécurité d'une infrastructure d'hébergement web.
 
@@ -28,7 +28,7 @@ Elles vous permettent de gagner du temps sur « l'administration serveur » et d
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
