@@ -1,8 +1,7 @@
 ---
 title: 'Die Zwei-Faktor-Authentifizierung per Sicherheitsschlüssel aktivieren'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr OVHcloud Kundencenter absichern können, indem Sie die Zwei-Faktor-Authentifizierung per U2F-Sicherheitsschlüssel aktivieren'
-hidden: true
-updated: 2022-07-08
+updated: 2024-02-02
 ---
 
 > [!primary]
@@ -24,19 +23,6 @@ Neben weiteren Methoden stellt Ihnen OVHcloud die Zwei-Faktor-Authentifizierung 
 
 ## In der praktischen Anwendung
 
-> [!warning]
-> **Hinzufügen eines neuen U2F-Schlüssels in den neuesten Chrome/Chromium-Versionen**
->
-> Ein neuer U2F-Schlüssel kann derzeit nicht mehr auf den neuesten Versionen des Chrome Browsers (seit Chrome v98) und dessen Derivaten wie Chromium.<br>
-> Es ist noch möglich, einen bereits hinzugefügten und funktionalen U2F-Schlüssel für diese neueren Browserversionen zu verwenden. Es kann nur kein neuer U2F-Schlüssel hinzugefügt werden.
->
-> Unsere Teams [arbeiten daran, diese Störung zu beheben](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). Bis zur endgültigen Behebung möchten wir Sie bitten, eine dieser beiden Methoden zu befolgen:
->
-> - Verwenden Sie einen anderen Browser (wie Firefox), um Ihren neuen U2F-Schlüssel hinzuzufügen, und verwenden Sie anschließend Ihren gewohnten Chrome/Chromium-Browser, um sich auf die übliche Weise mit dem OVHcloud Kundencenter zu verbinden.
-> - Reaktivieren Sie den U2F Support in Ihrem Chrome/Chromium Browser. Kopieren Sie hierzu wie im unten stehenden Bild den entsprechenden Wert `chrome://flags/#u2f-security-key-api` in die Adresszeile des Browsers, wählen Sie `Enabled` im Drop-down-Menü rechts aus und starten Sie Ihren Browser neu.
->
->![2FA Securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
-
 ### Schritt 1: Die Zwei-Faktor-Authentifizierung aktivieren
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie auf Ihren Namen oben rechts (1), und klicken Sie dann auf Ihre Initialen (2). Klicken Sie nun auf `Sicherheit`{.action} (3) und schließlich auf `Die Zwei-Faktor-Authentifizierung aktivieren`{.action} (4).
@@ -54,6 +40,10 @@ Wählen Sie die Methode per Sicherheitsschlüssel und bestätigen Sie Ihre Wahl.
 Wenn Sie dazu aufgefordert werden, stecken Sie Ihren Sicherheitsschlüssel ein. Wenn er zusätzlich einen Knopf hat, drücken Sie diesen. 
 
 ![2FA Sicherheitsschlüssel](images/2fakey2.png){.thumbnail}
+
+> [!warning]
+>
+> Es wird ein Popup-Fenster geöffnet, in dem Sie zur Validierung des Schlüssels aufgefordert werden. Wenn dieses Fenster nicht angezeigt wird, stellen Sie sicher, dass Ihr Browser diese nicht blockiert.
 
 Sobald der Schlüssel erkannt wurde, können Sie auch eine Beschreibung hinzufügen. Dies kann hilfreich sein, um jene Personen zu identifizieren, die wahrscheinlich diese Authentifizierungsmethode für Ihr Konto nutzen. 
 

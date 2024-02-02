@@ -1,8 +1,7 @@
 ---
 title: 'Enabling two-factor authentication by security key'
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via U2F security key'
-hidden: true
-updated: 2022-07-08
+updated: 2024-02-02
 ---
 
 ## Objective
@@ -19,19 +18,6 @@ Two-factor authentication via Universal Second Factor (U2F) is one of the method
 - a USB port on your computer
 
 ## Instructions
-
-> [!warning]
-> **Addition of a new U2F key on recent versions of Chrome/Chromium**
->
-> Adding a new U2F key is currently no longer possible on recent versions of the Chrome browser (starting with Chrome v98) and its derivatives such as Chromium.<br>
-> The use of a U2F key already added and functional is always possible on these recent versions of the browser, only the addition of a new U2F key is impossible.
->
-> Our teams [are working to resolve this issue](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). Pending a final resolution, we invite you to follow one of these two workaround methods:
->
-> - Use another browser (such as Firefox) to add your new U2F key, then use your regular Chrome/Chromium browser to log in to the OVHcloud Control Panel as usual.
-> - Manually re-enable U2F support in your Chrome/Chromium browser. To do this, as in the image below, copy this value `chrome://flags/#u2f-security-key-api` into the browser's address bar, select `Enabled` from the right-hand drop-down menu and restart your browser.
->
->![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
 
 ### Step 1: Enable two-factor authentication.
 
@@ -50,6 +36,10 @@ Select the security key method, then confirm.
 Plug in your security key when prompted to do so. If the key has a button, press it. 
 
 ![2FA securitykey](images/2fakey2.png){.thumbnail}
+
+> [!warning]
+>
+> A popup window will open asking you to validate the key. If you don't see this window, make sure your browser isn't blocking them.
 
 Once the key has been recognised, you can also add a description. This may be useful for identifying people who are likely to use this identification method on your account.
 
