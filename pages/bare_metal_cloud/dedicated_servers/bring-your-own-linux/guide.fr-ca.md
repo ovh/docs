@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2024-01-31
+updated: 2024-02-02
 ---
 
 ## Objectif
@@ -13,18 +13,18 @@ La fonctionnalité Bring Your Own Linux (BYOLinux) vous permet de déployer des 
 La norme *cloudready* signifie généralement être agnostique de l’infrastructure sur laquelle l’image est déployée.
 En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous assurer que l'image (téléchargée ou générée) répond correctement à la définition des attentes techniques d'une image cloudready.
 
-**Ce guide vous explique comment utiliser BYOLinux sur votre serveur dédié OVHcloud.**
+**Ce guide vous explique comment utiliser Bring Your Own Linux (BYOLinux) sur votre serveur dédié OVHcloud.**
 
 ## Prérequis
 
 - Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (pour la méthode de [déploiement via l'espace client](#viacontrolpanel) de ce guide)
-- Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) » de ce guide)
+- Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) de ce guide)
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio
 
 > [!warning]
 >
-> Une nouvelle installation avec BYOLinux effacera toutes les données présentes sur le serveur.
+> Tout comme une installation OS classique, une nouvelle installation par BYOLinux effacera l'intégralité des données présentes sur le serveur.
 >
 
 ## En pratique
@@ -68,12 +68,14 @@ Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consulte
 
 ### Déploiement de votre image via les API <a name="viaapi"></a>
 
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
+
 > [!api]
 >
-> @api {v1} /dedicated/server/{serviceName}/install/start POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
-Le contenu de la requête API de « BringYourOwnLinux » doit être similaire au fichier JSON suivant :
+Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être similaire au fichier JSON suivant :
 
 > [!warning]
 >
@@ -116,29 +118,36 @@ Le contenu de la requête API de « BringYourOwnLinux » doit être similaire au
 }
 ```
 
+Une fois les champs complétés, démarrez le déploiement en cliquant sur `Execute`{.action}.
+
 #### Options de déploiement <a name="options"></a>
 
 | Champ | Description | Obligatoire |
 |-|-|-|
 | userMetadata/imageURL | L'URL de votre image Linux | ✅ |
-| userMetadata/imageCheckSum | Checksum de votre image. | ❌ |
-| userMetadata/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512). | ❌ (sauf si checksum fourni) |
+| userMetadata/imageCheckSum | Checksum de votre image | ❌ |
+| userMetadata/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
 | userMetadata/configDriveUserData | Contenu de votre fichier configDrive¹ | ❌ |
 | userMetadata/configDriveMetadata | Métadonnées Cloud-Init personnalisées | ❌ |
 | userMetadata/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
-| userMetadata/httpHeaders?Value | HValeur des en-têtes HTTP | ❌² |
+| userMetadata/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 
 ¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
 
-La partition ConfigDrive est utilisée par cloud-init lors du premier démarrage du serveur afin d'appliquer vos configurations. Vous pouvez choisir d'utiliser la partition par défaut ou une partition personnalisée (en utilisant `configDriveUserData`).
-
-Une fois les champs complétés, démarrez le déploiement en cliquant sur `Execute`{.action}.
+> [!primary]
+>
+> La partition ConfigDrive est utilisée par cloud-init lors du premier démarrage du serveur afin d'appliquer vos configurations. Vous pouvez choisir d'utiliser la partition par défaut ou une partition personnalisée (en utilisant `configDriveUserData`).
+>
 
 ## Aller plus loin
 
-[Détails complets sur BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)<br />
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)<br />
-[Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)<br />
-[Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)<br />
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+[Bring Your Own Linux (BYOLinux) - Version détaillée](https://github.com/ovh/BringYourOwnLinux)
+
+[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
+[Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
+
+[Comparaison entre Bring Your Own Image (BYOI) et Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2024-01-31
+updated: 2024-02-01
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ The Bring Your Own Linux feature (BYOLinux) enables you to deploy *cloudready* L
 The *cloudready* standard generally means being agnostic of the infrastructure on which the image is deployed.
 In addition to the requirement and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
 
-**This guide explains how to use BYOLinux on your OVHcloud dedicated server.**
+**This guide explains how to use Bring Your Own Linux (BYOLinux) on your OVHcloud dedicated server.**
 
 ## Requirements
 
@@ -24,7 +24,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 > [!warning]
 >
-> A new installation with BYOLinux will erase all the data on the server.
+> As any classical OS installation, a new installation with BYOLinux will erase all the data on the server.
 >
 
 ## Instructions
@@ -68,12 +68,14 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
+Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+
 > [!api]
 >
-> @api {v1} /dedicated/server/{serviceName}/install/start POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
-The `BringYourOwnLinux` payload should be similar to the following:
+The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
 
 > [!warning]
 >
@@ -116,29 +118,36 @@ The `BringYourOwnLinux` payload should be similar to the following:
 }
 ```
 
+Once you completed the fields, start the deployment by clicking `Execute`{.action}.
+
 #### Deployment options <a name="options"></a>
 
 | Field | Description | Required |
 |-|-|-|
 | userMetadata/imageURL | Your Linux image URL | ✅ |
-| userMetadata/imageCheckSum | Your image's checksum. | ❌ |
-| userMetadata/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512). | ❌ (except if checksum provided) |
+| userMetadata/imageCheckSum | Your image's checksum | ❌ |
+| userMetadata/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
 | userMetadata/configDriveUserData | Your configDrive file content¹ | ❌ |
-| userMetadata/configDriveMetadata | Custom Cloud-Init metadatas | ❌ |
+| userMetadata/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
 | userMetadata/httpHeaders?Key | HTTP Headers key  | ❌² |
 | userMetadata/httpHeaders?Value | HTTP Headers value | ❌² |
 
 ¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 
-The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
-
-Once you completed the fields, start the deployment by clicking `Execute`{.action}.
+> [!primary]
+>
+> The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
+>
 
 ## Go further
 
-[Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)<br />
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)<br />
-[Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)<br />
-[Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)<br />
+[Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)
+
+[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
+[Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
+
+[Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
+
 Join our user community on <https://community.ovh.com/en/>.
