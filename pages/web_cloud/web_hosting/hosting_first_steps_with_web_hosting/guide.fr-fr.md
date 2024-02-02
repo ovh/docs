@@ -6,9 +6,23 @@ updated: 2024-02-02
 
 ## Objectif
 
-Vous venez d’acquérir un hébergement web pour créer votre site web. Cet hébergement va vous permettre d’installer un site issu d’une solution clés en main (WordPress, PrestaShop), ou de développer vous même votre plateforme sur des serveurs disponibles en permanence. Nous vous remercions de votre confiance et vous proposons ce guide pour apprendre comment ouvrir votre site web en toute simplicité.
+OVHcloud propose plusieurs offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/). Elles ont été conçues, par exemples, pour un utilisateur qui souhaiterait :
 
-**Découvrez comment bien débuter avec un hébergement web.**
+- débuter sur le Web ;
+- créer un site web (professionnel ou non), un blog, un CMS ou encore une boutique en ligne rapidement ;
+- personnaliser au moins une adresse e-mail avec le nom de domaine qu'il désire utiliser pour son site web ;
+- gérer plusieurs sites web sur une seule offre d'hébergement web ;
+- disposer de bases de données incluses avec certaines de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+
+Le tout sans devoir gérer la maintenance, la mise à jour et la sécurité d'une infrastructure d'hébergement web.
+
+Elles vous permettent de gagner du temps sur « l'administration serveur » et de vous concentrer uniquement sur :
+
+- le développement, la mise à jour et la sécurité d'un site web, blog, CMS ou boutique en ligne ;
+- la sécurité et l'optimisation d'une ou plusieurs base(s) de données si votre offre en dispose d'au moins une ;
+- la configuration et la gestion de votre (vos) adresse(s) e-mail incluse(s) avec votre offre d'hébergement web.
+
+**Découvrez comment lier votre nom de domaine, mettre en ligne votre site web et créer une ou plusieurs adresses e-mail avec votre hébergement web.**
 
 ## Prérequis
 
