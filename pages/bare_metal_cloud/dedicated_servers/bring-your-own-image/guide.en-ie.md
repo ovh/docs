@@ -1,5 +1,5 @@
 ---
-title: How to use the Bring Your Own Image feature
+title: Bring Your Own Image (BYOI)
 excerpt: Find out how to easily deploy your own images on dedicated servers
 updated: 2024-02-02
 ---

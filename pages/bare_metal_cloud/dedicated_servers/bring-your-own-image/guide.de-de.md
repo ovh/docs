@@ -1,6 +1,6 @@
 ---
-title: Bring Your Own Image verwenden (EN)
-excerpt: Erfahren Sie hier, wie Sie Ihre eigenen Images bereitstellen
+title: Bring Your Own Image (BYOI) (EN)
+excerpt: Find out how to easily deploy your own images on dedicated servers
 updated: 2024-02-02
 ---
 
