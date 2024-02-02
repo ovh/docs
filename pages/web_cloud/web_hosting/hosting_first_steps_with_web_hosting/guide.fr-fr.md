@@ -9,7 +9,7 @@ updated: 2024-02-02
 OVHcloud propose plusieurs offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/). Elles ont été conçues, par exemples, pour un utilisateur qui souhaiterait :
 
 - débuter sur le Web ;
-- créer un site web (professionnel ou non), un blog, un CMS ou encore une boutique en ligne rapidement ;
+- créer un site web (professionnel ou non), un blog, un **C**ontent **M**anagment **S**ystem (**CMS** tels que WordPress, Joomla!, PrestaShop ou Drupal) ou encore une boutique en ligne rapidement ;
 - personnaliser au moins une adresse e-mail avec le nom de domaine qu'il désire utiliser pour son site web ;
 - gérer plusieurs sites web sur une seule offre d'hébergement web ;
 - disposer d'au moins une base de données incluse avec certaines de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
@@ -33,30 +33,31 @@ Elles vous permettent de gagner du temps sur « l'administration serveur » et d
 
 ## En pratique
 
-> [!success]
->
-> Avant de poursuivre la lecture de ce guide, assurez-vous que le nom de domaine ou le sous-domaine que vous souhaitez utiliser soit correctement associé avec votre hébergement web OVHcloud. Pour cela, consultez notre guide « [Partager son hébergement web OVHcloud entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
->
+L'objectif du présent guide est de vous indiquer les principales actions réalisables avec nos solutions d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/). Chacune de ses actions sera accompagnée d'un ou plusieurs liens vers notre documentation détaillée (en rapport avec l'action en question).
 
-### Étape 1 : délimiter votre projet
+Vous pourrez ainsi utiliser ce guide comme un « référentiel » d'actions disponibles avec nos hébergements web. Ceci lors de la souscription de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) mais aussi tout au long de son utilisation.
 
-Vous souhaitez créer un blog ou une boutique en ligne ? Partager une passion ou promouvoir votre activité professionnelle sur Internet ? Migrer un site déjà existant chez OVHcloud ? Afin de mener à bien votre projet, il est important de posséder une vision claire de votre objectif.
+Dans ce qui va suivre, le guide va s'organiser de la façon suivante :
 
-Grâce à votre hébergement web OVHcloud, vous pouvez créer un nouveau site internet ou migrer un existant.
+ - [Étape 1 - Délimiter votre projet](#project-delimitation)
+ - [Étape 2 - Installer votre site web](#website-installation)
+ - 
 
-- **Création d'un nouveau site web**
+### Étape 1 - Délimiter votre projet <a name="project-delimitation"></a>
 
- Vous avez la possibilité de créer vous même votre site internet grâce à des compétences en programmation ou d'utiliser des sites clés en main comme des CMS (Content Management System). La première solution est plus technique, mais  offre la possibilité de créer un projet sur mesure. La seconde permet de bénéficier d’une structure de site prête à l’emploi sans compétences techniques requises.
+Avant de commencer, il est essentiel d'identifier et de délimiter clairement vos besoins à l'aide des questions suivantes : 
 
-Depuis son espace client, OVHcloud met à la disposition de ses clients un outil permettant d'installer en 1 clic un CMS à choisir parmi WordPress, PrestaShop, Drupal et Joomla!. Si vous ne savez pas quel CMS utiliser, ce [comparatif](https://www.ovhcloud.com/fr/web-hosting/uc-cms-comparison/){.external} devrait vous aider dans votre décision. Si le CMS que vous souhaitez installer n'est pas proposé par OVHcloud, vous pouvez l'installer manuellement sur votre hébergement.
+- S'agit-il de la création ou de la migration d'un site web (personnel ou professionnel), CMS, blog, boutique en ligne, etc. ?
+- Ai-je besoin d'une ou de plusieurs base(s) de données pour faire fonctionner mon site web ?
+- Ai-je besoin d'une ou de plusieurs adresses(s) e-mail personnalisée(s) avec mon nom de domaine ?
 
-- **Migrer un site web existant vers OVHcloud**
+En fonction de vos réponses, vérifiez que votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) correspond bien à tous vos besoins avant de poursuivre.
 
-La migration d'un site peut s'avérer sensible, en particulier si elle se réalise sur des services actuellement en cours de production et sur lesquels une interruption n'est pas envisageable. En ce sens, ce guide ne reprend que quelques-unes des étapes à réaliser dans le cadre d'une migration de vos services. Pour connaître le processus complet de migration d'un site web, nous vous invitons à consulter le guide intitulé [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
+Si ce n'est pas le cas, consultez notre guide « [Hébergement web: comment faire évoluer son offre ?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) »
 
-### Étape 2 : installer votre site
+### Étape 2 - Installer votre site web <a name="website-installation"></a>
 
-Une fois votre projet déterminé avec précision, il ne reste plus qu'à le réaliser sur votre hébergement. L'étape suivante concerne donc la mise en ligne de votre site internet. Pour cela, trois possibilités s'offrent à vous suivant le temps et les compétences techniques dont vous disposez sur le sujet.
+Une fois votre projet déterminé avec précision, il ne reste plus qu'à le réaliser sur votre hébergement web. 
 
 #### Solution simple en 1 clic, sans compétences techniques
 
