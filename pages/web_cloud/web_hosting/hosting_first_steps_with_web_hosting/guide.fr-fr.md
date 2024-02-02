@@ -1,12 +1,12 @@
 ---
-title: "Premiers pas avec un hébergement web"
-excerpt: "Découvrez comment bien débuter avec un hébergement web"
-updated: 2023-12-15
+title: "Hébergement web - Premiers pas"
+excerpt: "Découvrez comment lier votre nom de domaine, mettre en ligne votre site web et créer une ou plusieurs adresses e-mail avec votre hébergement web"
+updated: 2024-02-02
 ---
 
 ## Objectif
 
-Vous venez d’acquérir un hébergement web pour créer votre site internet. Cet hébergement va vous permettre d’installer un site issu d’une solution clés en main (WordPress, PrestaShop), ou de développer vous même votre plateforme sur des serveurs disponibles en permanence. Nous vous remercions de votre confiance et vous proposons ce guide pour apprendre comment ouvrir votre site web en toute simplicité.
+Vous venez d’acquérir un hébergement web pour créer votre site web. Cet hébergement va vous permettre d’installer un site issu d’une solution clés en main (WordPress, PrestaShop), ou de développer vous même votre plateforme sur des serveurs disponibles en permanence. Nous vous remercions de votre confiance et vous proposons ce guide pour apprendre comment ouvrir votre site web en toute simplicité.
 
 **Découvrez comment bien débuter avec un hébergement web.**
 
@@ -169,17 +169,17 @@ Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consul
 
 ## Aller plus loin
 
-[Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Comment créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+[Comment créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
 
-[Utilisation de RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
+[Utilisation de RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
-[Les certificats SSL sur les hébergements web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}
+[Les certificats SSL sur les hébergements web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
