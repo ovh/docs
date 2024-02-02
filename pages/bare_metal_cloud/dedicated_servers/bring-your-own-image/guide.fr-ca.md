@@ -1,6 +1,6 @@
 ---
-title: Utiliser la fonctionnalité Bring Your Own Image
-excerpt: Apprenez à déployer vos images grâce à Bring Your Own Image
+title: Bring Your Own Image (BYOI)
+excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
 updated: 2024-02-02
 ---
 
