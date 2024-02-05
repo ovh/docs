@@ -22,6 +22,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `SBG` (Strasbourg, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `SGP` (Singapore, Singapore)
 
 The entire database instances must be in the same region. Multi-AZ is currently not supported.
 

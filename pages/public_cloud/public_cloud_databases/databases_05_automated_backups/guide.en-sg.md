@@ -54,6 +54,7 @@ Public Cloud Databases provide a default configuration for remote backups based 
 | SBG (Strasbourg, France)    | GRA (Gravelines, France)         |
 | UK (London, United Kingdom) | GRA (Gravelines, France)         |
 | WAW (Warsaw, Poland)        | GRA (Gravelines, France)         |
+| SGP (Singapore, Singapore)  | GRA (Gravelines, France)         |
 
 ### Custom settings
 

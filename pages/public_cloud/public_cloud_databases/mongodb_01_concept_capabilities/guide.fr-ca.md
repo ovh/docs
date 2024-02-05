@@ -17,9 +17,10 @@ The Public Cloud Databases offer is available in the following regions:
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
-- `UK` (London, United Kingdom)
 - `SBG` (Strasbourg, France)
+- `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
+- `SGP` (Singapore, Singapore)
 
 ### MongoDB versions
 
