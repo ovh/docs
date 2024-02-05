@@ -6,13 +6,14 @@ updated: 2024-02-05
 
 ## Objectif
 
-OVHcloud propose plusieurs offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/). Elles ont été conçues, par exemples, pour un utilisateur qui souhaiterait :
+OVHcloud propose plusieurs offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/). Elles ont été conçues, par exemple, pour un utilisateur qui souhaiterait :
 
 - débuter sur le Web ;
-- créer un site web (professionnel ou non), un blog, un **C**ontent **M**anagment **S**ystem (**CMS** tels que WordPress, Joomla!, PrestaShop ou Drupal) ou encore une boutique en ligne rapidement ;
+- créer un site web (professionnel ou non), un blog, un **C**ontent **M**anagment **S**ystem (**CMS** tels que *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal*) ou encore une boutique en ligne rapidement ;
 - personnaliser au moins une adresse e-mail avec le nom de domaine qu'il désire utiliser pour son site web ;
 - gérer plusieurs sites web sur une seule offre d'hébergement web ;
-- disposer d'au moins une base de données incluse avec certaines de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- disposer d'au moins une base de données incluse avec certaines de nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) ;
+- etc.
 
 Le tout sans devoir gérer la maintenance, la mise à jour et la sécurité d'une infrastructure d'hébergement web.
 
@@ -26,10 +27,10 @@ Elles vous permettent de gagner du temps sur « l'administration serveur » et d
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
@@ -48,7 +49,7 @@ Dans ce qui va suivre, le guide va s'organiser de la façon suivante :
  - [Étape 2 - Installer votre site web](#website-installation)
  - [Étape 3 - Créer votre (vos) adresse(s) e-mail incluse(s) avec votre hébergement web](#email-creation)
  - [Étape 4 - Vérifier et/ou modifier la configuration de votre nom de domaine](#domain-configuration)
- - [Étape 5 - Autres options/offres disponibles avec les hébergements web](#other-options)
+ - [Étape 5 - Autres options/offres/fonctionnalités disponibles avec les hébergements web](#other-options)
 
 ### Étape 1 - Délimiter votre projet <a name="project-delimitation"></a>
 
@@ -66,15 +67,17 @@ Si ce n'est pas le cas, consultez notre guide « [Hébergement web: comment fair
 
 Une fois votre projet déterminé avec précision, vous pouvez démarrer l'installation de votre site web.
 
-#### 2.1 - Migrer votre site web sans interruption de services
+Deux cas de figure sont possibles : soit vous devez migrer un site web existant, soit vous souhaitez créer un nouveau site web.
+
+#### Cas 1 - Migrer votre site web sans interruption de services
 
 S'il s'agit de la migration d'un site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
 
-#### 2.2 - Créer votre nouveau site web
+#### Cas 2 - Créer votre nouveau site web
 
 Dans ce cas de figure, plusieurs solutions s'offrent à vous.
 
-##### 2.2.1 - Mettre votre site web développé localement en ligne
+##### Cas 2.A - Mettre votre site web développé localement en ligne
 
 Pour cela, nous vous invitons à suivre directement notre guide détaillé « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ». Vous y retrouverez toutes les étapes à réaliser pour, par exemple :
 
@@ -83,9 +86,9 @@ Pour cela, nous vous invitons à suivre directement notre guide détaillé « [M
 - placer votre base de données locale sur la base de données liée à votre hébergement web ;
 - lier votre base de données au site web présent sur votre hébergement web.
 
-##### 2.2.2 - Créer votre site web en utilisant un CMS
+##### Cas 2.B - Créer votre site web en utilisant un CMS
 
-OVHcloud met à disposition l'option « Modules en 1 clic ». Connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et via votre hébergement web, elle permet d'installer rapidement les CMS WordPress, Joomla!, PrestaShop et Drupal.
+OVHcloud met à disposition l'option « Modules en 1 clic ». Connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et via votre hébergement web, elle permet d'installer rapidement les CMS *WordPress*, *Joomla!*, *PrestaShop* et *Drupal*.
 
 Pour utiliser cette option, nous vous recommandons de consulter directement notre guide « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ». Vous y retrouverez tous les détails sur cette option.
 
@@ -96,7 +99,7 @@ Pour utiliser cette option, nous vous recommandons de consulter directement notr
 
 ### Étape 3 - Créer votre (vos) adresse(s) e-mail incluse(s) avec votre hébergement web <a name="email-creation"></a>
 
-Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 
 S'il s'agit de la migration d'un site web et/ou d'adresses e-mail associées au nom de domaine de votre site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
 
@@ -106,7 +109,7 @@ Pour réaliser cette action, nous vous invitons à consulter notre guide « [Act
 
 Une fois l'option activée, consultez notre guide « [Créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) » pour personnaliser une ou plusiuers adresse(s) e-mail avec votre nom de domaine.
 
-### Étape 4 : vérifier et/ou modifier la configuration de votre nom de domaine <a name="domain-configuration"></a>
+### Étape 4 - Vérifier et/ou modifier la configuration de votre nom de domaine <a name="domain-configuration"></a>
 
 À ce stade, votre site web doit être installé sur votre hébergement web et vos adresses e-mail créées. Il est possible que ces éléments ne soient pas encore fonctionnels si la configuration de votre nom de domaine avec vos nouveaux services est incomplète.
 
@@ -123,7 +126,7 @@ S'il s'agit de la migration d'un site web et/ou d'adresses e-mail associées au 
 
 - Guide **1** - « [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » : vous y trouverez l'ensemble des adresses IP de notre infrastructure d'hébergements web. Ce guide vous aidera particulièrement pour les noms de domaine dont la zone DNS active n'est pas gérée chez OVHcloud ou encore gérée sur un autre identifiant client OVHcloud que le vôtre.
 - Guide **2** - « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » : ce guide explique comment ajouter plusieurs noms de domaine à un hébergement web. Cependant, il peut aussi vous permettre de vérifier que la déclaration de votre nom de domaine dans l'onglet `Multisite`{.action} de votre hébergement web est correcte. Vous pourrez ainsi la modifier le cas échéant, puis faire le nécessaire au niveau de la zone DNS active de votre nom de domaine.
-- Guide **3**- « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » : ce guide vous explique comment éditer une zone DNS présente chez OVHcloud. Il pourrait vous servir dans le cas où la zone DNS active de votre nom de domaine est présente sur un autre identifiant client OVHcloud que le vôtre. Il peut aussi vous servir à accéder à la zone DNS OVHcloud de votre nom de domaine. Ceci afin de vérifier que l'adresse IP (entrée(s) de type *A* et/ou *AAAA*) déclarée pour votre nom de domaine dans la zone DNS corresponde à l'adresse IP de votre hébergement web.
+- Guide **3**- « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » : ce guide vous explique comment éditer une zone DNS présente chez OVHcloud. Il vous servira dans le cas où la zone DNS active de votre nom de domaine est présente sur un autre identifiant client OVHcloud que le vôtre. Il peut aussi vous servir à accéder à la zone DNS OVHcloud de votre nom de domaine. Ceci afin de vérifier que l'adresse IP (entrée(s) de type *A* et/ou *AAAA*) déclarée pour votre nom de domaine dans la zone DNS corresponde à l'adresse IP de votre hébergement web.
 
 **Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre offre e-mail OVHcloud, consultez le guide suivant :**
 
@@ -138,9 +141,9 @@ S'il s'agit de la migration d'un site web et/ou d'adresses e-mail associées au 
 > - **Pour la liaison entre votre nom de domaine et votre offre e-mail OVHcloud** : consultez uniquement le guide **4** ci-dessus pour récupérer les noms des serveurs e-mail OVHcloud à renseigner dans la zone DNS active de votre nom de domaine. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers les serveurs e-mail OVHcloud.
 >
 
-### Étape 5 - Autres options/offres disponibles avec les hébergements web <a name="other-options"></a>
+### Étape 5 - Autres options/offres/fonctionnalités disponibles avec les hébergements web <a name="other-options"></a>
 
-En fonction de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), des options/offres supplémentaires sont disponibles gratuitement.
+En fonction de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), des options/offres/fonctionnalités supplémentaires sont disponibles gratuitement.
 
 #### 5.1 - L'option SSL
 
@@ -162,7 +165,7 @@ Avec les hébergements web, OVHcloud propose **3** offres CDN :
 Vous ne pouvez pas cumuler plusieurs offres CDN sur un même hébergement web.
 
 L'offre **CDN Basic** est incluse gratuitement sur les hébergements web **Performance** uniquement.
-Pour les autres [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) et en fonction de ceux-ci, l'offre **CDN Basic** mais aussi les autres offres CDN disponibles seront payantes.
+Pour les autres [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) et en fonction de ceux-ci, l'offre **CDN Basic**, mais aussi les autres offres CDN disponibles, seront payantes.
 
 Retrouvez plus d'informations sur nos différentes offres CDN dans notre guide « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
 
