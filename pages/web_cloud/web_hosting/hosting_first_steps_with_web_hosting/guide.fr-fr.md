@@ -100,71 +100,37 @@ S'il s'agit de la migration d'un site web et/ou d'adresses e-mail associées au 
 
 Si vous avez souscrit à un hébergement web sans l'attacher à un nom de domaine lors de sa commande et pour bénéficier de l'option « adresse(s) e-mail incluse(s) avec votre hébergement web », vous devrez effectuer l'opération manuellement depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Pour réaliser cette action, nous vous invitons à consulter notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
+Pour réaliser cette action, nous vous invitons à consulter notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ». Vous y trouverez tous les détails sur cette option.
 
-> [!warning]
->
-> Si vous souhaitez activer l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » pour un non de domaine externe (non enregistré chez OVHcloud), vous devrez, à minima, créer une zone DNS chez OVHcloud pour votre nom de domaine externe à l'aide de notre guide « [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create) ». Ceci afin que votre nom de domaine apparaîsse dans la liste des domaines disponibles lors de l'activation de l'option.
->
-> De plus, si votre nom de domaine est déjà enregistré ou si une zone DNS est déjà créée pour ce dernier chez OVHcloud dans un autre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) que le vôtre, consultez notre documentation intitulée « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
->
-> Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web. Consultez notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) » pour connaître les solutions qui s'offrent à vous dans ce cas de figure.
->
+### Étape 4 : vérifier et/ou modifier la configuration de votre nom de domaine
 
-### Étape 4 : vérifier ou modifier la configuration de votre domaine
+À ce stade, votre site web doit être installé sur votre hébergement web OVHcloud et vos adresses e-mail créées. Il est possible que ces éléments ne soient pas encore fonctionnels si la configuration de votre nom de domaine avec vos nouveaux services est incomplète.
 
-À ce stade, votre site web doit être installé sur votre hébergement web OVHcloud et vos adresses e-mail créées. Il est possible que ces éléments ne soient pas encore fonctionnels si la configuration de votre nom de domaine est incomplète.
-
-En effet, la liaison entre votre nom de domaine et vos services (hébergement web, serveur e-mail, etc.) se fait à l'aide à l'aide de la zone DNS active de votre nom de domaine et des entrées DNS qu'elle contient.
-
-Par exemple, lorsqu'un visiteur accède à votre site internet, il renseigne dans son navigateur l'adresse de votre site (votre nom de domaine). Dès lors, une résolution DNS s'effectue. C'est ce processus qui permet de faire le rapprochement entre votre nom de domaine et le serveur sur lequel est hébergé votre site. Cette corrélation est possible grâce à des informations renseignées dans une zone DNS : une sorte d'annuaire où la configuration de votre domaine est inscrite.
-
-Si vous avez commandé votre nom de domaine avec votre hébergement web OVHcloud et que vous n'avez réalisé aucune modification dans la zone DNS depuis l'espace client OVHcloud, vous pouvez de suite poursuivre à l'étape suivante. Dans le cas contraire, ou si vous n'êtes pas sûr de vous, nous vous recommandons de poursuivre l'étape actuelle.
-
-#### Connaître les enregistrements DNS OVHcloud 
-
-Il existe plusieurs champs DNS inhérents à OVHcloud. Nous allons nous intéresser à deux d'entre eux en particulier qui permettent de garantir l’accessibilité de votre site internet et la réception des messages sur vos adresses e-mail.
-
-- **Le champ A, pour le site internet**
-
-Pour vérifier le champ A que vous devez utiliser dans la zone DNS de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Hébergements`{.action} et sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Informations générales`{.action}, récupérez l'adresse IP qui apparaît à côté de "IPv4".
-
-![Modifier le champ A](images/find-ipv4.png){.thumbnail}
-
-- **Les champs MX, pour les e-mails**
-
-Pour vérifier les champs MX que vous devez utiliser dans la zone de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `E-mails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. Enfin, dans l'onglet `Informations générales`{.action}, récupérez les informations qui apparaissent à côté de "Champs MX". Ces derniers peuvent être différents d'un service à un autre suivant le filtre DNS que vous avez décidé d'appliquer.
-
-![Modifier les champs MX](images/find-mx-records.png){.thumbnail}
-
-#### Vérifier et/ou modifier les enregistrement DNS
-
-Maintenant que vous connaissez les enregistrements DNS inhérents à votre hébergement web OVHcloud, il vous faut les vérifier et les modifier si nécessaire. Les manipulations diffèrent suivant le projet que vous réalisez.
-
-- **Commande d'un nom de domaine avec un hébergement web OVHcloud**
-
-La configuration de votre domaine est déjà correcte. Poursuivez vers l'étape suivante. Cependant, si vous avez réalisé des manipulations dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} sur la zone DNS de votre domaine, il se peut que cette dernière ne le soit plus.
-    
-Pour accéder à la zone DNS de votre domaine OVHcloud, rendez-vous dans la section `Noms de domaine`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné. Enfin, dans l'onglet `Zone DNS`{.action}, vérifiez et modifiez les informations nécessaires.
-
-- **Nom de domaine n'utilisant pas la zone DNS d'OVHcloud**
-    
-Vous devrez vérifier la zone DNS de votre domaine chez le prestataire qui gère cette dernière. Si nécessaire, modifiez les informations.
-
-- **Migrer vos services (sites et e-mail) vers OVHcloud**
-
-Dans ce type de cas, les manipulations liées aux DNS peuvent occasionner une indisponibilité de vos services si elles ne sont pas réalisées au bon moment. En accord avec les différentes étapes décrites dans notre documentation [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, vous devrez modifier les serveurs DNS de votre domaine à la fin processus.
+En effet, la liaison entre votre nom de domaine et vos services (hébergement web, serveur e-mail, etc.) se fait à l'aide de la zone DNS active de votre nom de domaine et des entrées DNS qu'elle contient.
 
 > [!primary]
 >
 > Une modification dans une zone DNS nécessite un temps de propagation de 4 à 24 heures maximum avant d'être pleinement effective.
 >
 
-### Étape 5 : personnaliser votre site
+**Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre hébergement web, consultez les guides suivants dans l'ordre :**
 
-Votre site est à présent accessible. Cette étape peut être facultative si vous avez migré un site déjà existant et donc déjà personnalisé ! Cependant, dans le cas où vous venez d'installer un nouveau site internet par le biais de nos modules par exemple, vous pouvez le personnaliser en modifiant le thème et en y publiant vos premiers contenus.
+- Guide 1 - « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » : vous y retrouverez l'ensemble des adresses IP de notre infrastructure d'hébergements web. Ce guide vous aidera particulièrement pour les noms de domaine dont la zone DNS active n'est pas gérée chez OVHcloud ou encore gérée sur un autre identifiant client OVHcloud que le vôtre.
+- Guide 2 - « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » : ce guide explique comment ajouter plusieurs noms de domaine à un hébergement web. Cependant, il peut aussi vous permettre de vérifier que la déclaration de votre nom de domaine dans l'onglet `Multisite`{.action} de votre hébergement web est correcte. Vous pourrez ainsi la modifier le cas échéant, puis faire le nécessaire au niveau de la zone DNS active de votre nom de domaine.
+- Guide 3 - « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » : ce guide vous explique comment éditer une zone DNS présente chez OVHcloud. Il pourrait vous servir dans le cas où la zone DNS active de votre nom de domaine est présente sur un autre identifiant client OVHcloud que le vôtre. Il peut aussi vous servir à accéder à la zone DNS OVHcloud de votre nom de domaine. Ceci afin de vérifier que l'adresse IP déclarée pour votre nom de domaine dans la zone DNS (entrée(s) de type *A* et/ou *AAAA*) corresponde à l'adresse IP de votre hébergement web.
 
-Si vous désirez obtenir de l’aide concernant les fonctionnalités de votre site, nous vous invitons à vous rapprocher du site de l’éditeur de ce dernier où vous trouverez de la documentation pour vous accompagner.
+**Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre offre e-mail OVHcloud, consultez le guide suivant :**
+
+- Guide 4 - « [Configurer un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx) » : vous y trouverez l'ensemble des serveurs e-mail OVHcloud mais aussi la procédure à suivre pour faire pointer votre nom de domaine vers les serveurs e-mail OVHcloud.
+
+> [!primary]
+>
+> Si la zone DNS active pour votre nom de domaine n'est pas gérée chez OVHcloud :
+> 
+> - **Pour la liaison entre votre nom de domaine et votre hébergement web** : consultez uniquement les guides **1** et **2** ci-dessus pour récupérer l'adresse IP de votre hébergement web, puis déclarez correctement votre nom de domaine sur votre hébergement web. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers votre hébergement web.
+>
+> - **Pour la liaison entre votre nom de domaine et votre offre e-mail OVHcloud** : consultez uniquement le guide **4** ci-dessus pour récupérer les noms des serveurs e-mail OVHcloud à renseigner dans la zone DNS active de votre nom de domaine. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers les serveurs e-mail OVHcloud.
+>
 
 ### Étape 6 : utiliser vos adresses e-mail
 
