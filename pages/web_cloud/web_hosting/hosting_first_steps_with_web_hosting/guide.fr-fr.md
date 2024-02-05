@@ -109,11 +109,13 @@ Pour réaliser cette action, nous vous invitons à consulter notre guide « [Act
 > Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web. Consultez notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) » pour connaître les solutions qui s'offrent à vous dans ce cas de figure.
 >
 
-Pour rappel, s'il s'agit de la migration d'un site web et/ou d'adresses e-mails associées au nom de domaine de votre site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
+Pour rappel, s'il s'agit de la migration d'un site web et/ou d'adresses e-mail associées au nom de domaine de votre site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
 
 ### Étape 4 : vérifier ou modifier la configuration de votre domaine
 
-À cette étape, votre site doit être installé sur votre hébergement web OVHcloud et vos adresses e-mail créées. Il se peut que ces dernières ne soient pas encore fonctionnelles si la configuration de votre nom de domaine n'est pas correcte. Celle-ci est liée aux champs DNS qui permettent de garantir l’accessibilité de votre site internet et la réception des messages sur vos adresses e-mail utilisant votre nom de domaine.
+À ce stade, votre site web doit être installé sur votre hébergement web OVHcloud et vos adresses e-mail créées. Il est possible que ces éléments ne soient pas encore fonctionnels si la configuration de votre nom de domaine est incomplète.
+
+En effet, la liaison entre votre nom de domaine et vos services (hébergement web, serveur e-mail, etc.) se fait à l'aide à l'aide de la zone DNS active de votre nom de domaine et des entrées DNS qu'elle contient.
 
 Par exemple, lorsqu'un visiteur accède à votre site internet, il renseigne dans son navigateur l'adresse de votre site (votre nom de domaine). Dès lors, une résolution DNS s'effectue. C'est ce processus qui permet de faire le rapprochement entre votre nom de domaine et le serveur sur lequel est hébergé votre site. Cette corrélation est possible grâce à des informations renseignées dans une zone DNS : une sorte d'annuaire où la configuration de votre domaine est inscrite.
 
