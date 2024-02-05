@@ -12,12 +12,12 @@ updated: 2024-01-18
 
 ## Objective
 
-This guide aim to explain how to use OVHcloud Public Cloud Load Balancer to expose your app hosted on [Managed Kubernetes Service (MKS)](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
-If you're not comfortable with the different ways of exposing your applications in Kubernetes, or if you're not familiar with the notion of service type 'loadbalancer', we do recommend to start by reading the guide explaining how to [Expose your app deployed on an OVHcloud Managed Kubernetes Service](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-using-lb?id=kb_article_view&sysparm_article=KB0050008), you can find the details on different methods to expose your containerized applications hosted in Managed Kubernetes Service.
+This guide aims to explain how to use OVHcloud Public Cloud Load Balancer to expose your applications hosted on [Managed Kubernetes Service (MKS)](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
+If you're not comfortable with the different ways of exposing your applications in Kubernetes, or if you're not familiar with the notion of service type 'loadbalancer', we do recommend to start by reading the guide explaining how to [Expose your application deployed on an OVHcloud Managed Kubernetes Service](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-using-lb?id=kb_article_view&sysparm_article=KB0050008), you can find the details on different methods to expose your containerized applications hosted in Managed Kubernetes Service.
 
-Our Public Cloud Load Balancer is relying on Openstack Octavia project, this project provides a Cloud Controller Manager (CCM) allowing Kubernetes clusters to interact with Load Balancers. For Managed Kubernetes Service (MKS), this Cloud Controller is installed and configured by our team allowing you to easily create, use and configure our Public Cloud Load Balancers. You can find the CCM opensource project documentation [here](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
+Our Public Cloud Load Balancer is relying on Openstack Octavia project, this project provides a Cloud Controller Manager (CCM) allowing Kubernetes clusters to interact with Load Balancers. For Managed Kubernetes Service (MKS), this Cloud Controller is installed and configured by our team allowing you to easily create, use and configure our Public Cloud Load Balancers. You can find the CCM opensource project documentation [here](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md).
 
-This guide uses some concepts that are specific to our Public Cloud Load Balancer (listener, pool, health monitor, member, ...)  and to the OVHcloud Public Cloud Network (Gateway, Floating IP). You can find more informations regarding Public Cloud Network products concepts on our official documentation, for example [network concepts](https://help.ovhcloud.com/csm/worldeuro-documentation-public-cloud-network-concepts?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=9a19a664ede06d102d4c139330b8ce8f) and [loadbalancer concept](https://help.ovhcloud.com/csm/en-ie-public-cloud-network-concepts?id=kb_article_view&sysparm_article=KB0050139)
+This guide uses some concepts that are specific to our Public Cloud Load Balancer (listener, pool, health monitor, member, ...) and to the OVHcloud Public Cloud Network (Gateway, Floating IP). You can find more information regarding Public Cloud Network products concepts on our official documentation, for example [networking concepts](https://help.ovhcloud.com/csm/worldeuro-documentation-public-cloud-network-concepts?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=9a19a664ede06d102d4c139330b8ce8f) and [loadbalancer concepts](https://help.ovhcloud.com/csm/en-ie-public-cloud-network-concepts?id=kb_article_view&sysparm_article=KB0050139).
 
 
 ## Prerequisites
@@ -34,7 +34,7 @@ To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie
 
 #### Network prerequisite to expose your Load Balancers publicly   
 If you plan to expose your Load Balancer publicly, in order to attach a [FloatingIP](https://www.ovhcloud.com/en-gb/public-cloud/floating-ip/) to your Load Balancer, it is mandatory to have an [OVHcloud Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/) (an OpenStack router) deployed on the subnet hosting your Load Balancer.
-If it does not exist when you create your first [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/), it will be automatically created.
+If it does not exist when you create your first [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/), a S size Managed Gateway will be automatically created.
 That is why we do recommend to deploy your MKS clusters on a network and subnet where an [OVHcloud Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/) can be created manually/automatically ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/)) or already exist.
 
 For existing/already deployed clusters, if:
@@ -42,10 +42,10 @@ For existing/already deployed clusters, if:
 - **The subnet does not have an IP reserved for a Gateway**, you will have to provide or create a compatible subnet. Three options:
   - Edit an existing subnet to reserve an IP for a Gateway : //TODO, doc Console Horizon et CLI/script
   - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
-  - Use a subnet dedicated for your load balancers: this option can be used on the Managed under 'advanced parameters'/'LoadbalancerSubnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
+  - Use a subnet dedicated for your load balancer: this option can be used on the Managed under 'advanced parameters'/'LoadbalancerSubnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)**, two options:
   - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
-  - Use a subnet dedicated for your load balancers: this option can be used on the Managed under 'advanced parameters'/'Loadbalancer Subnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
+  - Use a subnet dedicated for your load balancers: this option can be used on the OVHcloud manager under 'advanced parameters'/'Loadbalancer Subnet' or using APIs/Infra as Code with the 'LoadBalancerSubnetID' parameter.
 
 ## Limitations
 
@@ -56,7 +56,7 @@ For existing/already deployed clusters, if:
 ## Billing
 
 When exposing your load balancer publicly (public-to-public or public-to-private):
-  - if it does not already exist, an OVHcloud Gateway will be automatically created and charged for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+  - if it does not already exist, a single OVHcloud Gateway will be automatically created and charged for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
   - a Public Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 - Each Public Cloud Load Balancer is billed according to its flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
 
@@ -124,7 +124,7 @@ test-lb-service      LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
 You can find a set a examples on how to use our Public Cloud Load Balancer with Managed Kubernetes Service (MKS) on our dedicated Github repository https://github.com/ovh/public-cloud-examples
 
 #### Public-to-Private (your cluster is attached to a private network/subnet)
-In a public-to-private scenario you will use your Load Balancer to publicly expose app that are hosted on your Managed Kubernetes Cluster. Main benefit is that your Kubernetes nodes are not exposed on internet with that scenario.
+In a public-to-private scenario you will use your Load Balancer to publicly expose application that are hosted on your Managed Kubernetes Cluster. Main benefit is that your Kubernetes nodes are not exposed on internet with that scenario.
 
 Service example:
 ```yaml
@@ -426,8 +426,8 @@ kubectl apply -f your-service-manifest.yaml
 >
 
 
-## Ressources Naming
-When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud ressources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those ressources, here is the naming templates:
+## Resources Naming
+When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud resources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those resources, here is the naming templates:
 
 | Ressource                                                          | Naming                                                                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -443,7 +443,7 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 ## Others resources
 - [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
 - [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
-- [OVHcloud Load Balancer concept](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
+- [OVHcloud Load Balancer concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 - [How to monitor your Public Cloud Load Balancer with Prometheus ](https://help.ovhcloud.com/csm/en-ie-public-cloud-network-loadbalancer-monitoring-prometheus?id=kb_article_view&sysparm_article=KB0061214)
 
 
