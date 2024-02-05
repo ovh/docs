@@ -8,7 +8,7 @@ updated: 2024-02-05
 
 Développé par Pocket Pair, Palworld est un jeu qui mélange des éléments de survie, de fabrication d'objets et d'aventure, le tout dans un monde ouvert, peuplé par des créatures appelées « Pals ». Posséder son propre serveur dans un jeu comme Palworld offre plusieurs avantages, comme le contrôle total sur l'environnement de jeu et sur la communauté, l'amélioration des performances et de l'expérience de jeu, ou encore la possibilité d'organiser des évènements spéciaux.
 
-**Ce tutoriel décrit comment créer un serveur Palworld sur un VPS OVHcloud.**
+**Ce tutoriel décrit comment créer un serveur Palworld sur un VPS OVHcloud à l'aide de LinuxGSM. Le temps d'installation est estimé à moins de 10 minutes.**
 
 
 ## Prérequis
