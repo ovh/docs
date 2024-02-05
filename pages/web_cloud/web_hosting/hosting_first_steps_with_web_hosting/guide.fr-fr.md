@@ -66,7 +66,7 @@ Une fois votre projet déterminé avec précision, vous pouvez démarrer l'insta
 
 #### 2.1 - Migrer votre site web sans interruption de services
 
-S'il s'agit de la migration d'un site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse e-mail, etc.).
+S'il s'agit de la migration d'un site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
 
 #### 2.2 - Créer votre nouveau site web
 
@@ -96,9 +96,20 @@ Pour utiliser cette option, nous vous recommandons de consulter directement notr
 
 Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
-//////////////////////////////////////////////////////////////// memo perso => check si l'étape liaison ndd est nécessaire avant activation de la solution mail incluse ovhcloud ou si ndd odit être obligatoirement chez ovh pour ça ///////////////////////////////////////////////////////////////////////////////
+Si vous avez souscrit à un hébergement web sans l'attacher à un nom de domaine lors de sa commande et pour bénéficier de l'option « adresse(s) e-mail incluse(s) avec votre hébergement web », vous devrez effectuer l'opération manuellement depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external} et [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} si ce dernier s'applique.
+Pour réaliser cette action, nous vous invitons à consulter notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
+
+> [!warning]
+>
+> Si vous souhaitez activer l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » pour un non de domaine externe (non enregistré chez OVHcloud), vous devrez, à minima, créer une zone DNS chez OVHcloud pour votre nom de domaine externe à l'aide de notre guide « [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create) ». Ceci afin que votre nom de domaine apparaîsse dans la liste des domaines disponibles lors de l'activation de l'option.
+>
+> De plus, si votre nom de domaine est déjà enregistré ou si une zone DNS est déjà créée pour ce dernier chez OVHcloud dans un autre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) que le vôtre, consultez notre documentation intitulée « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
+>
+> Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web. Consultez notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) » pour connaître les solutions qui s'offrent à vous dans ce cas de figure.
+>
+
+Pour rappel, s'il s'agit de la migration d'un site web et/ou d'adresses e-mails associées au nom de domaine de votre site web, nous vous invitons à consulter directement notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
 
 ### Étape 4 : vérifier ou modifier la configuration de votre domaine
 
