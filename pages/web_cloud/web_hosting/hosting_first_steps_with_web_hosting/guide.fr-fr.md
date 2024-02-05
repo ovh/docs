@@ -48,7 +48,7 @@ Dans ce qui va suivre, le guide va s'organiser de la façon suivante :
  - [Étape 2 - Installer votre site web](#website-installation)
  - [Étape 3 - Créer votre (vos) adresse(s) e-mail incluse(s) avec votre hébergement web](#email-creation)
  - [Étape 4 - Vérifier et/ou modifier la configuration de votre nom de domaine](#domain-configuration)
- - [Étape 5 - Autres options disponibles avec les hébergements web](#other-options)
+ - [Étape 5 - Autres options/offres disponibles avec les hébergements web](#other-options)
 
 ### Étape 1 - Délimiter votre projet <a name="project-delimitation"></a>
 
@@ -138,20 +138,20 @@ S'il s'agit de la migration d'un site web et/ou d'adresses e-mail associées au 
 > - **Pour la liaison entre votre nom de domaine et votre offre e-mail OVHcloud** : consultez uniquement le guide **4** ci-dessus pour récupérer les noms des serveurs e-mail OVHcloud à renseigner dans la zone DNS active de votre nom de domaine. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers les serveurs e-mail OVHcloud.
 >
 
-### Étape 5 - Autres options disponibles avec les hébergements web <a name="other-options"></a>
+### Étape 5 - Autres options/offres disponibles avec les hébergements web <a name="other-options"></a>
 
-En fonction de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), des options supplémentaires sont disponibles gratuitement.
+En fonction de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), des options/offres supplémentaires sont disponibles gratuitement.
 
 #### 5.1 - L'option SSL
 
-Les certificats SSL permettent de rendre accessible votre site web en utilisant le protocole « HTTPS ». Ce protocole chiffre les échanges entre votre hébergement et les personnes qui consultent votre site web.
+Les certificats SSL permettent de rendre accessible votre site web en utilisant le protocole « HTTPS ». Ce protocole chiffre les échanges entre votre hébergement web et les personnes qui consultent votre site web.
 
-Quelque soit l'hébergement web, vous pouvez activer gratuitement un certificat SSL « Let's encrypt ».
+Quelque soit l'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), vous pouvez activer gratuitement un certificat SSL **Let's encrypt**.
 Pour plus de détails sur les certificats SSL (gratuits ou payants) proposés sur les hébergements web, consultez notre guide « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
 
 #### 5.2 - Les offres CDN
 
-Une offre CDN permet de mettre en cache une partie de votre site web. Ainsi, les temps de chargement des pages qui constituent votre site web sont réduits. Ceci particulièrement pour les visiteurs géographiquement éloignés du data centre où est présent votre hébergement web.
+Quelles que soit nos offres CDN, elles permettent de mettre en cache une partie de votre site web. Ainsi, les temps de chargement des pages qui constituent votre site web sont réduits. Ceci particulièrement pour les visiteurs géographiquement éloignés du data centre où est présent votre hébergement web.
 
 Avec les hébergements web, OVHcloud propose **3** offres CDN :
 
@@ -161,17 +161,29 @@ Avec les hébergements web, OVHcloud propose **3** offres CDN :
 
 Vous ne pouvez pas cumuler plusieurs offres CDN sur un même hébergement web.
 
-L'offre **CDN Basic** est incluse uniquement sur les hébergements web **Performance**.
-Pour les autres hébergements web et en fonction de ceux-ci, l'offre **CDN Basic** mais aussi les autres offres CDN disponibles seront payantes.
+L'offre **CDN Basic** est incluse gratuitement sur les hébergements web **Performance** uniquement.
+Pour les autres [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) et en fonction de ceux-ci, l'offre **CDN Basic** mais aussi les autres offres CDN disponibles seront payantes.
 
-Retrouvez plus d'informations sur nos différentes options CDN dans notre guide « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
+Retrouvez plus d'informations sur nos différentes offres CDN dans notre guide « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
 
 #### 5.3 - Les serveurs de base de données « Web Cloud Databases »
 
 Si vous disposez d'un hébergement web **Performance**, vous pouvez activer gratuitement un serveur de base de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
-Pour les autres hébergements web et en fonction de ceux-ci, l'activation d'un serveur « Web Cloud Databases » sera payante.
+Pour les autres [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) et en fonction de ceux-ci, l'activation d'un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) est payante.
 
 Retrouvez plus de détails sur son utilisation dans notre documentation intitulée « [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
+
+#### 5.4 - Envoyer des e-mails depuis votre site web
+
+Tous nos [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) permettent d'envoyer gratuitement des e-mails à partir de votre site web ou d'un script spécifique.
+
+Retrouvez tous les détails sur cette fonctionnalité dans notre guide intitulé « [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records) ».
+
+#### 5.5 - Les tâches plannifiées « CRON »
+
+Les tâches « CRON » permettent d'exécuter automatiquement des scripts hébergés sur votre hébergement web.
+
+Si votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) dispose de l'option, consultez notre guide « [Créer des tâches automatisées (CRON) sur votre hébergement Web](/pages/web_cloud/web_hosting/cron_tasks) » pour plus de détails sur cette fonctionnalité.
 
 ## Aller plus loin
 
