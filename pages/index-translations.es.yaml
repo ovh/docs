@@ -62,8 +62,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: VMware NSX
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v: VMware NSX-v
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-backup-drp: Copias de seguridad y solución de recuperación ante desastres
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: VMware Tanzu
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Redes
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity: SecNumCloud Connectivity
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-secnumcloud: SecNumCloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Conceptos

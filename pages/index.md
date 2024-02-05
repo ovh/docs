@@ -409,7 +409,7 @@
             + [Using Zerto between OVHcloud and a third party platform](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud)
             + [Delete VM replica from Zerto recovery site](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_vm_replica_deletion)
             + [Reregister VMs in a new PCC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_register_vmx)
-        + [SecNumCloud]
+        + [SecNumCloud](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-secnumcloud)
             + [Responsibility sharing for the SecNumcloud-qualified VMware on OVHcloud service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/SNC-responsibility-sharing)
             + [Mise en route de votre vSphere SecNumCloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc_getting_started)
             + [SPN Concept](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn)
