@@ -1,7 +1,7 @@
 ---
 title: MongoDB Discovery - Getting started
 excerpt: Get started with MongoDB Free Tier through the OVHcloud Control Panel
-updated: 2024-01-29
+updated: 2024-02-05
 ---
 
 ## Objective
