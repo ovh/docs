@@ -37,10 +37,10 @@ You can list your clusters here with a new tab in the interface:
 ![list_clusters](images/02-list-cluster-v2.png)
 
 When you select your cluster you have the list of the 3 servers inside this one:
-![list_servers](images/04-crop.png)
+![list_servers](images/03-nodes-v3.png)
 
 Interface still the same, no more changes at this level as yo ucan see :
-![detail_server](images/05.png)
+![detail_server](images/04-general-information-v3.png)
 
 
 
