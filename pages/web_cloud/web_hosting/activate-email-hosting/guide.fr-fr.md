@@ -1,7 +1,7 @@
 ---
 title: "Activer les adresses e-mails incluses dans votre hébergement web"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-updated: 2023-03-02
+updated: 2024-02-06
 ---
 
 ## Objectif
@@ -17,6 +17,15 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre espace client OVHcloud.
 - Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+
+> [!warning]
+>
+> Si vous souhaitez activer l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » pour un nom de domaine externe (non enregistré chez OVHcloud), vous devrez, à minima, créer une zone DNS chez OVHcloud pour votre nom de domaine externe. Consultez notre guide « [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create) » si nécessaire. Ceci afin que votre nom de domaine apparaîsse dans la liste des noms de domaine disponibles lors de l'activation de l'option.
+>
+> De plus, si votre nom de domaine est déjà enregistré ou si une zone DNS existe déjà pour ce dernier chez OVHcloud dans un autre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) que le vôtre, consultez notre documentation intitulée « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) » pour en récupérer la gestion.
+>
+> Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web directement. Faites le point avec l'actuel gestionnaire de l'hébergement web accompagné du présent guide.
+>
 
 ## En pratique
 
