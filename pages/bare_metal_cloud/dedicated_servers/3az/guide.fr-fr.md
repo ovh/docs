@@ -4,7 +4,7 @@ excerpt: 'Discover the 3AZ service from OVH, offering unparalleled high availabi
 updated: 2023-12-18
 ---
 
-## Objectif
+## Objective
 
 OVHcloud offers its innovative Bare Metal service in the 3-AZ region, a significant development in the company's regionalization strategy. This service, available in the Paris metropolitan area, sets a new industry standard for reliability and performance in Bare Metal servers.
 
@@ -12,10 +12,10 @@ Service Description
 Bare Metal Multi-Az in the 3-AZ region caters to customers requiring high availability and redundancy in their business continuity plans. This service provides Bare Metal servers across three proximal data centers in Paris, connected by a low-latency network. It ensures enhanced security, improved performance, and uninterrupted functionality, even in the event of localized incidents.
 
 
-## Prérequis
+## Requirements
 
 
-## En pratique
+## Instructions
 
 
 Purpose of the Service
@@ -39,11 +39,11 @@ You can list your clusters here with a new tab in the interface:
 When you select your cluster you have the list of the 3 servers inside this one:
 ![list_servers](images/04-crop.png)
 
-A interface still the same, no more changes at this level as yo ucan see :
+Interface still the same, no more changes at this level as yo ucan see :
 ![detail_server](images/05.png)
 
 
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com>.
