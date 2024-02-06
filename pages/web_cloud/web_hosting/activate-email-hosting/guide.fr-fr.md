@@ -20,7 +20,7 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 > [!warning]
 >
-> Si vous souhaitez activer l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » pour un nom de domaine externe (non enregistré chez OVHcloud), vous devrez, à minima, créer une zone DNS chez OVHcloud pour votre nom de domaine externe. Consultez notre guide « [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create) » si nécessaire. Ceci afin que votre nom de domaine apparaîsse dans la liste des noms de domaine disponibles lors de l'activation de l'option.
+> Si vous souhaitez activer l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » pour un nom de domaine externe (non enregistré chez OVHcloud), vous devez créer (a minima) une zone DNS chez OVHcloud pour votre nom de domaine externe. Consultez notre guide « [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create) » si nécessaire. Cela permettra à votre nom de domaine d'apparaître dans la liste des noms de domaine disponibles lors de l'activation de l'option.
 >
 > De plus, si votre nom de domaine est déjà enregistré ou si une zone DNS existe déjà pour ce dernier chez OVHcloud dans un autre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) que le vôtre, consultez notre documentation intitulée « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) » pour en récupérer la gestion.
 >
