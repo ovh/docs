@@ -12,8 +12,6 @@ Service Description
 Bare Metal Multi-Az in the 3-AZ region caters to customers requiring high availability and redundancy in their business continuity plans. This service provides Bare Metal servers across three proximal data centers in Paris, connected by a low-latency network. It ensures enhanced security, improved performance, and uninterrupted functionality, even in the event of localized incidents.
 
 
-## Requirements
-
 
 ## Instructions
 
