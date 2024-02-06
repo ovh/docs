@@ -115,7 +115,7 @@ La tâche sera prête dans quelques minutes. Vous pouvez alors modifier tous ses
 |Variables|Vous ne pouvez définir que des variables dans un script. Les ajouter à l'URL appelant le script ne fonctionnera pas (Exemple : www/jobs/cron.php?variable=value).|
 |Limite de données|Une tâche ne peut générer que 5 Mo de données (*stdin/stderr*). Par exemple, si un script écrit des données dans un fichier .txt, l'exécution s'arrête automatiquement lorsque le fichier atteint 5 Mo.|
 |Scripts produisant des erreurs|Si un script est défectueux, il sera automatiquement désactivé après 10 tentatives d'exécution échouées. Le rapport d'erreur ne sera envoyé que lorsque les 10 tentatives auront échoué.
-Corrigez votre script en fonction du rapport d'erreur reçu puis réactivez la « tâche CRON » dans le Panneau de configuration. (Cliquez sur `...`{.action}, puis sur `Modifier`{.action}.)|
+Corrigez votre script en fonction du rapport d'erreur reçu puis réactivez la « tâche CRON » dans le panneau de configuration (cliquez sur `...`{.action} puis sur `Modifier`{.action}).|
 |Rapports d'exécution|Les rapports ne seront envoyés à l'adresse électronique sélectionnée qu'une fois par jour (pendant les heures de nuit).|
 
 ### Dépannage
