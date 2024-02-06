@@ -1,7 +1,7 @@
 ---
 title: '3AZ: High Availability and Redundancy for Bare Metal Customers'
 excerpt: 'Discover the 3AZ service from OVH, offering unparalleled high availability and redundancy across three data centers.'
-updated: 2023-12-18
+updated: 2024-02-06
 ---
 
 ## Objective
@@ -34,7 +34,7 @@ You can list your clusters here with a new tab in the interface:
    
 ![left_menu](images/01-all-servers-v3.png)
    
-![list_clusters](images/02-list-cluster-v2.png)
+![list_clusters](images/02-list-cluster-v3.png)
 
 When you select your cluster you have the list of the 3 servers inside this one:
 ![list_servers](images/03-nodes-v3.png)
