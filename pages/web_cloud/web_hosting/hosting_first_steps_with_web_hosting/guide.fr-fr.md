@@ -49,7 +49,7 @@ Vous pouvez ainsi utiliser ce guide comme un « référentiel » d'actions possi
 - [Étape 2 - Installer votre site web](#website-installation)
 - [Étape 3 - Créer vos adresses e-mail incluses avec votre hébergement web](#email-creation)
 - [Étape 4 - Vérifier et/ou modifier la configuration de votre nom de domaine](#domain-configuration)
-- [Étape 5 - Autres options / offres / fonctionnalités disponibles avec les hébergements web](#other-options)
+- [Étape 5 - Autres options disponibles avec les hébergements web](#other-options)
 
 ### Étape 1 - Délimiter votre projet <a name="project-delimitation"></a>
 
