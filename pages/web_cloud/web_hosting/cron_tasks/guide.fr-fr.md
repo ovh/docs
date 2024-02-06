@@ -1,7 +1,7 @@
 ---
 title: "Créer des tâches automatisées (CRON) sur votre hébergement Web"
 excerpt: "Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web"
-updated: 2023-10-31
+updated: 2024-02-06
 ---
 
 <style>
@@ -114,7 +114,8 @@ La tâche sera prête dans quelques minutes. Vous pouvez alors modifier tous ses
 |Durée|La durée d'exécution d'une tâche est de 60 minutes. Si un script dépasse cette durée d'exécution, il sera automatiquement arrêté par le système.|
 |Variables|Vous ne pouvez définir que des variables dans un script. Les ajouter à l'URL appelant le script ne fonctionnera pas (Exemple : www/jobs/cron.php?variable=value).|
 |Limite de données|Une tâche ne peut générer que 5 Mo de données (*stdin/stderr*). Par exemple, si un script écrit des données dans un fichier .txt, l'exécution s'arrête automatiquement lorsque le fichier atteint 5 Mo.|
-|Scripts produisant des erreurs|Si un script est défectueux, il sera automatiquement désactivé après 10 tentatives d'exécution ayant échoué. Réactivez-le simplement dans le Panneau de configuration. (Cliquez sur `...`{.action}, puis `Modifier`{.action}.)|
+|Scripts produisant des erreurs|Si un script est défectueux, il sera automatiquement désactivé après 10 tentatives d'exécution échouée. Le rapport d'erreur ne sera envoyé que lorsque les 10 tentatives auront échouées.
+Corrigez votre script en fonction du rapport d'erreur reçu puis réactivez la « tâche CRON » dans le Panneau de configuration. (Cliquez sur `...`{.action}, puis sur `Modifier`{.action}.)|
 |Rapports d'exécution|Les rapports ne seront envoyés à l'adresse électronique sélectionnée qu'une fois par jour (pendant les heures de nuit).|
 
 ### Dépannage
