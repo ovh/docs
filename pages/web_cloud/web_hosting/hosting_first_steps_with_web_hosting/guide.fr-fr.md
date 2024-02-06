@@ -98,7 +98,7 @@ Pour utiliser cette option, consultez notre guide « [Installer votre site web a
 > Si vous préférez installer manuellement votre CMS sans passer par l'option « Modules en 1 clic », consultez notre documentation intitulée « [Installer manuellement un CMS sur mon hébergement web](/pages/web_cloud/web_hosting/cms_manual_installation) ».
 >
 
-### Étape 3 - Créer vos adresses e-mail (facultatif)) <a name="email-creation"></a>
+### Étape 3 - Créer vos adresses e-mail (facultatif) <a name="email-creation"></a>
 
 Votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) inclut une ou plusieurs adresses e-mail, que vous pouvez choisir d'activer ou non.
 
