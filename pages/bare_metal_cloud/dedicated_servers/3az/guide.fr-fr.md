@@ -32,7 +32,7 @@ For optimal performance, a region should be selected closest to its users. For g
 
 You can list your clusters here with a new tab in the interface:
    
-![left_menu](images/02-without-notes-crop-02.png)
+![left_menu](images/01-all-servers-v2.png)
    
 ![list_clusters](images/02-without-notes-crop.png)
 
