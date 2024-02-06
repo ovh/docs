@@ -39,7 +39,7 @@ On [LinuxGSM](https://linuxgsm.com/servers/pwserver/), go to the "Dependencies" 
 
 > [!warning]
 >
-> If you encounter an error of type: `E: Package 'netcat' has no installation candidate`, install `netcat-traditional` with the following command: `sudo apt install netcat-traditional`.
+> If you encounter an error of the type: `E: Package 'netcat' has no installation candidate`, install `netcat-traditional` with the following command: `sudo apt install netcat-traditional`.
 >
 
 ### Install the Palworld server
@@ -66,7 +66,7 @@ Once you have created a new user, switch to it:
 
 #### Download linuxgsm.sh
 
-To download linuxgsm.sh, run the following command: 
+To download linuxgsm.sh, run the following commands: 
 
 ```sh
 ~$ curl -Lo linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh pwserver
@@ -84,7 +84,7 @@ Follow the instructions on the screen and press the `Enter`{.action} key to conf
 
 > [!warning]
 >
-> It is possible that an error of type `missing dependencies : distro-info libsdl2-2.0-0:i386 netcat-openbsd` is displayed. In this example, it is indicated that the `distro-info libsdl2-2.0-0:i386 netcat-openbsd` dependencies are missing and must be installed manually. 
+> It is possible that an error of the type `missing dependencies: distro-info libsdl2-2.0-0:i386 netcat-openbsd` is displayed. In this example, it is indicated that the `distro-info libsdl2-2.0-0:i386 netcat-openbsd` dependencies are missing and must be installed manually. 
 >
 > Switch to your sudo user with the `su - <user>` command. Install the missing dependencies with the command: `sudo apt install distro-info libsdl2-2.0-0:i386 netcat-openbsd`. Switch back to your `pwserver` user and run the installation again: `./pwserver install`
 >
