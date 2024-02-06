@@ -1,32 +1,36 @@
 ---
-title: 'Tutoriel - Comment créer un serveur Palworld sur un VPS OVHcloud'
-excerpt: 'Découvrez comment installer votre propre serveur Palworld'
-updated: 2024-02-05
+title: 'Tutoriel - Comment créer un serveur Palworld'
+excerpt: 'Découvrez comment installer votre propre serveur Palworld sur un VPS ou un Serveur Dédié OVHcloud'
+updated: 2024-02-06
 ---
 
 ## Objectif
 
 Développé par Pocket Pair, Palworld est un jeu qui mélange des éléments de survie, de fabrication d'objets et d'aventure, le tout dans un monde ouvert, peuplé par des créatures appelées « Pals ». Posséder son propre serveur dans un jeu comme Palworld offre plusieurs avantages, comme le contrôle total sur l'environnement de jeu et sur la communauté, l'amélioration des performances et de l'expérience de jeu, ou encore la possibilité d'organiser des évènements spéciaux.
 
-**Ce tutoriel décrit comment créer un serveur Palworld sur un VPS OVHcloud à l'aide de LinuxGSM. Le temps d'installation est estimé à moins de 10 minutes.**
-
+**Ce tutoriel décrit comment créer un serveur Palworld sur un VPS ou un Serveur Dédié OVHcloud à l'aide de LinuxGSM. Le temps d'installation est estimé à moins de 10 minutes.**
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
 - Avoir installé une distribution GNU/Linux sur le serveur
 - Disposer d'un accès administrateur (root) via SSH à votre serveur
 - Avoir une compréhension basique de l'administration GNU/Linux
 
+> [!warning]
+>
+> Si vous n'êtes pas familier avec l'utilisation d'un VPS, consultez notre guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
+>
+> Pour une installation sur un serveur dédié, assurez-vous d'avoir suivi les [premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
+
 ## En pratique
 
-Si vous n'êtes pas à l'aise avec les VPS, consultez notre guide «  [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#installation-ou-reinstallation-de-votre-vps-gamme-vps-actuelle) » si nécessaire.
-
-Une fois le système d'exploitation installé, connectez-vous à votre VPS en SSH comme décrit dans le guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
+Une fois le système d'exploitation installé, connectez-vous à votre VPS en SSH, tel que décrit dans le guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».<br>
+Si vous utilisez un serveur dédié, suivez les instructions du guide « [Premiers pas avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) ».
 
 ### Vérifier la compatibilité de votre système d'exploitation
 
-Avant de commencer, vérifiez que votre système d'exploitation est compatible. Pour plus de détail, consultez la partie « Compatibility » (Compatibilité) sur [LinuxGSM](https://linuxgsm.com/servers/pwserver/).
+Avant de commencer, vérifiez que votre système d'exploitation est compatible. Pour plus de détails, consultez la partie « Compatibility » (Compatibilité) sur [LinuxGSM](https://linuxgsm.com/servers/pwserver/).
 
 ### Installer les dépendances
 
@@ -34,7 +38,7 @@ Sur [LinuxGSM](https://linuxgsm.com/servers/pwserver/), rendez-vous dans la part
 
 > [!warning]
 >
-> Si vous rencontrez une erreur de type : `E: Package 'netcat' has no installation candidate`, essayez d'installer `netcat-traditional` avec la commande suivante : `sudo apt install netcat-traditional`
+> Si vous rencontrez une erreur de type : `E: Package 'netcat' has no installation candidate`, installez `netcat-traditional` avec la commande suivante : `sudo apt install netcat-traditional`.
 >
 
 ### Installer le serveur Palworld
@@ -53,13 +57,13 @@ Pour des raisons de sécurité, entrez un mot de passe fort.
 
 Plusieurs informations vous sont demandées. Appuyez sur la touche `Entrée`{.action} pour valider.
 
-Une fois créé, basculez vers le nouvel utilisateur :
+Une fois le nouvel utilisateur créé, basculez vers celui-ci :
 
 ```sh
 ~$ sudo su - pwserver
 ```
 
-#### Téléchargez linuxgsm.sh
+#### Télécharger linuxgsm.sh
 
 Pour télécharger linuxgsm.sh, exécutez la ligne de commande suivante : 
 
@@ -74,16 +78,19 @@ Pour finaliser l'installation du serveur, éxécutez la commande suivante :
 ```sh
 ~$ ./pwserver install
 ```
+
 Suivez les instructions à l'écran et appuyez sur la touche `Entrée`{.action} pour valider.
 
 > [!warning]
 >
-> Il est possible qu'une erreur de type `missing dependencies : distro-info libsdl2-2.0-0:i386 netcat-openbsd` s'affiche. Dans cet exemple, il est indiqué que les dépendances `distro-info libsdl2-2.0-0:i386 netcat-openbsd` sont manquantes, et qu'il faut les installer manuellement. Basculez vers votre utilisateur ayant les droits sudo avec la commande `su - <user>`. Installez les dépendances manquantes avec la commande : `sudo apt install distro-info libsdl2-2.0-0:i386 netcat-openbsd`. Basculez à nouveau vers votre utilisateur `pwserver` et relancez l'installation : `./pwserver install`
+> Il est possible qu'une erreur de type `missing dependencies : distro-info libsdl2-2.0-0:i386 netcat-openbsd` s'affiche. Dans cet exemple, il est indiqué que les dépendances `distro-info libsdl2-2.0-0:i386 netcat-openbsd` sont manquantes et qu'il faut les installer manuellement. 
+>
+> Basculez vers votre utilisateur ayant les droits sudo avec la commande `su - <user>`. Installez les dépendances manquantes avec la commande : `sudo apt install distro-info libsdl2-2.0-0:i386 netcat-openbsd`. Basculez à nouveau vers votre utilisateur `pwserver` et relancez l'installation : `./pwserver install`
 >
 
-### Conclusion
+Votre serveur Palworld est maintenant installé sur votre VPS OVHcloud.
 
-Votre serveur Palworld est maintenant installé sur votre VPS OVHcloud. Notez que ce guide d'installation est également valable pour un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal). Pour connaître la liste des commandes disponibles, consultez la partie « Basic Usage » de [LinuxGSM](https://linuxgsm.com/servers/pwserver/).
+our connaître la liste des commandes disponibles, consultez la partie « Basic Usage » de [LinuxGSM](https://linuxgsm.com/servers/pwserver/).
 
 ## Aller plus loin
 
