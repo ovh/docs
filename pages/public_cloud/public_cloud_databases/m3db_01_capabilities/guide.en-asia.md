@@ -152,11 +152,11 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 1 day.
+*Essential* plan clusters are automatically backed up daily. Backup retention is 1 day.
 
-*Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 6 days.
+*Business* plan clusters are automatically backed up daily. Backup retention is 6 days.
 
-*Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 13 days.
+*Enterprise* plan clusters are automatically backed up daily. Backup retention is 13 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
