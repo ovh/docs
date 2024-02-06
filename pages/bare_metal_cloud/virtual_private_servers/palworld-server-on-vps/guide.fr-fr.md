@@ -90,7 +90,7 @@ Suivez les instructions à l'écran et appuyez sur la touche `Entrée`{.action} 
 
 Votre serveur Palworld est maintenant installé sur votre VPS OVHcloud.
 
-our connaître la liste des commandes disponibles, consultez la partie « Basic Usage » de [LinuxGSM](https://linuxgsm.com/servers/pwserver/).
+Pour connaître la liste des commandes disponibles, consultez la partie « Basic Usage » de [LinuxGSM](https://linuxgsm.com/servers/pwserver/).
 
 ## Aller plus loin
 
