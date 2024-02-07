@@ -60,7 +60,7 @@ Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disp
 
 ![hosting](images/ows-presentation.gif){.thumbnail}
 
-Sur le panneau de gauche, le tableau de bord d'OVHcloud Web Statistics présente 7 sections :
+Le tableau de bord d'OVHcloud Web Statistics présente 7 sections :
 
 - Dashboard : visualisation du trafic sur les sites de votre hébergement.
 - Browsers : classement des navigateurs internet les plus utilisés pour visualiser vos sites.
