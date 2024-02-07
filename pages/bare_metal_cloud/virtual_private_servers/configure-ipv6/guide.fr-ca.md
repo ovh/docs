@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'IPv6 sur un serveur VPS"
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
-updated: 2023-01-29
+updated: 2024-02-07
 ---
 
 ## Objectif
@@ -262,15 +262,15 @@ Les fichiers de configuration réseau se trouvent dans le répertoire `/etc/sysc
 
 ```bash
 ~# cd /etc/sysconfig/network-scripts/
-~# mkdir backup
-~# cp ifcfg-eth0 backup/ifcfg-eth0
+~# sudo mkdir backup
+~# sudo cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
 Vous pourrez alors annuler les modifications à l'aide des commandes suivantes :
 
 ```bash
-~# rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
-~# cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+~# sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
+~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 Modifiez ensuite le fichier `ifcfg-eth0`, en ajoutant la configuration IPv6 de votre serveur. Remplacez les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs personnalisées.
@@ -458,7 +458,7 @@ Dans le cas des distributions plus récentes (telles que CentOS, Debian 9, Ubunt
 Dans certains cas d'utilisation spécifiques, il est recommandé d'éviter la réinitialisation en désactivant la gestion automatique du réseau dans Cloud-init. Pour cela, utilisez la commande suivante permettant de créer un fichier `/etc/cloud/cloud.cfg.d/98-disable-network-config.cfg` comportant la valeur `network: {config: disabled}` :
 
 ```bash
-echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg
+sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg
 ```
 
 > [!warning]
