@@ -1,12 +1,12 @@
 ---
-title: API OVHcloud & installation OS
-excerpt: Découvrez comment l'API OVHcloud vous permet d'installer ou de re-installer un OS sur votre serveur
-updated: 2024-02-07
+title: "API OVHcloud et installation d'un OS"
+excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
+updated: 2024-02-12
 ---
 
 ## Objectif
 
-Il peut être intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
+Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
 
 ## Prérequis
 
@@ -59,7 +59,7 @@ Vous y trouverez des informations pertinentes comme par exemple :
 |usage,category,family|Usage, catégorie, et famille d'OS|
 |project/os|Informations de l'OS sur la gouvernance, la version, les notes de version et l'URL du projet|
 |project/usage|Idem que project/os, mais sur la couche logicielle si applicable|
-|license/os|Informations de l'OS sur la licence : URL du contrat de licence et type licence|
+|license/os|Informations de l'OS sur la licence : URL du contrat de licence et type de licence|
 |license/usage|Idem que license/os, mais sur la couche logicielle si applicable|
 |filesystems|Liste des systèmes de fichiers compatibles|
 |hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibilité ou non avec les raids matériels, logiciels et le LVM²|
@@ -70,7 +70,7 @@ Vous y trouverez des informations pertinentes comme par exemple :
 
 > [!primary]
 >
-> Si vous avez besoin d'avoir toutes ces informations pour tous les OS disponibles dans le catalogue en un seul appel, nous vous recommandons d'utiliser plutôt l'appel `/dedicated/installationTemplate/templateInfos`{.action}.
+> Si vous avez besoin d'obtenir toutes ces informations pour tous les OS disponibles dans le catalogue en un seul appel, nous vous recommandons d'utiliser plutôt l'appel `/dedicated/installationTemplate/templateInfos`{.action} ci-dessous.
 >
 
 > [!api]
@@ -106,7 +106,7 @@ Chaque question a les attributs suivants :
 
 |Attribut|Description|
 |---|---|
-|default|Si cette question n'est pas répondue, la valeur par défaut sera utilisée|
+|default|Si cette question n'obtient pas de réponse, la valeur par défaut sera utilisée|
 |mandatory|Si cette question est obligatoire¹|
 |type|Le type de valeur attendue dans la réponse|
 |name|Le nom de la question qui permet d'identifier la question (en anglais uniquement)|
@@ -209,7 +209,7 @@ Avec les paramètres suivants :
 
 `userMetadata`{.action} contient une liste de clés/valeurs donnant les réponses aux questions :
 
-- La clé doit contenir le nom (`name`{.action}) de la question,
+- La clé doit contenir le nom (`name`{.action}) de la question.
 - La valeur doit contenir la réponse à la question, dans le format qui correspond au `type`{.action} requis.
 
 Exemple d'un payload pour installer Windows Server 2022 Standard (Core) en français :

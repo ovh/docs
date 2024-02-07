@@ -1,12 +1,12 @@
 ---
-title: OVHcloud API & OS Installation
+title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
 updated: 2024-02-07
 ---
 
 ## Objective
 
-Fully automating OS installation or re-installation on a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
+Fully automating OS installation or reinstallation on a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
 
 ## Requirements
 
@@ -31,14 +31,14 @@ You can list all your [dedicated servers](https://www.ovhcloud.com/en-gb/bare-me
 > @api {v1} /dedicated/server GET  /dedicated/server
 >
 
-To list all compatible OSes for a specific dedicated server, you can use the following API call:
+To list all compatible OSs for a specific dedicated server, you can use the following API call:
 
 > [!api]
 >
 > @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}/install/compatibleTemplates
 >
 
-In the response, look at the contents of the `ovh` key: this is the list of OSes in the OVHcloud catalog that you can install on this server.
+In the response, look at the contents of the `ovh` key: this is the list of OSs in the OVHcloud catalog that you can install on this server.
 
 ### OS Details informations <a name="os-details"></a>
 
@@ -49,7 +49,7 @@ In the `/dedicated/installationTemplate`{.action} section, you can display the d
 > @api {v1} /dedicated/installationTemplate GET  /dedicated/installationTemplate/{templateName}
 >
 
-You can find interesting informations such as for example:
+You can find interesting information such as the following:
 
 |Attribute|Description|
 |---|---|
@@ -57,20 +57,20 @@ You can find interesting informations such as for example:
 |description|OS Display Name|
 |endOfInstall|OVHcloud OS end of availability date¹|
 |usage,category,family|Usage, category, and OS family|
-|project/os|Informations about OS governance, version, release notes and projet URL|
+|project/os|Information about OS governance, version, release notes and project URL|
 |project/usage|Same as project/os, but at the software layer if applicable|
-|license/os|Informations about OS license : licensing contract URL and licensing type|
+|license/os|Information about OS license : licensing contract URL and licensing type|
 |license/usage|Same as license/os, but at the software layer if applicable|
 |filesystems|Compatible file systems types|
 |hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
-|inputs|OS specific questions (see explanation above)|
+|inputs|OS specific questions (see explanation below)|
 
 ¹ Customers that don't use images from the OVHcloud catalogue (installation from a custom image ([BYOI](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)/[BYOLinux](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)), installation over the network, or manually via IPMI) are not affected by this limitation.<br />
 ² For more details, see [partitioning customization](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh).<br />
 
 > [!primary]
 >
-> If you need to see this information for all available OSes in the catalog, you should consider using the API call `/dedicated/installationTemplate/templateInfos`{.action} instead.
+> If you need to see this information for all available OSs in the catalog, you should consider using the API call `/dedicated/installationTemplate/templateInfos`{.action} instead.
 >
 
 > [!api]
@@ -80,7 +80,7 @@ You can find interesting informations such as for example:
 
 ### OS Questions <a name="os-inputs"></a>
 
-Some OSes can have a list of specific questions. If that is the case, the `inputs` key contains a list of questions.
+Some OSs can have a list of specific questions. If that is the case, the `inputs` key contains a list of questions.
 
 Example of specific questions for Windows Server 2022 Standard (Core):
 
@@ -117,7 +117,7 @@ Each question has the following attributes:
 
 ### Disk Groups <a name="disk-group"></a>
 
-Some [dedicated servers](https://www.ovhcloud.com/fr/bare-metal/) have multiple groups of disks; for example one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
+Some [dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
 
 To list the disk groups and their disks, you can use the following API call in order to identify the disk group on which you want the OS to be installed:
 
@@ -180,12 +180,12 @@ Example reply:
 
 In this example, there are 2 disk groups:
 
-- the first one (diskGroupId=1) contains 2 disks of 480 GB each,
-- the second one (diskGroupId=2) contains 2 disks of 1,9 TB each.
+- the first one (diskGroupId=1) contains 2 x 480 GB disks.
+- the second one (diskGroupId=2) contains 2 x 1,9 TB disks.
 
 > [!primary]
 >
-> By default, OS will be installed on diskGroupId 1.
+> By default, the OS will be installed on diskGroupId 1.
 >
 
 ### Create an OS installation task <a name="install-task"></a>
@@ -209,7 +209,7 @@ With the following parameters:
 
 `userMetadata` contains a list of key/value with the answers to the OS-specific questions:
 
-- Key must be the `name` of the question,
+- Key must be the `name` of the question.
 - Value must be the answer to the question, in the requested `type`.
 
 Payload example to install Windows Server 2022 Standard (Core) in French:
