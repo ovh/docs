@@ -1,7 +1,7 @@
 ---
 title: "Automatische Tasks mit einem Webhosting verwenden"
 excerpt: "Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren"
-updated: 2023-10-31
+updated: 2024-02-07
 ---
 
 <style>
@@ -117,7 +117,7 @@ Der Task wird in einigen Minuten bereit sein. Sie können dann alle Einstellunge
 |Laufzeit|Die Ausführungsdauer eines Tasks beträgt 60 Minuten. Wenn ein Skript diese Ausführungsdauer überschreitet, wird es automatisch vom System angehalten.|
 |Variable|Sie können Variablen nur in einem Skript definieren. Sie zur URL hinzuzufügen, die das Skript anruft, funktioniert nicht (Beispiel: www/jobs/cron.php?variable=value).|
 |Datenlimit|Ein Task kann nur 5 MB an Daten generieren (*stdin/stderr*). Wenn beispielsweise ein Skript Daten in eine .txt-Datei schreibt, endet die Ausführung automatisch, sobald die Datei 5 MB erreicht.|
-|Fehlergenerierende Skripte|Wenn ein Skript fehlerhaft ist, wird es nach 10 gescheiterten Ausführungsversuchen automatisch deaktiviert. Reaktivieren Sie es einfach im Kundencenter. (Klicken Sie auf `...`{.action} und dann `Ändern`{.action}.)|
+|Fehlergenerierende Skripte|Wenn ein Skript fehlerhaft ist, wird es nach 10 fehlgeschlagenen Ausführungsversuchen automatisch deaktiviert. Der Fehlerbericht wird erst gesendet, wenn alle 10 Versuche fehlgeschlagen sind.</br>Korrigieren Sie Ihr Skript auf der Grundlage des erhaltenen Fehlerberichts und aktivieren Sie dann den „CRON-Task“ in der Systemsteuerung (klicken Sie auf `...`{.action} und dann auf `Ändern`{.action}.)|
 |Ausführungsberichte|Die Berichte werden nur einmal täglich (während der Nachtstunden) an die ausgewählte E-Mail-Adresse versandt.|
 
 ### Fehlerdiagnose
