@@ -29,37 +29,67 @@ Simply click on the 'create' button at the top right of the manager and follow t
 4. Click on Create
 5. Wait for your Rancher to be created
 6. Access the details of your newly created Rancher by click on its name
-7. On the "Security and Access" section, click on "Generate access details", confirm, then click on "access Rancher UI", copy/paste the provided credentials on the Rancher login page. Note: you will to change your password at first login. If you lose your password you have the possibility to generate a new one by using the "Generate access details" action button.
+7. On the "Security and Access" section, click on "Generate access details", confirm, then click on "access Rancher UI"
+8. Copy/Paste the provided credentials on the Rancher login page. Note: you will to change your password at first login. If you lose your password you have the possibility to generate a new one by using the "Generate access details" action button.
 
+You now have access to the Rancher dashboard, it is designed to offer an intuitive and comprehensive view of your containerized environment.
+This web-based interface serves as your command center for orchestrating containers & clusters, visualizing cluster health, and managing various aspects of your Kubernetes infrastructure. Explore the navigation menu, which includes sections for clusters, projects, applications, and Rancher settings.
 
-###  Navigating the Rancher Dashboard
-
-The Rancher dashboard is designed to offer an intuitive and comprehensive view of your containerized environment.
-This web-based interface serves as your command center for orchestrating containers & clusters, visualizing cluster health, and managing various aspects of your Kubernetes infrastructure. Explore the navigation menu, which typically includes sections for clusters, projects, applications, and infrastructure. This is where you'll gain insights into the health and performance of your clusters.
-
-There is two options to add clusters to your Rancher:
+As it is a brand new Rancher instance you do not have any downstream Kubernetes clusters, next step is to add some of them. To do so you have two options: Import existing Kubernetes clusters or Create new clusters using Rancher.
 
 ### Import or Create your Kubernetes clusters :
 
 #### - Import an existing Kubernetes cluster
 
-For organizations with pre-existing Kubernetes clusters, Rancher simplifies integration. Import your clusters seamlessly, allowing Rancher to take over the management responsibilities. This streamlined process facilitates the transition to Rancher without disrupting your existing infrastructure.
+For organizations with pre-existing Kubernetes clusters, Rancher simplifies integration. Import your clusters seamlessly, wherever they are deployed, allowing Rancher to take over the management responsibilities. This process facilitates the transition to Rancher without disrupting your existing infrastructure.
 
-To do so, you can refer to the official Rancher documentation on how to [Register Existing Cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters).
+You can refer to the official Rancher documentation on how to [Register Existing Cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters).
 
-#### - Import an existing OVHcloud Managed Kubernetes Cluster
+#### - Import an existing OVHcloud [Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/) cluster
 
+If you already use our [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/) , you can easily import existing cluster.
+The workflow is similar to the one described on the official Rancher documentation on [how to register a cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters#registering-a-cluster) and it takes only few minutes.
 
+1. From the Rancher Homepage, click on 'Import Existing'
+2. Select 'Generic'
+3. Set the Cluster Name (it is not mandatory to match the name of your existing MKS cluster) then click on 'Create'
+4. Follow the instructions provided on the 'Registration' tab
 
-####  - Create a new Kubernetes cluster with Rancher
+  Run the kubectl command below on an existing Kubernetes cluster running a supported Kubernetes version to import it into Rancher:
+  ``` shell
+  $ kubectl apply -f https://rancher.ovh.net/v3/import/file.yaml
+  clusterrole.rbac.authorization.k8s.io/proxy-clusterrole-kubeapiserver unchanged
+  clusterrolebinding.rbac.authorization.k8s.io/proxy-role-binding-kubernetes-master unchanged
+  namespace/cattle-system created
+  serviceaccount/cattle created
+  clusterrolebinding.rbac.authorization.k8s.io/cattle-admin-binding created
+  secret/cattle-credentials-ac3c0a4 created
+  clusterrole.rbac.authorization.k8s.io/cattle-admin created
+  deployment.apps/cattle-cluster-agent created
+  service/cattle-cluster-agent created
+  ```
+5. wait until your cluster becomes available:
 
-First option is to create a Kubernetes cluster from scratch. Rancher simplifies the creation of clusters by allowing you to create them through the Rancher UI rather than more complex alternatives. Rancher provides multiple options for launching a cluster.
-You can have Rancher launch a Kubernetes cluster using any nodes you want. When Rancher deploys Kubernetes onto these nodes, you can choose between Rancher Kubernetes Engine (RKE) or RKE2 distributions.
-This involves specifying the type of cluster, whether it be a standard Kubernetes cluster or a custom configuration. Follow the guided steps to define cluster settings, number of nodes (master, worker, etcd), authentication, and any additional configurations.
+6. Tada ! Your cluster is now federated on your Rancher. You can click on 'Explore' to manage your MKS Cluster.
 
-#### - Create a new Kubernetes cluster on OVHcloud using Rancher
+####  - Create a Kubernetes cluster with Rancher
 
+Using this option you will be able to create Kubernetes cluster from scratch. Rancher simplifies the creation of clusters by allowing you to create them through the Rancher UI rather than more complex alternatives.
+You can use Rancher to launch a Kubernetes cluster using any nodes you want. Rancher can launch Kubernetes on any computers, including:
+  -  Bare-metal servers
+  -  On-premise virtual machines
+  -  Virtual machines hosted by an infrastructure provider
 
+When Rancher deploys Kubernetes onto these nodes, you can choose between Rancher Kubernetes Engine (RKE) or RKE2 distributions.
+Follow the official Rancher documentation on [How to launch Kubernetes with Rancher](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/launch-kubernetes-with-rancher) and follow guide to define cluster settings, number of nodes (master, worker, etcd), authentication, and any additional configurations.
+
+#### - Create a Kubernetes cluster on OVHcloud using Rancher
+
+You can use OVHcloud to host your Kubernetes clusters launched by Rancher. To do so there is two options:
+- Use OVHcloud as a **Hosted Kubernetes Provider** by using Rancher to create and federate [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
+- Use OVHcloud as an **Infrastructure Provider** by using Rancher to build a Kubernetes clusters using [OVHcloud computes instances](https://www.ovhcloud.com/en-ie/public-cloud/compute/) as nodes.
+
+We are providing two official drivers
 
 
 
