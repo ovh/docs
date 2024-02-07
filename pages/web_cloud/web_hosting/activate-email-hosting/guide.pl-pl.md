@@ -20,6 +20,15 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 - Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
+> [!warning]
+>
+> Jeśli chcesz aktywować opcję "adres(y) e-mail zawarty(e) w Twoim hostingu" dla zewnętrznej domeny (niezarejestrowanej w OVHcloud), **której administrator**, musisz utworzyć (co najmniej) strefę DNS w OVHcloud dla Twojej zewnętrznej domeny. W razie potrzeby skorzystaj z naszego przewodnika "[Tworzenie strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create)". Dzięki temu Twoja domena będzie mogła pojawić się na liście domen dostępnych po aktywacji opcji.
+>
+> Dodatkowo, jeśli Twoja domena jest już zarejestrowana w OVHcloud lub jeśli jedna strefa DNS już istnieje dla domeny [konto OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) niż własne, zapoznaj się z naszą dokumentacją "[Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)", aby uzyskać informacje na temat zarządzania domeną.
+>
+> Wreszcie, jeśli Twoja domena jest już powiązana z opcją "adres(y) e-mail zawarty(e) w Twoim hostingu" innego hostingu, nie będziesz mógł powiązać jej bezpośrednio z Twoim hostingiem. Zapoznaj się z aktualnym menedżerem hostingu i skorzystaj z tego przewodnika.
+>
+
 ## W praktyce
 
 ### Aktywacja pakietu e-mail
