@@ -20,6 +20,15 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
+> [!warning]
+>
+> Si quiere activar la opción "dirección(s) de correo incluida(s) con su alojamiento web" para un dominio externo (no registrado en OVHcloud) **del que deba ser obligatoriamente administrador**, deberá crear (al menos) una zona DNS en OVHcloud para su dominio externo. Si lo necesita, consulte nuestra guía "[Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)". Al activar esta opción, su dominio aparecerá en la lista de dominios disponibles.
+>
+> Por otro lado, si su dominio ya está registrado en OVHcloud o si existe una zona DNS para él en otra [cuenta de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) que el suyo, consulte nuestra documentación "[Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts)" para consultar su gestión.
+>
+> Por último, si su dominio ya está asociado a la opción "dirección(s) de correo incluida(s) con su alojamiento web" de otro alojamiento web, no podrá asociarlo directamente a su propio alojamiento web. Para más información, consulte esta guía.
+>
+
 ## Procedimiento
 
 ### Activar la solución de correo
