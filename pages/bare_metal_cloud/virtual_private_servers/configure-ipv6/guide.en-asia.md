@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2023-01-29
+updated: 2023-02-07
 ---
 
 ## Objective
@@ -30,10 +30,8 @@ The following sections contain configurations for the distributions we currently
 
 > [!warning]
 >
-> Please note that on the recent Linux operating systems we offer for VPS, the IPv6 address is configured by default. In this case, you do not need to configure it. Make sure to check your operating system configuration file before making any changes.
+> Please note that on the recent Linux operating systems we offer for VPS, the IPv6 address is configured by default. If this is the case, you don't need to configure it. Please check your operating system's configuration file before making any changes.
 >
-
-Configuring IPv6 on your VPS is done in multiple steps. At several points in the process you will be prompted to enter commands or to customise configuration files of your server.
 
 Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:
 
@@ -271,7 +269,7 @@ You will then be able to revert the changes, using the commands below:
 ~# cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Then we edit the `ifcfg-eth0` file, adding only the lines for the IPv6 configuration of the server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values.
+Then we edit the `ifcfg-eth0` file, adding only the lines for the IPv6 configuration of the server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
 ```console
 IPV6INIT=yes
@@ -294,7 +292,6 @@ IPV6_DEFAULTGW=2607:5300:201:abcd::1
 ```bash
 ~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
 ```
-
 - Edit the file and add the lines below. Replace the generic elements (*IPV6_GATEWAY* and **eth0** interface, if necessary) with your specific values.
 
 ```console
