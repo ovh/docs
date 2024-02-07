@@ -1,7 +1,7 @@
 ---
 title: "Die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren"
 excerpt: "Diese Anleitung erklärt, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können"
-updated: 2023-03-02
+updated: 2024-02-07
 ---
 
 > [!primary]
@@ -18,6 +18,15 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) in Ihrem OVHcloud Kundencenter.
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+> [!warning]
+>
+> Wenn Sie die Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ für eine externe (nicht bei OVHcloud registrierte) Domain aktivieren möchten **deren Administrator Sie sein müssen**, müssen Sie (mindestens) eine DNS-Zone bei OVHcloud für Ihre externe Domain erstellen. Lesen Sie bei Bedarf unsere Anleitung „[DNS-Zone bei OVHcloud erstellen](/pages/web_cloud/domains/dns_zone_create)“. So wird Ihr Domainname bei Aktivierung der Option in der Liste der verfügbaren Domainnamen angezeigt.
+>
+> Ist Ihre Domain bereits bei OVHcloud registriert oder existiert für diese bereits eine DNS-Zone in einem anderen [OVHcloud Account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) als Ihrem, lesen Sie unsere Dokumentation „[Verwaltung der Kontakte seiner Dienste](/pages/account_and_service_management/account_information/managing_contacts)“, um die Verwaltung der Domain sicherzustellen.
+>
+> Wenn Ihr Domainname bereits mit der Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ eines anderen Webhostings verbunden ist, können Sie ihn nicht direkt mit Ihrem eigenen Webhosting verbinden. In dieser Anleitung erfahren Sie alles über den aktuellen Webhosting Manager.
+>
 
 ## In der praktischen Anwendung
 
