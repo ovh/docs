@@ -1,7 +1,7 @@
 ---
 title: "Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée"
 excerpt: "Découvrez comment consulter les statistiques et logs de votre site internet"
-updated: 2024-02-01
+updated: 2024-02-07
 ---
 
 ## Objectif
