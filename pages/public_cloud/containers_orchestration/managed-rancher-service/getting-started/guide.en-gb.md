@@ -1,48 +1,72 @@
 ---
 title: Getting Started with Managed Rancher Service
 excerpt: 'Find out how to start using Managed Rancher Service on OVHcloud'
-updated: 2022-07-28
+updated: 2024-02-01
 ---
 
+> [!warning]
+>
+> Usage of [Managed Rancher Service](https://labs.ovhcloud.com/en/managed-rancher-service/) is currently in Beta phase.
+> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate do join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+>
+
 ## Objective
-
-
 
 Container orchestration has become a cornerstone of modern application deployment, offering scalability, flexibility, and resource efficiency. Rancher is an open-source container management platform that simplifies the deployment and management of Kubernetes clusters.
 Managed Rancher Service by OVHcloud, provides a powerful platform for orchestrating Kubernetes clusters seamlessly. In this detailed guide, we will explore the intricacies of setting up and managing containerized workloads.
 
 
-###  Accessing Rancher on OVHcloud Cloud
+### Rancher Creation and Access
 
-To initiate your journey, log in to the OVHcloud Manager and access the Managed Rancher Service under Container & Orchestration section.
+To initiate your journey, log in to the OVHcloud Manager and access the _Managed Rancher Service_ under the _Container & Orchestration_ section.
+Using the OVHcloud Manager you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
 
-### Create a new Rancher
+Simply click on the 'create' button at the top right of the manager and follow the steps below:
 
-//todo how to create a rancher using OVHcloud manager
+1. Define the name of your Rancher
+2. Select your Plan between "OVHcloud Edition" (coming soon) and "Standard"
+3. Select the Ranche version
+4. Click on Create
+5. Wait for your Rancher to be created
+6. Access the details of your newly created Rancher by click on its name
+7. On the "Security and Access" section, click on "Generate access details", confirm, then click on "access Rancher UI", copy/paste the provided credentials on the Rancher login page. Note: you will to change your password at first login. If you lose your password you have the possibility to generate a new one by using the "Generate access details" action button.
 
-This web-based interface serves as your command center for orchestrating containers & clusters, visualizing cluster health, and managing various aspects of your Kubernetes infrastructure.
 
 ###  Navigating the Rancher Dashboard
 
-The Rancher dashboard is designed to offer an intuitive and comprehensive view of your containerized environment. Explore the navigation menu, which typically includes sections for clusters, projects, applications, and infrastructure. This is where you'll gain insights into the health and performance of your clusters.
+The Rancher dashboard is designed to offer an intuitive and comprehensive view of your containerized environment.
+This web-based interface serves as your command center for orchestrating containers & clusters, visualizing cluster health, and managing various aspects of your Kubernetes infrastructure. Explore the navigation menu, which typically includes sections for clusters, projects, applications, and infrastructure. This is where you'll gain insights into the health and performance of your clusters.
 
-###  Create a New Cluster
+There is two options to add clusters to your Rancher:
 
-Begin by adding a new cluster to Rancher. This involves specifying the type of cluster, whether it be a Kubernetes cluster or a custom configuration. Follow the guided steps to define cluster settings, number of nodes (master, worker, etcd), authentication, and any additional configurations offered by OVHcloud Cloud and the targeted platform.
+### Import or Create your Kubernetes clusters :
 
-//todo explain differences between Rancher plans and eligible targets
-
-###  Importing Existing Clusters
+#### - Import an existing Kubernetes cluster
 
 For organizations with pre-existing Kubernetes clusters, Rancher simplifies integration. Import your clusters seamlessly, allowing Rancher to take over the management responsibilities. This streamlined process facilitates the transition to Rancher without disrupting your existing infrastructure.
 
-###  Configuring Advanced Cluster Settings
+To do so, you can refer to the official Rancher documentation on how to [Register Existing Cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters).
 
-Delve into the advanced settings of your clusters. Depending on the capabilities provided by OVHcloud Cloud, you might find options for fine-tuning security measures, optimizing network configurations, and leveraging specific cloud features to enhance the performance and resilience of your clusters.
+#### - Import an existing OVHcloud Managed Kubernetes Cluster
+
+
+
+####  - Create a new Kubernetes cluster with Rancher
+
+First option is to create a Kubernetes cluster from scratch. Rancher simplifies the creation of clusters by allowing you to create them through the Rancher UI rather than more complex alternatives. Rancher provides multiple options for launching a cluster.
+You can have Rancher launch a Kubernetes cluster using any nodes you want. When Rancher deploys Kubernetes onto these nodes, you can choose between Rancher Kubernetes Engine (RKE) or RKE2 distributions.
+This involves specifying the type of cluster, whether it be a standard Kubernetes cluster or a custom configuration. Follow the guided steps to define cluster settings, number of nodes (master, worker, etcd), authentication, and any additional configurations.
+
+#### - Create a new Kubernetes cluster on OVHcloud using Rancher
+
+
+
+
+
+
 
 ###  Exploring OVHcloud-Specific Integrations
 
-Take advantage of any OVHcloud-specific integrations that Rancher offers. This could include enhanced security features, custom networking solutions, or cloud-native functionalities designed to align seamlessly with the OVHcloud Cloud environment. These integrations can provide unique advantages for your container orchestration strategy.
 //TODO explain public cloud and MKS drivers. CSI and storage offers
 
 ###  Deploying Applications with Rancher
@@ -66,7 +90,8 @@ Stay informed about updates to Rancher and OVHcloud Manager Rancher Service feat
 
 ### Conclusion
 
-Rancher, when managed within the OVHcloud Cloud environment, offers a comprehensive solution for container orchestration. By following these detailed steps, you'll not only establish a robust Kubernetes infrastructure but also harness the full potential of Rancher's features within the unique context of OVHcloud Cloud. Happy Ranchering!
+Rancher, when managed within the OVHcloud Cloud environment, offers a comprehensive solution for container orchestration. By following these detailed steps, you'll not only establish a robust Kubernetes infrastructure but also harness the full potential of Rancher's features within the unique context of OVHcloud Cloud.
+Happy Ranchering!
 
 
 ## Go further
