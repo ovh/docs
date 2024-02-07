@@ -20,6 +20,15 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 - Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
+> [!warning]
+>
+> Se pretender ativar a opção "endereço(s) de e-mail incluído(s) com o seu alojamento web" para um domínio externo (não registado na OVHcloud) **do qual deve ser obrigatoriamente o administrador**, deve criar (no mínimo) uma zona DNS na OVHcloud para o seu domínio externo. Consulte o guia "[Criar uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create)" se necessário. Isto permitirá que o seu domínio apareça na lista de nomes de domínio disponíveis aquando da ativação da opção.
+>
+> Além disso, se o seu domínio já estiver registado na OVHcloud ou se já existir uma zona DNS para este último noutra [conta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) que o seu, consulte a nossa documentação "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)" para recuperar a gestão da mesma.
+>
+> Por fim, se o seu domínio já estiver associado à opção "endereço(s) de e-mail incluído(s) com o seu alojamento web" outro alojamento web, não poderá associá-lo ao seu próprio alojamento web diretamente. Consulte o gestor do alojamento web atual através deste manual.
+>
+
 ## Instruções
 
 ### Ativação da sua oferta de e-mail
