@@ -1,7 +1,7 @@
 ---
 title: "Getting started with a Web Hosting plan"
 excerpt: "Find out how to build your website and to set up your email addresses"
-updated: 2023-12-15
+updated: 2024-02-07
 ---
 
 ## Objective

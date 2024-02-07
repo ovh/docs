@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un hosting Web"
 excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un hosting Web"
-updated: 2023-12-15
+updated: 2024-02-07
 ---
 
 > [!primary]

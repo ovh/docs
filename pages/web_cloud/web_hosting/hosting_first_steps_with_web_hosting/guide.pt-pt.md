@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web: primeira utilização"
 excerpt: "Saiba como usar e gerir um alojamento web (primeira utilização)"
-updated: 2023-12-15
+updated: 2024-02-07
 ---
 
 > [!primary]
