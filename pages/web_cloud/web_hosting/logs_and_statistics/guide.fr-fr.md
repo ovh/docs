@@ -1,7 +1,7 @@
 ---
 title: "Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée"
 excerpt: "Découvrez comment consulter les statistiques et logs de votre site internet"
-updated: 2024-02-07
+updated: 2024-02-08
 ---
 
 ## Objectif
@@ -21,11 +21,11 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Dans le menu de gauche, sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques et logs`{.action}
 
-L'écran qui s’affiche est composée de 3 sections :
+L'écran qui s’affiche est composé de 3 sections :
 
 - **statistiques de visite** : présente de nombreuses statistiques concernant votre hébergement
 - **logs** : affiche les logs bruts de votre hébergement
-- **statistiques de l'infrastructure** : présente des statistiques graphiques (requête HTTP et SQL, commandes FTP etc.)
+- **statistiques de l'infrastructure** : présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, etc.)
 - **administration des utilisateurs** : affiche les utilisateurs autorisés à accéder aux statistiques
 
 ![hosting](images/tab.png){.thumbnail}
