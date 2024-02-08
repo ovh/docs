@@ -55,15 +55,15 @@ Puede utilizar esta guía como un "repositorio" de acciones posibles desde la co
 - [Etapa 4 - Comprobar y/o modificar la configuración de su dominio](#domain-configuration)
 - [Etapa 5 - Otras opciones disponibles con los alojamientos web](#other-options)
 
-### 
+### Etapa 1 - Delimitar su proyecto <a name="project-delimitation"></a>
 
-### 
+### Etapa 2 - Instalar su sitio web <a name="website-installation"></a>
 
-### 
+### Etapa 3 - Crear sus direcciones de correo electrónico (opcional) <a name="email-creation"></a>
 
-### 
+### Etapa 4 - Comprobar y/o modificar la configuración de su dominio <a name="domain-configuration"></a>
 
-### 
+### Etapa 5 - Otras opciones disponibles con los alojamientos web <a name="other-options"></a>
 
 ## Más información
 
