@@ -1,7 +1,7 @@
 ---
 title: "Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée"
 excerpt: "Découvrez comment consulter les statistiques et logs de votre site internet"
-updated: 2023-11-20
+updated: 2024-02-08
 ---
 
 ## Objectif
@@ -19,9 +19,14 @@ L'accès aux logs et aux statistiques de votre site est compris dans votre offre
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
 
-Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques et logs`{.action}
+Dans le menu de gauche, sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques et logs`{.action}
 
-La fenêtre qui s’affiche alors est composée de 3 sections. La première présente les **statistiques**, la seconde les **logs** bruts de votre hébergement, la dernière est dédiée à **l'administration des utilisateurs** autorisés à accéder aux statistiques.
+L'écran qui s’affiche est composé de 3 sections :
+
+- **statistiques de visite** : présente de nombreuses statistiques concernant votre hébergement
+- **logs** : affiche les logs bruts de votre hébergement
+- **statistiques de l'infrastructure** : présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, etc.)
+- **administration des utilisateurs** : affiche les utilisateurs autorisés à accéder aux statistiques
 
 ![hosting](images/tab.png){.thumbnail}
 
@@ -55,7 +60,7 @@ Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disp
 
 ![hosting](images/ows-presentation.gif){.thumbnail}
 
-Le tableau de bord de OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
+Le tableau de bord d'OVHcloud Web Statistics présente 7 sections :
 
 - Dashboard : visualisation du trafic sur les sites de votre hébergement.
 - Browsers : classement des navigateurs internet les plus utilisés pour visualiser vos sites.
@@ -63,9 +68,9 @@ Le tableau de bord de OVHcloud Web Statistics se présente en 6 sections dans le
 - Requests : classement des pages les plus consultées sur vos sites.
 - Robots : visualisation des robots qui passent sur vos sites.
 - Status : statistiques des échecs et réussites rencontrés en fonction des codes HTTP retournés.
-- FAQ : rubrique dédiée aux questions les plus fréquentes
+- FAQ : rubrique dédiée aux questions les plus fréquentes.
 
-Le cadre `Period selection` en haut à droite vous permet de sélectionner une période précise.
+Le champ `Period selection` en haut à droite vous permet de sélectionner une période précise.
 
 ### Logs
 
