@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades e limites
 excerpt: Descubra as funcionalidades, capacidades e limites atuais das instâncias Local Zones
-updated: 2024-01-09
+updated: 2024-02-08
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2024-01-09
 
 > [!primary]
 >
-> Atualmente, as instâncias Local Zone só estão implementadas em versão alfa. Se encontrar dificuldades e/ou pretender discutir a sua experiência com outros utilizadores, contacte-nos através de Discord <https://discord.gg/ovhcloud> ou contacte a nossa plataforma comunitária: <https://community.ovh.com/en/>.
+> Atualmente, as instâncias Local Zone só estão implementadas em versão beta. Se encontrar dificuldades e/ou pretender discutir a sua experiência com outros utilizadores, contacte-nos através de Discord <https://discord.gg/ovhcloud> ou contacte a nossa plataforma comunitária: <https://community.ovh.com/en/>.
 > 
 
 
@@ -25,7 +25,7 @@ Encontre mais informações na nossa [página dedicada às instâncias Local Zon
 
 ## Funcionalidades disponíveis
 
-| Ação | Alpha (janeiro) |
+| Ação | Beta (fevereiro) |
 | --- | --- |
 | Instâncias | Sim |
 | Suporte User-data/cloud-init | Sim|

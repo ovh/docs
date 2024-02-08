@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-01-09
+updated: 2024-02-08
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2024-01-09
 
 > [!primary]
 >
-> Actualmente, las instancias de Local Zone solo se despliegan en versión alfa. Si tiene problemas o quiere hablar de su experiencia con otros usuarios, puede ponerse en contacto con nosotros en Discord <https://discord.gg/ovhcloud> o con nuestra plataforma comunitaria: <https://community.ovh.com/en/>.
+> Actualmente, las instancias de Local Zone solo se despliegan en versión beta. Si tiene problemas o quiere hablar de su experiencia con otros usuarios, puede ponerse en contacto con nosotros en Discord <https://discord.gg/ovhcloud> o con nuestra plataforma comunitaria: <https://community.ovh.com/en/>.
 > 
 
 Las instancias Local Zone son una extensión de las regiones que acercan los servicios de OVHcloud a lugares específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones.
@@ -24,7 +24,7 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 
 ## Características disponibles
 
-| Acción | Alfa (enero) |
+| Acción | Beta (febrero) |
 | --- | --- |
 | Instancias | Sí |
 | Soporte user-data/cloud-init | Sí|
