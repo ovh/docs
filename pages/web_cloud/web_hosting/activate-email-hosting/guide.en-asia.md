@@ -18,7 +18,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 > [!warning]
 >
-> If you want to enable the "email address(es) included with your web hosting plan" option for an external domain name (not registered with OVHcloud) **which you must be the administrator of**, you must create (at least) a DNS zone at OVHcloud for your external domain name. Refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create) , if required. This will allow your domain name to appear in the list of available domain names when you enable the option.
+> If you want to enable the "email address(es) included with your web hosting plan" option for an external domain name (not registered with OVHcloud) **which you must be the administrator of**, you must create (at least) a DNS zone at OVHcloud for your external domain name. Refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create), if required. This will allow your domain name to appear in the list of available domain names when you enable the option.
 >
 > Furthermore, if your domain name is already registered with OVHcloud, or if a DNS zone already exists for it in another [OVHcloud account](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) than your own, please read our documentation “[Managing your service contacts](/pages/account_and_service_management/account_information/managing_contacts)” to find out how to manage it.
 >
