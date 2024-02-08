@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie automatycznych zadań (CRON) na Twoim hostingu"
 excerpt: "Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -118,7 +118,7 @@ Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub 
 |Czas trwania|Czas wykonywania zadania to 60 minut. Jeśli skrypt przekracza ten czas, zostanie automatycznie zatrzymany przez system.|
 |Zmienna|Możesz zdefiniować tylko zmienne w skrypcie. Dodanie ich do adresu URL wywołującego skrypt nie będzie działać (Przykład: www/jobs/cron.php?zmienna=value).|
 |Limit danych|Zadanie może generować tylko 5 MB danych (*stdin/stderr*). Na przykład, jeśli skrypt zapisuje dane w pliku .txt, wykonywanie automatycznie kończy się, gdy plik osiągnie 5 MB.|
-|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 próbach wykonania, które nie powiodły się. Włącz ją w Panelu konfiguracyjnym. (Kliknij `...`{.action}, a następnie `Zmień`{.action})|
+|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 nieudanych próbach. Raport o błędach zostanie wysłany dopiero po 10 próbach zakończonych niepowodzeniem.</br>Popraw skrypt na podstawie otrzymanego raportu o błędzie, a następnie ponownie włącz "zadanie CRON" w panelu sterowania (kliknij opcję `...`{.action}, a następnie `Zmień`{.action}).|
 |Sprawozdania z realizacji|Raporty będą wysyłane na wybrany adres e-mail tylko raz dziennie (w godzinach nocnych).|
 
 ### Naprawa

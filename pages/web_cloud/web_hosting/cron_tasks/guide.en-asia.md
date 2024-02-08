@@ -1,7 +1,7 @@
 ---
 title: "Using automated tasks on a Web Hosting plan"
 excerpt: "Find out how to configure scheduled jobs on your Web Hosting"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -112,7 +112,7 @@ The task will be ready within a few minutes. You can then modify all of its sett
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
 |Variables|You can only define variables in a script. Adding them to the URL calling the script will not work (Example: www/jobs/cron.php?variable=value).|
 |Data limit|A task can only generate up to 5 MB of data (*stdin/stderr*). For example, if a script writes data into a .txt file, the execution will be stopped automatically once the file reaches 5 MB in size.|
-|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply reactivate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
+|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. The error report will only be sent when the 10 attempts have failed.</br>Correct your script according to the error report received, then reactivate the cron task in the Control Panel (click `...`{.action} then on `Edit`{.action}.)|
 |Execution reports|Reports will be sent to your selected email address only once a day (during night hours).|
 
 ### Troubleshooting

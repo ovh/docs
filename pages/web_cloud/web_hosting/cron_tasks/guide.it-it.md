@@ -1,7 +1,7 @@
 ---
 title: "Crea task automatizzati (CRON) sul tuo hosting Web"
 excerpt: "Questa guida ti mostra come creare task CRON per automatizzare le operazioni pianificate su un hosting Web"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -118,7 +118,7 @@ L'operazione sarà pronta tra pochi minuti. Per modificare tutte le impostazioni
 |Durata|La durata di esecuzione di un'operazione è di 60 minuti. Se uno script supera il tempo di esecuzione, viene automaticamente arrestato dal sistema.|
 |Variabile|Puoi definire solo delle variabili in uno script. Aggiungere all'URL che chiama lo script non funzionerà (esempio: www/jobs/cron.php?variabili=value).|
 |Limite di dati|Un task può generare solo 5 MB di dati (*stdin/stderr*). Ad esempio, se uno script scrive dati in un file .txt, l'esecuzione si interrompe automaticamente quando il file raggiunge 5 MB.|
-|Script che producono errori|Se uno script è difettoso, verrà automaticamente disattivato dopo 10 tentativi falliti. Riattivalo semplicemente nel Pannello di configurazione. (Clicca sui tre puntini `..`{.action}. e poi `seleziona Modifica`{.action}.)|
+|Script che producono errori|Se uno script è difettoso, verrà automaticamente disattivato dopo 10 tentativi di esecuzione non andati a buon fine. La segnalazione degli errori verrà inviata solo quando tutti e 10 i tentativi avranno avuto esito negativo.</br>Correggi lo script in base alla segnalazione degli errori ricevuta e riattiva il "task CRON" nel pannello di controllo (clicca su `...`{.action} e poi su `Modifica`{.action}).|
 |Relazioni di attuazione|I rapporti saranno inviati all'indirizzo elettronico selezionato una volta al giorno (durante le ore notturne).|
 
 ### Intervento tecnico
