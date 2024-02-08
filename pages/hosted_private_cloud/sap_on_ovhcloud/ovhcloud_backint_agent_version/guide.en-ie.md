@@ -8,7 +8,7 @@ updated: 2024-02-08
 
 ### Version 1.0.9
 
-- Error messages improvement due to a bad configuration in the `hdbbackint.cfg` file.
+- Improving error messages resulting from a bad configuration in the `hdbbackint.cfg` file.
 
 ### Version 1.0.8
 
