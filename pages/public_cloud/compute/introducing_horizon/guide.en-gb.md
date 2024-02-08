@@ -13,15 +13,17 @@ The Horizon interface, natively offered with OpenStack, has been adapted by OVHc
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) created in your project
+- **[Optionnaly since September 2023]**An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) created in your project. This step is optional because we have deployed a Single Sign On between the OVHcloud Control Panel and Horizon.
 
 ## Instructions
 
 ### Logging in to OpenStack Horizon
 
-Open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/compute/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
+* To login with the OVHcloud Single Sign on : use the  `Horizon`{.action} link in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-You can also click on `Horizon`{.action} in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+* To login with a specific OpenStack user : open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/compute/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
+
+
 
 ### Data centre region selection
 
@@ -47,7 +49,7 @@ Horizon provides a summary of quotas, which allows you to see the used and avail
 
 - **Usage Summary**
 
-Next is a summary of the use of your project instances. The search period can be customised to restrict this summary to a desired period.
+Next is a summary of the use of your project instances. The search period can be customized to restrict this summary to a desired period.
 
 ![public-cloud](images/usagesummary2021.png){.thumbnail}
 
