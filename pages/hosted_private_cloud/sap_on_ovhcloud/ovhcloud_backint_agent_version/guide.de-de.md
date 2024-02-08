@@ -1,10 +1,14 @@
 ---
 title: "OVHcloud Backint Agent versions"
 excerpt: "This guide provides information about OVHcloud Backint Agent versions"
-updated: 2024-01-17
+updated: 2024-02-08
 ---
 
 ## Version history
+
+### Version 1.0.9
+
+- Error messages improvement due to a bad configuration in the `hdbbackint.cfg` file.
 
 ### Version 1.0.8
 
