@@ -1,7 +1,7 @@
 ---
 title: "Automatische Tasks mit einem Webhosting verwenden"
 excerpt: "Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren"
-updated: 2024-02-07
+updated: 2024-02-08
 ---
 
 <style>
