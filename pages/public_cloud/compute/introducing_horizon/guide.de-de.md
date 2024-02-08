@@ -27,8 +27,6 @@ Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, 
 
 * Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: öffnen Sie die Anmeldeseite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack Users](/pages/public_cloud/compute/create_and_delete_a_user) ein und klicken Sie auf `Connect`{.action}.
 
-Sie können hierzu auch auf `Horizon`{.action} im linken Menü unter "Management Interfaces" klicken, wenn Sie Ihr `Public Cloud`{.action} Projekt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geöffnet haben.
-
 ### Auswahl der Region (Rechenzentrum)
 
 Anders als im OVHcloud Kundencenter unterteilt Horizon Ihre Dienste nach "Region". Sie können die Region im Menü oben links auswählen.
