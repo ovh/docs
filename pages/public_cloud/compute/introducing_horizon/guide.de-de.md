@@ -1,7 +1,7 @@
 ---
 title: Einführung in das Horizon Interface
 excerpt: Erfahren Sie hier, wie Sie das Horizon Interface verwenden
-updated: 2022-03-16
+updated: 2024-02-08
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, 
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/compute/create_a_public_cloud_project) in Ihrem Kunden-Account.
-- Sie haben einen [OpenStack Benutzer](/pages/public_cloud/compute/create_and_delete_a_user) in Ihrem Projekt erstellt.
+- **[Optional seit September 2023]** Ein [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) Benutzer, der in Ihrem Projekt erstellt wurde. Dieser Schritt ist optional, da wir eine einmalige Anmeldung zwischen dem OVHcloud Kundencenter und Horizon eingerichtet haben.
 
 ## In der praktischen Anwendung
 
