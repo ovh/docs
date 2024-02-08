@@ -1,6 +1,6 @@
 ---
-title: "Alojamento web: primeira utilização"
-excerpt: "Saiba como usar e gerir um alojamento web (primeira utilização)"
+title: "Alojamento Web - Como começar bem em algumas etapas"
+excerpt: "Saiba os primeiros passos para associar o seu domínio, publicar o seu website e criar endereços de e-mail com o seu alojamento web"
 updated: 2024-02-07
 ---
 

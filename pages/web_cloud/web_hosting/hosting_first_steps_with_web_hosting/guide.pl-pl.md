@@ -1,7 +1,7 @@
 ---
-title: "Pierwsze kroki z hostingiem OVHcloud"
-excerpt: "Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu"
-updated: 2024-02-07
+title: "Hosting WWW - Jak rozpocząć korzystanie z usługi w kilku etapach"
+excerpt: "Poznaj pierwsze kroki, które pozwolą Ci połączyć Twoją domenę, zamieścić w Internecie stronę WWW i utworzyć konta e-mail na Twoim hostingu"
+updated: 2024-02-08
 ---
 
 > [!primary]
