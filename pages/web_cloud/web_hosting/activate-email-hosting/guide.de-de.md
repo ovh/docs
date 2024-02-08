@@ -21,11 +21,11 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 
 > [!warning]
 >
-> Wenn Sie die Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ für eine externe (nicht bei OVHcloud registrierte) Domain aktivieren möchten **deren Administrator Sie sein müssen**, müssen Sie (mindestens) eine DNS-Zone bei OVHcloud für Ihre externe Domain erstellen. Lesen Sie bei Bedarf unsere Anleitung „[DNS-Zone bei OVHcloud erstellen](/pages/web_cloud/domains/dns_zone_create)“. So wird Ihr Domainname bei Aktivierung der Option in der Liste der verfügbaren Domainnamen angezeigt.
+> Wenn Sie die Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ für einen externen (nicht bei OVHcloud registrierten) Domainnamen, **dessen Administrator Sie sind**, aktivieren möchten, müssen Sie (mindestens) eine DNS-Zone bei OVHcloud für Ihren externen Domainnamen erstellen. Lesen Sie bei Bedarf unsere Anleitung „[DNS-Zone bei OVHcloud erstellen](/pages/web_cloud/domains/dns_zone_create)“. So wird Ihr Domainname bei Aktivierung der Option in der Liste der verfügbaren Domainnamen angezeigt.
 >
-> Ist Ihre Domain bereits bei OVHcloud registriert oder existiert für diese bereits eine DNS-Zone in einem anderen [OVHcloud Account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) als Ihrem, lesen Sie unsere Dokumentation „[Verwaltung der Kontakte seiner Dienste](/pages/account_and_service_management/account_information/managing_contacts)“, um die Verwaltung der Domain sicherzustellen.
+> Ist Ihr Domainname bereits bei OVHcloud registriert oder existiert bereits eine DNS-Zone in einem anderen [OVHcloud Kunden-Account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), lesen Sie unsere Dokumentation „[Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts)“, um die Verwaltung des Domainnamens sicherzustellen.
 >
-> Wenn Ihr Domainname bereits mit der Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ eines anderen Webhostings verbunden ist, können Sie ihn nicht direkt mit Ihrem eigenen Webhosting verbinden. In dieser Anleitung erfahren Sie alles über den aktuellen Webhosting Manager.
+> Wenn Ihr Domainname bereits mit der Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ eines anderen Webhostings verbunden ist, können Sie ihn nicht direkt mit Ihrem eigenen Webhosting verbinden. Wenden Sie sich an den zuständigen Administrator.
 >
 
 ## In der praktischen Anwendung
