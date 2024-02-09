@@ -80,7 +80,7 @@ Here's a simple example of how to use the Public Cloud Load Balancer
 2. Retrieve the kubeconfig file needed to use kubectl tool (via OVHcloud manager, Terraform, Pulumi or API). You can use [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-configure-kubectl?id=kb_article_view&sysparm_article=KB0049658)
 3. Create a Namespace and a Deployment resource using the following command:
 ```shell
-kunectl create namespace test-lb-ns
+kubectl create namespace test-lb-ns
 kubectl create deployment test-lb --image=nginx -n=test-lb-ns
 ```
 4. Copy/Paste the following code on a file named `test-lb-service.yaml`
@@ -93,21 +93,21 @@ metadata:
   name: test-lb-service
   namespace: test-lb-ns
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
-    loadbalancer.ovhcloud.com/flavor: "small"
+    loadbalancer.ovhcloud.com/class: octavia
+    loadbalancer.ovhcloud.com/flavor: small
 spec:
   ports:
-  - name: 80-80
-    port: 80
-    protocol: TCP
-    targetPort: 80
+    - name: 80-80
+      port: 80
+      protocol: TCP
+      targetPort: 80
   selector:
-    app: test-lb
+      app: test-lb
   type: LoadBalancer
 ```
 6. Create a 'Service' using the following command:
 ```shell
-kubectl apply -f test-lb-service.yaml
+$ kubectl apply -f test-lb-service.yaml
 ```
 7. Retrieve Service IP address using the following command line:
 ```shell
@@ -352,7 +352,7 @@ spec:
   When `container-store` parameter is set to `external` format for `default-tls-container-ref` could be any string.
 
 ### Features
-#### Resize your LoadBalancer 
+#### Resize your LoadBalancer
 There is no proper way to 'resize' your loadbalancer yet (work in progress). The best alternative to change the flavor of your load balancer is to recreate a new Kubernetes Service that will use the same public IP as an existing one.
 You can find the complete HowTo and examples on our public Github repository: https://github.com/ovh/public-cloud-examples
 
