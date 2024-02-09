@@ -1,5 +1,5 @@
 ---
-title: Shared responsibility for Dedicated Servers
+title: Shared responsibility for Dedicated Servers (EN)
 excerpt: Find out about shared responsibilities between OVHcloud and the customer for Dedicated Servers services
 updated: 2023-10-12
 ---
