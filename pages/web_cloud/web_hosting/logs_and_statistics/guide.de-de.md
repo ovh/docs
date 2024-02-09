@@ -64,7 +64,7 @@ Das **OVHcloud Web Statistics** Tool hilft Ihnen dabei, den Traffic der auf Ihre
 
 ![Hosting](images/ows-presentation.gif){.thumbnail}
 
-Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitte im linken Bereich aufgeteilt.
+Das Dashboard von OVHcloud Web Statistics enthält 7 Abschnitte:
 
 - Dashboard: Visualisiert den Traffic der Website auf Ihrem Webhosting.
 - Browsers: Zeigt ein Ranking der Webbrowser an, die am häufigsten für die Anzeige Ihrer Websites verwendet werden.
@@ -74,7 +74,7 @@ Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitte im linken Bereich 
 - Status: Zeigt Statistiken über Fehlschläge und Erfolge an, die anhand der zurückgegebenen HTTP-Codes ermittelt wurden.
 - FAQ: Öffnet den Bereich für häufig gestellte Fragen.
 
-Mit `Period selection` können Sie einen bestimmten Zeitraum auswählen.
+Im Feld `Period selection` oben rechts können Sie einen bestimmten Zeitraum auswählen.
 
 ### Logs
 
