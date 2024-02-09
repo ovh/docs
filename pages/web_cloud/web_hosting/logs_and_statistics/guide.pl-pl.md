@@ -23,9 +23,14 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w ofercie hostingu 
 
 Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
 
-Wybierz odpowiedni hosting i kliknij zakładkę `Statystyki i logi`{.action}
+W menu po lewej stronie wybierz odpowiedni hosting, następnie kliknij zakładkę `Statystyki i logi`{.action}
 
-Okno, które się wyświetla składa się z 3 sekcji. Pierwsza zawiera **statystyki**, druga **logi** brutto Twojego hostingu. Ostatnia jest przeznaczona **do zarządzania użytkownikami** uprawnionymi do dostępu do statystyk.
+Ekran, który się wyświetla składa się z 4 sekcji:
+
+- **Statystyki odwiedzin na stronie** : zawiera liczne statystyki dotyczące Twojego hostingu
+- **Logi strony WWW**: Wyświetla logi hostingu
+- **Statystyki dotyczące infrastruktury**: przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, etc.)
+- **Zarządzanie użytkownikami**: Wyświetla użytkowników z uprawnieniami dostępu do statystyk
 
 ![hosting](images/tab.png){.thumbnail}
 
@@ -59,7 +64,7 @@ Aby lepiej monitorować ruch na Twoich stronach WWW i zarządzać nim, masz do d
 
 ![hosting](images/ows-presentation.gif){.thumbnail}
 
-Panel zarządzania OVHcloud Web Statistics dostępny jest w 6 sekcjach w panelu po lewej stronie.
+Dashboard OVHcloud Web Statistics zawiera 7 sekcji:
 
 - Dashboard: wizualizacja ruchu na stronach hostingu.
 - Browsers: ranking najpopularniejszych przeglądarek internetowych do przeglądania stron internetowych.
@@ -67,9 +72,9 @@ Panel zarządzania OVHcloud Web Statistics dostępny jest w 6 sekcjach w panelu 
 - Zapytania: ranking najczęściej odwiedzanych stron na Twoich stronach.
 - Roboty: wizualizacja robotów przechodzących przez twoje strony.
 - Status: statystyki niepowodzeń i sukcesów napotkanych na podstawie zwracanych kodów HTTP.
-- FAQ: sekcja poświęcona najczęstszym pytaniom
+- FAQ: sekcja poświęcona najczęstszym pytaniom.
 
-Ramka `Period selection` w prawym górnym rogu pozwala wybrać określony czas.
+Pole `Period selection` w prawym górnym rogu umożliwia wybranie konkretnego okresu.
 
 ### Logi
 
