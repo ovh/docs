@@ -1,7 +1,7 @@
 ---
 title: Présentation de Horizon
 excerpt: Découvrez les principales sections de l'interface Horizon
-updated: 2024-02-08
+updated: 2024-02-09
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: Apresentação do Horizon
 excerpt: Descubra as principais secções da interface Horizon
-updated: 2024-02-08
+updated: 2024-02-09
 ---
 
 > [!primary]

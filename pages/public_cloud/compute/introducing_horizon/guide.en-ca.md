@@ -1,7 +1,7 @@
 ---
 title: Introducing Horizon
 excerpt: Discover the main sections of the Horizon interface
-updated: 2024-02-08
+updated: 2024-02-09
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ The Horizon interface, natively offered with OpenStack, has been adapted by OVHc
 
 * To log in with the OVHcloud Single Sign on: use the `Horizon`{.action} link in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
-* To login with a specific OpenStack user: open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/compute/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
+* To log in with a specific OpenStack user: open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/compute/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
 
 ### Data centre region selection
 

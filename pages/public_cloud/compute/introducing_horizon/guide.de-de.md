@@ -1,7 +1,7 @@
 ---
 title: Einführung in das Horizon Interface
 excerpt: Erfahren Sie hier, wie Sie das Horizon Interface verwenden
-updated: 2024-02-08
+updated: 2024-02-09
 ---
 
 > [!primary]

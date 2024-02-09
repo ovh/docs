@@ -1,7 +1,7 @@
 ---
 title: Présentation de Horizon
 excerpt: Découvrez les principales sections de l'interface Horizon
-updated: 2024-02-08
+updated: 2024-02-09
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ L'interface Horizon, nativement proposée avec OpenStack, a été adaptée par O
 ## Prérequis
 
 - Un [project Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud.
-- Un utilisateur [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) créé dans votre projet.
+- **[Facultatif depuis septembre 2023]** Un utilisateur [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) créé dans votre projet. Cette étape est facultative car nous avons déployé une authentification unique entre l'espace client OVHcloud et Horizon.
 
 ## En pratique
 
