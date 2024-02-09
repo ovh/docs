@@ -17,15 +17,15 @@ Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, 
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/compute/create_a_public_cloud_project) in Ihrem Kunden-Account.
-- **[Optional seit September 2023]** Ein [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) Benutzer, der in Ihrem Projekt erstellt wurde. Dieser Schritt ist optional, da wir eine einmalige Anmeldung zwischen dem OVHcloud Kundencenter und Horizon eingerichtet haben.
+- **[Optional seit September 2023]** Ein [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) Benutzer, der in Ihrem Projekt erstellt wurde. Dieser Schritt ist optional, da Single Sign-On (SSO) zwischen dem OVHcloud Kundencenter und Horizon eingerichtet wurde.
 
 ## In der praktischen Anwendung
 
 ### In OpenStack Horizon einloggen
 
-* Für die Verbindung mit dem einmaligen Anmelden bei OVHcloud: Verwenden Sie den Link `Horizon`{.action} im linken Menü unter "Management Interfaces" nachdem Sie Ihr Projekt `Public Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geöffnet haben.
+- Für die Verbindung über OVHcloud SSO: Verwenden Sie den Link `Horizon`{.action} im linken Menü unter "Management Interfaces" nachdem Sie Ihr `Public Cloud`{.action} Projekt in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geöffnet haben.
 
-* Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: öffnen Sie die Anmeldeseite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack Users](/pages/public_cloud/compute/create_and_delete_a_user) ein und klicken Sie auf `Connect`{.action}.
+- Um sich mit einem bestimmten OpenStack Benutzer anzumelden: Öffnen Sie die Anmeldeseite für [Horizon](https://horizon.cloud.ovh.net/auth/login/), geben Sie die zuvor erstellten Daten des [OpenStack Users](/pages/public_cloud/compute/create_and_delete_a_user) ein und klicken Sie auf `Connect`{.action}.
 
 ### Auswahl der Region (Rechenzentrum)
 
