@@ -1,6 +1,6 @@
 ---
 title: Public Cloud Databases - Maintenance operations
-excerpt: FInd out how your cluster is maintained
+excerpt: Find out how your cluster is maintained
 updated: 2024-02-09
 ---
 
@@ -26,7 +26,7 @@ The underlying VM often needs to get rebuild, or the service needs to restart.
 
 For single node services, that means there is a short period of time when your service becomes unavailable.
 
-For multi-node services, per-engine resiliency mecahnisms ensure the service remains available when a node gets operated on. If the application handles such cases gracefully (for example, reconnects and retries properly on failure) then the impact should be minimal or even non-existent.
+For multi-node services, per-engine resiliency mechanisms ensure the service remains available when a node gets operated on. If the application handles such cases gracefully (for example, reconnects and retries properly on failure) then the impact should be minimal or even non-existent.
 
 ## How can I monitor the planned maintenances?
 
