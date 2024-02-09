@@ -6,7 +6,7 @@ updated: 2024-02-12
 
 ## Objectif
 
-Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
+Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/) à l'aide de l'[API OVHcloud](https://ca.api.ovh.com/).
 
 ## Prérequis
 
@@ -22,7 +22,7 @@ Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'ins
 
 ### Compatibilité OS <a name="os-compatibility"></a>
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
+Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
 
 Pour lister tous vos [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/) :
 

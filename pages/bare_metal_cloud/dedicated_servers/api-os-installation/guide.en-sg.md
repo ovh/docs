@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-02-07
+updated: 2024-02-12
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ Fully automating OS installation or reinstallation on a [dedicated server](https
 
 ### OS Compatibility <a name="os-compatibility"></a>
 
-Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+Log in to the [API console](https://ca.api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
 You can list all your [dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/) with the following API call:
 

@@ -97,6 +97,8 @@ Your operating system will now be installed. You can check the progress of the i
 
 [Getting started with a Kimsufi, So You Start or Rise dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco)
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
