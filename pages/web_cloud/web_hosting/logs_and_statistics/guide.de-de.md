@@ -1,7 +1,7 @@
 ---
 title: "Statistiken und Logs eines Webhostings einsehen"
 excerpt: "Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen"
-updated: 2023-11-20
+updated: 2024-02-09
 ---
 
 > [!primary]
@@ -23,9 +23,14 @@ Die Webserver-Protokolle und Website-Statistiken sind in Ihrem Webhosting inklus
 
 Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an, klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das gewünschte Webhosting aus.
 
-Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+Wählen Sie im linken Menü das betreffende Hosting aus und klicken Sie dann auf den Tab `Statistiken und Logs`{.action}.
 
-Dieser Tab besteht aus 3 Abschnitten. Der erste zeigt die **Statistiken** an, der zweite die **Website Logs** Ihres Webhostings, und der letzte ist für die **Verwaltung der Nutzer** bestimmt, die Zugriff auf die Statistiken haben.
+Der angezeigte Bildschirm besteht aus 3 Abschnitten:
+
+- **Statistiken der Seitenaufrufe**: enthält zahlreiche Statistiken zu Ihrem Hosting
+- **Logs der Website**: Zeigt die Rohdaten der Logs Ihres Hostings an
+- **Infrastrukturstatistiken**: Zeigt grafische Statistiken an (HTTP- und SQL-Anfragen, FTP-Befehle usw.)
+- **Verwaltung der Nutzer**: Zeigt die Benutzer an, die Zugriff auf die Statistiken haben
 
 ![Hosting](images/tab.png){.thumbnail}
 

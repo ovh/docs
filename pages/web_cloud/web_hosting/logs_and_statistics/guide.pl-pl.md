@@ -1,7 +1,7 @@
 ---
 title: "Hosting: Statystyki i logi strony"
 excerpt: "Dostęp do statystyk strony www"
-updated: 2023-11-20
+updated: 2024-02-09
 ---
 
 > [!primary]

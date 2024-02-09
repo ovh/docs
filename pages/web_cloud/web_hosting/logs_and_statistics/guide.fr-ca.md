@@ -24,7 +24,7 @@ Dans le menu de gauche, sélectionnez l'hébergement concerné, puis cliquez sur
 L'écran qui s’affiche est composé de 3 sections :
 
 - **statistiques de visite** : présente de nombreuses statistiques concernant votre hébergement
-- **logs** : affiche les logs bruts de votre hébergement
+- **logs du site web** : affiche les logs bruts de votre hébergement
 - **statistiques de l'infrastructure** : présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, etc.)
 - **administration des utilisateurs** : affiche les utilisateurs autorisés à accéder aux statistiques
 

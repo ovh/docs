@@ -1,7 +1,7 @@
 ---
 title: "Partilhado: Consultar as estatísticas e os logs do meu site"
 excerpt: "Acesso às estatísticas do seu site"
-updated: 2023-11-20
+updated: 2024-02-09
 ---
 
 > [!primary]
