@@ -133,14 +133,68 @@ Infatti, il collegamento tra il dominio e i servizi (hosting Web, server di post
 
 Per verificare o modificare il collegamento tra il tuo dominio e il tuo hosting Web, **consulta le seguenti guide nell'ordine:**
 
+- [Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) : in questa lista sono disponibili tutti gli indirizzi IP della nostra infrastruttura di hosting Web. Questa guida ti mostra la procedura da seguire per i domini la cui zona DNS attiva non è gestita in OVHcloud (o è gestita su un account cliente OVHcloud diverso dal tuo).
+- [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): questa guida ti mostra come aggiungere più domini a un hosting Web. Può anche aiutarti a verificare che la dichiarazione del tuo dominio nella scheda `Multisito`{.action} del tuo hosting Web sia corretta. In questo modo è possibile apportare le modifiche necessarie alla zona DNS attiva del dominio.
+- [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit): questa guida ti mostra come modificare una zona DNS presente in OVHcloud. e sarà disponibile nel caso in cui la zona DNS attiva del dominio sia presente su un account cliente OVHcloud diverso dal proprio. Può anche servire ad accedere alla zona DNS OVHcloud del dominio, per verificare che l’indirizzo IP (record) di tipo *A* e/o *AAAA*) dichiarato per il dominio nella zona DNS corrisponda all’indirizzo IP dell’hosting Web.
 
+Per verificare e/o modificare il collegamento tra il dominio e il servizio di posta OVHcloud, consulta la guida "[Configura un record MX](/pages/web_cloud/domains/dns_zone_mx)". In questa guida trovi i nomi dei server di posta OVHcloud e la procedura da seguire per far puntare il dominio verso questi server.
 
-
-
-
-
+> [!primary]
+>
+> Se la zona DNS attiva per il tuo dominio non è gestita in OVHcloud:
+> 
+> - **Per il collegamento tra il dominio e l’hosting Web**: consulta le guide "[Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" e "[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)" citate in precedenza per recuperare l’indirizzo IP dell’hosting Web e dichiara correttamente il dominio sul tuo hosting Web. In seguito, contatta l’organismo che gestisce la zona DNS attiva del dominio per far puntare il dominio verso il tuo hosting Web.
+>
+> - **Per il collegamento tra il dominio e il servizio di posta OVHcloud**: consulta la guida "[Configura un record MX](/pages/web_cloud/domains/dns_zone_mx)" per recuperare i nomi dei server di posta elettronica OVHcloud da inserire nella zona DNS attiva del dominio. In seguito, contatta l’organismo che gestisce la zona DNS attiva del dominio per far puntare il dominio verso i server di posta OVHcloud.
+>
 
 ### Step 5 - Altre opzioni disponibili con gli hosting Web <a name="other-options"></a>
+
+In base alla tua [offerta di hosting Web](https://www.ovhcloud.com/it/web-hosting/), opzioni / offerte / funzionalità aggiuntive sono disponibili gratuitamente.
+
+#### I certificati SSL
+
+I certificati SSL permettono di rendere accessibile il sito Web utilizzando il protocollo HTTPS. Questo protocollo cripta gli scambi tra il vostro hosting Web e le persone che consultano il vostro sito Web.
+
+Qualunque sia l'[hosting Web](https://www.ovhcloud.com/it/web-hosting/), è possibile attivare gratuitamente un certificato SSL **Let's encrypt**.
+
+Per maggiori informazioni sui certificati SSL (gratuiti o a pagamento) proposti sugli hosting Web, consulta la nostra guida "[Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
+
+#### Le offerte CDN
+
+Tutte le nostre offerte CDN permettono di mettere in cache una parte del tuo sito Web. In questo modo, i tempi di caricamento delle pagine che compongono il sito Web si riducono, in particolare per i visitatori geograficamente distanti dal datacenter in cui è localizzato l’hosting Web.
+
+Con gli hosting Web, OVHcloud propone 3 offerte CDN:
+
+- **CDN Basic**
+- **CDN Security**
+- **CDN Advanced**
+
+Per maggiori informazioni sulle nostre offerte CDN, consulta la nostra guida "[Aumentare la velocità di un sito Web con la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
+
+> [!primary]
+>
+> L'offerta **CDN Basic** è inclusa gratuitamente solo sugli hosting Web **Performance**.
+>
+> Non è possibile cumulare diverse offerte CDN su uno stesso hosting Web.
+
+#### I server di database Web Cloud Databases
+
+Se hai attivato un hosting Web **Performance**, puoi attivare gratuitamente un server di database [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+
+Per maggiori informazioni sul suo utilizzo, consulta la nostra documentazione "[Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+
+#### Invia email dal tuo sito Web
+
+Tutti i nostri [hosting Web](https://www.ovhcloud.com/it/web-hosting/) permettono di inviare gratuitamente email a partire dal tuo sito Web o da uno script specifico.
+
+Per maggiori informazioni su questa funzionalità, consulta la nostra guida "[Gestire l’invio delle email automatiche](/pages/web_cloud/web_hosting/mail_function_script_records)".
+
+#### I task pianificati "CRON"
+
+Le operazioni "CRON" permettono di eseguire automaticamente script ospitati su un hosting Web.
+
+Se il tuo piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) dispone di questa opzione, consulta la nostra guida "[Crea task automatizzati (CRON) sul tuo hosting Web](/pages/web_cloud/web_hosting/cron_tasks)" per maggiori dettagli.
 
 ## Per saperne di più
 
