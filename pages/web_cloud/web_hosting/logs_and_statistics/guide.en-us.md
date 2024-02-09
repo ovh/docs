@@ -17,11 +17,16 @@ Web server logs and website statistics are included in your Web Hosting plan, ea
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. In the left-hand menu, click `Hosting plans`{.action}.
 
-From `Hosting plans`{.action}, choose the Web Hosting plan concerned and open the `Statistics and logs`{.action} tab.
+Select the hosting plan concerned, then click on the `Statistics and logs`{.action} tab.
 
-This tab consists of 3 sections. The first one presents the **statistics**, the second the raw **logs** of your hosting, and the last one is dedicated to the **administration of users** authorised to access the statistics.
+The screen that opens has 4 sections:
+
+- **Website visit statistics**: presents many statistics concerning your hosting
+- **Website logs**: displays raw logs for your hosting
+- **Infrastructure statistics**: presents graphical statistics (HTTP and SQL requests, FTP commands, etc.)
+- **User administration**: Displays users who are authorized to access statistics
 
 ![hosting](images/tab.png){.thumbnail}
 
@@ -29,7 +34,7 @@ This tab consists of 3 sections. The first one presents the **statistics**, the 
 
 Creating a user will allow someone to access your hosting plan’s statistics without having access to your OVHcloud Control Panel. 
 
-Click the `Create a new user`{.action} button in the `User Administration` section and follow the instructions as shown below.  
+Click the `Create a new user`{.action} button in the `User` section and follow the instructions as shown below.  
 
 ![hosting](images/create-a-new-user.png){.thumbnail}
 
@@ -55,7 +60,7 @@ The **OVHcloud Web Statistics** tool helps you to track and control the traffic 
 
 ![hosting](images/ows-presentation.gif){.thumbnail}
 
-The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left-hand panel.
+The OVHcloud Web Statistics dashboard presents 7 sections:
 
 - Dashboard: Visualises the website traffic on your Web Hosting plan.
 - Browsers: Shows a ranking of the most used internet browsers to view your sites.
@@ -65,7 +70,7 @@ The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left-
 - Status: Displays statistics of the failures and successes encountered, based on the HTTP codes returned.
 - FAQ: Opens the section dedicated to frequently asked questions.
 
-The `Period selection` box allows you to select a specific time frame.
+The `Period selection` field in the top right-hand corner allows you to select a specific period.
 
 ### Logs
 

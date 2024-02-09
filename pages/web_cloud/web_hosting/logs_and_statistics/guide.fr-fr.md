@@ -21,7 +21,7 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Dans le menu de gauche, sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques et logs`{.action}.
 
-L'écran qui s’affiche est composé de 3 sections :
+L'écran qui s’affiche est composé de 4 sections :
 
 - **statistiques de visite** : présente de nombreuses statistiques concernant votre hébergement
 - **logs du site web** : affiche les logs bruts de votre hébergement

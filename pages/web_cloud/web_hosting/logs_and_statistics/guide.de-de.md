@@ -25,7 +25,7 @@ Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 Wählen Sie im linken Menü das betreffende Hosting aus und klicken Sie dann auf den Tab `Statistiken und Logs`{.action}.
 
-Der angezeigte Bildschirm besteht aus 3 Abschnitten:
+Der angezeigte Bildschirm besteht aus 4 Abschnitten:
 
 - **Statistiken der Seitenaufrufe**: enthält zahlreiche Statistiken zu Ihrem Hosting
 - **Logs der Website**: Zeigt die Rohdaten der Logs Ihres Hostings an
