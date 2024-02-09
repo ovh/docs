@@ -13,7 +13,7 @@ L'interface Horizon, nativement proposée avec OpenStack, a été adaptée par O
 ## Prérequis
 
 - Un [project Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud.
-- **[Facultatif depuis septembre 2023]** Un utilisateur [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) créé dans votre projet. Cette étape est facultative car nous avons déployé une authentification unique entre l'espace client OVHcloud et Horizon.
+- **[Facultatif depuis septembre 2023]** Un utilisateur [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) créé dans votre projet. Cette étape est facultative car nous avons déployé une authentification unique (SSO : *Single Sign-On*) entre l'espace client OVHcloud et Horizon.
 
 ## En pratique
 
