@@ -23,9 +23,14 @@ O acesso aos logs e às estatísticas do seu site está incluído no seu plano d
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
 
-Selecione o alojamento correspondente e clique no separador `Estatísticas e logs`{.action}
+No menu à esquerda, selecione o alojamento correspondente e clique no separador `Estatísticas e logs`{.action}
 
-A janela que se apresenta é composta por 3 secções. A primeira apresenta as **estatísticas**, a segunda os **logs** brutos do seu alojamento, a última é dedicada à administração **dos utilizadores** autorizados a aceder às estatísticas.
+O ecrã que vai aparecer é composto por 4 secções:
+
+- **Estatísticas das visitas**: apresenta numerosas estatísticas relativas ao seu alojamento
+- **Logs do website**: apresenta os logs brutos do seu alojamento
+- **Estatísticas da infraestrutura**: apresenta estatísticas gráficas (pedidos HTTP e SQL, comandos FTP, etc.)
+- **Administração dos utilizadores**: Apresenta os utilizadores autorizados a aceder às estatísticas
 
 ![alojamento](images/tab.png){.thumbnail}
 
@@ -59,7 +64,7 @@ Para o ajudar a seguir e controlar melhor o tráfego dos seus websites, dispõe 
 
 ![alojamento](images/ows-presentation.gif){.thumbnail}
 
-O painel de controlo das OVHcloud Web Statistics encontra-se em 6 secções no painel de esquerda.
+O painel de controlo das OVHcloud Web Statistics apresenta 7 secções:
 
 - Dashboard: visualização do tráfego nos sites do seu alojamento.
 - Browsers: classificação dos browsers mais utilizados para visualizar os seus websites.
@@ -67,9 +72,9 @@ O painel de controlo das OVHcloud Web Statistics encontra-se em 6 secções no p
 - Pedidos: classificação das páginas mais consultadas nos seus websites.
 - Robôs: visualização dos robôs que passam pelos seus websites.
 - Estado: estatísticas de falhas e sucessos encontrados em função dos códigos HTTP devolvidos.
-- FAQ: secção dedicada às questões mais frequentes
+- FAQ: secção dedicada às questões mais frequentes.
 
-O quadro `Period selection` no canto superior direito permite-lhe selecionar um período preciso.
+O campo `Period selection`, no canto superior direito, permite selecionar um período preciso.
 
 ### Logs
 
