@@ -1,7 +1,7 @@
 ---
 title: Presentación de Horizon
 excerpt: Descubra las secciones principales de la interfaz de Horizon
-updated: 2022-03-16
+updated: 2024-02-09
 ---
 
 > [!primary]
@@ -17,15 +17,15 @@ La interfaz Horizon, que nativamente se ofrece con OpenStack, ha sido adaptada p
 ## Requisitos
 
 - Un [proyecto Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) en su cuenta de OVHcloud.
-- Un usuario [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) creado en su proyecto.
+- **[Opcional desde septiembre de 2023]** Un usuario [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) creado en su proyecto. Este paso es opcional, ya que hemos desplegado un inicio de sesión único (SSO: *Single Sign-On*) entre el área de cliente de OVHcloud y Horizon.
 
 ## Procedimiento
 
 ### Conectarse a OpenStack Horizon
 
-Abra la página de conexión a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduzca las [claves de OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) creadas anteriormente y haga clic en `Connect`{.action}.
+* Para conectarse con el inicio de sesión único de OVHcloud, utilice el enlace `Horizon`{.action} del menú de la izquierda, bajo "Management Interfaces", después de haber abierto su proyecto de `Public Cloud`{.action} en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-También puede hacer clic en `Horizon`{.action} en el menú de la izquierda, bajo "Management Interfaces", después de haber abierto su proyecto de `Public Cloud`{.action} en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+* Para conectarse con un usuario específico de OpenStack, abra la página de conexión a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduzca las [claves de OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) previamente creadas y haga clic en `Connect`{.action}.
 
 ### Selección de área del centro de datos
 
