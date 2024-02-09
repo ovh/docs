@@ -23,9 +23,14 @@ L'accesso ai log e alle statistiche del tuo sito è incluso nella tua offerta di
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}.
 
-Seleziona l'hosting interessato e clicca sulla scheda `Statistiche e log`{.action}
+Nel menu a sinistra, seleziona l’hosting interessato e clicca sulla scheda `Statistiche e log`{.action}
 
-La finestra che appare è composta da 3 sezioni. Il primo presenta le **statistiche**, il secondo i **log** lordi del tuo hosting, l'ultimo è dedicato **all'amministrazione degli utenti** autorizzati ad accedere alle statistiche.
+La schermata visualizzata è composta da 4 sezioni:
+
+- **Statistiche delle visite**: presenta numerose statistiche relative al tuo hosting
+- **Log del sito Web**: visualizza i log grezzi del tuo hosting
+- **Statistiche dell'infrastruttura**: presenta statistiche grafiche (richieste HTTP e SQL, comandi FTP, ecc.)
+- **Gestione degli utenti**: visualizza gli utenti autorizzati ad accedere alle statistiche
 
 ![hosting](images/tab.png){.thumbnail}
 
@@ -59,7 +64,7 @@ Per monitorare e gestire al meglio il traffico dei tuoi siti Web, hai a disposiz
 
 ![hosting](images/ows-presentation.gif){.thumbnail}
 
-La dashboard di OVHcloud Web Statistics si presenta in 6 sezioni nel pannello di sinistra.
+Il pannello di controllo di OVHcloud Web Statistics presenta 7 sezioni:
 
 - Dashboard: visualizzazione del traffico sui siti del tuo hosting.
 - Browsers: classifica i browser più utilizzati per visualizzare i tuoi siti.
@@ -67,9 +72,9 @@ La dashboard di OVHcloud Web Statistics si presenta in 6 sezioni nel pannello di
 - Requests: classifica le pagine più consultate sui tuoi siti.
 - Robots : visualizzazione dei robot che passano sui tuoi siti.
 - Stato: statistiche sugli insuccessi e sui successi riscontrati in base ai codici HTTP restituiti.
-- FAQ: sezione dedicata alle questioni più frequenti
+- FAQ: sezione dedicata alle questioni più frequenti.
 
-Il riquadro `Period selection` in alto a destra vi permette di selezionare un periodo preciso.
+Il campo `Period selection` in alto a destra ti permette di selezionare un periodo preciso.
 
 ### Logs
 
