@@ -196,14 +196,31 @@ The first command assigns an IPv6 address from the block to the eth0 interface.
 The second command sets the default gateway for IPv6 traffic.
 
    
-### Configuration on host side
-  - IP address:
-    - manual
-    - SLAAC (what setup to ensure it will work)
-  - Separate IP routing table creation to handle public traffic via vRack interface
-    - mention why it's needed
-    - 
-### Setup verification
+### Configuration on host side    
+Configuring your host to properly handle IPv6 addresses and route public traffic via the vRack interface is crucial for maintaining a secure and efficient network. Using the sample data provided, let's walk through the steps for manual IPv6 address configuration, enabling SLAAC, and setting up a separate IP routing table on a Linux-based system.
+
+**Manual Configuration:**   
+To manually assign an IPv6 address to a network interface:   
+```bash
+sudo ip -6 addr add 2001:db8::1/64 dev eth0
+```
+This command configures the interface `eth0` with the IPv6 address `2001:db8::1` and a subnet prefix length of 64.
+
+**SLAAC Configuration:**   
+For SLAAC to function, ensure your network interface accepts Router Advertisements (RAs):   
+```bash
+sudo sysctl -w net.ipv6.conf.eth0.accept_ra=1
+```   
+This enables `eth0` to automatically configure an IPv6 address using SLAAC, assuming RAs are present on your network.
+
+**Creating a Separate IP Routing Table**
+TODO
+
+**Expected Outcome**   
+After executing these commands, your host should be correctly configured to handle IPv6 addresses both manually and via SLAAC. Additionally, public internet traffic will be routed through the specified vRack interface, separate from your private network traffic, ensuring a clear delineation between public and private data flows.   
+ 
+### Setup verification   
+TODO
     - mtr for bridged (from outside or inside ovh)
     - mtr for routed
  
