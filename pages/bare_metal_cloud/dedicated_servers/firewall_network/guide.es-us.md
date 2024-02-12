@@ -1,6 +1,6 @@
 ---
-title: 'Configurar el firewall de red'
-excerpt: 'Cómo configurar el Network Firewall'
+title: 'Activación y configuración del Edge Network Firewall'
+excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
 updated: 2024-01-05
 ---
 
