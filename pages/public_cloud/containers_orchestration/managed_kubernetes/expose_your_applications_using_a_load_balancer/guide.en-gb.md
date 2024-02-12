@@ -40,7 +40,7 @@ That is why we do recommend to deploy your MKS clusters on a network and subnet 
 For existing/already deployed clusters, if:
 - **The Subnet's GatewayIP is already used by an OVHcloud Gateway**, nothing needs to be done. The current OVHcloud Gateway (Openstack Router) will be used.
 - **The subnet does not have an IP reserved for a Gateway**, you will have to provide or create a compatible subnet. Three options:
-  - Edit an existing subnet to reserve an IP for a Gateway : //TODO, doc Console Horizon et CLI/script
+  - Edit an existing subnet to reserve an IP for a Gateway : please refer to the [Update a subnet properties](https://help.ovhcloud.com/csm/en-ie-public-cloud-network-update-subnet-properties?id=kb_article_view&sysparm_article=KB0061498) documentation. 
   - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
   - Use a subnet dedicated for your load balancer: this option can be used on the Managed under 'advanced parameters'/'LoadbalancerSubnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)**, two options:
