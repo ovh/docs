@@ -1,11 +1,6 @@
 ---
 title: 'Enregistrer une ligne SIP OVHcloud sur Zoiper'
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Zoiper'
-hidden: true
-kb: Web Cloud
-category_l1: Phone and Fax
-category_l2: VoIP
-category_l3: Tutorials
 updated: 2022-04-07
 ---
 

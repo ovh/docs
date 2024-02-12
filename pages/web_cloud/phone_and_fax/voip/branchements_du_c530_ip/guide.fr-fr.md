@@ -1,6 +1,6 @@
 ---
 title: Branchements du C530 IP
-hidden: true
+flag: hidden
 updated: 2018-03-26
 ---
 
