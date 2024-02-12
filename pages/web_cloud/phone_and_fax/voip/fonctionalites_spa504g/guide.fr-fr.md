@@ -1,6 +1,6 @@
 ---
 title: Fonctionalités SPA504G
-hidden: true
+flag: hidden
 updated: 2018-03-26
 ---
 

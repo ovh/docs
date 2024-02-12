@@ -1,6 +1,6 @@
 ---
 title: Adaptateur SPA112
-hidden: true
+flag: hidden
 updated: 2018-03-26
 ---
 
