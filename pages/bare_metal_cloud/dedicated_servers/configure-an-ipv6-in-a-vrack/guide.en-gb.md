@@ -22,6 +22,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.com/ca/en/solution
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
 
+## Introduction
 
 
 ## Introduction   
