@@ -140,14 +140,62 @@ The API call will return details about the IPv6 block request, including its cur
 - `description`: A human-readable description of the IPv6 block, which might be set during the allocation process or afterward.
 - `assignedToVrack`: Confirms the vRack ID to which the IPv6 block has been assigned, ensuring it's part of the correct virtual rack setup.   
 
-### Adding an IPv6 block to the vRack (similar to "Add the IP block to the vRack" in IPv4  today)
-  - APIv6 commands
-  - Bridge mode
-    - apiv6 setup example
-  - Routed mode
-    - apiv6 setup example / commands
-    - info about additional config on host side for this to work (TBC)
-    - 
+### Adding an IPv6 block to the vRack   
+Adding an IPv6 block to your OVH vRack can be accomplished through the OVH APIv6, similar to how IPv4 blocks are currently added. This process can be configured in two primary modes: Bridge mode and Routed mode. Below are sample APIv6 commands for each setup, along with a brief note on additional host-side configurations that might be necessary for Routed mode.
+
+**Prerequisites**
+- Ensure you have an active OVH API consumer key. If not, generate one by following OVH's API authentication guidelines.
+- Have your vRack ID and the IPv6 block ready for configuration.
+
+**Adding an IPv6 Block to the vRack in Bridge Mode**     
+In Bridge mode, the IPv6 block is directly associated with the vRack. This setup allows devices connected to the vRack to communicate using IPv6 addresses from this block, simplifying network configuration by eliminating the need for specific routing rules.  
+APIv6 Setup Example for Bridge Mode:   
+```bash
+curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "X-Ovh-Consumer: tUv123wXyZ" -H "Content-type: application/json" \
+"https://api.ovh.com/1.0/vrack/vrack1234/ip" \
+-d '{"ipBlock":"2001:db8:abcd:0012::/64", "mode":"bridge"}'
+```   
+- `abc123xyz`: Your OVH application key.
+- `tUv123wXyZ`: The consumer key obtained from the authentication process.
+- `vrack1234`: Your vRack ID.
+- `2001:db8:abcd:0012::/64`: The IPv6 block you wish to add in Bridge mode.
+
+**Adding an IPv6 Block to the vRack in Routed Mode**   
+Routed mode configures the IPv6 block with specific routing rules, directing traffic through a designated gateway. This setup requires additional configuration on the host side to ensure proper routing of IPv6 traffic.   
+APIv6 Setup Example for Routed Mode:   
+```bash
+curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "X-Ovh-Consumer: tUv123wXyZ" -H "Content-type: application/json" \
+"https://api.ovh.com/1.0/vrack/vrack1234/ip" \
+-d '{"ipBlock":"2001:db8:abcd:0012::/64", "mode":"routed", "nextHop":"2001:db8:abcd:0012::1"}'
+```
+- `2001:db8:abcd:0012::1`: The IPv6 address of the gateway for the routed traffic.
+
+**Expected Return from the Calls**   
+For both Bridge and Routed mode setups, the OVH API will return a response indicating the success of the operation and details about the IPv6 block configuration.    
+```json
+{
+  "message": "IPv6 block added to vRack successfully",
+  "mode": "bridge/routed",
+  "ipBlock": "2001:db8:abcd:0012::/64",
+  "nextHop": "2001:db8:abcd:0012::1" // Only for routed mode
+}
+```
+- `message`: A confirmation message indicating the successful addition of the IPv6 block to the vRack.
+- `mode`: Indicates whether the block was added in Bridge or Routed mode.
+- `ipBlock`: The IPv6 block that was added.
+- `nextHop`: Specified only for Routed mode, indicating the gateway IPv6 address.
+
+**Additional Host-Side Configuration for Routed Mode**   
+After adding the IPv6 block in Routed mode, configure each host within the vRack to use an IPv6 address from the block and set the specified gateway.   
+Example Configuration on a Linux Host:   
+```bash
+sudo ip -6 addr add 2001:db8:abcd:0012::2/64 dev eth0
+sudo ip -6 route add default via 2001:db8:abcd:0012::1
+```   
+The first command assigns an IPv6 address from the block to the eth0 interface.   
+The second command sets the default gateway for IPv6 traffic.
+
+   
 ### Configuration on host side
   - IP address:
     - manual
