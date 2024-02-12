@@ -1,5 +1,7 @@
 # Working with IPv6 in Comparison to IPv4   
 
+## Objective
+
 ## Introduction   
 - **Overview of IPv4:** Recap the key points from the existing OVHcloud article, emphasizing the current use of IPv4 in vRack.
 - **Introduction to IPv6:** Explain what IPv6 is and why it's becoming increasingly important, highlighting its advanced features compared to IPv4.
