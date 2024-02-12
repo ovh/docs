@@ -1,7 +1,7 @@
 ---
 title: "Historique des versions OVHcloud Backint Agent"
 excerpt: "Ce guide fournit la liste des changements d'OVHcloud Backint Agent"
-updated: 2024-02-08
+updated: 2024-02-12
 ---
 
 ## Historique des versions
