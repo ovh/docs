@@ -13,7 +13,7 @@ Bare Metal Multi-Az in the 3-AZ region caters to customers requiring high availa
 
 
 
-## Instructions
+## Overview
 
 
 Purpose of the Service
