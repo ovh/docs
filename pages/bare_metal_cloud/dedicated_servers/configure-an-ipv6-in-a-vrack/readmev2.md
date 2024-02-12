@@ -1,6 +1,28 @@
-# Working with IPv6 in Comparison to IPv4   
+---
+title: Configuring an IPV6 block in a vRack
+excerpt: This guide will show you how to configure a block of public IPV6 addresses for use with the vRack.
+updated: 2024-02-12
+---
 
 ## Objective
+
+As well as private IP addressing, the [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} also allows you to route public IP traffic through your server's [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} port using a public IPV6 address block.
+
+**This guide will show you how to configure a block of public IPV6 addresses for use with the vRack.**
+
+
+## Requirements
+
+- A [vRack compatible server](https://www.ovh.com/ca/en/solutions/vrack/){.external}
+- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
+- Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
+
+
 
 ## Introduction   
 - **Overview of IPv4:** Recap the key points from the existing OVHcloud article, emphasizing the current use of IPv4 in vRack.
