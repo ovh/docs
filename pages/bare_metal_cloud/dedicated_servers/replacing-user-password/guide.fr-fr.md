@@ -1,7 +1,7 @@
 ---
 title: Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur
 excerpt: Apprenez à configurer un nouveau mot de passe pour un compte utilisateur sur un système d'exploitation GNU/Linux avec le mode rescue OVHcloud
-updated: 2024-02-01
+updated: 2024-02-12
 ---
 
 ## Objectif
@@ -16,8 +16,6 @@ Dans ce cas, vous pouvez vous connecter à votre serveur via le mode rescue d’
 >
 Pour récupérer l'accès à un serveur auquel vous vous connectez avec une clé SSH, référez-vous à notre guide sur [Comment remplacer une paire de clés SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key) à la place.
 >
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
@@ -85,7 +83,6 @@ Pensez à rétablir le mode de démarrage normal de votre serveur avant de le re
 Reportez-vous au [guide du mode rescue](#step1) si nécessaire.
 
 Vous avez maintenant accès au serveur avec votre nouveau mot de passe.
-
 
 
 ## Aller plus loin
