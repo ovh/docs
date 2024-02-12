@@ -49,23 +49,56 @@ The introduction of IPv6 brings a host of advanced features and capabilities tha
 
 
 ## Configuring IPv6 in a vRack   
-- **Gathering IPv6 block:**
-  - note that it's regional and will define location where public traffic reaches your vRack backend in the next step
-  - APIv6 commands
-- **Adding an IPv6 block to the vRack (similar to "Add the IP block to the vRack" in IPv4  today):**
+### Gathering IPv6 block:
+To gather an IPv6 block with OVH's services, particularly for use with a vRack, it's important to understand that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, influencing where public traffic enters your vRack backend. Here's how you can use OVH's APIv6 to perform this task:
+
+**Prerequisites**
+- Ensure you have an OVH API consumer key. If you don't have one, you'll need to generate it by following the instructions on the OVH API authentication page.
+- Identify the region where you want your IPv6 block to be allocated. This is crucial as it determines the entry point of public traffic to your vRack.
+
+**Sample APIv6 Commands**   
+1. Authenticate with the OVH API:   
+```bash
+curl -XPOST -H "X-Ovh-Application: <application_key>" -H "Content-type: application/json" \
+"https://eu.api.ovh.com/1.0/auth/credential" \
+-d '{"accessRules":[{"method":"GET","path":"/*"},{"method":"POST","path":"/*"},{"method":"PUT","path":"/*"},{"method":"DELETE","path":"/*"}]}'
+````   
+Replace `<application_key>` with your actual application key. This command initiates the authentication process and returns a `consumerKey` and a validation URL.
+
+2. Request an IPv6 Block:
+Before executing this command, ensure you're authenticated and have your `consumerKey`. The command to request an IPv6 block might look like this, depending on the specific API endpoint and parameters required by OVH for IPv6 block allocation:     
+```bash
+curl -XPOST -H "X-Ovh-Application: <application_key>" -H "X-Ovh-Consumer: <consumer_key>" -H "Content-type: application/json" \
+"https://eu.api.ovh.com/1.0/vrack/<vrack_id>/ip" \
+-d '{"type":"ipv6", "region":"<region>"}'
+````   
+Replace `<application_key>`, `<consumer_key>`, `<vrack_id>`, and `<region>` with your application key, consumer key, vRack ID, and the desired region, respectively. This command requests a new IPv6 block to be allocated to your vRack in the specified region.
+
+3. Check the Status of Your IPv6 Block Request:
+After you've requested an IPv6 block, you might want to check the status of your request or view details about the allocated block:   
+```bash
+curl -XGET -H "X-Ovh-Application: <application_key>" -H "X-Ovh-Consumer: <consumer_key>" \
+"https://eu.api.ovh.com/1.0/vrack/<vrack_id>/ip/<ipv6_block_id>"
+````
+Replace `<application_key>`, `<consumer_key>`, `<vrack_id>`, and `<ipv6_block_id>` with your actual application key, consumer key, vRack ID, and the ID of your IPv6 block request.
+
+
+### Adding an IPv6 block to the vRack (similar to "Add the IP block to the vRack" in IPv4  today)
   - APIv6 commands
   - Bridge mode
     - apiv6 setup example
   - Routed mode
     - apiv6 setup example / commands
     - info about additional config on host side for this to work (TBC)
-- **Configuration on host side**
+    - 
+### Configuration on host side
   - IP address:
     - manual
     - SLAAC (what setup to ensure it will work)
   - Separate IP routing table creation to handle public traffic via vRack interface
     - mention why it's needed
-- **Setup verification**
+    - 
+### Setup verification
     - mtr for bridged (from outside or inside ovh)
     - mtr for routed
  
