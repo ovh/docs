@@ -57,24 +57,60 @@ To gather an IPv6 block with OVH's services, particularly for use with a vRack, 
 - Identify the region where you want your IPv6 block to be allocated. This is crucial as it determines the entry point of public traffic to your vRack.
 
 **Sample APIv6 Commands**   
-1. Authenticate with the OVH API:   
+1. *Authenticate with the OVH API:*
 ```bash
-curl -XPOST -H "X-Ovh-Application: <application_key>" -H "Content-type: application/json" \
+curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "Content-type: application/json" \
 "https://eu.api.ovh.com/1.0/auth/credential" \
 -d '{"accessRules":[{"method":"GET","path":"/*"},{"method":"POST","path":"/*"},{"method":"PUT","path":"/*"},{"method":"DELETE","path":"/*"}]}'
 ````   
-Replace `<application_key>` with your actual application key. This command initiates the authentication process and returns a `consumerKey` and a validation URL.
+In this example, `abc123xyz` is a placeholder for your actual OVH application key. This command requests a new set of credentials (a consumer key) that will allow your application to make API calls under the specified access rules.    
 
-2. Request an IPv6 Block:
-Before executing this command, ensure you're authenticated and have your `consumerKey`. The command to request an IPv6 block might look like this, depending on the specific API endpoint and parameters required by OVH for IPv6 block allocation:     
+Upon successful execution of the command, the OVH API will return a JSON object containing a consumerKey and a validationUrl. Here's an example of what the return might look like:
+```json
+{
+  "validationUrl": "https://eu.api.ovh.com/auth/?credentialToken=dEf456GHi",
+  "consumerKey": "tUv123wXyZ",
+  "state": "pendingValidation"
+}
+```  
+- `validationUrl` is the URL you need to visit to validate the consumer key. This step is crucial as it activates the key for use with the API.
+- `consumerKey` is the key your application will use to authenticate subsequent API calls. Note that this key is in a `pendingValidation` state until you complete the validation process.
+- `state` indicates the current state of the consumer key. In this case, it's `pendingValidation`, meaning you need to visit the `validationUrl` to activate it.
+
+2. *Request an IPv6 Block:*   
+Assuming you've already authenticated and obtained your `consumerKey` from the previous step, here's how you might request an IPv6 block for your vRack:     
 ```bash
 curl -XPOST -H "X-Ovh-Application: <application_key>" -H "X-Ovh-Consumer: <consumer_key>" -H "Content-type: application/json" \
 "https://eu.api.ovh.com/1.0/vrack/<vrack_id>/ip" \
 -d '{"type":"ipv6", "region":"<region>"}'
-````   
-Replace `<application_key>`, `<consumer_key>`, `<vrack_id>`, and `<region>` with your application key, consumer key, vRack ID, and the desired region, respectively. This command requests a new IPv6 block to be allocated to your vRack in the specified region.
+```   
+In this command:   
+- `abc123xyz` is the placeholder for your OVH application key.
+- `tUv123wXyZ` is the consumer key you received from the authentication process.
+- `vrack1234` is a hypothetical vRack ID. Replace this with your actual vRack ID.
+- `GRA` represents the region where you want the IPv6 block allocated. OVHcloud has several data centers across the globe, so you would replace `GRA` with the specific region code that corresponds to your desired location.
 
-3. Check the Status of Your IPv6 Block Request:
+Upon successful execution of the command, the OVH API will return information about the newly allocated IPv6 block. Here's an example of what the return might look like:
+
+```json
+{
+  "task": {
+    "id": 12345678,
+    "function": "addIpToVrack",
+    "status": "todo",
+    "progress": 0
+  },
+  "ipv6Block": {
+    "block": "2001:db8:abcd:0012::/64",
+    "region": "GRA"
+  }
+}
+```
+The `task` object provides details about the request to add an IPv6 block to your vRack. It includes a task `id` you can use to track the progress, the `function` being performed, the current `status` of the task, and its `progress`.
+   
+The `ipv6Block` object contains information about the allocated IPv6 block, including the `block` itself (in this example, `2001:db8:abcd:0012::/64`) and the `region` where it's allocated.
+
+3. *Check the Status of Your IPv6 Block Request:*
 After you've requested an IPv6 block, you might want to check the status of your request or view details about the allocated block:   
 ```bash
 curl -XGET -H "X-Ovh-Application: <application_key>" -H "X-Ovh-Consumer: <consumer_key>" \
