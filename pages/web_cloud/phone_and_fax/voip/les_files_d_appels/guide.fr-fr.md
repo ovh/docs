@@ -143,6 +143,7 @@ La modification vous permet d'affiner les réglages de sonnerie de chaque ligne 
 
 > [!success]
 > **Connexion/déconnexion dans la file d'appels depuis un téléphone**
+>
 > Lorsque vous appelez le numéro de la file d'appels depuis une ligne qui en est membre, un menu vocal vous propose de :
 >
 > - taper `1` pour vous connecter à la file d'appels (ne fonctionne que si votre ligne était préalablement déconnectée de la file) ;
