@@ -304,7 +304,7 @@ IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
 
-Exemple : 
+Voici un exemple concret :
 
 ```console
 2607:5300:201:abcd::1 dev eth0
