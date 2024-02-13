@@ -23,10 +23,10 @@ Select the hosting plan concerned, then click on the `Statistics and logs`{.acti
 
 The screen that opens has 4 sections:
 
-- **Website visit statistics**: presents many statistics concerning your hosting
-- **Website logs**: displays raw logs for your hosting
-- **Infrastructure statistics**: presents graphical statistics (HTTP and SQL requests, FTP commands, etc.)
-- **User administration**: Displays users who are authorized to access statistics
+- **Website visit statistics**: Presents many statistics concerning your hosting.
+- **Website logs**: Displays raw logs for your hosting.
+- **Infrastructure statistics**: Presents graphical statistics (HTTP and SQL requests, FTP commands, etc.).
+- **User administration**: Displays users who are authorized to access statistics.
 
 ![hosting](images/tab.png){.thumbnail}
 
