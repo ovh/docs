@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo empezar en pocos pasos"
 excerpt: "Descubra los primeros pasos para asociar su dominio, publicar su sitio web y crear direcciones de correo con su alojamiento web"
-updated: 2024-02-07
+updated: 2024-02-13
 ---
 
 > [!primary]

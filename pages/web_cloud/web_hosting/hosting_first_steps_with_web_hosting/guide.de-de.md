@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - In wenigen Schritten richtig starten"
 excerpt: "Erfahren Sie hier die ersten Schritte, um Ihren Domainnamen zu verknüpfen, Ihre Website online zu stellen und E-Mail-Adressen mit Ihrem Webhosting zu erstellen"
-updated: 2024-02-07
+updated: 2024-02-13
 ---
 
 > [!primary]

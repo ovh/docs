@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to get started in a few steps"
 excerpt: "Find out how to link your domain name, put your website online and create email addresses with your web hosting plan"
-updated: 2024-02-07
+updated: 2024-02-13
 ---
 
 ## Objective
