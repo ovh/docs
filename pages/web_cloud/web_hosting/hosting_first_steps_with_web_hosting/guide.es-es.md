@@ -22,8 +22,8 @@ OVHcloud ofrece [varios planes de hosting](https://www.ovhcloud.com/es-es/web-ho
 Estos planes le ahorran gestionar el mantenimiento, la actualización y la seguridad de una infraestructura de alojamiento web.<br>
 Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse únicamente en:
 
-el desarrollo, la actualización y la seguridad de un sitio web, blog, CMS o tienda online;
-la seguridad y la optimización de una o varias bases de datos, si su solución dispone de ellas;
+- el desarrollo, la actualización y la seguridad de un sitio web, blog, CMS o tienda online;
+- la seguridad y la optimización de una o varias bases de datos, si su solución dispone de ellas;
 - la configuración y la gestión de sus direcciones de correo electrónico incluidas con su plan de hosting.
 
 **Descubra cómo asociar un dominio, publicar un sitio web y crear una o varias direcciones de correo electrónico con un alojamiento web.**
