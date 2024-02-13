@@ -108,61 +108,9 @@ ssh username@IPv4_serwer -p NewPortNumber
 > Pamiętaj, że modyfikacja domyślnego portu protokołu SSH lub innego protokołu stanowi potencjalne ryzyko. Niektóre usługi nie mogą zostać skonfigurowane i używane z niestandardowymi portami i nie będą działały, jeśli domyślny port zostanie zmodyfikowany.
 >
 
-### Zmiana hasła przypisanego do użytkownika "root"
-
-Zdecydowanie zaleca się zmianę hasła użytkownika root, aby nie pozostawiać go w pozycji domyślnej w nowym systemie. Więcej informacji znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
-
 ### Utworzenie użytkownika z ograniczonymi prawami
 
-Zadania, które nie wymagają uprawnień root, powinny być wykonywane za pomocą standardowego użytkownika. Możesz utworzyć nowego użytkownika za pomocą następującego polecenia:
-
-```bash
-sudo adduser Nazwa_Nowego_Użytkownika
-```
-
-Następnie wpisz informacje wymagane przez system: hasło, nazwa itd.
-
-Nowy użytkownik będzie mógł logować się przez SSH. Podczas tworzenia połączenia należy stosować określone dane identyfikacyjne.
-
-Po zalogowaniu wprowadź następującą komendę, aby wykonać operacje wymagające uprawnień root:
-
-```bash
-su root
-```
-
-Wprowadź hasło, kiedy zostaniesz zaproszony, a aktywne połączenie zostanie przekierowane na użytkownika root.
-
-### Uniemożliwienie dostępu do serwera za pomocą użytkownika root
-
-Użytkownik root jest tworzony domyślnie w systemach GNU/Linux. Jest to najwyższy poziom dostępu do systemu operacyjnego.<br>
-Nie zaleca się, aby nawet niebezpieczne było udostępnianie serwera wyłącznie za pomocą root, ponieważ może to spowodować nieodwracalne szkody.
-
-Zalecamy wyłączenie bezpośredniego dostępu użytkowników root przez protokół SSH. Pamiętaj, aby utworzyć innego użytkownika przed wykonaniem kroków poniżej.
-
-Zmodyfikuj plik konfiguracyjny SSH w sposób opisany powyżej:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Znajdź następującą sekcję:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Zamień **yes** na **no** w linii `PermitRootLogin`.
-
-Aby zmiana ta została uwzględniona, uruchom ponownie usługę SSH:
-
-```bash
-sudo systemctl restart sshd
-```
-
-Połączenia z serwerem za pośrednictwem użytkownika root (`ssh root@IPv4_serwer`) zostaną odrzucone.
+Zadania, które nie wymagają uprawnień root, powinny być wykonywane za pomocą standardowego użytkownika. Więcej informacji znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Konfiguracja wewnętrznej zapory sieciowej (iptables)
 
