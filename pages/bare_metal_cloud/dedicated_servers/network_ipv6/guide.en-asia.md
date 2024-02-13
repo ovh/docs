@@ -81,7 +81,7 @@ With some operating systems, the addition of static IPv6 routes in the original 
 
 ### Debian and Debian-based operating systems (excluding Debian 12)
 
-The configuration below is based on Debian 11 (Bullseye)
+The configuration example below is based on Debian 11 (Bullseye).
 
 > [!warning]
 >
@@ -130,7 +130,7 @@ iface eth0 inet6 static
 
 **Debian 10**
 
-```bash
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 64
@@ -143,7 +143,7 @@ pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 
 Additional IPv6 addresses can be added with the following lines in the configuration file: `up ip -6 addr add ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`, `up ip -6 addr add ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0` etc...
 
-To ensure that the IPv6 is enabled or disabled whenever the eth0 interface is enabled or disabled, you need to add the following line to the eth0 configuration:
+To ensure that the IPv6 is enabled or disabled whenever the eth0 interface is enabled or disabled, you need to add the following line to the configuration:
 
 `down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`
 `down ip -6 addr del ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`
@@ -218,7 +218,7 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 
 ### Fedora 38 and later
 
-The configuration below is based on Fedora 39
+The configuration example below is based on Fedora 39.
 
 Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`. 
 
@@ -329,7 +329,7 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 
 ### Debian 12, Ubuntu 20.04 and following
 
-The configuration below is based on Ubuntu 22.04 (Jammy Jellyfish)
+The configuration example below is based on Ubuntu 22.04 (Jammy Jellyfish).
 
 The network configuration files are located in the directory `/etc/netplan/`. By default, the main configuration file is called `50-cloud-init.yaml`.
 
@@ -406,6 +406,7 @@ network:
               name: eno3
             addresses:
               - 2607:5300:adce:f2cd::1/64
+```
 
 For multiple IPV6 addresses:
 
@@ -457,7 +458,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 ### CentOS 7, AlmaLinux (8 & 9) and Rocky Linux (8 & 9)
 
-This configuration is based on Centos 7
+The configuration example below is based on CentOS 7.
 
 The network configuration file is located in the directory `/etc/sysconfig/network-scripts`. In our example, it is called `ifcfg-eth0`.
 
@@ -486,16 +487,16 @@ In the open configuration file, add the following lines if they are missing. Rep
 
 ```console
 IPV6INIT=yes
-IPV6ADDR=YOUR_IPV6
+IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-For Alma and Rocky linux, the contents of the configuration file may differ from that shown above, in which case simply add the missing elements. Do not replace anything.
+For Alma and Rocky linux, the contents of the configuration file may differ from that shown above, in which case simply add the missing items. Do not replace anything in the original file.
 
-If you need to configure more IPv6 addresses, add the following line:
+If you need to configure multiple IPv6 addresses, add the following line:
 
 ```console
-IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1 ADDITIONAL_IPV6_2 etc..."
+IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFIX etc..."
 ```
 
 **Configuration example:**
@@ -508,7 +509,7 @@ Next, we amend the configuration file:
 
 ```console
 IPV6INIT=yes
-IPV6ADDR=2607:5300:adce:f2cd::1
+IPV6ADDR=2607:5300:adce:f2cd::/64
 IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 ```
 
@@ -516,9 +517,9 @@ For multiple IPV6 addresses:
 
 ```console
 IPV6INIT=yes
-IPV6ADDR=2607:5300:adce:f2cd::1
+IPV6ADDR=2607:5300:adce:f2cd::
 IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
-IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::6 2607:5300:adce:f2cd::8"
+IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
 ```
 
 #### Step 4: Save the file and apply the changes
