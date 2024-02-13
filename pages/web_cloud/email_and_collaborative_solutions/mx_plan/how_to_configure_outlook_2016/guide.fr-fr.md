@@ -52,7 +52,7 @@ Pour configurer votre adresse e-mail avec le protocole **IMAP**, suivez les éta
 > **Etape 1**
 >> Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.
 >>
->> > Quel que soit votre choix les étapes 2 et 3 s'appliquent de la même manière que pour l'IMAP.
+>> > Quel que soit votre choix les étapes 2 et 3 s'appliquent de la même manière que pour l'IMAP. Seule l'étape 4 diffère
 >>
 >> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
 >>
@@ -66,9 +66,12 @@ Pour configurer votre adresse e-mail avec le protocole **IMAP**, suivez les éta
 >>
 > **Etape 4 - IMAP**
 >> Saisissez dans **Courrier entrant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
+>>
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
+>>
 > **Etape 4 - POP**
 >> Saisissez dans **Courrier entrant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **995**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
+>>
 >> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
 
 
