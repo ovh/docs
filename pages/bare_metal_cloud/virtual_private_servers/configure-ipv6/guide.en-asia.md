@@ -54,7 +54,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section of the `Home`{.action} tab. Once you have copied them, continue with [applying the IPv6 configuration](#applyipv6).
 
-![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
+![configureipv6](images/vps_ipv6_information.png){.thumbnail}
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
