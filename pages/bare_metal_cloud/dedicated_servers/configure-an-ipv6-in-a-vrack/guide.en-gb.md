@@ -213,8 +213,28 @@ sudo sysctl -w net.ipv6.conf.eth0.accept_ra=1
 ```   
 This enables `eth0` to automatically configure an IPv6 address using SLAAC, assuming RAs are present on your network.
 
-**Creating a Separate IP Routing Table**
-TODO
+**Creating a Separate IP Routing Table**   
+A separate IP routing table is essential for directing public traffic through the vRack interface, preventing it from mingling with private network traffic. This segregation enhances both security and routing efficiency.
+1. ***Define a New Routing Table:***   
+Edit `/etc/iproute2/rt_tables` to add a new table:
+```arduino
+100    public
+```
+This entry creates a routing table named `public` with an ID of 100.   
+
+2. ***Add Routes to the New Table:***   
+Specify how traffic should be routed to the internet:    
+```bash
+sudo ip -6 route add default via 2001:db8::1 dev eth0 table public
+```
+This sets a default route in the `public` table, directing traffic through the gateway `2001:db8::1` on `eth0`.   
+
+3. ***Rule to Use the New Table:***
+Apply the new table to traffic from a specific IPv6 address:
+```bash
+sudo ip -6 rule add from 2001:db8::2/64 table public
+```
+This command configures the system to route traffic originating from `2001:db8::2/64` using the `public` routing table.
 
 **Expected Outcome**   
 After executing these commands, your host should be correctly configured to handle IPv6 addresses both manually and via SLAAC. Additionally, public internet traffic will be routed through the specified vRack interface, separate from your private network traffic, ensuring a clear delineation between public and private data flows.   
