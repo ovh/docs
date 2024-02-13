@@ -1,7 +1,7 @@
 ---
 title: "Hosting condiviso: consulta le statistiche e i log del tuo sito"
 excerpt: "Accedi alle statistiche del tuo sito"
-updated: 2024-02-09
+updated: 2024-02-13
 ---
 
 > [!primary]

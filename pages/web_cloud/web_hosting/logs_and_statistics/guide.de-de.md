@@ -1,7 +1,7 @@
 ---
 title: "Statistiken und Logs eines Webhostings einsehen"
 excerpt: "Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen"
-updated: 2024-02-09
+updated: 2024-02-13
 ---
 
 > [!primary]
