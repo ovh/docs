@@ -93,6 +93,6 @@ You have now access to the server with your new password.
 
 [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-[How to configure root access](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+[How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 Join our community of users on <https://community.ovh.com/en/>.
