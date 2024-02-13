@@ -33,14 +33,17 @@ To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie
 | 1.27>=      |  
 
 #### Network prerequisite to expose your Load Balancers publicly   
+
+First step is to make sure that you have an existing vRack on your Public Cloud Project, to do so you can follow this guide that explains how [Configure a vRack for Public Cloud](https://help.ovhcloud.com/csm/en-public-cloud-network-vrack?id=kb_article_view&sysparm_article=KB0050268).
+
 If you plan to expose your Load Balancer publicly, in order to attach a [FloatingIP](https://www.ovhcloud.com/en-gb/public-cloud/floating-ip/) to your Load Balancer, it is mandatory to have an [OVHcloud Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/) (an OpenStack router) deployed on the subnet hosting your Load Balancer.
 If it does not exist when you create your first [Public Cloud Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/), a S size Managed Gateway will be automatically created.
-That is why we do recommend to deploy your MKS clusters on a network and subnet where an [OVHcloud Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/) can be created manually/automatically ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/)) or already exist.
+That is why we do recommend to deploy your MKS clusters on a network and subnet where an [OVHcloud Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/) can be created (manually or automatically - cf. [Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/)) or is already existing.
 
-For existing/already deployed clusters, if:
+If you have an existing/already deployed cluster, if:
 - **The Subnet's GatewayIP is already used by an OVHcloud Gateway**, nothing needs to be done. The current OVHcloud Gateway (Openstack Router) will be used.
 - **The subnet does not have an IP reserved for a Gateway**, you will have to provide or create a compatible subnet. Three options:
-  - Edit an existing subnet to reserve an IP for a Gateway : please refer to the [Update a subnet properties](https://help.ovhcloud.com/csm/en-ie-public-cloud-network-update-subnet-properties?id=kb_article_view&sysparm_article=KB0061498) documentation. 
+  - Edit an existing subnet to reserve an IP for a Gateway : please refer to the [Update a subnet properties](https://help.ovhcloud.com/csm/en-ie-public-cloud-network-update-subnet-properties?id=kb_article_view&sysparm_article=KB0061498) documentation.
   - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
   - Use a subnet dedicated for your load balancer: this option can be used on the Managed under 'advanced parameters'/'LoadbalancerSubnet' or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (Openstack Router)**, two options:
@@ -305,51 +308,18 @@ spec:
   This annotation is automatically added and it contains the floating ip address of the load balancer service.
   When using `loadbalancer.openstack.org/hostname` annotation it is the only place to see the real address of the load balancer.
 
-//
-// NOT SUPPORTED YET
-//
 
-- `loadbalancer.openstack.org/health-monitor-max-retries-down` //NOT SUPPORTED YET
+// NOT SUPPORTED YET
+
+- `loadbalancer.openstack.org/health-monitor-max-retries-down`
 
   Defines the health monitor retry count for the loadbalancer pool members to be marked down.
 
-- `loadbalancer.openstack.org/availability-zone` //NOT SUPPORTED
+- `loadbalancer.openstack.org/availability-zone`
 
   The name of the loadbalancer availability zone to use. It is ignored if the Octavia version doesn't support availability zones yet.
 
 
-
-//
-// NOT REVELANT or NOT SUPPORTED, STILL HERE FOR VALIDATION BUT TO BE REMOVED FROM THE DOC
-//
-- `loadbalancer.openstack.org/floating-network-id`   //NOT SUPPORTED on OVH
-
-  The public network id which will allocate public IP for loadbalancer. This annotation works when the value of `service.beta.kubernetes.io/openstack-internal-load-balancer` is false.
-
-
-- `loadbalancer.openstack.org/floating-subnet` //NOT SUPPORTED on OVH
-
-  A public network can have several subnets. This annotation is the name of subnet belonging to the floating network. This annotation is optional.
-
-- `loadbalancer.openstack.org/floating-subnet-id` //NOT SUPPORTED on OVH
-
-  This annotation is the ID of a subnet belonging to the floating network, if specified, it takes precedence over `loadbalancer.openstack.org/floating-subnet` or `loadbalancer.openstack.org/floating-tag`.
-
-- `loadbalancer.openstack.org/floating-subnet-tags` //NOT SUPPORTED on OVH
-
-  This annotation is the tag of a subnet belonging to the floating network.
-
-- `loadbalancer.openstack.org/class` //NOT SUPPORTED on OVH
-
-  The name of a preconfigured class in the config file. If provided, this config options included in the class section take precedence over the annotations of floating-subnet-id, floating-network-id, network-id, subnet-id and member-subnet-id . See the section below for how it works.
-
-
-- `loadbalancer.openstack.org/default-tls-container-ref` // NOT SUPPORTED
-
-  Reference to a tls container. This option works with Octavia, when this option is set then the cloud provider will create an Octavia Listener of type `TERMINATED_HTTPS` for a TLS Terminated loadbalancer.
-  Format for tls container ref: `https://{keymanager_host}/v1/containers/{uuid}`
-
-  When `container-store` parameter is set to `external` format for `default-tls-container-ref` could be any string.
 
 ### Features
 #### Resize your LoadBalancer
@@ -431,10 +401,10 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 
 | Ressource                                                          | Naming                                                                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Public Cloud Load Balancer                                         | mks_ressource_$mks_cluster_shortname_$namespace_$k8s_service_name_$mks-service-id |
-| Listener                                                           | listener_mks_ressource_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
-| Pool                                                               | pool_mks_ressource_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
-| Health-monitor                                                     | monitor_mks_ressource_$mks_cluster_shortname_$namespace_$service-name                                                  |
+| Public Cloud Load Balancer                                         | mks_resource_$mks_cluster_shortname_$namespace_$k8s_service_name_$mks-service-id |
+| Listener                                                           | listener_mks_resource_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
+| Pool                                                               | pool_mks_resource_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
+| Health-monitor                                                     | monitor_mks_resource_$mks_cluster_shortname_$namespace_$service-name                                                  |
 | Network  (only automatically created in Public-to-Public scenario) | k8s-cluster-$mks_cluster_id                                                                                            |
 | Subnet  (only automatically created in Public-to-Public scenario)  | k8s-cluster-$mks_cluster_id                                                                                            |
 | Gateway/Router                                                     | k8s-cluster-$mks_cluster_id                                                                                            |
@@ -449,7 +419,7 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 
 ## Go further
 
-Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/cassandra) .
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/) .
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 
