@@ -12,15 +12,15 @@ OVHcloud offers [several web hosting plans](https://www.ovhcloud.com/en-ie/web-h
 - Quickly create a website (professional or not), a blog, a **C**ontent **M**anagement **S**ystem (**CMS**) such as *WordPress*, *Joomla!*, *PrestaShop* or *Drupal*, or an online store.
 - Customize one or more email addresses with the domain name you want to use for your website.
 - Manage multiple websites on a single web hosting plan.
-- You must have one or more databases ([included with some of our web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- Configure one or more databases ([included with some of our web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - etc.
 
 These solutions spare you the hassle of maintaining, updating, and securing a web hosting infrastructure.<br>
 This saves you time on server administration and allows you to focus only on:
 
-- developing, updating and securing a website, blog, CMS or online store;
-- security and optimization for one or more databases, if your solution has one;
-- the configuration and management of your email addresses included with your web hosting plan.
+- Developing, updating and securing a website, blog, CMS or online store.
+- Security and optimization for one or more databases, if your solution has one.
+- The configuration and management of your email accounts included with your web hosting plan.
 
 **Find out how to link your domain name, put your website online, and create one or more email addresses with your web hosting plan.**
 
@@ -55,7 +55,7 @@ You can use this guide as a "repository" of possible actions when you subscribe 
 
 Before you begin, it’s essential to clearly identify and define your needs by asking yourself the following questions: 
 
-- Do I need to **create** or **migrate** (from another hosting provider) my website?
+- Do I need to **create** a website or **migrate** one from another hosting provider?
 - Do I need one or more databases to run my website?
 - Do I need one or more custom email addresses with my domain name?
 
@@ -81,15 +81,15 @@ In this scenario, you can choose from several solutions.
 
 If this is the case, please follow our guide on "[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". There, you will find all the steps you need to take in order to:
 
-- place your website on your web hosting plan’s FTP storage space;
-- create a database linked to your web hosting plan;
-- place your local database on the database linked to your web hosting plan;
-- link your database to the website on your web hosting plan.
+- Place your website on your web hosting plan’s FTP storage space.
+- Create a database linked to your web hosting plan.
+- Place your local database on the database linked to your web hosting plan.
+- Link your database to the website on your web hosting plan.
 
 ##### Case 2 - Create a website using a CMS
 
 OVHcloud offers the "1-click modules" option.<br>
-Once you have logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and via your web hosting plan, this option allows you to quickly install the *WordPress*, *Joomla!*, *PrestaShop* and *Drupal* CMS.
+Once you have logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), this option allows you to quickly install the *WordPress*, *Joomla!*, *PrestaShop* and *Drupal* CMS on your hosting.
 
 To use this option, please refer to our guide on "[Setting up your website with a 1-click module (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -100,11 +100,11 @@ To use this option, please refer to our guide on "[Setting up your website with 
 
 ### Step 3 - Create your email addresses (optional) <a name="email-creation"></a>
 
-Your [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) includes one or more email addresses, which you can choose to enable or disable.
+Your [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) includes one or more email accounts, which you can choose to enable or disable.
 
 First of all, please read our guide on "[Activating email addresses included in your Web Hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
-Once you have enabled this option, please refer to our guide on "[Creating an email address with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)" to customize one or more email addresses with your domain name.
+Once you have enabled this option, please refer to our guide on "[Creating an email address with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)" to customize one or more email accounts with your domain name.
 
 > **Special Cases:**
 >
@@ -129,19 +129,19 @@ The link between your domain name and your services (web hosting plan, email ser
 
 To check and/or modify the link between your domain name and your web hosting plan, **please refer to the following guides in order:**
 
-- [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) : you will find all the IP addresses for our web hosting infrastructure there. This guide will particularly help you with domain names whose active DNS zone is not managed at OVHcloud (or managed on a different OVHcloud customer account than your own).
-- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite): this guide explains how to add multiple domain names to a Web Hosting plan. It can also help you check that your domain name declaration in the `Multisite`{.action} tab of your Web Hosting plan is correct. If necessary, you can then modify it and take the necessary measures in your domain name’s active DNS zone.
-- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit): this guide explains how to edit an OVHcloud DNS zone. It will be useful to you in the event that your domain name’s active DNS zone is present on a different OVHcloud customer account than your own. You can also use it to access your domain name’s OVHcloud DNS zone, in order to verify that the IP address (entry(s) of type *A* and/or *AAAA*) declared for your domain name in the DNS zone corresponds to your Web Hosting plan’s IP address.
+- [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP): You will find all the IP addresses for our web hosting infrastructure there. This guide will particularly help you with domain names whose active DNS zone is not managed at OVHcloud (or managed on a different OVHcloud customer account than your own).
+- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite): This guide explains how to add multiple domain names to a Web Hosting plan. It can also help you check that your domain name declaration in the `Multisite`{.action} tab of your Web Hosting plan is correct. If necessary, you can then modify it and take the necessary measures in your domain name’s active DNS zone.
+- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit): This guide explains how to edit an OVHcloud DNS zone. It will be useful to you in the event that your domain name’s active DNS zone is present on a different OVHcloud customer account than your own. You can also use it to access your domain name’s OVHcloud DNS zone, in order to verify that the IP address (entry(s) of type *A* and/or *AAAA*) declared for your domain name in the DNS zone corresponds to your Web Hosting plan’s IP address.
 
 To check and/or modify the link between your domain name and your OVHcloud email solution, please read our guide on "[Configure an MX record](/pages/web_cloud/domains/dns_zone_mx)". You will find the names of the OVHcloud email servers, as well as the procedure to follow in order to point your domain name to these same servers.
 
 > [!primary]
 >
-> If the DNS zone active for your domain name is not managed by OVHcloud:
+> If the DNS zone for your domain name is not managed by OVHcloud:
 > 
-> - **For linking your domain name to your web hosting plan**: please refer only to the guides “[IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)” and “[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)” mentioned above to retrieve your web hosting plan’s IP address, then declare your domain name correctly on your web hosting plan. Then contact the organization that manages your domain name’s active DNS zone to point it to your web hosting plan.
+> - **For linking your domain name to your web hosting plan**: Please refer only to the guides “[IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)” and “[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)” mentioned above to retrieve your web hosting plan’s IP address, then declare your domain name correctly on your web hosting plan. Then contact the organization that manages your domain name’s active DNS zone to point it to your web hosting plan.
 >
-> - **For the link between your domain name and your OVHcloud email solution**: only refer to our guide on "[Configure an MX record](/pages/web_cloud/domains/dns_zone_mx)" to retrieve the names of the OVHcloud email servers that need to be entered in your domain name’s active DNS zone. Then contact the organization that manages your domain name’s active DNS zone, and point it to the OVHcloud email servers.
+> - **For the link between your domain name and your OVHcloud email solution**: Only refer to our guide "[Configure an MX record](/pages/web_cloud/domains/dns_zone_mx)" to retrieve the names of the OVHcloud email servers that need to be entered in your domain name’s active DNS zone. Then contact the organization that manages your domain name’s active DNS zone, and point it to the OVHcloud email servers.
 >
 
 ### Step 5 - Other options available with web hosting plans <a name="other-options"></a>
@@ -150,9 +150,9 @@ Depending on your [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/
 
 #### SSL certificates
 
-SSL certificates are used to make your website accessible using HTTPS protocol. This protocol encrypts the exchanges between your web hosting plan and the people who visit your website.
+SSL certificates are used to make your website accessible using the HTTPS protocol. This protocol encrypts the exchanges between your web hosting plan and the people who visit your website.
 
-No matter which [web hosting](https://www.ovhcloud.com/en-ie/web-hosting/) you are using, you can activate an SSL certificate **Let's encrypt** free of charge.
+No matter which [web hosting](https://www.ovhcloud.com/en-ie/web-hosting/) you are using, you can activate an SSL certificate from **Let's encrypt** free of charge.
 
 For more details on free and paid SSL certificates offered on web hosting plans, please read our guide on "[Managing SSL certificates on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
@@ -176,7 +176,7 @@ You can find more information on our CDN solutions in our guide on "[Speeding up
 
 #### Web Cloud Database Servers
 
-If you have a **Performance** web hosting plan, you can activate a database server [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) for free.
+If you have a **Performance** web hosting plan, you can activate a [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) for free.
 
 You can find more details on how to use it in our documentation “[Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
 
@@ -186,9 +186,9 @@ All [web hosting](https://www.ovhcloud.com/en-ie/web-hosting/) allow you to send
 
 You can find all the details on this feature in our guide on "[Monitoring and managing automated emails in your web hosting plan](/pages/web_cloud/web_hosting/mail_function_script_records)".
 
-#### The scheduled tasks "CRON"
+#### The scheduled tasks (CRON)
 
-With "CRON" tasks, you can automatically run scripts hosted on your web hosting plan.
+With CRON tasks, you can automatically run scripts hosted on your web hosting plan.
 
 If your [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) has this option, please refer to our guide on "[Using automated tasks on a Web Hosting plan](/pages/web_cloud/web_hosting/cron_tasks)" for further details.
 
