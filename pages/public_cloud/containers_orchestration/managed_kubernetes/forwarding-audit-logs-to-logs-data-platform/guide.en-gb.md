@@ -163,7 +163,7 @@ GET /cloud/project/{serviceName}/kube/{kubeId}/log/subscription/{subscriptionId}
 Now that your Kubernetes instance Audit logs are ingested and stored in your Logs Data Platform data stream, you can query your logs and build dashboards to have a graphical representation of your logs using web-based UI of Graylog.
 -	Through the OVHcloud Manager, retrieve the LDP username (ex: logs-xxxx) and its password in your Logs Data Platform account home page. You can refer to [Quick start for Logs Data Platform](https://help.ovhcloud.com/csm/en-ie-logs-data-platform-quick-start?id=kb_article_view&sysparm_article=KB0055819) documentation.
 -	Open the Graylog web-ui. You can retrieve the link in your account home page or using your Access point depending of your account region (for example: Gravelines region https://gra1.logs.ovh.com/ )
--	Login Graylog using your Logs Data Platform service name and Password
+-	Log into Graylog using your Logs Data Platform Username and Password
 -	Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html) for details on search syntax.
 
 For more details about how to use your logs with Logs Data Platform, including:
