@@ -19,12 +19,12 @@ L'accès aux logs et aux statistiques de votre site est compris dans votre offre
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
 
-Dans le menu de gauche, sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques et logs`{.action}
+Dans le menu de gauche, sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques et logs`{.action}.
 
-L'écran qui s’affiche est composé de 3 sections :
+L'écran qui s’affiche est composé de 4 sections :
 
 - **statistiques de visite** : présente de nombreuses statistiques concernant votre hébergement
-- **logs** : affiche les logs bruts de votre hébergement
+- **logs du site web** : affiche les logs bruts de votre hébergement
 - **statistiques de l'infrastructure** : présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, etc.)
 - **administration des utilisateurs** : affiche les utilisateurs autorisés à accéder aux statistiques
 
