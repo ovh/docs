@@ -95,16 +95,14 @@ Uma vez terminada a instalação, receberá um e-mail com as instruções de ace
 
 Para se ligar ao servidor, utilize os exemplos abaixo e substitua as informações de identificação pelos seus próprios identificadores (o endereço IP e o nome de referência do servidor são permutáveis).
 
-**Exemplo com root:**
-
 ```bash
-ssh root@IPv4_do_servidor
+ssh username@IPv4
 ```
 
-**Exemplo com um utilizador pré-configurado:**
+**Exemplo:**
 
 ```bash
-ssh ubuntu@nome_de_referência_do_servidor
+ssh ubuntu@169.254.10.250
 ```
 
 Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
