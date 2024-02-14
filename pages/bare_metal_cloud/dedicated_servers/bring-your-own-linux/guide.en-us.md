@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2024-02-01
+updated: 2024-02-14
 ---
 
 ## Objective
@@ -21,6 +21,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
+- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.shhttps://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
 
 > [!warning]
 >
@@ -36,6 +37,7 @@ There are some technical limitations linked to the use of physical products such
 - Boot type: **uefi** or **legacy**
 - Partition type: **MBR** or **GPT**
 - Image format: **qcow2**
+- Only one partition in the qcow2 image
 
 **Deployment methods:**
 
