@@ -294,7 +294,7 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >> Vous disposez de 2 fenêtres :
 >>
 >> - **Expéditeurs et domaines bloqués** : permet d'ajouter les adresses e-mail et nom de domaines que vous souhaitez bloquer.
->> - **Expéd et domaines autorisés** : permet de lister les adresses e-mail et nom de domaines que vous souhaitez autoriser, ce qui évite qu'ils soient potentiellement bloqués pour SPAM.
+>> - **Expéditeurs et domaines autorisés** : permet de lister les adresses e-mail et nom de domaines que vous souhaitez autoriser, ce qui évite qu'ils soient potentiellement bloqués pour SPAM.
 
 > Lorsque vous avez effectué l'ensemble de vos réglages dans le menu « **Paramètres** », cliquez sur `Enregistrer`{.action} pour valider vos choix, ou cliquez sur `Annuler`{.action} pour ignorer les changements.
 
@@ -372,9 +372,18 @@ Sélectionnez l'un des deux onglets suivants :
 
 #### Comprendre comment paramètrer ses filtres <a name="filters-howto"></a>
 
-La mise en place de filtres sur votre compte e-mail est un paramètre important qui vous permettra de mettre en place un système de triage automatique à la réception de vos e-mails.
+La mise en place de filtres sur votre compte e-mail est un paramètre important qui vous permettra de mettre en place un système de triage automatique à la réception de vos e-mails. Une régle de filtrage se décompose en 4 éléments :
 
-##### Champ de comparaison
+1 - [Champ de comparaison](#filters-comp-field) : Sur quel partie de l'e-mail le filtre va s'appliquer.<br>
+2 - [Opérateur de comparaison](#filters-comp-operator) : Avec quel précision le filtre devra-t-il être appliquer.<br>
+3 - [Valeur](#filters-value) : Quels mots/éléments de l'e-mail seront ciblés par le filtre.<br>
+4 - [Actions du filtre](#filters-action) : Que va faire le filtre sur l'e-mail.<br>
+
+![Zimbra - filtres](images/zimbra-filters.png){.thumbnail}
+
+Dans les sous-chapitres qui suivent, vous trouverez le détail de chacun des éléments d'une régle de filtrage.
+
+##### 1 - Champ de comparaison <a name="filters-comp-field"></a>
 
 Le champ de comparaison désigne la section de l'e-mail à vérifier pour l'opérateur de comparaison. Les champs de comparaison peuvent inclure les champs suivants:
 
@@ -385,9 +394,9 @@ Le champ de comparaison désigne la section de l'e-mail à vérifier pour l'opé
 - **En-tête nommé** : lorsque cette option est sélectionnée, un champ de saisie supplémentaire apparaît avant l'opérateur de comparaison. Ce champ vous permet de saisir n'importe quels éléments de l'en-tête d'un e-mail. Vous pouvez spécifier les champs standard « De », « À », « Objet », ou d'autres champs pouvant être présents dans l'en-tête de l'e-mail. Par exemple, certains serveurs e-mail peuvent ajouter dans l'en-tête des champs particuliers que vous pouvez intégrer dans votre règle de filtrage, à l'aide de ce champ de comparaison.
 - **Corps du texte** : désigne les mots contenus ou non dans le corps de l'e-mail.
 
-##### Opérateur de comparaison
+##### 2 - Opérateur de comparaison <a name="filters-comp-operator"></a>
 
-L'opérateur de comparaison indique au filtre ce qu'il doit rechercher dans le champ de comparaison désigné précédemment.
+En fonction du champ de comparaison désigné précédemment, l'opérateur de comparaison déterminera le niveau de correspondance à appliquer sur la valeur.
 
 > [!primary]
 >
@@ -405,16 +414,20 @@ L'opérateur de comparaison indique au filtre ce qu'il doit rechercher dans le c
 
 > **Utilisation de caractères joker dans les filtres**
 >
-> Les caractères joker, caractères générique ou encore appelés « wildcard » peuvent être utilisés dans le champ de saisie pour la comparaison qui utilisent l’opérateur de comparaison « **Correspond aux caractères joker / Ne correspond pas aux caractères joker** ». Les deux caractères génériques sont `\*` et `?`.
+> Les caractères joker, caractères générique ou encore appelés « wildcard » peuvent être utilisés dans le champ de saisie pour la comparaison qui utilisent l’opérateur de comparaison « **Correspond aux caractères joker / Ne correspond pas aux caractères joker** ». Les deux caractères génériques sont `*` et `?`.
 >
-> - L'astérisque `\*` est un espace réservé pour zéro ou plusieurs caractères de n'importe quel type.<br><br> Par exemple, pour la chaîne de recherche « maison*bleue », elle renverrait les correspondances « maison bleue », « maisons » ou encore « maison en bois bleue ». Cependant, il ne renverrait pas « super-maison en bois bleue ». <br><br> Autre exemple de chaîne de recherche « p\*maison » qui renverrait les correspondances « petite maison », « partir de sa maison ». Cependant, il ne renverrait pas « prêter sa maison à un ami ».
+> - L'astérisque `*` est un espace réservé pour zéro ou plusieurs caractères de n'importe quel type.<br><br> Par exemple, pour la chaîne de recherche « maison\*bleue », elle renverrait les correspondances « maison bleue », « maisons » ou encore « maison en bois bleue ». Cependant, il ne renverrait pas « super-maison en bois bleue ». <br><br> Autre exemple de chaîne de recherche « p\*maison » qui renverrait les correspondances « petite maison », « partir de sa maison ». Cependant, il ne renverrait pas « prêter sa maison à un ami ».
 >
 > - Le point d'interrogation `?` est un espace réservé pour exactement un seul caractère.<br><br>Par exemple, pour la chaîne de recherche « maison\*bleue », elle renverrait les correspondances « maison bleue », « maison-bleue », « maison_bleue ».
 >
 
-##### Actions du filtre
+##### 3 - Valeur <a name="filters-value"></a>
 
-Le champ `Alors` définit l'action à lancer lorsqu'un e-mail remplit les conditions du filtre.  Les actions de filtrage peuvent inclure la suppression, le tri et même le marquage du courrier entrant.
+Une fois votre champ et votre opérateur de comparaison sélectionnés, dans la case correspondante, vous devrez saisir la valeur sur laquelle ils doivent correspondre.
+
+##### 4 - Actions du filtre <a name="filters-action"></a>
+
+Le champ `Alors` définit l'action à lancer sur l'e-mail qui remplit les conditions du filtre . Les actions de filtrage peuvent inclure la suppression, le tri et même le marquage du courrier entrant.
 
 - **Garder dans le dossier Réception** : enregistre les e-mails dans votre boîte de réception. Si aucune des règles de filtrage ne correspond à un e-mail, cette action a lieu par défaut.
 - **Activer le dossier** : déplace l'e-mail vers un dossier spécifié.
