@@ -1044,6 +1044,7 @@
             + [DNS and DNS zone](web-cloud-domains-dns-dns-and-dns-zone)
                 + [Editing an OVHcloud DNS zone](web_cloud/domains/dns_zone_edit)
                 + [Creating an OVHcloud DNS zone for a domain name](web_cloud/domains/dns_zone_create)
+                + [How to delete a DNS zone ?](web_cloud/domains/dns_zone_deletion)
                 + [Editing the DNS servers for an OVHcloud domain name](web_cloud/domains/dns_server_general_information)
                 + [How to view the history of your DNS records](web_cloud/domains/dns_zone_history)
                 + [Configuring a dynamic DNS for a domain name](web_cloud/domains/dns_dynhost)
