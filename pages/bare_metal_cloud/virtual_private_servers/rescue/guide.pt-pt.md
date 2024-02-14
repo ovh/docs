@@ -42,10 +42,6 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 
 ### Ativação do modo rescue
 
-> [!warning]
-> Tenha em conta que, se tiver definido uma chave SSH predefinida na sua Área de Cliente, não receberá uma palavra-passe root quando reiniciar um servidor em modo rescue. Neste caso, tem de desativar a chave SSH predefinida antes de reiniciar o servidor em modo rescue. Para isso, consulte esta [secção](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) do nosso guia sobre a utilização de chaves SSH.
->
-
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 No separador `Acolhimento`{.action}, clique em `...`{.action} junto de "Boot" na zona **O seu VPS**.
