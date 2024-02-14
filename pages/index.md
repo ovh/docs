@@ -83,6 +83,7 @@
         + [File Storage services - Responsibility model](account_and_service_management/responsibility_sharing/file-storage)
         + [VMware on OVHcloud - Shared Responsibility](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing)
         + [SecNumcloud-qualified VMware on OVHcloud - Shared Responsibility](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/SNC-responsibility-sharing)
+        + [Responsibility sharing - Nutanix on OVHcloud](hosted_private_cloud/nutanix_on_ovhcloud/60-responsibility-sharing)
         + [Shared responsibility for SAP on OVHcloud solutions](hosted_private_cloud/sap_on_ovhcloud/sap_raci)
         + [Logs Data Platform - Shared Responsibility](manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model)
         + [Public Cloud Instances - Shared Responsibility](public_cloud/compute/responsibility-model-instances)
