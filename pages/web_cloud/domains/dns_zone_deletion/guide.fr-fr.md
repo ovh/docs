@@ -65,14 +65,45 @@ Pour initier la suppression d'une zone DNS OVHcloud, effectuez les actions suiva
 
 Dans la fenêtre qui s'ouvre, prenez connaissance des messages indiqués à l'intérieur.
 
-![delete the DNS zone](images/delete-the-dns-zone-confirmation.png){.thumbnail}
+![delete the DNS zone validation](images/delete-the-dns-zone-confirmation.png){.thumbnail}
 
 Cliquez sur le bouton `Valider`{.action} pour terminer la première étape de suppression de la zone DNS.
-
   
 ### Étape 2 - Confirmer la suppression d'une zone DNS OVHcloud
+
+Suite à l'étape précédente, un e-mail pour confirmer la suppression de la zone DNS est envoyé à l'adresse e-mail du contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » de la zone DNS OVHcloud.
+
+> [!success]
+>
+> Si vous ne reçevez pas l'e-mail, vérifiez dans vos courriers indésirables.
+>
+
+Cet e-mail contient deux liens valables pendant **72** heures à compter du moment où vous avez terminé l'étape 1 du présent guide.
+
+Cliquez sur le `lien de validation` pour poursuivre la suppression de la zone DNS OVHcloud ou sur le `lien d'annulation` pour arrêter la démarche de suppression de la zone DNS OVHcloud.
+
+> [!primary]
+>
+> Si la redirection des liens ne fonctionne pas, **copiez/collez** le lien dans la barre d'URL de votre navigateur Internet. Reconnectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si nécessaire.
+>
+
+Si vous cliquez sur le `lien de validation`, vous serez redirigé vers une nouvelle page OVHcloud qui vous demandera le(s) motif(s) de suppression de la zone DNS OVHcloud.
+
+![cancel the service](images/cancel-my-service.png){.thumbnail}
+
+Une fois le formulaire rempli et si vous êtes absolument sûr de vouloir supprimer la zone DNS OVHcloud définitivement, cliquez sur le bouton `Valider`{.action} en bas de page.
+
+Un dernier e-mail de confirmation sera envoyé à l'adresse e-mail du contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » de la zone DNS OVHcloud pour confirmer la suppression.
   
 ## Aller plus loin
+
+[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts)
+
+[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+
+[Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
  
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
  
