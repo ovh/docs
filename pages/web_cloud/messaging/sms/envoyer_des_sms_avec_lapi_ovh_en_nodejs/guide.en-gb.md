@@ -36,7 +36,7 @@ You will need to retrieve a directory named ./node_modules/ovh/...
 You will need credentials to use the SMS API. These credentials are created once, to identify the application that will be sending SMS messages. The lifespan of these credentials can be configured.
 
 Create all of your script credentials (all keys at once) on this page:
-[https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (this URL will automatically give you the correct rights for the steps described in this guide).
+[https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (this URL will automatically give you the correct rights for the steps described in this guide).
 
 ![create tokens](images/img_2462.jpg){.thumbnail}
 
