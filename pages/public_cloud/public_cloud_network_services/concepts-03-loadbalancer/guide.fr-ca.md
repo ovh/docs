@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Comprendre les concepts de configuration du Load Balancer Public Cloud"
-updated: 2024-01-23
+updated: 2024-02-15
 ---
 
 ## Objectif

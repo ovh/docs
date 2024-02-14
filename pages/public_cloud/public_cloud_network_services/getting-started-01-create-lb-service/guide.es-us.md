@@ -1,7 +1,7 @@
 ---
 title: Getting started with Load Balancer on Public Cloud (EN)
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-updated: 2024-01-22
+updated: 2024-02-15
 ---
 
 ## Objective

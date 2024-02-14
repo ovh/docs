@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Understand the configuration concepts that are powering the Public Cloud Load Balancer"
-updated: 2024-01-18
+updated: 2024-02-15
 ---
 
 ## Objective
