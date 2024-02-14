@@ -90,12 +90,6 @@ sudo systemctl restart sshd
 
 This should be sufficient to apply the changes. Alternatively, reboot the VPS (`~$ sudo reboot`).
 
-Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
-
-```bash
-ssh username@IPv4_of_your_VPS -p NewPortNumber
-```
-
 **For Ubuntu 23.04 and later**
 
 For the latest Ubuntu versions, SSH configuration is now managed in the `ssh.socket` file.
@@ -124,6 +118,12 @@ Save your changes and run the following commands:
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl restart ssh.service
+```
+
+Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
+
+```bash
+ssh username@IPv4_of_your_VPS -p NewPortNumber
 ```
 
 ### Changing the password associated with the user "root"
