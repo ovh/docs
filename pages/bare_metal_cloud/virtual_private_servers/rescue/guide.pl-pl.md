@@ -42,10 +42,6 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 
 ### Aktywacja trybu Rescue
 
-> [!warning]
-> Pamiętaj, że jeśli w Panelu klienta ustawiłeś domyślny klucz SSH, nie otrzymasz hasła root podczas restartu serwera w trybie Rescue. W takim przypadku należy najpierw zdezaktywować domyślny klucz SSH przed zrestartowaniem serwera w trybie rescue. W tym celu zapoznaj się z [sekcją](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) naszego przewodnika dotyczącego korzystania z kluczy SSH.
->
-
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
 
 W zakładce `Strona główna`{.action} kliknij `...`{.action} obok "Boot" w strefie **Twój VPS**.

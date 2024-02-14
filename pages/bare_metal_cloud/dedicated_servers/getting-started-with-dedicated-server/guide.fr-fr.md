@@ -97,16 +97,14 @@ Une fois l'installation terminée, vous recevrez un e-mail contenant les instruc
 
 Utilisez les exemples suivants pour vous connecter à votre serveur et remplacez les informations d'identification par vos propres identifiants (l'adresse IP et le nom de référence du serveur sont interchangeables).
 
-**Exemple avec root :**
-
 ```bash
-ssh root@IPv4_de_votre_serveur
+ssh username@IPv4
 ```
 
-**Exemple avec un utilisateur préconfiguré :**
+**Exemple :**
 
 ```bash
-ssh ubuntu@nom_de_reference_de_votre_serveur
+ssh ubuntu@169.254.10.250
 ```
 
 Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ».

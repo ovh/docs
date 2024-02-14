@@ -179,11 +179,9 @@ passwd: password updated successfully
 > 
 > **Activating the root user account**
 >
-> It is not necessary to use the "root" user account to get started with administrating your server. This account has to be enabled first in the server OS in order to use it. Moreover, SSH connections with the user "root" are **disabled** by default as a security measure
-
-Type your current password and press `Enter`{.action}. Enter the new passphrase and type it again at the next prompt to confirm it..
-> 
-Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure root access](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+> It is not necessary to use the "root" user account to get started with administrating your server. This account has to be enabled first in the server OS in order to use it. Moreover, SSH connections with the user "root" are **disabled** by default as a security measure.
+>
+Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 >
 
 **We recommend the following steps to proceed**:

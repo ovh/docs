@@ -337,6 +337,9 @@ Beispiel für den Ordnerinhalt von `.ssh`:
 
 ```bash
 ls ~/.ssh/
+```
+
+```console
 config    id_rsa    id_rsa.pub    known_hosts     known_hosts.old
 ```
 

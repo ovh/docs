@@ -42,10 +42,6 @@ Si experimenta algún problema con el sistema, la realización de comprobaciones
 
 ### Activación del modo de rescate
 
-> [!warning]
-> Tenga en cuenta que si ha configurado una llave SSH por defecto en su área de cliente, no recibirá una contraseña root cuando reinicie un servidor en modo de rescate. En este caso, deberá desactivar la llave SSH por defecto antes de reiniciar el servidor en modo de rescate. Para ello, consulte la [section](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) de nuestra guía sobre el uso de llaves SSH.
->
-
 Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en la sección `Servidores privados virtuales`{.action}.
 
 En la pestaña `Inicio`{.action}, haga clic en `...`{.action} junto al botón derecho en la zona **Su VPS**.

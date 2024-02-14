@@ -38,10 +38,6 @@ If you are facing a problem with your system, performing checks in rescue mode h
 
 ### Activating rescue mode
 
-> [!warning]
-> Please note that if you have set a **default SSH key** in your Control Panel, you will not receive a root password when rebooting a VPS in rescue mode. In this case, you must first disable the key before proceeding with the server reboot. To do so, please consult the guide "[Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey)".
-> 
-
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 On the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the **Your VPS** box.

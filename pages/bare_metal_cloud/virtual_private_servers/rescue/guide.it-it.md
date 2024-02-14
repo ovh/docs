@@ -42,10 +42,6 @@ In caso di problemi al sistema, eseguire controlli in Rescue mode permette di de
 
 ### Attivazione della modalità Rescue
 
-> [!warning]
-> Ricordiamo che se nello Spazio Cliente è stata impostata una chiave SSH di default, non riceverai una password di root al riavvio del server in modalità Rescue. In questo caso, disattiva la chiave SSH di default prima di riavviare il server in modalità Rescue. Per farlo, consulta questa [sezione](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) della nostra guida sull'utilizzo delle chiavi SSH.
->
-
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/it/&ovhSubsidiary=it), clicca sulla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server privati virtuali`{.action}.
 
 Nella scheda `Home`{.action}, clicca su `...`{.action} accanto a "Boot" nella casella **Il tuo VPS**.

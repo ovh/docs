@@ -97,16 +97,14 @@ Once the installation is completed, you will receive an email containing instruc
 
 Use the following examples to log on to your server, replacing the credentials with your actual information (IP address and server reference name are interchangeable).
 
-**Example with root:**
-
 ```bash
-ssh root@IPv4_of_your_server
+ssh username@IPv4
 ```
 
-**Example with a pre-configured user:**
+**Example:**
 
 ```bash
-ssh ubuntu@reference_name_of_your_server
+ssh ubuntu@169.254.10.250
 ```
 
 You can learn more about SSH in [this guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -192,6 +190,8 @@ OVHcloud dedicated servers have an access-controlled storage space as a gratuito
 To activate and use the backup storage, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Go further
+
+[How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
