@@ -1,7 +1,7 @@
 ---
 title: Securing a dedicated server
 excerpt: Find out the basics of securing your dedicated server
-updated: 2024-01-23
+updated: 2024-02-14
 ---
 
 ## Objective
@@ -86,6 +86,36 @@ sudo systemctl restart sshd
 ```
 
 This should be sufficient to apply the changes. Alternatively, reboot the server (`~$ sudo reboot`).
+
+**For Ubuntu 23.04 and later**
+
+For the latest Ubuntu versions, SSH configuration is now managed in the `ssh.socket` file.
+
+The first step is to authorize the port you wish to use through the operating system's firewall. For Linux, we use iptables. Before running the command, make sure your firewall is active. For more information on iptables, please refer to this guide: [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable).
+
+
+```bash
+sudo ufw allow 49152/tcp && sudo ufw allow
+```
+
+Next, edit the `Listenstream` line in the configuration file with a text editor of your choice (`nano` used in this example):
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Save your changes and run the following commands:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
 
 Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
 
