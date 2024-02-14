@@ -205,7 +205,7 @@ Dans notre exemple, notre fichier est nommé `51-cloud-init-ipv6.yaml` :
 ~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
-Modifiez ensuite le fichier `51-cloud-init-ipv6.yaml` en ajoutant les lignes suivantes pour la configuration IPv6. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) ainsi que l'interface réseau (si votre serveur n'utilise pas **eth0**) par vos valeurs spécifiques.
+Modifiez ensuite le fichier `51-cloud-init-ipv6.yaml` en ajoutant les lignes suivantes pour la configuration IPv6. Remplacez les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) ainsi que l'interface réseau (si votre serveur n'utilise pas **eth0**) par vos valeurs spécifiques.
 
 ```yaml
 network:
