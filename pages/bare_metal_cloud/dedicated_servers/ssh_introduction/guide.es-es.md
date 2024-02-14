@@ -137,13 +137,13 @@ Guarde los cambios y salga del editor. La nueva huella de clave debe ser aceptad
 En Windows, también se especifica la ruta del archivo `known_hosts` y la línea a eliminar, por ejemplo:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Para solucionar este problema, utilice el siguiente comando con la dirección IP del servidor:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 También puede tener acceso a esta carpeta, hacer clic derecho en el archivo y abrirlo con la aplicación Bloc de notas.

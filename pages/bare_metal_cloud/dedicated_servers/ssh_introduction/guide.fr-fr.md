@@ -133,13 +133,13 @@ Enregistrez les modifications et quittez l'éditeur. La nouvelle empreinte de cl
 Sous Windows, l'emplacement du fichier `known_hosts` et la ligne à supprimer sont également spécifiés, par exemple :
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Pour résoudre ce problème, utilisez la commande suivante avec l'adresse IP de votre serveur :
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 Vous pouvez également accéder à ce dossier, effectuer un clic droit sur le fichier et l'ouvrir avec l'application Bloc-notes.

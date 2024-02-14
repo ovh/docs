@@ -137,13 +137,13 @@ Zapisz zmiany i wyjdź z edytora. Nowy odcisk klucza musi zostać zaakceptowany 
 W systemie Windows określono również umiejscowienie pliku `known_hosts` i linii do usunięcia, np.:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Aby rozwiązać ten problem, użyj następującego polecenia z adresem IP Twojego serwera:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 Możesz również uzyskać dostęp do tego folderu, kliknąć prawym przyciskiem myszy plik i otworzyć go w aplikacji Notatnik.

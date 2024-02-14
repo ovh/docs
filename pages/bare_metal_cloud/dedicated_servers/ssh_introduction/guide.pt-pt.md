@@ -137,13 +137,13 @@ Registe as modificações e saia do editor. A nova impressão de chave deve ser 
 Em Windows, a localização do ficheiro `known_hosts` e a linha a eliminar são também especificadas, por exemplo:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Para resolver este problema, utilize o seguinte comando com o endereço IP do seu servidor:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 Também pode aceder à pasta, clicar com o botão direito do rato no ficheiro e abri-lo com a aplicação do Bloco de Notas.
