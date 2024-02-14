@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2023-02-13
+updated: 2023-02-14
 ---
 
 ## Objective
@@ -292,6 +292,7 @@ IPV6_DEFAULTGW=2607:5300:201:abcd::1
 ```bash
 ~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
 ```
+
 - Edit the file and add the lines below. Replace the generic elements (*IPV6_GATEWAY* and **eth0** interface, if necessary) with your specific values.
 
 ```console
