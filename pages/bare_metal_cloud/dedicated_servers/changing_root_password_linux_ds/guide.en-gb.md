@@ -44,6 +44,25 @@ Be sure to consult our "Getting started" guides as well:
 > It is recommended to consult the **system manual pages** for each command you are using. You can do this from the command line by entering `man` followed by a the name of command, function or system file.
 >
 
+### Content overview
+
+- [User account management](#accounts)
+    - [Creating an unprivileged user account](#unprivileged)
+    - [Creating a user account with root privileges](#privileged)
+    - [Executing commands as an administrator ("sudo")](#sudo)
+    - [Disabling a user account](#disable)
+    - [Enabling a user account](#enable)
+    - [Deleting a user account](#delete)
+    - [Switching user accounts](#switch)
+    - [Switching to the "root" account ("root shell")](#rootshell)
+- [Activating login for the user "root"](#enableroot)
+    - [Enabling the "root" account](#rootstep1)
+    - [Editing the file "sshd_config"](#rootstep2)
+    - [Restarting the SSH service](#rootstep3)
+
+
+<a name="accounts"></a>
+
 ### User account management
 
 Note that server security policies can be adjusted to different use cases and user environments. The steps described below offer basic explanations about user account management with a focus on convenience and security and do not claim universal validity.
@@ -91,6 +110,7 @@ This means that the user you are currently logged in with can execute all comman
 > To learn the details and the settings that apply to your system, you can start with the `man` pages for `sudo` and `sudoers`.
 >
 
+<a name="unprivileged"></a>
 
 #### Creating an unprivileged user account
 
@@ -116,7 +136,7 @@ Note: On a GNU/Linux distribution, **a password prompt will not display your key
 
 - Relevant `man` pages: `adduser`, `useradd`
 
-<a name="sudouser"></a>
+<a name="privileged"></a>
 
 #### Creating a user account with root privileges
 
@@ -167,6 +187,8 @@ These configurations can be found in `/etc/sudoers` and the directory `/etc/sudo
 > The proper administration of users including user authentication methods are dependent on the work environment and other factors. If you need to manage user accounts and groups on a server, please refer to the official documentation of your operating system and the appropriate knowledge bases.
 >
 
+<a name="sudo"></a>
+
 #### Executing commands as an administrator ("sudo")
 
 Any action that requires elevated permissions will be rejected unless the `sudo` command is used.
@@ -187,6 +209,8 @@ The system will frequently ask for the password of the `sudo user` you are logge
 
 - Relevant `man` pages: `sudo_root`, `sudo`, `sudoers`
 
+<a name="disable"></a>
+
 #### Disabling a user account
 
 To disable a `user account`, enter:
@@ -196,6 +220,8 @@ sudo passwd -dl username
 ```
 
 This will lock the account (prevent logging in via password) and set it "passwordless", effectively disabling the account.
+
+<a name="enable"></a>
 
 #### Enabling a user account
 
@@ -217,6 +243,8 @@ sudo passwd username
 
 - Relevant `man` pages: `passwd`, `usermod`
 
+<a name="delete"></a>
+
 #### Deleting a user account
 
 A simple method to remove an account and its files is the following command:
@@ -226,6 +254,8 @@ sudo userdel -r -f username
 ```
 
 - Relevant `man` pages: `userdel`, `deluser`
+
+<a name="switch"></a>
 
 #### Switching user accounts
 
@@ -243,6 +273,8 @@ username@ns9356771:/home/ubuntu$
 ```
 
 To return to your previous user account, switch again or use `exit`.
+
+<a name="rootshell"></a>
 
 #### Switching to the "root" account ("root shell")
 
@@ -307,7 +339,9 @@ root    ALL=(ALL:ALL) ALL
 > - [Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 > 
 
-### Step 1: Enable the "root" account
+<a name="rootstep1"></a>
+
+#### Step 1: Enable the "root" account
 
 Enter the following command, then provide a password at the prompt:
 
@@ -321,6 +355,7 @@ You can undo this action by entering:
 sudo passwd -d root
 ```
 
+<a name="rootstep2"></a>
 
 #### Step 2: Edit the file "sshd_config"
 
@@ -349,6 +384,8 @@ PermitRootLogin yes
 This will allow server logins with `root` and the corresponding password.
 
 Save the file and exit the editor. To revoke this type of access, repeat the steps and remove the line.
+
+<a name="rootstep3"></a>
 
 #### Step 3: Restart the SSH service
 

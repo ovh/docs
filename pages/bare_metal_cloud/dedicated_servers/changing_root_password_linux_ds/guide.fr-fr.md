@@ -43,6 +43,25 @@ N'oubliez pas de consulter également nos guides de premiers pas :
 > Nous vous recommandons de consulter les **pages du manuel du système** pour chaque commande que vous utilisez. Vous pouvez le faire à partir de la ligne de commande en entrant `man` suivi d'un nom de commande, de fonction ou de fichier système.
 >
 
+### Sommaire
+
+- [Gestion des comptes utilisateurs](#accounts)
+    - [Création d’un compte utilisateur non privilégié](#unprivileged)
+    - [Création d’un compte utilisateur avec les privilèges root](#privileged)
+    - [Exécution de commandes en tant qu'administrateur (« sudo »))](#sudo)
+    - [Désactivation du compte utilisateur](#disable)
+    - [Activation du compte utilisateur](#enable)
+    - [Suppression d’un compte utilisateur](#delete)
+    - [Changement de compte utilisateur](#switch)
+    - [Basculer vers le compte « root » (« root shell »))](#rootshell)
+- [Activation de la connexion de l'utilisateur « root »](#enableroot)
+    - [Activer le compte « root »](#rootstep1)
+    - [Editer le fichier « sshd_config »](#rootstep2)
+    - [Restarting the SSH service](#rootstep3)
+
+
+<a name="accounts"></a>
+
 ### Gestion des comptes utilisateurs
 
 Prenez en compte que les politiques de sécurité des serveurs peuvent être adaptées à différents cas d’utilisation et environnements utilisateur. Les étapes décrites ci-dessous offrent des explications de base sur la gestion des comptes d'utilisateurs en mettant l'accent sur la commodité et la sécurité, elle n'ont pas valeur de validité universelle.
@@ -90,6 +109,8 @@ Cela signifie que l'utilisateur avec lequel vous êtes actuellement connecté pe
 > Pour connaître les détails et les paramètres qui s'appliquent à votre système, vous pouvez commencer par les pages `man` pour `sudo` et `sudoers`.
 >
 
+<a name="unprivileged"></a>
+
 #### Création d’un compte utilisateur non privilégié
 
 Même si vous n'avez pas besoin d'accorder l'accès à votre serveur à d'autres personnes, la création d'un compte utilisateur sans autorisations spéciales (aussi appelé `normal user` ou `regular user`) peut être utile à des fins de sécurité. Par exemple, il n'y a aucun risque d'endommager accidentellement le système en supprimant ou en modifiant les fichiers de configuration du serveur lors de l'exécution de commandes ou de processus à partir d'un compte utilisateur sans autorisations élevées.
@@ -114,7 +135,7 @@ Remarque : Sur une distribution GNU/Linux, **une invite de mot de passe n'affich
 
 - Pages `man` pertinentes : `adduser`, `useradd`
 
-<a name="sudouser"></a>
+<a name="privileged"></a>
 
 #### Création d’un compte utilisateur avec les privilèges root
 
@@ -165,6 +186,8 @@ Ces configurations peuvent être trouvées respectivement dans `/etc/sudoers` et
 > La bonne administration des utilisateurs, y compris les méthodes d'authentification des utilisateurs, dépend de l'environnement de travail et d'autres facteurs. Si vous avez besoin de gérer des comptes utilisateurs et des groupes sur un serveur, référez-vous à la documentation officielle de votre système d'exploitation et aux bases de connaissances appropriées.
 >
 
+<a name="sudo"></a>
+
 #### Exécution de commandes en tant qu'administrateur (« sudo »)
 
 Toute action nécessitant des autorisations élevées sera rejetée à moins que la commande `sudo` ne soit utilisée.
@@ -185,6 +208,8 @@ Le système vous demandera fréquemment le mot de passe de `sudo user` auquel vo
 
 - Pages `man` pertinentes : `sudo_root`, `sudo`, `sudoers`
 
+<a name="disable"></a>
+
 #### Désactivation du compte utilisateur
 
 Pour désactiver un `user account`, entrez :
@@ -194,6 +219,8 @@ sudo passwd -dl username
 ```
 
 Cela verrouillera le compte (en l'empêchant de se connecter par mot de passe) et le définira comme « *passwordless* », ce qui désactivera le compte.
+
+<a name="enable"></a>
 
 #### Activation du compte utilisateur
 
@@ -215,6 +242,8 @@ sudo passwd username
 
 - Pages `man` pertinentes : `passwd`, `usermod`
 
+<a name="delete"></a>
+
 #### Suppression d’un compte utilisateur
 
 Une méthode simple pour supprimer un compte et ses fichiers est la commande suivante :
@@ -224,6 +253,8 @@ sudo userdel -r -f username
 ```
 
 - Pages `man` pertinentes : `userdel`, `deluser`
+
+<a name="switch"></a>
 
 #### Changement de compte utilisateur
 
@@ -241,6 +272,8 @@ username@ns9356771:/home/ubuntu$
 ```
 
 Pour revenir à votre compte utilisateur précédent, basculez à nouveau ou utilisez `exit`.
+
+<a name="rootshell"></a>
 
 #### Basculer vers le compte « root » (« root shell »)
 
@@ -304,6 +337,8 @@ root    ALL=(ALL:ALL) ALL
 > - [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 > 
 
+<a name="rootstep1"></a>
+
 #### Étape 1 : activer le compte « root »
 
 Entrez la commande suivante puis fournissez un mot de passe à l'invite :
@@ -317,6 +352,8 @@ Vous pouvez annuler cette action en renseignant :
 ```bash
 sudo passwd -d root
 ```
+
+<a name="rootstep2"></a>
 
 #### Étape 2 : éditer le fichier « sshd_config »
 
@@ -345,6 +382,8 @@ PermitRootLogin yes
 Cela permettra de se connecter au serveur avec `root` et le mot de passe correspondant.
 
 Enregistrez le fichier et quittez l'éditeur. Pour révoquer ce type d'accès, répétez les étapes et supprimez la ligne.
+
+<a name="rootstep2"></a>
 
 #### Étape 3 : redémarrer le service SSH
 
