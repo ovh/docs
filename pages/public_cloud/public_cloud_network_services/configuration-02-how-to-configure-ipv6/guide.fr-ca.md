@@ -1,7 +1,7 @@
 ---
-title: 'Configurer IPv6 sur une instance Public Cloud'
-excerpt: 'Tutoriel de configuration du protocole IPv6 sur une instance Public Cloud'
-updated: 2024-01-29
+title: 'Configuration IPv6 sur une instance Public Cloud'
+excerpt: 'Découvrez comment configurer le protocole IPv6 sur une instance Public Cloud'
+updated: 2024-02-14
 ---
 
 ## Objectif
@@ -200,7 +200,7 @@ Vous pourrez alors revenir sur les modifications en utilisant les commandes ci-d
 ~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Ensuite, nous éditons le fichier `ifcfg-eth0`, en ajoutant seulement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
+Nous éditons ensuite le fichier `ifcfg-eth0`, en ajoutant seulement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
 
 ```console
 IPV6INIT=yes
@@ -230,7 +230,7 @@ Dans notre exemple, notre fichier s'appelle `cloud-init-eth0.nmconnection`, donc
 ~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
-Ensuite, nous éditons le fichier `cloud-init-eth0.nmconnection`, en ajoutant seulement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
+Nous éditons ensuite le fichier `cloud-init-eth0.nmconnection`, en ajoutant seulement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
 
 ```bash
 [ipv6]
@@ -254,7 +254,7 @@ route1=::/0,2607:5300:201:abcd::1
 
 #### Sur Windows
 
-Par défaut, l'IPv6 n'est pas configuré sur les serveurs Windows. Pour l'activer, procédez comme suit :
+Par défaut, l'IPv6 n'est pas configurée sur les serveurs Windows. Pour l'activer, procédez comme suit :
 
 Rendez-vous dans la rubrique `Connexion Réseaux`{.action} de votre Windows.
 
@@ -264,7 +264,7 @@ Ensuite, faites un clic droit sur votre carte réseau pour accéder à `Proprié
 
 ![public-cloud ipv6](images/pcipv64.png){.thumbnail}
 
-Ensuite, cliquez sur `Internet Protocol Version 6 (TCP/IPv6)`{.action}, puis sur le bouton `Propriétés`{.action}.
+Cliquez ensuite sur `Internet Protocol Version 6 (TCP/IPv6)`{.action} puis sur le bouton `Propriétés`{.action}.
 
 ![public-cloud ipv6](images/pcipv65.png){.thumbnail}
 
@@ -272,7 +272,7 @@ Enfin renseignez les informations de votre IPv6.
 
 ![public-cloud ipv6](images/pcipv66.png){.thumbnail}
 
-Une fois fait, cochez la case `Valider les paramètres à la sortie` et cliquez sur le bouton `OK`{.action} pour valider vos changements.
+Une fois terminé, cochez la case `Valider les paramètres à la sortie` et cliquez sur le bouton `OK`{.action} pour valider vos changements.
 
 ### Diagnostic
 

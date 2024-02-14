@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'IPv6 sur un serveur VPS"
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
-updated: 2024-02-07
+updated: 2024-02-14
 ---
 
 ## Objectif
@@ -323,7 +323,7 @@ Enfin, redémarrez votre service réseau pour permettre au système d'appliquer 
 
 #### Application persistante sur Fedora 37 et versions ultérieures <a name="persistentfedora"></a>
 
-Le fichier de configuration réseau se trouve dans `/etc/NetworkManager/system-connections/`. Il est recommandé de commencer par sauvegarder le fichier de configuration correspondant. Dans notre exemple, notre fichier s'appelle `cloud-init-eth0.nmconnection`, nous copions donc le fichier `cloud-init-eth0.nmconnection` en utilisant les commandes suivantes. Pensez à remplacer **eth0** par votre interface actuelle si nécessaire.
+Le fichier de configuration réseau se trouve dans `/etc/NetworkManager/system-connections/`. Nous recommandons de commencer par sauvegarder le fichier de configuration correspondant. Dans notre exemple, notre fichier s'appelle `cloud-init-eth0.nmconnection`, nous copions donc le fichier `cloud-init-eth0.nmconnection` en utilisant les commandes suivantes. Pensez à remplacer **eth0** par votre interface actuelle si nécessaire.
 
 ```bash
 ~# cd /etc/NetworkManager/system-connections/
@@ -331,7 +331,7 @@ Le fichier de configuration réseau se trouve dans `/etc/NetworkManager/system-c
 ~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
-Ensuite, nous éditons le fichier `cloud-init-eth0.nmconnection` en ajoutant uniquement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
+Nous éditons ensuite le fichier `cloud-init-eth0.nmconnection` en ajoutant uniquement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (c'est à dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
 
 Si nous supposons que votre interface est eth0, la configuration devrait ressembler à ceci :
 
@@ -357,7 +357,7 @@ route1=::/0,2607:5300:201:abcd::1
 
 #### Application persistante sur Windows Server <a name="persistentwindows"></a>
 
-Par défaut, l'adresse IPv6 n'est pas configuré sur les serveurs Windows. Pour l'activer, ouvrez le `Panneau de configuration`{.action} et cliquez sur `Afficher l'état et les tâches du réseau`{.action}, puis sur `Modifier les paramètres de la carte`{.action}.
+Par défaut, l'adresse IPv6 n'est pas configurée sur les serveurs Windows. Pour l'activer, ouvrez le `Panneau de configuration`{.action} et cliquez sur `Afficher l'état et les tâches du réseau`{.action}, puis sur `Modifier les paramètres de la carte`{.action}.
 
 ![configureipv6](images/configure-ipv6-step2.png){.thumbnail}
 
@@ -430,7 +430,7 @@ Pour tester la connexion, vous pouvez utiliser la commande suivante:
 ping -6 proof.ovh.net
 ```
 
-Vous pouvez également tester la connexion à un autre serveur distant. Cependant, il est nécessaire que l'adresse IPv6 soit actif sur le serveur distant pour que cette opération fonctionne.
+Vous pouvez également tester la connexion à un autre serveur distant. Cependant, il est nécessaire que l'adresse IPv6 soit active sur le serveur distant pour que cette opération fonctionne.
 
 > [!primary]
 >

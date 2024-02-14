@@ -30,9 +30,9 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 
 Les sections suivantes contiennent les configurations des distributions que nous proposons actuellement et les distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à vous connecter à votre serveur en SSH ou via une session de connexion GUI (RDP pour un serveur Windows).
 
-Sur les serveurs dédiés, le premier IPv6 est déclaré comme 2607:5300:xxxx:xxxx::/64. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:abcd:efgh::/64`, la première IPv6 de votre serveur est : `2607:5300:abcd:efgh::/64`.
+Sur les serveurs dédiés, la première IPv6 est déclarée comme 2607:5300:xxxx:xxxx::/64. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:abcd:efgh::/64`, la première IPv6 de votre serveur est : `2607:5300:abcd:efgh::/64`.
 
-Par défaut, le premier IPv6 est configuré sur la plupart des distributions Linux récentes que nous proposons à l'installation, donc la passerelle est déjà incluse dans le fichier de configuration. Dans la plupart des cas, vous n'aurez pas besoin de l'ajouter manuellement.
+Par défaut, la première IPv6 est configurée sur la plupart des distributions Linux récentes que nous proposons à l'installation, donc la passerelle est déjà incluse dans le fichier de configuration. Dans la plupart des cas, vous n'aurez pas besoin de l'ajouter manuellement.
 
 Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
 
@@ -42,8 +42,7 @@ Avant de débuter, et afin d’utiliser les mêmes terminologies durant les mani
 |IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 64|2607:5300:xxxx:xxxx::/64|
 |IPv6_GATEWAY|Il s'agit de la passerelle (ou *gateway*) de votre bloc IPv6|2607:5300:xxxx:ff:ff:ff:ff:ff ou fe80::1|
 
-Dans nos exemples, nous utiliserons l'éditeur de texte `nano`. N'hésitez pas à utiliser l'éditeur de texte de votre choix.
-
+Dans nos exemples, nous utiliserons l'éditeur de texte `nano`. Vous pouvez bien entendu utiliser l'éditeur de texte de votre choix.
 
 ### Passerelle par défaut (Gateway)
 
@@ -145,9 +144,9 @@ pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
 
-Des adresses IPv6 supplémentaires peuvent être ajoutées avec les lignes suivantes dans le fichier de configuration : `up ip -6 addr add ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`, `up ip -6 addr add ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0` etc...
+Des adresses IPv6 supplémentaires peuvent être ajoutées avec les lignes suivantes dans le fichier de configuration : `up ip -6 addr add ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`, `up ip -6 addr add ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`, etc.
 
-Pour s'assurer que l'IPv6 est activé ou désactivé lorsque l'interface eth0 est activée ou désactivée, vous devez ajouter la ligne suivante à la configuration :
+Pour s'assurer que l'IPv6 est activée ou désactivée lorsque l'interface eth0 est activée ou désactivée, vous devez ajouter la ligne suivante à la configuration :
 
 `down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`
 `down ip -6 addr del ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`
@@ -282,7 +281,7 @@ dns=2001:41d0:3:163::1;
 ~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
-Ensuite, nous modifions le fichier de configuration :
+Nous modifions ensuite le fichier de configuration :
 
 ```bash
 [ipv6]
@@ -307,7 +306,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 
 #### Étape 4 : Enregistrer le fichier et appliquer les modifications
 
-Enregistrez les modifications apportées au fichier, puis relancez le réseau ou redémarrez votre serveur afin d’appliquer ces modifications.
+Enregistrez les modifications apportées au fichier puis relancez le réseau ou redémarrez votre serveur afin d’appliquer ces modifications.
 
 ```sh
 ~# sudo systemctl restart NetworkManager
@@ -357,7 +356,7 @@ Dans notre exemple, notre fichier est nommé `51-cloud-init-ipv6.yaml` :
 
 #### Étape 3 : Modifier le fichier de configuration réseau
 
-En utilisant un éditeur de texte, modifiez le fichier `51-cloud-init-ipv6.yaml` en ajoutant les lignes suivantes au fichier comme montré dans l'exemple ci-dessous.
+En utilisant un éditeur de texte, modifiez le fichier `51-cloud-init-ipv6.yaml` en ajoutant les lignes suivantes au fichier, comme montré dans l'exemple ci-dessous.
 
 Remplacez les éléments génériques (i.e. YOUR_IPV6 et IPV6_PREFIX) ainsi que l'interface réseau (si votre serveur n'utilise pas **eno3**) par vos valeurs spécifiques.
 
@@ -469,7 +468,7 @@ L'exemple de configuration ci-dessous est basé sur Centos 7.
 
 Le fichier de configuration réseau est situé dans le répertoire `/etc/sysconfig/network-scripts`. Dans notre exemple, il s'appelle `ifcfg-eth0`.
 
-#### Etape 1 : Utilisez SSH pour vous connecter à votre serveur
+#### Etape 1 : Utiliser SSH pour vous connecter à votre serveur
 
 ```sh
 ~# ssh user@serverIP
@@ -479,7 +478,7 @@ Le fichier de configuration réseau est situé dans le répertoire `/etc/sysconf
 
 > [!primary]
 > 
-> Notez que le nom du fichier réseau dans notre exemple peut être différent du vôtre. Veuillez l'adapter à votre nom approprié.
+> Notez que le nom du fichier réseau dans notre exemple peut être différent du vôtre. Veuillez l'adapter à votre nom de fichier.
 >
 
 Tout d'abord, faites une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
@@ -510,7 +509,7 @@ IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFI
 ~# sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Ensuite, nous modifions le fichier de configuration :
+Nous modifions ensuite le fichier de configuration :
 
 ```console
 IPV6INIT=yes
@@ -529,7 +528,7 @@ IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
 
 ### Étape 4 : Enregistrer le fichier et appliquer les modifications
 
-Enregistrez vos modifications dans le fichier, puis redémarrez le réseau à l'aide de l'une des commandes suivantes :
+Enregistrez vos modifications dans le fichier puis redémarrez le réseau à l'aide de l'une des commandes suivantes :
 
 ```sh
 ~# sudo systemctl restart network
@@ -591,17 +590,15 @@ Entrez votre configuration IPv6 (`Adresse IPv6` et `Default Gateway`), cochez la
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
 
-
 ## Diagnostic
 
 Vous avez configuré votre IPv6 mais rien ne fonctionne ? 
 
 Une manipulation simple existe pour déterminer si le défaut se situe dans la configuration effectuée ou sur le réseau d'OVHcloud.
 
-Dans un premier temps, [mettez votre serveur en mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode/).
+Dans un premier temps, [mettez votre serveur en mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 Inspirez-vous ensuite des commandes suivantes pour configurer votre IPv6 de manière non-persistante, en remplaçant « YOUR_IPV6 », « IPV6_PREFIX » et « IPV6_GATEWAY » par vos propres informations :
-
 
 ```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
@@ -614,12 +611,13 @@ Testez de nouveau votre réseau via un ping6 par exemple :
 ```bash
 ping6 ipv6.google.com
 ```
+
 Si votre serveur répond, il est probable qu'une des étapes de votre configuration initiale n'ait pas été rigoureusement suivie.
 
-Dans tous les cas, n'hésitez pas à contacter notre équipe de support pour demander à examiner vos configurations. Il est nécessaire de fournir :
+Dans tous les cas, n'hésitez pas à [contacter notre équipe de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander à examiner vos configurations. Il sera nécessaire de fournir :
 
-- le nom et la version du système d'exploitation que vous utilisez sur votre serveur,
-- le nom et le répertoire du fichier de configuration du réseau, 
+- le nom et la version du système d'exploitation que vous utilisez sur votre serveur ;
+- le nom et le répertoire du fichier de configuration du réseau ;
 - le contenu de ce fichier. 
 
 ## Aller plus loin

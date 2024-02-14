@@ -592,7 +592,7 @@ Have you configured your IPv6, but found that nothing works?
 
 There is a simple operation to determine whether the error is in your configuration, or on the OVHcloud network.
 
-Firstly, [put your server into rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode/).
+First, [put your server into rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 Next, use the template commands below to configure your IPv6 non-persistently, replacing ‘YOUR_IPV6’, ‘IPV6_PREFIX’ and 'IPV6_GATEWAY' with your own details:
 
