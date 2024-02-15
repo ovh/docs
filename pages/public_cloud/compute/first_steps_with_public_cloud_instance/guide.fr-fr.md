@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos instances Public Cloud'
 excerpt: 'Découvrez comment gérer vos instances Public Cloud dans l’espace client OVHcloud'
-updated: 2024-01-08
+updated: 2024-02-15
 ---
 
 ## Objectif
@@ -74,7 +74,7 @@ Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute
 
 Cliquez sur `Arrêter`{.action}.
 
-Cette action aura pour effet d'arrêter l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
+Ceci mettra l'instance dans l'état `Éteinte`, mais vous serez toujours facturé au même prix pour votre instance.Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
 
 Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
 
@@ -99,7 +99,7 @@ Confirmez la demande de redémarrage dans la fenêtre qui apparaît.
 
 Cliquez sur `Suspendre`{.action}.
 
-Ceci placera l'instance dans l'état « *shelved* », affiché ici comme `Suspended`. Consultez notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspendre-shelve-une-instance) » pour plus d'informations sur les différents états de suspension d'une instance.
+Ceci placera l'instance dans l'état « *shelved* », affiché ici comme `Suspendue`. Consultez notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspendre-shelve-une-instance) » pour plus d'informations sur les différents états de suspension d'une instance.
 
 Cliquez sur `Réactiver`{.action} pour restaurer l'état `Activé` de l'instance.
 

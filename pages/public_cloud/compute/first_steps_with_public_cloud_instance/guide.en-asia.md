@@ -1,7 +1,7 @@
 ---
 title: Managing your Public Cloud instances
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
-updated: 2024-01-08
+updated: 2024-02-15
 ---
 
 ## Objective
@@ -74,7 +74,7 @@ Refer to our guide [Backing up an instance](/pages/public_cloud/compute/save_an_
 
 Click on `Stop`{.action}.
 
-This will stop the instance. Refer to our guide [Shelve or pause an instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspend-stop-an-instance) for detailed information.
+This will put the instance in an `Off` state, but you will still be charged the same price for your instance. Refer to our guide [Shelve or pause an instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspend-stop-an-instance) for detailed information.
 
 Click on `Boot`{.action} to reactivate the instance.
 
