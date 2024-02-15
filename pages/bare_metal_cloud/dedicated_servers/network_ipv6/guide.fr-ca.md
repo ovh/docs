@@ -1,7 +1,7 @@
 ---
 title: Configurer IPv6 sur un serveur dédié
 excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.
-updated: 2024-02-12
+updated: 2024-02-14
 ---
 
 ## Objectif
@@ -358,7 +358,7 @@ Dans notre exemple, notre fichier est nommé `51-cloud-init-ipv6.yaml` :
 
 En utilisant un éditeur de texte, modifiez le fichier `51-cloud-init-ipv6.yaml` en ajoutant les lignes suivantes au fichier, comme montré dans l'exemple ci-dessous.
 
-Remplacez les éléments génériques (i.e. YOUR_IPV6 et IPV6_PREFIX) ainsi que l'interface réseau (si votre serveur n'utilise pas **eno3**) par vos valeurs spécifiques.
+Remplacez les éléments génériques (c'est-à-dire YOUR_IPV6 et IPV6_PREFIX) ainsi que l'interface réseau (si votre serveur n'utilise pas **eno3**) par vos valeurs spécifiques.
 
 ```yaml
 network:
