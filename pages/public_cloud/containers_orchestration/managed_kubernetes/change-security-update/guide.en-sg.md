@@ -1,7 +1,7 @@
 ---
 title: Changing the security update policy on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to change the security update policy on an OVHcloud Managed Kubernetes cluster'
-updated: 2022-11-07
+updated: 2024-02-15
 ---
 
 <style>
@@ -55,11 +55,11 @@ On the *Management* section, click on `Change security policy`{.action}.
 
 A pop-up displays all the options you can have:
 
-- **Do not update**. We do not recommend this choice. OVHcloud reserves the right to update Kubernetes components or your nodes on an exceptional basis, in critical cases that limit the security of our infrastructure.
+- **Do not update** (NEVER_UPDATE). We do not recommend this choice. OVHcloud reserves the right to update Kubernetes components or your nodes on an exceptional basis, in critical cases that limit the security of our infrastructure.
 
-- **Minimum unavailability**. Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. If we cannot avoid downtime while performing a rolling update on your nodes, we will report this to you. We advise sizing your cluster to ensure that it can be updated at any time.
+- **Minimum unavailability** (MINIMAL_DOWNTIME). Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. If we cannot avoid downtime while performing a rolling update on your nodes, we will report this to you. We advise sizing your cluster to ensure that it can be updated at any time.
 
-- **Maximum security**. Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. The update may result in your nodes being unavailable for a few minutes, while we perform the rolling update.
+- **Maximum security** (ALWAYS_UPDATE). Apply ('patch version') security updates to my Kubernetes service, to guarantee service security and stability. The update may result in your nodes being unavailable for a few minutes, while we perform the rolling update.
 
 The security policy **Maximum security** is configured by default. Even if we recommand the maximum security, you can choose the security policy that is convenient for you.
 
