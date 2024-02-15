@@ -1,6 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail RoundCube'
-updated: 2024-02-13
+updated: 2024-02-15
 ---
 
 ## Objectif
@@ -34,17 +34,17 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
     - [Contacts](#contacts-settings)
     - [Dossiers spéciaux](#special-folder-settings)
     - [Paramètres du serveur](#server-settings)
-- [Gérer les identités et leur signature](#identity-signature)
-    - [Identity](#identity)
-    - [Signature](#signature)
+- [Gérer les identités et leurs signatures](#identity-signature)
+    - [Paramétrer les attributs d'une identité](#identity)
+    - [Ajouter une signature ](#signature)
 - [Carnet de contacts](#contact-book)
     - [Groupes](#group)
     - [Contacts](#contacts)
-    - [Importer des Contacts](#import-contacts)
-    - [Exporter les Contacts Roundcube](#export-contacts)
+    - [Importer des contacts](#import-contacts)
+    - [Exporter les contacts Roundcube](#export-contacts)
 - [Réponses (gabarits)](#responses)
-- [Ajouter un répondeur ou réponse automatique](#automatic-respond)
-- [Modifier le mot de passe de votre adresse-mail](#password)
+- [Ajouter un répondeur ou une réponse automatique](#automatic-respond)
+- [Modifier le mot de passe de votre adresse e-mail](#password)
 - [Rédaction d'un e-mail](#email-writing)
 - [Cas d'usages](#usecase)
 
@@ -205,7 +205,7 @@ Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En
 > 
 > Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « SPAM ») se retrouverait déclaré comme SPAM pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
 
-### Gérer les identités et leur signature <a name="identity-signature"></a>
+### Gérer les identités et leurs signatures <a name="identity-signature"></a>
 
 Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, puis sur `Identités`{.action} dans la colonne de gauche. « L'identité » permet de personnaliser les informations envoyées aux destinataires comme, par exemple, le nom d'affichage ou la signature.
 
@@ -285,7 +285,7 @@ Complétez ensuite les informations du contact.
 > [!primary]
 > Vous pouvez ajouter des champs supplémentaires via le menu déroulant `Ajouter un champ...`{.action}, situé sous les champs `Prénom` et `Adresse`.
 
-#### Importer des Contacts <a name="import-contacts"></a>
+#### Importer des contacts <a name="import-contacts"></a>
 
 Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
 
@@ -295,7 +295,7 @@ Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-#### Exporter les Contacts <a name="export-contacts"></a>
+#### Exporter les contacts <a name="export-contacts"></a>
 
 Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
 
@@ -320,11 +320,11 @@ Pour ajouter une réponse, cliquez sur le bouton `+`{.action} en bas de la colon
 >
 > Les « réponses » se rédigent au format « texte en clair ».
 
-### Ajouter un répondeur ou réponse automatique <a name="automatic-respond"></a>
+### Ajouter un répondeur ou une réponse automatique <a name="automatic-respond"></a>
 
 Vous souhaitez ajouter une réponse automatique à votre adresse e-mail lorsque vous êtes absent ou indisponible. Cette fonction ne peut pas s'activer depuis le webmail mais depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Créer un répondeur pour son adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/) ».
 
-### Modifier le mot de passe de votre adresse-mail <a name="password"></a>
+### Modifier le mot de passe de votre adresse e-mail <a name="password"></a>
 
 Pour modifier le mot de passe de votre adresse e-mail, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/) ».
 
@@ -364,7 +364,7 @@ Dans la barre supérieure, les actions suivantes sont disponibles :
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
-### cas d'usages <a name="usecase"></a>
+### Cas d'usages <a name="usecase"></a>
 
 #### Échec de la vérification de la demande
 
@@ -378,7 +378,7 @@ Une interaction humaine est maintenant exigé afin de continuer.
 Veuillez contacter l'administrateur de votre serveur.
 ```
 
-Comme il est précisé dans le message, votre compte e-mail est considéré comme déjà connecté. On parle ici de « session », cela siginifie que votre compte e-mail est déjà en cours d'utilisation au yeux du serveur e-mail et que cette session précédente doit être fermée . Essayez de vider les données de navi
+Comme il est précisé dans le message, votre compte e-mail est considéré comme étant déjà connecté. On parle ici de « session », cela siginifie que votre compte e-mail est déjà en cours d'utilisation aux yeux du serveur e-mail et que cette session précédente doit être fermée. Essayez de vider les données de navi
 
 ## Aller plus loin
 
