@@ -148,7 +148,7 @@ En cas d'erreur lors du redémarrage d'un VPS, suivez ces étapes :
 
 [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
-[Récupérer l'accès au serveur en cas de perte du mot de passe utilisateur](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+[Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Remplacer une paire de clés SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

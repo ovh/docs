@@ -152,7 +152,7 @@ Jeśli podczas restartu serwera VPS wystąpi błąd, wykonaj następujące kroki
 
 [Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
-[Odzyskaj dostęp do serwera w przypadku utraty hasła użytkownika](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+[Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Zastąp parę kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 
