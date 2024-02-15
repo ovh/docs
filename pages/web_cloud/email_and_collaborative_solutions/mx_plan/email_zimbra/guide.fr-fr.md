@@ -374,7 +374,7 @@ Sélectionnez l'un des deux onglets suivants :
 
 La mise en place de filtres sur votre compte e-mail est un paramètre important qui vous permet de mettre en place un système de tri automatique à la réception de vos e-mails.
 
-Une règle de filtrage dans Zimbra est composée de 4 étapes :
+Une règle de filtrage dans Zimbra est composée de 4 éléments :
 
 1 - [Champ de comparaison](#filters-comp-field) : sur quelle partie de l'e-mail le filtre va s'appliquer.<br>
 2 - [Opérateur de comparaison](#filters-comp-operator) : avec quelle précision le filtre devra-t-il être appliqué.<br>
