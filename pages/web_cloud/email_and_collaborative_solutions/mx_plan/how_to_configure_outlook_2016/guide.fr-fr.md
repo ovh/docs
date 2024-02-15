@@ -1,7 +1,7 @@
 ---
 title: Configurer son adresse e-mail sur Outlook pour Windows
 excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows
-updated: 2021-06-05
+updated: 2024-02-15
 ---
 
 ## Objectif
@@ -46,13 +46,14 @@ Les comptes MX Plan peuvent être configurés sur différents logiciels de messa
 > Avant de poursuivre, consultez la section [« POP ou IMAP, quelle est la différence ? »](#popimap) de ce guide.
 >
 
-Pour configurer votre adresse e-mail avec le protocole **IMAP**, suivez les étapes en cliquant dans les onglets ci-dessous.
+
+> Dans les paramètres suivants, vous constaterez la possibilité de renseigner 2 noms d'hôtes différents pour le même serveur (entrant ou sortant). Ces valeurs renvoient exactement au même serveur, elles ont été mises en place pour faciliter la saisie et éviter la confusion entre les protocoles POP, IMAP et SMTP qui utilisent des ports différents.
+
+Pour configurer votre adresse e-mail, suivez les étapes en cliquant dans les onglets ci-dessous.
 
 > [!tabs]
 > **Etape 1**
 >> Parmi les différents types de comptes, choisissez entre IMAP et POP. <br>Nous vous conseillons une utilisation en IMAP.
->>
->> > Quel que soit votre choix les étapes 2 et 3 s'appliquent de la même manière que pour l'IMAP. Seule l'étape 4 diffère
 >>
 >> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
 >>
@@ -65,15 +66,15 @@ Pour configurer votre adresse e-mail avec le protocole **IMAP**, suivez les éta
 >> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
 >>
 > **Etape 4 - IMAP**
->> Saisissez dans **Courrier entrant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
+>> Si vous avez choisie IMAP: saisiessez les paramètres suivant, si vous avez choisie POP, passez à l'onglet « **Etape 4 - POP** »
+>> Saisissez dans **Courrier entrant**: <br>- le serveur **imap.mail.ovh.net** ou **ssl0.ovh.net** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **smtp.mail.ovh.net** ou **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
 >>
 > **Etape 4 - POP**
->> Saisissez dans **Courrier entrant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **995**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
+>> Saisissez dans **Courrier entrant**: <br>- le serveur **pop.mail.ovh.net** ou **ssl0.ovh.net** <br>- Port **995**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **smtp.mail.ovh.net** ou **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
-
 
 ### Utiliser l'adresse e-mail
 
@@ -109,7 +110,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
-|Serveur (entrant)|ssl0.ovh.net|
+|Serveur (entrant)|pop.mail.ovh.net **ou** ssl0.ovh.net|
 |Port|995|
 |Type de sécurité|SSL/TLS|
 
@@ -119,7 +120,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
-|Serveur (entrant)|ssl0.ovh.net|
+|Serveur (entrant)|imap.mail.ovh.net **ou** ssl0.ovh.net|
 |Port|993|
 |Type de sécurité|SSL/TLS|
 
@@ -131,7 +132,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
-|Serveur (sortant)|ssl0.ovh.net|
+|Serveur (sortant)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
 |Port|465|
 |Type de sécurité|SSL/TLS|
 
@@ -141,7 +142,7 @@ Lorsque vous configurez votre adresse e-mail manuellement, votre client de messa
 
 Lors de la configuration de votre client de messagerie, vous devez lui renseigner les informations du **serveur entrant** pour recevoir les e-mails et le **serveur sortant** pour envoyer les e-mails. Pour envoyer les e-mails, il n'y a pas de choix, c'est le protocole **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) qui est utilisé. Pour la réception, vous aurez donc le choix entre **POP** ou **IMAP**.
 
-![mxplan](images/mxplan-android-popimap-01.png){.thumbnail}
+![mxplan](images/mxplan-popimap-01.png){.thumbnail}
 
 Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nous allons décomposer les éléments qui composent le traitement de vos e-mails en réception :
 
@@ -153,7 +154,7 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
     - **IMAP** : votre client de messagerie interroge le serveur e-mail et télécharge les e-mails sur votre appareil. Lorsque vous consultez un e-mail non lu, le serveur le marque comme « lu » par défaut. Les autres appareils configurés en IMAP pourront constater cet état et consulter cet e-mail tant qu'il n'aura pas été supprimé sur l'un des appareils.
     - **POP** : votre client de messagerie interroge le serveur e-mail et va télécharger les e-mails sur votre appareil. Par défaut, une fois l'e-mail téléchargé sur votre appareil, le message est supprimé du serveur. Par conséquent, les autres appareils connectés à cette adresse e-mail ne pourront pas consulter cet e-mail.
 
-![mxplan](images/mxplan-android-popimap-02.png){.thumbnail}
+![mxplan](images/mxplan-popimap-02.png){.thumbnail}
 
 > [!primary]
 >
