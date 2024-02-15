@@ -582,7 +582,7 @@ Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 
 #### Step 3: Amend the network configuration 
 
-Enter your IPv6 configuration (`IPv6 address` and `Default gateway`), check the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes.
+Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`), check the `Validate settings upon exit` box and click the `OK`{.action} button to validate your changes.
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
 

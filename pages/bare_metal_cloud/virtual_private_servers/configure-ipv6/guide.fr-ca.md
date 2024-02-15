@@ -58,7 +58,7 @@ L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans 
 
 #### Via les API OVHcloud <a name="viaapi"></a>
 
-Rendez-vous sur le site <https://api.ovh.com/console/> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
+Rendez-vous sur le site <https://ca.api.ovh.com/> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
 
 La première vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
 
