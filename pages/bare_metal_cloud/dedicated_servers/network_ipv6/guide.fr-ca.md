@@ -1,7 +1,7 @@
 ---
 title: Configurer IPv6 sur un serveur dédié
 excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.
-updated: 2024-02-14
+updated: 2024-02-15
 ---
 
 ## Objectif
