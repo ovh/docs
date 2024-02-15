@@ -176,6 +176,8 @@ Weitere Informationen finden Sie in den offiziellen FAQ und der Dokumentation zu
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
+[Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [SSH-Schlüssel erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Rescue-Modus Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)

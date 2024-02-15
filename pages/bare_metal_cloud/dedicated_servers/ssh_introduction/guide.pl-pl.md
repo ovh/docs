@@ -174,6 +174,8 @@ Więcej informacji znajdziesz w oficjalnej dokumentacji FAQ oraz w dokumentacji 
 
 ## Sprawdź również <a name="gofurther"></a>
 
+[Konfiguracja kont użytkowników i dostępu root na serwerze](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Tworzenie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Tryb Rescue dla serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)

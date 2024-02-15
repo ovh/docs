@@ -166,6 +166,8 @@ Please consult the official FAQ and documentation of PuTTY for more information.
 
 ## Go further <a name="gofurther"></a>
 
+[How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Creating SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Dedicated server rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)

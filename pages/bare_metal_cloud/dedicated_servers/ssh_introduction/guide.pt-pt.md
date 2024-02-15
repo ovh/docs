@@ -174,6 +174,8 @@ Para mais informações, consulte a FAQ oficial e a documentação do PuTTY.
 
 ## Quer saber mais? <a name="gofurther"></a>
 
+[Configuração das contas de utilizadores e acesso root num servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Criação de chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Modo rescue servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)

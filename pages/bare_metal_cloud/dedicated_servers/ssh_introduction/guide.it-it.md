@@ -172,7 +172,9 @@ Come al solito, al primo collegamento viene visualizzato l’avviso di presenza 
 
 Per maggiori informazioni, consulta le FAQ ufficiali e la documentazione di PuTTY.
 
-## Spingiti oltre <a name="gofurther"></a>
+## Per saperne di più <a name="gofurther"></a>
+
+[Configurazione degli account utente e dell'accesso root su un server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Crea chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
