@@ -24,7 +24,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Cliquez sur `Instances`{.action} dans le menu de gauche. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs propriétés :
 
@@ -33,7 +33,7 @@ Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs 
 - le modèle de l'instance;
 - l'image, c'est à dire l'OS installé sur l'instance;
 - l'adresse IPv4 de l'instance;
-- l'adresse privée actuellement attaché à l'instance
+- l'adresse privée actuellement attaché à l'instance;
 - les volumes (disques) additionnels actuellement attachés à l'instance;
 - le statut de l'instance, indiquant si elle est à l'état `Activé`.
 

@@ -24,7 +24,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Cliquez sur `Instances`{.action} dans le menu de gauche. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs propriétés :
 
@@ -33,6 +33,7 @@ Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs 
 - le modèle de l'instance;
 - l'image, c'est à dire l'OS installé sur l'instance;
 - l'adresse IPv4 de l'instance;
+- l'adresse privée actuellement attaché à l'instance;
 - les volumes (disques) additionnels actuellement attachés à l'instance;
 - le statut de l'instance, indiquant si elle est à l'état `Activé`.
 
@@ -69,11 +70,11 @@ Cliquez sur `Créer une sauvegarde automatisée`{.action}.
 
 Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute/save_an_instance#creer-une-sauvegarde-automatisee-dune-instance) » pour plus d'informations.
 
-#### Suspendre une instance
+#### Arrêter une instance
 
 Cliquez sur `Arrêter`{.action}.
 
-Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
+Cette action aura pour effet de d'arrêter l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
 
 Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
 
