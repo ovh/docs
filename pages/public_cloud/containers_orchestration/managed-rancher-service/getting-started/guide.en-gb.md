@@ -17,6 +17,10 @@ Managed Rancher Service by OVHcloud, provides a powerful platform for orchestrat
 
 
 ### Rancher Creation and Access
+> [!warning]
+>
+> During the Alpha phase, Rancher access are directly provided by OVHcloud team. Manager implementation will be available at Beta release phase. Please ignore this part for now.
+>
 
 To initiate your journey, log in to the OVHcloud Manager and access the _Managed Rancher Service_ under the _Container & Orchestration_ section.
 Using the OVHcloud Manager you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
@@ -37,7 +41,80 @@ This web-based interface serves as your command center for orchestrating contain
 
 As it is a brand new Rancher instance you do not have any downstream Kubernetes clusters, next step is to add some of them. To do so you have two options: Import existing Kubernetes clusters or Create new clusters using Rancher.
 
-### Import or Create your Kubernetes clusters :
+### Create or Import your Kubernetes clusters :
+####  - Create a Kubernetes cluster with Rancher
+
+Using this option you will be able to create Kubernetes cluster from scratch. Rancher simplifies the creation of clusters by allowing you to create them through the Rancher UI rather than more complex alternatives.
+You can use Rancher to launch a Kubernetes cluster using any nodes you want. Rancher can launch Kubernetes on any computers, including:
+  - Hosted Kubernetes provider (ex: OVHcloud Managed Kubernetes Service, AWS EKS, GCP GKE,... )
+  - Infrastructure Provider - Public Cloud or Private Cloud (vSphere, Nutanix,...)
+  -  Bare-metal servers, cloud hosted or on premise
+  -  Virtual machines, cloud hosted or on premise
+
+
+For the last three options, when Rancher deploys Kubernetes onto these nodes, you can choose between Rancher Kubernetes Engine RKE2 or k3s distributions.
+Follow the official Rancher documentation on [How to launch Kubernetes with Rancher](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/launch-kubernetes-with-rancher) explaining how to define cluster settings, number of nodes (master, worker, etcd), authentication, and any additional configurations.
+
+We will detail bellow how to use OVHcloud as a Hosted Kubernetes provider and Infrastructure Provider using our official OVHcloud Drivers.
+
+
+##### 1/ Use OVHcloud as a **Hosted Kubernetes Provider**
+
+> [!warning]
+>
+> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/en/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/en/public-cloud/prices/) pricing pages.
+>
+
+  On this part we will detail how to use Rancher to create and federate [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/) clusters.
+
+  From the Rancher Homepage, click on 'Create'
+  ![Rancher Homepage](images/rancher-homepage.png)
+
+  Then you can use the OVHcloud 'Hosted Kubernetes provider'
+  ![Cluster Creation](images/cluster-creation.png)
+
+
+
+  Under the 'hosted Kubernetes provider' section click on 'OVHcloud MKS'
+  ![Cluster Creation](images/mks-cluster-creation-form.png)
+
+  You need to provide the following parameters:
+
+  | Field                   | Mandatory                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name                    | Yes                                 | Name of the Managed Kubernetes Service Cluster that will be created.                                                                                                                                                                                                                                                                                                                                                                 |
+| Member Roles            | Yes, default value is ok| Configure user authorization for the cluster. Click Add Member to add users that can access the cluster. Use the Role drop-down to set permissions for each user.                                                                                                                                                                                                                                                                     |
+| Label & Annotations     | No                                  | Add Kubernetes labels or annotations to the cluster.                                                                                                                                                                                                                                                                                                                                                                                  |
+| Account Configuration   | Yes                                 | Section dedicated to provide your OVH API credentials, you can follow the guide on how to [Generation your OVHcloud API Keys](https://help.ovhcloud.com/csm/en-ie-api-getting-started-ovhcloud-api?id=kb_article_view&sysparm_article=KB0042786#advanced-usage-pair-ovhcloud-apis-with-an-application). Please refer to the table bellow to set the required rights on APIs routes.                                                                                                                      |
+| Application Key         | Yes                                 | cf. guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
+| Consumer Key            | Yes                                 | cf. guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
+| Application Secret      | Yes                                 | cf. guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
+| Public cloud project ID | Yes                                 | The projectID of your OVHcloud project were your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](https://help.ovhcloud.com/csm/en-public-cloud-compute-create-project?id=kb_article_view&sysparm_article=KB0050599) or if already existing you can copy/paste it from OVHcloud Manager or [APIs](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project)  |
+| OVH API Endpoint        | Yes                                 | Select the OVHcloud subsidiary (EU, US, CA)                                                                                                                                                                                  |
+
+Minimum required access rights on API routes
+
+| Method              | API Route                                             |
+|---------------------|-------------------------------------------------------|
+| POST                | /cloud/project/{PROJECT-ID}/kube                      |
+| POST/GET/PUT/DELETE | /cloud/project/{PROJECT-ID}/kube/*                    |
+| GET                 | /cloud/project/{PROJECT-ID}/capabilities/kube/flavors |
+| GET                 | /cloud/project/{PROJECT-ID}/capabilities/kube/regions |
+| GET                 | /cloud/project/{PROJECT-ID}/network/private           |
+| GET                 | /cloud/project                                        |
+
+
+
+
+##### 2. Use OVHcloud as an **Infrastructure Provider** by using Rancher to build a Kubernetes clusters using [OVHcloud computes instances](https://www.ovhcloud.com/en-ie/public-cloud/compute/) as nodes.
+
+  > [!warning]
+  >
+  > Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/en/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/en/public-cloud/prices/) pricing pages.
+  >
+
+
+
 
 #### - Import an existing Kubernetes cluster
 
@@ -76,61 +153,6 @@ The workflow is similar to the one described on the official Rancher documentati
 ![Cluster Dashboard](images/cluster-dashboard-explore.png)
 6. Tada ! Your cluster is now federated on your Rancher. You can click on 'Explore' to manage your MKS Cluster.
 
-####  - Create a Kubernetes cluster with Rancher
-
-Using this option you will be able to create Kubernetes cluster from scratch. Rancher simplifies the creation of clusters by allowing you to create them through the Rancher UI rather than more complex alternatives.
-You can use Rancher to launch a Kubernetes cluster using any nodes you want. Rancher can launch Kubernetes on any computers, including:
-  - Hosted Kubernetes provider (ex: OVHcloud Managed Kubernetes Service, AWS EKS, GCP GKE,... )
-  - Infrastructure Provider - Public Cloud or Private Cloud (vSphere, Nutanix,...)
-  -  Bare-metal servers, cloud hosted or on premise
-  -  Virtual machines, cloud hosted or on premise
-
-
-For the last three options, when Rancher deploys Kubernetes onto these nodes, you can choose between Rancher Kubernetes Engine RKE2 or k3s distributions.
-Follow the official Rancher documentation on [How to launch Kubernetes with Rancher](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/launch-kubernetes-with-rancher) explaining how to define cluster settings, number of nodes (master, worker, etcd), authentication, and any additional configurations.
-
-We will detail bellow how to use OVHcloud as a Hosted Kubernetes provider and Infrastructure Provider.
-
-
-
-##### 1/ Use OVHcloud as a **Hosted Kubernetes Provider** by using Rancher to create and federate [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
-
-  We are providing two official Drivers that you can find at cluster creation step.
-  From the Rancher Homepage, click on 'Import Existing'
-  ![Rancher Homepage](images/rancher-homepage.png)
-
-  Then you can use the OVHcloud 'Hosted Kubernetes provider' and 'Infrastructure Provider' drivers
-  ![Cluster Creation](images/cluster-creation.png)
-
-  > [!warning]
-  >
-  > Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/en/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/en/public-cloud/prices/) pricing pages.
-  >
-
-
-
-    //PREREQUISITES
-    
-  - Under the 'hosted Kubernetes provider' section click on 'OVHcloud MKS'
-  ![Cluster Creation](images/mks-cluster-creation-form.png)
-  You need to provide the following parameters:
-  | Field                   | Mandatory                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|-------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name                    | Yes                                 | Name of the Managed Kubernetes Service Cluster that will be created                                                                                                                                                                                                                                                                                                                                                                   |
-| Member Roles            | Yes, you can keep the default value | Configure user authorization for the cluster. Click Add Member to add users that can access the cluster. Use the Role drop-down to set permissions for each user.                                                                                                                                                                                                                                                                     |
-| Label & Annotations     | No                                  | Add Kubernetes labels or annotations to the cluster.                                                                                                                                                                                                                                                                                                                                                                                  |
-| Account Configuration   | Yes                                 | Section dedicated to provide your OVH API credentials, follow the guide on how to [Generation your OVHcloud API Keys](https://help.ovhcloud.com/csm/en-ie-api-getting-started-ovhcloud-api?id=kb_article_view&sysparm_article=KB0042786#advanced-usage-pair-ovhcloud-apis-with-an-application).                                                                                                                          |
-| Application Key         | Yes                                 | cf. guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
-| Consumer Key            | Yes                                 | cf. guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
-| Application Secret      | Yes                                 | cf. guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
-| Public cloud project ID | Yes                                 | The projectID of your OVHcloud project were your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](https://help.ovhcloud.com/csm/en-public-cloud-compute-create-project?id=kb_article_view&sysparm_article=KB0050599) or if already existing you can copy/paste it from OVHcloud Manager or [APIs](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project)  |
-| OVH API Endpoint        | Yes                                 | Select the OVHcloud subsidiary (EU, US, CA)                                                                                                                                                                                                                                                                                                                                                                                           |
-
-
-  ##### 2. Use OVHcloud as an **Infrastructure Provider** by using Rancher to build a Kubernetes clusters using [OVHcloud computes instances](https://www.ovhcloud.com/en-ie/public-cloud/compute/) as nodes.
-
-
-
 
 
 ###  Exploring OVHcloud-Specific Integrations
@@ -158,6 +180,7 @@ Dive into Rancher's monitoring capabilities to gain real-time insights into the 
 Stay informed about updates to Rancher and OVHcloud Manager Rancher Service features. Regularly check for new releases, security patches, and optimizations. This proactive approach ensures that your container orchestration environment remains secure, efficient, and aligned with the latest industry standards.
 
 //TODO explanation on upgrade policy
+//TODO explanation regarding the fact that clusters created through rancher should not be manually updated (using API or manager)
 
 ### Conclusion
 
