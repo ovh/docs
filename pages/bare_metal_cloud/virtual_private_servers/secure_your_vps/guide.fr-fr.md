@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un VPS"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre VPS"
-updated: 2024-01-23
+updated: 2024-02-14
 
 ---
 
@@ -94,6 +94,36 @@ sudo systemctl restart sshd
 ```
 
 Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le VPS (`~$ sudo reboot`).
+
+*Pour Ubuntu 23.04 et versions ultérieures**
+
+Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gérée dans le fichier `ssh.socket`.
+
+La première étape consiste à autoriser le port que vous souhaitez utiliser à travers le pare-feu du système d'exploitation. Pour Linux, nous utilisons le pare-feu iptables. Avant d'exécuter la commande, assurez-vous que votre pare-feu est actif. Pour plus d'informations sur le pare-feu iptables, référez-vous à ce guide : [Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable).
+
+
+```bash
+sudo ufw allow 49152/tcp && sudo ufw allow
+```
+
+Ensuite, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Enregistrez vos modifications et exécutez les commandes suivantes :
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
 
 N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
 
