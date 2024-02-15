@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Utiliser le webmail Zimbra'
 excerpt: 'Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud'
-updated: 2024-02-13
+updated: 2024-02-15
 ---
 
 <style>
