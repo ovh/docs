@@ -207,6 +207,10 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 
 [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
+[Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

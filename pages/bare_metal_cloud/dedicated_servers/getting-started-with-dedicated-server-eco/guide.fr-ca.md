@@ -205,6 +205,8 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 ## Allez plus loin
 
+[Configuration des comptes utilisateurs et de l'accès root sur un serveur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
