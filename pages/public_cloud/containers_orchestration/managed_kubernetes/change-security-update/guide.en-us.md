@@ -1,7 +1,7 @@
 ---
 title: Changing the security update policy on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to change the security update policy on an OVHcloud Managed Kubernetes cluster'
-updated: 2022-11-07
+updated: 2024-02-15
 ---
 
 <style>
