@@ -66,7 +66,7 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant dans les on
 >> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
 >>
 > **Etape 4 - IMAP**
->> Si vous avez choisie IMAP: saisissez les paramètres suivant, si vous avez choisie POP, passez à l'onglet « **Etape 4 - POP** »
+>> Si vous avez choisie IMAP, saisissez les paramètres suivants, si vous avez choisie POP, passez à l'onglet « **Etape 4 - POP** ».<br>
 >> Saisissez dans **Courrier entrant**: <br>- le serveur **imap.mail.ovh.net** ou **ssl0.ovh.net** <br>- Port **993**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Saisissez dans **Courrier sortant**: <br>- le serveur **smtp.mail.ovh.net** ou **ssl0.ovh.net** <br>- Port **465**<br>- Méthode de chiffrement **SSL/TLS**<br><br>Cliquez sur `Suivant`{.action} pour valider.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
