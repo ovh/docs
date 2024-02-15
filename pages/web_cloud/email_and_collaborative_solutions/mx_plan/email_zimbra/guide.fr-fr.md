@@ -372,16 +372,20 @@ Sélectionnez l'un des deux onglets suivants :
 
 #### Comprendre comment paramètrer ses filtres <a name="filters-howto"></a>
 
-La mise en place de filtres sur votre compte e-mail est un paramètre important qui vous permettra de mettre en place un système de triage automatique à la réception de vos e-mails. Une régle de filtrage se décompose en 4 éléments :
+La mise en place de filtres sur votre compte e-mail est un paramètre important qui vous permet de mettre en place un système de tri automatique à la réception de vos e-mails.
 
-1 - [Champ de comparaison](#filters-comp-field) : Sur quel partie de l'e-mail le filtre va s'appliquer.<br>
-2 - [Opérateur de comparaison](#filters-comp-operator) : Avec quel précision le filtre devra-t-il être appliquer.<br>
-3 - [Valeur](#filters-value) : Quels mots/éléments de l'e-mail seront ciblés par le filtre.<br>
-4 - [Actions du filtre](#filters-action) : Que va faire le filtre sur l'e-mail.<br>
+Une règle de filtrage dans Zimbra est composée de 4 étapes :
+
+1 - [Champ de comparaison](#filters-comp-field) : sur quelle partie de l'e-mail le filtre va s'appliquer.<br>
+2 - [Opérateur de comparaison](#filters-comp-operator) : avec quelle précision le filtre devra-t-il être appliqué.<br>
+3 - [Valeur](#filters-value) : quels mots/éléments de l'e-mail seront ciblés par le filtre.<br>
+4 - [Actions du filtre](#filters-action) : que va faire le filtre sur l'e-mail.<br>
 
 ![Zimbra - filtres](images/zimbra-filters.png){.thumbnail}
 
-Dans les sous-chapitres qui suivent, vous trouverez le détail de chacun des éléments d'une régle de filtrage.
+> Exemple n°1 : Si le champ **Objet** de l'e-mail **contient** le mot `facture`, alors **transférer à** l'adresse `comptabilite@example.com`.
+
+Dans les sous-chapitres qui suivent, vous trouverez le détail de chacun des éléments d'une règle de filtrage.
 
 ##### 1 - Champ de comparaison <a name="filters-comp-field"></a>
 
@@ -423,11 +427,11 @@ En fonction du champ de comparaison désigné précédemment, l'opérateur de co
 
 ##### 3 - Valeur <a name="filters-value"></a>
 
-Une fois votre champ et votre opérateur de comparaison sélectionnés, dans la case correspondante, vous devrez saisir la valeur sur laquelle ils doivent correspondre.
+Une fois votre champ et votre opérateur de comparaison sélectionnés, vous devez saisir, dans la case correspondante, la valeur à laquelle ils doivent correspondre.
 
 ##### 4 - Actions du filtre <a name="filters-action"></a>
 
-Le champ `Alors` définit l'action à lancer sur l'e-mail qui remplit les conditions du filtre . Les actions de filtrage peuvent inclure la suppression, le tri et même le marquage du courrier entrant.
+Le champ `Alors` définit l'action à effectuer sur l'e-mail qui remplit les conditions du filtre . Les actions de filtrage peuvent inclure la suppression, le tri et même le marquage du courrier entrant.
 
 - **Garder dans le dossier Réception** : enregistre les e-mails dans votre boîte de réception. Si aucune des règles de filtrage ne correspond à un e-mail, cette action a lieu par défaut.
 - **Activer le dossier** : déplace l'e-mail vers un dossier spécifié.
