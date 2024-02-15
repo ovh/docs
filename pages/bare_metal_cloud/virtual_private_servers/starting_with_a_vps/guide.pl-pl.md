@@ -185,7 +185,7 @@ passwd: password updated successfully
 >
 > Nie musisz używać konta użytkownika "root", aby rozpocząć administrowanie serwerem. Aby można było używać tego konta, należy je najpierw włączyć w systemie operacyjnym serwera. Ponadto, ze względów bezpieczeństwa, połączenia SSH z użytkownikiem "root" są domyślnie **wyłączone**.
 > 
-O ile nie określono inaczej, wszystkie operacje administracyjne opisane w dokumentacji mogą być przeprowadzane przy użyciu domyślnego konta użytkownika, tzn. poprzez wpisanie `sudo` po odpowiednim poleceniu. Więcej informacji na ten temat znajdziesz w przewodniku [Konfiguracja dostępu root](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+O ile nie określono inaczej, wszystkie operacje administracyjne opisane w dokumentacji mogą być przeprowadzane przy użyciu domyślnego konta użytkownika, tzn. poprzez wpisanie `sudo` po odpowiednim poleceniu. Więcej informacji na ten temat znajdziesz w przewodniku [Konfiguracja kont użytkowników i dostępu root na serwerze](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 >
 
 **Wykonaj następujące czynności**:

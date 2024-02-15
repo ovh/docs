@@ -185,7 +185,7 @@ passwd: password updated successfully
 >
 > No es necesario utilizar la cuenta de usuario root para iniciar la administración del servidor. Esta cuenta debe estar habilitada en el sistema operativo del servidor para poder usarla. Además, como medida de seguridad, las conexiones SSH con el usuario root están **desactivadas** por defecto.
 > 
-A menos que se indique lo contrario, todas las acciones de administración descritas en nuestra documentación pueden ser realizadas por la cuenta de usuario por defecto, es decir, escribiendo `sudo` seguido del pedido correspondiente. Para más información, consulte nuestra guía [Configuración del acceso root](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+A menos que se indique lo contrario, todas las acciones de administración descritas en nuestra documentación pueden ser realizadas por la cuenta de usuario por defecto, es decir, escribiendo `sudo` seguido del pedido correspondiente. Para más información, consulte nuestra guía "[Configuración de las cuentas de usuario y del acceso root en un servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)".
 >
 
 **Le recomendamos que siga estos pasos**:
