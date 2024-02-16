@@ -22,7 +22,7 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 
 > [!primary]
 >
-> Chez OVHcloud, la création / modification / suppression d'une zone DNS dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) est totalement gratuite.
+> La création / modification / suppression d'une zone DNS dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) est totalement gratuite.
 >
 
 **Découvrez comment supprimer une zone DNS chez OVHcloud pour votre nom de domaine via votre espace client OVHcloud.**
