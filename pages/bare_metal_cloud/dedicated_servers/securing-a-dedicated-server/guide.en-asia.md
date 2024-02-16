@@ -89,16 +89,9 @@ This should be sufficient to apply the changes. Alternatively, reboot the server
 
 **For Ubuntu 23.04 and later**
 
-For the latest Ubuntu versions, SSH configuration is now managed in the `ssh.socket` file.
+For the latest Ubuntu versions, the SSH configuration is now managed in the `ssh.socket` file.
 
-The first step is to authorize the port you wish to use through the operating system's firewall. For Linux, we use iptables. Before running the command, make sure your firewall is active. For more information on iptables, please refer to this guide: [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable).
-
-
-```bash
-sudo ufw allow 49152/tcp && sudo ufw allow
-```
-
-Next, edit the `Listenstream` line in the configuration file with a text editor of your choice (`nano` used in this example):
+To update the SSH port, edit the `Listenstream` line in the configuration file with a text editor of your choice (`nano` used in this example):
 
 ```bash
 sudo nano /lib/systemd/system/ssh.socket
@@ -116,6 +109,8 @@ Save your changes and run the following commands:
 sudo systemctl daemon-reload
 sudo systemctl restart ssh.service
 ```
+
+If you have enabled your operating system's firewall, make sure you authorize the new port throught the firewall.
 
 Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
 

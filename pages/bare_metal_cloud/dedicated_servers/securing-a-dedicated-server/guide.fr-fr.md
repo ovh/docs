@@ -100,14 +100,11 @@ Cela devrait être suffisant pour appliquer les changements. Dans le cas contrai
 
 Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gérée dans le fichier `ssh.socket`.
 
-La première étape consiste à autoriser le port que vous souhaitez utiliser à travers le pare-feu du système d'exploitation. Pour Linux, nous utilisons le pare-feu iptables. Avant d'exécuter la commande, assurez-vous que votre pare-feu est actif. Pour plus d'informations sur le pare-feu iptables, référez-vous à ce guide : [Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable).
-
-
 ```bash
 sudo ufw allow 49152/tcp && sudo ufw allow
 ```
 
-Ensuite, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
+Pour mettre à jour le port SSH, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
 
 ```bash
 sudo nano /lib/systemd/system/ssh.socket
@@ -125,6 +122,8 @@ Enregistrez vos modifications et exécutez les commandes suivantes :
 sudo systemctl daemon-reload
 sudo systemctl restart ssh.service
 ```
+
+Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port à travers ce pare-feu.
 
 N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
 
