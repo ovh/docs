@@ -16,7 +16,7 @@ Pour plus d'information sur les zones et les serveurs DNS, consultez les guides 
 
 Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom de domaine chez OVHcloud dans les cas suivants (liste non exhaustive) :
 
-- Vous utilisez une zone DNS active pour votre nom de domaine ailleurs que chez OVHcloud ;
+- Vous utilisez une zone DNS active pour votre nom de domaine chez un autre fournisseur que OVHcloud.
 - Vous n'utilisez plus le nom de domaine associé à la zone DNS présente chez OVHcloud ;
 - Vous avez migré vos services ailleurs que chez OVHcloud et vous souhaitez résilier vos anciens services chez nous.
 
