@@ -88,6 +88,31 @@ sudo systemctl restart sshd
 
 This should be sufficient to apply the changes. Alternatively, reboot the VPS (`~$ sudo reboot`).
 
+**For Ubuntu 23.04 and later**
+
+For the latest Ubuntu versions, the SSH configuration is now managed in the `ssh.socket` file.
+
+To update the SSH port, edit the `Listenstream` line in the configuration file with a text editor of your choice (`nano` used in this example):
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Save your changes and run the following commands:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+If you have enabled your operating system's firewall, make sure you allow the new port in your firewall rules.
+
 Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
 
 ```bash
