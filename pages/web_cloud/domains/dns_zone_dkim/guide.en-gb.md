@@ -378,7 +378,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >> <br>
 >>
@@ -393,7 +393,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 > **2. Create a selector**
 >> You will now create a selector, generate its key pair, and generate the DNS record associated with the domain name.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > We recommend that you do this twice for each of the selectors listed above. The second selector will allow you to change the key pair when necessary. Please refer to our use case ["How to change a DKIM key pair"](#2selectors).
