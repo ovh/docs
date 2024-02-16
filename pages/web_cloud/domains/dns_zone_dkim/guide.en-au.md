@@ -138,7 +138,7 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ### Configuring DKIM automatically for an OVHcloud Exchange solution <a name="auto-dkim"></a>
 
-The automatic configuration of DKIM is accessible for the email solutions [Exchange](https://www.ovhcloud.com/en-gb/emails/).
+The automatic configuration of DKIM is accessible for the email [Exchange](https://www.ovhcloud.com/en-au/emails/) solutions.
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
