@@ -96,6 +96,27 @@ sudo systemctl restart sshd
 
 Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le serveur (`~$ sudo reboot`).
 
+**Pour Ubuntu 23.04 et versions ultérieures**
+
+Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gérée dans le fichier `ssh.socket`.
+
+Pour mettre à jour le port SSH, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Enregistrez vos modifications et exécutez les commandes suivantes :
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
+
 N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
 
 ```bash

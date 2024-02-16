@@ -110,7 +110,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart ssh.service
 ```
 
-If you have enabled your operating system's firewall, make sure you authorize the new port throught the firewall.
+If you have enabled your operating system's firewall, make sure you allow the new port in your firewall rules.
 
 Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
 

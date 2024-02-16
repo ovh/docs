@@ -123,7 +123,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart ssh.service
 ```
 
-Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port à travers ce pare-feu.
+Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
 
 N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
 
