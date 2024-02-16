@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l'espace client OVHcloud"
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
-updated: 2021-07-01
+updated: 2024-02-16
 ---
 
 ## Objectif
@@ -64,7 +64,7 @@ Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peu
 
 #### Si vous avez renseigné une adresse e-mail de secours
 
-Vous pouvez contacter le support OVHcloud au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que cette adresse de secours devienne l'adresse e-mail principale.
+Vous pouvez contacter le support OVHcloud au 1007 ( ou composez le +33 9 72 10 10 07 depuis une ligne en dehors de la France) afin que cette adresse de secours devienne l'adresse e-mail principale.
 
 Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account_and_service_management/account_information/all_about_username#backup-email) dans votre compte.
 
@@ -72,13 +72,16 @@ Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle
 
 Dans ce cas de figure, le support téléphonique OVHcloud ne pourra pas vous venir en aide.
 
-Vous devez suivre cette [procédure](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} à nous adresser par courrier postal afin que votre identité soit vérifiée.
-<br>Une fois le courrier reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
-<br>Cette procédure peut nécessiter plusieurs jours de délai, compte tenu des délais d'acheminement de votre courrier et de son traitement par nos services.
+Vous devez ce [formulaire en ligne](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} afin que votre identité soit vérifiée.
+<br>Une fois le formulaire reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
+<br>Cette procédure risque de prendre quelques jours, compte tenu des délais de traitement des formulaires en ligne par nos services.
 
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 
-Dans ce cas de figure, vous pouvez utiliser les codes de secours de la double authentification, utiliser un autre périphérique, ou désactiver la double authentification.
+Dans ce cas de figure, vous pouvez : 
+- utiliser [les code de secours](#codes) actifs que vous avez sauvegardés;
+- utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs;
+- [désactiver la double authentification](#desactivation).
 
 Consultez les démarches appropriées sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner) ».
 
@@ -89,6 +92,9 @@ Consultez les démarches appropriées sur notre guide « [Sécuriser son compte 
 Celui-ci vous est envoyé par e-mail **sur l'adresse principale** que vous avez renseignée sur le compte.
 
 Si vous ne retrouvez pas ce code, pensez à vérifier les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
+
+Remarque : cette section ne s'applique pas dans le cas de figure de la perte de l'adresse e-mail principale. Dans ce cas, se référer à la section "J'ai perdu mon mot de passe et mon adresse e-mail principale n'est plus valide". 
+
 
 > [!primary]
 > Activer la double authentification sur votre compte vous permet de choisir le périphérique à utiliser (téléphone, tablette, smartphone, clé U2F) pour recevoir un code d'authentification.
