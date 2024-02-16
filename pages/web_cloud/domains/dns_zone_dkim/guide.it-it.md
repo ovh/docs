@@ -1,7 +1,7 @@
 ---
 title: Configura un record DKIM
 excerpt: Come configurare un record DKIM sul tuo dominio e sulla tua piattaforma email OVHcloud
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: Configuring a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -138,7 +138,7 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ### Configuring DKIM automatically for an OVHcloud Exchange solution <a name="auto-dkim"></a>
 
-The automatic configuration of DKIM is accessible for the email [Exchange](https://www.ovhcloud.com/en-gb/emails/) solutions.
+The automatic configuration of DKIM is accessible for the email [Exchange](https://www.ovhcloud.com/en-ca/emails/) solutions.
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
