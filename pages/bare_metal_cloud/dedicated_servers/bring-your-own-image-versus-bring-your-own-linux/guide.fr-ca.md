@@ -14,10 +14,10 @@ Malgré [les nombreux Systèmes d'Exploitation (OS) disponibles dans le catalogu
 
 Il existe deux services différents permettant d'installer un OS personnalisé sur votre serveur dédié :
 
-- **Bring You Own Image** (BYOI)
-- **Bring You Own Linux** (BYOLinux)
+- **Bring Your Own Image** (BYOI)
+- **Bring Your Own Linux** (BYOLinux)
 
-Cette page vous présente les différences entre **Bring You Own Image** et **Bring Your Own Linux**, afin que vous puissiez en tirer le meilleur parti.
+Cette page vous présente les différences entre **Bring Your Own Image** et **Bring Your Own Linux**, afin que vous puissiez en tirer le meilleur parti.
 
 ## Fonctionnalités
 
