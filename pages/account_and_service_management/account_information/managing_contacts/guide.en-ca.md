@@ -34,7 +34,7 @@ There are three different contact types:
 > Contact management is only possible between two OVHcloud accounts located in the same geographical zone.
 > For example, it is impossible to manage contacts between an account in Europe and an account in Canada.
 
-### Access contact management.
+### Access contact management
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click on the name linked to your customer account in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
 
