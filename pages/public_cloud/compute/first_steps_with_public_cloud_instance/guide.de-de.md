@@ -78,7 +78,7 @@ Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstell
 
 Klicken Sie auf `Anhalten`{.action}.
 
-Dadurch wird die Instanz in den Zustand `Ausgeschaltet` versetzt, aber Ihnen wird immer noch derselbe Preis für Ihre Instanz berechnet. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](/pages/public_cloud/compute/suspend_or_pause_an_instance#anhalten-einer-instanz-suspend).
+Dadurch wird die Instanz in den Zustand `Off` versetzt, aber Ihnen wird immer noch derselbe Preis für Ihre Instanz berechnet. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](/pages/public_cloud/compute/suspend_or_pause_an_instance#anhalten-einer-instanz-suspend).
 
 Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
 
