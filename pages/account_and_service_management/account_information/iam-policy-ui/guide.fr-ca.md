@@ -119,6 +119,9 @@ Les actions disponibles dépendent du type de ressource et appartiennent à l'un
 
 Un champ de recherche est disponible pour vous aider à identifier une action spécifique dans la liste.
 
+[!primary]
+Les actions liés aux produits IPs et vRack, ainsi que les actions liés à la commande et la facturation ne sont pas encore disponibles dans l'IAM OVHcloud
+
 #### Modifier une politique
 
 Pour modifier une politique existante, cliquez sur le bouton `...`{.action} à droite de la politique puis sur `Modifier la politique`{.action}.
