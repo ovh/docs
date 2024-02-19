@@ -713,7 +713,7 @@ Then every resources deleted in cascade
 
 | ![initiate_state](images/04_vrack_creation.png) | 
 |:--:| 
-| ... by selecting in your crack existing list |
+| ... by selecting in your Vrack existing list |
 
 | ![initiate_state](images/05_vrack_cration.png) | 
 |:--:| 
