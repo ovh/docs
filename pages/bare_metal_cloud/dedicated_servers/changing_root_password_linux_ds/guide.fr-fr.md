@@ -48,12 +48,12 @@ N'oubliez pas de consulter également nos guides de premiers pas :
 - [Gestion des comptes utilisateurs](#accounts)
     - [Création d’un compte utilisateur non privilégié](#unprivileged)
     - [Création d’un compte utilisateur avec les privilèges root](#privileged)
-    - [Exécution de commandes en tant qu'administrateur (« sudo »))](#sudo)
+    - [Exécution de commandes en tant qu'administrateur (« sudo »)](#sudo)
     - [Désactivation du compte utilisateur](#disable)
     - [Activation du compte utilisateur](#enable)
     - [Suppression d’un compte utilisateur](#delete)
     - [Changement de compte utilisateur](#switch)
-    - [Basculer vers le compte « root » (« root shell »))](#rootshell)
+    - [Basculer vers le compte « root » (« root shell »)](#rootshell)
 - [Activation de la connexion de l'utilisateur « root »](#enableroot)
     - [Activer le compte « root »](#rootstep1)
     - [Editer le fichier « sshd_config »](#rootstep2)
@@ -92,7 +92,7 @@ id
 
 Vous pouvez également entrer `groups` pour voir uniquement les groupes dont le compte d'utilisateur actuel est membre.
 
-Cela signifie que l'utilisateur avec lequel vous êtes actuellement connecté peut exécuter toutes les commandes en les faisant précéder de la commande `sudo` (`root privileges`). Vous trouverez des informations plus détaillées dans la [sous-partie de guide correspondante, ci-dessous](#sudouser).
+Cela signifie que l'utilisateur avec lequel vous êtes actuellement connecté peut exécuter toutes les commandes en les faisant précéder de la commande `sudo` (`root privileges`). Vous trouverez des informations plus détaillées dans la [sous-partie de guide correspondante, ci-dessous](#sudo).
 
 > [!primary]
 > 
@@ -224,7 +224,7 @@ Cela verrouillera le compte (en l'empêchant de se connecter par mot de passe) e
 
 #### Activation du compte utilisateur
 
-Pour réactiver un `user account` verrouillé sans mot de passe, utilisez la commande suivante (remplacez `initialpassword` par un mot de passe) :
+Pour réactiver un `user account` verrouillé sans mot de passe, utilisez les commandes suivantes (remplacez `initialpassword` par un mot de passe temporaire) :
 
 ```bash
 sudo usermod username -p initialpassword
@@ -306,7 +306,7 @@ exit
 
 Une idée faussement répandue est l'hypothèse que vous devez utiliser le véritable `root account` afin d'exécuter des commandes qui nécessitent des autorisations élevées (`root privileges`) sur un système.
 
-Tel que configuré par défaut dans la politique `/etc/sudoers`, le niveau d'autorisation est identique :
+Cependant, tel que configuré par défaut dans la politique `/etc/sudoers`, le niveau d'autorisation de `root` est identique à celui du `sudo group` :
 
 ```text
 # Allow members of group sudo to execute any command
@@ -333,8 +333,8 @@ root    ALL=(ALL:ALL) ALL
 >
 > Prenez d’abord les mesures nécessaires pour sécuriser votre système à l’aide de nos guides : 
 >
-> - [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 > - [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+> - [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 > 
 
 <a name="rootstep1"></a>
@@ -383,7 +383,7 @@ Cela permettra de se connecter au serveur avec `root` et le mot de passe corresp
 
 Enregistrez le fichier et quittez l'éditeur. Pour révoquer ce type d'accès, répétez les étapes et supprimez la ligne.
 
-<a name="rootstep2"></a>
+<a name="rootstep3"></a>
 
 #### Étape 3 : redémarrer le service SSH
 

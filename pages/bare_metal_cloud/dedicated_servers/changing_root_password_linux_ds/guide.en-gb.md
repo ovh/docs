@@ -73,15 +73,15 @@ After a new installation of your server (with an OVHcloud template), you start w
 - You have received the initial password for this account with your installation email.
 - You can use an SSH client to log on to the server with these credentials.
 
-The command prompt after login will differ, depending on your service type and the distribution installed. For example: 
+The command prompt after login will vary, depending on your service type and the distribution installed, for example: 
 
 ```text
 ubuntu@ns9356771:~$
 ```
 
-Note that the following command line examples will keep using "ubuntu" to refer to the preconfigured `user account`.
+Note that the command line examples below will keep using "ubuntu" to refer to the preconfigured `user account`.
 
-You can verify that this account is already added to the `sudo group` in the output of this command:
+You can see in the output of the following command that this account is already added to the `sudo group`:
 
 ```bash
 id
@@ -93,7 +93,7 @@ id
 
 You can also enter `groups` to only see the groups the current user account is a member of.
 
-This means that the user you are currently logged in with can execute all commands by preceding them with the `sudo` command (`root privileges`). You can find more detailed information in the [corresponding guide section below](#sudouser).
+This means that the user you are currently logged in with can execute all commands by preceding them with the `sudo` command (`root privileges`). You can find more detailed information in the [corresponding guide section below](#sudo).
 
 > [!primary]
 > 
@@ -116,7 +116,7 @@ This means that the user you are currently logged in with can execute all comman
 
 Even if you do not need to grant other persons access to your server, creating a user account without any special permissions (possibly referred to as `normal user` or `regular user` as well) can be useful for security purposes. For example, there is no danger of accidentally damaging the system by deleting or altering server configuration files when executing commands or processes from a user account without elevated permissions.
 
-Another best practice example is to create a user account dedicated to an application hosted on your server. Even if this user account becomes compromised through this application, the lack of elevated permissions will prevent greater harm.
+Another best practice example is to create a user account dedicated to an application hosted on your server. Even if the user account becomes compromised through this application, the lack of elevated permissions will prevent greater harm.
 
 Create a new user account (replace `username` with the actual name of the user account, for example the name of an application):
 
@@ -179,12 +179,11 @@ This is configured by the default setting for the `sudo group`:
 %sudo   ALL=(ALL:ALL) ALL
 ```
 
-These configurations can be found in `/etc/sudoers` and the directory `/etc/sudoers.d` respectively.
-
+The corresponding configurations can be found in `/etc/sudoers` and the directory `/etc/sudoers.d` respectively.
 
 > [!primary]
 >
-> The proper administration of users including user authentication methods are dependent on the work environment and other factors. If you need to manage user accounts and groups on a server, please refer to the official documentation of your operating system and the appropriate knowledge bases.
+> The appropriate administration of users including user authentication methods are dependent on the work environment and other factors. If you need to manage user accounts and groups on a server, please refer to the official documentation of your operating system and the corresponding knowledge bases.
 >
 
 <a name="sudo"></a>
@@ -219,13 +218,13 @@ To disable a `user account`, enter:
 sudo passwd -dl username
 ```
 
-This will lock the account (prevent logging in via password) and set it "passwordless", effectively disabling the account.
+This will lock the account (i.e. prevent logging in via password) and set it "passwordless", effectively disabling the account.
 
 <a name="enable"></a>
 
 #### Enabling a user account
 
-To reenable a passwordless locked `user account`, use the following command (replace `initialpassword` with a password):
+To reenable a passwordless locked `user account`, use the following commands (replace `initialpassword` with a temporary password):
 
 ```bash
 sudo usermod username -p initialpassword
@@ -307,7 +306,7 @@ exit
 
 A common misconception is the assumption that you need to use the actual `root account` in order to execute commands that require elevated permissions (`root privileges`) on a system.
 
-As configured by default in the `/etc/sudoers` policy, the permission level is identical:
+However, as configured by default in the `/etc/sudoers` policy, the permission level of `root` is identical to the one of the `sudo group`:
 
 ```text
 # Allow members of group sudo to execute any command
@@ -321,9 +320,8 @@ root    ALL=(ALL:ALL) ALL
 
 > [!primary]
 >
-> Be aware that tutorials and user documentation might not always follow a consistent terminology. Unless you have verified that using the actual `root account` is required for your intended action, the best practice is to execute `sudo` commands instead. Manipulating files and settings as `root` can have unexpected consequences for the system.
+> Be aware that tutorials and user documentations might not always follow a consistent terminology. Unless you have verified that using the actual `root account` is required for your intended action, the best practice is to execute `sudo` commands instead. Manipulating files and settings as `root` can have unexpected consequences for the system.
 >
-
 
 <a name="enableroot"></a>
 
@@ -371,7 +369,7 @@ You can find the following line:
 #PermitRootLogin prohibit-password
 ```
 
-The leading character `#` turns the entire line into a "comment" string and is therefore disregarded by any application reading the file.
+The leading character `#` turns the entire line into a "comment" string and it is therefore disregarded by any application reading the file.
 
 This means that if there is no other instruction, logging in with the user account `root` is **not enabled**.
 
