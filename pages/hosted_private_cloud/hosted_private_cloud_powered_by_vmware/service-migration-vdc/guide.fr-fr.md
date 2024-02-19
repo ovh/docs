@@ -562,6 +562,8 @@ Voici comment procéder:
 > [!warning]
 >
 > Cet appel API est à exécuter sur l'ancien vDC (vDC source).
+> Attention ! Entre 19h et 8h du matin, le robot ne s'exécute pas. Il attend 8 heures du matin pour travailler. 
+> Cette période est définie dans le fonctionnement du robot.
 
 > [!api]
 >

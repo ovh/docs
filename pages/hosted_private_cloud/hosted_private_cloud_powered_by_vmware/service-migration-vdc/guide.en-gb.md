@@ -540,6 +540,8 @@ Here is how to proceed:
 > [!warning]
 >
 > This API call is to be executed on the old vDC (source vDC).
+> Warning ! Between 7pm and 8am, the robot does not execute. It waits 8am to work. 
+> This period is defined in the operation of the robot.
 
 > [!api]
 >
