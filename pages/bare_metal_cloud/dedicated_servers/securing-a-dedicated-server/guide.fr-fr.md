@@ -100,10 +100,6 @@ Cela devrait être suffisant pour appliquer les changements. Dans le cas contrai
 
 Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gérée dans le fichier `ssh.socket`.
 
-```bash
-sudo ufw allow 49152/tcp && sudo ufw allow
-```
-
 Pour mettre à jour le port SSH, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
 
 ```bash
