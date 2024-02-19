@@ -512,17 +512,17 @@ Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/s
 
 
 ```bash
-$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "2d65f8e0-edde-448f-b907-
-a85404eb0752"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
+$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "2d65f8e0-edde-448f-b9-
+a85404eb52"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
 ```
 
 ```console
 HTTP/1.1 400 Bad Request
 {
   "class": "Client::BadRequest::ServiceRangeFullyAllocated",
-  "message": "Service 2d65f8e0-edde-448f-b907-a85404eb0752 requires 2 IPs while 0 IP(s) still available on the Subnet sub-2778273",
+  "message": "Service 2d65f8e0-edde-448f-b9-a85404eb52 requires 2 IPs while 0 IP(s) still available on the Subnet sub-2778273",
   "details": {
-    "serviceId": "2d65f8e0-edde-448f-b907-a85404eb0752",
+    "serviceId": "2d65f8e0-edde-448f-b9-a85404eb52",
     "requestedIPsCount": "2",
     "availableIPsCount": "0",
     "SubnetId": "sub-4567890"
@@ -723,17 +723,10 @@ Then every resources deleted in cascade
 |:--:| 
 | Now you can create your new Vrack Service |
 
-| ![initiate_state](images/07_vrack_creation.png) | 
+| ![initiate_state](images/_vrack_creation.png) | 
 |:--:| 
-| 07 |
+| If you don't have a Vrack you can createone here |
 
-| ![initiate_state](images/08_vrack_creation.png) | 
-|:--:| 
-| 08 |
-
-| ![initiate_state](images/09_vrack_creation.png) | 
-|:--:| 
-| 09 |
 
 | ![initiate_state](images/10_listing_page.png) | 
 |:--:| 
