@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczanie serwera dedykowanego"
 excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo serwera dedykowanego"
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]

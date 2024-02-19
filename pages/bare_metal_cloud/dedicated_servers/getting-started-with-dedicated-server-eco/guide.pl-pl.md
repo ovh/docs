@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise'
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego Kimsufi, So You Start lub Rise'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]

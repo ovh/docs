@@ -1,7 +1,7 @@
 ---
 title: "Konfigurowanie kont użytkowników i dostępu root na serwerze"
 excerpt: "Dowiedz się, jak rozpocząć zarządzanie kontami użytkowników w systemie operacyjnym GNU/Linux"
-updated: 2021-02-16
+updated: 2024-02-19
 ---
 
 > [!primary]

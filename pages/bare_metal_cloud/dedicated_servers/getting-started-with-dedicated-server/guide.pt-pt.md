@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com um servidor dedicado'
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]

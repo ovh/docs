@@ -1,7 +1,7 @@
 ---
 title: "Como recuperar o acesso ao servidor em caso de perda da palavra-passe do utilizador"
 excerpt: "Saiba como configurar uma nova palavra-passe para uma conta de utilizador num sistema operativo GNU/Linux com o modo rescue OVHcloud"
-updated: 2024-02-12
+updated: 2024-02-19
 ---
 
 > [!primary]

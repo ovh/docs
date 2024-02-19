@@ -1,7 +1,7 @@
 ---
 title: "Cómo recuperar el acceso al servidor en caso de pérdida de la contraseña del usuario"
 excerpt: "Cómo configurar una nueva contraseña para una cuenta de usuario en un sistema operativo GNU/Linux con el modo de rescate de OVHcloud"
-updated: 2024-02-12
+updated: 2024-02-19
 ---
 
 > [!primary]

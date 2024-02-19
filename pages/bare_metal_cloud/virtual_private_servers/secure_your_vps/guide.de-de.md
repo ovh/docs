@@ -1,7 +1,7 @@
 ---
 title: Einen VPS absichern
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
-updated: 2024-01-23
+updated: 2024-02-19
 
 ---
 

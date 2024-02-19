@@ -1,7 +1,7 @@
 ---
 title: "Mettere in sicurezza un server dedicato"
 excerpt: "Scopri come proteggere un server dedicato grazie ad alcuni suggerimenti"
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Austauschen eines SSH-Schlüsselpaars
 excerpt: Erfahren Sie hier, wie Sie Zugriff auf Ihren Server mit einem neuen SSH-Schlüsselpaar wiederherstellen, falls der private Schlüssel verloren ist
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]

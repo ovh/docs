@@ -1,7 +1,7 @@
 ---
 title: 'Securing a VPS'
 excerpt: 'Find out the basics of securing your VPS'
-updated: 2024-01-23
+updated: 2024-02-19
 
 ---
 

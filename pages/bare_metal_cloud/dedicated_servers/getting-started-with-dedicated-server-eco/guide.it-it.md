@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Proteger um servidor dedicado"
 excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]

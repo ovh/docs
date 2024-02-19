@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with a dedicated server'
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 ## Objective

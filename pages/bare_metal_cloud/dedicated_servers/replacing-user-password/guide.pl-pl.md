@@ -1,7 +1,7 @@
 ---
 title: "Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika"
 excerpt: "Dowiedz się, jak skonfigurować nowe hasło dla konta użytkownika w systemie operacyjnym GNU/Linux w trybie rescue OVHcloud"
-updated: 2024-02-12
+updated: 2024-02-19
 ---
 
 

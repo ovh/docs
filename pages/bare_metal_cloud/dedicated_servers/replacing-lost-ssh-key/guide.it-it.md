@@ -1,7 +1,7 @@
 ---
 title: "Sostituzione del vostro paio di chiavi SSH"
 excerpt: "Come ripristinare l’accesso al server in caso di perdita della chiave privata generando una nuova coppia di chiavi SSH"
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Getting started with a Kimsufi, So You Start or Rise dedicated server
 excerpt: 'Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 ## Objective

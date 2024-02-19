@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit einem Kimsufi, So You Start oder Rise Dedicated Server'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Kimsufi, So You Start oder Rise Dedicated Server verwalten'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]

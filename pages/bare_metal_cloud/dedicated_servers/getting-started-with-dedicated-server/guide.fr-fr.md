@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec un serveur dédié'
 excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 ## Objectif

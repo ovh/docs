@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un server dedicato
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Konfigurieren von Benutzer-Accounts und Root-Zugriff auf einem Server"
 excerpt: "Erfahren Sie hier die ersten Schritte zur Verwaltung von Benutzer-Accounts auf einem GNU/Linux-Betriebssystem"
-updated: 2024-02-12
+updated: 2024-02-19
 ---
 
 > [!primary]

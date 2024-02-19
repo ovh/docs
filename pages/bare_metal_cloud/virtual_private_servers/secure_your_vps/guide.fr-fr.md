@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un VPS"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre VPS"
-updated: 2024-01-23
+updated: 2024-02-19
 
 ---
 

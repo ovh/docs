@@ -1,7 +1,7 @@
 ---
 title: "Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur"
 excerpt: "Découvrez comment configurer un nouveau mot de passe pour un compte utilisateur sur un système d'exploitation GNU/Linux avec le mode rescue OVHcloud"
-updated: 2024-02-12
+updated: 2024-02-19
 ---
 
 ## Objectif

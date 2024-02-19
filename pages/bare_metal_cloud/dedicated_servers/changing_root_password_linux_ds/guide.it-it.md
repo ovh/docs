@@ -1,7 +1,7 @@
 ---
 title: "Configurazione degli account utente e dell'accesso root su un server"
 excerpt: "Scopri come eseguire le prime operazioni sulla gestione degli account utente di un sistema operativo GNU/Linux"
-updated: 2021-02-16
+updated: 2024-02-19
 ---
 
 > [!primary]

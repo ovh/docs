@@ -1,7 +1,7 @@
 ---
 title: "Jak zastąpić parę kluczy SSH"
 excerpt: "Dowiedz się, jak przywrócić dostęp do serwera w przypadku utraty klucza prywatnego przez wygenerowanie nowej pary kluczy SSH"
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]

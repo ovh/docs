@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS"
-updated: 2024-01-23
+updated: 2024-02-19
 
 ---
 

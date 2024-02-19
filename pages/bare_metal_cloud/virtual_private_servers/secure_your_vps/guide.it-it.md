@@ -1,7 +1,7 @@
 ---
 title: "Mettere in sicurezza un VPS"
 excerpt: "Scopri gli elementi di base per rendere sicuro il tuo VPS"
-updated: 2024-01-23
+updated: 2024-02-19
 
 ---
 

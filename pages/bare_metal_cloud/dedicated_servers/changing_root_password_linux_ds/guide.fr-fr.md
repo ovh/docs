@@ -1,7 +1,7 @@
 ---
 title: "Configuration des comptes utilisateurs et de l'accès root sur un serveur"
 excerpt: "Découvrez comment bien débuter dans l'administration de comptes utilisateurs sur un système d'exploitation GNU/Linux"
-updated: 2024-02-12
+updated: 2024-02-19
 ---
 
 ## Objectif

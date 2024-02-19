@@ -1,7 +1,7 @@
 ---
 title: "Sustitución del par de claves SSH"
 excerpt: "Cómo restaurar el acceso al servidor en caso de pérdida de la clave privada generando un nuevo par de claves SSH"
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]

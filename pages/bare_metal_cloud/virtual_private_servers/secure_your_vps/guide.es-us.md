@@ -1,7 +1,7 @@
 ---
 title: 'Proteger un VPS'
 excerpt: 'Descubra los elementos básicos que le permiten proteger su VPS'
-updated: 2024-01-23
+updated: 2024-02-19
 
 ---
 

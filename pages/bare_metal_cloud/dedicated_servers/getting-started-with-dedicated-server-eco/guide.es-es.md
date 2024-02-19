@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un servidor dedicado Kimsufi, So you Start o Rise
 excerpt: 'Cómo empezar a utilizar un servidor dedicado Kimsufi, So you Start o Rise'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]

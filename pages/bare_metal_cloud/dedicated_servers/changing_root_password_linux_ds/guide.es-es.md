@@ -1,7 +1,7 @@
 ---
 title: "Configuración de las cuentas de usuario y del acceso root en un servidor"
 excerpt: "Cómo empezar a administrar cuentas de usuario en un sistema operativo GNU/Linux"
-updated: 2021-02-16
+updated: 2024-02-19
 ---
 
 > [!primary]
