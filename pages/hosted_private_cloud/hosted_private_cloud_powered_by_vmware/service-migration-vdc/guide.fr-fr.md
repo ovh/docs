@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2024-01-12
+updated: 2024-02-19
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -562,8 +562,7 @@ Voici comment procéder:
 > [!warning]
 >
 > Cet appel API est à exécuter sur l'ancien vDC (vDC source).
-> Attention ! Entre 19h et 8h du matin, le robot ne s'exécute pas. Il attend 8 heures du matin pour travailler. 
-> Cette période est définie dans le fonctionnement du robot.
+> Attention ! Entre 19h et 8h du matin, le robot ne s'exécute pas. Il attend 8 heures du matin pour travailler.nCette période est définie dans le fonctionnement du robot.
 
 > [!api]
 >
