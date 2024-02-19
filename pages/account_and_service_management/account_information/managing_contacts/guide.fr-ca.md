@@ -1,12 +1,12 @@
 ---
 title: 'Gérer les contacts de ses services'
 excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Objectif
 
-La plupart des services créés chez OVHcloud sont gérés par plusieurs contacts. Chacun de ces contacts est associé à un identifiant client. 
+La plupart des services créés chez OVHcloud sont gérés par plusieurs contacts. Chacun de ces contacts est associé à un compte client.
 
 **Apprenez comment gérer les contacts de vos services OVHcloud.**
 
@@ -17,8 +17,6 @@ Trois types de contacts existent:
 - **le contact administrateur** gère les aspects administratifs et techniques d'un service. Il possède des droits de modification sur l'ensemble des contacts et peut effectuer des changements dans les informations du propriétaire d'un service, comme les noms de domaine par exemple .
 - **le contact technique** gère uniquement les aspects techniques d'un service .
 - **le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
-
-L'identifiant client est un identifiant personnel que vous recevez par e-mail lors de la création de votre compte client chez OVHcloud. Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**. Lorsque vous commandez des services, cet identifiant leur est associé en tant que contact.
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
@@ -33,19 +31,23 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## En pratique
 
+> [!primary]
+> La gestion des contacts n'est possible qu'entre deux comptes OVHcloud situés dans la même zone géographique.
+> Par exemple, il est impossible de faire une gestion des contacts entre un compte en Europe et un compte au Canada.
+
 ### Accéder à la gestion des contacts
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Gestion des contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur le nom rattaché à votre compte client dans la barre de menu en haut à droite, puis cliquez sur `Gestion des contacts`{.action}.
 
 ![Contact management](images/hubcontacts.png){.thumbnail}
 
-Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
+Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre compte client est renseigné en tant que contact.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
 
 ### Modifier les contacts d'un service
 
-Une fois sur la page de gestion des contacts, cliquez sur `...`{.action} à droite du service à modifier, puis sur `Modifier les contacts`{.action}. Renseignez le ou les nouveaux contacts souhaités puis cliquez sur `Valider`{.action} votre demande.
+Une fois sur la page de gestion des contacts, cliquez sur `...`{.action} à droite du service à modifier, puis sur `Modifier les contacts`{.action}. Renseignez le ou les nouveaux contacts souhaités (renseignez l'addresse e-mail principale du compte concerné) puis cliquez sur `Valider`{.action}.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
 
@@ -57,11 +59,11 @@ Un e-mail va être envoyé aux contacts impliqués dans ce processus de modifica
 
 En qualité d'administrateur, vous pouvez réaliser plusieurs manipulations sur les contacts d'un service :
 
-- Nommer un nouveau contact sur la gestion technique et/ou la facturation. Une validation de votre part ainsi que de celle du nouveau contact  seront nécessaires . L'ancien contact recevra un e-mail l'informant de la modification si celle-ci arrive à son terme .
+- Nommer un nouveau contact sur la gestion technique et/ou la facturation. Une validation de votre part ainsi que de celle du nouveau contact seront nécessaires . L'ancien contact recevra un e-mail l'informant de la modification si celle-ci arrive à son terme.
 
-- Récupérer la gestion technique et/ou la facturation. Vous devrez valider cette demande. L'ancien contact recevra un e-mail l'informant de la modification. 
+- Récupérer la gestion technique et/ou la facturation. Vous devrez valider cette demande. L'ancien contact recevra un e-mail l'informant de la modification.
 
-- Désigner un nouveau contact administrateur à votre place. Une validation de votre part ainsi que de celle du nouveau contact seront nécessaires. 
+- Désigner un nouveau contact administrateur à votre place. Une validation de votre part ainsi que de celle du nouveau contact seront nécessaires.
 
 #### Je suis contact technique
 
@@ -91,7 +93,7 @@ Si l'un des contacts n'a pas reçu l'e-mail, il se peut que l'adresse de contact
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande,  l'affichage dans [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} se mettra à jour sous quelques minutes.
+Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande, l'affichage dans [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} se mettra à jour sous quelques minutes.
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 

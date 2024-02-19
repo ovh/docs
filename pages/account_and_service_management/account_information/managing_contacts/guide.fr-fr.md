@@ -1,7 +1,7 @@
 ---
 title: 'Gérer les contacts de ses services'
 excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Objectif
@@ -39,6 +39,10 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
 
 ## En pratique
+
+> [!primary]
+> La gestion des contacts n'est possible qu'entre deux comptes OVHcloud situés dans la même zone géographique.
+> Par exemple, il est impossible de faire une gestion des contacts entre un compte en Europe et un compte au Canada.
 
 ### Accéder à la gestion des contacts <a name="gestion_des_contacts"></a>
 
