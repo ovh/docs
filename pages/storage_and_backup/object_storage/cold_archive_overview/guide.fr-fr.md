@@ -6,7 +6,7 @@ updated: 2023-01-29
 
 ## Objectif
 
-OVHcloud Cold Archive est une classe de stockage conçue pour un stockage à long terme des données non utilisées.
+[OVHcloud Cold Archive](https://www.ovhcloud.com/fr/public-cloud/cold-archive/) est une classe de stockage conçue pour un stockage à long terme des données non utilisées.
 
 Ses principales caractéristiques sont :
 
