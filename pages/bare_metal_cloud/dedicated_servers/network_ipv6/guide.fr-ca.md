@@ -1,6 +1,6 @@
 ---
-title: Configurer IPv6 sur un serveur dédié
-excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.
+title: 'Configurer IPv6 sur un serveur dédié'
+excerpt: 'Découvrez comment configurer des adresses IPv6 sur notre infrastructure.'
 updated: 2024-02-15
 ---
 
@@ -148,7 +148,7 @@ Des adresses IPv6 supplémentaires peuvent être ajoutées avec les lignes suiva
 
 Pour s'assurer que l'IPv6 est activée ou désactivée lorsque l'interface eth0 est activée ou désactivée, vous devez ajouter la ligne suivante à la configuration :
 
-`down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`
+`down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`<br>
 `down ip -6 addr del ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`
 
 **Exemple de configuration:**
@@ -164,7 +164,7 @@ iface eth0 inet6 static
 
 # control-alias eth0
 iface eth0 inet6 static
-    address 2607:5300:xxxx:xxxx::/56
+    address 2607:5300:xxxx:xxxx::/xx
     dns-nameservers 2001:41d0:3:163::1
     gateway 2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
@@ -203,7 +203,7 @@ Enregistrez les modifications apportées au fichier, puis relancez le réseau ou
 
 Vous pouvez tester la connectivité IPv6 en exécutant la commande suivante :
 
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -250,21 +250,20 @@ Il convient avant tout d'effectuer une copie du fichier source afin de pouvoir r
 
 #### Étape 3 : Modifier le fichier de configuration réseau
 
-Modifiez le fichier en y ajoutant les lignes suivantes, sans rien modifier dans le fichier original. Remplacez les éléments génériques (c'est-à-dire YOUR_IPV6 et IPv6_PREFIX) par vos valeurs spécifiques. Nous avons également omis la configuration IPv4 pour éviter toute confusion, mais la configuration IPv6 se fait dans le même fichier de configuration.
+Modifiez le fichier en y ajoutant les lignes suivantes, sans rien modifier dans le fichier original. Remplacez les éléments génériques (c'est-à-dire `YOUR_IPV6` et `IPv6_PREFIX`) par vos valeurs spécifiques. Nous avons également omis la configuration IPv4 pour éviter toute confusion, mais la configuration IPv6 se fait dans le même fichier de configuration.
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=YOUR_IPV6/IPv6_PREFIX
 gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
-dns=2001:41d0:3:163::1;
 ```
 
 Si vous avez besoin de configurer plus d'adresses IPv6, votre configuration devrait ressembler à ceci :
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -272,7 +271,6 @@ address1=2607:5300:xxxx:xxxx::/xx
 address2=ADDITIONAL_IPV6_1/IPv6_PREFIX
 address3=ADDITIONAL_IPV6_2/IPv6_PREFIX
 gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
-dns=2001:41d0:3:163::1;
 ```
 
 **Exemple de configuration:**
@@ -283,7 +281,7 @@ dns=2001:41d0:3:163::1;
 
 Nous modifions ensuite le fichier de configuration :
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -294,7 +292,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 
 Ajout d'adresses IPv6 supplémentaires :
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -314,9 +312,9 @@ Enregistrez les modifications apportées au fichier puis relancez le réseau ou 
 
 #### Étape 5 : Tester la connectivité IPv6
 
-Vous pouvez tester la connectivité IPv6 en exécutant les commandes suivantes :
+Vous pouvez tester la connectivité IPv6 en exécutant la commande suivante :
 
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -358,7 +356,7 @@ Dans notre exemple, notre fichier est nommé `51-cloud-init-ipv6.yaml` :
 
 En utilisant un éditeur de texte, modifiez le fichier `51-cloud-init-ipv6.yaml` en ajoutant les lignes suivantes au fichier, comme montré dans l'exemple ci-dessous.
 
-Remplacez les éléments génériques (c'est-à-dire YOUR_IPV6 et IPV6_PREFIX) ainsi que l'interface réseau (si votre serveur n'utilise pas **eno3**) par vos valeurs spécifiques.
+Remplacez les éléments génériques (c'est-à-dire `YOUR_IPV6` et `IPV6_PREFIX`) ainsi que l'interface réseau (si votre serveur n'utilise pas **eno3**) par vos valeurs spécifiques.
 
 ```yaml
 network:
@@ -434,21 +432,21 @@ network:
 
 Vous pouvez tester votre configuration à l’aide de la commande suivante :
 
-```bash
+```sh
 ~# sudo netplan try
 ```
 
 Si elle est correcte, appliquez-la à l’aide de la commande suivante :
 
-```bash
+```sh
 ~# sudo netplan apply
 ```
 
 #### Étape 5 : Tester la connectivité IPv6
 
-Vous pouvez tester la connectivité IPv6 en exécutant les commandes suivantes :
+Vous pouvez tester la connectivité IPv6 en exécutant la commande suivante :
 
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -464,11 +462,11 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 ### CentOS 7, AlmaLinux (8 & 9) et Rocky Linux (8 & 9)
 
-L'exemple de configuration ci-dessous est basé sur Centos 7.
+L'exemple de configuration ci-dessous est basé sur CentOS 7.
 
 Le fichier de configuration réseau est situé dans le répertoire `/etc/sysconfig/network-scripts`. Dans notre exemple, il s'appelle `ifcfg-eth0`.
 
-#### Etape 1 : Utiliser SSH pour vous connecter à votre serveur
+#### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
 ```sh
 ~# ssh user@serverIP
@@ -489,13 +487,15 @@ Tout d'abord, faites une copie du fichier de configuration, afin de pouvoir reve
 
 #### Étape 3 : Modifier le fichier de configuration du réseau
 
-Dans le fichier de configuration ouvert, ajoutez les lignes suivantes si elles manquent. Remplacez les éléments génériques (c'est-à-dire YOUR_IPv6, IPV6_GATEWAY et IPV6_PREFIX) par vos valeurs spécifiques. Par ailleurs, nous avons omis la configuration IPv4 pour éviter toute confusion, mais la configuration IPv6 se fait dans le même fichier de configuration.
+Dans le fichier de configuration ouvert, ajoutez les lignes suivantes si elles manquent. Remplacez les éléments génériques (c'est-à-dire `YOUR_IPv6`, `IPV6_GATEWAY` et `IPV6_PREFIX`) par vos valeurs spécifiques. Par ailleurs, nous avons omis la configuration IPv4 pour éviter toute confusion, mais la configuration IPv6 se fait dans le même fichier de configuration.
 
 ```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
+
+Pour Alma et Rocky linux, le contenu du fichier de configuration peut différer de celui indiqué ci-dessus, auquel cas il suffit d'ajouter les éléments manquants. Ne remplacez rien dans le fichier original.
 
 Si vous devez configurer plusieurs adresses IPv6, ajoutez la ligne suivante :
 
@@ -526,7 +526,7 @@ IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
 ```
 
-### Étape 4 : Enregistrer le fichier et appliquer les modifications
+#### Étape 4 : Enregistrer le fichier et appliquer les modifications
 
 Enregistrez vos modifications dans le fichier puis redémarrez le réseau à l'aide de l'une des commandes suivantes :
 
@@ -544,9 +544,9 @@ Vous pouvez également redémarrer votre serveur pour appliquer les changements.
 
 #### Étape 5 : Tester la connectivité IPv6
 
-Vous pouvez tester la connectivité IPv6 en exécutant les commandes suivantes :
+Vous pouvez tester la connectivité IPv6 en exécutant la commande suivante :
 
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -590,7 +590,7 @@ Entrez votre configuration IPv6 (`Adresse IPv6` et `Default Gateway`), cochez la
 
 ![Properties](images/ipv6_configuration.png){.thumbnail}
 
-## Diagnostic
+### Diagnostic
 
 Vous avez configuré votre IPv6 mais rien ne fonctionne ? 
 
@@ -600,7 +600,7 @@ Dans un premier temps, [mettez votre serveur en mode rescue](/pages/bare_metal_c
 
 Inspirez-vous ensuite des commandes suivantes pour configurer votre IPv6 de manière non-persistante, en remplaçant « YOUR_IPV6 », « IPV6_PREFIX » et « IPV6_GATEWAY » par vos propres informations :
 
-```bash
+```sh
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -608,7 +608,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Testez de nouveau votre réseau via un ping6 par exemple :
 
-```bash
+```sh
 ping6 ipv6.google.com
 ```
 

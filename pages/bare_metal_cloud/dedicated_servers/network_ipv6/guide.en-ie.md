@@ -123,7 +123,7 @@ iface eth0 inet6 static
 
 # control-alias eth0
 iface eth0 inet6 static
-    address 2607:5300:xxxx:xxxx::/56
+    address 2607:5300:xxxx:xxxx::/xx
     dns-nameservers 2001:41d0:3:163::1
     gateway 2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
@@ -145,7 +145,7 @@ Additional IPv6 addresses can be added with the following lines in the configura
 
 To ensure that the IPv6 is enabled or disabled whenever the eth0 interface is enabled or disabled, you need to add the following line to the configuration:
 
-`down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`
+`down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`<br>
 `down ip -6 addr del ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`
 
 **Configuration example:**
@@ -161,7 +161,7 @@ iface eth0 inet6 static
 
 # control-alias eth0
 iface eth0 inet6 static
-    address 2607:5300:xxxx:xxxx::/56
+    address 2607:5300:xxxx:xxxx::/xx
     dns-nameservers 2001:41d0:3:163::1
     gateway 2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
@@ -254,7 +254,6 @@ may-fail=true
 address1=2607:5300:xxxx:xxxx::/xx
 address2=YOUR_IPV6/IPv6_PREFIX
 gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
-dns=2001:41d0:3:163::1;
 ```
 
 If you need to configure more IPv6 addresses, your configuration should look like this:
@@ -267,7 +266,6 @@ address1=2607:5300:xxxx:xxxx::/xx
 address2=ADDITIONAL_IPV6_1/IPv6_PREFIX
 address3=ADDITIONAL_IPV6_2/IPv6_PREFIX
 gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
-dns=2001:41d0:3:163::1;
 ```
 
 **Configuration example:**
@@ -609,7 +607,7 @@ ping6 ipv6.google.com
 ```
 If your server responds, it is likely that there is an error in one of the steps taken for your initial configuration.
 
-In any case, please feel free to reach out to our support team with the request to review your configurations. It is necessary to provide:
+In any case, feel free to [contact our support team](https://help.ovhcloud.com/csm?id=csm_get_help) and ask to review your configurations. You will need to provide:
 
 - The operating system name and version you are using on your server.
 - The name and directory of the network configuration file.
