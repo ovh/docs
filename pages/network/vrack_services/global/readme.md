@@ -730,7 +730,7 @@ Then every resources deleted in cascade
 
 | ![initiate_state](images/10_listing_page.png) | 
 |:--:| 
-| 10 |
+| Here you have a list of all your Vrack Services |
 
 ### 2. Overview
 
