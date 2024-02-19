@@ -61,6 +61,8 @@ Cliquez alors, dans le cadre `Mon profil` sur le bouton `...`{.action} puis sur 
 
 ![adresse e-mail de secours](images/edit-profile.png){.thumbnail}
 
+Vous aurez donc accès aux informations personnelles de votre compte. Il suffit de descendre dans la rubrique `Vos informations de contact`, et l'E-mail de secours se trouvera en-dessous de l'Email principal. 
+
 > [!warning]
 > Pour rappel, il est **primordial** que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.
 >
