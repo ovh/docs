@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2023-12-06
+updated: 2024-02-19
 ---
 
 ## Objective
@@ -117,6 +117,9 @@ The available actions depend on the resource type and belong to one of five cate
 - **Operate**: Apply changes to the infrastructure related to the product (*ex.: Reboot a dedicated server*).
 
 A search field is available to help identify a specific action on the list.
+
+> [!primary]
+> Actions related to IP and vRack products, as well as actions related to ordering and billing, are not yet available in the OVHcloud IAM.
 
 #### Editing a policy
 
