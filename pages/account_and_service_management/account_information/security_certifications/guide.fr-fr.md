@@ -42,7 +42,7 @@ We monitor the new versions of ISO27017, ISO27018 and ISO27701 actually under re
 | Message broker | ETA : 01/2024 | 
 | Object Storage | yes | 
 | Private Registry | yes | 
-| Cold Storage | ETA : 01/2024 | 
+| Cold Archive | yes | 
 | Logs Data Platform | yes | 
 | Grafana | ETA : 01/2024 | 
 | Web Hosting | no | 
