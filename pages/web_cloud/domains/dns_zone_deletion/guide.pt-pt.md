@@ -4,6 +4,10 @@ excerpt: "Saiba como eliminar uma zona DNS para o seu domínio através da Área
 updated: 2024-02-20
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 A zona **D**omain **N**ame **S**ystem (**DNS**) de um nome de domínio é o seu ficheiro de configuração. É composta por informações técnicas, chamadas *registos DNS*. A zona DNS é, de certa forma, um centro de comando.
