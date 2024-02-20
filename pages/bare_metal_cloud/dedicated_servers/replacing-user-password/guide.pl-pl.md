@@ -28,7 +28,7 @@ W takim przypadku możesz zalogować się do Twojego serwera za pomocą trybu Re
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 > [!primary]
-> Ten przewodnik nie dotyczy instalacji **Windows* Server. Zapoznaj się z naszymi przewodnikami "[Jak zmienić hasło administratora na serwerze dedykowanym Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)" i "[Jak zmienić hasło administratora na serwerze VPS Windows](/pages/virtual_private_servers/resetting_a_windows_password)".
+> Ten przewodnik nie dotyczy instalacji **Windows* Server. Zapoznaj się z naszymi przewodnikami "[Jak zmienić hasło administratora na serwerze dedykowanym Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)" i "[Jak zmienić hasło administratora na serwerze VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
 >
 
 ## W praktyce
@@ -94,7 +94,7 @@ Teraz masz dostęp do serwera za pomocą nowego hasła.
 
 ## Sprawdź również
 
-[Tworzenie i używanie kluczy SSH](/pages/bare_metal_cloud/creating-ssh-keys-dedicated)
+[Tworzenie i używanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Tryb ratunkowy dla serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
