@@ -1,7 +1,7 @@
 ---
 title: "Guides d'utilisation de nos précédentes gammes de téléphones"
 excerpt: 'Retrouvez les guides des précédents téléphones fournis par OVHcloud'
-updated: 2020-04-28
+updated: 2024-02-15
 ---
 
 ## Objectif
@@ -54,16 +54,6 @@ Les guides de **dépannage** listés ci-dessous peuvent ne plus être à jour. P
 - [Branchements du Gigaset C530IP](/pages/web_cloud/phone_and_fax/voip/branchements_du_c530_ip){.external}
 - [Utiliser le Gigaset C530IP](/pages/web_cloud/phone_and_fax/voip/gigaset_c530ip_use){.external}
 - [Dépannage du Gigaset C530IP](/pages/web_cloud/phone_and_fax/voip/depannage_c530_ip){.external}
-
-## Les téléphones LG
-
-### LG8820
-
-![previousphones](images/lg8820.png){.thumbnail}
-
-- [Branchements du LG8820](/pages/web_cloud/phone_and_fax/voip/branchements_lg_8820){.external}
-- [Fonctionnalités du LG8820](/pages/web_cloud/phone_and_fax/voip/fonctionalites_lg_8820){.external}
-- [Dépannage du LG8820](/pages/web_cloud/phone_and_fax/voip/depannage_lg_8820){.external}
 
 ## Les téléphones Polycom
 

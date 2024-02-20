@@ -1,6 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail w interfejsie Webmail RoundCube'
-updated: 2023-12-15
+updated: 2024-02-20
 ---
 
 > [!primary]

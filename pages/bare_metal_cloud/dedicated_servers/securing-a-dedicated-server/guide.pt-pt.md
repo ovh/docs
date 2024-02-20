@@ -1,7 +1,7 @@
 ---
 title: "Proteger um servidor dedicado"
 excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -108,61 +108,9 @@ ssh username@IPv4_servidor -p NewPortNumber
 > Lembre-se de que a alteração da porta predefinida do SSH ou de qualquer outro protocolo constitui um risco potencial. Poderá verificar que alguns serviços não podem ser configurados para serem utilizados com portas que não são standard, e não funcionam se a porta predefinida for alterada.
 >
 
-### Alterar a palavra-passe do utilizador root
-
-Recomenda-se vivamente que altere a palavra-passe do utilizador root para não a deixar ao valor predefinido num novo sistema. Para mais informações consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
-
 ### Criar um utilizador com direitos restritos
 
-Em geral, as tarefas que não exijam privilégios root devem ser realizadas através de um utilizador standard. Para criar um novo utilizador, execute o seguinte comando:
-
-```bash
-sudo adduser NomeUtilizadorPersonalizado
-```
-
-De seguida, indique as informações pedidas pelo sistema: palavra-passe, nome, etc.
-
-O novo utilizador será autorizado a ligar-se em SSH. Ao estabelecer uma ligação, utilize as informações de identificação especificadas.
-
-Uma vez ligado, introduza o seguinte comando para efetuar operações que requerem autorizações root:
-
-```bash
-su root
-```
-
-Introduza a password quando for convidado e a ligação ativa será migrada para o utilizador root.
-
-### Desativar o acesso ao servidor através do utilizador root
-
-O utilizador root é criado por predefinição nos sistemas GNU/Linux. Trata-se do nível de acesso mais elevado a um sistema operativo.<br>
-É desaconselhado e mesmo perigoso deixar o seu servidor acessível apenas em root, pois esta conta pode efetuar operações irreversíveis prejudiciais.
-
-Recomenda-se a desativação do acesso direto dos utilizadores root através do protocolo SSH. Não se esqueça de criar outro utilizador antes de seguir os passos abaixo.
-
-Deve modificar o ficheiro de configuração SSH da mesma forma que o descrito anteriormente:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Consulte a secção seguinte:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Substitua **yes** por **no** na linha `PermitRootLogin`.
-
-Para que esta modificação seja tida em conta, deve reiniciar o serviço SSH:
-
-```bash
-sudo systemctl restart sshd
-```
-
-De seguida, as ligações ao seu servidor através do utilizador root (`ssh root@IPv4_servidor`) serão rejeitadas.
+Em geral, as tarefas que não exijam privilégios root devem ser realizadas através de um utilizador standard. Para mais informações consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Configurar firewall interna (iptables)
 

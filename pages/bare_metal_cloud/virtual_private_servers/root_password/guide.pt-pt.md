@@ -2,6 +2,7 @@
 title: Como alterar a palavra-passe root de um VPS (Linux)
 excerpt: Aprenda a alterar a palavra-passe root do seu VPS
 updated: 2023-06-26
+hidden: true
 ---
 
 > [!primary]

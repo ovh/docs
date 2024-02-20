@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie kontaktami swoich usług
 excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Wprowadzenie
@@ -39,6 +39,10 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 - Stary i nowy kontakt księgowy muszą mieć uregulowane płatności.
 
 ## W praktyce
+
+> [!primary]
+> Zarządzanie kontaktami jest możliwe tylko między dwoma kontami OVHcloud znajdującymi się w tej samej strefie geograficznej.
+> Na przykład nie można zarządzać kontaktami między kontem w Europie i kontem w Kanadzie.
 
 ### Dostęp do zarządzania kontaktami <a name="gestion_des_contacts"></a>
 

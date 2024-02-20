@@ -1,7 +1,7 @@
 ---
 title: "Statistiken und Logs eines Webhostings einsehen"
 excerpt: "Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen"
-updated: 2023-11-20
+updated: 2024-02-13
 ---
 
 > [!primary]
@@ -23,9 +23,14 @@ Die Webserver-Protokolle und Website-Statistiken sind in Ihrem Webhosting inklus
 
 Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an, klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das gewünschte Webhosting aus.
 
-Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+Wählen Sie im linken Menü das betreffende Hosting aus und klicken Sie dann auf den Tab `Statistiken und Logs`{.action}.
 
-Dieser Tab besteht aus 3 Abschnitten. Der erste zeigt die **Statistiken** an, der zweite die **Website Logs** Ihres Webhostings, und der letzte ist für die **Verwaltung der Nutzer** bestimmt, die Zugriff auf die Statistiken haben.
+Dieser Tab besteht aus 4 Abschnitten:
+
+- **Statistiken der Seitenaufrufe**: Enthält Statistiken zu Ihrem Hosting.
+- **Logs der Website**: Zeigt die Rohdaten der Logs Ihres Hostings an.
+- **Infrastrukturstatistiken**: Zeigt grafische Statistiken an (HTTP- und SQL-Anfragen, FTP-Befehle etc.).
+- **Verwaltung der Nutzer**: Zeigt die Benutzer an, die Zugriff auf die Statistiken haben.
 
 ![Hosting](images/tab.png){.thumbnail}
 
@@ -59,7 +64,7 @@ Das **OVHcloud Web Statistics** Tool hilft Ihnen dabei, den Traffic der auf Ihre
 
 ![Hosting](images/ows-presentation.gif){.thumbnail}
 
-Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitte im linken Bereich aufgeteilt.
+Das Dashboard von OVHcloud Web Statistics enthält 7 Abschnitte:
 
 - Dashboard: Visualisiert den Traffic der Website auf Ihrem Webhosting.
 - Browsers: Zeigt ein Ranking der Webbrowser an, die am häufigsten für die Anzeige Ihrer Websites verwendet werden.
@@ -69,7 +74,7 @@ Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitte im linken Bereich 
 - Status: Zeigt Statistiken über Fehlschläge und Erfolge an, die anhand der zurückgegebenen HTTP-Codes ermittelt wurden.
 - FAQ: Öffnet den Bereich für häufig gestellte Fragen.
 
-Mit `Period selection` können Sie einen bestimmten Zeitraum auswählen.
+Im Feld `Period selection` oben rechts können Sie einen bestimmten Zeitraum auswählen.
 
 ### Logs
 

@@ -1,6 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail RoundCube'
-updated: 2024-02-13
+updated: 2024-02-20
 ---
 
 ## Objectif

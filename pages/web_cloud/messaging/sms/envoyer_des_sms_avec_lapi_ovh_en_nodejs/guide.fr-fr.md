@@ -36,7 +36,7 @@ Vous devez récupérer un répertoire ./node_modules/ovh/...
 Des identifiants sont nécessaires pour consommer l’API SMS. Ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
 
 Créez vos identifiants de Script (all keys at once) sur cette page :
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (cette url vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
+[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (cette url vous permet d'avoir automatiquement les bons droits pour les étapes décrites dans ce guide).
 
 ![création des tokens](images/img_2462.jpg){.thumbnail}
 
