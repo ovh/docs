@@ -23,10 +23,10 @@ Trois types de contacts existent:
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
-- Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
 - Disposer de droits suffisants  sur le service concerné.
-- Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).
-- Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail renseignée dans son profil.
+- Disposer d'un accès à l'adresse e-mail renseignée dans votre compte OVHcloud
+- Connaître l'adresse e-mail principale renseignée dans le compte OVHcloud du nouveau contact (pour qui vous réalisez la modification).
+- Le nouveau contact doit quant à lui disposer d'un accès à l'adresse e-mail principale renseignée dans son compte OVHcloud.
 - L'ancien et le nouveau contact facturation doivent être à jour de leurs règlements.
 
 ## En pratique
