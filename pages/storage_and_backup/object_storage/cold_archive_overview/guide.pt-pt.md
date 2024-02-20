@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Visão Geral (EN)
 excerpt: Discover the service, understand the capabilities and billing
-updated: 2023-01-29
+updated: 2024-02-20
 ---
 
 ## Objective
@@ -97,7 +97,7 @@ The time it takes to access data depends on its volume. For example, for a retri
 
 ### Compliance
 
-The service will be certified HDS and ISO 27001. You can follow these certifications on our public roadmap page : <https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3Astorage>
+The service is HDS and ISO 27001 certified.
 
 ### Low carbon consumption
 
