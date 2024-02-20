@@ -1,8 +1,7 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS"
-updated: 2024-01-23
-
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -16,9 +15,10 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 **Niniejszy przewodnik wyjaśnia, jak zabezpieczyć serwer oparty na GNU/Linux.**
 
 > [!warning]
-> OVHcloud świadczy usługi, za które jesteś odpowiedzialny w związku z ich konfiguracją i zarządzaniem. Jesteś więc odpowiedzialny za ich prawidłowe funkcjonowanie.
->
->Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub przedyskutuj problem z naszą społecznością użytkowników na stronie https://community.ovh.com/en/. OVHcloud nie może udzielić Ci wsparcia technicznego w tym zakresie.
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, bezpieczeństwo i odpowiedzialność należy do Ciebie.
+> Nie mamy dostępu do danych przechowywanych na tych maszynach i nie możemy być ich administratorem. Dlatego to do Ciebie należy codzienne zarządzanie oprogramowaniem i dbanie o bezpieczeństwo.
+> Udostępniamy ten przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+> Więcej informacji znajduje się w sekcji "Sprawdź również".
 >
 
 ## Wymagania początkowe
@@ -96,6 +96,27 @@ sudo systemctl restart sshd
 ```
 
 Powinno to wystarczyć do wdrożenia zmian. W przeciwnym razie zrestartuj serwer VPS (`~$ sudo reboot`).
+
+**Dla systemu Ubuntu 23.04 i nowszych wersji**
+
+W przypadku najnowszych wersji Ubuntu, konfiguracja SSH jest zarządzana w pliku `ssh.socket`.
+
+Aby zaktualizować port SSH, edytuj wiersz `Listenstream` w pliku konfiguracyjnym za pomocą wybranego edytora tekstu (`nano` użyty w tym przykładzie):
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Zapisz zmiany i wykonaj następujące polecenia:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Jeśli włączona jest zapora systemu operacyjnego, upewnij się, że zezwalasz na nowy port w regułach zapory.
 
 Pamiętaj, że podczas każdego zlecenia połączenia SSH z Twoim serwerem należy wskazać nowy port, na przykład:
 
@@ -205,7 +226,7 @@ Ważne jest, aby wiedzieć, że ogólne parametry będą brane pod uwagę tylko 
 Poniżej przedstawiamy przykładowe linie pod `[DEFAULT]`:
 
 ```console
-bantime  = 10m
+bantime = 10m
 maxretry = 5
 enabled = false
 ```
@@ -265,6 +286,8 @@ Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twoje
 [Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
 [Konfiguracja firewalla w systemie Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Konfiguracja firewalla w systemie Linux z systemem iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Konfiguracja rozwiązania Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 

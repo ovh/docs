@@ -1,8 +1,7 @@
 ---
 title: "Mettere in sicurezza un VPS"
 excerpt: "Scopri gli elementi di base per rendere sicuro il tuo VPS"
-updated: 2024-01-23
-
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -17,7 +16,9 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a muovere i primi passi nell’utilizzo del tuo VPS. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
+> Questa guida ti aiuta a muovere i primi passi nell’utilizzo del tuo VPS. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+> Per maggiori informazioni consulta la sezione "Per saperne di più".
 >
 
 ## Prerequisiti
@@ -96,6 +97,27 @@ sudo systemctl restart sshd
 ```
 
 Ciò dovrebbe essere sufficiente per attuare le modifiche. In caso contrario, riavvia il VPS (`~$ sudo reboot`).
+
+**Per Ubuntu 23.04 e versioni successive**
+
+Per le ultime versioni di Ubuntu, la configurazione SSH viene gestita nel file `ssh.socket`.
+
+Per aggiornare la porta SSH, modifica la riga `Listenstream` nel file di configurazione con un editor di testo a tua scelta (`nano` utilizzato in questo esempio):
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Salvare le modifiche ed eseguire i comandi seguenti:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Se è stato attivato il firewall del sistema operativo, assicurarsi di consentire la nuova porta secondo le regole del firewall.
 
 Ricordati di indicare la nuova porta ad ogni richiesta di connessione SSH al tuo server, ad esempio:
 
@@ -265,6 +287,8 @@ Tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio 
 [Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
 [Configura il firewall su Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configura il firewall su Linux con iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Configurare il Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
