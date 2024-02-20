@@ -25,7 +25,7 @@ Existen tres tipos de contactos:
 - Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - Tener los permisos necesarios sobre el servicio correspondiente.
-- Conocer el ID de cliente del nuevo contacto (para poder modificarlo).
+- Conocer la dirección de correo electrónico principal indicada en la cuenta de OVHcloud del nuevo contacto (para poder modificarlo).
 - El nuevo contacto debe tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - El antiguo y el nuevo contacto de facturación deben estar al corriente de pago.
 

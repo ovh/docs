@@ -25,7 +25,7 @@ There are three different contact types:
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - Access to the email address linked to any relevant customer account
 - Appropriate rights for the service concerned
-- The new contact’s NIC handle (the contact you want to add)
+- The new contact’s email address
 - No outstanding payments on billing contacts
 
 ## Instructions

@@ -27,7 +27,7 @@ The NIC handle is a personal username that you receive via email when you create
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 - Access to the email address linked to any relevant customer account
 - Appropriate rights for the service concerned
-- The new contact’s NIC handle (the contact you want to add)
+- The new contact’s email address
 - No outstanding payments on billing contacts
 
 ## Instructions
