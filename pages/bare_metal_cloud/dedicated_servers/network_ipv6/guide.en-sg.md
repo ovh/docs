@@ -203,15 +203,15 @@ You can test the IPv6 connectivity by running the commands shown below:
 ```sh
 ping6 -c 4 2001:4860:4860::8888
 
->>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
 
->>> --- 2001:4860:4860::8888 ping statistics ---
->>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
->>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
@@ -245,9 +245,9 @@ First, make a copy of the configuration file, so that you can revert at any time
 
 #### Step 3: Amend the network configuration file
 
-Amend the file by adding the necessarylines to it, do not modify any thing in the original file. Replace the generic elements (i.e. YOUR_IPV6 and IPv6_PREFIX) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+Amend the file by adding the necessarylines to it, do not modify any thing in the original file. Replace the generic elements (i.e. `YOUR_IPV6` and `IPv6_PREFIX`) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -258,7 +258,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 
 If you need to configure more IPv6 addresses, your configuration should look like this:
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -276,7 +276,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 
 Next, we amend the configuration file:
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -287,7 +287,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 
 For multiple IPV6 addresses:
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -309,18 +309,18 @@ Save your changes to the file and then restart the network or reboot your server
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
->>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
 
->>> --- 2001:4860:4860::8888 ping statistics ---
->>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
->>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
@@ -351,7 +351,7 @@ In our example, our file is named `51-cloud-init-ipv6.yaml`:
 
 Using a text editor, amend the `51-cloud-init-ipv6.yaml` file by adding the following lines to the file as shown in the example below.
 
-Replace the generic elements (i.e. YOUR_IPV6 and IPV6_PREFIX) as well as the network interface (if your server is not using **eno3**) with your specific values.
+Replace the generic elements (i.e. `YOUR_IPV6` and `IPV6_PREFIX`) as well as the network interface (if your server is not using **eno3**) with your specific values.
 
 ```yaml
 network:
@@ -440,7 +440,7 @@ If it is correct, apply it using the following command:
 
 You can test the IPv6 connectivity by running the command shown below:
 
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -481,7 +481,7 @@ First, make a copy of the configuration file, so that you can revert at any time
 
 #### Step 3: Amend the network configuration file
 
-In the open configuration file, add the following lines if they are missing. Replace the generic element (i.e. YOUR_IPv6, IPV6_GATEWAY and IPV6_PREFIX) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file. 
+In the open configuration file, add the following lines if they are missing. Replace the generic element (i.e. `YOUR_IPv6`, `IPV6_GATEWAY` and `IPV6_PREFIX`) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file. 
 
 ```console
 IPV6INIT=yes
@@ -540,7 +540,7 @@ You can also reboot your server to apply the changes.
 
 You can test the IPv6 connectivity by running the command shown below:
 
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -594,7 +594,7 @@ First, [put your server into rescue mode](/pages/bare_metal_cloud/dedicated_serv
 
 Next, use the template commands below to configure your IPv6 non-persistently, replacing ‘YOUR_IPV6’, ‘IPV6_PREFIX’ and 'IPV6_GATEWAY' with your own details:
 
-```bash
+```sh
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -602,7 +602,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Test your network again via a ping6, for example:
 
-```bash
+```sh
 ping6 ipv6.google.com
 ```
 If your server responds, it is likely that there is an error in one of the steps taken for your initial configuration.
