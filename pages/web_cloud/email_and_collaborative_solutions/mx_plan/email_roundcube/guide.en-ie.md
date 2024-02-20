@@ -1,13 +1,13 @@
 ---
-title: Using your email account via the RoundCube webmail interface
+title: Using your email account via the Roundcube webmail interface
 updated: 2024-02-20
 ---
 
 ## Objective
 
-With the OVHcloud MX Plan, you can send and receive emails from third-party software or via webmail. OVHcloud provides an online email service called RoundCube that allows you to access an email account via a web browser.
+With the OVHcloud MX Plan, you can send and receive emails from third-party software or via webmail. OVHcloud provides an online email service called Roundcube that allows you to access an email account via a web browser.
 
-**Find out how to use the RoundCube webmail interface for your OVHcloud email addresses**
+**Find out how to use the Roundcube webmail interface for your OVHcloud email addresses**
 
 ## Requirements
 
@@ -18,15 +18,15 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 
 **Summary**
 
-- [Logging in to RoundCube](#roundcube-connexion)
-- [RoundCube webmail main page](#general-interface)
+- [Logging in to Roundcube](#roundcube-connexion)
+- [Roundcube webmail main page](#general-interface)
     - [Folder management (left column)](#leftcolumn)
     - [List of emails received/sent (top window)](#topwindow)
         - [Display type](#topwindow-display)
         - [Actions on a selected email](#topwindow-action)
         - [Search for an emai](#topwindow-search)
     - [Email content (bottom window)](#lowerwindow)
-- [Configuring RoundCube interface preferences](#roundcube-settings)
+- [Configuring Roundcube interface preferences](#roundcube-settings)
     - [User Interface](#user-interface-settings)
     - [Mailbox View](#mail-view-settings)
     - [Displaying Messagess](#mail-display-settings)
@@ -48,13 +48,13 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 - [Rédaction d'un e-mail](#email-writing)
 - [Cas d'usages](#usecase)
 
-### Logging in to RoundCube <a name="roundcube-connexion"></a>
+### Logging in to Roundcube <a name="roundcube-connexion"></a>
 
 Go to the page <https://www.ovh.co.uk/mail/>. Enter your email address and password, then click `Login`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
-You will then be redirected to the RoundCube interface.
+You will then be redirected to the Roundcube interface.
 
 ![hosting](images/roundcube01.png){.thumbnail}
 
@@ -64,7 +64,7 @@ You will then be redirected to the RoundCube interface.
 >
 > To familiarise yourself with the **OWA** interface, please refer to our guide on [Using an email account in the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### RoundCube webmail main page <a name="general-interface"></a>
+### Roundcube webmail main page <a name="general-interface"></a>
 
 Once logged in to your email account, you have access to the main Roundcube interface, which consists of 3 zones:
 
@@ -156,9 +156,9 @@ On the right-hand side you can find shortcuts for the following functions:
 
 ![hosting](images/roundcube05.png){.thumbnail}
 
-### Configuring RoundCube interface preferences <a name="roundcube-settings"></a>
+### Configuring Roundcube interface preferences <a name="roundcube-settings"></a>
 
-The following sections in this guide correspond to the tabs that make up the `Preferences`{.action} section of the RoundCube `Settings`{.action}. Their description is not exhaustive.
+The following sections in this guide correspond to the tabs that make up the `Preferences`{.action} section of the Roundcube `Settings`{.action}. Their description is not exhaustive.
 
 ![hosting](images/roundcube06.png){.thumbnail}
 
@@ -172,7 +172,7 @@ The `Show next entry in the list after deletion or move` check box means that af
 
 #### Mailbox View <a name="mail-view-settings"></a>
 
-Set here the usability to view and act on emails. The `Layout` option allows you to arrange the 3 windows described in the [RoundCube webmail main interface section](#topwindow) .
+Set here the usability to view and act on emails. The `Layout` option allows you to arrange the 3 windows described in the [Roundcube webmail main interface section](#topwindow) .
 
 #### Displaying Messages <a name="mail-display-settings"></a>
 
@@ -191,7 +191,7 @@ Customise the arrangement of information in your address book here.
 
 #### Special Folders <a name="special-folder-settings"></a>
 
-RoundCube has 4 special folders: `Drafts`, `Sent`, `Spam`, `Deleted Items`.
+Roundcube has 4 special folders: `Drafts`, `Sent`, `Spam`, `Deleted Items`.
 
 We do not recommend changing them, but you can assign the behaviour of a special folder to another folder created later, using the drop-down menus.<br>
 **For example**, you can assign the `Drafts` behaviour to another folder that you created. The emails that will be saved there will be considered drafts until they are actually sent.
@@ -206,7 +206,7 @@ In this tab, you can optimise the space occupied by an email account. The option
 
 ### Managing identities and their signatures <a name="identity-signature"></a>
 
-In RoundCube, click `Settings`{.action} in the top bar, then `Identities`{.action} in the left column. "Identity" allows you to customise information sent to recipients such as the display name or a signature.
+In Roundcube, click `Settings`{.action} in the top bar, then `Identities`{.action} in the left column. "Identity" allows you to customise information sent to recipients such as the display name or a signature.
 
 ![hosting](images/roundcube07.png){.thumbnail}
 
@@ -231,7 +231,7 @@ By default, the `Signature` box is set to plain text. This format does not allow
 
 > [!warning]
 > 
-> If the signature is in HTML format, it will be necessary to switch to HTML mode for writing an email. You can enable this option by default for each email editing session, in the `Settings`{.action} section of the RoundCube interface.
+> If the signature is in HTML format, it will be necessary to switch to HTML mode for writing an email. You can enable this option by default for each email editing session, in the `Settings`{.action} section of the Roundcube interface.
 > 
 > Click `Preferences`{.action} in the left-hand column, then click `Composing Messages`{.action}. At **Compose HTML messages**, select `Always`.
 >
@@ -294,7 +294,7 @@ In the `Contacts`{.action} window in the top bar, click `Import`{.action} to ope
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-#### Export RoundCube Contacts <a name="export-contacts"></a>
+#### Export Roundcube Contacts <a name="export-contacts"></a>
 
 In the `Contacts`{.action} window in the top bar, click the down arrow to the right of the `Export`{.action} button.
 
@@ -309,7 +309,7 @@ You can choose between:
 
 This feature allows you to create response templates for composing an email.
 
-In RoundCube, click `Settings`{.action} in the top bar, then `Responses`{.action} in the left column.
+In Roundcube, click `Settings`{.action} in the top bar, then `Responses`{.action} in the left column.
 
 To add a response, click the `+`{.action} button at the bottom of the `Replies` column.
 

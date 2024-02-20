@@ -1,5 +1,5 @@
 ---
-title: Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail
+title: Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail
 updated: 2024-02-20
 ---
 
@@ -9,9 +9,9 @@ updated: 2024-02-20
 
 ## Ziel
 
-Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webmail-Interface versenden und empfangen. OVHcloud bietet einen E-Mail-Dienst namens RoundCube, der über  Webbrowser den Zugriff auf E-Mail-Accounts ermöglicht.
+Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webmail-Interface versenden und empfangen. OVHcloud bietet einen E-Mail-Dienst namens Roundcube, der über  Webbrowser den Zugriff auf E-Mail-Accounts ermöglicht.
 
-**Diese Anleitung erklärt, wie Sie RoundCube Webmail für Ihre OVHcloud E-Mail-Accounts verwenden.**
+**Diese Anleitung erklärt, wie Sie Roundcube Webmail für Ihre OVHcloud E-Mail-Accounts verwenden.**
 
 ## Voraussetzungen
 
@@ -22,15 +22,15 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 
 **Zusammenfassung**
 
-- [Einloggen in RoundCube Webmail](#roundcube-connexion)
-- [RoundCube Interface Hauptseite](#general-interface)
+- [Einloggen in Roundcube Webmail](#roundcube-connexion)
+- [Roundcube Interface Hauptseite](#general-interface)
     - [Ordnerverwaltung (linke Spalte)](#leftcolumn)
     - [Liste der empfangenen / gesendeten E-Mails (oberes Fenster)](#topwindow)
         - [Anzeigetyp](#topwindow-display)
         - [Aktion auf einer ausgewählten E-Mail](#topwindow-action)
         - [Nach E-Mails suchen](#topwindow-search)
     - [Inhalt einer E-Mail (unteres Fenster)](#lowerwindow)
-- [Einstellungen des RoundCube Interface konfigurieren](#roundcube-settings)
+- [Einstellungen des Roundcube Interface konfigurieren](#roundcube-settings)
     - [Benutzeroberfläche](#user-interface-settings)
     - [Postfachansicht](#mail-view-settings)
     - [Nachrichtendarstellung](#mail-display-settings)
@@ -52,13 +52,13 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 - [Rédaction d'un e-mail](#email-writing)
 - [Cas d'usages](#usecase)
 
-### Einloggen in RoundCube Webmail <a name="#roundcube-connexion"></a>
+### Einloggen in Roundcube Webmail <a name="#roundcube-connexion"></a>
 
 Gehen Sie auf die Seite <https://www.ovh.com/de/mail/>. Geben Sie eine E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Login`{.action}. 
 
 ![Hosting](images/webmail_login.png){.thumbnail}
 
-Sie werden dann zum RoundCube Interface weitergeleitet.
+Sie werden dann zum Roundcube Interface weitergeleitet.
 
 ![Hosting](images/roundcube01.png){.thumbnail}
 
@@ -68,9 +68,9 @@ Sie werden dann zum RoundCube Interface weitergeleitet.
 >
 > Um sich mit dem **OWA** Interface vertraut zu machen, lesen Sie unsere [OWA Anleitung](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### RoundCube Interface Hauptseite <a name="general-interface"></a>
+### Roundcube Interface Hauptseite <a name="general-interface"></a>
 
-Sobald Sie in Ihren E-Mail-Account eingeloggt sind, haben Sie Zugriff auf das RoundCube Hauptfenster, das aus 3 Zonen besteht:
+Sobald Sie in Ihren E-Mail-Account eingeloggt sind, haben Sie Zugriff auf das Roundcube Hauptfenster, das aus 3 Zonen besteht:
 
 - [**Linke Spalte**](#leftcolumn): Die Ordnerstruktur Ihres E-Mail-Accounts, bestehend aus Ordnern und Unterordnern. Der Hauptordner ist der `Posteingang`.
 
@@ -160,15 +160,15 @@ Rechts finden Sie Shortcuts für die folgenden Funktionen:
 
 ![Hosting](images/roundcube05.png){.thumbnail}
 
-### Einstellungen des RoundCube Interface konfigurieren <a name="roundcube-settings"></a>
+### Einstellungen des Roundcube Interface konfigurieren <a name="roundcube-settings"></a>
 
-Die nachfolgenden Abschnitte entsprechen den Tabs, die den Teil `Einstellungen`{.action} im Abschnitt `Einstellungen`{.action} von RoundCube bilden. Ihre Beschreibung ist nicht erschöpfend.
+Die nachfolgenden Abschnitte entsprechen den Tabs, die den Teil `Einstellungen`{.action} im Abschnitt `Einstellungen`{.action} von Roundcube bilden. Ihre Beschreibung ist nicht erschöpfend.
 
 ![Hosting](images/roundcube06.png){.thumbnail}
 
 #### Benutzeroberfläche <a name="user-interface-settings"></a>
 
-Hier legen Sie die verwendete `Sprache` des RoundCube Interface, die `Zeitzone`, die `Zeitformatierung` und die `Datumsformatierung` fest.
+Hier legen Sie die verwendete `Sprache` des Roundcube Interface, die `Zeitzone`, die `Zeitformatierung` und die `Datumsformatierung` fest.
 
 Die Option `Kurze Datumsanzeige` ermöglicht die Anzeige der Empfangs- und Versendedaten mit relativen Begriffen wie "Heute", "Gestern" etc.<br>
 
@@ -176,7 +176,7 @@ Das Feld `Den nächsten Eintrag nach Löschen oder Verschieben anzeigen` bedeute
 
 #### Postfachansicht <a name="mail-view-settings"></a>
 
-Definieren Sie hier die bevorzugte Art, um E-Mails anzuzeigen und zu bearbeiten. Die Option `Layout` erlaubt es, die 3 im Abschnitt [RoundCube Interface Hauptseite](#topwindow) beschriebenen Fenster neu anzuordnen.
+Definieren Sie hier die bevorzugte Art, um E-Mails anzuzeigen und zu bearbeiten. Die Option `Layout` erlaubt es, die 3 im Abschnitt [Roundcube Interface Hauptseite](#topwindow) beschriebenen Fenster neu anzuordnen.
 
 #### E-Mail-Anzeigeeinstellungen <a name="mail-display-settings"></a>
 
@@ -195,7 +195,7 @@ Personalisieren Sie hier die Anordnung der Informationen in Ihrem Adressbuch.
 
 #### Spezialordner <a name="special-folder-settings"></a>
 
-RoundCube verfügt über 4 Spezialordner: `Entwürfe`, `Gesendet`, `Spam`, `Gelöscht`.
+Roundcube verfügt über 4 Spezialordner: `Entwürfe`, `Gesendet`, `Spam`, `Gelöscht`.
 
 Wir raten dazu, diese nicht zu ändern, aber Sie können über die Drop-down-Menüs die Eigenschaften der Spezialordner neu erstellten Ordnern zuweisen.<br>
 Zum Beispiel können Sie die Eigenschaft `Entwürfe` einem Ordner zuweisen, den Sie erstellt haben. Die dort gespeicherten E-Mails gelten dann als Entwürfe bis sie tatsächlich versendet werden.
@@ -235,7 +235,7 @@ Standardmäßig ist das Feld `Signatur` auf reines Texformat eingestellt. Dieses
 
 > [!warning]
 > 
-> Wenn die Signatur im HTML-Format vorliegt, muss zur Erstellung einer E-Mail auf den HTML-Modus umgestellt werden. Sie können dies als Standardoption für jede E-Mail-Erstellung im Bereich `Einstellungen`{.action} des RoundCube Interface aktivieren.
+> Wenn die Signatur im HTML-Format vorliegt, muss zur Erstellung einer E-Mail auf den HTML-Modus umgestellt werden. Sie können dies als Standardoption für jede E-Mail-Erstellung im Bereich `Einstellungen`{.action} des Roundcube Interface aktivieren.
 >
 > Klicken Sie in der linken Spalte auf `Einstellungen`{.action} und dann auf `Nachrichtenerstellung`{.action}. Für den Eintrag **HTML-Nachrichten verfassen** wählen Sie `Immer`.
 >

@@ -1,5 +1,5 @@
 ---
-title: 'Webmail: guida all’utilizzo di RoundCube'
+title: 'Webmail: guida all’utilizzo di Roundcube'
 updated: 2024-02-20
 ---
 
@@ -9,9 +9,9 @@ updated: 2024-02-20
 
 ## Obiettivo
 
-Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un software di terze parti o tramite una webmail. OVHcloud fornisce un servizio di posta online chiamato RoundCube che permette l'accesso a un account email tramite un browser.
+Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un software di terze parti o tramite una webmail. OVHcloud fornisce un servizio di posta online chiamato Roundcube che permette l'accesso a un account email tramite un browser.
 
-**Come utilizzare la Webmail RoundCube per i tuoi indirizzi email OVHcloud**
+**Come utilizzare la Webmail Roundcube per i tuoi indirizzi email OVHcloud**
 
 ## Prerequisiti
 
@@ -22,8 +22,8 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
 
 **Sommario**
 
-- [Accedi alla Webmail RoundCube](#roundcube-connexion)
-- [Interfaccia generale della Webmail RoundCube](#general-interface)
+- [Accedi alla Webmail Roundcube](#roundcube-connexion)
+- [Interfaccia generale della Webmail Roundcube](#general-interface)
     - [Gestione delle cartelle (colonna di sinistra)](#leftcolumn)
     - [Lista delle email ricevute/inviate (finestra superiore)](#topwindow)
         - [Tipo di visualizzazione](#topwindow-display)
@@ -52,13 +52,13 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
 - [Redazione di un'email](#email-writing)
 - [casi d'uso](#usecase)
 
-### Accedi alla Webmail RoundCube <a name="roundcube-connexion"></a>
+### Accedi alla Webmail Roundcube <a name="roundcube-connexion"></a>
 
 Accedi alla pagina <https://www.ovh.com/it/mail/>. Inserisci un indirizzo email e la password e clicca su `Connessione`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
-Verrai reindirizzato all'interfaccia RoundCube.
+Verrai reindirizzato all'interfaccia Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
 
@@ -68,7 +68,7 @@ Verrai reindirizzato all'interfaccia RoundCube.
 >
 > Per familiarizzare con l'interfaccia **OWA**, consulta la nostra guida [Consultare il suo account email dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### Interfaccia generale della Webmail RoundCube <a name="general-interface"></a>
+### Interfaccia generale della Webmail Roundcube <a name="general-interface"></a>
 
 Una volta connesso al tuo account email, hai accesso alla finestra principale di Roundcube, composta da 3 zone:
 
@@ -176,7 +176,7 @@ La casella `Display next list entry after delete/move` significa che, dopo un'op
 
 #### Impaginazione messaggi <a name="mail-view-settings"></a>
 
-Definisci qui l'ergonomia per visualizzare e agire sulle email. L'opzione `Layout` permette di configurare le 3 finestre descritte nella sezione [Interfaccia generale della Webmail RoundCube](#topwindow).
+Definisci qui l'ergonomia per visualizzare e agire sulle email. L'opzione `Layout` permette di configurare le 3 finestre descritte nella sezione [Interfaccia generale della Webmail Roundcube](#topwindow).
 
 #### Visualizzazione messaggi <a name="mail-display-settings"></a>
 
