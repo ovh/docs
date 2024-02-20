@@ -2,6 +2,7 @@
 title: Cambiar la contraseña «root» de un VPS
 excerpt: Cómo cambiar la contraseña «root» de un VPS
 updated: 2023-06-26
+hidden: true
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un servidor dedicado Kimsufi, So you Start o Rise
 excerpt: 'Cómo empezar a utilizar un servidor dedicado Kimsufi, So you Start o Rise'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -95,16 +95,14 @@ Una vez finalizada la instalación, recibirá por correo electrónico las instru
 
 Utilice los siguientes ejemplos para conectarse a su servidor y sustituya la información de identificación por sus propias claves (la dirección IP y el nombre de referencia del servidor son intercambiables).
 
-**Ejemplo de root:**
-
 ```bash
-ssh root@IPv4_del_servidor
+ssh username@IPv4
 ```
 
-**Ejemplo de usuario preconfigurado:**
+**Ejemplo:**
 
 ```bash
-ssh ubuntu@nombre_de_referencia_del_servidor
+ssh ubuntu@169.254.10.250
 ```
 
 Para más información sobre SSH, consulte nuestra guía [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -210,6 +208,8 @@ Los servidores dedicados de OVHcloud incluyen un espacio de almacenamiento con c
 Para activar y utilizar la opción Backup Storage, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Más información
+
+[Configuración de las cuentas de usuario y del acceso root en un servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Proteger un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 

@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit einem Dedicated Server'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -101,16 +101,14 @@ Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Anweisun
 
 Verwenden Sie die folgenden Beispiele, um sich mit Ihrem Server zu verbinden, und ersetzen Sie die Login-Daten mit Ihren eigenen Werten (IP-Adresse und Serverreferenzname sind austauschbar).
 
-**Beispiel mit Root:**
-
 ```bash
-ssh root@IPv4_Ihres_Servers
+ssh username@IPv4
 ```
 
-**Beispiel mit einem vorkonfigurierten Benutzer:**
+**Beispiel:**
 
 ```bash
-ssh ubuntu@Referenzname_Ihres_Servers
+ssh ubuntu@169.254.10.250
 ```
 
 Weitere Informationen zu SSH finden Sie in unserer [Anleitung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -197,7 +195,9 @@ Zur Aktivierung und Nutzung des Backup Storage folgen Sie der [zugehörigen Anle
 
 ## Weiterführende Informationen
 
-[Einen Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+[Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
+[Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Rescue-Modus aktivieren und verwenden](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

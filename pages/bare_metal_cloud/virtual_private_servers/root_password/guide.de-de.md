@@ -2,6 +2,7 @@
 title: Root-Passwort auf einem VPS ändern
 excerpt: Erfahren Sie hier, wie Sie das Passwort des administrativen Zugangs zu Ihrem VPS ändern
 updated: 2023-06-26
+hidden: true
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Proteger un VPS"
 excerpt: "Descubra los elementos básicos que le permiten proteger su VPS"
-updated: 2024-01-23
+updated: 2024-02-19
 
 ---
 
@@ -103,61 +103,9 @@ Recuerde que deberá indicar el nuevo puerto en cada solicitud de conexión SSH 
 ssh username@IPv4_of_your_VPS -p NewPortNumber
 ```
 
-### Cambiar la contraseña del usuario root
-
-Le recomendamos encarecidamente que cambie la contraseña del usuario root para evitar que se quede en el valor predeterminado de un nuevo sistema. Para más información, consulte [esta guía](/pages/bare_metal_cloud/virtual_private_servers/root_password).
-
 ### Crear un usuario con permisos restringidos <a name="createuser"></a>
 
-Por lo general, las tareas que no requieran privilegios root deben realizarse a través de un usuario estándar. Para crear un nuevo usuario introduzca el siguiente comando:
-
-```bash
-sudo adduser NombreUsuarioPersonalizado
-```
-
-Introduzca la información solicitada por el sistema: contraseña, nombre, etc.
-
-El nuevo usuario podrá conectarse por SSH. Al establecer una conexión, utilice los datos de identificación especificados.
-
-Una vez que se haya conectado, introduzca el siguiente comando para realizar operaciones que requieran permisos root:
-
-```bash
-su root
-```
-
-Introduzca la contraseña cuando se le pida, y la conexión actual se cambiará al usuario root.
-
-### Desactivar el acceso al servidor a través del usuario root
-
-El usuario root se crea por defecto en los sistemas GNU/Linux. Es el nivel de acceso más alto a un sistema operativo.<br>
-No es recomendable (ni seguro) que solo se pueda acceder al VPS como root, ya que esta cuenta puede realizar operaciones irreversiblemente dañinas.
-
-Le recomendamos que desactive el acceso directo de los usuarios root mediante el protocolo SSH. No olvide crear otro usuario antes de seguir los pasos que se indican a continuación.
-
-Es necesario modificar el archivo de configuración SSH tal y como se explica más arriba:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Identifique la siguiente sección:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Sustituya **yes** por **no** en la línea `PermitRootLogin`.
-
-Reinicie el servicio SSH para que se apliquen los cambios:
-
-```bash
-sudo systemctl restart sshd
-```
-
-A continuación, las conexiones al servidor a través del usuario root (`ssh root@IPv4_of_your_VPS`) serán rechazadas.
+Por lo general, las tareas que no requieran privilegios root deben realizarse a través de un usuario estándar. Para más información, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Configurar el firewall interno (iptables)
 

@@ -133,13 +133,13 @@ Enregistrez les modifications et quittez l'éditeur. La nouvelle empreinte de cl
 Sous Windows, l'emplacement du fichier `known_hosts` et la ligne à supprimer sont également spécifiés, par exemple :
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Pour résoudre ce problème, utilisez la commande suivante avec l'adresse IP de votre serveur :
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 Vous pouvez également accéder à ce dossier, effectuer un clic droit sur le fichier et l'ouvrir avec l'application Bloc-notes.
@@ -169,6 +169,8 @@ Comme d’habitude, l’avertissement d’empreinte s’affiche à la première 
 Veuillez consulter la FAQ officielle et la documentation de PuTTY pour plus d'informations.
 
 ## Aller plus loin <a name="gofurther"></a>
+
+[Configuration des comptes utilisateurs et de l'accès root sur un serveur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Création de clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

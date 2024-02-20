@@ -1,7 +1,7 @@
 ---
 title: "Sustitución del par de claves SSH"
 excerpt: "Cómo restaurar el acceso al servidor en caso de pérdida de la clave privada generando un nuevo par de claves SSH"
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -58,7 +58,7 @@ Siga los pasos que se indican en la guía sobre el modo de rescate para conectar
 Cuando acceda a sus archivos, abra el archivo "*authorized_keys*" correspondiente en un editor de texto. Este archivo almacena las llaves SSH y se encuentra en la carpeta `home` del usuario conectado al servidor. (Sustituya "USER_NAME" por su nombre de usuario.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copie su nueva clave pública (creada en el paso 2) en el archivo. El contenido del archivo debería tener el siguiente formato:

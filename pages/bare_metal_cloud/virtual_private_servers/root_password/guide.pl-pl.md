@@ -2,6 +2,7 @@
 title: Zmiana hasła root na serwerze VPS
 excerpt: Sprawdź, jak zmienić hasło root
 updated: 2023-06-26
+hidden: true
 ---
 
 > [!primary]

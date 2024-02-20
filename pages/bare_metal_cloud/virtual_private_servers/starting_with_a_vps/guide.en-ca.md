@@ -1,7 +1,7 @@
 ---
 title: Getting started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2024-01-10
+updated: 2024-02-19
 ---
 
 ## Objective
@@ -157,11 +157,15 @@ ssh ubuntu@169.254.10.250
 
 You can use any third-party application compatible with **Open SSH** as well.
 
-Once connected, you can replace the predefined password for the standard user with a strong passphrase by using this command:
+Once connected, you can replace the predefined password for the current user with a better passphrase by using this command:
 
 ```bash
 passwd
 ```
+
+On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
+
+Type your current password and press `Enter`{.action}. Enter the new passphrase and type it again at the next prompt to confirm it.
 
 ```console
 Changing password for ubuntu.
@@ -170,6 +174,15 @@ New password:
 Retype new password: 
 passwd: password updated successfully
 ```
+
+> [!warning]
+> 
+> **Activating the root user account**
+>
+> It is not necessary to use the "root" user account to get started with administrating your server. This account has to be enabled first in the server OS in order to use it. Moreover, SSH connections with the user "root" are **disabled** by default as a security measure.
+> 
+Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 **We recommend the following steps to proceed**:
 
@@ -182,16 +195,6 @@ passwd: password updated successfully
 Please note that if you have selected a **distribution with application** (Plesk, cPanel, Docker), generic security measures might not to your system. We recommend to refer to our guides [First steps with preinstalled applications](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) and [Deploying cPanel on a VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), as well as the official documentation of the respective publisher.
 >
 
-#### Enabling root logins
-
-> [!warning]
-> 
-> Connecting with the "root" user is disabled by default as a security measure. If you want to permit these connections, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enabling-root-login).
->
-
-#### Root password
-
-To change or update your "root" password, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
 
 ### Connecting to your Windows VPS
 

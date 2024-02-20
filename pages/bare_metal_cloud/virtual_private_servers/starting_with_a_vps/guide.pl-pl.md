@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2024-01-10
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -161,11 +161,15 @@ ssh ubuntu@169.254.10.250
 
 Możesz również korzystać z dowolnej aplikacji innej firmy, która jest kompatybilna z **Open SSH**.
 
-Po zalogowaniu możesz zmienić predefiniowane hasło standardowego użytkownika na silne hasło, używając tego polecenia:
+Po zalogowaniu się możesz zmienić predefiniowane hasło bieżącego użytkownika na silne hasło, używając tego polecenia:
 
 ```bash
 passwd
 ```
+
+W dystrybucji GNU/Linux **wiersz poleceń nie będzie wyświetlał wpisów klawiaturowych**.
+
+Wpisz aktualne hasło i naciśnij przycisk `Enter`{.action}. Wprowadź nowe hasło i wpisz je ponownie w następnym monicie, aby je potwierdzić.
 
 ```console
 Changing password for ubuntu.
@@ -174,6 +178,15 @@ New password:
 Retype new password: 
 passwd: password updated successfully
 ```
+
+> [!warning]
+> 
+> **Aktywacja konta użytkownika root**
+>
+> Nie musisz używać konta użytkownika "root", aby rozpocząć administrowanie serwerem. Aby można było używać tego konta, należy je najpierw włączyć w systemie operacyjnym serwera. Ponadto, ze względów bezpieczeństwa, połączenia SSH z użytkownikiem "root" są domyślnie **wyłączone**.
+> 
+O ile nie określono inaczej, wszystkie operacje administracyjne opisane w dokumentacji mogą być przeprowadzane przy użyciu domyślnego konta użytkownika, tzn. poprzez wpisanie `sudo` po odpowiednim poleceniu. Więcej informacji na ten temat znajdziesz w przewodniku [Konfiguracja kont użytkowników i dostępu root na serwerze](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 **Wykonaj następujące czynności**:
 
@@ -185,17 +198,6 @@ passwd: password updated successfully
 >
 Należy pamiętać, że w przypadku wyboru **dystrybucji z aplikacją** (Plesk, cPanel, Docker) ogólne środki bezpieczeństwa mogą nie mieć zastosowania do Twojego systemu. Zapoznaj się z przewodnikami Pierwsze [kroki z wstępnie zainstalowanymi](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) aplikacjami i [wdrażaj cPanel na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), a także z oficjalną dokumentacją producenta.
 >
-
-#### Aktywacja połączeń root
-
-> [!warning]
->
-> Połączenie z użytkownikiem "root" jest domyślnie wyłączone ze względów bezpieczeństwa. Jeśli chcesz zezwolić na te połączenia, zapoznaj się z instrukcjami zawartymi w [tym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/root_password#enable-root-login).
->
-
-#### Aktualizacja hasła root
-
-Aby zmienić lub zaktualizować hasło "root", zapoznaj się z instrukcjami zawartymi w [tym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/root_password).
 
 ### Łączenie z serwerem VPS Windows
 

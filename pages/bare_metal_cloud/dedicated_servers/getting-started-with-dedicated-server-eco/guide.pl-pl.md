@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise'
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego Kimsufi, So You Start lub Rise'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -98,13 +98,13 @@ Użyj poniższych przykładów, aby połączyć się z serwerem i zastąp dane i
 **Przykład z root:**
 
 ```bash
-ssh root@IP_Twojego_serwera
+ssh username@IPv4
 ```
 
-**Przykład dla wstępnie skonfigurowanego użytkownika:**
+**Przykład:**
 
 ```bash
-ssh ubuntu@nazwa_serwera
+ssh ubuntu@169.254.10.250
 ```
 
 Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)".
@@ -210,6 +210,8 @@ Serwery dedykowane OVHcloud dysponują przestrzenią dyskową z kontrolowanym do
 Aby włączyć i korzystać z opcji Backup Storage, zapoznaj się [z tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Sprawdź również
+
+[Konfiguracja kont użytkowników i dostępu root na serwerze](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Zabezpieczanie serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 

@@ -2,6 +2,7 @@
 title: Modificare la password di root su un VPS
 excerpt: Come modificare la password dell’utente root sui VPS
 updated: 2023-06-26
+hidden: true
 ---
 
 > [!primary]

@@ -2,6 +2,7 @@
 title: Changer le  mot de passe root sur un VPS
 excerpt: Découvrez ici comment modifier le mot de passe root d’un VPS
 updated: 2023-06-26
+hidden: true
 ---
 
 ## Objectif

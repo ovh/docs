@@ -1,7 +1,7 @@
 ---
 title: Einen dedizierten Server absichern
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres Dedicated Server
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -102,63 +102,12 @@ username@IPv4_des_servers -p PortNummer
 
 > [!warning]
 >
-> Bitte beachten Sie, dass die Änderung des Standardports von SSH oder einem anderen Protokoll ein mögliches Risiko darstellt. Es kann vorkommen, dass bestimmte Dienste nicht ohne Standardport konfiguriert werden können und nicht mehr funktionieren, wenn der Port bearbeitet wird.
+> Beachten Sie, dass die Änderung des Standardports von SSH oder einem anderen Protokoll das Risiko beinhaltet, dass bestimmte Dienste nur mittels Standardport konfiguriert werden können und nicht mehr funktionieren, wenn der Port bearbeitet wird.
 >
 
-### Passwort des Root-Benutzers ändern
+### Erstellen eines Benutzers mit eingeschränkten Rechten
 
-Es wird dringend empfohlen, das Passwort des Root-Benutzers abzuändern, damit es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
-
-### Anlegen eines Benutzers mit eingeschränkten Rechten
-
-Im Allgemeinen sollten Aufgaben, die keine Root-Rechte erfordern, über einen Standardbenutzer ausgeführt werden. Sie können einen Benutzer mit folgendem Befehl erstellen:
-
-```bash
-sudo adduser Benutzername
-```
-
-Geben Sie dann die vom System angeforderten Informationen (Passwort, Name etc.) ein.
-
-Der neue Benutzer kann sich via SSH einloggen. Verwenden Sie beim Login die eingegebenen Daten.
-
-Wenn Sie mit diesen Login-Daten in Ihrem System eingeloggt sind, geben Sie folgenden Befehl ein, wenn Sie Operationen ausführen möchten, die Administrator-Rechte erfordern:
-
-```bash
-su root
-```
-
-Geben Sie das Passwort ein, wenn Sie dazu aufgefordert werden, und die aktive Verbindung wird auf den Root-Benutzer umgestellt.
-
-### Deaktivierung des Serverzugangs als Root
-
-Der Root-Benutzer wird standardmäßig auf GNU/Linux-Systemen eingerichtet. Root-Zugriff bedeutet, dass alle Berechtigungen für ein Betriebssystem vorliegen. Es wird nicht empfohlen und kann sogar gefährlich werden, Ihren Server ausschließlich über den Root-Zugriff zugänglich zu machen, da dieser Account irreversible Operationen durchführen kann.
-
-Wir empfehlen Ihnen, den direkten Benutzerzugang als Root über das SSH-Protokoll zu deaktivieren. Denken Sie daran, einen anderen Benutzer zu erstellen, bevor Sie die folgenden Schritte ausführen.
-
-Öffnen Sie die SSH-Konfigurationsdatei zum Bearbeiten wie oben beschrieben:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Lokalisieren Sie folgenden Abschnitt:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Ersetzen Sie **yes** mit **no** in der Zeile `PermitRootLogin`.
-
-Damit diese Änderung berücksichtigt wird, müssen Sie den SSH-Dienst neu starten:
-
-```bash
-systemctl restart sshd
-```
-
-Danach werden Verbindungsversuche zu Ihrem Server über den Root-Benutzer (`ssh root@IPv4_server`) abgelehnt.
+Im Allgemeinen sollten Aufgaben, die keine Root-Rechte erfordern, über einen Standardbenutzer ausgeführt werden. Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Konfiguration der internen Firewall (iptables)
 

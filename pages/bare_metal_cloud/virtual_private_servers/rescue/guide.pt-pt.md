@@ -1,7 +1,7 @@
 ---
 title: Ativar e utilizar o modo rescue num VPS
 excerpt: Descubra como utilizar o modo rescue OVHcloud para solucionar problemas com o seu VPS e efetuar verificações do sistema
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -41,10 +41,6 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 ## Instruções
 
 ### Ativação do modo rescue
-
-> [!warning]
-> Tenha em conta que, se tiver definido uma chave SSH predefinida na sua Área de Cliente, não receberá uma palavra-passe root quando reiniciar um servidor em modo rescue. Neste caso, tem de desativar a chave SSH predefinida antes de reiniciar o servidor em modo rescue. Para isso, consulte esta [secção](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) do nosso guia sobre a utilização de chaves SSH.
->
 
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
@@ -108,20 +104,16 @@ No modo rescue, `sda` é o disco em modo rescue e `sda1` é a partição de back
 
 Neste exemplo, o disco principal do VPS é `sdb` e a partição do sistema é `sdb1` (indicada pelo tamanho).
 
-Monte esta partição com os seguintes comandos:
+Monte esta partição com o seguinte comando:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Os seus ficheiros estão agora acessíveis a partir do ponto de montagem `/mnt/sdb1`:
+Os seus ficheiros estão agora acessíveis a partir do ponto de montagem `/mnt`:
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -137,7 +129,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 No entanto, antes de poder manipular esta partição, deve abri-la para um acesso de escrita, o que pode fazer com o seguinte comando:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 Agora já pode aplicar alterações ao seu sistema, por exemplo [redefinir palavras-passe e chaves SSH](#gofurther).
@@ -158,6 +150,8 @@ Se ocorrer um erro ao reiniciar um VPS, efetue estes passos:
 ## Quer saber mais?
 
 [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Recuperar o acesso ao servidor em caso de perda da palavra-passe de utilizador](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Substituir um par de chaves SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

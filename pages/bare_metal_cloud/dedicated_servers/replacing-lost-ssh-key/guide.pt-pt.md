@@ -1,7 +1,7 @@
 ---
 title: "Substituição do par de chaves SSH"
 excerpt: "Saiba como restaurar o acesso ao servidor em caso de perda da sua chave privada, gerando um novo par de chaves SSH"
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -58,7 +58,7 @@ Siga os passos indicados no manual sobre o modo rescue para aceder ao servidor e
 Quando tiver acesso aos seus ficheiros, abra o ficheiro "authorized_keys" em causa num editor de texto. Este ficheiro armazena as chaves SSH e encontra-se na pasta `home` do utilizador ligado ao seu servidor. (Substitua "USER_NAME" pelo seu nome de utilizador)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copie a sua nova chave pública (criada na etapa 2) no ficheiro. O conteúdo do ficheiro deverá ser o seguinte exemplo:
