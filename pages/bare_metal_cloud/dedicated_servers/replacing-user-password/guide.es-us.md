@@ -27,7 +27,7 @@ En ese caso, puede conectarse a su servidor a través del modo de rescate de OVH
 - Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 > [!primary]
-> Esta guía no se aplica a las instalaciones de **Windows** Server. Consulte nuestras guías "[Cómo cambiar la contraseña de administrador en un servidor dedicado Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)" y "[Cómo cambiar la contraseña de administrador en un VPS Windows](/pages/virtual_private_servers/resetting_a_windows_password)".
+> Esta guía no se aplica a las instalaciones de **Windows** Server. Consulte nuestras guías "[Cómo cambiar la contraseña de administrador en un servidor dedicado Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)" y "[Cómo cambiar la contraseña de administrador en un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
 >
 
 ## Procedimiento
@@ -93,7 +93,7 @@ Ya puede acceder al servidor con su nueva contraseña.
 
 ## Más información
 
-[Crear y utilizar llaves SSH](/pages/bare_metal_cloud/creating-ssh-keys-dedicated)
+[Crear y utilizar llaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Modo de rescate para un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

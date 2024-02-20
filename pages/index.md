@@ -230,6 +230,7 @@
             + [How to recover server access if your user password is lost](bare_metal_cloud/dedicated_servers/replacing-user-password)
             + [Changing the admin password on a Windows server](bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)
             + [Replacing an SSH key pair](bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
+            + [Changing your root password on a VPS](bare_metal_cloud/virtual_private_servers/root_password)
         + [Advanced usage](bare-metal-cloud-virtual-private-servers-advanced-usage)
             + [Deploying cPanel on a VPS](bare_metal_cloud/virtual_private_servers/cpanel)
             + [Automated Backup - Kernel panic (cPanel)](bare_metal_cloud/virtual_private_servers/cpanel_snapshot)
