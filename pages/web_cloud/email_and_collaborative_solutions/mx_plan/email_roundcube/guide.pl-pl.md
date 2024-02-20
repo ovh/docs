@@ -335,6 +335,22 @@ Na górnym pasku dostępne są następujące operacje:
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
+## Przykłady zastosowania <a name="usecase"></a>
+
+### Weryfikacja żądania nie powiodła się
+
+Przy próbie dostępu do interfejsu Webmail Roundcube pojawi się następujący komunikat:
+
+"Konsola
+NIEPOWODZENIE WERYFIKACJI ŻĄDANIA
+Aby zapewnić ochronę, dostęp do tego zasobu jest chroniony przed atakami CSFR.
+Jeśli to widzisz, prawdopodobnie nie wylogowałeś się przed zamknięciem aplikacji sieci Web.
+Aby kontynuować, konieczna jest interakcja z człowiekiem.
+Skontaktuj się z administratorem serwera.
+"
+
+Jak wskazano w wiadomości, Twoje konto e-mail jest uważane za już zalogowane. W tym przypadku mówimy o "sesji". Oznacza to, że Twoje konto e-mail jest już używane w oczach serwera e-mail i że poprzednia sesja musi zostać zamknięta. Upewnij się, że Twoje konto e-mail nie zostało jeszcze otwarte w interfejsie Roundcube. Wyczyść również dane z pamięci cache w przeglądarce internetowej.
+
 ## Sprawdź również
 
 [Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
