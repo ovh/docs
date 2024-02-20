@@ -44,7 +44,7 @@ No olvide consultar también nuestras guías de primeros pasos:
 >
 > Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas sobre la administración, el uso o la implementación de servicios en un servidor.
 >
-v
+
 <a name="step1"></a>
 
 ### Paso 1: reiniciar el servidor en modo de rescate
