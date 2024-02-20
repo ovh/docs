@@ -1,8 +1,7 @@
 ---
-title: 'Sécuriser un VPS'
-excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre VPS'
-updated: 2024-01-23
-
+title: "Sécuriser un VPS"
+excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre VPS"
+updated: 2024-02-14
 ---
 
 ## Objectif
@@ -12,15 +11,16 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 **Ce guide vous propose quelques conseils généraux pour sécuriser un serveur basé sur GNU/Linux.**
 
 > [!warning]
->OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
->
->Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un prestataire de services spécialisé et/ou discuter du problème avec notre communauté d'utilisateurs sur https://community.ovh.com/. OVHcloud ne peut pas vous fournir de support technique à cet égard.
+> OVHcloud vous met à disposition des services dont la configuration, la sécurité et la responsabilité vous appartiennent.
+> En effet, nous n'avons pas accès aux données hébergés sur ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
+> Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
 - Un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud
-- Avoir un accès administrateur (root) à votre serveur via SSH
+- Avoir un accès administrateur (*root*) à votre serveur via SSH
 
 ## En pratique
 
@@ -40,7 +40,7 @@ Faire en sorte que votre distribution ou système d'exploitation est à jour est
 
 Cette mise à jour passera par deux étapes.
 
-- La mise à jour de la liste des paquets :
+- La mise à jour de la liste des paquets :
 
 ```bash
 sudo apt update
@@ -127,7 +127,7 @@ Il est fortement recommandé de modifier le mot de passe de l'utilisateur root a
 
 ### Créer un utilisateur avec des droits restreints <a name="createuser"></a>
 
-En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
+En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
 
 ```bash
 sudo adduser NomUtilisateurPersonnalisé
@@ -169,7 +169,7 @@ StrictModes yes
 
 Remplacez **yes** par **no** sur la ligne `PermitRootLogin`.
 
-Pour que cette modification soit prise en compte, vous devez redémarrer le service SSH :
+Pour que cette modification soit prise en compte, vous devez redémarrer le service SSH :
 
 ```bash
 sudo systemctl restart sshd
@@ -179,7 +179,7 @@ Par la suite, les connexions à votre serveur via l'utilisateur root (`ssh root@
 
 ### Configurer le pare-feu interne (iptables)
 
-Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
+Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
 
 ```bash
 iptables -L
@@ -194,7 +194,7 @@ Il est alors recommandé de créer et d’ajuster à votre utilisation des règl
 Fail2ban est un framework de prévention contre les intrusions dont le but est de bloquer les adresses IP depuis lesquelles des bots ou des attaquants tentent de pénétrer dans votre système.<br>
 Ce paquet est recommandé, voire indispensable dans certains cas, pour protéger votre serveur des attaques de types *Brute Force* ou *Denial of Service*.
 
-Pour installer le package logiciel, utilisez la commande suivante :
+Pour installer le package logiciel, utilisez la commande suivante :
 
 ```bash
 sudo apt install fail2ban
@@ -284,6 +284,8 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
+[Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
+
 [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

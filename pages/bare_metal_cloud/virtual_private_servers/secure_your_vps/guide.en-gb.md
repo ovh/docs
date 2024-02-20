@@ -1,15 +1,16 @@
 ---
-title: Securing a VPS
-excerpt: Find out the basics of securing your VPS
-updated: 2023-02-24
+title: 'Securing a VPS'
+excerpt: 'Find out the basics of securing your VPS'
+updated: 2024-02-20
 ---
 
 ## Objective
 
-When you order your VPS, you can choose a distribution or operating system to pre-install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures which ensure the security and stability of your system.
+When you order your VPS, you can choose a distribution or operating system to pre-install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures to ensure the security and stability of your system.
 
 **This guide provides some general tips for securing a GNU/Linux-based server.**
 
+ 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 > 
@@ -279,6 +280,8 @@ You can find all information on the available backup solutions for your service 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 [Configuring the firewall on Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 

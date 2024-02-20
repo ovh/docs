@@ -2,7 +2,6 @@
 title: "Sécuriser un VPS"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre VPS"
 updated: 2024-02-14
-
 ---
 
 ## Objectif
@@ -284,6 +283,8 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
