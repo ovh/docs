@@ -1,6 +1,6 @@
 ---
 title: Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail
-updated: 2024-02-20
+updated: 2023-12-15
 ---
 
 > [!primary]
