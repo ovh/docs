@@ -203,8 +203,6 @@ You can test the IPv6 connectivity by running the commands shown below:
 ```sh
 ping6 -c 4 2001:4860:4860::8888
 
-ping6 -c 4 2001:4860:4860::8888
-
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
