@@ -98,7 +98,7 @@ Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ de
 
 Für die neuesten Ubuntu Versionen wird die SSH-Konfiguration nun in der Datei `ssh.socket` verwaltet.
 
-Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `Listenstream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
+Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `ListenStream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
 
 ```console
 [Socket]
