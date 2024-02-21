@@ -20,7 +20,7 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 
 ## In der praktischen Anwendung
 
-**Zusammenfassung**
+**Inhaltsübersicht**
 
 - [Einloggen in Roundcube Webmail](#roundcube-connexion)
 - [Roundcube Interface Hauptseite](#general-interface)
@@ -33,8 +33,8 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 - [Einstellungen des Roundcube Interface konfigurieren](#roundcube-settings)
     - [Benutzeroberfläche](#user-interface-settings)
     - [Postfachansicht](#mail-view-settings)
-    - [Nachrichtendarstellung](#mail-display-settings)
-    - [E-Mail-Schreiben](#mail-writing-settings)
+    - [E-Mail-Anzeigeeinstellungen](#mail-display-settings)
+    - [Nachrichtenerstellung](#mail-writing-settings)
     - [Kontakte](#contacts-settings)
     - [Spezialordner](#special-folder-settings)
     - [Servereinstellungen](#server-settings)
@@ -49,8 +49,8 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 - [Schnellantworten (Templates](#responses)
 - [Auto-Responder hinzufügen](#automatic-respond)
 - [Passwort Ihres E-Mail-Accounts ändern](#password)
-- [Rédaction d'un e-mail](#email-writing)
-- [Cas d'usages](#usecase)
+- [E-Mail verfassen](#email-writing)
+- [Anwendungsfälle](#usecase)
 
 ### Einloggen in Roundcube Webmail <a name="#roundcube-connexion"></a>
 
@@ -368,7 +368,7 @@ Im oberen Menü sind folgende Aktionen verfügbar:
 
 ![Hosting](images/roundcube13.png){.thumbnail}
 
-### Einsatzzwecke <a name="usecase"></a>
+### Anwendungsfälle <a name="usecase"></a>
 
 ### Fehler bei der Anforderungsüberprüfung
 
@@ -382,7 +382,7 @@ Um fortzufahren, ist nun eine menschliche Interaktion erforderlich.
 Bitte wenden Sie sich an den Administrator Ihres Servers.
 ```
 
-Wie in der Nachricht angegeben, wird Ihr E-Mail-Account als bereits verbunden betrachtet. Dies bedeutet, dass Ihr E-Mail-Account für den E-Mail-Server bereits verwendet wird und dass diese vorherige Session geschlossen werden muss. Stellen Sie sicher, dass Ihr E-Mail-Account nicht bereits bei roundcube geöffnet ist. Auch die zwischengespeicherten Daten in Ihrem Webbrowser leeren.
+Wie in der Nachricht angegeben, wird bei Ihrem E-Mail-Account bereits ein Login registriert. Dies bedeutet, dass Ihr E-Mail-Account vom E-Mail-Server bereits verwendet wird und dass diese Sitzung zuerst geschlossen werden muss. Stellen Sie sicher, dass Ihr E-Mail-Account nicht bereits in Roundcube geöffnet ist. Leeren Sie auch den Cache (die zwischengespeicherten Daten) in Ihrem Browser.
 
 ## Weiterführende Informationen
 
