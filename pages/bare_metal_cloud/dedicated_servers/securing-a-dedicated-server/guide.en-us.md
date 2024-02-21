@@ -1,7 +1,7 @@
 ---
 title: Securing a dedicated server
 excerpt: Find out the basics of securing your dedicated server
-updated: 2024-01-23
+updated: 2024-02-20
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Proteger un servidor dedicado"
 excerpt: "Descubra los elementos básicos que le permiten proteger un servidor dedicado"
-updated: 2024-01-23
+updated: 2024-02-20
 ---
 
 > [!primary]
