@@ -1,7 +1,7 @@
 ---
 title: "Proteger um servidor dedicado"
 excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
-updated: 2024-02-19
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -97,6 +97,27 @@ sudo systemctl restart sshd
 
 Isto deveria ser suficiente para aplicar as alterações. Caso contrário, reinicie o servidor (`~$ sudo reboot`).
 
+**Para Ubuntu 23.04 e versões posteriores**
+
+Para as últimas versões de Ubuntu, a configuração SSH é agora gerida no ficheiro `ssh.socket`.
+
+Para atualizar a porta SSH, edite a linha `Listenstream` no ficheiro de configuração com um editor de texto à sua escolha (`nano` utilizado neste exemplo):
+
+```consola
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Guarde as alterações e execute os seguintes comandos:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Se tiver ativado a firewall do sistema operativo, certifique-se de que a nova porta está autorizada nas regras da firewall.
+
 Lembre-se de que deve indicar a nova porta a cada pedido de ligação SSH ao seu servidor, por exemplo:
 
 ```bash
@@ -158,7 +179,7 @@ Os parâmetros `[DEFAULT]` são globais e aplicar-se-ão a todos os serviços de
 Tomemos como exemplo estas linhas em `[DEFAULT]`:
 
 ```console
-bantime  = 10m
+bantime = 10m
 maxretry = 5
 enabled = false
 ```

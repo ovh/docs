@@ -1,7 +1,7 @@
 ---
 title: Einen dedizierten Server absichern
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres Dedicated Server
-updated: 2024-02-19
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -93,6 +93,27 @@ systemctl restart sshd
 ```
 
 Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den Server neu starten (`~$ sudo reboot`).
+
+**Für Ubuntu 23.04 und höher**
+
+Für die neuesten Ubuntu Versionen wird die SSH-Konfiguration nun in der Datei `ssh.socket` verwaltet.
+
+Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `Listenstream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Speichern Sie die Änderungen, und führen Sie die folgenden Befehle aus:
+
+```console
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Wenn Sie die Betriebssystemfirewall aktiviert haben, stellen Sie sicher, dass der neue Port in den Firewallregeln zugelassen ist.
 
 Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine SSH-Verbindung mit Ihrem Server aufbauen, zum Beispiel:
 

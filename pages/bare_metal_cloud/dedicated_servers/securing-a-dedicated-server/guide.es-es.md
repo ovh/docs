@@ -1,7 +1,7 @@
 ---
 title: "Proteger un servidor dedicado"
 excerpt: "Descubra los elementos básicos que le permiten proteger un servidor dedicado"
-updated: 2024-02-19
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -96,6 +96,27 @@ sudo systemctl restart sshd
 ```
 
 Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinicie el servidor (`~$ sudo reboot`).
+
+*Para Ubuntu 23.04 y versiones posteriores**
+
+Para las últimas versiones de Ubuntu, la configuración SSH se gestiona ahora en el archivo /ssh.socket`.
+
+Para actualizar el puerto SSH, edite la línea `Listenstream` en el archivo de configuración con un editor de texto de su elección (`nano` utilizado en este ejemplo):
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Guarde los cambios y ejecute los siguientes comandos:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Si ha activado el cortafuegos del sistema operativo, asegúrese de autorizar el nuevo puerto en las reglas del cortafuegos.
 
 Recuerde que deberá indicar el nuevo puerto en cada solicitud de conexión SSH al servidor, por ejemplo:
 
