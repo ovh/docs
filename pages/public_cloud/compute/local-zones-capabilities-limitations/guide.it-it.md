@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funzionalità, capacità e limiti
 excerpt: Scopri le funzionalità, le capacità e i limiti attuali delle istanze Local Zones
-updated: 2024-02-08
+updated: 2024-02-21
 ---
 
 > [!primary]
@@ -12,7 +12,11 @@ updated: 2024-02-08
 
 > [!primary]
 >
-> Le istanze Local Zone sono al momento implementate solo in versione beta. In caso di difficoltà e/o per discutere della propria esperienza con altri utenti, è possibile contattarci all'indirizzo Discord <https://discord.gg/ovhcloud> oppure contattare la nostra Community: <https://community.ovh.com/en/>.
+> Le istanze Local Zone sono al momento implementate solo in versione beta.
+> In caso di difficoltà, contatta il supporto OVHcloud creando un ticket dal tuo [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
+> Per condividere la tua esperienza con altri utenti, accedi a Discord <https://discord.gg/ovhcloud> o alla nostra Community: <https://community.ovh.com/en/>.
+
+In caso di difficoltà e/o per discutere della propria esperienza con altri utenti, è possibile contattarci all'indirizzo Discord <https://discord.gg/ovhcloud> oppure contattare la nostra Community: <https://community.ovh.com/en/>.
 > 
 
 Le istanze Local Zones sono un'estensione delle regioni che avvicinano i servizi OVHcloud a luoghi specifici, offrendo latenza ridotta e performance migliorate per le applicazioni.
