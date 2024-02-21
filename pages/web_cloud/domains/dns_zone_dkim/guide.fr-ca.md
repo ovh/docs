@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -181,7 +181,7 @@ Assurez-vous également que le nom de domaine que vous souhaitez utiliser pour v
 
 ![email](images/dns-dkim-domain.png){.thumbnail}
 
-Pour configurer le DKIM, rendez-vous sur le site <https://api.ovh.com/console/>, connectez-vous à l'aide du bouton `Login`{.action} en haut à droite et renseignez vos identifiants OVHcloud.
+Pour configurer le DKIM, rendez-vous sur le site <https://ca.api.ovh.com/console/>, connectez-vous à l'aide du bouton `Login`{.action} en haut à droite et renseignez vos identifiants OVHcloud.
 
 > Appuyez-vous sur notre guide [« Découvrez comment utiliser les API OVHcloud »](/pages/manage_and_operate/api/first-steps) si vous n'avez jamais utilisé les API.
 

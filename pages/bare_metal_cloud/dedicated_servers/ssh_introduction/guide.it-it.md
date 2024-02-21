@@ -137,13 +137,13 @@ Salva le modifiche e lascia l'editor. La nuova impronta della chiave deve essere
 Con Windows, sono specificati anche la posizione del file `known_hosts` e la riga da eliminare, ad esempio:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Per risolvere il problema, utilizza il comando seguente con l’indirizzo IP del tuo server:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 È inoltre possibile accedere alla cartella, fare clic con il pulsante destro del mouse sul file e aprirlo con Blocco note.
@@ -172,7 +172,9 @@ Come al solito, al primo collegamento viene visualizzato l’avviso di presenza 
 
 Per maggiori informazioni, consulta le FAQ ufficiali e la documentazione di PuTTY.
 
-## Spingiti oltre <a name="gofurther"></a>
+## Per saperne di più <a name="gofurther"></a>
+
+[Configurazione degli account utente e dell'accesso root su un server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Crea chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

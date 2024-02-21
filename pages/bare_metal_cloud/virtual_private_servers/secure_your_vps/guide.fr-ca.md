@@ -1,7 +1,14 @@
 ---
+<<<<<<< HEAD
 title: "Sécuriser un VPS"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre VPS"
 updated: 2024-02-14
+=======
+title: 'Sécuriser un VPS'
+excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre VPS'
+updated: 2024-02-19
+
+>>>>>>> develop
 ---
 
 ## Objectif
@@ -121,12 +128,9 @@ N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de conn
 ssh nomdutilisateur@IPv4_de_votre_VPS -p NouveauPort
 ```
 
-### Modifier le mot de passe associé à l'utilisateur "root"
-
-Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
-
 ### Créer un utilisateur avec des droits restreints <a name="createuser"></a>
 
+<<<<<<< HEAD
 En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
 
 ```bash
@@ -176,6 +180,9 @@ sudo systemctl restart sshd
 ```
 
 Par la suite, les connexions à votre serveur via l'utilisateur root (`ssh root@IPv4_de_votre_VPS`) seront rejetées.
+=======
+En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Pour plus d'informations, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>>>>>>> develop
 
 ### Configurer le pare-feu interne (iptables)
 

@@ -139,13 +139,13 @@ Speichern Sie die Änderungen und verlassen Sie den Editor. Der neue Schlüssel-
 Unter Windows werden ebenfalls der Pfad der Datei `known_hosts` und die zu löschende Zeile angezeigt, zum Beispiel:
 
 ```console
-Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User\.ssh\known_hosts:3
 ```
 
 Um dies zu beheben, geben Sie folgenden Befehl unter Angabe der IP-Adresse Ihres Servers ein:
 
 ```bash
-ssh-keygen -f "C:\Users\Name_Windows_User\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 Alternativ öffnen Sie den angegebenen Ordner, klicken Sie mit der rechten Maustaste auf die Datei und öffnen Sie diese mit der Anwendung Notepad (oder einem beliebigen Texteditor).
@@ -175,6 +175,8 @@ Wie üblich wird bei der ersten Verbindung die Fingerprint-Warnung ausgegeben. K
 Weitere Informationen finden Sie in den offiziellen FAQ und der Dokumentation zu PuTTY.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+[Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [SSH-Schlüssel erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

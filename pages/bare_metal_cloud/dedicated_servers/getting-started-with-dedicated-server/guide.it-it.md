@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un server dedicato
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -101,16 +101,14 @@ Una volta completata l'installazione, riceverai un'email con le istruzioni per l
 
 Utilizza questi esempi per connetterti al tuo server e sostituisci le informazioni di identificazione con i tuoi identificativi (l'indirizzo IP e il nome di riferimento del server sono intercambiabili).
 
-**Esempio con root:**
-
 ```bash
-ssh root@IPv4_del_tuo_server 
+ssh username@IPv4
 ```
 
-**Esempio con un utente preconfigurato:**
+**Esempio:**
 
 ```bash
-ssh ubuntu@nome_di_riferimento_del_tuo_server
+ssh ubuntu@169.254.10.250
 ```
 
 Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -196,6 +194,8 @@ I server dedicati OVHcloud includono uno spazio di storage con controllo degli a
 Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Per saperne di più
+
+[Configurazione degli account utente e dell'accesso root su un server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Mettere in sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 

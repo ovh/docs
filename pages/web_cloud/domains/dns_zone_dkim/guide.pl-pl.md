@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu DKIM
 excerpt: Dowiedz się, jak skonfigurować rekord DKIM w Twojej domenie i platformie e-mail OVHcloud
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -398,7 +398,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 > **2.Utwórz wyłącznik**
 >> Teraz utworzysz wyłącznik, wygeneruj parę kluczy i rekord DNS przypisany do domeny.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > Zalecamy wykonanie tej operacji dwukrotnie dla każdego z wcześniej wymienionych selektorów. Drugi selektor umożliwi zmianę pary kluczy, gdy będzie to konieczne. Zapoznaj się z przykładem zastosowania ["Jak zmienić parę kluczy DKIM"](#2selectors).
@@ -596,7 +596,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1".<br>

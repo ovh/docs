@@ -1,12 +1,12 @@
 ---
 title: Gestionar los contactos de los servicios
 excerpt: Cómo gestionar los distintos contactos de los servicios de OVHcloud
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Objetivo
 
-La mayoría de servicios creados en OVHcloud los gestionan varios contactos. Cada uno de esos contactos está asociado a un identificador de cliente. 
+La mayoría de servicios creados en OVHcloud los gestionan varios contactos. Cada uno de esos contactos está asociado a una cuenta de cliente. 
 
 **Esta guía explica cómo gestionar los contactos de los servicios de OVHcloud.**
 
@@ -18,8 +18,6 @@ Existen tres tipos de contactos:
 - **El contacto técnico** solo se encarga de los aspectos técnicos del servicio.
 - **El contacto de facturación** solo se encarga de los aspectos relativos a la facturación del servicio. En concreto, es el que recibe las notificaciones referentes a las renovaciones. 
 
-El identificador de cliente es un identificador personal que se envía por correo electrónico al crear su cuenta de cliente de OVHcloud. Suele componerse de dos letras seguidas de números. Por ejemplo, **xx11111-ovh**. Cuando contrata servicios, se les asocia este identificador como contacto.
-
 ![Gestión de contactos](images/managing_contacts_scheme.png){.thumbnail}
 
 ## Requisitos
@@ -27,15 +25,19 @@ El identificador de cliente es un identificador personal que se envía por corre
 - Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - Tener los permisos necesarios sobre el servicio correspondiente.
-- Conocer el ID de cliente del nuevo contacto (para poder modificarlo).
+- Conocer la dirección de correo electrónico principal indicada en la cuenta de OVHcloud del nuevo contacto (para poder modificarlo).
 - El nuevo contacto debe tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - El antiguo y el nuevo contacto de facturación deben estar al corriente de pago.
 
 ## Procedimiento
 
+> [!primary]
+> Solo es posible gestionar los contactos entre dos cuentas de OVHcloud situadas en la misma zona geográfica.
+> Por ejemplo, no es posible gestionar los contactos entre una cuenta en Europa y una cuenta en Canadá.
+
 ### Acceder a la gestión de los contactos
 
-Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en el nombre asociado a su identificador de cliente en la esquina superior derecha y seleccione `Gestión de contactos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en el nombre asociado a su cuenta de cliente en la esquina superior derecha y seleccione `Gestión de contactos`{.action}.
 
 ![Gestión de contactos](images/hubcontacts.png){.thumbnail}
 
@@ -45,7 +47,7 @@ Se mostrará una tabla con todos los servicios en los que su identificador de cl
 
 ### Cambiar los contactos de un servicio
 
-Una vez en la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servicio que quiere modificar y, seguidamente, en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos y haga clic en `Confirmar`{.action} su solicitud.
+Una vez en la página de gestión de los contactos, haga clic en `...`{.action} a la derecha del servicio que quiere modificar y, seguidamente, en `Modificar los contactos`{.action}. Introduzca el o los nuevos contactos que desee (introduzca la dirección de correo electrónico principal de la cuenta correspondiente) y haga clic en `Confirmar`{.action} su solicitud.
 
 ![Gestión de contactos](images/managing_contacts_03.png){.thumbnail}
 

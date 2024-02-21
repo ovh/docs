@@ -137,13 +137,13 @@ Guarde los cambios y salga del editor. La nueva huella de clave debe ser aceptad
 En Windows, también se especifica la ruta del archivo `known_hosts` y la línea a eliminar, por ejemplo:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Para solucionar este problema, utilice el siguiente comando con la dirección IP del servidor:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 También puede tener acceso a esta carpeta, hacer clic derecho en el archivo y abrirlo con la aplicación Bloc de notas.
@@ -173,6 +173,8 @@ Como de costumbre, el aviso de huella aparece en la primera conexión. Haga clic
 Consulte las FAQ oficiales y la documentación de PuTTY para más información.
 
 ## Más información <a name="gofurther"></a>
+
+[Configuración de las cuentas de usuario y del acceso root en un servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Creación de llaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
