@@ -100,6 +100,10 @@ Für die neuesten Ubuntu Versionen wird die SSH-Konfiguration nun in der Datei `
 
 Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `ListenStream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
 
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
 ```console
 [Socket]
 ListenStream=49152
