@@ -223,7 +223,7 @@ It is important to know that the global settings will be taken into account only
 For example, consider these lines under `[DEFAULT]`:
 
 ```console
-bantime  = 10m
+bantime = 10m
 maxretry = 5
 enabled = false
 ```
