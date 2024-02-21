@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczanie serwera dedykowanego"
 excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo serwera dedykowanego"
-updated: 2024-02-19
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -97,6 +97,31 @@ sudo systemctl restart sshd
 
 Powinno to wystarczyć do wdrożenia zmian. W przeciwnym razie zrestartuj serwer (`~$ sudo reboot`).
 
+**Dla systemu Ubuntu 23.04 i nowszych wersji**
+
+W przypadku najnowszych wersji Ubuntu, konfiguracja SSH jest zarządzana w pliku `ssh.socket`.
+
+Aby zaktualizować port SSH, edytuj wiersz `Listenstream` w pliku konfiguracyjnym za pomocą wybranego edytora tekstu (`nano` użyty w tym przykładzie):
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Zapisz zmiany i wykonaj następujące polecenia:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Jeśli włączona jest zapora systemu operacyjnego, upewnij się, że zezwalasz na nowy port w regułach zapory.
+
 Pamiętaj, że podczas każdego zlecenia połączenia SSH z Twoim serwerem należy wskazać nowy port, na przykład:
 
 ```bash
@@ -158,7 +183,7 @@ Ważne jest, aby wiedzieć, że ogólne parametry będą brane pod uwagę tylko 
 Poniżej przedstawiamy przykładowe linie pod `[DEFAULT]`:
 
 ```console
-bantime  = 10m
+bantime = 10m
 maxretry = 5
 enabled = false
 ```

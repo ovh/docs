@@ -1,8 +1,7 @@
 ---
 title: "Proteger un VPS"
 excerpt: "Descubra los elementos básicos que le permiten proteger su VPS"
-updated: 2024-02-19
-
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -16,9 +15,10 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 **Esta guía ofrece algunos consejos para proteger un servidor basado en GNU/Linux.**
 
 > [!warning]
->OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
->
->Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle soporte técnico.
+> OVHcloud pone a su disposición servicios cuya configuración, seguridad y responsabilidad le pertenecen.
+> En efecto, no tenemos acceso a los datos alojados en estas máquinas ni somos los administradores. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en caso de que tenga dificultades o dudas relativas a la administración, la utilización o la seguridad del servidor.
+> Más información en el apartado «Más información» de esta guía.
 >
 
 ## Requisitos
@@ -58,7 +58,7 @@ sudo apt upgrade
 
 Esta operación debe realizarse regularmente para mantener un sistema actualizado.
 
-### Cambiar el puerto de escucha por defecto SSH <a name="changesshport"></a>
+### Cambiar el puerto de escucha SSH por defecto <a name="changesshport"></a>
 
 Una de las primeras acciones que deberá realizar en su servidor es configurar el puerto de escucha del servicio SSH. Por defecto, este se define en el **puerto 22**, por lo que los intentos de hackeo del servidor por parte de robots se dirigirán prioritariamente a este puerto.
 La modificación de este parámetro, en beneficio de un puerto diferente, es una medida sencilla para reforzar la protección de su servidor contra los ataques automatizados.
@@ -96,6 +96,27 @@ sudo systemctl restart sshd
 ```
 
 Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinicie el VPS (`~$ sudo reboot`).
+
+**Para Ubuntu 23.04 y versiones posteriores**
+
+Para las últimas versiones de Ubuntu, la configuración SSH se gestiona ahora en el archivo /ssh.socket`.
+
+Para actualizar el puerto SSH, edite la línea `Listenstream` en el archivo de configuración con un editor de texto de su elección (`nano` utilizado en este ejemplo):
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Guarde los cambios y ejecute los siguientes comandos:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Si ha activado el cortafuegos del sistema operativo, asegúrese de autorizar el nuevo puerto en las reglas del cortafuegos.
 
 Recuerde que deberá indicar el nuevo puerto en cada solicitud de conexión SSH al servidor, por ejemplo:
 
@@ -213,6 +234,8 @@ En la [página de producto](https://www.ovhcloud.com/es-es/vps/options/) y en la
 [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
 [Configurar el firewall de Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configurar el firewall de Linux con iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Configurar el firewall de red](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
