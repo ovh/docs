@@ -321,7 +321,7 @@ If it is correct, apply it using the following command:
 ```
 
 > [!primary]
-> When using the `netplan try` command, it is possible that the system returns a warning message such as `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. This simply means that the file does not have restrictive permissions, so users that are not root can access the content or modify it. This does not affect the configuration of your Additional IP. You can consutl [this paragraph](https://netplan.readthedocs.io/en/stable/reference/#yaml-configuration) in the official documentation from netplan for more information.
+> When using the `netplan try` command, it is possible that the system returns a warning message such as `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. This simply means that the file does not have restrictive permissions. This does not affect the configuration of your Additional IP. For more information about file permissions, consult the [official documentation of ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
 ### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
