@@ -43,7 +43,7 @@ Le fait que votre site web possède ou non une connexion sécurisée devient alo
 Retrouvez ci-après les principales étapes décrites dans la suite du présent guide pour passer votre site web en *HTTPS* :
 
 - [Étape 1 - Activer le certificat SSL sur l'hébergement web](#enable-ssl) : permet d'activer ou de vérifier qu'un certificat SSL est bien installé sur votre hébergement web et est bien activé pour le site web concerné.
-- [Étape 2 - Vérifier l'environnement technique](#check-environment) : permet de vérifier que le passage de votre site en *HTTPS* n'engendrera pas de dysfonctionnements avant d'initier un quelconque changement.
+- [Étape 2 - Vérifier l'environnement technique pour votre site web](#check-environment) : permet de vérifier que le passage de votre site en *HTTPS* n'engendrera pas de dysfonctionnements avant d'initier un quelconque changement.
 - [Étape 3 - Activer le *HTTPS* sur votre site web](#https-enable) : permet à votre site web  d'utiliser le protocole *HTTPS*. La méthode exposée dans le présent guide n'est pas universelle et dépendra du site web utilisé.
 - [Étape 4 - Vérifier le bon fonctionnement de votre site web](#check-your-website) : permet de s'assurer qu'après l'activation du *HTTPS*, votre site web s'affiche correctement.
 
@@ -51,54 +51,59 @@ Retrouvez ci-après les principales étapes décrites dans la suite du présent 
 
 Pour activer un certificat SSL sur votre hébergement web ou vérifier qu'un certificat SSL est déjà installé pour votre site web, consultez notre guide : « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
 
-### Étape 2 - Vérifier l'environnement technique <a name="check-environment"></a>
+### Étape 2 - Vérifier l'environnement technique pour votre site web <a name="check-environment"></a>
 
 Avant d'effectuer tout changement dans la configuration de votre site web, il est primordial de vous assurer que celui-ci est prêt à accueillir le *HTTPS* dans de bonnes conditions. Il n'existe pas de démarche universelle, puisque celle-ci dépend du site web que vous utilisez. 
 
-Ainsi, nous vous recommandons vivement de prendre en considération les éléments ci-dessous. Sachez cependant que ces informations ont pour but de vous aider dans la mesure du possible. Mais elles ne se substituent pas à l’aide d’un webmaster.
+Ainsi, nous vous recommandons vivement de prendre en considération les éléments ci-dessous. Sachez cependant que ces informations ont pour but de vous aider dans la mesure du possible. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
 
-#### 2.1 Éviter de mélanger du contenu HTTP et HTTPS
+#### 2.1 - Éviter de mélanger du contenu HTTP et HTTPS
 
-De manière générale, lorsque votre site web s'affiche en *HTTPS*, vous devez impérativement éviter de mélanger dans une même page, et sur l'ensemble de votre site du contenu en HTTP et *HTTPS*. Ainsi, si votre site doit s'afficher en *HTTPS*, faites en sorte que l'intégralité de son contenu se charge en *HTTPS*.
+Lorsque votre site web s'affiche en *HTTPS*, il faut éviter de mélanger, dans une même page et sur l'ensemble de votre site web, du contenu en *HTTP* et *HTTPS*. Ainsi, si votre site web doit s'afficher en *HTTPS*, assurez-vous que l'intégralité de son contenu se charge en *HTTPS*.
 
-Si ce n'est pas le cas, vous vous exposez alors à proposer du contenu mixte sur votre site web, considéré comme du *Mixed Content* par les navigateurs internet. Cela revient en quelque sorte à proposer du contenu considéré comme étant potentiellement non sécurisé sur une page indiquée comme étant sécurisée. Ceci peut avoir deux effets selon le type de contenu mixte :
+Si ce n'est pas le cas, vous proposerez sur votre site web du contenu considéré comme mixte (*Mixed Content*) par les navigateurs internet. Ainsi, vous proposez du contenu considéré comme potentiellement non sécurisé sur une page déclarée sécurisée.
 
-- **le site s'affiche correctement, mais un avertissement est présent dans la barre d'adresse** : ceci peut indiquer que du contenu considéré comme passif (images, vidéos, etc.) par votre navigateur internet est chargé depuis une source non sécurisée ;
+Dans le cas d'un *Mixed Content* deux cas de figure peuvent être rencontrés :
 
-- **certaines parties du site ne s'affichent pas et un avertissement est présent dans la barre d'adresse** : ceci peut indiquer que du contenu considéré comme actif (scripts, iframe, fichiers CSS, etc.) par votre navigateur internet provenant d'une source non sécurisée a été bloqué.
+- **le site web s'affiche correctement, mais un avertissement est présent dans la barre d'adresse** : indique que du contenu considéré comme passif (images, vidéos, etc.) par votre navigateur internet est chargé sur votre page depuis une source non sécurisée ;
 
-En ce sens, il est donc primordial de vous assurer que l'intégralité du contenu qui sera chargé depuis votre site web provient d'une source sécurisée. 
+- **certaines parties du site web ne s'affichent pas et un avertissement est présent dans la barre d'adresse** : indique que du contenu considéré comme actif (scripts, iframe, fichiers CSS, etc.) par votre navigateur internet provenant d'une source non sécurisée a été bloqué.
+
+En ce sens, vérifiez que l'intégralité du contenu chargé depuis votre site web provient d'une source sécurisée.
 
 ![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
 
-Sachez que même si votre hébergement dispose d'un certificat SSL, le contenu hébergé sur ce dernier peut être chargé en *HTTP* ou en *HTTPS*. Ceci est dépendant de la manière dont vous avez identifié ces contenus dans le code de votre site. Ainsi, vous devrez vous assurer que le contenu chargé depuis votre site utilise bien le protocole *HTTPS*.
+Sachez que même si votre hébergement dispose d'un certificat SSL, le contenu hébergé sur ce dernier peut être chargé en *HTTP* ou en *HTTPS*. Ceci dépend de la manière dont vous avez identifié ces contenus dans le code de votre site web. Ainsi, vous devrez vous assurer que le contenu chargé depuis votre site utilise bien le protocole *HTTPS*.
 
-Par exemple, apportez une attention particulière aux adresses que vous utilisez dans le code de votre site. Si possible :
+Par exemple, apportez une attention particulière aux adresses que vous utilisez dans le code de votre site web. Si possible :
 
 - préférez l'utilisation d'adresses relatives comme : `../img/header.png` ;
 - évitez les adresses absolues comportant le protocole *HTTP*, comme : `http://mypersonaldomain.ovh/img/header.png`.
 
-Si cela est nécessaire, vous devrez alors adapter le code de votre site en conséquence. Si cependant vous utilisez un site clés en main (comme WordPress), la structure de ces derniers est généralement déjà prête à l'emploi pour passer en *HTTPS*. Vous ne devriez donc pas avoir à faire de modifications dans le code-même de votre site.
+Si nécessaire, adaptez le code de votre site web en conséquence. 
 
-#### 2.2 Éviter de générer du contenu dupliqué
+Si vous utilisez un « site clés en main » (WordPress, PrestaShop, Drupal, Joomla!), la structure de ces derniers est généralement déjà conçue pour passer en *HTTPS*. Vous ne devriez pas avoir à faire de modifications dans le code-même de votre web.
 
-Selon la manière dont votre site web est codé, vous devez vous assurer que celui-ci ne sera pas accessible via différentes adresses : la première utilisant le *HTTP* et la seconde le *HTTPS* par exemple. Si tel est le cas, vous auriez alors un même contenu accessible depuis plusieurs adresses différentes, ce qui est considéré comme du contenu dupliqué (ou *duplicate content*) par les moteurs de recherche.
+#### 2.2 - Éviter de générer du contenu dupliqué
 
-Ce phénomène peut avoir un effet négatif sur le référencement de votre site web. En ce sens, vous devrez vous assurer que celui-ci « force » l'utilisation du *HTTPS*. Ceci passe par le biais d'une règle de réécriture à implémenter dans le code de votre site lorsque vous souhaiterez activer le *HTTPS*.
+Selon la manière dont votre site web est codé, assurez-vous que celui-ci ne sera pas accessible via différentes adresses : la première utilisant le *HTTP* et la seconde le *HTTPS* par exemple. Si tel est le cas, un même contenu sera accessible depuis plusieurs adresses différentes, ce qui est considéré comme du contenu dupliqué ( *duplicate content*) par les moteurs de recherche.
 
-Sachez que si vous utilisez un site clés en main (comme WordPress), la structure de ces derniers gère automatiquement les règles de réécriture. Vous ne devriez donc pas avoir à faire de modification dans le code de votre site.
+Ce phénomène peut baisser le niveau de référencement (SEO) de votre site web. En ce sens, vérifiez que celui-ci « force » l'utilisation du *HTTPS*. Ceci passe par le biais d'une règle de réécriture à placer dans le code de votre site web lorsque vous souhaiterez activer le *HTTPS*.
+
+Sachez que si vous utilisez un « site clés en main », leur structure gère automatiquement les règles de réécriture. Vous ne devriez donc pas avoir à faire de modification dans le code de votre site web .
 
 ### Étape 3 - Activer le HTTPS sur votre site web <a name="https-enable"></a>
 
-Une fois que votre hébergement web dispose d'un certificat SSL fonctionnel, que le multisite concerné bénéficie bien d'une connexion SSL active, et que vous vous êtes assuré que votre site web est prêt à passer en *HTTPS*, vous pouvez l'activer.
+Dès que votre hébergement web dispose d'un certificat SSL actif, que le [multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) concerné bénéficie bien d'une connexion SSL active et que votre site web est prêt à passer en *HTTPS*, vous pouvez l'activer.
 
 > [!warning]
 >
-> Avant d'entamer toute démarche, nous vous recommandons de récupérer une sauvegarde complète de votre site web. Cette sauvegarde doit donc contenir non seulement les fichiers présents sur l'espace de stockage FTP, mais aussi ceux de la base de données si le site web en utilise une. 
+> Avant d'entamer toute démarche, nous vous recommandons de récupérer une sauvegarde complète de votre site web. Cette sauvegarde doit contenir non seulement les fichiers présents sur l'[espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup), mais aussi ceux de [la base de données](/pages/web_cloud/web_hosting/sql_database_export) si le site web en utilise une.
+>
 > En effet, à partir de cette étape, les actions sont à réaliser directement depuis les fichiers qui composent votre site web. N'hésitez pas à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous rencontrez des difficultés.
 >
 
-Il existe de multiples manières d'activer le *HTTPS* sur votre site. Cette opération nécessite de réaliser des manipulations dans la configuration du site web que vous utilisez. Les informations ci-dessous peuvent vous aider dans cette démarche d'activation, mais elles peuvent aussi se révéler incomplètes ou non pertinentes selon votre cas.
+Il existe de multiples manières d'activer le *HTTPS* sur votre site web. Cette opération nécessite de réaliser des manipulations dans la configuration du site web que vous utilisez. Les informations ci-dessous peuvent vous aider dans cette démarche d'activation, mais elles peuvent aussi se révéler incomplètes ou non pertinentes selon votre cas.
 
 - **Vous utilisez un site clés en main (comme WordPress)** : 
 
