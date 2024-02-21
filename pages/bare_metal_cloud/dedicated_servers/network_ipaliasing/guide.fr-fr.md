@@ -61,7 +61,7 @@ Par défaut, le fichier de configuration est situé dans `/etc/network/interface
 
 Dans notre exemple, notre fichier s'appelle `50-cloud-init`, nous copions donc le fichier `50-cloud-init` en utilisant la commande suivante :
 
-```sh
+```bash
 ~# sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
@@ -80,7 +80,7 @@ En cas d'erreur, vous pourrez alors revenir en arrière grâce aux commandes ci-
 
 Vous pouvez désormais modifier le fichier de configuration :
 
-```sh
+```bash
 ~# sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
@@ -88,7 +88,7 @@ Vous devez ensuite ajouter une interface virtuelle ou un alias ethernet. Dans no
 
 Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez simplement votre Additional IP au fichier comme indiqué ci-dessous, en remplaçant `ADDITIONAL_IP/32` ainsi que l'interface virtuelle (si votre serveur n'utilise pas **eth0:0**) par vos propres valeurs :
 
-```bash
+```console
 auto eth0:0
 iface eth0:0 inet static
 address ADDITIONAL_IP
@@ -97,7 +97,7 @@ netmask 255.255.255.255
 
 Vous pouvez également configurer votre Additional IP en ajoutant les lignes suivantes dans le fichier de configuration :
 
-```bash
+```console
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
@@ -106,7 +106,7 @@ Avec la configuration ci-dessus, l'interface virtuelle est activée ou désactiv
 
 Si vous avez deux Additional IP à configurer, le fichier `/etc/network/interfaces.d/50-cloud-init` doit ressembler à ceci :
 
-```bash
+```console
 auto eth0
 iface eth0 inet dhcp
 
@@ -123,7 +123,7 @@ netmask 255.255.255.255
 
 Ou à cela :
 
-```bash
+```console
 auto eth0
 iface eth0 inet dhcp
 
@@ -138,7 +138,7 @@ pre-down /sbin/ifconfig eth0:1 down
 
 Exemple de configuration :
 
-```bash
+```console
 auto eth0
 iface eth0 inet dhcp
 
@@ -150,7 +150,7 @@ netmask 255.255.255.255
 
 Ou :
 
-```bash
+```console
 auto eth0
 iface eth0 inet dhcp
 
@@ -163,7 +163,7 @@ pre-down /sbin/ifconfig eth0:0 down
 
 Pour redémarrer l'interface, utilisez la commande suivante :
 
-```sh
+```bash
 ~# sudo /etc/init.d/networking restart
 ```
 
@@ -182,7 +182,7 @@ Le ifcfg étant à présent déprécié, NetworkManager ne crée plus par défau
 
 Il est recommandé de commencer par sauvegarder le fichier de configuration correspondant. Dans notre exemple, notre fichier de configuration s'appelle `cloud-init-eno1.nmconnection` :
 
-```sh
+```bash
 ~# sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 En cas d'erreur, vous pourrez alors revenir en arrière grâce aux commandes ci-dessous :
@@ -200,22 +200,21 @@ En cas d'erreur, vous pourrez alors revenir en arrière grâce aux commandes ci-
 
 Pour obtenir le nom de votre interface réseau afin d'éditer le fichier réseau approprié, vous pouvez exécuter l'une des commandes suivantes :
 
-```sh
-ip a
+```bash
+~# ip a
 ```
-ou
 
-```sh
-nmcli connection show
+```bash
+~# nmcli connection show
 ```
 
 Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez votre Additional IP dans le fichier comme suit, en remplaçant `ADDITIONAL_IP/32` par vos propres valeurs :
 
-```sh
+```bash
 ~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
-```sh
+```console
 [ipv4]
 method=auto
 may-fail=false
@@ -223,7 +222,7 @@ address1=ADDITIONAL_IP/32
 ```
 Si vous avez deux adresses Additional IP à configurer, la configuration devrait ressembler à ceci :
 
-```sh
+```console
 [ipv4]
 method=auto
 may-fail=false
@@ -233,7 +232,7 @@ address2=ADDITIONAL_IP2/32
 
 Exemple de configuration :
 
-```sh
+```console
 [ipv4]
 method=auto
 may-fail=false
@@ -244,7 +243,7 @@ address1=169.254.10.254/32
 
 Vous devez maintenant redémarrer votre interface :
 
-```sh
+```bash
 ~# sudo systemctl restart NetworkManager
 ```
 
@@ -256,16 +255,17 @@ La meilleure approche consiste à créer un fichier de configuration séparé po
 
 #### Étape 1 : déterminer l’interface
 
-```sh
-ip a
+```bash
+~# ip a
 ```
+
 Notez le nom de l'interface (celle sur laquelle est configurée l'adresse IP principale de votre serveur).
 
 #### Étape 2 : créer le fichier de configuration
 
 Ensuite, créez un fichier de configuration avec une extension `.yaml`. Dans notre exemple, notre fichier s'appelle `51-cloud-init.yaml`.
 
-```sh
+```bash
 ~# sudo nano /etc/netplan/51-cloud-init.yaml
 ```
 
@@ -316,7 +316,7 @@ network:
 
 Enregistrez et fermez le fichier. Vous pouvez tester la configuration avec la commande suivante :
 
-```sh
+```bash
 ~# sudo netplan try
 ```
 
@@ -324,9 +324,10 @@ Enregistrez et fermez le fichier. Vous pouvez tester la configuration avec la co
 
 Si elle est correcte, appliquez-la à l'aide de la commande suivante :
 
-```sh
+```bash
 ~# sudo netplan apply
 ```
+
 > [!primary]
 > Lors de l'utilisation de la commande `netplan try`, il est possible que le système renvoie un message d'avertissement tel que `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Cela signifie simplement que le fichier n'a pas de permissions restrictives, de sorte que les utilisateurs qui ne sont pas root peuvent accéder au contenu ou le modifier. Cela n'affecte pas la configuration de votre IP supplémentaire. Vous pouvez consulter [ce paragraphe](https://netplan.readthedocs.io/en/stable/reference/#yaml-configuration) dans la documentation officielle de netplan pour plus d'informations.
 
@@ -338,8 +339,8 @@ Pour chaque Additional IP à configurer, nous créons un fichier de configuratio
 
 #### Étape 1 : déterminer l'interface
 
-```sh
-ip a
+```bash
+~# ip a
 ```
 
 Notez le nom de l'interface (celle sur laquelle l'adresse IP principale de votre serveur est configurée).
@@ -348,13 +349,13 @@ Notez le nom de l'interface (celle sur laquelle l'adresse IP principale de votre
 
 Commencez par créer le fichier de configuration. Remplacez `NETWORK_INTERFACE:ID` par vos propres valeurs.
 
-```sh
+```bash
 ~# sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
 ```
 
 Ensuite, modifiez le fichier avec le contenu ci-dessous, en remplaçant `NETWORK_INTERFACE:ID` et `ADDITIONAL_IP` par vos propres valeurs :
 
-```sh
+```console
 DEVICE=NETWORK_INTERFACE:ID
 ONBOOT=yes
 BOOTPROTO=none # Pour CentOS utilisez "static"
@@ -365,7 +366,7 @@ BROADCAST=ADDITIONAL_IP
 
 Exemple de configuration :
 
-```bash
+```console
 DEVICE=eth0:0
 ONBOOT=yes
 BOOTPROTO=none # Pour CentOS utilisez "static"
@@ -378,13 +379,13 @@ BROADCAST=169.254.10.254
 
 Redémarrez ensuite votre interface alias. Remplacez `eth0:0` par vos propres valeurs :
 
-```sh
+```bash
 ~# ifup eth0:0
 ```
 
 #### Pour AlmaLinux et Rocky Linux
 
-```sh
+```bash
 ~# sudo systemctl restart NetworkManager
 ```
 
@@ -423,7 +424,7 @@ Sinon, vous devez d’abord passer d’une configuration DHCP au niveau du rése
 
 Ouvrez l’invite de commande `cmd`{.action} ou `powershell`{.action}, puis tapez la commande suivante :
 
-```sh
+```powershell
 ipconfig /all
 ```
 
@@ -457,15 +458,20 @@ Dans les commandes ci-dessous, vous devez remplacer les informations suivantes :
 Dans l’invite de commande :
 
 Passez en premier lieu en IP fixe :
-```sh
+
+```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
+
 Définissez ensuite le serveur DNS :
-```sh
+
+```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
+
 Puis ajoutez une adresse Additional IP :
-```sh
+
+```powershell
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
 ```
 
@@ -527,7 +533,6 @@ Entrez votre adresse Additional IP sous la forme `xxx.xxx.xxx.xxx/32` dans le ch
 Dans la section « Adresses IP », vérifiez que l'adresse Additional IP a été correctement ajoutée.
 
 ![configuration IP actuelle](images/pleskip4-4.png){.thumbnail}
-
 
 #### Résolution des défauts
 
