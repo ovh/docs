@@ -252,7 +252,7 @@ Il convient avant tout d'effectuer une copie du fichier source afin de pouvoir r
 
 Modifiez le fichier en y ajoutant les lignes suivantes, sans rien modifier dans le fichier original. Remplacez les éléments génériques (c'est-à-dire `YOUR_IPV6` et `IPv6_PREFIX`) par vos valeurs spécifiques. Nous avons également omis la configuration IPv4 pour éviter toute confusion, mais la configuration IPv6 se fait dans le même fichier de configuration.
 
-```consile
+```console
 [ipv6]
 method=auto
 may-fail=true
