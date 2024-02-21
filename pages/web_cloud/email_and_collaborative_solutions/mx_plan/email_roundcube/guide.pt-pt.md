@@ -1,6 +1,6 @@
 ---
 title: 'Webmail: Guia de utilização do Roundcube'
-updated: 2024-02-20
+updated: 2024-02-21
 ---
 
 > [!primary]
@@ -326,11 +326,11 @@ Para adicionar uma resposta, clique no botão `+`{.action} no fundo da coluna `R
 
 ### Adicionar uma resposta automática ou resposta automática <a name="automatic-respond"></a>
 
-Deseja adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia « [Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses) ».
+Deseja adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
 
 ### Alterar a palavra-passe do endereço de e-mail <a name="password"></a>
 
-Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia « [Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password) ».
+Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 
 ### Redação de um e-mail <a name="email-writing"></a>
 
@@ -374,17 +374,17 @@ Na barra superior, estão disponíveis as seguintes ações:
 
 Ao tentar acessar seu webmail Roundcube, você encontrará a seguinte mensagem:
 
-« consola
+```console
 FALHA NA VERIFICAÇÃO DO PEDIDO
 Para sua proteção, o acesso a este recurso está protegido contra ataques CSFR.
 Se você ver isso, provavelmente você não se desconectou antes de sair do aplicativo da Web.
 A interação humana é agora necessária para continuar.
 Contacte o administrador do seu servidor.
-«
+```
 
-Como indicado nesta mensagem, a sua conta de e-mail já se encontra online. Esta secção descreve « sessão », o que significa que a sua conta de e-mail já se encontra em curso de utilização aos olhos do servidor de e-mail e que esta sessão anterior deve ser encerrada Certifique-se de que a sua conta de e-mail ainda não foi aberta no roundcube. Esvazie igualmente os dados em cache no seu browser.
+Como indicado nesta mensagem, a sua conta de e-mail já se encontra online. Esta secção descreve "sessão", o que significa que a sua conta de e-mail já se encontra em curso de utilização aos olhos do servidor de e-mail e que esta sessão anterior deve ser encerrada Certifique-se de que a sua conta de e-mail ainda não foi aberta no roundcube. Esvazie igualmente os dados em cache no seu browser.
 
-## Saiba mais
+## Quer saber mais?
 
 [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
@@ -395,5 +395,5 @@ Como indicado nesta mensagem, a sua conta de e-mail já se encontra online. Esta
 [Criar filtros para os seus endereços de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 
 [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
-
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+ 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

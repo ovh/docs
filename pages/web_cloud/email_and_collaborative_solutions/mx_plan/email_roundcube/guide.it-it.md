@@ -1,6 +1,6 @@
 ---
 title: 'Webmail: guida all’utilizzo di Roundcube'
-updated: 2024-02-20
+updated: 2024-02-21
 ---
 
 > [!primary]
@@ -208,7 +208,7 @@ In questa scheda è possibile ottimizzare lo spazio occupato su un account email
 > 
 > Si sconsiglia di attivare l'opzione `Elimina direttamente i messaggi in Spam` nel caso in cui un falso positivo (e-mail erroneamente dichiarato come "SPAM") si trovi dichiarato SPAM per il server ricevente. Infatti, quando un'email è inserita nella cartella "Posta elettronica", è ancora possibile verificare se l'email è legittima.
 
-### Gestisci le identità e la loro firma <a name="identity"></a>
+### Gestisci le identità e la loro firma <a name="identity-signature"></a>
 
 Clicca su `Impostazioni`{.action} nella barra superiore e seleziona `Identità`{.action} nella colonna di sinistra. "L'identità" permette di personalizzare le informazioni inviate ai destinatari, come ad esempio il nome visualizzato o la firma.
 

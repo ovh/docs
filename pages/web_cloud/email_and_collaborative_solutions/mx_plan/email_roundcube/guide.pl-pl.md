@@ -1,6 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail w interfejsie Webmail Roundcube'
-updated: 2024-02-20
+updated: 2024-02-21
 ---
 
 > [!primary]
@@ -367,9 +367,9 @@ Na górnym pasku dostępne są następujące operacje:
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
-## Przykłady zastosowania <a name="usecase"></a>
+### Przykłady zastosowania <a name="usecase"></a>
 
-### Weryfikacja żądania nie powiodła się
+#### Weryfikacja żądania nie powiodła się
 
 Przy próbie dostępu do interfejsu Webmail Roundcube pojawi się następujący komunikat:
 

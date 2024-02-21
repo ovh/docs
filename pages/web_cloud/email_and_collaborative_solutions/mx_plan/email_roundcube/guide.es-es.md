@@ -189,7 +189,7 @@ También se recomienda mantener la opción `Allow remote resources (images, styl
 Establezca la forma predeterminada para redactar un mensaje de correo o una respuesta.<br>
 Le recomendamos que elija la opción `Redactar mensajes HTML` para `siempre`, ya que por defecto la herramienta de edición HTML no alterará la firma HTML.
 
-#### Contactos <a name="#contacts-settings"></a>
+#### Contactos <a name="contacts-settings"></a>
 
 Personalice aquí la organización de los datos en su libreta de direcciones.
 
@@ -324,11 +324,11 @@ Para añadir una respuesta, haga clic en el botón `+`{.action} situado en la pa
 
 ### Añadir un contestador o respuesta automática <a name="automatic-respond"></a>
 
-Desea añadir una respuesta automática a su dirección de correo cuando esté ausente o no esté disponible. Esta función no puede activarse desde el webmail, sino desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la interfaz de gestión de sus direcciones de correo. Consulte nuestra guía «[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)».
+Desea añadir una respuesta automática a su dirección de correo cuando esté ausente o no esté disponible. Esta función no puede activarse desde el webmail, sino desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la interfaz de gestión de sus direcciones de correo. Consulte nuestra guía "[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
 
 ### Cambiar la contraseña de su dirección de correo <a name="password"></a>
 
-Para cambiar la contraseña de una dirección de correo electrónico, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía «[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)».
+Para cambiar la contraseña de una dirección de correo electrónico, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía "[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### Redacción de un email <a name="email-writing"></a>
 
@@ -372,7 +372,7 @@ En la barra superior, puede elegir entre las siguientes acciones:
 
 Cuando intente acceder a su webmail Roundcube, recibirá el siguiente mensaje:
 
-```consola
+```console
 ERROR DE COMPROBACIÓN DE SOLICITUD
 Para su protección, el acceso a este recurso está protegido contra los ataques CSFR.
 Si ve esto, probablemente no cerró la sesión antes de abandonar la aplicación Web.

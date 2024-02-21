@@ -1,6 +1,6 @@
 ---
 title: Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail
-updated: 2024-02-20
+updated: 2024-02-21
 ---
 
 > [!primary]
@@ -370,7 +370,7 @@ Im oberen Menü sind folgende Aktionen verfügbar:
 
 ### Anwendungsfälle <a name="usecase"></a>
 
-### Fehler bei der Anforderungsüberprüfung
+#### Fehler bei der Anforderungsüberprüfung
 
 Wenn Sie versuchen, auf Ihr Roundcube Webmail zuzugreifen, wird folgende Meldung angezeigt:
 
