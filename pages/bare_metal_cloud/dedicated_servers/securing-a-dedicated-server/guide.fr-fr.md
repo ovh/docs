@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un serveur dédié"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre serveur dédié"
-updated: 2024-02-14
+updated: 2024-02-20
 ---
 
 ## Objectif
