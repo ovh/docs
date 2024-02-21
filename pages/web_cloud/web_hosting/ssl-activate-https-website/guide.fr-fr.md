@@ -18,16 +18,16 @@ Grâce à votre hébergement web OVHcloud, vous pouvez bénéficier d'un [certif
 
 ## En pratique
 
-La sécurité prend une place de plus en plus conséquente sur internet. Vous accordez sûrement une attention toute particulière à la confidentialité de vos données et à la manière dont ces dernières transitent sur le web. De manière générale, les internautes accordent davantage leur confiance à des sites permettant des échanges sécurisés, en particulier lorsque les données échangées sont sensibles. 
+La sécurité prend une place de plus en plus conséquente sur internet. Vous accordez sûrement une attention toute particulière à la confidentialité de vos données et à la manière dont ces dernières transitent sur le web. De manière générale, les internautes accordent davantage leur confiance à des sites web permettant des échanges sécurisés, en particulier lorsque les données échangées sont sensibles. 
 
-Lorsque vous visitez un site web disposant d'une connexion sécurisée, votre navigateur internet vous l'indique dans sa barre d'adresse grâce à plusieurs moyens comme : 
+Lorsque vous visitez un site web disposant d'une connexion sécurisée, votre navigateur internet vous l'indique dans sa barre d'adresse (URL) grâce à plusieurs moyens comme : 
 
 - un logo (généralement un cadenas) ;
 - un message ;
 - un code couleur ; 
 - au protocole utilisé, *HTTPS* plutôt que *HTTP*. 
 
-Le fait que votre site web possède ou non une connexion sécurisée devient alors de plus en plus visible.
+Le fait que votre site web possède ou non une connexion sécurisée devient de plus en plus visible.
 
 ![httpswebsite](images/url-not-secure.png){.thumbnail}
 
@@ -42,9 +42,9 @@ Le fait que votre site web possède ou non une connexion sécurisée devient alo
 
 Retrouvez ci-après les principales étapes décrites dans la suite du présent guide pour passer votre site web en *HTTPS* :
 
-- [Étape 1 - Activer le certificat SSL sur l'hébergement web](#enable-ssl) : permet d'activer ou de vérifier qu'un certificat SSL est bien installé sur votre hébergement web et est bien activé pour le site web concerné.
+- [Étape 1 - Activer le certificat SSL sur l'hébergement web](#enable-ssl) : permet d'activer ou de vérifier qu'un certificat SSL est bien installé sur votre hébergement web/site web concerné.
 - [Étape 2 - Vérifier l'environnement technique pour votre site web](#check-environment) : permet de vérifier que le passage de votre site en *HTTPS* n'engendrera pas de dysfonctionnements avant d'initier un quelconque changement.
-- [Étape 3 - Activer le *HTTPS* sur votre site web](#https-enable) : permet à votre site web  d'utiliser le protocole *HTTPS*. La méthode exposée dans le présent guide n'est pas universelle et dépendra du site web utilisé.
+- [Étape 3 - Activer le *HTTPS* sur votre site web](#https-enable) : permet à votre site web d'utiliser le protocole *HTTPS*. La méthode exposée dans le présent guide n'est pas universelle et dépendra du site web utilisé.
 - [Étape 4 - Vérifier le bon fonctionnement de votre site web](#check-your-website) : permet de s'assurer qu'après l'activation du *HTTPS*, votre site web s'affiche correctement.
 
 ### Étape 1 - Activer le certificat SSL sur l'hébergement web <a name="enable-ssl"></a>
@@ -53,9 +53,9 @@ Pour activer un certificat SSL sur votre hébergement web ou vérifier qu'un cer
 
 ### Étape 2 - Vérifier l'environnement technique pour votre site web <a name="check-environment"></a>
 
-Avant d'effectuer tout changement dans la configuration de votre site web, il est primordial de vous assurer que celui-ci est prêt à accueillir le *HTTPS* dans de bonnes conditions. Il n'existe pas de démarche universelle, puisque celle-ci dépend du site web que vous utilisez. 
+Avant d'effectuer tout changement dans la configuration de votre site web, il est primordial de vous assurer que celui-ci est prêt à utiliser le protocole *HTTPS* correctement. Il n'existe pas de démarche universelle, puisque celle-ci dépend du site web que vous utilisez.
 
-Ainsi, nous vous recommandons vivement de prendre en considération les éléments ci-dessous. Sachez cependant que ces informations ont pour but de vous aider dans la mesure du possible. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
+Ainsi, nous vous recommandons de prendre en considération les éléments ci-dessous. Cependant, ces informations resteront génériques. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
 
 #### 2.1 - Éviter de mélanger du contenu HTTP et HTTPS
 
@@ -67,26 +67,26 @@ Dans le cas d'un *Mixed Content* deux cas de figure peuvent être rencontrés :
 
 - **le site web s'affiche correctement, mais un avertissement est présent dans la barre d'adresse** : indique que du contenu considéré comme passif (images, vidéos, etc.) par votre navigateur internet est chargé sur votre page depuis une source non sécurisée ;
 
-- **certaines parties du site web ne s'affichent pas et un avertissement est présent dans la barre d'adresse** : indique que du contenu considéré comme actif (scripts, iframe, fichiers CSS, etc.) par votre navigateur internet provenant d'une source non sécurisée a été bloqué.
+- **certaines parties du site web ne s'affichent pas et un avertissement est présent dans la barre d'adresse** : indique que du contenu considéré comme actif (scripts, iframe, fichiers CSS, etc.) par votre navigateur internet, provenant d'une source non sécurisée, a été bloqué.
 
 En ce sens, vérifiez que l'intégralité du contenu chargé depuis votre site web provient d'une source sécurisée.
 
 ![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
 
-Sachez que même si votre hébergement dispose d'un certificat SSL, le contenu hébergé sur ce dernier peut être chargé en *HTTP* ou en *HTTPS*. Ceci dépend de la manière dont vous avez identifié ces contenus dans le code de votre site web. Ainsi, vous devrez vous assurer que le contenu chargé depuis votre site utilise bien le protocole *HTTPS*.
+Sachez que même si votre hébergement dispose d'un certificat SSL, le contenu hébergé sur ce dernier peut être chargé en *HTTP* ou en *HTTPS*. Ceci dépend de la manière dont vous avez identifié ces contenus dans le code de votre site web. Ainsi, vérifiez que tout le contenu chargé depuis votre site web utilise bien le protocole *HTTPS*.
 
 Par exemple, apportez une attention particulière aux adresses que vous utilisez dans le code de votre site web. Si possible :
 
 - préférez l'utilisation d'adresses relatives comme : `../img/header.png` ;
-- évitez les adresses absolues comportant le protocole *HTTP*, comme : `http://mypersonaldomain.ovh/img/header.png`.
+- évitez les adresses absolues comportant le protocole *HTTP*, comme : `http://domain.tld/img/header.png`.
 
 Si nécessaire, adaptez le code de votre site web en conséquence. 
 
-Si vous utilisez un « site clés en main » (WordPress, PrestaShop, Drupal, Joomla!), la structure de ces derniers est généralement déjà conçue pour passer en *HTTPS*. Vous ne devriez pas avoir à faire de modifications dans le code-même de votre web.
+Si vous utilisez un « site clés en main » (WordPress, PrestaShop, Drupal, Joomla!), la structure de ces derniers est généralement déjà conçue pour passer en *HTTPS*. Vous ne devriez pas avoir à faire de modifications dans le code même de votre web.
 
 #### 2.2 - Éviter de générer du contenu dupliqué
 
-Selon la manière dont votre site web est codé, assurez-vous que celui-ci ne sera pas accessible via différentes adresses : la première utilisant le *HTTP* et la seconde le *HTTPS* par exemple. Si tel est le cas, un même contenu sera accessible depuis plusieurs adresses différentes, ce qui est considéré comme du contenu dupliqué ( *duplicate content*) par les moteurs de recherche.
+Selon la manière dont votre site web est codé, assurez-vous que celui-ci ne sera pas accessible via différentes adresses : la première utilisant le *HTTP* et la seconde le *HTTPS* par exemple. Si tel est le cas, un même contenu sera accessible depuis plusieurs adresses différentes : ce qui est considéré comme du contenu dupliqué ( *duplicate content*) par les moteurs de recherche.
 
 Ce phénomène peut baisser le niveau de référencement (SEO) de votre site web. En ce sens, vérifiez que celui-ci « force » l'utilisation du *HTTPS*. Ceci passe par le biais d'une règle de réécriture à placer dans le code de votre site web lorsque vous souhaiterez activer le *HTTPS*.
 
@@ -115,9 +115,9 @@ Si vous ne savez pas comment réaliser cette manipulation depuis l'interface d'a
 
 - **Vous utilisez un site web codé par vous-même (ou par un prestataire)** : 
 
-L'activation du *HTTPS* doit sûrement être effectuée directement dans le code de votre site web. Si vous disposez des connaissances nécessaires, modifiez ainsi le code de votre site afin de l'adapter à l'utilisation du *HTTPS*. En cas de doute sur les manipulations à réaliser, prenez contact avec le développeur de votre site web. 
+L'activation du *HTTPS* doit sûrement être effectuée directement dans le code de votre site web. Si vous disposez des connaissances nécessaires, modifiez le code de votre site afin de l'adapter à l'utilisation du *HTTPS*. En cas de doute sur les manipulations à réaliser, prenez contact avec le développeur de votre site web. 
 
-Si besoin, vous trouverez ci-dessous quelques exemples de scripts à insérer dans un fichier **.htaccess**. Cependant, ceux-ci ne se substitue pas à l’aide d’un webmaster. Remplacez le nom de domaine `domain.tld` présent dans le premier script par votre propre nom de domaine et à l'adapter si nécessaire.
+Si besoin, vous trouverez ci-dessous quelques exemples de scripts à insérer dans un fichier **.htaccess**. Cependant, ceux-ci ne se substituent pas à l’aide d’un webmaster. Remplacez le nom de domaine `domain.tld` présent dans le premier script par votre propre nom de domaine et à l'adapter si nécessaire.
 
 ```bash
 RewriteEngine On
@@ -133,7 +133,7 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-Ce deuxième exemple de script a pour effet de transformer toutes les URLs arrivées en *HTTP* en *HTTPS*, tout en conservant intact le reste de l'URL situé après les `://`.
+Ce deuxième exemple de script a pour effet de transformer toutes les URLs arrivées via le protocole *HTTP* en *HTTPS*, tout en conservant intact le reste de l'URL situé après les `://`.
 
 Pour ce deuxième exemple, vérifiez bien que tous vos noms de domaine ou sous-domaines cibles ont bien un certificat SSL actif.
 
