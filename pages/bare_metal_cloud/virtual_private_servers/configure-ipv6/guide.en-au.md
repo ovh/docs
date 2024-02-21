@@ -331,7 +331,7 @@ Then we edit the `cloud-init-eth0.nmconnection` file, adding only the lines for 
 
 If we assume that your interface is eth0, the configuration should look like this:
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -343,7 +343,7 @@ We have omitted the IPv4 configuration to avoid confusion, but the IPv6 configur
 
 Here is a concrete example:
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -449,7 +449,7 @@ Cloud-init is a package installed by default on a VPS. It functions as a framewo
 
 Depending on the operating system, Cloud-init will manage: the network, the hostname, the resolv.conf file, or the automatic partitioning of the hard disk, in case of an upgrade.
 
-In the case of newer distributions (such as CentOS, Debian 9, Ubuntu 16.x, and later), the default configuration of Cloud-init might sometimes automatically reset the network configuration when the server starts up.
+In the case of newer distributions, the default configuration of Cloud-init might sometimes automatically reset the network configuration when the server starts up.
 
 This is relevant for specific use cases in which it is recommended to avoid the reset by disabling automatic network management in Cloud-init. To do this, use the following command to create a file `/etc/cloud/cloud.cfg.d/98-disable-network-config.cfg` with the value `network: {config: disabled}`:
 
