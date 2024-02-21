@@ -193,7 +193,7 @@ You can refer to the official Rancher documentation on how to [Register Existing
 #### Import an existing OVHcloud Managed Kubernetes Service cluster
 
 If you already use our [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/), you can easily import an existing cluster.
-The workflow is similar to the one described on the official Rancher documentation on [how to register a cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters#registering-a-cluster) and it takes only few minutes.
+The workflow is similar to the one described on the official Rancher documentation on [how to register a cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters#registering-a-cluster) and it takes only a few minutes.
 
 1. From the Rancher Homepage, click on **Import Existing**
 ![Rancher Homepage](images/rancher-homepage.png)
@@ -205,8 +205,9 @@ The workflow is similar to the one described on the official Rancher documentati
 ![Register Cluster Instructions](images/register-cluster-instructions.png)
 
   Run the provided kubectl command on an existing Managed Kubernetes Service cluster that is running a supported Kubernetes version to import it into Rancher:
+
   ``` shell
-  $ kubectl apply -f https://rancher.ovh.net/v3/import/file.yaml
+kubectl apply -f https://rancher.ovh.net/v3/import/file.yaml
   clusterrole.rbac.authorization.k8s.io/proxy-clusterrole-kubeapiserver unchanged
   clusterrolebinding.rbac.authorization.k8s.io/proxy-role-binding-kubernetes-master unchanged
   namespace/cattle-system created
@@ -219,42 +220,38 @@ The workflow is similar to the one described on the official Rancher documentati
   ```
 5. Wait until your cluster becomes available:
 ![Cluster Dashboard](images/cluster-dashboard-explore.png)
-6. Tada ! Your cluster is now federated on your Rancher. You can click on **Explore** to manage your MKS Cluster.
-
-
+6. Your cluster is now federated on your Rancher. You can click on **Explore** to manage your MKS cluster.
 
 ###  Exploring OVHcloud-Specific Integrations
 
 //TODO explain CSI and storage offers
 
-###  Deploying Applications with Rancher
+### Deploying Applications with Rancher
 
-Now that your clusters are set up, leverage Rancher's user-friendly interface to deploy applications effortlessly. Define workloads, services, and deployment strategies within the Rancher UI. Explore the extensive catalog of pre-configured application templates to simplify and expedite your application deployment process.
-To access the applications catalogs, explore your federated downstream Kubernetes cluster and click on Apps/Charts of the left panel.
+Now that your clusters are set up, leverage Rancher's user-friendly interface to deploy applications effortlessly. Define workloads, services, and deployment strategies within the Rancher UI. Explore the extensive catalog of pre-configured application templates to simplify and optimize your application deployment process.
+To access the application catalog, explore your federated downstream Kubernetes cluster and click on Apps/Charts of the left panel.
 
 ![App Catalog](images/app-catalog.png)
 
-###  Managing Resources
+### Managing Resources
 
-Rancher empowers you with robust tools for resource management. Monitor the health of nodes, track resource utilization, and scale applications dynamically as demand fluctuates. The centralized control provided by Rancher ensures efficient resource allocation across your Kubernetes clusters.
+Rancher empowers you with robust tools for resources management. Monitor the health of nodes, track resources utilization, and scale applications dynamically as demand fluctuates. The centralized control provided by Rancher ensures efficient resource allocation across your Kubernetes clusters.
 
-###  Monitoring and Troubleshooting
+### Monitoring and Troubleshooting
 
 Dive into Rancher's monitoring capabilities to gain real-time insights into the performance of your clusters and applications. Use logging features and diagnostic tools to troubleshoot issues promptly. Rancher's comprehensive monitoring suite ensures you can proactively address potential challenges.
 
-
 ### Regular Updates and Maintenance
 
-Stay informed about updates to Rancher and OVHcloud Manager Rancher Service features. Regularly check for new releases, security patches, and optimizations. This proactive approach ensures that your container orchestration environment remains secure, efficient, and aligned with the latest industry standards.
+Stay informed about updates to Rancher and OVHcloud Managed Rancher Service features. Regularly check for new releases, security patches, and optimizations. This proactive approach ensures that your container orchestration environment remains secure, efficient, and aligned with the latest industry standards.
 
 //TODO explanation on upgrade policy
-//TODO explanation regarding the fact that clusters created through rancher should not be manually updated (using API or manager)
+//TODO explanation regarding the fact that clusters created through rancher should not be manually updated (using API or OVHcloud Control Panel)
 
 ### Conclusion
 
-Rancher, when managed within the OVHcloud Cloud environment, offers a comprehensive solution for container orchestration. By following these detailed steps, you'll not only establish a robust Kubernetes infrastructure but also harness the full potential of Rancher's features within the unique context of OVHcloud Cloud.
+Rancher, when managed within the OVHcloud Cloud environment, offers a comprehensive solution for containers orchestration. By following these detailed steps, you'll not only establish a robust Kubernetes infrastructure but also harness the full potential of Rancher's features within the unique context of OVHcloud Public Cloud.
 Happy Ranchering!
-
 
 ## Go further
 
