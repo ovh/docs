@@ -1,13 +1,12 @@
 ---
 title: 'Securing a VPS'
 excerpt: 'Find out the basics of securing your VPS'
-updated: 2024-02-19
-
+updated: 2024-02-20
 ---
 
 ## Objective
 
-When you order your VPS, you can choose a distribution or operating system to pre-install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures which ensure the security and stability of your system.
+When you order your VPS, you can choose a distribution or operating system to pre-install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures to ensure the security and stability of your system.
 
 **This guide provides some general tips for securing a GNU/Linux-based server.**
 
@@ -89,6 +88,31 @@ sudo systemctl restart sshd
 ```
 
 This should be sufficient to apply the changes. Alternatively, reboot the VPS (`~$ sudo reboot`).
+
+**For Ubuntu 23.04 and later**
+
+For the latest Ubuntu versions, the SSH configuration is now managed in the `ssh.socket` file.
+
+To update the SSH port, edit the `Listenstream` line in the configuration file with a text editor of your choice (`nano` used in this example):
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Save your changes and run the following commands:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+If you have enabled your operating system's firewall, make sure you allow the new port in your firewall rules.
 
 Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
 
@@ -204,6 +228,8 @@ You can find all information on the available backup solutions for your service 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 [Configuring the firewall on Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
