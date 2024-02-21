@@ -105,29 +105,41 @@ Dès que votre hébergement web dispose d'un certificat SSL actif, que le [multi
 
 Il existe de multiples manières d'activer le *HTTPS* sur votre site web. Cette opération nécessite de réaliser des manipulations dans la configuration du site web que vous utilisez. Les informations ci-dessous peuvent vous aider dans cette démarche d'activation, mais elles peuvent aussi se révéler incomplètes ou non pertinentes selon votre cas.
 
-- **Vous utilisez un site clés en main (comme WordPress)** : 
+- **Vous utilisez un « site clés en main » (WordPress, PrestaShop, Drupal, Joomla!, etc.)** : 
 
-L'activation du *HTTPS* s'effectue généralement depuis l'interface d'administration de votre site. La dénomination et la manipulation pour activer le *HTTPS* varient selon le site clés en main que vous utilisez. 
+L'activation du *HTTPS* s'effectue généralement depuis l'interface d'administration de votre site web. La dénomination et la manipulation pour activer le *HTTPS* varient selon le « site clés en main » que vous utilisez. 
 
-Par exemple, vous pourriez avoir un paramètre intitulé « Forcer *HTTPS* »  à activer ou devoir modifier le lien complet de votre site pour y rajouter un « s » : « **http**://mypersonaldomain.ovh » deviendrait alors « **https**://mypersonaldomain.ovh ».
+Par exemple, vous pourriez avoir un paramètre intitulé « Forcer *HTTPS* »  à activer ou devoir modifier le lien complet de votre site web pour y rajouter un « s » : « **http**://domain.tld » deviendrait alors « **https**://domain.tld ».
 
-Si vous ne savez pas comment réaliser cette manipulation depuis l'interface d'administration de votre site clés en main ou que vous n'êtes pas sûr de vous, rapprochez-vous de la documentation officielle de l'éditeur de votre site. 
+Si vous ne savez pas comment réaliser cette manipulation depuis l'interface d'administration de votre « site clés en main » ou en cas de doute, rapprochez-vous de la documentation officielle de l'éditeur de votre site web. 
 
-- **Vous utilisez un site que vous avez codé vous-même (ou quelqu'un l'a fait pour vous)** : 
+- **Vous utilisez un site web codé par vous-même (ou par un prestataire)** : 
 
-L'activation du *HTTPS* doit sûrement être effectuée directement dans le code de votre site web. Si vous disposez des connaissances nécessaires, modifiez ainsi le code de votre site afin de l'adapter à l'utilisation du *HTTPS*. Si vous ne savez pas comment faire, prenez contact avec le webmaster qui a créé ce site pour vous. 
+L'activation du *HTTPS* doit sûrement être effectuée directement dans le code de votre site web. Si vous disposez des connaissances nécessaires, modifiez ainsi le code de votre site afin de l'adapter à l'utilisation du *HTTPS*. En cas de doute sur les manipulations à réaliser, prenez contact avec le développeur de votre site web. 
 
-Si vous en avez besoin, vous trouverez ci-dessous un exemple de script à insérer dans un fichier **.htaccess** pouvant vous aider dans votre démarche. Cependant, celui-ci ne se substitue pas à l’aide d’un webmaster. Prenez soin de remplacer l'information générique présente dans ce script par votre propre nom de domaine et à l'adapter si cela est nécessaire.
+Si besoin, vous trouverez ci-dessous quelques exemples de scripts à insérer dans un fichier **.htaccess**. Cependant, ceux-ci ne se substitue pas à l’aide d’un webmaster. Remplacez le nom de domaine `domain.tld` présent dans le premier script par votre propre nom de domaine et à l'adapter si nécessaire.
 
-```console
+```bash
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
+RewriteRule ^(.*)$ https://domain.tld/$1 [R,L]
 ```
+
+Ce premier exemple de script a pour effet de rediriger toutes les URLs arrivées via le port 80 en *HTTP* vers l'URL sécurisée en *HTTPS* `https://domain.tld/`.
+
+```bash
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
+
+Ce deuxième exemple de script a pour effet de transformer toutes les URLs arrivées en *HTTP* en *HTTPS*, tout en conservant intact le reste de l'URL situé après les `://`.
+
+Pour ce deuxième exemple, vérifiez bien que tous vos noms de domaine ou sous-domaines cibles ont bien un certificat SSL actif.
 
 **Attention**, pour les offres d'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/), le script à utiliser est le suivant :
 
-```console
+```bash
 RewriteEngine On
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
@@ -135,13 +147,15 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 ### Étape 4 - Vérifier le bon fonctionnement de votre site web <a name="check-your-website"></a>
 
-Une fois que vous avez activé le *HTTPS* sur votre site web, vérifiez que celui-ci fonctionne correctement et que tout son contenu s'affiche comme avant la manipulation. Pour cela, essayez d'accéder à ce dernier, vérifiez si aucun message ou avertissement n'apparaît et prenez quelques instants pour examiner la mise en page de plusieurs parties de votre site. 
+Une fois le *HTTPS* activé sur votre site web, vérifiez que celui-ci fonctionne correctement et que tout son contenu s'affiche comme avant la manipulation. Pour cela, essayez d'accéder à ce dernier, vérifiez si aucun message ou avertissement n'apparaît et prenez quelques instants pour examiner la mise en page de plusieurs parties de votre site web. 
 
-Si vous constatez le moindre dysfonctionnement, nous vous recommandons vivement d'essayer rapidement de le résoudre ou de faire machine arrière en désactivant le *HTTPS*. En cas de réelle nécessité, vous disposez également de la sauvegarde complète de votre site réalisée lors de l'étape précédente.
+Si vous constatez le moindre dysfonctionnement, essayez de le résoudre le plus rapidement possible ou faites machine arrière en désactivant le *HTTPS*. En cas de réelle nécessité, vous disposez également de la sauvegarde complète de votre site web réalisée lors de l'[étape 3](#https-enable).
 
-Si votre site s'affiche correctement et qu'aucun avertissement ne s'affiche après le passage en *HTTPS*, vous avez correctement effectué la manipulation. Si vous souhaitez activer le *HTTPS* sur un autre site, vous devrez réitérer l'intégralité des manipulations décrites dans cette documentation.
+Si votre site web s'affiche correctement et qu'aucun avertissement n'apparaît après le passage en *HTTPS*, vous avez correctement effectué la manipulation. Si vous souhaitez activer le *HTTPS* sur un autre site web, réitérez l'intégralité des manipulations décrites dans cette documentation.
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
