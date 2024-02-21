@@ -13,7 +13,7 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
@@ -203,15 +203,17 @@ You can test the IPv6 connectivity by running the commands shown below:
 ```sh
 ping6 -c 4 2001:4860:4860::8888
 
->>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
+ping6 -c 4 2001:4860:4860::8888
 
->>> --- 2001:4860:4860::8888 ping statistics ---
->>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
->>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
+
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
@@ -312,15 +314,15 @@ You can test the IPv6 connectivity by running the commands shown below:
 ```sh
 ping6 -c 4 2001:4860:4860::8888
 
->>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
 
->>> --- 2001:4860:4860::8888 ping statistics ---
->>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
->>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
