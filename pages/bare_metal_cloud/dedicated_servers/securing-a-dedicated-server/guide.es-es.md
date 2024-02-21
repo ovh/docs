@@ -103,6 +103,10 @@ Para las últimas versiones de Ubuntu, la configuración SSH se gestiona ahora e
 
 Para actualizar el puerto SSH, edite la línea `Listenstream` en el archivo de configuración con un editor de texto de su elección (`nano` utilizado en este ejemplo):
 
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
 ```console
 [Socket]
 ListenStream=49152

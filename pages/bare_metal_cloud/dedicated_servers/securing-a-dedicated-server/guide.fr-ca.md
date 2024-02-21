@@ -102,6 +102,10 @@ Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gér�
 
 Pour mettre à jour le port SSH, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
 
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
 ```console
 [Socket]
 ListenStream=49152

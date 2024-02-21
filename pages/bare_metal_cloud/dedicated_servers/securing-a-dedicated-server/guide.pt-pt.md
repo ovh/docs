@@ -103,7 +103,11 @@ Para as últimas versões de Ubuntu, a configuração SSH é agora gerida no fic
 
 Para atualizar a porta SSH, edite a linha `Listenstream` no ficheiro de configuração com um editor de texto à sua escolha (`nano` utilizado neste exemplo):
 
-```consola
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
 [Socket]
 ListenStream=49152
 Accept=no
