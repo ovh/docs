@@ -40,14 +40,12 @@ Le fait que votre site web possède ou non une connexion sécurisée devient alo
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
-Le tableau ci-dessous résume les principales étapes à réaliser pour passer votre site web en *HTTPS*
+Retrouvez ci-après les principales étapes décrites dans la suite du présent guide pour passer votre site web en *HTTPS* :
 
-|Étapes|Description|Détail|
-|---|---|---|
-|1|[Activer le certificat SSL sur l'hébergement web](#enable-ssl)|Permet d'activer ou de vérifier qu'un certificat SSL est bien installé sur votre hébergement web et est bien activé pour le site web concerné.|
-|2|[Vérifier l'environnement technique](#check-environment)|Permet de vérifier que le passage de votre site en *HTTPS* n'engendrera pas de dysfonctionnements avant d'initier un quelconque changement.|
-|3|[Activer le *HTTPS* sur votre site web](#https-enable)|Permet à votre site web  d'utiliser le protocole *HTTPS*. La méthode exposée dans le présent guide n'est pas universelle et dépendra du site web utilisé.|
-|4|[Vérifier le bon fonctionnement de votre site web](#check-your-website)|Permet de s'assurer qu'après l'activation du *HTTPS*, votre site web s'affiche correctement.|
+- [Étape 1 - Activer le certificat SSL sur l'hébergement web](#enable-ssl) : permet d'activer ou de vérifier qu'un certificat SSL est bien installé sur votre hébergement web et est bien activé pour le site web concerné.
+- [Étape 2 - Vérifier l'environnement technique](#check-environment) : permet de vérifier que le passage de votre site en *HTTPS* n'engendrera pas de dysfonctionnements avant d'initier un quelconque changement.
+- [Étape 3 - Activer le *HTTPS* sur votre site web](#https-enable) : permet à votre site web  d'utiliser le protocole *HTTPS*. La méthode exposée dans le présent guide n'est pas universelle et dépendra du site web utilisé.
+- [Étape 4 - Vérifier le bon fonctionnement de votre site web](#check-your-website) : permet de s'assurer qu'après l'activation du *HTTPS*, votre site web s'affiche correctement.
 
 ### Étape 1 - Activer le certificat SSL sur l'hébergement web <a name="enable-ssl"></a>
 
