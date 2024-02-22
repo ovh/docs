@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Managed Rancher Service
 excerpt: 'Find out how to start using Managed Rancher Service on OVHcloud'
-updated: 2024-02-22
+updated: 2024-02-23
 ---
 
 > [!warning]
@@ -15,16 +15,21 @@ updated: 2024-02-22
 Container orchestration has become a cornerstone of modern application deployment, offering scalability, flexibility, and resource efficiency. Rancher is an open-source container management platform that simplifies the deployment and management of Kubernetes clusters.
 Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. In this Getting Started guide we will explore the intricacies of setting up and managing container clusters.
 
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+
 ## Rancher Creation and Access
 
 To initiate your journey, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `Public Cloud`{.action} section. 
 Then access the `Managed Rancher Service`{.action} under the `Containers & Orchestration` section.
 Using the OVHcloud Control Panel you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
 
-Simply click on the '`Create`{.action} button at the top right of the Control Panel and follow the steps below:
+Simply click on the `Create`{.action} button at the top right of the Control Panel and follow the steps below:
 
 1. Define your Rancher's name.
-2. Select your Plan between "OVHcloud Edition" (coming soon) and "Standard".
+2. Select your Plan between **OVHcloud Edition** (coming soon) and **Standard**.
 3. Select the Rancher version.
 4. Click on `Create`{.action}.
 5. Wait for your Rancher to be created.
@@ -85,9 +90,9 @@ You need to provide the following parameters:
 | Member Roles | Yes, default value is ok | Configure user authorization for the cluster. Click `Add Member`{.action} to add users that can access the cluster. Use the Role drop-down menu to set permissions for each user. |
 | Label & Annotations | No | Add Kubernetes labels or annotations to the cluster. |
 | Account Configuration | Yes | Provide your OVH API credentials, you can follow our guide on how to [Generate your OVHcloud API keys](/pages/manage_and_operate/api/first-steps#advanced-usage-pair-ovhcloud-apis-with-an-application). wildcard. |
-| Application Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on `https://www.ovh.com/auth/api/createToken`. |
-| Consumer Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on `https://www.ovh.com/auth/api/createToken`. |
-| Application Secret | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on `https://www.ovh.com/auth/api/createToken`. |
+| Application Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
+| Consumer Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
+| Application Secret | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
 | Public Cloud project ID | Yes | The projectID of the OVHcloud project where your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the OVHcloud Control Panel or [API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) |
 | OVH API Endpoint | Yes | Select the OVHcloud subsidiary (EU, US, CA) |
 
@@ -169,12 +174,19 @@ Provide the following parameters:
 Once created, the cloud credentials will be used to provision nodes in your cluster. You can reuse these credentials for other node templates or in other clusters.
 
 4\. Click on `Get Project List`{.action} and select the **Project** were you want to create your cluster.
+
 5\. Click on `Continue`{.action}.
+
 6\. Set your **Cluster Name** and **Cluster Description**.
 
 ![Public Cloud Driver - Cloud Credentials](images/PublicCloudDriver_creation_cloud_credential.png){.thumbnail}
 
-7\. Create a **Machine Pool** for each Kubernetes role. Refer to the [Best Practices](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider#node-roles), [Node Requirements for Rancher Managed Clusters](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters), [Requirements for RKE2 installation (flavors and OS)](https://docs.rke2.io/install/requirements) and [Recommended Cluster Architecture](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/recommended-cluster-architecture) guides for recommendations on role assignments and counts.
+7\. Create a **Machine Pool** for each Kubernetes role. Refer to the following guides for recommendations on role assignments and counts:
+
+- [Best Practices](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider#node-roles)
+- [Node Requirements for Rancher Managed Clusters](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters)
+- [Requirements for RKE2 installation (flavors and OS)](https://docs.rke2.io/install/requirements)
+- [Recommended Cluster Architecture](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/checklist-for-production-ready-clusters/recommended-cluster-architecture)
 
 ![Cluster Creation](images/PublicCloudDriver_creation_machine_pool.png){.thumbnail}
 
@@ -195,6 +207,7 @@ For each machine pool, define the machine configuration by providing the followi
 
 8\. Use the **Cluster Configuration** to choose the version of Kubernetes that will be installed, which network provider will be used and if you want to enable project network isolation. For help configuring the cluster, refer to the [RKE2 cluster configuration reference](https://ranchermanager.docs.rancher.com/reference-guides/cluster-configuration/rancher-server-configuration/rke2-cluster-configuration).
 Use Member Roles to configure user authorization for the cluster. Click `Add Member`{.action} to add users that can access the cluster. Use the `Role` drop-down menu to set permissions for each user.
+
 9\. Click `Create`{.action}.
 
 #### Importing an existing Kubernetes cluster
