@@ -105,14 +105,23 @@ Pour accéder aux statistiques de votre site web avec un utilisateur que vous av
 https://logs.cluster000.hosting.ovh.net/domain.tld/
 ```
 
-Depuis la section `Statistiques et logs`{.action}, cliquez sur `Voir les statistiques`{.action}.<br>
-Depuis l'onglet de votre navigateur qui affiche la fenêtre de statistiques, récupérez le lien qui servira à vous connecter avec l'un des utilisateurs créés.
+Vous pouvez également récupérer le lien d'accès aux statistiques / logs directement depuis votre espace client :
+
+1. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
+4. Sélectionnez l'hébergement web concerné.
+5. Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}.
+6. Rendez-vous dans la section `Statistiques de visite`{.action}.
+7. Cliquez sur le bouton `Voir les statistiques`{.action}.
 
 ![website visit statistics](images/view-statistics.png){.thumbnail}
 
+Sur la nouvelle page qui apparaît, récupérez l'URL située dans la barre d'adresse de votre navigateur internet.
+
 > [!warning]
 >
-> Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite.
+> Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite spécifiquement.
 >
 
 ## Aller plus loin
