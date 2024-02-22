@@ -27,26 +27,26 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
         - [Search for an emai](#topwindow-search)
     - [Email content (bottom window)](#lowerwindow)
 - [Configuring Roundcube interface preferences](#roundcube-settings)
-    - [User Interface](#user-interface-settings)
-    - [Mailbox View](#mail-view-settings)
-    - [Displaying Messagess](#mail-display-settings)
-    - [Composing Messages](#mail-writing-settings)
+    - [User interface](#user-interface-settings)
+    - [Mailbox view](#mail-view-settings)
+    - [Displaying messagess](#mail-display-settings)
+    - [Composing messages](#mail-writing-settings)
     - [Contacts](#contacts-settings)
-    - [Special Folders](#special-folder-settings)
-    - [Server Settings](#server-settings)
+    - [Special folders](#special-folder-settings)
+    - [Server settings](#server-settings)
 - [Managing identities and their signatures](#identity-signature)
     - [Identity](#identity)
     - [Signature](#signature)
-- [Carnet de contacts](#contact-book)
+- [Contact book](#contact-book)
     - [Groups](#group)
     - [Contacts](#contacts)
-    - [Import Contacts](#import-contacts)
-    - [Export Contacts](#export-contacts)
-- [Réponses (gabarits)](#responses)
-- [Ajouter un répondeur ou réponse automatique](#automatic-respond)
-- [Modifier le mot de passe de votre adresse-mail](#password)
-- [Rédaction d'un e-mail](#email-writing)
-- [Cas d'usages](#usecase)
+    - [Importing contacts](#import-contacts)
+    - [Exporting contacts](#export-contacts)
+- [Responses (templates)](#responses)
+- [Adding an autoresponder](#automatic-respond)
+- [Changing your email password](#password)
+- [Writing an email](#email-writing)
+- [Use cases](#usecase)
 
 ### Logging in to Roundcube <a name="roundcube-connexion"></a>
 
@@ -210,7 +210,7 @@ In Roundcube, click `Settings`{.action} in the top bar, then `Identities`{.actio
 
 ![hosting](images/roundcube07.png){.thumbnail}
 
-#### Set attributes for an identity <a name="identity"></a>
+#### Setting attributes for an identity <a name="identity"></a>
 
 - **Display Name**: This name will appear in the “sender” section of the recipient.
 - **Email**: This will be displayed as the address from which the email is sent.
@@ -225,7 +225,7 @@ In Roundcube, click `Settings`{.action} in the top bar, then `Identities`{.actio
 > 
 > Filling in the **Email** box with an email address different from the one you are logged in to is considered to be *spoofing*. The IP address used for sending may be banned and/or considered "SPAM" by your recipients. 
 
-#### Add a signature <a name="signature"></a>
+#### Adding a signature <a name="signature"></a>
 
 By default, the `Signature` box is set to plain text. This format does not allow advanced editing or inserting an image into your signature. For advanced editing options for a signature, it is recommended that you enable HTML mode by clicking **HTML Signature**  under the text frame.
 
@@ -284,7 +284,7 @@ Then fill in the contact information.
 > [!primary]
 > You can add additional fields via the `Add Field...`{.action} drop-down menu, located under the `First name` and `Address` sections.
 
-#### Import Contacts <a name="import-contacts"></a>
+#### Importing Contacts <a name="import-contacts"></a>
 
 In the `Contacts`{.action} window in the top bar, click `Import`{.action} to open the import window.
 
@@ -294,7 +294,7 @@ In the `Contacts`{.action} window in the top bar, click `Import`{.action} to ope
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-#### Export Roundcube Contacts <a name="export-contacts"></a>
+#### Exporting Roundcube Contacts <a name="export-contacts"></a>
 
 In the `Contacts`{.action} window in the top bar, click the down arrow to the right of the `Export`{.action} button.
 
@@ -319,11 +319,11 @@ To add a response, click the `+`{.action} button at the bottom of the `Replies` 
 > 
 > `Responses` are written in plain text format.
 
-### Add an auto-reply <a name="automatic-respond"></a>
+### Adding an autoresponder <a name="automatic-respond"></a>
 
-You want to add an automatic reply to your email address when you are absent or unavailable. This feature cannot be enabled via webmail, but via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the management interface for your email addresses. Read our guide "[Creating an auto-reply for an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+You want to add an automatic reply to your email account when you are absent or unavailable. This feature cannot be enabled via webmail, but via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the management interface for your email accounts. Read our guide "[Creating an autoresponder for your email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
-### Change your email password <a name="password"></a>
+### Changing your email password <a name="password"></a>
 
 To change your email password, you will need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the interface for managing your email addresses. Read our guide "[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
@@ -363,7 +363,7 @@ In the top bar, the following actions are available:
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
-### use cases <a name="usecase"></a>
+### Use cases <a name="usecase"></a>
 
 #### Request verification failed
 
@@ -377,7 +377,7 @@ Human interaction is now required to continue.
 Please contact your server-administrator.
 ```
 
-As you will see in the email, your account will be considered as already logged in. This is called a session. This means that your email account is already being used by the email server, and that the previous session must be closed . Check that your email account has not already been opened on roundcube. You can also clear cached data on your web browser.
+As you will see in the email, your account will be considered as already logged in. This is called a session. It means that your email account is already being used by the email server, and that the previous session must be closed. Check that your email account has not already been opened on Roundcube. You can also clear cached data in your web browser.
 
 ## Go further <a name="gofurther"></a>
 
