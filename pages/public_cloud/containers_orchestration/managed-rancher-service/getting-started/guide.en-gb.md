@@ -6,7 +6,7 @@ updated: 2024-02-01
 
 > [!warning]
 >
-> Usage of [Managed Rancher Service](https://labs.ovhcloud.com/en/managed-rancher-service/) is currently in Alpha phase.
+> Usage of [Managed Rancher Service](https://labs.ovhcloud.com/en/managed-rancher-service/) is currently in Beta phase.
 > This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate do join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 >
 
@@ -16,11 +16,6 @@ Container orchestration has become a cornerstone of modern application deploymen
 Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. In this Getting Started guide we will explore the intricacies of setting up and managing container clusters.
 
 ## Rancher Creation and Access
-
-> [!warning]
->
-> During the Alpha phase, Rancher access are directly provided by OVHcloud team. It will be available through the OVHcloud Control Panel at Beta release phase. Please ignore this part for now.
->
 
 To initiate your journey, log in to the OVHcloud Control Panel and access the _Managed Rancher Service_ under the _Container & Orchestration_ section.
 Using the OVHcloud Control Panel you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
@@ -61,6 +56,7 @@ We will detail below how to use OVHcloud as a Hosted Kubernetes provider and Inf
 > [!warning]
 >
 > Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/en/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/en/public-cloud/prices/) pricing pages.
+> Once your Managed Kubernetes clusters are created, we do recommend to perform all actions (upgrade, nodepool management, cluster modification) from the Rancher console and do not perform any actions directly on OVHcloud APIs or OVHcloud Control Panel as this can lead to desynchronization.  
 >
 
 On this part we will detail how to use Rancher to create and manage [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/) clusters.
@@ -81,23 +77,13 @@ On this part we will detail how to use Rancher to create and manage [OVHcloud Ma
 | Name                    | Yes                                 | Name of the Managed Kubernetes Service Cluster that will be created.                                                                                                                                                                                                                                                                                                                                                                 |
 | Member Roles            | Yes, default value is ok| Configure user authorization for the cluster. Click Add Member to add users that can access the cluster. Use the Role drop-down to set permissions for each user.                                                                                                                                                                                                                                                                     |
 | Label & Annotations     | No                                  | Add Kubernetes labels or annotations to the cluster.                                                                                                                                                                                                                                                                                                                                                                                  |
-| Account Configuration   | Yes                                 | Provide your OVH API credentials, you can follow our guide on how to [Generate your OVHcloud API Keys](https://help.ovhcloud.com/csm/en-ie-api-getting-started-ovhcloud-api?id=kb_article_view&sysparm_article=KB0042786#advanced-usage-pair-ovhcloud-apis-with-an-application). Please refer to the table bellow to set the required rights on APIs  routes. Restrictions are Optional, you can use a `/*` wildcard.                                                                                                                       |
+| Account Configuration   | Yes                                 | Provide your OVH API credentials, you can follow our guide on how to [Generate your OVHcloud API Keys](https://help.ovhcloud.com/csm/en-ie-api-getting-started-ovhcloud-api?id=kb_article_view&sysparm_article=KB0042786#advanced-usage-pair-ovhcloud-apis-with-an-application). wildcard.                                                                                                                       |
 | Application Key         | Yes                                 | Refer to the guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
 | Consumer Key            | Yes                                 | Refer to the guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
 | Application Secret      | Yes                                 | Refer to the guide provided above. Value is provided at APIs Keys generation step on https://www.ovh.com/auth/api/createToken                                                                                                                                                                                                                                                                                                                  |
 | Public cloud project ID | Yes                                 | The projectID of the OVHcloud project where your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](https://help.ovhcloud.com/csm/en-public-cloud-compute-create-project?id=kb_article_view&sysparm_article=KB0050599) or if already existing, you can copy/paste it from OVHcloud Control Panel or [APIs](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project)  |
 | OVH API Endpoint        | Yes                                 | Select the OVHcloud subsidiary (EU, US, CA)                                                                                                                                  |
 
-Minimum required access rights on the APIs routes (can be used to limit access rights when creating APIs keys on https://www.ovh.com/auth/api/createToken):
-
-  | Method              | API Route                                             |
-  |---------------------|-------------------------------------------------------|
-  | POST                | /cloud/project/{PROJECT-ID}/kube                      |
-  | POST/GET/PUT/DELETE | /cloud/project/{PROJECT-ID}/kube/*                    |
-  | GET                 | /cloud/project/{PROJECT-ID}/capabilities/kube/flavors |
-  | GET                 | /cloud/project/{PROJECT-ID}/capabilities/kube/regions |
-  | GET                 | /cloud/project/{PROJECT-ID}/network/private           |
-  | GET                 | /cloud/project                                        |
 
 4. Move to **Cluster Configuration**
 ![MKS Driver Cluster Configuration](images/mksdriver_cluster_config.png)
@@ -222,9 +208,6 @@ kubectl apply -f https://rancher.ovh.net/v3/import/file.yaml
 ![Cluster Dashboard](images/cluster-dashboard-explore.png)
 6. Your cluster is now federated on your Rancher. You can click on **Explore** to manage your MKS cluster.
 
-###  Exploring OVHcloud-Specific Integrations
-
-//TODO explain CSI and storage offers
 
 ### Deploying Applications with Rancher
 
@@ -245,12 +228,9 @@ Dive into Rancher's monitoring capabilities to gain real-time insights into the 
 
 Stay informed about updates to Rancher and OVHcloud Managed Rancher Service features. Regularly check for new releases, security patches, and optimizations. This proactive approach ensures that your container orchestration environment remains secure, efficient, and aligned with the latest industry standards.
 
-//TODO explanation on upgrade policy
-//TODO explanation regarding the fact that clusters created through rancher should not be manually updated (using API or OVHcloud Control Panel)
-
 ### Conclusion
 
-Rancher, when managed within the OVHcloud Cloud environment, offers a comprehensive solution for containers orchestration. By following these detailed steps, you'll not only establish a robust Kubernetes infrastructure but also harness the full potential of Rancher's features within the unique context of OVHcloud Public Cloud.
+Rancher, when used within the OVHcloud Cloud environment, offers a fully managed solution for containers orchestration. By following these detailed steps, you'll not only establish a robust Kubernetes infrastructure but also harness the full potential of Rancher's features within the unique context of OVHcloud Public Cloud.
 Happy Ranchering!
 
 ## Go further
