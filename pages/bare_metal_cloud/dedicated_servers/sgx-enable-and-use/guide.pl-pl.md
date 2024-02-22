@@ -1,7 +1,7 @@
 ---
 title: 'Włączenie Intel SGX na serwerze dedykowanym'
 excerpt: 'Włącz opcję SGX na serwerze Infrastructure lub Advance i zainstaluj stos oprogramowania SGX na Linux'
-updated: 2022-08-31
+updated: 2024-02-22
 ---
 
 > [!primary]
@@ -15,19 +15,10 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 
 ## Wymagania początkowe
 
-- Dedykowany serwer [Infrastructure](https://www.ovh.pl/serwery_dedykowane/infra/){.external} lub z [gamy Advance](https://www.ovhcloud.com/pl/bare-metal/advance/) z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/){.external}
-- Dostęp administracyjny (uprawnienia użytkownika root) do serwera za pośrednictwem protokołu SSH
-- Dostęp do [interfejsów API OVHcloud](https://api.ovh.com/){.external}
+- Dedykowany serwer kompatybilny z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/){.external}
+- Posiadanie danych do logowania otrzymanych w e-mailu po zakończonej instalacji
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [API OVHcloud](https://api.ovh.com/)
 - Zainstalowana na serwerze dystrybucja Ubuntu 18.04 lub podobna
-
-> [!warning]
->
-> Spośród gamy Advance tylko poniższe serwery wyposażone w procesor Intel są kompatybilne z technologią Intel SGX:
->
-> - Advance-1
-> - Advance-2
-> - Advance-6
-> - Advance-APAC
 
 ## W praktyce
 
