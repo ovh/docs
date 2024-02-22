@@ -1,6 +1,6 @@
 ---
 title: "Erstellung Ihres ersten OVHcloud Public Cloud Projekts"
-excerpt: "Finden Sie heraus, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter"
+excerpt: "Erfahren Sie hier, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter erstellen"
 updated: 2024-02-22
 ---
 
@@ -26,8 +26,8 @@ Nachdem Sie die Vertragsbedingungen gelesen haben, bestätigen Sie diese, indem 
 
 ![Projekt erstellen](images/firstproject2024.png){.thumbnail}
 
-- Wenn Sie noch kein gültiges Zahlungsmittel in Ihrem OVHcloud Account haben, beginnt der Erstellungsprozess des Public Cloud Projekts. Ihr Projekt wird dann im [Discovery-Modus](#discovery) erstellt.
-- Wenn Sie bereits eine Zahlungsart in Ihrem OVHcloud Account angegeben haben, müssen Sie zuerst Ihr Public Cloud Projekt benennen und dann Ihre Zahlungsart auswählen.
+- Wenn Sie noch kein gültiges Zahlungsmittel in Ihrem OVHcloud Account haben, beginnt direkt der Erstellungsprozess des Public Cloud Projekts. Ihr Projekt wird dann zunächst im [Discovery-Modus](#discovery) erstellt.
+- Wenn Sie bereits eine Zahlungsart in Ihrem OVHcloud Account hinterlegt haben, können Sie Ihr Public Cloud Projekt benennen und dann Ihre Zahlungsart auswählen.
 
 ![Projekt erstellen](images/project-creation.png){.thumbnail}
 
@@ -42,7 +42,7 @@ Sie haben ab sofort Zugriff auf das gesamte OVHcloud Public Cloud Ökosystem. En
 > [!primary]
 > **Discovery-Modus**
 >
-> Wenn es sich um Ihr erstes Public Cloud Projekt handelt und Sie keine Zahlungsart in Ihrem Account angegeben haben, ist Ihr Public Cloud Projekt auf den „Discovery Mode“ des OVHcloud Kundencenters beschränkt. Das bedeutet, dass Sie die Public Cloud Produkte durchsuchen und entdecken können, aber noch keine Ressourcen wie Instanzen erstellen können.
+> Wenn es sich um Ihr erstes Public Cloud Projekt handelt und Sie keine Zahlungsart in Ihrem Account angegeben haben, ist Ihr Public Cloud Projekt auf den Discovery-Modus des OVHcloud Kundencenters beschränkt. Das bedeutet, dass Sie die Public Cloud Produkte durchsuchen und entdecken können, aber noch keine Ressourcen wie etwa Instanzen erstellen können.
 >
 > Um das volle Potenzial der Public Cloud auszuschöpfen und Ihre ersten Ressourcen zu verwenden, klicken Sie auf der Startseite Ihres Projekts auf `Projekt aktivieren`{.action}.
 >
