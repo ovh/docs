@@ -22,8 +22,8 @@ Once you have read and understood the terms of the contracts, tick the correspon
 
 ![project creation](images/firstproject2024.png){.thumbnail}
 
-- If you do not have a valid payment method in your OVHcloud account yet, the process of creating the Public Cloud project begins. Your project will then be created in [Discovery mode](#discovery).
-- If you have already entered a payment method in your OVHcloud account, you will need to name your Public Cloud project first, then select your payment method.
+- If you do not have a valid payment method in your OVHcloud account yet, the process of creating the Public Cloud project begins. Your project will then be created in [discovery mode](#discovery).
+- If you have already registered a payment method in your OVHcloud account, you will need to name your Public Cloud project first, then select your payment method.
 
 ![project creation](images/project-creation.png){.thumbnail}
 
@@ -38,7 +38,7 @@ You now have access to the entire OVHcloud Public Cloud ecosystem. To discover t
 > [!primary]
 > **Discovery Mode**
 >
-> If this is your first Public Cloud project and you have not entered a payment method in your account, your Public Cloud project is then restricted to the `Discovery mode` of the OVHcloud Control Panel. This means that you can browse and discover Public Cloud products, but you cannot yet create resources such as instances.
+> If this is your first Public Cloud project and you have not entered a payment method in your account, your Public Cloud project is then restricted to the `discovery mode` of the OVHcloud Control Panel. This means that you can browse and discover Public Cloud products, but you cannot yet create resources such as instances.
 >
 > To harness the full potential of the Public Cloud and start your first resources, click `Activate project`{.action} on your project’s homepage.
 >
