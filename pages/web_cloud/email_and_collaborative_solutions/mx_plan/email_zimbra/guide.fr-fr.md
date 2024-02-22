@@ -142,23 +142,23 @@ Lorsque vous sélectionnez un dossier ou sous-dossier dans la colonne de gauche,
 
 Lorsque vous sélectionnez un e-mail est sélectionné, de nombreuses actions sont alors disponibles :
 
-- 1.`Répondre`{.action} : répondre directement à l'expéditeur.
-- 2.`Répondre à tous`{.action} : répondre directement à tous les destinataires présents dans les champs « A » et « Copie ».
-- 3.`Transférer`{.action} : transférer l'e-mail sélectionné à un ou plusieurs destinataires.
-- 4.`Archiver`{.action} : déplacer l'e-mail vers le dossier « Archive » de votre compte e-mail.
-- 5.`Déplacer`{.action} : déplacer l'e-mail vers un des dossiers du compte e-mail.
-- 6.`Supprimer`{.action} : placer l'e-mail sélectionné dans la « Corbeille ».
-- 7.`SPAM`{.action} : placer l'e-mail sélectionné directement dans le dossier de courrier indésirable (SPAM).
-- 8.`Plus`{.action}
-    - `Marquer comme lu`{.action}.
-    - `Marquer comme non lu`{.action}.
-    - `Étoile`{.action} : attribuer une étoile à votre e-mail pour le mettre en évidence et l'identifier plus facilement.
-    - `Supprimer l'étoile`{.action} : retirer l'étoile attribuée à cet e-mail.
-    - `Bloquer`{.action} : afficher l'e-mail sous sa forme brute avec l'en-tête.
-    - `Afficher l'original`{.action} : Afficher le message dans son intégralité, corps et en-tête.
-    - `Nouveau filtre`{.action} : créer un filtre à partir de l'expéditeur et de l'objet du message sélectionné.
-    - `Imprimer`{.action} : imprimer la conversation ou l'e-mail sélectionné.
-- 9.`Afficher`{.action} : sélectionner l'une des 3 dispositions pour visualiser vos dossiers et e-mails.
+- 1.**Répondre** : répondre directement à l'expéditeur.
+- 2.**Répondre à tous** : répondre directement à tous les destinataires présents dans les champs « A » et « Copie ».
+- 3.**Transférer** : transférer l'e-mail sélectionné à un ou plusieurs destinataires.
+- 4.**Archiver** : déplacer l'e-mail vers le dossier « Archive » de votre compte e-mail.
+- 5.**Déplacer** : déplacer l'e-mail vers un des dossiers du compte e-mail.
+- 6.**Supprimer** : placer l'e-mail sélectionné dans la « Corbeille ».
+- 7.**SPAM** : placer l'e-mail sélectionné directement dans le dossier de courrier indésirable (SPAM).
+- 8.**Plus**
+    - **Marquer comme lu**.
+    - **Marquer comme non lu**.
+    - **Étoile** : attribuer une étoile à votre e-mail pour le mettre en évidence et l'identifier plus facilement.
+    - **Supprimer l'étoile** : retirer l'étoile attribuée à cet e-mail.
+    - **Bloquer** : afficher l'e-mail sous sa forme brute avec l'en-tête.
+    - **Afficher l'original** : Afficher le message dans son intégralité, corps et en-tête.
+    - **Nouveau filtre** : créer un filtre à partir de l'expéditeur et de l'objet du message sélectionné.
+    - **Imprimer** : imprimer la conversation ou l'e-mail sélectionné.
+- 9.**Afficher** : sélectionner l'une des 3 dispositions pour visualiser vos dossiers et e-mails.
 
 ![Zimbra - actions](images/zimbra-07.png){.thumbnail}
 
@@ -177,6 +177,8 @@ Si vous souhaitez retrouver un e-mail, utilisez la barre de recherche dans la pa
 > **Recherche simple**
 >>
 >> Saisissez le ou les mots clés que vous souhaitez retrouvez dans la barre de recherche et appuyez sur la touche `Entrée` pour valider votre recherche. Le ou les mots apparaîtront en surbrillance dans vos résultats.
+>>
+>> > Si vous souhaitez rechercher rapidement un expéditeur, vous pouvez tapez « from: » avant l'adresse e-mail que vous recherchez. Par exemple « from: address@example.com ».
 >>
 >> ![Zimbra - recherche simple](images/zimbra-08.png){.thumbnail}
 >>
@@ -276,10 +278,9 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >>
 >> Cet espace vous permet de créer vos signatures.<br>
 >>
->> - **Compte** : sélectionnez l'[identité](#identities) pour laquelle vous souhaitez créer votre signature.
 >> - **Signature standard** : saisissez la signature qui apparaîtra lorsque vous rédigez un nouvel e-mail.
 >> - **Signature de réponse ou transmission** : vous permet d'ajouter une signature différente lorsque vous répondez ou transmettez un e-mail.
->> - **Signatures supplémentaires** : cliquez sur `+ Ajouter une signature`{.action} pour ajouter une signature additionelle. Celle-ci ne sera pas attachée à un compte (identité) et pourra être ajoutée manuellement lorsque vous rédigez un e-mail.
+>> - **Signatures supplémentaires** : cliquez sur `+ Ajouter une signature`{.action} pour ajouter une signature additionelle. Celle-ci ne sera pas attachée à un compte et pourra être ajoutée manuellement lorsque vous rédigez un e-mail.
 >>
 > **Absent du bureau**
 >>
@@ -289,14 +290,6 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >>
 >> Pour configurer vos filtres, consultez la section « [Filtres](#filters) » de cette documentation.
 >>
-> **Expéditeurs bloqués et autorisés**
->>
->> Vous disposez de 2 fenêtres :
->>
->> - **Expéditeurs et domaines bloqués** : permet d'ajouter les adresses e-mail et nom de domaines que vous souhaitez bloquer.
->> - **Expéditeurs et domaines autorisés** : permet de lister les adresses e-mail et nom de domaines que vous souhaitez autoriser, ce qui évite qu'ils soient potentiellement bloqués pour SPAM.
-
-> Lorsque vous avez effectué l'ensemble de vos réglages dans le menu « **Paramètres** », cliquez sur `Enregistrer`{.action} pour valider vos choix, ou cliquez sur `Annuler`{.action} pour ignorer les changements.
 
 ### Contacts <a name="contacts"></a>
 
@@ -346,7 +339,7 @@ Pour créer une liste, cliquez dans l'encadré intitulé `Nouvelle liste` en bas
 
 Pour affecter un contact à l'une de vos listes, sélectionnez le contact dans la colonne du milieu puis, dans la fenêtre qui apparaît à droite, cliquez sur `Affecter à des listes`{.action}. Cochez la ou les listes que vous souhaitez attribuer au contact. Vous pouvez également saisir le nom d'une nouvelle liste et cliquer sur `Ajouter`{.action}.
 
-![Zimbra - listes](images/zimbra-18.png){.thumbnail}
+![Zimbra - listes](images/zimbra-list.png){.thumbnail}
 
 #### Importer / Exporter des Contacts <a name="import-export"></a>
 
@@ -457,11 +450,11 @@ Cliquez sur le bouton `+ Ajouter un filtre`{.action} pour lancer sa création. L
 > [!tabs]
 > **Mode simple**
 >>
->> ![Zimbra - filtres - mode simple](images/zimbra-21.png){.thumbnail}
+>> ![Zimbra - filtres - mode simple](images/zimbra-22.png){.thumbnail}
 >>
 > **Mode avancé**
 >>
->> ![Zimbra - filtres - mode avancé](images/zimbra-22.png){.thumbnail}
+>> ![Zimbra - filtres - mode avancé](images/zimbra-23.png){.thumbnail}
 >>
 
 ### Délégations <a name="delegations"></a>
@@ -487,32 +480,6 @@ Il est possible de déléguer votre compte e-mail à un autre compte e-mail. Cel
 - **Enregistrer les mails envoyés dans le dossier « Envoyés » du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans son dossier « Envoyés ».
 - **Enregistrer les mails envoyés dans mon dossier « Envoyés » et dans celui du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés »  ainsi que dans son dossier « Envoyés ».
 - **Ne pas enregistrer de copie des mails envoyés** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, il n'y aura aucune copie de faite.
-
-### Identités <a name="identities"></a>
-
-Cliquez sur la roue crantée en haut à droite de votre interface Zimbra puis sur `Paramètres`{.action} et enfin sur `Comptes`{.action} dans la colonne de gauche.
-
-Créer des « personnages » (persona / identités) vous permet de définir rapidement un profil d'envoi spécifique à vos usages (personel, professionel).
-
-Pour créer une identité, cliquez sur le bouton `+ Ajouter un personnage`{.action}, puis saisissez les informations suivantes: 
-
-- **Nom de la personne** : ce nom vous sert de référence pour choisir votre identité lors de la rédaction d'un e-mail.
-- Depuis Paramètres (Paramètres d'envoi)
-   - **Envoyer depuis ce compte** : définissez l'adresse e-mail depuis laquelle l'e-mail est envoyé. Si aucune [délegation](#delegations) n'est attachée à votre compte e-mail, seul votre compte e-mail pourra être sélectionné.
-   - **De nom** (nom de l'expéditeur) : c'est le nom qui s'affichera chez le destinataire.
-- Paramètres de réponse
-    - `Activer`{.action} : en l'activant, vous définissez un comportement différent lorsque le destinataire répond à l'e-mail.
-    - **Adresse de réponse** : définissez l'adresse e-mail vers laquelle le destinataire de votre identité va pouvoir répondre. Si aucune [délegation](#delegations) n'est attachée à votre compte e-mail, seul votre compte e-mail pourra être sélectionné.
-     - **Nom de réponse** (nom de l'expéditeur) : c'est le nom qui s'affichera chez le destinataire lors de la réponse
-- Utilisez cette Persona
-    - `Activer`{.action} **lors de la réponse ou du transfert de messages envoyés à** : en l'activant, vous définissez un comportement différent lorsque vous répondez ou transférez un e-mail provenant de(s) adresse(s) e-mail saisie(s).
-    - `Activer`{.action} **Lorsque vous rédigez, répondez ou transférez des messages dans des dossiers** : en l'activant, vous définissez un comportement différent lorsque vous répondez ou transférez un e-mail provenant du ou des dossiers que vous aurez coché(s).
-
-Une fois que vous avez défini tous les paramètres de votre persona, cliquez sur `Ajouter Persona`{.action}.
-
-> [!primary]
->
-> Vos persona peuvent être modifiés ou supprimés en cliquant sur le chevron à droite.
 
 ### Signature <a name="signatures"></a>
 
