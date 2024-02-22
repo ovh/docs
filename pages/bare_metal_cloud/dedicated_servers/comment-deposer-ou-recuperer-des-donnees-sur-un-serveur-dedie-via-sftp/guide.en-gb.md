@@ -1,7 +1,7 @@
 ---
 title: 'Retrieving and uploading data on a dedicated server via SFTP'
 excerpt: 'Find out how to easily transfer data to and from your dedicated server'
-updated: 2024-02-22
+updated: 2021-05-18
 ---
 
 ## Objective
