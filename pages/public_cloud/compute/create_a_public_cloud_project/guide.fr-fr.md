@@ -18,17 +18,12 @@ La création d’un projet est la première étape indispensable pour déployer 
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), et cliquez sur le menu `Public Cloud`{.action}.
 
-Après en avoir pris connaissance, validez les termes des contrats en cochant la case correspondante puis cliquez sur `Découvrir l'univers Public Cloud`{.action}
+Après en avoir pris connaissance, validez les termes des contrats en cochant la case correspondante puis cliquez sur `Découvrir l'univers Public Cloud`{.action}.
 
 ![création de projet](images/firstproject2024.png){.thumbnail}
 
 - Si vous n'avez pas encore de moyen de paiement valide dans votre compte OVHcloud, le processus de création du projet Public Cloud commence. Votre projet sera alors créé en [Mode découverte](#discovery).
 - Si vous avez déjà renseigné un moyen de paiement dans votre compte OVHcloud, vous devez d'abord nommer votre projet Public Cloud puis sélectionner votre moyen de paiment.
-    - Si vous disposez d'un bon d'achat, cliquez sur le bouton correspondant pour le renseigner. Seuls les bons d'achats fournis pour votre filiale OVHcloud peuvent être utilisés.
-
-> [!warning]
-> Si vous aviez précédemment créé un projet Public Cloud sur votre compte et que vous l'avez supprimé, vous ne pourrez pas utiliser le bon d'achat.
->
 
 ![création de projet](images/project-creation.png){.thumbnail}
 

@@ -18,7 +18,7 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and go to the `Public Cloud`{.action} section.
 
-Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}
+Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}.
 
 ![project creation](images/firstproject2024.png){.thumbnail}
 
