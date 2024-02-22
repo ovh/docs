@@ -118,7 +118,7 @@ Disk identifier: 0x150f6797
 Polecenie pokazuje, że `/dev/md2` ma wielkość 888,8 GB, a `/dev/md4` 973,5 GB. Zastosuj polecenie “mount”, aby zobaczyć stan dysku.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)

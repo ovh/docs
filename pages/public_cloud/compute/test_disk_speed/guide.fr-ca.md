@@ -31,9 +31,8 @@ root@server:~$ apt-get fio install
 
 Pour tester la vitesse de votre disque, exécutez la commande suivante :
 
-```
-root@serveur:~$ fio 
---name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```bash
+fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
@@ -53,7 +52,7 @@ root@serveur:~$ cd /mnt/disk
 
 Une fois le test terminé, vous obtenez un résultat semblable à ce qui suit :
 
-```
+```console
 fio-2.1.11
 Démarrage d'un processus
 test: Mise en page des fichiers d'E/S (1 fichier(s) / 1 024 Mo)
@@ -101,7 +100,7 @@ util=99.05%
 
 La ligne qui nous intéresse est la sixième, qui contient le nombre d'opérations d'entrée-sortie par seconde (IOPS) :
 
-```
+```console
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
