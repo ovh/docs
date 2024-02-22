@@ -58,7 +58,7 @@ Após selecionar o seu alojamento VPS, clique no separador `Backup automático`{
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
-Caso tenha modificado recentemente a palavra-passe da raiz (sudo), assegure-se de que assinala na janela pop-up a opção “Modificar a palavra-passe da raiz ao restaurar”, com vista a manter a sua palavra-passe atual, e depois clique em `Confirmar`{.action}. Irá receber um e-mail assim que o processo estiver concluído. Este poderá demorar algum tempo, dependendo do espaço do disco utilizado.
+Caso tenha modificado recentemente a palavra-passe da raiz (*root*), assegure-se de que assinala na janela pop-up a opção “Modificar a palavra-passe da raiz ao restaurar”, com vista a manter a sua palavra-passe atual, e depois clique em `Confirmar`{.action}. Irá receber um e-mail assim que o processo estiver concluído. Este poderá demorar algum tempo, dependendo do espaço do disco utilizado.
 
 > [!alert]
 >
