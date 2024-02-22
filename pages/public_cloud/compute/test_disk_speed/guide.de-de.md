@@ -17,7 +17,7 @@ Es kann aus verschiedenen Gründen vorkommen, dass Sie die Geschwindigkeit Ihrer
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external}.
-- Administrativer (Root) Zugriff auf diese Instanz über SSH (nur für Linux).
+- Administrativer (sudo) Zugriff auf diese Instanz über SSH (nur für Linux).
 
 ## In der praktischen Anwendung
 

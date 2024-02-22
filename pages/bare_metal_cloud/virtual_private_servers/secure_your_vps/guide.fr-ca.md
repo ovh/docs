@@ -20,7 +20,7 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 ## Prérequis
 
 - Un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud
-- Avoir un accès administrateur (*root*) à votre serveur via SSH
+- Avoir un accès administrateur (sudo) à votre serveur via SSH
 
 ## En pratique
 

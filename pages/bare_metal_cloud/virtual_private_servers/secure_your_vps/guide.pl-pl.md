@@ -23,7 +23,7 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 ## Wymagania początkowe
 
 - Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na Twoim koncie OVHcloud.
-- Dostęp administratora (root) do serwera przez SSH.
+- Dostęp administratora (sudo) do serwera przez SSH.
 
 ## W praktyce
 

@@ -20,7 +20,7 @@ Das OVHcloud vRack (Virtual Rack) erlaubt es, mehrere Server (unabhängig von de
 
 - Sie haben ein [OVHcloud vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account aktiviert.
 - Sie haben zwei oder mehr [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account (vRack kompatibel).
-- Sie haben administrativen Zugriff (Root) auf Ihre Server (über SSH oder RDP).
+- Sie haben administrativen Zugriff (sudo) auf Ihre Server (über SSH oder RDP).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
 

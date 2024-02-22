@@ -22,7 +22,7 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 ## Prerequisiti
 
 - Un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
-- Avere un accesso amministratore (root) al server via SSH
+- Avere un accesso amministratore (sudo) al server via SSH
 
 ## Procedura
 

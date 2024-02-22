@@ -25,7 +25,7 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 
 - A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
 - An [Additional IP address](https://www.ovhcloud.com/en/bare-metal/ip/) or an Additional IP block (RIPE)
-- Administrative access (root) via SSH or GUI to your server
+- Administrative access (sudo) via SSH or GUI to your server
 - Basic networking and administration knowledge
 
 > [!warning]

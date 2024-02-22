@@ -22,7 +22,7 @@ By default, only the IPv4 address is configured.
 ## Requirements
 
 - A Public Cloud instance (any model)
-- Administrative access (root) via SSH or remote desktop (Windows) to your server
+- Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 

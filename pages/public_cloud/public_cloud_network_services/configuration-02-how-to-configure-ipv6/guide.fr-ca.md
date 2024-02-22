@@ -22,7 +22,7 @@ Par défaut, seule l'adresse IPv4 est configurée.
 ## Prérequis
 
 * Une instance Public Cloud, le modèle importe peu.
-* Disposer d’un accès administrateur (root) via SSH ou bureau à distance (Windows) à votre serveur.
+* Disposer d’un accès administrateur (sudo) via SSH ou bureau à distance (Windows) à votre serveur.
 * Disposer de connaissances basiques en réseau.
 * Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 

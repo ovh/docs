@@ -29,7 +29,7 @@ Poderá ter de configurar endereços Additional IP nas suas instâncias, por exe
 
 - uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
 - um [endereço Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/) ou um bloco Additional IP
-- um acesso administrador (root) através de SSH ou GUI à sua instância
+- um acesso administrador (sudo) através de SSH ou GUI à sua instância
 - conhecimentos básicos sobre as redes e a sua administração
 
 > [!warning]

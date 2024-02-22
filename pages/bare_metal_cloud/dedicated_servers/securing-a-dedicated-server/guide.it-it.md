@@ -22,7 +22,7 @@ Al momento dell'ordine del tuo server dedicato, puoi scegliere una distribuzione
 ## Prerequisiti
 
 - Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
-- Avere un accesso amministratore (root) al server via SSH
+- Avere un accesso amministratore (sudo) al server via SSH
 
 ## Procedura
 

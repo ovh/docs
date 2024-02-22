@@ -14,7 +14,7 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
-- Administrative access (root) via SSH or remote desktop (Windows) to your server
+- Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 
 ## Instructions
 
@@ -105,7 +105,7 @@ You can learn more about SSH in [this guide](/pages/bare_metal_cloud/dedicated_s
 
 #### Windows
 
-Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
+Once the installation is completed, you will receive an email containing your password for administrative (sudo) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
 Please also refer to our guide on [Configuring a new Windows Server installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 

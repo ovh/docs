@@ -25,7 +25,7 @@ Der Standard-RAID-Level der OVHcloud Server ist RAID 1. Dieser verdoppelt das Vo
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit Hardware-RAID.
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH
 
 ## In der praktischen Anwendung
 

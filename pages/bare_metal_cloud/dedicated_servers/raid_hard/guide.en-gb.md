@@ -11,7 +11,7 @@ On a server with a hardware RAID configuration, the RAID array is managed by a p
 ## Requirements
 
 - a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with a hardware RAID configuration
-- administrative (root) access to the server via SSH
+- administrative (sudo) access to the server via SSH
 
 > [!warning]
 >

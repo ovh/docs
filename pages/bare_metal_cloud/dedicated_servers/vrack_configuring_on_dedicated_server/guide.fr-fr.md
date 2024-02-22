@@ -16,7 +16,7 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 - Un service [vRack](https://www.ovh.com/fr/solutions/vrack/) activé dans votre compte
 - Plusieurs [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/) (compatibles vRack)
-- Disposer d’un accès administrateur (root) au serveur via SSH ou RDP
+- Disposer d’un accès administrateur (sudo) au serveur via SSH ou RDP
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 

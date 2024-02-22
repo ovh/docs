@@ -18,7 +18,7 @@ Podczas tworzenia instancji można skonfigurować tylko jeden klucz SSH do pocz�
 
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Dostęp do instancji przez SSH jako administrator (root)
+- Dostęp do instancji przez SSH jako administrator (sudo)
 
 ## W praktyce
 

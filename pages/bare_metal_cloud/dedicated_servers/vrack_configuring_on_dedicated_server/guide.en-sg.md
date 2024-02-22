@@ -16,7 +16,7 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 
 - A [vRack](https://www.ovh.com/sg/solutions/vrack/) service activated in your account
 - Two or more [dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/) (compatible with vRack)
-- Administrative access (root) to the server via SSH or RDP
+- Administrative access (sudo) to the server via SSH or RDP
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - A private IP address range of your choice
 

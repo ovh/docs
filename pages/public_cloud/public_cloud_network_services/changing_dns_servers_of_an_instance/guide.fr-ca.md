@@ -20,7 +20,7 @@ Vous pouvez ajouter un serveur secondaire ou remplacer cette configuration par l
 ## Prérequis
 
 - Disposer d'une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
-- Disposer d’un accès administrateur (root) à l’instance via SSH ou RDP.
+- Disposer d’un accès administrateur (sudo) à l’instance via SSH ou RDP.
 - Des connaissances de base en réseau et administration.
 
 ## En pratique

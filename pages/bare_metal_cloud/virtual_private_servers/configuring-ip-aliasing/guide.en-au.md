@@ -25,7 +25,7 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en-au/vps/) in your OVHcloud account
 - An [Additional IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/)
-- Administrative access (root) via SSH or GUI to your server
+- Administrative access (sudo) via SSH or GUI to your server
 - Basic networking and administration knowledge
 
 ## Instructions

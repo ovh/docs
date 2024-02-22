@@ -24,7 +24,7 @@ Tal pode ser útil nos seguintes casos:
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Dispor de uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
-- Ter acesso de administrador (root) à sua instância através de SSH.
+- Ter acesso de administrador (sudo) à sua instância através de SSH.
 
 > [!warning]
 >

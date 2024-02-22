@@ -111,7 +111,7 @@ Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](
 
 #### Windows
 
-Po zakończeniu instalacji otrzymasz e-mail z hasłem dostępu administratora (root). Użyj tych danych do logowania się do serwera przez RDP (**R**emote **D**esktop **P**rotocol). Po zalogowaniu Windows poprowadzi Cię przez całą początkową instalację.
+Po zakończeniu instalacji otrzymasz e-mail z hasłem dostępu administratora (sudo). Użyj tych danych do logowania się do serwera przez RDP (**R**emote **D**esktop **P**rotocol). Po zalogowaniu Windows poprowadzi Cię przez całą początkową instalację.
 
 Sprawdź również nasz przewodnik [Skonfiguruj nową instalację Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 

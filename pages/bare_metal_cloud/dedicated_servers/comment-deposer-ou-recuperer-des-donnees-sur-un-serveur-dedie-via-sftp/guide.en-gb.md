@@ -1,7 +1,7 @@
 ---
 title: 'Retrieving and uploading data on a dedicated server via SFTP'
 excerpt: 'Find out how to easily transfer data to and from your dedicated server'
-updated: 2021-05-18
+updated: 2024-02-22
 ---
 
 ## Objective
@@ -20,7 +20,7 @@ As part of a migration process, you may find that you need to retrieve data stor
 
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with a GNU/Linux distribution installed
 - An FTP client that supports SFTP connections (this tutorial uses [FileZilla](https://filezilla-project.org/))
-- Administrative access via SSH to your server
+- Access via SSH to your server
 
 ## Instructions
 
