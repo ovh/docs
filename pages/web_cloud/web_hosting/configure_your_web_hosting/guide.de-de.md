@@ -28,7 +28,7 @@ Diese Konfigurationseinstellungen können auf zwei Arten geändert werden:
 > [!primary]
 >
 > Die “.ovhconfig“-Dateien sind Serverkonfigurationsdateien und werden von der Hosting Infrastruktur automatisch gelesen.
-> Sie sind nativ im FTP-Wurzelverzeichnis (*root**) des FTP-Speicherplatzes Ihres Webhostings vorhanden.
+> Sie sind nativ im FTP-Wurzelverzeichnis (*root*) des FTP-Speicherplatzes Ihres Webhostings vorhanden.
 > Sie enthalten Werte für die oben genannten Elemente.
 >
 
