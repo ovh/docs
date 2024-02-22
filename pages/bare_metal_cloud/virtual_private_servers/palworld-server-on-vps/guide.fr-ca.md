@@ -12,7 +12,7 @@ Développé par Pocket Pair, Palworld est un jeu vidéo qui mélange des éléme
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
+- Disposer d'un [VPS](https://www.ovhcloud.com/fr-ca/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud
 - Avoir installé une distribution GNU/Linux sur le serveur
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 - Avoir une compréhension basique de l'administration GNU/Linux
