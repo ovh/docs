@@ -20,7 +20,7 @@ Aby zminimalizować ryzyko błędu podczas wymiany dysku twardego, prosimy naszy
 
 > [!primary]
 >
-> W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie Rescue64 i użycie zainstalowanego domyślnie na serwerze narzędzia “nvme-cli”.
+> W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie Rescue i użycie zainstalowanego domyślnie na serwerze narzędzia “nvme-cli”.
 > 
 
 ### Ustalenie numeru seryjnego dysku w przypadku programowej macierzy RAID

@@ -20,7 +20,7 @@ Para minimizar os riscos de erro durante a substituição de um disco rígido, p
 
 > [!primary]
 >
-> No caso de um disco NVMe, será necessário colocar o servidor em modo Rescue64 e utilizar a ferramenta nvme-cli instalada por predefinição.
+> No caso de um disco NVMe, será necessário colocar o servidor em modo Rescue e utilizar a ferramenta nvme-cli instalada por predefinição.
 > 
 
 ### Obter o número de série de um disco (RAID de software)

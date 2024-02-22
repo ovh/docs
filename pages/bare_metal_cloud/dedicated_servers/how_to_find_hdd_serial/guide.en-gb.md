@@ -20,7 +20,7 @@ To minimise the chance of human error during hard disk replacements, we ask our 
 
 > [!primary]
 >
-> In the case of an NVMe disk, it will be necessary to place the server in Rescue64 mode, and use the nvme-cli tool installed by default.
+> In the case of an NVMe disk, it will be necessary to place the server in rescue mode, and use the nvme-cli tool installed by default.
 > 
 
 ### Retrieve a disk's serial number (Software RAID)
