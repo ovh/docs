@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web : consulter les statistiques / logs d'un site web"
 excerpt: "Découvrez comment consulter les statistiques et les logs de votre site web grâce à votre offre d'hébergement web"
-updated: 2024-02-21
+updated: 2024-02-22
 ---
 
 ## Objectif
