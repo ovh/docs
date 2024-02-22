@@ -20,7 +20,7 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 
 * uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
 * acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
-* acesso administrativo (root) à sua instância via SSH
+* acesso administrativo (sudo) à sua instância via SSH
 
 ## Instruções
 

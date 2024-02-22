@@ -28,7 +28,7 @@ OVHcloud HA-NAS ermöglicht Ihnen die Verwaltung eines über Netzwerk zugänglic
 - Auf Ihrem zugreifenden Server ist ein mit NFS kompatibles Betriebssystem installiert.
 - [Sie haben auf dem Dienst eine Partition mit aktiviertem NFS-Protokoll erstellt](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#partition).
 - [Sie haben einen ACL-Eintrag für die IP-Adresse des Servers angelegt](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#addaccess).
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder GUI.
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
 ## In der praktischen Anwendung
 

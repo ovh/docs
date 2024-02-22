@@ -20,7 +20,7 @@ When you order your VPS, you can choose a distribution or operating system to pr
 ## Requirements
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
-- Administrative access (root) via SSH to your server
+- Administrative access (sudo) via SSH to your server
 
 ## Instructions
 

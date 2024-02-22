@@ -26,7 +26,7 @@ Domyślnie skonfigurowany jest tylko adres IPv4.
 ## Wymagania początkowe
 
 * Dowolny model instancji Public Cloud.
-* Dostęp administracyjny (root) przez SSH lub zdalny pulpit (Windows) do Twojego serwera
+* Dostęp administracyjny (sudo) przez SSH lub zdalny pulpit (Windows) do Twojego serwera
 * Posiadanie podstawowej wiedzy w zakresie sieci informatycznych.
 * Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 

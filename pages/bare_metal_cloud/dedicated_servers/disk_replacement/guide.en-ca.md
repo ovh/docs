@@ -20,7 +20,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 ## Requirements
 
 - a [Dedicated Server](https://www.ovh.com/ca/en/dedicated-servers/){.external}
-- administrative (root) access to the server via SSH
+- administrative (sudo) access to the server via SSH
 
 ## Instructions
 

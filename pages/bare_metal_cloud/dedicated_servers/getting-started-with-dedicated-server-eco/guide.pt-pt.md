@@ -109,7 +109,7 @@ Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](/pages/ba
 
 #### Windows
 
-Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (root). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
+Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (sudo). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
 
 Consulte também o nosso guia [Configurar uma nova instalação do Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 

@@ -15,7 +15,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en/bare-metal/){.external} with a software RAID configuration
-- Administrative (root) access to the server via SSH
+- Administrative (sudo) access to the server via SSH
 
 ## Instructions
 

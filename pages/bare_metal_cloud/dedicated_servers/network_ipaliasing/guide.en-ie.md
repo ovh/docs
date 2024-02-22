@@ -23,9 +23,9 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
-- Access via SSH or remote desktop connection for Windows.
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
+- An [Additional IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
+- Access via SSH or remote desktop connection for Windows
 - Basic networking and administration knowledge
 
 > [!warning]

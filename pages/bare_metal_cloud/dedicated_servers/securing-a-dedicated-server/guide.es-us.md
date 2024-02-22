@@ -23,7 +23,7 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 ## Requisitos
 
 - Tener un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es/bare-metal/){.external}.
-- Tener acceso de administrador (*root*) al servidor por SSH.
+- Tener acceso de administrador (sudo) al servidor por SSH.
 
 ## Procedimiento
 

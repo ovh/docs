@@ -22,7 +22,7 @@ Lorsque vous commandez votre serveur dédié, vous pouvez choisir une distributi
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/).
-- Avoir un accès administrateur (*root*) à votre serveur via SSH.
+- Avoir un accès administrateur (sudo) à votre serveur via SSH.
 
 ## En pratique
 

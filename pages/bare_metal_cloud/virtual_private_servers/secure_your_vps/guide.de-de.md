@@ -23,7 +23,7 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 ## Voraussetzungen
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH.
+- Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH.
 
 ## In der praktischen Anwendung
 

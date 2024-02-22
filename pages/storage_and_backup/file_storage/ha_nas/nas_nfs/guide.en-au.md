@@ -23,7 +23,7 @@ The OVHcloud HA-NAS service allows you to manage file storage that can be access
 - An operating system compatible with NFS installed on your server
 - [A partition created on the service with the NFS protcol enabled](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#partition)
 - [An ACL entry for the server's IP address](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#addaccess)
-- Administrative access (root) to your server via SSH or GUI
+- Administrative access (sudo) to your server via SSH or GUI
 
 ## Instructions
 

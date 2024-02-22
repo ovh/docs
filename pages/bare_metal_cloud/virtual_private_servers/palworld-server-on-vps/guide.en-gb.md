@@ -15,7 +15,7 @@ Having your own server in a game like Palworld offers several advantages, such a
 
 - A [VPS](https://www.ovhcloud.com/en-gb/vps/) or a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
 - A GNU/Linux operating system installed on the server
-- Administrative (root) SSH access to your server
+- Administrative (sudo) SSH access to your server
 - Basic understanding of GNU/Linux administration
 
 > [!warning]

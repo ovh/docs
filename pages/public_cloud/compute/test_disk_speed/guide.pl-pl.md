@@ -17,7 +17,7 @@ Możliwe, że będziesz chciał sprawdzić prędkość dysków w ramach testów,
 ## Wymagania początkowe
 
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}.
-- Dostęp administracyjny (root) do tej instancji przez SSH (tylko dla Linux)
+- Dostęp administracyjny (sudo) do tej instancji przez SSH (tylko dla Linux)
 
 ## W praktyce
 

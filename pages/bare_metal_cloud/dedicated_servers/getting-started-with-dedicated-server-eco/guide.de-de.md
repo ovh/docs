@@ -17,7 +17,7 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) der Reihe Kimsufi, So You Start oder Rise in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder RDP (optional). 
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder RDP (optional). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -109,7 +109,7 @@ Weitere Informationen zu SSH finden Sie in unserer [Anleitung](/pages/bare_metal
 
 #### Windows
 
-Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (Root). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
+Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (sudo). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
 
 Beachten Sie auch unsere Anleitung zum [Konfigurieren einer neuen Windows Server Installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 

@@ -19,7 +19,7 @@ When you order your dedicated server, you can choose a distribution or operating
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- Administrative access (root) via SSH to your server
+- Administrative access (sudo) via SSH to your server
 
 ## Instructions
 

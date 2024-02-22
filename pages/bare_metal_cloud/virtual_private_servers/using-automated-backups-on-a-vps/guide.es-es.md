@@ -23,7 +23,7 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Tener un [servidor privado virtual (VPS)](https://www.ovhcloud.com/es-es/vps/) de OVHcloud ya configurado.
-- Tener acceso de administrador (raíz) a su servidor virtual privado (VPS) a través del protocolo/programa SSH (opcional).
+- Tener acceso de administrador (sudo) a su servidor virtual privado (VPS) a través del protocolo/programa SSH (opcional).
 
 ## Procedimiento
 

@@ -109,7 +109,7 @@ Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages
 
 #### Windows
 
-Una volta completata l'installazione, riceverai un'email con la password per l'accesso amministratore (root). Utilizza queste credenziali per connetterti al server via RDP (**R**emote **D**esktop **P**rotocol). Una volta connesso, Windows ti guiderà durante l'installazione iniziale.
+Una volta completata l'installazione, riceverai un'email con la password per l'accesso amministratore (sudo). Utilizza queste credenziali per connetterti al server via RDP (**R**emote **D**esktop **P**rotocol). Una volta connesso, Windows ti guiderà durante l'installazione iniziale.
 
 Consulta anche la nostra guida [Configurare una nuova installazione di Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 

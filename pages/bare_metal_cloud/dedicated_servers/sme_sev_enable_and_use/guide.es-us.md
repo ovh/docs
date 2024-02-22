@@ -11,7 +11,7 @@ Habilite AMD SME en su servidor Ubuntu 20.04 y genere una máquina virtual KVM /
 ## Requisitos
 
 - Un servidor dedicado con una CPU AMD Naples / Rome Epyc
--  Acceso administrativo (root) al servidor a través de SSH
+-  Acceso administrativo (sudo) al servidor a través de SSH
 -  Ubuntu 20.04 instalado
 
 ## Procedimiento

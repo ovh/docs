@@ -17,7 +17,7 @@ Eseguire un test della velocità dei tuoi dischi è necessario per confrontare l
 ## Prerequisiti
 
 - Disporre di una [istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}
-- Avere accesso amministrativo (root) a questa istanza via SSH (solo per Linux)
+- Avere accesso amministrativo (sudo) a questa istanza via SSH (solo per Linux)
 
 ## Procedura
 

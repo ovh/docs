@@ -20,7 +20,7 @@ Mithilfe der OpenStack API können Sie die Verwaltung automatisieren, indem Sie 
 
 ## Voraussetzungen
 
-- Sie haben administrativen Zugriff (*root*) auf die Umgebung, die Sie konfigurieren möchten.
+- Sie haben administrativen Zugriff auf die Umgebung, die Sie konfigurieren möchten.
 
 ## In der praktischen Anwendung
 

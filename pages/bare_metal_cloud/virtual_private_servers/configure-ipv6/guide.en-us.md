@@ -20,7 +20,7 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 ## Requirements
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
-- Administrative access (root) via SSH or remote desktop (Windows) to your server
+- Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) / to the [OVHcloud API](https://ca.api.ovh.com/)
 

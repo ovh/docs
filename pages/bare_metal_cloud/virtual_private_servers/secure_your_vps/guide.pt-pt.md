@@ -23,7 +23,7 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 ## Requisitos
 
 - Um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Ter acesso de administrador (root) ao seu servidor através de SSH
+- Ter acesso de administrador (sudo) ao seu servidor através de SSH
 
 ## Instruções
 

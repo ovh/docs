@@ -19,7 +19,7 @@ O nível de RAID predefinido nos servidores da OVHcloud é RAID 1, ou seja, o do
 ## Requisitos
 
 - Dispor de um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} com uma configuração RAID por software.
-- Ter acesso ao servidor através de SSH enquanto administrador (root).
+- Ter acesso ao servidor através de SSH enquanto administrador (sudo).
 
 ## Instruções
 

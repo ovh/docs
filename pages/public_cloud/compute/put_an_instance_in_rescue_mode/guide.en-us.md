@@ -16,7 +16,7 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- Administrative access (root) to your instance via SSH
+- Administrative access (sudo) to your instance via SSH
 
 ## Instructions
 
