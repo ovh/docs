@@ -178,7 +178,7 @@ Si vous souhaitez retrouver un e-mail, utilisez la barre de recherche dans la pa
 >>
 >> Saisissez le ou les mots clés que vous souhaitez retrouvez dans la barre de recherche et appuyez sur la touche `Entrée` pour valider votre recherche. Le ou les mots apparaîtront en surbrillance dans vos résultats.
 >>
->> > Si vous souhaitez rechercher rapidement un expéditeur, vous pouvez tapez « from: » avant l'adresse e-mail que vous recherchez. Par exemple « from: address@example.com ».
+>> > Si vous savez où rechercher votre élément, vous pouvez saisir des mots-clés ( **from**, **to**, **cc**, **subject**, etc.) suivis de deux points et rechercher l'élément dans la zone de texte de recherche. Par exemple, si vous souhaitez rechercher rapidement un expéditeur, vous pouvez tapez « from: » avant l'adresse e-mail que vous recherchez. Par exemple « from: address@example.com ».
 >>
 >> ![Zimbra - recherche simple](images/zimbra-08.png){.thumbnail}
 >>
