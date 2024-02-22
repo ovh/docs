@@ -1,7 +1,7 @@
 ---
 title: 'Intel SGX en un servidor dedicado'
 excerpt: 'Active la funcionalidad SGX en su servidor Infrastructure o Advance e instale la pila de software SGX para linux'
-updated: 2024-02-22
+updated: 2022-08-31
 ---
 
 > [!primary]

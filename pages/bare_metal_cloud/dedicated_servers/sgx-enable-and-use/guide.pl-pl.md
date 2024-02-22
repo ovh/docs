@@ -1,7 +1,7 @@
 ---
 title: 'Włączenie Intel SGX na serwerze dedykowanym'
 excerpt: 'Włącz opcję SGX na serwerze Infrastructure lub Advance i zainstaluj stos oprogramowania SGX na Linux'
-updated: 2024-02-22
+updated: 2022-08-31
 ---
 
 > [!primary]

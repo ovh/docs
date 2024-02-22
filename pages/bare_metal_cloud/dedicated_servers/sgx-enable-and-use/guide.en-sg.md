@@ -1,7 +1,7 @@
 ---
 title: 'Managing Intel SGX on a dedicated server'
 excerpt: 'Find out how to enable SGX on your dedicated server and install the Linux SGX software stack'
-updated: 2024-02-22
+updated: 2022-08-31
 ---
 
 ## Objective
