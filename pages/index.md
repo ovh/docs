@@ -154,7 +154,7 @@
             + [Activating Windows Machines using Hyper-V on an OVHcloud licensed Windows Server](bare_metal_cloud/dedicated_servers/activate_windows_vm_hyperv)
             + [Installing CUDA on a dedicated GPU server](bare_metal_cloud/dedicated_servers/cuda_installation_on_gpu)
             + [AMD SME/SEV on Ubuntu 20](bare_metal_cloud/dedicated_servers/sme_sev_enable_and_use)
-            + [Tutorial - How to create a Palworld server](bare_metal_cloud/virtual_private_servers/palworld-server-on-vps)
+            + [Tutorial - How to create a Palworld compatible server](bare_metal_cloud/virtual_private_servers/palworld-server-on-vps)
         + [RAID and disks](bare-metal-cloud-dedicated-servers-raid-and-disks)
             + [Hardware upgrade on a High Grade or Scale dedicated server](bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
             + [Configuring software RAID](bare_metal_cloud/dedicated_servers/raid_soft)
