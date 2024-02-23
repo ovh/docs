@@ -239,7 +239,7 @@ Pour cela, vous devez au préalable activer le journal. Cliquez sur `Présentati
 
 En dessous de la fenêtre de Cyberduck, un cadre apparaît. Par la suite, connectez-vous à votre espace SFTP, remontez tout en haut du cadre du journal. La phrase suivante s'affiche : `Vous êtes connecté sur webmXXX`. La valeur `webmXXX` correspond au serveur.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
