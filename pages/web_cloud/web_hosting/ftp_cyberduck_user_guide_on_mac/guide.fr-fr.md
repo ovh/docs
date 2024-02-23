@@ -220,7 +220,7 @@ Dans le menu de Cyberduck, cliquez sur `Go`{.action} puis sur `Send command...`{
 
 Dans la nouvelle fenêtre, insérez la commande `CHMOD 705 /` puis cliquez sur `Send`{.action} pour éxécuter la commande. En confirmation, le message `200 Permissions changed on /` devrait apparaître dans l'encadré du dessous.
 
-Pour vérifier que la réouverture est bien effective, connectez-vous à votre site depuis un navigateur web.
+Pour vérifier que la réouverture est bien effective, connectez-vous à votre site web depuis un navigateur web.
 
 ![hosting](images/site-chmod-705-command.png){.thumbnail}
 
