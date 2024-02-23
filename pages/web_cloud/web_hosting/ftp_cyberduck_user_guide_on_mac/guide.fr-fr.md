@@ -43,7 +43,7 @@ Lorsque vous démarrez l'application, l'interface ci-dessous s'affiche.
 
 ### Personnaliser l'affichage de Cyberduck
 
-Il est possible de personnaliser l'affichage de Cyberduck afin de le rendre plus efficace et personnel.
+Vous pouvez personnaliser l'affichage de Cyberduck afin de le rendre plus efficace et personnel.
 
 Dans le menu principal, tout en haut de l'interface, cliquez sur `View`{.action} puis sur `Customize Toolbar...`{.action}.
 
