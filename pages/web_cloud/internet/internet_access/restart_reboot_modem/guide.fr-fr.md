@@ -1,7 +1,7 @@
 ---
 title: 'Redémarrer ou réinitialiser une box OVHcloud'
 excerpt: 'Découvrez comment effectuer le redémarrage et la réinitialisation de votre box'
-updated: 2024-02-16
+updated: 2024-02-23
 ---
 
 ## Objectif
