@@ -62,7 +62,6 @@ Dans la fenêtre qui apparaît, faites glisser les éléments souhaités vers la
 > Pour des raisons de sécurité, se connecter en FTP n'est pas recommandé. La plupart des systèmes d'exploitation interdisent désormais la possibilité de se connecter en FTP. Préférez donc une connexion SFTP.
 >
 
-Si votre offre est compatible avec un accès SSH, vous avez la possibilité de vous connecter en SFTP. Il est impératif de disposer d'un accès SSH pour que la connexion SFTP puisse fonctionner.
 
 > [!alert]
 >
