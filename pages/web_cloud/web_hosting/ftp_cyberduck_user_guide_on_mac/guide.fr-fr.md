@@ -161,7 +161,7 @@ Vous pouvez visionner l'historique des transferts effectués vers  l'espace de s
 
 - les fichiers en attente d'être déposés sur le serveur distant (encore présents dans la file d'attente ou en cours d'envoi) ;
 - les fichiers pour lesquels le transfert a échoué ;
-- les fichiers pour lesquels le transfert est réussi sur l'hébergement distant.
+- les fichiers pour lesquels le transfert est réussi sur l'hébergement web distant.
 
 Cette fenêtre s'affiche de deux manières différentes :
 
