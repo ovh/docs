@@ -127,7 +127,7 @@ Cette erreur peut également provenir d'un pare-feu ou du réseau local bloquant
 
 ### Qu'est-ce qu'un signet ?
 
-Pour faciliter l'accès à votre espace d'hébergement, nous vous conseillons d'utiliser les signets. Ils permettent de pré-enregistrer vos informations de connexion, vous évitant ainsi de rentrer celles-ci à chaque connexion.
+Pour faciliter l'accès à votre espace d'hébergement web, nous vous recommandons d'utiliser les signets. Ils permettent de pré-enregistrer vos informations de connexion, vous évitant ainsi de rentrer celles-ci à chaque connexion.
 
 Pour effectuer cet ajout :
 
