@@ -63,7 +63,6 @@ Dans la fenêtre qui apparaît, faites glisser les éléments souhaités vers la
 >
 
 
-> Si vous ne savez pas si l'accès SSH est compris dans votre offre, reportez-vous aux descriptifs de nos offres. Le serveur refusera la connexion si vous ne bénéficiez pas de l'accès SSH dans votre offre.
 > 
 
 Afin de pouvoir vous connecter à votre espace d'hébergement, suivez les étapes ci-dessous :
