@@ -36,7 +36,7 @@ Les segments sont liés à des zones de transports qui sont prédéfinies par OV
 ## En pratique
 
 > ![primary]
-> Nous souhaitons vous informer que les désignations (telles que le numéro du VLAN) et les adresses IP des configurations réseau sont fournies à titre d'exemple et peuvent être modifiées en cas de nécessité.
+> Prenez en compte que les désignations (telles que le numéro du VLAN) et les adresses IP des configurations réseau sont fournies à titre d'exemple et peuvent être modifiées en cas de nécessité.
 
 ### Création d'un segment de type overlay dans l'interface NSX
 
