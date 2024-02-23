@@ -1,7 +1,7 @@
 ---
-title: "Hébergement web : consulter les statistiques / logs d'un site web"
+title: "Hébergement web - Consulter les statistiques et logs d'un site web"
 excerpt: "Découvrez comment consulter les statistiques et les logs de votre site web grâce à votre offre d'hébergement web"
-updated: 2024-02-22
+updated: 2024-02-23
 ---
 
 ## Objectif
@@ -27,23 +27,23 @@ Pour accéder aux différentes données statistiques et logs de votre hébergeme
 
 L'écran qui s’affiche est composé de 4 sections :
 
-- [statistiques de visite](#website-stats) : présente de nombreuses statistiques concernant votre hébergement web
-- [logs du site web](#website-logs) : affiche les logs bruts de votre hébergement web
-- [statistiques de l'infrastructure](#infra-stats) : présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, utilisation CPU, connexions sortantes, etc.)
-- [administration des utilisateurs](#admin-user) : affiche les utilisateurs autorisés à accéder aux statistiques
+- [Statistiques de visite](#website-stats) : présente de nombreuses statistiques concernant votre hébergement web.
+- [Logs du site web](#website-logs) : affiche les logs bruts de votre hébergement web.
+- [Statistiques de l'infrastructure](#infra-stats) : présente des statistiques graphiques (requêtes HTTP et SQL, commandes FTP, utilisation CPU, connexions sortantes, etc.)
+- [Administration des utilisateurs](#admin-user) : affiche les utilisateurs autorisés à accéder aux statistiques
 
 ![statistics and logs interface](images/tab.png){.thumbnail}
 
 ### Statistiques de visite <a name="website-stats"></a>
 
-Pour mieux suivre et piloter le trafic de vos sites web, vous disposez d'un outil de statistiques de visites et de mesure d’audience de vos sites web hébergés sur votre hébergement web, **OVHcloud Web Statistics**.
+Pour mieux suivre et piloter le trafic de vos sites web, vous disposez de **OVHcloud Web Statistics**, un outil de statistiques de visites et de mesure d’audience de vos sites web hébergés sur votre offre d'hébergement web.
 
 ![ows dashboard](images/ows-presentation.gif){.thumbnail}
 
 Le tableau de bord d'**OVHcloud Web Statistics** présente 7 sections :
 
 - **Dashboard** : visualisation du trafic sur les sites de votre hébergement web.
-- **Browsers** : classement des navigateurs internet les plus utilisés pour visualiser vos sites.
+- **Browsers** : classement des navigateurs internet les plus utilisés pour consulter vos sites.
 - **Geolocalization** : proportion de visiteurs en fonction de leur localisation.
 - **Requests** : classement des pages les plus consultées sur vos sites.
 - **Robots** : visualisation des robots qui passent sur vos sites.
@@ -61,17 +61,17 @@ Le champ `Period selection` en haut à droite vous permet de sélectionner une p
 > N'hésitez pas à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
 >
 
-Vous avez la possibilité de visualiser les logs bruts de votre site web avec un différé d'environ 5 minutes.
+Vous pouvez visualiser les logs bruts de votre site web avec un différé d'environ 5 minutes.
 
 ![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
 
 Différents type de logs sont à votre disposition :
 
-- **Logs Web** : contient les différents logs de consultation de votre site web, ainsi que les différentes actions réalisées à partir de votre site web. Cela vous permet par exemple de repérer des tentatives d'actions malveillantes.
+- **Logs Web** : contiennent les différents logs de consultation de votre site web, ainsi que les différentes actions réalisées à partir de votre site web. Cela vous permet par exemple de repérer des tentatives d'actions malveillantes.
 - **Logs FTP** : les différentes connexions / commandes en FTP seront enregistrées et conservées dans ces logs.
 - **Logs erreur** : retrouvez ici les différentes erreurs générées par votre site web.
-- **Logs CGI** : les différents appels aux scripts cgi.bin qui ont été réalisés sont enregistrés à cet endroit.
-- **Logs out** : contient l'historique des différentes requêtes externes (connexion sortantes TCP) réalisées depuis votre hébergements web vers des infrastructures distantes.
+- **Logs CGI** : les différents appels aux scripts cgi.bin qui ont été réalisés sont enregistrés dans ces logs.
+- **Logs out** : contiennent l'historique des différentes requêtes externes (connexions sortantes TCP) réalisées depuis votre hébergements web vers des infrastructures distantes.
 - **Logs SSH** : ces logs indiquent les différentes connexions / commandes réalisées avec le protocole SSH.
 - **Logs CRON** : retrouvez ici les résultats de l'exécution de vos tâches planifiées [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) sur votre hébergement web.
 
@@ -84,7 +84,7 @@ Retrouvez dans cette section l'activité de l'infrastructure de votre hébergeme
 Il est possible d'afficher différent types de graphiques, depuis le menu déroulant en haut à gauche :
 
 - **Commandes FTP** : indique les commandes principales (upload, download, login, delete) réalisées en utilisant le protocole FTP sur votre hébergement web.
-- **Requêtes HTTP** : indique le nombre et le code retour des requêtes HTTP exécutées sur votre hébergement web. Le tout en distinguant les différents codes HTTP (2xx/3xx, 4xx et 5xx). Si besoin, vous pouvez retrouver la liste des codes HTTP et leurs significations en effectuant directement une recherche via un moteur de recherche (Google, Yahoo!, bing, etc.).
+- **Requêtes HTTP** : indique le nombre et le code retour des requêtes HTTP exécutées sur votre hébergement web. Le tout en distinguant les différents codes HTTP (2xx/3xx, 4xx et 5xx). Si besoin, vous pouvez retrouver la liste des codes HTTP et leur signification en effectuant directement une recherche via un moteur de recherche (Google, Yahoo!, bing, etc.).
 - **Connexions sortantes** : requêtes émises de votre site web vers un site web extérieur.
 - **Utilisation du CPU** : niveau de consommation du processeur sur votre instance d'hébergement web.
 - **Dépassement du plafond de ressources** : indique les moments où votre hébergement web dépasse son quota de ressources.
@@ -99,7 +99,7 @@ Dans la section `Administration des utilisateurs`{.action}, cliquez sur `Créer 
 
 ![create a new user](images/create-a-new-user.png){.thumbnail}
 
-Pour accéder aux statistiques de votre site web avec un utilisateur que vous avez créé, vous devez saisir l'adresse suivante en remplaçant `000` par le numéro du cluster de votre hébergement web et `domain.tld` par le nom de domaine de votre site web (sans les « www »):
+Pour accéder aux statistiques de votre site web avec un utilisateur que vous avez créé, vous devez saisir l'adresse suivante en remplaçant `000` par le numéro du cluster de votre hébergement web et `domain.tld` par le nom de domaine de votre site web (sans les `www`) :
 
 ```bash
 https://logs.cluster000.hosting.ovh.net/domain.tld/
@@ -121,7 +121,7 @@ Sur la nouvelle page qui apparaît, récupérez l'URL située dans la barre d'ad
 
 > [!warning]
 >
-> Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite spécifiquement.
+> Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite spécifique.
 >
 
 ## Aller plus loin
