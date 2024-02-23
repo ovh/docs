@@ -96,7 +96,7 @@ Lorsque vous effectuez une première connexion vers votre espace d'hébergement 
 
 #### Erreurs de connexion
 
-Lors d'une tentative de connexion à votre espace d'hébergement, il est possible qu'une erreur survienne. Voici les 2 erreurs les plus fréquentes que vous pouvez rencontrer.
+Lors d'une tentative de connexion à votre espace d'hébergement web, il est possible qu'une erreur survienne. Voici les 2 erreurs les plus fréquentes que vous pouvez rencontrer.
 
 - `Connection failed (<server-SFTP>) - DNS lookup for <server> failed`
 
