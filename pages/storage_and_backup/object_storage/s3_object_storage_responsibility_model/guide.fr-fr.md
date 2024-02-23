@@ -35,13 +35,17 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Produire, acheminer, livrer et maintenir les instances physiques et les bâtiments d’hébergement | I | RA |
+| Produire, acheminer, livrer et maintenir les instances physiques et virtuelles liées à l’hébergement | I | RA |
+| Créer les identifiants de connexion S3 pour un utilisateur Open stack | RA |  |
 
-#### 2.2. Installation du SI client
+#### 2.2. Modèle de réversibilité
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Créer les identifiants de connexion S3 pour un utilisateur OpenStack | RA |  |
+| Utiliser les API S3 pour importer les données dans le conteneur (bucket) mis à disposition | RA |  |
+
+
+
 
 ### 3. Utilisation du service
 
