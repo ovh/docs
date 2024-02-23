@@ -123,7 +123,6 @@ Créez une machine virtuelle dans le portgroup respectif **De Segment** ou **UK 
 
 >[!primary]
 > Actuellement la fonctionnalité des nombres AS n'est pas disponible au niveau VRF. Elle le sera avec la version 4.1.1 de NSX. L'AS est 65000 sur les deux PCC si vous ne modifiez rien, car il est configuré nativement au niveau T0 par l'automatisation.
-> Une documentation est en cours de redaction si vous voulez le changer au niveau T0.
 
 Vous pouvez voir vos configuration BGP en éditant votre passerelle T0. 
 
