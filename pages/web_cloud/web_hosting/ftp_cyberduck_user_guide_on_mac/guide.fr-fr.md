@@ -145,7 +145,7 @@ Le transfert de fichiers vous permet de déposer votre site internet sur votre e
 
 #### Via un glisser-déposer
 
-Pour réaliser le transfert de vos fichiers, vous pouvez simplement les sélectionner et réaliser un glisser-déposer depuis la fenêtre du dossier local (vos fichiers sur votre machine) vers la fenêtre de Cyberduck (votre espace d'hébergement). Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur. Une fenêtre s'affichera alors.
+Pour réaliser le transfert de vos fichiers, sélectionnez et réalisez un glisser-déposer depuis la fenêtre du dossier local (vos fichiers sur votre machine) vers la fenêtre de Cyberduck (espace de stockage FTP de votre hébergement web). Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur. Une fenêtre s'affichera alors.
 
 ![hosting](images/drag-drop-transfert-file.png){.thumbnail}
 
