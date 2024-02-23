@@ -119,7 +119,7 @@ Cette erreur peut également provenir d'un pare-feu ou du réseau local bloquant
 
 > [!primary]
 >
-> - Pour rappel, l'hôte de connexion pour votre espace d'hébergement est `ftp.votre-domaine.tld` (remplacez `votre-domaine.tld` par votre domaine) ou `ftp.cluster0XX.hosting.ovh.net` (remplacez les `XXX` par votre numéro de cluster).
+> - Pour rappel, l'hôte de connexion pour votre espace d'hébergement est `ftp.cluster0XX.hosting.ovh.net` (remplacez les `XXX` par votre numéro de cluster).
 > - Si besoin, reportez-vous au guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
 >
 
