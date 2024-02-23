@@ -94,12 +94,12 @@ A partir de cette commande et jusqu'à une restauration, le bucket ne peut accep
 
 #### Archiver un bucket avec verrouillage de rétention
 
-Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez toujours la supprimer après l'avoir écrite sur des bandes. Pour que votre archivage suive le modèle WORM (Write Once Read Many), vous pouvez définir une période de rétention dans votre configuration de hiérarchisation intelligente à l'aide du niveau d'accès `OVH_ARCHIVE_LOCK` et d'un nombre de jours. L'archive sera alors verrouillée jusqu'à la date du jour + le nombre de jours spécifié.
+Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez toujours la supprimer après l'avoir écrite sur bandes magnétiques. Pour que votre archivage suive le modèle WORM (Write Once Read Many), vous pouvez définir une période de rétention dans votre configuration du intelligent tiering à l'aide du niveau d'accès `OVH_ARCHIVE_LOCK` et d'un nombre de jours. L'archive sera alors verrouillée jusqu'à la date du jour + le nombre de jours spécifié.
 
 > [!primary]
 >
 > Avec le niveau d'accès par défaut `OVH_ARCHIVE`, l'attribut `Days` n'a aucun effet.
-> Contrairement à la configuration de hiérarchisation intelligente précédente, en utilisant le niveau d'accès `OVH_ARCHIVE_LOCK`, l'attribut `Days` sera pris en compte dans le calcul de la durée du verrouillage et doit être un entier positif.
+> Contrairement à la configuration précédente du intelligent tiering, en utilisant le niveau d'accès `OVH_ARCHIVE_LOCK`, l'attribut `Days` sera pris en compte dans le calcul de la durée du verrouillage et doit être un entier positif.
 >
 
 ```json
@@ -114,21 +114,21 @@ Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez t
 
 > [!primary]
 >
-> Vous ne pouvez pas avoir plusieurs configurations de hiérarchisation intelligente sur votre archive.
-> De même, vous ne pouvez pas avoir plusieurs niveaux d'accès dans votre configuration de hiérarchisation intelligente, c'est-à-dire que vous devez utiliser le niveau d'accès `OVH_ARCHIVE` ou le niveau d'accès `OVH_ARCHIVE_LOCK` mais pas les deux.
+> Vous ne pouvez pas avoir plusieurs configurations d'intelligent tiering sur votre archive.
+> De même, vous ne pouvez pas avoir plusieurs niveaux d'accès dans votre configuration de intelligent tiering, c'est-à-dire que vous devez utiliser le niveau d'accès `OVH_ARCHIVE` ou le niveau d'accès `OVH_ARCHIVE_LOCK` mais pas les deux.
 >
 
 #### Verrouiller un bucket après son archivage
 
-Si vous avez des buckets qui ont été précédemment archivés sans utiliser le niveau d'accès `OVH_ARCHIVE_LOCK`, vous pouvez toujours les verrouiller en réappliquant une configuration de hiérarchisation intelligente à votre bucket à l'aide du niveau d'accès `OVH_ARCHIVE_LOCK` et en spécifiant une durée de rétention en jours.
+Si vous avez des buckets qui ont été précédemment archivés sans utiliser le niveau d'accès `OVH_ARCHIVE_LOCK`, vous pouvez toujours les verrouiller en réappliquant une configuration du intelligent tiering à votre bucket à l'aide du niveau d'accès `OVH_ARCHIVE_LOCK` et en spécifiant une durée de rétention en jours.
 
 > [!primary]
 >
-> Pour verrouiller un bucket déjà archivé, il doit avoir le statut « Archived » ou « Restaured ».
-> Vous devez également utiliser le même « Id » de configuration de hiérarchisation intelligente.
+> Pour verrouiller un bucket déjà archivé, il doit avoir le statut « Archived » ou « Restored ».
+> Vous devez également utiliser le même « Id » de configuration d'intelligent tiering.
 >
 
-De même, si vous souhaitez modifier la période de rétention, réappliquez la configuration de la hiérarchisation intelligente en utilisant le même « Id ».
+De même, si vous souhaitez modifier la période de rétention, réappliquez la configuration du intelligent tiering en utilisant le même « Id ».
 
 > [!primary]
 >
@@ -139,7 +139,6 @@ De même, si vous souhaitez modifier la période de rétention, réappliquez la 
 > - Le 23/02/2024, vous changez d'avis et décidez de régler la durée du verrouillage sur 5 jours.
 > - OVHcloud Cold Archive retournera une erreur car 23/02/2024 + 5 jours < 03/03/2024.
 >
-
 
 ### Restauration d'un bucket
 
