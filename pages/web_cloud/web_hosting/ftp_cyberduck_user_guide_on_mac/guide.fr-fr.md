@@ -157,7 +157,7 @@ Dans le menu de Cyberduck, cliquez sur `File`{.action} puis sur `Upload...`{.act
 
 ### Visionner les transferts en cours
 
-Vous avez la possibilité de visionner l'historique des transferts vers votre espace d'hébergement. Vous pourrez ainsi retrouver :
+Vous pouvez visionner l'historique des transferts effectués vers  l'espace de stockage FTP de votre hébergement web. Vous pourrez ainsi retrouver :
 
 - les fichiers en attente d'être déposés sur le serveur distant (encore présents dans la file d'attente ou en cours d'envoi) ;
 - les fichiers pour lesquels le transfert a échoué ;
