@@ -1,7 +1,7 @@
 ---
 title: 'Saiba como carregar ou descarregar dados num servidor dedicado através de SFTP'
 excerpt: 'Transfira informações do servidor dedicado para o computador pessoal, e vice-versa'
-updated: 2021-05-18
+updated: 2024-02-23
 ---
 
 > [!primary]
@@ -15,8 +15,9 @@ Se precisar de migrar os seus dados, é possível que tenha de os descarregar do
 **Este tutorial explica como carregar e descarregar dados num servidor dedicado através de SFTP.**
 
 > [!warning]
+>Este tutorial explica-lhe como utilizar uma ou várias soluções da OVHcloud com ferramentas externas e descreve as ações a efetuar num contexto específico. Poderá ter de adaptar as instruções à sua situação.
 >
-Este tutorial explica a utilização de uma ou várias soluções da OVHcloud através de ferramentas externas e descreve as operações realizadas num contexto preciso. Deverá adaptá-las consoante a sua situação. Se necessitar de ajuda, recomendamos que entre em contacto com um fornecedor especializado ou que partilhe as suas dúvidas com o resto da nossa comunidade: <https://community.ovh.com/en/>. A OVHcloud não lhe poderá fornecer assistência.
+>Se tiver dificuldades em aplicar estas instruções, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, consulte a secção [Quer saber mais?](#gofurther) deste guia.
 >
 
 ## Requisitos
@@ -36,6 +37,10 @@ Por predefinição, um servidor que utilize um sistema operativo GNU/Linux terá
 #### **Se tem acesso ao seu servidor**
 
 Na interface gráfica do FileZilla, introduza o endereço IP do seu servidor no campo `Host`, assim como o seu nome de utilizador e a sua palavra-passe nos respetivos campos. No que diz respeito ao campo `Port`, introduza "22" ou a porta que o seu serviço SSH escuta se a alterou.
+
+> [!warning]
+> Tenha em conta que o acesso à pasta do utilizador `root` via SFTP só é possível através dos identificadores desta conta de utilizador. Se tiver a certeza de que pretende aceder a esta pasta remotamente, consulte as informações sobre a forma de ativar esta ligação no nosso [guia da conta de utilizador](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 Uma vez estabelecida a ligação, aparecerá uma arborescência dos seus ficheiros na parte `Site remota`.
 
