@@ -6,7 +6,7 @@ excerpt: "Shared responsibilities between OVHcloud and the customer on Cold Stor
 
 ## Objectif
 
-The RACI below details shared responsibilities between OVHcloud and the customer on cold Storage for archive and retoration services delivered. 
+The RACI below details shared responsibilities between OVHcloud and the customer on Cold Storage for archive and retoration services delivered. 
 
 
 | Roles |
