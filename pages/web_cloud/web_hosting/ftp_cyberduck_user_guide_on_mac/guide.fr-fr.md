@@ -8,7 +8,7 @@ updated: 2024-02-23
 
 Disponible sur macOS et Windows, Cyberduck est une application open-source de transfert de fichiers. Elle vous permet de vous connecter à l'espace de stockage FTP de votre hébergement web (en protocole FTP ou SFTP).
 
-Pour télécharger Cyberduck, veuillez vous reporter au [site officiel](https://cyberduck.io/) de l'application.
+Pour télécharger Cyberduck, rendez-vous sur le [site officiel](https://cyberduck.io/) de l'application.
 
 ![hosting](images/logo.png){.thumbnail}
 
