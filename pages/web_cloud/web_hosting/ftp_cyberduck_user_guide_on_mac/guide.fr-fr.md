@@ -191,7 +191,7 @@ La liste ci-dessus n'est pas exhaustive, d'autres actions sont possibles. Consul
 
 #### Droits des fichiers et dossiers
 
-Vous avez la possibilité de modifier les droits (CHMOD) de vos fichiers et de vos dossiers présents sur l'hébergement.
+Vous pouvez modifier les droits (CHMOD) de vos fichiers et de vos dossiers présents sur l'hébergement web.
 
 Ces derniers se répartissent en 3 familles :
 
