@@ -79,7 +79,7 @@ Vous devez compléter ce [formulaire en ligne](http://www.ovh.com/fr/cgi-bin/fr/
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 
 Dans ce cas de figure, vous pouvez : 
-- utiliser [les code de secours](#codes) actifs que vous avez sauvegardés;
+- utiliser les code de secours actifs que vous avez sauvegardés ;
 - utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs;
 - [désactiver la double authentification](#desactivation).
 
