@@ -131,7 +131,7 @@ Pour faciliter l'accès à votre espace d'hébergement web, nous vous recommando
 
 Pour effectuer cet ajout :
 
-1. Connectez-vous à votre espace d'hébergement.
+1. Connectez-vous à l'espace FRP de votre hébergement web.
 2. En haut de l'interface, dans la barre d'outils, cliquez sur l'onglet `Bookmarks`{.action} (cadre orange dans l'image ci-dessous).
 3. En bas à gauche de la fenêtre, cliquez sur l'icône `+`{.action} pour ajouter un nouveau signet.
 
