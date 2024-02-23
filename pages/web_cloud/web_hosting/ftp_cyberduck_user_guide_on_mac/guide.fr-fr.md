@@ -65,7 +65,7 @@ Dans la fenêtre qui apparaît, faites glisser les éléments souhaités vers la
 
 > 
 
-Afin de pouvoir vous connecter à votre espace d'hébergement, suivez les étapes ci-dessous :
+Afin de pouvoir vous connecter à votre espace d'hébergement web, suivez les étapes ci-dessous :
 
 **1.**  Dans la barre d'outils, cliquez sur `Open Connection`{.action}
 
