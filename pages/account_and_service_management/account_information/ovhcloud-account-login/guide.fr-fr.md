@@ -72,7 +72,7 @@ Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle
 
 Dans ce cas de figure, le support téléphonique OVHcloud ne pourra pas vous venir en aide.
 
-Vous devez ce [formulaire en ligne](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} afin que votre identité soit vérifiée.
+Vous devez compléter ce [formulaire en ligne](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} afin que votre identité soit vérifiée.
 <br>Une fois le formulaire reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
 <br>Cette procédure risque de prendre quelques jours, compte tenu des délais de traitement des formulaires en ligne par nos services.
 
