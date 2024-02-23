@@ -26,7 +26,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 
 - Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Instalacja dystrybucji GNU/Linux na serwerze
-- Dostęp administratora (root) przez SSH do serwera
+- Dostęp administratora (sudo) przez SSH do serwera
 - Podstawowe zrozumienie administracji GNU/Linux
 
 ## W praktyce

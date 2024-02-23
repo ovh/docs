@@ -13,7 +13,7 @@ Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir un
 ## Voraussetzungen
 
 - Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external}.
-- Sie haben als Administrator (Root) via SSH Zugriff auf Ihren Server.
+- Sie haben als Administrator (sudo) via SSH Zugriff auf Ihren Server.
 - Auf Windows Servern ist das Tool sas2ircu installiert (verfügbar über das [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} Search Engine).
 
 ## In der praktischen Anwendung

@@ -1,13 +1,12 @@
 ---
 title: 'Securing a VPS'
 excerpt: 'Find out the basics of securing your VPS'
-updated: 2024-01-23
-
+updated: 2024-02-20
 ---
 
 ## Objective
 
-When you order your VPS, you can choose a distribution or operating system to pre-install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures which ensure the security and stability of your system.
+When you order your VPS, you can choose a distribution or operating system to pre-install. The server is therefore ready to use after delivery but it will be up to you as the administrator to implement measures to ensure the security and stability of your system.
 
 **This guide provides some general tips for securing a GNU/Linux-based server.**
 
@@ -21,7 +20,7 @@ When you order your VPS, you can choose a distribution or operating system to pr
 ## Requirements
 
 - A [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
-- Administrative access (root) via SSH to your server
+- Administrative access (sudo) via SSH to your server
 
 ## Instructions
 
@@ -90,66 +89,40 @@ sudo systemctl restart sshd
 
 This should be sufficient to apply the changes. Alternatively, reboot the VPS (`~$ sudo reboot`).
 
+**For Ubuntu 23.04 and later**
+
+For the latest Ubuntu versions, the SSH configuration is now managed in the `ssh.socket` file.
+
+To update the SSH port, edit the `Listenstream` line in the configuration file with a text editor of your choice (`nano` used in this example):
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Save your changes and run the following commands:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+If you have enabled your operating system's firewall, make sure you allow the new port in your firewall rules.
+
 Remember that you will have to indicate the new port any time you request an SSH connection to your server, for example:
 
 ```bash
 ssh username@IPv4_of_your_VPS -p NewPortNumber
 ```
 
-### Changing the password associated with the user "root"
-
-It is strongly recommended that you modify the password of the root user as to not leave it at default value on a new system. Please refer to the information in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password) for details.
-
 ### Creating a user with restricted rights <a name="createuser"></a>
 
-In general, tasks that do not require root privileges should be performed via a standard user. You can create a new user with the following command:
-
-```bash
-sudo adduser CustomUserName
-```
-
-Then fill in the information requested by the system (password, name, etc.).
-
-The new user will be allowed to log in via SSH. When establishing a connection, use the specified credentials.
-
-Once you are logged in, type the following command to perform operations that require root permissions:
-
-```bash
-su root
-```
-
-Type the password when prompted and the active login will be switched to the root user.
-
-### Disabling server access via the root user
-
-The root user is created by default on GNU/Linux systems. Root access means having the highest level of permissions on an operating system. It is not advisable and even dangerous to leave your VPS accessible only via root, as this account can perform irreversibly damaging operations.
-
-We recommend that you disable direct root user access via the SSH protocol. Remember to create another user before following the steps below.
-
-You need to modify the SSH configuration file in the same way as described above:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Locate the following section:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Replace **yes** with **no** on the line `PermitRootLogin`.
-
-For this modification to be taken into account, you need to restart the SSH service:
-
-```bash
-sudo systemctl restart sshd
-```
-
-Afterwards, connections to your server via root user (`ssh root@IPv4_of_your_VPS`) will be rejected.
+In general, tasks that do not require root privileges should be performed via a standard user. Please refer to the information in [this guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) for details.
 
 ### Configuring the internal firewall (iptables)
 
@@ -255,6 +228,8 @@ You can find all information on the available backup solutions for your service 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 [Configuring the firewall on Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 

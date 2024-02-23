@@ -23,7 +23,7 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/.
 - Sie verfügen mindestens eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder GUI.
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.

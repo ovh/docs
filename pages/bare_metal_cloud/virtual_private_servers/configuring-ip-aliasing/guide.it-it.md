@@ -30,7 +30,7 @@ L'alias IP (*IP aliasing* in inglese) è una configurazione di rete speciale per
 
 - un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
 - un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
-- un accesso amministratore (root) via SSH o GUI sul tuo server
+- un accesso amministratore (sudo) via SSH o GUI sul tuo server
 - conoscenze di base sulle reti e la loro amministrazione
 
 ## Procedura

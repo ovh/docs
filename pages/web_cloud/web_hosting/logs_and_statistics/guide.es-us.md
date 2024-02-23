@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: Consultar las estadísticas y logs de un sitio web"
 excerpt: "Acceso a las estadísticas de su sitio"
-updated: 2023-11-20
+updated: 2024-02-13
 ---
 
 > [!primary]
@@ -23,9 +23,14 @@ El acceso a los logs y las estadísticas de su sitio web está incluido en su pl
 
 Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
-Seleccione el alojamiento correspondiente y abra la pestaña `Estadísticas y logs.`{.action}
+En el menú de la izquierda, seleccione el alojamiento correspondiente y abra la pestaña `Estadísticas y logs`{.action}.
 
-Se abrirá una ventana con 3 secciones. La primera presenta las **estadísticas**, la segunda los **logs** brutos de su alojamiento, la última está dedicada a **la administración de los usuarios** autorizados a acceder a las estadísticas.
+Se abrirá una pantalla que consta de 4 secciones:
+
+- **Estadísticas de visitas** : presenta numerosas estadísticas relativas a su alojamiento
+- **Logs del sitio web**: muestra los logs en bruto del alojamiento
+- **Estadísticas de la infraestructura**: presenta estadísticas gráficas (peticiones HTTP y SQL, comandos FTP, etc.)
+- **Administración de los usuarios**: muestra los usuarios autorizados a acceder a las estadísticas
 
 ![hosting](images/tab.png){.thumbnail}
 
@@ -59,7 +64,7 @@ Para ayudarle a realizar un mejor seguimiento y control del tráfico de sus siti
 
 ![hosting](images/ows-presentation.gif){.thumbnail}
 
-El panel de control de OVHcloud Web Statistics se presenta en 6 secciones, en el panel izquierdo.
+El panel de control de OVHcloud Web Statistics presenta 7 secciones:
 
 - Dashboard: visualización del tráfico en los sitios web del alojamiento.
 - Browsers: clasificación de los navegadores de internet más utilizados para visualizar sus sitios web.
@@ -67,9 +72,9 @@ El panel de control de OVHcloud Web Statistics se presenta en 6 secciones, en el
 - Peticiones: clasificación de las páginas más consultadas en sus sitios web.
 - Robots: visualización de los robots que pasan por sus sitios web.
 - Status : estadísticas de fallos y éxitos encontrados en función de los códigos HTTP devueltos.
-- FAQ: sección dedicada a las preguntas más frecuentes
+- FAQ: sección dedicada a las preguntas más frecuentes.
 
-El marco `Period selection` en la parte superior derecha le permite seleccionar un período preciso.
+El campo `Period selection` situado en la parte superior derecha permite seleccionar un período de tiempo específico.
 
 ### Logs
 

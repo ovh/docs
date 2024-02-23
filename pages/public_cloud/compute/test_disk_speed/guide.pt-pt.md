@@ -17,7 +17,7 @@ Quer seja para comparar as performances entre os diferentes discos, quer seja pa
 ## Requisitos
 
 - Dispor de uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}.
-- Dispor de um acesso administrativo (root) a esta instância através de SSH (unicamente para Linux).
+- Dispor de um acesso administrativo (sudo) a esta instância através de SSH (unicamente para Linux).
 
 ## Instruções
 

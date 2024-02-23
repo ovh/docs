@@ -13,7 +13,7 @@ Lors de vos tests, vous serez probablement amené à vérifier la vitesse de vos
 ## Prérequis
 
 - Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
-- Disposer d’un accès administratif (root) à cette instance via SSH (pour Linux uniquement).
+- Disposer d’un accès administratif (sudo) à cette instance via SSH (pour Linux uniquement).
 
 ## En pratique
 

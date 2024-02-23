@@ -149,11 +149,11 @@ You can further customise your MySQL by using advanced parameters. See the [Adva
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 2 days.
+*Essential* plan clusters are automatically backed up daily. Backup retention is 2 days.
 
-*Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 14 days.
+*Business* plan clusters are automatically backed up daily. Backup retention is 14 days.
 
-*Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
+*Enterprise* plan clusters are automatically backed up daily. Backup retention is 30 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

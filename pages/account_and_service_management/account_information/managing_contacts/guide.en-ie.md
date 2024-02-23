@@ -1,7 +1,7 @@
 ---
 title: 'Managing contacts for your services'
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Objective
@@ -32,7 +32,11 @@ The NIC handle is a personal username that you receive via email when you create
 
 ## Instructions
 
-### Access contact management.
+> [!primary]
+> Contact management is only possible between two OVHcloud accounts located in the same geographical zone.
+> For example, it is impossible to manage contacts between an account in Europe and an account in Canada.
+
+### Access contact management
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
 

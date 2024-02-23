@@ -23,7 +23,7 @@ Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessi
 - Avoir un système d'exploitation compatible avec NFS installé sur votre serveur
 - Avoir [créé une partition sur votre service avec le protocole NFS activé](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#partition)
 - Avoir [une entrée ACL pour l'adresse IP du serveur](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#addaccess)
-- Disposer d’un accès administratif (root) à votre serveur via SSH ou GUI
+- Disposer d’un accès administratif (sudo) à votre serveur via SSH ou GUI
 
 ## En pratique
 

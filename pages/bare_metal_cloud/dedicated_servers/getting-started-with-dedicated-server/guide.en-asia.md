@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with a dedicated server'
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 ## Objective
@@ -16,7 +16,7 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
-- Administrative access (root) via SSH or remote desktop (Windows) to your server
+- Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 
 > [!primary]
 >
@@ -97,23 +97,21 @@ Once the installation is completed, you will receive an email containing instruc
 
 Use the following examples to log on to your server, replacing the credentials with your actual information (IP address and server reference name are interchangeable).
 
-**Example with root:**
-
 ```bash
-ssh root@IPv4_of_your_server
+ssh username@IPv4
 ```
 
-**Example with a pre-configured user:**
+**Example:**
 
 ```bash
-ssh ubuntu@reference_name_of_your_server
+ssh ubuntu@169.254.10.250
 ```
 
 You can learn more about SSH in [this guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 #### Windows
 
-Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
+Once the installation is completed, you will receive an email containing your password for administrative (sudo) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
 Please also refer to our guide on [Configuring a new Windows Server installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
@@ -192,6 +190,12 @@ OVHcloud dedicated servers have an access-controlled storage space as a gratuito
 To activate and use the backup storage, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Go further
+
+[How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
+[Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

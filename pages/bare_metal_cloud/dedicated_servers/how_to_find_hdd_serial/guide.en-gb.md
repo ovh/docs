@@ -13,7 +13,7 @@ To minimise the chance of human error during hard disk replacements, we ask our 
 ## Requirements
 
 - a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
-- administrative (root) access to the server via SSH
+- administrative (sudo) access to the server via SSH
 - the sas2ircu utility installed on your Windows server (available via the [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} search engine)
 
 ## Instructions

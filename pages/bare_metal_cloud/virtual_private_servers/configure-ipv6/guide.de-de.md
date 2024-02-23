@@ -23,7 +23,7 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 ## Voraussetzungen
 
 - Sie verfügen über einen [OVHcloud VPS](https://www.ovhcloud.com/de/vps/).
-- Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH oder RDP (Windows).
+- Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder RDP (Windows).
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) / die [OVHcloud API](https://api.ovh.com/).
 

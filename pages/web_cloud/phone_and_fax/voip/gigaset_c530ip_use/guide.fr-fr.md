@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser le Gigaset C530IP'
 excerpt: 'Découvrez comment utiliser votre téléphone Gigaset C530IP'
-hidden: true
+flag: hidden
 updated: 2018-07-03
 ---
 

@@ -1,12 +1,14 @@
 ---
 title: Local Zone Compute - Fonctionnalités, capacités et limites
 excerpt: Découvrez les fonctionnalités, les capacités et les limites actuelles des instances Local Zones
-updated: 2024-02-08
+updated: 2024-02-21
 ---
 
 > [!primary]
 >
-> Les instances Local Zone sont actuellement uniquement déployées en version bêta. Si vous rencontrez des difficultés et/ou souhaitez discuter de votre expérience avec d’autres utilisateurs, veuillez nous contacter sur Discord <https://discord.gg/ovhcloud> ou contactez notre plateforme communautaire : <https://community.ovh.com/fr/>.
+> Les instances Local Zone sont actuellement uniquement déployées en version bêta. 
+> Si vous rencontrez des difficultés, contactez nos équipes du support en créant un ticket depuis votre [Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
+> Si vous souhaitez discuter de votre expérience avec d’autres utilisateurs, rejoignez-nous sur Discord <https://discord.gg/ovhcloud> ou sur notre plateforme communautaire : <https://community.ovh.com/fr/>.
 > 
 
 ## Objectif

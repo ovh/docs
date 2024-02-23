@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux) (EN)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2024-02-01
+updated: 2024-02-14
 ---
 
 ## Objective
@@ -23,9 +23,10 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 - Your image must be smaller than the Server RAM minus 3GiB
 - An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
 
+
 > [!warning]
 >
-> As any classical OS installation, a new installation with BYOLinux will erase all the data on the server.
+> As with any classical OS installation, a new installation with BYOLinux will erase all the data on the server.
 >
 
 ## Instructions
@@ -52,7 +53,7 @@ In the `General information`{.action} tab, click the `...`{.action} button next 
 
 ![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
 
-In the window that appears, select `Install from OVHcloud template`{.action} and click `Next`{.action}.
+In the window that appears, select `Install from an OVHcloud template`{.action} and click `Next`{.action}.
 
 ![BringYourOwnLinux Control Panel 02](images/byolinux-controlpanel02.png){.thumbnail}
 

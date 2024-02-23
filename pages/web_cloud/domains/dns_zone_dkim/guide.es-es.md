@@ -1,7 +1,7 @@
 ---
 title: Configurar un registro DKIM
 excerpt: Cómo configurar un registro DKIM en un dominio y una plataforma de correo electrónico de OVHcloud
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -383,7 +383,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >> <br>
 >>
@@ -398,7 +398,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >>
 > **2.Crear un selector**
 >> Va a crear un selector, generar su par de claves y el registro DNS asociado al dominio.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > Le recomendamos que realice esta operación dos veces para cada uno de los selectores que ha indicado anteriormente. El segundo selector le permitirá realizar un cambio de par de claves cuando sea necesario. Le invitamos a consultar nuestro caso de uso [«Cómo cambiar su par de claves DKIM»](#2selectors).

@@ -1,7 +1,7 @@
 ---
 title: Cómo utilizar las políticas IAM desde el área de cliente
 excerpt: Cómo conceder permisos de acceso específicos a los usuarios desde una cuenta de OVHcloud
-updated: 2023-12-06
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -122,6 +122,9 @@ Las acciones disponibles dependen del tipo de recurso y pertenecen a una de las 
 - **Operate**: aplicar cambios en la infraestructura del producto (*p. ej., reiniciar un servidor dedicado*).
 
 Hay un campo de búsqueda disponible para ayudarle a identificar una acción específica en la lista.
+
+> [!primary]
+> Las acciones relacionadas con los productos IP y vRack, así como las acciones relacionadas con el pedido y la facturación, aún no están disponibles en el IAM de OVHcloud.
 
 #### Modificar una política
 

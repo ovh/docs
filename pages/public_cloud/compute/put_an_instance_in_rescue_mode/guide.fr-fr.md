@@ -16,7 +16,7 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 
 - Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Avoir accès à votre instance via SSH en tant qu'administrateur (root)
+- Avoir accès à votre instance via SSH en tant qu'administrateur (sudo)
 
 ## En pratique
 

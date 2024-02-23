@@ -151,7 +151,7 @@ You can further customise your Cassandra by using advanced parameters. See the [
 
 #### Backups
 
-Your services are automatically backed up daily during their maintenance window. The point-in-time recovery (PITR) feature is currently not available.
+Your services are automatically backed up daily. The point-in-time recovery (PITR) feature is currently not available.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

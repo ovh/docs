@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com um servidor dedicado'
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -101,23 +101,21 @@ Uma vez terminada a instalação, receberá um e-mail com as instruções de ace
 
 Para se ligar ao servidor, utilize os exemplos abaixo e substitua as informações de identificação pelos seus próprios identificadores (o endereço IP e o nome de referência do servidor são permutáveis).
 
-**Exemplo com root:**
-
 ```bash
-ssh root@IPv4_do_servidor
+ssh username@IPv4
 ```
 
-**Exemplo com um utilizador pré-configurado:**
+**Exemplo:**
 
 ```bash
-ssh ubuntu@nome_de_referência_do_servidor
+ssh ubuntu@169.254.10.250
 ```
 
 Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 #### Windows
 
-Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (root). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
+Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (sudo). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
 
 Consulte também o nosso guia [Configurar uma nova instalação do Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
@@ -196,6 +194,8 @@ Os servidores dedicados da OVHcloud incluem um espaço de armazenamento com cont
 Para ativar e utilizar a opção Backup Storage, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Quer saber mais?
+
+[Configuração das contas de utilizadores e acesso root num servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Proteger um servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 

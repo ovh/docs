@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2023-12-06
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -123,6 +123,9 @@ Dostępne działania zależą od rodzaju zasobów i należą do jednej z pięciu
 - **Operate**: wprowadzenie zmian w infrastrukturze związanej z produktem (*ex: restart serwera dedykowanego*).
 
 Pole wyszukiwania jest dostępne, aby pomóc Ci zidentyfikować konkretne działanie na liście.
+
+> [!primary]
+> Operacje związane z produktami IP i vRack, jak również operacje związane z zamówieniem i płatnościami nie są jeszcze dostępne w IAM OVHcloud.
 
 #### Zmień politykę
 

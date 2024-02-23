@@ -14,7 +14,7 @@ When creating an instance, only one SSH key for the initial connection can be co
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- Administrative access (root) to your instance via SSH
+- Administrative access (sudo) to your instance via SSH
 
 ## Instructions
 

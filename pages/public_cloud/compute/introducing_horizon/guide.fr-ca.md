@@ -1,6 +1,7 @@
 ---
 title: Présentation de Horizon
-updated: 2022-03-16
+excerpt: Découvrez les principales sections de l'interface Horizon
+updated: 2024-02-09
 ---
 
 ## Objectif
@@ -12,15 +13,15 @@ L'interface Horizon, nativement proposée avec OpenStack, a été adaptée par O
 ## Prérequis
 
 - Un [project Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud.
-- Un utilisateur [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) créé dans votre projet.
+- **[Facultatif depuis septembre 2023]** Un utilisateur [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) créé dans votre projet. Cette étape est facultative car nous avons déployé une authentification unique (SSO : *Single Sign-On*) entre l'espace client OVHcloud et Horizon.
 
 ## En pratique
 
 ### Se connecter à OpenStack Horizon
 
-Ouvrez la page de connexion à [Horizon](https://horizon.cloud.ovh.net/auth/login/) et renseignez les [identifiants OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) préalablement créés, puis cliquez sur `Connect`{.action}.
+* Pour vous connecter avec l'authentification unique OVHcloud : utilisez le lien `Horizon`{.action} dans le menu de gauche sous "Management Interfaces" après avoir ouvert votre projet `Public Cloud`{.action} dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-Vous pouvez également cliquer sur `Horizon`{.action} dans le menu de gauche sous "Management Interfaces" après avoir ouvert votre projet `Public Cloud`{.action} dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+* Pour vous connecter avec un utilisateur OpenStack spécifique : ouvrez la page de connexion à [Horizon](https://horizon.cloud.ovh.net/auth/login/) et renseignez les [identifiants OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) préalablement créés, puis cliquez sur `Connect`{.action}.
 
 ### Choix de la région du datacentre
 

@@ -19,7 +19,7 @@ Si ha alcanzado la capacidad máxima de su disco adicional, puede añadir almace
 - Tener una [instancia Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su proyecto de Public Cloud.
 - Tener un [disco adicional](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creado en su proyecto.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Tener acceso administrativo (root) a su instancia a través de SSH (Linux) o RDP (Windows).
+- Tener acceso administrativo (sudo) a su instancia a través de SSH (Linux) o RDP (Windows).
 
 ## Procedimiento
 

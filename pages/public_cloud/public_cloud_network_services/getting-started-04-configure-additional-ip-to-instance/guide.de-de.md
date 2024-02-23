@@ -29,7 +29,7 @@ Es kann nowendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum B
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account.
 - Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
-- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH oder GUI. 
+- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
 > [!warning]

@@ -1,7 +1,7 @@
 ---
 title: "Mettere in sicurezza un server dedicato"
 excerpt: "Scopri come proteggere un server dedicato grazie ad alcuni suggerimenti"
-updated: 2024-01-23
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Al momento dell'ordine del tuo server dedicato, puoi scegliere una distribuzione
 ## Prerequisiti
 
 - Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
-- Avere un accesso amministratore (root) al server via SSH
+- Avere un accesso amministratore (sudo) al server via SSH
 
 ## Procedura
 
@@ -96,6 +96,31 @@ sudo systemctl restart sshd
 
 Ciò dovrebbe essere sufficiente per attuare le modifiche. In caso contrario, riavvia il server (`~$ sudo reboot`).
 
+**Per Ubuntu 23.04 e versioni successive**
+
+Per le ultime versioni di Ubuntu, la configurazione SSH viene gestita nel file `ssh.socket`.
+
+Per aggiornare la porta SSH, modifica la riga `Listenstream` nel file di configurazione con un editor di testo a tua scelta (`nano` utilizzato in questo esempio):
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Salvare le modifiche ed eseguire i comandi seguenti:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Se è stato attivato il firewall del sistema operativo, assicurarsi di consentire la nuova porta secondo le regole del firewall.
+
 Ricordati di indicare la nuova porta ad ogni richiesta di connessione SSH al tuo server, ad esempio:
 
 ```bash
@@ -107,61 +132,9 @@ ssh username@IPv4_of_your_server -p NewPortNumber
 > Ricorda che la modifica della porta di default di SSH o qualsiasi altro protocollo costituisce un potenziale rischio. Non è possibile configurare alcuni servizi per utilizzarli con porte non standard e, pertanto, se si modifica la porta di default non funzioneranno.
 >
 
-### Modifca la password associata all’utente “root”
-
-Ti consigliamo vivamente di modificare la password dell'utente root per non lasciarla al valore predefinito su un nuovo sistema. Per maggiori informazioni, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
-
 ### Crea un account con diritti utente limitati
 
-In genere, i compiti che non richiedono privilegi root devono essere eseguiti tramite un utente standard. Per creare un nuovo utente, utilizza questo comando:
-
-```bash
-sudo adduser NomeUtentePersonalizzato
-```
-
-Inserisci le informazioni richieste dal sistema: password, nome, ecc...
-
-Il nuovo utente sarà autorizzato a connettersi in SSH. Per stabilire una connessione, utilizza le informazioni di identificazione specificate.
-
-Una volta connesso, esegui questo comando per eseguire operazioni che richiedono l'autorizzazione root:
-
-```bash
-su root
-```
-
-Inserisci la password quando sei invitato e la connessione attiva sarà trasferita all'utente root.
-
-### Disattiva l’accesso dell’utente root al server 
-
-L'utente root viene creato di default sui sistemi GNU/Linux. Si tratta del livello di accesso più elevato a un sistema operativo.<br>
-È sconsigliato e anche pericoloso lasciare che il tuo server dedicato sia accessibile esclusivamente come utente di root, perché questo account può effettuare operazioni irreversibilmente dannose.
-
-Ti consigliamo di disattivare l'accesso diretto degli utenti root tramite il protocollo SSH. Ricordati di creare un altro utente prima di seguire gli step qui sotto.
-
-Modifica il file di configurazione SSH come descritto in precedenza:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Trova questa sezione:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Sostituisci **yes** con **no** sulla linea `PermitRootLogin`.
-
-Per applicare la modifica, riavvia il servizio SSH:
-
-```bash
-sudo systemctl restart sshd
-```
-
-In seguito, le connessioni al tuo server tramite l'utente root (`ssh root@IPv4_of_your_server`) saranno rifiutate.
+In genere, i compiti che non richiedono privilegi root devono essere eseguiti tramite un utente standard. Per maggiori informazioni, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Configura il firewall interno (iptables)
 
