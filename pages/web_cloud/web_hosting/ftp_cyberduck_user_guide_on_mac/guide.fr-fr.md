@@ -141,7 +141,7 @@ Une fenêtre s'affiche contenant vos informations de connexion, ainsi qu'une nou
 
 ### Transférer des fichiers
 
-Le transfert de fichiers vous permet de déposer votre site internet sur votre espace d'hébergement. Par défaut, vous devez déposer vos fichiers dans le répertoire (dossier) `www`. Vous pouvez transférer vos fichiers via plusieurs méthodes.
+Le transfert de fichiers vous permet de déposer votre site internet sur votre espace d'hébergement web. Par défaut, vous devez déposer vos fichiers dans le répertoire (dossier) `www`. Vous pouvez transférer vos fichiers via plusieurs méthodes.
 
 #### Via un glisser-déposer
 
