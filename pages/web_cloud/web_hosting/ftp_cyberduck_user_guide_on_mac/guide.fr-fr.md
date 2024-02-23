@@ -37,7 +37,7 @@ Pour télécharger Cyberduck, rendez-vous sur le [site officiel](https://cyberdu
 Lorsque vous démarrez l'application, l'interface ci-dessous s'affiche.
 
 - La partie supérieure, entourée en orange, correspond à la barre d'outils. Elle vous permet d'établir une connexion à votre espace d'hébergement, de naviguer dans l'arborescence de vos dossiers et fichiers, de consulter l'historique de vos actions, ainsi que de nombreuses autres actions.
-- En-dessous se trouve le contenu que vous souhaitez afficher. Par exemple, si vous cliquez sur l'icône `History`{.action}, la liste des vos actions s'y affichera.
+- En-dessous se trouve le contenu que vous souhaitez afficher. Par exemple, si vous cliquez sur l'icône `History`{.action}, la liste des vos actions y apparaitra.
 
 ![hosting](images/start-page.png){.thumbnail}
 
