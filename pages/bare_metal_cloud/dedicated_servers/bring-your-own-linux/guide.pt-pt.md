@@ -21,7 +21,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
-- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.shhttps://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
+- An executable script `/root/.ovh/make_image_bootable.sh`, which will reinstall and configure the bootloader, [for example GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
 
 > [!warning]
 >
