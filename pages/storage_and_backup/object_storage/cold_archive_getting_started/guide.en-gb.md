@@ -185,7 +185,7 @@ Once an intelligent-tiering configuration has been pushed (via a `put-bucket-int
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
 ```
 
-If you have locked your archive, you can check the retention period using the get-bucket-tagging command.
+If you have locked your archive, you can check the retention period using the `get-bucket-tagging command`.
 
 - Example:
 
