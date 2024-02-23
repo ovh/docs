@@ -93,7 +93,6 @@ Celui-ci vous est envoyé par e-mail **sur l'adresse principale** que vous avez 
 
 Si vous ne retrouvez pas ce code, pensez à vérifier les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
 
-Remarque : cette section ne s'applique pas dans le cas de figure de la perte de l'adresse e-mail principale. Dans ce cas, se référer à la section "J'ai perdu mon mot de passe et mon adresse e-mail principale n'est plus valide". 
 
 
 > [!primary]
