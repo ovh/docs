@@ -233,7 +233,7 @@ Pour vérifier que la réouverture est bien effective, connectez-vous à votre s
 
 #### Connaître le serveur de connexion
 
-Dans certains cas, notre support a besoin de connaître le serveur sur lequel s'est connecté Cyberduck. Par exemple, cette vérification peut intervenir si vous constatez des lenteurs ou des anomalies diverses avec votre espace d'hébergement.
+Dans certains cas, notre support a besoin de connaître le serveur sur lequel s'est connecté Cyberduck. Par exemple, cette vérification peut intervenir si vous constatez des lenteurs ou des anomalies diverses avec votre espace d'hébergement web.
 
 Pour cela, vous devez au préalable activer le journal. Cliquez sur `Présentation`{.action} puis sur `Afficher/masquer le tiroir du journal`{.action}.
 
