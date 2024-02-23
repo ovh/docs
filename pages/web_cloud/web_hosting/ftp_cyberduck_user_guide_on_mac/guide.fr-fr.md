@@ -212,7 +212,7 @@ Cliquez sur l'onglet `Permissions`{.action} puis effectuez les modifications sou
 
 Vous pouvez effectuer la réouverture de votre site web en utilisant une commande personnalisée.
 
-Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de votre espace d'hébergement par OVHcloud suite à un piratage.
+Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de l'espace de stockage FTP de votre hébergement web par OVHcloud suite à un piratage.
 
 Dans le menu de Cyberduck, cliquez sur `Go`{.action} puis sur `Send command...`{.action}.
 
