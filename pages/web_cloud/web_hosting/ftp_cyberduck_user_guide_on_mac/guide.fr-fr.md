@@ -86,7 +86,7 @@ Afin de pouvoir vous connecter à votre espace d'hébergement web, suivez les é
 > - Si vous ne connaissez pas toutes vos informations FTP (serveur, identifiants etc.), reportez-vous au guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
 > 
 
-Lorsque vous effectuez une première connexion vers votre espace d'hébergement, une fenêtre portant le titre `Modified fingerprint`{.action} s'affiche. Cochez la case `Always`{.action} puis validez. Ceci vous permettra de certifier définitivement l'hôte de connexion (OVHcloud).
+Lorsque vous effectuez une première connexion vers votre espace d'hébergement web, une fenêtre portant le titre `Modified fingerprint`{.action} s'affiche. Cochez la case `Always`{.action} puis validez. Ceci vous permettra de certifier définitivement l'hôte de connexion (OVHcloud).
 
 > [!success]
 >
