@@ -6,7 +6,7 @@ updated: 2024-02-23
 
 ## Objectif
 
-Disponible sur macOS et Windows, Cyberduck est une application open-source de transfert de fichiers qui vous permet de vous connecter à votre espace d'hébergement OVHcloud via FTP et SFTP.
+Disponible sur macOS et Windows, Cyberduck est une application open-source de transfert de fichiers. Elle vous permet de vous connecter à l'espace de stockage FTP de votre hébergement web (en protocole FTP ou SFTP).
 
 Pour télécharger Cyberduck, veuillez vous reporter au [site officiel](https://cyberduck.io/) de l'application.
 
