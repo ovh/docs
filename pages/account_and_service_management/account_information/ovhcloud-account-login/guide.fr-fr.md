@@ -81,7 +81,7 @@ Vous devez compléter ce [formulaire en ligne](http://www.ovh.com/fr/cgi-bin/fr/
 Dans ce cas de figure, vous pouvez : 
 - utiliser les code de secours actifs que vous avez sauvegardés ;
 - utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs ;
-- [désactiver la double authentification](#desactivation).
+- désactiver la double authentification.
 
 Consultez les démarches appropriées sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner) ».
 
