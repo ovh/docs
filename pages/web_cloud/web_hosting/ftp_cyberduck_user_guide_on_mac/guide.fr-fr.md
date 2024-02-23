@@ -185,7 +185,7 @@ Double-cliquez sur un fichier ou un dossier pour effectuer les actions suivantes
 - Télécharger le ou les éléments sélectionné(s).
 - Créer un nouveau dossier ou fichier.
 
-La liste ci-dessus n'est pas exhaustive, d'autres actions sont possibles. Consultez le [site officiel](https://cyberduck.io/) de Cyberduck en cas de besoin.
+La liste ci-dessus n'est pas exhaustive, d'autres actions sont possibles. Consultez le [site officiel](https://cyberduck.io/) de Cyberduck si besoin.
 
 ### Informations utiles
 
