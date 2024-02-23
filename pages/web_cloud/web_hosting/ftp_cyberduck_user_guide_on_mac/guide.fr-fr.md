@@ -1,7 +1,7 @@
 ---
 title: Tutoriel - Utiliser Cyberduck avec votre hébergement web OVHcloud
 excerpt: "Découvrez comment utiliser l’application Cyberduck pour vous connecter à votre hébergement web OVHcloud"
-updated: 2024-02-22
+updated: 2024-02-23
 ---
 
 ## Objectif
