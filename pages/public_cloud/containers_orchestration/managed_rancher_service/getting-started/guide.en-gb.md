@@ -22,7 +22,7 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 
 ## Rancher Creation and Access
 
-To initiate your journey, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `Public Cloud`{.action} section. 
+To initiate your journey, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `Public Cloud`{.action} section.
 Then access the `Managed Rancher Service`{.action} under the `Containers & Orchestration` section.
 Using the OVHcloud Control Panel you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
 
@@ -198,7 +198,7 @@ For each machine pool, define the machine configuration by providing the followi
 - **Region** - The OVHcloud Public Cloud region. If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) page.
 - **Flavor** - The instance flavor used for your nodes. You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/en/public-cloud/prices/#13569).
 - **Image** - The Operating System image used for your nodes. Please refer to [Rancher Operating Systems and Container Runtime Requirements](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters).
-- **Key Pair** - The SSH Key Pair used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](/pages/public_cloud/compute/public-cloud-first-steps).
+- **Key Pair** (optional) - The SSH Key Pair that should be used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](https://help.ovhcloud.com/csm/en-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051009). If you leave this field empty, a new keypair will be generated automatically.
 - **Security Group** - The security group from your Public Cloud project that will be applied to created instances.
 - **Availability Zone** - Only `nova` is supported at the moment.
 - **Floating IP Pools** - Only `Ext-Net` is supported at the moment.
@@ -241,6 +241,8 @@ Run the provided kubectl command on an existing Managed Kubernetes Service clust
 
 ```shell
 kubectl apply -f https://rancher.ovh.net/v3/import/file.yaml
+```
+```shell
   clusterrole.rbac.authorization.k8s.io/proxy-clusterrole-kubeapiserver unchanged
   clusterrolebinding.rbac.authorization.k8s.io/proxy-role-binding-kubernetes-master unchanged
   namespace/cattle-system created
