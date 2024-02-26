@@ -30,7 +30,7 @@ Pour télécharger Cyberduck, rendez-vous sur le [site officiel](https://cyberdu
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Avoir téléchargé et installé l'application Cyberduck sur votre ordinateur.
 
-## En pratique
+## In der praktischen Anwendung
 
 ### Interface
 
@@ -61,9 +61,6 @@ Dans la fenêtre qui apparaît, faites glisser les éléments souhaités vers la
 >
 > Pour des raisons de sécurité, se connecter en FTP n'est pas recommandé. La plupart des systèmes d'exploitation interdisent désormais la possibilité de se connecter en FTP. Préférez donc une connexion SFTP.
 >
-
-
-> 
 
 Afin de pouvoir vous connecter à votre espace d'hébergement web, suivez les étapes ci-dessous :
 
@@ -230,5 +227,7 @@ Pour vérifier que la réouverture est bien effective, connectez-vous à votre s
 ## Aller plus loin <a name="go-further"></a>
 
 [Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
