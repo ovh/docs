@@ -1,7 +1,7 @@
 ---
 title: Gérer mes factures OVHcloud
 excerpt: Découvrez comment gérer vos factures et les paiements liés à celles-ci
-updated: 2022-05-12
+updated: 2024-02-26
 ---
 
 ## Objectif
@@ -137,8 +137,10 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 
 > [!primary]
 >
-> Si vous constatez une différence entre un paiement et le montant d'une facture, cela signifie que vous possédiez un avoir qui a automatiquement diminué le montant prélevé.
->
+> Si vous constatez une différence entre un paiement et le montant d'une facture, cela signifie que vous possédiez un avoir qui a automatiquement diminué le montant prélevé. 
+> Si, à l'inverse, vous constatez un paiement supérieur au montant d'une facture, nous vous prions de vous rapprocher du service client en créant un ticket de réclamation.
+> <br> Cliquez en haut à droite de votre écran sur votre nom, puis sur `Créer un ticket`{.action}.
+Vous pouvez également voir le détail de votre facture en vous référant à la section "#Comprendre votre facture"
 
 ## Aller plus loin
 
