@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la facturation et le paiement
 excerpt: Retrouvez les questions les plus fréquemment posées sur la facturation et le paiement
-updated: 2023-06-05
+updated: 2024-02-26
 ---
 
 ## Objectif
@@ -51,7 +51,7 @@ Rendez-vous dans la rubrique `Produits et Services`{.action} accessible directem
 #### Trucs et astuces
 
 Avant toute activation du renouvellement automatique, pensez à renseigner un moyen de paiement. En effet, en cas d'impayé, vos services seront suspendus après 7 jours.
-Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
+Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer mes moyens de paiement] (https://help.ovhcloud.com/csm/fr-billing-manage-payment-methods?id=kb_article_view&sysparm_article=KB0042873).  
 
 ### Comment désactiver le renouvellement automatique ?
 
@@ -88,11 +88,12 @@ Connectez-vous à votre espace client OVHcloud, puis directement sur le tableau 
 
 #### Trucs et astuces
 
-Avant de supprimer un moyen de paiement, assurez-vous d'en avoir enregistré autre.
+Avant de supprimer un moyen de paiement, assurez-vous d'en avoir enregistré un autre.
 
 ### Quel est mon moyen de paiement par défaut ?
 
-Une fois connecté à votre espace client, votre moyen de paiement par défaut est directement indiqué sur votre tableau de bord.
+Le moyen de paiement par défaut est le mode automatiquement affecté à votre compte pour le règlement d'une facture. Vous pouvez le retrouver en vous connectant à votre espace client, sur votre tableau de bord. 
+Le solde de votre facture sera donc débité sur le moyen de paiement que vous avez paramétré par défaut. 
 
 Pour changer de moyen de paiement par défaut, consultez notre guide sur la [gestion des moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 
@@ -110,14 +111,6 @@ Retrouvez toutes vos dates de renouvellement dans la rubrique « Produits et ser
 
 Vous pouvez modifier la fréquence de renouvellement de vos solutions depuis la rubrique `Mes services`{.action} de votre espace client.
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
-
-### Lequel de mes moyens de paiement sera débité ?
-
-Le solde de votre facture sera débité sur le moyen de paiement que vous avez paramétré par défaut. Celui-ci est affiché sur le tableau de bord de votre espace client OVHcloud.
-
-#### Trucs et astuces
-
-Si votre compte prépayé OVHcloud est créditeur, il sera toujours utilisé par défaut lors de vos renouvellements. Si le montant crédité est inférieur à celui de la facture, la différence sera alors prélevée sur votre moyen de paiement enregistré. Enfin, si aucun moyen de paiement n'est enregistré, une facture de régularisation vous sera adressée par e-mail.
 
 ### Comment retrouver mes factures ?
 
