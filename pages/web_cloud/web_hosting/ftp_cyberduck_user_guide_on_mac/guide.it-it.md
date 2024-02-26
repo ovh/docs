@@ -1,258 +1,237 @@
 ---
-title: 'Hosting condiviso: guida all’utilizzo di Cyberduck (MAC)'
-excerpt: In questa guida ti mostriamo come utilizzare Cyberduck
-updated: 2020-05-05
+title: "Tutorial - Utilizzare Cyberduck con un hosting Web"
+excerpt: "Questa guida ti mostra come utilizzare l’applicazione Cyberduck per connettersi a un hosting Web OVHcloud"
+updated: 2024-02-23
 ---
 
-## Introduzione
-Cyberduck è un software MAC che ti permette di pubblicare il tuo sito accedendo al tuo spazio hosting (FTP).
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
-Per utilizzarlo, vai sul sito ufficiale Cyberduck: [cyberduck.io](https://cyberduck.io/)
+## Obiettivo
 
-![cyberduck macOS](images/logo.png){.thumbnail}
-Cyberduck è un software MAC. Se utilizzi Windows, ti consigliamo di utilizzare FileZilla: [](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide))
+Disponibile su macOS e Windows, Cyberduck è un'applicazione open source per il trasferimento di file. Permette di accedere allo spazio di storage FTP dell’hosting Web (utilizzando il protocollo FTP o SFTP).
 
-## Interfaccia
-Al primo avvio, potresti visualizzare questa finestra.
+Per scaricare Cyberduck, accedi al [sito ufficiale](https://cyberduck.io/) dell’applicazione.
 
-- La parte in alto ti permette di impostare una nuova connessione e un collegamento veloce, e di effettuare diverse azioni dopo esserti connesso al tuo spazio FTP (rinomina, modifica, ecc.).
+![hosting](images/logo.png){.thumbnail}
 
-- La parte centrale ti permette di visualizzare i preferiti che hai aggiunto (le tue connessioni FTP configurate) e, dopo esserti connesso, il contenuto del tuo spazio hosting.
+> [!primary]
+>
+> - Cyberduck è un'applicazione disponibile su macOS e Windows. L’interfaccia e le funzionalità di Cyberduck sono relativamente simili tra i due sistemi operativi: in questo modo, il tutorial è stato eseguito su una macchina Windows.
+> - Questa guida è stata realizzata con una versione gratuita dell'applicazione in versione 8.7.2, scaricata dal [sito ufficiale](https://cyberduck.io/).
+>
 
-- La parte in basso include le informazioni su un'azione in corso (connessione al server FTP) e le icone per aggiungere nuove operazioni.
+> [!warning]
+>
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
+>
 
-![cyberduck macOS](images/start-page.png){.thumbnail}
-Personalizza l'interfaccia di Cyberduck
+## Prerequisiti
 
-Rendi il tuo Cyberduck perfetto per te. 
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}.
+- Aver scaricato e installato l’applicazione Cyberduck sul proprio computer.
 
-Per effettuare le modifiche, clicca su Visuale poi su Personalizza Barra Strumenti.
+## Procedura
 
-Nella finestra che compare, trascina gli elementi che vuoi aggiungere alla barra degli strumenti poi clicca su Fine per confermare.
+### Interfaccia
 
-![cyberduck macOS](images/customize-display.png){.thumbnail}
+Quando avvii l’applicazione, viene visualizzata l’interfaccia qui sotto.
 
-## Connessione FTP
-Per accedere al tuo spazio hosting (FTP), segui questi step: 
+- La parte superiore, racchiusa in arancione, corrisponde alla barra degli strumenti. Ti permette di stabilire una connessione al tuo spazio di hosting, di navigare nella gerarchia delle cartelle e dei file, di consultare la cronologia delle tue azioni e molte altre.
+- Il contenuto che si desidera visualizzare è riportato sotto. Ad esempio, se clicchi sull’icona `History`{.action}, comparirà la lista delle tue azioni.
 
-1. Clicca su Nuova connessione in alto a sinistra
+![hosting](images/start-page.png){.thumbnail}
 
-2. Inserisci nella nuova finestra i dati per connetterti al tuo spazio FTP:
+### Personalizza la visualizzazione di Cyberduck
 
-- Server FTP
-- Nome utente
-- Password
-- Porta (21)
+È possibile personalizzare la visualizzazione di Cyberduck per renderla più efficiente e personale.
 
-3. Clicca su Aggiungi all'Accesso Portachiavi se vuoi memorizzare la tua password su Cyberduck
+Nel menu principale, nella parte superiore dell’interfaccia, clicca su `View`{.action} e poi su `Customize Toolbar...`{.action}.
 
-4. Clicca su Connessione per connetterti al tuo spazio hosting (FTP)
+![hosting](images/customize-toolbar.png){.thumbnail}
 
-![cyberduck macOS](images/ftp-connection.png){.thumbnail}
+Nella nuova finestra, trascinare gli elementi desiderati sulla barra degli strumenti. Ad esempio, per aggiungere un’icona `Download`{.action} alla barra degli strumenti, trascinare e rilasciare l’icona `Download`{.action} sulla barra degli strumenti. Per confermare le modifiche, clicca su `Done`{.action}.
 
-- Puoi memorizzare la tua password su Cyberduck cliccando Aggiungi all'Accesso Portachiavi. Questa opzione è facoltativa: se non usi questa opzione dovrai reinserire la password per riconnetterti al tuo spazio hosting.
+![hosting](images/customize-display.png){.thumbnail}
 
-- Se non hai le credenziali FTP, consulta questa guida: [Recupera le tue credenziali FTP](http://www.ovh.it/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
+### Utilizza Cyberduck
 
-Un eventuale avviso ti confermerà che il server supporta connessioni cifrate (SSL).
+#### Connessione SFTP
 
-- Se il server non è compatibile con l'FTP-SSL, clicca su Non mostrare nuovamente e seleziona Continua.
+> [!warning]
+>
+> Per motivi di sicurezza, non è consigliabile connettersi tramite FTP. La maggior parte dei sistemi operativi vieta la possibilità di connettersi tramite FTP. Preferisci una connessione SFTP.
+>
 
-- Se vuoi una connessione sicura, utilizza [connessione SFTP](#utiliser_cyberduck_connexion_sftp). Questa connessione è disponibile solo se la tua offerta di Web hosting include un accesso SSH.
+Per accedere allo spazio di hosting Web, segui questi step:
 
-![cyberduck macOS](images/ftp-ssl-connection.png){.thumbnail}
+**1.** Nella barra degli strumenti, clicca su `Open Connection`{.action}
 
-- Per verificare se la tua offerta include l'accesso SSH, controlla i [dettagli delle nostre offerte](http://www.ovh.it/hosting-web/). 
+**2.** Nel menu a tendina (cornice arancione dell’immagine), seleziona `SFTP (SSH File Transfert Protocol)`{.action}
 
-- Se non sei sicuro, seleziona comunque Continua: se l'accesso SSH non è incluso nella tua offerta, il server rifiuterà la connessione.
+**3.** Inserisci le informazioni di connessione al tuo spazio FTP:
 
-Per conservare le informazioni di connessione, salvale tra i Preferiti. 
-
-- Se non riesci, consulta questa parte della guida: [Che cos'è un Preferito?](#utiliser_cyberduck_quest-ce_quun_signet).
-
-## Connessione SFTP
-Se la tua offerta include un accesso SSH, puoi connetterti in SFTP.
-
-- Per verificare se la tua offerta include l'accesso SSH, controlla i [dettagli delle nostre offerte](http://www.ovh.it/hosting-web/).
-
-- Se non sei sicuro, seleziona una [Connessione FTP](#utiliser_cyberduck_connexion_ftp) al posto di una SFTP: se l'accesso SSH con è incluso nella tua offerta, il server rifiuterà la connessione.
-
-Per connetterti al tuo hosting, segui questi step:
-
-1. Clicca su Nuova connessione in alto a sinistra
-
-2. Seleziona nel menu a tendina SFTP (SSH Trasferimento File Sicuro) (riquadro arancione nell'immagine)
-
-3. Inserisci i tuoi dati per connetterti al tuo spazio FTP:
-
-- Server FTP 
-- Nome utente
-- Password
+- Server (Server)
+- Username (Nome utente)
+- Password (Password)
 - Porta (22)
 
-4. Clicca su Aggiungi all'Accesso Portachiavi se vuoi memorizzare la tua password su Cyberduck
+![hosting](images/sftp-connection.png){.thumbnail}
 
-5. Clicca su Collegamento per connetterti al tuo spazio hosting (FTP)
+> [!success]
+>
+> - Puoi salvare la tua password in Cyberduck selezionando `Add to keychain`{.action}. Se non selezioni la casella, inserisci la password per accedere nuovamente allo spazio di hosting Web.
+> - Se non conosci tutte le tue informazioni FTP (server, identificativi, ecc...), consulta la guida "[Accedere allo spazio di storage FTP del proprio hosting Web](/pages/web_cloud/web_hosting/ftp_connection)".
+> 
 
-![cyberduck macOS](images/sftp-connection.png){.thumbnail}
+Quando effettui la prima connessione al tuo spazio di hosting Web, viene visualizzata una finestra con il titolo `Modified fingerprint`{.action}. Seleziona la casella `Always`{.action} e conferma. Questa operazione permette di certificare definitivamente l’host di connessione (OVHcloud).
 
-- Puoi memorizzare la tua password su Cyberduck cliccando Aggiungi all'Accesso Portachiavi. Questa opzione è facoltativa: se non usi questa opzione dovrai reinserire la password per riconnetterti al tuo spazio hosting.
+> [!success]
+>
+> - Ti consigliamo di registrare le tue informazioni di connessione tramite un segnalibro. per ricordarsi di alcune informazioni di connessione.
+> - Consulta questa parte della guida: [Cos'è un segnalibro?](#signet)
+> 
 
-- Se non hai le credenziali FTP, consulta questa guida: [Recupera le tue credenziali FTP](http://www.ovh.it/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
+#### Errori di connessione
 
-Al primo accesso al tuo spazio hosting, apparirà la finestra Questo Host è attualmente sconosciuto dal sistema.
+Durante un tentativo di connessione al tuo spazio di hosting Web, è possibile che si verifichi un errore. Ecco i 2 errori più frequenti che si possono incontrare.
 
-- Clicca su Sempre e poi su Permetti per confermare definitivamente l'host di connessione (OVH).
+- `Connection failed (<server-SFTP>) - DNS lookup for <server> failed`
 
-![cyberduck macOS](images/host-unknow-confirmation.png){.thumbnail}
-Per conservare le informazioni di connessione, salvale tra i Preferiti. 
+Nella maggior parte dei casi, questo errore è legato agli identificativi inseriti, che probabilmente sono errati. È quindi necessario verificare le informazioni di connessione inserite.
 
-- Se non riesci, consulta questa parte della guida: [Che cos'è un Preferito?](#utiliser_cyberduck_quest-ce_quun_signet).
+![hosting](images/open-session-failed.png){.thumbnail}
 
-## Errori di connessione
-Durante la connessione al tuo spazio hosting, possono verificarsi degli errori. Ecco i due più frequenti.
-Accesso fallito
-Con questo messaggio visualizzerai 530 Login authentification failed e, nella maggior parte dei casi, questo errore è dovuto all'inserimento di credenziali sbagliate.
+> [!success]
+>
+> - Se non conosci tutte le tue informazioni FTP (server, identificativi, ecc...), consulta la guida "[Connettersi allo spazio di storage FTP del proprio hosting Web](/pages/web_cloud/web_hosting/ftp_connection)".
+> 
 
-- Verifica le informazioni di connessione inserite
+- `Connection failed (<server-SFTP>) - Operation timed out`
 
-- Se necessario modificale anche nei Preferiti salvati (cliccando sul logo a forma di matita)
+Questo messaggio è accompagnato dalla dicitura `Operation timed out`. Questo messaggio indica in genere che l'host non è raggiungibile o che non è corretto. Verifica le credenziali di accesso inserite.
 
-![cyberduck macOS](images/open-session-failed.png){.thumbnail}
+L'errore può essere causato anche da un firewall o dalla LAN che blocca la porta 21 o 22 utilizzata per connettersi al server. In questo caso, è necessario verificare la configurazione personale.
 
-- Se non hai le credenziali FTP, consulta questa guida:
-[Recupera le mie credenziali FTP](http://www.ovh.it/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
+![hosting](images/connection-failed.png){.thumbnail}
 
-Connessione fallita
-Con questo messaggio visualizzerai Timed out waiting for initial connect reply e nella maggior parte dei casi significa che l'host è sbagliato o non raggiungibile.
+> [!primary]
+>
+> - Ti ricordiamo che l’host di connessione per il tuo spazio di hosting è `ftp.cluster0XX.hosting.ovh.net` (sostituisci i `XXX` con il tuo numero di cluster).
+> - Se necessario, consulta la guida "[Accedere allo spazio di storage FTP del proprio hosting Web](/pages/web_cloud/web_hosting/ftp_connection)".
+>
 
-- Verifica le informazioni di connessione inserite
+<a name="signet"></a>
 
-- Se necessario modificale anche nei Preferiti salvati (cliccando sul logo a forma di matita)
+### Che cos'è un segnalibro?
 
-Il problema può essere causato anche da un blocco da parte del firewall o di una rete locale delle porte 21 o 22 utilizzate per connettersi all'FTP. In questo caso verifica la tua configurazione personale.
+Per facilitare l’accesso allo spazio di hosting Web, consigliamo di utilizzare i segnalibri. Permettono di pre-salvare le informazioni di connessione, evitando di inserirle ad ogni connessione.
 
-![cyberduck macOS](images/connection-failed.png){.thumbnail}
+Per effettuare questa aggiunta:
 
-- Reminder: l'host di connessione per il tuo spazio hosting è ftp.tuo-dominio.tld (sostituisci con il tuo dominio) o ftp.clusterXXX.ovh.net (sostituisci XXX con il tuo numero di cluster).
+1. Accedi allo spazio FRP dell’hosting Web.
+2. Nella parte superiore dell’interfaccia, sulla barra degli strumenti, clicca sulla scheda `Bookmarks`{.action} (cornice arancione nell’immagine qui sotto).
+3. Clicca sull’icona `+`{.action} in basso a sinistra della finestra per aggiungere un nuovo segnalibro.
 
-- Se necessario, consulta questa guida: [Recupera le mie credenziali FTP](http://www.ovh.it/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
+![hosting](images/add-signet.png){.thumbnail}
 
-## Che cos'è un Preferito?
-Per facilitare l'accesso al tuo spazio hosting (FTP) e memorizzare le tue informazioni di connessione, puoi utilizzare i Preferiti
+Verrà visualizzata una finestra con le informazioni di accesso e una nuova riga nell'elenco dei segnalibri. Al prossimo avvio di Cyberduck, sarà possibile fare doppio clic sul segnalibro per accedere più rapidamente.
 
-Per farlo:
+### Trasferire file
 
-- Connettiti al tuo spazio hosting (FTP o SFTP)
-- Entra nei Preferiti (in blu e poi in verde nell'immagine)
-- Clicca su [+] (in arancione) nella parte in basso a sinistra della finestra
+Il trasferimento di file ti permette di salvare il tuo sito Internet sul tuo spazio di hosting Web. Di default, è necessario salvare i file nella directory (cartella) `www`. Puoi trasferire i tuoi file in diversi modi.
 
-![cyberduck macOS](images/signet.png){.thumbnail}
-Visualizzerai una nuova finestra con le tue informazioni di connessione. Al prossimo accesso a Cyberduck, clicca due volte sul segnalibro per connetterti più rapidamente.
+#### Tramite drag&drop
 
-## Trasferisci i file
-Per trasferire il tuo sito Internet sul tuo spazio hosting, sposta i tuoi file nella cartella www. 
+Per effettuare il trasferimento dei tuoi file, seleziona e trascina la selezione dalla finestra della cartella locale (i tuoi file sulla tua macchina) alla finestra di Cyberduck (spazio di archiviazione FTP del tuo hosting Web). Una volta completata l’operazione, i file vengono inseriti automaticamente in coda per essere depositati sul server. A questo punto, si aprirà una finestra.
 
-Puoi farlo in diversi modi.
-Drag and drop
-Per spostare i tuoi file in FTP, trascina gli elementi dalla cartella locale (i file sul tuo computer) alla finestra di Cyberduck (il tuo spazio hosting).
+![hosting](images/drag-drop-transfert-file.png){.thumbnail}
 
-- Automaticamente i tuoi file verranno messi in lista d'attesa per essere trasferiti sul server e si aprirà una nuova finestra.
+#### Dal menu principale
 
-![cyberduck macOS](images/drag-drop-transfert-file.png){.thumbnail}
-Interfaccia Transferire
-Nell'interfaccia Transferire si aprirà una finestra in cui potrai visualizzare i tuoi file. Selezionali e clicca su Transferire.
+Nel menu di Cyberduck, clicca su `File`{.action} e poi su `Upload...`{.action}. Seleziona i file da trasferire sul server e clicca su `Upload`{.action}.
 
-- Automaticamente i tuoi file verranno messi in lista d'attesa per essere trasferiti sul server e si aprirà una nuova finestra.
+![hosting](images/transfert-files.png){.thumbnail}
 
-![cyberduck macOS](images/transfert-files.png){.thumbnail}
-Visualizzare i trasferimenti in corso
-Visualizza la cronologia dei trasferimenti effettuati sul tuo spazio hosting. Qui troverai:
+### Visualizza i trasferimenti in corso
 
-- i file in attesa di essere spostati sul server remoto ancora in coda o in corso di invio
-- i file il cui trasferimento è fallito
-- i file il cui trasferimento è riuscito 
+È possibile visualizzare la cronologia dei trasferimenti effettuati verso lo spazio di storage FTP del tuo hosting Web. In questo modo è possibile trovare:
 
-Questa finestra si apre in due modi:
+- i file in attesa di essere depositati sul server remoto (ancora presenti nella coda di attesa o in corso di invio);
+- i file per i quali il trasferimento non è riuscito;
+- i file per i quali il trasferimento è stato effettuato con successo sull’hosting web remoto.
 
-- automaticamente quando si inizia un trasferimento;
-- cliccando su Finestra > Trasferimenti
+Questa finestra viene visualizzata in due modi diversi:
 
-![cyberduck macOS](images/transfert-files-progression.png){.thumbnail}
+- automaticamente all'avvio di un trasferimento;
+- cliccando su `Window`{.action} (nel menu principale) e poi su `Transfers`{.action}.
 
-## Operazioni possibili su un file/cartella
-Selezionando un file o una cartella del tuo spazio hosting (nella finestra di Cyberduck), puoi eseguire una serie di Azioni che ti permetteranno di: 
+![hosting](images/transfert-files-list.png){.thumbnail}
 
-- Leggere le informazioni di un file o di una cartella e modificarne i diritti (CHMOD)
-- Modificare i file con l'applicazione desiderata
-- Rinominare i file o le cartelle
-- Eliminare i file o le cartelle
-- Scaricare gli elementi selezionati
-- Creare un nuovo file o cartella
+### Azioni possibili su un file / cartella
 
-La lista non è completa: esistono altre azioni possibili. Se hai bisogno, consulta il sito ufficiale di Cyberduck.
+Fare doppio clic su un file o una cartella per eseguire le operazioni seguenti:
 
-![cyberduck macOS](images/action-on-folder.png){.thumbnail}
+- Leggere le informazioni di un file o di una cartella e modificarne i diritti (CHMOD).
+- Modifica il file con l’applicazione che preferisci.
+- Rinominare il file o la cartella.
+- Eliminare il file o la cartella.
+- Scarica gli elementi selezionati.
+- Creare una nuova cartella o file.
 
-## Diritti dei file o delle cartelle
-Puoi modificare i diritti (CHMOD) dei file e delle cartelle presenti sul tuo hosting.
+Questa lista non è esaustiva, sono possibili altre azioni. Se necessario, visitare il [sito ufficiale](https://cyberduck.io/) di Cyberduck.
 
-I diritti sono di 3 tipi: 
+### Informazioni utili
 
-- Proprietario
-- Gruppo 
-- Altri
+#### Diritti dei file e delle cartelle
 
-Per accedere a questa interfaccia seleziona i file o cartelle desiderati, poi clicca su "Info" in Azione. 
+È possibile modificare i diritti (CHMOD) dei file e delle cartelle presenti sull’hosting Web.
 
-Clicca su Permessi nella nuova finestra e poi esegui le modifiche desiderate. 
+Questi ultimi si dividono in 3 famiglie:
 
-- Permessi UNIX: il valore aggiornerà automaticamente le caselle delle tre tipologie di diritti.
-- Seleziona le caselle desiderate: il valore aggiornerà automaticamente per i Permessi UNIX.
+- Owner (Proprietario)
+- Group (Gruppo)
+- Other (Altri)
 
-![cyberduck macOS](images/unix-permissions.png){.thumbnail}
+Clicca due volte su un file o una cartella e seleziona `Info`{.action}. Viene visualizzata la seguente finestra:
 
-## Sblocco del sito
-Puoi sbloccare il sito con un comando personalizzato in seguito al blocco di sicurezza del tuo spazio hosting OVHcloud a causa di un attacco.
+![hosting](images/unix-permissions.png){.thumbnail}
 
-Puoi usare il comando: 
+Clicca sulla scheda `Permissions`{.action} e poi effettua le modifiche:
 
-- Clicca su Vai
-- Clicca su Invia comando...
+- UNIX Permissions: questo valore definisce i diritti delle 3 famiglie (Proprietario, Gruppo e altri).
+- Selezionare le caselle di controllo: il valore verrà aggiornato automaticamente per i permessi UNIX.
 
-![cyberduck macOS](images/send-ftp-command.png){.thumbnail}
-Nella nuova finestra, inserisci il comando:
+#### Riapertura del sito Web
 
-- CHMOD 705 /
-- Clicca su Invia
+Per riaprire il sito Web è possibile utilizzare un comando personalizzato.
 
-Visualizzerai il messaggio di conferma 200 Permissions changed on /.
+Nella maggior parte dei casi, questa operazione è stata eseguita in seguito a una chiusura per sicurezza dello spazio di storage FTP dell’hosting Web da parte di OVHcloud, a seguito di un attacco di hacker.
 
-- Per verificare lo sblocco, prova ad accedere al tuo sito da un browser Internet.
+Nel menu di Cyberduck, clicca su `Go`{.action} e poi su `Send command...`{.action}.
 
-![cyberduck macOS](images/site-chmod-705-command.png){.thumbnail}
+![hosting](images/send-ftp-command.png){.thumbnail}
 
-- Questo comando non funziona in SFTP. Per utilizzarlo usa una [connessione FTP](#utiliser_cyberduck_connexion_ftp).
+Nella nuova finestra, inserisci il comando `CHMOD 705 /` e clicca su `Send`{.action} per eseguire il comando. Come conferma, il messaggio `200 Permissions changed on /` dovrebbe apparire nel riquadro sottostante.
 
-- Reminder: le nostre macchine verificano i cambiamenti di stato ogni 3 ore, quindi l'aggiornamento del tuo sito potrà richiedere più o meno tempo.
+Per assicurarti che la riapertura avvenga correttamente, accedi al tuo sito Web da un browser Web.
 
-- Contatta il nostro supporto se dopo tre ore il tuo sito non è ancora on-line.
+![hosting](images/site-chmod-705-command.png){.thumbnail}
 
-## Server di connessione
-In alcuni casi il nostro supporto potrebbe chiederti il server a cui è connesso Cyberduck. 
+> [!warning]
+>
+> - Questo comando non funziona in SFTP. Per effettuare questa operazione, utilizza una connessione FTP.
+> - Ti ricordiamo di verificare il display dopo 3 ore. Infatti, i nostri robot passano ogni 3 ore per controllare i cambiamenti di stato. In base al momento dell’operazione, il ripristino della visualizzazione del sito potrebbe essere più o meno rapido.
+> - Se il termine delle 3 ore è scaduto e il tuo sito Web non è ancora online, contatta il supporto OVHcloud.
+>
 
-Questa verifica può avvenire, ad esempio, se rilevi rallentamenti o anomalie del tuo spazio FTP. 
+## Per saperne di più <a name="go-further"></a>
 
-Per attivare i log:
+[Tutorial - Utilizzare FileZilla con l’hosting OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-- Clicca su Visuale
-- Clicca su Mostra/Nascondi Pannello Log
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
-Comparirà un riquadro sotto la finestra di Cyberduck, quindi:
-
-- Connettiti al tuo spazio FTP
-- Ritorna in alto nel Pannello Log
-- Prendi nota del webmXXX
-
-![cyberduck macOS](images/show-hidden-daily.png){.thumbnail}
-
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
