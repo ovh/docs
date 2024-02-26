@@ -1,28 +1,32 @@
 ---
 title: Managed Kubernetes Service Audit Logs Forwarding
-excerpt: 'Find out how to forward Audit logs from an OVH Managed Kubernetes Service cluster to Logs Data Platform'
-updated: 2024-30-01
+excerpt: 'Find out how to forward Audit logs from an OVHcloud Managed Kubernetes Service cluster to Logs Data Platform'
+updated: 2024-02-26
 ---
-
  
 ## Objective
+
 In this guide, you will learn how to enable the forwarding of audit logs from your OVHcloud Managed Kubernetes Service (MKS) cluster to Logs Data Platform (LDP), a platform that helps you store, archive, query and visualize your logs.
-If you want to discover Logs Data Platform before reading this guide, please refer to [Log Data Platform introduction guide](https://help.ovhcloud.com/csm/en-gb-logs-data-platform-introduction?id=kb_article_view&sysparm_article=KB0058312).
+If you want to discover Logs Data Platform before reading this guide, please refer to the [Log Data Platform introduction guide](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 ## Glossary
-- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. Find more information on the [Logs Data Platform service page](https://www.ovhcloud.com/en-ie/logs-data-platform/).
-- **Data Stream:** a logical partition of logs that you create in a LDP account that you will use when ingesting, visualizing or querying your logs. Multiple sources can be stored in the same data stream, and it is the unit for defining a logs pipeline (retention policy, archiving, live streaming...), access rights and alert policies.
+
+- **Logs Data Platform:** a fully managed and secured log management platform by OVHcloud. Find more information on the [Logs Data Platform service page](https://www.ovhcloud.com/en-gb/logs-data-platform/).
+- **Data Stream:** a logical partition of logs that you create in an LDP account that you will use when ingesting, visualizing or querying your logs. Multiple sources can be stored in the same data stream, and it is the unit for defining a logs pipeline (retention policy, archiving, live streaming...), access rights and alert policies.
 - **Logs forwarding:** feature integrated in an OVHcloud product to ingest logs from its services to a *Data Stream* of a LDP account in the same OVHcloud account. The feature has to be enabled by the customer and per service.
 - **Logs forwarding Subscription:** when enabling the logs forwarding for a given OVHcloud service to a given LDP *Data Stream*, a *Subscription* is created and attached to the *Data Stream* for further management by the customer.
-- **Request Stage and Audit Level:**  audit records begin their lifecycle inside the kube-apiserver component. Each request on each stage of its execution generates an audit event, which is then pre-processed according to the policy defined by the OVHcloud Managed Kubernetes Service. This policy defines which audit events as well as which audit level (meaning which events data) are forwarded through the Audit logs of your Kubernetes cluster. For more details, refer to the [Kubernetes Auditing documentation](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/).  
+- **Request Stage and Audit Level:**  audit records begin their lifecycle inside the kube-apiserver component. Each request on each stage of its execution generates an audit event, which is then pre-processed according to the policy defined by the OVHcloud Managed Kubernetes Service. This policy defines which audit events as well as which audit level (meaning which events data) are forwarded through the Audit logs of your Kubernetes cluster. For more details, refer to the [Kubernetes Auditing documentation](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/).
 
 ## Requirements
+
 To follow this guide, you will need:
--	a Logs Data Platform (LDP) account with at least one active *Stream* configured. This guide will walk you through all the necessary steps.
--	an up-and-running Managed Kubernetes Service (MKS) cluster. This guide will walk you through the steps as well.
-Both LDP account and MKS cluster must belong to the same OVHcloud account.
+
+- a Logs Data Platform (LDP) account with at least one active *Stream* configured. This guide will walk you through all the necessary steps: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+- an up-and-running Managed Kubernetes Service (MKS) cluster. This guide will walk you through the steps as well.
+- Both LDP account and MKS cluster must belong to the same OVHcloud account.
 
 ## Concept
+
 What are audit logs of a Managed Kubernetes cluster?
 
 Managed Kubernetes audit logs provide a security-relevant, chronological set of records documenting the sequence of actions in your cluster.
@@ -30,24 +34,26 @@ Managed Kubernetes audit logs provide a security-relevant, chronological set of 
 The cluster audits the activities generated by users, by applications that use the Kubernetes API, and by the control plane itself. Auditing allows cluster administrators to know what happened, when, who initiated it from where, on what did it happen and to where was it going. For further details about cluster audits, refer to the [Kubernetes auditing documentation](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/).
 
 > [!warning]
-> Managed Kubernetes Audit Logs does NOT include logs of your applications running on your Kubernetes pods. If you want to retrieve your data plan logs in one of your Logs Data Platform’s data stream follow the guide: [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](https://help.ovhcloud.com/csm/en-gb-logs-data-platform-kubernetes-fluent-bit?id=kb_article_view&sysparm_article=KB0050055)
+> Managed Kubernetes Audit Logs does NOT include logs of your applications running on your Kubernetes pods. If you want to retrieve your data plan logs in one of your Logs Data Platform’s data stream, read this guide: [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](/pages/manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit)
 
-The OVHcloud Managed Kubernetes Service has defined audit policy, enabling you to retrieve logs pertaining to:
--	requests to authorization resources to help troubleshoot authentication issues
--	configmap and secret changes in all namespaces at the Metadata audit level
--	changes to resources at RequestResponse level (maximum verbosity) to create, patch, update and delete verbs
--	changes to resources at Request level for other verbs
--	all other requests at the Metadata level
+The OVHcloud Managed Kubernetes Service has defined an audit policy, enabling you to retrieve logs pertaining to:
+
+- requests to authorization resources to help troubleshoot authentication issues
+- configmap and secret changes in all namespaces at the Metadata audit level
+- changes to resources at RequestResponse level (maximum verbosity) to create, patch, update and delete verbs
+- changes to resources at Request level for other verbs
+- all other requests at the Metadata level
 
 Note:
--	No logs for requests by the "system:kube-proxy" on endpoints or services
--	Low level of verbosity (level Metadata) for endpoints containing sensitive data like tokenreview
--	No logs for any request in the RequestReceived stage
--	No logs for health checks and requests for apiserver metrics
+
+- No logs for requests by the "system:kube-proxy" on endpoints or services
+- Low level of verbosity (level Metadata) for endpoints containing sensitive data like tokenreview
+- No logs for any request in the RequestReceived stage
+- No logs for health checks and requests for apiserver metrics
 
 For details about information captured in Kubernetes Audit logs you can refer to the [Kubernetes public documentation](https://kubernetes.io/docs/reference/config-api/apiserver-audit.v1/).
 
-Above, you will find an example of an audit log generated by a Kubernetes cluster. *Note the example is not exhaustive.*
+Below is an example of an audit log generated by a Kubernetes cluster. *Note the example is not exhaustive.*
 
 ```json
 {
@@ -90,42 +96,53 @@ Above, you will find an example of an audit log generated by a Kubernetes cluste
 }
 ```
 
-## How to enable Audit Log Forwarding
-### Using the Manager
+## Instructions
+
+How to enable Audit Log Forwarding
+
+### Enabling Audit Log Forwarding using the OVHcloud Control Panel
 
 #### Create and see existing streams
 
- You can find your streamId, in Logs Data Platform control panel of your account in **Data Stream**” tab when editing a stream:
+You can find your streamId, in the Logs Data Platform section of the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
- -	Got to the “Data Stream” page of your Logs Data Platform account and “Edit” the target Data Stream.
+- Go to the `Data Stream`{.action} tab of your Logs Data Platform account and `Edit`{.action} the target Data Stream.
 
- https://www.ovh.com/manager/#/dedicated/dbaas/logs/{ldp-account-id}/streams/home
+https://www.ovh.com/manager/#/dedicated/dbaas/logs/{ldp-account-id}/streams/home
 
- -	Copy the streamId page of your Logs Data Platform account.
+- Copy the `streamId` page of your Logs Data Platform account.
 
- https://www.ovh.com/manager/#/dedicated/dbaas/logs/{ldp-account-id}/streams/{streamid}/edit
+https://www.ovh.com/manager/#/dedicated/dbaas/logs/{ldp-account-id}/streams/{streamid}/edit
 
-### Using APIs
+### Enabling Audit Log Forwarding using APIs
 
 You will have to define the targeted *Stream* of one of your LDP account on which you want your logs to be forwarded to. The enablement of the forwarding will create a subscription for this stream id.
-Note that the forwarding activation is free of charge, but you will be charged for the usage of Logs Data Platform service as per standard price plan. For LDP pricing refer to [Logs Data Platform product page](https://www.ovhcloud.com/en-ie/logs-data-platform/).
+Note that the forwarding activation is free of charge, but you will be charged for the usage of the Logs Data Platform service as per standard price plan. For LDP pricing, refer to the [Logs Data Platform product page](https://www.ovhcloud.com/en-gb/logs-data-platform/).
 
-You can retrieve the API specifications in [OVH API Portal](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream)
+You can retrieve the API specifications in the [OVH API Portal](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream)
 
-###### 1/ Retrieve your target Stream (and ID)
+#### Step 1 - Retrieve your target Stream (and ID)
 
-List data streams of you Logs Data Platform account ([API reference](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/output/graylog/stream)):
+List data streams of you Logs Data Platform account:
+
+[API reference](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/output/graylog/stream)
 
 ```shell
 GET /dbaas/logs/{serviceName}/output/graylog/stream
 ```
-Get the details of a data stream ([API reference](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/output/graylog/stream/-streamId-)):
+
+Get the details of a data stream:
+
+[API reference](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/output/graylog/stream/-streamId-)
+
 ```shell
 GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
-```   
-###### 2/ Create your subscription
+```
 
-As per below example, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you aim your Kubernetes cluster Audit logs will be forwarded. You also need to specifiy the 'kind' of log you want to forward, note that currenlty the only supported value for Managed Kubernetes Service is 'audit' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/capabilities/kube/log/kind) call) :
+#### Step 2 - Create your subscription
+
+As in the example above, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you want your Kubernetes cluster Audit logs to be forwarded to. You also need to specifiy the 'kind' of log you want to forward. Note that the only currently supported value for Managed Kubernetes Service is 'audit' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/capabilities/kube/log/kind) call) :
+
 ```shell
 POST /cloud/project/{serviceName}/kube/{kubeId}/log/subscription
 {
@@ -135,6 +152,7 @@ POST /cloud/project/{serviceName}/kube/{kubeId}/log/subscription
 ```
 
 You will get in response an operationId:
+
 ```shell
 {
   "operationId": "f550aa1c-89ab-4b1a-81ae-4fba4959966f",
@@ -142,7 +160,8 @@ You will get in response an operationId:
 }
 ```
 
-So you can use it to retrieve the subscriptionid further management purposes using Logs Data Platform read operation endpoint:
+So you can use it to retrieve the subscriptionid for further management purposes using Logs Data Platform read operation endpoint:
+
 ```shell
 GET /cloud/project/{serviceName}/kube/{kubeId}/log/subscription/{subscriptionId}
 {
@@ -159,35 +178,36 @@ GET /cloud/project/{serviceName}/kube/{kubeId}/log/subscription/{subscriptionId}
 }
 ```
 
-## How to use your Kubernetes Audit logs?
-Now that your Kubernetes instance Audit logs are ingested and stored in your Logs Data Platform data stream, you can query your logs and build dashboards to have a graphical representation of your logs using web-based UI of Graylog.
--	Through the OVHcloud Manager, retrieve the LDP username (ex: logs-xxxx) and its password in your Logs Data Platform account home page. You can refer to [Quick start for Logs Data Platform](https://help.ovhcloud.com/csm/en-ie-logs-data-platform-quick-start?id=kb_article_view&sysparm_article=KB0055819) documentation.
--	Open the Graylog web-ui. You can retrieve the link in your account home page or using your Access point depending of your account region (for example: Gravelines region https://gra1.logs.ovh.com/ )
--	Log into Graylog using your Logs Data Platform Username and Password
--	Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html) for details on search syntax.
+### How to use your Kubernetes Audit logs?
 
-For more details about how to use your logs with Logs Data Platform, including:
--	how to setup alerts,
--	view the logs in real time through a WebSocket,
--	build visualization with OpenSearch Dashboards,
--	integrate with OpenSearch API
--	to connect with Grafana
+Now that your Kubernetes instance Audit logs are ingested and stored in your Logs Data Platform data stream, you can query your logs and build dashboards to have a graphical representation of your logs using the web-based UI of Graylog.
 
-Refer to the following documentation: [Logs Data Platform - Visualizing, querying and exploiting your logs](https://help.ovhcloud.com/csm/fr-documentation-observability-logs-data-platform-visualizing-querying-exploiting?id=kb_browse_cat&kb_id=3d4a8129a884a950f07829d7d5c75243&kb_category=00fe0f8829ffe1141e11171b7d895c8c).
+- Through the OVHcloud Control Panel, retrieve the LDP username (ex: logs-xxxx) and its password in your Logs Data Platform account home page. You can refer to the [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) documentation.
+- Open the Graylog web-ui. You can retrieve the link in your account home page or using your Access point depending on your account region (for example: Gravelines region is https://gra1.logs.ovh.com/ )
+- Log into Graylog using your Logs Data Platform Username and Password
+- Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html) for details on search syntax.
 
+Refer to the following documentation: [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) for more details about how to use your logs with Logs Data Platform, including how to:
+
+- setup alerts,
+- view the logs in real time through a WebSocket,
+- build visualization with OpenSearch Dashboards,
+- integrate with OpenSearch API,
+- connect with Grafana.
  
-## How to manage your subscriptions?
+### How to manage your subscriptions?
 
 At any point, you can retrieve subscriptions attached to your Logs Data Platform data stream and choose to disable the forwarding by cancelling your subscription on your stream so that your Logs Data Platform stream doesn't receive your audit logs anymore.
 
 Note that this doesn't delete the logs that have been stored prior to the subscription cancellation, as data stored in a logs stream is immutable unless you delete the entire stream.
 
-To delete your subscription you can use the dedicated section on the Manager (MKS/audit logs) or the following API route ([API reference](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#delete-/cloud/project/-serviceName-/kube/-kubeId-/log/subscription/-subscriptionId-)):
+To delete your subscription you can use the dedicated section on the Manager (MKS/audit logs) or the following API route:
+
+[API reference](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#delete-/cloud/project/-serviceName-/kube/-kubeId-/log/subscription/-subscriptionId-)
+
 ```shell
 DELETE /cloud/project/{serviceName}/kube/{kubeId}/log/subscription/{subscriptionId}
 ```
-
-
 
 ## Go further
 
