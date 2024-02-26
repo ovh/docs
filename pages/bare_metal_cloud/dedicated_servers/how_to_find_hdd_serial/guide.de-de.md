@@ -20,7 +20,7 @@ Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir un
 
 > [!primary]
 >
-> Bei einer NVMe-Festplatte muss der Server in den Rescue64-Modus versetzt und das standardmäßig installierte Tool nvme-cli verwendet werden.
+> Bei einer NVMe-Festplatte muss der Server in den Rescue-Modus versetzt und das standardmäßig installierte Tool nvme-cli verwendet werden.
 > 
 
 ### Seriennummer einer Festplatte ermitteln (Software-RAID)

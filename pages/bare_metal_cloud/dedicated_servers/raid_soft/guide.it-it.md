@@ -120,7 +120,7 @@ Questo comando mostra che `/dev/md2` è composto da 888,8 GB e `/dev/md4` contie
 Per visualizzare lo stato del disco utilizza il comando “mount”:
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)

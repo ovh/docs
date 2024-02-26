@@ -118,7 +118,7 @@ Disk identifier: 0x150f6797
 Este comando mostra que `/dev/md2` é composto por 888,8 GB e `/dev/md4` contém 973,5 GB. Para mostrar a disposição do disco, execute o comando “mount”.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)

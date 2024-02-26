@@ -1,7 +1,7 @@
 ---
 title: 'Przesyłanie i pobieranie danych z serwera dedykowanego za pośrednictwem SFTP'
 excerpt: 'Dowiedz się, jak przesłać dane z serwera dedykowanego na komputer lokalny i na odwrót'
-updated: 2021-05-18
+updated: 2024-02-23
 ---
 
 > [!primary]
@@ -15,7 +15,9 @@ W procesie migracji może być konieczne pobranie danych z serwera dedykowanego,
 **Tutorial ten wyjaśnia, jak przesyłać lub pobierać dane z serwera dedykowanego za pomocą SFTP.**
 
 > [!warning]
->Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVHcloud w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w konkretnym przypadku. Wybierz odpowiednie dla Ciebie rozwiązanie. Jeśli napotkasz trudności podczas przeprowadzania tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług administracyjnych i/lub zadaj pytanie na forum społeczności OVHcloud <https://community.ovh.com/en/>. Niestety OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie.
+>Niniejszy przewodnik wyjaśnia, jak korzystać z jednego lub kilku rozwiązań OVHcloud za pomocą zewnętrznych narzędzi i opisuje działania, jakie należy podjąć w konkretnym przypadku. Może być konieczne dostosowanie instrukcji do Twojego przypadku.
+>
+>W przypadku trudności w stosowaniu tych instrukcji, zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajdziesz w sekcji [Sprawdź](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -35,6 +37,10 @@ Domyślnie serwer z systemem operacyjnym GNU/Linux będzie miał dostęp SSH prz
 #### **Jeśli masz dostęp do serwera**
 
 W graficznym interfejsie FileZilla wprowadź adres IP Twojego serwera w polu `Host`, a także nazwę użytkownika i hasło w odpowiednich polach. Jeśli chodzi o pole `Port`, wprowadź "22" lub port, który słucha Twoja usługa SSH, jeśli ją zmodyfikowałeś.
+
+> [!warning]
+> Pamiętaj, że dostęp do folderu użytkownika `root` przez SFTP jest możliwy tylko przy użyciu poświadczeń konta użytkownika. Jeśli chcesz uzyskać zdalny dostęp do tego folderu, zapoznaj się z informacjami dotyczącymi aktywacji tego połączenia w naszym [Przewodniku po koncie użytkownika](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 Po nawiązaniu połączenia pojawi się drzewo plików w odległej części `Strony`.
 

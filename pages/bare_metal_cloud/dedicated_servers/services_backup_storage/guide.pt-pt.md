@@ -311,7 +311,7 @@ Em primeiro lugar, certifique-se de que autorizou o acesso dos seus blocos de IP
 Depois de instalar o cliente NFS e o serviço portmap, pode montar a partilha NFS como uma partição normal, tal como indicado abaixo:
 
 ```sh
-# mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.

@@ -114,7 +114,7 @@ Disk identifier: 0x150f6797
 We can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB. If we were to run the mount command we can also find out the layout of the disk.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
