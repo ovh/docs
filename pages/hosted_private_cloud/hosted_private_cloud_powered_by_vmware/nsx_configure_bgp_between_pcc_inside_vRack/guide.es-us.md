@@ -1,5 +1,5 @@
 ---
-title: "Configure BGP between two PCCs via NSX-T"
+title: "Configure BGP between two PCCs via NSX-T (EN)"
 excerpt: "Find out how to configure your BGP network to interconnect two virtual machines from two different Dedicated Cloud servers"
 updated: 2024-02-26
 ---
