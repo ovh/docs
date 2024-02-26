@@ -1,7 +1,7 @@
 ---
 title: Häufig gestellte Fragen zu HA-NAS
 excerpt: Sie haben eine Frage zu HA-NAS? Erfahren Sie hier Antworten auf die am häufigsten gestellten Fragen
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 > [!primary]
@@ -113,6 +113,14 @@ Nein, es ist nicht möglich, ein Betriebssystem auf den HA-NAS Diensten zu insta
 ### Ist der zugewiesene Speicherplatz partitionierbar?
 
 Ja, es ist notwendig, eine oder mehrere Partitionen zu erstellen, je nach Ihrer Verwendung. Die Erstellung von Partitionen ist nicht begrenzt.
+
+### Wie ändere ich die Speicherkapazität meines NAS-HA?
+
+Derzeit ist es nicht möglich, Ihren HA-NAS dynamisch zu ändern. Um das Provisioning zu erhöhen oder zu verringern, müssen Sie:
+
+1. Bestellen Sie einen neuen HA-NAS Dienst mit der gewünschten neuen Kapazität und verfügen Sie so über Ihre beiden HA-NAS: den alten und den neuen.
+2. Migration Ihrer Daten mithilfe unserer Anleitung "[Migration von Daten von einem HA-NAS auf einen anderen per NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
+3. Den alten HA-NAS kündigen.
 
 ## Snapshots
 

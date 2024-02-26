@@ -1,7 +1,7 @@
 ---
 title: Najczęściej zadawane pytania dotyczące technologii NAS-HA
 excerpt: Masz pytania dotyczące NAS-HA? Oto odpowiedzi na najczęściej zadawane pytania.
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 > [!primary]
@@ -113,6 +113,14 @@ Nie, nie można zainstalować systemu operacyjnego w ofercie NAS-HA.
 ### Czy przydzielona przestrzeń jest podzielona na kategorie?
 
 Tak, konieczne jest utworzenie jednej lub kilku partycji w zależności od korzystania z usługi. Tworzenie partycji nie jest ograniczone.
+
+### Jak zmienić rozmiar przestrzeni dyskowej w usłudze NAS-HA?
+
+W tej chwili nie można dynamicznie modyfikować usługi NAS-HA. Aby zwiększyć lub zmniejszyć zasoby, należy:
+
+1. Zamów nową usługę NAS-HA o pożądanej wydajności, dysponując dwoma usługami NAS-HA: starym i nowym.
+2. Przeniesienie danych z naszego przewodnika "[Migracja danych z jednej usługi NAS-HA do innej za pośrednictwem NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
+3. Rezygnacja ze starego NAS-HA.
 
 ## Snapshoty
 
