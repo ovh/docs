@@ -1,5 +1,5 @@
 ---
-title: "Object Storage - Shared Responsibility"
+title: "Object Storage - Shared Responsibility (EN)"
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Object Storage"
 updated: 2024-02-26
 ---
@@ -138,6 +138,6 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>
