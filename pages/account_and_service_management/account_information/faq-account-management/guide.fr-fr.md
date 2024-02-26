@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la gestion du compte OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur la gestion du compte OVHcloud
-updated: 2022-11-21
+updated: 2024-02-26
 ---
 
 ## Objectif
@@ -59,10 +59,11 @@ Pour mieux connaître les impacts du règlement général sur la protection des 
 
 ### Comment modifier mon mot de passe OVHcloud ?
 
-Rendez-vous sur la page de connexion de votre espace client et sélectionnez « Identifiant ou mot de passe oublié ». Renseignez votre identifiant ou l’adresse e-mail principale associée à votre compte OVHcloud, puis cliquez sur « Envoyer ». Un e-mail est alors expédié à l’adresse de contact du compte, afin de confirmer la demande. Lisez attentivement les instructions et cliquez sur le lien qu’il contient.
+Lorsque vous vous connectez à votre espace client, rendez-vous sur votre tableau de bord, rubrique "Mon compte", section "Sécurité". Vous pourrez alors modifier votre mot-de-passe actuel. Un message de sécurité apparaît pour vous informer que vous êtes sur le point d'effectuer un changement de mot de passe. Vous allez recevoir à la suite de votre confirmation, un email à l'adresse mail concernée contenant la procédure à suivre. 
 
 #### Trucs et astuces
 
+Si vous ne vous rappelez plus de votre mot-de-passe : rendez-vous sur la page de connexion de votre espace client et sélectionnez « Identifiant ou mot de passe oublié ». Renseignez votre identifiant ou l’adresse e-mail principale associée à votre compte OVHcloud, puis cliquez sur « Envoyer ». Un e-mail est alors expédié à l’adresse de contact du compte, afin de confirmer la demande. Lisez attentivement les instructions et cliquez sur le lien qu’il contient.
 Si vous n’avez plus accès à l'adresse e-mail de contact, nous vous invitons à remplir cette [procédure](https://www.ovh.com/fr/support/procedures/).
 Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il est composé de la manière suivante : « ab00001-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 
