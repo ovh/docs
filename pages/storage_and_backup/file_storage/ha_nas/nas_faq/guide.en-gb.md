@@ -114,9 +114,9 @@ Yes, you will need to create one or several partitions, depending on how you wil
 
 Currently it is not yet possible to dynamically scale up or down our HA-NAS. To do so, you have to:
 
-1) Order a new HA-NAS with the desired capacity, thus accessing both the new and the previous HA-NAS.
-2) Migrate your data by following the guide "[Migrating data from one HA-NAS to another via NFS](https://help.ovhcloud.com/csm/en-gb-public-cloud-storage-nas-migration?id=kb_article_view&sysparm_article=KB0046723)".
-3) Cancel the old HA-NAS.
+1. Order a new HA-NAS with the desired capacity, thus accessing both the new and the previous HA-NAS.
+2. Migrate your data by following the guide [Migrating data from one HA-NAS to another via NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration).
+3. Cancel the old HA-NAS.
 
 ## Snapshots
 
