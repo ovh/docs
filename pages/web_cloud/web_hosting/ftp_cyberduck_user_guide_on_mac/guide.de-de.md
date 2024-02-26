@@ -34,7 +34,7 @@ Um Cyberduck herunterzuladen, gehen Sie auf die [offizielle Website](https://cyb
 - Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
 - Sie haben die Cyberduck App heruntergeladen und auf Ihrem Computer installiert.
 
-## In der Praxis
+## In der praktischen Anwendung
 
 ### Interface
 
