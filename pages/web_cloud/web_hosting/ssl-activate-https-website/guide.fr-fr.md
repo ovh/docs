@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Passer son site web en HTTPS"
 excerpt: "Découvrez comment passer votre site web en HTTPS après avoir activé un certificat SSL"
-updated: 2024-02-23
+updated: 2024-02-26
 ---
 
 ## Objectif
