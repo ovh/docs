@@ -110,6 +110,14 @@ Non, il n'est pas possible d'installer un OS sur les offres NAS-HA.
 
 Oui, il est nécessaire de créer une ou plusieurs partitions selon votre utilisation. La création de partition n'est pas limitée.
 
+### Comment faire pour changer de capacité de stockage sur mon NAS-HA ?
+
+A ce jour, il n'est pas possible de modifier dynamiquement votre NAS-HA. Pour augmenter ou réduire votre provisionnement il faut donc :
+
+1) commander nouveau service NAS-HA avec la nouvelle capacité souhaitée et ainsi disposer de vos deux NAS-HA : l'ancien et le nouveau ;
+2) migrer vos données en consultant notre guide « [Migration de données d'un NAS-HA vers un autre via NFS](https://help.ovhcloud.com/csm/fr-public-cloud-storage-nas-migration?id=kb_article_view&sysparm_article=KB0046727) » ;
+3) résilier l'ancien NAS-HA.
+
 ## Snapshots
 
 ### Que sont les snapshots ?
