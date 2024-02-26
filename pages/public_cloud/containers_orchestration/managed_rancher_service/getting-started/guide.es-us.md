@@ -17,12 +17,12 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Rancher Creation and Access
 
-To initiate your journey, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `Public Cloud`{.action} section.
+To initiate your journey, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and open the `Public Cloud`{.action} section.
 Then access the `Managed Rancher Service`{.action} under the `Containers & Orchestration` section.
 Using the OVHcloud Control Panel you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
 
@@ -64,11 +64,11 @@ We will detail below how to use OVHcloud as a Hosted Kubernetes provider and Inf
 
 > [!warning]
 >
-> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/en-gb/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/en-gb/public-cloud/prices/) pricing pages.
+> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/es/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/es/public-cloud/prices/) pricing pages.
 > Once your Managed Kubernetes clusters are created, we do recommend performing all actions (upgrade, nodepool management, cluster modification) from the Rancher console and not performing any action directly via the OVHcloud API or the OVHcloud Control Panel as this can lead to desynchronizations.
 >
 
-On this part we will detail how to use Rancher to create and manage [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/) clusters.
+On this part we will detail how to use Rancher to create and manage [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/es/public-cloud/kubernetes/) clusters.
 
 1. From the Rancher Homepage, click on `Create`{.action}.
 
@@ -93,7 +93,7 @@ You need to provide the following parameters:
 | Application Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
 | Consumer Key | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
 | Application Secret | Yes | Refer to the guide provided above. Value is provided at the API keys generation step on <https://www.ovh.com/auth/api/createToken>. |
-| Public Cloud project ID | Yes | The projectID of the OVHcloud project where your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the OVHcloud Control Panel or [API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) |
+| Public Cloud project ID | Yes | The projectID of the OVHcloud project where your MKS cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the OVHcloud Control Panel or [API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) |
 | OVH API Endpoint | Yes | Select the OVHcloud subsidiary (EU, US, CA) |
 
 4\. Move to **Cluster Configuration**
@@ -146,11 +146,11 @@ Your cluster is now fully functional. You can click on the `Explore`{.action} bu
 
 ##### Use OVHcloud as an **Infrastructure Provider**
 
-On this part we will detail how to use Rancher to create and manage Kubernetes clusters based on [OVHcloud Public Cloud Compute Instances](https://www.ovhcloud.com/en-gb/public-cloud/compute/).
+On this part we will detail how to use Rancher to create and manage Kubernetes clusters based on [OVHcloud Public Cloud Compute Instances](https://www.ovhcloud.com/es/public-cloud/compute/).
 
 > [!warning]
 > Deploying to OVHcloud will incur charges.
-> For more information, refer to the [MKS](https://www.ovhcloud.com/en-gb/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/en-gb/public-cloud/prices/) pricing pages.
+> For more information, refer to the [MKS](https://www.ovhcloud.com/es/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/es/public-cloud/prices/) pricing pages.
 
 1\. From the Rancher Homepage, click on `Create`{.action}.
 
@@ -195,8 +195,8 @@ For each machine pool, define the machine configuration by providing the followi
 - **Pool Name** - Name of the Machine Pool.
 - **Machine Count** - Number of instances.
 - **Roles** - `etcd`, `Control Plane` or `Worker`. You can refer to the [Node Roles](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/launch-kubernetes-with-rancher/use-new-nodes-in-an-infra-provider#node-roles) documentation.
-- **Region** - The OVHcloud Public Cloud region. If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) page.
-- **Flavor** - The instance flavor used for your nodes. You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/en-gb/public-cloud/prices/#13569).
+- **Region** - The OVHcloud Public Cloud region. If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](https://www.ovhcloud.com/es/public-cloud/regions-availability/) page.
+- **Flavor** - The instance flavor used for your nodes. You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/es/public-cloud/prices/#13569).
 - **Image** - The Operating System image used for your nodes. Please refer to [Rancher Operating Systems and Container Runtime Requirements](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters).
 - **Key Pair** (optional) - The SSH Key Pair that should be used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](/pages/public_cloud/compute/public-cloud-first-steps). If you leave this field empty, a new keypair will be generated automatically.
 - **Security Group** - The security group from your Public Cloud project that will be applied to created instances.
@@ -218,7 +218,7 @@ You can refer to the official Rancher documentation on how to [Register Existing
 
 ##### Importing an existing OVHcloud Managed Kubernetes Service cluster
 
-If you already use our [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/), you can easily import an existing cluster.
+If you already use our [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/es/public-cloud/kubernetes/), you can easily import an existing cluster.
 The workflow is similar to the one described on the official Rancher documentation on [how to register a cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters#registering-a-cluster) and it takes only a few minutes.
 
 1\. From the Rancher home page, click on `Import Existing`{.action}.
@@ -287,8 +287,8 @@ Happy Ranchering!
 
 ## Go further
 
-- To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
+- To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/es/public-cloud/kubernetes/).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

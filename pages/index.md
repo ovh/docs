@@ -848,7 +848,7 @@
                 + [Adding IP restrictions on an OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/add-ip-restrictions)
         + [Managed Rancher Service (MRS)](products/public-cloud-containers-orchestration-managed-rancher-service)
             + [Getting started](public-cloud-containers-orchestration-managed-rancher-service-getting-started)
-                + [Getting started with Managed Rancher Service](public_cloud/containers_orchestration/managed-rancher-service/getting-started)
+                + [Getting started with Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/getting-started)
     + [AI & Machine Learning](products/public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
             + [Comparative tables - AI Notebooks, AI Training, AI Deploy](public_cloud/ai_machine_learning/gi_00_ai_comparative-table)
