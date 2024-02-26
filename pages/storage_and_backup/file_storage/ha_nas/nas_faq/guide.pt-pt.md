@@ -1,7 +1,7 @@
 ---
 title: NAS-HA - Perguntas Frequentes
 excerpt: Tem dúvidas sobre o NAS-HA? Veja as repostas às perguntas mais frequentes
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 > [!primary]
@@ -113,6 +113,14 @@ Não, não é possível instalar um sistema operativo num NAS-HA.
 ### O espaço atribuído é particionável?
 
 Sim, para tal basta criar as partições adequadas ao tipo de utilização. A criação de partições é ilimitada.
+
+### Como alterar a capacidade de armazenamento no meu NAS-HA?
+
+Atualmente, não é possível alterar dinamicamente o NAS-HA. Para aumentar ou reduzir o seu aprovisionamento, é preciso :
+
+1. Encomendar um novo serviço NAS-HA com a nova capacidade desejada e assim dispor de dois NAS-HA: o antigo e o novo.
+2. Migrar dados consultando o nosso guia "[Migração de dados de um NAS-HA para outro através de NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
+3. Rescindir o antigo NAS-HA.
 
 ## Snapshots
 
