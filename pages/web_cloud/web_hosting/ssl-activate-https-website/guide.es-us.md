@@ -141,14 +141,6 @@ Este segundo script de ejemplo transforma todas las URL recibidas a través del 
 
 En este segundo ejemplo, compruebe que todos los dominios o subdominios de destino tienen un certificado SSL activo.
 
-**Atención**, para los planes de hosting [Cloud Web](https://www.ovhcloud.com/es/web-hosting/cloud-web-offer/), deberá utilizar el siguiente script:
-
-```bash
-RewriteEngine On
-RewriteCond %{ENV:HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-```
-
 ### Etapa 4 - Comprobar que el sitio web <a name="check-your-website"></a> funcione correctamente
 
 Una vez que haya activado el protocolo *HTTPS* en su sitio web, asegúrese de que este funciona correctamente y de que todo su contenido se muestra como antes de la operación. Para ello, acceda al sitio web, compruebe si aparece algún mensaje o advertencia y examine las distintas secciones del sitio web. 
