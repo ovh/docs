@@ -116,11 +116,11 @@ Ja, es ist notwendig, eine oder mehrere Partitionen zu erstellen, je nach Ihrer 
 
 ### Wie ändere ich die Speicherkapazität meines NAS-HA?
 
-Derzeit ist es nicht möglich, Ihren HA-NAS dynamisch zu ändern. Um das Provisioning zu erhöhen oder zu verringern, müssen Sie:
+Derzeit ist es nicht möglich, die HA-NAS Kapazität dynamisch zu ändern. Gehen Sie dazu wie folgt vor:
 
-1. Bestellen Sie einen neuen HA-NAS Dienst mit der gewünschten neuen Kapazität und verfügen Sie so über Ihre beiden HA-NAS: den alten und den neuen.
-2. Migration Ihrer Daten mithilfe unserer Anleitung "[Migration von Daten von einem HA-NAS auf einen anderen per NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
-3. Den alten HA-NAS kündigen.
+1. Bestellen Sie einen neuen HA-NAS Dienst mit der gewünschten Kapazität, und greifen Sie auf beide HA-NAS Dienste zu.
+2. Migrieren Sie Ihre Daten mithilfe unserer Anleitung: "[Migration von Daten von einem HA-NAS auf einen anderen per NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
+3. Kündigen Sie den alten HA-NAS Dienst.
 
 ## Snapshots
 
