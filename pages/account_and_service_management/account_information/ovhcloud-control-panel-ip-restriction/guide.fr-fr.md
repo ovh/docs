@@ -1,7 +1,7 @@
 ---
 title: "Restreindre l'accès par IP à votre espace client OVHcloud"
 excerpt: "Découvrez comment sécuriser votre compte OVHcloud en limitant les adresses IP autorisées à y accéder"
-updated: 2024-02-25
+updated: 2024-02-26
 ---
 
 ## Objectif
@@ -78,7 +78,7 @@ Deux sections sont présentes pour la mise en place des restrictions par IP :
 >
 > Attention avant de poursuivre vos actions.
 >
-> Veuillez à **avoir autorisé** correctement et au préalable au moins une de vos adresses IP publiques dans la section `IP configurées` avant de valider la règle par défaut en statut `Refusé`, dans la section `Règle par défaut`. 
+> Veillez à **avoir autorisé** correctement au moins une de vos adresses IP publiques dans la section `IP configurées` **avant** de valider la règle par défaut en statut `Refusé`, dans la section `Règle par défaut`. 
 >
 > Dans le cas contraire, vous bloquerez **absolument toutes les IP publiques (y compris les vôtres)** sans aucune exception. Plus personne n'aura accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et vous devrez réaliser une procédure administrative pour débloquer votre situation.
 >
