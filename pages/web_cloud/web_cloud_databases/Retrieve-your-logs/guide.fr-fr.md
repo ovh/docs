@@ -5,3 +5,105 @@ updated: 2024-02-27
 ---
 
 ## Objectif
+
+La solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) permet d'héberger plusieurs bases de données. Dans certaines situations, vous pouvez être amenés à consulter / récupérer les logs  :
+
+- de votre serveur Web Cloud Databases.
+- pour l'une des bases de données hébergée sur votre serveur Web Cloud Databases.
+
+**Découvrez comment récupérer les logs de vos bases de données hébergées sur votre serveur Web Cloud Databases**
+
+## Prérequis
+
+- Disposer d'une solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse ou non dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+
+## En pratique
+
+Dans ce qui va suivre, deux types de logs vont être distingués :
+
+- Les logs système du serveur Web Cloud Databases.
+- Les logs d'utilisation relatifs aux bases de données hébergées sur votre solution Web Cloud Databases.
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur l'interprétation des logs disponibles avec votre solution Web Cloud Databases. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
+>
+
+### Consulter les logs système en temps réel du serveur Web Cloud Databases
+
+Pour vérifier en temps réel les logs de votre solution Web Cloud Databases dans son ensemble, effectuez les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu déroulant `Web Cloud Databases`{.action}.
+4. Sélectionnez la solution Web Cloud Databases concernée.
+5. Sur la page qui s'affiche, cliquez sur l'onglet `Logs`{.action}.
+
+![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
+
+C'est dans cette console intégrée que vous trouverez, en temps réel, les logs standards du système (**std**) de votre solution Web Cloud Databases.
+
+> [primary]
+>
+> Comme précisé plus haut, les logs système sont disponible ici qu'en temps réel. Cela signifie que ces logs apparaîtrons que s'ils sont générés au moment où vous trouvez sur l'onglet `Logs`{.action}. 
+>
+> Si vous quittez l'onglet `Logs`{.action} puis que vous revenez ultérieurement dessus, l'historique qui s'affichait auparavant aura disparu.
+>
+
+Dans la majorité des cas, le message `Pas de log pour le moment` apparaîtra. Cela signifie que votre solution Web Cloud Databases ne rencontre pas d'erreur système sur l'instant.
+
+Vous ne retrouverez pas de logs liés à l'utilisation de la solution Web Cloud Databases à cet endroit (Hormis certains logs système liés à la connexion ou à l'authentification sur le serveur).
+
+Pour accéder aux logs d'utilisation de vos bases de données hébergées sur votre solution Web Cloud Databases, poursuivez la lecture du présent guide.
+
+### Récupérer les logs d'utilisation relatifs aux bases de données hébergées sur votre solution Web Cloud Databases
+
+Pour récupérer l'ensemble des logs d'utilisation de votre serveur Web Cloud Databases, vous devrez vous y connecter en SFTP.
+
+> [!warning]
+>
+> Avant de vous connecter, vérifiez que l'adresse IP publique du poste que vous utilisez est bien autorisée sur votre serveur Web Cloud Databases, avec l'option `SFTP` cochée.
+>
+> Pour vérifier cela, récupérez l'adresse IP publique de votre point d'accès à Internet puis consultez la section **Autoriser une adresse IP** de ce [guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
+
+Pour retrouvez les informations de connexion en SFTP à votre solution Web Cloud Databases, réalisez les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu déroulant `Web Cloud Databases`{.action}.
+4. Sélectionnez la solution Web Cloud Databases concernée.
+5. Sur la page qui s'affiche, restez sur l'onglet `Informations générales`{.action}, puis positionnez-vous au niveau de l'encadré intitulé `Informations de connexion`{.action}.
+6. En dessous de la mention `SFTP`{.action}, vous retrouverez l'ensemble des informations nécessaires pour vous connecter en SFTP.
+
+> [!primary]
+>
+> Si vous ne connaissez pas le `Mot de passe du serveur`, cliquez sur le bouton `...`{.action} à droite pour le modifier.
+>
+
+![Web Cloud Databases](images/sftp-login.png){.thumbnail}
+
+Une fois les identifiants de cnnexion SFTP récupérés, connectez-vous par l'intermédiaire d'un client FTP (FileZilla, Cyberduck, WinSCP, etc.).
+
+Pour FileZilla, rendez-vous en haut à gauche dans le menu `Fichier`{.action}, puis cliquez sur `Gestionnaire de sites`{.action}. 
+
+Cliquez sur `Nouveau site`{.action}, puis saisissez les paramètres relevés précédemment.
+
+![Web Cloud Databases](images/site-manager.png){.thumbnail}
+
+Le fichier de logs, nommé `stdout.log`, se trouve à la racine.
+
+Vous pourrez le télécharger sur votre poste pour le consulter.
+
+## Aller plus loin <a name="go-further"></a>
+
+[Premiers pas avec votre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
