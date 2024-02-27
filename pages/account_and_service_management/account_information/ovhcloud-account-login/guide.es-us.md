@@ -1,7 +1,7 @@
 ---
 title: Conectarse al área de cliente de OVHcloud
 excerpt: 'Cómo autenticarse en su cuenta de OVHcloud'
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ La gestión de sus servicios se realiza principalmente desde el área de cliente
 
 ### Conectarse al área de cliente de OVHcloud
 
-Acceda a [la página de autenticación de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} e introduzca su identificador de cliente (o su dirección de correo electrónico principal) y su contraseña.
+Acceda a [la página de autenticación de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} e introduzca su dirección de correo electrónico principal y su contraseña.
 
 ![identifiant client](images/log-in.png){.thumbnail}
 
@@ -32,29 +32,6 @@ Si ha activado la [doble autenticación](/pages/account_and_service_management/a
 ### ¿Qué hago si no puedo conectarme? <a name="login-failure"></a>
 
 Esta guía explica cómo solucionar los casos frecuentes de fallo de conexión al área de cliente de OVHcloud.
-
-#### No conozco mi identificador de cliente, ¿cómo encontrarlo?
-
-El ID de cliente de OVHcloud, que se presenta como **xx1111-ovh**, se le solicitará invariablemente cuando se conecte a su cuenta o se ponga en contacto con el soporte técnico de OVHcloud. Existen varias maneras de encontrarlo.
-
-##### **En los mensajes de correo electrónicos enviados por OVHcloud**
-
-Su identificador de cliente se incluye en el mensaje de correo electrónico de confirmación de creación de la cuenta, en los mensajes de confirmación de los pedidos, así como en las notificaciones de conexión a su cuenta.
-
-##### **En mis facturas**
-
-Su identificador de cliente se indica en la parte superior derecha de todas sus facturas.
-
-![identifiant client](images/nichandle01b.png){.thumbnail}
-
-##### **Conectarse sin usuario**
-
-Si no encuentra su identificador, puede conectarse utilizando la dirección de correo electrónico principal (en lugar del identificador) que haya introducido en su cuenta.
-
-Una vez conectado, podrá tomar nota de su identificador, que se muestra en el área de cliente, haciendo clic en su nombre en la parte superior derecha.
-<br>Aparecerá bajo su dirección de correo electrónico principal.
-
-![identifiant client](images/nic-handle.png){.thumbnail}
 
 ### He perdido mi contraseña
 
@@ -70,7 +47,11 @@ Una vez realizada esta operación, deberá [introducir una **nueva** dirección 
 
 ### La doble autenticación está activa en mi cuenta, pero mi teléfono ha sido robado
 
-En este caso, puede utilizar los códigos de seguridad de la doble autenticación, utilizar otro periférico o desactivar la doble autenticación.
+En este caso, puede: 
+
+- utilizar los códigos de seguridad de la doble autenticación ;
+- utilizar otro periférico ;
+- desactivar la doble autenticación.
 
 Consulte los pasos adecuados en nuestra guía "[Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#que-se-debe-hacer-en-caso-de-perdida-o-averia-de-uno-de-los-dispositivos)".
 

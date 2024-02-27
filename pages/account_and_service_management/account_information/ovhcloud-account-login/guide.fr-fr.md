@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l'espace client OVHcloud"
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
-updated: 2024-02-23
+updated: 2024-02-27
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ La gestion de vos services s'effectue principalement via l'espace client OVHclou
 
 Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, renseignez votre identifiant client (ou votre adresse e-mail principale) et votre mot de passe.
 
-![identifiant client](images/log-in.png){.thumbnail}
+![identifiant client](images/log-in-fr.png){.thumbnail}
 
 Si vous avez activé la [double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), vous devrez alors renseigner le code unique de connexion généré par votre périphérique (téléphone, tablette ou clé U2F).
 
@@ -43,16 +43,16 @@ Votre identifiant client est renseigné sur l'e-mail de confirmation de créatio
 
 Votre identifiant client est renseigné en haut à droite sur toutes vos factures.
 
-![identifiant client](images/nichandle01b.png){.thumbnail}
+![identifiant client](images/customer-id-bill-fr.png){.thumbnail}
 
 ##### **Se connecter sans identifiant**
 
-Si vous ne retrouvez pas votre identifiant, sachez que vous pouvez vous connecter en utilisant l'adresse e-mail principale (à la place de l'identifiant)que vous avez renseignée dans votre compte.
+Si vous ne retrouvez pas votre identifiant, sachez que vous pouvez vous connecter en utilisant l'adresse e-mail principale (à la place de l'identifiant) que vous avez renseignée dans votre compte.
 
 Une fois connecté, vous pourrez prendre note de votre identifiant qui est affiché dans votre espace client, en cliquant sur votre nom en haut à droite.
 <br>Il apparaît sous votre adresse e-mail principale.
 
-![identifiant client](images/nic-handle.png){.thumbnail}
+![identifiant client](images/customer-id-manager-fr.png){.thumbnail}
 
 ### J'ai perdu mon mot de passe
 
@@ -78,7 +78,8 @@ Vous devez compléter ce [formulaire en ligne](http://www.ovh.com/fr/cgi-bin/fr/
 
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 
-Dans ce cas de figure, vous pouvez : 
+Dans ce cas de figure, vous pouvez :
+
 - utiliser les code de secours actifs que vous avez sauvegardés ;
 - utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs ;
 - désactiver la double authentification.
@@ -92,8 +93,6 @@ Consultez les démarches appropriées sur notre guide « [Sécuriser son compte 
 Celui-ci vous est envoyé par e-mail **sur l'adresse principale** que vous avez renseignée sur le compte.
 
 Si vous ne retrouvez pas ce code, pensez à vérifier les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
-
-
 
 > [!primary]
 > Activer la double authentification sur votre compte vous permet de choisir le périphérique à utiliser (téléphone, tablette, smartphone, clé U2F) pour recevoir un code d'authentification.

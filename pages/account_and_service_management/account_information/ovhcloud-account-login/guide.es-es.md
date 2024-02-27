@@ -1,7 +1,7 @@
 ---
 title: Conectarse al área de cliente de OVHcloud
 excerpt: 'Cómo autenticarse en su cuenta de OVHcloud'
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Su identificador de cliente se incluye en el mensaje de correo electrónico de c
 
 Su identificador de cliente se indica en la parte superior derecha de todas sus facturas.
 
-![identifiant client](images/nichandle01b.png){.thumbnail}
+![identifiant client](images/customer-id-bill-en.png){.thumbnail}
 
 ##### **Conectarse sin usuario**
 
