@@ -41,7 +41,7 @@ Your NIC handle is included in the account creation confirmation email, order co
 
 Your NIC handle is in the top right-hand corner of all your bills.
 
-![NIC handle](images/nichandle01b.png){.thumbnail}
+![NIC handle](images/customer-id-bill-en.png){.thumbnail}
 
 ##### **Logging in without a username**
 
