@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - View website statistics and logs"
 excerpt: "Find out how to view your website's statistics and logs with your web hosting plan"
-updated: 2024-02-13
+updated: 2024-02-27
 ---
 
 ## Objective
