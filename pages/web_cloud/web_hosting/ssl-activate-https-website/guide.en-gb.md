@@ -8,13 +8,13 @@ updated: 2024-02-26
 
 With an OVHcloud Web Hosting plan, you can get an [SSL certificate](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/). This allows one or more of your websites to have a secure connection by being accessible in *HTTPS*. To do this, you will need to follow several steps before your websites can use this secure connection.
 
-**Find out how to switch your website to HTTPS after activating an SSL certificate.**
+**This guide explains how to switch your website to HTTPS after activating an SSL certificate.**
 
 ## Requirements
 
-- You must have a [SSL certificate](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external} installed on your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}.
-- at least one website set up and accessible on your OVHcloud web hosting plan.
-- You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, part `Web Cloud`{.action}.
+- An [SSL certificate](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external} set up on your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
+- At least one website set up and accessible via your OVHcloud Web Hosting plan
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, part `Web Cloud`{.action}
 
 ## Instructions
 
@@ -22,12 +22,12 @@ Security is becoming increasingly important on the internet. You will certainly 
 
 When you visit a website with a secure connection, your web browser will show this in its address bar (URL) in several ways, such as: 
 
-- a logo (usually a padlock);
-- a message;
-- a color code; 
-- the protocol used, *HTTPS* rather than *HTTP*.
+- A logo (usually a padlock)
+- A message
+- A color code
+- The protocol used, *HTTPS* rather than *HTTP*
 
-It is becoming increasingly clear whether your website has a secure connection or not.
+These indicators help to determine whether your website has a secure connection or not.
 
 ![httpswebsite](images/url-not-secure.png){.thumbnail}
 
@@ -35,17 +35,17 @@ It is becoming increasingly clear whether your website has a secure connection o
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
-> 
-> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 Below are the main steps described in the rest of this guide to switch your website to *HTTPS*:
 
-- [Step 1 - Activate the SSL certificate on the Web Hosting plan](#enable-ssl) : Enables you to activate or check that an SSL certificate has been set up on your Web Hosting plan/website.
-- [Step 2 - Check the technical environment for your website](#check-environment) : Helps you ensure that switching your website to *HTTPS* will not cause any issues before you make any changes.
-- [Step 3 - Activate *HTTPS* on your website](#https-enable) : Enables your website to use the *HTTPS* protocol. The method explained in this guide is not universal and will depend on the website used.
-- [Step 4 - Check that your website is working properly](#check-your-website) : Helps ensure that your website displays correctly after enabling *HTTPS*.
+- [Step 1 - Activate the SSL certificate on the Web Hosting plan](#enable-ssl): Enables you to activate or check that an SSL certificate has been set up on your Web Hosting plan/website.
+- [Step 2 - Check the technical environment for your website](#check-environment): Helps you ensure that switching your website to *HTTPS* will not cause any issues before you make any changes.
+- [Step 3 - Activate *HTTPS* on your website](#https-enable): Enables your website to use the *HTTPS* protocol. The method explained in this guide is not universal and will depend on the website used.
+- [Step 4 - Check that your website is working properly](#check-your-website): Helps ensure that your website displays correctly after enabling *HTTPS*.
 
 ### Step 1 - Activate the SSL certificate on the web hosting plan <a name="enable-ssl"></a>
 
@@ -61,13 +61,13 @@ The information below is generic. We recommend contacting a [specialist provider
 
 When your website loads in *HTTPS*, you should avoid mixing *HTTP* and *HTTPS* content on the same page and on your entire website. So, if your website should be displayed in *HTTPS*, ensure that all of its content loads in *HTTPS*.
 
-If this is not the case, you will offer on your website content that is considered mixed (*Mixed Content*) by web browsers, i.e. content that is considered potentially unsecure on a page that has been declared secure.
+If this is not the case, you will offer on your website content that is considered mixed by web browsers, i.e. content that is considered potentially unsecure on a page that has been declared secure.
 
 There are two possible scenarios for *Mixed Content*:
 
-- **The website will display correctly, but a warning will appear in the address bar**. Passive content (images, videos, etc.) uploaded to your page by your web browser from an unsecured source.
+- **The website will display correctly, but a warning will appear in the address bar**: Passive content (images, videos, etc.) uploaded to your page by your web browser from an unsecured source.
 
-- **Some parts of the website are not displayed and a warning is present in the address bar**. Content considered active by your web browser (scripts, iframes, CSS files, etc.) from an unsecured source has been blocked.
+- **Some parts of the website are not displayed and a warning is present in the address bar**: Content considered active by your web browser (scripts, iframes, CSS files, etc.) from an unsecured source has been blocked.
 
 Make sure that all content loaded from your website comes from a secure source.
 
@@ -77,7 +77,7 @@ Please note that even if your Web Hosting plan has an SSL certificate, the conte
 
 For example, pay special attention to the addresses you use in your website’s code. If possible:
 
-- prefer the use of relative addresses like: `../img/header.png`;
+- Prefer the use of relative addresses, for example: `../img/header.png`.
 - Avoid using absolute addresses with the *HTTP* protocol, such as: `http://domain.tld/img/header.png`.
 
 If necessary, adapt your website’s code accordingly. 
@@ -88,7 +88,7 @@ If you use a turn-key website (WordPress, PrestaShop, Drupal, Joomla!), the stru
 
 Depending on how your website is coded, please ensure that it cannot be accessed via different URLs — for example, the first using *HTTP* and the second using *HTTPS*. If this is the case, the same content will be accessible from several different addresses, which is considered duplicate content by search engines.
 
-This can lower your website’s SEO ranking. Check that your code "forces" the use of *HTTPS*, via a rewrite rule to be placed in your website's code when you want to enable *HTTPS*.
+This can lower your website’s search engine ranking. Check that your code forces the use of *HTTPS*, via a rewrite rule to be placed in your website's code when you want to enable *HTTPS*.
 
 Please note that if you are using a turn-key website, its structure automatically manages rewrite rules. As a result, you should not have to make any changes to your website’s code.
 
@@ -109,11 +109,11 @@ There are many ways to activate *HTTPS* on your website. To do this, you will ne
 
 You can usually activate *HTTPS* from your website’s administration interface. The domain name and method for activating HTTPS* vary, depending on the turn-key website you are using. 
 
-For example, you may have a setting called “Force *HTTPS*” to activate, or you may need to edit your website’s full link to add an `s`: “**http**://domain.tld” would then become “**https**://domain.tld”.
+For example, you may have a setting called “Force *HTTPS*” to activate, or you may need to edit your website’s full URL to add an `s`: “**http**://domain.tld” would then become “**https**://domain.tld”.
 
 If you are not sure how to do this via the administration interface for your turnkey website, or if you have any doubts, please refer to the official documentation published by the publisher of your website. 
 
-- **You are using a website coded by yourself (or by a provider)**: 
+- **You are using a website created by yourself (or by a provider)**: 
 
 You will need to activate *HTTPS* directly in your website’s code. If you have the necessary knowledge, modify your website’s code to adapt it to use *HTTPS*. If you have any doubts about how to proceed, please contact your website’s developer. 
 
@@ -137,7 +137,7 @@ This second example of a script turns all URLs that arrive via the *HTTP* protoc
 
 For this second example, check that all of your target domain names or subdomains have an active SSL certificate.
 
-**Warning**, for [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) hosting plans , the script to use is as follows:
+**Warning**, for [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) hosting plans, the script to use is as follows:
 
 ```bash
 RewriteEngine On
