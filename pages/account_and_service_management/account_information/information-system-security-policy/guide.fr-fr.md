@@ -1,6 +1,6 @@
 ---
 title: "Politique de sécurité du système d'information (PSSI)"
-updated: 2023-02-26
+updated: 2023-09-29
 ---
 
 ## Objectifs
