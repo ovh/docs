@@ -1,7 +1,7 @@
 ---
 title: "Configure a custom iPXE script to boot your server from the OVHcloud API"
 excerpt: Find out how to configure a custom iPXE script to boot your server from the OVHcloud API
-updated: 2023-08-24
+updated: 2024-02-27
 ---
 
 ## Objective
@@ -28,11 +28,6 @@ Using a custom script can be useful in the following use cases:
 > [!warning]
 >
 > Restarting a dedicated server can cause outage of all services that only depend on this dedicated server.
->
-
-> [!warning]
->
-> This feature is only available for `UEFI` servers. We are working on adding this feature to `LEGACY` boot servers as well.
 >
 
 ## Instructions
