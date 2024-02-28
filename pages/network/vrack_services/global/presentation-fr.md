@@ -16,6 +16,10 @@ Cet article explore en détail comment le vRack d'OVHcloud permet une connectivi
 ### vRack : Une Connectivité Privée Évolutive
 Le vRack d'OVHcloud est une solution de réseau privé virtuel qui permet d'interconnecter de manière sécurisée et privée divers services au sein de l'écosystème OVHcloud, tels que les instances de cloud public, le cloud privé hébergé, les serveurs baremetal, et les équilibreurs de charge. Cette technologie offre une isolation complète du trafic réseau, le protégeant ainsi d'Internet et des autres clients.
 
+<p align="center" width="100%">
+    <img src="images/vrack_01.webp">
+</p>
+
 #### Caractéristiques Avancées du vRack :   
 - **Isolation et Sécurité :** Le vRack assure une isolation totale, permettant une sécurité renforcée pour les données critiques.
 - **Flexibilité avec les VLAN :** La possibilité de créer jusqu'à 4000 VLANs offre une gestion réseau flexible et précise, adaptée aux besoins spécifiques de chaque projet.
@@ -24,6 +28,10 @@ Le vRack d'OVHcloud est une solution de réseau privé virtuel qui permet d'inte
 ### Stockage de Fichiers d'Entreprise : Performance et Fiabilité avec NetApp ONTAP
 Le Stockage de Fichiers d'Entreprise, basé sur la technologie NetApp ONTAP, est une solution de stockage de fichiers haute performance conçue pour répondre aux exigences des entreprises en matière de disponibilité, de performance et de sécurité des données.
 
+<p align="center" width="100%">
+    <img src="images/netapp_filestorage_3.webp">
+</p>
+
 #### Points Forts du Stockage de Fichiers d'Entreprise :   
 - **Haute Performance :** La technologie NVMe SSD assure des vitesses de lecture et d'écriture ultra-rapides, facilitant un accès instantané aux données stockées.
 - **Haute Disponibilité :** Avec une disponibilité de 99,99%, cette solution garantit un accès constant aux données, crucial pour les applications d'entreprise critiques.
@@ -31,6 +39,10 @@ Le Stockage de Fichiers d'Entreprise, basé sur la technologie NetApp ONTAP, est
 
 ### Intégration du Stockage de Fichiers d'Entreprise avec vRack
 L'intégration du Stockage de Fichiers d'Entreprise avec les services vRack représente une avancée majeure, offrant une connectivité privée native et sécurisée pour les applications critiques d'entreprise. Cette solution utilise la technologie Service Endpoint pour connecter les pools de capacité de stockage aux réseaux privés vRack, isolant ainsi le trafic de données d'Internet.
+
+<p align="center" width="100%">
+    <img src="images/vrack_storage2_1.webp">
+</p>
 
 #### Processus d'Intégration et Avantages :
 - **Configuration Simplifiée :** L'accès au panneau de contrôle permet une configuration aisée du pool de capacité et la création de points de service en quelques étapes simples.
