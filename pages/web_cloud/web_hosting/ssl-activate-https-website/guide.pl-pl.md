@@ -153,7 +153,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 Po aktywacji *HTTPS* na Twojej stronie WWW sprawdź, czy strona działa prawidłowo, i czy jej zawartość wyświetla się tak samo, jak przed operacją. W tym celu spróbuj uzyskać dostęp do strony, sprawdź, czy nie wyświetla się żaden komunikat lub ostrzeżenie i poświęć chwilę, aby sprawdzić wygląd poszczególnych części Twojej strony. 
 
-Jeśli wykryjesz jakąś usterkę, spróbuj jak najszybciej ją naprawić lub cofnij się, wyłączając *HTTPS*. W przypadku takiej potrzeby możesz również wykorzystać kopię zapasową Twojej strony WWW, którą wykonałeś podczas[etapu 3] (#https-enable).
+Jeśli wykryjesz jakąś usterkę, spróbuj jak najszybciej ją naprawić lub cofnij się, wyłączając *HTTPS*. W przypadku takiej potrzeby możesz również wykorzystać kopię zapasową Twojej strony WWW, którą wykonałeś podczas[etapu 3](#https-enable).
 
 Jeśli Twoja strona wyświetla się poprawnie i nie pojawia się żadne ostrzeżenie po włączeniu *HTTPS*, oznacza to, że operację wykonałeś prawidłowo. Jeśli chcesz aktywować *HTTPS* na innej stronie WWW, przeprowadź ponownie wszystkie operacje opisane w niniejszej dokumentacji.
 
