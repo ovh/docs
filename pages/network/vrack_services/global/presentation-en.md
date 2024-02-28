@@ -11,6 +11,12 @@ Facing these challenges, OVHcloud offers innovative solutions through vRack and 
 Designed to meet the strictest requirements in terms of data security, performance, and availability, these solutions represent a significant advancement in the management of modern enterprise IT infrastructures.   
 This article delves into how OVHcloud's vRack enables secure and private connectivity among various cloud services, and how Enterprise File Storage provides a high-performance file storage solution, all in a synergy that maximizes efficiency and flexibility for businesses seeking innovation and growth.   
 
+Please note:   
+- **vRack is worldwide**, offering global connectivity solutions.
+- **vRack services are local**, ensuring data residency and compliance.
+- **Managed services are linkable to vRack services only in the same zone**, maintaining high performance and security standards.
+
+
 ## In Practice
 
 ### vRack: Scalable Private Connectivity
@@ -41,7 +47,7 @@ Enterprise File Storage, based on NetApp ONTAP technology, is a high-performance
 The integration of Enterprise File Storage with vRack services represents a major advancement, offering native and secure private connectivity for critical business applications. This solution uses Service Endpoint technology to connect storage capacity pools to private vRack networks, thus isolating data traffic from the Internet.
 
 <p align="center" width="100%">
-    <img src="images/vrack_storage2_1.webp">
+    <img src="images/vRack Service Endpoint Diagram.png">
 </p>
 
 #### Integration Process and Benefits:
