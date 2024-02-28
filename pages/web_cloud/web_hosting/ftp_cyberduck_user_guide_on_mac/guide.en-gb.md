@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Using Cyberduck with a web hosting plan"
 excerpt: "Find out how to use the Cyberduck application to connect to your OVHcloud web hosting plan"
-updated: 2024-02-26
+updated: 2024-02-28
 ---
 
 ## Objective

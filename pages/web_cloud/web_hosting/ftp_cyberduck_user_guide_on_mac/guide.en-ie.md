@@ -1,12 +1,12 @@
 ---
-title: "Tutorial - Using Cyberduck with my web hosting plan"
+title: "Tutorial - Using Cyberduck with a web hosting plan"
 excerpt: "Find out how to use the Cyberduck application to connect to your OVHcloud web hosting plan"
-updated: 2024-02-26
+updated: 2024-02-28
 ---
 
 ## Objective
 
-Available on macOS and Windows, Cyberduck is an open-source file transfer application. You can use it to log in to your web hosting plan’s FTP storage space (using FTP or SFTP protocol).
+Available for macOS and Windows, Cyberduck is an open-source file transfer application. You can use it to log in to your web hosting plan’s FTP storage space (using FTP or SFTP protocol).
 
 To download Cyberduck, go to the [official website](https://cyberduck.io/) of the application.
 
@@ -14,21 +14,21 @@ To download Cyberduck, go to the [official website](https://cyberduck.io/) of th
 
 > [!primary]
 >
-> - Cyberduck is an application available on macOS and Windows. Because Cyberduck's interface and features are relatively similar on both operating systems, the tutorial was performed on a Windows machine.
+> - Cyberduck is an application available on macOS and Windows. Because Cyberduck's interface and features are similar on both operating systems, the tutorial can be applied universally, even though it relies on screenshots from the Windows verion.
 > - This guide has been created with a free version of the application, version 8.7.2, downloaded from the [official website](https://cyberduck.io/).
 >
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
->
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. See the [Go further](#go-further) section of this guide for more information.
->
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> 
 
 ## Requirements
 
-- You must have a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
-- You need to have downloaded and installed the Cyberduck application on your computer.
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
+- The Cyberduck application downloaded and installed
 
 ## Instructions
 
@@ -36,8 +36,8 @@ To download Cyberduck, go to the [official website](https://cyberduck.io/) of th
 
 When you start the application, the interface below will appear.
 
-- The top part, surrounded by orange, corresponds to the toolbar. You can use it to establish a connection to your hosting space, browse the tree-view of your folders and files, view the history of your actions, and many other actions.
-- Below is the content you want to view. For example, if you click on the `History`{.action} icon, the list of your actions will appear.
+- The top part, highlighted in orange, corresponds to the toolbar. You can use it to establish a connection to your hosting space, browse the tree-view of your folders and files, view the history of your actions, and many other actions.
+- The lower section shows the content you want to view. For example, if you click on the `History`{.action} icon, the list of your actions will appear.
 
 ![hosting](images/start-page.png){.thumbnail}
 
@@ -49,7 +49,7 @@ In the main menu, at the top of the interface, click `View`{.action} then `Custo
 
 ![hosting](images/customize-toolbar.png){.thumbnail}
 
-In the window that appears, drag the elements you want onto the toolbar. For example, if you want to add a `Download`{.action} icon to your toolbar, drag and drop the `Download`{.action} icon onto the toolbar. To confirm your changes, click `Done`{.action}.
+In the window that appears, drag the elements you want onto the toolbar. For example, if you want to add the `Download`{.action} function to your toolbar, drag and drop the `Download`{.action} icon onto the toolbar. To confirm your changes, click `Done`{.action}.
 
 ![hosting](images/customize-display.png){.thumbnail}
 
@@ -87,7 +87,7 @@ When you log in to your web hosting space for the first time, a window with the 
 
 > [!success]
 >
-> - We recommend saving your login details via a bookmark. This will allow you to remember certain connection information.
+> - We recommend saving your login details via a bookmark. This will allow you to retain all information necessary for an individual connection.
 > - Read this part of the guide: [What is a bookmark?](#signet)
 > 
 
@@ -97,7 +97,7 @@ When you try to connect to your web hosting space, an error may occur. Here are 
 
 - `Connection failed (<server-SFTP>) - DNS lookup for <server> failed`
 
-In the majority of cases, this error is related to the credentials you have entered, which are probably incorrect. You will need to check the login details you have entered.
+In the majority of cases, this error is related to the credentials you have entered, which are probably incorrect. Check the login details you have entered.
 
 ![hosting](images/open-session-failed.png){.thumbnail}
 
@@ -108,9 +108,9 @@ In the majority of cases, this error is related to the credentials you have ente
 
 - `Connection failed (<server-SFTP>) - Operation timed out`
 
-This message is also accompanied by the mention `Operation timed out`. This message usually means that the host is unreachable or in error. You must verify the login information you have entered.
+The message `Operation timed out` usually means that the host is unreachable or in error. Verify the login information you have entered.
 
-This error can also be caused by a firewall or the local network blocking port 21 or 22 which are used to connect to the server. In this case, you will need to check your personal configuration.
+This error can also be caused by a firewall or the local network blocking port 21 or 22 which are used to connect to the server. In this case, you will need to check your local configuration.
 
 ![hosting](images/connection-failed.png){.thumbnail}
 
@@ -124,11 +124,11 @@ This error can also be caused by a firewall or the local network blocking port 2
 
 ### What is a bookmark?
 
-To facilitate access to your web hosting space, we recommend using bookmarks. They pre-save your login details, so you don't have to enter them each time you log in.
+To facilitate access to your web hosting space, we recommend using bookmarks. They store your login details, so you don't have to enter them each time you log in.
 
 To add it:
 
-1. Log in to your web hosting plan’s FRP space.
+1. Log in to your web hosting plan’s FTP space.
 2. At the top of the interface, in the toolbar, click on the `Bookmarks`{.action} tab (orange box in the image below).
 3. At the bottom left of the window, click on the icon `+`{.action} to add a new bookmark.
 
@@ -156,14 +156,14 @@ In the Cyberduck menu, click `File`{.action} then `Upload...`{.action}. Select t
 
 You can view the log of transfers made to your Web Hosting plan’s FTP storage space. You will find:
 
-- files waiting to be deposited on the remote server (still present in the queue or being sent);
-- the files for which the transfer failed;
+- Files waiting to be deposited on the remote server (still present in the queue or being sent).
+- The files for which the transfer failed.
 - Files that have been successfully transferred to the remote Web Hosting plan.
 
 This window appears in two different ways:
 
-- automatically when a transfer is initiated;
-- by clicking `Window`{.action} (in the main menu) then `Transfers`{.action}.
+- Automatically when a transfer is initiated
+- By clicking `Window`{.action} (in the main menu), then `Transfers`{.action}
 
 ![hosting](images/transfert-files-list.png){.thumbnail}
 
@@ -171,12 +171,12 @@ This window appears in two different ways:
 
 Double-click a file or folder to do the following:
 
-- Read information from a file or folder and modify its permissions (CHMOD).
-- Edit the file with the application of your choice.
-- Rename the file or folder.
-- Delete the file or folder.
-- Download the selected item(s).
-- Create a new folder or file.
+- Read information from a file or folder and modify its permissions (CHMOD)
+- Edit the file with the application of your choice
+- Rename the file or folder
+- Delete the file or folder
+- Download the selected item(s)
+- Create a new folder or file
 
 The list above is not exhaustive. Other actions are possible. Visit the [official website](https://cyberduck.io/) of Cyberduck if you need to.
 
@@ -186,7 +186,7 @@ The list above is not exhaustive. Other actions are possible. Visit the [officia
 
 You can modify the permissions (CHMOD) of your files and folders on the Web Hosting plan.
 
-These are divided into 3 families:
+These are divided into 3 permission classes:
 
 - Owner
 - Group
@@ -198,14 +198,14 @@ Double-click on a file or folder, then select `Info`{.action}. The following win
 
 Click on the `Permissions`{.action} tab, then make the changes you want:
 
-- UNIX Permissions: This value defines the rights of the 3 families (Owner, Group and others).
-- Select the desired check boxes: the value will update automatically for UNIX permissions.
+- UNIX Permissions: This value defines the rights of the permission triad (Owner, Group and Others).
+- Select the desired check boxes: The value will update automatically for UNIX permissions.
 
-#### Reopening the website
+#### Unlocking the website
 
 You can reopen your website using a custom command.
 
-In most cases, this action follows OVHcloud closing your web hosting plan’s FTP storage space for security reasons, following a hack.
+In most cases, this action is necessary following the closing your web hosting plan’s FTP storage space by OVHcloud for security reasons, after a hack.
 
 In the Cyberduck menu, click `Go`{.action} then `Send command...`{.action}.
 
@@ -213,15 +213,15 @@ In the Cyberduck menu, click `Go`{.action} then `Send command...`{.action}.
 
 In the new window, insert the command `CHMOD 705 /` and then click `Send`{.action} to execute the command. In confirmation, the message `200 Permissions changed on /` should appear in the box below.
 
-To check that the reopening is effective, log in to your website from a web browser.
+To check that the reopening is effective, open your website in a web browser.
 
 ![hosting](images/site-chmod-705-command.png){.thumbnail}
 
 > [!warning]
 >
-> - This command does not work in SFTP. To do this, use an FTP connection.
-> - As a reminder, make sure to test the display after 3 hours maximum. Our robots spend every 3 hours checking for status changes. Depending on when you do this, your website may be able to revert to a faster or slower display.
-> - If the 3 hour period has passed and your website is still not online, please contact OVHcloud support.
+> - This command does not work over SFTP. To do this, use an FTP connection.
+> - Our robots check every 3 hours for status changes; it is therefore not unusual that the unlocking does not come into effect immediately.
+> - If the 3 hour period has passed and your website is still not displayed online, please contact OVHcloud support.
 >
 
 ## Go further <a name="go-further"></a>
