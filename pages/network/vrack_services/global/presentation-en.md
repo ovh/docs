@@ -1,7 +1,7 @@
 ---
 title: 'Optimizing IT with OVHcloud: vRack & Enterprise Storage'
 excerpt: 'Discover vRack and Enterprise File Storage solutions for secure, scalable, and high-performance business IT infrastructure.'
-updated: 2024-01-28
+updated: 2024-02-28
 ---
 
 ## Objective
