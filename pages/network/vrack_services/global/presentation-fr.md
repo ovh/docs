@@ -1,7 +1,7 @@
 ---
-title: 'TODO'
-excerpt: 'TODO'
-updated: 2024-012-28
+title: 'Optimisation IT avec OVHcloud : vRack & Stockage d’Entreprise'
+excerpt: 'Découvrez les solutions vRack et Stockage de Fichiers d’Entreprise d’OVHcloud pour une infrastructure IT d’entreprise sécurisée, évolutive et haute performance.'
+updated: 2024-02-28
 ---
 
 ## Objective
