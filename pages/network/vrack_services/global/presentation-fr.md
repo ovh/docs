@@ -41,7 +41,7 @@ Le Stockage de Fichiers d'Entreprise, basé sur la technologie NetApp ONTAP, est
 L'intégration du Stockage de Fichiers d'Entreprise avec les services vRack représente une avancée majeure, offrant une connectivité privée native et sécurisée pour les applications critiques d'entreprise. Cette solution utilise la technologie Service Endpoint pour connecter les pools de capacité de stockage aux réseaux privés vRack, isolant ainsi le trafic de données d'Internet.
 
 <p align="center" width="100%">
-    <img src="images/vrack_storage2_1.webp">
+    <img src="images/vRack Service Endpoint Diagram.png">
 </p>
 
 #### Processus d'Intégration et Avantages :
