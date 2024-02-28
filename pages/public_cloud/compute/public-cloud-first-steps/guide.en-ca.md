@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2024-01-08
+updated: 2024-02-28
 ---
 
 ## Objective
@@ -160,12 +160,12 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 **Local Zones:**
 
-Local zones are a new type of location that allows you to scale your capacities based on your needs. You can leverage CPU, RAM and storage on demand and, at the same time, reduce latency and comply with local regulations.
+Local Zones are an extension of Regions that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications. They are strategically placed in proximity to areas with high user demand. Their main goal is to minimize the time it takes to transfer data between the user and the cloud, in order to make services faster and more responsive, and meet Data residency requirements.
 
 
 **Global Regions:**
 
-Th
+These are regions supported by one or more datacenters managed by OVHcloud. Each region located in different geographical area. Each global region has one or more Availibility Zones, for example, GRA11, GRA7, BHS5 etc.
 
 First, choose a server template according to your needs. The assistant will provide descriptions about the various use cases and server model availability. You can choose from these customised categories:
 
