@@ -16,6 +16,10 @@ This article delves into how OVHcloud's vRack enables secure and private connect
 ### vRack: Scalable Private Connectivity
 The vRack from OVHcloud is a virtual private network solution that securely and privately interconnects various services within the OVHcloud ecosystem, such as public cloud instances, hosted private cloud, baremetal servers, and load balancers. This technology offers complete isolation of network traffic, thus protecting it from the Internet and other clients.
 
+<p align="center" width="100%">
+    <img src="images/vrack_01.webp">
+</p>
+
 #### Advanced Features of vRack:   
 - **Isolation and Security:** vRack ensures total isolation, providing enhanced security for critical data.
 - **Flexibility with VLANs:** The ability to create up to 4000 VLANs offers flexible and precise network management, tailored to the specific needs of each project.
@@ -24,6 +28,10 @@ The vRack from OVHcloud is a virtual private network solution that securely and 
 ### Enterprise File Storage: Performance and Reliability with NetApp ONTAP
 Enterprise File Storage, based on NetApp ONTAP technology, is a high-performance file storage solution designed to meet the demands of businesses in terms of data availability, performance, and security.
 
+<p align="center" width="100%">
+    <img src="images/netapp_filestorage_3.webp">
+</p>
+
 #### Strengths of Enterprise File Storage:   
 - **High Performance:** NVMe SSD technology ensures ultra-fast read and write speeds, facilitating instant access to stored data.
 - **High Availability:** With a 99.99% availability, this solution guarantees constant access to data, crucial for critical business applications.
@@ -31,6 +39,10 @@ Enterprise File Storage, based on NetApp ONTAP technology, is a high-performance
 
 ### Integration of Enterprise File Storage with vRack
 The integration of Enterprise File Storage with vRack services represents a major advancement, offering native and secure private connectivity for critical business applications. This solution uses Service Endpoint technology to connect storage capacity pools to private vRack networks, thus isolating data traffic from the Internet.
+
+<p align="center" width="100%">
+    <img src="images/vrack_storage2_1.webp">
+</p>
 
 #### Integration Process and Benefits:
 - **Simplified Configuration:** Access to the control panel allows for easy configuration of the capacity pool and the creation of service points in a few simple steps.
