@@ -113,7 +113,7 @@ Per attivare il *HTTPS* sul sito Web sono disponibili diversi metodi. è necessa
 
 *HTTPS* è in genere abilitato dall’interfaccia di gestione del sito Web. Il nome e l’utilizzo di *HTTPS* variano in base al "sito chiavi in mano" utilizzato. 
 
-Ad esempio, potrebbe essere necessario attivare l’opzione "Forza *HTTPS*" o modificare l’intero link del sito Web per aggiungervi un `s`: "**http**://domain.tld" diventerebbe **https**://domain.tld".
+Ad esempio, potrebbe essere necessario attivare l’opzione "Forza *HTTPS*" o modificare l’intero link del sito Web per aggiungervi un `s`: "**http**://domain.tld" diventerebbe "**https**://domain.tld".
 
 In caso di dubbi o dubbi, contatta la documentazione ufficiale del produttore del tuo sito Web. 
 
