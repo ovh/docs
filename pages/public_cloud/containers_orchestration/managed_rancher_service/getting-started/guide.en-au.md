@@ -20,7 +20,9 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
-## Rancher Creation and Access
+## Instructions
+
+### Rancher Creation and Access
 
 To initiate your journey, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and open the `Public Cloud`{.action} section.
 Then access the `Managed Rancher Service`{.action} under the `Containers & Orchestration` section.
