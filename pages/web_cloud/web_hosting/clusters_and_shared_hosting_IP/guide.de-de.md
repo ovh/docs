@@ -347,7 +347,7 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Frankreich|FR|213.186.33.3|2001:41d0:1:1b00:213:186:33:3|
 |Irland|IE|188.165.7.3|2001:41d0:1:1b00:188:165:7:3|
 |Portugal|PT|94.23.79.3|2001:41d0:1:1b00:94:23:79:3|
-||Vereinigtes Königreich|UK|87.98.255.3|2001:41d0:1:1b00:87:98:255:3|
+|Vereinigtes Königreich|UK|87.98.255.3|2001:41d0:1:1b00:87:98:255:3|
 |Italien|IT|94.23.64.3|2001:41d0:1:1b00:94:23:64:3|
 |Spanien|ES|87.98.231.3|2001:41d0:1:1b00:87:98:231:3|
 |Polen|PL|87.98.239.3|2001:41d0:1:1b00:87:98:239:3|
