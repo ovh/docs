@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2024-02-15
+updated: 2024-02-28
 ---
 
 <style>
@@ -52,7 +52,6 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
     - [Comprendre comment paramètrer ses filtres](#filters-howto)
     - [Créer un filtre](#filters-creation)
 - [Délégations](#delegations)
-- [Identités](#identities)
 - [Signatures](#signatures)
 - [Réponses automatiques / Répondeur](#auto-reply)
 
@@ -122,7 +121,7 @@ Pour classer vos e-mails selon vos besoins, vous pouvez créer vos propres dossi
 
 Pour créer un dossier, cliquez sur le bouton `+ Ajouter un dossier`{.action} en bas de la colonne.
 
-Vous pouvez également créer un sous-dossier en effectuant un clic droit sur le dossier de votre choix, puis en cliquant sur `Créer un sous-dossier`{.action}. 
+Vous pouvez également créer un sous-dossier en effectuant un clic droit sur le dossier de votre choix, puis en cliquant sur `Créer un sous-dossier`{.action}.
 
 > [!primary]
 >
@@ -143,7 +142,7 @@ Lorsque vous sélectionnez un dossier ou sous-dossier dans la colonne de gauche,
 Lorsque vous sélectionnez un e-mail est sélectionné, de nombreuses actions sont alors disponibles :
 
 - 1.**Répondre** : répondre directement à l'expéditeur.
-- 2.**Répondre à tous** : répondre directement à tous les destinataires présents dans les champs « A » et « Copie ».
+- 2.**Répondre à tous** : répondre directement à tous les destinataires présents dans les champs « A » et « Cc ».
 - 3.**Transférer** : transférer l'e-mail sélectionné à un ou plusieurs destinataires.
 - 4.**Archiver** : déplacer l'e-mail vers le dossier « Archive » de votre compte e-mail.
 - 5.**Déplacer** : déplacer l'e-mail vers un des dossiers du compte e-mail.
@@ -225,7 +224,7 @@ Après avoir rédigé votre e-mail, avant de cliquer sur `Envoyer`{.action}, vou
 
 > [!success]
 > **Annuler un envoi**
-> 
+>
 > Si vous avez activé l'option `Annuler l'envoi` dans la rubrique « **Écrire un mail** » des préférences Zimbra, vous pouvez cliquer sur `DEFAIRE`{.action} pour annuler l'envoi.
 > Ce bouton reste disponible pendant environ 5 secondes.
 >
@@ -237,9 +236,9 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 
 ![Zimbra - préférences](images/zimbra-14.png){.thumbnail}
 
-- (1) **Profil** : cliquez sur le nom de votre compte e-mail dans la partie supérieure droite de votre interface. Depuis ce menu, vous pourrez « **Changer le mot de passe** » de votre adresse e-mail, « **Changer l'image du profil** » ou vous déconnecter en cliquant sur« **Déconnexion** ».
+- **(1) Profil** : cliquez sur le nom de votre compte e-mail dans la partie supérieure droite de votre interface. Depuis ce menu, vous pourrez « **Changer le mot de passe** » de votre adresse e-mail, « **Changer l'image du profil** » ou vous déconnecter en cliquant sur« **Déconnexion** ».
 
-- (2) **Réglages** : cliquez sur la roue crantée en haut à droite de votre interface, pour avoir accès aux changements de « **Langue** » de votre interface. Une rubrique « **Aidez-moi** » vous permet de consulter la documentation officielle de Zimbra. Dans « **Paramètres** » vous retrouvez l'ensemble des éléments de configurations décrits dans les onglets suivants :
+- **(2) Réglages** : cliquez sur la roue crantée en haut à droite de votre interface, pour avoir accès aux changements de « **Langue** » de votre interface. Une rubrique « **Aidez-moi** » vous permet de consulter la documentation officielle de Zimbra. Dans « **Paramètres** » vous retrouvez l'ensemble des éléments de configurations décrits dans les onglets suivants :
 
 > [!tabs]
 > **Général**
@@ -265,14 +264,10 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >>
 >> - **Annuler l'envoi** : cette option permet d'afficher une bannière, pendant 5 secondes, permettant d'annuler l'envoi d'un e-mail.
 >> - **Demander des accusés de lecture** : cette option transmet une demande d'accusé de lecture à vos destinataires lorsque vous leur envoyez un e-mail.
->> - **Enregistrer une copie dans le dossier Envoyé** : cochée par défaut, cette option enregistre les e-mails envoyés dans le dossier « *Envoyé » de votre compte e-mail.
->> - **Délégué**s: consultez la rubrique [Délegations](#delegations) de ce guide pour comprendre son utilisation.
+>> - **Enregistrer une copie dans le dossier Envoyé** : cochée par défaut, cette option enregistre les e-mails envoyés dans le dossier « Envoyé » de votre compte e-mail.
+>> - **Délégués**: consultez la rubrique [Délegations](#delegations) de ce guide pour comprendre son utilisation.
 >> - **Paramètres d'envoi du délégué** : consultez la rubrique [Délegations](#delegations) de ce guide pour comprendre son utilisation.
 >> - **Compositeur** : vous pouvez définir votre style d'écriture par défaut lorsque vous lancez la rédaction d'un e-mail.
->>
-> **Comptes**
->>
->> Cette section vous permet de créer des identités. Consultez la rubrique [Identités](#identities) de ce guide pour comprendre son utilisation.
 >>
 > **Signatures**
 >>
@@ -280,7 +275,6 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >>
 >> - **Signature standard** : saisissez la signature qui apparaîtra lorsque vous rédigez un nouvel e-mail.
 >> - **Signature de réponse ou transmission** : vous permet d'ajouter une signature différente lorsque vous répondez ou transmettez un e-mail.
->> - **Signatures supplémentaires** : cliquez sur `+ Ajouter une signature`{.action} pour ajouter une signature additionelle. Celle-ci ne sera pas attachée à un compte et pourra être ajoutée manuellement lorsque vous rédigez un e-mail.
 >>
 > **Absent du bureau**
 >>
@@ -295,9 +289,9 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 
 Cliquez sur `Contacts`, dans la barre supérieure, pour accéder au carnet de contacts. Celui-ci est divisé en **3 parties** :
 
-- (1) **Dossiers** (à gauche) : dans le carnet d'adresses, vous pouvez créer des dossiers pour classer et regrouper les contacts.
-- (2) **Liste des contacts** (au centre) : visualisez les contacts du carnet d'adresses ou du dossier sélectionné.
-- (3) **Propriétés du contact** ou **Nouveau contact** (à droite) : cette fenêtre s'affiche lorsqu'un contact est sélectionné ou lorsqu'il est en cours de création. Vous pouvez y lire ou modifier les informations d'un contact.
+- **(1) Dossiers** (à gauche) : dans le carnet d'adresses, vous pouvez créer des dossiers pour classer et regrouper les contacts.
+- **(2) Liste des contacts** (au centre) : visualisez les contacts du carnet d'adresses ou du dossier sélectionné.
+- **(3) Propriétés du contact** ou **Nouveau contact** (à droite) : cette fenêtre s'affiche lorsqu'un contact est sélectionné ou lorsqu'il est en cours de création. Vous pouvez y lire ou modifier les informations d'un contact.
 
 ![Zimbra - contacts](images/zimbra-15.png){.thumbnail}
 
@@ -357,7 +351,7 @@ Sélectionnez l'un des deux onglets suivants :
 >>
 >> Depuis la fenêtre `Contacts`, faites un clic droit sur le dossier de contacts de votre choix, à l'exception des dossiers « Contacts par e-mail » et « Corbeille » qui ne permettent pas l'import et l'export de contacts.
 >>
->> Cliquez ensuite sur `Exporter`{.action} pour ouvrir la fenêtre d'exportation. Le bouton `Browse...` vous permet d'aller récupérer le fichier contenant vos contacts au format « .csv » ou « .vcf ».<br><br>
+>> Cliquez ensuite sur `Exporter`{.action} pour ouvrir la fenêtre d'exportation. Choisissez le type de fichier que vous souhaitez exporter puis cliquez sur `Exporter maintenant`{.action}.<br><br>
 >> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail}
 >>
 
@@ -415,7 +409,7 @@ En fonction du champ de comparaison désigné précédemment, l'opérateur de co
 >
 > - L'astérisque `*` est un espace réservé pour zéro ou plusieurs caractères de n'importe quel type.<br><br> Par exemple, pour la chaîne de recherche « maison\*bleue », elle renverrait les correspondances « maison bleue », « maisons » ou encore « maison en bois bleue ». Cependant, il ne renverrait pas « super-maison en bois bleue ». <br><br> Autre exemple de chaîne de recherche « p\*maison » qui renverrait les correspondances « petite maison », « partir de sa maison ». Cependant, il ne renverrait pas « prêter sa maison à un ami ».
 >
-> - Le point d'interrogation `?` est un espace réservé pour exactement un seul caractère.<br><br>Par exemple, pour la chaîne de recherche « maison\*bleue », elle renverrait les correspondances « maison bleue », « maison-bleue », « maison_bleue ».
+> - Le point d'interrogation `?` est un espace réservé pour exactement un seul caractère.<br><br>Par exemple, pour la chaîne de recherche « maison?bleue », elle renverrait les correspondances « maison bleue », « maison-bleue », « maison_bleue ».
 >
 
 ##### 3 - Valeur <a name="filters-value"></a>
@@ -441,9 +435,9 @@ Pour accèder à la création de filtres, cliquez sur la roue crantée en haut �
 
 Si des filtres existent, vous retrouverez la liste selon leur ordre d'application :
 
-- (1) Vous pouvez afficher un aperçu de chaque filtre en cliquant sur le bouton `...`{.action} à droite du filtre puis sur `Détails`{.action}. Le bouton `Appliquer`{.action} permet de lancer l'action paramétrée pour ce filtre.
+- **(1)** Vous pouvez afficher un aperçu de chaque filtre en cliquant sur le bouton `...`{.action} à droite du filtre puis sur `Détails`{.action}. Le bouton `Appliquer`{.action} permet de lancer l'action paramétrée pour ce filtre.
 
-- (2) Ce bouton s'utilise comme une poignée, il vous permet de déplacer le filtre dans la liste pour lui attribuer un ordre d'application. En effet, chaque filtre est appliqué selon l'ordre qui est défini dans la liste.
+- **(2)** Ce bouton s'utilise comme une poignée, il vous permet de déplacer le filtre dans la liste pour lui attribuer un ordre d'application. En effet, chaque filtre est appliqué selon l'ordre qui est défini dans la liste.
 
 Cliquez sur le bouton `+ Ajouter un filtre`{.action} pour lancer sa création. La fenêtre du mode simple s'affiche par défaut. Vous pouvez passer en mode avancé en cliquant sur `Passer à avancé`{.action} pour disposer de tous les opérateurs de comparaison. N'hésitez pas à vous aider de la section « [Comprendre comment paramètrer ses filtres](filters-howto) ».
 
@@ -469,12 +463,12 @@ Il est possible de déléguer votre compte e-mail à un autre compte e-mail. Cel
 
 ![email](images/zimbra-delegation.png){.thumbnail}
 
-**Délégués (1)**. Pour déléguer votre compte e-mail à un autre compte, cliquez sur `Ajouter des délégués`{.action}.
+**(1) Délégués**. Pour déléguer votre compte e-mail à un autre compte, cliquez sur `Ajouter des délégués`{.action}.
 
-- **Envoyer comme »** : la personne déléguée pourra envoyer un e-mail avec votre adresse e-mail, exactement comme si vous l'aviez envoyé. Le destinataire n'aura pas mention de l'adresse e-mail du délégué.
+- **Envoyer comme** : la personne déléguée pourra envoyer un e-mail avec votre adresse e-mail, exactement comme si vous l'aviez envoyé. Le destinataire n'aura pas mention de l'adresse e-mail du délégué.
 - **Envoyer de la part de** : la personne déléguée pourra envoyer un e-mail avec son adresse e-mail avec une mention « de la part de » votre adresse e-mail. Le destinataire a donc la mention des deux adresses e-mail impliquées dans l'échange.
 
-**Paramètres d'envoi du délégué (2)**. Lorsque vous déléguez votre adresse e-mail à une autre, vous pouvez :
+**(2) Paramètres d'envoi du délégué**. Lorsque vous déléguez votre adresse e-mail à une autre, vous pouvez :
 
 - **Enregistrer les mails envoyés dans mon dossier « Envoyés »** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans votre dossier « Envoyés ».
 - **Enregistrer les mails envoyés dans le dossier « Envoyés » du délégué** : si la personne déléguée sur votre compte envoie un e-mail depuis votre adresse e-mail, cet e-mail apparaîtra dans son dossier « Envoyés ».
