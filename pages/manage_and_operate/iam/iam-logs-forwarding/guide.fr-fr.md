@@ -62,7 +62,8 @@ L'API nécessite un `streamId`, qui correspond au flux de données cible de votr
 
 > [!primary]
 > Vous pouvez retrouvez votre `streamId` dans l'espace client Logs Data Platform :
-> - Rendez-vous sur la page « Flux de données » de votre compte Logs Data Platform. Dans le tableau qui s'affiche, cliquez sur les trois points à droite du flux de donnés cible et ensuite cliquez sur « Modifier ».
+>
+> - Rendez-vous sur la page `Flux de données`{.action} de votre compte Logs Data Platform. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite du flux de donnés cible puis cliquez sur `Modifier`{.action}.
 >   
 > ![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
 > 
@@ -82,7 +83,7 @@ Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platfor
 
 Maintenant que vos logs de compte OVHcloud sont ingérés et stockés dans votre flux Logs Data Platform, vous pouvez interroger vos logs et construire des tableaux de bord pour avoir une représentation graphique à l'aide de l'interface utilisateur web de Graylog.
 
-- Récupérer l'utilisateur admin (nom du service Logs Data Platform) et le mot de passe sur la page d'accueil de votre compte Logs Data Platform.
+- Récupérez l'utilisateur admin (nom du service Logs Data Platform) et le mot de passe sur la page d'accueil de votre compte Logs Data Platform.
   
 ![Access Graylog](images/access_graylog.png){.thumbnail}
 
