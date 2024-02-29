@@ -32,7 +32,7 @@ Once you have subscribed to OVHcloud Object storage service, use best practices 
 
 You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.<br>
 Security measures deployed by OVHcloud (especially network protection) aren't disabled, because such an audit's purpose is to demonstrate a clear vision of the security level of the customer's infrastructure.<br>
-You are not authorized to use your service to scan other infrastructures.
+You are not authorized to use your service to scan other infrastructures.<br>
 Tests could be made on the service API and the web page for spark dashboard (stateless).
 
 ## 3.SLA
