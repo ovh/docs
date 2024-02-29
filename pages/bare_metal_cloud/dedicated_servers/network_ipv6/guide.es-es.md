@@ -1,310 +1,212 @@
 ---
-title: 'Configurar la IPv6 en servidores dedicados'
-excerpt: 'Aprenda a configurar direcciones IPv6 en nuestra infraestructura'
-updated: 2023-07-04
+title: 'IPv6 auf einem Dedicated Server konfigurieren'
+excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren'
+updated: 2024-02-26
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-## Objetivo
+## Ziel
 
-El protocolo de internet versión 6 (IPv6) es la última versión del protocolo de internet (IP). Ha sido diseñado para hacer frente a la creciente escasez de direcciones de su predecesor, el IPv4, utilizando direcciones de 128 bits en vez de 32 bits. La mayoría de los servidores dedicados de OVHcloud vienen con un bloque /64 de IPv6, excepto los servidores High Grade y Scaledo que vienen con un bloque /56 de IPv6. Esto representa más de 18 trillones de direcciones IP a su disposición.
+Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol (IP). Die Ausschöpfung der verfügbaren IPv4-Adressen wird schon lange erwartet. Hier soll die neue Version Abhilfe schaffen, indem statt der bisherigen 32 Bit der IPv4-Adressen 128-Bit-Adressen verwendet werden. Die meisten OVHcloud Dedicated Server werden mit einem /64 IPv6-Block geliefert, mit Ausnahme von High Grade und Scale, die mit einem /56 IPv6-Block geliefert werden. Das entspricht über 18 Trillionen IP-Adressen, aus denen Sie wählen können.
 
-**Esta guía explica cómo configurar las direcciones IPv6 en su servidor siguiendo varios ejemplos.**
+**Diese Anleitung erklärt anhand verschiedener Beispiele, wie Sie IPv6-Adressen auf Ihrem Server konfigurieren.**
 
 > [!warning]
->OVHcloud le ofrece una serie de servicios cuya configuración y gestión recaen sobre usted. Por lo tanto, es su responsabilidad asegurarse de que estos servicios funcionen correctamente.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
->El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
-## Requisitos
+## Voraussetzungen
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) en su cuenta de OVHcloud
-- Tener toda la información relativa a su IPv6 (prefijo, puerta de enlace, etc.)
-- Tener conocimientos básicos de redes y de [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben Ihre IPv6-Informationen bereit (Präfix, Gateway etc.)
+- Sie verfügen über Grundkenntnisse im Umgang mit [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) und in der Netzwerkverwaltung.
 
 > [!warning]
-> Tenga en cuenta que los servidores Kimsufi se entregan con un único bloque IPv6 (/128). IPv6 se configurará automáticamente al instalar el sistema operativo.
+> Beachten Sie, dass die Server der Reihe Kimsufi mit einem einzigen IPv6 Block (/128) bereitgestellt werden. IPv6 wird bei der Installation des Betriebssystems automatisch eingerichtet.
 >
 
-## Procedimiento
+## In der praktischen Anwendung
 
-Si está utilizando una plantilla de OVHcloud para instalar el servidor en un sistema operativo Linux, deberá configurar la primera dirección IPv6 (principal) en el servidor.
+Die folgenden Abschnitte enthalten die Konfigurationen der derzeit von uns angebotenen Distributionen sowie die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt besteht immer darin, sich via SSH oder GUI (RDP für einen Windows Server) mit Ihrem Server zu verbinden.
 
-Por ejemplo, si hemos asignado al servidor el rango IPv6: `2607:5300:xxxx:xxxx:/64` puede utilizar la IPv6 principal de su servidor como IPv6: `2607:5300:xxxx:xxxx::1/64`.
+Auf Dedicated Servern ist die erste IPv6 als 2607:5300:xxxx:xxxx::/64 deklariert. Wenn wir Ihrem Server beispielsweise den IPv6-Bereich `2607:5300:abcd:efgh::/64` zugewiesen haben, lautet die erste IPv6-Adresse Ihres Servers `2607:5300:abcd:efgh::/64`.
 
-### Puerta de enlace predeterminada (excepto servidores High Grade y Scale)
+Standardmäßig ist die erste IPv6 auf den meisten neueren Linux-Distributionen konfiguriert, die wir für die Installation anbieten. Das Gateway ist also bereits in der Konfigurationsdatei enthalten. In den meisten Fällen müssen Sie es nicht manuell hinzufügen.
 
-La puerta de enlace por defecto de su bloque IPv6 (IPv6_GATEWAY) seguirá siempre la nomenclatura xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenga en cuenta que los "0" de cabeza pueden eliminarse en una IPv6 para evitar errores al determinar la pasarela.
+Bevor Sie beginnen, empfehlen wir Ihnen die folgende Tabelle, um bei allen Operationen die gleichen Termini zu verwenden. Er bezieht sich auf Begriffe, die wir in dieser Anleitung verwenden werden:
 
-Por ejemplo,
+|Bezeichnung|Beschreibung|Beispiel|
+|---|---|---|
+|YOUR_IPV6|Dies ist eine IPv6-Adresse des IPv6-Blocks, der Ihrem Server zugewiesen ist|2607:5300:xxxx:xxxx::1|
+|IPv6_PREFIX|Dies ist das Präfix (oder *netmask*) Ihres IPv6-Blocks, normalerweise 64|2607:5300:xxxx:xxxx::/64|
+|IPv6_GATEWAY|Dies ist das Gateway Ihres IPv6-Blocks|2607:5300:xxxx:ff:ff:ff:ff oder fe80::1|
 
-- El rango IPv6 del servidor es `2607:5300:60:62ac::/64` o `2607:5300:60:62ac:0000:0000:0000:0000/64`. Por lo tanto, la IPv6_GATEWAY será `2607:5300:60:62FF:FF:FF:FF:FF`.
-- El rango IPv6 del servidor es `2001:41D0:1:46e::/64` o `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Por lo tanto, la IPv6_GATEWAY será `2001:41D0:1:4FF:FF:FF:FF:FF`.
+In unseren Beispielen verwenden wir den Texteditor `nano`. Sie können natürlich auch einen beliebigen Texteditor verwenden.
 
-La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](/pages/manage_and_operate/api/first-steps). 
+### Standardgateway (Gateway)
 
-Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
+Der erste Schritt besteht darin, das Ihrem Server zugewiesene IPv6-Gateway abzurufen. Es gibt zwei Möglichkeiten. Fahren Sie mit der Methode fort, die Sie verwenden möchten.
+
+- [Netzwerkinformationen über das Kundencenter abrufen](#viacontrolpanel).
+- [Netzwerkinformationen über API abrufen](#viaapi).
+
+#### Über Ihr Kundencenter <a name="viacontrolpanel"></a>
+
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Bereich `Dedicated Server`{.action} aus.
+
+Das Ihrem Server zugewiesene IPv6-Gateway wird im Bereich `Netzwerk` des Tab `Allgemeine Informationen`{.action} angezeigt. Nachdem Sie die Datei kopiert haben, fahren Sie mit Schritt 2 "[IPv6-Konfiguration anwenden](#applyipv6)" fort.
+
+![configureIPv6](images/IPv6_information.png){.thumbnail}
+
+#### Über die OVHcloud API <a name="viaapi"></a>
+
+Eine weitere Möglichkeit, die Netzwerkinformationen Ihres Servers abzurufen, ist die Verwendung der [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+
+Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
 
 > [!api]
 >
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
+Die Header "0" können in einem IPv6-Gateway gelöscht werden.
+
+Beispiel
+
+IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60:62FF:FF:FF:FF:FF` geschrieben werden.
+
 > [!warning]
 > 
-> Antes de editar un archivo de configuración, cree siempre una copia de seguridad del original para poder volver si surge algún problema. 
+> Erstellen Sie vor der Änderung einer Konfigurationsdatei immer ein Backup des Originals, um es im Fehlerfall wiederherstellen zu können. 
 > 
 
-### Puerta de enlace predeterminada para servidores High Scale y Scale
+### Debian und Debian-basierte Betriebssysteme (außer Debian 12)
 
-La puerta de enlace predeterminada de su bloque IPv6 (IPv6_GATEWAY) permanece `fe80:0000:0000:0000:0000:0000:0000:0001`. Tenga en cuenta que los "0" de cabeza se pueden eliminar en una IPv6 para evitar errores.
-
-En este caso, la puerta de enlace IPv6 predeterminada se puede escribir de la siguiente manera: `fe80::1`.
-
-### Sistemas operativos Debian y basados en Debian
+Die folgende Beispielkonfiguration basiert auf Debian 11 (Bullseye).
 
 > [!warning]
 >
-> Antes de seguir los pasos que se indican a continuación, es muy recomendable que deshabilite la autoconfiguración IPv6 y el «router advertising» para prevenir problemas conocidos. Para ello, debe añadir las siguientes líneas a su archivo `sysctl.conf` que se encuentra en /etc/sysctl.conf:
+> Es wird ausdrücklich empfohlen, dass Sie vor Befolgen der nachstehenden Schritte die IPv6-Autokonfiguration und -Router-Ankündigung deaktivieren. Fügen Sie hierzu die folgenden Zeilen Ihrer `sysctl.conf`-Datei hinzu, die sich in /etc/sysctl.conf befindet:
 > 
 > `net.ipv6.conf.all.autoconf=0`
 > 
 > `net.ipv6.conf.all.accept_ra=0`
 > 
-> Una vez realizado esto, puede aplicar estas reglas ejecutando el siguiente comando: `sh sysctl -p`.
+> Anschließend können Sie diese Regeln über folgenden Befehl anwenden: `sudo sysctl -p`.
 > 
 
-#### 1: Conectarse a su servidor por SSH
+#### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-[Más información en esta guía](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
+```sh
+~# ssh user@serverIP
+```
 
-#### 2: Abrir el archivo de configuración de red de su servidor
+#### Schritt 2: Backup erstellen
 
-Su archivo de configuración de red de su servidor se encuentra en `/etc/network/interfaces` o `/etc/network/interfaces.d`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo. Realice una copia de seguridad antes de modificar cualquier archivo de configuración.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/network/interfaces.d`. Erstellen Sie eine Sicherungskopie der Datei mit einem der folgenden Befehle, bevor Sie den Vorgang fortsetzen:
 
-#### 3: Modificar el archivo de configuración de red
+```sh
+~# sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
 
-Modifique el archivo para que quede como en el siguiente ejemplo. En este ejemplo, la interfaz de red se llama `eth0`. La interfaz de su servidor puede variar.
+#### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
+
+Ändern Sie keine vorhandenen Zeilen in der Konfigurationsdatei. Fügen Sie die Zeilen für Ihre IPv6-Konfiguration hinzu und ersetzen Sie `YOUR_IPv6` und `IPv6_PREFIX` durch Ihre eigenen Werte. In diesem Beispiel heißt die Netzwerkschnittstelle `eth0`. Das Interface Ihres Servers kann abweichen.
+
+```console
+auto eth0
+iface eth0 inet dhcp
+    accept_ra 0
+
+iface eth0 inet6 static
+    address YOUR_IPv6
+    netmask IPv6_PREFIX
+
+# control-alias eth0
+iface eth0 inet6 static
+    address 2607:5300:xxxx:xxxx::/xx
+    dns-nameservers 2001:41d0:3:163::1
+    gateway 2607:5300:xxxx:xxff:ff:ff:ff:ff
+```
+
+**Debian 10**
 
 ```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
-    netmask 128
+    netmask 64
 
 post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0 
 post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY 
 pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
-Se pueden añadir direcciones IPv6 adicionales añadiendo la línea `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` al archivo.
 
-#### 4: Guardar el archivo y aplicar los cambios
+Zusätzliche IPv6-Adressen können mit folgenden Zeilen in der Konfigurationsdatei hinzugefügt werden: `up ip -6 addr add ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`, `up ip -6 addr add ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0` usw.
 
-Guarde los cambios realizados en el archivo y reinicie la red o el servidor para aplicar los cambios.
+Um sicherzustellen, dass IPv6 aktiviert oder deaktiviert ist, wenn die Schnittstelle eth0 aktiviert oder deaktiviert ist, müssen Sie folgende Zeile zur Konfiguration hinzufügen:
 
-#### 5: Comprobar la conectividad de la IPv6
+`down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`<br>
+`down ip -6 addr del ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`
 
-Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
-
-```bash
-ping6 -c 4 2001:4860:4860::8888
-
->>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
-
->>> --- 2001:4860:4860::8888 ping statistics ---
->>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
->>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
-```
-
-Si no consigue hacer ping a esta dirección IPv6, compruebe su configuración e inténtelo de nuevo. Asegúrese también de que la maquina que está comprobando esté conectada con IPv6. Si aun así sigue sin funcionar, compruebe su configuración en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
-
-### Fedora 26 y superior
-
-> [!warning]
->
-> Este ejemplo se ha realizado con CentOS 7.0. Los resultados pueden variar al usar otros derivados de Redhat.
->
-
-#### 1: Conectarse a su servidor por SSH
-
-Más información en [esta guía](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
-
-#### 2: Abrir el archivo de configuración de red de su servidor
-
-Su archivo de configuración de red de su servidor se encuentra en `/etc/sysconfig/network-scripts/ifcfg-eth0`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo.
-
-#### 3: Modificar el archivo de configuración de red
-
-Modifique el archivo para que quede como en el siguiente ejemplo. En este ejemplo, la interfaz de red se llama eth0. La interfaz de su servidor puede variar. Además hemos omitido la configuración del IPv4 Failover para evitar confusiones, pero la configuración de la IPv6 se hace en el mismo archivo de configuración.
+**Beispielkonfiguration:**
 
 ```console
-IPV6INIT=yes
-IPV6_AUTOCONF=no
-IPV6_DEFROUTE=yes
-IPV6_FAILURE_FATAL=no
-IPV6ADDR=YOUR_IPv6/64
-IPV6ADDR_SECONDARIES=YOUR_2nd_IPv6/64 YOUR_3rd_IPv6/64
-IPV6_DEFAULTGW=IPv6_GATEWAY
-```
-Si necesita más direcciones IPv6 en la máquina, añádalas en la línea `IPV6ADDR_SECONDARIES`, separadas por espacios en blanco.
+auto eth0
+iface eth0 inet dhcp
+    accept_ra 0
 
-#### 4: Guardar el archivo y aplicar los cambios
+iface eth0 inet6 static
+    address 2607:5300:adce:f2cd::1
+    netmask 64
 
-Guarde los cambios realizados en el archivo y reinicie la red o el servidor para aplicar los cambios.
-
-#### 5: Comprobar la conectividad de la IPv6
-
-Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
-
-```bash
-ping6 -c 4 2001:4860:4860::8888
-
->>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
-
->>> --- 2001:4860:4860::8888 ping statistics ---
->>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
->>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+# control-alias eth0
+iface eth0 inet6 static
+    address 2607:5300:xxxx:xxxx::/xx
+    dns-nameservers 2001:41d0:3:163::1
+    gateway 2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
 
-Si no consigue hacer ping a esta dirección IPv6, compruebe su configuración e inténtelo de nuevo. Asegúrese también de que la maquina que está comprobando esté conectada con IPv6. Si aun así sigue sin funcionar, compruebe su configuración en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
-
-### FreeBSD
-
-#### 1: Conectarse a su servidor por SSH
-
-Más información en [esta guía](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
-
-#### 2: Abrir el archivo de configuración de red de su servidor
-
-Su archivo de configuración de red de su servidor se encuentra en `/etc/rc.conf`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo.
-
-#### 3: Modificar el archivo de configuración de red
-
-Modifique el archivo para que quede como en el siguiente ejemplo. En este ejemplo, la interfaz de red se llama em0. La interfaz de su servidor puede variar.
+Zusätzliche IPv6-Adressen hinzufügen:
 
 ```console
-IPv6_activate_all_interfaces="YES" 
-IPv6_defaultrouter="IPv6_GATEWAY" 
-ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
-ifconfig_em0_alias0="inet6 IPv6_Address_2 prefixlen 64"
-ifconfig_em0_alias1="inet6 IPv6_Address_3 prefixlen 64"
+auto eth0
+iface eth0 inet dhcp
+    accept_ra 0
+
+iface eth0 inet6 static
+    address 2607:5300:adce:f2cd::1
+    netmask 64
+    up ip -6 addr add 2607:5300:adce:f2cd::2/64 dev eth0
+    up ip -6 addr add 2607:5300:adce:f2cd::3/64 dev eth0
+    down ip -6 addr del 2607:5300:adce:f2cd::2/64 dev eth0
+    down ip -6 addr del 2607:5300:adce:f2cd::3/64 dev eth0
+
+# control-alias eth0
+iface eth0 inet6 static
+    address 2607:5300:xxxx:xxxx::/xx
+    dns-nameservers 2001:41d0:3:163::1
+    gateway 2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
 
-#### 4: Guardar el archivo y reiniciar el servidor
+#### Schritt 4: Datei speichern und Änderungen anwenden
 
-Guarde los cambios realizados en el archivo y reinicie la red o el servidor para aplicar los cambios.
+Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Netzwerk oder Ihren Server neu, um die Änderungen anzuwenden.
 
-#### 5: Comprobar la conectividad de la IPv6
-
-Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
-
-```bash
-ping6 -c 4 2001:4860:4860::8888
-
->>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=55 time=23.6 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=55 time=23.8 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=55 time=23.9 ms
->>> 64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=55 time=23.8 ms
-
->>> --- 2001:4860:4860::8888 ping statistics ---
->>> 1 packets transmitted, 1 received, 0% packet loss, time 0ms
->>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
+```sh
+~# sudo /etc/init.d/networking restart
 ```
 
-Si no consigue hacer ping a esta dirección IPv6, compruebe su configuración e inténtelo de nuevo. Asegúrese también de que la maquina que está comprobando esté conectada con IPv6. Si aun así sigue sin funcionar, compruebe su configuración en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+#### Schritt 5: IPv6-Konnektivität testen
 
-### Ubuntu 18.04 y 20.04
+Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
 
-#### 1: Conectarse a su servidor por SSH
-
-Más información en [esta guía](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
-
-#### 2: Abrir el archivo de configuración de red de su servidor
-
-Abra el archivo de configuración de la red, situado en `/etc/netplan`. Para demostrarlo, nuestro archivo se denomina 50-cloud-init.yaml.
-
-#### 3: Modificar el archivo de configuración de red
-
-Mediante un editor de texto, modifique el archivo 50-cloud-init.yaml añadiendo las siguientes líneas a las secciones correspondientes, como se muestra en el ejemplo a continuación.
-
-Sustituya los valores genéricos (YOUR_IPV6, IPV6_PREFIX e IPV6_GATEWAY) y la interfaz de red (si el servidor no utiliza enp1s0) por sus valores específicos.
-
-```yaml
-network:
-    version: 2
-    ethernets:
-        enp1s0:
-            dhcp4: true
-            match:
-                macaddress: 00:04:0p:8b:c6:30
-            set-name: enp1s0
-            addresses:
-              - YOUR_IPV6/IPv6_PREFIX
-            gateway6: IPv6_GATEWAY
-            routes:
-                - to: IPv6_GATEWAY
-                  scope: link
-```
-
-### Ubuntu 21.10 y 22.04
-
-El archivo de configuración debe tener el siguiente formato:
-
-```yaml
-network:
-    version: 2
-    ethernets:
-        enp1s0:
-            dhcp4: true
-            match:
-                macaddress: 00:04:0p:8b:c6:30
-            set-name: enp1s0
-            addresses:
-              - YOUR_IPV6/IPv6_PREFIX
-            routes:
-                - to: ::/0
-                  via: IPv6_GATEWAY
-                - to: IPv6_GATEWAY
-                  scope: link
-```
-
-> [!warning]
->
-> Es importante respetar la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No utilice la tecla de tabulación para crear el espacio. Sólo es necesaria la tecla espacio. 
->
-
-#### 4: Probar y aplicar la configuración
-
-Para probar su configuración, utilice el siguiente comando:
-
-```bash
-netplan try
-```
-
-Si es correcta, puede aplicarla con el siguiente comando:
-
-```bash
-netplan apply
-```
-
-#### 5: Comprobar la conectividad de la IPv6
-
-Puede comprobar la conectividad de la IPv6 ejecutando los comandos siguientes:
-
-```bash
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -318,42 +220,412 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
-### Windows Server 2012
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-#### 1: Conéctese a su servidor por RDP
+### Fedora 38 und höhere Versionen
 
-Más información en [esta guía](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server).
+Die folgende Beispielkonfiguration basiert auf Fedora 39.
 
-#### 2: Abrir la configuración de red de su servidor
-Primero, haga clic derecho en el icono de red en el área de notificaciones para ir a la sección `Red y recursos compartidos`{.action}.
+Fedora verwendet jetzt Schlüsseldateien (*keyfiles*).
+Fedora hat zuvor Netzwerkprofile verwendet, die NetworkManager im ifcfg-Format im Verzeichnis `/etc/sysconfig/network-scripts/` gespeichert hat.<br>
+Da die ifcfg nun veraltet ist, erstellt NetworkManager die neuen Profile in diesem Format nicht mehr standardmäßig. Die Konfigurationsdatei befindet sich nun unter `/etc/NetworkManager/system-connections/`.
 
-![Red y recursos compartidos](images/ipv6_network_sharing_center.png){.thumbnail}
+In diesem Beispiel heißt unsere Datei `cloud-init-eno1.nmconnection`.
 
-Haga clic en `Cambiar configuración del adaptador`{.action}.
+#### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-![Cambiar configuración del adaptador](images/ipv6_change_adapter_settings.png){.thumbnail}
+```sh
+~# ssh user@serverIP
+```
 
-Haga clic derecho en su adaptador de red, y seleccione `Propiedades`{.action}.
+#### Schritt 2: Backup erstellen
 
-![Propiedades del adaptador de red](images/ipv6_network_adapter_properties.png){.thumbnail}
+> [!primary]
+>
+> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Bitte ersetzen Sie dies durch den Namen Ihrer Datei.
+>
 
-Seleccione `Protocolo de internet versión 6`{.action}, y haga clic en `Propiedades`{.action}.
+Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zurückgehen können:
 
-![Propiedades](images/ipv6_properties.png){.thumbnail}
-#### 3: Modificar la configuración de red 
+```sh
+~# sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
 
-Introduzca su configuración IPv6 (`Dirección IPv6`y `Puerta de enlace por defecto`) y haga clic en `OK`{.action}.
+#### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
-![Propiedades](images/ipv6_configuration.png){.thumbnail}
+Bearbeiten Sie die Datei, indem Sie die folgenden Zeilen hinzufügen, ohne die Originaldatei zu ändern. Ersetzen Sie die generischen Elemente (d. h. `YOUR_IPV6` und `IPv6_PREFIX`) durch Ihre spezifischen Werte. Wir haben auch die IPv4-Konfiguration weggelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration erfolgt in derselben Konfigurationsdatei.
 
-### Resolución de incidencias
+```console
+[ipv6]
+method=auto
+may-fail=true
+address1=2607:5300:xxxx:xxxx::/xx
+address2=YOUR_IPV6/IPv6_PREFIX
+gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
+```
 
-Si después de comprobar su conexión las incidencias persisten, genere una solicitud de asistencia para revisar su configuración. Será necesario que indique:
+Wenn Sie mehr IPv6-Adressen konfigurieren müssen, sollte die Konfiguration wie folgt aussehen:
 
-- El nombre y la versión del sistema operativo que está utilizando en su servidor.
-- El nombre y la carpeta del archivo de configuración de red. 
-- El contenido de ese archivo. 
+```console
+[ipv6]
+method=auto
+may-fail=true
+address1=2607:5300:xxxx:xxxx::/xx
+address2=ADDITIONAL_IPV6_1/IPv6_PREFIX
+address3=ADDITIONAL_IPV6_2/IPv6_PREFIX
+gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
+```
 
-## Más información
+**Beispielkonfiguration:**
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+```sh
+~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+Anschließend bearbeiten wir die Konfigurationsdatei:
+
+```console
+[ipv6]
+method=auto
+may-fail=true
+address1=2607:5300:xxxx:xxxx::/xx
+address2=2607:5300:adce:f2cd::1/64
+gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
+```
+
+Zusätzliche IPv6-Adressen hinzufügen:
+
+```console
+[ipv6]
+method=auto
+may-fail=true
+address1=2607:5300:xxxx:xxxx::/xx
+address2=2607:5300:adce:f2cd::1/64
+address3=2607:5300:adce:f2cd::2/64
+gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
+```
+
+#### Schritt 4: Datei speichern und Änderungen anwenden
+
+Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Netzwerk oder Ihren Server neu, um die Änderungen anzuwenden.
+
+```sh
+~# sudo systemctl restart NetworkManager
+```
+
+#### Schritt 5: IPv6-Konnektivität testen
+
+Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
+
+```sh
+ping6 -c 4 2001:4860:4860::8888
+
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
+
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
+```
+
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+### Debian 12, Ubuntu 20.04 und höhere Versionen
+
+Die folgende Beispielkonfiguration basiert auf Ubuntu 22.04 (Jammy Jellyfish).
+
+Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. Standardmäßig heißt die Hauptkonfigurationsdatei `50-cloud-init.yaml`.
+
+#### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
+
+```sh
+~# ssh user@serverIP
+```
+
+#### Schritt 2: Netzwerkkonfigurationsdatei erstellen
+
+Am besten erstellen Sie eine separate Konfigurationsdatei mit der Erweiterung .yaml, um IPv6-Adressen im Verzeichnis `/etc/netplan/` zu konfigurieren. Auf diese Weise können Sie Änderungen im Falle eines Fehlers leicht rückgängig machen.
+
+In unserem Beispiel heißt unsere Datei `51-cloud-init-ipv6.yaml`:
+
+```sh
+~# sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
+```
+
+#### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
+
+Bearbeiten Sie mithilfe eines Texteditors die Datei `51-cloud-init-ipv6.yaml`, indem Sie der Datei die folgenden Zeilen hinzufügen, wie im folgenden Beispiel gezeigt.
+
+Ersetzen Sie die generischen Elemente (d. h. `YOUR_IPV6` und `IPV6_PREFIX`) sowie das Netzwerkinterface (wenn Ihr Server **eno3** nicht verwendet) durch Ihre spezifischen Werte.
+
+```yaml
+network:
+    version: 2
+    ethernets:
+         eno3:
+            dhcp6: no
+            match:
+              name: eno3
+            addresses:
+              - YOUR_IPV6/IPV6_PREFIX
+```
+
+Wenn Sie mehrere IPv6-Adressen konfigurieren müssen, sollte die Konfiguration folgendermaßen aussehen:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno3:
+            dhcp6: no
+            match:
+              name: eno3
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+              - ADDITIONAL_IPV6_1/IPv6_PREFIX
+              - ADDITIONAL_IPV6_2/IPv6_PREFIX
+```
+
+> [!warning]
+>
+> Es ist wichtig, dass die Zeilenausrichtung jedes Elements dieser Datei, wie im Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Tabulationstaste, um den Abstand zu erzeugen. Nur die Leertaste ist notwendig.
+>
+
+**Beispielkonfiguration:**
+
+```sh
+~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+```
+
+Anschließend bearbeiten wir die Konfigurationsdatei:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+          eno3:
+            dhcp6: no
+            match:
+              name: eno3
+            addresses:
+              - 2607:5300:adce:f2cd::1/64
+```
+
+Für mehrere IPV6-Adressen:
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno3:
+            dhcp6: no
+            match:
+              name: eno3
+            addresses:
+              - 2607:5300:adce:f2cd::1/64
+              - 2607:5300:adce:f2cd::2/64
+              - 2607:5300:adce:f2cd::3/64
+```
+
+#### Schritt 4: Konfiguration testen und anwenden
+
+Sie können Ihre Konfiguration mit folgendem Befehl testen:
+
+```sh
+~# sudo netplan try
+```
+
+Ist der Befehl korrekt, verwenden Sie den folgenden Befehl:
+
+```sh
+~# sudo netplan apply
+```
+
+#### Schritt 5: IPv6-Konnektivität testen
+
+Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
+
+```sh
+ping6 -c 4 2001:4860:4860::8888
+
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
+
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
+```
+
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+### CentOS 7, AlmaLinux (8 & 9) und Rocky Linux (8 & 9)
+
+Die folgende Beispielkonfiguration basiert auf CentOS 7.
+
+Die Netzwerkkonfigurationsdatei befindet sich im Verzeichnis `/etc/sysconfig/network-scripts`. In unserem Beispiel heißt es `ifcfg-eth0`.
+
+#### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
+
+```sh
+~# ssh user@serverIP
+```
+
+#### Schritt 2: Backup erstellen
+
+> [!primary]
+>
+> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Bitte passen Sie die Datei an Ihren Dateinamen an.
+>
+
+Erstellen Sie zunächst eine Kopie der Konfigurationsdatei, damit Sie jederzeit zur vorherigen Version zurückkehren können:
+
+```sh
+~# sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+```
+
+#### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
+
+Fügen Sie in der geöffneten Konfigurationsdatei die folgenden Zeilen hinzu, falls diese fehlen. Ersetzen Sie die generischen Elemente (d. h. `YOUR_IPv6`, `IPV6_GATEWAY` und `IPV6_PREFIX`) durch Ihre spezifischen Werte. Außerdem haben wir die IPv4-Konfiguration weggelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration wird in derselben Konfigurationsdatei vorgenommen.
+
+```console
+IPV6INIT=yes
+IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
+IPV6_DEFAULTGW=IPV6_GATEWAY
+```
+
+Bei Alma und Rocky Linux kann der Inhalt der Konfigurationsdatei von dem oben genannten abweichen. In diesem Fall genügt es, die fehlenden Elemente hinzuzufügen. Ersetzen Sie nichts in der Originaldatei.
+
+Wenn Sie weitere IPv6-Adressen auf Ihrer Maschine benötigen, fügen Sie diese in der Zeile `IPV6ADDR_SECONDARIES` durch Leerzeichen getrennt hinzu.
+
+```console
+IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFIX etc..."
+```
+
+**Beispielkonfiguration:**
+
+```sh
+~# sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
+```
+
+Anschließend bearbeiten wir die Konfigurationsdatei:
+
+```console
+IPV6INIT=yes
+IPV6ADDR=2607:5300:adce:f2cd::/64
+IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
+```
+
+Für mehrere IPV6-Adressen:
+
+```console
+IPV6INIT=yes
+IPV6ADDR=2607:5300:adce:f2cd::
+IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
+IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
+```
+
+#### Schritt 4: Datei speichern und Änderungen übernehmen
+
+Speichern Sie die Änderungen in der Datei, und starten Sie das Netzwerk dann mit einem der folgenden Befehle neu:
+
+```sh
+~# sudo systemctl restart network
+```
+
+**Für AlmaLinux und Rocky Linux**
+
+```sh
+~# sudo systemctl restart NetworkManager
+```
+
+Sie können Ihren Server auch neu starten, um die Änderungen zu übernehmen.
+
+#### Schritt 5: IPv6-Konnektivität testen
+
+Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
+
+```sh
+ping6 -c 4 2001:4860:4860::8888
+
+PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
+64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=3 ttl=57 time=4.08 ms
+64 bytes from 2001:4860:4860::8888: icmp_seq=4 ttl=57 time=4.07 ms
+
+--- 2001:4860:4860::8888 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
+```
+
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+### Windows Server 2016 und höhere Versionen
+
+#### Schritt 1: RDP für die Verbindung mit Ihrem Server verwenden
+
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#auf-dem-server-einloggen).
+
+#### Schritt 2: Netzwerkkonfiguration Ihres Servers öffnen
+
+Klicken Sie zuerst mit der rechten Maustaste auf das Netzwerksymbol im Meldungsbereich, um zum `Netzwerk- und Freigabecenter`{.action} zu gelangen.
+
+![Netzwerk- und Freigabecenter](images/ipv6_network_sharing_center.png){.thumbnail}
+
+Klicken Sie auf `Adaptereinstellungen ändern`{.action}.
+
+![Adaptereinstellungen ändern](images/ipv6_change_adapter_settings.png){.thumbnail}
+
+Klicken Sie mit der rechten Maustaste auf Ihren Netzwerkadapter und klicken Sie dann auf `Eigenschaften`{.action}.
+
+![Netzwerkadapter Eigenschaften](images/ipv6_network_adapter_properties.png){.thumbnail}
+
+Wählen Sie `Internetprotokoll, Version 6 (TCP/IPv6)`{.action} aus und klicken Sie auf `Eigenschaften`{.action}.
+
+![Eigenschaften](images/ipv6_properties.png){.thumbnail}
+
+#### Schritt 3: Netzwerkkonfiguration bearbeiten 
+
+Geben Sie Ihre IPv6-Konfiguration ein (`IPv6-Adresse` und `Standardgateway`), setzen Sie einen Haken bei `Einstellungen beim Beenden bestätigen` und klicken Sie auf `OK`{.action}, um Ihre Änderungen zu bestätigen.
+
+![Eigenschaften](images/ipv6_configuration.png){.thumbnail}
+
+### Troubleshooting
+
+Sie haben Ihre IPv6 konfiguriert, aber nichts funktioniert?
+
+Es ist ganz einfach festzustellen, ob der Fehler in der durchgeführten Konfiguration oder im Netzwerk von OVHcloud liegt.
+
+[Versetzen Sie Ihren Server zunächst in den Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+Lassen Sie sich dann von den folgenden Befehlen inspirieren, um Ihr IPv6 nicht-persistent zu konfigurieren, indem Sie "YOUR_IPV6", "IPV6_PREFIX" und "IPV6_GATEWAY" durch Ihre eigenen Informationen ersetzen:
+
+```sh
+ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
+ip -6 route add IPV6_GATEWAY dev eth0
+ip -6 route add default via IPV6_GATEWAY dev eth0
+```
+
+Testen Sie Ihr Netzwerk erneut mit einem Ping6, zum Beispiel:
+
+```sh
+ping6 ipv6.google.com
+```
+
+Wenn Ihr Server antwortet, wurde wahrscheinlich einer der Schritte Ihrer ursprünglichen Konfiguration nicht genau ausgeführt.
+
+Zögern Sie in jedem Fall nicht, sich an [unser Support-Team](https://help.ovhcloud.com/csm?id=csm_get_help) zu wenden, um Ihre Konfigurationen zu überprüfen. Es müssen folgende Angaben gemacht werden:
+
+- Name und Version des auf Ihrem Server verwendeten Betriebssystems
+- Name und Verzeichnis der Netzwerkkonfigurationsdatei 
+- Inhalt dieser Datei 
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
