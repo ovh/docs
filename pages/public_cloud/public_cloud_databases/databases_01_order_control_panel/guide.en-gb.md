@@ -1,7 +1,7 @@
 ---
 title: Getting started with Public Cloud Databases
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
-updated: 2023-12-08
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -21,8 +21,8 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 > [!primary]
 >
-> - Click on `Data Streaming`{.action} will give you access to `Kafka`, `Kafka Connect` and `KafkaMirrorMaker` services.
-> - Click on `Data Analysis` will give you access to `Grafana` and `OpenSearch` services.
+> - Clicking on `Data Streaming`{.action} will give you access to `Kafka`, `Kafka Connect` and `KafkaMirrorMaker` services.
+> - Clicking on `Data Analysis` will give you access to `Grafana` and `OpenSearch` services.
 >
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)

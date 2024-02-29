@@ -1,7 +1,7 @@
 ---
 title: Getting started with Public Cloud Databases via API
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
-updated: 2021-09-03
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -62,7 +62,7 @@ Use this endpoint to create a new database cluster:
 - **version**: the MongoDB version you want to use
 - **nodesPattern**: specify the _flavor_ and _region_, and the number of nodes you want to use
 - **nodeslist**: Leave this parameter undefined. It is another way to specify the list of nodes your cluster uses. As of today, multi-region and flavor-heterogeneous clusters are not supported. Hence it is easier to use **nodesPattern** to specify a number of same-region, same-flavor nodes.
-- **ipRestrictions**: The ip addresses blocks allowed to connect to your cluster.
+- **ipRestrictions**: The IP addresses blocks allowed to connect to your cluster.
 
 > [!primary]
 > For security reasons, the default network configuration does not allow any incoming connections. You must authorize a suitable IP address to successfully access your database.

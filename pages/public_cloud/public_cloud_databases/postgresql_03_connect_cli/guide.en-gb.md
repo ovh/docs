@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Command Line Interface (CLI)
-updated: 2022-04-04
+updated: 2024-02-29
 ---
 
 ## Objective

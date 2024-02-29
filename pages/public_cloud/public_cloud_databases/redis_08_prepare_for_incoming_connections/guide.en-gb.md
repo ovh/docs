@@ -1,7 +1,7 @@
 ---
 title: Redis - Configure your Redis instance to accept incoming connections
 excerpt: Find out how to configure your Redis instance to accept incoming connections
-updated: 2022-03-24
+updated: 2024-02-29
 ---
 
 ## Objective
