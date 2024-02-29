@@ -1,53 +1,9 @@
 # Documentation on Enterprise File Storage with vRack Services by OVHcloud
 
-## Product Definition
-vRack Services cater to the need for private access to managed services within the vRack, providing IP connectivity to vRack on a private addressing scheme. It's important to note:
+# Overview
+OVHcloud stands out for its cutting-edge solutions, in particular vRack and Enterprise File Storage (EFS), based on cutting-edge NetApp ONTAP technology. These solutions meet the crucial needs of businesses in terms of security, performance and scalability of connectivity and storage solutions. The vRack provides secure and private global connectivity, while vRack services, focused on local requirements, ensure compliance and data residency. EFS stands out for its ability to deliver high-performance file storage, which is crucial for enterprise applications requiring constant and rapid access to data. The integration between vRack and EFS, facilitated by Service Endpoint technology, enables a native and secure connection, effectively isolating data traffic from the Internet. This synergy between vRack and EFS from OVHcloud represents a complete solution, addressing the connectivity and storage challenges faced by businesses, while laying the foundations for a secure, high-performance and ready IT infrastructure.
 
-- **vRack is worldwide**, offering global connectivity solutions.
-- **vRack services are local**, ensuring data residency and compliance.
-- **Managed services are linkable to vRack services only in the same zone**, maintaining high performance and security standards.
-
-The first Managed Service compatible with vRack Services is 'Enterprise File Storage' (NetApp).
-
-The vRack Services product consists of three main primitives:
-
-### 1. vRack Services
-
-vRack Services represents the foundational layer of OVHcloud's innovative approach to network architecture, enabling a seamless and secure connection between various managed services within the vRack environment. This product instance, once ordered by customers, acts as the central hub for orchestrating complex network configurations and facilitating the integration of diverse cloud services.
-
-Key aspects of vRack Services include:
-
-- **Global Reach with Local Precision:** While vRack itself provides a worldwide network fabric, vRack Services are designed to cater to specific local requirements, ensuring compliance with regional data residency and security regulations.
-- **Customizable Network Solutions:** Customers have the flexibility to tailor their network infrastructure according to their unique business needs, leveraging vRack Services to create a bespoke environment that supports their operational objectives.
-- **Enhanced Security and Isolation:** At its core, vRack Services prioritize the security of customer data. By enabling private connectivity, it ensures that data traffic between services remains isolated from the public internet and other potential internal network threats.
-- **Simplified Management:** Through the OVHcloud Control Panel, customers can easily manage their vRack Services, from setting up new instances to adjusting their network configurations. This user-friendly interface demystifies complex network management tasks, making it accessible to businesses of all sizes.
-- **Interoperability with Managed Services:** vRack Services are specifically engineered to work seamlessly with a range of OVHcloud managed services, starting with Enterprise File Storage as the first compatible service. This interoperability is crucial for businesses looking to leverage the full spectrum of OVHcloud offerings within a unified network ecosystem.
-
-By opting for vRack Services, businesses can significantly enhance their IT infrastructure's efficiency, security, and scalability, laying a solid foundation for future growth and innovation in the cloud.
-   
-
-
-### 2. Subnet
-   
-The Subnet is a network segment of the associated vRack. It represents an IP addressing scheme inside the private network.
-It is characterized by a **range** (CIDR) and a unique internal **vlan** that allows for the segregation of Subnets within a given vRack Services.
-
-When the customer creates and removes Service Endpoints on a Subnet, it must be ensured that the attributed IPs do not conflict with the customer's IPs used in that **range**.
-
-To do so, the **serviceRange** specifies a smaller subnet reserved for the Managed Service IPs. Customers must not use these IPs.
-
-### 3. Service Endpoint
-
-The Service Endpoint provides customers access to their Managed Services directly from one or several private IPs in the associated vRack.
-
-For each deployed Managed Service, the service provider publishes the number of private IPs required and a custom description for each of them.
-
-Then, those private IPs are dynamically allocated by the vRack Services automation at the primitive creation request.
-
-## Introduction to the Solution
-Enterprise File Storage with vRack Services by OVHcloud is an innovative solution that combines the power of NetApp ONTAP storage with the flexibility and security of the vRack private network by OVHcloud. This solution is designed to securely connect your OVHcloud services and critical business applications to a high-performance file storage service.
-
-## Key Benefits
+# Key Benefits
 
 - **Native Private Connectivity:** Enjoy a secure and isolated connection thanks to integration with the vRack private network by OVHcloud.
 - **High Performance:** The service relies on NetApp ONTAP technology to deliver optimal performance in terms of speed and reliability.
