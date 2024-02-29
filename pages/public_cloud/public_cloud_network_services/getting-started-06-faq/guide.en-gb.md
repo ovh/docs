@@ -15,9 +15,8 @@ Here are the most frequently asked questions about Public Cloud Network Services
 Load Balancer is offered in different sizes (S/M/L) to best fit our customer needs. These different sizes are defined via flavours. As of today, to change the size of your Load Balancer, you will need to spawn a new one, configure it the same way (with the same backends as the old one) and reconnect the Floating IP to the new one. Then the old Load Balancer can be deleted.
 
 ### Can I use my Load Balancer with bare metal servers as a backends? Can I use my Load Balancer with backends in different Public Cloud regions?
-
-Currently, we don't support these modes. For public-to-private loadbalancing, the Gateway products needed to be linked together. As of today, Gateway supports only single-region scope in private networks. It also means that it is limited to Public Cloud and this is the only suggested scope for production-grade architectures.<br>
-As of today, other setups (including cross-universe usage with baremetal servers or cross-region) are not supported.
+Yes, provided you configure the network connectivity between the Load Balancer and your bare metal server (either through the private network (vrack) or through the public IP).
+If your network is configured correctly, a Load Balancer can redirect traffic to member in different Public Cloud regions.
 
 ### Can I connect my Load Balancer to my Managed Kubernetes Service (MKS)?
 
@@ -61,7 +60,16 @@ Gateway is offered in different sizes (S/M/L) to best fit our customer needs. Th
 
 ### Can the Gateway be used with instances of Load Balancer in other regions?
 
-We don't support this mode currently. For the moment, Gateway supports only single-region private networks and this is the only suggested private-network scope for production-grade setups with this product. This also includes the public-to-private Load Balancer use case that requires Gateway. Other setups (including usage with bare metal servers or cross-region) are not supported.
+No, a Gateway can be used only in one region.
+If you have a private network that spreads over multiple regions (thanks to the same VLAN id), you need to spawn a Gateway in each region. 
+For instance the following architecture can be used:
+
+| Region | Private Network VLAN id | Subnet CIDR | DHCP | Gateway IP | Subnet DHCP Allocation Pool | 
+-------|----|------------|------|----------|-----------------------|
+ GRA11 | 42 | 10.0.0.0/8 | true | 10.0.0.1 | 10.0.0.2 - 10.0.0.254 |
+| SGB5 | 42 | 10.0.0.0/8 | true | 10.0.1.1 | 10.0.1.2 - 10.0.1.254 |
+| BHS5 | 42 | 10.0.0.0/8 | true | 10.0.2.1 | 10.0.2.2 - 10.0.2.254 |
+
 
 ### Can the L3 virtual router (Gateway) help me if I would like to have a gateway to access the Internet for all my VMs in my vRack?
 
@@ -70,6 +78,10 @@ Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Curre
 ### Can I use a L3 router to route traffic between different subnets inside a Public Cloud region ?
 
 Yes, you can use a L3 router without SNAT option through the Openstack GUI / CLI / Terraform. In that case, the bandwidth limits are driven by the quality of service on the instance private bandwidth. Hence, choosing an `S` flavor would not impact the performances.
+
+### Can I use a L3 router to route traffic between different subnets between multiples Public Cloud regions ?
+
+No the inter region routing is not supported.
 
 ### Will Gateway be provided with a public IP and port?
 
