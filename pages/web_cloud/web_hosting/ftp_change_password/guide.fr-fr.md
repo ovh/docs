@@ -54,7 +54,8 @@ Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-
 
 > [!primary]
 >
->Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
+> Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
+>
 >- Minimum 8 caractères ;
 >- Maximum 30 caractères ;
 >- Au moins une lettre majuscule ;
