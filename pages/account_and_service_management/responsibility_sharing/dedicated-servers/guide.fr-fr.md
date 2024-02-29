@@ -40,6 +40,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
+| Migrez les données (OS, logiciels ou sauvegardes, etc) selon le format de votre choix | RA |  |
 
 #### 2.3. Installation du SI client
 
