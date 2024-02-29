@@ -31,6 +31,18 @@ The vRack from OVHcloud is a virtual private network solution that securely and 
 - **Flexibility with VLANs:** The ability to create up to 4000 VLANs offers flexible and precise network management, tailored to the specific needs of each project.
 - **Extended Compatibility:** vRack supports a wide range of OVHcloud services, allowing for seamless integration and unprecedented scalability.
 
+### vRack Services
+
+vRack Services represents the foundational layer of OVHcloud's innovative approach to network architecture, enabling a seamless and secure connection between various managed services within the vRack environment. This product instance, once ordered by customers, acts as the central hub for orchestrating complex network configurations and facilitating the integration of diverse cloud services.
+
+### Key aspects of vRack Services include:
+- **Global Reach with Local Precision:** While vRack itself provides a worldwide network fabric, vRack Services are designed to cater to specific local requirements, ensuring compliance with regional data residency and security regulations.
+- **Customizable Network Solutions:** Customers have the flexibility to tailor their network infrastructure according to their unique business needs, leveraging vRack Services to create a bespoke environment that supports their operational objectives.
+- **Enhanced Security and Isolation:** At its core, vRack Services prioritize the security of customer data. By enabling private connectivity, it ensures that data traffic between services remains isolated from the public internet and other potential internal network threats.
+- **Simplified Management:** Through the OVHcloud Control Panel, customers can easily manage their vRack Services, from setting up new instances to adjusting their network configurations. This user-friendly interface demystifies complex network management tasks, making it accessible to businesses of all sizes.
+- **Interoperability with Managed Services:** vRack Services are specifically engineered to work seamlessly with a range of OVHcloud managed services, starting with Enterprise File Storage as the first compatible service. This interoperability is crucial for businesses looking to leverage the full spectrum of OVHcloud offerings within a unified network ecosystem.
+
+
 ### Enterprise File Storage: Performance and Reliability with NetApp ONTAP
 Enterprise File Storage, based on NetApp ONTAP technology, is a high-performance file storage solution designed to meet the demands of businesses in terms of data availability, performance, and security.
 
