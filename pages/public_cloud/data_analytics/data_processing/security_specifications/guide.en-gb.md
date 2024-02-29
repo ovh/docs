@@ -64,7 +64,7 @@ To lock your data stored in the Object storage service, manage versioning and pr
 | --- | --- | --- |
 | Control Panel and service | Manage customer accounts and services on which each account has access rights. | [documentation for how to use API](/pages/public_cloud/data_analytics/data_processing/38_HOWTO_use-with-ovh-api) <br> [API link](https://eu.api.ovh.com/console/#/cloud) |
 
-## 7.Accounts - User
+## 7.Users accounts
 
 ### 7.1 Control plane
 
@@ -73,93 +73,39 @@ OVHcloud uses another account with an internal NIC to refer a customer having su
 
 To enforce security access to your account on the Control Panel, we recommend activating a [two-factor authentication mechanism](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) or [SSO(Single Sign-On) authentication](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
 
-You can also [create your own IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui) on the service, with a user interface or [via API](/pages/account_and_service_management/account_information/iam-policies-api), and manage your users and groups.<br>
-You can troubleshoot your IAM policy configuration and analyse actions [by using API calls to get logs](/pages/manage_and_operate/iam/iam-troubleshooting).
 
 ### 7.2 Data plane
 
-Once a VM is created by OVHcloud, on which the customer Database engines run, a TLS certificate is generated and used by the customer to access his DB. The certificate is renewed every three months.
+Once you have activated the service and get your API v6 token, you can create your jobs.
 
 ## 8.Features and options available at service delivery
 
-### 8.1 High availability
+### 8.1 Segregation, monitoring and vulnerability management
 
-Three plans are made available on the service : Essential, Business and Enterprise plans.<br>
-You can choose a "Business" or "Enterprise" offer to benefit from a high availability service as your data will be replicated across two or three nodes following the chosen plan.<br>
-For MongoDB, high availability is offered with "Production" and "Advanced" plans. 
+OVHcloud teams ensure segregation between customer's clusters as for each Spark job submitted. A user's Spark cluster is created in an isolated and unique Kubernetes namespace dedicated to that job and it is limited, isolated and secured using Kubernetes Network Policies and Pod Security Policies.<br>
+
+OVHcloud teams monitor all components in support of the service as well as CVE handling and correction.
 
 ### 8.2 Data encryption
 
-#### 8.2.1 Encryption made by the OVHcloud teams
-
-All network traffic on the infrastructure managing the Databases service is encrypted. Databases volumes are also encrypted with a unique key specific for each customer project.<br>
-These operations are made, by default, by the OVHcloud operation team.
-
-> [!primary]
->
-> Currently, OVHcloud does not offer KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
->
-
-For a MongoDB engine :
-
-- **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
-The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
-We use the LUKS2 mode aes-cbc-essiv:sha256 with a 512-bit key.
-- **Backups:** backups are encrypted with a randomly generated key. This key is Asymetric RSA4096.
-
-For all the databases engines such as MySQL, PostgreSQL, Redis and so on, at-rest data encryption covers both active service instances as well as service backups in cloud object storage :
-
-- **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
-The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
-We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
-- **Backups:** backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with a RSA key-encryption key-pair and stored in the header section of each backup segment. 
-The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. 
-The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key.
+Once you use OVHcloud Object storage service, you can manage [data encryption on server-side by following this guide](    /pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c). 
 
 
-#### 8.2.2 In-use encryption on client side
-
-> [!primary]
->
-> Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
->
-
-Currently, we do not provide in-use encryption except for MongoDB Enterprise plans, based on MongoDB Client-Side Field Level Encryption.<br>
-Data is encrypted client-side with customer-controlled encryption keys, before being sent, stored, or retrieved from the database.<br>
-Client-Side Field Level Encryption (FLE) is an in-use encryption capability that enables a client application to encrypt sensitive data before storing it in the MongoDB database. Sensitive data is transparently encrypted, remains encrypted throughout its lifecycle, and is only decrypted on the client side.
-
-### 8.3 CVE monitoring
-
-The OVHcloud operation team in charge of the maintenance of Public Cloud Databases services is constantly monitoring CVE on the different DBMS available. This monitoring is done through different channels, official mailing lists, security community, internal security check...<br>
-
-We are also in constant communication with the MongoDB team, in order to provide fast and smooth transition to the latest security version of MongoDB.
-
-### 8.4 vRack option
-
-You can activate the vRack option at the subscription step or afterwards and have your private network for your Database project. The configuration of your private network can be done by following [this link](/pages/public_cloud/public_cloud_databases/databases_08_vrack).
-
-### 8.5 HDS option
+### 8.3 HDS option
 
 The HDS option can be activated on the service.<br>
-This option is available only for "Business" and "Entreprise" plans for this service.<br>
 The subscription to the Business support level is mandatory, at least to maintain necessary requirements.
 
 ## 9.Reversibility
 
-You can  import and export your data  following recommendations provided by editors for each Database engine technology. Here are some examples :
+OVHcloud provides this service basing on Apache Spark technology without any specific customization (Vanilla). You are able to use to use all modules and codes supported by the technology following your business needs.<br>
 
-- For MongoDB, you can refer to this link : <https://www.mongodb.com/docs/compass/current/import-export/>
-- For Redis, you can refer to this link : <https://docs.redis.com/latest/rs/databases/import-export/>
+Data storage technology is based on S3 or SWIFT technology and you are able to import and export your data at anytime using API calls.
 
 ### 9.1 Erasure of customer data
+Once the the job is executed, no data are retained on OVHcloud infrastructure and all allocated resources are destroyed.
 
-Once you destroy your Public Cloud project (your Database project) in the OVHcloud Control Panel, all allocated resources are relased automtically, including used encryption keys.<br>
-As the encryption keys are unique for each project, they will be deleted after service decommmissioning. Data can not be retrieved after.
+To destroy stored data and logs , you have to use API calls to destroy your Object Storage.
 
-## Go further
-
-[Public Cloud Databases documentation](/products/public-cloud-databases)
-
-Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
