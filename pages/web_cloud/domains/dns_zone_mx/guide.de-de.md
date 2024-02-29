@@ -24,7 +24,7 @@ Der Eintrag vom Typ MX legt den für die E-Mail-Adressen eines Domainnamens zust
 >
 > - Wenn Ihr Domainname **nicht** die DNS-Server von OVHcloud verwendet, muss die Änderung der MX-Einträge über das Interface des Anbieters vorgenommen werden, der die Konfiguration Ihres Domainnamens verwaltet.
 >
-> - Wenn Ihr Domainname bei OVHcloud registriert ist, können Sie überprüfen, ob er die OVHcloud Konfiguration verwendet: Gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Tab `DNS-Server`{.action} und anschließend in den Tab `Allgemeine Informationen`{.action}. Wenn unter **DNS-Server** der Eintrag Aktiv angezeigt wird, verwenden Sie die OVHcloud DNS-Server.
+> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere OVHcloud-Konfiguration in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) verwendet. Wenn Sie sich auf der betreffenden Domain im Tab `Allgemeine Informationen`{.action} im Bereich `DNS-Server`{.action} befinden und der Vermerk `Aktiv` unter **DNS-Server** stehen, verwenden Sie die OVHcloud DNS-Server.
 >
 > ![E-Mail](images/dns-servers-enabled.png){.thumbnail}
 
