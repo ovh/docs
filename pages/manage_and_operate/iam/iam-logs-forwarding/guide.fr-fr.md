@@ -64,11 +64,11 @@ L'API nécessite un `streamId`, qui correspond au flux de données cible de votr
 > Vous pouvez retrouver votre `streamId` dans la partie `Logs Data Platform`{.action} de l'espace client OVHcloud :
 >
 > - Rendez-vous sur la page `Flux de données`{.action} de votre compte Logs Data Platform. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite du flux de donnés cible puis cliquez sur `Modifier`{.action}.
->   
+>
 > ![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
-> 
+>
 > - Copiez la page `streamId` de votre compte Logs Data Platform.
->   
+>
 > ![Find stream ID](images/retrieve_streamId_2.png){.thumbnail}
 
 Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platform :
