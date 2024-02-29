@@ -29,8 +29,6 @@ Entire database instances have to be in the same region. Multi-AZ is currently n
 
 The Public Cloud Databases offer supports the following M3db versions:
 
-- M3db 1.1
-- M3db 1.2
 - M3db 1.5
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. M3db recommends always installing and using the latest stable version.

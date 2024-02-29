@@ -88,7 +88,7 @@ defaultdb=> SELECT * FROM pg_available_extensions;
 Install an available extension:
 
 ```sql
-defaultdb=> CREATE EXTENSION IF NOT EXISTS extension_name
+defaultdb=> CREATE EXTENSION IF NOT EXISTS "<extension_name>";
 CREATE EXTENSION
 ```
 
