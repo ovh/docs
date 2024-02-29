@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement MX
 excerpt: Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud
-updated: 2024-02-28
+updated: 2024-02-29
 ---
 
 ## Objectif
