@@ -40,6 +40,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
+| Transfert your data (OS, softwares or backups, etc) following your choice | RA |  |
 
 #### 2.3. Customers information system setup
 
