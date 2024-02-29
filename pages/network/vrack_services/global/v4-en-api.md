@@ -42,7 +42,9 @@ For each spawned Managed Service, the Service Provider publishes the number of p
 
 These private IPs are then dynamically allocated by the vRack Services automation at the primitive creation request.
 
-
+<p align="center" width="100%">
+    <img src="images/vRack Service Endpoint Diagram v2.png">
+</p>
 
 # Instructions
 Transitioning from the overview of vRack Services, this section will delve into the practical applications and actions that can be performed via the API. This includes creating subnets and service endpoints, associating vRack services to a vRack, and managing these services through detailed instructions. These actions highlight the operational capabilities of vRack Services, demonstrating how they can be leveraged to enhance and secure your network infrastructure.
