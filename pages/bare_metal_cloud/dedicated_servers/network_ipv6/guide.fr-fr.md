@@ -133,7 +133,7 @@ iface eth0 inet6 static
 
 **Debian 10**
 
-```consile
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 64
