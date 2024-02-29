@@ -1,7 +1,7 @@
 ---
 title: Configurar um registo MX
 excerpt: Saiba como configurar um registo MX no seu domínio da OVHcloud
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 > [!primary]

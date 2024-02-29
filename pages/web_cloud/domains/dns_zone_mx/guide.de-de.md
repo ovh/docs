@@ -1,7 +1,7 @@
 ---
 title: MX-Eintrag konfigurieren
 excerpt: Erfahren Sie hier, wie Sie mit OVHcloud MX-Einträge für Ihren Domainnamen konfigurieren 
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 > [!primary]

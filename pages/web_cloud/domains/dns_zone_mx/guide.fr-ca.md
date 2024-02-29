@@ -1,7 +1,7 @@
 ---
 title: Ajouter un champ MX à la configuration de son nom de domaine
 excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 ## Objectif

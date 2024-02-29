@@ -1,7 +1,7 @@
 ---
 title: Configura un record MX
 excerpt: Come configurare un record MX su un dominio in OVHcloud
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 > [!primary]

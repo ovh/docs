@@ -1,7 +1,7 @@
 ---
 title: Configure an MX record
 excerpt: Find out how to configure an MX record on your domain name at OVHcloud
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 ## Objective
