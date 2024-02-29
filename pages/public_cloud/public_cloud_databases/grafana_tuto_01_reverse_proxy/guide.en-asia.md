@@ -16,10 +16,9 @@ Schema concept:
 ![Schema concept](images/pcdb-expose-grafana-to-internet-20230208211544858.png){.thumbnail}
 
 > [!warning]
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> OVHcloud provides services for which you are responsible for their configuration and management. You are therefore responsible for their proper functioning.
->
-> This tutorial is designed to help you as much as possible with common tasks. If you are having difficulty performing these actions, please contact a specialized service provider and/or discuss it with our community of users on <https://community.ovh.com/en/>. OVHcloud can't provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist service provider or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
@@ -77,8 +76,8 @@ upstream grafana {
 
 server {
   listen 443 ssl;
-  ssl_certificate /etc/nginx/ssl/your_certificate.crt
-  ssl_certificate_key /etc/nginx/ssl/your_certificate.key
+  ssl_certificate /etc/nginx/ssl/your_certificate.crt;
+  ssl_certificate_key /etc/nginx/ssl/your_certificate.key;
 
   location / {
     proxy_set_header Host $http_host;
