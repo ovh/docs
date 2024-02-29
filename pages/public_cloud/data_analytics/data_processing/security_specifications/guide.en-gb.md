@@ -26,7 +26,7 @@ This security fact sheets aims at describing security features and functions ass
 
 You must filter connections to tier processes and apply [IP restriction indicated at this link](/pages/public_cloud/data_analytics/data_processing/01_CONCEPTS_Capabilities) in order to access to your data.
 
-Once you have subscribed to OVHcloud Object storage service, use best practices to secure your access to your Object storage service such as : [collecting credentials] (/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) or [managing accesses](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) .
+Once you have subscribed to OVHcloud Object storage service, use best practices to secure your access to your Object storage service such as : [collecting credentials] (/pages/storage_and_backup/object_storage /s3_getting_started_with_object_storage) or [managing accesses](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) .
 
 ### 2.2 Vulnerability scans
 
