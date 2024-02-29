@@ -61,7 +61,7 @@ POST /me/logs/audit/forward
 L'API nécessite un `streamId`, qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationId` afin de pouvoir l'utiliser pour récupérer le `subscriptionId`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'[opération de lecture de Logs Data Platform](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 > [!primary]
-> Vous pouvez retrouvez votre `streamId` dans l'espace client Logs Data Platform :
+> Vous pouvez retrouver votre `streamId` dans la partie `Logs Data Platform`{.action} de l'espace client OVHcloud :
 >
 > - Rendez-vous sur la page `Flux de données`{.action} de votre compte Logs Data Platform. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite du flux de donnés cible puis cliquez sur `Modifier`{.action}.
 >   
