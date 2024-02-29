@@ -1,7 +1,7 @@
 ---
 title: "Changing an FTP user password"
 excerpt: "Find out how to change the password for an FTP user created on your OVHcloud Web Hosting plan"
-updated: 2023-05-29
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -41,15 +41,6 @@ A table will display the *FTP users* created on your Web Hosting plan. These use
 > For more information on password management best practices, follow the instructions in this [guide](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Your new password must respect the following **password policy**:
-
-- Minimum 8 characters
-- Maximum 30 characters
-- At least one capital letter
-- At least one lower-case letter
-- At least one number
-- Be composed only of numbers and letters
-
 Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
 
 - **For Web Hosting plans that do not allow you to create a second FTP user** (*Personal hosting*): Click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
@@ -59,6 +50,17 @@ Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-au/we
 - **For plans that allow you to create multiple FTP users** (*Pro* and *Performance*): Click on the `...`{.action} button to the right of the FTP user concerned, then `Change password`{.action}. In the window that pops up, enter the new password you want **by following the password policy**, enter it again and click the `Confirm`{.action} button.
 
 ![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+
+> [primary]
+>
+> Your new password must respect the following **password policy**:
+>
+>- Minimum 8 characters
+>- Maximum 30 characters
+>- At least one capital letter
+>- At least one lower-case letter
+>- At least one number
+>- Be composed only of numbers and letters
 
 Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your change will be effective within a few minutes.
 
