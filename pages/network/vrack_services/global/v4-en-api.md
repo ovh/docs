@@ -43,9 +43,11 @@ For each spawned Managed Service, the Service Provider publishes the number of p
 These private IPs are then dynamically allocated by the vRack Services automation at the primitive creation request.
 
 
-# Actions
 
-## Basics Instructions
+# Instructions
+Transitioning from the overview of vRack Services, this section will delve into the practical applications and actions that can be performed via the API. This includes creating subnets and service endpoints, associating vRack services to a vRack, and managing these services through detailed instructions. These actions highlight the operational capabilities of vRack Services, demonstrating how they can be leveraged to enhance and secure your network infrastructure.
+
+## Basics
 
 <details>
   <summary><b>1. Create a Subnet</b> </summary>
@@ -338,7 +340,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 
 
 
-## Others Instructions
+## Others
 
 <details>
   <summary><b>1. Extend the Subnet service range</b></summary>
