@@ -1,7 +1,7 @@
 ---
 title: "Modifier le mot de passe d'un utilisateur FTP"
 excerpt: "Découvrez comment changer le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud"
-updated: 2023-05-26
+updated: 2024-02-29
 ---
 
 ## Objectif
@@ -41,15 +41,6 @@ Un tableau affiche les *utilisateurs FTP* créés sur votre hébergement web. Ce
 > Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
-
-- Minimum 8 caractères ;
-- Maximum 30 caractères ;
-- Au moins une lettre majuscule ;
-- Au moins une lettre minuscule ;
-- Au moins un chiffre ;
-- Être composé uniquement de chiffres et de lettres.
-
 Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/), la modification du mot de passe de votre utilisateur FTP via l'onglet `FTP-SSH`{.action} se fera par deux chemins différents :
 
 - **pour les offres ne permettant pas de créer un second utilisateur FTP** (offre *Perso*) : cliquez sur le *pictogramme en forme de crayon* dans la colonne `Mot de passe`{.action} du tableau qui s'affiche, renseignez le nouveau mot de passe **en respectant la politique des mots de passe** puis confirmez le changement en cliquant sur le *bouton vert* de validation.
@@ -57,6 +48,17 @@ Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/w
 ![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
 
 - **pour les offres permettant de créer plusieurs utilisateurs FTP** (offres *Pro* et *Performance*) : cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Changer le mot de passe`{.action}. Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe souhaité **en respectant la politique des mots de passe**, confirmez en le saisissant une seconde fois puis cliquez sur le bouton `Valider`{.action}.
+
+> [!primary]
+>
+> Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
+>
+>- Minimum 8 caractères ;
+>- Maximum 30 caractères ;
+>- Au moins une lettre majuscule ;
+>- Au moins une lettre minuscule ;
+>- Au moins un chiffre ;
+>- Être composé uniquement de chiffres et de lettres.
 
 ![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
 
