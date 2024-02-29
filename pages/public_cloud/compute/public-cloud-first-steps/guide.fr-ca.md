@@ -160,7 +160,7 @@ Connectez-vous à l'espace client [OVHcloud](https://ca.ovh.com/auth/?action=got
 
 **Zones Locales :**
 
-Les zones locales sont une extension des régions qui rapprochent les services OVHcloud de lieux spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Elles sont stratégiquement placées à proximité de zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs, et de répondre aux exigences de résidence des données.
+Les Zones Locales sont une extension des régions qui rapprochent les services OVHcloud de lieux spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Elles sont stratégiquement placées à proximité de zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs, et de répondre aux exigences de résidence des données. Pour plus d'informations sur les zones locales, consultez les liens suivants : [Local Zone Compute](https://www.ovhcloud.com/fr-ca/public-cloud/local-zone-compute/) et [Local Zone Compute - Fonctionnalités, capacités et limites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
 
 **Régions Globales :**
