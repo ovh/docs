@@ -1,7 +1,7 @@
 ---
 title: M3 Aggregator - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3 Aggregator
-updated: 2023-12-04
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -29,8 +29,6 @@ The entire database instances must be in the same region. Multi-AZ is currently 
 
 The Public Cloud Databases offer supports the following M3 Aggregator versions:
 
-- M3 Aggregator 1.1
-- M3 Aggregator 1.2
 - M3 Aggregator 1.5
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions.

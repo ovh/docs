@@ -1,7 +1,7 @@
 ---
 title: Getting started with Public Cloud Databases
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
-updated: 2023-04-27
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -19,6 +19,12 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
+> [!primary]
+>
+> - Clicking on `Data Streaming`{.action} will give you access to `Kafka`, `Kafka Connect` and `KafkaMirrorMaker` services.
+> - Clicking on `Data Analysis` will give you access to `Grafana` and `OpenSearch` services.
+>
+
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
 
 ### Step 1: Select your database type
@@ -29,11 +35,11 @@ Click on the type of database you want to use and then select the version to ins
 
 ### Step 2: Select a Plan
 
-In this step, choose an appropriate service plan. You will be able to upgrade the plan after creation.
-
-![Choose plan](images/databases_01_order_control_panel-20231208150215.png){.thumbnail}
+Choose an appropriate service plan. You will be able to upgrade the plan after creation.
 
 Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on each plan's properties.
+
+![Choose plan](images/databases_01_order_control_panel-20231208150215.png){.thumbnail}
 
 ### Step 3: Select a location
 

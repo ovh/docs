@@ -29,7 +29,6 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 
 The Public Cloud Databases offer supports the following Redis versions:
 
-- Redis 6.2
 - Redis 7.0
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>

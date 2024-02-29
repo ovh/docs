@@ -1,7 +1,7 @@
 ---
 title: Redis - Configurez votre instance Redis pour accepter les connexions entrantes (EN)
 excerpt: Find out how to configure your Redis instance to accept incoming connections
-updated: 2022-03-24
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -30,14 +30,17 @@ Select the `Users`{.action} tab. Verify that you have a user with sufficient rig
 
 In our example, we will create a user called *redisUser* and rights for :
 
-- *allkeys* for keys (syntax equivalent to *<\*>*)
-- the *ping* command (syntax equivalent to *<+ping>*)
-- the *info* command (syntax equivalent to *<+info>*)
-- the *echo* command (syntax equivalent to *<+echo>*)
-- the *get* command (syntax equivalent to *<+get>*)  
-- the *set* command (syntax equivalent to *<+set>*)  
-- the *client* command (syntax equivalent to *<+client>*)
-- *allchannels* for channels (syntax equivalent to *<\*>*).
+- Keys:
+    - **\*** (for *allkeys*)
+- Commands:
+    - **+ping** (for the *ping* command)
+    - **+info** (for the *info* command)
+    - **+echo** (for the *echo* command)
+    - **+get** (for the *get* command)
+    - **+set** (for the *set* command)
+    - **+client** (for the *client* command)
+- Channels:
+    - **\*** (for *allchannels*)
 
 ![User creation](images/redis_08_prepare_for_incoming_connections-2022032912263856.png){.thumbnail}
 
