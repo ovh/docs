@@ -52,7 +52,8 @@ Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-
 
 ![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
 
-> [!warning]
+> [!primary]
+>
 >Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
 >- Minimum 8 caractères ;
 >- Maximum 30 caractères ;
