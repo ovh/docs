@@ -102,20 +102,36 @@ Before proceeding, it is recommended that you consult these guides:
  
 > [!tabs]
 > **Step 1**
->> Once your environment is ready, type the following at the command line:
+>> Once your environment is ready, type the following at the command line to create a network & subnet:
 >>
->> ```
+>> ```console
 >> openstack network create my_network
 >>
 >> openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
->>
->> openstack router create my_router
+>>```
+>**Step 2**
+>> List the quality of service available
+>> ```console
+>> openstack network qos policy list
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | ID                                   | Name          | Shared | Default | Project                          |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | a5524eb5-944e-4106-b209-9478bbdcedab | large_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | c210f5b2-db59-4973-a25f-9131195b6bcf | medium_router | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | ec0ee74d-a1f3-43f6-87aa-b0e69ef8ce45 | small_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> ```
+>**Step 3**
+>>```console
+>> openstack router create my_router 
 >>
 >> openstack router add subnet my_router my_subnet
 >>
->> openstack router set --external-gateway Ext-Net my_router
+>> openstack router set --external-gateway Ext-Net --qos-policy QOS_ID_OF_YOUR_CHOICE my_router
 >> ```
->> 
+>> If you omit the `--qos-policy` parameter the "small" quality of service will be applied.
+
+
 
 ### Via the OVHcloud API
 
