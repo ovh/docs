@@ -10,9 +10,6 @@ updated: 2024-03-04
 
 ## Ziel
 
-Wenn Sie Schwierigkeiten haben oder Ihre Erfahrungen mit anderen Benutzern diskutieren möchten, kontaktieren Sie uns über Discord <https://discord.gg/ovhcloud> oder treten Sie unserer Community bei: <https://community.ovh.com/en/>.
-> 
-
 Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen.
 
 Die Local Zones Instanzen befinden sich strategisch in der Nähe von Bereichen mit hoher Benutzeranforderung. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um die Dienste reaktionsschneller zu machen und Anforderungen für Data Residency zu erfüllen.
