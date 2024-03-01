@@ -195,8 +195,8 @@ Recomendamos que guarde o ficheiro de configuração adequado. Por exemplo, util
 Poderá então anular as alterações com os seguintes comandos:
 
 ```bash
-~# sudo rm -f /etc/network/interfaces.d
-~# sudo cp /etc/network/interfaces.d.bak /etc/network/interfaces.d
+~# sudo rm -f /etc/network/interfaces
+~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Configuração com o auxílio de Netplan <a name="netplan"></a>

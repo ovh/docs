@@ -197,7 +197,7 @@ Będziesz mógł wówczas anulować zmiany za pomocą następujących poleceń:
 
 ```bash
 ~# sudo rm -f /etc/network/interfaces
-~# sudo cp /etc/network/interfaces.back /etc/network/interfaces
+~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Konfiguracja przy użyciu Netplan <a name="netplan"></a>

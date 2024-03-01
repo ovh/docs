@@ -195,8 +195,8 @@ Ti consigliamo di salvare il file di configurazione più adatto. Ad esempio, ese
 Puoi annullare le modifiche utilizzando questi comandi:
 
 ```bash
-~# sudo rm -f /etc/network/interfaces.d
-~# sudo cp /etc/network/interfaces.d.bak /etc/network/interfaces.d
+~# sudo rm -f /etc/network/interfaces
+~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Configurazione tramite Netplan <a name="netplan"></a>

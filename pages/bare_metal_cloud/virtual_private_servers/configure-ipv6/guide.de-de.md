@@ -171,11 +171,11 @@ pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 Starten Sie anschließend Ihren Netzwerkdienst mit einem der folgenden Befehle neu:
 
 ```bash
-~# sudo systemctl restart networking
+~# sudo service networking restart
 ```
 
 ```bash
-systemctl restnetworking
+~# sudo systemctl restart networking
 ```
 
 Je nach Generation des auf dem Server installierten Betriebssystems können Sie die oben angegebene Konfiguration auch zu einer der folgenden Dateien hinzufügen (mit *sudo*-Berechtigungen):
@@ -192,8 +192,8 @@ Wir empfehlen Ihnen, die relevante Konfigurationsdatei zu sichern. Verwenden Sie
 Sie können die Änderungen dann mithilfe folgender Befehle rückgängig machen:
 
 ```bash
-~# sudo rm -f /etc/network/interfaces.d
-~# sudo cp /etc/network/interfaces.d.bak /etc/network/interfaces.d
+~# sudo rm -f /etc/network/interfaces
+~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Konfiguration mit *Netplan* <a name="netplan"></a>
