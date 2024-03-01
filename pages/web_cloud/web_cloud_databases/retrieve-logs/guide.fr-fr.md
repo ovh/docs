@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - Comment récupérer les logs ?'
 excerpt: 'Découvrez comment récupérer les logs de vos bases de données hébergées sur votre serveur Web Cloud Databases'
-updated: 2024-02-28
+updated: 2024-03-01
 ---
 
 ## Objectif
@@ -95,6 +95,16 @@ Cliquez sur `Nouveau site`{.action} puis saisissez les paramètres relevés pré
 Le fichier de logs, nommé `stdout.log`, se trouve à la racine.
 
 Vous pourrez le télécharger sur votre poste pour le consulter.
+
+> [!primary]
+>
+> Un fichier supplémentaire de logs intitulé `slow-query.log` peut apparaître à la racine SFTP de votre serveur Web Cloud Databases.
+> Ce fichier contient l'historique des requêtes lentes qui se sont exécutées sur votre serveur Web Cloud Databases. 
+> 
+> Par défaut, la valeur est définie à 1 seconde sur les solutions Web Cloud Databases dans la variable **long_query_time**.
+> 
+> Grâce à lui, vous pourrez optimiser vos scripts et le contenu de votre (vos) base(s) de données afin d'améliorer les performances de vos différents services associés.
+>
 
 ## Aller plus loin <a name="go-further"></a>
 
