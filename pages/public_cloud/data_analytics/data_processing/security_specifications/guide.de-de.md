@@ -1,5 +1,5 @@
 ---
-title: Security specifications for Data processing
+title: Security specifications for Data Processing
 excerpt: Data Processing security overview
 updated: 2024-03-01
 ---
