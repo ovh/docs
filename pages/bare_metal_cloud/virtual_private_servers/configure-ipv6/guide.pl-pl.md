@@ -88,8 +88,9 @@ Istnieje kilka metod konfiguracji IPv6. W zależności od Twojego przypadku prze
 
 - [Konfiguracja nietrwała](#nonpersistent).
 - [Konfiguracja trwała dla systemu Debian i pochodnych (Ubuntu, Crunchbang, SteamOS…)](#persistentdebian).
-- [Konfiguracja trwała dla systemu Redhat i pochodnych (CentOS, ClearOS…)](#persistentredhat).
-- [Aplikacja trwała dla Windows Server](#persistentwindows).
+- [Konfiguracja trwała dla systemu Redhat i pochodnych (CentOS, Rocky & Alma Linux…)](#persistentredhat).
+- [Konfiguracja trwała dla fedora](#persistentfedora)
+- [Konfiguracja trwała dla Windows Server](#persistentwindows).
 
 #### Konfiguracja nietrwała <a name="nonpersistent"></a>
 
@@ -330,7 +331,7 @@ Następnie zrestartuj Twoją usługę sieciową, aby umożliwić systemowi zasto
 ~# sudo systemctl restart networking
 ```
 
-#### Aplikacja trwała dla Fedory 37 i nowszych wersji <a name="persistentfedora"></a>
+#### Konfiguracja trwała dla Fedora 37 i nowszych wersji <a name="persistentfedora"></a>
 
 Plik konfiguracji sieci znajduje się w katalogu `/etc/NetworkManager/system-connections/`. Zalecamy, aby najpierw wykonać kopię zapasową odpowiedniego pliku konfiguracyjnego. W naszym przykładzie nasz plik nosi nazwę `cloud-init-eth0.nmconnection`, dlatego kopiujemy plik `cloud-init-eth0.nmconnection` przy użyciu następujących poleceń. W razie potrzeby zmień **eth0** na aktualny interfejs.
 

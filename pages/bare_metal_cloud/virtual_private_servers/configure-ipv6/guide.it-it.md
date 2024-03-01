@@ -87,8 +87,9 @@ Una volta che disponi dei dati necessari per la configurazione dell’IPv6, acce
 La configurazione IPv6 può essere applicata in diversi modi. Prosegui nella lettura di questa guida in base alle tue esigenze:
 
 - [Applicazione non persistente](#nonpersistent)
-- [Applicazione persistente su Debian e derivati (Ubuntu, Crunchbang, SteamOS...)](#persistentdebian)
-- [Applicazione persistente su Red Hat e derivati (CentOS, ClearOS...)](#persistentredhat)
+- [Applicazione persistente su Debian e derivati (Ubuntu, Crunchbang, SteamOS…)](#persistentdebian)
+- [Applicazione persistente su Red Hat e derivati (CentOS, Alma & Rocky Linux…)](#persistentredhat)
+- [Applicazione persistente su Fedora](#persistentfedora)
 - [Applicazione persistente su Windows Server](#persistentwindows)
 
 #### Applicazione non persistente <a name="nonpersistent"></a>

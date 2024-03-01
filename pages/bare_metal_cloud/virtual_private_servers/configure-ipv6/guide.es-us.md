@@ -90,6 +90,7 @@ Existen varias formas de aplicar la configuración IPv6. Utilice los siguientes 
 - [Aplicación no persistente](#nonpersistent)
 - [Aplicación persistente en Debian y derivados (Ubuntu, Crunchbang, SteamOS…)](#persistentdebian)
 - [Aplicación persistente en Red Hat y derivados (CentOS, ClearOS…)](#persistentredhat)
+- [Aplicación persistente en Fedora](#persistentfedora)
 - [Aplicación persistente en Windows Server](#persistentwindows)
 
 #### Aplicación no persistente <a name="nonpersistent"></a>

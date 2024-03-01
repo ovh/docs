@@ -89,7 +89,8 @@ Es gibt mehrere Vorgehensweisen, um die IPv6-Konfiguration anzuwenden. Folgen Si
 
 - [Nonpersistente Anwendung](#nonpersistent)
 - [Persistente Anwendung auf Debian und Derivaten (Ubuntu, Crunchbang, SteamOS, etc.)](#persistentdebian)
-- [Persistente Anwendung auf Red Hat und Derivaten (CentOS, ClearOS, etc.)](#persistentredhat)
+- [Persistente Anwendung auf Red Hat und Derivaten (CentOS, Rocky & Alma Linux, etc.)](#persistentredhat)
+- [Persistente Anwendung auf Fedora](#persistentfedora)
 - [Persistente Anwendung auf Windows Server](#persistentwindows)
 
 #### Nonpersistente Anwendung <a name="nonpersistent"></a>
