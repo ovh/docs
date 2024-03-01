@@ -1,7 +1,7 @@
 ---
 title: Creating a private network with Gateway
 excerpt: Discover how to create a Private network with a Gateway
-updated: 2022-11-02
+updated: 2024-03-01
 ---
 
 ## Objective
@@ -99,10 +99,10 @@ Before proceeding, it is recommended that you consult these guides:
 
 - [Preparing an environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
- 
+
 > [!tabs]
 > **Step 1**
->> Once your environment is ready, type the following at the command line to create a network & subnet:
+>> Once your environment is ready, type the following at the command line to create a network and subnet:
 >>
 >> ```console
 >> openstack network create my_network
@@ -110,7 +110,8 @@ Before proceeding, it is recommended that you consult these guides:
 >> openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
 >>```
 >**Step 2**
->> List the quality of service available
+>> List the quality of service available:
+>>
 >> ```console
 >> openstack network qos policy list
 >> +--------------------------------------+---------------+--------+---------+----------------------------------+
@@ -121,7 +122,9 @@ Before proceeding, it is recommended that you consult these guides:
 >> | ec0ee74d-a1f3-43f6-87aa-b0e69ef8ce45 | small_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
 >> +--------------------------------------+---------------+--------+---------+----------------------------------+
 >> ```
+>>
 >**Step 3**
+>>
 >>```console
 >> openstack router create my_router 
 >>
@@ -156,7 +159,7 @@ Before proceeding, it is recommended that you consult these guides:
 >> > [!primary]
 >> > This call identifies the project via the "description" field.
 >> >
-> **Step 2**<br>
+> **Step 2**
 >> **Create your private network and gateway** 
 >> 
 >> > [!api]
