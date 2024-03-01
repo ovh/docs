@@ -103,7 +103,7 @@ Vous pourrez le télécharger sur votre poste pour le consulter.
 > 
 > Par défaut, la valeur est définie à 1 seconde sur les solutions Web Cloud Databases dans la variable **long_query_time**.
 > 
-> Grâce à lui, vous pourrez optimiser vos scripts et le contenu de votre (vos) base(s) de données afin d'améliorer les performances de vos différents services associés.
+> Grâce à ce fichier, vous pourrez optimiser vos scripts et le contenu de votre (vos) base(s) de données afin d'améliorer les performances de vos différents services associés.
 >
 
 ## Aller plus loin <a name="go-further"></a>
