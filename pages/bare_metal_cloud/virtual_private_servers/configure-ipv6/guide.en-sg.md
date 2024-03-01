@@ -85,6 +85,7 @@ There are several ways to apply the IPv6 configuration. Use whichever method bes
 - [Non-persistent application](#nonpersistent)
 - [Persistent application on Debian and its derivatives](#persistentdebian)
 - [Persistent application on Red Hat and its derivatives](#persistentredhat)
+- [Persistent application on Fedora](#persistentfedora)
 - [Persistent application on Windows Server](#persistentwindows)
 
 #### Non-persistent application <a name="nonpersistent"></a>
@@ -179,14 +180,14 @@ Alternatively, you can add the configuration above to one of the following files
 We recommend that you back up the relevant configuration file. For example, use the following command:
 
 ```bash
-~# sudo cp /etc/network/interfaces.d /etc/network/interfaces.d.bak
+~# sudo cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
 You will then be able to revert the changes, using the commands below:
 
 ```bash
-~# sudo rm -f /etc/network/interfaces.d
-~# sudo cp /etc/network/interfaces.d.bak /etc/network/interfaces.d
+~# sudo rm -f /etc/network/interfaces
+~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Configuration using Netplan <a name="netplan"></a>

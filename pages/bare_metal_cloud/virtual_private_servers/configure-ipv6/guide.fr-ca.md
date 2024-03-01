@@ -84,7 +84,8 @@ Il existe plusieurs méthodes pour appliquer la configuration IPv6. En fonction 
 
 - [Application non persistante](#nonpersistent).
 - [Application persistante sur Debian et dérivés (Ubuntu, Crunchbang, SteamOS…)](#persistentdebian).
-- [Application persistante sur Redhat et dérivés (CentOS, ClearOS…)](#persistentredhat).
+- [Application persistante sur Redhat et dérivés (CentOS, Rocky & Alma Linux…)](#persistentredhat).
+- [Application persistante sur Fedora](#persistentfedora).
 - [Application persistante sur Windows Server](#persistentwindows).
 
 #### Application non persistante <a name="nonpersistent"></a>
@@ -129,7 +130,7 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 
 Par défaut, les fichiers de configuration sont situés dans `/etc/network/interfaces.d/`.
 
-La méthode la plus souvent préconisée est de créer un fichier de configuration dans le répertoire `/etc/network/interfaces.d/`:
+La méthode la plus souvent préconisée est de créer un fichier de configuration dans le répertoire `/etc/network/interfaces.d/`. Dans notre exemple, notre fichier s'appelle `51-cloud-init-ipv6` :
 
 ```bash
 ~# sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
@@ -183,14 +184,14 @@ Vous pouvez également ajouter la configuration ci-dessus à l'un des fichiers s
 Nous vous recommandons de sauvegarder le fichier de configuration approprié. Par exemple, utilisez la commande suivante :
 
 ```bash
-~# sudo cp /etc/network/interfaces.d /etc/network/interfaces.d.bak
+~# sudo cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
 Vous pourrez alors annuler les modifications à l'aide des commandes suivantes :
 
 ```bash
-~# sudo rm -f /etc/network/interfaces.d
-~# sudo cp /etc/network/interfaces.d.bak /etc/network/interfaces.d
+~# sudo rm -f /etc/network/interfaces
+~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Configuration à l'aide de Netplan <a name="netplan"></a>
