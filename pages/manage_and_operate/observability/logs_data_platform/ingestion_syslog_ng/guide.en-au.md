@@ -43,7 +43,7 @@ First thing to do is to configure your Logs Data Platform account: [create your 
 
 ### Install and configure a log collector
 
-So let's assume you have your Linux. This guide **DOES NOT** fully cover how to configure other flavors of syslog nor other OSs. Please refer to their own documentation to know how to setup a source, filter and a external destination for the logs. You can still read this entire document to have a grasp on how the configuration is built. However this configuration should work on any syslog-ng version above 3.12.1.
+So let's assume you have your Linux. This guide **DOES NOT** fully cover how to configure other flavors of syslog nor other OSs. Please refer to their own documentation to know how to setup a source, filter and an external destination for the logs. You can still read this entire document to have a grasp on how the configuration is built. However this configuration should work on any syslog-ng version above 3.12.1.
 
 We will install a log collector. What's this? It's a tool that collects logs from any source, processes them and delivers them to various destinations, like the Logs Data Platform.
 
@@ -64,7 +64,7 @@ $ debian@server:~$ sudo apt-get install syslog-ng ca-certificates
 $ debian@server:~$ sudo nano /etc/syslog-ng/conf.d/ldp.conf
 ```
 
-- Copy-paste this configuration. Don't forget to modify the **$STREAM_TOKEN** with your stream write token and the **$LDP_CLUSTER** by your Logs Data Platform cluster.
+- Copy-paste this configuration. Don't forget to replace the **$STREAM_TOKEN** with your stream write token and the **$LDP_CLUSTER** with your Logs Data Platform cluster.
 
 ``` console
 rewrite ovh-token {
@@ -117,9 +117,9 @@ Let's review this configuration.
 
 **SOURCES** : this is the logs sources to collect. So here, we collect System and Internal. More sources can be added of course!
 
-**REWRITE** : this will set your X-OVH-TOKEN as RFC 5424 structured data. You can retrieve your stream write token by going to `Stream page`{.action} in the manager and select **Copy the write** from the desired stream.
+**REWRITE** : this will set your X-OVH-TOKEN as RFC 5424 structured data. You can retrieve your stream write token by going to `Stream page`{.action} in the OVHcloud Control Panel and select **Copy the write** from the desired stream.
 
-**DESTINATION** : This is where we will deliver logs in nearly real time. Here, we have as destinations : The first is the remote endpoint in Logs Data Platform, the second one in comment is local file for debugging purpose only. You can find your Logs Data Platform cluster by going to `Home page`{.action} in the manager in **access point** configuration. For debugging purpose, your can uncomment the debugfile section to check if the whole pipeline is working properly. It will write to local file destination, do not use it in production.
+**DESTINATION** : This is where we will deliver logs in nearly real time. Here, we have two destinations : The first is the remote endpoint in Logs Data Platform, the second one in comment is a local file for debugging purpose only. You can find your Logs Data Platform cluster by going to `Home page`{.action} in the OVHcloud Control Panel in **access point** configuration. For debugging purpose, you can uncomment the debugfile section to check if the whole pipeline is working properly. It will write to local file destination, do not use it in production.
 
 - Save the file, close nano and restart syslog
 
