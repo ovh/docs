@@ -1,7 +1,7 @@
 ---
-title: Using the IPMI with Dedicated Servers
-excerpt: Find out how to log on to your server without the use of external software
-updated: 2022-11-16
+title: "How to use the IPMI console with a dedicated server"
+excerpt: "Find out how to log on to your server from the OVHcloud Control Panel without the use of external software"
+updated: 2024-03-01
 ---
 
 ## Objective
@@ -177,6 +177,28 @@ In the boot menu, select the optical drive (`UEFI: AMI Virtual CDROM0` in this e
 The ISO file will now be uploaded, then the server will boot from the file.
 
 ![KVM Install](images/kvm_install07.png){.thumbnail}
+
+<a name="bios"></a>
+
+### Rebooting a server into the BIOS menu
+
+You might want to access the BIOS when configuring or troubleshooting your server. A convenient way to achieve this is by using the tool `ipmiutil` (refer to the [project page](https://ipmiutil.sourceforge.net/) for more information).
+
+When the server is in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) and you have logged in, install it with the following commands:
+
+```bash
+apt install ipmiutil
+```
+
+Then reboot the server with this command:
+
+```bash
+ipmiutil reset -b
+```
+
+Afterwards, access the [IPMI console](#instructions) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). You should see the server's BIOS menu displayed.
+
+![KVM BIOS](images/kvm_bios.png){.thumbnail}
 
 ## Go further
 
