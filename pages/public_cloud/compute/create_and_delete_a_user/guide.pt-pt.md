@@ -1,7 +1,7 @@
 ---
 title: "Criação e eliminação de utilizadores OpenStack"
 excerpt: Saiba como criar e eliminar um utilizador OpenStack a partir da Área de Cliente OVHcloud
-updated: 2022-03-16
+updated: 2024-03-04
 ---
 
 > [!primary]
