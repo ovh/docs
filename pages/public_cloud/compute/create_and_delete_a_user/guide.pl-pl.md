@@ -21,13 +21,6 @@ Dostęp do interfejsu Horizon oraz API OpenStack odbywa się za pomocą kombinac
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
-> [!primary]
->
-> Jeśli dany projekt Public Cloud jest **pierwszym projektem** utworzonym w Panelu klienta, tworzenie użytkowników OpenStack będzie możliwe dopiero po 7 dniach od daty utworzenia projektu.
->
-> Aby usunąć ten środek bezpieczeństwa, należy utworzyć zgłoszenie serwisowe w Panelu klienta.
->
-
 ## W praktyce
 
 ### Tworzenie użytkownika OpenStack
