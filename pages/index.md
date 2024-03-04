@@ -390,6 +390,7 @@
             + [Setting up an IPsec Tunnel with NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
             + [NSX-T: retrieving logs](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-t_get_logs_by_api)
             + [NSX-T: configure BGP for interconnexion of PCC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configure_bgp_between_pcc_inside_vRack)
+            + [NSX - Configurer NSX StandAlone Edge with L2VPN](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_l2vpn_standalone_edge/)
             + [NSX - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-11-faq)
         + [VMware NSX-v](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v)
             + [VMware NSX-v - End of Support](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_nsx-v-eos)
