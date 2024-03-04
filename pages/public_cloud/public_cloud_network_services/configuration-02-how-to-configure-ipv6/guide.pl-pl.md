@@ -88,7 +88,7 @@ Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w katalo
 
 Dzięki temu możesz oddzielić konfigurację IPv6 i w prosty sposób wrócić do zmian w przypadku błędu.
 
-Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (tj. *YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
+Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
 
 ```console
 iface eth0 inet6 static
@@ -134,7 +134,7 @@ Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w katalo
 
 Dzięki temu możesz oddzielić konfigurację IPv6 i w prosty sposób wrócić do zmian w przypadku błędu.
 
-Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (tj. *YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
+Dodaj następujące wiersze do pliku. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) określonymi wartościami:
 
 ```bash
 ~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
@@ -208,7 +208,7 @@ Będziesz mógł wrócić do wprowadzonych zmian, używając następujących pol
 ~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Następnie edytujemy plik `ifcfg-eth0`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (np. *YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) według określonych wartości.
+Następnie edytujemy plik `ifcfg-eth0`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) według określonych wartości.
 
 ```console
 IPV6INIT=yes
@@ -248,7 +248,7 @@ W naszym przykładzie nasz plik nosi nazwę `cloud-init-eth0.nmconnection`, wyko
 ~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
-Następnie edytujemy plik `cloud-init-eth0.nmconnection`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (np. *YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) według określonych wartości.
+Następnie edytujemy plik `cloud-init-eth0.nmconnection`, dodając tylko wiersze dla konfiguracji IPv6 serwera. Zastąp elementy ogólne (*YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) według określonych wartości.
 
 ```console
 [ipv6]

@@ -88,7 +88,7 @@ A melhor prática é criar um ficheiro de configuração separado no diretório 
 
 Isto permite-lhe separar a configuração IPv6 e voltar facilmente às alterações em caso de erro.
 
-Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (ou seja *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
+Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
 
 ```console
 iface eth0 inet6 static
@@ -134,7 +134,7 @@ A melhor prática é criar um ficheiro de configuração separado no diretório 
 
 Isto permite-lhe separar a configuração IPv6 e voltar facilmente às alterações em caso de erro.
 
-Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (ou seja *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
+Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) bem como a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores específicos:
 
 ```bash
 ~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
@@ -208,7 +208,7 @@ Poderá então voltar atrás com as modificações utilizando os comandos abaixo
 ~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-A seguir, editamos o ficheiro `ifcfg-eth0`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (i.e. *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores específicos.
+A seguir, editamos o ficheiro `ifcfg-eth0`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores específicos.
 
 ```console
 IPV6INIT=yes
@@ -248,7 +248,7 @@ No nosso exemplo, o nosso ficheiro chama-se `cloud-init-eth0.nmconnection`, pelo
 ~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
-A seguir, editamos o ficheiro `cloud-init-eth0.nmconnection`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (i.e. *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores específicos.
+A seguir, editamos o ficheiro `cloud-init-eth0.nmconnection`, adicionando apenas as linhas para a configuração IPv6 do servidor. Substitua os genéricos (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores específicos.
 
 ```console
 [ipv6]
