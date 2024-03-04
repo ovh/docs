@@ -16,14 +16,7 @@ Access to Horizon and the OpenStack APIs is established via username/password pa
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-
-> [!primary]
->
-> If the Public Cloud project concerned is the **first project** created in your customer account, OpenStack users will only be available after 7 days from the project's creation date.
->
-> You may request to remove this security measure by creating a support ticket in the OVHcloud Control Panel.
->
-
+  
 ## Instructions
 
 ### Creating an OpenStack user
