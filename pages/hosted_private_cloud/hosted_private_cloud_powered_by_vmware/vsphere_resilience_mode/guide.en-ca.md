@@ -1,7 +1,7 @@
 ---
 title: Testing a temporary host loss by enabling resilience mode
 excerpt: Find out how to test a temporary host loss with resilience mode on your VMware on OVHcloud infrastructure
-updated: 2023-12-04
+updated: 2024-03-04
 ---
 
 ## Objective

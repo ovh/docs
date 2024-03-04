@@ -1,7 +1,7 @@
 ---
 title: Probar la pérdida temporal de un host mediante la activación del modo de resiliencia (EN)
 excerpt: Find out how to test a temporary host loss with resilience mode on your VMware on OVHcloud infrastructure
-updated: 2023-12-04
+updated: 2024-03-04
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Tester la perte temporaire d'un hôte via l'activation du mode résilience"
 excerpt: "Découvrez comment tester la perte temporaire d'un hôte avec le mode résilience sur votre infrastructure VMware on OVHcloud"
-updated: 2023-12-04
+updated: 2024-03-04
 ---
 
 ## Objectif
