@@ -1,10 +1,8 @@
 ---
 title: "Gérer les comptes de service OVHcloud via l'API"
 excerpt: "Comment créer et utiliser un token permettant de se connecter à l'ensemble des API de OVHcloud"
-updated: 2024-01-10
+updated: 2024-03-04
 ---
-
- 
 
 ## Objectif
 
@@ -28,7 +26,7 @@ Ces identifiants peuvent être utilisés au sein des différentes API de nos pro
 
 ### Présentation des identités
 
-Les comptes de services sont un des types d'identités pouvant être mis en place sur votre compte OVHcloud. Les autres types de comptes sont décrits dans la [documentation associée](/pages/manage_and_operate/iam/identities-management)
+Les comptes de services sont un des types d'identités pouvant être mis en place sur votre compte OVHcloud. Les autres types de comptes sont décrits dans la [documentation associée](/pages/manage_and_operate/iam/identities-management).
 
 ### Fonctionnement des comptes de services
 
