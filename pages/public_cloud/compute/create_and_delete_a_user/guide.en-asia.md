@@ -1,7 +1,7 @@
 ---
 title: Creating and deleting OpenStack users
 excerpt: Find out how to create and delete OpenStack users in the OVHcloud Control Panel
-updated: 2022-03-16
+updated: 2024-03-04
 ---
 
 ## Objective
