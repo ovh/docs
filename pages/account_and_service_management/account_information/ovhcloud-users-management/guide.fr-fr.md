@@ -1,7 +1,7 @@
 ---
 title: 'Créer et gérer des utilisateurs locaux sur un compte OVHcloud'
 excerpt: 'Découvrez comment ajouter des utilisateurs locaux depuis votre compte OVHcloud'
-updated: 2024-01-10
+updated: 2024-03-04
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ OVHcloud vous donne la possibilité de créer des utilisateurs locaux, qui peuve
 
 ### Présentation des identités
 
-Les utilisateurs locaux sont un des types d'identités pouvant être mis en place sur votre compte OVHcloud. Les autres types de comptes sont décrits dans la [documentation associée](/pages/manage_and_operate/iam/identities-management)
+Les utilisateurs locaux sont un des types d'identités pouvant être mis en place sur votre compte OVHcloud. Les autres types de comptes sont décrits dans la [documentation associée](/pages/manage_and_operate/iam/identities-management).
 
 ### Gestion des utilisateurs locaux
 
@@ -42,12 +42,20 @@ Une fenêtre apparaît et vous devez y compléter les champs requis. Cliquez sur
 ![users-management](images/usersmanagement2.png){.thumbnail}
 
 | Champ | Détails |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | Identifiant | Renseignez, par exemple, le nom de l'utilisateur ou sa fonction. |
 | E-mail | Renseignez l'adresse e-mail de l'utilisateur. |
 | Mot de passe | Définissez le mot de passe de l'utilisateur. Il pourra modifier ce mot de passe lorsque son accès aura été créé. <br>Nous vous conseillons également de consulter [le guide sur la gestion du mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password){.external} pour définir ce mot de passe. |
-| Groupe | Choisissez un groupe parmi ceux disponibles |
+| Groupe | Choisissez un groupe parmi ceux disponibles (voir le tableau ci-dessous). |
 | Description | Vous pouvez ajouter une description de l'utilisateur. Exemple : son rôle dans votre entreprise. |
+
+**Détails des groupes par défaut :**
+
+| Rôle | Détails |
+|--|--|
+| UNPRIVILEGED (lecture seule) | Donne un accès en lecture à l'espace client OVHcloud et à toutes ses sections. |
+| DEFAULT (administrateur restreint) | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, à l'**exception de la gestion des** utilisateurs. |
+| ADMIN (administrateur) | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, **y compris** la gestion des utilisateurs. |
 
 L'utilisateur obtiendra alors son propre identifiant composé de l'identifiant numérique de votre compte (qui vous est rappelé dans le menu « Gestion des utilisateurs ») et de son nom d'utilisateur, les deux valeurs étant séparées par un « / ».
 
@@ -77,17 +85,17 @@ Dans l'onglet `Gestion des utilisateurs`{.action}, cliquez sur `Déclarer un gro
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 
-Une fenêtre s'affiche et vous devez compléter les champs requis. Cliquez sur `Valider`{.action} pour créer l'utilisateur.
+Une fenêtre s'affiche et vous devez compléter les champs requis. Cliquez sur `Valider`{.action} pour créer le groupe.
 
 ![users-management](images/usersmanagement8.png){.thumbnail}
 
 Les groupes attribuent un niveau de privilège par défaut aux utilisateurs qu'ils contiennent, en fonction du rôle que vous choisissez :
 
 | Rôle | Détails |
-|------------------|----------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | Aucun | Ne donne aucun accès à l'espace client OVHcloud si aucune politique IAM n'est mise en place. |
 | Lecture Seule | Donne un accès en lecture à l'espace client OVHcloud et à toutes ses sections. |
-| Administration restreinte | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, à l'**exception de la gestion des** utilisateurs. |
+| Administrateur restreint | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, à l'**exception de la gestion des** utilisateurs. |
 | Administrateur | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, **y compris** la gestion des utilisateurs. |
 
 #### Gérer les groupes
