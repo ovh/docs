@@ -289,6 +289,8 @@ Afin d'améliorer l'expérience client, réduire la charge de travail du support
 
 ## Aller plus loin <a name="gofurther"></a>
 
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [Gestion du RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Remplacement à chaud - RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)

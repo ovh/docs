@@ -133,9 +133,7 @@ As explained in the “Objective” section of this guide, you are the administr
 
 If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) instead.
 
-### Network configuration
-
-### OVHcloud Monitoring <a name="monitoring-server"></a> 
+### OVHcloud Monitoring <a name="monitoring-server"></a>
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) (section **Service status**).
 
@@ -152,6 +150,8 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 Click on `Confirm`{.action} to update your monitoring configuration.
 
 You can find more information about OVHcloud Monitoring in [this guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+### Network configuration
 
 #### Network bridging
 
@@ -195,7 +195,9 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 
 [Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-[Using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+[Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

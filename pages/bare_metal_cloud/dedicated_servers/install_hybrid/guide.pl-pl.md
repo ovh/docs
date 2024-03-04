@@ -95,4 +95,20 @@ Twój system operacyjny zostanie teraz zainstalowany. Możesz sprawdzić postęp
 
 ## Sprawdź również
 
+[Pierwsze kroki z serwerem dedykowanym](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)
+
+[Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
+
+[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) (EN)
+
+[Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
+
+[Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
+
+[Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (EN)
+
+[Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard) (EN)
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

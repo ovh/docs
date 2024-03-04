@@ -161,6 +161,8 @@ Vous pouvez utiliser l'appel API suivant afin d'obtenir le détail de chaque par
 
 [Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco)
 
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Choisir une grappe de disques pour installer un système d'exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)

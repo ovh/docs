@@ -287,6 +287,8 @@ In order to improve customer experience, reduce OVHcloud support workload and to
 
 ## Go further <a name="gofurther"></a>
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
