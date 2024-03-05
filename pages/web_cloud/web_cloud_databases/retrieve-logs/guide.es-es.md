@@ -58,7 +58,7 @@ Para consultar el historial de los logs de su solución Web Cloud Databases, deb
 
 > [!warning]
 >
-> Antes de conectarse, compruebe que la dirección IP pública del equipo que utiliza está autorizada en su servidor Web Cloud Databases, con la opción « `SFTP » marcada.
+> Antes de conectarse, compruebe que la dirección IP pública del equipo que utiliza está autorizada en su servidor Web Cloud Databases, con la opción "`SFTP" marcada.
 >
 > Para comprobarlo, consulte el apartado **Autorizar una dirección IP** de [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
