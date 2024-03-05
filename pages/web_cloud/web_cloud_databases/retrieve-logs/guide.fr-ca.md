@@ -41,7 +41,7 @@ Pour vérifier en temps réel les logs de votre solution Web Cloud Databases, ef
 
 C'est dans cette console intégrée que vous trouverez, en temps réel, les logs de votre solution Web Cloud Databases.
 
-> [primary]
+> [!primary]
 >
 > Comme précisé ci-dessus, les logs ne sont disponibles ici qu'en temps réel. Cela signifie que ces logs n'apparaîtront que s'ils sont générés au moment où vous vous trouvez sur l'onglet `Logs`{.action}. 
 >
