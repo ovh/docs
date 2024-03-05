@@ -1,7 +1,7 @@
 ---
-title: 'Benutzer verwalten'
-excerpt: 'Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten'
-updated: 2023-07-19
+title: "Lokale Benutzer auf einem OVHcloud Kunden-Account erstellen und verwalten"
+excerpt: "Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten"
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-07-19
 
 ## Ziel
 
-Bei OVHcloud haben Sie die Möglichkeit, Benutzer zu erstellen und diesen Lese- oder Schreibrechte für Ihren Kunden-Account zu erteilen. So können Sie Mitgliedern Ihres Unternehmens Zugriff auf Ihre OVHcloud Dienste gewähren, ohne einen riskanten Umweg zu nehmen, indem Sie etwa Ihr Passwort oder Login-Codes weitergeben.
+Bei OVHcloud haben Sie die Möglichkeit, lokale Benutzer zu erstellen und diesen Lese- oder Schreibrechte für Ihren Kunden-Account zu erteilen. So können Sie Mitgliedern Ihres Unternehmens Zugriff auf Ihre OVHcloud Dienste gewähren, ohne einen riskanten Umweg zu nehmen, indem Sie etwa Ihr Passwort oder Login-Codes weitergeben.
 
 > [!primary]
 >
@@ -19,7 +19,7 @@ Bei OVHcloud haben Sie die Möglichkeit, Benutzer zu erstellen und diesen Lese- 
 > Bei der Kontaktverwaltung hingegen geht es darum, die vollständige Verwaltung der administrativen, technischen oder rechnungsrelevanten Aspekte eines oder mehrerer Dienste Ihres OVHcloud Accounts auf eine andere Person zu delegieren. Für weitere Informationen zur Verwaltung der Kontakte lesen Sie [unsere Anleitung](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
-**Diese Anleitung erklärt, über welche Rechte ein Benutzer verfügen kann und wie Sie Benutzer hinzufügen und verwalten.**
+**Diese Anleitung erklärt, über welche Rechte ein lokaler Benutzer verfügen kann und wie Sie Benutzer hinzufügen und verwalten.**
 
 ## Voraussetzungen
 
@@ -27,6 +27,10 @@ Bei OVHcloud haben Sie die Möglichkeit, Benutzer zu erstellen und diesen Lese- 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
+
+### Grundlegendes zu Identitäten
+
+Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Account eingerichtet werden können. Diese Typen werden in der [zugehörigen Dokumentation](/pages/manage_and_operate/iam/identities-management) beschrieben.
 
 ### Benutzerverwaltung
 
@@ -43,14 +47,22 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 ![Benutzerverwaltung](images/usersmanagement2.png){.thumbnail}
  
 | Feld | Beschreibung |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | Kennung | Geben Sie zum Beispiel den Namen des Benutzers oder dessen Funktion ein. |
 | E-Mail | Geben Sie die E-Mail-Adresse des Benutzers ein. |
 | Passwort | Legen Sie das Passwort des Benutzers fest. Er kann dieses ändern, nachdem der Zugang erstellt wurde. <br>Wir empfehlen Ihnen, hierzu [die Anleitung zur Passwortverwaltung](/pages/account_and_service_management/account_information/manage-ovh-password) zu lesen. |
-| Gruppe | Wählen Sie eine der verfügbaren Gruppen aus. |
+| Gruppe | Wählen Sie eine der verfügbaren Gruppen aus (siehe unten stehende Tabelle). |
 | Beschreibung | Sie können eine Benutzerbeschreibung hinzufügen, beispielsweise die Rolle in Ihrem Unternehmen. |
 
-Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen, wobei beide Werte durch ein “/” getrennt sind.
+**Standardgruppendetails:**
+
+| Rolle | Details |
+|--|--|
+| UNPRIVILEGED (Nur Lesen) | Lesezugriff auf alle Bereiche des OVHcloud Kundencenters. |
+| DEFAULT (Eingeschränkter Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
+| ADMIN (Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **einschließlich** Benutzerverwaltung. |
+
+Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen getrennt mit einem “/”.
 
 Beispiel: **1234-567-89/johnsmith**.
 
@@ -78,17 +90,17 @@ Klicken Sie im Tab `Verwaltung der Nutzer`{.action} auf `Gruppe deklarieren`{.ac
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 
-Füllen Sie die erforderlichen Felder im neuen Fenster aus. Klicken Sie auf `Bestätigen`{.action}, um den Benutzer zu erstellen.
+Füllen Sie die erforderlichen Felder im neuen Fenster aus. Klicken Sie auf `Bestätigen`{.action}, um die Gruppe zu erstellen.
 
 ![users-management](images/usersmanagement8.png){.thumbnail}
 
 Gruppen weisen den darin enthaltenen Benutzern je nach ausgewählter Rolle eine Standardberechtigungsstufe zu:
 
 | Rolle | Details |
-|------------------|----------------------------------------------------------------------------------------------------------------------|
-| None | Gewährt keinen Zugriff auf das OVHcloud Kundencenter, solange keine IAM-Richtlinie existiert. |
-| Read-Only | Lesezugriff auf alle Bereiche des OVHcloud Kundencenters. |
-| Restricted Admin | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
+|--|--|
+| Keine | Gewährt keinen Zugriff auf das OVHcloud Kundencenter, solange keine IAM-Richtlinie existiert. |
+| Nur Lesen| Lesezugriff auf alle Bereiche des OVHcloud Kundencenters. |
+| Eingeschränkter Administrator| Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
 | Administrator | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **einschließlich** Benutzerverwaltung. |
 
 #### Gruppen verwalten

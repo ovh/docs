@@ -295,8 +295,6 @@ Afin d'améliorer l'expérience client, réduire la charge de travail du support
 
 [Remplacement à chaud - RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-[Choisir une grappe de disques pour installer un système d’exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
-
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 [Configurer votre MegaRAID en RAID 0](/pages/bare_metal_cloud/dedicated_servers/megaraid_config)
