@@ -1,7 +1,7 @@
 ---
 title: Enabling Active Directory Federation Services (AD FS) SSO connections with your OVHcloud account
 excerpt: "Find out how to link your Active Directory Federation Services (AD FS) to your OVHcloud account using SAML 2.0"
-updated: 2023-04-06
+updated: 2024-03-05
 ---
 
 ## Objective
@@ -139,6 +139,8 @@ Click on the `SSO connection`{.action} button.
 
 Fill in the XML metadata of your AD FS. The "Group Attribute Name" is optional in this case. Click on `Confirm`{.action}.
 
+You can keep local users by ticking the `Keep active OVHcloud users` box.
+
 ![OVHcloud connect SSO step 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 You should now see your AD FS as identity provider, as well as the default groups.
@@ -200,6 +202,8 @@ You can then check that the group is added to your OVHcloud account in the `Grou
 
 When you connect with the Active Directory user "johndoe" now, your OVHcloud account will recognize that the user has the "REGULAR" role, specified by its group.
 
+Warning: if you give the `NONE` privilege, you will need to assign permissions to this group via the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui).
+
 You can then disconnect from your account and log in again with your AD FS as identity provider.
 
 ### Connect via SSO
@@ -225,5 +229,7 @@ You are now logged in with the same NIC handle, but via your Active Directory us
 [Setting and managing an account password](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[How to use IAM policies using the OVHcloud Control Panel](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Join our community of users on <https://community.ovh.com/en/>.

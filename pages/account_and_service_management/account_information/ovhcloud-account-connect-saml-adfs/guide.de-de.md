@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Active Directory Federation Services (AD FS) aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Active Directory Federation Services über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2022-10-13
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -143,6 +143,8 @@ Klicken Sie auf den Button `SSO-Verbindung`{.action}.
 
 Geben Sie die XML-Metadaten Ihres AD FS ein. In diesem Fall ist das `Name des Gruppenattributs` optional. Klicken Sie auf `Bestätigen`{.action}.
 
+Sie können die lokalen Benutzer beibehalten, indem Sie das Kontrollkästchen `Aktive OVHcloud User beibehalten` aktivieren.
+
 ![OVHcloud SSO-Verbindung Schritt 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Sie sollten nun Ihren AD FS als Identity Provider sowie die Standardgruppen sehen können.
@@ -204,6 +206,8 @@ Anschließend können Sie überprüfen, ob die Gruppe zu Ihrem OVHcloud Account 
 
 Wenn Sie sich später mit dem Active Directory Benutzer "John Doe" verbinden, erkennt Ihr OVHcloud Account, dass der Benutzer die von seiner Gruppe definierte Rolle "REGULAR" hat.
 
+Achtung, wenn Sie die Berechtigung `Keine` erteilen, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/pages/account_and_service_management/account_information/iam-policy-ui) zuweisen.
+
 Anschließend können Sie sich von Ihrem Account ausloggen und sich mit Ihrem AD FS als Identity Provider neu verbinden.
 
 ### Verbindung via SSO
@@ -229,5 +233,7 @@ Sie sind nun mit derselben Kundenkennung eingeloggt, jedoch über AD FS SSO und 
 [Das Passwort Ihres Kunden-Accounts anlegen und verwalten ](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Verwendung von IAM-Richtlinie über Ihr Kundencenter](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

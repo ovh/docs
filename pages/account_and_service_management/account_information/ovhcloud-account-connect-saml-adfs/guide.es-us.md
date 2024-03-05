@@ -1,7 +1,7 @@
 ---
 title: Activar las conexiones Active Directory Federation Services (AD FS) SSO con su cuenta OVHcloud
 excerpt: "Cómo asociar el servicio Active Directory Federation Services (AD FS) a su cuenta de OVHcloud a través de SAML 2.0"
-updated: 2022-10-13
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -60,7 +60,7 @@ Puede obtener el archivo de metadatos adecuado a través de los siguientes enlac
 
 Seleccione `Import data about the relying party from a file`{.action} y seleccione su archivo de metadatos.
 
-Haga clic en el botón `Next`{.action} .
+Haga clic en el botón `Next`{.action}.
 
 ![AD FS - Añadir una aprobación - etapa 2](images/adfs_add_relying_party_trust_2.png){.thumbnail}
 
@@ -143,6 +143,8 @@ Haga clic en el botón `SSO connection`{.action}.
 
 Introduzca los metadatos XML del servicio AD FS. En este caso, el campo `Nombre de atributo de grupo` es opcional. Haga clic en `Confirmar`{.action}.
 
+Es posible conservar los usuarios locales marcando la casilla `Mantener los usuarios de OVHcloud activos`.
+
 ![OVHcloud conexión SSO etapa 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Ahora debe encontrar el AD FS como proveedor de identidad, así como los grupos por defecto.
@@ -198,11 +200,13 @@ Para añadirlo, haga clic en el botón `Declarar un grupo`{.action} e introduzca
 
 ![Grupos de gestión de usuarios AD FS](images/ovhcloud_user_management_groups_2.png){.thumbnail}
 
-A continuación, compruebe que el grupo se ha añadido a su cuenta de OVHcloud en la sección `Grupos` :
+A continuación, compruebe que el grupo se ha añadido a su cuenta de OVHcloud en la sección `Grupos`:
 
 ![Grupos de gestión de usuarios AD FS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
 
-Una vez que se conecte posteriormente con el usuario Active Directory "John Doe", su cuenta de OVHcloud reconocerá que el usuario tiene el rol "REGULAR", especificado por su grupo.
+Una vez que se conecte posteriormente con el usuario Active Directory "John Doe", su cuenta de OVHcloud reconocerá que el usuario tiene el rol `REGULAR`, especificado por su grupo.
+
+Atención: Si otorga el privilegio `Ninguno`, será necesario asignar permisos a este grupo a través de las [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 A continuación, podrá desconectarse de su cuenta y reconectarse con su AD FS como proveedor de identidad.
 
@@ -229,5 +233,7 @@ Ahora está conectado con el mismo ID de cliente, pero a través de su usuario A
 [Definición y gestión de la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Cómo utilizar las políticas IAM desde el área de cliente](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

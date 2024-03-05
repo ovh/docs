@@ -1,7 +1,7 @@
 ---
 title: Włącz połączenia Active Directory Federation Services (AD FS) SSO z Twoim kontem OVHcloud
 excerpt: "Dowiedz się, jak powiązać usługę Active Directory Federation Services (AD FS) z Twoim kontem OVHcloud przez SAML 2.0"
-updated: 2022-10-13
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -143,6 +143,8 @@ Kliknij przycisk `SSO connection`{.action} .
 
 Wpisz metadane XML Twojej usługi AD FS. W tym przypadku pole `Nazwa atrybutu grupy` jest opcjonalne. Kliknij na `Zatwierdź`{.action}.
 
+Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
+
 ![Etap 2 OVHcloud logowania SSO](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Odszukaj AD FS jako dostawcę danych, a także grupy domyślne.
@@ -204,6 +206,8 @@ Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHclo
 
 Po zalogowaniu się z użytkownikiem Active Directory "John Doe" Twoje konto OVHcloud potwierdzi rolę "REGULAR" określoną przez jego grupę.
 
+Uwaga: jeśli nadasz tej grupie uprawnienia `Brak`, konieczne będzie przypisanie uprawnień za pośrednictwem [zasad IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+
 Następnie będziesz mógł wylogować się ze swojego konta i ponownie zalogować się z AD FS jako dostawcą danych.
 
 ### Logowanie przez SSO
@@ -229,5 +233,7 @@ Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użyt
 [Definicja i zarządzanie hasłem do konta](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Jak korzystać z polityki IAM w Panelu klienta](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

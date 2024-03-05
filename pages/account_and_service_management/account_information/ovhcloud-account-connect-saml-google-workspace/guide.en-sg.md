@@ -1,7 +1,7 @@
 ---
 title: Enabling Google Workspace SSO connections with your OVHcloud account
 excerpt: "Learn how to associate your Google Workspace service with your OVHcloud account via SAML 2.0"
-updated: 2023-06-01
+updated: 2024-03-05
 ---
 
 ## Objective
@@ -99,6 +99,8 @@ Click the `SSO connection`{.action} button.
 
 Fill in the XML metadata of your Google Workspace service. Enter `Group` as the "Group Attribute Name". Click `Confirm`{.action}.
 
+You can keep local users by ticking the `Keep active OVHcloud users` box.
+
 ![OVHcloud SSO connection step 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Now you need to retrieve your Google Workspace as identity provider, as well as default groups.
@@ -158,6 +160,8 @@ You can then verify that the group is added to your OVHcloud account in the "Gro
 
 When you later log in with a user from the **Intern** group, your OVHcloud account will recognise that the user has the role "UNPRIVILEGED" specified by his group.
 
+Warning: if you give the `NONE` privilege, you will need to assign permissions to this group via the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui).
+
 You will then be able to log out of your account and log back in with your Google Workspace as an identity provider.
 
 ### Connecting via SSO
@@ -183,5 +187,7 @@ You are now logged in with the same customer ID, but through your Google Workspa
 [Setting and managing your account password](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[How to use IAM policies using the OVHcloud Control Panel](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Join our community of users on <https://community.ovh.com/en/>.
