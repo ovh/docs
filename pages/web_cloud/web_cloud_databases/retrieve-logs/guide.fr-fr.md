@@ -39,7 +39,7 @@ Pour vérifier en temps réel les logs de votre solution Web Cloud Databases, ef
 
 ![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
 
-C'est dans cette console intégrée que vous trouverez, en temps réel, les logs standards du système (**std**) de votre solution Web Cloud Databases.
+C'est dans cette console intégrée que vous trouverez, en temps réel, les logs de votre solution Web Cloud Databases.
 
 > [primary]
 >
@@ -48,9 +48,9 @@ C'est dans cette console intégrée que vous trouverez, en temps réel, les logs
 > Si vous quittez l'onglet `Logs`{.action} puis que vous revenez dessus ultérieurement, l'historique qui s'affichait auparavant aura disparu.
 >
 
-### Récupérer l'historique des logs votre solution Web Cloud Databases
+### Récupérer l'historique des logs de votre solution Web Cloud Databases
 
-Pour récupérer l'historique des logs votre solution Web Cloud Databases, vous devrez vous y connecter en SFTP.
+Pour récupérer l'historique des logs de votre solution Web Cloud Databases, vous devrez vous y connecter en SFTP.
 
 > [!warning]
 >
