@@ -86,7 +86,7 @@ Deux cas de figure sont possibles :
 >
 > 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
 >
-> 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active. Toutefois, vous pouvez vous aider de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) », afin de transférer votre nom de domaine vers OVHcloud.
+> 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active. Sachez que vous pouvez utiliser notre notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) » si vous souhaitez transférer votre nom de domaine vers OVHcloud.
 >
 
 Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
