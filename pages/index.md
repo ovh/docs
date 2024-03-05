@@ -1184,6 +1184,7 @@
             + [Backing up and exporting a database of your database server](web_cloud/web_cloud_databases/save-export-on-database-server)
             + [Restoring and importing a database to your database server](web_cloud/web_cloud_databases/restore-import-on-database-server)
             + [Configuring your database server](web_cloud/web_cloud_databases/configure-database-server)
+            + [Web Cloud Databases - How to retrieve logs](web_cloud/web_cloud_databases/retrieve-logs)
         + [Technical resources](web-cloud-clouddb-technical-resources)
             + [Web Cloud Databases EOS and EOL announcements](web_cloud/web_cloud_databases/clouddb-eos-eol)
             + [Managed databases EOL policy](web_cloud/web_cloud_databases/eol-policy)
