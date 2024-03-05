@@ -255,7 +255,7 @@ Le groupe créé doit apparaître sur la liste.
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
-Attention, si vous donnez le privilège `NONE`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
+Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
 ### Connexion via SSO
 

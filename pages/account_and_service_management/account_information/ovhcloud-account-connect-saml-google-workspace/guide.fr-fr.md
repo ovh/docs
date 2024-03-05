@@ -160,7 +160,7 @@ Vous pourrez ensuite vérifier que le groupe est ajouté à votre compte OVHclou
 
 Lorsque vous vous connecterez par la suite avec un utilisateur du group **Intern**, votre compte OVHcloud reconnaîtra que l'utilisateur a le rôle « UNPRIVILEGED » spécifié par son groupe.
 
-Attention, si vous donnez le privilège `NONE`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
+Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
 Vous pourrez ensuite vous déconnecter de votre compte et vous reconnecter avec votre Google Workspace en tant que fournisseur d'identité.
 
