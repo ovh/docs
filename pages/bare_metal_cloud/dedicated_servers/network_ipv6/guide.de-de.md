@@ -1,6 +1,6 @@
 ---
-title: 'IPv6 auf einem Dedicated Server konfigurieren'
-excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren'
+title: "IPv6 auf einem Dedicated Server konfigurieren"
+excerpt: "Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren"
 updated: 2024-02-26
 ---
 
@@ -38,17 +38,17 @@ Auf Dedicated Servern ist die erste IPv6 als 2607:5300:xxxx:xxxx::/64 deklariert
 
 Standardmäßig ist die erste IPv6 auf den meisten neueren Linux-Distributionen konfiguriert, die wir für die Installation anbieten. Das Gateway ist also bereits in der Konfigurationsdatei enthalten. In den meisten Fällen müssen Sie es nicht manuell hinzufügen.
 
-Bevor Sie beginnen, empfehlen wir Ihnen die folgende Tabelle, um bei allen Operationen die gleichen Termini zu verwenden. Er bezieht sich auf Begriffe, die wir in dieser Anleitung verwenden werden:
+Beachten Sie die folgende Terminologie, die in Codebeispielen und Anweisungen der nachfolgenden Abschnitte verwendet wird:
 
 |Bezeichnung|Beschreibung|Beispiel|
 |---|---|---|
-|YOUR_IPV6|Dies ist eine IPv6-Adresse des IPv6-Blocks, der Ihrem Server zugewiesen ist|2607:5300:xxxx:xxxx::1|
-|IPv6_PREFIX|Dies ist das Präfix (oder *netmask*) Ihres IPv6-Blocks, normalerweise 64|2607:5300:xxxx:xxxx::/64|
-|IPv6_GATEWAY|Dies ist das Gateway Ihres IPv6-Blocks|2607:5300:xxxx:ff:ff:ff:ff oder fe80::1|
+|YOUR_IPV6|IPv6-Adresse des IPv6-Blocks, der Ihrem Server zugewiesen ist|2607:5300:xxxx:xxxx::1|
+|IPv6_PREFIX|Präfix (oder *netmask*) Ihres IPv6-Blocks, normalerweise 64|2607:5300:xxxx:xxxx::/64|
+|IPv6_GATEWAY|Gateway Ihres IPv6-Blocks|2607:5300:xxxx:ff:ff:ff:ff oder fe80::1|
 
 In unseren Beispielen verwenden wir den Texteditor `nano`. Sie können natürlich auch einen beliebigen Texteditor verwenden.
 
-### Standardgateway (Gateway)
+### Standard-Gateway
 
 Der erste Schritt besteht darin, das Ihrem Server zugewiesene IPv6-Gateway abzurufen. Es gibt zwei Möglichkeiten. Fahren Sie mit der Methode fort, die Sie verwenden möchten.
 
@@ -74,11 +74,11 @@ Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Bei
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
-Die Header "0" können in einem IPv6-Gateway gelöscht werden.
+Nullstellen können in einem IPv6-Gateway ausgelassen werden.
 
-Beispiel
+Beispiel:
 
-IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60:62FF:FF:FF:FF:FF` geschrieben werden.
+IPv6_GATEWAY `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60:62FF:FF:FF:FF:FF` geschrieben werden.
 
 > [!warning]
 > 
@@ -91,7 +91,7 @@ Die folgende Beispielkonfiguration basiert auf Debian 11 (Bullseye).
 
 > [!warning]
 >
-> Es wird ausdrücklich empfohlen, dass Sie vor Befolgen der nachstehenden Schritte die IPv6-Autokonfiguration und -Router-Ankündigung deaktivieren. Fügen Sie hierzu die folgenden Zeilen Ihrer `sysctl.conf`-Datei hinzu, die sich in /etc/sysctl.conf befindet:
+> Es wird ausdrücklich empfohlen, dass Sie vor Befolgen der nachstehenden Schritte die IPv6-Autokonfiguration und die Router-Ankündigung deaktivieren. Fügen Sie hierzu die folgenden Zeilen Ihrer `sysctl.conf`-Datei hinzu, die sich in /etc/sysctl.conf befindet:
 > 
 > `net.ipv6.conf.all.autoconf=0`
 > 
@@ -103,7 +103,7 @@ Die folgende Beispielkonfiguration basiert auf Debian 11 (Bullseye).
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Schritt 2: Backup erstellen
@@ -111,7 +111,7 @@ Die folgende Beispielkonfiguration basiert auf Debian 11 (Bullseye).
 Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/network/interfaces.d`. Erstellen Sie eine Sicherungskopie der Datei mit einem der folgenden Befehle, bevor Sie den Vorgang fortsetzen:
 
 ```sh
-~# sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
@@ -147,9 +147,9 @@ pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
 
-Zusätzliche IPv6-Adressen können mit folgenden Zeilen in der Konfigurationsdatei hinzugefügt werden: `up ip -6 addr add ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`, `up ip -6 addr add ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0` usw.
+Zusätzliche IPv6-Adressen können mit folgenden Zeilen in der Konfigurationsdatei hinzugefügt werden: `up ip -6 addr add ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`, `up ip -6 addr add ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`, etc.
 
-Um sicherzustellen, dass IPv6 aktiviert oder deaktiviert ist, wenn die Schnittstelle eth0 aktiviert oder deaktiviert ist, müssen Sie folgende Zeile zur Konfiguration hinzufügen:
+Um sicherzustellen, dass IPv6 aktiviert oder deaktiviert ist, wenn das Interface **eth0** aktiviert oder deaktiviert ist, müssen Sie folgende Zeile zur Konfiguration hinzufügen:
 
 `down ip -6 addr del ADDITIONAL_IPV6_1/IPv6_PREFIX dev eth0`<br>
 `down ip -6 addr del ADDITIONAL_IPV6_2/IPv6_PREFIX dev eth0`
@@ -199,7 +199,7 @@ iface eth0 inet6 static
 Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Netzwerk oder Ihren Server neu, um die Änderungen anzuwenden.
 
 ```sh
-~# sudo /etc/init.d/networking restart
+sudo /etc/init.d/networking restart
 ```
 
 #### Schritt 5: IPv6-Konnektivität testen
@@ -226,34 +226,35 @@ Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfig
 
 Die folgende Beispielkonfiguration basiert auf Fedora 39.
 
-Fedora verwendet jetzt Schlüsseldateien (*keyfiles*).
-Fedora hat zuvor Netzwerkprofile verwendet, die NetworkManager im ifcfg-Format im Verzeichnis `/etc/sysconfig/network-scripts/` gespeichert hat.<br>
-Da die ifcfg nun veraltet ist, erstellt NetworkManager die neuen Profile in diesem Format nicht mehr standardmäßig. Die Konfigurationsdatei befindet sich nun unter `/etc/NetworkManager/system-connections/`.
+Fedora verwendet Schlüsseldateien (*keyfiles*).
 
-In diesem Beispiel heißt unsere Datei `cloud-init-eno1.nmconnection`.
+Fedora hat zuvor Netzwerkprofile verwendet, die NetworkManager im Format ifcfg im Verzeichnis `/etc/sysconfig/network-scripts/` gespeichert hat.<br>
+Da ifcfg nun veraltet ist, erstellt NetworkManager die neuen Profile in diesem Format nicht mehr standardmäßig. Die Konfigurationsdatei befindet sich nun unter `/etc/NetworkManager/system-connections/`.
 
-#### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
+In diesem Beispiel heißt die Datei `cloud-init-eno1.nmconnection`.
+
+#### Schritt 1: Über SSH die Verbindung mit Ihrem Server herstellen
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Schritt 2: Backup erstellen
 
 > [!primary]
 >
-> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Bitte ersetzen Sie dies durch den Namen Ihrer Datei.
+> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Ersetzen Sie dies durch den Namen Ihrer Datei.
 >
 
-Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zurückgehen können:
+Erstellen Sie zunächst eine Kopie der Quelldatei, damit Sie jederzeit zurücksetzen können:
 
 ```sh
-~# sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
-Bearbeiten Sie die Datei, indem Sie die folgenden Zeilen hinzufügen, ohne die Originaldatei zu ändern. Ersetzen Sie die generischen Elemente (d. h. `YOUR_IPV6` und `IPv6_PREFIX`) durch Ihre spezifischen Werte. Wir haben auch die IPv4-Konfiguration weggelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration erfolgt in derselben Konfigurationsdatei.
+Bearbeiten Sie die Datei, indem Sie die folgenden Zeilen hinzufügen, ohne die Originaldatei zu ändern. Ersetzen Sie die generischen Elemente (`YOUR_IPV6` und `IPv6_PREFIX`) durch Ihre spezifischen Werte. Wir haben auch die IPv4-Konfiguration ausgelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration erfolgt in derselben Konfigurationsdatei.
 
 ```console
 [ipv6]
@@ -279,7 +280,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 **Beispielkonfiguration:**
 
 ```sh
-~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
 Anschließend bearbeiten wir die Konfigurationsdatei:
@@ -310,16 +311,18 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Netzwerk oder Ihren Server neu, um die Änderungen anzuwenden.
 
 ```sh
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 #### Schritt 5: IPv6-Konnektivität testen
 
-Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
+Sie können die IPv6-Konnektivität testen, indem Sie folgenden Befehl ausführen:
 
 ```sh
 ping6 -c 4 2001:4860:4860::8888
+```
 
+```console
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 64 bytes from 2001:4860:4860::8888: icmp_seq=1 ttl=57 time=4.07 ms
 64 bytes from 2001:4860:4860::8888: icmp_seq=2 ttl=57 time=4.08 ms
@@ -342,7 +345,7 @@ Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Schritt 2: Netzwerkkonfigurationsdatei erstellen
@@ -352,7 +355,7 @@ Am besten erstellen Sie eine separate Konfigurationsdatei mit der Erweiterung .y
 In unserem Beispiel heißt unsere Datei `51-cloud-init-ipv6.yaml`:
 
 ```sh
-~# sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
+sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
@@ -397,7 +400,7 @@ network:
 **Beispielkonfiguration:**
 
 ```sh
-~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 Anschließend bearbeiten wir die Konfigurationsdatei:
@@ -435,13 +438,13 @@ network:
 Sie können Ihre Konfiguration mit folgendem Befehl testen:
 
 ```sh
-~# sudo netplan try
+sudo netplan try
 ```
 
 Ist der Befehl korrekt, verwenden Sie den folgenden Befehl:
 
 ```sh
-~# sudo netplan apply
+sudo netplan apply
 ```
 
 #### Schritt 5: IPv6-Konnektivität testen
@@ -464,7 +467,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-### CentOS 7, AlmaLinux (8 & 9) und Rocky Linux (8 & 9)
+### CentOS 7, Alma Linux (8 & 9) und Rocky Linux (8 & 9)
 
 Die folgende Beispielkonfiguration basiert auf CentOS 7.
 
@@ -473,25 +476,25 @@ Die Netzwerkkonfigurationsdatei befindet sich im Verzeichnis `/etc/sysconfig/net
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Schritt 2: Backup erstellen
 
 > [!primary]
 >
-> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Bitte passen Sie die Datei an Ihren Dateinamen an.
+> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Passen Sie die Angaben an Ihren Dateinamen an.
 >
 
 Erstellen Sie zunächst eine Kopie der Konfigurationsdatei, damit Sie jederzeit zur vorherigen Version zurückkehren können:
 
 ```sh
-~# sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
 ```
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
-Fügen Sie in der geöffneten Konfigurationsdatei die folgenden Zeilen hinzu, falls diese fehlen. Ersetzen Sie die generischen Elemente (d. h. `YOUR_IPv6`, `IPV6_GATEWAY` und `IPV6_PREFIX`) durch Ihre spezifischen Werte. Außerdem haben wir die IPv4-Konfiguration weggelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration wird in derselben Konfigurationsdatei vorgenommen.
+Fügen Sie in der geöffneten Konfigurationsdatei die folgenden Zeilen hinzu, falls diese fehlen. Ersetzen Sie die generischen Elemente (`YOUR_IPv6`, `IPV6_GATEWAY` und `IPV6_PREFIX`) durch Ihre spezifischen Werte. Außerdem haben wir die IPv4-Konfiguration ausgelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration wird in derselben Konfigurationsdatei vorgenommen.
 
 ```console
 IPV6INIT=yes
@@ -499,7 +502,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Bei Alma und Rocky Linux kann der Inhalt der Konfigurationsdatei von dem oben genannten abweichen. In diesem Fall genügt es, die fehlenden Elemente hinzuzufügen. Ersetzen Sie nichts in der Originaldatei.
+Bei Alma Linux und Rocky Linux kann der Inhalt der Konfigurationsdatei von dem oben genannten abweichen. In diesem Fall genügt es, die fehlenden Elemente hinzuzufügen. Ersetzen Sie nichts in der Originaldatei.
 
 Wenn Sie weitere IPv6-Adressen auf Ihrer Maschine benötigen, fügen Sie diese in der Zeile `IPV6ADDR_SECONDARIES` durch Leerzeichen getrennt hinzu.
 
@@ -510,7 +513,7 @@ IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFI
 **Beispielkonfiguration:**
 
 ```sh
-~# sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 Anschließend bearbeiten wir die Konfigurationsdatei:
@@ -535,13 +538,13 @@ IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
 Speichern Sie die Änderungen in der Datei, und starten Sie das Netzwerk dann mit einem der folgenden Befehle neu:
 
 ```sh
-~# sudo systemctl restart network
+sudo systemctl restart network
 ```
 
-**Für AlmaLinux und Rocky Linux**
+**Für Alma Linux und Rocky Linux**
 
 ```sh
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 Sie können Ihren Server auch neu starten, um die Änderungen zu übernehmen.
@@ -598,13 +601,11 @@ Geben Sie Ihre IPv6-Konfiguration ein (`IPv6-Adresse` und `Standardgateway`), se
 
 ### Troubleshooting
 
-Sie haben Ihre IPv6 konfiguriert, aber nichts funktioniert?
+Wenn Ihre IPv6-Konfiguration dennoch nicht funktioniert, können Sie herausfinden, ob der Fehler in der durchgeführten Konfiguration oder im Netzwerk von OVHcloud liegt.
 
-Es ist ganz einfach festzustellen, ob der Fehler in der durchgeführten Konfiguration oder im Netzwerk von OVHcloud liegt.
+Versetzen Sie Ihren Server zunächst in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-[Versetzen Sie Ihren Server zunächst in den Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
-
-Lassen Sie sich dann von den folgenden Befehlen inspirieren, um Ihr IPv6 nicht-persistent zu konfigurieren, indem Sie "YOUR_IPV6", "IPV6_PREFIX" und "IPV6_GATEWAY" durch Ihre eigenen Informationen ersetzen:
+Nutzen Sie dann die folgenden Befehle, um Ihr IPv6 nicht-persistent zu konfigurieren, indem Sie "YOUR_IPV6", "IPV6_PREFIX" und "IPV6_GATEWAY" durch Ihre eigenen Werte ersetzen:
 
 ```sh
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
@@ -618,7 +619,7 @@ Testen Sie Ihr Netzwerk erneut mit einem Ping6, zum Beispiel:
 ping6 ipv6.google.com
 ```
 
-Wenn Ihr Server antwortet, wurde wahrscheinlich einer der Schritte Ihrer ursprünglichen Konfiguration nicht genau ausgeführt.
+Wenn Ihr Server antwortet, wurde wahrscheinlich einer der Schritte Ihrer ursprünglichen Konfiguration fehlerhaft ausgeführt.
 
 Zögern Sie in jedem Fall nicht, sich an [unser Support-Team](https://help.ovhcloud.com/csm?id=csm_get_help) zu wenden, um Ihre Konfigurationen zu überprüfen. Es müssen folgende Angaben gemacht werden:
 
