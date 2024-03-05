@@ -94,7 +94,7 @@ Existen dos situaciones posibles:
 >
 > 1: Para identificar la zona DNS activa de un dominio registrado en OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 >
-> 2: Si su dominio no está registrado con OVHcloud, contacte con el actual agente registrador* para conocer el lugar en el que está alojada su zona DNS activa.
+> 2: Si su dominio no está registrado con OVHcloud, contacte con el actual agente registrador* para conocer el lugar en el que está alojada su zona DNS activa. Si desea realizar esta acción, puede consultar nuestra guía "[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
 >
 
 Si los servidores DNS declarados para el dominio tienen una de las dos formas siguientes:
