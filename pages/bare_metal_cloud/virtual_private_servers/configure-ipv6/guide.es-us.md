@@ -1,7 +1,7 @@
 ---
-title: Configurar la IPv6 en un VPS
-excerpt: Cómo configurar la IPv6 en un VPS de OVHcloud
-updated: 2024-03-01
+title: "Configurar la IPv6 en un VPS"
+excerpt: "Cómo configurar la IPv6 en un VPS de OVHcloud"
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -89,7 +89,7 @@ Existen varias formas de aplicar la configuración IPv6. Utilice los siguientes 
 
 - [Aplicación no persistente](#nonpersistent)
 - [Aplicación persistente en Debian y derivados (Ubuntu, Crunchbang, SteamOS…)](#persistentdebian)
-- [Aplicación persistente en Red Hat y derivados (CentOS, ClearOS…)](#persistentredhat)
+- [Aplicación persistente en Red Hat y derivados (CentOS, Rocky Linux, Alma Linux…)](#persistentredhat)
 - [Aplicación persistente en Fedora](#persistentfedora)
 - [Aplicación persistente en Windows Server](#persistentwindows)
 
@@ -120,9 +120,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Dos métodos para configurar su red:
 
-- **para Debian 10 e 11**: utilice el [método basado en el archivo *interfaces*](#interfaces).
+- **Para Debian 10 e 11**: utilice el [método basado en el archivo *interfaces*](#interfaces).
 
-- **para Debian 12, Ubuntu 20.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
+- **Para Debian 12, Ubuntu 20.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
 
 En algunos casos, el método a utilizar puede no ser el indicado anteriormente. Para asegurarse, navegue por el sistema para comprobar el método actual.  Visite el sitio <https://netplan.io/> para más información, si es necesario.
 
@@ -140,7 +140,7 @@ El método más utilizado es crear un archivo de configuración en el directorio
 En nuestro ejemplo, nuestro archivo se llama `51-cloud-init-ipv6`:
 
 ```bash
-~# sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
+sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 De este modo, podrá separar la configuración IPv6 y, en caso de error, restablecer fácilmente los cambios.
@@ -176,11 +176,11 @@ pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 A continuación, reinicie el servicio de red con uno de los siguientes comandos:
 
 ```bash
-~# sudo service networking restart
+sudo service networking restart
 ```
 
 ```bash
-~# sudo systemctl restart networking
+sudo systemctl restart networking
 ```
 
 También puede añadir la configuración anterior a uno de los siguientes archivos (con privilegios *sudo*), según la generación del sistema operativo instalado en el servidor:
@@ -191,14 +191,14 @@ También puede añadir la configuración anterior a uno de los siguientes archiv
 Le recomendamos que guarde el archivo de configuración correspondiente. Por ejemplo, utilice el siguiente comando:
 
 ```bash
-~# sudo cp /etc/network/interfaces /etc/network/interfaces.bak
+sudo cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
 Podrá cancelar los cambios con los siguientes comandos:
 
 ```bash
-~# sudo rm -f /etc/network/interfaces
-~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
+sudo rm -f /etc/network/interfaces
+sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Configuración con Netplan <a name="netplan"></a>
@@ -210,7 +210,7 @@ El mejor enfoque consiste en crear un fichero de configuración independiente pa
 En nuestro ejemplo, nuestro archivo se llama `51-cloud-init-ipv6.yaml`:
 
 ```bash
-~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 A continuación, edite el archivo `51-cloud-init-ipv6.yaml` añadiendo las siguientes líneas para la configuración IPv6. Sustituya los elementos genéricos (es decir, *YOUR_IPV6*, *IPV6_PREFIX* y *IPV6_GATEWAY*) y la interfaz de red (si su servidor no utiliza **eth0**) por sus valores específicos
@@ -256,30 +256,30 @@ network:
 Para probar su configuración, utilice el siguiente comando:
 
 ```bash
-~# sudo netplan try
+sudo netplan try
 ```
 
 Si es correcta, puede aplicarla con el siguiente comando:
 
 ```bash
-~# sudo netplan apply
+sudo netplan apply
 ```
 
-#### Aplicación persistente en Red Hat y sus derivados (CentOS, Rocky & Alma Linux, etc.) <a name="persistentredhat"></a>
+#### Aplicación persistente en Red Hat y sus derivados (CentOS, Rocky Linux, Alma Linux, etc.) <a name="persistentredhat"></a>
 
 Los archivos de configuración de red se encuentran en el directorio `/etc/sysconfig/network-scripts/`. En primer lugar, le recomendamos que guarde el archivo de configuración correspondiente. Por ejemplo, copie el archivo `ifcfg-eth0` con los siguientes comandos. Si lo necesita, no olvide sustituir **eth0** por la interfaz real.
 
 ```bash
-~# cd /etc/sysconfig/network-scripts/
-~# sudo mkdir backup
-~# sudo cp ifcfg-eth0 backup/ifcfg-eth0
+cd /etc/sysconfig/network-scripts/
+sudo mkdir backup
+sudo cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
 Podrá cancelar los cambios con los siguientes comandos:
 
 ```bash
-~# sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
-~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 A continuación, edite el archivo `ifcfg-eth0` añadiendo la configuración IPv6 del servidor. Sustituya los elementos genéricos (es decir, *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) por sus valores personalizados.
@@ -303,7 +303,7 @@ IPV6_DEFAULTGW=2607:5300:201:abcd::1
 - Cree un archivo (con los permisos *sudo*), indicando las rutas IPv6 por defecto:
 
 ```bash
-~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
+sudo touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
 - Modifique el archivo y añada las siguientes líneas. Sustituya los elementos genéricos (*IPV6_GATEWAY* y **eth0**, si fuera necesario) por sus valores personalizados.
@@ -323,11 +323,11 @@ default via 2607:5300:201:abcd::1
 Por último, reinicie el servicio de red para que el sistema pueda aplicar la nueva configuración utilizando uno de los siguientes comandos:
 
 ```bash
-~# sudo service networking restart
+sudo service networking restart
 ```
 
 ```bash
-~# sudo systemctl restart networking
+sudo systemctl restart networking
 ```
 
 #### Aplicación persistente en Fedora 37 y versiones posteriores <a name="persistentfedora"></a>
@@ -335,14 +335,14 @@ Por último, reinicie el servicio de red para que el sistema pueda aplicar la nu
 El archivo de configuración de red se encuentra en `/etc/NetworkManager/system-connections/`. Se recomienda realizar una copia de seguridad del archivo de configuración correspondiente. En nuestro ejemplo, nuestro archivo se llama `cloud-init-eth0.nmconnection`, por lo que copiamos el archivo `cloud-init-eth0.nmconnection` utilizando los siguientes comandos. Si lo necesita, sustituya **eth0** por su interfaz actual.
 
 ```bash
-~# cd /etc/NetworkManager/system-connections/
-~# sudo mkdir backup
-~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
+cd /etc/NetworkManager/system-connections/
+sudo mkdir backup
+sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
 A continuación, editamos el archivo `cloud-init-eth0.nmconnection` añadiendo únicamente las líneas para la configuración IPv6 del servidor. Sustituya los elementos genéricos (es decir, *YOUR_IPV6*, *IPV6_PREFIX* y *IPV6_GATEWAY*) por sus valores específicos.
 
-Si asumimos que su interfaz es «eth0», la configuración debería ser similar a la siguiente:
+Si asumimos que su interfaz es **eth0**, la configuración debería ser similar a la siguiente:
 
 ```console
 [ipv6]

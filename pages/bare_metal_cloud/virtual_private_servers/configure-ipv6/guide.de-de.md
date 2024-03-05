@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einem VPS einrichten"
 excerpt: "Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren"
-updated: 2024-03-01
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -141,7 +141,7 @@ sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 
 Auf diese Weise können Sie die IPv6-Konfiguration absondern und die Änderungen im Fehlerfall problemlos rückgängig machen.
 
-Fügen Sie folgende Zeilen zur Datei hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (falls Ihr Server nicht **eth0** verwendet) durch Ihre individuellen Werte.
+Fügen Sie folgende Zeilen zur Datei hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (falls Ihr Server nicht **eth0** verwendet) durch Ihre individuellen Werte.
 
 ```console
 auto eth0
