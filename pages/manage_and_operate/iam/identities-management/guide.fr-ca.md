@@ -22,7 +22,7 @@ Il existe plusieurs types d'identités pouvant interagir avec les produits OVHcl
 
 ### Compte OVHcloud
 
-Il s'agit de l'identité principale vous servant à vous connecter sur l'espace client OVHcloud. Vous utilisez le compte OVHcloud lorsque vous vous connectez avec votre adresse email ou votre identifiant client (ex : xx1111-ovh) sur l'espace client.
+Il s'agit de l'identité principale vous servant à vous connecter sur l'espace client OVHcloud. Vous utilisez le compte OVHcloud lorsque vous vous connectez avec votre adresse email sur l'espace client.
 
 Cette identité agit comme un compte root et ne peut pas voir ses droits restreints, quelles que soient les politiques d'accès mises en oeuvre.
 
