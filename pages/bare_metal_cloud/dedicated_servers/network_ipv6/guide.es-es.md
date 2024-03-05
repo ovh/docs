@@ -463,7 +463,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
-### CentOS 7, AlmaLinux (8 y 9) y Rocky Linux (8 y 9)
+### CentOS 7, Alma Linux (8 y 9) y Rocky Linux (8 y 9)
 
 El ejemplo de configuración siguiente está basado en CentOS 7.
 
@@ -518,6 +518,8 @@ IPV6ADDR=2607:5300:adce:f2cd::/64
 IPV6_DEFAULTGW=2607:5300:adce:f2ff:ff:ff:ff:ff
 ```
 
+Para Alma Linux y Rocky linux, el contenido del archivo de configuración puede diferir del mostrado arriba, en cuyo caso simplemente añada los elementos que faltan. No reemplace nada en el archivo original.
+
 Adición de direcciones IPv6 adicionales:
 
 ```console
@@ -535,7 +537,7 @@ Guarde los cambios en el archivo y reinicie la red mediante uno de los siguiente
 sudo systemctl restart network
 ```
 
-**Para AlmaLinux y Rocky Linux**
+**Para Alma Linux y Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager

@@ -469,7 +469,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
-### CentOS 7, AlmaLinux (8 & 9) e Rocky Linux (8 & 9)
+### CentOS 7, Alma Linux (8 & 9) e Rocky Linux (8 & 9)
 
 La configurazione di esempio qui sotto è basata su CentOS 7.
 
@@ -541,7 +541,7 @@ Salvare le modifiche nel file e riavviare la rete con uno dei comandi seguenti:
 sudo systemctl restart network
 ```
 
-**Per AlmaLinux e Rocky Linux**
+**Per Alma Linux e Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager

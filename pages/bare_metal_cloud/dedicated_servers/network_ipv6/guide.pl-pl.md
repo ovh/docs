@@ -467,7 +467,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 
-### CentOS 7, AlmaLinux (8 i 9) i Rocky Linux (8 i 9)
+### CentOS 7, Alma Linux (8 i 9) i Rocky Linux (8 i 9)
 
 Poniższa przykładowa konfiguracja oparta jest na systemie CentOS 7.
 
@@ -502,7 +502,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-W przypadku systemów Alma i Rocky linux zawartość pliku konfiguracyjnego może różnić się od przedstawionej powyżej, w którym to przypadku wystarczy dodać brakujące elementy. Nie zastępuj niczego w oryginalnym pliku.
+W przypadku systemów Alma Linux i Rocky linux zawartość pliku konfiguracyjnego może różnić się od przedstawionej powyżej, w którym to przypadku wystarczy dodać brakujące elementy. Nie zastępuj niczego w oryginalnym pliku.
 
 Jeśli potrzebujesz więcej adresów IPv6 na komputerze, dodaj je w wierszu `IPV6ADDR_SECONDARIES`, rozdzielając spacją.
 
@@ -543,7 +543,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć za pomocą jednego z 
 sudo systemctl restart network
 ```
 
-**Dla AlmaLinux i Rocky Linux**
+**Dla Alma Linux i Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager
