@@ -123,7 +123,7 @@ Une fois la commande validée, vous recevrez un bon de commande. Le processus de
 >
 > Si le code de transfert n'a pas été saisi lors de la commande, vous pourrez le renseigner depuis la fenêtre `Opérations en cours`{.action} et ainsi valider le transfert.
 
-### Étape 4 : validation du transfert par le bureau d'enregistrement actuel<a name="Etape4"></a>
+### Étape 4 : validation du transfert par le bureau d'enregistrement actuel<a name="step4"></a>
 
 Une fois la commande et le code de transfert validés, le bureau d'enregistrement du nom de domaine actuel (qui n'est toujours pas OVHcloud) recevra une demande de validation. À ce stade, plusieurs résultats sont possibles, selon les actions entreprises.
 
