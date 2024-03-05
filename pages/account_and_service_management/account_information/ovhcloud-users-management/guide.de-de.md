@@ -1,6 +1,6 @@
 ---
-title: 'Lokale Benutzer auf einem OVHcloud Account erstellen und verwalten'
-excerpt: 'Erfahren Sie, wie Sie lokale Benutzer über Ihren OVHcloud-Account hinzufügen'
+title: "Lokale Benutzer auf einem OVHcloud Kunden-Account erstellen und verwalten"
+excerpt: "Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten"
 updated: 2024-03-04
 ---
 
@@ -30,7 +30,7 @@ Bei OVHcloud haben Sie die Möglichkeit, lokale Benutzer zu erstellen und diesen
 
 ### Grundlegendes zu Identitäten
 
-Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud-Konto eingerichtet werden können. Andere Kontotypen werden in der [zugehörigen Dokumentation](/pages/manage_and_operate/iam/identities-management) beschrieben.
+Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Account eingerichtet werden können. Diese Typen werden in der [zugehörigen Dokumentation](/pages/manage_and_operate/iam/identities-management) beschrieben.
 
 ### Benutzerverwaltung
 
@@ -62,7 +62,7 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 | DEFAULT (Eingeschränkter Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
 | ADMIN (Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **einschließlich** Benutzerverwaltung. |
 
-Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen, wobei beide Werte durch ein “/” getrennt sind.
+Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen getrennt mit einem “/”.
 
 Beispiel: **1234-567-89/johnsmith**.
 
