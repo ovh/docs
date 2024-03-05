@@ -1,68 +1,67 @@
 ---
 title: "Configurer un Standalone Edge pour L2 à L2VPN"
 excerpt: "Déployez un serveur NSX Standalone Edge pour étendre la gamme L2 à L2VPN vers une infrastructure NSX"
-updated: 2024-03-04
+updated: 2024-03-05
 ---
- 
+
 ## Objectif
-  
+
 **Ce guide vous détaille comment déployez un serveur Edge autonome NSX pour étendre la gamme L2 à L2VPN vers une infrastructure NSX (anciennement NSX-t). Le serveur Edge autonome peut être déployé sur une infrastructure avec ou sans NSX-V.**
-  
+
 ## Prérequis
 
 - Avoir un accès NSX
 - Avoir deux PCCs
 
 > [!primary]
-> Nous tenons aussi à rappeler que les IPs sont des exemples et qu'elles doivent être modifiés selon votre configuration.
+> Prenez en compte que les IPs indiquées dans ce guide le sont à titre d'exemples et qu'elles doivent être modifiés selon votre configuration.
 
 ## En pratique
-  
-> [!primary]
-> Pour la configuration des PCCs, veuillez accéder à votre interface NSX dans la section Networking. Puis suivez les différentes étapes ci-dessous. Notez aussi que chaque étape de la configuration s'effectue sur les deux environnements.
 
+> [!primary]
+> Pour la configuration des PCCs, veuillez accéder à votre interface NSX dans la section Networking et suivez ensuite les différentes étapes ci-dessous. Notez aussi que chaque étape de la configuration s'effectue sur les deux environnements.
 
 ### Configuration du NSX L2VPN sur le NSX-T
 
 #### Création d'un Segment
 
-Dans la section `Segments` >  `Add Segments` de votre NSX-T, créez un segment. Nommez le et choissisez votre passerelle pour correspondre à votre VLAN. Nous changerons sa configuration plus tard.
+Dans la section `Segments`{.action} >  `Add Segments`{.action} de votre NSX-T, créez un segment. Nommez-le et choissisez votre passerelle pour correspondre à votre VLAN. Nous changerons sa configuration plus tard.
 
 ![Segment Creation](images/segment_creation.png){.thumbnail}
 
-##### Création IPSec service
+##### Création du IPSec service
 
-Dans la section `VPN` > `VPN Services` > `Add Service` > `IPSec`, créez un service IPsec qui chiffrera le L2VPN. Dans la configuration de celui-ci utilisez la même passerelle que votre segment précédent. De plus, assurez vous que les options **Admin Status** et **Session Sync** soient activées.
+Dans la section `VPN`{.action} > `VPN Services`{.action} > `Add Service`{.action} > `IPSec`{.action}, créez un service IPsec qui chiffrera le L2VPN. Dans la configuration de celui-ci, utilisez la même passerelle que votre segment précédent. De plus, assurez-vous que les options **Admin Status** et **Session Sync** sont activées.
 
 ![IPSec Creation](images/ipsec_service_creation.png){.thumbnail}
 
-#### Création L2VPN service
+#### Création du L2VPN service
 
-Dans la section `VPN` > `VPN Services` > `Add Service` > `L2 VPN Server`, créez un L2VPN server service. Ici aussi utilisez la même passerelle.
+Dans la section `VPN`{.action} > `VPN Services`{.action} > `Add Service`{.action} > `L2 VPN Server`{.action}, créez un L2VPN server service. Ici aussi, utilisez la même passerelle.
 
 ![L2VPN Server Creation](images/l2vpn_server_service_creation.png){.thumbnail}
 
-#### Création Local Endpoint
+#### Création du Local Endpoint
 
-Dans la section `VPN` > `Local Endpoints` > `Add Local Endpoint`, créez un Local Endpoint pour l'IPSec service. Ici utilisez une IP dans le bloc IP livré avec le PCC
+Dans la section `VPN`{.action} > `Local Endpoints`{.action} > `Add Local Endpoint`{.action}, créez un Local Endpoint pour l'IPSec service. Ici, utilisez une IP dans le bloc IP livré avec le PCC.
 
 ![LocalEndpoint Creation](images/localendpoint_creation.png){.thumbnail}
 
-Assurez vous que l'option **All IPSec Local Endpoints** soit activée dans votre Gateway T1 que vous utilisée (`Tier-1 Gateways` > `Route Advertisement`).
+Assurez-vous que l'option **All IPSec Local Endpoints** est activée dans le Gateway T1 que vous utilisez (`Tier-1 Gateways`{.action} > `Route Advertisement`{.action}).
 
 ![T1 Gateway Option](images/t1_gateway_options.png){.thumbnail}
 
-#### Creation L2VPN serveur for LocalEndpoint
+#### Creation du L2VPN serveur pour le LocalEndpoint
 
 Dans la section `VPN` > `VPN Services` > `Add Service` > `L2 VPN Server`, créez un L2VPN serveur service en utilsant le LocalEndpoint et l'adresse IP distante du client L2VPN que nous déploierons ultérieurement. L'interface du tunnel correspond à une nouvelle adresse IP utilisée pour celui-ci.
 
 ![L2VPN Server for LocalEndpoint](images/l2vpn_server_for_localendpoint.png){.thumbnail}
 
-Ensuite, revenez dans la configuration de votre segment dans  `Segments` > `Votre Segment` > `L2VPN`. Selectionnez un tunnel VPN ID pour ce segment.
+Ensuite, revenez dans la configuration de votre segment dans  `Segments`{.action} > `Votre Segment`{.action} > `L2VPN`{.action}. Selectionnez un tunnel VPN ID pour ce segment.
 
 ![L2VPN ID Tunnel](images/l2vpn_configure_id.png){.thumbnail}
 
-Il vous suffit plus que de télécharger la configuration serveur L2VPN
+Il vous suffit alors de télécharger la configuration serveur L2VPN.
 
 ![L2VPN Configuration Server](images/l2vpn_configuration_server.png){.thumbnail}
 
@@ -70,19 +69,19 @@ Il vous suffit plus que de télécharger la configuration serveur L2VPN
 
 Déployez l'OVF (Open Virtual Format). Vous pouvez le retrouver sur le portail client de VMware dans la même section où vous téléchargez NSX (NSX-t).
 
-Vous pouvez aussi la retrouver sur cette [page de téléchargement](https://customerconnect.vmware.com/downloads/details?downloadGroup=NSXV_6414_EDGE&productId=417)
+Vous pouvez aussi la retrouver sur cette [page de téléchargement](https://customerconnect.vmware.com/downloads/details?downloadGroup=NSXV_6414_EDGE&productId=417).
 
 > [!primary]
-> Si vous ne savez pas deployer un OVF vous pouvez retrouver notre guide [ici](pages/bare_metal_cloud/managed_bare_metal/ovf_template/)
+> Si vous ne savez pas deployer un OVF, vous pouvez retrouver notre guide [ici](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 >
 
 #### Configuration du template OVF
 
 | Source Network | Destination Network |
 | ------- | ------ |
-|Public | Utilisez un vlan de votre choix et configurer un NAT pour sortir |
+| Public | Utilisez un vlan de votre choix et configurer un NAT pour sortir |
 | Trunk | Ici nous utilisons le VXLAN provenant du NSX-V |
-| HA interface | Pas utiliser pour ce cas ci |
+| HA interface | N'est pas utilisé pour ce cas d'usage |
 
 ![Configuration OVF Network](images/ovf_configuration.png){.thumbnail}
 
@@ -98,41 +97,44 @@ Le NAT a été configuré sur les ports **5000** & **4500** pour le tunnel IPSec
 
 ![Nat Configuration IPSec](images/nat_configuration.png){.thumbnail}
 
-#### Configuration Promiscuos Policie
-  
-Il est nécessaire d'appeler un appel APIv6 pour activer le mode Promiscuous sur votre port. Si vous utilisez un portgroup VLAN, vous disposez de tous les accès et droits pour le faire à l'aide du vSphere WebClient.
+#### Configuration des Promiscuous Policies
 
-Si vous utilisez vxlan, NSX-v vxlan, vous ne pouvez pas. Pour cela, il y a un appel dans l'APIv6 qui le permet, l'appel est le « enableCarp ». En effet, pour activer Carp sur les VM sur une carte réseau spécifique, nous devons activer le mode promiscuous sur le port. Nous allons utiliser cet appel. Rendez-vous sur [notre api](https://api.ovh.com/console/#/dedicatedCloud) et localisez cet appel :
+Il est nécessaire d'exécuter un appel APIv6 pour activer le mode Promiscuous sur votre port. Si vous utilisez un portgroup VLAN, vous disposez de tous les accès et droits pour le faire à l'aide du vSphere WebClient.
+
+Néanmoins, ce n'est pas possible si vous utilisez vxlan ou NSX-v vxlan. Pour cela, il y a un appel dans l'APIv6 qui le permet, le « enableCarp ». En effet, pour activer Carp sur les VM sur une carte réseau spécifique, nous devons activer le mode promiscuous sur le port. Nous allons utiliser cet appel. Rendez-vous sur [notre api](https://api.ovh.com/console/#/dedicatedCloud) et localisez cet appel :
 
 > [!api]
-> POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/enableCarp
+>
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/enableCarp
 >
 
 > [!primary]
-> Avant de passer l'appel api, cliquez sur le portgroup de votre VM, cliquez sur le port de votre VM
+> Avant d'exécuter l'appel API, cliquez sur le portgroup de votre VM puis cliquez sur le port de votre VM.
+>
 > ![Api Call](images/api_call.png){.thumbnail}
 
-Vous verrez, sur les **Policies** de votre portgroup que le port Promiscuous est désactivé.
+Vous verrez, sur les **Policies** de votre portgroup, que le port Promiscuous est désactivé.
 
 ![Promiscuous Policies](images/promiscuos_policies.png){.thumbnail}
 
 Maintenant, sur l'APIv6 swagger, localisez la VM que vous avez déployée (NSX-L2VPN-Client) dans notre cas avec cet appel :
 
 > [!api]
-> GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
-> 
+>
+> @api {v1} /dedicatedCloud  GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
+>
 
-Une fois la VM localisée, utilisez l'appel api enableCarp :
+Une fois la VM localisée, utilisez l'appel API enableCarp :
 
 ![EnableCarp call API](images/enableCarp_call_api.png){.thumbnail}
 
-Attendez un peu que l'automatisation s'exécute et vous verrez que le mode Promiscuous de votre port est passé à Accept.
+Attendez que l'automatisation s'exécute et vous verrez que le mode Promiscuous de votre port est passé à `Accept`.
 
 ![Promiscuous Policies Correct](images/promiscuos_policies_correct.png){.thumbnail}
 
-#### Vérification de la configuration
+### Vérification de la configuration
 
-Vérifiez ensuite si le service L2VPN est en cours d'exécution, ouvrez la console et connectez-vous.
+Vérifiez ensuite si le service L2VPN est en cours d'exécution. Ouvrez la console et connectez-vous.
 
 ![Console VPN](images/console_vpn.png){.thumbnail}
 
@@ -142,17 +144,18 @@ Vous pouvez aussi verifier au niveau du NSX-T.
 
 Pour confirmer la bonne extension L2, créons une VM dans le segment NSX (NSX-t) et dans le VXLAN NSX-v dans le même sous-réseau pour confirmer qu'ils peuvent communiquer ensemble.
 
- - 192.168.2.5 est sur NSX (NSX-t)
-
- - 192.168.2.1 est sur NSX-v
-
- - 192.168.2.254 Interface Edge sur NSX-v
+- 192.168.2.5 est sur NSX (NSX-t)
+- 192.168.2.1 est sur NSX-v
+- 192.168.2.254 Interface Edge sur NSX-v
 
 ![Ping Console](images/ping_console_1.png){.thumbnail}
+
 ![Ping Console](images/ping_console_2.png){.thumbnail}
 
-La communication entre les VM s'effectue bien notre configuration est fonctionnelle.
+La communication entre les VM s'effectue bien, notre configuration est fonctionnelle.
 
 ## Aller plus loin
-  
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
