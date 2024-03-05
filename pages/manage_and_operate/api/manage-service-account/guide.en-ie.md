@@ -1,7 +1,7 @@
 ---
 title: "Managing OVHcloud service accounts via the API"
 excerpt: "How to create and use a token to connect to all OVHcloud APIs"
-updated: 2024-03-04
+updated: 2024-03-05
 ---
 
 ## Objective

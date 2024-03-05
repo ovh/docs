@@ -1,7 +1,7 @@
 ---
 title: 'Managing users'
 excerpt: 'Find out how to manage users via your OVHcloud account'
-updated: 2024-03-04
+updated: 2024-03-05
 ---
 
 ## Objective

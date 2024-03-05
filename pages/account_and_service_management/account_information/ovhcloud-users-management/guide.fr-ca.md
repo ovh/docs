@@ -1,7 +1,7 @@
 ---
 title: 'Gérer des utilisateurs'
 excerpt: 'Découvrez comment ajouter des utilisateurs depuis votre compte OVHcloud'
-updated: 2024-03-04
+updated: 2024-03-05
 ---
 
 ## Objectif
