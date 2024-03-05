@@ -1,7 +1,7 @@
 ---
 title: "How to create a subdomain"
 excerpt: "Find out how to define a subdomain and how to create one at OVHcloud"
-updated: 2023-12-15
+updated: 2024-03-05
 ---
 
 ## Objective <a name="goal"></a>
