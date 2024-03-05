@@ -93,7 +93,7 @@ Es gibt zwei mögliche Szenarien:
 >
 > 1: Um zu ermitteln, wo sich die aktive DNS-Zone einer bei OVHcloud registrierten Domain befindet, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“.
 >
-> 2: Wenn Ihre Domain nicht bei OVHcloud registriert ist, kontaktieren Sie den aktuellen *Registrar* Ihrer Domain, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist.
+> 2: Wenn Ihre Domain nicht bei OVHcloud registriert ist, kontaktieren Sie den aktuellen *Registrar* Ihrer Domain, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist. Bitte beachten Sie, dass Sie unsere Anleitung „[Domain zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)“ verwenden können, wenn Sie diese Aktion durchführen möchten.
 >
 
 Wenn die für Ihre Domain deklarierten DNS-Server eine der folgenden Formen haben:
