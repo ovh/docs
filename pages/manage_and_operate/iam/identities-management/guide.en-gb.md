@@ -10,7 +10,7 @@ The purpose of this guide is to present the different types of identities that c
 
 ## Requirements
 
-- an [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 
 ## Instructions
 
