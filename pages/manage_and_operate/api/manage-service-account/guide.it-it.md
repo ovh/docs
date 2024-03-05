@@ -1,10 +1,8 @@
 ---
 title: "Managing OVHcloud service accounts via the API (EN)"
 excerpt: "How to create and use a token to connect to all OVHcloud APIs"
-updated: 2023-08-24
+updated: 2024-03-05
 ---
-
-
 
 ## Objective
 
@@ -25,6 +23,10 @@ These credentials can be used within the different APIs of our products:
 - You know [how to use the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
 ## Instructions
+
+### Understanding identities
+
+Service accounts are one of the types of identities that can be set up on your OVHcloud account. Other account types are described in the [related documentation](/pages/manage_and_operate/iam/identities-management).
 
 ### How service accounts work
 
