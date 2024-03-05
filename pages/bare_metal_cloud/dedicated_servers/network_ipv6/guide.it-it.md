@@ -1,7 +1,7 @@
 ---
 title: 'Configurare IPv6 sur un server dedicato'
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2024-02-26
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -107,7 +107,7 @@ La configurazione di esempio qui sotto è basata su Debian 11 (Bullseye).
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Crea un backup
@@ -115,7 +115,7 @@ La configurazione di esempio qui sotto è basata su Debian 11 (Bullseye).
 Il file di configurazione di rete del server si trova in `/etc/network/interfaces.d`. Prima di continuare, creare un backup del file utilizzando uno dei comandi seguenti:
 
 ```sh
-~# sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
 #### Step 3: Modifica il file di configurazione di rete.
@@ -202,7 +202,7 @@ iface eth0 inet6 static
 Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicare le modifiche.
 
 ```sh
-~# sudo /etc/init.d/networking restart
+sudo /etc/init.d/networking restart
 ```
 
 #### Step 5: Testa la connettività IPv6
@@ -238,7 +238,7 @@ In questo esempio, il nostro file si chiama `cloud-init-eno1.nmconnection`.
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Crea un backup
@@ -251,7 +251,7 @@ In questo esempio, il nostro file si chiama `cloud-init-eno1.nmconnection`.
 Ti consigliamo di effettuare una copia del file sorgente per poter ripristinare la versione precedente se necessario:
 
 ```sh
-~# sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
 #### Step 3: Modifica il file di configurazione di rete
@@ -284,7 +284,7 @@ dns=2001:41d0:3:163::1;
 **Esempio di configurazione:**
 
 ```sh
-~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
 In seguito modificheremo il file di configurazione:
@@ -315,7 +315,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicare le modifiche.
 
 ```sh
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 #### Step 5: Testa la connettività IPv6
@@ -348,7 +348,7 @@ I file di configurazione di rete si trovano nella directory `/etc/netplan/`. Di 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Crea il file di configurazione di rete
@@ -358,7 +358,7 @@ L'approccio migliore è quello di creare un file di configurazione separato con 
 Nel nostro esempio, il file si chiama `51-cloud-init-ipv6.yaml`:
 
 ```sh
-~# sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
+sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 #### Step 3: Modifica il file di configurazione di rete.
@@ -404,7 +404,7 @@ network:
 **Esempio di configurazione:**
 
 ```sh
-~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 In seguito modificheremo il file di configurazione:
@@ -442,13 +442,13 @@ network:
 Per testare la configurazione esegui questo comando:
 
 ```sh
-~# sudo netplan try
+sudo netplan try
 ```
 
 Se è corretta, applicala utilizzando il seguente comando:
 
 ```sh
-~# sudo netplan apply
+sudo netplan apply
 ```
 
 #### Step 5: Testa la connettività IPv6
@@ -478,7 +478,7 @@ Il file di configurazione di rete si trova nella directory `/etc/sysconfig/netwo
 #### Step 1: utilizza SSH per connetterti al tuo server
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Crea un backup
@@ -491,7 +491,7 @@ Il file di configurazione di rete si trova nella directory `/etc/sysconfig/netwo
 Prima di tutto, fai una copia del file di configurazione, in modo da poter tornare indietro in qualsiasi momento:
 
 ```sh
-~# sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
 ```
 
 #### Step 3: Modifica il file di configurazione di rete
@@ -513,7 +513,7 @@ IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFI
 **Esempio di configurazione:**
 
 ```sh
-~# sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 In seguito modificheremo il file di configurazione:
@@ -538,13 +538,13 @@ IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
 Salvare le modifiche nel file e riavviare la rete con uno dei comandi seguenti:
 
 ```sh
-~# sudo systemctl restart network
+sudo systemctl restart network
 ```
 
 **Per AlmaLinux e Rocky Linux**
 
 ```sh
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 È inoltre possibile riavviare il server per applicare le modifiche.
