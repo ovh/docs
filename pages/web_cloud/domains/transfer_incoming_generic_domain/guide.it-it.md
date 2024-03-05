@@ -52,17 +52,17 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 |Step|Descrizione|Soggetti coinvolti|Dove|Campo obbligatorio|
 |---|---|---|---|---|
-|1|Verifica delle informazioni associate al dominio|L'amministratore del dominio|Il Registrar attuale|In base alle azioni effettuate|
-|2|Sblocco del dominio e recupero del codice di trasferimento|L'amministratore del dominio, con l'autorizzazione del proprietario|Il Registrar attuale|In base alle azioni effettuate|
-|3|Trasferimento di un dominio|Chiunque sia in possesso del codice di trasferimento, anche con il permesso del proprietario|Con il nuovo Registrar (ad esempio, OVHcloud)|In base alle azioni effettuate|
-|4|Conferma del trasferimento|Il Registrar attuale|Tramite una richiesta da parte del Registro che gestisce l’estensione del dominio|Massimo cinque giorni|
+|[1](#step1)|[Verifica delle informazioni associate al dominio](#step1)|L'amministratore del dominio|Il Registrar attuale|In base alle azioni effettuate|
+|[2](#step2)|[Sblocco del dominio e recupero del codice di trasferimento](#step2)|L'amministratore del dominio, con l'autorizzazione del proprietario|Il Registrar attuale|In base alle azioni effettuate|
+|[3](#step3)|[Trasferimento di un dominio](#step3)|Chiunque sia in possesso del codice di trasferimento, anche con il permesso del proprietario|Con il nuovo Registrar (ad esempio, OVHcloud)|In base alle azioni effettuate|
+|[4](#step4)|[Conferma del trasferimento](#step4)|Il Registrar attuale|Tramite una richiesta da parte del Registro che gestisce l’estensione del dominio|Massimo cinque giorni|
 
 > [!warning]
 >
 > La procedura esatta di trasferimento del dominio può variare, in particolare per alcune **TLD** del codice del paese (**ccTLD**, quali .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, ecc.) e per alcune **TLD** speciali (.am, .fm, ecc.). In base all'estensione del tuo dominio, potrebbero essere necessari requisiti aggiuntivi. Ti consigliamo di verificare le informazioni mostrate per l'estensione in questione dal nostro sito Web: <https://www.ovhcloud.com/it/domains/tld/>.
 >
 
-### Step 1: verifica le informazioni del proprietario del dominio
+### Step 1: verifica le informazioni del proprietario del dominio <a name="step1"></a>
 
 **Come prima cosa, è importante accertarsi che i dati associati al dominio siano aggiornati.** Dall'entrata in vigore del GDPR, i dati visibili nel ["Whois"](https://www.ovhcloud.com/it/domains/whois/) sono diventati molto limitati. Puoi consultare le informazioni relative al tuo dominio presso il tuo attuale Registrar.
 
@@ -75,7 +75,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 > Se non sai quale Registrar è responsabile del tuo dominio, la riga "Registrar", che compare nel risultato della ricerca del [tool Whois](https://www.ovhcloud.com/it/domains/whois/){.external}, può fornirti informazioni sulla sua identità.
 >
 
-### Step 2: sblocca il dominio e recupera il codice di trasferimento
+### Step 2: sblocca il dominio e recupera il codice di trasferimento <a name="step2"></a>
 
 Una volta verificate le informazioni è necessario sbloccare il dominio, operazione che può essere effettuata esclusivamente presso il Registrar attuale. Per conoscere la corretta procedura da seguire, ti consigliamo di contattare il tuo provider.
 
@@ -88,7 +88,7 @@ Ti ricordiamo che, non essendo OVHcloud il Registrar del tuo dominio al momento 
 > Una volta sbloccato il dominio, puoi effettuare il trasferimento in OVHcloud entro sette (7) giorni. Se non effettui la modifica del Registrar, il dominio verrà automaticamente bloccato dopo questo periodo.
 >
 
-### Step 3: richiedere il trasferimento di un dominio in OVHcloud
+### Step 3: richiedere il trasferimento di un dominio in OVHcloud <a name="step3"></a>
 
 Una volta sbloccato il dominio e ottenuto il codice, è possibile ordinarne il trasferimento in OVHcloud dal [nostro sito](https://www.ovhcloud.com/it/domains/). Inserisci il nome del tuo dominio e segui la procedura d’ordine.
 
@@ -127,7 +127,7 @@ Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di tras
 >
 > Se il codice di trasferimento non è stato inserito durante l'ordine, inseriscilo nella finestra `Operazioni in corso`{.action} e infine confermare il trasferimento.
 
-### Step 4: conferma del trasferimento da parte dell'attuale Registrar
+### Step 4: conferma del trasferimento da parte dell'attuale Registrar <a name="step4"></a>
 
 Una volta convalidato l'ordine e il codice di trasferimento, il Registrar attuale (non ancora OVHcloud) riceverà una richiesta di conferma. Sono possibili diversi scenari di risposta:
 
