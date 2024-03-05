@@ -51,7 +51,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 |[1](#step1)|[Vérification des informations associées au nom de domaine](#step1)|L'administrateur du domaine|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
 |[2](#step2)|[Déverrouillage du domaine et récupération du code de transfert](#step2)|L'administrateur du domaine, avec l'autorisation du propriétaire|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
 |[3](#step3)|[Demande de transfert de nom de domaine](#step3)|Toute personne possédant le code de transfert, également avec la permission du propriétaire|Avec le nouveau bureau d'enregistrement (par exemple OVHcloud)|Dépend de vos actions|
-|[4](#Etape4)|[Validation du transfert](#Etape4)|Le bureau d'enregistrement actuel|À la demande de l'organisation gérant l'extension de nom de domaine|Cinq jours maximum|
+|[4](#step4)|[Validation du transfert](#step4)|Le bureau d'enregistrement actuel|À la demande de l'organisation gérant l'extension de nom de domaine|Cinq jours maximum|
 
 > [!warning]
 >
