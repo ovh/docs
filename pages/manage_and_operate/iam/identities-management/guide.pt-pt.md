@@ -67,6 +67,6 @@ A configuração dos grupos de utilizadores é abordada na documentação de ges
 
 ## Quer saber mais? <a name="go-further"></a>
 
-A gestão das identidades pode ser automatizada através das API [OVHcloud API](/pages/manage_and_operate/api/first-steps) ou através do [provider Terraform OVHcloud](/pages/manage_and_operate/terrform/terraform-at-ovhcloud).
+A gestão das identidades pode ser automatizada através das API [OVHcloud API](/pages/manage_and_operate/api/first-steps) ou através do [provider Terraform OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

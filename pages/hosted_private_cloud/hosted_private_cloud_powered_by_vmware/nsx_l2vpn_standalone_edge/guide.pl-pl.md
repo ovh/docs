@@ -138,7 +138,7 @@ Wait for the automation to run and you will see that your port's Promiscuous mod
 
 To check that the L2VPN service is running, open the console and log in.
 
-![VPN Console](images/vpn_console.png){.thumbnail}
+![VPN Console](images/console_vpn.png){.thumbnail}
 
 You can also check the NSX-T.
 
