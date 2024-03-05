@@ -1,6 +1,6 @@
 ---
-title: 'IPv6 auf einem VPS einrichten'
-excerpt: Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren'
+title: "IPv6 auf einem VPS einrichten"
+excerpt: "Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren"
 updated: 2024-03-01
 ---
 
@@ -12,7 +12,7 @@ updated: 2024-03-01
 
 IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wird mit einer IPv4-Adresse sowie einer IPv6-Adresse ausgeliefert. Standardmäßig ist nur IPv4 eingerichtet. Wenn Sie IPv6 konfigurieren möchten, müssen Sie dies manuell in Ihrem System tun.
 
-**In dieser Anleitung erfahren Sie, wie Sie IPv6 auf Ihrem OVHcloud VPS über mehrere Methoden konfigurieren.**
+**Diese Anleitung erklärt, wie Sie IPv6 auf Ihrem OVHcloud VPS über mehrere Methoden konfigurieren.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
@@ -33,12 +33,12 @@ Die folgenden Abschnitte enthalten Konfigurationen für die derzeit von uns ange
 
 > [!warning]
 >
-> Bitte beachten Sie, dass bei den neuesten Linux-Betriebssystemen, die wir für VPS anbieten, die IPv6-Adresse standardmäßig konfiguriert ist. In diesem Fall müssen Sie sie nicht konfigurieren. Überprüfen Sie die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
+> Beachten Sie, dass bei den neuesten Linux-Betriebssystemen, die wir für VPS anbieten, die IPv6-Adresse standardmäßig konfiguriert ist. In diesem Fall müssen Sie sie nicht konfigurieren. Überprüfen Sie die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
 >
 
 Die Konfiguration von IPv6 auf Ihrem VPS umfasst mehrere Schritte. Sie werden regelmäßig aufgefordert, Befehle einzugeben oder die Konfiguration Ihres Servers anzupassen. 
 
-Bitte beachten Sie die folgende Terminologie, die in Codebeispielen und Anweisungen der nachfolgenden Abschnitte verwendet wird:
+Beachten Sie die folgende Terminologie, die in Codebeispielen und Anweisungen der nachfolgenden Abschnitte verwendet wird:
 
 |Bezeichnung|Beschreibung|Beispiel|
 |---|---|---|
@@ -89,7 +89,7 @@ Es gibt mehrere Vorgehensweisen, um die IPv6-Konfiguration anzuwenden. Folgen Si
 
 - [Nonpersistente Anwendung](#nonpersistent)
 - [Persistente Anwendung auf Debian und Derivaten (Ubuntu, Crunchbang, SteamOS, etc.)](#persistentdebian)
-- [Persistente Anwendung auf Red Hat und Derivaten (CentOS, Rocky & Alma Linux, etc.)](#persistentredhat)
+- [Persistente Anwendung auf Red Hat und Derivaten (CentOS, Rocky Linux, Alma Linux, etc.)](#persistentredhat)
 - [Persistente Anwendung auf Fedora](#persistentfedora)
 - [Persistente Anwendung auf Windows Server](#persistentwindows)
 
@@ -120,9 +120,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Es gibt zwei Methoden, um Ihr Netzwerk entsprechend dem auf Ihrem Server installierten Betriebssystem zu konfigurieren:
 
-- **für Debian 10 und 11**: Verwenden Sie [die auf der *interfaces*-Datei basierende Methode](#interfaces).
+- **Für Debian 10 und 11**: Verwenden Sie [die auf der Datei *interfaces* basierende Methode](#interfaces).
 
-- **für Debian 12, Ubuntu 20.04 und spätere Versionen**: Verwenden Sie [die *Netplan*-Methode](#netplan).
+- **Für Debian 12, Ubuntu 20.04 und spätere Versionen**: Verwenden Sie [die *Netplan*-Methode](#netplan).
 
 In einigen Fällen kann es sein, dass die oben genannte Methode nicht die passende ist. Um sicherzugehen, überprüfen Sie auf Ihrem System die aktive Methode. Besuchen Sie <https://netplan.io/> für weitere Informationen.<br>
 Beachten Sie auch, dass die exakten Dateinamen variieren können.
@@ -136,12 +136,12 @@ Als *Best Practice* wird empfohlen, eine Konfigurationsdatei im Verzeichnis `/et
 In unserem Beispiel heißt unsere Datei `51-cloud-init-ipv6`:
 
 ```bash
-~# sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
+sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 Auf diese Weise können Sie die IPv6-Konfiguration absondern und die Änderungen im Fehlerfall problemlos rückgängig machen.
 
-Fügen Sie folgende Zeilen zur Datei hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (falls Ihr Server nicht **eth0** verwendet) durch Ihre personalisierten Werte.
+Fügen Sie folgende Zeilen zur Datei hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (falls Ihr Server nicht **eth0** verwendet) durch Ihre individuellen Werte.
 
 ```console
 auto eth0
@@ -172,11 +172,11 @@ pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 Starten Sie anschließend Ihren Netzwerkdienst mit einem der folgenden Befehle neu:
 
 ```bash
-~# sudo service networking restart
+sudo service networking restart
 ```
 
 ```bash
-~# sudo systemctl restart networking
+sudo systemctl restart networking
 ```
 
 Je nach Generation des auf dem Server installierten Betriebssystems können Sie die oben angegebene Konfiguration auch zu einer der folgenden Dateien hinzufügen (mit *sudo*-Berechtigungen):
@@ -187,14 +187,14 @@ Je nach Generation des auf dem Server installierten Betriebssystems können Sie 
 Wir empfehlen Ihnen, die relevante Konfigurationsdatei zu sichern. Verwenden Sie zum Beispiel folgenden Befehl:
 
 ```bash
-~# sudo cp /etc/network/interfaces /etc/network/interfaces.bak
+sudo cp /etc/network/interfaces /etc/network/interfaces.bak
 ```
 
 Sie können die Änderungen dann mithilfe folgender Befehle rückgängig machen:
 
 ```bash
-~# sudo rm -f /etc/network/interfaces
-~# sudo cp /etc/network/interfaces.bak /etc/network/interfaces
+sudo rm -f /etc/network/interfaces
+sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 ```
 
 ##### Konfiguration mit *Netplan* <a name="netplan"></a>
@@ -206,7 +206,7 @@ Am besten erstellen Sie eine separate Konfigurationsdatei, um die IPv6-Adressen 
 In unserem Beispiel heißt unsere Datei `51-cloud-init-ipv6.yaml`:
 
 ```bash
-~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 Bearbeiten Sie anschließend die Datei `51-cloud-init-ipv6.yaml`, indem Sie die folgenden Zeilen für die IPv6-Konfiguration hinzufügen. Ersetzen Sie die generischen Elemente (d. h. *YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (wenn Ihr Server **eth0** nicht verwendet) durch Ihre spezifischen Werte.
@@ -251,33 +251,33 @@ network:
 Sie können Ihre Konfiguration mit folgendem Befehl testen:
 
 ```bash
-~# sudo netplan try
+sudo netplan try
 ```
 
 Ist die Änderung korrekt, verwenden Sie folgenden Befehl:
 
 ```bash
-~# sudo netplan apply
+sudo netplan apply
 ```
 
-#### Persistente Anwendung auf Red Hat und dessen Derivaten (CentOS, Rocky & Alma Linux, etc.) <a name="persistentDat"></a>
+#### Persistente Anwendung auf RedHat und dessen Derivaten (CentOS, Rocky Linux, Alma Linux, etc.) <a name="persistentredhat"></a>
 
 Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/sysconfig/network-scripts/`. Wir empfehlen Ihnen, zuerst die entsprechende Konfigurationsdatei zu sichern. Kopieren Sie beispielsweise die Datei `ifcfg-eth0` mit folgenden Befehlen. Denken Sie daran, **eth0** gegebenenfalls durch Ihr reales Interface zu ersetzen.
 
 ```bash
-~# cd /etc/sysconfig/network-scripts/
-~# sudo mkdir backup
-~# sudo cp ifcfg-eth0 backup/ifcfg-eth0
+cd /etc/sysconfig/network-scripts/
+sudo mkdir backup
+sudo cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
 Sie können die Änderungen dann mithilfe folgender Befehle rückgängig machen:
 
 ```bash
-~# sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
-~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Ändern Sie anschließend die Datei `ifcfg-eth0`, indem Sie die IPv6 Konfiguration Ihres Servers hinzufügen. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) durch Ihre personalisierten Werte.
+Ändern Sie anschließend die Datei `ifcfg-eth0`, indem Sie die IPv6-Konfiguration Ihres Servers hinzufügen. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) durch Ihre personalisierten Werte.
 
 ```console
 IPV6INIT=yes
@@ -298,7 +298,7 @@ IPV6_DEFAULTGW=2607:5300:201:abcd::1
 - Erstellen Sie eine Datei (mit *sudo*-Berechtigungen), die Ihre Standard-IPv6-Routen angibt:
 
 ```bash
-~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
+sudo touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
 - Bearbeiten Sie die Datei und fügen Sie die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (*IPV6_GATEWAY* und **eth0**, falls erforderlich) durch Ihre personalisierten Werte.
@@ -318,11 +318,11 @@ default via 2607:5300:201:abcd::1
 Starten Sie schließlich den Netzwerkdienst mit einem der folgenden Befehle neu, damit Ihr System die neue Konfiguration anwendet:
 
 ```bash
-~# sudo service networking restart
+sudo service networking restart
 ```
 
 ```bash
-~# sudo systemctl restart networking
+sudo systemctl restart networking
 ```
 
 #### Persistente Anwendung auf Fedora 37 und höher <a name="persistentfedora"></a>
@@ -330,14 +330,14 @@ Starten Sie schließlich den Netzwerkdienst mit einem der folgenden Befehle neu,
 Die Netzwerkkonfigurationsdatei befindet sich unter `/etc/NetworkManager/system-connections/`. Wir empfehlen Ihnen, zunächst eine Sicherungskopie der entsprechenden Konfigurationsdatei anzulegen. In unserem Beispiel heißt unsere Datei `cloud-init-eth0.nmconnection`, daher kopieren wir die Datei `cloud-init-eth0.nmconnection` mit den folgenden Befehlen. Falls nötig, ersetzen Sie **eth0** durch Ihr aktuelles Interface.
 
 ```bash
-~# cd /etc/NetworkManager/system-connections/
-~# sudo mkdir backup
-~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
+cd /etc/NetworkManager/system-connections/
+sudo mkdir backup
+sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
 Anschließend bearbeiten wir die Datei `cloud-init-eth0.nmconnection` und fügen nur die Zeilen für die IPv6-Konfiguration des Servers hinzu. Ersetzen Sie die generischen Elemente (d. h. *YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) durch die entsprechenden Werte.
 
-Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, sollte die Konfiguration wie folgt aussehen:
+Wenn wir davon ausgehen, dass Ihr Interface **eth0** ist, sollte die Konfiguration wie folgt aussehen:
 
 ```console
 [ipv6]
@@ -347,7 +347,7 @@ address1=YOUR_IPV6/IPV6_PREFIX
 route1=::/0,IPV6_GATEWAY
 ```
 
-Wir haben die IPv4-Konfiguration weggelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration wird in derselben Konfigurationsdatei vorgenommen.
+Wir haben die IPv4-Konfiguration ausgelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration wird in derselben Konfigurationsdatei vorgenommen.
 
 Hier ein praktisches Beispiel:
 
@@ -455,7 +455,7 @@ Sie können auch die Verbindung zu einem anderen Remote-Server testen. IPv6 muss
 
 Cloud-init ist ein Paket, das standardmäßig auf den VPS installiert ist. Es handelt sich hierbei um ein Framework, mit dem ein Skript nach der Erstellung oder einem Neustart Ihres Servers ausgeführt werden kann. Diese Funktion erlaubt der darunterliegenden OpenStack-Infrastruktur, Skripte in die Cloud-init-Umgebung, und somit in die Serverkonfiguration, zu injizieren.
 
-Je nach Betriebssystem verwaltet Cloud-init: das Netzwerk, den Hostnamen, die Datei resolv.conf sowie im Falle eines Upgrades die automatische Partitionierung der Festplatte.
+Je nach Betriebssystem verwaltet Cloud-init: das Netzwerk, den Hostnamen, die Datei resolv.conf sowie im Falle eines Upgrades die automatische Partitionierung der Disk.
 
 Bei neueren Distributionen (CentOS, Debian 9, Ubuntu 16.x und nachfolgenden Versionen) kann die Standardkonfiguration von Cloud-init manchmal automatisch die Netzwerkkonfiguration beim Start des Servers zurücksetzen.
 
