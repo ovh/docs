@@ -71,7 +71,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 > Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovhcloud.com/fr/domains/whois/){.external}, peuvent vous fournir des informations sur son identité.
 >
 
-### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert <a name="Etape2"></a>
+### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert <a name="step2"></a>
 
 Après avoir vérifié ces informations, vous devrez déverrouiller votre nom de domaine. Vous ne pouvez effectuer cette opération que via le bureau d'enregistrement du nom de domaine actuel. Contactez-le pour en savoir plus à propos de leur procédure.
 
