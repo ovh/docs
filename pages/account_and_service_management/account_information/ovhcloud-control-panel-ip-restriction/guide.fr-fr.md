@@ -1,7 +1,7 @@
 ---
 title: "Restreindre l'accès par IP à votre espace client OVHcloud"
 excerpt: "Découvrez comment sécuriser votre compte OVHcloud en limitant les adresses IP autorisées à y accéder"
-updated: 2022-12-12
+updated: 2024-02-26
 ---
 
 ## Objectif
@@ -9,7 +9,7 @@ updated: 2022-12-12
 OVHcloud met à votre disposition des options pour renforcer la sécurité de votre espace client OVHcloud et de vos services.
 
 Vous pouvez notamment restreindre à certaines adresses IP l'accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-La mise en place de cette option, couplée à la sécurisation de votre compte par une [double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), permet de sécuriser de manère optimale votre espace client OVHcloud contre d'éventuelles tentatives d'intrusion.
+La mise en place de cette option, couplée à la sécurisation de votre compte par une [double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), permet de sécuriser de manière optimale votre espace client OVHcloud contre d'éventuelles tentatives d'intrusion.
 
 **Découvrez comment sécuriser votre compte OVHcloud en limitant les adresses IP autorisées à y accéder**
 
@@ -25,7 +25,7 @@ La mise en place de cette option, couplée à la sécurisation de votre compte p
 
 ## En pratique
 
-### Etape 1 - récupérer les adresses IP publiques autorisées à accéder à votre espace client OVHcloud
+### Etape 1 - Récupérer les adresses IP publiques autorisées à accéder à votre espace client OVHcloud
 
 Il existe deux types d'adresses IP :
 
@@ -49,7 +49,7 @@ Si vous utilisez un réseau 4G/5G en complément, n'oubliez pas de récupérer �
 > **Avant** de mettre en place une restriction par IP sur votre espace client OVHcloud, vérifiez auprès de votre FAI que les adresses IP récupérées précédemment sont bien des adresses IP **fixes**. Dans le cas contraire, vous risqueriez de perdre rapidement l'accès à votre espace client OVHcloud en déclarant une IP dynamique.
 >
 
-### Etape 2 - mettre en place une restriction d'accès par IP
+### Etape 2 - Mettre en place une restriction d'accès par IP
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur votre `nom et prénom` en haut à droite **puis** sur vos `initiales` dans la colonne bleue qui apparaît sur votre droite.
 
@@ -59,7 +59,7 @@ Cliquez ensuite sur l'onglet `Sécurité`{.action} pour arriver sur la page suiv
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 
-Cliquez sur `Activer`{.action} à droite de `Restriction d'accès par IP`.
+Cliquez sur le bouton `Activer`{.action} à droite de `Restriction d'accès par IP`.
 
 #### Présentation de l'interface
 
@@ -68,8 +68,8 @@ Cliquez sur `Activer`{.action} à droite de `Restriction d'accès par IP`.
 Deux sections sont présentes pour la mise en place des restrictions par IP :
 
 - **Règle par défaut**. Ce champ permet de :
-    - soit refuser l'accès à l'ensemble des adresses IP sauf celles préalablement déclarées comme **autorisées** dans la seconde section *IP configurées*. 
-    - soit autoriser l'accès à l'ensemble des adresses IP sauf celles préalablement déclarées comme **refusées** dans la seconde section *IP configurées*.
+    - soit refuser l'accès à l'ensemble des adresses IP à l'exception de celles déclarées comme **autorisées** dans la seconde section *IP configurées*. 
+    - soit autoriser l'accès à l'ensemble des adresses IP à l'exception de celles déclarées comme **refusées** dans la seconde section *IP configurées*.
     > Cochez la case `Alerte`{.action} si vous voulez être notifié par e-mail, sur votre adresse e-mail de contact, lorsqu'une tentative de connexion non autorisée a été effectuée pour accéder à votre espace client.
 
 - **IP configurées**. Ce champ permet de déclarer les adresses IP qui feront l'objet d'une restriction ou d'une autorisation d'accès. Il permet aussi de visualiser les règles préalablement mises en place.
@@ -78,7 +78,7 @@ Deux sections sont présentes pour la mise en place des restrictions par IP :
 >
 > Attention avant de poursuivre vos actions.
 >
-> Dans la section `Règle par défaut`{.action}, ne validez **jamais** la règle par défaut en statut `Refusé`{.action} **sans avoir autorisé** correctement et au préalable au moins une de vos adresses IP publiques dans la section `IP configurées`. 
+> Veillez à **avoir autorisé** correctement au moins une de vos adresses IP publiques dans la section `IP configurées` **avant** de valider la règle par défaut en statut `Refusé`, dans la section `Règle par défaut`. 
 >
 > Dans le cas contraire, vous bloquerez **absolument toutes les IP publiques (y compris les vôtres)** sans aucune exception. Plus personne n'aura accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et vous devrez réaliser une procédure administrative pour débloquer votre situation.
 >

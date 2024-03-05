@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący pomocy OVHcloud
 excerpt: Najczęściej zadawane pytania znajdziesz w pomocy OVHcloud
-updated: 2022-11-10
+updated: 2024-01-11
 ---
 
 ## Wprowadzenie
@@ -10,13 +10,19 @@ Najczęściej zadawane pytania znajdziesz w pomocy OVHcloud.
 
 ### Co zrobić, kiedy nie mogę połączyć się z działem wsparcia klienta przez telefon?
 
-Zachęcamy do utworzenie zgłoszenia w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), dzięki czemu unikniesz oczekiwania na rozmowę telefoniczną. Formularz kontaktowy jest dostępny na pasku po prawej stronie, na dole, pod linkiem „Utwórz zgłoszenie”.
+Aby nie przedłużać oczekiwania na pomoc przez telefon, prosimy o utworzenie zgłoszenia w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Kliknij przycisk `Utwórz zgłoszenie`{.action}.
 
-Zapraszamy również do zapoznania się z naszą dokumentacją (FAQ, przewodniki, narzędzia do diagnostyki...) dostępną w Centrum Pomocy.
+Możesz również zapoznać się z całością naszej dokumentacji (FAQ, przewodniki, narzędzia do diagnostyki, ...) dostępnej w [Centrum Pomocy](https://help.ovhcloud.com/csm/pl-documentation?id=kb_home).
 
 ### Dlaczego formularz otwierania zgłoszenia został zmieniony?
 
 Dzięki systemowi pytań, na jakich opiera się nowy formularz, procedura otwierania zgłoszenia będzie bardziej kompletna i precyzyjna. Formularz pozwoli na sprawniejszą ocenę Twojego zapytania, w zależności od rodzaju usługi, Twojego zapotrzebowania na wsparcie oraz poziomu krytyczności. Dzięki temu ograniczamy do niezbędnego minimum wymianę pytań i odpowiedzi pomiędzy Tobą, a naszymi zespołami.
+
+### Jak mogę wysyłać dokumenty i inne pliki do pomocy OVHcloud?
+
+Pliki można przesyłać w następujących formatach (maksymalny rozmiar: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
+
+Utwórz zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) i dołącz pliki.
 
 ### Gdzie znajdę informację o przysługującym mi poziomie wsparcia klienta?
 

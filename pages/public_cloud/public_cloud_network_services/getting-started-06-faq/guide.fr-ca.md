@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Foire aux questions sur les services réseau Public Cloud
-updated: 2023-12-12
+updated: 2024-01-30
 ---
 
 ## Objectif
@@ -23,9 +23,9 @@ Actuellement, ces modes ne sont pas pris en charge. Pour du load balancing publi
 
 Une version bêta est en cours pour fournir une intégration avec Managed Kubernetes Service. Merci de contacter notre [communauté Discord](https://discord.gg/ovhcloud) sur le canal **#beta-lb-for-k8s**
 
-### Je souhaite monitorer le Load Balancer Octavia. Est-il possible d’activer [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatiquement sur le Load Balancer ?
+### Je souhaite monitorer mon Load Balancer Public Cloud. Est-il possible d’activer [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatiquement sur le Load Balancer ?
 
-Oui cette fonctionnalité est disponible depuis le déploiement de la version Zed en juin 2023.
+Oui cette fonctionnalité est disponible depuis le déploiement de la version Zed en juin 2023. Retrouvez plus d'informations sur [cette page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 
 ### Comment est mise en oeuvre la redondance pour chaque type d'offre ? Les Amphoras sont-ils configurés en mode ACT/STBY ?
 
@@ -39,7 +39,7 @@ Non, un nouveau type d’adresse IP a été créé pour ce rôle, Floating IP. C
 
 Oui, plusieurs *listeners* (frontends) et *pools* (backends) peuvent être configurés. Il n'y a qu'une limitation d'une seule Floating IP par Load Balancer.
 
-### Que se passe-t-il si l'Octavia Load Balancer reçoit plus de requêtes que prévu ? Le prix va-t-il augmenter ? En serai-je informé ?
+### Que se passe-t-il si le Load Balancer Public Cloud reçoit plus de requêtes que prévu ? Le prix va-t-il augmenter ? En serai-je informé ?
 
 Tout d'abord, les valeurs indiquées ne sont qu'une estimation des capacités du Load Balancer. Le prix n'augmentera pas. La tarification est liée aux types (small, medium, large) et nous ne pouvons pas changer la flavor pour le moment. Le choix d'orchestration de ses services est à la charge du client.
 
@@ -82,6 +82,10 @@ Tout dépend de l’usage :
 
 Vous pouvez créer un réseau privé dans une région sélectionnée et y attacher la Gateway. Puis, lors de la création d’une instance, sélectionnez « Attacher au réseau privé » et validez à l’aide du bouton « Oui, je veux que mon instance soit totalement privée ».
 
+### L’IP publique de la Gateway est-elle protégée contre les attaques DDoS ?
+
+Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr-ca/security/anti-ddos/) est activée sur toutes ces adresses IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
+
 ### J'ai créé une instance en mode privé (elle n'a que des ports privés). Comment s’y connecter ?
 
 Deux options peuvent être utilisées : 
@@ -98,6 +102,10 @@ Une Floating IP est une adresse IP publique flexible qui peut être associée à
 ### J'ai des VMs qui communiquent sur un réseau privé et je veux associer une Floating IP à une de ces VMs. Quel est le pool à choisir pour l'adresse Floating IP ?
 
 Le pool d'une Floating IP doit être « Ext-Net » et vous pouvez l'associer à un port du réseau privé.
+
+### Les adresses Floating IP sont-elles protégées contre les attaques DDoS ?
+
+Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr-ca/security/anti-ddos/) est activée sur toutes les adresses Floating IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
 
 ## Aller plus loin
 

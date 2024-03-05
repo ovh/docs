@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funktionen, Kapazitäten und Einschränkungen
 excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones Instanzen
-updated: 2024-01-09
+updated: 2024-03-04
 ---
 
 > [!primary]
@@ -9,11 +9,6 @@ updated: 2024-01-09
 >
 
 ## Ziel
-
-> [!primary]
->
-> Local Zones Instanzen werden derzeit nur in der Alphaversion bereitgestellt. Wenn Sie Schwierigkeiten haben oder Ihre Erfahrungen mit anderen Benutzern diskutieren möchten, kontaktieren Sie uns über Discord <https://discord.gg/ovhcloud> oder treten Sie unserer Community bei: <https://community.ovh.com/en/>.
-> 
 
 Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen.
 
@@ -25,7 +20,7 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zones](https://ww
 
 ## Verfügbare Funktionen
 
-| Aktion | Alpha (Januar) |
+| Aktion | Allgemeine Verfügbarkeit (März 2024) |
 | --- | --- |
 | Instanzen | Ja |
 | User-data/cloud-init Support | Ja|

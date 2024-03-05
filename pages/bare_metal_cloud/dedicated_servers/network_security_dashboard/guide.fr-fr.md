@@ -123,7 +123,7 @@ Pour plus d'informations sur la configuration des règles du Edge Network Firewa
 
 ### Je suis attaqué et je rencontre des problèmes sur mon serveur. Que puis-je faire de plus ?
 
-L’infrastructure anti-DDoS est une solution conçue pour une efficacité optimale et une large gamme de services à protéger. Dans certains cas spécifiques, un réglage supplémentaire peut être nécessaire (par exemple, pour être en adéquation avec la spécificité ou la taille de l'application). Pour demander un tel réglage personnalisé, veuillez utiliser notre [Centre d’aide](https://help.ovhcloud.com/csm?id=csm_cases_requests) et rechercher les actions appropriées dans la catégorie « Attaque réseau et/ou Anti-DDoS ».
+L’infrastructure anti-DDoS est une solution conçue pour une efficacité optimale et une large gamme de services à protéger. Dans certains cas spécifiques, un réglage supplémentaire peut être nécessaire (par exemple, pour être en adéquation avec la spécificité ou la taille de l'application). Pour demander un tel réglage personnalisé, veuillez utiliser notre [Centre d’aide](https://help.ovhcloud.com/csm?id=csm_get_help) et rechercher les actions appropriées dans la catégorie « Attaque réseau et/ou Anti-DDoS ».
 
 Afin de nous permettre de mieux comprendre votre cas d'usage et de pouvoir vous aider, nous vous invitons à nous fournir plus de détails :
 

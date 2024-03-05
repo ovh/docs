@@ -1,7 +1,7 @@
 ---
 title: "Crear tareas automatizadas (CRON) en un alojamiento web"
 excerpt: "Descubra cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -118,7 +118,7 @@ La tarea estará lista en unos minutos. Podrá modificar todos los parámetros o
 |Duración|La duración de ejecución de una tarea es de 60 minutos. Si un script supera la duración de ejecución, el sistema lo detendrá automáticamente.|
 |Variables|Sólo puede definir variables en un script. Añadirlos a la URL que llama al script no funcionará (Ejemplo: www/jobs/cron.php?variable=value).|
 |Límite de datos|Una tarea solo puede generar 5 MB de datos (*stdin/stderr*). Por ejemplo, si un script escribe datos en un archivo .txt, la ejecución se detiene automáticamente cuando el archivo alcanza los 5 MB.|
-|Guiones que producen errores|Si un script no funciona, se desactivará automáticamente después de 10 intentos fallidos de ejecución. Simplemente vuelva a activarlo en el Panel de control. (haga clic en `...`{.action} y `Editar`{.action})|
+|Guiones que producen errores|Si un script tiene errores, se desactivará automáticamente después de 10 intentos fallidos de ejecución. El informe de error no se enviará hasta que los 10 intentos hayan fallado.</br>Corrija su script en función del informe de error recibido y vuelva a activar la "tarea CRON" en el panel de control (haga clic en `...`{.action} y luego en `Editar`{.action}).|
 |Informes de ejecución|Los informes sólo se enviarán a la dirección de correo electrónico seleccionada una vez al día (durante las horas de la noche).|
 
 ### Reparación
@@ -142,35 +142,35 @@ Para más información, consulte nuestra guía ["Consultar las estadísticas y l
 - Ejemplo de finalización de script correctamente ejecutado 
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
-[2020-08-11 00:36:01] 
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2023-08-11 00:36:01] 
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-10 22:39:44.086166 exitcode: 0
 </code></pre>
 
 - Ejemplo de fallo al superar el tiempo de ejecución
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
+[2023-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2023-08-11 01:36:01] ## OVH ## END - 2023-08-11 01:36:01.086166 exitcode: 0
 </code></pre>
 
 - Ejemplo de error: no se puede encontrar el archivo de guión en la ruta de acceso especificada
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+[2023-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-11 00:36:01.086166 exitcode: 255
 </code></pre>
 
 - Ejemplo de error debido a un error de autorización (chmod) o a una configuración incorrecta del archivo .ovhconfig
 
 <pre class="bgwhite"><code>
-[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
-[2020-08-11 18:07:10]
-[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
+[2023-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2023-08-11 18:07:10]
+[2023-08-11 18:07:10] ## OVH ## END - 2023-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
 ## Más información <a name="go-further"></a>

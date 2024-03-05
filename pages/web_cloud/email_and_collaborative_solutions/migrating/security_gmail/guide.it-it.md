@@ -1,6 +1,6 @@
 ---
 title: 'Consentire alle applicazioni meno sicure di accedere al tuo account Gmail'
-hidden: true
+flag: hidden
 updated: 2022-04-06
 ---
 

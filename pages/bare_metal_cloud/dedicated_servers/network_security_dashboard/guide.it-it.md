@@ -127,7 +127,7 @@ Per ulteriori informazioni su come configurare le regole Edge Network Firewall, 
 
 ### Il servizio è stato attaccato e si verificano problemi sul server. Che altro posso fare?
 
-L’infrastruttura anti-DDoS è progettata per offrire la massima efficienza e una vasta gamma di servizi da proteggere. In alcuni casi specifici può essere necessario un ulteriore tuning (ad esempio per la specificità o le dimensioni dell'applicazione). Per richiederlo, visita il nostro [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) e cerca l’azione appropriata all’interno della categoria "attacco di rete e/o anti-DDoS correlati".
+L’infrastruttura anti-DDoS è progettata per offrire la massima efficienza e una vasta gamma di servizi da proteggere. In alcuni casi specifici può essere necessario un ulteriore tuning (ad esempio per la specificità o le dimensioni dell'applicazione). Per richiederlo, visita il nostro [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) e cerca l’azione appropriata all’interno della categoria "attacco di rete e/o anti-DDoS correlati".
 
 Per permetterci di comprendere meglio il suo caso e di aiutarla, può fornirci ulteriori dettagli:
 

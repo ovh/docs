@@ -40,7 +40,7 @@ Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=g
 
 En la pestaña `Información general`, encontrará el enlace de acceso a phpMyAdmin en el recuadro **"Administración de la base de datos"**, bajo la indicación "Interfaz de usuario".
 
-![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/database-administration.png){.thumbnail}
 
 Acceda a la página de conexión de phpMyAdmin.
 
@@ -107,7 +107,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
 
 - Ejecute SQuirreL SQL, abra el menú `{.action}Aliases`{.action} y haga clic en +.
 
-![](images/1.png){.thumbnail} ejecutar SQuirreL SQL
+![](images/aliases.png){.thumbnail} ejecutar SQuirreL SQL
 
 - Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
     - **Name**: Indique un nombre.
@@ -116,15 +116,15 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
     - **User name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
-![](images/2.png){.thumbnail} conexión a la base de datos
+![](images/add-alias.png){.thumbnail} conexión a la base de datos
 
 - Confirme con el botón `{.action}Connect.
 
-![](images/3.png){.thumbnail} confirmación de la conexión
+![](images/connect-to-mysql.png){.thumbnail} confirmación de la conexión
 
 Se establecerá la conexión a la base de datos:
 
-![](images/4.PNG){.thumbnail} conexión a la base de datos
+![](images/general-dashboard.png){.thumbnail} conexión a la base de datos
 
 ##### 3.4. Conexión mediante phpMyAdmin
 
@@ -166,7 +166,7 @@ mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contrase
 
 - Ejecute SQuirreL SQL, abra el menú `{.action}Aliases`{.action} y haga clic en +.
 
-![](images/1.png){.thumbnail} ejecutar SQuirreL SQL
+![](images/aliases.png){.thumbnail} ejecutar SQuirreL SQL
 
 - Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
     - **Name**: Indique un nombre.
@@ -175,15 +175,15 @@ mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contrase
     - **User name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
-![](images/2.png){.thumbnail} conexión a la base de datos
+![](images/add-alias.png){.thumbnail} conexión a la base de datos
 
 - Confirme con el botón `{.action}Connect.
 
-![](images/3.png){.thumbnail} confirmación de la conexión
+![](images/connect-to-mysql.png){.thumbnail} confirmación de la conexión
 
 Se establecerá la conexión a la base de datos:
 
-![](images/4.PNG){.thumbnail} conexión a la base de datos
+![](images/general-dashboard.png){.thumbnail} conexión a la base de datos
 
 ## Más información
 

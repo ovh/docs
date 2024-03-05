@@ -21,7 +21,7 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 ## Prérequis
 
 - Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec un RAID matériel.
-- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 ## En pratique
 
@@ -58,6 +58,8 @@ Une fois votre serveur configuré, vérifiez la taille des partitions en vous y 
 ```sh
 df -h
 ```
+
+```console```
 
 ### Utiliser le mode rescue
 

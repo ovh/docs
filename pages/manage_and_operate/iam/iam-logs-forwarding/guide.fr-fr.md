@@ -1,7 +1,7 @@
 ---
 title: "Génération des logs des comptes OVHcloud avec Logs Data Platform"
 excerpt: "Découvrez comment transférer les logs des comptes clients OVHcloud vers Logs Data Platform"
-updated: 2023-11-16
+updated: 2024-02-29
 ---
 
 ## Objectif
@@ -27,11 +27,11 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 ## En pratique
 
-### Type de logs des comptes OVHcloud
+### Types de logs des comptes OVHcloud
 
 Le compte OVHcloud propose 3 niveaux de logs :
 
-- **Journaux d'audit** : Fournit un ensemble chronologique d'enregistrements pertinents pour la sécurité, documentant la séquence d'actions dans votre compte OVHcloud. (connexions, changement de mot de passe, etc.)
+- **Journaux d'audit** : Fournit un ensemble chronologique d'enregistrements pertinents pour la sécurité, documentant la séquence d'actions dans votre compte OVHcloud (connexions, changement de mot de passe, etc.).
 - **Journaux d'activité** : Fournit tous les enregistrements des actions de votre compte OVHcloud à partir des appels API et des actions effectuées dans l'espace client.
 - **Logs de politique d'accès** : Fournit tous les enregistrements d'évaluation d'accès dans votre compte OVHcloud, y compris les actions d'intégration tierce (c'est-à-dire les actions autorisées ou non autorisées par les politiques IAM).
 
@@ -58,17 +58,18 @@ POST /me/logs/audit/forward
 }
 ```
 
-L'API nécessite un `streamId`, qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationid` afin de pouvoir l'utiliser pour récupérer le `subscriptionid`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'[opération de lecture de Logs Data Platform](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+L'API nécessite un `streamId`, qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationId` afin de pouvoir l'utiliser pour récupérer le `subscriptionId`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'[opération de lecture de Logs Data Platform](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
-Retrouvez votre `streamId` dans l'espace client Logs Data Platform :
-
-- Rendez-vous sur la page « Flux de données » de votre compte Logs Data Platform et « Éditer » le flux de données cible.
-
-![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
-
-- Copiez la page `streamId` de votre compte Logs Data Platform.
-
-![Find stream ID](images/retrieve_streamId_2.png){.thumbnail}
+> [!primary]
+> Vous pouvez retrouver votre `streamId` dans la partie `Logs Data Platform`{.action} de l'espace client OVHcloud :
+>
+> - Rendez-vous sur la page `Flux de données`{.action} de votre compte Logs Data Platform. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite du flux de donnés cible puis cliquez sur `Modifier`{.action}.
+>
+> ![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
+>
+> - Copiez la page `streamId` de votre compte Logs Data Platform.
+>
+> ![Find stream ID](images/retrieve_streamId_2.png){.thumbnail}
 
 Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platform :
 
@@ -82,10 +83,11 @@ Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platfor
 
 Maintenant que vos logs de compte OVHcloud sont ingérés et stockés dans votre flux Logs Data Platform, vous pouvez interroger vos logs et construire des tableaux de bord pour avoir une représentation graphique à l'aide de l'interface utilisateur web de Graylog.
 
-- Récupérer l'utilisateur admin (nom du service Logs Data Platform) et le mot de passe sur la page d'accueil de votre compte Logs Data Platform.
-- Ouvrez Graylog `web-ui`. Vous pouvez récupérer le lien depuis la page d'accueil de votre compte ou utiliser votre point d'accès en fonction de la région de votre compte (par exemple, la région de Gravelines : <https://gra1.logs.ovh.com/>).
-
+- Récupérez l'utilisateur admin (nom du service Logs Data Platform) et le mot de passe sur la page d'accueil de votre compte Logs Data Platform.
+  
 ![Access Graylog](images/access_graylog.png){.thumbnail}
+
+- Ouvrez Graylog `web-ui`. Vous pouvez récupérer le lien depuis la page d'accueil de votre compte ou utiliser votre point d'accès en fonction de la région de votre compte (par exemple, la région de Gravelines : <https://gra1.logs.ovh.com/>).
 
 - Connectez-vous à Graylog en utilisant votre **nom de service Logs Data Platform** et **mot de passe**.
 

@@ -1,6 +1,6 @@
 ---
-title: "Webhosting : umgebung, PHP-Version, .ovhconfig"
-excerpt: "Diese Anleitung erklärt, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
+title: "Webhosting: Laufzeitumgebung, PHP-Version, .ovhconfig"
+excerpt: "Erfahren Sie hier, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
 updated: 2023-09-05
 ---
 
@@ -11,6 +11,7 @@ updated: 2023-09-05
 ## Ziel
 
 [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} erlauben das Hosten von Websites aller Art, solange sie mit der [Konfiguration unserer Shared Hosting Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel sind.
+
 Sie können jedoch die folgenden Einstellungen für Ihr Webhosting ändern:
 
 - [Laufzeitumgebung](#runtime-environment)
@@ -27,7 +28,7 @@ Diese Konfigurationseinstellungen können auf zwei Arten geändert werden:
 > [!primary]
 >
 > Die “.ovhconfig“-Dateien sind Serverkonfigurationsdateien und werden von der Hosting Infrastruktur automatisch gelesen.
-> Sie sind nativ im FTP-Wurzelverzeichnis (Root) des FTP-Speicherplatzes Ihres Webhostings vorhanden.
+> Sie sind nativ im FTP-Wurzelverzeichnis (*root*) des FTP-Speicherplatzes Ihres Webhostings vorhanden.
 > Sie enthalten Werte für die oben genannten Elemente.
 >
 

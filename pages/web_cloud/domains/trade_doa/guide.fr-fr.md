@@ -38,7 +38,7 @@ Téléchargez ensuite le document présent sur la page <https://www.afnic.fr/wp-
 
 ### Présentation de la DOA
 
-![DOA](images/DOA.png){.thumbnail}
+![DOA](images/doa.png){.thumbnail}
 
 Voici un descriptif des éléments pouvant être renseignés dans la DOA :
 

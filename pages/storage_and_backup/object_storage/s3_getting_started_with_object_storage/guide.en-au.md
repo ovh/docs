@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started with Object Storage
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2023-04-28
+updated: 2024-01-31
 ---
 
 ## Objective
@@ -39,7 +39,15 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 
 #### Configuration
 
-Configure the aws client as follows:
+You can either use the interactive configuration to generate the configuration files or manually create them.
+
+> [!primary]
+>
+> To use the interactive configuration, run the following command:
+> `aws --configure`
+>
+
+The configuration file format in the aws client is as follows:
 
 ```bash
 user@host:~$ cat ~/.aws/credentials
@@ -62,12 +70,6 @@ s3 =
 s3api =
   endpoint_url = <url_endpoint>
 ```
-
-> [!primary]
->
-> You can also use interactive configuration by running the following command:
-> `aws --configure`
->
 
 Here are the configuration values that you can specifically set:
 
@@ -122,7 +124,7 @@ aws s3 cp /datas/test1 s3://<bucket_name>/other-filename
 **Downloading an object from a bucket**
 
 ```bash
-aws s3 cp s3://<bucket_name>/test1.
+aws s3 cp s3://<bucket_name>/test1 .
 ```
 
 **Uploading an object from one bucket to another bucket**
@@ -147,6 +149,11 @@ aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
 
 **Deleting objects and buckets**
 
+> [!primary]
+>
+> A bucket can only be deleted if it is empty.
+>
+
 ```bash
 # Delete an object
 aws s3 rm s3://<bucket_name>/test1
@@ -158,6 +165,34 @@ aws s3 rb s3://<bucket_name>
 # This command deletes all objects from the bucket, then deletes the bucket.
 aws s3 rb s3://<bucket_name> --force
 ```
+
+**Deleting objects and buckets with versioning enabled**
+
+If versioning is enabled, a simple delete operation on your objects will not permanently remove them.
+
+In order to permanently delete an object, you must specify a version id:
+
+```bash
+aws s3api delete-object --bucket <NAME> --key <KEY> --version-id <VERSION_ID>
+```
+
+To list all objects and all version ID, you can use the following command:
+
+```bash
+aws s3api list-object-versions --bucket <NAME>
+```
+
+With the previous delete-object command, you will have to iterate over all your object versions. Alternatively, you can use the following one-liner to empty your bucket:
+
+```bash
+aws s3api delete-objects --bucket <NAME> --delete "$(aws s3api list-object-versions --bucket <NAME> --query='{Objects: Versions[].{Key:Key,VersionId:VersionId}}')"
+```
+
+> [!primary]
+>
+> If your bucket has Object Lock enabled, you will not be able to permanently delete your objects. See our [documentation](/pages/storage_and_backup/object_storage/s3_managing_object_lock) to learn more about Object Lock.
+> If you use Object Lock in GOVERNANCE mode and have the permission to bypass GOVERNANCE mode, you will have to add the `--bypass-governance-retention` option to your delete commands.
+>
 
 **Setting tags on a bucket**
 

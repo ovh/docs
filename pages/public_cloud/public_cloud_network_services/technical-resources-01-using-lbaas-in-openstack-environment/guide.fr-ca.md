@@ -1,7 +1,7 @@
 ---
-title: "Déployer un Load Balancer Octavia"
-excerpt: Découvrez comment configurer Octavia LBaaS pour Public Cloud
-updated: 2023-08-08
+title: "Déployer un Load Balancer Public Cloud"
+excerpt: Découvrez comment configurer le Load Balander pour Public Cloud
+updated: 2024-01-10
 ---
 
 ## Objectif
@@ -69,7 +69,7 @@ openstack loadbalancer create --name loadbalancer_private_to_private --vip-subne
 +---------------------+--------------------------------------+
 ```
 
-> [!warning] **Octavia Flavors**
+> [!warning] **Load Balancer Flavors**
 >
 > Notez que si vous ne fournissez pas le paramètre `--flavor` pendant la création, le load balancer sera de taille *small*.
 > 
@@ -85,9 +85,9 @@ openstack loadbalancer flavor list
 +--------------------------------------+--------+--------------------------------------+---------+
 ```
 
-> [!warning] **Octavia status**
+> [!warning] **Status**
 >
-> La création du Load Balancer Octavia prendra un certain temps, essentiellement le temps de création de l'instance et la configuration du réseau.
+> La création du Load Balancer prendra un certain temps, essentiellement le temps de création de l'instance et la configuration du réseau.
 >
 > Pour la configuration suivante, vous devrez attendre que le `provisioning_status` devienne `ACTIVE`.
 
@@ -206,7 +206,7 @@ Backend 2
 
 ### Load Balancer en utilisant une IP publique (Public → Privé)
 
-Nous allons utiliser le Load Balancer Octavia préalablement déployé en réseau privé et utiliser une Floating IP OpenStack.
+Nous allons utiliser le Load Balancer préalablement déployé en réseau privé et utiliser une Floating IP OpenStack.
 
 Nous devons créer une Floating IP sur le réseau public (Ext-Net) et associer cette IP au port VIP du Load Balancer.
 
@@ -219,7 +219,7 @@ Les adresses Floating IP sont utilisées dans l'univers OpenStack pour exposer d
 Vous pouvez exposer deux types de ressources :
 
 - Une instance avec un port privé
-- Avoir une adresse IP virtuelle (VIP) d’Octavia Load Balancer.
+- Avoir une adresse IP virtuelle (VIP) de Load Balancer.
 
 Actuellement, les Floating IPs ne supportent pas les IPv6.
 
@@ -299,15 +299,21 @@ La passerelle publique est définie par un routeur L3 attaché à un réseau pri
 
 ![diagram](images/topology.png){.thumbnail}
 
+### Supprimer le Load Balancer
+
+```bash
+openstack loadbalancer delete [--cascade] [--wait] <load_balancer>
+```
+
 ## Aller plus loin
 
-[Premiers pas avec le service Load Balancer pour Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service)
+[Premiers pas avec le service Load Balancer pour Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 
 [Documentation officielle d'OpenStack Octavia](https://docs.openstack.org/octavia/latest/).
 
 [Cookbook OpenStack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html).
 
-[OpenStack Floating IP](https://docs.openstack.org/ocata/user-guide/cli-manage-ip-addresses.html)
+[OpenStack Floating IP](https://docs.openstack.org/ocata/user-guide/cli-manage-ip-addresses.html).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

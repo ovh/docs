@@ -10,7 +10,7 @@ Public Cloud Databases for PostgreSQL come with a set of supported extensions.
 
 You cannot install unsupported ones, since they are managed and industrialized services. Contact us if an extension is missing for your project, we may consider the implementation.
 
-Please note that some of the extensions have dependencies and they need to be created in the proper order. 
+Please note that some of the extensions have dependencies and they need to be created in the proper order.
 Also some extensions may require disconnecting the client and reconnecting before they are fully available.
 
 | Extension Name                 | Link                                                                   | Notes                                                                                                                                           |
@@ -46,7 +46,7 @@ Also some extensions may require disconnecting the client and reconnecting befor
 | `pgrouting`                    | <https://github.com/pgRouting/pgrouting>                               |                                                                                                                                                 |
 | `pgrowlocks`                   | <https://www.postgresql.org/docs/current/pgrowlocks.html>              |                                                                                                                                                 |
 | `pgstattuple`                  | <https://www.postgresql.org/docs/current/pgstattuple.html>             | PostgreSQL 11 and later                                                                                                                         |
-| `pgvector`                     | <https://github.com/pgvector/pgvector>                                 | PostgreSQL 13 and later                                                                                                                         |
+| `pgvector`                     | <https://github.com/pgvector/pgvector>                                                     | PostgreSQL 13 and later                                                                                                                         |
 | `plcoffee`                     | <https://pgxn.org/dist/plv8/>                                          | Available up to PostgreSQL v10                                                                                                                  |
 | `plls`                         | <https://pgxn.org/dist/plv8/>                                          | Available up to PostgreSQL v10                                                                                                                  |
 | `plperl`                       | <https://www.postgresql.org/docs/current/plperl.html>                  |                                                                                                                                                 |
@@ -85,10 +85,10 @@ defaultdb=> SELECT * FROM pg_available_extensions;
 (71 rows)
 ```
 
-Install an available extension::
+Install an available extension:
 
 ```sql
-defaultdb=> CREATE EXTENSION IF NOT EXISTS extension_name
+defaultdb=> CREATE EXTENSION IF NOT EXISTS "<extension_name>";
 CREATE EXTENSION
 ```
 

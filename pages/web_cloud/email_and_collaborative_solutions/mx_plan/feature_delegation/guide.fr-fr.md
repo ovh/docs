@@ -21,7 +21,7 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 
 > [!warning]
 >
-> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, il n'y a pas de délégations. Le changement de mot de passe, les filtres et répondeurs d'une adresse e-mail peuvent-être directement changés via le webmail OWA (**O**utlook **W**eb **A**pplication). **Identifiez votre offre à l'aide du tableau ci-dessous.**
+> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, il n'y a pas de délégations. Le changement de mot de passe, les filtres et répondeurs d'une adresse e-mail peuvent-être directement changés via le webmail OWA (**O**utlook **W**eb **A**pp). **Identifiez votre offre à l'aide du tableau ci-dessous.**
 >
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|

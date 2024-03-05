@@ -1,7 +1,7 @@
 ---
 title: "Completa l'intervento di manutenzione del tuo server dedicato (EN)"
 excerpt: "Find out what actions you can carry out yourself on your server following a maintenance intervention"
-updated: 2023-05-09
+updated: 2024-01-15
 ---
 
 ## Objective
@@ -469,7 +469,7 @@ If you are experiencing network connectivity issues (for example, no ping after 
 
 Do the following:
 
-1\. Reboot the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
+1\. Reboot the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 ```bash
 root@rescue:~# cat /mnt/etc/network/interfaces
@@ -509,7 +509,10 @@ Aug  8 14:27:48 s22 kernel: [  102.139437] eth1: renamed from vethRSNNKL
 root@rescue:~#
 ```
 
-2\. Create the `70-persistent-net.rules` file again with the new MAC address and the network interface name found in the `/mnt/etc/network/interfaces` file:
+2\. Create the `70-persistent-net.rules` file again and add:
+
+- The network interface name found in the `/mnt/etc/network/interfaces` file.
+- The new MAC address (viewable in the tab `Network interfaces`{.action} in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) or in the return of the command `ip link`).
 
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules

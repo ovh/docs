@@ -5,7 +5,7 @@ updated: 2021-09-27
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -26,7 +26,7 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 
 > [!warning]
 >
-> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty zarządzanie filtrami odbywa się bezpośrednio w Webmail OWA (**O**utlook **W**eb **A**pplication). Zidentyfikuj ofertę korzystając z poniższej tabeli.
+> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty zarządzanie filtrami odbywa się bezpośrednio w Webmail OWA (**O**utlook **W**eb **A**pp). Zidentyfikuj ofertę korzystając z poniższej tabeli.
 >
 
 Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|

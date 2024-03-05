@@ -1,8 +1,6 @@
 ---
-title: 'Accès à distance'
-keywords: 'Accès, Distance, Remote'
-description: 'Accès à distance'
-excerpt: "Si vous avez besoin d'accéder ou de modifier la configuration d'OverTheBox à distance, vous pouvez le faire en activant cette fonctionnalité via le manager."
+title: 'Ajouter un accès à distance sur OverTheBox'
+excerpt: "Découvrez comment configurer votre matériel pour accéder à distance à votre OverTheBox"
 updated: 2021-04-13
 ---
 

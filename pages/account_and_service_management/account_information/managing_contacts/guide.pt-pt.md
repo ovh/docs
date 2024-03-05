@@ -1,7 +1,7 @@
 ---
 title: 'Como gerir os contactos (gestores) dos serviços OVHcloud'
 excerpt: 'Saiba como definir ou alterar os contactos (gestores) dos serviços OVHcloud'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Objetivo
@@ -38,6 +38,10 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 - O antigo e o novo contacto faturação devem ter os pagamentos em dia.
 
 ## Instruções
+
+> [!primary]
+> A gestão dos contactos só é possível entre duas contas OVHcloud situadas na mesma zona geográfica.
+> Por exemplo, não é possível gerir os contactos entre uma conta na Europa e uma conta no Canadá.
 
 ### Aceder à área de gestão dos contactos <a name="gestion_des_contacts"></a>
 

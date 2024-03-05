@@ -6,7 +6,7 @@ updated: 2022-11-02
 
 ## Objective
 
-A Gateway offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
+A [Gateway](https://www.ovhcloud.com/asia/public-cloud/gateway/) offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
 
 This can be created via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), the [OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) or the [OVHcloud API](https://ca.api.ovh.com/).
 
@@ -186,6 +186,8 @@ Before proceeding, it is recommended that you consult these guides:
 >>
 
 ## Go further
+
+Learn more about Gateway and its scenarios on our [dedicated page](https://www.ovhcloud.com/asia/public-cloud/gateway/).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

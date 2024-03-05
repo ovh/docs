@@ -103,7 +103,7 @@ Minecraft est correctement supporté dans les versions suivantes :
 - Minecraft Query
 
 > [!primary]
-> Pour le moment, l'édition Java de Minecraft est protégée en mode « default » et aucune configuration supplémentaire n'est exposée. Si vous hébergez des serveurs Minecraft de plus grande taille ou si vous avez des besoins spécifiques, veuillez contacter notre support à l'aide du [Centre d'aide](https://help.ovhcloud.com/csm?id=csm_cases_requests) avec tous les détails permettant d'optimiser le profil de l'application.
+> Pour le moment, l'édition Java de Minecraft est protégée en mode « default » et aucune configuration supplémentaire n'est exposée. Si vous hébergez des serveurs Minecraft de plus grande taille ou si vous avez des besoins spécifiques, veuillez contacter notre support à l'aide du [Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) avec tous les détails permettant d'optimiser le profil de l'application.
 >
 
 ## FAQ
@@ -122,7 +122,7 @@ Vous pouvez proposer votre besoin sur notre [roadmap des solutions d’infrastru
 
 ### Après avoir configuré mon jeu avec les ports appropriés et la politique par défaut sur « drop », je reçois toujours des attaques qui ont un impact sur mon serveur de jeu. Que faire ?
 
-Pour cela, vous devrez nous partager un extrait du trafic réseau correspondant à cette attaque (fichier .pcap) et demander une configuration personnalisée de la protection de votre profil. Pour ce faire, vous pouvez utiliser notre [Centre d’aide](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+Pour cela, vous devrez nous partager un extrait du trafic réseau correspondant à cette attaque (fichier .pcap) et demander une configuration personnalisée de la protection de votre profil. Pour ce faire, vous pouvez utiliser notre [Centre d’aide](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ## Aller plus loin
 

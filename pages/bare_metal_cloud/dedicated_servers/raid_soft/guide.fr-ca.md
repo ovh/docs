@@ -17,7 +17,7 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec une configuration RAID logiciel.
-- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 ## En pratique
 
@@ -116,7 +116,7 @@ Disk identifier: 0x150f6797
 Cette commande montre que `/dev/md2` se compose de 888,8 Go et `/dev/md4` contient 973,5 Go. Exécuter la commande « mount » montre la disposition du disque.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)

@@ -320,7 +320,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> Comme vous pouvez le constater, la VM n'a qu'une IP privée mais elle est disponible depuis Internet via l'adresse Floating IP.
 >>
 >> ```bash
->> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 1.1.1.1
+>> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 213.186.33.99
 >> ubuntu@vm4fip:~$ curl ifconfig.me/ip
 >> 169.254.10.25
 >> ```

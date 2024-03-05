@@ -1,6 +1,6 @@
 ---
 title: Branchements IP5000
-hidden: true
+flag: hidden
 updated: 2018-03-26
 ---
 

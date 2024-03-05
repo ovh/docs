@@ -109,7 +109,6 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
 | Data Processing | not available||
-| Data Integration | not available||
 | Logs Data Platform | ovh | partially available :<br/>- [ovh_dbaas_logs_graylog_output_stream](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_graylog_output_stream) <br/> - [ovh_dbaas_logs_input](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_input) <br/>- [ovh_dbaas_logs_cluster](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_cluster) <br/>- [data source] [ovh_dbaas_logs_input_engine](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dbaas_logs_input_engine)|
 
 #### Settings

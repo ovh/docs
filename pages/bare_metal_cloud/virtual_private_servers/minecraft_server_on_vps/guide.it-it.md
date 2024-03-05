@@ -26,7 +26,7 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 
 - Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
 - Aver installato una distribuzione GNU/Linux sul server
-- Avere accesso amministratore (root) via SSH al server
+- Avere accesso amministratore (sudo) via SSH al server
 - Comprendere principalmente l'amministrazione GNU/Linux
 
 ## Procedura

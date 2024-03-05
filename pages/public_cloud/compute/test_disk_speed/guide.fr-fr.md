@@ -13,7 +13,7 @@ Lors de vos tests, vous serez probablement amené à vérifier la vitesse de vos
 ## Prérequis
 
 - Posséder une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
-- Disposer d’un accès administratif (root) à cette instance via SSH (pour Linux uniquement).
+- Disposer d’un accès administratif (sudo) à cette instance via SSH (pour Linux uniquement).
 
 ## En pratique
 
@@ -23,17 +23,16 @@ La commande dont vous avez besoin pour vérifier la vitesse de votre disque s'ap
 
 Pour installer `fio`, établissez une connexion SSH à votre instance puis exécutez la commande suivante :
 
-```
-root@server:~$ apt-get install fio
+```bash
+apt install fio
 ```
 
 ### Tester la vitesse de votre disque
 
 Pour tester la vitesse de votre disque, exécutez la commande suivante :
 
-```
-root@serveur:~$ fio 
---name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```bash
+fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
@@ -53,7 +52,7 @@ root@serveur:~$ cd /mnt/disk
 
 Une fois le test terminé, vous obtenez un résultat semblable à ce qui suit :
 
-```
+```console
 fio-2.1.11
 Démarrage d'un processus
 test: Mise en page des fichiers d'E/S (1 fichier(s) / 1 024 Mo)
@@ -101,7 +100,7 @@ util=99.05%
 
 La ligne qui nous intéresse est la sixième, qui contient le nombre d'opérations d'entrée-sortie par seconde (IOPS) :
 
-```
+```console
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 

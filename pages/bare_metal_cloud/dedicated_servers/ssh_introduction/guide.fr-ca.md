@@ -1,7 +1,7 @@
 ---
 title: 'Introduction au SSH'
 excerpt: "Découvrez comment utiliser les connexions SSH pour accéder à votre serveur"
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 ## Objectif
@@ -77,6 +77,8 @@ Si le port SSH du serveur n'est pas le port standard, utilisez cette commande :
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Connexion et fingerprint
 
 Lorsque vous êtes invité à entrer un mot de passe, tapez celui de l'utilisateur qui se connecte et appuyez sur `Entrée`.
@@ -131,10 +133,16 @@ Enregistrez les modifications et quittez l'éditeur. La nouvelle empreinte de cl
 Sous Windows, l'emplacement du fichier `known_hosts` et la ligne à supprimer sont également spécifiés, par exemple :
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
-Accédez à ce dossier, faites un clic-droit sur le fichier et ouvrez-le avec l'application Bloc-notes.
+Pour résoudre ce problème, utilisez la commande suivante avec l'adresse IP de votre serveur :
+
+```bash
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+```
+
+Vous pouvez également accéder à ce dossier, effectuer un clic droit sur le fichier et l'ouvrir avec l'application Bloc-notes.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
@@ -161,6 +169,8 @@ Comme d’habitude, l’avertissement d’empreinte s’affiche à la première 
 Veuillez consulter la FAQ officielle et la documentation de PuTTY pour plus d'informations.
 
 ## Aller plus loin <a name="gofurther"></a>
+
+[Configuration des comptes utilisateurs et de l'accès root sur un serveur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Création de clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

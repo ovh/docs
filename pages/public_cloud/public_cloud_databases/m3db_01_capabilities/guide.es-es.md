@@ -1,7 +1,7 @@
 ---
 title: M3db - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3db
-updated: 2023-12-04
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -29,8 +29,6 @@ Entire database instances have to be in the same region. Multi-AZ is currently n
 
 The Public Cloud Databases offer supports the following M3db versions:
 
-- M3db 1.1
-- M3db 1.2
 - M3db 1.5
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. M3db recommends always installing and using the latest stable version.
@@ -152,11 +150,11 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 1 day.
+*Essential* plan clusters are automatically backed up daily. Backup retention is 1 day.
 
-*Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 6 days.
+*Business* plan clusters are automatically backed up daily. Backup retention is 6 days.
 
-*Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 13 days.
+*Enterprise* plan clusters are automatically backed up daily. Backup retention is 13 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

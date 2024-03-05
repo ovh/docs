@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit einem Dedicated Server'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -19,7 +19,7 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder RDP (optional). 
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder RDP (optional). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!primary]
@@ -101,23 +101,21 @@ Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Anweisun
 
 Verwenden Sie die folgenden Beispiele, um sich mit Ihrem Server zu verbinden, und ersetzen Sie die Login-Daten mit Ihren eigenen Werten (IP-Adresse und Serverreferenzname sind austauschbar).
 
-**Beispiel mit Root:**
-
 ```bash
-ssh root@IPv4_Ihres_Servers
+ssh username@IPv4
 ```
 
-**Beispiel mit einem vorkonfigurierten Benutzer:**
+**Beispiel:**
 
 ```bash
-ssh ubuntu@Referenzname_Ihres_Servers
+ssh ubuntu@169.254.10.250
 ```
 
 Weitere Informationen zu SSH finden Sie in unserer [Anleitung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 #### Windows
 
-Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (Root). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
+Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (sudo). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
 
 Beachten Sie auch unsere Anleitung zum [Konfigurieren einer neuen Windows Server Installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
@@ -197,9 +195,13 @@ Zur Aktivierung und Nutzung des Backup Storage folgen Sie der [zugehörigen Anle
 
 ## Weiterführende Informationen
 
-[Einen Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+[Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
+[Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Rescue-Modus aktivieren und verwenden](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 

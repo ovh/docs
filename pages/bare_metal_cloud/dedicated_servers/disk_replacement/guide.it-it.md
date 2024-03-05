@@ -20,7 +20,7 @@ Se riscontri un malfunzionamento del disco oppure il nostro sistema ti ha inviat
 ## Prerequisiti
 
 - Avere un [server dedicato OVHcloud](https://www.ovh.it/server_dedicati/){.external}
-- Avere l’accesso amministratore (*root*) al server via SSH
+- Avere l’accesso amministratore (sudo) al server via SSH
 
 ## Procedura
 

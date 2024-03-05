@@ -1,7 +1,7 @@
 ---
 title: 'First Steps with the OVHcloud APIs'
 excerpt: 'Learn how to use OVHcloud APIs'
-updated: 2023-09-08
+updated: 2024-02-01
 ---
 
 ## Objective
@@ -194,6 +194,31 @@ client = ovh.Client(
 # Print nice welcome message
 print("Welcome", client.get('/me')['firstname'])
 ```
+
+#### List and revoke your keys
+
+There is currently no Control Panel option to list and revoke your keys. The API portal can be used to do that :
+
+- List the keys IDs with the following call:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application
+>
+
+- Get key details with the following call:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application/{applicationId}
+>
+
+- Revoke a key with the following call:
+
+> [!api]
+>
+> @api {v1} /me DELETE /me/api/application/{applicationId}
+>
 
 ## Go further <a name="gofurther"></a>
 

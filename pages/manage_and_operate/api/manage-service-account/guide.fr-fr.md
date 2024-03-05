@@ -8,7 +8,7 @@ updated: 2024-03-04
 
 Les accès aux produits OVHcloud sont configurables au sein de **politiques d'accès** accessible depuis l'espace client. Cela vous permet de définir de manière globale qui peut accéder à quel produit. Afin de configurer ces accès pour des utilisateurs, consultez notre guide « [Comment utiliser les politiques IAM depuis votre espace client](/pages/account_and_service_management/account_information/iam-policy-ui) ».
 
-Lorsque des accès aux API sont nécessaires depuis des applicatif ou du code, il est nécessaire de générer des identifiants spécifiques afin de ne pas les lier à un utilisateur. En effet, vous ne souhaitez pas réinitialiser vos scripts en production si votre utilisateur change ses identifiants ou quitte votre entreprise.
+Lorsque des accès aux API sont nécessaires depuis des applications ou du code, il est nécessaire de générer des identifiants spécifiques afin de ne pas les lier à un utilisateur. En effet, vous ne souhaitez pas réinitialiser vos scripts en production si votre utilisateur change ses identifiants ou quitte votre entreprise.
 
 Ce guide vous expliquera comment générer des identifiants pour les déployer au sein de votre code, ainsi que leur utilisation dans les politiques d'accès de OVHcloud.
 Ces identifiants peuvent être utilisés au sein des différentes API de nos produits :

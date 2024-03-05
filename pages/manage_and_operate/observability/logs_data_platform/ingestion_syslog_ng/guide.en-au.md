@@ -1,6 +1,6 @@
 ---
-title: Pushing logs with a forwarder - Syslog-ng 3.8+ (Linux)
-updated: 2020-07-27
+title: Pushing logs with a forwarder - Syslog-ng 3.12.1+ (Linux)
+updated: 2024-03-01
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ In this guide will show you how to send Logs from your Linux instance to Logs Da
 
 ## Requirements
 
-- A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 9** in this tutorial
+- A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 12** in this tutorial
 - A root access to this instance
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
@@ -26,7 +26,7 @@ On Linux, logs are generated automatically, for a variety of actions. RAM usage,
 
 ### What are logs?
 
-Here are some example logs from an OVHcloud Public Cloud instance on **Debian 9** :
+Here are some example logs from an OVHcloud Public Cloud instance on **Debian 12** :
 
 ```text
  Jan 27 12:21:15 server syslog-ng[29512]: syslog-ng starting up; version='3.8.1'
@@ -43,7 +43,7 @@ First thing to do is to configure your Logs Data Platform account: [create your 
 
 ### Install and configure a log collector
 
-So let's assume you have your Linux. This guide **DOES NOT** fully cover how to configure other flavors of syslog nor other OSs. Please refer to their own documentation to know how to setup a template and a external destination for the logs. You can still read this entire document to have a grasp on how the template is built. However this configuration should work on any syslog-ng version above 3.8.
+So let's assume you have your Linux. This guide **DOES NOT** fully cover how to configure other flavors of syslog nor other OSs. Please refer to their own documentation to know how to setup a source, filter and an external destination for the logs. You can still read this entire document to have a grasp on how the configuration is built. However this configuration should work on any syslog-ng version above 3.12.1.
 
 We will install a log collector. What's this? It's a tool that collects logs from any source, processes them and delivers them to various destinations, like the Logs Data Platform.
 
@@ -51,7 +51,7 @@ In this guide we will install Syslog-ng :
 
 - Log in your Linux
 - Install syslog-ng and the last certificates
-- Check that your syslog-ng version is above 3.8 (use **syslog-ng --version**) for that.
+- Check that your syslog-ng version is above 3.12.1 (use **syslog-ng --version**) for that.
 
 ```shell-session
 $ debian@server:~$ sudo apt-get install syslog-ng ca-certificates
@@ -64,47 +64,38 @@ $ debian@server:~$ sudo apt-get install syslog-ng ca-certificates
 $ debian@server:~$ sudo nano /etc/syslog-ng/conf.d/ldp.conf
 ```
 
-- Copy-paste this configuration. Don't forget to modify the **token value** and the **LDP cluster** by yours.
+- Copy-paste this configuration. Don't forget to replace the **$STREAM_TOKEN** with your stream write token and the **$LDP_CLUSTER** with your Logs Data Platform cluster.
 
 ``` console
-template ovhTemplate {
-    # important:
-    ## Bracket [] no space between inside (opening/closing), space outside.
-    ## sid_id (exampleSDID@32473), flowgger need an id for structured data as specified by the RFC 5424.
-    ## change X-OVH-TOKEN=\"xxxxxxxxxxxxxx\" by your X-OVH-TOKEN
-    #flowgger RFC5424 example:
-    #<23>1 2016-09-05T15:53:45.637824Z hostname appname 69 42 [origin@123 software="test script" swVersion="0.0.1"] test message
-    #pri timestamp hostname appname pid msgid [sd_id sd_field=sd_value] message
-
-    template("<${LEVEL_NUM}>1 ${ISODATE} ${HOST} ${PROGRAM} ${PID} - [sdid@32473 X-OVH-TOKEN=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx\" pid=\"${PID}\" facility=\"${FACILITY}\" priority=\"${PRIORITY}\"] ${MSG}\n");
-    template_escape(no);
+rewrite ovh-token {
+    # This will add X-OVH-TOKEN as custom structured data specified by the RFC 5424.
+    # change $STREAM_TOKEN by your X-OVH-TOKEN.
+    set("$STREAM_TOKEN", value(".SDATA.token@29084.X-OVH-TOKEN"));
 };
 
 destination ovhPaaSLogs {
-    network("<your_cluster>.logs.ovh.com"
-        port(6514),
-        template(ovhTemplate),
-        ts_format("iso"),
-        transport("tls"),
-        tls(peer-verify("required-trusted") ca_dir("/etc/ssl/certs/")),
-        keep-alive(yes),
-        so_keepalive(yes),
+    # change $LDP_CLUSTER by your Logs Data Platform cluster.
+    network("$LDP_CLUSTER.logs.ovh.com"
+        port(6514)
+        transport("tls")
+        flags(syslog-protocol)
+        ts_format("iso")
+        frac-digits(6)
+        tls(peer-verify("required-trusted") ca_dir("/etc/ssl/certs/"))
+        keep-alive(yes)
+        so_keepalive(yes)
     );
 };
 
-destination localfile {
-    file("/var/log/temporaryfiletochecklogs.log");
-};
+## your can use this destination for debugging purpose
+#destination debugfile {
+#    file("/var/log/debugpaaslogs.log"
+#      flags(syslog-protocol)
+#    );
+#};
 
-log {
-     source(s_src);
-     destination(ovhPaaSLogs);
-};
-
-log {
-     source(s_src);
-     destination(localfile);
-};
+log { source(s_src); rewrite(ovh-token); destination(ovhPaaSLogs); };
+#log { source(s_src); rewrite(ovh-token); destination(debugfile); };
 ```
 
 > [!warning]
@@ -126,30 +117,15 @@ Let's review this configuration.
 
 **SOURCES** : this is the logs sources to collect. So here, we collect System and Internal. More sources can be added of course!
 
-**TEMPLATE** : we will deliver logs to the platform based on this template, it will bring more comprehension for Graylog
+**REWRITE** : this will set your X-OVH-TOKEN as RFC 5424 structured data. You can retrieve your stream write token by going to `Stream page`{.action} in the OVHcloud Control Panel and select **Copy the write** from the desired stream.
 
-**DESTINATION** : This is where we will deliver logs in nearly real time. Here, we have to destinations : The first is the remote endpoint in Logs Data Platform, the second one is local. Retrieve the correct endpoint for RFC 5424 by going to your manager and head to the `Home page`{.action}. I create a new log file locally in order to check if the logs are properly sent. It's optional of course, and you can safely remove it once everything is fine. as you can see, the remote destination will use the template, the local destination will not.
+**DESTINATION** : This is where we will deliver logs in nearly real time. Here, we have two destinations : The first is the remote endpoint in Logs Data Platform, the second one in comment is a local file for debugging purpose only. You can find your Logs Data Platform cluster by going to `Home page`{.action} in the OVHcloud Control Panel in **access point** configuration. For debugging purpose, you can uncomment the debugfile section to check if the whole pipeline is working properly. It will write to local file destination, do not use it in production.
 
 - Save the file, close nano and restart syslog
 
 ```shell-session
 $ debian@server:~$ sudo systemctl restart syslog-ng.service
 ```
-
-- Open the temporary local file, check if there is something inside
-
-```shell-session
-$ debian@server:~$ tail /var/log/temporaryfiletochecklogs.log
-```
-
-If it's empty, that's not normal. Check your syslog configuration again. In the best case, we should have something like this :
-
-```text
- Jan 27 12:21:15 server syslog-ng[29512]: syslog-ng starting up; version='3.8.1'
- Jan 27 12:21:15 server syslog-ng[29512]: Syslog connection established; fd='10', server='AF_INET(51.38.195.65:6514)', local='AF_INET(0.0.0.0:0)'
-```
-
-It means syslog-ng has started up, and connection to remote endpoint is fine.
 
 ### Let's play with Graylog Dashboards
 

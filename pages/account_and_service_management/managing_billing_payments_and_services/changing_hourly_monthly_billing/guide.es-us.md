@@ -1,5 +1,5 @@
 ---
-title: 'Cambiar de facturación por horas a mensual'
+title: 'Public Cloud Compute - Cambiar de facturación por horas a mensual'
 excerpt: 'Cómo cambiar la modalidad de facturación de una instancia de Public Cloud'
 updated: 2023-01-23
 ---

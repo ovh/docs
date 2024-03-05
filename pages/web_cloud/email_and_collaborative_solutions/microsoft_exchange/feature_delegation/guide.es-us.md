@@ -67,7 +67,7 @@ El procedimiento es distinto según el permiso, y depende también de la aplicac
 
 #### 2.1. Utilizar el permiso de acceso completo
 
-**Desde Outlook Web Application (OWA)**
+**Desde Outlook Web App (OWA)**
 
 Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta Exchange que dispone del permiso delegado. Una vez que se haya conectado, haga clic derecho en el nombre de la cuenta en el menú de la izquierda y seleccione `Agregar carpeta compartida`{.action}.
 
@@ -87,7 +87,7 @@ A continuación, haga clic en `Más configuraciones`{.action}. En la nueva venta
 
 #### 2.2. Utilizar el permiso de «enviar como»
 
-**Desde Outlook Web Application (OWA)**
+**Desde Outlook Web App (OWA)**
 
 Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta Exchange que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
 
@@ -109,7 +109,7 @@ Ya puede redactar su mensaje y enviarlo.
 
 #### 2.3. Utilizar el permiso de «enviar en nombre de»
 
-**Desde Outlook Web Application (OWA)**
+**Desde Outlook Web App (OWA)**
 
 Vaya a la dirección <https://www.ovh.com/world/mail/> e introduzca las claves de la cuenta Exchange que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
 

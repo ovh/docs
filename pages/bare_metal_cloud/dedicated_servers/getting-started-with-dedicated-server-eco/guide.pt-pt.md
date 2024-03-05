@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com um servidor dedicado Kimsufi, So You Start ou Rise'
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado Kimsufi, So You Start ou Rise'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -95,23 +95,21 @@ Uma vez terminada a instalação, receberá um e-mail com as instruções de ace
 
 Para se ligar ao servidor, utilize os exemplos abaixo e substitua as informações de identificação pelos seus próprios identificadores (o endereço IP e o nome de referência do servidor são permutáveis).
 
-**Exemplo com root:**
-
 ```bash
-ssh root@IPv4_do_servidor
+ssh username@IPv4
 ```
 
-**Exemplo com um utilizador pré-configurado:**
+**Exemplo:**
 
 ```bash
-ssh ubuntu@nome_de_referência_do_servidor
+ssh ubuntu@169.254.10.250
 ```
 
 Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 #### Windows
 
-Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (root). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
+Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (sudo). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
 
 Consulte também o nosso guia [Configurar uma nova instalação do Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
@@ -211,9 +209,13 @@ Para ativar e utilizar a opção Backup Storage, consulte [este guia](/pages/bar
 
 ## Quer saber mais?
 
+[Configuração das contas de utilizadores e acesso root num servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Proteger um servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Ativar e utilizar o modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

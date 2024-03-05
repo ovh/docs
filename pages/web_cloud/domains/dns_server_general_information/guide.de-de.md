@@ -31,7 +31,7 @@ Weitere Informationen zu den DNS-Zonen finden Sie in unserer [Dokumentation zu D
 
 Aus diesem Grund müssen die **DNS-Server** beim Domainnamen angemeldet sein, um die von ihnen gehostete DNS-Zone verwenden zu können. 
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 **DNS-Server** werden üblicherweise in Paaren eingesetzt:
 
@@ -86,7 +86,7 @@ Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für 
 >
 > Wenn Sie die regulären OVHcloud DNS-Server verwenden, haben die in den Servernamen enthaltenen Nummern keinen Bezug zu den von Ihnen verwendeten Diensten. Nur die Option [DNS Anycast](https://www.ovhcloud.com/de/domains/options/) verwendet bestimmte DNS-Server, die Ihnen automatisch zugewiesen werden. 
 
-![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
+![dns-server](images/tab.png){.thumbnail}
 
 ### DNS-Server ändern
 
@@ -107,7 +107,7 @@ Ersetzen Sie in den Textfeldern die aktuellen Werte der DNS-Server mit den Namen
 
 Wenn Sie die Server eingetragen haben, klicken Sie auf `Konfiguration anwenden`{.action}. Der Status der DNS-Server wird nun entsprechend der von Ihnen vorgenommenen Änderungen in der Tabelle aktualisiert.
 
-![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
+![dns-server](images/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -118,7 +118,7 @@ Wenn Sie die Server eingetragen haben, klicken Sie auf `Konfiguration anwenden`{
 
 Mit dem Button `DNS-Server zurücksetzen`{.action} können Sie die aktuellen DNS-Server zurücksetzen, indem Sie diese automatisch durch die ursprünglichen OVHcloud DNS-Server ersetzen. Verwenden Sie diese Option **ausschließlich**, wenn Sie die OVHcloud DNS-Server (und die dazugehörige OVHcloud DNS-Zone) verwenden möchten. 
 
-![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
+![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
 Nachdem die erforderlichen Änderungen vorgenommen wurden, dauert es eine gewisse Zeit, bis diese effektiv sind. Dabei sind zwei aufeinanderfolgende Vorgänge zu beachten:
 

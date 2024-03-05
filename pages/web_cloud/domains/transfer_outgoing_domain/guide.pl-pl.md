@@ -5,7 +5,7 @@ updated: 2023-06-28
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -59,7 +59,7 @@ Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transferem` pod **zabezpieczeniem**. Domyślnie ochrona ta jest `Aktywne`{.action}.
 
-![ochrona włączona](images/outgoing-transfer-step1.png){.thumbnail}
+![ochrona włączona](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć tę ochronę. Odczekaj kilka minut, aż stan się `Wyłączone`{.action}.
 
@@ -74,7 +74,7 @@ Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć
 > Niektóre *kody transferu* są zarządzane bezpośrednio przez *registry* przy rozszerzaniu domeny. *Rejestr* to organizacja, która zarządza wszystkimi domenami dla wybranego rozszerzenia. Na przykład,**AFNIC** zarządza wszystkimi domenami, których rozszerzenie oznacza "*.fr*". W takim przypadku należy skontaktować się bezpośrednio z repozytorium*, które zarządza rozszerzeniem Twojej domeny, aby pobrać *kod transferu*.
 >
 
-![dezaktywacja](images/outgoing-transfer-step2.png){.thumbnail}
+![dezaktywacja](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -92,7 +92,7 @@ Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu.  W tym ce
 
 Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem transferu, hasłem domeny, AUTH-CODE lub EPP-Code).
 
-![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
+![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
 

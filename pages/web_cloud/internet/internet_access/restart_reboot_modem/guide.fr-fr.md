@@ -1,7 +1,7 @@
 ---
 title: 'Redémarrer ou réinitialiser une box OVHcloud'
 excerpt: 'Découvrez comment effectuer le redémarrage et la réinitialisation de votre box'
-updated: 2021-07-23
+updated: 2024-02-23
 ---
 
 ## Objectif
@@ -24,8 +24,8 @@ La manipulation est différente selon le modèle de votre box. Rapprochez-vous d
 |[TG788vn/TG788vn V2](./#redemarrer-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#redemarrer-un-modele-tg789vn)|
 |---|---|
 |![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|
-|[TG799vac](./#redemarrer-un-modele-tg799vac)| |
-|![TG799vac](images/t799vac.png){.thumbnail}| |
+|[TG799vac](./#redemarrer-un-modele-tg799vac)|[Zyxel DX3301-T0](#reboot-zyxeldx3301t0)|
+|![TG799vac](images/t799vac.png){.thumbnail}|![Zyxel DX3301-T0](images/zyxeldx3301t0.png){.thumbnail}|
 |[Zyxel VMG8924-B10D](./#redemarrer-un-modele-zyxel-vmg8924-b10d)|[Zyxel VMG8823-B50B](./#redemarrer-un-modele-zyxel-vmg8823-b50b)|
 |![Zyxel VMG8924-B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel VMG8823-B50B](images/zyxelb50b.png){.thumbnail}|
 |[Zyxel VMG8825-T50](./#redemarrer-un-modele-zyxel-vmg8825-t50)|[Zyxel VMG8623-T50B](./#redemarrer-un-modele-zyxel-vmg8623-t50b)|
@@ -57,6 +57,15 @@ Le redémarrage électrique de votre box consiste simplement à mettre celle-ci 
 - actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
 
 ![Redémarrage TG789vn](images/tg799_power.png){.thumbnail}
+
+#### Redémarrer un modèle Zyxel DX3301-T0 <a name="reboot-zyxeldx3301t0"></a>
+
+Le redémarrage électrique de votre box consiste simplement à mettre celle-ci hors tension, puis à l'alimenter de nouveau. Pour cela, deux solutions sont disponibles :
+
+- débrancher puis rebrancher électriquement la box  ;
+- actionner le bouton ON/OFF à l'arrière comme indiqué ci-dessous.
+
+![Redémarrage Zyxel DX3301-T0](images/zyxeldx3301t0-reboot.png){.thumbnail}
 
 #### Redémarrer un modèle Zyxel VMG8924-B10D
 
@@ -110,8 +119,8 @@ Il existe deux possibilités pour réinitialiser votre box OVHcloud :
 |[TG788vn/TG788vn V2](./#reinitialiser-un-modele-tg788vn-ou-tg788vn-v2)|[TG789vn](./#reinitialiser-un-modele-tg789vn)|
 |---|---|
 |![TG788vn / TG788vn V2](images/tg788.png){.thumbnail}|![TG789vn](images/tg789vn.png){.thumbnail}|
-|[TG799vac](./#reinitialiser-un-modele-tg799vac)| |
-|![TG799vac](images/t799vac.png){.thumbnail}| |
+|[TG799vac](./#reinitialiser-un-modele-tg799vac)|[Zyxel DX3301-T0](#reset-zyxeldx3301t0)|
+|![TG799vac](images/t799vac.png){.thumbnail}|![Zyxel DX3301-T0](images/zyxeldx3301t0.png){.thumbnail}|
 |[Zyxel VMG8924-B10D](./#reinitialiser-un-modele-zyxel-vmg8924-b10d)|[Zyxel VMG8823-B50B](./#reinitialiser-un-modele-zyxel-vmg8823-b50b)|
 |![Zyxel VMG8924-B10D](images/zyxelb10d.png){.thumbnail}|![Zyxel VMG8823-B50B](images/zyxelb50b.png){.thumbnail}|
 |[Zyxel VMG8825-T50](./#reinitialiser-un-modele-zyxel-vmg8825-t50)|[Zyxel VMG8623-T50B](./#reinitialiser-un-modele-zyxel-vmg8623-t50b)|
@@ -157,6 +166,14 @@ Rien ne se passera, c'est normal. Il faut attendre environ 30 secondes après av
 >
 
 ![Bouton de réinitialisation](images/tg799_reset.png){.thumbnail}
+
+La box va redémarrer plusieurs fois avant d'être pleinement opérationnelle. Ce processus devrait durer au total une quinzaine de minutes.
+
+#### Réinitialiser un modèle Zyxel DX3301-T0 <a name="reset-zyxeldx3301t0"></a>
+
+Débranchez tous les câbles de type RJ45 (les ports jaunes sur la photo ci-dessous). Puis appuyez dans le trou `reset` (à l'aide d'un objet pointu) pendant au moins 10 secondes. Attendez alors, tout en maintenant ce bouton, que le voyant `Power` commence à clignoter. Dès que cela sera le cas, vous pourrez relâcher.
+
+![Réinitialisation Zyxel DX3301-T0](images/zyxeldx3301t0-reset.png){.thumbnail}
 
 La box va redémarrer plusieurs fois avant d'être pleinement opérationnelle. Ce processus devrait durer au total une quinzaine de minutes.
 

@@ -1,55 +1,66 @@
 ---
-title: 'cPanel auf einem VPS installieren'
-excerpt: 'So instanziieren Sie einen VPS mit cPanel-Template'
-updated: 2021-10-14
+title: "cPanel auf einem VPS installieren"
+excerpt: "Erfahren Sie hier, wie Sie einen VPS mit cPanel-Template einrichten"
+updated: 2024-01-31
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
 
 ## Ziel
 
-cPanel ist eine Verwaltungsoberfläche für Web Hosting. Es besteht aus einem grafischen Interface, das die Automatisierung von Einstellungen ermöglicht und so Hosting-Management vereinfacht.
+cPanel ist ein Konfigurationspanel, das die Verwaltung von Webhosting vereinfacht. Es macht komplexe Aufgaben leichter zugänglich, speziell für neue Benutzer. Es bietet eine breite Palette von Funktionen, etwa die Verwaltung von: 
 
-**Diese Anleitung erläutert die Installation eines VPS mit dem cPanel-Template.**
+- E-Mails
+- Domainnamen
+- Datenbanken
+- Sicherheit
+- etc.
+
+Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erlaubt, wird das Hosten von Webseiten vereinfacht.
+
+**Diese Anleitung erklärt, wie Sie cPanel als vorinstallierte Anwendung auf einem VPS einrichten.**
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) der neueren Generation (Reihen Value, Essential, Comfort, Elite) in Ihrem Kunden-Account.
+- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Um einen cPanel-Server einzurichten, muss zuerst ein VPS mit cPanel-Distribution bestellt werden.
-
-![horizon](images/cpanel_order.png){.thumbnail}
-
-Wenn Ihr VPS bereit ist, erhalten Sie eine E-Mail mit den Zugangsdaten, um sich mit Ihrem cPanel-Server zu verbinden:
-
->Ihre Anwendung(en):
->
->Sie können sich mit cPanel verbinden über: https://*hostname*:2087/*session_parameters*
-
-Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann "CentOS 7 - cPanel" als Template (nur auswählbar bei einem kompatiblen VPS Modell).
+Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann ein [Betriebssystem, das mit cPanel kompatibel ist](https://www.ovhcloud.com/de/vps/os/).
 
 > [!warning]
 >
 > Wenn Sie einen VPS reinstallieren, werden alle Daten darauf überschrieben.
 >
 
-### Erste Verbindung mit dem VPS
+Um Ihren cPanel Server zu installieren, bestellen Sie einen VPS mit cPanel Distribution.
 
-Klicken Sie auf den personalisierten Link in Ihrer Installationsmail um zur Ersteinrichtung zu gelangen.
+![horizon](images/cpanel_order.png){.thumbnail}
 
-Diese eigens generierte URL erlaubt es, sich erstmals ohne Benutzername und Passwort im WHM Manager einzuloggen.
+Wenn Ihr VPS bereit ist, erhalten Sie eine E-Mail mit den Zugangsdaten, um sich mit Ihrem cPanel-Server zu verbinden, nach dem folgenden Schema:
 
-> [!primary]
->
-> Wenn der Link bereits abgelaufen ist, verbinden Sie sich mit dem CentOS-Benutzer über SSH mit Ihrem VPS und führen Sie den Befehl « sudo whmlogin » aus, um einen neuen Link zu erzeugen.
->
+```
+ |    Your application(s):
+ |    Application: cpanel
+ |    You can connect to cPanel from https://<hostname>:2087/<session_parameters>
+```
+
+### Erste Verbindung
+
+Wenn Sie die E-Mail mit Ihrem Zugriffslink erhalten haben, klicken Sie auf diesen Link, um die Erstkonfiguration durchzuführen. Sollte der Link bereits abgelaufen sein, loggen Sie sich [via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) beim Server ein und führen Sie den Befehl `sudo whmlogin` aus, um einen neuen Link zu erstellen.
+
+Die mit dem Befehl `sudo whmlogin` generierte URL erlaubt es Ihnen, sich ohne Login-Daten (Benutzer und Passwort) mit Ihrem WHM-Interface zu verbinden. WHM ist ein Server-Administrationstool das mit cPanel verwendet wird. Sie können auf cPanel zugreifen, nachdem Sie die folgenden Schritte ausgeführt haben.
 
 #### Schritt 1: Lesen und akzeptieren der cPanel-Nutzungsbedingungen
 
+Lesen und akzeptieren Sie die cPanel-Nutzungsbedingungen.
+
 ![horizon](images/license_validation.png){.thumbnail}
 
-#### Schritt 2: Eingeben Ihrer E-Mail-Adresse sowie der Nameserver, die der VPS verwenden soll
+#### Schritt 2: Eingeben Ihrer E-Mail-Adresse sowie der vom VPS zu verwendenden Nameserver
 
 ![horizon](images/setup_config_cpanel.png){.thumbnail}
 
@@ -57,13 +68,43 @@ Diese eigens generierte URL erlaubt es, sich erstmals ohne Benutzername und Pass
 
 ![horizon](images/change_root.png){.thumbnail}
 
-Anschließend sollten Sie sich mit dem Root-Benutzer in WHM oder über SSH einloggen können.
+Ab sofort können Sie sich mit dem soeben festgelegten Passwort via SSH mit dem Root-Benutzer auf Ihrem Server einloggen.
 
-### Den Dienst absichern
+### Einen cPanel-Account über das WHM-Interface erstellen
 
-Wir empfehlen weitere Schritte, um WHM und den VPS vor unbefugtem Zugriff zu sichern. Sie können dazu den [Empfehlungen von cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/) folgen.
+Wenn Sie in Ihrem WHM-Interface eingeloggt sind, klicken Sie auf `Create a New Account`{.action}, um einen cPanel-Account zu erstellen.
 
-Weiterhin ist empfehlenswert, die [OVHcloud Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) zu konfigurieren und eine [Backup-Lösung](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) für den VPS einzurichten.
+![cPanel](images/create_new_account.png){.thumbnail}
+
+Füllen Sie das Formular aus und bestätigen Sie die Erstellung Ihres cPanel-Accounts.
+
+![cPanel](images/create_new_account_form.png){.thumbnail}
+
+Klicken Sie auf die Schaltfläche `Go to cPanel`{.action} rechts in der Anzeige.
+
+![cPanel](images/go_to_cpanel.png){.thumbnail}
+
+Sie werden auf Ihr cPanel-Interface weitergeleitet.
+
+![cPanel](images/manager_cpanel.png){.thumbnail}
+
+Sie können nun cPanel verwenden. Weitere Informationen zu cPanel finden Sie in der [offiziellen Dokumentation](https://docs.cpanel.net/).
+
+> [!primary]
+>
+> Geben Sie im Browser die folgenden URLs ein, um eine Verbindung herzustellen:
+>
+> - Zu cPanel: https&#58;//&#60;IP_V4&#62;:2083/ (Verwenden Sie die im WHM-Interface erstellten Zugangsdaten.)
+> - Zu WHM: https&#58;//&#60;IP_V4&#62;:2087/ (Verwenden Sie den Root-Benutzernamen und das in der E-Mail zur Installationsbestätigung enthaltene Passwort oder das im WHM-Interface geänderte SSH-Passwort.)
+>
+> Ihre IPv4-Adresse finden Sie in der E-Mail, die Sie nach der Bestellung Ihres VPS mit der cPanel Distribution erhalten haben.
+>
+
+### Absicherung Ihrer Dienstleistung
+
+Wir empfehlen Ihnen, ensprechende Maßnahmen zu ergreifen, um WHM und Ihren VPS zu sichern. Lesen Sie hierzu [die cPanel-Empfehlungen](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+
+Wir empfehlen Ihnen außerdem unsere Anleitung [zum Sichern eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), die Verwendung unserer [Backup-Lösungen](/products/bare-metal-cloud-virtual-private-servers) und das Konfigurieren der [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 ## Weiterführende Informationen
 

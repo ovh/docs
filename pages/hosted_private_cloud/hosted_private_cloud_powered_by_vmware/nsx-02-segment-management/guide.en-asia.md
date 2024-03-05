@@ -1,7 +1,7 @@
 ---
 title: Segment management in NSX
 excerpt: How to create and use segments
-updated: 2023-02-27
+updated: 2024-02-23
 ---
 
 ## Objective
@@ -34,6 +34,9 @@ The segments are linked to transport zones that are predefined by OVHcloud.
 - **NSX** deployed.
 
 ## Instructions
+
+>![primary]
+> Please note that the designations (such as the VLAN number) and IP addresses of the network configurations are provided as examples, and can be modified if required.
 
 ### Creating a segment in the NSX interface
 

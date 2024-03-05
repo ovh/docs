@@ -134,7 +134,7 @@ ubuntu@vmpriv:~$
 Verify that the VM **vmpriv** has an external access to the Internet:
 
 ```bash
-ubuntu@vmpriv:~$ sudo resolvectl dns ens3 1.1.1.1
+ubuntu@vmpriv:~$ sudo resolvectl dns ens3 213.186.33.99
 ubuntu@vmpriv:~$ ping ping.ovh.net -c 1
 PING ping.ovh.net (198.27.92.1) 56(84) bytes of data.
 64 bytes from www.ovh.com (198.27.92.1): icmp_seq=1 ttl=56 time=0.854 ms

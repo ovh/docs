@@ -1,7 +1,7 @@
 ---
-title: "Partilhado: Consultar as estatísticas e os logs do meu site"
-excerpt: "Acesso às estatísticas do seu site"
-updated: 2023-11-20
+title: "Alojamento web - Consultar as estatísticas e logs de um website"
+excerpt: "Saiba como consultar as estatísticas e os logs do seu website graças à sua oferta de alojamento web"
+updated: 2024-02-27
 ---
 
 > [!primary]
@@ -10,98 +10,123 @@ updated: 2023-11-20
 
 ## Objetivo
 
-O acesso aos logs e às estatísticas do seu site está incluído no seu plano de alojamento web, acessível através da Área de Cliente OVHcloud.
+O acesso aos logs e às estatísticas do seu website está incluído na sua oferta de alojamento web, acessível a partir da Área de Cliente OVHcloud.
 
-**Saiba como consultar as estatísticas e logs do seu website.**
+**Saiba como consultar as estatísticas e os logs do seu website graças à sua oferta de alojamento web.**
 
 ## Requisitos
 
-- Ter um serviço [de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
+- Ter um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
+Para aceder aos diferentes dados estatísticos e logs do seu alojamento web, efetue as seguintes ações: 
 
-Selecione o alojamento correspondente e clique no separador `Estatísticas e logs`{.action}
+1. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
+3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
+4. Selecione o alojamento web em causa.
+5. Na página que vai aparecer, clique no separador `Estatísticas e logs`{.action}.
 
-A janela que se apresenta é composta por 3 secções. A primeira apresenta as **estatísticas**, a segunda os **logs** brutos do seu alojamento, a última é dedicada à administração **dos utilizadores** autorizados a aceder às estatísticas.
+O ecrã que vai aparecer é composto por 4 secções:
 
-![alojamento](images/tab.png){.thumbnail}
+- [Estatísticas das visitas](#website-stats): apresenta numerosas estatísticas relativas ao seu alojamento web.
+- [Logs do website](#website-logs): apresenta os logs brutos do seu alojamento web.
+- [Estatísticas da infraestrutura](#infra-stats): apresenta estatísticas gráficas (pedidos HTTP e SQL, comandos FTP, utilização de CPU, ligações de saída, etc.)
+- [Administração dos utilizadores](#admin-user): mostra os utilizadores autorizados a aceder às estatísticas
 
-### Administração dos utilizadores
+![statistics and logs interface](images/tab.png){.thumbnail}
 
-A criação de um utilizador permitirá a uma pessoa aceder às estatísticas do seu alojamento sem ter acesso à sua Área de Cliente OVHcloud. 
+### Estatísticas das visitas <a name="website-stats"></a>
 
-Clique no botão `Criar um novo utilizador`{.action} na secção `Administração dos utilizadores` e siga as instruções abaixo.  
+Para melhor seguir e controlar o tráfego dos seus websites, dispõe de **OVHcloud Web Statistics**, uma ferramenta de estatísticas de visitas e de medição de audiência dos seus websites alojados na sua oferta de alojamento web.
 
-![alojamento](images/create-a-new-user.png){.thumbnail}
+![ows dashboard](images/ows-presentation.gif){.thumbnail}
 
-Para aceder às estatísticas do seu website com um utilizador que criou, deve introduzir o endereço seguinte substituindo `000` pelo número do cluster do seu alojamento e `mydomain.ovh` pelo nome do domínio do seu website (sem as « www »):
+O painel de controlo de **OVHcloud Web Statistics** apresenta 7 secções:
 
-```bash
-https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
-```
+- **Dashboard** : visualização do tráfego nos websites do seu alojamento web.
+- **Browsers** : classificação dos browsers mais utilizados para consultar os seus websites.
+- **Geolocalization**: percentagem de visitantes em função da sua localização.
+- **Requests** : classificação das páginas mais consultadas nos seus websites.
+- **Robots** : visualização dos robôs que passam pelos seus websites.
+- **Status** : estatísticas de fracassos e sucessos encontrados em função dos códigos HTTP devolvidos.
+- **FAQ**: Secção dedicada às questões mais frequentes. Também explica os termos técnicos que você pode encontrar na ferramenta.
 
-Na secção `Estatísticas e logs`{.action}, clique em `Ver estatísticas`{.action}.<br>
-No separador do browser que apresenta a janela de estatísticas, obtenha o link que servirá para se ligar a um dos utilizadores criados.
+O campo "Period selection", no canto superior direito, permite selecionar um período preciso.
 
-![hosting](images/view-statistics.png){.thumbnail}
+### Logs do website <a name="website-logs"></a>
 
-> [!warning] 
+> [primary]
 >
-> Se ativou os logs separados numa [entrada multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
+> Não poderemos acompanhá-lo na interpretação dos logs do seu alojamento web, uma vez que se trata apenas de um desenvolvimento web e não de um alojamento web.
+>
+> Contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se precisar de ajuda.
 >
 
-### Estatísticas das visitas
+Pode visualizar os logs brutos do seu website com um diferimento de cerca de 5 minutos.
 
-Para o ajudar a seguir e controlar melhor o tráfego dos seus websites, dispõe de uma ferramenta de estatísticas de visitas e de medição de audiência dos seus websites alojados no seu alojamento partilhado, **OVHcloud Web Statistics**.
-
-![alojamento](images/ows-presentation.gif){.thumbnail}
-
-O painel de controlo das OVHcloud Web Statistics encontra-se em 6 secções no painel de esquerda.
-
-- Dashboard: visualização do tráfego nos sites do seu alojamento.
-- Browsers: classificação dos browsers mais utilizados para visualizar os seus websites.
-- Geolocalization:  proporção de visitantes em função da sua localização.
-- Pedidos: classificação das páginas mais consultadas nos seus websites.
-- Robôs: visualização dos robôs que passam pelos seus websites.
-- Estado: estatísticas de falhas e sucessos encontrados em função dos códigos HTTP devolvidos.
-- FAQ: secção dedicada às questões mais frequentes
-
-O quadro `Period selection` no canto superior direito permite-lhe selecionar um período preciso.
-
-### Logs
-
-Tem a possibilidade de visualizar os logs brutos do seu site com um atraso de cerca de 5 minutos.
-
-![alojamento](images/osl-statistics-board.png){.thumbnail}
+![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
 
 Tem à sua disposição diferentes tipos de logs:
 
-- Logs Web: veja aqui os diferentes logs de consulta do seu site, assim como as diferentes ações realizadas a partir do seu site. Isto permite-lhe, por exemplo, detetar tentativas de ações maliciosas.
-- Logs FTP: as diferentes ligações FTP serão registadas e conservadas nestes logs.
-- Logs erro: os diferentes erros gerados pelo seu site.
-- Logs CGI: as várias chamadas para os scripts cgi.bin que foram feitas.
-- Logs out: as estatísticas do seu alojamento sobre as diferentes chamadas externas efetuadas.
-- Logs SSH: estes logs indicam as diferentes ligações realizadas com o protocolo SSH.
-- Logs CRON: o resultado da execução das tarefas planeadas ([As tarefas automatizadas (CRON) no seu alojamento](/pages/web_cloud/web_hosting/cron_tasks)).
+- **Logs Web** : contém os diferentes logs de consulta do seu website, bem como as diferentes ações realizadas a partir do seu website. Isto permite-lhe, por exemplo, detetar tentativas de ações maliciosas.
+- **Logs FTP**: as diferentes ligações / comandos em FTP serão registados e conservados nestes logs.
+- **Logs erro** : encontre aqui os diferentes erros gerados pelo seu website.
+- **Logs CGI** : as várias chamadas para os scripts cgi.bin que foram efetuadas são guardadas nestes logs.
+- **Logs out** : contém o histórico dos diferentes pedidos externos (ligações de saída TCP) realizados a partir do seu alojamento web em infraestruturas remotas.
+- **Logs SSH** : estes logs indicam as diferentes ligações/comandos realizados com o protocolo SSH.
+- **Logs CRON** : encontre aqui os resultados da execução das suas tarefas planificadas [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) no seu alojamento web.
 
-### Atividades do alojamento
+### Estatísticas da infraestrutura <a name="infra-stats"></a>
 
-Encontre nesta secção a atividade da infraestrutura do seu alojamento, de forma a visualizar o consumo dos recursos colocados à sua disposição.
+Encontre nesta secção a atividade da infraestrutura do seu alojamento web, de forma a visualizar o consumo dos recursos colocados à sua disposição.
 
-Clique no separador `Informações gerais`{.action} e, a seguir, desça na parte inferior da página.
+![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
 
-![alojamento](images/infrastructure-statistics-graph.png){.thumbnail}
+Pode visualizar diferentes tipos de gráficos a partir do menu suspenso em cima, à esquerda:
 
-É possível apresentar diferentes tipos de gráficos a partir do menu pendente no canto superior esquerdo:
+- **Comandos FTP** : indica os comandos principais (upload, download, login, delete) realizados utilizando o protocolo FTP no seu alojamento web.
+- **Pedidos HTTP** : indica o número e o código de retorno dos pedidos HTTP executados no seu alojamento web. Tudo isto distinguindo os diferentes códigos HTTP (2xx/3xx, 4xx e 5xx). Se necessário, pode encontrar a lista dos códigos HTTP e o seu significado efetuando diretamente uma pesquisa através de um motor de pesquisa (Google, Yahoo!, bing, etc.).
+- **Ligações de saída** : pedidos emitidos do seu website para um website externo.
+- **Utilização do CPU** : nível de consumo do processador na sua instância de alojamento web.
+- **Plafond de recursos ultrapassado**: indica os momentos em que o seu alojamento web ultrapassa a sua quota de recursos.
+- **Pedidos SQL**: quantidade de pedidos para as bases de dados do seu alojamento web.
+- **Tempos de resposta SQL**: tempos de resposta dos pedidos emitidos para as bases de dados do seu alojamento web.
 
-- Ligações de saída: pedidos enviados do seu site para um site externo.
-- Utilização do CPU: nível de consumo do processador na instância de alojamento.
-- Superação do limite máximo dos recursos: indica os momentos em que o seu alojamento ultrapassa a sua quota de recursos.
-- Pedidos SQL: quantidade de pedidos para as bases de dados do seu alojamento.
-- Tempo de resposta SQL: tempo de resposta dos pedidos enviados para as bases de dados do seu alojamento.
+### Administração dos utilizadores <a name="admin-user"></a>
+
+A criação de um utilizador permitirá a uma pessoa aceder às estatísticas do seu alojamento web sem ter acesso à sua Área de Cliente OVHcloud.
+
+Na secção `Administração dos utilizadores`{.action}, clique em `Criar um novo utilizador`{.action} e siga as instruções para finalizar a criação de um novo utilizador.
+
+![create a new user](images/create-a-new-user.png){.thumbnail}
+
+Para aceder às estatísticas do seu website com um utilizador que criou, deve introduzir o endereço seguinte substituindo `000` pelo número do cluster do seu alojamento web e `domain.tld` pelo nome do domínio do seu website (sem os `www`):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/domain.tld/
+```
+
+Pode igualmente recuperar o link de acesso às estatísticas/logs diretamente a partir da sua Área de Cliente:
+
+1. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+2. Na linha situada no topo da Área de Cliente, clique no separador "Web Cloud" {.action}.
+3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
+4. Selecione o alojamento web em causa.
+5. Na página que vai aparecer, clique no separador `Estatísticas e logs`{.action}.
+6. Aceda à secção `Estatísticas das visitas`{.action}.
+7. Clique no botão `Ver estatísticas`{.action}.
+
+![website visit statistics](images/view-statistics.png){.thumbnail}
+
+Na nova página, obtenha o URL existente na barra de endereço do browser.
+
+> [!warning]
+>
+> Se ativou os logs separados num [entrada multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite), os utilizadores criados aqui não podem aceder às estatísticas dessa entrada multisite específica.
+>
 
 ## Quer saber mais?
 

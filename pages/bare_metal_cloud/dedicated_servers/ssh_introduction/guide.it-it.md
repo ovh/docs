@@ -1,7 +1,7 @@
 ---
 title: Introduzione a SSH
 excerpt: "Scopri come utilizzare le connessioni SSH per accedere al tuo server"
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 > [!primary]
@@ -81,6 +81,8 @@ Se la porta SSH del server non è la porta standard, utilizza questo comando:
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Connessione e fingerprint
 
 Quando ti viene chiesto di inserire una password, inserisci quella dell'utente che si connette e clicca su `Enter`.
@@ -135,10 +137,16 @@ Salva le modifiche e lascia l'editor. La nuova impronta della chiave deve essere
 Con Windows, sono specificati anche la posizione del file `known_hosts` e la riga da eliminare, ad esempio:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
-Accedi a questa cartella, clicca con il tasto destro sul file e apri con l'applicazione Blocco note.
+Per risolvere il problema, utilizza il comando seguente con l’indirizzo IP del tuo server:
+
+```bash
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+```
+
+È inoltre possibile accedere alla cartella, fare clic con il pulsante destro del mouse sul file e aprirlo con Blocco note.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
@@ -164,7 +172,9 @@ Come al solito, al primo collegamento viene visualizzato l’avviso di presenza 
 
 Per maggiori informazioni, consulta le FAQ ufficiali e la documentazione di PuTTY.
 
-## Spingiti oltre <a name="gofurther"></a>
+## Per saperne di più <a name="gofurther"></a>
+
+[Configurazione degli account utente e dell'accesso root su un server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Crea chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

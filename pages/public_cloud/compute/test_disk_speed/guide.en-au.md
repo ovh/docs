@@ -13,7 +13,7 @@ You'll probably be called upon to check the speed of your disks when you carry o
 ## Requirements
 
 - A [Public Cloud Instance](https://www.ovhcloud.com/en-au/public-cloud/compute/){.external} in your OVHcloud account
-- Administrative (root) access to your instance via SSH
+- Administrative (sudo) access to your instance via SSH
 
 ## Instructions
 
@@ -23,17 +23,16 @@ The command that you need to test your disk speed is called `fio`, and is not in
 
 To install `fio`, establish an SSH connection to your Instance and then run the following command:
 
-```
-root@server:~$ apt-get install fio
+```bash
+apt install fio
 ```
 
 ### Test your disk speed
 
 To test your disk speed, run the following command:
 
-```
-root@server:~$ fio 
---name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```bash
+fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
@@ -45,15 +44,15 @@ root@server:~$ fio
 
 To test the speed of an additional disk, you will need to mount the disk with the following command: 
 
-```
-root@server:~$ cd /mnt/disk
+```bash
+cd /mnt/disk
 ```
 
 ### Analyse the data
 
 Once the test is finished, you will get a result similar to the following:
 
-```
+```console
 fio-2.1.11
 Starting 1 process
 test: Laying out IO file(s) (1 file(s) / 1024MB)
@@ -101,7 +100,7 @@ util=99.05%
 
 The line we're interested in is line six, which contains the IOPS:
 
-```
+```console
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 

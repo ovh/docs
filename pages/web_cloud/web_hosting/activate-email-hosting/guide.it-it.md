@@ -1,7 +1,7 @@
 ---
 title: "Attivare gli indirizzi email inclusi in un hosting Web"
 excerpt: "Questa guida ti mostra come attivare gli account di posta inclusi nella tua soluzione di hosting Web"
-updated: 2023-03-02
+updated: 2024-02-08
 ---
 
 > [!primary]
@@ -19,6 +19,15 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 - Aver registrato un [dominio](https://www.ovhcloud.com/it/domains/){.external} nello Spazio Cliente OVHcloud
 - Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+
+> [!warning]
+>
+> Per attivare l’opzione "indirizzo(i) email incluso(i) nell’hosting Web" per un dominio esterno (non registrato in OVHcloud) **di cui è obbligatorio essere l’amministratore**, è necessario creare (almeno) in OVHcloud una zona DNS per il dominio esterno. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)". In questo modo, il tuo dominio comparirà nella lista dei domini disponibili al momento dell’attivazione dell’opzione.
+>
+> Inoltre, se il dominio è già registrato in OVHcloud o se esiste già una zona DNS in un altro [account OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) rispetto al dominio, consulta la nostra documentazione "[Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts)" per recuperarne la gestione.
+>
+Se il dominio è già associato all’opzione "indirizzo/i email incluso/i con il tuo hosting Web" di un altro hosting Web, non sarà possibile associarlo direttamente al tuo hosting Web. Fai il punto della situazione con l’attuale gestore dell’hosting Web, consulta questa guida.
+>
 
 ## Procedura
 

@@ -1,7 +1,7 @@
 ---
 title: Einführung in SSH
 excerpt: Erfahren Sie hier, wie Sie SSH-Verbindungen verwenden, um auf Ihren Server zuzugreifen
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ Das Kommunikationsprotokoll SSH (*Secure Shell*) ist das meistgenutzte Verfahren
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
 ## Voraussetzungen
@@ -83,6 +83,8 @@ Wenn der SSH-Port des Servers nicht der Standard-Port ist, verwenden Sie folgend
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Login und Fingerprint
 
 Wenn Sie zur Eingabe eines Passworts aufgefordert werden, geben Sie das Passwort des Benutzers ein, der sich verbindet, und drücken Sie auf `Enter`.
@@ -112,7 +114,7 @@ Offending ECDSA key in /home/user/.ssh/known_hosts:3
 
 Das bedeutet, dass eine der folgenden Situationen eingetreten ist:
 
-- Der Server wurde reinstalliert.
+- Das Server-Betriebssystem wurde reinstalliert.
 - Der SSH-Dienst auf dem Server wurde reinstalliert.
 - Sie verbinden sich mit einem anderen Host, der die selbe IP-Adresse hat.
 
@@ -137,14 +139,20 @@ Speichern Sie die Änderungen und verlassen Sie den Editor. Der neue Schlüssel-
 Unter Windows werden ebenfalls der Pfad der Datei `known_hosts` und die zu löschende Zeile angezeigt, zum Beispiel:
 
 ```console
-Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User\.ssh\known_hosts:3
 ```
 
-Öffnen Sie den angegebenen Ordner, klicken Sie mit der rechten Maustaste auf die Datei und öffnen Sie diese mit der Anwendung Notepad (oder einem beliebigen Texteditor).
+Um dies zu beheben, geben Sie folgenden Befehl unter Angabe der IP-Adresse Ihres Servers ein:
+
+```bash
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+```
+
+Alternativ öffnen Sie den angegebenen Ordner, klicken Sie mit der rechten Maustaste auf die Datei und öffnen Sie diese mit der Anwendung Notepad (oder einem beliebigen Texteditor).
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
-Löschen Sie die betreffende Zeile, in diesem Beispiel wäre es die dritte von oben. Speichern Sie die Änderungen und verlassen Sie den Editor. Der neue Schlüssel-Fingerprint muss bei der nächsten Verbindung zum Server akzeptiert werden.
+Löschen Sie die betreffende Zeile, in diesem Beispiel wäre es die dritte von oben. Speichern Sie die Änderungen und verlassen Sie den Editor. Der neue Schlüssel-Fingerprint muss bei der nächsten Verbindung zum Server bestätigt werden.
 
 ### Verwendung von GUI-Clients oder SSH-kompatibler Software
 
@@ -167,6 +175,8 @@ Wie üblich wird bei der ersten Verbindung die Fingerprint-Warnung ausgegeben. K
 Weitere Informationen finden Sie in den offiziellen FAQ und der Dokumentation zu PuTTY.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+[Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [SSH-Schlüssel erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

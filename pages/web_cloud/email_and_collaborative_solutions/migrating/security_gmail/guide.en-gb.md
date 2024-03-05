@@ -1,6 +1,6 @@
 ---
 title: 'Authorising less secure connections on Gmail'
-hidden: true
+flag: hidden
 updated: 2022-04-06
 ---
 

@@ -29,7 +29,7 @@ Być może będziesz musiał skonfigurować adresy Additional IP na Twoich insta
 
 - instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
 - adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/) lub bloku Additional IP
-- dostęp administratora (root) przez SSH lub GUI do Twojej instancji
+- dostęp administratora (sudo) przez SSH lub GUI do Twojej instancji
 - podstawowa wiedza o sieciach i ich administrowaniu
 
 > [!warning]

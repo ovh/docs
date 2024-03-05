@@ -157,7 +157,7 @@ Será criada uma nota de encomenda. Uma vez o pagamento registado, será notific
 Para guardar um único ficheiro, pode utilizar o comando seguinte:
 
 ```sh
-# ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
+ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 ```
 
 **Este comando não suporta o protocolo FTPS. Se precisar de efetuar uma transferência segura, deverá utilizar o cliente lftp ou cURL.**
@@ -187,7 +187,7 @@ O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode utilizar o seguinte comando:
 
 ```sh
-# ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
+ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 ```
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
@@ -208,7 +208,7 @@ O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 Para guardar um único ficheiro, pode utilizar o seguinte comando:
 
 ```sh
-# curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
+curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
@@ -222,7 +222,7 @@ O exemplo de código acima contém variáveis que deverá substituir pelos seus 
 Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
 
 ```sh
-# tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
+tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
@@ -237,8 +237,8 @@ O exemplo de código acima contém variáveis que deverá substituir pelos seus 
 Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode utilizar o seguinte comando:
 
 ```sh
-# cd /LocalFolder
-# curl -u FtpUsername:FtpPassword ftp://HostName/File 
+cd /LocalFolder
+curl -u FtpUsername:FtpPassword ftp://HostName/File 
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
@@ -249,7 +249,7 @@ O exemplo de código acima contém variáveis que deverá substituir pelos seus 
 * **LocalFolder**: o nome do diretório local no qual pretende gravar o ficheiro.
 * **File**: o caminho de acesso do ficheiro a descarregar.
 
-##### lftp (para Linux)
+####lftp (para Linux)
 
 > [!primary]
 >
@@ -259,7 +259,7 @@ O exemplo de código acima contém variáveis que deverá substituir pelos seus 
 Para guardar um único ficheiro, pode utilizar o seguinte comando:
 
 ```sh
-# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
+lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
@@ -273,7 +273,7 @@ O exemplo de código acima contém variáveis que deverá substituir pelos seus 
 Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
 
 ```sh
-# tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
+tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
@@ -288,8 +288,8 @@ O exemplo de código acima contém variáveis que deverá substituir pelos seus 
 Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode utilizar o seguinte comando:
 
 ```sh
-# cd /LocalFolder
-# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
+cd /LocalFolder
+lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
@@ -311,7 +311,7 @@ Em primeiro lugar, certifique-se de que autorizou o acesso dos seus blocos de IP
 Depois de instalar o cliente NFS e o serviço portmap, pode montar a partilha NFS como uma partição normal, tal como indicado abaixo:
 
 ```sh
-# mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
@@ -342,7 +342,7 @@ O exemplo de código acima contém variáveis que deverá substituir pelos seus 
 Abra uma ligação SSH ao seu servidor e introduza o comando seguinte:
 
 ```sh
-# mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
+mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
 ```
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.

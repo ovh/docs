@@ -134,7 +134,7 @@ The full email header appears in a separate window. You can select the entire te
 
 ### Retrieving a header on webmail <a name="webmail"></a>
 
-#### Outlook Web Application (OWA) <a name="owa"></a>
+#### Outlook Web App (OWA) <a name="owa"></a>
 
 ##### **Retrieving the header**
 
@@ -165,7 +165,7 @@ To retrieve the header, select the email concerned, then click the 3 vertical do
 
 #### Outlook.com
 
-To view the header in the <Outlook.com> webmail interface, see the [Outlook Web Application](#owa) topic in this guide.
+To view the header in the &#60;Outlook.com&#62; webmail interface, see the [Outlook Web App](#owa) topic in this guide.
 
 ## Go further
 

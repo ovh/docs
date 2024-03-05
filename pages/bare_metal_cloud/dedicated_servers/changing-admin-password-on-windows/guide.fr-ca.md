@@ -95,6 +95,9 @@ Dans ce cas, utilisez la commande suivante, puis réessayez de monter la partiti
 
 ```bash
 ntfsfix /dev/sda4
+```
+
+```bash
 mount /dev/sda4 /mnt
 ```
 

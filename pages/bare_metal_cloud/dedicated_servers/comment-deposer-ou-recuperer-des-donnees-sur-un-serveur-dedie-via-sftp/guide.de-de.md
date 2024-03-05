@@ -1,7 +1,7 @@
 ---
 title: 'Daten via SFTP auf einem Dedicated Server ablegen oder herunterladen'
 excerpt: 'Erfahren Sie hier, wie Sie SFTP zur Datenübertragung verwenden'
-updated: 2021-05-18
+updated: 2024-02-23
 ---
 
 > [!primary]
@@ -12,18 +12,19 @@ updated: 2021-05-18
 
 Bei einer Migration kann es erforderlich werden, eine große Datenmenge von einem Dedicated Server auf einen anderen zu übertragen. Hierfür gibt es mehrere Vorgehensweisen. Mit dem Protokoll SFTP (Secure File Transfer Protocol) können Daten einfach und schnell über eine gesicherte SSH-Verbindung übertragen werden.
 
-**Diese Anleitung erklärt, wie Sie Daten via SFTP auf einen dedizierten Server übertragen oder von diesem herunterladen.**
+**Dieses Tutorial erklärt, wie Sie Daten via SFTP auf einen dedizierten Server übertragen oder von diesem herunterladen.**
 
 > [!warning]
+> In diesem Tutorial erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
-> In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVHcloud Community unter <https://community.ovh.com/en/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, auf dem eine GNU/Linux Distribution installiert ist.
 - Ein FTP-Client, der SFTP-Verbindungen unterstützt (diese Anleitung dokumentiert die Verwendung von [FileZilla](https://filezilla-project.org/){.external}).
-- Sie haben administrativen Zugriff (Root) über SSH auf Ihren Server.
+- Sie haben administrativen Zugriff über SSH auf Ihren Server.
 
 ## In der praktischen Anwendung
 
@@ -36,6 +37,10 @@ Standardmäßig erhält ein Server, der ein GNU/Linux-Betriebssystem verwendet, 
 #### **Wenn Sie Zugriff auf Ihren Server haben**
 
 Tragen Sie im FileZilla-Interface die IP-Adresse Ihres Servers ins `Host`-Feld sowie Ihren Benutzernamen und Ihr Passwort in die jeweiligen Feldern ein. Geben Sie als den `Port` "22" bzw. die Portnummer ein, die Ihr SSH-Dienst verwendet.
+
+> [!warning]
+> Beachten Sie, dass der Zugriff auf den Ordner des Benutzers `root` über SFTP nur mit den Login-Daten dieses Benutzer-Accounts möglich ist. Wenn Sie sicher sind, dass Sie remote auf diesen Ordner zugreifen müssen, finden Sie weitere Informationen zur Aktivierung dieser Verbindung in unserer [Anleitung zur Verwaltung von Benutzer-Accounts](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 Sobald die Verbindung hergestellt ist, wird im Bereich `Remote Site` eine Ordnerstruktur Ihrer Dateien angezeigt.
 

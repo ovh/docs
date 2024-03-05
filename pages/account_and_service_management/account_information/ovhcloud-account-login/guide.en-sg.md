@@ -1,7 +1,7 @@
 ---
 title: 'Logging in to the OVHcloud Control Panel'
 excerpt: 'Find out how to log in to your OVHcloud account'
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ Your services are managed mainly via the OVHcloud Control Panel.
 
 ### Logging in to the OVHcloud Control Panel
 
-Go to the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, enter your customer ID (NIC handle) or primary email address, and password.
+Go to the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, enter your primary email address and password.
 
 ![NIC handle](images/log-in.png){.thumbnail}
 
@@ -28,29 +28,6 @@ If you have enabled [two-factor authentication](/pages/account_and_service_manag
 ### What do I do if I can't log in? <a name="login-failure"></a>
 
 The rest of this guide will give you methods for resolving common cases of failed connections to the OVHcloud Control Panel.
-
-#### I don’t know my NIC handle. How do I find it?
-
-The OVHcloud NIC handle, in the form **xx111111-ovh**, will always be requested when you log in to your account or contact OVHcloud technical support. There are different ways of finding it.
-
-##### **In OVHcloud emails**
-
-Your NIC handle is included in the account creation confirmation email, order confirmation emails and renewal emails, as well as account login notifications.
-
-##### **On your bills**
-
-Your NIC handle is in the top right-hand corner of all your bills.
-
-![NIC handle](images/nichandle01b.png){.thumbnail}
-
-##### **Logging in without a username**
-
-If you cannot find your username, please note that you can log in using the primary email address (instead of the username) that you entered in your account.
-
-Once you have logged in, you can display your NIC handle in your Control Panel by clicking on your name in the top right-hand corner.
-<br>It will appear below your primary email address.
-
-![NIC handle](images/nic-handle.png){.thumbnail}
 
 ### I have lost my password
 
@@ -66,7 +43,11 @@ Once this action has been completed, please [enter a **new** backup email addres
 
 ### Two-factor authentication is active on my account but my phone has been stolen
 
-In this case, you can use two-factor authentication emergency codes, use another device, or disable two-factor authentication.
+In this case, you can: 
+
+- use two-factor authentication emergency codes ;
+- use another device ;
+- disable two-factor authentication.
 
 Please refer to our guide on [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#what-do-i-do-if-i-lose-one-of-my-devices-or-if-it-stops-working) for the appropriate steps.
 

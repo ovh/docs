@@ -25,7 +25,7 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
 - An [Additional IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/)
-- Administrative access (root) via SSH or GUI to your server
+- Administrative access (sudo) via SSH or GUI to your server
 - Basic networking and administration knowledge
 
 ## Instructions
@@ -287,7 +287,7 @@ Once you are connected to your server via SSH, enter the following command:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) for further investigations.
+To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) for further investigations.
  
 ## Go further
 

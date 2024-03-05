@@ -1,6 +1,6 @@
 ---
-title: "Intégration d'un Décodeur TV"
-excerpt: "Configurer votre OverTheBox pour continuer de profiter de vos services de télévision"
+title: "Intégrer un décodeur TV à votre OverTheBox v1 (Intel & IT)"
+excerpt: "Découvrez comment configurer un décodeur TV pour votre OverTheBox v1 (Intel & IT) afin de profiter de vos services de télévision"
 updated: 2021-04-14
 ---
 

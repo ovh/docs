@@ -25,7 +25,7 @@ You may need to configure Additional IP addresses on your instances, for example
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - An [Additional IP address](https://www.ovhcloud.com/en/bare-metal/ip/) or an Additional IP block
-- Administrative access (root) via SSH or GUI to your instance
+- Administrative access (sudo) via SSH or GUI to your instance
 - Basic networking and administration knowledge
 
 > [!warning]

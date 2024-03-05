@@ -5,7 +5,7 @@ updated: 2023-07-26
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -76,7 +76,7 @@ mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_baz
 
 - Uruchom program SQuirreL SQL i kliknij na `Aliases`{.action}, i na `+`{.action}.
 
-![launch SQuirreL SQL](images/1.PNG){.thumbnail}
+![launch SQuirreL SQL](images/aliases.png){.thumbnail}
 
 - Wypełnij poniższe pola i zatwierdź za pomocą przycisku `OK`{.action}:
     - **Name**: Wybierz nazwę
@@ -85,15 +85,15 @@ mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_baz
     - **User Name**: Wskaż nazwę użytkownika
     - **Password**: Wskaż hasło
 
-![config connection](images/2.PNG){.thumbnail}
+![config connection](images/add-alias.png){.thumbnail}
 
 - Zatwierdź za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/3.PNG){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 Połączyłeś się z bazą danych:
 
-![config connection](images/4.PNG){.thumbnail}
+![config connection](images/general-dashboard.png){.thumbnail}
 
 #### Logowanie przez interfejs phpMyAdmin
 

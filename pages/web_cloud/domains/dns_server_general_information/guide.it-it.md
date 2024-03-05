@@ -30,7 +30,7 @@ Per maggiori informazioni sulle zone DNS, consulta la nostra guida "[Modificare 
 
 Per utilizzare la zona DNS ospitata, è necessario che i **server DNS** siano dichiarati presso il dominio. 
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 I **server DNS** funzionano in genere a coppie:
 
@@ -85,7 +85,7 @@ Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo
 >
 > Quando utilizzi i server DNS OVHcloud, i numeri presenti nei nomi dei server non hanno alcun legame con il servizio o i servizi che utilizzi. Solo l'opzione [DNS anycast](https://www.ovhcloud.com/it/domains/options/) utilizza server DNS specifici che vengono automaticamente assegnati all'utente. 
 
-![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
+![dns-server](images/tab.png){.thumbnail}
 
 ### Modifica i server DNS
 
@@ -106,7 +106,7 @@ ad esempio, *dns19.ovh.net* e *ns19.ovh.net* corrispondono a un gruppo di server
 
 Una volta inserite queste informazioni, clicca su `Applica la configurazione`{.action}. Lo stato dei server DNS verrà aggiornato nella tabella con le nuove informazioni inserite.
 
-![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
+![dns-server](images/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -117,7 +117,7 @@ Una volta inserite queste informazioni, clicca su `Applica la configurazione`{.a
 
 Il pulsante `Reinizializza i server DNS`{.action} permette di reinizializzare i server DNS correnti sostituendoli automaticamente con i server DNS OVHcloud di origine. Utilizzare questa opzione **solo** per riutilizzare i server DNS di OVHcloud (e la zona DNS di OVHcloud associata ai propri server DNS). 
 
-![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
+![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione. Devono essere presi in considerazione due periodi successivi:
 

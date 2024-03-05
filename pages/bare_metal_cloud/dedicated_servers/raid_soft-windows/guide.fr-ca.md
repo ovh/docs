@@ -33,7 +33,7 @@ La méthode à utiliser dépend du type de partition de vos disques. Suivez les 
 
 À l'invite de commande, ouvrez DiskPart :
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -159,7 +159,7 @@ Il est préférable de ne pas redémarrer le serveur tant que le processus de re
 
 À l'invite de commande, ouvrez DiskPart :
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 

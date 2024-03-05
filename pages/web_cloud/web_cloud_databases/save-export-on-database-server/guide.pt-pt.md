@@ -45,13 +45,13 @@ Ao nível da coluna **«Backups»**, o algarismo corresponde ao número de salva
 
 Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Fazer backup agora`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
+![Web Cloud Databases](images/back-up-now.png){.thumbnail}
 
 #### 2. Exportar um backup
 
 Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Exibir os backups`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
+![Web Cloud Databases](images/show-backups.png){.thumbnail}
 
 Quando surgir a lista dos backups, clique no botão `...`{.action} à direita do backup escolhido e em `Descarregar o backup`{.action} para o obter.
 

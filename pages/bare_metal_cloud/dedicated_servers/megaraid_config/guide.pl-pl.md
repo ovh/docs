@@ -25,7 +25,7 @@ Domyślny poziom RAID serwerów OVHcloud to RAID 1. Podwaja on ilość zajętą 
 ## Wymagania początkowe
 
 - Posiadanie serwera [dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} ze sprzętową macierzą RAID
-- Dostęp do serwera przez SSH jako administrator (root)
+- Dostęp do serwera przez SSH jako administrator (sudo)
 
 ## W praktyce
 
@@ -62,6 +62,8 @@ Po skonfigurowaniu Twojego serwera sprawdź rozmiar partycji, łącząc się z n
 ```sh
 df -h
 ```
+
+```console```
 
 ### Korzystanie z trybu Rescue
 

@@ -1,8 +1,7 @@
 ---
 title: 'Activar la doble autenticación mediante llave de seguridad'
 excerpt: 'Cómo proteger su área de cliente de OVHcloud activando la doble autenticación por llave de seguridad U2F'
-hidden: true
-updated: 2022-07-08
+updated: 2024-02-02
 ---
 
 > [!primary]
@@ -24,19 +23,6 @@ La doble autenticación por llave de seguridad U2F (Universal Second Factor) es 
 
 ## Procedimiento
 
-> [!warning]
-> **Añadir una nueva clave U2F con las versiones recientes de Chrome/Chromium**
->
-> La adición de una nueva clave U2F ya no es posible en las versiones recientes del navegador Chrome (a partir de Chrome v98) y sus derivados, como Chromium.<br>
-> El uso de una llave U2F ya añadida y funcional siempre es posible en estas versiones recientes del navegador, solo es imposible añadir una nueva llave U2F.
->
-> Nuestro equipo [trabaja para solucionar este fallo de funcionamiento](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). A la espera de una resolución definitiva, le invitamos a seguir uno de estos dos métodos de elusión:
->
-> - Utilice otro navegador (como Firefox) para añadir su nueva llave U2F y utilice su navegador Chrome/Chromium habitual para conectarse al área de cliente de OVHcloud de forma habitual.
-> - Reactive el soporte de la funcionalidad U2F en su navegador Chrome/Chromium. Para ello, como en la siguiente imagen, copie este valor `chrome://flags/#u2f-security-key-api` en la barra de direcciones del navegador, seleccione `Enabled` en el menú desplegable de la derecha y reinicie su navegador.
->
-> ![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
-
 ### Etapa 1: activar la doble autenticación
 
 Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha (1) y, a continuación, haga clic en sus iniciales (2). Luego, haga clic en `«Seguridad»`{.action}(3) y, por último, en`«Activar la doble autenticación»`{.action}(4).
@@ -54,6 +40,10 @@ Elija el método por llave de seguridad y valide.
 Conecte su llave de seguridad cuando el sistema se lo pida. Si la llave cuenta con un botón, púlselo. 
 
 ![2FA securitykey](images/2fakey2.png){.thumbnail}
+
+> [!warning]
+>
+> Se abrirá una ventana emergente en la que deberá validar la llave. Si no ve esta ventana, asegúrese de que su navegador no la bloquee.
 
 Una vez reconocida la llave, puede añadir, si así lo desea, una descripción. Dicha descripción puede ser muy útil para identificar las personas susceptibles de utilizar este método de autenticación en su cuenta.
 

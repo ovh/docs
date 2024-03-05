@@ -20,7 +20,7 @@ Afin d'envoyer une campagne de SMS à de multiples contacts, vous pouvez importe
 
 ## En pratique
 
-### Étape 1 : créer votre votre liste de destinataires
+### Étape 1 : créer votre liste de destinataires
 
 #### Créer votre liste via un tableur
 
