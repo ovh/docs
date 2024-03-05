@@ -1068,7 +1068,7 @@
                 + [Securing your domain name with DNSSEC](web_cloud/domains/dns_dnssec)
     + [Web Hosting](products/web-cloud-hosting)
         + [Getting started](web-cloud-hosting-getting-started)
-            + [Activating the free Start 10M hosting plan](web_cloud/web_hosting/activate_start10m)
+            + [Activating the 100M free hosting plan](web_cloud/web_hosting/activate_start10m)
             + [Getting started with an Individual or Business Web Hosting plan](web_cloud/web_hosting/hosting_first_steps_with_web_hosting)
             + [Getting started with a Cloud Web hosting plan](web_cloud/web_hosting/getting_started_cloud_web)
             + [Hosting multiple websites on your Web Hosting plan](web_cloud/web_hosting/multisites_configure_multisite)
