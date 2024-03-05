@@ -98,6 +98,9 @@ Neste caso, utilize o seguinte comando e tente novamente montar a partição.
 
 ```bash
 ntfsfix /dev/sda4
+```
+
+```bash
 mount /dev/sda4 /mnt
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un VPS"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre VPS"
-updated: 2022-05-05
+updated: 2024-02-20
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 ## Prérequis
 
 - Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- Avoir un accès administrateur (*root*) à votre serveur via SSH
+- Avoir un accès administrateur (sudo) à votre serveur via SSH
 
 ## En pratique
 
@@ -68,16 +68,23 @@ Pour cela, modifiez le fichier de configuration du service avec l'éditeur de te
 Vous devriez trouver les lignes suivantes ou équivalentes :
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Remplacez le nombre **22** par le numéro de port de votre choix.<br>
 **Veillez toutefois à ne pas renseigner un numéro de port déjà utilisé sur votre système**. 
-Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>
-Enregistrez et quittez le fichier de configuration.
+Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>Enregistrez et quittez le fichier de configuration.
 
-Si la ligne est "commentée" (c'est-à-dire si elle est précédée d'un "#"), veillez à supprimer le "#" avant d'enregistrer le fichier pour que la modification prenne effet.
+
+Si la ligne est "commentée" (c'est-à-dire si elle est précédée d'un "#") comme dans l'exemple ci-dessus, veillez à supprimer le "#" avant d'enregistrer le fichier pour que la modification soit prise en compte. Exemple :
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Redémarrez le service :
 
@@ -87,67 +94,36 @@ sudo systemctl restart sshd
 
 Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le VPS (`~$ sudo reboot`).
 
+**Pour Ubuntu 23.04 et versions ultérieures**
+
+Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gérée dans le fichier `ssh.socket`.
+
+Pour mettre à jour le port SSH, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Enregistrez vos modifications et exécutez les commandes suivantes :
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
+
 N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
 
 ```bash
 ssh nomdutilisateur@IPv4_de_votre_VPS -p NouveauPort
 ```
 
-### Modifier le mot de passe associé à l'utilisateur "root"
-
-Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
-
 ### Créer un utilisateur avec des droits restreints <a name="createuser"></a>
 
-En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
-
-```bash
-sudo adduser NomUtilisateurPersonnalisé
-```
-
-Renseignez ensuite les informations demandées par le système : mot de passe, nom, etc.
-
-Le nouvel utilisateur sera autorisé à se connecter en SSH. Lors de l'établissement d'une connexion, utilisez les informations d'identification spécifiées.
-
-Une fois connecté, tapez la commande suivante pour effectuer des opérations nécessitant des autorisations root :
-
-```bash
-su root
-```
-
-Entrez le mot de passe lorsque vous y êtes invité et la connexion active sera basculée vers l'utilisateur root.
-
-### Désactiver l'accès au serveur via l'utilisateur root
-
-L'utilisateur root est créé par défaut sur les systèmes GNU/Linux. Il s'agit du niveau d'accès le plus élevé à un système d'exploitation.<br>
-Il est déconseillé et même dangereux de laisser votre VPS accessible uniquement en root, car ce compte peut effectuer des opérations irréversiblement dommageables.
-
-Il est recommandé de désactiver l'accès direct des utilisateurs root via le protocole SSH. N'oubliez pas de créer un autre utilisateur avant de suivre les étapes ci-dessous.
-
-Vous devez modifier le fichier de configuration SSH de la même manière que décrit précédemment :
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Repérez la section suivante :
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Remplacez **yes** par **no** sur la ligne `PermitRootLogin`.
-
-Pour que cette modification soit prise en compte, vous devez redémarrer le service SSH :
-
-```bash
-sudo systemctl restart sshd
-```
-
-Par la suite, les connexions à votre serveur via l'utilisateur root (`ssh root@IPv4_de_votre_VPS`) seront rejetées.
+En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Pour plus d'informations, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Configurer le pare-feu interne (iptables)
 
@@ -255,6 +231,8 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 

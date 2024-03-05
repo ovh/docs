@@ -76,8 +76,8 @@ upstream grafana {
 
 server {
   listen 443 ssl;
-  ssl_certificate /etc/nginx/ssl/your_certificate.crt
-  ssl_certificate_key /etc/nginx/ssl/your_certificate.key
+  ssl_certificate /etc/nginx/ssl/your_certificate.crt;
+  ssl_certificate_key /etc/nginx/ssl/your_certificate.key;
 
   location / {
     proxy_set_header Host $http_host;

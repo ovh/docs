@@ -1,7 +1,7 @@
 ---
 title: Preguntas frecuentes sobre los NAS-HA
 excerpt: ¿Tiene alguna duda sobre los NAS-HA? A continuación le ofrecemos la respuesta a las preguntas más frecuentes.
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 > [!primary]
@@ -114,6 +114,14 @@ No, no es posible instalar un SO en los NAS-HA.
 
 Sí, es necesario crear una o más particiones, según su uso. No hay límite en el número de particiones.
 
+### ¿Cómo cambiar la capacidad de almacenamiento en un NAS-HA?
+
+Actualmente no es posible modificar dinámicamente el NAS-HA. Para aumentar o reducir el aprovisionamiento, es necesario:
+
+1. Contratar un nuevo servicio NAS-HA con la nueva capacidad deseada y así disponer de sus dos NAS-HA: el antiguo y el nuevo.
+2. Migrar sus datos consultando nuestra guía "[Migración de datos de un NAS-HA a otro a través de NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration)".
+3. Dar de baja el antiguo NAS-HA.
+
 ## Snapshots
 
 ### ¿Qué es un snapshot?
@@ -139,7 +147,7 @@ La frecuencia de los snapshots puede configurarse desde el área de cliente de O
 - cada tres días
 - semanal
 
-Además, en cualquier momento puede crear snapshots manuales, que podrá conservar sin limitación de tiempo o eliminar cuando desee. Esta funcionalidad está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o a través de la siguiente llamada a la [API](https://api.ovh.com/):
+Además, en cualquier momento puede crear snapshots manuales, que podrá conservar sin limitación de tiempo o eliminar cuando desee. Esta funcionalidad está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o a través de la siguiente llamada a la [API](https://ca.api.ovh.com/):
 
 > [!api]
 >

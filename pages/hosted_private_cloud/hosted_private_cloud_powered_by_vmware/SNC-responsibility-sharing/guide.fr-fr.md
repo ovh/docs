@@ -1,7 +1,7 @@
 ---
 title: "Partage de responsabilité sur le service Hosted Private Cloud by VMware sous la qualification SecNumCloud"
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud sous la qualification SecNumCloud"
-updated: 2023-08-28
+updated: 2024-01-22
 ---
 
 ## Objectif
@@ -152,7 +152,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Valider la demande d’un changement de matériel d’infrastructure soumise par OVHcloud | A | R |
 | Mettre à jour les composants embarqués dans les instances virtuelles  | RA | C |
 | Planifier les changements demandés par le client | C | RA |
-| Planifier les changements demandés du client | RA | I |
 | Réaliser les changements nécessaires pour maintenir la conformité de l'IaaS à SecNumCloud| I | RA |
 | Prononcer la recette | RA | C |
 | Déployer les correctifs, mettre à jour et configurer l’ensemble des éléments constitutifs de l’Infrastructure as a Service | I | RA |

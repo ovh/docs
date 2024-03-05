@@ -1,7 +1,7 @@
 ---
-title: 'SSH-Zugang Ihres Webhostings verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen'
-updated: 2022-01-19
+title: "SSH-Zugang Ihres Webhostings verwenden"
+excerpt: "Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen"
+updated: 2024-01-30
 ---
 
 > [!primary]
@@ -105,13 +105,23 @@ Sie können über einen Befehl auch ein Skript ausführen, indem Sie eine bestim
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in den unten aufgeführten Anleitungen.
+Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in den unten aufgeführten Anleitungen : [Webhosting : umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+
+> [!primary]
+>
+> Dateien und Ordner können auch mit dem **S**ecure **C**opy **P**rotocol (**SCP**) kopiert werden.
+> Dieses Protokoll verwendet das SSH-Protokoll, um Inhalte sicher zu duplizieren zwischen:
+>
+> - Lokaler Computer/Gerät und Remote-Server
+> - Remote-Serverund lokaler Computer/Gerät
+> - Zwei Remote-Server
+>
+> Weitere Informationen zur Verwendung des Befehls `scp` mit unseren OVHcloud Webhostings finden Sie in unserer Anleitung "[Webhosting - Kopieren von Dateien mit dem Befehl SCP](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Webhosting : umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -65,11 +65,11 @@ En la pestaña `Información general`{.action}, puede comprobar que se cumplen l
 
 Haga clic en el enlace `Etiqueta de transferencia saliente`{.action} en la sección titulada **Seguridad**.
 
-![transferencia saliente](images/img_4267.jpg){.thumbnail}
+![transferencia saliente](images/outgoing-transfer-tag.jpg){.thumbnail}
 
 Se abrirá una ventana en la que deberá introducir el TAG del nuevo agente registrador y hacer clic en `Confirmar`{.action}.
 
-![transferencia saliente](images/img_4268.jpg){.thumbnail}
+![transferencia saliente](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Si no puede cambiar el TAG de su dominio desde el área de cliente, puede solicitarlo al Registro Nominet. Más información en la [web oficial de Nominet](https://www.nominet.uk/domain-support/).
 
@@ -82,5 +82,7 @@ Contacte con su nuevo proveedor para más información y para conocer cualquier 
 ## Más información
 
 [Transferir un dominio a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

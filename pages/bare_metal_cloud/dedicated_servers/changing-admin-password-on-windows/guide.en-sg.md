@@ -99,8 +99,11 @@ mount /dev/sda4 /mnt
 This step involves manipulating the *SAM* file with a tool to clear the admin user's password. Change to the appropriate directory and list the Windows users:
 
 ```bash
-cd /mnt/Windows/System32/config
-/mnt/Windows/System32/config#
+ntfsfix /dev/sda4
+```
+
+```bash
+mount /dev/sda4 /mnt
 ```
 
 

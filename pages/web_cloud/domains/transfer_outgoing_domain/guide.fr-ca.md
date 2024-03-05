@@ -55,7 +55,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Protection contre le transfert` sous **Securité**. Par défaut, cette protection est `Activée`{.action}.
 
-![protection activée](images/outgoing-transfer-step1.png){.thumbnail}
+![protection activée](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous souhaitez supprimer cette protection. Patientez quelques minutes pour que l'état passe à `Désactivée`{.action}.
 
@@ -70,7 +70,7 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 > En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des domaines pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contactez directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
 >
 
-![désactivation protection](images/outgoing-transfer-step2.png){.thumbnail}
+![désactivation protection](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -88,7 +88,7 @@ Une fois la protection contre le transfert levée, vous pouvez récupérer le co
 
 Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de domaine, AUTH-CODE ou EPP-Code).
 
-![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
+![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
 

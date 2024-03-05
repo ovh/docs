@@ -23,7 +23,7 @@ Dieses Tutorial enthält die Grundschritte für die manuelle Installation von Wo
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) mit Debian oder Ubuntu erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH.
+- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH.
 
 ## In der praktischen Anwendung
 

@@ -25,7 +25,7 @@ Esto puede ser útil en los siguientes casos:
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud.
 - Tener una copia de seguridad del disco en la misma región de OpenStack.
-- Tener acceso a su instancia por SSH como administrador (root).
+- Tener acceso a su instancia por SSH como administrador (sudo).
 
 ## Procedimiento
 

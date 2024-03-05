@@ -88,7 +88,7 @@ Since no automated spam protection can decide with perfect accuracy whether an e
 
 > [!primary]
 >
-Please note that spam false positives cannot be declared directly from OWA. If you receive emails falsely marked as [SPAM], we recommend to inform our support team by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+Please note that spam false positives cannot be declared directly from OWA. If you receive emails falsely marked as [SPAM], we recommend to inform our support team by creating a [support request](https://help.ovhcloud.com/csm?id=csm_get_help).  
 >
 
 ## Go further

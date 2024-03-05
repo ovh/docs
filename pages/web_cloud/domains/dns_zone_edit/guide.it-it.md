@@ -22,17 +22,17 @@ Ti ricordiamo che, in base alle operazioni che effettuerai nello Spazio Cliente,
 
 Le informazioni relative ai **server DNS** e la loro modifica sono disponibili nella guida [Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Se prendiamo l'esempio di cui sopra, quando digitate *mydomain.ovh*, i **server DNS** associati a questo dominio saranno interrogati. che contengono la **zona DNS** del dominio *mydomain.ovh* in cui è inserito l'indirizzo IP dell'hosting di *mydomain.ovh*. In questo modo il browser è in grado di visualizzare il sito web *mydomain.ovh* contenuto sull'hosting. Si chiama risoluzione DNS.
 
-![DNS](images/dnssolve.gif){.thumbnail}
+![DNS](images/dns-resolution.gif){.thumbnail}
 
 ### La zona DNS 
 
 La zona DNS di un dominio è un file di configurazione composto da **record**. che permettono di collegare il dominio ai server che ospitano i servizi Internet, come siti Web (tramite record A) o indirizzi email (record MX).
 
-![DNS](images/dnszone.png){.thumbnail}
+![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
 
 **Questa guida ti mostra come modificare la zona DNS OVHcloud dallo Spazio Cliente.**
 
@@ -64,7 +64,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Visualizzi una tabella con tutti i record DNS associati al tuo dominio presso OVHcloud. Il contenuto può essere filtrato per tipo di record o per dominio.
 
-![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
+![dnszone](images/tab.png){.thumbnail}
 
 ### I record DNS
 
@@ -202,7 +202,7 @@ Per aggiungere un nuovo record DNS, dalla scheda `Zona DNS`{.action} del tuo dom
 
 Ti consigliamo di verificare se questo record non esiste già e non punta verso un bersaglio diverso. filtrando il contenuto della tabella per tipo di record o dominio. Se il record esiste già, ti consigliamo di modificarlo seguendo la procedura descritta di seguito.
 
-![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
+![dnszone](images/add-an-entry.png){.thumbnail}
 
 > Quando la destinazione del tuo record è un URL, ricordati di pulire il link. In effetti, se non lo fai, il tuo dominio verrà automaticamente aggiunto alla fine della tua destinazione.
 >
@@ -214,7 +214,7 @@ Ti consigliamo di verificare se questo record non esiste già e non punta verso 
 
 Per modificare un record DNS, sempre dalla scheda `Zona DNS`{.action} del tuo Spazio Cliente, clicca sull'icona `...`{.action} nella tabella a destra del record selezionato. Clicca su Modifica `il record`{.action} e segui gli step.
 
-![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
+![dnszone](images/modify-record.png){.thumbnail}
 
 #### Elimina un record DNS
 
@@ -222,7 +222,7 @@ Per eliminare un record DNS, sempre dalla scheda `Zona DNS`{.action} del tuo Spa
 
 Per eliminare più record in una sola volta, seleziona la casella sinistra della tabella e clicca sul pulsante `Elimina`{.action}.
 
-![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+![dnszone](images/delete-record.png){.thumbnail}
 
 #### Reinizializza la zona DNS
 
@@ -233,7 +233,7 @@ Reinizializza la tua zona DNS ti permette di:
 
 Nella scheda `Zona DNS`{.action}, clicca su `Reimposta la tua zona DNS`{.action} e segui gli step.
 
-![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
 Puoi scegliere tra:
 

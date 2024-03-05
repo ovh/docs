@@ -28,7 +28,7 @@ Questa guida ti mostra gli step fondamentali per l'installazione manuale di Word
 - Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud.
 - Disporre di un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con Debian o Ubuntu installato.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- Un accesso amministratore (root) alla tua istanza via SSH.
+- Un accesso amministratore (sudo) alla tua istanza via SSH.
 
 ## Procedura
 

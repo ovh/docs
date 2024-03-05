@@ -36,7 +36,7 @@ Se creará un directorio llamado **./node_modules/ovh/...**.
 Para utilizar el servicio de SMS con la API, es necesario disponer de unas claves. Dichas claves se generan una sola vez para identificar la aplicación que enviará SMS. Es posible configurar su validez.
 
 Genere las claves para su script (se crean todas a la vez) desde esta página:
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs/&POST=/sms/*/jobs/) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
+[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*&GET=/sms/*/jobs&POST=/sms/*/jobs) (si accede desde este enlace, tendrá automáticamente los permisos necesarios para seguir los pasos que se explican en esta guía).
 
 ![generar los tokens](images/img_2462.jpg){.thumbnail}
 

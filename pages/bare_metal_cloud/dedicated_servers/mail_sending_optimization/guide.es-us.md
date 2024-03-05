@@ -1,7 +1,7 @@
 ---
 title: 'Optimización del envío de correos electrónicos'
 excerpt: 'Averigüe cómo enviar correos electrónicos y limite el riesgo de que se marquen como spam'
-updated: 2022-12-20
+updated: 2024-01-24
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-12-20
 
 ## Objetivo
 
-Las políticas antispam cada vez son más estrictas. Para asegurarse que sus correos electrónicos llegan a los destinatarios sin ser bloqueados por las herramientas de seguridad, usted necesita configurar en su servicio para autenticar los correos y validar su contenido.
+En general, las políticas antispam son estrictas. Para facilitar el envío de mensajes de correo electrónico y para que los destinatarios los reciban sin sufrir un bloqueo de las herramientas de seguridad, es necesario configurar los parámetros para autenticar sus mensajes y su contenido en los servidores destinatarios que los tratan.
 
 **En esta guía se le dan algunos consejos para optimizar como se envían sus correos electrónicos.**
 
@@ -21,7 +21,8 @@ Las políticas antispam cada vez son más estrictas. Para asegurarse que sus cor
 
 ## Requisitos
 
-- Tener un servidor de correo ya configurado.
+- Ser el administrador de un servidor de correo configurado.
+- Estar en condiciones de administrar la zona DNS del dominio o dominios utilizados para el envío
 
 > [!warning]
 >
@@ -39,32 +40,36 @@ Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, 
 > El símbolo que precede al **all** es muy importante:
 > 
 > - `+`: aceptar
-> - `-`: no aceptar
-> - `~`: fallo suave (*soft fail*)
+> - `-`: rechazar
+> - `~`: error (*soft fail*)
 > - `?`: neutro
 >
 
-Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.open-spf.org/>.
-
-Usted puede encontrar más información sobre como configurar el registro SPF para un dominio, o especificando directamente la dirección IPv6. Puede encontrar como hacerlo en la siguiente guía: [Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf).
+Por supuesto, puede ir un paso más allá configurando el registro SPF para un dominio específico o utilizando la dirección IPv6. Para más información sobre el registro SPF, consulte nuestra guía sobre la [configuración de un registro SPF](/pages/web_cloud/domains/dns_zone_spf).
 
 ### Configurar el registro DKIM
 
-Configurando el registro DKIM (DomainKeys Identified Mail), añade protección extra para evitar que sus correos se marquen como SPAM. En términos simples, DKIM es una firma que permite al autenticar el dominio remitente.
+El registro DKIM (DomainKeys Identified Mail) permite firmar los mensajes de correo para evitar la usurpación de los mismos. Esta firma funciona sobre el principio de una pareja clave privada / clave pública, que permite autentificar el dominio remitente.
 
-La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a su zona DNS. Existen diferente generadores para claves DKIM, incluyendo: <http://dkimcore.org/tools/keys.html>. Por favor, siga las instrucciones que figuran en el sitio web.
+Para más información, consulte nuestra guía sobre la [configuración de un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
-### Configurar el Registro inverso <a name="reverseip"></a>
+### Configurar registro DMARC
 
-Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il Registro inverso con su nombre de dominio.
+El registro DMARC (Domain-based Message Authentication, Reporting and Conformance) es un estándar de seguridad basado en los dos métodos de seguridad de correo electrónico SPF y DKIM. Los argumentos inscritos en el registro DMARC orientan al destinatario sobre la forma de tratar los mensajes de correo, en función del resultado SPF y/o DKIM. Es posible definir una dirección de correo electrónico en el registro DMARC, que recibirá un informe sobre los fallos de autenticación.
 
-Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Para más información, consulte nuestra guía sobre la [configuración de un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
-Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
+### Configurar el *Reverse IP* <a name="reverseip"></a>
+
+Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il *Reverse IP* con su nombre de dominio.
+
+Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+
+Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse.
 
 A continuación, añada el registro PTR (también conocido como registro inverso):
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
 
 Si desea configurar el Registro DNS inverso  en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
 
@@ -97,9 +102,9 @@ Introduzca su dominio en la sección `Registro inverso` y haga clic en `Aceptar`
 
 Microsoft utiliza una política de lista blanca (whitelist). Esto significa que inicialmente, todo empieza en una blacklist, y se requiere un procedimiento específico para validar los correos en el servidor.
 
-Antes de iniciar el procedimiento de whitelist de su IP, asegúrese de haber configurado correctamente un [registro inverso](#reverseip) en su IP (y no el registro inverso por defecto de OVHcloud).
+Antes de iniciar el procedimiento de whitelist de su IP, asegúrese de haber configurado correctamente un registro [inverso](#reverseip) en su dirección IP (y no el registro inverso por defecto de OVHcloud).
 
-Microsoft también verifica el registro SPF, por lo que se recomienda [configurar uno](#spfrecord).
+Microsoft también comprueba el registro SPF, por lo que se recomienda configurarlo.
 
 A continuación, debe firmar los contratos SNDS (Smart Network Data Services) y JMRP (Junk Mail Reporting Partner Program).
 
@@ -132,19 +137,22 @@ Para más información, [solicite ayuda](https://support.microsoft.com/en-us/get
 >
 > Es posible que Microsoft se niegue a desbloquear su dirección o direcciones IP, en cuyo caso OVHcloud no podrá intervenir. Es importante respetar las buenas prácticas de Microsoft.
 >
- 
 
 #### Desde el servidor de Gmail
 
-Si sus destinatarios son Gmail, debe de añadir los registros específicos (ejem. Registro DMARC) para garantizarse que los correos llegan. Aquí puede encontrar el artículo de Google donde puede encontrar más información: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
-
-Google también ofrece un [artículo dedicado a la prevención del spam](https://support.google.com/mail/answer/81126?hl=en){.external} para los usuarios de Gmail.
+La adición de registros específicos, como un registro de Domain-based Message Authentication, Reporting, and Conformance (DMARC) o DKIM (DomainKeys Identified Mail), puede facilitar la recepción de mensajes de correo electrónico si el destinatario está en Gmail. Consulte nuestras guías [en la parte inferior de esta página](#go-further) para configurarlas.
 
 ### Revisa su información
 
 Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/){.external} para verificar que todas sus configuración son correctas.
 
 ## Más información
+
+[Configurar un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+
+[Configurar un registro SPF](/pages/web_cloud/domains/dns_zone_spf)
+
+[Configurar un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

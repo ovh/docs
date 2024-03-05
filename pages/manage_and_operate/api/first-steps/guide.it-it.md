@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare le API OVHcloud
 excerpt: Come utilizzare le API OVHcloud
-updated: 2023-09-08
+updated: 2024-02-01
 ---
 
 > [!primary]
@@ -199,6 +199,31 @@ client = ovh.Client(
 # Print nice welcome message
 print("Welcome", client.get('/me')['firstname'])
 ```
+
+#### Elenca e revoca le chiavi
+
+Al momento non è disponibile un'opzione del Pannello di controllo per elencare e revocare le chiavi. Il portale API può essere utilizzato a tale scopo:
+
+- Elenca gli ID delle chiavi con la chiamata seguente:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application
+>
+
+- Ottieni i dettagli della chiave con la seguente chiamata:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application/{applicationId}
+>
+
+- Revoca di una chiave con la seguente chiamata:
+
+> [!api]
+>
+> @api {v1} /me DELETE /me/api/application/{applicationId}
+>
 
 ## Per saperne di più <a name="gofurther"></a>
 

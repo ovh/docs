@@ -98,7 +98,7 @@ You can access your logs, statistics and graphs directly from the [OVHcloud Cont
 How to access statistics and logs:
 
 1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
-2. In the pop-up window, click the `Statistics and logs`{.action} tab.
+2. Click on the `Statistics and logs`{.action} tab.
 3. Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
 
 ![logs](images/tab.png){.thumbnail}
@@ -106,7 +106,7 @@ How to access statistics and logs:
 How to access charts:
 
 1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
-2. In the pop-up window, click the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph linked to your hosting usage.
+2. Click on the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph of your hosting usage.
 3. Select the **type** of information as well as the **period** of the data displayed.
 
 ![graphs](images/infrastructure-statistics-graph.png){.thumbnail}

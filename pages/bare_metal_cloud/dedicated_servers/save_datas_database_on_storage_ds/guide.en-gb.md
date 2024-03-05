@@ -8,7 +8,7 @@ updated: 2018-09-12
 
 Your data is sensitive. Any loss or alteration of it could quickly result in serious issues for your business. Since there is no such thing as a risk-free approach, we strongly recommend creating backups at least daily, and preferably storing them on a server or storage solution that is separate to your production infrastructures.
 
-OVHcluod offers a range of [Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/storage/){.external} that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVHcloud or with another service provider, via the public network.
+OVHcloud offers a range of [Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/storage/){.external} that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVHcloud or with another service provider, via the public network.
 
 In this guide, we will show you how to configure an OVHcloud Storage Server to suit your needs, generate a tree-view for receiving backups, then automate backups for two remote servers via SCP protocol.
 
@@ -73,7 +73,9 @@ To ensure that we organise our backups clearly, we will create target directorie
 
 ```sh
 df -h
+```
 
+```console
 Filesystem      Size    Used Avail Use% Mounted on
 udev            7.8G       0  7.8G   0% /dev
 tmpfs           1.6G     51M  1.6G   4% /run
@@ -127,6 +129,9 @@ Now that you have configured your SSH service, you can go to your production ser
 ```sh
 scp your_dump_file user@IP_Storage:/home/backups/server1/dump
 
+```
+
+```console
 The authenticity of host 'IP_Storage (IP_Storage)' can't be established.
 ECDSA key fingerprint is SHA256:fmmeu5feHlnaUC56+2DB73sgNd4aMPVkS7oEtcyO2o8.
 Are you sure you want to continue connecting (yes/no)? yes

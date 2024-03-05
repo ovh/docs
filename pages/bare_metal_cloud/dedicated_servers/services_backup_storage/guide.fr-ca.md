@@ -153,7 +153,7 @@ Un bon de commande sera créé. Une fois votre paiement enregistré, vous serez 
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
 
 ```sh
-# ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
+ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 ```
 
 **Cette commande ne supporte pas le protocole FTPS. Si vous avez besoin d’effectuer un transfert sécurisé, vous devrez utiliser le client lftp ou cURL.**
@@ -169,7 +169,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour sauvegarder un répertoire, il vous suffit de l’archiver et de le transférer dans votre répertoire de sauvegarde :
 
 ```sh
-# tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
+tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -183,7 +183,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour télécharger un fichier d'archive à partir de votre Backup Storage, vous pouvez utiliser la commande suivante :
 
 ```sh
-# ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
+ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -204,7 +204,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
 
 ```sh
-# curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
+curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -218,7 +218,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour sauvegarder un répertoire, il vous suffit de l’archiver et de le transférer dans votre répertoire de sauvegarde :
 
 ```sh
-# tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
+tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -233,8 +233,8 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour télécharger un fichier d'archive à partir de votre Backup Storage, vous pouvez utiliser la commande suivante :
 
 ```sh
-# cd /LocalFolder
-# curl -u FtpUsername:FtpPassword ftp://HostName/File 
+cd /LocalFolder
+curl -u FtpUsername:FtpPassword ftp://HostName/File 
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -245,7 +245,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 * **LocalFolder** : le nom du répertoire local dans lequel vous souhaitez enregistrer le fichier.
 * **File** : le chemin d’accès du fichier à télécharger
 
-##### lftp (pour Linux)
+####lftp (pour Linux)
 
 > [!primary]
 >
@@ -255,7 +255,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour sauvegarder un seul fichier, vous pouvez utiliser la commande suivante :
 
 ```sh
-# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
+lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -269,7 +269,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour sauvegarder un répertoire, il vous suffit de l’archiver et de le transférer dans votre répertoire de sauvegarde :
 
 ```sh
-# tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
+tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -284,8 +284,8 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Pour télécharger un fichier d'archive à partir de votre Backup Storage, vous pouvez utiliser la commande suivante :
 
 ```sh
-# cd /LocalFolder
-# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
+cd /LocalFolder
+lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -306,8 +306,8 @@ Assurez-vous d'abord d’avoir autorisé vos blocs d’IP à accéder au stockag
 
 Une fois le client NFS installé et le service portmap lancé, vous pouvez monter le partage NFS comme une partition normale comme indiqué ci-dessous :
 
-```
-# mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+```sh
+mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
@@ -338,7 +338,7 @@ L'exemple de code ci-dessus contient des variables que vous devrez remplacer par
 Ouvrez une connexion SSH à votre serveur et tapez la commande suivante :
 
 ```sh
-# mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
+mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
 ```
 
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.

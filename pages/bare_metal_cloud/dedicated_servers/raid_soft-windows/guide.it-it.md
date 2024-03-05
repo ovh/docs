@@ -37,7 +37,7 @@ Il metodo da utilizzare varia in base al tipo di partizione dei dischi. Segui le
 
 Dal prompt dei comandi, apri DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -163,7 +163,7 @@ DISKPART> list volume
 
 Dal prompt dei comandi, apri DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 

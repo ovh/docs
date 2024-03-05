@@ -39,7 +39,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 #### Attaching a Floating IP to an instance
 
 > [!success]
-> Click one of the two tabs below depending on whether you want to attach a Floating IP to a new instance (**Option 1**) or an existing instance (**Option 2*).
+> Click one of the two tabs below depending on whether you want to attach a Floating IP to a new instance (**Option 1**) or an existing instance (**Option 2**).
 
 > [!tabs]
 > **Option 1**
@@ -321,7 +321,7 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 >> As you can see, the VM only has a private IP but it is available from the Internet via the Floating IP.
 >>
 >> ```bash
->> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 1.1.1.1
+>> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 213.186.33.99
 >> ubuntu@vm4fip:~$ curl ifconfig.me/ip
 >> 169.254.10.25
 >> ```

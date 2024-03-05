@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise'
 excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié Kimsufi, So You Start ou Rise'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 ## Objectif
@@ -91,23 +91,21 @@ Une fois l'installation terminée, vous recevrez un e-mail contenant les instruc
 
 Utilisez les exemples suivants pour vous connecter à votre serveur et remplacez les informations d'identification par vos propres identifiants (l'adresse IP et le nom de référence du serveur sont interchangeables).
 
-**Exemple avec root :**
-
 ```bash
-ssh root@IPv4_de_votre_serveur
+ssh username@IPv4
 ```
 
-**Exemple avec un utilisateur préconfiguré :**
+**Exemple :**
 
 ```bash
-ssh ubuntu@nom_de_reference_de_votre_serveur
+ssh ubuntu@169.254.10.250
 ```
 
 Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ».
 
 #### Windows
 
-Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (root). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**emote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
+Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (sudo). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**emote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
 
 Consultez également notre guide « [Configurer une nouvelle installation de Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config) ».
 
@@ -207,9 +205,13 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 ## Allez plus loin
 
+[Configuration des comptes utilisateurs et de l'accès root sur un serveur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

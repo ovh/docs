@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l'espace client OVHcloud"
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ La gestion de vos services s'effectue principalement via l'espace client OVHclou
 
 Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, renseignez votre identifiant client (ou votre adresse e-mail principale) et votre mot de passe.
 
-![identifiant client](images/log-in.png){.thumbnail}
+![identifiant client](images/log-in-fr.png){.thumbnail}
 
 Si vous avez activé la [double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), vous devrez alors renseigner le code unique de connexion généré par votre périphérique (téléphone, tablette ou clé U2F).
 
@@ -43,16 +43,16 @@ Votre identifiant client est renseigné sur l'e-mail de confirmation de créatio
 
 Votre identifiant client est renseigné en haut à droite sur toutes vos factures.
 
-![identifiant client](images/nichandle01b.png){.thumbnail}
+![identifiant client](images/customer-id-bill-fr.png){.thumbnail}
 
 ##### **Se connecter sans identifiant**
 
-Si vous ne retrouvez pas votre identifiant, sachez que vous pouvez vous connecter en utilisant l'adresse e-mail principale (à la place de l'identifiant)que vous avez renseignée dans votre compte.
+Si vous ne retrouvez pas votre identifiant, sachez que vous pouvez vous connecter en utilisant l'adresse e-mail principale (à la place de l'identifiant) que vous avez renseignée dans votre compte.
 
 Une fois connecté, vous pourrez prendre note de votre identifiant qui est affiché dans votre espace client, en cliquant sur votre nom en haut à droite.
 <br>Il apparaît sous votre adresse e-mail principale.
 
-![identifiant client](images/nic-handle.png){.thumbnail}
+![identifiant client](images/customer-id-manager-fr.png){.thumbnail}
 
 ### J'ai perdu mon mot de passe
 
@@ -64,7 +64,7 @@ Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peu
 
 #### Si vous avez renseigné une adresse e-mail de secours
 
-Vous pouvez contacter le support OVHcloud au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que cette adresse de secours devienne l'adresse e-mail principale.
+Vous pouvez contacter le support OVHcloud au 1007 (composez le +33 9 72 10 10 07 depuis une ligne en dehors de la France) afin que cette adresse de secours devienne l'adresse e-mail principale.
 
 Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account_and_service_management/account_information/all_about_username#backup-email) dans votre compte.
 
@@ -72,13 +72,17 @@ Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle
 
 Dans ce cas de figure, le support téléphonique OVHcloud ne pourra pas vous venir en aide.
 
-Vous devez suivre cette [procédure](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} à nous adresser par courrier postal afin que votre identité soit vérifiée.
-<br>Une fois le courrier reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
-<br>Cette procédure peut nécessiter plusieurs jours de délai, compte tenu des délais d'acheminement de votre courrier et de son traitement par nos services.
+Vous devez compléter ce [formulaire en ligne](http://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi){.external} afin que votre identité soit vérifiée.
+<br>Une fois le formulaire reçu par nos services, nous procéderons alors au remplacement de votre adresse e-mail de contact si tous les justificatifs réclamés sont conformes.
+<br>Le traitement de cette procédure par nos services peut prendre quelques jours.
 
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 
-Dans ce cas de figure, vous pouvez utiliser les codes de secours de la double authentification, utiliser un autre périphérique, ou désactiver la double authentification.
+Dans ce cas de figure, vous pouvez :
+
+- utiliser les code de secours actifs que vous avez sauvegardés ;
+- utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs ;
+- désactiver la double authentification.
 
 Consultez les démarches appropriées sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner) ».
 

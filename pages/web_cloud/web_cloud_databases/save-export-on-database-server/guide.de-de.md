@@ -44,13 +44,13 @@ In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfüg
 
 Klicken Sie auf `...`{.action} rechts neben der Datenbank und dann auf `Jetzt sichern`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
+![Web Cloud Databases](images/back-up-now.png){.thumbnail}
 
 #### 2\. Backup exportieren
 
 Klicken Sie auf `...`{.action}. rechts neben der Datenbank und dann auf `Die Sicherungen anzeigen`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
+![Web Cloud Databases](images/show-backups.png){.thumbnail}
 
 Die Liste der verfügbaren Backups erscheint. Klicken Sie auf `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung herunterladen`{.action}, um die Datei anzufordern.
 

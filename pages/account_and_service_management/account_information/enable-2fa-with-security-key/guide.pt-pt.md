@@ -1,8 +1,7 @@
 ---
 title: 'Ativar a dupla autenticação com chave de segurança'
 excerpt: 'Descubra como proteger a sua área de cliente OVHcloud, permitindo a autenticação dupla com chave de segurança U2F'
-hidden: true
-updated: 2022-07-08
+updated: 2024-02-02
 ---
 
 > [!primary]
@@ -24,19 +23,6 @@ A dupla autenticação com chave de segurança Universal Second Factor (U2F) é 
 
 ## Instruções
 
-> [!warning]
-> **Adição de uma nova chave U2F nas versões recentes de Chrome/Chromium**
->
-> A adição de uma nova chave U2F já não é possível nas versões recentes do browser Chrome (a partir de Chrome v98) e seus derivados como Chromium.<br>
-> A utilização de uma chave U2F já adicionada e funcional é sempre possível nestas versões recentes do browser, apenas a adição de uma nova chave U2F é impossível.
->
-> As nossas equipas [trabalham para resolver este problema](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8). Enquanto aguardamos uma resolução definitiva, convidamo-lo a seguir um destes dois métodos de contornar:
->
-> - Utilize outro browser (como o Firefox) para adicionar a sua nova chave U2F e, a seguir, utilize o seu browser Crome/Chromium habitual para se ligar à Área de Cliente OVHcloud da forma habitual.
-> - Reative o suporte da funcionalidade U2F no seu browser Chrome/Chromium. Para isso, como na imagem abaixo, copie este valor `chrome://flags/#u2f-security-key-api` para a barra de endereços do browser, selecione Enabled` no menu pendente à direita e reinicie o seu browser.
->
->![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
-
 ### Etapa 1: ativar a dupla autenticação
 
 Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no seu nome no canto superior direito (1) e clique em suas iniciais (2). A seguir, clique em `Segurança`{.action} (3) e por fim em `Ativar a dupla autenticação`{.action} (4).
@@ -54,6 +40,10 @@ Escolha o método com chave de segurança e valide.
 Ligue a sua chave de segurança quando isso lhe for pedido. Se estiver equipada com um botão, prima o botão. 
 
 ![2FA securitykey](images/2fakey2.png){.thumbnail}
+
+> [!warning]
+>
+> Irá abrir-se uma janela do tipo pop-up para lhe pedir a validação da chave. Se não vir esta janela, certifique-se de que o seu browser não a bloqueia.
 
 Quando a chave for reconhecida, pode também adicionar uma descrição. Isto pode ser útil para identificar pessoas que possam usar este método de autenticação na sua conta.
 

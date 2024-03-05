@@ -1,7 +1,7 @@
 ---
 title: Como utilizar as políticas IAM a partir do seu Espaço Cliente
 excerpt: Descubra como dar direitos de acesso específicos aos utilizadores a partir de uma conta OVHcloud
-updated: 2023-12-06
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -123,6 +123,9 @@ As ações disponíveis dependem do tipo de recursos e pertencem a uma das cinco
 - **Operate**: aplicar alterações às infraestruturas relacionadas com o produto (*ex: reiniciar um servidor dedicado*).
 
 Está disponível um campo de pesquisa para o ajudar a identificar uma ação específica na lista.
+
+> [!primary]
+> As ações relativas aos produtos IP e vRack, bem como as ações ligadas à encomenda e faturação, ainda não se encontram disponíveis no IAM OVHcloud.
 
 #### Alterar uma política
 

@@ -1,7 +1,7 @@
 ---
 title: "Lista degli indirizzi IP di cluster e hosting Web"
 excerpt: "Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web"
-updated: 2023-11-21
+updated: 2024-02-28
 ---
 
 > [!primary]
@@ -744,6 +744,38 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 
 ```bash
 51.161.94.36
+```
+
+### Cluster 100
+
+Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
+
+|Paese|Codice Paese|IPv4|IPv6|
+|---|---|----|---|
+|Francia|FR|5.135.23.164|2001:41d0:301::100|
+|Irlanda|IE|188.165.0.143|2001:41d0:301:3::100|
+|Portogallo|PT|94.23.76.76|2001:41d0:301:2::100|
+|Regno Unito|UK|87.98.254.187|2001:41d0:301:12::100|
+|Italia|IT|178.32.143.165|2001:41d0:301:11::100|
+|Spagna|ES|178.33.119.211|2001:41d0:301:4::100|
+|Polonia|PL|94.23.89.116|2001:41d0:301:5::100|
+|Repubblica Ceca|CZ|94.23.172.226|2001:41d0:301:6::100|
+|Paesi Bassi|NL|94.23.146.244|2001:41d0:301:7::100|
+|Finlandia|FI|188.165.137.37|2001:41d0:301:8::100|
+|Lituania|LT|188.165.26.152|2001:41d0:301:9::100|
+|Germania|DE|87.98.243.177|2001:41d0:301:1::100|
+|Belgio|BE|91.121.217.51|2001:41d0:301:10::100|
+
+Se il **Shared CDN** è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
+
+```bash
+46.105.204.100
+```
+
+Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
+
+```bash
+54.36.142.130
 ```
 
 ## Per saperne di più

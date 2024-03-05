@@ -21,17 +21,17 @@ Tendo em conta as operações que terá de efetuar na Área de Cliente, é impor
 
 Encontre as informações relativas aos **servidores DNS** e a sua modificação no nosso guia "[Modificar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Se retomarmos o exemplo acima, quando escrever _mydomain.ovh_, os **servidores DNS** associados a este domínio serão interrogados. Estes últimos contêm a **zona DNS** do nome de domínio _mydomain.ovh_ onde está indicado o endereço IP do alojamento de _mydomain.ovh_. Assim, o seu browser pode apresentar o site _mydomain.ovh_ contido no alojamento. Chamamos-lhe uma resolução DNS.
 
-![DNS](images/dnssolve.gif){.thumbnail}
+![DNS](images/dns-resolution.gif){.thumbnail}
 
 ### Zona DNS
 
 A zona DNS de um nome de domínio é um ficheiro de configuração composto por **registos**. Estes permitem fazer a ligação entre o seu nome de domínio e os servidores que alojam os seus serviços Internet, tais como websites (através do registo A) ou endereços de e-mail (registo MX).
 
-![DNS](images/dnszone.png){.thumbnail}
+![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
 
 **Saiba como editar a zona DNS da OVHcloud através da Área de Cliente.**
 
@@ -63,7 +63,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Aparecerá uma tabela com um registo DNS associado ao seu domínio na OVHcloud. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
 
-![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
+![dnszone](images/tab.png){.thumbnail}
 
 ### Os registos DNS
 
@@ -201,7 +201,7 @@ Para adicionar um novo registo DNS, clique no separador `Zona DNS`{.action} do d
 
 Sugerimos que verifique previamente se este registo já existe e não aponta para um destino diferente. Para o fazer, filtre o conteúdo da tabela por tipo de registo ou por domínio. Se o registo já existir, sugerimos que o altere através da operação descrita abaixo.
 
-![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
+![dnszone](images/add-an-entry.png){.thumbnail}
 
 > Quando o alvo do seu registo for um URL, pense em pontuá-lo. Se não o fizer, o seu domínio será automaticamente adicionado no final do seu alvo.
 >
@@ -213,7 +213,7 @@ Sugerimos que verifique previamente se este registo já existe e não aponta par
 
 Para alterar um registo DNS, aceda ao separador `Zona DNS`{.action} da Área de Cliente e clique no ícone `...`{.action} no painel à direita da entrada selecionada. De seguida, clique em `Alterar entrada`{.action} e siga os passos que aparecem.
 
-![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
+![dnszone](images/modify-record.png){.thumbnail}
 
 #### Eliminar um registo DNS existente
 
@@ -221,7 +221,7 @@ Para eliminar um registo DNS, aceda ao separador `Zona DNS`{.action} da Área de
 
 Pode eliminar várias entradas de uma só vez, selecionando-as a partir da parte esquerda da tabela e clicando no botão `Eliminar`{.action}.
 
-![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+![dnszone](images/delete-record.png){.thumbnail}
 
 #### Reiniciar a zona DNS
 
@@ -232,7 +232,7 @@ Reinicializar a zona DNS permite-lhe:
 
 No separador `Zona DNS`{.action}, clique em `Reiniciar a minha zona DNS`{.action} e siga os passos que aparecem.
 
-![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
 Pode escolher entre:
 

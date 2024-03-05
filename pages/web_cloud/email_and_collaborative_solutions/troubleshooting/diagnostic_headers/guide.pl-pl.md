@@ -28,7 +28,7 @@ updated: 2021-11-19
 </style>
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -154,7 +154,7 @@ Aby pobrać plik `.eml`, wybierz odpowiedni adres e-mail. Kliknij przycisk `... 
 
 ![emails](images/roundcube02.png){.thumbnail}
 
-#### Outlook Web Application (OWA) <a name="owa"></a>
+#### Outlook Web App (OWA) <a name="owa"></a>
 
 ##### **Pobierz nagłówek**
 
@@ -186,7 +186,7 @@ Aby pobrać nagłówek, wybierz odpowiedni e-mail, po czym kliknij 3 pionowe kro
 
 #### Outlook.com
 
-Aby wyświetlić nagłówek w interfejsie webmail <Outlook.com>, zapoznaj się z sekcją [Outlook Web Application](#owa) tego przewodnika.
+Aby wyświetlić nagłówek w interfejsie webmail &#60;Outlook.com&#62;, zapoznaj się z sekcją [Outlook Web App](#owa) tego przewodnika.
 
 ## Sprawdź również
 

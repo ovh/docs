@@ -6,7 +6,7 @@ updated: 2021-06-25
 
 ## Ziel
 
-Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem Client Ihrer Wahl senden und empfangen. Um von überall über einen Webbrowser auf ein Konto zuzugreifen, bietet OVHcloud einen Online-E-Mail-Client namens Outlook Web Application (OWA). Unsere [Webmail-Anmeldeseite](https://www.ovh.de/mail) ist für alle aktiven E-Mail-Konten in MX Plan, Email Pro und Hosted Exchange der zentrale Zugriffspunkt auf die OWA Benutzeroberfläche.
+Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem Client Ihrer Wahl senden und empfangen. Um von überall über einen Webbrowser auf ein Konto zuzugreifen, bietet OVHcloud einen Online-E-Mail-Client namens Outlook Web App (OWA). Unsere [Webmail-Anmeldeseite](https://www.ovh.de/mail) ist für alle aktiven E-Mail-Konten in MX Plan, Email Pro und Hosted Exchange der zentrale Zugriffspunkt auf die OWA Benutzeroberfläche.
 
 **Diese Anleitung erläutert, wie Sie Ihre E-Mail-Adresse mit OWA verwenden und erklärt die wichtigsten Funktionen dieser Oberfläche.**
 
@@ -209,7 +209,7 @@ Sie können dann die Baumstruktur „Optionen“ links auf der Seite durchsuchen
 
 ### Cookie-Verwaltung
 
-Das Webmail, das für unsere E-Mail Angebote verwendet wird, basiert auf der Software Microsoft Outlook Web Application. Es kann demnach Metadaten mit Microsoft Servern in Form von Cookies (etwa `appsforoffice.microsoft.com`) austauschen.
+Das Webmail, das für unsere E-Mail Angebote verwendet wird, basiert auf der Software Microsoft Outlook Web App. Es kann demnach Metadaten mit Microsoft Servern in Form von Cookies (etwa `appsforoffice.microsoft.com`) austauschen.
 
 Wenn Sie diese Datenübertragung deaktivieren möchten, können Sie in Ihrem Browser eine Erweiterung hinzufügen, die Inhalte blockiert, z.B. uBlock Origin oder Ghostery.
 Die Deaktivierung dieser Cookies kann möglicherweise die stabile Funktionalität Ihres Webmail-Accounts beeinträchtigen.

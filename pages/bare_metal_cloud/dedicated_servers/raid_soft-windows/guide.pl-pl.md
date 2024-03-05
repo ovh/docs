@@ -37,7 +37,7 @@ Metoda zależy od typu partycji dysków. Postępuj zgodnie z instrukcjami z [tej
 
 W wierszu poleceń otwórz DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -164,7 +164,7 @@ Najlepiej nie uruchamiać ponownie serwera, jeśli proces odbudowy nie zostanie 
 
 W wierszu poleceń otwórz DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 

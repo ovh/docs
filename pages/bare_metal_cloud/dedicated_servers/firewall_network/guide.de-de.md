@@ -109,7 +109,7 @@ Für jede **TCP**-Regel müssen Sie Folgendes auswählen:
 | &bull; Eine Priorität (0 bis 19, 0 ist die erste anzuwendende Regel, gefolgt von den anderen) <br>&bull; Eine Aktion (`Accept`{.action} oder `Deny`{.action}) <br>&bull; Das Protokoll <br>&bull; Quell-IP (optional) <br>&bull; Der Quell-Port (optional) <br>&bull; Der Ziel-Port (optional) <br>&bull; Der TCP-Status (optional) <br>&bull; Fragmente (optional)|
 
 > [!primary]
-> Es wird empfohlen, TCP mit der Option `established` (für Pakete, die Teil einer zuvor geöffneten/gestarteten Sitzung sind), ICMP-Pakete (für Ping und Traceroute) und optional DNS-UDP-Antworten von externen Servern zuzulassen (wenn Sie externe DNS-Server verwenden).
+> Es wird empfohlen, TCP mit der Option `established` zuzulassen (für Pakete, die Teil einer zuvor gestarteten Sitzung sind), außerdem ICMP-Pakete (für Ping und Traceroute) und optional DNS-Antworten über UDP von externen Servern (wenn Sie externe DNS-Server verwenden).
 >
 > **Konfigurationsbeispiel:**
 >

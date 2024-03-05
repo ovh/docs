@@ -11,7 +11,7 @@ updated: 2022-02-08
  
 ## Wprowadzenie
 
-Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spotkanie z kalendarzem) i wyczyściłeś kosz. Możesz je przywrócić do 14 dni po ich usunięciu przez Webmail OWA (Outlook Web Application).
+Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spotkanie z kalendarzem) i wyczyściłeś kosz. Możesz je przywrócić do 14 dni po ich usunięciu przez Webmail OWA (Outlook Web App).
 
 **Dowiedz się, jak przywrócić usunięte elementy z konta e-mail poprzez Webmail (OWA)**
  

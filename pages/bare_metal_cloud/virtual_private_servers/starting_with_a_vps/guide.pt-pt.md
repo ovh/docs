@@ -1,7 +1,7 @@
 ---
 title: Primeiros passos com um VPS
 excerpt: Aprenda a gerir um VPS na sua Área de Cliente e descubra as primeiras etapas da sua utilização, nomeadamente as ligações remotas e as medidas de segurança
-updated: 2023-11-13
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -27,6 +27,8 @@ Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoma
 ### Interface da Área de Cliente
 
 O separador `Página`{.action} inicial contém informações importantes sobre o serviço e permite-lhe realizar operações essenciais.
+
+![VPS Home](images/vpshome.png){.thumbnail}
 
 #### O seu VPS <a name="yourvps"></a>
 
@@ -129,7 +131,7 @@ Aparece uma barra de progresso da instalação na Área de Cliente. Tenha em con
 
 ### Reinicialização do VPS <a name="reboot-current-range"></a>
 
-Pode ser necessário reiniciar para aplicar configurações atualizadas ou resolver um problema. Sempre que possível, execute uma « de reinício de software » a partir da interface gráfica do servidor ou através da linha de comandos:
+Pode ser necessário reiniciar para aplicar configurações atualizadas ou resolver um problema. Sempre que possível, execute uma « de reinício de software » a partir da interface gráfica do servidor (Windows, Plesk, etc.) ou através da linha de comandos:
 
 ```bash
 sudo reboot
@@ -159,11 +161,15 @@ ssh ubuntu@169.254.10.250
 
 Também pode utilizar qualquer aplicação de terceiros compatível com **Open SSH**.
 
-Uma vez ligado, pode alterar a palavra-passe predefinida do utilizador padrão para uma forte frase secreta utilizando este comando:
+Uma vez ligado, pode alterar a palavra-passe predefinida do utilizador atual para uma forte frase secreta utilizando este comando:
 
 ```bash
 passwd
 ```
+
+Numa distribuição GNU/Linux, **uma indicação de palavra-passe não apresentará as suas entradas de teclado**.
+
+Digite a sua palavra-passe atual e prima `Enter`{.action}. Introduza a nova frase secreta e introduza-a novamente no seguinte prompt para a confirmar.
 
 ```console
 Changing password for ubuntu.
@@ -172,6 +178,15 @@ New password:
 Retype new password: 
 passwd: password updated successfully
 ```
+
+> [!warning]
+> 
+> **Ativação da conta de utilizador root**
+>
+> Não é necessário utilizar a conta de utilizador « root » para iniciar a administração do seu servidor. Essa conta deve ser ativada primeiro no sistema operativo do servidor para poder usá-la. Como medida de segurança, as ligações SSH com o utilizador « root » estão **desativadas** por predefinição.
+> 
+Salvo indicação em contrário, todas as ações administrativas descritas na nossa documentação podem ser realizadas pela conta de utilizador predefinida, ou seja, introduzindo `sudo` seguido pelo comando correspondente. Saiba mais sobre este assumpto no guia "[Configuração das contas de utilizadores e acesso root num servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)".
+>
 
 **Recomendamos que efetue o seguinte procedimento**:
 
@@ -183,17 +198,6 @@ passwd: password updated successfully
 >
 Tenha em conta que se selecionou uma **distribuição com aplicação** (Plesk, cPanel, Docker), as medidas de segurança genéricas podem não se aplicar ao seu sistema. Sugerimos que consulte os nossos manuais [Primeiros passos com as aplicações pré-instaladas](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) e [Implementar o cPanel num VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), assim como a documentação oficial do editor em causa.
 >
-
-#### Ativar ligações root
-
-> [!warning]
->
-> Por predefinição, a ligação ao utilizador « root » está desativada por razões de segurança. Consulte as instruções [deste guia](/pages/bare_metal_cloud/virtual_private_servers/root_password#enable-root-login) para verificar se pretende permitir estas ligações.
->
-
-#### Atualização da palavra-passe root
-
-Para alterar ou atualizar a sua palavra-passe « root », consulte as instruções [deste guia](/pages/bare_metal_cloud/virtual_private_servers/root_password).
 
 ### Ligação ao seu VPS Windows
 

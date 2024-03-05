@@ -25,7 +25,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 
 > [!warning]
 >
-> La siguiente guía se dirige a los titulares de la solución MX Plan "histórico". Para el nuevo producto, no hay delegaciones. El cambio de la contraseña, los filtros y contestadores de una dirección de correo electrónico pueden cambiarse directamente a través del webmail OWA (**O**utlook **W**eb **A**pplication). **Identifique su producto utilizando la siguiente tabla.**
+> La siguiente guía se dirige a los titulares de la solución MX Plan "histórico". Para el nuevo producto, no hay delegaciones. El cambio de la contraseña, los filtros y contestadores de una dirección de correo electrónico pueden cambiarse directamente a través del webmail OWA (**O**utlook **W**eb **A**pp). **Identifique su producto utilizando la siguiente tabla.**
 >
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|

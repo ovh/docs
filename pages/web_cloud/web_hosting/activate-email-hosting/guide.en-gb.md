@@ -1,7 +1,7 @@
 ---
 title: "Activating email addresses included in your Web Hosting plan"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2023-03-02
+updated: 2024-02-08
 ---
 
 ## Objective
@@ -15,6 +15,15 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/en-gb/domains/dns-subdomain/){.external} of a domain name not registered with OVHcloud 
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the Web Hosting plan
+
+> [!warning]
+>
+> If you want to enable the "email address(es) included with your web hosting plan" option for an external domain name (not registered with OVHcloud) **which you must be the administrator of**, you must create (at least) a DNS zone at OVHcloud for your external domain name. Refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create), if required. This will allow your domain name to appear in the list of available domain names when you enable the option.
+>
+> Furthermore, if your domain name is already registered with OVHcloud, or if a DNS zone already exists for it in another [OVHcloud account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) than your own, please read our documentation “[Managing your service contacts](/pages/account_and_service_management/account_information/managing_contacts)” to find out how to manage it.
+>
+> Finally, if your domain name is already linked to the "email address(es) included with your web hosting plan" option on another web hosting plan, you cannot link it to your own web hosting plan directly. Use this guide to check with the current web hosting manager.
+>
 
 ## Instructions
 

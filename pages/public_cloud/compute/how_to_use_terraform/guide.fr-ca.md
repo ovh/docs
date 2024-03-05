@@ -3,7 +3,7 @@ title: Comment utiliser Terraform sur le Public Cloud OVHcloud
 description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
-updated: 2022-05-27
+updated: 2024-01-12
 ---
 
 ## Objectif
@@ -34,6 +34,18 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 >
 
 ## En pratique
+
+> [!warning]
+>
+> Les noms des images officielles pouvant être amenés à changer, il est préférable d'utiliser leurs IDs dans vos scripts d'installation.
+
+### Création de Token
+
+Outre le *end point* de l'API, les clés nécessaires sont `application_key`, `application_secret` et `consumer_key`. Ces clés peuvent être générées via la [page de génération de token OVHcloud](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+
+![token](images/first_step.png){.thumbnail}
+
+![token created](images/create_token.png){.thumbnail}
 
 ### Créer un environnement Terraform
 

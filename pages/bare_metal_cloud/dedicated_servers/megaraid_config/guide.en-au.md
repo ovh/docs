@@ -21,7 +21,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/){.external} with hardware RAID
-- Administrative (root) access to the server via SSH
+- Administrative (sudo) access to the server via SSH
 
 ## Instructions
 
@@ -58,6 +58,8 @@ After your server has been installed, check the partition sizes by logging on to
 ```sh
 df -h
 ```
+
+```console```
 
 ### Using rescue mode
 

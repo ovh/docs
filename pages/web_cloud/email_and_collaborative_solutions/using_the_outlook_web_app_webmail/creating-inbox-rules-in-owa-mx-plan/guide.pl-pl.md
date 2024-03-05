@@ -5,7 +5,7 @@ updated: 2020-03-11
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 
 ## Wprowadzenie
 
@@ -91,7 +91,7 @@ Ponieważ żadne mechanizmy ochrony antyspamowej nie są w stanie precyzyjnie ok
 
 > [!primary]
 >
-> Wiadomości błędnie oznaczonych jako spam (tzw. fałszywie pozytywnych) nie można zgłosić bezpośrednio w aplikacji OWA. Jeśli otrzymujesz e-maile błędnie oznaczone jako \[SPAM], zalecamy powiadomienie naszego zespołu wsparcia klienta przez utworzenie zgłoszenia w [Panelu klienta OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+> Wiadomości błędnie oznaczonych jako spam (tzw. fałszywie pozytywnych) nie można zgłosić bezpośrednio w aplikacji OWA. Jeśli otrzymujesz e-maile błędnie oznaczone jako \[SPAM], zalecamy powiadomienie naszego zespołu wsparcia klienta [przez utworzenie zgłoszenia](https://help.ovhcloud.com/csm?id=csm_get_help).  
 >
 
 ## Sprawdź również

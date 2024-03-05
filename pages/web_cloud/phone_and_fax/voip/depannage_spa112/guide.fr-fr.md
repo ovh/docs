@@ -1,60 +1,14 @@
 ---
 title: Dépannage SPA112
-hidden: true
+flag: hidden
 updated: 2018-03-26
 ---
 
-------------------------------------------------------------------------
-
-Niveau : Débutant
-
-------------------------------------------------------------------------
-
-## Reconfiguration de l'équipement {#reconfiguration-de-léquipement}
-
--   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
--   Cliquez sur le lien "**Manager v4**."
--   Cliquez sur la ligne à reconfigurer.
--   Cliquez sur "**Assistance**"
--   Cliquez "**Dépannage Plug & phone**"
-
-![](images/depspa112.png){.thumbnail}
-
--   L'interface vous propose la reconfiguration automatique. Elle consiste à débrancher puis rebrancher électriquement votre équipement (durée de l'opération : 3minutes maximum)
-
-![](images/depspa20_2.png){.thumbnail}
-
--   Cliquez sur **Reconfiguration manuelle**
--   Commencez par réinitialiser l'équipement. Pour ce faire :
-    -   Débranchez le boîtier du réseau (câble Ethernet)
-    -   Décrochez le combiné
-    -   Composez **\*\*\*\***
-    -   Attendez la voix en anglais dans le combiné
-    -   Poursuivez à composer **73738\#** finissez par **1**
-    -   Raccrochez
-    -   Laissez le SPA112 dans l'état pendant une à deux minutes.
--   Ensuite, il vous faut récupérer l'adresse IP locale de votre adaptateur Cisco :
-    -   Décrochez le combiné
-    -   Composez **\*\*\*\***
-    -   Attendez la voix en anglais dans le combiné
-    -   Composez **110\#**
-    -   La voix en anglais reprend en énumérant les chiffres qui composent l'adresse IP locale (notez que les points se disent "dot")
-    -   Entrez l'adresse IP récupérée dans le champs en bas de l'interface.
-
-Votre adresse IP locale sera composée de 4 nombres compris entre 0 et 254 et sauf configuration réseau particulière, débutera par 192**.**168**.**
-
-![](images/depspa20_3.png){.thumbnail}
-
--   Il vous reste à cliquer sur le lien généré de l'adresse IP locale.
--   Vous serez alors dirigé dans la page de l'interface web du SPA112. Cette même page permet de reconfigurer en quelques clics votre Plug & Phone.
--   Si l'interface vous demande un identifiant et mot de passe : entrez **admin** et **admin**
--   Rendez vous dans la catégorie **Voice**![](images/dep_spa113_b2.png){.thumbnail}
-
--   Puis cliquez **Provisionning** dans le volet à gauche![](images/dep_spa114_c.png){.thumbnail}
-
--   Dans "**Profile Rule**", renseignez l'adresse décrite par le Manager : **http://cisco.prov.voip.ovh.net/init.cfg**
--   Renseignez **https://cisco.prov.voip.ovh.net/init.cfg**dans "**Profile Rule B**"**.** Cela permet d’accélérer la reconfiguration du matériel.****
--   Finissez la procédure en cliquant sur **Submit**
+> [!warning]
+> 
+> Ce guide est à présent déprécié et est uniquement conservé afin de documenter des dysfonctionnements spécifiques au téléphone concerné.
+> Le processus de dépannage pour nos téléphones est à présent documenté sur [cette page](/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel).
+>
 
 ## Mon adaptateur ne s'allume plus {#mon-adaptateur-ne-sallume-plus}
 

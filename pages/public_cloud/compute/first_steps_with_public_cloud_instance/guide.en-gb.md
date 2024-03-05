@@ -1,7 +1,7 @@
 ---
 title: Managing your Public Cloud instances
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
-updated: 2024-01-08
+updated: 2024-02-20
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 Click on `Instances`{.action} the left-hand menu. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 This page lists all your Public Cloud instances and some of their properties:
 
@@ -33,6 +33,7 @@ This page lists all your Public Cloud instances and some of their properties:
 - The instance model
 - The image i.e. the OS installed on the instance
 - The IPv4 address of the instance
+- The private address currently attached to the instance
 - Additional volumes (disks) currently attached to the instance
 - The status of the instance, indicating whether it is in the `Activated` state
 
@@ -69,11 +70,11 @@ Click on `Create an automatic backup`{.action}.
 
 Refer to our guide [Backing up an instance](/pages/public_cloud/compute/save_an_instance#creating-an-automated-backup-of-an-instance) for detailed information.
 
-#### Suspending the instance
+#### Stop the instance
 
 Click on `Stop`{.action}.
 
-This will put the instance in a suspended state. Refer to our guide [Shelve or pause an instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspend-stop-an-instance) for detailed information.
+This will put the instance in an `Off` state, but you will still be charged the same price for your instance. Refer to our guide [Shelve or pause an instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspend-stop-an-instance) for detailed information.
 
 Click on `Boot`{.action} to reactivate the instance.
 

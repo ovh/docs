@@ -1,8 +1,7 @@
 ---
 title: 'Attivare la doppia autenticazione con chiave di sicurezza'
 excerpt: 'Come proteggere il tuo Spazio Cliente OVHcloud attivando la doppia autenticazione con chiave di sicurezza U2F'
-hidden: true
-updated: 2022-07-08
+updated: 2024-02-02
 ---
 
 > [!primary]
@@ -24,19 +23,6 @@ La doppia autenticazione con chiave di sicurezza Universal Factor (U2F) è uno d
 
 ## Procedura
 
-> [!warning]
-> **Aggiunta di una nuova chiave U2F nelle versioni recenti di Chrome/Chromium**
->
-> Non è più possibile aggiungere una nuova chiave U2F sulle versioni recenti del browser Chrome (a partire da Chrome v98) e suoi derivati come Chromium.<br>
-> L'utilizzo di una chiave U2F già aggiunta e funzionale è sempre possibile su queste versioni recenti del browser, non è possibile aggiungere una nuova chiave U2F.
->
-> I nostri team [lavorano per risolvere questo malfunzionamento](https://customer-service.status-ovhcloud.com/incidents/wl6txzgvrym8) In attesa di una risoluzione definitiva, ti invitiamo a seguire uno di questi due metodi di elusione:
->
-> - Utilizza un altro browser (come Firefox) per aggiungere la tua nuova chiave U2F e utilizza il tuo browser Chrome/Chromium abituale per accedere allo Spazio Cliente OVHcloud in modo abituale.
-> - Riattiva il supporto della funzionalità U2F nel tuo browser Chrome/Chromium. Come nell'immagine qui sotto, copia questo valore `chrome://flags/#u2f-security-key-api` nella barra degli indirizzi del browser, seleziona `Enabled` nel menu a tendina di destra e riavvia il browser.
->
->![2FA securitykey - Chrome](images/chrome-u2f-support.png){.thumbnail}
-
 ### Step 1: attiva la doppia autenticazione
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome in alto a destra (1) e clicca sulle iniziali (2). Poi clicca su`Sicurezza`{.action} (3) e infine su `Attiva la doppia autenticazione`{.action} (4).
@@ -49,11 +35,15 @@ Scegli la metodo con chiave di sicurezza e conferma l’operazione
 
 ![2FA securitykey](images/2fakey1edit.png){.thumbnail}
 
-### Step 3: Disattiva la doppia autenticazione
+### Step 3: conferma l’autenticazione a due fattori
 
 Collega la chiave di sicurezza quando richiesto e,  se è dotata di un pulsante, cliccaci sopra. 
 
 ![2FA securitykey](images/2fakey2.png){.thumbnail}
+
+> [!warning]
+>
+> Si aprirà una finestra di pop-up in cui verrà chiesto di confermare la chiave. Se questa finestra non viene visualizzata, verificare che il browser in uso non blocchi le finestre di dialogo.
 
 Inoltre, una volta riconosciuta la chiave, puoi aggiungere una descrizione  in modo da identificare gli utenti che potrebbero utilizzare questo metodo di autenticazione sul tuo account.
 

@@ -17,7 +17,7 @@ Es kann aus verschiedenen Gründen vorkommen, dass Sie die Geschwindigkeit Ihrer
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external}.
-- Administrativer (Root) Zugriff auf diese Instanz über SSH (nur für Linux).
+- Administrativer (sudo) Zugriff auf diese Instanz über SSH (nur für Linux).
 
 ## In der praktischen Anwendung
 
@@ -27,16 +27,16 @@ Der Befehl, den Sie benötigen, um die Geschwindigkeit Ihres Laufwerks zu überp
 
 Um `fio` zu installieren, stellen Sie eine SSH-Verbindung zu Ihrer Instanz her und führen Sie dann den folgenden Befehl aus:
 
-```
-root@server:~$ apt-get install fio
+```bash
+apt install fio
 ```
 
 ## Durchführung des Tests
 
 Verwenden Sie folgenden Befehl für den Test Ihrer Festplatten:
 
-```
-root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```bash
+fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
@@ -48,15 +48,15 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 
 Um die Performance einer zusätzlichen Festplatte zu testen, begeben Sie sich in einen der Ordner des Mountpunkts.
 
-```
-root@server:~$ cd /mnt/disk
+```bash
+cd /mnt/disk
 ```
 
 ### Analyse der Daten
 
 Sie erhalten dann als Ergebnis des Befehls eine mit dieser vergleichbare Ausgabe:
 
-```
+```console
 fio-2.1.11
 Starting 1 process
 test: Laying out IO file(s) (1 file(s) / 1024MB)
@@ -92,7 +92,7 @@ vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 
 Die für uns interessante Information zu den IOPS befindet sich in Zeile 6:
 
-```
+```console
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 

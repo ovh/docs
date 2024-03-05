@@ -5,7 +5,7 @@ updated: 2023-07-26
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -59,11 +59,11 @@ W zakładce `Informacje ogólne`{.action}, po zalogowaniu się do [etap 1](#step
 
 W sekcji "Bezpieczeństwo" sprawdź status obok pozycji "Zabezpieczenie DNS - DNSSEC".
 
-![dnssec](images/activate-dnssec-step2.png){.thumbnail}
+![dnssec](images/activate-dnssec.png){.thumbnail}
 
 Za pomocą przycisku aktywacyjnego powyżej hasła `Zabezpieczenie DNS - DNSSEC`{.action} możesz włączyć lub wyłączyć **DNSSEC** dla Twojej domeny. Po wykonaniu tych operacji pojawi się nowe okno, w którym możesz zatwierdzić modyfikację.
 
-![dnssec](images/activate-dnssec-step3.png){.thumbnail}
+![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >

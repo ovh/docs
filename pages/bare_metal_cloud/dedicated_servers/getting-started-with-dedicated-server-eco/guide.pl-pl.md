@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise'
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego Kimsufi, So You Start lub Rise'
-updated: 2023-09-11
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -98,20 +98,20 @@ Użyj poniższych przykładów, aby połączyć się z serwerem i zastąp dane i
 **Przykład z root:**
 
 ```bash
-ssh root@IP_Twojego_serwera
+ssh username@IPv4
 ```
 
-**Przykład dla wstępnie skonfigurowanego użytkownika:**
+**Przykład:**
 
 ```bash
-ssh ubuntu@nazwa_serwera
+ssh ubuntu@169.254.10.250
 ```
 
 Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)".
 
 #### Windows
 
-Po zakończeniu instalacji otrzymasz e-mail z hasłem dostępu administratora (root). Użyj tych danych do logowania się do serwera przez RDP (**R**emote **D**esktop **P**rotocol). Po zalogowaniu Windows poprowadzi Cię przez całą początkową instalację.
+Po zakończeniu instalacji otrzymasz e-mail z hasłem dostępu administratora (sudo). Użyj tych danych do logowania się do serwera przez RDP (**R**emote **D**esktop **P**rotocol). Po zalogowaniu Windows poprowadzi Cię przez całą początkową instalację.
 
 Sprawdź również nasz przewodnik [Skonfiguruj nową instalację Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
@@ -211,9 +211,13 @@ Aby włączyć i korzystać z opcji Backup Storage, zapoznaj się [z tym przewod
 
 ## Sprawdź również
 
+[Konfiguracja kont użytkowników i dostępu root na serwerze](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Zabezpieczanie serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Uruchamianie i korzystanie z trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

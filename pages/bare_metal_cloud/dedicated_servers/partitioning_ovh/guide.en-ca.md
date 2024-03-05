@@ -153,7 +153,8 @@ A partition layout is a list of partitions. Here is an example of a partition st
 
 > [!primary]
 >
-> >
+> order: is the partition order within the partition array
+>
 
 > [!primary]
 >
@@ -234,7 +235,7 @@ Basic customer input data errors are directly handled by the OVHcloud API. This 
 
 Customer input data related to partitioning might be too specific to be checked by the OVHcloud API and therefore require **pre-processing**. The drawback is that customers are notified later during the OS installation process.
 
-Within the [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
+Within the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
 From the [OVHcloud API](https://ca.api.ovh.com/), this status can be obtained with the following API call:
 
 > [!api]
@@ -285,6 +286,8 @@ In order to improve customer experience, reduce OVHcloud support workload and to
 |PP size reducing|In case the customer chose a PP that requires more space than the server has, the size of this PP will be reduced so that it fits the disk. Note that in case several PPs require more space than the system has, the script will only act on the first partition, raising an error later in the script for the second oversized partition. Also note that an error will be raised if the customer set another partition to fill the disk via the OVHcloud API|
 
 ## Go further <a name="gofurther"></a>
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 

@@ -109,7 +109,7 @@ Minecraft jest dobrze obsługiwany w następujących wersjach:
 - Kwerenda Minecraft
 
 > [!primary]
-> Aktualnie, Minecraft Java edition jest chroniony w trybie "domyślnym" i nie wyświetla się żadna dodatkowa konfiguracja. Jeśli instalujesz większe serwery Minecraft lub masz specyficzne potrzeby, skontaktuj się z naszym działem obsługi klienta, korzystając z [Help Centre](https://help.ovhcloud.com/csm?id=csm_cases_requests) wraz ze wszystkimi szczegółami, aby ulepszyć profil aplikacji.
+> Aktualnie, Minecraft Java edition jest chroniony w trybie "domyślnym" i nie wyświetla się żadna dodatkowa konfiguracja. Jeśli instalujesz większe serwery Minecraft lub masz specyficzne potrzeby, skontaktuj się z naszym działem obsługi klienta, korzystając z [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) wraz ze wszystkimi szczegółami, aby ulepszyć profil aplikacji.
 >
 
 ## FAQ
@@ -128,7 +128,7 @@ Swoje zapotrzebowanie możesz zgłosić na stronie [infrastructure solutions roa
 
 ### Po skonfigurowaniu portów i domyślnych zasad porzucania gry nadal otrzymuję ataki wpływające na działanie serwera gier. Co należy zrobić?
 
-W tym celu należy udostępnić odpowiednie zrzuty ruchu sieciowego jako przykłady takich ataków (plik *.pcap*) i tuning ochrony żądania profilu. Można to zrobić przy użyciu [Help Centre](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+W tym celu należy udostępnić odpowiednie zrzuty ruchu sieciowego jako przykłady takich ataków (plik *.pcap*) i tuning ochrony żądania profilu. Można to zrobić przy użyciu [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ## Sprawdź również
 

@@ -19,7 +19,7 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](h
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Administratorzugang (Root) über SSH auf Ihren VPS (optional)
+- Administratorzugang (sudo) über SSH auf Ihren VPS (optional)
 
 ## In der praktischen Anwendung
 

@@ -128,7 +128,7 @@ La tabla mostrará las cuentas pendientes de configurar con el formato *@configu
 
 ### Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange), en el apartado relativo a Outlook Web Application (OWA).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web App** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange), en el apartado relativo a Outlook Web App (OWA).
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 

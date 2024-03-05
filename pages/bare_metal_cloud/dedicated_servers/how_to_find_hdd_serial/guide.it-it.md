@@ -20,7 +20,7 @@ Per ridurre al minimo il rischio di errore durante la sostituzione di un hard di
 
 > [!primary]
 >
-> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue64-pro](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} e utilizzare il tool preinstallato **nvme-cli**.
+> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} e utilizzare il tool preinstallato **nvme-cli**.
 > 
 
 ### Recupera il numero di serie di un disco con RAID software

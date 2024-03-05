@@ -110,7 +110,7 @@ Minecraft wird in den folgenden Versionen unterstützt:
 - Minecraft Query
 
 > [!primary]
-> Die Minecraft Java Edition ist derzeit im Modus "Default" ohne zusätzliches Setup geschützt. Wenn Sie größere Minecraft Server hosten oder besondere Anforderungen haben, kontaktieren Sie unseren Support über das [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) mit allen Details, um das Anwendungsprofil zu optimieren.
+> Die Minecraft Java Edition ist derzeit im Modus "Default" ohne zusätzliches Setup geschützt. Wenn Sie größere Minecraft Server hosten oder besondere Anforderungen haben, kontaktieren Sie unseren Support über das [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) mit allen Details, um das Anwendungsprofil zu optimieren.
 >
 
 ## FAQ
@@ -129,7 +129,7 @@ Sie können Ihre Anforderungen in unserer [Roadmap für Infrastrukturlösungen a
 
 ### Nachdem ich mein Spiel mit geeigneten Ports und Standardregeln zum Löschen konfiguriert habe, erhalte ich immer noch Angriffe, die meinen Game Server beeinträchtigen. Was ist zu tun?
 
-Hierzu müssen Sie relevante Abbilder des Netzwerkverkehrs (Traffic *dump*) als Beispiele für solche Angriffe erzeugen (*.pcap* Datei) und eine Schutzoptimierung Ihres Profils anfordern. Dies kann über unser [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) erfolgen.
+Hierzu müssen Sie relevante Abbilder des Netzwerkverkehrs (Traffic *dump*) als Beispiele für solche Angriffe erzeugen (*.pcap* Datei) und eine Schutzoptimierung Ihres Profils anfordern. Dies kann über unser [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) erfolgen.
 
 
 ## Weitere Informationen

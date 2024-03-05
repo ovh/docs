@@ -107,8 +107,11 @@ mount /dev/sda4 /mnt
 Questo step consiste nella manipolazione del file *SAM* con un tool che permette di cancellare la password dell'utente admin. Accedi alla cartella corretta e individua gli utenti Windows:
 
 ```bash
-cd /mnt/Windows/System32/config
-/mnt/Windows/System32/config#
+ntfsfix /dev/sda4
+```
+
+```bash
+mount /dev/sda4 /mnt
 ```
 
 

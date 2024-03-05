@@ -30,7 +30,7 @@ Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [we
   
 ## W praktyce
 
-### Etap 1 - pobranie publicznych adresów IP upoważnionych do dostępu do Panelu klienta OVHcloud
+### Etap 1 - Pobranie publicznych adresów IP upoważnionych do dostępu do Panelu klienta OVHcloud
 
 Istnieją dwa rodzaje adresów IP:
 
@@ -54,7 +54,7 @@ Jeśli używasz sieci 4G/5G jako uzupełnienie, pamiętaj o pobraniu również a
 > **Przed** wprowadzeniem ograniczenia dla adresu IP w Panelu klienta OVHcloud, sprawdź u swojego dostawcy usług internetowych, czy odzyskane wcześniej adresy IP to rzeczywiście adresy IP **stałe**. W przeciwnym razie ryzykowałbyś szybką utratę dostępu do Panelu klienta OVHcloud, deklarując dynamiczny adres IP.
 >
 
-### Etap 2 - wprowadzenie ograniczenia dostępu dla adresu IP
+### Etap 2 - Wprowadzenie ograniczenia dostępu dla adresu IP
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij na Twoje `nazwisko i imię` w prawym górnym rogu **następnie** na Twoje `tim` w niebieskiej kolumnie, która pojawi się po prawej stronie.
 

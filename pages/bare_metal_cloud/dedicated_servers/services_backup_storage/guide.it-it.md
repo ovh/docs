@@ -249,7 +249,7 @@ Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 * **LocalFolder**: nome della cartella locale in cui salvare il file
 * **File**: percorso completo del file da scaricare
 
-##### lftp (per Linux)
+####lftp (per Linux)
 
 > [!primary]
 >

@@ -1,45 +1,68 @@
 ---
-title: Evitar os erros comuns de SSL no meu website
-excerpt: Evitar os erros comuns de SSL no meu website
-updated: 2020-05-05
+title: "Erros comuns associados à segurança do seu website com SSL"
+excerpt: "Descubra como evitar os erros comuns de segurança do seu website com o SSL"
+updated: 2024-01-11
 ---
 
-## O 'mixed content'
-O seu website não carrega elementos externos, como os botões Facebook ou Twitter? As iterações da sua página não funciona como em HTTP? Tem, provavelmente, um problema de "mixed content".
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-Desde há vários anos que os browsers como o Googl Chrome, Mozilla Firefox ou Internet xplorer impedem que os websites em HTTPS carreguem elementos da página se estão sob um URL em HTTP. Isto é efetuado desta forma de forma a evitar que a confidencialidade aportada por HTTPS não sofra impacto por um elemento carregado em HTTP.
+## Objetivo
 
-Na maioria dos casos tratam-se de scripts externos provenientes de outros websites como as redes sociais, e basta que substitua http por https para chamar esses scripts.
+Encontre, neste tutorial, alguns exemplos de situações relativas à segurança do seu website com o SSL.
 
-No entanto, atenção. Existem alguns websits que utilizem o CDM para alojar librarias "Javascript (como JQuery por exemplo). Se esses CDN fornecem as librarias com um URL em HTTP, o funcionamento do website pode sofrer impacto.
+> [!warning]
+>
+> A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
+> 
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
+>
 
-Como saber se o meu website poderá sofrer impacto?
+**Descubra como evitar os erros comuns de segurança do seu website com o SSL**
 
-As ferramentas de "debugging" fornecidas pela Mozilla Firefox e Google Chrome indiquem quando um website contém elementos bloqueados por mixed content. A documentação disponível em [le Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) permite saber mais sobre estas ferramentas caso haja mixed content.
+## Requisitos
 
-## O "duplicated content"
-O "duplicate content", é o fenómeno de ter o mesmo conteúdo entregue por vários urls distintos. Os motores de pesquisa não apreciam este fenómeno que, segundo eles, tem como tentativas melhorar o seu posicionamento. Desta forma, eles penalizam os websites que os utilizam.
+- Dispor de um [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter registado, pelo menos, um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external}.
+- Ter acesso à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, parte "Web cloud".
 
-Para evitar este tipo de problemas, é recomendado, se o seu webstie funciona corretamente em HTTPS, que adicione um reencaminhamento do conteúdo HTTP em HTTPS. Assim, os seus visitantes serão reencaminhados automaticamente para o endereço HTTPS e um só endereço será disponível para o mesmo conteúdo.
+## Instruções
 
-Deixamos um exemplo de reencaminhamento a colocar no seio do ficheiro .htaccess na raiz do seu website.
+### Conteúdo misto (mixed content)
+
+O seu website não carrega elementos externos, como os botões *Facebook* e *X/Twitter*? As interações nas páginas web não funcionam como quando acede ao website em "HTTP"? Provavelmente, é o resultado do conteúdo misto do seu website. 
+
+Nos últimos anos, browsers como o Google Chrome*, *Mozilla Firefox* e *Microsoft Edge/Internet Explorer* têm impedido que websites com "HTTPS" carreguem elementos de página se estes estiverem acessíveis através de um URL em "HTTP". Isto é feito para que a confidencialidade fornecida pelo protocolo "HTTPS" não seja comprometida por um elemento carregado em "HTTP". 
+
+Na maioria dos casos, são scripts externos, provenientes de outros websites, como as redes sociais. Neste caso, basta substituir nos seus scripts os URLs em "HTTP" por URLs em "HTTPS" para poder carregar estes scripts.
+
+> [!primary]
+>
+> Alguns websites utilizam [Content Delivery Network (CDN)](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) para alojar, por exemplo, bibliotecas *Javascript* (como *JQuery*). 
+> Se os CDN entregam a livraria com um URL em "HTTP", o seu website pode ser afetado pelo **mixed content**. 
+>
+
+Como saber se o meu site é afetado?
+
+As ferramentas de depuração fornecidas por *Mozilla Firefox* e *Google Chrome* podem indicar se o seu website contém ou não elementos bloqueados devido a um conteúdo misto. A documentação disponível no [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external} explica a utilização destas ferramentas para detetar conteúdos mistos.
+
+### Conteúdo duplicado (duplicate content)
+
+"Duplicar conteúdo" significa ter o mesmo conteúdo em vários URLs diferentes. Os motores de busca encaram isto como uma tentativa de melhorar o referenciamento (SEO). Assim, penalizam os websites cujo conteúdo é duplicado.
+
+Para evitar este tipo de situação, sugerimos que, quando o website funciona corretamente em "HTTPS", reencaminhe o conteúdo "HTTP" para "HTTPS". Isto permitirá que os seus visitantes sejam automaticamente reencaminhados para o endereço do seu conteúdo web em "HTTPS" e que apenas um endereço esteja disponível para esse mesmo conteúdo. 
+
+Eis um exemplo de reencaminhamento que pode adicionar num ficheiro "[.htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)", na raiz do seu website (substituindo o URL *https://www.yourdomain.tld* pelo seu):
 
 ```
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R,L]
+RewriteRule ^(.*)$ https://www.yourdomain.tld/$1 [R,L]
 ```
 
-## Passar de HTTPS para HTTP
-Caso pretenda restringir o seu website a funcionar apenas por HTTP e não deseja utilizar o protocolo HTTPS, deve forçá-lo através do ficheiro .htaccess.
-
-Desta forma, os seus visitantes serão automaticamente reencaminhados para o endereço HTTPS e um só endereço estará disponível para o mesmo conteúdo, mesmo que acedam por HTTPS.
-
-Deixamos um exemplo de reencaminhamento a colocar no seio do ficheiro .htaccess na raiz do seu website de forma a poder reencaminhar HTTPS para HTTP:
-
-```
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 443
-RewriteRule ^(.*)$ http://www.oseudominio.pt/$1 [R,L]
-```
-
+## Quer saber mais? <a name="go-further"></a>
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

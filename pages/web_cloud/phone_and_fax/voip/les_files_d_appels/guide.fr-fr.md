@@ -1,7 +1,7 @@
 ---
 title: "Configurer une file d'appels"
 excerpt: "Découvrez comment configurer une file d'appels sur un numéro alias"
-updated: 2023-12-21
+updated: 2024-02-12
 ---
 
 ## Objectif
@@ -45,7 +45,7 @@ Une fois la configuration de file d'appels appliquée, les menus de configuratio
 Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.action} puis, dans le cadre « Configuration », cliquez sur `Paramétrer la configuration`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-03.png){.thumbnail}
- 
+
 Quatre menus principaux vous sont proposés :
 
 |Menu|Détails|
@@ -140,6 +140,17 @@ Depuis le tableau des lignes de votre file d'appels, cliquez sur le bouton `...`
 La modification vous permet d'affiner les réglages de sonnerie de chaque ligne mais aussi d'activer/désactiver une ligne au sein de la file d'appels, en passant son `Statut`{.action} à `Activé` ou `Désactivé`.
 
 ![fileappels](images/2022-VoIP-FA-09.png){.thumbnail}
+
+> [!success]
+> **Connexion/déconnexion dans la file d'appels depuis un téléphone**
+>
+> Lorsque vous appelez le numéro de la file d'appels depuis une ligne qui en est membre, un menu vocal vous propose de :
+>
+> - taper `1` pour vous connecter à la file d'appels (ne fonctionne que si votre ligne était préalablement déconnectée de la file) ;
+> - taper `2` pour vous déconnecter de la file d'appels (ne fonctionne que si votre ligne était préalablement connectée à la file) ;
+> - taper `3` pour rejoindre la file d'appels et ainsi faire sonner ses membres.
+>
+> Vous pouvez ainsi gérer à la volée, directement depuis votre téléphone, l'activation de votre ligne au sein de la file d'appels.
 
 #### 2.2 Gérer les sons et l'attente <a name="manage-sounds"></a>
 

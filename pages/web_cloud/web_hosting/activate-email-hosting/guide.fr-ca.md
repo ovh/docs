@@ -1,7 +1,7 @@
 ---
 title: "Activer les adresses e-mails incluses dans votre hébergement web"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-updated: 2023-03-02
+updated: 2024-02-07
 ---
 
 ## Objectif
@@ -17,6 +17,15 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} dans votre espace client OVHcloud.
 - Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+
+> [!warning]
+>
+> Si vous souhaitez activer l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » pour un nom de domaine externe (non enregistré chez OVHcloud) **dont vous devez être obligatoirement l'administrateur**, vous devez créer (a minima) une zone DNS chez OVHcloud pour votre nom de domaine externe. Consultez notre guide « [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create) » si nécessaire. Cela permettra à votre nom de domaine d'apparaître dans la liste des noms de domaine disponibles lors de l'activation de l'option.
+>
+> Par ailleurs, si votre nom de domaine est déjà enregistré chez OVHcloud ou si une zone DNS existe déjà pour ce dernier dans un autre [compte OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) que le vôtre, consultez notre documentation « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) » pour en récupérer la gestion.
+>
+> Enfin, si votre nom de domaine est déjà lié à l'option « adresse(s) e-mail incluse(s) avec votre hébergement web » d'un autre hébergement web, vous ne pourrez pas l'associer à votre propre hébergement web directement. Faites le point avec l'actuel gestionnaire de l'hébergement web en vous aidant de ce guide.
+>
 
 ## En pratique
 

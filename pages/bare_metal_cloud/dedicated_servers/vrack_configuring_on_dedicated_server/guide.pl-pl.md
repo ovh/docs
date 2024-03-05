@@ -20,7 +20,7 @@ vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (
 
 - Usługa [vRack](https://www.ovh.pl/rozwiazania/vrack/) włączona na Twoim koncie
 - Kilka [serwerów dedykowanych](https://www.ovhcloud.com/pl/bare-metal/) (kompatybilnych z vRack)
-- Dostęp administratora (root) do serwera przez SSH lub RDP
+- Dostęp administratora (sudo) do serwera przez SSH lub RDP
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Zakresu prywatnych adresów IP
 

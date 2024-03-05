@@ -24,7 +24,7 @@ Sie können einen sekundären Server hinzufügen oder diese Konfiguration durch 
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH oder RDP.
+- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH oder RDP.
 - Grundlegende Kenntnisse der Netzwerkverwaltung.
 
 ## In der praktischen Anwendung

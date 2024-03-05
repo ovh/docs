@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar los contactos de los servicios'
 excerpt: 'Cómo gestionar los distintos contactos de los servicios de OVHcloud'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Objetivo
@@ -39,6 +39,10 @@ El identificador de cliente es un identificador personal que se envía por corre
 - El antiguo y el nuevo contacto de facturación deben estar al corriente de pago.
 
 ## Procedimiento
+
+> [!primary]
+> Solo es posible gestionar los contactos entre dos cuentas de OVHcloud situadas en la misma zona geográfica.
+> Por ejemplo, no es posible gestionar los contactos entre una cuenta en Europa y una cuenta en Canadá.
 
 ### Acceder a la gestión de los contactos <a name="gestion_des_contacts"></a>
 

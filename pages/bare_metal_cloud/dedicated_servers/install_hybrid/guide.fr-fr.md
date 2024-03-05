@@ -99,6 +99,8 @@ Votre système d'exploitation va maintenant être installé. Vous pouvez vérifi
 
 [Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco)
 
+[API OVHcloud & installation OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Gestion du RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft)

@@ -75,7 +75,7 @@ A continuación se muestra una descripción de la información esencial que se m
 
 Si ya no conoce la contraseña de un usuario FTP o SSH, consulte nuestra guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![Conexión FTP](images/change-ftp-password.png){.thumbnail}
+![Conexión FTP](images/change-password.png){.thumbnail}
 
 En este punto, dispondrá de todos los elementos necesarios para conectarse a su espacio de almacenamiento FTP.
 

@@ -19,7 +19,7 @@ El nivel de RAID por defecto en los servidores de OVHcloud es RAID 1. Con este n
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} con RAID por software.
-- Tener acceso al servidor por SSH como administrador (root).
+- Tener acceso al servidor por SSH como administrador (sudo).
 
 ## Procedimiento
 
@@ -118,7 +118,7 @@ Disk identifier: 0x150f6797
 Este comando muestra que **/dev/md2** contiene 888,8 GB y **/dev/md4** contiene 973,5 GB. Para ver la disposición del disco, ejecute el comando `mount`.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosed,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosed,nodev,noexec,relatime)

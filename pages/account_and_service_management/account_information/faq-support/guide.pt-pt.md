@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre o suporte da OVHcloud
 excerpt: Encontre as questões mais frequentes sobre o suporte da OVHcloud
-updated: 2022-11-10
+updated: 2024-01-11
 ---
 
 ## Objetivo
@@ -10,13 +10,19 @@ Encontre as questões mais frequentes sobre o suporte da OVHcloud
 
 ### O que devo fazer se não conseguir contactar o Apoio ao Cliente por telefone?
 
-Para evitar um tempo de espera ao telefone, sugerimos que crie um pedido de assistência a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Um formulário de contacto está disponível na janela da direita, no parte inferior da página, através do link "Criar um ticket".
+Para evitar esperar ao telefone, convidamo-lo a criar um pedido de suporte a partir do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Clique no botão `Criação de ticket`{.action}.
 
-Também pode consultar toda a nossa documentação (FAQ, manuais, ferramentas de diagnóstico...) no Centro de Ajuda.
+Pode igualmente consultar o conjunto da nossa documentação (FAQ, guias, ferramentas de diagnóstico, etc.) no [Centro de Ajuda](https://help.ovhcloud.com/csm/pt-documentation?id=kb_home).
 
 ### A que se deve a mudança do formulário de criação de tickets?
 
 O novo formulário tem por objetivo tornar o processo de criação de tickets mais completo e preciso, graças a um sistema de perguntas. Este sistema permite uma melhor qualificação das solicitações em função do tipo de serviço, da necessidade de assistência e do nível de gravidade. Assim, agiliza a comunicação entre os clientes e as nossas equipas.
+
+### Como posso enviar documentos e outros ficheiros para o suporte da OVHcloud?
+
+Pode transmitir ficheiros nos seguintes formatos (tamanho máximo: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
+
+Crie um pedido de assistência no [Centro de Ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) e anexe os seus ficheiros.
 
 ### Onde posso encontrar o nível de suporte que tenho?
 

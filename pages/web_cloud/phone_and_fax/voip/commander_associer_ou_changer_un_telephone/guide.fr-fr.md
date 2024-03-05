@@ -1,5 +1,5 @@
 ---
-title: "Ligne SIP: commander, modifier, rattacher ou détacher un téléphone OVHcloud"
+title: "Ligne SIP - commander, modifier, rattacher ou détacher un téléphone OVHcloud"
 excerpt: 'Découvrez comment effectuer la gestion des téléphones associés à vos lignes SIP depuis votre espace client'
 updated: 2023-12-21
 ---

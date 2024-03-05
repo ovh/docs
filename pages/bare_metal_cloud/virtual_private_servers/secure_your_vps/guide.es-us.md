@@ -1,7 +1,7 @@
 ---
 title: 'Proteger un VPS'
 excerpt: 'Descubra los elementos básicos que le permiten proteger su VPS'
-updated: 2022-05-05
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -15,15 +15,16 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 **Esta guía ofrece algunos consejos para proteger un servidor basado en GNU/Linux.**
 
 > [!warning]
->OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
->
->Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle soporte técnico.
+> OVHcloud pone a su disposición servicios cuya configuración, seguridad y responsabilidad le pertenecen.
+> En efecto, no tenemos acceso a los datos alojados en estas máquinas ni somos los administradores. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) en caso de que tenga dificultades o dudas relativas a la administración, la utilización o la seguridad del servidor.
+> Más información en el apartado «Más información» de esta guía.
 >
 
 ## Requisitos
 
-- Un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
-- Tener acceso de administrador (root) al servidor por SSH.
+- - Un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
+- Tener acceso de administrador (sudo) al servidor por SSH.
 
 ## Procedimiento
 
@@ -49,7 +50,7 @@ Esta actualización consta de dos etapas.
 sudo apt update
 ```
 
-- Actualización de los paquetes propiamente dichos :
+- Actualización de los paquetes propiamente dichos:
 
 ```bash
 sudo apt upgrade
@@ -57,7 +58,7 @@ sudo apt upgrade
 
 Esta operación debe realizarse regularmente para mantener un sistema actualizado.
 
-### Cambiar el puerto de escucha por defecto SSH <a name="changesshport"></a>
+### Cambiar el puerto de escucha SSH por defecto <a name="changesshport"></a>
 
 Una de las primeras acciones que deberá realizar en su servidor es configurar el puerto de escucha del servicio SSH. Por defecto, este se define en el **puerto 22**, por lo que los intentos de hackeo del servidor por parte de robots se dirigirán prioritariamente a este puerto.
 La modificación de este parámetro, en beneficio de un puerto diferente, es una medida sencilla para reforzar la protección de su servidor contra los ataques automatizados.
@@ -71,16 +72,22 @@ Para ello, edite el archivo de configuración del servicio con el editor de text
 Encontrará las siguientes líneas o equivalentes:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Sustituya el número **22** por el número de puerto que desee.<br>
 **Recuerde que no debe indicar un número de puerto que ya esté en uso en su sistema**.
-Para mayor seguridad, utilice un número entre 49152 y 65535.<br>
-Guarde y cierre el archivo de configuración.
+Para mayor seguridad, utilice un número entre 49152 y 65535.<br>Guarde y cierre el archivo de configuración.
 
-Si la línea está "comentada" (es decir, precedida de un "#"), asegúrese de borrar el "#" antes de guardar el archivo para que el cambio surta efecto.
+Si la línea está "comentada" (es decir, precedida de un "#") como en el ejemplo anterior, asegúrese de eliminar el "#" antes de guardar el archivo para que se tenga en cuenta el cambio. Ejemplo:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Reinicie el servicio:
 
@@ -90,67 +97,36 @@ sudo systemctl restart sshd
 
 Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinicie el VPS (`~$ sudo reboot`).
 
+**Para Ubuntu 23.04 y versiones posteriores**
+
+Para las últimas versiones de Ubuntu, la configuración SSH se gestiona ahora en el archivo /ssh.socket`.
+
+Para actualizar el puerto SSH, edite la línea `Listenstream` en el archivo de configuración con un editor de texto de su elección (`nano` utilizado en este ejemplo):
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Guarde los cambios y ejecute los siguientes comandos:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Si ha activado el cortafuegos del sistema operativo, asegúrese de autorizar el nuevo puerto en las reglas del cortafuegos.
+
 Recuerde que deberá indicar el nuevo puerto en cada solicitud de conexión SSH al servidor, por ejemplo:
 
 ```bash
 ssh username@IPv4_of_your_VPS -p NewPortNumber
 ```
 
-### Cambiar la contraseña del usuario root
-
-Le recomendamos encarecidamente que cambie la contraseña del usuario root para evitar que se quede en el valor predeterminado de un nuevo sistema. Para más información, consulte [esta guía](/pages/bare_metal_cloud/virtual_private_servers/root_password).
-
 ### Crear un usuario con permisos restringidos <a name="createuser"></a>
 
-Por lo general, las tareas que no requieran privilegios root deben realizarse a través de un usuario estándar. Para crear un nuevo usuario introduzca el siguiente comando:
-
-```bash
-sudo adduser NombreUsuarioPersonalizado
-```
-
-Introduzca la información solicitada por el sistema: contraseña, nombre, etc.
-
-El nuevo usuario podrá conectarse por SSH. Al establecer una conexión, utilice los datos de identificación especificados.
-
-Una vez que se haya conectado, introduzca el siguiente comando para realizar operaciones que requieran permisos root:
-
-```bash
-su root
-```
-
-Introduzca la contraseña cuando se le pida, y la conexión actual se cambiará al usuario root.
-
-### Desactivar el acceso al servidor a través del usuario root
-
-El usuario root se crea por defecto en los sistemas GNU/Linux. Es el nivel de acceso más alto a un sistema operativo.<br>
-No es recomendable (ni seguro) que solo se pueda acceder al VPS como root, ya que esta cuenta puede realizar operaciones irreversiblemente dañinas.
-
-Le recomendamos que desactive el acceso directo de los usuarios root mediante el protocolo SSH. No olvide crear otro usuario antes de seguir los pasos que se indican a continuación.
-
-Es necesario modificar el archivo de configuración SSH tal y como se explica más arriba:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Identifique la siguiente sección:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Sustituya **yes** por **no** en la línea `PermitRootLogin`.
-
-Reinicie el servicio SSH para que se apliquen los cambios:
-
-```bash
-sudo systemctl restart sshd
-```
-
-A continuación, las conexiones al servidor a través del usuario root (`ssh root@IPv4_of_your_VPS`) serán rechazadas.
+Por lo general, las tareas que no requieran privilegios root deben realizarse a través de un usuario estándar. Para más información, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Configurar el firewall interno (iptables)
 
@@ -177,7 +153,7 @@ sudo apt install fail2ban
 
 Puede personalizar los archivos de configuración Fail2ban para proteger los servicios expuestos a la internet pública contra los intentos de conexión repetidos.
 
-Como recomienda Fail2ban, cree un archivo de configuración local de sus servicios copiando el archivo "jail":
+Como recomienda Fail2ban, cree un archivo de configuración local de sus servicios copiando el archivo "jail.conf":
 
 ```bash
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
@@ -258,6 +234,8 @@ En la [página de producto](https://www.ovhcloud.com/es/vps/options/) y en las [
 [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
 [Configurar el firewall de Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
+[Configurar el firewall de Linux con iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Configurar el firewall de red](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 

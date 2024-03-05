@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2022-03-25
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -27,6 +27,8 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 ### Kundencenter Interface
 
 Der Tab `Start`{.action} enthält wichtige Informationen zu Ihrem Dienst und ermöglicht Ihnen die Durchführung grundlegender Operationen.
+
+![VPS Home](images/vpshome.png){.thumbnail}
 
 #### Ihr VPS <a name="yourvps"></a>
 
@@ -129,7 +131,7 @@ Eine Fortschrittsanzeige für die Installation wird in Ihrem Kundencenter angeze
 
 ### Neustart Ihres VPS <a name="reboot-current-range"></a>
 
-Möglicherweise ist ein Neustart erforderlich, um aktualisierte Konfigurationen anzuwenden oder ein Problem zu beheben. Wenn möglich, führen Sie einen "Soft Reboot" des Servers über die grafische Benutzeroberfläche des Servers oder die Befehlszeile aus:
+Möglicherweise ist ein Neustart erforderlich, um aktualisierte Konfigurationen anzuwenden oder ein Problem zu beheben. Wenn möglich, führen Sie einen "Soft Reboot" des Servers über die grafische Benutzeroberfläche des Servers (Windows, Plesk, etc.) oder die Befehlszeile aus:
 
 ```bash
 sudo reboot
@@ -159,11 +161,15 @@ ssh ubuntu@169.254.10.250
 
 Sie können auch jede Anwendung eines Drittanbieters verwenden, die mit **Open SSH** kompatibel ist.
 
-Nach der Anmeldung können Sie das vordefinierte Kennwort des Standardbenutzers mit folgendem Befehl zu einer komplexen Passphrase ändern:
+Nach der Anmeldung können Sie das vordefinierte Kennwort des aktuellen Benutzers mit folgendem Befehl zu einer Passphrase Iher Wahl ändern:
 
 ```bash
 passwd
 ```
+
+Bei einer GNU/Linux-Distribution werden **bei einer Passworteingabeaufforderung Ihre Tastatureingaben nicht angezeigt**.
+
+Geben Sie Ihr aktuelles Kennwort ein, und drücken Sie `Enter`{.action}. Geben Sie die neue Passphrase ein, und geben Sie sie an der nächsten Eingabeaufforderung erneut ein, um sie zu bestätigen.
 
 ```console
 Changing password for ubuntu.
@@ -173,27 +179,25 @@ Retype new password:
 passwd: password updated successfully
 ```
 
+> [!warning]
+> 
+> **Aktivierung des Benutzer-Accounts "root"**
+>
+> Es ist nicht notwendig, den Nutzeraccount "root" zu verwenden, um mit der Administration Ihres Servers zu beginnen. Dieser Account muss zuerst im Serverbetriebssystem aktiviert werden, damit er verwendet werden kann. Aus Sicherheitsgründen sind außerdem SSH-Verbindungen mit dem Benutzer "root" standardmäßig **deaktiviert**.
+> 
+Sofern nicht anders vermerkt, können alle in unserer Dokumentation beschriebenen administrativen Aktionen mit dem Standardbenutzer-Account durchgeführt werden, d.h., indem Sie `sudo` gefolgt von dem entsprechenden Befehl eingeben. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zum [Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
+
 **Wir empfehlen die folgende Vorgehensweise als nächste Schritte**:
 
 - Um sich besser mit SSH-Verbindungen vertraut zu machen, lesen Sie unsere Anleitung [Einführung in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
-- Ziehen Sie die Verwendung von SSH-Schlüsseln als fortgeschrittene und bequemere Methode für Remoteverbindungen in Betracht. Nutzen Sie dazu unsere Anleitung [SSH-Schlüssel erstellen und verwenden](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+- Ziehen Sie die Verwendung von SSH-Schlüsseln als fortgeschrittene und bequemere Methode für Remote-Verbindungen in Betracht. Nutzen Sie dazu unsere Anleitung [SSH-Schlüssel erstellen und verwenden](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 - Verwenden Sie unsere Anleitung [VPS sichern](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps), um Ihr System vor automatisierten *Brute-Force*-Angriffen und anderen gängigen Bedrohungen zu schützen.
 
 > [!primary]
 >
 Wenn Sie eine **Distribution mit Applikation** (Plesk, cPanel, Docker) ausgewählt haben, gelten die allgemeinen Sicherheitsmaßnahmen möglicherweise nicht uneingeschränkt für Ihr System. Nutzen Sie deshalb unsere Anleitungen [Erste Schritte mit vorinstallierten Anwendungen](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) und [cPanel auf einem VPS installieren](/pages/bare_metal_cloud/virtual_private_servers/cpanel) sowie die offizielle Dokumentation des jeweiligen Herausgebers.
 >
-
-#### Root-Verbindungen aktivieren
-
-> [!warning]
->
-> Der Login als *root* ist standardmäßig aus Sicherheitsgründen deaktiviert. Wenn Sie diese Verbindungen zulassen möchten, folgen Sie den Anweisungen in [dieser Anleitung](/pages/bare_metal_cloud/virtual_private_servers/root_password#enable-root-login).
->
-
-#### Root-Passwort
-
-Detaillierte Informationen zum Ändern des Passworts von *root* finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/virtual_private_servers/root_password).
 
 ### Verbindung mit Ihrem Windows VPS
 

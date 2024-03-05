@@ -25,7 +25,7 @@ Por defecto solo está configurada la IPv4.
 ## Requisitos
 
 * Tener una instancia de Public Cloud.
-* Tener acceso administrativo (root) por SSH o escritorio remoto (Windows) al servidor.
+* Tener acceso administrativo (sudo) por SSH o escritorio remoto (Windows) al servidor.
 * Tener conocimientos básicos de redes.
 * Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 

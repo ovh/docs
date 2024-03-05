@@ -1,7 +1,7 @@
 ---
 title: Configurar um registo DKIM
 excerpt: Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -383,7 +383,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >> <br>
 >>
@@ -398,7 +398,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >>
 > **2.Criar um selecionador**
 >> Agora vai criar um seletor, gerar o seu par de chaves e o registo DNS associado ao nome de domínio.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > Aconselhamos que efetue esta operação duas vezes para cada um dos seletores anteriormente listados. O segundo seletor permitirá que você faça uma mudança de par de chaves quando for necessário. Sugerimos que consulte o nosso caso de utilização "[Como alterar o par de chaves DKIM](#2selectors)".
@@ -848,7 +848,7 @@ Eis os 4 estados que têm por resultado o ícone DKIM a vermelho na sua Área de
  - `ready`: os registos DNS estão presentes na zona. O DKIM pode agora ser ativado. Basta que ative o seletor recorrendo à secção "[Ativar ou alterar um seletor DKIM](#enable-switch)".
  - `deleting`: o DKIM está em curso de eliminação. Após a eliminação, deverá seguir a secção "[Configuração completa do DKIM](#firststep)".
  - `disabling`: o DKIM está em curso de desativação. Após esta operação, poderá ativar o seletor recorrendo à secção "[Ativar ou alterar um seletor DKIM](#enable-switch)".
- - `todo`: a tarefa foi inicializada e deverá iniciar-se. Acima das 24 horas, se o seletor ainda estiver nesse estado, convidamo-lo a abrir um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_cases_requests) especificando o número do seletor em causa.
+ - `todo`: a tarefa foi inicializada e deverá iniciar-se. Acima das 24 horas, se o seletor ainda estiver nesse estado, convidamo-lo a abrir um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_get_help) especificando o número do seletor em causa.
 
 ## Saiba mais
 

@@ -37,7 +37,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 In the `General information` tab, you will find the access link to phpMyAdmin in the **“Database administration”** box, under “User interface”.
 
-![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/database-administration.png){.thumbnail}
 
 You will land on the phpMyAdmin login page.
 
@@ -104,7 +104,7 @@ mysql --host=server --user=username --port=port --password=password database_nam
 
 - Launch SQuirreL and click `Aliases`{.action}, then `+`{.action}
 
-![launch SQuirreL](images/1.png){.thumbnail}
+![launch SQuirreL](images/aliases.png){.thumbnail}
 
 - Fill in the fields below and confirm by clicking `OK`{.action}:
     - **Name**: Select a name.
@@ -113,15 +113,15 @@ mysql --host=server --user=username --port=port --password=password database_nam
     - **User Name**: Enter the username.
     - **Password**: Enter the password.
 
-![config connection](images/2.png){.thumbnail}
+![config connection](images/add-alias.png){.thumbnail}
 
 - Confirm again with the `Connect`{.action} button.
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 You are now connected to your database.
 
-![config connection](images/4.PNG){.thumbnail}
+![config connection](images/general-dashboard.png){.thumbnail}
 
 ##### 4\. Connecting with phpMyAdmin
 
@@ -159,7 +159,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 - Launch SQuirreL and click `Aliases`{.action}, then `+`{.action}
 
-![launch SQuirreL](images/1.png){.thumbnail}
+![launch SQuirreL](images/aliases.png){.thumbnail}
 
 - Fill in the fields below and confirm by clicking `OK`{.action}:
     - **Name**: Select a name.
@@ -168,15 +168,15 @@ psql --host=server --port=port --user=username --password=password database_name
     - **User Name**: Enter the username.
     - **Password**: Enter the password.
 
-![config connection](images/2.png){.thumbnail}
+![config connection](images/add-alias.png){.thumbnail}
 
 - Confirm again with the `Connect`{.action} button.
 
-![valid connection](images/3.png){.thumbnail}
+![valid connection](images/connect-to-mysql.png){.thumbnail}
 
 You are now connected to your database.
 
-![config connection](images/4.PNG){.thumbnail}
+![config connection](images/general-dashboard.png){.thumbnail}
 
 ## Go further
 

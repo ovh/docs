@@ -100,6 +100,9 @@ En ese caso, utilice el siguiente comando y vuelva a intentar montar la particiÃ
 
 ```bash
 ntfsfix /dev/sda4
+```
+
+```bash
 mount /dev/sda4 /mnt
 ```
 

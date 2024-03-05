@@ -14,18 +14,9 @@ Die Aktivierung der Intel Software Guard Extensions (SGX) auf Ihrem Server erlau
 
 ## Voraussetzungen
 
-- Sie haben einen Dedicated Server aus der Reihe [Infrastruktur](https://www.ovhcloud.com/de/bare-metal/infra/) oder [Advance](https://www.ovhcloud.com/de/bare-metal/advance/) mit der Option [SGX](https://www.ovhcloud.com/de/bare-metal/intel-software-guard-extensions/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) / die [OVHcloud API](https://api.ovh.com/).
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH.
-
-> [!warning]
->
-> Von der Advance Reihe sind nur die folgenden Server mit Intel CPU mit der Intel SGX Technologie kompatibel:
->
-> - Advance-1
-> - Advance-2
-> - Advance-6
-> - Advance-APAC
+- Sie haben einen Dedicated Server kompatibel mit der Option [SGX](https://www.ovhcloud.com/de/bare-metal/intel-software-guard-extensions/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder die [OVHcloud API](https://api.ovh.com/).
+- Sie verfügen über die Zugangsdaten, die Sie nach der Installation per E-Mail erhalten haben.
 
 ## In der praktischen Anwendung
 
@@ -47,7 +38,7 @@ Sie können SGX mit einer bestimmten reservierten Speichermenge aktivieren oder 
 
 ![SGX Aktivierung](images/manage_sgx.png){.thumbnail}
 
-Es erscheint ein Fenster, um zu bestätigen, dass die Aktivierung der Intel SGX Technologie einen Neustart Ihres Servers erfordert.
+Es erscheint ein Fenster, um zu bestätigen, dass die Aktivierung von Intel SGX einen Neustart Ihres Servers erfordert.
 
 ![SGX Aktivierung](images/confirmation-popup_sgx.png){.thumbnail}
 
