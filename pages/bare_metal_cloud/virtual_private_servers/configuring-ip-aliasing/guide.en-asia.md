@@ -16,9 +16,9 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 **This guide explains how to add Additional IP addresses to your network configuration.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/ if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/ if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
@@ -49,19 +49,36 @@ Concerning different distribution releases, please note that the proper procedur
 
 #### Step 1: Disable automatic network configuration
 
-Open the following file path with a text editor:
+Open the following file path with a text editor, in our example, we are using `nano`.
 
 ```bash
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
 Enter the following line, then save and exit the editor.
 
-```bash
+```console
 network: {config: disabled}
 ```
 Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
 #### Step 2: Edit the network configuration file
+
+By default, the network configuration file is located in the folder `/etc/network/interfaces.d`. We recommend that you start by backing up the relevant configuration file. 
+
+#### Step 1: Create a backup
+
+In our example, our file is called `50-cloud-init`, so we make a copy of the `50-cloud-init` file using the following command:
+
+```bash
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+
+In case of a mistake, you will be able to revert the changes, using the commands below:
+
+```bash
+sudo rm -f /etc/network/interfaces.d/50-cloud-init
+sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
+```
 
 You can verify your network interface name with this command:
 
@@ -74,7 +91,11 @@ Open the network configuration file for editing with the following command:
 ```bash
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
-Then add the following lines:
+
+To configure your Additional IP, you need to add a virtual interface or ethernet alias to your network interface. In our example, our interface is called `eth0`, so our  first alias is `eth0:0`. Do this for each Additional IP you wish to configure.
+
+Do not modify the existing lines in the configuration file, simply add your Additional IP to the file as follows, replacing `ADDITIONAL_IP` as well as the virtual interface (if your server is not using **eth0**) wih your own values:
+
 
 ```bash
 auto NETWORK_INTERFACE:ID
