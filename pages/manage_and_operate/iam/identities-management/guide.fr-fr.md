@@ -1,12 +1,12 @@
 ---
-title: "Gestion des identités pour l'interaction au sein d'un compte OVHcloud"
-excerpt: "Description des différents types d'identités permettant d'interagir avec un produit OVHcloud"
+title: "Présentation des identités pouvant interagir au sein d'un compte OVHcloud"
+excerpt: "Découvrez les différents types d'identités permettant d'interagir avec un produit OVHcloud"
 updated: 2024-03-05
 ---
 
 ## Objectif
 
-L'objectif de ce guide est de présenter les différentqs types d'identités pouvant être gérées dans le compte OVHcloud.
+L'objectif de ce guide est de présenter les différents types d'identités pouvant être gérées dans le compte OVHcloud.
 
 ## Prérequis
 
