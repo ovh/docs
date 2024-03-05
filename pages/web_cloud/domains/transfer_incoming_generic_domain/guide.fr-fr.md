@@ -84,7 +84,7 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 > Une fois votre nom de domaine déverrouillé, vous aurez sept (7) jours pour effectuer le transfert vers OVHcloud. Après cette période, votre nom de domaine sera verrouillé automatiquement si vous ne soumettez pas de demande de modification de bureau d'enregistrement de nom de domaine.
 >
 
-### Étape 3 : demander un transfert de nom de domaine vers OVHcloud<a name="step3"></a>
+### Étape 3 : demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
 
 Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
@@ -123,7 +123,7 @@ Une fois la commande validée, vous recevrez un bon de commande. Le processus de
 >
 > Si le code de transfert n'a pas été saisi lors de la commande, vous pourrez le renseigner depuis la fenêtre `Opérations en cours`{.action} et ainsi valider le transfert.
 
-### Étape 4 : validation du transfert par le bureau d'enregistrement actuel<a name="step4"></a>
+### Étape 4 : validation du transfert par le bureau d'enregistrement actuel <a name="step4"></a>
 
 Une fois la commande et le code de transfert validés, le bureau d'enregistrement du nom de domaine actuel (qui n'est toujours pas OVHcloud) recevra une demande de validation. À ce stade, plusieurs résultats sont possibles, selon les actions entreprises.
 

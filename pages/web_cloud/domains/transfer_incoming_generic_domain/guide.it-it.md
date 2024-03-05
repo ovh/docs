@@ -52,10 +52,10 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 |Step|Descrizione|Soggetti coinvolti|Dove|Campo obbligatorio|
 |---|---|---|---|---|
-|1|Verifica delle informazioni associate al dominio|L'amministratore del dominio|Il Registrar attuale|In base alle azioni effettuate|
-|2|Sblocco del dominio e recupero del codice di trasferimento|L'amministratore del dominio, con l'autorizzazione del proprietario|Il Registrar attuale|In base alle azioni effettuate|
-|3|Trasferimento di un dominio|Chiunque sia in possesso del codice di trasferimento, anche con il permesso del proprietario|Con il nuovo Registrar (ad esempio, OVHcloud)|In base alle azioni effettuate|
-|4|Conferma del trasferimento|Il Registrar attuale|Tramite una richiesta da parte del Registro che gestisce l’estensione del dominio|Massimo cinque giorni|
+|[1](#step1)|[Verifica delle informazioni associate al dominio|L'amministratore del dominio|Il Registrar attuale|In base alle azioni effettuate|
+|[2](#step2)|[Sblocco del dominio e recupero del codice di trasferimento|L'amministratore del dominio, con l'autorizzazione del proprietario|Il Registrar attuale|In base alle azioni effettuate|
+|[3](#step3)|[Trasferimento di un dominio|Chiunque sia in possesso del codice di trasferimento, anche con il permesso del proprietario|Con il nuovo Registrar (ad esempio, OVHcloud)|In base alle azioni effettuate|
+|[4](#step4)|[Conferma del trasferimento|Il Registrar attuale|Tramite una richiesta da parte del Registro che gestisce l’estensione del dominio|Massimo cinque giorni|
 
 > [!warning]
 >

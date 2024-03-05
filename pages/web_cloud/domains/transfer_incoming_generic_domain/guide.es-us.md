@@ -52,10 +52,10 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 |Etapa|Descripción|Quién realiza la acción|Dónde|Plazo|
 |---|---|---|---|---|
-|1|Comprobar la información relativa al dominio|El administrador del dominio|En el actual agente registrador|-|
-|2|Desbloquear el dominio y obtener el código de transferencia|El administrador del dominio, con la autorización del propietario|En el actual agente registrador|-|
-|3|Solicitar la transferencia del dominio|Cualquiera que posea el código de transferencia, también con el permiso del propietario|Con el nuevo agente registrador (por ejemplo, OVHcloud)|-|
-|4|Validación de la transferencia|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
+|[1](#step1)|[Comprobar la información relativa al dominio|El administrador del dominio|En el actual agente registrador|-|
+|[2](#step2)|[Desbloquear el dominio y obtener el código de transferencia|El administrador del dominio, con la autorización del propietario|En el actual agente registrador|-|
+|[3](#step3)|[Solicitar la transferencia del dominio|Cualquiera que posea el código de transferencia, también con el permiso del propietario|Con el nuevo agente registrador (por ejemplo, OVHcloud)|-|
+|[4](#step4)|[Validación de la transferencia|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
 
 > [!warning]
 >

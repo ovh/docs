@@ -52,10 +52,10 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 |Etapa|Descrição|Quem está envolvido?|Onde?|Prazo|
 |---|---|---|---|---|
-|1|Verificar a informação relativa ao domínio|O administrador do domínio|O agente registador atual|Depende das suas ações|
-|2|Desbloquear o domínio e obter o código de transferência|O administrador do domínio, com a autorização do proprietário|O agente registador atual|Depende das suas ações|
-|3|Solicitar a transferência do domínio|Qualquer pessoa que possua o código de transferência, com a autorização do proprietário|Com o novo agente de registo (por exemplo, a OVHcloud)|Depende das suas ações|
-|4|Validação da transferência|O agente registador atual|Através de um pedido enviado pela entidade que gere a extensão do domínio|5 dias, no máximo|
+|[1](#step1)|[Verificar a informação relativa ao domínio|O administrador do domínio|O agente registador atual|Depende das suas ações|
+|[2](#step2)|[Desbloquear o domínio e obter o código de transferência|O administrador do domínio, com a autorização do proprietário|O agente registador atual|Depende das suas ações|
+|[3](#step3)|[Solicitar a transferência do domínio|Qualquer pessoa que possua o código de transferência, com a autorização do proprietário|Com o novo agente de registo (por exemplo, a OVHcloud)|Depende das suas ações|
+|[4](#step4)|[Validação da transferência|O agente registador atual|Através de um pedido enviado pela entidade que gere a extensão do domínio|5 dias, no máximo|
 
 > [!warning]
 >

@@ -51,10 +51,10 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 |Schritt|Beschreibung|Wer ist betroffen?|Wo?|Dauer|
 |---|---|---|---|---|
-|1|Domaininformationen überprüfen|Administrator des Domainnamens|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
-|2|Domainname entsperren und Transfer-Code beantragen|Der Administrator des Domainnamens mit Genehmigung des Inhabers|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
-|3|Domaintransfer beantragen|Jede Person, die den Transfer-Code sowie die Genehmigung des Inhabers hat|Beim neuen Registrar (OVHcloud)|Entsprechend Ihrem Vorgehen|
-|4|Transfer bestätigen|Ihr aktueller Registrar|Via Anfrage der Organisation, die Ihre Domainendung verwaltet|Maximal fünf Tage|
+|[1](#step1)|[Domaininformationen überprüfen|Administrator des Domainnamens|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
+|[2](#step2)|[Domainname entsperren und Transfer-Code beantragen|Der Administrator des Domainnamens mit Genehmigung des Inhabers|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
+|[3](#step3)|[Domaintransfer beantragen|Jede Person, die den Transfer-Code sowie die Genehmigung des Inhabers hat|Beim neuen Registrar (OVHcloud)|Entsprechend Ihrem Vorgehen|
+|[4](#step4)|[Transfer bestätigen|Ihr aktueller Registrar|Via Anfrage der Organisation, die Ihre Domainendung verwaltet|Maximal fünf Tage|
 
 > [!warning]
 >
