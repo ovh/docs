@@ -99,6 +99,8 @@ Cliquez sur le bouton `Connexion SSO`{.action}.
 
 Renseignez les métadonnées XML de votre service Google Workspace. Complétez le champ « Nom d'attribut de groupe » avec la valeur `Group`. Cliquez sur `Confirmer`{.action}.
 
+Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
+
 ![OVHcloud connexion SSO étape 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Vous devez maintenant retrouver votre Google Workspace en tant que fournisseur d'identité, ainsi que les groupes par défaut.
@@ -158,6 +160,8 @@ Vous pourrez ensuite vérifier que le groupe est ajouté à votre compte OVHclou
 
 Lorsque vous vous connecterez par la suite avec un utilisateur du group **Intern**, votre compte OVHcloud reconnaîtra que l'utilisateur a le rôle « UNPRIVILEGED » spécifié par son groupe.
 
+Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
+
 Vous pourrez ensuite vous déconnecter de votre compte et vous reconnecter avec votre Google Workspace en tant que fournisseur d'identité.
 
 ### Connexion via SSO
@@ -183,5 +187,7 @@ Vous êtes maintenant connecté avec le même identifiant client, mais via votre
 [Définition et gestion du mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Créer des politiques d'accès IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
