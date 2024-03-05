@@ -168,7 +168,6 @@
             + [Hot-swapping a disk on a server with a software RAID configuration](bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
             + [Configuring MegaRAID for RAID Level 0](bare_metal_cloud/dedicated_servers/megaraid_config)
             + [Configuring the storage on a HGR-STOR-2 server](bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
-            + [Choosing the disk group to install an operating system](bare_metal_cloud/dedicated_servers/install_hybrid)
             + [Dedicated Servers - ESXi Partitioning](bare_metal_cloud/dedicated_servers/esxi-partitioning)
             + [Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware](bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
         + [Network and IP management](bare-metal-cloud-dedicated-servers-network-and-ip-management)
