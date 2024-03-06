@@ -97,7 +97,7 @@ The configuration example below is based on Debian 11 (Bullseye).
 #### Step 1: Connect to your server via SSH
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Create a backup
@@ -105,7 +105,7 @@ The configuration example below is based on Debian 11 (Bullseye).
 Your server's network configuration file is located in `/etc/network/interfaces.d`. In our example, it is called `50-cloud-init`. Before proceeding, create a backup of your file using one of the following commands:
 
 ```sh
-~# sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
 #### Step 3: Amend the network configuration file
@@ -193,7 +193,7 @@ iface eth0 inet6 static
 Save your changes to the file and then restart the network or reboot your server to apply the changes.
 
 ```sh
-~# sudo /etc/init.d/networking restart
+sudo /etc/init.d/networking restart
 ```
 
 #### Step 5: Test the IPv6 connectivity
@@ -227,7 +227,7 @@ In this example, our file is called `cloud-init-eno1.nmconnection`.
 #### Step 1: Use SSH to connect to your server
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Create a backup
@@ -240,7 +240,7 @@ In this example, our file is called `cloud-init-eno1.nmconnection`.
 First, make a copy of the configuration file, so that you can revert at any time:
 
 ```sh
-~# sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
 #### Step 3: Amend the network configuration file
@@ -271,7 +271,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 **Configuration example:**
 
 ```sh
-~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
 Next, we amend the configuration file:
@@ -302,14 +302,14 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 Save your changes to the file and then restart the network or reboot your server to apply the changes.
 
 ```sh
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 #### Step 5: Test the IPv6 connectivity
 
 You can test the IPv6 connectivity by running the commands shown below:
 
-```console
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -334,7 +334,7 @@ The network configuration files are located in the directory `/etc/netplan/`. By
 #### Step 1: Use SSH to connect to your server
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Create the network configuration file
@@ -344,7 +344,7 @@ The best approach is to create a separate configuration file with a .yaml extens
 In our example, our file is named `51-cloud-init-ipv6.yaml`:
 
 ```sh
-~# sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
+sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 #### Step 3: Amend the network configuration file
@@ -389,7 +389,7 @@ network:
 **Configuration example:**
 
 ```sh
-~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 Next, we amend the configuration file:
@@ -427,20 +427,20 @@ network:
 You can test your configuration using this command:
 
 ```sh
-~# sudo netplan try
+sudo netplan try
 ```
 
 If it is correct, apply it using the following command:
 
 ```sh
-~# sudo netplan apply
+sudo netplan apply
 ```
 
 #### Step 5: Test the IPv6 connectivity
 
 You can test the IPv6 connectivity by running the command shown below:
 
-```console
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -454,7 +454,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
-### CentOS 7, AlmaLinux (8 & 9) and Rocky Linux (8 & 9)
+### CentOS 7, Alma Linux (8 & 9) and Rocky Linux (8 & 9)
 
 The configuration example below is based on CentOS 7.
 
@@ -463,7 +463,7 @@ The network configuration file is located in the directory `/etc/sysconfig/netwo
 #### Step 1: Use SSH to connect to your server
 
 ```sh
-~# ssh user@serverIP
+ssh user@serverIP
 ```
 
 #### Step 2: Create a backup
@@ -476,7 +476,7 @@ The network configuration file is located in the directory `/etc/sysconfig/netwo
 First, make a copy of the configuration file, so that you can revert at any time:
 
 ```sh
-~# sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+sudo cp -r /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
 ```
 
 #### Step 3: Amend the network configuration file
@@ -489,7 +489,7 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-For Alma and Rocky linux, the contents of the configuration file may differ from that shown above, in which case simply add the missing items. Do not replace anything in the original file.
+For Alma Linux and Rocky linux, the contents of the configuration file may differ from that shown above, in which case simply add the missing items. Do not replace anything in the original file.
 
 If you need to configure multiple IPv6 addresses, add the following line:
 
@@ -500,7 +500,7 @@ IPV6ADDR_SECONDARIES="ADDITIONAL_IPV6_1/IPV6_PREFIX ADDITIONAL_IPV6_2/IPV6_PREFI
 **Configuration example:**
 
 ```sh
-~# sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 Next, we amend the configuration file:
@@ -525,13 +525,13 @@ IPV6ADDR_SECONDARIES="2607:5300:adce:f2cd::1/64 2607:5300:adce:f2cd::2/64"
 Save your changes to the file and then restart the network with one of the following commands:
 
 ```sh
-~# sudo systemctl restart network
+sudo systemctl restart network
 ```
 
 **For AlmaLinux and Rocky Linux**
 
 ```sh
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 You can also reboot your server to apply the changes.
@@ -540,7 +540,7 @@ You can also reboot your server to apply the changes.
 
 You can test the IPv6 connectivity by running the command shown below:
 
-```console
+```sh
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
