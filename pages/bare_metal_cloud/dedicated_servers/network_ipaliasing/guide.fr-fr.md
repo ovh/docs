@@ -62,14 +62,14 @@ Par défaut, le fichier de configuration est situé dans `/etc/network/interface
 Dans notre exemple, notre fichier s'appelle `50-cloud-init`, nous copions donc le fichier `50-cloud-init` en utilisant la commande suivante :
 
 ```bash
-~# sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
 En cas d'erreur, vous pourrez alors revenir en arrière grâce aux commandes ci-dessous :
 
 ```bash
-~# sudo rm -f /etc/network/interfaces.d/50-cloud-init
-~# sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
+sudo rm -f /etc/network/interfaces.d/50-cloud-init
+sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 ```
 
 #### Étape 2 : éditer le fichier de configuration
@@ -81,7 +81,7 @@ En cas d'erreur, vous pourrez alors revenir en arrière grâce aux commandes ci-
 Vous pouvez désormais modifier le fichier de configuration :
 
 ```bash
-~# sudo nano /etc/network/interfaces.d/50-cloud-init
+sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
 Vous devez ensuite ajouter une interface virtuelle ou un alias ethernet. Dans notre exemple, notre interface s'appelle `eth0`, donc notre alias est `eth0:0`. Faites ceci pour chaque adresse Additional IP que vous souhaitez configurer.
@@ -164,7 +164,7 @@ pre-down /sbin/ifconfig eth0:0 down
 Pour redémarrer l'interface, utilisez la commande suivante :
 
 ```bash
-~# sudo /etc/init.d/networking restart
+sudo /etc/init.d/networking restart
 ```
 
 ### Fedora 36 et versions ultérieures
@@ -183,13 +183,13 @@ Le ifcfg étant à présent déprécié, NetworkManager ne crée plus par défau
 Il est recommandé de commencer par sauvegarder le fichier de configuration correspondant. Dans notre exemple, notre fichier de configuration s'appelle `cloud-init-eno1.nmconnection` :
 
 ```bash
-~# sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 En cas d'erreur, vous pourrez alors revenir en arrière grâce aux commandes ci-dessous :
 
 ```bash
-~# sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
-~# sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
 #### Étape 2 : éditer le fichier de configuration
@@ -201,17 +201,17 @@ En cas d'erreur, vous pourrez alors revenir en arrière grâce aux commandes ci-
 Pour obtenir le nom de votre interface réseau afin d'éditer le fichier réseau approprié, vous pouvez exécuter l'une des commandes suivantes :
 
 ```bash
-~# ip a
+ip a
 ```
 
 ```bash
-~# nmcli connection show
+nmcli connection show
 ```
 
 Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez votre Additional IP dans le fichier comme suit, en remplaçant `ADDITIONAL_IP/32` par vos propres valeurs :
 
 ```bash
-~# sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
 ```console
@@ -244,7 +244,7 @@ address1=169.254.10.254/32
 Vous devez maintenant redémarrer votre interface :
 
 ```bash
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 ### Debian 12, Ubuntu 20.04 et versions suivantes
@@ -256,7 +256,7 @@ La meilleure approche consiste à créer un fichier de configuration séparé po
 #### Étape 1 : déterminer l’interface
 
 ```bash
-~# ip a
+ip a
 ```
 
 Notez le nom de l'interface (celle sur laquelle est configurée l'adresse IP principale de votre serveur).
@@ -266,7 +266,7 @@ Notez le nom de l'interface (celle sur laquelle est configurée l'adresse IP pri
 Ensuite, créez un fichier de configuration avec une extension `.yaml`. Dans notre exemple, notre fichier s'appelle `51-cloud-init.yaml`.
 
 ```bash
-~# sudo nano /etc/netplan/51-cloud-init.yaml
+sudo nano /etc/netplan/51-cloud-init.yaml
 ```
 
 Ensuite, éditez le fichier avec le contenu ci-dessous, en remplaçant `INTERFACE_NAME` et `ADDITIONAL_IP` par vos propres valeurs :
@@ -317,7 +317,7 @@ network:
 Enregistrez et fermez le fichier. Vous pouvez tester la configuration avec la commande suivante :
 
 ```bash
-~# sudo netplan try
+sudo netplan try
 ```
 
 #### Étape 3 : appliquer la configuration
@@ -325,13 +325,13 @@ Enregistrez et fermez le fichier. Vous pouvez tester la configuration avec la co
 Si elle est correcte, appliquez-la à l'aide de la commande suivante :
 
 ```bash
-~# sudo netplan apply
+sudo netplan apply
 ```
 
 > [!primary]
 > Lors de l'utilisation de la commande `netplan try`, il est possible que le système renvoie un message d'avertissement tel que `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Cela signifie simplement que le fichier n'a pas de permissions restrictives. Cela n'affecte pas la configuration de votre Additional IP. Pour plus d'informations sur les permissions de fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### CentOS 7, Alma Linux (8 & 9), Rocky Linux (8 & 9)
 
 Le fichier de configuration principal se trouve dans `/etc/sysconfig/network-scripts/`. Dans notre exemple, il est appelé `ifcfg-eth0`. Avant d'apporter des modifications, vérifiez le nom de fichier réel dans ce dossier.
 
@@ -340,7 +340,7 @@ Pour chaque Additional IP à configurer, nous créons un fichier de configuratio
 #### Étape 1 : déterminer l'interface
 
 ```bash
-~# ip a
+ip a
 ```
 
 Notez le nom de l'interface (celle sur laquelle l'adresse IP principale de votre serveur est configurée).
@@ -350,7 +350,7 @@ Notez le nom de l'interface (celle sur laquelle l'adresse IP principale de votre
 Commencez par créer le fichier de configuration. Remplacez `NETWORK_INTERFACE:ID` par vos propres valeurs.
 
 ```bash
-~# sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
 ```
 
 Ensuite, modifiez le fichier avec le contenu ci-dessous, en remplaçant `NETWORK_INTERFACE:ID` et `ADDITIONAL_IP` par vos propres valeurs :
@@ -380,13 +380,13 @@ BROADCAST=169.254.10.254
 Redémarrez ensuite votre interface alias. Remplacez `eth0:0` par vos propres valeurs :
 
 ```bash
-~# ifup eth0:0
+ifup eth0:0
 ```
 
-#### Pour AlmaLinux et Rocky Linux
+#### Pour Alma Linux et Rocky Linux
 
 ```bash
-~# sudo systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 ### cPanel (sur CentOS 7)
