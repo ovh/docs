@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Utilizzare la webmail Zimbra"
 excerpt: "Scopri l'interfaccia della Webmail Zimbra per i tuoi indirizzi email MX Plan di OVHcloud"
-updated: 2024-02-28
+updated: 2024-03-06
 ---
 
 > [!primary]
@@ -157,7 +157,7 @@ Selezionando un’email sono disponibili numerose azioni:
     - **Contrassegna come non letto**.
     - **Stella**: assegna una stella alla tua email per evidenziarla e identificarla più facilmente.
     - **Elimina stella** : rimuovi la stella assegnata a questa email.
-    - **Blocca** : visualizza l’email nella sua forma non elaborata con l’intestazione.
+    - **Blocca** : blocca le email provenienti dal mittente e/o elimina tutte le email esistenti provenienti da questo mittente.
     - **Mostra originale** : Visualizzare l'intero messaggio, corpo e intestazione.
     - **Nuovo filtro** : crea un filtro dal mittente e dall'oggetto del messaggio selezionato.
     - **Stampa** : stampa la conversazione o l'email selezionata.
@@ -181,7 +181,7 @@ Per trovare un’email, utilizza la barra di ricerca nella parte superiore dell�
 >>
 >> Digitare la parola o le parole chiave che si desidera trovare nella barra di ricerca e premere `Invio` per confermare la ricerca. La parola o le parole verranno evidenziate nei risultati.
 >>
->> > Se si sa dove cercare l'elemento, è possibile immettere parole chiave ( **from**, **to**, **cc**, **subject** e così via) seguite da due punti (`:`) e cercare l'elemento nella casella di testo di ricerca. Ad esempio, se si desidera cercare rapidamente un mittente, è possibile digitare from: prima dell'indirizzo di posta elettronica che si sta cercando. Ad esempio from: address@esempio.com.
+>> > Se si sa dove cercare l'elemento, è possibile immettere parole chiave ( **from**, **to**, **cc**, **subject** e così via) seguite da due punti (`:`) e cercare l'elemento nella casella di testo di ricerca. Ad esempio, se si desidera cercare rapidamente un mittente, è possibile digitare from: prima dell'indirizzo di posta elettronica che si sta cercando. Ad esempio "from: address@example.com".
 >>
 >> ![Zimbra - ricerca semplice](images/zimbra-08.png){.thumbnail}
 >>
@@ -337,7 +337,7 @@ Per creare un nuovo elenco, fare clic nel riquadro `Nuovo elenco` nella parte in
 
 Per assegnare un contatto a uno degli elenchi, selezionare il contatto nella colonna centrale e quindi nella finestra visualizzata a destra fare clic su `Assegna a elenchi`{.action}. Seleziona la lista o le liste che vuoi assegnare al contatto. In alternativa, digitare il nome di un nuovo elenco e fare clic su `Aggiungi`{.action}.
 
-![Zimbra - listes](images/zimbra-list.png){.thumbnail}
+![Zimbra - elenchi](images/zimbra-list.png){.thumbnail}
 
 #### Importare/Esportare Contatti <a name="import-export"></a>
 

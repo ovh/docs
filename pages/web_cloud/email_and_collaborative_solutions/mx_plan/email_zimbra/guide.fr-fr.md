@@ -405,7 +405,7 @@ En fonction du champ de comparaison désigné précédemment, l'opérateur de co
 
 > **Utilisation de caractères joker dans les filtres**
 >
-> Les caractères joker, caractères générique ou encore appelés « wildcard » peuvent être utilisés dans le champ de saisie pour la comparaison qui utilisent l’opérateur de comparaison « **Correspond aux caractères joker / Ne correspond pas aux caractères joker** ». Les deux caractères génériques sont `*` et `?`.
+> Les caractères joker, caractères génériques ou encore appelés « wildcard » peuvent être utilisés dans le champ de saisie pour la comparaison qui utilisent l’opérateur de comparaison « **Correspond aux caractères joker / Ne correspond pas aux caractères joker** ». Les deux caractères génériques sont `*` et `?`.
 >
 > - L'astérisque `*` est un espace réservé pour zéro ou plusieurs caractères de n'importe quel type.<br><br> Par exemple, pour la chaîne de recherche « maison\*bleue », elle renverrait les correspondances « maison bleue », « maisons » ou encore « maison en bois bleue ». Cependant, il ne renverrait pas « super-maison en bois bleue ». <br><br> Autre exemple de chaîne de recherche « p\*maison » qui renverrait les correspondances « petite maison », « partir de sa maison ». Cependant, il ne renverrait pas « prêter sa maison à un ami ».
 >
