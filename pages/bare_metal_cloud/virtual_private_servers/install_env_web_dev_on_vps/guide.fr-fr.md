@@ -18,8 +18,6 @@ Si vous souhaitez créer un site web sur votre VPS OVHcloud, vous devez au préa
 
 - Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
-- Disposer d'un nom de domaine enregistré chez OVHcloud.
-
 
 ## En pratique
 
@@ -41,7 +39,7 @@ Pour vérifier que PHP est bien installé :
 
 Si PHP est bien installé, un message de ce type doit apparaître :
 
-![hosting](images/result_php_v.png){.thumbnail}
+![env dev web](images/result_php_v.png){.thumbnail}
 
 ### Installer un serveur web
 
@@ -64,7 +62,7 @@ Pour vérifier que Nginx est bien installé :
 
 Si Nginx est bien installé, un message de ce type doit apparaître :
 
-![hosting](images/result_nginx_v.png){.thumbnail}
+![env dev web](images/result_nginx_v.png){.thumbnail}
 
 N'hésitez pas à consulter le [site officiel de Nginx](https://www.nginx.com/) si vous avez des questions.
 
@@ -89,7 +87,7 @@ Sécurisez et configurez MariaDB :
 
 Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écran. Une fois terminé, le message suivant doit s'afficher :
 
-![hosting](images/success_msg_mariadb.png){.thumbnail}
+![env dev web](images/success_msg_mariadb.png){.thumbnail}
 
 ### Conclusion
 
