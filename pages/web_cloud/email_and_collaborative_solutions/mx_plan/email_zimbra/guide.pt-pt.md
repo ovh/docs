@@ -157,7 +157,7 @@ Quando seleciona um e-mail, muitas ações ficam disponíveis:
     - **Marcar item como não lida**.
     - **Marcar com estrela**: Atribuir uma estrela ao seu e-mail para o destacar e identificar mais facilmente.
     - **Limpar estrela**: remover a estrela atribuída a este e-mail.
-    - **Bloquear**: mostrar o e-mail na sua forma bruta com o cabeçalho.
+    - **Bloquear**: bloquear o correio eletrónico com origem no remetente e/ou eliminar o correio eletrónico existente com origem nesse remetente.
     - **Mostrar original**: Exibir a mensagem inteira, corpo e cabeçalho.
     - **Novo filtro**: Criar um filtro a partir do remetente e do assumpto da mensagem selecionada.
     - **Imprimir**: imprimir a conversa ou o e-mail selecionado.
