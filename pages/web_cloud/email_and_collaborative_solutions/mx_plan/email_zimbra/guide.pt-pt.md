@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Utilizar o webmail Zimbra"
 excerpt: "Descubra a interface do webmail Zimbra para os endereços de e-mail MX Plan da OVHcloud"
-updated: 2024-02-28
+updated: 2024-03-06
 ---
 
 > [!primary]
@@ -32,7 +32,7 @@ A OVHcloud fornece um serviço de webmail chamado Zimbra para aceder a uma conta
 ## Requisitos
 
 - Dispor de uma solução de e-mail OVHcloud **MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/), ou encomendada separadamente como solução autónoma.
-- Ter acesso às informações de início de sessão do endereço de e-mail MX Plan que pretende consultar. Para mais informações, consulte o nosso guia « [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) ».
+- Ter acesso às informações de início de sessão do endereço de e-mail MX Plan que pretende consultar. Para mais informações, consulte o nosso guia "[Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
 
 ## Instruções
 
@@ -61,7 +61,7 @@ A OVHcloud fornece um serviço de webmail chamado Zimbra para aceder a uma conta
 
 ### Aceder ao webmail Zimbra <a name="login"></a>
 
-Aceda à página <https://www.ovh.com/pt/mail/>. Introduza o endereço de correio eletrónico e a palavra-passe e, em seguida, clique em `Enviar` {.action}.
+Aceda à página <https://www.ovh.com/pt/mail/>. Introduza o endereço de correio eletrónico e a palavra-passe e, em seguida, clique em `Enviar`{.action}.
 
 ![Zimbra - ligação](images/ovhcloud-login-webmail.png){.thumbnail}
 
@@ -129,7 +129,7 @@ Também pode criar uma sub-pasta clicando com o botão direito do rato na pasta 
 
 > [!primary]
 >
-> As pastas « Rascunhos », « Spam » e « Lixo » não podem conter subpastas.
+> As pastas "Rascunhos", "Spam" e "Lixo" não podem conter subpastas.
 
 ### Tratamento dos e-mails <a name="email-management"></a>
 
@@ -146,20 +146,20 @@ Quando seleciona uma pasta ou subpasta, na coluna da esquerda, é apresentada um
 Quando seleciona um e-mail, muitas ações ficam disponíveis:
 
 - 1.**Responder**: responder diretamente ao remetente.
-- 2.**Responder a todos** : responder diretamente a todos os destinatários presentes nos campos « A » e « Cópia ».
-- 3.**Reencaminhar** : transferir o e-mail selecionado para um ou vários destinatários.
-- 4.**Arquivo** : mover o e-mail para a pasta « Arquivo » da sua conta de e-mail.
-- 5.**Mover** : mover o e-mail para uma das pastas da conta de e-mail.
-- 6.**Delete** : coloque o e-mail selecionado na « Lixeira ».
-- 7.**Spam** : colocar o e-mail selecionado diretamente na pasta de lixo eletrónico (SPAM).
+- 2.**Responder a todos**: responder diretamente a todos os destinatários presentes nos campos "A" e "Cópia".
+- 3.**Reencaminhar**: transferir o e-mail selecionado para um ou vários destinatários.
+- 4.**Arquivo**: mover o e-mail para a pasta "Arquivo" da sua conta de e-mail.
+- 5.**Mover**: mover o e-mail para uma das pastas da conta de e-mail.
+- 6.**Delete**: coloque o e-mail selecionado na "Lixeira".
+- 7.**Spam**: colocar o e-mail selecionado diretamente na pasta de lixo eletrónico (SPAM).
 - 8.**Plus**
     - **Marcar item como lido**.
     - **Marcar item como não lida**.
     - **Marcar com estrela**: Atribuir uma estrela ao seu e-mail para o destacar e identificar mais facilmente.
     - **Limpar estrela**: remover a estrela atribuída a este e-mail.
-    - **Bloquear** : mostrar o e-mail na sua forma bruta com o cabeçalho.
+    - **Bloquear**: mostrar o e-mail na sua forma bruta com o cabeçalho.
     - **Mostrar original**: Exibir a mensagem inteira, corpo e cabeçalho.
-    - **Novo filtro** - Criar um filtro a partir do remetente e do assumpto da mensagem selecionada.
+    - **Novo filtro**: Criar um filtro a partir do remetente e do assumpto da mensagem selecionada.
     - **Imprimir**: imprimir a conversa ou o e-mail selecionado.
 - 9.**Visualizar**: selecione um dos 3 layouts para visualizar suas pastas e e-mails.
 
@@ -181,7 +181,7 @@ Se deseja encontrar um e-mail, utilize a barra de pesquisa na parte superior da 
 >>
 >> Introduza as palavras-chave que pretende encontrar na barra de pesquisa e prima `Enter` para validar a procura. A palavra ou palavras aparecerão realçadas nos resultados.
 >>
->> > Se você sabe onde pesquisar por seu item, você pode digitar palavras-chave ( **from**, **to**, **cc**, **subject**, etc.) seguidas de dois pontos (`:`) e pesquisar por ele na caixa de texto de pesquisa. Por exemplo, se você deseja encontrar rapidamente um remetente, você pode digitar « from: » antes do endereço de e-mail que você está procurando. Por exemplo« from: address@exemplo.com ».
+>> > Se você sabe onde pesquisar por seu item, você pode digitar palavras-chave ( **from**, **to**, **cc**, **subject**, etc.) seguidas de dois pontos (`:`) e pesquisar por ele na caixa de texto de pesquisa. Por exemplo, se você deseja encontrar rapidamente um remetente, você pode digitar "from:" antes do endereço de e-mail que você está procurando. Por exemplo"from: address@exemplo.com".
 >>
 >> ![Zimbra - pesquisa simples](images/zimbra-08.png){.thumbnail}
 >>
@@ -205,8 +205,8 @@ Para redigir um novo e-mail, clique no botão `Nova mensagem`{.action} (1) na pa
 >>
 >> - **De** : o endereço a partir do qual envia o seu e-mail. Por predefinição, é o seu endereço de e-mail. Só é possível alterar o endereço de e-mail se clicar na barra à direita do endereço de e-mail, se tiver sido criada uma [delegação](#delegations).<br>
 >> - **Para** : o(s) destinatário(s) do seu e-mail. Clique em `Para`{.action} para aceder ao seu [livro de contactos](#contacts) e selecionar os seus destinatários.<br>
->> - **CC** : clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono é um campo de destino que permite enviar o seu e-mail em cópia a pessoas que deseja integrar num loop sem que sejam consideradas como destinatários diretos do e-mail (ao contrário dos destinatários do campo « **Para** »).<br>
->> - **Bcc** : clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono invisível é um campo de destino que permite a transmissão de um e-mail sem que os outros destinatários vejam a pessoa ou pessoas « **Bcc** ».<br>
+>> - **CC** : clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono é um campo de destino que permite enviar o seu e-mail em cópia a pessoas que deseja integrar num loop sem que sejam consideradas como destinatários diretos do e-mail (ao contrário dos destinatários do campo "**Para**").<br>
+>> - **Bcc** : clique em `Cc/Bcc`{.action} à direita do campo `Para`{.action} para ver este campo. A cópia de carbono invisível é um campo de destino que permite a transmissão de um e-mail sem que os outros destinatários vejam a pessoa ou pessoas "**Bcc**".<br>
 >> - **Assunto**: Título do e-mail, primeiro elemento visível na receção antes de abrir o e-mail.<br>
 >> - `...`{.action} : situado à direita do campo `De`{.action}, dá-lhe acesso a 3 opções : <br>
 >>    - Pode qualificar o seu e-mail como prioritário selecionando `Prioridade máxima`.<br>
@@ -229,7 +229,7 @@ Depois de ter redigido o seu e-mail, antes de clicar em `Enviar`{.action}, pode 
 > [!success]
 > **Anular um envio**
 > 
-> « Se ativou a opção `Anular envio` na secção **Escrita de email** » das preferências do Zimbra, pode clicar em `ANULAR`{.action} para cancelar o envio.
+> "Se ativou a opção `Anular envio` na secção **Escrita de email**" das preferências do Zimbra, pode clicar em `ANULAR`{.action} para cancelar o envio.
 > Este botão ficará disponível durante cerca de 5 segundos.
 >
 > ![Zimbra - anular um envio](images/zimbra-cancel-email.png){.thumbnail .w-400}
@@ -240,9 +240,9 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 
 ![Zimbra - preferências](images/zimbra-14.png){.thumbnail}
 
-- **(1) Perfil** : clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá « **Alterar a palavra-passe** » do seu endereço de e-mail, « **Alterar imagem do perfil** » ou encerrar a sessão clicando« **Terminar sessão**».
+- **(1) Perfil** : clique no nome da sua conta de e-mail na parte superior direita da sua interface. A partir deste menu, poderá "**Alterar a palavra-passe**" do seu endereço de e-mail, "**Alterar imagem do perfil**" ou encerrar a sessão clicando "**Terminar sessão**".
 
-- **(2) Definições**: Clique na roda dentada no canto superior direito da sua interface para aceder às alterações « **Idioma** » da sua interface. Uma secção « **Ajuda** » permite consultar a documentação oficial do Zimbra. « **Definições** » encontrará todos os elementos de configuração descritos nos seguintes separadores:
+- **(2) Definições**: Clique na roda dentada no canto superior direito da sua interface para aceder às alterações "**Idioma**" da sua interface. Uma secção "**Ajuda**" permite consultar a documentação oficial do Zimbra. "**Definições**" encontrará todos os elementos de configuração descritos nos seguintes separadores:
 
 > [!tabs]
 > **Geral**
@@ -253,40 +253,40 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 >>
 >> Encontre aqui os elementos ligados à apresentação dos seus elementos na sua conta e-mail.
 >>
->> - **Ao visualizar listas de mensagens** : estas opções permitem-lhe organizar a lista dos seus e-mails por grupos de conversas e visualizar mais detalhes.
->> - **Painel de leitura rápida** : selecione uma das 3 disposições para visualizar suas pastas e e-mails. Esta opção retoma as escolhas encontradas no botão `Visualizar`{.action} quando visualiza os seus e-mails.
+>> - **Ao visualizar listas de mensagens**: estas opções permitem-lhe organizar a lista dos seus e-mails por grupos de conversas e visualizar mais detalhes.
+>> - **Painel de leitura rápida**: selecione uma das 3 disposições para visualizar suas pastas e e-mails. Esta opção retoma as escolhas encontradas no botão `Visualizar`{.action} quando visualiza os seus e-mails.
 >> - **Densidade da lista de mensagens**
->> - **Marcar item como lido** : pode temporizar a alteração do estado do seu e-mail « ou » quando clicar no mesmo ou decidir não fazer nada e deixá-lo em « não lido » sem ação da sua parte.
->> - **Verificar se existe novo correio** : defina a frequência da sincronização dos e-mails recebidos a partir da sua interface Zimbra.
->> - **Recibos de leitura** : defina o comportamento do Zimbra quando abrir um e-mail com aviso de leitura.
->> - **Notificações de novos e-mail** - ative as notificações quando uma mensagem é recebida.
+>> - **Marcar item como lido**: pode temporizar a alteração do estado do seu e-mail "ou" quando clicar no mesmo ou decidir não fazer nada e deixá-lo em "não lido" sem ação da sua parte.
+>> - **Verificar se existe novo correio**: defina a frequência da sincronização dos e-mails recebidos a partir da sua interface Zimbra.
+>> - **Recibos de leitura**: defina o comportamento do Zimbra quando abrir um e-mail com aviso de leitura.
+>> - **Notificações de novos e-mail**: ative as notificações quando uma mensagem é recebida.
 >> - **Mostrar imagens nos emails**: mostrar ou não as fotos quando abrir um e-mail.
 >> - **Ver e-mails como texto sem formatação**: apresenta a mensagem em formato simples, sem qualquer configuração de página.
->> - **Mostrar imagens por predefinição no correio desses endereços ou domínios de confiança** : defina os endereços de e-mail de confiança para os quais as imagens podem ser apresentadas quando abrem.
+>> - **Mostrar imagens por predefinição no correio desses endereços ou domínios de confiança**: defina os endereços de e-mail de confiança para os quais as imagens podem ser apresentadas quando abrem.
 >>
 > **Escrita de email**
 >>
->> - **Anular envio** : esta opção permite apresentar um banner, durante 5 segundos, que permite anular o envio de um e-mail.
+>> - **Anular envio**: esta opção permite apresentar um banner, durante 5 segundos, que permite anular o envio de um e-mail.
 >> - **Solicitar recibos de leitura**: esta opção envia um pedido de recibo de leitura aos seus destinatários quando lhes envia um e-mail.
->> - **Salve uma cópia na pasta Enviados** : assinalado por predefinição, esta opção guarda os e-mails enviados para a pasta « *Enviado » da sua conta de e-mail.
+>> - **Salve uma cópia na pasta Enviados**: assinalado por predefinição, esta opção guarda os e-mails enviados para a pasta "*Enviado" da sua conta de e-mail.
 >> - **Delegados** : consulte a secção [Delegações](#delegations) deste guia para saber mais sobre a sua utilização.
->> - **Definições de envio dos delegados** : consulte a secção [Delegações](#delegations) deste guia para compreender a sua utilização.
->> - **Compositor** : pode definir o seu estilo de escrita quando iniciar a redação de um e-mail.
+>> - **Definições de envio dos delegados**: consulte a secção [Delegações](#delegations) deste guia para compreender a sua utilização.
+>> - **Compositor**: pode definir o seu estilo de escrita quando iniciar a redação de um e-mail.
 >>
 > **Assinaturas**
 >>
 >> Este espaço permite-lhe criar as suas assinaturas.<br>
 >>
->> - **Assinatura padrão** : introduza a assinatura que aparecerá quando redigir um novo e-mail.
->> - **Responder ou encaminhar assinatura** : permite-lhe adicionar uma assinatura diferente quando responder ou enviar um e-mail.
+>> - **Assinatura padrão**: introduza a assinatura que aparecerá quando redigir um novo e-mail.
+>> - **Responder ou encaminhar assinatura**: permite-lhe adicionar uma assinatura diferente quando responder ou enviar um e-mail.
 >>
 > **Ausência do escritório**
 >>
->> Este separador designa a funcionalidade « resposta automática ». Para configurar as respostas automáticas, consulte a secção « [Respostas automáticas/respostas](#auto-reply) » deste manual.
+>> Este separador designa a funcionalidade "resposta automática". Para configurar as respostas automáticas, consulte a secção "[Respostas automáticas/respostas](#auto-reply)" deste manual.
 >>
 > **Filtros**
 >>
->> Para configurar os filtros, consulte a secção « [Filtros](#filters) » deste manual.
+>> Para configurar os filtros, consulte a secção "[Filtros](#filters)" deste manual.
 >>
 
 ### Contactos <a name="contacts"></a>
@@ -295,7 +295,7 @@ Clique em `Contactos` na barra superior para aceder ao livro de contactos. Esta 
 
 - **(1) Pastas** (à esquerda): No livro de endereços, você pode criar pastas para organizar e agrupar contactos.
 - **(2) Lista de contactos** (no centro): visualize os contactos do livro de endereços ou da pasta selecionada.
-- **(3) Propriedades do contacto** ou **Novo contacto** (à direita) : esta janela aparece quando um contacto é selecionado ou quando está em curso de criação. Leia ou edite as informações do contacto lá.
+- **(3) Propriedades do contacto** ou **Novo contacto** (à direita): esta janela aparece quando um contacto é selecionado ou quando está em curso de criação. Leia ou edite as informações do contacto lá.
 
 ![Zimbra - contactos](images/zimbra-15.png){.thumbnail}
 
@@ -319,7 +319,7 @@ Tal como acontece com os e-mails, as pastas de contactos especiais são automati
 
 Para criar uma pasta, clique no botão `+ Adicionar uma pasta`{.action} no fundo da coluna da esquerda.
 
-Também pode criar uma sub-pasta clicando com o botão direito do rato na pasta à sua escolha e, a seguir, clicando em `Adicionar uma sub-pasta`{.action}. As pastas « Contactos por e-mail » e « Lixo » não permitem a criação de subpastas.
+Também pode criar uma sub-pasta clicando com o botão direito do rato na pasta à sua escolha e, a seguir, clicando em `Adicionar uma sub-pasta`{.action}. As pastas "Contactos por e-mail" e "Lixo" não permitem a criação de subpastas.
 
 Para mover um contacto para uma das pastas, selecione o contacto na coluna do meio e, a seguir, na janela do contacto que aparece à direita, clique no botão `Mover`{.action}. De seguida, selecione a pasta que pretende atribuir ao contacto.
 
@@ -346,14 +346,14 @@ Selecione um dos dois separadores seguintes:
 > [!tabs]
 > **Importar contactos**
 >>
->> A partir da janela `Contactos`, clique com o botão direito do rato na pasta de contactos à sua escolha, exceto nas pastas « Contactos por E-mail » e « Reciclagem », que não permitem a importação ou exportação de contactos.<br>
+>> A partir da janela `Contactos`, clique com o botão direito do rato na pasta de contactos à sua escolha, exceto nas pastas "Contactos por E-mail" e "Reciclagem", que não permitem a importação ou exportação de contactos.<br>
 >>
->> De seguida, clique em `Importar`{.action} para abrir a janela Importar. O botão `Browse...` permite-lhe ir recuperar o ficheiro que contém os seus contactos no formato « .csv » ou « .vcf ». <br><br>
+>> De seguida, clique em `Importar`{.action} para abrir a janela Importar. O botão `Browse...` permite-lhe ir recuperar o ficheiro que contém os seus contactos no formato ".csv" ou ".vcf". <br><br>
 >> ![Zimbra - Importar](images/zimbra-19.png){.thumbnail}
 >>
 > **Exportar os Contactos**
 >>
->> A partir da janela `Contactos`, clique com o botão direito do rato na pasta de contactos à sua escolha, exceto nas pastas « Contactos por E-mail » e « Reciclagem », que não permitem a importação ou exportação de contactos.
+>> A partir da janela `Contactos`, clique com o botão direito do rato na pasta de contactos à sua escolha, exceto nas pastas "Contactos por E-mail" e "Reciclagem", que não permitem a importação ou exportação de contactos.
 >>
 >>>Clique em "Exportar" {.action} para abrir a janela de exportação. Escolha o tipo de ficheiro que deseja exportar e depois clique em `Exportar agora`{.action}.<br><br>
 >> ![Zimbra - Exportar](images/zimbra-20.png){.thumbnail}
@@ -374,7 +374,7 @@ Uma regra de filtragem em Zimbra é composta por 4 elementos:
 
 ![Zimbra - filtros](images/zimbra-filters.png){.thumbnail}
 
-> Exemplo n°1: ** Se o assumpto (1)** da mensagem de correio eletrónico **contiver (2)** a palavra-`invoice`**(3)**, então **reencaminhe para (4)** o endereço `billing@exemplo.com`.
+> Exemplo n°1: Se o **assumpto (1)** da mensagem de correio eletrónico **contiver (2)** a palavra `invoice`**(3)**, então **reencaminhe para (4)** o endereço `billing@example.com`.
 
 Nos subcapítulos que se seguem, poderá encontrar os detalhes de cada um dos elementos de uma regra de filtragem.
 
@@ -382,11 +382,11 @@ Nos subcapítulos que se seguem, poderá encontrar os detalhes de cada um dos el
 
 O campo de comparação designa a secção do e-mail a verificar pelo operador de comparação. Os campos de comparação podem incluir:
 
-- **De** : indicar um remetente no campo « De » do e-mail.
-- **Para**: procure os nomes de destinatários no campo « To ».
-- **Cc** : procurar os nomes dos destinatários em cópia no campo « Cc ».
+- **De** : indicar um remetente no campo "De" do e-mail.
+- **Para**: procure os nomes de destinatários no campo "To".
+- **Cc** : procurar os nomes dos destinatários em cópia no campo "Cc".
 - **Assunto**: Especificar itens no assumpto do e-mail.
-- **Cabeçalho nomeado**: Quando esta opção está selecionada, um campo de entrada adicional aparece antes do operador de comparação. Este campo permite introduzir qualquer elemento no cabeçalho de uma mensagem de correio eletrónico. Pode especificar os campos padrão « De », « Para », « Assumpto », ou outros campos que possam estar presentes no cabeçalho da mensagem. Por exemplo, alguns servidores de correio eletrónico podem adicionar campos específicos no cabeçalho que podem ser integrados na regra de filtragem, utilizando este campo de comparação.
+- **Cabeçalho nomeado**: Quando esta opção está selecionada, um campo de entrada adicional aparece antes do operador de comparação. Este campo permite introduzir qualquer elemento no cabeçalho de uma mensagem de correio eletrónico. Pode especificar os campos padrão "De", "Para", "Assumpto", ou outros campos que possam estar presentes no cabeçalho da mensagem. Por exemplo, alguns servidores de correio eletrónico podem adicionar campos específicos no cabeçalho que podem ser integrados na regra de filtragem, utilizando este campo de comparação.
 - **Corpo**: significa as palavras contidas ou não no corpo do e-mail.
 
 ##### 2 - Operador de comparação <a name="filters-comp-operator"></a>
@@ -398,18 +398,18 @@ Em função do campo de comparação acima referido, o operador de comparação 
 > Os operadores de comparação disponíveis variam de acordo com o campo de comparação selecionado.
 
 - **Coincide exatamente / Não coincide exatamente** : o que você vai digitar deve corresponder exatamente.<br>
-    *Por exemplo*, indicando que o assumpto do e-mail corresponde exatamente « house », a correspondência será feita apenas com « house » e não com « houses » ou « a blue house ».
+    *Por exemplo*, indicando que o assumpto do e-mail corresponde exatamente "house", a correspondência será feita apenas com "house" e não com "houses" ou "a blue house".
 
 - **Contém / Não contém** : o que você digitar deve estar presente no(s) campo(s).<br>
-    *Por exemplo*, indicando que o assumpto do e-mail deve conter « house », a correspondência será feita com « house », « houses » e também «a blue house».
+    *Por exemplo*, indicando que o assumpto do e-mail deve conter "house", a correspondência será feita com "house", "houses" e também "a blue house".
 
 - **Coincide com a condição universal / Não coincide com a condição universal** : Especifica que o tópico deve corresponder à string especificada, que inclui caracteres curinga.
 
-- **Existe / Não existe** : Especifica que o campo de comparação especificado deve existir ou não deve existir na mensagem. Este operador de comparação é utilizado com os campos de comparação « Cabeçalho nomeado ».
+- **Existe / Não existe** : Especifica que o campo de comparação especificado deve existir ou não deve existir na mensagem. Este operador de comparação é utilizado com os campos de comparação "Cabeçalho nomeado".
 
 > **Utilização de caracteres de sincronização nos filtros**
 >
-> Os caracteres curinga, curinga ou ainda chamados « wildcard » podem ser utilizados no campo de entrada para a comparação que utilizam o operador de comparação « **Coincide com a condição universal / Não coincide com a condição universal** ». Os dois caracteres curinga são `*` e `?`.
+> Os caracteres curinga, curinga ou ainda chamados "wildcard" podem ser utilizados no campo de entrada para a comparação que utilizam o operador de comparação "**Coincide com a condição universal / Não coincide com a condição universal**". Os dois caracteres curinga são `*` e `?`.
 >
 > - O asterisco `*` é um marcador de posição para zero ou mais caracteres de qualquer tipo.<br><br> Por exemplo, para a cadeia de procura "blue\*house", devolveria as correspondências "blue house", "houses" ou "blue wooden house". No entanto, não retornaria "lightning blue house". <br><br> Outro exemplo de uma sequência de pesquisa "w\*house" que retornaria corresponde a "white house", "watch TV in your house". No entanto, ele não iria enviar de volta "watch TV in your house with a friend".
 >
@@ -424,10 +424,10 @@ Depois de selecionar o seu campo e o seu operador de comparação, deverá intro
 
 O campo `Então` define a ação a efetuar no e-mail que preenche as condições do filtro As ações de filtragem podem incluir a remoção, a triagem e até mesmo a marcação do correio recebido.
 
-- **Manter nai caixa de entrada** : guarda as mensagens de correio eletrónico na pasta A receber. Se nenhuma das regras de filtragem corresponder a uma mensagem de correio eletrónico, esta ação realiza-se por predefinição.
-- **Mover para a pasta** : move o e-mail para uma pasta especificada.
-- **Excluir permanentemente** : Eliminar o correio eletrónico sem o entregar. A mensagem não está em nenhuma das pastas, incluindo a lixeira.
-- **Para a frente** : Transfere a mensagem para o endereço que especificar.
+- **Manter nai caixa de entrada**: guarda as mensagens de correio eletrónico na pasta A receber. Se nenhuma das regras de filtragem corresponder a uma mensagem de correio eletrónico, esta ação realiza-se por predefinição.
+- **Mover para a pasta**: move o e-mail para uma pasta especificada.
+- **Excluir permanentemente**: Eliminar o correio eletrónico sem o entregar. A mensagem não está em nenhuma das pastas, incluindo a lixeira.
+- **Para a frente**: Transfere a mensagem para o endereço que especificar.
 - **Marcar como lido**
 - **Marcar com estrela**: marca o seu e-mail com uma estrela.
 
@@ -443,7 +443,7 @@ Se existirem filtros, encontrará a lista segundo a ordem da aplicação:
 
 - **(2)** Este botão é usado como uma alça, ele permite que você mova o filtro para a lista para atribuir uma ordem de aplicação. Cada filtro é aplicado de acordo com a ordem indicada na lista.
 
-Clique no botão `+ Adicione um filtro`{.action} para iniciar a criação do filtro. A janela Modo simples é exibida por predefinição. Pode passar para o modo avançado clicando em `Mudar para avançado`{.action} para dispor de todos os operadores de comparação. Consulte a secção « [Compreender como configurar os filtros](filters-howto) ».
+Clique no botão `+ Adicione um filtro`{.action} para iniciar a criação do filtro. A janela Modo simples é exibida por predefinição. Pode passar para o modo avançado clicando em `Mudar para avançado`{.action} para dispor de todos os operadores de comparação. Consulte a secção "[Compreender como configurar os filtros](filters-howto)".
 
 > [!tabs]
 > **Modo simples**
@@ -469,25 +469,25 @@ Para aceder ao parâmetro de delegação, clique na roda dentada no canto superi
 
 **(1) Delegados**. Para delegar sua conta de e-mail a outra conta, clique em `Adicionar delegados`{.action}.
 
-- **Enviar como »** : a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail, tal como se o tivesse enviado. O destinatário não terá menção do endereço de e-mail do delegado.
-- **Enviar em nome de** : a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail com uma menção « da parte » seu endereço de e-mail. O destinatário recebe a menção dos dois endereços de e-mail implicados na troca.
+- **Enviar como"** : a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail, tal como se o tivesse enviado. O destinatário não terá menção do endereço de e-mail do delegado.
+- **Enviar em nome de** : a pessoa delegada poderá enviar um e-mail com o seu endereço de e-mail com uma menção "da parte" seu endereço de e-mail. O destinatário recebe a menção dos dois endereços de e-mail implicados na troca.
 
 **(2) Parâmetros de envio do delegado**. Quando delega o seu endereço de e-mail noutro, pode:
 
-- **Guardar as mensagens enviadas na minha pasta Itens enviados»** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta « Enviados ».
-- **Guardar as mensagens enviadas na pasta Itens enviados do delegado** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta « Enviados ».
-- **Guardar as mensagens enviadas na minha pasta Itens enviados e na pasta Itens enviados do delegado** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta « Enviados » bem como na pasta « Enviados ».
+- **Guardar as mensagens enviadas na minha pasta Itens "enviados"** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados".
+- **Guardar as mensagens enviadas na pasta Itens "enviados" do delegado** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados".
+- **Guardar as mensagens enviadas na minha pasta Itens "enviados" e na pasta Itens enviados do delegado** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, este e-mail aparecerá na sua pasta "Enviados" bem como na pasta "Enviados".
 - **Não salve as mensagens enviadas** : se a pessoa delegada na sua conta enviar um e-mail a partir do seu endereço de e-mail, não haverá nenhuma cópia de facto.
 
 ### Assinatura <a name="signatures"></a>
 
 Clique na roda dentada no canto superior direito da sua interface Zimbra, depois em `Configurações`{.action} e, por fim, em `Assinaturas`{.action}, na coluna da esquerda.
 
-Consulte os detalhes de configuração na secção « [Configurar as preferências da interface Zimbra](#settings) » deste manual (clique no separador « **Assinaturas** »).
+Consulte os detalhes de configuração na secção "[Configurar as preferências da interface Zimbra](#settings)" deste manual (clique no separador "**Assinaturas**").
 
 ### Respostas automáticas / resposta automática <a name="auto-reply"></a>
 
-Quando estiver em falta e não puder consultar a sua conta de e-mail, poderá criar uma mensagem de ausência que será automaticamente enviada ao remetente. No webmail Zimbra, esta funcionalidade é « Ausente do escritório ».
+Quando estiver em falta e não puder consultar a sua conta de e-mail, poderá criar uma mensagem de ausência que será automaticamente enviada ao remetente. No webmail Zimbra, esta funcionalidade é "Ausente do escritório".
 
 Para aceder à gestão da sua resposta automática, clique na roda dentada no canto superior direito da sua interface, depois em `Definições`{.action} e, por fim, em `Ausente do escritório`{.action}.
 
@@ -497,7 +497,7 @@ A opção predefinida `Ativar resposta automática durante estas datas (inclusiv
 - O botão `Enviar texto de amostra para mim`{.action} envia uma descrição geral desta resposta automática na pasta A receber.
 - `Remetentes externos` : pode definir uma mensagem diferente quando o remetente é externo ao seu nome de domínio e/ou ao seu livro de endereços. Por predefinição, todos os remetentes recebem a mesma mensagem.
 
-## Quer saber mais? <a name="go-further"></a>
+## Quer saber mais?
 
 [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
