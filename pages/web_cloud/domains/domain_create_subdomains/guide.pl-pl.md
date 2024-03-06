@@ -94,7 +94,7 @@ Możliwe są dwa przypadki:
 >
 > 1 : Aby ustalić, gdzie znajduje się aktywna strefa DNS domeny zarejestrowanej w OVHcloud, skorzystaj z naszego przewodnika "[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 >
-> 2: Jeśli Twoja domena nie jest zarejestrowana w OVHcloud, skontaktuj się z *aktualnym operatorem* Twojej domeny, aby dowiedzieć się, gdzie hostowana jest aktywna strefa DNS. Pamiętaj, że możesz skorzystać z naszego przewodnika "[Transfer_domeny do OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)", jeśli chcesz wykonać tę czynność.
+> 2: Jeśli Twoja domena nie jest zarejestrowana w OVHcloud, skontaktuj się z *aktualnym operatorem* Twojej domeny, aby dowiedzieć się, gdzie hostowana jest aktywna strefa DNS. Aby wykonać transfer domeny do OVHcloud, zapoznaj się z naszym [przewodnikiem](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 >
 
 Jeśli serwery DNS zadeklarowane dla Twojej domeny mają jedną z dwóch form:
