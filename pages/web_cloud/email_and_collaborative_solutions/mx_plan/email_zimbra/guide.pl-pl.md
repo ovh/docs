@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Korzystaj z interfejsu Webmail Zimbra"
 excerpt: "Poznaj interfejs Zimbra Webmail dla Twoich kont e-mail MX Plan OVHcloud"
-Updated: 2024-02-28
+Updated: 2024-03-06
 ---
 
 > [!primary]
@@ -203,7 +203,7 @@ Aby utworzyć nową wiadomość e-mail, kliknij przycisk `Nowa wiadomość`{.act
 >>
 >> Nagłówek umożliwia uzupełnienie następujących pól:
 >>
->> - **Od** : adres email, z którego wysyłasz wiadomości. Domyślnie jest to Twój adres e-mail. Możesz zmienić adres nadawcy, klikając krokwę po prawej stronie Twojego adresu e-mail, tylko jeśli utworzono [delegację] (#delegations).<br>
+>> - **Od** : adres email, z którego wysyłasz wiadomości. Domyślnie jest to Twój adres e-mail. Możesz zmienić adres nadawcy, klikając krokwę po prawej stronie Twojego adresu e-mail, tylko jeśli utworzono [delegację](#delegations).<br>
 >> - **Do** : odbiorca(y) Twojej wiadomości e-mail. Kliknij na `À`{.action}, aby przejść do [książki adresowej](#contacts) i wybrać odbiorców.<br>
 >> - **DW**: Kliknij `DW/UDW`{.action} po prawej stronie pola `Do`{.action}, aby wyświetlić to pole. Cloud Copy to pole odbiorcy, które umożliwia wysłanie e-maila w kopii do osób, które chcesz zintegrować z pętlą, bez określania ich jako bezpośrednich odbiorców e-maila (w przeciwieństwie do odbiorców w polu "**Do**").<br>
 >> - **UDW**: Kliknij `DW/UDW`{.action} po prawej stronie pola `Do`{.action}, aby wyświetlić to pole. Niewidoczna kopia węglowa to pole odbiorcy, które umożliwia przesłanie wiadomości e-mail bez widzenia przez innych adresatów osoby w "**Cci**".<br>
@@ -474,9 +474,9 @@ Konto e-mail można przypisać do innego konta e-mail. Musi on współużytkowa�
 
 **(2) Parametry wysyłania delegata**. Przenosząc adres e-mail na inny adres, możesz:
 
-- **Zapisz wysłane wiadomości w folderze Wysłane** : jeśli osoba delegowana na Twoim koncie wysyła e-mail z Twojego konta e-mail, ten e-mail pojawi się w Twoim folderze "Wysłane".
-- **Zapisz wysłane wiadomości w folderze Wysłane przez delegata** : jeśli osoba delegowana na Twoje konto wyśle e-mail z Twojego konta e-mail, ten e-mail pojawi się w jego folderze "Wysłane".
-- **Zapisz wysłane wiadomości w folderze Wysłane i w folderze Wysłane przez delegata** : jeśli osoba delegowana na Twoim koncie wyśle e-mail z Twojego konta e-mail, ten e-mail pojawi się w folderze "Wysłane" oraz w folderze "Wysłane".
+- **Zapisz wysłane wiadomości w folderze "Wysłane"** : jeśli osoba delegowana na Twoim koncie wysyła e-mail z Twojego konta e-mail, ten e-mail pojawi się w Twoim folderze "Wysłane".
+- **Zapisz wysłane wiadomości w folderze "Wysłane" przez delegata** : jeśli osoba delegowana na Twoje konto wyśle e-mail z Twojego konta e-mail, ten e-mail pojawi się w jego folderze "Wysłane".
+- **Zapisz wysłane wiadomości w folderze "Wysłane" i w folderze Wysłane przez delegata** : jeśli osoba delegowana na Twoim koncie wyśle e-mail z Twojego konta e-mail, ten e-mail pojawi się w folderze "Wysłane" oraz w folderze "Wysłane".
 - **Nie zapisuj wysłanych wiadomości** e-maili: jeśli osoba delegowana na Twoim koncie wysyła e-mail z Twojego adresu e-mail, nie będzie żadnej kopii faktu.
 
 ### Podpis <a name="signatures"></a>
