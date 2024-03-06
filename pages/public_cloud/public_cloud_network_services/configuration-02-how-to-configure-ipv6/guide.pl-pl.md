@@ -124,9 +124,9 @@ sudo systemctl restart networking
 
 #### W systemie Ubuntu i Debian 12
 
-Pliki konfiguracyjne sieci znajdują się w katalogu`/etc/netplan/`.
+Pliki konfiguracyjne sieci znajdują się w katalogu `/etc/netplan/`.
 
-Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w katalogu`/etc/netplan/` w celu skonfigurowania protokołu IPV6. W naszym przykładzie nasz plik nosi nazwę `51-cloud-init-ipv6.yaml`:
+Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w katalogu `/etc/netplan/` w celu skonfigurowania protokołu IPV6. W naszym przykładzie nasz plik nosi nazwę `51-cloud-init-ipv6.yaml`:
 
 ```bash
 sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
@@ -191,7 +191,7 @@ sudo nano netplan apply
 
 #### W systemie RedHat / CentOS / Rocky Linux / Alma Linux
 
-Pliki konfiguracyjne sieci znajdują się w katalogu`/etc/sysconfig/network-scripts/`. Zalecamy, abyś przed podjęciem jakichkolwiek działań wykonał kopię zapasową odpowiedniego pliku konfiguracyjnego.
+Pliki konfiguracyjne sieci znajdują się w katalogu `/etc/sysconfig/network-scripts/`. Zalecamy, abyś przed podjęciem jakichkolwiek działań wykonał kopię zapasową odpowiedniego pliku konfiguracyjnego.
 
 W naszym przykładzie nasz plik nosi nazwę `ifcfg-eth0`, wykonujemy zatem kopię zapasową pliku `ifcfg-eth0` przy użyciu następujących poleceń. W razie potrzeby należy zastąpić **eth0** rzeczywistym interfejsem.
 
