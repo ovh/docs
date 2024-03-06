@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Utilizar el webmail Zimbra"
 excerpt: "Descubra la interfaz del webmail Zimbra para sus cuentas MX Plan OVHcloud"
-updated: 2024-02-28
+updated: 2024-03-06
 ---
 
 > [!primary]
@@ -31,8 +31,8 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico **MX Plan** de OVHcloud, incluida en un [](https://www.ovhcloud.com/es-es/web-hosting/) plan de [hosting gratuito de 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada como solución independiente.
-- Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía Primeros [pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Disponer de una solución de correo electrónico **MX Plan** de OVHcloud, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada como solución independiente.
+- Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Procedimiento
 
@@ -61,7 +61,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 
 ### Conectarse al webmail Zimbra <a name="login"></a>
 
-Acceda a la página <https://www.ovh.com/es-es/mail/>. Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conexión` {.action}.
+Acceda a la página <https://www.ovh.com/es-es/mail/>. Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conexión`{.action}.
 
 ![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Una vez que se haya conectado a su cuenta de correo electrónico, podrá acceder
 > [!tabs]
 > **Menú superior**
 >>
->> - **(1)** Esta área de la interfaz le permite elegir una de las funcionalidades disponibles en su cuenta de correo electrónico, `correo` o `contactos`. De forma predeterminada, se encuentra en la ficha `correo` electrónico.
+>> - **(1)** Esta área de la interfaz le permite elegir una de las funcionalidades disponibles en su cuenta de correo electrónico, `correo` o `contactos`. De forma predeterminada, se encuentra en la ficha `correo`.
 >> - **(2)** Una barra de búsqueda le permite encontrar mensajes o contactos.
 >> - **(3)** El menú de gestión del perfil de su cuenta de correo y el botón de acceso a los ajustes **(4)**.
 >>
@@ -125,7 +125,7 @@ Para clasificar el correo según sus necesidades, puede crear sus propios regist
 
 Para crear una carpeta, haga clic en el botón `+ Agregar una carpeta`{.action} en la parte inferior de la columna.
 
-También puede crear una subcarpeta haciendo clic derecho en la carpeta que desee y, a continuación, haciendo clic en `Crear subcarpeta`{.action}. 
+También puede crear una subcarpeta haciendo clic derecho en la carpeta que desee y, a continuación, haciendo clic en `Crear subcarpeta`{.action}.
 
 > [!primary]
 >
@@ -146,9 +146,9 @@ Al seleccionar una carpeta o subcarpeta en la columna de la izquierda, la lista 
 Al seleccionar un mensaje de correo electrónico, podrá realizar diversas acciones:
 
 - 1.**Responder**: responder directamente al remitente.
-- 2.**Responder a todos**: responder directamente a todos los destinatarios de los campos «Para» y «CC».
+- 2.**Responder a todos**: responder directamente a todos los destinatarios de los campos "Para" y "CC".
 - 3.**Reenviar**: reenviar el correo electrónico seleccionado a uno o varios destinatarios.
-- 4.**Archivo** : Mover el correo a la carpeta «Archivo» de su cuenta de correo.
+- 4.**Archivo** : Mover el correo a la carpeta "Archivo" de su cuenta de correo.
 - 5.**Mover**: mover el correo a una de las carpetas de la cuenta de correo.
 - 6.**Eliminar**: Colocar el correo electrónico seleccionado en la papelera de reciclaje.
 - 7.**Basura**: Colocar el correo electrónico seleccionado directamente en la carpeta de correo no deseado (SPAM).
@@ -157,7 +157,7 @@ Al seleccionar un mensaje de correo electrónico, podrá realizar diversas accio
     - **Marcar como no leído**.
     - **Estrella**: asignar una estrella a su correo electrónico para resaltarlo e identificarlo más fácilmente.
     - **Desmarcar estrella**: eliminar la estrella asignada a este mensaje de correo electrónico.
-    - **Bloquear**: mostrar el mensaje de correo electrónico en su formato sin formato con el encabezado.
+    - **Bloquear**: bloquear los mensajes procedentes del remitente y/o eliminar todos los mensajes existentes procedentes de este remitente.
     - **Mostrar original**: Mostrar el mensaje completo, cuerpo y encabezado.
     - **Nuevo filtro**: crea un filtro a partir del remitente y el asunto del mensaje seleccionado.
     - **Imprimir**: Imprimir la conversación o el mensaje de correo electrónico seleccionados.
@@ -181,7 +181,7 @@ Si quiere encontrar un mensaje de correo electrónico, utilice la barra de búsq
 >>
 >> Escriba la palabra o palabras clave que desea buscar en la barra de búsqueda y pulse la tecla `Entrar` para confirmar la búsqueda. Las palabras aparecerán resaltadas en los resultados.
 >>
->> > Si sabe dónde buscar el elemento, puede escribir palabras clave ( **from**, **to**, **cc**, **subject**, etc.) seguidas de dos puntos (`:`) y buscar el elemento en el cuadro de texto de búsqueda. Por ejemplo, si desea buscar rápidamente un remitente, puede escribir «from:» antes de la dirección de correo electrónico que desea buscar. Por ejemplo, «from: address@example.com».
+>> > Si sabe dónde buscar el elemento, puede escribir palabras clave (**from**, **to**, **cc**, **subject**, etc.) seguidas de dos puntos (`:`) y buscar el elemento en el cuadro de texto de búsqueda. Por ejemplo, si desea buscar rápidamente un remitente, puede escribir "from:" antes de la dirección de correo electrónico que desea buscar. Por ejemplo, "from: address@example.com".
 >>
 >> ![Zimbra - recherche simple](images/zimbra-08.png){.thumbnail}
 >>
@@ -205,8 +205,8 @@ Para redactar un nuevo mensaje de correo electrónico, haga clic en el botón `N
 >>
 >> - **De** : la dirección desde la que se envía el correo. Por defecto, es su dirección de correo electrónico. Puede cambiar su dirección de correo electrónico haciendo clic en el paréntesis angular situado al final de la línea correspondiente a su dirección de correo electrónico, solo si se ha establecido una [delegación](#delegations).<br>
 >> - **Para**: el/los destinatario/s de su correo electrónico. Haga clic en `Para`{.action} para acceder a su [agenda de contactos](#contacts) y seleccionar sus destinatarios.<br>
->> - **CC**: Haga clic en `Cc/Cco`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia es un campo destinatario que permite enviar el correo en copia a las personas que desea integrar en un bucle sin que se consideren como destinatarios directos del correo (a diferencia de los destinatarios del campo «**Para**»).<br>
->> - **CCO**: Haga clic en `CCO`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia oculta es un campo de destinatario que permite transmitir un mensaje de correo electrónico sin que los otros destinatarios vean a la persona o personas en «**CCO**».<br>
+>> - **CC**: Haga clic en `Cc/Cco`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia es un campo destinatario que permite enviar el correo en copia a las personas que desea integrar en un bucle sin que se consideren como destinatarios directos del correo (a diferencia de los destinatarios del campo "**Para**").<br>
+>> - **CCO**: Haga clic en `CCO`{.action} a la derecha del campo `Para`{.action} mostrar este campo. La copia oculta es un campo de destinatario que permite transmitir un mensaje de correo electrónico sin que los otros destinatarios vean a la persona o personas en "**CCO**".<br>
 >> - **Asunto**: título del mensaje de correo electrónico, el primer elemento visible en la recepción antes de abrir el mensaje.<br>
 >> - `...`{.action}: situado a la derecha del campo `De`{.action}, le da acceso a 3 opciones:<br>
 >>    - Puede marcar su correo como prioritario marcando la opción `Prioridad alta`.<br>
@@ -219,7 +219,7 @@ Para redactar un nuevo mensaje de correo electrónico, haga clic en el botón `N
 >>
 >> Para redactar el cuerpo de su mensaje, dispone de una barra de herramientas HTML en la parte inferior de su ventana. De este modo, podrá redactar sus mensajes de correo electrónico con el diseño de la página directamente desde su navegador. Además, el botón `< >`{.action} (situado al final de la línea correspondiente a la barra de herramientas) abre una ventana en la que puede pegar un mensaje de correo electrónico preescrito desde una herramienta externa.
 >>
->> ![Zimbra - corps](images/zimbra-12.png){.thumbnail}
+>> ![Zimbra - cuerpo](images/zimbra-12.png){.thumbnail}
 >>
 
 Después de redactar el mensaje de correo electrónico, antes de hacer clic en `Enviar`{.action}, puede adjuntarlo haciendo clic en el icono de clip situado junto al botón `Enviar`{.action}.
@@ -229,7 +229,7 @@ Después de redactar el mensaje de correo electrónico, antes de hacer clic en `
 > [!success]
 > **Cancelar un envío**
 > 
-> Si ha activado la opción `Deshacer envío` en la sección «**Escribir un email**» de las preferencias de Zimbra, puede hacer clic en `DESHACER`{.action} para cancelar el envío.
+> Si ha activado la opción `Deshacer envío` en la sección "**Escribir un email**" de las preferencias de Zimbra, puede hacer clic en `DESHACER`{.action} para cancelar el envío.
 > Este botón permanece disponible durante unos 5 segundos.
 >
 > ![Zimbra - cancelar un envío](images/zimbra-cancel-email.png){.thumbnail .w-400}
@@ -240,9 +240,9 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 
 ![Zimbra: preferencias](images/zimbra-14.png){.thumbnail}
 
-- **(1) Perfil**: haga clic en el nombre de su cuenta de correo en la parte superior derecha de su interfaz. Desde este menú, podrá «**Cambiar contraseña**» de su dirección de correo electrónico, «**Cambiar la imagen del perfil**» o desconectarse haciendo clic en «**Cerrar sesión**».
+- **(1) Perfil**: haga clic en el nombre de su cuenta de correo en la parte superior derecha de su interfaz. Desde este menú, podrá "**Cambiar contraseña**" de su dirección de correo electrónico, "**Cambiar la imagen del perfil**" o desconectarse haciendo clic en "**Cerrar sesión**".
 
-- **(2) Ajustes**: haga clic en la rueda dentada en la parte superior derecha de su interfaz para acceder a los cambios de «**Idioma**» de su interfaz. En la sección «**Ayuda**» puede consultar la documentación oficial de Zimbra. En «**Configuración**», encontrará todos los elementos de configuración descritos en las fichas siguientes:
+- **(2) Ajustes**: haga clic en la rueda dentada en la parte superior derecha de su interfaz para acceder a los cambios de "**Idioma**" de su interfaz. En la sección "**Ayuda**" puede consultar la documentación oficial de Zimbra. En "**Configuración**", encontrará todos los elementos de configuración descritos en las fichas siguientes:
 
 > [!tabs]
 > **General**
@@ -256,7 +256,7 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 >> - **Al ver la lista de mensajes**: estas opciones permiten organizar la lista de los mensajes de correo en grupos de conversaciones y mostrar más detalles en la vista previa.
 >> - **Panel de vista previa** : seleccione una de las tres configuraciones para ver sus carpetas y mensajes de correo electrónico. Esta opción recoge las opciones que aparecen en el botón `Ver`{.action} cuando se visualizan los mensajes de correo.
 >> - **Densidad de la lista de mensajes**
->> - **Marcar como leído** : Puede retrasar el cambio de estado de su correo electrónico a «leído» cuando haga clic en él o decidir no hacer nada y dejarlo como «no leído» sin que usted realice ninguna acción.
+>> - **Marcar como leído** : Puede retrasar el cambio de estado de su correo electrónico a "leído" cuando haga clic en él o decidir no hacer nada y dejarlo como "no leído" sin que usted realice ninguna acción.
 >> - **Revisar correo nuevo** : establezca la frecuencia de sincronización de los mensajes recibidos desde su interfaz Zimbra.
 >> - **Confirmaciones de lectura** : permite definir el comportamiento de Zimbra al abrir un mensaje de correo electrónico con confirmación de lectura.
 >> - **Notificaciones de correo nuevo** : habilite las notificaciones cuando se reciba un mensaje.
@@ -268,7 +268,7 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 >>
 >> - **Deshacer envío** : Esta opción permite mostrar un banner, durante 5 segundos, que permite cancelar el envío de un email.
 >> - **Solicitar notificación de lectura** : esta opción envía una solicitud de confirmación de lectura a los destinatarios cuando les envía un mensaje de correo electrónico.
->> - **Guardar una copia en la carpeta Enviados** : Esta opción, marcada por defecto, guarda los mensajes enviados en la carpeta «*Enviado» de su cuenta de correo.
+>> - **Guardar una copia en la carpeta Enviados** : Esta opción, marcada por defecto, guarda los mensajes enviados en la carpeta "*Enviado" de su cuenta de correo.
 >> - **Delegados** : consulte la sección [Delegaciones](#delegations) de esta guía para comprender su uso.
 >> - **Delegar la configuración de envío** : consulte el tema [Delegaciones](#delegations) de esta guía para comprender cómo se utiliza.
 >> - **Redactor**: puede establecer su estilo de escritura predeterminado al iniciar la redacción de un mensaje de correo electrónico.
@@ -282,11 +282,11 @@ Su interfaz Zimbra dispone de 2 menús de configuración:
 >>
 > **Fuera de la oficina**
 >>
->> Esta pestaña designa la funcionalidad de «contestador». Para configurar sus contestadores, consulte la sección «[Respuestas automáticas / Contestador](#auto-reply)» de esta guía.
+>> Esta pestaña designa la funcionalidad de "contestador". Para configurar sus contestadores, consulte la sección "[Respuestas automáticas / Contestador](#auto-reply)" de esta guía.
 >>
 > **Filtros**
 >>
->> Para configurar los filtros, consulte la sección «[Filtros](#filters)» de esta documentación.
+>> Para configurar los filtros, consulte la sección "[Filtros](#filters)" de esta documentación.
 >>
 
 ### Contactos <a name="contacts"></a>
@@ -297,7 +297,7 @@ Haga clic en `Contactos` en la barra superior para acceder a la agenda de contac
 - **(2) Lista de contactos** (centro): vea los contactos de la libreta de direcciones o carpeta seleccionada.
 - **(3) Propiedades del contacto** o **Nuevo contacto** (derecha): esta ventana aparece cuando se selecciona un contacto o se está creando. Puede leer o editar la información de un contacto.
 
-![Zimbra - contacts](images/zimbra-15.png){.thumbnail}
+![Zimbra - contactos](images/zimbra-15.png){.thumbnail}
 
 Para crear un nuevo contacto, haga clic en el botón `Nuevo contacto`{.action} situado en la parte superior de la columna izquierda.
 
@@ -319,7 +319,7 @@ Puede crear carpetas y subcarpetas. Permiten clasificar los contactos en subconj
 
 Para crear una carpeta, haga clic en el botón `+ Agregar una carpeta`{.action} en la parte inferior de la columna izquierda.
 
-También puede crear una subcarpeta haciendo clic derecho en la carpeta que desee y, a continuación, haciendo clic en `Crear subcarpeta`{.action}. Las carpetas «Contactos por correo electrónico» y «Papelera de reciclaje» no permiten la creación de subcarpetas.
+También puede crear una subcarpeta haciendo clic derecho en la carpeta que desee y, a continuación, haciendo clic en `Crear subcarpeta`{.action}. Las carpetas "Contactos por correo electrónico" y "Papelera de reciclaje" no permiten la creación de subcarpetas.
 
 Para mover un contacto a una de las carpetas, selecciónelo en la columna central y, en la ventana de contacto que aparece a la derecha, haga clic en el botón `Mover`{.action}. A continuación, seleccione la carpeta que desea asignar al contacto.
 
@@ -346,14 +346,14 @@ Seleccione una de las dos fichas siguientes:
 > [!tabs]
 > **Importar contactos**
 >>
->> Desde la ventana `Contactos`, haga clic derecho en la carpeta de contactos que desee, a excepción de las carpetas «Contactos por correo electrónico» y «Papelera de reciclaje», que no permiten la importación y exportación de contactos.<br>
+>> Desde la ventana `Contactos`, haga clic derecho en la carpeta de contactos que desee, a excepción de las carpetas "Contactos por correo electrónico" y "Papelera de reciclaje", que no permiten la importación y exportación de contactos.<br>
 >>
->> A continuación, haga clic en `Importar`{.action} para abrir la ventana de importación. El botón `Browse...` le permite descargar el archivo que contiene sus contactos en formato «.CSV» o «.vcf». <br><br>
+>> A continuación, haga clic en `Importar`{.action} para abrir la ventana de importación. El botón `Browse...` le permite descargar el archivo que contiene sus contactos en formato ".CSV" o ".vcf". <br><br>
 >> ![Zimbra - Importer](images/zimbra-19.png){.thumbnail}
 >>
 > **Exportar contactos**
 >>
->> Desde la ventana `Contactos`, haga clic derecho en la carpeta de contactos que desee, a excepción de las carpetas «Contactos por correo electrónico» y «Papelera de reciclaje», que no permiten la importación y exportación de contactos.
+>> Desde la ventana `Contactos`, haga clic derecho en la carpeta de contactos que desee, a excepción de las carpetas "Contactos por correo electrónico" y "Papelera de reciclaje", que no permiten la importación y exportación de contactos.
 >>
 >> >> A continuación, haga clic en `Exportar`{.action} para abrir la ventana de exportación. Elija el tipo de archivo que desea exportar y haga clic en `Exportar ahora`{.action}.<br><br>
 >> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail}
@@ -374,7 +374,7 @@ Una regla de filtrado en Zimbra consta de 4 elementos:
 
 ![Zimbra - filtres](images/zimbra-filters.png){.thumbnail}
 
-> Ejemplo 1: Si el campo **Asunto (1)** del mensaje de correo electrónico **contiene (2)** la palabra `invoice`**(3)**, **transferir a (4)** la dirección de `billing@example.com`.
+> Ejemplo 1: Si el campo **Asunto (1)** del mensaje de correo electrónico **contiene (2)** la palabra `factura`**(3)**, **transferir a (4)** la dirección de `contabilidad@example.com`.
 
 En los subcapítulos siguientes, encontrará los detalles de cada uno de los elementos de una regla de filtrado.
 
@@ -382,11 +382,11 @@ En los subcapítulos siguientes, encontrará los detalles de cada uno de los ele
 
 El campo de comparación hace referencia a la sección del mensaje de correo electrónico que se debe comprobar para el operador de comparación. Los campos de comparación pueden incluir los siguientes:
 
-- **De** : especifique un remitente en el campo «De» del correo electrónico.
-- **Para** : buscar nombres de destinatarios en el campo «Para».
-- **CC** : buscar nombres de destinatarios en copia en el campo «CC».
+- **De** : especifique un remitente en el campo "De" del correo electrónico.
+- **Para** : buscar nombres de destinatarios en el campo "Para".
+- **CC** : buscar nombres de destinatarios en copia en el campo "CC".
 - **Asunto** : especificar elementos en el asunto del mensaje de correo electrónico.
-- **Cabecera con nombre** : cuando se selecciona esta opción, aparece un campo de entrada adicional antes del operador de comparación. Este campo permite introducir cualquier elemento del encabezado de un mensaje de correo electrónico. Puede especificar los campos estándar «De», «Para», «Asunto» u otros campos que puedan estar presentes en el encabezado del mensaje de correo electrónico. Por ejemplo, algunos servidores de correo pueden incluir campos específicos en el encabezado que se pueden incluir en la regla de filtrado utilizando este campo de comparación.
+- **Cabecera con nombre** : cuando se selecciona esta opción, aparece un campo de entrada adicional antes del operador de comparación. Este campo permite introducir cualquier elemento del encabezado de un mensaje de correo electrónico. Puede especificar los campos estándar "De", "Para", "Asunto" u otros campos que puedan estar presentes en el encabezado del mensaje de correo electrónico. Por ejemplo, algunos servidores de correo pueden incluir campos específicos en el encabezado que se pueden incluir en la regla de filtrado utilizando este campo de comparación.
 - **Texto del mensaje** : se refiere a las palabras que aparecen o no en el cuerpo del mensaje de correo electrónico.
 
 ##### 2. Operador de comparación <a name="filters-comp-operator"></a>
@@ -398,10 +398,10 @@ En función del campo de comparación designado anteriormente, el operador de co
 > Los operadores de comparación disponibles varían en función del campo de comparación seleccionado.
 
 - **Coincide exactamente / No coincide exactamente**: lo que escriba debe coincidir exactamente.<br>
-    *Por ejemplo*, al indicar que el asunto del correo corresponde exactamente a «house», la correspondencia se hará únicamente con «house» y no con «houses» o «a blue house».
+    *Por ejemplo*, al indicar que el asunto del correo corresponde exactamente a "house", la correspondencia se hará únicamente con "house" y no con "houses" o "a blue house".
 
 - **Contiene / No contiene**: lo que introduzca debe estar presente en el(los) campo(s).<br>
-    *Por ejemplo*, al indicar que el asunto del email debe contener «house», la correspondencia se hará con «house», «houses» y también «a blue house».
+    *Por ejemplo*, al indicar que el asunto del email debe contener "house", la correspondencia se hará con "house", "houses" y también "a blue house".
 
 - **Coincide con comodín / No coincide con comodín**: Especifica que el asunto debe coincidir con la cadena especificada, que incluye caracteres comodín.
 
@@ -409,11 +409,11 @@ En función del campo de comparación designado anteriormente, el operador de co
 
 > **Uso de comodines en filtros**
 >
-> Los caracteres comodín, caracteres comodín o también llamados «wildcard» pueden utilizarse en el campo de entrada para la comparación que utilizan el operador de comparación «**Coincide con comodín / No coincide con comodín**». Los dos caracteres comodín son `*` y `?`.
+> Los caracteres comodín, caracteres comodín o también llamados "wildcard" pueden utilizarse en el campo de entrada para la comparación que utilizan el operador de comparación "**Coincide con comodín / No coincide con comodín**". Los dos caracteres comodín son `*` y `?`.
 >
-> - El asterisco `*` es un marcador de posición de cero o más caracteres de cualquier tipo.<br><br> Por ejemplo, para la cadena de búsqueda «blue\*house», devolvería las coincidencias «blue house», «houses» o incluso «blue wooden house». Sin embargo, no devolvería «lightning blue house». <br><br> Otro ejemplo de cadena de búsqueda "w\*house" que devolvería las coincidencias "white house", "watch TV in your house". Sin embargo, no devolvería «watch TV in your house with a friend».
+> - El asterisco `*` es un marcador de posición de cero o más caracteres de cualquier tipo.<br><br> Por ejemplo, para la cadena de búsqueda "blue\*house", devolvería las coincidencias "blue house", "houses" o incluso "blue wooden house". Sin embargo, no devolvería "lightning blue house". <br><br> Otro ejemplo de cadena de búsqueda "w\*house" que devolvería las coincidencias "white house", "watch TV in your house". Sin embargo, no devolvería "watch TV in your house with a friend".
 >
-> - El signo de interrogación `?` es un marcador de posición para un solo carácter.<br><br>Por ejemplo, para la cadena de búsqueda «blue\*house», devolvería las coincidencias «blue house», «blue-house», «blue_house».
+> - El signo de interrogación `?` es un marcador de posición para un solo carácter.<br><br>Por ejemplo, para la cadena de búsqueda "blue\*house", devolvería las coincidencias "blue house", "blue-house", "blue_house".
 >
 
 ##### 3 - Valor <a name="filters-value"></a>
@@ -443,7 +443,7 @@ Si existen filtros, la lista se muestra en el orden en que se aplican:
 
 - **(2)** Este botón funciona como un controlador, lo que le permite mover el filtro a la lista para asignarle un orden de aplicación. Esto se debe a que cada filtro se aplica en el orden que se define en la lista.
 
-Haga clic en el botón `y Añadir un filtro`{.action} para empezar a crear el filtro. Por defecto, se muestra la ventana de modo simple. Puede cambiar al modo avanzado haciendo clic en `Cambiar a Avanzado`{.action} para que todos los operadores de comparación estén disponibles. Para más información, consulte la sección «[Cómo configurar los filtros](filters-howto)».
+Haga clic en el botón `y Añadir un filtro`{.action} para empezar a crear el filtro. Por defecto, se muestra la ventana de modo simple. Puede cambiar al modo avanzado haciendo clic en `Cambiar a Avanzado`{.action} para que todos los operadores de comparación estén disponibles. Para más información, consulte la sección "[Cómo configurar los filtros](filters-howto)".
 
 > [!tabs]
 > **Modo simple**
@@ -469,25 +469,25 @@ Es posible delegar su cuenta de correo a otra cuenta de correo. que deben compar
 
 **(1) Delegados**. Para delegar su cuenta de correo electrónico en otra cuenta, haga clic en `Añadir delegados`{.action}.
 
-- **Enviar como»** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, igual que si lo hubiera enviado. El destinatario no mencionará la dirección de correo electrónico del delegado.
-- **Enviar de parte de** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, indicando «en nombre de» dicha dirección. El destinatario tiene por tanto la mención de las dos direcciones de correo electrónico implicadas en el intercambio.
+- **Enviar como"** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, igual que si lo hubiera enviado. El destinatario no mencionará la dirección de correo electrónico del delegado.
+- **Enviar de parte de** : la persona delegada podrá enviar un mensaje de correo electrónico con su dirección de correo electrónico, indicando "en nombre de" dicha dirección. El destinatario tiene por tanto la mención de las dos direcciones de correo electrónico implicadas en el intercambio.
 
 **(2) Delegar la configuración de envío**. Al delegar su dirección de correo electrónico a otra, puede:
 
-- **Guardar los mensajes enviados en mi carpeta Enviados** : Si la persona delegada en su cuenta envía un mensaje de correo electrónico desde su dirección de correo electrónico, dicho mensaje aparecerá en la carpeta «Enviados».
-- **Guardar los mensajes enviados en la carpeta Enviados del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta «Enviados».
-- **Guardar los mensajes enviados en mi carpeta Enviados y en la del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta «Enviados» así como en su carpeta «Enviados».
+- **Guardar los mensajes enviados en mi carpeta Enviados** : Si la persona delegada en su cuenta envía un mensaje de correo electrónico desde su dirección de correo electrónico, dicho mensaje aparecerá en la carpeta "Enviados".
+- **Guardar los mensajes enviados en la carpeta Enviados del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados".
+- **Guardar los mensajes enviados en mi carpeta Enviados y en la del delegado** : Si la persona delegada en su cuenta envía un email desde su dirección de correo, este email aparecerá en su carpeta "Enviados" así como en su carpeta "Enviados".
 - **No guardar los mensajes enviados**: si la persona delegada en su cuenta envía un email desde su dirección de correo electrónico, no habrá ninguna copia de hecho.
 
 ### Firma <a name="signatures"></a>
 
 Haga clic en el icono con forma de rueda dentada situado en la esquina superior derecha de la interfaz de Zimbra, seleccione `Configuración`{.action} y, por último, `Firmas`{.action} en la columna izquierda.
 
-Encontrará los detalles de configuración en la sección «[Configurar las preferencias de la interfaz Zimbra](#settings)» de esta guía (haga clic en la pestaña «**Firmas**»).
+Encontrará los detalles de configuración en la sección "[Configurar las preferencias de la interfaz Zimbra](#settings)" de esta guía (haga clic en la pestaña "**Firmas**").
 
 ### Respuestas automáticas / Respondedor <a name="auto-reply"></a>
 
-Cuando no esté presente y no pueda consultar su cuenta de correo, puede implementar un mensaje de ausencia que se enviará automáticamente al remitente. En el webmail Zimbra, esta funcionalidad recibe el nombre de «Fuera de la oficina».
+Cuando no esté presente y no pueda consultar su cuenta de correo, puede implementar un mensaje de ausencia que se enviará automáticamente al remitente. En el webmail Zimbra, esta funcionalidad recibe el nombre de "Fuera de la oficina".
 
 Para acceder a la gestión de su contestador, haga clic en la rueda dentada en la parte superior derecha de su interfaz, luego en `Parámetros`{.action} y finalmente en `Fuera de la oficina`{.action}.
 
@@ -507,4 +507,4 @@ De forma predeterminada, la opción `Habilitar respuesta automática durante est
 
 [Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
