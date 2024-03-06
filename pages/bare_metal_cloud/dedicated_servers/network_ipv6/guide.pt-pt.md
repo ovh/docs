@@ -534,7 +534,6 @@ sudo systemctl restart network
 ```sh
 sudo systemctl restart NetworkManager
 ```
-
 #### Passo 5: Testar a conetividade IPv6
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
@@ -554,7 +553,6 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
 Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
-
 
 ### Windows Server 2016 e versões posteriores
 

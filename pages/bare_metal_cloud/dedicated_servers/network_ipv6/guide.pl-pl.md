@@ -63,7 +63,6 @@ Brama IPv6 przypisana do Twojego serwera jest wyświetlana w sekcji `Sieć` w za
 
 ![configureipv6](images/ipv6_information.png){.thumbnail}
 
-
 ### Poprzez API OVHcloud <a name="viaapi"></a>
 
 Innym sposobem pobierania informacji dotyczących sieci jest [korzystanie z API OVHcloud](/pages/manage_and_operate/api/first-steps).
@@ -465,7 +464,6 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
 Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
-
 
 ### CentOS 7, Alma Linux (8 i 9) i Rocky Linux (8 i 9)
 

@@ -276,7 +276,7 @@ gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 dns=2001:41d0:3:163::1;
 ```
 
-**Exemple de configuration:**
+**Ejemplo de configuración:**
 
 ```sh
 sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -346,7 +346,7 @@ Los archivos de configuración de red se encuentran en el directorio `/etc/netpl
 ssh user@serverIP
 ```
 
-#### 2. Créer le fichier de configuration réseau
+#### 2. Crear el archivo de configuración de red
 
 El mejor enfoque es crear un archivo de configuración independiente con una extensión .yaml para configurar las direcciones IPv6 en el directorio `/etc/netplan/`. De esta forma, puede revertir fácilmente los cambios en caso de error.
 
