@@ -19,6 +19,8 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
 
+<a name="procedure"></a>
+
 ## Instructions
 
 You can access the IPMI using several different methods, the Java applet (recommended), the KVM tool from a web browser (recommended but only available for the latest servers) or the browser (Serial over LAN).
@@ -196,7 +198,7 @@ Then reboot the server with this command:
 ipmiutil reset -b
 ```
 
-Afterwards, access the [IPMI console](#instructions) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). You should see the server's BIOS menu displayed.
+Afterwards, access the [IPMI console](#procedure) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). You should see the server's BIOS menu displayed.
 
 ![KVM BIOS](images/kvm_bios.png){.thumbnail}
 

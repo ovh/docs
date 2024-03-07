@@ -19,6 +19,8 @@ La console IPMI (Intelligent Platform Management Interface) permet d’établir 
 >
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
+<a name="procedure"></a>
+
 ## En pratique
 
 La connexion à l’IPMI peut s’effectuer principalement via plusieurs méthodes : l’applet Java (conseillé) ou le navigateur (Serial over LAN).
@@ -204,7 +206,7 @@ Redémarrez ensuite le serveur avec cette commande :
 ipmiutil reset -b
 ```
 
-Accédez alors à la [console IPMI](#instructions) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Le menu BIOS du serveur doit s'afficher.
+Accédez alors à la [console IPMI](#procedure) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Le menu BIOS du serveur doit s'afficher.
 
 ![KVM BIOS](images/kvm_bios.png){.thumbnail}
 

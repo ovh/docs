@@ -19,7 +19,7 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
-<a name="instructions"></a>
+<a name="procedure"></a>
 
 ## Instructions
 
@@ -198,7 +198,7 @@ Then reboot the server with this command:
 ipmiutil reset -b
 ```
 
-Afterwards, access the [IPMI console](#instructions) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). You should see the server's BIOS menu displayed.
+Afterwards, access the [IPMI console](#procedure) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). You should see the server's BIOS menu displayed.
 
 ![KVM BIOS](images/kvm_bios.png){.thumbnail}
 
