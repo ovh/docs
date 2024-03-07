@@ -23,6 +23,8 @@ Atenção: por vezes, poderá encontrar o termo KVM (Keyboard Video and Mouse), 
 >
 > Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
 
+<a name="procedure"></a>
+
 ## Instruções
 
 A ligação ao IPMI pode ser efetuada principalmente através de vários métodos: applet Java (aconselhado) ou o browser (Serial over LAN).
@@ -208,7 +210,7 @@ De seguida, reinicie o servidor com este comando:
 ipmiutil reset -b
 ```
 
-Aceda à [consola IPMI](#instructions) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). O menu BIOS do servidor deve ser exibido.
+Aceda à [consola IPMI](#procedure) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). O menu BIOS do servidor deve ser exibido.
 
 ![KVM BIOS](images/kvm_bios.png){.thumbnail}
 
