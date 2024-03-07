@@ -3,17 +3,6 @@ title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C
 excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-S3
 updated: 2022-04-15
 ---
-<style>
-td:nth-of-type(1) {
-  vertical-align: top;
-  white-space: nowrap;
-}
-.optional {
-  font-style:italic;
-  margin-top:10px;
-  text-align:center;
-}
-</style>
 
 ## Introduction à la Protection des Données chez OVHcloud
 
