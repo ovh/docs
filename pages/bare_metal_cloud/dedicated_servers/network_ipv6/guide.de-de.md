@@ -61,7 +61,7 @@ Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?a
 
 Das Ihrem Server zugewiesene IPv6-Gateway wird im Bereich `Netzwerk` des Tab `Allgemeine Informationen`{.action} angezeigt. Nachdem Sie die Datei kopiert haben, fahren Sie mit Schritt 2 "[IPv6-Konfiguration anwenden](#applyipv6)" fort.
 
-![configureIPv6](images/IPv6_information.png){.thumbnail}
+![configureIPv6](images/ipv6_information.png){.thumbnail}
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 

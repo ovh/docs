@@ -324,7 +324,7 @@ sudo netplan apply
 > When using the `netplan try` command, it is possible that the system returns a warning message such as `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. This simply means that the file does not have restrictive permissions. This does not affect the configuration of your Additional IP. For more information about file permissions, consult the [official documentation of ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### CentOS 7, Alma Linux (8 & 9), Rocky Linux (8 & 9)
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 
@@ -450,17 +450,17 @@ In the commands below, you need to replace:
 
 In the command prompt:
 
-1. Switch to a fixed IP
+1\. Switch to a fixed IP
 
 ```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
-2. Set the DNS server
+2\. Set the DNS server
 
 ```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
-3. Add an Additional IP
+3\. Add an Additional IP
 
 ```powershell
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
