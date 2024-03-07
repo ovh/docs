@@ -1,22 +1,23 @@
 ---
-title: Pushing logs with a forwarder - Syslog-ng 3.12.1+ (Linux)
-updated: 2024-03-05
+title: "Pushing logs with a forwarder - Syslog-ng 3.12.1+ (Linux)"
+excerpt: "Find out how to send logs from your Linux instance to Logs Data Platform"
+updated: 2024-03-07
 ---
 
 ## Objective
 
 You have a server, a raspberry pi, a cloud instance or something else running on **Linux** and you want to follow your Logs, the easy way? You have never installed a log collector and you're new to Graylog?
 
-Then this guide is for you!
+Then this tutorial is for you!
 
-In this guide will show you how to send Logs from your Linux instance to Logs Data Platform. Don't be afraid, it will be easier than you think.
+In this tutorial will show you how to send Logs from your Linux instance to Logs Data Platform. Don't be afraid, it will be easier than you think.
 
 ## Requirements
 
 - A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 12** in this tutorial
 - A root access to this instance
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
+- [Activated your Logs Data Platform account](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 
 ## Instructions
 
@@ -26,7 +27,7 @@ On Linux, logs are generated automatically, for a variety of actions. Excessive 
 
 ### What are logs?
 
-Here are some example logs from an OVHcloud Public Cloud instance on **Debian 12** :
+Here are some example logs from an OVHcloud Public Cloud instance on **Debian 12**:
 
 ```text
  Jan 27 12:21:15 server syslog-ng[29512]: syslog-ng starting up; version='3.8.1'
@@ -35,7 +36,7 @@ Here are some example logs from an OVHcloud Public Cloud instance on **Debian 12
  Jan 29 18:39:24 server sshd[29694]: Failed password for root from 59.45.79.51 port 39827 ssh2
 ```
 
-Conclusion : lot of info, with a date, a process, a description. but hard to follow.
+Conclusion: lot of info, with a date, a process, a description. but hard to follow.
 
 ### Configure your Account
 
@@ -43,11 +44,11 @@ First thing to do is to configure your Logs Data Platform account: [create your 
 
 ### Install and configure a log collector
 
-So let's assume you have your Linux. This guide **DOES NOT** fully cover how to configure other flavors of syslog nor other OSs. Please refer to their own documentation to know how to setup a source, filter and an external destination for the logs. You can still read this entire document to have a grasp on how the configuration is built. However this configuration should work on any syslog-ng version above 3.12.1.
+So let's assume you have your Linux. This tutorial **DOES NOT** fully cover how to configure other flavors of syslog nor other OSs. Please refer to their own documentation to know how to setup a source, filter and an external destination for the logs. You can still read this entire document to have a grasp on how the configuration is built. However this configuration should work on any syslog-ng version above 3.12.1.
 
 We will install a log collector. What is it? It's a tool that collects logs from any source, processes them and delivers them to various destinations, like the Logs Data Platform.
 
-In this section we will install Syslog-ng :
+In this section we will install Syslog-ng:
 
 - Log in your Linux
 - Install syslog-ng and the last certificates
@@ -66,7 +67,7 @@ $ debian@server:~$ sudo nano /etc/syslog-ng/conf.d/ldp.conf
 
 - Copy-paste this configuration. Don't forget to replace the **<YOUR X-OVH-TOKEN VALUE>** with your stream write token and **<YOUR LDP CLUSTER>** with your Logs Data Platform cluster address.
 
-``` console
+```console
 rewrite ovh-token {
     # This will add X-OVH-TOKEN as custom structured data specified by the RFC 5424.
     # change <YOUR X-OVH-TOKEN VALUE> by the value of your X-OVH-TOKEN.
@@ -89,7 +90,7 @@ destination ovhPaaSLogs {
     );
 };
 
-## your can use this destination for debugging purpose
+## you can use this destination for debugging purpose
 #destination debugfile {
 #    file("/var/log/debugpaaslogs.log"
 #      flags(syslog-protocol)
@@ -106,20 +107,19 @@ log { source(s_src); rewrite(ovh-token); destination(ovhPaaSLogs); };
 >
 > - Copy the **data-gathering tools certificate** from the manager Home page in SSL Configuration section, and paste it in file "/usr/local/share/ca-certificates/ldp.pem"
 > - Ensure the permission on this file is 644
-> ```shell-session
-> $ debian@server:~$ sudo chmod 644 /usr/share/ca-certificates/ldp.pem
-> ```
+> 
+> <pre class="highlight language-console"><code class="language-console">$ debian@server:~$ sudo chmod 644 /usr/share/ca-certificates/ldp.pem</code></pre>
+> 
 > - Import this certificate to your system's trusted CA repository
-> ```shell-session
-> $ debian@server:~$ sudo update-ca-certificates
-> ```
->
+> 
+> <pre class="highlight language-console"><code class="language-console">$ debian@server:~$ sudo update-ca-certificates</code></pre>
+> 
 
 Let's review this configuration.
 
-**REWRITE** : this will set your X-OVH-TOKEN as an RFC 5424 structured data. You can retrieve your stream write token by going to `Stream page`{.action} in the OVHcloud Control Panel and select **Copy the write token** from the desired stream.
+**REWRITE**: this will set your X-OVH-TOKEN as an RFC 5424 structured data. You can retrieve your stream write token by going to `Stream page`{.action} in the OVHcloud Control Panel and select **Copy the write token** from the desired stream.
 
-**DESTINATION** : This is where we will deliver logs in nearly real time. Here, we have two destinations : The first is the remote endpoint in Logs Data Platform, the second one in comment is a local file for debugging purpose only. You can find your Logs Data Platform cluster address by going to `Home page`{.action} in the OVHcloud Control Panel in **access point** configuration. For debugging purpose, you can uncomment the "debugfile" section to check if the whole pipeline is working properly. It will write to local file destination. Since local file writing might consumes a lot of I/O resources, we recommend to not use this debugging output in production.
+**DESTINATION**: This is where we will deliver logs in nearly real time. Here, we have two destinations: The first is the remote endpoint in Logs Data Platform, the second one in comment is a local file for debugging purpose only. You can find your Logs Data Platform cluster address by going to `Home page`{.action} in the OVHcloud Control Panel in **access point** configuration. For debugging purposes, you can uncomment the "debugfile" section to check if the whole pipeline is working properly. It will write to local file destination. Since local file writing might consume a lot of I/O resources, we recommend to not use this debugging output in production.
 
 **LOG**: This directive specifies the whole pipeline: "s_src" => "ovh-token" => "ovhPaasLogs".
 
@@ -132,20 +132,20 @@ $ debian@server:~$ sudo systemctl restart syslog-ng.service
 
 ### Let's play with Graylog Dashboards
 
-Let's recap : you have a Linux instance, and it's sending log locally and remotely, thanks to the syslog-ng log collector. We send two types of flows : internal() and system()
+Let's recap: you have a Linux instance, and it's sending log locally and remotely, thanks to the syslog-ng log collector. We send two types of flows: internal() and system()
 
-The last step is to create a dashboard displaying the results :
+The last step is to create a dashboard displaying the results:
 
 - Connect to the Logs Data Platform manager, ensure you that you have a Stream and that the token in the syslog configuration file is OK. Ensure that you have a Dashboard created.
 - Head to your stream by using the button `Graylog access`{.action} located in the **...** menu of your stream, or head directly to the graylog access of your cluster.
 - Once in Graylog, Go in Stream Tab, click on your stream. In the top-left corner, chose a 1 Day range and click on the green button to search.
-- You should have some results like this :
+- You should have some results like this:
 
 ![Graylog search view](images/search.png){.thumbnail}
 
 - On the top right corner of the histogram, click on `Add to dashboard`{.action}.
 
-Alright, you just created the first widget in you dashboard. Now, let's create a Pie chart :
+Alright, you just created the first widget in you dashboard. Now, let's create a Pie chart:
 
 - On the left, click on the small blue triangle before "facility"
 - Click on "Quick Values"
