@@ -1,7 +1,7 @@
 ---
 title: Backing up a Bare Metal Server with Veeam Enterprise
 excerpt: Learn how to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise)
-updated: 2024-01-08
+updated: 2024-03-07
 ---
 
 ## Objective
@@ -9,6 +9,9 @@ updated: 2024-01-08
 Whether it is a hardware failure or accidentally deleting an important file, maintaining frequent backups is extremely important and can save you countless hours of unnecessary work.
 
 **Learn how to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise)**
+
+> [!primary]
+> To back up your Bare Metal server using the Veeam Agent for Microsoft Windows, see [this guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent).
 
 ## Requirements
 

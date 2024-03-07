@@ -1,7 +1,7 @@
 ---
 title: Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise
 excerpt: Découvrez comment préparer la sauvegarde de votre serveur Bare Metal à l'aide de Veeam Backup and Replication (Enterprise)
-updated: 2024-01-08
+updated: 2024-03-07
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Ce guide vous détaille comment préparer la sauvegarde de votre serveur Bare Me
 
 - Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/)
 - Une solution de sauvegarde [Veeam Enterprise](https://www.ovhcloud.com/fr-ca/storage-solutions/veeam-enterprise/)
--  Un service [OVHcloud Standard S3 Object Storage](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/) (facultatif)
+- Un service [OVHcloud Standard S3 Object Storage](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/) (facultatif)
 
 ## En pratique
 
