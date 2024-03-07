@@ -1,7 +1,7 @@
 ---
 Title: Guide OVHcloud : Sécuriser vos données avec le chiffrement CSE ou SSE
 excerpt: Découvrez comment sécuriser vos données stockées avec les options de chiffrement CSE, SSE-C, et SSE-S3 chez OVHcloud, et choisissez la meilleure solution pour vos besoins.
-updated: 2024-03-06
+updated: 2024-03-07
 ---
 
 <style>
@@ -15,26 +15,6 @@ td:nth-of-type(1) {
   text-align:center;
 }
 </style>
-
-# 1. Introduction
-
-Chez OVHcloud, nous comprenons l'importance cruciale de la protection des données dans l'écosystème numérique actuel. Face à des menaces de sécurité en constante évolution et à des exigences réglementaires de plus en plus strictes, il est essentiel de mettre en place des mesures robustes pour sécuriser les données à tout moment. Cela inclut non seulement les données en transit mais également les données au repos.
-
-La protection des données "at rest", c'est-à-dire des données stockées sur des dispositifs physiques ou dans le cloud, est un élément crucial de la stratégie de sécurité informatique de toute organisation. Dans ce contexte, deux approches principales se distinguent pour le chiffrement de ces données : le chiffrement côté client (Client-Side Encryption, CSE) et le chiffrement côté serveur (Server-Side Encryption, SSE).
-
-## Le chiffrement côté client (Client-Side Encryption, CSE)
-
-Le chiffrement côté client permet à nos clients de chiffrer leurs données sur leur propre dispositif avant de les envoyer vers nos serveurs pour stockage. Cette méthode assure que les données restent cryptées tout au long de leur cycle de vie, offrant un haut degré de sécurité, puisque les clés de chiffrement sont gérées par le client et jamais partagées avec OVHcloud ou tout autre tiers. Bien que cette approche exige une gestion rigoureuse des clés de la part du client, elle représente une solution idéale pour ceux qui requièrent un contrôle total sur la sécurité de leurs données.
-
-## Le chiffrement côté serveur (Server-Side Encryption, SSE)
-
-Le chiffrement côté serveur propose une alternative où les données sont chiffrées à leur arrivée sur nos serveurs. Cette responsabilité incombe à OVHcloud, ce qui allège considérablement la charge de gestion de la sécurité pour nos clients. Deux méthodes de chiffrement côté serveur sont disponibles :
-
-- **SSE-C (Server-Side Encryption with Customer Keys):** Avec SSE-C, vous pouvez fournir et gérer vos propres clés de chiffrement, vous offrant ainsi une maîtrise complète sur la sécurité de vos données. Cette option est particulièrement adaptée aux organisations ayant des besoins spécifiques en matière de conformité et de sécurité des données, puisqu'elle permet une gestion exclusive des clés de chiffrement.
-  
-- **SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys):** D'autre part, SSE-S3 simplifie le processus de chiffrement en utilisant des clés gérées par OVHcloud. Cette méthode est idéale pour les clients qui souhaitent bénéficier d'une solution de chiffrement robuste sans les complexités liées à la gestion des clés.
-
-L'objectif final, c'est de vous aider à choisir le meilleur type de chiffrement pour vous. On vous donne toutes les infos nécessaires pour faire un choix éclairé. Que vous préfériez gérer vous-même avec SSE-C ou opter pour la facilité de SSE-S3, on s'engage à offrir des solutions flexibles et sûres pour protéger vos données quand elles sont stockées.
 
 ## Objectif
 
