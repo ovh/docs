@@ -15,7 +15,7 @@ td:nth-of-type(1) {
   text-align:center;
 }
 </style>
-# Introduction à la Protection des Données chez OVHcloud
+## Introduction à la Protection des Données chez OVHcloud
 
 Chez OVHcloud, nous comprenons l'importance cruciale de la protection des données dans l'écosystème numérique actuel. Face à des menaces de sécurité en constante évolution et à des exigences réglementaires de plus en plus strictes, il est essentiel de mettre en place des mesures robustes pour sécuriser les données à tout moment. Cela inclut non seulement les données en transit mais également les données au repos.
 
