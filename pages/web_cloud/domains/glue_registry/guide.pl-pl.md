@@ -43,7 +43,7 @@ Możesz pobrać serwery DNS aktualnie używane przez Twoją domenę za pomocą n
 
 W tym celu kliknij link [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, wprowadź nazwę domeny bez *www* (przykład: *domain.tld*) następnie zaznacz przycisk `Options`{.action} znajdujący się tuż pod formularzem wprowadzania domeny.
 
-W dostępnych opcjach kliknij przycisk `Fetch NS from parent zone`{.action}.
+W dostępnych opcjach kliknij przycisk `Fetch nameservers from parent zone`{.action}.
 
 Wyświetli się wynik:
 

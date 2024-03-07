@@ -39,11 +39,11 @@ En función de sus necesidades, es posible personalizar el nombre de los servido
 
 ### Etapa 1: obtenga los servidores DNS que utiliza actualmente su dominio <a name="step1"></a>
 
-Puede recuperar los servidores DNS que utiliza actualmente su dominio mediante la herramienta DNS en línea [Zonemaster](https://zonemaster.fr/es/run-test){.external}.
+Puede recuperar los servidores DNS que utiliza actualmente su dominio mediante la herramienta DNS en línea [Zonemaster](https://zonemaster.fr/en/run-test){.external}.
 
-Para ello, acceda al enlace [https://zonemaster.fr](https://zonemaster.fr/es/run-test){.external}, introduzca su dominio sin los *www* (p. ej.: *domain.tld*) y marque el botón `Opciones`{.action} situado justo debajo del formulario de entrada del dominio.
+Para ello, acceda al enlace [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, introduzca su dominio sin los *www* (p. ej.: *domain.tld*) y marque el botón `Options`{.action} situado justo debajo del formulario de entrada del dominio.
 
-En las opciones disponibles, haga clic directamente en el botón `Obtener datos desde la zona padre`{.action}.
+En las opciones disponibles, haga clic directamente en el botón `Fetch nameservers from parent zone`{.action}.
 
 Se mostrará un resultado:
 

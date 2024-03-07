@@ -39,7 +39,7 @@ You can retrieve the DNS servers currently used by your domain name using the on
 
 To do this, go to [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, enter your domain name without *www* (*domain.tld*), then tick the `Options`{.action} button located just below the domain name entry form.
 
-In the available options, click on the button `Fetch NS from parent zone`{.action}.
+In the available options, click on the button `Fetch nameservers from parent zone`{.action}.
 
 A result is displayed:
 

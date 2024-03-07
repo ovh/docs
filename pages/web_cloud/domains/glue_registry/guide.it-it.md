@@ -43,7 +43,7 @@ In base alle esigenze, è possibile personalizzare il nome dei server DNS del do
 
 Accedi al link [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, inserisci il tuo dominio senza i *www* (esempio: *domain.tld*) e seleziona il pulsante `Options`{.action} situato immediatamente sotto il modulo di inserimento del nome di dominio.
 
-Nelle opzioni disponibili, clicca direttamente sul pulsante `Fetch NS from parent zone`{.action}.
+Nelle opzioni disponibili, clicca direttamente sul pulsante `Fetch nameservers from parent zone`{.action}.
 
 Viene visualizzato un risultato:
 

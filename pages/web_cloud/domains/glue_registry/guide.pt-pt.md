@@ -43,7 +43,7 @@ Pode recuperar os servidores DNS atualmente utilizados pelo seu nome de domínio
 
 Para isso, aceda à ligação [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, introduza o seu nome de domínio sem as *www* (exemplo: *domain.tld*) e escolha o botão `Options`{.action} situado logo abaixo do formulário de introdução do nome de domínio.
 
-Nas opções disponíveis, clique diretamente no botão `Fetch NS from parent zone`{.action}.
+Nas opções disponíveis, clique diretamente no botão `Fetch nameservers from parent zone`{.action}.
 
 Surge um resultado:
 

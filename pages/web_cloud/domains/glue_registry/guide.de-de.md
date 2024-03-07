@@ -43,7 +43,7 @@ Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS
 
 Gehen Sie hierzu auf [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, geben Sie Ihren Domainnamen ohne *www* (*domain.tld*) ein und klicken Sie dann auf den Button `Options`{.action} unter dem Eingabeformular für den Domainnamen.
 
-Klicken Sie in den Optionen auf `Fetch NS from parent zone`{.action}.
+Klicken Sie in den Optionen auf `Fetch nameservers from parent zone`{.action}.
 
 Es wird ein Ergebnis angezeigt:
 
