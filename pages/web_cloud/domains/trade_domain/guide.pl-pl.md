@@ -1,7 +1,7 @@
 ---
 title: "Zmiana właściciela domeny"
 excerpt: "W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny."
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 > [!primary]

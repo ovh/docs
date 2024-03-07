@@ -1,7 +1,7 @@
 ---
 title: "Changing the owner of a domain name"
 excerpt: "Find out how to change the owner of a a domain name in the OVHcloud Control Panel"
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 ## Objective

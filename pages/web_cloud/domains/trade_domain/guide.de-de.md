@@ -1,7 +1,7 @@
 ---
 title: "Inhaber eines Domainnamens ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können"
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 > [!primary]
