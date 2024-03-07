@@ -240,6 +240,47 @@ Pour envoyer un objet dans votre bucket S3 sur OVHcloud avec chiffrement SSE-S3,
 aws s3api put-object --bucket votre-bucket --key votre-objet --body chemin/vers/votre/fichier --server-side-encryption AES256 --endpoint-url https://s3.<region>.ovhcloud.com
 ```
 
+# Instructions de remplacement pour la commande AWS CLI
+
+Lorsque vous utilisez la commande AWS CLI pour uploader un objet avec chiffrement SSE-S3 sur OVHcloud S3, assurez-vous de remplacer les valeurs suivantes selon vos informations spécifiques :
+
+- `votre-bucket` : Remplacez cette valeur par le nom de votre bucket S3 où vous souhaitez envoyer l'objet.
+- `votre-objet` : Remplacez par la clé ou le nom sous lequel vous voulez que l'objet soit stocké dans le bucket.
+- `chemin/vers/votre/fichier` : Indiquez le chemin d'accès complet au fichier que vous prévoyez d'envoyer.
+- `<region>` : Remplacez par la région de votre service OVHcloud S3, qui héberge votre bucket.
+
+L'option `--server-side-encryption AES256` dans la commande indique que vous souhaitez appliquer le chiffrement SSE-S3. Cela garantit que l'objet envoyé est chiffré de manière sécurisée directement sur le serveur OVHcloud, offrant une couche supplémentaire de protection pour vos données.
+# Considérations sur le Chiffrement SSE-S3
+
+Lors de l'utilisation du chiffrement SSE-S3 sur OVHcloud S3, il est important de prendre en compte les éléments suivants :
+
+## Performances
+- **Surcharge** : Le chiffrement SSE-S3 peut introduire une légère surcharge due au processus de chiffrement et de déchiffrement. Cependant, cette surcharge est généralement minime et n'affecte pas significativement les performances globales.
+
+## Sécurité
+- **Gestion des clés** : SSE-S3 offre un haut niveau de sécurité en gérant automatiquement les clés de chiffrement. Cela simplifie la gestion de la sécurité pour les utilisateurs.
+- **Pratiques de sécurité supplémentaires** : Il est crucial de combiner le chiffrement SSE-S3 avec d'autres pratiques de sécurité pour une protection optimale. Cela inclut l'utilisation de politiques IAM strictes et le suivi des accès aux logs pour surveiller et contrôler l'accès aux données.
+
+## Comparaison des Méthodes d'Encryption
+
+Il est essentiel de comparer les différentes méthodes de chiffrement disponibles pour choisir celle qui convient le mieux à vos besoins spécifiques. Les méthodes à considérer incluent le chiffrement côté client (CSE) et le chiffrement côté serveur (SSE), avec ses variantes SSE-C et SSE-S3.
+
+### Avantages et Inconvénients
+
+- **CSE vs SSE** : Chaque méthode a ses propres avantages et inconvénients en termes de facilité de gestion, de sécurité et d'impact sur les performances.
+- **Cas d'usage recommandés** : Selon votre situation spécifique, certaines méthodes peuvent être plus appropriées que d'autres. Il est important d'évaluer les cas d'usage recommandés pour chaque méthode de chiffrement.
+
+Un tableau comparatif peut être utile pour résumer ces éléments, offrant une vue d'ensemble claire qui facilite la prise de décision.
+
+| Méthode de Chiffrement | Avantages | Inconvénients | Cas d’Usage Recommandés |
+|------------------------|-----------|---------------|-------------------------|
+| **CSE (Client-Side Encryption)** | - Contrôle total sur les clés de chiffrement<br>- Sécurité maximisée car les clés ne quittent jamais le client | - Gestion complexe des clés<br>- Responsabilité complète de la sécurité des clés | - Scénarios nécessitant une conformité spécifique<br>- Haute sensibilité des données |
+| **SSE-C (Server-Side Encryption with Customer Keys)** | - Maîtrise sur les clés de chiffrement<br>- Sécurité renforcée sans la complexité totale de CSE | - Nécessité de fournir les clés à chaque requête<br>- Gestion des clés plus complexe que SSE-S3 | - Conformité et contrôle sur les clés<br>- Besoins intermédiaires en sécurité |
+| **SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys)** | - Simplicité de mise en œuvre<br>- Gestion des clés automatique par OVHcloud<br>- Transparence d'utilisation | - Moins de contrôle sur les clés de chiffrement par rapport à CSE et SSE-C | - Usage général où la facilité de gestion est prioritaire<br>- Données moins sensibles |
+
+Chaque méthode de chiffrement a ses propres forces et faiblesses. Le choix de la méthode dépend de plusieurs facteurs, notamment le niveau de sécurité requis, la complexité de la gestion des clés que vous êtes prêt à assumer, et les spécificités réglementaires ou de conformité auxquelles votre organisation doit adhérer.
+
+
 ## Aller plus loin
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
