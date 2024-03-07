@@ -361,7 +361,7 @@ Vuelva a la línea de comandos y copie los archivos de inicio de la partición d
 
 Introduzca los siguientes 3 comandos y ejecutarlos cada uno con la tecla `Entrar`:
 
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:
