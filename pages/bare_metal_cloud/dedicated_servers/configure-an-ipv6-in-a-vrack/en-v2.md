@@ -6,9 +6,10 @@ updated: 2024-02-12
 
 ## Objective
 
-As well as private IP addressing, the [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} also allows you to route public IP traffic through your server's [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} port using a public IPV6 address block.
+The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses. 
 
-**This guide will show you how to configure a block of public IPV6 addresses for use with the vRack.**
+**This guide simplifies configuring an additional IPv6 address block within vRack and its associated products.**
+
 
 
 ## Requirements
