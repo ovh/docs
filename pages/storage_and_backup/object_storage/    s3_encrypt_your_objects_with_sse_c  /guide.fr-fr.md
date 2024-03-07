@@ -22,7 +22,7 @@ L'utilisation du chiffrement côté serveur avec des clés de chiffrement fourni
 
 Lorsque vous téléchargez un objet, S3 Object Storage utilise la clé de chiffrement que vous fournissez pour appliquer le chiffrement AES-256 à vos données. Lorsque vous récupérez un objet, vous devez fournir la même clé de cryptage dans le cadre de votre demande. S3 Object Storage vérifie d'abord que la clé de chiffrement que vous avez fournie correspond, puis déchiffre l'objet avant de vous renvoyer les données de l'objet.
 
-**Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C.**
+**Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C et SSE-S3.**
 
 > [!warning]
 >
