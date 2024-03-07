@@ -209,9 +209,12 @@ Notre engagement envers la sécurité de vos données est renforcé par l'utilis
 
 Pour approfondir votre compréhension du Key Management Service (KMS) d'OVHcloud et de ses applications dans divers contextes d'infrastructure cloud, nous vous recommandons de consulter les ressources suivantes :
 
-- **Mise en route du KMS CipherTrust Manager - OVHcloud** : Ce document offre un aperçu détaillé de la mise en œuvre et de l'utilisation du KMS pour sécuriser vos données.
-- **Enabling Virtual Machine Encryption (VM Encrypt) - OVHcloud** : Guide pratique sur l'activation du chiffrement de machines virtuelles en utilisant les capacités de KMS.
-- **Enabling virtual machine encryption with vSphere Native Key Provider - OVHcloud** : Instructions détaillées sur l'utilisation de KMS en conjonction avec le fournisseur de clés natif vSphere pour le chiffrement de machines virtuelles.
+- **[Mise en route du KMS CipherTrust Manager - OVHcloud](https://help.ovhcloud.com/csm/fr-vmware-kms-cipher-trust?id=kb_article_view&sysparm_article=KB0032913)** : Ce document offre un aperçu détaillé de la mise en œuvre et de l'utilisation du KMS pour sécuriser vos données.
+- **[Enabling Virtual Machine Encryption (VM Encrypt) - OVHcloud](https://help.ovhcloud.com/csm/en-gb-vmware-vm-encrypt?id=kb_article_view&sysparm_article=KB0046176)** : Guide pratique sur l'activation du chiffrement de machines virtuelles en utilisant les capacités de KMS.
+- **[Enabling virtual machine encryption with vSphere Native Key Provider - OVHcloud](https://help.ovhcloud.com/csm/en-ie-vmware-vm-encrypt-vnkp?id=kb_article_view&sysparm_article=KB0046188)** : Instructions détaillées sur l'utilisation de KMS en conjonction avec le fournisseur de clés natif vSphere pour le chiffrement de machines virtuelles.
+
+Ces documents fournissent des informations précieuses sur la manière dont le KMS peut être utilisé pour renforcer la sécurité dans différents scénarios d'infrastructure cloud.
+
 
 Ces documents fournissent des informations précieuses sur la manière dont le KMS peut être utilisé pour renforcer la sécurité dans différents scénarios d'infrastructure cloud.
 
