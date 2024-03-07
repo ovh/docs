@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2024-02-28
+updated: 2024-03-06
 ---
 
 <style>
@@ -153,7 +153,7 @@ Lorsque vous sélectionnez un e-mail est sélectionné, de nombreuses actions so
     - **Marquer comme non lu**.
     - **Étoile** : attribuer une étoile à votre e-mail pour le mettre en évidence et l'identifier plus facilement.
     - **Supprimer l'étoile** : retirer l'étoile attribuée à cet e-mail.
-    - **Bloquer** : afficher l'e-mail sous sa forme brute avec l'en-tête.
+    - **Bloquer** : bloquer les e-mails provenant de l'expéditeur et/ou supprimer tous les emails existants provenant de cet expéditeur.
     - **Afficher l'original** : Afficher le message dans son intégralité, corps et en-tête.
     - **Nouveau filtre** : créer un filtre à partir de l'expéditeur et de l'objet du message sélectionné.
     - **Imprimer** : imprimer la conversation ou l'e-mail sélectionné.
@@ -405,7 +405,7 @@ En fonction du champ de comparaison désigné précédemment, l'opérateur de co
 
 > **Utilisation de caractères joker dans les filtres**
 >
-> Les caractères joker, caractères générique ou encore appelés « wildcard » peuvent être utilisés dans le champ de saisie pour la comparaison qui utilisent l’opérateur de comparaison « **Correspond aux caractères joker / Ne correspond pas aux caractères joker** ». Les deux caractères génériques sont `*` et `?`.
+> Les caractères joker, caractères génériques ou encore appelés « wildcard » peuvent être utilisés dans le champ de saisie pour la comparaison qui utilisent l’opérateur de comparaison « **Correspond aux caractères joker / Ne correspond pas aux caractères joker** ». Les deux caractères génériques sont `*` et `?`.
 >
 > - L'astérisque `*` est un espace réservé pour zéro ou plusieurs caractères de n'importe quel type.<br><br> Par exemple, pour la chaîne de recherche « maison\*bleue », elle renverrait les correspondances « maison bleue », « maisons » ou encore « maison en bois bleue ». Cependant, il ne renverrait pas « super-maison en bois bleue ». <br><br> Autre exemple de chaîne de recherche « p\*maison » qui renverrait les correspondances « petite maison », « partir de sa maison ». Cependant, il ne renverrait pas « prêter sa maison à un ami ».
 >
