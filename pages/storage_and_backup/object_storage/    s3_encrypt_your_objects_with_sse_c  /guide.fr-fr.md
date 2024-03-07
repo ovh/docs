@@ -222,6 +222,23 @@ Ces documents fournissent des informations précieuses sur la manière dont le K
 
 Pour renforcer la sécurité des données téléchargées sur OVHcloud, l'activation du chiffrement côté serveur (SSE-S3) a été conçue pour être à la fois facile et transparente. En configurant une méthode de chiffrement par défaut sur votre bucket via la requête `PutBucketEncryption`, tout objet téléchargé sera automatiquement chiffré sans nécessiter d'actions supplémentaires de votre part. Lors du téléchargement d'un objet, il suffit de spécifier l'option de chiffrement dans la requête d'API ou via la ligne de commande AWS CLI. OVHcloud prend en charge le reste, chiffrant vos données avant leur stockage en utilisant une clé unique générée automatiquement pour le bucket.
 
+# Gestion sécurisée des clés de chiffrement avec SSE-S3 sur OVHcloud S3
+
+Ce guide présente un processus de gestion des clés de chiffrement pour les données stockées sur OVHcloud S3, en utilisant le chiffrement côté serveur SSE-S3. L'approche décrite garantit une gestion sécurisée et efficiente des clés de chiffrement, où chaque bucket a sa propre clé unique pour assurer une protection individuelle des données. Le design du mécanisme vise à simplifier au maximum l'expérience de l'utilisateur, en éliminant la nécessité de gérer directement les clés de chiffrement tout en préservant un haut niveau de sécurité des données.
+
+## Envoi d'un objet avec SSE-S3 sur OVHcloud S3
+
+Pour envoyer un objet dans votre bucket S3 sur OVHcloud et y appliquer un chiffrement SSE-S3, utilisez la commande suivante via l'AWS CLI, en spécifiant le chiffrement côté serveur :
+
+Pour uploader un objet dans votre bucket S3 sur OVHcloud et appliquer le chiffrement SSE-S3, utilisez la commande suivante via l'AWS CLI. Cette commande permet de spécifier l'option de chiffrement côté serveur pour assurer une sécurité renforcée de vos données.
+
+# Upload d'un objet sur OVHcloud S3 avec chiffrement SSE-S3
+
+Pour envoyer un objet dans votre bucket S3 sur OVHcloud avec chiffrement SSE-S3, utilisez la commande Bash suivante via l'AWS CLI. Cette commande intègre l'option de chiffrement côté serveur pour renforcer la sécurité de vos données stockées.
+
+```bash
+aws s3api put-object --bucket votre-bucket --key votre-objet --body chemin/vers/votre/fichier --server-side-encryption AES256 --endpoint-url https://s3.<region>.ovhcloud.com
+```
 
 ## Aller plus loin
 
