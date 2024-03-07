@@ -45,7 +45,7 @@ Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 >
 > - el sitio web del registro **TLD** correspondiente;
 > - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es-es/domains/tld/);
-> - la sección `Operaciones en curso`{.action} del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para comprobar las actualizaciones del estado del dominio.
+> - actualizaciones de estado del dominio. Para comprobarlo, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección «Web Cloud» de la columna izquierda de la página web de OVHcloud {.action}. En la columna de la izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 >
 
 ### 1. seleccionar el dominio
