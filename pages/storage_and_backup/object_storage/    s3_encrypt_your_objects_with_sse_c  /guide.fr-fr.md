@@ -39,12 +39,6 @@ En parallèle, le chiffrement côté serveur (SSE) propose une alternative où l
 
 L'objectif final est de vous aider à choisir le meilleur type de chiffrement pour vous. Nous vous donnons toutes les informations nécessaires pour faire un choix éclairé. Que vous préfériez gérer vous-même avec SSE-C ou opter pour la facilité de SSE-S3, nous nous engageons à offrir des solutions flexibles et sûres pour protéger vos données quand elles sont stockées.
 
-## Objectif
-
-L'utilisation du chiffrement côté serveur avec des clés de chiffrement fournies par le client (SSE-C) vous permet de définir vos propres clés de chiffrement.  
-
-Lorsque vous téléchargez un objet, S3 Object Storage utilise la clé de chiffrement que vous fournissez pour appliquer le chiffrement AES-256 à vos données. Lorsque vous récupérez un objet, vous devez fournir la même clé de cryptage dans le cadre de votre demande. S3 Object Storage vérifie d'abord que la clé de chiffrement que vous avez fournie correspond, puis déchiffre l'objet avant de vous renvoyer les données de l'objet.
-
 **Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C et SSE-S3.**
 
 > [!warning]
