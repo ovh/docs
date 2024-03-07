@@ -1,38 +1,38 @@
 ---
-title: 'Web Cloud Databases - How to retrieve logs?'
-excerpt: 'Find out how to retrieve the logs of your databases hosted on your Web Cloud Databases server'
-updated: 2024-03-05
+title: "Web Cloud Databases - How to retrieve logs"
+excerpt: "Find out how to retrieve the logs of your databases hosted on your Web Cloud Databases server"
+updated: 2024-03-07
 ---
 
 ## Objective
 
-With the [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solution, you can host multiple databases. In some situations, you may need to view/retrieve the logs:
+With the [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solution, you can host multiple databases. In some situations, you may need to view or retrieve the logs of:
 
-- your Web Cloud Databases server;
-- for one of the databases hosted on your Web Cloud Databases server.
+- Your Web Cloud Databases server.
+- One of the databases hosted on your Web Cloud Databases server.
 
-**Find out how to retrieve the logs for your databases hosted on your Web Cloud Databases server**
+**This guide explains how to retrieve the logs of your databases hosted on your Web Cloud Databases server.**
 
 ## Requirements
 
-- a [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solution (may or may not be included in a [performance web hosting](https://www.ovhcloud.com/asia/web-hosting/) solution).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}.
+- A [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solution (included in a [Performance web hosting](https://www.ovhcloud.com/asia/web-hosting/) solution or standalone)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
-> 
-> We offer this tutorial to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) if you experience any difficulties. We will not be able to provide you with interpretation assistance for the logs available with your Web Cloud Databases solution. More information in the [Go further](#go-further) section of this tutorial.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you encounter any difficulties. We will not be able to provide you with interpretation assistance for the logs available with your Web Cloud Databases solution. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
-### View logs for your Web Cloud Databases solution in real time
+### View real-time logs for your Web Cloud Databases solution
 
 To check the logs for your Web Cloud Databases solution in real time, perform the following actions:
 
 1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
-2. On the line at the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+2. In the top menu of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Web Cloud Databases`{.action} dropdown menu.
 4. Select the Web Cloud Databases solution concerned.
 5. On the page that appears, click on the `Logs`{.action} tab.
@@ -43,9 +43,9 @@ This integrated console provides you with real-time logs for your Web Cloud Data
 
 > [!primary]
 >
-> As detailed above, logs are only available here in real time. This means that these logs will only appear if they are generated when you are in the `Logs`{.action} tab. 
+> Since the logs are only available in real time, they are only genrated and displayed while the `Logs`{.action} tab is open.
 >
-> If you leave the `Logs`{.action} tab and come back to it later, the history that was previously displayed will be gone.
+> If you leave the `Logs`{.action} tab and come back to it later, the log history that was previously displayed will be gone.
 >
 
 ### Retrieve the log history of your Web Cloud Databases solution
@@ -54,19 +54,19 @@ To retrieve the log history of your Web Cloud Databases solution, you will need 
 
 > [!warning]
 >
-> Before you log in, check that the public IP address of the workstation you are using is authorized on your Web Cloud Databases server, with the `SFTP` option ticked.
+> Before you log in, check that the public IP address of the workstation you are using is authorized on your Web Cloud Databases server with the `SFTP` option.
 >
-> To check this, retrieve the public IP address of your internet access point, then go to the **Authorize an IP address** section of [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> To check this, retrieve the public IP address of your internet access point and refer to the **Authorize an IP address** section of [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
 To retrieve the SFTP connection information for your Web Cloud Databases solution, perform the following actions:
 
 1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
-2. On the line at the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+2. In the top menu of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Web Cloud Databases`{.action} dropdown menu.
 4. Select the Web Cloud Databases solution concerned.
-5. On the page that pops up, stay in the `General information`{.action} tab, then move to the box labeled `Login information`{.action}.
-6. Below the mention `SFTP`{.action}, you will find all the information you need to log in via SFTP.
+5. In the `General information`{.action} tab you can find a box labeled `Login information`{.action}.
+6. Below `SFTP`{.action}, you will find all the information you need to log in via SFTP.
 
 > [!primary]
 >
@@ -79,11 +79,11 @@ Once you have retrieved the SFTP login credentials, log in via an FTP client (Fi
 
 For FileZilla, go to the top left in the `File`{.action} menu, then click `Site Manager`{.action}.
 
-Click `New site`{.action} , then enter the settings listed above.
+Click `New site`{.action}, then enter the settings listed above.
 
 ![Web Cloud Databases](images/site-manager.png){.thumbnail}
 
-The log file, named `stdout.log`, is located at the root.
+The log file `stdout.log` is located at the root.
 
 You can download it to your desktop to view it.
 
@@ -94,7 +94,7 @@ You can download it to your desktop to view it.
 > 
 > By default, the value is set to 1 second on Web Cloud Databases solutions in the **long_query_time** variable.
 > 
-> With this file, you can optimize your scripts and the content of your database(s) to improve the performance of your various associated services.
+> With this file, you can optimize your scripts and the content of your databases to improve the performance of your associated services.
 >
 
 ## Go further <a name="go-further"></a>

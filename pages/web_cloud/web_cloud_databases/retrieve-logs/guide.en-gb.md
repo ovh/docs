@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - How to retrieve logs"
 excerpt: "Find out how to retrieve the logs of your databases hosted on your Web Cloud Databases server"
-updated: 2024-03-05
+updated: 2024-03-07
 ---
 
 ## Objective

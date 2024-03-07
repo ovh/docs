@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - Jak pobrać logi?'
 excerpt: 'Dowiedz się, jak pobrać logi baz danych zainstalowanych na serwerze Web Cloud Databases'
-updated: 2024-03-05
+updated: 2024-03-07
 ---
 
 > [!primary]

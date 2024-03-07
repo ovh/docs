@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Logs abrufen"
 excerpt: "Erfahren Sie hier, wie Sie die Logs Ihrer Datenbanken erhalten, die auf Ihrem Web Cloud Databases Server gehostet werden"
-updated: 2024-03-05
+updated: 2024-03-07
 ---
 
 > [!primary]
