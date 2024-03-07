@@ -450,17 +450,17 @@ In the commands below, you need to replace:
 
 In the command prompt:
 
-1. Switch to a fixed IP
+1\. Switch to a fixed IP
 
 ```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
-2. Set the DNS server
+2\. Set the DNS server
 
 ```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
-3. Add an Additional IP
+3\. Add an Additional IP
 
 ```powershell
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
