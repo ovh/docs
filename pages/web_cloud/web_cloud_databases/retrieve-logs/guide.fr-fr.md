@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - Comment récupérer les logs ?'
 excerpt: 'Découvrez comment récupérer les logs de vos bases de données hébergées sur votre serveur Web Cloud Databases'
-updated: 2024-03-05
+updated: 2024-03-07
 ---
 
 ## Objectif
@@ -41,7 +41,7 @@ Pour vérifier en temps réel les logs de votre solution Web Cloud Databases, ef
 
 C'est dans cette console intégrée que vous trouverez, en temps réel, les logs de votre solution Web Cloud Databases.
 
-> [primary]
+> [!primary]
 >
 > Comme précisé ci-dessus, les logs ne sont disponibles ici qu'en temps réel. Cela signifie que ces logs n'apparaîtront que s'ils sont générés au moment où vous vous trouvez sur l'onglet `Logs`{.action}. 
 >
