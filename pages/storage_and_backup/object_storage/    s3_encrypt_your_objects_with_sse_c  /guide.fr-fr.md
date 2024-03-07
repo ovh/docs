@@ -45,12 +45,28 @@ L'objectif final est de vous aider à choisir le meilleur type de chiffrement po
 >
 > S3 Object Storage ne stocke pas la clé de chiffrement que vous fournissez. Cela signifie que si vous perdez la clé de chiffrement, vous perdez l'objet. La seule chose qui reste à faire est de le supprimer.
 >
+# SSE-C : Chiffrement Côté Serveur avec Clés de Chiffrement Client
 
-## Prérequis
+## Objectif
 
-- Avoir créé un bucket
-- Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
-- Avoir installé et configuré aws-cli
+L'utilisation du chiffrement côté serveur avec des clés de chiffrement fournies par le client (SSE-C) vous offre la possibilité de définir vos propres clés de chiffrement. Lorsque vous téléchargez un objet, le stockage d'objets S3 utilise la clé de chiffrement que vous fournissez pour appliquer un chiffrement AES-256 à vos données. Pour récupérer un objet, vous devez fournir la même clé de chiffrement lors de votre demande. Le stockage d'objets S3 vérifie que la clé fournie correspond, puis déchiffre l'objet avant de retourner les données.
+
+Ce guide vous explique comment chiffrer vos objets côté serveur avec SSE-C. Il est important de noter que le stockage d'objets S3 ne conserve pas la clé de chiffrement que vous fournissez. En conséquence, si vous perdez cette clé, vous perdez l'accès à l'objet stocké. Dans ce cas, la seule option est de supprimer l'objet.
+
+## Exigences
+
+Pour utiliser le chiffrement SSE-C, vous aurez besoin de :
+
+- Un bucket S3.
+- Un utilisateur disposant des droits d'accès requis sur le bucket.
+- Avoir installé et configuré l'interface de ligne de commande AWS (aws-cli).
+
+Pour plus d'informations sur comment démarrer avec le stockage d'objets S3, veuillez consulter notre guide dédié.
+
+## Instructions
+
+Lorsque vous utilisez SSE-C pour le chiffrement de vos objets, vous devez fournir des informations spécifiques sur la clé de chiffrement en utilisant les en-têtes de demande suivants :
+
 
 Consultez notre guide « [Débuter avec S3 Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
