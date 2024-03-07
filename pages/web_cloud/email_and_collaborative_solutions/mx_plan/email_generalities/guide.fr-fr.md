@@ -26,6 +26,8 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
 |Poursuivre vers « [Version historique de l'offre MX Plan](#oldmxplan) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](#newmxplan) »|
 
+Les deux versions vous seront détaillées dans ce qui suit, en commençant par la version la plus récente. 
+
 ### Nouvelle version de l'offre MX Plan <a name="newmxplan"></a>
 
 #### Accéder à la gestion de votre offre
