@@ -355,7 +355,7 @@ Selezionare una delle due schede seguenti:
 >>
 >> Dalla finestra `Contatti`, clicca con il tasto destro sulla cartella dei contatti scelta, ad eccezione delle cartelle "Contatti via email" e "Cestino" che non consentono l'importazione e l'esportazione di contatti.
 >>
->>> Clicca su `Esporta`{.action} per aprire la finestra di esportazione. Seleziona il tipo di file da esportare e clicca su `Esporta adesso`{.action}.<br><br>
+>> Clicca su `Esporta`{.action} per aprire la finestra di esportazione. Seleziona il tipo di file da esportare e clicca su `Esporta adesso`{.action}.<br><br>
 >> ![Zimbra - Esportare](images/zimbra-20.png){.thumbnail}
 >>
 

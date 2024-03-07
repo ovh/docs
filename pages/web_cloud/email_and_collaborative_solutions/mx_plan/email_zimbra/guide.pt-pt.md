@@ -355,7 +355,7 @@ Selecione um dos dois separadores seguintes:
 >>
 >> A partir da janela `Contactos`, clique com o botão direito do rato na pasta de contactos à sua escolha, exceto nas pastas "Contactos por E-mail" e "Reciclagem", que não permitem a importação ou exportação de contactos.
 >>
->>>Clique em "Exportar" {.action} para abrir a janela de exportação. Escolha o tipo de ficheiro que deseja exportar e depois clique em `Exportar agora`{.action}.<br><br>
+>> Clique em "Exportar" {.action} para abrir a janela de exportação. Escolha o tipo de ficheiro que deseja exportar e depois clique em `Exportar agora`{.action}.<br><br>
 >> ![Zimbra - Exportar](images/zimbra-20.png){.thumbnail}
 >>
 
