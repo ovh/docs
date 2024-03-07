@@ -183,6 +183,43 @@ Les URL pré-signées, qui peuvent être utilisées pour des opérations telles 
 > Vous pouvez donc utiliser l'URL pré-signée pour les objets SSE-C uniquement par programmation, car en plus de l'URL pré-signée, vous devez également inclure des en-têtes HTTP spécifiques aux objets SSE-C.
 >
 
+# SSE-S3 : Chiffrement Côté Serveur avec Clés Gérées par OVHcloud
+
+L'utilisation du chiffrement côté serveur avec des clés gérées par OVHcloud (SSE-S3) permet de protéger vos données stockées sur OVHcloud en les chiffrant automatiquement au repos. SSE-S3 utilise des clés gérées et protégées par OVHcloud, éliminant ainsi le besoin pour l'utilisateur de gérer manuellement ces clés de chiffrement.
+
+## Avantages
+
+### Gestion des Clés Simplifiée
+
+Avec OVHcloud prenant en charge la gestion sécurisée des clés de chiffrement, les utilisateurs bénéficient d'une gestion des clés simplifiée. Cette approche élimine les complexités liées à la rotation des clés tout en maintenant un niveau élevé de sécurité pour les données. Elle permet de concilier sécurité et efficacité opérationnelle, en éliminant la charge administrative de la gestion manuelle des clés de chiffrement.
+
+### Sécurité Renforcée
+
+Nous employons une stratégie de chiffrement avancée pour offrir une protection maximale de vos données. Chaque bucket bénéficie d'une clé unique, et pour chaque objet stocké, une clé de chiffrement distincte est générée. Cette clé est obtenue en combinant la clé unique du bucket avec un sel aléatoire, ce qui assure que chaque objet est chiffré avec sa propre clé. Cette méthode de dérivation de clés limite le risque associé à l'exposition d'une clé unique et garantit une sécurité renforcée pour vos données.
+
+### Transparence
+
+Le processus de chiffrement et de déchiffrement est entièrement transparent pour l'utilisateur, permettant d'accéder et de gérer les données chiffrées aussi aisément que s'il s'agissait de données non chiffrées.
+
+### Sécurité renforcée grâce à OVHcloud Key Management Service (KMS)
+
+Notre engagement envers la sécurité de vos données est renforcé par l'utilisation d'OVHcloud Key Management Service (KMS), une plateforme avancée pour le stockage sécurisé et la gestion des clés de chiffrement. Cette approche garantit une protection optimale de vos données, mettant en place une infrastructure de sécurité robuste sans les complexités liées à la gestion directe des clés de chiffrement.
+
+## Pour plus d'informations sur le KMS d'OVHcloud et ses applications
+
+Pour approfondir votre compréhension du Key Management Service (KMS) d'OVHcloud et de ses applications dans divers contextes d'infrastructure cloud, nous vous recommandons de consulter les ressources suivantes :
+
+- **Mise en route du KMS CipherTrust Manager - OVHcloud** : Ce document offre un aperçu détaillé de la mise en œuvre et de l'utilisation du KMS pour sécuriser vos données.
+- **Enabling Virtual Machine Encryption (VM Encrypt) - OVHcloud** : Guide pratique sur l'activation du chiffrement de machines virtuelles en utilisant les capacités de KMS.
+- **Enabling virtual machine encryption with vSphere Native Key Provider - OVHcloud** : Instructions détaillées sur l'utilisation de KMS en conjonction avec le fournisseur de clés natif vSphere pour le chiffrement de machines virtuelles.
+
+Ces documents fournissent des informations précieuses sur la manière dont le KMS peut être utilisé pour renforcer la sécurité dans différents scénarios d'infrastructure cloud.
+
+## Mise en œuvre
+
+Pour renforcer la sécurité des données téléchargées sur OVHcloud, l'activation du chiffrement côté serveur (SSE-S3) a été conçue pour être à la fois facile et transparente. En configurant une méthode de chiffrement par défaut sur votre bucket via la requête `PutBucketEncryption`, tout objet téléchargé sera automatiquement chiffré sans nécessiter d'actions supplémentaires de votre part. Lors du téléchargement d'un objet, il suffit de spécifier l'option de chiffrement dans la requête d'API ou via la ligne de commande AWS CLI. OVHcloud prend en charge le reste, chiffrant vos données avant leur stockage en utilisant une clé unique générée automatiquement pour le bucket.
+
+
 ## Aller plus loin
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
