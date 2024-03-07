@@ -1,7 +1,7 @@
 ---
-Title: Guide OVHcloud : Sécuriser vos données avec le chiffrement CSE ou SSE
-excerpt: Découvrez comment sécuriser vos données stockées avec les options de chiffrement CSE, SSE-C, et SSE-S3 chez OVHcloud, et choisissez la meilleure solution pour vos besoins.
-updated: 2024-03-07
+title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C
+excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C
+updated: 2022-04-15
 ---
 
 <style>
