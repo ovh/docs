@@ -1,7 +1,7 @@
 ---
 title: 'Créer des filtres pour vos adresses e-mail'
 excerpt: 'Découvrez comment créer et configurer un filtre sur votre adresse e-mail'
-updated: 2021-09-27
+updated: 2024-03-08
 ---
 
 ## Objectif
@@ -74,6 +74,16 @@ Deuxième choix (règle) :
 - **spf :** Indiquez une valeur du [champ SPF](/pages/web_cloud/domains/dns_zone_spf) à prendre en compte, par exemple : « ... n'a pas de champ SPF ... ».
 - **contient :** exemple : « ... contient ... ».
 - **ne contient pas :** exemple : « ... ne contient pas ... ».
+
+> [!warning]
+>
+> Le SPF (Sender Policy Framework) permet au serveur qui reçoit un e-mail de s’assurer que ce dernier a bien été envoyé depuis un serveur de confiance.
+
+Il permet de prévenir les potentielles usurpations d'identité venant d'adresses e-mail utilisant votre nom de domaine (spoofing).
+Il permet également d'authentifier les e-mails que vous envoyez.
+Le SPF s'ajoute en tant qu'enregistrement dans la zone DNS du nom de domaine.
+
+Pour plus d'infos sur le SPF, reportez-vous au guide suivant : [Configurer un enregistrement SPF sur son nom de domaine](/pages/web_cloud/domains/dns_zone_spf).  
 
 Troisième choix (valeur) :
 
