@@ -235,7 +235,7 @@ Lors de votre première connexion, votre navigateur doit vous rediriger vers <VP
 
 #### Terminer l'installation de votre site WordPress
 
-Une fois que vous avez rempli toutes les informations nécessaires et soumis le formulaire, WordPress finalisera l'installation. Vous serez ensuite redirigé vers l'écran de connexion (wp-login.php), où vous pourrez vous connecter avec le nom d'utilisateur et le mot de passe que vous venez de créer.
+Une fois toutes les informations nécessaires remplies et le formulaire soumis, WordPress finalisera l'installation. Vous serez ensuite redirigé vers l'écran de connexion (wp-login.php), où vous pourrez vous connecter avec le nom d'utilisateur et le mot de passe que vous venez de créer.
 
 ![WP Docker VPS](images/wp_login.png){.thumbnail}
 
