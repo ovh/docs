@@ -86,7 +86,7 @@ Rendez le binaire exécutable :
 ~$ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-Vérifier l'installation de Docker Compose :
+Vérifiez l'installation de Docker Compose :
 
 ```sh
 ~$ docker-compose –version
