@@ -167,7 +167,7 @@ Cette commande vous donne une réponse comme celle-ci :
 ~$ PHP 8.2.16 (cli) (built: Feb 16 2024 21:54:41) (NTS)
 ```
 
-Gardez à l'esprit que les images Docker sont mises à jour régulièrement, donc la version des composants dans `wordpress:latest` peut changer au fil du temps à mesure que de nouvelles versions sont publiées et intégrées dans l'image. 
+Pour rappel, les images Docker sont mises à jour régulièrement. La version des composants dans `wordpress:latest` peut donc changer au fil du temps à mesure que de nouvelles versions sont publiées et intégrées dans l'image. 
 
 Si vous le souhaitez, vous pouvez utiliser une autre image Docker.
 
