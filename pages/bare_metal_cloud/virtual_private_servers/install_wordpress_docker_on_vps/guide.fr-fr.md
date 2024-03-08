@@ -6,7 +6,7 @@ updated: 2024-03-08
 
 ## Objectif
 
-Installer WordPress sur un VPS présente plusieurs avantages, comme la personnalisation complète de l'environnement, une optimisation des performances et un renforcement de la sécurité. Il existe plusieurs façons d'installer WordPress sur un VPS, selon votre niveau technique et le temps que vous souhaitez y consacrer. L'une des manières les plus efficaces et rapides est d'utiliser Docker. Docker simplifie le déploiement d'applications en les conteneurisant, ce qui rend l'installation de WordPress rapide, facile, et reproductible, peu importe l'environnement.
+Installer WordPress sur un VPS présente plusieurs avantages, comme la personnalisation complète de l'environnement, une optimisation des performances et un renforcement de la sécurité. Il existe plusieurs façons d'installer WordPress sur un VPS, selon votre niveau technique et le temps que vous souhaitez y consacrer. L'une des manières les plus efficaces et rapides est d'utiliser Docker. Docker facilite le déploiement d'applications en les « conteneurisant », ce qui rend l'installation de WordPress rapide, facile, et reproductible, quel que soit l'environnement.
 
 **Ce guide décrit comment installer WordPress manuellement avec Docker sur un VPS ou un Serveur Dédié OVHcloud.**
 
