@@ -12,7 +12,7 @@ Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur v
 - **Serveur Web** : Le serveur web est essentiel pour servir les pages de votre site web. Les serveurs web les plus populaires incluent Apache et Nginx, chacun ayant leurs propres avantages en termes de flexibilité, de performance et de facilité de configuration.
 - **SGBD** : Pour stocker, gérer, et récupérer vos données efficacement, vous aurez besoin d'un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées). MySQL, PostgreSQL ou encore MariaDB sont les SGBD les plus utilisés dans le développement web.
 
-**Ce guide décrit comment installer manuellement un environnement de développement web sur un VPS ou un Serveur Dédié OVHcloud.**
+**Découvrez comment installer manuellement un environnement de développement web sur un VPS ou un Serveur Dédié OVHcloud.**
 
 ## Prérequis
 
