@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser les alias et redirections e-mail'
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
-updated: 2020-05-20
+updated: 2024-03-08
 ---
 
 <style>
@@ -56,7 +56,7 @@ Les chapitres « [créer une redirection](#redirect) » et « [créer un alias](
 - vous possédez la version historique de l'offre MXplan (pour le vérifier, vous pouvez consulter le cadre ci-dessous).
 - vous possédez un nom de domaine enregistré chez OVHcloud sans offre e-mail attachée.
 
-Pour ces deux exceptions, consultez directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
+Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons à consultez directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
 
 >
 > Selon la date d'activation de votre offre MXplan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.<br> 
@@ -164,10 +164,13 @@ La méthode pour créer un alias ou une redirection est strictement la même. Su
 > **Etape 1**
 >> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.<br><br>
 >> ![emails](images/mxplan-legacy-1.png){.thumbnail}<br>
+
+Vous y trouverez donc l'ensemble des redirections que vous avez créé. 
+
 >>
 > **Etape 2**
 >>
->> Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.<br><br>
+>> Le tableau des redirections déjà actives s'affiche. Pour modifier ou supprimer une redirection, appuyer sur les 3 petits points, à droite de l'adresse de redirection concernée. Pour ajouter une redirection, cliquez sur le bouton `Ajouter une redirection`{.action}.<br><br>.
 >> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Etape 3**
@@ -181,7 +184,7 @@ La méthode pour créer un alias ou une redirection est strictement la même. Su
 > [!primary]
 >
 > Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des redirections, elle matérialise cette copie locale.
->
+> Si vous n'avez aucune autre adresse à part celle que vous avez initialement renseignée, celle-ci sera par défaut votre adresse de redirection. 
 
 ## Aller plus loin
 
