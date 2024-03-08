@@ -1,7 +1,7 @@
 ---
 title: "Redirigir un dominio gestionado por OVHcloud"
 excerpt: "Distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVHcloud"
-updated: 2023-10-24
+updated: 2024-03-08
 ---
 
 > [!primary]
