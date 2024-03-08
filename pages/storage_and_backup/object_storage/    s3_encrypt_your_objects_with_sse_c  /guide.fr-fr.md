@@ -203,8 +203,6 @@ Ces documents fournissent des informations précieuses sur la manière dont le K
 
 Pour renforcer la sécurité des données téléchargées sur OVHcloud, l'activation du chiffrement côté serveur (SSE-S3) a été conçue pour être à la fois facile et transparente. En configurant une méthode de chiffrement par défaut sur votre bucket via la requête `PutBucketEncryption`, tout objet téléchargé sera automatiquement chiffré sans nécessiter d'actions supplémentaires de votre part. Lors du téléchargement d'un objet, il suffit de spécifier l'option de chiffrement dans la requête d'API ou via la ligne de commande AWS CLI. OVHcloud prend en charge le reste, chiffrant vos données avant leur stockage en utilisant une clé unique générée automatiquement pour le bucket.
 
-![workflow](images/workflowEncryption.png)
-
 # Gestion sécurisée des clés de chiffrement avec SSE-S3 sur OVHcloud S3
 
 Ce processus, tel qu'illustré dans le workflow ci-dessus, garantit que les clés de chiffrement sont gérées de manière sécurisée et efficiente. Chaque bucket dispose de sa propre clé, assurant ainsi que les données sont protégées individuellement. L'ensemble du mécanisme est conçu pour être aussi simple que possible, éliminant la nécessité pour l'utilisateur de gérer directement les clés de chiffrement, tout en maintenant un niveau élevé de sécurité des données.
@@ -240,13 +238,6 @@ aws s3api get-object --bucket votre-bucket --key votre-objet chemin/vers/destina
 Assurez-vous de remplacer `votre-bucket` par le nom de votre bucket, `votre-objet` par la clé de l'objet que vous souhaitez télécharger, et `chemin/vers/destination/fichier` par le chemin où vous souhaitez sauvegarder le fichier téléchargé. Le paramètre `--endpoint-url https://s3.<region>.ovhcloud.com` doit être ajusté à la région de votre service OVHcloud S3.
 
 Attention de ne pas inclure de headers de chiffrement spécifiques lors du téléchargement d'un objet chiffré avec SSE-S3 pour éviter des erreurs, telles qu'une erreur 400 Bad Request. 
-
-Pour afficher la configuration du chiffrement par défaut de votre bucket en utilisant SSE-S3 chez OVHcloud, il est essentiel d'utiliser la commande `getBucketEncryption`. Cela vous permet de vérifier que le chiffrement côté serveur est bien en place et configuré comme vous le souhaitez. Voici comment vous pouvez intégrer cette commande dans le flux de travail :
-
-```bash
-aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.<region>.ovhcloud.com
-```
-Remplacez votre-bucket par le nom de votre bucket et <region> par la région de votre service OVHcloud S3 pour afficher la configuration du chiffrement de votre bucket.
 
 # Affichage de la Configuration du chiffrement du Bucket
 
