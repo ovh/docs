@@ -203,8 +203,8 @@ Ces documents fournissent des informations précieuses sur la manière dont le K
 
 Pour renforcer la sécurité des données téléchargées sur OVHcloud, l'activation du chiffrement côté serveur (SSE-S3) a été conçue pour être à la fois facile et transparente. En configurant une méthode de chiffrement par défaut sur votre bucket via la requête `PutBucketEncryption`, tout objet téléchargé sera automatiquement chiffré sans nécessiter d'actions supplémentaires de votre part. Lors du téléchargement d'un objet, il suffit de spécifier l'option de chiffrement dans la requête d'API ou via la ligne de commande AWS CLI. OVHcloud prend en charge le reste, chiffrant vos données avant leur stockage en utilisant une clé unique générée automatiquement pour le bucket.
 
-![workflow](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c/images/workflow Encryption.png)
-
+![workflow](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c/images/workflowEncryption.png)
+![pca-cyberduck](images/login.png){.thumbnail}
 # Gestion sécurisée des clés de chiffrement avec SSE-S3 sur OVHcloud S3
 
 Ce processus, tel qu'illustré dans le workflow ci-dessus, garantit que les clés de chiffrement sont gérées de manière sécurisée et efficiente. Chaque bucket dispose de sa propre clé, assurant ainsi que les données sont protégées individuellement. L'ensemble du mécanisme est conçu pour être aussi simple que possible, éliminant la nécessité pour l'utilisateur de gérer directement les clés de chiffrement, tout en maintenant un niveau élevé de sécurité des données.
