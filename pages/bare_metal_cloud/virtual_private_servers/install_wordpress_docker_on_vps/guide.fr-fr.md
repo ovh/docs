@@ -20,7 +20,7 @@ Installer WordPress sur un VPS présente plusieurs avantages, comme la personnal
 
 > [!primary]
 >
-> Le VPS utilisé pour ce guide possède une distribution Debian en version 11 (Bullseye). Si vous avez des interrogations relatives à l'installation de Docker selon votre système d'exploitation, dirigez-vous sur le [site officiel de Docker](https://docs.docker.com/get-docker/).
+> Le VPS utilisé pour ce guide possède une distribution Debian en version 11 (Bullseye). Si bseoin, dirigez-vous sur le [site officiel de Docker](https://docs.docker.com/get-docker/) pour plus d'informations.
 >
 
 ### Installer Docker
