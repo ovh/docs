@@ -162,10 +162,8 @@ Les URL pré-signées, qui peuvent être utilisées pour des opérations telles 
 
 - Lorsque vous utilisez l'URL pré-signée pour envoyer un nouvel objet, récupérer un objet existant ou récupérer uniquement les métadonnées d'un objet, vous devez fournir tous les en-têtes de chiffrement dans votre application client.
 
-[!primary]
->
 > Vous pouvez donc utiliser l'URL pré-signée pour les objets SSE-C uniquement par programmation, car en plus de l'URL pré-signée, vous devez également inclure des en-têtes HTTP spécifiques aux objets SSE-C.
->
+
 
 # SSE-S3 : Chiffrement Côté Serveur avec Clés Gérées par OVHcloud
 
