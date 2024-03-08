@@ -92,7 +92,7 @@ Vérifiez l'installation de Docker Compose :
 ~$ docker-compose –version
 ```
 
-Si l'installation de Docker Compose s'est bien déroulée, vous devez obtenir un message de ce type :
+Si l'installation de Docker Compose s'est bien déroulée, vous obtenez un message de ce type :
 
 ![WP Docker VPS](images/result_docker_compose.png){.thumbnail}
 
