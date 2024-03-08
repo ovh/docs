@@ -8,7 +8,7 @@ updated: 2024-03-08
 
 Installer WordPress sur un VPS présente plusieurs avantages, comme la personnalisation complète de l'environnement, une optimisation des performances et un renforcement de la sécurité. Que vous soyez un développeur expérimenté ou un débutant souhaitant lancer votre premier site web, ce guide vous explique pas à pas comment installer WordPress sur un VPS OVHcloud avec WP-CLI. WP-CLI est une interface en ligne de commande permettant l'installation manuelle de WordPress sur votre VPS OVHcloud.
 
-**Ce guide décrit comment installer WordPress avec WP-CLI sur un VPS ou un Serveur Dédié OVHcloud.**
+**Découvrez comment installer WordPress avec WP-CLI sur un VPS ou un Serveur Dédié OVHcloud.**
 
 ## Prérequis
 
