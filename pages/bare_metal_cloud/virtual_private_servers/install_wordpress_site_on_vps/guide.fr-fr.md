@@ -199,7 +199,7 @@ par la ligne :
 fastcgi_pass unix:/var/run/php/php<your_php_version>-fpm.sock;
 ```
 
-Pour que Nginx charge la configuration de votre site, vous devez créer un lien symbolique de votre fichier de configuration dans le répertoire `/etc/nginx/sites-available/` :
+Pour que Nginx charge la configuration de votre site web, créez un lien symbolique de votre fichier de configuration dans le répertoire `/etc/nginx/sites-available/` :
 
 ```sh
 ~$ sudo ln -s /etc/nginx/sites-available/your_domain.com /etc/nginx/sites-enabled/
