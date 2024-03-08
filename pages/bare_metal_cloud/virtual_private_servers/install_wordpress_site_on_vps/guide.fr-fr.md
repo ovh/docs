@@ -239,7 +239,7 @@ Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS pour le champ `
 
 ### Conclusion
 
-Vous venez d'installer WordPress sur votre VPS OVHcloud ou votre Serveur Dédié avec WP-CLI, et vous pouvez accéder à votre site web WordPress depuis un navigateur.
+Vous venez d'installer WordPress sur votre VPS OVHcloud ou votre Serveur Dédié avec WP-CLI. Vous pouvez désormais accéder à votre site web WordPress depuis un navigateur.
 
 ## Aller plus loin
 
