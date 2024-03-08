@@ -1,7 +1,7 @@
 ---
 title: Creating a private network with Gateway
 excerpt: Discover how to create a Private network with a Gateway
-updated: 2024-03-01
+updated: 2024-03-08
 ---
 
 ## Objective
