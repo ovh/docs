@@ -68,7 +68,7 @@ Testez Docker avec une commande simple :
 ~$ sudo docker run hello-world
 ```
 
-Si l'installation de Docker s'est bien déroulée, vous devez obtenir un message de ce type :
+Si l'installation de Docker s'est bien déroulée, vous obtenez un message de ce type :
 
 ![WP Docker VPS](images/result_docker_hello_world.png){.thumbnail}
 
