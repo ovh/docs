@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von dynamischen DNS-Aktualisierungen (DynHost/DynDNS) für Ihren Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren Domainnamen einrichten"
-updated: 2023-12-18
+updated: 2024-03-07
 ---
 
 > [!primary]
