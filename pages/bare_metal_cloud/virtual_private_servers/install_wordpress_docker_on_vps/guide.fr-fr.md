@@ -207,7 +207,7 @@ Vérifiez que tout fonctionne comme prévu. Vous pouvez vérifier les logs de vo
 
 ### Accéder à WordPress
 
-Vous pouvez maintenant accéder à WordPress depuis un navigateur. Deux choix s'offrent à vous :
+Vous pouvez maintenant accéder à WordPress depuis un navigateur. Deux possibilités s'offrent à vous :
 
 - Via l'adresse IP de votre VPS : <VPS_IP_ADDRESS>:80000
 - Via le nom de domaine de votre site web : <DOMAIN_NAME>:80000
