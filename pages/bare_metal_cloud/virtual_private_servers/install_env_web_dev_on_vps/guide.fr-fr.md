@@ -8,7 +8,7 @@ updated: 2024-03-08
 
 Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur votre VPS (comme WordPress par exemple), vous devez au préalable installer un environnement de développement web sur votre VPS. Les principaux services à installer sont :
 
-- **PHP** : PHP est l'un des languages les plus utilisés pour créer des sites web. Il est nécessaire d'installer PHP pour que votre site web puisse exécuter des scripts et des fonctionnalités dynamiques. Installez préférablement la version de PHP la plus récente.
+- **PHP** : PHP est l'un des langages les plus utilisés pour créer des sites web. Il est nécessaire d'installer PHP pour que votre site web puisse exécuter des scripts et des fonctionnalités dynamiques. Installez de préférence la version de PHP la plus récente.
 - **Serveur Web** : Le serveur web est essentiel pour servir les pages de votre site web. Les serveurs web les plus populaires incluent Apache et Nginx, chacun ayant leurs propres avantages en termes de flexibilité, de performance, et de facilité de configuration.
 - **SGBD** : Pour stocker, gérer, et récupérer vos données de manière efficace, vous aurez besoin d'un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées). MySQL, PostgreSQL ou encore MariaDB sont les SGBD les plus utilisés dans le développement web.
 
