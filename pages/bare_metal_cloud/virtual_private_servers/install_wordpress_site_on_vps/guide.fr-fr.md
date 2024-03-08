@@ -207,7 +207,7 @@ Pour que Nginx charge la configuration de votre site, vous devez créer un lien 
 
 #### Tester la configuration Nginx
 
-Avant de redémarrer Nginx pour appliquer les modifications, il est important de tester votre configuration pour s'assurer qu'il n'y a pas d'erreurs :
+Avant de redémarrer Nginx pour appliquer les modifications, il est primordial de tester votre configuration pour s'assurer qu'il n'y a pas d'erreurs :
 
 ```sh
 ~$ sudo nginx -t
