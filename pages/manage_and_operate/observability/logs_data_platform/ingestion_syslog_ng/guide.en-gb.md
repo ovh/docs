@@ -1,7 +1,7 @@
 ---
 title: "Pushing logs with a forwarder - Syslog-ng 3.12.1+ (Linux)"
 excerpt: "Find out how to send logs from your Linux instance to Logs Data Platform"
-updated: 2024-03-07
+updated: 2024-03-08
 ---
 
 ## Objective
