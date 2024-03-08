@@ -193,7 +193,7 @@ Si vous utilisez une version PHP différente de 8.2.X, remplacez la ligne :
 ```sh
 fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
 ```
-par la ligne
+par la ligne :
 
 ```sh
 fastcgi_pass unix:/var/run/php/php<your_php_version>-fpm.sock;
