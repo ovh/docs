@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Utilizzo di Zonemaster
-updated: 2023-06-06
+updated: 2024-03-08
 ---
 
 > [!primary]
