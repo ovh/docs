@@ -56,7 +56,7 @@ Testez l'installation de WP-CLI en exécutant la commande :
 ~$ wp –info
 ```
 
-Si WP-CLI s'est bien installé, un message de ce type doit apparaître :
+Si WP-CLI s'est bien installé, un message de ce type apparaît :
 
 ![WP VPS](images/result_wp_info.png){.thumbnail}
 
