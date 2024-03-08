@@ -185,7 +185,7 @@ services:
 ...
 ```
 
-#### Appliquez les modifications
+#### Appliquer les modifications
 
 Lancez ou mettez à jour vos conteneurs avec Docker Compose. Si c'est la première fois que vous lancez le projet, utilisez :
 
