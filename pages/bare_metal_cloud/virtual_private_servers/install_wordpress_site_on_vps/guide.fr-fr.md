@@ -233,7 +233,7 @@ Pour accéder à votre site web depuis un navigateur, liez d'abord le nom de dom
 
 ![WP VPS](images/dns_zone_line_cta.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS pour le champ `Target`{.action} puis cliquez sur `Next`{.action}. Vérifiez que les informations indiquées sont correctes puis cliquez sur `Confirm`{.action}.
+Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS pour le champ `Cible`{.action} puis cliquez sur `Suivant`{.action}. Vérifiez que les informations indiquées sont correctes puis cliquez sur `Valider`{.action}.
 
 ![WP VPS](images/dns_zone_modify_target.png){.thumbnail}
 
