@@ -80,7 +80,7 @@ Téléchargez la dernière version de Docker Compose (remplacez 1.29.2 par la de
 ~$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
-Rendre le binaire exécutable :
+Rendez le binaire exécutable :
 
 ```sh
 ~$ sudo chmod +x /usr/local/bin/docker-compose
