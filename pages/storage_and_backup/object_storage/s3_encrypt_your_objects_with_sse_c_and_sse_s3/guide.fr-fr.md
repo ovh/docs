@@ -210,10 +210,6 @@ L'implémentation du chiffrement SSE-S3 sur OVHcloud S3 est conçue pour offrir 
 
 ## Envoi d'un objet avec SSE-S3 sur OVHcloud S3
 
-Lorsque vous souhaitez envoyer (uploader) un objet dans votre bucket S3 chez OVHcloud et appliquer un chiffrement SSE-S3, vous pouvez utiliser la commande suivante avec l'AWS CLI, en spécifiant l'option de chiffrement côté serveur :
-```bash
-aws s3api put-object --bucket votre-bucket --key votre-objet --body chemin/vers/votre/fichier --server-side-encryption AES256 --endpoint-url https://s3.<region>.ovhcloud.com
-```
 # Upload d'un objet sur OVHcloud S3 avec chiffrement SSE-S3
 
 Pour envoyer un objet dans votre bucket S3 sur OVHcloud avec chiffrement SSE-S3, utilisez la commande Bash suivante via l'AWS CLI. Cette commande intègre l'option de chiffrement côté serveur pour renforcer la sécurité de vos données stockées.
@@ -236,7 +232,10 @@ Pour télécharger un objet qui a été chiffré avec SSE-S3 depuis OVHcloud S3,
 ```bash
 aws s3api get-object --bucket votre-bucket --key votre-objet chemin/vers/destination/fichier --endpoint-url https://s3.<region>.ovhcloud.com 
 ```
-Assurez-vous de remplacer `votre-bucket` par le nom de votre bucket, `votre-objet` par la clé de l'objet que vous souhaitez télécharger, et `chemin/vers/destination/fichier` par le chemin où vous souhaitez sauvegarder le fichier téléchargé. Le paramètre `--endpoint-url https://s3.<region>.ovhcloud.com` doit être ajusté à la région de votre service OVHcloud S3.
+-  remplacer `votre-bucket` par le nom de votre bucket
+-  remplacer `votre-objet` par la clé de l'objet que vous souhaitez télécharger.
+-  remplacer `chemin/vers/destination/fichier` par le chemin où vous souhaitez sauvegarder le fichier téléchargé.
+-  Le paramètre `--endpoint-url https://s3.<region>.ovhcloud.com` doit être ajusté à la région de votre service OVHcloud S3.
 
 Attention de ne pas inclure de headers de chiffrement spécifiques lors du téléchargement d'un objet chiffré avec SSE-S3 pour éviter des erreurs, telles qu'une erreur 400 Bad Request. 
 
@@ -246,7 +245,7 @@ Pour ajouter le chiffrement SSE-S3 à un bucket S3 existant sur OVHcloud, vous d
 ```bash
 aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.<region>.ovhcloud.com
 ```
-- Remplacez `<votre-bucket>` par le nom de votre bucket S3.
+- Remplacez `votre-bucket` par le nom de votre bucket S3.
 - Remplacez `<region>` par la région de votre service OVHcloud S3 où votre bucket est situé.
   
 Cela va configurer le bucket pour utiliser le chiffrement SSE-S3 avec les clés gérées par S3 (AES256) pour tous les nouveaux objets. Les objets existants ne seront pas affectés; si vous souhaitez également les chiffrer, vous devrez les copier ou les retéléverser après avoir changé cette configuration.
@@ -258,7 +257,10 @@ Après avoir configuré le chiffrement de votre bucket via `PutBucketEncryption`
 ```bash
 aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.<region>.ovhcloud.com
 ```
-Remplacez votre-bucket par le nom de votre bucket et <region> par la région de votre service OVHcloud S3. Cette commande vous permet de vérifier la configuration actuelle du chiffrement  de votre bucket pour vous assurer que le chiffrement SSE-S3 est bien activé.
+- Remplacez `votre-bucket` par le nom de votre bucket
+- Et `<region>` par la région de votre service OVHcloud S3.
+
+Cette commande vous permet de vérifier la configuration actuelle du chiffrement  de votre bucket pour vous assurer que le chiffrement SSE-S3 est bien activé.
 
 Dans cette commande, remplacez `votre-bucket` par le nom de votre bucket et `<region>` par la région de votre service OVHcloud S3. Cette commande vous renvoie les détails de la configuration du chiffrement actuelle de votre bucket, vous confirmant l'utilisation de SSE-S3 pour le chiffrement des données au repos.
 
@@ -271,7 +273,10 @@ La suppression d'objets chiffrés avec SSE-S3 ne diffère pas de la suppression 
 ```bash
 aws s3 rm s3://mon-Bucket/mon-objet
 ```
-Remplacez `mon-Bucket` par le nom de votre bucket et `mon-objet` par le nom de l'objet que vous souhaitez supprimer. Cette commande permet de supprimer efficacement un objet, qu'il soit chiffré ou non, de votre bucket sur OVHcloud S3.
+- Remplacez `mon-Bucket` par le nom de votre bucket
+- `mon-objet` par le nom de l'objet que vous souhaitez supprimer.
+
+Cette commande permet de supprimer efficacement un objet, qu'il soit chiffré ou non, de votre bucket sur OVHcloud S3.
 
 # Considérations sur le Chiffrement SSE-S3
 
