@@ -239,6 +239,17 @@ Assurez-vous de remplacer `votre-bucket` par le nom de votre bucket, `votre-obje
 
 Attention de ne pas inclure de headers de chiffrement spécifiques lors du téléchargement d'un objet chiffré avec SSE-S3 pour éviter des erreurs, telles qu'une erreur 400 Bad Request. 
 
+# Ajout du chiffrement à un bucket existant sur OVHcloud S3
+
+Pour ajouter le chiffrement SSE-S3 à un bucket S3 existant sur OVHcloud, vous devez utiliser la commande put-bucket-encryption de l'AWS CLI. Cette commande configure le chiffrement du bucket pour que tous les nouveaux objets ajoutés soient automatiquement chiffrés avec SSE-S3. Voici la commande spécifique que vous utiliseriez :
+```bash
+aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.<region>.ovhcloud.com
+```
+- Remplacez `<votre-bucket>` par le nom de votre bucket S3.
+- Remplacez `<region>` par la région de votre service OVHcloud S3 où votre bucket est situé.
+  
+Cela va configurer le bucket pour utiliser le chiffrement SSE-S3 avec les clés gérées par S3 (AES256) pour tous les nouveaux objets. Les objets existants ne seront pas affectés; si vous souhaitez également les chiffrer, vous devrez les copier ou les retéléverser après avoir changé cette configuration.
+
 # Affichage de la Configuration du chiffrement du Bucket
 
 Après avoir configuré le chiffrement de votre bucket via `PutBucketEncryption` pour utiliser SSE-S3, assurez-vous que tout est correctement mis en place en utilisant la commande suivante avec l'AWS CLI :
