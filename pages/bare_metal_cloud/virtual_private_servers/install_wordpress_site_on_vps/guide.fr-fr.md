@@ -21,7 +21,7 @@ Installer WordPress sur un VPS présente plusieurs avantages, comme la personnal
 
 > [!primary]
 >
-> Comme les [prérequis](#prérequis) le mentionnent, nous partons du principe que vous possédez déjà un [environnement de développement web configuré sur votre VPS](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps). Pour ce guide, les composants suivants sont déjà installés sur le VPS :
+> Comme précisé dans les [prérequis](#prérequis), nous partons du principe que vous possédez déjà un [environnement de développement web configuré sur votre VPS](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps). Pour ce guide, les composants suivants sont déjà installés sur le VPS :
 >
 > - PHP (version 8.2.7)
 > - Le serveur web Nginx
