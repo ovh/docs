@@ -205,7 +205,8 @@ Pour renforcer la sécurité des données téléchargées sur OVHcloud, l'activa
 
 # Gestion sécurisée des clés de chiffrement avec SSE-S3 sur OVHcloud S3
 
-Ce processus, tel qu'illustré dans le workflow ci-dessus, garantit que les clés de chiffrement sont gérées de manière sécurisée et efficiente. Chaque bucket dispose de sa propre clé, assurant ainsi que les données sont protégées individuellement. L'ensemble du mécanisme est conçu pour être aussi simple que possible, éliminant la nécessité pour l'utilisateur de gérer directement les clés de chiffrement, tout en maintenant un niveau élevé de sécurité des données.
+L'implémentation du chiffrement SSE-S3 sur OVHcloud S3 est conçue pour offrir une gestion des clés de chiffrement à la fois sécurisée et transparente pour l'utilisateur. Chaque bucket bénéficie d'une clé distincte, ce qui assure que les données y sont sécurisées de façon individuelle et isolée. Cette méthode de chiffrement, intégrée et gérée par la plateforme, élimine les complexités associées à la gestion manuelle des clés par les utilisateurs. Tout en rendant le processus utilisateur aussi fluide et intuitif que possible, elle maintient une sécurité robuste et conforme aux standards les plus stricts en matière de protection des données.
+
 
 ## Envoi d'un objet avec SSE-S3 sur OVHcloud S3
 
