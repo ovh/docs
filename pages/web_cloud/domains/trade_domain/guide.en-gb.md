@@ -1,7 +1,7 @@
 ---
 title: "Changing the owner of a domain name"
 excerpt: "Find out how to change the owner of a a domain name in the OVHcloud Control Panel"
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 ## Objective
@@ -40,11 +40,11 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 >
 > - The website of the respective **TLD** registry
 > - The [list of **TLD**s available at OVHcloud](https://www.ovhcloud.com/en-gb/domains/tld/)
-> - The section `Ongoing operations`{.action} of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to check any pending status updates of the domain name
+> - The domain name status updates. To check this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then `Ongoing operations`{.action}.
 
 ### Step 1: Select the domain
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action}. In the `Domains`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action}. In the `Domain names`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
 
 ### Step 2: Inititate the owner change procedure
 

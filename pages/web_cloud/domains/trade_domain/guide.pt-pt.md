@@ -1,7 +1,7 @@
 ---
 title: "Alterar o titular de um nome de domínio"
 excerpt: "Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio."
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 >
 > - o sítio Web do registo **TLD** correspondente;
 > - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
-> - a secção `Operações em curso`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para verificar as atualizações do estado do domínio.
+> - atualizações do estado do domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e, a seguir, em `Operações em curso`{.action}.
 >
 
 ### 1 - selecionar o domínio
