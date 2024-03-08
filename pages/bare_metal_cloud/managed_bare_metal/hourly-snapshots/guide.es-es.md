@@ -68,7 +68,7 @@ Siga el asistente de creación de MV para finalizar el procedimiento.
 
 ## ¿Y qué pasa con los snapshots después de la última hora?
 
-OVHcloud conserva los otros 23 snapshots por horas (hasta H-24) en un rack de almacenamiento (datastore) al que no tiene acceso directo. No obstante, es posible solicitar la restauración de un snapshot (después de H-1) para una MV en particular mediante una solicitud de intervención al soporte técnico (con un coste de 80 € + IVA). Solo podremos restaurar el snapshot solicitado en el mismo datastore y esta restauración no puede en ningún caso estar garantizada.
+OVHcloud conserva los otros 23 snapshots por horas (hasta H-24) en un rack de almacenamiento (datastore) al que no tiene acceso directo. No obstante, es posible solicitar la restauración de un snapshot (después de H-1) para una MV en particular mediante una [solicitud de intervención **de pago** al soporte técnico](https://help.ovhcloud.com/csm?id=csm_get_help). Solo podremos restaurar el snapshot solicitado en el mismo datastore y esta restauración no puede en ningún caso estar garantizada.
 
 Se trata de una seguridad normalmente de uso interno de OVHcloud, los snapshots por horas no son un sistema de backup y no están garantizadas.
 

@@ -70,7 +70,7 @@ You now need to follow the VM Creation Wizard to complete the procedure.
 >Hourly snapshots are **not** a backup system and are **not** guaranteed.
 >
 
-OVHcloud retains the other 23 hourly snapshots (up to H-24) on a datastore to which you do not have direct access. However, you can request to restore a particular snapshot beyond H-1 for a single VM via a **paid intervention** by creating a support ticket containing the necessary information in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). We will only be able to restore the requested snapshot on the same datastore, and we cannot guarantee this restoration under any circumstances.
+OVHcloud retains the other 23 hourly snapshots (up to H-24) on a datastore to which you do not have direct access. However, you can request to restore a particular snapshot beyond H-1 for a single VM via a **paid intervention** by creating a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help) containing the necessary information. We will only be able to restore the requested snapshot on the same datastore, and we cannot guarantee this restoration under any circumstances.
 
 Keep in mind that hourly snapshots are an additional security measure for internal purposes, and should only be used as a last resort in order to prevent any potential data loss.
 
