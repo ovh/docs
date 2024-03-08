@@ -74,7 +74,7 @@ Folgen Sie nun dem VM Creation Wizard, um den Vorgang abzuschließen.
 >Die stündlichen Snapshots sind **kein** Backup-System und **nicht** garantiert.
 >
 
-OVHcloud bewahrt die 23 weiteren Snapshots (bis H-24) auf einem Datastore auf, zu dem Sie keinen direkten Zugriff haben. Es ist jedoch möglich, über eine Anfrage beim technischen Support (Ticket) die Wiederherstellung eines Snapshots älter als H-1 für eine bestimmte VM als **kostenpflichtigen Eingriff** zu beantragen. Wir können den angeforderten Snapshot nur auf demselben Datastore wiederherstellen, und diese Wiederherstellung kann keinesfalls garantiert werden.
+OVHcloud bewahrt die 23 weiteren Snapshots (bis H-24) auf einem Datastore auf, zu dem Sie keinen direkten Zugriff haben. Es ist jedoch möglich, über eine Anfrage beim [technischen Support (Ticket)](https://help.ovhcloud.com/csm?id=csm_get_help) die Wiederherstellung eines Snapshots älter als H-1 für eine bestimmte VM als **kostenpflichtigen Eingriff** zu beantragen. Wir können den angeforderten Snapshot wahlweise auf demselben Datastore oder einem neuen Datastore wiederherstellen, und diese Wiederherstellung kann keinesfalls garantiert werden.
 
 Beachten Sie, dass stündliche Snapshots als zusätzliche Sicherheitsmaßnahme für interne Zwecke dienen und nur als letztes Mittel eingesetzt werden sollten, um einen möglichen Datenverlust zu vermeiden.
 

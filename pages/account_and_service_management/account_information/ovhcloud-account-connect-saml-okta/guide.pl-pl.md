@@ -1,7 +1,7 @@
 ---
 title: "Włącz połączenia Okta SSO z Twoim kontem OVHcloud"
 excerpt: "Dowiedz się, jak powiązać usługę Okta z kontem OVHcloud przy użyciu SAML 2.0"
-updated: 2023-04-18
+updated: 2024-03-05
 ---
 
 ## Wprowadzenie
@@ -98,6 +98,8 @@ Kliknij przycisk `Logowanie SSO`{.action}.
 
 Wpisz metadane XML usługi Okta. Uzupełnij pole "Nazwa atrybutu grupy" wartością `groups`. Kliknij na `Zatwierdź`{.action}.
 
+Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
+
 ![Połączenie SSO OVHcloud etap 2](images/ovhcloud_add_federation.png){.thumbnail}
 
 Teraz możesz odnaleźć Okta jako dostawcę tożsamości, a także grupy domyślne.
@@ -137,6 +139,8 @@ Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHclo
 
 Po zalogowaniu się później z użytkownikiem grupy **Intern** Twoje konto OVHcloud potwierdzi, że użytkownik ma rolę "UNPRIVILEGED" określoną przez jego grupę.
 
+Uwaga: jeśli nadasz tej grupie uprawnienia `Brak`, konieczne będzie przypisanie uprawnień za pośrednictwem [zasad IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+
 Następnie będziesz mógł wylogować się z konta i ponownie zalogować się do Okta jako dostawcy danych.
 
 ### Logowanie przez SSO
@@ -162,5 +166,7 @@ Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użyt
 [Konfiguracja i zarządzanie hasłem do konta](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Jak korzystać z polityki IAM w Panelu klienta](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

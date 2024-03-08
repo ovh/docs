@@ -30,7 +30,7 @@ L'attivazione di questa opzione, associata alla protezione del tuo account con u
 
 ## Procedura
 
-### Step 1 - recuperare gli indirizzi IP pubblici autorizzati ad accedere al tuo Spazio Cliente OVHcloud
+### Step 1 - Recuperare gli indirizzi IP pubblici autorizzati ad accedere al tuo Spazio Cliente OVHcloud
 
 Esistono due tipi di indirizzi IP:
 
@@ -54,7 +54,7 @@ Se utilizzi una rete 4G/5G in aggiunta, ricordati di recuperare anche l'indirizz
 > **Prima** di impostare una restrizione IP sul tuo Spazio Cliente OVHcloud, verifica presso il tuo Provider che gli indirizzi IP recuperati in precedenza siano effettivamente IP **fissi**. In caso contrario, l'accesso allo Spazio Cliente OVHcloud potrebbe essere perso rapidamente dichiarando un IP dinamico.
 >
 
-### Step 2 - attiva una restrizione di accesso per IP
+### Step 2 - Attiva una restrizione di accesso per IP
 
 Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Nome e cognome` in alto a destra **e** sulla `iniziali` nella colonna blu che appare sulla destra.
 

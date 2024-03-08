@@ -147,6 +147,8 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 [Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)

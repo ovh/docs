@@ -1,7 +1,7 @@
 ---
 title: Activar las conexiones SSO de Google Workspace con su cuenta OVHcloud
 excerpt: "Cómo asociar el servicio Google Workspace a su cuenta de OVHcloud a través de SAML 2.0"
-updated: 2023-06-01
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Puede utilizar la autenticación **SSO** (*Single Sign-On*) para conectarse a su
 
 - Ser administrador de un servicio Google Workspace
 - Disponer de una [cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
@@ -103,6 +103,8 @@ Haga clic en el botón `Conexión SSO`{.action}.
 
 Introduzca los metadatos XML del servicio Google Workspace. Rellene el campo "Nombre de atributo de grupo" con el valor `Group`. Haga clic en `Confirmar`{.action}.
 
+Es posible conservar los usuarios locales marcando la casilla `Mantener los usuarios de OVHcloud activos`.
+
 ![OVHcloud conexión SSO etapa 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 Ahora debe encontrar su Google Workspace como proveedor de identidad, así como los grupos por defecto.
@@ -149,8 +151,8 @@ A continuación, asigne **funciones** a estos grupos de usuarios en OVHcloud. En
 
 En el área de cliente de OVHcloud, haga clic en el botón `Declarar un grupo`{.action} y rellene los siguientes campos:
 
- - **Nombre de grupo**: nombre del grupo en Google Workspace
- - **Privilegio**: nivel de derecho concedido a este grupo
+- **Nombre de grupo**: nombre del grupo en Google Workspace
+- **Privilegio**: nivel de derecho concedido a este grupo
 
 ![Grupos de control de usuarios de Google Workspace](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 
@@ -161,6 +163,8 @@ A continuación, compruebe que el grupo se añade a su cuenta de OVHcloud en la 
 ![Grupos de control de usuarios de Google Workspace](images/ovhcloud_user_management_groups_3.png){.thumbnail}
 
 Una vez que se conecte posteriormente con un usuario del grupo **interno**, su cuenta de OVHcloud reconocerá que el usuario tiene el rol "UNPRIVILEGED" especificado por su grupo.
+
+Atención: Si otorga el privilegio `Ninguno`, será necesario asignar permisos a este grupo a través de las [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 A continuación, podrá desconectarse de su cuenta y reconectarse con su Google Workspace como proveedor de identidad.
 
@@ -187,5 +191,7 @@ Ahora está conectado con el mismo ID de cliente, pero a través de su usuario d
 [Definición y gestión de la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Cómo utilizar las políticas IAM desde el área de cliente](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,6 +1,6 @@
 ---
 title: "OVHcloud products HDS certification"
-updated: 2023-12-21
+updated: 2024-03-05
 ---
 
 ## Objective
@@ -34,16 +34,16 @@ Clients using HDS products must subscribe to a Business or Enterprise support. T
 | AI Training | yes | 
 | Data Processing | yes | 
 | Kubernetes | yes |
-| Search engine software platform | ETA : 01/2024 excluding Essential and Discovery plans | 
-| Timeseries | ETA : 01/2024 excluding Essential and Discovery plans |
-| NoSQL Database | MongoDB : yes excluding Essential and Discovery plans<br> Others : ETA 01/2024 excluding Essential and Discovery plans | 
-| Relational Database | ETA : 01/2024 excluding Essential and Discovery plans | 
-| Message broker | ETA : 01/2024 excluding Essential and Discovery plans | 
+| Search engine software platform | yes excluding Essential and Discovery plans | 
+| Timeseries | yes excluding Essential and Discovery plans |
+| NoSQL Database | yes excluding Essential and Discovery plans | 
+| Relational Database | yes excluding Essential and Discovery plans | 
+| Message broker | yes excluding Essential and Discovery plans | 
 | Object Storage | yes | 
 | Private Registry | yes | 
 | Cold Storage | ETA : 01/2024 | 
 | Logs Data Platform | yes | 
-| Grafana | ETA : 01/2024 excluding Essential and Discovery plans | 
+| Grafana | yes excluding Essential and Discovery plans | 
 | Web Hosting | no | 
 | Platform.sh | no | 
 | Emails on mutualized infrastructures | no |

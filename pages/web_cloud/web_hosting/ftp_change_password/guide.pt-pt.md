@@ -1,7 +1,7 @@
 ---
 title: "Alterar a palavra-passe de um utilizador FTP"
 excerpt: "Descubra como alterar a palavra-passe de um utilizador FTP criado num alojamento web da OVHcloud"
-updated: 2023-05-29
+updated: 2024-02-29
 ---
 
 > [!primary]
@@ -45,15 +45,6 @@ Um quadro apresenta os *utilizadores FTP* criados no seu alojamento web. Estes u
 > Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-A sua nova password deverá respeitar a **política das palavras-passe** seguinte :
-
-- Mínimo de 8 caracteres;
-- Máximo de 30 caracteres;
-- Pelo menos uma letra maiúscula;
-- Pelo menos uma letra minúscula;
-- Pelo menos um número;
-- Ser composto unicamente por números e letras.
-
 Dependendo do seu plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/), a alteração da palavra-passe do utilizador FTP através do separador `FTP-SSH`{.action} poderá ser efetuada de duas formas:
 
 - **para as ofertas que não permitem criar um segundo utilizador FTP** (ofertas *Alojamento gratuito 100M* e *Perso*): clique no *pictograma em forma de lápis* na coluna `Palavra-passe`{.action} do quadro que aparece, introduza a nova palavra-passe **seguindo a política das palavras-passe** e confirme a alteração clicando no *botão verde* de validação.
@@ -65,6 +56,17 @@ Dependendo do seu plano de [alojamento web da OVHcloud](https://www.ovhcloud.com
 clique no botão `...`{.action} à direita do utilizador FTP em questão, depois por `Alterar a palavra-passe`{.action}. Na nova janela, introduza a nova palavra-passe desejada *** seguindo a política de palavras-passe**, confirme introduzindo-a novamente e clique no botão `Validar`{.action}.
 
 ![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+
+> [!primary]
+>
+> A sua nova password deverá respeitar a **política das palavras-passe** seguinte :
+>
+>- Mínimo de 8 caracteres;
+>- Máximo de 30 caracteres;
+>- Pelo menos uma letra maiúscula;
+>- Pelo menos uma letra minúscula;
+>- Pelo menos um número;
+>- Ser composto unicamente por números e letras.
 
 Por fim, consulte o separador `Operações em curso`{.action} e atualize a página regularmente. A alteração demorará alguns minutos até ficar efetiva.
 

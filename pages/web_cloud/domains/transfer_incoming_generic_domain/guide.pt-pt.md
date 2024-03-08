@@ -52,17 +52,17 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 |Etapa|Descrição|Quem está envolvido?|Onde?|Prazo|
 |---|---|---|---|---|
-|1|Verificar a informação relativa ao domínio|O administrador do domínio|O agente registador atual|Depende das suas ações|
-|2|Desbloquear o domínio e obter o código de transferência|O administrador do domínio, com a autorização do proprietário|O agente registador atual|Depende das suas ações|
-|3|Solicitar a transferência do domínio|Qualquer pessoa que possua o código de transferência, com a autorização do proprietário|Com o novo agente de registo (por exemplo, a OVHcloud)|Depende das suas ações|
-|4|Validação da transferência|O agente registador atual|Através de um pedido enviado pela entidade que gere a extensão do domínio|5 dias, no máximo|
+|[1](#step1)|[Verificar a informação relativa ao domínio](#step1)|O administrador do domínio|O agente registador atual|Depende das suas ações|
+|[2](#step2)|[Desbloquear o domínio e obter o código de transferência](#step2)|O administrador do domínio, com a autorização do proprietário|O agente registador atual|Depende das suas ações|
+|[3](#step3)|[Solicitar a transferência do domínio](#step3)|Qualquer pessoa que possua o código de transferência, com a autorização do proprietário|Com o novo agente de registo (por exemplo, a OVHcloud)|Depende das suas ações|
+|[4](#step4)|[Validação da transferência](#step4)|O agente registador atual|Através de um pedido enviado pela entidade que gere a extensão do domínio|5 dias, no máximo|
 
 > [!warning]
 >
 > O procedimento exato de transferência de domínio pode variar, especialmente no caso de certos **TLD** de código de país (**ccTLD**, tais como .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) e de alguns **TLD** especiais (.am, .fm, etc.). Em função da extensão do domínio, poderá ser necessário realizar requisitos adicionais. Recomendamos que comece por verificar as informações apresentadas para a extensão em causa no nosso website: <https://www.ovhcloud.com/pt/domains/tld/>.
 >
 
-### 1 - Verificar a informação relativa ao domínio
+### 1 - Verificar a informação relativa ao domínio <a name="step1"></a>
 
 **Para começar, é importante verificar se as informações relativas ao nome de domínio estão atualizadas.** Desde a criação do RGPD, os dados visíveis no ["Whois"](https://www.ovhcloud.com/pt/domains/whois/) tornaram-se muito limitados. Assim, recomendamos que verifique as informações relativas ao seu nome de domínio no seu agente registador atual.
 
@@ -75,7 +75,7 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 > Se não sabe qual o agente de registo responsável pelo seu domínio, as linhas "Registar", que aparecerão no resultado da pesquisa da ferramenta [Whois](https://www.ovhcloud.com/pt/domains/whois/){.external}, podem fornecer-lhe informações sobre a sua identidade.
 >
 
-### 2 - Desbloquear o domínio e obter o código de transferência
+### 2 - Desbloquear o domínio e obter o código de transferência <a name="step2"></a>
 
 Depois de verificar as informações, deverá desbloquear o seu nome de domínio. Esta operação só pode ser realizada no agente registador atual. Por isso, recomendamos que o contacte diretamente.
 
@@ -88,7 +88,7 @@ Atenção: a OVHcloud não é o agente registador do seu domínio no momento em 
 > Depois de desbloquear o domínio, terá 7 (7) dias para efetuar a transferência para a OVHcloud. Após este período, o seu domínio será automaticamente bloqueado se não apresentar um pedido de modificação do agente de registo de um domínio.
 >
 
-### Etapa 3: solicitar a transferência de um domínio para a OVHcloud
+### Etapa 3: solicitar a transferência de um domínio para a OVHcloud <a name="step3"></a>
 
 Depois de desbloquear o seu nome de domínio e obter o código, pode encomendar a sua transferência para a OVHcloud a partir do [nosso site](https://www.ovhcloud.com/pt/domains/){.external}. Introduza o seu nome de domínio e siga os passos da encomenda.
 
@@ -127,7 +127,7 @@ Depois de validar a encomenda, receberá uma nota de encomenda. O processo de tr
 >
 > Se o código de transferência não foi introduzido durante a encomenda, poderá introduzi-lo a partir da janela `Operações em curso`{.action} e assim validar a transferência.
 
-### Etapa 4: validação da transferência pelo agente de registo atual
+### Etapa 4: validação da transferência pelo agente de registo atual <a name="step4"></a>
 
 Depois de validar a encomenda e o código de transferência, o agente registador do domínio atual (que ainda não é a OVHcloud) receberá um pedido de validação. Aqui também podem ocorrer várias situações.
 

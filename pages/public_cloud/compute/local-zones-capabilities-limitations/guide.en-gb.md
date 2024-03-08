@@ -1,14 +1,8 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-02-21
+updated: 2024-03-04
 ---
-
-> [!primary]
->
-> Local Zone Compute is currently only deployed as a beta version. 
-> If you encounter any difficulties, contact our support teams by creating a ticket from your [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help)
-> If you would like to discuss your experience with other users, join us on Discord <https://discord.gg/ovhcloud> or on our community platform: <https://community.ovh.com/en/>.
 
 ## Objective
 
@@ -21,7 +15,7 @@ Find more information on our [dedicated Local Zone Compute page](https://www.ovh
 
 ## Available Features
 
-| Action | Beta (February) |
+| Action | General Availability (March 2024) |
 | --- | --- |
 | Instances | Yes |
 | User-data/cloud-init Support | Yes|

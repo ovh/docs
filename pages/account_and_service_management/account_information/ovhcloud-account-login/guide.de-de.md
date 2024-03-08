@@ -1,7 +1,7 @@
 ---
 title: 'In das OVHcloud Kundencenter einloggen'
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrem OVHcloud Kunden-Account verbinden'
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Ihre Kundenkennung steht in der Bestätigungsmail zur Account-Erstellung, in den
 
 Ihre Kundenkennung steht oben rechts auf allen Ihren Rechnungen.
 
-![Kundenkennung](images/nichandle01b.png){.thumbnail}
+![Kundenkennung](images/customer-id-bill-en.png){.thumbnail}
 
 ##### **Sich ohne Kennung verbinden**
 

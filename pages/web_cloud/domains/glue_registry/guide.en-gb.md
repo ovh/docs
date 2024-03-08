@@ -1,7 +1,7 @@
 ---
 title: "Customising a domain name’s DNS servers (Glue Records)"
 excerpt: "Find out how to customise your OVHcloud domain name’s DNS servers"
-updated: 2023-07-27
+updated: 2024-03-07
 ---
 
 ## Objective
@@ -35,9 +35,9 @@ Depending on your needs, you can customise your OVHcloud domain name’s DNS ser
 
 ### Step 1: Retrieve the DNS servers currently used by your domain name <a name="step1"></a>
 
-You can retrieve the DNS servers currently used by your domain name using the online DNS tool [Zonemaster](https://zonemaster.fr/en/run-test){.external}.
+You can retrieve the DNS servers currently used by your domain name using the online DNS tool [Zonemaster](https://zonemaster.net/en/run-test){.external}.
 
-To do this, go to [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, enter your domain name without *www* (*domain.tld*), then tick the `Options`{.action} button located just below the domain name entry form.
+To do this, go to [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, enter your domain name without *www* (*domain.tld*), then tick the `Options`{.action} button located just below the domain name entry form.
 
 In the available options, click on the button `Fetch NS from parent zone`{.action}.
 
@@ -49,8 +49,8 @@ Retrieve the *DNS servers* information including **all** their associated IPv4 a
 
 In our example shown above, the **domain.tld** domain currently uses the following **DNS servers**:
 
-- **dnsX1.ovh.net** associated with IPv4 *111.222.333.443* and IPv6 *0000:00d0:1:0000::1*
-- **dnsX2.ovh.net** associated with IPv4 *111.222.333.444* and IPv6 *0000:00d0:1:0000::2*
+- **dnsX1.ovh.net** associated with IPv4 *203.0.113.0* and IPv6 *2001:db8:1:1b00:203:0:113:0*
+- **dnsX2.ovh.net** associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 If you need more information, please read [our tutorial on the Zonemaster tool](/pages/web_cloud/domains/dns_zonemaster).
 
@@ -85,13 +85,13 @@ In the window that opens, enter the information requested:
 
 In the image above, taking the example from [step 1](#step1), the glue record you want to add here (from the domain name *domain.tld*) is **dns1.domain.tld**. 
 
-For this glue recoord, the IP addresses of *target DNS server* are indicated as *111.222.333.443* (IPv4) and *0000:00d0:1:0000::1* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.net**). 
+For this glue recoord, the IP addresses of *target DNS server* are indicated as *203.0.113.0* (IPv4) and *2001:db8:1:1b00:203:0:113:0* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.net**). 
 
 This glue record is added so that **dns1.domain.tld** can ultimately replace the DNS server name **dnsX1.ovh.net** currently used by the domain name *domain.tld*.
 
 Once you have entered this information, click the `Next`{.action} button, read the information displayed, then click `Confirm`{.action}. Repeat this step as many times as necessary, depending on the number of DNS servers your domain name uses.
 
-In our example, you will need to repeat the operation to create the **dns2.domain.tld** glue. This will then replace the DNS server **dnsX2.ovh.net** currently associated with IPv4 *111.222.333.444* and IPv6 *0000:00d0:1:0000::2*
+In our example, you will need to repeat the operation to create the **dns2.domain.tld** glue. This will then replace the DNS server **dnsX2.ovh.net** currently associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 ### Step 3: Create the A and AAAA DNS records corresponding to the custom DNS
 
@@ -113,10 +113,10 @@ If we go back to our previous example, the GLUE records that we want to add (fro
 
 As a result, the following records are added to the active DNS zone of the domain name *domain.tld*:
 
- - An *A* DNS record for the *subdomain* **dns1.domain.tld** to the IP *111.222.333.443* (DNS server IPv4 **dnsX1.ovh.net**)
- - A *AAAA* DNS record for the *subdomain* **dns1.domain.tld** to the IP *0000:00d0:1:0000::1* (DNS server IPv6 **dnsX1.ovh.net**)
- - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *111.222.333.444* (DNS server IPv4 **dnsX2.ovh.net**)
- - A *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *0000:00d0:1:0000::2* (DNS server IPv6 **dnsX2.ovh.net**)
+ - An *A* DNS record for the *subdomain* **dns1.domain.tld** to the IP *203.0.113.0* (DNS server IPv4 **dnsX1.ovh.net**)
+ - A *AAAA* DNS record for the *subdomain* **dns1.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:0* (DNS server IPv6 **dnsX1.ovh.net**)
+ - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *203.0.113.1* (DNS server IPv4 **dnsX2.ovh.net**)
+ - A *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:1* (DNS server IPv6 **dnsX2.ovh.net**)
 
 ### Step 4: Modify your domain name’s DNS servers
 

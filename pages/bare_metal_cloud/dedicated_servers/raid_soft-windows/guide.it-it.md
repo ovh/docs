@@ -360,7 +360,7 @@ Di ritorno al prompt del comando, copia i file di avvio della partizione di avvi
 
 Effettua i 3 comandi seguenti ed eseguili con il tasto `Inserisci`:
 
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

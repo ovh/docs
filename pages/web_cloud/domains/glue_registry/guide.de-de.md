@@ -1,7 +1,7 @@
 ---
 title: "DNS-Server von Domainnamen individualisieren (Glue Records)"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Server Ihres OVHcloud Domainnamens anpassen"
-updated: 2023-07-27
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -39,9 +39,9 @@ Je nach Ihren Bedürfnissen können Sie die DNS-Server Ihres OVHcloud Domainname
 
 ### Schritt 1: Abrufen der DNS-Server, die derzeit vom Domainnamen verwendet werden <a name="step1"></a>
 
-Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS-Tool [Zonemaster](https://zonemaster.fr/en/run-test){.external} abrufen.
+Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS-Tool [Zonemaster](https://zonemaster.net/en/run-test){.external} abrufen.
 
-Gehen Sie hierzu auf [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, geben Sie Ihren Domainnamen ohne *www* (*domain.tld*) ein und klicken Sie dann auf den Button `Options`{.action} unter dem Eingabeformular für den Domainnamen.
+Gehen Sie hierzu auf [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, geben Sie Ihren Domainnamen ohne *www* (*domain.tld*) ein und klicken Sie dann auf den Button `Options`{.action} unter dem Eingabeformular für den Domainnamen.
 
 Klicken Sie in den Optionen auf `Fetch NS from parent zone`{.action}.
 
@@ -53,8 +53,8 @@ Notieren Sie die Namen der DNS-Server sowie **alle** IPv4-Adressen (in Form von 
 
 Im oben abgebildeten Beispiel verwendet **domain.tld** derzeit die folgenden **DNS-Server**:
 
-- **dnsX1.ovh.net** mit IPv4 *111.222.333.443* und IPv6 *0000:00d0:1:0000::1*
-- **dnsX2.ovh.net** mit IPv4 *111.222.333.444* und IPv6 *0000:00d0:1:0000::2*
+- **dnsX1.ovh.net** mit IPv4 *203.0.113.0* und IPv6 *2001:db8:1:1b00:203:0:113:0*
+- **dnsX2.ovh.net** mit IPv4 *203.0.113.1* und IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
@@ -89,13 +89,13 @@ Geben Sie im angezeigten Fenster die angeforderten Informationen ein:
 
 In der Abbildung oben, die dem Beispiel aus [Schritt 1](#step1) entspricht, ist der hinzuzufügende *Glue*-Eintrag **dns1.domain.tld** (für *domain.tld*). 
 
-Für diesen *Glue*-Eintrag werden als IP-Adressen des *Ziel-DNS-Servers* die IP-Adressen *111.222.333.443* (IPv4) und *0000:00d0:1:0000::1* (IPv6) angegeben. Diese IPs entsprechen einem der beiden DNS-Server, die derzeit für *domain.tld* (**dnsX1.ovh.net**) verwendet werden. 
+Für diesen *Glue*-Eintrag werden als IP-Adressen des *Ziel-DNS-Servers* die IP-Adressen *203.0.113.0* (IPv4) und *2001:db8:1:1b00:203:0:113:0* (IPv6) angegeben. Diese IPs entsprechen einem der beiden DNS-Server, die derzeit für *domain.tld* (**dnsX1.ovh.net**) verwendet werden. 
 
 Dieser *Glue*-Eintrag wird hinzugefügt, damit **dns1.domain.tld** den derzeit verwendeten DNS-Servernamen **dnsX1.ovh.net** durch den Domainnamen *domain.tld* ersetzen kann.
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}, überprüfen Sie die angezeigten Informationen und klicken Sie dann auf `Bestätigen`{.action}. Wiederholen Sie diesen Vorgang so oft wie nötig, abhängig von der Anzahl der von Ihrem Domainnamen verwendeten DNS-Server.
 
-In unserem Beispiel müssen Sie den Vorgang wiederholen, um die *Glue*-Einträge zu erstellen **dns2.domain.tld**. Dieser ersetzt später den DNS-Server **dnsX2.ovh.net**, der derzeit IPv4 *111.222.333.444* und IPv6 *0000:00d0:1:0000::2* zugewiesen ist.
+In unserem Beispiel müssen Sie den Vorgang wiederholen, um die *Glue*-Einträge zu erstellen **dns2.domain.tld**. Dieser ersetzt später den DNS-Server **dnsX2.ovh.net**, der derzeit IPv4 *203.0.113.1* und IPv6 *2001:db8:1:1b00:203:0:113:1* zugewiesen ist.
 
 ### Schritt 3: DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen
 
@@ -117,10 +117,10 @@ In unserem vorherigen Beispiel sind die *Glue*-Einträge, die Sie hinzufügen m�
 
 Folgende Einträge werden also zur aktiven DNS-Zone des Domainnamens *domain.tld* hinzugefügt:
 
- - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns1.domain.tld** zur IP *111.222.333.443* (IPv4 des DNS-Servers **dnsX1.ovh.net**)
- - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns1.domain.tld** zur IP *0000:00d0:1:0000::1* (IPv6 des DNS-Servers **dnsX1.ovh.net**)
- - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns2.domain.tld** zur IP *111.222.333.444* (IPv4 des DNS-Servers **dnsX2.ovh.net**)
- - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns2.domain.tld** zur IP *0000:00d0:1:0000::2* (IPv6 des DNS-Servers **dnsX2.ovh.net**)
+ - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns1.domain.tld** zur IP *203.0.113.0* (IPv4 des DNS-Servers **dnsX1.ovh.net**)
+ - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns1.domain.tld** zur IP *2001:db8:1:1b00:203:0:113:0* (IPv6 des DNS-Servers **dnsX1.ovh.net**)
+ - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns2.domain.tld** zur IP *203.0.113.1* (IPv4 des DNS-Servers **dnsX2.ovh.net**)
+ - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns2.domain.tld** zur IP *2001:db8:1:1b00:203:0:113:1* (IPv6 des DNS-Servers **dnsX2.ovh.net**)
 
 ### Schritt 4: DNS-Server Ihres Domainnamens ändern
 

@@ -88,7 +88,7 @@ para así poder recuperar los backups desde un servicio de otra localización.
 > Solo es posible autorizar las direcciones IP de OVHcloud.
 >
 
-Conéctese a [api.ovh.com](https://api.ovh.com/) y utilice la siguiente llamada:
+Conéctese a [api.ovh.com](https://ca.api.ovh.com/) y utilice la siguiente llamada:
 
 > [!api]
 >

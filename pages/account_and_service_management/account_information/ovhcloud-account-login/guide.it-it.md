@@ -1,7 +1,7 @@
 ---
 title: Accedi allo Spazio Cliente OVHcloud
 excerpt: Come autenticarsi al tuo account OVHcloud
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Il tuo identificativo cliente è indicato nell’email di conferma della creazio
 
 l tuo identificativo cliente è indicato su tutte le tue fatture, in alto a destra, insieme a tutte le informazioni utili.
 
-![identificativo cliente](images/nichandle01b.png){.thumbnail}
+![identificativo cliente](images/customer-id-bill-en.png){.thumbnail}
 
 ##### **Accedi senza identificativo**
 

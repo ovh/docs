@@ -1,7 +1,7 @@
 ---
 title: Enabling Azure AD SSO connections with your OVHcloud account
 excerpt: "Find out how to associate your Azure Active Directory to your OVHcloud account using SAML 2.0"
-updated: 2023-12-06
+updated: 2024-03-05
 ---
 
 ## Objective
@@ -223,6 +223,8 @@ Fill in the **Group Attribute Name** field with the Entra ID application groups 
 
 Fill in the XML metadata of your Entra ID application from the file saved before.
 
+You can keep local users by ticking the `Keep active OVHcloud users` box.
+
 Click on the `Confirm`{.action} button.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
@@ -253,6 +255,8 @@ The created group should appear on the list.
 
 ![Ovhcloud user management groups step 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
+Warning: if you give the `NONE` privilege, you will need to assign permissions to this group via the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui).
+
 ### Connect via SSO
 
 On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), enter your [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
@@ -278,5 +282,7 @@ You are now logged in with the same [NIC handle](/pages/account_and_service_mana
 If your email does not appear below `Connected via SSO`, this means you have not configured the **UPN** attribute properly, and some of the features will not work in a correct manner.
 
 ## Go further
+
+[How to use IAM policies using the OVHcloud Control Panel](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Join our community of users on <https://community.ovh.com/en/>.

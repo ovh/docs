@@ -1,7 +1,7 @@
 ---
 title: Generating OVHcloud account logs with Logs Data Platform
 excerpt: Find out how to forward OVHcloud customer account logs to Logs Data Platform
-updated: 2023-11-16
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -27,11 +27,11 @@ To discover Logs Data Platform before continuing with this guide, please refer t
 
 ## Instructions
 
-### OVHcloud Account logs type
+### OVHcloud Account logs types
 
 OVHcloud account propose 3 levels of logs:
 
-- **Audit Logs**: Provide a security-relevant, chronological set of records documenting the sequence of actions in your OVHcloud account. (i.e. logins, password change, etc.)
+- **Audit Logs**: Provide a security-relevant, chronological set of records documenting the sequence of actions in your OVHcloud account (i.e. logins, password change, etc.).
 - **Activity Logs**: Provide all records of actions in your OVHcloud account from API calls and actions done in the Control Panel.
 - **Access policy logs**: Provide all records of access evaluation in your OVHcloud account, including actions from third-party integration (i.e. actions authorised or unauthorised through IAM policies).
 
@@ -58,17 +58,18 @@ POST /me/logs/audit/forward
 }
 ```
 
-The API requires a `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to. You will get in response an `operationid`, so you can use it to retrieve the `subscriptionid` for further management purposes using the [Logs Data Platform read operation endpoint](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+The API requires a `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to. You will get in response an `operationId`, so you can use it to retrieve the `subscriptionId` for further management purposes using the [Logs Data Platform read operation endpoint](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
-You can find your `streamId` in the Logs Data Platform control panel:
-
-- Go to the “Data Stream” page of your Logs Data Platform account and “Edit” the target data stream.
-
-![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
-
-- Copy the `streamId` page of your Logs Data Platform account.
-
-![Find stream ID](images/retrieve_streamId_2.png){.thumbnail}
+> [!primary]
+> You can find your `streamId` in the `Logs Data Platform`{.action} section of the OVHcloud Control Panel:
+>
+> - Go to the `Data streams`{.action} page of your Logs Data Platform account. In the table, click the `...`{.action} button to the right of the target data stream, then click `Edit`{.action}.
+>
+> ![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
+>
+> - Copy the `streamId` from your Logs Data Platform account.
+>
+> ![Find stream ID](images/retrieve_streamId_2.png){.thumbnail}
 
 Alternatively, you can retrieve your streams using the Logs Data Platform API:
 
@@ -83,9 +84,10 @@ Alternatively, you can retrieve your streams using the Logs Data Platform API:
 Now that your OVHcloud account logs are ingested and stored in your Logs Data Platform data stream, you can query your logs and build dashboards to have a graphical representation using the web-based UI of Graylog.
 
 - Retrieve the admin user (the Logs Data Platform service name) and the password in your Logs Data Platform account home page.
-- Open the Graylog `web-ui`. You can retrieve the link from your account home page, or use your access point depending on your account region (for example Gravelines regions: <https://gra1.logs.ovh.com/>).
 
 ![Access Graylog](images/access_graylog.png){.thumbnail}
+
+- Open the Graylog `web-ui`. You can retrieve the link from your account home page, or use your access point depending on your account region (for example Gravelines regions: <https://gra1.logs.ovh.com/>).
 
 - Log in to Graylog using your **Logs Data Platform service name** and **password**.
 
