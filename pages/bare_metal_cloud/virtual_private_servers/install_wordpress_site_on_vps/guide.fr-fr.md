@@ -15,7 +15,7 @@ Installer WordPress sur un VPS présente plusieurs avantages, comme la personnal
 - Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 - Avoir [configuré un environnement de développement web sur votre VPS](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
-- Disposer d'un nom de domaine (enregistré chez OVHcloud ou chez un autre registraire)
+- Disposer d'un nom de domaine (enregistré chez OVHcloud ou auprès d'un autre bureau d'enregistrements)
 
 ## En pratique
 
