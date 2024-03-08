@@ -204,7 +204,7 @@ Aby utworzyć nową wiadomość e-mail, kliknij przycisk `Nowa wiadomość`{.act
 >> Nagłówek umożliwia uzupełnienie następujących pól:
 >>
 >> - **Od** : adres email, z którego wysyłasz wiadomości. Domyślnie jest to Twój adres e-mail. Możesz zmienić adres nadawcy, klikając krokwę po prawej stronie Twojego adresu e-mail, tylko jeśli utworzono [delegację](#delegations).<br>
->> - **Do** : odbiorca(y) Twojej wiadomości e-mail. Kliknij na `À`{.action}, aby przejść do [książki adresowej](#contacts) i wybrać odbiorców.<br>
+>> - **Do** : odbiorca(y) Twojej wiadomości e-mail. Kliknij na `Do`{.action}, aby przejść do [książki adresowej](#contacts) i wybrać odbiorców.<br>
 >> - **DW**: Kliknij `DW/UDW`{.action} po prawej stronie pola `Do`{.action}, aby wyświetlić to pole. Cloud Copy to pole odbiorcy, które umożliwia wysłanie e-maila w kopii do osób, które chcesz zintegrować z pętlą, bez określania ich jako bezpośrednich odbiorców e-maila (w przeciwieństwie do odbiorców w polu "**Do**").<br>
 >> - **UDW**: Kliknij `DW/UDW`{.action} po prawej stronie pola `Do`{.action}, aby wyświetlić to pole. Niewidoczna kopia węglowa to pole odbiorcy, które umożliwia przesłanie wiadomości e-mail bez widzenia przez innych adresatów osoby w "**Cci**".<br>
 >> - **Temat**: Tytuł e-maila, pierwszy element widoczny w momencie odebrania przed otwarciem e-maila.<br>

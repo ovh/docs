@@ -355,7 +355,7 @@ Selecione um dos dois separadores seguintes:
 >>
 >> A partir da janela `Contactos`, clique com o botão direito do rato na pasta de contactos à sua escolha, exceto nas pastas "Contactos por E-mail" e "Reciclagem", que não permitem a importação ou exportação de contactos.
 >>
->> Clique em "Exportar" {.action} para abrir a janela de exportação. Escolha o tipo de ficheiro que deseja exportar e depois clique em `Exportar agora`{.action}.<br><br>
+>> Clique em `Exportar`{.action} para abrir a janela de exportação. Escolha o tipo de ficheiro que deseja exportar e depois clique em `Exportar agora`{.action}.<br><br>
 >> ![Zimbra - Exportar](images/zimbra-20.png){.thumbnail}
 >>
 
@@ -383,7 +383,7 @@ Nos subcapítulos que se seguem, poderá encontrar os detalhes de cada um dos el
 O campo de comparação designa a secção do e-mail a verificar pelo operador de comparação. Os campos de comparação podem incluir:
 
 - **De** : indicar um remetente no campo "De" do e-mail.
-- **Para**: procure os nomes de destinatários no campo "To".
+- **Para**: procure os nomes de destinatários no campo "Para".
 - **Cc** : procurar os nomes dos destinatários em cópia no campo "Cc".
 - **Assunto**: Especificar itens no assumpto do e-mail.
 - **Cabeçalho nomeado**: Quando esta opção está selecionada, um campo de entrada adicional aparece antes do operador de comparação. Este campo permite introduzir qualquer elemento no cabeçalho de uma mensagem de correio eletrónico. Pode especificar os campos padrão "De", "Para", "Assumpto", ou outros campos que possam estar presentes no cabeçalho da mensagem. Por exemplo, alguns servidores de correio eletrónico podem adicionar campos específicos no cabeçalho que podem ser integrados na regra de filtragem, utilizando este campo de comparação.
