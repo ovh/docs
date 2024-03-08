@@ -173,7 +173,7 @@ Si vous le souhaitez, vous pouvez utiliser une autre image Docker.
 
 ### Utiliser une image Docker spécifique
 
-Dirigez-vous dans la [section WordPress de Docker Hub](https://hub.docker.com/_/wordpress) et identifiez l'image qui correspond à vos besoins. Par exemple, si vous choisissez d'utiliser l'image `wordpress:5-php7.4-fpm`, vous allez devoir modifier votre fichier `docker-compose.yml` avec un éditeur de texte. Une fois le fichier ouvert, trouvez la section du service `wordpress` et modifiez la ligne `image:` pour utiliser le tag spécifique de l'image `wordpress:5-php7.4-fpm` que vous avez choisi. Par exemple :
+Dirigez-vous dans la [section WordPress de Docker Hub](https://hub.docker.com/_/wordpress) et identifiez l'image qui correspond à vos besoins. Par exemple, si vous choisissez d'utiliser l'image `wordpress:5-php7.4-fpm`, vous devrez modifier votre fichier `docker-compose.yml` avec un éditeur de texte. Une fois le fichier ouvert, trouvez la section du service `wordpress` et modifiez la ligne `image:` pour utiliser le tag spécifique de l'image `wordpress:5-php7.4-fpm` que vous avez choisi. Par exemple :
 
 ```sh
 version: '3.8'
