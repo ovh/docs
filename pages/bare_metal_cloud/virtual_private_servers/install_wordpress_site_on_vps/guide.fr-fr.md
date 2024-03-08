@@ -229,7 +229,7 @@ Une fois la configuration testée et validée, redémarrez Nginx pour appliquer 
 
 #### Relier le nom de domaine à l'adresse IP du VPS
 
-Pour pouvoir accéder à votre site web depuis un navigateur, vous devez d'abord lier le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS. Rendez-vous dans votre espace client. Dans le menu de gauche, cliquez sur `Domain names`{.action} puis sélectionnez le nom de domaine que vous avez choisi pour votre site WordPress. Cliquez sur l'onglet `DNS zone`{.action} puis, dans le tableau qui s'affiche, identifiez la ligne ayant pour type la valeur `A`, cliquez sur le bouton `…`{.action} et sélectionnez `Modify record`{.action}.
+Pour accéder à votre site web depuis un navigateur, liez d'abord le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans le menu de gauche, cliquez sur `Noms de domaines`{.action} puis sélectionnez le nom de domaine que vous avez choisi pour votre site WordPress. Cliquez sur l'onglet `Zone DNS`{.action} puis, dans le tableau qui s'affiche, identifiez la ligne ayant pour type la valeur `A`, cliquez sur le bouton `…`{.action} et sélectionnez `Modifier l'entrée`{.action}.
 
 ![WP VPS](images/dns_zone_line_cta.png){.thumbnail}
 
