@@ -241,7 +241,7 @@ Une fois toutes les informations nécessaires remplies et le formulaire soumis, 
 
 ### Conclusion
 
-Vous venez d'installer WordPress sur votre VPS OVHcloud ou votre Serveur Dédié avec une image Docker, et vous pouvez accéder à votre site web WordPress depuis un navigateur.
+Vous venez d'installer WordPress sur votre VPS OVHcloud ou votre Serveur Dédié avec une image Docker. Vous pouvez désormais accéder à votre site web WordPress depuis un navigateur.
 
 ## Aller plus loin
 
