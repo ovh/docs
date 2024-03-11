@@ -35,8 +35,7 @@ Nous vous proposons quatre méthodes différentes (cliquez sur les onglets ci-d
 
 > [!tabs]
 > SMS
->> ![2FA sms](images/sms.svg)
->>
+>> ![2FA sms](images/sms.svg)<br>
 >> Pour cette méthode, vous devez renseigner votre numéro de téléphone mobile.
 >> Un code à usage unique vous est envoyé par SMS à chaque tentative de connexion à votre compte OVHcloud.
 >>
@@ -44,8 +43,7 @@ Nous vous proposons quatre méthodes différentes (cliquez sur les onglets ci-d
 >> Vous devez cependant bénéficier d'une couverture réseau suffisante pour recevoir les SMS.
 >>
 > Application Mobile
->> ![2FA OTP](images/app.svg)
->>
+>> ![2FA OTP](images/app.svg)<br>
 >> Pour cette méthode, vous devez installer une application **OTP** sur votre smartphone ou tablette Android ou iOS.
 >> De nombreuses applications OTP existent (aucune application OTP n'a été développée par OVHcloud) et sont à télécharger depuis le Google Play Store pour Android ou depuis l'Apple Store pour iOS. Les deux applications suivantes sont gratuites :
 >>
@@ -61,14 +59,12 @@ Nous vous proposons quatre méthodes différentes (cliquez sur les onglets ci-d
 >> > - Vous pouvez utiliser une seule application OTP pour l'ensemble de vos services ou sites nécessitant une double authentification.
 >>
 > Clé de sécurité
->> ![2FA U2F](images/key.svg)
->>
+>> ![2FA U2F](images/key.svg)<br>
 >> Pour cette méthode, vous devez disposer d'une clé physique **U2F** que vous branchez sur un port USB de votre ordinateur à chaque connexion à votre compte OVHcloud. L'authentification s'effectue alors automatiquement. 
 >>
 >> Cette méthode offre un niveau de sécurité plus élevé car elle repose sur un équipement de sécurité indépendant, totalement séparé de votre ordinateur, smartphone ou tablette, et qui est moins exposé aux risques de piratage.
 > Codes de secours
->> ![2FA codes](images/code.svg)
->>
+>> ![2FA codes](images/code.svg)<br>
 >> Lorsque vous configurez une double authentification (par **SMS**, **Application mobile** ou **Clé de sécurité**) pour la première fois, 10 codes de secours **à usage unique** vous sont affichés dans l'espace client.
 >>
 >> Cette méthode de double-authentification vient en complément d'une méthode déjà activée (par **SMS**, **Application Mobile** ou **Clé de sécurité**), elle ne peut être activée seule.
@@ -88,37 +84,33 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 > SMS
 >> Choisissez la méthode par SMS et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>br>
+>> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
 >> Renseignez votre numéro de téléphone mobile au format international (par exemple, +33612345678 pour un téléphone mobile en France) et validez.
 >> Un code de validation est alors envoyé par SMS au numéro que vous avez indiqué.
 >>
->> ![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}<br>br>
+>> ![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}<br>
 >> Renseignez ce code dans le champ prévu à cet effet.<br>
 >> Vous pouvez également ajouter une description pour le numéro de téléphone renseigné.
 >>
->> ![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>br>
+>> ![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
 >> La double authentification est maintenant activée. L'ajout d'autres numéros est également possible.
 > Application Mobile
 >> Choisissez la méthode par application mobile et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}
->>
+>> ![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
 >> Un QR code est généré, scannez-le via votre application OTP. Si votre application OTP ne propose pas cette option, cliquez sur `Afficher le secret`{.action} pour afficher un code à renseigner dans l'application OTP.<br>
 >> Votre application génère alors un code à usage unique.
 >> Renseignez alors ce code dans le champ prévu à cet effet (à droite du QR code). Vous pouvez également ajouter une description pour cette méthode d'authentification.
 >>
->> ![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}
->>
+>> ![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
 >> La double authentification est maintenant activée.
 > Clé de sécurité
 >> Choisissez la méthode par clé de sécurité et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}
->>
+>> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
 >> Branchez votre clé de sécurité lorsque cela vous est demandé. Si elle est équipée d'un bouton, appuyez sur celui-ci.
 >>
->> ![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}
->>
+>> ![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}<br>
 >> > [!warning]
 >> > Une fenêtre de type pop-up s'ouvrira pour vous demander la validation de la clé. Si vous ne voyez pas cette fenêtre apparaître, vérifiez que votre navigateur ne bloque pas les pop-ups.
 >>
