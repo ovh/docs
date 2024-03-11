@@ -135,6 +135,29 @@ The basic structure of a replication rule within the configuration JSON document
 | Bucket                  | The destination bucket (to replicate to multiple destinations, you must create multiple replication rules)              | Yes      |
 | And                     | You can apply multiple selection criteria in the filter                                                                 | No       |
 
+# Delete Marker Replication
+
+## Important
+
+When configuring replication, it's crucial to understand the interaction between filters and delete marker replication. If a `Filter` is specified in your replication configuration, you must also include a `DeleteMarkerReplication` element. Specifically, if your `Filter` includes a `Tag` element, then the `DeleteMarkerReplication` Status must be set to `Disabled`.
+
+### Understanding Delete Markers
+
+In buckets where versioning is enabled, performing a delete operation on an object doesn't permanently remove it. Instead, this action generates a delete marker, which:
+
+- Becomes the latest version of the object, equipped with a new version ID.
+- Has a key and version ID like any other object.
+- Contains no associated data, meaning a GET request on a delete marker results in a 404 error.
+- Is not visible by default in the Control Panel UI.
+- Can only be deleted through a DELETE operation, a capability reserved for the bucket owner.
+
+To permanently remove an object, the deletion request must specify the object's `version-id`. By default, OVHcloud Object Storage does not replicate delete markers or the action of permanently deleting objects to destination buckets. This approach is designed to safeguard your data against unauthorized or accidental deletions.
+
+### Configuring Delete Marker Replication
+
+Despite the default setting, you have the option to replicate delete markers by incorporating the `DeleteMarkerReplication` element into your replication rule. This setting dictates whether delete markers — indicators of an object's deletion in versioning-enabled buckets — should be replicated.
+
+
 
 
 
