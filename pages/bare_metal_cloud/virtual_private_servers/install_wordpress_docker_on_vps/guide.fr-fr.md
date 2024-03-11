@@ -217,8 +217,8 @@ Vérifiez que tout fonctionne comme prévu. Vous pouvez vérifier les logs de vo
 
 Vous pouvez maintenant accéder à WordPress depuis un navigateur. Deux possibilités s'offrent à vous :
 
-- Via l'adresse IP de votre VPS : <VPS_IP_ADDRESS>:8000
-- Via le nom de domaine de votre site web : <DOMAIN_NAME>:8000
+- Via l'adresse IP de votre VPS : `<VPS_IP_ADDRESS>:8000`
+- Via le nom de domaine de votre site web : `<DOMAIN_NAME>:8000`
 
 #### Relier le nom de domaine à l'adresse IP du VPS ou du serveur dédié
 
@@ -236,7 +236,7 @@ Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS ou du serveur d
 
 #### Initialiser votre site WordPress
 
-Lors de votre première connexion, votre navigateur doit vous rediriger vers <VPS_IP_ADDRESS>:8000/wp-admin/install.php (ou <DOMAIN_NAME>:8000/wp-admin/install.php si vous passez par le nom de domaine). Cela signifie que WordPress est prêt pour la phase de configuration initiale. Cette page est le point de départ de la configuration de votre site WordPress, où vous devez définir les éléments clés tels que :
+Lors de votre première connexion, votre navigateur doit vous rediriger vers `<VPS_IP_ADDRESS>:8000/wp-admin/install.php` (ou `<DOMAIN_NAME>:8000/wp-admin/install.php` si vous passez par le nom de domaine). Cela signifie que WordPress est prêt pour la phase de configuration initiale. Cette page est le point de départ de la configuration de votre site WordPress, où vous devez définir les éléments clés tels que :
 
 - La langue
 - Le titre de votre site web
