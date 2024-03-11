@@ -41,7 +41,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 |Term|Description|Examples|
 |---|---|---|
-|ADDITIONAL_IP|An Additional IP address assigned to your service|169.254.10.254|
+|ADDITIONAL_IP|An Additional IP address assigned to your service|203.0.113.1|
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
@@ -61,11 +61,9 @@ network: {config: disabled}
 ```
 Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
-#### Step 2: Edit the network configuration file
+#### Step 2: Create a backup
 
-By default, the network configuration file is located in the folder `/etc/network/interfaces.d`. We recommend that you start by backing up the relevant configuration file. 
-
-#### Step 1: Create a backup
+By default, the configuration file is located in the path `etc\network\interfaces.d`.
 
 In our example, our file is called `50-cloud-init`, so we make a copy of the `50-cloud-init` file using the following command:
 
@@ -79,32 +77,52 @@ In case of a mistake, you will be able to revert the changes, using the commands
 sudo rm -f /etc/network/interfaces.d/50-cloud-init
 sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 ```
+#### Step 3: Edit the configuration file
 
-You can verify your network interface name with this command:
+The first step is to verify your network interface name with this command:
 
 ```bash
 ip a
 ```
 
-Open the network configuration file for editing with the following command:
+Next, open the network configuration file for editing with the following command:
 
 ```bash
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
-To configure your Additional IP, you need to add a virtual interface or ethernet alias to your network interface. In our example, our interface is called `eth0`, so our  first alias is `eth0:0`. Do this for each Additional IP you wish to configure.
+To configure your Additional IP, you need to add a virtual interface or ethernet alias to your network interface. In our example, our interface is called `eth0`, so our first alias is `eth0:0`. Do this for each Additional IP you wish to configure.
 
-Do not modify the existing lines in the configuration file, simply add your Additional IP to the file as follows, replacing `ADDITIONAL_IP` as well as the virtual interface (if your server is not using **eth0**) wih your own values:
+Do not modify the existing lines in the configuration file, simply add your Additional IP to the file as follows, replacing `NETWORK_INTERFACE`, `ID` and `ADDITIONAL_IP` wih your own values:
 
 
-```bash
+```console
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
 address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
-#### Step 3: Restart the interface
+If you are configuring more than one Additional IP, your configuration file should look like this:
+
+```console
+auto NETWORK_INTERFACE:ID
+iface NETWORK_INTERFACE:ID inet static
+address ADDITIONAL_IP1
+address ADDITIONAL_IP2
+netmask 255.255.255.255
+```
+
+For example:
+
+```console
+auto eth0:0
+iface eth0:0 inet static
+address 203.0.113.1
+netmask 255.255.255.255
+```
+
+#### Step 4: Restart the interface
 
 Apply the changes with the following command:
 
@@ -112,23 +130,19 @@ Apply the changes with the following command:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04 & Debian 12
+### Debian 12, Ubuntu 20.04 and following
 
-The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
+The configuration file for your Additional IP addresses is located in the folder `/etc/netplan/`. In this example it is called `50-cloud-init.yaml`. 
 
-#### Step 1: Disable automatic network configuration
+The best practice approach is to create a separate configuration file to set up Additional IP addresses. This way, you can easily revert the changes in case of an error.
 
-Open the following file path with a text editor:
+#### Step 1: Create the network configuration file
 
-```bash
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-```
-Enter the following line, then save and exit the editor.
+In our example, our file is call `51-cloud-init.yaml`:
 
 ```bash
-network: {config: disabled}
+sudo touch /etc/netplan/51-cloud-init.yaml
 ```
-Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
 #### Step 2: Edit the configuration file
 
@@ -138,36 +152,56 @@ You can verify your network interface name with this command:
 ip a
 ```
 
-Open the network configuration file for editing with the following command:
+Next, open the network configuration file for editing with the following command:
 
 ```bash
-sudo nano /etc/netplan/50-cloud-init.yaml
+sudo nano /etc/netplan/51-cloud-init.yaml
 ```
 
-Do not modify the existing lines in the configuration file. Add your Additional IP address by adding a second configuration block for the public interface according to the example below:
+Edit the file with the content below, replacing `INTERFACE_NAME` and `ADDITIONAL_IP1` with your own values:
 
 ```yaml
 network:
-    version: 2
-    ethernets:
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE            
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE
-            addresses:
-            - ADDITIONAL_IP/32
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP1/32
+```
+
+If you have more Additional IPs to configure, the configuration file should look like this:
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP1/32
+           - ADDITIONAL_IP2/32
 ```
 
 > [!warning]
 >
 > It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing.
 >
+
+Configuration example:
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       eth0:
+           dhcp4: true
+           addresses:
+           - 203.0.113.0/32
+```
 
 Save and close the file.
 
@@ -185,7 +219,75 @@ If it is correct, apply it using the following command:
 sudo netplan apply
 ```
 
-Repeat this procedure for each Additional IP address.
+### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+
+The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
+
+For each Additional IP to be configured, we create a seperate configuration file with the following parameters: `ifcfg-NETWORK_INTERFACE:ID`. Where `NETWORK_INTERFACE` is the physical interface and `ID` is the virtual network interface or ethernet alias starting with a value of 0. For example, for our interface named `eth0` the first alias is `eth0:0`, the second alias is `eth0:1`, etc...
+
+#### Step 1: Determine the interface
+
+```bash
+~# ip a
+```
+
+#### Step 2: Create the configuration file
+
+First, create the configuration file. Replace `NETWORK_INTERFACE:ID` with your own values.
+
+```bash
+~# sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+```
+
+Next, edit the file with the content below, replacing `NETWORK_INTERFACE:ID`, and `ADDITIONAL_IP` with your own values:
+
+```console
+DEVICE=NETWORK_INTERFACE:ID
+ONBOOT=yes
+BOOTPROTO=none # For CentOS use "static"
+IPADDR=ADDITIONAL_IP
+NETMASK=255.255.255.255
+BROADCAST=ADDITIONAL_IP
+```
+
+Configuration example:
+
+```console
+DEVICE=eth0:0
+ONBOOT=yes
+BOOTPROTO=none # For CentOS use "static"
+IPADDR=203.0.113.0
+NETMASK=255.255.255.255
+BROADCAST=203.0.113.0
+```
+
+#### Step 3: Restart the interface
+
+```bash
+sudo systemctl restart network
+```
+
+#### For Alma Linux and Rocky Linux
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+### Fedora 37 and following
+
+Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
+
+#### Step 1: Create a backup
+
+In our example, our file is called `cloud-init-eno1.nmconnection`, so we make a copy of the `cloud-init-eno1.nmconnection` file using the following command:
+
+```bash
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+In case of a mistake, you will be able to revert the changes, using the commands below:
+
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 
 ### Windows Server 2016
 
