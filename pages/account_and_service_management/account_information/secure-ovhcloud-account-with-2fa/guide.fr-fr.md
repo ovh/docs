@@ -47,14 +47,12 @@ Nous vous proposons quatre méthodes différentes (cliquez sur les onglets ci-d
 >> ![2FA OTP](images/app.svg)
 >>
 >> Pour cette méthode, vous devez installer une application **OTP** sur votre smartphone ou tablette Android ou iOS.
->> De nombreuses applications OTP existent (aucune application OTP n'a été développée par OVHcloud) et sont à télécharger depuis le Google Play Store pour Android ou depuis l'Apple Store pour iOS. 
->> Les deux applications suivantes sont gratuites :
+>> De nombreuses applications OTP existent (aucune application OTP n'a été développée par OVHcloud) et sont à télécharger depuis le Google Play Store pour Android ou depuis l'Apple Store pour iOS. Les deux applications suivantes sont gratuites :
 >>
 >> - FreeOTP pour Android
 >> - OTP Auth pour iOS
 >>
->> Associez ensuite l'application à votre compte OVHcloud.
->> À chaque tentative de connexion, l'application génère un code à usage unique valable pendant un court laps de temps (quelques secondes) que vous renseignez pour valider votre connexion.
+>> Une fois l'application associée à votre compte OVHcloud, l'application génère un code à usage unique valable pendant un court laps de temps (quelques secondes) à chaque tentative de connexion.
 >>
 >> > [!success]
 >> > **Avantages de cette méthode** :
