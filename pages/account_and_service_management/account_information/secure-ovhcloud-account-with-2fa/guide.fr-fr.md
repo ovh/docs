@@ -110,7 +110,8 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 >> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
 >> Branchez votre clé de sécurité lorsque cela vous est demandé. Si elle est équipée d'un bouton, appuyez sur celui-ci.
 >>
->> ![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}<br>
+>> ![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}
+>>
 >> > [!warning]
 >> > Une fenêtre de type pop-up s'ouvrira pour vous demander la validation de la clé. Si vous ne voyez pas cette fenêtre apparaître, vérifiez que votre navigateur ne bloque pas les pop-ups.
 >>
