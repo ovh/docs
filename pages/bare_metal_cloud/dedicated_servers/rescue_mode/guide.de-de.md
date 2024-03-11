@@ -1,6 +1,6 @@
 ---
-title: 'Rescue-Modus aktivieren und verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für einen Dedicated Server aktivieren und verwenden'
+title: "Rescue-Modus aktivieren und verwenden"
+excerpt: "Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus zur Fehlerbehebung bei einem Dedicated Server einsetzen"
 updated: 2024-01-09
 ---
 
@@ -10,25 +10,25 @@ updated: 2024-01-09
 
 ## Ziel
 
-Der Rescue-Modus ist ein Tool Ihres dedizierten Servers, mit dem Sie diesen auf einem temporären Betriebssystem starten können, um Probleme zu diagnostizieren und zu beheben.
+Der Rescue-Modus ist ein von OVHcloud zur Verfügung gestelltes Tool für Ihren dedizierten Server, das dazu dient, den Server mithilfe eines temporären Betriebssystems zu booten. Damit haben Sie Zugriff auf den Server und können Probleme diagnostizieren und beheben.
 
-Der Rescue-Modus ist generell an folgende Aufgaben angepasst:
+Der Rescue-Modus ist generell für folgende Aufgaben einzusetzen:
 
-- Zurücksetzen des Root-Passworts
+- [Zurücksetzen Ihres User-Passworts](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnose von Netzwerkproblemen
-- Reparatur eines fehlerhaften Betriebssystems
+- Reparatur eines beschädigten Betriebssystems
 - Korrektur einer fehlerhaften Konfiguration einer Software-Firewall
-- Performance-Test der Festplatten
-- Test des Prozessors und des RAM
-
-Falls Sie nicht schon über aktuelle Backups verfügen sollte der erste Schritt im Troubleshooting, auch im Rescue-Modus, immer darin bestehen, ein Backup Ihrer Daten zu erstellen.
+- Performance-Test von Disks
+- Testen des Prozessors und des RAM
 
 > [!warning]
 >
-> Wenn Sie Dienste auf Ihrem VPS im laufenden Betrieb haben, wird der Rescue-Modus diese Dienste unterbrechen, da der VPS in das Hilfsbetriebssystem neu gestartet wird.
+> Falls Sie nicht schon über aktuelle Backups verfügen, sollte der erste Schritt im Troubleshooting, auch im Rescue-Modus, immer darin bestehen, ein Backup Ihrer Daten zu erstellen.
+>
+> Wenn Sie Dienste auf Ihrem Dedicated Server im laufenden Betrieb haben, wird der Rescue-Modus diese Dienste unterbrechen, da er in das Hilfsbetriebssystem neu gestartet wird.
 > 
 
-**Diese Anleitung erklärt, wie Sie Ihren OVHcloud Dedicated Server im Rescue-Modus neu starten.**
+**Diese Anleitung erklärt, wie Sie Ihren OVHcloud Dedicated Server im Rescue-Modus neu starten und Partitionen mounten.**
 
 ## Voraussetzungen
 
@@ -87,16 +87,16 @@ root@ns3956771.ip-169-254-10.eu's password:
 
 > [!warning]
 >
-> Ihr SSH-Client wird die Verbindung wahrscheinlich zuerst ablehnen, weil der ECDSA-Fingerabdruck nicht kompatibel ist. Dies ist normal, da der Rescue-Modus seinen eigenen temporären SSH-Server verwendet.
+> Ihr SSH-Client wird die Verbindung wahrscheinlich zunächst blockieren, weil der ECDSA *Fingerprint* nicht mehr übereinstimmt. Dies ist normal, da der Rescue-Modus seinen eigenen temporären SSH-Server verwendet.
 >
-> Um dieses Problem zu umgehen, können Sie den regulären Fingerprint des Systems auskommentieren, indem Sie in der Datei *known_hosts* ein `#` in der entsprechenden Zeile hinzufügen. Achten Sie darauf, dieses Zeichen zu entfernen, bevor Sie den Server im normalen Modus neu starten.
+> Eine Möglichkeit, dieses Problem zu umgehen, besteht im "Auskommentieren" des Server-*Fingerprints*, indem Sie in der Datei `known_hosts` der entsprechenden Zeile ein `#` voranstellen. Vergessen Sie nicht, diese Änderung rückgängig zu machen, bevor Sie den Netboot wieder in den "normalen" Modus versetzen.<br>Sie können alternativ einfach die Zeile aus der Datei löschen. Ihr SSH-Client fügt dann einen neuen *Fingerprint*-Eintrag für den Server hinzu, sobald die Verbindung erneut hergestellt wird. Wenn Sie detaillierte Instruktionen benötigen, konsultieren Sie unsere Anleitung "[Einführung in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login)".
 >
 
-#### Mounten Ihrer Partitionen
+#### Mounten von Partitionen
 
-Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Partition gemountet werden. Dieser Modus verfügt über ein eigenes temporäres Daateisystem. Folglich gehen alle im Rescue-Modus vorgenommenen Änderungen am Dateisystem beim Neustart des Servers im normalen Modus verloren.
+Sofern Sie die Disks des Serves nicht in einer Weise konfigurieren, dass diese abgetrennt sein müssen (nicht gemountet), müssen zuerst die Systempartition gemountet werden.
 
-Die Partitionen werden über SSH per `mount` Befehl gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie Codebeispiele, an denen Sie sich orientieren können.
+Partitionen werden über SSH per `mount` Befehl gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie Codebeispiele, an denen Sie sich orientieren können.
 
 ```bash
 fdisk -l
