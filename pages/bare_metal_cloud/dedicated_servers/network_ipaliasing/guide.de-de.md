@@ -463,19 +463,19 @@ In den untenstehenden Befehlen ersetzen Sie Folgendes:
 
 In der Eingabeaufforderung:
 
-1. Umschalten auf statische IP
+1\. Umschalten auf statische IP
 
 ```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
  
-2. DNS-Server festlegen
+2\. DNS-Server festlegen
 
 ```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
 
-3. Additional IP hinzufügen
+3\. Additional IP hinzufügen
 
 ```powershell
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255

@@ -21,7 +21,7 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 
 ## Requisitos
 
-- Tener un servidor [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}.
+- Tener un servidor [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
 - Tener una o más direcciones [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}.
 - Estar conectado al servidor por SSH (acceso *sudo*).
 
@@ -388,13 +388,13 @@ sudo systemctl restart NetworkManager
 
 ### cPanel (en CentOS 7)
 
-#### Etapa 1: acceder a la sección Gestión IP de WHM
+#### 1. Acceder a la sección Gestión IP de WHM
 
 En el área de cliente WHM, haga clic en `IP Functions`{.action} y seleccione `Add a New IP Address`{.action} en el menú de la izquierda.
 
 ![Añadir una nueva dirección IP](images/Cpanel-1.png){.thumbnail}
 
-##### Etapa 2: añadir la información de las Direcciones IP
+#### 2. añadir la información de las Direcciones IP
 
 Introduzca su dirección IP adicional como "xxx.xxx.xxx.xxx" en el campo "New IP or IP range to add".
 
@@ -407,7 +407,7 @@ Seleccione `255.255.255.255` como máscara de subred y haga clic en `Submit`{.ac
 > Atención: Si tiene varias IP que configurar en un mismo bloque y las añade todas al mismo tiempo, el sistema WHM le obligará a utilizar la máscara de subred `255.255.255.0`. No es recomendable utilizar esta configuración. Es necesario añadir cada IP individualmente para poder utilizar la máscara de subred adecuada `255.255.255.255`.
 >
 
-#### Etapa 3: comprobar la configuración IP actual
+#### 3. comprobar la configuración IP actual
 
 En la sección `IP Functions`{.action}, haga clic en `Show or Delete Current IP Addresses`{.action} para comprobar que la dirección Aditional IP se ha añadido correctamente.
 
@@ -456,19 +456,19 @@ Realice las acciones que se indican a continuación en la consola de comandos.
 
 Cambie a IP fija.
 
-```
+```powershell
 netsh interface ipv4 set address name="NETWORK_ADAPTER" static IP_ADDRESS SUBNET_MASK GATEWAY
 ```
  
 Indique el servidor DNS.
 
-```
+```powershell
 netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 ```
 
 Añada una Additional IP.
 
-```
+```powershell
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
 ```
 
@@ -476,13 +476,10 @@ Su Additional IP ya estará activa.
 
 #### A través de la interfaz gráfica
 
-Vaya a `Inicio`{.action} > `Panel de control`{.action} > `Redes e Internet`{.action} > `Centro de redes y recursos compartidos`{.action}. En el menú izquierdo, seleccione `Cambiar configuración del adaptador`{.action}.
-
-Haga clic derecho en `Conexión de área local`{.action} y seleccione `Propiedades`{.action}.
-
-Haga clic en `Protocolo de Internet versión 4 (TCP/IPv4)`{.action} y, a continuación, haga clic en el botón `Propiedades`{.action}.
-
-Marque la opción `Usar la siguiente dirección IP`{.action} e introduzca la IP principal del servidor, la máscara de subred y la puerta de enlace predeterminada obtenidas anteriormente con el comando `ipconfig`. En **servidor DNS preferido**, introduzca **213.186.33.99**.
+1. Vaya a `Inicio`{.action} > `Panel de control`{.action} > `Redes e Internet`{.action} > `Centro de redes y recursos compartidos`{.action}. En el menú izquierdo, seleccione `Cambiar configuración del adaptador`{.action}.
+2. Haga clic derecho en `Conexión de área local`{.action} y seleccione `Propiedades`{.action}.
+3. Haga clic en `Protocolo de Internet versión 4 (TCP/IPv4)`{.action} y, a continuación, haga clic en el botón `Propiedades`{.action}.
+4. Marque la opción `Usar la siguiente dirección IP`{.action} e introduzca la IP principal del servidor, la máscara de subred y la puerta de enlace predeterminada obtenidas anteriormente con el comando `ipconfig`. En **servidor DNS preferido**, introduzca **213.186.33.99**.
 
 ![Propiedades del protocolo de internet versión 4 (TCP/IPv4)](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
 
@@ -493,7 +490,7 @@ Marque la opción `Usar la siguiente dirección IP`{.action} e introduzca la IP 
 
 A continuación, haga clic en `Opciones avanzadas`{.action} (todavía en las propiedades del protocolo de internet versión 4).
 
-![Propiedades del protocolo de internet versión 4 (TCP/IPv4)](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
+![Propiedades del protocolo de internet versión 4 (TCP/IPv4)](images/guides-network-ipaliasing-windows-2008-2.0.png){.thumbnail}
 
 En la sección **Direcciones IP**, haga clic en `Agregar`{.action}.
 
@@ -509,7 +506,7 @@ Su Additional IP ya estará activa.
 
 ### Plesk
 
-#### Paso 1: acceder a la gestión de IP de Plesk
+#### 1. Acceder a la gestión de IP de Plesk
 
 En el panel de configuración de Plesk, seleccione `Tools & Settings`{.action} en la columna izquierda.
 
@@ -517,7 +514,7 @@ En el panel de configuración de Plesk, seleccione `Tools & Settings`{.action} e
 
 Haga clic en `IP Addresses`{.action} bajo **Tools & Settings**.
 
-#### Paso 2: añadir la información IP adicional
+#### 2. Añadir la información IP adicional
 
 En esta sección, haga clic en el botón `Add IP Address`{.action}.
 
@@ -527,116 +524,12 @@ Introduzca su dirección Additional IP como `xxx.xxx.xxx.xxx/32` en el campo "IP
 
 ![añadir información IP](images/pleskip3-3.png){.thumbnail}
 
-#### Paso 3: comprobar la configuración IP actual
+#### 3. Comprobar la configuración IP actual
 
 En la sección "Direcciones IP", compruebe que la dirección Additional IP se haya añadido correctamente.
 
 ![configuración IP actual](images/pleskip4-4.png){.thumbnail}
 
-### FreeBSD
-
-#### 1. Identificar la interfaz
-
-Identifique el nombre de su interfaz de red principal. Para ello, puede utilizar el comando `ifconfig`.
-
-```sh
-ifconfig
-```
-
-Dicho comando le dará una respuesta como la siguiente:
-
-```sh
-ifconfig
->>> nfe0: flags=8843 metric 0 mtu 1500
->>> options=10b
->>> ether 00:24:8c:d7:ba:11
->>> inet 94.23.196.18 netmask 0xffffff00 broadcast 94.23.196.255
->>> inet 87.98.129.74 netmask 0xffffffff broadcast 87.98.129.74
->>> media: Ethernet autoselect (100baseTX )
->>> status: active
->>> lo0: flags=8049 metric 0 mtu 16384
->>> options=3
->>> inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2
->>> inet6 ::1 prefixlen 128
->>> inet 127.0.0.1 netmask 0xff000000 v comsdvt#
-```
-
-En este ejemplo, el nombre de la interfaz es **nfe0**.
-
-#### 2. Crear una copia de seguridad del archivo de configuración
-
-En primer lugar, realice una copia de seguridad del archivo de configuración de las interfaces para poder volver atrás en cualquier momento.
-
-```sh
-cp /etc/rc.conf /etc/rc.conf.bak
-```
-
-#### 3. Editar el archivo de configuración
-
-Edite el archivo **/etc/rc.conf**.
-
-```sh
-editor /etc/rc.conf
-```
-
-A continuación, añada al final del archivo la siguiente línea:
-`ifconfig_INTERFACE_alias0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"`
-(sustituyendo «INTERFACE» e «ADDITIONAL_IP» por el nombre de su interfaz, identificado en el primer paso, y su Additional IP respectivamente). Por ejemplo:
-
-```
-ifconfig_nfe0_alias0="inet 87.98.129.74 netmask 255.255.255.255 broadcast 87.98.129.74"
-```
-
-#### 4. Reiniciar la interfaz
-
-Por último, reinicie la interfaz con el siguiente comando:
-
-```
-/etc/rc.d/netif restart && /etc/rc.d/routing restart
-```
-
-### Solaris
-
-#### 1. Identificar la interfaz
-
-Identifique el nombre de su interfaz de red principal. Para ello, puede utilizar el comando `ifconfig`.
-
-```sh
-ifconfig -a
-```
-
-Dicho comando le dará una respuesta como la siguiente:
-
-```
-ifconfig -a
->>> lo0: flags=2001000849 mtu 8232 index 1 inet 127.0.0.1 netmask ff000000 e1000g0: flags=1000843 mtu 1500 index 2 inet 94.23.41.167 netmask ffffff00 broadcast 94.23.41.255 ether 0:1c:c0:f2:be:42
-```
-
-En este ejemplo, el nombre de la interfaz es **e1000g0**.
-
-#### 2. Crear una copia de seguridad del archivo de configuración
-
-En primer lugar, realice una copia de seguridad del archivo de configuración de las interfaces para poder volver atrás en cualquier momento.
-
-```sh
-editor /etc/hostname.e1000g0:1
-```
-
-#### 3. Editar el archivo de configuración
-
-Introduzca lo siguiente: `ADDITIONAL_IP/32 up` (sustituyendo ADDITIONAL_IP por su Additional IP). Por ejemplo:
-
-```
-188.165.171.40/32 up
-```
-
-#### 4. Reiniciar la interfaz
-
-Por último, reinicie la interfaz con el siguiente comando:
-
-```sh
-svcadm restart svc:/network/physical:default
-```
 
 #### Resolución de fallos
 
@@ -648,9 +541,13 @@ Para ello, una vez que haya reiniciado el servidor en modo de rescate, ejecute e
 ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Donde podrá sustituir "ADDITIONAL_IP" por la verdadera IP Aditional.
+Donde podrá sustituir "ADDITIONAL_IP" por la verdadera Additional IP.
 
-A continuación, solo tiene que hacer un ping desde su Dirección IP hacia el exterior. Si funciona, probablemente significa que debe corregirse un error de configuración. Si, por el contrario, la IP todavía no funciona, abra un tíquet al equipo de soporte desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} para más información.
+A continuación, solo tiene que hacer ping desde su Additional IP hacia el exterior. Si funciona, es probable que haya un error de configuración que deba corregirse. Si, por el contrario, la dirección IP sigue sin funcionar, abra un tíquet con el equipo de soporte a través del [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external} y especifique lo siguiente:
+
+- El nombre y la versión del sistema operativo que utiliza en su servidor.
+- Nombre y directorio del archivo de configuración de red.
+- El contenido de este archivo.
 
 ## Más información
 
