@@ -144,22 +144,92 @@ The basic structure of a replication rule within the configuration JSON document
 
 ### Understanding Delete Markers
 
-In buckets where versioning is enabled, performing a delete operation on an object doesn't permanently remove it. Instead, this action generates a delete marker, which:
+When a delete object operation is performed on an object in a versioning-enabled bucket, it does not delete the object permanently but it creates a delete marker on the object. This delete marker becomes the latest and current version of the object with a new version id.
 
-- Becomes the latest version of the object, equipped with a new version ID.
-- Has a key and version ID like any other object.
-- Contains no associated data, meaning a GET request on a delete marker results in a 404 error.
-- Is not visible by default in the Control Panel UI.
-- Can only be deleted through a DELETE operation, a capability reserved for the bucket owner.
+A delete marker has the following properties:
 
-To permanently remove an object, the deletion request must specify the object's `version-id`. By default, OVHcloud Object Storage does not replicate delete markers or the action of permanently deleting objects to destination buckets. This approach is designed to safeguard your data against unauthorized or accidental deletions.
+- A key and version ID like any other object.
+- It does not have data associated with it, thus it does not retrieve anything from a GET request (you get a 404 error).
+- By default, it is not displayed in the Control Panel UI anymore.
+- The only operation you can use on a delete marker is DELETE, and only the bucket owner can issue such a request.
 
-### Configuring Delete Marker Replication
+To permanently delete an object, you have to specify the version-id in your delete object request.
 
-Despite the default setting, you have the option to replicate delete markers by incorporating the `DeleteMarkerReplication` element into your replication rule. This setting dictates whether delete markers — indicators of an object's deletion in versioning-enabled buckets — should be replicated.
+> :warning: **WARNING**
+>
+> By default, OVHcloud Object Storage does not replicate delete markers nor replicate the permanent deletion to destination buckets. This behavior protects your data from unauthorized or unintentional deletions.
+
+However, you can still replicate delete markers by adding the DeleteMarkerReplication element to your replication configuration rule. DeleteMarkerReplication specifies if delete markers should or should not be replicated (when versioning is enabled, a delete operation is performed on an object it does not actually delete the object but it flags it with a delete marker)
+
+```json
+{
+  "Role": "string",
+  "Rules": [
+    {
+      ...
+      "DeleteMarkerReplication": {
+        "Status": "Enabled"|"Disabled"
+      }
+    }
+  ]
+}
+```
+
+# Replication of Encrypted Objects
+
+There are some special considerations when you're replicating objects that have been encrypted by using server-side encryption:
+
+- The destination bucket default encryption method.
+- The encryption method used for the source objects.
+
+Currently, OVHcloud Object Storage supports the following encryption methods:
+
+- Server-side encryption with customer-provided keys (SSE-C).
+- Server-side encryption with encryption keys managed by OVHcloud (SSE-S3).
+
+## Encryption Behavior for Replication Target Bucket
+
+When you turn encryption on for a replication target bucket, the encryption behavior is as follows:
+
+- If objects in the source bucket are not encrypted, the replica objects in the destination bucket are encrypted using the default encryption method of the destination bucket.
+- If objects in the source bucket are encrypted with SSE-C or SSE-S3, the replica objects in the destination bucket use the same type of encryption method as the source objects, i.e., the default encryption of the destination bucket is not used.
+
+# Replicating Existing Objects
+
+By default, objects created before the upload of the replication configuration will not be replicated. However, you can instruct OVHcloud Object Storage to retroactively apply the replication configuration to eligible existing objects by setting the `ExistingObjectReplication` parameter.
+
+```json{
+  "Role": "string",
+  "Rules": [
+    {
+      ...
+      "ExistingObjectReplication": {
+        "Status": "Enabled"|"Disabled"
+      }
+    }
+  ]
+}
+```
+> :exclamation: **IMPORTANT**
+> This operation will only be applied ONCE at the upload of the replication configuration.
+
+> :warning: **WARNING**
+> This operation will be done asynchronously in a best effort mode therefore there will be no SLA/SLO applied. You can make a HEAD object request to check replication status.
+
+# Checking the Replication Status
+
+The replication status can be used to determine the status of an object that is being replicated. When you request a source object (using `GET object`) or source object metadata (using `HEAD object`), OVHcloud Object Storage returns the replication status via the header `x-amz-replication-status`.
+
+> :warning: **WARNING**
+> The replication status only applies to objects that are eligible for replication
+
+The x-amz-replication-status can have the following values:
 
 
 
-
-
+| Source object                                          | Replica Object                                      |
+|--------------------------------------------------------------|--------------------------------------------------------------|
+| COMPLETED | REPLICA |
+| FAILED | n/a as the replica doesn't exist |
+| PENDING | n/a as the replica doesn't exist yet|
 
