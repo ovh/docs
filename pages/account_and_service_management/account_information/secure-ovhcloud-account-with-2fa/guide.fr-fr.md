@@ -31,7 +31,7 @@ Ce guide vous permettra de :
 
 Vous pouvez activer une ou plusieurs méthodes de double authentification afin de sécuriser et de contrôler l'accès à votre espace client.
 
-Nous vous proposons quatre méthodes différentes :
+Nous vous proposons quatre méthodes différentes (cliquez sur les onglets ci-dessous pour les afficher) :
 
 > [!tabs]
 > SMS
@@ -40,7 +40,7 @@ Nous vous proposons quatre méthodes différentes :
 >> Pour cette méthode, vous devez renseigner votre numéro de téléphone mobile.
 >> Un code à usage unique vous est envoyé par SMS à chaque tentative de connexion à votre compte OVHcloud.
 >>
->> Le principal avantage de cette méthode est d'utiliser un code envoyé sur un autre périphérique que votre ordinateur. En cas d'intrusion sur celui-ci, via un malware par exemple, votre compte restera sécurisé.
+>> Le principal avantage de cette méthode est d'utiliser un code envoyé sur un autre périphérique que votre ordinateur. En cas d'intrusion sur ce dernier, via un malware par exemple, votre compte restera sécurisé.
 >> Vous devez cependant bénéficier d'une couverture réseau suffisante pour recevoir les SMS.
 >>
 > Application Mobile
@@ -54,24 +54,26 @@ Nous vous proposons quatre méthodes différentes :
 >> - OTP Auth pour iOS
 >>
 >> Associez ensuite l'application à votre compte OVHcloud.
->> À chaque tentative de connexion, l'application génère un code à usage unique valable pendant un court laps de temps (quelques secondes).
->>
->> Une fois la première association de l'application à votre compte effectuée, il n'est plus nécessaire d'être connecté à Internet sur votre smartphone/tablette pour que les codes soient générés.
+>> À chaque tentative de connexion, l'application génère un code à usage unique valable pendant un court laps de temps (quelques secondes) que vous renseignez pour valider votre connexion.
 >>
 >> > [!success]
->> > Vous pouvez utiliser une seule application OTP pour l'ensemble de vos services ou sites nécessitant une double authentification.
+>> > **Avantages de cette méthode** :
+>> >
+>> > - Une fois la première association de l'application à votre compte effectuée, il n'est plus nécessaire d'être connecté à Internet sur votre smartphone/tablette pour que les codes soient générés.
+>> > - Vous pouvez utiliser une seule application OTP pour l'ensemble de vos services ou sites nécessitant une double authentification.
 >>
 > Clé de sécurité
 >> ![2FA U2F](images/key.svg)
 >>
 >> Pour cette méthode, vous devez disposer d'une clé physique **U2F** que vous branchez sur un port USB de votre ordinateur à chaque connexion à votre compte OVHcloud. L'authentification s'effectue alors automatiquement. 
 >>
->> Cette méthode offre un niveau de sécurité plus élevé, car elle repose sur un équipement de sécurité indépendant, totalement séparé de votre ordinateur, smartphone ou tablette, et qui est moins exposé aux risques de piratage.
+>> Cette méthode offre un niveau de sécurité plus élevé car elle repose sur un équipement de sécurité indépendant, totalement séparé de votre ordinateur, smartphone ou tablette, et qui est moins exposé aux risques de piratage.
 > Codes de secours
 >> ![2FA codes](images/code.svg)
+>>
 >> Lorsque vous configurez une double authentification (par **SMS**, **Application mobile** ou **Clé de sécurité**) pour la première fois, 10 codes de secours **à usage unique** vous sont affichés dans l'espace client.
 >>
->> Cette méthode de double-authentification est un complément d'une méthode déjà activée (par **SMS**, **Application Mobile** ou **Clé de sécurité**), elle ne peut être activée seule.
+>> Cette méthode de double-authentification vient en complément d'une méthode déjà activée (par **SMS**, **Application Mobile** ou **Clé de sécurité**), elle ne peut être activée seule.
 >>
 >> À chaque tentative de connexion, vous pouvez saisir un des 10 codes à usage unique.
 >> Il est essentiel de toujours disposer d'au moins 1 code de secours restant. Pensez à les regénérer via votre espace client si vous les avez tous utilisés ou si vous les avez perdus.
@@ -88,17 +90,17 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 > SMS
 >> Choisissez la méthode par SMS et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA sms](images/2024-002-sms-choice-b.png){.thumbnail}
+>> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}
 >>
 >> Renseignez votre numéro de téléphone mobile au format international (par exemple, +33612345678 pour un téléphone mobile en France) et validez.
 >> Un code de validation est alors envoyé par SMS au numéro que vous avez indiqué.
 >>
->> ![2FA sms](images/2fasms3edit.png){.thumbnail .w-400}
+>> ![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}
 >>
 >> Renseignez ce code dans le champ prévu à cet effet.<br>
 >> Vous pouvez également ajouter une description pour le numéro de téléphone renseigné.
 >>
->> ![2FA sms](images/2024-002-sms-code-b.png){.thumbnail}
+>> ![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}
 >>
 >> La double authentification est maintenant activée. L'ajout d'autres numéros est également possible.
 > Application Mobile
@@ -110,17 +112,17 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 >> Votre application génère alors un code à usage unique.
 >> Renseignez alors ce code dans le champ prévu à cet effet (à droite du QR code). Vous pouvez également ajouter une description pour cette méthode d'authentification.
 >>
->> ![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail .w-400}
+>> ![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}
 >>
 >> La double authentification est maintenant activée.
 > Clé de sécurité
 >> Choisissez la méthode par clé de sécurité et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400" height="420"}
+>> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}
 >>
 >> Branchez votre clé de sécurité lorsque cela vous est demandé. Si elle est équipée d'un bouton, appuyez sur celui-ci.
 >>
->> ![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail .w-400}
+>> ![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}
 >>
 >> > [!warning]
 >> > Une fenêtre de type pop-up s'ouvrira pour vous demander la validation de la clé. Si vous ne voyez pas cette fenêtre apparaître, vérifiez que votre navigateur ne bloque pas les pop-ups.
@@ -128,7 +130,7 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 >> Une fois la clé reconnue, vous pouvez également ajouter une description.
 >> La double authentification est maintenant activée.
 
-Une fois la première méthode ajoutée, vous pouvez également en ajouter une ou deux autres afin de disposer de multiples moyens de vous connecter à votre compte.
+Une fois la première méthode ajoutée, vous pouvez également **ajouter une ou deux autres méthodes** afin de disposer de multiples moyens de vous connecter à votre compte.
 
 ### Étape 2 - Sauvegarder les codes de secours <a name="codes"></a>
 
@@ -136,7 +138,7 @@ Lorsque vous ajoutez une double authentification pour la première fois, 10 code
 
 **Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [KeePass](https://keepass.info/){.external} ou [Bitwarden](https://bitwarden.com/) (ces deux applications sont gratuites).
 
-![2FA](images/2024-005-backup-codes.png){.thumbnail}
+![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
 
 Vous pouvez regénérer ou supprimer les code de secours depuis votre espace client :
 
@@ -154,11 +156,11 @@ Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](https:/
 
 L'écran d'identification affiche la dernière méthode de double authentification utilisée ou renseignée. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail}
+![2FA](images/2fasmsloginedit.png){.thumbnail width="400"}
 
 Toutes les méthodes que vous avez activées apparaîtront alors, y compris la méthode des codes de secours.
 
-![2FA](images/2faloginchoice.png){.thumbnail}
+![2FA](images/2faloginchoice.png){.thumbnail width="400"}
 
 ### Que faire si l'un de mes périphériques est perdu/volé ou cesse de fonctionner ? <a name="lost-device"></a>
 
