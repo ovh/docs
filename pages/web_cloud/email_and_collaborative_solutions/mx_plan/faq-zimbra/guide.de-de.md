@@ -22,7 +22,7 @@ Zimbra bietet zahlreiche Funktionen, die in Kürze in den Katalogen von OVHcloud
 
 ### Was sind die Unterschiede zwischen Outlook Web App (OWA) und Zimbra Webmail?
 
-Zimbra bietet vergleichbare Funktionen und ein ähnliches Nutzererlebnis wie OWA. Eine Anleitung zur Nutzung von Zimbra wird in Kürze verfügbar sein.
+Zimbra bietet vergleichbare Funktionen und ein ähnliches Nutzererlebnis wie OWA. Eine Anleitung zur Verwendung von Zimbra finden Sie bereits unter [dieser Adresse](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### Eröffnet die Migration neue Funktionen?
 
