@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser son compte OVHcloud avec la double authentification'
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification (2FA)'
-updated: 2024-03-08
+updated: 2024-03-11
 ---
 
 ## Objectif
@@ -36,6 +36,7 @@ Nous vous proposons quatre méthodes différentes :
 > [!tabs]
 > SMS
 >> ![2FA sms](images/sms.svg)
+>>
 >> Pour cette méthode, vous devez renseigner votre numéro de téléphone mobile.
 >> Un code à usage unique vous est envoyé par SMS à chaque tentative de connexion à votre compte OVHcloud.
 >>
@@ -44,6 +45,7 @@ Nous vous proposons quatre méthodes différentes :
 >>
 > Application Mobile
 >> ![2FA OTP](images/app.svg)
+>>
 >> Pour cette méthode, vous devez installer une application **OTP** sur votre smartphone ou tablette Android ou iOS.
 >> De nombreuses applications OTP existent (aucune application OTP n'a été développée par OVHcloud) et sont à télécharger depuis le Google Play Store pour Android ou depuis l'Apple Store pour iOS. 
 >> Les deux applications suivantes sont gratuites :
@@ -61,6 +63,7 @@ Nous vous proposons quatre méthodes différentes :
 >>
 > Clé de sécurité
 >> ![2FA U2F](images/key.svg)
+>>
 >> Pour cette méthode, vous devez disposer d'une clé physique **U2F** que vous branchez sur un port USB de votre ordinateur à chaque connexion à votre compte OVHcloud. L'authentification s'effectue alors automatiquement. 
 >>
 >> Cette méthode offre un niveau de sécurité plus élevé, car elle repose sur un équipement de sécurité indépendant, totalement séparé de votre ordinateur, smartphone ou tablette, et qui est moins exposé aux risques de piratage.
@@ -85,7 +88,7 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 > SMS
 >> Choisissez la méthode par SMS et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail .w-400}
+>> ![2FA sms](images/2024-002-sms-choice-b.png){.thumbnail}
 >>
 >> Renseignez votre numéro de téléphone mobile au format international (par exemple, +33612345678 pour un téléphone mobile en France) et validez.
 >> Un code de validation est alors envoyé par SMS au numéro que vous avez indiqué.
@@ -95,13 +98,13 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 >> Renseignez ce code dans le champ prévu à cet effet.<br>
 >> Vous pouvez également ajouter une description pour le numéro de téléphone renseigné.
 >>
->> ![2FA sms](images/2024-002-sms-code.png){.thumbnail .w-400}
+>> ![2FA sms](images/2024-002-sms-code-b.png){.thumbnail}
 >>
 >> La double authentification est maintenant activée. L'ajout d'autres numéros est également possible.
 > Application Mobile
 >> Choisissez la méthode par application mobile et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail .w-400}
+>> ![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}
 >>
 >> Un QR code est généré, scannez-le via votre application OTP. Si votre application OTP ne propose pas cette option, cliquez sur `Afficher le secret`{.action} pour afficher un code à renseigner dans l'application OTP.<br>
 >> Votre application génère alors un code à usage unique.
@@ -113,7 +116,7 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 > Clé de sécurité
 >> Choisissez la méthode par clé de sécurité et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail .w-400}
+>> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400" height="420"}
 >>
 >> Branchez votre clé de sécurité lorsque cela vous est demandé. Si elle est équipée d'un bouton, appuyez sur celui-ci.
 >>
