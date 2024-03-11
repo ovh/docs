@@ -368,11 +368,11 @@ $ aws s3 mb s3://my-source-bucket
 aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
 ```
 
-** Activate versioning in destination bucket
+## Activate versioning in destination bucket
 ```bash
 $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
 ```
-** Apply replication configuration
+## Apply replication configuration
 Using the AWS cli, replication configuration is applied on the source bucket.
 ```bash
 $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration <conf.json>
@@ -402,10 +402,10 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
   ]
 }
 ```
-* Via the manager UI
+# Via the manager UI
   
-** Create source bucket ** 
-** Activate versioning ** 
-** Create destination bucket **  
-** Activate versioning ** 
-** Apply replication configuration ** 
+## Create source bucket ## 
+## Activate versioning ## 
+## Create destination bucket ##  
+## Activate versioning ## 
+## Apply replication configuration ##
