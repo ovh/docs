@@ -137,9 +137,10 @@ The basic structure of a replication rule within the configuration JSON document
 
 # Delete Marker Replication
 
-## Important
+> :exclamation: **IMPORTANT**
+>
+> If you specify a `Filter` in your replication configuration, you **must** also include a `DeleteMarkerReplication` element. If your `Filter` includes a `Tag` element, the `DeleteMarkerReplication` Status **must be set to Disabled**.
 
-When configuring replication, it's crucial to understand the interaction between filters and delete marker replication. If a `Filter` is specified in your replication configuration, you must also include a `DeleteMarkerReplication` element. Specifically, if your `Filter` includes a `Tag` element, then the `DeleteMarkerReplication` Status must be set to `Disabled`.
 
 ### Understanding Delete Markers
 
