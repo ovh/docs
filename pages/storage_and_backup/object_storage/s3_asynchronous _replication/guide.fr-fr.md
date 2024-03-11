@@ -233,3 +233,118 @@ The x-amz-replication-status can have the following values:
 | FAILED | n/a as the replica doesn't exist |
 | PENDING | n/a as the replica doesn't exist yet|
 
+> :warning: **WARNING**
+> When you replicate objects to multiple destination buckets, the value of x-amz-replication-status is COMPLETED only when the source object has been successfully replicated to all the destination buckets, otherwise, the header remains at the PENDING value.
+> If one or more destination fail replication, the value of the header becomes FAILED.
+
+## Examples of replication configuration
+Simple replication between 2 buckets
+```json
+{
+  "Role": "IAM-role-ARN",
+  "Rules": [
+    {
+      "Status": "Enabled",
+      "Destination": {
+        "Bucket": "arn:aws:s3:::destination-bucket"
+      }
+    }
+  ]
+}
+```
+This configuration will replicate all objects (indicated by the empty Filter field) to the bucket destination-bucket.
+
+## Replication of delete markers
+
+```json
+{
+  "Role": "IAM-role-ARN",
+  "Rules": [
+    {
+      "Status": "Enabled",
+      "Filter" : {
+        "Prefix": "backup",
+        "Tag": {"Key":"important", "Value":"true"}
+      },
+      "Destination": {
+        "Bucket": "arn:aws:s3:::destination-bucket"
+      },
+      "DeleteMarkerReplication": { "Status": "Disabled" },
+    }
+  ]
+}
+```
+
+This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket destination-bucket. Additionally, we indicate that deletion operations in the source bucket should also replicated.
+
+## Replicating source to multiple regions
+```json
+{
+  "Role": "IAM-role-ARN",
+  "Rules": [
+    {
+      "ID": "rule1",
+      "Status": "Enabled",
+      "Destination": {
+        "Bucket": "arn:aws:s3:::region1-destination-bucket"
+      }
+    },
+    {
+      "ID": "rule2",
+      "Status": "Enabled",
+      "Destination": {
+        "Bucket": "arn:aws:s3:::region2-destination-bucket"
+      }
+    }
+  ]
+}
+```
+Suppose the source bucket, region1-destination-bucket and region2-destination-bucket are 3 buckets in 3 OVHcloud regions, this configuration will allow you to backup all objects in the source bucket to 2 different regions.
+
+## Replicating 2 subsets of objects to different destination buckets;
+
+```json
+{
+  "Role": "IAM-role-ARN",
+  "Rules": [
+    {
+      "ID": "rule1",
+      "Status": "Enabled",
+      "Filter" : {
+        "Prefix": "dev"
+      },
+      "Destination": {
+        "Bucket": "arn:aws:s3:::destination-bucket1"
+      },
+      "DeleteMarkerReplication": { "Status": "Disabled" },
+    },
+    {
+      "ID": "rule2",
+      "Status": "Enabled",
+      "Filter" : {
+        "Prefix": "prod"
+      },
+      "Destination": {
+        "Bucket": "arn:aws:s3:::destination-bucket2"
+      },
+      "DeleteMarkerReplication": { "Status": "Disabled" }
+    }
+  ]
+}
+```
+
+## This configuration contains 2 replication rules:
+
+- rule1 will replicate all objects with prefix "dev" to bucket destination-bucket1 and additionally, will replicate also deletion operations.
+- rule2 will replicate all objects with prefix "prod" to bucket destination-bucket2 without replicating deletion operations.
+
+# In Practice
+
+## Prerequisites
+
+Before you begin, ensure you have the following ready:
+
+- A Public Cloud project in your OVHcloud account.
+- Access to the OVHcloud Control Panel.
+- An S3 user already created within your project.
+- AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the "Getting started with Object Storage" documentation provided by OVHcloud.
