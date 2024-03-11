@@ -105,7 +105,7 @@ Pour obtenir quelques conseils généraux pour sécuriser un serveur basé sur G
 - [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 - [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
 
