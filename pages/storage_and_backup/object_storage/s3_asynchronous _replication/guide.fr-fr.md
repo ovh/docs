@@ -403,8 +403,9 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
 }
 ```
 * Via the manager UI
-** Create source bucket
-** Activate versioning
-** Create destination bucket
-** Activate versioning
-** Apply replication configuration
+  
+** Create source bucket ** 
+** Activate versioning ** 
+** Create destination bucket **  
+** Activate versioning ** 
+** Apply replication configuration ** 
