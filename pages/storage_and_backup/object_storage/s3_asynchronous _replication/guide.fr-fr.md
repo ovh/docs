@@ -59,7 +59,81 @@ The following table provides the default behavior of the OVHcloud Object Storage
 | Object tags                                                  | Objects created BEFORE the upload of the replication configuration |
 | S3 Object Lock retention configuration                       | Replication to a bucket in a different Public Cloud Project i.e., source and destination buckets must be in the same project |
 
-For more detailed information, consider reviewing specific documentation sections like "Replication of encrypted objects" and "Delete marker replication."
+# Replication Prerequisites
+
+Asynchronous replication requires the following conditions to be met:
+
+- **Public Cloud Project**: Source and destination buckets must be in the same public cloud project. This is a current limitation that may change in the future.
+- **Versioning**: Versioning must be enabled in both the source and destination buckets.
+- **S3 Object Lock**: If the source bucket has S3 Object Lock enabled, the destination buckets must also have this feature enabled to ensure compatibility.
+
+# Replication Configuration
+
+A replication configuration is defined through a set of rules within a JSON document. This document is uploaded and applied to the source bucket, detailing how objects are to be replicated.
+
+## Each Replication Rule Defines:
+
+- A **unique rule ID** to identify the rule.
+- **Rule priority** to determine the order of execution when multiple rules exist.
+- **Destination bucket** where the replicated objects will be stored.
+- **Objects to be replicated**: By default, all objects are eligible for replication. However, you can specify a subset of objects by filtering them with a prefix and/or tags.
+- **Optional target storage class**: By default, object replicas will inherit the same storage class as the source objects. If needed, you can specify a different storage class for the replicas.
+
+## Replication Rule Structure
+
+The basic structure of a replication rule within the configuration JSON document is as follows:
+
+
+```json
+{
+  "Role": "string",
+  "Rules": [
+    {
+      "ID": "string",
+      "Priority": integer,
+      "Filter": {
+        "Prefix": "string",
+        "Tag": {
+          "Key": "string",
+          "Value": "string"
+        },
+        "And": {
+          "Prefix": "string",
+          "Tags": [
+            {
+              "Key": "string",
+              "Value": "string"
+            }
+          ]
+        }
+      },
+      "Status": "Enabled"|"Disabled",
+      "Destination": {
+        "Bucket": "string",
+        "StorageClass": "STANDARD"|"HIGH_PERF"
+      },
+      "DeleteMarkerReplication": {
+        "Status": "Enabled"|"Disabled"
+      }
+    }
+  ]
+}
+
+| Attribute               | Description                                                                                                             | Required |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------|----------|
+| Tag                     | Filter the objects by tag key and/or value                                                                              | No       |
+| StorageClass            | The target storage class: "STANDARD" for S3 Standard and "HIGH_PERF" for S3 High Performance                            | No       |
+| Status                  | Tells if your replication rule is Enabled or Disabled                                                                   | Yes      |
+| Role                    | OVHcloud IAM role needed to allow OVHcloud Object Storage to access data from the source bucket & write data to destination buckets. Currently, OVHcloud has set a unique role "replicationRole" | Yes      |
+| Priority                | If there are two or more rules with the same destination bucket, objects will be replicated according to the rule with the highest priority. The higher the number, the higher the priority | Yes      |
+| Prefix                  | An object key name prefix that identifies the object or objects to which the rule applies. To include all objects in a bucket, specify an empty string | No       |
+| ID                      | Each replication rule has a unique ID                                                                                   | Yes      |
+| Filter                  | A filter that identifies the subset of objects to which the replication rule applies. To replicate all objects in the bucket, specify an empty object | Yes      |
+| Destination             | A container for information about the replication destination and its configurations                                     | Yes      |
+| DeleteMarkerReplication | Tells if delete operations should be replicated                                                                         | Yes      |
+| Bucket                  | The destination bucket (to replicate to multiple destinations, you must create multiple replication rules)              | Yes      |
+| And                     | You can apply multiple selection criteria in the filter                                                                 | No       |
+
 
 
 
