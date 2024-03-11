@@ -32,7 +32,7 @@ Connectez-vous en SSH à votre VPS à l'aide de votre nom d'utilisateur et de vo
 
 ### Installer PHP
 
-Installez PHP et les extensions nécessaires pour WordPress :
+Installez PHP :
 
 ```sh
 ~$ sudo apt install php php-cli php-mysql php-xml php-gd php-curl -y
@@ -98,7 +98,7 @@ Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écr
 
 ### Conclusion
 
-Vous venez d'installer PHP, un serveur Nginx et le SGBD MariaDB. Vous possédez désormais un environnement de développement web fonctionnel sur votre VPS ou votre serveur dédié OVHcloud. Si vous le souhaitez, vous pouvez maintenant [installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps) ou [installer WordPress avec Docker sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps).
+Vous venez d'installer PHP, un serveur Nginx et le SGBD MariaDB. Vous possédez désormais un environnement de développement web fonctionnel sur votre VPS ou votre serveur dédié OVHcloud. Si vous le souhaitez, vous pouvez maintenant installer le CMS (**C**ontent **M**anagement **S**ystem) de votre choix, comme WordPress par exemple. Pour en savoir plus, consultez les guides [installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps) et [installer WordPress avec Docker sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps). Pour sécuriser votre VPS, consultez notre guide [sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ## Aller plus loin
 
@@ -106,6 +106,8 @@ Vous venez d'installer PHP, un serveur Nginx et le SGBD MariaDB. Vous possédez 
 
 [Installer WordPress avec Docker sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+ [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
