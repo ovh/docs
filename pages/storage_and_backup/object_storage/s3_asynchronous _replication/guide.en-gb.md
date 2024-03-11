@@ -175,47 +175,6 @@ However, you can still replicate delete markers by adding the DeleteMarkerReplic
 }
 ```
 
-# Replication of Encrypted Objects
-
-There are some special considerations when you're replicating objects that have been encrypted by using server-side encryption:
-
-- The destination bucket default encryption method.
-- The encryption method used for the source objects.
-
-Currently, OVHcloud Object Storage supports the following encryption methods:
-
-- Server-side encryption with customer-provided keys (SSE-C).
-- Server-side encryption with encryption keys managed by OVHcloud (SSE-S3).
-
-## Encryption Behavior for Replication Target Bucket
-
-When you turn encryption on for a replication target bucket, the encryption behavior is as follows:
-
-- If objects in the source bucket are not encrypted, the replica objects in the destination bucket are encrypted using the default encryption method of the destination bucket.
-- If objects in the source bucket are encrypted with SSE-C or SSE-S3, the replica objects in the destination bucket use the same type of encryption method as the source objects, i.e., the default encryption of the destination bucket is not used.
-
-# Replicating Existing Objects
-
-By default, objects created before the upload of the replication configuration will not be replicated. However, you can instruct OVHcloud Object Storage to retroactively apply the replication configuration to eligible existing objects by setting the `ExistingObjectReplication` parameter.
-
-```json{
-  "Role": "string",
-  "Rules": [
-    {
-      ...
-      "ExistingObjectReplication": {
-        "Status": "Enabled"|"Disabled"
-      }
-    }
-  ]
-}
-```
-> :exclamation: **IMPORTANT**
-> This operation will only be applied ONCE at the upload of the replication configuration.
-
-> :warning: **WARNING**
-> This operation will be done asynchronously in a best effort mode therefore there will be no SLA/SLO applied. You can make a HEAD object request to check replication status.
-
 # Checking the Replication Status
 
 The replication status can be used to determine the status of an object that is being replicated. When you request a source object (using `GET object`) or source object metadata (using `HEAD object`), OVHcloud Object Storage returns the replication status via the header `x-amz-replication-status`.
@@ -402,10 +361,3 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
   ]
 }
 ```
-# Via the manager UI
-  
-## Create source bucket ## 
-## Activate versioning ## 
-## Create destination bucket ##  
-## Activate versioning ## 
-## Apply replication configuration ##
