@@ -253,7 +253,7 @@ Une fois toutes les informations nécessaires remplies et le formulaire soumis, 
 
 ### Conclusion
 
-Vous venez d'installer WordPress sur votre VPS ou votre serveur dédié OVHcloud avec une image Docker. Vous pouvez désormais accéder à votre site web WordPress depuis un navigateur.
+Vous venez d'installer WordPress sur votre VPS ou votre serveur dédié OVHcloud avec une image Docker. Vous pouvez désormais accéder à votre site web WordPress depuis un navigateur. Pour sécuriser votre VPS, consultez notre guide [sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ## Aller plus loin
 
@@ -261,6 +261,8 @@ Vous venez d'installer WordPress sur votre VPS ou votre serveur dédié OVHcloud
 
 [Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+[Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
