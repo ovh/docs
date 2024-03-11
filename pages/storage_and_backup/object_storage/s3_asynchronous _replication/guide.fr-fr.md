@@ -35,3 +35,32 @@ At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed
 - **Replicate data within the same region**:
 
 ![Schema 2](images/2.png)
+
+- **Replicate data to a different region**:
+
+![Schema 3](images/3.png)
+
+- **Replicate data to a different region**:
+
+![Schema 4](images/4.png)
+
+# What is Replicated vs What is Not
+
+The following table provides the default behavior of the OVHcloud Object Storage Asynchronous Replication feature:
+
+| What is Replicated                                           | What is Not Replicated                                       |
+|--------------------------------------------------------------|--------------------------------------------------------------|
+| Objects created AFTER the upload of the replication configuration | Delete marker i.e., objects deleted in the source bucket are not automatically deleted in the destination bucket |
+| Unencrypted objects                                          | Object replicas i.e., objects that are the result of a previous replication operation |
+| Objects encrypted with customer provided keys (SSE-C)        | Objects that have already been replicated to a previous destination |
+| Object metadata from the source objects to the replicas      | Objects that are stored in the Cold Archive temporary storage |
+| Objects in the source bucket the bucket owner has permissions to read and access ACLs | Bucket configurations i.e., lifecycle configuration, CORS configuration, bucket ACLs, etc. |
+| Object ACL updates                                           | Actions resulting from Lifecycle Configuration actions |
+| Object tags                                                  | Objects created BEFORE the upload of the replication configuration |
+| S3 Object Lock retention configuration                       | Replication to a bucket in a different Public Cloud Project i.e., source and destination buckets must be in the same project |
+
+For more detailed information, consider reviewing specific documentation sections like "Replication of encrypted objects" and "Delete marker replication."
+
+
+
+
