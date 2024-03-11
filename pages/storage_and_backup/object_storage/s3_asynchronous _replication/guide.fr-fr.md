@@ -28,6 +28,10 @@ Implementing object replication ensures not only the safety and availability of 
 
 At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed to facilitate several key operations in the management and safeguarding of your data. Here's what it enables you to do:
 
+- **Exact Replica Creation**:
+
 ![Schema 1](images/1.png)
 
+- **Replicate data within the same region**:
 
+![Schema 2](images/2.png)
