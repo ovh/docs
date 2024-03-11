@@ -88,18 +88,15 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 > SMS
 >> Choisissez la méthode par SMS et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}
->>
+>> ![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>br>
 >> Renseignez votre numéro de téléphone mobile au format international (par exemple, +33612345678 pour un téléphone mobile en France) et validez.
 >> Un code de validation est alors envoyé par SMS au numéro que vous avez indiqué.
 >>
->> ![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}
->>
+>> ![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}<br>br>
 >> Renseignez ce code dans le champ prévu à cet effet.<br>
 >> Vous pouvez également ajouter une description pour le numéro de téléphone renseigné.
 >>
->> ![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}
->>
+>> ![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>br>
 >> La double authentification est maintenant activée. L'ajout d'autres numéros est également possible.
 > Application Mobile
 >> Choisissez la méthode par application mobile et cliquez sur `Suivant`{.action}.
