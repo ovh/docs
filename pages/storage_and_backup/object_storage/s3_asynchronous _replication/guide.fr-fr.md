@@ -118,6 +118,7 @@ The basic structure of a replication rule within the configuration JSON document
     }
   ]
 }
+```
 
 | Attribute               | Description                                                                                                             | Required |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------|----------|
