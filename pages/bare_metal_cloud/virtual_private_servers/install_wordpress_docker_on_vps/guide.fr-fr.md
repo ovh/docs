@@ -1,14 +1,21 @@
 ---
-title: 'Installer WordPress avec Docker sur un VPS OVHcloud'
-excerpt: 'Découvrez comment installer WordPress rapidement avec Docker sur un VPS ou un Serveur Dédié OVHcloud'
+title: 'Installer WordPress avec Docker sur un VPS ou un serveur dédié'
+excerpt: 'Découvrez comment installer WordPress rapidement avec Docker sur un VPS ou un serveur dédié OVHcloud'
 updated: 2024-03-08
 ---
 
 ## Objectif
 
-Installer WordPress sur un VPS présente plusieurs avantages, comme la personnalisation complète de l'environnement, une optimisation des performances et un renforcement de la sécurité. Il existe plusieurs façons d'installer WordPress sur un VPS, selon votre niveau technique et le temps que vous souhaitez y consacrer. L'une des manières les plus efficaces et rapides est d'utiliser Docker. Docker facilite le déploiement d'applications en les « conteneurisant », ce qui rend l'installation de WordPress rapide, facile, et reproductible, quel que soit l'environnement.
+Installer WordPress sur un VPS ou un serveur dédié présente plusieurs avantages, comme la personnalisation complète de l'environnement, une optimisation des performances et un renforcement de la sécurité. Il existe plusieurs façons d'installer WordPress sur un VPS ou un serveur dédié, selon votre niveau technique et le temps que vous souhaitez y consacrer. L'une des manières les plus efficaces et rapides est d'utiliser Docker. Docker facilite le déploiement d'applications en les « conteneurisant », ce qui rend l'installation de WordPress rapide, facile, et reproductible, quel que soit l'environnement.
 
 **Découvrez comment installer WordPress manuellement avec Docker sur un VPS ou un Serveur Dédié OVHcloud.**
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce tutoriel.
+>
 
 ## Prérequis
 
@@ -20,7 +27,7 @@ Installer WordPress sur un VPS présente plusieurs avantages, comme la personnal
 
 > [!primary]
 >
-> Le VPS utilisé pour ce guide possède une distribution Debian en version 11 (Bullseye). Si bseoin, dirigez-vous sur le [site officiel de Docker](https://docs.docker.com/get-docker/) pour plus d'informations.
+> Le VPS utilisé pour ce guide possède une distribution Debian en version 11 (Bullseye). Pour plus d'informations, consultez le [site officiel de Docker](https://docs.docker.com/get-docker/).
 >
 
 ### Installer Docker
@@ -143,6 +150,7 @@ volumes:
   db_data: {}
   wordpress_data: {}
 ```
+
 Ce fichier Compose crée un service WordPress et un service MySQL. 
 
 Lancez les services avec Docker Compose :
@@ -153,7 +161,7 @@ Lancez les services avec Docker Compose :
 
 L'image Docker utilisée dans cet exemple est la version officielle `wordpress:latest`. Cette image spécifique est conçue pour fonctionner avec un serveur web Apache. Les images officielles de WordPress sur [Docker Hub](https://hub.docker.com/) sont régulièrement mises à jour pour inclure les dernières versions stables de PHP compatibles avec la version actuelle de WordPress.
 
-Pour connaître la version exacte de PHP incluse dans l'image `wordpress:latest` à un moment donné, vous pouvez exécuter un conteneur basé sur cette image et vérifier la version de PHP directement.
+Pour connaître la version exacte de PHP incluse dans l'image `wordpress:latest` à un instant précis, vous pouvez exécuter un conteneur basé sur cette image et vérifier la version de PHP directement.
 
 Lancez un conteneur temporaire avec l'image `wordpress:latest` :
 
@@ -167,7 +175,7 @@ Cette commande vous donne une réponse comme celle-ci :
 ~$ PHP 8.2.16 (cli) (built: Feb 16 2024 21:54:41) (NTS)
 ```
 
-Pour rappel, les images Docker sont mises à jour régulièrement. La version des composants dans `wordpress:latest` peut donc changer au fil du temps à mesure que de nouvelles versions sont publiées et intégrées dans l'image. 
+Pour rappel, les images Docker sont mises à jour régulièrement. La version des composants dans `wordpress:latest` peut donc changer au fil du temps, à mesure que de nouvelles versions sont publiées et intégrées dans l'image. 
 
 Si vous le souhaitez, vous pouvez utiliser une autre image Docker.
 
@@ -212,13 +220,17 @@ Vous pouvez maintenant accéder à WordPress depuis un navigateur. Deux possibil
 - Via l'adresse IP de votre VPS : <VPS_IP_ADDRESS>:80000
 - Via le nom de domaine de votre site web : <DOMAIN_NAME>:80000
 
-#### Relier le nom de domaine à l'adresse IP du VPS
+#### Relier le nom de domaine à l'adresse IP du VPS ou du serveur dédié
 
-Pour pouvoir accéder à votre site web depuis un navigateur, liez d'abord le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS. Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans le menu de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine que vous avez choisi pour votre site WordPress. Cliquez sur l'onglet `Zone DNS`{.action}. Dans le tableau qui s'affiche, identifiez la ligne ayant pour type la valeur `A`, cliquez sur le bouton `…`{.action} et sélectionnez `Modifier l'entrée`{.action}.
+Pour pouvoir accéder à votre site web depuis un navigateur, liez d'abord le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS. Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). 
+
+Dans le menu de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine que vous avez choisi pour votre site WordPress.
+
+Cliquez sur l'onglet `Zone DNS`{.action}. Dans le tableau qui s'affiche, identifiez la ligne ayant pour type la valeur `A`, cliquez sur le bouton `…`{.action} et sélectionnez `Modifier l'entrée`{.action}.
 
 ![WP Docker VPS](images/dns_zone_line_cta.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS pour le champ `Cible`{.action} puis cliquez sur `Suivant`{.action}. Vérifiez que les informations indiquées sont correctes puis cliquez sur `Valider`{.action}.
+Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS ou du serveur dédié dans le champ `Cible`{.action} puis cliquez sur `Suivant`{.action}. Vérifiez que les informations indiquées sont correctes puis cliquez sur `Valider`{.action}.
 
 ![WP Docker VPS](images/dns_zone_modify_target.png){.thumbnail}
 
@@ -235,18 +247,20 @@ Lors de votre première connexion, votre navigateur doit vous rediriger vers <VP
 
 #### Terminer l'installation de votre site WordPress
 
-Une fois toutes les informations nécessaires remplies et le formulaire soumis, WordPress finalisera l'installation. Vous serez ensuite redirigé vers l'écran de connexion (wp-login.php), où vous pourrez vous connecter avec le nom d'utilisateur et le mot de passe que vous venez de créer.
+Une fois toutes les informations nécessaires remplies et le formulaire soumis, WordPress finalisera l'installation. Vous serez ensuite redirigé vers l'écran de connexion (wp-login.php) où vous pourrez vous connecter avec le nom d'utilisateur et le mot de passe que vous venez de créer.
 
 ![WP Docker VPS](images/wp_login.png){.thumbnail}
 
 ### Conclusion
 
-Vous venez d'installer WordPress sur votre VPS OVHcloud ou votre Serveur Dédié avec une image Docker. Vous pouvez désormais accéder à votre site web WordPress depuis un navigateur.
+Vous venez d'installer WordPress sur votre VPS ou votre serveur dédié OVHcloud avec une image Docker. Vous pouvez désormais accéder à votre site web WordPress depuis un navigateur.
 
 ## Aller plus loin
 
-[Installer un environnement de développement web sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
+[Installer un environnement de développement web sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
 
-[Installer WordPress avec WP-CLI sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
+[Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

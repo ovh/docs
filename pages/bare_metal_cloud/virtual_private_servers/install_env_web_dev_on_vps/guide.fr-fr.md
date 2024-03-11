@@ -1,18 +1,25 @@
 ---
-title: 'Installer un environnement de développement web sur un VPS OVHcloud'
-excerpt: 'Découvrez comment installer un environnement de développement web sur un VPS ou un Serveur Dédié OVHcloud'
+title: 'Installer un environnement de développement web sur un VPS ou un serveur dédié'
+excerpt: 'Découvrez comment installer un environnement de développement web sur un VPS ou un serveur dédié OVHcloud'
 updated: 2024-03-08
 ---
 
 ## Objectif
 
-Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur votre VPS (comme WordPress par exemple), vous devez au préalable installer un environnement de développement web sur votre VPS. Les principaux services à installer sont :
+Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur votre VPS (comme WordPress par exemple), vous devez au préalable installer un environnement de développement web sur votre VPS ou votre serveur dédié. Les principaux services à installer sont :
 
 - **PHP** : PHP est l'un des langages les plus utilisés pour créer des sites web. Il est nécessaire d'installer PHP pour que votre site web puisse exécuter des scripts et des fonctionnalités dynamiques. Installez de préférence la version de PHP la plus récente.
 - **Serveur Web** : Le serveur web est essentiel pour servir les pages de votre site web. Les serveurs web les plus populaires incluent Apache et Nginx, chacun ayant leurs propres avantages en termes de flexibilité, de performance et de facilité de configuration.
 - **SGBD** : Pour stocker, gérer, et récupérer vos données efficacement, vous aurez besoin d'un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées). MySQL, PostgreSQL ou encore MariaDB sont les SGBD les plus utilisés dans le développement web.
 
-**Découvrez comment installer manuellement un environnement de développement web sur un VPS ou un Serveur Dédié OVHcloud.**
+**Découvrez comment installer manuellement un environnement de développement web sur un VPS ou un serveur dédié OVHcloud.**
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce tutoriel.
+>
 
 ## Prérequis
 
@@ -31,7 +38,7 @@ Installez PHP et les extensions nécessaires pour WordPress :
 ~$ sudo apt install php php-cli php-mysql php-xml php-gd php-curl -y
 ```
 
-Pour vérifier que PHP est bien installé :
+Pour vérifier que PHP est bien installé, entrez la commande suivante :
 
 ```sh
 ~$ sudo php -v
@@ -45,7 +52,7 @@ Si PHP est bien installé, un message de ce type doit apparaître :
 
 > [!primary]
 >
-> Pour ce guide, nous choisissons Nginx, mais vous êtes libre d'installer le serveur web de votre choix.
+> Pour ce guide, nous choisissons Nginx mais vous êtes libre d'installer le serveur web de votre choix.
 >
 
 Installez Nginx :
@@ -64,13 +71,13 @@ Si Nginx est bien installé, un message de ce type doit apparaître :
 
 ![env dev web](images/result_nginx_v.png){.thumbnail}
 
-N'hésitez pas à consulter le [site officiel de Nginx](https://www.nginx.com/) si vous avez des questions.
+En cas de besoin, n'hésitez pas à consulter le [site officiel de Nginx](https://www.nginx.com/).
 
 ### Installer un SGBD (**S**ystème de **G**estion de **B**ase de **D**onnées)
 
 > [!primary]
 >
-> Pour ce guide nous choisissons MariaDB, mais vous êtes libre d'installer le SGBD de votre choix.
+> Pour ce guide, nous choisissons MariaDB mais vous êtes libre d'installer le SGBD de votre choix.
 >
 
 Installez MariaDB :
@@ -91,12 +98,14 @@ Définissez un mot de passe pour votre SGBD et suivez les instructions à l'écr
 
 ### Conclusion
 
-Vous venez d'installer PHP, un serveur Nginx et le SGBD MariaDB. Vous possédez désormais un environnement de développement web fonctionnel sur votre VPS OVHcloud. Si vous le souhaitez, vous pouvez maintenant [installer WordPress avec WP-CLI sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps) ou [installer WordPress avec Docker sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps).
+Vous venez d'installer PHP, un serveur Nginx et le SGBD MariaDB. Vous possédez désormais un environnement de développement web fonctionnel sur votre VPS ou votre serveur dédié OVHcloud. Si vous le souhaitez, vous pouvez maintenant [installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps) ou [installer WordPress avec Docker sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps).
 
 ## Aller plus loin
 
-[Installer WordPress avec WP-CLI sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
+[Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
 
-[Installer WordPress avec Docker sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
+[Installer WordPress avec Docker sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

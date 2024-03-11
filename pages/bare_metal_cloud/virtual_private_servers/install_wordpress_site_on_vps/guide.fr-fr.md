@@ -1,27 +1,34 @@
 ---
-title: 'Installer WordPress avec WP-CLI sur un VPS OVHcloud'
-excerpt: 'Découvrez comment installer WordPress avec WP-CLI sur un VPS ou un Serveur Dédié OVHcloud'
+title: 'Installer WordPress avec WP-CLI sur un VPS ou un serveur dédié'
+excerpt: 'Découvrez comment installer WordPress avec WP-CLI sur un VPS ou un serveur dédié OVHcloud'
 updated: 2024-03-08
 ---
 
 ## Objectif
 
-Installer WordPress sur un VPS présente plusieurs avantages, comme la personnalisation complète de l'environnement, une optimisation des performances et un renforcement de la sécurité. Que vous soyez un développeur expérimenté ou un débutant souhaitant lancer votre premier site web, ce guide vous explique pas à pas comment installer WordPress sur un VPS OVHcloud avec WP-CLI. WP-CLI est une interface en ligne de commande permettant l'installation manuelle de WordPress sur votre VPS OVHcloud.
+Installer WordPress sur un VPS ou un serveur dédié présente plusieurs avantages, comme la personnalisation complète de l'environnement, une optimisation des performances et un renforcement de la sécurité. Que vous soyez un développeur expérimenté ou un débutant souhaitant lancer votre premier site web, ce guide vous explique pas à pas comment installer WordPress sur un VPS OVHcloud avec WP-CLI. WP-CLI est une interface en ligne de commande permettant l'installation manuelle de WordPress sur votre VPS OVHcloud.
 
-**Découvrez comment installer WordPress avec WP-CLI sur un VPS ou un Serveur Dédié OVHcloud.**
+**Découvrez comment installer WordPress avec WP-CLI sur un VPS ou un serveur dédié OVHcloud.**
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce tutoriel.
+>
 
 ## Prérequis
 
 - Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
-- Avoir [configuré un environnement de développement web sur votre VPS](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
+- Avoir [configuré un environnement de développement web sur votre VPS ou votre serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
 - Disposer d'un nom de domaine (enregistré chez OVHcloud ou auprès d'un autre bureau d'enregistrements)
 
 ## En pratique
 
 > [!primary]
 >
-> Comme précisé dans les [prérequis](#prérequis), nous partons du principe que vous possédez déjà un [environnement de développement web configuré sur votre VPS](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps). Pour ce guide, les composants suivants sont déjà installés sur le VPS :
+> Comme précisé dans les [prérequis](#prérequis), nous partons du principe que vous possédez déjà un [environnement de développement web configuré sur votre VPS ou votre serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps). Pour ce guide, les composants suivants sont déjà installés sur le VPS :
 >
 > - PHP (version 8.2.7)
 > - Le serveur web Nginx
@@ -112,7 +119,7 @@ Pour accorder les droits, entrez la commande suivante :
 ~$ sudo chown -R your_user:your_group /var/www/html/
 ```
 
-Remplacez `your_user` et `your_group` par votre nom d'utilisateur et groupe d'utilisateur actuels. Sur de nombreux systèmes Linux, le groupe d'utilisateur par défaut pour un utilisateur est le même que le nom d'utilisateur. Vous pouvez trouver votre nom d'utilisateur avec la commande `whoami` et votre groupe avec `groups`.
+Remplacez `your_user` et `your_group` par votre nom d'utilisateur et groupe d'utilisateurs actuels. Sur de nombreux systèmes Linux, le groupe d'utilisateurs par défaut pour un utilisateur est le même que le nom d'utilisateur. Vous pouvez trouver votre nom d'utilisateur avec la commande `whoami` et votre groupe avec `groups`.
 
 Tentez à nouveau de télécharger WordPress :
 
@@ -227,13 +234,19 @@ Une fois la configuration testée et validée, redémarrez Nginx pour appliquer 
 
 ### Accéder à votre site web
 
-#### Relier le nom de domaine à l'adresse IP du VPS
+#### Relier le nom de domaine à l'adresse IP du VPS ou du serveur dédié
 
-Pour accéder à votre site web depuis un navigateur, liez d'abord le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS. Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans le menu de gauche, cliquez sur `Noms de domaines`{.action} puis sélectionnez le nom de domaine que vous avez choisi pour votre site WordPress. Cliquez sur l'onglet `Zone DNS`{.action} puis, dans le tableau qui s'affiche, identifiez la ligne ayant pour type la valeur `A`, cliquez sur le bouton `…`{.action} et sélectionnez `Modifier l'entrée`{.action}.
+Pour accéder à votre site web depuis un navigateur, liez d'abord le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS ou de votre serveur dédié.
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}.
+
+Dans le menu de gauche, cliquez sur `Noms de domaines`{.action} puis sélectionnez le nom de domaine que vous avez choisi pour votre site WordPress. 
+
+Cliquez sur l'onglet `Zone DNS`{.action} puis, dans le tableau qui s'affiche, identifiez la ligne ayant pour type la valeur `A`. Cliquez sur le bouton `…`{.action} et sélectionnez `Modifier l'entrée`{.action}.
 
 ![WP VPS](images/dns_zone_line_cta.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS pour le champ `Cible`{.action} puis cliquez sur `Suivant`{.action}. Vérifiez que les informations indiquées sont correctes puis cliquez sur `Valider`{.action}.
+Dans la fenêtre qui s'affiche, entrez l'adresse IP de votre VPS ou de votre serveur dédié dans le champ `Cible`{.action} puis cliquez sur `Suivant`{.action}. Vérifiez que les informations indiquées sont correctes puis cliquez sur `Valider`{.action}.
 
 ![WP VPS](images/dns_zone_modify_target.png){.thumbnail}
 
@@ -246,5 +259,7 @@ Vous venez d'installer WordPress sur votre VPS OVHcloud ou votre Serveur Dédié
 [Installer un environnement de développement web sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
 
 [Installer WordPress avec Docker sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
