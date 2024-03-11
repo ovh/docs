@@ -22,7 +22,7 @@ Zimbra propõe numerosas funcionalidades que serão brevemente propostas nos cat
 
 ### Quais são as diferenças entre o webmail Outlook Web App (OWA) e o Zimbra?
 
-Zimbra oferece as mesmas funcionalidades e uma ergonomia semelhante ao OWA. Está disponível em breve um guia de utilização de Zimbra.
+Zimbra oferece as mesmas funcionalidades e uma ergonomia semelhante ao OWA. Um guia de utilização do Zimbra está desde já disponível em [este endereço](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_zimbra).
 
 ### A migração oferece novas funcionalidades?
 
