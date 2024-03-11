@@ -347,4 +347,64 @@ Before you begin, ensure you have the following ready:
 - A Public Cloud project in your OVHcloud account.
 - Access to the OVHcloud Control Panel.
 - An S3 user already created within your project.
-- AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the "Getting started with Object Storage" documentation provided by OVHcloud.
+- AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the ["Getting started with Object Storage"](https://example.com/getting-started) documentation provided by OVHcloud.
+
+
+> :exclamation: **IMPORTANT**
+> Versioning must be activated in source bucket and destination bucket(s)
+
+# Via the cli
+## Create source bucket
+The source bucket is the bucket whose objects are automatically replicated.
+
+```bash
+$ aws s3 mb s3://<bucket_name>
+aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+```
+**_Example:_** Creation of a source bucket in the SBG region in the Standard storage class.
+
+```bash
+$ aws s3 mb s3://my-source-bucket
+aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
+```
+
+** Activate versioning in destination bucket
+```bash
+$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
+```
+** Apply replication configuration
+Using the AWS cli, replication configuration is applied on the source bucket.
+```bash
+$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration <conf.json>
+```
+
+**_Example:_**: Replicate all objects with prefix "docs" having a tag "importance" with value "high" to "my-destination-bucket" and replicate the delete markers i.e objects marked as deleted in source will be marked as deleted in destination
+
+```bash
+{
+   "Role": "arn:aws:iam::<your_project_id>:role/replicationRole",
+   "Rules": [
+    {
+      "ID": "replication-rule-456",
+      "Status": "Enabled",
+      "Filter": {
+        "And": {
+          "Prefix": "docs"
+        }
+      },
+      "Destination": {
+        "Bucket": "arn:aws:s3:::my-destination-bucket"
+      },
+      "DeleteMarkerReplication": {
+        "Status": "Enabled"
+      }
+    }
+  ]
+}
+```
+* Via the manager UI
+** Create source bucket
+** Activate versioning
+** Create destination bucket
+** Activate versioning
+** Apply replication configuration
