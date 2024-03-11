@@ -21,6 +21,8 @@ updated: 2024-03-11
 > La webmail Zimbra per MX Plan è in fase di distribuzione.
 >
 > Al momento è disponibile solo nell’ambito di migrazioni legate all’evoluzione della nostra offerta MX Plan. La migrazione è automatica, ti verrà inviata un’email dal nostro team quando sarai interessato.
+>
+> Per maggiori informazioni, consulta le nostre [FAQ sulla soluzione Zimbra di OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra).
 
 ## Obiettivo
 

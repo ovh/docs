@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Hier finden Sie die häufigsten Fragen zur Migration der OVHcloud MX Plan Dienste nach Zimbra
-updated: 2024-01-15
+updated: 2024-03-11
 ---
 
 > [!primary]
@@ -64,7 +64,7 @@ Die Migration auf das neue Zimbra Webmail erfolgt innerhalb der Dienstleistung. 
 
 ### Wo finde ich Anleitungen?
 
-Eine Anleitung zur Verwendung von Zimbra finden Sie demnächst vor der Migration in unserer Dokumentation.
+Eine Anleitung zur Verwendung von Zimbra finden Sie bereits unter [dieser Adresse](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### Wo werden meine E-Mails nach der Migration gehostet?
 
@@ -89,5 +89,7 @@ Sie können aber weiterhin das OWA Interface nutzen, indem Sie Ihre [E-Mail-Acco
 Um Ihr Angebot unter "Meine Dienste" im OVHCloud Kundencenter zu kündigen, folgen Sie der Anleitung "[OVHcloud Dienste kündigen](/pages/account_and_service_management/managing_billing_zahlungs_and_services/how_to_cancel_services#mxplan)" im Abschnitt zu MX Plan.
 
 ## Weiterführende Informationen
+
+[MX Plan - Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

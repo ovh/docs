@@ -21,6 +21,8 @@ updated: 2024-03-11
 > Zimbra Webmail für MX Plan ist noch nicht allgemein verfügbar.
 >
 > Deshalb wird es vorläufig nur bei Migrationen im Zusammenhang mit der Weiterentwicklung unseres MX Plan Dienstes aktiviert. Diese Migration erfolgt automatisch. Unsere Teams senden Ihnen eine E-Mail zu, wenn Sie von der Migration betroffen sind.
+>
+> Weitere Informationen finden Sie in unseren [OVHcloud Zimbra FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra).
 
 ## Ziel
 
