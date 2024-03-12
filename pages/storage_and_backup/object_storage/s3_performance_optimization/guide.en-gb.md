@@ -22,4 +22,15 @@ The benefits of using multipart upload are as follows:
 
 * Increased throughput: each part can be uploaded concurrently
 * Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
-    
+
+# In practice 
+## Using the AWS cli ##
+### Prerequisites ###
+
+* an OVHcloud bucket created
+* the AWS cli installed and configured
+* a large file split into multiple parts
+
+  
+> ✔️: ## Did you know?You ## should consider using multipart uploads for objects > 100MB
+The benefits of using multipart upload are as follows:
