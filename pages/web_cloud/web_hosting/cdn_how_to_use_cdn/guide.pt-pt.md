@@ -61,8 +61,7 @@ Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Va
 > No caso de um nome de domínio externo na OVHcloud adicionado à opção multisite no alojamento Web, deve mencionar o endereço IP do CDN do seu alojamento na zona DNS do nome do domínio.<br>
 > Consulte a [lista de endereços IP dos clusters e alojamento Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) para encontrar o endereço IP específico do CDN do seu cluster.
 
-**Porque não posso beneficiar do IP geolocalizado com a opção CDN?** <br>
-<br>
+**Porque não posso beneficiar do IP geolocalizado com a opção CDN?**
 O CDN utiliza o princípio dos IP anycast. Não recorrerá ao mesmo servidor em função da sua geolocalização, o que é extremamente eficaz para reduzir o tempo de carregamento dos seus ficheiros estáticos. A geolocalização do endereço IP é, portanto, inútil. <br>
 No que diz respeito ao SEO (referenciamento nos motores de pesquisa), a velocidade de apresentação do seu website é mais importante do que a geolocalização do endereço IP do seu alojamento.
 

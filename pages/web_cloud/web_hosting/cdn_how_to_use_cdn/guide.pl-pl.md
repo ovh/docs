@@ -61,8 +61,7 @@ Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a nast
 > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
 
  
-**Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?** <br>
-<br>
+**Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
 Funkcja GeoCache wykorzystuje zasadę działania IP Anycast. Użytkownik nie łączy się z tym samym serwerem z każdej lokalizacji, lecz z najbliższym, co pozwala bardzo skutecznie skrócić czas ładowania plików statycznych. Geolokalizacja adresu IP jest więc zbędna. <br>
 Jeśli chodzi o SEO (pozycjonowanie w wyszukiwarkach), szybkość wyświetlania strony ma większe znaczenie niż geolokalizacja adresu IP hostingu.
 

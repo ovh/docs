@@ -60,8 +60,7 @@ A questo punto, seleziona la voce "Attiva la CDN", clicca su `Seguente`{.action}
 > Sa hai aggiunto un dominio esterno (non OVHcloud) al multisito dell’hosting Web, è necessario indicare l’indirizzo IP della CDN del tuo hosting nella zona DNS del dominio.<br>
 > Consulta la [lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) per recuperare l’indirizzo IP specifico per la CDN del tuo cluster.
  
-**Perché non puoi utilizzare l'IP geolocalizzato con l'opzione CDN?** <br>
-<br>
+**Perché non puoi utilizzare l'IP geolocalizzato con l'opzione CDN?**
 La CDN utilizza il principio degli indirizzi IP Anycast. A seconda della tua geolocalizzazione, verranno interrogati diversi server, il che ridurrà il tempo di caricamento dei tuoi file statici. Pertanto la geolocalizzazione degli indirizzi IP è praticamente inutile. <br>
 Per quanto riguarda la SEO (motori di ricerca), la velocità di visualizzazione del tuo sito Web è più importante della geolocalizzazione dell'indirizzo IP del tuo hosting.
 
