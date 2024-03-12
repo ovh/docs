@@ -1,7 +1,7 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-updated: 2024-02-28
+updated: 2024-03-12
 ---
 
 ## Objectif
@@ -150,21 +150,22 @@ Cliquez sur le bouton `Ajouter une clé SSH`{.action}. Dans la nouvelle fenêtre
 
 ![ajouter une clé](images/puttygen-04.png){.thumbnail}
 
-**Bonne pratiques**
-
-Il est préférable de créer un réseau privé avant de procéder à la création d'une instance. Pour plus d'informations sur la création d'un réseau privé, consultez le guide [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
-
 ### Étape 3 : Créer une instance  <a name="create-instance"></a>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!success]
+>
+Il est préférable de créer un réseau privé avant de procéder à la création d'une instance. Pour plus d'informations sur la création d'un réseau privé, consultez le guide [Configuration du vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+> 
 
 Connectez-vous à l'espace client [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. (Vous pouvez trouver la même fonctionnalité en cliquant sur `Instances`{.action} dans la barre de navigation de gauche sous `Compute`.)
 
 ![instance select](images/instance-creation-2024.png){.thumbnail}
 
-**Zones Locales :**
+**Local Zones :**
 
-Les Zones Locales sont une extension des régions qui rapprochent les services OVHcloud de lieux spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Elles sont stratégiquement placées à proximité de zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs, et de répondre aux exigences de résidence des données. Pour plus d'informations sur les zones locales, consultez les liens suivants : [Local Zone Compute](https://www.ovhcloud.com/fr-ca/public-cloud/local-zone-compute/) et [Local Zone Compute - Fonctionnalités, capacités et limites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+Les Local Zones sont une extension des régions qui rapprochent les services OVHcloud de lieux spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Elles sont stratégiquement placées à proximité de zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs, et de répondre aux exigences de résidence des données. Pour plus d'informations sur les Local Zones, consultez les liens suivants : [Local Zone Compute](https://www.ovhcloud.com/fr-ca/public-cloud/local-zone-compute/) et [Local Zone Compute - Fonctionnalités, capacités et limites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
 
 **Régions Globales :**
