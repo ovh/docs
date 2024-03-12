@@ -1,7 +1,7 @@
 ---
 title: "Aumentare la velocità di un sito Web con la CDN"
 excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -57,19 +57,16 @@ A questo punto, seleziona la voce "Attiva la CDN", clicca su `Seguente`{.action}
 
 > [!warning]
 > 
-> Sa hai aggiunto un dominio esterno (non OVHcloud) al multisito dell’hosting Web, è necessario indicare l’indirizzo IP della CDN del tuo hosting nella zona DNS del dominio.<br>
+> Sa hai aggiunto un dominio esterno (non OVHcloud) al multisito dell’hosting Web, è necessario indicare l’indirizzo IP della CDN del tuo hosting nella zona DNS del dominio.
+>
 > Consulta la [lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) per recuperare l’indirizzo IP specifico per la CDN del tuo cluster.
  
-**Perché non puoi utilizzare l'IP geolocalizzato con l'opzione CDN?** <br>
-<br>
+**Perché non puoi utilizzare l'IP geolocalizzato con l'opzione CDN?**
+
 La CDN utilizza il principio degli indirizzi IP Anycast. A seconda della tua geolocalizzazione, verranno interrogati diversi server, il che ridurrà il tempo di caricamento dei tuoi file statici. Pertanto la geolocalizzazione degli indirizzi IP è praticamente inutile. <br>
 Per quanto riguarda la SEO (motori di ricerca), la velocità di visualizzazione del tuo sito Web è più importante della geolocalizzazione dell'indirizzo IP del tuo hosting.
 
 ### Gestisci la tua CDN Shared 
-
-> [!primary]
-> 
-> L'opzione Shared CDN è già inclusa nelle offerte di hosting Web Performance o è disponibile al momento dell'ordine dal 19/11/20. Per le versioni precedenti, consulta il paragrafo [Gestisci la tua CDN (versione storica)](#cdnbusiness).
 
 #### Svuota la cache della CDN Shared
 
@@ -138,8 +135,6 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 > [!primary]
 >  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](https://www.ovhcloud.com/it/web-hosting/options/cdn/) o della [CDN Advanced](https://www.ovhcloud.com/it/web-hosting/options/cdn/)
 
-Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini `...`{.action} a destra del record multisito e poi `Modifica la CDN `{.action}. 
-
 - **Cross-Origin Resource Sharing (CORS)**: Indica, nell'elenco, i domini esterni che saranno autorizzati ad accedere alle risorse del tuo sito web per condividerle. 
 
 	Una volta attivata la funzione, clicca su `Modifica l'elenco delle risorse esterne`{.action} per aggiungere i domini autorizzati a condividere le tue risorse.
@@ -192,12 +187,12 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 - **Prefetch**: Anticipa il caricamento della risorsa seguente. Precaricalo automaticamente nella cache CDN grazie all *header link* del tuo sito Web. Questo meccanismo è utilizzato principalmente per caricare CSS, JavaScript, immagini, favicons o ancora polizze Web richieste per il tema del sito Web. 
 
-	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hello", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.css`.
+	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hi", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.css`.
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hello'
+	print 'Hi'
 	?>
 	```
 
@@ -259,20 +254,6 @@ Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la 
 Nella scheda `Multisito`{.action} del tuo hosting, sotto la tabella, puoi visualizzare le statistiche della tua CDN, indicando il numero di richieste al minuto misurate su di esso.
 
 ![CDN](images/statistics.png){.thumbnail}
-
-### Gestisci la tua CDN Business <a name="cdnbusiness"></a>
-
-> [!primary]
-> 
-> L'opzione CDN è già inclusa nelle soluzioni di hosting Web Performance o nelle offerte ordinate prima del 19/11/2020.
-
-#### Svuota la cache della CDN
-
-Ogni tanto è utile cancellare la cache della CDN, specialmente quando effettui l’aggiornamento dei tuoi file statici: ad esempio, durante la pubblicazione online di una nuova versione del tuo sito. In questo caso, è possibile svuotare completamente la cache della CDN.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Hosting`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza di "Opzione CDN" e poi su `Ordina una CDN`{.action}.
-
-![CDN](images/clear-cache.png){.thumbnail}
 
 ### In che modo è possibile conservare in cache i file nella CDN?
 
