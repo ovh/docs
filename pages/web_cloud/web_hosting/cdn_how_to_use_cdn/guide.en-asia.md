@@ -1,7 +1,7 @@
 ---
 title: "Speeding up your website with CDN"
 excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 ## Objective
@@ -62,10 +62,6 @@ The CDN uses the principle of "IP Anycast". You do not request the same server d
 In terms of SEO (search engine optimisation), the website loading speed is more important that the geolocation of the IP addresses.
 
 ### Managing your Shared CDN 
-
-> [!primary]
-> 
-> The Shared CDN option is already included in all "Performance" Web Hosting plans and has been available to order since 11/19/20. For older versions, please refer to the section [Managing your Business CDN](#cdnbusiness).
 
 #### Clearing the Shared CDN cache
 
@@ -186,12 +182,12 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 - **Prefetch**: Anticipate the next resource being loaded. Preload it automatically in the CDN cache using your website’s *header link*. This mechanism is mainly used to load CSS, JavaScript, images, favicons or web fonts that are required by the website theme. 
 
-	In the example below, when the current page is displaying 'Hello', a subquery triggers the preloading of the resource `/cache/style.css`.  
+	In the example below, when the current page is displaying 'Hi', a subquery triggers the preloading of the resource `/cache/style.css`.  
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hello'
+	print 'Hi'
 	?> 
 	```
 
@@ -253,20 +249,6 @@ Once you have configured your rules and chosen your options, click `Apply config
 In the `Multisite`{.action} tab of your hosting, under the table, you can view the statistics of your CDN, indicating the number of requests per minute measured on it.
 
 ![CDN](images/statistics.png){.thumbnail}
-
-### Managing your CDN Business <a name="cdnbusiness"></a>
-
-> [!primary]
->
-> The CDN option is already included in the "Performance" Web Hosting plans or plans ordered before November 19th, 2020.
-
-#### Clearing the CDN cache
-
-It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. In this case, you can completely clear the CDN cache.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of "CDN option", then on `Clear cache`{.action}.
-
-![CDN](images/clear-cache.png){.thumbnail}
 
 ### How do I cache my files in the CDN?
 

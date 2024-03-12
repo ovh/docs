@@ -1,7 +1,7 @@
 ---
 title: "Speeding up your website with CDN"
 excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 ## Objective
@@ -187,12 +187,12 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 - **Prefetch**: Anticipate the next resource being loaded. Preload it automatically in the CDN cache using your website’s *header link*. This mechanism is mainly used to load CSS, JavaScript, images, favicons or web fonts that are required by the website theme. 
 
-	In the example below, when the current page is displaying 'Hello', a subquery triggers the preloading of the resource `/cache/style.css`.  
+	In the example below, when the current page is displaying 'Hi', a subquery triggers the preloading of the resource `/cache/style.css`.  
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hello'
+	print 'Hi'
 	?> 
 	```
 

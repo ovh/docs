@@ -1,7 +1,7 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
 excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement Web grâce au CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 ## Objectif
@@ -55,18 +55,13 @@ Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur 
 > 
 > Dans le cas d'un nom de domaine externe à OVHcloud ajouté en multisite sur l'hébergement web, vous devez mentionner l'adresse IP du CDN de votre hébergement dans la zone DNS du nom de domaine.<br>
 > Consultez la [liste des adresses IP des clusters et hébergement web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) pour retrouver l'adresse IP spécifique du CDN de votre cluster.
-
  
 **Pourquoi ne puis-je pas bénéficier de l'IP géolocalisée avec l'option CDN ?** <br>
 <br>
 Le CDN utilise le principe des IP anycast. Vous n'interrogerez pas le même serveur en fonction de votre géolocalisation, ce qui est très efficace pour réduire le temps de chargement de vos fichiers statiques. La géolocalisation d'adresse IP est donc inutile. <br>
 Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'affichage de votre site web a plus d'importance que la géolocalisation de l'adresse IP de votre hébergement.
 
-### Gérer votre Shared CDN 
-
-> [!primary]
-> 
-> L'option shared CDN est déjà incluse dans les offres d'hébergement web Performance ou disponible à la commande depuis le 19/11/20. Pour les versions plus anciennes, référez-vous au paragraphe [Gérer votre CDN Business](#cdnbusiness).
+### Gérer votre Shared CDN
 
 #### Vider le cache du Shared CDN
 
@@ -135,8 +130,6 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 > [!primary]
 >  les options présentées ci-dessous nécessitent la souscription au [CDN security](https://www.ovhcloud.com/fr-ca/web-hosting/options/cdn/) ou au [CDN Advanced](https://www.ovhcloud.com/fr-ca/web-hosting/options/cdn/)
 
-Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}. 
-
 - **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms de domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
 
 	Une fois la fonction activée, cliquez sur `Editer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
@@ -189,12 +182,12 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Prefetch** : Anticipez le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au *header link* de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
 
-	Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hello », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
+	Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hi », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hello'
+	print 'Hi'
 	?> 
 	```
 

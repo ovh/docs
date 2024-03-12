@@ -1,7 +1,7 @@
 ---
 title: "Aumentare la velocità di un sito Web con la CDN"
 excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -192,12 +192,12 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 - **Prefetch**: Anticipa il caricamento della risorsa seguente. Precaricalo automaticamente nella cache CDN grazie all *header link* del tuo sito Web. Questo meccanismo è utilizzato principalmente per caricare CSS, JavaScript, immagini, favicons o ancora polizze Web richieste per il tema del sito Web. 
 
-	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hello", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.css`.
+	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hi", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.css`.
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hello'
+	print 'Hi'
 	?>
 	```
 

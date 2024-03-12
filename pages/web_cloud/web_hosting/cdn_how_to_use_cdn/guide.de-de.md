@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -192,12 +192,12 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 - **Prefetch**: Planen Sie das Laden der nächsten Ressource. Laden Sie sie automatisch im CDN Cache mithilfe des *header link* Ihrer Website. Dieser Mechanismus wird hauptsächlich verwendet, um CSS, JavaScript, Bilder, Favicons oder Schriftarten zu laden, die von der Website angefordert werden. 
 
-	Im folgenden Beispiel wird, wenn die aktuelle Seite "Hello" anzeigt, eine Subanfrage das Vorladen der Ressource`/cache/style.css` auslösen.  
+	Im folgenden Beispiel wird, wenn die aktuelle Seite "Hi" anzeigt, eine Subanfrage das Vorladen der Ressource`/cache/style.css` auslösen.  
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print 'Hello'
+	print 'Hi'
 	?> 
 	```
 
@@ -259,20 +259,6 @@ Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration 
 Im Tab `Multisite`{.action} Ihres Webhostings können Sie unter der Tabelle die Statistiken Ihres CDN einsehen, die die Anzahl der registrierten Anfragen pro Minute anzeigen.
 
 ![CDN](images/statistics.png){.thumbnail}
-
-### Ihr CDN Business verwalten <a name="cdnbusiness"></a>
-
-> [!primary]
-> 
-> Die CDN-Option ist bereits in den Webhosting-Angeboten der Reihe „Performance“ oder in vor dem 19.11.20 bestellten Angeboten enthalten..
-
-#### Den CDN-Cache leeren
-
-Es ist manchmal nützlich, den CDN-Cache zu leeren, insbesondere, wenn Sie Ihre statischen Dateien ändern. Dies ist zum Beispiel der Fall, wenn Sie eine neue Version Ihrer Webseite erstellt haben.  Sie können dann den CDN-Cache vollständig leeren.
-
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" und danach auf `Cache leeren`{.action}.
-
-![CDN](images/clear-cache.png){.thumbnail}
 
 ### Wie kann ich meine Dateien im CDN zwischenspeichern?
 
