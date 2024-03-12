@@ -376,7 +376,7 @@ Uma regra de filtragem em Zimbra é composta por 4 elementos:
 
 ![Zimbra - filtros](images/zimbra-filters.png){.thumbnail}
 
-> Exemplo n°1: Se o **assumpto (1)** da mensagem de correio eletrónico **contiver (2)** a palavra `invoice`**(3)**, então **reencaminhe para (4)** o endereço `billing@example.com`.
+> Exemplo: Se o **assumpto (1)** da mensagem de correio eletrónico **contiver (2)** a palavra `invoice`**(3)**, então **reencaminhe para (4)** o endereço `billing@example.com`.
 
 Nos subcapítulos que se seguem, poderá encontrar os detalhes de cada um dos elementos de uma regra de filtragem.
 
