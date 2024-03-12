@@ -267,7 +267,7 @@ BROADCAST=203.0.113.0
 sudo systemctl restart network
 ```
 
-#### For Alma Linux and Rocky Linux
+#### For AlmaLinux and Rocky Linux
 
 ```bash
 sudo systemctl restart NetworkManager
@@ -337,13 +337,13 @@ You now need to restart your interface:
 sudo systemctl restart NetworkManager
 ```
 
-### cPanel (on Alma Linux)
+### cPanel (on AlmaLinux 9)
 
 #### Step 1: Access the WHM IP management section
 
 In the WHM control panel, click on `IP Functions`{.action} and select `Add a New IP Address`{.action} in the left-hand sidebar.
 
-![Add new IP](images/Cpanel-1.png){.thumbnail}
+![Add new IP](images/cpanel-alma-1.png){.thumbnail}
 
 #### Step 2: Add the Additional IP information
 
@@ -351,7 +351,7 @@ Enter your Additional IP in the form `xxx.xxx.xxx.xxx` into the field “New IP 
 
 Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
-![enter new IP information](images/Cpanel-2.png){.thumbnail}
+![enter new IP information](images/cpanel-alma-2.png){.thumbnail}
 
 > [!warning]
 >
@@ -362,7 +362,7 @@ Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
 Back in the section `IP Functions`{.action}, click on `Show or Delete Current IP Addresses`{.action} to verify that the Additional IP address was added correctly.
 
-![check configured IP](images/Cpanel-3.png){.thumbnail}
+![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 
 ### Plesk
 
@@ -390,7 +390,7 @@ Back in the section "IP Addresses", verify that the Additional IP address was ad
 
 ![current IP configuration](images/pleskip4-4.png){.thumbnail}
 
-### Windows Server 2016
+### Windows Servers
 
 #### Step 1: Verify the network configuration
 
