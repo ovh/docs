@@ -1,6 +1,6 @@
 ---
-title: 'Ativar e utilizar o modo rescue'
-excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
+title: "Ativar e utilizar o modo rescue"
+excerpt: "Descubra como utilizar o modo rescue OVHcloud para solucionar problemas com o seu servidor dedicado"
 updated: 2024-01-09
 ---
 
@@ -10,25 +10,25 @@ updated: 2024-01-09
 
 ## Objetivo
 
-O modo rescue é uma ferramenta do seu servidor dedicado. Permite-lhe iniciar num sistema operativo temporário, com o objetivo de diagnosticar e resolver problemas.
+O Modo Rescue é uma ferramenta fornecida pela OVHcloud que lhe permite iniciar num sistema operativo temporário com o objetivo de diagnosticar e resolver problemas no seu servidor.
 
-O modo de segurança é geralmente adaptado às seguintes tarefas:
+O modo rescue é geralmente adaptado às seguintes tarefas:
 
-- Renovação da password root
+- [Reinicialização da palavra-passe do utilizador](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnóstico dos problemas de rede
 - Reparação de um sistema operativo defeituoso
 - Correção de uma configuração incorreta de uma firewall de software
 - Teste das performances dos discos
 - Teste do processador e da memória RAM
 
-O backup dos seus dados deve ser a primeira etapa do modo de recuperação se ainda não dispõe de backups recentes.
-
 > [!warning]
 >
-> Se tem serviços em produção no seu VPS, o modo rescue interrompe-os enquanto a máquina não for reiniciada no modo normal.
+> Certifique-se de que efetua um backup dos seus dados se ainda não dispõe de backups recentes.
+>
+> Se tiver serviços em produção no seu servidor, o modo rescue interrompe-os-á enquanto a máquina não for reiniciada em modo normal.
 > 
 
-**Saiba como ativar e utilizar o modo rescue do seu servidor.**
+**Este manual explica como reiniciar um servidor em modo rescue e montar partições.**
 
 ## Requisitos
 
@@ -95,7 +95,7 @@ root@ns3956771.ip-169-254-10.eu's password:
 
 #### Montagem das suas partições
 
-A maior parte das modificações efetuadas no seu servidor através de SSH em modo rescue requerem a montagem de uma partição. De facto, este modo possui o seu próprio sistema de ficheiros temporários. Por isso, as modificações realizadas no sistema de ficheiros em modo rescue serão perdidas ao reiniciar o servido em modo normal.
+A menos que configure os discos do servidor de uma forma que exija que sejam desligados (*unmounted*), deve montar primeiro a partição do sistema.
 
 Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
 
