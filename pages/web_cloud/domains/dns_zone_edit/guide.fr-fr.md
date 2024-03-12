@@ -74,11 +74,13 @@ Avant de créer un des sélecteurs pour votre nom de domaine, vous devez récup�
 
 Pour cela, utilisez 
 > [!tabs]
-> **A** (**A**ddress)
+> **A**
+>> **A**ddress <br><br>
 >> Relie un nom de domaine à une adresse IPv4 `X.X.X.X` (où les `X` sont des chiffres compris entre `0` et `255`). Par exemple, l'adresse IPv4 du serveur où est hébergé votre site web.
 >>
 >> 
-> **AAAA** (4 lettres **A** car cet enregistrement est encodé sur quatre fois plus de bits que le champ de pointage **A** historique)
+> **AAAA**
+>> 4 lettres **A** car cet enregistrement est encodé sur quatre fois plus de bits que le champ de pointage **A** historique <br><br>
 >> Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site web.
 >>
 >> > [!primary]
@@ -87,7 +89,8 @@ Pour cela, utilisez
 >> >  Néanmoins, si votre serveur dispose déjà d'une IPv4, nous vous recommandons de privilégier l'utilisation de celle-ci à votre IPv6.<br>
 >> >  En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau Internet, ce qui peut engendrer des perturbations d'affichage ou d'accès.
 >
-> **CNAME** (**C**anonical **NAME**)
+> **CNAME**
+>> **C**anonical **NAME** <br><br>
 >> Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
 >> <a name="cname"></a>
 >> >  [!alert]
@@ -103,19 +106,21 @@ Pour cela, utilisez
 >> > 
 >> >  Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pouvez retrouver, en bas de cette page, [un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines](#techusecase).
 >> > 
-> **Champ DNAME** (**D**elegation **NAME**)
+> **Champ DNAME**
+>> **D**elegation **NAME** <br><br>
 >> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible. Exemple : en créant un enregistrement DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (tels que *dname.mydomain.ovh* et *xxx.mydomain.ovh*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*). En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* et *xxx.mydomain.ovh* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
 >> > [!warning]
 >> >
 >> > En revanche, *mydomain.ovh* en tant que domaine n’affichera pas la cible du domaine *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des domaines définis dans l’enregistrement DNAME.
 >> >
 >> > De plus, en reprenant l'un des exemples ci-dessus, si le sous-domaine cible *xxx.ovh.com* ne pointe nulle part, alors l’enregistrement DNAME n’affichera rien non plus pour *xxx.mydomain.ovh*.
->> > 
+>> >
 >> > [!success]
->> > 
+>> >
 >> > L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société. Il peut aussi être mis en place lorsqu’un utilisateur dispose de plusieurs extensions de domaines (.fr, .net, .com, .info, …) pour les rediriger entre eux facilement.
 >> >
-> **Champ NS** (**N**ame **S**erver)
+> **Champ NS**
+>> **N**ame **S**erver <br><br>
 >> Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client OVHcloud. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) » pour plus d'informations.
 >> > [!warning]
 >> > 
@@ -125,57 +130,67 @@ Pour cela, utilisez
 #### Enregistrements e-mail
 
 > [!tabs]
-> **MX** (**M**ail e**X**changer)
+> **MX**
+>> **M**ail e**X**changer <br><br>
 >> Relie un nom de domaine à un serveur e-mail. Par exemple, l'adresse *10 mx1.mail.ovh.net* correspond à l'un des serveurs e-mail OVHcloud lorsque vous possédez une offre e-mail OVHcloud. Il est probable que votre fournisseur e-mail dispose de plusieurs serveurs e-mail : plusieurs champs MX doivent donc être créés. Consultez notre documentation « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».
 >>
 >> > [!warning]
 >> >  De manière générale, il est recommandé de n’utiliser qu’un ou plusieurs serveurs d’un même fournisseur e-mail dans votre zone DNS.
 > En effet, si vous disposez déjà de services e-mail chez un autre fournisseur e-mail et que vous ajoutez en parallèle (sans remplacer) les serveurs e-mail de votre nouveau fournisseur e-mail, vous risquez de recevoir aléatoirement vos e-mails chez l’un ou l’autre de vos deux fournisseurs.
-> **SPF** (**S**ender **P**olicy **F**ramework)
+> **SPF**
+> **S**ender **P**olicy **F**ramework <br><br>
 >> Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (*spoofing*). Par exemple, l'enregistrement `v=spf1 include:mx.ovh.com ~all` indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés comme légitimes par le serveur de réception. Vous pouvez renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_spf) » pour en savoir plus.
 >>
-> **DKIM** (**D**omain**K**eys **I**dentified **M**ail)
+> **DKIM**
+>> **D**omain**K**eys **I**dentified **M**ail <br><br>
 >>Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail (si cette fonctionnalité est proposée par ce dernier), il est possible de la renseigner sous la forme d'un champ TXT.
 >>
-> **DMARC** (**D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance)
+> **DMARC**
+>> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
 >>Contribue à l'authentification des e-mails en association avec les méthodes SPF et/ou DKIM. Cette valeur vous sera donnée par votre fournisseur e-mail (si cette fonctionnalité est proposée par ce dernier), elle sera au minimum associée à un enregistrement SPF ou DKIM.
 >
-> 
+>
 
 #### Enregistrements étendus
 
 > [!tabs]
-> **TXT** (**T**e**XT**)
->>Permet d'ajouter la valeur de votre choix, au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification/validation ou de sécurité.
+> **TXT**
+>> **T**e**XT** <br><br>
+>> Permet d'ajouter la valeur de votre choix, au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification/validation ou de sécurité.
 >>
->> >  [!warning]
->> >  
->> >  L'enregistrement TXT est limité à 255 caractères. Il est néanmoins possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
+>> > [!warning]
+>> >
+>> > L'enregistrement TXT est limité à 255 caractères. Il est néanmoins possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
 >> >
 >> > Cette limite n'est cependant pas existante si vous passez par la fonctionnalité « Modifier en mode textuel » [décrite plus bas](#txtmod) dans ce guide (pour les utilisateurs avertis).
->> > 
-> **SRV** (**S**e**RV**ice resource)
->>Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, il peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant la configuration automatique d'un logiciel de messagerie.
->>
-> **CAA** (**C**ertification **A**uthority **A**uthorization)
->>Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
->>
->> >  [!warning]
 >> >
->> >  Si vous utilisez un certificat SSL Let's Encrypt avec votre domaine sur un hébergement mutualisé OVHcloud et que vous utilisez un enregistrement CAA, ce dernier empêchera la régénération du certificat SSL Let's Encrypt.
->> > 
-> **NAPTR** (**N**ame **A**uthority **P**oin**T**e**R**)
->>Utilisé en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. Un enregistrement SRV peut y être associé pour générer de façon dynamique des URIs (Uniform Resource Identifier) cibles.
+> **SRV**
+>> **S**e**RV**ice resource <br><br>
+>> Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, il peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant la configuration automatique d'un logiciel de messagerie.
 >>
-> **LOC** (**LOC**ation)
->>Utilisé pour renseigner les informations de position géographique (notamment avec la latitude, la longitude et l'altitude).
+> **CAA**
+>> **C**ertification **A**uthority **A**uthorization <br><br>
+>> Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
 >>
-> **SSHFP** (**S**ecure **SH**ell **F**inger**P**rint)
->>Utilisé pour renseigner l'empreinte d'une clé publique SSH.
+>> > [!warning]
+>> >
+>> > Si vous utilisez un certificat SSL Let's Encrypt avec votre domaine sur un hébergement mutualisé OVHcloud et que vous utilisez un enregistrement CAA, ce dernier empêchera la régénération du certificat SSL Let's Encrypt.
+>> >
+> **NAPTR**
+>> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
+>> Utilisé en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. Un enregistrement SRV peut y être associé pour générer de façon dynamique des URIs (Uniform Resource Identifier) cibles.
 >>
-> **TLSA** (**T**ransport **L**ayer **S**ecurity **A**uthentification)
->>Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
- 
+> **LOC**
+>> **LOC**ation <br><br>
+>> Utilisé pour renseigner les informations de position géographique (notamment avec la latitude, la longitude et l'altitude).
+>>
+> **SSHFP**
+>> **S**ecure **SH**ell **F**inger**P**rint <br><br>
+>> Utilisé pour renseigner l'empreinte d'une clé publique SSH.
+>>
+> **TLSA**
+>> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
+>> Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
 
 ### Éditer la zone DNS OVHcloud de votre nom de domaine
 
@@ -184,9 +199,9 @@ Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, mo
 #### Modifier manuellement la zone en mode textuel <a name="txtmod"></a>
 
 > [!warning]
-> 
+>
 > Pour les utilisateurs avertis uniquement. Soyez également très vigilant sur la syntaxe lors de vos modifications.
-> 
+>
 
 Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Modifier en mode textuel`{.action} puis suivez les étapes qui s'affichent.
 
@@ -213,7 +228,7 @@ Nous vous invitons à vérifier au préalable si cet enregistrement n'existe pas
 >
 > Vous devez alors avoir comme cible *mydomain.ovh.* et non pas *mydomain.ovh* sans le **.** à la fin.
 
-#### Modifier un enregistrement DNS existant 
+#### Modifier un enregistrement DNS existant
 
 Pour modifier un enregistrement DNS, toujours depuis l'onglet `Zone DNS`{.action} de votre espace client, cliquez sur le pictogramme `...`{.action} dans le tableau à droite de l'entrée choisie. Cliquez ensuite sur `Modifier l'entrée`{.action} puis suivez les étapes qui s'affichent.
 
