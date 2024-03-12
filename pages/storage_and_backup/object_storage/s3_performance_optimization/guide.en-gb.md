@@ -32,5 +32,5 @@ The benefits of using multipart upload are as follows:
 * a large file split into multiple parts
 
   
-> ✔️: ## Did you know?You ## should consider using multipart uploads for objects > 100MB
-The benefits of using multipart upload are as follows:
+> ✔️: ** Did you know You ? **
+> When you use a high level command to upload an object using the cp command, the AWS cli automatically does a multipart-upload. To better optimize the default configuration values for doing multipart uploads (multipart_threshold, multipart_chunksize), you can check this article and see the table explaining the configuration of the AWS cli.
