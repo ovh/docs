@@ -160,7 +160,7 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 > [!success]
 >
-Es preferible crear una red privada antes de crear una instancia. Para más información sobre la creación de una red privada, consulte la guía [Configuración del vRack Public Cloud ](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+Es preferible crear una red privada antes de crear una instancia. Para más información sobre la creación de una red privada, consulte la guía [Configuración del vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 >
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
@@ -169,12 +169,12 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 **Local Zones:**
 
-Las Zonas Locales son una extensión de las regiones que acercan los servicios de OVHcloud a lugares específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones. Están estratégicamente situadas cerca de las zonas de alta demanda de los usuarios. Su principal objetivo es minimizar el tiempo necesario para la transferencia de datos entre el usuario y la nube, con el fin de que los servicios sean más rápidos y reactivos, y responder a las exigencias de residencia de los datos. Para obtener más información sobre las Zonas locales, consulte los vínculos siguientes: [Local Zone Compute](https://www.ovhcloud.com/es-es/public-cloud/local-zone-compute/) y [Local Zone Compute - Características, capacidades y límites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+Las instancias Local Zone son una extensión de las regiones que acercan los servicios de OVHcloud a lugares específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones. Están estratégicamente situadas cerca de las zonas de alta demanda de los usuarios. Su principal objetivo es minimizar el tiempo necesario para la transferencia de datos entre el usuario y la nube, con el fin de que los servicios sean más rápidos y reactivos, y responder a las exigencias de residencia de los datos. Para obtener más información sobre las instancias Local Zone, consulte los vínculos siguientes: [Local Zone Compute](https://www.ovhcloud.com/es-es/public-cloud/local-zone-compute/) y [Local Zone Compute - Características, capacidades y límites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
 
 **Global Regions:**
 
-Las Global Regions incluyen ino vaitest por uno o varios datacenters gestionados por OVHcloud. Cada región está situada en una zona geográfica diferente. Cada región global ofrece una o varias Availibility Zonez (zonas de disponibilidad) como GRA11, GRA7, BHS5, DE1, etc.
+Las Global Regions incluyen ino vaitest por uno o varios datacenters gestionados por OVHcloud. Cada región está situada en una zona geográfica diferente. Cada región global ofrece una o varias Availibility Zones (zonas de disponibilidad) como GRA11, GRA7, BHS5, DE1, etc.
 
 En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Podrá consultar las características de las diferentes instancias y los modelos de servidor disponibles de entre las siguientes categorías:
 

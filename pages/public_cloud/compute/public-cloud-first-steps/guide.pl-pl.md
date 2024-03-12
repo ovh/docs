@@ -169,7 +169,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 **Local Zones:**
 
-Lokalne strefy to rozszerzenie regionów, które zbliżają usługi OVHcloud do określonych lokalizacji, oferując krótszy czas odpowiedzi i lepszą wydajność aplikacji. Są one strategicznie rozmieszczone w pobliżu obszarów, na które istnieje duże zapotrzebowanie użytkowników. Ich głównym celem jest zminimalizowanie czasu potrzebnego na transfer danych między użytkownikiem a chmurą, aby usługi były szybsze i bardziej reaktywne oraz aby spełnić wymagania dotyczące rezydencji danych. Aby uzyskać więcej informacji na temat Lokalnych Stref, skorzystaj z następujących łączy: [Local Zone Compute](https://www.ovhcloud.com/pl/public-cloud/local-zone-compute/) i [Local Zone Compute - Funkcje, możliwości i ograniczenia](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+Instancje Local Zones są rozszerzeniem regionów, które zbliżają usługi OVHcloud do określonych lokalizacji, oferując krótszy czas odpowiedzi i lepszą wydajność aplikacji. Są one strategicznie rozmieszczone w pobliżu obszarów, na które istnieje duże zapotrzebowanie użytkowników. Ich głównym celem jest zminimalizowanie czasu potrzebnego na transfer danych między użytkownikiem a chmurą, aby usługi były szybsze i bardziej reaktywne oraz aby spełnić wymagania dotyczące rezydencji danych. Aby uzyskać więcej informacji na Instancje Local Zones, skorzystaj z następujących łączy: [Local Zone Compute](https://www.ovhcloud.com/pl/public-cloud/local-zone-compute/) i [Local Zone Compute - Funkcje, możliwości i ograniczenia](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
 
 **Global Regions:**

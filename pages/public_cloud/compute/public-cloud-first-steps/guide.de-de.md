@@ -32,7 +32,7 @@ Beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüssel
 Für die Login-Authentifizierung auf Windows-Instanzen sind Benutzername und Passwort erforderlich.
 >
 
-#### SSH-Schlüssel mit Linux- oder Mac-Betriebssystem erstellen
+#### SSH-Schlüssel mit Linux-oder Mac-Betriebssystem erstellen
 
 Öffnen Sie zunächst über einen Mac-Computer oder ein Gerät mit installiertem Linux-Betriebssystem die Kommandozeile (Terminal). Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis ein Ordner “.ssh” befindet. Ist der Ordner nicht vorhanden, erstellen Sie diesen:
 
@@ -167,7 +167,7 @@ Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 
 **Local Zones:**
 
-Die Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen. Sie sind strategisch günstig in der Nähe von Gebieten mit hoher Nutzernachfrage platziert. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um Dienste schneller und reaktionsfähiger zu machen und die Anforderungen an den Wohnsitz der Daten zu erfüllen. Weitere Informationen zu den Local Zones finden Sie unter den folgenden Links: [Local Zone Compute](https://www.ovhcloud.com/de-ca/public-cloud/local-zone-compute/) und [Local Zone Compute - Funktionen, Kapazitäten und Grenzen](/pages/public_cloud/compute/local-zones-capabilities-limits).
+Die Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen. Sie sind strategisch günstig in der Nähe von Gebieten mit hoher Nutzernachfrage platziert. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um Dienste schneller und reaktionsfähiger zu machen und die Anforderungen an den Wohnsitz der Daten zu erfüllen. Weitere Informationen zu den Local Zones finden Sie unter den folgenden Links: [Local Zone Compute](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/) und [Local Zone Compute - Funktionen, Kapazitäten und Grenzen](/pages/public_cloud/compute/local-zones-capabilities-limits).
 
 
 **Globale Regionen:**
