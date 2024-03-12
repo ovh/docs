@@ -13,3 +13,9 @@ To download part of an object, you must use additional parameters to specify whi
 ```bash
 user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range bytes=0-500 object_part
 ```
+# Using MPUs
+
+You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if transmission of any part fails. After you complete the upload of all parts, OVHcloud Object Storage puts the pieces together and rebuilds the object.
+
+> ✔️: **IMPORTANT** : You should consider using multipart uploads for objects > 100MB
+> 
