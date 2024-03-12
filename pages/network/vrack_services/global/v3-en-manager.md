@@ -112,6 +112,7 @@ In this article, we also present the actions that can be carried out via the scr
 
 ## Overview
 ### When you don't have any network configuration
+
 ## When you have a network configuration
 
 ## Network Configyration
@@ -123,6 +124,26 @@ In this article, we also present the actions that can be carried out via the scr
 ## Remove Service Endpoint
 ### steps
 
+
+> [!tabs]
+> 1st tab title
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
+>> >
+> 2nd tab title
+>> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a placerat nisl. Nullam nisl libero, volutpat ut est vitae, porta sodales lacus. Nullam mattis in quam ut gravida.<br>
+>> Morbi suscipit molestie lacus, sit amet commodo enim tristique malesuada. Maecenas ultricies tortor eu erat pellentesque ultrices.<br><br>
+>>![email](images/email-password-exchange01.png){.thumbnail}<br>
+> 3rd tab title
+>> ```console
+>> your code
+>> ``
+
+> [!api]
+>
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
+>
 
 
 
