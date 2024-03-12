@@ -62,14 +62,11 @@ Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Va
 > Consulte a [lista de endereços IP dos clusters e alojamento Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) para encontrar o endereço IP específico do CDN do seu cluster.
 
 **Porque não posso beneficiar do IP geolocalizado com a opção CDN?**
+
 O CDN utiliza o princípio dos IP anycast. Não recorrerá ao mesmo servidor em função da sua geolocalização, o que é extremamente eficaz para reduzir o tempo de carregamento dos seus ficheiros estáticos. A geolocalização do endereço IP é, portanto, inútil. <br>
 No que diz respeito ao SEO (referenciamento nos motores de pesquisa), a velocidade de apresentação do seu website é mais importante do que a geolocalização do endereço IP do seu alojamento.
 
 ### Gerir o Shared CDN 
-
-> [!primary]
-> 
-> A opção Shared CDN já está incluída nas ofertas de alojamento web Performance ou está disponível na encomenda desde 19/11/20. Para as versões mais antigas, consulte o parágrafo [Gerir o seu CDN (versão histórica)](#cdnbusiness).
 
 #### Limpar a cache do Shared CDN
 
@@ -136,11 +133,7 @@ Depois de configurar as regras e selecionar as opções, clique em `Aplicar conf
 Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e depois em `Alterar o CDN`{.action}. 
 
 > [!primary]
->
 > As opções apresentadas abaixo requerem a subscrição do [CDN security](https://www.ovhcloud.com/pt/web-hosting/options/cdn/) ou do [CDN Advanced](https://www.ovhcloud.com/pt/web-hosting/options/cdn/).
->
-
-Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e depois `Alterar o CDN`{.action}.
 
 - **Cross-Origin Resource Sharing (CORS)**: Indique na lista os domínios externos que serão autorizados a aceder aos recursos do seu website para os partilhar.
 
@@ -262,20 +255,6 @@ No separador `Multisite`{.action} do seu alojamento, abaixo da tabela, pode visu
 
 ![CDN](images/statistics.png){.thumbnail}
 
-### Gerir o seu CDN Business <a name="cdnbusiness"></a>
-
-> [!primary]
->
-> A opção CDN já está incluída nas ofertas de alojamento web Performance ou nas ofertas encomendadas antes de 19/11/2020.
-
-#### Esvaziar a cache do CDN
-
-É por vezes útil esvaziar a cache do CDN, nomeadamente sempre que modifica os seus ficheiros estáticos. Por exemplo, quando realiza uma nova versão do seu site. Neste caso, pode esvaziar a cache do CDN na sua totalidade.
-
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Limpar a cache`{.action}.
-
-![CDN](images/clear-cache.png){.thumbnail}
-
 ### Como colocar em cache os meus ficheiros no CDN?
 
 **Com CMS**
@@ -297,6 +276,7 @@ Mesmo que não utilize um CMS, poderá beneficiar da cache do CDN. Para isso, de
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
+
 > [!warning]
 >
 > A colocação em cache utilizando headers HTTP permite fazê-lo no CDN, mas também no navegador dos seus utilizadores. Assim, para evitar que os seus visitantes não visualizem uma versão em cache demasiado antiga, é recomendada a alteração dos nomes dos ficheiros a cada nova versão.
