@@ -60,7 +60,6 @@ Haken Sie "CDN aktivieren" an, klicken Sie auf `Weiter`{.action} und dann auf `B
 > Wenn dem Webhosting unter `Multisite`{.action} eine externe Domain hinzugefügt wurde, müssen Sie die IP-Adresse des CDN Ihres Hostings in der DNS-Zone des Domainnamens angeben.
 >
 > Im [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) finden Sie die spezifische IP-Adresse des CDN Ihres Clusters.
-
  
 **Warum kann ich mit der CDN-Option nicht von geolokalisierten IPs profitieren?**    
 
@@ -69,15 +68,11 @@ Bezüglich SEO (Suchmaschinenoptimierung) ist die Ladegeschwindigkeit Ihrer Webs
 
 ### Shared CDN verwalten 
 
-> [!primary]
-> 
-> Die Shared CDN-Option ist bereits in den Webhosting-Angeboten der Reihe "Performance" enthalten und seit dem 19.11.20 zur Bestellung verfügbar. Für ältere Versionen lesen Sie den Abschnitt "[CDN Business verwalten](#cdnbusiness)".
-
 #### Den Shared CDN-Cache leeren
 
 Es ist manchmal nützlich, den CDN-Cache zu leeren, insbesondere, wenn Sie Ihre statischen Dateien ändern. Dies ist zum Beispiel der Fall, wenn Sie eine neue Version Ihrer Webseite erstellt haben. Sie können dann den CDN-Cache für jeden Ihrer Multisite-Einträge leeren.
 
-Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN leeren`{.action}. 
+Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN leeren`{.action}.
 
 ![CDN](images/sharedcdn-clear-cache.png){.thumbnail}
 
@@ -348,7 +343,6 @@ X-Cacheable: Cacheable
 Accept-Ranges: bytes
 Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
-
 ```
 
 Die Ausgaben vom Typ "X-CDN" bestätigen, dass Ihr CDN funktioniert.
