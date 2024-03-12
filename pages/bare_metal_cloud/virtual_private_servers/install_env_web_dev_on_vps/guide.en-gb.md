@@ -1,6 +1,6 @@
 ---
-title: 'Installing a web development environment on a VPS or a dedicated server'
-excerpt: 'Find out how to install a web development environment on a VPS or an OVHcloud dedicated server'
+title: "How to install a web development environment on a VPS or a dedicated server"
+excerpt: "Find out how to install a web development environment on a VPS or an OVHcloud dedicated server"
 updated: 2024-03-11
 ---
 
@@ -15,16 +15,15 @@ If you would like to install a CMS (**C**ontent **M**anagement **S**ystem) on yo
 **Find out how to manually install a web development environment on an OVHcloud VPS or dedicated server.**
 
 > [!warning]
+> This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
->
-> We offer this tutorial to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. More information in the [Go further](#gofurther) section of this tutorial.
+> We recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- You must have a [VPS] solution (https://www.ovhcloud.com/en-gb/vps/) or a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- administrative (sudo) access to your server via SSH
+- A [VPS] solution (https://www.ovhcloud.com/en-gb/vps/) or a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Administrative (sudo) access to your server via SSH
 
 ## Instructions
 
@@ -35,13 +34,13 @@ Log in to your VPS via SSH with your username and password.
 Install PHP:
 
 ```sh
-~$ sudo apt install php php-cli php-mysql php-xml php-gd php-curl -y
+sudo apt install php php-cli php-mysql php-xml php-gd php-curl -y
 ```
 
 To check that PHP is installed properly, enter the following command:
 
 ```sh
-~$ sudo php -v
+sudo php -v
 ```
 
 If PHP is correctly installed, you should see this message:
@@ -58,13 +57,13 @@ If PHP is correctly installed, you should see this message:
 Install Nginx:
 
 ```sh
-~$ sudo apt install nginx -y
+sudo apt install nginx -y
 ```
 
 To verify that Nginx is installed properly, enter the following command:
 
 ```sh
-~$ sudo nginx -v
+sudo nginx -v
 ```
 
 If Nginx is correctly installed, you should see a message like this:
@@ -83,13 +82,13 @@ If you have any queries, please refer to [Nginx official website](https://www.ng
 Install MariaDB:
 
 ```sh
-~$ sudo apt install mariadb-server -y
+sudo apt install mariadb-server -y
 ```
 
 Secure and configure MariaDB:
 
 ```sh
-~$ sudo mysql_secure_installation
+sudo mysql_secure_installation
 ```
 
 Set a password for your DBMS and follow the instructions on the screen. Once the MariaDB installation is complete, you should see the following message:
@@ -98,7 +97,7 @@ Set a password for your DBMS and follow the instructions on the screen. Once the
 
 ### Conclusion
 
-You have just installed PHP, an Nginx server and MariaDB DBMS. You now have a functional web development environment on your VPS or OVHcloud dedicated server. If you wish, you can now install the CMS (**C**ontent **M**anagement **S**ystem) of your choice, such as WordPress. To find out more, please read the guides “[Installing WordPress with WP-CLI on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)” and “[Installing WordPress with Docker on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)”.
+You have just installed PHP, an Nginx server and MariaDB DBMS. You now have a functional web development environment on your VPS or OVHcloud dedicated server. If you wish, you can now install the CMS (**C**ontent **M**anagement **S**ystem) of your choice, such as WordPress. To find out more, please read the guides “[How to install WordPress with WP-CLI on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)” and “[How to install WordPress with Docker on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)”.
 
 For some general tips on securing a GNU/Linux-based server, see our guides:
 
@@ -107,9 +106,9 @@ For some general tips on securing a GNU/Linux-based server, see our guides:
 
 ## Go further <a name="go-further"></a>
 
-[Installing WordPress with WP-CLI on a VPS or dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
+[How to install WordPress with WP-CLI on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
 
-[Installing WordPress with Docker on a VPS or dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
+[How to install WordPress with Docker on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
 
 [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
