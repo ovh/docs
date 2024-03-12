@@ -257,20 +257,6 @@ Dans l'onglet `Multisite`{.action} de votre hébergement, sous le tableau, vous 
 
 ![CDN](images/statistics.png){.thumbnail}
 
-### Gérer votre CDN Business <a name="cdnbusiness"></a>
-
-> [!primary]
-> 
-> L'option CDN est déjà incluse dans les offres d'hébergement web Performance ou les offres commandées avant le 19/11/2020.
-
-#### Vider le cache du CDN
-
-Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple lors de la mise en production d'une nouvelle version de votre site. Dans ce cas, vous pouvez vider totalement le cache du CDN.
-
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Vider le cache`{.action}.
-
-![CDN](images/clear-cache.png){.thumbnail}
-
 ### Comment mettre en cache mes fichiers dans le CDN ?
 
 **En utilisant un CMS**
