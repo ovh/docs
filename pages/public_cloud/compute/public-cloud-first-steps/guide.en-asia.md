@@ -150,11 +150,6 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 ![add key](images/puttygen-04.png){.thumbnail}
 
-
-**Best practice**
-
-It is preferable to create a private network before creating an instance. For more information on creating a private network, see the [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) guide.
-
 ### Step 3: Creating an instance <a name="create-instance"></a>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
