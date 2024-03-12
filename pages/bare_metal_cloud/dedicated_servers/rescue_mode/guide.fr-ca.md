@@ -77,10 +77,10 @@ root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
-> 
-> Votre client SSH bloquera probablement la connexion en premier lieu, en raison d'une incompatibilité de l'empreinte ECDSA. Ceci est normal, car le mode rescue utilise son propre serveur SSH temporaire.
 >
-> Pour contourner ce problème, vous pouvez commenter l'empreinte de votre système habituel en ajoutant un `#` devant sa ligne dans le fichier *known_hosts*. Prenez soin de retirer ce caractère avant le redémarrage du serveur en mode normal.
+> Votre client SSH bloquera probablement la connexion dans un premier temps en raison d'une incompatibilité de l'empreinte ECDSA. Ceci est normal car le mode rescue utilise son propre serveur SSH temporaire.
+>
+> Une façon de contourner ce problème est de « commenter » l'empreinte de votre serveuren ajoutant un `#` devant sa ligne dans le fichier `known_hosts`. N’oubliez pas d’annuler cette modification avant de repasser le netboot en mode « normal ».<br>Vous pouvez également supprimer la ligne du fichier. Votre client SSH ajoutera alors une nouvelle entrée d'empreinte pour le serveur lorsque la connexion sera à nouveau établie. Si vous avez besoin d'instructions plus détaillées, reportez-vous à notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login) ».
 >
 
 La plupart des modifications apportées à votre serveur via SSH en mode rescue nécessitent le montage d’une partition. En effet, ce mode possède son propre système de fichiers temporaires. Par conséquent, les modifications apportées au système de fichiers en mode rescue seront perdues lors du redémarrage du serveur en mode normal.

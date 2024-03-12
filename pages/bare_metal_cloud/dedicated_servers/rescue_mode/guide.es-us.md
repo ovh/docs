@@ -1,6 +1,6 @@
 ---
-title: 'Activar y utilizar el modo de rescate'
-excerpt: 'Cómo activar y utilizar el modo de rescate en un servidor dedicado'
+title: "Activar y utilizar el modo de rescate"
+excerpt: "Cómo utilizar el modo de rescate de OVHcloud para solucionar los problemas de un servidor dedicado"
 updated: 2024-01-09
 ---
 
@@ -10,25 +10,25 @@ updated: 2024-01-09
 
 ## Objetivo
 
-El modo *rescue* o modo de rescate permite arrancar un servidor dedicado sobre un sistema operativo temporal con el objetivo de diagnosticar y resolver problemas.
+El modo de rescate es una herramienta proporcionada por OVHcloud que le permite arrancar en un sistema operativo temporal con el objetivo de diagnosticar y resolver los problemas en su servidor.
 
-El modo de rescate se adapta generalmente a las siguientes tareas:
+El modo de rescate suele ser adecuado para las siguientes tareas:
 
-- Restauración de la contraseña root
+- [Restablecimiento de contraseña de usuario](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnóstico de problemas de red
 - Reparación de un sistema operativo defectuoso
 - Corrección de una configuración incorrecta de un cortafuegos de software
 - Prueba del rendimiento de los discos
 - Prueba del procesador y la memoria RAM
 
-Si todavía no dispone de backups recientes, la copia de seguridad de sus datos debe ser la primera etapa del modo de recuperación.
-
 > [!warning]
 >
-> Si tiene servicios en producción en su VPS, el modo de rescate los interrumpe mientras la máquina no se haya reiniciado en modo normal.
-> 
+> Asegúrese de realizar una copia de seguridad de sus datos si aún no dispone de copias de seguridad recientes.
+>
+> Si tiene servicios en producción en su servidor, el modo de rescate los interrumpirá hasta que la máquina se haya reiniciado en modo normal.
+>
 
-**Esta guía explica cómo activar y utilizar el modo de rescate en un servidor dedicado.**
+**Esta guía explica cómo reiniciar un servidor en modo de rescate y montar particiones.**
 
 ## Requisitos
 
@@ -79,7 +79,7 @@ Una vez reiniciado el servidor, recibirá por correo electrónico las claves de 
 
 A continuación, acceda al servidor en línea de comandos o a través de una herramienta [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizando la contraseña root generada para el modo de rescate.
 
-por ejemplo,
+Por ejemplo:
 
 ```bash
 ssh root@ns3956771.ip-169-254-10.eu
@@ -87,15 +87,15 @@ root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
-> 
-> Es probable que su cliente SSH bloquee la conexión en primer lugar, debido a la incompatibilidad de la huella ECDSA. Esto es normal, ya que el modo de rescate utiliza su propio servidor SSH temporal.
 >
-> Para evitar este problema, puede comentar la huella de su sistema habitual añadiendo una `#` delante de su línea en el archivo *known_hosts*. Elimine este carácter antes de reiniciar el servidor en modo normal.
+> Es probable que el cliente SSH bloquee la conexión en un primer momento debido a la incompatibilidad de la huella digital ECDSA. Esto es normal porque el modo de rescate utiliza su propio servidor SSH temporal.
+>
+> Una forma de evitar este problema es «comentar» la huella digital de su servidor añadiendo un `#` delante de su línea en el archivo `known_hosts`. No olvide deshacer este cambio antes de volver a poner el netboot en modo «normal».<br>También puede eliminar la línea del archivo. El cliente SSH añadirá una nueva huella digital para el servidor cuando vuelva a conectarse. Si necesita instrucciones más detalladas, consulte nuestra guía [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login).
 >
 
 #### Montaje de sus particiones
 
-Para realizar la mayoría de los cambios en el servidor por SSH en modo de rescate, es necesario montar una partición. para realizar la mayoría de los cambios en este modo es necesario montar previamente una partición en el servidor. De lo contrario, los cambios que realizase en el sistema de archivos en modo de rescate se perderían al reiniciar el servidor en modo normal.
+A menos que configure los discos del servidor de una forma que requiera que se desvinculen (*unmounted*), primero debe montar la partición del sistema.
 
 Para montar las particiones, utilice el comando `mount` por SSH. Previamente deberá mostrar la lista de las particiones para conocer el nombre de la partición que quiera montar. A continuación ofrecemos algunos ejemplos de código:
 

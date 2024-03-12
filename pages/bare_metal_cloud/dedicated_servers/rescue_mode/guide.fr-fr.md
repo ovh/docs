@@ -1,30 +1,30 @@
 ---
-title: 'Activer et utiliser le mode rescue'
-excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
+title: "Activer et utiliser le mode rescue"
+excerpt: "Découvrez comment utiliser le mode rescue OVHcloud pour dépanner votre serveur dédié"
 updated: 2024-01-09
 ---
 
 ## Objectif
 
-Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarrer sur un système d’exploitation temporaire, dans le but de diagnostiquer et de résoudre les problèmes.
+Le mode Rescue est un outil fourni par OVHcloud qui vous permet de démarrer sur un système d'exploitation temporaire dans le but de diagnostiquer et de résoudre les problèmes sur votre serveur.
 
 Le mode rescue est généralement adapté aux tâches suivantes :
 
-- Réinitialisation du mot de passe root
+- [Réinitialisation du mot de passe de l'utilisateur](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnostic des problèmes réseau
 - Réparation d'un système d'exploitation défectueux
 - Correction d'une configuration incorrecte d'un pare-feu logiciel
 - Test des performances des disques
 - Test du processeur et de la mémoire RAM
 
-Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegardes récentes.
-
 > [!warning]
 >
-> Si vous avez des services en production sur votre VPS, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
+> Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegardes récentes.
+>
+> Si vous avez des services en production sur votre serveur, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
 > 
 
-**Découvrez comment activer et utiliser le mode rescue de votre serveur.**
+**Ce guide vous explique comment redémarrer un serveur en mode rescue et monter des partitions.**
 
 ## Prérequis
 
@@ -77,15 +77,15 @@ root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
-> 
-> Votre client SSH bloquera probablement la connexion en premier lieu, en raison d'une incompatibilité de l'empreinte ECDSA. Ceci est normal, car le mode rescue utilise son propre serveur SSH temporaire.
 >
-> Pour contourner ce problème, vous pouvez commenter l'empreinte de votre système habituel en ajoutant un `#` devant sa ligne dans le fichier *known_hosts*. Prenez soin de retirer ce caractère avant le redémarrage du serveur en mode normal.
+> Votre client SSH bloquera probablement la connexion dans un premier temps en raison d'une incompatibilité de l'empreinte ECDSA. Ceci est normal car le mode rescue utilise son propre serveur SSH temporaire.
 >
-
-La plupart des modifications apportées à votre serveur via SSH en mode rescue nécessitent le montage d’une partition. En effet, ce mode possède son propre système de fichiers temporaires. Par conséquent, les modifications apportées au système de fichiers en mode rescue seront perdues lors du redémarrage du serveur en mode normal.
+> Une façon de contourner ce problème est de « commenter » l'empreinte de votre serveur en ajoutant un `#` devant sa ligne dans le fichier `known_hosts`. N’oubliez pas d’annuler cette modification avant de repasser le netboot en mode « normal ».<br>Vous pouvez également supprimer la ligne du fichier. Votre client SSH ajoutera alors une nouvelle entrée d'empreinte pour le serveur lorsque la connexion sera à nouveau établie. Si vous avez besoin d'instructions plus détaillées, reportez-vous à notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login) ».
+>
 
 #### Montage des partitions
+
+À moins que vous configuriez les disques du serveur d'une manière qui nécessite qu'ils soient détachés (*unmounted*), vous devez d'abord monter la partition système.
 
 Le montage des partitions est réalisé à l’aide de la commande `mount` en SSH. Vous devez préalablement lister vos partitions, afin de pouvoir récupérer le nom de celle que vous souhaitez monter. Vous pouvez vous référer aux exemples de code suivants :
 

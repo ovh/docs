@@ -770,7 +770,8 @@ This rule indicates that the `ACCEPT_CONDITIONS` configuration is mandatory (con
 
 #### Example on a contact
 
-Let's now take the more concrete example explained at the beginning of this <!-- prettier-ignore -->
+Let's now take the more concrete example explained at the beginning of this.
+
 > [!tabs]
 > Hide
 >> Click "Show" to see the JSON
