@@ -376,7 +376,7 @@ Reguła filtrowania w Zimbra składa się z 4 elementów:
 
 ![Zimbra - filtry](images/zimbra-filters.png){.thumbnail}
 
-> Przykład nr 1: Jeśli pole **Temat (1)** wiadomości e-mail **zawiera (2)** słowo `invoice`**(3)**, **przenieś na (4)** adres `billing@example.com`.
+> Przykład: Jeśli pole **Temat (1)** wiadomości e-mail **zawiera (2)** słowo `invoice`**(3)**, **przenieś na (4)** adres `billing@example.com`.
 
 W kolejnych podrozdziałach znajdziesz szczegółowe informacje na temat każdego elementu reguły filtrowania.
 

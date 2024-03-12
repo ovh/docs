@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - Como criar um servidor Minecraft num VPS ou num servidor dedicado'
+title: 'Como criar um servidor Minecraft num VPS ou num servidor dedicado'
 excerpt: 'Saiba como instalar o seu próprio servidor Minecraft'
 updated: 2021-06-29
 ---

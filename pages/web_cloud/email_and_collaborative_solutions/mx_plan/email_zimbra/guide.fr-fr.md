@@ -372,7 +372,7 @@ Une règle de filtrage dans Zimbra est composée de 4 éléments :
 
 ![Zimbra - filtres](images/zimbra-filters.png){.thumbnail}
 
-> Exemple n°1 : Si le champ **Objet (1)** de l'e-mail **contient (2)** le mot `facture`**(3)**, alors **transférer à (4)** l'adresse `comptabilite@example.com`.
+> Exemple : Si le champ **Objet (1)** de l'e-mail **contient (2)** le mot `facture`**(3)**, alors **transférer à (4)** l'adresse `comptabilite@example.com`.
 
 Dans les sous-chapitres qui suivent, vous trouverez le détail de chacun des éléments d'une règle de filtrage.
 

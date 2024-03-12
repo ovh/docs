@@ -63,7 +63,7 @@ OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuz
 
 ### In Zimbra Webmail einloggen <a name="login"></a>
 
-Gehen Sie auf die Seite <https://www.ovh.com/fr/mail/>. Geben Sie Ihre E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `AnmeldenQ`{.action}.
+Gehen Sie auf die Seite <https://www.ovh.com/fr/mail/>. Geben Sie Ihre E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Anmelden`{.action}.
 
 ![Zimbra - Anmeldung](images/ovhcloud-login-webmail.png){.thumbnail}
 
@@ -376,7 +376,7 @@ Eine Filterregel in Zimbra besteht aus 4 Elementen:
 
 ![Zimbra - Filter](images/zimbra-filters.png){.thumbnail}
 
-> Beispiel 1: Wenn das Feld **Betreff (1)** in der E-Mail das Wort `invoice` **(3)** **enthält (2)**, dann **weiterleiten an (4)** die Adresse `billing@example.com`.
+> Beispiel: Wenn das Feld **Betreff (1)** in der E-Mail das Wort `invoice` **(3)** **enthält (2)**, dann **weiterleiten an (4)** die Adresse `billing@example.com`.
 
 In den folgenden Abschnitten finden Sie Details zu den Elementen einer Filterregel.
 
@@ -413,7 +413,7 @@ Anhand des zuvor festgelegten Vergleichsfelds bestimmt der Vergleichsoperator di
 >
 > Platzhalterzeichen (*Wildcards*) können im Eingabefeld eingegebn werden, wobei der Vergleichsoperator "**Entspricht der Platzhalter-Bedingung / Entspricht nicht der Platzhalter-Bedingung**" verwendet wird. Die verfügbaren Wildcards sind `*` und `?`.
 >
-> - Ein `*` steht für eine beliebige Anzahl von Zeichen eines beliebigen Typs, einschließlich Leerzeichen.<br><br> Die Suchzeichenfolge "blue\*house" entspräche also unter anderem "blue house", "houses" oder "blue wooden house", aber nicht "lightning blue house". <br><br> Die Suchzeichenfolge "w\*house", ergäbe die Übereinstimmungen "white house", "watch TV in your house", etc., aber nicht "watch TV in your house with a friend".
+> - Ein `*` steht für eine beliebige Anzahl von Zeichen eines beliebigen Typs, einschließlich Leerzeichen.<br><br> Die Suchzeichenfolge "blue\*house" entspräche also unter anderem "blue house", "houses" oder "blue wooden house", aber nicht "lightning blue house". <br><br> Die Suchzeichenfolge "w\*house" ergäbe die Übereinstimmungen "white house", "watch TV in your house", etc., aber nicht "watch TV in your house with a friend".
 >
 > - Ein `?` steht für genau ein Zeichen.<br><br>Die Suchzeichenfolge "blue?house" ergäbe z.B. die Übereinstimmungen "blue house", "blue-house" und "blue_house".
 >

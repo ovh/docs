@@ -371,7 +371,7 @@ A filtering rule in Zimbra is made up of 4 elements:
 
 ![Zimbra - filters](images/zimbra-filters.png){.thumbnail}
 
-> Example 1: If the **Subject (1)** field of the email **contains (2)** the word `invoice` **(3)**, then **Forward to (4)** `billing@example.com`.
+> Example : If the **Subject (1)** field of the email **contains (2)** the word `invoice` **(3)**, then **Forward to (4)** `billing@example.com`.
 
 In the following paragraphs, you will find the details of each of the elements of a filtering rule.
 
