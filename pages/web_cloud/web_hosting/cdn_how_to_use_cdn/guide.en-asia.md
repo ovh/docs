@@ -53,11 +53,12 @@ Select the "Activate the CDN" option, click `Next`{.action} and then `Confirm`{.
 
 > [!warning]
 >
-> If  an external (not registered with OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
+> If  an external (not registered with OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.
+>
 > Check the [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) to find the specific IP address for your cluster’s CDN.
 
-**Why is it not possible to use a geolocated IP with the CDN option?** <br>
-<br>
+**Why is it not possible to use a geolocated IP with the CDN option?**
+
 The CDN uses the principle of "IP Anycast". You do not request the same server depending on your geolocation, which is very efficient for reducing the loading time of your static files. Therefore, a geolocated IP address is not needed. <br>
 In terms of SEO (search engine optimisation), the website loading speed is more important that the geolocation of the IP addresses.
 
@@ -275,6 +276,7 @@ If you are not using a CMS, you can also use the CDN cache. To do this, you must
 > [!warning]
 >
 > Caching by using HTTP headers results in caching within the CDN but also within your users’ browsers. Therefore, to prevent your visitors from seeing an older cached version, it is recommended that you rename the files with every new version.
+>
 
 ### Disabling the CDN option for a website
 
@@ -312,6 +314,7 @@ Click `Confirm`{.action} to continue with the cancellation.
 > [!warning]
 >
 > You will receive an email containing the CDN closure procedure. Please follow the instructions in the email in order to confirm or cancel the request.
+>
 
 ### Checking that your CDN is working
 
@@ -337,6 +340,7 @@ Accept-Ranges: bytes
 Transfer-Encoding: chunked
 X-IPLB-Instance: 12345
 ```
+
 The “*X-CDN*” headers confirm that the domain is running through the CDN.
 
 If the domain name is not running through the CDN, you will receive a result similar to the following:
