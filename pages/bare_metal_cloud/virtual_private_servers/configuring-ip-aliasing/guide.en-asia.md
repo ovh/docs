@@ -228,7 +228,7 @@ For each Additional IP to be configured, we create a seperate configuration file
 #### Step 1: Determine the interface
 
 ```bash
-~# ip a
+ip a
 ```
 
 #### Step 2: Create the configuration file
@@ -236,7 +236,7 @@ For each Additional IP to be configured, we create a seperate configuration file
 First, create the configuration file. Replace `NETWORK_INTERFACE:ID` with your own values.
 
 ```bash
-~# sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
 ```
 
 Next, edit the file with the content below, replacing `NETWORK_INTERFACE:ID`, and `ADDITIONAL_IP` with your own values:
@@ -287,7 +287,108 @@ sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /
 
 In case of a mistake, you will be able to revert the changes, using the commands below:
 
+```bash
 sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+#### Step 2: Edit the config file
+
+> [!primary]
+> Please note that the name of the network file in our example may differ from yours. Please adapt the commands to your file name.
+> 
+
+```bash
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
+
+```console
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+If you have two Additional IPs to configure, the configuration should look like this:
+
+```console
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+Configuration example:
+
+```console
+[ipv4]
+method=auto
+may-fail=false
+address1=203.0.113.0/32
+```
+
+#### Step 3: Restart the interface
+
+You now need to restart your interface:
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+### cPanel (on Alma Linux)
+
+#### Step 1: Access the WHM IP management section
+
+In the WHM control panel, click on `IP Functions`{.action} and select `Add a New IP Address`{.action} in the left-hand sidebar.
+
+![Add new IP](images/Cpanel-1.png){.thumbnail}
+
+#### Step 2: Add the Additional IP information
+
+Enter your Additional IP in the form `xxx.xxx.xxx.xxx` into the field “New IP or IP range to add”. 
+
+Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
+
+![enter new IP information](images/Cpanel-2.png){.thumbnail}
+
+> [!warning]
+>
+> Please note that if you have more than one IP to configure on the same block and you add them all at once, the WHM system will force you to use the subnet mask `255.255.255.0`. We do not recommend using this configuration. Instead, you need to add each IP individually in order to use the proper subnet mask `255.255.255.255`.
+> 
+
+#### Step 3: Check the current IP configuration
+
+Back in the section `IP Functions`{.action}, click on `Show or Delete Current IP Addresses`{.action} to verify that the Additional IP address was added correctly.
+
+![check configured IP](images/Cpanel-3.png){.thumbnail}
+
+### Plesk
+
+#### Step 1: Access the Plesk IP management section
+
+In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
+
+![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+
+Click on `IP Addresses`{.action} under **Tools & Resources**.
+
+#### Step 2: Add the additional IP information
+
+In this section, click on the button `Add IP Address`{.action}.
+
+![add ip information](images/pleskip2-2.png){.thumbnail}
+
+Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
+
+![add ip information](images/pleskip3-3.png){.thumbnail}
+
+#### Step 3: Check the current IP configuration
+
+Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
+
+![current IP configuration](images/pleskip4-4.png){.thumbnail}
 
 ### Windows Server 2016
 
@@ -338,67 +439,6 @@ To restart it, right-click on it again and then select `Enable`{.action}.
 Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
 
 ![check current network configuration](images/image8-8.png){.thumbnail}
-
-### cPanel (CentOS 7) / Red Hat derivatives
-
-#### Step 1: Edit the network configuration file
-
-You can verify your network interface name with this command:
-
-```bash
-ip a
-```
-
-Open the network configuration file for editing:
-
-```bash
-sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
-```
-
-Then add these lines:
-
-```bash
-DEVICE=NETWORK_INTERFACE:ID
-BOOTPROTO=static
-IPADDR=ADDITIONAL_IP
-NETMASK=255.255.255.255
-BROADCAST=ADDITIONAL_IP
-ONBOOT=yes
-```
-
-#### Step 2: Restart the interface
-
-Apply the changes with the following command:
-
-```bash
-sudo systemctl restart networking
-```
-
-### Plesk
-
-#### Step 1: Access the Plesk IP management section
-
-In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
-
-![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
-
-Click on `IP Addresses`{.action} under **Tools & Resources**.
-
-#### Step 2: Add the additional IP information
-
-In this section, click on the button `Add IP Address`{.action}.
-
-![add ip information](images/pleskip2-2.png){.thumbnail}
-
-Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
-
-![add ip information](images/pleskip3-3.png){.thumbnail}
-
-#### Step 3: Check the current IP configuration
-
-Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
-
-![current IP configuration](images/pleskip4-4.png){.thumbnail}
 
 ### Troubleshooting
 
