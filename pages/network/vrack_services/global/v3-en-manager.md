@@ -16,7 +16,7 @@ In this article, we also present the actions that can be carried out via the scr
 
 
 
-# Product configuration experience
+# With Vrack Services as entry point   
 
 <details>
   <summary><b>VRack Service Creation</b> </summary>
@@ -107,6 +107,21 @@ In this article, we also present the actions that can be carried out via the scr
 
 
 
+
+# With Enterprise File Storage as entry point   
+
+## Overview
+### When you don't have any network configuration
+## When you have a network configuration
+
+## Network Configyration
+### steps
+
+## Statuses
+### list of all statuses
+
+## Remove Service Endpoint
+### steps
 
 
 
