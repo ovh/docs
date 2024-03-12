@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2024-01-08
+updated: 2024-03-11
 ---
 
 ## Objective
@@ -149,6 +149,11 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 Click on the `Add an SSH key`{.action} button. In the new window, enter a name for the key and paste your key string (copied in [Step 1](./#step-1-creating-ssh-keys) from the public key file or the PuTTYgen window) into the "Key" field. Confirm by clicking `Add`{.action}.
 
 ![add key](images/puttygen-04.png){.thumbnail}
+
+
+**Best practice**
+
+It is preferable to create a private network before creating an instance. For more information on creating a private network, see the [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) guide.
 
 ### Step 3: Creating an instance <a name="create-instance"></a>
 
