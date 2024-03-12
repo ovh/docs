@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic"
 excerpt: "Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic"
-updated: 2023-11-03
+updated: 2024-03-12
 ---
 
 ## Objectif
