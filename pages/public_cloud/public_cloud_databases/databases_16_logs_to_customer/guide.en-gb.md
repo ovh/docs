@@ -41,19 +41,11 @@ body : {
 
 Then logs will start to be forwarded to your LDP stream.
 
-## Find logs in Graylog
+### Find logs in Graylog
 
 To find logs of your service in your graylogs stream you can use following graylog queries :
 
-### MongoDB Discovery
-
-Query: `kubernetes_namespace_name: "<HostID>"`
-
-You can find this `HostID` in your manager :
-- In `Login information` switch `Service` to `mongodb`
-- Now you can see the `Host` field with the format `<HostID>.database.cloud.ovh.net`
-
-### MongoDB Production and Advanced
+#### MongoDB
 
 Query: `cluster: "<HostID>"`
 
@@ -61,7 +53,7 @@ You can find this `HostID` in your manager :
 - In `Login information` switch `Service` to `mongodb`
 - Now you can see the `Host` field with the format `<HostID>.database.cloud.ovh.net`
 
-### Other Engines
+#### Other Engines
 
 Query: `clusterID: "<Engine>-<HostID>"`
 
