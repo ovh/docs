@@ -1,6 +1,6 @@
 ---
-title: Local Zone Compute - Features, Capabilities and Limitations
-excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
+title: Local Zone Compute - Funcionalidades, capacidades y límites
+excerpt: Descubra las funcionalidades, capacidades y límites actuales de las instancias de Local Zone
 updated: 2024-02-21
 ---
 
