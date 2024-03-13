@@ -225,7 +225,7 @@ Command usage will be similar for CentOS and Fedora.
 **Can I enter a specific version for using NFSv4?**
 
 As before, your NFS client will try to connect directly to the highest version supported by it.
-If you wish, you can choose between NFSv4.1 and NFSv4.2
+If you wish, you can choose between NFSv4.1 and NFSv4.2.
 
 To force the use of NFSv4.1, you must use the following command:
 
