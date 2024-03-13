@@ -1,7 +1,7 @@
 ---
 title: 'Installer un environnement de développement web sur un VPS ou un serveur dédié'
 excerpt: 'Découvrez comment installer un environnement de développement web sur un VPS ou un serveur dédié OVHcloud'
-updated: 2024-03-11
+updated: 2024-03-13
 ---
 
 ## Objectif

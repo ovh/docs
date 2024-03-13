@@ -1,7 +1,7 @@
 ---
 title: "How to install a web development environment on a VPS or a dedicated server"
 excerpt: "Find out how to install a web development environment on a VPS or an OVHcloud dedicated server"
-updated: 2024-03-11
+updated: 2024-03-13
 ---
 
 ## Objective

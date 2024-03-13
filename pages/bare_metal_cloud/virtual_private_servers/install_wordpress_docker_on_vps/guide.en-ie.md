@@ -1,7 +1,7 @@
 ---
 title: "How to install WordPress with Docker on a VPS or a dedicated server"
 excerpt: "Find out how to quickly install WordPress with Docker on a VPS or an OVHcloud dedicated server"
-updated: 2024-03-11
+updated: 2024-03-13
 ---
 
 ## Objective
@@ -13,12 +13,12 @@ Installing WordPress on a VPS or dedicated server has several advantages, such a
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> We recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> We recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-gb/vps/) solution  or a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [VPS](https://www.ovhcloud.com/en-ie/vps/) solution  or a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Administrative (sudo) access to your server via SSH
 - A domain name (registered with OVHcloud or another registrar)
 
@@ -269,6 +269,6 @@ For some general tips on securing a GNU/Linux-based server, see our guides:
 
 [Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Installer WordPress avec Docker sur un VPS ou un serveur dédié'
 excerpt: 'Découvrez comment installer WordPress rapidement avec Docker sur un VPS ou un serveur dédié OVHcloud'
-updated: 2024-03-11
+updated: 2024-03-13
 ---
 
 ## Objectif
