@@ -135,3 +135,5 @@ Size of each chunk of a multipart upload. Files bigger than SIZE are automatical
 ```bash
 $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 ```
+
+For more information on s3cmd, check the official documentation,["here"](https://s3tools.org/usage).
