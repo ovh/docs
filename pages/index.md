@@ -644,6 +644,7 @@
             + [Upgrade your cluster service plan](public_cloud/public_cloud_databases/databases_14_upgrade_your_cluster_plan)
             + [Automated Backups](public_cloud/public_cloud_databases/databases_05_automated_backups)
             + [Maintenance operations](public_cloud/public_cloud_databases/databases_15_maintenances)
+            + [Logs to customer](public_cloud/public_cloud_databases/databases_16_logs_to_customer)
             + [Getting started with Kubernetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
             + [Cross Service Integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
         + [MongoDB](products/public-cloud-databases-mongodb)
