@@ -137,3 +137,32 @@ $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 ```
 
 For more information on s3cmd, check the official documentation,["here"](https://s3tools.org/usage).
+
+#### rclone ####
+
+_--s3-upload-cutoff=SIZE_
+
+Size threshold at which point rclone switches from single file upload to multipart upload
+
+_--s3-chunk-size=SIZE_
+
+Size of each chunk used in multipart uploads
+
+_--s3-upload-concurrency_
+
+Number of chunks uploaded concurrently
+
+<u> Example: </u>
+
+```bash
+$ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M testfile s3:test-bucket
+```
+
+For more information on rclone, check the official documentation ["here"](https://rclone.org/s3/).
+
+Increasing the number of concurrent requests
+
+
+Another way to improve throughput is to increase the number of concurrent requests.
+
+To customize the default value on the AWS cli, check ["this article"](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-optimise-sending-files?id=kb_article_view&sysparm_article=KB0047432).
