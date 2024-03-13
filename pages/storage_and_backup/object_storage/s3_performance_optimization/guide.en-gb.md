@@ -200,3 +200,57 @@ This logic can be summed up as follows:
 
 
 ![Schema 2](images/sharding2.png)
+
+### Prefix good practices
+
+You can optimize the I/Os on the cluster by taking advantage of the sharding mechanims described before.
+
+The main strategy is to keep the cardinality of the object keys to the left i.e using prefixes that allows the sharding to split incoming objects the most evenly as possible.
+
+Let's consider a use case where you would want to store logs in OVHcloud Object Storage.
+
+#### Scenario 1: bad practice by using the date as prefix : 
+
+List of objects:
+
+* 20240216/file01.log
+* 20240216/file02.log
+* 20240216/file03.log
+* ...
+* 20240217/file01.log
+* 20240217/file02.log
+* ...
+
+Assuming the threshold is 100, after the uploading of the 100th object, the sharding is triggerd to split the objects in 2 shards:
+
+* from 20240216/file01.log to 20240216/file100.log in the first shard
+* from 20240216/file101.log and beyond to a second shard
+
+This not optimal because since dates are incremental by nature, all new uploads will always be done on the 2nd shard which in turn will be split again after it reaches a critical size. Thus, all future write operations will always be performed on the latest shard created and the previous shards will get rarely accessed. Furthermore, you may experience some throttling as the sharding process occurs.
+
+
+![Schema 3](images/sharding3.png)
+
+Scenario 2: good practice by keeping the cardinality to the right
+
+List of objects:
+
+    server/apache/file20240216.log
+    server/apache/file20240217.log
+    server/apache/file20240218.log
+    ...
+    db/mongodb/file20240216.log
+    db/mongodb/file20240217.log
+    ...
+
+Assuming the threshold is 100, after the uploading of the 100th object, the sharding is triggerd to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
+
+![Schema 4](images/sharding4.png)
+
+## Optimize ramp up time
+
+When you upload a very large number of objects at once, you trigger the sharding mechanism. As the sharding process occurs, you may experience some throttling.
+
+In order to avoid the reduced performance (503 SLOWDOWN errors), we recommand that you optimize your uploads by spreading your request over time. That spread does not have to be linear but it should give us enough time to better load balance your workload.
+
+A simple way to achieve that lies in better 503 slowdown errors management and error recovery : ramp up your uploads until you hit 503 errors and modulate your workload to accomodate the throttling until sharding is complete and then ramp up again.
