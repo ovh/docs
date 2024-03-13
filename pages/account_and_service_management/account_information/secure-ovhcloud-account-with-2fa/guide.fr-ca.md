@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser son compte OVHcloud avec la double authentification'
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification (2FA)'
-updated: 2024-03-12
+updated: 2024-03-14
 ---
 
 ## Objectif
@@ -64,10 +64,6 @@ Nous vous proposons trois méthodes différentes (cliquez sur les onglets ci-de
 >> À chaque tentative de connexion, vous pouvez saisir un des 10 codes à usage unique.
 >> Il est essentiel de toujours disposer d'au moins 1 code de secours restant. Pensez à les regénérer via votre espace client si vous les avez tous utilisés ou si vous les avez perdus.
 
-> [!primary]
->
-> La méthode par SMS n'est disponible que pour les comptes OVHcloud en Europe.
-
 ### Étape 1 - Activer votre première méthode de double authentification <a name="enabling-2fa"></a>
 
 Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur votre nom en haut à droite (1) puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
@@ -80,7 +76,7 @@ Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=got
 > Application Mobile
 >> Choisissez la méthode par application mobile et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
+>> ![2FA mobileapp](images/2024-003-otp-choice-ca.png){.thumbnail width="400"}<br>
 >> Un QR code est généré, scannez-le via votre application OTP. Si votre application OTP ne propose pas cette option, cliquez sur `Afficher le secret`{.action} pour afficher un code à renseigner dans l'application OTP.<br>
 >> Votre application génère alors un code à usage unique.
 >> Renseignez alors ce code dans le champ prévu à cet effet (à droite du QR code). Vous pouvez également ajouter une description pour cette méthode d'authentification.
@@ -90,7 +86,7 @@ Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=got
 > Clé de sécurité
 >> Choisissez la méthode par clé de sécurité et cliquez sur `Suivant`{.action}.
 >>
->> ![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
+>> ![2FA securitykey](images/2024-004-u2f-choice-ca.png){.thumbnail width="400"}<br>
 >> Branchez votre clé de sécurité lorsque cela vous est demandé. Si elle est équipée d'un bouton, appuyez sur celui-ci.
 >>
 >> ![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}
@@ -127,11 +123,19 @@ Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](https:/
 
 L'écran d'identification affiche la dernière méthode de double authentification utilisée ou renseignée. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-01.png){.thumbnail width="400"}
 
 Toutes les méthodes que vous avez activées apparaîtront alors, y compris la méthode des codes de secours.
 
-![2FA](images/2faloginchoice.png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-02.png){.thumbnail width="400"}
+
+En choisissant cette denière méthode, il vous suffit alors de renseigner l'un de vos codes de secours.
+
+![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+
+> [!primary]
+>
+> La méthode de double authentification par SMS n'est disponible que pour les comptes OVHcloud en Europe.
 
 ### Que faire si l'un de mes périphériques est perdu/volé ou cesse de fonctionner ? <a name="lost-device"></a>
 

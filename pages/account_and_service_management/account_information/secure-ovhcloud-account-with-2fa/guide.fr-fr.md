@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser son compte OVHcloud avec la double authentification'
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification (2FA)'
-updated: 2024-03-12
+updated: 2024-03-14
 ---
 
 ## Objectif
@@ -144,11 +144,15 @@ Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](https:/
 
 L'écran d'identification affiche la dernière méthode de double authentification utilisée ou renseignée. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-01.png){.thumbnail width="400"}
 
 Toutes les méthodes que vous avez activées apparaîtront alors, y compris la méthode des codes de secours.
 
-![2FA](images/2faloginchoice.png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-02.png){.thumbnail width="400"}
+
+En choisissant cette denière méthode, il vous suffit alors de renseigner l'un de vos codes de secours.
+
+![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
 
 ### Que faire si l'un de mes périphériques est perdu/volé ou cesse de fonctionner ? <a name="lost-device"></a>
 
