@@ -158,21 +158,23 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 > [!success]
 >
-Am besten erstellen Sie ein privates Netzwerk, bevor Sie eine Instanz erstellen. Weitere Informationen zum Erstellen eines privaten Netzwerks finden Sie in der Anleitung [vRack für Public Cloud konfigurieren](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+Als beste Vorgehensweise erstellen Sie ein privates Netzwerk vor der Instanzerstellung. Weitere Informationen zum Erstellen eines privaten Netzwerks finden Sie in der Anleitung [vRack für Public Cloud konfigurieren](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 >
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der “Start”-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der “Instanzen”-Seite, indem Sie in der linken Menüzeile unter “Compute” auf `Instances`{.action} klicken.)
 
 ![Instanz auswählen](images/instance-creation-2024.png){.thumbnail}
 
-**Local Zones:**
+**Local Zones**
 
-Die Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen. Sie sind strategisch günstig in der Nähe von Gebieten mit hoher Nutzernachfrage platziert. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um Dienste schneller und reaktionsfähiger zu machen und die Anforderungen an den Wohnsitz der Daten zu erfüllen. Weitere Informationen zu den Local Zones finden Sie unter den folgenden Links: [Local Zone Compute](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/) und [Local Zone Compute - Funktionen, Kapazitäten und Grenzen](/pages/public_cloud/compute/local-zones-capabilities-limits).
+Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen. Sie sind strategisch günstig in der Nähe von Gebieten mit hoher Nutzernachfrage platziert. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um Dienste schneller und reaktionsfähiger zu machen und die Anforderungen an den Standort der Daten zu erfüllen.
+
+Weitere Informationen zu Local Zones finden Sie unter den folgenden Links: [Local Zone Compute](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/) und [Local Zone Compute - Funktionen, Kapazitäten und Grenzen](/pages/public_cloud/compute/local-zones-capabilities-limits).
 
 
-**Globale Regionen:**
+**Globale Regionen**
 
-Es handelt sich um Regionen, die von einem oder mehreren von OVHcloud verwalteten Rechenzentren unterstützt werden. Jede Region befindet sich in einer anderen geografischen Zone. Jede globale Region stellt eine oder mehrere Availability Zones bereit, z. B. GRA11, GRA7, BHS5, DE1 usw.
+Es handelt sich um Regionen, die von einem oder mehreren von OVHcloud verwalteten Rechenzentren unterstützt werden. Jede Region befindet sich in einer anderen geografischen Zone. Jede globale Region stellt eine oder mehrere Availability Zones bereit, z. B. GRA11, GRA7, BHS5, DE1, etc.
 
 Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. Der Assistent zeigt Ihnen Beschreibungen zu den verschiedenen Einsatzzwecken sowie die Verfügbarkeit der Servermodelle. Sie können aus den folgenden angepassten Kategorien auswählen:
 
@@ -181,7 +183,7 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 | General Purpose   | ✓     | Entwicklungsserver, Web- oder Geschäftsanwendungen    |
 | Compute Optimized     | ✓       | Videokodierung oder anderes High Performance Computing      |
 | Memory Optimized   | ✓     | Datenbanken, Analysen und In-Memory-Berechnungen    |
-| GPU     | ✓       | Massiv-Parallel-Processing-Leistung für spezialisierte Anwendungen (Rendering, Big Data, Deep Learning etc.)       |
+| GPU     | ✓       | Massive-Parallel-Processing-Leistung für spezialisierte Anwendungen (Rendering, Big Data, Deep Learning, etc.)       |
 | Discovery    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
 | Storage Optimized   | ✓     | Optimiert für Festplattentransaktionen    |
 | Metal | ✓ | Dedizierte Ressourcen mit direktem Zugriff auf Rechen-, Speicher- und Netzwerkressourcen |
