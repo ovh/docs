@@ -184,3 +184,15 @@ Sharding enables :
 
 * to optimize read/write operations by loading balancing them on multiple shards
 * to spread the storage of data throughout the cluster to increase resiliency
+
+We use the object keys (prefix/name) to determine which objects are pushed into which sub-container using the following logic:
+
+    create 2 new shards
+    find the median value of a sorted by alphabetical order list of all object keys
+    copy the content of the root container to the shards
+    in the first shard, keep only the first half of the objects (object with first key of the list to object with key equals to the median value) and clean the second half
+    in the second shard, keep only the second half of the objects and clean the first half
+    the root container then only lists the references to the shards i.e which range of objects in which shard
+
+
+This logic can be summed up as follows:
