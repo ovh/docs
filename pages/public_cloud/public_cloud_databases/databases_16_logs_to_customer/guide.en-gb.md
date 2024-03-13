@@ -1,53 +1,59 @@
 ---
 title: Public Cloud Databases - Logs to customers
-excerpt: Find out how to forward logs of your cluster to your Log Data Platform
+excerpt: Find out how to forward logs of your database cluster to your Logs Data Platform data stream
 updated: 2024-03-06
 ---
 
 ## Objective
 
-Public Cloud managed databases allow you to get logs of your cluster in your own Log to customer (LDP) stream.
+Public Cloud managed databases allow you to send logs of your cluster to your own Logs Data Platform (LDP) data stream.
 
-**This guide explains how to forward clusters logs to your own LDP stream.**
+**This guide explains how to forward cluster logs to your own LDP stream with the OVHcloud API.**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
-- Access to the [OVH API](https://eu.api.ovh.com/console/)
-- Get a Log data platform with a stream that will be your destination stream
-- Get a running database cluster
+- Access to the [OVHcloud API](https://eu.api.ovh.com/console/)
+- A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
+- A running database cluster
 
-## Forward logs to your LDP stream
+## Instructions
 
-- Get your LDP destination stream ID
-- Get your service name
-- Get you Cluster ID
+### Forward logs to your LDP stream
 
-With the OVH API, call:
+- Retrieve your LDP destination `streamId`
+- Retrieve your `serviceName`
+- Retrieve your `clusterId`
 
-```bash
-POST /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription
+Use the following API call:
+
+> [!api]
+>
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription
+>
+
+```console
 body : {
     streamId: <LDP destination stream ID>
 }
 ```
 
-Then logs will start to be forward to your LDP stream.
+Then logs will start to be forwarded to your LDP stream.
 
 
-## Delete subscription
+### Delete subscription
 
 You have 2 methods to delete subscription: 
 
+- You can delete subscriptions using the `subscriptionId` concerned in this API call:
 
-On the one hand you can delete subscrition with the specific subscrition ID
+> [!api]
+>
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
+>
 
-```bash
-DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
-```
-
-On the other hand, if you delete your database cluster, all subscritions of this cluster are automatically deleted.
+- If you delete your database cluster, all subscriptions of this cluster are deleted automatically.
 
 
 ## We want your feedback!
