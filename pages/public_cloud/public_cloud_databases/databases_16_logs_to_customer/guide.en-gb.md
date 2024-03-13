@@ -1,14 +1,14 @@
 ---
 title: Public Cloud Databases - Logs to customers
-excerpt: Find out how to forward logs of your cluster to your Log Data Platform
+excerpt: Find out how to forward logs of your service to your Log Data Platform
 updated: 2024-03-06
 ---
 
 ## Objective
 
-Public Cloud managed databases allow you to get logs of your cluster in your own Log to customer (LDP) stream.
+Public Cloud managed databases allow you to get logs of your service in your own Log to customer (LDP) stream.
 
-**This guide explains how to forward clusters logs to your own LDP stream.**
+**This guide explains how to forward services logs to your own LDP stream.**
 
 ## Requirements
 
@@ -16,7 +16,7 @@ Public Cloud managed databases allow you to get logs of your cluster in your own
 - A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
 - Access to the [OVH API](https://eu.api.ovh.com/console/)
 - Get a Log data platform with a stream that will be your destination stream
-- Get a running database cluster
+- Get a running database service
 
 ## Forward logs to your LDP stream
 
@@ -26,15 +26,40 @@ Public Cloud managed databases allow you to get logs of your cluster in your own
 
 With the OVH API, call:
 
-```bash
-POST /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription
-body : {
-    streamId: <LDP destination stream ID>
-}
-```
+> [!api]
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription
+
+- **streamId**: LDP destination stream ID
 
 Then logs will start to be forward to your LDP stream.
 
+## Find logs in Graylog
+
+To find logs of your service in your graylogs stream you can use following graylog queries :
+
+### MongoDB Discovery
+
+Query: `kubernetes_namespace_name: "<HostID>"`
+
+You can find this `HostID` in your manager :
+- In `Login information` switch `Service` to `mongodb`
+- Now you can see the `Host` field with the format `<HostID>.database.cloud.ovh.net`
+
+### MongoDB Production and Advanced
+
+Query: `cluster: "<HostID>"`
+
+You can find this `HostID` in your manager :
+- In `Login information` switch `Service` to `mongodb`
+- Now you can see the `Host` field with the format `<HostID>.database.cloud.ovh.net`
+
+### Other Engines
+
+Query: `clusterID: "<Engine>-<HostID>"`
+
+You can find this `HostID` in your manager :
+- Find the Cluster ID formated as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
+- `HostID` is the first part of the UUID (AAAAAAAA)
 
 ## Delete subscription
 
@@ -43,11 +68,10 @@ You have 2 methods to delete subscription:
 
 On the one hand you can delete subscrition with the specific subscrition ID
 
-```bash
-DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
-```
+> [!api]
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
 
-On the other hand, if you delete your database cluster, all subscritions of this cluster are automatically deleted.
+On the other hand, if you delete your database service, all subscritions of this service are automatically deleted.
 
 
 ## We want your feedback!
