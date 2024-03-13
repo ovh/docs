@@ -52,3 +52,12 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 Then, for each part, you need to make an upload-part command where you specify the bucket, key and upload ID:
 
 > :exclamation: Part numbers can be any number from 1 to 10,000 inclusive. You can check the technical limitations,["here"](https://help.ovhcloud.com/csm/en-ca-public-cloud-storage-s3-limitations?id=kb_article_view&sysparm_article=KB0034706).
+
+```bash
+user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-number 1 --body filename_part1 --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
+{
+    "ETag": "\"6769849e543eeb257675b65e7a199aa2\""
+}
+```
+
+> ⚠️: Save the ETag value of each part for later. They are required to complete the multipart upload.
