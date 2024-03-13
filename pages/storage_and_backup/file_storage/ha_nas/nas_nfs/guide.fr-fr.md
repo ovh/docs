@@ -4,7 +4,7 @@ excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un parta
 updated: 2024-03-12
 ---
 
-## Objectif 
+## Objectif
 
 Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessible depuis un réseau.
 
@@ -223,7 +223,7 @@ Dans le retour, le paramètre `vers=3` ou `vers=4` vous indique quel est le prot
 
 L'utilisation des commandes sera semblable pour CentOS et Fedora.
 
-**Puis-je spécifier une version spécifique pour l'utilisation de NFSv4 ?**
+**Peut-on saisir une version spécifique pour l'utilisation de NFSv4 ?**
 
 De la même façon que précédemment, votre client NFS va essayer de se connecter directement sur la plus haute version supportée par celui-ci.
 Si vous le souhaitez, vous pouvez choisir entre NFSv4.1 et NFSv4.2
@@ -252,12 +252,11 @@ ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 IP_HA-NAS:/NFS_PATH /MOUNTING_FOL
 ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
-Vous pouvez toujours utiliser cette commande pour vérifier la version de votre montage actuel:
+Vous pouvez utiliser cette commande pour vérifier la version de votre montage actuel:
 
 ```bash
 ubuntu@server:~$ nfsstat -m
 ```
-
 
 ## Aller plus loin
 
