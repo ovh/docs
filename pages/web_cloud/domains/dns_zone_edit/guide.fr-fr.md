@@ -90,7 +90,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 > **CNAME**
 >> **C**anonical **NAME** <br><br>
 >> Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
->> <a name="cname"></a>
+>>
 >> > [!alert]
 >> >
 >> > Un enregistrement TXT utilisant le même domaine ou sous-domaine qu'un enregistrement CNAME perturbe le fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
@@ -103,16 +103,17 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> > Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exemples : *subdomain.mydomain.ovh* ou *www.mydomain.ovh*) du domaine *mydomain.ovh* dans la zone DNS créée pour *mydomain.ovh*.
 >> >
 >> > Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pouvez retrouver, en bas de cette page, [un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines](#techusecase).
->> >
+>>
 > **Champ DNAME**
 >> **D**elegation **NAME** <br><br>
 >> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible. Exemple : en créant un enregistrement DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (tels que *dname.mydomain.ovh* et *xxx.mydomain.ovh*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*). En d’autres termes, l’enregistrement DNAME indique que *dname.mydomain.ovh* et *xxx.mydomain.ovh* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
+>>
 >> > [!warning]
 >> >
 >> > En revanche, *mydomain.ovh* en tant que domaine n’affichera pas la cible du domaine *ovh.com* car l’enregistrement DNAME n’est valable que pour les sous-domaines des domaines définis dans l’enregistrement DNAME.
 >> >
 >> > De plus, en reprenant l'un des exemples ci-dessus, si le sous-domaine cible *xxx.ovh.com* ne pointe nulle part, alors l’enregistrement DNAME n’affichera rien non plus pour *xxx.mydomain.ovh*.
->> >
+>> 
 >> > [!success]
 >> >
 >> > L’enregistrement DNAME est généralement utilisé dans le cadre d’un changement de nom de société. Il peut aussi être mis en place lorsqu’un utilisateur dispose de plusieurs extensions de domaines (.fr, .net, .com, .info, …) pour les rediriger entre eux facilement.
@@ -120,6 +121,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 > **Champ NS**
 >> **N**ame **S**erver <br><br>
 >> Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client OVHcloud. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) » pour plus d'informations.
+>>
 >> > [!warning]
 >> > 
 >> > Ne modifiez pas, via le bouton `Modifier en mode textuel`{.action}, les enregistrements NS de votre zone DNS au profit de serveurs DNS externes à OVHcloud. En effet, cette zone DNS fonctionne **uniquement** avec des serveurs DNS OVHcloud.
