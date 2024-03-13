@@ -114,4 +114,16 @@ Where mpu.json is:
         }
     ]
 }
+
+
 ```
+
+> :exclamation: If you do not complete the multipart upload, your object will not be rebuilt and will not be visible BUT you still have to pay the storage costs of the parts
+
+## Using other third party tools ##
+
+The following list describes the options to perform multipart uploads using other tools. The list is NOT exhaustive as you might want to check the relevant documentation of the tool you are using.
+
+#### s3cmd ####
+
+_--multipart-chunk-size-mb=SIZE_
