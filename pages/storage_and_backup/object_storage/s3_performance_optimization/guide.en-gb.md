@@ -197,3 +197,6 @@ We use the object keys (prefix/name) to determine which objects are pushed into 
 
 
 This logic can be summed up as follows:
+
+
+![Schema 2](images/sharding2.png)
