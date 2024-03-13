@@ -52,4 +52,5 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 Then, for each part, you need to make an upload-part command where you specify the bucket, key and upload ID:
 
 > :exclamation: Part numbers can be any number from 1 to 10,000 inclusive. You can check the technical limitations AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the ["here"]([https://help.ovhcloud.com/csm/en-ca-public-cloud-storage-s3-limitations?id=kb_article_view&sysparm_article=KB0034706]).
+> - AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the ["Getting started with Object Storage"](https://example.com/getting-started) documentation provided by OVHcloud.
 
