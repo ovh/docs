@@ -61,3 +61,9 @@ user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-nu
 ```
 
 > ⚠️: Save the ETag value of each part for later. They are required to complete the multipart upload.
+
+ After, you upload all the parts, you have to call the complete-multipart-upload command in order to finish and for OVHcloud Object Storage to rebuild the final object:
+ 
+```bash
+user@host:~$ aws s3api complete-multipart-upload --bucket test-bucket --key filename --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx" --multipart-upload file://mpu.json
+```
