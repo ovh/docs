@@ -1,37 +1,45 @@
 ---
 title: Public Cloud Databases - Logs to customers
-excerpt: Find out how to forward logs of your service to your Log Data Platform
+excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
 updated: 2024-03-06
 ---
 
 ## Objective
 
-Public Cloud managed databases allow you to get logs of your service in your own Log to customer (LDP) stream.
+Public Cloud managed databases allow you to send logs of your service to your own Logs Data Platform (LDP) data stream.
 
-**This guide explains how to forward services logs to your own LDP stream.**
+**This guide explains how to forward service logs to your own LDP stream with the OVHcloud API.**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
-- Access to the [OVH API](https://eu.api.ovh.com/console/)
-- Get a Log data platform with a stream that will be your destination stream
-- Get a running database service
+- Access to the [OVHcloud API](https://eu.api.ovh.com/console/)
+- A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
+- A running database service
 
-## Forward logs to your LDP stream
+## Instructions
 
-- Get your LDP destination stream ID
-- Get your service name
-- Get you Cluster ID
+### Forward logs to your LDP stream
 
-With the OVH API, call:
+- Retrieve your LDP destination `streamId`
+- Retrieve your `serviceName`
+- Retrieve your `clusterId`
+
+Use the following API call:
 
 > [!api]
+>
 > @api {v1} /cloud POST /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/subscription
+>
 
-- **streamId**: LDP destination stream ID
+```console
+body : {
+    streamId: <LDP destination stream ID>
+}
+```
 
-Then logs will start to be forward to your LDP stream.
+Then logs will start to be forwarded to your LDP stream.
 
 ## Find logs in Graylog
 
@@ -61,17 +69,18 @@ You can find this `HostID` in your manager :
 - Find the Cluster ID formated as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
 - `HostID` is the first part of the UUID (AAAAAAAA)
 
-## Delete subscription
+### Delete subscription
 
 You have 2 methods to delete subscription: 
 
-
-On the one hand you can delete subscrition with the specific subscrition ID
+- You can delete subscriptions using the `subscriptionId` concerned in this API call:
 
 > [!api]
+>
 > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/mongodb/{clusterId}/log/subscription/{subscriptionId}
+>
 
-On the other hand, if you delete your database service, all subscritions of this service are automatically deleted.
+- If you delete your database service, all subscriptions of this service are deleted automatically.
 
 
 ## We want your feedback!
