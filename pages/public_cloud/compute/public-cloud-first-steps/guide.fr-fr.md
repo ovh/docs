@@ -172,7 +172,7 @@ Les Local Zones sont une extension des régions qui rapprochent les services OVH
 
 **Régions Globales :**
 
-Il s’agit de régions supportées par un ou plusieurs datacenters gérés par OVHcloud. Chaque région est située dans une zone géographique différente. Chaque région globales fournit une ou plusieurs Availibility Zone, par exemple GRA11, GRA7, BHS5, DE1 etc.
+Il s’agit de régions supportées par un ou plusieurs datacenters gérés par OVHcloud. Chaque région est située dans une zone géographique différente. Chaque région globale fournit une ou plusieurs Availibility Zone, par exemple GRA11, GRA7, BHS5, DE1 etc.
 
 Commencez par choisir un modèle de serveur en fonction de vos besoins. L'assistant fournit une description des différents cas d'usage et de la disponibilité du modèle de serveur. Vous avez le choix entre les catégories personnalisées suivantes:
 

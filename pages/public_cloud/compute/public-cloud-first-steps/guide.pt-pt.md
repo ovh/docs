@@ -160,7 +160,7 @@ Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, int
 
 > [!success]
 >
-Antes de criar uma instância, é preferível criar uma rede privada. Para mais informações sobre a criação de uma rede privada, consulte o guia [Configuração do vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+> Antes de criar uma instância, é preferível criar uma rede privada. Para mais informações sobre a criação de uma rede privada, consulte o guia [Configuração do vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 >
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. Na página «Home», clique em `Criar uma instância`{.action}. (Encontrará a mesma funcionalidade na página «Instâncias», clicando em `Instâncias`{.action} na barra de navegação à esquerda, sob «Compute».)

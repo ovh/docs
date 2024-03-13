@@ -160,10 +160,10 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 > [!success]
 >
-È preferibile creare una rete privata prima di procedere alla creazione di un’istanza. Per maggiori informazioni sulla creazione di una rete privata, consulta la guida [Configurazione della vRack sul Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+> È preferibile creare una rete privata prima di procedere alla creazione di un’istanza. Per maggiori informazioni sulla creazione di una rete privata, consulta la guida [Configurazione della vRack sul Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 >
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina "Istanze", cliccando su `Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
 ![instance select](images/instance-creation-2024.png){.thumbnail}
 
