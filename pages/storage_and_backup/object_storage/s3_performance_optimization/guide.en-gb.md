@@ -39,3 +39,11 @@ The following section explains how to perform a multipart upload using the low l
 
 First, you need to initiate a multipart upload:
 
+```bash
+user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filename
+{
+    "Bucket": "test-bucket",
+    "Key": "filename",
+    "UploadId": "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
+}
+```
