@@ -230,7 +230,7 @@ Die oben aufgeführten Befehle können entsprechend in CentOS und Fedora verwend
 **Kann eine bestimmte Version für die Verwendung von NFSv4 eingegeben werden?**
 
 Wie zuvor versucht Ihr NFS-Client, sich direkt mit der höchsten unterstützten Version zu verbinden.
-Bei Bedarf können Sie zwischen NFSv4.1 und NFSv4.2 wählen
+Bei Bedarf können Sie zwischen NFSv4.1 und NFSv4.2 wählen.
 
 Um die Verwendung von NFSv4.1 zu erzwingen, verwenden Sie folgenden Befehl:
 
@@ -238,7 +238,7 @@ Um die Verwendung von NFSv4.1 zu erzwingen, verwenden Sie folgenden Befehl:
 ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
-- Beispiel
+- Beispiel:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
@@ -250,13 +250,13 @@ Um die Verwendung von NFSv4.2 zu erzwingen, verwenden Sie folgenden Befehl:
 ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
-- Beispiel
+- Beispiel:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
-Mit diesem Befehl können Sie die Version Ihres aktuellen Schnittfensters überprüfen:
+Sie können den folgenden Befehl verwenden, um die aktuell verwendete Version festzustellen:
 
 ```bash
 ubuntu@server:~$ nfsstat -m
