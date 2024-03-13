@@ -132,10 +132,6 @@ When you have network configuration, the overview section, mainly network config
 
 ---
 
-![NC 02](images/03-EFS.png){.thumbnail}
-
----
-
 ![NC 03](images/04-EFS.png){.thumbnail}
 
 ---
