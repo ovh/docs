@@ -127,3 +127,7 @@ The following list describes the options to perform multipart uploads using othe
 #### s3cmd ####
 
 _--multipart-chunk-size-mb=SIZE_
+
+Size of each chunk of a multipart upload. Files bigger than SIZE are automatically uploaded as multithreaded-multipart, smaller files are uploaded using the traditional method. SIZE is in Mega-Bytes, default chunk size is 15MB, minimum allowed chunk size is 5MB, maximum is 5GB.
+
+<u>Example:</u>
