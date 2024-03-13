@@ -70,7 +70,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 #### Enregistrements de pointage
 
-Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivant.
+Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivants.
 
 > [!tabs]
 > **A**
