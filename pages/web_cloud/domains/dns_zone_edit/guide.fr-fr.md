@@ -127,7 +127,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 
 #### Enregistrements e-mail
 
-Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivant.
+Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivants.
 
 > [!tabs]
 > **MX**
