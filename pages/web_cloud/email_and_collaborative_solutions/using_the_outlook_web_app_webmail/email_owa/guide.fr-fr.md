@@ -17,13 +17,13 @@ Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails 
 
 ## En pratique
 
-Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide. 
+Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur des paramètres non abordés dans ce guide. 
 
 Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin_1) en bas de ce guide.
 
 > [!primary]
 >
-> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné. Vous pouvez utiliser la barre de navigation sur le côté gauche de ce guide pour passer aux paragraphes qui vous sont utiles.
+> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné. Vous pouvez utiliser la barre de navigation sur le côté droit de ce guide pour passer aux paragraphes qui vous sont utiles.
 >
 
 ### Étape 1 : Se connecter à OWA
@@ -67,15 +67,17 @@ Pour lire un e-mail, sélectionnez son dossier si nécessaire. Cliquez ensuite s
 
 ### Envoyer et répondre
 
-Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en haut de l'interface du webmail. Le volet d’édition apparaîtra sur le côté droit. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Dès que vous êtes prêt à l'envoyer, cliquez sur `Envoyer`{.action}.
+Pour **envoyer un nouveau message**, cliquez sur l'icône feuille-crayon `Créer un nouveau courriel`{.action} en haut de l'interface du webmail. Le volet d’édition apparaîtra comme une nouvelle page. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Dès que vous êtes prêt/e/s à l'envoyer, cliquez sur `Envoyer`{.action}.
 
 ![useowa](images/use-owa-step7.png){.thumbnail}
 
-Pour **répondre à un message**, [cliquez d'abord](./#afficher-les-e-mails) sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action}. Par contre, utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie).
+Pour **répondre à un message**, [cliquez d'abord](./#afficher-les-e-mails) sur celui-ci pour l'afficher, certaines icônes de la barre supérieure seront alors disponibles. 
+Si vous souhaitez répondre uniquement à l'expéditeur, cliquez sur l'enveloppe `Répondre à l'expéditeur`{.action}. 
+Si vous souhaitez répondre également aux personnes mises en copie du mail, cliquez sur la double enveloppe `Répondre à la liste ou à l'expéditeur et à tous les destinataires`{.action}. 
 
 ![useowa](images/use-owa-step8.png){.thumbnail}
 
-Lorsque vous choisissez de répondre, l'éditeur de réponse rapide apparaîtra au-dessus de l’e-mail. Saisissez-y votre réponse, et dès que vous êtes prêt à envoyer votre message, cliquez sur `Envoyer`{.action}. Veuillez noter que pour chaque option de réponse (comme l'ajout d'une signature), il faut d'abord l'étendre à l'ensemble du panneau d'édition en cliquant sur le symbole de la double flèche.
+Lorsque vous choisissez de répondre, l'éditeur de réponse rapide apparaîtra en-dessous de l’e-mail. Saisissez-y votre réponse, et dès que vous êtes prêt à envoyer votre message, cliquez sur `Envoyer`{.action}. Si néanmoins vous souhaitez annuler votre réponse, cliquer sur la flèche verte `Retourner à la liste des courriels`{.action}, située sur la barre supérieure. Un message s'affichera alors pour vous demander si vous souhaitez supprimer le message ou annuler le retour en arrière. 
 
 ![useowa](images/use-owa-step9.png){.thumbnail}
 
@@ -89,14 +91,26 @@ OWA propose plusieurs façons d'organiser votre messagerie. Vous pouvez :
 
 #### Créer un dossier
 
-Pour créer un nouveau dossier, faites un clic droit sur le nom de votre adresse e-mail dans l'arborescence des dossiers, puis choisissez `Créer un nouveau dossier`{.action}. Vous pouvez créer un sous-dossier dans des dossiers existants de la même manière en cliquant sur `Créer un nouveau sous-dossier`{.action}. 
+Pour créer un nouveau dossier, rendez-vous sur la partie gauche de votre page, dans le cadre intitulé "Dossiers". Tout en bas à gauche, cliquez sur l'icône représentée par un rouage et sélectionnez l'option "Gérer les dossiers". Puis, allez à nouveau vers le coin inférieur à gauche et, à côté du rouage, vous trouverez un "+". Lorsque vous cliquez dessus le cadre central apparaît, intitulé "Propriétés du dossier". Remplissez les informations relatives à votre dossier : 
+
+Dans l'onglet 'Emplacement' : 
+- Nom de dossier : choisissez le nom que vous désirez donner à votre dossier. Exemple : Mission OVH.
+- Dossier parent : si vous désirez que ce dossier soit un sous-dossier d'un dossier existant, sélectionnez alors le dossier existant dans la liste déroulante. Le cas échéant, laissez le champ libre.
+
+Dans l'onglet 'Paramètres' : 
+Sélectionnez le mode d'affichage que vous désirez pour votre nouveau dossier. 
+
+Une fois que ces paramètres sont fixés, cliquez sur 'Enregistrer". Votre dossier va alors apparaître dans la barre latérale gauche, en dessous des autres dosiers existants. S'il s'agit d'un sous-dossier, celui-ci apparaîtra alors sous le dossier principal. 
+
+Vous pouvez à tout moment placer un dossier en sous dossier. Il vous suffit de déplacer ce dernier à l'aide de votre souris d'ordinateur, vers le dossier souhaité. Un message d'alerte apparaîtra alors pour vous demander de valider ou non la manoeuvre. 
 
 ![useowa](images/use-owa-step10.png){.thumbnail}
 
 #### Déplacer des e-mails
 
-Pour **déplacer un e-mail**, vous pouvez simplement le glisser-déposer dans le dossier cible ou faire un clic droit et sélectionner `Déplacer`{.action}.
-Pour simultanément **déplacer plusieurs e-mails**, sélectionnez les tous grâce à leur case à cocher. Ensuite cliquez sur  `Déplacer`{.action} (sur le coté droit) ou sur `Déplacer vers`{.action} (dans la section supérieure). Choisissez ensuite le dossier de destination.
+Pour **déplacer un e-mail**, vous pouvez simplement le glisser-déposer dans le dossier cible. Vous puvez également cliquer sur le mail en question, puis cliquer sur le rouage du haut "Plus d'actions" et cliquez sur `Déplacer vers`{.action}
+Pour simultanément **déplacer plusieurs e-mails**, sélectionnez le premier email de votre liste, puis sélectionnez la touche "Maj" de votre clavier, et sélectionnez enfin le dernier email de la liste. De cette manière, l'ensemble des mails situés entre le premier et le dernier email sélectionnés seront pris en compte également dans la sélection. Puis, vous pouvez glisser-déposer votre sélection dans le dossier cible. 
+Si vous désirez sélectionner plusieurs e-emails simultanément mais qui ne suivent pas forcément un ordre de liste, sélectionnez alors le premier e-mail souhaité, puis, à l'aide de votre touche "Ctrl" de votre clavier, sélectionnez tous les dossiers que vous souhaitez inclure dans la sélection, puis refaites la même manoeuvre que précédemment. 
 
 ![useowa](images/use-owa-step11.png){.thumbnail}
 
