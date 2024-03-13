@@ -21,88 +21,53 @@ In this article, we also present the actions that can be carried out via the scr
 
 
 <details>
-  <summary><b>Overview</b> </summary>
+
+  <summary><b>List of your VRacks Services</b> </summary>
     
-| ![initiate_state](images/11_overview.png) | 
-|:--:| 
-| Details |
+![overview 01](images/01-VRS.png){.thumbnail}
 
-| ![initiate_state](images/15_listing_subnets.png) | 
-|:--:| 
-| Subnets listing |
+</details>
 
-| ![initiate_state](images/17_vrack_listing_endpoints.png) | 
-|:--:| 
-| Endpoints listing |
+
+<details>
+    
+  <summary><b>Overview </b> </summary>
+    
+![overview 01](images/02-VRS.png){.thumbnail}
+
+---
+
+![overview 01](images/03-VRS.png){.thumbnail}
+
+---
+
+![overview 01](images/04-VRS.png){.thumbnail}
+
+---
+
+![overview 01](images/05-VRS.png){.thumbnail}
 
 </details>
 
 <details>
   <summary><b>VRack Service Creation</b> </summary>
 
-| ![initiate_state](images/01_empty_page.png) | 
-|:--:| 
-| When you don't have any vrack services on, you have this screen |
-
-| ![initiate_state](images/02_vrack_creation.png) | 
-|:--:| 
-| First you need to define a name for this Vrack Service |
-
-| ![initiate_state](images/03_vrack_creation.png) | 
-|:--:| 
-| Then you need to attach this service to an existing Vrack ...  |
-
-| ![initiate_state](images/04_vrack_creation.png) | 
-|:--:| 
-| ... by selecting in your Vrack existing list |
-
-| ![initiate_state](images/05_vrack_cration.png) | 
-|:--:| 
-| Then you need to select a region |
-
-| ![initiate_state](images/06_vrack_creation.png) | 
-|:--:| 
-| Now you can create your new Vrack Service |
-
-| ![initiate_state](images/_vrack_creation.png) | 
-|:--:| 
-| If you don't have a Vrack you can createone here |
-
-
-| ![initiate_state](images/10_listing_page.png) | 
-|:--:| 
-| Here you have a list of all your Vrack Services |
-
-
+...
     
 </details>
 
 <details>
   <summary><b>Subnet creation</b> </summary>
-    
 
-| ![initiate_state](images/12_vrack_subnet_creation.png) | 
-|:--:| 
-| 12 |
-
-| ![initiate_state](images/13_vrack_subnet_creation.png) | 
-|:--:| 
-| 13 |
-
-| ![initiate_state](images/14_vrack_subnet_creation.png) | 
-|:--:| 
-| 14 |
-
+    ...
 
 </details>
 
 
 <details>
   <summary><b>Endpoint creation</b> </summary>
-    
-| ![initiate_state](images/16_vrack_endpoint_creation.png) | 
-|:--:| 
-| 16 |
+
+    ...
 
 </details>
 
