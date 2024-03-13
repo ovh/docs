@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurieren Ihres Datenbankservers'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
-updated: 2023-04-24
+updated: 2024-03-13
 ---
 
 > [!primary]
@@ -206,16 +206,6 @@ show variables like "version";
 >
 
 ### Logs und Messwerte
-
-#### Statistiken zur Ausführungsdauer der Anfragen
-
-So können Sie die Ausführungsdauer auf Ihrem Datenbankserver während der letzten 24 Stunden visualisieren.
-
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
-
-Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
 
 #### Zugang zu Slow-Query-Logs
 

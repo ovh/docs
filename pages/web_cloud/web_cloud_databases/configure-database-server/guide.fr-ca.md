@@ -1,7 +1,7 @@
 ---
 title: 'Configurer votre serveur de bases de données'
 excerpt: 'Découvrez comment configurer et optimiser votre serveur de base de données'
-updated: 2023-04-24
+updated: 2024-03-13
 ---
 
 ## Objectif
@@ -202,16 +202,6 @@ show variables like "version";
 > 
 
 ### Logs et Métriques
-
-#### Connaitre le temps d'exécution des requêtes
-
-Cela vous permet de visualiser le temps d'exécution des requêtes sur votre serveur de bases de données dans les dernières 24 heures.
-
-Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
-
-Dirigez-vous dans l'onglet `Métriques` de votre serveur de bases de données. Vous trouverez le graphique **« Statistiques du temps d'exécution des requêtes »**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
 
 #### Accès aux logs « Slow Query »
 

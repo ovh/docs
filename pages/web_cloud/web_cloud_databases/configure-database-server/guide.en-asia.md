@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your database server'
 excerpt: 'Find out how to configure and optimise your database server'
-updated: 2023-04-24
+updated: 2024-03-13
 ---
 
 ## Objective
@@ -203,16 +203,6 @@ show variables like "version";
 >
 
 ### Logs and metrics
-
-#### Query runtime statistics
-
-This allows you to view the query execution time on your database server in the last 24 hours.
-
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
-
-Go to the `Metrics` tab for your database server. You will find the graph **Query Execution Time Statistics**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
 
 #### Access to Slow Query logs
 

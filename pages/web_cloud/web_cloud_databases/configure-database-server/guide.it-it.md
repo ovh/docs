@@ -1,7 +1,7 @@
 ---
 title: Configura il tuo database server 
 excerpt: Come configurare e ottimizzare il tuo database server
-updated: 2023-04-24
+updated: 2024-03-13
 ---
 
 > [!primary]
@@ -206,16 +206,6 @@ show variables like "version";
 > 
 
 ### Log e Metriche
-
-#### Conoscere il tempo di esecuzione delle richieste
-
-In questo modo è possibile visualizzare il tempo di esecuzione delle richieste sul tuo database server nelle ultime 24 ore.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
-
-Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistiche dei tempi di esecuzione delle richieste"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
 
 #### Accesso ai log "Slow Query"
 
