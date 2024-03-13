@@ -151,7 +151,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 
 #### Enregistrements étendus
 
-Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivant.
+Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivants.
 
 > [!tabs]
 > **TXT**
