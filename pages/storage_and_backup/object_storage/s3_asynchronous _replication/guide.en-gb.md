@@ -306,7 +306,7 @@ Before you begin, ensure you have the following ready:
 - A Public Cloud project in your OVHcloud account.
 - Access to the OVHcloud Control Panel.
 - An S3 user already created within your project.
-- AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the ["Getting started with Object Storage"](https://example.com/getting-started) documentation provided by OVHcloud.
+- AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the ["Getting started with Object Storage"]([https://help.ovhcloud.com/csm/en-ca-public-cloud-storage-s3-limitations?id=kb_article_view&sysparm_article=KB0034706)) documentation provided by OVHcloud.
 
 
 > :exclamation: **IMPORTANT**
