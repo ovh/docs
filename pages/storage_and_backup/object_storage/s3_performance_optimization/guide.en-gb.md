@@ -166,3 +166,21 @@ Increasing the number of concurrent requests
 Another way to improve throughput is to increase the number of concurrent requests.
 
 To customize the default value on the AWS cli, check ["this article"](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-optimise-sending-files?id=kb_article_view&sysparm_article=KB0047432).
+
+For other tools, you should check the relevant documentation of the software you are using.
+
+## I/O optimization
+
+Lastly, you can also significantly optimize performances by adopting good practices to spread a much as possible the I/Os thourghout the object storage cluster by taking advantage of the sharding mechanism.
+
+## What is sharding
+
+OpenIO is a software defined storage solution on which OVHcloud Object Storage is based on.
+
+In OpenIO, a __container__ is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that list all the addresses in the cluster of the objects contained in it. By default, a S3 bucket is associated with one container but this can change with the sharding mechanism.
+
+Sharding is the mechanism by which a container is split into 2 new sub-containers (and thus its associated metadata database is also split in 2) when it reaches __a critical number of objects__ called shards.
+Sharding enables :
+
+* to optimize read/write operations by loading balancing them on multiple shards
+* to spread the storage of data throughout the cluster to increase resiliency
