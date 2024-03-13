@@ -67,3 +67,51 @@ user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-nu
 ```bash
 user@host:~$ aws s3api complete-multipart-upload --bucket test-bucket --key filename --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx" --multipart-upload file://mpu.json
 ```
+Where mpu.json is:
+
+```bash
+{
+    "Parts": [
+        {
+                "ETag": "6769849e543eeb257675b65e7a199aa2",
+                "PartNumber": 1
+        },
+        {
+                "ETag": "3617fbc52bcc2cc8a6cbfe81457c01c4",
+                "PartNumber": 2
+        },
+        {
+                "ETag": "4f8c06e93b407f1f2d6fb1614d73906d",
+                "PartNumber": 3
+        },
+        {
+                "ETag": "739213d60193c2154e74cc9895f17132",
+                "PartNumber": 4
+        },
+        {
+                "ETag": "f7551c4f2eef8b4f431ea9b89a106e66",
+                "PartNumber": 5
+        },
+        {
+                "ETag": "d1ee8ef1735cc647537dc27745a4d78f",
+                "PartNumber": 6
+        },
+        {
+                "ETag": "083560bc5d313203969979347e530816",
+                "PartNumber": 7
+        },
+        {
+                "ETag": "14614d7b76b64e455c8e53661067e2c8",
+                "PartNumber": 8
+        },
+        {
+                "ETag": "aa9bcb39247074216c7e26f90b21a71b",
+                "PartNumber": 9
+        },
+        {
+                "ETag": "9617fc9e0efb944fa3e4ba970b3ebe62",
+                "PartNumber": 10
+        }
+    ]
+}
+```
