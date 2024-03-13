@@ -18,6 +18,25 @@ In this article, we also present the actions that can be carried out via the scr
 
 # With Vrack Services as entry point   
 
+
+
+<details>
+  <summary><b>Overview</b> </summary>
+    
+| ![initiate_state](images/11_overview.png) | 
+|:--:| 
+| Details |
+
+| ![initiate_state](images/15_listing_subnets.png) | 
+|:--:| 
+| Subnets listing |
+
+| ![initiate_state](images/17_vrack_listing_endpoints.png) | 
+|:--:| 
+| Endpoints listing |
+
+</details>
+
 <details>
   <summary><b>VRack Service Creation</b> </summary>
 
@@ -59,24 +78,6 @@ In this article, we also present the actions that can be carried out via the scr
 </details>
 
 <details>
-  <summary><b>Overview</b> </summary>
-    
-| ![initiate_state](images/11_overview.png) | 
-|:--:| 
-| Details |
-
-| ![initiate_state](images/15_listing_subnets.png) | 
-|:--:| 
-| Subnets listing |
-
-| ![initiate_state](images/17_vrack_listing_endpoints.png) | 
-|:--:| 
-| Endpoints listing |
-
-</details>
-
-
-<details>
   <summary><b>Subnet creation</b> </summary>
     
 
@@ -110,42 +111,68 @@ In this article, we also present the actions that can be carried out via the scr
 
 # With Enterprise File Storage as entry point   
 
-## Overview
-### When you don't have any network configuration
+<details>
+  <summary><b>Overview</b> </summary>   
+When you don't have any network configuration, the overview section, mainly network configuration looks like this:   
+    
+![overview 01](images/01-EFS.png){.thumbnail}
 
-## When you have a network configuration
+---
 
-## Network Configyration
-### steps
+When you have network configuration, the overview section, mainly network configuration looks like this:   
+    
+![overview 02](images/09-EFS.png){.thumbnail}
 
-## Statuses
-### list of all statuses
+</details>
 
-## Remove Service Endpoint
-### steps
+<details>
+  <summary><b>Network Configuration</b> </summary>   
 
+![NC 01](images/02-EFS.png){.thumbnail}
 
-> [!tabs]
-> 1st tab title
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
->> >
-> 2nd tab title
->> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a placerat nisl. Nullam nisl libero, volutpat ut est vitae, porta sodales lacus. Nullam mattis in quam ut gravida.<br>
->> Morbi suscipit molestie lacus, sit amet commodo enim tristique malesuada. Maecenas ultricies tortor eu erat pellentesque ultrices.<br><br>
->>![email](images/email-password-exchange01.png){.thumbnail}<br>
-> 3rd tab title
->> ```console
->> your code
->> ``
+---
 
-> [!api]
->
-> @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
->
+![NC 02](images/03-EFS.png){.thumbnail}
+
+---
+
+![NC 03](images/04-EFS.png){.thumbnail}
+
+---
+
+![NC 04](images/05-EFS.png){.thumbnail}
+
+---
+
+![NC 05](images/06-EFS.png){.thumbnail}
+</details>
 
 
+<details>
+  <summary><b>Statuses</b> </summary>   
+
+![statuses 01](images/06-EFS.png){.thumbnail}
+
+---
+
+![statuses 01](images/07-EFS.png){.thumbnail}
+
+---
+
+![statuses 01](images/08-EFS.png){.thumbnail}
+
+</details>
+
+<details>
+  <summary><b>Remove Service Endpoint</b> </summary>   
+
+![remove 01](images/09-EFS.png){.thumbnail}
+
+---
+
+![remove 02](images/10-EFS.png){.thumbnail}
+
+</details>
 
 
 # Contraints and limits
