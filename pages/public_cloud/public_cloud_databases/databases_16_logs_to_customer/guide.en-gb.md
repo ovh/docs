@@ -65,7 +65,7 @@ You can find this `HostID` in your manager :
 
 ### Delete subscription
 
-You have 2 methods to delete subscription: 
+You have 2 methods to delete subscription:
 
 - You can delete subscriptions using the `subscriptionId` concerned in this API call:
 
