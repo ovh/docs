@@ -1,7 +1,7 @@
 ---
 title: Installing and using Helm on OVHcloud Managed Kubernetes
 excerpt: "Find out how to install and use Helm on OVHcloud Managed Kubernetes"
-updated: 2024-03-13
+updated: 2024-03-14
 ---
 
 [Helm](https://docs.helm.sh/){.external} is a package manager for Kubernetes. It works with packages of pre-configured Kubernetes resources, called Helm charts. 

@@ -1,7 +1,7 @@
 ---
 title: Installing and using Helm on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install and use Helm on OVHcloud Managed Kubernetes'
-updated: 2024-03-13
+updated: 2024-03-14
 ---
 
 [Helm](https://docs.helm.sh/){.external} is a package manager for Kubernetes. It works with packages of pre-configured Kubernetes resources, called Helm charts. 
@@ -23,7 +23,7 @@ Helm is built around three big concepts: charts, repositories and releases.
 
 ![Helm schema](images/ovh_helm_schema.jpg){.thumbnail}
 
-A *chart* is a Helm package. Inside the chart you have all the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster. It's the Helm equivalent of a Debian pkg for linux, a Maven file for Java or a `package.json` for Node.js.
+A *chart* is a Helm package. Inside the chart you have all the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster. It's the Helm equivalent of a Debian pkg for Linux, a Maven file for Java or a `package.json` for Node.js.
 
 Charts are stored in *repositories*, where they can be shared. Repositories are the Helm equivalent of the NPM registry for Node.js or Maven Central for Java.
 
@@ -33,7 +33,7 @@ When a chart is installed in a Kubernetes cluster, the running instance is calle
 
 > [!warning]
 > This guide supposes you're using Helm 3, the latest major version of Helm.
-> The precedent version, Helm 2, is legacy and considered deprecated.
+> The legacy version Helm 2 is considered deprecated.
 > If you want to use Helm 2, please refer to the [official documentation](https://v2.helm.sh/)
 
 Install, the Helm CLI in your machine, from a package manager:
@@ -77,7 +77,7 @@ You installed the Helm CLI in your machine, now you can use it to deploy applica
 
 ### Add a Helm Chart Repository
 
-Once you have Helm installed in your machine, you can add a chart repository. The easiest way to begin with Helm is to add the [Bitnami repository](https://github.com/bitnami/charts/):
+Once you have Helm installed on your machine, you can add a chart repository. The easiest way to begin with Helm is to add the [Bitnami repository](https://github.com/bitnami/charts/):
 
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
