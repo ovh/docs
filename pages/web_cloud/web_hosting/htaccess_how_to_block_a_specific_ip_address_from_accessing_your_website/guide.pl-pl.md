@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Jak zablokować dostęp do mojej strony dla niektórych adresów IP za pomocą pliku .htaccess?"
 excerpt: "Odkryj operacje możliwe przy użyciu pliku .htaccess, w celu zablokowania dostępu do Twojej strony WWW dla niektórych adresów IP"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 > [!primary]
@@ -79,13 +79,13 @@ Aby zablokować określony adres IP, wprowadź jeden z dwóch poniższych kodów
 >> ```
 >>
 
-- **Przykład**: jeśli chcesz zablokować adres IP 192.168.1.2, musisz napisać jeden z dwóch poniższych kodów:
+- **Przykład**: jeśli chcesz zablokować adres IP 203.0.113.0, musisz napisać jeden z dwóch poniższych kodów:
 
 > [!tabs]
 > Składnia historyczna
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Składnia od Apache 2.3
@@ -93,7 +93,7 @@ Aby zablokować określony adres IP, wprowadź jeden z dwóch poniższych kodów
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -119,13 +119,13 @@ Aby zablokować zakres adresów IP, wprowadź jeden z dwóch poniższych kodów 
 >> ```
 >>
 
-- **Przykład**: jeśli chcesz zablokować wszystkie adresy IP 192.168.x.x, wpisz jeden z dwóch poniższych kodów:
+- **Przykład**: jeśli chcesz zablokować wszystkie adresy IP 203.0.113.x, wpisz jeden z dwóch poniższych kodów:
 
 > [!tabs]
 > Składnia historyczna
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Składnia od Apache 2.3
@@ -133,7 +133,7 @@ Aby zablokować zakres adresów IP, wprowadź jeden z dwóch poniższych kodów 
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -255,7 +255,7 @@ Aby nadać tylko jednemu adresowi IP dostęp do Twojej usługi, wprowadź jeden 
 >> ```
 >>
 
-- **Przykład**: jeśli chcesz autoryzować dostęp do hostingu tylko dla adresów IP 192.168.1.2 i 192.168.1.3, wpisz jeden z dwóch poniższych kodów:
+- **Przykład**: jeśli chcesz autoryzować dostęp do hostingu tylko dla adresów IP 203.0.113.0 i 203.0.113.1, wpisz jeden z dwóch poniższych kodów:
 
 > [!tabs]
 > Składnia historyczna
@@ -263,14 +263,14 @@ Aby nadać tylko jednemu adresowi IP dostęp do Twojej usługi, wprowadź jeden 
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Składnia od Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -295,7 +295,7 @@ Aby zezwolić na dostęp do zakresu adresów IP, wprowadź jeden z dwóch poniż
 >> ```
 >>
 
-- **Przykład**: jeśli chcesz autoryzować dostęp do Twojego hostingu tylko dla adresów IP 192.168.1.x, wpisz jeden z dwóch poniższych kodów:
+- **Przykład**: jeśli chcesz autoryzować dostęp do Twojego hostingu tylko dla adresów IP 203.0.113.x, wpisz jeden z dwóch poniższych kodów:
 
 > [!tabs]
 > Składnia historyczna
@@ -303,14 +303,14 @@ Aby zezwolić na dostęp do zakresu adresów IP, wprowadź jeden z dwóch poniż
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Składnia od Apache 2.3 
 >> Umieść wszystko na górze ".htaccess"
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 
