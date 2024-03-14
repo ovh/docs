@@ -84,6 +84,9 @@ In my example cluster, we deploy the simple workload, and we verify that we stil
 
 ```console
 $ kubectl create ns cluster-autoscaler
+namespace cluster-autoscaler created
+
+$ kubectl apply -f cpu-load.yml -n cluster-autoscaler
 deployment.apps/python-cpu-load created
 
 $ kubectl get pods -n cluster-autoscaler
