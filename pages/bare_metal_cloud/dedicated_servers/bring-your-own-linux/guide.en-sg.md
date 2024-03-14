@@ -70,7 +70,7 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
-Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+Log in to the [API console](https://ca.api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
 > [!api]
 >
@@ -145,6 +145,8 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 ## Go further
 
 [Extensive details on BringYourOwnLinux](https://github.com/ovh/BringYourOwnLinux)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 [OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 

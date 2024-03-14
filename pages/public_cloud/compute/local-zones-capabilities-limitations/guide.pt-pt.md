@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades e limites
 excerpt: Descubra as funcionalidades, capacidades e limites atuais das instâncias Local Zones
-updated: 2024-02-21
+updated: 2024-03-04
 ---
 
 > [!primary]
@@ -9,14 +9,6 @@ updated: 2024-02-21
 >
 
 ## Objetivo
-
-> [!primary]
->
-> Atualmente, as instâncias Local Zone só estão implementadas em versão beta.
-> Se encontrar dificuldades, contacte as nossas equipas de suporte através da criação de um ticket a partir do seu [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help).
-> Se desejar discutir a sua experiência com outros utilizadores, junte-se a nós em Discord <https://discord.gg/ovhcloud> ou na nossa plataforma comunitária: <https://community.ovh.com/en/>.
-> 
-
 
 As instâncias Local Zones são uma extensão das regiões que aproximam os serviços da OVHcloud de locais específicos, oferecendo uma latência reduzida e performances melhoradas para as aplicações.
 As instâncias Local Zones estão estrategicamente colocadas perto das zonas de forte procura dos utilizadores. O seu objetivo principal é o de minimizar o tempo necessário à transferência dos dados entre o utilizador e a cloud, a fim de tornar os serviços mais rápidos e mais reativos e responder às exigências da Data Residency.
@@ -27,7 +19,7 @@ Encontre mais informações na nossa [página dedicada às instâncias Local Zon
 
 ## Funcionalidades disponíveis
 
-| Ação | Beta (fevereiro) |
+| Ação | Disponibilidade geral (março de 2024) |
 | --- | --- |
 | Instâncias | Sim |
 | Suporte User-data/cloud-init | Sim|

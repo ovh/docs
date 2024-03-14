@@ -1,7 +1,7 @@
 ---
 title: Configurar um registo MX
 excerpt: Saiba como configurar um registo MX no seu domínio da OVHcloud
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ O registo MX permite associar um domínio ao servidor da sua plataforma de e-mai
 >
 > - Se o domínio não usar os servidores DNS da OVHcloud, os registos MX deverão ser alterados a partir da interface do agente responsável pela gestão da configuração do seu domínio.
 >
-> - Se o seu domínio for gerido pela OVHcloud, pode verificar se este último utiliza a nossa configuração OVHcloud na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Servidores DNS`{.action} e depois posicionado no domínio em questão, no separador `Informações gerais`{.action}. Se a menção `Ative` estiver presente « **servidores DNS** », está a utilizar os servidores DNS da OVHcloud.
+> - Se o seu domínio for gerido pela OVHcloud, pode verificar se este último utiliza a nossa configuração OVHcloud a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/pt/&ovhSubsidiary=pt). Uma vez posicionado no domínio em causa, no separador `Informações gerais`{.action}, na parte `Servidores DNS`{.action}, se a menção `Ativo` estiver presente « **servidores DNS** », utiliza bem os servidores DNS da OVHcloud.
 >
 > ![email](images/dns-servers-enabled.png){.thumbnail}
 

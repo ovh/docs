@@ -38,4 +38,6 @@ This page is about breaking down the feature differences between the **Bring You
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 Join our user community on <https://community.ovh.com/en/>.

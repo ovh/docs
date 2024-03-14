@@ -1,7 +1,7 @@
 ---
 title: "Cambiar la contraseña de un usuario FTP"
 excerpt: "Descubra cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud"
-updated: 2023-05-29
+updated: 2024-02-29
 ---
 
 > [!primary]
@@ -45,15 +45,6 @@ Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Est
 > Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-La nueva contraseña debe respetar la **política de las siguientes contraseñas** :
-
-- Mínimo 8 caracteres;
-- Máximo 30 caracteres;
-- Al menos una letra mayúscula;
-- Al menos una letra minúscula;
-- Al menos una cifra.
-- Estar compuesto únicamente por números y letras.
-
 Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
 
 - **productos que no permiten crear un segundo usuario FTP** (*Alojamiento gratuito 100M* y *Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
@@ -63,6 +54,17 @@ Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosti
 - **Planes que permiten crear varios usuarios FTP** (planes *Pro* y *Performance*): pulse el botón `...`{.action} a la derecha del usuario FTP correspondiente y luego `Cambiar la contraseña`{.action}. Se abrirá una ventana en la que deberá introducir la nueva contraseña **respetando la política de contraseñas**, confirmarla introduciéndola por segunda vez y haciendo clic en el botón `Aceptar`{.action}.
 
 ![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+
+> [!primary]
+>
+> La nueva contraseña debe respetar la **política de las siguientes contraseñas** :
+>
+>- Mínimo 8 caracteres;
+>- Máximo 30 caracteres;
+>- Al menos una letra mayúscula;
+>- Al menos una letra minúscula;
+>- Al menos una cifra.
+>- Estar compuesto únicamente por números y letras.
 
 Por último, abra la pestaña `Tareas en curso`{.action} y vuelva a actualizar la página periódicamente. El cambio de contraseña tarda unos minutos en aplicarse.
 

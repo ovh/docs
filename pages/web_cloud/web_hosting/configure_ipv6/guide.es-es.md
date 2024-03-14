@@ -1,7 +1,7 @@
 ---
 title: "Configure una dirección IPv6 para su sitio web"
 excerpt: "Descubra cómo hacer compatible su sitio web con una dirección IPv6"
-updated: 2023-02-10
+updated: 2024-03-12
 ---
 
 > [!primary]

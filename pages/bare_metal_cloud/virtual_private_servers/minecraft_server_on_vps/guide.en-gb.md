@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - How to create a Minecraft server on a VPS'
+title: 'How to create a Minecraft server on a VPS'
 excerpt: 'Find out how to install your own Minecraft server'
 updated: 2021-06-29
 ---

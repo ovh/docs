@@ -1,7 +1,7 @@
 ---
 title: Shared responsibility for Dedicated Servers (EN)
 excerpt: Find out about shared responsibilities between OVHcloud and the customer for Dedicated Servers services
-updated: 2023-10-12
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -40,6 +40,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
+| Transfer your data (OS, softwares or backups, etc) according to your choice | RA | |
 
 #### 2.3. Customers information system setup
 

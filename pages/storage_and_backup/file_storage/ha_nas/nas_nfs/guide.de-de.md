@@ -1,7 +1,7 @@
 ---
 title: HA-NAS über NFS mounten
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-updated: 2023-07-06
+updated: 2024-03-13
 ---
 
 > [!primary]
@@ -226,6 +226,41 @@ ubuntu@server:~$ nfsstat -m
 Die Ausgabe zeigt über den Parameter `vers=3` oder `vers=4` das verwendete Protokoll an.
 
 Die oben aufgeführten Befehle können entsprechend in CentOS und Fedora verwendet werden.
+
+**Kann eine bestimmte Version für die Verwendung von NFSv4 eingegeben werden?**
+
+Wie zuvor versucht Ihr NFS-Client, sich direkt mit der höchsten unterstützten Version zu verbinden.
+Bei Bedarf können Sie zwischen NFSv4.1 und NFSv4.2 wählen.
+
+Um die Verwendung von NFSv4.1 zu erzwingen, verwenden Sie folgenden Befehl:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Beispiel:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Um die Verwendung von NFSv4.2 zu erzwingen, verwenden Sie folgenden Befehl:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Beispiel:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Sie können den folgenden Befehl verwenden, um die aktuell verwendete Version festzustellen:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
 
 ## Weiterführende Informationen
 

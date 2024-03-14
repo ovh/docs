@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2023-12-04
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -30,6 +30,7 @@ Entire database instances have to be in the same region. Multi-AZ is currently n
 The Public Cloud Databases offer supports the following Cassandra versions:
 
 - Cassandra 4.0
+- Cassandra 4.1
 
 Cassandra recommends always installing and using the latest stable version.
 
@@ -71,7 +72,7 @@ Here are the node types you can choose from:
 
 | Name    | Storage                | vCore | Memory (GB) |
 | ------- | ---------------------- | ----- | ----------- |
-| db1-4   | From 240 GB to 720 GB  | 1     | 4           |
+| db1-4   | From 240 GB to 720 GB  | 2     | 4           |
 | db1-7   | From 480 GB to 1.44 TB | 2     | 7           |
 
 **Business plans**
@@ -96,11 +97,11 @@ Right now, all nodes of a given cluster should be of the same type and live in t
 
 #### Flexible storage
 
-you can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage) for more information.
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage) for more information.
 
 #### Node template upgrade
 
-You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage) for more information.
+You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
 
 #### Disk type
 

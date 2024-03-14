@@ -1,7 +1,7 @@
 ---
 title: OVHcloud DNS-Zone für eine Domainnamen erstellen
 excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter eine DNS-Zone für Ihren Domainnamen erstellen
-updated: 2023-07-21
+updated: 2024-03-11
 ---
 
 > [!primary]

@@ -47,17 +47,17 @@ The transfer procedure has several steps. These steps will involve various entit
 
 |Steps|Description|Who is involved?|Where?|Time taken|
 |---|---|---|---|---|
-|1|Checking the information associated with the domain|The domain administrator|With the current registrar|Depends on your actions|
-|2|Unlocking the domain and retrieving the transfer code|The domain administrator, with the owner's permission|With the current registrar|Depends on your actions|
-|3|Requesting the domain name transfer|Whoever has the transfer code and the owner's permission|With the new registrar|Depends on your actions|
-|4|Transfer confirmation|With the current registrar|At the request of the organisation managing the domain name extension|Five days maximum|
+|[1](#step1)|[Checking the information associated with the domain](#step1)|The domain administrator|With the current registrar|Depends on your actions|
+|[2](#step2)|[Unlocking the domain and retrieving the transfer code](#step2)|The domain administrator, with the owner's permission|With the current registrar|Depends on your actions|
+|[3](#step3)|[Requesting the domain name transfer](#step3)|Whoever has the transfer code and the owner's permission|With the new registrar|Depends on your actions|
+|[4](#step4)|[Transfer confirmation|With the current registrar](#step4)|At the request of the organisation managing the domain name extension|Five days maximum|
 
 > [!warning]
 >
 > The exact procedure for domain transfer may vary, especially in case of some country-code **TLD**s (**ccTLD**, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose **TLD**s (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovhcloud.com/asia/domains/tld/>.
 >
 
-### Step 1: Check the information associated with the domain
+### Step 1: Check the information associated with the domain <a name="step1"></a>
 
 **To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](https://www.ovhcloud.com/asia/domains/whois/){.external} has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
 
@@ -70,7 +70,7 @@ The transfer procedure has several steps. These steps will involve various entit
 > If you do not know which registrar is responsible for your domain name, the "Registrar" lines retrieved as part of the [WHOIS](https://www.ovhcloud.com/asia/domains/whois/){.external} search result can help you identify it.
 >
 
-### Step 2: Unlock your domain and retrieve the transfer code
+### Step 2: Unlock your domain and retrieve the transfer code <a name="step2"></a>
 
 Once you have checked this information, you will need to unlock your domain name. You can only do this via your current domain name registrar. Please contact them to find out more about their procedure.
 
@@ -83,7 +83,7 @@ Please note that OVHcloud is not your current domain name registrar. We are ther
 > Once you have unlocked your domain name, you will have 7 days to begin transferring it to OVHcloud. After this 7-day period, your domain will be locked automatically if you do not submit a request to change your domain name registrar.
 >
 
-### Step 3: Request a domain name transfer to OVHcloud
+### Step 3: Request a domain name transfer to OVHcloud <a name="step3"></a>
 
 Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](https://www.ovhcloud.com/asia/domains/domain-transfer/){.external}. Enter your domain name, and follow the order process.
 
@@ -122,7 +122,7 @@ Once the order has been confirmed, you will receive a purchase order. The transf
 >
 > If the transfer code was not entered during the order, you can enter it in the section `Ongoing operations`{.action} to validate the transfer.
 
-### Step 4: Transfer validation by the current registrar
+### Step 4: Transfer validation by the current registrar <a name="step4"></a>
 
 Once the order and transfer code have been confirmed, the domain name registrar (which is still not OVHcloud) will receive a validation request. There are several possible outcomes at this stage, depending on the actions taken.
 

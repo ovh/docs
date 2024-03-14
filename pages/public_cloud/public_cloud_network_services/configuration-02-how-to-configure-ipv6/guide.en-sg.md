@@ -62,9 +62,9 @@ All the information you need is in the **Networks** section.
 > [!primary]
 > **Examples**
 > 
->The information below is provided as an example.
+> The information below is provided as an example.
 >
->Since you are the admin of your services, you will need to adapt the information to match your distribution or operating system.
+> Since you are the admin of your services, you will need to adapt the information to match your distribution or operating system.
 >
 
 > [!warning]
@@ -81,7 +81,7 @@ By default, the configuration files are located in `/etc/network/interfaces.d/`.
 The best practice is to create a separate configuration file in the `/etc/network/interfaces.d/` directory to configure IPV6. In our example, our file is called `51-cloud-init-ipv6`:
 
 ```bash
-~# sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
+sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
@@ -113,11 +113,11 @@ pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 Then restart your network service with one of the following commands:
 
 ```bash
-~# sudo service networking restart
+sudo service networking restart
 ```
 
 ```bash
-~# sudo systemctl restart networking
+sudo systemctl restart networking
 ```
 
 #### On Ubuntu and Debian 12
@@ -127,7 +127,7 @@ The network configuration files are located in the `/etc/netplan/` directory.
 The best practice is to create a separate configuration file in the `/etc/netplan/` directory to configure IPV6. In our example, our file is called `51-cloud-init-ipv6.yaml`:
 
 ```bash
-~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
@@ -174,13 +174,13 @@ network:
 You can test your configuration using this command:
 
 ```bash
-~# sudo nano netplan try
+sudo nano netplan try
 ```
 
 If it is correct, apply it using the following command:
 
 ```bash
-~# sudo nano netplan apply
+sudo nano netplan apply
 ```
 
 #### On RedHat / CentOS / Rocky Linux / Alma Linux
@@ -190,16 +190,16 @@ The network configuration files are located in the `/etc/sysconfig/network-scrip
 In our example, our file is called `ifcfg-eth0`, so we make a backup of the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary.
 
 ```bash
-~# cd /etc/sysconfig/network-scripts/
-~# sudo mkdir backup
-~# sudo cp ifcfg-eth0 backup/ifcfg-eth0
+cd /etc/sysconfig/network-scripts/
+sudo mkdir backup
+sudo cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
 You will then be able to revert the changes, using the commands below:
 
 ```bash
-~# sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
-~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 Then we edit the `ifcfg-eth0` file, adding only the lines for the IPv6 configuration of the server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values.
@@ -227,16 +227,16 @@ The network configuration file is located in the `/etc/NetworkManager/system-con
 In our example, our file  is called `cloud-init-eth0.nmconnection`, so we make a copy of the `cloud-init-eth0.nmconnection` file using the following commands. Remember to replace **eth0** with your actual interface if necessary.
 
 ```bash
-~# cd /etc/NetworkManager/system-connections/
-~# sudo mkdir backup
-~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
+cd /etc/NetworkManager/system-connections/
+sudo mkdir backup
+sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
 Then we edit the `cloud-init-eth0.nmconnection` file, adding only the lines for the IPv6 configuration of the server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) with your specific values.
 
 If we assume that your interface is eth0, the configuration should look like this:
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -249,7 +249,7 @@ We have omitted the IPv4 configuration to avoid confusion, but the IPv6 configur
 
 Here is a concrete example:
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true

@@ -1,161 +1,164 @@
 ---
-title: "Alojamento web : passar o seu website em HTTPS"
+title: "Alojamento web - Passar o seu website em HTTPS"
 excerpt: "Saiba como passar o seu website em HTTPS após ter ativado um certificado SSL"
-updated: 2023-09-22
+updated: 2024-02-26
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
-Graças ao alojamento web da OVHcloud, pode beneficiar de um certificado SSL. Este último permite estabelecer uma ligação segura com um ou vários websites e que, por isso, sejam acessíveis através de *HTTPS*. Assim, para poder disfrutar desta ligação segura, é necessário configurar previamente no website.
+Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/). Este último permite dispor de uma ligação segura a um ou vários dos seus websites, estando, por conseguinte, acessíveis através de *HTTPS*. Para isso, são necessárias várias etapas para que os seus sites possam utilizar esta ligação segura.
 
-**Saiba como passar o seu website em HTTPS após ter ativado um certificado SSL.**
+**Saiba como passar o seu website para HTTPS após ter ativado um certificado SSL.**
 
 ## Requisitos
 
-- Ter um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} instalado no [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Dispor de, pelo menos, um website instalado e acessível no alojamento web da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Dispor de um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external} instalado no seu [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter pelo menos um website instalado e acessível no alojamento web da OVHcloud.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, parte `Web Cloud`{.action}.
 
 ## Instruções
 
-A segurança assume um lugar cada vez mais importante na Internet. Muitos dedicam uma atenção especial à confidencialidade dos seus dados e à forma como estes transitam na web. De forma geral, os internautas confiam mais em sites que permitam uma partilha protegida, especialmente quando os dados comunicados são sensíveis. 
+A segurança assume um lugar cada vez mais importante na Internet. Muitos dedicam uma atenção especial à confidencialidade dos seus dados e à forma como estes transitam na web. De forma geral, os internautas confiam mais em websites que permitam uma partilha segura, especialmente quando os dados comunicados são sensíveis. 
 
-Quando visita um website que dispõe de uma ligação protegida, o navegador indica-o na barra de endereço, seja através de uma imagem (normalmente, um cadeado), de uma mensagem, de um código de cor ou do protocolo utilizado (HTTPS em vez de HTTP). Assim, o facto de o seu website possuir ou não uma ligação segura torna-se cada vez mais visível.
+Quando visita um Web site com uma ligação segura, o browser da Internet informa-o na sua barra de endereço (URL) através de vários meios, tais como: 
+
+- um logótipo (geralmente um cadeado);
+- uma mensagem;
+- um código de cores; 
+- o protocolo utilizado, *HTTPS* em vez de *HTTP*.
+
+O facto de o seu website possuir ou não uma ligação segura torna-se cada vez mais visível.
 
 ![httpswebsite](images/url-not-secure.png){.thumbnail}
 
-**Ativar o *HTTPS* num website pode revelar-se uma operação sensível**, uma vez que requer efetuar diferentes ações na configuração do website, ou seja, no código. Uma manipulação incorreta pode ter repercussões negativas: como uma pior referenciação nos motores de busca ou, no pior cenário, a impossibilidade de aceder ao website. 
-
-A tabela abaixo permite-lhe compreender de forma mais clara este processo.
-
-|Etapas|Descrição|Ação|
-|---|---|---|
-|1|Ativar o certificado SSL no alojamento|Permite ativar o certificado SSL ou verificar se está corretamente instalado no alojamento e ativado para o website correspondente.|
-|2|Verificar o ambiente técnico|Antes de prosseguir, deve verificar que a ativação do *HTTPS* no website não tem repercussões negativas para este último.|
-|3|Ativar o *HTTPS* no website|Esta ativação permite que o website utilize o protocolo *HTTPS*. Esta operação não é igual em todos os casos e dependerá do próprio website.|
-|4|Verificar o bom funcionamento do website|Esta última etapa permite verificar que o website funciona corretamente depois de ativar o protocolo *HTTPS*.|
-
-### 1 - Ativar o certificado SSL no alojamento
-
-A ativação do certificado SSL no alojamento web é feita a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Nesse sentido, tem de realizar as seguintes operações:
-
-|Operação|Descrição|
-|---|---|
-|Ativar o certificado SSL no alojamento|Permite que a OVHcloud ative o certificado SSL no alojamento. Tem de escolher entre vários tipos de certificados. Certifique-se de que seleciona o que melhor se adapta à sua situação.|
-|Ativar o SSL no multi-site correspondente|O website no qual pretende utilizar o *HTTPS* deve ser configurado enquanto “multi-site” no alojamento. Certifique-se de que o SSL foi ativado para este último.|
-
-Para mais informações sobre estas ações, consulte o manual [Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}. Se acabou de contratar o seu alojamento web com a OVHcloud, é possível que já tenha um certificado SSL instalado e que a ligação SSL para o multi-site já esteja ativa.
-
-Para o verificar, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Certifique-se de que está no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve estar indicado “Sim”, o que significa que já está instalado no alojamento web um certificado SSL. 
-
-![httpswebsite](images/tab-ssl-le.png){.thumbnail}
-
-Por fim, clique no separador `Multi-site`{.action}. Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento. Na coluna “SSL”, poderá ver se a ligação segura SSL está ativada ou desativada nos vários multi-sites. 
-
-![httpswebsite](images/ssls.png){.thumbnail}
-
-Se tiver dificuldades em verificar se o certificado SSL está instalado no seu alojamento e/ou ativado no multi-site correspondente, consulte o manual [Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external} (versão em inglês).
-
-### 2 - Verificar o ambiente técnico
-
-Antes de efetuar qualquer alteração na configuração do website, certifique-se de que este último está pronto para utilizar o protocolo *HTTPS*. Não existe um procedimento universal, visto que depende do próprio website. 
-
-Assim, recomendamos vivamente que tenha em consideração os elementos apresentados abaixo. Atenção: estas informações têm como objetivo ajudá-lo na medida do possível, mas não substituem a ajuda de um webmaster.
+**Tornar o website em *HTTPS* pode ser uma operação sensível**. De facto, a maior parte das ações a realizar serão efetuadas no código fonte do seu website. Se não forem efetuadas corretamente, poderá verificar uma diminuição do referenciamento (SEO) nos resultados propostos pelos motores de pesquisa (Google, Yahoo!, bing, etc.), ou mesmo uma inacessibilidade total do seu website.
 
 > [!warning]
 >
-> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
+> 
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual. 
->
 
-#### 2.1. Evitar misturar conteúdos HTTP e HTTPS
+Encontre aqui as principais etapas descritas no resto deste guia para passar o seu website em *HTTPS*:
 
-De forma geral, se o website admite a ligação através de *HTTPS*, deve evitar misturar conteúdos *HTTP* e *HTTPS* numa mesma página ou no conjunto do website. Ou seja, quando o website utiliza *HTTPS*, todo o conteúdo deve carregar-se nesse protocolo.
+- [Etapa 1 - Ativar o certificado SSL no alojamento web](#enable-ssl): permite ativar ou verificar se o certificado SSL está corretamente instalado no alojamento web/web site em causa.
+- [Etapa 2 - Verificar o ambiente técnico do seu website](#check-environment): permite verificar que a passagem do seu website em *HTTPS* não provocará avarias antes de efetuar qualquer alteração.
+- [Passo 3 - Ativar o *HTTPS* no website](#https-enable): permite que o seu website utilize o protocolo *HTTPS*. O método exposto neste guia não é universal e dependerá do website utilizado.
+- [Etapa 4 - Verificar o bom funcionamento do website](#check-your-website): permite verificar que o website funciona corretamente após a ativação do *HTTPS*.
 
-Se assim não for, corre o risco de oferecer no seu website aquilo que os navegadores consideram como “conteúdos mistos” (<i>mixed content</i>), isto é, conteúdos considerados potencialmente inseguros numa página web identificada como segura. Em função do tipo de conteúdo misto, podem ocorrer duas situações:
+### Etapa 1 - Ativar o certificado SSL no alojamento web <a name="enable-ssl"></a>
 
-- **O website apresenta-se corretamente, mas aparece um aviso na barra de endereço**: os conteúdos considerados passivos (imagens, vídeos, etc.) pelo navegador foram carregados a partir de uma fonte não segura;
+Para ativar um certificado SSL no alojamento web ou verificar se já está instalado um certificado SSL no site, consulte o guia: "[Gerir um certificado SSL no alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
-- **Algumas partes do website não são apresentadas e aparece um aviso na barra de endereço**: foram bloqueados conteúdos considerados ativos pelo navegador (scripts, iframe, ficheiros CSS, etc.) provenientes de fontes não seguras.
+### Etapa 2 - Verifique o ambiente técnico do seu website <a name="check-environment"></a>
 
-Assim, é primordial assegurar que a integralidade do conteúdo a ser carregado pelo seu website provém de uma fonte segura. 
+Antes de efetuar qualquer alteração na configuração do website, certifique-se de que este está pronto para utilizar corretamente o protocolo *HTTPS*. Não existe um procedimento universal, uma vez que depende do próprio website.
+
+As informações em baixo são, por isso, genéricas. Recomendamos que, em caso de dificuldades, recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/).
+
+#### 2.1 - Evite misturar conteúdos HTTP e HTTPS
+
+Quando o website é apresentado em *HTTPS*, deve evitar misturar conteúdos *HTTP* e *HTTPS* numa mesma página e no conjunto do website. Assim, se o seu website deve aparecer em *HTTPS*, certifique-se de que a integralidade do seu conteúdo se carrega em *HTTPS*.
+
+Se não for o caso, irá propor no seu website conteúdos considerados como mistos (*Mixed Content*) pelos browsers, ou seja, conteúdos considerados potencialmente não seguros numa página declarada segura.
+
+Podem ser encontrados dois casos *Mixed Content*:
+
+- **O website apresenta-se corretamente, mas a barra de endereço** contém uma advertência. O conteúdo considerado passivo (imagens, vídeos, etc.) pelo seu navegador é carregado na sua página a partir de uma fonte não segura.
+
+- **Algumas partes do website não são apresentadas e aparece um aviso na barra de endereço**. Foi bloqueado conteúdo considerado ativo pelo seu browser (scripts, iframe, ficheiros CSS, etc.) e proveniente de uma fonte não segura.
+
+Certifique-se de que todos os conteúdos carregados a partir do seu website provêm de uma fonte segura.
 
 ![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
 
-Note que, mesmo que o seu alojamento disponha de um certificado SSL, o conteúdo armazenado neste último pode ser carregado em *HTTP* ou em *HTTPS*. Isto depende da forma como identificou tais conteúdos no código do seu site. Desta forma, tem de se certificar de que o conteúdo carregado pelo seu site utiliza o protocolo *HTTPS*.
+Note que, mesmo que o seu alojamento disponha de um certificado SSL, o conteúdo alojado neste último pode ser carregado em *HTTP* ou em *HTTPS*. Isto depende da forma como identificou estes conteúdos no código do seu website. Verifique que todo o conteúdo carregado pelo seu website utiliza o protocolo *HTTPS*.
 
-Por exemplo, tenha uma atenção especial aos endereços que utiliza no código do site. Se possível:
+Por exemplo, tenha uma atenção especial aos endereços que utiliza no código do seu website. Se possível:
 
 - dê preferência à utilização de endereços relativos, como: `../img/header.png`;
-- evite endereços absolutos que incluem o protocolo *HTTP*, como: `http://mypersonaldomain.ovh/img/header.png`.
+- evite os endereços absolutos que incluem o protocolo *HTTP*, como: `http://domain.tld/img/header.png`.
 
-Caso seja necessário, terá de adaptar o código do site em conformidade. No entanto, se utilizar um CMS (como o WordPress), a sua estrutura estará provavelmente pronta para utilizar o protocolo *HTTPS* e não terá de fazer qualquer alteração no código do website.
+Se necessário, adapte o código do seu website em conformidade. 
 
-#### 2.2. Evitar gerar conteúdos duplicados
+Se utilizar um "site chave-na-mão" (WordPress, PrestaShop, Drupal, Joomla!), a estrutura destes sites já foi concebida para passar a *HTTPS*. Você não deve ter que fazer qualquer alteração no código do seu site.
 
-Em função da forma como o site está codificado, deve garantir que não será possível aceder-lhe através de diferentes endereços, por exemplo, utilizando tanto *HTTP* como *HTTPS*. Se isso acontecer, o seu website terá os mesmos conteúdos acessíveis a partir de vários endereços diferentes, o que os motores de busca consideram como conteúdo duplicado (ou *duplicate content*).
+#### 2.2 - Evite gerar conteúdos duplicados
 
-Este fenómeno pode ter um efeito negativo sobre o referenciamento do website. Neste sentido, tem de se certificar de que o website “força” a utilização do protocolo *HTTPS*. Para isso, deverá implementar uma regra de reescritura de URL no código do website.
+Em função da forma como o website está codificado, certifique-se de que este não será acessível através de diferentes endereços, por exemplo, utilizando o primeiro *HTTP* e o segundo *HTTPS*. Se isso acontecer, o mesmo conteúdo ficará acessível a partir de vários endereços diferentes, o que os motores de busca consideram como conteúdo duplicado ( *duplicate content*).
 
-Repare que, se utilizar um CMS (como o WordPress), a sua estrutura irá provavelmente gerir automaticamente as regras de reescritura e não terá de fazer qualquer alteração no código do site.
+Este fenómeno pode diminuir o nível de referenciamento (SEO) do seu website. Verifique que o seu código "força" a utilização do *HTTPS*, através de uma regra de re-escritura a colocar no código do seu website quando pretender ativar o *HTTPS*.
 
-### 3 - Ativar o HTTPS no website
+Repare que, se utilizar um "site chave-na-mão", a sua estrutura irá gerir automaticamente as regras de re-escritura. Por isso, não deverá ter de efetuar qualquer alteração no código do seu website.
 
-Uma vez que o seu alojamento web dispuser de um certificado SSL ativo, que o multi-site em causa beneficiar de uma ligação SSL ativa e que tiver assegurado que o website está pronto para utilizar *HTTPS*, poderá ativar este protocolo.
+### Etapa 3 - Ativar o HTTPS no website <a name="https-enable"></a>
+
+Se o seu alojamento web dispuser de um certificado SSL ativo, o [multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) beneficiar de uma ligação SSL ativa e o seu website estiver pronto para utilizar *HTTPS*, pode ativá-lo.
 
 > [!warning]
 >
-> Antes de começar, recomendamos que guarde um backup completo do website. Por isso, este backup deve conter não só os ficheiros presentes no espaço de armazenamento FTP, mas também os da base de dados, se o website utilizar um. 
+> Antes de começar, recomendamos que guarde um backup completo do website. Esta cópia de segurança deve conter não só os ficheiros presentes no [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup), mas também os ficheiros de [base de dados](/pages/web_cloud/web_hosting/sql_database_export) se o website utilizar uma.
+>
 > A partir desta etapa, as ações devem ser realizadas diretamente a partir dos ficheiros que compõem o seu website. Não hesite em contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se encontrar dificuldades.
 >
 
-Para ativar o protocolo *HTTPS* num website, é necessário efetuar alterações na respetiva configuração. Existem várias formas de o fazer. As informações apresentadas a seguir podem ajudá-lo neste processo de ativação, mas também podem revelar-se incompletas ou desadequadas à sua situação em específico.
+Existem várias formas de ativar o *HTTPS* no seu website. Para esta operação, é necessário realizar operações na configuração do website que utiliza. As informações apresentadas a seguir podem ajudá-lo neste processo de ativação, mas também podem revelar-se incompletas ou desadequadas à sua situação em termos de utilização.
 
-- **Se utilizar um CMS (por exemplo, o WordPress)**: 
+- **Utiliza um "site chave na mão" (WordPress, PrestaShop, Drupal, Joomla!, etc.)** :
 
-A ativação do *HTTPS* pode ser feita a partir da interface de gestão do website. Os passos para ativar este protocolo variam em função do CMS utilizado. 
+A ativação do *HTTPS* pode ser feita a partir da interface de gestão do website. O nome e a manipulação para ativar o *HTTPS* variam em função do "site chave-na-mão" que utiliza. 
 
-Por exemplo, poderá ter de ativar um parâmetro chamado “Forçar HTTPS”, ou modificar o URL completo do website para adicionar um “s”: “**http**://mypersonaldomain.ovh” passaria a ser “**https**://mypersonaldomain.ovh”.
+Por exemplo, pode ter um parâmetro intitulado "Forcer *HTTPS*" a ativar ou dever modificar o link completo do seu website para adicionar um `s`: "**http**://domain.tld" tornar-se-á então "**https**://domain.tld".
 
-Se necessita de ajuda para realizar esta manipulação a partir da interface de gestão do seu CMS, consulte a documentação oficial do editor do site. 
+Se necessita de ajuda para realizar esta operação a partir da interface de gestão do seu "CMS", consulte a documentação oficial do editor do seu website. 
 
-- **Se escreveu o código do seu website (ou outra pessoa o fez por si)**: 
+- **Utiliza um website codificado por si (ou por um prestador de serviços)**: 
 
-A ativação do *HTTPS* deve com certeza ser efetuada diretamente no código do site. Se tiver os conhecimentos necessários, modifique o código do site de modo a adaptá-lo à utilização do *HTTPS*. Se não sabe como fazê-lo, contacte o webmaster que criou o site para si. 
+A ativação do *HTTPS* deve com certeza ser efetuada diretamente no código do seu website. Se tiver os conhecimentos necessários, modifique o código do site de forma a adaptá-lo à utilização do *HTTPS*. Contacte o programador do seu website se tiver dúvidas quanto às instruções a seguir. 
 
-Se precisar, encontrará a seguir um exemplo de script que deverá inserir num ficheiro **.htaccess**. No entanto, isto não substitui a ajuda de um webmaster. Atenção: substitua a informação genérica presente neste script pela do seu próprio domínio e adapte-a caso seja necessário.
+Se necessário, encontrará a seguir alguns exemplos de scripts que devem ser inseridos num ficheiro **.htaccess**. No entanto, estes não substituem a ajuda de um webmaster. Substitua o domínio `domain.tld` presente no primeiro script pelo seu próprio domínio e adapte-o se necessário.
 
-```console
+```bash
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
+RewriteRule ^(.*)$ https://domain.tld/$1 [R,L]
 ```
+
+Este primeiro exemplo de script tem o efeito de reencaminhar todos os URL recebidos via a porta 80 em *HTTP* para o URL seguro em *HTTPS* `https://domain.tld/`.
+
+```bash
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
+
+Este segundo exemplo de script tem o efeito de transformar todos os URL recebidos via o protocolo *HTTP* em *HTTPS*, conservando intacto o resto do URL situado depois dos `://`.
+
+Para este segundo exemplo, verifique se todos os seus nomes de domínio ou subdomínios alvo têm um certificado SSL ativo.
 
 **Atenção**, para as ofertas de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/), o script a utilizar é o seguinte:
 
-```console
+```bash
 RewriteEngine On
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 ```
 
-### 4 - Verificar o bom funcionamento do website
+### Etapa 4 - Verifique o bom funcionamento do seu website <a name="check-your-website"></a>
 
-Quando tiver ativado o protocolo *HTTPS* no website, verifique que este está a funcionar corretamente e que todo o conteúdo é apresentado como antes da manipulação. Para isso, aceda ao website, verifique se não há nenhuma mensagem de aviso e examine as diferentes secções verificando que não há problemas de visualização. 
+Uma vez o *HTTPS* ativado no seu website, verifique que este está a funcionar corretamente e que todo o seu conteúdo se apresenta como antes da manipulação. Para isso, aceda ao website, verifique se não há nenhuma mensagem de aviso e examine as diferentes secções verificando que não há problemas de visualização. 
 
-Se encontrar algum problema, recomendamos-lhe vivamente que tente resolvê-lo de imediato ou que desative o protocolo *HTTPS* até identificar a sua origem. Em caso de verdadeira necessidade, pode utilizar o backup completo do website realizado no passo anterior.
+Se encontrar algum problema, tente resolvê-lo o mais rapidamente possível ou faça a máquina traseira desativando o *HTTPS*. Em caso de verdadeira necessidade, dispõe igualmente da cópia de segurança completa do seu website realizada no [etapa 3](#https-enable).
 
-Se o conteúdo do website se apresentar corretamente em *HTTPS* e não aparecer nenhuma mensagem de aviso, significa que a alteração foi bem-sucedida. Se desejar ativar o *HTTPS* noutro website do mesmo alojamento, deverá repetir todas as operações descritas neste manual.
+Se o website se apresentar corretamente e não aparecer nenhum aviso após a ativação do *HTTPS*, a operação foi corretamente executada. Se deseja ativar o *HTTPS* noutro website, repita todas as operações descritas neste manual.
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
+
+[Gerir um certificado SSL num alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

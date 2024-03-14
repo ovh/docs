@@ -78,7 +78,7 @@ Par défaut, les fichiers de configuration sont situés dans le répertoire `/et
 La meilleure pratique est de créer un fichier de configuration séparé dans le répertoire `/etc/network/interfaces.d/` pour configurer l'IPV6. Dans notre exemple, notre fichier s'appelle `51-cloud-init-ipv6` :
 
 ```bash
-~# sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
+sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 Cela vous permet de séparer la configuration IPv6 et de revenir facilement sur les changements en cas d'erreur.
@@ -109,12 +109,12 @@ pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 
 Redémarrez ensuite votre service réseau avec l'une des commandes suivantes :
 
-```sh
-~# sudo service networking restart
+```bash
+sudo service networking restart
 ```
 
-```sh
-~# sudo systemctl restart networking
+```bash
+sudo systemctl restart networking
 ```
 
 #### Sur Ubuntu et Debian 12
@@ -124,7 +124,7 @@ Les fichiers de configuration du réseau sont situés dans le répertoire `/etc/
 La meilleure pratique est de créer un fichier de configuration séparé dans le répertoire `/etc/netplan/` pour configurer l'IPV6. Dans notre exemple, notre fichier s'appelle `51-cloud-init-ipv6.yaml` :
 
 ```bash
-~# sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 Cela vous permet de séparer la configuration IPv6 et de revenir facilement sur les changements en cas d'erreur.
@@ -172,13 +172,13 @@ network:
 Vous pouvez tester votre configuration à l’aide de la commande suivante :
 
 ```bash
-~# sudo nano netplan try
+sudo nano netplan try
 ```
 
 Si elle est correcte, appliquez-la à l’aide de la commande suivante :
 
 ```bash
-~# sudo nano netplan apply
+sudo nano netplan apply
 ```
 
 #### Sur RedHat / CentOS / Rocky Linux / Alma Linux
@@ -188,16 +188,16 @@ Les fichiers de configuration du réseau sont situés dans le répertoire `/etc/
 Dans notre exemple, notre fichier s'appelle `ifcfg-eth0`, donc nous faisons une sauvegarde du fichier `ifcfg-eth0` en utilisant les commandes suivantes. N'oubliez pas de remplacer **eth0** par votre interface réelle si nécessaire.
 
 ```bash
-~# cd /etc/sysconfig/network-scripts/
-~# sudo mkdir backup
-~# sudo cp ifcfg-eth0 backup/ifcfg-eth0
+cd /etc/sysconfig/network-scripts/
+sudo mkdir backup
+sudo cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
 Vous pourrez alors revenir sur les modifications en utilisant les commandes ci-dessous :
 
 ```bash
-~# sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
-~# sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 Nous éditons ensuite le fichier `ifcfg-eth0`, en ajoutant seulement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
@@ -225,14 +225,14 @@ Le fichier de configuration du réseau se trouve dans le répertoire `/etc/Netwo
 Dans notre exemple, notre fichier s'appelle `cloud-init-eth0.nmconnection`, donc nous faisons une copie du fichier `cloud-init-eth0.nmconnection` en utilisant les commandes suivantes. N'oubliez pas de remplacer **eth0** par votre interface réelle si nécessaire.
 
 ```bash
-~# cd /etc/NetworkManager/system-connections/
-~# sudo mkdir backup
-~# sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
+cd /etc/NetworkManager/system-connections/
+sudo mkdir backup
+sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
 ```
 
 Nous éditons ensuite le fichier `cloud-init-eth0.nmconnection`, en ajoutant seulement les lignes pour la configuration IPv6 du serveur. Remplacez les éléments génériques (i.e. *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs spécifiques.
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true
@@ -244,7 +244,7 @@ Nous avons omis la configuration IPv4 pour éviter toute confusion, mais la conf
 
 Voici un exemple concret :
 
-```bash
+```console
 [ipv6]
 method=auto
 may-fail=true

@@ -1,7 +1,7 @@
 ---
 title: Créer un réseau privé avec une Gateway
 excerpt: "Découvrez comment créer un réseau Privé avec une Gateway via l'espace client OVHcloud, l'API Openstack ou l'API OVHcloud"
-updated: 2022-11-02
+updated: 2024-03-08
 ---
 
 ## Objectif
@@ -99,23 +99,41 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Définir les variables d'environnement OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
- 
+
 > [!tabs]
 > **Étape 1**
->> Une fois votre environnement prêt, saisissez ce qui suit dans la ligne de commande :
+>> Une fois votre environnement prêt, saisissez ce qui suit dans la ligne de commande pour créer un réseau et un sous-réseau :
 >>
->> ```bash
+>> ```console
 >> openstack network create my_network
 >>
->> openstack subnet create my_subnet —subnet-range <my_private_ip_range/mask> —network my_network —no-dhcp
+>> openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
+>>```
+>**Étape 2**
+>> Listez les différents niveaux de qualité de service :
 >>
->> openstack router create my_router
+>> ```console
+>> openstack network qos policy list
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | ID                                   | Name          | Shared | Default | Project                          |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | a5524eb5-944e-4106-b209-9478bbdcedab | large_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | c210f5b2-db59-4973-a25f-9131195b6bcf | medium_router | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | ec0ee74d-a1f3-43f6-87aa-b0e69ef8ce45 | small_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> ```
+>>
+> **Étape 3**
+>>
+>>```console
+>> openstack router create my_router 
 >>
 >> openstack router add subnet my_router my_subnet
 >>
->> openstack router set —external-gateway Ext-Net my_router
+>> openstack router set --external-gateway Ext-Net --qos-policy QOS_ID_OF_YOUR_CHOICE my_router
 >> ```
->> 
+>>
+>> Si vous ne renseignez pas le paramètre `--qos-policy` , la qualité de service « small » sera appliquée.
 
 ### Via l'API OVHcloud
 
@@ -141,7 +159,7 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 >> > Cet appel identifie le projet via le champ "description".
 >> >
 >>
-> **Étape 2**<br>
+> **Étape 2**
 >> **Créez votre réseau privé avec une Public Gateway** 
 >> 
 >> > [!api]

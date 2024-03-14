@@ -185,13 +185,13 @@ umount /dev/md4
 > [!warning]
 > Tenga en cuenta que, si está conectado como usuario `root`, puede obtener el siguiente mensaje cuando intente desmontar la partición (en nuestro caso, la partición md4 está montada en /home):
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">umount: /home: target is busy</code></pre>
 >
 > En ese caso, deberá desconectarse como usuario root y conectarse como usuario local (en nuestro caso, `debian`) y utilizar el siguiente comando:
 >
-> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
+> <pre class="highlight language-console"><code class="language-console">debian@ns000000:/$ sudo umount /dev/md4</code></pre>
 >
-> Si no tiene un usuario local, debe crear uno.
+> Si no tiene un usuario local, [debe crear uno](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 Obtendrá la siguiente respuesta:
 

@@ -39,7 +39,7 @@ Isto implica que, antes de qualquer rescisão, deve ter a **certeza**:
 
 ## Requisitos
 
-- Ser o "contacto administrador" do serviço a rescindir (para mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contact#definition))
+- Ser o "contacto administrador" do serviço a rescindir (para mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contacts#definition))
 - Ter acesso à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ;
 - Possuir serviços OVHcloud ativos (não suspensos por incumprimento)
 
@@ -161,7 +161,7 @@ A anulação da rescisão produz efeitos imediatos. Atualize a página "O meus S
 >> Se não conseguir rescindir um serviço (o botão `Rescindir o meu compromisso`{.action} não está disponível), este poderá ser um dos casos particulares detalhados [mais acima neste guia](#specific-cases).
 >> Verifique também se estão preenchidas as seguintes condições:
 >>
->> - Deve ser o "contacto administradoa" do serviço. Para obter mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contact#definition).
+>> - Deve ser o "contacto administradoa" do serviço. Para obter mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contacts#definition).
 >> - O serviço está em **renovação automática**. Se o seu serviço estiver em [renovação manual](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), será suspenso à data de expiração e eliminado passado alguns dias.
 >> - O serviço não é suspenso, nomeadamente devido a um problema de regularização de uma fatura. Certifique-se de que está atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) em todos os seus serviços.
 >>

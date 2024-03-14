@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Okta SSO avec votre compte OVHcloud
 excerpt: "Apprenez à associer votre service Okta à votre compte OVHcloud via SAML 2.0"
-updated: 2023-04-18
+updated: 2024-03-05
 ---
 
 ## Objectif
@@ -98,6 +98,8 @@ Cliquez sur le bouton `Connexion SSO`{.action} .
 
 Renseignez les métadonnées XML de votre service Okta. Complétez le champ « Nom d'attribut de groupe » avec la valeur `groups`. Cliquez sur `Confirmer`{.action}.
 
+Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
+
 ![Connexion SSO OVHcloud étape 2](images/ovhcloud_add_federation.png){.thumbnail}
 
 Vous devez maintenant retrouver votre Okta en tant que fournisseur d'identité, ainsi que les groupes par défaut.
@@ -137,6 +139,8 @@ Vous pourrez ensuite vérifier que le groupe est ajouté à votre compte OVHclou
 
 Lorsque vous vous connecterez ultérieurement avec un utilisateur du groupe **Intern**, votre compte OVHcloud reconnaîtra que l'utilisateur a le rôle "UNPRIVILEGED" spécifié par son groupe.
 
+Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer des droits à ce groupe via les [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
+
 Vous pourrez ensuite vous déconnecter de votre compte et vous reconnecter avec votre Okta en tant que fournisseur d'identité.
 
 ### Connexion via SSO
@@ -162,5 +166,7 @@ Vous êtes maintenant connecté avec le même identifiant client, mais via votre
 [Configuration et gestion du mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Créer des politiques d'accès IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

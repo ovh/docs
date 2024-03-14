@@ -1,30 +1,30 @@
 ---
-title: 'Activating and using rescue mode'
-excerpt: 'Find out how to activate and use rescue mode on a dedicated server'
+title: "How to activate and use rescue mode"
+excerpt: "Find out how to use the OVHcloud rescue mode to troubleshoot your dedicated server"
 updated: 2024-01-09
 ---
 
 ## Objective
 
-Rescue mode is a tool on your server that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues.
+Rescue mode is a tool provided by OVHcloud that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues on your server.
 
 Usual tasks the rescue mode is appropriate for include:
 
-- Resetting your root password
+- [Resetting your user password](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosing network problems
 - Repairing a broken operating system
 - Fixing a software firewall misconfiguration
 - Testing disk performance
 - Testing CPU and RAM
 
-Backing up your data should be the first step in rescue mode if you do not already have recent backups available.
-
 > [!warning]
+>
+> Backing up your data should be the first step in rescue mode if you do not already have recent backups available.
 >
 > If you have any services still online, rescue mode will interrupt them as the machine is being rebooted into the auxiliary rescue environment.
 >
 
-**This guide will show you how to activate and use your server's rescue mode.**
+**This guide explains how to reboot a server into rescue mode and mount partitions.**
 
 ## Requirements
 
@@ -81,13 +81,15 @@ root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
->
+> 
 > Your SSH client will likely block the connection at first due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary SSH server.
 >
-> One way around this is commenting the fingerprint of your regular system by adding a `#` in front of its line in the *known_hosts* file. Revert that change before returning to normal boot.
+> One way around this is "commenting out" the fingerprint of your server by adding a `#` in front of its line in the `known_hosts` file. Remember to revert this change before switching the netboot back to "normal" mode.<br>You can also delete the line from the file. Your SSH client will then add a new fingerprint entry for the server when the connection is established anew. If you require more detailed instructions, please refer to our guide "[Getting started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login)".
 >
 
-For most changes you make to your server via SSH while in rescue mode, you will need to mount a partition. This mode has its own temporary file system, so any file system changes you make in rescue mode will be lost once you reboot the server in normal mode.
+#### Mounting partitions
+
+Unless you are configuring server disks in a way that requires them to be detached (unmounted), you need to first mount the system partition.
 
 You can mount partitions using the `mount` command in SSH. Firstly, list your partitions in order to retrieve the name of the partition you need to mount. You can refer to the following code examples:
 

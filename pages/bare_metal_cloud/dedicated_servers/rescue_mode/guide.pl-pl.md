@@ -1,6 +1,6 @@
 ---
-title: 'Uruchamianie i korzystanie z trybu Rescue'
-excerpt: 'Dowiedz się, jak uruchomić i korzystać z trybu Rescue na serwerze dedykowanym'
+title: "Aktywacja i korzystanie z trybu Rescue"
+excerpt: "Dowiedz się, jak używać trybu Rescue OVHcloud do rozwiązywania problemów z serwerem dedykowanym"
 updated: 2024-01-09
 ---
 
@@ -10,25 +10,25 @@ updated: 2024-01-09
 
 ## Wprowadzenie
 
-Tryb Rescue to narzędzie dostępne na serwerze dedykowanym. Umożliwia uruchomienie tymczasowego systemu operacyjnego w celu zdiagnozowania i rozwiązania problemów.
+Tryb Rescue jest dostarczanym przez OVHcloud narzędziem, które pozwala na uruchomienie tymczasowego systemu operacyjnego w celu zdiagnozowania i rozwiązania problemów z serwerem.
 
-Tryb zapasowy jest zazwyczaj dostosowany do następujących zadań:
+Tryb Rescue jest zazwyczaj dostosowany do następujących zadań:
 
-- Reset hasła root
+- [Reset hasła użytkownika](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnostyka problemów z siecią
 - Naprawa wadliwego systemu operacyjnego
 - Naprawa nieprawidłowej konfiguracji zapory sieciowej
 - Test wydajności dysków
 - Test procesora i pamięci RAM
 
-Tworzenie kopii zapasowych danych musi być pierwszym krokiem w sposobie odzyskiwania danych, jeśli nie posiadasz jeszcze aktualnych kopii zapasowych.
-
 > [!warning]
 >
-> Jeśli posiadasz usługi produkcyjne na serwerze VPS, tryb Rescue je wyłącza, dopóki maszyna nie zostanie zrestartowana do trybu normalnego.
+> Pamiętaj o sporządzeniu kopii zapasowej swoich danych, jeśli nie posiadasz jeszcze ostatnich kopii zapasowych.
+>
+> Jeśli posiadasz usługi produkcyjne na swoim serwerze, tryb Rescue przerywa je, dopóki maszyna nie zostanie zrestartowana w trybie normalnym.
 > 
 
-**Dowiedz się, jak aktywować i korzystać z trybu Rescue na Twoim serwerze.**
+**Niniejszy przewodnik wyjaśnia, jak zrestartować serwer w trybie Rescue i zamontować partycje.**
 
 ## Wymagania początkowe
 
@@ -87,15 +87,15 @@ root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
-> 
-> Twój klient SSH prawdopodobnie zablokuje połączenie przede wszystkim ze względu na niekompatybilność odcisku ECDSA. Jest to normalne, ponieważ tryb Rescue korzysta z własnego tymczasowego serwera SSH.
 >
-> Aby obejść ten problem, możesz skomentować odcisk palca Twojego zwykłego systemu dodając `#` przed jego linią w pliku "known_hosts". Pamiętaj, aby usunąć ten znak przed restartem serwera w trybie normalnym.
+> Klient SSH prawdopodobnie zablokuje połączenie w pierwszej kolejności z powodu niezgodności odcisku palca ECDSA. Jest to normalne, ponieważ tryb ratunkowy korzysta z własnego tymczasowego serwera SSH.
+>
+> Jednym ze sposobów na ominięcie tego problemu jest "komentowanie" znaku firmowego Twojego serwera poprzez dodanie znaku `#` przed jego linią w pliku `known_hosts`. Nie zapomnij anulować tej zmiany przed przywróceniem netbootu do trybu "normalnego".<br>Możesz również usunąć wiersz z pliku. Po ponownym zalogowaniu się klient SSH doda nowy wpis linii papilarnych do serwera. Jeśli potrzebujesz bardziej szczegółowych instrukcji, zapoznaj się z naszym przewodnikiem "[Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login)".
 >
 
 #### Montowanie partycji
 
-Większość modyfikacji wprowadzonych na Twoim serwerze przez SSH w trybie Rescue wymaga zamontowania partycji. Tryb ten posiada własny system plików tymczasowych. W związku z tym modyfikacje wprowadzane do systemu plików w trybie Rescue zostaną utracone w trakcie restartu serwera w trybie zwykłym.
+Jeśli dyski serwera nie zostaną skonfigurowane w sposób wymagający odłączenia (*unmounted*), należy najpierw zamontować partycję systemu.
 
 Partycje montowane są za pomocą komendy `mount` przez SSH. Wyświetl listę partycji, aby odnaleźć tę, którą chcesz zamontować. Możesz użyć przykładowych poleceń:
 

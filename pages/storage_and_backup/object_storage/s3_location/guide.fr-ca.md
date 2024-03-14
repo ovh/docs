@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-02-08
+updated: 2024-03-01
 ---
 
 <style>
@@ -16,7 +16,7 @@ Nous avons conçu les classes de stockages S3 pour qu’elles soient **compatibl
 | Storage class | endpoint URL | Region available<br><b><i>To be entered in lower case</i></b> |
 | ------ | ------ | ------ |
 | Object Storage S3 - Standard | `https://s3.<region>.io.cloud.ovh.net` | Gravelines: gra<br>Strasbourg: sbg<br> Frankfurt: de <br>Beauharnois: bhs <br>Roubaix: rbx <br>Warsaw: waw <br>London: uk |
-| Object Storage S3 - High Performance |`https://s3.<region>.perf.cloud.ovh.net` | Gravelines: gra<br>Strasbourg: sbg<br>Beauharnois: bhs<br>London: uk<br>Frankfurt: de |
+| Object Storage S3 - High Performance |`https://s3.<region>.perf.cloud.ovh.net` | Gravelines: gra<br>Strasbourg: sbg<br>Beauharnois: bhs<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Roubaix: rbx |
 | Object Storage SWIFT - Standard - Legacy |`https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Beauharnois: bhs<br>Gravelines: gra |
 
 Le point de terminaison des bucket est une URL, par exemple `https://my-bucket.s3.gra.perf.cloud.ovh.net` qui représente un point de terminaison de style « hôte virtuel ».

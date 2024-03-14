@@ -76,7 +76,7 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
-Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+Log in to the [API console](https://ca.api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
 > [!api]
 >
@@ -168,6 +168,8 @@ Here are some results you might have:
 | Could not create configdrive on disk. | Impossible to create config-drive partition. |
 
 ## Go further
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 

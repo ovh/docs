@@ -1,112 +1,132 @@
 ---
-title: "Web hosting: Consultar las estadísticas y logs de un sitio web"
-excerpt: "Acceso a las estadísticas de su sitio"
-updated: 2024-02-13
+title: "Web hosting - Consultar las estadísticas y logs de un sitio web"
+excerpt: "Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting"
+updated: 2024-02-27
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 > 
 
 ## Objetivo
 
-El acceso a los logs y las estadísticas de su sitio web está incluido en su plan de hosting, al que podrá acceder desde el área de cliente de OVHcloud.
+El acceso a los logs y a las estadísticas de su sitio web está incluido en su plan de hosting, al que podrá acceder a través de su área de cliente de OVHcloud.
 
-**Esta guía explica cómo consultar las estadísticas y logs de un sitio web.**
+**Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting.**
 
 ## Requisitos
 
-- Tener contratado un plan [de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} compatible.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} compatible.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, lleve a cabo las siguientes acciones: 
 
-En el menú de la izquierda, seleccione el alojamiento correspondiente y abra la pestaña `Estadísticas y logs`{.action}.
+1. Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
+4. Seleccione el alojamiento web correspondiente.
+5. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
 
 Se abrirá una pantalla que consta de 4 secciones:
 
-- **Estadísticas de visitas** : presenta numerosas estadísticas relativas a su alojamiento
-- **Logs del sitio web**: muestra los logs en bruto del alojamiento
-- **Estadísticas de la infraestructura**: presenta estadísticas gráficas (peticiones HTTP y SQL, comandos FTP, etc.)
-- **Administración de los usuarios**: muestra los usuarios autorizados a acceder a las estadísticas
+- [Estadísticas de visitas](#website-stats): presenta numerosas estadísticas relativas a su alojamiento web.
+- [Logs del sitio web](#website-logs): muestra los logs en bruto de su alojamiento web.
+- [Estadísticas de la infraestructura](#infra-stats): presenta estadísticas gráficas (peticiones HTTP y SQL, comandos FTP, uso de CPU, conexiones salientes, etc.)
+- [Administración de los usuarios](#admin-user): muestra los usuarios autorizados a acceder a las estadísticas
 
-![hosting](images/tab.png){.thumbnail}
+![statistics and logs interface](images/tab.png){.thumbnail}
 
-### Administración de usuarios
+### Estadísticas de visitas <a name="website-stats"></a>
 
-La creación de un usuario permitirá a una persona acceder a las estadísticas de su alojamiento sin tener acceso al área de cliente de OVHcloud. 
+Para realizar un mejor seguimiento y controlar el tráfico de sus sitios web, puede utilizar **OVHcloud Web Statistics**, una herramienta de estadísticas de visitas y de medición de audiencia de sus sitios web alojados en su plan de hosting.
 
-Haga clic en el botón `Crear un nuevo usuario`{.action} en la sección `Administración de usuarios` y siga las instrucciones que se indican a continuación.  
+![ows dashboard](images/ows-presentation.gif){.thumbnail}
 
-![hosting](images/create-a-new-user.png){.thumbnail}
+El panel de control de **OVHcloud Web Statistics** incluye 7 secciones:
 
-Para acceder a las estadísticas de su sitio web con un usuario que haya creado, debe introducir la siguiente dirección sustituyendo `000` por el número del cluster de su alojamiento y `mydomain.ovh` por el nombre de dominio de su sitio web (sin los « www »):
-
-```bash
-https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
-```
-
-Desde la sección `Estadísticas y logs`{.action}, haga clic en `Ver las estadísticas`{.action}.<br>
-En la pestaña de su navegador que muestra la ventana de estadísticas, consulte el enlace que se utilizará para conectarse con uno de los usuarios creados.
-
-![hosting](images/view-statistics.png){.thumbnail}
-
-> [!warning] 
->
-> Si ha activado los logs separados en una [entrada multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-anadir-un-dominio-o-subdominio), los usuarios creados aquí no pueden acceder a las estadísticas de esta entrada multisitio.
->
-
-### Estadísticas de visitas
-
-Para ayudarle a realizar un mejor seguimiento y control del tráfico de sus sitios web, dispone de una herramienta de estadísticas de afluencia y de medición de audiencia de sus sitios web alojados en su hosting, **OVHcloud Web Statistics**.
-
-![hosting](images/ows-presentation.gif){.thumbnail}
-
-El panel de control de OVHcloud Web Statistics presenta 7 secciones:
-
-- Dashboard: visualización del tráfico en los sitios web del alojamiento.
-- Browsers: clasificación de los navegadores de internet más utilizados para visualizar sus sitios web.
-- Geolocalization :  proporción de visitantes en función de su localización.
-- Peticiones: clasificación de las páginas más consultadas en sus sitios web.
-- Robots: visualización de los robots que pasan por sus sitios web.
-- Status : estadísticas de fallos y éxitos encontrados en función de los códigos HTTP devueltos.
-- FAQ: sección dedicada a las preguntas más frecuentes.
+- **Dashboard**: visualización del tráfico en los sitios web de su alojamiento web.
+- **Browsers**: clasificación de los navegadores web más utilizados para consultar sus sitios web.
+- **Geolocalization**: proporción de visitantes en función de su localización.
+- **Requests**: clasificación de las páginas más consultadas en sus sitios web.
+- **Robots**: visualización de los robots que pasan por sus sitios web.
+- **Status**: estadísticas de fallos y éxitos encontrados en función de los códigos HTTP devueltos.
+- **FAQ**: sección dedicada a las preguntas más frecuentes. También explica los términos técnicos que puede encontrar en la herramienta.
 
 El campo `Period selection` situado en la parte superior derecha permite seleccionar un período de tiempo específico.
 
-### Logs
+### Logs del sitio web <a name="website-logs"></a>
 
-Puede visualizar los logs brutos de su sitio web con un retraso de aproximadamente 5 minutos.
+> [primary]
+>
+> No podremos asesorarle sobre la interpretación de los logs de su alojamiento web, ya que solo es cuestión de desarrollo web y no de alojamiento web.
+>
+> No dude en contactar con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene alguna duda.
+>
 
-![hosting](images/osl-statistics-board.png){.thumbnail}
+Puede visualizar los logs en bruto de su sitio web con un retraso de aproximadamente 5 minutos.
 
-Hay diferentes tipos de logs a su disposición:
+![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
 
-- Logs Web: aquí encontrará los distintos logs de consulta de su sitio web, así como las diferentes acciones realizadas a partir de su sitio web. Esto permite, por ejemplo, identificar intentos de acción maliciosa.
-- Logs FTP: las diferentes conexiones FTP se guardarán y conservarán en estos logs.
-- Logs error: los diferentes errores generados por su sitio web.
-- Logs CGI: las diferentes llamadas a los scripts cgi.bin realizadas.
-- Logs out : las estadísticas de su alojamiento sobre las diferentes llamadas externas realizadas.
-- Logs SSH: estos logs indican las distintas conexiones realizadas con el protocolo SSH.
-- Logs CRON: el resultado de la ejecución de las tareas planificadas ([tareas automatizadas (CRON) en el alojamiento](/pages/web_cloud/web_hosting/cron_tasks)).
+Los diferentes tipos de logs están a su disposición:
 
-### Actividades del alojamiento
+- **Logs Web**: contienen los diferentes logs de consulta de su sitio web, así como las diferentes acciones realizadas desde su sitio web. Esto le permite, por ejemplo, detectar intentos de acciones maliciosas.
+- **Logs FTP**: las diferentes conexiones/comandos FTP se registrarán y conservarán en estos logs.
+- **Logs error** : consulte aquí los diferentes errores generados por su sitio web.
+- **Logs CGI**: las diferentes llamadas a los scripts cgi.bin que se han realizado se registran en estos logs.
+- **Logs out**: contienen el historial de las diferentes peticiones externas (conexiones salientes TCP) realizadas desde su alojamiento web hacia infraestructuras remotas.
+- **Logs SSH** : Estos logs indican las diferentes conexiones/comandos realizados con el protocolo SSH.
+- **Logs CRON**: consulte aquí los resultados de la ejecución de sus tareas planificadas [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) en su alojamiento web.
 
-Acceda a la sección Actividad de la infraestructura de su alojamiento para visualizar el consumo de los recursos puestos a su disposición.
+### Estadísticas de la infraestructura <a name="infra-stats"></a>
 
-En la pestaña `Información general`{.action}, haga clic en el icono con forma de tres puntos.
+En esta sección podrá consultar la actividad de la infraestructura de su alojamiento web para visualizar el consumo de los recursos puestos a su disposición.
 
-![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
+![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
 
-Desde el menú desplegable situado en la parte superior izquierda podrá ver distintos tipos de gráficos:
+Puede ver diferentes tipos de gráficos en el menú desplegable de la parte superior izquierda:
 
-- Conexiones salientes: peticiones enviadas desde su sitio web hacia un sitio externo.
-- Uso de la CPU: nivel de consumo del procesador en la instancia de alojamiento.
-- Superación del límite de recursos: indica los momentos en que el alojamiento supera el límite de recursos.
-- Peticiones SQL: cantidad de peticiones a las bases de datos de su alojamiento.
-- Tiempo de respuesta SQL: tiempo de respuesta de las peticiones enviadas a las bases de datos de su alojamiento.
+- **Comandos FTP**: indica los comandos principales (upload, download, login, delete) realizados utilizando el protocolo FTP en su alojamiento web.
+- **Peticiones HTTP**: indica el número y el código de retorno de las solicitudes HTTP ejecutadas en su alojamiento web. Todo ello distinguiendo entre los distintos códigos HTTP (2xx/3xx, 4xx y 5xx). Si lo necesita, puede consultar la lista de códigos HTTP y su significado realizando directamente una búsqueda a través de un motor de búsqueda (Google, Yahoo!, bing, etc.).
+- **Conexiones salientes**: peticiones enviadas desde su sitio web hacia un sitio web externo.
+- **Uso de la CPU**: nivel de consumo del procesador en su instancia de alojamiento web.
+- **Superación del límite de recursos**: indica los momentos en los que el alojamiento web supera el límite de recursos.
+- **Consultas SQL** : cantidad de consultas a las bases de datos de su alojamiento web.
+- **Tiempo de respuesta SQL** : Tiempo de respuesta de las consultas enviadas a las bases de datos de su alojamiento web.
+
+### Administración de los usuarios <a name="admin-user"></a>
+
+La creación de un usuario permitirá a una persona acceder a las estadísticas de su alojamiento web sin tener acceso al área de cliente de OVHcloud.
+
+En la sección `Administración de los usuarios`{.action}, haga clic en `Crear un nuevo usuario`{.action} y siga las instrucciones para terminar de crear un nuevo usuario.
+
+![create a new user](images/create-a-new-user.png){.thumbnail}
+
+Para acceder a las estadísticas de su sitio web con un usuario que haya creado, debe introducir la siguiente dirección sustituyendo `000` por el número de cluster de su alojamiento web y `domain.tld` por el nombre de dominio de su sitio web (sin los `www`):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/domain.tld/
+```
+
+También puede consultar el enlace de acceso a las estadísticas / logs directamente desde su área de cliente:
+
+1. Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
+4. Seleccione el alojamiento web correspondiente.
+5. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
+6. Acceda a la sección `Estadísticas de visitas`{.action}.
+7. Pulse el botón `Ver las estadísticas`{.action}.
+
+![website visit statistics](images/view-statistics.png){.thumbnail}
+
+En la nueva página, consulte la dirección URL de su navegador de internet.
+
+> [!warning]
+>
+> Si ha activado los logs separados en una [entrada multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite), los usuarios creados aquí no podrán acceder a las estadísticas de esa entrada multisitio específica.
+>
 
 ## Más información
 

@@ -1,7 +1,7 @@
 ---
 title: Serveurs Dédiés - Partage de responsabilités
 excerpt: Découvrez le partage des responsabilités entre OVHcloud et le client pour les services Serveurs Dédié
-updated: 2023-10-12
+updated: 2024-02-29
 ---
 
 ## Objectif
@@ -40,6 +40,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
+| Migrer les données (OS, logiciels ou sauvegardes, etc) selon le format de votre choix | RA | |
 
 #### 2.3. Installation du SI client
 
