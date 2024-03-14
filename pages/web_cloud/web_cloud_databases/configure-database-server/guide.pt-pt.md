@@ -1,7 +1,7 @@
 ---
 title: 'Configurar o servidor de bases de dados'
 excerpt: 'Descubra como configurar e otimizar o servidor de bases de dados'
-updated: 2023-04-24
+updated: 2024-03-13
 ---
 
 > [!primary]
@@ -206,16 +206,6 @@ show variables like "version";
 > 
 
 ### Logs e métricas
-
-#### Conhecer o tempo de execução dos pedidos
-
-Isto permite-lhe visualizar o tempo de execução dos pedidos no servidor de bases de dados nas últimas 24 horas.
-
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
-
-Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gráfico **«Estatísticas do tempo de execução dos pedidos»**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
 
 #### Acesso aos logs «Slow Query»
 
