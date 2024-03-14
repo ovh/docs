@@ -12,6 +12,9 @@ This guide will discuss those options to monitor your Octavia Load Balancer.
 
 ## Instructions
 
+### Pre requisites
+A Load balancer has been created. If this is not the case, please check this [guide](../getting-started-01-create-lb-service/guide.en-gb.md).
+
 ### Monitoring using CLI
 
 The Load Balancer service aggregates these statistics and makes them available via the OpenStack API. Those statistics are available at the Load Balancer or listener level.
@@ -57,10 +60,46 @@ To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener 
 > Currently UDP and SCTP specific metrics are not reported via Prometheus endpoints.
 >
 
-To create a Prometheus endpoint on port 8088 for Load Balancer lb1, you would run the following command:
+#### Create a Prometheus listener via OVHcloud Control Panel
+Under `Network` category, select `Load Balancer`. 
+A page listing the load balancer will be displayed. 
+Select one load balancer by clicking on its `name`.
+The load balancer details page will be displayed. Click on the `Listeners` tab then click on `Add a listener`
+
+In the form:
+* fill in the `Name`
+* select `prometheus` in the Protocol
+* choose a port (different from the already existing listener ports of your Load Balancer)
+The default pool is greyed out because the `prometheus` listener does not need a pool contrary to the other types of listeners.
+
+![Create listener in OVHCloud Control Panel](img/create_listener_manager.png)
+
+Click on `Add` to trigger the listener creation. 
+The new listener is added in the listener list.
+
+![Listener list in OVHCloud Control Panel](img/listener_list.png)
+
+
+
+#### Create a Prometheus listener via Openstack GUI (Horizon)
+
+Log in to Horizon by following this [guide](../../compute/introducing_horizon/)
+Click on `Network` > `Load Balancers`
+The Load Balancer list is displayed. 
+Click on the load balancer name. The load balancer details page is displayed.
+![Load Balancer details in Horizon](img/horizon_lb_details.png)
+
+Click on the `Listeners` tab then `Create Listener`
+In the listener creation page, fill in the `Name` and the `Protocol` to `PROMETHEUS`. The port will be set to a default value:  change it if needed.
+![Listener creation in listener](img/horizon_listener_creation.png)
+
+
+#### Create a Prometheus listener via Openstack CLI
+
+To create a Prometheus endpoint on port 9100 for Load Balancer lb1, run the following command:
 
 ```bash
-$ openstack loadbalancer listener create --name stats-listener --protocol PROMETHEUS --protocol-port 8088 lb1
+$ openstack loadbalancer listener create --name stats-listener --protocol PROMETHEUS --protocol-port 9100 lb1
 
 +-----------------------------+--------------------------------------+
 | Field                       | Value                                |
@@ -79,7 +118,7 @@ $ openstack loadbalancer listener create --name stats-listener --protocol PROMET
 | operating_status            | OFFLINE                              |
 | project_id                  | 4c1caeee063747f8878f007d1a323b2f     |
 | protocol                    | PROMETHEUS                           |
-| protocol_port               | 8088                                 |
+| protocol_port               | 9100                                 |
 | provisioning_status         | PENDING_CREATE                       |
 | sni_container_refs          | []                                   |
 | timeout_client_data         | 50000                                |
@@ -98,13 +137,29 @@ $ openstack loadbalancer listener create --name stats-listener --protocol PROMET
 +-----------------------------+--------------------------------------+
 ```
 
+Note that you add the `--allowed-cidr` option in order to filter the listener to a specific network.
+
+#### Create a Prometheus listener via Openstack CLI
+The ressource [openstack_lb_listener_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_listener_v2) from the Openstack provider enables to configure a prometheus listener. The following snippet is extracted from a full example available on [github](https://github.com/yomovh/tf-at-ovhcloud/tree/main/simple_http_lb_with_prom_grafana), adapt it to your need. 
+
+
+```hcl
+resource "openstack_lb_listener_v2" "prom_listener" {
+  protocol        = "PROMETHEUS"
+  protocol_port   = 9100
+  loadbalancer_id = openstack_lb_loadbalancer_v2.tf_lb.id
+  #restrict the access of the listener to the private network subnet
+  allowed_cidrs = [openstack_networking_subnet_v2.tf_lb_subnet.cidr]
+}
+```
+#### Configure Prometheus to collect your metrics
 Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to collect metrics from the Load Balancer by updating the `prometheus.yml` file.
 
 ```yaml
 [scrape_configs]
 - job_name: 'Octavia LB1'
   static_configs:
-  - targets: ['192.0.2.10:8088']
+  - targets: ['192.0.2.10:9100']
 ```
 
 For more information on setting up Prometheus, see the [Prometheus project website](https://prometheus.io/).
