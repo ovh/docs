@@ -26,7 +26,7 @@ Vous pouvez vérifier rapidement quelles machines virtuelles de votre infrastruc
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/Licensed
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vmLicensed
 >
 
 *Example de retour :*
