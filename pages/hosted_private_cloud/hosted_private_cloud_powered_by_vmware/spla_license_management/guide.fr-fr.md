@@ -31,7 +31,14 @@ Vous pouvez vérifier rapidement quelles machines virtuelles de votre infrastruc
 
 *Example de retour :*
 ```json
-//
+[
+    {
+        "vmId": 1074,
+        "name": "my-win2019-vm",
+        "guestOsFamily": "windows2019srv_64Guest",
+        "license": "windows 2019 Standard Core"
+    }
+]
 ```
 
 ### Vérifier la license d'une machine virtuelle
