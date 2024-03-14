@@ -140,7 +140,6 @@ As you can see then with `kubectl get nodepools`, the autoscaler detects capacit
 ```console
 $ kubectl get nodepools
 
-kubectl get nodepools
 NAME            FLAVOR   AUTOSCALED   MONTHLYBILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX  
 nodepool-d2-4   d2-4     true         false           false          2         1         1            1           0     10   
 ```
