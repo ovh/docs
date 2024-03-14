@@ -14,7 +14,6 @@ Prywatny serwer wirtualny (VPS) to wirtualny serwer dedykowany. W przeciwieństw
 
 **Poznaj informacje niezbędne do rozpoczęcia pracy z serwerem VPS.**
 
-
 ## Wymagania początkowe
 
 - Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud
@@ -22,7 +21,18 @@ Prywatny serwer wirtualny (VPS) to wirtualny serwer dedykowany. W przeciwieństw
 
 ## W praktyce
 
+### Podsumowanie
+
+- [Panel klienta](#controlpanel)
+- [Funkcje VPS dostępne w zakładce "Strona główna"](#hometab)
+- [Logowanie do serwera VPS (OS GNU/Linux)](#connect)
+- [Łączenie z serwerem VPS Windows](#winconnect)
+- [Zabezpiecz Twój serwer VPS](#secure)
+- [Przypisz domenę](#domain)
+
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
+
+<a name="controlpanel"></a>
 
 ### Panel klienta
 
@@ -34,17 +44,17 @@ Karta `Strona`{.action} główna zawiera ważne informacje o Twojej usłudze i u
 
 W tej sekcji wyświetlane są podstawowe informacje o serwerze VPS i o stanie usługi.
 
-##### **Nazwisko**
+##### Nazwisko
 
 Jeśli klikniesz `...`{.action}, a następnie wybierzesz `Zmień nazwę`{.action}, będziesz mógł wprowadzić osobną nazwę dla tego VPS. Funkcja ta jest przydatna w przypadku zarządzania kilkoma usługami VPS. Nazwa wewnętrznej usługi jest zapisana w formacie *vps-XXXXXXX.vps.ovh.net*.
 
-##### **Boot**
+##### Boot
 
 Wyświetlony tutaj tryb uruchamiania działa w trybie "normalnym", w którym system ładuje zainstalowany system operacyjny (*LOCAL*) lub w **trybie rescue** dostarczonym przez OVHcloud w przypadku rozwiązywania problemów. Użyj przycisku `...`{.action} aby [zrestartować serwer VPS](#reboot-current-range) lub uruchomić go w trybie Rescue.
 
 Więcej informacji na ten temat znajdziesz w naszym przewodniku o [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-##### **OS / Dystrybucja**
+##### OS / Dystrybucja
 
 Jest to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny z dostępnych](#reinstallvps) opcji.
 
@@ -57,31 +67,31 @@ Pamiętaj, że reinstalacja usunie wszystkie dane aktualnie hostowane na serwerz
 
 Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji znajdziesz [poniżej](#reinstallvps) i w naszym przewodniku [Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
-##### **Strefa** / **Lokalizacja**
+##### Strefa / Lokalizacja
 
 W tych sekcjach znajdziesz informacje o lokalizacji serwera VPS. Może to być przydatne na przykład do identyfikacji skutków dla Twojej usługi wymienionych w [status reports](https://bare-metal-servers.status-ovhcloud.com/).
 
 #### Twoja konfiguracja
 
-##### **Model**
+##### Model
 
 Ten element wskazuje model biznesowy identyfikujący model serwera VPS odpowiadający [ofertom VPS na naszej stronie](https://www.ovhcloud.com/pl/vps).
 
-##### **vCores** / **Pamięć** / **Przestrzeń dyskowa**
+##### vCores / Pamięć / Przestrzeń dyskowa
 
 Tutaj wyświetlają się bieżące zasoby Twojego serwera VPS. Możesz je zaktualizować osobno, klikając odpowiedni przycisk. Aktualizacje są ograniczone wybranym modelem VPS i mogą być dostępne tylko po przejściu na wyższą [gamę](https://www.ovhcloud.com/pl/vps).
 
 #### Adresy IP
 
-##### **IPv4**
+##### IPv4
 
 Główny publiczny adres IPv4 serwera VPS jest konfigurowany automatycznie podczas instalacji. Więcej informacji na temat zarządzania adresami IP znajdziesz w przewodniku [Konfiguracja IP aliasing](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 
-##### **IPv6** / **Gateway**
+##### IPv6 / Gateway
 
 W tej części można zobaczyć publiczny adres IPv6 i adres przypisanej bramy. Są one automatycznie dołączane do serwera VPS podczas instalacji. Więcej informacji zawiera [ten przewodnik](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
 
-##### **DNS secondary**
+##### DNS secondary
 
 Funkcja ta jest przydatna przy instalowaniu usług DNS. Szczegółowo opisany jest [w przewodniku dotyczącym konfigurowania DNS secondary OVHcloud na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps).
 
@@ -99,6 +109,8 @@ Wszystkie informacje na temat dostępnych dla Twojej usługi rozwiązań do twor
 
 W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania usługi. Wszystkie informacje na ten temat znajdziesz w odpowiedniej [dokumentacji](/products/account-and-service-management-managing-billing-payments-and-services).
 
+<a name="hometab"></a>
+
 ### Funkcje VPS dostępne w zakładce "Strona główna"
 
 > [!warning]
@@ -108,7 +120,7 @@ W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania
 > Celem niniejszego przewodnika jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług lub [naszą społecznością](https://community.ovh.com/en/).
 >
 
-### Reinstalacja serwera VPS <a name="reinstallvps"></a>
+#### Reinstalacja serwera VPS <a name="reinstallvps"></a>
 
 Reinstalacja jest możliwa po zalogowaniu się do panelu klienta. Kliknij `...`{.action} obok **OS / Dystrybucja**, a następnie `Reinstalacja serwera VPS`{.action}.
 
@@ -129,7 +141,7 @@ Możesz również wybrać **klucz SSH** do zainstalowania w systemie, jeśli wcz
 
 W Panelu klienta wyświetli się pasek postępu instalacji. Operacja ta może potrwać do 30 minut.
 
-### Restart serwera VPS <a name="reboot-current-range"></a>
+#### Restart serwera VPS <a name="reboot-current-range"></a>
 
 Ponowne uruchomienie może być konieczne w celu zastosowania zaktualizowanych konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "restart oprogramowania" w graficznym interfejsie serwera (Windows, Plesk, ...) lub za pomocą wiersza poleceń:
 
@@ -140,6 +152,8 @@ sudo reboot
 Jednak w każdej chwili możesz wykonać "reboot sprzętowy" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona`{.action} główna kliknij `...`{.action} obok `Boot` w sekcji **Twój VPS**. Wybierz `Restart serwera VPS`{.action} i w oknie, które się wyświetli kliknij `Zatwierdź`{.action}.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
+
+<a name="connect"></a>
 
 ### Logowanie do serwera VPS (OS GNU/Linux)
 
@@ -199,6 +213,8 @@ O ile nie określono inaczej, wszystkie operacje administracyjne opisane w dokum
 Należy pamiętać, że w przypadku wyboru **dystrybucji z aplikacją** (Plesk, cPanel, Docker) ogólne środki bezpieczeństwa mogą nie mieć zastosowania do Twojego systemu. Zapoznaj się z przewodnikami Pierwsze [kroki z wstępnie zainstalowanymi](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) aplikacjami i [wdrażaj cPanel na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), a także z oficjalną dokumentacją producenta.
 >
 
+<a name="winconnect"></a>
+
 ### Łączenie z serwerem VPS Windows
 
 Po zainstalowaniu VPS Windows otrzymasz wiadomość e-mail z nazwą domyślnego użytkownika `Windows user`.
@@ -222,6 +238,8 @@ Możesz również używać dowolnych aplikacji innych firm kompatybilnych z RDP.
 W przypadku wystąpienia problemów z tą procedurą sprawdź, czy na urządzeniu są dozwolone połączenia zdalne (RDP), sprawdzając ustawienia systemu, reguły zapory i możliwe ograniczenia sieciowe.
 >
 
+<a name="secure"></a>
+
 ### Zabezpiecz Twój serwer VPS
 
 Jako administrator serwera VPS jesteś odpowiedzialny za bezpieczeństwo przechowywanych na nim aplikacji i danych.
@@ -233,11 +251,13 @@ Zapoznaj się z naszym przewodnikiem [Zabezpieczanie VPS](/pages/bare_metal_clou
 Należy pamiętać, że w przypadku wyboru **dystrybucji z aplikacją** (Plesk, cPanel, Docker) ogólne środki bezpieczeństwa mogą nie mieć zastosowania do Twojego systemu. Zapoznaj się z przewodnikami Pierwsze [kroki z wstępnie zainstalowanymi](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) aplikacjami i [wdrażaj cPanel na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), a także z oficjalną dokumentacją producenta.
 >
 
+<a name="domain"></a>
+
 ### Przypisz domenę
 
 Aktywacja Twojego serwera VPS w Internecie zwykle polega na przypisaniu domeny i skonfigurowaniu DNS. Jeśli zarządzasz domeną w OVHcloud, zapoznaj się z naszym przewodnikiem [Edycja strefy DNS](/pages/web_cloud/domains/dns_zone_edit) OVHcloud, aby uzyskać instrukcje.
 
-### Zabezpieczenie domeny za pomocą certyfikatu SSL
+#### Zabezpieczenie domeny za pomocą certyfikatu SSL
 
 Po skonfigurowaniu Twojego serwera VPS, masz możliwość zabezpieczenia nazwy Twojej domeny oraz Twojej strony WWW. W tym celu potrzebujesz certyfikatu SSL, który umożliwi dostęp do Internetu Twojego serwera VPS za pośrednictwem protokołu *HTTPS* zamiast *niezabezpieczonego HTTP*.
 
