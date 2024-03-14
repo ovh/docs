@@ -1,7 +1,7 @@
 ---
 title: 'Configurer votre serveur de bases de données'
 excerpt: 'Découvrez comment configurer et optimiser votre serveur de base de données'
-updated: 2024-03-13
+updated: 2024-03-14
 ---
 
 ## Objectif
