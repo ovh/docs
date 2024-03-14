@@ -40,25 +40,25 @@ Seleziona la scheda corrispondente al tuo servizio di posta:
 >>
 >> Per verificare se la tua offerta MXplan è una versione storica o nuova, fai riferimento alla tabella nella sezione [Identifica la tua offerta MXplan](#whichmxplan)" di questa guida.<br><br>
 >>
->> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a destra dell'account da modificare e poi clicca su `Elimina l'account`{.action}.<br><br>
+>> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Elimina l'account`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **Email MX Plan nuova versione**
 >>
 >> Per verificare se la tua offerta MXplan è una versione storica o nuova, fai riferimento alla tabella nella sezione [Identifica la tua offerta MXplan](#whichmxplan)" di questa guida.<br><br>
 >>
->> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a destra dell'account da modificare e poi clicca su `Reimposta questo account`{.action}.<br><br>
+>> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Reimposta questo account`{.action}.<br><br>
 >>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
->> Clicca su `Email Pro`{.action} e seleziona il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a destra dell'account da modificare e poi clicca su `Reimposta questo account`{.action}.<br><br>
+>> Clicca su `Email Pro`{.action} e seleziona il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Reimposta questo account`{.action}.<br><br>
 >> Dopo la reinizializzazione del tuo account, per eliminarlo definitivamente, dovrai disattivarlo. Per effettuare questa operazione, consulta la nostra guida [Gestire la fatturazione dei tuoi account Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).<br><br>
 >>![email](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Clicca su `Microsoft`{.action} e poi su `Exchange`{.action} e scegli il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a destra dell'account da modificare e poi clicca su `Reimposta`{.action}.<br><br>
+>> Clicca su `Microsoft`{.action} e poi su `Exchange`{.action} e scegli il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Clicca sul pulsante `...`{.action} a destra dell'account da modificare e poi clicca su `Reimposta`{.action}.<br><br>
 >> Dopo la reinizializzazione del tuo account, per eliminarlo definitivamente, dovrai disattivarlo. Per effettuare questa operazione, consulta la nostra guida [Gestire la fatturazione dei tuoi account Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange).<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
