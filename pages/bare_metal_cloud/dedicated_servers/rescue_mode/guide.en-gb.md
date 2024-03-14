@@ -6,11 +6,11 @@ updated: 2024-01-09
 
 ## Objective
 
-La modalità Rescue è uno strumento fornito da OVHcloud che ti permette di avviare un sistema operativo temporaneo con lo scopo di diagnosticare e risolvere i problemi sul tuo server.
+Rescue mode is a tool provided by OVHcloud that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues on your server.
 
-La modalità Rescue è generalmente adatta alle seguenti operazioni:
+Usual tasks the rescue mode is appropriate for include:
 
-- [Reimpostare la password utente](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+- [Resetting your user password](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosing network problems
 - Repairing a broken operating system
 - Fixing a software firewall misconfiguration
