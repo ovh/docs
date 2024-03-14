@@ -79,13 +79,13 @@ Para bloquear um endereço IP específico, insira um dos dois códigos seguintes
 >> ```
 >>
 
-- **Exemplo** : se pretender bloquear o endereço IP 192.168.1.2, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender bloquear o endereço IP 203.0.113.0, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3
@@ -93,7 +93,7 @@ Para bloquear um endereço IP específico, insira um dos dois códigos seguintes
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -119,13 +119,13 @@ Para bloquear um intervalo de endereços IP, insira um dos dois códigos seguint
 >> ```
 >>
 
-- **Exemplo** : se pretender bloquear todos os IPs em 192.168.x.x, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender bloquear todos os IPs em 203.0.113.x, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3
@@ -133,7 +133,7 @@ Para bloquear um intervalo de endereços IP, insira um dos dois códigos seguint
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -255,7 +255,7 @@ Para autorizar apenas um IP a aceder ao seu serviço, insira um dos dois código
 >> ```
 >>
 
-- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento aos IPs 192.168.1.2 e 192.168.1.3, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento aos IPs 203.0.113.0 e 203.0.113.1, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
@@ -263,14 +263,14 @@ Para autorizar apenas um IP a aceder ao seu serviço, insira um dos dois código
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -295,7 +295,7 @@ Para autorizar um intervalo de endereços IP a aceder ao seu serviço, insira um
 >> ```
 >>
 
-- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento ao intervalo de endereços IP 192.168.1.x, deverá escrever um dos dois códigos seguintes:
+- **Exemplo** : se pretender autorizar apenas o acesso ao seu alojamento ao intervalo de endereços IP 203.0.113.x, deverá escrever um dos dois códigos seguintes:
 
 > [!tabs]
 > Sintaxe histórico
@@ -303,14 +303,14 @@ Para autorizar um intervalo de endereços IP a aceder ao seu serviço, insira um
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Sintaxe a partir de Apache 2.3 
 >> A colocar no topo do seu ".htaccess"
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 

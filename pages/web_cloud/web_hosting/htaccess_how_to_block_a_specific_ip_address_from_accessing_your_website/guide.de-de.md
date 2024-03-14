@@ -80,13 +80,13 @@ Um eine bestimmte IP-Adresse zu blockieren, tragen Sie einen der beiden folgende
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie die IP-Adresse 192.168.1.2 blockieren möchten, müssen Sie einen der folgenden Codes einfügen:
+- **Beispiel**: Wenn Sie die IP-Adresse 203.0.113.0 blockieren möchten, müssen Sie einen der folgenden Codes einfügen:
 
 > [!tabs]
 > Historische Syntax
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Syntax ab Apache 2.3
@@ -94,7 +94,7 @@ Um eine bestimmte IP-Adresse zu blockieren, tragen Sie einen der beiden folgende
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -120,13 +120,13 @@ Um einen IP-Adressbereich zu blockieren, tragen Sie einen der beiden folgenden C
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie alle IP-Adressen in 192.168.x.x blockieren möchten, tragen Sie einen der folgenden Codes ein:
+- **Beispiel**: Wenn Sie alle IP-Adressen in 203.0.113.x blockieren möchten, tragen Sie einen der folgenden Codes ein:
 
 > [!tabs]
 > Historische Syntax
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Syntax ab Apache 2.3
@@ -134,7 +134,7 @@ Um einen IP-Adressbereich zu blockieren, tragen Sie einen der beiden folgenden C
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -256,7 +256,7 @@ Um nur einer IP den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der f
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie nur den IPs 192.168.1.2 und 192.168.1.3 den Zugriff auf Ihr Hosting erlauben möchten, verwenden Sie einen der folgenden Codes:
+- **Beispiel**: Wenn Sie nur den IPs 203.0.113.0 und 203.0.113.1 den Zugriff auf Ihr Hosting erlauben möchten, verwenden Sie einen der folgenden Codes:
 
 > [!tabs]
 > Historische Syntax
@@ -264,14 +264,14 @@ Um nur einer IP den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der f
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Syntax ab Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -296,7 +296,7 @@ Um einem IP-Bereich den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen d
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie nur dem IP-Bereich 192.168.1.x den Zugriff auf Ihr Hosting erlauben möchten, fügen Sie einen der folgenden Codes ein:
+- **Beispiel**: Wenn Sie nur dem IP-Bereich 203.0.113.x den Zugriff auf Ihr Hosting erlauben möchten, fügen Sie einen der folgenden Codes ein:
 
 > [!tabs]
 > Historische Syntax
@@ -304,14 +304,14 @@ Um einem IP-Bereich den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen d
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Syntax ab Apache 2.3
 >> An oberster Stelle der ".htaccess" zu platzieren
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 

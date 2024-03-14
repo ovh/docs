@@ -81,13 +81,13 @@ Per bloccare un indirizzo IP specifico, inserisci uno dei due codici seguenti ne
 >> ```
 >>
 
-- **Esempio**: per bloccare l'indirizzo IP 192.168.1.2, è necessario scrivere uno dei due codici seguenti:
+- **Esempio**: per bloccare l'indirizzo IP 203.0.113.0, è necessario scrivere uno dei due codici seguenti:
 
 > [!tabs]
 > Sintassi storici
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Sintassi a partire da Apache 2.3
@@ -95,7 +95,7 @@ Per bloccare un indirizzo IP specifico, inserisci uno dei due codici seguenti ne
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -121,13 +121,13 @@ Per bloccare un intervallo di indirizzi IP, inserisci uno dei due codici seguent
 >> ```
 >>
 
-- **Esempio**: per bloccare tutti gli IP nel 192.168.x.x, è necessario scrivere uno dei due codici seguenti:
+- **Esempio**: per bloccare tutti gli IP nel 203.0.113.x, è necessario scrivere uno dei due codici seguenti:
 
 > [!tabs]
 > Sintassi storici
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Sintassi a partire da Apache 2.3
@@ -135,7 +135,7 @@ Per bloccare un intervallo di indirizzi IP, inserisci uno dei due codici seguent
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -257,7 +257,7 @@ Per autorizzare un solo IP ad accedere al tuo servizio, inserisci uno dei due co
 >> ```
 >>
 
-- **Esempio**: se vuoi autorizzare l'accesso al tuo hosting solo agli IP 192.168.1.2 e 192.168.1.3, devi scrivere uno dei due codici seguenti:
+- **Esempio**: se vuoi autorizzare l'accesso al tuo hosting solo agli IP 203.0.113.0 e 203.0.113.1, devi scrivere uno dei due codici seguenti:
 
 > [!tabs]
 > Sintassi storici
@@ -265,14 +265,14 @@ Per autorizzare un solo IP ad accedere al tuo servizio, inserisci uno dei due co
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Sintassi a partire da Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -297,7 +297,7 @@ Per autorizzare un intervallo di IP ad accedere al tuo servizio, inserisci uno d
 >> ```
 >>
 
-- **Esempio**: se vuoi autorizzare l'accesso al tuo hosting solo alla gamma di IP 192.168.1.x, devi scrivere uno dei due codici seguenti:
+- **Esempio**: se vuoi autorizzare l'accesso al tuo hosting solo alla gamma di IP 203.0.113.x, devi scrivere uno dei due codici seguenti:
 
 > [!tabs]
 > Sintassi storici
@@ -305,14 +305,14 @@ Per autorizzare un intervallo di IP ad accedere al tuo servizio, inserisci uno d
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Sintassi a partire da Apache 2.3
 >> Da mettere in alto nel vostro ".htaccess"
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 

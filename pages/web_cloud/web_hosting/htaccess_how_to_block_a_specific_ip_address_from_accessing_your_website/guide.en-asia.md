@@ -75,13 +75,13 @@ To block a specific IP address, insert one of the following two codes into your 
 >> ```
 >>
 
-- **Example**: If you want to block the IP address 192.168.1.2, you will need to write one of the following two codes:
+- **Example**: If you want to block the IP address 203.0.113.0, you will need to write one of the following two codes:
 
 > [!tabs]
 > Historical Syntax
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Syntax from Apache 2.3
@@ -89,7 +89,7 @@ To block a specific IP address, insert one of the following two codes into your 
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -115,13 +115,13 @@ To block an IP address range, insert one of the following two codes into your ".
 >> ```
 >>
 
-- **Example**: If you want to block all IPs in 192.168.x.x, you will need to write one of the following two codes:
+- **Example**: If you want to block all IPs in 203.0.113.x, you will need to write one of the following two codes:
 
 > [!tabs]
 > Historical Syntax
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Syntax from Apache 2.3
@@ -129,7 +129,7 @@ To block an IP address range, insert one of the following two codes into your ".
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -251,7 +251,7 @@ To authorise only one IP to access your service, insert one of the following two
 >> ```
 >>
 
-- **Example**: If you only want to authorise IPs 192.168.1.2 and 192.168.1.3 to access your hosting, you will need to write one of the following two codes:
+- **Example**: If you only want to authorise IPs 203.0.113.0 and 203.0.113.1 to access your hosting, you will need to write one of the following two codes:
 
 > [!tabs]
 > Historical Syntax
@@ -259,14 +259,14 @@ To authorise only one IP to access your service, insert one of the following two
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Syntax from Apache 2.3 
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -291,7 +291,7 @@ To authorise a range of IPs to access your service, insert one of the following 
 >> ```
 >>
 
-- **Example**: If you only want to authorise the IP range 192.168.1.x to access your hosting, you will need to write one of the following two codes:
+- **Example**: If you only want to authorise the IP range 203.0.113.x to access your hosting, you will need to write one of the following two codes:
 
 > [!tabs]
 > Historical Syntax
@@ -299,14 +299,14 @@ To authorise a range of IPs to access your service, insert one of the following 
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Syntax from Apache 2.3 
 >> To be placed at the top of your ".htaccess"
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 

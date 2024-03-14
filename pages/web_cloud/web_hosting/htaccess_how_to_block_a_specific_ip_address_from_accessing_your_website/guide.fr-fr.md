@@ -75,13 +75,13 @@ Pour bloquer une adresse IP spécifique, insérez l'un des deux codes suivants d
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez bloquer l'adresse IP 192.168.1.2, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez bloquer l'adresse IP 203.0.113.0, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3
@@ -89,7 +89,7 @@ Pour bloquer une adresse IP spécifique, insérez l'un des deux codes suivants d
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -115,13 +115,13 @@ Pour bloquer une plage d'adresses IP, insérez l'un des deux codes suivants dans
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez bloquer toutes les IPs en 192.168.x.x, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez bloquer toutes les IPs en 203.0.113.x, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3
@@ -129,7 +129,7 @@ Pour bloquer une plage d'adresses IP, insérez l'un des deux codes suivants dans
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -251,7 +251,7 @@ Pour n'autoriser qu'une seule IP à accéder à votre service, insérez l'un des
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez autoriser uniquement les IPs 192.168.1.2 et 192.168.1.3 à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez autoriser uniquement les IPs 203.0.113.0 et 203.0.113.1 à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
@@ -259,14 +259,14 @@ Pour n'autoriser qu'une seule IP à accéder à votre service, insérez l'un des
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -291,7 +291,7 @@ Pour autoriser une plage d'IPs à accéder à votre service, insérez l'un des d
 >> ```
 >>
 
-- **Exemple** : si vous souhaitez autoriser uniquement la plage d'IPs 192.168.1.x à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
+- **Exemple** : si vous souhaitez autoriser uniquement la plage d'IPs 203.0.113.x à accéder à votre hébergement, vous devrez écrire l'un des deux codes suivants :
 
 > [!tabs]
 > Syntaxe historique
@@ -299,14 +299,14 @@ Pour autoriser une plage d'IPs à accéder à votre service, insérez l'un des d
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Syntaxe à partir d'Apache 2.3 
 >> À placer tout en haut de votre « .htaccess »
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 
