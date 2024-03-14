@@ -204,23 +204,9 @@ show variables like "version";
 
 ### Logs and metrics
 
-#### Access to Slow Query logs
+#### Log access
 
-> **Definition of slow query log**
-> 
-> These are the queries that take longer to run. The value is set to 1 second on our database servers in the variable **“long_query_time”**.
-
-These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server.
-
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
-
-In the `General information` tab, you will find the **SFTP** section in the **Connection information** box.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-If this file is empty, you do not have any slow queries.
+To access the logs for your Web Cloud Databases solution, please refer to our guide on "[Web Cloud Databases - How to retrieve logs](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitoring the RAM used
 
