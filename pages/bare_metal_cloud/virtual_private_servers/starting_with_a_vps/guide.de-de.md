@@ -25,7 +25,7 @@ Ein Virtual Private Server (VPS) ist ein virtualisierter Dedicated Server. Im Ge
 
 - [Kundencenter Interface](#controlpanel)
 - [VPS-Funktionen im Bereich "Start"](#hometab)
-- [Verbindung zu Ihrem VPS (GNU/Linux Betriebssystem))](#connect)
+- [Verbindung zu Ihrem VPS (GNU/Linux Betriebssystem)](#connect)
 - [Verbindung mit Ihrem Windows VPS](#winconnect)
 - [Absicherung Ihres VPS](#secure)
 - [Domainnamen zuweisen](#domain)
