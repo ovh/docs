@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?"
 excerpt: "Erfahren Sie hier die Möglichkeiten, um mit .htaccess Dateien den Zugriff auf Ihre Website für bestimmte IP-Adressen zu blockieren"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 > [!primary]

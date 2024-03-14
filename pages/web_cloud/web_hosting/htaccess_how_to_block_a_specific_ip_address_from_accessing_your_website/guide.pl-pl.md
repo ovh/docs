@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Jak zablokować dostęp do mojej strony dla niektórych adresów IP za pomocą pliku .htaccess?"
 excerpt: "Odkryj operacje możliwe przy użyciu pliku .htaccess, w celu zablokowania dostępu do Twojej strony WWW dla niektórych adresów IP"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 > [!primary]

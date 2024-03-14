@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Come bloccare l'accesso al mio sito per alcuni indirizzi IP tramite un file .htaccess?"
 excerpt: "Scopri le azioni possibili tramite un file .htaccess per bloccare l'accesso al tuo sito ad alcuni indirizzi IP"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 > [!primary]

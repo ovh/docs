@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Como bloquear o acesso ao meu site para alguns endereços IP através de um ficheiro .htaccess ?"
 excerpt: "Descubra as ações possíveis através de um ficheiro .htaccess para bloquear o acesso ao seu site a determinados endereços IP"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?"
 excerpt: "Find out about the actions you can take via a .htaccess file to block access to your website for certain IP addresses"
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 ## Objective
