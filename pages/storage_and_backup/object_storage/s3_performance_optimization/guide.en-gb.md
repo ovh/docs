@@ -254,3 +254,9 @@ When you upload a very large number of objects at once, you trigger the sharding
 In order to avoid the reduced performance (503 SLOWDOWN errors), we recommand that you optimize your uploads by spreading your request over time. That spread does not have to be linear but it should give us enough time to better load balance your workload.
 
 A simple way to achieve that lies in better 503 slowdown errors management and error recovery : ramp up your uploads until you hit 503 errors and modulate your workload to accomodate the throttling until sharding is complete and then ramp up again.
+
+## Increase object sizes
+
+Objects are considered to be small if their size is less than 1MB. When dealing with large volumes of data (PB scale), the total number of objects rapidly reaches billions even trillions. Managing with the metadata administration at this scale leads and dealing with the sheer number of I/O operations poses an great challenge: how to deliver a great service without losing information or comprimising performance.
+
+When applicable, we recommand that you increase the object/part size as much as possible in order to reduce the number of objects.
