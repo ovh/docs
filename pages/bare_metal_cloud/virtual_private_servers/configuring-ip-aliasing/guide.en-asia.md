@@ -337,7 +337,7 @@ You now need to restart your interface:
 sudo systemctl restart NetworkManager
 ```
 
-### cPanel (on AlmaLinux 9)
+### cPanel
 
 #### Step 1: Access the WHM IP management section
 
@@ -408,33 +408,37 @@ In order to retrieve the current IP configuration, enter `ipconfig` at the comma
 
 Now you need to change the IP properties to a static configuration.
 
-Open the adapter settings in the Windows control panel and then open the `Properties`{.action} of `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
+1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings `{.action}(in the left-hand menu).
+2. Right-click on `Ethernet`{.action}.
+3. Click on `Properties`{.action}.
+4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
+5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type 213.186.33.99.
+
 
 ![change the ip configuration](images/image2.png){.thumbnail}
 
-In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the IP address which you have retrieved in the first step, then click on `Advanced`{.action}.
+> [!warning]
+>
+> Be careful – the server will no longer be accessible if you enter incorrect information. You will then have to make the corrections in VNC.
+
+Once done, click on `Advanced`{.action}.
 
 #### Step 3: Add the Additional IP in the "Advanced TCP/IP Settings"
 
 In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
 
+**picture of new IP information**
+
 ![advance configuration section](images/image4-4.png){.thumbnail}
 
 Confirm by clicking on `Add`{.action}.
 
+**picture of clicking on add**
 ![Additional IP configuration](images/image5-5.png){.thumbnail}
 
-#### Step 4: Restart the network interface
+Once done, click on `OK`{.action} in all the opened tabs to apply the configuration. You will lose the connection to the server for a few seconds.
 
-Back in the control panel (`Network Connections`{.action}), right-click on your network interface and then select `Disable`{.action}.
-
-![disabling network](images/image6.png){.thumbnail}
-
-To restart it, right-click on it again and then select `Enable`{.action}.
-
-![enabling network](images/image7.png){.thumbnail}
-
-#### Step 5: Check the new network configuration
+#### Step 4: Check the new network configuration
 
 Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
 
