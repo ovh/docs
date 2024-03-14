@@ -215,17 +215,43 @@ Veuillez noter que si vous avez sélectionné une **distribution avec applicatio
 
 ### Connexion à votre VPS Windows
 
-Une fois votre VPS Windows installé, vous recevez un e-mail avec le nom de l'utilisateur par défaut `Windows user`.
+#### Étape 1 : finaliser l'installation de Windows
 
-Il vous faudra ensuite finaliser l'installation de Windows en définissant la langue d'affichage, la disposition du clavier et le mot de passe de votre administrateur.
+Une fois le système d'exploitation Windows installé, vous recevez un e-mail avec le nom de compte de l'utilisateur par défaut `Windows user`.
 
-Pour cela, utilisez notre console KVM : cliquez sur `...`{.action} à côté du nom de votre VPS dans la section [Votre VPS](#yourvps) et sélectionnez `KVM`{.action}. Vous pouvez trouver plus d'informations sur cet outil dans notre [guide KVM](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+Vous devrez ensuite terminer le processus d'installation de Windows en définissant votre langue d'affichage, votre disposition du clavier et votre mot de passe administrateur.
 
-Pour terminer l'installation de votre VPS Windows via KVM, suivez les étapes décrites dans notre guide [Configurer une nouvelle installation de Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config).
+Ceci se fait dans la console VPS KVM : cliquez sur `...`{.action} à côté du nom de votre VPS dans la section [Votre VPS](#yourvps) et sélectionnez `KVM`{.action}. Vous pouvez trouver plus d'informations sur cet outil dans notre [guide KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
 
-Sur votre équipement Windows local, vous pouvez utiliser l'application cliente `Remote Desktop Connection` pour vous connecter au VPS.
+Pour finaliser la configuration initiale de votre VPS Windows, suivez les étapes ci-dessous en parcourant les onglets :
 
-![windows remote](images/windows-connect-03.png){.thumbnail}
+> [!tabs]
+> **Paramètres régionaux**
+>>
+>> Une fois la session KVM établie, vous pouvez terminer la configuration initiale de Windows en configurant votre **pays/région**, la **langue de Windows** préférée et votre **disposition de clavier**. Cliquez ensuite sur le bouton `Suivant`{.action} en bas à droite.<br><br>
+>>![KVM](images/setup-03.png){.thumbnail}<br>
+>>
+> **Mot de passe administrateur**
+>>
+>> Définissez un mot de passe pour votre compte Windows `Administrator` / `admin` et confirmez-le, puis cliquez sur `Terminer`{.action}.<br><br>
+>>![KVM](images/setup-04.png){.thumbnail}<br>
+>>
+> **Ecran de connexion**
+>>
+>> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.<br><br>
+>>![KVM](images/setup-05.png){.thumbnail}<br>
+>>
+> **Login administrateur**
+>>
+>> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur la `flèche`.<br><br>
+>>![KVM](images/setup-06.png){.thumbnail}<br>
+>>
+
+#### Étape 2 : se connecter au serveur avec RDP
+
+Sur votre équipement Windows local, vous pouvez utiliser l'application cliente « Connexion Bureau à distance » pour vous connecter au VPS.
+
+![Windows remote](images/windows-connect-03.png){.thumbnail}
 
 Renseignez l'adresse IPv4 de votre VPS, puis votre identifiant et votre passphrase. Généralement, un message d'avertissement apparaît, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter.
 
@@ -235,6 +261,37 @@ Vous pouvez également utiliser toute application tierce compatible avec RDP. Ce
 >
 Si vous rencontrez des problèmes avec cette procédure, vérifiez que les connexions à distance (RDP) sont autorisées sur votre appareil en vérifiant les paramètres système, les règles de pare-feu et les restrictions réseau possibles.
 >
+
+#### Activation des journaux de démarrage Windows (facultatif)
+
+Les journaux de démarrage de Windows peuvent être utiles pour les diagnostics d'erreur de serveur.
+
+Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
+
+> [!tabs]
+> **Se connecter au serveur**
+>>
+>> Se connecter à votre serveur via un bureau à distance ou une session [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).<br>
+>>
+> **Ouvrir l'application en ligne de commande**
+>>
+>> Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.<br><br>
+>>![KVM](images/windowsboot1.png){.thumbnail}<br>
+>>
+> **Ouvrir « msconfig »**
+>>
+>> Entrez « msconfig » et cliquez sur `OK`{.action}.<br><br>
+>>![KVM](images/windowsboot2.png){.thumbnail}<br>
+>>
+> **Activer les logs**
+>>
+>> Dans la nouvelle fenêtre, activez l'option logs à côté de `Boot log`. Cliquez sur `OK`{.action}.<br><br>
+>>![KVM](images/windowsboot3.png){.thumbnail}<br>
+>>
+
+Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier `.txt`. Le chemin d'accès au fichier est : `C:\Windows\ntbtlog.txt`.
+
+Pour accéder au fichier journal en mode rescue, veuillez suivre les instructions du [guide du mode rescue du VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 <a name="secure"></a>
 
