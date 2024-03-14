@@ -53,7 +53,9 @@ $ openstack loadbalancer listener stats show <listener id>
 
 ### Monitoring with Prometheus
 
-To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener with a `PROMETHEUS` special protocol. This will enable the endpoint `/metrics` on the listener. This listener type provides the same features as the "regular" listeners, such as `allowed_cidrs`, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
+To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener with a `PROMETHEUS` special protocol. This will enable the  `/metrics` endpoint which by default listens on all the interfaces from your load balancer. **This means that if your load balancer is using a Floating IP, by default the `/metrics` endpoints will be opened to the internet**. To avoid that, we advise to set the `allowed_cidrs`` option to protect your metrics, for example with the CIDR of the subnet where the load balancer is spawned.
+
+This listener type provides the same features as the "regular" listeners but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
 
 > [!primary]
 >
@@ -137,9 +139,9 @@ $ openstack loadbalancer listener create --name stats-listener --protocol PROMET
 +-----------------------------+--------------------------------------+
 ```
 
-Note that you add the `--allowed-cidr` option in order to filter the listener to a specific network.
+Note that you should add the `--allowed-cidr` option in order to filter the listener to a specific network.
 
-#### Create a Prometheus listener via Openstack CLI
+#### Create a Prometheus listener via terraform
 The ressource [openstack_lb_listener_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_listener_v2) from the Openstack provider enables to configure a prometheus listener. The following snippet is extracted from a full example available on [github](https://github.com/yomovh/tf-at-ovhcloud/tree/main/simple_http_lb_with_prom_grafana), adapt it to your need. 
 
 
