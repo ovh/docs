@@ -206,7 +206,7 @@ show variables like "version";
 
 #### Log access
 
-To access the logs for your Web Cloud Databases solution, please refer to our guide on "[Web Cloud Databases - How to retrieve logs](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
+To access the logs for your Web Cloud Databases solution, please refer to our guide "[Web Cloud Databases - How to retrieve logs](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitoring the RAM used
 
