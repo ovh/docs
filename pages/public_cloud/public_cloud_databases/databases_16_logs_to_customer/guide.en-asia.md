@@ -50,6 +50,7 @@ To find logs of your service in your graylogs stream you can use following grayl
 Query: `cluster: "<HostID>"`
 
 You can find this `HostID` in your manager :
+
 - In `Login information` switch `Service` to `mongodb`
 - Now you can see the `Host` field with the format `<HostID>.database.cloud.ovh.net`
 
@@ -58,12 +59,13 @@ You can find this `HostID` in your manager :
 Query: `clusterID: "<Engine>-<HostID>"`
 
 You can find this `HostID` in your manager :
+
 - Find the Cluster ID formated as a UUID (AAAAAAAA-BBBB-CCCC-DDDDDDDDDDDD)
 - `HostID` is the first part of the UUID (AAAAAAAA)
 
 ### Delete subscription
 
-You have 2 methods to delete subscription: 
+You have 2 methods to delete subscription:
 
 - You can delete subscriptions using the `subscriptionId` concerned in this API call:
 
