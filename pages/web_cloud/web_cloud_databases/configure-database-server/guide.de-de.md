@@ -209,7 +209,7 @@ show variables like "version";
 
 #### Zugang zu den Logs
 
-Die Logs Ihrer Web Cloud Databases Lösung finden Sie in unserer Anleitung „[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)“.
+Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, folgen Sie unserer Anleitung „[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)“.
 
 #### Überprüfung der RAM Nutzung
 
