@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - htaccess-Dateien mit WordPress verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
-updated: 2023-06-22
+updated: 2024-03-15
 ---
 
 > [!primary]
