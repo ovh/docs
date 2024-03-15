@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Użyj pliku htaccess w systemie WordPress"
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
-updated: 2023-06-22
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -142,12 +142,12 @@ Jeśli zidentyfikowałeś złośliwy adres IP, w pliku **.htaccess**wpisz poniż
 
 ```bash
 <Limit GET POST>
-    order allow,deny deny from xxx.xxx.xxx.xxx
+    order allow,deny deny from 203.0.113.0
     allow from all
 </Limit>
 ```
 
-W tym przykładzie `xxx.xxx.xxx.xxx` oznacza adres IP, który ma zostać zablokowany.
+W tym przykładzie `203.0.113.0` oznacza adres IP, który ma zostać zablokowany.
 
 Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodnikiem dotyczącym ["ograniczenia dostępu przez IP poprzez plik .htaccess"](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -158,8 +158,8 @@ Katalog **wp-admin** pozwala na połączenie z Twoim interfejsem administracyjny
 ```bash
 <Limit GET POST PUT>
     order deny,allow deny from all
-    allow from xxx.xxx.xxx.xxx
-    allow from xxx.xxx.xxx.xxx
+    allow from 203.0.113.0
+    allow from 203.0.113.0
 </Limit>
 ```
 
