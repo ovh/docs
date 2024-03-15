@@ -1,7 +1,7 @@
 ---
 title: Mehrere Websites auf einem Webhosting einrichten
 excerpt: Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden
-updated: 2023-09-08
+updated: 2024-03-15
 ---
 
 > [!primary]

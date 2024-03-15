@@ -1,7 +1,7 @@
 ---
 title: 'Alojar varios sitios web en un mismo hosting'
 excerpt: 'Descubra cómo utilizar un plan de hosting para alojar varios sitios web'
-updated: 2023-09-08
+updated: 2024-03-15
 ---
 
 > [!primary]

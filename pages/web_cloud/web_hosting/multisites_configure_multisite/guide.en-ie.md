@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2023-09-08
+updated: 2024-03-15
 ---
 
 ## Objective
