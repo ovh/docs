@@ -29,7 +29,7 @@ This guide will help you:
 
 You can enable one or more two-factor authentication methods to secure and control access to your Control Panel.
 
-We offer four different methods (click on the tabs below to view their presentation):
+We offer four different methods (click on the tabs below to view their explanations):
 
 > [!tabs]
 > SMS
@@ -37,7 +37,7 @@ We offer four different methods (click on the tabs below to view their presentat
 >> For this method, you will need to enter your mobile number.
 >> A one-time code is sent to you via SMS each time you try to log in to your OVHcloud account.
 >>
->> The main advantage of this method is that it uses codeq sent to a device other than your computer. If your domain is compromised, e.g. by malware, your account will remain secure.
+>> The main advantage of this method is that codes are sent to a device not attached to your computer. If your system is compromised, e.g. by malware, your account will remain secure.
 >> However, you must have sufficient network coverage to receive SMS messages.
 >>
 > Mobile App
@@ -67,7 +67,7 @@ We offer four different methods (click on the tabs below to view their presentat
 >>
 >> This two-factor authentication method complements an already activated method (via **SMS**, **Mobile Application** or **Security key**). It cannot be activated alone.
 >>
->> Each time you try to log in, you can enter one of the 10 one-time codes.
+>> Each time you try to log in, you can enter one of the 10 single-use codes.
 >> It is essential to always have at least 1 remaining backup code. Remember to regenerate them via the OVHcloud Control Panel if you have used all of them, or if you have lost them.
 
 ### Step 1 - Enable your first two-factor authentication method <a name="enabling-2fa"></a>
@@ -120,7 +120,7 @@ Once you have added the first method, you can also **add one or two other method
 
 ### Step 2 - Save backup codes <a name="codes"></a>
 
-When you add two-factor authentication for the first time, you will see 10 one-time **backup codes** displayed in the OVHcloud Control Panel.
+When you add two-factor authentication for the first time, you will see 10 single-use **backup codes** displayed in the OVHcloud Control Panel.
 
 **Please keep them safe**. We recommend saving them in a password manager, such as [KeePass](https://keepass.info/){.external} or [Bitwarden](https://bitwarden.com/) (both applications are free).
 
@@ -156,9 +156,9 @@ By choosing this last method, you just need to enter one of your backup codes.
 
 If your device (mobile phone/smartphone/security key) is lost, stolen or no longer works, you can:
 
-- use the active [backup codes](#codes) that you have backed up.
-- use another two-factor authentication device, if you have enabled several.
-- [disable two-factor authentication](#disable-2fa).
+- Use the active [backup codes](#codes) that you have backed up.
+- Use another two-factor authentication device, if you have enabled several.
+- [Disable two-factor authentication](#disable-2fa).
 
 > [!warning]
 >
@@ -174,9 +174,9 @@ If your device (mobile phone/smartphone/security key) is lost, stolen or no long
 >
 > Before removing a device, and in order not to block access to your account, please check that you have:
 >
-> - another functional device;
-> - another functional two-factor authentication method;
-> - valid backup codes.
+> - Another functional device
+> - Another functional two-factor authentication method
+> - Valid backup codes
 >
 
 To remove a device, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click your name in the top right-hand corner, then click your initials.
