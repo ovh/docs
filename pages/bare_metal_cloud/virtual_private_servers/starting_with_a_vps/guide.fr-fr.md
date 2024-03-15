@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2024-03-15
+updated: 2024-03-14
 ---
 
 ## Objectif
@@ -273,7 +273,7 @@ Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 >>
 >> Se connecter à votre serveur via un bureau à distance ou une session [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).<br>
 >>
-> **Ouvrir l'application en ligne de commande**
+> **Ouvrir l'utilitaire « Exécuter »**
 >>
 >> Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.<br><br>
 >>![KVM](images/windowsboot1.png){.thumbnail}<br>
