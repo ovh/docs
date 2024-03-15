@@ -1,6 +1,6 @@
 ---
 title: Cluster autoscaler example
-updated: 2024-03-14
+updated: 2024-03-15
 ---
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
@@ -33,14 +33,14 @@ You can activate the autoscaler on several node pools, each of which can have a 
 >
 > The source code of the following example is available in the public Github repository [public-cloud-examples](https://github.com/ovh/public-cloud-examples/tree/main/containers-orchestration/managed-kubernetes/autoscaler)
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
 
 
 ## Deploying a test workload
 
-Assume that you have created a MKS cluster with a node pool with its minimum setted to 1 and its maximum setted to 3.
+Let's assume that you have created an MKS cluster with a node pool with its minimum set to 1 and its maximum set to 3.
 
-In order to test the autoscaler, we propose you to install a *Python heavy CPU load* Deployment that deploys several instances of *Python CPU load* pods. The *Python CPU load* pod simply heavy charge each allocated CPU of your pod. It's a CPU intensive operation, but it uses a minimal amount of memory.  
+In order to test the autoscaler, we offer you to install a *Python heavy CPU load* Deployment that deploys several instances of *Python CPU load* pods. The *Python CPU load* pod simply heavy charge each allocated CPU of your pod. It's a CPU intensive operation, but it uses a minimal amount of memory.
 
 Create a `cpu-load.yaml` manifest for the *python-cpu-load* deployment:
 
@@ -140,7 +140,6 @@ As you can see then with `kubectl get nodepools`, the autoscaler detects capacit
 ```console
 $ kubectl get nodepools
 
-kubectl get nodepools
 NAME            FLAVOR   AUTOSCALED   MONTHLYBILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX  
 nodepool-d2-4   d2-4     true         false           false          2         1         1            1           0     10   
 ```
