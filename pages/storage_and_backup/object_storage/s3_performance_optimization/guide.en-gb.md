@@ -8,7 +8,7 @@ OVHcloud Object Storage supports byte range fetch. The idea behind is to fetch a
 
 ![Schema 1](images/sharding1.png)
 
-To download part of an object, you must use additional parameters to specify which part of an object that you want to fetch. The following example dowloads the first part ranging from 0 to 500 bytes of an object named "filename" stored in the "test-bucket" bucket and writes the output as a file named "object_part" :
+To download part of an object, you must use additional parameters to specify which part of an object that you want to fetch. The following example dowloads the first part ranging from 0 to 500 bytes of an object named "filename" stored in the "test-bucket" bucket and writes the output as a file named "object_part":
 
 ```bash
 user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range bytes=0-500 object_part
