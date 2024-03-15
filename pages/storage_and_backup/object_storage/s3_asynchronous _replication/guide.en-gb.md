@@ -6,6 +6,7 @@ Destination buckets can reside within a single region or be dispersed across mul
 
 ## Key Use Cases for Object Replication
 
+
 - **Exact Object Copies with Metadata Replication**: Replication is not just about duplicating the object; it includes the replication of all associated metadata (e.g., object creation time, version ID, etc.). This ensures that the replicas are true copies of the source objects, maintaining integrity and consistency for critical applications.
 
 - **Data Synchronization Across Teams**: It facilitates the seamless synchronization of data among various teams, streamlining collaboration and data sharing according to predefined access controls and policies.
