@@ -1,7 +1,7 @@
 ---
 title: 'Partilhar o alojamento entre vários sites'
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-updated: 2023-09-08
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -75,14 +75,14 @@ No caso de um nome de domínio externo à sua conta de cliente (outro identifica
 Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, alguns elementos propostos não poderão ser selecionados.
 
 > [!primary]
-> Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: mydomain.ovh). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.mydomain.ovh).
+> Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: domain.tld). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.domain.tld).
 
 ![multisite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Informação|Descrição|
 |---|---|
-|Domínios|Por predefinição, o nome de domínio que selecionou é automaticamente indicado. Pode adicionar um subdomínio (por exemplo, **blog**.mydomain.ovh) e criar simultaneamente o subdomínio "www" correspondente (por exemplo, **www.blog**.mydomain.ovh). No final, este domínio será o endereço web do site que pretende publicar.|
-|Pasta raiz|Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.mydomain.ovh, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
+|Domínios|Por predefinição, o nome de domínio que selecionou é automaticamente indicado. Pode adicionar um subdomínio (por exemplo, **blog**.domain.tld) e criar simultaneamente o subdomínio "www" correspondente (por exemplo, **www.blog**.domain.tld). No final, este domínio será o endereço web do site que pretende publicar.|
+|Pasta raiz|Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.domain.tld, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
 |SSL|Permite-lhe beneficiar de uma ligação segura (HTTPS://) no nome de domínio selecionado. Saiba mais na nossa [página sobre SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}. Ao ativar o SSL e o CDN (Content Delivery Network), poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
 |Ativar o CDN|Permite ativar o CDN (implementação de cache dos elementos estáticos do seu site, como as imagens) no nome de domínio selecionado. Saiba mais na [nossa página sobre CDN](https://www.ovhcloud.com/pt/web-hosting/options/cdn/){.external}. Ao ativar o SSL e o CDN, poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
 |IP do país|Permite beneficiar de um endereço de IP geolocalizado (a partir de uma lista de países) para o nome de domínio selecionado. Obtenha mais informações na [nossa página sobre IP](https://www.ovhcloud.com/pt/web-hosting/options/){.external}.|
@@ -121,7 +121,7 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 >
 > |Campo|Onde posso encontrar a informação?|Ação a realizar|
 > |---|---|---|
-> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.mydomain.ovh) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.mydomain.ovh`, deve criar o registo para o subdomínio `ovhcontrol.mydomain.ovh` e não `ovhcontrol.blog.mydomain.ovh`. <br></br>Para consultar esta última, encontre os [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
+> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.domain.tld) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.domain.tld`, deve criar o registo para o subdomínio `ovhcontrol.domain.tld` e não `ovhcontrol.blog.domain.tld`. <br></br>Para consultar esta última, encontre os [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
 >
 > ![multisite](images/find-token.png){.thumbnail}
 >
@@ -136,8 +136,8 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 
 |Informação|Descrição|
 |---|---|
-|Domínio|Indique o domínio que pretende utilizar. Se necessário, adicione um subdomínio (por exemplo, **blog**.mydomain.ovh) e, ao mesmo tempo, crie o subdomínio "www" correspondente (por exemplo, **www.blog**.mydomain.ovh). No final, este domínio será o endereço web do site que pretende publicar. Para finalizar a adição, certifique-se de que consegue alterar a configuração do domínio (a sua zona DNS).|
-|Pasta raiz| Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.mydomain.ovh, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
+|Domínio|Indique o domínio que pretende utilizar. Se necessário, adicione um subdomínio (por exemplo, **blog**.domain.tld) e, ao mesmo tempo, crie o subdomínio "www" correspondente (por exemplo, **www.blog**.domain.tld). No final, este domínio será o endereço web do site que pretende publicar. Para finalizar a adição, certifique-se de que consegue alterar a configuração do domínio (a sua zona DNS).|
+|Pasta raiz| Defina a pasta no seu espaço de armazenamento, para o qual o domínio aponta. É neste espaço que os ficheiros do site deverão ser publicados. Por exemplo, para blog.domain.tld, a pasta raiz poderia ser um "blog". Se a pasta não existir, esta será criada automaticamente.|
 |Ativar o IPv6|Permite ativar o protocolo IPv6 no domínio indicado. Obtenha mais informações na [nossa página sobre IP](https://www.ovhcloud.com/pt/web-hosting/options/){.external}.|
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
