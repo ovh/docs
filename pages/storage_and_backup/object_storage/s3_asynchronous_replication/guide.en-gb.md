@@ -178,8 +178,8 @@ A delete marker has the following properties:
 
 To permanently delete an object, you have to specify the version-id in your delete object request.
 
-> :warning: **WARNING**
->
+> [!warning]
+>  **WARNING**
 > By default, OVHcloud Object Storage does not replicate delete markers nor replicate the permanent deletion to destination buckets. This behavior protects your data from unauthorized or unintentional deletions.
 
 However, you can still replicate delete markers by adding the DeleteMarkerReplication element to your replication configuration rule. DeleteMarkerReplication specifies if delete markers should or should not be replicated (when versioning is enabled, a delete operation is performed on an object it does not actually delete the object but it flags it with a delete marker)
@@ -202,7 +202,8 @@ However, you can still replicate delete markers by adding the DeleteMarkerReplic
 
 The replication status can be used to determine the status of an object that is being replicated. When you request a source object (using `GET object`) or source object metadata (using `HEAD object`), OVHcloud Object Storage returns the replication status via the header `x-amz-replication-status`.
 
-> :warning: **WARNING**
+> [!warning]
+> **WARNING**
 > The replication status only applies to objects that are eligible for replication
 
 The x-amz-replication-status can have the following values:
@@ -213,7 +214,8 @@ The x-amz-replication-status can have the following values:
 | FAILED | n/a as the replica doesn't exist |
 | PENDING | n/a as the replica doesn't exist yet|
 
-> :warning: **WARNING**
+> [!warning]
+> **WARNING**
 > When you replicate objects to multiple destination buckets, the value of x-amz-replication-status is COMPLETED only when the source object has been successfully replicated to all the destination buckets, otherwise, the header remains at the PENDING value.
 > If one or more destination fail replication, the value of the header becomes FAILED.
 
@@ -320,7 +322,8 @@ Suppose the source bucket, region1-destination-bucket and region2-destination-bu
 
 ## In Practice
 
-> :exclamation: **IMPORTANT**
+> [!primary]
+> **IMPORTANT**
 > Versioning must be activated in source bucket and destination bucket(s)
 
 ### Via the cli
