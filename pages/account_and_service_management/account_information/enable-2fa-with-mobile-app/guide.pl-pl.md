@@ -1,7 +1,7 @@
 ---
 title: 'Włączenie weryfikacji dwuetapowej przez OTP'
 excerpt: 'Dowiedz się, jak zabezpieczyć swój panel klienta OVHcloud dzięki weryfikacji dwuetapowej przez aplikację mobilną OTP'
-hidden: true
+flag: hidden
 updated: 2020-04-16
 ---
 

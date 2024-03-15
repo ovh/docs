@@ -1,7 +1,7 @@
 ---
 title: 'Activar la doble autenticación por OTP'
 excerpt: 'Cómo proteger su área de cliente de OVHcloud activando la doble autenticación mediante una aplicación móvil de OTP'
-hidden: true
+flag: hidden
 updated: 2020-04-16
 ---
 

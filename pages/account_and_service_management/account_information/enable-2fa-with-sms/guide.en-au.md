@@ -1,7 +1,7 @@
 ---
 title: 'Enabling two-factor authentication via SMS'
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via SMS'
-hidden: true
+flag: hidden
 updated: 2020-04-15
 ---
 
