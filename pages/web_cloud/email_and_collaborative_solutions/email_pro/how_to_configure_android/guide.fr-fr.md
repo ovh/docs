@@ -54,12 +54,14 @@ L’ajout d’un compte se fera différemment **si aucun compte n'est paramétr�
 > **Première configuration**
 >>
 >> Sélectionnez `Ajouter une adresse e-mail`{.action}<br><br>
->> ![emailpro](images/emailpro-android-first.png){.thumbnail}
+>> ![emailpro](images/android-first.png){.thumbnail}
 >>
 > **Configuration existante**
 >>
->> 1. Dirigez-vous vers le menu situé dans la partie supérieure gauche de l'écran<br><br>2.Sélectionnez `Paramètres`{.action}<br><br>3.Sélectionnez `Ajouter un compte`{.action}<br><br>
->> ![emailpro](images/emailpro-android-existing.png){.thumbnail}
+>> 1. Dirigez-vous vers le menu situé dans la partie supérieure gauche de l'écran<br><br>
+>> 2. Sélectionnez `Paramètres`{.action}<br><br>
+>> 3. Sélectionnez `Ajouter un compte`{.action}<br><br>
+>> ![emailpro](images/android-existing.png){.thumbnail}
 >>
 
 Suivez les étapes successives de configuration en parcourant les onglets ci-dessous :
