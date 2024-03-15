@@ -51,7 +51,7 @@ After the payment is confirmed, the disk upgrade will take a few minutes. You ca
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 #### On a Linux VPS

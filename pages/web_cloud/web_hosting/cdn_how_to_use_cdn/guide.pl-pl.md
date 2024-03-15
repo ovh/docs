@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -59,18 +59,13 @@ Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a nast
 > 
 > W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.<br>
 > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
-
  
-**Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?** <br>
-<br>
+**Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
+
 Funkcja GeoCache wykorzystuje zasadę działania IP Anycast. Użytkownik nie łączy się z tym samym serwerem z każdej lokalizacji, lecz z najbliższym, co pozwala bardzo skutecznie skrócić czas ładowania plików statycznych. Geolokalizacja adresu IP jest więc zbędna. <br>
 Jeśli chodzi o SEO (pozycjonowanie w wyszukiwarkach), szybkość wyświetlania strony ma większe znaczenie niż geolokalizacja adresu IP hostingu.
 
 ### Zarządzaj usługą Shared CDN 
-
-> [!primary]
-> 
-> Opcja shared CDN jest już zawarta w ofercie hostingu Performance lub dostępna w zamówieniu od 19/11/20. W przypadku starszych wersji, skorzystaj z punktu [Zarządzanie usługą CDN (wersja historyczna)](#cdnbusiness).
 
 #### Wyczyść cache usługi Shared CDN
 
@@ -192,12 +187,12 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 - **Prefetch**: Przewiduj załadowanie tego zasobu. Prześlij ją automatycznie do pamięci cache CDN za pomocą *header link* Twojej strony WWW. Mechanizm ten jest używany przede wszystkim do ładowania CSS, JavaScript, zdjęć, plików wideo lub czcionek www, które są wymagane przez motyw strony internetowej. 
 
-	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hello", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
+	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hi", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print Hello
+	print Hi
 	?> 
 	```
 
@@ -260,20 +255,6 @@ W zakładce `MultiSite`{.action} Twojego hostingu, w tabeli możesz wyświetlić
 
 ![GeoCache](images/statistics.png){.thumbnail}
 
-### Zarządzaj usługą CDN Business <a name="cdnbusiness"></a>
-
-> [!primary]
-> 
-> Opcja CDN jest już zawarta w ofertach hostingu Performance lub w ofertach zamówionych przed 19/11/2020.
-
-#### Czyszczenie pamięci cache w GeoCache
-
-Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, zwłaszcza po wprowadzeniu zmian w plikach statycznych. Na przykład przy publikowaniu nowej wersji swojej witryny. Należy wówczas całkowicie wyczyścić pamięć podręczną w GeoCache.
-
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Wyczyść pamięć cache`{.action}.
-
-![GeoCache](images/clear-cache.png){.thumbnail}
-
 ### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
 
 **Za pomocą systemu CMS**
@@ -295,6 +276,7 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. 
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
+
 > [!warning]
 >
 > Przeniesienie do pamięci cache za pomocą nagłówków HTTP umożliwia przechowywanie plików nie tylko w GeoCache, ale też w przeglądarkach Twoich użytkowników. Dlatego też zaleca się zmienianie nazw plików po każdym ich uaktualnieniu, aby internauci nie oglądali nieaktualnych wersji plików znajdujących się w pamięci cache.

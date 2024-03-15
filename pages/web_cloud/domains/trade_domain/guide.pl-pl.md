@@ -1,7 +1,7 @@
 ---
 title: "Zmiana właściciela domeny"
 excerpt: "W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny."
-updated: 2024-01-26
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >
 > - strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
-> - sekcja `Operacje w trakcie`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby sprawdzić aktualizacje statusu domeny.
+> - aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
 >
 
 ### Etap 1: wybierz domenę

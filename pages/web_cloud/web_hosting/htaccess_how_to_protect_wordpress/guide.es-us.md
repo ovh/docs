@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar el archivo htaccess con WordPress"
 excerpt: "Descubra cómo proteger su blog WordPress con uno o más archivos htaccess"
-updated: 2023-06-22
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -142,12 +142,12 @@ Si ha identificado una dirección IP maliciosa, introduzca la siguiente línea e
 
 ```bash
 <Limit GET POST>
-    order allow,deny deny from xxx.xxx.xxx.xxx
+    order allow,deny deny from 203.0.113.0
     allow from all
 </Limit>
 ```
 
-En este ejemplo, `xxx.xxx.xxx.xxx` designa la dirección IP que desea bloquear.
+En este ejemplo, `203.0.113.0` designa la dirección IP que desea bloquear.
 
 Para más información, consulte nuestra guía sobre la [restricción de acceso por IP a través del archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -158,8 +158,8 @@ El directorio **wp-admin** permite conectarse a su interfaz de administración (
 ```bash
 <Limit GET POST PUT>
     order deny,allow deny from all
-    allow from xxx.xxx.xxx.xxx
-    allow from xxx.xxx.xxx.xxx
+    allow from 203.0.113.0
+    allow from 203.0.113.0
 </Limit>
 ```
 

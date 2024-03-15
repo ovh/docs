@@ -1,7 +1,7 @@
 ---
 title: 'Configurar el servidor de bases de datos'
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
-updated: 2023-04-24
+updated: 2024-03-13
 ---
 
 > [!primary]
@@ -206,16 +206,6 @@ show variables like "version";
 > 
 
 ### Logs y Métricas
-
-#### Estadísticas del tiempo de ejecución de las consultas
-
-Para visualizar el tiempo de ejecución de las consultas en el servidor de bases de datos en las últimas 24 horas.
-
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
-
-Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consultar la gráfica **"Estadísticas del tiempo de ejecución de las consultas"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
 
 #### Acceso a los logs "Slow Query"
 

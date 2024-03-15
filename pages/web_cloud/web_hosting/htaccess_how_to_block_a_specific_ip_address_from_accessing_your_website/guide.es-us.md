@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - ¿Cómo bloquear el acceso a mi sitio web para determinadas direcciones IP a través de un archivo .htaccess?"
 excerpt: "Descubra las posibles acciones a través de un archivo .htaccess para bloquear el acceso a su sitio web a determinadas direcciones IP."
-updated: 2022-09-12
+updated: 2024-03-14
 ---
 
 > [!primary]
@@ -80,13 +80,13 @@ Para bloquear una dirección IP específica, introduzca uno de los siguientes c�
 >> ```
 >>
 
-- **Ejemplo** : si desea bloquear la dirección IP 192.168.1.2, deberá escribir uno de los siguientes códigos:
+- **Ejemplo** : si desea bloquear la dirección IP 203.0.113.0, deberá escribir uno de los siguientes códigos:
 
 > [!tabs]
 > Sintaxis histórica
 >>
 >> ```bash
->> Deny from 192.168.1.2
+>> Deny from 203.0.113.0
 >> ```
 >>
 > Sintaxis de Apache 2.3
@@ -94,7 +94,7 @@ Para bloquear una dirección IP específica, introduzca uno de los siguientes c�
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168.1.2
+>> Require not ip 203.0.113.0
 >> </RequireAll>
 >> ```
 >>
@@ -120,13 +120,13 @@ Para bloquear un rango de direcciones IP, introduzca uno de los siguientes códi
 >> ```
 >>
 
-- **Ejemplo** : si desea bloquear todas las IP en 192.168.x.x, deberá escribir uno de los dos códigos siguientes:
+- **Ejemplo** : si desea bloquear todas las IP en 203.0.113.x, deberá escribir uno de los dos códigos siguientes:
 
 > [!tabs]
 > Sintaxis histórica
 >>
 >> ```bash
->> Deny from 192.168
+>> Deny from 203.0.113
 >> ```
 >>
 > Sintaxis de Apache 2.3
@@ -134,7 +134,7 @@ Para bloquear un rango de direcciones IP, introduzca uno de los siguientes códi
 >> ```bash
 >> <RequireAll>
 >> Require all granted
->> Require not ip 192.168
+>> Require not ip 203.0.113
 >> </RequireAll>
 >> ```
 >>
@@ -256,7 +256,7 @@ Para autorizar solo una IP a acceder al servicio, introduzca uno de los siguient
 >> ```
 >>
 
-- **Ejemplo** : si solo quiere autorizar a las IPs 192.168.1.2 y 192.168.1.3 a acceder a su alojamiento, deberá escribir uno de los siguientes códigos:
+- **Ejemplo** : si solo quiere autorizar a las IPs 203.0.113.0 y 203.0.113.1 a acceder a su alojamiento, deberá escribir uno de los siguientes códigos:
 
 > [!tabs]
 > Sintaxis histórica
@@ -264,14 +264,14 @@ Para autorizar solo una IP a acceder al servicio, introduzca uno de los siguient
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1.2
->> Allow from 192.168.1.3
+>> Allow from 203.0.113.0
+>> Allow from 203.0.113.1
 >> ```
 >>
 > Sintaxis de Apache 2.3
 >>
 >> ```bash
->> Require ip 192.168.1.2 192.168.1.3
+>> Require ip 203.0.113.0 203.0.113.1
 >> ```
 >>
 
@@ -296,7 +296,7 @@ Para autorizar a un rango de IP a acceder al servicio, introduzca uno de los sig
 >> ```
 >>
 
-- **Ejemplo** : si solo desea autorizar el acceso al alojamiento al rango de IPs 192.168.1.x, deberá escribir uno de los siguientes códigos:
+- **Ejemplo** : si solo desea autorizar el acceso al alojamiento al rango de IPs 203.0.113.x, deberá escribir uno de los siguientes códigos:
 
 > [!tabs]
 > Sintaxis histórica
@@ -304,14 +304,14 @@ Para autorizar a un rango de IP a acceder al servicio, introduzca uno de los sig
 >> ```bash
 >> order deny,allow
 >> deny from all
->> Allow from 192.168.1
+>> Allow from 203.0.113
 >> ```
 >>
 > Sintaxis de Apache 2.3
 >> Poner todo en la parte superior de su ".htaccess"
 >>
 >> ```bash
->> Require ip 192.168.1
+>> Require ip 203.0.113
 >> ```
 >>
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie pierwszej instancji Public Cloud i łączenie się z nią'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
-updated: 2024-01-08
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -158,9 +158,23 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+> [!success]
+>
+Przed utworzeniem instancji zaleca się utworzenie sieci prywatnej. Więcej informacji na temat tworzenia sieci prywatnej znajdziesz w przewodniku [Konfiguracja vRack dla Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>
+
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie “Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze “Środowisko obliczeniowe”).
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zones:**
+
+Instancje Local Zones są rozszerzeniem regionów, które zbliżają usługi OVHcloud do określonych lokalizacji, oferując krótszy czas odpowiedzi i lepszą wydajność aplikacji. Są one strategicznie rozmieszczone w pobliżu obszarów, na które istnieje duże zapotrzebowanie użytkowników. Ich głównym celem jest zminimalizowanie czasu potrzebnego na transfer danych między użytkownikiem a chmurą, aby usługi były szybsze i bardziej reaktywne oraz aby spełnić wymagania dotyczące rezydencji danych. Aby uzyskać więcej informacji na Instancje Local Zones, skorzystaj z następujących łączy: [Local Zone Compute](https://www.ovhcloud.com/pl/public-cloud/local-zone-compute/) i [Local Zone Compute - Funkcje, możliwości i ograniczenia](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+
+**Global Regions:**
+
+Global Regions są przez jedno lub kilka centrów danych zarządzanych przez OVHcloud. Każdy region znajduje się w innej strefie geograficznej. Każdy region obejmuje jedną lub kilka Availibility Zones, na przykład GRA11, GRA7, BHS5, DE1 itp.
 
 Najpierw wybierz odpowiedni do swoich potrzeb szablon serwera. Narzędzie pomocy wyświetli opisy dotyczące różnych zastosowań i dostępności modeli serwera. Do wyboru są następujące dostosowane kategorie:
 

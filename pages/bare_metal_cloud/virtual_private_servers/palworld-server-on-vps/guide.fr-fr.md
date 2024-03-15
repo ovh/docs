@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel - Comment créer un serveur compatible avec Palworld'
+title: 'Comment créer un serveur compatible avec Palworld'
 excerpt: 'Découvrez comment installer votre propre serveur compatible avec Palworld sur un VPS ou un Serveur Dédié OVHcloud'
 updated: 2024-02-23
 ---

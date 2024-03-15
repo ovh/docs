@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un sous-domaine ?"
 excerpt: "Découvrez la définition d'un sous-domaine et comment en créer chez OVHcloud"
-updated: 2023-11-27
+updated: 2024-03-05
 ---
 
 ## Objectif <a name="goal"></a>
@@ -86,7 +86,7 @@ Deux cas de figure sont possibles :
 >
 > 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
 >
-> 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active.
+> 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active. Sachez que vous pouvez utiliser notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) » si vous souhaitez réaliser cette action.
 >
 
 Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
