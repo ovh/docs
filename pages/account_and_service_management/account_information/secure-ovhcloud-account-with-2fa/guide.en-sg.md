@@ -55,9 +55,9 @@ We offer three different methods (click on the tabs below to view their presenta
 >> This method offers a higher level of security as it is based on an independent security equipment, totally separate from your computer, smartphone or tablet, and which is less exposed to the risk of hacking.
 > Backup codes
 >>![2FA codes](images/code.svg)<br>
->> When you configure two-factor authentication (via **SMS**, **Mobile App** or **Security Key**) for the first time, you will see 10 **single-use backup codes** displayed in the Control Panel.
+>> When you configure two-factor authentication (via **Mobile App** or **Security Key**) for the first time, you will see 10 **single-use backup codes** displayed in the Control Panel.
 >>
->> This two-factor authentication method complements an already activated method (via **SMS**, **Mobile Application** or **Security key**). It cannot be activated alone.
+>> This two-factor authentication method complements an already activated method (via **Mobile Application** or **Security key**). It cannot be activated alone.
 >>
 >> Each time you try to log in, you can enter one of the 10 one-time codes.
 >> It is essential to always have at least 1 remaining backup code. Remember to regenerate them via the OVHcloud Control Panel if you have used all of them, or if you have lost them.
