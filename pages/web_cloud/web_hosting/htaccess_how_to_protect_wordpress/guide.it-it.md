@@ -142,12 +142,12 @@ Se hai identificato un indirizzo IP malevolo, inserisci la riga nel tuo file **.
 
 ```bash
 <Limit GET POST>
-    order allow,deny deny from xxx.xxx.xxx.xxx
+    order allow,deny deny from 203.0.113.0
     allow from all
 </Limit>
 ```
 
-In questo esempio `xxx.xxx.xxx.xxx` indica l'indirizzo IP da bloccare.
+In questo esempio `203.0.113.0` indica l'indirizzo IP da bloccare.
 
 Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["restrizione di accesso via IP tramite il file.htaccess"](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -158,8 +158,8 @@ La directory **wp-admin** permette di accedere alla tua interfaccia di amministr
 ```bash
 <Limit GET POST PUT>
     order deny,allow deny from all
-    allow from xxx.xxx.xxx.xxx
-    allow from xxx.xxx.xxx.xxx
+    allow from 203.0.113.0
+    allow from 203.0.113.0
 </Limit>
 ```
 

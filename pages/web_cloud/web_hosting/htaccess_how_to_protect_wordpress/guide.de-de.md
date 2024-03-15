@@ -141,12 +141,12 @@ Wenn Sie eine zu sperrende IP-Adresse identifiziert haben, geben Sie diese Zeile
 
 ```bash
 <Limit GET POST>
-    order allow,deny deny from xxx.xxx.xxx.xxx
+    order allow,deny deny from 203.0.113.0
     allow from all
 </Limit>
 ```
 
-Ersetzen Sie `xxx.xxx.xxx.xxx` mit der zu blockierenden IP-Adresse.
+Ersetzen Sie `203.0.113.0` mit der zu blockierenden IP-Adresse.
 
 Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -157,8 +157,8 @@ Das Verzeichnis **wp-admin** enthält den Zugang zum Administrationssinterface d
 ```bash
 <Limit GET POST PUT>
     order deny,allow deny from all
-    allow from xxx.xxx.xxx.xxx
-    allow from xxx.xxx.xxx.xxx
+    allow from 203.0.113.0
+    allow from 203.0.113.0
 </Limit>
 ```
 

@@ -138,12 +138,12 @@ If you have identified a malicious IP address, enter the following line in your 
 
 ```bash
 <Limit GET POST>
-    order allow,deny deny from xxx.xxx.xxx.xxx
+    order allow,deny deny from 203.0.113.0
     allow from all
 </Limit>
 ```
 
-Replace `xxx.xxx.xxx.xxx` with the IP address to block.
+Replace `203.0.113.0` with the IP address to block.
 
 For more information on this subject, please refer to our [guide on IP access restriction via the .htaccess file](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -154,8 +154,8 @@ The **wp-admin** directory is used to access your administration interface. (The
 ```bash
 <Limit GET POST PUT>
     order deny,allow deny from all
-    allow from xxx.xxx.xxx.xxx
-    allow from xxx.xxx.xxx.xxx
+    allow from 203.0.113.0
+    allow from 203.0.113.0
 </Limit>
 ```
 
