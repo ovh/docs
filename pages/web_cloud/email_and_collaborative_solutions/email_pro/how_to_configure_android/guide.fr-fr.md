@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurer une adresse e-mail dans Gmail pour Android"
 excerpt: "Apprenez à configurer un compte E-mail Pro sur Android, via l'application Gmail"
-updated: 2024-03-13
+updated: 2024-03-15
 ---
 
 <style>
@@ -12,7 +12,7 @@ updated: 2024-03-13
 
 ## Objectif
 
-Les adresses e-mail de l'offre E-mail Pro peuvent être configurées sur différents logiciels de messagerie compatibles. Cela vous permet d'envoyer et de recevoir vos messages depuis l'appareil de votre choix. Dans ce guide, vous trouverez le processus de configuration d'une adresse e-mail E-mail Pro depuis l'application Gmail présente sur les appareils Android.
+Les adresses e-mail de l'offre E-mail Pro peuvent être configurées sur différents logiciels de messagerie compatibles. Cela vous permet d'envoyer et de recevoir vos messages depuis l'appareil de votre choix. Retrouvez dans ce guide les étapes de configuration d'une adresse e-mail E-mail Pro depuis l'application Gmail présente sur les appareils Android.
 
 **Apprenez à configurer un compte E-mail Pro sur Android, via l'application Gmail.**
 
@@ -39,7 +39,7 @@ Les adresses e-mail de l'offre E-mail Pro peuvent être configurées sur différ
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans nos exemples, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >
@@ -104,7 +104,7 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 >
 > OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse <https://www.ovhcloud.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
-### Paramètres POP, IMAP  et SMTP
+### Paramètres POP, IMAP et SMTP
 
 Pour la réception des e-mails, lors du choix du type de compte, nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP**. Pour comprendre leur fonctionnement respectif, consultez notre section [« POP ou IMAP, quelle est la différence ? »](#popimap)
 
@@ -148,11 +148,11 @@ Lors de la configuration de votre client de messagerie, vous devez lui renseigne
 
 ![emailpro](images/popimap-01.png){.thumbnail}
 
-Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nous allons décomposer les éléments qui composent le traitement de vos e-mails en réception :
+Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nous allons détailler les éléments qui composent le traitement de vos e-mails en réception :
 
 1. **Votre appareil** : un ordinateur, un smartphone ou une tablette. C'est votre support de consultation.
 
-2. **Votre client de messagerie** : logiciel ou application dédié() à la gestion de vos e-mails. Son choix déterminera le niveau d'ergonomie et de fonctionnalités dont vous aurez besoin pour consulter vos e-mails.
+2. **Votre client de messagerie** : logiciel ou application dédié(e) à la gestion de vos e-mails. Son choix déterminera le niveau d'ergonomie et de fonctionnalités dont vous aurez besoin pour consulter vos e-mails.
 
 3. **Le protocole de réception** : choix déterminant la façon de relever les e-mails sur votre appareil. Son choix a une incidence sur les autres appareils qui consultent ce même compte e-mail.
     - **IMAP** : votre client de messagerie interroge le serveur e-mail et télécharge les e-mails sur votre appareil. Lorsque vous consultez un e-mail non lu, le serveur le marque comme « lu » par défaut. Les autres appareils configurés en IMAP pourront constater cet état et consulter cet e-mail tant qu'il n'aura pas été supprimé sur l'un des appareils.
@@ -162,11 +162,11 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 
 > [!primary]
 >
-> Ce desriptif est une synthèse, il représente le fonctionnement standard de ces deux protocoles. Il est possible de paramétrer le POP pour que les e-mails ne soit pas supprimés lorsque vous relevez vos e-mails. L'objectif, ici, est de décrire le fonctionnement natif de ces deux protocoles et vous éviter des manipulations supplémentaires afin de correspondre à votre besoin.
+> Ce descriptif est une synthèse, il représente le fonctionnement standard de ces deux protocoles. Il est possible de paramétrer le POP pour que les e-mails ne soit pas supprimés lorsque vous relevez vos e-mails. L'objectif ici est de décrire le fonctionnement natif de ces deux protocoles et de vous éviter des manipulations supplémentaires afin de répondre à votre besoin.
 
 ## Aller plus loin
 
-[MXplan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}.
+[MXplan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Exchange - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
 
