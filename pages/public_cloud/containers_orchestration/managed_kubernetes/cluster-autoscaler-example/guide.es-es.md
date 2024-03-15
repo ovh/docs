@@ -40,7 +40,7 @@ When you create your cluster, you can bootstrap a default node pool in it, and y
 
 Let's assume that you have created an MKS cluster with a node pool with its minimum set to 1 and its maximum set to 3.
 
-In order to test the autoscaler, we offer you to install a *Python heavy CPU load* Deployment that deploys several instances of *Python CPU load* pods. The *Python CPU load* pod simply heavy charge each allocated CPU of your pod. It's a CPU intensive operation, but it uses a minimal amount of memory.
+In order to test the autoscaler, we offer you to install a *Python heavy CPU load* Deployment that deploys several instances of *Python CPU load* pods. The *Python CPU load* pod's goal is to consume all the CPU allocated to it. It's a CPU intensive operation but it uses a minimal amount of memory.
 
 Create a `cpu-load.yaml` manifest for the *python-cpu-load* deployment:
 
