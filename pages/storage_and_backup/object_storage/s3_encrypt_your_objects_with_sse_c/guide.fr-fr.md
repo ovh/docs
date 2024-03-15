@@ -48,7 +48,6 @@ Pour plus d'informations sur comment démarrer avec le stockage d'objets S3, veu
 
 Lorsque vous utilisez SSE-C pour le chiffrement de vos objets, vous devez fournir des informations spécifiques sur la clé de chiffrement en utilisant les en-têtes de demande suivants :
 
-
 Consultez notre guide « [Débuter avec S3 Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
 ## En pratique
