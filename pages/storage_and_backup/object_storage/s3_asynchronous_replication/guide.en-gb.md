@@ -1,11 +1,40 @@
-# Introduction to Object Replication
+---
+title: Object Replication - Master Asynchronous Replication Across Your Buckets
+excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance.
+updated: 2024-03-15
+---
+
+## Introduction
 
 Object replication is a powerful feature that facilitates the automatic and asynchronous replication of objects within a source bucket to one or several destination buckets. This capability is crucial for maintaining data consistency, availability, and redundancy across different storage locations.
 
 Destination buckets can reside within a single region or be dispersed across multiple regions, tailored to your specific requirements. This flexibility allows for strategic data placement and management across global infrastructure networks.
 
-## Key Use Cases for Object Replication
+## Objectives
 
+This guide aims to equip you with the knowledge and skills to:
+
+- **Set Up Object Replication**: Learn to configure object replication across buckets for automated data duplication from a source to one or more destinations.
+- **Enhance Data Availability**: Understand how object replication improves data resilience by creating copies in different regions or storage zones.
+- **Achieve Compliance**: Explore how replication aids in meeting regulatory requirements for data geo-redundancy and backup.
+- **Reduce Storage Costs**: Discover strategies to lower storage expenses by replicating data to more cost-effective storage classes.
+- **Facilitate Data Sharing**: See how object replication streamlines data sharing and synchronization across teams, boosting operational efficiency.
+
+## Prerequisites
+
+Before diving into object replication, ensure you have:
+
+- **Cloud Storage Account**: An active account with access to cloud storage services that support object replication.
+- **Buckets Configured**: At least two buckets set up within your cloud storage account, designated as the source and destination.
+- **Data Backup**: A recent backup of your data, particularly important if setting up replication for existing data to avoid accidental loss.
+- **Understanding of Storage Classes**: Familiarity with the various storage classes offered by your cloud service, along with their cost and performance implications.
+- **Familiarity with Cloud Storage Policies**: Knowledge of the policies and permissions necessary for performing object replication.
+- **CLI Tools or Management Console Access**: The ability to use your cloud provider's command-line interface (CLI) tools or management console to set up and manage replication rules.
+- **Versioning Enabled**: Versioning must be activated on your buckets if required by your cloud service for object replication.
+- **S3 User**: An S3 user account already created within your project.
+- **AWS CLI Configuration**: The AWS CLI installed and configured on your system. For a guide on configuring the CLI, refer to the OVHcloud documentation on ["Getting started with Object Storage"](https://help.ovhcloud.com/csm/en-ca-public-cloud-storage-s3-limitations?id=kb_article_view&sysparm_article=KB0034706).
+
+### Key Use Cases for Object Replication
 
 - **Exact Object Copies with Metadata Replication**: Replication is not just about duplicating the object; it includes the replication of all associated metadata (e.g., object creation time, version ID, etc.). This ensures that the replicas are true copies of the source objects, maintaining integrity and consistency for critical applications.
 
@@ -23,9 +52,9 @@ Destination buckets can reside within a single region or be dispersed across mul
 
 Implementing object replication ensures not only the safety and availability of your data but also enhances operational efficiency and compliance posture.
 
-# What is Asynchronous Replication?
+### What is Asynchronous Replication?
 
-## Basic Concepts
+#### Basic Concepts
 
 At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed to facilitate several key operations in the management and safeguarding of your data. Here's what it enables you to do:
 
@@ -45,7 +74,7 @@ At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed
 
 ![Schema 4](images/4.png)
 
-# What is Replicated vs What is Not
+### What is Replicated vs What is Not
 
 The following table provides the default behavior of the OVHcloud Object Storage Asynchronous Replication feature:
 
@@ -60,19 +89,12 @@ The following table provides the default behavior of the OVHcloud Object Storage
 | Object tags                                                  | Objects created BEFORE the upload of the replication configuration |
 | S3 Object Lock retention configuration                       | Replication to a bucket in a different Public Cloud Project i.e., source and destination buckets must be in the same project |
 
-# Replication Prerequisites
 
-Asynchronous replication requires the following conditions to be met:
-
-- **Public Cloud Project**: Source and destination buckets must be in the same public cloud project. This is a current limitation that may change in the future.
-- **Versioning**: Versioning must be enabled in both the source and destination buckets.
-- **S3 Object Lock**: If the source bucket has S3 Object Lock enabled, the destination buckets must also have this feature enabled to ensure compatibility.
-
-# Replication Configuration
+### Replication Configuration
 
 A replication configuration is defined through a set of rules within a JSON document. This document is uploaded and applied to the source bucket, detailing how objects are to be replicated.
 
-## Each Replication Rule Defines:
+### Each Replication Rule Defines:
 
 - A **unique rule ID** to identify the rule.
 - **Rule priority** to determine the order of execution when multiple rules exist.
@@ -80,7 +102,7 @@ A replication configuration is defined through a set of rules within a JSON docu
 - **Objects to be replicated**: By default, all objects are eligible for replication. However, you can specify a subset of objects by filtering them with a prefix and/or tags.
 - **Optional target storage class**: By default, object replicas will inherit the same storage class as the source objects. If needed, you can specify a different storage class for the replicas.
 
-## Replication Rule Structure
+### Replication Rule Structure
 
 The basic structure of a replication rule within the configuration JSON document is as follows:
 
@@ -138,7 +160,7 @@ The basic structure of a replication rule within the configuration JSON document
 
 # Delete Marker Replication
 
-> :exclamation: **IMPORTANT**
+> [!warning] **IMPORTANT**
 >
 > If you specify a `Filter` in your replication configuration, you **must** also include a `DeleteMarkerReplication` element. If your `Filter` includes a `Tag` element, the `DeleteMarkerReplication` Status **must be set to Disabled**.
 
@@ -176,7 +198,7 @@ However, you can still replicate delete markers by adding the DeleteMarkerReplic
 }
 ```
 
-# Checking the Replication Status
+### Checking the Replication Status
 
 The replication status can be used to determine the status of an object that is being replicated. When you request a source object (using `GET object`) or source object metadata (using `HEAD object`), OVHcloud Object Storage returns the replication status via the header `x-amz-replication-status`.
 
@@ -184,8 +206,6 @@ The replication status can be used to determine the status of an object that is 
 > The replication status only applies to objects that are eligible for replication
 
 The x-amz-replication-status can have the following values:
-
-
 
 | Source object                                          | Replica Object                                      |
 |--------------------------------------------------------------|--------------------------------------------------------------|
@@ -197,7 +217,7 @@ The x-amz-replication-status can have the following values:
 > When you replicate objects to multiple destination buckets, the value of x-amz-replication-status is COMPLETED only when the source object has been successfully replicated to all the destination buckets, otherwise, the header remains at the PENDING value.
 > If one or more destination fail replication, the value of the header becomes FAILED.
 
-## Examples of replication configuration
+#### Examples of replication configuration
 Simple replication between 2 buckets
 ```json
 {
@@ -214,7 +234,7 @@ Simple replication between 2 buckets
 ```
 This configuration will replicate all objects (indicated by the empty Filter field) to the bucket destination-bucket.
 
-## Replication of delete markers
+#### Replication of delete markers
 
 ```json
 {
@@ -237,7 +257,7 @@ This configuration will replicate all objects (indicated by the empty Filter fie
 
 This configuration will replicate all objects that have the prefix "backup" and the tag "important" set to "true" to the bucket destination-bucket. Additionally, we indicate that deletion operations in the source bucket should also replicated.
 
-## Replicating source to multiple regions
+#### Replicating source to multiple regions
 ```json
 {
   "Role": "IAM-role-ARN",
@@ -261,7 +281,7 @@ This configuration will replicate all objects that have the prefix "backup" and 
 ```
 Suppose the source bucket, region1-destination-bucket and region2-destination-bucket are 3 buckets in 3 OVHcloud regions, this configuration will allow you to backup all objects in the source bucket to 2 different regions.
 
-## Replicating 2 subsets of objects to different destination buckets;
+#### Replicating 2 subsets of objects to different destination buckets;
 
 ```json
 {
@@ -293,28 +313,18 @@ Suppose the source bucket, region1-destination-bucket and region2-destination-bu
 }
 ```
 
-## This configuration contains 2 replication rules:
+### This configuration contains 2 replication rules:
 
 - rule1 will replicate all objects with prefix "dev" to bucket destination-bucket1 and additionally, will replicate also deletion operations.
 - rule2 will replicate all objects with prefix "prod" to bucket destination-bucket2 without replicating deletion operations.
 
-# In Practice
-
-## Prerequisites
-
-Before you begin, ensure you have the following ready:
-
-- A Public Cloud project in your OVHcloud account.
-- Access to the OVHcloud Control Panel.
-- An S3 user already created within your project.
-- AWS CLI installed and configured on your system. For a detailed guide on configuring the CLI, refer to the ["Getting started with Object Storage"]([https://help.ovhcloud.com/csm/en-ca-public-cloud-storage-s3-limitations?id=kb_article_view&sysparm_article=KB0034706)) documentation provided by OVHcloud.
-
+## In Practice
 
 > :exclamation: **IMPORTANT**
 > Versioning must be activated in source bucket and destination bucket(s)
 
-# Via the cli
-## Create source bucket
+### Via the cli
+#### Create source bucket
 The source bucket is the bucket whose objects are automatically replicated.
 
 ```bash
@@ -328,11 +338,11 @@ $ aws s3 mb s3://my-source-bucket
 aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
 ```
 
-## Activate versioning in destination bucket
+### Activate versioning in destination bucket
 ```bash
 $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
 ```
-## Apply replication configuration
+### Apply replication configuration
 Using the AWS cli, replication configuration is applied on the source bucket.
 ```bash
 $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration <conf.json>
@@ -362,3 +372,4 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
   ]
 }
 ```
+Join our community of users on <https://community.ovh.com/en/>.
