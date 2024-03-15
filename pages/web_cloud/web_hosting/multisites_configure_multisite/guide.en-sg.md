@@ -72,14 +72,14 @@ For a domain name that is external to your customer account (another NIC handle)
 You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external} you have.
 
 > [!primary]
-> To add a subdomain, you must first select the primary domain from the list (example: mydomain.ovh). In the next step, you can enter the subdomain (e.g. **blog**.mydomain.ovh).
+> To add a subdomain, you must first select the primary domain from the list (example: domain.tld). In the next step, you can enter the subdomain (e.g. **blog**.domain.tld).
 
 ![multisite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
-|Domains|The domain that you have selected will be automatically entered by default. You can add a subdomain (e.g. **blog**.mydomain.ovh) to it, and create the corresponding "www" subdomain at the same time (e.g. **www.blog**.mydomain.ovh). This domain will represent the website that you want to put online.|
-|Root folder|Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.mydomain.ovh, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
+|Domains|The domain that you have selected will be automatically entered by default. You can add a subdomain (e.g. **blog**.domain.tld) to it, and create the corresponding "www" subdomain at the same time (e.g. **www.blog**.domain.tld). This domain will represent the website that you want to put online.|
+|Root folder|Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.domain.tld, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
 |SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovhcloud.com/en-sg/web-hosting/options/ssl/){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from the **HTTP2** protocol (the latter is enabled by default in our Gravelines data centre).|
 |Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovhcloud.com/en-sg/web-hosting/options/cdn/){.external}. By enabling SSL and the CDN, you can also benefit from the **HTTP2** protocol (the latter is activated by default in our Gravelines data centre).|
 |Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovhcloud.com/en-sg/web-hosting/options/){.external}.|
@@ -118,7 +118,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 >
 > |Field|Where to find this information|Action to take|
 > |---|---|---|
-> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.mydomain.ovh` you have to create the record for the subdomain `ovhcontrol.mydomain.ovh` and not `ovhcontrol.blog.mydomain.ovh` <br></br>(/pages/web_cloud/domains/dns_server_general_information#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
+> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.domain.tld) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.domain.tld` you have to create the record for the subdomain `ovhcontrol.domain.tld` and not `ovhcontrol.blog.domain.tld` <br></br>(/pages/web_cloud/domains/dns_server_general_information#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
 >
 > ![multisite](images/find-token.png){.thumbnail}
 >
@@ -133,8 +133,8 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 
 |Information|Description|
 |---|---|
-|Domain|Enter the domain name you want to use. Add subdomains (e.g. **blog**.mydomain.ovh) if required, and create the corresponding "www" subdomain at the same time (e.g. **www.blog**.mydomain.ovh). This domain will correspond to the website that you want to put online. As a reminder, you must have the appropriate rights to modify the domain’s configuration (its DNS zone) to finalise this addition.|
-|Root folder| Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.mydomain.ovh, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
+|Domain|Enter the domain name you want to use. Add subdomains (e.g. **blog**.domain.tld) if required, and create the corresponding "www" subdomain at the same time (e.g. **www.blog**.domain.tld). This domain will correspond to the website that you want to put online. As a reminder, you must have the appropriate rights to modify the domain’s configuration (its DNS zone) to finalise this addition.|
+|Root folder| Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.domain.tld, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
 |Enable IPv6|Enables the IPv6 protocol on the selected domain. To find out more about this, go to [our IP page](https://www.ovhcloud.com/en-gb/web-hosting/options/){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.

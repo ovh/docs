@@ -75,14 +75,14 @@ Para un dominio externo a su cuenta de cliente (otro identificador de cliente) o
 A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} contratado, algunas opciones podrían no estar disponibles.
 
 > [!primary]
-> Para añadir un subdominio, es necesario seleccionar primero el dominio principal de la lista (por ejemplo: mydomain.ovh). En la siguiente etapa podrá indicar el subdominio (por ejemplo: **blog**.mydomain.ovh).
+> Para añadir un subdominio, es necesario seleccionar primero el dominio principal de la lista (por ejemplo: domain.tld). En la siguiente etapa podrá indicar el subdominio (por ejemplo: **blog**.domain.tld).
 
 ![Multisitio](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Campo|Descripción|
 |---|---|
-|Dominios|El nombre de dominio seleccionado se autocompletará por defecto. Puede añadir un subdominio (p. ej., **blog**.mydomain.ovh) y crear simultáneamente el subdominio www correspondiente (p. ej., **www.blog**.mydomain.ovh). El dominio que introduzca aquí será la dirección de internet del sitio web una vez publicado.|
-|Carpeta raíz|Defina la carpeta, en su espacio de almacenamiento, hacia la que apunta el dominio . Los archivos del sitio web deberán publicarse en este espacio. Por ejemplo, para blog.mydomain.ovh, la carpeta raíz podría ser "blog". Si la carpeta no existe, se creará automáticamente.|
+|Dominios|El nombre de dominio seleccionado se autocompletará por defecto. Puede añadir un subdominio (p. ej., **blog**.domain.tld) y crear simultáneamente el subdominio www correspondiente (p. ej., **www.blog**.domain.tld). El dominio que introduzca aquí será la dirección de internet del sitio web una vez publicado.|
+|Carpeta raíz|Defina la carpeta, en su espacio de almacenamiento, hacia la que apunta el dominio . Los archivos del sitio web deberán publicarse en este espacio. Por ejemplo, para blog.domain.tld, la carpeta raíz podría ser "blog". Si la carpeta no existe, se creará automáticamente.|
 |SSL|Permite disfrutar de una conexión segura (https://) en el dominio seleccionado. Más información en nuestra página sobre [SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external}. Si activa conjuntamente las opciones SSL y CDN (Content Delivery Network), podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
 |Activar la CDN|Permite activar el servicio CDN (almacenamiento en caché de los elementos estáticos del sitio web, como las imágenes) en el dominio seleccionado. Más información en nuestra página sobre [CDN](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/){.external}. Si activa conjuntamente las opciones SSL y CDN, podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
 |IP del país|Permite disfrutar de una dirección IP geolocalizada (a elegir entre diversos países) en el dominio seleccionado. Más información en nuestra página sobre las [IP](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}.|
@@ -121,7 +121,7 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 >
 > |Campo|¿Dónde encontrar la información?|Acción a realizar|
 > |---|---|---|
-> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.mydomain.ovh") en la zona DNS autorizada para el dominio que quiera añadir.<br></br>Tenga en cuenta que, si quiere añadir `blog.mydomain.ovh`, debe crear el registro para el subdominio `ovhcontrol.mydomain.ovh` y no `ovhcontrol.blog.mydomain.ovh`.<br></br>Para consultar la configuración DNS, acceda a los [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) a los que pertenece el dominio. Solo deberá validar el dominio principal, no todos los subdominios.|
+> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.domain.tld") en la zona DNS autorizada para el dominio que quiera añadir.<br></br>Tenga en cuenta que, si quiere añadir `blog.domain.tld`, debe crear el registro para el subdominio `ovhcontrol.domain.tld` y no `ovhcontrol.blog.domain.tld`.<br></br>Para consultar la configuración DNS, acceda a los [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) a los que pertenece el dominio. Solo deberá validar el dominio principal, no todos los subdominios.|
 >
 > ![Multisitio](images/find-token.png){.thumbnail}
 >
@@ -136,8 +136,8 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 
 |Campo|Descripción|
 |---|---|
-|Dominio|Introduzca el dominio que quiera utilizar. Añada un subdominio (p. ej., **blog**.mydomain.ovh) y cree simultáneamente el subdominio www correspondiente (p. ej., **www.blog**.mydomain.ovh). El dominio que introduzca aquí será la dirección de internet del sitio web, una vez publicado. Recuerde que, para poder añadir el dominio, es necesario tener permisos para modificar su configuración (zona DNS).|
-|Carpeta raíz| Defina la carpeta, en su espacio de almacenamiento, hacia la que apunta el dominio . Los archivos del sitio web deberán publicarse en este espacio. Por ejemplo, para blog.mydomain.ovh, la carpeta raíz podría ser "blog". Si la carpeta no existe, se creará automáticamente.|
+|Dominio|Introduzca el dominio que quiera utilizar. Añada un subdominio (p. ej., **blog**.domain.tld) y cree simultáneamente el subdominio www correspondiente (p. ej., **www.blog**.domain.tld). El dominio que introduzca aquí será la dirección de internet del sitio web, una vez publicado. Recuerde que, para poder añadir el dominio, es necesario tener permisos para modificar su configuración (zona DNS).|
+|Carpeta raíz| Defina la carpeta, en su espacio de almacenamiento, hacia la que apunta el dominio . Los archivos del sitio web deberán publicarse en este espacio. Por ejemplo, para blog.domain.tld, la carpeta raíz podría ser "blog". Si la carpeta no existe, se creará automáticamente.|
 |Activar IPv6|Permite activar el protocolo IPv6 en el dominio indicado. Más información en nuestra página sobre las [IP](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}.|
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Compruebe que la información que se muestra en el resumen es correcta.

@@ -75,14 +75,14 @@ Nel caso di un dominio esterno al tuo account cliente (altro identificativo clie
 A questo punto è necessario personalizzare l'aggiunta del dominio o sottodominio. In base al piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivato, alcune opzioni potrebbero non essere disponibili.
 
 > [!primary]
-> Per aggiungere un sottodominio, è necessario selezionare il dominio principale nella lista (ad esempio: midomain.ovh). Lo step successivo ti permetterà di indicare il sottodominio (esempio: **blog**.mydomain.ovh).
+> Per aggiungere un sottodominio, è necessario selezionare il dominio principale nella lista (ad esempio: domain.tld). Lo step successivo ti permetterà di indicare il sottodominio (esempio: **blog**.domain.tld).
 
 ![multisito](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Campo|Descrizione|
 |---|---|
-|Dominio|Di default, il dominio selezionato viene inserito automaticamente.  È possibile aggiungere un sottodominio (ad esempio, **blog**.mydomain.ovh) e creare contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.mydomain.ovh). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online.|
-|Cartella di root|Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.mydomain.ovh, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
+|Dominio|Di default, il dominio selezionato viene inserito automaticamente.  È possibile aggiungere un sottodominio (ad esempio, **blog**.domain.tld) e creare contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.domain.tld). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online.|
+|Cartella di root|Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.domain.tld, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
 |SSL|Permette di usufruire di una connessione sicura (https://) sul dominio selezionato.  Per maggiori informazioni, accedi alla pagina relativa ai [certificati SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}. Attivando contemporaneamente le opzioni SSL e CDN (Content Delivery Network), potrai usufruire anche del protocollo **HTTP2**.|
 |Attiva la CDN|Permette di attivare la CDN sul dominio selezionato memorizzando in cache gli elementi statici di un sito, ad esempio le immagini. Per maggiori informazioni, accedi alla pagina relativa alla [CDN](https://www.ovhcloud.com/it/web-hosting/options/cdn/){.external}.  Attivando contemporaneamente le opzioni SSL e CDN (Content Delivery Network), potrai usufruire anche del protocollo **HTTP2**.|
 |IP del Paese|Permette di usufruire di un indirizzo IP geolocalizzato (a scelta tra diversi Paesi) per il dominio selezionato. Per maggiori informazioni, accedi alla pagina relativa agli [IP](https://www.ovhcloud.com/it/web-hosting/options/){.external}. |
@@ -121,7 +121,7 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 >
 > |Campo|Dove trovare l’informazione|Azione da realizzare|
 > |---|---|---|
-> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.mydomain.ovh) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.mydomain.ovh` è necessario creare il record per il sottodominio `ovhcontrol.mydomain.ovh` e non `ovhcontrol.blog.mydomain.ovh`.<br></br>Per recuperarla, consulta i [server DNS](/pages/web_cloud/domains/dns_server_general_information#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
+> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.domain.tld) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.domain.tld` è necessario creare il record per il sottodominio `ovhcontrol.domain.tld` e non `ovhcontrol.blog.domain.tld`.<br></br>Per recuperarla, consulta i [server DNS](/pages/web_cloud/domains/dns_server_general_information#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
 >
 > ![multisito](images/find-token.png){.thumbnail}
 >
@@ -136,8 +136,8 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 
 |Campo|Descrizione|
 |---|---|
-|Dominio|Inserisci il dominio che vuoi utilizzare. Se necessario, aggiungi un sottodominio (ad esempio, **blog**.mydomain.ovh) e crei contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.mydomain.ovh). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online. Ti ricordiamo che, per poter completare l’aggiunta del dominio, devi essere in grado di modificarne la configurazione (zona DNS).|
-|Cartella di root| Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.mydomain.ovh, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
+|Dominio|Inserisci il dominio che vuoi utilizzare. Se necessario, aggiungi un sottodominio (ad esempio, **blog**.domain.tld) e crei contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.domain.tld). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online. Ti ricordiamo che, per poter completare l’aggiunta del dominio, devi essere in grado di modificarne la configurazione (zona DNS).|
+|Cartella di root| Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.domain.tld, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
 |Attiva l’IPv6|Permette di attivare il protocollo IPv6 sul dominio selezionato.  Per maggiori informazioni, accedi alla pagina relativa agli [IP](https://www.ovhcloud.com/it/web-hosting/options/){.external}. |
 
 Una volta inseriti tutti i dati, clicca su `Seguente`{.action} e verifica la correttezza delle informazioni inserite.
