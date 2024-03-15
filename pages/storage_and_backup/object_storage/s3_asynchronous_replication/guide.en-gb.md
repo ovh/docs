@@ -320,6 +320,11 @@ Suppose the source bucket, region1-destination-bucket and region2-destination-bu
 ## In Practice
 
 > [!primary]
+>
+> The name of an Exchange service in your OVH Control Panel starts with **hosted-** or **private-**, contains a part of your NIC handle, and ends with a figure (1 for the first Hosted or Private Exchange service installed, 2 for the second, etc.).
+>
+
+> [!primary]
 > **IMPORTANT**
 > Versioning must be activated in source bucket and destination bucket(s)
 
