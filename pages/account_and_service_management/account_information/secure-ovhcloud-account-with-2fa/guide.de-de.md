@@ -144,11 +144,11 @@ Sie können die Notfall-Codes über Ihr Kundencenter neu generieren oder lösche
 
 Gehen Sie auf die [Authentifizierungsseite im OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
 
-Im Anmeldebildschirm wird die zuletzt verwendete oder aufgefüllte Methode der Zwei-Faktor-Authentifizierung angezeigt. Wenn Sie eine andere Methode verwenden möchten, klicken Sie auf den Button `Eine andere Methode testen`{.action}.
+Im Anmeldebildschirm wird die zuletzt verwendete oder aufgefüllte Methode der Zwei-Faktor-Authentifizierung angezeigt. Wenn Sie eine andere Methode verwenden möchten, klicken Sie auf den Button `Eine andere Methode verwenden`{.action}.
 
 ![2FA](images/2024-007-log-in-01.png){.thumbnail width="400"}
 
-Alle aktivierten Methoden werden angezeigt, einschließlich der Notfall-Codemethode.
+Alle aktivierten Methoden werden angezeigt, einschließlich der Notfall-Codes.
 
 ![2FA](images/2024-007-log-in-02.png){.thumbnail width="400"}
 
@@ -158,28 +158,28 @@ Wenn Sie diese Methode wählen, müssen Sie nur einen Ihrer Notfall-Codes eingeb
 
 ### Was passiert, wenn eines meiner Peripheriegeräte verloren geht/gestohlen wird oder nicht mehr funktioniert? <a name="lost-device"></a>
 
-Wenn Ihr Peripheriegerät (Mobiltelefon/Smartphone/Sicherheitsschlüssel) verloren geht, gestohlen wird oder nicht mehr funktioniert, können Sie:
+Wenn Ihr Peripheriegerät (Mobiltelefon/Smartphone/Sicherheitsschlüssel) verloren geht, gestohlen wird oder nicht mehr funktioniert:
 
-- Verwenden Sie [die aktiven Notfall-Codes](#codes), die Sie gesichert haben;
-- Sie können ein anderes Gerät zur Zwei-Faktor-Authentifizierung verwenden, wenn Sie mehrere Geräte zur Zwei-Faktor-Authentifizierung aktiviert haben;
+- Verwenden Sie [die aktiven Notfall-Codes](#codes), die Sie gesichert haben.
+- Sie können ein anderes Gerät zur Zwei-Faktor-Authentifizierung verwenden, wenn Sie mehrere Geräte zur Zwei-Faktor-Authentifizierung aktiviert haben.
 - [Die Zwei-Faktor-Authentifizierung deaktivieren](#desactivation).
 
 > [!warning]
 >
 > Wenn eines Ihrer Geräte verloren gegangen ist oder gestohlen wurde, kann dies die Sicherheit Ihres OVHcloud-Accounts gefährden.
-> Sobald Sie wieder Zugang zu Ihrem Kundencenter haben, müssen Sie **dieses Gerät aus der Liste der Geräte entfernen, die für die Zwei-Faktor-Authentifizierung verwendet werden**.
+> Sobald Sie wieder Zugang zu Ihrem Kundencenter haben, entfernen Sie **dieses Gerät aus der Liste der Geräte, die für die Zwei-Faktor-Authentifizierung verwendet werden**.
 >
-> Weitere Informationen zum Entfernen eines Geräts finden Sie im nächsten Kapitel dieses Handbuchs.
+> Weitere Informationen zum Entfernen eines Geräts finden Sie im nächsten Abschnitt.
 >
 
 #### Gerät löschen <a name="delete-device"></a>
 
 > [!warning]
 >
-> Bevor Sie ein Gerät entfernen und den Zugriff auf Ihr Konto nicht blockieren, stellen Sie sicher, dass Sie über folgende Optionen verfügen:
+> Bevor Sie ein Gerät entfernen und den Zugriff auf Ihren Kunden-Account nicht blockieren, stellen Sie sicher, dass Sie über folgende Optionen verfügen:
 >
-> - eines anderen funktionsfähigen Geräts
-> - einer anderen funktionalen Methode der Zwei-Faktor-Authentifizierung;
+> - Ein anderes funktionsfähiges Gerät
+> - Eine andere funktionalen Methode der Zwei-Faktor-Authentifizierung
 > - Gültige Notfall-Codes.
 >
 
