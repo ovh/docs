@@ -1,6 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Roundcube'
-updated: 2024-02-21
+updated: 2024-03-15
 ---
 
 ## Objectif
@@ -63,6 +63,11 @@ Vous serez alors redirigé vers l'interface Roundcube.
 > Si vous êtes redirigé sur une interface **O**utlook **W**eb **A**pp (OWA), cela signifie que vous êtes sur la dernière version de l'offre MX Plan. Pour plus d'information sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
 > Pour vous familiariser avec l'interface **OWA**, consultez notre guide [Consulter son compte e-mail depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+>
+> > [!warning]
+> 
+> Lorsque vous vous connectez pour la première fois sur l'interface Roundcube, il se peut que l'affichage de cette dernière soit différent de celle que vous voyez sur ce guide. C'est normal ! Il s'agit simplement de l'affichage "classique" qui est affecté par défaut à votre interface. Vous pouvez changer l'habillage de votre interface en allant dans 'Paramètres' puis sélectionnez la section 'Interface utilisateur' puis dans "Habillage de l'interface" et sélectionnez l'affichage "Larry".
+> L'habillage de l'interface n'aura pas d'effet sur les explications qui suivent de ce guide. 
 
 ### Interface générale du webmail Roundcube <a name="general-interface"></a>
 
@@ -164,12 +169,20 @@ Les chapitres suivants de ce guide correspondent aux onglets qui composent la pa
 
 #### Interface utilisateur <a name="user-interface-settings"></a>
 
+##### Options principales
+
 Définissez ici la `langue` d'usage de l'interface Roundcube, le `fuseau horaire`,le `format horaire` et le `format de date`.
 
 L'option `Jolies dates` permet d'afficher la date de réception/d'envoi avec des termes relatifs tels qu’« Aujourd’hui », « Hier », etc.<br>
 **Par exemple** : nous sommes le **19/05/2022**, un e-mail envoyé/reçu le **17/05/2022** à **17:38** sera affiché **Mar 17:38**, car l'email correspond au mardi qui précède.
 
 La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri.
+
+La case `Actualiser` permet de rafraîchir automatiquement l'interface. Cela est utile notamment en lorsque vous attendez un mail spécifique. Vous pouvez modifier la fréquence d'actualisation (de 1 minute à 60 minutes), mais vous pouvez également enlever cette option en choisissant "jamais" dans la liste déroulante. 
+
+##### Habillage de l'interface
+
+Vous pouvez choisir le mode d'affichage de votre interface. Vous avez le choix entre l'affichage "classique" ou l'affichage "Larry". Le choix de l'habbillage n'aura pas d'impact sur les outils de l'interface. 
 
 #### Vue de la boîte de courriels <a name="mail-view-settings"></a>
 
@@ -195,7 +208,9 @@ Personnalisez ici l'agencement des informations dans votre carnet d'adresses.
 Roundcube dispose de 4 dossiers spéciaux : `Brouillons`, `Envoyés`, `Pourriels`, `Corbeille`.
 
 Nous ne conseillons pas de les modifier mais il est possible d'attribuer le comportement d'un dossier spécial à un autre dossier créé ultérieurement, grâce aux menus déroulants.<br>
-**Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé. Les e-mails qui y seront enregistrés seront considérés comme des brouillons jusqu'à leur envoi effectif.
+**Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé en cliquant sur la liste déroulante et en choisissant ce dossier. Si aucun dossier ne lui est attribué, il sera automatiquement mis sur l'option "Drafts". Les e-mails qui y seront enregistrés seront alors considérés comme des brouillons jusqu'à leur envoi effectif.
+
+Exemple : je crée un sous-dossier "Draft mails clients". Je me rends dans mes préférneces > Dossiers spéciaux et je vais vers l'option "Brouillons". Je sélectionne la liste déroulante et je choisis de remplacer "Drafts" par "Draft mails clients". Ainsi, toutes mails rédigés dans ce dossier seront considérés comme des brouillons. 
 
 #### Paramètres du serveur <a name="server-settings"></a>
 
@@ -204,6 +219,15 @@ Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En
 > [!warning]
 > 
 > Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « SPAM ») se retrouverait déclaré comme SPAM pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
+
+#### Chiffrement <a name="Encryption"></a>
+
+Si votre navigateur vous le permet, vous pouvez installer et activer une extension "Mailvelope". Il s'agit d'une extension de navigateur qui intègre le PGP ("Pretty Good Privacy") dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension "Mailveloppe" permet de : 
+- Chiffrer et déchiffrer des e-mails dans votre navigateur
+- Gérer les clés de vos contacts
+- Garder le contenu de vos e-mail privé, même de votre fournisseur de messagerie
+
+Autrement dit, vous êtes le seul capable de lire vos e-mails. Cette extension est donc un moyen de sécuriser votre webmail. Cette sécurité est d'autant plus nécessaire si vous êtes amené/e/s à recevoir des e-mails de nature confidentielle. 
 
 ### Gérer les identités et leur signature <a name="identity-signature"></a>
 
@@ -248,6 +272,24 @@ Cliquez sur le bouton `< >`{.action} dans la barre d'outils HTML, puis insérez 
 
 ![hosting](images/roundcube08.png){.thumbnail}
 
+### Réponses (gabarits) <a name="responses"></a>
+
+Cette fonction permet de créer des gabarits de réponses lors de la rédaction d'un e-mail.
+
+Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, puis sur `Réponses`{.action} dans la colonne de gauche.
+
+Pour ajouter une réponse, cliquez sur le bouton `+`{.action} en bas de la colonne `Réponses`.
+
+![hosting](images/roundcube12.png){.thumbnail}
+
+> [!primary]
+> 
+> Les « réponses » se rédigent au format « texte en clair ».
+
+### Ajouter un répondeur ou réponse automatique <a name="automatic-respond"></a>
+
+Vous souhaitez ajouter une réponse automatique à votre adresse e-mail lorsque vous êtes absent ou indisponible. Cette fonction ne peut pas s'activer depuis le webmail mais depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Créer un répondeur pour son adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/) ».
+
 ### Carnet de contacts <a name="contact-book"></a>
 
 Cliquez sur `Contacts`{.action}, dans la barre supérieure, pour accéder au carnet de contacts. Celui-ci est divisé en **3 colonnes**:
@@ -267,6 +309,7 @@ Pour créer un groupe, cliquez sur le bouton `+`{.action} en bas de la colonne `
 ![hosting](images/roundcube10.png){.thumbnail}
 
 Pour affecter un contact à l'un des groupes, sélectionnez un contact dans la colonne `Contacts` puis, dans la fenêtre qui apparait, cliquez sur l'onglet `Groupes`{.action}. Cochez le groupe que vous souhaitez attribuer au contact.
+Vous pouvez également glisser le contact à l'aide de votre souris d'ordinateur, vers le groupe de votre choix. 
 
 #### Contacts <a name="contacts"></a>
 
@@ -306,24 +349,6 @@ Vous avez le choix entre :
 
 ![hosting](images/roundcube-export-contact.png){.thumbnail}
 
-### Réponses (gabarits) <a name="responses"></a>
-
-Cette fonction permet de créer des gabarits de réponses lors de la rédaction d'un e-mail.
-
-Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, puis sur `Réponses`{.action} dans la colonne de gauche.
-
-Pour ajouter une réponse, cliquez sur le bouton `+`{.action} en bas de la colonne `Réponses`.
-
-![hosting](images/roundcube12.png){.thumbnail}
-
-> [!primary]
->
-> Les « réponses » se rédigent au format « texte en clair ».
-
-### Ajouter un répondeur ou réponse automatique <a name="automatic-respond"></a>
-
-Vous souhaitez ajouter une réponse automatique à votre adresse e-mail lorsque vous êtes absent ou indisponible. Cette fonction ne peut pas s'activer depuis le webmail mais depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Créer un répondeur pour son adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/) ».
-
 ### Modifier le mot de passe de votre adresse-mail <a name="password"></a>
 
 Pour modifier le mot de passe de votre adresse e-mail, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/) ».
@@ -348,7 +373,7 @@ Dans la fenêtre de rédaction d'un e-mail, on retrouve les champs suivants :
     - `Texte en clair` : uniquement du texte sans mise en forme.
     - `HTML`: texte avec mise en forme. Une barre d'outils HTML apparaît au-dessus de la fenêtre de saisie.
 - **Priorité** de l'e-mail.
-- **Avis de réception** : un accusé de réception est demandé au destinataire.
+- **Avis d'ouverture du courriel** : un accusé de réception est demandé au destinataire.
 - **Notification d'état de distribution** lorsque l'e-mail a bien été transmis au destinataire.
 - **Enregistrer le courriel envoyé dans** : choisir le dossier dans lequel une copie de l'e-mail sera stockée.
 
