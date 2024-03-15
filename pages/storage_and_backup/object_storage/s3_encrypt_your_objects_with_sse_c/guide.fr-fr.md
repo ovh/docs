@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C
+title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C ou SSE-S3
 excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-S3
 updated: 2024-03-15
 ---
