@@ -158,10 +158,10 @@ The basic structure of a replication rule within the configuration JSON document
 | Bucket                  | The destination bucket (to replicate to multiple destinations, you must create multiple replication rules)              | Yes      |
 | And                     | You can apply multiple selection criteria in the filter                                                                 | No       |
 
-# Delete Marker Replication
+### Delete Marker Replication
 
-> [!warning] **IMPORTANT**
->
+> [!warning]
+> **IMPORTANT**
 > If you specify a `Filter` in your replication configuration, you **must** also include a `DeleteMarkerReplication` element. If your `Filter` includes a `Tag` element, the `DeleteMarkerReplication` Status **must be set to Disabled**.
 
 
