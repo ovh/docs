@@ -1,7 +1,7 @@
 ---
 title: 'Securing your OVHcloud account with two-factor authentication'
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication (2FA)'
-updated: 2024-03-15
+updated: 2024-03-18
 ---
 
 ## Objective
@@ -29,7 +29,7 @@ This guide will help you:
 
 You can enable one or more two-factor authentication methods to secure and control access to your Control Panel.
 
-We offer three different methods (click on the tabs below to view their presentation):
+We offer three different methods (click on the tabs below to view their explanations):
 
 > [!tabs]
 > Mobile App
@@ -40,7 +40,7 @@ We offer three different methods (click on the tabs below to view their presenta
 >> - FreeOTP for Android
 >> - OTP Auth for iOS
 >>
->> Once the application is linked to your OVHcloud account, the application generates a one-time code that is valid for a short period of time (a few seconds) each time you try to log in.
+>> Once the application is linked to your OVHcloud account, the application generates a single-use code that is valid for a short period of time (a few seconds) each time you try to log in.
 >>
 >> > [!success]
 >> > **Advantages of this method**:
@@ -59,7 +59,7 @@ We offer three different methods (click on the tabs below to view their presenta
 >>
 >> This two-factor authentication method complements an already activated method (via **Mobile Application** or **Security key**). It cannot be activated alone.
 >>
->> Each time you try to log in, you can enter one of the 10 one-time codes.
+>> Each time you try to log in, you can enter one of the 10 single-use codes.
 >> It is essential to always have at least 1 remaining backup code. Remember to regenerate them via the OVHcloud Control Panel if you have used all of them, or if you have lost them.
 
 ### Step 1 - Enable your first two-factor authentication method <a name="enabling-2fa"></a>
@@ -76,7 +76,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 >>
 >>![2FA mobileapp](images/2024-003-otp-choice-ca.png){.thumbnail width="400"}<br>
 >> A QR code is generated, scan it via your OTP application. If your OTP application does not offer this option, click `Show secret`{.action} to display a code to enter into the OTP application.<br>
->> Your application then generates a one-time code.
+>> Your application then generates a single-use code.
 >> Enter this code in the field to the right of the QR code. You can also add a description for this authentication method.
 >>
 >>![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
@@ -99,7 +99,7 @@ Once you have added the first method, you can also **add one or two other method
 
 ### Step 2 - Save backup codes <a name="codes"></a>
 
-When you add two-factor authentication for the first time, you will see 10 one-time **backup codes** displayed in the OVHcloud Control Panel.
+When you add two-factor authentication for the first time, you will see 10 single-use **backup codes** displayed in the OVHcloud Control Panel.
 
 **Please keep them safe**. We recommend saving them in a password manager, such as [KeePass](https://keepass.info/){.external} or [Bitwarden](https://bitwarden.com/) (both applications are free).
 
@@ -139,9 +139,9 @@ By choosing this last method, you just need to enter one of your backup codes.
 
 If your device (mobile phone/smartphone/security key) is lost, stolen or no longer works, you can:
 
-- use the active [backup codes](#codes) that you have backed up.
-- use another two-factor authentication device, if you have enabled several.
-- [disable two-factor authentication](#disable-2fa).
+- Use the active [backup codes](#codes) that you have backed up.
+- Use another two-factor authentication device, if you have enabled several.
+- [Disable two-factor authentication](#disable-2fa).
 
 > [!warning]
 >
@@ -157,9 +157,9 @@ If your device (mobile phone/smartphone/security key) is lost, stolen or no long
 >
 > Before removing a device, and in order not to block access to your account, please check that you have:
 >
-> - another functional device;
-> - another functional two-factor authentication method;
-> - valid backup codes.
+> - Another functional device
+> - Another functional two-factor authentication method
+> - Valid backup codes
 >
 
 To remove a device, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Click your name in the top right-hand corner, then click your initials.

@@ -1,7 +1,7 @@
 ---
 title: 'Securing your OVHcloud account with two-factor authentication'
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication (2FA)'
-updated: 2022-07-20
+updated: 2024-03-18
 ---
 
 ## Objective
@@ -35,7 +35,7 @@ We offer four different methods (click on the tabs below to view their explanati
 > SMS
 >>![2FA sms](images/sms.svg)<br>
 >> For this method, you will need to enter your mobile number.
->> A one-time code is sent to you via SMS each time you try to log in to your OVHcloud account.
+>> A single-use code is sent to you via SMS each time you try to log in to your OVHcloud account.
 >>
 >> The main advantage of this method is that codes are sent to a device not attached to your computer. If your system is compromised, e.g. by malware, your account will remain secure.
 >> However, you must have sufficient network coverage to receive SMS messages.
@@ -48,7 +48,7 @@ We offer four different methods (click on the tabs below to view their explanati
 >> - FreeOTP for Android
 >> - OTP Auth for iOS
 >>
->> Once the application is linked to your OVHcloud account, the application generates a one-time code that is valid for a short period of time (a few seconds) each time you try to log in.
+>> Once the application is linked to your OVHcloud account, the application generates a single-use code that is valid for a short period of time (a few seconds) each time you try to log in.
 >>
 >> > [!success]
 >> > **Advantages of this method**:
@@ -97,7 +97,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 >>
 >>![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
 >> A QR code is generated, scan it via your OTP application. If your OTP application does not offer this option, click `Show secret`{.action} to display a code to enter into the OTP application.<br>
->> Your application then generates a one-time code.
+>> Your application then generates a single-use code.
 >> Enter this code in the field to the right of the QR code. You can also add a description for this authentication method.
 >>
 >>![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
