@@ -473,7 +473,7 @@ Your Additional IP is now functional.
 #### Via the graphical user interface
 
 1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings `{.action}(in the left-hand menu).
-2. Right-click on your Network Connection, in our example `Ethernet 2`{.action}.
+2. Right-click on your network connection, in our example `Ethernet 2`{.action}.
 3. Click on `Properties`{.action}.
 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
 5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type 213.186.33.99.
