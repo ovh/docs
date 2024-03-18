@@ -167,7 +167,7 @@ Vous trouverez, dans le cadre **« Configuration générale de PostgreSQL »**, 
 
     - **« WARNING »** : Fournit les messages d'avertissement sur de potentiels problèmes.
     - **« ERROR »** : Envoie l'erreur qui a engendré l'annulation d'une commande en cours.
-    - **« LOG »** : Enregistre des informations destiénes aux administrateurs du serveur.
+    - **« LOG »** : Enregistre des informations destinées aux administrateurs du serveur.
     - **« FATAL »** : Envoie l'erreur qui a engendré la fin de la session en cours.
     - **« PANIC »** : Envoie l'erreur qui a engendré la fin de l'ensemble des sessions.
 
