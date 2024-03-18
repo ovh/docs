@@ -63,7 +63,7 @@ Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le ré
 
 **1. Créer des pages** : pour ajouter une nouvelle page à votre site web, créez un nouveau fichier Markdown (.md) dans le dossier `content/`. Le nom du fichier déterminera l'URL de la page. Par exemple, `about.md` sera accessible à http://votredomaine.com/about.
 
-**2. Écrire du contenu** : ouvrez le fichier Markdown avec un éditeur de texte et commencez à écrire votre contenu. Vous pouvez utiliser la syntaxe Markdown pour formater votre texte, créer des liens, insérer des images, etc. Par exemple, si vous voulez éditer la page principale (home) de votre site web, ouvrez le fichier `index.md` et insérez le contenu de votre choix.
+**2. Écrire du contenu** : ouvrez le fichier Markdown avec un éditeur de texte et commencez à écrire votre contenu. Utilisez la syntaxe Markdown pour formater votre texte, créer des liens, insérer des images, etc. Par exemple, si vous voulez éditer la page principale (home) de votre site web, ouvrez le fichier `index.md` et insérez le contenu de votre choix.
 
 **3. Vérifier le contenu** : les fichiers Markdown doivent avoir un en-tête YAML valide. Si l'en-tête manque ou est mal formaté, Pico peut ne pas le reconnaître comme une page valide. Un exemple d'en-tête YAML valide est :
 
