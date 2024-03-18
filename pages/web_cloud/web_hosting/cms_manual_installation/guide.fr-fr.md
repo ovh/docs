@@ -132,7 +132,7 @@ Si vous n'utilisez pas déjà un client FTP, vous pouvez utiliser Filezilla. Ret
 
 > [!primary]
 >
-> Il existe d'autres clients FTP que vous pouvez utiliser, comme par exemple Cyberduck. Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de Cyberduck avec votre offre d'hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+> Il existe d'autres clients FTP que vous pouvez utiliser comme, par exemple, Cyberduck. Retrouvez plus d'informations dans notre documentation relative à l'[utilisation de Cyberduck avec votre offre d'hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
 >
 
 #### 1.4 - Préparer une base de données <a name="step1-4"></a>
