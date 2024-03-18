@@ -44,12 +44,30 @@ To gather an IPv6 block with OVH's services, particularly for use with a vRack, 
 - Identify the region where you want your IPv6 block to be allocated. This is crucial as it determines the entry point of public traffic to your vRack.
 
 **Sample APIv6 Commands**   
-1. ***Authenticate with the OVH API:***
+
+<details>
+    <summary> <Authenticate with the OVH API </summary>
+<blockquote>
+
 ```bash
 curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "Content-type: application/json" \
 "https://eu.api.ovh.com/1.0/auth/credential" \
 -d '{"accessRules":[{"method":"GET","path":"/*"},{"method":"POST","path":"/*"},{"method":"PUT","path":"/*"},{"method":"DELETE","path":"/*"}]}'
 ````   
+
+</blockquote>
+</details>
+
+
+
+1. ***Authenticate with the OVH API:***
+
+```bash
+curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "Content-type: application/json" \
+"https://eu.api.ovh.com/1.0/auth/credential" \
+-d '{"accessRules":[{"method":"GET","path":"/*"},{"method":"POST","path":"/*"},{"method":"PUT","path":"/*"},{"method":"DELETE","path":"/*"}]}'
+````   
+
 In this example, `abc123xyz` is a placeholder for your actual OVH application key. This command requests a new set of credentials (a consumer key) that will allow your application to make API calls under the specified access rules.    
 
 Upon successful execution of the command, the OVH API will return a JSON object containing a consumerKey and a validationUrl. Here's an example of what the return might look like:
