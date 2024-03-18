@@ -1,7 +1,7 @@
 ---
 title: 'Inziare a utilizzare Web Cloud Databases'
 excerpt: 'Scopri come utilizzare la soluzione Web Cloud Databases'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]

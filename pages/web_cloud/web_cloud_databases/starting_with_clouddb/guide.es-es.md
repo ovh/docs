@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con el servicio Web Cloud Databases'
 excerpt: 'Descubra cómo empezar a utilizar la solución Web Cloud Databases'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]

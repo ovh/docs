@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - primeira utilização'
 excerpt: 'Saiba como começar a usar e a gerir o serviço Web Cloud Databases'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]
