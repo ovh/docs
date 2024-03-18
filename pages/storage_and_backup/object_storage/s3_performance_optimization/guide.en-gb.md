@@ -24,6 +24,12 @@ user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range by
 You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if transmission of any part fails. After you complete the upload of all parts, OVHcloud Object Storage puts the pieces together and rebuilds the object.
 
 > [!success]
+>
+> Vous souhaitez que vos appelants arrivent directement sur votre répondeur en fonction de plages horaires ou de jours exceptionnels ?
+> Consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
+>
+
+> [!success]
 > You should consider using multipart uploads for objects > 100MB
 > The benefits of using multipart upload are as follows:
 
