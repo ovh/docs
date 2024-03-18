@@ -440,7 +440,7 @@ If filters exist, you will see the list in the order in which they are applied:
 
 - **(2)** This button is used as a handle, allowing you to move the filter in the list to assign an order of application. Each filter is applied in the order that is defined in the list.
 
-Click the `+ Add a filter`{.action} button to start creating it. The basic mode window appears by default. You can switch to advanced mode by clicking `Switch to advanced`{.action} to have all comparison operators. Find the details in the section “[How to set filters](filters-howto)”.
+Click the `+ Add a filter`{.action} button to start creating it. The basic mode window appears by default. You can switch to advanced mode by clicking `Switch to advanced`{.action} to have all comparison operators. Find the details in the section “[How to set filters](#filters-howto)”.
 
 > [!tabs]
 > **Basic mode**

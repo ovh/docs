@@ -445,7 +445,7 @@ Se existirem filtros, encontrará a lista segundo a ordem da aplicação:
 
 - **(2)** Este botão é usado como uma alça, ele permite que você mova o filtro para a lista para atribuir uma ordem de aplicação. Cada filtro é aplicado de acordo com a ordem indicada na lista.
 
-Clique no botão `+ Adicione um filtro`{.action} para iniciar a criação do filtro. A janela Modo simples é exibida por predefinição. Pode passar para o modo avançado clicando em `Mudar para avançado`{.action} para dispor de todos os operadores de comparação. Consulte a secção "[Compreender como configurar os filtros](filters-howto)".
+Clique no botão `+ Adicione um filtro`{.action} para iniciar a criação do filtro. A janela Modo simples é exibida por predefinição. Pode passar para o modo avançado clicando em `Mudar para avançado`{.action} para dispor de todos os operadores de comparação. Consulte a secção "[Compreender como configurar os filtros](#filters-howto)".
 
 > [!tabs]
 > **Modo simples**

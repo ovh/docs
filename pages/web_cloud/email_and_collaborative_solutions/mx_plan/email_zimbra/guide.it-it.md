@@ -445,7 +445,7 @@ Se esistono dei filtri, visualizzerai la lista secondo il loro ordine di applica
 
 - **(2)** Questo pulsante viene utilizzato come una maniglia e consente di spostare il filtro nell'elenco per assegnargli un ordine di applicazione. Ogni filtro viene applicato nell'ordine definito nell'elenco.
 
-Clicca sul pulsante `+ Aggiungi un filtro`{.action} per avviare la creazione. Per impostazione predefinita, viene visualizzata la finestra della modalità semplice. È possibile passare alla modalità avanzata facendo clic su `Avanzate`{.action} per disporre di tutti gli operatori di confronto. Per maggiori informazioni, consulta la sezione "[Come configurare i filtri](filters-howto)".
+Clicca sul pulsante `+ Aggiungi un filtro`{.action} per avviare la creazione. Per impostazione predefinita, viene visualizzata la finestra della modalità semplice. È possibile passare alla modalità avanzata facendo clic su `Avanzate`{.action} per disporre di tutti gli operatori di confronto. Per maggiori informazioni, consulta la sezione "[Come configurare i filtri](#filters-howto)".
 
 > [!tabs]
 > **Modalità semplice**
