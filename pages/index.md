@@ -1120,6 +1120,7 @@
             + [Installing a CMS manually on your Web Hosting plan](web_cloud/web_hosting/cms_manual_installation)
             + [Installing WordPress manually](web_cloud/web_hosting/cms_manual_installation_wordpress)
             + [Installing Joomla! manually](web_cloud/web_hosting/cms_manual_installation_joomla)
+            + [Installing Pico manually](web_cloud/web_hosting/cms_manual_installation_pico)
             + [Installing PrestaShop manually](web_cloud/web_hosting/cms_manual_installation_prestashop)
             + [Installing Drupal manually](web_cloud/web_hosting/cms_manual_installation_drupal)
         + [FTP and SSH](web-cloud-hosting-ftp-and-ssh)
