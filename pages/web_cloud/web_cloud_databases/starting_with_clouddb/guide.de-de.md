@@ -200,27 +200,7 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 ### Die Logs Ihres Web Cloud Databases Servers abrufen
 
-Um die neuesten Logs Ihrer Datenbank zu überprüfen, gehen Sie auf den Tab `Logs`{.action} Ihres Web Cloud Databases Servers. Dieser Tab zeigt in Echtzeit Alarme und Fehler an.
-
-![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
-
-Um alle Logs Ihres Web Cloud Databases Servers abzurufen, loggen Sie sich via SFTP mit diesem ein.
-
-> [!warning]
->
-> Bevor Sie sich verbinden, überprüfen Sie, ob die IP-Adresse des von Ihnen verwendeten Geräts auf Ihrem Web Cloud Databases Server mit der angekreuzten Option "SFTP" erlaubt ist. Folgen Sie hierzu der Anleitung [Die Verbindung zu einem OVHcloud Webhosting erlauben](#trustip).
-
-Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.action} Ihres Web Cloud Databases Servers. Wenn Sie das `Passwort des Servers` nicht kennen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts, um ihn zu bearbeiten.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Verbinden Sie sich über einen FTP-Client (FileZilla, Cyberduck, WinSCP...).
-
-Für FileZilla gehen Sie im Menü `File`{.action} zum Bereich `Site Manager`{.action}. Klicken Sie auf `New Site`{.action} und geben Sie die oben aufgeführten Einstellungen ein.
-
-![Web Cloud Databases](images/sftp-connexion.png){.thumbnail}
-
-Die Log-Datei mit dem Namen `stdout.log` befindet sich im Wurzelverzeichnis.
+Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, folgen Sie unserer Anleitung „[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)“.
 
 ## Weiterführende Informationen
 
