@@ -164,7 +164,6 @@ Vous trouverez, dans le cadre **« Configuration générale de PostgreSQL »**, 
 ![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
 
 - **log_min_messages** : Contrôle les niveaux des messages à historiser dans les logs du serveur. Les niveaux disponibles pour une solution Web Cloud Databases sont les niveaux : 
-
     - **« WARNING »** : Fournit les messages d'avertissement sur de potentiels problèmes.
     - **« ERROR »** : Envoie l'erreur qui a engendré l'annulation d'une commande en cours.
     - **« LOG »** : Enregistre des informations destinées aux administrateurs du serveur.
