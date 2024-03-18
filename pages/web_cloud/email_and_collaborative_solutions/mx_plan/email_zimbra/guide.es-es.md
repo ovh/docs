@@ -445,7 +445,7 @@ Si existen filtros, la lista se muestra en el orden en que se aplican:
 
 - **(2)** Este botón funciona como un controlador, lo que le permite mover el filtro a la lista para asignarle un orden de aplicación. Esto se debe a que cada filtro se aplica en el orden que se define en la lista.
 
-Haga clic en el botón `y Añadir un filtro`{.action} para empezar a crear el filtro. Por defecto, se muestra la ventana de modo simple. Puede cambiar al modo avanzado haciendo clic en `Cambiar a Avanzado`{.action} para que todos los operadores de comparación estén disponibles. Para más información, consulte la sección "[Cómo configurar los filtros](filters-howto)".
+Haga clic en el botón `y Añadir un filtro`{.action} para empezar a crear el filtro. Por defecto, se muestra la ventana de modo simple. Puede cambiar al modo avanzado haciendo clic en `Cambiar a Avanzado`{.action} para que todos los operadores de comparación estén disponibles. Para más información, consulte la sección "[Cómo configurar los filtros](#filters-howto)".
 
 > [!tabs]
 > **Modo simple**

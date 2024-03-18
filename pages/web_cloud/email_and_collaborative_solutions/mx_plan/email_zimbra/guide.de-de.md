@@ -445,7 +445,7 @@ Wenn Filter vorhanden sind, entspricht deren Anwendungsreihenfolge der Listenano
 
 - **(2)** Mit dieser Funktion kann ein Filter in der Liste verschoben werden, um seine Anwendungsreihenfolge zu ändern. Filter werden in der Reihenfolge angewendet, die anhand der Liste definiert ist.
 
-Klicken Sie auf den Button `+ Filter hinzufügen`{.action}, um die Erstellung zu starten. Das Fenster für den einfachen Modus wird standardmäßig angezeigt. Sie können auf `Wechseln zu "Erweitert"`{.action} klicken, um alle Vergleichsoperatoren anzuzeigen. Weitere Informationen finden Sie im Abschnitt "[Grundlegendes zum Einrichten von Filtern](filters-howto)".
+Klicken Sie auf den Button `+ Filter hinzufügen`{.action}, um die Erstellung zu starten. Das Fenster für den einfachen Modus wird standardmäßig angezeigt. Sie können auf `Wechseln zu "Erweitert"`{.action} klicken, um alle Vergleichsoperatoren anzuzeigen. Weitere Informationen finden Sie im Abschnitt "[Grundlegendes zum Einrichten von Filtern](#filters-howto)".
 
 > [!tabs]
 > **Einfacher Modus**
