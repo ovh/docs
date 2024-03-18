@@ -171,7 +171,7 @@ Vous trouverez, dans le cadre **« Configuration générale de PostgreSQL »**, 
     - **« FATAL »** : Envoie l'erreur qui a engendré la fin de la session en cours.
     - **« PANIC »** : Envoie l'erreur qui a engendré la fin de l'ensemble des sessions.
 
-Chacun des niveaux inclut tous les niveaux qui le suivent. Plus le niveau est élevé, moins il y a de messages enregistré dans les logs du serveur.
+Chacun des niveaux inclut tous les niveaux qui le suivent. Plus le niveau est élevé, moins il y a de messages enregistrés dans les logs du serveur.
 
 Par défaut, la valeur définie est **« WARNING »** car elle inclut les valeurs **« ERROR »**, **« LOG »**, **« FATAL »** et **« PANIC »**.
 
