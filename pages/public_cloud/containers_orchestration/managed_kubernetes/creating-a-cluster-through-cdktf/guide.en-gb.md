@@ -1,7 +1,7 @@
 ---
 title: Creating a cluster through CDK for Terraform
 excerpt: 'Discover how to create a Kubernetes cluster through Cloud Development Kit for Terraform'
-updated: 2024-03-14
+updated: 2024-03-18
 ---
 
 ## Objective
@@ -529,8 +529,6 @@ In order to check your quotas and increase them, please follow this tutorial:
 ### Destroy (cleanup)
 
 If you want to easily destroy created resources, you can use the `cdktf destroy` command.
-
-TODO: xx
 
 ```bash
 $ cdktf destroy

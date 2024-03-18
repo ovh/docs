@@ -1,22 +1,20 @@
 ---
 title: Creating a cluster through CDK for Terraform
-excerpt: 'Creates a Kubernetes cluster through Cloud Development Kit for Terraform'
-updated: 2024-03-14
+excerpt: 'Discover how to create a Kubernetes cluster through Cloud Development Kit for Terraform'
+updated: 2024-03-18
 ---
 
 ## Objective
 
-Creating an OVHcloud Managed Kubernetes cluster through Terraform, the de-facto standard in Infrastructure as Code world, is very powerful. but sometimes teams wants to do the same things, not in HCL (Hashicorp Configuration Language) but in their favorite programming languages. Do you know you can do it with a programming language through Terraform?
+Creating an OVHcloud Managed Kubernetes cluster via Terraform, the de-facto standard in the world of Infrastructure as Code, is very powerful. But sometimes teams want to do the same thing, not in Hashicorp Configuration Language (HCL) but in their preferred programming languages. Did you know that you can do this with a programming language via Terraform?
 
 ## CDK for Terraform
 
 ![CDKTF](images/cdktf.png){.thumbnail}
 
-[Cloud Development Kit for Terraform](https://developer.hashicorp.com/terraform/cdktf), also called CDKTF, convert the definitions you write in your preferred programming language to Terraform configuration files. It uses Terraform to provision and manage your infrastructure when you deploy your application.
+[Cloud Development Kit for Terraform](https://developer.hashicorp.com/terraform/cdktf), also called CDKTF, converts the definitions you write in your preferred programming language to Terraform configuration files. It uses Terraform to provision and manage your infrastructure when you deploy your application.
 
-It supports several programming language: Go, Python, Java, TypeScript and C#.
-
-No needs to define your infrastructures in HCL (Hashicorp Configuration language) and it supports all the existing Terraform providers and modules.
+It supports several programming languages: Go, Python, Java, TypeScript and C#. There is no need to define your infrastructures in HCL (Hashicorp Configuration Language) and it supports all existing Terraform providers and modules.
 
 ![CDKTF](images/cdktf_schema.png){.thumbnail}
 
@@ -29,22 +27,22 @@ Read the [official documentation of CDK for Terraform](https://developer.hashico
 - Installing [CDKTF CLI](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install){.external}
 - Installing [Go](https://go.dev/doc/install)
 
-## OVHcloud Terraform provider
+### OVHcloud Terraform provider
 
 In order to create a Kubernetes cluster and other resources, OVHcloud provides a [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} which is available in the official Terraform registry.
 
-All available resources and data sources have their definition and documentation.
+All available resources and data sources have their own definition and documentation.
 
-CDKTF will "translate" your code to a HCL configuration file and then call `terraform` and use existing OVHcloud Terraform provider.
+CDKTF will "translate" your code into an HCL configuration file and then call `terraform` and use the existing OVHcloud Terraform provider.
 
 In this guide, we will create two resources:
 
-* a [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster
-* and a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool
+* a [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster.
+* a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool.
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
-## Getting your cluster/API tokens information
+### Getting your cluster/API tokens information
 
 The "OVH provider" needs to be configured with a set of credentials:
 
@@ -54,21 +52,21 @@ The "OVH provider" needs to be configured with a set of credentials:
 * a `consumer_key`
 * a `service_name`
 
-Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
+Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs.
 
-In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) tutorial.
+To retrieve the necessary information, please follow the tutorial [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
 Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
-When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
+Once you have successfully generated your OVH tokens, please keep them. You'll need to define them in the next few minutes.
 
-The last needed information is the `service_name`: it is the ID of your Public Cloud project.
+The last piece of information you need is the `service_name`: this is the ID of your Public Cloud project.
 
-How to get it?
+How do you get it?
 
-In the Public Cloud section, you can retrieve your service name ID thanks to the `Copy to clipboard`{.action} button.
+In the Public Cloud section, you can retrieve your Public Cloud project ID thanks to the `Copy to clipboard`{.action} button.
 
 ![Copy paste service name](images/get-service-name.png){.thumbnail}
 
@@ -95,29 +93,29 @@ export OVH_CONSUMER_KEY="xxx"
 export OVH_CLOUD_PROJECT_SERVICE="xxx"
 ```
 
-## Deploy an OVHcloud Managed Kubernetes cluster & a node pool in Go / Golang
+### Deploy an OVHcloud Managed Kubernetes cluster and a node pool in Go / Golang
 
 In this guide, we want to create, in Go:
 
 * an OVHcloud managed Kubernetes cluster
-* a nodepool
+* a node pool
 
-### Project initialization
+#### Project initialization
 
-Create a folder and go into it:
+Create a folder and access it:
 
 ```bash
 $ mkdir ovhcloud-kube
 $ cd ovhcloud-kube
 ```
 
-Initialize our project with cdktf CLI:
+Initialize your project with cdktf CLI:
 
 ```bash
 $ cdktf init --template=go --providers="ovh/ovh@~>0.37.0" "hashicorp/local" --providers-force-local --local --project-name=ovhcloud-kube --project-description="Go app that deploy an OVHcloud Managed Kubernetes cluster and a node pool" --enable-crash-reporting
 
-Note: By supplying '--local' option you have chosen local storage mode for storing the state of your stack.
-This means that your Terraform state file will be stored locally on disk in a file 'terraform.<STACK NAME>.tfstate' in the root of your project.
+Note: By providing the '--local' option, you have chosen local storage mode to store your stack state.
+This means that your Terraform state file will be stored locally on disk in a file 'terraform.<STACK NAME>.tfstate' at the root of your project.
 go: upgraded github.com/aws/jsii-runtime-go v1.67.0 => v1.94.0
 ========================================================================================================
 
@@ -159,14 +157,13 @@ Generated go constructs in the output directory: generated
 The generated code depends on jsii-runtime-go. If you haven't yet installed it, you can run go mod tidy to automatically install it.
 Run 'go mod tidy' after adding imports for any needed modules such as prebuilt providers
 ```
-
-The command initialized the application in the programming language you specified (Go in our case) with the list of existing Terraform provider you defined (OVHcloud and Hashicorp local) and store the Terraform State locally (thanks to the `--local` flag).
+The command initializes the application in the programming language you have specified (Go in our case) with the list of existing Terraform providers you have defined (OVHcloud and Hashicorp local) and stores the Terraform State locally (thanks to the `--local` flag).
 
 The code organization of your project is created:
 
 ```bash
 -rw-r--r-- 1 gitpod gitpod  265 Mar 14 10:15 cdktf.json
-drwxr-xr-x 3 gitpod gitpod   62 Mar 14 10:16 generated/
+-rwxr-xr-x 3 gitpod gitpod   62 Mar 14 10:16 generated/
 -rw-r--r-- 1 gitpod gitpod  354 Mar 14 10:15 .gitignore
 -rw-r--r-- 1 gitpod gitpod  265 Mar 14 10:15 go.mod
 -rw-r--r-- 1 gitpod gitpod 1238 Mar 14 10:15 go.sum
@@ -180,12 +177,12 @@ Let's explain different generated files:
 - `cdktf.json` contains configuration settings for your application
 - `generated` folder contains the OVHcloud Terraform provider translated in Go
 - `.gitignore` contains the gitignore file
-- `go.mod` and `go.sum` files contains the dependencies of your Go application
+- `go.mod` and `go.sum` files contain the dependencies of your Go application
 - `help` contains useful cdktf commands to execute
 - `main.go` is the Go program
 - `main_test.go` is for declaring unit test for your Go program
 
-### Resources definition
+#### Resources definition
 
 Edit the `main.go` file and replace the existing content with the following content:
 
@@ -267,18 +264,19 @@ func main() {
 }
 ```
 
-In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the latest recommended Kubernetes version.
+In this resource configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the latest recommended version of Kubernetes.
 
-We tell Terraform to create a Node Pool with 3 Nodes with B2-7 machine type.
+We tell Terraform to create a node pool with 3 nodes with machine type B2-7.
 
-And we tell Terraform to save the Kubernetes's cluster kubeconfig in a local file named `kubeconfig.yaml`. This information is needed to connect to the new Kubernetes cluster.
+And we tell Terraform to save the Kubernetes cluster configuration in a local file named `kubeconfig.yaml`. This information is needed to connect to the new Kubernetes cluster.
 
-For your information, outputs are useful to retrieve and display specific information after the resources creation.
+For your information, outputs are useful for retrieving and displaying specific information after resources have been created.
 
-### Create our cluster through CDKTF
+### Creating a cluster through CDKTF
 
-Now we can use Terraform, through the CDK, to deploy our Kubernetes cluster and his node pool.
-The following comand will generate the Terraform plan. If you aprove it, the changes will be applied.
+We can now use Terraform, via the CDK, to deploy our Kubernetes cluster and its node pool.
+
+The following command will generate the Terraform plan. If you aprove it, the changes will be applied.
 
 ```bash
 $ cdktf deploy
@@ -456,7 +454,7 @@ ovhcloud  ovh_cloud_project_kube_nodepool.my-pool: Still creating... [5m0s elaps
 ovhcloud  ovh_cloud_project_kube_nodepool.my-pool: Still creating... [5m10s elapsed]
 ovhcloud  ovh_cloud_project_kube_nodepool.my-pool: Still creating... [5m20s elapsed]
 ovhcloud  ovh_cloud_project_kube_nodepool.my-pool: Still creating... [5m30s elapsed]
-ovhcloud  ovh_cloud_project_kube_nodepool.my-pool: Creation complete after 5m33s [id=8963bef9-6521-42f8-9fdf-89d25a30ffd1]
+ovhcloud  ovh_cloud_project_kube_nodepool.my-pool: Creation complete after 5m33s [id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx]
 ovhcloud  
           Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
           
@@ -470,12 +468,12 @@ ovhcloud
   nodePoolID = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 ```
 
-Now, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
 
-Now, click on `my_desired_cluster`, then on the `Node pools` tab:
+Click on `my_desired_cluster`, then on the `Node pools` tab:
 
 ![Node pool created](images/my-pool-node-pool-created.png){.thumbnail}
 
@@ -483,15 +481,15 @@ Our node pool is created too.
 
 Perfect!
 
-## Connect to the Kubernetes cluster
+### Connect to the Kubernetes cluster
 
-Our cluster is created, now we need to connect to it in order to check our nodes, existing pods and to deploy our applications.
+Our cluster has been created, we now need to connect to it to check our nodes and existing pods and deploy our applications.
 
-In order to do this, the kubeconfig file have been created locally:
+In order to do this, the kubeconfig file was created locally:
 
 You can define it in your `$KUBECONFIG` environment variable or you can use it directly in the `kubectl` command with `--kubeconfig` option.
 
-List our Node Pool:
+List of our Node Pool:
 
 ```bash
 $ kubectl --kubeconfig=kubeconfig.yaml get nodepool
@@ -511,27 +509,26 @@ Awesome!
 
 You can now deploy your applications and/or create new clusters through Terraform.
 
-## Known issues
+### Known issues
 
-### "not enough xxx quotas"
+#### "not enough xxx quotas"
 
-By default, the Public Cloud projects as well as the resources total (RAM, CPU, disk space, number of instances, etc.) you can use are limited for security reasons.
+By default, the Public Cloud projects as well as the total resources (RAM, CPU, disk space, number of instances, etc.) that you can use are limited for security reasons.
 
-When you create a new Kubernetes Node Pool, if you run out of resources in your available quota, the Nodes might be in error.
+When you create a new Kubernetes Node pool, if you run out of resources in your available quota, the Nodes might be in error.
 
-You may get the following error message: "not enough xxx quotas".
-xxx can be: RAM, CPU, VM, Disk or Port.
+You may get the following error message: `"not enough xxx quotas".`
+"xxx" can be: RAM, CPU, VM, Disk or Port.
 
 If this is the case, the quotas must be increased.
+
 In order to check your quotas and increase them, please follow this tutorial:
 
 [Increasing Public Cloud quotas](/pages/public_cloud/compute/increasing_public_cloud_quota){.external}.
 
-## Destroy (cleanup)
+### Destroy (cleanup)
 
-If you want to easily destroy created resources, you can use `cdktf destroy` command.
-
-TODO: xx
+If you want to easily destroy created resources, you can use the `cdktf destroy` command.
 
 ```bash
 $ cdktf destroy
@@ -635,7 +632,7 @@ ovhcloud  - created_at                                   = "2024-03-14T10:56:35Z
           
           Changes to Outputs:
             - cluster_version = "1.28" -> null
-            - nodePoolID      = "8963bef9-6521-42f8-9fdf-89d25a30ffd1" -> null
+            - nodePoolID      = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx" -> null
           
           Do you really want to destroy all resources?
             Terraform will destroy all your managed infrastructure, as shown above.
