@@ -1,7 +1,7 @@
 ---
 title: Configuring IP aliasing
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-updated: 2023-08-15
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -41,7 +41,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 |Term|Description|Examples|
 |---|---|---|
-|ADDITIONAL_IP|An Additional IP address assigned to your service|203.0.113.1|
+|ADDITIONAL_IP|An Additional IP address assigned to your service|203.0.113.0|
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
@@ -118,7 +118,7 @@ For example:
 ```console
 auto eth0:0
 iface eth0:0 inet static
-address 203.0.113.1
+address 203.0.113.0
 netmask 255.255.255.255
 ```
 
@@ -378,17 +378,17 @@ Click on `IP Addresses`{.action} under **Tools & Resources**.
 
 In this section, click on the button `Add IP Address`{.action}.
 
-![add ip information](images/pleskip2-2.png){.thumbnail}
+![add ip information](images/Plesk-2024-vps.png){.thumbnail}
 
 Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
 
-![add ip information](images/pleskip3-3.png){.thumbnail}
+![add ip information](images/Plesk-additional-ip.png){.thumbnail}
 
 #### Step 3: Check the current IP configuration
 
 Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
 
-![current IP configuration](images/pleskip4-4.png){.thumbnail}
+![current IP configuration](images/Plesk-final-config.png){.thumbnail}
 
 ### Windows Servers
 
@@ -402,7 +402,20 @@ Type `cmd` and click `OK`{.action} to open the command line application.
 
 In order to retrieve the current IP configuration, enter `ipconfig` at the command prompt.
 
-![check main IP configuration](images/image1-1.png){.thumbnail}
+```powershell
+C:\Users\Administrator>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : openstacklocal
+   Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
+   IPv4 Address. . . . . . . . . . . : 192.0.2.29
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 192.0.2.1
+```
 
 #### Step 2: Change the IPv4 Properties
 
@@ -412,14 +425,14 @@ Now you need to change the IP properties to a static configuration.
 2. Right-click on `Ethernet`{.action}.
 3. Click on `Properties`{.action}.
 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
-5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type 213.186.33.99.
+5. Click on `Use the following IP address`{.action} and type in your server’s primary IP, subnet mask and default gateway information obtained by using the `ipconfig`{.action} command above. In the "Preferred DNS Server" box, type `213.186.33.99`.
 
 
-![change the ip configuration](images/image2.png){.thumbnail}
+![change the ip configuration](images/configure-main-ip.png){.thumbnail}
 
 > [!warning]
 >
-> Be careful – the server will no longer be accessible if you enter incorrect information. You will then have to make the corrections in VNC.
+> Be careful – the server will no longer be accessible if you enter incorrect information. You will then have to make the corrections in the KVM.
 
 Once done, click on `Advanced`{.action}.
 
@@ -427,22 +440,39 @@ Once done, click on `Advanced`{.action}.
 
 In the new window, click on `Add...`{.action} under "IP addresses". Enter your Additional IP address and the subnet mask (255.255.255.255).
 
-**picture of new IP information**
-
-![advance configuration section](images/image4-4.png){.thumbnail}
+![advance configuration section](images/configure-additional-ip.png){.thumbnail}
 
 Confirm by clicking on `Add`{.action}.
 
-**picture of clicking on add**
-![Additional IP configuration](images/image5-5.png){.thumbnail}
+![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
 
-Once done, click on `OK`{.action} in all the opened tabs to apply the configuration. You will lose the connection to the server for a few seconds.
+Once done, click on `OK`{.action} to apply the configuration. 
+
+![Additional IP configuration](images/final-configuration.png){.thumbnail}
+
+You will lose the connection to the server for a few seconds.
 
 #### Step 4: Check the new network configuration
 
 Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
 
-![check current network configuration](images/image8-8.png){.thumbnail}
+```powershell
+C:\Users\Administrator>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
+   IPv4 Address. . . . . . . . . . . : 192.0.2.29
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   IPv4 Address. . . . . . . . . . . : 203.0.113.0
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 192.0.2.1
+
+```
 
 ### Troubleshooting
 
