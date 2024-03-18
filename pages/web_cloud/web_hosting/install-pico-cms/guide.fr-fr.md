@@ -20,7 +20,7 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) Pico permet de créer rapidem
 
 ### Préparer l'installation
 
-Pour installer le CMS **Pico** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer le CMS **Pico** sur votre [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
 Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) avant de poursuivre à l'étape suivante.
 
