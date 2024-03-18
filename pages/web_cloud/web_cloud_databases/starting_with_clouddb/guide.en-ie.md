@@ -193,27 +193,7 @@ No matter which method you choose to follow, you must have the following five pi
 
 ### Retrieve your Web Cloud Databases server logs
 
-To check your database’s latest logs, go to the `Logs`{.action} tab of your Web Cloud Databases server. This tab displays alerts and errors in real time.
-
-![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
-
-To retrieve all logs for your Web Cloud Databases server, log in via SFTP on it.
-
-> [!warning]
->
-> Before logging in, check that the IP address of the workstation you are using is authorised on your Web Cloud Databases server, with the `SFTP` option ticked. Use the [Authorise connection to an OVHcloud web hosting plan](#trustip) section of this guide.
-
-You can find the SFTP login details in the `General information`{.action} tab of your Web Cloud Databases server. If you do not know the `Server password`, click the `...`{.action} button on the right to modify it.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Log in via an FTP client (FileZilla, Cyberduck, WinSCP, etc.).
-
-For FileZilla, in the `File`{.action} menu, go to the `Site Manager`{.action}. Click `New Site`{.action}, and enter the settings you have listed.
-
-![Web Cloud Databases](images/sftp-connexion.png){.thumbnail}
-
-The log file, named `stdout.log`, is located at the root.
+To access the logs for your Web Cloud Databases solution, please refer to our guide "[Web Cloud Databases - How to retrieve logs](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Go further
 
