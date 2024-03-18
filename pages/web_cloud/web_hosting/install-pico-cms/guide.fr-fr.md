@@ -1,6 +1,6 @@
 ---
 title: "Tutoriel - Installer manuellement Pico"
-excerpt: "Découvrez comment installer le CMS Pico sur un hérgement web OVHcloud"
+excerpt: "Découvrez comment installer le CMS Pico sur un hébergement web OVHcloud"
 updated: 2024-03-18
 ---
 
