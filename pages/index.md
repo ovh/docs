@@ -210,7 +210,6 @@
             + [Repartitioning a VPS after an upgrade](bare_metal_cloud/virtual_private_servers/upsize_vps_partition)
             + [First steps with pre-installed applications](bare_metal_cloud/virtual_private_servers/apps_first_steps)
             + [Using the KVM for a VPS](bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)
-            + [Configuring a new Windows Server installation](bare_metal_cloud/virtual_private_servers/windows_first_config)
             + [Configuring the firewall on Linux with iptables](bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
             + [Configuring the firewall on Windows](bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
             + [Public Cloud & VPS - Image life cycle](public_cloud/compute/image-life-cycle)
