@@ -57,7 +57,7 @@ Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le ré
 
 **2. Changer le titre et la description de votre site web** : recherchez les lignes pour `site_title:` et `site_description:` dans le fichier `config/config.yml` pour mettre à jour le titre et la description de votre site web.
 
-**3. Changer le titre et la description de votre site web** : si vous avez un nom de domaine spécifique, recherchez la ligne pour `base_url:` dans le fichier `config/config.yml` pour mettre à jour le nom de domaine de votre site web, sinon, laissez la valeur `~` par défaut.
+**3. Changer le titre et la description de votre site web** : si vous avez un nom de domaine spécifique, recherchez la ligne pour `base_url:` dans le fichier `config/config.yml` pour mettre à jour le nom de domaine de votre site web. Sinon, laissez la valeur `~` par défaut.
 
 ##### Ajouter du contenu
 
