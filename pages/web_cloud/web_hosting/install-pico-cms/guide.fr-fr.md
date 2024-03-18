@@ -86,7 +86,7 @@ Your content here
 
 Pico permet d'étendre ses fonctionnalités avec des plugins.
 
-**1. Trouver des plugins** : consultez le [site web officiel de Pico](https://picocms.org/plugins/) pour consulter la liste des plugins disponibles.
+**1. Trouver des plugins** : consultez le [site web officiel de Pico](https://picocms.org/plugins/) pour accéder à la liste des plugins disponibles.
 
 **2. Installer un plugin** : téléchargez le plugin et placez-le dans le dossier `plugins/` de votre installation Pico.
 
