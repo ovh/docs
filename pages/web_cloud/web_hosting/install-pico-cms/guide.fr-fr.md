@@ -110,4 +110,3 @@ Vous venez d'installer manuellement le CMS Pico sur votre hébergement web OVHcl
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
-
