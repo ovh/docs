@@ -1,7 +1,7 @@
 ---
 title: 'Rendere sicuro il tuo account OVHcloud con la doppia autenticazione'
-excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia autenticazione'
-updated: 2022-07-20
+excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia autenticazione (2FA)'
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -13,7 +13,15 @@ updated: 2022-07-20
 OVHcloud mette a disposizione gli strumenti per rafforzare la sicurezza del tuo account e dei tuoi servizi.
 Hai la possibilità di attivare un’autenticazione a due fattori (2FA) che si aggiunge alle tue credenziali di accesso (nome utente e password) ed è gestita dal tuo dispositivo: telefono, tablet o chiave di sicurezza. 
 
-**Questa guida ti mostra i diversi metodi proposti e come attivarli.**
+**Questa guida ti mostra i diversi metodi di autenticazione a due fattori e come attivarli.**
+
+Questa guida ti mostra come:
+
+- [Comprendere i diversi metodi di doppia autenticazione](#instructions)
+- [Attivare il primo metodo di doppia autenticazione](#enabling-2fa)
+- [Scopri come connettersi con l’autenticazione a due fattori](#login-2fa)
+- [Procedura da seguire in caso di smarrimento del telefono/tablet/chiave/furto/danneggiamento](#lost-device)
+- [Sapere come disattivare completamente l’autenticazione a due fattori](#disable-2fa)
 
 ## Prerequisiti
 
@@ -21,86 +29,175 @@ Hai la possibilità di attivare un’autenticazione a due fattori (2FA) che si a
 - Disporre di un cellulare (per il metodo SMS), uno smartphone o un tablet (per il metodo applicazione mobile) o una chiave di sicurezza Universal Second Factor (U2F).
 - Aver letto i [consigli su come gestire la password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password).
 
-## Procedura
+## Procedura <a name="instructions"></a>
 
-Puoi attivare uno o più metodi di autenticazione a due fattori per proteggere e controllare l’accesso al tuo Spazio Cliente. 
-Ti proponiamo tre diversi metodi:
+Puoi attivare uno o più metodi di autenticazione a due fattori per proteggere e controllare l’accesso al tuo Spazio Cliente.
 
-- **tramite SMS**. Inserisci il tuo numero di telefono cellulare. Ad ogni tentativo di connessione al tuo account OVHcloud ti sarà inviato un codice monouso via SMS. Il vantaggio principale di questa modalità è quello di utilizzare un codice inviato su un dispositivo diverso dal computer. Se quest’ultimo dovesse subire un tentativo di intrusione (ad esempio tramite un malware) il tuo account resterà protetto. È tuttavia necessaria una copertura di rete sufficiente per ricevere gli SMS.
+Ti proponiamo quattro diversi metodi (clicca sulle schede qui sotto per visualizzare la loro presentazione):
 
-- **tramite applicazione mobile OTP**. Installa un’applicazione mobile OTP sul tuo smartphone o tablet Android o iOS e poi associala al tuo account OVHcloud. Ad ogni tentativo di connessione, verrà generato un codice monouso che rimarrà valido per un breve lasso di tempo.
-Dopo aver associato per la prima volta l’applicazione al tuo account, non sarà più necessario essere connessi a Internet sul tuo dispositivo perché i codici siano generati.
+> [!tabs]
+> SMS
+>>![2FA sms](images/sms.svg)<br>
+>> Per questo metodo, inserisci il tuo numero di cellulare.
+>> Ad ogni tentativo di connessione al tuo account OVHcloud ti viene inviato un codice monouso via SMS.
+>>
+>> Il vantaggio principale di questo metodo è quello di utilizzare un codice inviato su un dispositivo diverso dal computer. In caso di intrusione sul sito, ad esempio tramite un malware, l’account resterà sicuro.
+>> È tuttavia necessaria una copertura di rete sufficiente per ricevere gli SMS.
+>>
+> Applicazione mobile
+>>![2FA OTP](images/app.svg)<br>
+>> Per questo metodo, è necessario installare un'applicazione **OTP** sul tuo smartphone o tablet Android o iOS.
+>> Esistono numerose applicazioni OTP (OVHcloud non ha sviluppato alcuna applicazione OTP) da scaricare da Google Play Store per Android o da Apple Store per iOS. Le due applicazioni seguenti sono gratuite:
+>>
+>> - FreeOTP per Android
+>> - OTP Auth per iOS
+>>
+>> Una volta associata l’applicazione al tuo account OVHcloud, l’applicazione genera un codice monouso valido per un breve lasso di tempo (alcuni secondi) ad ogni tentativo di connessione.
+>>
+>> > [!success]
+>> > **Vantaggi di questo metodo**:
+>> >
+>> > - Una volta effettuata la prima associazione dell'applicazione al tuo account, non è più necessario essere connessi a Internet sul tuo smartphone/tablet perché i codici siano generati.
+>> > - Puoi utilizzare una sola applicazione OTP per tutti i tuoi servizi o siti che richiedono la doppia autenticazione.
+>>
+> Chiave di sicurezza
+>>![2FA U2F](images/key.svg)<br>
+>> Per utilizzare questo metodo, è necessario disporre di una chiave fisica **U2F** che si collega a una porta USB del computer ogni volta che si accede al proprio account OVHcloud. L’autenticazione avviene quindi automaticamente.
+>>
+>> Questo metodo offre un livello di sicurezza più elevato perché si basa su un dispositivo di sicurezza indipendente, completamente separato dal vostro computer, smartphone o tablet e che è meno esposto al rischio di pirateria.
+> Codici di sicurezza
+>>![2FA codes](images/code.svg)<br>
+>> La prima volta che configuri un’autenticazione a due fattori (con **SMS**, **Applicazione mobile** o **Chiave di sicurezza**), vengono visualizzati nello Spazio Cliente 10 codici di sicurezza **monouso**.
+>>
+>> Questo metodo di doppia autenticazione integra un metodo già attivo (con **SMS**, **Applicazione mobile** o **Chiave di sicurezza**) e non può essere attivato da solo.
+>>
+>> Ad ogni tentativo di connessione, potete inserire uno dei 10 codici monouso.
+>> È fondamentale avere sempre a disposizione almeno un codice di sicurezza residuo. Ricordati di rigenerarli dal tuo Spazio Cliente se li hai utilizzati tutti o se li hai persi.
 
-- **tramite chiave di sicurezza U2F**. Questo metodo richiede il collegamento di una chiave USB di sicurezza U2F al tuo computer ogni volta che accedi al tuo account OVHcloud. L’autenticazione avviene quindi automaticamente. Questo metodo offre un livello di sicurezza più elevato, poiché si basa su uno strumento di sicurezza indipendente, completamente separato dal tuo computer, smartphone o tablet e meno esposto al rischio di pirateria.
 
-### Step 1: attiva il tuo primo metodo di doppia autenticazione
+### Step 1 - Attiva il primo metodo di doppia autenticazione <a name="enabling-2fa"></a>
 
-- [Attiva la doppia autenticazione via SMS](/pages/account_and_service_management/account_information/enable-2fa-with-sms)
-- [Attiva la doppia autenticazione tramite applicazione mobile](/pages/account_and_service_management/account_information/enable-2fa-with-mobile-app).
-- [Attiva la doppia autenticazione tramite chiave di sicurezza](/pages/account_and_service_management/account_information/enable-2fa-with-security-key).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome in alto a destra (1) e poi sulle tue iniziali (2). Clicca su `Sicurezza`{.action} (3) e infine su `Attiva l'autenticazione a due fattori`{.action} (4).
 
-Una volta aggiunto il primo metodo, è possibile aggiungerne uno o due per avere più modi per accedere al tuo account.
+![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
-### Step 2: salvare i codici di sicurezza
+**Clicca sulla scheda corrispondente al metodo che preferisci:**
 
-Quando aggiungi per la prima volta un metodo di autenticazione a due fattori, ti vengono forniti codici di riserva.  Conservali con cura. Ti consigliamo di salvarli su un gestore di password.
+> [!tabs]
+> SMS
+>> Scegli il metodo SMS e clicca su `Continua`{.action}.
+>>
+>>![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
+>> Inserisci il tuo numero di cellulare nel formato internazionale (ad esempio, +33612345678 per un telefono cellulare in Francia) e conferma.
+>> Un codice di conferma viene inviato via SMS al numero indicato.
+>>
+>>![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}<br>
+>> Inserisci il codice nel campo previsto.<br>
+>> Potete anche aggiungere una descrizione per il numero di telefono inserito.
+>>
+>>![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
+>> L’autenticazione a due fattori è attiva. ed è possibile aggiungere altri numeri.
+> Applicazione Mobile
+>> Scegli il metodo applicazione mobile e clicca su `Continua`{.action}.
+>>
+>>![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
+>> Viene generato un codice QR, scansionalo tramite l’applicazione OTP. Se l’applicazione OTP non dispone di questa opzione, clicca su `Mostra il codice segreto`{.action} per visualizzare il codice da inserire nell’applicazione OTP.<br>
+>> L’applicazione genera un codice monouso.
+>> Inserisci il codice nel campo previsto (a destra del QR code). È inoltre possibile aggiungere una descrizione per questo metodo di autenticazione.
+>>
+>>![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
+>> L’autenticazione a due fattori è attiva.
+> Chiave di sicurezza
+>> Seleziona il metodo con chiave di sicurezza e clicca su `Continua`{.action}.
+>>
+>>![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
+>> Collega la chiave di sicurezza quando richiesto. Se è presente un pulsante, premerlo.
+>>
+>>![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}
+>>
+>> > [!warning]
+>> > Si aprirà una finestra di tipo pop-up in cui verrà richiesto di confermare la chiave. Se non vedi questa finestra, verifica che il tuo browser non blocchi i pop-up.
+>>
+>> Una volta riconosciuta la chiave, potete anche aggiungere una descrizione.
+>> L’autenticazione a due fattori è attiva.
 
-![2FA](images/2facodes.png){.thumbnail}
+Una volta aggiunto il primo metodo, **aggiungi uno o due altri metodi** per avere più modi per accedere al tuo account.
 
-Puoi eliminarli o rigenerarli dal tuo Spazio Cliente: 
+### Step 2 - salvare i codici di sicurezza <a name="codes"></a>
 
-![2FA](images/2facodesaction.png){.thumbnail}
+Quando aggiungi per la prima volta un metodo di autenticazione a due fattori, nello Spazio Cliente vengono visualizzati 10 codici di sicurezza** monouso.
+
+**Conservali con cura**. Ti consigliamo di salvarli con un gestore di password, come [KeePass](https://keepass.info/){.external} o [Bitwarden](https://bitwarden.com/) (queste due applicazioni sono gratuite).
+
+![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
+
+I codici di sicurezza possono essere rigenerati o eliminati direttamente dallo Spazio Cliente:
+
+![2FA](images/emergency-codes.png){.thumbnail}
 
 > [!warning]
 >
-> Ti ricordiamo che è fondamentale salvare i codici di riserva e assicurarsi che siano validi. Se uno o più metodi di sicurezza da te selezionati non sono disponibili (per furto o perdita del telefono o della chiave di sicurezza), l’accesso al tuo Spazio Cliente potrebbe essere bloccato.
-> 
+> È **Consigliabile salvare i codici di sicurezza** e assicurarsi che siano validi.
+> Senza codice di sicurezza in vostro possesso e in caso di furto o perdita del vostro telefono/smartphone/tablet o della vostra chiave di sicurezza, l'accesso al vostro spazio cliente e ai vostri servizi potrebbe essere bloccato.
+>
 
-### Step 3: accedere allo Spazio Cliente con la doppia autenticazione
+### Step 3 - Accedi allo Spazio Cliente OVHcloud con la doppia autenticazione <a name="login-2fa"></a>
 
-Una volta attivata la doppia autenticazione, nella schermata di login appare il metodo di sicurezza selezionato. Se vuoi utilizzarne un altro, clicca su `Prova un altro metodo`{.action}.
+Accedi alla [pagina di accesso allo Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e inserisci identificativo (o indirizzo email principale) e password.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail}
+Nella schermata di login viene visualizzato l’ultimo metodo di autenticazione a due fattori utilizzato o inserito. Per utilizzarne un altro, clicca sul pulsante `Prova un altro metodo`{.action}.
 
-A questo punto visualizzi tutti i metodi da te attivati:
+![2FA](images/2024-007-log-in-01.png){.thumbnail width="400"}
 
-![2FA](images/2faloginchoice.png){.thumbnail}
+A questo punto compariranno tutti i metodi attivati, incluso il metodo dei codici di sicurezza.
 
-### Che fare se uno dei miei dispositivi è stato smarrito o ha smesso di funzionare?
+![2FA](images/2024-007-log-in-02.png){.thumbnail width="400"}
 
-Se il tuo dispositivo (telefono cellulare/smartphone/chiave di sicurezza) è stato smarrito o non funziona più, ti consigliamo di utilizzare gli altri metodi di doppia autenticazione attivi sul tuo account.
+Scegliendo quest’ultimo metodo, sarà sufficiente inserire uno dei codici di sicurezza.
 
-È inoltre possibile utilizzare uno dei codici di sicurezza a tua disposizione. 
+![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
 
-### Rimuovere un dispositivo collegato alla doppia autenticazione <a name="delete-device"></a>
+### Cosa fare se uno dei miei dispositivi viene perso/rubato o smette di funzionare? <a name="lost-device"></a>
+
+Se il dispositivo (telefono cellulare/smartphone/chiave di sicurezza) viene smarrito, rubato o non funziona più, è possibile:
+
+- utilizzare [i codici di sicurezza](#codes) attivi di cui hai effettuato il backup;
+- utilizzare un’altra periferica di doppia autenticazione a vostra disposizione, se ne avete attivati diversi;
+- [disattivare l’autenticazione a due fattori](#disable-2fa).
 
 > [!warning]
 >
-> La rimozione di un dispositivo non disattiva la doppia autenticazione. 
-> 
-> Prima di rimuovere un dispositivo e per evitare di bloccare l’accesso al tuo account, assicurati di avere una di queste opzioni:
-> 
-> - un dispositivo funzionante
-> - un altro metodo di doppia autenticazione valido 
-> - codici di sicurezza validi
-> 
+> In caso di furto o smarrimento di un dispositivo, la sicurezza dell’account OVHcloud potrebbe essere messa a repentaglio.
+> Una volta ottenuto nuovamente l’accesso allo Spazio Cliente, è necessario **rimuovere questo dispositivo dall’elenco dei dispositivi utilizzati per la doppia autenticazione**.
+>
+> Per informazioni sulla rimozione di un dispositivo, vedere il capitolo successivo di questa guida.
+>
 
-Per rimuovere un dispositivo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sul tuo nome in alto a destra (primo step nell’immagine qui di seguito) e poi su e clicca sulle iniziali(secondo step). 
-
-![2FA](images/hub2FAb.png){.thumbnail}
-
-Clicca su `Sicurezza`{.action}(primo step nell’immagine qui di seguito) e poi sui tre puntini `...`{.action}(secondo step) a destra del dispositivo da rimuovere e infine clicca su`Rimuovi`{.action}(terzo step).
-
-![2FA](images/hub2FAc.png){.thumbnail}
-
-A questo punto, riceverai un ultimo codice di conferma sulla periferica che vuoi eliminare. Nella nuova finestra, inserisci il codice e clicca su `Conferma`{.action} per completare l'eliminazione.
+#### Rimuovere una periferica <a name="delete-device"></a>
 
 > [!warning]
 >
-> Se non hai più accesso alla periferica da rimuovere, non puoi eliminarla direttamente dallo Spazio Cliente OVHcloud.
+> Prima di rimuovere un dispositivo e per evitare di bloccare l'accesso al tuo account, assicurati di avere una di queste opzioni:
 >
-> In questo caso, **contatta direttamente** i nostri team di supporto seguendo il processo descritto [qui](#2FA-deletion).
+> - un altro dispositivo funzionante;
+> - un altro metodo di doppia autenticazione valido;
+> - codici di sicurezza validi.
 >
+
+Per rimuovere un dispositivo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sul tuo nome in alto a destra e poi sulle tue iniziali.
+
+Clicca su `Sicurezza`{.action} e poi sui `...`{.action} a destra del dispositivo da rimuovere e infine su `Eliminare`{.action}.
+
+![2FA](images/2024-006-delete-device.png){.thumbnail}
+
+Verrà inviato un codice di conferma finale per il dispositivo da rimuovere. Inserisci il codice nella finestra che si apre e clicca su `Conferma`{.action} per completare l’eliminazione.
+
+Se non hai più accesso al dispositivo che vuoi rimuovere, non puoi eliminarlo dallo Spazio Cliente OVHcloud.
+In questo caso, **contatta direttamente** il nostro team di supporto [creando un ticket dal centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help) o seguendo il processo descritto [qui di seguito](#2FA-deletion).
+
+> [!warning]
+>
+> L’eliminazione di un solo dispositivo non disattiva l’autenticazione a due fattori sul tuo account OVHcloud.
 
 ### Disattiva completamente la doppia autenticazione <a name="disable-2fa"></a>
 

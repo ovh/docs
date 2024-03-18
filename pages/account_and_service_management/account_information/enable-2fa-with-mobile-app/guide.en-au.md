@@ -1,7 +1,7 @@
 ---
 title: 'Enable two-factor authentication via OTP'
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via OTP mobile application'
-hidden: true
+flag: hidden
 updated: 2020-04-16
 ---
 

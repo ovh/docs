@@ -1,7 +1,7 @@
 ---
 title: 'Activar la doble autenticación mediante SMS'
 excerpt: 'Cómo proteger su área de cliente de OVHcloud activando la doble autenticación mediante SMS'
-hidden: true
+flag: hidden
 updated: 2020-04-15
 ---
 

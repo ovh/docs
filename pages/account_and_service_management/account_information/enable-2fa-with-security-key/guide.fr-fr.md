@@ -1,6 +1,7 @@
 ---
 title: 'Activer la double authentification par clé de sécurité'
 excerpt: 'Découvrez comment sécuriser votre espace client OVHcloud en activant la double authentification par clé de sécurité U2F'
+flag: hidden
 updated: 2024-02-02
 ---
 
