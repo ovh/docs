@@ -23,8 +23,9 @@ user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range by
 
 You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if transmission of any part fails. After you complete the upload of all parts, OVHcloud Object Storage puts the pieces together and rebuilds the object.
 
-> ✔️: You should consider using multipart uploads for objects > 100MB
-The benefits of using multipart upload are as follows:
+> [!success]
+> You should consider using multipart uploads for objects > 100MB
+> The benefits of using multipart upload are as follows:
 
 * Increased throughput: each part can be uploaded concurrently
 * Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
