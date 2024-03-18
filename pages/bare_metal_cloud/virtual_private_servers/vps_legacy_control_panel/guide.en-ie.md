@@ -121,8 +121,6 @@ Your VPS can be migrated to the current range automatically. Find out the benefi
 
 [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configuring a new Windows Server installation](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Join our community of users on <https://community.ovh.com/en/>.

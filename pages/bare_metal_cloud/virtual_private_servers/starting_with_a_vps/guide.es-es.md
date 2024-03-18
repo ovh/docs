@@ -330,6 +330,4 @@ Para un proceso más automatizado, OVHcloud también ofrece la solución SSL Gat
 
 [Proteger un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configurar una nueva instalación de Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

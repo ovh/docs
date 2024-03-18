@@ -330,6 +330,4 @@ OVHcloud bietet auch die Lösung SSL Gateway zur Automatisierung dieses Prozesse
 
 [VPS absichern](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Eine neue Windows Server Installation konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

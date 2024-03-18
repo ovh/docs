@@ -130,8 +130,6 @@ Ihr VPS kann automatisch auf die aktuelle Reihe migriert werden. Entdecken Sie d
 
 [VPS Sicherheit](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Eine neue Windows Server Installation konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 [Erste Schritte mit einem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Werden Sie Mitglied unserer User Community auf <https://community.ovh.com/en/>.
