@@ -53,7 +53,7 @@ Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le ré
 
 ##### Configuration de base
 
-**1. Configurer votre site web** : ouvrez le fichier `config/config.yml` avec un éditeur de texte. C'est ici que vous pouvez configurer les paramètres de base de votre site web, tels que le titre, la description, l'URL ou les thèmes.
+**1. Configurer votre site web** : ouvrez le fichier `config/config.yml` avec un éditeur de texte. Configurez ici les paramètres de base de votre site web, tels que le titre, la description, l'URL ou les thèmes.
 
 **2. Changer le titre et la description de votre site web** : recherchez les lignes pour `site_title:` et `site_description:` dans le fichier `config/config.yml` pour mettre à jour le titre et la description de votre site web.
 
