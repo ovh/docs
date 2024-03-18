@@ -25,16 +25,11 @@ You can upload a single object as a collection of parts using multipart upload. 
 
 > [!success]
 >
-> Vous souhaitez que vos appelants arrivent directement sur votre répondeur en fonction de plages horaires ou de jours exceptionnels ?
-> Consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
->
-
-> [!success]
 > You should consider using multipart uploads for objects > 100MB
 > The benefits of using multipart upload are as follows:
+> * Increased throughput: each part can be uploaded concurrently
+> * Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
 
-* Increased throughput: each part can be uploaded concurrently
-* Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
 
 ## In practice 
 
@@ -47,7 +42,7 @@ You can upload a single object as a collection of parts using multipart upload. 
 * a large file split into multiple parts
 
   
-> ✔️: **Did you know You ?**
+> [!success]: **Did you know You ?**
 > When you use a high level command to upload an object using the cp command, the AWS cli automatically does a multipart-upload. To better optimize the default configuration values for doing multipart uploads (multipart_threshold, multipart_chunksize), you can check this article and see the table explaining the configuration of the AWS cli.
 
 The following section explains how to perform a multipart upload using the low level commands of the AWS cli.
@@ -62,7 +57,8 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
     "UploadId": "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
 }
 ```
-> ⚠️: Do not forget to save the upload ID, key and bucket name for use with the upload-part command.
+> [!primary]
+> Do not forget to save the upload ID, key and bucket name for use with the upload-part command.
 
 Then, for each part, you need to make an upload-part command where you specify the bucket, key and upload ID:
 
@@ -75,7 +71,7 @@ user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-nu
 }
 ```
 
-> ⚠️: Save the ETag value of each part for later. They are required to complete the multipart upload.
+> [!primary]: Save the ETag value of each part for later. They are required to complete the multipart upload.
 
  After, you upload all the parts, you have to call the complete-multipart-upload command in order to finish and for OVHcloud Object Storage to rebuild the final object:
  
@@ -133,7 +129,8 @@ Where mpu.json is:
 
 ```
 
-> :exclamation: If you do not complete the multipart upload, your object will not be rebuilt and will not be visible BUT you still have to pay the storage costs of the parts
+> [!primary]
+> If you do not complete the multipart upload, your object will not be rebuilt and will not be visible BUT you still have to pay the storage costs of the parts
 
 ### Using other third party tools
 
