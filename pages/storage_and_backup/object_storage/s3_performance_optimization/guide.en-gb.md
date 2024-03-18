@@ -269,4 +269,4 @@ Objects are considered to be small if their size is less than 1MB. When dealing 
 
 When applicable, we recommand that you increase the object/part size as much as possible in order to reduce the number of objects.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Engage with our user community at https://community.ovh.com.
