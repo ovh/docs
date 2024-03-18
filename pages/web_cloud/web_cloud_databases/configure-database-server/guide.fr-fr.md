@@ -157,7 +157,7 @@ Effectuez les modifications nécessaires puis cliquez sur `Confirmer`{.action}.
 
 #### Instance PostgreSQL
 
-- Cliquez sur l'onglet `Configuration`.
+- Cliquez sur l'onglet `Configuration`{.action}.
 
 Vous trouverez, dans le cadre **« Configuration générale de PostgreSQL »**, la configuration actuellement définie pour votre base de données. Vous pouvez directement modifier celle-ci, puis cliquer sur `Appliquer`{.action}.
 
