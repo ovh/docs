@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-V - End of Life
 excerpt: Analyse your use of the NSX-V features and choose between the different evolution scenarios, from disabling the NSX-V component to the migration to NSX
-updated: 2023-12-18
+updated: 2024-12-03
 ---
 
 ## Objective
@@ -21,14 +21,41 @@ To identify your usage of the NSX-V feature in your Hosted Private Cloud environ
 - Am I using a Distributed Firewall rules?
 ![NSX DFW](images/DFW.gif){.thumbnail}
 - Am I using a Distributed Logical Router or an Edge Services Gateway?
-![NSX DFW](images/dlr-edge.gif){.thumbnail}
+![NSX EDGES](images/dlr-edge.gif){.thumbnail}
 - Am I using an SSL VPN?
+From latest version of NSX-v the features was already disabled. 
 
 #### I do not use any of the NSX-V features
 
-We will disable NSX-V from 01 December 2023 if you are not using any NSX-V features.
+We will disable NSX-V from 31 March 2024 if you are not using any NSX-V features.
 
-Regardless of your Hosted Private Cloud range, if you want to disable NSX-v, you won't have to migrate to a new Datacentre. You will be able to keep your current resources.
+Regardless of your Hosted Private Cloud range, if you want to disable NSX-v, you won't have to migrate to a new Datacentre. You will be able to keep your current resources. For the maintenance task to run properly and deactivate NSX-V, you need to make sure to clean NSX-V environnement.
+
+Make sure to remove all NSX-V EDGES ( DLR or Gateway ).
+You should remove all the NSX-v Edges, Distributed Logical Gateway and Edges Services Gateway.
+![NSX Edges](images/remove-Edges.gif){.thumbnail}
+
+Make sure to remove existing Distributed Rules ( you should have 3 rules created by default with NSX-V or no rules at all )
+![NSX DFW](images/DFW.gif){.thumbnail}
+
+Make sure to move every VMs from vxlan to portgroup vRACK. 
+You can follow the documentation here to migrate VMs.
+![NSX VXLAN](images/vxlan.gif){.thumbnail}
+
+At the end, you can use the API call to check that you have clean NSX-V:
+
+[!api]
+>
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateNsxvInventory~POST
+>
+
+> **Parameters:**
+>
+> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
+
+> [!primary]
+>
+>  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 Visit our page on [VMware on OVHcloud lifecycle policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy).
 
