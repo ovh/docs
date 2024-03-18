@@ -39,28 +39,15 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 ### Gathering IPv6 block:
 To gather an IPv6 block with OVH's services, particularly for use with a vRack, it's important to understand that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, influencing where public traffic enters your vRack backend. Here's how you can use OVH's APIv6 to perform this task:
 
-**Prerequisites**
+**<ins>Prerequisites</ins>**
 - Ensure you have an OVH API consumer key. If you don't have one, you'll need to generate it by following the instructions on the OVH API authentication page.
 - Identify the region where you want your IPv6 block to be allocated. This is crucial as it determines the entry point of public traffic to your vRack.
 
-**Sample APIv6 Commands**   
+**<ins>Actions</ins>**   
 
 <details>
-    <summary> <Authenticate with the OVH API </summary>
+<summary> <b>1. Authenticate with the OVH API </b></summary>
 <blockquote>
-
-```bash
-curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "Content-type: application/json" \
-"https://eu.api.ovh.com/1.0/auth/credential" \
--d '{"accessRules":[{"method":"GET","path":"/*"},{"method":"POST","path":"/*"},{"method":"PUT","path":"/*"},{"method":"DELETE","path":"/*"}]}'
-````   
-
-</blockquote>
-</details>
-
-
-
-1. ***Authenticate with the OVH API:***
 
 ```bash
 curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "Content-type: application/json" \
@@ -70,7 +57,12 @@ curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "Content-type: application/json
 
 In this example, `abc123xyz` is a placeholder for your actual OVH application key. This command requests a new set of credentials (a consumer key) that will allow your application to make API calls under the specified access rules.    
 
-Upon successful execution of the command, the OVH API will return a JSON object containing a consumerKey and a validationUrl. Here's an example of what the return might look like:
+Upon successful execution of the command, the OVH API will return a JSON object containing a consumerKey and a validationUrl.
+
+<details>
+<summary>Here's an example of what the return might look like </summary>
+<blockquote>
+
 ```json
 {
   "validationUrl": "https://eu.api.ovh.com/auth/?credentialToken=dEf456GHi",
@@ -82,20 +74,38 @@ Upon successful execution of the command, the OVH API will return a JSON object 
 - `consumerKey` is the key your application will use to authenticate subsequent API calls. Note that this key is in a `pendingValidation` state until you complete the validation process.
 - `state` indicates the current state of the consumer key. In this case, it's `pendingValidation`, meaning you need to visit the `validationUrl` to activate it.
 
-2. ***Request an IPv6 Block:***   
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>2. Request an IPv6 Block</b> </summary>
+<blockquote>
+    
 Assuming you've already authenticated and obtained your `consumerKey` from the previous step, here's how you might request an IPv6 block for your vRack:     
+
 ```bash
 curl -XPOST -H "X-Ovh-Application: <application_key>" -H "X-Ovh-Consumer: <consumer_key>" -H "Content-type: application/json" \
 "https://eu.api.ovh.com/1.0/vrack/<vrack_id>/ip" \
 -d '{"type":"ipv6", "region":"<region>"}'
-```   
+```
+
 In this command:   
 - `abc123xyz` is the placeholder for your OVH application key.
 - `tUv123wXyZ` is the consumer key you received from the authentication process.
 - `vrack1234` is a hypothetical vRack ID. Replace this with your actual vRack ID.
-- `GRA` represents the region where you want the IPv6 block allocated. OVHcloud has several data centers across the globe, so you would replace `GRA` with the specific region code that corresponds to your desired location.
+- `GRA` represents the region where you want the IPv6 block allocated. OVHcloud has several data centers across the globe, so you would replace `GRA` with the specific region code that corresponds to your desired location.   
 
-Upon successful execution of the command, the OVH API will return information about the newly allocated IPv6 block. Here's an example of what the return might look like:
+
+Upon successful execution of the command, the OVH API will return information about the newly allocated IPv6 block.
+
+<details>
+<summary> Here's an example of what the return might look like </summary>
+<blockquote>
 
 ```json
 {
@@ -115,19 +125,38 @@ The `task` object provides details about the request to add an IPv6 block to you
    
 The `ipv6Block` object contains information about the allocated IPv6 block, including the `block` itself (in this example, `2001:db8:abcd:0012::/64`) and the `region` where it's allocated.
 
-3. ***Check the Status of Your IPv6 Block Request:***   
+
+</blockquote>
+</details>
+    
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>3. Check the Status of Your IPv6 Block Request</b> </summary>
+<blockquote>
+
 Given you have your `application_key`, `consumer_key`, `vrack_id`, and now an `ipv6_block_id` from the previous operation, here's how you might construct the command:
+
 ```bash
 curl -XGET -H "X-Ovh-Application: abc123xyz" -H "X-Ovh-Consumer: tUv123wXyZ" \
 "https://eu.api.ovh.com/1.0/vrack/vrack1234/ip/2001:db8:abcd:0012::/64"
-```   
+```
+
 In this command:   
 - `abc123xyz` is your OVH application key.
 - `tUv123wXyZ` is the consumer key you received after authenticating.
 - `vrack1234` is your hypothetical vRack ID.
 - `2001:db8:abcd:0012::/64` represents the IPv6 block ID you're inquiring about. This is the block you requested to be added to your vRack.
 
-The API call will return details about the IPv6 block request, including its current status. Here's an example of a possible response:
+The API call will return details about the IPv6 block request, including its current status.
+
+
+<details>
+<summary> Here's an example of a possible response </summary>
+<blockquote>
+
 
 ```json
 {
@@ -145,38 +174,74 @@ The API call will return details about the IPv6 block request, including its cur
 - `description`: A human-readable description of the IPv6 block, which might be set during the allocation process or afterward.
 - `assignedToVrack`: Confirms the vRack ID to which the IPv6 block has been assigned, ensuring it's part of the correct virtual rack setup.   
 
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+---
+
 ### Adding an IPv6 block to the vRack   
 Adding an IPv6 block to your OVH vRack can be accomplished through the OVH APIv6, similar to how IPv4 blocks are currently added. This process can be configured in two primary modes: Bridge mode and Routed mode. Below are sample APIv6 commands for each setup, along with a brief note on additional host-side configurations that might be necessary for Routed mode.
 
-**Prerequisites**
+**<ins>Prerequisites</ins>**
 - Ensure you have an active OVH API consumer key. If not, generate one by following OVH's API authentication guidelines.
 - Have your vRack ID and the IPv6 block ready for configuration.
 
-**Adding an IPv6 Block to the vRack in Bridge Mode**     
+**<ins>Actions</ins>**
+
+
+<details>
+<summary> <b>Adding in Bridge Mode</b> </summary>
+<blockquote>
+
 In Bridge mode, the IPv6 block is directly associated with the vRack. This setup allows devices connected to the vRack to communicate using IPv6 addresses from this block, simplifying network configuration by eliminating the need for specific routing rules.  
+
 APIv6 Setup Example for Bridge Mode:   
+
 ```bash
 curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "X-Ovh-Consumer: tUv123wXyZ" -H "Content-type: application/json" \
 "https://api.ovh.com/1.0/vrack/vrack1234/ip" \
 -d '{"ipBlock":"2001:db8:abcd:0012::/64", "mode":"bridge"}'
-```   
+```
+
 - `abc123xyz`: Your OVH application key.
 - `tUv123wXyZ`: The consumer key obtained from the authentication process.
 - `vrack1234`: Your vRack ID.
 - `2001:db8:abcd:0012::/64`: The IPv6 block you wish to add in Bridge mode.
 
-**Adding an IPv6 Block to the vRack in Routed Mode**   
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>Adding in Routed Mode</b> </summary>
+<blockquote>
+
 Routed mode configures the IPv6 block with specific routing rules, directing traffic through a designated gateway. This setup requires additional configuration on the host side to ensure proper routing of IPv6 traffic.   
+
 APIv6 Setup Example for Routed Mode:   
+
 ```bash
 curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "X-Ovh-Consumer: tUv123wXyZ" -H "Content-type: application/json" \
 "https://api.ovh.com/1.0/vrack/vrack1234/ip" \
 -d '{"ipBlock":"2001:db8:abcd:0012::/64", "mode":"routed", "nextHop":"2001:db8:abcd:0012::1"}'
 ```
+
 - `2001:db8:abcd:0012::1`: The IPv6 address of the gateway for the routed traffic.
 
-**Expected Return from the Calls**   
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>Expected Return from the Calls</b> </summary>
+<blockquote>
+
 For both Bridge and Routed mode setups, the OVH API will return a response indicating the success of the operation and details about the IPv6 block configuration.    
+
 ```json
 {
   "message": "IPv6 block added to vRack successfully",
@@ -185,65 +250,126 @@ For both Bridge and Routed mode setups, the OVH API will return a response indic
   "nextHop": "2001:db8:abcd:0012::1" // Only for routed mode
 }
 ```
+
 - `message`: A confirmation message indicating the successful addition of the IPv6 block to the vRack.
 - `mode`: Indicates whether the block was added in Bridge or Routed mode.
 - `ipBlock`: The IPv6 block that was added.
 - `nextHop`: Specified only for Routed mode, indicating the gateway IPv6 address.
 
-**Additional Host-Side Configuration for Routed Mode**   
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>Additional Host-Side Configuration for Routed Mode</b> </summary>
+<blockquote>
+
 After adding the IPv6 block in Routed mode, configure each host within the vRack to use an IPv6 address from the block and set the specified gateway.   
+
 Example Configuration on a Linux Host:   
+
 ```bash
 sudo ip -6 addr add 2001:db8:abcd:0012::2/64 dev eth0
 sudo ip -6 route add default via 2001:db8:abcd:0012::1
-```   
+```
+
 The first command assigns an IPv6 address from the block to the eth0 interface.   
 The second command sets the default gateway for IPv6 traffic.
 
+</blockquote>
+</details>
+
+---
    
 ### Configuration on host side    
 Configuring your host to properly handle IPv6 addresses and route public traffic via the vRack interface is crucial for maintaining a secure and efficient network. Using the sample data provided, let's walk through the steps for manual IPv6 address configuration, enabling SLAAC, and setting up a separate IP routing table on a Linux-based system.
 
-**Manual Configuration:**   
+
+<details>
+<summary> <b>Manual Configuration</b> </summary>
+<blockquote>
+
 To manually assign an IPv6 address to a network interface:   
+
 ```bash
 sudo ip -6 addr add 2001:db8::1/64 dev eth0
 ```
+
 This command configures the interface `eth0` with the IPv6 address `2001:db8::1` and a subnet prefix length of 64.
 
-**SLAAC Configuration:**   
-For SLAAC to function, ensure your network interface accepts Router Advertisements (RAs):   
+</blockquote>
+</details>
+
+
+
+<details>
+<summary> <b>SLAAC Configuration</b> </summary>
+<blockquote>
+
+For SLAAC to function, ensure your network interface accepts Router Advertisements (RAs):  
+
 ```bash
 sudo sysctl -w net.ipv6.conf.eth0.accept_ra=1
-```   
+```
+
 This enables `eth0` to automatically configure an IPv6 address using SLAAC, assuming RAs are present on your network.
 
-**Creating a Separate IP Routing Table**   
+
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>Creating a Separate IP Routing Table</b> </summary>
+<blockquote>
+
 A separate IP routing table is essential for directing public traffic through the vRack interface, preventing it from mingling with private network traffic. This segregation enhances both security and routing efficiency.
-1. ***Define a New Routing Table:***   
+
+
+<blockquote>
+<b><i>1. Define a New Routing Table:</i></b>
+    
 Edit `/etc/iproute2/rt_tables` to add a new table:
+
 ```arduino
 100    public
 ```
-This entry creates a routing table named `public` with an ID of 100.   
 
-2. ***Add Routes to the New Table:***   
+This entry creates a routing table named `public` with an ID of 100.   
+</blockquote>
+
+
+<blockquote>
+<b><i>2. Add Routes to the New Table:</i></b>
+    
 Specify how traffic should be routed to the internet:    
+
 ```bash
 sudo ip -6 route add default via 2001:db8::1 dev eth0 table public
 ```
-This sets a default route in the `public` table, directing traffic through the gateway `2001:db8::1` on `eth0`.   
 
-3. ***Rule to Use the New Table:***
+This sets a default route in the `public` table, directing traffic through the gateway `2001:db8::1` on `eth0`.   
+</blockquote>
+
+<blockquote>
+<b><i>3. Rule to Use the New Table:</i></b>
+    
 Apply the new table to traffic from a specific IPv6 address:
+
 ```bash
 sudo ip -6 rule add from 2001:db8::2/64 table public
 ```
-This command configures the system to route traffic originating from `2001:db8::2/64` using the `public` routing table.
 
-**Expected Outcome**   
-After executing these commands, your host should be correctly configured to handle IPv6 addresses both manually and via SLAAC. Additionally, public internet traffic will be routed through the specified vRack interface, separate from your private network traffic, ensuring a clear delineation between public and private data flows.   
- 
+This command configures the system to route traffic originating from `2001:db8::2/64` using the `public` routing table.
+</blockquote>
+
+</blockquote>
+</details>
+
+
+
+---
+
 ### Setup verification   
 To verify your network setup, whether it's configured in bridged or routed mode, `mtr` (My Traceroute) is a powerful network diagnostic tool that combines the functionality of the `traceroute` and `ping` programs. It provides a continuously updated list of routers traversed by your packets to reach a destination and the latency to each router. This can be particularly useful for diagnosing network issues and verifying the path and performance of your traffic.   
 
