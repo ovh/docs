@@ -41,7 +41,7 @@ Si les fichiers source de Pico ont été placés correctement dans votre dossier
 
 Pico est un CMS basé sur des fichiers, ce qui signifie que toute la configuration et la création de contenu se font directement en modifiant les fichiers sur le serveur. Voici les étapes à suivre pour configurer et personnaliser votre site web Pico.
 
-##### Comprendre la structure des dossiers de Pico
+#### Comprendre la structure des dossiers de Pico
 
 Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le répertoire principal de Pico. Les plus importants sont :
 
@@ -51,7 +51,7 @@ Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le ré
 - `assets/` : contient les ressources statiques comme des images, des feuilles de style CSS, des scripts JavaScript, etc.
 - `plugins/` : contient les plugins que vous souhaitez utiliser
 
-##### Configuration de base
+#### Configuration de base
 
 **1. Configurer votre site web** : ouvrez le fichier `config/config.yml` avec un éditeur de texte. Configurez ici les paramètres de base de votre site web, tels que le titre, la description, l'URL ou les thèmes.
 
@@ -59,7 +59,7 @@ Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le ré
 
 **3. Changer le titre et la description de votre site web** : si vous avez un nom de domaine spécifique, recherchez la ligne pour `base_url:` dans le fichier `config/config.yml` pour mettre à jour le nom de domaine de votre site web. Sinon, laissez la valeur `~` par défaut.
 
-##### Ajouter du contenu
+#### Ajouter du contenu
 
 **1. Créer des pages** : pour ajouter une nouvelle page à votre site web, créez un nouveau fichier Markdown (.md) dans le dossier `content/`. Le nom du fichier déterminera l'URL de la page. Par exemple, `about.md` sera accessible à http://votredomaine.com/about.
 
@@ -74,7 +74,7 @@ Title: About
 Your content here
 ```
 
-##### Personnaliser le thème
+#### Personnaliser le thème
 
 **1. Sélectionner un thème** : Pico est installé avec un thème par défaut, mais vous pouvez en télécharger d'autres depuis le [site web officiel de Pico](https://picocms.org/themes/) ou créer le vôtre.
 
@@ -82,7 +82,7 @@ Your content here
 
 **3. Personnaliser le thème** : vous pouvez modifier les fichiers du thème dans `themes/votretheme/` pour personnaliser l'apparence de votre site web. Cela peut inclure l'édition de fichiers HTML Twig, CSS, et JavaScript.
 
-##### Ajouter des plugins
+#### Ajouter des plugins
 
 Pico permet d'étendre ses fonctionnalités avec des plugins.
 
@@ -109,5 +109,5 @@ Vous venez d'installer manuellement le CMS Pico sur votre hébergement web OVHcl
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
