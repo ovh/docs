@@ -78,7 +78,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 #### Pico
 
-**Pico** est un CMS léger basé sur PHP, idéal pour créer des sites web ou des blogs. Dépourvu de base de données, il utilise des fichiers Markdown pour gérer le contenu. Simple mais efficace, il supporte des extensions pour personnaliser votre site web.
+**Pico** est un CMS léger basé sur PHP, idéal pour créer des sites web ou des blogs. Dépourvu de base de données, il utilise des fichiers Markdown pour gérer le contenu. Il supporte des extensions pour personnaliser votre site web.
 
 - Site officiel de [Pico](https://picocms.org/){.external}
 
