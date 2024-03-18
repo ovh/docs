@@ -66,7 +66,7 @@ Proponujemy cztery różne metody (kliknij na poniższe zakładki, aby wyświetl
 >>
 >> Metoda ta zapewnia wyższy poziom bezpieczeństwa, ponieważ opiera się na niezależnym urządzeniu zabezpieczającym, całkowicie odseparowanym od komputera, smartfona lub tabletu, dzięki czemu jest mniej narażone na ryzyko włamania.
 > Kody zapasowe
->> ![2FA kody](obrazy/kod.svg)<br>
+>> ![2FA kody](images/code.svg)<br>
 >> Jeśli po raz pierwszy skonfigurujesz weryfikację dwuetapową (za pomocą **SMS**, **Aplikacja mobilna** lub **Klucz bezpieczeństwa**), w Panelu klienta wyświetli się 10 kodów zapasowych **jednorazowych**.
 >>
 >> Ta metoda weryfikacji dwuetapowej jest uzupełnieniem metody już aktywowanej (przez **SMS**, **Aplikacja mobilna** lub **Klucz bezpieczeństwa**). Metody tej nie można aktywować samodzielnie.
@@ -90,7 +90,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 >> Wprowadź numer telefonu komórkowego w formacie międzynarodowym (na przykład +33612345678 na telefon komórkowy we Francji) i zatwierdź.
 >> Na podany numer otrzymasz wiadomość SMS z kodem zatwierdzenia.
 >>
->> ![2FA sms](obrazy/2fasms3edit.png){.thumbnail width="400"}<br>
+>> ![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}<br>
 >> Wpisz ten kod w odpowiednim polu.<br>
 >> Możesz również dodać opis podanego numeru telefonu.
 >>
@@ -154,7 +154,7 @@ Pojawią się wówczas wszystkie aktywowane przez Ciebie metody, w tym metoda ko
 
 Wybierając tę ostatnią metodę, wystarczy wpisać jeden z kodów zapasowych.
 
-![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
 ### Co zrobić, jeśli jedno z moich urządzeń zostanie zgubione/skradzione lub przestanie działać? <a name="lost-device"></a>
 

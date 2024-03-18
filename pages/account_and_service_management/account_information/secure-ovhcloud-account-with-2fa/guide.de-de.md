@@ -154,7 +154,7 @@ Alle aktivierten Methoden werden angezeigt, einschließlich der Notfall-Codes.
 
 Wenn Sie diese Methode wählen, müssen Sie nur einen Ihrer Notfall-Codes eingeben.
 
-![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
 ### Was passiert, wenn eines meiner Peripheriegeräte verloren geht/gestohlen wird oder nicht mehr funktioniert? <a name="lost-device"></a>
 

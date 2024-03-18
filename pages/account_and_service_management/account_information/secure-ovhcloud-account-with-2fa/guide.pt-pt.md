@@ -154,7 +154,7 @@ Todos os métodos que ativou aparecerão então, incluindo o método dos código
 
 Ao escolher este último método, basta-lhe introduzir um dos seus códigos de segurança.
 
-![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
 ### O que devo fazer se um dos meus periféricos estiver perdido/roubado ou parar de funcionar? <a name="lost-device"></a>
 

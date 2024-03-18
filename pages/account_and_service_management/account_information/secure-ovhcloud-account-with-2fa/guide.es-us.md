@@ -47,8 +47,8 @@ Le proponemos tres métodos diferentes (haga clic en las fichas siguientes para 
 >> Una vez que la aplicación se haya asociado a su cuenta de OVHcloud, generará un código de un solo uso válido durante un breve período de tiempo (unos segundos) en cada intento de conexión.
 >>
 >> > [!success]
->> > > **Ventajas de este método**:
->>
+>> > **Ventajas de este método**:
+>> >
 >> > - Una vez que la aplicación se haya asociado por primera vez a su cuenta, ya no será necesario estar conectado a internet en su smartphone o tablet para que se generen los códigos.
 >> > - Puede utilizar una sola aplicación OTP para todos sus servicios o sitios web que requieran doble autenticación.
 >>
@@ -133,7 +133,7 @@ Aparecerán todos los métodos que haya activado, incluido el método de los có
 
 Si elige este último método, solo tendrá que introducir uno de sus códigos de seguridad.
 
-![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
 > [!primary]
 >

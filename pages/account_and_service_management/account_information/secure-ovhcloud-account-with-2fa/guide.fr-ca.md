@@ -131,7 +131,7 @@ Toutes les méthodes que vous avez activées apparaîtront alors, y compris la m
 
 En choisissant cette denière méthode, il vous suffit alors de renseigner l'un de vos codes de secours.
 
-![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
 > [!primary]
 >
