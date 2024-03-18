@@ -6,7 +6,7 @@ updated: 2024-03-18
 
 ## Objectif
 
-Le **CMS** (**C**ontent **M**anagement **S**ystem) Pico vous permet de créer des sites web d'une manière simple et rapide. Conçu pour créer et gérer du contenu facilement grâce à des fichiers Markdown, Pico est idéal pour concevoir des sites web personnels, des portfolios ou des projets de petite entreprise.
+Le **CMS** (**C**ontent **M**anagement **S**ystem) Pico permet de créer rapidement des sites web. Conçu pour créer et gérer du contenu facilement grâce à des fichiers Markdown, Pico est idéal pour concevoir des sites web personnels, des portfolios ou des projets de petites entreprises.
 
 **Découvrez comment installer manuellement le CMS Pico sur votre hébergement web OVHcloud.**
 
