@@ -23,9 +23,9 @@ Read the [official documentation of CDK for Terraform](https://developer.hashico
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Installing [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
-- Installing [CDKTF CLI](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install){.external}
-- Installing [Go](https://go.dev/doc/install)
+- [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/){.external} installed
+- [Cloud Development Kit for Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install){.external} installed
+- [Go](https://go.dev/doc/install) installed
 
 ### OVHcloud Terraform provider
 
@@ -52,7 +52,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 * a `consumer_key`
 * a `service_name`
 
-Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs.
+This is because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs.
 
 To retrieve the necessary information, please follow the tutorial [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
@@ -60,7 +60,7 @@ Concretely, you have to generate these credentials via the [OVH token generation
 
 ![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
-Once you have successfully generated your OVH tokens, please keep them. You'll need to define them in the next few minutes.
+Once you have successfully generated your OVH tokens, keep them. You will need to define them later.
 
 The last piece of information you need is the `service_name`: this is the ID of your Public Cloud project.
 
@@ -80,7 +80,7 @@ Summary of the needed environment variables:
 | `consumer_key`      | `OVH_CONSUMER_KEY` | OVHcloud Consumer Key | ✅        |
 | `service_name`      | `OVH_CLOUD_PROJECT_SERVICE` | OVHcloud Public Cloud project ID| ✅        |
 
- These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
+These keys can be generated via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*).
 
 Example:
 
@@ -93,7 +93,7 @@ export OVH_CONSUMER_KEY="xxx"
 export OVH_CLOUD_PROJECT_SERVICE="xxx"
 ```
 
-### Deploy an OVHcloud Managed Kubernetes cluster and a node pool in Go / Golang
+### Deploying an OVHcloud Managed Kubernetes cluster and a node pool in Go / Golang
 
 In this guide, we want to create, in Go:
 
@@ -157,6 +157,7 @@ Generated go constructs in the output directory: generated
 The generated code depends on jsii-runtime-go. If you haven't yet installed it, you can run go mod tidy to automatically install it.
 Run 'go mod tidy' after adding imports for any needed modules such as prebuilt providers
 ```
+
 The command initializes the application in the programming language you have specified (Go in our case) with the list of existing Terraform providers you have defined (OVHcloud and Hashicorp local) and stores the Terraform State locally (thanks to the `--local` flag).
 
 The code organization of your project is created:
@@ -172,7 +173,7 @@ The code organization of your project is created:
 -rw-r--r-- 1 gitpod gitpod  974 Mar 14 10:15 main_test.go
 ```
 
-Let's explain different generated files:
+Let's explain the different generated files:
 
 - `cdktf.json` contains configuration settings for your application
 - `generated` folder contains the OVHcloud Terraform provider translated in Go
@@ -473,13 +474,11 @@ As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
 
-Click on `my_desired_cluster`, then on the `Node pools` tab:
+Click on `my_desired_cluster`, then on the `Node pools`{.action} tab:
 
 ![Node pool created](images/my-pool-node-pool-created.png){.thumbnail}
 
-Our node pool is created too.
-
-Perfect!
+Our node pool is also created.
 
 ### Connect to the Kubernetes cluster
 
@@ -505,24 +504,20 @@ NAME                  STATUS   ROLES    AGE   VERSION
 my-pool-node-0784ed   Ready    <none>   76m   v1.28.3
 ```
 
-Awesome!
-
 You can now deploy your applications and/or create new clusters through Terraform.
 
 ### Known issues
 
 #### "not enough xxx quotas"
 
-By default, the Public Cloud projects as well as the total resources (RAM, CPU, disk space, number of instances, etc.) that you can use are limited for security reasons.
+By default, Public Cloud projects as well as the total resources (RAM, CPU, disk space, number of instances, etc.) that you can use are limited for security reasons.
 
 When you create a new Kubernetes Node pool, if you run out of resources in your available quota, the Nodes might be in error.
 
 You may get the following error message: `"not enough xxx quotas".`
 "xxx" can be: RAM, CPU, VM, Disk or Port.
 
-If this is the case, the quotas must be increased.
-
-In order to check your quotas and increase them, please follow this tutorial:
+If this is the case, the quotas must be increased. In order to check your quotas and increase them, please follow this tutorial:
 
 [Increasing Public Cloud quotas](/pages/public_cloud/compute/increasing_public_cloud_quota){.external}.
 
@@ -665,11 +660,11 @@ ovhcloud
           Destroy complete! Resources: 3 destroyed.
 ```
 
-Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have been correctly destroyed!
+Your Kubernetes cluster and associated resources (Nodes, Pods...) have been correctly destroyed!
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/fr-ca/public-cloud/kubernetes/).
 
 To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 

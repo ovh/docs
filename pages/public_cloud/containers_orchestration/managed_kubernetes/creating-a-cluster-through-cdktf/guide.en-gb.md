@@ -480,8 +480,6 @@ Click on `my_desired_cluster`, then on the `Node pools`{.action} tab:
 
 Our node pool is also created.
 
-Perfect!
-
 ### Connect to the Kubernetes cluster
 
 Our cluster has been created, we now need to connect to it to check our nodes and existing pods and deploy our applications.
@@ -505,8 +503,6 @@ $ kubectl --kubeconfig=kubeconfig.yaml get node
 NAME                  STATUS   ROLES    AGE   VERSION
 my-pool-node-0784ed   Ready    <none>   76m   v1.28.3
 ```
-
-Awesome!
 
 You can now deploy your applications and/or create new clusters through Terraform.
 
@@ -664,11 +660,11 @@ ovhcloud
           Destroy complete! Resources: 3 destroyed.
 ```
 
-Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have been correctly destroyed!
+Your Kubernetes cluster and associated resources (Nodes, Pods...) have been correctly destroyed!
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
 
 To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
