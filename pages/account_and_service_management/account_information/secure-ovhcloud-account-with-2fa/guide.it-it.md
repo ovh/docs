@@ -155,7 +155,7 @@ A questo punto compariranno tutti i metodi attivati, incluso il metodo dei codic
 
 Scegliendo quest’ultimo metodo, sarà sufficiente inserire uno dei codici di sicurezza.
 
-![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
 ### Cosa fare se uno dei miei dispositivi viene perso/rubato o smette di funzionare? <a name="lost-device"></a>
 

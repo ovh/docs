@@ -150,7 +150,7 @@ All the methods you have enabled will then appear, including the backup codes me
 
 By choosing this last method, you just need to enter one of your backup codes.
 
-![2FA](images/2024-007-log-in-03png){.thumbnail width="400"}
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
 ### What do I do if I lose one of my devices, or if it stops working? <a name="lost-device"></a>
 
