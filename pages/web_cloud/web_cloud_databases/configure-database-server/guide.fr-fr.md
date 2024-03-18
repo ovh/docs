@@ -173,7 +173,7 @@ Vous trouverez dans le cadre **« Configuration générale de PostgreSQL »** la
 
 Chacun des niveaux inclut tous les niveaux qui le suivent. Plus le niveau est élevé, moins il y a de messages enregistré dans les logs du serveur.
 
-Par défaut, la valeur définie est **« WARNING »**.
+Par défaut, la valeur définie est **« WARNING »** car elle inclut les valeurs **« ERROR »**, **« LOG »**, **« FATAL »** et **« PANIC »**.
 
 De plus, vous pouvez activer des extensions sur vos bases de données. Pour cela, dirigez-vous-vous dans l'onglet `Bases de données`, cliquez sur l'icône de tableau de votre base de données sous la colonne **« Extensions »**
 
