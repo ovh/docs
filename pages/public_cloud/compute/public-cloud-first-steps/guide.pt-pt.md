@@ -169,7 +169,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 **Local Zones:**
 
-As Local Zones(zonas locals) são uma extensão das regiões que aproximam os serviços da OVHcloud de locais específicos, oferecendo uma latência reduzida e performances melhoradas para as aplicações. Eles estão estrategicamente localizados perto de áreas de alta demanda dos usuários. O seu objetivo principal é o de minimizar o tempo necessário à transferência dos dados entre o utilizador e a cloud, a fim de tornar os serviços mais rápidos e mais reativos, e de responder às exigências de residência dos dados. Para mais informações sobre as Local Zones, consulte os seguintes links: [Local Zone Compute](https://www.ovhcloud.com/pt/public-cloud/local-zone-compute/) e [Local Zone Compute - Funcionalidades, capacidades e limites](/pages/public_cloud/compute/local-zone-capabilities-restriction).
+As Local Zones(zonas locals) são uma extensão das regiões que aproximam os serviços da OVHcloud de locais específicos, oferecendo uma latência reduzida e performances melhoradas para as aplicações. Eles estão estrategicamente localizados perto de áreas de alta demanda dos usuários. O seu objetivo principal é o de minimizar o tempo necessário à transferência dos dados entre o utilizador e a cloud, a fim de tornar os serviços mais rápidos e mais reativos, e de responder às exigências de residência dos dados. Para mais informações sobre as Local Zones, consulte os seguintes links: [Local Zone Compute](https://www.ovhcloud.com/pt/public-cloud/local-zone-compute/) e [Local Zone Compute - Funcionalidades, capacidades e limites](/pages/public_cloud/compute//local-zones-capabilities-limitations).
 
 
 **Global Regions:**
