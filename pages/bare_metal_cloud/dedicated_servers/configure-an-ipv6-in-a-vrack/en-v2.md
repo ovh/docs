@@ -4,6 +4,8 @@ excerpt: This guide will show you how to configure a block of public IPV6 addres
 updated: 2024-02-12
 ---
 
+WE CAN KEEP THIS VERSION LIKE THIS IN ORDER TO USE LATER
+
 ## Objective
 
 The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses. 
