@@ -1,7 +1,7 @@
 ---
 title: "Configurer votre serveur de bases de données"
 excerpt: "Découvrez comment configurer et optimiser votre serveur de base de données"
-updated: 2024-03-14
+updated: 2024-03-18
 ---
 
 ## Objectif
@@ -157,9 +157,25 @@ Effectuez les modifications nécessaires puis cliquez sur `Confirmer`{.action}.
 
 #### Instance PostgreSQL
 
-Il n'est pas possible de modifier la configuration d'une instance PostgreSQL.
+- Cliquez sur l'onglet `Configuration`.
 
-Vous pouvez néanmoins activer des extensions sur vos bases de données. Pour cela, dirigez-vous-vous dans l'onglet `Bases de données`, cliquez sur l'icône de tableau de votre base de données sous la colonne **« Extensions »**
+Vous trouverez dans le cadre **« Configuration générale de PostgreSQL »** la configuration actuellement définie pour votre base de données. Vous pouvez directement modifier celle-ci, puis cliquer sur `Appliquer`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages** : Contrôle les niveaux des messages à historiser dans les logs du serveur. Les niveaux disponibles pour une solution Web Cloud Databases sont les niveaux : 
+
+    - **« WARNING »** : Fournit les messages d'avertissement sur de potentiels problèmes.
+    - **« ERROR »** : Envoi l'erreur qui a engendré l'annulation d'une commande en cours.
+    - **« LOG »** : Enregistre des informations destiénes aux administrateurs du serveur.
+    - **« FATAL »** : Envoi l'erreur qui a engendré la fin de la session en cours.
+    - **« PANIC »** : Envoi l'erreur qui a engendré la fin de l'ensemble des sessions.
+
+Chacun des niveaux inclut tous les niveaux qui le suivent. Plus le niveau est élevé, moins il y a de messages enregistré dans les logs du serveur.
+
+Par défaut, la valeur définie est **« WARNING »**.
+
+De plus, vous pouvez activer des extensions sur vos bases de données. Pour cela, dirigez-vous-vous dans l'onglet `Bases de données`, cliquez sur l'icône de tableau de votre base de données sous la colonne **« Extensions »**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
