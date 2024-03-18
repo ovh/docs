@@ -174,7 +174,7 @@ Chacun des niveaux inclut tous les niveaux qui le suivent. Plus le niveau est é
 
 Par défaut, la valeur définie est **« WARNING »** car elle inclut les valeurs **« ERROR »**, **« LOG »**, **« FATAL »** et **« PANIC »**.
 
-De plus, vous pouvez activer des extensions sur vos bases de données. Pour cela, dirigez-vous-vous dans l'onglet `Bases de données`, cliquez sur l'icône de tableau de votre base de données sous la colonne **« Extensions »**
+De plus, vous pouvez activer des extensions sur vos bases de données. Pour cela, dirigez-vous-vous dans l'onglet `Bases de données`{.action}, cliquez sur l'icône de tableau de votre base de données sous la colonne **« Extensions »**.
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
