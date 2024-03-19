@@ -6,7 +6,7 @@ updated: 2024-03-19
 
 ## Objective
 
-With the **CMS** (**C**content **M**management **S**system) Pico, you can create websites quickly. Designed to create and manage content easily through Markdown files, Pico is ideal for designing personal websites, portfolios or small business projects.
+With the **CMS** (**C**ontent **M**anagement **S**ystem) Pico, you can create websites quickly. Designed to create and manage content easily through Markdown files, Pico is ideal for designing personal websites, portfolios or small business projects.
 
 **Find out how to manually install the Pico CMS on your OVHcloud web hosting plan.**
 
