@@ -61,7 +61,7 @@ Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le ré
 
 #### Ajouter du contenu
 
-**1. Créer des pages** : pour ajouter une nouvelle page à votre site web, créez un nouveau fichier Markdown (.md) dans le dossier `content/`. Le nom du fichier déterminera l'URL de la page. Par exemple, `about.md` sera accessible à http://votredomaine.com/about.
+**1. Créer des pages** : pour ajouter une nouvelle page à votre site web, créez un nouveau fichier Markdown (.md) dans le dossier `content/`. Le nom du fichier déterminera l'URL de la page. Par exemple, `about.md` sera accessible à http://yourdomain.tld/about.
 
 **2. Écrire du contenu** : ouvrez le fichier Markdown avec un éditeur de texte et commencez à écrire votre contenu. Utilisez la syntaxe Markdown pour formater votre texte, créer des liens, insérer des images, etc. Par exemple, si vous voulez éditer la page principale (home) de votre site web, ouvrez le fichier `index.md` et insérez le contenu de votre choix.
 
@@ -69,7 +69,7 @@ Après l'installation, vous trouverez plusieurs dossiers et fichiers dans le ré
 
 ```bash
 ---
-Title: About
+title: About
 ---
 Your content here
 ```
@@ -80,7 +80,7 @@ Your content here
 
 **2. Modifier le thème** : pour changer de thème, mettez à jour la section `theme:` dans le fichier `config/config.yml` avec le nom du dossier du thème que vous souhaitez utiliser.
 
-**3. Personnaliser le thème** : vous pouvez modifier les fichiers du thème dans `themes/votretheme/` pour personnaliser l'apparence de votre site web. Cela peut inclure l'édition de fichiers HTML Twig, CSS, et JavaScript.
+**3. Personnaliser le thème** : vous pouvez modifier les fichiers du thème dans `themes/yourtheme/` pour personnaliser l'apparence de votre site web. Cela peut inclure l'édition de fichiers HTML Twig, CSS, et JavaScript.
 
 #### Ajouter des plugins
 
