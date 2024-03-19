@@ -5,7 +5,7 @@ updated: 2024-03-19
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -170,14 +170,14 @@ En el recuadro **"Configuración General de PostgreSQL"** encontrará la configu
 
 - **log_min_messages**: controla los niveles de mensajes que se deben registrar en los logs del servidor. Los niveles disponibles para una solución Web Cloud Databases son: 
     - **"WARNING"**: Proporciona mensajes de advertencia sobre posibles problemas.
-    - **«ERROR»**: Envía el error que ha provocado la cancelación de un pedido en curso.
-    - **«LOG»**: Registra la información destinada a los administradores del servidor.
-    - **«FATAL»**: Envía el error que ha provocado el final de la sesión en curso.
+    - **"ERROR"**: Envía el error que ha provocado la cancelación de un pedido en curso.
+    - **"LOG"**: Registra la información destinada a los administradores del servidor.
+    - **"FATAL"**: Envía el error que ha provocado el final de la sesión en curso.
     - **"PANIC"**: Envía el error que ha provocado el final de todas las sesiones.
 
 Cada nivel incluye todos los niveles posteriores. Cuanto mayor sea el nivel, menos mensajes se registrarán en los logs del servidor.
 
-Por defecto, el valor definido es **«WARNING»**, ya que incluye los valores **«ERROR»**, **«LOG»**, **«FATAL»** y **«PANIC»**.
+Por defecto, el valor definido es **"WARNING"**, ya que incluye los valores **"ERROR"**, **"LOG"**, **"FATAL"** y **"PANIC"**.
 
 Además, puede activar extensiones en sus bases de datos. Para ello, abra la pestaña `Bases de datos`{.action} y haga clic en el icono de la tabla de la base de datos en la columna **"Extensiones"**
 

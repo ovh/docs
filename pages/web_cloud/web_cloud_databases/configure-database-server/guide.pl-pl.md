@@ -104,7 +104,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 - Kliknij kartę `Konfiguracja`{.action}.
 
-W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Zastosuj`{.action}.
+W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Wyślij`{.action}.
 
 ![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
 
@@ -163,7 +163,7 @@ Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
 
 - Kliknij zakładkę `Konfiguracja`{.action}.
 
-W części **"Konfiguracja PostgreSQL"** znajdziesz aktualnie skonfigurowaną konfigurację Twojej bazy danych. Możesz ją bezpośrednio zmienić, po czym kliknij przycisk `Zastosuj`{.action}.
+W części **"Konfiguracja PostgreSQL"** znajdziesz aktualnie skonfigurowaną konfigurację Twojej bazy danych. Możesz ją bezpośrednio zmienić, po czym kliknij przycisk `Wyślij`{.action}.
 
 ![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
 
