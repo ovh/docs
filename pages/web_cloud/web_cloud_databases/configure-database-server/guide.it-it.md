@@ -161,9 +161,24 @@ Effettua le modifiche necessarie e clicca su `Conferma`{.action}.
 
 #### Instance PostgreSQL
 
-Non è possibile modificare la configurazione di un'istanza PostgreSQL. 
+- Clicca sulla scheda `Configurazione`{.action}.
 
-ma è possibile attivare estensioni sui database. Clicca sulla scheda `Database`{.action}, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
+Nel riquadro **"Configurazione generale di PostgreSQL"**, trovi la configurazione attualmente definita per il tuo database. È possibile modificarla direttamente e cliccare su `Applica`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages***: controlla i livelli dei messaggi da memorizzare nei log del server. I livelli disponibili per una soluzione Web Cloud Databases sono i seguenti: 
+    - **"WARNING"**: fornisce messaggi di avvertenza su potenziali problemi.
+    - **"ERROR"**: Invia l'errore che ha determinato l'annullamento di un ordine in corso.
+    - **"LOG"**: Registra informazioni destinate agli amministratori del server.
+    - **"FATAL"**: Invia l'errore che ha determinato la fine della sessione in corso.
+    - **"PANIC"**: Invia l'errore che ha provocato la fine di tutte le sessioni.
+
+Ogni livello include tutti i livelli successivi. Più il livello è elevato, meno messaggi saranno salvati nei log del server.
+
+Il valore predefinito è **"WARNING"**, in quanto include i valori **"ERROR"**, **"LOG"**, **"FATAL"** e **"PANIC"**.
+
+È inoltre possibile attivare estensioni sui database. Clicca sulla scheda `Database`{.action}, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
