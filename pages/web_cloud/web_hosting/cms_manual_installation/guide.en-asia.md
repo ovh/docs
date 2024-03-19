@@ -130,6 +130,11 @@ If you are unable to perform these checks, contact the hosting provider for your
 
 If you are not already using an FTP client, you can use Filezilla. You can find the free download link and a tutorial on how to use it in our documentation on [using FileZilla with your OVHcloud hosting plan](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> There are other FTP clients that you can use, such as Cyberduck. You can find more information in our documentation on [using Cyberduck with your OVHcloud hosting plan](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 #### 1.4 Prepare a database <a name="step1-4"></a>
 
 CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/) solutions include these.

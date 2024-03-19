@@ -133,6 +133,11 @@ Sollten Sie diese Maßnahmen nicht im Kundencenter durchführen können, kontakt
 
 Wenn Sie noch keinen FTP-Client verwenden, können Sie FileZilla installieren. Der Download-Link sowie eine Anleitung zur Verwendung dieser kostenfreien Software finden Sie in unserem Tutorial zur [Verwendung von FileZilla mit Ihrem OVHcloud Webhosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> Es gibt weitere FTP-Clients, die Sie verwenden können, z. B. Cyberduck. Weitere Informationen finden Sie in unserer Dokumentation zur [Verwendung von Cyberduck mit Ihrem OVHcloud Webhosting Angebot](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 ### 1.4 Eine Datenbank erstellen <a name="step1-4"></a> 
 
 CMS benötigen eine Datenbank, um zu funktionieren. Mit unseren [Webhostings](https://www.ovhcloud.com/de/web-hosting/) erhalten Sie Inklusiv-Datenbanken,  mit Ausnahme von [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).

@@ -134,6 +134,11 @@ Jeśli nie jesteś w stanie dokonać tych weryfikacji, skontaktuj się z aktywny
 
 Jeśli nie korzystasz już z klienta FTP, możesz użyć programu Filezilla. W dokumentacji OVH dotyczącej korzystania z tej usługi znajdziesz link do pobrania za darmo oraz samouczek dotyczący korzystania z niego [FileZilla wraz z hostingiem OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> Są inni klienci FTP, których możesz użyć, na przykład Cyberduck. Więcej informacji znajdziesz w naszej dokumentacji dotyczącej [korzystania z Cyberduck w ramach Twojego hostingu OVHcloud](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 #### 1.4 - Przygotowanie bazy danych <a name="step1-4"></a>
 
 CMS potrzebują bazy danych do działania. Nasza oferta[hosting](https://www.ovhcloud.com/pl/web-hosting/) zawiera listę usług, z wyjątkiem [darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).

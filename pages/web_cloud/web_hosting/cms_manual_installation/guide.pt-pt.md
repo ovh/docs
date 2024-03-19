@@ -134,6 +134,11 @@ Se não conseguir realizar estas verificações, contacte o alojador da sua zona
 
 Se ainda não utilizar um cliente FTP, pode utilizar o Filezilla. Encontre o link de download gratuito, assim como um tutorial sobre a sua utilização na nossa documentação sobre a [utilização do FileZilla com o seu plano de alojamento OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> Existem outros clientes FTP que pode utilizar, como, por exemplo, o Cyberduck. Encontre mais informações na nossa documentação relativa à [utilização do Cyberduck com a sua oferta de alojamento OVHcloud](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 #### 1.4 - Preparar uma base de dados <a name="step1-4"></a>
 
 Os CMS precisam de uma base de dados para funcionarem. As nossas ofertas de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) incluem-no, com exceção de [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/).
