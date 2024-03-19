@@ -76,6 +76,12 @@ You can find more information on our [PrestaShop module page](https://www.ovhclo
 
 - [PrestaShop official website](https://www.prestashop.com/){.external} 
 
+#### Pico
+
+**Pico** is a lightweight PHP-based CMS, perfect for building websites and blogs. It doesn't have a database, so it uses Markdown files to manage content. It supports extensions to customize your website.
+
+- Official [Pico] website(https://picocms.org/){.external}
+
 > [!warning]
 >
 > Whichever CMS you choose, please note that OVHcloud does not provide support for using the respective software. If you experience any difficulties, please contact the publisher of your chosen CMS directly using the links listed above in this tutorial.

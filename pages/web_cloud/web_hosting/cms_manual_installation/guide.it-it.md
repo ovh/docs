@@ -80,6 +80,12 @@ Per maggiori informazioni, consulta la nostra pagina relativa al [modulo PrestaS
 
 - Sito ufficiale di [PrestaShop](https://www.prestashop.com/){.external}
 
+#### Pico
+
+**Pico** è un CMS leggero basato su PHP, ideale per creare siti Web o blog. Privo di database, utilizza file Markdown per gestire il contenuto. che supporta estensioni per personalizzare il sito Web.
+
+- Sito ufficiale di [Pico](https://picocms.org/){.external}
+
 > [!warning]
 >
 > Indipendentemente dal CMS scelto, ti ricordiamo che OVHcloud non fornisce alcuna assistenza sull'utilizzo di questi CMS. In caso di difficoltà o dubbi, contatta direttamente il produttore del CMS scelto utilizzando i link indicati in questa guida.

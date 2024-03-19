@@ -80,6 +80,12 @@ Więcej informacji znajduje się na naszej stronie dotyczącej [modułu PrestaSh
 
 - Oficjalna strona [PrestaShop](https://www.prestashop.com/){.external}
 
+### Pico
+
+**Pico** to oparty na PHP lekki CMS, idealny do tworzenia stron WWW lub blogów. Nie posiada bazy danych i używa plików Markdown do zarządzania zawartością. Posiada rozszerzenia służące do personalizacji Twojej strony WWW.
+
+- Oficjalna strona [Pico](https://picocms.org/){.external}
+
 > [!warning]
 >
 > Niezależnie od wybranego przez Ciebie CMS, OVHcloud nie udziela żadnej pomocy w zakresie korzystania z tych systemów CMS. Jeśli masz trudności, skontaktuj się z producentem CMS, który wybrałeś za pomocą linków podanych powyżej w tym tutorialu.
