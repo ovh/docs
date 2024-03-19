@@ -99,7 +99,7 @@ Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=
 
 #### Instance MySQL et MariaDB
 
-- Cliquez sur l'onglet `Configuration`.
+- Cliquez sur l'onglet `Configuration`{.action}.
 
 Vous trouverez dans le cadre **« Configuration générale de MySql »** la configuration actuellement définie pour votre base de données. Vous pouvez directement modifier celle-ci, puis cliquer sur `Appliquer`{.action}.
 
