@@ -102,7 +102,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 #### Instancja MySQL i MariaDB
 
-- Kliknij kartę `Konfiguracja`.
+- Kliknij kartę `Konfiguracja`{.action}.
 
 W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Zastosuj`{.action}.
 
@@ -163,7 +163,7 @@ Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
 
 Nie można zmienić konfiguracji instancji PostgreSQL. 
 
-Możesz jednak aktywować rozszerzenia Twoich baz danych. W tym celu przejdź do zakładki `Bazy danych`, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
+Możesz jednak aktywować rozszerzenia Twoich baz danych. W tym celu przejdź do zakładki `Bazy danych`{.action}, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 

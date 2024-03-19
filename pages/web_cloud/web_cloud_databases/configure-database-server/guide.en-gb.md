@@ -99,7 +99,7 @@ In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fr
 
 #### MySQL and MariaDB instances
 
-- Click on the `Configuration` tab.
+- Click on the `Configuration`{.action} tab.
 
 In the **General configuration of MySQL** box, you will see the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
 
@@ -160,7 +160,7 @@ Make the necessary changes, then click `Confirm`{.action}.
 
 You cannot modify the configuration of a PostgreSQL instance.
 
-However, you can enable extensions for your databases. To do this, go to the `Databases` tab, and click on the table icon for your database in the **Extensions** column.
+However, you can enable extensions for your databases. To do this, go to the `Databases`{.action} tab, and click on the table icon for your database in the **Extensions** column.
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 

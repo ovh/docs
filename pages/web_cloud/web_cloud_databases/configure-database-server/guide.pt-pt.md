@@ -102,7 +102,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 #### Instância MySQL e MariaDB
 
-- Aceda ao separador `Configuration`.
+- Aceda ao separador `Configuration`{.action}.
 
 No quadro **Configuração geral do MySql**, vai encontrar a configuração definida atualmente para a base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}.
 
@@ -163,7 +163,7 @@ Efetue as modificações necessárias e clique em `Confirmar`{.action}.
 
 Não é possível modificar a configuração de uma instância PostgreSQL. 
 
-No entanto, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados` e clique no ícone da tabela junto à base de dados, sob a coluna **«Extensões»**.
+No entanto, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados`{.action} e clique no ícone da tabela junto à base de dados, sob a coluna **«Extensões»**.
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 

@@ -103,7 +103,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 #### MySQL und MariaDB Instanzen
 
-- Gehen Sie zum Tab `Konfiguration`.
+- Gehen Sie zum Tab `Konfiguration`{.action}.
 
 Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können hier direkt Änderungen durchführen und dann auf `Anwenden`{.action} klicken.
 
@@ -164,7 +164,7 @@ Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Be
 
 Die Konfiguration einer PostgreSQL-Instanz kann nicht geändert werden. 
 
-Sie können jedoch Erweiterungen auf Ihren Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken` und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **Erweiterungen**.
+Sie können jedoch Erweiterungen auf Ihren Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken`{.action} und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **Erweiterungen**.
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 

@@ -102,7 +102,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 #### Istanza MySQL e MariaDB
 
-- Clicca sulla scheda `Configurazione`.
+- Clicca sulla scheda `Configurazione`{.action}.
 
 Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione attualmente definita per il tuo database. Puoi modificarla direttamente e cliccare su `Applica`{.action}.
 
@@ -163,7 +163,7 @@ Effettua le modifiche necessarie e clicca su `Conferma`{.action}.
 
 Non è possibile modificare la configurazione di un'istanza PostgreSQL. 
 
-ma è possibile attivare estensioni sui database. Clicca sulla scheda `Database`, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
+ma è possibile attivare estensioni sui database. Clicca sulla scheda `Database`{.action}, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 

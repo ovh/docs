@@ -103,7 +103,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 #### Instancia MySQL y MariaDB
 
-- Abra la pestaña `Configuración`:
+- Abra la pestaña `Configuración`{.action}:
 
 En el cuadro **"Configuración general de MySql"** encontrará la configuración actualmente establecida para su base de datos. Puede modificarla directamente y hacer clic en `Aplicar`{.action}.
 
@@ -164,7 +164,7 @@ Realice los cambios necesarios y haga clic en `Confirmar`{.action}.
 
 No es posible modificar la configuración de una instancia PostgreSQL.
 
-No obstante, puede activar extensiones en sus bases de datos. Para ello, abra la pestaña `Bases de datos` y haga clic en el icono de la tabla de la base de datos en la columna **"Extensiones"**
+No obstante, puede activar extensiones en sus bases de datos. Para ello, abra la pestaña `Bases de datos`{.action} y haga clic en el icono de la tabla de la base de datos en la columna **"Extensiones"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
