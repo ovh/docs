@@ -186,6 +186,7 @@ Below are links to the CMS download pages mentioned in this tutorial:
 > - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
+> - [Pico](https://picocms.org/download/){.external}
 >
 > Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >

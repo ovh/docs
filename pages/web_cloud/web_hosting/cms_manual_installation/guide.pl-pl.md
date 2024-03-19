@@ -190,6 +190,7 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 > - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
+> - [Pico](https://picocms.org/download/){.external}
 >
 > Skonfiguruj następnie wersję PHP na Twoim hostingu, korzystając z dokumentacji [OVHcloud dotyczącej zmiany wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
