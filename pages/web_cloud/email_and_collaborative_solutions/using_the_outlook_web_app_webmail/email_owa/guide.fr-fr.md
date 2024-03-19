@@ -34,7 +34,7 @@ Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexi
 
 > [!warning]
 >
-> Si vous êtes redirigé sur une interface **Roundcube**, cela signifie que vous êtes sur la version historique de l'offre MX Plan. Pour plus d'information sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+> Si vous êtes redirigé sur une interface **Roundcube**, cela signifie que vous êtes sur la version historique de l'offre MX Plan. Pour plus d'informations sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
 > Pour vous familiariser avec l'interface **Roundcube**, consultez notre guide [Utiliser son adresse e-mail depuis le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
