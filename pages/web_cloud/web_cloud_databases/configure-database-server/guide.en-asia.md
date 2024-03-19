@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your database server'
 excerpt: 'Find out how to configure and optimise your database server'
-updated: 2024-03-14
+updated: 2024-03-19
 ---
 
 ## Objective
