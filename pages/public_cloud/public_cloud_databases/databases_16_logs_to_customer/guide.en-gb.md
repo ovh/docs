@@ -22,9 +22,21 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ### Forward logs to your LDP stream
 
-- Retrieve your LDP destination `streamId`
-- Retrieve your `serviceName`
-- Retrieve your `clusterId`
+Retrieve your LDP destination `streamId`:
+
+- In the manager go to your LDP page
+- Go to the `Data stream` tab
+- Choose your target Stream and clic on Edit
+- You can see the `streamId` in the URL `https://.../streams/<streamId>/edit`
+
+Retrieve your LDP destination `serviceName`:
+
+- It is your Public Cloud project ID
+
+Retrieve your `clusterId`:
+
+- In the manager go to your Database
+- You can see the field `Cluster ID`
 
 Use the following API call:
 
