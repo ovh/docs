@@ -1,7 +1,7 @@
 ---
 title: 'Installing a CMS manually on your Web Hosting plan'
 excerpt: 'Find out more about some of the compatible CMS for Web Hostings'
-updated: 2023-03-24
+updated: 2024-03-19
 ---
 
 ## Objective

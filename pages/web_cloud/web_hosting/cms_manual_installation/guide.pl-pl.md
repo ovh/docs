@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ręczna instalacja CMS na hostingu"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS na Twoim hostingu"
-updated: 2023-04-06
+updated: 2024-03-19
 ---
 
 > [!primary]
