@@ -158,9 +158,24 @@ Make the necessary changes, then click `Confirm`{.action}.
 
 #### PostgreSQL instance
 
-You cannot modify the configuration of a PostgreSQL instance.
+- Click on the `Configuration`{.action} tab.
 
-However, you can enable extensions for your databases. To do this, go to the `Databases`{.action} tab, and click on the table icon for your database in the **Extensions** column.
+In the **“General PostgreSQL configuration”** box, you will find the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages**: Controls the levels of messages to be logged in the server logs. The levels available for a Web Cloud Databases solution are: 
+    - **"WARNING"**: Provides warning messages about potential problems.
+    - **"ERROR"**: Sends the error that caused an ongoing order to be canceled.
+    - **“LOG”**: Stores information for server administrators.
+    - **"FATAL"**: Sends the error that caused the current session to end.
+    - **"PANIC"**: Sends the error that caused all sessions to end.
+
+Each level includes all levels that follow it. The higher the level, the fewer messages are recorded in the server logs.
+
+By default, the value set is **“WARNING”** because it includes the **“ERROR”**, **“LOG”**, **“FATAL”**, and **“PANIC”** values.
+
+You can also enable extensions for your databases. To do this, go to the `Databases`{.action} tab, and click on the table icon for your database in the **Extensions** column.
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
