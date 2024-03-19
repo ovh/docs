@@ -208,7 +208,7 @@ Postępuj zgodnie z instrukcjami podanymi przez producenta systemu CMS, aż plik
 
 >[!primary]
 >
-> W tym etapie w prosty sposób zamień nazwę katalogu "**CMS**" na wybrany przez Ciebie CMS. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> W tym etapie w prosty sposób zamień nazwę katalogu "**CMS**" na wybrany przez Ciebie CMS. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, etc.).
 >
 
 Pobrany plik jest w formacie **skompresowanym** (zaznaczonym). Utwórz folder zatytułowany "**CMS**" na komputerze, a następnie **rozpakuj** zawartość pliku pobranego w folderze "**CMS***".

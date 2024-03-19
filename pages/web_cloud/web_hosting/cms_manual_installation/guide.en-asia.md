@@ -204,7 +204,7 @@ Follow the instructions provided by your CMS publisher until the source files ar
 
 >[!primary]
 >
-> To make things easier, replace the name of the **CMS** folder with the name of the CMS you have chosen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> To make things easier, replace the name of the **CMS** folder with the name of the CMS you have chosen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, etc.).
 >
 
 The downloaded file is in a compressed (zipped) format. Create a folder named **CMS** on your computer and then uncompress the contents of the downloaded file into the **CMS** folder.

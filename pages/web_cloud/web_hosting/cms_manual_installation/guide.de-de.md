@@ -207,7 +207,7 @@ Folgen Sie den Anweisungen auf der Webseite Ihres gewählten CMS, bis zum Herunt
 
 >[!primary]
 >
-> Zur vereinfachten Identifizierung können Sie in diesem Schritt den Ordnernamen "**CMS**" durch den Namen des zu installierenden CMS ersetzen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> Zur vereinfachten Identifizierung können Sie in diesem Schritt den Ordnernamen "**CMS**" durch den Namen des zu installierenden CMS ersetzen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**usw.).
 >
 
 Die heruntergeladenen Dateien befinden sich in einem komprimierten Archiv. Erstellen Sie einen Ordner mit dem Namen "**CMS**" auf Ihrem Computer und **entpacken** Sie den Inhalt der Archivdatei in diesen Ordner.

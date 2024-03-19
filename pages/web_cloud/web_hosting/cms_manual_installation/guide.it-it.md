@@ -208,7 +208,7 @@ Segui le istruzioni fornite dal tuo CMS fino a che i file sorgente non saranno c
 
 >[!primary]
 >
-> Per maggiore semplicità, sostituisci in questo step il nome della cartella "**CMS**" con il nome del CMS che hai scelto per maggiore semplicità. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**)
+> Per maggiore semplicità, sostituisci in questo step il nome della cartella "**CMS**" con il nome del CMS che hai scelto. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, ecc...)
 >
 
 Il file caricato è in formato **compresso** (zippato). Crea una cartella intitolata "**CMS**" sul tuo computer e **decomprimine** il contenuto del file scaricato all'interno della cartella "**CMS**".

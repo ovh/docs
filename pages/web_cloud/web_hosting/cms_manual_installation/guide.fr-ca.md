@@ -206,7 +206,7 @@ Suivez les instructions indiquées par l'éditeur de votre CMS jusqu'à ce que l
 
 >[!primary]
 >
-> Pour plus de facilité, remplacez, dans cette étape, le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi pour plus de facilité. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> Pour plus de facilité, remplacez, dans cette étape, le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, etc.).
 >
 
 Le fichier téléchargé est dans un format **compressé** (zippé). Créez un dossier intitulé « **CMS** » sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier « **CMS** ».
