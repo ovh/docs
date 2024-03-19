@@ -43,7 +43,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 ### Vorstellung der CMS
 
-Um Ihnen bei der Wahl Ihres CMS zu helfen, finden Sie hier eine kurze Beschreibung zu jedem der 4 CMS.
+Um Ihnen bei der Wahl Ihres CMS zu helfen, finden Sie hier eine kurze Beschreibung zu jedem der CMS.
 
 #### WordPress
 

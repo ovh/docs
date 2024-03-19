@@ -44,7 +44,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 ### Presentazione CMS
 
-Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per ciascuno dei 4 CMS citati precedentemente.
+Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per ciascuno dei CMS citati precedentemente.
 
 ##### WordPress
 

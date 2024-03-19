@@ -40,7 +40,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 ### CMS overview
 
-To help you choose your CMS, find below a short description for each of the 4 CMS mentioned above.
+To help you choose your CMS, find below a short description for each of the CMS mentioned above.
 
 #### WordPress
 

@@ -44,7 +44,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ### Presentación de los CMS
 
-Para ayudarle a elegir su CMS, consulte a continuación una breve descripción para cada uno de los 4 CMS anteriores.
+Para ayudarle a elegir su CMS, consulte a continuación una breve descripción para cada uno de los CMS anteriores.
 
 #### WordPress
 

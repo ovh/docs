@@ -40,7 +40,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 ### Présentation des CMS
 
-Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif pour chacun des 4 CMS évoqués précédemment.
+Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif pour chacun des CMS évoqués précédemment.
 
 #### WordPress
 

@@ -44,7 +44,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 
 ### Prezentacja systemów CMS
 
-Poniżej znajdziesz krótki opis każdego z 4 systemów CMS, o których mowa powyżej.
+Poniżej znajdziesz krótki opis każdego z systemów CMS, o których mowa powyżej.
 
 #### WordPress
 

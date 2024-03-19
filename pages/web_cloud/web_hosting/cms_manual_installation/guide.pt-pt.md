@@ -44,7 +44,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 
 ### Apresentação dos CMS
 
-Para o ajudar a escolher o seu CMS, descubra em baixo uma breve descrição para cada um dos 4 CMS mencionados anteriormente.
+Para o ajudar a escolher o seu CMS, descubra em baixo uma breve descrição para cada um dos CMS mencionados anteriormente.
 
 #### WordPress
 
