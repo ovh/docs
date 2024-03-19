@@ -176,6 +176,7 @@ A continuación se muestran los enlaces a las páginas de descarga de los CMS qu
 - [Joomla!](https://downloads.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
+- [Pico](https://picocms.org/download/){.external}
 
 > [!primary]
 >

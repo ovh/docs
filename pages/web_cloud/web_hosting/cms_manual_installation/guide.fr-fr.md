@@ -21,7 +21,6 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
-> - [Pico](https://picocms.org/){.external}
 >
 
 > [!success]

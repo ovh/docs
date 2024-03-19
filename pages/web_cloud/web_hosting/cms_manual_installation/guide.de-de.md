@@ -177,6 +177,7 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 - [Joomla!](https://downloads.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
+- [Pico](https://picocms.org/download/){.external}
 
 > [!primary]
 >

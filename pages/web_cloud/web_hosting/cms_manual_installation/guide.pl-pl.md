@@ -178,6 +178,7 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 - [Joomla!](https://downloads.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
+- [Pico](https://picocms.org/download/){.external}
 
 > [!primary]
 >
