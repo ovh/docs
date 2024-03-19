@@ -264,9 +264,9 @@ Sie können auch jede RDP-kompatible Anwendung eines Drittanbieters verwenden. D
 Wenn bei diesem Verfahren Probleme auftreten, überprüfen Sie, ob Remoteverbindungen (RDP) auf Ihrem Gerät zugelassen sind, indem Sie die Systemeinstellungen, Firewallregeln und mögliche Netzwerkeinschränkungen überprüfen.
 >
 
-#### Aktivieren der Windows-Startprotokolle (optional)
+#### Aktivieren der Windows Startprotokolle (optional)
 
-Windows-Startprotokolle können bei der Diagnose von Serverstörungen hilfreich sein.
+Windows Boot Logs können bei der Diagnose von Serverstörungen hilfreich sein.
 
 Um sie zu aktivieren, folgen Sie den in den Tabs aufgeführten Schritten:
 

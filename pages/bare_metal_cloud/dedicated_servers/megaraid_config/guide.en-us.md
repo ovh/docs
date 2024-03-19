@@ -29,7 +29,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} menu and then select your server from `Dedicated Servers`{.action} in the left-hand sidebar. 
 
-In the **General Information** tab, look for `Last operating system (OS) installed by OVHcloud` and click on `...`{.action}. Then click the `Install`{.action} button to install a new operating system with your custom RAID 0 configuration.
+From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 Now select **Install from an OVHcloud template** and then click `Next`{.action}.
 
@@ -58,8 +58,6 @@ After your server has been installed, check the partition sizes by logging on to
 ```sh
 df -h
 ```
-
-```console```
 
 ### Using rescue mode
 

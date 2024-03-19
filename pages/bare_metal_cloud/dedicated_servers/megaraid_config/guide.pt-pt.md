@@ -33,7 +33,7 @@ O nível de RAID predefinido dos servidores OVHcloud é o RAID 1. que duplica o 
 
 Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e, a seguir, `Servidores dedicados`{.action}. 
 
-Procure o "Último Sistema Operativo (OS) instalado pela OVHcloud" na zona `Informações gerais`{.action} e clique em `...`{.action} e depois em `Instalar`{.action} um novo sistema operativo com a sua configuração RAID 0 personalizada.
+No separador `Informações gerais`{.action}, clique em `...`{.action} em frente do sistema operativo e, a seguir, em `Instalar`{.action}.
 
 Selecione **Instalar a partir de um template OVHcloud** e clique em `Seguinte`{.action}.
 
@@ -62,8 +62,6 @@ Depois de configurar o servidor, verifique o tamanho das partições ligando-se 
 ```sh
 df -h
 ```
-
-```console```
 
 ### Utilizar o modo rescue
 
