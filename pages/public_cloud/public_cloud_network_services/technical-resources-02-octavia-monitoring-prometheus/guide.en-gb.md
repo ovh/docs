@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Load Balancer monitoring with Prometheus
 excerpt: "Discover the various options available to monitor your Load Balancer"
-updated: 2023-12-22
+updated: 2024-03-19
 ---
 
 ## Objective
@@ -10,11 +10,11 @@ The Public Cloud Load Balancer provides 2 ways to monitor your Load Balancers. Y
 
 This guide will discuss those options to monitor your Octavia Load Balancer.
 
+## Requirements
+
+- A Load Balancer created. If this is not the case, please check this [guide](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
+
 ## Instructions
-
-### Prerequisites
-
-A Load balancer has been created. If this is not the case, please check this [guide](../getting-started-01-create-lb-service/guide.en-gb.md).
 
 ### Monitoring using CLI
 
@@ -54,7 +54,7 @@ $ openstack loadbalancer listener stats show <listener id>
 
 ### Monitoring with Prometheus
 
-To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener using the `PROMETHEUS` protocol. This will enable the  `/metrics` endpoint which by default listens on all the interfaces from your load balancer. **This means that if your load balancer is using a Floating IP, by default the `/metrics` endpoint will be opened to the internet**. To avoid that, we advise to set the `allowed_cidrs` option to protect your metrics, for example with the CIDR of the subnet where the load balancer is spawned.
+To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener using the `PROMETHEUS` protocol. This will enable the  `/metrics` endpoint which by default listens on all the interfaces from your load balancer. **This means that if your load balancer is using a Floating IP, by default the `/metrics` endpoint will be opened to the internet**. To avoid that, we advise setting the `allowed_cidrs` option to protect your metrics, for example with the CIDR of the subnet where the load balancer is spawned.
 
 This listener type provides the same features as the "regular" listeners but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
 
@@ -65,41 +65,44 @@ This listener type provides the same features as the "regular" listeners but doe
 
 #### Create a Prometheus listener via OVHcloud Control Panel
 
-Under `Network` category, select `Load Balancer`. 
-A page listing the load balancer will be displayed. 
-Select one load balancer by clicking on its `name`.
-The load balancer details page will be displayed. Click on the `Listeners` tab then click on `Add a listener`
+Under the `Network`{.action} category, select `Load Balancer`{.action}. A page listing the load balancers will be displayed.
+
+Select one load balancer by clicking its `name`{.action}.
+
+The load balancer details page will be displayed. Click the `Listeners`{.action} tab then click on `Add a listener`{.action}.
 
 In the form:
-* fill in the `Name`
-* select `prometheus` in the Protocol
-* choose a port (different from the already existing listener ports of your Load Balancer)
+
+- Fill in the `Name`.
+- Select `prometheus` as the Protocol.
+- Choose a port (different from the already existing listener ports of your Load Balancer).
 
 The default pool is greyed out because the `prometheus` listener does not need a pool unlike the other types of listeners.
 
-![Create listener in OVHCloud Control Panel](img/create_listener_manager.png)
+![Create listener in OVHcloud Control Panel](images/create_listener_manager.png){.thumbnail}
 
-Click on `Add` to trigger the listener creation. 
-The new listener is added in the listener list.
+Click `Add`{.action} to trigger the listener creation. The new listener is added to the listeners list.
 
-![Listener list in OVHCloud Control Panel](img/listener_list.png)
+![Listener list in OVHcloud Control Panel](images/listener_list.png){.thumbnail}
 
-#### Create a Prometheus listener via Openstack GUI (Horizon)
+#### Create a Prometheus listener via OpenStack GUI (Horizon)
 
-Log in to Horizon by following this [guide](../../compute/introducing_horizon/)
-Click on `Network` > `Load Balancers`
-The Load Balancer list is displayed. 
-Click on the load balancer name. The load balancer details page is displayed.
+Log in to Horizon using this [guide](/pages/public_cloud/compute/introducing_horizon).
 
-![Load Balancer details in Horizon](img/horizon_lb_details.png)
+Click `Network`{.action} then `Load Balancers`{.action}. The Load Balancer list is displayed. 
 
-Click on the `Listeners` tab then `Create Listener`
-In the listener creation page, fill in the `Name` and the `Protocol` to `PROMETHEUS`.
+Click on the load balancer name. The load balancer details page is then displayed.
+
+![Load Balancer details in Horizon](images/horizon_lb_details.png){.thumbnail}
+
+Click the `Listeners`{.action} tab then `Create Listener`{.action}.
+
+n the listener creation page, fill in the `Name` and switch the `Protocol` to `PROMETHEUS`.
 The port will be set to a default value, change it if needed.
-![Listener creation in listener](img/horizon_listener_creation.png)
 
+![Listener creation in listener](images/horizon_listener_creation.png){.thumbnail}
 
-#### Create a Prometheus listener via Openstack CLI
+#### Create a Prometheus listener via OpenStack CLI
 
 To create a Prometheus endpoint on port 9100 for Load Balancer lb1, run the following command:
 
@@ -146,8 +149,7 @@ Note that you should add the `--allowed-cidr` option in order to filter the list
 
 #### Create a Prometheus listener via Terraform
 
-The resource [openstack_lb_listener_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_listener_v2) from the Openstack provider enables to configure a Prometheus listener. The following snippet is extracted from a full example available on [Github](https://github.com/yomovh/tf-at-ovhcloud/tree/main/simple_http_lb_with_prom_grafana), adapt it to your need. 
-
+The resource [openstack_lb_listener_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_listener_v2) from the OpenStack provider enables to configure a Prometheus listener. The following snippet is extracted from a full example available on [Github](https://github.com/yomovh/tf-at-ovhcloud/tree/main/simple_http_lb_with_prom_grafana), adapt it to your needs. 
 
 ```hcl
 resource "openstack_lb_listener_v2" "prom_listener" {
@@ -157,6 +159,8 @@ resource "openstack_lb_listener_v2" "prom_listener" {
   #restrict the access of the listener to the private network subnet
   allowed_cidrs = [openstack_networking_subnet_v2.tf_lb_subnet.cidr]
 }
+```
+
 #### Configure Prometheus to collect your metrics
 
 Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to collect metrics from the Load Balancer by updating the `prometheus.yml` file.
@@ -170,13 +174,14 @@ Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to coll
 
 For more information on setting up Prometheus, see the [Prometheus project website](https://prometheus.io/).
 
-You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is available [here](https://grafana.com/grafana/dashboards/15828-octavia-amphora-load-balancer/)
+You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is available [here](https://grafana.com/grafana/dashboards/15828-octavia-amphora-load-balancer/).
 
 The metrics have the following naming format:
-* `octavia_loadbalancer_xxx` or `octavia_memory_pool_xxx` metrics are global to the load balancer
-* `octavia_listener_xxx` metrics are instantiated per listener using the label {listener=ID}
-* `octavia_pool_xxx` metrics are instantiated per pool using the label {pool=ID}
-* `octavia_member_xxx`  metrics are instantiated per member using the label {member=ID}
+
+- `octavia_loadbalancer_xxx` or `octavia_memory_pool_xxx` metrics are global to the load balancer
+- `octavia_listener_xxx` metrics are instantiated per listener using the label {listener=ID}
+- `octavia_pool_xxx` metrics are instantiated per pool using the label {pool=ID}
+- `octavia_member_xxx`  metrics are instantiated per member using the label {member=ID}
 
 | Metric| Description |
 |-------------------------------|--------------------------------------------|
