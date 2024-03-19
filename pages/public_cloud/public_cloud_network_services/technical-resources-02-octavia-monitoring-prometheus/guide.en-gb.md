@@ -12,7 +12,8 @@ This guide will discuss those options to monitor your Octavia Load Balancer.
 
 ## Instructions
 
-### Pre requisites
+### Prerequisites
+
 A Load balancer has been created. If this is not the case, please check this [guide](../getting-started-01-create-lb-service/guide.en-gb.md).
 
 ### Monitoring using CLI
@@ -53,7 +54,7 @@ $ openstack loadbalancer listener stats show <listener id>
 
 ### Monitoring with Prometheus
 
-To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener with a `PROMETHEUS` special protocol. This will enable the  `/metrics` endpoint which by default listens on all the interfaces from your load balancer. **This means that if your load balancer is using a Floating IP, by default the `/metrics` endpoints will be opened to the internet**. To avoid that, we advise to set the `allowed_cidrs`` option to protect your metrics, for example with the CIDR of the subnet where the load balancer is spawned.
+To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener using the `PROMETHEUS` protocol. This will enable the  `/metrics` endpoint which by default listens on all the interfaces from your load balancer. **This means that if your load balancer is using a Floating IP, by default the `/metrics` endpoint will be opened to the internet**. To avoid that, we advise to set the `allowed_cidrs` option to protect your metrics, for example with the CIDR of the subnet where the load balancer is spawned.
 
 This listener type provides the same features as the "regular" listeners but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
 
@@ -63,6 +64,7 @@ This listener type provides the same features as the "regular" listeners but doe
 >
 
 #### Create a Prometheus listener via OVHcloud Control Panel
+
 Under `Network` category, select `Load Balancer`. 
 A page listing the load balancer will be displayed. 
 Select one load balancer by clicking on its `name`.
@@ -72,7 +74,8 @@ In the form:
 * fill in the `Name`
 * select `prometheus` in the Protocol
 * choose a port (different from the already existing listener ports of your Load Balancer)
-The default pool is greyed out because the `prometheus` listener does not need a pool contrary to the other types of listeners.
+
+The default pool is greyed out because the `prometheus` listener does not need a pool unlike the other types of listeners.
 
 ![Create listener in OVHCloud Control Panel](img/create_listener_manager.png)
 
@@ -81,18 +84,18 @@ The new listener is added in the listener list.
 
 ![Listener list in OVHCloud Control Panel](img/listener_list.png)
 
-
-
 #### Create a Prometheus listener via Openstack GUI (Horizon)
 
 Log in to Horizon by following this [guide](../../compute/introducing_horizon/)
 Click on `Network` > `Load Balancers`
 The Load Balancer list is displayed. 
 Click on the load balancer name. The load balancer details page is displayed.
+
 ![Load Balancer details in Horizon](img/horizon_lb_details.png)
 
 Click on the `Listeners` tab then `Create Listener`
-In the listener creation page, fill in the `Name` and the `Protocol` to `PROMETHEUS`. The port will be set to a default value:  change it if needed.
+In the listener creation page, fill in the `Name` and the `Protocol` to `PROMETHEUS`.
+The port will be set to a default value, change it if needed.
 ![Listener creation in listener](img/horizon_listener_creation.png)
 
 
@@ -141,8 +144,9 @@ $ openstack loadbalancer listener create --name stats-listener --protocol PROMET
 
 Note that you should add the `--allowed-cidr` option in order to filter the listener to a specific network.
 
-#### Create a Prometheus listener via terraform
-The ressource [openstack_lb_listener_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_listener_v2) from the Openstack provider enables to configure a prometheus listener. The following snippet is extracted from a full example available on [github](https://github.com/yomovh/tf-at-ovhcloud/tree/main/simple_http_lb_with_prom_grafana), adapt it to your need. 
+#### Create a Prometheus listener via Terraform
+
+The resource [openstack_lb_listener_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_listener_v2) from the Openstack provider enables to configure a Prometheus listener. The following snippet is extracted from a full example available on [Github](https://github.com/yomovh/tf-at-ovhcloud/tree/main/simple_http_lb_with_prom_grafana), adapt it to your need. 
 
 
 ```hcl
@@ -153,8 +157,8 @@ resource "openstack_lb_listener_v2" "prom_listener" {
   #restrict the access of the listener to the private network subnet
   allowed_cidrs = [openstack_networking_subnet_v2.tf_lb_subnet.cidr]
 }
-```
 #### Configure Prometheus to collect your metrics
+
 Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to collect metrics from the Load Balancer by updating the `prometheus.yml` file.
 
 ```yaml
@@ -168,7 +172,7 @@ For more information on setting up Prometheus, see the [Prometheus project websi
 
 You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is available [here](https://grafana.com/grafana/dashboards/15828-octavia-amphora-load-balancer/)
 
-The metrics have the following naming format :
+The metrics have the following naming format:
 * `octavia_loadbalancer_xxx` or `octavia_memory_pool_xxx` metrics are global to the load balancer
 * `octavia_listener_xxx` metrics are instantiated per listener using the label {listener=ID}
 * `octavia_pool_xxx` metrics are instantiated per pool using the label {pool=ID}
@@ -319,7 +323,6 @@ The metrics have the following naming format :
 |octavia_member_http_responses_total|Total number of HTTP responses.|
 |octavia_member_idle_connections_current|Current number of idle connections available for reuse|
 |octavia_member_idle_connections_limit|Limit on the number of available idle connections|
-
 
 ## Go further
 
