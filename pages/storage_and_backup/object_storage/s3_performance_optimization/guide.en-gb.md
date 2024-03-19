@@ -218,7 +218,7 @@ The main strategy is to keep the cardinality of the object keys to the left i.e 
 
 Let's consider a use case where you would want to store logs in OVHcloud Object Storage.
 
-**Scenario 1: bad practice by using the date as prefix :**
+#### Scenario 1: bad practice by using the date as prefix :
 
 List of objects:
 
@@ -240,7 +240,7 @@ This not optimal because since dates are incremental by nature, all new uploads 
 
 ![Schema 3](images/sharding3.png)
 
-Scenario 2: good practice by keeping the cardinality to the right
+#### Scenario 2: good practice by keeping the cardinality to the right
 
 List of objects:
 
