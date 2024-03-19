@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2020-02-25
+updated: 2024-03-19
 ---
 
 ## Objectif
