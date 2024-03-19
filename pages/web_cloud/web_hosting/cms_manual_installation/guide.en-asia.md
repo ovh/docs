@@ -178,7 +178,7 @@ Below are links to the CMS download pages mentioned in this tutorial:
 
 > [!primary]
 >
-> Retrieve the PHP version and the MySQL or MariaDB version required to run your CMS.
+> Retrieve the PHP version and, if your CMS uses a database, identify the MySQL or MariaDB version required to run your CMS.
 >
 > To do this, go to the link to the official CMS page that you want to install:
 >

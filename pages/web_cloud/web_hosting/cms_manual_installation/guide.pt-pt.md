@@ -182,7 +182,7 @@ Encontre aqui os links para as páginas de download dos CMS evocadas no presente
 
 > [!primary]
 >
-> Obtenha a versão PHP e a versão MySQL ou MariaDB necessárias para fazer funcionar o seu CMS.
+> Obtenha a versão PHP e, se o seu CMS utiliza uma base de dados, identifique a versão MySQL ou MariaDB necessárias para que o seu CMS funcione.
 >
 > Para isso, consulte o link para a página oficial do CMS que deseja instalar:
 >

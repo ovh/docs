@@ -163,7 +163,7 @@ Po utworzeniu bazy danych pobierz parametry połączenia (serwer, nazwa bazy dan
 > Połącz się następnie z bazą danych, aby określić "prefiksy" stołów już obecnych w środku. W ten sposób nie możesz wybrać prefiksu tabeli używanego już przez inne Twoje strony.
 >
 > - Aby zalogować się do bazy danych powiązanej z hostingiem, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin).
-> - Aby zalogować się do bazy danych na stronie WWW Cloud Databases, zapoznaj się z tym przewodnikiem (/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+> - Aby zalogować się do bazy danych na stronie WWW Cloud Databases, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
 ### Etap 2 - uruchomienie ręcznej instalacji
@@ -182,7 +182,7 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 
 > [!primary]
 >
-> Pobierz wersję PHP oraz wersję MySQL lub MariaDB wymagane do uruchomienia CMS.
+> Pobierz wersję PHP i zidentyfikuj wersję MySQL lub MariaDB niezbędną do działania Twojego CMS, jeśli Twój CMS korzysta z bazy danych.
 >
 > W tym celu zapoznaj się z linkiem do oficjalnej strony systemu CMS, który chcesz zainstalować:
 >

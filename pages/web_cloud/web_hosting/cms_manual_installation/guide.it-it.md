@@ -182,7 +182,7 @@ Di seguito trovi i link alle pagine di download dei CMS citati in questo tutoria
 
 > [!primary]
 >
-> Recupera la versione PHP e la versione MySQL o MariaDB necessarie per far funzionare il tuo CMS.
+> Recupera la versione PHP e, se il tuo CMS utilizza un database, identifica la versione MySQL o MariaDB necessaria per far funzionare il tuo CMS.
 >
 > Per farlo, consulta il link alla pagina ufficiale del CMS che vuoi installare:
 >

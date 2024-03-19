@@ -181,7 +181,7 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 
 > [!primary]
 >
-> Identifizieren Sie die PHP-Version sowie die Version von MySQL oder MariaDB, die für den Betrieb Ihres CMS erforderlich sind.
+> Rufen Sie die PHP-Version ab und identifizieren Sie, falls Ihr CMS eine Datenbank verwendet, die für den Betrieb Ihres CMS erforderliche MySQL- oder MariaDB-Version.
 >
 > Sie erhalten diese Information auf der offiziellen Seite des CMS, das Sie installieren möchten:
 >
