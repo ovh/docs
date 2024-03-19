@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-V - End of Life
 excerpt: Analyse your use of the NSX-V features and choose between the different evolution scenarios, from disabling the NSX-V component to the migration to NSX
-updated: 2024-12-03
+updated: 2024-03-19
 ---
 
 ## Objective
@@ -17,11 +17,17 @@ This guide helps you analyse your use of NSX-V features and therefore offers you
 To identify your usage of the NSX-V feature in your Hosted Private Cloud environment, you have to ask yourself the following questions:
 
 - Am I using VXLAN?
+
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
+
 - Am I using a Distributed Firewall rules?
+
 ![NSX DFW](images/DFW.gif){.thumbnail}
+
 - Am I using a Distributed Logical Router or an Edge Services Gateway?
+
 ![NSX EDGES](images/dlr-edge.gif){.thumbnail}
+
 - Am I using an SSL VPN?
 From latest version of NSX-v the features was already disabled. 
 
@@ -29,22 +35,27 @@ From latest version of NSX-v the features was already disabled.
 
 We will disable NSX-V from 31 March 2024 if you are not using any NSX-V features.
 
-Regardless of your Hosted Private Cloud range, if you want to disable NSX-v, you won't have to migrate to a new Datacentre. You will be able to keep your current resources. For the maintenance task to run properly and deactivate NSX-V, you need to make sure to clean NSX-V environnement.
+Regardless of your Hosted Private Cloud range, if you want to disable NSX-V, you won't have to migrate to a new Datacentre. You will be able to keep your current resources. For the maintenance task to run properly and deactivate NSX-V, you need to make sure to clean the NSX-V environnement.
 
-Make sure to remove all NSX-V EDGES ( DLR or Gateway ).
-You should remove all the NSX-v Edges, Distributed Logical Gateway and Edges Services Gateway.
+Make sure to remove all NSX-V EDGES (DLR or Gateway).
+
+You should remove all the NSX-V Edges, Distributed Logical Gateway and Edges Services Gateway.
+
 ![NSX Edges](images/remove-Edges.gif){.thumbnail}
 
-Make sure to remove existing Distributed Rules ( you should have 3 rules created by default with NSX-V or no rules at all )
+Make sure to remove existing Distributed Rules (you should have 3 rules created by default with NSX-V or no rules at all).
+
 ![NSX DFW](images/DFW.gif){.thumbnail}
 
-Make sure to move every VMs from vxlan to portgroup vRACK. 
+Make sure to move every VMs from vxlan to portgroup vRACK.
+
 You can follow the documentation here to migrate VMs.
+
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
 
-At the end, you can use the API call to check that you have clean NSX-V:
+At the end, you can use the API call to check that you have cleaned NSX-V:
 
-[!api]
+> [!api]
 >
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateNsxvInventory~POST
 >
@@ -79,7 +90,7 @@ If you wish to migrate to VLAN, to help you to configure your network, you can u
 
 > [!primary]
 >
->  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+> Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 Once you have confirmed this API call, you will be sent an email. This will contain a suggested mapping between VXLAN and VLAN. 
 This is just a proposal containing a list of your VMs and networks used. You are responsible for ensuring that these VLANs are not used by other OVHcloud services.
