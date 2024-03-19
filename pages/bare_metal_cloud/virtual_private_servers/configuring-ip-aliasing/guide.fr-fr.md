@@ -48,7 +48,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 
 ### Debian 10/11
 
-#### Etape 1 : désactiver la configuration automatique du réseau
+#### Étape 1 : désactiver la configuration automatique du réseau
 
 Ouvrez le chemin d'accès au fichier suivant avec un éditeur de texte, dans notre exemple nous utilisons `nano`. :
 
@@ -64,7 +64,7 @@ network: {config: disabled}
 
 La création de ce fichier de configuration empêche l'exécution automatique des modifications apportées à la configuration de votre réseau.
 
-#### Etape 2 : créer une sauvegarde
+#### Étape 2 : créer une sauvegarde
 
 Par défaut, le fichier de configuration est situé dans le chemin `etc\Nnetwork\interfaces.d`.
 
@@ -81,7 +81,7 @@ sudo rm -f /etc/network/interfaces.d/50-cloud-init
 sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
 ```
 
-#### Etape 3 : éditer le fichier de configuration
+#### Étape 3 : éditer le fichier de configuration
 
 Vous pouvez vérifier le nom de votre interface réseau à l'aide de la commande suivante :
 
@@ -125,7 +125,7 @@ address 203.0.113.0
 netmask 255.255.255.255
 ```
 
-#### Etape 4 : redémarrer l'interface
+#### Étape 4 : redémarrer l'interface
 
 Appliquez les modifications à l'aide de la commande suivante :
 
@@ -139,7 +139,7 @@ Le fichier de configuration de vos adresses Additional IP se trouve dans le fich
 
 La meilleure pratique consiste à créer un fichier de configuration distinct pour définir les adresses Additional IP. De cette manière, vous pouvez facilement revenir sur les modifications en cas d'erreur.
 
-#### Etape 1 : Créer le fichier de configuration du réseau
+#### Étape 1 : Créer le fichier de configuration du réseau
 
 Dans notre exemple, notre fichier s'appelle `51-cloud-init.yaml` :
 
@@ -147,7 +147,7 @@ Dans notre exemple, notre fichier s'appelle `51-cloud-init.yaml` :
 sudo touch /etc/netplan/51-cloud-init.yaml
 ```
 
-#### Etape 2 : modifier le fichier de configuration
+#### Étape 2 : modifier le fichier de configuration
 
 Vous pouvez vérifier le nom de votre interface réseau à l'aide de la commande suivante :
 
@@ -164,7 +164,7 @@ sudo nano /etc/netplan/51-cloud-init.yaml
 Editez le fichier avec le contenu ci-dessous, en remplaçant `INTERFACE_NAME` et `ADDITIONAL_IP` par vos propres valeurs :
 
 ```yaml
-etwork:
+network:
    version: 2
    renderer: networkd
    ethernets:
@@ -194,7 +194,7 @@ network:
 > Il est important de respecter l'alignement de chaque élément de ce fichier tel que représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement.
 >
 
-**Exemple de configuration**
+**Exemple**
 
 ```yaml
 network:
@@ -209,7 +209,7 @@ network:
 
 Enregistrez et fermez le fichier.
 
-#### Etape 3 : appliquer la nouvelle configuration réseau
+#### Étape 3 : appliquer la nouvelle configuration réseau
 
 Vous pouvez tester votre configuration à l'aide de la commande suivante :
 
@@ -229,7 +229,7 @@ Répétez cette procédure pour chaque adresse Additional IP.
 
 Le fichier de configuration principal est situé dans le dossier `/etc/sysconfig/network-scripts/`. Dans cet exemple, il est appelé `ifcfg-eth0`. Avant de faire des changements, vérifiez le nom réel du fichier dans ce dossier.
 
-Pour chaque adresse Additional IP à configurer, nous créons un fichier de configuration séparé avec les paramètres suivants : `ifcfg-NETWORK_INTERFACE:ID`. Où `NETWORK_INTERFACE` est l'interface physique et `ID` est l'interface réseau virtuelle ou l'alias ethernet commençant par une valeur de 0. Par exemple, pour notre interface nommée `eth0` le premier alias est `eth0:0`, le second alias est `eth0:1`, etc...
+Pour chaque adresse Additional IP à configurer, nous créons un fichier de configuration séparé avec les paramètres suivants : `ifcfg-NETWORK_INTERFACE:ID`. Où `NETWORK_INTERFACE` représente l'interface physique et `ID` représente l'interface réseau virtuelle ou l'alias ethernet commençant par une valeur de 0. Par exemple, pour notre interface nommée `eth0` le premier alias est `eth0:0`, le second alias est `eth0:1`, etc...
 
 #### Étape 1 : déterminer l'interface
 
@@ -281,11 +281,11 @@ sudo systemctl restart network
 sudo systemctl restart NetworkManager
 ```
 
-### Fedora 37 et suivantes
+### Fedora 37 et versions ultérieures
 
 Fedora utilise maintenant des fichiers clés. NetworkManager stockait auparavant les profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`.
 
-#### Etape 1 : créer une sauvegarde
+#### Étape 1 : créer une sauvegarde
 
 Dans notre exemple, notre fichier s'appelle `cloud-init-eno1.nmconnection`, donc nous faisons une copie du fichier `cloud-init-eno1.nmconnection` en utilisant la commande suivante :
 
@@ -303,7 +303,7 @@ En cas d'erreur, vous pourrez revenir sur les modifications en utilisant les com
 sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
-Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez votre IP supplémentaire au fichier comme suit, en remplaçant `ADDITIONAL_IP/32` par vos propres valeurs :
+Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez votre Additional IP au fichier comme suit, en remplaçant `ADDITIONAL_IP/32` par vos propres valeurs :
 
 
 ```console
@@ -342,7 +342,7 @@ sudo systemctl restart NetworkManager
 
 ### cPanel
 
-#### Etape 1 : accédez à la section de gestion des IP du WHM
+#### Étape 1 : accédez à la section de gestion des IP du WHM
 
 Dans l'espace client WHM, cliquez sur `IP Functions`{.action} et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
 
@@ -361,7 +361,7 @@ Sélectionnez `255.255.255.255` comme masque de sous-réseau puis cliquez sur `S
 > Attention, si vous avez plusieurs IP à configurer sur un même bloc et que vous les ajoutez toutes en même temps, le système WHM vous forcera à utiliser le masque de sous-réseau `255.255.255.0`. Il n'est pas recommandé d'utiliser cette configuration, il faut ajouter chaque IP individuellement pour pouvoir utiliser le masque de sous-réseau approprié `255.255.255.255`.
 >
 
-#### Étape 3 : Vérifier la configuration IP actuelle
+#### Étape 3 : vérifier la configuration IP actuelle
 
 De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
 
@@ -369,7 +369,7 @@ De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete C
 
 ### Plesk
 
-#### Etape 1 : accéder à la gestion d'IP de Plesk
+#### Étape 1 : accéder à la gestion d'IP de Plesk
 
 Dans le panneau de configuration Plesk, choisissez `Tools & Settings`{.action} dans la barre latérale gauche.
 
@@ -377,7 +377,7 @@ Dans le panneau de configuration Plesk, choisissez `Tools & Settings`{.action} d
 
 Cliquez sur `IP Addresses`{.action} sous **Tools & Settings**.
 
-#### Etape 2 : ajouter les informations IP supplémentaires
+#### Étape 2 : ajouter les informations des Additional IP
 
 Dans cette section, cliquez sur le bouton `Add IP Address`{.action}.
 
@@ -387,7 +387,7 @@ Entrez votre adresse Additional IP sous la forme `xxx.xxx.xxx.xxx/32` dans le ch
 
 ![ajouter des informations IP](images/pleskip3-3.png){.thumbnail}
 
-#### Etape 3 : vérifier la configuration IP actuelle
+#### Étape 3 : vérifier la configuration IP actuelle
 
 Dans la section « IP Addresses », vérifiez que l'adresse Additional IP a été correctement ajoutée.
 
@@ -395,7 +395,7 @@ Dans la section « IP Addresses », vérifiez que l'adresse Additional IP a ét�
 
 ### Windows Server
 
-#### Etape 1 : vérifier la configuration réseau
+#### Étape 1 : vérifier la configuration réseau
 
 Faites un clic droit sur le bouton `Menu Démarrer`{.action} et ouvrez `Exécuter`{.action}.
 
@@ -416,7 +416,7 @@ Ethernet adapter Ethernet:
    Default Gateway . . . . . . . . . : 192.0.2.1
 ```
 
-#### Etape 2 : modifier les propriétés IPv4
+#### Étape 2 : modifier les propriétés IPv4
 
 1. Allez dans le menu `Démarrer`{.action}, puis `Panneau de gestion`{.action}, `Réseau et Internet`{.action}, `Centre de réseau et Partage`{.action} et `Modifier les paramètres de la carte`{.action} dans la barre de gauche ;
 2. Effectuez un clic droit sur `Connexion au réseau local`{.action} ;
@@ -431,7 +431,7 @@ Ethernet adapter Ethernet:
 > Attention, le serveur ne sera plus accessible si vous entrez des informations incorrectes. Vous serez alors obligé d’effectuer les corrections via le KVM.
 > 
 
-#### Etape 3 : ajouter l'adresse Additional IP dans les Paramètres TCP/IP avancés
+#### Étape 3 : ajouter l'adresse Additional IP dans les Paramètres TCP/IP avancés
 
 Dans la nouvelle fenêtre, cliquez sur `Ajouter...`{.action} sous « Adresses IP ». Entrez votre adresse Additional IP et le masque de sous-réseau (255.255.255.255).
 
@@ -443,7 +443,7 @@ Confirmez en cliquant sur `Ajouter`{.action}.
 
 Vous perdrez la connexion à votre serveur pendant quelques secondes.
 
-#### Etape 4 : vérifier la nouvelle configuration réseau
+#### Étape 4 : vérifier la nouvelle configuration réseau
 
 Ouvrez l'invite de commandes (cmd) et entrez `ipconfig`. La configuration doit maintenant inclure la nouvelle adresse Additional IP.
 
@@ -459,7 +459,6 @@ Ethernet adapter Ethernet:
    Subnet Mask . . . . . . . . . . . : 255.255.255.255
    Default Gateway . . . . . . . . . : 192.0.2.1
 ```
-
 
 ### Diagnostic
 
