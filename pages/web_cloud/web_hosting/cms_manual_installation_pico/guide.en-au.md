@@ -51,7 +51,7 @@ After installation, you will find several folders and files in the main Pico dir
 - `assets/` : contains static resources such as images, CSS, JavaScript scripts, etc.
 - `plugins/` : contains the plugins you want to use
 
-### Basic configuration
+#### Basic configuration
 
 **1. Configure your website**: open the file `config/config.yml` with a text editor. Here, you can configure basic settings for your website, such as title, description, URL, or themes.
 
