@@ -49,7 +49,7 @@ Les adresses e-mail de l'offre Exchange peuvent être configurées sur différen
 
 Sur l'écran d'accueil de votre appareil, rendez-vous dans l'application `Gmail`{.action}.
 
-![emailpro](images/exchange-android-00.png){.thumbnail .w-400}
+![exchange android](images/exchange-android-00.png){.thumbnail .w-400}
 
 L’ajout d’un compte se fera différemment **si aucun compte n'est paramétré** ou **si un compte a déjà été paramétré**. Sélectionnez l'onglet correspondant à l'une des 2 situations évoquées :
 
@@ -57,46 +57,38 @@ L’ajout d’un compte se fera différemment **si aucun compte n'est paramétr�
 > **Première configuration**
 >>
 >> Sélectionnez `Ajouter une adresse e-mail`{.action}<br><br>
->> ![emailpro](images/android-first.png){.thumbnail}
+>> ![exchange android](images/android-first.png){.thumbnail .h-600}
 >>
 > **Configuration existante**
 >>
 >> 1. Dirigez-vous vers le menu situé dans la partie supérieure gauche de l'écran<br><br>
 >> 2. Sélectionnez `Paramètres`{.action}<br><br>
 >> 3. Sélectionnez `Ajouter un compte`{.action}<br><br>
->> ![emailpro](images/android-existing.png){.thumbnail}
+>> ![exchange android](images/android-existing.png){.thumbnail}
 >>
 
 Suivez les étapes successives de configuration en parcourant les onglets ci-dessous :
 
 > [!tabs]
 > **Etape 1**
->> Dans le menu des types de comptes e-mail, sélectionnez `Autre`{.action}.<br><br>
->> ![emailpro](images/exchange-android-01.png){.thumbnail}
+>> Dans le menu des types de comptes e-mail, sélectionnez `Exchange et Office`{.action}.<br><br>
+>> ![exchange android](images/exchange-android-01.png){.thumbnail .h-600}
 >>
 > **Etape 2**
->> Saisissez votre adresse e-mail.<br><br>
->> ![emailpro](images/exchange-android-02.png){.thumbnail}
+>> Saisissez votre adresse e-mail puis appuyez sur `Suivant`{.action}.<br><br>
+>> ![exchange android](images/exchange-android-02.png){.thumbnail .h-600}
 >>
 > **Etape 4**
->> Saisissez le mot de passe de votre adresse e-mail.<br><br>
->> ![emailpro](images/exchange-android-04.png){.thumbnail}
+>> Saisissez le mot de passe de votre adresse e-mail puis appuyez sur `Suivant`{.action}.<br><br>
+>> ![exchange android](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Etape 5**
->> Complétez les « **Paramètres de serveur entrant** »<br><br>- **Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Serveur** : saisissez **ex**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur). <br><br>
->> ![emailpro](images/exchange-android-05.png){.thumbnail}
+>> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Serveur** : le nom de domaineattaché à votre compte e-mail<br>- **Port** : « 443 »<br>- **Type de sécurité** : « SSL/TLS »<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br
+>> ![exchange android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Etape 6**
->> Complétez les « **Paramètres de serveur sortant** »<br><br>- **Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Serveur SMTP** : saisissez **ex**?**.mail.ovh.net** (remplacez bien «**?**» par le numéro de votre serveur). <br><br>
->> ![emailpro](images/exchange-android-06.png){.thumbnail}
->>
-> **Etape 7**
->> Choisissez la fréquence de synchronisation de vos e-mails selon vos préférences.<br><br>
->> ![emailpro](images/exchange-android-07.png){.thumbnail}
->>
-> **Etape 8**
->> Déterminez le nom d'affichage de votre adresse e-mail dans l'application Gmail puis appuyez sur `Suivante`{.action}.<br><br>
->> ![emailpro](images/exchange-android-08.png){.thumbnail}
+>> Le message « Vous pouvez dés à présent utiliser votre compte » devrait apparaitre, appuyez sur `OK`{.action} pour terminer la configuration.<br><br>
+>> ![exchange android](images/exchange-android-05.png){.thumbnail .h-600}
 >>
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages depuis votre application Gmail.
@@ -105,71 +97,10 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 >
 > OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse <https://www.ovhcloud.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
-
 ## Aller plus loin
 
 [MXplan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
-[Exchange - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
+[E-mail Pro - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
-
-
-
-
-
-
-
-
-
-
-## En pratique
-
-### Étape 1 : ajouter le compte
-
-Sur l'écran d'accueil de votre appareil, rendez-vous sur l'application `Gmail`{.action}. L’ajout d’un compte peut s’initier de deux manières différentes :
-
-- **si aucun compte n'est paramétré** : passez l'étape de bienvenue , puis appuyez sur `Ajouter une adresse e-mail`{.action}. Choisissez enfin `Exchange et Office 365`{.action} ;
-
-- **si un compte a déjà été paramétré** : appuyez sur le pictogramme représentant trois traits en haut à gauche, puis sur celui en forme de flèche à droite du nom du compte déjà paramétré. Appuyez enfin sur `Ajouter un compte`{.action} et choisissez `Exchange et Office 365`{.action}. 
-
-![exchange](images/configuration-exchange-gmail-application-android-step1.png){.thumbnail}
-
-Renseignez votre adresse e-mail, puis appuyez sur `Suivante`{.action}.
-
-Indiquez maintenant le mot de passe de votre adresse e-mail, ne sélectionnez pas de certificat client, puis appuyez sur `Suivante`{.action} pour poursuivre la configuration. Des connexions vers le serveur d'OVHcloud peuvent être effectuées pour configurer votre compte. Si tel est le cas, un avertissement s'affiche sur votre appareil : appuyez sur `OK`{.action} pour effectuer ces connexions.
-
-Renseignez à présent les paramètres du serveur entrant. Certains champs peuvent être pré-remplis.
-
-|Information|Description| 
-|---|---| 
-|Domaine/Nom d'utilisateur|Renseignez l'adresse e-mail complète.|  
-|Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Certificat client|Ne sélectionnez rien.|
-|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
-|Port|Renseignez le port  443 .|  
-|Type de sécurité|Choisissez « SSL/TLS ».|
-
-Appuyez maintenant sur `Suivante`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
-
-![exchange](images/configuration-exchange-gmail-application-android-step2.png){.thumbnail}
-
-Pour finaliser votre configuration, vous devez autoriser le serveur d'OVHcloud à contrôler à distance certaines fonctionnalités inhérentes à la sécurité de votre appareil. Appuyez sur `OK`{.action}, prenez connaissance des informations qui s'affichent et appuyez sur `Activer cet administrateur de l'appareil`{.action}.
-
-Nommez enfin votre compte de manière à le reconnaître parmi d'autres affichés dans votre application. Appuyez ensuite sur `Suivante`{.action}.
-
-Vous pouvez effectuer un test d'envoi de message pour vérifier que le compte est correctement paramétré.
-
-### Étape 2 : utiliser l'adresse e-mail
-
-Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
-
-OVHcloud propose également une application web disposant de [fonctions collaboratives](https://www.ovhcloud.com/fr/emails/){.external} accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
-
-## Aller plus loin
-
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Android via l'application Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}.
-
-[Configurer son compte E-mail Pro sur Android via l'application Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android){.external}.
-
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
