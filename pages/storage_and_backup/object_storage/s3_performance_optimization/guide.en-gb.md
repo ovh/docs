@@ -218,7 +218,7 @@ The main strategy is to keep the cardinality of the object keys to the left i.e 
 
 Let's consider a use case where you would want to store logs in OVHcloud Object Storage.
 
-#### **Scenario 1: bad practice by using the date as prefix : **
+** Scenario 1: bad practice by using the date as prefix : **
 
 List of objects:
 
