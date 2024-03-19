@@ -199,7 +199,6 @@ Sharding enables :
 
 We use the object keys (prefix/name) to determine which objects are pushed into which sub-container using the following logic:
 
-
 * create 2 new shards
 * find the median value of a sorted by alphabetical order list of all object keys
 * copy the content of the root container to the shards
@@ -207,9 +206,7 @@ We use the object keys (prefix/name) to determine which objects are pushed into 
 * in the second shard, keep only the second half of the objects and clean the first half
 * the root container then only lists the references to the shards i.e which range of objects in which shard
 
-
 This logic can be summed up as follows:
-
 
 ![Schema 2](images/sharding2.png)
 
