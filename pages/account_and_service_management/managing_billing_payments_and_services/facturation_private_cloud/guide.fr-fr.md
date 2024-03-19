@@ -1,7 +1,7 @@
 ---
 title: Facturation Hosted Private Cloud
 excerpt: Explication des différents types de facturation (horaire et mensuelle) sur l'offre Hosted Private Cloud
-updated: 2020-11-24
+updated: 2024-03-19
 ---
 
 ## Objectif
@@ -84,13 +84,11 @@ La commande de ressources mensuelles se fait depuis l'espace client OVHcloud dan
 
 ## Facturation mensuelle
 
-La facturation mensuelle reprend le même principe que la facturation de l'infrastructure.
-
-La commande d'une ressource mensuelle sera toujours pour un mois, et un prorata sera fait sur la facturation du mois suivant.
+Depuis le passage sous Agora, la facturation suit le principe de prorata temporis qui s'applique dès la commande de la ressource.
 
 ### Exemple :
 
-Si vous commandez une ressource le 5 juin, elle aura une date d'expiration au 5 juillet. Lors du renouvellement automatique, le 1er juillet, un prorata sera effectué, et vous payerez la période du 6 au 31 juillet. Elle reprendra ensuite la même facturation que l'infrastructure parente.
+Si vous commandez une ressource le 5 juin, alors vous serais facturé pour la période du 5 juin au 30 juin. 
 
 ### Commande d'hôte
 
