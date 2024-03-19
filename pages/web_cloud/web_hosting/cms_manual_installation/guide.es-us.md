@@ -10,7 +10,7 @@ updated: 2024-03-19
 
 ## Objetivo
 
-Esta guía explica cómo instalar manualmente un CMS (del inglés content management system), como WordPress, Joomla!, Drupal o PrestaShop, en pocos pasos.
+Esta guía explica cómo instalar manualmente un CMS (del inglés content management system), como WordPress, Joomla!, Drupal, PrestaShop o Pico, en pocos pasos.
 
 > [!warning]
 >

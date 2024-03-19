@@ -6,7 +6,7 @@ updated: 2024-03-19
 
 ## Objective
 
-This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal or PrestaShop manually in just a few steps.
+This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal, PrestaShop or Pico manually in just a few steps.
 
 > [!warning]
 >

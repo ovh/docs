@@ -10,7 +10,7 @@ updated: 2024-03-19
   
 ## Wprowadzenie
 
-Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), np. WordPress, Joomla!, Drupal lub PrestaShop.
+Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), np. WordPress, Joomla!, Drupal, PrestaShop lub Pico.
 
 > [!warning]
 >
