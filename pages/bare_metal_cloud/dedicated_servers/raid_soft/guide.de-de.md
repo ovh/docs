@@ -1,6 +1,6 @@
 ---
-title: Software-RAID
-excerpt: 'Erfahren Sie hier, wie Sie das RAID Array Ihres Servers rekonfigurieren'
+title: Software-RAID konfigurieren und neu erstellen
+excerpt: "Erfahren Sie hier, wie Sie den Status des Software-RAID Ihres Servers überprüfen und im Fall eines Hardware-Austausches rekonfigurieren"
 updated: 2022-10-11
 ---
 

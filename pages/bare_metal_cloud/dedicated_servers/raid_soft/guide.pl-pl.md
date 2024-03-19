@@ -1,6 +1,6 @@
 ---
-title: Programowa macierz RAID
-excerpt: Dowiedz się, jak konfiguracja software RAID Twojego serwera
+title: Konfiguracja i rekonstrukcja programowej macierzy RAID
+excerpt: "Dowiedz się, jak sprawdzić stan programowej macierzy RAID Twojego serwera i odtworzyć ją po wymianie dysku"
 updated: 2023-08-21
 ---
 

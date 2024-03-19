@@ -160,7 +160,7 @@
             + [Installing WordPress with WP-CLI on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
         + [RAID and disks](bare-metal-cloud-dedicated-servers-raid-and-disks)
             + [Hardware upgrade on a High Grade or Scale dedicated server](bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
-            + [Configuring software RAID](bare_metal_cloud/dedicated_servers/raid_soft)
+            + [How to configure and rebuild software RAID](bare_metal_cloud/dedicated_servers/raid_soft)
             + [Configuring a software mirror (RAID) on Windows](bare_metal_cloud/dedicated_servers/raid_soft-windows)
             + [Managing Hardware RAID](bare_metal_cloud/dedicated_servers/raid_hard)
             + [OVHcloud API & Partitioning](bare_metal_cloud/dedicated_servers/partitioning_ovh)

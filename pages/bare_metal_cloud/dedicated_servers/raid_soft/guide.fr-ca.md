@@ -1,6 +1,6 @@
 ---
-title: Gestion du RAID logiciel
-excerpt: Apprenez à vérifier l'état de votre RAID logiciel
+title: Configuration et reconstruction du RAID logiciel
+excerpt: "Découvrez comment vérifier l'état du RAID logiciel de votre serveur et le reconstruire après un remplacement de disque"
 updated: 2023-08-21
 ---
 
