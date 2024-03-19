@@ -17,6 +17,7 @@ Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem
 
 ## In der praktischen Anwendung
 
+
 Diese Anleitung vermittelt Ihnen ein besseres Verständnis der üblichen Funktionen eines Mailkontos, die im OWA Webmail verfügbar sind. Da diese Anwendung jedoch ursprünglich nicht von OVHcloud erstellt wurde, können wir keine spezifischen Anweisungen zu Einstellungen geben, die in dieser Anleitung nicht erwähnt werden. In Bezug auf exklusive Exchange-Funktionen stehen gesonderte Anleitungen zur Verfügung, die im Abschnitt **Weiterführende Informationen** am Seitenende verlinkt sind.
 
 > [!primary]
@@ -30,6 +31,12 @@ Diese Anleitung vermittelt Ihnen ein besseres Verständnis der üblichen Funktio
 Um sich mit Ihrer E-Mail-Adresse bei OWA Webmail anzumelden, rufen Sie die allgemeine [Webmail-Anmeldeseite](https://www.ovh.de/mail) auf. Geben Sie Ihre vollständige E-Mail-Adresse und Ihr Passwort ein und klicken Sie danach auf die Schaltfläche `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+> 
+> Wenn Sie zu einem **Roundcube** Interface weitergeleitet werden, bedeutet dies, dass Sie sich auf der Legacy-Version der MX Plan Lösung befinden. Weitere Informationen zu Ihrem MX Plan finden Sie auf unserer Seite "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
+>
+> Um sich mit dem **Roundcube** Interface vertraut zu machen, lesen Sie unsere [Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA Webmail anmelden, werden Sie aufgefordert, die Sprache und die Zeitzone der Benutzeroberfläche festzulegen. Um fortzufahren, klicken Sie auf `Speichern`{.action}.
 

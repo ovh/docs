@@ -30,6 +30,12 @@ Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [págin
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
+> [!warning]
+> 
+> Se for redirecionado para uma interface **Roundcube**, isso significa que está na versão antiga da oferta MX Plan. Para mais informações sobre a sua oferta MX Plan, consulte a nossa página [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Para se familiarizar com a interface **Roundcube**, consulte o nosso guia [Webmail: Guia de utilização do Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+
 Se está a efetuar o login no webmail OWA pela primeira vez com este endereço de e-mail, ser-lhe-á solicitado que configure o idioma e o fuso horário na interface. Clique em `Guardar`{.action} para continuar.
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
