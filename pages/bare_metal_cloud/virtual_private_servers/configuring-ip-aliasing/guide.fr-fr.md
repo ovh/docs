@@ -1,33 +1,33 @@
 ---
 title: 'Configurer une adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
-updated: 2024-03-18
+updated: 2024-03-19
 ---
 
 > [!primary]
 >
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a pas d'impact sur ses fonctionnalités.
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a pas de conséquances sur ses fonctionnalités.
 >
 
 ## Objectif
 
-L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau pour vos serveurs OVHcloud, qui vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
+L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau pour vos serveurs OVHcloud. Elle vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
 
-**Ce guide explique comment ajouter des adresses Additional IP à votre configuration réseau.**
+**Découvrez comment ajouter des adresses Additional IP à votre configuration réseau.**
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
->
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et nous ne pourrons pas vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://marketplace.ovhcloud.com/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
-- un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- une [adresse Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
-- un accès administrateur (sudo) via SSH ou GUI sur votre serveur
-- des connaissances de base sur les réseaux et leur administration
+- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Disposer d'une [adresse Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
+- Avoir un accès administrateur (sudo) via SSH ou GUI sur votre serveur
+- Avoir les connaissances de base sur les réseaux et leur administration
 
 ## En pratique
 
@@ -83,7 +83,7 @@ sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50
 
 #### Étape 3 : éditer le fichier de configuration
 
-Vous pouvez vérifier le nom de votre interface réseau à l'aide de la commande suivante :
+Vérifiez le nom de votre interface réseau à l'aide de la commande suivante :
 
 ```bash
 ip a
@@ -95,9 +95,9 @@ Ouvrez le fichier de configuration réseau pour le modifier à l'aide de la comm
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
-Pour configurer votre adresse Additional IP, vous devez ajouter une interface virtuelle ou un alias Ethernet à votre interface réseau. Dans notre exemple, notre interface s'appelle `eth0`, donc notre premier alias est `eth0:0`. Faites ceci pour chaque adresse Additional IP que vous souhaitez configurer.
+Pour configurer votre adresse Additional IP, ajoutez une interface virtuelle ou un alias Ethernet à votre interface réseau. Dans notre exemple, notre interface s'appelle `eth0`, donc notre premier alias est `eth0:0`. Faites ceci pour chaque adresse Additional IP que vous souhaitez configurer.
 
-Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez simplement votre adresse Additional IP au fichier comme suit, en remplaçant `NETWORK_INTERFACE`, `ID` et `ADDITIONAL_IP` par vos propres valeurs :
+Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez uniquement votre adresse Additional IP au fichier comme suit, en remplaçant `NETWORK_INTERFACE`, `ID` et `ADDITIONAL_IP` par vos propres valeurs :
 
 ```console
 auto NETWORK_INTERFACE:ID
@@ -149,7 +149,7 @@ sudo touch /etc/netplan/51-cloud-init.yaml
 
 #### Étape 2 : modifier le fichier de configuration
 
-Vous pouvez vérifier le nom de votre interface réseau à l'aide de la commande suivante :
+Vérifiez le nom de votre interface réseau à l'aide de la commande suivante :
 
 ```bash
 ip a
@@ -211,7 +211,7 @@ Enregistrez et fermez le fichier.
 
 #### Étape 3 : appliquer la nouvelle configuration réseau
 
-Vous pouvez tester votre configuration à l'aide de la commande suivante :
+Testez votre configuration à l'aide de la commande suivante :
 
 ```bash
 sudo netplan try
@@ -229,11 +229,11 @@ Répétez cette procédure pour chaque adresse Additional IP.
 
 Le fichier de configuration principal est situé dans le dossier `/etc/sysconfig/network-scripts/`. Dans cet exemple, il est appelé `ifcfg-eth0`. Avant de faire des changements, vérifiez le nom réel du fichier dans ce dossier.
 
-Pour chaque adresse Additional IP à configurer, nous créons un fichier de configuration séparé avec les paramètres suivants : `ifcfg-NETWORK_INTERFACE:ID`. Où `NETWORK_INTERFACE` représente l'interface physique et `ID` représente l'interface réseau virtuelle ou l'alias ethernet commençant par une valeur de 0. Par exemple, pour notre interface nommée `eth0` le premier alias est `eth0:0`, le second alias est `eth0:1`, etc...
+Pour chaque adresse Additional IP à configurer, créez un fichier de configuration séparé avec les paramètres suivants : `ifcfg-NETWORK_INTERFACE:ID`. Où `NETWORK_INTERFACE` représente l'interface physique et `ID` représente l'interface réseau virtuelle ou l'alias ethernet commençant par une valeur de 0. Par exemple, pour notre interface nommée `eth0` le premier alias est `eth0:0`, le second alias est `eth0:1`, etc.
 
 #### Étape 1 : déterminer l'interface
 
-Vous pouvez vérifier le nom de votre interface réseau à l'aide de la commande suivante :
+Vérifiez le nom de votre interface réseau à l'aide de la commande suivante :
 
 ```bash
 ip a
@@ -305,7 +305,6 @@ sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 
 Ne modifiez pas les lignes existantes dans le fichier de configuration, ajoutez votre Additional IP au fichier comme suit, en remplaçant `ADDITIONAL_IP/32` par vos propres valeurs :
 
-
 ```console
 [ipv4]
 method=auto
@@ -334,7 +333,7 @@ address1=203.0.113.0/32
 
 #### Étape 3 : redémarrer l'interface
 
-Vous devez maintenant redémarrer votre interface :
+Redémarrez votre interface :
 
 ```bash
 sudo systemctl restart NetworkManager
@@ -342,7 +341,7 @@ sudo systemctl restart NetworkManager
 
 ### cPanel
 
-#### Étape 1 : accédez à la section de gestion des IP du WHM
+#### Étape 1 : accéder à la section de gestion des IP du WHM
 
 Dans l'espace client WHM, cliquez sur `IP Functions`{.action} et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
 
@@ -403,7 +402,7 @@ Tapez `cmd` et cliquez sur `OK`{.action} pour ouvrir l'application de ligne de c
 
 ![cmdprompt](images/vps_win07.png){.thumbnail}
 
-Afin de récupérer la configuration IP actuelle, entrez `ipconfig` dans l'invite de commande.
+Pour récupérer la configuration IP actuelle, entrez `ipconfig` dans l'invite de commande.
 
 ```powershell
 C:\Users\Administrator>ipconfig
@@ -462,7 +461,7 @@ Ethernet adapter Ethernet:
 
 ### Diagnostic
 
-Tout d'abord, redémarrez votre serveur via la ligne de commande ou son interface utilisateur. Si vous ne parvenez toujours pas à établir une connexion entre le réseau public et votre adresse IP d'alias et que vous suspectez un problème réseau, vous devez redémarrer le serveur en [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue). Vous pouvez ensuite configurer l'adresse Additional IP directement sur le serveur.
+Tout d'abord, redémarrez votre serveur via la ligne de commande ou son interface utilisateur. Si vous ne parvenez toujours pas à établir une connexion entre le réseau public et votre adresse IP d'alias et que vous suspectez un problème réseau, redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue). Vous pouvez ensuite configurer l'adresse Additional IP directement sur le serveur.
 
 Une fois que vous êtes connecté à votre serveur via SSH, entrez la commande suivante :
 
@@ -470,9 +469,9 @@ Une fois que vous êtes connecté à votre serveur via SSH, entrez la commande s
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse Additional IP depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, veuillez en informer nos équipes du support en créant un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
+Pour tester la connexion, envoyez un ping à votre adresse Additional IP depuis l'extérieur. S'il répond en mode rescue, cela signifie probablement qu'il y a une erreur de configuration. Toutefois, si l'IP ne fonctionne toujours pas, veuillez en informer nos équipes du support en créant un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Activer le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
