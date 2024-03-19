@@ -244,14 +244,14 @@ This not optimal because since dates are incremental by nature, all new uploads 
 
 List of objects:
 
-    server/apache/file20240216.log
-    server/apache/file20240217.log
-    server/apache/file20240218.log
-    ...
-    db/mongodb/file20240216.log
-    db/mongodb/file20240217.log
-    ...
-
+* server/apache/file20240216.log
+* server/apache/file20240217.log
+* server/apache/file20240218.log
+* ...
+* db/mongodb/file20240216.log
+* db/mongodb/file20240217.log
+* ...
+  
 Assuming the threshold is 100, after the uploading of the 100th object, the sharding is triggerd to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
 
 ![Schema 4](images/sharding4.png)
