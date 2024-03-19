@@ -20,6 +20,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 > - [Joomla!](https://www.joomla.org/){.external}
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [Pico](https://picocms.org/){.external}
 >
 
 > [!success]

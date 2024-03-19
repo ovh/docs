@@ -24,6 +24,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 > - [Joomla!](https://www.joomla.org/){.external}
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [Pico](https://picocms.org/){.external}
 >
 
 > [!success]
