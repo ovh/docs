@@ -26,6 +26,7 @@ You can upload a single object as a collection of parts using multipart upload. 
 > [!success]
 >
 > You should consider using multipart uploads for objects > 100MB
+
 The benefits of using multipart upload are as follows:
 * Increased throughput: each part can be uploaded concurrently
 * Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
