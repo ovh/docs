@@ -368,6 +368,7 @@ Per proseguire con l'installazione, segui uno di questi link cliccando sulla gui
 - [Completare l'installazione di Joomla!](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Completare l'installazione di Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Completare l'installazione di PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Completare l'installazione di Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
 ## Per saperne di più <a name="go-further"></a>
 

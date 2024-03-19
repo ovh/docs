@@ -364,6 +364,7 @@ To continue with the installation, follow the guide corresponding to your CMS:
 - [Finalise a Joomla! installation](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Finalise a Drupal installation](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finalise a PrestaShop installation](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Finalise a Pico installation](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
 ## Go further <a name="go-further"></a>
 

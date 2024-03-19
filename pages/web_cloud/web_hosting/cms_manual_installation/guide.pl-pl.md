@@ -368,6 +368,7 @@ Aby kontynuować instalację, kliknij w przewodnik dotyczący systemu CMS:
 - [Zakończenie instalacji Joomla!](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Zakończenie instalacji Drupala](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Zakończenie instalacji PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Zakończenie instalacji Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
 ## Sprawdź również <a name="go-further"></a>
 

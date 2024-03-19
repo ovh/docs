@@ -368,6 +368,7 @@ Para prosseguir com a instalação, clique no guia correspondente ao seu CMS:
 - [Finalizar a instalação do Joomla!](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Finalizar a instalação de Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finalizar a instalação do PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Finalizar a instalação do Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
 ## Quer saber mais? <a name="go-further"></a>
 

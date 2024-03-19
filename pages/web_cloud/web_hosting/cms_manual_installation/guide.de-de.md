@@ -367,6 +367,7 @@ Um mit der Installation fortzufahren, folgen Sie der passenden Anleitung zu Ihre
 - [Installation von Joomla! abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Installation von Drupal abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Installation von PrestaShop abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Installation von Pico abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
