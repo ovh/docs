@@ -32,7 +32,7 @@ To log in to OWA webmail with your email address, go to the general [webmail log
 
 > [!warning]
 > 
-> If you are redirected to an **Roundcube** interface, this means that you are on the legacy version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+> If you are redirected to a **Roundcube** interface, this means that you are using the legacy version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
 > To familiarise yourself with the **Roundcube** interface, please refer to our guide on [Using your email account via the Roundcube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
