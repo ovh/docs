@@ -75,6 +75,11 @@ Zweite Auswahl (Regel):
 - **enthält**: Positive Bedingung, zum Beispiel "Der Betreff enthält ...".
 - **enthält nicht**: Negative Bedingung, zum Beispiel "... enthält nicht ...".
 
+> [!primary]
+>
+> Mit dem SPF (Sender Policy Framework) kann der Server, der eine E-Mail empfängt, überprüfen, ob diese von einem vertrauenswürdigen Server gesendet wurde.
+> Verhindert möglichen Identitätsdiebstahl durch E-Mail-Adressen mit Ihrem Domainnamen (Spoofing). Weitere Informationen zum SPF finden Sie in der Anleitung „[Einen SPF-Eintrag für den Domainnamen konfigurieren](/pages/web_cloud/domains/dns_zone_spf)“.
+
 Dritte Auswahl (Wert):
 
 - Ein konkreter Wert zur Definition dieser Regel, zum Beispiel: `[SPAM]`.

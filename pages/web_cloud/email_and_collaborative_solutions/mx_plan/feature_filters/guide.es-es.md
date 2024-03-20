@@ -79,6 +79,11 @@ Segunda opción (regla):
 - **contiene:** ejemplo: "... contiene ... ".
 - **no contiene:** ejemplo: "... no contiene ... ".
 
+> [!primary]
+>
+> El SPF (Sender Policy Framework) permite que el servidor que recibe un mensaje de correo electrónico se asegure de que el mensaje se ha enviado desde un servidor de confianza.
+> Permite evitar posibles usurpaciones de identidad procedentes de direcciones de correo que utilizan su nombre de dominio (spoofing). Para más información sobre el SPF, consulte la guía «[Configurar un registro SPF en un dominio](/pages/web_cloud/domains/dns_zone_spf) ».
+
 Tercera opción (valor):
 
 - Ejemplo: [SPAM]

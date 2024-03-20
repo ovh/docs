@@ -79,6 +79,11 @@ Druga opcja (reguła):
 - **zawiera:** przykład: "... zawiera ... ".
 - **nie zawiera:** przykład: ".. nie zawiera ... ".
 
+> [!primary]
+>
+> SPF (Sender Policy Framework) pozwala serwerowi otrzymującemu e-mail upewnić się, czy został on wysłany z zaufanego serwera.
+> Pomaga zapobiegać przypadkom podszywania się pod adresy e-mail używające Twojej domeny (spoofing). Więcej informacji na temat SPF znajdziesz w przewodniku "[Konfiguracja rekordu SPF w jego domenie](/pages/web_cloud/domains/dns_zone_spf)".
+
 Trzeci wybór (wartość):
 
 - Przykład: [SPAM]
