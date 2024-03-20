@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la facturation et le paiement
 excerpt: Retrouvez les questions les plus fréquemment posées sur la facturation et le paiement
-updated: 2024-02-26
+updated: 2024-03-20
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ Si vous souhaitez en savoir plus sur la gestion des contacts, vous pouvez consul
 
 Vos coordonnées de facturation sont celles de votre identifiant client. Pour vos prochaines factures, il vous suffit donc de mettre à jour ces informations, dans la rubrique `Mon Compte`{.action} de votre espace client OVHcloud.
 
-Pour des raisons légales, il est impossible de modifier une facture déjà éditée. Toutefois, si votre demande est liée à une erreur de nos services, nous vous invitons à nous contacter en créant un ticket d'assistance.
+Pour des raisons légales, il est impossible de modifier une facture déjà éditée. Toutefois, si votre demande est liée à une erreur de nos services, nous vous invitons à nous contacter en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### Quels sont les différents moyens de paiement disponibles pour régler mon service ?
 
@@ -51,7 +51,7 @@ Rendez-vous dans la rubrique `Produits et Services`{.action} accessible directem
 #### Trucs et astuces
 
 Avant toute activation du renouvellement automatique, pensez à renseigner un moyen de paiement. En effet, en cas d'impayé, vos services seront suspendus après 7 jours.
-Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer mes moyens de paiement] (https://help.ovhcloud.com/csm/fr-billing-manage-payment-methods?id=kb_article_view&sysparm_article=KB0042873).  
+Pour plus d'informations, consultez ce guide détaillé : [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).  
 
 ### Comment désactiver le renouvellement automatique ?
 
@@ -80,7 +80,7 @@ Une fois réceptionné par nos services, si votre mandat est approuvé, vous pou
 
 #### Trucs et astuces
 
-Au moins un moyen de paiement doit être enregistré dans votre espace client, afin que vos services soient correctement renouvelés. Si vous n'avez plus aucune solution active, nous vous invitons à nous contacter en créant un ticket d'assistance.
+Au moins un moyen de paiement doit être enregistré dans votre espace client, afin que vos services soient correctement renouvelés. Si vous n'avez plus aucune solution active, nous vous invitons à nous contacter en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### Comment supprimer un moyen de paiement ?
 
@@ -92,7 +92,7 @@ Avant de supprimer un moyen de paiement, assurez-vous d'en avoir enregistré un 
 
 ### Quel est mon moyen de paiement par défaut ?
 
-Le moyen de paiement par défaut est le mode automatiquement affecté à votre compte pour le règlement d'une facture. Vous pouvez le retrouver en vous connectant à votre espace client, sur votre tableau de bord. 
+Il s'agit du moyen de paiment automatiquement utilisé pour le règlement d'une facture. Vous pouvez le retrouver en vous connectant à votre espace client, sur votre tableau de bord. 
 Le solde de votre facture sera donc débité sur le moyen de paiement que vous avez paramétré par défaut. 
 
 Pour changer de moyen de paiement par défaut, consultez notre guide sur la [gestion des moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
@@ -161,8 +161,7 @@ La résiliation sera effective lorsque la période de validité ou d'engagement 
 
 #### Trucs et astuces
 
-En cas d'erreur de commande, vous avez la possibilité, sous conditions, d'exercer votre droit de rétractation. Pour plus d'infos, nous vous invitons à consulter la question suivante Comment annuler ma commande?
-Une documentation complète sur la résiliation de l'ensemble de nos produits et services est disponible [ici](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+En cas d'erreur de commande, vous avez la possibilité, sous conditions, d'exercer votre droit de rétractation. Une documentation complète sur la résiliation de l'ensemble de nos produits et services est disponible [ici](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 
 ### Comment personnaliser la référence de mon produit/service sur ma facture?
 
