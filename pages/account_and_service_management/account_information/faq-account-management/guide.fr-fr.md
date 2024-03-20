@@ -39,7 +39,9 @@ Pour visualiser ou modifier vos coordonnées, connectez-vous à votre [espace cl
 
 #### Trucs et astuces
 
-Vous voulez modifier l'adresse e-mail de votre compte OVHcloud ? Une demande de confirmation sera d'abord envoyée à l'adresse e-mail actuellement renseignée dans votre espace client. Si vous n'avez plus accès à cette adresse, il vous suffira de patienter 24 heures. Passé ce délai, la modification sera automatiquement prise en compte.
+Vous voulez modifier l'adresse e-mail de votre compte OVHcloud ? Une demande de confirmation sera d'abord envoyée à l'adresse e-mail actuellement renseignée dans votre espace client. Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
+
+Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
 
 ### Comment bien renseigner mon numéro de téléphone lors de la création de mon compte ?
 
@@ -66,7 +68,9 @@ Retrouvez plus d'informations dans notre guide [Modifier le mot de passe de votr
 
 Si vous ne vous rappelez plus de votre mot-de-passe : rendez-vous sur la [page de connexion à votre espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur `Identifiant ou mot de passe oublié`{.action}. Renseignez votre identifiant ou l’adresse e-mail principale associée à votre compte OVHcloud, puis cliquez sur `Envoyer`{.action}. Un e-mail est alors envoyé à l’adresse e-mail de contact du compte, afin de confirmer la demande. Lisez attentivement les instructions et cliquez sur le lien qu’il contient.
 
-Si vous n’avez plus accès à l'adresse e-mail de contact, nous vous invitons à remplir cette [procédure](https://www.ovh.com/fr/support/procedures/).
+Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
+
+Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
 
 Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « xx99999-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 
@@ -122,7 +126,12 @@ En cas d’usage frauduleux de votre compte OVHcloud (identité, moyen de paiem
 
 Par la suite, la préfecture de police vous contactera directement afin de fixer un rendez-vous et ainsi finaliser la procédure. Dès que la plainte sera en votre possession, vous devrez nous en envoyer une copie. Celle-ci permettra de lancer nos démarches internes.
 
-Votre identifiant client sera alors bloqué. Quant aux services souscrits frauduleusement, ils seront supprimés et remboursés automatiquement.
+Contactez le support OVHcloud par téléphone :
+
+- France : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France)
+- Canada : 1-855-684-5463
+
+Votre identifiant client sera alors bloqué et les services souscrits frauduleusement seront supprimés.
 
 Enfin, pour retrouver l’usage de votre compte client, nous pourrons vous demander de modifier votre adresse e-mail et/ou votre mot de passe via [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi). 
 
