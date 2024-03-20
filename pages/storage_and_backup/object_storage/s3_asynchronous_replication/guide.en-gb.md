@@ -1,7 +1,7 @@
 ---
 title: Object Replication - Master Asynchronous Replication Across Your Buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance.
-updated: 2024-03-15
+updated: 2024-03-20
 ---
 
 ## Introduction
@@ -38,9 +38,11 @@ Before diving into object replication, ensure you have:
 
 - **Exact Object Copies with Metadata Replication**: Replication is not just about duplicating the object; it includes the replication of all associated metadata (e.g., object creation time, version ID, etc.). This ensures that the replicas are true copies of the source objects, maintaining integrity and consistency for critical applications.
 
-- **Data Synchronization Across Teams**: It facilitates the seamless synchronization of data among various teams, streamlining collaboration and data sharing according to predefined access controls and policies.
+To address the feedback and correct the previous statements, here's a revised version of the points mentioned:
 
-- **Cost-Effective Data Storage Management**: By replicating data into different storage classes, organizations can optimize their backup and storage costs without compromising on data availability or durability.
+- **Data Synchronization Across Teams**: This facilitates seamless synchronization of data across various teams, enhancing collaboration and data sharing based on predefined access controls and policies. It's crucial to note that while data synchronization is a significant advantage, storage options and configurations must be carefully managed to ensure they meet the specific needs of each team in terms of access and security.
+
+- **Cost-Effective Data Storage Management**: Organizations need to explore alternative strategies to optimize their backup and storage costs, considering the current limitations related to data replication. At present, it is important to highlight that data replication occurs only within the same storage class. If the source is in a HIGH-PERFORMANCE storage class, all replicated objects will also be in HIGH-PERFORMANCE. Nevertheless, organizations can still optimize their storage management by carefully assessing their needs and selecting the most suitable storage class from the outset to balance cost and performance without compromising data availability or durability.
 
 - **Enhanced Data Resiliency Across Regions**: Enhance your data protection strategies by replicating critical data across multiple geographical regions. This increases resiliency against data loss and ensures business continuity in the face of regional disruptions.
 
@@ -352,7 +354,7 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
 
 ```bash
 {
-   "Role": "arn:aws:iam::<your_project_id>:role/replicationRole",
+   "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
    "Rules": [
     {
       "ID": "replication-rule-456",
