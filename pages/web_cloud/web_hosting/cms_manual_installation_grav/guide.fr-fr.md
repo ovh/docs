@@ -93,7 +93,7 @@ Dans le menu principal de Grav, cliquez sur `Tools`{.action}, sélectionnez `Bac
 
 ##### Mise à jour
 
-Garder votre système à jour est crucial pour la sécurité et la performance de votre site web. Dans le menu principal de Grav, cliquez sur `Check for Updates`{.action} pour découvrir les mises à jour disponibles.
+Garder votre système à jour est primordial pour la sécurité et la performance de votre site web. Dans le menu principal de Grav, cliquez sur `Check for Updates`{.action} pour découvrir les mises à jour disponibles.
 
 ### Conclusion
 
