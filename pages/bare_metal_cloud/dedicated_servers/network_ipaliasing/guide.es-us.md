@@ -723,7 +723,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Donde podrá sustituir "ADDITIONAL_IP" por la verdadera IP Aditional.
 
-A continuación, solo tiene que hacer un ping desde su Dirección IP hacia el exterior. Si funciona, probablemente significa que debe corregirse un error de configuración. Si, por el contrario, la IP todavía no funciona, abra un tíquet al equipo de soporte desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para más información.
+A continuación, solo tiene que hacer un ping desde su Dirección IP hacia el exterior. Si funciona, probablemente significa que debe corregirse un error de configuración. Si, por el contrario, la IP todavía no funciona, abra un tíquet al equipo de soporte desde el [Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) para más información.
 
 ## Más información
 

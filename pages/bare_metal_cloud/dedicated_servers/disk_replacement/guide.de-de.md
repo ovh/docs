@@ -11,11 +11,10 @@ Wenn Sie feststellen, dass eine Festplatte defekt ist, oder per E-Mail eine Syst
 **Hier erfahren Sie, wie Sie einen Festplattendefekt erkennen und den Austausch der betreffenden Festplatte durch unsere Teams beantragen.**
 
 > [!warning]
+>Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
 >
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
-> 
-> Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil “Weiterführende Informationen” dieser Anleitung.
-> 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Sie Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
+>
 
 ## Voraussetzungen
 
@@ -133,7 +132,7 @@ root@rescue:~# nvme list
 
 #### Cold Swap (Abschaltung des Servers notwendig)
 
-Den Austausch einer Ihrer Festplatten können Sie ganz bequem durch die Erstellung einer Support-Anfrage über Ihr [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} anfordern. Sie können den Vorgang beschleunigen, indem Sie uns alle mit den Tests verbundenen Daten mitteilen. Hier eine Zusammenfassung der von uns benötigten Informationen:
+Den Austausch einer Ihrer Festplatten können Sie ganz bequem durch die Erstellung einer Support-Anfrage über Ihr [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) anfordern. Sie können den Vorgang beschleunigen, indem Sie uns alle mit den Tests verbundenen Daten mitteilen. Hier eine Zusammenfassung der von uns benötigten Informationen:
 
 - **die Seriennummer sowohl der zu ersetzenden Festplatte als auch aller weiteren intakten Festplatten**. Wie Sie die Seriennummer der zu ersetzenden Festplatte in Erfahrung bringen, sehen Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial){.external} (Englisch). Sollten Sie aus irgendeinem Grund die Seriennummer der Festplatte nicht abrufen können, geben Sie dies bitte im Ticket an und teilen Sie uns die Seriennummern der nicht zu ersetzenden Festplatten mit. 
 

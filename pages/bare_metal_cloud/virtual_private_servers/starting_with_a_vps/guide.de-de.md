@@ -264,9 +264,9 @@ Sie können auch jede RDP-kompatible Anwendung eines Drittanbieters verwenden. D
 Wenn bei diesem Verfahren Probleme auftreten, überprüfen Sie, ob Remoteverbindungen (RDP) auf Ihrem Gerät zugelassen sind, indem Sie die Systemeinstellungen, Firewallregeln und mögliche Netzwerkeinschränkungen überprüfen.
 >
 
-#### Aktivieren der Windows-Startprotokolle (optional)
+#### Aktivieren der Windows Startprotokolle (optional)
 
-Windows-Startprotokolle können bei der Diagnose von Serverstörungen hilfreich sein.
+Windows Boot Logs können bei der Diagnose von Serverstörungen hilfreich sein.
 
 Um sie zu aktivieren, folgen Sie den in den Tabs aufgeführten Schritten:
 
@@ -329,7 +329,5 @@ OVHcloud bietet auch die Lösung SSL Gateway zur Automatisierung dieses Prozesse
 [SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [VPS absichern](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
-
-[Eine neue Windows Server Installation konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

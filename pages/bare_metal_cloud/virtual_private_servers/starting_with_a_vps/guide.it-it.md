@@ -331,6 +331,4 @@ Per un processo più automatizzato, OVHcloud propone anche la soluzione SSL Gate
 
 [Mettere in sicurezza un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configurare una nuova installazione di Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

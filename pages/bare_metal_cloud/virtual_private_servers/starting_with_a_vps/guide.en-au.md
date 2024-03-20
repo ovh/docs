@@ -325,6 +325,4 @@ You can install this SSL certificate manually, directly on the VPS. Please refer
 
 [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configuring a new Windows Server installation](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 Join our community of users on <https://community.ovh.com/en/>.

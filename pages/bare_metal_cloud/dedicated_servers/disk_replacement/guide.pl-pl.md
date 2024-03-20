@@ -133,7 +133,7 @@ root@rescue:~# nvme list
 
 #### Wymiana dysku z wyłączeniem serwera
 
-Aby zlecić wymianę dysku, należy utworzyć zgłoszenie (ticket) w [Panelu klienta](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} i wysłać je do pomocy technicznej OVHcloud. Aby przyspieszyć proces, podaj informacje uzyskane w wyniku testu. Poniżej lista potrzebnych danych:
+Aby zlecić wymianę dysku, należy utworzyć zgłoszenie (ticket) w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help)} i wysłać je do pomocy technicznej OVHcloud. Aby przyspieszyć proces, podaj informacje uzyskane w wyniku testu. Poniżej lista potrzebnych danych:
 
 - **numer serii dysku do wymiany oraz dysków, które są sprawne**. Aby dowiedzieć się, jak uzyskać numer serii dysku zapoznaj się z [tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial). Jeśli z jakiejś przyczyny uzyskanie numeru serii dysku do wymiany jest niemożliwe, poinformuj o tym w zgłoszeniu i podaj numery serii sprawnych dysków. 
 

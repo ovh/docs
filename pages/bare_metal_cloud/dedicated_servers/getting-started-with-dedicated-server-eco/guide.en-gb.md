@@ -51,6 +51,8 @@ If you need to modify the partioning scheme of your operating system, check the 
 
 ![SSH key configuration](images/reinstalling-your-server-04.png){.thumbnail}
 
+In this step you are able to set up RAID and partitioning options within the limits of the server's hardware and operating system.
+
 After you have finished your adjustments, click `Next`{.action} to arrive at the summary page.
 
 #### Adding an SSH key (optional)

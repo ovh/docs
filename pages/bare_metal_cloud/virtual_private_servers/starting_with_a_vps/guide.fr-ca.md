@@ -328,6 +328,4 @@ Pour un processus plus automatisé, OVHcloud propose également la solution SSL 
 
 [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configurer une nouvelle installation de Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,6 +1,6 @@
 ---
-title: Configurare un RAID software
-excerpt: Come configurare il software RAID di un server
+title: Configurazione e ricostruzione del RAID software
+excerpt: "Come verificare lo stato del RAID software del tuo server e ricostruirlo dopo la sostituzione del disco"
 updated: 2023-08-21
 ---
 

@@ -330,6 +330,4 @@ W przypadku bardziej zautomatyzowanego procesu OVHcloud oferuje również rozwi�
 
 [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Konfigurowanie nowej instalacji systemu Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

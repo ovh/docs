@@ -330,6 +330,4 @@ Para um processo mais automatizado, a OVHcloud propõe igualmente a solução SS
 
 [Como proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configurar uma nova instalação do Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -129,8 +129,6 @@ O seu VPS pode ser migrado automaticamente para a gama atual. Descubra as vantag
 
 [Como proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-[Configurar uma nova instalação do Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
-
 [VPS: primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Junte-se à nossa comunidade de utilizadores no <https://community.ovh.com/en/>.
