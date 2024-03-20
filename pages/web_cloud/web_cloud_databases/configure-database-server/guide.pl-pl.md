@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja serwera baz danych'
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-updated: 2024-03-14
+updated: 2024-03-20
 ---
 
 > [!primary]
@@ -102,9 +102,9 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 #### Instancja MySQL i MariaDB
 
-- Kliknij kartę `Konfiguracja`.
+- Kliknij kartę `Konfiguracja`{.action}.
 
-W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Zastosuj`{.action}.
+W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Wyślij`{.action}.
 
 ![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
 
@@ -161,9 +161,24 @@ Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
 
 #### Instancja PostgreSQL
 
-Nie można zmienić konfiguracji instancji PostgreSQL. 
+- Kliknij zakładkę `Konfiguracja`{.action}.
 
-Możesz jednak aktywować rozszerzenia Twoich baz danych. W tym celu przejdź do zakładki `Bazy danych`, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
+W części **"Konfiguracja PostgreSQL"** znajdziesz aktualnie skonfigurowaną konfigurację Twojej bazy danych. Możesz ją bezpośrednio zmienić, po czym kliknij przycisk `Wyślij`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages**: Określa poziomy wiadomości do filtrowania w logach serwera. Poziomy dostępne dla rozwiązania Web Cloud Databases to: 
+    - **"WARNING"**: Dostarcza komunikaty ostrzegawcze o potencjalnych problemach.
+    - **"ERROR"**: Wysyła błąd, który spowodował anulowanie bieżącego zamówienia.
+    - **"LOG"**: Rejestruje informacje dla administratorów serwera.
+    - **"FATAL"**: Wysyła błąd, który spowodował zakończenie bieżącej sesji.
+    - **"PANIC"**: Wysyła błąd, który spowodował zakończenie wszystkich sesji.
+
+Każdy poziom obejmuje wszystkie następne poziomy. Im wyższy poziom, tym mniej wiadomości jest rejestrowanych w logach serwera.
+
+Domyślnie jest ustawiona wartość **"WARNING"**, ponieważ zawiera wartości **"ERROR"**, **"LOG"**, **"FATAL"** i **"PANIC"**.
+
+Możesz włączyć rozszerzenia dla swoich baz danych. W tym celu przejdź do zakładki `Bazy danych`{.action}, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
