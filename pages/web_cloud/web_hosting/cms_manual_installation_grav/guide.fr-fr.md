@@ -6,7 +6,7 @@ updated: 2024-03-20
 
 ## Objectif
 
-Le **CMS** (**C**ontent **M**anagement **S**ystem) Grav permet de développer rapidement des sites web. Conçu pour une gestion simplifiée du contenu à travers des fichiers Markdown, Grav se prête parfaitement à la création de sites web personnels ou de projets pour petites entreprises, sans compromettre la qualité ou la personnalisation.
+Le **CMS** (**C**ontent **M**anagement **S**ystem) Grav permet de développer rapidement des sites web. Conçu pour une gestion optimisée du contenu à travers des fichiers Markdown, Grav se prête parfaitement à la création de sites web personnels ou de projets pour petites entreprises, sans en compromettre la qualité ou la personnalisation.
 
 **Découvrez comment installer manuellement le CMS Grav sur votre hébergement web OVHcloud.**
 
