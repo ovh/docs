@@ -134,7 +134,7 @@ Pour identifier et signaler un e-mail ou un SMS de phishing, consultez notre [gu
 
 Vous pouvez signaler tout comportement abusif ou contenu illicite sur la plateforme OVHcloud [www.ovh.com/abuse/](https://www.ovh.com/abuse/) dédiée à cet effet . Sélectionnez la catégorie concernée puis renseignez les champs demandés.
 
-Seul les logs et éléments techniques peuvent être transmis au titulaire du service incriminé. Veillez donc à ne pas inclure de données personnelles dans ces champs.
+Seuls les logs et éléments techniques peuvent être transmis au titulaire du service incriminé. Veillez donc à ne pas inclure de données personnelles dans ces champs.
 
 ### Suite à la déclaration d'un abus, que devient mon signalement ?
 
