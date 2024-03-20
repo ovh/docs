@@ -73,7 +73,7 @@ Pour voir et modifier le contenu d'une page, cliquez sur le nom de la page dans 
 
 ##### Thèmes
 
-Dans le menu principal de Grav, cliquez sur `Themes`{.action} pour changer l'apparence de votre site web. Installez de nouveaux thèmes ou sélectionnez en un déjà installé comme thème actif.
+Dans le menu principal de Grav, cliquez sur `Themes`{.action} pour changer l'apparence de votre site web. Installez de nouveaux thèmes ou sélectionnez-en un déjà installé comme thème actif.
 
 Pour modifier le thème actif, cliquez sur le thème possédant l'étiquette `Active Theme`.
 
