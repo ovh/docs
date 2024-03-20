@@ -55,6 +55,8 @@ Jeśli musisz zmienić układ partycji systemu operacyjnego, zaznacz kratkę "Pe
 
 ![Personalizuj konfigurację partycji](images/reinstalling-your-server-04.png){.thumbnail}
 
+W tym kroku skonfigurujesz typ macierzy RAID i partycjonowanie w ramach sprzętowych oraz systemu operacyjnego.
+
 Po zakończeniu korekt kliknij Dalej, aby `uzyskać dostęp`{.action} do strony podsumowania.
 
 #### Dodanie klucza SSH (opcjonalnie)

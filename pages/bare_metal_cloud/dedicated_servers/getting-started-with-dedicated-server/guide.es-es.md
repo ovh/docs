@@ -61,6 +61,8 @@ Si debe cambiar el esquema de partición del sistema operativo, marque la casill
 
 ![Personalizar la configuración de las particiones](images/reinstalling-your-server-04.png){.thumbnail}
 
+Este paso le permite configurar el tipo de RAID y la partición, dentro de los límites del hardware y del sistema operativo.
+
 Una vez realizados los ajustes, haga clic en `Siguiente`{.action} para acceder a la página de resumen.
 
 #### Añadir una llave SSH (opcional)

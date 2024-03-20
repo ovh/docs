@@ -55,6 +55,8 @@ Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie 
 
 ![Konfiguration der Partitionen anpassen](images/reinstalling-your-server-04.png){.thumbnail}
 
+In diesem Schritt können Sie RAID- und Partitionierungsoptionen innerhalb der Grenzen der Serverhardware und des Betriebssystems einrichten.
+
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
 
 #### Hinzufügen eines SSH-Schlüssels (optional)

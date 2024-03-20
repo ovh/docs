@@ -57,6 +57,8 @@ Si vous devez modifier le schéma de partitionnement de votre système d'exploit
 
 ![Personnaliser la configuration des partitions](images/reinstalling-your-server-04.png){.thumbnail}
 
+Cette étape vous permet de configurer le type de RAID ainsi que le partitionnement, dans les limites du matériel et du système d'exploitation.
+
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
 #### Ajout d'une clé SSH (facultatif)

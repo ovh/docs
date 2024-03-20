@@ -61,6 +61,8 @@ Per modificare lo schema di partizione del tuo sistema operativo, seleziona la c
 
 ![Personalizzare la configurazione delle partizioni](images/reinstalling-your-server-04.png){.thumbnail}
 
+Questo step permette di configurare il tipo di RAID e il partizionamento, nei limiti dell'hardware e del sistema operativo.
+
 Una volta terminate le modifiche, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
 
 #### Aggiunta di una chiave SSH (facoltativo)
