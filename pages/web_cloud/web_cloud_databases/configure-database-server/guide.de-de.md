@@ -1,7 +1,7 @@
 ---
 title: 'Konfigurieren Ihres Datenbankservers'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
-updated: 2024-03-13
+updated: 2024-03-14
 ---
 
 > [!primary]
@@ -207,23 +207,9 @@ show variables like "version";
 
 ### Logs und Messwerte
 
-#### Zugang zu Slow-Query-Logs
+#### Zugang zu den Logs
 
-> **Definition von "slow query log"**
->
-> Es handelt sich um Anfragen, die zu lange benötigten, bis sie ausgeführt wurden. Der Wert wird auf „1 Sekunde“ auf unseren Datenbankservern in der **“long_query_time"**-Variable festgelegt.
-
-Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden.
-
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
-
-Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Um sich via **SFTP** einzuloggen, können Sie den Client von FileZilla verwenden. Diese Anleitung kann Ihnen dabei helfen: [Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
-
-Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
+Um die Logs Ihrer Web Cloud Databases Lösung einzusehen, folgen Sie unserer Anleitung „[Web Cloud Databases - Logs abrufen](/pages/web_cloud/web_cloud_databases/retrieve-logs)“.
 
 #### Überprüfung der RAM Nutzung
 

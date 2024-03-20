@@ -445,7 +445,7 @@ Jeśli filtry istnieją, lista będzie wyświetlana zgodnie z ich kolejnością:
 
 - **(2)** Przycisk ten jest używany jako uchwyt, dzięki czemu można przesunąć filtr na listę i przypisać mu kolejność stosowania. Każdy filtr jest stosowany w kolejności zdefiniowanej na liście.
 
-Kliknij przycisk `+ Dodaj filtr`{.action}, aby rozpocząć jego tworzenie. Okno trybu prostego jest wyświetlane domyślnie. Możesz przejść do trybu zaawansowanego, klikając pozycję `Przejdź do zaawansowany`{.action}, aby wyświetlić wszystkie operatory porównania. Pomożemy Ci w sekcji "[Zrozumieć, jak ustawić filtry](filters-howto)".
+Kliknij przycisk `+ Dodaj filtr`{.action}, aby rozpocząć jego tworzenie. Okno trybu prostego jest wyświetlane domyślnie. Możesz przejść do trybu zaawansowanego, klikając pozycję `Przejdź do zaawansowany`{.action}, aby wyświetlić wszystkie operatory porównania. Pomożemy Ci w sekcji "[Zrozumieć, jak ustawić filtry](#filters-howto)".
 
 > [!tabs]
 > **Tryb prosty**

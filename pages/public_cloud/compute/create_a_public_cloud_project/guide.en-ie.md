@@ -20,16 +20,16 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}.
 
-![project creation](images/firstproject2024.png){.thumbnail}
+![project creation](images/firstproject2024.png){.thumbnail width="400"}
 
 - If you do not have a valid payment method in your OVHcloud account yet, the process of creating the Public Cloud project begins. Your project will then be created in [discovery mode](#discovery).
 - If you have already registered a payment method in your OVHcloud account, you will need to name your Public Cloud project first, then select your payment method.
 
-![project creation](images/project-creation.png){.thumbnail}
+![project creation](images/project-creation.png){.thumbnail width="400"}
 
 Once the creation process is complete, your new Public Cloud project will be visible in the top left-hand corner of the `Public Cloud`{.action} section of the OVHcloud Control Panel:
 
-![new project created](images/public-cloud-interface.png){.thumbnail}
+![new project created](images/public-cloud-interface.png){.thumbnail width="400"}
 
 You now have access to the entire OVHcloud Public Cloud ecosystem. To discover this new interface, read our guide [Familiarise yourself with the Public Cloud interface ](/pages/public_cloud/compute/03-public-cloud-interface-walk-me).
 
@@ -42,7 +42,7 @@ You now have access to the entire OVHcloud Public Cloud ecosystem. To discover t
 >
 > To harness the full potential of the Public Cloud and start your first resources, click `Activate project`{.action} on your project’s homepage.
 >
->![activate project](images/activate-project.png){.thumbnail}
+>![activate project](images/activate-project.png){.thumbnail width="400"}
 
 ## Go further
 

@@ -441,7 +441,7 @@ Si des filtres existent, vous retrouverez la liste selon leur ordre d'applicatio
 
 - **(2)** Ce bouton s'utilise comme une poignée, il vous permet de déplacer le filtre dans la liste pour lui attribuer un ordre d'application. En effet, chaque filtre est appliqué selon l'ordre qui est défini dans la liste.
 
-Cliquez sur le bouton `+ Ajouter un filtre`{.action} pour lancer sa création. La fenêtre du mode simple s'affiche par défaut. Vous pouvez passer en mode avancé en cliquant sur `Passer à avancé`{.action} pour disposer de tous les opérateurs de comparaison. N'hésitez pas à vous aider de la section « [Comprendre comment paramètrer ses filtres](filters-howto) ».
+Cliquez sur le bouton `+ Ajouter un filtre`{.action} pour lancer sa création. La fenêtre du mode simple s'affiche par défaut. Vous pouvez passer en mode avancé en cliquant sur `Passer à avancé`{.action} pour disposer de tous les opérateurs de comparaison. N'hésitez pas à vous aider de la section « [Comprendre comment paramètrer ses filtres](#filters-howto) ».
 
 > [!tabs]
 > **Mode simple**
