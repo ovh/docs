@@ -65,7 +65,7 @@ Dans le menu principal de Grav, choisissez `Configuration`{.action}, puis dans l
 
 ##### Pages
 
-Dans le menu principal de Grav, cliquez sur `Pages`{.action} pour voir la liste de toutes les pages de votre site web. Créez de nouvelles pages, modifiez les existantes, et organisez la structure de votre site web.
+Dans le menu principal de Grav, cliquez sur `Pages`{.action} pour voir la liste de toutes les pages de votre site web. Créez de nouvelles pages, modifiez les existantes et organisez la structure de votre site web.
 
 Pour voir et modifier le contenu d'une page, cliquez sur le nom de la page dans la liste. Par exemple, cliquez sur `Home`{.action} pour modifier le titre de la page principale de votre site web ainsi que son contenu.
 
