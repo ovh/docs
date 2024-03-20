@@ -1,7 +1,7 @@
 ---
 title: 'Using the Outlook Web App with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
-updated: 2021-06-25
+updated: 2024-03-19
 ---
 
 ## Objective
@@ -29,6 +29,12 @@ This guide will give you a better understanding of the usual email account tasks
 To log in to OWA webmail with your email address, go to the general [webmail login page](https://www.ovh.co.uk/mail). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+> 
+> If you are redirected to a **Roundcube** interface, this means that you are using the legacy version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> To familiarise yourself with the **Roundcube** interface, please refer to our guide on [Using your email account via the Roundcube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 If this is your first time logging in to OWA webmail with this email address, you will be prompted to set the interface language and time zone. Click `Save`{.action} to continue.
 

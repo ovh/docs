@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2020-02-25
+updated: 2024-03-19
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails 
 
 ## En pratique
 
-Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide. 
+Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide.
 
 Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin_1) en bas de ce guide.
 
@@ -31,6 +31,12 @@ Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver
 Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](https://www.ovh.com/fr/mail/). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+>
+> Si vous êtes redirigé sur une interface **Roundcube**, cela signifie que vous êtes sur la version historique de l'offre MX Plan. Pour plus d'informations sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Pour vous familiariser avec l'interface **Roundcube**, consultez notre guide [Utiliser son adresse e-mail depuis le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
 
