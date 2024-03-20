@@ -18,7 +18,6 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 
 ## Prérequis
-
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 - Disposer d'un nom de domaine enregistré chez OVHcloud et pour lequel aucune opération (changement de propriétaire, transfert, création) n'est en cours. Si une opération a été finalisée récemment sur votre nom de domaine, un délai d'au moins 60 jours calendaires est nécessaire avant de réaliser une nouvelle opération.
 - Être le [contact administrateur](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine concerné.
