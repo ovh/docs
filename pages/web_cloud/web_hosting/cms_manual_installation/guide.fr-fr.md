@@ -1,12 +1,12 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2024-03-19
+updated: 2024-03-20
 ---
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop ou Pico en quelques étapes.
+Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop, Pico ou Grav en quelques étapes.
 
 > [!warning]
 >
@@ -21,6 +21,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
 >
 
 > [!success]
@@ -81,6 +82,12 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 **Pico** est un CMS léger basé sur PHP, idéal pour créer des sites web ou des blogs. Dépourvu de base de données, il utilise des fichiers Markdown pour gérer le contenu. Il supporte des extensions pour personnaliser votre site web.
 
 - Site officiel de [Pico](https://picocms.org/){.external}
+
+#### Grav
+
+**Grav** est un CMS moderne et flexible basé sur PHP. Il est conçu sans base de données et utilise des fichiers Markdown pour le stockage et la gestion du contenu. Grav se distingue par son système de gestion de paquets qui facilite l'installation et la mise à jour des plugins et des thèmes pour votre site web.
+
+- Site officiel de [Grav](https://getgrav.org/){.external}
 
 > [!warning]
 >
@@ -175,6 +182,7 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
 
 > [!primary]
 >
@@ -187,6 +195,7 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
 >
 > Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -365,6 +374,7 @@ Pour poursuivre l'installation, suivez l'un des liens suivants en cliquant sur l
 - [Finaliser l'installation de Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finaliser l'installation de PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Finaliser l'installation de Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Finaliser l'installation de Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
 
 ## Aller plus loin <a name="go-further"></a>
 

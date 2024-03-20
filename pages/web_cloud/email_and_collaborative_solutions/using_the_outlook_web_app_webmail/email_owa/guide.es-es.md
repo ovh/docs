@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
-updated: 2021-06-25
+updated: 2024-03-19
 ---
 
 ## Objetivo
@@ -29,6 +29,12 @@ Esta guía le permitirá comprender mejor las tareas más habituales de la cuent
 Para acceder al webmail de OWA con su dirección de correo electrónico, diríjase a la [página de inicio de sesión](https://www.ovh.es/mail/). Introduzca su dirección de correo electrónico completa y su contraseña, y haga clic en el botón `Iniciar sesión`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+> 
+> Si se le redirige a una interfaz **Roundcube**, significa que se encuentra en la versión antigua del servicio MX Plan. Para más información sobre la solución MX Plan, consulte nuestra página [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Para familiarizarse con la interfaz **Roundcube**, consulte nuestra guía [Webmail: Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Si es la primera vez que accede a esta dirección de correo a través del webmail de OWA, se le pedirá que configure el idioma y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
 
