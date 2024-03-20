@@ -1,7 +1,7 @@
 ---
 title: NSX - FAQ
 excerpt: Retrouvez les questions les plus fréquentes concernant NSX
-updated: 2023-10-19
+updated: 2024-03-20
 ---
 
 ## Objectif
@@ -19,6 +19,12 @@ Tous les packs sont basés sur des jours (1 jour = 8 heures). 1 jour, 2 jours ou
 La première approche est la même pour tous les packs avec une phase de découverte, mais la durée du pack dépendra de la complexité de l'environnement et de la maturité du client.
 
 Cette question sera étudiée avec l'équipe PS lors d'un premier appel d'évaluation.
+
+<a name="public ip"></a>
+
+### Comment puis-je protéger mes machines virtuelles directement exposées sur Internet avec une IP Publique ?
+
+Vous pouvez positionner des machines virtuelles dans le segment ovh-t0-public et ensuite sécuriser vos flux avec le Distributed Firewall de NSX.
 
 <a name="eofnsxv"></a>
 
@@ -189,7 +195,7 @@ Il n'est pas possible de gérer l'output Internet dans NSX car Edge est géré p
 
 <a name="ipmigrationperblock"></a>
 
-### La migration des IP peut-elle se faire IP par IP ou par bloc RIPE ?
+### La migration des IP peut-elle se faire IP par IP ou par bloc IP ?
 
 La migration d'IP est effectuée par bloc, vous changez l'étape suivante du bloc d'IP, le bloc global est transitionné vers la partie NSX.
 
