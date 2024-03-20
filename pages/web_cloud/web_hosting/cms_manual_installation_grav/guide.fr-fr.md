@@ -85,7 +85,7 @@ Sur la page qui s'affiche, personnalisez votre thème actif.
 
 ##### Sauvegarde
 
-Sauvegarder votre site web permet de le restaurer à un état antérieur en cas de problème.
+Sauvegarder votre site web permet de le restaurer à un état antérieur en cas de dysfonctionnement.
 
 Dans le menu principal de Grav, cliquez sur `Tools`{.action}, sélectionnez `Backup Now`{.action} en haut à droite de l'écran qui s'affiche, puis `Download Backup`{.action} pour télécharger la sauvegarde de votre site web sur votre ordinateur. En actualisant la page `Backup`, votre sauvegarde s'affiche dans la liste `Backup History`{.action}.
 
