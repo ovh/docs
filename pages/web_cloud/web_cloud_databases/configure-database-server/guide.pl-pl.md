@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja serwera baz danych'
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-updated: 2024-03-19
+updated: 2024-03-20
 ---
 
 > [!primary]

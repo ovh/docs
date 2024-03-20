@@ -1,7 +1,7 @@
 ---
 title: Configura il tuo database server 
 excerpt: Come configurare e ottimizzare il tuo database server
-updated: 2024-03-19
+updated: 2024-03-20
 ---
 
 > [!primary]
