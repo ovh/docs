@@ -22,9 +22,9 @@ Cette question sera étudiée avec l'équipe PS lors d'un premier appel d'évalu
 
 <a name="public ip"></a>
 
-### Comment puis-je protéger mes machines virtuelles exposé sur internet directement, avec une IP Publique ?
+### Comment puis-je protéger mes machines virtuelles directement exposées sur Internet avec une IP Publique ?
 
-Vous pouvez positionner des machines virtuelles dans le segment ovh-t0-public, et ensuite sécuriser vos flux avec le Distributed Firewall de NSX.
+Vous pouvez positionner des machines virtuelles dans le segment ovh-t0-public et ensuite sécuriser vos flux avec le Distributed Firewall de NSX.
 
 <a name="eofnsxv"></a>
 
