@@ -116,4 +116,3 @@ Vous venez d'installer manuellement le CMS Grav sur votre hébergement web OVHcl
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
