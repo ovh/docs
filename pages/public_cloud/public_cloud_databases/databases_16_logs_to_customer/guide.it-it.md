@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Logs to customers
 excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
-updated: 2024-03-06
+updated: 2024-03-20
 ---
 
 ## Objective
@@ -22,9 +22,21 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 ### Forward logs to your LDP stream
 
-- Retrieve your LDP destination `streamId`
-- Retrieve your `serviceName`
-- Retrieve your `clusterId`
+Retrieve your LDP destination `streamId`:
+
+- In the OVHcloud Control Panel, go to your LDP page.
+- Go to the `Data stream` tab.
+- Choose your target stream and click on `Edit`{.action}.
+- You can see the `streamId` in the URL `https://.../streams/<streamId>/edit`.
+
+Retrieve your LDP destination `serviceName`:
+
+- It refers to your Public Cloud project ID.
+
+Retrieve your `clusterId`:
+
+- In the OVHcloud Control Panel, go to your database.
+- You can see the field `Cluster ID`.
 
 Use the following API call:
 
