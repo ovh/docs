@@ -25,7 +25,7 @@ Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mai
 
 > [!primary]
 >
-> Instrukcji przedstawionych po dwóch pierwszych krokach nie trzeba wykonywać w konkretnej kolejności. Pasek nawigacji znajdujący się po lewej stronie przewodnika umożliwia przejście do fragmentów przydatnych w danym przypadku.
+> Instrukcji przedstawionych po dwóch pierwszych krokach nie trzeba wykonywać w konkretnej kolejności.
 >
 
 ### 1. Dostęp do interfejsu OWA webmail

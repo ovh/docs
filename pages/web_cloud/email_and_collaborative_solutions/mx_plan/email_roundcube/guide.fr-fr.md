@@ -34,6 +34,7 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
     - [Contacts](#contacts-settings)
     - [Dossiers spéciaux](#special-folder-settings)
     - [Paramètres du serveur](#server-settings)
+    - [Chiffrement](#Encryption)
 - [Gérer les identités et leur signature](#identity-signature)
     - [Identity](#identity)
     - [Signature](#signature)
@@ -57,6 +58,11 @@ Rendez-vous sur la page <https://www.ovh.com/fr/mail/>. Saisissez une adresse e-
 Vous serez alors redirigé vers l'interface Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
+
+> [!primary]
+> 
+> Lorsque vous vous connectez pour la première fois sur l'interface Roundcube, il se peut que l'affichage de cette dernière soit différent de celle que vous voyez sur ce guide. C'est normal ! Il s'agit simplement de l'affichage "classique" qui est affecté par défaut à votre interface. Vous pouvez changer l'habillage de votre interface en allant dans 'Paramètres' puis sélectionnez la section 'Interface utilisateur' puis dans "Habillage de l'interface" et sélectionnez l'affichage "Larry".
+> L'habillage de l'interface n'aura pas d'effet sur les explications qui suivent de ce guide.
 
 > [!warning]
 > 
@@ -171,6 +177,8 @@ L'option `Jolies dates` permet d'afficher la date de réception/d'envoi avec des
 
 La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri.
 
+Vous pouvez choisir l'esthétique d'affichage de votre interface. Vous avez le choix entre l'affichage **Classic** ou l'affichage **Larry**.
+
 #### Vue de la boîte de courriels <a name="mail-view-settings"></a>
 
 Définissez ici l'ergonomie pour visualiser et agir sur les e-mails. L'option `Disposition` permet d'agencer les 3 fenêtres décrites dans la partie [Interface générale du webmail Roundcube](#topwindow).
@@ -197,6 +205,10 @@ Roundcube dispose de 4 dossiers spéciaux : `Brouillons`, `Envoyés`, `Pourriels
 Nous ne conseillons pas de les modifier mais il est possible d'attribuer le comportement d'un dossier spécial à un autre dossier créé ultérieurement, grâce aux menus déroulants.<br>
 **Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé. Les e-mails qui y seront enregistrés seront considérés comme des brouillons jusqu'à leur envoi effectif.
 
+**Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé en cliquant sur la liste déroulante et en choisissant ce dossier. Si aucun dossier ne lui est attribué, il sera automatiquement mis sur l'option "Drafts". Les e-mails qui y seront enregistrés seront alors considérés comme des brouillons jusqu'à leur envoi effectif.
+
+> En pratique, je crée un sous-dossier "Draft mails clients". Je me rends dans `mes préférences`{.action} / `Dossiers spéciaux`{.action} et je choisie l'option "Brouillons". Dans le menu déroulant, je sélectionne le dossier "Draft mails clients" pour remplacer "Drafts". Les e-mails rédigés dans ce dossier seront considérés comme des brouillons.
+
 #### Paramètres du serveur <a name="server-settings"></a>
 
 Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En effet, l'option `Vider la corbeille à la déconnexion` permet d'éviter le cumul des éléments qui ont été supprimés . L'option `Supprimer directement les pourriels` supprimera automatiquement tous les e-mail considérés comme SPAM.
@@ -204,6 +216,16 @@ Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En
 > [!warning]
 > 
 > Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « SPAM ») se retrouverait déclaré comme SPAM pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
+
+#### Chiffrement <a name="Encryption"></a>
+
+Si votre navigateur vous le permet, vous pouvez installer et activer une extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailveloppe » permet de :
+
+- Chiffrer et déchiffrer des e-mails dans votre navigateur
+- Gérer les clés de vos contacts
+- Garder le contenu de vos e-mail privé, même de votre fournisseur de messagerie
+
+Vous êtes seul à pouvoir lire vos e-mails. Cette extension est un moyen de sécuriser votre webmail si vous recevez des e-mails de nature confidentielle.
 
 ### Gérer les identités et leur signature <a name="identity-signature"></a>
 
@@ -348,7 +370,7 @@ Dans la fenêtre de rédaction d'un e-mail, on retrouve les champs suivants :
     - `Texte en clair` : uniquement du texte sans mise en forme.
     - `HTML`: texte avec mise en forme. Une barre d'outils HTML apparaît au-dessus de la fenêtre de saisie.
 - **Priorité** de l'e-mail.
-- **Avis de réception** : un accusé de réception est demandé au destinataire.
+- **Avis d'ouverture du courriel** : un accusé de réception est demandé au destinataire.
 - **Notification d'état de distribution** lorsque l'e-mail a bien été transmis au destinataire.
 - **Enregistrer le courriel envoyé dans** : choisir le dossier dans lequel une copie de l'e-mail sera stockée.
 

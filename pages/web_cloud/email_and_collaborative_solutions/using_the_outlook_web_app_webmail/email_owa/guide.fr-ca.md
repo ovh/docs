@@ -23,7 +23,7 @@ Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver
 
 > [!primary]
 >
-> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné. Vous pouvez utiliser la barre de navigation sur le côté gauche de ce guide pour passer aux paragraphes qui vous sont utiles.
+> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné.
 >
 
 ### Étape 1 : Se connecter à OWA

@@ -21,7 +21,7 @@ Questa guida ti consentirà di comprendere meglio quello che è possibile ottene
 
 > [!primary]
 >
-> Dopo i primi due passaggi la procedura non deve essere seguita con un particolare ordine. Puoi passare direttamente ai paragrafi che ti servono utilizzando la barra di navigazione sul lato sinistro di questa guida.
+> Dopo i primi due passaggi la procedura non deve essere seguita con un particolare ordine.
 >
 
 ### 1. Accedere alla Webmail OWA

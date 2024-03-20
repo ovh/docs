@@ -17,13 +17,13 @@ Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails 
 
 ## En pratique
 
-Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide.
+Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur des paramètres non abordés dans ce guide.
 
 Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin_1) en bas de ce guide.
 
 > [!primary]
 >
-> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné. Vous pouvez utiliser la barre de navigation sur le côté gauche de ce guide pour passer aux paragraphes qui vous sont utiles.
+> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné.
 >
 
 ### Étape 1 : Se connecter à OWA
@@ -73,11 +73,11 @@ Pour lire un e-mail, sélectionnez son dossier si nécessaire. Cliquez ensuite s
 
 ### Envoyer et répondre
 
-Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en haut de l'interface du webmail. Le volet d’édition apparaîtra sur le côté droit. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Dès que vous êtes prêt à l'envoyer, cliquez sur `Envoyer`{.action}.
+Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en haut de l'interface du webmail. Le volet d’édition apparaîtra sur le côté droit. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Cliquez sur `Envoyer`{.action} une fois votre e-mail rédigé.
 
 ![useowa](images/use-owa-step7.png){.thumbnail}
 
-Pour **répondre à un message**, [cliquez d'abord](./#afficher-les-e-mails) sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action}. Par contre, utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie).
+Pour **répondre à un message**, cliquez d'abord sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action} pour répondre à l'ensemble des destinataires. Utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie), cliquez sur `Répondre`{.action}.
 
 ![useowa](images/use-owa-step8.png){.thumbnail}
 

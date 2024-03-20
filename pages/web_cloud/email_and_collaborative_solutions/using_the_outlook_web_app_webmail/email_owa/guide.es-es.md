@@ -21,7 +21,7 @@ Esta guía le permitirá comprender mejor las tareas más habituales de la cuent
 
 > [!primary]
 >
-> Después de los dos primeros pasos, no es necesario seguir las instrucciones en un orden concreto. Puede utilizar la barra de navegación de la izquierda de esta guía para saltar al párrafo que más le interese.
+> Después de los dos primeros pasos, no es necesario seguir las instrucciones en un orden concreto.
 >
 
 ### 1. Acceder a OWA
