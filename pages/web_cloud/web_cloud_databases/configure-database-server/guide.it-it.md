@@ -1,7 +1,7 @@
 ---
 title: Configura il tuo database server 
 excerpt: Come configurare e ottimizzare il tuo database server
-updated: 2023-04-24
+updated: 2024-03-14
 ---
 
 > [!primary]
@@ -207,33 +207,9 @@ show variables like "version";
 
 ### Log e Metriche
 
-#### Conoscere il tempo di esecuzione delle richieste
+#### Accesso ai log
 
-In questo modo è possibile visualizzare il tempo di esecuzione delle richieste sul tuo database server nelle ultime 24 ore.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
-
-Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistiche dei tempi di esecuzione delle richieste"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Accesso ai log "Slow Query"
-
-> **Definizione di "slow query log"**
-> 
-> Le richieste richiedono più tempo per essere eseguite. Il valore è definito a 1 secondo sui nostri database server nella variabile **"long_query_time"**.
-
-Questi log, chiamati **"slow-query.log"**, possono essere recuperati alla radice dello spazio SFTP del tuo database server.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
-
-Nella scheda `informazioni generali`, consulta la sezione **"SFTP"** nel riquadro **"Informazioni di connessione"**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [Utilizzo del software FileZilla con il tuo hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-Se questo file è vuoto, significa che non hai richieste lente.
+Per accedere ai log della soluzione Web Cloud Databases, consulta la nostra guida "[Web Cloud Databases - Come recuperare i log?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitora la RAM consumata
 

@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja serwera baz danych'
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-updated: 2023-04-24
+updated: 2024-03-14
 ---
 
 > [!primary]
@@ -206,33 +206,9 @@ show variables like "version";
 
 ### Logi i metryki
 
-#### Statystyki czasu wykonywania zapytań
+#### Dostęp do logów
 
-Dzięki temu możesz wyświetlić czas wykonywania zapytań na serwerze baz danych w ciągu ostatnich 24 godzin.
-
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
-
-Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykonywania zapytań"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Dostęp do logów "Slow Query"
-
-> **Definicja "slow query log"**
-> 
-> Są to nieoptymalne zapytania, które trwają dłużej. Wartość jest ustawiona na 1 sekundę dla serwerów baz danych w zmiennej **"long_query_time"**.
-
-Logi te, nazywane **"slow-query.log"**, mogą zostać odzyskane z katalogu głównego przestrzeni SFTP Twojego serwera baz danych.
-
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
-
-W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowaniu"**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-Jeśli ten plik jest pusty, to znaczy, że nie masz żadnych nieoptymalnych zapytań.
+Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Jak pobrać logi?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitoruj zużytą pamięć RAM
 

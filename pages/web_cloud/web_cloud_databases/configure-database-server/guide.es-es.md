@@ -1,7 +1,7 @@
 ---
 title: 'Configurar el servidor de bases de datos'
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
-updated: 2023-04-24
+updated: 2024-03-14
 ---
 
 > [!primary]
@@ -207,33 +207,9 @@ show variables like "version";
 
 ### Logs y Métricas
 
-#### Estadísticas del tiempo de ejecución de las consultas
+#### Acceso a los logs
 
-Para visualizar el tiempo de ejecución de las consultas en el servidor de bases de datos en las últimas 24 horas.
-
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
-
-Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consultar la gráfica **"Estadísticas del tiempo de ejecución de las consultas"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Acceso a los logs "Slow Query"
-
-> **Definición de "slow query log"**
-> 
-> Las peticiones tardan más en ejecutarse. El valor se define en 1 segundo en los servidores de bases de datos de la variable **"long_query_time"**.
-
-Estos logs, denominados **"slow-query.log"**, pueden recuperarse en la raíz del espacio SFTP de su servidor de bases de datos. 
-
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
-
-En la pestaña `Información general`, encontrará la sección **"SFTP"** en el recuadro **"Información de conexión".**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Para conectarse por **SFTP**, puede hacerlo a través del programa Filezilla, siguiendo la guía Guía de uso de FileZilla
-
-Si el archivo está vacío, no tiene una petición lenta.
+Para acceder a los logs de su solución Web Cloud Databases, consulte nuestra guía "[Web Cloud Databases - ¿Cómo recuperar los logs?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Seguimiento de la RAM consumida
 

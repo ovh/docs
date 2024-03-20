@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
-updated: 2023-09-06
+updated: 2024-03-15
 ---
 
 ## Objectif
@@ -71,14 +71,14 @@ Dans le cas d'un nom de domaine externe à votre compte client (autre identifian
 Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 
 > [!primary]
-> Pour ajouter un sous-domaine, vous devez d’abord sélectionner le domaine principal dans la liste (exemple: mydomain.ovh). L’étape suivante vous permettra d’indiquer le sous-domaine (exemple: **blog**.mydomain.ovh).
+> Pour ajouter un sous-domaine, vous devez d’abord sélectionner le domaine principal dans la liste (exemple: domain.tld). L’étape suivante vous permettra d’indiquer le sous-domaine (exemple: **blog**.domain.tld).
 
 ![multisite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
-|Domaines|Par défaut, le nom de domaine que vous avez sélectionné est renseigné automatiquement. Vous pouvez y ajouter un sous-domaine (par exemple, **blog**.mydomain.ovh) et créer simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.mydomain.ovh). En définitive, ce domaine sera l'adresse Internet du site que vous souhaitez mettre en ligne.|
-|Dossier racine|Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe. C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.mydomain.ovh, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
+|Domaines|Par défaut, le nom de domaine que vous avez sélectionné est renseigné automatiquement. Vous pouvez y ajouter un sous-domaine (par exemple, **blog**.domain.tld) et créer simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.domain.tld). En définitive, ce domaine sera l'adresse Internet du site que vous souhaitez mettre en ligne.|
+|Dossier racine|Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe. C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.domain.tld, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
 |SSL|Vous permet de bénéficier d'une connexion sécurisée (HTTPS://) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external}. En activant le SSL et le CDN (Content Delivery Network), vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
 |Activer le CDN|Permet d'activer le CDN (mise en cache des éléments statiques de votre site, comme des images) sur le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page CDN](https://www.ovhcloud.com/fr/web-hosting/options/cdn/){.external}. En activant le SSL et le CDN, vous pourrez également bénéficier du protocole **HTTP2** (ce dernier est activé par défaut dans notre datacenter de Gravelines).|
 |IP du pays|Permet de bénéficier d'une adresse IP géolocalisée (parmi une liste de pays) pour le nom de domaine sélectionné. Apprenez-en plus grâce à [notre page IP](https://www.ovhcloud.com/fr/web-hosting/options/){.external}.|
@@ -117,7 +117,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.mydomain.ovh`, vous devrez créer l'entrée TXT `ovhcontrol.mydomain.ovh` et non l'entrée `ovhcontrol.blog.mydomain.ovh`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.domain.tld) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.domain.tld`, vous devrez créer l'entrée TXT `ovhcontrol.domain.tld` et non l'entrée `ovhcontrol.blog.domain.tld`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
 >
 > ![multisite](images/find-token.png){.thumbnail}
 >
@@ -132,8 +132,8 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 
 |Information|Description|
 |---|---|
-|Domaine|Renseignez le nom de domaine que vous souhaitez utiliser. Ajoutez-y au besoin un sous-domaine (par exemple, **blog**.mydomain.ovh) et créez simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.mydomain.ovh). En définitive, celui-ci correspondra à l'adresse Internet du site que vous souhaitez mettre en ligne. Sachez que vous devez être en mesure de modifier la configuration du domaine (sa zone DNS) afin que l'ajout puisse être finalisé.|
-|Dossier racine| Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe. C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.mydomain.ovh, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
+|Domaine|Renseignez le nom de domaine que vous souhaitez utiliser. Ajoutez-y au besoin un sous-domaine (par exemple, **blog**.domain.tld) et créez simultanément le sous-domaine « www » correspondant (par exemple, **www.blog**.domain.tld). En définitive, celui-ci correspondra à l'adresse Internet du site que vous souhaitez mettre en ligne. Sachez que vous devez être en mesure de modifier la configuration du domaine (sa zone DNS) afin que l'ajout puisse être finalisé.|
+|Dossier racine| Définissez le dossier, sur votre espace de stockage, vers lequel le domaine pointe. C'est dans cet espace que les fichiers du site devront être mis en ligne. Par exemple, pour blog.domain.tld, le dossier racine pourrait être « blog ». Si le dossier n'existe pas, il sera créé automatiquement.|
 |Activer l'IPv6|Permet d'activer le protocole IPv6 sur le domaine renseigné. Apprenez-en plus grâce à [notre page IP](https://www.ovhcloud.com/fr/web-hosting/options/){.external}.|
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}. Vérifiez ensuite le récapitulatif qui s'affiche.

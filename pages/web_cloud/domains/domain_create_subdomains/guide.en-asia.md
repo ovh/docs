@@ -1,7 +1,7 @@
 ---
 title: "How to create a subdomain"
 excerpt: "Find out how to define a subdomain and how to create one at OVHcloud"
-updated: 2023-12-15
+updated: 2024-03-05
 ---
 
 ## Objective <a name="goal"></a>
@@ -89,7 +89,7 @@ There are two possible scenarios:
 >
 > 1: To identify the location of the active DNS zone for a domain name registered with OVHcloud, you can use our guide “[Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)”.
 >
-> 2: If your domain name is not registered with OVHcloud, contact your domain name’s current *registrar* to find out where the active DNS zone is hosted.
+> 2: If your domain name is not registered with OVHcloud, contact your domain name’s current *registrar* to find out where the active DNS zone is hosted. Please note that you can use our guide on [Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) if you would like to perform this action.
 >
 
 If the DNS servers declared for your domain name have one of the following two forms:

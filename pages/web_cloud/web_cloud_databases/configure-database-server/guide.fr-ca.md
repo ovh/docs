@@ -1,7 +1,7 @@
 ---
 title: 'Configurer votre serveur de bases de données'
 excerpt: 'Découvrez comment configurer et optimiser votre serveur de base de données'
-updated: 2023-04-24
+updated: 2024-03-14
 ---
 
 ## Objectif
@@ -203,33 +203,9 @@ show variables like "version";
 
 ### Logs et Métriques
 
-#### Connaitre le temps d'exécution des requêtes
+#### Accès aux logs
 
-Cela vous permet de visualiser le temps d'exécution des requêtes sur votre serveur de bases de données dans les dernières 24 heures.
-
-Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
-
-Dirigez-vous dans l'onglet `Métriques` de votre serveur de bases de données. Vous trouverez le graphique **« Statistiques du temps d'exécution des requêtes »**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Accès aux logs « Slow Query »
-
-> **Définition des « slow query log »**
-> 
-> Ce sont les requêtes qui prennent plus de temps à s'exécuter. La valeur est définie à 1 seconde sur nos serveurs de bases de données dans la variable **« long_query_time »**.
-
-Ces logs, appellés **« slow-query.log »**, peuvent être récupérés à la racine de l'espace SFTP de votre serveur de bases de données.
-
-Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
-
-Dans l'onglet `informations générales`, vous trouverez la section **« SFTP »** dans le cadre **« Informations de connexion »**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Pour vous y connecter en **SFTP**, vous pouvez le faire via le logiciel Filezilla en vous aidant du guide: [« Utilisation du logiciel FileZilla avec votre hébergement »](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-Si ce fichier est vide, c'est que vous n'avez aucune requête lente.
+Pour accéder aux logs de votre solution Web Cloud Databases, consultez notre guide « [Web Cloud Databases - Comment récupérer les logs ?](/pages/web_cloud/web_cloud_databases/retrieve-logs) ».
 
 #### Suivre la RAM consommée
 

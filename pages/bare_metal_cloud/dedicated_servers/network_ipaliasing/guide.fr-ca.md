@@ -1,7 +1,7 @@
 ---
 title: 'Configurer son adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des Additional IP à votre configuration'
-updated: 2024-02-21
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -47,7 +47,7 @@ Les sections suivantes contiennent les configurations des distributions que nous
 
 |Terme|Description|Exemples|
 |---|---|---|
-|ADDITIONAL_IP|Adresse IP supplémentaire attribuée à votre service|169.254.10.254|
+|ADDITIONAL_IP|Adresse IP supplémentaire attribuée à votre service|203.0.113.1|
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'IP supplémentaires à configurer)|*0*, *1*|
 
@@ -144,7 +144,7 @@ iface eth0 inet dhcp
 
 auto eth0:0
 iface eth0:0 inet static
-address 169.254.10.254
+address 203.0.113.1
 netmask 255.255.255.255
 ```
 
@@ -155,7 +155,7 @@ auto eth0
 iface eth0 inet dhcp
 
 # IP 1
-post-up /sbin/ifconfig eth0:0 169.254.10.254 netmask 255.255.255.255 broadcast 169.254.10.254
+post-up /sbin/ifconfig eth0:0 203.0.113.1 netmask 255.255.255.255 broadcast 203.0.113.1
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
@@ -236,7 +236,7 @@ Exemple de configuration :
 [ipv4]
 method=auto
 may-fail=false
-address1=169.254.10.254/32
+address1=203.0.113.1/32
 ```
 
 #### Étape 3 : redémarrer l'interface
@@ -311,7 +311,7 @@ network:
     eth0:
       dhcp4: true
       addresses:
-        - 169.254.10.254/32
+        - 203.0.113.1/32
 ```
 
 Enregistrez et fermez le fichier. Vous pouvez tester la configuration avec la commande suivante :
@@ -331,7 +331,7 @@ sudo netplan apply
 > [!primary]
 > Lors de l'utilisation de la commande `netplan try`, il est possible que le système renvoie un message d'avertissement tel que `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Cela signifie simplement que le fichier n'a pas de permissions restrictives. Cela n'affecte pas la configuration de votre Additional IP. Pour plus d'informations sur les permissions de fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 
-### CentOS 7, Alma Linux (8 & 9), Rocky Linux (8 & 9)
+### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 Le fichier de configuration principal se trouve dans `/etc/sysconfig/network-scripts/`. Dans notre exemple, il est appelé `ifcfg-eth0`. Avant d'apporter des modifications, vérifiez le nom de fichier réel dans ce dossier.
 
@@ -370,9 +370,9 @@ Exemple de configuration :
 DEVICE=eth0:0
 ONBOOT=yes
 BOOTPROTO=none # Pour CentOS utilisez "static"
-IPADDR=169.254.10.254
+IPADDR=203.0.113.1
 NETMASK=255.255.255.255
-BROADCAST=169.254.10.254
+BROADCAST=203.0.113.1
 ```
 
 #### Étape 3 : redémarrer l'interface alias
@@ -383,13 +383,13 @@ Redémarrez ensuite votre interface alias. Remplacez `eth0:0` par vos propres va
 ifup eth0:0
 ```
 
-#### Pour Alma Linux et Rocky Linux
+#### Pour AlmaLinux et Rocky Linux
 
 ```bash
 sudo systemctl restart NetworkManager
 ```
 
-### cPanel (sur CentOS 7)
+### cPanel
 
 #### Étape 1 : accéder à la section Gestion IP de WHM
 
@@ -403,7 +403,7 @@ Renseignez votre adresse Additional IP sous la forme « xxx.xxx.xxx.xxx » dans 
 
 Sélectionnez `255.255.255.255` comme masque de sous-réseau puis cliquez sur `Submit`{.action}.
 
-![renseigner de nouvelles informations sur la nouvelle adresse IP](images/Cpanel-2.png){.thumbnail}
+![renseigner de nouvelles informations sur la nouvelle adresse IP](images/Cpanel-2024.png){.thumbnail}
 
 > [!warning]
 >
@@ -414,7 +414,7 @@ Sélectionnez `255.255.255.255` comme masque de sous-réseau puis cliquez sur `S
 
 De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
 
-![check configured IP](images/Cpanel-3.png){.thumbnail}
+![check configured IP](images/Cpanel-2024-1.png){.thumbnail}
 
 ### Windows Servers
 
@@ -425,16 +425,16 @@ Sinon, vous devez d’abord passer d’une configuration DHCP au niveau du rése
 Ouvrez l’invite de commande `cmd`{.action} ou `powershell`{.action}, puis tapez la commande suivante :
 
 ```powershell
-ipconfig /all
+ipconfig
 ```
 
 Cela vous donnera un résultat similaire à l’exemple suivant :
 
-![Result of "ipconfig /all" command](images/guides-network-ipaliasing-windows-2008-1.png){.thumbnail}
+![Result of "ipconfig" command](images/ipconfig.png){.thumbnail}
 
 Identifiez et notez votre adresse IPv4, votre masque de sous-réseau, votre passerelle par défaut et le nom du contrôleur d'interface réseau (carte réseau).
 
-Dans notre exemple, l’adresse  IP du serveur est **94.23.229.151**.
+Dans notre exemple, l’adresse  IP du serveur est **192.0.2.28**.
 
 Vous pouvez effectuer les prochaines étapes via des lignes de commande ou l’interface graphique.
 
@@ -444,10 +444,10 @@ Dans les commandes ci-dessous, vous devez remplacer les informations suivantes :
 
 |Commande|Valeur|
 |---|---|
-|NETWORK_ADAPTER| Nom de la carte réseau (dans notre exemple : « Local Area Connection »).|
-|IP_ADDRESS| Adresse IP du serveur (dans notre exemple : « 94.23.229.151 »).|
+|NETWORK_ADAPTER| Nom de la carte réseau (dans notre exemple : « Ethernet 2 »).|
+|IP_ADDRESS| Adresse IP du serveur (dans notre exemple : « 192.0.2.28 »).|
 |SUBNET_MASK| Masque de sous-réseau (dans notre exemple : « 255.255.255.0 »).|
-|GATEWAY| Passerelle par défaut (dans notre exemple : « 94.23.229.254 »).|
+|GATEWAY| Passerelle par défaut (dans notre exemple : « 192.0.2.254 »).|
 |ADDITIONAL_IP| Adresse Additional IP que vous voulez ajouter.|
 
 > [!warning]
@@ -480,33 +480,41 @@ Votre Additional IP est désormais fonctionnelle.
 #### Via l’interface graphique d’utilisateur
 
 1. Allez dans le menu `Démarrer`{.action}, puis `Panneau de gestion`{.action}, `Réseau et Internet`{.action}, `Centre de réseau et Partage`{.action} et `Modifier les paramètres de la carte`{.action} dans la barre de gauche ;
-2. Effectuez un clic droit sur `Connexion au réseau local`{.action} ;
+2. Effectuez un clic droit sur votre connexion réseau, dans notre exemple `Ethernet 2`{.action} ;
 3. Cliquez sur `Propriétés`{.action} ;
 4. Sélectionnez `Protocole Internet Version 4 (TCP/IPv4)`{.action}, puis cliquez sur `Propriétés`{.action} ;
 5. Cliquez sur `Utiliser l’adresse IP suivante`{.action} et renseignez l’IP principale de votre serveur, le masque sous-réseau et la passerelle par défaut obtenus grâce à la commande `ipconfig`{.action} ci-dessus. Dans la case « Serveur DNS Préféré », tapez « 213.186.33.99 ».
 
-![Propriétés Protocole Internet Version 4 (TCP/IPv4)](images/guides-network-ipaliasing-windows-2008-2.png){.thumbnail}
+![Propriétés Protocole Internet Version 4 (TCP/IPv4)](images/configure-main-ip.png){.thumbnail}
 
 > [!warning]
 >
-> Attention, le serveur ne sera plus accessible si vous entrez des informations incorrectes. Vous serez alors obligé d’effectuer les corrections en mode WinRescue ou via le KVM.
+> Attention, le serveur ne sera plus accessible si vous entrez des informations incorrectes. Vous serez alors obligé d’effectuer les corrections en mode [WinRescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) ou via le [KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 > 
 
 Ensuite, cliquez sur `Avancé`{.action} en étant toujours positionné dans les `Paramètres TCP/IP`{.action}.
 
-![Propriétés Protocole Internet Version 4 (TCP/IPv4)](images/guides-network-ipaliasing-windows-2008-2.0.png){.thumbnail}
+![Propriétés Protocole Internet Version 4 (TCP/IPv4)](images/configure-main-ip-1.png){.thumbnail}
 
 Dans la partie « Adresse IP », cliquez sur `Ajouter`{.action} :
 
-![Paramètres avancés TCP/IPv4](images/guides-network-ipaliasing-windows-2008-3.png){.thumbnail}
+![Paramètres avancés TCP/IPv4](images/add-additional-ip.png){.thumbnail}
 
-Renseignez alors votre Additional IP et le masque de sous-réseau « **255.255.255.255** ».
+Renseignez alors votre Additional IP et le masque de sous-réseau « **255.255.255.255** ». Cliquez sur `Ajouter`{.action}.
 
-![Adresses TCP/IP](images/guides-network-ipaliasing-windows-2008-4.png){.thumbnail}
+![Adresses TCP/IP](images/configure-additional-ip.png){.thumbnail}
 
-Cliquez sur `Ajouter`{.action}.
+Cliquez sur `OK`{.action} pour valider votre configuration.
 
-Votre Additional IP est désormais fonctionnelle.
+Votre Additional IP est désormais fonctionnelle, vous pouvez vérifier la configuration avec la commande suivante :
+
+```powershell
+ipconfig
+```
+
+Cela vous donnera un résultat similaire à l’exemple suivant :
+
+![Final configuration](images/final-ip-configuration.png){.thumbnail}
 
 ### Plesk
 
@@ -522,17 +530,17 @@ Cliquez sur `Adresses IP`{.action} sous **Outils et ressources**.
 
 Dans cette section, cliquez sur le bouton `Add IP Address`{.action}.
 
-![ajouter des informations IP](images/pleskip2-2.png){.thumbnail}
+![ajouter des informations IP](images/Plesk-2024.png){.thumbnail}
 
 Entrez votre adresse Additional IP sous la forme `xxx.xxx.xxx.xxx/32` dans le champ « Adresse IP et masque de sous-réseau », puis cliquez sur `OK`{.action}.
 
-![ajouter des informations IP](images/pleskip3-3.png){.thumbnail}
+![ajouter des informations IP](images/Plesk-2024-1.png){.thumbnail}
 
 #### Etape 3 : vérifier la configuration IP actuelle
 
 Dans la section « Adresses IP », vérifiez que l'adresse Additional IP a été correctement ajoutée.
 
-![configuration IP actuelle](images/pleskip4-4.png){.thumbnail}
+![configuration IP actuelle](images/Plesk-2024-2.png){.thumbnail}
 
 #### Résolution des défauts
 

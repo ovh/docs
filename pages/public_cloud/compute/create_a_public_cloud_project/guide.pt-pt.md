@@ -24,16 +24,16 @@ Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth
 
 Após ter tomado conhecimento, valide os termos dos contratos selecionando a casa correspondente e clique em `Descobrir o universo Public Cloud`{.action}.
 
-![criação de projeto](images/firstproject2024.png){.thumbnail}
+![criação de projeto](images/firstproject2024.png){.thumbnail width="400"}
 
 - Se ainda não tiver um método de pagamento válido na sua conta OVHcloud, o processo de criação do projeto Public Cloud começará. O seu projeto será então criado em [Modo Descoberta](#discovery).
 - Se já tiver indicado um método de pagamento na sua conta OVHcloud, deve dar o nome do seu projeto Public Cloud e selecionar o seu método de pagamento.
 
-![criação de projeto](images/project-creation.png){.thumbnail}
+![criação de projeto](images/project-creation.png){.thumbnail width="400"}
 
 Após a conclusão do processo de criação, o seu novo projeto Public Cloud será visível no canto superior esquerdo da secção "Public Cloud" {.action} da Área de Cliente OVHcloud:
 
-![novo projeto criado](images/public-cloud-interface.png){.thumbnail}
+![novo projeto criado](images/public-cloud-interface.png){.thumbnail width="400"}
 
 Já tem acesso a todo o ecossistema Public Cloud da OVHcloud, descubra esta nova interface da sua Área de Cliente consultando o nosso guia "[Familiarizar-se com a interface Public Cloud](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)".
 
@@ -46,7 +46,7 @@ Já tem acesso a todo o ecossistema Public Cloud da OVHcloud, descubra esta nova
 >
 > Para explorar plenamente o potencial do Public Cloud e iniciar os seus primeiros recursos, clique em `Ativar o projeto`{.action} na página inicial do seu projeto.
 >
->![Ativar projeto](images/activate-project.png){.thumbnail}
+>![Ativar projeto](images/activate-project.png){.thumbnail width="400"}
 
 ## Quer saber mais?
 

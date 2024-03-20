@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-updated: 2021-06-25
+updated: 2024-03-19
 ---
 
 > [!primary]
@@ -33,6 +33,12 @@ Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mai
 Aby zalogować się do interfejsu OWA webmail przy użyciu swojego adresu e-mail, przejdź do ogólnej [strony logowania do interfejsu webmail](https://www.ovh.pl/mail/). Wpisz pełny adres e-mail i hasło, a następnie kliknij przycisk `Zaloguj`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+> 
+> Jeśli zostałeś przekierowany do interfejsu **Roundcube**, oznacza to, że korzystasz z poprzedniej wersji usługi MX Plan. Aby uzyskać więcej informacji na temat oferty MX Plan, sprawdź naszą stronę [Pierwsze kroki z ofertą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Aby zapoznać się z interfejsem **Roundcube**, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu danego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Kliknij przycisk `Zapisz`{.action}, aby kontynuować.
 

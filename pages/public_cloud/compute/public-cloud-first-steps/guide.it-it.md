@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2024-01-08
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -158,9 +158,23 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+> [!success]
+>
+> È preferibile creare una rete privata prima di procedere alla creazione di un’istanza. Per maggiori informazioni sulla creazione di una rete privata, consulta la guida [Configurazione della vRack sul Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina "Istanze", cliccando su `Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zone:**
+
+Le Local Zone sono un'estensione delle regioni che avvicinano i servizi OVHcloud a luoghi specifici, offrendo latenza ridotta e performance migliorate per le applicazioni. Sono strategicamente posizionate vicino alle zone a forte richiesta degli utenti. Il loro obiettivo principale è ridurre al minimo il tempo necessario al trasferimento dei dati tra utente e Cloud, per rendere i servizi più rapidi e più reattivi e per rispondere ai requisiti di residenza dei dati. Per maggiori informazioni sulle Local Zone, consulta i seguenti link: [Local Zone Compute](https://www.ovhcloud.com/it/public-cloud/local-zone-compute/) e [Local Zone Compute - Funzionalità, capacità e limiti](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+
+**Global Region:**
+
+Region supportate da uno o più datacenter gestiti da OVHcloud. Ogni Region è situata in una zona geografica diversa. Ogni Region fornisce una o più Availibility Zone, ad esempio GRA11, GRA7, BHS5, DE1, ecc.
 
 Per prima cosa, seleziona un modello di server in base alle tue esigenze. La procedura guidata fornisce una descrizione dei diversi casi d'uso e della disponibilità del modello di server. Puoi scegliere tra le seguenti categorie personalizzate:
 

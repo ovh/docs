@@ -1,7 +1,7 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-updated: 2023-09-08
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -75,14 +75,14 @@ W przypadku nazwy domeny zewnętrznej (inny identyfikator klienta) lub zewnętrz
 Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego w OVHcloud hostingu niektóre z oferowanych elementów mogą być dostępne, inne zaś nie.
 
 > [!primary]
-> Aby dodać subdomenę, najpierw wybierz domenę główną z listy (przykład: mydomain.ovh). Na kolejnym etapie podasz subdomenę (przykład: **blog**.mydomain.ovh).
+> Aby dodać subdomenę, najpierw wybierz domenę główną z listy (przykład: domain.tld). Na kolejnym etapie podasz subdomenę (przykład: **blog**.domain.tld).
 
 ![MultiSite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Informacja|Opis|
 |---|---|
-|Domena|Nazwa wybranej domeny wprowadzana jest automatycznie. Możesz dodać subdomenę (np. **blog**.mydomain.ovh) i jednocześnie utworzyć jej wersję wraz z WWW (np. **www.blog**.mydomain.ovh). Domena ta stanie się adresem strony WWW, którą chcesz umieścić w Internecie.|
-|Katalog główny|Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.mydomain.ovh katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
+|Domena|Nazwa wybranej domeny wprowadzana jest automatycznie. Możesz dodać subdomenę (np. **blog**.domain.tld) i jednocześnie utworzyć jej wersję wraz z WWW (np. **www.blog**.domain.tld). Domena ta stanie się adresem strony WWW, którą chcesz umieścić w Internecie.|
+|Katalog główny|Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.domain.tld katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
 |SSL|Umożliwia korzystanie z bezpiecznego połączenia (HTTPS: //) z wybraną nazwą domeny. Dowiedz się więcej na [naszej stronie SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}. Aktywując SSL i CDN (Content Delivery Network), możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
 |Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](https://www.ovhcloud.com/pl/web-hosting/options/cdn/){.external}. Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
 |Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
@@ -121,7 +121,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.mydomain.ovh`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.mydomain.ovh` i nie `ovhcontrol.blog.mydomain.ovh`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_general_information#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_general_information#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
 > ![MultiSite](images/find-token.png){.thumbnail}
 >
@@ -136,8 +136,8 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 
 |Informacja|Opis|
 |---|---|
-|Domena|Wpisz nazwę domeny, której chcesz używać. Dodaj subdomenę (np. **blog**.mydomain.ovh) i utwórz jednocześnie jej wersję wraz z WWW (np. **www.blog**.mydomain.ovh). Domena ta będzie odpowiadała adresowi strony WWW, którą chcesz umieścić w Internecie. Pamiętaj, że musisz mieć uprawnienia do modyfikacji konfiguracji domeny (jej strefy DNS), aby proces dodania domeny został ukończony.|
-|Katalog główny| Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.mydomain.ovh katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
+|Domena|Wpisz nazwę domeny, której chcesz używać. Dodaj subdomenę (np. **blog**.domain.tld) i utwórz jednocześnie jej wersję wraz z WWW (np. **www.blog**.domain.tld). Domena ta będzie odpowiadała adresowi strony WWW, którą chcesz umieścić w Internecie. Pamiętaj, że musisz mieć uprawnienia do modyfikacji konfiguracji domeny (jej strefy DNS), aby proces dodania domeny został ukończony.|
+|Katalog główny| Określ folder na przestrzeni dyskowej, do której wskazuje domena. Pliki strony WWW będą musiały zostać umieszczone w Internecie. Na przykład, dla blog.domain.tld katalogiem głównym może być "blog". Jeśli folder nie istnieje, zostanie automatycznie utworzony.|
 |Włącz obsługę IPv6|Umożliwia aktywację protokołu IPv6 dla danej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.

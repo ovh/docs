@@ -33,12 +33,12 @@ Select the tab corresponding to your email solution:
 > [!tabs]
 > **MX Plan**
 >>
->> Open `Emails`{.action} in the side panel, then choose the name of the MX Plan service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts. Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button to the right of the account you want to modify, then click `Reset this account`{.action}.<br><br>
+>> Open `Emails`{.action} in the side panel, then choose the name of the MX Plan service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset this account`{.action}.<br><br>
 >>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Open `Microsoft`{.action}, then `Exchange`{.action} in the side panel, and choose the name of the platform concerned. Go to the `Email accounts`{.action} tab. Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button to the right of the account you want to modify, then click `Reset`{.action}.<br><br>
+>> Open `Microsoft`{.action}, then `Exchange`{.action} in the side panel, and choose the name of the platform concerned. Go to the `Email accounts`{.action} tab. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset`{.action}.<br><br>
 >> After resetting your account, if you want to permanently delete it, you must cancel it. To do this, please refer to our guide "[Managing the billing for your Exchange accounts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange)".<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>

@@ -43,6 +43,9 @@ La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous sou
 
 > [!primary]
 > Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} supérieure depuis notre page commerciale.
+>
+> Attention : l'activation de l'option e-mail peut prendre quelques minutes. Vous recevrez un e-mail pour vous confirmer l'installation et l'activation de l'offre MXPLAN. Elle inclut notamment la gestion et la configuration de vos adresses e-mail. 
+>
 
 ### Conservation de vos adresses e-mail avant expiration de l'hébergement web
 
