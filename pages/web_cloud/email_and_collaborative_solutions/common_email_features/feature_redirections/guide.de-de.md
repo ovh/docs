@@ -60,7 +60,7 @@ Die Abschnitte "[Weiterleitung erstellen](#redirect)" und "[Alias erstellen](#al
 - Sie verfügen über einen MX Plan Legacy (siehe unten).
 - Sie haben einen bei OVHcloud registrierten Domainnamen ohne einen damit verbundenen E-Mail-Dienst.
 
-Für diese beiden Ausnahmen gehen Sie direkt zu "[Weiterleitung oder Alias mit MX Plan Legacy oder für einen Domainnamen ohne E-Mail-Dienst konfigurieren](#mxplanlegacy)".
+Bei beiden Ausnahmen ist nur die Weiterleitung möglich. Bitte lesen Sie das Kapitel "[Weiterleitung oder Alias mit MX Plan Legacy oder für einen Domainnamen ohne E-Mail-Dienst konfigurieren](#mxplanlegacy)".
 
 >
 > Je nach Aktivierungsdatum Ihres MX Plans oder falls Ihr Dienst kürzlich [migriert wurde](https://www.ovhcloud.com/de/web-hosting/mxplan-migration/), haben Sie entweder die historische oder die neue Version dieses Dienstes. Bevor Sie fortfahren, identifizieren Sie Ihre Dienstversion.<br>
@@ -174,6 +174,11 @@ Die Methode zur Erstellung eines Alias oder einer Weiterleitung ist dieselbe. Fo
 > **Schritt 2**
 >>
 >> Es wird eine Tabelle mit bereits aktiven Weiterleitungen angezeigt. Klicken Sie rechts auf den Button `Weiterleitung hinzufügen`{.action}.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > Um eine Weiterleitung zu bearbeiten oder zu löschen, klicken Sie auf `...`{.action} rechts neben der betreffenden Weiterleitung.
+>>
 >> ![E-Mails](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Schritt 3**

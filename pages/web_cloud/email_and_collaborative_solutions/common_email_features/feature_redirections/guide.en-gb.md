@@ -56,7 +56,7 @@ The sections “[Creating a redirection](#redirect)” and “[Creating an alias
 - If you are using the legacy version of the MX Plan solution (to check this, view the framework below).
 - If you have a domain name registered with OVHcloud without an attached email solution.
 
-For these two exceptions, please read the paragraph “[Creating a redirection or an alias with a legacy MX Plan solution or for a domain name without an email solution](#mxplanlegacy)”.
+For these two exceptions, only redirection is possible. Please refer to the paragraph “[Creating a redirection or an alias with a legacy MX Plan solution or for a domain name without an email solution](#mxplanlegacy)”.
 
 >
 > Depending on the date your MX Plan solution was activated and if it was recently [migrated](https://www.ovhcloud.com/en-gb/web-hosting/mxplan-migration/), you may have the legacy version or the new version of the solution. Before you proceed, you will need to identify it.<br>
@@ -170,6 +170,11 @@ The method for creating an alias or redirection is the same. Follow the instruct
 > **Step 2**
 >>
 >> The table showing active redirections will appear. Click on the button `Add a redirection`{.action} to the right.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > To modify or delete a redirection, click `...`{.action}, to the right of the redirection concerned.
+>>
 >> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Step 3**

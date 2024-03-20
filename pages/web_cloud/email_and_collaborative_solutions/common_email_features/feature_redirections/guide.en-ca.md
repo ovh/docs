@@ -53,7 +53,7 @@ For example, your email address is **john.smith@mydomain.ovh** and your alias is
 
 The sections “[Creating a redirection](#redirect)” and “[Creating an alias](#alias)” concern all OVHcloud email solutions, **unless** if you have a domain name registered with OVHcloud without an attached email solution.
 
-For these exception, please read the paragraph “[Creating a redirection or an alias for a domain name without an email solution](#mxplanlegacy)”.
+For these two exceptions, only redirection is possible. Please refer to the paragraph “[Creating a redirection or an alias for a domain name without an email solution](#mxplanlegacy)”.
 
 ### Creating a redirection <a name="redirect"></a>
 
@@ -155,6 +155,11 @@ The method for creating an alias or redirection is the same. Follow the instruct
 > **Step 2**
 >>
 >> The table showing active redirections will appear. Click on the button `Add a redirection`{.action} to the right.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > To modify or delete a redirection, click `...`{.action}, to the right of the redirection concerned.
+>>
 >> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Step 3**

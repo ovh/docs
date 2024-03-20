@@ -60,7 +60,7 @@ Le sezioni "[creare un reindirizzamento](#redirect)" e "[creare un alias](#alias
 - se disponi della versione storica dell'offerta MXplan (per verificarla, consulta la riquadro qui sotto).
 - se hai un dominio registrato in OVHcloud senza un servizio email associato,
 
-Per queste due eccezioni, consulta direttamente il capitolo "[Creare un reindirizzamento o un alias su un'offerta MX Plan storico o un dominio senza offerta email](#mxplanlegacy)".
+Per entrambe le eccezioni, è possibile solo il reindirizzamento. Per maggiori informazioni, consulta il capitolo "[Creare un reindirizzamento o un alias su un'offerta MX Plan storico o un dominio senza offerta email](#mxplanlegacy)".
 
 >
 > In base alla data di attivazione della tua offerta MXplan o in caso [di recente migrazione della soluzione](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/), è possibile che tu disponga della versione storica o della nuova versione dell'offerta. Prima di proseguire, è necessario identificarla.<br>
@@ -171,6 +171,11 @@ Il metodo per creare un alias o un reindirizzamento è strettamente lo stesso. P
 > **Passo 2**
 >>
 >> Si apre la tabella dei reindirizzamenti già attivi. A destra, clicca su `Aggiungi un reindirizzamento`{.action}.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > Per modificare o eliminare un reindirizzamento, clicca su `...`{.action}, a destra del reindirizzamento in questione.
+>>
 >> ![email](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Passo 3**

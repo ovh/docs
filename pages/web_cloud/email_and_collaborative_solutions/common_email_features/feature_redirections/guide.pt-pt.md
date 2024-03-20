@@ -60,7 +60,7 @@ Os capítulos "[criar um reencaminhamento](#redirect)" e "[criar um alias](#alia
 - Se possui a versão histórica da oferta MXplan (para o verificar, pode consultar o quadro abaixo).
 - possui um domínio registado na OVHcloud sem uma oferta de e-mail associada.
 
-Para estas duas exceções, consulte diretamente o capítulo "[Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num domínio sem oferta de e-mail](#mxplanlegacy)".
+Para estas duas exceções, só é possível o reencaminhamento. Sugerimos que consulte diretamente o capítulo "[Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num domínio sem oferta de e-mail](#mxplanlegacy)".
 
 >
 > Consoante a data de ativação da sua oferta MXplan ou se [esta foi migrada recentemente](https://www.ovhcloud.com/pt/web-hosting/mxplan-migration/), é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
@@ -143,6 +143,11 @@ Para adicionar um alias à sua conta de e-mail, siga os passos descritos clicand
 > **Etapa 2**
 >>
 >> Clique no botão `...`{.action} e em `Configurar os alias`{.action} (ou `Gerir os alias`{.action}).<br><br>
+>>
+>> > [!primary]
+>> >
+>> > Para modificar ou eliminar um reencaminhamento, clique em `...`{.action}, à direita do reencaminhamento em causa.
+>>
 >> ![emails](images/email-alias02.png){.thumbnail}<br>
 >>
 > **Etapa 3**
