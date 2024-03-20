@@ -28,7 +28,7 @@ Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installat
 
 > [!primary]
 >
-> Avant de continuer l'installation, videz le cache de votre navigateur Internet, afin d'éviter toute erreur.
+> Avant de continuer l'installation, videz le cache de votre navigateur Internet, afin d'éviter tout dysfonctionnement.
 >
 
 #### Se rendre sur votre site web Grav via votre navigateur
