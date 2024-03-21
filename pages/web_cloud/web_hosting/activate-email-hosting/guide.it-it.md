@@ -45,6 +45,9 @@ Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare g
 
 > [!primary]
 > Per usufruire di più account email inclusi, ordina una [offerta di hosting web](https://www.ovhcloud.com/it/web-hosting/){.external} superiore dalla nostra pagina commerciale.
+>
+> Attenzione: l’attivazione dell’opzione email potrebbe richiedere alcuni minuti. Riceverai un’email di conferma dell’installazione e dell’attivazione della soluzione MXPLAN. e include la gestione e la configurazione degli indirizzi email.
+>
 
 ### Mantieni gli indirizzi email alla scadenza dell’hosting Web
 
