@@ -88,7 +88,7 @@ Depuis le passage sous Agora, la facturation suit le principe de prorata tempori
 
 ### Exemple :
 
-Si vous commandez une ressource le 5 juin, alors vous serais facturé pour la période du 5 juin au 30 juin. 
+Si vous commandez une ressource le 5 juin, vous serez facturé pour la période du 5 juin au 30 juin. 
 
 ### Commande d'hôte
 
