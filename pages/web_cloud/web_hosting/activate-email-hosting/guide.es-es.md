@@ -1,7 +1,7 @@
 ---
 title: "Activar el servicio de correo incluido en un plan de hosting"
 excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
-updated: 2024-02-08
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -37,11 +37,11 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 En la columna `Configuración`, vaya a `Direcciones de correo`, haga clic en el botón `...`{.action} a la derecha y seleccione `Activar mi solución de correo`{.action}.
 
-![Activar el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
+![Activar el correo](images/enable-email-included-webhosting.png){.thumbnail}
 
 Se mostrará la ventana de activación. Seleccione el dominio que quiere utilizar con sus direcciones de correo y confirme la activación.
 
-![Activar el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+![Activar el correo](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} superior desde nuestra página comercial.
@@ -54,7 +54,7 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 En la columna `Configuración`, vaya a `Direcciones de correo`, haga clic en el botón `...`{.action} a la derecha y seleccione `Desvincular la opción de correo`{.action}.
 
-![Desvincular el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+![Desvincular el correo](images/detach-email-included-webhosting.png){.thumbnail}
 
 Tendrá la opción de contratar una solución MX personalizada. Una vez abonado el pedido, sus direcciones de correo seguirán funcionando tras la supresión del alojamiento web.
  
@@ -70,7 +70,7 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 En la columna `Configuración`, vaya a `Direcciones de correo`{.action}, haga clic en el botón `...` a la derecha y seleccione `Dar de baja la opción de correo`{.action}.
 
-![Dar de baja el correo](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
+![Dar de baja el correo](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >
