@@ -18,7 +18,7 @@ A partir de **CMS** (**C**ontent **M**anagement **S**ystem), o Pico permite a cr
 
 - Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 - Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/).
-Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
