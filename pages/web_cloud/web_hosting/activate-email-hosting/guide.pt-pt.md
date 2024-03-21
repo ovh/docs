@@ -45,6 +45,9 @@ Aparecerá a janela de ativação. Escolha o nome de domínio ao qual pretende a
 
 > [!primary]
 > Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} superior a partir da nossa página comercial.
+>
+> Atenção: a ativação da opção de e-mail pode levar alguns minutos. Receberá um e-mail para confirmar a instalação e a ativação da oferta MXPLAN. Inclui a gestão e a configuração dos seus endereços de e-mail.
+>
 
 ### Conservação de endereços de e-mail antes da expiração do alojamento web
 
