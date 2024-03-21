@@ -4,7 +4,7 @@ excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Vo
 updated: 2022-11-28
 ---
 
-In this tutorial we are going to guide you through a simple example of setting up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
+In this tutorial we are going to guide you through a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
 
 You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an associated Public Cloud __Block Storage__ volume.<br>
 Then you will create a `Pod` attached to the PVC.
