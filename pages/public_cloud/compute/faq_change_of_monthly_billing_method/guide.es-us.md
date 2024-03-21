@@ -1,12 +1,12 @@
 ---
 title: FAQ - Modificación de las modalidades de facturación mensual
 excerp: ""
-updated: 2023-12-15
+updated: 2024-03-21
 ---
 
 > [!warning]
 >
-> Fecha de aplicación: 2024/02/01
+> Fecha de aplicación: 2024/05/01
 
 ## FAQ
 

@@ -1,12 +1,12 @@
 ---
 title: FAQ - Change of monthly billing method
 excerp: ""
-updated: 2023-12-15
+updated: 2024-03-21
 ---
 
 > [!warning]
 >
-> Date of application: 2024/02/01
+> Date of application: 2024/05/01
 
 ## FAQ
 
