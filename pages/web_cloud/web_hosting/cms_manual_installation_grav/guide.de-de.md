@@ -4,6 +4,10 @@ excerpt: "Erfahren Sie hier, wie Sie das Grav CMS manuell auf einem OVHcloud Web
 updated: 2024-03-21
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel
 
 Das **CMS** (**C**ontent **M**anagement **S**ystem) Grav ermöglicht die schnelle Entwicklung von Websites. Grav wurde für ein optimiertes Content-Management mithilfe von Markdown-Dateien entwickelt und eignet sich hervorragend für die Erstellung persönlicher Websites oder Projekte für kleine Unternehmen, ohne Kompromisse bei der Qualität oder Personalisierung einzugehen.
