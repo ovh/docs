@@ -45,6 +45,9 @@ Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać
 
 > [!primary]
 > Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](https://www.ovhcloud.com/pl/web-hosting/){.external} na naszej stronie handlowej.
+>
+> Uwaga: aktywacja opcji e-mail może zająć kilka minut. Otrzymasz e-mail potwierdzający instalację i aktywację oferty MXPLAN. Obejmuje to zarządzanie i konfigurację adresów e-mail.
+>
 
 ### Zachowanie kont e-mail przed upływem terminu ważności usługi hostingowej
 
