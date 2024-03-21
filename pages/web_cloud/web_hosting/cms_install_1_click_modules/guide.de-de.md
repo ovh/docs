@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 > [!primary]

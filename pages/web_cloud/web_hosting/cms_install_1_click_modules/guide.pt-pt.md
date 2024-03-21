@@ -1,7 +1,7 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 > [!primary]

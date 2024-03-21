@@ -1,7 +1,7 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 > [!primary]
