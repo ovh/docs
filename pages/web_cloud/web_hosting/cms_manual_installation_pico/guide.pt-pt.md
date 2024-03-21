@@ -67,7 +67,7 @@ Após a instalação, você encontrará várias pastas e arquivos no diretório 
 
 **1. Criar páginas** : para adicionar uma nova página ao seu website, crie um novo ficheiro Markdown (.md) na pasta `content/`. O nome do ficheiro irá determinar o URL da página. Por exemplo, "about.md`" estará acessível a http://yourdomain.tld/about.
 
-**2 Escrever conteúdo** : abra o ficheiro Markdown com um editor de texto e comece a escrever o seu conteúdo. Utilize a sintaxe Markdown para formatar o texto, criar links, inserir imagens, etc. Por exemplo, se pretender editar a página principal (home) do seu website, abra o ficheiro `index.md` e insira o conteúdo à sua escolha.
+**2. Escrever conteúdo** : abra o ficheiro Markdown com um editor de texto e comece a escrever o seu conteúdo. Utilize a sintaxe Markdown para formatar o texto, criar links, inserir imagens, etc. Por exemplo, se pretender editar a página principal (home) do seu website, abra o ficheiro `index.md` e insira o conteúdo à sua escolha.
 
 **3. Verificar conteúdo** : os ficheiros Markdown devem ter um cabeçalho YAML válido. Se o cabeçalho estiver faltando ou mal formatado, Pico pode não reconhecê-lo como uma página válida. Um exemplo de um cabeçalho YAML válido é:
 
