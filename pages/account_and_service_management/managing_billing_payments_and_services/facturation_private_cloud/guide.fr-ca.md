@@ -50,7 +50,7 @@ Si vous conservez cet hôte le mois suivant, vous verrez également la consommat
 
 Si vous conservez un hôte des gammes Dedidated cloud ou SDDC 2016 / 2018  en facturation horaire tout un mois, le coût horaire sera capé au prix mensuel. 
 
-Si vous conservez un hôte de de la gamme Premier en facturation horaire tout un mois, le prix horaire de la ressource, tel qu’indiqué sur [cette page](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/), sera appliqué. Le cout horaire n’est plus capé au prix mensuel.
+Si vous conservez un hôte de de la gamme Premier en facturation horaire tout un mois, le prix horaire de la ressource, tel qu’indiqué sur [cette page](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/hosts/), sera appliqué. Le cout horaire n’est plus capé au prix mensuel.
 
 #### Commande d'hôte
 
@@ -132,7 +132,7 @@ Après avoir confirmé les différentes conditions, vous serez invité a valider
 
 Cette licence sera facturée en début de mois suivant, par rapport aux nombres de machines déployées et allumées dans le mois écoulé.
 
-La facturation se base sur le tableau des tarifs disponible sur [cette page](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/images-licenses/).
+La facturation se base sur le tableau des tarifs disponible sur [cette page](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/images-licenses/).
 
 #### Exemples
 
