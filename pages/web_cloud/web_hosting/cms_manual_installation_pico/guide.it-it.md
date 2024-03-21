@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installare manualmente Pico"
 excerpt: "Questa guida ti mostra come installare manualmente il tuo CMS Pico"
-updated: 2024-03-19
+updated: 2024-03-21
 ---
 
 > [!primary]

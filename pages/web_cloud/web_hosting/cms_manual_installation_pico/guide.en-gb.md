@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installing Pico manually"
 excerpt: "Find out how to install Pico CMS manually"
-updated: 2024-03-19
+updated: 2024-03-21
 ---
 
 ## Objective

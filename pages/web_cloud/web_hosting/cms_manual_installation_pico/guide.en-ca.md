@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installing Pico manually"
 excerpt: "Find out how to install Pico CMS manually"
-updated: 2024-03-19
+updated: 2024-03-21
 ---
 
 ## Objective
@@ -12,9 +12,9 @@ With the **CMS** (**C**ontent **M**anagement **S**ystem) Pico, you can create we
 
 ## Requirements
 
-You must have an OVHcloud [web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/).
-- a [domain name](https://www.ovhcloud.com/en-ca/domains/).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/).
+- A [domain name](https://www.ovhcloud.com/en-ca/domains/).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
 ## Instructions
 
@@ -45,29 +45,29 @@ Pico is a file-based CMS, which means that all configuration and content creatio
 
 After installation, you will find several folders and files in the main Pico directory. The most important ones are:
 
-- `content/` : contains your content's Markdown files
-- `config/`: contains the configuration file `config.yml` from Pico
-- `themes/` : contains the themes of your website
-- `assets/` : contains static resources such as images, CSS, JavaScript scripts, etc.
-- `plugins/` : contains the plugins you want to use
+- `content/`: Contains your content's Markdown files.
+- `config/`: Contains the configuration file `config.yml` from Pico.
+- `themes/`: Contains the themes of your website.
+- `assets/`: Contains static resources such as images, CSS, JavaScript scripts, etc.
+- `plugins/`: Contains the plugins you want to use.
 
 #### Basic configuration
 
-**1. Configure your website**: open the file `config/config.yml` with a text editor. Here, you can configure basic settings for your website, such as title, description, URL, or themes.
+**1. Configure your website**: Open the file `config/config.yml` with a text editor. Here, you can configure basic settings for your website, such as title, description, URL, or themes.
 
-**2. Change the title and description of your website**: search for the lines for `site_title:` and `site_description:` in the `config/config.yml` file to update the title and description of your website.
+**2. Change the title and description of your website**: Search for the lines for `site_title:` and `site_description:` in the `config/config.yml` file to update the title and description of your website.
 
-**3. Change the title and description of your website**: if you have a specific domain name, search for the line for `base_url:` in the `config/config.yml` file to update your website’s domain name. Otherwise, leave the default value `~`.
+**3. Change the title and description of your website**: If you have a specific domain name, search for the line for `base_url:` in the `config/config.yml` file to update your website’s domain name. Otherwise, leave the default value: `~`.
 
 #### Add content
 
-**1. Create pages** : To add a new page to your website, create a new Markdown (.md) file in the `content/` folder. The file name will determine the URL of the page. For example, `about.md` will be accessible at http://yourdomain.tld/about.
+**1. Create pages**: To add a new page to your website, create a new Markdown (.md) file in the `content/` folder. The file name will determine the URL of the page. For example, `about.md` will be accessible at `http://yourdomain.tld/about`.
 
 **2. Write content**: Open the Markdown file with a text editor and start writing your content. Use Markdown syntax to format your text, create links, insert images, and more. For example, if you want to edit your website's main page (home), open the `index.md` file and insert the content of your choice.
 
 **3. Check content**: Markdown files must have a valid YAML header. If the header is missing or badly formatted, Pico may not recognize it as a valid page. An example of a valid YAML header is:
 
-```bash
+```console
 ---
 title: About
 ---
@@ -86,11 +86,11 @@ Your content here
 
 Pico allows you to extend its features with plugins.
 
-**1. Find plugins**: visit [Pico's official website](https://picocms.org/plugins/) to access the list of available plugins.
+**1. Find plugins**: Visit [Pico's official website](https://picocms.org/plugins/) to access the list of available plugins.
 
-**2. Install a plugin** : download the plugin and place it in the `plugins/` folder of your Pico installation.
+**2. Install a plugin**: Download the plugin and place it in the `plugins/` folder of your Pico installation.
 
-**3. Configure the plugin**: some plugins require additional configuration in `config/config.yml`. Follow the instructions provided with the plugin.
+**3. Configure the plugin**: Some plugins require additional configuration in `config/config.yml`. Follow the instructions provided with the plugin.
 
 ### Conclusion
 
