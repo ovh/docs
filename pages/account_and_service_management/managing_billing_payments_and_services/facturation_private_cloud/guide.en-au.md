@@ -50,7 +50,7 @@ If you keep this host for the following month, you will also see the consumption
 
 If you keep a 2016/2018 SDDC or Dedicated Cloud host billed on an hourly basis for an entire month, the hourly cost will be charged at the monthly price. 
 
-If you keep a Premier range host billed on an hourly basis for an entire month, the hourly price for the resource, as shown on [this page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/), will be applied. The hourly cost is no longer included in the monthly price.
+If you keep a Premier range host billed on an hourly basis for an entire month, the hourly price for the resource, as shown on [this page](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/hosts/), will be applied. The hourly cost is no longer included in the monthly price.
 
 #### Ordering a Host via the vSphere Client
 
@@ -134,7 +134,7 @@ Once you have confirmed the various conditions, you will be asked to validate a 
 
 This license will be billed at the beginning of the following month, based on the number of machines deployed and powered on in the previous month.
 
-Billing is based on the pricing table available on [this page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/images-licenses/). 
+Billing is based on the pricing table available on [this page](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/images-licenses/). 
 
 #### Examples
 
