@@ -59,7 +59,7 @@ Após a instalação, você encontrará várias pastas e arquivos no diretório 
 
 **1. Configurar o website** : abra o ficheiro `config/config.yml` com um editor de texto. Configure aqui os parâmetros de base do seu website, como o título, a descrição, o URL ou os temas.
 
-**2 Alterar o título e a descrição do seu website** : procure as linhas para `site_title:` e `site_description:` no ficheiro `config/config.yml` para atualizar o título e a descrição do seu website.
+**2. Alterar o título e a descrição do seu website** : procure as linhas para `site_title:` e `site_description:` no ficheiro `config/config.yml` para atualizar o título e a descrição do seu website.
 
 **3. Alterar o título e a descrição do seu website** : se tiver um nome de domínio específico, procure a linha para `base_url:` no ficheiro `config/config.yml` para atualizar o nome de domínio do seu website. Caso contrário, deixe o valor predefinido `~`.
 
