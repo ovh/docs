@@ -18,7 +18,7 @@ La facturation de l'offre Hosted Private Cloud s'effectue le premier de chaque m
 
 Lors du renouvellement, un prélèvement est effectué, sur votre compte OVHcloud, renouvelant votre offre pour un mois. A partir de ce point, trois cas sont possibles :
 
-- Votre compte OVHcloud n'est pas crédité, mais vous avez un moyen de paiement renseigné dans votre compte OVH. Une dette sera créée le premier du mois, et elle sera remboursée automatiquement quelques jours plus tard par prélévement sur votre moyen de paiement.
+- Votre compte OVHcloud n'est pas crédité, mais vous avez un moyen de paiement renseigné dans votre compte OVHcloud. Une dette sera créée le premier du mois, et elle sera remboursée automatiquement quelques jours plus tard par prélévement sur votre moyen de paiement.
 
 - Votre compte OVHcloud est déjà crédité, il sera débité le premier jour du mois, aucune dette ne sera créée.
 
@@ -30,7 +30,7 @@ Si votre compte est crédité mais pas suffisamment, une dette sera créée corr
 
 Lorsque vous passez une nouvelle commande, vous vous acquittez d'un mois complet de location de l'infrastructure. Après 1 mois de location, une facture au prorata sera établie afin d'aligner la date de renouvellement au 1er du mois.
 
-#### Exemple :
+#### Exemple 
 
 Vous commandez votre infrastructure le 20 mai, votre offre sera créée le 20 mai et expirera le 20 juin. Le 20 juin, vous aurez une facture au prorata qui couvrira la période du 21 au 30 juin, et votre offre aura sa date d'expiration au 1er juillet. Il sera ensuite renouvelé tout les premiers de chaque mois comme expliqué ci-dessus.
 
@@ -48,9 +48,9 @@ Si vous commandez un hôte le 25 du mois et que vous le supprimez le 29, vous ve
 
 Si vous conservez cet hôte le mois suivant, vous verrez également la consommation depuis le 25 et la facturation horaire repartira à zéro le premier du mois.
 
-Si vous conservez un hôte des gammes Dedidated cloud ou SDDC 2016 / 2018  en facturation horaire tout un mois, le coût horaire sera capé au prix mensuel. 
+Si vous conservez un hôte des gammes Dedidated cloud ou SDDC 2016 / 2018 en facturation horaire tout un mois, le coût horaire sera capé au prix mensuel.
 
-Si vous conservez un hôte de de la gamme Premier en facturation horaire tout un mois, le prix horaire de la ressource, tel qu’indiqué sur [cette page](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/hosts/), sera appliqué. Le cout horaire n’est plus capé au prix mensuel.
+Si vous conservez un hôte de de la gamme Premier en facturation horaire tout un mois, le prix horaire de la ressource, tel qu’indiqué sur [cette page](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/hosts/), sera appliqué. Le coût horaire n’est plus capé au prix mensuel.
 
 #### Commande d'hôte
 
@@ -62,11 +62,11 @@ Un peu plus bas, vous trouverez un second tableau avec l'historique de vos hôte
 
 ![historique hôtes](images/images-order_host_start.png){.thumbnail}
 
-En cliquant sur "next", vous arriverez sur le récapitulatif et la demande de confirmation de votre commande.
+En cliquant sur `Next`{.action}, vous arriverez sur le récapitulatif et la demande de confirmation de votre commande.
 
 ![recapitulatif commande](images/images-order_host_recap.png){.thumbnail}
 
-Après avoir cliqué une nouvelle fois sur "next", la commande s'effectuera, vous pourrez ensuite cliquer sur le bouton `finish`{.action} pour revenir à la première page de cet onglet.
+Après avoir cliqué une nouvelle fois sur `Next`{.action}, la commande s'effectuera, vous pourrez ensuite cliquer sur le bouton `Finish`{.action} pour revenir à la première page de cet onglet.
 
 ![commande validée](images/images-order_host_finish.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Si vous avez plusieurs datacentres dans votre infrastructure, le datastore sera 
 
 ### Ressources mensuelles
 
-La commande de ressources mensuelles se fait depuis l'espace client OVHcloud dans l'onglet `datacenter`{.action} de votre Hosted Private Cloud.
+La commande de ressources mensuelles se fait depuis l'espace client OVHcloud dans l'onglet `Datacenter`{.action} de votre Hosted Private Cloud.
 
 #### Facturation mensuelle
 
@@ -100,7 +100,7 @@ Vous pouvez en commander plusieurs à la fois.
 
 ![commande hote](images/images-order_host_manager.png){.thumbnail}
 
-En cliquant sur suivant, vous aurez un résumé de la commande, et vous serez invité à accepter les conditions d'utilisation du service.
+En cliquant sur `Suivant`{.action}, vous aurez un résumé de la commande, et vous serez invité à accepter les conditions d'utilisation du service.
 
 ![confirmation commande hote](images/images-order_host_manager_confirm.png){.thumbnail}
 
@@ -128,9 +128,9 @@ Après avoir cliqué sur le bouton `Activer le SPLA`{.action}, la fenêtre suiva
 
 ![activer SPLA](images/images-activate_spla.png){.thumbnail}
 
-Après avoir confirmé les différentes conditions, vous serez invité a valider un bon de commande gratuit pour que l'option puisse s'activer..
+Après avoir confirmé les différentes conditions, vous serez invité a valider un bon de commande gratuit pour que l'option puisse s'activer.
 
-Cette licence sera facturée en début de mois suivant, par rapport aux nombres de machines déployées et allumées dans le mois écoulé.
+Cette licence sera facturée en début de mois suivant, par rapport au nombre  de machines déployées et allumées dans le mois écoulé.
 
 La facturation se base sur le tableau des tarifs disponible sur [cette page](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/images-licenses/).
 
@@ -146,9 +146,8 @@ La facturation se base sur le tableau des tarifs disponible sur [cette page](htt
 
 Deux cas peuvent se présenter ici :
 
-1- Les machines virtuelles restent sur le même hôte, dans ce cas, vous serez facturé uniquement de la licence *Datacenter*, soit 260 € HT.
-
-2- Une des machines virtuelles est déplacée sur l'autre hôte, dans ce cas vous serez facturé de la licence *Datacenter* et d'une licence *Standard*, soit 300€ HT (260 € + 40 €).
+1. Les machines virtuelles restent sur le même hôte, dans ce cas, vous serez facturé uniquement de la licence *Datacenter*, soit 260 € HT.
+2. Une des machines virtuelles est déplacée sur l'autre hôte, dans ce cas vous serez facturé de la licence *Datacenter* et d'une licence *Standard*, soit 300€ HT (260 € + 40 €).
 
 Une machine virtuelle sera facturée dès son démarrage et pour un mois entier, sans prendre en compte la durée d'utilisation.
 
