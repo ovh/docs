@@ -37,11 +37,11 @@ Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&fr
 
 W polu `Konfiguracja` znajduje się wzmianka `Konta e-mail`. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Aktywuj rozwiązanie e-mail`{.action}.
 
-![email-activation](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
+![email-activation](images/enable-email-included-webhosting.png){.thumbnail}
 
 Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać konta e-mail i potwierdź swój wybór.
 
-![email-activation](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+![email-activation](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](https://www.ovhcloud.com/pl/web-hosting/){.external} na naszej stronie handlowej.
@@ -54,7 +54,7 @@ Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&fr
 
 W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Odłącz opcję e-mail`{.action}.
 
-![email-activation](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+![email-activation](images/detach-email-included-webhosting.png){.thumbnail}
 
 Odpowiednia oferta MX zostanie Ci zaproponowana w momencie zakupu. Kiedy opłacisz zamówienie, Twoje konta e-mail będą nadal działać po zawieszeniu hostingu.
  
@@ -70,7 +70,7 @@ Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&fr
 
 W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Rezygnacja z opcji e-mail`{.action}.
 
-![email-activation](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
+![email-activation](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >

@@ -37,11 +37,11 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na tabela `Configuração`, poderá ver a menção `Endereços de e-mail`. Clique no botão `...`{.action} à direita e, a seguir, em `Ativar a solução de e-mail`{.action}.
 
-![Ativação de e-mail](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
+![Ativação de e-mail](images/enable-email-included-webhosting.png){.thumbnail}
 
 Aparecerá a janela de ativação. Escolha o nome de domínio ao qual pretende associar os seus endereços de e-mail e valide a sua escolha.
 
-![Ativação de e-mail](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+![Ativação de e-mail](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} superior a partir da nossa página comercial.
@@ -54,7 +54,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Endereços de e-mail` e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 
-![Ativação de e-mail](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+![Ativação de e-mail](images/detach-email-included-webhosting.png){.thumbnail}
 
 Ser-lhe-á proposta uma oferta MX adaptada. Uma vez a encomenda regularizada, os seus e-mails continuarão a funcionar após a suspensão do alojamento web.
  
@@ -70,7 +70,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Endereços de e-mail` e, a seguir, em `Rescindir a opção de e-mail`{.action}.
 
-![Ativação de e-mail](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
+![Ativação de e-mail](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >
