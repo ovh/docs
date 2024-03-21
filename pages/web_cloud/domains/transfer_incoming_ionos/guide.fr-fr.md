@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine Ionos vers OVHcloud'
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine Ionos vers OVHcloud'
-updated: 2024-03-11
+updated: 2024-03-22
 ---
 
 ## Objectif
@@ -28,22 +28,30 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 
 ## Prérequis
 
-- Votre domaine ne doit pas être en période de **rédemption** ou de suppression.
+- Le domaine doit être enregistrés à votre nom depuis au moins 60 jours avant que vous puissiez les transférer.
 - Le domaine ne doit pas être bloqué chez votre registrar. 
-- Les coordonnées du propriétaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/){.external} du domaine.
 - Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire. 
-
-> [!primary]
->
-> La période de **rédemption** est de 90 jours maximum à compter du jour d'expiration du nom de domaine. Dans le cas d'un transfert, cette période permet de restaurer le domaine et ainsi débloquer la possibilité de le transférer.
-
-## Extensions concernées
-
-
 
 ## En pratique
 
-### Procédure de transfert
+### Désactiver l'enregistrement privé
+
+Pour confirmer si l'enregistrement privé est activé pour votre domaine, veuillez accéder à la section **Domaines** sur la page [Confidentialité & données de contact]([https://www.nominet.uk/whois/](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue)){.external}. Choisissez votre domaine, puis désactivez l'option d'enregistrement privé. Si cette option ne figure pas sur la page, aucune action est requise et cela signifie que la désactivation de l'enregistrement privé n'est pas disponible pour votre domaine.
+
+### Désactiver le verrouillage du transfert
+
+> [!warning]
+>Par mesure de sécurité, les domaines avec une extension générique (par exemple .com, .net ou .org) sont automatiquement verrouillés par 
+>défaut et ne peuvent pas être transférés. Avant d'initier un transfert de domaine, vous devez désactiver ce verrouillage de transfert.
+
+
+Pour vérifier si le verrouillage de transfert de domaine est activé pour votre domaine, veuillez accéder à la section "Domaines" sur la page "Transfert & renouvellement". Sélectionnez ensuite votre domaine et désactivez l'option de verrouillage de transfert de domaine en utilisant le curseur.
+
+### Obtenir le code d'autorisation
+
+Le code d'autorisation sécurise votre domaine contre tout transfert non autorisé par des tiers. Ce code est requis pour autoriser le transfert de votre domaine vers un nouveau fournisseur.
+
+Pour trouver le code d'autorisation de votre domaine, accédez à la section "Domaines" sur la page [ransfert & renouvellement]([[https://www.nominet.uk/whois/](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Ftransfer%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dtransfer%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue))){.external}. Sélectionnez votre domaine, puis cliquez sur **Afficher le code d'autorisation**
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
