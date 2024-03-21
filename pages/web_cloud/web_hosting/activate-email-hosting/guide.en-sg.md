@@ -42,7 +42,7 @@ The activation window appears. Choose the domain name you would like to link you
 > [!primary]
 > If you would like to have more included email accounts, please order a higher [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external} from our webpage.
 >
-> Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MXPLAN solution. This includes managing and configuring your email addresses.
+> Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MX Plan solution. This includes managing and configuring your email accounts.
 >
 
 ### Keeping your email addresses before your Web Hosting plan expires
