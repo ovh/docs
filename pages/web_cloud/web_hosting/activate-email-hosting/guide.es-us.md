@@ -45,6 +45,9 @@ Se mostrará la ventana de activación. Seleccione el dominio que quiere utiliza
 
 > [!primary]
 > Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} superior desde nuestra página comercial.
+>
+> Atención: La activación de la opción de correo puede tardar unos minutos. Recibirá un mensaje de correo electrónico para confirmar la instalación y activación de la solución MXPLAN. Incluye, entre otras cosas, la gestión y la configuración de sus direcciones de correo.
+>
 
 ### Conservar las direcciones de correo tras la expiración del alojamiento web
 
