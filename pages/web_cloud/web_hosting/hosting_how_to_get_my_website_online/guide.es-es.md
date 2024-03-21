@@ -28,7 +28,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 
 Para llevar su proyecto a buen puerto, es importante tener una visión clara de su objetivo. ¿Qué quiere conseguir con su sitio web? ¿Cómo quiere publicarlo? Los alojamientos web de OVHcloud le ofrecen diversas posibilidades para hacer realidad su proyecto:
 
-- **Crear un sitio web llave en mano con los módulos en un clic de OVHcloud**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, que puede consultar en la página [Crear un sitio web con los CMS más populares](https://www.ovhcloud.com/es-es/web-hosting/uc-website/){.external}.
+- **Crear un sitio web llave en mano con los módulos en un clic de OVHcloud**: Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic compatibles con nuestras infraestructuras, para descubrirlos en la página web de OVHcloud [«Crear un sitio web con los módulos en un clic»](https://www.ovhcloud.com/es-es/web-hosting/uc-website/){.external}. También puede consultar la guía [«Instalar su sitio web con los módulos en un clic»](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Crear un sitio web llave en mano con instalación manual**: Esta solución permite tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.), pero que deberá instalar usted mismo en su alojamiento web de OVHcloud.
 
