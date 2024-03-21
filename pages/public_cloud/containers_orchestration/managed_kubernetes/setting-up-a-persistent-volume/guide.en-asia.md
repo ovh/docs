@@ -4,9 +4,9 @@ excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Vo
 updated: 2022-11-28
 ---
 
-In this tutorial we are going to guide you with a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
+In this tutorial we are going to guide you through a simple example of setting up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
 
-You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an asscoiated Public Cloud __Block Storage__ volume.<br>
+You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an associated Public Cloud __Block Storage__ volume.<br>
 Then you will create a `Pod` attached to the PVC.
 
 ![Schema](images/schema.png){.thumbnail}
@@ -26,7 +26,7 @@ It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kuber
 As the [official documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) states:
 
 - A `PersistentVolume` (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.  
-- A `PersistentVolumeClaim` (PVC) is a request for storage by a user. It is similar to a pod. Pods consume node resources and PVCs consume PV resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes (e.g., can be mounted once read/write or many times read-only).
+- A `PersistentVolumeClaim` (PVC) is a request for storage by a user. It is similar to a pod. Pods consume node resources and PVCs consume PV resources. Pods can request specific levels of resources (CPU and Memory). Claims can request specific size and access modes (e.g., they can be mounted once as read/write or many times as read-only).
 
 Or, if you prefer an analogy, **PVC are to PV like pods are to nodes**.
 
