@@ -20,13 +20,11 @@ Toute instance créée en forfait mensuel et existante au 1er du mois en cours s
 
 ### Si je crée une instance au forfait mensuel en milieu de mois, comment suis-je facturé ?
 
-Cette instance sera facturée sur la base du tarif forfaitaire mensuel et au prorata temporis du nombre d’heures restant depuis la création de l'instance jusqu’à la fin du mois en cours (l’heure de création de l'instance étant comptabilisée comme une heure pleine et entière)
+Cette instance sera facturée sur la base du tarif forfaitaire mensuel et au prorata temporis du nombre de jours restants dans le mois.
 
-Par exemple, si vous commandez une instance mensuelle B2-7 le 13 juillet à 11h00, dont le prix mensuel est de 24,20 € HT, l'instance apparaîtra sur la prochaine facture le premier jour du mois suivant. Le prorata sera calculé ainsi : 
+Par exemple, si le 13 du mois vous commandez une instance B2-7 (dont le prix mensuel est de 24,20 € HT) au forfait mensuel, l'instance apparaîtra sur la prochaine facture le premier jour du mois suivant.
 
-- 31 jours = 744 heures
-- 12 jours + 12 heures consommées = 300 heures consommées
-- ((744-300)/744) x 24,20 = 14,44 € HT
+Le prorata sera calculé ainsi : 31-12 jours consommés sur les 31 jours disponibles dans le mois, soit ((31-12)/31) x 24,20 = 14,83 € HT.
 
 Par la suite, si votre instance existe encore en début de mois, vous reviendrez à la facturation normale : le forfait mensuel d'une instance dans un mois donné apparaîtra sur la facture émise le 1er du mois suivant. Par exemple, si vous avez commandé une instance en mai et qu’elle est toujours active début juin, vous serez facturé le 1er juillet pour tout le mois de juin.
 
