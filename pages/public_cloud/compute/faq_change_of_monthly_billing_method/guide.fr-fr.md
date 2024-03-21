@@ -1,5 +1,5 @@
 ---
-title: FAQ - Changement du mode de facturation mensuelle
+title: FAQ - Changement du mode de facturation pour les instances au forfait mensuel
 excerpt: ""
 updated: 2024-03-21
 ---
@@ -10,25 +10,29 @@ updated: 2024-03-21
 
 ## FAQ
 
-### Quels sont les changements pour la facturation mensuelle de mes instances ?
+### Quels sont les changements pour mes instances au forfait mensuel ?
 
-La facturation de vos instances au forfait mensuel est désormais regroupée au sein d'une seule facture, contenant également la facturation de vos instances au forfait horaire. Le principe est le suivant : l'abonnement mensuel d'une instance au cours d'un mois donné apparaîtra sur la facture émise le 1er du mois suivant.
+La facturation de vos instances au forfait mensuel est désormais regroupée au sein d'une seule facture, contenant également la facturation de vos instances au tarif horaire. Le principe est le suivant : le forfait mensuel d'une instance au cours d'un mois donné apparaîtra sur la facture émise le 1er du mois suivant.
 
 ### Quand dois-je régler une instance avec une facturation au forfait mensuel ?
 
-Toute instance créée en facturation mensuelle et existante au 1er du mois en cours sera facturée pour un mois complet. Elle apparaîtra ensuite sur la prochaine facture le premier jour du mois suivant, en même temps que vos autres utilisations de services Public Cloud.
+Toute instance créée en forfait mensuel et existante au 1er du mois en cours sera facturée pour un mois complet. Elle apparaîtra ensuite sur la prochaine facture le premier jour du mois suivant, en même temps que vos autres utilisations de services Public Cloud.
 
-### Si je démarre une instance au forfait mensuel en milieu de mois, comment suis-je facturé ?
+### Si je crée une instance au forfait mensuel en milieu de mois, comment suis-je facturé ?
 
-Cette instance sera facturée sur la base du tarif mensuel et au prorata du nombre de jours restants dans le mois.
+Cette instance sera facturée sur la base du tarif forfaitaire mensuel et au prorata temporis du nombre d’heures restant depuis la création de l'instance jusqu’à la fin du mois en cours (l’heure de création de l'instance étant comptabilisée comme une heure pleine et entière)
 
-Par exemple, si vous commandez une instance mensuelle B2-7 le 13 du mois, dont le prix mensuel est de 24,20 € HT, l'instance apparaîtra sur la prochaine facture le premier jour du mois suivant. Le prorata se calcule comme suit : 31-12 jours consommés sur les 31 disponibles dans le mois, soit ((31-12)/31) x 24,20 = 14,83 € HT.
+Par exemple, si vous commandez une instance mensuelle B2-7 le 13 juillet à 11h00, dont le prix mensuel est de 24,20 € HT, l'instance apparaîtra sur la prochaine facture le premier jour du mois suivant. Le prorata sera calculé ainsi : 
 
-Par la suite, si votre instance existe encore en début de mois, vous reviendrez à la facturation normale : l'abonnement mensuel d'une instance dans un mois donné apparaîtra sur la facture émise le 1er du mois suivant. Par exemple, si vous avez commandé une instance en mai et qu’elle est toujours active début juin, vous serez facturé le 1er juillet pour tout le mois de juin.
+- 31 jours = 744 heures
+- 12 jours + 12 heures consommées = 300 heures consommées
+- ((744-300)/744) x 24,20 = 14,44 € HT
+
+Par la suite, si votre instance existe encore en début de mois, vous reviendrez à la facturation normale : le forfait mensuel d'une instance dans un mois donné apparaîtra sur la facture émise le 1er du mois suivant. Par exemple, si vous avez commandé une instance en mai et qu’elle est toujours active début juin, vous serez facturé le 1er juillet pour tout le mois de juin.
 
 ### Comment m’assurer que je ne suis plus facturé pour une instance mensuelle ?
 
-Vous devrez supprimer cette instance avant 00h00 le 1er du mois suivant, afin que votre abonnement mensuel ne soit pas renouvelé pour cette instance.
+Vous devrez supprimer cette instance avant 00h00 le 1er du mois suivant, afin que votre forfait mensuel ne soit pas renouvelé pour cette instance.
 
 ### Si j’arrête une instance mensuelle en milieu de mois, comment suis-je facturé ?
 
