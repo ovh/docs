@@ -155,7 +155,6 @@ Lorsque vous sélectionnez un e-mail est sélectionné, de nombreuses actions so
     - **Marquer comme non lu**.
     - **Étoile** : attribuer une étoile à votre e-mail pour le mettre en évidence et l'identifier plus facilement.
     - **Supprimer l'étoile** : retirer l'étoile attribuée à cet e-mail.
-    - **Bloquer** : bloquer les e-mails provenant de l'expéditeur et/ou supprimer tous les emails existants provenant de cet expéditeur.
     - **Afficher l'original** : Afficher le message dans son intégralité, corps et en-tête.
     - **Nouveau filtre** : créer un filtre à partir de l'expéditeur et de l'objet du message sélectionné.
     - **Imprimer** : imprimer la conversation ou l'e-mail sélectionné.

@@ -159,7 +159,6 @@ Selezionando un’email sono disponibili numerose azioni:
     - **Contrassegna come non letto**.
     - **Stella**: assegna una stella alla tua email per evidenziarla e identificarla più facilmente.
     - **Elimina stella** : rimuovi la stella assegnata a questa email.
-    - **Blocca** : blocca le email provenienti dal mittente e/o elimina tutte le email esistenti provenienti da questo mittente.
     - **Mostra originale** : Visualizzare l'intero messaggio, corpo e intestazione.
     - **Nuovo filtro** : crea un filtro dal mittente e dall'oggetto del messaggio selezionato.
     - **Stampa** : stampa la conversazione o l'email selezionata.

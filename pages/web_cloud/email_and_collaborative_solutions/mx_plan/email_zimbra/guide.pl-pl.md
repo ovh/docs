@@ -159,7 +159,6 @@ Po wybraniu wiadomości e-mail dostępnych jest wiele operacji:
     - **Oznacz jako nieprzeczytane**.
     - **Gwiazdka**: przypisz gwiazdkę do swojego e-maila, aby go wyróżnić i łatwiej go zidentyfikować.
     - **Usuń gwiazdkę**: usuń gwiazdkę przypisaną do tego e-maila.
-    - **Blokuj**: zablokuj wiadomości od nadawcy i/lub usuń wszystkie istniejące wiadomości od tego nadawcy.
     - **Pokaż oryginał**: Wyświetl całą wiadomość, jej treść i nagłówek.
     - **Nowy filtr**: Utwórz filtr na podstawie wybranego tematu wiadomości i nadawcy.
     - **Drukuj**: drukuj wybraną konwersację lub wiadomość e-mail.

@@ -159,7 +159,6 @@ Wenn Sie eine E-Mail auswählen, stehen Ihnen zahlreiche Aktionen zur Verfügung
     - **Als ungelesen markieren**
     - **Markierung**: Weisen Sie Ihrer E-Mail einen "Stern" zu, um sie zu markieren und leichter zu identifizieren.
     - **Markierung löschen**: Entfernt den dieser E-Mail zugewiesenen "Stern".
-    - **Blockieren**: Option zum Blockieren der Absender-Adresse.
     - **Original anzeigen**: Zeigt die E-Mail im Rohformat inklusive Header an.
     - **Neuer Filter**: Erstellt einen Filter basierend auf Absender und Betreff der ausgewählten Nachricht.
     - **Drucken**: Auswahl ausdrucken.

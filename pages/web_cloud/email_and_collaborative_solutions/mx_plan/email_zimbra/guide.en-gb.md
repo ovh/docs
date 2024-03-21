@@ -155,7 +155,6 @@ When you select an email is selected, many actions are available:
     - **Mark as Unread**
     - **Star**: Assign a "star" to your email to highlight and identify it more easily.
     - **Clear Star**: Remove the "star" assigned to this email.
-    - **Block**: Option to block mails from this sender.
     - **Show Original**: Display the raw email with the header.
     - **New Filter**: Create a filter based on the sender and subject of the selected message.
     - **Print**: Print the selected conversation or email.

@@ -159,7 +159,6 @@ Al seleccionar un mensaje de correo electrónico, podrá realizar diversas accio
     - **Marcar como no leído**.
     - **Estrella**: asignar una estrella a su correo electrónico para resaltarlo e identificarlo más fácilmente.
     - **Desmarcar estrella**: eliminar la estrella asignada a este mensaje de correo electrónico.
-    - **Bloquear**: bloquear los mensajes procedentes del remitente y/o eliminar todos los mensajes existentes procedentes de este remitente.
     - **Mostrar original**: Mostrar el mensaje completo, cuerpo y encabezado.
     - **Nuevo filtro**: crea un filtro a partir del remitente y el asunto del mensaje seleccionado.
     - **Imprimir**: Imprimir la conversación o el mensaje de correo electrónico seleccionados.
