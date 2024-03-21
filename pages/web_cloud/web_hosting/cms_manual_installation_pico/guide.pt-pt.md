@@ -82,7 +82,7 @@ Your content here
 
 **1. Selecionar um tema** : O Pico está instalado com um tema predefinido, mas pode descarregar outros temas a partir do [site oficial do Pico](https://picocms.org/themes/) ou criar o seu.
 
-**2 Alterar o tema** : para alterar o tema, atualize a secção `theme:` no ficheiro `config/config.yml` com o nome da pasta do tema que deseja utilizar.
+**2. Alterar o tema** : para alterar o tema, atualize a secção `theme:` no ficheiro `config/config.yml` com o nome da pasta do tema que deseja utilizar.
 
 **3. Personalizar o tema** : pode modificar os ficheiros do tema em `themes/yourtheme/` para personalizar a aparência do seu website. Isso pode incluir a edição de arquivos HTML Twig, CSS, e JavaScript.
 
