@@ -44,6 +44,9 @@ Daraufhin öffnet sich das Aktivierungsfenster. Wählen Sie aus, welchen Domainn
 
 > [!primary]
 > Wenn Sie mehr inklusive E-Mail-Accounts nutzen möchten, können Sie ein leistungsfähigeres [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} über unsere Webseite auswählen.
+>
+> Achtung: Die Aktivierung der Option E-Mail kann einige Minuten in Anspruch nehmen. Sie erhalten eine E-Mail, um die Installation und Aktivierung des Angebots MXPLAN zu bestätigen. Dazu gehört insbesondere die Verwaltung und Konfiguration Ihrer E-Mail-Adressen.
+>
 
 ### Sichern Ihrer E-Mail-Accounts, bevor Ihr Webhosting endet
 
