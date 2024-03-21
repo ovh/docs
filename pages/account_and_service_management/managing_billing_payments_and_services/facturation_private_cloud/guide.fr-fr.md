@@ -84,7 +84,7 @@ La commande de ressources mensuelles se fait depuis l'espace client OVHcloud dan
 
 ## Facturation mensuelle
 
-Depuis le passage sous Agora, la facturation suit le principe de prorata temporis qui s'applique dès la commande de la ressource.
+La facturation suit le principe du prorata temporis qui s'applique dès la commande de la ressource.
 
 ### Exemple :
 
