@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
+- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Découvrez l'état des différentes versions disponibles sur cette [page] (https://webhosting-infos.hosting.ovh.net/). Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
 
