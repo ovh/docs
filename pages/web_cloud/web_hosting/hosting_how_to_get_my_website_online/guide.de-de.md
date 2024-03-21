@@ -28,7 +28,7 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben. Was ist der Zweck Ihrer Website? Wie soll Sie online gestellt werden? Über Ihr OVHcloud Webhosting Angebot stehen Ihnen mehrere Möglichkeiten für Ihr Website-Projekt zur Verfügung.
 
-- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung, die mit unseren Infrastrukturen kompatibel sind. Nähere Informationen finden Sie in der Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud bietet vier bereits mit unseren 1-Klick-Modulen kompatible Module an, die Sie auf der OVHcloud-Webseite [„Eine Website mit 1-Klick-Modulen erstellen“](https://www.ovhcloud.com/de/web-hosting/uc-website/){.external} entdecken können. Sie können auch die Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules) einsehen.
 
 - **Website über gebrauchsfertige Vorlage manuell installieren**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). Die Vorlage installieren Sie selbst auf Ihrem OVHcloud Webhosting.
 
