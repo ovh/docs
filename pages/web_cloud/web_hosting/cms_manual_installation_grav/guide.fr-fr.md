@@ -35,7 +35,7 @@ Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installat
 
 Saisissez votre nom de domaine dans la barre de recherche de votre navigateur Internet.
 
-Si les fichiers source de Grav ont été placés correctement dans votre dossier racine, la page `votre_domaine/admin` s'affiche :
+Si les fichiers source de Grav ont été placés correctement dans votre dossier racine, la page `your-domain/admin` s'affiche :
 
 ![Grav installation](images/first_page_config.png){.thumbnail}
 
