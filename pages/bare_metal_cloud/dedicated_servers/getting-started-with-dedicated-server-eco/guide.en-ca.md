@@ -1,6 +1,6 @@
 ---
-title: Getting started with a Kimsufi, So You Start or Rise dedicated server
-excerpt: 'Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server'
+title: "Getting started with a Kimsufi, So You Start or Rise dedicated server"
+excerpt: "Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server"
 updated: 2024-02-19
 ---
 
@@ -18,9 +18,23 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ## Instructions
 
-When your dedicated server is first set up during the order process, you can select which operating system will be installed.
+### Content overview
 
-### Installing or reinstalling your dedicated server
+- [Installing or reinstalling an operating system](#install)
+- [Logging on to your server](#connect)
+- [Restarting your dedicated server](#reboot)
+- [Securing your dedicated server](#secure)
+- [OVHcloud Monitoring](#monitoring-server)
+- [Network configuration](#network)
+- [Rescue mode](#rescue)
+- [Access using IPMI](#console)
+- [Backup storage](#backup)
+
+<a name="install"></a>
+
+### Installing or reinstalling an operating system
+
+When your dedicated server is first set up during the order process, you can select which operating system will be installed.
 
 You can easily reinstall your server and choose a different OS image in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
@@ -85,6 +99,8 @@ For a detailed explanation on how to generate SSH keys, please refer to [this gu
 >This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
+<a name="connect"></a>
+
 ### Logging on to your server
 
 #### Linux
@@ -100,7 +116,7 @@ ssh username@IPv4
 **Example:**
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.1
 ```
 
 You can learn more about SSH in [this guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -111,7 +127,9 @@ Once the installation is completed, you will receive an email containing your pa
 
 Please also refer to our guide on [Configuring a new Windows Server installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
-### Restarting your dedicated server <a name="reboot"></a>
+<a name="reboot"></a>
+
+### Restarting your dedicated server
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
 
@@ -123,13 +141,17 @@ However, you can carry out a "hard reboot" at any time in your [OVHcloud Control
 
 ![Rebooting](images/rebooting-your-server.png){.thumbnail}
 
+<a name="secure"></a>
+
 ### Securing your dedicated server
 
 As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 
 If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) instead.
 
-### OVHcloud Monitoring <a name="monitoring-server"></a>
+<a name="monitoring-server"></a>
+
+### OVHcloud Monitoring
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) (section **Service status**).
 
@@ -146,6 +168,8 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 Click on `Confirm`{.action} to update your monitoring configuration.
 
 You can find more information about OVHcloud Monitoring in [this guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+<a name="network"></a>
 
 ### Network configuration
 
@@ -177,11 +201,15 @@ For detailed instructions on how to configure IP aliasing, please refer to [this
 
 OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 
+<a name="rescue"></a>
+
 ### Rescue mode
 
 For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+<a name="console"></a>
 
 ### Access using IPMI
 
@@ -193,6 +221,8 @@ Please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_server
 OVHcloud deploys all dedicated servers with an IPMI (Intelligent Platform Management Interface) console which runs in your browser or from a Java applet, and enables you to connect directly to your server even if it has no network connection. This makes it a useful tool for troubleshooting issues that may have taken your server offline.
 
 For more information, please refer to our guide: [Using the IPMI with dedicated servers](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+
+<a name="backup"></a>
 
 ### Backup storage
 

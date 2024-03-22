@@ -1,6 +1,6 @@
 ---
-title: 'Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise'
-excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié Kimsufi, So You Start ou Rise'
+title: "Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise"
+excerpt: "Découvrez comment prendre en main votre nouveau serveur dédié Kimsufi, So You Start ou Rise"
 updated: 2024-02-19
 ---
 
@@ -18,9 +18,23 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ## En pratique
 
-Lorsque votre serveur dédié est configuré pour la première fois au cours du processus de commande, vous pouvez sélectionner le système d'exploitation à installer.
+### Sommaire
 
-### Installation ou réinstallation de votre serveur dédié
+- [Installation ou réinstallation d'un système d'exploitation](#install)
+- [Connexion à votre serveur](#connect)
+- [Redémarrage de votre serveur dédié](#reboot)
+- [Sécurisation de votre serveur dédié](#secure)
+- [Monitoring OVHcloud](#monitoring-server)
+- [Configuration réseau](#network)
+- [Mode rescue](#rescue)
+- [Accès à l'aide de l'IPMI](#console)
+- [Backup storage](#backup)
+
+<a name="install"></a>
+
+### Installation ou réinstallation d'un système d'exploitation
+
+Lorsque votre serveur dédié est configuré pour la première fois au cours du processus de commande, vous pouvez sélectionner le système d'exploitation à installer.
 
 Vous pouvez facilement réinstaller votre serveur et choisir une autre image d'OS dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
@@ -85,6 +99,8 @@ Pour obtenir une explication détaillée sur la génération de clés SSH, repor
 >Ce guide est conçu pour vous aider le plus possible dans les tâches courantes. Néanmoins, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en oeuvre des services sur un serveur.
 >
 
+<a name="connect"></a>
+
 ### Connexion à votre serveur
 
 #### Linux
@@ -100,7 +116,7 @@ ssh username@IPv4
 **Exemple :**
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.1
 ```
 
 Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ».
@@ -111,7 +127,9 @@ Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot d
 
 Consultez également notre guide « [Configurer une nouvelle installation de Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config) ».
 
-### Redémarrage de votre serveur dédié <a name="reboot"></a>
+<a name="reboot"></a>
+
+### Redémarrage de votre serveur dédié
 
 Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
 
@@ -123,13 +141,17 @@ Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre 
 
 ![Redémarrage](images/rebooting-your-server.png){.thumbnail}
 
+<a name="secure"></a>
+
 ### Sécurisation de votre serveur dédié
 
 Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'administrateur de votre serveur dédié. En tant que tel, vous êtes responsable de vos données et de leur sécurité. Pour en savoir plus sur la sécurisation de votre serveur, consultez notre guide « [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) ».
 
 Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoring OVHcloud <a name="monitoring-server"></a>
+<a name="monitoring-server"></a>
+
+### Monitoring OVHcloud
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). L'option se situe dans la section `État des services`.
 
@@ -146,6 +168,8 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
 
 Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+<a name="network"></a>
 
 ### Configuration réseau
 
@@ -177,11 +201,15 @@ Pour obtenir des instructions détaillées sur la configuration de l'alias IP, r
 
 Tous les serveurs dédiés OVHcloud sont livrés avec un bloc /64 IPv6. Pour utiliser les adresses de ce bloc, vous devez apporter des modifications à la configuration du réseau. Consultez notre guide « [Configuration IPv6](/pages/bare_metal_cloud/dedicated_servers/network_ipv6) ».
 
+<a name="rescue"></a>
+
 ### Mode rescue
 
 Pour tout type de problème, la première étape de dépannage consiste à redémarrer votre serveur en mode rescue depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Il est important d'identifier les problèmes de serveur dans ce mode, afin d'exclure les problèmes liés aux logiciels avant de contacter nos équipes de support.
 
 Reportez-vous au guide « [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) ».
+
+<a name="console"></a>
 
 ### Accès à l'aide de l'IPMI
 
@@ -193,6 +221,8 @@ Reportez-vous au guide « [Activer et utiliser le mode rescue](/pages/bare_metal
 OVHcloud déploie tous les serveurs dédiés avec une console IPMI (Intelligent Platform Management Interface) qui s'exécute dans votre navigateur ou à partir d'une applet Java, et vous permet de vous connecter directement à votre serveur même s'il n'a pas de connexion réseau. Cela en fait un outil utile pour résoudre les problèmes qui ont pu mettre votre serveur hors ligne.
 
 Pour plus d'informations, reportez-vous à notre guide « [Utilisation de l'IPMI avec des serveurs dédiés](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) ».
+
+<a name="backup"></a>
 
 ### Backup storage
 

@@ -1,6 +1,6 @@
 ---
-title: 'Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise'
-excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego Kimsufi, So You Start lub Rise'
+title: "Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise"
+excerpt: "Poznaj podstawy korzystania z serwera dedykowanego Kimsufi, So You Start lub Rise"
 updated: 2024-02-19
 ---
 
@@ -22,9 +22,23 @@ Serwer dedykowany to fizyczny serwer zlokalizowany w jednym z naszych centrów d
 
 ## W praktyce
 
-Jeśli Twój serwer dedykowany jest po raz pierwszy skonfigurowany w trakcie procesu zamówienia, możesz wybrać system operacyjny do zainstalowania.
+### Podsumowanie
 
-### Instalacja lub reinstalacja serwera dedykowanego
+- [Instalacja lub reinstalacja systemu operacyjnego](#install)
+- [Połączenie z serwerem](#connect)
+- [Restart serwera dedykowanego](#reboot)
+- [Bezpieczeństwo serwera dedykowanego](#secure)
+- [Monitoring OVHcloud](#monitoring-server)
+- [Konfiguracja sieci](#network)
+- [Tryb Rescue](#rescue)
+- [Dostęp za pomocą IPMI](#console)
+- [Backup Storage](#backup)
+
+<a name="install"></a>
+
+### Instalacja lub reinstalacja systemu operacyjnego
+
+Jeśli Twój serwer dedykowany jest po raz pierwszy skonfigurowany w trakcie procesu zamówienia, możesz wybrać system operacyjny do zainstalowania.
 
 W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny obraz systemu operacyjnego w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko systemu operacyjnego, a następnie wybierz `Zainstaluj`{.action}.
 
@@ -89,6 +103,8 @@ Aby uzyskać szczegółowe wyjaśnienie dotyczące generowania kluczy SSH, zapoz
 >Niniejszy przewodnik ma na celu pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy kontakt z wyspecjalizowanym dostawcą usług.
 >
 
+<a name="connect"></a>
+
 ### Połączenie z serwerem
 
 #### Linux
@@ -106,7 +122,7 @@ ssh username@IPv4
 **Przykład:**
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.1
 ```
 
 Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)".
@@ -117,7 +133,9 @@ Po zakończeniu instalacji otrzymasz e-mail z hasłem dostępu administratora (s
 
 Sprawdź również nasz przewodnik [Skonfiguruj nową instalację Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
-### Restart serwera dedykowanego <a name="reboot"></a>
+<a name="reboot"></a>
+
+### Restart serwera dedykowanego
 
 Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "soft reboot" serwera za pomocą wiersza poleceń:
 
@@ -129,13 +147,17 @@ W każdej chwili możesz jednak wykonać "reboot hard" w [Panelu klienta OVHclou
 
 ![Restart](images/rebooting-your-server.png){.thumbnail}
 
+<a name="secure"></a>
+
 ### Bezpieczeństwo serwera dedykowanego
 
 Zgodnie z informacją w części “Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem [Zabezpieczenie serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 
 Jeśli korzystasz z serwera Windows, zapoznaj się z [tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoring OVHcloud <a name="monitoring-server"></a>
+<a name="monitoring-server"></a>
+
+### Monitoring OVHcloud
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Wariant ten znajduje się w sekcji `Status usług`.
 
@@ -152,6 +174,8 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
 
 Więcej informacji na temat monitoringu OVHcloud znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+<a name="network"></a>
 
 ### Konfiguracja sieci
 
@@ -183,11 +207,15 @@ Szczegółowe instrukcje dotyczące konfiguracji aliasu IP znajdziesz w przewodn
 
 Wszystkie serwery dedykowane OVHcloud są dostarczane z blokiem /64 IPv6. Aby korzystać z adresów tego bloku, należy wprowadzić zmiany w konfiguracji sieci. Zapoznaj się z naszym przewodnikiem "[Konfiguracja IPv6](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)".
 
+<a name="rescue"></a>
+
 ### Tryb Rescue
 
 W przypadku każdego rodzaju problemu pierwszym krokiem do rozwiązania problemu jest uruchomienie serwera w trybie Rescue w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przed skontaktowaniem się z zespołami pomocy ważne jest zidentyfikowanie problemów z serwerem w tym trybie.
 
 Zapoznaj się z przewodnikiem "[Włącz i użyj trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)".
+
+<a name="console"></a>
 
 ### Dostęp za pomocą IPMI
 
@@ -199,6 +227,8 @@ Zapoznaj się z przewodnikiem "[Włącz i użyj trybu Rescue](/pages/bare_metal_
 OVHcloud wdraża wszystkie serwery dedykowane za pomocą konsoli IPMI (Intelligent Platform Management Interface), która uruchamiana jest w przeglądarce lub z apletu Java. Konsola ta pozwala na połączenie bezpośrednio z serwerem, nawet jeśli nie ma on połączenia sieciowego. Jest to użyteczne narzędzie do rozwiązywania problemów, które mogły spowodować usunięcie serwera z sieci.
 
 Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Korzystanie z IPMI z serwerów dedykowanych](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)".
+
+<a name="backup"></a>
 
 ### Backup Storage
 
