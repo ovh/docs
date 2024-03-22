@@ -86,7 +86,7 @@ Pour résilier votre offre dans la section « Mes services » de votre espace OV
 
 ### Les fonctionnalités maintenues , suspendues ou retirées lors de la migration vers Zimbra. <a name="features"></a>
 
-- **Gestion du compte e-mail depuis l'espace client** (Mot de passe, alias, quota) : Maintenu
+- **Gestion du compte e-mail depuis l'espace client** (Mot de passe, alias, quota) : Maintenue
 - **Offres et facturation** : Maintenues
 - **Redirection / Alias / mailing list depuis l'espace client** : Maintenus
 - **Configuration DNS - SPF / MX / SRV** : Maintenue
