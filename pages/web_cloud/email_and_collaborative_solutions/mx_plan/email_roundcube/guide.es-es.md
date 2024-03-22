@@ -38,6 +38,7 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
     - [Contactos](#contacts-settings)
     - [Carpetas especiales](#special-folder-settings)
     - [Configuración del servidor](#server-settings)
+    - [Cifrado](#encryption)
 - [Gestionar las identidades y su firma](#identity-signature)
     - [Configurar atributos de identidad](#identity)
     - [Añadir una firma](#signature)

@@ -38,6 +38,7 @@ Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośr
     - [Contacts](#contacts-settings)
     - [Foldery specjalne](#special-folder-settings)
     - [Ustawienia serwera](#server-settings)
+    - [Szyfrowanie](#encryption)
 - [Zarządzaj tożsamościami i ich podpisami](#identity-signature)
     - [Identity](#identity)
     - [Podpis](#signature)

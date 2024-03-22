@@ -38,6 +38,7 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
     - [Kontakte](#contacts-settings)
     - [Spezialordner](#special-folder-settings)
     - [Servereinstellungen](#server-settings)
+    - [Verschlüsselung](#encryption)
 - [Identitäten und deren Signatur verwalten](#identity-signature)
     - [Attribute einer Identität einstellen](#identity)
     - [Signatur hinzufügen](#signature)

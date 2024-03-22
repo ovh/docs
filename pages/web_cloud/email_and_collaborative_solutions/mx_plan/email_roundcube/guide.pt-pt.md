@@ -38,6 +38,7 @@ Com a oferta MX Plan OVHcloud, pode enviar e-mails a partir de um software de te
     - [Contactos](#contacts-settings)
     - [Pastas especiais (predefinidas)](#special-folder-settings)
     - [Definições do servidor](#server-settings)
+    - [Encriptação](#encryption)
 - [Gerir identidades e respetivas assinaturas](#identity-signature)
     - [Identity](#identity)
     - [Assinatura](#signature)

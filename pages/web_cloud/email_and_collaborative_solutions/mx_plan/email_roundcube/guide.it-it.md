@@ -38,6 +38,7 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
     - [Contatti](#contacts-settings)
     - [Cartelle speciali](#special-folder-settings)
     - [Impostazioni del server](#server-settings)
+    - [Cifratura](#encryption)
 - [Gestisci le identità e la loro firma](#identity-signature)
     - [Impostare gli attributi di un'identità](#identity)
     - [Aggiungere una firma](#signature)

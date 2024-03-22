@@ -34,6 +34,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
     - [Contacts](#contacts-settings)
     - [Special folders](#special-folder-settings)
     - [Server settings](#server-settings)
+    - [Encryption](#encryption)
 - [Managing identities and their signatures](#identity-signature)
     - [Identity](#identity)
     - [Signature](#signature)

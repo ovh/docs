@@ -34,7 +34,7 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
     - [Contacts](#contacts-settings)
     - [Dossiers spéciaux](#special-folder-settings)
     - [Paramètres du serveur](#server-settings)
-    - [Chiffrement](#Encryption)
+    - [Chiffrement](#encryption)
 - [Gérer les identités et leur signature](#identity-signature)
     - [Identity](#identity)
     - [Signature](#signature)
@@ -61,8 +61,8 @@ Vous serez alors redirigé vers l'interface Roundcube.
 
 > [!primary]
 > 
-> Lorsque vous vous connectez pour la première fois sur l'interface Roundcube, il se peut que l'affichage de cette dernière soit différent de celle que vous voyez sur ce guide. C'est normal ! Il s'agit simplement de l'affichage "classique" qui est affecté par défaut à votre interface. Vous pouvez changer l'habillage de votre interface en allant dans 'Paramètres' puis sélectionnez la section 'Interface utilisateur' puis dans "Habillage de l'interface" et sélectionnez l'affichage "Larry".
-> L'habillage de l'interface n'aura pas d'effet sur les explications qui suivent de ce guide.
+> Lorsque vous vous connectez pour la première fois sur l'interface Roundcube, l'apparence peut être différente de celle que vous verrez dans cette documentation. Cela signifie que l'apparence « classique » a été définie sur votre interface. Pour la changer, suivez la rubrique « [Interface utilisateur](#user-interface-settings) » et sélectionnez l'affichage « Larry ».
+> L'apparence de l'interface n'aura pas d'effet sur les explications qui suivent sur cette documentation.
 
 > [!warning]
 > 
@@ -217,7 +217,7 @@ Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En
 > 
 > Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « SPAM ») se retrouverait déclaré comme SPAM pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
 
-#### Chiffrement <a name="Encryption"></a>
+#### Chiffrement <a name="encryption"></a>
 
 Si votre navigateur vous le permet, vous pouvez installer et activer une extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailveloppe » permet de :
 
