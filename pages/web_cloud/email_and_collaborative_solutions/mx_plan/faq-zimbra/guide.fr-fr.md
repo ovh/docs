@@ -89,7 +89,7 @@ Pour résilier votre offre dans la section « Mes services » de votre espace OV
 - **Gestion du compte e-mail depuis l'espace client** (Mot de passe, alias, quota) : Maintenu
 - **Offres et facturation** : Maintenues
 - **Redirection / Alias / mailing list depuis l'espace client** : Maintenus
-- **Configuration DNS - SPF / MX / SRV** : Maintenu
+- **Configuration DNS - SPF / MX / SRV** : Maintenue
 - **Délégations de compte e-mail** : Maintenu, via le webmail
 - **Connexion aux logiciels de messagerie** (IMAP/POP) : Maintenu, aucune modification de configuration nécessaire.
 - **Contenu du compte e-mail** (e-mails, dossiers, contacts) : Migré
