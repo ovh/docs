@@ -207,7 +207,7 @@ Nous ne conseillons pas de les modifier mais il est possible d'attribuer le comp
 
 **Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé en cliquant sur la liste déroulante et en choisissant ce dossier. Si aucun dossier ne lui est attribué, il sera automatiquement mis sur l'option « Drafts ». Les e-mails qui y seront enregistrés seront alors considérés comme des brouillons jusqu'à leur envoi effectif.
 
-> En pratique, je crée un sous-dossier "Draft mails clients". Je me rends dans `mes préférences`{.action} / `Dossiers spéciaux`{.action} et je choisie l'option "Brouillons". Dans le menu déroulant, je sélectionne le dossier "Draft mails clients" pour remplacer "Drafts". Les e-mails rédigés dans ce dossier seront considérés comme des brouillons.
+> En pratique, je crée un sous-dossier « Draft e-mails clients ». Je me rends dans `Mes préférences`{.action} / `Dossiers spéciaux`{.action} et je choisis l'option « Brouillons ». Dans le menu déroulant, je sélectionne le dossier « Draft e-mails clients » pour remplacer « Drafts ». Les e-mails rédigés dans ce dossier seront considérés comme des brouillons.
 
 #### Paramètres du serveur <a name="server-settings"></a>
 
