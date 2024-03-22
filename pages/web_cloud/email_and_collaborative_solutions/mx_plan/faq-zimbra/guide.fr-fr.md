@@ -84,7 +84,7 @@ Il est toutefois possible de continuer à profiter de l'interface OWA [en migran
 
 Pour résilier votre offre dans la section « Mes services » de votre espace OVHCloud, consultez la rubrique MX Plan de notre guide « [Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan) ».
 
-### les fonctionnalités maintenues , suspendues ou retirées lors de la migration vers Zimbra. <a name="features"></a>
+### Les fonctionnalités maintenues , suspendues ou retirées lors de la migration vers Zimbra. <a name="features"></a>
 
 - **Gestion du compte e-mail depuis l'espace client** (Mot de passe, alias, quota) : Maintenu
 - **Offres et facturation** : Maintenues
