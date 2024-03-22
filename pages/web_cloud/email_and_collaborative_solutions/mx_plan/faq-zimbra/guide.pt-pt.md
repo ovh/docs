@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre a solução Zimbra OVHcloud
 excerpt: "Encontre as questões relativas à migração para Zimbra para a oferta MX Plan da OVHcloud"
-updated: 2024-03-11
+updated: 2024-03-22
 ---
 
 > [!primary]
@@ -44,13 +44,13 @@ No entanto, é necessária uma curta interrupção do serviço durante a fase de
 
 Esta migração foi pensada para minimizar o impacto nos nossos clientes. Não é esperada qualquer manipulação da sua parte.
 
-No entanto, as boas práticas em termos de gestão das palavras-passe implicam uma manipulação.<br>
-Antes da migração, será informado se deve realizar uma alteração de palavra-passe ao seu nível. Se for o caso, receberá por via segura uma lista de palavras-passe provisórias para as contas de e-mail a manipular após a migração.<br>
-Estas palavras-passe de utilização única permitem que os seus utilizadores acedam à interface web do Zimbra. Uma vez ligados ao Zimbra, cada utilizador será obrigado a reinicializar a sua palavra-passe.
+Não é esperada qualquer manipulação da sua parte.
 
 ### É necessário prever alterações na Área de Cliente OVHcloud?
 
 Não está prevista qualquer alteração na Área de Cliente. Uma vez que a migração se realiza com uma nova solução, poderão não estar disponíveis algumas funcionalidades menores nas primeiras semanas após a migração.
+
+Consulte a lista das funcionalidades e o respetivo estado para esta migração [no final desta FAQ](#features).
 
 ### Vou ter de reconfigurar o meu software de correio eletrónico?
 
@@ -87,6 +87,29 @@ No entanto, é possível continuar a beneficiar da interface OWA [ao migrar as s
 ### Posso rescindir a minha oferta MX Plan?
 
 Para rescindir a sua oferta na secção « Serviços » do seu espaço OVHcloud, consulte a rubrica MX Plan do nosso guia « [Como rescindir os seus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan) ».
+
+### As funcionalidades são mantidas, suspensas ou retiradas durante a migração para o Zimbra. <a name="features"></a>
+
+- **Gestão da conta de e-mail a partir da Área de Cliente** (Palavra-passe, alias, quota): Manutenção
+- **Ofertas e faturação**: Mantidas
+- **Reencaminhamento / Alias / mailing list a partir da Área de Cliente**: Mantidos
+- **Configuração DNS - SPF / MX / SRV** : Manutenção
+- **Delegações de contas de e-mail**: Mantidas, via webmail
+- **Ligação ao software de correio eletrónico** (IMAP/POP): Manter o servidor, não é necessário alterar a configuração.
+- **Conteúdo da conta de e-mail** (e-mails, pastas, contactos): Migrado
+- **E-mails recebidos durante o processo de migração**: Entregues
+- **Resposta automática / Resposta automática**: Continuada
+- **Regra da caixa de entrada**:
+    - As regras configuradas a partir do seu software de e-mail não serão alteradas.
+    - As regras configuradas a partir do webmail OWA serão migradas para o webmail Zimbra. Apenas uma percentagem muito reduzida de regras não poderá ser migrada devido à incompatibilidade. Estas serão enviadas como e-mail na conta de e-mail do utilizador, e poderão ser recriadas manualmente.
+    - *Regra incompatível*: Regra que utiliza dois tipos de condições, como ET e OU, simultaneamente. Por exemplo, se a mensagem for recebida de (**john@mydomain.ovh*** OU **mary@mydomain.ovh**) E o assumpto contiver « fatura », então mover para a pasta « importante »
+- **Assinatura pessoal**:
+    - As assinaturas configuradas a partir do seu software de e-mail não serão alteradas.
+    - As assinaturas configuradas a partir do webmail OWA não serão migradas devido à formatação.
+- **Bloquear / Permitir** : Esta funcionalidade, que permite bloquear e-mails provenientes de um nome de domínio específico ou de um endereço de e-mail específico, não estará presente no Zimbra. Este comportamento pode ser facilmente recriado através de uma regra da caixa de entrada a partir de Zimbra.
+- **Rodapé** (assinatura de domínio configurável através da Área de Cliente): Esta funcionalidade não estará presente para a nova infraestrutura Zimbra. No entanto, é sempre possível configurar uma assinatura ao nível da conta de e-mail.
+- **Política de Segurança**: Esta funcionalidade da Área de Cliente, que permite alterar a política de gestão das palavras-passe, não estará presente numa primeira fase na solução Zimbra.<br> A política de segurança aplicada por predefinição nas palavras-passe requer um mínimo de 10 caracteres alfanuméricos, 1 caráter especial, 1 maiúscula.
+- **Spoofing** : O spoofing consiste em enviar um e-mail a partir de uma identidade diferente da conta de e-mail na qual é autenticado. Esta prática é incompatível com os protocolos de segurança SPF e DKIM necessários para a correta entrega dos e-mails.<br>A partir do Zimbra, pode configurar outra identidade diferente da conta de e-mail utilizada, desde que seja aplicada uma delegação.
 
 ## Saiba mais
 

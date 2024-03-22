@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Hier finden Sie die häufigsten Fragen zur Migration der OVHcloud MX Plan Dienste nach Zimbra
-updated: 2024-03-11
+updated: 2024-03-22
 ---
 
 > [!primary]
@@ -44,13 +44,13 @@ Während der Migrationsphase ist jedoch eine kurze Unterbrechung des Dienstes er
 
 Diese Migration wurde konzipiert, um die Auswirkungen auf unsere Kunden so gering wie möglich zu halten. Keine Aktionen Ihrerseits werden erwartet.
 
-Best Practices zur Verwaltung von Passwörtern erfordern jedoch manuelles Eingreifen.<br>
-Vor der Migration werden Sie darüber informiert, ob Sie E-Mail-Account-Passwörter ändern müssen. In diesem Fall erhalten Sie eine Liste mit temporären Passwörtern, die nach der Migration angewendet werden.<br>
-Diese Einmalpasswörter werden es Ihren Benutzern ermöglichen, sich mit dem Zimbra-Webinterface zu verbinden. Nach dem ersten Einloggen bei Zimbra muss jeder Benutzer dann ein neues Passwort festlegen.
+Von Ihnen werden keine Änderungen erwartet.
 
 ### Sind Änderungen im OVHcloud Kundencenter vorgesehen?
 
 Es sind keine Änderungen im Kundencenter geplant. Da durch die Migration auf eine neue Lösung umgestellt wird, sind einige unwesentliche Funktionen möglicherweise in den ersten Wochen nach der Migration nicht verfügbar.
+
+Hier finden Sie die Liste der Funktionen und deren Status für diese Migration [am Ende dieser FAQ](#features).
 
 ### Muss ich meine E-Mail-Software neu konfigurieren?
 
@@ -87,6 +87,29 @@ Sie können aber weiterhin das OWA Interface nutzen, indem Sie Ihre [E-Mail-Acco
 ### Kann ich mein MX Plan Angebot kündigen?
 
 Um Ihr Angebot unter "Meine Dienste" im OVHCloud Kundencenter zu kündigen, folgen Sie der Anleitung "[OVHcloud Dienste kündigen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)" im Abschnitt zu MX Plan.
+
+### Funktionen, die während der Migration nach Zimbra beibehalten, ausgesetzt oder entfernt wurden. <a name="features"></a>
+
+- **Verwaltung des E-Mail Accounts über das Kundencenter** (Passwort, Alias, Quota): Beibehalten
+- **Angebote und Abrechnung**: beibehalten
+- **Weiterleitung / Alias / Mailingliste über das Kundencenter**: beibehalten
+- **DNS Konfiguration - SPF / MX / SRV**: beibehalten
+- **E-Mail-Account-Delegierungen**: per Webmail beibehalten
+- **E-Mail-Verbindung** (IMAP/POP): Beibehalten, keine Konfigurationsänderungen erforderlich.
+- **Inhalt des E-Mail Accounts** (E-Mails, Ordner, Kontakte): Migriert
+- **Während des Migrationsprozesses empfangene E-Mails**: Zugestellt
+- **Automatische Antwort / Beantworter**: beibehalten
+- **Eingangsregeln**:
+    - Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.
+    - Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur sehr wenige Regeln können aufgrund von Inkompatibilität nicht migriert werden. Diese werden als E-Mail an den E-Mail-Account des Benutzers versandt und können manuell neu erstellt werden.
+    - *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Wenn die E-Mail zum Beispiel von (**john@mydomain.ovh** ODER **mary@mydomain.ovh**) empfangen wird UND der Betreff "Rechnung" enthält, verschieben Sie ihn in den Ordner "Wichtig"
+- **Persönliche Unterschrift**:
+    - Die über Ihr E-Mail-Programm konfigurierten Signaturen bleiben unverändert.
+    - Die über OWA Webmail konfigurierten Signaturen werden aufgrund der Formatierung nicht migriert.
+- **Blockieren / Erlauben**: Diese Funktion blockiert E-Mails, die von einem bestimmten Domainnamen oder einer bestimmten E-Mail-Adresse stammen, nicht auf Zimbra. Dieses Verhalten kann jedoch problemlos über eine Posteingangsregel in Zimbra wiederhergestellt werden.
+- **Fußzeile** (Domain-Signatur über das Kundencenter konfigurierbar): Diese Funktion wird in der neuen Zimbra Infrastruktur nicht verfügbar sein. Es ist jedoch weiterhin möglich, eine Signatur auf Ebene des E-Mail-Accounts zu konfigurieren.
+- **Sicherheitseinstellungen**: Diese Funktion des Kundencenters, mit der Sie die Passwort-Verwaltung ändern können, wird in Zimbra nicht angezeigt.<br> Die standardmäßige Passwort-Sicherheitseinstellung erfordert mindestens 10 alphanumerische Zeichen, 1 Sonderzeichen, 1 Großbuchstaben.
+- **Spoofing**: Spoofing ist das Versenden einer E-Mail von einer anderen Identität als dem E-Mail-Account, auf dem Sie authentifiziert sind. Diese Vorgehensweise ist nicht mit den SPF- und DKIM-Sicherheitsprotokollen kompatibel, die für die Zustellung von E-Mails erforderlich sind.<br>Von Zimbra aus können Sie eine andere Identität als die des verwendeten E-Mail-Accounts konfigurieren, sofern eine Delegierung erfolgt.
 
 ## Weiterführende Informationen
 

@@ -44,13 +44,13 @@ Sin embargo, es necesario realizar una breve interrupción del servicio durante 
 
 Esta migración está pensada para minimizar el impacto sobre nuestros clientes. No se espera ninguna modificación por su parte.
 
-Sin embargo, las buenas prácticas en materia de gestión de contraseñas implican una manipulación.<br>
-Antes de la migración, se le notificará si es necesario cambiar la contraseña. En ese caso, recibirá de forma segura una lista de contraseñas provisionales para las cuentas de correo que deba gestionar tras la migración.<br>
-Estas contraseñas de un solo uso permitirán a sus usuarios conectarse a la interfaz web Zimbra. Una vez que se conecte a Zimbra, cada usuario deberá restaurar su contraseña.
+No se espera ninguna modificación por su parte.
 
 ### ¿Se prevén cambios en el área de cliente de OVHcloud?
 
 No se prevén cambios en el área de cliente. Debido a que la migración se realiza en una nueva solución, es posible que algunas funcionalidades menores no estén disponibles en las primeras semanas posteriores a la migración.
+
+Consulte la lista de funcionalidades y sus estados para esta migración [al final de esta FAQ](#features).
 
 ### ¿Tendré que volver a configurar mi cliente de correo?
 
@@ -87,6 +87,29 @@ No obstante, podrá seguir disfrutando de la interfaz OWA [migrando sus cuentas 
 ### ¿Puedo dar de baja mi servicio MX Plan?
 
 Para dar de baja un servicio en la sección « Mis servicios » de su área de OVHcloud, consulte la sección MX Plan de nuestra guía « [Cómo dar de baja un servicio de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan) ».
+
+### Las funcionalidades mantenidas , suspendidas o retiradas durante la migración a Zimbra. <a name="features"></a>
+
+- **Gestión de la cuenta de correo desde el área de cliente** (Contraseña, alias, cuota): Mantenida
+- **Ofertas y facturación**: mantenimiento
+- **Redirección / Alias / Lista de difusión desde el área de cliente** : Maintenus
+- **Configuración DNS - SPF / MX / SRV**: Mantenida
+- **Delegaciones de cuentas de correo**: mantenidas, a través del webmail
+- **Conexión a los programas de correo electrónico** (IMAP/POP): Mantenida, no es necesario modificar la configuración.
+- **Contenido de la cuenta de correo** (correo, carpetas, contactos): Migrado
+- **Mensajes recibidos durante el proceso de migración**: Entregados
+- **Respuesta automática / Contestador**: Mantenida
+- **Regla de la bandeja de entrada**:
+    - Las reglas configuradas desde su cliente de correo no se modificarán.
+    - Las reglas configuradas desde el webmail OWA serán migradas al webmail Zimbra. Sólo una proporción muy pequeña de reglas no podrá migrarse debido a incompatibilidades. Estas direcciones se enviarán en forma de mensaje de correo electrónico a la cuenta de correo del usuario y podrán volver a crearse manualmente.
+    - *Regla incompatible*: regla que utiliza dos tipos de condiciones, como Y y O, al mismo tiempo. Por ejemplo, si el mensaje se recibe de (**john@mydomain.ovh** O **mary@mydomain.ovh**) Y el asunto contiene "factura", muévase a la carpeta "Importante"
+- **Firma personal**:
+    - Las firmas configuradas desde su cliente de correo no se modificarán.
+    - Las firmas configuradas desde el webmail OWA no se migrarán debido al formato.
+- **Bloquear / Autorizar**: Esta funcionalidad, que permite bloquear los emails procedentes de un nombre de dominio o de una dirección de correo electrónico específicos, no estará presente en Zimbra. Sin embargo, este comportamiento se puede volver a crear fácilmente a través de una regla de la Bandeja de entrada de Zimbra.
+- **Pie de página** (firma de nombre de dominio que puede configurarse desde el área de cliente): esta funcionalidad no estará presente en la nueva infraestructura Zimbra. Sin embargo, todavía es posible configurar una firma en el nivel de la cuenta de correo.
+- **Política de seguridad**: Esta funcionalidad del área de cliente que permite cambiar la política de gestión de las contraseñas no estará presente, en un primer momento, en la solución Zimbra.<br> La política de seguridad aplicada por defecto a las contraseñas requiere un mínimo de 10 caracteres alfanuméricos, 1 carácter especial, 1 mayúscula.
+- **Spoofing**: La función Spoofing consiste en enviar un mensaje de correo electrónico desde una identidad distinta de la de la cuenta de correo en la que se ha autenticado. Esta práctica es incompatible con los protocolos de seguridad SPF y DKIM necesarios para la correcta entrega de los mensajes de correo.<br>Desde Zimbra, puede configurar una identidad diferente de la cuenta de correo utilizada, siempre que se haya delegado en ella.
 
 ## Más información
 
