@@ -46,7 +46,7 @@ Aucune manipulation n'est attendue de votre part.
 
 Aucun changement n'est prévu dans l'espace client. La migration se faisant sous une nouvelle solution, quelques fonctionnalités mineures pourraient ne pas être accessibles dans les premières semaines suivant la migration.
 
-Retrouvez la liste des fonctionnalités et leur statuts pour cette migration [à la fin de cette FAQ](#features)
+Retrouvez la liste des fonctionnalités et leurs statuts pour cette migration [à la fin de cette FAQ](#features)
 
 ### Vais-je devoir reconfigurer mon logiciel de messagerie ?
 
