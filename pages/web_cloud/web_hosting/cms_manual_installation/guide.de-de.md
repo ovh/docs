@@ -43,7 +43,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 ### Vorstellung der CMS
 
-Um Ihnen bei der Wahl Ihres CMS zu helfen, finden Sie hier eine kurze Beschreibung zu jedem der CMS.
+Um Ihnen bei der Auswahl des CMS zu helfen, finden Sie hier eine kurze Beschreibung zu jedem CMS.
 
 #### WordPress
 
@@ -81,7 +81,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](https:
 
 #### Pico
 
-**Pico** ist ein auf PHP basierendes, schlankes CMS, das sich ideal für die Erstellung von Websites und Blogs eignet. Es ist keine Datenbank vorhanden und verwendet Markdown-Dateien, um den Inhalt zu verwalten. Es unterstützt Erweiterungen, um Ihre Website anzupassen.
+**Pico** ist ein auf PHP basierendes, schlankes CMS, das sich ideal für die Erstellung von Websites und Blogs eignet. Es benötigt keine Datenbank und verwendet Markdown-Dateien, um Inhalte zu verwalten. Es unterstützt Erweiterungen, um Ihre Website anzupassen.
 
 - Offizielle Website von [Pico](https://picocms.org/){.external}
 
@@ -135,7 +135,7 @@ Wenn Sie noch keinen FTP-Client verwenden, können Sie FileZilla installieren. D
 
 > [!primary]
 >
-> Es gibt weitere FTP-Clients, die Sie verwenden können, z. B. Cyberduck. Weitere Informationen finden Sie in unserer Dokumentation zur [Verwendung von Cyberduck mit Ihrem OVHcloud Webhosting Angebot](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+> Es gibt weitere FTP-Clients, die Sie verwenden können, z.B. Cyberduck. Weitere Informationen finden Sie in unserer Dokumentation zur [Verwendung von Cyberduck mit Ihrem OVHcloud Webhosting](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
 >
 
 ### 1.4 Eine Datenbank erstellen <a name="step1-4"></a> 
@@ -145,7 +145,7 @@ Wenn Sie noch keinen FTP-Client verwenden, können Sie FileZilla installieren. D
 > Einige CMS funktionieren ohne Datenbanken. Wenn dies für das CMS der Fall ist, das Sie installieren möchten, überspringen Sie diesen Schritt.
 >
 
-Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebote enthalten diese mit Ausnahme des [100M kostenlosen Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/) enthalten diese mit Ausnahme des [100M kostenlosen Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 
 Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank über Ihr Webhosting](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -207,7 +207,7 @@ Folgen Sie den Anweisungen auf der Webseite Ihres gewählten CMS, bis zum Herunt
 
 >[!primary]
 >
-> Zur vereinfachten Identifizierung können Sie in diesem Schritt den Ordnernamen "**CMS**" durch den Namen des zu installierenden CMS ersetzen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**usw.).
+> Zur vereinfachten Identifizierung können Sie in diesem Schritt den Ordnernamen "**CMS**" durch den Namen des zu installierenden CMS ersetzen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, etc.).
 >
 
 Die heruntergeladenen Dateien befinden sich in einem komprimierten Archiv. Erstellen Sie einen Ordner mit dem Namen "**CMS**" auf Ihrem Computer und **entpacken** Sie den Inhalt der Archivdatei in diesen Ordner.
