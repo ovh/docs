@@ -40,7 +40,7 @@ Cependant, une courte interruption de service est nécessaire durant la phase de
 
 Cette migration a été pensée pour minimiser l'impact du processus de migration sur l’utilisation du produit MX Plan.
 
-Aucune manipulation n'est attendu de votre part.
+Aucune manipulation n'est attendue de votre part.
 
 ### Des changements sont-ils à prévoir dans l'espace client OVHcloud ?
 
