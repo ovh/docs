@@ -97,7 +97,7 @@ Pour résilier votre offre dans la section « Mes services » de votre espace OV
 - **Réponse automatique / Répondeur** : Maintenue
 - **Règle de boites de réception** :
     - Les règles configurées depuis votre logiciel de messagerie seront inchangées.
-    - Les règles configurées depuis le webmail OWA seront quant à elles migrées vers le webmail Zimbra. Seule une très faible proportion de règles ne pourront pas être migrées pour cause d'incompatibilité. Celles-ci seront envoyées sous la forme d'un e-mail sur le compte e-mail de l'utilisateur et pourront être recrées manuellement.
+    - Les règles configurées depuis le webmail OWA seront quant à elles migrées vers le webmail Zimbra. Seule une très faible proportion de règles ne pourront pas être migrées pour cause d'incompatibilité. Celles-ci seront envoyées sous la forme d'un e-mail sur le compte e-mail de l'utilisateur et pourront être recréées manuellement.
     - *Règle incompatible* : Règle utilisant deux types de conditions comme ET et OU simultanément. Par exemple, si le message est reçu de (**john@mydomain.ovh** OU **mary@mydomain.ovh**) ET le sujet contient « facture », alors déplacer dans le dossier « Important »
 - **Signature personnelle** :
     - Les signatures configurées depuis votre logiciel de messagerie seront inchangées.
