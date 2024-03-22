@@ -94,7 +94,7 @@ Pour résilier votre offre dans la section « Mes services » de votre espace OV
 - **Connexion aux logiciels de messagerie** (IMAP/POP) : Maintenue, aucune modification de configuration nécessaire.
 - **Contenu du compte e-mail** (e-mails, dossiers, contacts) : Migré
 - **E-mails reçus durant le processus de migration** : Délivrés
-- **Réponse automatique / Répondeur** : Maintenu
+- **Réponse automatique / Répondeur** : Maintenue
 - **Règle de boites de réception** :
     - Les règles configurées depuis votre logiciel de messagerie seront inchangées.
     - Les règles configurées depuis le webmail OWA seront quant à elles migrées vers le webmail Zimbra. Seule une très faible proportion de règles ne pourront pas être migrées pour cause d'incompatibilité. Celles-ci seront envoyées sous la forme d'un e-mail sur le compte e-mail de l'utilisateur et pourront être recrées manuellement.
