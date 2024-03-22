@@ -225,7 +225,7 @@ Si votre navigateur vous le permet, vous pouvez installer et activer l'extension
 - Gérer les clés de vos contacts
 - Garder le contenu de vos e-mail privé, même de votre fournisseur de messagerie
 
-Vous êtes seul à pouvoir lire vos e-mails. Cette extension est un moyen de sécuriser votre webmail si vous recevez des e-mails de nature confidentielle.
+Vous êtes ainsi seul à pouvoir lire vos e-mails. Cette extension est un moyen de sécuriser votre webmail si vous recevez des e-mails de nature confidentielle.
 
 ### Gérer les identités et leur signature <a name="identity-signature"></a>
 
