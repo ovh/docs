@@ -221,11 +221,12 @@ Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En
 
 Si votre navigateur vous le permet, vous pouvez installer et activer l'extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailveloppe » permettent de :
 
-- Chiffrer et déchiffrer des e-mails dans votre navigateur
-- Gérer les clés de vos contacts
-- Garder le contenu de vos e-mail privé, même de votre fournisseur de messagerie
+- Chiffrer et déchiffrer des e-mails dans votre navigateur.
+- Garder le contenu de vos e-mails privé vis à vis de votre fournisseur de messagerie.
 
 Vous êtes ainsi seul à pouvoir lire vos e-mails. Cette extension est un moyen de sécuriser votre webmail si vous recevez des e-mails de nature confidentielle.
+
+Pour plus d'informations, consultez la FAQ de « Mailvelope » à l'adresse <https://mailvelope.com/faq>.
 
 ### Gérer les identités et leur signature <a name="identity-signature"></a>
 
