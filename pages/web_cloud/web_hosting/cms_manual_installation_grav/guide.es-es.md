@@ -4,6 +4,10 @@ excerpt: "Descruba cómo instalar el CMS Grav en un alojamiento web de OVHcloud"
 updated: 2024-03-22
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 ## Objetivo
 
 El **CMS** (**C**ontent **M**anagement **S**ystem) Grav permite desarrollar rápidamente sitios web. Diseñado para una gestión optimizada del contenido a través de archivos Markdown, Grav se adapta perfectamente a la creación de sitios web personales o proyectos para pequeñas empresas, sin comprometer la calidad o la personalización.
