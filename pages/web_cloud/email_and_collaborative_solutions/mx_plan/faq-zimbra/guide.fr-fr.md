@@ -46,7 +46,7 @@ Aucune manipulation n'est attendue de votre part.
 
 Aucun changement n'est prévu dans l'espace client. La migration se faisant sous une nouvelle solution, quelques fonctionnalités mineures pourraient ne pas être accessibles dans les premières semaines suivant la migration.
 
-Retrouvez la liste des fonctionnalités et leurs statuts pour cette migration [à la fin de cette FAQ](#features)
+Retrouvez la liste des fonctionnalités et leurs statuts pour cette migration [à la fin de cette FAQ](#features).
 
 ### Vais-je devoir reconfigurer mon logiciel de messagerie ?
 
@@ -102,10 +102,10 @@ Pour résilier votre offre dans la section « Mes services » de votre espace OV
 - **Signature personnelle** :
     - Les signatures configurées depuis votre logiciel de messagerie seront inchangées.
     - Les signatures configurées depuis le webmail OWA ne seront pas migrées en raison du formatage.
-- **Bloquer / Autoriser** : Cette fonctionnalité, permettant de bloquer des e-mails venant d'un nom de domaine particulier ou d'une adresse e-mail spécifique, ne sera pas portée. Ce comportement peut cependant être facilement recréé via une règle de boite de réception depuis Zimbra.
-- **Pied de page** (signature de nom de domaine configurable via l'espace client) : Cette fonctionnalité ne sera pas portée vers la nouvelle infrastructure Zimbra. Il est cependant toujours possible de configurer une signature au niveau du compte e-mail.
-- **Politique de Sécurité** : Cette fonctionnalité de l'espace client permettant de changer la politique de gestion des mots de passe ne sera pas migrée, dans un premier temps, sur la solution Zimbra.<br> La politique de sécurité appliquée par défaut sur les mots de passe requiert un minimum de 10 caractères alphanumeriques, 1 caractère spécial, 1 majuscule.
-- **Spoofing** : Le spoofing consiste à envoyer un e-mail depuis une identité différente du compte e-mail sur lequel vous êtes authentifié. Cette pratique est incompatible avec les protocoles de sécurités SPF et DKIM nécessaires à la bonne délivrabilité des e-mails.<br>Depuis Zimbra, vous pouvez configurer une autre identité différente du compte e-mail utilisé, à condition qu'une délégation y soit appliquée.
+- **Bloquer / Autoriser** : Cette fonctionnalité, permettant de bloquer des e-mails venant d'un nom de domaine particulier ou d'une adresse e-mail spécifique, ne sera pas présente sur Zimbra. Ce comportement peut cependant être facilement recréé via une règle de boite de réception depuis Zimbra.
+- **Pied de page** (signature de nom de domaine configurable via l'espace client) : Cette fonctionnalité ne sera pas présente vers la nouvelle infrastructure Zimbra. Il est cependant toujours possible de configurer une signature au niveau du compte e-mail.
+- **Politique de Sécurité** : Cette fonctionnalité de l'espace client permettant de changer la politique de gestion des mots de passe ne sera pas présente, dans un premier temps, sur la solution Zimbra.<br> La politique de sécurité appliquée par défaut sur les mots de passe requiert un minimum de 10 caractères alphanumeriques, 1 caractère spécial, 1 majuscule.
+- **Spoofing** : Le spoofing consiste à envoyer un e-mail depuis une identité différente du compte e-mail sur lequel vous êtes authentifié. Cette pratique est incompatible avec les protocoles de sécurité SPF et DKIM nécessaires à la bonne délivrabilité des e-mails.<br>Depuis Zimbra, vous pouvez configurer une autre identité différente du compte e-mail utilisé, à condition qu'une délégation y soit appliquée.
 
 ## Aller plus loin
 
