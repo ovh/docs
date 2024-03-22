@@ -1,6 +1,6 @@
 ---
-title: Primeros pasos con un servidor dedicado Kimsufi, So you Start o Rise
-excerpt: 'Cómo empezar a utilizar un servidor dedicado Kimsufi, So you Start o Rise'
+title: "Primeros pasos con un servidor dedicado Kimsufi, So you Start o Rise"
+excerpt: Cómo empezar a utilizar un servidor dedicado Kimsufi, So you Start o Rise"
 updated: 2024-02-19
 ---
 
@@ -22,9 +22,23 @@ Un servidor dedicado es un servidor físico situado en uno de nuestros datacente
 
 ## Procedimiento
 
-Cuando su servidor dedicado esté configurado por primera vez durante el proceso de pedido, puede seleccionar el sistema operativo que desea instalar.
+### Contenido
 
-### Instalar o reinstalar el servidor dedicado
+- [Instalación o reinstalación de un sistema operativo](#install)
+- [Conexión al servidor](#connect)
+- [Reinicio del servidor dedicado](#reboot)
+- [Seguridad de su servidor dedicado](#secure)
+- [Monitorización OVHcloud](#monitoring-server)
+- [Configuración de red](#network)
+- [Modo de rescate](#rescue)
+- [Acceso a la ayuda del IPMI](#console)
+- [Backup Storage](#backup)
+
+<a name="install"></a>
+
+### Instalación o reinstalación de un sistema operativo
+
+Cuando su servidor dedicado esté configurado por primera vez durante el proceso de pedido, puede seleccionar el sistema operativo que desea instalar.
 
 Puede reinstalar fácilmente el servidor y elegir otra imagen del sistema operativo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
@@ -89,6 +103,8 @@ Para más información sobre la generación de llaves SSH, consulte nuestra [gu�
 >Esta guía le ayudará en la mayor medida posible a realizar las tareas habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la ejecución de los servicios en un servidor, le recomendamos que contacte con un proveedor de servicios especializado.
 >
 
+<a name="connect"></a>
+
 ### Conexión al servidor
 
 #### Linux
@@ -104,7 +120,7 @@ ssh username@IPv4
 **Ejemplo:**
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.1
 ```
 
 Para más información sobre SSH, consulte nuestra guía [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -115,7 +131,9 @@ Una vez finalizada la instalación, recibirá un mensaje de correo electrónico 
 
 Consulte también nuestra guía [Configurar una nueva instalación de Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
-### Reinicio del servidor dedicado <a name="reboot"></a>
+<a name="reboot"></a>
+
+### Reinicio del servidor dedicado
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 
@@ -127,13 +145,17 @@ No obstante, puede realizar "hard reboot" en cualquier momento desde el [área d
 
 ![Reinicio](images/rebooting-your-server.png){.thumbnail}
 
+<a name="secure"></a>
+
 ### Seguridad de su servidor dedicado
 
 Como se recuerda en el apartado Objetivo de esta guía, usted es el administrador de su servidor dedicado Como tal, usted es responsable de sus datos y de su seguridad. Para más información sobre la seguridad de su servidor, consulte nuestra guía [Proteger un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 
 Si utiliza un servidor Windows, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitorización OVHcloud <a name="monitoring-server"></a>
+<a name="monitoring-server"></a>
+
+### Monitorización OVHcloud
 
 Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). La opción se encuentra en la sección `Estado de los servicios`.
 
@@ -150,6 +172,8 @@ Haga clic en el botón `Configurar`{.action}. En el cuadro de diálogo, se mostr
 Haga clic en `Confirmar`{.action} para actualizar su configuración de monitorización.
 
 Para más información sobre la monitorización de OVHcloud, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+<a name="network"></a>
 
 ### Configuración de red
 
@@ -181,11 +205,15 @@ Para más información sobre la configuración del alias IP, consulte la guía [
 
 Todos los servidores dedicados de OVHcloud se entregan con un bloque /64 IPv6. Para utilizar las direcciones de este bloque, debe realizar cambios en la configuración de la red. Consulte nuestra guía [Configuración IPv6](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 
+<a name="rescue"></a>
+
 ### Modo de rescate
 
 Para cualquier problema, el primer paso para solucionarlo es reiniciar el servidor en modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es importante identificar los problemas del servidor en este modo para excluir los problemas relacionados con el software antes de contactar con nuestro equipo de soporte.
 
 Para más información, consulte la guía "[Activar y utilizar el modo de rescate"](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)".
+
+<a name="console"></a>
 
 ### Acceso a la ayuda del IPMI
 
@@ -197,6 +225,8 @@ Para más información, consulte la guía "[Activar y utilizar el modo de rescat
 OVHcloud despliega todos los servidores dedicados con una consola IPMI (Intelligent Platform Management Interface) que se ejecuta en su navegador o a partir de un applet Java y le permite conectarse directamente a su servidor aunque no tenga conexión de red. Esto la convierte en una herramienta útil para resolver los problemas que han podido desconectar el servidor.
 
 Para más información, consulte nuestra guía [Uso de IPMI con servidores dedicados](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+
+<a name="backup"></a>
 
 ### Backup Storage
 

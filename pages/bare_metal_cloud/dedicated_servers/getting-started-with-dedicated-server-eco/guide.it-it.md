@@ -1,6 +1,6 @@
 ---
-title: Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise
-excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise
+title: "Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise"
+excerpt: "Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise"
 updated: 2024-02-19
 ---
 
@@ -22,9 +22,23 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 ## Procedura
 
-Quando il tuo server dedicato è configurato per la prima volta durante il processo di ordine, puoi selezionare il sistema operativo da installare.
+### Sommario
 
-### Installa o reinstalla il tuo server dedicato
+- [Installazione o reinstallazione di un sistema operativo](#install)
+- [Connessione al tuo server](#connect)
+- [Riavvio del tuo server dedicato](#reboot)
+- [Protezione del tuo server dedicato](#secure)
+- [Monitoraggio OVHcloud](#monitoring-server)
+- [Configurazione rete](#network)
+- [Modalità Rescue](#rescue)
+- [Accesso con l'IPMI](#console)
+- [Backup Storage](#backup)
+
+<a name="install"></a>
+
+### Installazione o reinstallazione di un sistema operativo
+
+Quando il tuo server dedicato è configurato per la prima volta durante il processo di ordine, puoi selezionare il sistema operativo da installare.
 
 Reinstalla facilmente il tuo server e scegli un altro modello di sistema operativo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
@@ -89,6 +103,8 @@ Per maggiori informazioni sulla generazione di chiavi SSH, consulta la nostra [g
 >Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
 >
 
+<a name="connect"></a>
+
 ### Connessione al tuo server
 
 #### Linux
@@ -104,7 +120,7 @@ ssh username@IPv4
 **Esempio:**
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.1
 ```
 
 Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -115,7 +131,9 @@ Una volta completata l'installazione, riceverai un'email con la password per l'a
 
 Consulta anche la nostra guida [Configurare una nuova installazione di Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
-### Riavvio del tuo server dedicato <a name="reboot"></a>
+<a name="reboot"></a>
+
+### Riavvio del tuo server dedicato
 
 Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
 
@@ -127,13 +145,17 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 
 ![Riavvia](images/rebooting-your-server.png){.thumbnail}
 
+<a name="secure"></a>
+
 ### Protezione del tuo server dedicato
 
 Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida [Mettere in sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 
 Se utilizzi un server Windows, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoraggio OVHcloud <a name="monitoring-server"></a>
+<a name="monitoring-server"></a>
+
+### Monitoraggio OVHcloud
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
 
@@ -150,6 +172,8 @@ Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni 
 Clicca su `Conferma`{.action} per aggiornare la tua configurazione di sorveglianza.
 
 Per maggiori informazioni sul monitoraggio, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+<a name="network"></a>
 
 ### Configurazione rete
 
@@ -181,11 +205,15 @@ Per maggiori informazioni sulla configurazione dell'alias IP, consulta la guida 
 
 Tutti i server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6. Per utilizzare gli indirizzi di questo blocco, è necessario apportare modifiche alla configurazione di rete. Consulta la nostra guida [Configurazione IPv6](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 
+<a name="rescue"></a>
+
 ### Modalità Rescue
 
 Per risolvere qualsiasi problema, riavvia il server in modalità Rescue dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). È importante identificare i problemi del server in questa modalità, per escludere i problemi legati al software prima di contattare il nostro team di supporto.
 
 Consulta la guida [Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+<a name="console"></a>
 
 ### Accesso con l'IPMI
 
@@ -197,6 +225,8 @@ Consulta la guida [Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud
 OVHcloud implementa tutti i server dedicati con una console IPMI (Intelligent Platform Management Interface) che si esegue nel browser o da un'applet Java e ti permette di connetterti direttamente al tuo server anche se non dispone di connessione di rete. che è uno strumento utile per risolvere i problemi che hanno potuto mettere il tuo server online.
 
 Per maggiori informazioni, consulta la guida [Utilizzare l'IPMI sui server dedicati](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+
+<a name="backup"></a>
 
 ### Backup Storage
 
