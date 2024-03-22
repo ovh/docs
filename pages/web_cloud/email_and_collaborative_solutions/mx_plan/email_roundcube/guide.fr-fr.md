@@ -219,7 +219,7 @@ Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En
 
 #### Chiffrement <a name="encryption"></a>
 
-Si votre navigateur vous le permet, vous pouvez installer et activer une extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailveloppe » permet de :
+Si votre navigateur vous le permet, vous pouvez installer et activer l'extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailveloppe » permettent de :
 
 - Chiffrer et déchiffrer des e-mails dans votre navigateur
 - Gérer les clés de vos contacts
