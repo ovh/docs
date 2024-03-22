@@ -63,6 +63,11 @@ Verrai reindirizzato all'interfaccia Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
 
+> [!primary]
+> 
+> Quando ti connetti per la prima volta all'interfaccia Roundcube, l'aspetto potrebbe essere diverso da quello che vedrai in questa guida. Questo significa che l’aspetto "classico" è stato definito sull’interfaccia. Per cambiarla, segui la sezione "[Interfaccia utente](#user-interface-settings)" e seleziona la visualizzazione "Larry".
+> L'aspetto dell'interfaccia non influirà sulle spiegazioni riportate di seguito in questa documentazione.
+
 > [!warning]
 > 
 > Se il server è reindirizzato a un'interfaccia **O**utlook **W**eb **A**pp (OWA), significa che sei sull'ultima versione della soluzione MX Plan. Per maggiori informazioni sulla soluzione MX Plan, consulta la pagina [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
@@ -175,6 +180,8 @@ Con l'opzione `Date più leggibilie` graziose è possibile visualizzare la data 
 
 La casella `Display next list entry after delete/move` significa che, dopo un'operazione di eliminazione o spostamento su un'email, l'elemento della linea inferiore sarà sistematicamente selezionato, indipendentemente dall'ordine di selezione. 
 
+È possibile scegliere l'estetica di visualizzazione della propria interfaccia. È possibile scegliere tra la visualizzazione **Classic** o la visualizzazione **Larry**.
+
 #### Impaginazione messaggi <a name="mail-view-settings"></a>
 
 Definisci qui l'ergonomia per visualizzare e agire sulle email. L'opzione `Layout` permette di configurare le 3 finestre descritte nella sezione [Interfaccia generale della Webmail Roundcube](#topwindow).
@@ -199,7 +206,10 @@ Personalizza qui la configurazione delle informazioni nella tua rubrica.
 Roundcube dispone di 4 cartelle speciali: `Bozze`, `Inviate`, `Marce`, `Cestino`.
 
 Non consigliamo di modificarli, ma è possibile attribuire il comportamento di una cartella speciale a un'altra cartella creata successivamente, grazie ai menu a tendina.<br>
-**Ad esempio**, è possibile attribuire il comportamento "Bozze" a un'altra cartella creata. Le email salvate saranno considerate come bozze fino al loro invio effettivo.
+
+**Ad esempio**, è possibile assegnare il comportamento Bozze a un'altra cartella creata facendo clic sull'elenco a discesa e selezionando la cartella. Se non gli viene assegnata nessuna cartella, verrà automaticamente impostata sull’opzione "Drafts". Le email che saranno salvate lì saranno considerate bozze fino all'invio effettivo.
+
+> In pratica, creo una sottocartella "Bozze email dei clienti". Accedi alla sezione `Preferenze`{.action} / `Cartelle speciali`{.action} e seleziona l’opzione "Bozze". Nel menu a tendina, seleziona la cartella "Bozze e-mail clienti" per sostituire "Drafts". Le email scritte in questa cartella verranno considerate bozze.
 
 #### Impostazioni del server <a name="server-settings"></a>
 
@@ -208,6 +218,17 @@ In questa scheda è possibile ottimizzare lo spazio occupato su un account email
 > [!warning]
 > 
 > Si sconsiglia di attivare l'opzione `Elimina direttamente i messaggi in Spam` nel caso in cui un falso positivo (e-mail erroneamente dichiarato come "SPAM") si trovi dichiarato SPAM per il server ricevente. Infatti, quando un'email è inserita nella cartella "Posta elettronica", è ancora possibile verificare se l'email è legittima.
+
+#### Crittografia <a name="encryption"></a>
+
+Se il browser lo consente, è possibile installare e attivare l’estensione "Mailvelope". È un'estensione del browser che integra il PGP (**P**retty **G**ood **P**rivacy) nella tua messaggeria Web. Il sistema di cifratura PGP e, di conseguenza, l'estensione "Mailvelope" permettono di:
+
+- Cifrare e decrittografare le email nel tuo browser.
+- Mantenere privato il contenuto delle tue email nei confronti del tuo provider di posta.
+
+Sarete così soli a poter leggere le vostre email. Questa estensione è un modo per proteggere la tua Webmail se ricevi email di natura confidenziale.
+
+Per maggiori informazioni, consulta le FAQ "Mailvelope" all'indirizzo <https://mailvelope.com/faq>.
 
 ### Gestisci le identità e la loro firma <a name="identity-signature"></a>
 

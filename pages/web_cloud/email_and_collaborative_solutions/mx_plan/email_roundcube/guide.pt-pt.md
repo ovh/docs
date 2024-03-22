@@ -64,6 +64,11 @@ Será então redirecionado para a interface Roundcube.
 
 ![alojamento](images/roundcube01.png){.thumbnail}
 
+> [!primary]
+> 
+> Ao fazer login pela primeira vez na interface Roundcube, o aspeto pode ser diferente daquele que você verá neste manual. Isto significa que a aparência « clássica » foi definida na sua interface. Para alterar esta informação, vá à secção « [Interface do Utilizador](#user-interface-settings) » e selecione a visualização « Larry ».
+> O aspeto da interface não irá afetar as seguintes explicações neste manual.
+
 > [!warning]
 > 
 > Se for redirecionado para uma interface **O**utlook **W**eb **A**pp (OWA), isto significa que está na última versão da oferta MX Plan. Para mais informações sobre a sua oferta MX Plan, consulte a nossa página [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
@@ -177,6 +182,8 @@ A opção `Formatar datas` permite apresentar a data de receção/envio com term
 
 A casa `Mostrar próxima entrada da lista após eliminar/mover` significa que, após uma ação de supressão ou migração para um e-mail, o elemento da linha inferior será sistematicamente selecionado, seja qual for a ordem de escolha. 
 
+Pode escolher a estética de afixação da sua interface. Pode escolher entre exibir **Classic** ou **Larry**.
+
 #### Visualização da Caixa de Entrada <a name="mail-view-settings"></a>
 
 Defina aqui a ergonomia para visualizar e agir sobre os e-mails. A opção `Modelo` permite organizar as 3 janelas descritas na parte [Interface geral do webmail Roundcube](#topwindow).
@@ -201,7 +208,10 @@ Personalize aqui a disposição das informações no seu diretório de endereço
 Roundcube dispõe de 4 dossiers especiais: `Rascunhos`, `Itens Enviados`, `Spam`, `Reciclagem`.
 
 Não aconselhamos a sua alteração, mas é possível atribuir o comportamento de uma pasta especial a outra criada posteriormente, graças aos menus confusos.<br>
-**Por exemplo**, pode atribuir o comportamento do "Rascunho" a outra pasta que criou. Os e-mails que forem registados serão considerados como nevoeiro até ao seu envio efetivo.
+
+**Por exemplo**, você pode atribuir o comportamento « Rascunhos » a outra pasta que você criou clicando na lista suspensa e selecionando essa pasta. Se nenhuma pasta for atribuída a ele, ele será automaticamente colocado na opção « Drafts ». Os e-mails que forem registados serão considerados como rascunhos até que sejam enviados.
+
+> Na prática, eu crio uma sub-pasta « Rascunhos de e-mails de clientes ». Vou a `As minhas preferências`{.action} / `Pastas especiais`{.action} e escolho a opção « Rascunhos ». No menu suspenso, seleciono a pasta « Rascunhos de e-mails de clientes » para substituir « Drafts ». Os e-mails redigidos nesta pasta serão considerados rascunhos.
 
 #### Definições do servidor <a name="server-settings"></a>
 
@@ -210,6 +220,17 @@ Neste separador, pode otimizar o espaço ocupado numa conta de e-mail. Com efeit
 > [!warning]
 > 
 > Não é aconselhável ativar a opção `Eliminar diretamente as mensagens no Spam` eletrónico quando um falso positivo (e-mail erradamente declarado como "SPAM") for declarado como spam para o servidor de receção. Com efeito, quando um e-mail é colocado na pasta "Por correio eletrónico", é ainda possível verificar se o e-mail é legítimo.
+
+#### Encriptação <a name="encryption"></a>
+
+Se o seu browser lhe permitir, pode instalar e ativar a extensão "Mailvelope". Trata-se de uma extensão do browser que integra o PGP (**P**retty **G**ood **P**rivacy) no seu serviço de mensagens web. O sistema de encriptação PGP e, por conseguinte, a extensão "Mailvelope" permitem:
+
+- Encriptar e desencriptar os e-mails no seu browser.
+- Guardar o conteúdo do seu e-mail privado para o seu fornecedor de e-mail.
+
+Só você poderá ler os seus e-mails. Esta extensão é um meio de proteger o seu webmail se receber e-mails de natureza confidencial.
+
+Para mais informações, consulte a FAQ da "Maildeve" em <https://mailvelope.com/faq>.
 
 ### Gerir as identidades e a sua assinatura <a name="identity-signature"></a>
 

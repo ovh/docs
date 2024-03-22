@@ -63,6 +63,11 @@ Sie werden dann zum Roundcube Interface weitergeleitet.
 
 ![Hosting](images/roundcube01.png){.thumbnail}
 
+> [!primary]
+> 
+> Beim ersten Anmelden am Roundcube Interface unterscheidet sich das Erscheinungsbild möglicherweise von dem in dieser Anleitung beschriebenen. Dies bedeutet, dass das "klassische" Aussehen auf Ihrem Interface eingestellt wurde. Um diese zu ändern, folgen Sie dem Abschnitt "[Benutzeroberfläche](#user-interface-settings)" und wählen Sie die Ansicht "Larry" aus.
+> Das Erscheinungsbild der Benutzeroberfläche hat keinen Einfluss auf die folgenden Erläuterungen in dieser Dokumentation.
+
 > [!warning]
 > 
 > Wenn Sie auf ein **O**utlook **W**eb **A**pp Interface (OWA) weitergeleitet werden, verwenden Sie die neueste Version des MX Plan Dienstes. Weitere Informationen zu Ihrem MX Plan finden Sie auf unserer Seite "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
@@ -175,6 +180,8 @@ Die Option `Kurze Datumsanzeige` ermöglicht die Anzeige der Empfangs- und Verse
 
 Das Feld `Den nächsten Eintrag nach Löschen oder Verschieben anzeigen` bedeutet, dass nach Löschen oder Verschieben einer E-Mail das Element der unteren Zeile automatisch ausgewählt wird, unabhängig von der Reihenfolge der Sortierung. 
 
+Sie können die Ästhetik der Anzeige Ihrer Benutzeroberfläche auswählen. Sie können zwischen der **Classic**-Ansicht und der **Larry**-Ansicht wählen.
+
 #### Postfachansicht <a name="mail-view-settings"></a>
 
 Definieren Sie hier die bevorzugte Art, um E-Mails anzuzeigen und zu bearbeiten. Die Option `Layout` erlaubt es, die 3 im Abschnitt [Roundcube Interface Hauptseite](#topwindow) beschriebenen Fenster neu anzuordnen.
@@ -199,7 +206,12 @@ Personalisieren Sie hier die Anordnung der Informationen in Ihrem Adressbuch.
 Roundcube verfügt über 4 Spezialordner: `Entwürfe`, `Gesendet`, `Spam`, `Gelöscht`.
 
 Wir raten dazu, diese nicht zu ändern, aber Sie können über die Drop-down-Menüs die Eigenschaften der Spezialordner neu erstellten Ordnern zuweisen.<br>
+
 Zum Beispiel können Sie die Eigenschaft `Entwürfe` einem Ordner zuweisen, den Sie erstellt haben. Die dort gespeicherten E-Mails gelten dann als Entwürfe bis sie tatsächlich versendet werden.
+
+Sie können beispielsweise das Verhalten "Entwürfe" einem anderen Ordner zuweisen, den Sie erstellt haben, indem Sie auf die Dropdownliste klicken und diesen Ordner auswählen. Wenn ihm kein Ordner zugewiesen ist, wird er automatisch auf die Option "Drafts" gesetzt. Die darin gespeicherten E-Mails werden bis zum tatsächlichen Versand als Entwürfe behandelt.
+
+> In der Praxis erstelle ich einen Unterordner „Entwürfe von Kunden-E-Mails“. Ich gehe zu `Meine Vorlieben`{.action} / `Sonderordner`{.action} und wähle die Option „Entwürfe“. Im Drop-down-Menü wähle ich den Ordner „Kunden-E-Mail-Entwürfe“ aus, um „Drafts“ zu ersetzen. In diesem Ordner verfasste E-Mails werden als Entwürfe behandelt.
 
 #### Servereinstellungen <a name="server-settings"></a>
 
@@ -208,6 +220,17 @@ In diesem Tab können Sie den Speicherplatz auf einem E-Mail-Account optimieren.
 > [!warning]
 > 
 > Es ist nicht ratsam, die Option `Nachrichten in Spam direkt löschen` zu aktivieren, um zu verhindern, dass "False Positives" (fälschlicherweise als "SPAM" erkannte E-Mails) für den Empfangsserver als SPAM deklariert werden. Wenn diese Nachrichten zunächst im Ordner "Spam" abgelegt werden, kann noch überprüft werden, ob sich legitime E-Mails darunter befinden.
+
+#### Verschlüsselung <a name=„encryption“></a>
+
+Wenn Ihr Browser dies zulässt, können Sie die Erweiterung "Mailvelope" installieren und aktivieren. Hierbei handelt es sich um eine Browsererweiterung, die PGP (**P**retty **G**ood **P**rivacy) in Ihre webbasierten E-Mails integriert. Das PGP-Verschlüsselungssystem und somit die Erweiterung "Mailvelope" ermöglichen:
+
+- Verschlüsseln und Entschlüsseln von E-Mails in Ihrem Browser.
+- Halten Sie den Inhalt Ihrer E-Mails gegenüber Ihrem E-Mail-Anbieter privat.
+
+So sind Sie allein in der Lage, Ihre E-Mails zu lesen. Diese Endung ist eine Möglichkeit, Ihr Webmail abzusichern, wenn Sie vertrauliche E-Mails erhalten.
+
+Weitere Informationen finden Sie in den FAQ zu "Mailvelope" unter <https://mailvelope.com/faq>.
 
 ### Identitäten und deren Signatur verwalten <a name="identity-signature"></a>
 

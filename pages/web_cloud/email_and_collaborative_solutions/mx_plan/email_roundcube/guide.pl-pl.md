@@ -63,6 +63,11 @@ Zostaniesz wówczas przekierowany do interfejsu Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
 
+> [!primary]
+> 
+> Podczas pierwszego logowania do interfejsu Roundcube wygląd interfejsu może się różnić od tego, który zobaczysz w niniejszej dokumentacji. Oznacza to, że wygląd "klasyczny" został zdefiniowany w Twoim interfejsie. Aby go zmienić, przejdź do sekcji "[Interface użytkownika](#user-interface-settings)" i wybierz widok "Larry".
+> Wygląd interfejsu nie będzie miał wpływu na poniższe wyjaśnienia w niniejszej dokumentacji.
+
 > [!warning]
 > 
 > Jeśli zostaniesz przekierowany do interfejsu **O**utlook **W**eb **A**pp (OWA), oznacza to, że jesteś na najnowszej wersji usługi MX Plan. Aby uzyskać więcej informacji na temat oferty MX Plan, sprawdź naszą stronę [Pierwsze kroki z ofertą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
@@ -176,6 +181,8 @@ Opcja `ładne daty` pozwala na wyświetlenie daty odbioru/wysłania z terminami 
 
 W polu `Po usunięciu elementu listy wyświetl następny` oznacza, że po usunięciu lub przesunięciu w e-mailu element dolnej linii zostanie systematycznie wybrany, niezależnie od kolejności sortowania.
 
+Możesz wybrać estetykę wyświetlania w Twoim interfejsie. Do wyboru jest widok **Classic** lub **Larry**.
+
 #### Widok skrzynki pocztowej <a name="mail-view-settings"></a>
 
 Zdefiniuj tutaj ergonomię, aby wyświetlać i działać na e-mailach. Opcja `Układ` pozwala na wyświetlenie 3 okna opisanych w ogólnej części [Interfejs interfejsu Webmail Roundcube](#topwindow).
@@ -200,7 +207,10 @@ Spersonalizuj układ informacji w książce adresowej.
 Roundcube dysponuje 4 specjalnymi katalogami: `Kopie robocze`, `Wysłane`, `Spam`, `Kosz`.
 
 Nie zalecamy ich modyfikacji, ale możliwe jest przypisanie zachowania jednego folderu innemu folderowi utworzonemu w późniejszym czasie dzięki rozwijanym menu.<br>
-**Na przykład** możesz przypisać zachowanie "Motyle" do innego utworzonego przez Ciebie folderu. E-maile, które zostaną tam zapisane, będą traktowane jako szkice do czasu ich faktycznego wysłania.
+
+**Na przykład** zachowanie "Wersje robocze" można przypisać do innego utworzonego folderu, klikając listę rozwijaną i wybierając ten folder. Jeśli nie zostanie do niego przypisany żaden folder, zostanie on automatycznie ustawiony na opcję "Drafts". E-maile, które będą w nim przechowywane, będą traktowane jako wersje robocze do momentu ich faktycznego wysłania.
+
+> W praktyce tworzę podkatalog "Szablony e-maili klientów". Udaję się do `Moje preferencje`{.action} / `Foldery specjalne`{.action} i wybieram opcję "Szablony". Z rozwijanego menu wybierz folder "Wersje robocze e-maili klientów", aby zastąpić "Drafty". Wiadomości e-mail zawarte w tym folderze będą traktowane jako wersje robocze.
 
 #### Ustawienia serwera <a name="server-settings"></a>
 
@@ -209,6 +219,17 @@ W tej zakładce możesz zoptymalizować obszar zajęty na koncie e-mail. Opcja `
 > [!warning]
 > 
 > Odradzamy włączenie opcji `Kasuj wiadomości bezpośrednio w folderze Spam` IP w przypadku, gdy fałszywie dodatni (błędnie zadeklarowany jako "SPAM") zostanie uznany za SPAM dla serwera poczty przychodzącej. W przypadku gdy e-mail jest umieszczony w folderze "Porady", istnieje możliwość sprawdzenia, czy e-mail jest zgodny z prawem.
+
+### Szyfrowanie <a name="encryption"></a>
+
+Jeśli Twoja przeglądarka na to pozwala, możesz zainstalować i włączyć rozszerzenie "Mailvelope". Jest to rozszerzenie przeglądarki, które integruje protokół PGP (**P**retty **G**ood **P**rivacy) z pocztą elektroniczną. System szyfrowania PGP i, co za tym idzie, rozszerzenie "Mailveloppe" umożliwiają:
+
+- Szyfrowanie i odszyfrowywanie e-maili w przeglądarce.
+- Zachowaj prywatność poczty elektronicznej w relacjach z dostawcą poczty.
+
+Tylko Ty możesz czytać e-maile. Rozszerzenie to jest jednym ze sposobów na zabezpieczenie poczty webmail, jeśli otrzymujesz e-maile o charakterze poufnym.
+
+Aby uzyskać więcej informacji, sprawdź FAQ programu "Mailvelope" pod adresem <https://mailvelope.com/faq>.
 
 ### Zarządzanie tożsamością i jej podpisem <a name="identity-signature"></a>
 
