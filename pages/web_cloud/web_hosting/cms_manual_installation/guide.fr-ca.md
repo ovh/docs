@@ -1,12 +1,12 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2023-03-09
+updated: 2024-03-22
 ---
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal ou PrestaShop en quelques étapes.
+Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop ou Pico en quelques étapes.
 
 > [!warning]
 >
@@ -20,6 +20,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 > - [Joomla!](https://www.joomla.org/){.external}
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [Pico](https://picocms.org/){.external}
 >
 
 > [!success]
@@ -39,7 +40,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 ### Présentation des CMS
 
-Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif pour chacun des 4 CMS évoqués précédemment.
+Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif pour chacun des CMS évoqués précédemment.
 
 #### WordPress
 
@@ -74,6 +75,12 @@ CMS créé en 2005 et dédié à la réalisation de sites web e-commerce. En deh
 Retrouvez plus d'informations sur notre page relative au [module PrestaShop](https://www.ovhcloud.com/fr-ca/web-hosting/uc-prestashop-website/)
 
 - Site officiel de [PrestaShop](https://www.prestashop.com/){.external}
+
+#### Pico
+
+**Pico** est un CMS léger basé sur PHP, idéal pour créer des sites web ou des blogs. Dépourvu de base de données, il utilise des fichiers Markdown pour gérer le contenu. Il supporte des extensions pour personnaliser votre site web.
+
+- Site officiel de [Pico](https://picocms.org/){.external}
 
 > [!warning]
 >
@@ -123,7 +130,19 @@ Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur 
 
 Si vous n'utilisez pas déjà un client FTP, vous pouvez utiliser Filezilla. Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utilisation dans notre documentation sur l'[utilisation de FileZilla avec votre offre d'hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> Il existe d'autres clients FTP que vous pouvez utiliser comme, par exemple, Cyberduck. Retrouvez plus d'informations dans notre documentation relative à l'[utilisation de Cyberduck avec votre offre d'hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 #### 1.4 - Préparer une base de données <a name="step1-4"></a>
+
+> [!warning]
+>
+> Certains CMS fonctionnent sans base de données. Si c'est le cas pour le CMS que vous souhaitez installer, passez cette étape.
+>
+
+La plupart des CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) en contiennent.
 
 Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) en contiennent.
 
@@ -157,10 +176,11 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 - [Joomla!](https://downloads.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
+- [Pico](https://picocms.org/download/){.external}
 
 > [!primary]
 >
-> Récupérez la version PHP ainsi que la version MySQL ou MariaDB requises pour faire fonctionner votre CMS.
+> Récupérez la version PHP et, si votre CMS utilise une base de données, identifiez la version MySQL ou MariaDB requise pour faire fonctionner votre CMS.
 >
 > Pour cela, consultez le lien vers la page officielle du CMS que vous souhaitez installer :
 >
@@ -168,6 +188,7 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 > - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
+> - [Pico](https://picocms.org/download/){.external}
 >
 > Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -185,7 +206,7 @@ Suivez les instructions indiquées par l'éditeur de votre CMS jusqu'à ce que l
 
 >[!primary]
 >
-> Pour plus de facilité, remplacez, dans cette étape, le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi pour plus de facilité. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> Pour plus de facilité, remplacez, dans cette étape, le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, etc.).
 >
 
 Le fichier téléchargé est dans un format **compressé** (zippé). Créez un dossier intitulé « **CMS** » sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier « **CMS** ».
@@ -345,6 +366,7 @@ Pour poursuivre l'installation, suivez l'un des liens suivants en cliquant sur l
 - [Finaliser l'installation de Joomla!](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Finaliser l'installation de Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finaliser l'installation de PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Finaliser l'installation de Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
 ## Aller plus loin <a name="go-further"></a>
 
