@@ -1,7 +1,7 @@
 ---
 title: 'Creating filters for your email addresses'
 excerpt: 'Find out how to create and configure filter rules on your email address'
-updated: 2021-09-27
+updated: 2024-02-22
 ---
 
 ## Objective

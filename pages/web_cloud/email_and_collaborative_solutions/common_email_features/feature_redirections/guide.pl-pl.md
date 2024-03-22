@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z aliasów i przekierowań e-mail'
 excerpt: 'Dowiedz się, jak zarządzać aliasami i przekierowaniami e-mail'
-updated: 2020-05-20
+updated: 2024-02-22
 ---
 
 <style>

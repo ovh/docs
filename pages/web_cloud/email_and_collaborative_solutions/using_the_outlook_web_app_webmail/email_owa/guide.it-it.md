@@ -1,7 +1,7 @@
 ---
 title: 'Utilizzare un account di posta da "Outlook on the web"'
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
-updated: 2024-03-19
+updated: 2024-02-22
 ---
 
 ## Obiettivo

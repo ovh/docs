@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-updated: 2024-03-19
+updated: 2024-02-22
 ---
 
 > [!primary]

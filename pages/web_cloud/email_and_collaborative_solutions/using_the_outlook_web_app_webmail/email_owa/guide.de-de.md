@@ -1,7 +1,7 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-updated: 2024-03-19
+updated: 2024-02-22
 ---
 
 ## Ziel
