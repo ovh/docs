@@ -78,7 +78,7 @@ You can find more information on our [PrestaShop module page](https://www.ovhclo
 
 #### Pico
 
-**Pico** is a lightweight PHP-based CMS, perfect for building websites and blogs. It doesn't have a database, so it uses Markdown files to manage content. It supports extensions to customize your website.
+**Pico** is a lightweight PHP-based CMS, perfect for building websites and blogs. It does not require a database but uses Markdown files to manage content. It supports extensions to customise your website.
 
 - Official [Pico] website(https://picocms.org/){.external}
 
@@ -91,7 +91,7 @@ You can find more information on our [PrestaShop module page](https://www.ovhclo
 
 To install a CMS on your [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/), you will need to make some preparations.
 
-#### 1.1 Check the “root folder” declaration
+#### 1.1 Check the root folder declaration
 
 The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
 
@@ -99,7 +99,7 @@ Please refer to our documentation, which describes [how to add a multisite on yo
 
 > [!primary]
 >
-> If you define a “root folder” name that does not exist on your Web Hosting plan, it will be automatically created in your Web Hosting plan’s FTP storage space.
+> If you define a root folder name that does not exist on your Web Hosting plan, it will be automatically created in your Web Hosting plan’s FTP storage space.
 >
 
 #### 1.2 Check the domain name resolution
@@ -142,7 +142,7 @@ If you are not already using an FTP client, you can use Filezilla. You can find 
 > Some CMS systems work without a database. If this is the case for the CMS you want to install, skip this step.
 >
 
-Most CMSs require a database to work. Our [Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/) solutions include these.
+Most CMSs require a database to work. Our [web hosting offers](https://www.ovhcloud.com/en-au/web-hosting/) include them.
 
 Use our documentation to [create a database from your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -180,7 +180,7 @@ Below are links to the CMS download pages mentioned in this tutorial:
 >
 > Retrieve the PHP version and, if your CMS uses a database, identify the MySQL or MariaDB version required to run your CMS.
 >
-> To do this, go to the link to the official CMS page that you want to install:
+> To do this, open the link to the official CMS page that you want to install:
 >
 > - [WordPress](https://wordpress.org/about/requirements/){.external}
 > - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
