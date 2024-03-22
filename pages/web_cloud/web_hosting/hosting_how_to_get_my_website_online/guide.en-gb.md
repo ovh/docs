@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 ## Objective
@@ -24,11 +24,11 @@ There are many different types of website you can put online. Whether you are cr
 
 It is important to have a clear idea of your objective, for your project to succeed. What do you want to do with your website? How will you publish it? There are several ways to get your project off the ground with an OVHcloud Web Hosting plan.
 
-- **Using a turn-key website, with OVHcloud’s one-click modules**: this solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures, and they are detailed on the [Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules) page.
+- **Using a turn-key website, with OVHcloud’s one-click modules**: This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures that are featured on the OVHcloud webpage ["How to create a website"](https://www.ovhcloud.com/en-gb/web-hosting/uc-website/){.external}. Please also see our guide ["Setting up your website with 1-click modules"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-- **Using a turn-key website that you install manually**: this solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), and you set it up yourself on your OVHcloud Web Hosting plan.
+- **Using a turn-key website that you install manually**: This solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), and you set it up yourself on your OVHcloud Web Hosting plan.
 
-- **Creating your website yourself**: this is a more technical solution that requires programming skills, but does give you the option of creating a tailor-made project.
+- **Creating your website yourself**: This is a more technical solution that requires programming skills, but does give you the option of creating a tailor-made project.
 
 - **Migrating an existing website to OVHcloud**: this solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you can also refer to the following documentation: [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
