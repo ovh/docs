@@ -62,7 +62,7 @@ Vous serez alors redirigé vers l'interface Roundcube.
 > [!primary]
 > 
 > Lorsque vous vous connectez pour la première fois sur l'interface Roundcube, l'apparence peut être différente de celle que vous verrez dans cette documentation. Cela signifie que l'apparence « classique » a été définie sur votre interface. Pour la changer, suivez la rubrique « [Interface utilisateur](#user-interface-settings) » et sélectionnez l'affichage « Larry ».
-> L'apparence de l'interface n'aura pas d'effet sur les explications qui suivent sur cette documentation.
+> L'apparence de l'interface n'aura pas d'incidence sur les explications qui suivent dans cette documentation.
 
 > [!warning]
 > 
