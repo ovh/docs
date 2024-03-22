@@ -87,7 +87,7 @@ Suivez les étapes successives de configuration en parcourant les onglets ci-des
 >> ![exchange android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Etape 6**
->> Le message « Vous pouvez dés à présent utiliser votre compte » devrait apparaitre, appuyez sur `OK`{.action} pour terminer la configuration.<br><br>
+>> Le message « Vous pouvez dès à présent utiliser votre compte » devrait apparaitre, appuyez sur `OK`{.action} pour terminer la configuration.<br><br>
 >> ![exchange android](images/exchange-android-05.png){.thumbnail .h-600}
 >>
 
