@@ -50,7 +50,7 @@ Vérifiez d'abord l'alimentation électrique de votre modem en réalisant les ma
 
 Si, malgré ces manipulations, votre modem ne s'allume toujours pas, effectuez une réinitialisation de ce dernier. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem OVHcloud](/pages/web_cloud/internet/internet_access/restart_reboot_modem) ».
 
-### Si des voyants sont allumés (clignotant ou fixe) <a name="voyants-allumes"></a>
+### Des voyants sont allumés (clignotant ou fixe) <a name="voyants-allumes"></a>
 
 Si des voyants sont allumés sur votre modem, cela indique que celui-ci semble fonctionner correctement. Il vous reste maintenant à déterminer la cause de l'incident que vous rencontrez.
 
