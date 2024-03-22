@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)'
 excerpt: 'Saiba como utilizar o seu endereço de e-mail a partir do webmail OWA'
-updated: 2024-02-22
+updated: 2024-03-22
 ---
 
 ## Sumário

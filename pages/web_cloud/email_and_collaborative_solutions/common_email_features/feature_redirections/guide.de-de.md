@@ -1,7 +1,7 @@
 ---
 title: 'E-Mail Alias und Weiterleitung verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail Aliase und Weiterleitungen verwalten'
-updated: 2024-02-22
+updated: 2024-03-22
 ---
 
 <style>

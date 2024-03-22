@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar os alias e reencaminhamentos de e-mail'
 excerpt: 'Saiba como gerir os seus alias e reencaminhamentos de e-mail'
-updated: 2024-02-22
+updated: 2024-03-22
 ---
 
 <style>
