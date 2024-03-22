@@ -83,7 +83,7 @@ Suivez les étapes successives de configuration en parcourant les onglets ci-des
 >> ![exchange android](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Etape 5**
->> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Serveur** : le nom de domaineattaché à votre compte e-mail<br>- **Port** : « 443 »<br>- **Type de sécurité** : « SSL/TLS »<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br
+>> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : votre adresse e-mail complète<br>- **Mot de passe** : le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : votre adresse e-mail complète<br>- **Serveur** : le nom de domaine attaché à votre compte e-mail<br>- **Port** : 443<br>- **Type de sécurité** : SSL/TLS<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br
 >> ![exchange android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Etape 6**
