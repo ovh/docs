@@ -1,7 +1,7 @@
 ---
 title: DKIM-Eintrag konfigurieren
 excerpt: Erfahren Sie hier, wie Sie einen DKIM-Eintrag für Domainnamen und OVHcloud E-Mail-Dienste einrichten
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -382,7 +382,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >> <br>
 >>
@@ -397,7 +397,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 > **2. Selektor erstellen**
 >> In diesem Schritt wird ein Selektor erstellt, ein Schlüsselpaar generiert und der DNS-Eintrag für den Domainnamen hinzugefügt.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > Es wird empfohlen, diesen Vorgang für jeden der Selektoren zweimal auszuführen. Mit der zweiten Auswahl können Sie bei Bedarf ein anderes Schlüsselpaar auswählen. Lesen Sie unter den Use Cases den Abschnitt [Wie ändere ich mein DKIM-Schlüsselpaar?](#2selectors).

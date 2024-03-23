@@ -1,7 +1,7 @@
 ---
 title: "Webhosting: Laufzeitumgebung, PHP-Version, .ovhconfig"
 excerpt: "Erfahren Sie hier, wie Sie die Einstellungen von Laufzeitumgebung, PHP-Version, Firewall, Engine, Modus und .ovhconfig ändern"
-updated: 2023-09-05
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Diese Konfigurationseinstellungen können auf zwei Arten geändert werden:
 > [!primary]
 >
 > Die “.ovhconfig“-Dateien sind Serverkonfigurationsdateien und werden von der Hosting Infrastruktur automatisch gelesen.
-> Sie sind nativ im FTP-Wurzelverzeichnis (Root) des FTP-Speicherplatzes Ihres Webhostings vorhanden.
+> Sie sind nativ im FTP-Wurzelverzeichnis (*root*) des FTP-Speicherplatzes Ihres Webhostings vorhanden.
 > Sie enthalten Werte für die oben genannten Elemente.
 >
 

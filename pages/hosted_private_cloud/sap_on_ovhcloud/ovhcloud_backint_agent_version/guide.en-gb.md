@@ -1,10 +1,18 @@
 ---
 title: "OVHcloud Backint Agent versions"
 excerpt: "This guide provides information about OVHcloud Backint Agent versions"
-updated: 2024-01-17
+updated: 2024-03-18
 ---
 
 ## Version history
+
+### Version 1.0.10
+
+- Bug fix which could occur during a timeout with the S3 bucket and provoke an hanging backup on SAP HANA.
+
+### Version 1.0.9
+
+- Improving error messages resulting from a bad configuration in the `hdbbackint.cfg` file.
 
 ### Version 1.0.8
 

@@ -1,7 +1,7 @@
 ---
 title: Activating and using rescue mode on a VPS
 excerpt: Find out how to use the OVHcloud rescue mode to troubleshoot your VPS and run system checks
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 ## Objective
@@ -38,10 +38,6 @@ If you are facing a problem with your system, performing checks in rescue mode h
 
 ### Activating rescue mode
 
-> [!warning]
-> Please note that if you have set a **default SSH key** in your Control Panel, you will not receive a root password when rebooting a VPS in rescue mode. In this case, you must first disable the key before proceeding with the server reboot. To do so, please consult the guide "[Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey)".
-> 
-
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 On the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the **Your VPS** box.
@@ -58,7 +54,7 @@ After initiating the reboot, a progress bar will indicate the duration of the ta
 
 > [!primary]
 >
-> You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email can also be viewed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+> You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email can also be viewed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca): Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 >
 
 You will then need to [access your server via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), using the temporary password generated for the rescue mode.
@@ -104,20 +100,16 @@ In rescue mode, `sda` is the rescue mode disk and `sda1` is the primary rescue p
 
 In this example, the primary disk of the VPS is `sdb` and the system partition is `sdb1` (indicated by the size).
 
-Mount this partition with the following commands:
+Mount this partition with the following command:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Your files are now accessible from the mount point `/mnt/sdb1`:
+Your files are now accessible from the mount point `/mnt`:
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -133,7 +125,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Before you can manipulate this partition however, you need to open it for write access which you can do with the following command:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 You can now apply changes to your system, for example [reset user passwords and SSH keys](#gofurther).
@@ -154,6 +146,8 @@ If you encounter errors when rebooting a VPS, use the following procedure:
 ## Go further
 
 [Getting started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Recovering server access if your user password is lost](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Replacing an SSH key pair](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

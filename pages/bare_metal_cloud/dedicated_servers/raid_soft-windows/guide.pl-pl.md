@@ -361,7 +361,7 @@ Wróć do wiersza poleceń, skopiuj pliki uruchamiania partycji startowej (EFI) 
 
 Wpisz 3 poniższe polecenia i wykonaj je za pomocą przycisku `Wpisz`:
 
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

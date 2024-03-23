@@ -1,7 +1,7 @@
 ---
 title: "Creación y eliminación de usuarios OpenStack"
 excerpt: Cómo crear y eliminar un usuario OpenStack desde el área de cliente de OVHcloud
-updated: 2022-03-16
+updated: 2024-03-04
 ---
 
 > [!primary]
@@ -20,13 +20,6 @@ El acceso a Horizon y a las API de OpenStack se realiza a través de combinacion
 
 - Un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-
-> [!primary]
->
-> Si el proyecto de Public Cloud es el **primer proyecto** creado en su área de cliente, la creación de usuarios de OpenStack solo será posible después de 7 días contados desde la fecha de creación del proyecto.
->
-> Puede solicitar la eliminación de esta medida de seguridad creando un tique de asistencia desde el área de cliente.
->
 
 ## Procedimiento
 

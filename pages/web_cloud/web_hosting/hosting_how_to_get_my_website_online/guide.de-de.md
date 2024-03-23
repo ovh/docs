@@ -1,7 +1,7 @@
 ---
 title: "Eine Website auf Ihrem Webhosting online stellen"
 excerpt: "So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -16,10 +16,10 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 ## Voraussetzungen
 
-- Sie besitzen ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Sie haben die Bestätigungs-E-Mail zur Installation Ihres Webhostings erhalten.
-- Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/){.external}, über die Ihre Website erreichbar sein wird.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
+- Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}, über den Ihre Website erreichbar sein wird.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
@@ -28,7 +28,7 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben. Was ist der Zweck Ihrer Website? Wie soll Sie online gestellt werden? Über Ihr OVHcloud Webhosting Angebot stehen Ihnen mehrere Möglichkeiten für Ihr Website-Projekt zur Verfügung.
 
-- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung, die mit unseren Infrastrukturen kompatibel sind. Nähere Informationen finden Sie in der Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Inhalte, etc.). OVHcloud bietet Ihnen vier verschiedene, mit unserer Infrastruktur kompatible 1-Klick-Module, die auf unserer Seite "[Wie erstelle ich eine Website?](https://www.ovhcloud.com/de/web-hosting/uc-website/){.external}" vorgestellt werden. Beachten Sie dazu auch die Anleitung "[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 - **Website über gebrauchsfertige Vorlage manuell installieren**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). Die Vorlage installieren Sie selbst auf Ihrem OVHcloud Webhosting.
 
@@ -63,10 +63,10 @@ Vergewissern Sie sich, dass Sie alle Dateien der Website haben, die Sie online s
 
 Um sich mit Ihrem Speicherplatz zu verbinden, benötigen Sie die folgenden Elemente:
 
-- einen aktiven FTP- oder SSH-Benutzer
-- das Passwort für den FTP- bzw. SSH-Benutzer
-- die Serveradresse
-- den Verbindungsport des Servers
+- Einen aktiven FTP- oder SSH-Benutzer
+- Das Passwort für den FTP- bzw. SSH-Benutzer
+- Die Serveradresse
+- Den Verbindungsport des Servers
 
 Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
 

@@ -14,10 +14,10 @@ Malgré [les nombreux Systèmes d'Exploitation (OS) disponibles dans le catalogu
 
 Il existe deux services différents permettant d'installer un OS personnalisé sur votre serveur dédié :
 
-- **Bring You Own Image** (BYOI)
-- **Bring You Own Linux** (BYOLinux)
+- **Bring Your Own Image** (BYOI)
+- **Bring Your Own Linux** (BYOLinux)
 
-Cette page vous présente les différences entre **Bring You Own Image** et **Bring Your Own Linux**, afin que vous puissiez en tirer le meilleur parti.
+Cette page vous présente les différences entre **Bring Your Own Image** et **Bring Your Own Linux**, afin que vous puissiez en tirer le meilleur parti.
 
 ## Fonctionnalités
 
@@ -37,5 +37,7 @@ Cette page vous présente les différences entre **Bring You Own Image** et **Br
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
+
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

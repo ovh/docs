@@ -360,7 +360,7 @@ De volta à linha de comandos, copie os ficheiros de arranque da partição de a
 
 Introduza os 3 comandos seguintes e execute cada um com a tecla `Entrer`:
 
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

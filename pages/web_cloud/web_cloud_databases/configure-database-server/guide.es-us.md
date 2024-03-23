@@ -1,11 +1,11 @@
 ---
 title: 'Configurar el servidor de bases de datos'
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
-updated: 2023-04-24
+updated: 2024-03-20
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -103,7 +103,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 #### Instancia MySQL y MariaDB
 
-- Abra la pestaña `Configuración`:
+- Abra la pestaña `Configuración`{.action}:
 
 En el cuadro **"Configuración general de MySql"** encontrará la configuración actualmente establecida para su base de datos. Puede modificarla directamente y hacer clic en `Aplicar`{.action}.
 
@@ -162,9 +162,24 @@ Realice los cambios necesarios y haga clic en `Confirmar`{.action}.
 
 #### Instancia PostgreSQL
 
-No es posible modificar la configuración de una instancia PostgreSQL.
+- Haga clic en la pestaña `Configuración`{.action}.
 
-No obstante, puede activar extensiones en sus bases de datos. Para ello, abra la pestaña `Bases de datos` y haga clic en el icono de la tabla de la base de datos en la columna **"Extensiones"**
+En el recuadro **"Configuración General de PostgreSQL"** encontrará la configuración actualmente definida para su base de datos. Puede modificarla directamente y hacer clic en `Aplicar`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages**: controla los niveles de mensajes que se deben registrar en los logs del servidor. Los niveles disponibles para una solución Web Cloud Databases son: 
+    - **"WARNING"**: Proporciona mensajes de advertencia sobre posibles problemas.
+    - **"ERROR"**: Envía el error que ha provocado la cancelación de un pedido en curso.
+    - **"LOG"**: Registra la información destinada a los administradores del servidor.
+    - **"FATAL"**: Envía el error que ha provocado el final de la sesión en curso.
+    - **"PANIC"**: Envía el error que ha provocado el final de todas las sesiones.
+
+Cada nivel incluye todos los niveles posteriores. Cuanto mayor sea el nivel, menos mensajes se registrarán en los logs del servidor.
+
+Por defecto, el valor definido es **"WARNING"**, ya que incluye los valores **"ERROR"**, **"LOG"**, **"FATAL"** y **"PANIC"**.
+
+Además, puede activar extensiones en sus bases de datos. Para ello, abra la pestaña `Bases de datos`{.action} y haga clic en el icono de la tabla de la base de datos en la columna **"Extensiones"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
@@ -207,33 +222,9 @@ show variables like "version";
 
 ### Logs y Métricas
 
-#### Estadísticas del tiempo de ejecución de las consultas
+#### Acceso a los logs
 
-Para visualizar el tiempo de ejecución de las consultas en el servidor de bases de datos en las últimas 24 horas.
-
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
-
-Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consultar la gráfica **"Estadísticas del tiempo de ejecución de las consultas"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Acceso a los logs "Slow Query"
-
-> **Definición de "slow query log"**
-> 
-> Las peticiones tardan más en ejecutarse. El valor se define en 1 segundo en los servidores de bases de datos de la variable **"long_query_time"**.
-
-Estos logs, denominados **"slow-query.log"**, pueden recuperarse en la raíz del espacio SFTP de su servidor de bases de datos. 
-
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
-
-En la pestaña `Información general`, encontrará la sección **"SFTP"** en el recuadro **"Información de conexión".**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Para conectarse por **SFTP**, puede hacerlo a través del programa Filezilla, siguiendo la guía Guía de uso de FileZilla
-
-Si el archivo está vacío, no tiene una petición lenta.
+Para acceder a los logs de su solución Web Cloud Databases, consulte nuestra guía "[Web Cloud Databases - ¿Cómo recuperar los logs?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Seguimiento de la RAM consumida
 

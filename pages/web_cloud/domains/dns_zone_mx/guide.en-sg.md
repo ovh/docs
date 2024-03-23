@@ -1,7 +1,7 @@
 ---
 title: "Add an MX record to your domain name’s configuration"
 excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ With an MX record, you can link a domain name to the server on your email platfo
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to modify the MX records using the interface of the service provider that manages your domain name configuration.
 >
-> - If your domain name is with OVHcloud, you can check if it uses our OVHcloud configuration in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), in the `DNS Servers`{.action} section. Next, select the domain name concerned, and go to the `General information`{.action} tab. If `Active` is displayed under **DNS servers**, the domain name uses OVHcloud DNS servers.
+> - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers** : If you see `Enabled` underneath it, your domain name is using the OVHcloud DNS servers.
 >
 > ![email](images/dns-servers-enabled.png){.thumbnail}
 

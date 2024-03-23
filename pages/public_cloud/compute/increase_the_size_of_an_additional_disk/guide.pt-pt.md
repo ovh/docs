@@ -19,7 +19,7 @@ Se atingiu a capacidade máxima do seu disco suplementar, pode adicionar armazen
 - Uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) no seu projeto Public Cloud
 - Um [disco adicional](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Ter acesso administrativo (root) à sua instância através de SSH (Linux) ou RDP (Windows)
+- Ter acesso administrativo (sudo) à sua instância através de SSH (Linux) ou RDP (Windows)
 
 ## Instruções
 

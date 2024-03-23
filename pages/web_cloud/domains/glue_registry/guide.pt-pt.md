@@ -1,7 +1,7 @@
 ---
 title: "Personalizar os servidores DNS de um nome de domínio (Glue Records)"
 excerpt: "Saiba como personalizar os servidores DNS do seu domínio OVHcloud"
-updated: 2023-07-27
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -39,9 +39,9 @@ Consoante as suas necessidades, é possível personalizar o nome dos servidores 
 
 ### Etapa 1: recupere os servidores DNS atualmente utilizados pelo seu nome de domínio <a name="step1"></a>
 
-Pode recuperar os servidores DNS atualmente utilizados pelo seu nome de domínio através da ferramenta DNS online [Zonemaster](https://zonemaster.fr/en/run-test){.external}.
+Pode recuperar os servidores DNS atualmente utilizados pelo seu nome de domínio através da ferramenta DNS online [Zonemaster](https://zonemaster.net/en/run-test){.external}.
 
-Para isso, aceda à ligação [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, introduza o seu nome de domínio sem as *www* (exemplo: *domain.tld*) e escolha o botão `Options`{.action} situado logo abaixo do formulário de introdução do nome de domínio.
+Para isso, aceda à ligação [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, introduza o seu nome de domínio sem as *www* (exemplo: *domain.tld*) e escolha o botão `Options`{.action} situado logo abaixo do formulário de introdução do nome de domínio.
 
 Nas opções disponíveis, clique diretamente no botão `Fetch NS from parent zone`{.action}.
 
@@ -53,8 +53,8 @@ Recupere os *servidores DNS* e conserve **todos** os seus endereços IPv4 (sob a
 
 No nosso exemplo acima, o domínio **domain.tld** utiliza atualmente os seguintes **servidores DNS**:
 
-- **dnsX1.ovh.net** associado ao IPv4 *111.222.333.443* e ao IPv6 *0000:00d0:1:0000::1*;
-- **dnsX2.ovh.net** associado ao IPv4 *111.222.333.444* e ao IPv6 *0000:00d0:1:0000::2*.
+- **dnsX1.ovh.net** associado ao IPv4 *203.0.113.0* e ao IPv6 *2001:db8:1:1b00:203:0:113:0*;
+- **dnsX2.ovh.net** associado ao IPv4 *203.0.113.1* e ao IPv6 *2001:db8:1:1b00:203:0:113:1*.
 
 Se precisar de mais informações, consulte o nosso tutorial sobre a ferramenta [Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
 
@@ -89,13 +89,13 @@ Na janela que se abre no seu ecrã, complete as informações pedidas:
 
 Na imagem acima, ao retomar o exemplo do [etapa 1](#step1), o « GLUE » que se deseja adicionar aqui (a partir do nome de domínio *domain.tld*) é **dns1.domain.tld**. 
 
-Para este « GLUE », indicam-se como endereços IP do *servidor DNS de destino* os endereços IP *111.222.333.443* (IPv4) e *0000:00d0:1:0000::1* (IPv6). Estes endereços IP correspondem a um dos dois servidores DNS atualmente utilizados para *domain.tld* (**dnsX1.ovh.net**). 
+Para este « GLUE », indicam-se como endereços IP do *servidor DNS de destino* os endereços IP *203.0.113.0* (IPv4) e *2001:db8:1:1b00:203:0:113:0* (IPv6). Estes endereços IP correspondem a um dos dois servidores DNS atualmente utilizados para *domain.tld* (**dnsX1.ovh.net**). 
 
 Este « GLUE » é adicionado para que **dns1.domain.tld** possa, no final, substituir o nome do servidor DNS **dnsX1.ovh.net** atualmente utilizado pelo nome de domínio *domain.tld*.
 
 Depois de preencher as informações, clique no botão `Seguinte`{.action}, leia as informações apresentadas e clique em `Validar`{.action}. Repita esta operação as vezes que forem necessárias, de acordo com o número de servidores DNS utilizados pelo seu domínio.
 
-No nosso exemplo, deverá repetir a operação para criar o « GLUE » **dns2.domain.tld**. Este último substituirá o servidor DNS **dnsX2.ovh.net** atualmente associado aos IPv4 *11.222.333.444* e IPv6 *0000:00d0:1:0000::2*
+No nosso exemplo, deverá repetir a operação para criar o « GLUE » **dns2.domain.tld**. Este último substituirá o servidor DNS **dnsX2.ovh.net** atualmente associado aos IPv4 *203.0.113.1* e IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 ### Etapa 3: criar os registos DNS do tipo A e AAAA correspondentes aos DNS personalizados
 
@@ -117,10 +117,10 @@ Retomando o exemplo anterior, os registos « GLUE » que se deseja adicionar (a 
 
 Por este facto, adicionam-se os seguintes registos na zona DNS ativa do domínio *domain.tld*:
 
- - Um registo DNS do tipo *A* para o *subdomínio* **dns1.domain.tld** para o IP *11.222.333.443* (IPv4 do servidor DNS **dnsX1.ovh.net**);
- - Um registo DNS do tipo *AAAA* para o *subdomínio* **dns1.domain.tld** para o IP *0000:00d0:1:0000::1* (IPv6 do servidor DNS **dnsX1.ovh.net*);
- - Um registo DNS do tipo *A* para o *subdomínio* **dns2.domain.tld** para o IP *11.222.333.444* (IPv4 do servidor DNS **dnsX2.ovh.net**);
- - Um registo DNS do tipo *AAAA* para o *subdomínio* **dns2.domain.tld** para o IP *0000:00d0:1:0000::2* (IPv6 do servidor DNS **dnsX2.ovh.net**).
+ - Um registo DNS do tipo *A* para o *subdomínio* **dns1.domain.tld** para o IP *203.0.113.0* (IPv4 do servidor DNS **dnsX1.ovh.net**);
+ - Um registo DNS do tipo *AAAA* para o *subdomínio* **dns1.domain.tld** para o IP *2001:db8:1:1b00:203:0:113:0* (IPv6 do servidor DNS **dnsX1.ovh.net*);
+ - Um registo DNS do tipo *A* para o *subdomínio* **dns2.domain.tld** para o IP *203.0.113.1* (IPv4 do servidor DNS **dnsX2.ovh.net**);
+ - Um registo DNS do tipo *AAAA* para o *subdomínio* **dns2.domain.tld** para o IP *2001:db8:1:1b00:203:0:113:1* (IPv6 do servidor DNS **dnsX2.ovh.net**).
 
 Aguarde o tempo da propagação DNS.
 

@@ -235,7 +235,7 @@ Basic customer input data errors are directly handled by the OVHcloud API. This 
 
 Customer input data related to partitioning might be too specific to be checked by the OVHcloud API and therefore require **pre-processing**. The drawback is that customers are notified later during the OS installation process.
 
-Within the [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
+Within the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
 From the [OVHcloud API](https://ca.api.ovh.com/), this status can be obtained with the following API call:
 
 > [!api]
@@ -287,11 +287,11 @@ In order to improve customer experience, reduce OVHcloud support workload and to
 
 ## Go further <a name="gofurther"></a>
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
-
-[Choosing the disk group to install an operating system](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

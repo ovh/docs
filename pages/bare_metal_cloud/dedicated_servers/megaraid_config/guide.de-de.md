@@ -25,7 +25,7 @@ Der Standard-RAID-Level der OVHcloud Server ist RAID 1. Dieser verdoppelt das Vo
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit Hardware-RAID.
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH
 
 ## In der praktischen Anwendung
 
@@ -33,7 +33,7 @@ Der Standard-RAID-Level der OVHcloud Server ist RAID 1. Dieser verdoppelt das Vo
 
 Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.
 
-Klicken Sie im Bereich **Allgemeine Informationen** auf `...`{.action} neben `Neuestes von OVHcloud installiertes Betriebssystem`. Wählen Sie dann `Installieren`{.action}, um ein neues Betriebssystem mit Ihrer personalisierten RAID 0 Konfiguration zu installieren.
+Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
 Wählen Sie **Mit einem OVHcloud Template installieren** und klicken Sie dann auf `Weiter`{.action}.
 
@@ -62,8 +62,6 @@ Klicken Sie schließlich auf `Bestätigen`{.action}.
 ```sh
 df -h
 ```
-
-```console```
 
 ### Rescue-Modus verwenden
 

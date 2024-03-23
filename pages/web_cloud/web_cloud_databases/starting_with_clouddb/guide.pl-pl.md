@@ -1,7 +1,7 @@
 ---
-title: 'Pierwsze kroki z usługą Cloud Databases'
+title: 'Pierwsze kroki z usługą Web Cloud Databases'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -197,27 +197,7 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 
 ### Pobierz logi Twojego serwera Web Cloud Databases
 
-Aby sprawdzić najnowsze logi bazy danych, przejdź do zakładki `Logs`{.action} Twojego serwera Web Cloud Databases. W zakładce wyświetlają się alerty i błędy w czasie rzeczywistym.
-
-![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
-
-Aby pobrać wszystkie logi Twojego serwera Web Cloud Databases, zaloguj się przez SFTP do tego serwera.
-
-> [!warning]
->
-> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze Web Cloud Databases z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#trustip) w tym przewodniku.
-
-Dane do logowania SFTP znajdziesz w zakładce `Informacje ogólne`{.action} Twojego serwera Web Cloud Databases. Jeśli nie znasz `hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby go zmienić.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Zaloguj się za pośrednictwem klienta FTP (FileZilla, Cyberduck, WinSCP, itp.).
-
-W przypadku FileZilla w menu `Plik`{.action} przejdź do `Zarządzanie stronami`{.action}. Kliknij przycisk `Nowa strona`{.action}, po czym wprowadź wcześniej ustawienia.
-
-![Web Cloud Databases](images/sftp-connexion.png){.thumbnail}
-
-Plik logów zatytułowany `stdout.log` znajduje się w katalogu głównym.
+Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Jak pobrać logi?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Sprawdź również
 

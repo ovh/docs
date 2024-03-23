@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un serveur dédié"
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre serveur dédié"
-updated: 2024-01-23
+updated: 2024-02-20
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Lorsque vous commandez votre serveur dédié, vous pouvez choisir une distributi
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).
-- Avoir un accès administrateur (*root*) à votre serveur via SSH.
+- Avoir un accès administrateur (sudo) à votre serveur via SSH.
 
 ## En pratique
 
@@ -96,6 +96,31 @@ sudo systemctl restart sshd
 
 Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le serveur (`~$ sudo reboot`).
 
+**Pour Ubuntu 23.04 et versions ultérieures**
+
+Pour les dernières versions d'Ubuntu, la configuration SSH est désormais gérée dans le fichier `ssh.socket`.
+
+Pour mettre à jour le port SSH, éditez la ligne `Listenstream` dans le fichier de configuration avec un éditeur de texte de votre choix (`nano` utilisé dans cet exemple) :
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Enregistrez vos modifications et exécutez les commandes suivantes :
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Si vous avez activé le pare-feu de votre système d'exploitation, assurez-vous d'autoriser le nouveau port dans les règles du pare-feu.
+
 N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
 
 ```bash
@@ -107,61 +132,9 @@ ssh nomdutilisateur@IPv4_de_votre_serveur -p NouveauPort
 > Veuillez noter que la modification du port par défaut de SSH ou de tout autre protocole constitue un risque potentiel. Vous pouvez constater que certains services ne peuvent pas être configurés pour être utilisés avec des ports non standard et ne fonctionneront pas si le port par défaut est modifié.
 >
 
-### Modifier le mot de passe associé à l'utilisateur "root"
-
-Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
-
 ### Créer un utilisateur avec des droits restreints
 
-En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
-
-```bash
-sudo adduser NomUtilisateurPersonnalisé
-```
-
-Renseignez ensuite les informations demandées par le système : mot de passe, nom, etc.
-
-Le nouvel utilisateur sera autorisé à se connecter en SSH. Lors de l'établissement d'une connexion, utilisez les informations d'identification spécifiées.
-
-Une fois connecté, tapez la commande suivante pour effectuer des opérations nécessitant des autorisations root :
-
-```bash
-su root
-```
-
-Entrez le mot de passe lorsque vous y êtes invité et la connexion active sera basculée vers l'utilisateur root.
-
-### Désactiver l'accès au serveur via l'utilisateur root
-
-L'utilisateur root est créé par défaut sur les systèmes GNU/Linux. Il s'agit du niveau d'accès le plus élevé à un système d'exploitation.<br>
-Il est déconseillé et même dangereux de laisser votre serveur accessible uniquement en root, car ce compte peut effectuer des opérations irréversiblement dommageables.
-
-Il est recommandé de désactiver l'accès direct des utilisateurs root via le protocole SSH. N'oubliez pas de créer un autre utilisateur avant de suivre les étapes ci-dessous.
-
-Vous devez modifier le fichier de configuration SSH de la même manière que décrit précédemment :
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Repérez la section suivante :
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Remplacez **yes** par **no** sur la ligne `PermitRootLogin`.
-
-Pour que cette modification soit prise en compte, vous devez redémarrer le service SSH :
-
-```bash
-sudo systemctl restart sshd
-```
-
-Par la suite, les connexions à votre serveur via l'utilisateur root (`ssh root@IPv4_de_votre_serveur`) seront rejetées.
+En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Pour plus d'informations, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Configurer le pare-feu interne (iptables)
 
@@ -209,7 +182,7 @@ Il est important de savoir que les paramètres globaux ne seront pris en compte 
 Prenons pour exemple ces lignes sous `[DEFAULT]` :
 
 ```console
-bantime  = 10m
+bantime = 10m
 maxretry = 5
 enabled = false
 ```

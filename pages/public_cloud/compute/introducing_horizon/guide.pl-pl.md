@@ -1,7 +1,7 @@
 ---
 title: Prezentacja Horizon
 excerpt: Poznaj najważniejsze sekcje interfejsu Horizon
-updated: 2022-03-16
+updated: 2024-02-09
 ---
 
 > [!primary]
@@ -17,15 +17,15 @@ Interfejs Horizon, natywnie proponowany z OpenStack, został dostosowany przez O
 ## Wymagania początkowe
 
 - Utworzenie [Projekt Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) na Twoim koncie OVHcloud.
-- Użytkownik [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) utworzony w Twoim projekcie.
+- **[Opcjonalnie od września 2023]** Użytkownik [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) utworzony w Twoim projekcie. Etap ten jest opcjonalny, ponieważ wdrożyliśmy logowanie jednokrotne (SSO: *Single Sign-On*) między Panelem klienta OVHcloud a Horizon.
 
 ## W praktyce
 
 ### Logowanie do OpenStack Horizon
 
-Otwórz stronę logowania do interfejsu [Horizon](https://horizon.cloud.ovh.net/auth/login/) i wprowadź wcześniej utworzone [identyfikatory OpenStack](/pages/public_cloud/compute/create_and_delete_a_user), a następnie kliknij `Connect`{.action}.
+* Aby zalogować się przy użyciu logowania jednokrotnego OVHcloud: użyj linku `Horizon`{.action} w menu po lewej stronie w sekcji "Management Interfaces" po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w menu "Management Interfaces" po lewej stronie kliknij pozycję `Horizon`{.action}.
+* Aby zalogować się za pomocą określonego użytkownika OpenStack: otwórz stronę logowania w witrynie [Horizon](https://horizon.cloud.ovh.net/auth/login/) i wprowadź wcześniej utworzone [identyfikatory OpenStack](/pages/public_cloud/compute/create_and_delete_a_user), a następnie kliknij przycisk `Connect`{.action}.
 
 ### Wybór regionu centrum danych
 

@@ -58,7 +58,7 @@ Po wybraniu prywatnego serwera wirtualnego kliknij kartę `Automatyczne kopie za
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
-Jeśli niedawno zmieniło się Twoje hasło użytkownika administracyjnego (root), w wyświetlonym oknie zaznacz opcję "Modyfikuj hasło administratora przy przywracaniu", aby zachować bieżące hasło, i kliknij pozycję `Potwierdź`{.action}. Po ukończeniu zadania otrzymasz wiadomość e-mail. Czas potrzebny do przywrócenia kopii zapasowej zależy od używanej przestrzeni dyskowej.
+Jeśli niedawno zmieniło się Twoje hasło użytkownika administracyjnego (*root*), w wyświetlonym oknie zaznacz opcję "Modyfikuj hasło administratora przy przywracaniu", aby zachować bieżące hasło, i kliknij pozycję `Potwierdź`{.action}. Po ukończeniu zadania otrzymasz wiadomość e-mail. Czas potrzebny do przywrócenia kopii zapasowej zależy od używanej przestrzeni dyskowej.
 
 > [!alert]
 >

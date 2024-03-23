@@ -1,7 +1,7 @@
 ---
 title: "Jak zastąpić parę kluczy SSH"
 excerpt: "Dowiedz się, jak przywrócić dostęp do serwera w przypadku utraty klucza prywatnego przez wygenerowanie nowej pary kluczy SSH"
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -58,7 +58,7 @@ Postępuj zgodnie z instrukcjami zawartymi w przewodniku dotyczącym trybu Rescu
 Po uzyskaniu dostępu do plików otwórz odpowiedni plik "authorized_keys" w edytorze tekstu. Plik ten przechowuje klucze SSH i znajduje się w katalogu `home` użytkownika podłączonego do Twojego serwera. (Zastąp "USER_NAME" nazwą użytkownika.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Skopiuj i wklej nowy klucz publiczny (utworzony w etapie 2) do pliku. Zawartość pliku powinna wyglądać jak następujący przykład:

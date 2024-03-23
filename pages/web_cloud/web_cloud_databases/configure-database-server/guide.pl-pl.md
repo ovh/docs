@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja serwera baz danych'
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-updated: 2023-04-24
+updated: 2024-03-20
 ---
 
 > [!primary]
@@ -102,9 +102,9 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 #### Instancja MySQL i MariaDB
 
-- Kliknij kartę `Konfiguracja`.
+- Kliknij kartę `Konfiguracja`{.action}.
 
-W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Zastosuj`{.action}.
+W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Wyślij`{.action}.
 
 ![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
 
@@ -161,9 +161,24 @@ Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
 
 #### Instancja PostgreSQL
 
-Nie można zmienić konfiguracji instancji PostgreSQL. 
+- Kliknij zakładkę `Konfiguracja`{.action}.
 
-Możesz jednak aktywować rozszerzenia Twoich baz danych. W tym celu przejdź do zakładki `Bazy danych`, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
+W części **"Konfiguracja PostgreSQL"** znajdziesz aktualnie skonfigurowaną konfigurację Twojej bazy danych. Możesz ją bezpośrednio zmienić, po czym kliknij przycisk `Wyślij`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages**: Określa poziomy wiadomości do filtrowania w logach serwera. Poziomy dostępne dla rozwiązania Web Cloud Databases to: 
+    - **"WARNING"**: Dostarcza komunikaty ostrzegawcze o potencjalnych problemach.
+    - **"ERROR"**: Wysyła błąd, który spowodował anulowanie bieżącego zamówienia.
+    - **"LOG"**: Rejestruje informacje dla administratorów serwera.
+    - **"FATAL"**: Wysyła błąd, który spowodował zakończenie bieżącej sesji.
+    - **"PANIC"**: Wysyła błąd, który spowodował zakończenie wszystkich sesji.
+
+Każdy poziom obejmuje wszystkie następne poziomy. Im wyższy poziom, tym mniej wiadomości jest rejestrowanych w logach serwera.
+
+Domyślnie jest ustawiona wartość **"WARNING"**, ponieważ zawiera wartości **"ERROR"**, **"LOG"**, **"FATAL"** i **"PANIC"**.
+
+Możesz włączyć rozszerzenia dla swoich baz danych. W tym celu przejdź do zakładki `Bazy danych`{.action}, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
@@ -206,33 +221,9 @@ show variables like "version";
 
 ### Logi i metryki
 
-#### Statystyki czasu wykonywania zapytań
+#### Dostęp do logów
 
-Dzięki temu możesz wyświetlić czas wykonywania zapytań na serwerze baz danych w ciągu ostatnich 24 godzin.
-
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
-
-Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykonywania zapytań"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Dostęp do logów "Slow Query"
-
-> **Definicja "slow query log"**
-> 
-> Są to nieoptymalne zapytania, które trwają dłużej. Wartość jest ustawiona na 1 sekundę dla serwerów baz danych w zmiennej **"long_query_time"**.
-
-Logi te, nazywane **"slow-query.log"**, mogą zostać odzyskane z katalogu głównego przestrzeni SFTP Twojego serwera baz danych.
-
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
-
-W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowaniu"**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-Jeśli ten plik jest pusty, to znaczy, że nie masz żadnych nieoptymalnych zapytań.
+Aby uzyskać dostęp do logów rozwiązania Web Cloud Databases, zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Jak pobrać logi?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitoruj zużytą pamięć RAM
 

@@ -1,7 +1,7 @@
 ---
 title: "Installer et utiliser OVHcloud Backint Agent pour SAP HANA"
 excerpt: "Ce guide fournit des instructions générales pour l'installation d'OVHcloud Backint Agent pour SAP HANA et son utilisation"
-updated: 2024-01-25
+updated: 2024-02-15
 ---
 
 ## Objectif
@@ -224,7 +224,19 @@ Ces deux fichiers se trouvent dans le répertoire `/usr/sap/<SID>/HDB<NI>/<hostn
 Le fichier `backint.log` vous apportera des informations relatives à l'exécution d'OVHcloud Backint Agent, comme par exemple un problème de permissions sur le bucket Object Storage S3 :
 
 ```log
-botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied.
+2024-02-08 14:10:41.266 backint started:
+  command: /usr/sap/HDB/SYS/global/hdb/opt/hdbbackint -f backup -p /usr/sap/HDB/SYS/global/hdb/opt/hdbbackint.cfg -i /var/tmp/hdbbackint_HDB.kwu3jY -o /var/tmp/hdbbackint_HDB.N1KX90 -u HDB -s 1707397841205 -c 2 -l COMPLETE
+  pid: 3702
+  input:
+  #SOFTWAREID "backint 1.04" "HANA HDB server 2.00.071.00.1687900751"
+  #PIPE "/usr/sap/HDB/SYS/global/hdb/backint/SYSTEMDB/FULL_BACKUP_databackup_0_1"
+2024-02-08 14:10:41.967 backint terminated:
+  pid: 3702
+  exit code: 1
+  output:
+  exception:
+  exception  1: no.110507  (Backup/Destination/Backint/impl/BackupDestBackint_Executor.cpp:250)
+      Backint exited with exit code 1 instead of 0. console output: Bucket information error in hdbbackint.cfg - 403 Forbidden
 ```
 
 Le fichier `backup.log` vous apportera des informations relatives à l'exécution même de la sauvegarde à travers SAP HANA, sa progression et ses erreurs rencontrées.

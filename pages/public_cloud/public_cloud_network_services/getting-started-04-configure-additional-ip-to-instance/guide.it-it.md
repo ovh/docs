@@ -29,7 +29,7 @@ Potrai configurare indirizzi Additional IP sulle tue istanze, ad esempio se ospi
 
 - un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
 - un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) o un blocco Additional IP
-- un accesso amministratore (root) via SSH o GUI alla tua istanza
+- un accesso amministratore (sudo) via SSH o GUI alla tua istanza
 - conoscenze di base sulle reti e la loro amministrazione
 
 > [!warning]

@@ -18,7 +18,7 @@ Durante la creazione di un'istanza, è possibile configurare una sola chiave SSH
 
 - Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Avere accesso alla tua istanza via SSH come amministratore (root)
+- Avere accesso alla tua istanza via SSH come amministratore (sudo)
 
 ## Procedura
 

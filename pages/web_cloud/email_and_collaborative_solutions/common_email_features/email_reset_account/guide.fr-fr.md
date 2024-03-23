@@ -36,25 +36,25 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 >> Pour vérifier si votre offre MXplan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
 >>
->> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Supprimer le compte`{.action}.<br><br>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Supprimer le compte`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **Emails MXplan nouvelle version**
 >>
 >> Pour vérifier si votre offre MXplan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
 >>
->> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
 >>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
->> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
+>> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
 >> Après la réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).<br><br>
 >>![email](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Cliquez sur `Microsoft`{.action} puis `Exchange`{.action} et choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Réinitialiser`{.action}.<br><br>
+>> Cliquez sur `Microsoft`{.action} puis `Exchange`{.action} et choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser`{.action}.<br><br>
 >> Après la réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange).<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>

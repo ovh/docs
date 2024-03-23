@@ -1,7 +1,7 @@
 ---
 title: "Criar tarefas automatizadas (CRON) no seu alojamento Web"
 excerpt: "Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -118,7 +118,7 @@ A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus par
 |Duração|A duração de execução de uma tarefa é de 60 minutos. Se um script ultrapassar este tempo de execução, será automaticamente interrompido pelo sistema.|
 |Variáveis|Apenas pode definir variáveis num script. Adicioná-las ao URL que chama o script não funcionará (Exemplo: www/jobs/cron.php?variável=value).|
 |Limite de dados|Uma tarefa só pode gerar 5 MB de dados (*stdin/stderr*). Por exemplo, se um script escrever dados num ficheiro .txt, a execução será automaticamente interrompida quando o ficheiro atingir 5 MB.|
-|Scripts que produzem erros|Se um script estiver defeituoso, será automaticamente desativado após 10 tentativas de execução falhadas. Reative-o de forma simples no Painel de configuração. (Clique em `...`{.action} e depois em `Alterar`{.action})|
+|Scripts que produzem erros|Se um script falhar, ele será automaticamente desativado após 10 tentativas de execução com falha. O relatório de erro só será enviado quando as 10 tentativas tiverem falhado.</br>Corrija o script em função do relatório de erro recebido e reative a "tarefa CRON" no painel de configuração (clique em `...`{.action} e em `Alterar`{.action}).|
 |Relatórios de execução|Os relatórios só serão enviados para o endereço eletrónico selecionado uma vez por dia (durante as horas noturnas).|
 
 ### Reparação

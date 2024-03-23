@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your database server'
 excerpt: 'Find out how to configure and optimise your database server'
-updated: 2023-04-24
+updated: 2024-03-20
 ---
 
 ## Objective
@@ -99,7 +99,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 
 #### MySQL and MariaDB instances
 
-- Click on the `Configuration` tab.
+- Click on the `Configuration`{.action} tab.
 
 In the **General configuration of MySQL** box, you will see the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
 
@@ -156,11 +156,26 @@ Make the necessary changes, then click `Confirm`{.action}.
 > Any changes require a restart of the database server.
 > 
 
-#### PostgreSQL instance
+#### PostgreSQL instances
 
-You cannot modify the configuration of a PostgreSQL instance.
+- Click on the `Configuration`{.action} tab.
 
-However, you can enable extensions for your databases. To do this, go to the `Databases` tab, and click on the table icon for your database in the **Extensions** column.
+In the **General PostgreSQL configuration** box, you will find the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages**: Controls the levels of messages to be logged in the server logs. The levels available for a Web Cloud Databases solution are: 
+    - **WARNING**: Provides warning messages about potential problems.
+    - **ERROR**: Sends the error that caused an ongoing order to be cancelled.
+    - **LOG**: Stores information for server administrators.
+    - **FATAL**: Sends the error that caused the current session to end.
+    - **PANIC**: Sends the error that caused all sessions to end.
+
+Each level includes all levels that follow it. The higher the level, the fewer messages are recorded in the server logs.
+
+By default, the value set is **WARNING** because it includes the values **ERROR**, **LOG**, **FATAL**, and **PANIC**.
+
+You can also enable extensions for your databases. To do this, go to the `Databases`{.action} tab, and click on the table icon for your database in the **Extensions** column.
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
@@ -204,33 +219,9 @@ show variables like "version";
 
 ### Logs and metrics
 
-#### Query runtime statistics
+#### Log access
 
-This allows you to view the query execution time on your database server in the last 24 hours.
-
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
-
-Go to the `Metrics` tab for your database server. You will find the graph **Query Execution Time Statistics**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Access to Slow Query logs
-
-> **Definition of slow query log**
-> 
-> These are the queries that take longer to run. The value is set to 1 second on our database servers in the variable **“long_query_time”**.
-
-These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server.
-
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
-
-In the `General information` tab, you will find the **SFTP** section in the **Connection information** box.
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-If this file is empty, you do not have any slow queries.
+To access the logs for your Web Cloud Databases solution, please refer to our guide "[Web Cloud Databases - How to retrieve logs](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitoring the RAM used
 

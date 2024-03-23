@@ -1,14 +1,14 @@
 ---
-title: "Accessing a website’s logs and statistics on a Web Hosting"
-excerpt: "Find out how to review statistics and logs of your websites"
-updated: 2023-11-20
+title: "Web hosting - View website statistics and logs"
+excerpt: "Find out how to view your website's statistics and logs with your web hosting plan"
+updated: 2024-02-28
 ---
 
 ## Objective
 
-Web server logs and website statistics are included in your Web Hosting plan, easily accessible from your OVHcloud Control Panel.
+Access to your website’s logs and statistics is included in your web hosting plan, and is accessible via the OVHcloud Control Panel.
 
-**This guide provides an overview of the available logs and statistics.**
+**Find out how to view your website's statistics and logs with your web hosting plan.**
 
 ## Requirements
 
@@ -17,87 +17,112 @@ Web server logs and website statistics are included in your Web Hosting plan, ea
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned.
+To access the different statistical data and logs on your web hosting plan, perform the following actions:
 
-From `Hosting plans`{.action}, choose the Web Hosting plan concerned and open the `Statistics and logs`{.action} tab.
+1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
+4. Select the web hosting plan concerned.
+5. On the page that appears, click on the `Statistics and logs`{.action} tab.
 
-This tab consists of 3 sections. The first one presents the **statistics**, the second the raw **logs** of your hosting, and the last one is dedicated to the **administration of users** authorised to access the statistics.
+The screen that opens has 4 sections:
 
-![hosting](images/tab.png){.thumbnail}
+- [Website visit statistics](#website-stats): Presents a number of statistics concerning your web hosting plan.
+- [Website logs](#website-logs): Displays raw logs for your web hosting plan.
+- [Infrastructure statistics](#infra-stats): Presents graphical statistics (HTTP and SQL requests, FTP commands, CPU usage, outgoing connections, etc.).
+- [User administration](#admin-user): Displays users who are allowed to access statistics.
 
-### User administration
+![statistics and logs interface](images/tab.png){.thumbnail}
 
-Creating a user will allow someone to access your hosting plan’s statistics without having access to your OVHcloud Control Panel. 
+### Visit statistics <a name="website-stats"></a>
 
-Click the `Create a new user`{.action} button in the `User Administration` section and follow the instructions as shown below.  
+To better monitor and manage traffic for your websites, you can use **OVHcloud Web Statistics**, a tool for statistics on visits to and audience measurement of your websites hosted on your web hosting plan.
 
-![hosting](images/create-a-new-user.png){.thumbnail}
+![ows dashboard](images/ows-presentation.gif){.thumbnail}
 
-To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with your hosting cluster number and `mydomain.ovh` with your website's domain name (without "www"):
+The **OVHcloud Web Statistics** dashboard has 7 sections:
 
-```bash
-https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
-```
+- **Dashboard**: Shows traffic on your web hosting plan's websites.
+- **Browsers**: Ranking of the most frequently used web browsers for browsing your websites.
+- **Geolocation**: Proportion of visitors depending on their location.
+- **Requests**: Ranking of the most visited pages on your websites.
+- **Robots**: Lists the robots that pass through your sites.
+- **Status**: Failure and success statistics based on HTTP codes returned.
+- **FAQ**: Section dedicated to the most common questions, also explains technical terms that you may encounter in the tool.
 
-In the `Statistics and logs`{.action} section, click `View statistics`{.action}.<br>
-From the tab of your browser that displays the statistics window, retrieve the link that will be used to log in with one of the users you have created.
+The `Period selection` field in the top right-hand corner allows you to select a specific period.
 
-![hosting](images/view-statistics.png){.thumbnail}
+### Website logs <a name="website-logs"></a>
 
-> [!warning] 
+> [primary]
 >
-> If you have enabled separate logs on a [multisite entry](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
+> We will not be able to assist you in interpreting your web hosting plan’s logs, as this is strictly a web development issue not related to web hosting plans.
+>
+> Do not hesitate to contact a [specialist provider](https://partner.ovhcloud.com/asia/directory/) if you experience any difficulties.
 >
 
-### Visit statistics
+You can view your website’s raw logs with a delay of around 5 minutes.
 
-The **OVHcloud Web Statistics** tool helps you to track and control the traffic of websites hosted on your Web Hosting plan, by visually compiling statistics of page visits and audience measurement.
-
-![hosting](images/ows-presentation.gif){.thumbnail}
-
-The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left-hand panel.
-
-- Dashboard: Visualises the website traffic on your Web Hosting plan.
-- Browsers: Shows a ranking of the most used internet browsers to view your sites.
-- Geolocalization: Groups site visitors according to their location.
-- Requests: Displays the ranking of the most visited pages on your sites.
-- Robots: Visualises the automated attempts to connect to your sites.
-- Status: Displays statistics of the failures and successes encountered, based on the HTTP codes returned.
-- FAQ: Opens the section dedicated to frequently asked questions.
-
-The `Period selection` box allows you to select a specific time frame.
-
-### Logs
-
-You can view the raw logs of your site with a delay of about 5 minutes.
-
-![hosting](images/osl-statistics-board.png){.thumbnail}
+![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
 
 Different types of logs are available:
 
-- **web**: Here you can find the various logs of your site visits, as well as the outgoing actions from your site. For example, this allows you to detect malicious access attempts.
-- **ftp**: The different FTP connections will be stored in these logs.
-- **error**: These logs contain the errors generated by your site.
-- **cgi**: These logs collect the various calls to the cgi.bin scripts that were made.
-- **out**: These are the external calls of your hosting.
-- **ssh**: These logs indicate the different connections made with the SSH protocol.
-- **cron**: The results of executing your [scheduled tasks](/pages/web_cloud/web_hosting/cron_tasks) are logged here.
+- **Web**: Contain the different logs for visits to your website, as well as the different actions taken on your website. For example, you can use it to detect attempts at malicious actions.
+- **FTP**: The different connections/commands in FTP will be recorded and stored in these logs.
+- **Error**: Find the errors generated by your website here.
+- **CGI**: The various calls to cgi.bin scripts that have been made are recorded in these logs.
+- **out**: Contain the history of various external requests (TCP outgoing connections) made from your web hosting plan to remote hosts.
+- **SSH**: These logs show the different connections/commands made with the SSH protocol.
+- **CRON**: Find here the results of the execution of your scheduled tasks [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) on your web hosting plan.
 
-### Hosting activity
+### Infrastructure statistics <a name="infra-stats"></a>
 
-In this section you can view your Web Hosting plan’s infrastructure activity as well as the resource usage.
+In this section, you can view the activity of your Web Hosting plan’s infrastructure, in order to view resource usage.
 
-Switch to the `General information`{.action} tab, then scroll to the bottom of the page.
+![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
 
-![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
+Different types of charts can be displayed from the drop-down menu on the top left:
 
-You can display different types of graphics from the drop-down menu in the top left-hand corner:
+- **FTP commands**: Indicates the main commands (upload, download, login, delete) carried out using the FTP protocol on your web hosting plan.
+- **HTTP requests**: Specifies the number and return code of HTTP requests executed on your Web Hosting plan, separated into the different HTTP codes (2xx/3xx, 4xx and 5xx). If you need to, you can find the list of HTTP codes and their meanings by searching directly via a search engine (Google, Yahoo!, bing, etc.).
+- **Outbound connections**: Requests made from your website to an external website.
+- **CPU usage**: The level of CPU consumption on your web hosting instance.
+- **Exceeding the resource threshold**: Specifies when your Web Hosting plan exceeds its quota of resources.
+- **SQL requests**: Quantity of queries to the databases on your Web Hosting plan.
+- **SQL response time**: The response time of requests sent to the databases on your Web Hosting plan.
 
-- Outbound connections: Requests sent from your website to an external website.
-- CPU usage: The level of processor consumption on your hosting instance.
-- Exceeding the resource threshold: Indicates when your hosting exceeds its resource quota.
-- SQL requests: Quantity of requests to your hosting database.
-- SQL response time: Response time of requests sent to your hosting database.
+### User administration <a name="admin-user"></a>
+
+Creating a user will allow someone to access your web hosting plan’s statistics without having access to the OVHcloud Control Panel.
+
+In the `User administration`{.action} section, click `Create a new user`{.action} , then follow the instructions to finish creating a new user.
+
+![create a new user](images/create-a-new-user.png){.thumbnail}
+
+To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with the cluster number of your web hosting plan and `domain.tld` with the domain name of your website (without `www`):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/domain.tld/
+```
+
+You can also access the statistics/logs link directly from your Control Panel:
+
+1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
+4. Select the web hosting plan concerned.
+5. On the page that appears, click on the `Statistics and logs`{.action} tab.
+6. Go to `Website visit statistics`{.action}.
+7. Choose the `View Statistics`{.action} button.
+
+![website visit statistics](images/view-statistics.png){.thumbnail}
+
+On the new page that pops up, retrieve the URL located in the address bar of your web browser.
+
+> [!warning]
+>
+> If you have enabled separate logs on a [multisite entry](/pages/web_cloud/web_hosting/multisites_configure_multisite), users created here cannot access statistics for that specific multisite entry.
+>
 
 ## Go further
 

@@ -21,7 +21,7 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 ## Prérequis
 
 - Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec un RAID matériel.
-- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 ## En pratique
 
@@ -29,7 +29,7 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 
 Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
-Recherchez « Dernier système d'exploitation (OS) installé par OVHcloud » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Installer`{.action} pour installer un nouveau système d'exploitation avec votre configuration RAID 0 personnalisée.
+Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
 Sélectionnez **Installer à partir d'un template OVH** puis cliquez sur `Suivant`{.action}.
 
@@ -58,8 +58,6 @@ Une fois votre serveur configuré, vérifiez la taille des partitions en vous y 
 ```sh
 df -h
 ```
-
-```console```
 
 ### Utiliser le mode rescue
 

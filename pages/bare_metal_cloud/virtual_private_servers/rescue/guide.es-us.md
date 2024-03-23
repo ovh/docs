@@ -1,7 +1,7 @@
 ---
 title: Activar y utilizar el modo de rescate en un VPS
 excerpt: Descubra cómo utilizar el modo de rescate de OVHcloud para solucionar los problemas de su VPS y realizar comprobaciones del sistema
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -41,10 +41,6 @@ Si experimenta algún problema con el sistema, la realización de comprobaciones
 ## Procedimiento
 
 ### Activación del modo de rescate
-
-> [!warning]
-> Tenga en cuenta que si ha configurado una llave SSH por defecto en su área de cliente, no recibirá una contraseña root cuando reinicie un servidor en modo de rescate. En este caso, deberá desactivar la llave SSH por defecto antes de reiniciar el servidor en modo de rescate. Para ello, consulte la [section](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) de nuestra guía sobre el uso de llaves SSH.
->
 
 Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en la sección `Servidores privados virtuales`{.action}.
 
@@ -108,22 +104,18 @@ En modo rescue, `sda` es el disco en modo rescue y `sda1` es la partición de se
 
 En este ejemplo, el disco principal del VPS es `sdb` y la partición del sistema es `sdb1` (indicada por el tamaño).
 
-Monte esta partición con los siguientes comandos:
+Monte esta partición con el siguiente comando:
 
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Ya puede acceder a sus archivos desde el punto de montaje `/mnt/sdb1`:
+Ya puede acceder a sus archivos desde el punto de montaje `/mnt`:
 
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -139,7 +131,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Sin embargo, antes de poder manipular esta partición, debe abrirla para acceso de escritura, lo que puede hacer con el siguiente comando:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 Ahora puede aplicar cambios al sistema, por ejemplo, [restablecer contraseñas de usuario y claves SSH](#gofurther).
@@ -160,6 +152,8 @@ Si se produce un error al reiniciar un VPS, siga estos pasos:
 ## Más información
 
 [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Recuperar el acceso al servidor en caso de pérdida de la contraseña de usuario](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Sustituir un par de claves SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

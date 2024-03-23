@@ -17,7 +17,7 @@ Eseguire un test della velocità dei tuoi dischi è necessario per confrontare l
 ## Prerequisiti
 
 - Disporre di una [istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}
-- Avere accesso amministrativo (root) a questa istanza via SSH (solo per Linux)
+- Avere accesso amministrativo (sudo) a questa istanza via SSH (solo per Linux)
 
 ## Procedura
 
@@ -27,16 +27,16 @@ Il comando necessario per verificare la velocità del disco si chiama `fio` Non 
 
 Per installare `fio`, connettiti all'istanza in SSH ed esegui il comando:
 
-```
-root@server:~$ apt-get install fio
+```bash
+apt install fio
 ```
 
 ### Testare la velocità del disco
 
 Esegui il test dei tuoi dischi con questo comando:
 
-```
-root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --fsync=32 --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```bash
+fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
@@ -48,15 +48,15 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 
 Per testare le performance di un disco aggiuntivo, è necessario cambiare la directory del tuo ambiente di lavoro.
 
-```
-root@server:~$ cd /mnt/disk
+```bash
+cd /mnt/disk
 ```
 
 ### Analizzare i dati
 
 Il comando restituisce un risultato di questo tipo:
 
-```
+```console
 fio-2.1.11
 Starting 1 process
 test: Laying out IO file(s) (1 file(s) / 1024MB)
@@ -92,7 +92,7 @@ vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 
 L'informazione corrispondente agli IOPS è indicata nella riga 6 del risultato:
 
-```
+```console
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 

@@ -17,7 +17,7 @@ Il s’agit généralement de la méthode de connexion la plus sûre et la plus 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
 - Installer au préalable une application client SSH (ligne de commande ou GUI)
-- Disposer d'un accès administrateur (root) via SSH
+- Disposer d'un accès administrateur (sudo) via SSH
 
 > [!primary]
 > Ce guide ne s'applique pas aux installations **Windows Server** standard car elles reposent sur le `Remote Desktop Protocol` (RDP) pour les connexions. Les connexions SSH sont cependant utilisées pour le mode rescue d’OVHcloud. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
@@ -319,6 +319,9 @@ Exemple de contenu de dossier `.ssh` :
 
 ```bash
 ls ~/.ssh/
+```
+
+```console
 config  id_rsa  id_rsa.pub  known_hosts  known_hosts.old
 ```
 

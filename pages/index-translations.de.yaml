@@ -111,6 +111,8 @@ public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operator
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (Harbor)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
+public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
 public-cloud-data-analytics: Data Analytics
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Konzepte

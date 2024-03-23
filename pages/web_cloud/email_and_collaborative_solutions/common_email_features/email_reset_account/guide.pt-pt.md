@@ -40,25 +40,25 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>
 >> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MXplan](#whichmxplan)" deste manual.<br><br>
 >>
->> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da conta a modificar e, a seguir, em `Eliminar conta`{.action}.<br><br>
+>> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Eliminar conta`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **E-mails MXplan nova versão**
 >>
 >> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MXplan](#whichmxplan)" deste manual.<br><br>
 >>
->> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
+>> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
 >>![e-mail](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
->> Clique em `E-mail Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
+>> Clique em `E-mail Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
 >> Após a reinicialização da sua conta, se pretender eliminá-la definitivamente, deverá rescindir a sua conta. Para isso, consulte o nosso guia [Gerir a faturação das contas Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).<br><br>
 >>![email](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Clique em `Microsoft`{.action}, depois `Exchange`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da conta a modificar e, a seguir, em `Reinicializar`{.action}.<br><br>
+>> Clique em `Microsoft`{.action}, depois `Exchange`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar`{.action}.<br><br>
 >> Após a reinicialização da sua conta, se pretender eliminá-la definitivamente, deverá rescindir a sua conta. Para isso, consulte o nosso guia [Gerir a faturação das contas Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange).<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>

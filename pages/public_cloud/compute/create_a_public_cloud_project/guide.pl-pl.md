@@ -1,7 +1,7 @@
 ---
 title: 'Utworzenie pierwszego projekt Public Cloud'
 excerpt: 'Dowiedz się, jak utworzyć pierwszy projekt Public Cloud w Panelu klienta OVHcloud'
-updated: 2021-10-06
+updated: 2024-02-22
 ---
 
 > [!primary]
@@ -20,31 +20,33 @@ Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud]
 
 ## Wskazówki
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), i kliknij menu `Public Cloud`{.action}. Następnie kliknij przycisk `Utwórz Twój pierwszy projekt Public Cloud`{.action}.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), i kliknij menu `Public Cloud`{.action}.
 
-Możesz teraz dodać *voucher*, jeśli go posiadasz. Możesz wykorzystać tylko *voucher* przypisany do Twojego oddziału OVHcloud.
+Zapoznaj się z nimi i zaakceptuj warunki umów, zaznaczając odpowiednie pole, następnie kliknij `Poznaj naszą ofertę Public Cloud`{.action}.
 
-> [!warning]
-> Jeśli utworzyłeś wcześniej na Twoim koncie projekt Public Cloud i usunąłeś go, nie masz uprawnień do korzystania z *voucher*.
+![Tworzenie projektu](images/firstproject2024.png){.thumbnail width="400"}
+
+- Jeśli nie masz jeszcze ważnego sposobu płatności na koncie OVHcloud, rozpoczyna się proces tworzenia projektu Public Cloud. Twój projekt zostanie utworzony w [Tryb Discovery](#discovery).
+- Jeśli masz już na koncie OVHcloud sposób płatności, najpierw nazwij Twój projekt Public Cloud, a następnie wybierz sposób płatności.
+
+![tworzenie projektu](images/project-creation.png){.thumbnail width="400"}
+
+Po zakończeniu procesu tworzenia Twój nowy projekt Public Cloud będzie widoczny w lewym górnym rogu sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud:
+
+![Nowy utworzony projekt](images/public-cloud-interface.png){.thumbnail width="400"}
+
+Od tej pory będziesz miał dostęp do całego ekosystemu Public Cloud OVHcloud. Sprawdź nowy interfejs Panelu klienta. Zapoznaj się z naszym przewodnikiem "[Poznaj interfejs Public Cloud](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)".
+
+<a name="discovery"></a>
+
+> [!primary]
+> **Tryb Discovery**
 >
-
-Nadaj nazwę projektowi, przeczytaj i zaakceptuj regulaminy. Następnie kliknij przycisk `Kontynuuj`{.action}.
-
-![name project](images/confirmvoucher.png){.thumbnail}
-
-Następnie zostaniesz poproszony o **zarejestrowanie sposób płatności**, jeśli jeszcze go nie posiadasz. Będzie to wymagane nawet po zastosowaniu *voucher*.
-
-Wybierz sposób płatności, a następnie kliknij przycisk `Utwórz projekt`{.action}
-
-![add payment method](images/pci-project-03b_2020.png){.thumbnail}
-
-Następnie rozpocznie się tworzenie projekt:
-
-![create project](images/creatingproject.png){.thumbnail}
-
-Po zakończeniu operacji nowy projekt Public Cloud będzie dostępny w sekcji `Public Cloud`{.action} w Panelu klienta OVHcloud:
-
-![new project created](images/newprojectcreated.png){.thumbnail}
+> Jeśli jest to Twój pierwszy projekt Public Cloud i nie wskazałeś sposobu płatności na Twoim koncie, Twój projekt Public Cloud zostanie ograniczony do `Trybu Discovery` w Panelu klienta OVHcloud. Oznacza to, że możesz przeglądać i odkrywać produkty Public Cloud, ale nie możesz jeszcze tworzyć zasobów, takich jak instancje.
+>
+> Aby w pełni wykorzystać potencjał Public Cloud i uruchomić pierwsze zasoby, kliknij przycisk `Aktywuj projekt`{.action} na stronie głównej projektu.
+>
+> ![Włącz projekt](images/activate-project.png){.thumbnail width="400"}
 
 ## Sprawdź również
 

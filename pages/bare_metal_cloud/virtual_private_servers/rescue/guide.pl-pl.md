@@ -1,7 +1,7 @@
 ---
 title: Uruchamianie i korzystanie z trybu Rescue na serwerze VPS
 excerpt: Dowiedz się, jak używać trybu Rescue OVHcloud do rozwiązywania problemów z serwerem VPS i przeprowadzania weryfikacji systemu
-updated: 2024-01-23
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -41,10 +41,6 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 ## W praktyce
 
 ### Aktywacja trybu Rescue
-
-> [!warning]
-> Pamiętaj, że jeśli w Panelu klienta ustawiłeś domyślny klucz SSH, nie otrzymasz hasła root podczas restartu serwera w trybie Rescue. W takim przypadku należy najpierw zdezaktywować domyślny klucz SSH przed zrestartowaniem serwera w trybie rescue. W tym celu zapoznaj się z [sekcją](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) naszego przewodnika dotyczącego korzystania z kluczy SSH.
->
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
 
@@ -108,21 +104,17 @@ W trybie rescue `sda` to dysk w trybie rescue i `sda1` to główna partycja zapa
 
 W tym przykładzie głównym dyskiem VPS jest `sdb`, a partycja systemowa to `sdb1` (określana przez rozmiar).
 
-Zamontuj tę partycję za pomocą następujących poleceń:
+Zamontuj tę partycję za pomocą polecenia:
 
 ```bash
-mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/
 ```
 
-```bash
-mount /dev/sdb1 /mnt/sdb1
-```
-
-Twoje pliki są teraz dostępne z punktu montowania `/mnt/sdb1`:
+Twoje pliki są teraz dostępne z punktu montowania `/mnt`:
 
 
 ```bash
-cd /mnt/sdb1
+cd /mnt
 ```
 
 ```bash
@@ -138,7 +130,7 @@ bin  boot  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  op
 Zanim jednak będziesz mógł obsłużyć tę partycję, musisz ją otworzyć, aby uzyskać dostęp do zapisu. Możesz to zrobić za pomocą polecenia:
 
 ```bash
-chroot /mnt/sdb1/
+chroot /mnt
 ```
 
 Możesz teraz zastosować zmiany w systemie, na przykład [zresetować hasła użytkownika i klucze SSH](#gofurther).
@@ -159,6 +151,8 @@ Jeśli podczas restartu serwera VPS wystąpi błąd, wykonaj następujące kroki
 ## Sprawdź również
 
 [Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 [Zastąp parę kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 

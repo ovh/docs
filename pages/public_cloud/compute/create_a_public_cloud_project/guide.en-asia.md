@@ -1,7 +1,7 @@
 ---
 title: 'Creating your first OVHcloud Public Cloud project'
 excerpt: 'Find out how to create your first Public Cloud project via the OVHcloud Control Panel'
-updated: 2021-10-06
+updated: 2024-02-22
 ---
 
 ## Objective
@@ -16,31 +16,33 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and click on `Create your first OVH Public Cloud project`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and go to the `Public Cloud`{.action} section.
 
-You can now add a voucher if you have one. Only a voucher provided for your OVHcloud branch can be used.
+Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}.
 
-> [!warning]
-> If you had previously created a Public Cloud project in your account and deleted it, you do not qualify to use the voucher.
+![project creation](images/firstproject2024.png){.thumbnail width="400"}
+
+- If you do not have a valid payment method in your OVHcloud account yet, the process of creating the Public Cloud project begins. Your project will then be created in [discovery mode](#discovery).
+- If you have already registered a payment method in your OVHcloud account, you will need to name your Public Cloud project first, then select your payment method.
+
+![project creation](images/project-creation.png){.thumbnail width="400"}
+
+Once the creation process is complete, your new Public Cloud project will be visible in the top left-hand corner of the `Public Cloud`{.action} section of the OVHcloud Control Panel:
+
+![new project created](images/public-cloud-interface.png){.thumbnail width="400"}
+
+You now have access to the entire OVHcloud Public Cloud ecosystem. To discover this new interface, read our guide [Familiarise yourself with the Public Cloud interface ](/pages/public_cloud/compute/03-public-cloud-interface-walk-me).
+
+<a name="discovery"></a>
+
+> [!primary]
+> **Discovery Mode**
 >
-
-Give your project a name, read and accept the contracts, and then click on the `Continue`{.action} button.
-
-![name project](images/confirmvoucher.png){.thumbnail}
-
-Next, you will be prompted to **Register a payment method** if you do not have one already. This will be requested even if a voucher is applied.
-
-Select a payment method and then click on `Create my project`{.action}
-
-![add card](images/pci-project-03b_2020.png){.thumbnail}
-
-Once done, the project creation will begin:
-
-![creating project](images/creatingproject.png){.thumbnail}
-
-Once the process is complete, your new Public Cloud project will be available in the `Public Cloud`{.action} section in your OVHcloud Control Panel:
-
-![new project created](images/newprojectcreated.png){.thumbnail}
+> If this is your first Public Cloud project and you have not entered a payment method in your account, your Public Cloud project is then restricted to the `discovery mode` of the OVHcloud Control Panel. This means that you can browse and discover Public Cloud products, but you cannot yet create resources such as instances.
+>
+> To harness the full potential of the Public Cloud and start your first resources, click `Activate project`{.action} on your project’s homepage.
+>
+>![activate project](images/activate-project.png){.thumbnail width="400"}
 
 ## Go further
 

@@ -1,10 +1,6 @@
 ---
 title: 'Tutoriel - Utiliser une ligne SIP OVHcloud sur un softphone'
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone tel que Linphone ou Zoiper'
-kb: Web Cloud
-category_l1: Phone and Fax
-category_l2: VoIP
-category_l3: Tutorials
 updated: 2022-03-31
 ---
 

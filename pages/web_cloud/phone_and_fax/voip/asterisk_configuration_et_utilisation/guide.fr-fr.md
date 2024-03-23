@@ -1,6 +1,7 @@
 ---
 title: 'Asterisk - configuration et utilisation'
 updated: 2018-03-26
+flag: hidden
 ---
 
 > [!warning]

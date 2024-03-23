@@ -24,7 +24,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 > [!warning]
 >
-> As any classical OS installation, a new installation with BYOI will erase all the data on the server.
+> As with any classical OS installation, a new installation with BYOI will erase all the data on the server.
 >
 
 ## Instructions
@@ -58,7 +58,7 @@ In the `General information`{.action} tab, click the `...`{.action} button next 
 
 ![BringYourOwnImage Control Panel 01](images/byoi-controlpanel01.png){.thumbnail}
 
-In the window that appears, select `Install from OVHcloud template`{.action} and click `Next`{.action}.
+In the window that appears, select `Install from an OVHcloud template`{.action} and click `Next`{.action}.
 
 ![BringYourOwnImage Control Panel 02](images/byoi-controlpanel02.png){.thumbnail}
 
@@ -76,7 +76,7 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
-Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+Log in to the [API console](https://ca.api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
 > [!api]
 >
@@ -168,6 +168,8 @@ Here are some results you might have:
 | Could not create configdrive on disk. | Impossible to create config-drive partition. |
 
 ## Go further
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 

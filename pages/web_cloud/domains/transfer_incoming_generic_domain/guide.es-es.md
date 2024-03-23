@@ -1,7 +1,7 @@
 ---
 title: 'Transferir un dominio a OVHcloud'
 excerpt: 'Descubra cómo realizar la transferencia de un dominio a OVHcloud'
-updated: 2024-01-22
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -52,17 +52,17 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 |Etapa|Descripción|Quién realiza la acción|Dónde|Plazo|
 |---|---|---|---|---|
-|1|Comprobar la información relativa al dominio|El administrador del dominio|En el actual agente registrador|-|
-|2|Desbloquear el dominio y obtener el código de transferencia|El administrador del dominio, con la autorización del propietario|En el actual agente registrador|-|
-|3|Solicitar la transferencia del dominio|Cualquiera que posea el código de transferencia, también con el permiso del propietario|Con el nuevo agente registrador (por ejemplo, OVHcloud)|-|
-|4|Validación de la transferencia|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
+|[1](#step1)|[Comprobar la información relativa al dominio](#step1)|El administrador del dominio|En el actual agente registrador|Depende de sus acciones|
+|[2](#step2)|[Desbloquear el dominio y obtener el código de transferencia](#step2)|El administrador del dominio, con la autorización del propietario|En el actual agente registrador|Depende de sus acciones|
+|[3](#step3)|[Solicitar la transferencia del dominio](#step3)|Cualquiera que posea el código de transferencia, también con el permiso del propietario|Con el nuevo agente registrador (por ejemplo, OVHcloud)|Depende de sus acciones|
+|[4](#step4)|[Validación de la transferencia](#step4)|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
 
 > [!warning]
 >
 > El procedimiento exacto de transferencia de dominio puede variar, especialmente en el caso de determinados **TLD** de código de país (**ccTLD**, como .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) y de algunos **TLD** especiales (.am, .fm, etc.). Según la extensión del dominio, es posible que sea necesario cumplir requisitos adicionales. Le recomendamos que compruebe en primer lugar la información mostrada para la extensión en cuestión, en nuestro sitio web: <https://www.ovhcloud.com/es-es/domains/tld/>.
 >
 
-### 1. Comprobar la información relativa al dominio
+### 1. Comprobar la información relativa al dominio <a name="step1"></a>
 
 **En primer lugar, es importante comprobar que la información relativa al dominio esté actualizada.** Desde la introducción del RGPD, los datos visibles en el ["Whois"](https://www.ovhcloud.com/es-es/domains/whois/) se han vuelto muy limitados. Por lo tanto, le recomendamos que consulte la información relativa al dominio en su agente registrador actual.
 
@@ -75,7 +75,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 > Si no sabe qué agente registrador es responsable del dominio, las líneas Registrar, que aparecerán en el resultado de la búsqueda de la [herramienta Whois](https://www.ovhcloud.com/es-es/domains/whois/){.external}, le facilitarán información sobre su identidad.
 >
 
-### 2. Desbloquear el dominio y obtener el código de transferencia
+### 2. Desbloquear el dominio y obtener el código de transferencia <a name="step2"></a>
 
 Una vez que haya comprobado la información, es necesario desbloquear el dominio. Esta operación solo puede realizarse en el actual agente registrador. Por lo tanto, le invitamos a que se ponga en contacto con él para conocer el procedimiento que este haya establecido.
 
@@ -88,7 +88,7 @@ Tenga en cuenta que OVHcloud no es el agente registrador del dominio al iniciar 
 > Una vez desbloqueado el dominio, tendrá 7 (7) días para realizar la transferencia a OVHcloud. Después de este período, el dominio se bloqueará automáticamente si no solicita la modificación del agente registrador.
 >
 
-### 3. solicitar la transferencia del dominio a OVHcloud
+### 3. solicitar la transferencia del dominio a OVHcloud <a name="step3"></a>
 
 Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](https://www.ovhcloud.com/es-es/domains/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
@@ -127,7 +127,7 @@ Una vez validado el pedido, recibirá una orden de pedido. La transferencia no s
 >
 > Si el código de transferencia no se ha introducido durante el pedido, podrá introducirlo en la ventana `Operaciones en curso`{.action} para validar la transferencia.
 
-### 4. validación de la transferencia por el actual agente registrador
+### 4. validación de la transferencia por el actual agente registrador <a name="step4"></a>
 
 Una vez validados el pedido y el código de transferencia, el actual agente registrador (que todavía no es OVHcloud) recibirá una solicitud de validación. Aquí también pueden darse varias situaciones.
 

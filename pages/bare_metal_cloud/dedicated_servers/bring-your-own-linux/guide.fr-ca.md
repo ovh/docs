@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2024-02-02
+updated: 2024-02-14
 ---
 
 ## Objectif
@@ -21,6 +21,7 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (pour la méthode de [déploiement via l'espace client](#viacontrolpanel) de ce guide)
 - Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) de ce guide)
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio
+- Un script `/root/.ovh/make_image_bootable.sh` exécutable, qui installera ou configurera le bootloader, [par exemple GRUB](https://github.com/ovh/bringyourownlinux/blob/main/example_build/files/make_image_bootable.sh)
 
 > [!warning]
 >
@@ -36,6 +37,7 @@ Certaines limites techniques sont liées à l’utilisation de produits physique
 - Type de démarrage : **uefi** ou **legacy**
 - Type de partition : **MBR** ou **GPT**
 - Format de l'image : **qcow2**
+- Une seule partition dans l'image qcow2
 
 **Méthodes de déploiement :**
 
@@ -68,7 +70,7 @@ Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consulte
 
 ### Déploiement de votre image via les API <a name="viaapi"></a>
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
+Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
 
 > [!api]
 >
@@ -143,6 +145,8 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 ## Aller plus loin
 
 [Bring Your Own Linux (BYOLinux) - Version détaillée](https://github.com/ovh/BringYourOwnLinux)
+
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 [API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 

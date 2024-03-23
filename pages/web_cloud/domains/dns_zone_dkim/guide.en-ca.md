@@ -1,7 +1,7 @@
 ---
 title: Configuring a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -29,7 +29,7 @@ updated: 2023-09-07
 
 ## Objective
 
-The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign emails to prevent identity theft. This signature works on the principle of hashing combined with asymmetric cryptography.
+The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign emails to prevent identity fraud. This signature works on the principle of hashing combined with asymmetric cryptography.
 
 **This guide explains how DKIM works, and how to set it up for your email service.**
 
@@ -138,7 +138,7 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ### Configuring DKIM automatically for an OVHcloud Exchange solution <a name="auto-dkim"></a>
 
-The automatic configuration of DKIM is accessible for the email solutions [Exchange](https://www.ovhcloud.com/en-gb/emails/).
+The automatic configuration of DKIM is accessible for the email [Exchange](https://www.ovhcloud.com/en-ca/emails/) solutions.
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
@@ -180,7 +180,7 @@ Also, make sure that the domain name you want to use for your emails is active i
 
 ![email](images/dns-dkim-domain.png){.thumbnail}
 
-To configure DKIM, go to the website <https://api.ovh.com/console/>, log in using the `Login`{.action} button in the top right-hand corner, and enter your OVHcloud credentials.
+To configure DKIM, go to the website <https://ca.api.ovh.com/console/>, log in using the `Login`{.action} button in the top right-hand corner, and enter your OVHcloud credentials.
 
 > Visit our guide ["First Steps with the OVHcloud APIs"](/pages/manage_and_operate/api/first-steps) if you have never used APIs.
 
@@ -340,7 +340,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!success]
 >> >
->> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**Different DKIM states**](#dkim-status) section of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.<br><br> **If you have created two selectors**, the second selector should have the `status:` value `ready`.
+>> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the section [**The different states of DKIM**](#dkim-status) of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.<br><br> **If you have created two selectors**, the second selector should have the `status:` value `ready`.
 >>
 
 #### The different states of DKIM <a name="dkim-status"></a>

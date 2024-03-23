@@ -1,6 +1,6 @@
 ---
 title: "OVHcloud products ISO27k certifications"
-updated: 2023-12-20
+updated: 2024-02-20
 ---
 
 ## Objective
@@ -24,29 +24,30 @@ We monitor the new versions of ISO27017, ISO27018 and ISO27701 actually under re
 | --- | ---  | 
 | Dedicated Server | yes | 
 | Nutanix on OVHcloud | yes | 
-| Enterprise File Storage | yes | 
+| File Storage | yes | 
 | Block Storage | yes | 
-| VMware on OVHcloud | yes | 
+| Managed Private Cloud | yes | 
 | Private Cloud SecNumCloud | yes | 
 | NAS-HA | yes | 
-| OpenStack Instances | yes | 
+| Public Cloud Instances | yes | 
 | AI Deploy | yes | 
 | AI Notebooks | yes | 
 | AI Training | yes | 
 | Data Processing | yes | 
 | Kubernetes | yes |
-| Search engine software platform | ETA : 01/2024 | 
-| Timeseries | ETA : 01/2024 |
-| NoSQL Database | MongoDB: yes <br>Others: ETA: 01/2024 | 
-| Relational Database | ETA : 01/2024 | 
-| Message broker | ETA : 01/2024 | 
+| Search engine software platform | yes | 
+| Timeseries | yes |
+| In Memory Database | yes|
+| Document Database | yes| 
+| Relational Database | yes | 
+| Message broker | yes | 
 | Object Storage | yes | 
 | Private Registry | yes | 
-| Cold Storage | ETA : 01/2024 | 
+| Cold Storage | yes | 
 | Logs Data Platform | yes | 
-| Grafana | ETA : 01/2024 | 
+| Grafana | yes | 
 | Web Hosting | no | 
-| Platform.sh | no | 
+| DevOps platform | no | 
 | Emails on mutualized infrastructures | no |
 | Emails on private infrastructures | yes | 
 | Web Cloud Private Database | no | 

@@ -1,180 +1,208 @@
 ---
-title: "Getting started with a Web Hosting plan"
-excerpt: "Find out how to build your website and to set up your email addresses"
-updated: 2023-12-15
+title: "Web Hosting - How to get started in a few steps"
+excerpt: "Find out how to link your domain name, put your website online and create email addresses with your web hosting plan"
+updated: 2024-02-13
 ---
 
 ## Objective
 
-This guide is designed for customers who have just purchased a Web Hosting plan to build and host a website. With your Web Hosting plan, you can set up a website using a turn-key solution (WordPress, PrestaShop), or develop your own platform on permanently available servers. This guide will help you get started with building your website. Thank you for choosing OVHcloud.
+OVHcloud offers [several web hosting plans](https://www.ovhcloud.com/asia/web-hosting/). They are designed for different use cases:
 
-**This guide explains how to build your website and to set up your email addresses.**
+- Get started on the web.
+- Quickly create a website (professional or not), a blog, a **C**ontent **M**anagement **S**ystem (**CMS**) such as *WordPress*, *Joomla!*, *PrestaShop* or *Drupal*, or an online store.
+- Customize one or more email addresses with the domain name you want to use for your website.
+- Manage multiple websites on a single web hosting plan.
+- Configure one or more databases ([included with some of our web hosting plans](https://www.ovhcloud.com/asia/web-hosting/)).
+- etc.
+
+These solutions spare you the hassle of maintaining, updating, and securing a web hosting infrastructure.<br>
+This saves you time on server administration and allows you to focus only on:
+
+- Developing, updating and securing a website, blog, CMS or online store.
+- Security and optimization for one or more databases, if your solution has one.
+- The configuration and management of your email accounts included with your web hosting plan.
+
+**Find out how to link your domain name, put your website online, and create one or more email addresses with your web hosting plan.**
 
 ## Requirements
 
 - You have ordered an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}.
 - You have received an email confirming that your Web Hosting plan has been set up.
-- You have a [domain name](https://www.ovhcloud.com/asia/domains/){.external} that can be used to access your website.
+- You have a [domain name](https://www.ovhcloud.com/asia/domains/).
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
 ## Instructions
 
-> [!success]
->
-> Before reading this guide any further, please ensure that the domain or subdomain you would like to use is correctly associated with your OVHcloud web hosting plan. To do this, please refer to our guide on "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
->
+The purpose of this guide is to show you the main actions you can take with our [web hosting](https://www.ovhcloud.com/asia/web-hosting/) solutions. 
+Each of these actions will be accompanied by one or more links to specific guides (relevant to the action).
 
-### Step 1: Define your project
+You can use this guide as a "repository" of possible actions when you subscribe to your [web hosting](https://www.ovhcloud.com/asia/web-hosting/) offer and throughout its use.
 
-Are you looking to create a blog, or an online store? Do you want to share your passion, or boost your company’s online profile? Or do you want to migrate an existing website to OVHcloud? To ensure that your project is a success, it is important to have a clear idea of your objective.
-
-With your OVHcloud Web Hosting plan, you can build a website from scratch, or migrate an existing one.
-
-- **Building a new website**
-
-You can either build your website manually, using your own programming skills, or you can use turn-key tools like Content Management Systems (CMSs). The first method requires more technical skills, but gives you total flexibility when ti comes to customising your project. The second method provides you with a ready-to-use website structure, and doesn’t require technical knowledge.
-
-In the Control Panel, OVHcloud provides a tool that allows you to install a CMS in one click. The choices available are WordPress, PrestaShop, Drupal and Joomla!. Not sure which CMS to use? You can use this [comparison page](https://www.ovhcloud.com/asia/web-hosting/uc-cms-comparison/){.external} to help you decide which one is best for you. If the CMS you want to use is not offered by OVHcloud, you can install it manually on your Web Hosting plan.
-
-- **Migrating an existing website to OVHcloud**
-
-Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
-
-### Step 2: Set up your website
-
-Once you have clearly defined your project, you just have to build it on your Web Hosting plan. The following steps will take you through how to put your website online. There are three ways to do this, depending on the amount of time and technical knowledge you have.
-
-#### Using OVHcloud 1-click modules – no technical skills required
-
-This solution uses OVHcloud 1-click modules, a tool you can use to install a CMS quickly and easily. OVHcloud sets up your website, and provides you with your admin credentials.
-
-To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
-
-![Access to 1-click modules](images/tab.png){.thumbnail}
-
-Finally, to begin installing the 1-click module, select the CMS you want to install, select the domain you would like to set up your website on, check that the `Install in advanced mode`{.action} box is not ticked, and click the `Install`{.action} button.
-
-At this stage, you will need to wait a few minutes to receive an email confirming that the module has been installed. This email will also contain the details required to log in to your website as an admin. You can then follow the remaining steps below.
-
-If you need more information on OVHcloud 1-click modules, please read our documentation: [Installing your website with a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
-
-#### A quick solution in just a few clicks – no technical knowledge required
-
-This solution uses OVHcloud modules, a tool you can use to install a CMS easily. OVHcloud sets up your website using the custom information you have entered (the custom credentials for logging in to your CMS, for example). To use this method, you will need to have a least one database in your solution.
-
-To ensure that the OVHcloud module installation is successful, please check that:
-
-- The module’s installation directory is empty (which should be the case if you have not connected to your storage space yet).
-- You have already created a database in your Web Hosting plan.
-
-To create the database, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the name of the Web Hosting plan concerned.
-
-In the `Databases`{.action} tab, there are two possible scenarios: 
-
-- **You have at least one database available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table, then on the `Create a database`{.action} button.
-
-![Access to 1-click modules](images/create-a-database.png){.thumbnail}
-
-- **You no longer have any databases available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table. You can choose to:
-    - Order a [Start SQL](https://www.ovhcloud.com/asia/web-hosting/options/start-sql/) database in addition to the databases included with your web hosting plan. To do this, click the `Actions`{.action} button above the table, then the `Order a database`{.action} button.
-    - Order a [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) database server. To do this, click the `Actions`{.action} button above the table, then the `Order a Web Cloud Databases`{.action} button. Then refer to our guide on [Getting started with your Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) to create a database with this solution.
-
-Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, tick the option `Install in advanced mode`{.action}, then click `Next`{.action}.
-
-![Access to 1-click modules](images/tab.png){.thumbnail}
-
-Enter the information requested to launch the module installation. Once you have done this, please wait a few minutes until you receive an email confirming that the installation has been successful. You can then follow the remaining steps below.
-
-If you need more details on installing a module in advanced mode, please read our documentation: [Installing your website with a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
-
-#### Manual installation – technical knowledge required
-
-This solution is useful if you want to create or migrate a website without using OVHcloud modules. You must have the website files that you want to install. You will need to [log in to your FTP storage space manually](/pages/web_cloud/web_hosting/ftp_connection) to upload your website files to it, then if possible, link the website to a database you have created beforehand.
-
-> [!success]
->
-> If you have forgotten the password for accessing your FTP storage space, change it using our guide “[Changing an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)”.
+> [!primary]
+> 
+> For the purposes of this guide, the term “website” will now refer to all types of website (website, blog, CMS, online store, etc.) mentioned earlier in this guide.
 >
 
-As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online). Once you have set up your website in this way, follow the remaining steps below.
+**Contents:**
 
-### Step 3: Create your email addresses
+- [Step 1 - Define your project](#project-delimitation)
+- [Step 2 - Install your website](#website-installation)
+- [Step 3 - Create your email addresses (optional)](#email-creation)
+- [Step 4 - Verify and/or modify your domain name’s configuration](#domain-configuration)
+- [Step 5 - Other options available with web hosting plans](#other-options)
 
-This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
+### Step 1 - Define your project <a name="project-delimitation"></a>
 
-![Create an email address](images/create-an-email-address.png){.thumbnail}
+Before you begin, it’s essential to clearly identify and define your needs by asking yourself the following questions: 
 
-Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVH Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
+- Do I need to **create** a website or **migrate** one from another hosting provider?
+- Do I need one or more databases to run my website?
+- Do I need one or more custom email addresses with my domain name?
 
-If you need more information on creating an email address, please refer to our documentation: [How to set up an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}.
+Depending on your answers, please ensure that your [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) meets all of your needs before you proceed.
 
-### Step 4: Check or modify your domain configuration
+If this is not the case, please refer to our guide on "[Web Hosting: How to change your solution?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
-At this stage, your website must be installed on your OVHcloud Web Hosting plan, and your email addresses must be created. Your email addresses may not work if your domain name is not correctly configured. This is linked to the DNS records that keep your website accessible, and allow you to receive emails via the email addresses that use your domain name.
+### Step 2 - Install your website <a name="website-installation"></a>
 
-For example, when a web user visits your website, they enter your web address (your domain name) into their browser. When they do this, a DNS lookup is performed. This process links your domain name to the IP address of the server hosting your website. This link is made using the information entered into a DNS zone: a kind of directory where your domain’s configuration is recorded.
+Once you have carefully defined your project, you can start installing your website.
 
-If you have ordered your domain name with your OVHcloud Web Hosting plan, and not made any changes to the DNS zone via the OVHcloud Control Panel, you can skip to the next step. If you have made changes, or are unsure whether you have changed anything, we would recommend that you follow this step.
+There are two ways of doing this: **migrate** an existing website, or **create** a new website.
 
-#### Understanding OVHcloud DNS records 
+#### Migrate your website
 
-There are several OVHcloud DNS records. We will focus on two particular records that keep your website accessible and allow you to receive emails via your email addresses.
+If you need to migrate a website from another hosting provider, please read our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". You will find all the key steps for migrating all of your services without any interruptions (domain name, website, email address(es), etc.).
 
-- **The A record, for the website**
+#### Create your new website
 
-To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
+In this scenario, you can choose from several solutions.
 
-![Edit the A record](images/find-ipv4.png){.thumbnail}
+##### Case 1 - Putting a locally developed website online
 
-- **The MX records, for emails**
+If this is the case, please follow our guide on "[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". There, you will find all the steps you need to take in order to:
 
-To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
+- Place your website on your web hosting plan’s FTP storage space.
+- Create a database linked to your web hosting plan.
+- Place your local database on the database linked to your web hosting plan.
+- Link your database to the website on your web hosting plan.
 
-![Edit the MX records](images/find-mx-records.png){.thumbnail}
+##### Case 2 - Create a website using a CMS
 
-#### Check and/or modify the DNS records
+OVHcloud offers the "1-click modules" option.<br>
+Once you have logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), this option allows you to quickly install the *WordPress*, *Joomla!*, *PrestaShop* and *Drupal* CMS on your hosting.
 
-Now that you are familiar with the DNS records on your OVHcloud Web Hosting plan, you will need to check and edit them if required. You will need to edit them differently, depending on your project.
-
-- **Ordering a domain name with an OVHcloud Web Hosting plan**
-
-Your domain is already correctly configured. Follow the next step. However, if you have edited your domain’s DNS zone in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, it may no longer be correctly configured.
-    
-To access your OVHcloud domain’s DNS zone, go to the `Domains`{.action} section, then click on the domain name concerned. Then, in the `DNS zone`{.action} tab, check and edit the information as required.
-
-- **Domain names that do not use the OVHcloud DNS zone**
-    
-You must check your domain’s DNS zone with the service provider managing your domain name and edit the information, if required.
-
-- **Migrate your services (websites and email) to OVHcloud**
-
-If you are migrating your services, changes to your DNS zone may make your website unavailable if they are not made at the right time. Please note that you must edit your domain’s DNS servers as the final part of the process.
+To use this option, please refer to our guide on "[Setting up your website with a 1-click module (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 > [!primary]
 >
-> Any changes made to a DNS zone can take 4-24 hours to fully propagate.
+> If you would prefer to install your CMS manually without going through the "1-click modules" option, please read our guide on "[Installing a CMS manually on your Web Hosting plan](/pages/web_cloud/web_hosting/cms_manual_installation)".
 >
 
-### Step 5: Customise your website
+### Step 3 - Create your email addresses (optional) <a name="email-creation"></a>
 
-Your website is now online. This stage is optional if you have migrated an existing website, as it is already customised! However, if you have just set up a new website using our modules, you can customise it by editing the theme, and start publishing your content on it.
+Your [Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/) includes one or more email accounts, which you can choose to enable or disable.
 
-If you need help with your website’s features, we recommend referring to the CMS publisher’s official website, which will contain more advanced documentation to offer you focused support.
+First of all, please read our guide on "[Activating email addresses included in your Web Hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
-### Step 6: Use your email addresses
+Once you have enabled this option, please refer to our guide on "[Creating an email address with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)" to customize one or more email accounts with your domain name.
 
-Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application. The webmail is available at the following address: <https://www.ovhcloud.com/asia/mail/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
+> **Special Cases:**
+>
+> - If you are migrating a website and/or if you are looking for email addresses associated with your website’s domain name, please read our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". You will find all the key steps for migrating all of your services without any interruptions (domain name, website, email address(es), etc.).
+>
+> - If you did not attach a domain name when you ordered your web hosting plan, and you would like to use the "email address(es) included with your web hosting plan" option, you will need to do this manually from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our email guides: </products/web-cloud-email-collaborative-solutions-mx-plan>.
+### Step 4 - Verify and/or modify your domain name’s configuration <a name="domain-configuration"></a>
+
+At this stage, your website must be installed on your web hosting plan, and your email addresses must be created. These elements may not work yet, as long as your domain name’s configuration with your new services is incomplete.
+
+The link between your domain name and your services (web hosting plan, email server, etc.) is mainly done using your domain name’s active DNS zone and the DNS records it contains.
+
+> [!primary]
+>
+> Please note that changes to a DNS zone can take between 4 and 24 hours to propagate fully.
+>
+
+> **Special Cases:**
+>
+> If you are migrating a website and/or email addresses associated with your website’s domain name, please read our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". You will find all the key steps for migrating all of your services without any interruptions (domain name, website, email address(es), etc.).
+
+To check and/or modify the link between your domain name and your web hosting plan, **please refer to the following guides in order:**
+
+- [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP): You will find all the IP addresses for our web hosting infrastructure there. This guide will particularly help you with domain names whose active DNS zone is not managed at OVHcloud (or managed on a different OVHcloud customer account than your own).
+- [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite): This guide explains how to add multiple domain names to a Web Hosting plan. It can also help you check that your domain name declaration in the `Multisite`{.action} tab of your Web Hosting plan is correct. If necessary, you can then modify it and take the necessary measures in your domain name’s active DNS zone.
+- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit): This guide explains how to edit an OVHcloud DNS zone. It will be useful to you in the event that your domain name’s active DNS zone is present on a different OVHcloud customer account than your own. You can also use it to access your domain name’s OVHcloud DNS zone, in order to verify that the IP address (entry(s) of type *A* and/or *AAAA*) declared for your domain name in the DNS zone corresponds to your Web Hosting plan’s IP address.
+
+To check and/or modify the link between your domain name and your OVHcloud email solution, please read our guide on "[Configure an MX record](/pages/web_cloud/domains/dns_zone_mx)". You will find the names of the OVHcloud email servers, as well as the procedure to follow in order to point your domain name to these same servers.
+
+> [!primary]
+>
+> If the DNS zone for your domain name is not managed by OVHcloud:
+> 
+> - **For linking your domain name to your web hosting plan**: Please refer only to the guides “[IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)” and “[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)” mentioned above to retrieve your web hosting plan’s IP address, then declare your domain name correctly on your web hosting plan. Then contact the organization that manages your domain name’s active DNS zone to point it to your web hosting plan.
+>
+> - **For the link between your domain name and your OVHcloud email solution**: Only refer to our guide "[Configure an MX record](/pages/web_cloud/domains/dns_zone_mx)" to retrieve the names of the OVHcloud email servers that need to be entered in your domain name’s active DNS zone. Then contact the organization that manages your domain name’s active DNS zone, and point it to the OVHcloud email servers.
+>
+
+### Step 5 - Other options available with web hosting plans <a name="other-options"></a>
+
+Depending on your [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/), additional options/offers/features are available free of charge.
+
+#### SSL certificates
+
+SSL certificates are used to make your website accessible using the HTTPS protocol. This protocol encrypts the exchanges between your web hosting plan and the people who visit your website.
+
+No matter which [web hosting](https://www.ovhcloud.com/asia/web-hosting/) you are using, you can activate an SSL certificate from **Let's encrypt** free of charge.
+
+For more details on free and paid SSL certificates offered on web hosting plans, please read our guide on "[Managing SSL certificates on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
+
+#### The CDN offers
+
+All of our CDN solutions allow you to cache part of your website. This reduces load times for the pages that make up your website, especially for visitors who are geographically distant from the data center where your web hosting plan is located.
+
+With web hosting plans, OVHcloud offers 3 CDN solutions:
+
+- **CDN Basic**
+- **CDN Security**
+- **Advanced CDN**
+
+You can find more information on our CDN solutions in our guide on "[Speeding up your website with CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
+
+> [!primary]
+>
+> The **CDN Basic** solution is included free with **Performance** web hosting plans only.
+>
+> You cannot combine several CDN offers on the same web hosting plan.
+
+#### Web Cloud Database Servers
+
+If you have a **Performance** web hosting plan, you can activate a [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) for free.
+
+You can find more details on how to use it in our documentation “[Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
+
+#### Send emails from your website
+
+All [web hosting](https://www.ovhcloud.com/asia/web-hosting/) allow you to send emails free of charge from your website or a specific script.
+
+You can find all the details on this feature in our guide on "[Monitoring and managing automated emails in your web hosting plan](/pages/web_cloud/web_hosting/mail_function_script_records)".
+
+#### The scheduled tasks (CRON)
+
+With CRON tasks, you can automatically run scripts hosted on your web hosting plan.
+
+If your [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) has this option, please refer to our guide on "[Using automated tasks on a Web Hosting plan](/pages/web_cloud/web_hosting/cron_tasks)" for further details.
+
 ## Go further
 
-[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[How to get your website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Web hosting modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Setting up your website with a 1-click module (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[How to set up an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+[Creating an email address with an MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
+
+[Managing SSL certificates on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

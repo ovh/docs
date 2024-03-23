@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - Jak utworzyć serwer Minecraft na serwerze VPS lub dedykowanym'
+title: 'Jak utworzyć serwer Minecraft na serwerze VPS lub dedykowanym'
 excerpt: 'Dowiedz się, jak zainstalować własny serwer Minecraft'
 updated: 2021-06-29
 ---
@@ -26,7 +26,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 
 - Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Instalacja dystrybucji GNU/Linux na serwerze
-- Dostęp administratora (root) przez SSH do serwera
+- Dostęp administratora (sudo) przez SSH do serwera
 - Podstawowe zrozumienie administracji GNU/Linux
 
 ## W praktyce

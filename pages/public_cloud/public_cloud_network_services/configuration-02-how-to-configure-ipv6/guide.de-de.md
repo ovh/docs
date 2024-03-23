@@ -1,7 +1,7 @@
 ---
-title: 'IPv6 auf einer Public Cloud Instanz konfigurieren'
-excerpt: 'Anleitung zum Konfigurieren von IPv6 auf einer Public Cloud Instanz'
-updated: 2022-11-15
+title: "IPv6 auf einer Public Cloud Instanz konfigurieren"
+excerpt: "Erfahren Sie hier, wie Sie das IPv6-Protokoll auf einer Public Cloud-Instanz konfigurieren"
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-11-15
 
 ## Ziel
 
-Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol (IP). Seit Langem wird die Ausschöpfung der verfügbaren IPv4-Adressen erwartet. Diese Version soll Abhilfe schaffen, indem Adressen aus 128 Bits statt der herkömmlichen 32 Bits des IPv4 verwendet werden.
+Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol (IP). Seit Langem wird die Ausschöpfung der verfügbaren IPv4-Adressen erwartet. Diese Version soll Abhilfe schaffen, indem Adressen aus 128 Bits statt der 32 Bits des IPv4 verwendet werden.
 
 Jede Public Cloud Instanz wird mit einer IPv4-Adresse und einer IPv6-Adresse ausgeliefert.
 
@@ -32,9 +32,11 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 ## In der praktischen Anwendung
 
+Die folgenden Abschnitte enthalten die Konfigurationen der derzeit von uns angebotenen Distributionen sowie die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt besteht immer darin, sich via SSH oder GUI (RDP für eine Windows-Instanz) mit Ihrem Server zu verbinden.
+
 > [!warning]
 >
-> Bitte beachten Sie, dass bei neueren Versionen von Linux-Betriebssystemen die IPv6-Adresse von Public-Cloud-Instanzen breits vorkonfiguriert ist. Überprüfen Sie deshalb die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
+> Bitte beachten Sie, dass bei den neuesten Linux-Betriebssystemversionen die IPv6-Adresse standardmäßig auf Public-Cloud-Instanzen konfiguriert ist. In diesem Fall müssen Sie sie nicht konfigurieren. Überprüfen Sie die Konfigurationsdatei Ihres Betriebssystems, bevor Sie Änderungen vornehmen.
 >
 
 ### Glossar
@@ -62,9 +64,9 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 > [!primary]
 > **Beispiele**
 > 
->Die untenstehenden Informationen dienen lediglich als Beispiele.
+> Die untenstehenden Informationen dienen lediglich als Beispiele.
 >
->Als Administrator Ihrer Dienste obliegt es Ihnen, diese an Ihre Distribution anzupassen.
+> Als Administrator Ihrer Dienste obliegt es Ihnen, diese an Ihre Distribution anzupassen.
 >
 
 > [!warning]
@@ -74,11 +76,19 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 
 <br>Verbinden Sie sich zunächst über SSH mit Ihrer Instanz.
 
-#### Mit Debian
+#### Debian (außer Debian 12)
 
-Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende Konfiguration wie folgt aussehen.
+Standardmäßig befinden sich die Konfigurationsdateien im Verzeichnis `/etc/network/interfaces.d/`.
 
-Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/network/interfaces`
+Es empfiehlt sich, eine separate Konfigurationsdatei im Verzeichnis `/etc/network/interfaces.d/` zu erstellen, um IPV6 zu konfigurieren. In unserem Beispiel heißt die Datei `51-cloud-init-ipv6`:
+
+```bash
+sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
+```
+
+Dies ermöglicht es Ihnen, die IPv6-Konfiguration zu trennen und im Falle eines Fehlers einfach auf die Änderungen zurückzugreifen.
+
+Fügen Sie der Datei die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (wenn Ihr Server nicht **eth0** verwendet) durch Ihre spezifischen Werte:
 
 ```console
 iface eth0 inet6 static
@@ -94,44 +104,72 @@ Hier ein konkretes Beispiel:
 
 ```console
 iface eth0 inet6 static
-address 2001:41d0:xxx:xxxx::999
+address 2607:5300:201:abcd::7c5
 netmask 128
-post-up /sbin/ip -6 route add 2001:41d0:xxx:xxxx::111 dev eth0
-post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
-pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
-pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
+post-up /sbin/ip -6 route add 2607:5300:201:abcd::1 dev eth0
+post-up /sbin/ip -6 route add default via 2607:5300:201:abcd::1 dev eth0
+pre-down /sbin/ip -6 route del default via 2607:5300:201:abcd::1 dev eth0
+pre-down /sbin/ip -6 route del 2607:5300:201:abcd::1 dev eth0
 ```
 
-#### Mit Ubuntu
-
-Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. Erstellen Sie zuerst eine Kopie der IPv6-Konfigurationsdatei:
+Starten Sie anschließend den Netzwerkdienst mit einem der folgenden Befehle neu:
 
 ```bash
-cd /etc/netplan
-cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+sudo service networking restart
 ```
 
-So können Sie die IPv6-Konfiguration trennen und die Änderungen im Fehlerfall rückgängig machen.
+```bash
+sudo systemctl restart networking
+```
 
-Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende Konfiguration wie folgt aussehen.
+#### Ubuntu und Debian 12
 
-Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/netplan/51-cloud-init-ipv6.yaml`
+Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`.
+
+Es empfiehlt sich, eine separate Konfigurationsdatei im Verzeichnis `/etc/netplan/` zu erstellen, um IPV6 zu konfigurieren. In unserem Beispiel heißt die Datei `51-cloud-init-ipv6.yaml`:
+
+```bash
+sudo touch /etc/netplan/51-cloud-init-ipv6.yaml
+```
+
+Dies ermöglicht es Ihnen, die IPv6-Konfiguration zu trennen und im Falle eines Fehlers einfach auf die Änderungen zurückzugreifen.
+
+Fügen Sie der Datei die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (wenn Ihr Server nicht **eth0** verwendet) durch Ihre spezifischen Werte:
+
+```bash
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
+```
 
 ```yaml
 network:
+    version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
-                macaddress: fb:17:3r:39:56:75
-            set-name: eth0
+              name: eth0
             addresses:
-              - "YOUR_IPV6/IPv6_PREFIX"
-            gateway6: "IPv6_GATEWAY"
+              - YOUR_IPV6/IPv6_PREFIX
             routes:
-              - to: "IPv6_GATEWAY"
-                scope: link
+              - to: ::/0
+                via: IPv6_GATEWAY
+```
+
+Hier ein praktisches Beispiel:
+
+```yaml
+network:
     version: 2
+    ethernets:
+        eth0:
+            dhcp6: no
+            match:
+              name: eth0
+            addresses:
+              - 2607:5300:201:abcd::7c5/128
+            routes:
+              - to: ::/0
+                via: 2607:5300:201:abcd::1
 ```
 
 > [!warning]
@@ -142,20 +180,35 @@ network:
 Sie können Ihre Konfiguration mit folgendem Befehl testen:
 
 ```bash
-netplan try
+sudo nano netplan try
 ```
 
 Ist die Änderung korrekt, verwenden Sie folgenden Befehl:
 
 ```bash
-netplan apply
+sudo nano netplan apply
 ```
 
-#### Mit RedHat / CentOS
+#### RedHat / CentOS / Rocky Linux / Alma Linux
 
-Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende Konfiguration wie folgt aussehen.
+Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/sysconfig/network-scripts/`. Wir empfehlen, zunächst ein Backup der betreffenden Konfigurationsdatei zu erstellen.
 
-Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/sysconfig/network-scripts/ifcfg-eth0`
+In unserem Beispiel heißt die Datei `ifcfg-eth0`, also speichern wir die Datei `ifcfg-eth0` mit den folgenden Befehlen. Denken Sie daran, **eth0** bei Bedarf durch Ihr Netzwerk-Interface zu ersetzen.
+
+```bash
+cd /etc/sysconfig/network-scripts/
+sudo mkdir backup
+sudo cp ifcfg-eth0 backup/ifcfg-eth0
+```
+
+Sie können die Änderungen mit folgenden Befehlen zurücksetzen:
+
+```bash
+sudo rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
+```
+
+Anschließend bearbeiten wir die Datei `ifcfg-eth0` und fügen nur die Zeilen für die IPv6-Konfiguration des Servers hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) nach Ihren spezifischen Werten.
 
 ```console
 IPV6INIT=yes
@@ -163,25 +216,79 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Hier ein praktisches Beispiel:
+Wir haben die IPv4-Konfiguration ausgelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration wird in derselben Konfigurationsdatei vorgenommen.
+
+Hier ein konkretes Beispiel:
 
 ```console
 IPV6INIT=yes
-IPV6ADDR=2001:41d0:xxx:xxxx::999
-IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
+IPV6ADDR=2607:5300:201:abcd::7c5/128
+IPV6_DEFAULTGW=2607:5300:201:abcd::1
 ```
 
-#### Mit Windows
+Starten Sie anschließend den Netzwerkdienst mit einem der folgenden Befehle neu:
+
+```bash
+sudo service networking restart
+```
+
+```bash
+sudo systemctl restart networking
+```
+
+#### Fedora
+
+Die Netzwerkkonfigurationsdatei befindet sich im Verzeichnis `/etc/NetworkManager/system-connections/`. Wir empfehlen Ihnen, zunächst ein Backup der betreffenden Konfigurationsdatei zu erstellen.
+
+In unserem Beispiel heißt die Datei `cloud-init-eth0.nmconnection`, daher erstellen wir eine Kopie der Datei `cloud-init-eth0.nmconnection` mit den folgenden Befehlen. Denken Sie daran, **eth0** bei Bedarf durch Ihr Interface zu ersetzen.
+
+```bash
+cd /etc/NetworkManager/system-connections/
+sudo mkdir backup
+sudo cp cloud-init-eth0.nmconnection backup/cloud-init-eth0.nmconnection
+```
+
+Anschließend bearbeiten wir die Datei `cloud-init-eth0.nmconnection` und fügen nur die Zeilen für die IPv6-Konfiguration des Servers hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) mit Ihren spezifischen Werten.
+
+```console
+[ipv6]
+method=auto
+may-fail=true
+address1=YOUR_IPV6/IPV6_PREFIX
+route1=::/0,IPV6_GATEWAY
+```
+
+Wir haben die IPv4-Konfiguration ausgelassen, um Verwechslungen zu vermeiden, aber die IPv6-Konfiguration wird in derselben Konfigurationsdatei vorgenommen.
+
+Hier ein praktisches Beispiel:
+
+```console
+[ipv6]
+method=auto
+may-fail=true
+address1=2607:5300:201:abcd::7c5/128
+route1=::/0,2607:5300:201:abcd::1
+```
+
+Starten Sie die den Dienst mit folgendem Befehl neu:
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+#### Windows
+
+Standardmäßig ist IPv6 auf Windows-Servern nicht konfiguriert. Führen Sie folgende Schritte aus, um die Funktion zu aktivieren:
 
 Gehen Sie in den Bereich `Netzwerkverbindungen`{.action} Ihrer Windows-Oberfläche.
 
 ![Public-Cloud-IPv6](images/pcipv63.png){.thumbnail}
 
-Öffnen Sie danach per Klick mit der rechten Maustaste auf Ihre Netzwerkschnittstelle `Eigenschaften`{.action}.
+Klicken Sie dann mit der rechten Maustaste auf Ihre Netzwerkkarte, um auf `Eigenschaften`{.action} zuzugreifen.
 
 ![Public-Cloud-IPv6](images/pcipv64.png){.thumbnail}
 
-Wählen Sie `IPv6`{.action} und klicken danach auf `Eigenschaften`{.action}.
+Klicken Sie dann auf `Internet Protocol Version 6 (TCP/IPv6)`{.action} und dann auf `Eigenschaften`{.action}.
 
 ![Public-Cloud-IPv6](images/pcipv65.png){.thumbnail}
 
@@ -189,11 +296,14 @@ Tragen Sie schließlich die Informationen zu Ihrem IPv6 in die passenden Felder 
 
 ![Public-Cloud-IPv6](images/pcipv66.png){.thumbnail}
 
-## Diagnose
+
+Wenn Sie damit fertig sind, setzen Sie einen Haken in dem Feld `Einstellungen ausgehend überprüfen` und klicken Sie auf `OK`{.action}, um Ihre Änderungen zu bestätigen.
+
+### Diagnose
 
 Sie haben IPv6 konfiguriert, aber es funktioniert dennoch nicht? 
 
-Mit einem einfachen Mittel lässt sich herausfinden, ob der Fehler in der durchgeführten Konfigurierung, oder im Netzwerk von OVHcloud liegt.
+Mit einem einfachen Mittel lässt sich herausfinden, ob der Fehler in der durchgeführten Konfigurierung oder im Netzwerk von OVHcloud liegt.
 
 Zunächst [stellen Sie Ihre Instanz auf den Rescuemodus "rescue-pro" um](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
 

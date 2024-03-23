@@ -1,7 +1,7 @@
 ---
 title: HA-NAS - Frequently Asked Questions
 excerpt: Do you have questions about HA-NAS? Here are the most frequently asked questions
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 ## Objective
@@ -110,6 +110,14 @@ No, you cannot install operating systems on HA-NAS solutions.
 
 Yes, you will need to create one or several partitions, depending on how you will use it. There are no limits to creating partitions.
 
+### How can I change the storage capacity on my HA-NAS?
+
+Currently it is not yet possible to dynamically scale up or down our HA-NAS. To do so, you have to:
+
+1. Order a new HA-NAS with the desired capacity, thus accessing both the new and the previous HA-NAS.
+2. Migrate your data by following the guide [Migrating data from one HA-NAS to another via NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration).
+3. Cancel the old HA-NAS.
+
 ## Snapshots
 
 ### What are snapshots?
@@ -135,7 +143,7 @@ You can manage the frequency of snapshots from your OVHcloud Control Panel. You 
 - once every 3 days
 - once every week
 
-You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the following [API](https://api.ovh.com/) call:
+You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the following [API](https://ca.api.ovh.com/) call:
 
 > [!api]
 >

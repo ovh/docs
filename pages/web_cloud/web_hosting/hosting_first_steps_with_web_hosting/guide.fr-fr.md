@@ -104,7 +104,7 @@ Votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) inclu
 
 Consultez tout d'abord notre guide « [Activer les adresses e-mails incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
 
-Une fois l'option activée, consultez notre guide « [Créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) » pour personnaliser une ou plusiuers adresse(s) e-mail avec votre nom de domaine.
+Une fois l'option activée, consultez notre guide « [Créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) » pour personnaliser une ou plusieurs adresse(s) e-mail avec votre nom de domaine.
 
 > **Cas Particuliers :**
 >

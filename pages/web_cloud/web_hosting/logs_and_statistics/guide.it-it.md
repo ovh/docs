@@ -1,7 +1,7 @@
 ---
-title: "Hosting condiviso: consulta le statistiche e i log del tuo sito"
-excerpt: "Accedi alle statistiche del tuo sito"
-updated: 2023-11-20
+title: "Hosting Web - Consultare le statistiche e i log di un sito Web"
+excerpt: "Questa guida ti mostra come consultare le statistiche e i log del tuo sito Web grazie alla tua soluzione di hosting Web"
+updated: 2024-02-27
 ---
 
 > [!primary]
@@ -10,98 +10,123 @@ updated: 2023-11-20
 
 ## Obiettivo
 
-L'accesso ai log e alle statistiche del tuo sito è incluso nella tua offerta di hosting Web, accessibile dal tuo Spazio Cliente OVHcloud.
+L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di hosting Web attiva dallo Spazio Cliente OVHcloud.
 
-**Questa guida ti mostra come consultare le statistiche e i log del tuo sito Web.**
+**Questa guida ti mostra come consultare le statistiche e i log del tuo sito Web grazie alla tua soluzione di hosting Web.**
 
 ## Prerequisiti
 
-- Disporre di un piano [di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}.
+Per accedere ai diversi dati statistici e log dell’hosting Web, esegui queste operazioni: 
 
-Seleziona l'hosting interessato e clicca sulla scheda `Statistiche e log`{.action}
+1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
+3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
+4. Seleziona il tuo hosting Web.
+5. Clicca sulla scheda `Statistiche e log`{.action}.
 
-La finestra che appare è composta da 3 sezioni. Il primo presenta le **statistiche**, il secondo i **log** lordi del tuo hosting, l'ultimo è dedicato **all'amministrazione degli utenti** autorizzati ad accedere alle statistiche.
+La schermata visualizzata è composta da 4 sezioni:
 
-![hosting](images/tab.png){.thumbnail}
+- [Statistiche delle visite](#website-stats): presenta numerose statistiche relative al tuo hosting Web.
+- [Log del sito web](#website-logs): visualizza i log grezzi del tuo hosting web.
+- [Statistiche dell'infrastruttura](#infra-stats): presenta statistiche grafiche (richieste HTTP e SQL, comandi FTP, utilizzo CPU, connessioni in uscita, ecc.)
+- [Gestione degli utenti](#admin-user): visualizza gli utenti autorizzati ad accedere alle statistiche
 
-### Gestione degli utenti
+![statistics and logs interface](images/tab.png){.thumbnail}
 
-La creazione di un utente permetterà a una persona di accedere alle statistiche del tuo hosting senza avere accesso al tuo Spazio Cliente OVHcloud. 
+### Statistiche delle visite <a name="website-stats"></a>
 
-Clicca sul pulsante `Crea un nuovo utente`{.action} nella sezione `Amministrazione utenti` e segui le istruzioni come mostrato qui di seguito.  
+Per controllare e gestire al meglio il traffico dei siti Web, è possibile utilizzare **OVHcloud Web Statistics**, uno strumento di statistiche delle visite e di misurazione dell'audience dei siti Web ospitati sul piano di hosting.
 
-![hosting](images/create-a-new-user.png){.thumbnail}
+![ows dashboard](images/ows-presentation.gif){.thumbnail}
 
-Per accedere alle statistiche del tuo sito Web con un utente che hai creato, inserisci questo indirizzo sostituendo `000` con il numero del cluster del tuo hosting e `mydomain.ovh` con il nome del dominio del tuo sito Web (senza le "www"):
+La dashboard di**OVHcloud Web Statistics** presenta 7 sezioni:
+
+- **Dashboard**: visualizzazione del traffico sui siti del tuo hosting Web.
+- **Browsers**: classifica dei browser Internet più utilizzati per consultare i tuoi siti.
+- **Geolocalization**: percentuale di visitatori in base alla localizzazione.
+- **Requests**: classifica delle pagine più consultate sui tuoi siti.
+- **Robot**: visualizzazione dei robot che transitano sui vostri siti.
+- **Status**: statistiche di fallimenti e successi in base ai codici HTTP restituiti.
+- **FAQ**: sezione dedicata alle domande più frequenti. Vengono inoltre illustrati i termini tecnici che possono essere utilizzati nello strumento.
+
+Il campo `Period selection` in alto a destra ti permette di selezionare un periodo preciso.
+
+### Logs del sito web <a name="website-logs"></a>
+
+> [primary]
+>
+> Non saremo in grado di supportarti nell’interpretazione dei log del tuo hosting Web perché questa operazione riguarda esclusivamente lo sviluppo Web e non l’hosting Web.
+>
+> In caso di difficoltà o dubbi, contatta il tuo [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+>
+
+Potrete visualizzare i log grezzi del vostro sito web con un ritardo di circa 5 minuti.
+
+![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
+
+Diversi tipi di log sono a tua disposizione:
+
+- **Log Web**: contengono i diversi log di consultazione del sito Web, oltre alle diverse azioni realizzate a partire dal sito Web. Ciò consente, ad esempio, di individuare i tentativi di azioni dannose.
+- **Log FTP** : le diverse connessioni / comandi in FTP saranno registrati e mantenuti in questi log.
+- **Logs errore**: qui trovi i diversi errori generati dal tuo sito Web.
+- **Logs CGI**: le varie chiamate agli script cgi.bin che sono stati realizzati sono registrati in questi logs.
+- **Logs out**: contengono la cronologia delle diverse richieste esterne (connessioni in uscita TCP) realizzate dal tuo hosting Web verso infrastrutture remote.
+- **Log SSH**: questi log indicano le diverse connessioni / comandi effettuati con il protocollo SSH.
+- **Logs CRON**: visualizza qui i risultati dell’esecuzione delle operazioni pianificate [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) sul tuo hosting Web.
+
+### Statistiche dell'infrastruttura <a name="infra-stats"></a>
+
+In questa sezione sono riportate le attività dell’infrastruttura del tuo hosting Web, per visualizzare il consumo delle risorse messe a disposizione.
+
+![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
+
+Dal menu a comparsa in alto a sinistra è possibile visualizzare diversi tipi di grafici:
+
+- **Comandi FTP**: indica i comandi principali (upload, download, login, delete) effettuati utilizzando il protocollo FTP sul tuo hosting Web.
+- **Richieste HTTP**: indica il numero e il codice restituito delle richieste HTTP eseguite sul tuo hosting Web. Il tutto distinguendo i diversi codici HTTP (2xx/3xx, 4xx e 5xx). Se necessario, è possibile recuperare la lista dei codici HTTP e il loro significato effettuando una ricerca direttamente tramite un motore di ricerca (Google, Yahoo!, bing, ecc...).
+- **Connessioni in uscita**: richieste inviate dal vostro sito web verso un sito web esterno.
+- **Utilizzo della CPU**: livello di consumo del processore sull’istanza di hosting Web.
+- **Superamento del plafond di risorse**: indica i momenti in cui l’hosting Web supera la quota assegnata.
+- **Richieste SQL**: quantità di richieste verso i database del tuo hosting Web.
+- **Tempo di risposta SQL**: tempo di risposta delle richieste inviate ai database dell’hosting Web.
+
+### Gestione degli utenti <a name="admin-user"></a>
+
+La creazione di un utente consente a una persona di accedere alle statistiche del tuo hosting Web senza avere accesso allo Spazio Cliente OVHcloud.
+
+Nella sezione `Gestione degli utenti`{.action}, clicca su `Crea un nuovo utente`{.action} e segui le istruzioni per completare la creazione di un nuovo utente.
+
+![create a new user](images/create-a-new-user.png){.thumbnail}
+
+Per accedere alle statistiche del tuo sito Web con un utente che hai creato, inserisci questo indirizzo sostituendo `000` con il numero del cluster del tuo hosting Web e `domain.tld` con il nome di dominio del tuo sito Web (senza i `www`):
 
 ```bash
-https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+https://logs.cluster000.hosting.ovh.net/domain.tld/
 ```
 
-Dalla sezione `Statistiche e log`{.action}, clicca su `Visualizza le statistiche`{.action}.<br>
-Dalla scheda del tuo browser che visualizza la finestra di statistiche, recupera il link che servirà a connetterti con uno degli utenti creati.
+Puoi anche recuperare il link di accesso alle statistiche / log direttamente dal tuo Spazio Cliente:
 
-![hosting](images/view-statistics.png){.thumbnail}
+1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
+3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
+4. Seleziona il tuo hosting Web.
+5. Clicca sulla scheda `Statistiche e log`{.action}.
+6. Accedi alla sezione `Statistiche delle visite`{.action}.
+7. Clicca sul pulsante `Visualizza le statistiche`{.action}.
 
-> [!warning] 
+![website visit statistics](images/view-statistics.png){.thumbnail}
+
+Nella nuova pagina, recupera l’URL che trovi nella barra degli indirizzi del tuo browser.
+
+> [!warning]
 >
-> Se hai attivato i log separati su un [record multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
+> Se i log separati sono stati abilitati su una [voce multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite), gli utenti creati qui non potranno accedere alle statistiche relative a tale voce multisito specifica.
 >
-
-### Statistiche delle visite
-
-Per monitorare e gestire al meglio il traffico dei tuoi siti Web, hai a disposizione uno strumento di statistica di frequentazione e misurazione dell'audience dei tuoi siti Internet ospitati sul tuo hosting condiviso, **OVHcloud Web Statistics**.
-
-![hosting](images/ows-presentation.gif){.thumbnail}
-
-La dashboard di OVHcloud Web Statistics si presenta in 6 sezioni nel pannello di sinistra.
-
-- Dashboard: visualizzazione del traffico sui siti del tuo hosting.
-- Browsers: classifica i browser più utilizzati per visualizzare i tuoi siti.
-- Geolocalization:  proporzione di visitatori in funzione della loro localizzazione.
-- Requests: classifica le pagine più consultate sui tuoi siti.
-- Robots : visualizzazione dei robot che passano sui tuoi siti.
-- Stato: statistiche sugli insuccessi e sui successi riscontrati in base ai codici HTTP restituiti.
-- FAQ: sezione dedicata alle questioni più frequenti
-
-Il riquadro `Period selection` in alto a destra vi permette di selezionare un periodo preciso.
-
-### Logs
-
-I log grezzi del tuo sito possono essere visualizzati con un ritardo di circa 5 minuti.
-
-![hosting](images/osl-statistics-board.png){.thumbnail}
-
-Sono a tua disposizione diversi tipi di log:
-
-- Logs Web: qui puoi trovare i log di consultazione del tuo sito e le diverse azioni realizzate a partire dal tuo sito. che permette di individuare, ad esempio, tentativi di azioni dolorose.
-- Logs FTP: le diverse connessioni FTP saranno registrate e conservate in questi log.
-- Logs errore: i diversi errori generati dal tuo sito.
-- Logs CGI: i diversi appelli agli scripts cgi.bin realizzati.
-- Logs out: le statistiche del tuo hosting sulle diverse chiamate esterne effettuate.
-- Logs SSH: questi log indicano le differenti connessioni realizzate con il protocollo SSH.
-- Logs CRON: il risultato dell'esecuzione delle operazioni pianificate ([Le operazioni automatizzate (CRON) sul tuo hosting](/pages/web_cloud/web_hosting/cron_tasks)).
-
-### Attività dell'hosting
-
-In questa sezione trovi l'attività dell'infrastruttura del tuo hosting, per visualizzare il consumo delle risorse messe a tua disposizione.
-
-Clicca sulla scheda `Informazioni generali`{.action} e poi giù in fondo alla pagina.
-
-![hosting](images/infrastructure-statistics-graph.png){.thumbnail}
-
-È possibile visualizzare diversi tipi di grafici dal menu a tendina in alto a sinistra:
-
-- Connessioni in uscita: richieste inviate dal vostro sito verso un sito esterno.
-- Utilizzo CPU: livello di consumo del processore sull'istanza di hosting.
-- Superamento del massimale delle risorse: indica i momenti in cui il tuo hosting supera la sua quota di risorse.
-- Richieste SQL: quantità di richieste verso i database del tuo hosting.
-- Tempi di risposta SQL: tempo di risposta delle richieste inviate ai database del tuo hosting.
 
 ## Per saperne di più
 

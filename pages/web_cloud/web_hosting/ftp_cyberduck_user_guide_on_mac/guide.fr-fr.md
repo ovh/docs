@@ -1,362 +1,233 @@
 ---
-title: Utilisation Cyberduck (MAC)
-excerpt: Retrouvez dans ce guide de l’aide concernant l’utilisation de l’application Cyberduck.
-updated: 2020-05-05
+title: "Tutoriel - Utiliser Cyberduck avec mon hébergement web"
+excerpt: "Découvrez comment utiliser l’application Cyberduck pour vous connecter à votre hébergement web OVHcloud"
+updated: 2024-02-23
 ---
 
-Ce guide a été réalisé avec une version gratuite de l'applicatif en version 4.5.2 téléchargée depuis le site officiel.
+## Objectif
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](/products/web-cloud-hosting) disponibles.
+Disponible sur macOS et Windows, Cyberduck est une application open-source de transfert de fichiers. Elle vous permet de vous connecter à l'espace de stockage FTP de votre hébergement web (en protocole FTP ou SFTP).
+
+Pour télécharger Cyberduck, rendez-vous sur le [site officiel](https://cyberduck.io/) de l'application.
+
+![hosting](images/logo.png){.thumbnail}
+
+> [!primary]
+>
+> - Cyberduck est une application disponible sur macOS et Windows. L'interface et les fonctionnalités de Cyberduck étant relativement similaires sur les deux systèmes d'exploitation, le tutoriel a été réalisé sur une machine Windows.
+> - Ce guide a été réalisé avec une version gratuite de l'applicatif en version 8.7.2 téléchargée depuis le [site officiel](https://cyberduck.io/).
+>
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
-
-## Généralités
-
-### Presentation
-Cyberduck est un applicatif disponible sur MAC.
-
-Ce dernier vous donne notamment la possibilité de mettre en ligne votre site internet en vous permettant de vous connecter à votre espace d'hébergement (FTP).
-
-Pour en bénéficier, veuillez vous reporter au site officiel de l'application :
-
-- Site officiel Cyberduck (site non OVH) : [cyberduck.io](https://cyberduck.io/){.external}
-
-![hosting](images/logo.png){.thumbnail}
-
-> [!success]
 >
-> Cyberduck est un applicatif pour les utilisateurs bénéficiant d'un MAC. Si vous possédez une machine utilisant Windows, préférez l'utilisation de FileZilla : <legacy:1380>
-> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous rencontrez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Consultez la section [Aller plus loin](#go-further) de ce guide pour plus d'informations.
+>
+
+## Prérequis
+
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Avoir téléchargé et installé l'application Cyberduck sur votre ordinateur.
+
+## En pratique
 
 ### Interface
-Lors du premier démarrage de l'application, vous pourrez apercevoir la fenêtre ci-contre.
 
-- La zone du dessus vous permet notamment d'établir une nouvelle connexion rapide ainsi que d'accéder à différentes actions une fois que vous serez connecté à votre espace FTP (renommer, édition, etc.).
-- La zone du milieu vous permet par exemple de voir les signets que vous avez ajoutés (vos connexions FTP pré-enregistrées), et une fois connecté le contenu de votre espace d'hébergement.
-- La zone basse vous permet notamment d'avoir des informations sur une action en cours (connexion vers le serveur FTP) ainsi que quelques logos pour ajouter un nouveau signet par exemple.
+Lorsque vous démarrez l'application, l'interface ci-dessous s'affiche.
+
+- La partie supérieure, entourée en orange, correspond à la barre d'outils. Elle vous permet d'établir une connexion à votre espace d'hébergement, de naviguer dans l'arborescence de vos dossiers et fichiers, de consulter l'historique de vos actions, ainsi que de nombreuses autres actions.
+- En-dessous se trouve le contenu que vous souhaitez afficher. Par exemple, si vous cliquez sur l'icône `History`{.action}, la liste des vos actions y apparaitra.
 
 ![hosting](images/start-page.png){.thumbnail}
 
-**Personnaliser l'affichage de Cyberduck** Il est possible de personnaliser l'affichage de Cyberduck afin de le rendre plus efficace et plus personnel.
+### Personnaliser l'affichage de Cyberduck
 
-Pour effectuer cette manipulation, cliquez sur Présentation puis sur Personnaliser la barre d'outils....
+Vous pouvez personnaliser l'affichage de Cyberduck afin de le rendre plus efficace et personnel.
 
-Sur le cadre qui apparaît, faites glisser les éléments souhaités vers la barre d'outils. Pour valider vos modifications, cliquez sur Terminé
+Dans le menu principal, tout en haut de l'interface, cliquez sur `View`{.action} puis sur `Customize Toolbar...`{.action}.
+
+![hosting](images/customize-toolbar.png){.thumbnail}
+
+Dans la fenêtre qui apparaît, faites glisser les éléments souhaités vers la barre d'outils. Par exemple, si vous voulez ajouter une icône `Download`{.action} dans votre barre d'outils, glissez et déposez l'icône `Download`{.action} vers la barre d'outils. Pour valider vos modifications, cliquez sur `Done`{.action}.
 
 ![hosting](images/customize-display.png){.thumbnail}
 
-## Utiliser Cyberduck
+### Utiliser Cyberduck
 
-### Connexion FTP
-Afin de pouvoir vous connecter à votre espace d'hébergement (FTP), suivez les étapes ci-dessous :
+#### Connexion SFTP
 
-**1.**  Cliquez sur Nouvelle connexion en haut à gauche
-
-**2.**  Renseignez dans la nouvelle fenêtre vos informations de connexion à votre espace FTP :
-
-- Serveur FTP
-- Nom d'utilisateur
-- Mot de passe
-- Port (21)
-
-![hosting](images/ftp-connection.png){.thumbnail}
-
-> [!success]
+> [!warning]
 >
-> - 
-> Vous avez la possibilité d'enregistrer votre mot de passe dans
-> Cyberduck en cochant Ajouter au trousseau d'accès . Ce choix n'est
-> pas obligatoire ; en ne cochant pas le case, vous devrez renseigner
-> le mot de passe afin de vous reconnecter à votre espace
-> d'hébergement.
-> - 
-> Si vous ne connaissez pas vos identifiants FTP, reportez-vous au
-> guide ci-contre : Récupérer mes identifiants
-> FTP
-> .
-> 
-> 
-
-Un message d'avertissement devrait apparaître vous informant que le serveur supporte les connexions encryptées (SSL).
-
-- Notre serveur n'étant pas compatible avec le FTP-SSL , vous devez cochez Ne plus afficher et sélectionner impérativement le choix Continuer .
-- Si vous souhaitez utiliser une connexion sécurisée, vous devrez utiliser une [connexion SFTP](#utiliser_cyberduck_connexion_sftp){.external} .
-
-![hosting](images/ftp-ssl-connection.png){.thumbnail}
-
-> [!alert]
+> Pour des raisons de sécurité, se connecter en FTP n'est pas recommandé. La plupart des systèmes d'exploitation interdisent désormais la possibilité de se connecter en FTP. Préférez donc une connexion SFTP.
 >
-> - 
-> Si vous ne savez pas si l'accès SSH est compris dans votre offre,
-> reportez-vous aux descriptifs de nos
-> offres .
-> - 
-> Si vous n'êtes toujours pas sûr de votre choix, préférez par défaut
-> Continuer . Le serveur refusera la connexion si vous ne bénéficiez
-> pas de l'accès SSH dans votre offre.
-> 
-> 
 
-> [!success]
->
-> - 
-> Nous vous conseillons d'enregistrer vos informations de connexion via
-> un Signet . Ceci vous permettra de garder en mémoire certaines
-> informations de connexion.
-> - 
-> Consultez cette partie du guide si besoin : Qu'est-ce qu'un Signet
-> ? .
-> 
-> 
+Afin de pouvoir vous connecter à votre espace d'hébergement web, suivez les étapes ci-dessous :
 
-### Connexion SFTP
-Si votre offre est compatible avec un accès SSH, vous avez dès lors la possibilité de vous connecter en SFTP. Il est impératif de bénéficier de cet accès pour que la connexion SFTP puisse fonctionner.
+**1.**  Dans la barre d'outils, cliquez sur `Open Connection`{.action}
 
-> [!alert]
->
-> - 
-> Si vous ne savez pas si l'accès SSH est compris dans votre offre,
-> reportez-vous aux descriptifs de nos
-> offres .
-> - 
-> Si vous n'êtes toujours pas sûr de votre choix, préférez une
-> Connexion FTP plutôt que SFTP.
-> Le serveur refusera la connexion si vous ne bénéficiez pas de l'accès
-> SSH dans votre offre.
-> 
-> 
+**2.**  Dans le menu déroulant (cadre orange de l'image), sélectionnez `SFTP (SSH File Transfert Protocol)`{.action}
 
-Afin de pouvoir vous connecter à votre espace d'hébergement, suivez les étapes ci-dessous :
+**3.**  Renseignez les informations de connexion à votre espace FTP :
 
-**1.**  Cliquez sur Nouvelle connexion en haut à gauche
-
-**2.**  Sélectionnez dans le menu déroulant SFTP (Protocole de transfert de fichiers via SSH) (cadre orange de l'image)
-
-**3.**  Renseignez vos informations de connexion à votre espace FTP :
-
-- Serveur FTP
-- Nom d'utilisateur
-- Mot de passe
+- Server (Serveur)
+- Username (Nom d'utilisateur)
+- Password (Mot de passe)
 - Port (22)
 
 ![hosting](images/sftp-connection.png){.thumbnail}
 
 > [!success]
 >
-> - 
-> Vous avez la possibilité d'enregistrer votre mot de passe dans
-> Cyberduck en cochant Ajouter au trousseau d'accès . Ce choix n'est
-> pas obligatoire ; en ne cochant pas le case, vous devrez renseigner
-> le mot de passe afin de vous reconnecter à votre espace
-> d'hébergement.
-> - 
-> Si vous ne connaissez pas vos identifiants FTP, reportez-vous au
-> guide ci-contre : Récupérer mes identifiants
-> FTP
-> .
-> 
+> - Vous avez la possibilité d'enregistrer votre mot de passe dans Cyberduck en cochant `Add to keychain`{.action}. Si vous ne cochez pas la case, vous devrez renseigner le mot de passe afin de vous reconnecter à votre espace d'hébergement web.
+> - Si vous ne connaissez pas toutes vos informations FTP (serveur, identifiants etc.), reportez-vous au guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
 > 
 
-Lorsque vous effectuez une première connexion vers votre espace d'hébergement, une fenêtre Lhôte est actuellement inconnu du système apparaîtra.
-
-- Cochez la case Toujours puis cliquez sur Permettre . Ceci vous permettra de certifier définitivement l'hôte de connexion (qui est OVH).
-
-![hosting](images/host-unknow-confirmation.png){.thumbnail}
+Lorsque vous effectuez une première connexion vers votre espace d'hébergement web, une fenêtre portant le titre `Modified fingerprint`{.action} s'affiche. Cochez la case `Always`{.action} puis validez. Ceci vous permettra de certifier définitivement l'hôte de connexion (OVHcloud).
 
 > [!success]
 >
-> - 
-> Nous vous conseillons d'enregistrer vos informations de connexion via
-> un Signet . Ceci vous permettra de garder en mémoire certaines
-> informations de connexion.
-> - 
-> Consultez cette partie du guide si besoin : Qu'est-ce qu'un Signet
-> ? .
-> 
+> - Nous vous conseillons d'enregistrer vos informations de connexion via un signet. Cela vous permettra de garder en mémoire certaines informations de connexion.
+> - Consultez cette partie du guide : [Qu'est-ce qu'un signet ?](#signet)
 > 
 
-### Erreurs de connexion
-Lors d'une tentative de connexion à votre espace d'hébergement, il est possible qu'une erreur apparaisse dans Cyberduck. Vous trouverez ci-dessous les 2 erreurs les plus fréquentes que vous pourrez rencontrer. **Ouverture de session échouée** Ce message est également accompagné de la mention 530 Login authentification failed. Dans la majorité des cas, cette erreur est liée aux identifiants que vous avez renseignés : ces derniers sont sûrement erronés.
+#### Erreurs de connexion
 
-- Vous devez par conséquent vérifier les informations de connexion que vous avez renseignées
-- Si nécessaire, vous devrez également modifier le Signet que vous avez créé (en le sélectionnant et en cliquant sur le logo en forme de crayon)
+Lors d'une tentative de connexion à votre espace d'hébergement web, il est possible qu'une erreur survienne. Voici les 2 erreurs les plus fréquentes que vous pouvez rencontrer.
+
+- `Connection failed (<server-SFTP>) - DNS lookup for <server> failed`
+
+Dans la majorité des cas, cette erreur est liée aux identifiants que vous avez renseignés et qui sont probablement erronés. Vous devez donc vérifier les informations de connexion que vous avez renseignées.
 
 ![hosting](images/open-session-failed.png){.thumbnail}
 
 > [!success]
 >
-> - 
-> Si vous ne connaissez pas vos identifiants FTP, reportez-vous au
-> guide ci-contre : Récupérer mes identifiants
-> FTP
-> .
-> 
+> - Si vous ne connaissez pas toutes vos informations FTP (serveur, identifiants, etc.), reportez-vous au guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
 > 
 
-**Échec de la connexion** Ce message est également accompagné de la mention Timed out waiting for initial connect reply. Ce message signifie dans la grande majorité des cas que l'hôte n'est pas joignable : ce dernier est sûrement erroné ou non joignable.
+- `Connection failed (<server-SFTP>) - Operation timed out`
 
-- Vous devrez par conséquent vérifier les informations de connexion que vous avez renseignées
-- Si nécessaire, vous devrez également modifier le Signet que vous avez créé (en le sélectionnant et en cliquant sur le logo en forme de crayon)
+Ce message est également accompagné de la mention `Operation timed out`. Ce message signifie généralement que l'hôte n'est pas joignable ou erroné. Vous devez vérifier les informations de connexion que vous avez renseignées.
 
-Ceci peut également provenir d'un parefeu ou du réseau local bloquant le port 21 ou 22 qui sont utilisés pour se connecter au FTP. Vous devrez vérifier votre configuration personnelle dans ce cas.
+Cette erreur peut également provenir d'un pare-feu ou du réseau local bloquant le port 21 ou 22 qui sont utilisés pour se connecter au serveur. Dans ce cas, vous devez vérifier votre configuration personnelle.
 
 ![hosting](images/connection-failed.png){.thumbnail}
 
-> [!success]
+> [!primary]
 >
-> - 
-> Pour rappel, l'hôte de connexion pour votre espace d'hébergement est
-> ftp.votre-domaine.tld (remplacez par votre domaine) ou
-> ftp.cluster0XX.hosting.ovh.net (remplacez les XXX par votre numéro de
-> cluster).
-> - 
-> Si besoin, vous pouvez vous reporter au guide ci-contre : Récupérer
-> mes identifiants
-> FTP
-> .
-> 
-> 
+> - Pour rappel, l'hôte de connexion pour votre espace d'hébergement est `ftp.cluster0XX.hosting.ovh.net` (remplacez les `XXX` par votre numéro de cluster).
+> - Si besoin, reportez-vous au guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
+>
 
-### Qu'est-ce qu'un Signet ?
-Pour faciliter l'accès à votre espace d'hébergement (FTP), nous vous conseillons d'utiliser le système des Signets. Ceci permet de pré-enregistrer vos informations de connexion.
+<a name="signet"></a>
+
+### Qu'est-ce qu'un signet ?
+
+Pour faciliter l'accès à votre espace d'hébergement web, nous vous recommandons d'utiliser les signets. Ils permettent de pré-enregistrer vos informations de connexion, vous évitant ainsi de rentrer celles-ci à chaque connexion.
 
 Pour effectuer cet ajout :
 
-- Connectez-vous à votre espace d'hébergement (FTP ou SFTP)
-- Placez-vous sur l'affichage des Signets (cadre bleu puis cadre vert de l'image)
-- Cliquez sur le logo en forme de [+] (cadre orange) sur le bas à gauche de la fenêtre
+1. Connectez-vous à l'espace FRP de votre hébergement web.
+2. En haut de l'interface, dans la barre d'outils, cliquez sur l'onglet `Bookmarks`{.action} (cadre orange dans l'image ci-dessous).
+3. En bas à gauche de la fenêtre, cliquez sur l'icône `+`{.action} pour ajouter un nouveau signet.
 
-![hosting](images/signet.png){.thumbnail}
+![hosting](images/add-signet.png){.thumbnail}
 
-Une nouvelle fenêtre s'affiche contenant vos informations de connexion. Au prochain démarrage de Cyberduck, vous pourrez double-cliquer sur le signet pour vous connecter plus rapidement.
+Une fenêtre s'affiche contenant vos informations de connexion, ainsi qu'une nouvelle ligne dans la liste des signets. Au prochain démarrage de Cyberduck, vous pourrez double-cliquer sur le signet pour vous connecter plus rapidement.
 
-### Transferer des fichiers
-Le transfert de fichiers vous permet de déposer sur votre espace d'hébergement votre site internet. Par défaut, vous devez déposer sur cet espace vos fichiers dans le répertoire (dossier) www.
+### Transférer des fichiers
 
-Vous pouvez transférer vos fichiers via plusieurs moyens. **Via glissé-déposé** Pour réaliser le transfert de vos fichiers en FTP, vous pouvez simplement les sélectionner et réaliser un glissé-déposé de la fenêtre du dossier local (vos fichiers sur votre machine) vers la fenêtre de Cyberduck (votre espace d'hébergement).
+Le transfert de fichiers vous permet de déposer votre site internet sur votre espace d'hébergement web. Par défaut, vous devez déposer vos fichiers dans le répertoire (dossier) `www`. Vous pouvez transférer vos fichiers via plusieurs méthodes.
 
-- Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur. Une fenêtre s'affichera en conséquence.
+#### Via un glisser-déposer
+
+Pour réaliser le transfert de vos fichiers, sélectionnez et réalisez un glisser-déposer depuis la fenêtre du dossier local (vos fichiers sur votre machine) vers la fenêtre de Cyberduck (espace de stockage FTP de votre hébergement web). Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur. Une fenêtre s'affichera alors.
 
 ![hosting](images/drag-drop-transfert-file.png){.thumbnail}
 
-**Via l'interface Transférer** Vous avez la possibilité d'utiliser l'interface Transférer qui ouvrira une fenêtre et vous permettra d'explorer vos fichiers. Vous devrez sélectionner les fichiers souhaités puis cliquer sur Transférer.
+#### Via le menu principal
 
-- Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur. Une fenêtre s'affichera en conséquence.
+Dans le menu de Cyberduck, cliquez sur `File`{.action} puis sur `Upload...`{.action}. Sélectionnez les fichiers que vous souhaitez transférer sur le serveur puis cliquez sur `Upload`{.action}.
 
 ![hosting](images/transfert-files.png){.thumbnail}
 
-**Visionner les transferts en cours** Vous avez la possibilité de visionner l'historique des transferts vers votre espace d'hébergement. Vous pourrez ainsi retrouver :
+### Visionner les transferts en cours
 
-- les fichiers en attente d'être déposés sur le serveur distant encore présents dans la file d'attente (ou en cours d'envoi)
-- les fichiers pour lesquels le transfert a échoué
-- les fichiers pour lesquels le transfert est réussi sur l'hébergement distant
+Vous pouvez visionner l'historique des transferts effectués vers  l'espace de stockage FTP de votre hébergement web. Vous pourrez ainsi retrouver :
+
+- les fichiers en attente d'être déposés sur le serveur distant (encore présents dans la file d'attente ou en cours d'envoi) ;
+- les fichiers pour lesquels le transfert a échoué ;
+- les fichiers pour lesquels le transfert est réussi sur l'hébergement web distant.
 
 Cette fenêtre s'affiche de deux manières différentes :
 
-- automatiquement lorsqu'un transfert est initié
-- en cliquant sur Fenêtre puis Transferts
+- automatiquement lorsqu'un transfert est initié ;
+- en cliquant sur `Window`{.action} (dans le menu principal) puis `Transfers`{.action}.
 
-![hosting](images/transfert-files-progression.png){.thumbnail}
+![hosting](images/transfert-files-list.png){.thumbnail}
 
-### Actions possibles sur un fichier/dossier
-En sélectionnant un fichier ou un dossier présent sur votre espace d'hébergement (dans la fenêtre de Cyberduck), vous aurez la possibilité d'effectuer diverses Actions.
+### Actions possibles sur un fichier / dossier
 
-Ces dernières vous permettront notamment de :
+Double-cliquez sur un fichier ou un dossier pour effectuer les actions suivantes :
 
-- Lire les informations d'un fichier ou d'un dossier et d'en modifier les droits (CHMOD)
-- Éditer le fichier avec l'application de votre choix
-- Renommer le fichier ou le dossier
-- Supprimer le fichier ou le dossier
-- Télécharger le ou les éléments sélectionné(s)
-- Créer un nouveau dossier ou fichier
+- Lire les informations d'un fichier ou d'un dossier et en modifier les droits (CHMOD).
+- Éditer le fichier avec l'application de votre choix.
+- Renommer le fichier ou le dossier.
+- Supprimer le fichier ou le dossier.
+- Télécharger le ou les éléments sélectionné(s).
+- Créer un nouveau dossier ou fichier.
 
-La liste ci-dessus n'est pas exhaustive, il existe d'autres actions possibles. Rapprochez-vous du site officiel de Cyberduck en cas de besoin.
+La liste ci-dessus n'est pas exhaustive, d'autres actions sont possibles. Consultez le [site officiel](https://cyberduck.io/) de Cyberduck si besoin.
 
-![hosting](images/action-on-folder.png){.thumbnail}
+### Informations utiles
 
-## Informations utiles
+#### Droits des fichiers et dossiers
 
-### Droits des fichiers et dossiers
-Vous avez la possibilité de modifier les droits (CHMOD) de vos fichiers et de vos dossiers présents sur l'hébergement.
+Vous pouvez modifier les droits (CHMOD) de vos fichiers et de vos dossiers présents sur l'hébergement web.
 
 Ces derniers se répartissent en 3 familles :
 
-- Propriétaire
-- Groupe
-- Publiques (autres).
+- Owner (Propriétaire)
+- Group (Groupe)
+- Others (Autres)
 
-Afin d'accéder à cette interface, sélectionnez le(s) fichier(s) ou dossier(s) souhaité(s) puis dans Actions, cliquez sur "Lire les informations".
-
-Sur la nouvelle fenêtre, cliquez sur Permissions puis effectuez les modifications souhaitées :
-
-- Permissions UNIX : la valeur mettra à jour automatiquement les cases des 3 familles du dessous
-- Cochez les cases souhaitées : la valeur se mettra à jour automatiquement pour les Permissions UNIX
+Double-cliquez sur un fichier ou un dossier puis sélectionnez `Info`{.action}. La fenêtre suivante s'affiche :
 
 ![hosting](images/unix-permissions.png){.thumbnail}
 
-### Reouverture du site
-Vous avez la possibilité d'effectuer la réouverture de votre site en utilisant une commande personnalisée.
+Cliquez sur l'onglet `Permissions`{.action} puis effectuez les modifications souhaitées :
 
-Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de votre espace d'hébergement par OVHcloud suite à un hack.
+- UNIX Permissions : cette valeur définit les droits des 3 familles (Propriétaire, groupe et autres).
+- Cochez les cases souhaitées : la valeur se mettra à jour automatiquement pour les permissions UNIX.
 
-Pour utiliser une commande :
+#### Réouverture du site web
 
-- Cliquez sur Aller
-- Cliquez sur Envoyer une commande...
+Vous pouvez effectuer la réouverture de votre site web en utilisant une commande personnalisée.
+
+Dans la plupart des cas, cette manipulation fait suite à une fermeture par sécurité de l'espace de stockage FTP de votre hébergement web par OVHcloud suite à un piratage.
+
+Dans le menu de Cyberduck, cliquez sur `Go`{.action} puis sur `Send command...`{.action}.
 
 ![hosting](images/send-ftp-command.png){.thumbnail}
 
-Sur la nouvelle fenêtre, insérez la commande :
+Dans la nouvelle fenêtre, insérez la commande `CHMOD 705 /` puis cliquez sur `Send`{.action} pour éxécuter la commande. En confirmation, le message `200 Permissions changed on /` devrait apparaître dans l'encadré du dessous.
 
-- CHMOD 705 /
-- Cliquez sur Envoyer
-
-En confirmation, le message 200 Permissions changed on / devrait apparaître dans l'encadré du dessous.
-
-- Pour vérifier que la réouverture est bien effective, testez tout simplement votre site depuis un navigateur Internet.
+Pour vérifier que la réouverture est bien effective, connectez-vous à votre site web depuis un navigateur web.
 
 ![hosting](images/site-chmod-705-command.png){.thumbnail}
 
-> [!alert]
+> [!warning]
 >
-> - 
-> Cette commande n'est pas fonctionnelle en SFTP. Pour l'effectuer,
-> utilisez une connexion FTP .
-> - 
-> Pour rappel, veillez à tester l'affichage après 3 heures maximum. En
-> effet, nos robots passent toutes les 3 heures pour vérifier les
-> changements d'état. En fonction du moment où la manipulation
-> ci-dessus sera réalisée, le rétablissement de l'affichage de votre
-> site pourra donc être plus ou moins rapide.
-> - 
-> Si le délai des 3 heures est passé et que votre site n'est toujours
-> pas en ligne, veuillez contacter notre support.
-> 
-> 
+> - Cette commande n'est pas fonctionnelle en SFTP. Pour l'effectuer, utilisez une connexion FTP.
+> - Pour rappel, veillez à tester l'affichage après 3 heures maximum. En effet, nos robots passent toutes les 3 heures pour vérifier les changements d'état. En fonction du moment où la manipulation sera réalisée, le rétablissement de l'affichage de votre site pourra donc être plus ou moins rapide.
+> - Si le délai des 3 heures est écoulé et que votre site web n'est toujours pas en ligne, veuillez contacter le support OVHcloud.
+>
 
-### Connaitre le serveur de connexion
-Dans certains cas, notre support peut être amené à vous demander le serveur sur lequel s'est connecté Cyberduck.
+## Aller plus loin <a name="go-further"></a>
 
-Cette vérification peut par exemple intervenir si vous constatez des lenteurs ou des anomalies diverses avec votre espace FTP.
+[Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Pour cela, vous devez au préalable activer le journal :
-
-- Cliquez sur Présentation
-- Cliquez sur Afficher/masquer le tiroir du journal
-
-Un cadre devrait apparaître en dessous de la fenêtre de Cyberduck. Par la suite :
-
-- Connectez-vous à votre espace FTP
-- Remontez tout en haut du cadre du journal
-- Relevez le webmXXX
-
-![hosting](images/show-hidden-daily.png){.thumbnail}
-
-## Aller plus loin
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -137,13 +137,13 @@ Zapisz zmiany i wyjdź z edytora. Nowy odcisk klucza musi zostać zaakceptowany 
 W systemie Windows określono również umiejscowienie pliku `known_hosts` i linii do usunięcia, np.:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 Aby rozwiązać ten problem, użyj następującego polecenia z adresem IP Twojego serwera:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 Możesz również uzyskać dostęp do tego folderu, kliknąć prawym przyciskiem myszy plik i otworzyć go w aplikacji Notatnik.
@@ -173,6 +173,8 @@ Jak zwykle, ostrzeżenie o odciskach palców pojawia się przy pierwszym logowan
 Więcej informacji znajdziesz w oficjalnej dokumentacji FAQ oraz w dokumentacji PuTTY.
 
 ## Sprawdź również <a name="gofurther"></a>
+
+[Konfiguracja kont użytkowników i dostępu root na serwerze](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Tworzenie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

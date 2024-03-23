@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - Einen Minecraft-Server auf einem VPS oder Dedicated Server einrichten'
+title: 'Einen Minecraft-Server auf einem VPS oder Dedicated Server einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren eigenen Minecraft-Server installieren'
 updated: 2021-06-29
 ---
@@ -17,16 +17,17 @@ Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen s
 **Diese Anleitung erklärt, wie Sie einen Minecraft-Server Java Edition auf einem OVHcloud VPS starten und die Verbindung testen.**
 
 > [!warning]
->In diesem Tutorial zeigen wir Ihnen (unter anderem) die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
+> In diesem Tutorial erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
->Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVHcloud Community. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
+
 
 ## Voraussetzungen
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
 - Sie haben eine GNU/Linux Distribution auf dem Server installiert.
-- Administrator-Zugang (root) über SSH auf Ihren Server.
+- Administrator-Zugang (sudo) über SSH auf Ihren Server.
 - Sie verfügen über ein grundlegendes Verständnis der GNU/Linux-Administration.
 
 ## In der praktischen Anwendung

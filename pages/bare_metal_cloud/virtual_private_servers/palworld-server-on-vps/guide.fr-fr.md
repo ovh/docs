@@ -1,20 +1,20 @@
 ---
-title: 'Tutoriel - Comment créer un serveur Palworld'
-excerpt: 'Découvrez comment installer votre propre serveur Palworld sur un VPS ou un Serveur Dédié OVHcloud'
-updated: 2024-02-06
+title: 'Comment créer un serveur compatible avec Palworld'
+excerpt: 'Découvrez comment installer votre propre serveur compatible avec Palworld sur un VPS ou un Serveur Dédié OVHcloud'
+updated: 2024-02-23
 ---
 
 ## Objectif
 
-Développé par Pocket Pair, Palworld est un jeu qui mélange des éléments de survie, de fabrication d'objets et d'aventure, le tout dans un monde ouvert, peuplé par des créatures appelées « Pals ». Posséder son propre serveur dans un jeu comme Palworld offre plusieurs avantages, comme le contrôle total sur l'environnement de jeu et sur la communauté, l'amélioration des performances et de l'expérience de jeu, ou encore la possibilité d'organiser des évènements spéciaux.
+Développé par Pocket Pair, Palworld est un jeu vidéo qui mélange des éléments de survie, de fabrication d'objets et d'aventure, le tout dans un monde ouvert, peuplé par des créatures appelées « Pals ». Posséder son propre serveur pour jouer à un jeu comme Palworld offre plusieurs avantages, comme le contrôle total sur l'environnement de jeu et sur la communauté, l'amélioration des performances et de l'expérience de jeu, ou encore la possibilité d'organiser des évènements spéciaux.
 
-**Ce tutoriel décrit comment créer un serveur Palworld sur un VPS ou un Serveur Dédié OVHcloud à l'aide de LinuxGSM. Le temps d'installation est estimé à moins de 10 minutes.**
+**Ce tutoriel décrit comment créer un serveur compatible avec Palworld sur un VPS ou un Serveur Dédié OVHcloud à l'aide de LinuxGSM. Le temps d'installation est estimé à moins de 10 minutes.**
 
 ## Prérequis
 
 - Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
 - Avoir installé une distribution GNU/Linux sur le serveur
-- Disposer d'un accès administrateur (root) via SSH à votre serveur
+- Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 - Avoir une compréhension basique de l'administration GNU/Linux
 
 > [!warning]
@@ -41,7 +41,7 @@ Sur [LinuxGSM](https://linuxgsm.com/servers/pwserver/), rendez-vous dans la part
 > Si vous rencontrez une erreur de type : `E: Package 'netcat' has no installation candidate`, installez `netcat-traditional` avec la commande suivante : `sudo apt install netcat-traditional`.
 >
 
-### Installer le serveur Palworld
+### Installer le serveur
 
 Avant de continuer, assurez-vous que toutes les dépendances ont bien été installées.
 
@@ -88,7 +88,7 @@ Suivez les instructions à l'écran et appuyez sur la touche `Entrée`{.action} 
 > Basculez vers votre utilisateur ayant les droits sudo avec la commande `su - <user>`. Installez les dépendances manquantes avec la commande : `sudo apt install distro-info libsdl2-2.0-0:i386 netcat-openbsd`. Basculez à nouveau vers votre utilisateur `pwserver` et relancez l'installation : `./pwserver install`
 >
 
-Votre serveur Palworld est maintenant installé sur votre VPS OVHcloud.
+Votre serveur compatible avec Palworld est maintenant installé sur votre VPS OVHcloud. Maintenant, à vous de jouer !
 
 Pour connaître la liste des commandes disponibles, consultez la partie « Basic Usage » de [LinuxGSM](https://linuxgsm.com/servers/pwserver/).
 

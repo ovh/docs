@@ -1,7 +1,7 @@
 ---
 title: Replacing an SSH key pair
 excerpt: Find out how restore server access by replacing an SSH key pair with a new one in case your private key is lost
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 ## Objective
@@ -50,10 +50,24 @@ Follow the steps in the rescue mode guide to connect to your server and mount yo
 - [Dedicated server rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 - [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
+In order to proceed, your system partition must be mounted and you must have write access to your file system.
+
+This means that you have entered a version of the following command into the rescue mode shell:
+
+```bash
+chroot path/to/partition/mountpoint
+```
+
+The exact command is dependent on the mountpoint you used. For example, if you have mounted your partition at `/mnt`, it would be the following:
+
+```bash
+chroot /mnt/
+```
+
 When you have access to your files, open the "authorized_keys" file concerned with a text editor. This file stores SSH keys and is located in the `home` folder of the user with which you connect to your server. (Replace "USER_NAME" with your actual user name.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copy and paste your new public key (created in step 2) into the file. It should look similar to the following example:

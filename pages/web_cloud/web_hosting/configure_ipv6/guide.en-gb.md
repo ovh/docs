@@ -1,7 +1,7 @@
 ---
 title: "Configuring IPv6 for your website"
 excerpt: "Find out how to make your website available via an IPv6 address"
-updated: 2023-02-10
+updated: 2024-03-12
 ---
 
 ## Objective

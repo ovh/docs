@@ -1,7 +1,7 @@
 ---
 title: "Przekierowanie domeny zarządzanej w OVHcloud"
 excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud"
-updated: 2023-10-24
+updated: 2024-03-08
 ---
 
 > [!primary]

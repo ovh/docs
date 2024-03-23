@@ -1,7 +1,7 @@
 ---
 title: Configuring a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -148,7 +148,7 @@ Click on the tab below corresponding to your solution.
 > [!tabs]
 > **Exchange**
 >>
->> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
+>> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
 >>
 >> To the right of the domain name concerned, you can see that the `DKIM` box is gray.
 >>
@@ -156,7 +156,7 @@ Click on the tab below corresponding to your solution.
 >>
 > **Email Pro**
 >>
->> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then on the name of the Email Pro service concerned. Finally, go to the `Associated domains`{.action} tab.
+>> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then on the name of the Email Pro service concerned. Finally, go to the `Associated domains`{.action} tab.
 >>
 >> To the right of the domain name concerned, you can see that the `DKIM` box is gray.
 >>
@@ -363,7 +363,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!success]
 >> >
->> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the section [**The different states of DKIM**](#dkim-status)  of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.<br><br> **If you have created two selectors**, the second selector should have the `status:` value `ready`.
+>> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the section [**The different states of DKIM**](#dkim-status) of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.<br><br> **If you have created two selectors**, the second selector should have the `status:` value `ready`.
 >>
 
 ##### **For Email Pro** <a name="confemp"></a>
@@ -378,7 +378,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >> <br>
 >>
@@ -393,7 +393,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 > **2. Create a selector**
 >> You will now create a selector, generate its key pair, and generate the DNS record associated with the domain name.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > We recommend that you do this twice for each of the selectors listed above. The second selector will allow you to change the key pair when necessary. Please refer to our use case ["How to change a DKIM key pair"](#2selectors).
@@ -759,7 +759,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 The CNAME record is an alias. This means that the target value points to a URL that will itself provide the DKIM record to the server that will query the CNAME record. This type of CNAME record for setting the DKIM is common when using a Microsoft email server.
 
-This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution. This way, your email solution provider can manage security and update the DKIM for you. This way, your email solution provider can manage the security and update of the DKIM for you.
+This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution. This way, your email solution provider can manage security and update the DKIM for you.
 
 ### Test your DKIM <a name="test-dkim"></a>
 
@@ -824,13 +824,13 @@ Click on the tab below corresponding to your solution to check the status of the
 > [!tabs]
 > **Exchange**
 >>
->> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Microsoft`{.action} then on `Exchange`{.action}. Finally, click on the name of the Exchange service concerned.<br><br> In the `Associated domains`{.action} section, check the colour of the `DKIM` icon to the right of the domain name concerned (see the image below).
+>> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} tab, click `Microsoft`{.action} then on `Exchange`{.action}. Finally, click on the name of the Exchange service concerned.<br><br> In the `Associated domains`{.action} section, check the colour of the `DKIM` icon to the right of the domain name concerned (see the image below).
 >>
 >>![email](images/red-dkim.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then on the name of the Email Pro service concerned.<br><br> In the `Associated domains`{.action} section, check the colour of the `DKIM` icon to the right of the domain name concerned (see the image below).
+>> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then on the name of the Email Pro service concerned.<br><br> In the `Associated domains`{.action} section, check the colour of the `DKIM` icon to the right of the domain name concerned (see the image below).
 >>
 >>![email](images/red-dkim.png){.thumbnail}
 

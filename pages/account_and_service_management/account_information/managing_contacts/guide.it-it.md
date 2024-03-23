@@ -1,7 +1,7 @@
 ---
 title: 'Gestire i contatti dei servizi OVHcloud'
 excerpt: 'Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVHcloud'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 ## Obiettivo
@@ -39,6 +39,10 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 - Il vecchio e il nuovo contatto di fatturazione devono essere in regola con i pagamenti dei propri servizi
 
 ## Procedura
+
+> [!primary]
+> La gestione dei contatti è possibile solo tra due account OVHcloud situati nella stessa zona geografica.
+> Ad esempio, non è possibile gestire i contatti tra un account in Europa e un account in Canada.
 
 ### Accedi alla pagina di gestione dei contatti <a name="gestion_des_contacts"></a>
 

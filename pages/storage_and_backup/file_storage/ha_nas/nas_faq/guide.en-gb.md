@@ -1,7 +1,7 @@
 ---
 title: HA-NAS - Frequently Asked Questions
 excerpt: Do you have questions about HA-NAS? Here are the most frequently asked questions
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 ## Objective
@@ -109,6 +109,14 @@ No, you cannot install operating systems on HA-NAS solutions.
 ### Can the allocated space be partitioned?
 
 Yes, you will need to create one or several partitions, depending on how you will use it. There are no limits to creating partitions.
+
+### How can I change the storage capacity on my HA-NAS?
+
+Currently it is not yet possible to dynamically scale up or down our HA-NAS. To do so, you have to:
+
+1. Order a new HA-NAS with the desired capacity, thus accessing both the new and the previous HA-NAS.
+2. Migrate your data by following the guide [Migrating data from one HA-NAS to another via NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration).
+3. Cancel the old HA-NAS.
 
 ## Snapshots
 

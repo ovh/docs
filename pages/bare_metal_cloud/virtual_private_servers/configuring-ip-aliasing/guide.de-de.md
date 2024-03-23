@@ -29,7 +29,7 @@ Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für b
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Account.
 - Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse.
-- Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH oder GUI. 
+- Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
 ## In der praktischen Anwendung

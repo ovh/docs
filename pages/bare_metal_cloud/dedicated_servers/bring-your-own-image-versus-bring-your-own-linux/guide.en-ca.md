@@ -6,7 +6,7 @@ updated: 2024-01-31
 
 ## Objective
 
-Despite OVHcloud provides its customers with [a wide range of Operating System (OS) for your dedicated servers](https://www.ovhcloud.com/en-ca/bare-metal/os/), you might have good reasons to need to install a custom OS:
+Although OVHcloud provides its customers with [a wide range of Operating System (OS) for your dedicated servers](https://www.ovhcloud.com/en-ca/bare-metal/os/), you might have good reasons to need to install a custom OS:
 
 - OS is not part of [the OVHcloud catalog](https://www.ovhcloud.com/en-ca/bare-metal/os/),
 - Specific OS build version,
@@ -14,10 +14,10 @@ Despite OVHcloud provides its customers with [a wide range of Operating System (
 
 There are two different services that you can use for installing a custom OS on a dedicated server:
 
-- **Bring You Own Image** (BYOI),
-- **Bring You Own Linux** (BYOLinux).
+- **Bring Your Own Image** (BYOI),
+- **Bring Your Own Linux** (BYOLinux).
 
-This page is about tearing down the different features benefits between the **Bring You Own Image** and the **Bring Your Own Linux** services.
+This page is about breaking down the feature differences between the **Bring Your Own Image** and the **Bring Your Own Linux** services.
 
 ## Features
 
@@ -37,5 +37,7 @@ This page is about tearing down the different features benefits between the **Br
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
 Join our user community on <https://community.ovh.com/en/>.

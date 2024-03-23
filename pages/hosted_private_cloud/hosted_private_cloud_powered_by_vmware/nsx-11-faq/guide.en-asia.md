@@ -1,7 +1,7 @@
 ---
 title: NSX - FAQ
 excerpt: Frequently asked questions on NSX
-updated: 2023-10-19
+updated: 2024-03-20
 ---
 
 ## Objective
@@ -19,6 +19,12 @@ All packs are based on days (1 day = 8 hours); 1 day, 2 days or more.
 The first approach is the same for all packs with a discovery phase but the duration of the pack will depend on the complexity of the environment and the customer maturity.
 
 This would be discussed with the PS team during a first assessment call.
+
+<a name="public ip"></a>
+
+### How can I protect my virtual machines exposed on the internet directly, with a Public IP?
+
+You can create virtual machines in the ovh-t0-public segment, and then secure your flows with the NSX Distributed Firewall.
 
 <a name="eofnsxv"></a>
 

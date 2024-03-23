@@ -1,7 +1,7 @@
 ---
 title: Austauschen eines SSH-Schlüsselpaars
 excerpt: Erfahren Sie hier, wie Sie Zugriff auf Ihren Server mit einem neuen SSH-Schlüsselpaar wiederherstellen, falls der private Schlüssel verloren ist
-updated: 2023-01-19
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -57,7 +57,7 @@ Folgen Sie den Anweisungen in der Anleitung zum Rescue-Modus, um sich mit Ihrem 
 Sobald Sie Zugriff auf Ihre Dateien haben, öffnen Sie die relevante Datei "authorized_keys" mit einem Texteditor. Diese Datei speichert SSH-Schlüssel und befindet sich im Verzeichnis `home` des Benutzers, mit dem Sie sich auf dem Server einloggen. (Ersetzen Sie "USER_NAME" mit Ihrem verwendeten Benutzernamen.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Kopieren Sie Ihren neuen öffentlichen Schlüssel (erstellt in Schritt 2) und fügen Sie ihn in die Datei ein. Es sollte dann ähnlich dem folgenden Beispiel aussehen:

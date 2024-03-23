@@ -1,7 +1,7 @@
 ---
 title: Getting started with Public Cloud Databases via API
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
-updated: 2021-09-03
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 ## Requirements
 
-- access to the [OVHcloud API](https://ca.api.ovh.com/){.external} (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
+- access to the [OVHcloud API](https://api.ovh.com/){.external} (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
 - a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 
 ## Instructions
@@ -21,7 +21,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 In order to create a database service, you will need to specify at minimum:
 
-- an _engine_, and its _version_ (e.g. "MongoDB v4.4")
+- an _engine_, and its _version_ (e.g. "MongoDB "6.0")
 - the _plan_ (e.g. "business")
 - the _nodes_ of the cluster (e.g. "3 nodes with 4 cores, 15 GiB memory, 100 GiB disk")
 
@@ -62,6 +62,10 @@ Use this endpoint to create a new database cluster:
 - **version**: the MongoDB version you want to use
 - **nodesPattern**: specify the _flavor_ and _region_, and the number of nodes you want to use
 - **nodeslist**: Leave this parameter undefined. It is another way to specify the list of nodes your cluster uses. As of today, multi-region and flavor-heterogeneous clusters are not supported. Hence it is easier to use **nodesPattern** to specify a number of same-region, same-flavor nodes.
+- **ipRestrictions**: The IP addresses blocks allowed to connect to your cluster.
+
+> [!primary]
+> For security reasons, the default network configuration does not allow any incoming connections. You must authorize a suitable IP address to successfully access your database.
 
 If you want to use public networking, you're all set. If you want to use private networking, you'll also want to specify:
 
@@ -79,22 +83,7 @@ The cluster will take a few minutes to become fully usable. You can check its st
 
 The call returns an object describing the cluster. Its **status** property will transition to `READY` when the cluster becomes available.
 
-### Step 4: Authorize the IP addresses or blocks you want to access your cluster from
-
-> [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorize the suitable IP addresses in order to successfully access your database.
-
-Declare the IP address blocks allowed to connect to your cluster with:
-
-> [!api]
-> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb/{clusterId}/ipRestriction
-
-- **description** is a human-readable description or label for the IP block
-- **ip** is a string representing an IP block or network, using the syntax `aaa.bbb.ccc.ddd/xy` -- If you want to specify a single IP address, use `aaa.bbb.ccc.ddd/32`
-
-You can add multiple allowed IP blocks.
-
-### Step 5: Reset the primary user password
+### Step 4: Reset the primary user password
 
 At this point you don't know your cluster primary user's password. List your cluster's users with:
 
@@ -111,7 +100,7 @@ Note the new password of the user to later be able to connect to the cluster.
 > [!warning]
 > That password won't ever be available later on: OVHcloud never stores users' passwords.
 
-### Step 6: Start using the cluster
+### Step 5: Start using the cluster
 
 You’ll find the cluster connection information in your Control Panel; you can now start using the cluster!
 

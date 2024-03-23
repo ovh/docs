@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Korzystanie z opcji Zonemaster'
-updated: 2023-06-06
+updated: 2024-03-08
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ updated: 2023-06-06
 
 ## Wprowadzenie
 
-[Zonemaster](https://zonemaster.fr/) jest narzędziem powstałym w wyniku współpracy między [AFNIC](https://www.afnic.fr/) (francuski rejestr) i [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (szwedzki rejestr). Umożliwia analizowanie konfiguracji DNS (Domain Name System) domeny i identyfikowanie elementów, które mogą zostać ulepszone lub usunięte.
+[Zonemaster](https://zonemaster.net/en/run-test) jest narzędziem powstałym w wyniku współpracy między [AFNIC](https://www.afnic.fr/en/) (francuski rejestr) i [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (szwedzki rejestr). Umożliwia analizowanie konfiguracji DNS (Domain Name System) domeny i identyfikowanie elementów, które mogą zostać ulepszone lub usunięte.
 
 > [!primary]
 >
@@ -34,7 +34,7 @@ Narzędzie Zonemaster umożliwia sprawdzenie konfiguracji DNS w Twojej domenie l
 
 Aby sprawdzić aktualną konfigurację domeny, wpisz nazwę domeny, następnie kliknij `Run`{.action}
 
-![Zrzut ekranu z formularza Zonemaster. Domena "mydomain.ovh" została zarejestrowana i jest gotowa do przetestowania.](images/run-domain-test.png){.thumbnail}
+![Zrzut ekranu z formularza Zonemaster. Domena "domain.tld" została zarejestrowana i jest gotowa do przetestowania.](images/run-domain-test.png){.thumbnail}
 
 Aby sprawdzić konfigurację DNS, która została przygotowana, ale nie została jeszcze zastosowana dla danej domeny, zaznacz kratkę `Options`{.action}, następnie wprowadź następujące informacje:
 
@@ -43,16 +43,16 @@ Aby sprawdzić konfigurację DNS, która została przygotowana, ale nie została
 
 Możesz również wymusić weryfikację przy użyciu wybranego protokołu IP poprzez `Disable IPv4` i `Disable IPv6`
 
-> **Przykład**:<br><br> Posiadasz domenę "mydomain.ovh", która aktualnie używa serwerów DNS "dns19.ovh.net" i "ns19.ovh.net". Skonfigurowałeś strefę DNS dla tej domeny na serwerach DNS "mydns.test.ovh" i "mydns2.test.ovh".<br>
+> **Przykład**:<br><br> Posiadasz domenę "domain.tld", która aktualnie używa serwerów DNS "dnsXX.ovh.net" i "nsXX.ovh.net". Skonfigurowałeś strefę DNS dla tej domeny na serwerach DNS "dns1.test.tld" i "dns2.test.tld".<br>
 >
-> Przed zmianą serwerów DNS, możesz przeprowadzić zaawansowane wyszukiwanie w polu `Options`{.action}, wprowadzając "mydns.test.ovh" i "mydns2.test.ovh" w rubrykach `Nameservers`.<br>
-> Zonemaster przeprowadzi test tak, jakby korzystał z serwerów "mydns.test.ovh" i "mydns2.test.ovh" na "mydomain.ovh".<br>
-> ![Zrzut ekranu z zaawansowanych opcji formularza Zonemaster. Dwa serwery nazw "mydns.test.ovh" i "mydns2.test.ovh" zostały wpisane w sekcji "Serwery nazw" formularza.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> Przed zmianą serwerów DNS, możesz przeprowadzić zaawansowane wyszukiwanie w polu `Options`{.action}, wprowadzając "dns1.test.tld" i "dns2.test.tld" w rubrykach `Nameservers`.<br>
+> Zonemaster przeprowadzi test tak, jakby korzystał z serwerów "dns1.test.tld" i "dns2.test.tld" na "domain.tld".<br>
+> ![Zrzut ekranu z zaawansowanych opcji formularza Zonemaster. Dwa serwery nazw "dns1.test.tld" i "dns2.test.tld" zostały wpisane w sekcji "Serwery nazw" formularza.](images/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Po wpisaniu nazwy domeny i kliknięciu na przycisk `Fetch NS from parent zone`{.action} i `Fetch DS from parent zone`{.action}, pojawią się serwery DNS przypisane do domeny wraz z informacjami o rekordzie DS (DNSSEC), jeśli domena została skonfigurowana.
-> ![Zrzut ekranu przedstawiający zaawansowane opcje formularza Zonemaster. Przycisk "Fetch NS from parent zone" jest podświetlony, a serwery nazw domeny „mydomain.ovh” są wstępnie wypełnione w sekcji Serwery nazw formularza.](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Zrzut ekranu przedstawiający zaawansowane opcje formularza Zonemaster. Przycisk "Fetch NS from parent zone" jest podświetlony, a serwery nazw domeny „domain.tld” są wstępnie wypełnione w sekcji Serwery nazw formularza.](images/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Rezultat
 
@@ -65,7 +65,7 @@ Po zatwierdzeniu formularza wyniki są klasyfikowane według kodu koloru:
 
 Dla każdego testu możesz uzyskać więcej informacji, na przykład, aby zrozumieć błąd w przypadku awarii lub tylko w celach informacyjnych.
 
-![Zrzut ekranu strony wyników Zonemaster dla domeny "mydomain.ovh". Sekcja "Address" jest rozwinięta.](images/domain-analysis.png){.thumbnail}
+![Zrzut ekranu strony wyników Zonemaster dla domeny "domain.tld". Sekcja "Address" jest rozwinięta.](images/domain-analysis.png){.thumbnail}
 
 ### Przydatne informacje
 

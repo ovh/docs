@@ -1,7 +1,7 @@
 ---
 title: Configure your advanced configuration
 excerpt: Advanced configuration for Public Cloud Databases engines
-updated: 2022-04-01
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -12,13 +12,14 @@ Public cloud database engines are managed services, which means that they are no
 >
 > Advanced configuration is available for the following Public Cloud Databases engines :
 >
-> - Cassandra   
-> - Kafka  
-> - Kafka Connect  
-> - MySQL  
-> - Opensearch  
-> - PostgreSQL  
-> - Redis  
+> - Cassandra
+> - Grafana
+> - Kafka
+> - Kafka Connect
+> - MySQL
+> - Opensearch
+> - PostgreSQL
+> - Redis
 >
 
 ## Requirements

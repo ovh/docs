@@ -1,7 +1,7 @@
 ---
 title: Configura il tuo database server 
 excerpt: Come configurare e ottimizzare il tuo database server
-updated: 2023-04-24
+updated: 2024-03-20
 ---
 
 > [!primary]
@@ -102,7 +102,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 #### Istanza MySQL e MariaDB
 
-- Clicca sulla scheda `Configurazione`.
+- Clicca sulla scheda `Configurazione`{.action}.
 
 Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione attualmente definita per il tuo database. Puoi modificarla direttamente e cliccare su `Applica`{.action}.
 
@@ -161,9 +161,24 @@ Effettua le modifiche necessarie e clicca su `Conferma`{.action}.
 
 #### Instance PostgreSQL
 
-Non è possibile modificare la configurazione di un'istanza PostgreSQL. 
+- Clicca sulla scheda `Configurazione`{.action}.
 
-ma è possibile attivare estensioni sui database. Clicca sulla scheda `Database`, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
+Nel riquadro **"Configurazione generale di PostgreSQL"**, trovi la configurazione attualmente definita per il tuo database. È possibile modificarla direttamente e cliccare su `Applica`{.action}.
+
+![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+
+- **log_min_messages***: controlla i livelli dei messaggi da memorizzare nei log del server. I livelli disponibili per una soluzione Web Cloud Databases sono i seguenti: 
+    - **"WARNING"**: fornisce messaggi di avvertenza su potenziali problemi.
+    - **"ERROR"**: Invia l'errore che ha determinato l'annullamento di un ordine in corso.
+    - **"LOG"**: Registra informazioni destinate agli amministratori del server.
+    - **"FATAL"**: Invia l'errore che ha determinato la fine della sessione in corso.
+    - **"PANIC"**: Invia l'errore che ha provocato la fine di tutte le sessioni.
+
+Ogni livello include tutti i livelli successivi. Più il livello è elevato, meno messaggi saranno salvati nei log del server.
+
+Il valore predefinito è **"WARNING"**, in quanto include i valori **"ERROR"**, **"LOG"**, **"FATAL"** e **"PANIC"**.
+
+È inoltre possibile attivare estensioni sui database. Clicca sulla scheda `Database`{.action}, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
 
 ![Web Cloud Databases](images/extensions.png){.thumbnail}
 
@@ -207,33 +222,9 @@ show variables like "version";
 
 ### Log e Metriche
 
-#### Conoscere il tempo di esecuzione delle richieste
+#### Accesso ai log
 
-In questo modo è possibile visualizzare il tempo di esecuzione delle richieste sul tuo database server nelle ultime 24 ore.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
-
-Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistiche dei tempi di esecuzione delle richieste"**.
-
-![Web Cloud Databases](images/query-runtime-statistics.png){.thumbnail}
-
-#### Accesso ai log "Slow Query"
-
-> **Definizione di "slow query log"**
-> 
-> Le richieste richiedono più tempo per essere eseguite. Il valore è definito a 1 secondo sui nostri database server nella variabile **"long_query_time"**.
-
-Questi log, chiamati **"slow-query.log"**, possono essere recuperati alla radice dello spazio SFTP del tuo database server.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
-
-Nella scheda `informazioni generali`, consulta la sezione **"SFTP"** nel riquadro **"Informazioni di connessione"**
-
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
-
-Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [Utilizzo del software FileZilla con il tuo hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
-
-Se questo file è vuoto, significa che non hai richieste lente.
+Per accedere ai log della soluzione Web Cloud Databases, consulta la nostra guida "[Web Cloud Databases - Come recuperare i log?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 #### Monitora la RAM consumata
 

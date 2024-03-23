@@ -129,13 +129,13 @@ Save the changes and exit the editor. You will have to confirm the new fingerpri
 On Windows, the location of the `known_hosts` file and the line you have to delete are specified as well, for example:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
 To resolve this, use the following command with the IP address of your server:
 
 ```bash
-ssh-keygen -f "C:\Users\YourWindowsUser\.ssh/known_hosts" -R 169.254.10.254
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
 ```
 
 Alternatively, navigate to this folder, right-click on the file and open it with the Notepad application.
@@ -165,6 +165,8 @@ As usual, the fingerprint warning appears at the first connection. Click `Accept
 Please consult the official FAQ and documentation of PuTTY for more information.
 
 ## Go further <a name="gofurther"></a>
+
+[How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Creating SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

@@ -1,7 +1,7 @@
 ---
 title: "Erstellung Ihres ersten OVHcloud Public Cloud Projekts"
-excerpt: "Finden Sie heraus, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter"
-updated: 2021-10-06
+excerpt: "Erfahren Sie hier, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter erstellen"
+updated: 2024-02-22
 ---
 
 > [!primary]
@@ -20,31 +20,33 @@ Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und klicken Sie auf `Erstellen Sie Ihr erstes OVH Public Cloud Projekt`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}.
 
-Sie können jetzt einen Gutschein hinzufügen, falls vorhanden. Beachten Sie, dass Gutscheine niederlassungsabhängig sind (OVHcloud Subsidiary).
+Nachdem Sie die Vertragsbedingungen gelesen haben, bestätigen Sie diese, indem Sie das entsprechende Kästchen ankreuzen und auf `Das Public-Cloud-Universun entdecken`{.action} klicken.
 
-> [!warning]
-> Wenn Sie bereits ein Public Cloud-Projekt in Ihrem Konto erstellt und gelöscht haben, können Sie den Gutschein nicht verwenden.
+![Projekt erstellen](images/firstproject2024.png){.thumbnail width="400"}
+
+- Wenn Sie noch kein gültiges Zahlungsmittel in Ihrem OVHcloud Account haben, beginnt direkt der Erstellungsprozess des Public Cloud Projekts. Ihr Projekt wird dann zunächst im [Discovery-Modus](#discovery) erstellt.
+- Wenn Sie bereits eine Zahlungsart in Ihrem OVHcloud Account hinterlegt haben, können Sie Ihr Public Cloud Projekt benennen und dann Ihre Zahlungsart auswählen.
+
+![Projekt erstellen](images/project-creation.png){.thumbnail width="400"}
+
+Sobald der Erstellungsprozess abgeschlossen ist, wird Ihr neues Public Cloud Projekt oben links im Bereich `Public Cloud`{.action} Ihres OVHcloud Kundencenters angezeigt:
+
+![Neues Projekt erstellt](images/public-cloud-interface.png){.thumbnail width="400"}
+
+Sie haben ab sofort Zugriff auf das gesamte OVHcloud Public Cloud Ökosystem. Entdecken Sie dieses neue Interface in Ihrem Kundencenter in unserer Anleitung "[Einführung in das Public Cloud Interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)".
+
+<a name="discovery"></a>
+
+> [!primary]
+> **Discovery-Modus**
 >
-
-Geben Sie Ihrem Projekt einen Namen, lesen Sie die Verträge und akzeptieren Sie sie, und klicken Sie dann auf `Weiter`{.action}.
-
-![name project](images/confirmvoucher.png){.thumbnail}
-
-Im zweiten Schritt können Sie **eine Zahlungsart hinterlegen**, falls Sie noch keine haben. Dies ist auch zur Beantragung eines Gutscheins notwendig.
-
-Wählen Sie eine Zahlungsart aus und klicken Sie dann auf `Hinzufügen`{.action}.
-
-![add card](images/pci-project-03b_2020.png){.thumbnail}
-
-Anschließend startet die Projekterstellung.
-
-![creating project](images/creatingproject.png){.thumbnail}
-
-Sobald der Prozess abgeschlossen ist, steht Ihr neues Public Cloud Projekt im Bereich `Public Cloud`{.action} Ihres OVHcloud Kundencenters zur Verfügung.
-
-![new project created](images/newprojectcreated.png){.thumbnail}
+> Wenn es sich um Ihr erstes Public Cloud Projekt handelt und Sie keine Zahlungsart in Ihrem Account angegeben haben, ist Ihr Public Cloud Projekt auf den Discovery-Modus des OVHcloud Kundencenters beschränkt. Das bedeutet, dass Sie die Public Cloud Produkte durchsuchen und entdecken können, aber noch keine Ressourcen wie etwa Instanzen erstellen können.
+>
+> Um das volle Potenzial der Public Cloud auszuschöpfen und Ihre ersten Ressourcen zu verwenden, klicken Sie auf der Startseite Ihres Projekts auf `Projekt aktivieren`{.action}.
+>
+>![Projekt aktivieren](images/activate-project.png){.thumbnail width="400"}
 
 ## Weiterführende Informationen
 

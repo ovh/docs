@@ -1,12 +1,12 @@
 ---
 title: Cold Archive - Présentation
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-updated: 2023-01-29
+updated: 2024-02-20
 ---
 
 ## Objectif
 
-OVHcloud Cold Archive est une classe de stockage conçue pour un stockage à long terme des données non utilisées.
+[OVHcloud Cold Archive](https://www.ovhcloud.com/fr/public-cloud/cold-archive/) est une classe de stockage conçue pour un stockage à long terme des données non utilisées.
 
 Ses principales caractéristiques sont :
 
@@ -97,7 +97,7 @@ Le délai d'accessibilité des données dépend du volume de données. Par exemp
 
 ### Conformité
 
-Le service sera certifié HDS et ISO 27001. Vous pouvez suivre ces certifications sur notre page roadmap publique : <https://github.com/orgs/ovh/projects/16/?card\_filter\_query=label%3Astorage>.
+Le service est certifié HDS et ISO 27001.
 
 ### Faible empreinte carbone
 

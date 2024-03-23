@@ -1,7 +1,7 @@
 ---
 title: 'Caricare e recuperare dati su un server dedicato tramite il protocollo SFTP'
 excerpt: 'Come trasferire dati da un server dedicato a un computer personale e viceversa'
-updated: 2021-05-18
+updated: 2024-02-23
 ---
 
 > [!primary]
@@ -15,9 +15,9 @@ Durante una migrazione potresti aver bisogno di recuperare i dati da un server d
 **Questa guida ti mostra come salvare e recuperare dati su un server dedicato via SFTP.**
 
 > [!warning]
+>Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con strumenti esterni e descrive le azioni da effettuare in un contesto specifico. Potrai adattare le istruzioni in base alla tua situazione.
 >
-Questa guida contiene informazioni relative all’utilizzo di una o più soluzioni OVHcloud con tool esterni in un contesto ben preciso: adatta le indicazioni fornite alla tua situazione e, in caso di difficoltà o dubbi, rivolgiti a un esperto del settore o alla nostra Community di utenti, disponibile all’indirizzo <https://community.ovh.com/en/>.
-OVHcloud non potrà fornirti assistenza.
+>In caso di difficoltà nell'applicazione di queste istruzioni, ti consigliamo di rivolgerti a un [professionista specializzato](https://partner.ovhcloud.com/it/directory/). Per maggiori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
 >
 
 ## Prerequisiti
@@ -37,6 +37,10 @@ Di default, un server che utilizza un sistema operativo GNU/Linux avrà un acces
 #### **Se hai accesso al tuo server**
 
 Nell'interfaccia grafica di FileZilla, inserisci l'indirizzo IP del tuo server nel campo `Host`, il nome utente e la password nei rispettivi campi. Per quanto riguarda il campo `Porta`, inserisci "22" o la porta che il tuo servizio SSH ascolta se l'hai modificato.
+
+> [!warning]
+> Ti ricordiamo che l’accesso alla cartella dell’utente `root` via SFTP è possibile solo utilizzando le credenziali di questo account utente. Se vuoi davvero accedere a questa cartella in remoto, consulta le informazioni su come attivare questa connessione nella nostra [guida dell’account utente](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 Una volta stabilita la connessione, visualizzi una gerarchia dei tuoi file nella sezione `Sito remoto`.
 

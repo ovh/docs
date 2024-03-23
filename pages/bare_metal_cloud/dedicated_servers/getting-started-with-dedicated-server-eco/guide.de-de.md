@@ -1,7 +1,7 @@
 ---
-title: 'Erste Schritte mit einem Kimsufi, So You Start oder Rise Dedicated Server'
-excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Kimsufi, So You Start oder Rise Dedicated Server verwalten'
-updated: 2023-09-11
+title: "Erste Schritte mit einem Kimsufi, So You Start oder Rise Dedicated Server"
+excerpt: "Erfahren Sie hier, wie Sie Ihren neuen Kimsufi, So You Start oder Rise Dedicated Server verwalten"
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -17,14 +17,28 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) der Reihe Kimsufi, So You Start oder Rise in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder RDP (optional). 
+- Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder RDP (optional). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Wenn Ihr Dedicated Server während des Bestellprozesses zum ersten Mal konfiguriert wird, können Sie das zu installierende Betriebssystem auswählen.
+### Inhaltsübersicht
 
-### Ihren Dedicated Server installieren oder reinstallieren
+- [Betriebssystem installieren oder reinstallieren](#install)
+- [Einloggen auf dem Server](#connect)
+- [Neustart Ihres Dedicated Servers](#reboot)
+- [Absicherung Ihres Dedicated Servers](#secure)
+- [OVHcloud Monitoring](#monitoring-server)
+- [Netzwerkkonfiguration](#network)
+- [Rescue-Modus](#rescue)
+- [Zugang mit IPMI](#console)
+- [Backup Storage](#backup)
+
+<a name="install"></a>
+
+### Betriebssystem installieren oder reinstallieren
+
+Wenn Ihr Dedicated Server während des Bestellprozesses zum ersten Mal konfiguriert wird, können Sie das zu installierende Betriebssystem auswählen.
 
 Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) reinstallieren und ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
@@ -54,6 +68,8 @@ Nachdem Sie `Installation mit einem OVHcloud Template`{.action} ausgewählt habe
 Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie einen Haken in dem Feld "Konfiguration der Partitionen anpassen", bevor Sie auf `Weiter`{.action} klicken.
 
 ![Konfiguration der Partitionen anpassen](images/reinstalling-your-server-04.png){.thumbnail}
+
+In diesem Schritt können Sie RAID- und Partitionierungsoptionen innerhalb der Grenzen der Serverhardware und des Betriebssystems einrichten.
 
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
 
@@ -87,7 +103,9 @@ Weitere Informationen zur Erstellung von SSH-Schlüsseln finden Sie in unserer [
 >Diese Anleitung hilft Ihnen bei der Bewältigung allgemeiner Aufgaben. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten oder Zweifel hinsichtlich der Administration, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
-### Verbindung zu Ihrem Server
+<a name="connect"></a>
+
+### Einloggen auf dem Server
 
 #### Linux
 
@@ -95,27 +113,27 @@ Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Anweisun
 
 Verwenden Sie die folgenden Beispiele, um sich mit Ihrem Server zu verbinden, und ersetzen Sie die Login-Daten mit Ihren eigenen Werten (IP-Adresse und Serverreferenzname sind austauschbar).
 
-**Beispiel mit Root:**
-
 ```bash
-ssh root@IPv4_Ihres_Servers
+ssh username@IPv4
 ```
 
-**Beispiel mit einem vorkonfigurierten Benutzer:**
+**Beispiel:**
 
 ```bash
-ssh ubuntu@Referenzname_Ihres_Servers
+ssh ubuntu@203.0.113.1
 ```
 
 Weitere Informationen zu SSH finden Sie in unserer [Anleitung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 #### Windows
 
-Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (Root). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
+Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (sudo). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
 
 Beachten Sie auch unsere Anleitung zum [Konfigurieren einer neuen Windows Server Installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
-### Neustart Ihres Dedicated Servers <a name="reboot"></a>
+<a name="reboot"></a>
+
+### Neustart Ihres Dedicated Servers
 
 Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden oder Fehler zu beheben. Wenn möglich, führen Sie über die Befehlszeile einen "Soft Reboot" des Servers durch:
 
@@ -127,13 +145,17 @@ Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter
 
 ![Neustart](images/rebooting-your-server.png){.thumbnail}
 
+<a name="secure"></a>
+
 ### Absicherung Ihres Dedicated Servers
 
 Wie oben erläutert, sind Sie der Administrator Ihres dedizierten Servers. Als solcher sind Sie für Ihre Daten und deren Sicherheit verantwortlich. Mehr Informationen zur Sicherung Ihres Servers finden Sie in unserer Anleitung zur [Absicherung eines Servers](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 
 Wenn Sie Windows Server einsetzen, verwenden Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### OVHcloud Monitoring <a name="monitoring-server"></a> 
+<a name="monitoring-server"></a>
+
+### OVHcloud Monitoring
 
 Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
@@ -150,6 +172,8 @@ Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Monitoring-Konfiguration zu aktualisieren.
 
 Weitere Informationen zum OVHcloud Monitoring finden Sie in [unserer Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+<a name="network"></a>
 
 ### Netzwerkkonfiguration
 
@@ -181,11 +205,15 @@ Detaillierte Anweisungen zur Konfiguration des IP-Alias finden Sie in der Anleit
 
 OVHcloud Dedicated Server werden mit einem /64 IPv6 Block geliefert. Um die Adressen dieses Blocks zu verwenden müssen Sie die Konfiguration des Netzwerks anpassen. Lesen Sie dazu unsere Anleitung "[IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)".
 
+<a name="rescue"></a>
+
 ### Rescue-Modus
 
 Der erste Schritt zur Fehlerbehebung besteht stets darin, Ihren Server in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Rescue-Modus neu zu starten. Es ist wichtig, Serverfehler in diesem Modus zu identifizieren, um Probleme mit Software auszuschließen, bevor Sie unsere Support-Teams kontaktieren.
 
 Folgen Sie unserer Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+<a name="console"></a>
 
 ### Zugang mit IPMI
 
@@ -197,6 +225,8 @@ Folgen Sie unserer Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/dedicate
 OVHcloud stattet Dedicated Server mit einer IPMI-Konsole (Intelligent Platform Management Interface) aus, die in Ihrem Browser oder über ein Java-Applet ausgeführt wird. Sie können sich direkt mit Ihrem Server verbinden, auch wenn dieser über keine Netzwerkverbindung verfügt. Sie ist deshalb ein nützliches Werkzeug, um Fehler zu beheben, die Ihren Server unerreichbar machen.
 
 Weitere Informationen finden Sie in unserer Anleitung zur [Verwendung der IPMI-Konsole](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+
+<a name="backup"></a>
 
 ### Backup Storage
 
@@ -211,9 +241,13 @@ Zur Aktivierung und Nutzung des Backup Storage folgen Sie der [zugehörigen Anle
 
 ## Weiterführende Informationen
 
-[Einen Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+[Konfigurieren von Benutzerkonten und Root-Zugriff auf einem Server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
+[Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Rescue-Modus aktivieren und verwenden](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
