@@ -51,10 +51,16 @@ Pour vérifier si le verrouillage de transfert de domaine est activé pour votre
 
 Le code d'autorisation sécurise votre domaine contre tout transfert non autorisé par des tiers. Ce code est requis pour autoriser le transfert de votre domaine vers un nouveau fournisseur.
 
-Pour trouver le code d'autorisation de votre domaine, accédez à la section "Domaines" sur la page [ransfert & renouvellement]([[https://www.nominet.uk/whois/](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Ftransfer%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dtransfer%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue))){.external}. Sélectionnez votre domaine, puis cliquez sur **Afficher le code d'autorisation**
+Pour trouver le code d'autorisation de votre domaine, accédez à la section "Domaines" sur la page [Transfert & renouvellement]([[https://www.nominet.uk/whois/](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Ftransfer%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dtransfer%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue))){.external}. Sélectionnez votre domaine, puis cliquez sur **Afficher le code d'autorisation**.
+
+Une fois le code d'authorisation obtenu, vous pouvez procéder au transfère de domaine en suivant les étapes de notre guide [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
+[Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
