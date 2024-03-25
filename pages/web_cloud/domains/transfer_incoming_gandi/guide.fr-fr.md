@@ -61,7 +61,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 > Tant que le verrouillage est actif, le transfert n'est pas possible.
 >
 
-#### Pour déverrouiller UN (seul) domaine :
+#### Déverrouiller un seul nom de domaine :
 
 - Connectez-vous à votre compte Gandi, puis accédez à la section `NOM DE DOMAINE`{.action} dans le menu de gauche.
 - Accédez à la page d'administration de votre nom de domaine en cliquant sur son nom.
