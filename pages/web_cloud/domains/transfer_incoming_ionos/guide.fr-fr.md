@@ -60,7 +60,7 @@ Le code d'autorisation protège votre nom de domaine contre tout transfert non a
 
 Pour trouver le code d'autorisation de votre nom de domaine, rendez-vous sur la page « [Transfert & renouvellement`(https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Ftransfer%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dtransfer%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue){.external} », puis accédez à la section `Domaines`{.action}. Sélectionnez votre nom de domaine, puis cliquez sur `Afficher le code d'autorisation`{.action}.
 
-Une fois le code d'authorisation obtenu, vous pouvez procéder au transfère de domaine en suivant les étapes de notre guide [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
