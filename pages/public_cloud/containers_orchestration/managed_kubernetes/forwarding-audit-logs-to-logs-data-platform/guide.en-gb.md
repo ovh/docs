@@ -1,7 +1,7 @@
 ---
 title: Managed Kubernetes Service Audit Logs Forwarding
 excerpt: 'Find out how to forward Audit logs from an OVHcloud Managed Kubernetes Service cluster to Logs Data Platform'
-updated: 2024-02-26
+updated: 2024-03-25
 ---
  
 ## Objective
@@ -125,19 +125,21 @@ You can retrieve the API specifications in the [OVH API Portal](https://eu.api.o
 
 List data streams of you Logs Data Platform account:
 
-[API reference](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/output/graylog/stream)
-
 ```shell
 GET /dbaas/logs/{serviceName}/output/graylog/stream
 ```
+> [!api]
+>
+> @api {v1} /cloud GET /dbaas/logs/{serviceName}/output/graylog/stream
+>
 
 Get the details of a data stream:
 
-[API reference](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/output/graylog/stream/-streamId-)
+> [!api]
+>
+> @api {v1} /cloud GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
+>
 
-```shell
-GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
-```
 
 #### Step 2 - Create your subscription
 
