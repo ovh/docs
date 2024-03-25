@@ -52,7 +52,6 @@ Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine,
 > Par sécurité, les noms de domaine avec une extension générique (par exemple *.com*, *.net* ou *.org*) sont verrouillés par défaut et ne peuvent pas être transférés. Avant d'initier un transfert de nom de domaine, vous devez désactiver ce verrouillage de transfert.
 >
 
-
 Pour vérifier si le verrouillage de transfert est activé pour votre nom de domaine, rendez-vous sur la page `Transfert & renouvellement`{.action}, puis accédez à la section `Domaines`{.action}. Sélectionnez ensuite votre nom de domaine et désactivez l'option de verrouillage de transfert de domaine en utilisant le curseur.
 
 ### Obtenir le code d'autorisation
