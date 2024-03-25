@@ -39,7 +39,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 
 ## En pratique
--	Facteurs à prendre en compte pour un transfert de domaine réussi 
 -Avoir la pleine propriété du domaine 
 -Le domaine est actif depuis 60 jours ou plus
 -Il n’a pas été transféré au cours des 6P derniers jours 
