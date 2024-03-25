@@ -1,5 +1,5 @@
 ---
-title: 'Transférer un nom de domaine Gandi vers OVHcloud'
+title: 'Transférer un nom de domaine de Gandi vers OVHcloud'
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine Gandi vers OVHcloud'
 updated: 2024-03-23
 ---
