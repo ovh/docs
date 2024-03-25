@@ -40,7 +40,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 
 ## En pratique
 
-### Etape 1 : Faire pointer le domaine vers les serveurs de noms d’OVH 
 
 Pendant le processus de transfert, les paramètres DNS ne sont pas modifiables. Vous devez donc faire **pointer votre domaine vers OVH** avant de le transférer afin de pouvoir continuer à utiliser les services liés au domaine, tels que les e-mails. Pour cela, nous vous conseillons de consulter ce guide [Transférer son nom de domaine vers OVHcloud] (/pages/web_cloud/domains/transfer_incoming_generic_domain). 
 
