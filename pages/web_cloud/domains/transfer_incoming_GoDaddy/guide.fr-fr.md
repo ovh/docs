@@ -41,7 +41,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 
 
 
-Notez qu’il est possible de conserver le domaine auprès du fournisseur d’origine et de le faire pointer uniquement vers OVH. De cette façon, le domaine se connectera à l’endroit où les fichiers de votre site web sont hébergés, même si vous utilisez un autre fournisseur de domaine.
 
 ### Etape 2 : Déverrouiller le domaine chez GoDaddy
 
