@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący rozwiązania Zimbra OVHcloud
 excerpt: "Poszukaj odpowiedzi na pytania dotyczące migracji do Zimbry w ofercie MX Plan OVHcloud"
-updated: 2024-03-11
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -44,13 +44,13 @@ Na etapie migracji wymagana jest jednak krótka przerwa w dostępności usługi.
 
 Migracja została zaprojektowana z myślą o tym, aby jak najbardziej ograniczyć wpływ migracji na klientów. Nie oczekujemy od Ciebie żadnych operacji.
 
-Dobre praktyki zarządzania hasłami wiążą się jednak z koniecznością manipulacji.<br>
-Przed migracją zostaniesz poinformowany, czy hasło ma zostać zmienione na Twoim poziomie. Jeśli tak się stanie, otrzymasz w bezpiecznym miejscu listę tymczasowych haseł do kont e-mail, z którymi należy zarządzać po migracji.<br>
-Te jednorazowe hasła pozwolą Twoim użytkownikom zalogować się do interfejsu www Zimbra. Po zalogowaniu się do Zimbry każdy użytkownik będzie musiał zresetować swoje hasło.
+Nie oczekujemy od Ciebie żadnych operacji.
 
 ### Czy w Panelu klienta OVHcloud należy spodziewać się zmian?
 
 W Panelu klienta nie przewidujemy żadnych zmian. W związku z migracją nowego rozwiązania niektóre drobne funkcje mogą być niedostępne w ciągu pierwszych tygodni po migracji.
+
+Lista funkcji i ich statusów dla tej migracji [na końcu tej FAQ](#features).
 
 ### Czy muszę ponownie skonfigurować program pocztowy?
 
@@ -87,6 +87,29 @@ Można jednak nadal korzystać z interfejsu OWA [poprzez migrację kont e-mail d
 ### Czy mogę zrezygnować z usługi MX Plan?
 
 Aby anulować ofertę w sekcji „Moje usługi” w przestrzeni OVHCloud, zapoznaj się z sekcją Plan MX w naszym przewodniku „[Jak anulować usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan)”.
+
+### Funkcje zachowane, zawieszone lub usunięte podczas migracji do Zimbra. <a name="features"></a>
+
+- **Zarządzanie kontem e-mail w Panelu klienta** (hasło, alias, limit): Utrzymanie
+- **Oferty i płatności**: Utrzymane
+- **Przekierowanie / Aliasy / listy mailingowe w Panelu klienta**: Utrzymanie
+- **Konfiguracja DNS - SPF / MX / SRV**: Utrzymanie
+- **Delegacje kont e-mail**: Utrzymane, przez webmail
+- **Połączenie z programem pocztowym** (IMAP/POP): Konserwacja, bez konieczności wprowadzania zmian konfiguracji.
+- **Zawartość konta e-mail** (e-maile, foldery, kontakty): Przeniesiono
+- **E-maile otrzymane podczas procesu migracji** : Dostarczone
+- **Odpowiedź automatyczna / Skrzynka głosowa**: Kontynuacja
+- **Reguła skrzynki odbiorczej**:
+    - Reguły skonfigurowane w programie pocztowym nie ulegną zmianie.
+    - Reguły skonfigurowane z poziomu webmail OWA zostaną przeniesione do webmaila Zimbra. Niewielka część reguł nie może zostać migrowana z powodu niezgodności. Zostaną one wysłane jako wiadomość e-mail na konto e-mail użytkownika i będą mogły zostać utworzone ręcznie.
+    - *Niekompatybilna reguła*: Reguła używa dwóch typów warunków, takich jak I i LUB jednocześnie. Na przykład, jeśli wiadomość została odebrana od (**john@mydomain.ovh** LUB **mary@mydomain.ovh**) A temat zawiera "fakturę", przenieś do folderu "Ważne"
+- **Podpis osobisty**:
+    - Podpisy skonfigurowane w programie pocztowym nie ulegną zmianie.
+    - Podpisy skonfigurowane z poziomu interfejsu Webmail OWA nie zostaną zmigrowane z powodu formatowania.
+- **Zablokuj / Zezwól** : Funkcja ta, pozwalająca na zablokowanie e-maili wysyłanych z określonej domeny lub adresu e-mail, nie będzie dostępna w witrynie Zimbra. Zachowanie to można jednak łatwo odtworzyć za pomocą reguły skrzynki odbiorczej w interfejsie Zimbra.
+- **Stopka** (podpis domeny konfigurowalny w Panelu klienta): Ta funkcja nie będzie dostępna w nowej infrastrukturze Zimbra. Nadal można jednak skonfigurować podpis na poziomie konta e-mail.
+- **Polityka bezpieczeństwa** : Funkcja Panelu klienta umożliwiająca zmianę polityki zarządzania hasłami nie będzie początkowo dostępna w przypadku rozwiązania Zimbra.<br>Domyślna polityka bezpieczeństwa dotycząca haseł wymaga minimum 10 znaków alfanumerycznych, 1 znaku specjalnego, 1 wielkiej litery.
+- **Spoofing**: Spoofing polega na wysyłaniu e-maila z innej tożsamości niż konto e-mail, na którym jesteś uwierzytelniony. Taka praktyka jest niezgodna z protokołami zabezpieczeń SPF i DKIM wymaganymi do prawidłowego dostarczania wiadomości e-mail.<br>Z poziomu Zimbra można skonfigurować inną tożsamość używanego konta e-mail, pod warunkiem zastosowania uprawnienia.
 
 ## Sprawdź również
 

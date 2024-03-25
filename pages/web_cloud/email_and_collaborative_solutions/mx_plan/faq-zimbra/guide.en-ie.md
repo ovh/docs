@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Here you will find the most frequently asked questions about the migration of OVHcloud MX Plan solution to Zimbra
-updated: 2024-03-11
+updated: 2024-03-26
 ---
 
 ## Objective
@@ -40,13 +40,13 @@ However, a short service interruption is required during the migration phase. It
 
 This migration was designed to minimise the impact on our customers. No actions are expected from you.
 
-However, good practices regarding password management require manual intervention.<br>
-Before the migration, you will be informed if you need to change your password. If this is the case, you will receive a list of provisional email account passwords to be used after the migration.<br>
-These one-time passwords will allow your users to log in to the Zimbra web interface. Once logged in to Zimbra, each user must configure a new password.
+No changes are expected from you.
 
 ### Are there any changes to be expected in the OVHcloud Control Panel?
 
 There are no changes planned in the Control Panel. Since the migration is under a new solution, some minor features may not be accessible in the first few weeks after the migration.
+
+Find the list of features and their statuses for this migration [at the end of this FAQ](#features).
 
 ### Will I need to reconfigure my email software?
 
@@ -83,6 +83,29 @@ However, you can still take advantage of the OWA interface [by migrating your em
 ### Can I cancel my MX Plan solution?
 
 To cancel your solution in the "My services" section of the OVHcloud Control Panel, please refer to the MX Plan part of our guide on [Cancelling your OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#mxplan).
+
+### Features maintained, suspended or removed after migration to Zimbra <a name="features"></a>
+
+- **Email account management from the Control Panel** (Password, alias, quota): Maintained
+- **Offers and billing**: Maintained
+- **Redirection/Alias/mailing list from the OVHcloud Control Panel**: Maintained
+- **DNS configuration - SPF/MX/SRV**: Maintained
+- **Email account delegations**: Maintained via webmail
+- **Logging in to email software** (IMAP/POP): No configuration changes required
+- **Email account content** (emails, folders, contacts): Migrated
+- **Emails received during the migration process**: Delivered
+- **Automatic reply**: Maintained
+- **Inbox rule**:
+    - The rules configured from your email client will not be changed.
+    - The rules configured from OWA webmail will be migrated to Zimbra webmail. Only a very small proportion of rules will not be migrated due to incompatibility. These will be sent as an email to the user's email account, and can be recreated manually.
+    - *Incompatible rule*: A rule that uses two types of conditions, such as AND and OR, simultaneously. For example, if the message is received from (**john@mydomain.ovh** OR **mary@mydomain.ovh**) AND the subject contains "invoice", then move to the "Important" folder.
+- **Personal signature**:
+    - The signatures configured from your email software will not be changed.
+    - Signatures configured from OWA webmail will not be migrated due to formatting.
+- **Block/Authorise**: This feature, which allows you to block emails from a specific domain name or email address, will not be present on Zimbra. However, this can be easily recreated via an inbox rule from Zimbra.
+- **Footer** (domain name signature configurable via the Control Panel): This feature will not be present in the new Zimbra infrastructure. However, you can still configure a signature at the email account level.
+- **Security Policy**: This Control Panel feature that allows you to change the password management policy will not be present on the Zimbra solution.<br>The default security policy for passwords requires a minimum of 10 alphanumeric characters, 1 special character, 1 upper-case letter.
+- **Spoofing**: Spoofing involves sending an email from an identity that is different from the email account you have been authenticated to. This practice is incompatible with the SPF and DKIM security protocols required for email deliverability.<br>From Zimbra, you can configure another identity that is different from the email account used, provided that delegation is applied.
 
 ## Go further
 
