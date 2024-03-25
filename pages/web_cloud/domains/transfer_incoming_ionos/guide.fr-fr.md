@@ -20,7 +20,6 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 >
 >
 >
-
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
