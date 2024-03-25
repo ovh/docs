@@ -56,7 +56,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 >
 > La plupart des extensions proposent une fonction de verrouillage contre le transfert, identifiable par un statut spécial dans le Whois, appelé « transferProhibited ».
 >
-> Ce verrouillage empêche tout les transferts involontaires.
+> Ce verrouillage empêche tout transfert involontaire.
 >
 > Tant que le verrouillage est actif, le transfert n'est pas possible.
 >
