@@ -107,7 +107,6 @@ OVH vous demandera de fournir le code d’autorisation ou "Auth code" avant d’
 Une fois la commande validée, vous recevrez un bon de commande. Le processus de transfert ne démarrera qu'après réception du paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
 
 Une fois la commande et le code de transfert validés, le bureau d'enregistrement du nom de domaine actuel (qui n'est toujours pas OVHcloud) recevra une demande de validation.
-Pour plus de détails sur cette procédure, suivez les étapes de ce [guide] (pages/web_cloud/domains/transfer-incoming-generic-domain). 
 
 #### Pour gérer son nom de domaine avec OVHcloud : 
 
