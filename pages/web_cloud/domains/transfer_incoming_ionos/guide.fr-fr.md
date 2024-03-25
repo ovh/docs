@@ -49,7 +49,7 @@ Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine,
 
 > [!warning]
 >
->Par mesure de sécurité, les domaines avec une extension générique (par exemple .com, .net ou .org) sont automatiquement verrouillés par 
+> Par sécurité, les noms de domaine avec une extension générique (par exemple *.com*, *.net* ou *.org*) sont verrouillés par défaut et ne peuvent pas être transférés. Avant d'initier un transfert de nom de domaine, vous devez désactiver ce verrouillage de transfert.
 >défaut et ne peuvent pas être transférés. Avant d'initier un transfert de domaine, vous devez désactiver ce verrouillage de transfert.
 
 
