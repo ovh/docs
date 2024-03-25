@@ -20,8 +20,6 @@ Il record **D**omain-based **M**essage **A**uthentication, **R**eporting, and **
 >
 > Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
-> Inoltre, la creazione di un record **DMARC**, qualunque sia il [servizio di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/), non è al momento disponibile. Questa guida si applica **esclusivamente** ai clienti che dispongono di una zona DNS attiva in OVHcloud per il dominio associato a una **soluzione email esterna**.
->
 
 ## Prerequisiti
 
