@@ -92,7 +92,7 @@ Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de vo
 
 > [!warning]
 >
-> Dans les 24 heures suivants l'initiation du transfert, Gandi vous enverra un e-mail de notification pour vous informer de la sortie du nom de domaine.
+> Dans les 24 heures suivant l'initiation du transfert, Gandi vous enverra un e-mail de notification pour vous informer de la sortie du nom de domaine.
 > Cet e-mail peut également contenir un lien vous permettant d'accepter le transfert à la place de Gandi, ce qui réduira le délai de réserve.
 > La période de réserve correspond à une période de 5 jours (8 jours pour les nom de domaine gérés par l'AFNIC) qui permet d’annuler le transfert.
 > Passé ce délai (5 jours « pleins »), le transfert se finalisera automatiquement.
