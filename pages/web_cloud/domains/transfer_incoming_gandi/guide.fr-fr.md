@@ -86,7 +86,7 @@ Voici les étapes pour obtenir le code de transfert d'un nom de domaine chez Gan
 - Dans le menu de gauche, sélectionnez `NOM DE DOMAINE`{.action}.
 - Choisissez le nom de domaine que vous souhaitez transférer.
 - Dans le menu du haut, cliquez sur `Transfert sortant`{.action}.
-- Vous verrez le code de transfert affiché. Vous pouvez soit cliquer sur « Copier » pour le coller dans votre presse-papier, soit sur « Générer un nouveau code » si nécessaire.
+- Le code de transfert s'affiche. Vous pouvez soit cliquer sur `Copier`{.action} pour le coller dans votre presse-papier, soit sur `Générer un nouveau code`{.action} si nécessaire.
   
 Une fois le code d'authorisation obtenu, vous pouvez procéder au transfère du nom de domaine en suivant les étapes de notre guide [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 
