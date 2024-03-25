@@ -45,12 +45,9 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 > Si, en complément de votre nom de domaine, vous disposez également d'une zone DNS active pour ce dernier chez votre bureau d'enregistrement actuel, vérifiez auprès d'eux que la zone DNS qu'ils appliquent à votre nom de domaine ne vas pas être supprimée une fois le transfert effectué.
 >
-> En effet, certains bureaux d'enregistrements suppriment la zone DNS présente chez eux dès que le transfert de votre nom de domaine est terminé.
->
-> Si tel est le cas, recréez à l'identique votre zone DNS chez OVHcloud **avant** de démarrer les actions liées au transfert de votre nom de domaine.
+> En effet, certains bureaux d'enregistrements suppriment la zone DNS présente chez eux dès que le transfert de votre nom de domaine est terminé. Si tel est le cas, recréez à l'identique votre zone DNS chez OVHcloud **avant** de démarrer les actions liées au transfert de votre nom de domaine.
 >
 > Pour cela, consultez les guides suivants :
->
 > - [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >
