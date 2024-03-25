@@ -32,7 +32,6 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 - Posséder le code de transfert ou être en mesure de le récupérer.
 - Être habilité à demander le transfert du nom de domaine.
 - Avoir prévenu le propriétaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
-- Le domaine ne doit pas être bloqué chez votre registrar. 
 - Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire. 
 
 > [!warning]
