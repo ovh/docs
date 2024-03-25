@@ -41,7 +41,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 ## En pratique
 
 
->
 > **saisie des serveurs DNS pour votre nom de domaine.** Si vous utilisez actuellement votre nom de domaine pour maintenir un site internet ou un service de messagerie en ligne, vous devrez spécifier leurs serveurs DNS afin d'éviter toute interruption de service.
 >
 
