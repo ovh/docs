@@ -20,7 +20,6 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 >
 >
 
->
 
 > [!warning]
 > Le service Gandimail est lié à votre nom de domaine et arrêtera de fonctionner dès que le domaine sera transféré hors de Gandi. 
