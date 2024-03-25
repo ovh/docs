@@ -23,7 +23,15 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 
 ## Prérequis
 
-- Le domaine doit être enregistrés à votre nom depuis au moins 60 jours avant que vous puissiez les transférer.
+- Le nom de domaine est enregistré auprès du bureau d'enregistrement Ionos.
+- Le nom de domaine existe depuis plus de 60 jours.
+- Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
+- L'état du nom de domaine est « OK » ou « Transférable ».
+- Le nom de domaine n'a pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
+- Être en mesure de déverrouiller le nom de domaine.
+- Posséder le code de transfert ou être en mesure de le récupérer.
+- Être habilité à demander le transfert du nom de domaine.
+- Avoir prévenu le propriétaire du nom de domaine et/ou ses administrateurs de la demande de transfert.
 - Le domaine ne doit pas être bloqué chez votre registrar. 
 - Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire. 
 
