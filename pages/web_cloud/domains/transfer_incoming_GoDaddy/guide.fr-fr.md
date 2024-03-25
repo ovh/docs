@@ -41,7 +41,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 ## En pratique
 
 
-1.	Connectez-vous à votre page Portfolio de domaines GoDaddy et choisissez le domaine en cochant la case correspondante. 
 2.	Cliquez sur le menu « Serveurs de noms », sélectionnez « j’utiliserai mes propres serveurs de noms » et insérez les serveurs OVH. 
 
 > [!warning]
