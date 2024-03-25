@@ -65,7 +65,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 
 - Connectez-vous à votre compte Gandi, puis accédez à la section `NOM DE DOMAINE`{.action} dans le menu de gauche.
 - Accédez à la page d'administration de votre nom de domaine en cliquant sur son nom.
-- Cliquez sur l'onglet "Transfert Sortant". Cela vous dirigera vers la page de gestion du code d'autorisation et du verrou.
+- Cliquez sur l'onglet `Transfert Sortant`{.action}. Vous êtes redirigés vers la page de gestion du code d'autorisation et du verrou.
 - Vous pourrez désactiver le verrou en cliquant sur l'icône de "Cadenas" située à droite de "Désactiver la protection contre le transfert".
 
 #### Pour déverrouiller PLUSIEURS domaine :
