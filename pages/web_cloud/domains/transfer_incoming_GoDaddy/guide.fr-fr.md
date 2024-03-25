@@ -39,7 +39,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 
 ## En pratique
--	Aller plus loin
 
 ### Comment transférer un domaine de GoDaddy vers OVH ?
 
