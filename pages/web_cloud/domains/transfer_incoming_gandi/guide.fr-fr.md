@@ -81,7 +81,7 @@ Une fois le code d'authorisation obtenu, vous pouvez procéder au transfère du 
 > La période de réserve correspond à une période de 5 jours (8 jours pour les domaines gérés par l'AFNIC) qui permet d’annuler le transfert.
 > À la fin de cette période de réserve (5 jours « pleins ») le transfert se finalisera automatiquement.
 
-## Aller plus loin <a name="aller-plus-loin"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
