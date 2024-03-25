@@ -44,6 +44,24 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 
 ### Etape 1 - Déverrouiller le nom de domaine chez GoDaddy
 
+> [!primary]
+>
+> La zone DNS active d'un nom de domaine contient la configuration DNS appliquée à votre nom de domaine. C'est elle qui lie votre nom de domaine à vos services tels que vos adresses e-mails ou votre site web.
+>
+> Si, en complément de votre nom de domaine, vous disposez également d'une zone DNS active pour ce dernier chez votre bureau d'enregistrement actuel, vérifiez auprès d'eux que la zone DNS qu'ils appliquent à votre nom de domaine ne vas pas être supprimée une fois le transfert effectué.
+>
+> En effet, certains bureaux d'enregistrements suppriment la zone DNS présente chez eux dès que le transfert de votre nom de domaine est terminé.
+>
+> Si tel est le cas, recréez à l'identique votre zone DNS chez OVHcloud **avant** de démarrer les actions liées au transfert de votre nom de domaine.
+>
+> Pour cela, consultez les guides suivants :
+>
+> - [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+> - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+>
+> Vérifiez également qu'ils ne ferment pas de leur côté d'autres services comme, par exemple, les adresses e-mails associées à votre nom de domaine.
+>
+
 Le verrouillage d'un nom de domaine le protège contre les tentatives de transfert non autorisées.
 GoDaddy active cette protection par défaut. Vous devez donc la désactiver pour transférer votre domaine chez OVHcloud.
 
