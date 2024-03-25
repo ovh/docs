@@ -18,8 +18,6 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 > Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
 >
->
->
 
 ## Prérequis
 
@@ -39,6 +37,7 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter votre bureau d'enregistrement actuel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
+
 ## En pratique
 
 ### Désactiver l'enregistrement privé
@@ -58,7 +57,7 @@ Pour vérifier si le verrouillage de transfert est activé pour votre nom de dom
 
 Le code d'autorisation protège votre nom de domaine contre tout transfert non autorisé par des tiers. Ce code est requis pour autoriser le transfert de votre nom de domaine vers un nouveau fournisseur.
 
-Pour trouver le code d'autorisation de votre nom de domaine, rendez-vous sur la page « [Transfert & renouvellement`(https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Ftransfer%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dtransfer%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue){.external} », puis accédez à la section `Domaines`{.action}. Sélectionnez votre nom de domaine, puis cliquez sur `Afficher le code d'autorisation`{.action}.
+Pour trouver le code d'autorisation de votre nom de domaine, rendez-vous sur la page « [Transfert & renouvellement](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Ftransfer%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dtransfer%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue){.external} », puis accédez à la section `Domaines`{.action}. Sélectionnez votre nom de domaine, puis cliquez sur `Afficher le code d'autorisation`{.action}.
 
 Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 
