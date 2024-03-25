@@ -43,7 +43,7 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 
 ### Désactiver l'enregistrement privé
 
-Pour confirmer si l'enregistrement privé est activé pour votre domaine, veuillez accéder à la section **Domaines** sur la page [Confidentialité & données de contact]([https://www.nominet.uk/whois/](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue)){.external}. Choisissez votre domaine, puis désactivez l'option d'enregistrement privé. Si cette option ne figure pas sur la page, aucune action est requise et cela signifie que la désactivation de l'enregistrement privé n'est pas disponible pour votre domaine.
+Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine, accédez à la section `Domaines`{.action} sur la page « [Confidentialité & données de contact](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue)){.external} ». Choisissez votre nom de domaine, puis désactivez l'option d'enregistrement privé. Si cette option ne figure pas sur la page, aucune action n'est requise et cela signifie que la désactivation de l'enregistrement privé est indisponible pour votre nom de domaine.
 
 ### Désactiver le verrouillage du transfert
 
