@@ -31,7 +31,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 
 ## Prérequis
 
-- Le nom de domaine est enregistré auprès du bureau d'enregistrement Ionos.
+- Le nom de domaine est enregistré auprès du bureau d'enregistrement Gandi.
 - Le nom de domaine existe depuis plus de 60 jours.
 - Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
