@@ -39,7 +39,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 
 ## En pratique
-1.	Faire pointer le domaine vers les serveurs de noms OVH 
 2.	Déverrouiller le domaine chez GoDaddy 
 3.	Obtenir le code d’autorisation 
 4.	Initier le transfert de domaine chez OVH 
