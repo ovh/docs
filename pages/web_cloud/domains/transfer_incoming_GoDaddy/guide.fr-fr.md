@@ -89,7 +89,6 @@ Pour cela :
 
 > [!primary]
 > 
-> Avant d’initier un transfert de domaine, assurez-vous de disposer d’un plan d’hébergement. Nous vous invitons à vous familiariser avec [guide] (pages/web_cloud/web_hosting/hosting_first_steps_with_web_hosting).
 
 #### Pour le suivi du transfert après la commande : 
 
