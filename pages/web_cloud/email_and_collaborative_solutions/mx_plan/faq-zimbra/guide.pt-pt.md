@@ -93,7 +93,7 @@ Para rescindir a sua oferta na secção « Serviços » do seu espaço OVHcloud,
 - **Gestão da conta de e-mail a partir da Área de Cliente** (Palavra-passe, alias, quota): Manutenção
 - **Ofertas e faturação**: Mantidas
 - **Reencaminhamento / Alias / mailing list a partir da Área de Cliente**: Mantidos
-- **Configuração DNS - SPF / MX / SRV** : Manutenção
+- **Configuração DNS - SPF / MX / SRV** : Mantidas
 - **Delegações de contas de e-mail**: Mantidas, via webmail
 - **Ligação ao software de correio eletrónico** (IMAP/POP): Manter o servidor, não é necessário alterar a configuração.
 - **Conteúdo da conta de e-mail** (e-mails, pastas, contactos): Migrado
