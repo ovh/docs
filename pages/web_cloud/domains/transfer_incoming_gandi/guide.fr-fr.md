@@ -83,7 +83,7 @@ Le code d'autorisation sécurise votre nom de domaine contre des transferts non 
 Voici les étapes pour obtenir le code de transfert d'un nom de domaine chez Gandi :
 
 - Connectez-vous à votre compte Gandi.
-- Dans le menu de gauche, sélectionnez « NOM DE DOMAINE ».
+- Dans le menu de gauche, sélectionnez `NOM DE DOMAINE`{.action}.
 - Choisissez le nom de domaine que vous souhaitez transférer.
 - Dans le menu du haut, cliquez sur `Transfert sortant`{.action}.
 - Vous verrez le code de transfert affiché. Vous pouvez soit cliquer sur « Copier » pour le coller dans votre presse-papier, soit sur « Générer un nouveau code » si nécessaire.
