@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre la solución Zimbra OVHcloud
 excerpt: "Encuentre las preguntas sobre la migración a Zimbra para la solución MX Plan de OVHcloud"
-updated: 2024-01-15
+updated: 2024-03-22
 ---
 
 > [!primary]
@@ -94,7 +94,7 @@ Para dar de baja un servicio en la sección « Mis servicios » de su área de O
 - **Ofertas y facturación**: mantenimiento
 - **Redirección / Alias / Lista de difusión desde el área de cliente** : Maintenus
 - **Configuración DNS - SPF / MX / SRV**: Mantenida
-- **Delegaciones de cuentas de correo**: mantenidas, a través del webmail
+- **Delegaciones de cuentas de correo**: Mantenidas, a través del webmail
 - **Conexión a los programas de correo electrónico** (IMAP/POP): Mantenida, no es necesario modificar la configuración.
 - **Contenido de la cuenta de correo** (correo, carpetas, contactos): Migrado
 - **Mensajes recibidos durante el proceso de migración**: Entregados
@@ -102,12 +102,12 @@ Para dar de baja un servicio en la sección « Mis servicios » de su área de O
 - **Regla de la bandeja de entrada**:
     - Las reglas configuradas desde su cliente de correo no se modificarán.
     - Las reglas configuradas desde el webmail OWA serán migradas al webmail Zimbra. Sólo una proporción muy pequeña de reglas no podrá migrarse debido a incompatibilidades. Estas direcciones se enviarán en forma de mensaje de correo electrónico a la cuenta de correo del usuario y podrán volver a crearse manualmente.
-    - *Regla incompatible*: regla que utiliza dos tipos de condiciones, como Y y O, al mismo tiempo. Por ejemplo, si el mensaje se recibe de (**john@mydomain.ovh** O **mary@mydomain.ovh**) Y el asunto contiene "factura", muévase a la carpeta "Importante"
+    - *Regla incompatible*: Regla que utiliza dos tipos de condiciones, como Y y O, al mismo tiempo. Por ejemplo, si el mensaje se recibe de (**john@mydomain.ovh** O **mary@mydomain.ovh**) Y el asunto contiene "factura", muévase a la carpeta "Importante"
 - **Firma personal**:
     - Las firmas configuradas desde su cliente de correo no se modificarán.
     - Las firmas configuradas desde el webmail OWA no se migrarán debido al formato.
 - **Bloquear / Autorizar**: Esta funcionalidad, que permite bloquear los emails procedentes de un nombre de dominio o de una dirección de correo electrónico específicos, no estará presente en Zimbra. Sin embargo, este comportamiento se puede volver a crear fácilmente a través de una regla de la Bandeja de entrada de Zimbra.
-- **Pie de página** (firma de nombre de dominio que puede configurarse desde el área de cliente): esta funcionalidad no estará presente en la nueva infraestructura Zimbra. Sin embargo, todavía es posible configurar una firma en el nivel de la cuenta de correo.
+- **Pie de página** (firma de nombre de dominio que puede configurarse desde el área de cliente): Esta funcionalidad no estará presente en la nueva infraestructura Zimbra. Sin embargo, todavía es posible configurar una firma en el nivel de la cuenta de correo.
 - **Política de seguridad**: Esta funcionalidad del área de cliente que permite cambiar la política de gestión de las contraseñas no estará presente, en un primer momento, en la solución Zimbra.<br> La política de seguridad aplicada por defecto a las contraseñas requiere un mínimo de 10 caracteres alfanuméricos, 1 carácter especial, 1 mayúscula.
 - **Spoofing**: La función Spoofing consiste en enviar un mensaje de correo electrónico desde una identidad distinta de la de la cuenta de correo en la que se ha autenticado. Esta práctica es incompatible con los protocolos de seguridad SPF y DKIM necesarios para la correcta entrega de los mensajes de correo.<br>Desde Zimbra, puede configurar una identidad diferente de la cuenta de correo utilizada, siempre que se haya delegado en ella.
 
