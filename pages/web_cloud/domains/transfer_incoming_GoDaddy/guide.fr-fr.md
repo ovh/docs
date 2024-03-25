@@ -18,7 +18,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 > Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
 >
 >
->
 > Pour connaître les conditions tarifaires pour le transfert d’un nom de domaine en fonction de son extension, nous vous invitons à prendre connaissance de [ce guide] (/pages/web_cloud/domains/trasnfer_incoming_generic_domain). 
 
 > [!warning]
