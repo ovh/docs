@@ -64,7 +64,7 @@ Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de vo
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
+[Migrer son site Web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
