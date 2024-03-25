@@ -41,7 +41,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 
 
 
-
 ### Etape 1 - Déverrouiller le nom de domaine chez GoDaddy
 
 > [!primary]
