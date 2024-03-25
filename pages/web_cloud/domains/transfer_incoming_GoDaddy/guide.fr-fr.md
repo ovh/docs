@@ -85,7 +85,7 @@ Pour cela :
 6.	Vérifiez le statut du transfert en allant dans `Transferts`{.action} puis `Transferts sortants`{.action}.
 7.	Tapez votre nom de domaine dans la barre de recherche. Le résultat apparaîtra dans la colonne `Vérifier le statut`{.action}.
 
-### Etape 4 : Initier le transfert de domaine chez OVH 
+### Etape 3 - Initier le transfert de domaine chez OVHcloud
 
 > [!primary]
 > 
