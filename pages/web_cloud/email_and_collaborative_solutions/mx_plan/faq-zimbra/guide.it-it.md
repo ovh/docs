@@ -108,7 +108,7 @@ Per disattivare il servizio nella sezione "I tuoi servizi" dello spazio OVHcloud
     - Le firme configurate dalla Webmail OWA non verranno migrate a causa della formattazione.
 - **Blocca/Autorizza**: Questa funzionalità, che permette di bloccare email provenienti da un dominio o indirizzo email specifico, non sarà presente su Zimbra. Tuttavia, questo comportamento può essere facilmente ricreato tramite una regola di posta in arrivo da Zimbra.
 - **Piè di pagina** (firma di un dominio configurabile dallo Spazio Cliente): Questa funzionalità non sarà presente sulla nuova infrastruttura Zimbra. È comunque possibile configurare una firma a livello di account email.
-- **Politica di Sicurezza**: Questa funzionalità dello Spazio Cliente che permette di modificare la politica di gestione delle password non sarà presente, in un primo momento, sulla soluzione Zimbra.<br> La politica di sicurezza applicata di default sulle password richiede almeno 10 caratteri alfanumerici, 1 carattere speciale, 1 maiuscolo.
+- **Politica di Sicurezza**: Questa funzionalità dello Spazio Cliente che permette di modificare la politica di gestione delle password non sarà presente, in un primo momento, sulla soluzione Zimbra.<br>La politica di sicurezza applicata di default sulle password richiede almeno 10 caratteri alfanumerici, 1 carattere speciale, 1 maiuscolo.
 - **Spoofing**: Lo spoofing consiste nell'inviare un'email da un'identità diversa dall'account email su cui ti sei autenticato. Questa pratica è incompatibile con i protocolli di sicurezza SPF e DKIM necessari per la corretta consegna delle email.<br>Da Zimbra, è possibile configurare un'altra identità diversa dall'account email utilizzato, a condizione che sia applicata una delega.
 
 ## Per saperne di più
