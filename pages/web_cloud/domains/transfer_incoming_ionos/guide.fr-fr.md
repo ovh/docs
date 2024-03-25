@@ -1,6 +1,6 @@
 ---
 title: 'Transférer un nom de domaine Ionos vers OVHcloud'
-excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine Ionos vers OVHcloud'
+excerpt: 'Découvrez différentes informations concernant le transfert d’un nom de domaine Ionos vers OVHcloud'
 updated: 2024-03-22
 ---
 
