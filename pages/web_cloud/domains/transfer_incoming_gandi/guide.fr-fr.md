@@ -22,6 +22,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 
 
 > [!warning]
+>
 > Le service Gandimail est lié à votre nom de domaine et arrêtera de fonctionner dès que le domaine sera transféré hors de Gandi. 
 > Les boîtes mails et leur contenu associés à ce domaine seront supprimés irrémédiablement 7 jours après. 
 > Il est donc important de sauvegarder leur contenu avant de commencer le transfert.
