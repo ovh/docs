@@ -17,7 +17,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 > Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
 >
->
 
 ## Prérequis
 
@@ -37,11 +36,8 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter votre bureau d'enregistrement actuel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
+
 ## En pratique
-
-
-
-### Etape 1 - Déverrouiller le nom de domaine chez GoDaddy
 
 > [!primary]
 >
@@ -61,6 +57,8 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 > Vérifiez également qu'ils ne ferment pas de leur côté d'autres services comme, par exemple, les adresses e-mails associées à votre nom de domaine.
 >
 
+### Etape 1 - Déverrouiller le nom de domaine chez GoDaddy
+
 Le verrouillage d'un nom de domaine le protège contre les tentatives de transfert non autorisées.
 GoDaddy active cette protection par défaut. Vous devez donc la désactiver pour transférer votre domaine chez OVHcloud.
 
@@ -74,7 +72,8 @@ Pour cela :
 
 ### Etape 2 - Obtenir le code d’autorisation 
 
-OVHcloud vous demandera de fournir le code d’autorisation ou « Auth code » avant d’initier la procédure de transfert de nom de domaine. Vous pouvez l’obtenir en ouvrant la page de votre portfolio de `Noms de domaines`{.action} chez GoDaddy. 
+OVHcloud vous demandera de fournir le code d’autorisation ou « Auth code » avant d’initier la procédure de transfert de nom de domaine. Vous pouvez l’obtenir en ouvrant la page de votre portfolio de `Noms de domaines`{.action} chez GoDaddy.
+
 Pour cela : 
 
 1.	Sélectionnez le nom de domaine concerné pour accéder au menu `Paramètres`{.action} du nom de domaine.
@@ -87,39 +86,13 @@ Pour cela :
 
 ### Etape 3 - Initier le transfert de domaine chez OVHcloud
 
-
-### Facteurs à prendre en compte pour un transfert de domaine réussi
-
-Avant de transférer un domaine, assurez-vous de remplir les conditions préalables suivantes :
-
-#### Avoir la pleine propriété du domaine
-
-Le titulaire est la personne qui a enregistré l’adresse du site web. Pour conserver la propriété, assurez-vous que vos coordonnées, telles que le nom, l’adresse électronique et le numéro de téléphone, sont correctes.
-
-Ces données sont nécessaires pour que le fournisseur actuel vous envoie un e-mail de confirmation et procède au transfert de nom de domaine.
-
-#### Le domaine est actif depuis 60 jours ou plus
-
-Dans certains cas, le domaine doit être actif pendant plus de 60 jours avant de pouvoir être transféré vers un autre bureau d’enregistrement.
-
-L’ICANN applique cette règle aux noms de domaine génériques et nouveaux qui utilisent des TLD tels que .com, .net, .photo et .online afin de protéger les titulaires de noms de domaine contre les tentatives de transfert non autorisées.
-
-En revanche, les TLD de code pays suivent la politique définie par leur registre local.
-
-#### Il n’a pas été transféré au cours des 60 derniers jours
-
-Si vous avez déjà transféré le même nom de domaine, vous devez attendre au moins 60 jours avant de pouvoir le transférer vers un autre fournisseur. Cette mesure s’applique à tous les bureaux d’enregistrement et contribue à prévenir le détournement de domaine, une attaque malveillante au cours de laquelle une partie non autorisée vole une adresse web.
-
-#### Vous avez un code EPP/Auth valide
-
-L’EPP ou Auth-Code est un code secret que le fournisseur de domaine attribue pour identifier le titulaire et empêcher tout accès illégal. Vous devez l’obtenir auprès de GoDaddy et le fournir à OVH pour transférer votre nom de domaine.
-
+Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
 [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-[Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
+[Migrer son site Web et de ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
