@@ -27,7 +27,8 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 >
 > Les adresses e-mail associées à ce nom de domaine seront définitivement supprimées 7 jours après, **y compris l'ensemble de ce qu'elles contiennent**.
 >
-> Il est donc important de sauvegarder leur contenu avant de commencer le transfert.
+> Il est donc primordial de sauvegarder leurs contenus avant de commencer le transfert du nom de domaine.
+>
 
 ## Prérequis
 
