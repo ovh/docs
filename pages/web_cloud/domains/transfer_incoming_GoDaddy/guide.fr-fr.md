@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine de GoDaddy vers OVHcloud'
 excerpt: 'Découvrez différentes informations concernant le transfert d’un nom de domaine GoDaddy vers OVHcloud'
-updated: 2024-03-24
+updated: 2024-03-25
 ---
 ## Objectif
 
