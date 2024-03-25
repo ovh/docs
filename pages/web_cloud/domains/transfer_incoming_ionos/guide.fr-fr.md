@@ -56,7 +56,7 @@ Pour vérifier si le verrouillage de transfert est activé pour votre nom de dom
 
 ### Obtenir le code d'autorisation
 
-Le code d'autorisation sécurise votre domaine contre tout transfert non autorisé par des tiers. Ce code est requis pour autoriser le transfert de votre domaine vers un nouveau fournisseur.
+Le code d'autorisation protège votre nom de domaine contre tout transfert non autorisé par des tiers. Ce code est requis pour autoriser le transfert de votre nom de domaine vers un nouveau fournisseur.
 
 Pour trouver le code d'autorisation de votre domaine, accédez à la section "Domaines" sur la page [Transfert & renouvellement]([[https://www.nominet.uk/whois/](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Ftransfer%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dtransfer%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue))){.external}. Sélectionnez votre domaine, puis cliquez sur **Afficher le code d'autorisation**.
 
