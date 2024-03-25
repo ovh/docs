@@ -87,7 +87,6 @@ Pour cela :
 
 ### Etape 3 - Initier le transfert de domaine chez OVHcloud
 
-> [!primary]
 
 #### Pour le suivi du transfert après la commande : 
 
