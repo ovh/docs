@@ -73,7 +73,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 - Connectez-vous à votre compte Gandi, puis accédez à la section `NOM DE DOMAINE`{.action} dans le menu de gauche.
 - Basculez sur la [Vue avancée](https://docs.gandi.net/fr/noms_domaine/operations_courantes/gerer_plusieurs_domaines.html){.external}.
 - Cochez les cases à gauche des noms de domaine que vous souhaitez déverrouiller.
-- Cliquez sur [ ፧ Configurer] pour ouvrir le menu, puis cliquez sur "Verrouillage / Déverrouillage de transfert" dans le menu en bas de page.
+- Cliquez sur `Configurer`{.action} pour ouvrir le menu, puis cliquez sur `Verrouillage / Déverrouillage de transfert`{.action} dans le menu en bas de page.
 - Choisissez l'action de déverrouillage dans le popup qui apparaîtra et validez.
 
 ### Obtenir le code d'autorisation
