@@ -78,7 +78,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 
 ### Obtenir le code d'autorisation
 
-Le code d'autorisation sécurise votre domaine contre tout transfert non autorisé par des tiers. Ce code est requis pour autoriser le transfert de votre domaine vers un nouveau fournisseur.
+Le code d'autorisation sécurise votre nom de domaine contre des transferts non autorisés et réalisés par des tiers. Ce code est requis pour autoriser le transfert de votre nom de domaine vers un nouveau bureau d'enregistrements.
 
 Voici les étapes pour obtenir le code de transfert d'un domaine sur Gandi :
 
