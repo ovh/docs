@@ -74,7 +74,7 @@ Pour cela :
 
 ### Etape 2 - Obtenir le code d’autorisation 
 
-OVH vous demandera de fournir le code d’autorisation ou "Auth code" avant d’initier la procédure de transfert de domaine. Vous pouvez l’obtenir en ouvrant la page de votre portfolio de domaines GoDaddy. 
+OVHcloud vous demandera de fournir le code d’autorisation ou « Auth code » avant d’initier la procédure de transfert de nom de domaine. Vous pouvez l’obtenir en ouvrant la page de votre portfolio de `Noms de domaines`{.action} chez GoDaddy. 
 1.	Sélectionnez le domaine pour accéder au menu 'Paramètres'{.action} du domaine.
 2.	Dans la section 'Paramètres supplémentaires'{.action}, cliquez sur 'Transférer le domaine hors de GoDaddy'{.action}.
 3.	Lisez la liste de contrôle des transferts pour plus de détails. Si vous souhaitez transférer un domaine.uk, insérez le tag IPS suivant – YOURSRS-NL – et cliquez sur 'Terminer le transfert'{.action}.
