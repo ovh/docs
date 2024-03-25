@@ -30,7 +30,6 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 ## Prérequis
 
 - Le domaine doit être enregistrés à votre nom depuis au moins 60 jours avant que vous puissiez les transférer.
-- Le domaine ne doit pas être bloqué chez votre registrar. 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
