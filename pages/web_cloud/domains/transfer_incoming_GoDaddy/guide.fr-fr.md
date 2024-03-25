@@ -45,7 +45,8 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 ### Etape 1 - Déverrouiller le nom de domaine chez GoDaddy
 
 Le verrouillage d'un nom de domaine le protège contre les tentatives de transfert non autorisées.
-GoDaddy l’active par défaut, vous devez donc le désactiver pour transférer votre domaine chez OVH :
+GoDaddy active cette protection par défaut. Vous devez donc la désactiver pour transférer votre domaine chez OVHcloud.
+
 1.	Connectez-vous à votre page Portfolio de domaines GoDaddy et cochez la case à côté du domaine.
 2.	Choisissez le menu 'Verrouillage'{.action} et sélectionnez 'Désactiver le verrouillage'{.action} pour déverrouiller votre domaine.
 3.	Examinez le domaine et cliquez sur 'Continuer'{.action}.
