@@ -68,7 +68,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 - Cliquez sur l'onglet `Transfert Sortant`{.action}. Vous êtes redirigés vers la page de gestion du code d'autorisation et du verrou.
 - Désactivez le verrou en cliquant sur l'icône en forme de Cadenas située à droite de `Désactiver la protection contre le transfert`{.action}.
 
-#### Pour déverrouiller PLUSIEURS domaine :
+#### Déverrouiller plusieurs noms de domaine :
 
 - Connectez-vous à votre compte Gandi, puis accédez à la section `NOM DE DOMAINE`{.action} dans le menu de gauche.
 - Basculez sur la [Vue avancée](https://docs.gandi.net/fr/noms_domaine/operations_courantes/gerer_plusieurs_domaines.html){.external}.
