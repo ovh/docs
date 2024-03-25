@@ -20,8 +20,7 @@ Rekord **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**
 > 
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług hostingowych. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) tego tutoriala.
 >
-> Ponadto rejestracja **DMARC**, niezależnie od [oferty e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/), jest aktualnie niedostępna. Niniejszy przewodnik dotyczy **wyłącznie** klientów, którzy posiadają aktywną strefę DNS w OVHcloud ze względu na ich domenę powiązaną z **zewnętrznym rozwiązaniem e-mail**.
->
+
 
 ## Wymagania początkowe
 

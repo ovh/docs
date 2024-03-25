@@ -20,8 +20,6 @@ Der Eintrag **D**omain-based **M**essage **A**uthentication, **R**eporting, and 
 > 
 > Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der OVHcloud Community. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> Die Einrichtung eines **DMARC** Eintrags ist derzeit nicht mit [E-Mail-Angeboten von OVHcloud](https://www.ovhcloud.com/de/emails/) kompatibel. Dieses Tutorial gilt **nur** für Kunden, die über eine aktive DNS-Zone bei OVHcloud für ihren Domainnamen verfügen, der mit einer **externen E-Mail-Lösung verbunden ist**.
->
 
 ## Voraussetzungen
 
