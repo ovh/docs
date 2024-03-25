@@ -79,7 +79,7 @@ Pour cela :
 
 1.	Sélectionnez le nom de domaine concerné pour accéder au menu `Paramètres`{.action} du nom de domaine.
 2.	Dans la section `Paramètres supplémentaires`{.action}, cliquez sur `Transférer le domaine hors de GoDaddy`{.action}.
-3.	Lisez la liste de contrôle des transferts pour plus de détails. Si vous souhaitez transférer un domaine.uk, insérez le tag IPS suivant – YOURSRS-NL – et cliquez sur 'Terminer le transfert'{.action}.
+3.	Lisez la liste de contrôle des transferts pour plus de détails. Si vous souhaitez transférer un nom de domaine avec l'extention *.uk*, insérez le tag IPS suivant – YOURSRS-NL – et cliquez sur `Terminer le transfert`{.action}.
 4.	Sélectionnez 'Continuer le transfert'{.action}. Une fois cette opération effectuée, GoDaddy désactivera le paramètre de domaine privacy pour s’assurer que les informations de contact sont transférées au nouveau bureau d’enregistrement.
 5.	Pour obtenir votre code EPP, sélectionnez 'Cliquez ici'{.action} pour voir le code d’autorisation et cliquez sur 'Copier dans le presse-papiers'{.action}. Le fournisseur d’hébergement web enverra également le code d’autorisation à l’adresse électronique administrative de votre domaine.
 6.	Vérifiez le statut du transfert en allant dans 'Transferts'{.action} puis 'Transferts sortants'{.action}.
