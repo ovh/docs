@@ -72,7 +72,7 @@ Pour cela :
 4.	Si vous activez la protection du domaine, vérifiez votre identité.
 5.	La notification de Succès apparaîtra pour indiquer que votre domaine est déverrouillé.
 
-### Etape 3 : Obtenir le code d’autorisation 
+### Etape 2 - Obtenir le code d’autorisation 
 
 OVH vous demandera de fournir le code d’autorisation ou "Auth code" avant d’initier la procédure de transfert de domaine. Vous pouvez l’obtenir en ouvrant la page de votre portfolio de domaines GoDaddy. 
 1.	Sélectionnez le domaine pour accéder au menu 'Paramètres'{.action} du domaine.
