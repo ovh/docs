@@ -68,7 +68,7 @@ Pour cela :
 
 1.	Connectez-vous à votre compte GoDaddy, rendez-vous dans votre portfolio de `Noms de domaines`{.action} et cochez la case à côté du nom de domaine à transférer.
 2.	Choisissez le menu `Verrouillage`{.action} et sélectionnez `Désactiver le verrouillage`{.action} pour déverrouiller votre nom de domaine.
-3.	Examinez le domaine et cliquez sur 'Continuer'{.action}.
+3.	Examinez le nom de domaine et cliquez sur `Continuer`{.action}.
 4.	Si vous activez la protection du domaine, vérifiez votre identité.
 5.	La notification de Succès apparaîtra pour indiquer que votre domaine est déverrouillé.
 
