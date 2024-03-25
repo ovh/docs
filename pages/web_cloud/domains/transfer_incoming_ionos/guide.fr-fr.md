@@ -52,7 +52,7 @@ Pour confirmer si l'enregistrement privé est activé pour votre domaine, veuill
 >défaut et ne peuvent pas être transférés. Avant d'initier un transfert de domaine, vous devez désactiver ce verrouillage de transfert.
 
 
-Pour vérifier si le verrouillage de transfert de domaine est activé pour votre domaine, veuillez accéder à la section "Domaines" sur la page "Transfert & renouvellement". Sélectionnez ensuite votre domaine et désactivez l'option de verrouillage de transfert de domaine en utilisant le curseur.
+Pour vérifier si le verrouillage de transfert est activé pour votre nom de domaine, rendez-vous sur la page `Transfert & renouvellement`{.action}, puis accédez à la section `Domaines`{.action}. Sélectionnez ensuite votre nom de domaine et désactivez l'option de verrouillage de transfert de domaine en utilisant le curseur.
 
 ### Obtenir le code d'autorisation
 
