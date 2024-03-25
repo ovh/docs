@@ -87,7 +87,6 @@ Pour cela :
 
 ### Etape 3 - Initier le transfert de domaine chez OVHcloud
 
-
 Une fois la commande validée, vous recevrez un bon de commande. Le processus de transfert ne démarrera qu'après réception du paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
 
 ### Facteurs à prendre en compte pour un transfert de domaine réussi
