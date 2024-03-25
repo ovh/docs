@@ -94,7 +94,7 @@ Per disattivare il servizio nella sezione "I tuoi servizi" dello spazio OVHcloud
 - **Offerte e fatturazione**: Mantenute
 - **Reindirizzamento / Alias / mailing list dallo Spazio Cliente**: Mantenuti
 - **Configurazione DNS - SPF/MX/SRV**: Mantenuta
-- **Deleghe account email**: mantenute, tramite la Webmail
+- **Deleghe account email**: Mantenute, tramite la Webmail
 - **Connessione a programmi di posta elettronica** (IMAP/POP): mantenuta, nessuna modifica alla configurazione necessaria.
 - **Contenuto dell'account email** (email, cartelle, contatti): Migrato
 - **Email ricevute durante il processo di migrazione**: consegnate

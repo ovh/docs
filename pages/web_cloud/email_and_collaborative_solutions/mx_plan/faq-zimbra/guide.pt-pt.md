@@ -95,20 +95,20 @@ Para rescindir a sua oferta na secção « Serviços » do seu espaço OVHcloud,
 - **Reencaminhamento / Alias / mailing list a partir da Área de Cliente**: Mantidos
 - **Configuração DNS - SPF / MX / SRV** : Mantidas
 - **Delegações de contas de e-mail**: Mantidas, via webmail
-- **Ligação ao software de correio eletrónico** (IMAP/POP): Manter o servidor, não é necessário alterar a configuração.
+- **Ligação ao software de correio eletrónico** (IMAP/POP): Mantido, não são necessárias alterações de configuração.
 - **Conteúdo da conta de e-mail** (e-mails, pastas, contactos): Migrado
 - **E-mails recebidos durante o processo de migração**: Entregues
-- **Resposta automática / Resposta automática**: Continuada
+- **Resposta automática / Resposta automática**: Mantida
 - **Regra da caixa de entrada**:
     - As regras configuradas a partir do seu software de e-mail não serão alteradas.
     - As regras configuradas a partir do webmail OWA serão migradas para o webmail Zimbra. Apenas uma percentagem muito reduzida de regras não poderá ser migrada devido à incompatibilidade. Estas serão enviadas como e-mail na conta de e-mail do utilizador, e poderão ser recriadas manualmente.
-    - *Regra incompatível*: Regra que utiliza dois tipos de condições, como ET e OU, simultaneamente. Por exemplo, se a mensagem for recebida de (**john@mydomain.ovh*** OU **mary@mydomain.ovh**) E o assumpto contiver « fatura », então mover para a pasta « importante »
+    - *Regra incompatível*: Regra que utiliza dois tipos de condições, como E e OU, simultaneamente. Por exemplo, se a mensagem for recebida de (**john@mydomain.ovh*** OU **mary@mydomain.ovh**) E o assumpto contiver « fatura », então mover para a pasta « importante »
 - **Assinatura pessoal**:
     - As assinaturas configuradas a partir do seu software de e-mail não serão alteradas.
     - As assinaturas configuradas a partir do webmail OWA não serão migradas devido à formatação.
 - **Bloquear / Permitir** : Esta funcionalidade, que permite bloquear e-mails provenientes de um nome de domínio específico ou de um endereço de e-mail específico, não estará presente no Zimbra. Este comportamento pode ser facilmente recriado através de uma regra da caixa de entrada a partir de Zimbra.
 - **Rodapé** (assinatura de domínio configurável através da Área de Cliente): Esta funcionalidade não estará presente para a nova infraestrutura Zimbra. No entanto, é sempre possível configurar uma assinatura ao nível da conta de e-mail.
-- **Política de Segurança**: Esta funcionalidade da Área de Cliente, que permite alterar a política de gestão das palavras-passe, não estará presente numa primeira fase na solução Zimbra.<br> A política de segurança aplicada por predefinição nas palavras-passe requer um mínimo de 10 caracteres alfanuméricos, 1 caráter especial, 1 maiúscula.
+- **Política de Segurança**: Esta funcionalidade da Área de Cliente, que permite alterar a política de gestão das palavras-passe, não estará presente numa primeira fase na solução Zimbra.<br>A política de segurança aplicada por predefinição nas palavras-passe requer um mínimo de 10 caracteres alfanuméricos, 1 caráter especial, 1 maiúscula.
 - **Spoofing** : O spoofing consiste em enviar um e-mail a partir de uma identidade diferente da conta de e-mail na qual é autenticado. Esta prática é incompatível com os protocolos de segurança SPF e DKIM necessários para a correta entrega dos e-mails.<br>A partir do Zimbra, pode configurar outra identidade diferente da conta de e-mail utilizada, desde que seja aplicada uma delegação.
 
 ## Saiba mais

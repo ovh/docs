@@ -102,13 +102,13 @@ Aby anulować ofertę w sekcji „Moje usługi” w przestrzeni OVHCloud, zapozn
 - **Reguła skrzynki odbiorczej**:
     - Reguły skonfigurowane w programie pocztowym nie ulegną zmianie.
     - Reguły skonfigurowane z poziomu webmail OWA zostaną przeniesione do webmaila Zimbra. Niewielka część reguł nie może zostać migrowana z powodu niezgodności. Zostaną one wysłane jako wiadomość e-mail na konto e-mail użytkownika i będą mogły zostać utworzone ręcznie.
-    - *Niekompatybilna reguła*: Reguła używa dwóch typów warunków, takich jak ET i LUB jednocześnie. Na przykład, jeśli wiadomość została odebrana od (**john@mydomain.ovh** LUB **mary@mydomain.ovh**) A temat zawiera "fakturę", przenieś do folderu "Ważne"
+    - *Niekompatybilna reguła*: Reguła używa dwóch typów warunków, takich jak I i LUB jednocześnie. Na przykład, jeśli wiadomość została odebrana od (**john@mydomain.ovh** LUB **mary@mydomain.ovh**) A temat zawiera "fakturę", przenieś do folderu "Ważne"
 - **Podpis osobisty**:
     - Podpisy skonfigurowane w programie pocztowym nie ulegną zmianie.
     - Podpisy skonfigurowane z poziomu interfejsu Webmail OWA nie zostaną zmigrowane z powodu formatowania.
 - **Zablokuj / Zezwól** : Funkcja ta, pozwalająca na zablokowanie e-maili wysyłanych z określonej domeny lub adresu e-mail, nie będzie dostępna w witrynie Zimbra. Zachowanie to można jednak łatwo odtworzyć za pomocą reguły skrzynki odbiorczej w interfejsie Zimbra.
 - **Stopka** (podpis domeny konfigurowalny w Panelu klienta): Ta funkcja nie będzie dostępna w nowej infrastrukturze Zimbra. Nadal można jednak skonfigurować podpis na poziomie konta e-mail.
-- **Polityka bezpieczeństwa** : Funkcja Panelu klienta umożliwiająca zmianę polityki zarządzania hasłami nie będzie początkowo dostępna w przypadku rozwiązania Zimbra.<br> Domyślna polityka bezpieczeństwa dotycząca haseł wymaga minimum 10 znaków alfanumerycznych, 1 znaku specjalnego, 1 wielkiej litery.
+- **Polityka bezpieczeństwa** : Funkcja Panelu klienta umożliwiająca zmianę polityki zarządzania hasłami nie będzie początkowo dostępna w przypadku rozwiązania Zimbra.<br>Domyślna polityka bezpieczeństwa dotycząca haseł wymaga minimum 10 znaków alfanumerycznych, 1 znaku specjalnego, 1 wielkiej litery.
 - **Spoofing**: Spoofing polega na wysyłaniu e-maila z innej tożsamości niż konto e-mail, na którym jesteś uwierzytelniony. Taka praktyka jest niezgodna z protokołami zabezpieczeń SPF i DKIM wymaganymi do prawidłowego dostarczania wiadomości e-mail.<br>Z poziomu Zimbra można skonfigurować inną tożsamość używanego konta e-mail, pod warunkiem zastosowania uprawnienia.
 
 ## Sprawdź również
