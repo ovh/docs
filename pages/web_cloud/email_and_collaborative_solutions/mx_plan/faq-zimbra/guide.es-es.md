@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre la solución Zimbra OVHcloud
 excerpt: "Encuentre las preguntas sobre la migración a Zimbra para la solución MX Plan de OVHcloud"
-updated: 2024-03-22
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -92,7 +92,7 @@ Para dar de baja un servicio en la sección « Mis servicios » de su área de O
 
 - **Gestión de la cuenta de correo desde el área de cliente** (Contraseña, alias, cuota): Mantenida
 - **Ofertas y facturación**: Mantenidas
-- **Redirección / Alias / Lista de difusión desde el área de cliente** : Maintenus
+- **Redirección / Alias / Lista de difusión desde el área de cliente** : Mantenidas
 - **Configuración DNS - SPF / MX / SRV**: Mantenida
 - **Delegaciones de cuentas de correo**: Mantenidas, a través del webmail
 - **Conexión a los programas de correo electrónico** (IMAP/POP): Mantenida, no es necesario modificar la configuración.
