@@ -39,7 +39,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 
 ## En pratique
-3.	Obtenir le code d’autorisation 
 4.	Initier le transfert de domaine chez OVH 
 -	Facteurs à prendre en compte pour un transfert de domaine réussi 
 -Avoir la pleine propriété du domaine 
