@@ -39,7 +39,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 
 ## En pratique
--Vous avez un code EPP/Auth valide 
 -	Aller plus loin
 
 ### Comment transférer un domaine de GoDaddy vers OVH ?
