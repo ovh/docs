@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration von IP-Aliasing'
 excerpt: 'Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen'
-updated: 2024-03-19
+updated: 2024-03-25
 ---
 
 > [!primary]
@@ -485,30 +485,30 @@ Ihre Additional IP ist jetzt funktionsfähig.
 
 #### Grafische Benutzeroberfläche
 
-1. Öffnen Sie `Start`{.action}, `Systemsteuerung`{.action}, `Netzwerk und Internet`{.action}, `Netzwerk- und Freigabecenter`{.action}, `Adaptereinstellungen ändern`{.action} (im linken Menü).
+1. Öffnen Sie `Start`{.action}, `Control Panel`{.action}, `Network and Internet`{.action}, `Network and Sharing Centre`{.action}, `Change Adapter Settings`{.action} (im linken Menü).
 2. Klicken Sie mit der rechten Maustaste auf Ihre Netzwerkverbindung, in unserem Beispiel `Ethernet 2`{.action};
-3. Klicken Sie auf `Eigenschaften`{.action}.
-4. Wählen Sie `Internetprotokoll Version 4 (TCP/IPv4)`{.action} aus und klicken Sie auf `Eigenschaften`{.action}.
-5. Klicken Sie auf `Folgende IP-Adresse verwenden`{.action} und geben Sie die Haupt-IP-Adresse Ihres Servers, die Subnetzmaske und das Standardgateway ein, die Sie über den Befehl `ipconfig`{.action} erhalten haben. (Im Feld “Bevorzugter DNS-Server” geben Sie 213.186.33.99 ein).
+3. Klicken Sie auf `Properties`{.action}.
+4. Wählen Sie `Internet Protocol Version 4 (TCP/IPv4)`{.action} aus und klicken Sie auf `Properties`{.action}.
+5. Klicken Sie auf `Use the following IP address`{.action} und geben Sie die Haupt-IP-Adresse Ihres Servers, die Subnetzmaske und das Standardgateway ein, die Sie über den Befehl `ipconfig`{.action} erhalten haben. (Im Feld “Preferred DNS Server” geben Sie 213.186.33.99 ein).
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip.png){.thumbnail}
 
 > [!warning]
 >
-> Achtung, der Server ist nicht mehr erreichbar, wenn Sie falsche Informationen eingeben. Die Korrekturen müssen dann im [WinRescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) Modus oder über den [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) durchgeführt werden.
+> Achtung, der Server ist nicht mehr erreichbar, wenn Sie falsche Informationen eingeben. Die Korrekturen müssen dann im [WinRescue Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) oder über den [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) durchgeführt werden.
 > 
 
-Klicken Sie auf `Erweitert`{.action} (immer noch in den `TCP/IP Einstellungen`{.action}).
+Klicken Sie auf `Advanced`{.action} (immer noch in den `TCP/IP Settings`{.action}).
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip-1.png){.thumbnail}
 
 
-Im Bereich `IP-Adresse`{.action} klicken Sie auf `Hinzufügen`{.action}
+Im Bereich `IP Address`{.action} klicken Sie auf `Add`{.action}.
 
 ![Advanced TCP/IPv4 Settings](images/add-additional-ip.png){.thumbnail}
 
 
-Geben Sie dann Ihre Additional IP und die Subnetzmaske **255.255.255.255** ein.
+Geben Sie dann Ihre Additional IP und die Subnetzmaske **255.255.255.255** ein. Klicken Sie auf `Add`{.action}.
 
 ![TCP/IP Address](images/configure-additional-ip.png){.thumbnail}
 
