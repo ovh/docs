@@ -41,7 +41,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 
 
 
-4.	Si vous avez activé la fonction de protection du domaine, vérifiez votre identité en entrant le code envoyé par SMS ou par votre application d’authentification. Il est également possible d’insérer le mot de passe à usage unique envoyé à l’adresse électronique de la personne inscrite.
 5.	Vous verrez apparaître une "fenêtre contextuelle de Succès" confirmant les modifications.
 
 Notez qu’il est possible de conserver le domaine auprès du fournisseur d’origine et de le faire pointer uniquement vers OVH. De cette façon, le domaine se connectera à l’endroit où les fichiers de votre site web sont hébergés, même si vous utilisez un autre fournisseur de domaine.
