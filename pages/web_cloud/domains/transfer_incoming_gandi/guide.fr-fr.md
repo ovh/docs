@@ -91,6 +91,7 @@ Voici les étapes pour obtenir le code de transfert d'un nom de domaine chez Gan
 Une fois le code d'authorisation obtenu, vous pouvez procéder au transfère du nom de domaine en suivant les étapes de notre guide [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 
 > [!warning]
+>
 > Dans les 24 heures suivants l'initiation du transfert, Gandi vous enverra un e-mail de notification pour vous informer de la sortie du nom de domaine.
 > Cet e-mail peut également contenir un lien vous permettant d'accepter le transfert à la place de Gandi, ce qui réduira le délai de réserve.
 > La période de réserve correspond à une période de 5 jours (8 jours pour les nom de domaine gérés par l'AFNIC) qui permet d’annuler le transfert.
