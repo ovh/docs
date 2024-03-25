@@ -39,7 +39,6 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 >
 
 ## En pratique
--Il n’a pas été transféré au cours des 6P derniers jours 
 -Vous avez un code EPP/Auth valide 
 -	Aller plus loin
 
