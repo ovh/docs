@@ -7,7 +7,7 @@ updated: 2024-03-25
 
 Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecter une démarche spécifique. Dans ce guide, nous vous expliquons en quelques étapes comment transférer votre nom de domaine de GoDaddy vers OVHcloud. 
 
-**Découvrez comment transférer un nom de domaine GoDaddy vers OVHcloud**
+**Découvrez comment transférer un nom de domaine de GoDaddy vers OVHcloud**
 
 > [!warning]
 >
