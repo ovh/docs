@@ -58,7 +58,8 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 >
 > Ce verrouillage empêche tout les transferts involontaires.
 >
-> Tant que ce verrou est activé, le transfert n'est pas possible.
+> Tant que le verrouillage est actif, le transfert n'est pas possible.
+>
 
 #### Pour déverrouiller UN (seul) domaine :
 
