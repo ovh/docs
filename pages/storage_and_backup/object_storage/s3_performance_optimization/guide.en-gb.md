@@ -1,52 +1,54 @@
 ---
 title: Optimizing OVHcloud Object Storage Performance
-excerpt: This guide walks you through various methods to optimize the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads.
-updated: 2024-03-19
+excerpt: This guide walks you through various methods to optimise the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads.
+updated: 2024-03-25
 ---
 
 ## Introduction
 
-There are several ways you can use to optimize the performances of your buckets on OVHcloud Object Storage. The following guide will walk you through the different optimization methods.
+There are several ways to optimise the performance of your buckets on OVHcloud Object Storage. The following guide will walk you through the different optimization methods.
 
 ### Using byte range fetch
 
-OVHcloud Object Storage supports byte range fetch. The idea behind is to fetch an object chunk by chunk, each chunk being defined by a range of bytes. The main benefit is that it allows you to parallelize GET requests to download an object, each GET requesting a specific range of bytes: typical sizes for byte-range requests are 8 MB or 16 MB but you can specify any size.
+OVHcloud Object Storage supports byte range fetch. The idea is to retrieve an object chunk by chunk, each chunk being defined by a range of bytes. The main advantage is that it allows you to parallelize GET requests to download an object, each GET requesting a specific range of bytes: typical sizes for byte-range requests are 8 MB or 16 MB but you can specify any size.
 
-![Schema 1](images/sharding1.png)
+![Schema 1](images/sharding1.png){.thumbnail}
 
-To download part of an object, you must use additional parameters to specify which part of an object that you want to fetch. The following example dowloads the first part ranging from 0 to 500 bytes of an object named "filename" stored in the "test-bucket" bucket and writes the output as a file named "object_part":
+To download part of an object, you must use additional parameters to specify which part of the object you want to retrieve. The following example downloads the first part ranging from 0 to 500 bytes of an object named "filename" stored in the "test-bucket" bucket and writes the output as a file named "object_part":
 
 ```bash
 user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range bytes=0-500 object_part
 ```
 ### Using MPUs
 
-You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if transmission of any part fails. After you complete the upload of all parts, OVHcloud Object Storage puts the pieces together and rebuilds the object.
+You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if transmission of any part fails. Once you have downloaded all the parts, OVHcloud Object Storage assembles them and rebuilds the object.
 
 > [!success]
 >
 > You should consider using multipart uploads for objects > 100MB
 
 The benefits of using multipart upload are as follows:
-* Increased throughput: each part can be uploaded concurrently
+
+* Increased throughput: each part can be uploaded concurrently.
 * Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
 
+## Instructions
 
-## In practice 
+### Using the AWS CLI
 
-## Prerequisites
+You will need the following:
 
-### Using the AWS cli 
-
-* an OVHcloud bucket created
-* the AWS cli installed and configured
-* a large file split into multiple parts
+* An [OVHcloud bucket created](/pages/storage_and_backup/object_storage/s3_create_bucket)
+* The [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external} installed and configured
+* A large file split into multiple parts
 
   
-> [!success]: **Did you know You ?**
-> When you use a high level command to upload an object using the cp command, the AWS cli automatically does a multipart-upload. To better optimize the default configuration values for doing multipart uploads (multipart_threshold, multipart_chunksize), you can check this article and see the table explaining the configuration of the AWS cli.
+> [!primary]
+> **Did you know?**
+> When you use a high level command to upload an object using the `cp` command, the AWS CLI automatically does a multipart-upload. To better optimise the default configuration values for doing multipart uploads (multipart_threshold, multipart_chunksize), you can check this article and see the table explaining the configuration of the AWS CLI.
+> 
 
-The following section explains how to perform a multipart upload using the low level commands of the AWS cli.
+The following section explains how to perform a multipart upload using the low level commands of the AWS CLI.
 
 First, you need to initiate a multipart upload:
 
@@ -58,12 +60,16 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
     "UploadId": "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
 }
 ```
+
 > [!primary]
-> Do not forget to save the upload ID, key and bucket name for use with the upload-part command.
+> Do not forget to save the **upload ID**, **key** and **bucket name** for use with the upload-part command.
+> 
 
-Then, for each part, you need to make an upload-part command where you specify the bucket, key and upload ID:
+For each part, you need to make an `upload-part` command where you specify the bucket, key and upload ID:
 
-> [!warning] Part numbers can be any number from 1 to 10,000 inclusive. You can check the technical limitations,["here"](https://help.ovhcloud.com/csm/en-ca-public-cloud-storage-s3-limitations?id=kb_article_view&sysparm_article=KB0034706).
+> [!warning]
+> Part numbers can be any number from 1 to 10,000 inclusive. You can check the technical limitations [here](/pages/storage_and_backup/object_storage/s3_limitations).
+> 
 
 ```bash
 user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-number 1 --body filename_part1 --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx"
@@ -72,10 +78,12 @@ user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-nu
 }
 ```
 
-> [!primary]: Save the ETag value of each part for later. They are required to complete the multipart upload.
+> [!primary]
+> Save the **ETag** value of each part for later. They are required to complete the multipart upload.
+>
 
- After, you upload all the parts, you have to call the complete-multipart-upload command in order to finish and for OVHcloud Object Storage to rebuild the final object:
- 
+Once all the parts have been uploaded, you need to call the `complete-multipart-upload` command to complete the process and for OVHcloud Object Storage to rebuild the final object:
+
 ```bash
 user@host:~$ aws s3api complete-multipart-upload --bucket test-bucket --key filename --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx" --multipart-upload file://mpu.json
 ```
@@ -126,21 +134,21 @@ Where mpu.json is:
         }
     ]
 }
-
-
 ```
 
 > [!primary]
-> If you do not complete the multipart upload, your object will not be rebuilt and will not be visible BUT you still have to pay the storage costs of the parts
+> If you do not complete the multipart upload, your object will not be rebuilt and will not be visible BUT you still have to pay the storage costs of the parts.
+>
 
 ### Using other third party tools
 
 The following list describes the options to perform multipart uploads using other tools. The list is NOT exhaustive as you might want to check the relevant documentation of the tool you are using.
 
-### s3cmd 
+#### s3cmd 
 
-_--multipart-chunk-size-mb=SIZE_
-
+```bash
+$ multipart-chunk-size-mb=SIZE_
+```
 Size of each chunk of a multipart upload. Files bigger than SIZE are automatically uploaded as multithreaded-multipart, smaller files are uploaded using the traditional method. SIZE is in Mega-Bytes, default chunk size is 15MB, minimum allowed chunk size is 5MB, maximum is 5GB.
 
 <u> Example: </u>
@@ -149,21 +157,26 @@ Size of each chunk of a multipart upload. Files bigger than SIZE are automatical
 $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 ```
 
-For more information on s3cmd, check the official documentation,["here"](https://s3tools.org/usage).
+For more information on s3cmd, consult the official documentation [here](https://s3tools.org/usage){.external).
 
 #### rclone 
 
-_--s3-upload-cutoff=SIZE_
+```bash
+$ s3-upload-cutoff=SIZE
+```
 
-Size threshold at which point rclone switches from single file upload to multipart upload
+Size threshold at which point rclone switches from single file upload to multipart upload.
 
-_--s3-chunk-size=SIZE_
+```bash
+s3-chunk-size=SIZE
+```
+Size of each chunk used in multipart uploads.
 
-Size of each chunk used in multipart uploads
+```bash
+s3-upload-concurrency
+```
 
-_--s3-upload-concurrency_
-
-Number of chunks uploaded concurrently
+Number of chunks uploaded concurrently.
 
 <u> Example: </u>
 
@@ -171,55 +184,55 @@ Number of chunks uploaded concurrently
 $ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M testfile s3:test-bucket
 ```
 
-For more information on rclone, check the official documentation ["here"](https://rclone.org/s3/).
+For more information on rclone, consult the official documentation [here](https://rclone.org/s3/){.external}.
 
-Increasing the number of concurrent requests
-
+#### Increasing the number of concurrent requests
 
 Another way to improve throughput is to increase the number of concurrent requests.
 
-To customize the default value on the AWS cli, check ["this article"](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-optimise-sending-files?id=kb_article_view&sysparm_article=KB0047432).
+To customize the default value on the AWS CLI, consult [this guide](pages\storage_and_backup\object_storage\s3_optimise_the_sending_of_your_files).
 
 For other tools, you should check the relevant documentation of the software you are using.
 
-### I/O optimization
+#### I/O optimization
 
-Lastly, you can also significantly optimize performances by adopting good practices to spread a much as possible the I/Os thourghout the object storage cluster by taking advantage of the sharding mechanism.
+Finally, it is also possible to significantly optimise performances by adopting good practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the sharding mechanism.
 
-### What is sharding
+**What is sharding**
 
 OpenIO is a software defined storage solution on which OVHcloud Object Storage is based on.
 
-In OpenIO, a __container__ is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that list all the addresses in the cluster of the objects contained in it. By default, a S3 bucket is associated with one container but this can change with the sharding mechanism.
+In OpenIO, a **container** is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that list all the addresses in the cluster of the objects contained in it. By default, an S3 bucket is associated with one container but this can change with the sharding mechanism.
 
-Sharding is the mechanism by which a container is split into 2 new sub-containers (and thus its associated metadata database is also split in 2) when it reaches __a critical number of objects__ called shards.
+Sharding is the mechanism by which a container is split into 2 new sub-containers (and thus its associated metadata database is also split in 2) when it reaches **a critical number of objects** called **shards**.
+
 Sharding enables :
 
-* to optimize read/write operations by loading balancing them on multiple shards
-* to spread the storage of data throughout the cluster to increase resiliency
+* optimise read/write operations by distributing them evenly over several servers (shards)
+* distribute data storage over the whole cluster to increase resilience
 
 We use the object keys (prefix/name) to determine which objects are pushed into which sub-container using the following logic:
 
-* create 2 new shards
-* find the median value of a sorted by alphabetical order list of all object keys
-* copy the content of the root container to the shards
-* in the first shard, keep only the first half of the objects (object with first key of the list to object with key equals to the median value) and clean the second half
-* in the second shard, keep only the second half of the objects and clean the first half
-* the root container then only lists the references to the shards i.e which range of objects in which shard
+* Create 2 new shards
+* Find the median value of an alphabetically sorted list of all object keys
+* Copy the content of the root container to the shards
+* In the first shard, keep only the first half of the objects (object with first key of the list to object with key equals to the median value) and clean the second half
+* In the second shard, keep only the second half of the objects and clean the first half
+* The root container then only lists the references to the shards i.e which range of objects in which shard
 
 This logic can be summed up as follows:
 
-![Schema 2](images/sharding2.png)
+![Schema 2](images/sharding2.png){.thumbnail}
 
 ### Prefix good practices
 
-You can optimize the I/Os on the cluster by taking advantage of the sharding mechanims described before.
+You can optimise the I/Os on the cluster by taking advantage of the sharding mechanisms described above.
 
-The main strategy is to keep the cardinality of the object keys to the left i.e using prefixes that allows the sharding to split incoming objects the most evenly as possible.
+The main strategy is to keep the cardinality of object keys to the left, i.e. to use prefixes that allow sharding to divide incoming objects as evenly as possible.
 
-Let's consider a use case where you would want to store logs in OVHcloud Object Storage.
+Let's consider a use case where you would want to store logs in an OVHcloud Object Storage.
 
-#### Scenario 1: bad practice by using the date as prefix :
+#### Scenario 1: Bad practice by using the date as prefix
 
 List of objects:
 
@@ -236,12 +249,12 @@ Assuming the threshold is 100, after the uploading of the 100th object, the shar
 * from 20240216/file01.log to 20240216/file100.log in the first shard
 * from 20240216/file101.log and beyond to a second shard
 
-This not optimal because since dates are incremental by nature, all new uploads will always be done on the 2nd shard which in turn will be split again after it reaches a critical size. Thus, all future write operations will always be performed on the latest shard created and the previous shards will get rarely accessed. Furthermore, you may experience some throttling as the sharding process occurs.
+This is not optimal because, since dates are incremental by nature, all new downloads will always be performed on the second shard, which will in turn be split again when it reaches a critical size. Thus, all future write operations will always be performed on the latest shard created and the previous shards will get rarely accessed. Furthermore, you may experience some throttling during the sharding process.
 
 
-![Schema 3](images/sharding3.png)
+![Schema 3](images/sharding3.png){.thumbnail}
 
-#### Scenario 2: good practice by keeping the cardinality to the right
+#### Scenario 2: Good practice by keeping the cardinality to the right
 
 List of objects:
 
@@ -255,20 +268,20 @@ List of objects:
   
 Assuming the threshold is 100, after the uploading of the 100th object, the sharding is triggerd to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
 
-![Schema 4](images/sharding4.png)
+![Schema 4](images/sharding4.png){.thumbnail}
 
-### Optimize ramp up time
+### Optimise ramp up time
 
 When you upload a very large number of objects at once, you trigger the sharding mechanism. As the sharding process occurs, you may experience some throttling.
 
-In order to avoid the reduced performance (503 SLOWDOWN errors), we recommand that you optimize your uploads by spreading your request over time. That spread does not have to be linear but it should give us enough time to better load balance your workload.
+In order to avoid the reduced performance (503 SLOWDOWN errors), we recommend that you optimise your uploads by spreading your request over time. This spread does not have to be linear, but it does have to give us enough time to balance your workload.
 
 A simple way to achieve that lies in better 503 slowdown errors management and error recovery : ramp up your uploads until you hit 503 errors and modulate your workload to accomodate the throttling until sharding is complete and then ramp up again.
 
 ### Increase object sizes
 
-Objects are considered to be small if their size is less than 1MB. When dealing with large volumes of data (PB scale), the total number of objects rapidly reaches billions even trillions. Managing with the metadata administration at this scale leads and dealing with the sheer number of I/O operations poses an great challenge: how to deliver a great service without losing information or comprimising performance.
+Objects are considered small if they are less than 1 MB in size. When it comes to large volumes of data (PB scale), the total number of objects quickly reaches billions or even trillions. Managing metadata administration on this scale and the number of I/O operations poses a major challenge: how to provide a quality service without losing information or compromising performance.
 
-When applicable, we recommand that you increase the object/part size as much as possible in order to reduce the number of objects.
+When applicable, we recommend that you increase the object/part size as much as possible in order to reduce the number of objects.
 
 Join our community of users on <https://community.ovh.com/en/>.
