@@ -82,7 +82,7 @@ Pour cela :
 3.	Lisez la liste de contrôle des transferts pour plus de détails. Si vous souhaitez transférer un nom de domaine avec l'extention *.uk*, insérez le tag IPS suivant – YOURSRS-NL – et cliquez sur `Terminer le transfert`{.action}.
 4.	Sélectionnez `Continuer le transfert`{.action}. Une fois cette opération effectuée, GoDaddy désactivera le paramètre de *domain privacy* pour s’assurer que les informations de contact soient transférées au nouveau bureau d’enregistrement.
 5.	Pour obtenir votre code de transfert/EPP, sélectionnez `Cliquez ici`{.action} pour voir le code d’autorisation et cliquez sur `Copier dans le presse-papiers`{.action}. Le fournisseur enverra également le code d’autorisation à l’adresse électronique administrative de votre nom de domaine.
-6.	Vérifiez le statut du transfert en allant dans 'Transferts'{.action} puis 'Transferts sortants'{.action}.
+6.	Vérifiez le statut du transfert en allant dans `Transferts`{.action} puis `Transferts sortants`{.action}.
 7.	Tapez votre nom de domaine dans la barre de recherche, et le résultat apparaîtra dans la colonne 'Vérifier le statut'{.action}.
 
 
