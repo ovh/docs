@@ -71,7 +71,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 #### Pour déverrouiller PLUSIEURS domaine :
 
 - Connectez-vous à votre compte Gandi, puis accédez à la section `NOM DE DOMAINE`{.action} dans le menu de gauche.
-- Basculez sur la [Vue avancée](https://docs.gandi.net/fr/noms_domaine/operations_courantes/gerer_plusieurs_domaines.html).
+- Basculez sur la [Vue avancée](https://docs.gandi.net/fr/noms_domaine/operations_courantes/gerer_plusieurs_domaines.html){.external}.
 - Cochez les cases à gauche des domaines que vous souhaitez déverrouiller.
 - Cliquez sur [ ፧ Configurer] pour ouvrir le menu, puis cliquez sur "Verrouillage / Déverrouillage de transfert" dans le menu en bas de page.
 - Choisissez l'action de déverrouillage dans le popup qui apparaîtra et validez.
