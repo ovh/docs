@@ -10,9 +10,9 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 
 > [!warning]
 >
-> Le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
+> Le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même bureau d'enregistrement que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
 >
-> Si OVHcloud est déjà le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le *transfert entrant de domaine* n'est pas la procédure appropriée. La procédure de *transfert entrant de domaine* s’applique **uniquement** aux noms de domaine enregistrés dans un autre [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) qu'OVHcloud.
+> Si OVHcloud est déjà le bureau d'enregistrement de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le transfert entrant de domaine n'est pas la procédure appropriée. La procédure de transfert entrant de domaine s’applique **uniquement** aux noms de domaine enregistrés dans un autre bureau d'enregistrement qu'OVHcloud.
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 > Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
@@ -65,7 +65,7 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 > Vérifiez également que votre bureau d'enregistrement actuel ne va pas fermer d'autres services comme, par exemple, les adresses e-mails associées à votre nom de domaine.
 >
 
-### Désactiver le verrouillage du transfert
+### Etape 1 - Désactiver le verrouillage du transfert
 
 > [!warning]
 >
@@ -76,32 +76,15 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 > Tant que le verrouillage est actif, le transfert n'est pas possible.
 >
 
-#### Déverrouiller un seul nom de domaine :
+Pour déverrouiller votre nom de domaine chez Gandi, suivez les étapes décrites dans la [documentation dédiée de Gandi](https://docs.gandi.net/fr/noms_domaine/transfert_sortant/transfert_lock.html){.external}.
 
-- Connectez-vous à votre compte Gandi, puis accédez à la section `NOM DE DOMAINE`{.action} dans le menu de gauche.
-- Accédez à la page d'administration de votre nom de domaine en cliquant sur son nom.
-- Cliquez sur l'onglet `Transfert Sortant`{.action}. Vous êtes redirigés vers la page de gestion du code d'autorisation et du verrou.
-- Désactivez le verrou en cliquant sur l'icône en forme de cadenas située à droite de `Désactiver la protection contre le transfert`{.action}.
-
-#### Déverrouiller plusieurs noms de domaine :
-
-- Connectez-vous à votre compte Gandi, puis accédez à la section `NOM DE DOMAINE`{.action} dans le menu de gauche.
-- Basculez sur la [Vue avancée](https://docs.gandi.net/fr/noms_domaine/operations_courantes/gerer_plusieurs_domaines.html){.external}.
-- Cochez les cases à gauche des noms de domaine que vous souhaitez déverrouiller.
-- Cliquez sur `Configurer`{.action} pour ouvrir le menu, puis cliquez sur `Verrouillage / Déverrouillage de transfert`{.action} dans le menu en bas de page.
-- Choisissez l'action de déverrouillage dans le popup qui apparaîtra et validez.
-
-### Obtenir le code d'autorisation
+### Etape 2 - Obtenir le code d'autorisation
 
 Le code d'autorisation sécurise votre nom de domaine contre des transferts non autorisés et réalisés par des tiers. Ce code est requis pour autoriser le transfert de votre nom de domaine vers un nouveau bureau d'enregistrements.
 
-Voici les étapes pour obtenir le code de transfert d'un nom de domaine chez Gandi :
+Pour récupérer le code de transfert de votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Gandi](hhttps://docs.gandi.net/fr/noms_domaine/transfert_sortant/auth_code.html){.external}.
 
-- Connectez-vous à votre compte Gandi.
-- Dans le menu de gauche, sélectionnez `NOM DE DOMAINE`{.action}.
-- Choisissez le nom de domaine que vous souhaitez transférer.
-- Dans le menu du haut, cliquez sur `Transfert sortant`{.action}.
-- Le code de transfert s'affiche. Vous pouvez soit cliquer sur `Copier`{.action} pour le copier dans votre presse-papier, soit sur `Générer un nouveau code`{.action} si nécessaire.
+### Etape 3 - Initier le transfert de votre nom de domaine vers OVHcloud
   
 Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de votre nom de domaine en suivant les étapes de notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) ».
 
