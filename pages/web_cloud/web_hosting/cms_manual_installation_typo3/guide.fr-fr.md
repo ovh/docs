@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installer manuellement Typo3"
 excerpt: "Découvrez comment installer le CMS Typo3 sur un hébergement web OVHcloud"
-updated: 2024-03-25
+updated: 2024-03-26
 ---
 
 ## Objectif
