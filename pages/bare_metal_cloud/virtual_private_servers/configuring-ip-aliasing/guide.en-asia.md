@@ -1,7 +1,7 @@
 ---
 title: Configuring IP aliasing
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-updated: 2024-03-18
+updated: 2024-03-19
 ---
 
 > [!primary]
@@ -113,7 +113,7 @@ address ADDITIONAL_IP2
 netmask 255.255.255.255
 ```
 
-For example:
+**Configuration example:**
 
 ```console
 auto eth0:0
@@ -190,7 +190,7 @@ network:
 > It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing.
 >
 
-Configuration example:
+**Configuration example:**
 
 ```yaml
 network:
@@ -250,7 +250,7 @@ NETMASK=255.255.255.255
 BROADCAST=ADDITIONAL_IP
 ```
 
-Configuration example:
+**Configuration example:**
 
 ```console
 DEVICE=eth0:0
@@ -320,7 +320,7 @@ address1=ADDITIONAL_IP1/32
 address2=ADDITIONAL_IP2/32
 ```
 
-Configuration example:
+**Configuration example:**
 
 ```console
 [ipv4]
