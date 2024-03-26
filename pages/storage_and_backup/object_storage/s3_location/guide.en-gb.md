@@ -30,7 +30,7 @@ The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh
 
 ### Endpoint retrocompatibility
 
-The legacy `https://s3.<region>.perf.cloud.ovh.net` endpoint will still be maintained for retrocompatibility purpose and most S3 API operations will still be supported. However, please note that this endpoint will automatically enforce the High Performance storage class of object upload operations.
+The legacy `https://s3.<region>.perf.cloud.ovh.net` endpoint will still be maintained for retrocompatibility purpose and all S3 API operations will still be supported. However, please note that this endpoint will automatically enforce the High Performance storage class of object upload operations.
 
 
 ## Object Storage Swift
