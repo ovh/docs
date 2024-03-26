@@ -56,7 +56,7 @@ Les chapitres « [créer une redirection](#redirect) » et « [créer un alias](
 - vous possédez la version historique de l'offre MXplan (pour le vérifier, vous pouvez consulter le cadre ci-dessous).
 - vous possédez un nom de domaine enregistré chez OVHcloud sans offre e-mail attachée.
 
-Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons à consultez directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
+Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons à consulter directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
 
 >
 > Selon la date d'activation de votre offre MXplan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.<br> 
