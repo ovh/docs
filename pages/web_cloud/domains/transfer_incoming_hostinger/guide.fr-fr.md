@@ -66,7 +66,7 @@ Le transfert d'un nom de domaine Hostinger nécessite de respecter une démarche
 > 
 
 Pour les noms de domaine enregistrés chez Hostinger, vous pouvez gérer le statut de verrouillage de votre nom de domaine en ouvrant la section `Domaines`{.action} sur la barre latérale haute, et en sélectionnant le nom de domaine à transférer. 
-Une fenêtre va alors apparaître, faites défiler l'écran pour trouver le bouton 'bascule'{.action} (ou 'Transfer lock'{.action}) dans la séction "Verrouillage du transfert". 
+Une nouvelle fenêtre apparaît. Faites défiler l'écran pour trouver le bouton `bascule`{.action} (ou `Transfer lock`{.action}) dans la séction `Verrouillage du transfert`{.action}. 
 Pour déverouiller votre nom de domaine pour le transfert, il suffit de désactiver le bouton "bascule". 
 
 > [!warning]
