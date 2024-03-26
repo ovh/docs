@@ -211,7 +211,7 @@ Não aconselhamos a sua alteração, mas é possível atribuir o comportamento d
 
 **Por exemplo**, você pode atribuir o comportamento « Rascunhos » a outra pasta que você criou clicando na lista suspensa e selecionando essa pasta. Se nenhuma pasta for atribuída a ele, ele será automaticamente colocado na opção « Drafts ». Os e-mails que forem registados serão considerados como rascunhos até que sejam enviados.
 
-> Na prática, eu crio uma sub-pasta « Rascunhos de e-mails de clientes ». Vou a `As minhas preferências`{.action} / `Pastas especiais`{.action} e escolho a opção « Rascunhos ». No menu suspenso, seleciono a pasta « Rascunhos de e-mails de clientes » para substituir « Drafts ». Os e-mails redigidos nesta pasta serão considerados rascunhos.
+> Na prática, eu crio uma sub-pasta « Rascunhos de e-mails de clientes ». Vou a `As minhas preferências`{.action} / `Pastas especiais`{.action} e escolho a opção "Rascunhos". No menu suspenso, seleciono a pasta "Rascunhos de e-mails de clientes" para substituir "Drafts". Os e-mails redigidos nesta pasta serão considerados rascunhos.
 
 #### Definições do servidor <a name="server-settings"></a>
 
