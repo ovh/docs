@@ -1045,6 +1045,8 @@
                 + [Transferring a .uk domain name to another registrar](web_cloud/domains/transfer_outgoing_couk)
                 + [Transferring a domain name to OVHcloud](web_cloud/domains/transfer_incoming_generic_domain)
                 + [Transferring a domain name from Hostinger to OVHcloud](web_cloud/domains/transfer_incoming_hostinger)
+                + [Transferring a domain name from Ionos to OVHcloud](web_cloud/domains/transfer_incoming_ionos)
+                + [Transferring a domain name from Gandi to OVHcloud](web_cloud/domains/transfer_incoming_gandi)
             + [Tutorials](web-cloud-domains-domain-names-tutorials)
                 + [Tutorial - Using Zonemaster](web_cloud/domains/dns_zonemaster)
             + [API](web-cloud-domains-domain-names-api)
