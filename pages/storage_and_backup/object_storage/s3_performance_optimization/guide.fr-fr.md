@@ -38,7 +38,7 @@ Les avantages du téléchargement en plusieurs parties sont les suivants :
 * Débit accru : chaque partie peut être téléchargée simultanément.
 * Récupération rapide en cas de problème réseau : chaque partie pouvant être téléchargée séparément et indépendamment, vous pouvez retélécharger la partie manquante sans redémarrer le téléchargement complet.
 
-### Utilisation du CLI AWS
+### Utilisation du AWS CLI
 
 Vous aurez besoin des éléments suivants :
 
@@ -51,7 +51,7 @@ Vous aurez besoin des éléments suivants :
 > Lorsque vous utilisez une commande de haut niveau pour télécharger un objet à l'aide de la commande `cp`, AWS CLI effectue automatiquement un téléchargement en plusieurs parties. Pour optimiser les valeurs de configuration par défaut pour les téléchargements en plusieurs parties (multipart_threshold, multipart_chunksize), vous pouvez consulter [cet article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et voir le tableau expliquant comment configurer AWS CLI.
 >
 
-La section suivante explique comment effectuer un téléchargement en plusieurs parties à l'aide des commandes de bas niveau de la CLI AWS.
+La section suivante explique comment effectuer un téléchargement en plusieurs parties à l'aide des commandes de bas niveau du AWS CLI.
 
 Tout d'abord, vous devez lancer un téléchargement en plusieurs parties :
 
