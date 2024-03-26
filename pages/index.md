@@ -804,6 +804,7 @@
                 + [Monitoring apps with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/monitoring-apps-grafana-prometheus)
                 + [Distributed tracing with Jaeger on an OVHcloud Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/tracing-jaeger)
                 + [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit)
+                + [Forwarding Managed Kubernetes Service Audit Logs to Log Data Platform](public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform)                
             + [Traffic management](public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management)
                 + [Installing Nginx Ingress on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/installing-nginx-ingress)
                 + [Sticky sessions/Session Affinity based on Nginx Ingress on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/sticky-session-nginx-ingress)
