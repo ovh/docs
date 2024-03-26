@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)'
 excerpt: 'Saiba como utilizar o seu endereço de e-mail a partir do webmail OWA'
-updated: 2024-03-19
+updated: 2024-03-26
 ---
 
 ## Sumário
@@ -21,7 +21,7 @@ Este guia fornece-lhe informações mais detalhadas sobre as habituais tarefas a
 
 > [!primary]
 >
-> Após as duas primeiras etapas, as instruções não têm de ser consideradas de acordo com uma ordem particular. Pode usar a barra de navegação situada à esquerda neste guia para aceder facilmente aos parágrafos que considerar mais úteis.
+> Após as duas primeiras etapas, as instruções não têm de ser consideradas de acordo com uma ordem particular
 >
 
 ### 1. Aceder ao webmail OWA

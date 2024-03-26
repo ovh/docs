@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-updated: 2024-03-19
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mai
 
 > [!primary]
 >
-> Instrukcji przedstawionych po dwóch pierwszych krokach nie trzeba wykonywać w konkretnej kolejności. Pasek nawigacji znajdujący się po lewej stronie przewodnika umożliwia przejście do fragmentów przydatnych w danym przypadku.
+> Instrukcji przedstawionych po dwóch pierwszych krokach nie trzeba wykonywać w konkretnej kolejności.
 >
 
 ### 1. Dostęp do interfejsu OWA webmail

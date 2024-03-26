@@ -1,7 +1,7 @@
 ---
 title: Filter für Ihre E-Mail-Adressen erstellen
 excerpt: Erfahren Sie hier, wie Sie Filterregeln für Ihre E-Mail-Adresse erstellen und konfigurieren
-updated: 2021-09-27
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -74,6 +74,11 @@ Zweite Auswahl (Regel):
 - **spf**: Vom SPF einer Domain abhängiger Parameter, zum Beispiel: "... hat keinen SPF Eintrag".
 - **enthält**: Positive Bedingung, zum Beispiel "Der Betreff enthält ...".
 - **enthält nicht**: Negative Bedingung, zum Beispiel "... enthält nicht ...".
+
+> [!primary]
+>
+> Mit SPF (Sender Policy Framework) kann der Server, der eine E-Mail empfängt, überprüfen, ob diese von einem vertrauenswürdigen Server stammt.
+> Dies verhindert Identitätsbetrug über E-Mail-Adressen mit Ihrem Domainnamen (Spoofing). Weitere Informationen zu SPF finden Sie in der Anleitung "[Einen SPF-Eintrag für Domainnamen konfigurieren](/pages/web_cloud/domains/dns_zone_spf)".
 
 Dritte Auswahl (Wert):
 
