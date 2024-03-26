@@ -98,30 +98,6 @@ To follow this guide, you will need:
 
 ## Instructions
 
-### Enabling Audit Log Forwarding using the OVHcloud Control Panel
-
-#### Step 1 - Access the Audit Logs section of your Managed Kubernetes Service cluster
-
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
-
-Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
-
-![Log Data Platform Menu entry](images/mks-cluster-details.png){.thumbnail}
-
-Access your MKS cluster details (by clicking on the cluster name in the MKS clusters list) and click the `Audit Logs`{.action} tab.
-
-#### Step 2 - Create a Logs Data Plaform Subscription
-
-In the `Audit Logs`{.action} tab, you can view live audit logs from your cluster.
-
-In order to activate logs forwarding to LDP, simply click the `Subscribe`{.action} button on the right-hand side of your screen.
-
-#### Step 3 - Select your LDP Account and Data stream
-
-From the dropdown list select the LDP Accounts you want, then select the Data Stream you would like to use from the list and click the `Subscribe`{.action} button.
-
-Your subscription is now created and your MKS audit logs are forwarded !
-
 ### Enabling Audit Log Forwarding using APIs
 
 You will have to define the targeted *Stream* of one of your LDP account on which you want your logs to be forwarded to. The enablement of the forwarding will create a subscription for this stream id.
@@ -216,7 +192,7 @@ At any point, you can retrieve subscriptions attached to your Logs Data Platform
 
 Note that this doesn't delete the logs that have been stored prior to the subscription cancellation, as data stored in a logs stream is immutable unless you delete the entire stream.
 
-To delete your subscription you can use the dedicated section in the OVHcloud Control Panel. Go to the `Audit logs`{.action} tab of your MKS cluster and click on `Unsubscribe`{.action} or use the following API route:
+ To delete your subscription you can use the following API route:
 
 > [!api]
 >
