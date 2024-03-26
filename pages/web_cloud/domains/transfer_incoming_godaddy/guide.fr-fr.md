@@ -12,9 +12,9 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 
 > [!warning]
 >
-> Le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
+> Le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même bureau d'enregistrement que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
 >
-> Si OVHcloud est déjà le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le *transfert entrant de domaine* n'est pas la procédure appropriée. La procédure de *transfert entrant de domaine* s’applique **uniquement** aux noms de domaine enregistrés dans un autre [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) qu'OVHcloud.
+> Si OVHcloud est déjà le bureau d'enregistrement de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le transfert entrant de domaine n'est pas la procédure appropriée. La procédure de transfert entrant de domaine s’applique **uniquement** aux noms de domaine enregistrés dans un autre bureau d'enregistrement qu'OVHcloud.
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 > Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
@@ -61,27 +61,13 @@ Le transfert d'un nom de domaine enregistré chez GoDaddy nécessite de respecte
 Le verrouillage d'un nom de domaine le protège contre les tentatives de transfert non autorisées.
 GoDaddy active cette protection par défaut. Vous devez donc la désactiver pour transférer votre domaine chez OVHcloud.
 
-Pour cela : 
-
-1.	Connectez-vous à votre compte GoDaddy, rendez-vous dans votre portfolio de `Noms de domaines`{.action} et cochez la case à côté du nom de domaine à transférer.
-2.	Choisissez le menu `Verrouillage`{.action} et sélectionnez `Désactiver le verrouillage`{.action} pour déverrouiller votre nom de domaine.
-3.	Examinez le nom de domaine et cliquez sur `Continuer`{.action}.
-4.	Si vous activez la protection du domaine, vérifiez votre identité.
-5.	La notification de Succès apparaîtra pour indiquer que votre domaine est déverrouillé.
+Suivez les étapes décrites dans la [documentation dédiée de GoDaddy](https://fr.godaddy.com/help/deverrouiller-ou-verrouiller-mon-domaine-410){.external}.
 
 ### Etape 2 - Obtenir le code d’autorisation 
 
 OVHcloud vous demandera de fournir le code d’autorisation ou « Auth code » avant d’initier la procédure de transfert de nom de domaine. Vous pouvez l’obtenir en ouvrant la page de votre portfolio de `Noms de domaines`{.action} chez GoDaddy.
 
-Pour cela : 
-
-1.	Sélectionnez le nom de domaine concerné pour accéder au menu `Paramètres`{.action} du nom de domaine.
-2.	Dans la section `Paramètres supplémentaires`{.action}, cliquez sur `Transférer le domaine hors de GoDaddy`{.action}.
-3.	Lisez la liste de contrôle des transferts pour plus de détails. Si vous souhaitez transférer un nom de domaine avec l'extention *.uk*, insérez le tag IPS suivant – YOURSRS-NL – et cliquez sur `Terminer le transfert`{.action}.
-4.	Sélectionnez `Continuer le transfert`{.action}. Une fois cette opération effectuée, GoDaddy désactivera le paramètre de *domain privacy* pour s’assurer que les informations de contact soient transférées au nouveau bureau d’enregistrement.
-5.	Pour obtenir votre code de transfert/EPP, sélectionnez `Cliquez ici`{.action} pour voir le code d’autorisation et cliquez sur `Copier dans le presse-papiers`{.action}. Le fournisseur enverra également le code d’autorisation à l’adresse électronique administrative de votre nom de domaine.
-6.	Vérifiez le statut du transfert en allant dans `Transferts`{.action} puis `Transferts sortants`{.action}.
-7.	Tapez votre nom de domaine dans la barre de recherche. Le résultat apparaîtra dans la colonne `Vérifier le statut`{.action}.
+Suivez les étapes décrites dans la [documentation dédiée de GoDaddy](https://fr.godaddy.com/help/transferer-mon-domaine-hors-de-godaddy-3560){.external}.
 
 ### Etape 3 - Initier le transfert de domaine chez OVHcloud
 
