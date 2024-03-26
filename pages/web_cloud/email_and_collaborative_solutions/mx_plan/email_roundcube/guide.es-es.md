@@ -209,7 +209,7 @@ No recomendamos cambiarlos, pero es posible atribuir el comportamiento de una ca
 
 **Por ejemplo**, puede asignar el comportamiento « Borradores » a otra carpeta que haya creado haciendo clic en la lista desplegable y eligiendo esa carpeta. Si no se le asigna ninguna carpeta, se pondrá automáticamente en la opción « Drafts ». Los mensajes de correo electrónico que se guarden en dicha carpeta se considerarán borradores hasta que se envíen.
 
-> En la práctica, creo una subcarpeta denominada Borradores de correo de clientes. Voy a `Mis preferencias`{.action} / `Carpetas especiales`{.action} y elijo la opción «Borradores». En el menú desplegable, selecciono la carpeta «Borradores de mensajes de correo de clientes» para sustituir «Drafts». Los mensajes redactados en esta carpeta se considerarán borradores.
+> En la práctica, creo una subcarpeta denominada Borradores de correo de clientes. Voy a `Mis preferencias`{.action} / `Carpetas especiales`{.action} y elijo la opción «Borradores». En el menú desplegable, selecciono la carpeta "Borradores de mensajes de correo de clientes" para sustituir "Drafts". Los mensajes redactados en esta carpeta se considerarán borradores.
 
 #### Configuración del servidor <a name="server-settings"></a>
 
