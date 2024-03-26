@@ -36,6 +36,9 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 - Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
 - Le nom de domaine n'a pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
+
+Vous devez aussi :
+
 - Être en mesure de déverrouiller le nom de domaine.
 - Posséder le code de transfert ou être en mesure de le récupérer.
 - Être habilité à demander le transfert du nom de domaine.
@@ -82,7 +85,7 @@ Pour déverrouiller votre nom de domaine chez Gandi, suivez les étapes décrite
 
 Le code d'autorisation sécurise votre nom de domaine contre des transferts non autorisés et réalisés par des tiers. Ce code est requis pour autoriser le transfert de votre nom de domaine vers un nouveau bureau d'enregistrements.
 
-Pour récupérer le code de transfert de votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Gandi](hhttps://docs.gandi.net/fr/noms_domaine/transfert_sortant/auth_code.html){.external}.
+Pour récupérer le code de transfert de votre nom de domaine, suivez les étapes décrites dans la [documentation dédiée de Gandi](https://docs.gandi.net/fr/noms_domaine/transfert_sortant/auth_code.html){.external}.
 
 ### Etape 3 - Initier le transfert de votre nom de domaine vers OVHcloud
   

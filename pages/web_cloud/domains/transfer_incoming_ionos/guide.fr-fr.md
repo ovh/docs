@@ -27,6 +27,9 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 - Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
 - Le nom de domaine n'a pas expiré et a une date d'expiration permettant de terminer le processus de transfert dans les temps (recommandé : plus de 60 jours).
+
+Vous devez aussi :
+
 - Être en mesure de déverrouiller le nom de domaine.
 - Posséder le code de transfert ou être en mesure de le récupérer.
 - Être habilité à demander le transfert du nom de domaine.
