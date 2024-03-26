@@ -1,7 +1,7 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance (EN)
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2023-08-18
+updated: 2024-03-26
 ---
 
 ## Objective
@@ -142,6 +142,9 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 ### Via the OpenStack API
 
 #### Attaching a Floating IP to an instance
+
+> [!success]
+> Click on the tabs below to view each of the 9 steps in turn.
 
 > [!tabs]
 > **Step 1**
@@ -337,6 +340,9 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 >> >
 
 #### Adding a DNS to a Floating IP
+
+> [!primary]
+> This procedure must be carried out **after** you have followed the 9 steps above.
 
 To add a DNS to a Floating IP, run the following command from the command line.
 
