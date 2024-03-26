@@ -1,12 +1,14 @@
 ---
 title: Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise
 excerpt: Découvrez comment préparer la sauvegarde de votre serveur Bare Metal à l'aide de Veeam Backup and Replication (Enterprise)
-updated: 2024-03-07
+updated: 2024-03-26
 ---
 
 ## Objectif
 
-Ce guide vous détaille comment préparer la sauvegarde de votre serveur Bare Metal avec Veeam Backup and Replication (Enterprise).
+La sauvegarde d’un serveur Bare Metal avec Veeam Enterprise implique plusieurs applications et services à utiliser ensemble. Le processus peut également changer en fonction de votre configuration et de vos préférences.
+
+**Découvrez comment préparer la sauvegarde de votre serveur Bare Metal avec Veeam Backup and Replication (Enterprise).**
 
 ## Prérequis
 
@@ -22,17 +24,24 @@ Votre serveur Bare Metal OVHcloud doit être installé et configuré.
 
 Consultez nos [guides de premiers pas pour les serveurs dédiés](/products/bare-metal-cloud-dedicated-servers-getting-started).
 
+Vous pouvez également configurer votre serveur dédié pour utiliser un réseau privé en suivant les étapes de [ce guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server).
+
 ### Mise en place de votre serveur de backup Veeam Enterprise
 
 Téléchargez, installez et créez une licence pour votre serveur de sauvegarde Veeam Enterprise à l'aide de notre guide « [Installer Veeam Backup & Replication](/pages/storage_and_backup/backup_and_aster_recovery_solutions/veeam/veeam_backup_replication) ».
 
-### Mise en place de l’Object Storage
+À partir de cette étape, vous pouvez continuer la lecture de ce guide pour apprendre à configurer S3 Object Storage en tant que dépôt de sauvegarde ou vous pouvez passer directement à l'étape [Aller plus loin](#gofurther).
+
+### Configuration de l’Object Storage
 
 La création et la configuration de l’Object Storage peuvent être effectuées dans la section `Public Cloud`{.action} de l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 Si vous n'avez pas encore de projet Public Cloud dans votre compte OVHcloud, consultez notre guide [Créer votre premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 [Créez un conteneur Object Storage](/pages/storage_and_backup/object_storage/s3_create_bucket) grâce à l’une des solutions **API S3 d’OVHcloud (Standard ou High Performance)**. La solution Standard est recommandée car notre cas d'usage (effectuer une sauvegarde) ne nécessite généralement pas de stockage High Performance.
+
+> [!primary]
+> Lors de la commande d’un conteneur S3 auprès d’OVHcloud, sélectionnez uniquement l'**Object Storage Standard - S3 API** ou l’**Object Storage High Performance - S3 API**. Ces conteneurs prennent entièrement en charge le protocole S3 et sont conçus pour être utilisés comme dépôts de sauvegarde.
 
 Donnez à l'utilisateur S3 des droits sur le conteneur en copiant-collant le code ci-dessous dans un fichier JSON.
 
@@ -145,8 +154,13 @@ Les dépôts de sauvegarde doivent maintenant ressembler à ceci :
 
 ![Veeam - dépôts](images/backup-Preparation-19.png){.thumbnail}
 
-Vous pouvez à présent effectuer une sauvegarde avec Veeam Enterprise. Consultez notre guide dédié : [Sauvegarder un serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
+Vous pouvez à présent effectuer une sauvegarde avec Veeam Enterprise.
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
+
+Effectuez une sauvegarde de votre environnement à l'aide du guide Linux ou Windows ci-dessous :
+
+- Pour Linux : [Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
+- Pour Windows : [Sauvegarder un serveur Bare Metal Windows en utilisant Veeam Agent pour Windows](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

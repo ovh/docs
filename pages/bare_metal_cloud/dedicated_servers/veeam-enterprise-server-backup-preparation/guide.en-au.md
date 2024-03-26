@@ -1,12 +1,14 @@
 ---
 title: Preparing a Bare Metal Server backup with Veeam Enterprise
 excerpt: Learn how to prepare to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise)
-updated: 2024-03-07
+updated: 2024-03-26
 ---
 
 ## Objective
 
-Learn how to prepare to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise).
+Backing up a Bare Metal server with Veeam Enterprise involves several applications and services to work together. The process may also change based on your configuration and preferences.
+
+**Learn how to prepare to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise).**
 
 ## Requirements
 
@@ -22,9 +24,13 @@ Your OVHcloud Bare Metal server needs to be installed and configured.
 
 Browse our [Getting Started guides](/products/bare-metal-cloud-dedicated-servers-getting-started) for Dedicated Servers.
 
+You can also configure your Dedicated Server to use the private network by following the steps in [this guide](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server).
+
 ### Setting up your Veeam Enterprise backup server
 
 Download, install, and license your Veeam Enterprise backup server using our guide [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
+
+From here, you can keep reading to learn how to set up S3 Object Storage as your repository or you can go directly to the [Go further](#gofurther) step.
 
 ### Setting up your Object Storage
 
@@ -33,6 +39,9 @@ Object Storage creation and configuration can be done in the `Public Cloud`{.act
 If you don't have already a Public Cloud project in your OVHcloud account, read our [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) guide.
 
 [Create an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) using one of OVHcloud's **S3 API solutions (Standard or High Performance)**. Standard is recommended since this backup usually does not require High Performance storage.
+
+> [!primary]
+> When ordering an S3 container from OVHcloud, only order **Standard Object Storage – S3 API** or the **High Performance Object Storage – S3 API**. These containers support the S3 protocol fully and are designed for use as backup repositories.
 
 Give the S3 user rights to the container by copying and pasting the text below into a JSON file.
 
@@ -145,8 +154,13 @@ The Backup Repositories should now look similar to this:
 
 ![Veeam - repositories](images/backup-preparation-19.png){.thumbnail}
 
-You can now proceed to perform a backup with Veeam Enterprise. Read our dedicated guide: [Backing up a Bare Metal server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
+You can now proceed to perform a backup with Veeam Enterprise.
 
-## Go further
+## Go further <a name="gofurther"></a>
+
+Back up your environment using the Linux or Windows guide below:
+
+- For Linux: [Backing Up a Bare Metal Linux Server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
+- For Windows: [Backing Up a Bare Metal Server Using Veeam Agent for Windows](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
 
 Join our community of users on <https://community.ovh.com/en/>.
