@@ -1,14 +1,14 @@
 ---
 title: 'Transférer un nom de domaine de Hostinger vers OVHcloud'
-excerpt: 'Découvrez différentes informations concernant le transfert d’un nom de domaine Hostinger vers OVHcloud'
+excerpt: 'Découvrez les démarches spécifiques pour transférer un nom de domaine depuis Hostinger vers OVHcloud'
 updated: 2024-03-26
 ---
 
 ## Objectif
 
-Le transfert d'un nom de domaine Hostinger nécessite de respecter une démarche spécifique. Dans ce guide, nous vous expliquons étape par étape comment transférer votre nom de domaine de Hostinger vers OVHcloud.
+Le transfert d'un nom de domaine Hostinger nécessite de respecter une démarche spécifique.
 
-**Découvrez comment transférer un nom de domaine Hostinger vers OVHcloud**
+**Découvrez comment transférer, étape par étape, un nom de domaine Hostinger vers OVHcloud**
 
 > [!warning]
 >
@@ -65,20 +65,9 @@ Le transfert d'un nom de domaine Hostinger nécessite de respecter une démarche
 > Par conséquent, avant de transférer votre nom de domaine depuis Hostinger, vous devez d'abord le **déverrouiller**.
 > 
 
-Pour les noms de domaine enregistrés chez Hostinger, vous pouvez gérer le statut de verrouillage de votre nom de domaine en ouvrant la section `Domaines`{.action} sur la barre latérale haute, et en sélectionnant le nom de domaine à transférer.
-Une nouvelle fenêtre apparaît. Faites défiler l'écran pour trouver le bouton `bascule`{.action} (ou `Transfer lock`{.action}) dans la séction `Verrouillage du transfert`{.action}. 
-Pour déverouiller votre nom de domaine, désactivez le verrouillage à l'aide du bouton en forme de « bascule ».
+Pour les noms de domaine enregistrés chez Hostinger, vous pouvez gérer le statut de verrouillage de votre nom de domaine en ouvrant la section `Domaines`{.action} et en sélectionnant le nom de domaine à transférer.
 
-> [!warning]
->
-> **Si le bouton de verrouillage du transfert n'apparaît pas** : certains TLDs exigent que le bouton soit caché.
-> Si vous avez un doute sur l'affichage de ce dernier, contactez le service client d'Hostinger.
-> 
-> **Si vous n'arrivez pas à déverouiller votre nom de domaine** : cela signifie que vous disposez d'un nom de domaine enregistré ou transféré récemment.
-> En effet, les noms de domaine de peuvent être déverouillés qu'après **60 jours** à compter de son enregistrement ou de son transfert.
-> 
-> Si vous n'êtes pas concernés par un transfert ou un enregistrement récent et que vous n'arrivez toujours pas à déverouiller votre nom de domaine, contactez le service client d'Hostinger.
-> 
+Suivez les étapes décrites dans la [documentation dédiée de Hostinger](https://support.hostinger.com/fr/articles/4791444-comment-verrouiller-ou-deverrouiller-un-nom-de-domaine-pour-le-transfert){.external}.
 
 ### Obtenir le code EPP ou Auth
 
@@ -89,18 +78,10 @@ Pour vous familiariser avec le changement de propriétaire d'un nom de domaine, 
 >
 > Certains TLD ont un processus de transfert spécial. Cela est vrai notamment pour les domaines **.uk** et **.eu**.
 >
-> Nous vous invitons à prendre connaissance de ces démarches auprès d'Hostinger pour transférer votre nom de domaine.
+> Nous vous invitons à prendre connaissance auprès d'Hostinger des démarches appropriées pour transférer votre nom de domaine.
 > 
 
-Pour obtenir un code **EPP** ou **Auth** chez Hostinger, dirigez-vous vers l'onglet `Domaines`{.action}. 
-Une page avec l'ensemble de vos noms de domaine s'affiche. Cliquez sur le domaine concerné pour le transfert en utilisant la flèche à droite `>`{.action}. 
-Le code sera affiché dans la zone d'information du nom de domaine en tant que clé secrète. Vous pouvez l'afficher en cliquant sur l'icône en forme d'oeil située à côté du code caché. 
-
-> [!warning]
->
-> Si la clé secrète n'est pas affichée, cela signifie généralement que le registre de votre nom de domaine ne permet pas l'affichage direct du code EPP dans le panneau de contrôle.
->
-> Pour avoir accès au code, contactez le service client d'Hostinger qui vous le fournira. 
+Pour obtenir un code **EPP** ou **Auth** chez Hostinger, suivez les étapes décrites dans la [documentation dédiée de Hostinger](https://support.hostinger.com/fr/articles/1583203-comment-obtenir-un-code-epp-ou-auth-pour-le-transfert-d-un-nom-de-domaine-chez-hostinger){.external}.
 
 ### Initier le transfert de domaine chez OVHcloud
 
