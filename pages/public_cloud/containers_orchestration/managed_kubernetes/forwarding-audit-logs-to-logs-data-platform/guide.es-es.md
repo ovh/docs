@@ -147,7 +147,7 @@ Get the details of a data stream:
 
 #### Step 2 - Create your subscription
 
-As in the example above, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you want your Kubernetes cluster Audit logs to be forwarded to. You also need to specifiy the 'kind' of log you want to forward. Note that the only currently supported value for Managed Kubernetes Service is 'audit' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/capabilities/kube/log/kind) call) :
+As in the example above, the POST request has a payload containing a streamId, which is the target data stream of your LDP account where you want your Kubernetes cluster Audit logs to be forwarded to. You also need to specify the 'kind' of log you want to forward. Note that the only currently supported value for Managed Kubernetes Service is 'audit' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/capabilities/kube/log/kind) call) :
 
 > [!api]
 >
