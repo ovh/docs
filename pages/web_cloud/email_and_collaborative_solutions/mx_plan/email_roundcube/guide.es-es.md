@@ -65,7 +65,7 @@ El sistema le redirigirá a la interfaz Roundcube.
 
 > [!primary]
 > 
-> La primera vez que se conecte a Roundcube, la apariencia puede ser diferente de la que se muestra en esta guía. Esto significa que el aspecto «clásico» se ha definido en su interfaz. Para cambiarla, vaya a la sección «[Interfaz de usuario](#user-interface-settings)» y seleccione la vista «Larry».
+> La primera vez que se conecte a Roundcube, la apariencia puede ser diferente de la que se muestra en esta guía. Esto significa que el aspecto "clásico" se ha definido en su interfaz. Para cambiarla, vaya a la sección «[Interfaz de usuario](#user-interface-settings)» y seleccione la vista "Larry".
 > La apariencia de la interfaz no afectará a las siguientes explicaciones de esta documentación.
 
 > [!warning]
