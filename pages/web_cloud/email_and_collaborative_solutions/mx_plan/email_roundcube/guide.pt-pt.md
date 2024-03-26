@@ -66,7 +66,7 @@ Será então redirecionado para a interface Roundcube.
 
 > [!primary]
 > 
-> Ao fazer login pela primeira vez na interface Roundcube, o aspeto pode ser diferente daquele que você verá neste manual. Isto significa que a aparência « clássica » foi definida na sua interface. Para alterar esta informação, vá à secção « [Interface do Utilizador](#user-interface-settings) » e selecione a visualização « Larry ».
+> Ao fazer login pela primeira vez na interface Roundcube, o aspeto pode ser diferente daquele que você verá neste manual. Isto significa que a aparência "clássica" foi definida na sua interface. Para alterar esta informação, vá à secção "[Interface do Utilizador](#user-interface-settings)" e selecione a visualização "Larry".
 > O aspeto da interface não irá afetar as seguintes explicações neste manual.
 
 > [!warning]
