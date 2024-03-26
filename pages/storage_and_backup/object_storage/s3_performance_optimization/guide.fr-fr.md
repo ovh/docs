@@ -10,7 +10,7 @@ Il existe plusieurs façons d'optimiser les performances de vos buckets sur OVHc
 
 **Le guide suivant vous présente les différentes méthodes d'optimisation.**
 
-### Using byte range fetch
+### Utilisation de la recherche par plage d'octets
 
 OVHcloud Object Storage prend en charge l'extraction de plage d'octets. L'idée est de récupérer un objet morceau par morceau, chaque morceau étant défini par une plage d'octets.
 Le principal avantage est qu'il vous permet de paralléliser les requêtes `GET` pour télécharger un objet, chaque requête `GET` demandant une plage d'octets spécifique : les tailles typiques des requêtes de plage d'octets sont de 8 Mo ou 16 Mo, mais vous pouvez spécifier n'importe quelle taille.
@@ -38,19 +38,17 @@ Les avantages du téléchargement en plusieurs parties sont les suivants :
 * Débit accru : chaque partie peut être téléchargée simultanément.
 * Récupération rapide en cas de problème réseau : chaque partie pouvant être téléchargée séparément et indépendamment, vous pouvez retélécharger la partie manquante sans redémarrer le téléchargement complet.
 
-* ## Instructions
-
 ### Utilisation du CLI AWS
 
 Vous aurez besoin des éléments suivants :
 
 * Avoir créé un [bucket OVHcloud](/pages/storage_and_backup/object_storage/s3_create_bucket)
-* Avoir installée et configurée la [CLI AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}
+* Avoir installée et configurée [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}
 * Avoir un fichier volumineux divisé en plusieurs parties
 
 > [!primary]
 > **Le saviez-vous ?**
-> Lorsque vous utilisez une commande de haut niveau pour télécharger un objet à l'aide de la commande `cp`, la CLI AWS effectue automatiquement un téléchargement en plusieurs parties. Pour optimiser les valeurs de configuration par défaut pour les téléchargements en plusieurs parties (multipart_threshold, multipart_chunksize), vous pouvez consulter [cet article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et voir le tableau expliquant comment configurer la CLI AWS.
+> Lorsque vous utilisez une commande de haut niveau pour télécharger un objet à l'aide de la commande `cp`, AWS CLI effectue automatiquement un téléchargement en plusieurs parties. Pour optimiser les valeurs de configuration par défaut pour les téléchargements en plusieurs parties (multipart_threshold, multipart_chunksize), vous pouvez consulter [cet article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et voir le tableau expliquant comment configurer AWS CLI.
 >
 
 La section suivante explique comment effectuer un téléchargement en plusieurs parties à l'aide des commandes de bas niveau de la CLI AWS.
@@ -70,7 +68,7 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 > N'oubliez pas de sauvegarder les **upload ID**, **key** et **bucket name** pour les utiliser avec la commande `upload-part`.
 >
 
-Pour chaque partie, vous devez créer une commande `upload-part` dans laquelle vous spécifiez le *bucket*, *key* et *upload ID* :
+Pour chaque partie, vous devez exécuter la commande `upload-part` dans laquelle vous spécifiez le *bucket*, *key* et *upload ID* :
 
 > [!warning]
 > Les numéros de référence peuvent être compris entre 1 et 10 000 inclus. Vous pouvez vérifier les limitations techniques [ici](/pages/storage_and_backup/object_storage/s3_limitations).
@@ -156,7 +154,7 @@ La liste suivante décrit les options permettant d'effectuer des téléchargemen
 $ multipart-chunk-size-mb=SIZE_
 ```
 
-Taille de chaque segment d'un téléchargement en plusieurs parties. Les fichiers supérieurs à SIZE sont automatiquement téléchargés en tant que fichiers multithread-multipart. Les fichiers plus petits sont téléchargés à l'aide de la méthode traditionnelle. SIZE est exprimé en méga-octets, la taille de bloc par défaut est de 15 Mo, la taille de bloc minimale autorisée est de 5 Mo, la taille maximale est de 5 Go.
+Cette commande représente la taille de chaque segment d'un téléchargement en plusieurs parties. Les fichiers supérieurs à SIZE sont automatiquement téléchargés en tant que fichiers multithread-multipart. Les fichiers plus petits sont téléchargés à l'aide de la méthode traditionnelle. SIZE est exprimé en méga-octets, la taille de bloc par défaut est de 15 Mo, la taille de bloc minimale autorisée est de 5 Mo, la taille maximale est de 5 Go.
 
 <u> Exemple : </u>
 
@@ -164,7 +162,7 @@ Taille de chaque segment d'un téléchargement en plusieurs parties. Les fichier
 $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 ```
 
-Pour plus d'informations sur s3cmd, consultez la documentation officielle [ici](https://s3tools.org/usage){.external}.
+Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici](https://s3tools.org/usage){.external}.
 
 #### rclone
 
@@ -172,19 +170,19 @@ Pour plus d'informations sur s3cmd, consultez la documentation officielle [ici](
 $ s3-upload-cutoff=SIZE
 ```
 
-Seuil de taille auquel rclone passe du téléchargement d'un fichier unique au téléchargement en plusieurs parties.
+Cette commande représente le seuil de taille auquel *rclone* passe du téléchargement d'un fichier unique au téléchargement en plusieurs parties.
 
 ```bash
 $ s3-chunk-size=SIZE
 ```
 
-Taille de chaque segment utilisé dans les téléchargements en plusieurs parties.
+Cette commande représente la taille de chaque segment utilisé dans les téléchargements en plusieurs parties.
 
 ```bash
 $ s3-upload-concurrency
 ```
 
-Nombre de segments téléchargés simultanément.
+Cette commande représente le nombre de segments téléchargés simultanément.
 
 <u> Exemple : </u>
 
@@ -192,13 +190,13 @@ Nombre de segments téléchargés simultanément.
 $ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutoff 100M testfile s3:test-bucket
 ```
 
-Pour plus d'informations sur rclone, consultez la documentation officielle [ici](https://rclone.org/s3/){.external}.
+Pour plus d'informations sur *rclone*, consultez la [documentation officielle](https://rclone.org/s3/){.external}.
 
 #### Augmentation du nombre de demandes simultanées
 
 Une autre façon d'améliorer le débit est d'augmenter le nombre de demandes simultanées.
 
-Pour personnaliser la valeur par défaut sur la CLI AWS, consultez [ce guide](pages\storage_and_backup\object_storage\s3_optimize_the_send_of_your_files).
+Pour personnaliser la valeur par défaut sur AWS CLI, consultez [ce guide](pages\storage_and_backup\object_storage\s3_optimize_the_send_of_your_files).
 
 Pour les autres outils, il est conseillé de consulter la documentation du logiciel utilisé.
 
@@ -206,7 +204,7 @@ Pour les autres outils, il est conseillé de consulter la documentation du logic
 
 Il est également possible d’optimiser considérablement les performances en adoptant de bonnes pratiques pour répartir les I/O le plus largement possible dans le cluster de stockage d’objets, en tirant parti du mécanisme de fragmentation (*sharding*).
 
-**Qu’est-ce que le Sharding**
+**Qu’est-ce que le Sharding ?**
 
 OpenIO est une solution de Software Defined Storage sur laquelle repose l’Object Storage d’OVHcloud.
 
@@ -216,12 +214,12 @@ Le *sharding* est le mécanisme par lequel un conteneur est divisé en 2 nouveau
 
 Le *sharding* permet :
 
-* d'optimiser les opérations de lecture/écriture en les répartissant uniformément sur plusieurs serveurs (shards).
+* d'optimiser les opérations de lecture/écriture en les répartissant uniformément sur plusieurs serveurs (*shards*).
 * de répartir le stockage des données sur l'ensemble du cluster pour augmenter la résilience.
 
 Nous utilisons les clés d'objet (préfixe/nom) pour déterminer quels objets sont poussés dans quel sous-conteneur en utilisant la logique suivante :
 
-* Créer 2 nouveaux shards ;
+* Créer 2 nouveaux *shards* ;
 * Recherche la valeur médiane d'une liste de toutes les clés d'objet triées par ordre alphabétique ;
 * Copier le contenu du conteneur racine dans les *shards* ;
 * Dans le premier *shard*, ne conservez que la première moitié des objets (de l'objet avec la première clé de la liste à l'objet avec une clé égale à la valeur médiane) et nettoyez la seconde moitié ;
@@ -254,8 +252,8 @@ Liste des objets :
 
 En supposant un seuil de 100, après le téléchargement du 100ème objet, le partage est déclenché pour diviser les objets en deux fragments :
 
-* de 20240216/file01.log à 20240216/file100.log dans le premier shard
-* à partir de 20240216/file101.log et au-delà vers un second shard
+* de 20240216/file01.log à 20240216/file100.log dans le premier *shard*
+* à partir de 20240216/file101.log et au-delà vers un second *shard*
 
 Cette solution n'est pas optimale car, les dates étant par nature incrémentales, tous les nouveaux téléchargements seront toujours effectués sur le second *shard*, qui sera à nouveau fractionné lorsqu'il atteindra une taille critique. Ainsi, toutes les opérations d'écriture futures seront toujours effectuées sur le dernier *shard* créé et les *shards* précédents seront rarement utilisés. En outre, vous pouvez rencontrer une certaine limitation pendant le processus de partage.
 
@@ -279,7 +277,7 @@ En supposant un seuil de 100, après le téléchargement du 100ème objet, le pa
 
 ### Optimiser le temps de montée en charge
 
-Lorsque vous chargez un très grand nombre d'objets à la fois, vous déclenchez le mécanisme de fragmentation. Au cours du processus de fragmentation, vous pouvez rencontrer une certaine limitation.
+Lorsque vous chargez un très grand nombre d'objets à la fois, vous déclenchez le mécanisme de fragmentation (*sharding*). Au cours du processus de fragmentation, vous pouvez rencontrer une certaine limitation.
 
 Afin d'éviter la baisse de performance (503 erreurs SLOWDOWN), nous vous recommandons d'optimiser vos uploads en étalant votre requête dans le temps. Cet écart n'a pas à être linéaire, mais il doit nous donner suffisamment de temps pour équilibrer votre charge de travail.
 
@@ -287,8 +285,14 @@ Un moyen simple d'y parvenir consiste à améliorer la gestion des erreurs de ra
 
 ### Augmenter la taille des objets
 
-Les objets sont considérés comme petits s'ils ont une taille inférieure à 1 Mo. Lorsqu'il s'agit de grands volumes de données (à l'échelle du PB), le nombre total d'objets atteint rapidement des milliards, voire des billions. Gérer l’administration des métadonnées à cette échelle et le nombre d’opérations d’I/O représente un défi majeur : comment fournir un service de qualité sans perdre d’informations ni compromettre les performances.
+Les objets sont considérés comme petits s'ils ont une taille inférieure à 1 Mo. Lorsqu'il s'agit de grands volumes de données (à l'échelle du PB), le nombre total d'objets atteint rapidement des milliards, voire des billions. Gérer l’administration des métadonnées à cette échelle et le nombre d’opérations d’I/O représente un défi majeur : comment fournir un service de qualité sans perdre d’informations ni compromettre les performances ?.
 
 Le cas échéant, nous vous recommandons d'augmenter autant que possible la taille de l'objet/de la pièce afin de réduire le nombre d'objets.
+
+## Aller plus loin <a name="go-further"></a>
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+ 
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
