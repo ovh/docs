@@ -1693,6 +1693,7 @@
             + [Object Storage - Use S3 Object Storage with Nextcloud](storage_and_backup/object_storage/s3_nextcloud)
             + [Object Storage - Use S3 Object Storage with Owncloud](storage_and_backup/object_storage/s3_owncloud)
             + [Object Storage - Manage an S3 bucket with Terraform](storage_and_backup/object_storage/s3_terraform)
+            + [Object Storage - Master asynchronous replication across your buckets](storage_and_backup/object_storage/s3_asynchronous_replication)
         + [Cold Archive Storage Class Specifics](storage-object-storage-cold-archive-storage-class-specifics)
             + [Cold Archive - Getting started with Cold Archive](storage_and_backup/object_storage/cold_archive_getting_started)
             + [Cold Archive - Overview](storage_and_backup/object_storage/cold_archive_overview)
