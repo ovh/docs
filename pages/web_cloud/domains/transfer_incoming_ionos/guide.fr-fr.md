@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine Ionos vers OVHcloud'
 excerpt: 'Découvrez différentes informations concernant le transfert d’un nom de domaine Ionos vers OVHcloud'
-updated: 2024-03-25
+updated: 2024-03-26
 ---
 
 ## Objectif
@@ -11,9 +11,10 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 **Découvrez comment transférer un nom de domaine Ionos vers OVHcloud**
 
 > [!warning]
-> Le *bureau d'enregistrement* d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même *bureau d'enregistrement* que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
 >
-> Si OVHcloud est déjà le *bureau d'enregistrement* de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le *transfert entrant de domaine* n'est pas la procédure appropriée. La procédure de *transfert entrant de domaine* s’applique **uniquement** aux noms de domaine enregistrés dans un autre *bureau d'enregistrement* qu'OVHcloud.
+> Le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même *bureau d'enregistrement* que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
+>
+> Si OVHcloud est déjà le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le *transfert entrant de domaine* n'est pas la procédure appropriée. La procédure de *transfert entrant de domaine* s’applique **uniquement** aux noms de domaine enregistrés dans un autre [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) qu'OVHcloud.
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 > Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
@@ -40,9 +41,24 @@ Le transfert d'un nom de domaine Ionos nécessite de respecter une démarche sp�
 
 ## En pratique
 
+> [!primary]
+>
+> La zone DNS active d'un nom de domaine contient la configuration DNS appliquée à votre nom de domaine. C'est elle qui lie votre nom de domaine à vos services tels que vos adresses e-mails ou votre site web.
+>
+> Si, en complément de votre nom de domaine, vous disposez aussi d'une zone DNS active pour celui-ci chez votre bureau d'enregistrement actuel, vérifiez auprès de ses services que la zone DNS appliquée à votre nom de domaine ne va pas être supprimée une fois le transfert effectué.
+>
+> En effet, certains bureaux d'enregistrements suppriment la zone DNS présente chez eux dès que le transfert de votre nom de domaine est terminé. Si tel est le cas, recréez à l'identique votre zone DNS chez OVHcloud avant de démarrer les actions liées au transfert de votre nom de domaine.
+>
+> Pour cela, consultez les guides suivants :
+> - [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+> - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+>
+> Vérifiez également que votre bureau d'enregistrement actuel ne va pas fermer d'autres services comme, par exemple, les adresses e-mails associées à votre nom de domaine.
+>
+
 ### Désactiver l'enregistrement privé
 
-Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine, accédez à la section `Domaines`{.action} sur la page « [Confidentialité & données de contact](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue)){.external} ». Choisissez votre nom de domaine, puis désactivez l'option d'enregistrement privé. Si cette option ne figure pas sur la page, aucune action n'est requise et cela signifie que la désactivation de l'enregistrement privé est indisponible pour votre nom de domaine.
+Pour confirmer si l'enregistrement privé est activé pour votre nom de domaine, accédez à la section `Domaines`{.action} sur la page « [Confidentialité & données de contact](https://login.ionos.fr/?redirect_url=https%3A%2F%2Fmy.ionos.fr%2Fstart-with-domain%2Fprivacy%3Futm_source%3Dhelpcenter%26utm_medium%3Dknowledge%26utm_campaign%3D218%26utm_term%3Dprivacy%26utm_content%3Ddeeplink%26skipIntcpts%3Dtrue){.external} ». Choisissez votre nom de domaine, puis désactivez l'option d'enregistrement privé. Si cette option ne figure pas sur la page, aucune action n'est requise et cela signifie que la désactivation de l'enregistrement privé est indisponible pour votre nom de domaine.
 
 ### Désactiver le verrouillage du transfert
 
