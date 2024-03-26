@@ -147,7 +147,7 @@ The basic structure of a replication rule within the configuration JSON file is 
 | Tag                     | Filter the objects by tag key and/or value.                                                                              | No       |
 | StorageClass            | The target storage class: "STANDARD" for S3 Standard and "HIGH_PERF" for S3 High Performance.                            | No       |
 | Status                  | Tells if your replication rule is *Enabled* or *Disabled*.                                                                  | Yes      |
-| Role                    | OVHcloud IAM role needed to allow OVHcloud Object Storage to access data from the source bucket & write data to destination buckets. Currently, OVHcloud has set a unique role "replicationRole". | Yes      |
+| Role                    | OVHcloud IAM role needed to allow OVHcloud Object Storage to access data from the source bucket & write data to destination buckets. Currently, OVHcloud has set a unique role "s3-replication". | Yes      |
 | Priority                | If there are two or more rules with the same destination bucket, objects will be replicated according to the rule with the highest priority. The higher the number, the higher the priority. | Yes      |
 | Prefix                  | An object key name prefix that identifies the object or objects to which the rule applies. To include all objects in a bucket, specify an empty strin.g | No       |
 | ID                      | Each replication rule has a unique ID.                                                                                   | Yes      |
