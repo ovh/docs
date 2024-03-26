@@ -45,7 +45,7 @@ You will need the following:
   
 > [!primary]
 > **Did you know?**
-> When you use a high level command to upload an object using the `cp` command, the AWS CLI automatically does a multipart-upload. To better optimise the default configuration values for doing multipart uploads (multipart_threshold, multipart_chunksize), you can check this article and see the table explaining the configuration of the AWS CLI.
+> When you use a high level command to upload an object using the `cp` command, the AWS CLI automatically does a multipart-upload. To better optimise the default configuration values for doing multipart uploads (multipart_threshold, multipart_chunksize), you can check [this article](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047339) and see the table explaining the configuration of the AWS CLI.
 > 
 
 The following section explains how to perform a multipart upload using the low level commands of the AWS CLI.
