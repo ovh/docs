@@ -1,7 +1,7 @@
 ---
 title: Filter für Ihre E-Mail-Adressen erstellen
 excerpt: Erfahren Sie hier, wie Sie Filterregeln für Ihre E-Mail-Adresse erstellen und konfigurieren
-updated: 2024-03-22
+updated: 2024-03-26
 ---
 
 > [!primary]

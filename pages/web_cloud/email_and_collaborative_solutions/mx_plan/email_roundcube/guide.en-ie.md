@@ -1,6 +1,6 @@
 ---
 title: Using your email account via the Roundcube webmail interface
-updated: 2024-03-22
+updated: 2024-03-26
 ---
 
 ## Objective

@@ -1,6 +1,6 @@
 ---
 title: 'Webmail: Guia de utilização do Roundcube'
-updated: 2024-03-22
+updated: 2024-03-26
 ---
 
 > [!primary]
