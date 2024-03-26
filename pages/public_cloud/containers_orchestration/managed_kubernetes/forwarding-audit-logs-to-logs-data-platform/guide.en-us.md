@@ -216,7 +216,7 @@ At any point, you can retrieve subscriptions attached to your Logs Data Platform
 
 Note that this doesn't delete the logs that have been stored prior to the subscription cancellation, as data stored in a logs stream is immutable unless you delete the entire stream.
 
-To delete your subscription you can use the dedicated section in the OVHcloud Control Panel. Go to the `Audit logs`{.action} tab of your MKS cluster and click on `Unsubscribe`{.action}) or use the following API route:
+To delete your subscription you can use the dedicated section in the OVHcloud Control Panel. Go to the `Audit logs`{.action} tab of your MKS cluster and click on `Unsubscribe`{.action} or use the following API route:
 
 > [!api]
 >
