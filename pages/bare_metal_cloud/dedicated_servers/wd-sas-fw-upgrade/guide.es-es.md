@@ -150,7 +150,7 @@ root@labo:~# /opt/MegaRAID/storcli/storcli64 /c0 /eall /sall show | grep -i 'HUS
 Download the firmware binary on your server:
 
 ```bash
-wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/PM9A1/BCGNB17D_Noformat.binwget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/SS300/BCGNB17D.bin
+wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/SS300/BCGNB17D.bin
 ```
 
 Execute the following command for each identified disk displayed in step 3:
