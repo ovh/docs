@@ -83,7 +83,7 @@ Suivez les étapes successives de configuration en parcourant les onglets ci-des
 >> ![exchange android](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Etape 5**
->> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : votre adresse e-mail complète<br>- **Mot de passe** : le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : votre adresse e-mail complète<br>- **Serveur** : le nom de domaine attaché à votre compte e-mail<br>- **Port** : 443<br>- **Type de sécurité** : SSL/TLS<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br
+>> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : votre adresse e-mail complète<br>- **Mot de passe** : le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : votre adresse e-mail complète<br>- **Serveur** : le nom de domaine attaché à votre compte e-mail<br>- **Port** : 443<br>- **Type de sécurité** : SSL/TLS<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br>
 >> ![exchange android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Etape 6**
@@ -97,7 +97,7 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 >
 > OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse <https://www.ovhcloud.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [MXplan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
