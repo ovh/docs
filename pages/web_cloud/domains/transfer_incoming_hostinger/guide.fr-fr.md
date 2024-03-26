@@ -60,7 +60,7 @@ Le transfert d'un nom de domaine Hostinger nécessite de respecter une démarche
 
 > [!primary]
 >
-> Pour des raisons de sécurité, tous les noms de domaine chez Hostinger sont **verrouillés par défaut** pour éviter les transferts non autorisés.
+> Par sécurité, l'ensemble des noms de domaine chez Hostinger sont **verrouillés par défaut** pour éviter les transferts non autorisés.
 > Par conséquent, avant de transférer votre nom de domaine depuis un bureau d'enregistrement, vous devez d'abord le **déverrouiller**.
 >
 > Le processus de déverouillage varie selon le bureau d'enregistrement.
