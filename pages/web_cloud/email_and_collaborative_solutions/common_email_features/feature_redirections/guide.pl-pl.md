@@ -174,7 +174,7 @@ Metoda tworzenia aliasu lub przekierowania jest ściśle taka sama. Postępuj zg
 >>
 >> > [!primary]
 >> >
->> > Aby zmienić lub usunąć przekierowanie, kliknij`...`{.action}, po prawej stronie wybranego przekierowania.
+>> > Aby zmienić lub usunąć przekierowanie, kliknij `...`{.action}, po prawej stronie wybranego przekierowania.
 >>
 >> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
