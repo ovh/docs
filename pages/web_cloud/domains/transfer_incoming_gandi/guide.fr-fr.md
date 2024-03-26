@@ -1,7 +1,7 @@
 ---
 title: 'Transférer un nom de domaine de Gandi vers OVHcloud'
 excerpt: 'Découvrez les démarches spécifiques pour transférer un nom de domaine depuis Gandi vers OVHcloud'
-updated: 2024-03-25
+updated: 2024-03-26
 ---
 
 ## Objectif
@@ -10,9 +10,9 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 
 > [!warning]
 >
-> Le *bureau d'enregistrement* d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même *bureau d'enregistrement* que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
+> Le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) d'un nom de domaine représente l'organisation/fournisseur agréé auprès duquel le nom de domaine est enregistré/souscrit par un particulier, une association ou une organisation. C'est auprès de ce même [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) que vous renouvelez la souscription de votre nom de domaine (généralement une fois par an).
 >
-> Si OVHcloud est déjà le *bureau d'enregistrement* de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le *transfert entrant de domaine* n'est pas la procédure appropriée. La procédure de *transfert entrant de domaine* s’applique **uniquement** aux noms de domaine enregistrés dans un autre *bureau d'enregistrement* qu'OVHcloud.
+> Si OVHcloud est déjà le [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le *transfert entrant de domaine* n'est pas la procédure appropriée. La procédure de *transfert entrant de domaine* s’applique **uniquement** aux noms de domaine enregistrés dans un autre [bureau d'enregistrement](https://www.ovhcloud.com/fr/learn/what-is-domain-name-registrar/) qu'OVHcloud.
 >
 > Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account_and_service_management/account_information/managing_contacts).
 > Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web_cloud/domains/trade_domain).
@@ -49,6 +49,21 @@ Le transfert d'un nom de domaine Gandi nécessite de respecter une démarche sp�
 >
 
 ## En pratique
+
+> [!primary]
+>
+> La zone DNS active d'un nom de domaine contient la configuration DNS appliquée à votre nom de domaine. C'est elle qui lie votre nom de domaine à vos services tels que vos adresses e-mails ou votre site web.
+>
+> Si, en complément de votre nom de domaine, vous disposez aussi d'une zone DNS active pour celui-ci chez votre bureau d'enregistrement actuel, vérifiez auprès de ses services que la zone DNS appliquée à votre nom de domaine ne va pas être supprimée une fois le transfert effectué.
+>
+> En effet, certains bureaux d'enregistrements suppriment la zone DNS présente chez eux dès que le transfert de votre nom de domaine est terminé. Si tel est le cas, recréez à l'identique votre zone DNS chez OVHcloud avant de démarrer les actions liées au transfert de votre nom de domaine.
+>
+> Pour cela, consultez les guides suivants :
+> - [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+> - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+>
+> Vérifiez également que votre bureau d'enregistrement actuel ne va pas fermer d'autres services comme, par exemple, les adresses e-mails associées à votre nom de domaine.
+>
 
 ### Désactiver le verrouillage du transfert
 
@@ -94,7 +109,7 @@ Une fois le code d'autorisation obtenu, vous pouvez procéder au transfert de vo
 >
 > Dans les 24 heures suivant l'initiation du transfert, Gandi vous enverra un e-mail de notification pour vous informer de la sortie du nom de domaine.
 > Cet e-mail peut également contenir un lien vous permettant d'accepter le transfert à la place de Gandi, ce qui réduira le délai de réserve.
-> La période de réserve correspond à une période de 5 jours (8 jours pour les nom de domaine gérés par l'AFNIC) qui permet d’annuler le transfert.
+> La période de réserve correspond à une période de 5 jours (8 jours pour les noms de domaine gérés par l'AFNIC) qui permet d’annuler le transfert.
 > Passé ce délai (5 jours « pleins »), le transfert se finalisera automatiquement.
 >
 
