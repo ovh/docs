@@ -6,7 +6,7 @@ updated: 2024-03-26
 
 ## Objectif
 
-Le transfert d'un nom de domaine Hostinger nécessite de respecter une démarche spécifique. Dans ce guide, nous vous expliquons étape par étape comment transférer votre nom de domaine Hostinger vers OVH. Nous examinerons également les facteurs à prendre en compte lors du transfert de domaines. 
+Le transfert d'un nom de domaine Hostinger nécessite de respecter une démarche spécifique. Dans ce guide, nous vous expliquons étape par étape comment transférer votre nom de domaine de Hostinger vers OVHcloud.
 
 **Découvrez comment transférer un nom de domaine Hostinger vers OVHcloud**
 
