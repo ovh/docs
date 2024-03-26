@@ -1,5 +1,5 @@
 ---
-title: Object Replication - Maîtrisez la réplication asynchrone sur vos buckets
+title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des compartiments pour améliorer la disponibilité, la redondance et la conformité des données
 updated: 2024-03-20
 ---
