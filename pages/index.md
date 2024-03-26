@@ -1691,6 +1691,7 @@
             + [Object Storage - Hosting a static website in a S3 bucket](storage_and_backup/object_storage/s3_website)
             + [Object Storage - Enabling HTTPS on a S3 static website using a custom domain](storage_and_backup/object_storage/s3_website_https)
             + [Object Storage - Setting up CORS on S3 Object Storage](storage_and_backup/object_storage/s3_setting_up_cors)
+            + [Object Storage - Master asynchronous replication across your buckets](storage_and_backup/object_storage/s3_asynchronous_replication)
         + [Configure Object Storage with your solutions](storage-object-storage-configure-object-storage-with-your-solutions)
             + [Object Storage - Use S3 Object Storage with Rclone](storage_and_backup/object_storage/s3_rclone)
             + [Object Storage - Use S3 Object Storage with S3cmd](storage_and_backup/object_storage/s3_s3cmd)
