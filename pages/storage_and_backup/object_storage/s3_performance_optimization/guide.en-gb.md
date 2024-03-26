@@ -1,7 +1,7 @@
 ---
-title: Optimizing OVHcloud Object Storage Performance
+title: Optimising OVHcloud Object Storage Performance
 excerpt: This guide walks you through various methods to optimise the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads.
-updated: 2024-03-25
+updated: 2024-03-26
 ---
 
 ## Introduction
@@ -10,18 +10,18 @@ There are several ways to optimise the performance of your buckets on OVHcloud O
 
 ### Using byte range fetch
 
-OVHcloud Object Storage supports byte range fetch. The idea is to retrieve an object chunk by chunk, each chunk being defined by a range of bytes. The main advantage is that it allows you to parallelize GET requests to download an object, each GET requesting a specific range of bytes: typical sizes for byte-range requests are 8 MB or 16 MB but you can specify any size.
+OVHcloud Object Storage supports byte range fetch. The idea is to retrieve an object chunk by chunk, each chunk being defined by a range of bytes. The main advantage is that it allows you to parallelize GET requests to download an object, with each GET requesting a specific range of bytes: typical sizes for byte range requests are 8 MB or 16 MB, but you can specify any size.
 
 ![Schema 1](images/sharding1.png){.thumbnail}
 
-To download part of an object, you must use additional parameters to specify which part of the object you want to retrieve. The following example downloads the first part ranging from 0 to 500 bytes of an object named "filename" stored in the "test-bucket" bucket and writes the output as a file named "object_part":
+To download part of an object, you must use additional parameters to specify which part of the object you want to retrieve. The following example downloads the first part, between 0 and 500 bytes, of an object named "filename" stored in the "test-bucket" bucket and writes the output to a file named "object_part":
 
 ```bash
 user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range bytes=0-500 object_part
 ```
 ### Using MPUs
 
-You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if transmission of any part fails. Once you have downloaded all the parts, OVHcloud Object Storage assembles them and rebuilds the object.
+You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if the transmission of a part fails. Once you have downloaded all the parts, OVHcloud Object Storage assembles them and rebuilds the object.
 
 > [!success]
 >
@@ -38,14 +38,14 @@ The benefits of using multipart upload are as follows:
 
 You will need the following:
 
-* An [OVHcloud bucket created](/pages/storage_and_backup/object_storage/s3_create_bucket)
+* An [OVHcloud bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) created
 * The [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external} installed and configured
 * A large file split into multiple parts
 
   
 > [!primary]
 > **Did you know?**
-> When you use a high level command to upload an object using the `cp` command, the AWS CLI automatically does a multipart-upload. To better optimise the default configuration values for doing multipart uploads (multipart_threshold, multipart_chunksize), you can check [this article](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-getting-started-object-storage?id=kb_article_view&sysparm_article=KB0047339) and see the table explaining the configuration of the AWS CLI.
+> When you use a high level command to upload an object using the `cp` command, the AWS CLI automatically does a multipart-upload. To better optimise the default configuration values for multipart uploads (multipart_threshold, multipart_chunksize), you can consult [this article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) and see the table explaining how to configure the AWS CLI.
 > 
 
 The following section explains how to perform a multipart upload using the low level commands of the AWS CLI.
@@ -62,13 +62,13 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 ```
 
 > [!primary]
-> Do not forget to save the **upload ID**, **key** and **bucket name** for use with the upload-part command.
+> Do not forget to save the **upload ID**, **key** and **bucket name** for use with the `upload-part` command.
 > 
 
-For each part, you need to make an `upload-part` command where you specify the bucket, key and upload ID:
+For each part, you need to create an `upload-part` command in which you specify the bucket, the key and the upload ID:
 
 > [!warning]
-> Part numbers can be any number from 1 to 10,000 inclusive. You can check the technical limitations [here](/pages/storage_and_backup/object_storage/s3_limitations).
+> Part numbers can range from 1 to 10,000 inclusive. You can check the technical limitations [here](/pages/storage_and_backup/object_storage/s3_limitations).
 > 
 
 ```bash
@@ -168,12 +168,12 @@ $ s3-upload-cutoff=SIZE
 Size threshold at which point rclone switches from single file upload to multipart upload.
 
 ```bash
-s3-chunk-size=SIZE
+$ s3-chunk-size=SIZE
 ```
 Size of each chunk used in multipart uploads.
 
 ```bash
-s3-upload-concurrency
+$ s3-upload-concurrency
 ```
 
 Number of chunks uploaded concurrently.
@@ -196,7 +196,7 @@ For other tools, you should check the relevant documentation of the software you
 
 #### I/O optimization
 
-Finally, it is also possible to significantly optimise performances by adopting good practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the sharding mechanism.
+It is also possible to significantly optimise performances by adopting good practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the sharding mechanism.
 
 **What is sharding**
 
@@ -206,19 +206,19 @@ In OpenIO, a **container** is basically an internal logical entity that contains
 
 Sharding is the mechanism by which a container is split into 2 new sub-containers (and thus its associated metadata database is also split in 2) when it reaches **a critical number of objects** called **shards**.
 
-Sharding enables :
+Sharding enables:
 
-* optimise read/write operations by distributing them evenly over several servers (shards)
-* distribute data storage over the whole cluster to increase resilience
+* optimise read/write operations by distributing them evenly over several servers (shards).
+* distribute data storage over the whole cluster to increase resilience.
 
 We use the object keys (prefix/name) to determine which objects are pushed into which sub-container using the following logic:
 
 * Create 2 new shards
 * Find the median value of an alphabetically sorted list of all object keys
 * Copy the content of the root container to the shards
-* In the first shard, keep only the first half of the objects (object with first key of the list to object with key equals to the median value) and clean the second half
-* In the second shard, keep only the second half of the objects and clean the first half
-* The root container then only lists the references to the shards i.e which range of objects in which shard
+* In the first shard, keep only the first half of the objects (from the object with the first key in the list to the object with a key equal to the median value) and clean up the second half
+* In the second shard, keep only the second half of the objects and clean up the first half
+* The root container then only lists references to the shards i.e which range of objects in which shard
 
 This logic can be summed up as follows:
 
@@ -244,13 +244,12 @@ List of objects:
 * 20240217/file02.log
 * ...
 
-Assuming the threshold is 100, after the uploading of the 100th object, the sharding is triggerd to split the objects in 2 shards:
+Assuming a threshold of 100, after the 100th object is uploaded, the sharding is triggered to divide the objects into two shards:
 
 * from 20240216/file01.log to 20240216/file100.log in the first shard
 * from 20240216/file101.log and beyond to a second shard
 
-This is not optimal because, since dates are incremental by nature, all new downloads will always be performed on the second shard, which will in turn be split again when it reaches a critical size. Thus, all future write operations will always be performed on the latest shard created and the previous shards will get rarely accessed. Furthermore, you may experience some throttling during the sharding process.
-
+This solution is not optimal because, since dates are incremental by nature, all new downloads will always be carried out on the second shard, which will be split again when it reaches a critical size. Thus, all future write operations will always be performed on the latest shard created and the previous shards will get rarely accessed. Furthermore, you may experience some throttling during the sharding process.
 
 ![Schema 3](images/sharding3.png){.thumbnail}
 
@@ -266,7 +265,7 @@ List of objects:
 * db/mongodb/file20240217.log
 * ...
   
-Assuming the threshold is 100, after the uploading of the 100th object, the sharding is triggerd to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
+Assuming a threshold of 100, after the 100th object is uploaded, the sharding is triggerd to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
 
 ![Schema 4](images/sharding4.png){.thumbnail}
 
