@@ -1,7 +1,7 @@
 ---
 title: 'Creating filters for your email addresses'
 excerpt: 'Find out how to create and configure filter rules on your email address'
-updated: 2021-09-27
+updated: 2024-03-26
 ---
 
 ## Objective
@@ -70,6 +70,11 @@ Second choice (Rule):
 - **spf**: Parameter that depends on a domain's SPF, example: `... has no SPF record`.
 - **includes**: Positive condition, example: `the subject contains ...`.
 - **does not include**: Negative condition, example: `... does not contain ...`.
+
+> [!primary]
+>
+> SPF (Sender Policy Framework) allows the server that receives an email to ensure that it has been sent from a trusted server.
+> It helps prevent identity fraud from email addresses that use your domain name (spoofing). For more information on the SPF record, please refer to our guide on [Configuring an SPF record on a domain name](/pages/web_cloud/domains/dns_zone_spf).
 
 Third choice (Value):
 

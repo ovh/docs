@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser les alias et redirections e-mail'
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
-updated: 2020-05-20
+updated: 2024-03-26
 ---
 
 <style>
@@ -53,7 +53,7 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 
 Les chapitres « [créer une redirection](#redirect) » et « [créer un alias](#alias) » concernent l'ensemble de nos offres e-mail OVHcloud, **sauf si** vous possédez un nom de domaine enregistré chez OVHcloud sans offre e-mail attachée.
 
-Pour ces deux exceptions, consultez directement le chapitre « [Créer une redirection ou un alias sur un nom de domaine sans offre e-mail](#mxplanlegacy) ».
+Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons à consulter directement le chapitre « [Créer une redirection ou un alias sur un nom de domaine sans offre e-mail](#mxplanlegacy) ».
 
 ### Créer une redirection <a name="redirect"></a>
 

@@ -1,6 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Roundcube'
-updated: 2024-02-21
+updated: 2024-03-26
 ---
 
 ## Objectif
@@ -34,6 +34,7 @@ Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depui
     - [Contacts](#contacts-settings)
     - [Dossiers spéciaux](#special-folder-settings)
     - [Paramètres du serveur](#server-settings)
+    - [Chiffrement](#encryption)
 - [Gérer les identités et leur signature](#identity-signature)
     - [Identity](#identity)
     - [Signature](#signature)
@@ -57,6 +58,11 @@ Rendez-vous sur la page <https://www.ovh.com/fr/mail/>. Saisissez une adresse e-
 Vous serez alors redirigé vers l'interface Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
+
+> [!primary]
+> 
+> Lorsque vous vous connectez pour la première fois sur l'interface Roundcube, l'apparence peut être différente de celle que vous verrez dans cette documentation. Cela signifie que l'apparence « classique » a été définie sur votre interface. Pour la changer, suivez la rubrique « [Interface utilisateur](#user-interface-settings) » et sélectionnez l'affichage « Larry ».
+> L'apparence de l'interface n'aura pas d'incidence sur les explications qui suivent dans cette documentation.
 
 > [!warning]
 > 
@@ -171,6 +177,8 @@ L'option `Jolies dates` permet d'afficher la date de réception/d'envoi avec des
 
 La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri.
 
+Vous pouvez choisir l'esthétique d'affichage de votre interface. Vous avez le choix entre l'affichage **Classic** ou l'affichage **Larry**.
+
 #### Vue de la boîte de courriels <a name="mail-view-settings"></a>
 
 Définissez ici l'ergonomie pour visualiser et agir sur les e-mails. L'option `Disposition` permet d'agencer les 3 fenêtres décrites dans la partie [Interface générale du webmail Roundcube](#topwindow).
@@ -195,7 +203,10 @@ Personnalisez ici l'agencement des informations dans votre carnet d'adresses.
 Roundcube dispose de 4 dossiers spéciaux : `Brouillons`, `Envoyés`, `Pourriels`, `Corbeille`.
 
 Nous ne conseillons pas de les modifier mais il est possible d'attribuer le comportement d'un dossier spécial à un autre dossier créé ultérieurement, grâce aux menus déroulants.<br>
-**Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé. Les e-mails qui y seront enregistrés seront considérés comme des brouillons jusqu'à leur envoi effectif.
+
+**Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé en cliquant sur la liste déroulante et en choisissant ce dossier. Si aucun dossier ne lui est attribué, il sera automatiquement mis sur l'option « Drafts ». Les e-mails qui y seront enregistrés seront alors considérés comme des brouillons jusqu'à leur envoi effectif.
+
+> En pratique, je crée un sous-dossier « Brouillons e-mails clients ». Je me rends dans `Mes préférences`{.action} / `Dossiers spéciaux`{.action} et je choisis l'option « Brouillons ». Dans le menu déroulant, je sélectionne le dossier « Brouillons e-mails clients » pour remplacer « Drafts ». Les e-mails rédigés dans ce dossier seront considérés comme des brouillons.
 
 #### Paramètres du serveur <a name="server-settings"></a>
 
@@ -204,6 +215,17 @@ Dans cet onglet, vous pouvez optimiser l'espace occupé sur un compte e-mail. En
 > [!warning]
 > 
 > Il est déconseillé d'activer l'option `Supprimer directement les pourriels`, dans le cas de figure où un faux positif (e-mail déclaré à tort comme « SPAM ») se retrouverait déclaré comme SPAM pour le serveur de réception. En effet, lorsqu'un e-mail est placé dans le dossier « Pourriels », il est encore possible de vérifier si l'e-mail est légitime.
+
+#### Chiffrement <a name="encryption"></a>
+
+Si votre navigateur vous le permet, vous pouvez installer et activer l'extension « Mailvelope ». Il s'agit d'une extension de navigateur qui intègre le PGP (**P**retty **G**ood **P**rivacy) dans votre messagerie web. Le système de chiffrement PGP et, par conséquent, l'extension « Mailveloppe » permettent de :
+
+- Chiffrer et déchiffrer des e-mails dans votre navigateur.
+- Garder le contenu de vos e-mails privé vis à vis de votre fournisseur de messagerie.
+
+Vous êtes ainsi seul à pouvoir lire vos e-mails. Cette extension est un moyen de sécuriser votre webmail si vous recevez des e-mails de nature confidentielle.
+
+Pour plus d'informations, consultez la FAQ de « Mailvelope » à l'adresse <https://mailvelope.com/faq>.
 
 ### Gérer les identités et leur signature <a name="identity-signature"></a>
 
@@ -348,7 +370,7 @@ Dans la fenêtre de rédaction d'un e-mail, on retrouve les champs suivants :
     - `Texte en clair` : uniquement du texte sans mise en forme.
     - `HTML`: texte avec mise en forme. Une barre d'outils HTML apparaît au-dessus de la fenêtre de saisie.
 - **Priorité** de l'e-mail.
-- **Avis de réception** : un accusé de réception est demandé au destinataire.
+- **Avis d'ouverture du courriel** : un accusé de réception est demandé au destinataire.
 - **Notification d'état de distribution** lorsque l'e-mail a bien été transmis au destinataire.
 - **Enregistrer le courriel envoyé dans** : choisir le dossier dans lequel une copie de l'e-mail sera stockée.
 

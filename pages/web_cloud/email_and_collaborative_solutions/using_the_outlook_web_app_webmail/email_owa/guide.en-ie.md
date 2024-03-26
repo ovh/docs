@@ -1,7 +1,7 @@
 ---
 title: 'Using the Outlook Web App with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
-updated: 2024-03-19
+updated: 2024-03-26
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ This guide will give you a better understanding of the usual email account tasks
 
 > [!primary]
 >
-> After the first two steps, the instructions don't have to be considered in a particular order. You can use the navigation bar on the left-hand side of this guide to jump to the paragraphs that are useful to you.
+> After the first two steps, the instructions don't have to be considered in a particular order.
 >
 
 ### 1. Accessing OWA webmail

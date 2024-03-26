@@ -1,6 +1,6 @@
 ---
 title: 'Webmail: Guía de uso de Roundcube'
-updated: 2024-02-21
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -38,6 +38,7 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
     - [Contactos](#contacts-settings)
     - [Carpetas especiales](#special-folder-settings)
     - [Configuración del servidor](#server-settings)
+    - [Cifrado](#encryption)
 - [Gestionar las identidades y su firma](#identity-signature)
     - [Configurar atributos de identidad](#identity)
     - [Añadir una firma](#signature)
@@ -61,6 +62,11 @@ Acceda a la página <https://www.ovh.com/es/mail/>. Introduzca una dirección de
 El sistema le redirigirá a la interfaz Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
+
+> [!primary]
+> 
+> La primera vez que se conecte a Roundcube, la apariencia puede ser diferente de la que se muestra en esta guía. Esto significa que el aspecto "clásico" se ha definido en su interfaz. Para cambiarla, vaya a la sección «[Interfaz de usuario](#user-interface-settings)» y seleccione la vista "Larry".
+> La apariencia de la interfaz no afectará a las siguientes explicaciones de esta documentación.
 
 > [!warning]
 > 
@@ -174,6 +180,8 @@ La opción `Transformar fechas recientes` permite mostrar la fecha de recepción
 
 La casilla `Display next list entry after delete/move` significa que después de realizar una acción de borrado o mover a un email, el elemento de la línea inferior se seleccionará sistemáticamente, independientemente del orden de clasificación. 
 
+Puede elegir la estética de visualización de su interfaz. Puede elegir entre mostrar **Classic** o **Larry**.
+
 #### Vista de Buzón <a name="mail-view-settings"></a>
 
 Establezca aquí la usabilidad para visualizar y actuar en el correo. La opción `Disposición` permite organizar las 3 ventanas descritas en la sección [Interfaz general del webmail Roundcube](#topwindow).
@@ -198,7 +206,10 @@ Personalice aquí la organización de los datos en su libreta de direcciones.
 Roundcube dispone de 4 carpetas especiales: `Borradores`, `Enviados`, `SPAM`, `Papelera`.
 
 No recomendamos cambiarlos, pero es posible atribuir el comportamiento de una carpeta especial a otra carpeta creada posteriormente, gracias a los menús desplegables.<br>
-**Por ejemplo**, puede asignar el comportamiento "borradores" a otra carpeta que haya creado. Los mensajes de correo electrónico que se registren en él serán considerados una mezcla hasta que se envíen efectivamente.
+
+**Por ejemplo**, puede asignar el comportamiento « Borradores » a otra carpeta que haya creado haciendo clic en la lista desplegable y eligiendo esa carpeta. Si no se le asigna ninguna carpeta, se pondrá automáticamente en la opción « Drafts ». Los mensajes de correo electrónico que se guarden en dicha carpeta se considerarán borradores hasta que se envíen.
+
+> En la práctica, creo una subcarpeta denominada Borradores de correo de clientes. Voy a `Mis preferencias`{.action} / `Carpetas especiales`{.action} y elijo la opción «Borradores». En el menú desplegable, selecciono la carpeta "Borradores de mensajes de correo de clientes" para sustituir "Drafts". Los mensajes redactados en esta carpeta se considerarán borradores.
 
 #### Configuración del servidor <a name="server-settings"></a>
 
@@ -207,6 +218,17 @@ En esta pestaña, puede optimizar el espacio ocupado de una cuenta de correo. La
 > [!warning]
 > 
 > No es recomendable activar la opción `Vaciar Papelera al cerrar sesión`, en caso de que un falso positivo (correo electrónico erróneamente declarado como "spam") se declare como spam para el servidor de recepción. De hecho, cuando un mensaje de correo electrónico se incluye en la carpeta "Correo electrónico", es posible comprobar si el correo es legítimo.
+
+#### Cifrado <a name="encryption"></a>
+
+Si su navegador lo permite, puede instalar y activar la extensión "Mailvelope". Se trata de una extensión de navegador que integra el PGP (**P**retty **G**ood **P**rivacy) en su mensajería web. El sistema de cifrado PGP y, por consiguiente, la extensión "Mailvelope" permiten:
+
+- Cifrar y descifrar mensajes de correo en su navegador.
+- Conservar el contenido de sus mensajes de correo en privado con respecto a su proveedor de correo.
+
+Solo usted podrá leer sus mensajes de correo. Esta extensión es una forma de proteger su webmail si recibe mensajes de correo de naturaleza confidencial.
+
+Para más información, consulte las FAQ de "Mailvelope" en <https://mailvelope.com/faq>.
 
 ### Gestionar las identidades y su firma <a name="identity-signature"></a>
 
