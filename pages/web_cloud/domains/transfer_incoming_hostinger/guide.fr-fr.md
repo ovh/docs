@@ -1,6 +1,6 @@
 ---
 title: 'Transférer un nom de domaine de Hostinger vers OVHcloud'
-excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine Hostinger vers OVHcloud'
+excerpt: 'Découvrez différentes informations concernant le transfert d’un nom de domaine Hostinger vers OVHcloud'
 updated: 2024-03-24
 ---
 
