@@ -170,6 +170,7 @@
             + [Configuring the storage on a HGR-STOR-2 server](bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
             + [Dedicated Servers - ESXi Partitioning](bare_metal_cloud/dedicated_servers/esxi-partitioning)
             + [Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware](bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
+            + [High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS300 firmware](bare_metal_cloud/dedicated_servers/wd-sas-fw-upgrade)
         + [Network and IP management](bare-metal-cloud-dedicated-servers-network-and-ip-management)
             + [Moving an Additional IP](bare_metal_cloud/dedicated_servers/move-failover-ip)
             + [Configuring the Edge Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network)
