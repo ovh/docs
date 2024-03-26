@@ -15,8 +15,9 @@ Firmware Release Notes: <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/
 **The purpose of this guide is to help you upgrade your SSD SAS Western Digital SS300 firmware.**
 
 Disk part numbers:
-    - HUSMR3280ASS201 (800GB capacity)
-    - HUSMR3240ASS201 (400GB capacity)
+
+- HUSMR3280ASS201 (800GB capacity)
+- HUSMR3240ASS201 (400GB capacity)
 
 ## Requirements
 
