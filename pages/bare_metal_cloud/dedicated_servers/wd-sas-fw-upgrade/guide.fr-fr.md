@@ -150,7 +150,7 @@ root@labo:~# /opt/MegaRAID/storcli/storcli64 /c0 /eall /sall show | grep -i 'HUS
 Download the firmware binary on your server:
 
 ```bash
-wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/PM9A1/BCGNB17D_Noformat.binwget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/SS300/BCGNB17D.bin
+wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/SS300/BCGNB17D.bin
 ```
 
 Execute the following command for each identified disk displayed in step 3:
@@ -708,4 +708,4 @@ Firmware Revision = B17D
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our user community on <https://community.ovh.com/>.
+Join our user community on <https://community.ovh.com/en/>.
