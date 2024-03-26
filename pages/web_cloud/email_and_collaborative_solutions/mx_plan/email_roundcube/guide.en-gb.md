@@ -61,8 +61,8 @@ You will then be redirected to the Roundcube interface.
 
 > [!primary]
 > 
-> When you first log in to the Roundcube interface, the appearance may be different from what you will see in this documentation. This means that the "classic" appearance has been set on your interface. To change it, follow the [User Interface](#user-interface-settings) topic and select the "Larry" view.
-> The appearance of the interface will not affect the explanations that follow in this documentation.
+> When you first log in to the Roundcube interface, the appearance may be different from what you will see in this documentation. This means that the "classic" appearance has been set on your interface. To change it, follow the steps to access the [user interface settings](#user-interface-settings) and select the "Larry" view.
+> The appearance of the interface will not affect the explanations in this documentation.
 
 > [!warning]
 > 
@@ -176,7 +176,7 @@ The `Pretty Dates` option allows you to display the received/sent date with rela
 
 The `Show next entry in the list after deletion or move` check box means that after a delete or move action on an email, the item in the lower row will then always be selected, regardless of the sort order. 
 
-You can choose the display aesthetics of your interface. You can choose between the **Classic** display or the **Larry** display.
+You can choose the display style of your interface. You can choose between the **Classic** display or the **Larry** display.
 
 #### Mailbox View <a name="mail-view-settings"></a>
 
@@ -201,11 +201,11 @@ Customise the arrangement of information in your address book here.
 
 Roundcube has 4 special folders: `Drafts`, `Sent`, `Spam`, `Deleted Items`.
 
-We do not recommend changing them, but you can assign the behaviour of a special folder to another folder created later, using the drop-down menus.<br>
+We do not recommend changing them, but you can assign the behaviour of a special folder to another folder created later, using the drop-down menus.
 
-**For example**, you can assign the "Drafts" behavior to another folder that you created by clicking the drop-down list and choosing that folder. If no folder is assigned to it, it will be automatically set to the "Drafts" option. The emails saved there will then be treated as drafts until they are sent.
+You can assign the `Drafts` behaviour to another folder that you created by clicking the drop-down list and choosing that folder. If no folder is assigned, it will be automatically set to the "Drafts" option. The emails saved in there will be considered drafts until they are sent.
 
-> In practice, I create a sub-folder called “Drafts emails clients”. I go to `My preferences`{.action} / `Special folders`{.action} and choose the “Drafts” option. In the dropdown menu, I select the “Drafts emails clients” folder to replace “Drafts”. Emails in this folder will be considered drafts.
+> Example: Create a subfolder called "Drafts client emails". Open `My preferences`{.action} and `Special folders`{.action} and choose the "Drafts" option. In the drop-down menu, select the "Drafts client emails" folder to replace "Drafts". Emails in this folder will be considered drafts.
 
 #### Server Settings <a name="server-settings"></a>
 
