@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installer manuellement Typo3"
 excerpt: "Découvrez comment installer le CMS Typo3 sur un hébergement web OVHcloud"
-updated: 2024-03-26
+updated: 2024-03-27
 ---
 
 ## Objectif
@@ -70,7 +70,7 @@ La cinquième et dernière étape de l'installation s'affiche.
 Lisez les informations affichées à l'écran et choisissez l'option qui vous convient :
 
 - `Create empty starting page` : sélectionnez cette option pour créer une page par défaut pour votre site web. Après avoir validé cette étape, saisissez votre nom de domaine dans votre navigateur Internet pour accéder à votre site web Typo3.
-- `Take me straight to the backend` : sélectionnez cette option pour être redirigé vers le dashboard de votre site web Typo3. Via ce dashboard, vous devrez créer vous-même vos pages web, alimenter leurs contenus et bien plus. Retrouvez plus d'informations dans la [documentation officielle de Typo3](https://docs.typo3.org/Home/GettingStarted.html){.external}.
+- `Take me straight to the backend` : sélectionnez cette option pour être redirigé vers le dashboard de votre site web Typo3. Via ce dashboard, vous devrez créer vous-même vos pages web, alimenter leur contenu et bien plus. Retrouvez plus d'informations dans la [documentation officielle de Typo3](https://docs.typo3.org/Home/GettingStarted.html){.external}.
 
 Cliquez sur `Open the TYPO3 Backend`{.action} pour confirmer l'option que vous venez de choisir.
 
