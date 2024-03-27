@@ -108,7 +108,7 @@ The basic structure of a replication rule within the configuration JSON file is 
 
 ```json
 {
-  "Role": "string",
+  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
       "ID": "string",
@@ -131,7 +131,7 @@ The basic structure of a replication rule within the configuration JSON file is 
       },
       "Status": "Enabled"|"Disabled",
       "Destination": {
-        "Bucket": "string",
+        "Bucket": "arn:aws:s3:::<your_bucket_name>",
         "StorageClass": "STANDARD"|"HIGH_PERF"
       },
       "DeleteMarkerReplication": {
@@ -185,7 +185,7 @@ However, you can still replicate delete markers by adding the `DeleteMarkerRepli
 
 ```json
 {
-  "Role": "string",
+  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
       ...
@@ -223,10 +223,13 @@ Simple replication between 2 buckets:
 
 ```json
 {
-  "Role": "IAM-role-ARN",
+  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
       "Status": "Enabled",
+      "Priority": 1,
+      "Filter": { },
+      "DeleteMarkerReplication": { "Status": "Disabled" }
       "Destination": {
         "Bucket": "arn:aws:s3:::destination-bucket"
       }
@@ -241,10 +244,11 @@ This configuration will replicate all objects (indicated by the empty `Filter` f
 
 ```json
 {
-  "Role": "IAM-role-ARN",
+  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
       "Status": "Enabled",
+      "Priority": 1,
       "Filter" : {
         "Prefix": "backup",
         "Tag": {"Key":"important", "Value":"true"}
@@ -264,11 +268,13 @@ This configuration will replicate all objects that have the prefix "backup" and 
 
 ```json
 {
-  "Role": "IAM-role-ARN",
+  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
       "ID": "rule1",
       "Status": "Enabled",
+      "Priority": 1,
+      "Filter": { }
       "Destination": {
         "Bucket": "arn:aws:s3:::region1-destination-bucket"
       }
@@ -276,6 +282,8 @@ This configuration will replicate all objects that have the prefix "backup" and 
     {
       "ID": "rule2",
       "Status": "Enabled",
+      "Priority": 2,
+      "Filter": { }
       "Destination": {
         "Bucket": "arn:aws:s3:::region2-destination-bucket"
       }
@@ -290,11 +298,12 @@ Suppose the source bucket, `region1-destination-bucket` and `region2-destination
 
 ```json
 {
-  "Role": "IAM-role-ARN",
+  "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
       "ID": "rule1",
       "Status": "Enabled",
+      "Priority": 1,
       "Filter" : {
         "Prefix": "dev"
       },
@@ -306,6 +315,7 @@ Suppose the source bucket, `region1-destination-bucket` and `region2-destination
     {
       "ID": "rule2",
       "Status": "Enabled",
+      "Priority": 2,
       "Filter" : {
         "Prefix": "prod"
       },
@@ -368,6 +378,7 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
     {
       "ID": "replication-rule-456",
       "Status": "Enabled",
+      "Priority": 1,
       "Filter": {
         "And": {
           "Prefix": "docs"
