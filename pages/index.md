@@ -1128,6 +1128,8 @@
             + [Installing PrestaShop manually](web_cloud/web_hosting/cms_manual_installation_prestashop)
             + [Installing Drupal manually](web_cloud/web_hosting/cms_manual_installation_drupal)
             + [Installing Grav manually](web_cloud/web_hosting/cms_manual_installation_grav)
+            + [Installing Typo3 manually](web_cloud/web_hosting/cms_manual_installation_typo3)
+            + [Installing SPIP manually](web_cloud/web_hosting/cms_manual_installation_spip)
         + [FTP and SSH](web-cloud-hosting-ftp-and-ssh)
             + [Tutorial - Using FileZilla with your OVHcloud hosting](web_cloud/web_hosting/ftp_filezilla_user_guide)
             + [Logging in to your Web Hosting plan’s storage space](web_cloud/web_hosting/ftp_connection)
