@@ -4,6 +4,10 @@ excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des
 updated: 2024-03-27
 ---
 
+> [!warning]
+> La fonctionnalité de réplication asynchrone entre buckets est actuellement en phase bêta.
+> Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : https://discord.gg/ovhcloud. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Object Storage.
+
 ## Introduction
 
 La réplication d'objets est une fonctionnalité puissante qui facilite la réplication automatique et asynchrone d'objets au sein d'un bucket source vers un ou plusieurs buckets de destination. Cette fonctionnalité est essentielle pour maintenir la cohérence, la disponibilité et la redondance des données sur différents emplacements de stockage.
