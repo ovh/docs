@@ -1,4 +1,8 @@
-
+---
+title: Optimizing OVHcloud Object Storage Performance
+excerpt: This guide walks you through various methods to optimize the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads.
+updated: 2024-03-19
+---
 ---
 title: Transitioning to New MongoDB Offerings & Automated Migration Guide
 excerpt: Learn about the transition from MongoDB's current offerings to the new plans and understand the automated migration process to effectively plan your transition.
