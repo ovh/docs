@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Manuelle Installation eines CMS auf einem Webhosting"
 excerpt: "Diese Anleitung erklärt, wie Sie ein CMS manuell auf Ihrem Hosting installieren"
-updated: 2024-03-22
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -24,6 +24,9 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -178,6 +181,9 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -190,6 +196,9 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Konfigurieren Sie anschließend die PHP-Version mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -368,6 +377,9 @@ Um mit der Installation fortzufahren, folgen Sie der passenden Anleitung zu Ihre
 - [Installation von Drupal abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Installation von PrestaShop abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Installation von Pico abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Installation von Grav abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Installation von Typo3 abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Installation von SPIP abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ręczna instalacja CMS na hostingu"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS na Twoim hostingu"
-updated: 2024-03-22
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-03-22
   
 ## Wprowadzenie
 
-Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), np. WordPress, Joomla!, Drupal, PrestaShop lub Pico.
+Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), np. WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 lub SPIP.
 
 > [!warning]
 >
@@ -25,6 +25,9 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -179,6 +182,9 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -191,6 +197,9 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Skonfiguruj następnie wersję PHP na Twoim hostingu, korzystając z dokumentacji [OVHcloud dotyczącej zmiany wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -369,6 +378,9 @@ Aby kontynuować instalację, kliknij w przewodnik dotyczący systemu CMS:
 - [Zakończenie instalacji Drupala](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Zakończenie instalacji PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Zakończenie instalacji Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- Zakończenie instalacji Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Zakończenie instalacji Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Zakończenie instalacji SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Sprawdź również <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar manualmente un CMS en mi alojamiento"
 excerpt: "Descubra cómo instalar manualmente un CMS en un alojamiento"
-updated: 2024-03-22
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-03-22
 
 ## Objetivo
 
-Esta guía explica cómo instalar manualmente un CMS (del inglés content management system), como WordPress, Joomla!, Drupal, PrestaShop o Pico, en pocos pasos.
+Esta guía explica cómo instalar manualmente un CMS (del inglés content management system), como WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 o SPIP en pocos pasos.
 
 > [!warning]
 >
@@ -25,6 +25,9 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -177,6 +180,9 @@ A continuación se muestran los enlaces a las páginas de descarga de los CMS qu
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -190,6 +196,9 @@ A continuación se muestran los enlaces a las páginas de descarga de los CMS qu
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 >
 > Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
@@ -370,6 +379,9 @@ Para continuar con la instalación, siga uno de los siguientes enlaces haciendo 
 - [Finalizar la instalación de Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finalizar la instalación de PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Finalizar la instalación de Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Finalizar la instalación de Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Finalizar la instalación de Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Finalizar la instalación de SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Más información <a name="go-further"></a>
 

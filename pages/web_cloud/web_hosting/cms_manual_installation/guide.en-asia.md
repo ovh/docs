@@ -1,12 +1,12 @@
 ---
 title: "Tutorial - Installing a CMS manually on your Web Hosting plan"
 excerpt: "Find out more about some of the compatible CMS for Web Hostings"
-updated: 2024-03-22
+updated: 2024-03-27
 ---
 
 ## Objective
 
-This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal, PrestaShop or Pico manually in just a few steps.
+This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 or SPIP manually in just a few steps.
 
 > [!warning]
 >
@@ -21,6 +21,9 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -175,6 +178,9 @@ Below are links to the CMS download pages mentioned in this tutorial:
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -187,6 +193,9 @@ Below are links to the CMS download pages mentioned in this tutorial:
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -365,6 +374,9 @@ To continue with the installation, follow the guide corresponding to your CMS:
 - [Finalise a Drupal installation](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finalise a PrestaShop installation](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Finalise a Pico installation](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Finalise a Grav installation](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Finalise a Typo3 installation](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Finalise a SPIP installation](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Go further <a name="go-further"></a>
 
