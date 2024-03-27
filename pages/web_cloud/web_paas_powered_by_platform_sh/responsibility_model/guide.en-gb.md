@@ -1,7 +1,6 @@
 ---
 title: "Responsibility model for DevOps using Plateform.sh"
 excerpt: "Shared responsibilities between OVHcloud and the customer for DevOps using Plateform.sh"
-updated: 2024-02-26
 ---
 
 ## Objectif
