@@ -1,20 +1,20 @@
 ---
-title: "Tutorial - Installing Pico manually"
-excerpt: "Find out how to install CMS Grav on an OVHcloud web hosting plan"
-updated: 2024-03-21
+title: "Tutorial - Installing Grav manually"
+excerpt: "Find out how to install Grav CMS manually"
+updated: 2024-03-27
 ---
 
 ## Objective
 
 The **CMS** (**C**ontent **M**anagement **S**ystem) Grav enables websites to be developed quickly. Designed for optimized content management across Markdown files, Grav is perfect for creating personal websites or small business projects, without compromising on quality or customization.
 
-**Find out how to manually install CMS Grav on your OVHcloud web hosting plan.**
+**Find out how to manually install the Grav CMS on your OVHcloud web hosting plan.**
 
 ## Requirements
 
-You must have an OVHcloud [web hosting plan](https://www.ovhcloud.com/en/web-hosting/).
-- a [domain name](https://www.ovhcloud.com/en/domains/).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/).
+- A [domain name](https://www.ovhcloud.com/en/domains/).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 ## Instructions
 
@@ -28,14 +28,14 @@ Follow the **full set of steps** described in our tutorial on [installing a CMS 
 
 > [!primary]
 >
-> Before continuing with the installation, clear the cache of your web browser, to avoid any malfunctions.
+> Before continuing with the installation, clear your web browser cache to avoid any errors.
 >
 
 #### Go to your Grav website via your browser
 
 Enter your domain name in the search bar of your web browser.
 
-If the Grav source files have been placed correctly in your root folder, the `your-domain/admin` page appears:
+If the Grav source files were placed correctly in your root folder, the configuration page appears under `your-domain/admin`:
 
 ![Grav installation](images/first_page_config.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Once you have logged in to the Grav administration interface, start customizing 
 
 ### Customize your Grav website
 
-Once you are logged in as an administrator on the Grav dashboard, access a multitude of options to configure and customize your website.
+Once you are logged in as an administrator on the Grav dashboard, you have access a multitude of options to configure and customize your website.
 
 #### General website configuration
 
@@ -97,7 +97,7 @@ Keeping your system up-to-date is vital to the security and performance of your 
 
 ### Conclusion
 
-You have just manually installed CMS Grav on your OVHcloud web hosting plan. After configuring your website, adding content, customizing the theme and installing plugins, your Grav website is accessible online via your domain name.
+You have just manually installed Grav CMS on your OVHcloud web hosting plan. After configuring your website, adding content and customizing the theme, your Grav website is accessible online via your domain name.
 
 ## Go further <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ręczna instalacja modułu Grav"
 excerpt: "Dowiedz się, jak zainstalować CMS Grav na hostingu OVHcloud"
-updated: 2024-03-21
+updated: 2024-03-27
 ---
 
 > [!primary]
