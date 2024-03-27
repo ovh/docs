@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Zimbra FAQ
 excerpt: Hier finden Sie die häufigsten Fragen zur Migration der OVHcloud MX Plan Dienste nach Zimbra
-updated: 2024-03-25
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ Die Migration auf das neue Webmail behält den Service-Level des vorherigen Webm
 
 ### Wann erfolgt die Migration meiner Dienstleistungen?
 
-Sie erhalten für jeden Dienst **1 Woche** und nochmals **1 Tag** vor der Migration E-Mail-Benachrichtigungen.
+Sie erhalten für jeden Dienst **2 Woche** und nochmals **1 Tag** vor der Migration E-Mail-Benachrichtigungen.
 
 Ihre Dienste werden schrittweise migriert, sodass die Möglichkeit besteht, dass die Migration Ihrer Dienste mehrere Wochen auseinander liegt.
 
@@ -90,26 +90,23 @@ Um Ihr Angebot unter "Meine Dienste" im OVHCloud Kundencenter zu kündigen, folg
 
 ### Funktionen, die nach der Migration nach Zimbra beibehalten, ausgesetzt oder entfernt wurden <a name="features"></a>
 
-- **Verwaltung des E-Mail Accounts über das Kundencenter** (Passwort, Alias, Quota): Beibehalten
-- **Angebote und Abrechnung**: Beibehalten
-- **Weiterleitung / Alias / Mailingliste über das Kundencenter**: Beibehalten
-- **DNS-Konfiguration - SPF / MX / SRV**: Beibehalten
-- **E-Mail-Account-Delegierungen**: Per Webmail beibehalten
-- **E-Mail-Protokolle** (IMAP/POP): Beibehalten ohne Konfigurationsänderungen
-- **Inhalt des E-Mail Accounts** (E-Mails, Ordner, Kontakte): Migriert
-- **Während des Migrationsprozesses empfangene E-Mails**: Zugestellt
-- **Automatische Antwort / Beantworter**: Beibehalten
-- **Eingangsregeln**:
-    - Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.
-    - Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur bestimmte Regeln können aufgrund von Inkompatibilität nicht migriert werden. Diese werden als E-Mail an den E-Mail-Account des Benutzers versandt und können manuell neu erstellt werden.
-    - *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Beispiel: E-Mails von **john@mydomain.ovh** ODER **mary@mydomain.ovh** UND mit dem Betreff "Rechnung" in den Ordner "Wichtig" verschieben.
-- **Persönliche Signatur**:
-    - Die über Ihr E-Mail-Programm konfigurierten Signaturen bleiben unverändert.
-    - Die über OWA Webmail konfigurierten Signaturen werden aufgrund der Formatierung nicht migriert.
-- **Blockieren / Erlauben**: Diese Funktion blockiert E-Mails, die von einem bestimmten Domainnamen oder einer bestimmten E-Mail-Adresse stammen. Sie ist nicht kompatibel mit Zimbra, kann jedoch über Posteingangsregeln in Zimbra wiederhergestellt werden.
-- **Fußzeile** (Domain-Signatur über das Kundencenter konfigurierbar): Diese Funktion wird in der neuen Zimbra Infrastruktur nicht verfügbar sein. Es ist jedoch weiterhin möglich, eine Signatur auf Ebene des E-Mail-Accounts zu konfigurieren.
-- **Sicherheitseinstellungen**: Diese Funktion des Kundencenters, mit der Sie die Passwort-Verwaltung ändern können, wird in Zimbra nicht verwendet.<br> Die standardmäßige Passwort-Sicherheitseinstellung erfordert mindestens 10 alphanumerische Zeichen, 1 Sonderzeichen, 1 Großbuchstaben.
-- **Spoofing**: Spoofing ist das Versenden einer E-Mail von einer anderen Identität als dem E-Mail-Account, auf dem Sie authentifiziert sind. Diese Vorgehensweise ist nicht mit den SPF- und DKIM-Sicherheitsprotokollen kompatibel, die für die Zustellung von E-Mails erforderlich sind.<br>Von Zimbra aus können Sie eine andere Identität als die des verwendeten E-Mail-Accounts konfigurieren, sofern eine Delegierung erfolgt.
+| Funktion | Beschreibung | Status |
+|-|-|-|
+|**Verwaltung des E-Mail Accounts über das Kundencenter**<br>(Passwort, Alias, Quota)| Beibehalten|✅|
+|**Angebote und Abrechnung**| Beibehalten|✅|
+|**Weiterleitung / Alias / Mailingliste über das Kundencenter**| Beibehalten|✅|
+|**DNS-Konfiguration**<br>(SPF / MX / SRV)| Beibehalten|✅|
+|**E-Mail-Account-Delegierungen**| Per Webmail beibehalten|✅|
+|**E-Mail-Protokolle**<br>(IMAP/POP)| Beibehalten ohne Konfigurationsänderungen|✅|
+|**Inhalt des E-Mail Accounts**<br>(E-Mails, Ordner, Kontakte)| Migriert|✅|
+|**Während des Migrationsprozesses empfangene E-Mails**| Zugestellt|✅|
+|**Automatische Antwort / Beantworter**| Beibehalten|✅|
+|**Eingangsregeln**|- Die in Ihrem E-Mail-Programm konfigurierten Regeln bleiben unverändert.<br>- Die über das OWA Webmail-Interface konfigurierten Regeln werden auf das Zimbra Webmail-Interface migriert. Nur bestimmte Regeln können aufgrund von Inkompatibilität nicht migriert werden. Diese werden als E-Mail an den E-Mail-Account des Benutzers versandt und können manuell neu erstellt werden.<br>- *Inkompatible Regel*: Eine Regel, die zwei Bedingungstypen wie UND und ODER gleichzeitig verwendet. Beispiel: E-Mails von **john@mydomain.ovh** ODER **mary@mydomain.ovh** UND mit dem Betreff "Rechnung" in den Ordner "Wichtig" verschieben.|⚠️|
+|**Persönliche Signatur**|- Die über Ihr E-Mail-Programm konfigurierten Signaturen bleiben unverändert.<br>- Die über OWA Webmail konfigurierten Signaturen werden aufgrund der Formatierung nicht migriert.|⚠️|
+|**Blockieren / Erlauben**| Diese Funktion blockiert E-Mails, die von einem bestimmten Domainnamen oder einer bestimmten E-Mail-Adresse stammen. Sie ist nicht kompatibel mit Zimbra, kann jedoch über Posteingangsregeln in Zimbra wiederhergestellt werden.|❌|
+|**Fußzeile** (Domain-Signatur über das Kundencenter konfigurierbar)| Diese Funktion wird in der neuen Zimbra Infrastruktur nicht verfügbar sein. Es ist jedoch weiterhin möglich, eine Signatur auf Ebene des E-Mail-Accounts zu konfigurieren.|❌|
+|**Sicherheitseinstellungen**| Diese Funktion des Kundencenters, mit der Sie die Passwort-Verwaltung ändern können, wird in Zimbra nicht verwendet.<br> Die standardmäßige Passwort-Sicherheitseinstellung erfordert mindestens 10 alphanumerische Zeichen, 1 Sonderzeichen, 1 Großbuchstaben.|❌|
+|**Spoofing**| Spoofing ist das Versenden einer E-Mail von einer anderen Identität als dem E-Mail-Account, auf dem Sie authentifiziert sind. Diese Vorgehensweise ist nicht mit den SPF- und DKIM-Sicherheitsprotokollen kompatibel, die für die Zustellung von E-Mails erforderlich sind.<br>Von Zimbra aus können Sie eine andere Identität als die des verwendeten E-Mail-Accounts konfigurieren, sofern eine Delegierung erfolgt.|❌|
 
 ## Weiterführende Informationen
 
