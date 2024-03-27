@@ -3,6 +3,11 @@ title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
 updated: 2024-03-20
 ---
+
+> [!warning]
+> Usage of Asynchronous Replication across buckets is currently in Beta phase.
+> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : https://discord.gg/ovhcloud. Ask questions, provide feedback and interact directly with the team that builds our Object Storage services.
+
 ## Introduction
 
 Object replication is a powerful feature that facilitates the automatic and asynchronous replication of objects within a source bucket to one or several destination buckets. This capability is crucial for maintaining data consistency, availability, and redundancy across different storage locations.
