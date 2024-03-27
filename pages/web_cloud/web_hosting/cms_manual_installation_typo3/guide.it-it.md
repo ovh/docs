@@ -26,7 +26,7 @@ Il **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 permette di sviluppare 
 
 Per installare il CMS **Typo3** sul tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), è necessario effettuare alcuni preparativi.
 
-Segui //gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) prima di proseguire con lo step successivo.
+Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) prima di proseguire con lo step successivo.
 
 ### Completa l'installazione manuale
 
