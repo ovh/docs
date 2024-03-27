@@ -6,7 +6,7 @@ updated: 2024-03-27
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop ou Pico en quelques étapes.
+Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 ou SPIP en quelques étapes.
 
 > [!warning]
 >
