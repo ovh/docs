@@ -57,7 +57,7 @@ L'écran présente la liste des plugins disponibles pour votre site web et vous 
 
 ### Conclusion
 
-Vous venez d'installer manuellement le CMS Spip sur votre hébergement web OVHcloud. Votre site web Spip est accessible en ligne via votre nom de domaine. Pour vous connecter à l'espace administrateur de votre site web Spip, saisissez `votre_domain/ecrire` dans la barre de recherche de votre navigateur Internet.
+Vous venez d'installer manuellement le CMS Spip sur votre hébergement web OVHcloud. Votre site web Spip est accessible en ligne via votre nom de domaine. Pour vous connecter à l'espace administrateur de votre site web Spip, saisissez `your_domain/ecrire` dans la barre de recherche de votre navigateur Internet.
 
 ## Aller plus loin <a name="go-further"></a>
 
