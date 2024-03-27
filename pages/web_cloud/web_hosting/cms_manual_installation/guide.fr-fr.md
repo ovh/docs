@@ -93,7 +93,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 #### Typo3
 
-**Typo3** est un CMS basé sur PHP, conçu pour le développement de sites web de toutes tailles, des petites aux grandes entreprises. Il s'appuie sur une base de données pour stocker le contenu et offre une vaste gamme d'extensions pour étendre ses fonctionnalités et personnaliser votre site web.
+**Typo3** est un CMS basé sur PHP, conçu pour le développement de sites web de toutes tailles, des petites aux grandes entreprises. Il s'appuie sur une base de données pour stocker le contenu. Il offre une vaste gamme d'extensions pour étendre ses fonctionnalités afin de personnaliser votre site web.
 
 - Site officiel de [Typo3](https://typo3.fr/){.external}
 
