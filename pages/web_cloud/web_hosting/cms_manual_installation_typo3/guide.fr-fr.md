@@ -12,7 +12,7 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 permet de développer d
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant au moins une base de données.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
