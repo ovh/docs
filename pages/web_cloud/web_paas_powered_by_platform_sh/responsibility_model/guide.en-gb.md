@@ -20,9 +20,12 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Learn about capabilities and limitations related to the service | RA | C |
+| Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation and particular conditions | RA | CI |
+| Host the service in Gravelines  | I | RA |
+| Choose and upgrade the service plan following needs   | RA | I |
+| Add options following business needs (Boost, storage, licences, environments )  | RA | CI |
 | Provide personal data needed for service subscription | RA | I |
-| Host the service at the following locations : Tours, Bordeaux, Croix, Grenoble |  | RA |
+
 
 ### 2. Service availability
 
@@ -30,14 +33,21 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produce, route, deliver and maintain physical and virtual Instances for service hosting | I | RA |
-| Create S3 credentials for an OpenStack user | RA |  |
+| Produce, route, deliver and maintain physical machines, virtual machines and hosting buildings |  | RA |
+| Buy and hold licences and usage rights for software provided by OVHcloud (plateform.sh software) |  | RA |
+| Buy and hold licences and usage rights for softwares provided by the customer | RA |  |
 
 #### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Use S3 API to import data in bucket | RA |  |
+| Import your data on .plateform.app.yaml file according to file extension supported by selected framework and application | RA |  |
+
+#### 2.3. Customer Information System setup
+
+| **Activity** | **Customer** | **OVHcloud** |
+| Select the framework, language and start your CI/CD project | RA | I |
+| Provide access to the service by providing first ID credentials | I | RA |
 
 ### 3. Service usage
 
@@ -47,52 +57,67 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Provide access to the service by providing first ID credentials  | I | RA |
-| Manage Containers and objects' security created at server entry with SSE-C feature following keys delivery by the client  | R | A |
-| Administrate service storage |  | RA |
-| Administrate data | RA |   |
-| Activate data archive command and manage backups following needs | RA |  |
+| Generate SSH keys and renew it to access to your service  | RA |  |
+| Configure and administrate the security of your projects and data inside the plateform  | RA |  |
+| Manage security risks and administrate the management infrastructure of the service |  | RA |
+| Plan backups on a second site different from your nominal production site | RA |   |
+
 
 ##### **3.1.2. Access management**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage access rights to the OVHcloud Control Panel | RA | I |
-| Manage physical and logical access to infrastructures for OVHcloud teams |  | RA |
-| Manage S3 security policy of containers and object created before activating data archive command | RA |  |
+| Define users' roles and permissions to each environment under your project (using your admin account) | RA |  |
+| Restrict the use of SSH keys to defined admin accounts | RA |  |
+| Manage OVHcloud teams accesses to management infrastructure  |  | RA |
+
 
 ##### **3.1.3. Monitoring**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage and monitor physical and virtual servers in support of archive and restoration services |  | RA |
-| Retain logs of management infrastructure services   |   | RA |
-| Retain logs using the dedicated feature (activating cold storage on a stream)  |   | RA |
-| Create, modify, control, restore, delete archives and backups | RI  | A |
-| Maintain storage devices used for the service |  | RA |
+| Monitor the functioning of physical and virtual devices in support of your plateform.sh projects|  | RA |
+| Monitor the functionning of ressources available (jobs execution, disk space, certificate provisioning etc) | RA  |  |
+| Retain logs of management infrastructure service   |   | RA |
+| Retain logs of your web applications available in /var/log directory  |  RA |  |
+
 
 ##### **3.1.4. Storage**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage data encryption before importing in the Object Storage allocated by using SSE-C feature and following keys delivery by the client  | AI | R |
+| Manage the content hosted in the plateform service  | RA |  |
 | Define a retention policy for data according to legal requirements | RA |  |
+| Perform storage and backup to maintain the service |  | RA |
+| Manage data security and encryption on databases | RA |  |
 
-##### **3.1.5. Management**
 
-| **Activity** | **Customer** | **OVHcloud** |
-| --- | --- | --- |
-| Provide inventory of containers and objects used | I | RA |
-| Manage the security of management infrastructure (API, control plane) |   | RA |
-| Manage physical security of equipments and hosted infrastructures |  | RA |
 
-##### **3.1.6. Business continuity**
+##### **3.1.5. Connectivity**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Perform restoration tests for archives | RA | I |
-| Maintain a business continuity and disaster recovery plan for the hosted IS | RA |  |
-| Manage automatic management systems for the infrastructure provided |  | RA |
+| Operate automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public network) |  | RA |
+| Manage IP adressing plan and filter connections using Outband firewall | RA  |  |
+
+
+##### **3.1.6. Management**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Provide inventory of ressources and services | I | RA |
+| Operate intrusion tests on your applications |   | RA |
+| Maintain in operational and security conditions the management infrastructure |  | RA |
+| Maintain in operational and security conditions yput applications |  | RA |
+
+##### **3.1.7. Business continuity**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Maintain a business continuity and disaster recovery plan for the management infrastructure of the service |  | RA |
+| Maintain a business continuity and disaster recovery plan of your applications | RA |  |
+| Perform restoration tests of your applications | RA |  |
 
 #### 3.2. Event management
 
@@ -100,7 +125,19 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Process incidents on the service (tickets and contacts) | AI | RA |
+| Notify incident for the service plateform availability | A | I |
+| Process incidents on the service plateform dysfunctioning (opened tickets and contacts) | I | RA |
+| Process incidents on your applications | RA |  |
+
+##### **3.2.2. Changes**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Deploy patches, update softwares available on the plateform  |  | RA |
+| Add and allocate necessary ressources to the plateform service following customer requests  | I | RA |
+| Perform a "protective block" on customer website in case of detection of critical vulnerability  | I | RA |
+| Apply patches and upgrades following "Protective block" launching  | RA | I |
+
 
 ### 4. Reversibility
 
@@ -108,16 +145,16 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Plan reversibility operations | RA |  |
+| Schedule reversibility operations | RA | CI |
 | Choose fallback infrastructures | RA | CI |
-| Choose data format to export | RA |  |
+
 
 #### 4.2. Data recovery
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage reversibility operations | RA |  |
-| Migrate/transfer data using API S3 | RA |  |
+| Migrate/transfer data and files defined in your .platform.app.yaml | RA |  |
 
 ### 5. End of service
 
@@ -125,7 +162,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Destroy data from the Object Storage Containers Service via API S3 | RA |  |
+| Delete your projects and decommisionnate the service | RA | I |
 | Release allocated resources following service termination |  | RA |
 
 ## Go further
