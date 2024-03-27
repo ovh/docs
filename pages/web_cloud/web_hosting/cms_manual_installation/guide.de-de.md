@@ -102,13 +102,13 @@ Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](https:
 
 #### SPIP
 
-**SPIP** ist ein CMS, das hauptsächlich für die Veröffentlichung und Verwaltung von Verlagswebsites wie Zeitungen oder Online-Zeitschriften konzipiert ist. Basierend auf PHP und einer SQL Datenbank vereinfacht es die Erstellung von Websites mit umfangreichen Text-, Grafik- und/oder Multimediainhalten.
+**SPIP** ist ein CMS, das hauptsächlich für die Veröffentlichung und Verwaltung von Verlagswebsites wie Zeitungen oder Online-Magazinen konzipiert ist. Basierend auf PHP und einer SQL Datenbank vereinfacht es die Erstellung von Websites mit umfangreichen Text-, Grafik- und/oder Multimediainhalten.
 
 - Offizielle Website von [SPIP](https://www.spip.net/en_rubrik25.html){.external}
 
 > [!warning]
 >
-> Wir möchten Sie daran erinnern, dass OVHcloud bei der Verwendung jeglicher CMS keinerlei Unterstützung leisten kann. Sollten Sie Schwierigkeiten haben, kontaktieren Sie den Herausgeber des von Ihnen gewählten CMS über die Verweise oben in diesem Tutorial.
+> Wir möchten Sie daran erinnern, dass OVHcloud bei der Verwendung von CMS keinerlei Unterstützung leisten kann. Sollten Sie Schwierigkeiten haben, kontaktieren Sie den Herausgeber des von Ihnen gewählten CMS über die Links oben in diesem Tutorial.
 >
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a> 
