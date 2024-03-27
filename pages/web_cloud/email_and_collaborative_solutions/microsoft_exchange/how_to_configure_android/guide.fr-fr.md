@@ -38,13 +38,14 @@ Les adresses e-mail de l'offre Exchange peuvent être configurées sur différen
 
 ## En pratique
 
-### Comment ajouter votre compte e-mail
+### Comment ajouter votre compte e-mail <a name="addaccount"></a>
 
 > [!primary]
 >
-> Dans nos exemples, nous utilisons la mention serveur : ex**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : ex**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}.
+> Cliquez sur `Exchange`{.action}, puis sur la plateforme Exchange souhaitée. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >
 
 Sur l'écran d'accueil de votre appareil, rendez-vous dans l'application `Gmail`{.action}.
@@ -83,7 +84,7 @@ Suivez les étapes successives de configuration en parcourant les onglets ci-des
 >> ![exchange android](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Etape 5**
->> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : votre adresse e-mail complète<br>- **Mot de passe** : le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : votre adresse e-mail complète<br>- **Serveur** : le nom de domaine attaché à votre compte e-mail<br>- **Port** : 443<br>- **Type de sécurité** : SSL/TLS<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br>
+>> Complétez la page « **Configuration de l'adresse** »<br><br>- **E-mail** : votre adresse e-mail complète<br>- **Mot de passe** : le mot de passe de votre adresse e-mail<br>- **Certificat** : laissez « Aucun »<br>- **Domaine\Nom d'utilisateur** : votre adresse e-mail complète<br>- **Serveur** : ex?.mail.ovh.net ( remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- **Port** : 443<br>- **Type de sécurité** : SSL/TLS<br><br>Appuyez sur `Suivant`{.action} pour valider la configuration.<br><br>
 >> ![exchange android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Etape 6**

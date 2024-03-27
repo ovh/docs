@@ -38,7 +38,7 @@ Email accounts of the Exchange solution can be configured on various compatible 
 
 ## Instructions
 
-### How to add your email account
+### How to add your email account <a name="addaccount"></a>
 
 > [!primary]
 >
@@ -83,7 +83,7 @@ Follow the next steps in the configuration process by clicking on the tabs below
 >> ![Android Exchange](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Step 5**
->> Complete the "**Address configuration**" page.<br><br>- **Email**: Your full email address<br>- **Password**: Your email password<br>- **Certificate**: Leave "None"<br>- **Domain\Username**: Your full email address<br>- **Server**: The domain name attached to your email account<br>- **Port**: 443<br>- **Security type**: SSL/TLS<br><br>Press `Next`{.action} to confirm the configuration.<br><br>
+>> Complete the "**Address configuration**" page.<br><br>- **Email**: Your full email address<br>- **Password**: Your email password<br>- **Certificate**: Leave "None"<br>- **Domain\Username**: Your full email address<br>- **Server**: **ex?.mail.ovh.net** (replace the **?** by [your Exchange server number](#addaccount))<br>- **Port**: 443<br>- **Security type**: SSL/TLS<br><br>Press `Next`{.action} to confirm the configuration.<br><br>
 >> ![Android Exchange](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Step 6**

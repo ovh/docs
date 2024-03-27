@@ -42,7 +42,7 @@ Exchange E-Mail-Accounts können auf verschiedenen, kompatiblen E-Mail-Clients k
 
 ## In der praktischen Anwendung
 
-### E-Mail-Account hinzufügen
+### E-Mail-Account hinzufügen <a name="addaccount"></a>
 
 > [!primary]
 >
@@ -87,7 +87,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> ![Exchange Android](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Schritt 5**
->> Vervollständigen Sie die Seite "**Adresskonfiguration**"<br><br>- **E-Mail**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Passwort des E-Mail-Accounts<br>- **Zertifikat**: "Keines"<br>- **Domain\Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Server**: Der mit Ihrem E-Mail-Account verbundene Domainname<br>- **Port**: 443<br>- **Sicherheitstyp**: SSL/TLS<br><br>Tippen Sie auf `Weiter`{.action}, um die Konfiguration zu bestätigen.<br><br>
+>> Vervollständigen Sie die Seite "**Adresskonfiguration**"<br><br>- **E-Mail**: Ihre vollständige E-Mail-Adresse<br>- **Passwort**: Passwort des E-Mail-Accounts<br>- **Zertifikat**: "Keines"<br>- **Domain\Benutzername**: Ihre vollständige E-Mail-Adresse<br>- **Server**: **ex?.mail.ovh.net** (ersetzen Sie **?** mit der [Nummer Ihres Exchange Servers](#addaccount))<br>- **Port**: 443<br>- **Sicherheitstyp**: SSL/TLS<br><br>Tippen Sie auf `Weiter`{.action}, um die Konfiguration zu bestätigen.<br><br>
 >> ![Exchange Android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Schritt 6**

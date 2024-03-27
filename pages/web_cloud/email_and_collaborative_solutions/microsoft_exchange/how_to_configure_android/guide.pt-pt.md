@@ -46,9 +46,10 @@ Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes 
 
 > [!primary]
 >
-> Nos nossos exemplos, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o «? » pelo número que identifica o servidor do seu serviço E-mail Pro.
+> No nosso exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço Exchange.
 >
-> Encontre esse algarismo na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action} e depois `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}.
+> Clique em `Exchange`{.action} e, a seguir, na plataforma Exchange pretendida. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
 
 No ecrã principal do dispositivo, aceda à aplicação `Gmail`{.action}.
@@ -87,7 +88,7 @@ Siga as etapas sucessivas de configuração, navegando nos separadores abaixo:
 >> ![Exchange Android](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Etapa 5**
->> Preencha a página « **Configuração do Endereço** de »<br><br>- **E-mail**: o seu endereço de e-mail completo<br>- **Palavra-passe**: a palavra-passe do seu e-mail<br>- **Certificado**: « Nenhum »<br>- **Domínio\Nome de utilizador**: o seu endereço de e-mail completo<br>- **Servidor**: o nome de domínio associado à sua conta de e-mail<br>- **Porta**: 443<br>- **Tipo de segurança**: SSL/TLS<br><br>Prima `Seguinte`{.action} para validar a configuração.<br><br>
+>> Preencha a página « **Configuração do Endereço** de »<br><br>- **E-mail**: o seu endereço de e-mail completo<br>- **Palavra-passe**: a palavra-passe do seu e-mail<br>- **Certificado**: « Nenhum »<br>- **Domínio\Nome de utilizador**: o seu endereço de e-mail completo<br>- **Servidor**: **ex?.mail.ovh.net** ( substitua o **?** por [o número do seu servidor Exchange](#addaccount))<br>- **Porta**: 443<br>- **Tipo de segurança**: SSL/TLS<br><br>Prima `Seguinte`{.action} para validar a configuração.<br><br>
 >> ![Exchange Android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Etapa 6**

@@ -48,7 +48,7 @@ Esta guía explica cómo configurar una cuenta Exchange en Android utilizando la
 
 ## Procedimiento
 
-### Cómo añadir una cuenta de correo
+### Cómo añadir una cuenta de correo <a name="addaccount"></a>
 
 > [!primary]
 >
@@ -93,7 +93,7 @@ Siga los siguientes pasos de configuración en las fichas siguientes:
 >> ![Exchange Android](images/exchange-android-03.png){.thumbnail .h-600}
 >>
 > **Paso 5**
->> Rellene la página "**Configuración de la dirección**"<br><br>- **Correo** electrónico: su dirección de correo electrónico completa<br>- **Contraseña**: la contraseña de su dirección de correo<br>- **Certificado**: Deje "Ninguno"<br>- **Dominio\Nombre de usuario**: su dirección de correo electrónico completa<br>- **Servidor**: el nombre de dominio asociado a su cuenta de correo<br>- **Puerto**: 443<br>- **Tipo de seguridad**: SSL/TLS<br><br>Pulse `Siguiente`{.action} para validar la configuración.<br><br>
+>> Rellene la página "**Configuración de la dirección**"<br><br>- **Correo** electrónico: su dirección de correo electrónico completa<br>- **Contraseña**: la contraseña de su dirección de correo<br>- **Certificado**: Deje "Ninguno"<br>- **Dominio\Nombre de usuario**: su dirección de correo electrónico completa<br>- **Servidor**: **ex?.mail.ovh.net** (sustituir el **?** por [el número de su servidor Exchange](#addaccount))<br>- **Puerto**: 443<br>- **Tipo de seguridad**: SSL/TLS<br><br>Pulse `Siguiente`{.action} para validar la configuración.<br><br>
 >> ![Exchange Android](images/exchange-android-04.png){.thumbnail .h-600}
 >>
 > **Paso 6**
