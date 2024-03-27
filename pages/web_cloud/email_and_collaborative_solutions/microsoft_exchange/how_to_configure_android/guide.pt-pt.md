@@ -13,6 +13,10 @@ updated: 2024-03-20
 }
 </style>
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes softwares de e-mail compatíveis. Isto permite-lhe enviar e receber e-mails no dispositivo que preferir. Encontre neste guia as etapas de configuração de um endereço de e-mail Exchange a partir da aplicação Gmail presente nos dispositivos Android.

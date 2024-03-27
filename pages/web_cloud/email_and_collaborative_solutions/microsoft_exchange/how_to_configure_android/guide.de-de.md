@@ -13,6 +13,10 @@ updated: 2024-03-20
 }
 </style>
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel
 
 Die E-Mail-Adressen des Exchange Angebots können auf verschiedenen kompatiblen E-Mail-Clients konfiguriert werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden. In dieser Anleitung erfahren Sie, wie Sie eine Exchange E-Mail-Adresse über die Gmail-App auf Android-Geräten konfigurieren.

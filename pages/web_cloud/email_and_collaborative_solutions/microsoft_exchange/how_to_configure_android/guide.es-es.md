@@ -13,6 +13,10 @@ updated: 2024-03-20
 }
 </style>
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 ## Objetivo
 
 Las direcciones de correo de la solución Exchange pueden configurarse en distintos programas de correo compatibles. para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación. Esta guía explica cómo configurar una dirección de correo Exchange desde la aplicación Gmail para dispositivos Android.
