@@ -53,7 +53,7 @@ Entrez les informations demandées et cliquez sur `Next`{.action} pour confirmer
 
 ![Spip installation](images/installation_fifth_step.png){.thumbnail}
 
-L'écran affiche la liste des plugins disponible pour votre site web et vous informe que l'installation de Spip s'est bien déroulée.
+L'écran présente la liste des plugins disponibles pour votre site web et vous informe que l'installation de Spip s'est bien déroulée.
 
 ### Conclusion
 
