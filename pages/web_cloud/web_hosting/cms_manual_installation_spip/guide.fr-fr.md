@@ -1,12 +1,12 @@
 ---
 title: "Tutoriel - Installer manuellement Spip"
 excerpt: "Découvrez comment installer le CMS Spip sur un hébergement web OVHcloud"
-updated: 2024-03-25
+updated: 2024-03-27
 ---
 
 ## Objectif
 
-Le **CMS** (**C**ontent **M**anagement **S**ystem) SPIP est une solution adaptée aux sites éditoriaux comme les magazines en ligne, les journaux, ou les sites institutionnels. Grâce à son architecture modulaire et à son système de squelettes personnalisables, SPIP permet de concevoir des sites web riches en fonctionnalités, tout en offrant une grande liberté de personnalisation.
+Le **CMS** (**C**ontent **M**anagement **S**ystem) SPIP est une solution adaptée aux sites éditoriaux comme les magazines en ligne, les journaux ou les sites institutionnels. Grâce à son architecture modulaire et à son système de squelettes personnalisables, SPIP permet de concevoir des sites web riches en fonctionnalités, tout en offrant une grande liberté de personnalisation.
 
 **Découvrez comment installer manuellement le CMS Spip sur votre hébergement web OVHcloud.**
 
@@ -45,7 +45,7 @@ Saisissez les informations pour vous connecter à votre SGBD (MySQL par exemple)
 
 ![Spip installation](images/installation_third_step.png){.thumbnail}
 
-Sélectionnez la base de données que vous souhaitez utiliser pour votre site web ou créez en une nouvelle. Choisissez un préfix pour les tables de votre base de données. Par défaut, le préfix `spip` est utilisé. Cliquez sur `Next`{.action} pour valider les informations. L'écran suivant s'affiche :
+Sélectionnez la base de données que vous souhaitez utiliser pour votre site web ou créez en une nouvelle. Choisissez un préfixe pour les tables de votre base de données. Par défaut, le préfixe `spip` est utilisé. Cliquez sur `Next`{.action} pour valider les informations. L'écran suivant s'affiche :
 
 ![Spip installation](images/installation_fourth_step.png){.thumbnail}
 
