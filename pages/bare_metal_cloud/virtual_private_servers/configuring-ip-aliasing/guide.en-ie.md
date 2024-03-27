@@ -1,7 +1,7 @@
 ---
 title: Configuring IP aliasing
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-updated: 2024-03-19
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -421,7 +421,7 @@ Ethernet adapter Ethernet:
 
 Now you need to change the IP properties to a static configuration.
 
-1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings `{.action}(in the left-hand menu).
+1. Go to `Start`{.action}> `Control Panel`{.action}>` Network and Internet`{.action}> `Network and Sharing Centre`{.action}> `Change Adapter Settings`{.action}(in the left-hand menu).
 2. Right-click on `Ethernet`{.action}.
 3. Click on `Properties`{.action}.
 4. Select `Internet Protocol Version 4 (TCP/IPv4)`{.action}, then click on `Properties`{.action}.
@@ -433,6 +433,7 @@ Now you need to change the IP properties to a static configuration.
 > [!warning]
 >
 > Be careful – the server will no longer be accessible if you enter incorrect information. You will then have to make the corrections in the KVM.
+>
 
 Once done, click on `Advanced`{.action}.
 
@@ -485,8 +486,10 @@ ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) for further investigations.
  
-## Go further
+## Go further <a name="go-further"></a>
 
 [Activating Rescue Mode on VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

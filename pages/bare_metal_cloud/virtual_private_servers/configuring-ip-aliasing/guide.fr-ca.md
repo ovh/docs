@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
-updated: 2024-03-19
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -475,6 +475,6 @@ Pour tester la connexion, envoyez un ping à votre adresse Additional IP depuis 
 
 [Activer le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-[OVHcloud Marketplace](https://marketplace.ovhcloud.com/)
-
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+ 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
