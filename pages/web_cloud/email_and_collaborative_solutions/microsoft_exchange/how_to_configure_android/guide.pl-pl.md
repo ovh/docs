@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Konfiguracja konta e-mail w Gmailu na Androida"
 excerpt: "Dowiedz się, jak skonfigurować konto Exchange na urządzeniu z systemem Android poprzez aplikację Gmail"
-Updated: 2024-03-20
+updated: 2024-03-20
 ---
 
 <style>
