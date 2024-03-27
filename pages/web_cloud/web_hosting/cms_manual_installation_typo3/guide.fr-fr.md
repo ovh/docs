@@ -55,7 +55,7 @@ La troisième étape de l'installation s'affiche.
 
 ![Typo3 installation](images/install_step_3.png){.thumbnail}
 
-Sélectionnez le nom de la base de données que vous souhaitez utiliser pour votre site web, ou créez-en une nouvelle, puis cliquez sur `Continue`{.action}.
+Sélectionnez le nom de la base de données que vous souhaitez utiliser pour votre site web, ou [créez-en une nouvelle](/pages/web_cloud/web_hosting/sql_create_database), puis cliquez sur `Continue`{.action}.
 
 La quatrième étape de l'installation s'affiche.
 
@@ -93,6 +93,8 @@ Vous venez d'installer manuellement le CMS Typo3 sur votre hébergement web OVHc
 [Tutoriel - Installer manuellement Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
 
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
+
+[Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
