@@ -92,6 +92,8 @@ Vous venez d'installer manuellement le CMS Typo3 sur votre hébergement web OVHc
 
 [Tutoriel - Installer manuellement Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
 
+[Tutoriel - Installer manuellement SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
 
 [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database)
