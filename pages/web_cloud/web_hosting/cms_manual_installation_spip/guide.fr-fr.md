@@ -33,7 +33,7 @@ Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installat
 
 #### Se rendre sur votre site web Spip via votre navigateur
 
-Saisissez `votre_domain/ecrire` dans la barre de recherche de votre navigateur Internet pour démarrer l'installation de votre site web Spip. La page suivante s'affiche :
+Saisissez `your_domain/ecrire` dans la barre de recherche de votre navigateur Internet pour démarrer l'installation de votre site web Spip. La page suivante s'affiche :
 
 ![Spip installation](images/installation_first_step.png){.thumbnail}
 
