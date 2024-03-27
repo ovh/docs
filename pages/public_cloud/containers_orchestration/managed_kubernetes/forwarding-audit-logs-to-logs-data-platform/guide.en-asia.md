@@ -131,7 +131,7 @@ You can retrieve the API specifications in the [OVH API Portal](https://ca.api.o
 
 #### Step 1 - Retrieve your target Stream (and ID)
 
-List data streams of you Logs Data Platform account:
+List data streams of your Logs Data Platform account:
 
 > [!api]
 >
