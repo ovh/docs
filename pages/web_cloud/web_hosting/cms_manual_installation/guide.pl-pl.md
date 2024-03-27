@@ -378,7 +378,7 @@ Aby kontynuować instalację, kliknij w przewodnik dotyczący systemu CMS:
 - [Zakończenie instalacji Drupala](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Zakończenie instalacji PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Zakończenie instalacji Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
-- Zakończenie instalacji Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Zakończenie instalacji Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
 - [Zakończenie instalacji Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
 - [Zakończenie instalacji SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
