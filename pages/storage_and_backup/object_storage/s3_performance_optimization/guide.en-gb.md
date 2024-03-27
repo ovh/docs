@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Optimising Performance
-excerpt: This guide walks you through various methods to optimise the performance of your OVHcloud S3 Object Storage buckets, including using byte range fetches, multipart uploads an other methods
+excerpt: This guide walks you through various methods to optimise the performance of your OVHcloud S3 Object Storage buckets, including using byte range fetches, multipart uploads and other methods
 updated: 2024-03-27
 ---
 

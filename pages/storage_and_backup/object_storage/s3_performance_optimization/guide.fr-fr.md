@@ -1,12 +1,12 @@
 ---
 title: Object Storage - Optimiser les performances
-excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage OVHcloud, notamment l'utilisation de lectures de plage d'octets et de téléchargements en plusieurs parties"
+excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage S3 OVHcloud, notamment la recherche par plage d'octets, le multipart upload ainsi que d'autres méthodes"
 updated: 2024-03-27
 ---
 
 ## Objectif
 
-Il existe plusieurs façons d'optimiser les performances de vos buckets sur OVHcloud Object Storage. 
+Il existe plusieurs façons d'optimiser les performances de vos buckets sur l'Object Storage S3 OVHcloud. 
 
 **Le guide suivant vous présente les différentes méthodes d'optimisation.**
 
@@ -53,9 +53,9 @@ Vous aurez besoin des éléments suivants :
 > Lorsque vous utilisez une commande de haut niveau pour uploader un objet à l'aide de la commande `cp`, AWS CLI effectue automatiquement un *multipart upload*. Pour optimiser les valeurs de configuration par défaut pour les *multipart uploads- (multipart_threshold, multipart_chunksize), vous pouvez consulter [cet article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et voir le tableau expliquant comment configurer AWS CLI.
 >
 
-La section suivante explique comment effectuer un *multipart upload- à l'aide des commandes de bas niveau du AWS CLI.
+La section suivante explique comment effectuer un *multipart upload** à l'aide des commandes de bas niveau du AWS CLI.
 
-Tout d'abord, vous devez lancer un *multipart upload- :
+Tout d'abord, vous devez lancer un *multipart upload** :
 
 ```bash
 user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filename
@@ -148,7 +148,7 @@ Où `mpu.json` est :
 
 ### Via d'autres outils tiers
 
-La liste suivante décrit les options permettant d'effectuer des t*multipart uploads- à l'aide d'autres outils. La liste n'est pas exhaustive car vous pouvez également vérifier la documentation appropriée pour l'outil que vous utilisez.
+La liste suivante décrit les options permettant d'effectuer des *multipart uploads** à l'aide d'autres outils. La liste n'est pas exhaustive car vous pouvez également vérifier la documentation appropriée pour l'outil que vous utilisez.
 
 #### s3cmd
 
