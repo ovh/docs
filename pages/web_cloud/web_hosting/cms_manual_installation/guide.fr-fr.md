@@ -99,7 +99,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 #### SPIP
 
-**SPIP** est un CMS conçu principalement pour la publication et la gestion de sites web éditoriaux comme des journaux ou des magazines en ligne. Basé sur PHP et s'appuyant sur une base de données SQL, il facilite la création de sites web enrichis de contenu textuel, graphique ou multimédia.
+**SPIP** est un CMS conçu principalement pour la publication et la gestion de sites web éditoriaux comme des journaux ou des magazines en ligne. Basé sur PHP et s'appuyant sur une base de données SQL, il facilite la création de sites web enrichis de contenu textuel, graphique et / ou multimédia.
 
 - Site officiel de [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 
