@@ -83,11 +83,29 @@ You can find more information on our [PrestaShop module page](https://www.ovhclo
 
 **Pico** is a lightweight PHP-based CMS, perfect for building websites and blogs. It does not require a database but uses Markdown files to manage content. It supports extensions to customise your website.
 
-- Official [Pico] website(https://picocms.org/){.external}
+- Official [Pico](https://picocms.org/){.external} website
+
+#### Grav
+
+**Grav** is a modern and flexible CMS based on PHP. It is designed without databases and uses Markdown files for storing and managing content. Grav stands out for its package management system which makes it easy to install and update plugins and themes for your website.
+
+- Official [Grav](https://getgrav.org/){.external} website
+
+#### Typo3
+
+**Typo3** is a PHP-based CMS designed for developing websites of all sizes, from small to large companies. It relies on a database to store the content. It offers a wide range of extensions to extend its features in order to customize your website.
+
+- Official [Typo3](https://typo3.com/){.external} website
+
+#### SPIP
+
+**SPIP** is a CMS designed primarily for publishing and managing editorial websites such as online newspapers or magazines. Based on PHP and based on an SQL database, it facilitates the creation of websites enriched with textual, graphical and/or multimedia content.
+
+- [SPIP](https://www.spip.net/en_section25.html){.external} official website
 
 > [!warning]
 >
-> Whichever CMS you choose, please note that OVHcloud does not provide support for using the respective software. If you experience any difficulties, please contact the publisher of your chosen CMS directly using the links listed above in this tutorial.
+> Whichever CMS you choose, please note that OVHcloud will not provide assistance with using these CMSs. If you encounter any difficulties, contact the publisher of the CMS you have chosen directly using the links indicated earlier in this tutorial.
 >
 
 ### Step 1: Prepare the installation <a name="step1"></a>

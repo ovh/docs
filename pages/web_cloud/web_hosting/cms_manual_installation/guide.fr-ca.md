@@ -85,11 +85,6 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 - Site officiel de [Pico](https://picocms.org/){.external}
 
-> [!warning]
->
-> Quel que soit le CMS que vous choisirez, nous vous rappellons qu'aucune assistance n'est fournie par OVHcloud sur l'utilisation de ces CMS. Si vous éprouvez des difficultés, contactez directement l'éditeur du CMS que vous avez choisi à l'aide des liens indiqués plus haut dans ce tutoriel.
->
-
 #### Grav
 
 **Grav** est un CMS moderne et flexible basé sur PHP. Il est conçu sans base de données et utilise des fichiers Markdown pour le stockage et la gestion du contenu. Grav se distingue par son système de gestion de paquets qui facilite l'installation et la mise à jour des plugins et des thèmes pour votre site web.
