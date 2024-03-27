@@ -106,7 +106,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Provide inventory of ressources and services | I | RA |
+| Provide inventory of ressources and services used | I | RA |
 | Operate intrusion tests on your applications |   | RA |
 | Maintain in operational and security conditions the management infrastructure |  | RA |
 | Maintain in operational and security conditions yput applications |  | RA |
