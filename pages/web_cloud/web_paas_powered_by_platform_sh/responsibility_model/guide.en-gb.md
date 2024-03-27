@@ -109,7 +109,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Provide inventory of ressources and services used | I | RA |
 | Operate intrusion tests on your applications |   | RA |
 | Maintain in operational and security conditions the management infrastructure |  | RA |
-| Maintain in operational and security conditions yput applications |  | RA |
+| Maintain in operational and security conditions your applications |  | RA |
 
 ##### **3.1.7. Business continuity**
 
@@ -125,7 +125,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Notify incident for the service plateform availability | A | I |
+| Notify incidents for the service plateform availability | A | I |
 | Process incidents on the service plateform dysfunctioning (opened tickets and contacts) | I | RA |
 | Process incidents on your applications | RA |  |
 
@@ -146,7 +146,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Schedule reversibility operations | RA | CI |
-| Choose fallback infrastructures | RA | CI |
+| Choose fallback infrastructures | RA |  |
 
 
 #### 4.2. Data recovery
