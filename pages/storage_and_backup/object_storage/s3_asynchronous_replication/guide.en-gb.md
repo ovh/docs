@@ -74,7 +74,7 @@ At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed
 
 ![Schema 3](images/3.png)
 
-- **Replicate data to a different region**
+- **Replicate data to two different regions**
 
 ![Schema 4](images/4.png)
 
