@@ -45,6 +45,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 #### 2.3. Customer Information System setup
 
 | **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
 | Select the framework, language and start your CI/CD project | RA | I |
 | Provide access to the service by providing first ID credentials | I | RA |
 
