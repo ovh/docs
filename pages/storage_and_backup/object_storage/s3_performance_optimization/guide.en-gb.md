@@ -1,10 +1,10 @@
 ---
-title: Optimising OVHcloud Object Storage Performance
-excerpt: This guide walks you through various methods to optimise the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads.
-updated: 2024-03-26
+title: Object Storage - Optimising Performance
+excerpt: This guide walks you through various methods to optimise the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads
+updated: 2024-03-27
 ---
 
-## Introduction
+## Objective
 
 There are several ways to optimise the performance of your buckets on OVHcloud Object Storage. The following guide will walk you through the different optimization methods.
 
@@ -29,8 +29,8 @@ You can upload a single object as a collection of parts using multipart upload. 
 
 The benefits of using multipart upload are as follows:
 
-* Increased throughput: each part can be uploaded concurrently.
-* Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
+- Increased throughput: each part can be uploaded concurrently.
+- Fast recovery from network problems: since each part can be uploaded separately and independently, you can re-upload the missing part without restarting the whole upload.
 
 ## Instructions
 
@@ -38,11 +38,10 @@ The benefits of using multipart upload are as follows:
 
 You will need the following:
 
-* An [OVHcloud bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) created
-* The [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external} installed and configured
-* A large file split into multiple parts
+- An [OVHcloud bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) created
+- The [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external} installed and configured
+- A large file split into multiple parts
 
-  
 > [!primary]
 > **Did you know?**
 > When you use a high level command to upload an object using the `cp` command, the AWS CLI automatically does a multipart-upload. To better optimise the default configuration values for multipart uploads (multipart_threshold, multipart_chunksize), you can consult [this article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) and see the table explaining how to configure the AWS CLI.
@@ -87,7 +86,8 @@ Once all the parts have been uploaded, you need to call the `complete-multipart-
 ```bash
 user@host:~$ aws s3api complete-multipart-upload --bucket test-bucket --key filename --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx" --multipart-upload file://mpu.json
 ```
-Where mpu.json is:
+
+Where `mpu.json` is:
 
 ```bash
 {
@@ -144,12 +144,15 @@ Where mpu.json is:
 
 The following list describes the options to perform multipart uploads using other tools. The list is NOT exhaustive as you might want to check the relevant documentation of the tool you are using.
 
-#### s3cmd 
+#### s3cmd
 
 ```bash
 $ multipart-chunk-size-mb=SIZE_
 ```
-Size of each chunk of a multipart upload. Files bigger than SIZE are automatically uploaded as multithreaded-multipart, smaller files are uploaded using the traditional method. SIZE is in Mega-Bytes, default chunk size is 15MB, minimum allowed chunk size is 5MB, maximum is 5GB.
+
+Size of each chunk of a multipart upload.<br>
+Files bigger than SIZE are automatically uploaded as multithreaded-multipart, smaller files are uploaded using the traditional method.<br>
+SIZE is in Mega-Bytes, default chunk size is 15MB, minimum allowed chunk size is 5MB, maximum is 5GB.
 
 <u> Example: </u>
 
@@ -159,7 +162,7 @@ $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 
 For more information on s3cmd, consult the official documentation [here](https://s3tools.org/usage){.external).
 
-#### rclone 
+#### rclone
 
 ```bash
 $ s3-upload-cutoff=SIZE
@@ -170,6 +173,7 @@ Size threshold at which point rclone switches from single file upload to multipa
 ```bash
 $ s3-chunk-size=SIZE
 ```
+
 Size of each chunk used in multipart uploads.
 
 ```bash
@@ -186,15 +190,15 @@ $ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutof
 
 For more information on rclone, consult the official documentation [here](https://rclone.org/s3/){.external}.
 
-#### Increasing the number of concurrent requests
+### Increasing the number of concurrent requests
 
 Another way to improve throughput is to increase the number of concurrent requests.
 
-To customize the default value on the AWS CLI, consult [this guide](pages\storage_and_backup\object_storage\s3_optimise_the_sending_of_your_files).
+To customize the default value on the AWS CLI, consult [this guide](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files).
 
 For other tools, you should check the relevant documentation of the software you are using.
 
-#### I/O optimization
+### I/O optimization
 
 It is also possible to significantly optimise performances by adopting good practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the sharding mechanism.
 
@@ -202,23 +206,23 @@ It is also possible to significantly optimise performances by adopting good prac
 
 OpenIO is a software defined storage solution on which OVHcloud Object Storage is based on.
 
-In OpenIO, a **container** is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that list all the addresses in the cluster of the objects contained in it. By default, an S3 bucket is associated with one container but this can change with the sharding mechanism.
+In OpenIO, a **container** is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that lists all the addresses in the cluster of the objects contained in it. By default, an S3 bucket is associated with one container but this can change with the sharding mechanism.
 
 Sharding is the mechanism by which a container is split into 2 new sub-containers (and thus its associated metadata database is also split in 2) when it reaches **a critical number of objects** called **shards**.
 
 Sharding enables:
 
-* optimise read/write operations by distributing them evenly over several servers (shards).
-* distribute data storage over the whole cluster to increase resilience.
+- optimising read/write operations by distributing them evenly over several servers (shards).
+- distributing data storage over the whole cluster to increase resilience.
 
 We use the object keys (prefix/name) to determine which objects are pushed into which sub-container using the following logic:
 
-* Create 2 new shards
-* Find the median value of an alphabetically sorted list of all object keys
-* Copy the content of the root container to the shards
-* In the first shard, keep only the first half of the objects (from the object with the first key in the list to the object with a key equal to the median value) and clean up the second half
-* In the second shard, keep only the second half of the objects and clean up the first half
-* The root container then only lists references to the shards i.e which range of objects in which shard
+- Create 2 new shards.
+- Find the median value of an alphabetically sorted list of all object keys.
+- Copy the content of the root container to the shards.
+- In the first shard, keep only the first half of the objects (from the object with the first key in the list to the object with a key equal to the median value) and clean up the second half.
+- In the second shard, keep only the second half of the objects and clean up the first half.
+- The root container then only lists references to the shards i.e which range of objects in which shard.
 
 This logic can be summed up as follows:
 
@@ -236,18 +240,18 @@ Let's consider a use case where you would want to store logs in an OVHcloud Obje
 
 List of objects:
 
-* 20240216/file01.log
-* 20240216/file02.log
-* 20240216/file03.log
-* ...
-* 20240217/file01.log
-* 20240217/file02.log
-* ...
+- 20240216/file01.log
+- 20240216/file02.log
+- 20240216/file03.log
+- ...
+- 20240217/file01.log
+- 20240217/file02.log
+- ...
 
 Assuming a threshold of 100, after the 100th object is uploaded, the sharding is triggered to divide the objects into two shards:
 
-* from 20240216/file01.log to 20240216/file100.log in the first shard
-* from 20240216/file101.log and beyond to a second shard
+- from 20240216/file01.log to 20240216/file100.log in the first shard
+- from 20240216/file101.log and beyond to a second shard
 
 This solution is not optimal because, since dates are incremental by nature, all new downloads will always be carried out on the second shard, which will be split again when it reaches a critical size. Thus, all future write operations will always be performed on the latest shard created and the previous shards will get rarely accessed. Furthermore, you may experience some throttling during the sharding process.
 
@@ -257,14 +261,14 @@ This solution is not optimal because, since dates are incremental by nature, all
 
 List of objects:
 
-* server/apache/file20240216.log
-* server/apache/file20240217.log
-* server/apache/file20240218.log
-* ...
-* db/mongodb/file20240216.log
-* db/mongodb/file20240217.log
-* ...
-  
+- server/apache/file20240216.log
+- server/apache/file20240217.log
+- server/apache/file20240218.log
+- ...
+- db/mongodb/file20240216.log
+- db/mongodb/file20240217.log
+- ...
+
 Assuming a threshold of 100, after the 100th object is uploaded, the sharding is triggerd to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
 
 ![Schema 4](images/sharding4.png){.thumbnail}
@@ -279,8 +283,12 @@ A simple way to achieve that lies in better 503 slowdown errors management and e
 
 ### Increase object sizes
 
-Objects are considered small if they are less than 1 MB in size. When it comes to large volumes of data (PB scale), the total number of objects quickly reaches billions or even trillions. Managing metadata administration on this scale and the number of I/O operations poses a major challenge: how to provide a quality service without losing information or compromising performance.
+Objects are considered small if they are less than 1 MB in size. When it comes to large volumes of data (PB scale), the total number of objects quickly reaches billions or even trillions. Managing metadata administration on this scale and the number of I/O operations poses a major challenge: how to provide a quality service without losing information or compromising performance?
 
 When applicable, we recommend that you increase the object/part size as much as possible in order to reduce the number of objects.
+
+## Go further <a name="go-further"></a>
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

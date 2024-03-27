@@ -1,7 +1,7 @@
 ---
-title: Optimiser les performances de l'Object Storage OVHcloud
-excerpt: Ce guide vous guide à travers différentes méthodes pour optimiser les performances de vos buckets Object Storage OVHcloud, notamment l'utilisation de lectures de plage d'octets et de téléchargements en plusieurs parties.
-updated: 2024-03-26
+title: Object Storage - Optimiser les performances
+excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage OVHcloud, notamment l'utilisation de lectures de plage d'octets et de téléchargements en plusieurs parties"
+updated: 2024-03-27
 ---
 
 ## Objectif
@@ -25,35 +25,37 @@ user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range by
 
 ### Utilisation des MPU
 
-Vous pouvez télécharger un objet unique sous la forme d'une collection d'articles à l'aide du téléchargement en plusieurs parties. Ces parties peuvent être téléchargées séparément et dans n'importe quelle séquence. Vous pouvez retransmettre une pièce sans affecter les autres en cas d'échec de la transmission d'une pièce. 
+Vous pouvez télécharger un objet unique sous la forme d'une collection d'articles à l'aide des téléversements en plusieurs parties (*multipart uploads*). Ces parties peuvent être téléchargées séparément et dans n'importe quelle séquence. Vous pouvez retransmettre une pièce sans affecter les autres en cas d'échec de la transmission d'une pièce.
 Une fois toutes les pièces téléchargées, OVHcloud Object Storage les assemble et reconstruit l'objet.
 
 > [!success]
 >
-> Pensez à utiliser des chargements en plusieurs parties pour les objets > 100MB
+> Pensez à utiliser des téléversements en plusieurs parties (*multipart uploads*) pour les objets > 100MB
 >
 
-Les avantages du téléchargement en plusieurs parties sont les suivants :
+Les avantages des *multipart uploads- sont les suivants :
 
-* Débit accru : chaque partie peut être téléchargée simultanément.
-* Récupération rapide en cas de problème réseau : chaque partie pouvant être téléchargée séparément et indépendamment, vous pouvez retélécharger la partie manquante sans redémarrer le téléchargement complet.
+- Débit accru : chaque partie peut être uploadée simultanément.
+- Récupération rapide en cas de problème réseau : chaque partie pouvant être uploadée séparément et indépendamment, vous pouvez re-uploader la partie manquante sans redémarrer l'upload complet.
 
-### Utilisation du AWS CLI
+## En pratique
+
+### Via AWS CLI
 
 Vous aurez besoin des éléments suivants :
 
-* Avoir créé un [bucket OVHcloud](/pages/storage_and_backup/object_storage/s3_create_bucket)
-* Avoir installée et configurée [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}
-* Avoir un fichier volumineux divisé en plusieurs parties
+- Avoir créé un [bucket OVHcloud](/pages/storage_and_backup/object_storage/s3_create_bucket)
+- Avoir installé et configuré [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}
+- Avoir un fichier volumineux divisé en plusieurs parties
 
 > [!primary]
 > **Le saviez-vous ?**
-> Lorsque vous utilisez une commande de haut niveau pour télécharger un objet à l'aide de la commande `cp`, AWS CLI effectue automatiquement un téléchargement en plusieurs parties. Pour optimiser les valeurs de configuration par défaut pour les téléchargements en plusieurs parties (multipart_threshold, multipart_chunksize), vous pouvez consulter [cet article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et voir le tableau expliquant comment configurer AWS CLI.
+> Lorsque vous utilisez une commande de haut niveau pour uploader un objet à l'aide de la commande `cp`, AWS CLI effectue automatiquement un *multipart upload*. Pour optimiser les valeurs de configuration par défaut pour les *multipart uploads- (multipart_threshold, multipart_chunksize), vous pouvez consulter [cet article](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) et voir le tableau expliquant comment configurer AWS CLI.
 >
 
-La section suivante explique comment effectuer un téléchargement en plusieurs parties à l'aide des commandes de bas niveau du AWS CLI.
+La section suivante explique comment effectuer un *multipart upload- à l'aide des commandes de bas niveau du AWS CLI.
 
-Tout d'abord, vous devez lancer un téléchargement en plusieurs parties :
+Tout d'abord, vous devez lancer un *multipart upload- :
 
 ```bash
 user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filename
@@ -65,10 +67,10 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 ```
 
 > [!primary]
-> N'oubliez pas de sauvegarder les **upload ID**, **key** et **bucket name** pour les utiliser avec la commande `upload-part`.
+> N'oubliez pas de sauvegarder les **upload ID**, **key*- et **bucket name*- pour les utiliser avec la commande `upload-part`.
 >
 
-Pour chaque partie, vous devez exécuter la commande `upload-part` dans laquelle vous spécifiez le *bucket*, *key* et *upload ID* :
+Pour chaque partie, vous devez exécuter la commande `upload-part` dans laquelle vous spécifiez les *bucket*, *key- et *upload ID- :
 
 > [!warning]
 > Les numéros de référence peuvent être compris entre 1 et 10 000 inclus. Vous pouvez vérifier les limitations techniques [ici](/pages/storage_and_backup/object_storage/s3_limitations).
@@ -82,7 +84,7 @@ user@host:~$ aws s3api upload-part --bucket test-bucket --key filename --part-nu
 ```
 
 > [!primary]
-> Enregistrez la valeur **ETag** de chaque article pour plus tard. Ils sont nécessaires pour terminer le téléchargement en plusieurs parties.
+> Enregistrez la valeur **ETag*- de chaque article pour plus tard. Elles sont nécessaires pour terminer le *multipart upload*.
 >
 
 Une fois toutes les pièces téléchargées, vous devez exécuter la commande `complete-multipart-upload` pour terminer le processus et pour que le OVHcloud Object Storage reconstruise l'objet final :
@@ -91,7 +93,7 @@ Une fois toutes les pièces téléchargées, vous devez exécuter la commande `c
 user@host:~$ aws s3api complete-multipart-upload --bucket test-bucket --key filename --upload-id "YjgxYmRmODItOWRiMi00YmI2LTk1NTMtODBhYWYwYmFjZGYx" --multipart-upload file://mpu.json
 ```
 
-Où mpu.json est :
+Où `mpu.json` est :
 
 ```bash
 {
@@ -141,12 +143,12 @@ Où mpu.json est :
 ```
 
 > [!primary]
-> Si vous ne terminez pas le téléchargement en plusieurs parties, votre objet ne sera pas reconstruit et ne sera pas visible MAIS vous devrez tout de même payer les coûts de stockage des parties.
+> Si vous ne terminez pas le *multipart upload*, votre objet ne sera pas reconstruit et ne sera pas visible MAIS vous devrez tout de même payer les coûts de stockage des parties.
 >
 
-### Utilisation d'autres outils tiers
+### Via d'autres outils tiers
 
-La liste suivante décrit les options permettant d'effectuer des téléchargements en plusieurs parties à l'aide d'autres outils. La liste n'est PAS exhaustive car vous pouvez vérifier la documentation pertinente de l'outil que vous utilisez.
+La liste suivante décrit les options permettant d'effectuer des t*multipart uploads- à l'aide d'autres outils. La liste n'est pas exhaustive car vous pouvez également vérifier la documentation appropriée pour l'outil que vous utilisez.
 
 #### s3cmd
 
@@ -154,7 +156,9 @@ La liste suivante décrit les options permettant d'effectuer des téléchargemen
 $ multipart-chunk-size-mb=SIZE_
 ```
 
-Cette commande représente la taille de chaque segment d'un téléchargement en plusieurs parties. Les fichiers supérieurs à SIZE sont automatiquement téléchargés en tant que fichiers multithread-multipart. Les fichiers plus petits sont téléchargés à l'aide de la méthode traditionnelle. SIZE est exprimé en méga-octets, la taille de bloc par défaut est de 15 Mo, la taille de bloc minimale autorisée est de 5 Mo, la taille maximale est de 5 Go.
+Cette commande représente la taille de chaque segment d'un *multipart upload*.<br>
+Les fichiers supérieurs à SIZE sont automatiquement téléchargés en tant que fichiers multithread-multipart.Les fichiers plus petits sont téléchargés à l'aide de la méthode traditionnelle.<br>
+SIZE est exprimé en méga-octets, la taille de bloc par défaut est de 15 Mo, la taille de bloc minimale autorisée est de 5 Mo, la taille maximale est de 5 Go.
 
 <u> Exemple : </u>
 
@@ -170,19 +174,19 @@ Pour plus d'informations sur *s3cmd*, consultez la documentation officielle [ici
 $ s3-upload-cutoff=SIZE
 ```
 
-Cette commande représente le seuil de taille auquel *rclone* passe du téléchargement d'un fichier unique au téléchargement en plusieurs parties.
+Cette commande représente le seuil de taille à partir duquel rclone passe d'un upload d'un fichier unique au *multipart upload*.
 
 ```bash
 $ s3-chunk-size=SIZE
 ```
 
-Cette commande représente la taille de chaque segment utilisé dans les téléchargements en plusieurs parties.
+Cette commande représente la taille de chaque segment utilisé dans les *multipart uploads*.
 
 ```bash
 $ s3-upload-concurrency
 ```
 
-Cette commande représente le nombre de segments téléchargés simultanément.
+Cette commande représente le nombre de segments uploadés simultanément.
 
 <u> Exemple : </u>
 
@@ -192,41 +196,41 @@ $ rclone copy --s3-upload-concurrency 300 --s3-chunk-size 100M --s3-upload-cutof
 
 Pour plus d'informations sur *rclone*, consultez la [documentation officielle](https://rclone.org/s3/){.external}.
 
-#### Augmentation du nombre de demandes simultanées
+### Augmentation du nombre de demandes simultanées
 
 Une autre façon d'améliorer le débit est d'augmenter le nombre de demandes simultanées.
 
-Pour personnaliser la valeur par défaut sur AWS CLI, consultez [ce guide](pages\storage_and_backup\object_storage\s3_optimize_the_send_of_your_files).
+Pour personnaliser la valeur par défaut sur AWS CLI, consultez [ce guide](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files).
 
-Pour les autres outils, il est conseillé de consulter la documentation du logiciel utilisé.
+Pour les autres outils, nous vous invitons à consulter la documentation du logiciel utilisé.
 
-#### Optimisation I/O
+### Optimisation I/O
 
 Il est également possible d’optimiser considérablement les performances en adoptant de bonnes pratiques pour répartir les I/O le plus largement possible dans le cluster de stockage d’objets, en tirant parti du mécanisme de fragmentation (*sharding*).
 
-**Qu’est-ce que le Sharding ?**
+**Qu’est-ce que le *sharding- ?**
 
-OpenIO est une solution de Software Defined Storage sur laquelle repose l’Object Storage d’OVHcloud.
+OpenIO est une solution de *Software Defined Storage- sur laquelle repose l’Object Storage d’OVHcloud.
 
-Dans OpenIO, un **conteneur** est essentiellement une entité logique interne qui contient tous les objets d'un compartiment donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket S3 est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
+Dans OpenIO, un **conteneur*- est essentiellement une entité logique interne qui contient tous les objets d'un bucket donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket S3 est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
 
-Le *sharding* est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets** appelé **shards**.
+Le *sharding- est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets*- appelé **shards**.
 
-Le *sharding* permet :
+Le *sharding- permet :
 
-* d'optimiser les opérations de lecture/écriture en les répartissant uniformément sur plusieurs serveurs (*shards*).
-* de répartir le stockage des données sur l'ensemble du cluster pour augmenter la résilience.
+- d'optimiser les opérations de lecture/écriture en les répartissant uniformément sur plusieurs serveurs (*shards*).
+- de répartir le stockage des données sur l'ensemble du cluster pour augmenter la résilience.
 
 Nous utilisons les clés d'objet (préfixe/nom) pour déterminer quels objets sont poussés dans quel sous-conteneur en utilisant la logique suivante :
 
-* Créer 2 nouveaux *shards* ;
-* Recherche la valeur médiane d'une liste de toutes les clés d'objet triées par ordre alphabétique ;
-* Copier le contenu du conteneur racine dans les *shards* ;
-* Dans le premier *shard*, ne conservez que la première moitié des objets (de l'objet avec la première clé de la liste à l'objet avec une clé égale à la valeur médiane) et nettoyez la seconde moitié ;
-* Dans le second *shard*, ne conserver que la seconde moitié des objets et nettoyer la première moitié ;
-* Le conteneur racine ne liste alors que les références aux shards, c'est-à-dire quelle plage d'objets dans quel *shard*
+- Créer 2 nouveaux *shards*.
+- Recherche la valeur médiane d'une liste de toutes les clés d'objet triées par ordre alphabétique.
+- Copier le contenu du conteneur racine dans les *shards*.
+- Dans le premier *shard*, ne conserver que la première moitié des objets (de l'objet avec la première clé de la liste à l'objet avec une clé égale à la valeur médiane) et nettoyer la seconde moitié.
+- Dans le second *shard*, ne conserver que la seconde moitié des objets et nettoyer la première moitié.
+- Le conteneur racine ne liste alors que les références aux shards, c'est-à-dire quelle plage d'objets dans quel *shard*.
 
-Cette logique peut se résumer comme suit :
+Cette logique peut se résumer ainsi :
 
 ![Schema 2](images/sharding2.png){.thumbnail}
 
@@ -234,44 +238,44 @@ Cette logique peut se résumer comme suit :
 
 Vous pouvez optimiser les I/O sur le cluster en profitant des mécanismes de *sharding* décrits ci-dessus.
 
-La stratégie principale est de garder la cardinalité des clés d'objet à gauche, c'est-à-dire d'utiliser des préfixes qui permettent au partage de diviser les objets entrants aussi uniformément que possible.
+La stratégie principale est de garder la cardinalité des clés d'objet à gauche, c'est-à-dire d'utiliser des préfixes qui permettent au *sharding* de diviser les objets entrants aussi uniformément que possible.
 
 Considérons un cas d'utilisation où vous souhaiteriez stocker des logs dans un Object Storage OVHcloud.
 
-#### Scénario 1 : Mauvaise pratique en utilisant la date comme préfixe
+#### Scénario 1 - Mauvaise pratique en utilisant la date comme préfixe
 
 Liste des objets :
 
-* 20240216/file01.log
-* 20240216/file02.log
-* 20240216/file03.log
-* ...
-* 20240217/file01.log
-* 20240217/file02.log
-* ...
+- 20240216/file01.log
+- 20240216/file02.log
+- 20240216/file03.log
+- ...
+- 20240217/file01.log
+- 20240217/file02.log
+- ...
 
-En supposant un seuil de 100, après le téléchargement du 100ème objet, le partage est déclenché pour diviser les objets en deux fragments :
+En supposant un seuil de 100, après le téléchargement du 100ème objet, le *sharding* est déclenché pour diviser les objets en deux fragments :
 
-* de 20240216/file01.log à 20240216/file100.log dans le premier *shard*
-* à partir de 20240216/file101.log et au-delà vers un second *shard*
+- de 20240216/file01.log à 20240216/file100.log dans le premier *shard*
+- à partir de 20240216/file101.log et au-delà vers un second *shard*
 
-Cette solution n'est pas optimale car, les dates étant par nature incrémentales, tous les nouveaux téléchargements seront toujours effectués sur le second *shard*, qui sera à nouveau fractionné lorsqu'il atteindra une taille critique. Ainsi, toutes les opérations d'écriture futures seront toujours effectuées sur le dernier *shard* créé et les *shards* précédents seront rarement utilisés. En outre, vous pouvez rencontrer une certaine limitation pendant le processus de partage.
+Cette solution n'est pas optimale car, les dates étant par nature incrémentales, tous les nouveaux téléchargements seront toujours effectués sur le second *shard*, qui sera à nouveau fractionné lorsqu'il atteindra une taille critique. Ainsi, toutes les opérations d'écriture futures seront toujours effectuées sur le dernier *shard* créé et les *shards* précédents seront rarement utilisés. En outre, vous pouvez rencontrer une certaine limitation pendant le processus de *sharding*.
 
 ![Schema 3](images/sharding3.png){.thumbnail}
 
-#### Scénario 2 : Bonne pratique pour maintenir la cardinalité à droite
+#### Scénario 2 - Bonne pratique pour maintenir la cardinalité à droite
 
 Liste des objets :
 
-* server/apache/file20240216.log
-* server/apache/file20240217.log
-* server/apache/file20240218.log
-* ...
-* db/mongodb/file20240216.log
-* db/mongodb/file20240217.log
-* ...
+- server/apache/file20240216.log
+- server/apache/file20240217.log
+- server/apache/file20240218.log
+- ...
+- db/mongodb/file20240216.log
+- db/mongodb/file20240217.log
+- ...
 
-En supposant un seuil de 100, après le téléchargement du 100ème objet, le partage est déclenché pour fractionner les objets en 2 fragments. Ce 2e scénario est optimal car tous les nouveaux uploads seront répartis sur les 2 *shards*.
+En supposant un seuil de 100, après le téléchargement du 100ème objet, le *sharding* est déclenché pour fractionner les objets en 2 *shards*. Ce deuxième scénario est optimal car tous les nouveaux uploads seront répartis sur les 2 *shards*.
 
 ![Schema 4](images/sharding4.png){.thumbnail}
 
@@ -279,20 +283,18 @@ En supposant un seuil de 100, après le téléchargement du 100ème objet, le pa
 
 Lorsque vous chargez un très grand nombre d'objets à la fois, vous déclenchez le mécanisme de fragmentation (*sharding*). Au cours du processus de fragmentation, vous pouvez rencontrer une certaine limitation.
 
-Afin d'éviter la baisse de performance (503 erreurs SLOWDOWN), nous vous recommandons d'optimiser vos uploads en étalant votre requête dans le temps. Cet écart n'a pas à être linéaire, mais il doit nous donner suffisamment de temps pour équilibrer votre charge de travail.
+Afin d'éviter la baisse de performance (erreurs 503 SLOWDOWN), nous vous recommandons d'optimiser vos uploads en étalant votre requête dans le temps. Cet écart n'a pas à être linéaire, mais il doit nous donner suffisamment de temps pour équilibrer votre charge de travail.
 
-Un moyen simple d'y parvenir consiste à améliorer la gestion des erreurs de ralentissement 503 et la récupération des erreurs : augmentez vos téléchargements jusqu'à ce que vous atteigniez 503 erreurs et modulez votre charge de travail pour accommoder la limitation jusqu'à ce que le partage soit terminé, puis augmentez à nouveau.
+Un moyen simple d'y parvenir consiste à améliorer la gestion des erreurs 503 SLOWDOWN et la récupération des erreurs : augmentez vos uploads jusqu'à ce que vous atteigniez des erreyrs 503 et modulez votre charge de travail pour accommoder la limitation jusqu'à ce que le *sharding* soit terminé, puis augmentez à nouveau.
 
 ### Augmenter la taille des objets
 
-Les objets sont considérés comme petits s'ils ont une taille inférieure à 1 Mo. Lorsqu'il s'agit de grands volumes de données (à l'échelle du PB), le nombre total d'objets atteint rapidement des milliards, voire des billions. Gérer l’administration des métadonnées à cette échelle et le nombre d’opérations d’I/O représente un défi majeur : comment fournir un service de qualité sans perdre d’informations ni compromettre les performances ?.
+Les objets sont considérés comme petits s'ils ont une taille inférieure à 1 Mo. Lorsqu'il s'agit de grands volumes de données (à l'échelle du Po), le nombre total d'objets atteint rapidement des milliards, voire des trillions. Gérer l’administration des métadonnées à cette échelle et le nombre d’opérations d’I/O représente un défi majeur : comment fournir un service de qualité sans perdre d’informations ni compromettre les performances ?.
 
 Le cas échéant, nous vous recommandons d'augmenter autant que possible la taille de l'objet/de la pièce afin de réduire le nombre d'objets.
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
- 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

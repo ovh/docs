@@ -1681,6 +1681,7 @@
         + [Tutorials](storage-object-storage-tutorials)
             + [Object Storage - Encrypt your server-side objects with SSE-C](storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c)
             + [Object Storage - Optimise the sending of your files to S3 Object Storage](storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files)
+            + [Object Storage - Optimising Performance](storage_and_backup/object_storage/s3_performance_optimization)
             + [Object Storage - Managing object immutability with Object Lock (WORM)](storage_and_backup/object_storage/s3_managing_object_lock)
             + [Object Storage - Servers Access Logging](storage_and_backup/object_storage/s3_server_access_logging)
             + [Object Storage - Bucket ACL](storage_and_backup/object_storage/s3_bucket_acl)
