@@ -89,6 +89,24 @@ Per maggiori informazioni, consulta la nostra pagina relativa al [modulo PrestaS
 
 - Sito ufficiale di [Pico](https://picocms.org/){.external}
 
+#### Grav
+
+**Grav** è un CMS moderno e flessibile basato su PHP. È progettato senza database e utilizza file Markdown per lo storage e la gestione dei contenuti. Grav si distingue per il suo sistema di gestione dei pacchetti che facilita l'installazione e l'aggiornamento dei plugin e dei temi per il vostro sito web.
+
+- Sito ufficiale di [Grav](https://getgrav.org/){.external}
+
+#### Typo3
+
+**Typo3** è un CMS basato su PHP, progettato per lo sviluppo di siti Web di tutte le dimensioni, dalle piccole alle grandi imprese. Utilizza un database per salvare il contenuto. Offre una vasta gamma di estensioni per estendere le sue funzionalità e personalizzare il tuo sito Web.
+
+- Sito ufficiale di [Typo3](https://typo3.com/){.external}
+
+#### SPIP
+
+**SPIP** è un CMS concepito principalmente per la pubblicazione e la gestione di siti Web editoriali come giornali o riviste online. Basato su PHP e basato su un database SQL, facilita la creazione di siti Web arricchiti di contenuti testuali, grafici e/o multimediali.
+
+- Sito ufficiale di [SPIP](https://www.spip.net/en_rubrique25.html){.external}
+
 > [!warning]
 >
 > Indipendentemente dal CMS scelto, ti ricordiamo che OVHcloud non fornisce alcuna assistenza sull'utilizzo di questi CMS. In caso di difficoltà o dubbi, contatta direttamente il produttore del CMS scelto utilizzando i link indicati in questa guida.
