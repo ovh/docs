@@ -83,11 +83,29 @@ Więcej informacji znajduje się na naszej stronie dotyczącej [modułu PrestaSh
 
 - Oficjalna strona [PrestaShop](https://www.prestashop.com/){.external}
 
-### Pico
+#### Pico
 
 **Pico** to oparty na PHP lekki CMS, idealny do tworzenia stron WWW lub blogów. Nie posiada bazy danych i używa plików Markdown do zarządzania zawartością. Posiada rozszerzenia służące do personalizacji Twojej strony WWW.
 
 - Oficjalna strona [Pico](https://picocms.org/){.external}
+
+#### Grav
+
+**Grav** to nowoczesny i elastyczny CMS oparty na PHP. Jest on zaprojektowany bez użycia baz danych i wykorzystuje pliki Markdown do przechowywania i zarządzania treścią. Grav wyróżnia się systemem zarządzania pakietami, który ułatwia instalację i aktualizację wtyczek i szablonów dla Twojej strony WWW.
+
+- Oficjalna strona [Grav](https://getgrav.org/){.external}
+
+#### Typo3
+
+**Typo3** to oparty na PHP CMS przeznaczony do tworzenia stron WWW każdej wielkości, od małych po duże firmy. Do przechowywania treści wykorzystuje on bazę danych. Oferuje szeroką gamę rozszerzeń do rozszerzania swoich funkcjonalności, aby dostosować stronę WWW do swoich potrzeb.
+
+- Oficjalna strona [Typo3](https://typo3.com/){.external}
+
+#### SPIP
+
+**SPIP** jest systemem CMS przeznaczonym głównie do publikacji i zarządzania witrynami wydawniczymi, takimi jak gazety i czasopisma internetowe. Jest on oparty na PHP i bazie danych SQL, ułatwia tworzenie stron www wzbogaconych o treści tekstowe, graficzne i / lub multimedialne.
+
+- Oficjalna strona [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 
 > [!warning]
 >
