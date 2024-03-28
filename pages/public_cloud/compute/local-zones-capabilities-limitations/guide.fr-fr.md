@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Fonctionnalités, capacités et limites
 excerpt: Découvrez les fonctionnalités, les capacités et les limites actuelles des instances Local Zones
-updated: 2024-03-04
+updated: 2024-04-02
 ---
 
 ## Objectif
@@ -24,6 +24,11 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 | Support IPv4 Public | Oui |
 | Boot/Start | Oui |
 | Stop | Oui |
+| Block Storage | Oui |
+| Sauvegardes des instances | Non |
+| Snapshots de volumes| Non |
+| Sauvegardes de volumes | Non |
+| Object Storage | Non |
 
 ## Capacités et limitations
 

@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-03-04
+updated: 2024-04-02
 ---
 
 ## Objective
@@ -24,6 +24,11 @@ Find more information on our [dedicated Local Zone Compute page](https://www.ovh
 | Public IPv4 Support | Yes |
 | Boot/Start | Yes |
 | Stop | Yes |
+| Block Storage | Yes |
+| Instance Backups | No |
+| Volume Snapshots | No |
+| Volume Backups | No |
+| Object Storage | No |
 
 ## Capabilities and limitations
 

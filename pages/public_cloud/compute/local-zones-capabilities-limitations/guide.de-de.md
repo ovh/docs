@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funktionen, Kapazitäten und Einschränkungen
 excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones Instanzen
-updated: 2024-03-04
+updated: 2024-04-02
 ---
 
 > [!primary]
@@ -29,6 +29,11 @@ Weitere Informationen finden Sie auf unserer [Seite für Local Zones](https://ww
 | Public IPv4 Support | Ja |
 | Boot/Start | Ja |
 | Stop | Ja |
+| Block Storage | Ja |
+| Instanz-Backups | Nein |
+| Volume-Snapshots | Nein |
+| Volume-Backups | Nein |
+| Object Storage | Nein |
 
 ## Kapazitäten und Einschränkungen
 
