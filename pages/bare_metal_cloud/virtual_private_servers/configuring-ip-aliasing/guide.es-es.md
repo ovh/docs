@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una dirección IP como alias'
 excerpt: 'Cómo añadir direcciones Additional IP a su configuración VPS'
-updated: 2023-08-15
+updated: 2024-03-27
 ---
 
 > [!primary]
@@ -21,17 +21,17 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de red 
 
 > [!warning]
 >
-> La responsabilidad sobre los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
+> OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. No tenemos acceso a estas máquinas, por lo que no somos los administradores de las mismas y no podremos asistirle. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de un servidor, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Para más información, consulte el apartado «Más información» de esta guía.
 >
 
 ## Requisitos
 
-- un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta OVHcloud
-- una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/)
-- un acceso de administrador (sudo) a través de SSH o GUI en su servidor
-- conocimientos básicos de redes y administración
+- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta OVHcloud
+- Tener una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/)
+- Tener acceso de administrador (sudo) a través de SSH o GUI en su servidor
+- Tener conocimientos básicos de redes y administración
 
 ## Procedimiento
 
@@ -46,7 +46,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 
 |Valor|Descripción|Ejemplos|
 |---|---|---|
-|ADDITIONAL_IP|Dirección Additional IP atribuida a su servicio|169.254.10.254|
+|ADDITIONAL_IP|Dirección Additional IP atribuida a su servicio|203.0.113.0|
 |NETWORK_INTERFACE|Nombre de la interfaz de red|*eth0*, *ens3*|
 |ID|ID del alias IP, comenzando por *0* (en función del número de direcciones IP adicionales a configurar)|*0*, *1*|
 
@@ -54,7 +54,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 
 #### 1\. desactivar la configuración automática de red
 
-Abra la ruta al siguiente archivo con un editor de texto:
+Abra la ruta al siguiente archivo con un editor de texto, en nuestro ejemplo utilizamos `nano` :
 
 ```bash
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
@@ -62,13 +62,30 @@ sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 
 Introduzca la siguiente línea y, a continuación, guarde y cierre el editor.
 
-```bash
+```console
 network: {config: disabled}
 ```
 
 La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.
 
-#### 2\. editar el archivo de configuración de red
+#### 2\. crear una copia de seguridad
+
+Por defecto, el fichero de configuración se encuentra en la ruta /etc\Network\interfaces.d`.
+
+En nuestro ejemplo, nuestro archivo se llama `50-cloud-init`, por lo que hacemos una copia del archivo `50-cloud-init` utilizando el siguiente comando:
+
+```bash
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+
+Si comete algún error, puede revertir los cambios utilizando los siguientes comandos:
+
+```bash
+sudo rm -f /etc/network/interfaces.d/50-cloud-init
+sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
+```
+
+#### 3\. editar el archivo de configuración de red
 
 Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
 
@@ -82,16 +99,38 @@ Abra el archivo de configuración de red para modificarlo con el siguiente coman
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
-Añada las siguientes líneas:
+Para configurar su dirección Additional IP, añada una interfaz virtual o un alias Ethernet a su interfaz de red. En nuestro ejemplo, nuestra interfaz se llama `eth0`, por lo que nuestro primer alias es `eth0:0`. Haga esto para cada dirección Additional IP que quiera configurar.
 
-```bash
+No modifique las líneas existentes en el fichero de configuración, añada únicamente su dirección Additional IP al fichero, sustituyendo `NETWORK_INTERFACE`, `ID` y `ADDITIONAL_IP` por sus propios valores:
+
+
+```console
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
 address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
-#### 3\. reiniciar la interfaz
+Si configura más de una dirección Additional IP, su archivo de configuración debería tener el siguiente aspecto:
+
+```console
+auto NETWORK_INTERFACE:ID
+iface NETWORK_INTERFACE:ID inet static
+address ADDITIONAL_IP1
+address ADDITIONAL_IP2
+netmask 255.255.255.255
+```
+
+**Ejemplo**
+
+```console
+auto eth0:0
+iface eth0:0 inet static
+address 203.0.113.0
+netmask 255.255.255.255
+```
+
+#### 4\. reiniciar la interfaz
 
 Aplique los cambios con el siguiente comando:
 
@@ -99,25 +138,20 @@ Aplique los cambios con el siguiente comando:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04 & Debian 12
+### Debian 12, Ubuntu 20.04 y posteriores
 
-El archivo de configuración de las direcciones Additional IP se encuentra en `/etc/netplan/`. En este ejemplo, se llama "50-cloud-init.yaml". Antes de realizar cualquier cambio, compruebe el nombre del archivo real en esta carpeta. Cada dirección Additional IP necesita su propia línea en el archivo.
+El archivo de configuración de las direcciones Additional IP se encuentra en `/etc/netplan/`. En este ejemplo, se llama `50-cloud-init.yaml`.
 
-#### 1\. desactivar la configuración automática de red
+La práctica recomendada es crear un archivo de configuración independiente para definir las direcciones Additional IP. De este modo, podrá volver a revisar fácilmente los cambios en caso de que se produzca un error.
 
-Abra la ruta al siguiente archivo con un editor de texto:
 
-```bash
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
-```
+#### 1\. crear el archivo de configuración de red
 
-Introduzca la siguiente línea y, a continuación, guarde y cierre el editor.
+En nuestro ejemplo, nuestro archivo se llama `51-cloud-init.yaml`:
 
 ```bash
-network: {config: disabled}
+sudo touch /etc/netplan/51-cloud-init.yaml
 ```
-
-La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.
 
 #### 2\. editar el archivo de configuración
 
@@ -130,33 +164,53 @@ ip a
 Abra el archivo de configuración de red para modificarlo con el siguiente comando:
 
 ```bash
-sudo nano /etc/netplan/50-cloud-init.yaml
+sudo nano /etc/netplan/51-cloud-init.yaml
 ```
 
-No modifique las líneas existentes en el archivo de configuración. Añada su dirección Additional IP añadiendo un segundo bloque de configuración para la interfaz pública, como se muestra a continuación:
+Edite el fichero con el siguiente contenido, sustituyendo `INTERFACE_NAME` y `ADDITIONAL_IP` por sus propios valores:
 
 ```yaml
 network:
-    version: 2
-    ethernets:
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE            
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE
-            addresses:
-            - ADDITIONAL_IP/32
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP1/32    
+```
+
+Si tiene que configurar más de una dirección Additional IP, el archivo de configuración debería tener el siguiente aspecto:
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP1/32
+           - ADDITIONAL_IP2/32
 ```
 
 > [!warning]
 >
 > Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio.
 >
+
+**Ejemplo**
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       eth0:
+           dhcp4: true
+           addresses:
+           - 203.0.113.0/32
+```
 
 Guarde y cierre el archivo.
 
@@ -175,6 +229,118 @@ sudo netplan apply
 ```
 
 Repita este procedimiento para cada dirección Additional IP.
+
+### CentOS 7, AlmaLinux (8 y 9), Rocky Linux (8 y 9)
+
+El archivo de configuración principal se encuentra en la carpeta `/etc/sysconfig/network-scripts/`. En este ejemplo, se denomina `ifcfg-eth0`. Antes de realizar cualquier cambio, compruebe el nombre real del archivo en esta carpeta.
+
+Para cada dirección Additional IP que desee configurar, cree un archivo de configuración independiente con los siguientes parámetros: `ifcfg-NETWORK_INTERFACE:ID`. Donde `NETWORK_INTERFACE` representa la interfaz física y `ID` representa la interfaz de red virtual o el alias ethernet que empieza por un valor de 0. Por ejemplo, para nuestra interfaz llamada `eth0` el primer alias es `eth0:0`, el segundo alias es `eth0:1`, etc.
+
+#### 1\. determinar la interfaz
+
+Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
+
+```bash
+ip a
+```
+
+#### 2\. crear el archivo de configuración
+
+En primer lugar, cree el archivo de configuración. Sustituya `NETWORK_INTERFACE:ID` por sus propios valores.
+
+```bash
+sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+```
+
+A continuación, edite el archivo con el siguiente contenido, sustituyendo `NETWORK_INTERFACE:ID` y `ADDITIONAL_IP` por sus propios valores:
+
+```console
+DEVICE=NETWORK_INTERFACE:ID
+BOOTPROTO=static
+IPADDR=ADDITIONAL_IP
+NETMASK=255.255.255.255
+BROADCAST=ADDITIONAL_IP
+ONBOOT=yes
+```
+
+**Ejemplo**
+
+```console
+DEVICE=NETWORK_INTERFACE:ID
+BOOTPROTO=static
+IPADDR=203.0.113.0
+NETMASK=255.255.255.255
+BROADCAST=203.0.113.0
+ONBOOT=yes
+```
+
+#### 3\. reiniciar la interfaz
+
+Aplique los cambios con el siguiente comando:
+
+```bash
+sudo systemctl restart network
+```
+
+#### Para AlmaLinux y Rocky Linux
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+### Fedora 37 y versiones posteriores
+
+Fedora ahora utiliza archivos clave. NetworkManager almacenaba previamente los perfiles de red en formato ifcfg en este directorio: `/etc/sysconfig/network-scripts/`.
+
+#### 1\. crear una copia de seguridad
+
+En nuestro ejemplo, nuestro archivo se llama `cloud-init-eno1.nmconnection`, por lo que hacemos una copia del archivo `cloud-init-eno1.nmconnection` utilizando el siguiente comando:
+
+```bash
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+Si comete algún error, puede revertir los cambios utilizando los siguientes comandos:
+
+> [!primary]
+> Tenga en cuenta que el nombre del archivo de red en nuestro ejemplo puede ser diferente del suyo. Adapte los comandos a su nombre de archivo.
+>
+
+
+```bash
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+No modifique las líneas existentes en el fichero de configuración, añada su Additional IP al fichero como sigue, sustituyendo `ADDITIONAL_IP/32` por sus propios valores:
+
+```console
+[IPv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+Si tiene dos direcciones Additional IP que configurar, la configuración debería ser similar a la siguiente:
+
+
+```console
+[IPv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+**Ejemplo**
+
+```console
+[IPv4]
+method=auto
+may-fail=false
+address1=203.0.113.0/32
+```
+
+#### 2\. 
 
 ### Windows Server 2016
 
@@ -226,40 +392,6 @@ Abra la consola de comandos (cmd) e introduzca `ipconfig`. La configuración deb
 
 ![comprobar la configuración de red actual](images/image8-8.png){.thumbnail}
 
-### cPanel (CentOS 7)/Red Hat
-
-#### 1\. editar el archivo de configuración de red
-
-Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
-
-```bash
-ip a
-```
-
-Abra el archivo de configuración de red para modificarlo:
-
-```bash
-sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
-```
-
-Añada las siguientes líneas:
-
-```bash
-DEVICE=NETWORK_INTERFACE:ID
-BOOTPROTO=static
-IPADDR=ADDITIONAL_IP
-NETMASK=255.255.255.255
-BROADCAST=ADDITIONAL_IP
-ONBOOT=yes
-```
-
-#### 2\. reiniciar la interfaz
-
-Aplique los cambios con el siguiente comando:
-
-```bash
-sudo systemctl restart networking
-```
 
 ### Plesk
 
