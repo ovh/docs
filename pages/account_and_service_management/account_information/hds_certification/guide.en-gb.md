@@ -1,6 +1,6 @@
 ---
 title: "OVHcloud products HDS certification"
-updated: 2024-03-05
+updated: 2024-03-28
 ---
 
 ## Objective
