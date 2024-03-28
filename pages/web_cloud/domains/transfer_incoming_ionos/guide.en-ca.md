@@ -1,7 +1,7 @@
 ---
 title: 'Transferring an Ionos domain name to OVHcloud'
 excerpt: 'Find out more about transferring an Ionos domain name to OVHcloud'
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 ## Objective
