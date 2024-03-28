@@ -12,7 +12,7 @@ To transfer an Ionos domain name, you will need to follow a specific procedure.
 
 > [!warning]
 >
-> The domain name [registrar](https://www.ovhcloud.com/en-gb/learn/what-is-domain-name-registrar/) is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same registrar (usually once a year).
+> The domain name [registrar](https://www.ovhcloud.com/en-sg/learn/what-is-domain-name-registrar/) is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same registrar (usually once a year).
 >
 > If OVHcloud is already the registrar of your domain name, the incoming domain transfer procedure does not apply. The incoming domain transfer procedure described in this guide is **only** appropriate for domain names registered with a registrar other than OVHcloud.
 >
@@ -40,7 +40,7 @@ You must also:
 >
 > OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
 >
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or your current domain name registrar if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) and/or your current domain name registrar if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Instructions
@@ -62,7 +62,7 @@ You must also:
 
 ### Step 1 - Disable private recording
 
-To confirm whether private registration is enabled for your domain name, follow the steps described in [Ionos dedicated documentation](https://www.ionos.co.uk/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/){.external}.
+To confirm whether private registration is enabled for your domain name, follow the steps described in [Ionos dedicated documentation](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/){.external}.
 
 ### Step 2 - Disable transfer locking
 
@@ -71,13 +71,13 @@ To confirm whether private registration is enabled for your domain name, follow 
 > For security, domain names with a generic extension (e.g. *.com*, *.net* or *.org*) are locked by default and cannot be transferred. Before you can initiate a domain name transfer, you must disable this transfer lock.
 >
 
-Follow the steps described in [Ionos dedicated documentation](https://www.ionos.co.uk/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/){.external}.
+Follow the steps described in [Ionos dedicated documentation](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/){.external}.
 
 ### Step 3 - Get the authorization code
 
 The authorization code protects your domain name against unauthorized transfers by third parties. This code is required to authorize the transfer of your domain name to a new provider.
 
-Follow the steps described in [Ionos dedicated documentation](https://www.ionos.co.uk/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/){.external}.
+Follow the steps described in [Ionos dedicated documentation](https://www.ionos.com/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/){.external}.
 
 Once you have obtained the authorization code, you can proceed with the transfer of your domain name by following the steps in our guide “[Transfer your domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)”.
 
@@ -85,8 +85,8 @@ Once you have obtained the authorization code, you can proceed with the transfer
 
 [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
