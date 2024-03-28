@@ -10,10 +10,8 @@ Pour rendre vos infrastructures et plateformes Public Cloud conformes à [l’h�
 
 Les services OVHcloud Public Cloud sont certifiés HDS pour certaines activités listées dans le [référentiel de certification](https://esante.gouv.fr/labels-certifications/hds/certification-des-hebergeurs-de-donnees-de-sante){.external} de l'Agence Numérique en Santé.
 
-|Services Public Cloud|Actvités certifiées HDS|
-|---|---|
-|Compute, Storage (Block, Object, Archive, Snapshot, Instance Backup)|1,2,3,4,6|
-|Managed Kubernetes Service, Managed Private Registry, AI Training, Data Processing, Public Cloud Databases|1,2,3,4,5,6|
+La liste des produits OVHcloud certifiés est disponible sur [ce lien] (/pages/account_and_service_management/account_information/hds_certification). 
+
 
 **Découvrez comment activer l’option pour l’hébergement des données de santé sur votre projet Public Cloud**
 
