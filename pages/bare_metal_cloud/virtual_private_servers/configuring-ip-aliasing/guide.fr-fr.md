@@ -397,7 +397,7 @@ Entrez votre adresse Additional IP sous la forme `xxx.xxx.xxx.xxx/32` dans le ch
 
 Dans la section « IP Addresses », vérifiez que l'adresse Additional IP a été correctement ajoutée.
 
-![configuration IP actuelle](images/plesk-final-config.png){.thumbnail}
+![configuration IP actuelle](images/plesk-final-configuration.png){.thumbnail}
 
 ### Windows Server
 
