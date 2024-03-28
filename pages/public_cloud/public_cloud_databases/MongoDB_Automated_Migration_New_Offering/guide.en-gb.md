@@ -41,7 +41,7 @@ This migration is planned as regular maintenance and can be manually triggered b
 
 Migration can be initiated now towards the new Production and Advanced plans by following [the migration guide](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-mongodb-migrate-production-advanced-cli?id=kb_article_view&sysparm_article=KB0061012).
 
-If your workload is small enough to fit the Discovery plan, a migration to this plan can be considered by following [this guide]([https://help.ovhcloud.com/en-gb/public-cloud/databases/mongodb/migrate-discovery-cli?id=kb_article_view&sysparm_article=KB0060713](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-mongodb-migrate-discovery-cli?id=kb_article_view&sysparm_article=KB0060713)).
+If your workload is small enough to fit the Discovery plan, a migration to this plan can be considered by following [this guide]([https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-mongodb-migrate-production-advanced-cli?id=kb_article_view&sysparm_article=KB0061012](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-mongodb-migrate-discovery-cli?id=kb_article_view&sysparm_article=KB0060713)). 
 
 Otherwise, once the migration operation is scheduled, it will be automatically applied at the scheduled time but can also be launched manually before this date.
 
