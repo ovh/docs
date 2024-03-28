@@ -200,7 +200,20 @@ However, you can still replicate delete markers by adding the `DeleteMarkerRepli
 
 ### Checking the replication status
 
-The replication status can be used to determine the status of an object that is being replicated. When you request a source object (using `GET object`) or source object metadata (using `HEAD object`), OVHcloud Object Storage returns the replication status via the header `x-amz-replication-status`.
+The replication status can be used to determine the status of an object that is being replicated.To get the replication status of an object, you can use the head-object command via the aws cli : 
+```bash
+$ aws s3api head-object --bucket <source_bucket> --key <object_name>
+{
+   "LastMoodified" : "Fri, 15 Mar 2024 10:18:15 GMT",
+   "ContentLength": 3481,
+   "Etag": "\"417947d3634d4645e05ca9e875f5b202\"",
+   "VersionId": "17104978950.04081",
+   "ContentType": "binary/octet-stream",
+   "Metadata": { },
+   "StorageClass": "STANDARD",
+   "ReplicationStatus": "COMPLETED"
+}
+```
 
 > [!warning]
 > The replication status only applies to objects that are eligible for replication.
