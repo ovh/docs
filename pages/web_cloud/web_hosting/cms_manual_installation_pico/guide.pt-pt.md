@@ -110,6 +110,12 @@ Acaba de instalar manualmente o CMS Pico no seu alojamento web da OVHcloud. Depo
 
 [Tutorial - Instalar manualmente o PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 
+[Tutorial - Instalar manualmente o Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+
+[Tutorial - Instalar manualmente o Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+
+[Tutorial - Instalar manualmente o SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+
 [Tutorial - Instalar manualmente um CMS no meu alojamento](/pages/web_cloud/web_hosting/cms_manual_installation)
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).

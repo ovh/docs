@@ -106,6 +106,12 @@ Vous venez d'installer manuellement le CMS Pico sur votre hébergement web OVHcl
 
 [Tutoriel - Installer manuellement PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 
+[Tutoriel - Installer manuellement Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+
+[Tutoriel - Installer manuellement Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+
+[Tutoriel - Installer manuellement SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
