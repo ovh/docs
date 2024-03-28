@@ -841,7 +841,7 @@ Si vous venez de configurer le DKIM, cela signifie que l'activation du DKIM n'es
 
 Si le statut reste rouge après 24h, vérifiez l'état du sélecteur que vous avez activé. Pour cela, appuyez-vous sur la section « [Les différents états du DKIM](#dkim-status) » de ce guide.
 
-Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace client:
+Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace client, sélectionnez l'onglet correspondant à votre code erreur:
 
  [!tabs]
 > **501**
