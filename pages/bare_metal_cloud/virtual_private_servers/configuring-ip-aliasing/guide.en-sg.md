@@ -389,7 +389,7 @@ Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP add
 
 Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
 
-![current IP configuration](images/Plesk-final-config.png){.thumbnail}
+![current IP configuration](images/plesk-final-config.png){.thumbnail}
 
 ### Windows Servers
 
