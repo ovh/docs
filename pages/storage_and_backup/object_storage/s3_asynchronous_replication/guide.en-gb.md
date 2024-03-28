@@ -220,7 +220,7 @@ $ aws s3api head-object --bucket <source_bucket> --key <object_name>
 > [!warning]
 > The replication status only applies to objects that are eligible for replication.
 
-The `x-amz-replication-status` can have the following values:
+The `ReplicationStatus attribute` can have the following values:
 
 | Source object                                          | Replica Object                                      |
 |--------------------------------------------------------------|--------------------------------------------------------------|
@@ -242,6 +242,7 @@ Simple replication between 2 buckets:
   "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
+      "ID": "ruleId",
       "Status": "Enabled",
       "Priority": 1,
       "Filter": { },
