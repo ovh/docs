@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installa manualmente Grav"
 excerpt: "Scopri come installare un CMS Grav su un hosting Web OVHcloud"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 > [!primary]

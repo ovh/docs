@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installing Grav manually"
 excerpt: "Find out how to install Grav CMS manually"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 ## Objective
