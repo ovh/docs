@@ -8,6 +8,8 @@ updated: 2024-03-28
 
 **CMS** (**C**ontent **M**anagement **S**ystem) SPIP is a solution adapted to editorial websites such as online magazines, newspapers or institutional websites. With its modular architecture and customizable skeleton system, SPIP allows you to design feature-rich websites, while offering a wide range of customization options.
 
+**Find out how to manually install the SPIP CMS on your OVHcloud web hosting plan.**
+
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
