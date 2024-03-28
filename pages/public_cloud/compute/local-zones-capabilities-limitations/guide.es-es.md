@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades y límites
 excerpt: Descubra las funcionalidades, capacidades y límites actuales de las instancias de Local Zone
-updated: 2024-03-04
+updated: 2024-04-02
 ---
 
 > [!primary]
@@ -28,6 +28,11 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 | Soporte IPv4 público | Sí |
 | Boot/Start | Sí |
 | Stop | Sí |
+| Block Storage | Sí |
+| Copias de seguridad de instancias | No |
+| Snapshots de volúmenes | No |
+| Copias de seguridad de volúmenes | No |
+| Object Storage | No |
 
 ## Capacidades y limitaciones
 
