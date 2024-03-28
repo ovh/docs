@@ -23,7 +23,7 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de red 
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. No tenemos acceso a estas máquinas, por lo que no somos los administradores de las mismas y no podremos asistirle. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de un servidor, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de un servidor, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Para más información, consulte el apartado «Más información» de esta guía.
 >
 
 ## Requisitos
@@ -290,7 +290,7 @@ sudo systemctl restart NetworkManager
 
 ### Fedora 37 y versiones posteriores
 
-Fedora ahora utiliza archivos clave. NetworkManager almacenaba previamente los perfiles de red en formato ifcfg en este directorio: `/etc/sysconfig/network-scripts/`.
+Fedora ahora utiliza archivos clave. NetworkManager almacenaba previamente los perfiles de red en formato ifcfg en este directorio: `/etc/sysconfig/network-scripts/`. Sin embargo, el formato ifcfg está obsoleto. De forma predeterminada, NetworkManager ya no crea nuevos perfiles en este formato. El archivo de configuración se encuentra ahora en `/etc/NetworkManager/system-connections/`.
 
 #### 1\. crear una copia de seguridad
 
@@ -302,10 +302,16 @@ sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /
 
 Si comete algún error, puede revertir los cambios utilizando los siguientes comandos:
 
+```bash
+sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+#### 2\. modificar el archivo de configuración
+
 > [!primary]
 > Tenga en cuenta que el nombre del archivo de red en nuestro ejemplo puede ser diferente del suyo. Adapte los comandos a su nombre de archivo.
 >
-
 
 ```bash
 sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -314,7 +320,7 @@ sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 No modifique las líneas existentes en el fichero de configuración, añada su Additional IP al fichero como sigue, sustituyendo `ADDITIONAL_IP/32` por sus propios valores:
 
 ```console
-[IPv4]
+[ipv4]
 method=auto
 may-fail=false
 address1=ADDITIONAL_IP/32
@@ -322,9 +328,8 @@ address1=ADDITIONAL_IP/32
 
 Si tiene dos direcciones Additional IP que configurar, la configuración debería ser similar a la siguiente:
 
-
 ```console
-[IPv4]
+[ipv4]
 method=auto
 may-fail=false
 address1=ADDITIONAL_IP1/32
@@ -334,63 +339,44 @@ address2=ADDITIONAL_IP2/32
 **Ejemplo**
 
 ```console
-[IPv4]
+[ipv4]
 method=auto
 may-fail=false
 address1=203.0.113.0/32
 ```
 
-#### 2\. 
+#### 3\. reiniciar la interfaz
 
-### Windows Server 2016
+```bash
+sudo systemctl restart NetworkManager
+```
 
-#### 1\. comprobar la configuración de red
+### cPanel
 
-Haga clic derecho en el botón `Menú Iniciar`{.action} y abra `Ejecutar`{.action}.
+#### 1\. acceder a la sección de gestión de las IP del WHM
 
-Pulse `cmd` y haga clic en `Aceptar`{.action} para abrir la aplicación de línea de órdenes.
+En el área de cliente de WHM, haga clic en `IP Functions`{.action} y seleccione `Add a New IP Address`{.action} en el menú de la izquierda.
 
-![cmdprompt](images/vps_win07.png){.thumbnail}
+![Add new IP](images/cpanel-alma-1.png){.thumbnail}
 
-Para obtener la configuración de IP actual, introduzca `ipconfig` en la consola de comandos.
+#### 2\. añadir la información de las direcciones Additional IP
 
-![comprobar la configuración IP principal](images/image1-1.png){.thumbnail}
+ntroduzca su dirección Additional IP con el formato «xxx.xxx.xxx.xxx» en el campo «New IP or IP range to add».
 
-#### 2\. modificar las propiedades IPv4
+Seleccione `255.255.255.255` como máscara de subred y haga clic en `Submit`{.action}.
 
-Ahora deberá modificar las propiedades IP en una configuración estática.
+![enter new IP information](images/cpanel-alma-2.png){.thumbnail}
 
-Abra la configuración del adaptador en el Panel de control Windows y abra las `Propiedades`{.action} del `Protocolo de Internet versión 4 (TCP/IPv4)`{.action}.
+> [!warning]
+>
+> Atención, si tiene varias IP que configurar en un mismo bloque y las añade todas al mismo tiempo, el sistema WHM le obligará a utilizar la máscara de subred `255.255.255.0`. No se recomienda utilizar esta configuración, es necesario añadir cada IP individualmente para poder utilizar la máscara de subred adecuada `255.255.255.255`.
+>
 
-![modificar la configuración IP](images/image2.png){.thumbnail}
+#### 3\. comprobar la configuración IP actual
 
-En la ventana Propiedades IPv4, seleccione `Usar la siguiente`{.action} dirección IP. Introduzca la dirección IP que haya obtenido en el primer paso y haga clic en `Avanzado`{.action}.
+Vuelva a la sección `IP Functions`{.action} y haga clic en `Show or Delete Current IP Addresses`{.action} para comprobar que la dirección Additional IP se ha añadido correctamente.
 
-#### 3\. añadir la dirección Additional IP en los Parámetros TCP/IP avanzados
-
-En la nueva ventana, haga clic en `Añadir...`{.action} en "Direcciones IP". Introduzca su dirección Additional IP y la máscara de subred (255.255.255.255).
-
-![sección de configuración avanzada](images/image4-4.png){.thumbnail}
-
-Confirme haciendo clic en `Añadir`{.action}.
-
-![Configuración del cambio de IP](images/image5-5.png){.thumbnail}
-
-#### 4\. reiniciar la interfaz de red
-
-En el panel de configuración (`Conexiones de red`{.action}), haga clic derecho en la interfaz de red y seleccione `Desactivar`{.action}.
-
-![desactivación de la red](images/image6.png){.thumbnail}
-
-Para reiniciarla, haga clic derecho sobre ella y seleccione `Activar`{.action}.
-
-![activación de la red](images/image7.png){.thumbnail}
-
-#### 5\. comprobar la nueva configuración de red
-
-Abra la consola de comandos (cmd) e introduzca `ipconfig`. La configuración debe incluir ahora la nueva dirección Additional IP.
-
-![comprobar la configuración de red actual](images/image8-8.png){.thumbnail}
+![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 
 
 ### Plesk
@@ -407,17 +393,83 @@ Haga clic en `IP Addresses`{.action} bajo **Tools & Settings**.
 
 En esta sección, haga clic en el botón `Add IP Address`{.action}.
 
-![añadir información IP](images/pleskip2-2.png){.thumbnail}
+![añadir información IP](images/Plesk-2024-vps.png){.thumbnail}
 
 Introduzca su dirección Additional IP como `xxx.xxx.xxx.xxx/32` en el campo "IP address and subnet mask" y haga clic en `OK`{.action}.
 
-![añadir información IP](images/pleskip3-3.png){.thumbnail}
+![añadir información IP](images/Plesk-additional-ip.png){.thumbnail}
 
 #### 3\. comprobar la configuración IP actual
 
 En la sección "Direcciones IP", compruebe que la dirección Additional IP se haya añadido correctamente.
 
-![configuración IP actual](images/pleskip4-4.png){.thumbnail}
+![configuración IP actual](images/Plesk-final-config.png){.thumbnail}
+
+
+### Windows Server 
+
+#### 1\. comprobar la configuración de red
+
+Haga clic derecho en el botón `Start`{.action} y abra `Run`{.action}.
+
+Pulse `cmd` y haga clic en `OK`{.action} para abrir la aplicación de línea de órdenes.
+
+![cmdprompt](images/vps_win07.png){.thumbnail}
+
+Para obtener la configuración de IP actual, introduzca `ipconfig` en la consola de comandos.
+
+```powershell
+C:\Users\Administrator>ipconfig
+Windows IP Configuration
+Ethernet adapter Ethernet:
+   Connection-specific DNS Suffix  . : openstacklocal
+   Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
+   IPv4 Address. . . . . . . . . . . : 192.0.2.29
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 192.0.2.1
+```
+
+#### 2\. modificar las propiedades IPv4
+
+1. Vaya al menú `Start`{.action}, luego `Control Panel`{.action}, `Network and Internet`{.action}, `Network and Sharing Centre`{.action} y `Change Adapter Settings`{.action} en la barra de la izquierda.
+2. Haga clic derecho en `Ethernet`{.action};
+3. Haga clic en `Properties`{.action};
+4. Seleccione `Internet Protocol Version 4 (TCP/IPv4)`{.action} y haga clic en `Properties`{.action};
+5. Haga clic en `Use the following IP address`{.action} e introduzca la IP principal del servidor, la máscara de subred y la puerta de enlace por defecto obtenidas con el comando `ipconfig`{.action}anterior. En el cuadro «Preferred DNS Server», escriba «213.186.33.99».
+
+![change the ip configuration](images/configure-main-ip.png){.thumbnail}
+
+> [!warning]
+>
+> Atención: si introduce información incorrecta, no podrá acceder al servidor. En ese caso, deberá realizar las correcciones oportunas a través del KVM.
+>
+
+#### 3\. añadir la dirección Additional IP en los Parámetros TCP/IP avanzados
+
+En la nueva ventana, haga clic en `Add...`{.action} en "Direcciones IP". Introduzca su dirección Additional IP y la máscara de subred (255.255.255.255).
+
+![sección de configuración avanzada](images/configure-additional-ip.png){.thumbnail}
+
+Confirme haciendo clic en `Add`{.action}.
+
+![Configuración del cambio de IP](images/images/final-configuration.png){.thumbnail}
+
+#### 4\. comprobar la configuración IP actual
+
+Abra el símbolo del sistema (cmd) e introduzca `ipconfig`. La configuración debe incluir ahora la nueva dirección Additional IP.
+
+```powershell
+C:\Users\Administrator>ipconfig
+Windows IP Configuration
+Ethernet adapter Ethernet:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
+   IPv4 Address. . . . . . . . . . . : 192.0.2.29
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   IPv4 Address. . . . . . . . . . . : 203.0.113.0
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 192.0.2.1
+```
 
 ### Diagnóstico
 
@@ -435,4 +487,6 @@ Para probar la conexión, solo tiene que enviar un ping a su dirección Addition
 
 [Activar el modo de rescate en un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+ 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

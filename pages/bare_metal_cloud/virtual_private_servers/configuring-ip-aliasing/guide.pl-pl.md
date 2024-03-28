@@ -23,15 +23,15 @@ Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dl
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajduje się w sekcji "Sprawdź również".
 >
 
 ## Wymagania początkowe
 
-- jednego [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
-- dostęp administratora (sudo) przez SSH lub GUI do serwera
-- podstawowa wiedza o sieciach i ich administrowaniu
+- Posiadanie usługi [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+- Dostęp administratora (sudo) przez SSH lub GUI do serwera
+- Posiadanie podstawowej wiedzy na temat sieci i zarządzania nimi
 
 ## W praktyce
 
@@ -46,7 +46,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 
 |Nazwa|Opis|Przykłady|
 |---|---|---|
-|ADDITIONAL_IP|Adres Additional IP przypisany do Twojej usługi|169.254.10.254|
+|ADDITIONAL_IP|Adres Additional IP przypisany do Twojej usługi|203.0.113.0|
 |NETWORK_INTERFACE|Nazwa interfejsu sieciowego|*eth0*, *ens3*|
 |ID|ID aliasu IP, zaczynające się od *0* (w zależności od liczby dodatkowych adresów IP do skonfigurowania)|*0*, *1*|
 
@@ -62,13 +62,30 @@ sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 
 Wprowadź następującą linię, następnie zapisz i wyjdź z edytora.
 
-```bash
+```console
 network: {config: disabled}
 ```
 
 Utworzenie tego pliku konfiguracyjnego zapobiega automatycznemu wprowadzaniu zmian w konfiguracji Twojej sieci.
 
 #### Etap 2: zmień plik konfiguracyjny sieci
+
+Domyślnie plik konfiguracyjny znajduje się w ścieżce `etc\Nnetwork\interfaces.d`.
+
+W naszym przykładzie nasz plik nosi nazwę `50-cloud-init`, dlatego wykonujemy kopię pliku `50-cloud-init`, używając następującego polecenia:
+
+```bash
+sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
+
+W przypadku błędu będziesz mógł wrócić do wprowadzonych zmian, używając następujących poleceń:
+
+```bash
+sudo rm -f /etc/network/interfaces.d/50-cloud-init
+sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50-cloud-init
+```
+
+#### Etap 3: zmień plik konfiguracyjny sieci
 
 Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
 
@@ -82,16 +99,37 @@ Otwórz plik konfiguracyjny sieci, aby go zmienić za pomocą następującego po
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
-Następnie dodaj następujące wiersze:
+Aby skonfigurować adres Additional IP, dodaj interfejs wirtualny lub alias Ethernet do interfejsu sieciowego. W naszym przykładzie nasz interfejs nosi nazwę `eth0`, więc nasz pierwszy alias to `eth0:0`. Zrób to dla każdego adresu Additional IP, który chcesz skonfigurować.
 
-```bash
+Nie zmieniaj istniejących wierszy w pliku konfiguracyjnym, dodaj tylko adres Additional IP do następującego pliku, zastępując `NETWORK_INTERFACE`, `ID` i `ADDITIONAL_IP` własnymi wartościami:
+
+```console
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
 address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
-#### Etap 3: uruchom ponownie interfejs
+Jeśli konfigurujesz więcej niż jeden adres Additional IP, plik konfiguracyjny powinien wyglądać następująco:
+
+```console
+auto NETWORK_INTERFACE:ID
+iface NETWORK_INTERFACE:ID inet static
+address ADDITIONAL_IP1
+address ADDITIONAL_IP2
+netmask 255.255.255.255
+```
+
+**Przykład**
+
+```console
+auto NETWORK_INTERFACE:ID
+iface NETWORK_INTERFACE:ID inet static
+address 203.0.113.0
+netmask 255.255.255.255
+```
+
+#### Etap 4: restart interfejsu
 
 Zastosuj zmiany za pomocą polecenia:
 
@@ -99,27 +137,23 @@ Zastosuj zmiany za pomocą polecenia:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04 & Debian 12
+### Debian 12, Ubuntu 20.04 i późniejsze wersje
 
-Plik konfiguracyjny adresów Additional IP znajduje się w katalogu `/etc/netplan/`. W tym przykładzie nosi nazwę "50-cloud-init.yaml". Zanim wprowadzisz zmiany, sprawdź w tym folderze nazwę rzeczywistego pliku. Każdy adres Additional IP wymaga własnej linii w pliku.
+Plik konfiguracyjny adresów Additional IP znajduje się w pliku`/etc/netplan/`. W tym przykładzie nazywa się `50-cloud-init.yaml`.
+
+Najlepszą praktyką jest utworzenie oddzielnego pliku konfiguracyjnego w celu zdefiniowania adresów Additional IP. W przypadku błędu można łatwo przywrócić modyfikacje.
 
 #### Etap 1: wyłącz automatyczną konfigurację sieci
 
-Otwórz ścieżkę dostępu do następującego pliku z edytorem tekstu:
+Otwórz ścieżkę dostępu do następującego pliku z edytorem tekstu:Utwórz plik konfiguracyjny sieci
+
+W naszym przykładzie nasz plik nosi nazwę `51-cloud-init.yaml`:
 
 ```bash
-sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+sudo touch /etc/netplan/51-cloud-init.yaml
 ```
 
-Wprowadź następującą linię, następnie zapisz i wyjdź z edytora.
-
-```bash
-network: {config: disabled}
-```
-
-Utworzenie tego pliku konfiguracyjnego zapobiega automatycznemu wprowadzaniu zmian w konfiguracji Twojej sieci.
-
-#### Etap 2: zmień plik konfiguracyjny
+#### Etap 2: modyfikacja pliku konfiguracyjnego
 
 Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
 
@@ -130,33 +164,53 @@ ip a
 Otwórz plik konfiguracyjny sieci, aby go zmienić za pomocą następującego polecenia:
 
 ```bash
-sudo nano /etc/netplan/50-cloud-init.yaml
+sudo nano /etc/netplan/51-cloud-init.yaml
 ```
 
-Nie zmieniaj istniejących linii w pliku konfiguracyjnym. Dodaj adres Additional IP, dodając drugi blok konfiguracji do interfejsu publicznego, jak w poniższym przykładzie:
+Edytuj plik, zastępując polecenia `INTERFACE_NAME` i `ADDITIONAL_IP` własnymi wartościami:
 
 ```yaml
 network:
-    version: 2
-    ethernets:
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE            
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE
-            addresses:
-            - ADDITIONAL_IP/32
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP/32
+```
+
+Jeśli masz więcej niż jeden adres Additional IP do skonfigurowania, plik konfiguracyjny powinien wyglądać następująco:
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       INTERFACE_NAME:
+           dhcp4: true
+           addresses:
+           - ADDITIONAL_IP1/32
+           - ADDITIONAL_IP2/32
 ```
 
 > [!warning]
 >
 > Ważne jest przestrzeganie wyrównania każdego elementu tego pliku, jak pokazano w powyższym przykładzie. Nie używaj przycisku tabulacji do tworzenia odstępów.
 >
+
+**Przykład**
+
+```yaml
+network:
+   version: 2
+   renderer: networkd
+   ethernets:
+       eth0:
+           dhcp4: true
+           addresses:
+           - 203.0.113.0/32
+```
 
 Zapisz i zamknij plik.
 
@@ -175,6 +229,95 @@ sudo netplan apply
 ```
 
 Powtórz tę procedurę dla każdego adresu Additional IP.
+
+### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+
+Główny plik konfiguracyjny znajduje się w folderze`/etc/sysconfig/network-scripts/`. W tym przykładzie nazywa się `ifcfg-eth0`. Przed wprowadzeniem zmian sprawdź rzeczywistą nazwę pliku w tym folderze.
+
+Dla każdego adresu Additional IP, który chcesz skonfigurować, utwórz osobny plik konfiguracyjny z następującymi parametrami: `ifcfg-NETWORK_INTERFACE:ID`. Gdzie `NETWORK_INTERFACE` reprezentuje interfejs fizyczny, a `ID` reprezentuje wirtualny interfejs sieciowy lub alias ethernetowy rozpoczynający się od wartości 0. Na przykład w przypadku interfejsu o nazwie `eth0` pierwszy alias to `eth0:0`, drugi alias to `eth0:1`, etc.
+
+
+#### Etap 1: zmień plik konfiguracyjny sieci
+
+Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
+
+```bash
+ip a
+```
+
+#### Etap 2: tworzenie pliku konfiguracyjnego
+
+Najpierw utwórz plik konfiguracyjny. Zastąp `NETWORK_INTERFACE:ID` własnymi wartościami.
+
+```bash
+sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+```
+
+Następnie edytuj plik z poniższą zawartością, zastępując `NETWORK_INTERFACE:ID` i `ADDITIONAL_IP` własnymi wartościami:
+
+```console
+DEVICE=NETWORK_INTERFACE:ID
+ONBOOT=yes
+BOOTPROTO=static
+IPADDR=ADDITIONAL_IP
+NETMASK=255.255.255.255
+BROADCAST=ADDITIONAL_IP
+```
+
+**Przykład**
+
+```console
+DEVICE=eth0:0
+ONBOOT=yes
+BOOTPROTO=static
+IPADDR=203.0.113.0
+NETMASK=255.255.255.255
+BROADCAST=203.0.113.0
+```
+
+#### Etap 3: restart interfejsu
+
+Zastosuj zmiany za pomocą polecenia:
+
+```bash
+sudo systemctl restart network
+```
+
+#### Dla AlmaLinux i Rocky Linux
+
+```bash
+sudo systemctl restart Network Manager
+```
+
+### Fedora 37 i późniejsze wersje
+
+Fedora używa teraz kluczowych plików. NetworkManager przechowywał wcześniej profile sieciowe w formacie ifcfg w tym katalogu:`/etc/sysconfig/network-scripts/`. Jednak format ifcfg jest teraz przestarzały. Domyślnie program NetworkManager nie tworzy już nowych profilów w tym formacie. Plik konfiguracyjny znajduje się teraz w `/etc/NetworkManager/system-connections/`.
+
+#### Etap 1: tworzenie kopii zapasowej
+
+W naszym przykładzie nasz plik nosi nazwę `cloud-init-eno1.nmconnection`, wykonujemy zatem kopię pliku `cloud-init-eno1.nmconnection` przy użyciu następującego polecenia:
+
+```bash
+sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+W przypadku błędu będziesz mógł wrócić do wprowadzonych zmian, używając następujących poleceń:
+
+```bash
+sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+#### Etap 2: modyfikacja pliku konfiguracyjnego
+
+> [!primary]
+> Pamiętaj, że nazwa pliku sieciowego w naszym przykładzie może się różnić od Twojej. Dostosuj polecenia do nazwy pliku.
+>
+
+```bash
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
 
 ### Windows Server 2016
 
@@ -226,40 +369,6 @@ Otwórz wiersz poleceń (cmd) i wprowadź `ipconfig`. Konfiguracja musi teraz za
 
 ![sprawdź aktualną konfigurację sieci](images/image8-8.png){.thumbnail}
 
-### cPanel (CentOS 7) / pochodne Red Hat
-
-#### Etap 1: zmień plik konfiguracyjny sieci
-
-Nazwy interfejsu sieciowego możesz sprawdzić za pomocą polecenia:
-
-```bash
-ip a
-```
-
-Otwórz plik konfiguracyjny sieci, aby go zmienić:
-
-```bash
-sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
-```
-
-Dodaj te linie:
-
-```bash
-DEVICE=NETWORK_INTERFACE:ID
-BOOTPROTO=static
-IPADDR=ADDITIONAL_IP
-NETMASK=255.255.255.255
-BROADCAST=ADDITIONAL_IP
-ONBOOT=yes
-```
-
-#### Etap 2: uruchom ponownie interfejs
-
-Zastosuj zmiany za pomocą polecenia:
-
-```bash
-sudo systemctl restart networking
-```
 
 ### Plesk
 
