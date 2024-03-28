@@ -35,8 +35,8 @@ This migration is planned as regular maintenance and can be manually triggered b
 
 - **For Business Services:** These services, already configured as a three-member replica set, will lose the capability to scale up in the Production plan. The switch from DB1-X to DB2-X flavor will also maintain the same vCores and memory, with reduced base storage. Depending on these changes, the final price could decrease with less storage required or increase with a significant need for additional storage ([Pricing Details](https://www.ovhcloud.com/en-gb/public-cloud/prices/)).
 
-- **For Enterprise Services:** Enterprise services will transition to the Advanced plan, with broad price reductions. The service flavor conversion from DB1-X to DB2-X will retain the same amount of vCore and memory but offer less base storage. Most services should see a lower final price due to these global price reductions and reduced storage requirements. However, prices could increase for services needing significant additional storage. For a comprehensive view of pricing, check [OVHcloud Pricing](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
-
+- **For Enterprise Services:** Enterprise services will transition to the Advanced plan, with broad price reductions. The service flavor conversion from DB1-X to DB2-X will retain the same amount of vCore and memory but offer less base storage. Most services should see a lower final price due to these global price reductions and reduced storage requirements. However, prices could increase for services needing significant additional storage. For a comprehensive view of pricing, check ([Pricing Details](https://www.ovhcloud.com/en-gb/public-cloud/prices/)).
+  
 #### How to Anticipate the Migration
 
 Migration can be initiated now towards the new Production and Advanced plans by following [the migration guide](https://help.ovhcloud.com/en-gb/public-cloud/databases/mongodb/migrate-production-advanced-cli?id=kb_article_view&sysparm_article=KB0061012).
