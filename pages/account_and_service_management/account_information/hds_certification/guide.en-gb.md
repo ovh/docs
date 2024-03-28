@@ -41,7 +41,7 @@ Clients using HDS products must subscribe to a Business or Enterprise support. T
 | Message broker | yes excluding Essential and Discovery plans | 
 | Object Storage | yes | 
 | Private Registry | yes | 
-| Cold Storage | ETA : 01/2024 | 
+| Cold Storage | yes | 
 | Logs Data Platform | yes | 
 | Grafana | yes excluding Essential and Discovery plans | 
 | Web Hosting | no | 
