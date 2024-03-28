@@ -139,7 +139,7 @@ Le fichier de configuration de vos adresses Additional IP se trouve dans le fich
 
 La meilleure pratique consiste à créer un fichier de configuration distinct pour définir les adresses Additional IP. De cette manière, vous pouvez facilement revenir sur les modifications en cas d'erreur.
 
-#### Étape 1 : Créer le fichier de configuration du réseau
+#### Étape 1 : créer le fichier de configuration du réseau
 
 Dans notre exemple, notre fichier s'appelle `51-cloud-init.yaml` :
 
@@ -294,6 +294,13 @@ sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /
 ```
 
 En cas d'erreur, vous pourrez revenir sur les modifications en utilisant les commandes ci-dessous :
+
+```bash
+sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+#### Étape 2 : modifier le fichier de configuration
 
 > [!primary]
 > Veuillez noter que le nom du fichier réseau dans notre exemple peut être différent du vôtre. Veuillez adapter les commandes à votre nom de fichier.
