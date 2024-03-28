@@ -1,44 +1,47 @@
 ---
 title: Transitioning to New MongoDB Offerings & Automated Migration Guide
 excerpt: Learn about the transition from MongoDB's current offerings to the new plans and understand the automated migration process to effectively plan your transition.
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 ## Objective
 
-**This guide provides comprehensive information on transitioning from MongoDB's current offerings (Essential, Business, Enterprise) to the newly introduced plans (Discovery, Business, Advanced). It also covers the automated migration process, enabling customers to understand the changes, assess the impacts, and plan for a smooth migration.**
+**This document aims to inform customers about changes to MongoDB offerings and the automated migration process, enabling clear understanding of the stakes and effective anticipation of the operation.**
 
 ## Requirements
 
-- Active MongoDB Essential, Business, or Enterprise service with OVHcloud.
-- Familiarity with your current MongoDB service plan and requirements.
-- Understanding of the features and limitations of the new MongoDB plans.
+- Current subscription to MongoDB Essential, Business, or Enterprise services with OVHcloud.
+- Knowledge of your current service plan and requirements.
 
 ## Instructions
 
 ### End of Sale Notification
 
-The introduction of the new MongoDB Discovery, Production, and Advanced plans on 7th December 2023 marks the end of sale for the existing Essential, Business, and Enterprise offerings. This aligns with our product lifecycle policy and aims to provide enhanced services and free usage opportunities to our customers.
+The introduction of the new MongoDB Discovery, Production, and Advanced plans on December 7, 2023, marked the end of sale for the MongoDB Essential, Business, and Enterprise offers, in line with our product lifecycle policy. These new plans offer a unique opportunity to use MongoDB for free, tailored to our customers' usage.
 
-### Automated Migration Process
+### End of Life and Automated Migration
 
-#### Step 1: Understanding the Migration Schedule
+#### Step 1: Migration Schedule
 
-The Essential, Business, and Enterprise offerings will be officially discontinued on 31st May 2024. Services using these plans will be automatically migrated to the new offerings based on their current plans:
+May 31, 2024, will signify the end of life for the MongoDB Essential, Business, and Enterprise offers. Services under these plans will be automatically migrated to the new offering:
 - Essential and Business services to the Production plan.
 - Enterprise services to the Advanced plan.
 
-Migration is planned as a regular maintenance operation, which can also be initiated manually by customers before the scheduled date.
+This migration is planned as regular maintenance and can be manually triggered before this date.
 
 #### Step 2: Preparing for Migration
 
-- **For Essential and Business Services:** Be aware that migration to the Production plan will involve a transition from a single node cluster to a three-member replica set, along with changes in the service flavor and potentially an increase in service pricing based on the new plan's storage and features.
-  
-- **For Enterprise Services:** Understand that moving to the Advanced plan will not only adjust your service's architecture and flavor but may also lower your overall costs due to significant price reductions across the board, despite potential changes in storage needs.
+- **For Essential Services:** They will be migrated to the Production plan, transitioning from a single node cluster to a three-member replica set. The DB1-X service flavor will be converted to DB2-X, with the same vCore and memory but reduced base storage. These changes will result in an increase in the final price of the service ([Pricing Details](https://www.ovhcloud.com/en-gb/public-cloud/prices/)).
 
-#### How to Anticipate Migration
+- **For Business Services:** These services, already configured as a three-member replica set, will lose the capability to scale up in the Production plan. The switch from DB1-X to DB2-X flavor will also maintain the same vCores and memory, with reduced base storage. Depending on these changes, the final price could decrease with less storage required or increase with a significant need for additional storage ([Pricing Details](https://www.ovhcloud.com/en-gb/public-cloud/prices/)).
 
-Customers are encouraged to migrate their services to the new plans proactively by following the detailed migration guides available on our support site. This preparation ensures a seamless transition and allows for customization of the new plan settings according to specific needs.
+#### How to Anticipate the Migration
+
+Migration can be initiated now towards the new Production and Advanced plans by following [the migration guide](https://help.ovhcloud.com/en-gb/public-cloud/databases/mongodb/migrate-production-advanced-cli?id=kb_article_view&sysparm_article=KB0061012).
+
+If your workload is small enough to fit the Discovery plan, a migration to this plan can be considered by following [this guide](https://help.ovhcloud.com/en-gb/public-cloud/databases/mongodb/migrate-discovery-cli?id=kb_article_view&sysparm_article=KB0060713).
+
+Otherwise, once the migration operation is scheduled, it will be automatically applied at the scheduled time but can also be launched manually before this date.
 
 ## Go Further
 
