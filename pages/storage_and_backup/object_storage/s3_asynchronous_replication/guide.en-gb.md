@@ -229,9 +229,9 @@ The `x-amz-replication-status` can have the following values:
 | PENDING | n/a as the replica does not exist yet|
 
 > [!warning]
-> When you replicate objects to multiple destination buckets, the value of `ReplicationStatus` is "*COMPLETED*" only when the source object has been successfully replicated to all the destination buckets, otherwise, the header remains at the "*PENDING*" value.
+> When you replicate objects to multiple destination buckets, the value of `ReplicationStatus` is "*COMPLETED*" only when the source object has been successfully replicated to all the destination buckets, otherwise, the attribute remains at the "*PENDING*" value.
 > 
-> If one or more destination fail replication, the value of the header becomes "*FAILED*".
+> If one or more destination fail replication, the value of the attribute becomes "*FAILED*".
 
 #### Examples of replication configuration
 
