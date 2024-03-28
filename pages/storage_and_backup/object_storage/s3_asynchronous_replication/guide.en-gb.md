@@ -135,7 +135,6 @@ The basic structure of a replication rule within the configuration JSON file is 
       "Status": "Enabled"|"Disabled",
       "Destination": {
         "Bucket": "arn:aws:s3:::<your_bucket_name>",
-        "StorageClass": "STANDARD"|"HIGH_PERF"
       },
       "DeleteMarkerReplication": {
         "Status": "Enabled"|"Disabled"
@@ -148,7 +147,6 @@ The basic structure of a replication rule within the configuration JSON file is 
 | Attribute               | Description                                                                                                             | Required |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------|----------|
 | Tag                     | Filter the objects by tag key and/or value.                                                                              | No       |
-| StorageClass            | The target storage class: "STANDARD" for S3 Standard and "HIGH_PERF" for S3 High Performance.                            | No       |
 | Status                  | Tells if your replication rule is *Enabled* or *Disabled*.                                                                  | Yes      |
 | Role                    | OVHcloud IAM role needed to allow OVHcloud Object Storage to access data from the source bucket & write data to destination buckets. Currently, OVHcloud has set a unique role "s3-replication". | Yes      |
 | Priority                | If there are two or more rules with the same destination bucket, objects will be replicated according to the rule with the highest priority. The higher the number, the higher the priority. | Yes      |
@@ -250,6 +248,7 @@ This configuration will replicate all objects (indicated by the empty `Filter` f
   "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
+      "ID": "ruleId",
       "Status": "Enabled",
       "Priority": 1,
       "Filter" : {
@@ -280,7 +279,10 @@ This configuration will replicate all objects that have the prefix "backup" and 
       "Filter": { }
       "Destination": {
         "Bucket": "arn:aws:s3:::region1-destination-bucket"
-      }
+      },
+  "DeleteMarkerReplication": {
+    "Status": "Disabled"
+  }
     },
     {
       "ID": "rule2",
@@ -289,7 +291,10 @@ This configuration will replicate all objects that have the prefix "backup" and 
       "Filter": { }
       "Destination": {
         "Bucket": "arn:aws:s3:::region2-destination-bucket"
-      }
+      },
+    "DeleteMarkerReplication": {
+    "Status": "Disabled"
+    }
     }
   ]
 }
