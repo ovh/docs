@@ -10,7 +10,7 @@ updated: 2024-03-28
 
 ## Objetivo
 
-El **CMS** (**C**ontent **M**Management **S**System) SPIP es una solución adecuada para sitios editoriales como revistas online, periódicos o sitios web institucionales. Gracias a su arquitectura modular y a su sistema de esqueletos personalizables, SPIP permite diseñar sitios web llenos de funcionalidades, ofreciendo al mismo tiempo una gran libertad de personalización.
+El **CMS** (**C**ontent **M**anagement **S**ystem) SPIP es una solución adecuada para sitios editoriales como revistas online, periódicos o sitios web institucionales. Gracias a su arquitectura modular y a su sistema de esqueletos personalizables, SPIP permite diseñar sitios web llenos de funcionalidades, ofreciendo al mismo tiempo una gran libertad de personalización.
 
 **Descubra cómo instalar manualmente el CMS Spip en un alojamiento web de OVHcloud.**
 

@@ -6,7 +6,7 @@ updated: 2024-03-28
 
 ## Objective
 
-**CMS** (**C**ontent **M**anagement **S**ystem) SPIP is a solution adapted to editorial websites such as online magazines, newspapers or institutional websites. With its modular architecture and customizable skeleton system, SPIP allows you to design feature-rich websites, while offering a wide range of customization options.
+The **CMS** (**C**ontent **M**anagement **S**ystem) SPIP is a solution adapted to editorial websites such as online magazines, newspapers or institutional websites. With its modular architecture and customizable skeleton system, SPIP allows you to design feature-rich websites, while offering a wide range of customization options.
 
 **Find out how to manually install the SPIP CMS on your OVHcloud web hosting plan.**
 
@@ -28,7 +28,7 @@ Follow the **full set of steps** described in our tutorial on [installing a CMS 
 
 > [!primary]
 >
-> Before continuing with the installation, clear the cache of your web browser, to avoid any malfunctions.
+> Before continuing with the installation, clear your web browser cache to avoid any errors.
 >
 
 #### Accessing your SPIP website via your browser
@@ -41,11 +41,11 @@ Select the language of your SPIP website and click `Next`{.action} to confirm. T
 
 ![Spip installation](images/installation_second_step.png){.thumbnail}
 
-Enter the information to connect to your DBMS (MySQL, for example). Once you have successfully connected to your database, the following screen will appear:
+Enter the information to connect to your DBMS (MySQL, for example). Once you have successfully connected your database, the following screen will appear:
 
 ![Spip installation](images/installation_third_step.png){.thumbnail}
 
-Select the database you want to use for your website or [create a new one](/pages/web_cloud/web_hosting/sql_create_database). Choose a prefix for your database tables. By default, the prefix `spip` is used. Click `Next`{.action} to confirm the information. The following screen appears:
+Select the database you want to use for your website or [create a new one](/pages/web_cloud/web_hosting/sql_create_database). Choose a prefix for your database tables. By default, the prefix `spip` is used. Click `Next`{.action} to confirm. The following screen appears:
 
 ![Spip installation](images/installation_fourth_step.png){.thumbnail}
 
