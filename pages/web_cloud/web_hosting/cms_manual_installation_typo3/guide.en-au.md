@@ -1,20 +1,20 @@
 ---
 title: "Tutorial - Installing Typo3 manually"
-excerpt: "Find out how to install ypo3 CMS manually"
+excerpt: "Find out how to install Typo3 CMS manually"
 updated: 2024-03-27
 ---
 
 ## Objective
 
-**CMS** (**C**ontent **M**anagement **S**ystem) Typo3 enables the development of complex and scalable websites for businesses of all sizes, from institutional sites to e-commerce platforms. With a strong developer community and a wide range of extensions, TYPO3 offers powerful tools to customize and expand your site to your specific needs.
+The **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 enables the development of complex and scalable websites for businesses of all sizes, from institutional sites to e-commerce platforms. With a strong developer community and a wide range of extensions, Typo3 offers powerful tools to customize and expand your site to your specific needs.
 
 **Find out how to manually install the Typo3 CMS on your OVHcloud web hosting plan.**
 
 ## Requirements
 
-- a [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that includes at least one database.
-- a [domain name](https://www.ovhcloud.com/en-au/domains/).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database
+- A [domain name](https://www.ovhcloud.com/en-au/domains/).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 ## Instructions
 
@@ -28,7 +28,7 @@ Follow the **full set of steps** described in our tutorial on [installing a CMS 
 
 > [!primary]
 >
-> Before continuing with the installation, clear the cache of your web browser, to avoid any malfunctions.
+> Before continuing with the installation, clear your web browser cache to avoid any errors.
 >
 
 #### Go to your Typo3 website via your browser
@@ -70,7 +70,7 @@ The fifth and final step of the installation is displayed.
 Read the information displayed on the screen and choose the option that suits you:
 
 - `Create empty starting page`: Select this option to create a default page for your website. Once you have confirmed this step, enter your domain name in your web browser to access your Typo3 website.
-- `Take me straight to the backend` : select this option to be redirected to your website's dashboard Typo3. With this dashboard, you will need to create your web pages yourself, power their content, and much more. You can find more information in the [official documentation of Typo3](https://docs.typo3.org/Home/GettingStarted.html){.external}.
+- `Take me straight to the backend`: Select this option to be redirected to your Typo3 website's dashboard. With this dashboard, you can create your web pages, edit their content, and much more. You can find more information in the [official documentation of Typo3](https://docs.typo3.org/Home/GettingStarted.html){.external}.
 
 Click `Open the TYPO3 Backend`{.action} to confirm the option you have just chosen.
 
