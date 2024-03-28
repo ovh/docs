@@ -6,9 +6,9 @@ updated: 2024-03-26
 
 ## Objective
 
-Routine firmware updates play a pivotal role in upholding your drives performance, stability, and security. Such updates often encompass critical bug fixes, enhanced compatibility, and advanced security features that are indispensable for preserving your data integrity and maintaining optimal operational efficiency.
+Routine firmware updates play a pivotal role in upholding your drive's performance, stability, and security. Such updates often encompass critical bug fixes, enhanced compatibility, and advanced security features that are indispensable for preserving your data integrity and maintaining optimal operational efficiency.
 
-An important patch has been introduced in this new firmware (version BCGNB17D). We strongly recommend to update your firmware to avoid any premature end-of-life.
+An important patch has been introduced in this new firmware (version BCGNB17D). We strongly recommend updating your firmware to avoid any premature end-of-life.
 
 Firmware Release Notes: <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/SS300/PCN-005015-A00.pdf>
 
@@ -39,7 +39,7 @@ Disk part numbers:
 
 ### Linux
 
-#### Hardware/software configuration tested on OVHcloud side
+#### Hardware/software configuration tested on the OVHcloud side
 
 | Platform                                         | Flash tool    | Firmware | Result |
 |--------------------------------------------------|---------------|----------|--------|
@@ -135,7 +135,7 @@ Then retrieve enclosure and disk slot numbers by running the command:
 > [!primary]
 > x is the ID of the controller managing the disks to be updated (see above).
 
-**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns theis disk reference and your server may have other disks connected to it.**
+**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns this particular disk and your server may have other disks connected to it.**
 
 In our example, 2 disks need to be updated (252:0 and 252:1). 252 is the disk enclosure ID and 0/1 the disk slot number:
 
@@ -212,7 +212,7 @@ Your NVMe drive now should have the firmware version **BCGNB17D**.
 
 ### ESXi 7.x
 
-#### Hardware/software configuration tested on OVHcloud side
+#### Hardware/software configuration tested on the OVHcloud side
 
 | Platform                                         | Flash tool                   | Firmware | Result |
 |--------------------------------------------------|------------------------------|----------|--------|
@@ -309,7 +309,7 @@ Then retrieve enclosure and disk slot numbers by running the command:
 > x is the ID of the controller managing the disks to be updated (see above).
 
 
-**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns this disk reference and your server may have other disks connected to it.**
+**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns this particular disk and your server may have other disks connected to it.**
 
 In our example, 2 disks need to be updated (252:0 and 252:1). 252 is the disk enclosure ID and 0/1 the disk slot number:
 
@@ -386,7 +386,7 @@ Firmware Revision = B17D
 
 ### ESXi 8.x
 
-#### Hardware/software configuration tested on OVHcloud side
+#### Hardware/software configuration tested on the OVHcloud side
 
 | Platform                                         | Flash tool                   | Firmware | Result |
 |--------------------------------------------------|------------------------------|----------|--------|
@@ -485,7 +485,7 @@ Then retrieve enclosure and disk slot numbers by running the command:
 > x is the ID of the controller managing the disks to be updated (see above).
 
 
-**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns these disk reference and your server may have other disks connected to it.**
+**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns this particular disk and your server may have other disks connected to it.**
 
 In our example, 2 disks need to be updated (252:0 and 252:1). 252 is the disk enclosure ID and 0/1 the disk slot number:
 
@@ -561,7 +561,7 @@ Firmware Revision = B17D
 
 ### Windows
 
-#### Hardware/software configuration tested on OVHcloud side
+#### Hardware/software configuration tested on the OVHcloud side
 
 | Platform                                      | Flash tool                   | Firmware | Result |
 |-----------------------------------------------|------------------------------|----------|--------|
@@ -576,7 +576,7 @@ Firmware Revision = B17D
 
 Download the StorCLI via this link: <https://docs.broadcom.com/docs-and-downloads/007.2705.0000.0000_storcli_rel.zip>
 
-Unzip the archive. The tool **storcli.exe** to use is located in the folder: storcli_rel\Unified_storcli_all_os.zip\Unified_storcli_all_os\Windows
+Unzip the archive. The tool you need to use, **storcli.exe**, is located in the folder: storcli_rel\Unified_storcli_all_os.zip\Unified_storcli_all_os\Windows
 
 #### Step 2 - Check if a firmware update is needed
 
@@ -627,7 +627,7 @@ Then retrieve enclosure and disk slot numbers by running the command:
 > [!primary]
 > x is the ID of the controller managing the disks to be updated; y is the disk enclosure ID; z is the disk slot number (see above).
 
-**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns these disk reference and your server may have other disks connected to it.**
+**We added a filter on this command to only display the SSD SAS Western Digital SS300 because the firmware update only concerns this particular disk and your server may have other disks connected to it.**
 
 In our example, 2 disks need to be updated (252:0 and 252:1). 252 is the disk enclosure ID and 0/1 the disk slot number:
 
