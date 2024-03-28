@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installare manualmente un CMS sul tuo hosting"
 excerpt: "Questa guida ti mostra come installare manualmente un CMS sul tuo hosting"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 > [!primary]

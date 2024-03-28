@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar manualmente un CMS en mi alojamiento"
 excerpt: "Descubra cómo instalar manualmente un CMS en un alojamiento"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 > [!primary]

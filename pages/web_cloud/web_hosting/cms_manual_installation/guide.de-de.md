@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Manuelle Installation eines CMS auf einem Webhosting"
 excerpt: "Diese Anleitung erklärt, wie Sie ein CMS manuell auf Ihrem Hosting installieren"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 > [!primary]
