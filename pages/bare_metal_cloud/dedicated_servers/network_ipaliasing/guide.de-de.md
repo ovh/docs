@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration von IP-Aliasing'
-excerpt: 'Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen'
+title: "Konfiguration von IP-Aliasing"
+excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen"
 updated: 2024-03-25
 ---
 
@@ -22,12 +22,12 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/.)
+- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
 - Sie verfügen mindestens eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
@@ -51,7 +51,7 @@ Beachten Sie die folgende Terminologie, die in Codebeispielen und Anweisungen de
 |---|---|---|
 |ADDITIONAL_IP|Zusätzliche IP-Adresse, die Ihrem Dienst zugewiesen ist|203.0.113.1|
 |NETWORK_INTERFACE|Name der Netzwerkschnittstelle|*eth0*, *ens3*|
-|ID|IP-Alias-ID, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IPs)|*0*, *1*|
+|ID|ID der Alias IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IPs)|*0*, *1*|
 
 In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebssystemen muss es vor der Verwendung installiert werden. Ist das der Fall, werden Sie dazu aufgefordert. Sie können natürlich auch einen beliebigen Texteditor verwenden.
 
@@ -61,13 +61,13 @@ Standardmäßig befindet sich die Konfigurationsdatei unter `/etc/network/interf
 
 #### Schritt 1: Backup erstellen
 
-In unserem Beispiel heißt unsere Datei `50-cloud-init`, also kopieren wir die Datei `50-cloud-init` mit folgendem Befehl:
+In unserem Beispiel heißt die Datei `50-cloud-init`, also kopieren wir die Datei `50-cloud-init` mit folgendem Befehl:
 
 ```sh
 sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
 ```
 
-Wenn Sie einen Fehler gemacht haben, können Sie mit den folgenden Befehlen zu einem vorherigen Zustand zurückkehren:
+Wenn Sie einen Fehler gemacht haben, können Sie mit den folgenden Befehlen zum vorherigen Zustand zurückkehren:
 
 ```sh
 sudo rm -f /etc/network/interfaces.d/50-cloud-init
@@ -78,7 +78,7 @@ sudo cp /etc/network/interfaces.d/50-cloud-init.bak /etc/network/interfaces.d/50
 
 > [!primary]
 >
-> Die Namen der Netzwerkschnittstellen in diesem Handbuch können von Ihren Namen abweichen. Bitte passen Sie die Einstellungen entsprechend an.
+> Die Namen der Netzwerkschnittstellen in dieser Anleitung können von den Namen Ihres Systems abweichen. Passen Sie die Einstellungen entsprechend an.
 >
 
 Sie können nun die Konfigurationsdatei bearbeiten:
@@ -87,7 +87,7 @@ Sie können nun die Konfigurationsdatei bearbeiten:
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
-Fügen Sie anschließend ein virtuelles Interface oder einen Ethernet-Alias hinzu. In unserem Beispiel heißt unser Interface `eth0`, unser Alias ist also `eth0:0`. Tun Sie dies für jede Additional IP-Adresse, die Sie konfigurieren möchten.
+Fügen Sie anschließend ein virtuelles Interface oder einen Ethernet-Alias hinzu. In unserem Beispiel heißt das Interface `eth0`, der Alias ist also `eth0:0`. Tun Sie dies für jede Additional IP-Adresse, die Sie konfigurieren möchten.
 
 Ändern Sie nicht die bestehenden Zeilen in der Konfigurationsdatei, sondern fügen Sie einfach Ihre Additional IP wie unten beschrieben zu der Datei hinzu und ersetzen Sie `ADDITIONAL_IP/32` sowie das virtuelle Interface (wenn Ihr Server nicht **eth0:0** verwendet) durch Ihre eigenen Werte:
 
@@ -183,13 +183,13 @@ Da ifcfg nicht mehr unterstützt wird, erstellt NetworkManager keine neuen Profi
 > Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem abweichen kann. Bitte passen Sie die Beispiele mit dem passenden Namen an.
 >
 
-Es wird empfohlen, zunächst eine Sicherungskopie der entsprechenden Konfigurationsdatei zu erstellen. In unserem Beispiel heißt unsere Konfigurationsdatei `cloud-init-eno1.nmconnection`:
+Es wird empfohlen, zunächst eine Sicherungskopie der entsprechenden Konfigurationsdatei zu erstellen. In unserem Beispiel heißt die Konfigurationsdatei `cloud-init-eno1.nmconnection`:
 
 ```sh
 sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
-Wenn Sie einen Fehler gemacht haben, können Sie mit den folgenden Befehlen zu einem vorherigen Zustand zurückkehren:
+Wenn Sie einen Fehler gemacht haben, können Sie mit den folgenden Befehlen zum vorherigen Zustand zurückkehren:
 
 ```sh
 sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -213,7 +213,7 @@ ip a
 nmcli connection show
 ```
 
-Ändern Sie keine bestehenden Zeilen in der Konfigurationsdatei, fügen Sie Ihre Additional IP wie folgt in die Datei ein und ersetzen Sie `ADDITIONAL_IP/32` durch Ihre eigenen Werte:
+Ändern Sie keine bestehenden Zeilen in der Konfigurationsdatei. Fügen Sie Ihre Additional IP wie folgt in die Datei ein und ersetzen Sie `ADDITIONAL_IP/32` durch Ihre eigenen Werte:
 
 
 ```sh
@@ -258,7 +258,7 @@ sudo systemctl restart NetworkManager
 
 Standardmäßig befinden sich die Konfigurationsdateien im Verzeichnis `/etc/netplan`.
 
-Am besten erstellen Sie eine separate Konfigurationsdatei, um die Additional IP-Adressen zu konfigurieren. So können Sie im Falle eines Fehlers leicht zurückgehen.
+Am besten erstellen Sie eine separate Konfigurationsdatei, um die Additional IP-Adressen zu konfigurieren. So können Sie im Falle eines Fehlers die Konfiguration wiederherstellen.
 
 #### Schritt 1: Interface bestimmen
 
@@ -268,9 +268,9 @@ ip a
 
 Notieren Sie sich den Namen des Interface (das Interface, auf dem die Haupt-IP-Adresse Ihres Servers konfiguriert ist).
 
-#### Schritt 2: Die konfigurationsdatei erstellen
+#### Schritt 2: Konfigurationsdatei erstellen
 
-Erstellen Sie anschließend eine Konfigurationsdatei mit der Erweiterung `.yaml`. In unserem Beispiel heißt unsere Datei `51-cloud-init.yaml`.
+Erstellen Sie anschließend eine Konfigurationsdatei mit der Erweiterung `.yaml`. In unserem Beispiel heißt die Datei `51-cloud-init.yaml`.
 
 ```sh
 sudo nano /etc/netplan/51-cloud-init.yaml
@@ -327,7 +327,7 @@ Datei speichern und schließen. Sie können die Konfiguration mit folgendem Befe
 sudo netplan try
 ```
 
-#### Schritt 3: Die änderung anwenden
+#### Schritt 3: Änderung anwenden
 
 Führen Sie anschließend folgende Befehle aus, um die Konfiguration anzuwenden:
 
@@ -341,9 +341,9 @@ sudo netplan apply
 
 ### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
-Die Hauptkonfigurationsdatei befindet sich unter `/etc/sysconfig/network-scripts/`. In unserem Beispiel heißt es `ifcfg-eth0`. Überprüfen Sie den tatsächlichen Dateinamen in diesem Ordner, bevor Sie Änderungen vornehmen.
+Die Hauptkonfigurationsdatei befindet sich unter `/etc/sysconfig/network-scripts/`. In unserem Beispiel heißt es `ifcfg-eth0`. Überprüfen Sie Ihren Dateinamen in diesem Ordner, bevor Sie Änderungen vornehmen.
 
-Für jede zu konfigurierende Additional IP wird eine separate Konfigurationsdatei mit den folgenden Parametern erstellt: `ifcfg-NETWORK_INTERFACE:ID`. Dabei steht `NETWORK_INTERFACE` für die physische Schnittstelle und `ID` für die virtuelle Netzwerkschnittstelle oder den Ethernet-Alias, der mit einem Wert von 0 beginnt. Für unsere Schnittstelle `eth0` ist der erste Alias beispielsweise `eth0:0`, der zweite Alias ist `eth0:1`, usw.
+Für jede zu konfigurierende Additional IP wird eine separate Konfigurationsdatei mit den folgenden Parametern erstellt: `ifcfg-NETWORK_INTERFACE:ID`. Dabei steht `NETWORK_INTERFACE` für die physische Schnittstelle und `ID` für die virtuelle Netzwerkschnittstelle oder den Ethernet-Alias, der mit einem Wert von 0 beginnt. Für unsere Schnittstelle `eth0` ist der erste Alias beispielsweise `eth0:0`, der zweite Alias ist `eth0:1`, etc.
 
 #### Schritt 1: Schnittstelle bestimmen
 
@@ -352,10 +352,10 @@ ip a
 ```
 
 Notieren Sie sich den Namen des Interface (das Interface, auf dem die Haupt-IP-Adresse Ihres Servers konfiguriert ist).
-a 
+
 #### Schritt 2: Konfigurationsdatei erstellen
 
-Erstellen Sie zunächst die Konfigurationsdatei. Ersetzen Sie `NETWORK_INTERFACE:ID` durch eigene Werte.
+Erstellen Sie zunächst die Konfigurationsdatei. Ersetzen Sie `NETWORK_INTERFACE:ID` durch Ihre eigenen Werte.
 
 ```sh
 sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
@@ -415,7 +415,7 @@ Klicken Sie auf `255.255.255.255` als Subnetzmaske und dann auf `Submit`{.action
 
 > [!warning]
 >
-> Achtung: Wenn Sie mehrere IP-Adressen in einem einzigen Block konfigurieren müssen und alle gleichzeitig hinzufügen, wird Ihnen das WHM-System die Verwendung der Subnetzmaske `255.255.255.0` aufzwingen. Die Verwendung dieser Konfiguration wird nicht empfohlen. Um die entsprechende Subnetzmaske `255.255.255.255` verwenden zu können, fügen Sie die IP-Adressen stattdessen einzeln hinzu.
+> Achtung: Wenn Sie mehrere IP-Adressen in einem einzigen Block konfigurieren müssen und alle gleichzeitig hinzufügen, wird das WHM-System die Verwendung der Subnetzmaske `255.255.255.0` erzwingen. Die Verwendung dieser Konfiguration wird nicht empfohlen. Um die entsprechende Subnetzmaske `255.255.255.255` verwenden zu können, fügen Sie die IP-Adressen stattdessen einzeln hinzu.
 >
 
 #### Schritt 3: Aktuelle IP-Konfiguration überprüfen
@@ -429,7 +429,7 @@ Zurück im Abschnitt `IP functions`{.action} klicken Sie auf `Show or Delete Cur
 
 Die Netzwerkeinstellung von Windows Servern ist häufig mit DHCP konfiguriert. Wenn Sie bereits eine Additional IP angelegt oder Ihre Konfiguration als statische IP definiert haben, können Sie direkt zum nächsten Schritt übergehen.
 
-Andernfalls wechseln Sie zunächst von einer DHCP-Konfiguration auf Netzwerkebene auf eine statische IP-Konfiguration.
+Andernfalls wechseln Sie zunächst von einer DHCP-Konfiguration auf Netzwerkebene zur statischen IP-Konfiguration.
 
 Starten Sie die Eingabeaufforderung `cmd`{.action} oder `powershell`{.action} und geben Sie den folgenden Befehl ein:
 
@@ -461,7 +461,7 @@ In den untenstehenden Befehlen ersetzen Sie Folgendes:
 
 > [!warning]
 >
-> Die Eingabe falscher Informationen führt dazu, dass der Server nicht mehr erreichbar ist. In diesem Fall sind dann Korrekturmaßnahmen im WinRescue-Modus oder über KVM erforderlich.
+> Die Eingabe falscher Daten führt dazu, dass der Server nicht mehr erreichbar ist. In diesem Fall sind dann Korrekturmaßnahmen im WinRescue-Modus oder über KVM erforderlich.
 > 
 
 In der Eingabeaufforderung:
@@ -484,7 +484,7 @@ netsh interface ipv4 set dns name="NETWORK_ADAPTER" static 213.186.33.99
 netsh interface ipv4 add address "NETWORK_ADAPTER" ADDITIONAL_IP 255.255.255.255
 ```
 
-Ihre Additional IP ist jetzt funktionsfähig.
+Ihre Additional IP ist damit funktionsfähig.
 
 #### Grafische Benutzeroberfläche
 
@@ -498,10 +498,10 @@ Ihre Additional IP ist jetzt funktionsfähig.
 
 > [!warning]
 >
-> Achtung, der Server ist nicht mehr erreichbar, wenn Sie falsche Informationen eingeben. Die Korrekturen müssen dann im [WinRescue Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) oder über den [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) durchgeführt werden.
+> Achtung, der Server wird unerreichbar, wenn Sie falsche Werte eingeben. Die Korrekturen müssen dann im [WinRescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#windows) oder über [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) durchgeführt werden.
 > 
 
-Klicken Sie auf `Advanced`{.action} (immer noch in den `TCP/IP Settings`{.action}).
+Klicken Sie auf `Advanced`{.action} (in `TCP/IP Settings`{.action}).
 
 ![Internet Protocol Version 4 (TCP/IPv4) Properties](images/configure-main-ip-1.png){.thumbnail}
 
@@ -517,7 +517,7 @@ Geben Sie dann Ihre Additional IP und die Subnetzmaske **255.255.255.255** ein. 
 
 Klicken Sie auf `OK`{.action}, um Ihre Konfiguration zu bestätigen.
 
-Ihre Additional IP ist nun betriebsbereit, Sie können die Konfiguration mit folgendem Befehl überprüfen:
+Ihre Additional IP ist nun betriebsbereit. Sie können die Konfiguration mit folgendem Befehl überprüfen:
 
 ```powershell
 ipconfig
@@ -538,7 +538,7 @@ Wählen Sie im Plesk Konfigurationspanel `Tools & Settings`{.action} im linken M
 
 Klicken Sie auf `IP Addresses`{.action} unter **Tools & Resources**.
 
-#### Schritt 2: Die zusätzliche IP-Information hinzufügen
+#### Schritt 2: Additional IP hinzufügen
 
 Klicken Sie in diesem Abschnitt auf den Button `Add IP Address`{.action}.
 
@@ -566,11 +566,11 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Ersetzen Sie "ADDITIONAL_IP" mit Ihrer Additional IP-Adresse.
 
-Dann pingen Sie einfach Ihre Additional IP nach außen. Wenn dies funktioniert, liegt wahrscheinlich ein Konfigurationsfehler vor, der behoben werden muss. Wenn die IP-Adresse weiterhin nicht funktioniert, öffnen Sie bitte über das [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help){.external} ein Support-Ticket mit folgenden Angaben:
+Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn dies Rescue-Modus funktioniert, bedeutet es wahrscheinlich, dass ein Konfigurationsfehler besteht. Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help){.external} mit folgenden Angaben:
 
-- Name und Version des auf dem Server verwendeten Betriebssystems.
-- Name und Verzeichnis der Netzwerkkonfigurationsdatei.
-- Inhalt dieser Datei.
+- Name und Version des auf dem Server verwendeten Betriebssystems
+- Name und Verzeichnis der Netzwerkkonfigurationsdatei
+- Inhalt dieser Datei
 
 ## Weiterführende Informationen
 
