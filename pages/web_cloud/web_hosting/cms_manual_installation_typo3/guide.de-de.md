@@ -10,7 +10,7 @@ updated: 2024-03-27
 
 ## Ziel
 
-Das **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 ermöglicht die Entwicklung komplexer und skalierbarer Websites für Unternehmen jeder Größe von institutionellen Websites bis hin zu E-Commerce-Plattformen. Mit einer starken Entwicklergemeinschaft und einer breiten Palette von Erweiterungen bietet TYPO3 leistungsstarke Tools, um Ihre Website an Ihre spezifischen Bedürfnisse anzupassen und zu erweitern.
+Das **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 ermöglicht die Entwicklung komplexer und skalierbarer Websites für Unternehmen jeder Größe von institutionellen Websites bis hin zu E-Commerce-Plattformen. Mit einer starken Entwicklergemeinschaft und einer breiten Palette von Erweiterungen bietet Typo3 leistungsstarke Tools, um Ihre Website an Ihre spezifischen Bedürfnisse anzupassen und zu erweitern.
 
 **So installieren Sie das CMS Typo3 manuell auf Ihrem OVHcloud Webhosting.**
 
@@ -26,7 +26,7 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 ermöglicht die Entwic
 
 Für die Installation des CMS **Typo3** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) sind einige Vorbereitungen erforderlich.
 
-Folgen Sie den**Schritten** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), bevor Sie zum nächsten Schritt übergehen.
+Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), bevor Sie zum nächsten Schritt übergehen.
 
 ### Manuelle Installation abschließen
 
@@ -35,15 +35,15 @@ Folgen Sie den**Schritten** in unserer Anleitung zur [manuellen Installation ein
 > Leeren Sie vor der Installation den Cache Ihres Internetbrowsers, um Fehlfunktionen zu vermeiden.
 >
 
-#### Besuchen Sie Ihre Typo3-Website über Ihren Browser
+#### Besuchen Sie Ihre Typo3 Website über Ihren Browser
 
 Geben Sie Ihren Domainnamen in die Suchleiste Ihres Webbrowsers ein.
 
-Wenn die Typo3-Quelldateien erfolgreich im Stammordner abgelegt wurden, wird die folgende Seite angezeigt:
+Wenn die Typo3 Quelldateien erfolgreich im Wurzelverzeichnis abgelegt wurden, wird die folgende Seite angezeigt:
 
 ![Typo3 installation](images/install_step_one.png){.thumbnail}
 
-Erstellen Sie wie bereits erwähnt eine leere Datei mit dem Namen `FIRST_INSTALL` in dem Verzeichnis, in dem Sie Ihre Typo3-Dateien und -Ordner abgelegt haben. Kehren Sie zu Ihrem Webbrowser zurück und aktualisieren Sie die Seite. Wenn Fehler auftreten, wird der folgende Bildschirm mit einer Beschreibung der Fehler angezeigt.
+Erstellen Sie eine leere Datei mit dem Namen `FIRST_INSTALL` in dem Verzeichnis, in dem Sie die Dateien und Ordner der Typo3 Installation abgelegt haben. Aktualisieren Sie im Browser die Seite. Wenn Fehler auftreten, erscheint die folgende Anzeige mit einer Beschreibung der Fehler.
 
 ![Typo3 installation](images/install_step_2_error.png){.thumbnail}
 
@@ -71,16 +71,16 @@ Der fünfte und letzte Schritt der Installation wird angezeigt.
 
 ![Typo3 installation](images/install_step_5.png){.thumbnail}
 
-Lesen Sie die Informationen auf dem Bildschirm und wählen Sie die Option aus, die am besten zu Ihren Bedürfnissen passt:
+Lesen Sie die angezeigten Informationen und wählen Sie die Option aus, die am besten zu Ihren Bedürfnissen passt:
 
-- `Create Empty Starting Page` : Wählen Sie diese Option aus, um eine Standardseite für Ihre Website zu erstellen. Nachdem Sie diesen Schritt bestätigt haben, geben Sie Ihren Domainnamen in Ihrem Webbrowser ein, um auf Ihre Typo3-Website zuzugreifen.
-- `Take me straight to the backend` : Wählen Sie diese Option aus, um zum Dashboard Ihrer Typo3-Website weitergeleitet zu werden. Mit diesem Dashboard erstellen Sie Ihre eigenen Webseiten, laden deren Inhalte ein und vieles mehr. Weitere Informationen finden Sie in der [offiziellen Typo3-Dokumentation](https://docs.typo3.org/Home/GettingStarted.html){.external}.
+- `Create Empty Starting Page`: Wählen Sie diese Option aus, um eine Standardseite für Ihre Website zu erstellen. Nachdem Sie diesen Schritt bestätigt haben, geben Sie Ihren Domainnamen in Ihrem Webbrowser ein, um auf Ihre Typo3 Website zuzugreifen.
+- `Take me straight to the backend`: Wählen Sie diese Option aus, um zum Dashboard Ihrer Typo3 Website weitergeleitet zu werden. Mit diesem Dashboard erstellen Sie Ihre eigenen Webseiten, editieren Inhalte und vieles mehr. Weitere Informationen finden Sie in der [offiziellen Dokumentation von Typo3](https://docs.typo3.org/Home/GettingStarted.html){.external}.
 
 Klicken Sie auf `Open the TYPO3 Backend`{.action}, um die gewählte Option zu bestätigen.
 
 ### Fazit
 
-Sie haben das CMS Typo3 manuell auf Ihrem OVHcloud Webhosting installiert. Nachdem Sie Ihre Website konfiguriert, Inhalte hinzugefügt, das Thema personalisiert und Plugins installiert haben, ist Ihre Typo3-Website online über Ihren Domainnamen verfügbar.
+Sie haben das CMS Typo3 manuell auf Ihrem OVHcloud Webhosting installiert. Nachdem Sie Ihre Website konfiguriert, Inhalte hinzugefügt, das Theme personalisiert und Plugins installiert haben, ist Ihre Typo3 Website online über Ihren Domainnamen verfügbar.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
