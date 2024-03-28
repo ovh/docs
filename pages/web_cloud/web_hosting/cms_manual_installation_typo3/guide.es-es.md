@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalar Typo3 manualmente"
 excerpt: "Descubra cómo instalar manualmente un CMS Typo3"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 > [!primary]
