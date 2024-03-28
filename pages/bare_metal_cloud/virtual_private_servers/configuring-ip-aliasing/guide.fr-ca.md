@@ -283,7 +283,7 @@ sudo systemctl restart NetworkManager
 
 ### Fedora 37 et versions ultérieures
 
-Fedora utilise maintenant des fichiers clés. NetworkManager stockait auparavant les profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`.
+Fedora utilise maintenant des fichiers clés. NetworkManager stockait auparavant les profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Cependant, le format ifcfg est maintenant obsolète. Par défaut, NetworkManager ne crée plus de nouveaux profils dans ce format. Le fichier de configuration se trouve maintenant dans `/etc/NetworkManager/system-connections/`.
 
 #### Étape 1 : créer une sauvegarde
 
@@ -379,7 +379,7 @@ De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete C
 
 Dans le panneau de configuration Plesk, choisissez `Tools & Settings`{.action} dans la barre latérale gauche.
 
-![accès à la gestion des adresses IP](images/Plesk-2024-vps.png){.thumbnail}
+![accès à la gestion des adresses IP](images/pleskip1.png){.thumbnail}
 
 Cliquez sur `IP Addresses`{.action} sous **Tools & Settings**.
 
@@ -387,17 +387,17 @@ Cliquez sur `IP Addresses`{.action} sous **Tools & Settings**.
 
 Dans cette section, cliquez sur le bouton `Add IP Address`{.action}.
 
-![ajouter des informations IP](images/Plesk-additional-ip.png){.thumbnail}
+![ajouter des informations IP](images/Plesk-2024-vps.png){.thumbnail}
 
 Entrez votre adresse Additional IP sous la forme `xxx.xxx.xxx.xxx/32` dans le champ « IP address and subnet mask », puis cliquez sur `OK`{.action}.
 
-![ajouter des informations IP](images/pleskip3-3.png){.thumbnail}
+![ajouter des informations IP](images/Plesk-additional-ip.png){.thumbnail}
 
 #### Étape 3 : vérifier la configuration IP actuelle
 
 Dans la section « IP Addresses », vérifiez que l'adresse Additional IP a été correctement ajoutée.
 
-![configuration IP actuelle](images/plesk-final-config.png){.thumbnail}
+![configuration IP actuelle](images/plesk-final-configuration.png){.thumbnail}
 
 ### Windows Server
 
