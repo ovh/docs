@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installer manuellement Spip"
 excerpt: "Découvrez comment installer le CMS Spip sur un hébergement web OVHcloud"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 ## Objectif
