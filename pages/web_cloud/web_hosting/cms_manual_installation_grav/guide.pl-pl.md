@@ -115,6 +115,10 @@ Właśnie ręcznie zainstalowałeś CMS Grav na Twoim hostingu OVHcloud. Po skon
 
 [Tutorial - Ręczna instalacja modułu Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
+[Tutorial - Ręczna instalacja modułu Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+
+[Tutorial - Ręczna instalacja modułu SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+
 [Tutorial - Ręczna instalacja modułu CMS na hostingu](/pages/web_cloud/web_hosting/cms_manual_installation)
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
