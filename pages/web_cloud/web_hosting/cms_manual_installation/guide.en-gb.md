@@ -1,12 +1,12 @@
 ---
 title: "Tutorial - Installing a CMS manually on your Web Hosting plan"
 excerpt: "Find out more about some of the compatible CMS for Web Hostings"
-updated: 2024-03-22
+updated: 2024-03-28
 ---
 
 ## Objective
 
-This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal, PrestaShop or Pico manually in just a few steps.
+This tutorial will help you install a CMS (Content Management System) like WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 or SPIP manually in just a few steps.
 
 > [!warning]
 >
@@ -21,6 +21,9 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -80,11 +83,29 @@ You can find more information on our [PrestaShop module page](https://www.ovhclo
 
 **Pico** is a lightweight PHP-based CMS, perfect for building websites and blogs. It does not require a database but uses Markdown files to manage content. It supports extensions to customise your website.
 
-- Official [Pico] website(https://picocms.org/){.external}
+- Official [Pico](https://picocms.org/){.external} website
+
+#### Grav
+
+**Grav** is a modern and flexible CMS based on PHP. It is designed without databases and uses Markdown files for storing and managing content. Grav stands out for its package management system which makes it easy to install and update plugins and themes for your website.
+
+- Official [Grav](https://getgrav.org/){.external} website
+
+#### Typo3
+
+**Typo3** is a PHP-based CMS designed for developing websites of all sizes, from small to large companies. It relies on a database to store the content. It offers a wide range of extensions to extend its features in order to customize your website.
+
+- Official [Typo3](https://typo3.com/){.external} website
+
+#### SPIP
+
+**SPIP** is a CMS designed primarily for publishing and managing editorial websites such as online newspapers or magazines. Based on PHP and based on an SQL database, it facilitates the creation of websites enriched with textual, graphical and/or multimedia content.
+
+- [SPIP](https://www.spip.net/en_section25.html){.external} official website
 
 > [!warning]
 >
-> Whichever CMS you choose, please note that OVHcloud does not provide support for using the respective software. If you experience any difficulties, please contact the publisher of your chosen CMS directly using the links listed above in this tutorial.
+> Whichever CMS you choose, please note that OVHcloud will not provide assistance with using these CMSs. If you encounter any difficulties, contact the publisher of the CMS you have chosen directly using the links indicated earlier in this tutorial.
 >
 
 ### Step 1: Prepare the installation <a name="step1"></a>
@@ -175,6 +196,9 @@ Below are links to the CMS download pages mentioned in this tutorial:
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -187,6 +211,9 @@ Below are links to the CMS download pages mentioned in this tutorial:
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -365,6 +392,9 @@ To continue with the installation, follow the guide corresponding to your CMS:
 - [Finalise a Drupal installation](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finalise a PrestaShop installation](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Finalise a Pico installation](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Finalise a Grav installation](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Finalise a Typo3 installation](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Finalise a SPIP installation](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Go further <a name="go-further"></a>
 

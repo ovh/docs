@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2024-03-27
+updated: 2024-03-28
 ---
 
 ## Objectif
@@ -199,6 +199,9 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 - [Grav](https://getgrav.org/downloads){.external}
 - [Typo3](https://get.typo3.org/#download){.external}
 - [SPIP](https://www.spip.net/en_download){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -211,6 +214,9 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 > - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
 > - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
 > - [SPIP](https://www.spip.net/en_article6659.html){.external}

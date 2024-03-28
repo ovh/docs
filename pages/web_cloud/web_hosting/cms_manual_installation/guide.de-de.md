@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Manuelle Installation eines CMS auf einem Webhosting"
 excerpt: "Diese Anleitung erklärt, wie Sie ein CMS manuell auf Ihrem Hosting installieren"
-updated: 2024-03-22
+updated: 2024-03-28
 ---
 
 > [!primary]
@@ -24,6 +24,9 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -85,9 +88,27 @@ Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](https:
 
 - Offizielle Website von [Pico](https://picocms.org/){.external}
 
+#### Grav
+
+**Grav** ist ein modernes und flexibles CMS auf Basis von PHP. Es ist ohne Datenbank konzipiert und verwendet Markdown-Dateien für die Speicherung und das Management von Inhalten. Grav zeichnet sich durch sein Paketverwaltungssystem aus, das die Installation und Aktualisierung von Plugins und Themes für Ihre Website vereinfacht.
+
+- Offizielle Website von [Grav](https://getgrav.org/){.external}
+
+#### Typo3
+
+**Typo3** ist ein auf PHP basierendes CMS, das für die Entwicklung von Websites jeder Größe konzipiert ist, von kleinen bis zu großen Unternehmen. Der Content wird in einer Datenbank gespeichert. Es bietet eine breite Palette von Erweiterungen, um seine Funktionen zur Anpassung Ihrer Website zu erweitern.
+
+- Offizielle Website von [Typo3](https://typo3.com/){.external}
+
+#### SPIP
+
+**SPIP** ist ein CMS, das hauptsächlich für die Veröffentlichung und Verwaltung von Verlagswebsites wie Zeitungen oder Online-Magazinen konzipiert ist. Basierend auf PHP und einer SQL Datenbank vereinfacht es die Erstellung von Websites mit umfangreichen Text-, Grafik- und/oder Multimediainhalten.
+
+- Offizielle Website von [SPIP](https://www.spip.net/en_rubrik25.html){.external}
+
 > [!warning]
 >
-> Wir möchten Sie daran erinnern, dass OVHcloud bei der Verwendung jeglicher CMS keinerlei Unterstützung leisten kann. Sollten Sie Schwierigkeiten haben, kontaktieren Sie den Herausgeber des von Ihnen gewählten CMS über die Verweise oben in diesem Tutorial.
+> Wir möchten Sie daran erinnern, dass OVHcloud bei der Verwendung von CMS keinerlei Unterstützung leisten kann. Sollten Sie Schwierigkeiten haben, kontaktieren Sie den Herausgeber des von Ihnen gewählten CMS über die Links oben in diesem Tutorial.
 >
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a> 
@@ -178,6 +199,9 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -190,6 +214,9 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Konfigurieren Sie anschließend die PHP-Version mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -368,6 +395,9 @@ Um mit der Installation fortzufahren, folgen Sie der passenden Anleitung zu Ihre
 - [Installation von Drupal abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Installation von PrestaShop abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Installation von Pico abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Installation von Grav abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Installation von Typo3 abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Installation von SPIP abschließen](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

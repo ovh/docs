@@ -1,12 +1,12 @@
 ---
 title: "Tutoriel - Installer manuellement un CMS sur mon hébergement"
 excerpt: "Découvrez comment installer manuellement un CMS sur votre hébergement"
-updated: 2024-03-22
+updated: 2024-03-28
 ---
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop ou Pico en quelques étapes.
+Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 ou SPIP en quelques étapes.
 
 > [!warning]
 >
@@ -21,6 +21,9 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
 > - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.fr/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -81,6 +84,24 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 **Pico** est un CMS léger basé sur PHP, idéal pour créer des sites web ou des blogs. Dépourvu de base de données, il utilise des fichiers Markdown pour gérer le contenu. Il supporte des extensions pour personnaliser votre site web.
 
 - Site officiel de [Pico](https://picocms.org/){.external}
+
+#### Grav
+
+**Grav** est un CMS moderne et flexible basé sur PHP. Il est conçu sans base de données et utilise des fichiers Markdown pour le stockage et la gestion du contenu. Grav se distingue par son système de gestion de paquets qui facilite l'installation et la mise à jour des plugins et des thèmes pour votre site web.
+
+- Site officiel de [Grav](https://getgrav.org/){.external}
+
+#### Typo3
+
+**Typo3** est un CMS basé sur PHP, conçu pour le développement de sites web de toutes tailles, des petites aux grandes entreprises. Il s'appuie sur une base de données pour stocker le contenu. Il offre une vaste gamme d'extensions pour étendre ses fonctionnalités afin de personnaliser votre site web.
+
+- Site officiel de [Typo3](https://typo3.fr/){.external}
+
+#### SPIP
+
+**SPIP** est un CMS conçu principalement pour la publication et la gestion de sites web éditoriaux comme des journaux ou des magazines en ligne. Basé sur PHP et s'appuyant sur une base de données SQL, il facilite la création de sites web enrichis de contenu textuel, graphique et / ou multimédia.
+
+- Site officiel de [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 
 > [!warning]
 >
@@ -177,6 +198,9 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
 - [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
@@ -189,6 +213,9 @@ Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqu
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 > - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -367,6 +394,9 @@ Pour poursuivre l'installation, suivez l'un des liens suivants en cliquant sur l
 - [Finaliser l'installation de Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Finaliser l'installation de PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 - [Finaliser l'installation de Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Finaliser l'installation de Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Finaliser l'installation de Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Finaliser l'installation de SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Aller plus loin <a name="go-further"></a>
 
