@@ -111,6 +111,10 @@ You have just manually installed Grav CMS on your OVHcloud web hosting plan. Aft
 
 [Tutorial - Installing Pico manually](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
+[Tutorial - Installing Typo3 manually](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+
+[Tutorial - Installing SPIP manually](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+
 [Tutorial - Manually install a CMS on my hosting plan](/pages/web_cloud/web_hosting/cms_manual_installation)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
