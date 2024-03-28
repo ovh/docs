@@ -12,7 +12,7 @@ updated: 2024-03-28
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) that includes at least one database
 - A [domain name](https://www.ovhcloud.com/en-ca/domains/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 

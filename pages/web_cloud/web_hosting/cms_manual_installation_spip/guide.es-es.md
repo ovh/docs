@@ -16,7 +16,7 @@ El **CMS** (**C**contiene **M**Management **S**System) SPIP es una solución ade
 
 ## Requisitos
 
-- Tener contratado [un plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener contratado un plan de [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos.
 - Tener un [dominio](https://www.ovhcloud.com/es-es/domains/).
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
