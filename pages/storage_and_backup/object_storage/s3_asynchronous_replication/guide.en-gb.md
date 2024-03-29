@@ -87,7 +87,6 @@ The following table provides the default behavior of the OVHcloud Object Storage
 |--------------------------------------------------------------|--------------------------------------------------------------|
 | Objects created *after* the upload of the replication configuration | Delete marker i.e. objects deleted in the source bucket are not automatically deleted in the destination bucket |
 | Unencrypted objects                                          | Object replicas i.e. objects that are the result of a previous replication operation |
-| Objects encrypted with customer provided keys (SSE-C)        | Objects that have already been replicated to a previous destination |
 | Object metadata from the source objects to the replicas      | Objects that are stored in the Cold Archive temporary storage |
 | Objects in the source bucket the bucket owner has permissions to read and access ACLs | Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc. |
 | Object ACL updates                                           | Actions resulting from Lifecycle Configuration actions |
