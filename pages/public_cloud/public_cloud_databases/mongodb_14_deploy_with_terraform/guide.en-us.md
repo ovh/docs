@@ -37,7 +37,7 @@ The first thing you need to do is tell Terraform which providers you will be usi
 - OpenStack, for network resources
 
 ```bash
-Terraform {
+terraform {
   required_providers {
     ovh = {
       source = "ovh/ovh"
