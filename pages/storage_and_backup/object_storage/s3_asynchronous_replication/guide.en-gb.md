@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2024-03-27
+updated: 2024-04-02
 ---
 
 > [!warning]
@@ -201,7 +201,8 @@ However, you can still replicate delete markers by adding the `DeleteMarkerRepli
 
 ### Checking the replication status
 
-The replication status can be used to determine the status of an object that is being replicated.To get the replication status of an object, you can use the head-object command via the aws cli : 
+The replication status can be used to determine the status of an object that is being replicated. To get the replication status of an object, you can use the `head-object` command via the AWS CLI:
+
 ```bash
 $ aws s3api head-object --bucket <source_bucket> --key <object_name>
 {
@@ -219,7 +220,7 @@ $ aws s3api head-object --bucket <source_bucket> --key <object_name>
 > [!warning]
 > The replication status only applies to objects that are eligible for replication.
 
-The `ReplicationStatus attribute` can have the following values:
+The `ReplicationStatus` attribute can have the following values:
 
 | Source object                                          | Replica Object                                      |
 |--------------------------------------------------------------|--------------------------------------------------------------|

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2024-03-27
+updated: 2024-04-02
 ---
 
 > [!warning]
@@ -135,7 +135,6 @@ La structure de base d'une règle de réplication dans le fichier JSON de config
       "Status": "Enabled"|"Disabled",
       "Destination": {
         "Bucket": "arn:aws:s3:::<your_bucket_name>",
-        "StorageClass": "STANDARD"|"HIGH_PERF"
       },
       "DeleteMarkerReplication": {
         "Status": "Enabled"|"Disabled"
@@ -202,12 +201,26 @@ Toutefois, vous pouvez toujours répliquer des marqueurs de suppression en ajout
 
 ### Vérification de l'état de réplication
 
-L'état de réplication permet de déterminer l'état d'un objet en cours de réplication. Lorsque vous demandez un objet source (à l'aide de `GET object`) ou des métadonnées de l'objet source (à l'aide de `HEAD object`), OVHcloud Object Storage renvoie l'état de réplication via l'en-tête `x-amz-replication-status`.
+L'état de réplication permet de déterminer l'état d'un objet en cours de réplication. Pour obtenir l'état de réplication d'un objet, vous pouvez utiliser la commande `head-object `via le AWS CLI :
+
+```bash
+$ aws s3api head-object --bucket <source_bucket> --key <object_name>
+{
+   "LastMoodified" : "Fri, 15 Mar 2024 10:18:15 GMT",
+   "ContentLength": 3481,
+   "Etag": "\"417947d3634d4645e05ca9e875f5b202\"",
+   "VersionId": "17104978950.04081",
+   "ContentType": "binary/octet-stream",
+   "Metadata": { },
+   "StorageClass": "STANDARD",
+   "ReplicationStatus": "COMPLETED"
+}
+```
 
 > [!warning]
 > L'état de réplication ne s'applique qu'aux objets éligibles à la réplication.
 
-Le `x-amz-replication-status` peut avoir les valeurs suivantes :
+L'attribut `ReplicationStatus` peut avoir les valeurs suivantes :
 
 | Objet source | Objet répliqué |
 |--|--|
@@ -216,9 +229,9 @@ Le `x-amz-replication-status` peut avoir les valeurs suivantes :
 | PENDING | n/a car la copie n'existe pas encore|
 
 > [!warning]
-> Lorsque vous répliquez des objets vers plusieurs buckets de destination, la valeur de `x-amz-replication-status` est *COMPLETED* uniquement lorsque l'objet source a été répliqué avec succès vers tous les buckets de destination, sinon l'en-tête reste à la valeur *PENDING*.
+> Lorsque vous répliquez des objets vers plusieurs buckets de destination, la valeur de `ReplicationStatus` est *COMPLETED* uniquement lorsque l'objet source a été répliqué avec succès vers tous les buckets de destination, sinon l'attribut reste à la valeur *PENDING*.
 > 
-> Si la réplication d'une ou plusieurs destinations échoue, la valeur de l'en-tête devient *FAILED*.
+> Si la réplication d'une ou plusieurs destinations échoue, la valeur de l'attribut devient *FAILED*.
 
 #### Exemples de configuration de réplication
 
@@ -229,6 +242,7 @@ Réplication simple entre 2 buckets :
   "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
+      "ID": "ruleId",
       "Status": "Enabled",
       "Priority": 1,
       "Filter": { },
@@ -250,6 +264,7 @@ Cette configuration répliquera tous les objets (indiqués par le champ `Filter`
   "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
   "Rules": [
     {
+      "ID": "ruleId",
       "Status": "Enabled",
       "Priority": 1,
       "Filter" : {
@@ -280,7 +295,10 @@ Cette configuration répliquera tous les objets qui ont le préfixe « backup »
       "Filter": { }
       "Destination": {
         "Bucket": "arn:aws:s3:::region1-destination-bucket"
-      }
+      },
+  "DeleteMarkerReplication": {
+    "Status": "Disabled"
+  }
     },
     {
       "ID": "rule2",
@@ -289,7 +307,10 @@ Cette configuration répliquera tous les objets qui ont le préfixe « backup »
       "Filter": { }
       "Destination": {
         "Bucket": "arn:aws:s3:::region2-destination-bucket"
-      }
+      },
+    "DeleteMarkerReplication": {
+    "Status": "Disabled"
+    }
     }
   ]
 }
