@@ -45,6 +45,8 @@ This migration is planned as regular maintenance and can be manually triggered b
     - **First scenario (base disk):** The average price decrease by a 0.87 factor.
     - **Second scenario (iso disk essential):** The average price increase by a 1.07 factor.
   Most services should see a lower final price due to these global price reductions and reduced storage requirements. However, prices could increase for services needing significant additional storage. For a comprehensive view of pricing, check ([Pricing Details](https://www.ovhcloud.com/en-gb/public-cloud/prices/)).
+
+**Please note that the service can be terminated at any time without fees if these changes do not meet your needs.**
   
 #### How to Anticipate the Migration
 
