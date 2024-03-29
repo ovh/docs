@@ -2,6 +2,7 @@
 title: Statistiques sur la QoS des appels
 excerpt: Statistiques sur la QoS des appels
 updated: 2018-03-26
+flag: hidden
 ---
 
 ## 
