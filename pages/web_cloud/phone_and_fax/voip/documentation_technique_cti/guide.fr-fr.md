@@ -2,6 +2,7 @@
 title: 'Documentation technique CTI'
 excerpt: 'Ce guide est une introduction aux outils de gestion des appels via les interfaces CRM et ERP les plus connus.'
 updated: 2018-03-26
+flag: hidden
 ---
 
 ## Définition
