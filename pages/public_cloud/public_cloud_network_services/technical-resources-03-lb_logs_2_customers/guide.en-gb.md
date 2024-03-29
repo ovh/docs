@@ -50,14 +50,14 @@ The log messages contains the following fields:
 | client_certificate_distinguished_name | When the incoming connection was made over an SSL/TLS transport layer, returns the full distinguished name of the subject of the certificate presented by the client | String |
 | pool_id:listener_id | the pool to which the request/connection was redirected | uuid| 
 | member_id | the member to which the request / connection was sent | uuid |
-| total_session_duration_time | the time in milliseconds the TCP session has been opened when this request is made | Numeric |
+| tcp_total_session_duration_time | the time in milliseconds the TCP session has been opened when this request is made | Numeric |
 | termination_state | session termination indicator: 2 letters for TCP, 4 letters for HTTP all the details on [HAProxy documentation page](https://docs.haproxy.org/2.6/configuration.html#8.5)|String (e.g. "----")|
 
 
 The following fields are computed from `client_ip` and provided in logs:
 | Field name | Description | Unit |
 |------------|-------------|---------| 
-|client_ip_city_name | the city computed by Logstash Geoip from `client_ip`| String (e.g. `Lille`) |
+|client_ip_city_name | the city computed by Geoip from `client_ip`| String (e.g. `Lille`) |
 |client_ip_geolocation | The latitude, longitude computed by Logstash Geoip from `client_ip`| 	x.x,y.y (e.g. `50.624,3.0511`)|
 |client_ip_country_code | The ISO 3166 A-2 country code computed by Logstash Geoip from `client_ip` ISO | XX (e.g. `FR`) |
 
