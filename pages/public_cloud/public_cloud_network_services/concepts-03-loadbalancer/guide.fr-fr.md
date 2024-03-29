@@ -134,13 +134,6 @@ La formulation est légèrement différente entre OpenStack et OVHcloud. Le tabl
 | `PENDING_UPDATE` | `updating` | Le composant est en cours de mise à jour. Aucune demande de mise à jour ou de suppression n'est possible sur aucun composant du load balancer pendant ce statut. |
 | `PENDING_DELETE` | `deleting` | Le composant est en cours de suppression. Aucune demande de mise à jour ou de suppression n'est possible sur aucun composant du load balancer pendant ce statut. |
 
-- `ACTIVE` : le composant a été correctement provisioné.
-- `DELETED` : Le composant a été supprimé avec succès.
-- `ERROR` : Échec de la mise en service du composant. Veuillez contacter le support.
-- `PENDING_CREATE` : le composant est en cours de création.
-- `PENDING_UPDATE` : Le composant est en cours de mise à jour.
-- `PENDING_DELETE` : Le composant est en cours de suppression.
-
 ### Operating status
 
 - `ONLINE` : le composant fonctionne normalement, ce qui signifie que tous les membres du pool sont en bonne santé.

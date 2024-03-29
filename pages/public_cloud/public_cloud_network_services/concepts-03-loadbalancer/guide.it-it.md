@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer (EN)
 excerpt: "Understand the configuration concepts that are powering the Public Cloud Load Balancer"
-updated: 2024-02-15
+updated: 2024-03-29
 ---
 
 ## Objective
@@ -119,12 +119,16 @@ As such in the description below, when the wording "component" is used, it means
 
 ### Provisioning status
 
-- `ACTIVE`: The component was provisioned successfully.
-- `DELETED`: The component has been successfully deleted.
-- `ERROR`: The provisioning of the component failed, please contact support.
-- `PENDING_CREATE`: The component is being created.
-- `PENDING_UPDATE`: The component is being updated.
-- `PENDING_DELETE`: The component is being deleted.
+The wording is slightly different between OpenStack and OVHcloud: the following table provides the 2 wordings.
+
+| OpenStack API Status | OVHcloud API | Description |
+|---|---|---|
+| `ACTIVE` | `active` | The component was provisioned successfully. It can receive updates / deletions |
+| `DELETED` | `deleted` | The component has been successfully deleted.|
+| `ERROR` | `error` | The provisioning of the component failed, please contact support teams.|
+| `PENDING_CREATE` | `creating` | The component is being created. No update or delete request is possible on any component of the load balancer while in that state. |
+| `PENDING_UPDATE` | `updating` | The component is being updated. No update or delete request is possible on any component of the load balancer while in that state. |
+| `PENDING_DELETE` | `deleting` | The component is being deleted. No update or delete request is possible on any component of the load balancer while in that state. |
 
 ### Operating status
 
