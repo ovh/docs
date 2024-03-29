@@ -1608,7 +1608,6 @@
                 + [Prise en main du logiciel POPC](web_cloud/phone_and_fax/voip/popc-utilisation)
             + [IPBX](web-cloud-phone-and-fax-voip-ipbx)
                 + [Deploying automatically the 3CX IPBX on OVHcloud Public Cloud](web_cloud/phone_and_fax/voip/deployer_3cx_sur_public_cloud)
-                + [Asterisk - configuration et utilisation](web_cloud/phone_and_fax/voip/asterisk_configuration_et_utilisation)
                 + [Comment modifier le temps d’enregistrement d’une ligne sur Asterisk](web_cloud/phone_and_fax/voip/comment_modifier_le_temps_denregistrement_dune_ligne_sur_asterisk)
                 + [3CX Phone System - configuration et utilisation](web_cloud/phone_and_fax/voip/configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system)
                 + [Freeswitch - configuration et utilisation](web_cloud/phone_and_fax/voip/freeswitch_configuration_et_utilisation)
