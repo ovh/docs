@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Comprendre les concepts de configuration du Load Balancer Public Cloud"
-updated: 2024-02-15
+updated: 2024-03-29
 ---
 
 ## Objectif
@@ -122,6 +122,17 @@ Le *provisioning status* est hérité des composants qui sont « contenus » par
 Dans la suite de la description, lorsque l'on utilise le terme « composant », il s'agit du composant et de tous les « composants » qu'il contient.
 
 ### Provisioning status
+
+La formulation est légèrement différente entre OpenStack et OVHcloud. Le tableau suivant fournit les 2 formulations.
+
+| Statut de l'API OpenStack | API OVHcloud | Description |
+|---|---|---|
+| `ACTIVE` | `active` | Le composant a été correctement provisioné. Il peut recevoir des mises à jour / suppressions |
+| `DELETED` | `deleted` | Le composant a été supprimé avec succès.|
+| `ERROR` | `error` | Échec de la mise en service du composant. Veuillez contacter le support.|
+| `PENDING_CREATE` | `creating` | Le composant est en cours de création. Aucune demande de mise à jour ou de suppression n'est possible sur aucun composant du load balancer pendant ce statut. |
+| `PENDING_UPDATE` | `updating` | Le composant est en cours de mise à jour. Aucune demande de mise à jour ou de suppression n'est possible sur aucun composant du load balancer pendant ce statut. |
+| `PENDING_DELETE` | `deleting` | Le composant est en cours de suppression. Aucune demande de mise à jour ou de suppression n'est possible sur aucun composant du load balancer pendant ce statut. |
 
 - `ACTIVE` : le composant a été correctement provisioné.
 - `DELETED` : Le composant a été supprimé avec succès.

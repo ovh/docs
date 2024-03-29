@@ -121,10 +121,10 @@ As such in the description below, when the wording "component" is used, it means
 
 The wording is slightly different between OpenStack and OVHcloud: the following table provides the 2 wordings.
 
-| Openstack API Status | OVHcloud API | Description |
+| OpenStack API Status | OVHcloud API | Description |
 |---|---|---|
-|`ACTIVE` | `active` | The component was provisioned successfully. It can receive update / delete |
-|`DELETED` | `deleted` | The component has been successfully deleted.|
+| `ACTIVE` | `active` | The component was provisioned successfully. It can receive updates / deletions |
+| `DELETED` | `deleted` | The component has been successfully deleted.|
 | `ERROR` | `error` | The provisioning of the component failed, please contact support teams.|
 | `PENDING_CREATE` | `creating` | The component is being created. No update or delete request is possible on any component of the load balancer while in that state. |
 | `PENDING_UPDATE` | `updating` | The component is being updated. No update or delete request is possible on any component of the load balancer while in that state. |
