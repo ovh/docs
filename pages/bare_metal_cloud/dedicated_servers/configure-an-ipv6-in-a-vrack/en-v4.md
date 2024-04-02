@@ -373,7 +373,11 @@ This command configures the system to route traffic originating from `2001:db8::
 ### Setup verification   
 To verify your network setup, whether it's configured in bridged or routed mode, `mtr` (My Traceroute) is a powerful network diagnostic tool that combines the functionality of the `traceroute` and `ping` programs. It provides a continuously updated list of routers traversed by your packets to reach a destination and the latency to each router. This can be particularly useful for diagnosing network issues and verifying the path and performance of your traffic.   
 
-**1. Setup Verification with `mtr`**   
+
+<details>
+<summary> <b>1. Setup Verification with `mtr`</b> </summary>
+<blockquote>
+
 ***MTR for Bridged Mode***   
 To verify a bridged network setup, use mtr to analyze the path packets take through the vRack. This mode doesn't involve specific routing beyond the local network configuration.
 ```bash
@@ -388,7 +392,16 @@ mtr -rw google.com
 ```
 This traces the route from a host within your vRack in routed mode to `google.com`, showing each hop and latency.
 
-**2. Expected Return from the Call**    
+
+    
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>2. Expected Return from the Call</b> </summary>
+<blockquote>
+
 ***For Bridged Mode to `2001:db8::2:`***
 ```yaml
 Start: 2024-01-01T12:00:00
@@ -404,14 +417,27 @@ HOST: your-server              Loss%   Snt   Last   Avg  Best  Wrst StDev
   2.|-- [external-router]        0.0%    10   10.2  10.5   9.8  11.2   0.4
   ... additional hops ...
 ```
+    
+</blockquote>
+</details>
 
-**3. Interpreting `mtr` Results**   
+
+
+<details>
+<summary> <b>3. Interpreting `mtr` Results</b> </summary>
+<blockquote>
+
 - **Consistent Latencies** across hops suggest a stable connection. Significant fluctuations may indicate congestion or other network issues.
 - **Unexpected Hops** or routes not planned in your network design could point to misconfigurations or potential security concerns.
 - **Packet Loss** at any hop requires further investigation to identify and resolve network problems.   
 
 `mtr` offers a real-time view of your network's performance, making it invaluable for troubleshooting and ensuring optimal network operation. Remember, the output will vary based on your specific network configuration, the paths your packets take, and the current state of the network. Regular monitoring and analysis can help maintain network health and performance.
  
+
+</blockquote>
+</details>
+
+
 ## Multiple locations with single vRack
 OVH's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. This is particularly beneficial for businesses that require high availability, disaster recovery solutions, or simply wish to maintain a unified network across multiple sites.
 
