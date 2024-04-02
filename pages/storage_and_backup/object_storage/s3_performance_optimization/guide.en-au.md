@@ -160,7 +160,7 @@ SIZE is in Mega-Bytes, default chunk size is 15MB, minimum allowed chunk size is
 $ s3cmd put --multipart-chunk-size-mb=500 big-file.zip s3://some-bucket/
 ```
 
-For more information on s3cmd, consult the official documentation [here](https://s3tools.org/usage){.external).
+For more information on s3cmd, consult the official documentation [here](https://s3tools.org/usage){.external}.
 
 #### rclone
 
@@ -269,7 +269,7 @@ List of objects:
 - db/mongodb/file20240217.log
 - ...
 
-Assuming a threshold of 100, after the 100th object is uploaded, the sharding is triggerd to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
+Assuming a threshold of 100, after the 100th object is uploaded, the sharding is triggered to split the objects in 2 shards. This 2nd scenario is optimal because all new uploads will be spread on the 2 shards.
 
 ![Schema 4](images/sharding4.png){.thumbnail}
 
@@ -279,7 +279,7 @@ When you upload a very large number of objects at once, you trigger the sharding
 
 In order to avoid the reduced performance (503 SLOWDOWN errors), we recommend that you optimise your uploads by spreading your request over time. This spread does not have to be linear, but it does have to give us enough time to balance your workload.
 
-A simple way to achieve that lies in better 503 slowdown errors management and error recovery : ramp up your uploads until you hit 503 errors and modulate your workload to accomodate the throttling until sharding is complete and then ramp up again.
+A simple way to achieve that lies in better 503 slowdown errors management and error recovery: ramp up your uploads until you hit 503 errors and modulate your workload to accommodate the throttling until sharding is complete and then ramp up again.
 
 ### Increase object sizes
 
