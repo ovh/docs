@@ -210,17 +210,19 @@ Si desea obtener ayuda sobre las funcionalidades de su CMS, consulte con el edit
 
 ## Más información
 
-[Seleccione un CMS para crear un sitio web](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/){.external}
+[Seleccione un CMS para crear un sitio web](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/){.external}.
 
-[Cómo compartir un alojamiento web entre varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Cómo compartir un alojamiento web entre varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Gestión de una base de datos desde un alojamiento compartido](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestión de una base de datos desde un alojamiento compartido](/pages/web_cloud/web_hosting/sql_create_database).
 
-Descubra nuestras [ofertas Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/){.external}
+Descubra nuestras [ofertas Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/){.external}.
 
-[Gestionar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Gestionar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Desinstalar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-el-modulo)
+[Desinstalar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-el-modulo).
+
+Si quiere conservar un control total sobre la instalación de su CMS, puede [instalar manualmente un CMS en su alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
