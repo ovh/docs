@@ -60,9 +60,9 @@ Next, locate your Additional IP address in the table and click the `...`{.action
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your additional IP row. This virtual MAC will be required in the next step.
-
 ![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
+
+After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your additional IP row. This virtual MAC will be required in the next step.
 
 ### Step 2: Determine the gateway address
 
