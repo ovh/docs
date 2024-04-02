@@ -31,7 +31,7 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 <details>
 
-  <summary><b>List of your VRacks Services</b> </summary>
+  <summary><b>Liste de vos VRacks Services</b> </summary>
 
 <blockquote>
     
@@ -61,7 +61,7 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 </details>
 
 <details>
-  <summary><b>VRack Service Creation</b> </summary>
+  <summary><b>Création d'un VRack Service</b> </summary>
 
 ![overview 01](images/03-VRS.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 </details>
 
 <details>
-  <summary><b>Subnet creation</b> </summary>
+  <summary><b>Création d'un Sous-réseau</b> </summary>
 
     
 
@@ -98,7 +98,7 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 
 <details>
-  <summary><b>Endpoint creation</b> </summary>
+  <summary><b>Création d'un Service Endpoint</b> </summary>
 
 ![overview 01](images/15-VRS.png){.thumbnail}
     
