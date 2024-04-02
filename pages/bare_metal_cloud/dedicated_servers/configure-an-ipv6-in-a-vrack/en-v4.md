@@ -373,19 +373,7 @@ This command configures the system to route traffic originating from `2001:db8::
 ### Setup verification   
 To verify your network setup, whether it's configured in bridged or routed mode, `mtr` (My Traceroute) is a powerful network diagnostic tool that combines the functionality of the `traceroute` and `ping` programs. It provides a continuously updated list of routers traversed by your packets to reach a destination and the latency to each router. This can be particularly useful for diagnosing network issues and verifying the path and performance of your traffic.   
 
-**1. Installation of `mtr`**   
-First, ensure `mtr` is installed on your system:   
-***For Ubuntu:***   
-```bash
-sudo apt-get update
-sudo apt-get install mtr
-```   
-***For CentOS/RHEL:***
-```bash
-sudo yum install mtr
-```
-
-**2. Setup Verification with `mtr`**   
+**1. Setup Verification with `mtr`**   
 ***MTR for Bridged Mode***   
 To verify a bridged network setup, use mtr to analyze the path packets take through the vRack. This mode doesn't involve specific routing beyond the local network configuration.
 ```bash
@@ -400,7 +388,7 @@ mtr -rw google.com
 ```
 This traces the route from a host within your vRack in routed mode to `google.com`, showing each hop and latency.
 
-**3. Expected Return from the Call**    
+**2. Expected Return from the Call**    
 ***For Bridged Mode to `2001:db8::2:`***
 ```yaml
 Start: 2024-01-01T12:00:00
@@ -417,7 +405,7 @@ HOST: your-server              Loss%   Snt   Last   Avg  Best  Wrst StDev
   ... additional hops ...
 ```
 
-**4. Interpreting `mtr` Results**   
+**3. Interpreting `mtr` Results**   
 - **Consistent Latencies** across hops suggest a stable connection. Significant fluctuations may indicate congestion or other network issues.
 - **Unexpected Hops** or routes not planned in your network design could point to misconfigurations or potential security concerns.
 - **Packet Loss** at any hop requires further investigation to identify and resolve network problems.   
