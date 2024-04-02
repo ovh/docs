@@ -37,7 +37,7 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 ## Configuring IPv6 in a vRack   
 ### Gathering IPv6 block:
-To gather an IPv6 block with OVH's services, particularly for use with a vRack, it's important to understand that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, influencing where public traffic enters your vRack backend. Here's how you can use OVH's APIv6 to perform this task:
+To gather an IPv6 block with OVH's services, particularly for use with a vRack, it's important to understand that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, influencing where public traffic enters your vRack backend. Gathering IPv6 block: During Alpha stage, customer should request Additional IPv6 block for specified location using this form: https://survey.ovh.com/index.php/483751?lang=en Here's how you can use OVH's APIv6 to perform this task:
 
 **<ins>Prerequisites</ins>**
 - Ensure you have an OVH API consumer key. If you don't have one, you'll need to generate it by following the instructions on the OVH API authentication page.
