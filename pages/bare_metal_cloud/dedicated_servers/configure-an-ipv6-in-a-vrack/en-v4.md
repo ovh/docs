@@ -426,7 +426,7 @@ OVH's vRack technology enables organizations to connect servers across different
 - **Network Complexity:** While a single vRack can simplify management in some respects, the underlying network architecture may become more complex, especially when integrating multiple sites with varying local network topologies. This complexity requires careful planning and expertise to ensure optimal performance and reliability.
 
 
-- ## Known Limitations
+## Known Limitations
 Understanding the constraints of using IPv6 within the vRack environment is crucial for effective network planning. Here are the key limitations to consider:
 - **vRack as the Sole Backend**: The exclusive use of vRack as the backend network interface restricts design flexibility. All internal and external server communications must route through vRack, necessitating careful planning for connectivity and redundancy due to this dependency.
 - **SLAAC Limitations in Multi-Location Setups**: Stateless Address Autoconfiguration (SLAAC) is not supported for IPv6 across multiple vRack locations, presenting a challenge for network administration. This requires manual IPv6 address management, with DHCPv6 or static assignments as alternative strategies for IP distribution in dispersed networks.
