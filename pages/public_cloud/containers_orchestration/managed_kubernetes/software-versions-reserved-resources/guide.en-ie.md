@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2023-12-04
+updated: 2024-04-02
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -15,6 +15,7 @@ Currently, we support the following Kubernetes releases:
 * `1.26`
 * `1.27`
 * `1.28`
+* `1.29`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](/pages/public_cloud/containers_orchestration/managed_kubernetes/upgrading-kubernetes-version) to receive official support for your cluster.
 
@@ -39,6 +40,7 @@ We use `containerd` as the default CRI
 * `1.26`: 1.6.20
 * `1.27`: 1.6.20
 * `1.28`: 1.6.20
+* `1.29`: 1.6.27
 
 ## CNI (Cluster Network Interface)
 
@@ -46,11 +48,12 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.24`: calico v3.26.1, flannel v0.17.0 (deprecated)
-* `1.25`: calico v3.26.1, flannel v0.17.0 (deprecated)
-* `1.26`: calico v3.26.1, flannel v0.17.0
-* `1.27`: calico v3.26.1, flannel v0.17.0
-* `1.28`: calico v3.26.1, flannel v0.17.0
+* `1.24`: calico v3.26.4, flannel v0.21.3 (deprecated)
+* `1.25`: calico v3.26.4, flannel v0.21.3 (deprecated)
+* `1.26`: calico v3.26.4, flannel v0.21.3
+* `1.27`: calico v3.26.4, flannel v0.21.3
+* `1.28`: calico v3.26.1, flannel v0.21.3
+* `1.29`: calico v3.27.2, flannel v0.21.3
 
 ## CSI (Container Storage Interface)
 
@@ -63,6 +66,7 @@ The versions depend on the Kubernetes cluster version:
 * `1.26`: csi-plugin v1.21.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
 * `1.27`: csi-plugin v1.21.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
 * `1.28`: csi-plugin v1.21.0, csi-attacher v4.4.2, csi-provisioner v3.6.2, csi-snapshotter v6.3.2, snapshot-controller: v6.3.2, csi-resizer v1.9.2
+* `1.29`: csi-plugin v1.21.0, csi-attacher v4.5.0, csi-provisioner v3.6.3, csi-snapshotter v6.3.3 snapshot-controller: v6.3.3, csi-resizer v1.10.0
 
 ## Other components
 
@@ -73,6 +77,7 @@ The versions are:
 * `1.26`: coredns v1.11.1, metrics-server v0.6.4
 * `1.27`: coredns v1.11.1, metrics-server v0.6.4
 * `1.28`: coredns v1.11.1, metrics-server v0.6.4
+* `1.29`: coredns v1.11.1, metrics-server v0.6.4
 
 ## Enabled policies
 
