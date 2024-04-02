@@ -112,7 +112,7 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 ### API
 
-Cette section aborde les applications pratiques et les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de services vRack à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des services vRack, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
+Cette section aborde les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de services vRack à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des services vRack, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
 
 #### Basics
 
