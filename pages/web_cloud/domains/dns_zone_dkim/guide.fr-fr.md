@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2024-03-29
+updated: 2024-04-02
 ---
 
 <style>
@@ -73,7 +73,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 - [Cas d'usages](#usecases)
     - [Comment changer sa paire de clé DKIM ?](#2selectors)
     - [Pourquoi l'icône DKIM apparait en rouge dans l'espace client ?](#reddkim)
-    -[Depuis l'interface API OVHcloud, comment comprendre l'état du DKIM qui ne fonctionne pas ?](#api-error)
+    - [Depuis l'interface API OVHcloud, comment comprendre l'état du DKIM qui ne fonctionne pas ?](#api-error)
 
 ### Comment le DKIM fonctionne-t-il ? <a name="how-dkim-work"></a>
 
