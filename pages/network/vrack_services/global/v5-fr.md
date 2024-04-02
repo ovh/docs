@@ -4,22 +4,22 @@ Le produit vRack Services fournit une gamme de services réseaux pour votre vRac
 
 Pour plus d'informations sur le réseau privé vRack veuillez consulter (doc...) (web : https://www.ovhcloud.com/fr/network/vrack/)
 
-(place de la dernière version du schéma)
+![global schema](images/global_schema_20240402.png){.thumbnail}
 
 ## Objectif
 
 Cet article vous explique comment exposer votre service managé sur le vRack avec le produit vRack Services.
 
 ## Overview
-3 Composants Principaux de la Configuration Réseau   
+Il y 3 composants principaux dans la mise en place de cette configuration:
 
-<ins>1. vRack Service</ins>   
+1.&nbsp;<ins>vRack Service</ins>   
 Le service vRack constitue la couche fondamentale de votre configuration réseau, nécessitant une activation dans une région choisie. Ce choix influence l'emplacement physique de vos ressources, affectant ainsi la latence, la conformité et la souveraineté des données. vRack facilite les interconnexions sécurisées et isolées des dispositifs et services à travers les data centers, optimisant l'organisation et la sécurité du réseau.
    
-<ins>2. Sous-réseau</ins>   
+2.&nbsp;<ins>Sous-réseau</ins>   
 Les sous-réseaux divisent un réseau plus large en segments gérables, chacun disposant d'une plage spécifique d'adresses IP. Attribuer des sous-réseaux à vos services aide à organiser le trafic réseau, améliore la performance et renforce la sécurité. Cette division logique permet une gestion efficace des ressources et du flux de trafic au sein de votre réseau.
    
-<ins>3. Service Endpoint</ins>   
+3.&nbsp;<ins>Service Endpoint</ins>   
 Les Services Endpoint relient vos services au réseau en les associant à un sous-réseau, ce qui attribue automatiquement une adresse IP unique à chaque service. Cette configuration simplifie le déploiement des services, assure un accès facile et permet la mise en place de contrôles d'accès spécifiques et de mesures de sécurité.
 
 
@@ -128,7 +128,7 @@ $ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "v
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > HTTP/1.1 201 Created
@@ -163,8 +163,8 @@ $ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "v
   <summary><b>2. Create a Service Endpoint </b>     </summary>
 
 <blockquote>
+1.&nbsp;<ins>Request Service Endpoint creation (asynchronous as a vRack association exists)</ins>  
 
-1. <ins>Request Service Endpoint creation (asynchronous as a vRack association exists)</ins>   
 Here we use the second managed serice listed previously in 3.1 section "List all Managed Services compatible with the vRack Services"
 
 ```bash
@@ -173,7 +173,7 @@ $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7b
 ```  
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 >     
 > ```console
 > HTTP/1.1 201 Created
@@ -209,9 +209,8 @@ $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7b
 > }
 > ```
 > 
-> </details>
-
-2. <ins>Request a second Service Endpoint creation</ins>   
+> </details>   
+2.&nbsp;<ins>Request a second Service Endpoint creation</ins>   
 Just in order to show you the behavior when you want launch a new request during the execution of the previous one.
 
 ```bash
@@ -220,7 +219,7 @@ $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569
 
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 >     
 > ```console
@@ -245,7 +244,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 >      
 > ```console
 > {
@@ -299,7 +298,7 @@ $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/allowedServices?serviceFamil
 ```  
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 >    
 > ```console
 > {
@@ -331,7 +330,7 @@ $ curl -XPOST -d '{"vrackServices": "vrs-1234567"}' https://api.ovh.com/1.0/vrac
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 >     
 > ```console
@@ -359,7 +358,7 @@ $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/3456789
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 >     
 > ```console
 > HTTP/1.1 404 Not Found
@@ -377,7 +376,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 >     
 > ```console
@@ -433,7 +432,7 @@ $ cat extend-subnet-service-range.json
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > {
@@ -454,7 +453,7 @@ $ curl -XPUT -d@extend-subnet-service-range.json https://api.ovh.com/2.0/vrackSe
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 >   
 > ```console
 > {
@@ -485,7 +484,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 >   
 > ```console
 > {
@@ -526,7 +525,7 @@ $ curl -XDELETE https://api.ovh.com/1.0/vrack/pn-12345/vrackServices/vrs-1234567
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > {
@@ -551,7 +550,7 @@ $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/5678901
 
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > HTTP/1.1 404 Not Found
@@ -570,7 +569,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > {
@@ -640,7 +639,7 @@ https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndp
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > HTTP/1.1 400 Bad Request
@@ -674,7 +673,7 @@ a85404eb52"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-45678
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > HTTP/1.1 400 Bad Request
@@ -707,7 +706,7 @@ $ curl -XDELETE https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456
 ```
 
 > <details>
->   <summary>Click here to see the result</summary>
+>   <summary>Afficher le retour de cette commande</summary>
 > 
 > ```console
 > HTTP/1.1 409 Conflict
