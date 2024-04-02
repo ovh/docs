@@ -55,6 +55,8 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 
 ![IP](images/addvmac2.png){.thumbnail}
 
+After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your additional IP row.
+
 > [!primary]
 >
 > Do not forget to assign the virtual MAC address created in your virtual machine configuration.
