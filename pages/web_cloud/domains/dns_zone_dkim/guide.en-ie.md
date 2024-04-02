@@ -769,12 +769,11 @@ Here is what you will find in the header of the received email:
 
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
-       spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
-Return-Path: <test-dkim@mydomain.ovh>
+       spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
+Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
-
-To retrieve the header of an email, please read our guide on [Retrieving email headers](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+er of an email, please read our guide on [Retrieving email headers](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 ### Use cases <a name="usecases"></a>
 

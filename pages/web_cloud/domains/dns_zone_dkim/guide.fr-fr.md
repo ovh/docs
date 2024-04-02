@@ -768,8 +768,8 @@ Voici ce que vous pourrez trouver dans l'en-tête de l'e-mail reçu :
 
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
-       spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
-Return-Path: <test-dkim@mydomain.ovh>
+       spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
+Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
 Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l'en-tête d'un e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) ».
@@ -833,28 +833,28 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre, pour constater l'�
 >> ![email](images/red-dkim.png){.thumbnail}
 >>
 
-Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace client, Cliquez sur l'onglet correspondant à votre code erreur:
+Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace client, Cliquez sur l'onglet correspondant à votre code erreur :
 
- [!tabs]
+> [!tabs]
 > **501**
 >>
->> « **Only one dkim selector has been initialized** »<br><br> 
+>> « **Only one dkim selector has been initialized** »<br><br>
 >> Seul un sélecteur DKIM est présent dans votre configuration. Pour nous permettre la bascule vers une nouvelle clé lorsque cela est nécessaire, il est demandé de configurer les 2 sélecteurs fournis par le service.<br><br>
->> Pour corriger cette erreur : 
+>> Pour corriger cette erreur :
 >> - Vérifiez l'état des sélecteurs DKIM pour identifier celui qui doit être configuré. Pour cela, aidez-vous de la partie « [Les différents états du DKIM](#dkim-status) » de ce guide.
 >> - Une fois que vous avez identifié le sélecteur à configurer, suivez les étapes de la partie « [Configuration complète du DKIM](#firststep) » sur ce guide, selon votre offre (Exchange ou E-mail Pro), en l'appliquant uniquement au sélecteur concerné.
 >> Patientez maximum 24 heures après configuration du sélecteur.
 >>
 > **502**
 >>
->> « **One DKIM configuration task is in error** »<br><br> 
+>> « **One DKIM configuration task is in error** »<br><br>
 >> Une erreur est survenue lors de la configuration du DKIM. Au-delà de 24 heures, si votre configuration est toujours dans cet état, nous vous invitons à ouvrir un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_get_help).
 >>
 > **503**
 >>
 >> « **CNAME record is wrong** »<br><br>
 >> La valeur de l'enregistrement CNAME nécessaire à la configuration du DKIM n'a pas été saisie correctement. Vous devez configurer correctement la zone DNS du nom de domaine attaché.
->> Pour configurer votre zone DNS, récupérez les valeurs de l'enregistrement CNAME qui s'affiche:
+>> Pour configurer votre zone DNS, récupérez les valeurs de l'enregistrement CNAME qui s'affiche :
 >>
 >> ![email](images/dkim-503.png){.thumbnail}
 >>
@@ -863,9 +863,9 @@ Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace
 >>
 > **504**
 >>
->> « **One CNAME record is missing** »<br><br> 
+>> « **One CNAME record is missing** »<br><br>
 >> La valeur de l'enregistrement CNAME nécessaire à la configuration du DKIM est manquante. Vous devez configurer la zone DNS du nom de domaine attaché.
->> Pour configurer votre zone DNS, récupérez les valeurs de l'enregistrement CNAME qui s'affiche:
+>> Pour configurer votre zone DNS, récupérez les valeurs de l'enregistrement CNAME qui s'affiche :
 >>
 >> ![email](images/dkim-503.png){.thumbnail}
 >>

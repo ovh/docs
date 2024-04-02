@@ -1,7 +1,7 @@
 ---
 title: Configurar un registro DKIM
 excerpt: Cómo configurar un registro DKIM en un dominio y una plataforma de correo electrónico de OVHcloud
-updated: 2024-02-16
+updated: 2024-04-02
 ---
 
 <style>
@@ -77,6 +77,7 @@ El registro DKIM (**D**omain**K**eys **I**dentified **M**ail) permite firmar los
 - [Casos de uso](#usecases)
     - [¿Cómo cambiar su par de llaves DKIM?](#2selectors)
     - [¿Por qué el icono DKIM aparece en rojo en el área de cliente?](#reddkim)
+    - [Desde la API de OVHcloud, ¿cómo entender el estado del DKIM que no funciona?](#api-error)
 
 
 ### ¿Cómo funciona DKIM? <a name="how-dkim-work"></a>
@@ -775,7 +776,7 @@ En la cabecera del mensaje de correo electrónico recibido encontrará lo siguie
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
-Return-Path: &lt;test-dkim@mydomain.ovh>
+Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
 Para consultar la cabecera de un mensaje de correo electrónico, consulte nuestra guía [Obtener la cabecera de un email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
@@ -838,11 +839,51 @@ Haga clic en la pestaña que corresponde a su producto para comprobar el estado 
 >>
 >>![email](images/red-dkim.png){.thumbnail}
 
-Si acaba de configurar el DKIM, esto significa que la activación del DKIM no ha finalizado, **se recomienda esperar 24h**.
+Estos son los cuatro estados cuyo resultado es el icono DKIM en rojo en el área de cliente. Haga clic en la pestaña correspondiente al código de error :
 
-Si el estado permanece rojo después de las 24 horas, compruebe el estado del selector que ha activado. Para ello, consulte la sección «[Los diferentes estados del DKIM](#dkim-status)» de esta guía.
+> [!tabs]
+> **501**
+>>
+>> "**Only one dkim selector has been initialized**"<br><br>
+>> Sólo hay un selector DKIM en la configuración. Para permitirnos cambiar a una nueva clave cuando sea necesario, se le solicita que configure los 2 selectores proporcionados por el servicio.<br><br>
+>> Para corregir este error :
+>>: compruebe el estado de los selectores de DKIM para determinar cuál debe configurarse. Para ello, consulte la sección «[Los diferentes estados del DKIM](#dkim-status)" de esta guía.
+>> - Una vez que haya identificado el selector que desea configurar, siga los pasos que se indican en el apartado «[Configuración completa del DKIM](#firststep)" de esta guía, en función del plan que tenga contratado (Exchange o Email Pro), aplicándolo únicamente al selector correspondiente.
+>> Espere un máximo de 24 horas después de configurar el selector.
+>>
+> **502**
+>>
+>> "**One DKIM configuration task is in error**"<br><br>
+>> Se ha producido un error al configurar el DKIM. Una vez transcurridas 24 horas, si su configuración sigue en este estado, le invitamos a abrir un [tíquet con el soporte](https://help.ovhcloud.com/csm?id=csm_get_help).
+>>
+> **503**
+>>
+>> "**CNAME record is wrong**"<br><br>
+>> El valor del registro CNAME necesario para la configuración del DKIM no se ha introducido correctamente. Debe configurar correctamente la zona DNS del dominio asociado.
+>> Para configurar su zona DNS, obtenga los valores del registro CNAME que se muestra:
+>>
+>>![email](images/dkim-503.png){.thumbnail}
+>>
+>> Si tomamos como ejemplo la captura anterior, el nombre de dominio es "**mydomain.ovh**" y se le solicita que configure el selector "**2**". En este caso, es necesario añadir un registro CNAME con el valor `ovhex1234567-selector2.domainkey.mydomain.ovh` y como destino `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
+>> Una vez configurada la zona DNS, espere a que se propague la DNS (máximo 24 horas)
+>>
+> **504**
+>>
+>> "**One CNAME record is missing**"<br><br>
+>> Falta el valor del registro CNAME necesario para configurar el DKIM. Debe configurar la zona DNS del dominio asociado.
+>> Para configurar su zona DNS, obtenga los valores del registro CNAME que se muestra:
+>>
+>>![email](images/dkim-503.png){.thumbnail}
+>>
+>> Si tomamos como ejemplo la captura anterior, el nombre de dominio es "**mydomain.ovh**" y se le solicita que configure el selector "**2**". En este caso, es necesario añadir un registro CNAME con el valor `ovhex1234567-selector2.domainkey.mydomain.ovh` y como destino `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
+>> Una vez configurada la zona DNS, espere a que se propague la DNS (máximo 24 horas)
+>>
 
-Estos son los 4 estados que tienen como resultado el icono DKIM en rojo en su área de cliente:
+#### Desde la API de OVHcloud, ¿cómo entender el estado del DKIM que no funciona? <a name="api-error"></a>
+
+Si utiliza las API de OVHcloud para configurar su DKIM y este no está operativo, consulte la sección "[Los diferentes estados del DKIM](#dkim-status)" de esta guía para identificar el estado de sus selectores.
+
+A continuación, encontrará los estados que pueden bloquear el funcionamiento de su DKIM y la solución adecuada para cada situación.
 
  - `WaitingRecord`: los registros DNS están pendientes de configuración o se están validando en la zona DNS del dominio. Se realiza una comprobación automática periódica para comprobar si el registro DNS está presente y se ha completado correctamente. En función de su plan, siga el **paso 5** del apartado "[Configuración completa del DKIM](#firststep)" para configurar correctamente la zona DNS del dominio.
  - `ready`: los registros DNS están presentes en la zona. El DKIM ya puede activarse. Para activar el selector, pulse en la sección "[Activar o cambiar un selector DKIM](#enable-switch)".
@@ -851,5 +892,5 @@ Estos son los 4 estados que tienen como resultado el icono DKIM en rojo en su á
  - `todo`: la tarea se ha inicializado y debe iniciarse. Una vez transcurridas 24 horas, si el selector sigue en este estado, le invitamos a abrir un [tíquet con el soporte](https://help.ovhcloud.com/csm?id=csm_get_help) indicando el número del selector correspondiente.
 
 ## Más información <a name="go-further"></a>
-  
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

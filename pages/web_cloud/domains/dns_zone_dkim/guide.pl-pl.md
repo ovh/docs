@@ -77,6 +77,7 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 - [Przykłady zastosowań](#usecases)
     - [Jak zmienić parę kluczy DKIM?](#2selectors)
     - [Dlaczego ikona DKIM jest zaznaczona na czerwono w Panelu klienta?](#reddkim)
+    - [W interfejsie API OVHcloud, jak zrozumieć stan DKIM, który nie działa?](#api-error)
 
 
 ### Jak działa DKIM? <a name="how-dkim-work"></a>
@@ -774,8 +775,8 @@ Oto co możesz znaleźć w nagłówku otrzymanego e-maila:
 
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
-       spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
-Return-Path: <test-dkim@mydomain.ovh>
+       spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
+Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
 Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem "[Pobierz nagłówek wiadomości](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers)".
@@ -838,11 +839,51 @@ Kliknij na poniższą zakładkę odnoszącą się do Twojej oferty, aby sprawdzi
 >>
 >> ![email](images/red-dkim.png){.thumbnail}
 
-Jeśli właśnie skonfigurowałeś DKIM, oznacza to, że aktywacja DKIM nie została zakończona, **zaleca się odczekać 24 godziny**.
+Oto cztery statusy, po których w Panelu klienta wyświetli się czerwona ikona DKIM. Kliknij zakładkę z kodem błędu :
 
-Jeśli po 24 godzinach stan będzie czerwony, sprawdź stan włączonego selektora. W tym celu przejdź do sekcji "[Różne stany DKIM](#dkim-status)" w tym przewodniku.
+> [!tabs]
+> **501**
+>>
+>> "**Only one dkim selector has been initialized**"<br><br>
+>> Tylko selektor DKIM jest obecny w konfiguracji. Aby umożliwić przełączenie na nowy klucz, jeśli jest to konieczne, należy skonfigurować 2 selektory dostarczane przez usługę.<br><br>
+>> Aby naprawić ten błąd :
+>> - Sprawdź stan selektorów DKIM, aby określić, który powinien zostać skonfigurowany. W tym celu przejdź do sekcji "[Różne stany DKIM](#dkim-status)" niniejszego przewodnika.
+>> - Po wybraniu selektora do konfiguracji postępuj zgodnie z instrukcjami zawartymi w tej sekcji "[Pełna konfiguracja DKIM](#firststep)" w zależności od wybranej oferty (Exchange lub E-mail Pro) i zastosuj ją tylko do wybranego selektora.
+>> Odczekaj maksymalnie 24 godziny od skonfigurowania selektora.
+>>
+> **502**
+>>
+>> "**One DKIM configuration task is in error**"<br><br>
+>> Wystąpił błąd podczas konfigurowania DKIM. Po upływie 24 godzin, jeśli Twoja konfiguracja nadal jest w tym stanie, prosimy o otwarcie [zgłoszenia w dziale obsługi klienta](https://help.ovhcloud.com/csm?id=csm_get_help).
+>>
+> **503**
+>>
+>> "**CNAME record is wrong**"<br><br>
+>> Wartość rekordu CNAME potrzebnego do skonfigurowania DKIM nie została poprawnie wprowadzona. Należy poprawnie skonfigurować strefę DNS przypisanej nazwy domeny.
+>> Aby skonfigurować strefę DNS, pobierz wartości z rekordu CNAME, który się wyświetla :
+>>
+>> ![email](obrazy/dkim-503.png){.thumbnail}
+>>
+>> Jeśli weźmiemy przykład powyższego zrzutu, nazwą domeny będzie "**mydomain.ovh**", a następnie zostanie wyświetlona prośba o skonfigurowanie selektora "**2**". Tutaj należy dodać rekord CNAME z subdomeną `ovhex1234567-selector2.domainkey.mydomain.ovh` oraz jako adres docelowy `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
+>> Po skonfigurowaniu strefy DNS odczekaj chwilę na propagację DNS (maksymalnie 24 godziny)
+>>
+> **504**
+>>
+>> "**One CNAME record is missing**"<br><br>
+>> Brak wartości rekordu CNAME wymaganej do skonfigurowania DKIM. Należy skonfigurować strefę DNS dla dołączonej nazwy domeny.
+>> Aby skonfigurować strefę DNS, pobierz wartości z rekordu CNAME, który się wyświetla :
+>>
+>> ![email](obrazy/dkim-503.png){.thumbnail}
+>>
+>> Jeśli weźmiemy przykład powyższego zrzutu, nazwą domeny będzie "**mydomain.ovh**", a następnie zostanie wyświetlona prośba o skonfigurowanie selektora "**2**". Tutaj należy dodać rekord CNAME z subdomeną `ovhex1234567-selector2.domainkey.mydomain.ovh` oraz jako adres docelowy `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
+>> Po skonfigurowaniu strefy DNS odczekaj chwilę na propagację DNS (maksymalnie 24 godziny)
+>>
 
-Oto cztery statusy, w których w Panelu klienta wyświetlana jest czerwona ikona DKIM:
+### Z poziomu interfejsu API OVHcloud, jak zrozumieć stan DKIM, który nie działa? <a name="api-error"></a>
+
+Jeśli do konfiguracji DKIM używasz API OVHcloud, a DKIM nie działa, zapoznaj się z rubryką "[Poszczególne stany DKIM](#dkim-status)" niniejszego przewodnika, aby sprawdzić stan selektorów.
+
+Poniżej znajdziesz statusy, które mogą blokować działanie DKIM i odpowiednie rozwiązanie dla każdej sytuacji.
 
  - `WaitingRecord`: rekordy DNS oczekują na konfigurację lub są sprawdzane w strefie DNS domeny. Automatyczne i regularne weryfikacje przeprowadzane są w celu sprawdzenia, czy rekord DNS jest obecny i poprawnie wprowadzony. W zależności od Twojej oferty przejdź do **etapu 5** w sekcji "[Pełna konfiguracja DKIM](#firststep)", aby poprawnie skonfigurować strefę DNS danej domeny.
  - `ready`: rekordy DNS są obecne w strefie. Teraz można aktywować DKIM. Wystarczy włączyć selektor, naciskając sekcję "[Włącz lub zmień selektor DKIM](#enable-switch)".

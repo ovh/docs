@@ -529,7 +529,7 @@ En la cabecera del mensaje de correo electrónico recibido encontrará lo siguie
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
-Return-Path: &lt;test-dkim@mydomain.ovh>
+Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
 Para consultar la cabecera de un mensaje de correo electrónico, consulte nuestra guía [Obtener la cabecera de un email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
