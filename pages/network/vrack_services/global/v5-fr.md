@@ -343,6 +343,8 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 <details>
   <summary><b>1. Extend the Subnet service range</b></summary>
 
+<blockquote>
+
 1. <ins>Create a 'extend-subnet-service-range.json' text file with these informations inside</ins>
 
 ```bash
@@ -426,11 +428,15 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 > 
 > </details>
 
+</blockquote>
+
 </details>
 
 
 <details>
-  <summary><b>6. Dissociate the vRack Services from the vRack</b></summary>
+  <summary><b>2. Dissociate the vRack Services from the vRack</b></summary>
+
+<blockquote>
   
 1. <ins>Request vRack disassociation</ins>
 
@@ -509,24 +515,33 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 > 
 > </details>
 
+</blockquote>
 
 </details>
 
 
 <details>
-  <summary><b>7. Suspend the vRack Services</b></summary>
+  <summary><b>3. Suspend the vRack Services</b></summary>
 
+<blockquote>
+    
   Suspend triggered on Agora 'SUSPENSION' event consumption
 Here we have the same result than dissociation
 
+</blockquote>
+
 </details>
 
 
 <details>
-  <summary><b>8. Delete the vRack Services</b></summary>
+  <summary><b>4. Delete the vRack Services</b></summary>
+
+<blockquote>
 
    Deletion triggered on Agora 'TERMINATION' event consumption
    Then every resources deleted in cascade
+
+</blockquote>
 
 </details>
 
@@ -535,7 +550,8 @@ Here we have the same result than dissociation
 
 <details>
   <summary><b>1. Create a Service Endpoint with a wrong Managed Service localization</b></summary>
-  
+
+<blockquote>  
 
 ```bash
 $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569efa-61f2-4deb-8beea60b4213e1dc"}'
@@ -561,12 +577,15 @@ https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndp
 > 
 > </details>
 
+</blockquote>
+
 </details>
 
 
 <details>
   <summary><b>2. Create a Service Endpoint while Subnet ServiceRange is fully allocated</b></summary>
 
+<blockquote>
   
 ```bash
 $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "2d65f8e0-edde-448f-b9-
@@ -592,11 +611,15 @@ a85404eb52"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-45678
 > 
 > </details>
 
+</blockquote>
+
 </details>
 
 
 <details>
   <summary><b>3. Delete a Subnet that is associated to Service Endpoints</b></summary>
+
+<blockquote>
 
 ```bash
 $ curl -XDELETE https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890
@@ -619,6 +642,7 @@ $ curl -XDELETE https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456
 > 
 > </details>
 
+</blockquote>
 
 </details>
 
