@@ -26,11 +26,11 @@ The vRack network serves as a global private network bridging various OVHcloud p
 ## Introduction   
 IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated internet architectures. Here are the key benefits of integrating IPv6 with vRack:
 
-- **Flexibility for Advanced Networking**: IPv6's vast address space enhances vRack by providing the flexibility needed for failover scenarios, infrastructure scaling, and addressing larger solutions. This flexibility ensures your network can adapt and grow without the constraints of IPv4's limited address space.
+- **Flexibility for Advanced Networking**: IPv6 significantly increases the address space, providing the flexibility needed to scale infrastructure, manage failover scenarios and support larger solutions. This ensures that networks can grow and adapt without the space constraints of IPv4.
 
-- **Hierarchical Routing and Segmentation**: With IPv6, you can implement hierarchical routing, allowing for efficient subnetting. This capability is ideal for reselling VMs with dedicated IPv6 subnets or logically organizing your infrastructure into distinct segments, enhancing manageability and security.
+- **Hierarchical Routing and Segmentation**: IPv6 enables efficient hierarchical routing and logical infrastructure segmentation. This improves network manageability and security, ideal for reselling VMs with dedicated subnets or organising infrastructure into distinct segments.
 
-- **Scalability at Scale**: The introduction of IPv6 significantly expands the available address space, enabling you to meet large-scale needs without being confined to specific infrastructure limitations. This ensures your network is future-proof and capable of supporting an ever-growing number of internet-connected devices.
+- **Scalability at Scale**: IPv6's vast address space removes previous scalability limitations, allowing it to support large-scale requirements and the growing number of Internet-connected devices without infrastructure constraints.
 
 By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern internet usage.
 
