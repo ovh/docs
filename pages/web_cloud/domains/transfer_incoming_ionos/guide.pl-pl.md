@@ -65,7 +65,7 @@ Musisz również:
 
 ### Etap 1 - Wyłącz prywatne nagrywanie
 
-Aby potwierdzić, czy prywatna rejestracja jest włączona dla Twojej domeny, wykonaj kroki opisane w [dokumentacji dedykowanej Ionos](https://www.ionos.co.uk/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/){.external}.
+Aby potwierdzić, czy prywatna rejestracja jest włączona dla Twojej domeny, wykonaj kroki opisane w [dokumentacji dedykowanej Ionos](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/){.external}.
 
 #### Etap 2 - Wyłącz blokadę transferu
 
@@ -74,13 +74,13 @@ Aby potwierdzić, czy prywatna rejestracja jest włączona dla Twojej domeny, wy
 > Ze względów bezpieczeństwa nazwy domen z rozszerzeniem globalnym (na przykład *.com*, *.net* lub *.org*) są domyślnie zablokowane i nie można ich przenieść. Przed rozpoczęciem transferu domeny należy wyłączyć blokadę transferu.
 >
 
-Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej Ionos](https://www.ionos.co.uk/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/){.external}.
+Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej Ionos](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/){.external}.
 
 ### Etap 3 - Uzyskanie kodu autoryzacyjnego
 
 Kod autoryzacyjny chroni Twoją domenę przed nieautoryzowanym transferem przez osoby trzecie. Ten kod jest niezbędny, aby zezwolić na transfer domeny do nowego dostawcy.
 
-Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej Ionos](https://www.ionos.co.uk/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/){.external}.
+Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej Ionos](https://www.ionos.com/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/){.external}.
 
 Po uzyskaniu kodu autoryzacyjnego możesz przenieść domenę zgodnie z instrukcjami zawartymi w przewodniku "[Transfer domeny do OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
 

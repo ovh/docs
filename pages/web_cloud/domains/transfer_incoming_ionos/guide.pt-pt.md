@@ -65,7 +65,7 @@ Deve também:
 
 ### Etapa 1 - Desativar o registo privado
 
-Para confirmar se o registo privado está ativado para o seu domínio, siga os passos descritos na [documentação dedicada do Ionos](https://www.ionos.co.uk/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/){.external}.
+Para confirmar se o registo privado está ativado para o seu domínio, siga os passos descritos na [documentação dedicada do Ionos](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-private-registration-for-a-11-ionos-domain/){.external}.
 
 ### Etapa 2 - Desativar o bloqueio da transferência
 
@@ -74,13 +74,13 @@ Para confirmar se o registo privado está ativado para o seu domínio, siga os p
 > Por razões de segurança, os domínios com extensões genéricas (por exemplo, *.com*, *.net* ou *.org*) estão bloqueados por predefinição e não podem ser transferidos. Antes de iniciar uma transferência de domínio, deve desativar este bloqueio de transferência.
 >
 
-Siga os passos descritos na [documentação dedicada de Ionos](https://www.ionos.co.uk/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/){.external}.
+Siga os passos descritos na [documentação dedicada de Ionos](https://www.ionos.com/help/domains/transferring-your-domain-within-ionos/disabling-the-domain-transfer-lock-with-11-ionos/){.external}.
 
 ### Etapa 3 - Obter o código de autorização
 
 O código de autorização protege o seu nome de domínio contra qualquer transferência não autorizada por terceiros. Este código é necessário para autorizar a transferência do seu nome de domínio para um novo fornecedor.
 
-Siga os passos descritos na [documentação dedicada de Ionos](https://www.ionos.co.uk/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/){.external}.
+Siga os passos descritos na [documentação dedicada de Ionos](https://www.ionos.com/help/domains/transferring-your-domain-away-from-ionos-to-another-provider/getting-the-authorization-code-for-your-domain-with-11-ionos/){.external}.
 
 Uma vez obtido o código de autorização, pode proceder à transferência do seu nome de domínio seguindo as etapas do nosso guia "[Transferir o seu nome de domínio para a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
 
