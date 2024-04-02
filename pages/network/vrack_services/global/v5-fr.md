@@ -13,16 +13,13 @@ Cet article vous explique comment exposer votre service managé sur le vRack ave
 ## Overview
 3 Composants Principaux de la Configuration Réseau   
 
-1. vRack Service
-
+<ins>1. vRack Service</ins>   
 Le service vRack constitue la couche fondamentale de votre configuration réseau, nécessitant une activation dans une région choisie. Ce choix influence l'emplacement physique de vos ressources, affectant ainsi la latence, la conformité et la souveraineté des données. vRack facilite les interconnexions sécurisées et isolées des dispositifs et services à travers les data centers, optimisant l'organisation et la sécurité du réseau.
    
-2. Subnet
-
+<ins>2. Subnet</ins>   
 Les sous-réseaux divisent un réseau plus large en segments gérables, chacun disposant d'une plage spécifique d'adresses IP. Attribuer des sous-réseaux à vos services aide à organiser le trafic réseau, améliore la performance et renforce la sécurité. Cette division logique permet une gestion efficace des ressources et du flux de trafic au sein de votre réseau.
    
-3. Service Endpoint
-
+<ins>3. Service Endpoint</ins>   
 Les Services Endpoint relient vos services au réseau en les associant à un sous-réseau, ce qui attribue automatiquement une adresse IP unique à chaque service. Cette configuration simplifie le déploiement des services, assure un accès facile et permet la mise en place de contrôles d'accès spécifiques et de mesures de sécurité.
 
 
