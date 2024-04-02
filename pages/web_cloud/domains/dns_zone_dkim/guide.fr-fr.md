@@ -854,7 +854,7 @@ Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace
 >>
 >> « **CNAME record is wrong** »<br><br>
 >> La valeur de l'enregistrement CNAME nécessaire à la configuration du DKIM n'a pas été saisie correctement. Vous devez configurer correctement la zone DNS du nom de domaine attaché.
->> Pour configurer votre zone DNS, récupérer les valeurs de l'enregistrement CNAME qui s'affiche:
+>> Pour configurer votre zone DNS, récupérez les valeurs de l'enregistrement CNAME qui s'affiche:
 >>
 >> ![email](images/dkim-503.png){.thumbnail}
 >>
@@ -865,7 +865,7 @@ Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace
 >>
 >> « **One CNAME record is missing** »<br><br> 
 >> La valeur de l'enregistrement CNAME nécessaire à la configuration du DKIM est manquante. Vous devez configurer la zone DNS du nom de domaine attaché.
->> Pour configurer votre zone DNS, récupérer les valeurs de l'enregistrement CNAME qui s'affiche:
+>> Pour configurer votre zone DNS, récupérez les valeurs de l'enregistrement CNAME qui s'affiche:
 >>
 >> ![email](images/dkim-503.png){.thumbnail}
 >>
