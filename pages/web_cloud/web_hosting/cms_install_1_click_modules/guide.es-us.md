@@ -18,7 +18,7 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) que incluya al menos una base de datos.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) que incluya al menos una base de datos. 
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Utilizar una versión reciente de PHP y un entorno de ejecución compatible en su alojamiento web de OVHcloud. Descubra el estado de las distintas versiones disponibles en esta [página](https://webhosting-infos.hosting.ovh.net/). Si lo necesita, consulte nuestra [documentación](/pages/web_cloud/web_hosting/configure_your_web_hosting) para cambiar rápidamente esta configuración.
 - El directorio (directorio raíz) en el que se instalará el módulo en 1 clic debe estar vacío o no existe actualmente.
@@ -210,17 +210,19 @@ Si desea obtener ayuda sobre las funcionalidades de su CMS, consulte con el edit
 
 ## Más información
 
-[Seleccione un CMS para crear un sitio web](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}
+[Seleccione un CMS para crear un sitio web](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}.
 
-[Cómo compartir un alojamiento web entre varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Cómo compartir un alojamiento web entre varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Gestión de una base de datos desde un alojamiento compartido](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestión de una base de datos desde un alojamiento compartido](/pages/web_cloud/web_hosting/sql_create_database).
 
-Descubra nuestras [ofertas Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/){.external}
+Descubra nuestras [ofertas Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/){.external}.
 
-[Gestionar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Gestionar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Desinstalar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-el-modulo)
+[Desinstalar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-el-modulo).
+
+Si quiere conservar un control total sobre la instalación de su CMS, puede [instalar manualmente un CMS en su alojamiento web de OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

@@ -16,7 +16,7 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 - You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that contains at least one database.
-Your OVHcloud web hosting uses a recent PHP version and a compatible runtime environment. You can check the status of the different versions on [this page](https://webhosting-infos.hosting.ovh.net/). If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting), to change this configuration quickly.
+- Your OVHcloud web hosting uses a recent PHP version and a compatible runtime environment. You can check the status of the different versions on [this page](https://webhosting-infos.hosting.ovh.net/). If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting), to change this configuration quickly.
 - If you want to install the 1-click module in an existing folder, this folder must be empty.
 - The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
 
@@ -26,8 +26,6 @@ Your OVHcloud web hosting uses a recent PHP version and a compatible runtime env
 >
 > If you encounter any difficulties by following any of the steps described below, please refer to our specific documentation on [the most common errors related to 1-click modules](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
 >
-
-## Instructions
 
 ### Step 1: Decide on a CMS to use
 
@@ -207,17 +205,19 @@ If you need help with your CMS's features, please contact the publisher of the C
 
 ## Go further
 
-[Choosing a CMS for building your website](https://www.ovhcloud.com/asia/web-hosting/uc-cms-comparison/){.external}
+[Choosing a CMS for building your website](https://www.ovhcloud.com/asia/web-hosting/uc-cms-comparison/){.external}.
 
-[Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Managing a database on a web hosting plan](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Managing a database on a web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
 
-Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/asia/web-cloud/databases/){.external}
+Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/asia/web-cloud/databases/){.external}.
 
-[Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Uninstalling your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-delete-your-module)
+[Uninstalling your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-delete-your-module).
+
+If you would like to retain full control over how your CMS is installed, you can [install a CMS manually on your OVHcloud web hosting plan](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

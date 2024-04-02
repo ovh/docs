@@ -14,7 +14,7 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. 
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Découvrez l'état des différentes versions disponibles sur cette [page](https://webhosting-infos.hosting.ovh.net/). Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
@@ -55,7 +55,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 
 ![Choix du module](images/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} si besoin.
+Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) si besoin.
 
 > [!primary]
 >
@@ -184,7 +184,7 @@ Vérifiez les informations affichées puis cliquez sur `Valider`{.action} si tou
 
 ![Validation de l'installation en mode avancé](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
-### Étape 4 : personnaliser mon site
+### Étape 4 - personnaliser mon site
 
 L'installation peut prendre une dizaine de minutes.
 
@@ -217,6 +217,8 @@ Découvrez nos [offres Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-c
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
 [Désinstaller votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
+
+Si vous souhaitez garder un contrôle total sur l'installation de votre CMS, vous pouvez [installer manuellement un CMS sur votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
