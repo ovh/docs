@@ -284,6 +284,7 @@ The second command sets the default gateway for IPv6 traffic.
 ### Configuration on host side    
 Configuring your host to properly handle IPv6 addresses and route public traffic via the vRack interface is crucial for maintaining a secure and efficient network. Using the sample data provided, let's walk through the steps for manual IPv6 address configuration, enabling SLAAC, and setting up a separate IP routing table on a Linux-based system.
 
+**<ins>Actions</ins>**
 
 <details>
 <summary> <b>Manual Configuration</b> </summary>
@@ -373,9 +374,10 @@ This command configures the system to route traffic originating from `2001:db8::
 ### Setup verification   
 To verify your network setup, whether it's configured in bridged or routed mode, `mtr` (My Traceroute) is a powerful network diagnostic tool that combines the functionality of the `traceroute` and `ping` programs. It provides a continuously updated list of routers traversed by your packets to reach a destination and the latency to each router. This can be particularly useful for diagnosing network issues and verifying the path and performance of your traffic.   
 
+**<ins>Actions</ins>**
 
 <details>
-<summary> <b>1. Setup Verification with `mtr`</b> </summary>
+<summary> <b>Setup Verification with `mtr`</b> </summary>
 <blockquote>
 
 ***MTR for Bridged Mode***   
@@ -399,7 +401,7 @@ This traces the route from a host within your vRack in routed mode to `google.co
 
 
 <details>
-<summary> <b>2. Expected Return from the Call</b> </summary>
+<summary> <b>Expected Return from the Call</b> </summary>
 <blockquote>
 
 ***For Bridged Mode to `2001:db8::2:`***
@@ -424,7 +426,7 @@ HOST: your-server              Loss%   Snt   Last   Avg  Best  Wrst StDev
 
 
 <details>
-<summary> <b>3. Interpreting `mtr` Results</b> </summary>
+<summary> <b>Interpreting `mtr` Results</b> </summary>
 <blockquote>
 
 - **Consistent Latencies** across hops suggest a stable connection. Significant fluctuations may indicate congestion or other network issues.
