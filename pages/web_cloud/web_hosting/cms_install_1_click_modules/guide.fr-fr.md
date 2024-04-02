@@ -218,7 +218,7 @@ Découvrez nos [offres Web Cloud Databases](https://www.ovhcloud.com/fr/web-clou
 
 [Désinstaller votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
 
-Si vous souhaitez garder un contrôle total sur l'installation de votre CMS, vous pouvez [installer manuellement un CMS sur votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation), comme [WordPress](/pages/web_cloud/web_hosting/cms_manual_installation_wordpress), [PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop), [Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico) ou encore [Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav).
+Si vous souhaitez garder un contrôle total sur l'installation de votre CMS, vous pouvez [installer manuellement un CMS sur votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
