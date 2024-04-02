@@ -1,6 +1,6 @@
 ---
-title: 'Eine Ionos-Domain zu OVHcloud transferieren'
-excerpt: 'Erfahren Sie mehr über den Transfer einer Ionos-Domain zu OVHcloud'
+title: "Ionos-Domainnamen zu OVHcloud transferieren"
+excerpt: "Erfahren Sie hier, wie Sie einen Ionos-Domainnamen zu OVHcloud transferieren"
 updated: 2024-03-28
 ---
 
@@ -10,9 +10,9 @@ updated: 2024-03-28
 
 ## Ziel
 
-Für den Transfer einer Ionos-Domain ist ein spezieller Ansatz erforderlich.
+Für den Transfer eines Ionos-Domainnamens ist ein spezieller Ansatz erforderlich.
 
-**Diese Anleitung erklärt, wie Sie So transferieren Sie eine Ionos-Domain zu OVHcloud**
+**Diese Anleitung erklärt, wie Sie einen Ionos-Domainnamen zu OVHcloud transferieren.**
 
 > [!warning]
 >
@@ -27,46 +27,41 @@ Für den Transfer einer Ionos-Domain ist ein spezieller Ansatz erforderlich.
 
 ## Voraussetzungen
 
-- Sie verfügen über einen Domainnamen bei einem anderen Ionos Registrar.
+- Sie verfügen über einen Domainnamen bei Ionos.
 - Der Domainname existiert seit mehr als 60 Tagen.
 - Der Domainname wurde in den letzten 60 Tagen nicht transferiert und der Inhaber wurde nicht geändert.
 - Der Zustand des Domainnamens ist "OK" oder "Transferable".
 - Der Domainname ist nicht abgelaufen und hat ein Ablaufdatum, das den Transfer noch ermöglicht (empfohlen sind mehr als 60 Tage).
-
-Sie müssen außerdem:
-
-- Sie können die Domain freigeben.
-- Sie haben den Transfer-Code oder können ihn anfordern.
-- Sie sind berechtigt, den Transfer der Domain zu beantragen.
+- Sie können den Domainnamen entsperren und Sie haben bereits den Transfer-Code oder können ihn anfordern.
+- Sie besitzen die Verfügungsberechtigung, um den Transfer des Domainnamens zu veranlassen.
 - Der Domaininhaber und/oder dessen Administratoren sind über den Transfer informiert.
 
 > [!warning]
->
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
->
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei gängigen Aufgaben bestmöglich zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder Ihren aktuellen Registrar zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihren aktuellen Registrar zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Die aktive DNS-Zone einer Domain enthält die auf Ihre Domain angewendete DNS-Konfiguration. Sie verbindet Ihren Domainnamen mit Ihren Diensten wie E-Mail-Adressen oder Ihrer Website.
+> Die aktive DNS-Zone eines Domainnamens enthält die auf Ihre Domainnamen angewendete DNS-Konfiguration. Sie verbindet Ihren Domainnamen mit Ihren Diensten wie E-Mail-Adressen oder Ihrer Website.
 >
-> Wenn Sie zusätzlich zu Ihrer Domain bei Ihrem aktuellen Registrar über eine aktive DNS Zone verfügen, vergewissern Sie sich, dass die auf Ihre Domain angewendete DNS Zone nach dem Transfer nicht gelöscht wird.
+> Wenn Sie zusätzlich zu Ihrem Domainnamen bei Ihrem aktuellen Registrar über eine aktive DNS-Zone verfügen, vergewissern Sie sich, dass die auf Ihren Domainnamen angewendete DNS-Zone nach dem Transfer nicht gelöscht wird.
 >
-> Einige Registrare löschen die DNS Zone bei ihnen, sobald der Transfer Ihrer Domain abgeschlossen ist. Ist das der Fall, erstellen Sie Ihre DNS-Zone bei OVHcloud neu, bevor Sie mit den Aktionen zum Transfer Ihrer Domain beginnen.
+> Einige Registrare löschen die DNS-Zone, sobald der Transfer Ihres Domainnamens abgeschlossen ist. Ist das der Fall, erstellen Sie Ihre DNS-Zone bei OVHcloud neu, bevor Sie mit den Aktionen zum Transfer Ihres Domainnamens beginnen.
 >
 > Lesen Sie hierzu die folgenden Anleitungen:
 > - [DNS-Zone bei OVHcloud erstellen](/pages/web_cloud/domains/dns_zone_create)
 > - [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 >
-> Stellen Sie außerdem sicher, dass Ihr aktueller Registrar andere Dienste nicht schließt, z. B. die E-Mail-Adressen, die mit Ihrer Domain verknüpft sind.
+> Stellen Sie außerdem sicher, dass Ihr aktueller Registrar nicht andere Dienste abstellt, z.B. die E-Mail-Adressen, die mit Ihrem Domainnamen verknüpft sind.
 >
 
-### Schritt 1 - Private Aufzeichnung deaktivieren
+### Schritt 1 - Private Registrierung deaktivieren
 
-Um zu bestätigen, dass die private Registrierung für Ihren Domainnamen aktiviert ist, folgen Sie den Schritten in der [dedizierten Dokumentation von Ionos](https://www.ionos.de/hilfe/domains/domain-innerhalb-von-11-ionos-umziehen/private-registrierung-fuer-eine-domain-bei-11-ionos-deaktivieren/){.external}.
+Um zu bestätigen, dass die private Registrierung für Ihren Domainnamen aktiviert ist, folgen Sie den Schritten in der [Ionos Dokumentation](https://www.ionos.de/hilfe/domains/domain-innerhalb-von-11-ionos-umziehen/private-registrierung-fuer-eine-domain-bei-11-ionos-deaktivieren/){.external}.
 
 ### Schritt 2 - Transfer-Sperre deaktivieren
 
@@ -75,15 +70,15 @@ Um zu bestätigen, dass die private Registrierung für Ihren Domainnamen aktivie
 > Aus Sicherheitsgründen sind Domainnamen mit einer generischen Endung (zum Beispiel *.com*, *.net* oder *.org*) standardmäßig gesperrt und können nicht transferiert werden. Bevor Sie einen Transfer eines Domainnamens starten können, müssen Sie diese Transfersperre aufheben.
 >
 
-Folgen Sie den Schritten in der [Ionos Dedicated Documentation](https://www.ionos.de/hilfe/domains/domain-innerhalb-von-11-ionos-umziehen/domain-umzugssperre-bei-11-ionos-deaktivieren/){.external}.
+Folgen Sie den Schritten in der [Ionos Dokumentation](https://www.ionos.de/hilfe/domains/domain-innerhalb-von-11-ionos-umziehen/domain-umzugssperre-bei-11-ionos-deaktivieren/){.external}.
 
 ### Schritt 3 - Autorisierungscode abrufen
 
-Der Autorisierungscode schützt Ihre Domain vor nicht autorisiertem Transfer durch Dritte. Dieser Code ist erforderlich, um den Transfer Ihrer Domain zu einem neuen Anbieter zu autorisieren.
+Der Autorisierungscode schützt Ihren Domainnamen vor nicht autorisiertem Transfer durch Dritte. Dieser Code ist erforderlich, um den Transfer Ihrer Domain zu einem neuen Anbieter zu autorisieren.
 
-Befolgen Sie die Schritte in der [Ionos Dedicated Documentation](https://www.ionos.de/hilfe/domains/domain-von-11-ionos-zu-einem-anderen-anbieter-umziehen/autorisierungscode-fuer-ihre-domain-bei-11-ionos-anzeigen/){.external}.
+Folgen Sie den Schritten in der [Ionos Dokumentation](https://www.ionos.de/hilfe/domains/domain-von-11-ionos-zu-einem-anderen-anbieter-umziehen/autorisierungscode-fuer-ihre-domain-bei-11-ionos-anzeigen/){.external}.
 
-Sobald Sie den Autorisierungscode erhalten haben, können Sie den Transfer Ihrer Domain durchführen, indem Sie die Schritte in unserer Anleitung „[Domain zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)“ befolgen.
+Sobald Sie den Autorisierungscode erhalten haben, können Sie den Transfer Ihrer Domainnamen durchführen, indem Sie die Schritte in unserer Anleitung "[Domainnamen zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)" befolgen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
