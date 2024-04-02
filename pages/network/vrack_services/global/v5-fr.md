@@ -16,7 +16,7 @@ Cet article vous explique comment exposer votre service managé sur le vRack ave
 <ins>1. vRack Service</ins>   
 Le service vRack constitue la couche fondamentale de votre configuration réseau, nécessitant une activation dans une région choisie. Ce choix influence l'emplacement physique de vos ressources, affectant ainsi la latence, la conformité et la souveraineté des données. vRack facilite les interconnexions sécurisées et isolées des dispositifs et services à travers les data centers, optimisant l'organisation et la sécurité du réseau.
    
-<ins>2. Subnet</ins>   
+<ins>2. Sous-réseau</ins>   
 Les sous-réseaux divisent un réseau plus large en segments gérables, chacun disposant d'une plage spécifique d'adresses IP. Attribuer des sous-réseaux à vos services aide à organiser le trafic réseau, améliore la performance et renforce la sécurité. Cette division logique permet une gestion efficace des ressources et du flux de trafic au sein de votre réseau.
    
 <ins>3. Service Endpoint</ins>   
@@ -44,7 +44,7 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 <details>
     
-  <summary><b>Overview </b> </summary>
+  <summary><b>Vue d'ensemble </b> </summary>
 
 ![overview 01](images/07-VRS.png){.thumbnail}
 
@@ -112,12 +112,12 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 ### API
 
-Transitioning from the overview of vRack Services, this section will delve into the practical applications and actions that can be performed via the API. This includes creating subnets and service endpoints, associating vRack services to a vRack, and managing these services through detailed instructions. These actions highlight the operational capabilities of vRack Services, demonstrating how they can be leveraged to enhance and secure your network infrastructure.
+Cette section aborde les applications pratiques et les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de services vRack à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des services vRack, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
 
 #### Basics
 
 <details>
-  <summary><b>1. Create a Subnet</b> </summary>
+  <summary><b>1. Création d'un sous-réseau</b> </summary>
     
 <blockquote>
     
