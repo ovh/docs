@@ -92,10 +92,6 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 ---
 
-![overview 01](images/13-VRS.png){.thumbnail}
-
----
-
 ![overview 01](images/14-VRS.png){.thumbnail}
 
 </details>
