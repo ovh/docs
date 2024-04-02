@@ -212,15 +212,17 @@ Para mais informações, contacte o editor do CMS que instalou. Encontrará junt
 
 [Escolher um CMS para criar um *site*](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external}.
 
-[Como usar o meu alojamento com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} (versão PT disponível em breve).
+[Como usar o meu alojamento com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web_cloud/web_hosting/sql_create_database).
 
-Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external}
+Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external}.
 
-[Gerir o CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Gerir o CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Desinstalar o seu CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo)
+[Desinstalar o seu CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo).
+
+Se pretender manter um controlo total sobre a instalação do seu CMS, pode [instalar manualmente um CMS no seu alojamento web da OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

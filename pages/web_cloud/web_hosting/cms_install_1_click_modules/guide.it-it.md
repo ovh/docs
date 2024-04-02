@@ -212,17 +212,19 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 ## Per saperne di più
 
-[Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
+[Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}.
 
-[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Gestire un database da un hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestire un database da un hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database).
 
-[Gestire il vostro CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Gestire il vostro CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Disinstallare il tuo CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
+[Disinstallare il tuo CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo).
 
-Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
+Per mantenere il pieno controllo sull’installazione del CMS è possibile [installare manualmente un CMS sull’hosting Web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
+
+Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}.
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

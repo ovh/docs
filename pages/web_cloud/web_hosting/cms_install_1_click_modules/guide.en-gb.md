@@ -205,17 +205,19 @@ If you need help with your CMS's features, please contact the publisher of the C
 
 ## Go further
 
-[Choosing a CMS for building your website](https://www.ovhcloud.com/en-gb/web-hosting/uc-cms-comparison/){.external}
+[Choosing a CMS for building your website](https://www.ovhcloud.com/en-gb/web-hosting/uc-cms-comparison/){.external}.
 
-[Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+[Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Managing a database on a web hosting plan](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Managing a database on a web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
 
-Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/en-gb/web-cloud/databases/){.external}
+Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/en-gb/web-cloud/databases/){.external}.
 
-[Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Uninstalling your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-delete-your-module)
+[Uninstalling your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-delete-your-module).
+
+If you would like to retain full control over how your CMS is installed, you can [install a CMS manually on your OVHcloud web hosting plan](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
