@@ -45,10 +45,23 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 <details>
     
   <summary><b>Overview </b> </summary>
-    
-![overview 01](images/02-VRS.png){.thumbnail}
+
+![overview 01](images/07-VRS.png){.thumbnail}
 
 ---
+
+![overview 01](images/08-VRS.png){.thumbnail}
+
+---
+
+![overview 01](images/09-VRS.png){.thumbnail}
+  
+    
+
+</details>
+
+<details>
+  <summary><b>VRack Service Creation</b> </summary>
 
 ![overview 01](images/03-VRS.png){.thumbnail}
 
@@ -63,26 +76,15 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 ---
 
 ![overview 01](images/06-VRS.png){.thumbnail}
+    
+</details>
 
----
+<details>
+  <summary><b>Subnet creation</b> </summary>
 
-![overview 01](images/07-VRS.png){.thumbnail}
-
----
-
-![overview 01](images/08-VRS.png){.thumbnail}
-
----
-
-![overview 01](images/09-VRS.png){.thumbnail}
-
----
+    
 
 ![overview 01](images/10-VRS.png){.thumbnail}
-
----
-
-![overview 01](images/11-VRS.png){.thumbnail}
 
 ---
 
@@ -96,31 +98,14 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 ![overview 01](images/14-VRS.png){.thumbnail}
 
----
-
-![overview 01](images/15-VRS.png){.thumbnail}
-
-</details>
-
-<details>
-  <summary><b>VRack Service Creation</b> </summary>
-
-...
-    
-</details>
-
-<details>
-  <summary><b>Subnet creation</b> </summary>
-
-    ...
-
 </details>
 
 
 <details>
   <summary><b>Endpoint creation</b> </summary>
 
-    ...
+![overview 01](images/15-VRS.png){.thumbnail}
+    
 
 </details>
 
