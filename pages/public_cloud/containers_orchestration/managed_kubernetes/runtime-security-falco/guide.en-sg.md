@@ -6,11 +6,11 @@ updated: 2024-04-03
 
 ## Objective
 
-![Falco](images/falco.png)
+![Falco](images/falco.png){.thumbnail}
 
 [Falco](https://falco.org) is an Open Source cloud-native runtime security tool. It provides near real-time threat detection for cloud, container, and Kubernetes workloads by leveraging runtime insights. Falco can monitor events from various sources, including the Linux kernel, and enrich them with metadata from the Kubernetes API server, container runtime, and more.
 
-![Falco Schema](images/falco-schema.png)
+![Falco Schema](images/falco-schema.png){.thumbnail}
 
 Concretely, Falco:
 
@@ -18,7 +18,7 @@ Concretely, Falco:
 * Compare them to a set of **Rules** to determine the actions to perform
 * Generate **Alerts**: forward the Falco events to different endpoints (syslog, stdout, https, graph...) or to different apps (slack, discord, elasticsearch, kafka...) through [falcosidekick](https://github.com/falcosecurity/falcosidekick)
 
-![falcosidekick](images/falcosidekick.png)
+![falcosidekick](images/falcosidekick.png){.thumbnail}
 
 As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you discover Falco which will help you secure your OVHcloud Managed Kubernetes with a runtime security tool.
 
@@ -271,13 +271,13 @@ Open your browser and point to http://< EXTERNAL-IP >:2802 value using the crede
 * Login: my-user (or the login you defined in `helm install` command)
 * Password: my-password (or the password you defined in `helm install` command)
 
-![Falcosidekick UI](images/falcosidekick-ui.png)
+![Falcosidekick UI](images/falcosidekick-ui.png){.thumbnail}
 
-![Falcosidekick UI](images/falcosidekick-ui-2.png)
+![Falcosidekick UI](images/falcosidekick-ui-2.png){.thumbnail}
 
 Click on "EVENTS" tab:
 
-![Falcosidekick UI](images/falcosidekick-ui-search.png)
+![Falcosidekick UI](images/falcosidekick-ui-search.png){.thumbnail}
 
 You should see the previous events generated thanks to our tests.
 
