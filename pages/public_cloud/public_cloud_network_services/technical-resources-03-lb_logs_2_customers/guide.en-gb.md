@@ -36,8 +36,8 @@ The log messages contain the following fields:
 
 | Field name | Description | Unit |
 |------------|-------------|---------| 
-| project_id | The ID of the public cloud project to which the load balancer belongs | uuid |
-| load_balancer_id | The ID of the load balancer that received the request/connection | uuid |
+| project_id | The ID of the public cloud project to which the Load Balancer belongs | uuid |
+| load_balancer_id | The ID of the Load Balancer that received the request/connection | uuid |
 | listener_id | The ID of the listener that received the request/connection | uuid |
 | client_ip | IP address of the client that initiated the TCP connection to the Load Balancer | IP |
 | client_port | TCP port of the client that initiated the TCP connection to the Load Balancer | Numeric |
@@ -102,13 +102,13 @@ Use the following API call to create a subscription:
 
 You will need to replace:
 
-- **loadBalancerId**: this is the load balancer ID, you can find it in the details page of your load balancer in the OVHCloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer) call.
+- **loadBalancerId**: this is the Load Balancer ID, you can find it in the details page of your Load Balancer in the OVHcloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer) call.
 - **regionName**: the OpenStack region, for example, `GRA11`.
 - **serviceName**: the Public Cloud Project ID. You can find it in the OVHcloud Control Panel under your project name or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) call.
 
 The POST request has a payload that requires:
 
-- `kind`: the kind of log you want to forward. Note that the only value currently supported for Public Cloud Load Balancer is 'haproxy' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/log/kind) call).:
+- `kind`: the kind of log you want to forward. Note that the only value currently supported for Public Cloud Load Balancer is 'haproxy' (you can find available kinds using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/log/kind) call).
 - `streamId`: the target data stream of your LDP account where you want your Public Cloud Load Balancer logs to be forwarded to. 
 
 ```shell
