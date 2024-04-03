@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C ou SSE-S3
-excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C
-updated: 2024-03-22
+excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-S3
+updated: 2024-04-08
 ---
 
 <style>
@@ -198,7 +198,7 @@ Ces documents fournissent des informations précieuses sur la manière dont le K
 
 #### Mise en œuvre
 
-Pour renforcer la sécurité des données téléchargées sur OVHcloud, l'activation du chiffrement côté serveur (SSE-S3) a été conçue pour être à la fois facile et transparente. En configurant une méthode de chiffrement par défaut sur votre bucket via la requête `PutBucketEncryption`, tout objet téléchargé sera automatiquement chiffré sans nécessiter d'actions supplémentaires de votre part. Lors du téléchargement d'un objet, il suffit de spécifier l'option de chiffrement dans la requête d'API ou via la ligne de commande AWS CLI. OVHcloud prend en charge le reste, chiffrant vos données avant leur stockage en utilisant une clé unique générée automatiquement pour le bucket.
+Pour renforcer la sécurité des données uploadées chez OVHcloud, l'activation du chiffrement côté serveur (SSE-S3) a été conçue pour être à la fois facile et transparente. En configurant une méthode de chiffrement par défaut sur votre bucket via la requête `PutBucketEncryption`, tout objet uploadé sera automatiquement chiffré sans nécessiter d'actions supplémentaires de votre part. Lors de l'upload d'un objet, il suffit de spécifier l'option de chiffrement dans la requête d'API ou via la ligne de commande AWS CLI. OVHcloud prend en charge le reste, chiffrant vos données avant leur stockage en utilisant une clé unique générée automatiquement pour le bucket.
 
 #### Gestion sécurisée des clés de chiffrement avec SSE-S3 sur OVHcloud S3
 
@@ -213,6 +213,7 @@ Pour envoyer un objet dans votre bucket S3 sur OVHcloud avec chiffrement SSE-S3,
 ```bash
 aws s3api put-object --bucket votre-bucket --key votre-objet --body chemin/vers/votre/fichier --server-side-encryption AES256 --endpoint-url https://s3.io.cloud.ovh.net
 ```
+
 Lorsque vous utilisez la commande AWS CLI pour uploader un objet avec chiffrement SSE-S3 sur OVHcloud S3, assurez-vous de remplacer les valeurs suivantes selon vos informations spécifiques :
 
 - `votre-bucket` : remplacez cette valeur par le nom de votre bucket S3 où vous souhaitez envoyer l'objet.
@@ -276,7 +277,7 @@ aws s3 rm s3://mon-Bucket/mon-objet
 ```
 
 - Remplacez `mon-Bucket` par le nom de votre bucket
-- `mon-objet` par le nom de l'objet que vous souhaitez supprimer.
+- Remplacez `mon-objet` par le nom de l'objet que vous souhaitez supprimer.
 
 Cette commande permet de supprimer efficacement un objet, qu'il soit chiffré ou non, de votre bucket sur OVHcloud S3.
 
@@ -312,7 +313,7 @@ Un tableau comparatif peut être utile pour résumer ces éléments, offrant une
 
 Chaque méthode de chiffrement a ses propres forces et faiblesses. Le choix de la méthode dépend de plusieurs facteurs, notamment le niveau de sécurité requis, la complexité de la gestion des clés que vous êtes prêt à assumer, et les spécificités réglementaires ou de conformité auxquelles votre organisation doit adhérer.
 
-### Cas d'usage recommandés pour le chiffrement sur OVHcloud S3
+### Cas d'usage recommandés pour le chiffrement sur OVHcloud S3 Object Storage
 
 #### CSE (Client-Side Encryption)
 
@@ -333,7 +334,7 @@ Le choix entre ces méthodes doit être guidé par les politiques de sécurité 
 
 ### Exemples de scripts et commandes
 
-#### CSE (Client-Side Encryption):
+#### CSE (Client-Side Encryption)
 
 ```bash
 # Génération d'une clé de chiffrement côté client
@@ -344,7 +345,7 @@ openssl enc -aes-256-cbc -salt -in path/to/your/file -out path/to/encrypted/file
 aws s3 cp path/to/encrypted/file s3://your-bucket/your-encrypted-object
 ```
 
-#### SSE-C (Server-Side Encryption with Customer Keys):
+#### SSE-C (Server-Side Encryption with Customer Keys)
 
 ```bash
 # Création d'une clé de chiffrement et de son empreinte MD5
@@ -368,7 +369,7 @@ aws s3api get-object \
   path/to/destination/file
 ```
 
-#### SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys):
+#### SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys)
 
 ```bash
 # Envoi d'un objet avec chiffrement SSE-S3
