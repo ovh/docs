@@ -60,7 +60,7 @@ Soit 23,63 euros.
 
 ### Consulter ses factures
 
-Pour consulter les factures d'un projet, dans l'onglet `Public Cloud`{.action} de l'espace client OVHcloud, sélectionnez le projet cloud concerné dans le menu de gauche  puis cliquez sur `Billing Control`{.action}  et enfin sur `Historique`{.action}.
+Pour consulter les factures d'un projet, dans l'onglet `Public Cloud`{.action} de l'espace client OVHcloud, sélectionnez le projet cloud concerné dans le menu de gauche et allez dans 'Project Management'{.action} puis cliquez sur `Billing Control`{.action}  et enfin sur `Historique`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 
