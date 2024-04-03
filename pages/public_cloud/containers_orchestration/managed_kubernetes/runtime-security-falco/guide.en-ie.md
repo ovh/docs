@@ -102,7 +102,7 @@ security issues.
 No further action should be required.
 ```
 
-As you can see we install also Falcosidekick thaks to several flags:
+As you can see we install also Falcosidekick thanks to several flags:
 
 * `--set falcosidekick.enabled=true` enables deployment of Falcosidekick aside Falco and configures Falco for sending its events to Falcosidekick
 * `--set falcosidekick.webui.enabled=true` enables deployment of Falcosidekick-UI and configure Falcosidekick for using it as output
