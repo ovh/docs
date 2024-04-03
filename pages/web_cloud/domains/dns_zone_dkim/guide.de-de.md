@@ -66,7 +66,7 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
     - [Vollständige Konfiguration von DKIM](#firststep)
         - [Für Exchange](#confex)
         - [Für E-Mail Pro](#confemp)
-    - [Die verschiedenen DKIM-Zustände](#status)
+    - [Die verschiedenen DKIM-Zustände](#dkim-status)
     - [DKIM-Selektor aktivieren oder ändern](#enable-switch)
     - [DKIM deaktivieren und löschen](#disable-delete)
 - [DKIM für einen E-Mail-Dienst außerhalb Ihres OVHcloud Kunden-Accounts konfigurieren](#external-dkim)
@@ -77,7 +77,7 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
 - [Einsatzzwecke](#usecases)
     - [Wie ändere ich mein DKIM-Schlüsselpaar?](#2selectors)
     - [Warum wird das DKIM-Symbol im Kundencenter rot angezeigt?](#reddkim)
-    - [Wie kann ich über das OVHcloud API den Zustand des nicht funktionierenden DKIM verstehen?](#api-error)
+    - [Wie kann ich über die OVHcloud API den Zustand eines nicht funktionierenden DKIM verstehen?](#api-error)
 
 ### Wie funktioniert DKIM? <a name="how-dkim-work"></a>
 
@@ -270,7 +270,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >> ```
 >> > [!primary]
 >> >
->> > Wenn Ihr Domainname im selben OVHcloud Kunden-Account verwaltet wird und Sie `autoEnableDKIM` und `configureDkim` angehakt haben, gehen Sie direkt zum Abschnitt [**Die verschiedenen DKIM-Statusse**](#dkim-status), um die Aktivierung von DKIM zu verfolgen.
+>> > Wenn Ihr Domainname im selben OVHcloud Kunden-Account verwaltet wird und Sie `autoEnableDKIM` und `configureDkim` angehakt haben, gehen Sie direkt zum Abschnitt [**Die verschiedenen DKIM-Zustände**](#dkim-status), um die Aktivierung von DKIM zu verfolgen.
 >>
 > **3. DNS-Eintrag abrufen**
 >> Konfigurieren Sie die DNS-Zone Ihres Domainnamens manuell **in folgenden Fällen**:
@@ -337,7 +337,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 > **5. DKIM aktivieren**
 >> > [!warning]
 >> >
->> > Überprüfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Statusse**](#dkim-status) in dieser Anleitung, dass `status:` den Wert `ready` hat, bevor Sie DKIM aktivieren.
+>> > Überprüfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Zustände**](#dkim-status) in dieser Anleitung, dass `status:` den Wert `ready` hat, bevor Sie DKIM aktivieren.
 >>
 >> Um DKIM zu aktivieren, verwenden Sie folgenden API-Aufruf:
 >>
@@ -362,7 +362,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 >> > [!success]
 >> >
->> > Sie haben damit alle notwendigen Schritte unternommen, um DKIM zu aktivieren. Um sicherzustellen, dass DKIM aktiviert ist, püfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Statusse**](#dkim-status) dieser Anleitung, ob `status:` den Wert `inProduction` hat. Ist das der Fall, ist Ihr DKIM aktiv.<br><br> **Wenn Sie zwei Selektoren erstellt haben**, sollte der zweite Selektor `status:` den Wert `ready` haben.
+>> > Sie haben damit alle notwendigen Schritte unternommen, um DKIM zu aktivieren. Um sicherzustellen, dass DKIM aktiviert ist, püfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Zustände**](#dkim-status) dieser Anleitung, ob `status:` den Wert `inProduction` hat. Ist das der Fall, ist Ihr DKIM aktiv.<br><br> **Wenn Sie zwei Selektoren erstellt haben**, sollte der zweite Selektor `status:` den Wert `ready` haben.
 >>
 
 ##### **Für E-Mail Pro** <a name="confemp"></a>
@@ -422,7 +422,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >> ```
 >> > [!primary]
 >> >
->> > Wenn Ihr Domainname im selben OVHcloud Kunden-Account verwaltet wird und Sie `autoEnableDKIM` und `configureDkim` angehakt haben, gehen Sie direkt zum Abschnitt [**Die verschiedenen DKIM-Statusse**](#dkim-status), um die Aktivierung von DKIM zu verfolgen.
+>> > Wenn Ihr Domainname im selben OVHcloud Kunden-Account verwaltet wird und Sie `autoEnableDKIM` und `configureDkim` angehakt haben, gehen Sie direkt zum Abschnitt [**Die verschiedenen DKIM-Zustände**](#dkim-status), um die Aktivierung von DKIM zu verfolgen.
 >>
 > **3. DNS-Eintrag abrufen**
 >> Konfigurieren Sie die DNS-Zone Ihres Domainnamens manuell **in folgenden Fällen**:
@@ -488,7 +488,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 > **5. DKIM aktivieren**
 >> > [!warning]
 >> >
->> > Überprüfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Statusse**](#dkim-status) in dieser Anleitung, dass `status:` den Wert `ready` hat, bevor Sie DKIM aktivieren.
+>> > Überprüfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Zustände**](#dkim-status) in dieser Anleitung, dass `status:` den Wert `ready` hat, bevor Sie DKIM aktivieren.
 >>
 >> Um DKIM zu aktivieren, verwenden Sie folgenden API-Aufruf:
 >>
@@ -512,10 +512,10 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 >> > [!success]
 >> >
->> > Sie haben damit alle notwendigen Schritte unternommen, um DKIM zu aktivieren. Um sicherzustellen, dass DKIM aktiviert ist, püfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Statusse**](#dkim-status) dieser Anleitung, ob `status:` den Wert `inProduction` hat. Ist das der Fall, ist Ihr DKIM aktiv.
+>> > Sie haben damit alle notwendigen Schritte unternommen, um DKIM zu aktivieren. Um sicherzustellen, dass DKIM aktiviert ist, püfen Sie mithilfe des Abschnitts [**Die verschiedenen DKIM-Zustände**](#dkim-status) dieser Anleitung, ob `status:` den Wert `inProduction` hat. Ist das der Fall, ist Ihr DKIM aktiv.
 >>
 
-#### Die verschiedenen DKIM-Statusse <a name="dkim-status"></a>
+#### Die verschiedenen DKIM-Zustände <a name="dkim-status"></a>
 
 Wählen Sie Ihr E-Mail-Angebot in den folgenden Tabs aus:
 
@@ -780,7 +780,7 @@ Um den Header einer E-Mail einzusehen, lesen Sie unsere Anleitung "[E-Mail-Heade
 
 Wenn Sie DKIM zum ersten Mal für Ihren E-Mail-Dienst aktivieren, können Sie zwei Selektoren erstellen, die jeweils ein Schlüsselpaar enthalten. Die zweite Auswahl dient als Nachfolger der aktuellen Auswahl.
 
-Um Versuche zu vermeiden, den DKIM-Schlüssel zu entschlüsseln, sollten Sie das Schlüsselpaar regelmäßig wechseln. Vergewissern Sie sich, dass Sie Ihre beiden Selektoren korrekt konfiguriert haben, indem Sie sicherstellen, dass der erste den Status `inProduction` und der zweite den Status `ready` hat. Sie können diesen Status unter [„Die verschiedenen DKIM-Status“](#dkim-status) überprüfen.
+Um Versuche zu vermeiden, den DKIM-Schlüssel zu entschlüsseln, sollten Sie das Schlüsselpaar regelmäßig wechseln. Vergewissern Sie sich, dass Sie Ihre beiden Selektoren korrekt konfiguriert haben, indem Sie sicherstellen, dass der erste den Status `inProduction` und der zweite den Status `ready` hat. Sie können diesen Status unter [„“](#dkim-status) überprüfen.
 
 Klicken Sie auf den Tab unten für Ihr Angebot.
 
@@ -832,22 +832,22 @@ Wählen Sie Ihr E-Mail-Angebot in den folgenden Tabs aus, um den Status des DKIM
 >>
 >>![email](images/red-dkim.png){.thumbnail}
 
-Hier sind die 4 Status, die zu dem roten DKIM-Symbol in Ihrem Kundencenter führen. Klicken Sie auf die Registerkarte für Ihren Fehlercode:
+Hier sind die 4 Zustände, die zu dem roten DKIM-Symbol in Ihrem Kundencenter führen. Klicken Sie auf den Tab für Ihren Fehlercode:
 
  [!tabs]
 > **501**
 >>
->> „**Only one dkim selector has been initialized**“<br><br> 
+>> „**Only one DKIM selector has been initialized**“<br><br> 
 >> In der Konfiguration ist nur ein DKIM-Selektor vorhanden. Damit wir bei Bedarf zu einem neuen Schlüssel wechseln können, müssen wir die 2 vom Dienst bereitgestellten Selektoren konfigurieren.<br><br>
->> So beheben Sie diesen Fehler :
->> - Überprüfen Sie den Status der DKIM-Selektoren, um festzustellen, welcher Selektor konfiguriert werden muss. Lesen Sie hierzu den Abschnitt „[Die verschiedenen DKIM-Status](#dkim-status)“ in dieser Anleitung.
+>> So beheben Sie diesen Fehler:
+>> - Überprüfen Sie den Status der DKIM-Selektoren, um festzustellen, welcher Selektor konfiguriert werden muss. Lesen Sie hierzu den Abschnitt „[Die verschiedenen DKIM-Zustände](#dkim-status)“ in dieser Anleitung.
 >> - Nachdem Sie die zu konfigurierende Auswahl identifiziert haben, folgen Sie den Schritten im Abschnitt „[Vollständige DKIM-Konfiguration](#firststep)“ dieser Anleitung, je nach Ihrem Angebot (Exchange oder E-Mail Pro), und wenden Sie diese nur auf die betreffende Auswahl an.
 >> Warten Sie bis zu 24 Stunden, nachdem der Selektor eingerichtet wurde.
 >>
 > **502**
 >>
 >> „**One DKIM configuration task is in error**“<br><br> 
->> Bei der Konfiguration des DKIM ist ein Fehler aufgetreten. Wenn sich Ihre Konfiguration nach 24 Stunden noch in diesem Status befindet, können Sie ein [Ticket beim Support](https://help.ovhcloud.com/csm?id=csm_get_help) öffnen.
+>> Bei der Konfiguration des DKIM ist ein Fehler aufgetreten. Wenn sich Ihre Konfiguration nach 24 Stunden noch in diesem Status befindet, können Sie ein [Support-Ticket eröffnen](https://help.ovhcloud.com/csm?id=csm_get_help).
 >>
 > **503**
 >>
@@ -857,8 +857,8 @@ Hier sind die 4 Status, die zu dem roten DKIM-Symbol in Ihrem Kundencenter führ
 >>
 >> ![email](images/dkim-503.png){.thumbnail}
 >>
->> Im obigen Beispiel lautet der Domainname „**mydomain.ovh**“, und Sie werden aufgefordert, den Selektor „**2**“ zu konfigurieren. Fügen Sie hier einen CNAME-Eintrag mit der Subdomain `ovhex1234567-selector2.domainkey.mydomain.ovh` und als Ziel `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br> hinzu
->> Warten Sie nach der Konfiguration Ihrer DNS Zone ab, bis die DNS Propagation abgeschlossen ist (maximal 24 Stunden)
+>> Im obigen Beispiel lautet der Domainname „**mydomain.ovh**“, und Sie werden aufgefordert, den Selektor „**2**“ zu konfigurieren. Fügen Sie hier einen CNAME-Eintrag mit der Subdomain `ovhex1234567-selector2.domainkey.mydomain.ovh` und als Ziel `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br> hinzu.
+>> Warten Sie nach der Konfiguration Ihrer DNS-Zone ab, bis die DNS-Propagation abgeschlossen ist (maximal 24 Stunden).
 >>
 > **504**
 >>
@@ -868,13 +868,13 @@ Hier sind die 4 Status, die zu dem roten DKIM-Symbol in Ihrem Kundencenter führ
 >>
 >> ![email](images/dkim-503.png){.thumbnail}
 >>
->> Im obigen Beispiel lautet der Domainname „**mydomain.ovh**“, und Sie werden aufgefordert, den Selektor „**2**“ zu konfigurieren. Fügen Sie hier einen CNAME-Eintrag mit der Subdomain `ovhex1234567-selector2.domainkey.mydomain.ovh` und als Ziel `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br> hinzu
->> Warten Sie nach der Konfiguration Ihrer DNS Zone ab, bis die DNS Propagation abgeschlossen ist (maximal 24 Stunden)
+>> Im obigen Beispiel lautet der Domainname „**mydomain.ovh**“, und Sie werden aufgefordert, den Selektor „**2**“ zu konfigurieren. Fügen Sie hier einen CNAME-Eintrag mit der Subdomain `ovhex1234567-selector2.domainkey.mydomain.ovh` und als Ziel `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br> hinzu.
+>> Warten Sie nach der Konfiguration Ihrer DNS-Zone ab, bis die DNS-Propagation abgeschlossen ist (maximal 24 Stunden).
 >>
 
-#### Wie kann ich den Zustand des DKIM, der nicht funktioniert, über das OVHcloud API-Interface verstehen? <a name="api-error"></a>
+#### Wie kann ich über die OVHcloud API den Zustand eines nicht funktionierenden DKIM verstehen? <a name="api-error"></a>
 
-Wenn Sie Ihre DKIM mithilfe der OVHcloud API konfigurieren und diese nicht funktioniert, finden Sie im Abschnitt „[Die verschiedenen Status der DKIM](#dkim-status)“ dieser Anleitung Informationen zum Status Ihrer Selektoren.
+Wenn Sie DKIM mithilfe der OVHcloud API konfigurieren und es nicht funktioniert, finden Sie im Abschnitt „[Die verschiedenen DKIM-Zustände](#dkim-status)“ dieser Anleitung Informationen zum Status Ihrer Selektoren.
 
 Im Folgenden finden Sie die Status, die den Betrieb Ihres DKIM blockieren können, und die passende Lösung für jede Situation.
 
@@ -882,7 +882,7 @@ Im Folgenden finden Sie die Status, die den Betrieb Ihres DKIM blockieren könne
  - `ready`: DNS-Einträge sind in der Zone vorhanden. DKIM kann jetzt aktiviert werden, indem Sie dem Abschnitt „[DKIM aktivieren oder ändern](#enable-switch)“ folgen.
  - `deleting`: DKIM wird gelöscht. Nach dem Löschen folgen Sie dem Abschnitt „[Vollständige DKIM-Konfiguration](#firststep)“.
  - `disabling`: DKIM wird deaktiviert. Danach können Sie ihn reaktivieren, indem Sie den Abschnitt „[DKIM aktivieren oder ändern](#enable-switch)“ verwenden.
- - `todo`: Der Task wurde initialisiert und muss gestartet werden. Wenn er sich nach 24 Stunden noch in diesem Status befindet, können Sie ein [Ticket beim Support](https://help.ovhcloud.com/csm?id=csm_get_help) unter Angabe der Selektor-ID öffnen.
+ - `todo`: Der Task wurde initialisiert und muss gestartet werden. Wenn er sich nach 24 Stunden noch in diesem Status befindet, können Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) unter Angabe der Selektor-ID erstellen.
 
 ## Weiterführende Informationen
 
