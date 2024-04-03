@@ -1,16 +1,22 @@
 ---
-title: Known limits
+title: Public Cloud Network Services - Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2023-11-14
+updated: 2024-04-03
 ---
 
-## Vrack and Public Cloud project
+## Vrack and Public Cloud projects
 
-For a given Public Cloud project, you can attach only one vrack. If you wish to build private connectivity between 2 (or more) public cloud projects, you should attach the same vrack to those public cloud projects.
+For a given Public Cloud project, you can attach only one vRack. If you wish to build private connectivity between 2 (or more) Public Cloud projects, you should attach the same vRack to those Public Cloud projects.
 
-## Load Balancer Floating IP in OVHcloud Control panel
+## Load Balancer Floating IP in the OVHcloud Control Panel
 
-Currently the floating IP associated to a Load Balancer is missing in the Load Balancer details page on OVHcloud Control panel. You can find it in [Horizon](/pages/public_cloud/compute/introducing_horizon), in [Openstack CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) by doing `openstack floating ip list` and `openstack loadbalancer list` or through OVHcloud API.
+Currently, the Load Balancer details page in the OVHcloud Control Panel doesn't mention the Floating IP associated to a Load Balancer.
+
+You can find this information:
+
+- in [Horizon](/pages/public_cloud/compute/introducing_horizon).
+- using the [OpenStack CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) by doing `openstack floating ip list` and `openstack loadbalancer list`.
+- using the OVHcloud API:
 
 > [!api]
 >
