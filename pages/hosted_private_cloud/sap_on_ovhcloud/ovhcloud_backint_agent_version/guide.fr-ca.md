@@ -8,7 +8,7 @@ updated: 2024-03-18
 
 ### Version 1.0.10
 
-- Résolution du problème pouvant se produire lors d'un timeout avec le bucket S3 et entraînant une sauvegarde suspendue côté SAP HANA.
+- Résolution du problème pouvant se produire lors d'un timeout avec le bucket Object Storage S3 et entraînant une sauvegarde suspendue côté SAP HANA.
 
 ### Version 1.0.9
 

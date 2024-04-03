@@ -8,7 +8,7 @@ updated: 2024-03-18
 
 ### Version 1.0.10
 
-- Bug fix which could occur during a timeout with the S3 bucket and provoke an hanging backup on SAP HANA.
+- Bug fix which could occur during a timeout with the S3 Object Storage bucket and provoke an hanging backup on SAP HANA.
 
 ### Version 1.0.9
 
