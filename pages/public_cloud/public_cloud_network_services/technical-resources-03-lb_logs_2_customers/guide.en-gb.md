@@ -119,7 +119,7 @@ POST /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer
 }
 ```
 
-You will get in response an operationId:
+You will get in response an `operationId`:
 
 ```shell
 {
