@@ -285,7 +285,7 @@ You should see the previous events generated thanks to our tests.
 
 We installed Falco and falcosidekick and discovered how to test it and visualize the events but we didn't see all the features. If you are interested, visit the [Falco official website](https://falco.org/).
 
-After receving events we can, for example, forard the alerts to a multiples of apps thanks to Falcosidekick:
+After receving events we can, for example, forward the alerts to a multiples of apps thanks to Falcosidekick:
 
 * Slack
 * Discord
