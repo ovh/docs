@@ -14,25 +14,25 @@ updated: 2024-04-03
 
 Concretely, Falco:
 
-* Receive **Events**
-* Compare them to a set of **Rules** to determine the actions to perform
-* Generate **Alerts**: forward the Falco events to different endpoints (syslog, stdout, https, graph...) or to different apps (slack, discord, elasticsearch, kafka...) through [falcosidekick](https://github.com/falcosecurity/falcosidekick)
+- Receives **Events**
+- Compares them to a set of **Rules*- to determine the actions to perform
+- Generates **Alerts**: you can forward the Falco events to different endpoints (syslog, stdout, https, graph...) or to different apps (slack, discord, elasticsearch, kafka...) through [falcosidekick](https://github.com/falcosecurity/falcosidekick)
 
 ![falcosidekick](images/falcosidekick.png){.thumbnail}
 
-As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you discover Falco which will help you secure your OVHcloud Managed Kubernetes with a runtime security tool.
+At OVHcloud, we like to provide you with the best products and services. As for us security is important, that's why we want to help you discover Falco which will help you secure your OVHcloud Managed Kubernetes with a runtime security tool.
 
 In this guide you will:
 
 - Install Falco & Falcosidekick
-- Test the behavior
+- Test the behaviour
 - Visualize the events in UI
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster- function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, you can read the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
 
 ## Instructions
 
@@ -102,16 +102,16 @@ security issues.
 No further action should be required.
 ```
 
-As you can see we install also Falcosidekick thanks to several flags:
+As you can see, we also install Falcosidekick thanks to several flags:
 
-* `--set falcosidekick.enabled=true` enables deployment of Falcosidekick aside Falco and configures Falco for sending its events to Falcosidekick
-* `--set falcosidekick.webui.enabled=true` enables deployment of Falcosidekick-UI and configure Falcosidekick for using it as output
-* `--set falcosidekick.webui.service.type=LoadBalancer` allows to access the UI through an OVHcloud Load Balancer (and an external IP)
+- `--set falcosidekick.enabled=true` enables deployment of Falcosidekick aside Falco and configures Falco for sending its events to Falcosidekick
+- `--set falcosidekick.webui.enabled=true` enables deployment of Falcosidekick-UI and configures Falcosidekick for using it as output
+- `--set falcosidekick.webui.service.type=LoadBalancer` allows to access the UI through an OVHcloud Load Balancer (and an external IP)
 
 > [!primary]
-> Don't forget to change in the `helm install` command, and specifically in the `--set falcosidekick.webui.user` parameter, the login and the password to access to the UI. 
+> Don't forget to change the login and the password in the `helm install` command, and specifically in the `--set falcosidekick.webui.user` parameter, so you can access the UI.
 
-The Falco Helm chart installs a DaemonSet to add Falco Pods to all Nodes in the Kubernetes cluster to monitor abnormal behavior:
+The Falco Helm chart installs a DaemonSet to add Falco Pods to all Nodes in the Kubernetes cluster to monitor abnormal behaviour:
 
 ```console
 $ kubectl get all -n falco
@@ -168,7 +168,7 @@ Once the falco pod is ready, run the following command to see the logs:
 kubectl logs -l app.kubernetes.io/name=falco -n falco -c falco
 ```
 
-You should see logs like that:
+You should see logs such as the following:
 
 ```console
 $ kubectl logs -l app.kubernetes.io/name=falco -n falco -c falco
@@ -206,8 +206,8 @@ The logs confirm that Falco and its rules have been loaded correctly.
 
 ### Testing Falco
 
-Even without [adding new rules](https://falco.org/docs/rules/), Falco contains existing default rules that we can use to test the behavior.
-Follow the steps below to fire an alert if someone execute a shell into a running container.
+Even without [adding new rules](https://falco.org/docs/rules/), Falco contains existing default rules that we can use to test the behaviour.
+Follow the steps below to trigger an alert if someone executes a shell into a running container.
 
 Start an Alpine container:
 
@@ -253,7 +253,6 @@ $ kubectl logs -c falco -n falco -l app.kubernetes.io/name=falco |\
 
 You should see logs with "Notice A shell was spawned in a container with an attached terminal" message.
 
-
 ### Using the Falcosidekick UI
 
 Now we have Falco installed and we test it, we can see the events visually in the Falcosidekick UI.
@@ -266,16 +265,16 @@ NAME                     TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S) 
 falco-falcosidekick-ui   LoadBalancer   10.3.198.190   xx.xx.xx.xx   2802:31222/TCP   130m
 ```
 
-Open your browser and point to http://< EXTERNAL-IP >:2802 value using the credentials below:
+Open your browser and go to `http://< EXTERNAL-IP >:2802` using the credentials below:
 
-* Login: my-user (or the login you defined in `helm install` command)
-* Password: my-password (or the password you defined in `helm install` command)
+- Login: my-user (or the login you defined in the `helm install` command)
+- Password: my-password (or the password you defined in the `helm install` command)
 
 ![Falcosidekick UI](images/falcosidekick-ui.png){.thumbnail}
 
 ![Falcosidekick UI](images/falcosidekick-ui-2.png){.thumbnail}
 
-Click on "EVENTS" tab:
+Click the "EVENTS" tab:
 
 ![Falcosidekick UI](images/falcosidekick-ui-search.png){.thumbnail}
 
@@ -283,23 +282,23 @@ You should see the previous events generated thanks to our tests.
 
 ### What's next?
 
-We installed Falco and falcosidekick and discovered how to test it and visualize the events but we didn't see all the features. If you are interested, visit the [Falco official website](https://falco.org/).
+We installed Falco and falcosidekick and discovered how to test it and visualize the events but we didn't see all its features. If you are interested in them, visit the [Falco official website](https://falco.org/).
 
 After receving events we can, for example, forward the alerts to a multiples of apps thanks to Falcosidekick:
 
-* Slack
-* Discord
-* Elasticsearch
-* S3
-* SMTP
-* Opsgenie
-* Webhook
-* Prometheus
-* Grafana
-* Datadog
-* ...
+- Slack
+- Discord
+- Elasticsearch
+- S3
+- SMTP
+- Opsgenie
+- Webhook
+- Prometheus
+- Grafana
+- Datadog
+- ...
 
-If you have any questions or troubles about Falco, you can also go to [Falco Slack community](https://kubernetes.slack.com/messages/falco).
+If you have any questions or troubles about Falco, visit the [Falco Slack community](https://kubernetes.slack.com/messages/falco).
 
 ## Cleanup
 
@@ -309,7 +308,7 @@ First, delete the `demo-falco` pod with the following command:
 kubectl delete pod demo-falco
 ```
 
-To uninstall Falco, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Falco Helm installed chart:
+To uninstall Falco, as you installed it through Helm, you can use the `helm uninstall` command in order to delete the Falco Helm installed chart:
 
 ```bash
 helm uninstall falco -n falco
