@@ -4,6 +4,19 @@ excerpt: 'Requirements and limits to respect'
 updated: 2023-11-14
 ---
 
+## Vrack and Public Cloud project
+
+For a given Public Cloud project, you can attach only one vrack. If you wish to build private connectivity between 2 (or more) public cloud projects, you should attach the same vrack to those public cloud projects.
+
+## Load Balancer Floating IP in OVHcloud Control panel
+
+Currently the floating IP associated to a Load Balancer is missing in the Load Balancer details page on OVHcloud Control panel. You can find it in [Horizon](../../compute/introducing_horizon/), in [Openstack CLI](../../compute/prepare_the_environment_for_using_the_openstack_api/) by doing `openstack floating ip list` and `openstack loadbalancer list` or through OVHcloud API.
+
+> [!api]
+>
+> @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer/{loadBalancerId}
+>
+
 ## IPs used by services
 
 When a service is spawned in a subnet, it is using some IPs from the subnet CIDR. The following table provides the number of IPs used by each service. If the subnet has a "small" number of available IPs, this can have impact. If all L3 services are in use, the total number of IPs used will be 7. We advise to use at least a `/28` mask.
