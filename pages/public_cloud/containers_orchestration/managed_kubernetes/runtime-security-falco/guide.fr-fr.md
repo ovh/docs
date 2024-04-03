@@ -1,5 +1,5 @@
 ---
-title: Near real-time threats detection with Falco on OVHcloud Managed Kubernetes with Falco
+title: Near real-time threats detection with Falco on OVHcloud Managed Kubernetes
 excerpt: Find out how to secure your OVHcloud Managed Kubernetes with Falco, a runtime security tool
 updated: 2024-04-03
 ---
