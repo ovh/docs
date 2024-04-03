@@ -845,7 +845,7 @@ Ecco i 4 stati che hanno come risultato l’icona DKIM in rosso nel tuo Spazio C
 > **501**
 >>
 >> "**Only one dkim selector has been initialized**"<br><br>
->> Nella configurazione è presente solo un selettore DKIM. Per consentirci di passare a una nuova chiave quando necessario, è necessario configurare i 2 selettori forniti dal servizio.<br><br><br>
+>> Nella configurazione è presente solo un selettore DKIM. Per consentirci di passare a una nuova chiave quando necessario, è necessario configurare i 2 selettori forniti dal servizio.<br><br>
 >> Per correggere questo errore :
 >> - Controllare lo stato dei selettori DKIM per individuare quello che si desidera configurare. Per farlo, consulta la sezione "[I diversi stati del DKIM](#dkim-status)" di questa guida.
 >> - Una volta individuato il selettore da configurare, segui gli step indicati nella sezione "[Configurazione completa del DKIM](#firststep)" di questa guida, in base alla tua offerta (Exchange o Email Pro), applicandola esclusivamente al selettore in questione.

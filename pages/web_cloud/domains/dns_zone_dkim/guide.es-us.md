@@ -28,7 +28,7 @@ updated: 2024-02-16
 </style>
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -163,13 +163,13 @@ Para activar el DKIM, haga clic en la etiqueta gris `DKIM` y seleccione `Validar
 >
 > Para configurar automáticamente la zona DNS del dominio en cuestión, es necesario que la zona DNS se gestione desde la misma cuenta de cliente de OVHcloud que la plataforma de correo. Si tiene una zona DNS gestionada desde otra cuenta de cliente de OVHcloud o desde un dominio externo a OVHcloud, deberá introducir manualmente los registros DNS.
 >
-> Para ello, acceda al paso «**3.Obtener el registro DNS**» del apartado [Configuración completa del DKIM](#firststep), en el apartado correspondiente a su solución de correo electrónico, [Exchange](#confex).
+> Para ello, acceda al paso "**3.Obtener el registro DNS**" del apartado [Configuración completa del DKIM](#firststep), en el apartado correspondiente a su solución de correo electrónico, [Exchange](#confex).
 
 La activación automática del DKIM tarda entre 30 minutos y 24 horas como máximo. Para comprobar que su DKIM está operativo, solo tiene que volver a la pestaña `Dominios asociados`{.action} de su plataforma de correo y asegurarse de que la etiqueta `DKIM` se haya vuelto verde.
 
 ![email](images/dkim-auto03.png){.thumbnail}
 
-Si la etiqueta `DKIM` es de color rojo, después de las 24 horas, consulte la sección [«¿Por qué el DKIM no funciona y aparece en rojo en el área de cliente?»](#reddkim) de esta guía.
+Si la etiqueta `DKIM` es de color rojo, después de las 24 horas, consulte la sección ["¿Por qué el DKIM no funciona y aparece en rojo en el área de cliente?"](#reddkim) de esta guía.
 
 ### Configurar el DKIM manualmente para una solución de correo Exchange de OVHcloud <a name="internal-dkim"></a>
 
@@ -242,7 +242,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> > 
 >> > [!primary]
 >> >
->> > Le recomendamos que realice esta operación dos veces para cada uno de los selectores que ha indicado anteriormente. El segundo selector le permitirá realizar un cambio de par de claves cuando sea necesario. **No marque la casilla `autoEnableDKIM`{.action} cuando cree el segundo selector** para no entrar en conflicto con la activación del primer selector. Le invitamos a consultar nuestro caso de uso [«Cómo cambiar su par de claves DKIM»](#2selectors) cuando quiera cambiar al segundo selector.
+>> > Le recomendamos que realice esta operación dos veces para cada uno de los selectores que ha indicado anteriormente. El segundo selector le permitirá realizar un cambio de par de claves cuando sea necesario. **No marque la casilla `autoEnableDKIM`{.action} cuando cree el segundo selector** para no entrar en conflicto con la activación del primer selector. Le invitamos a consultar nuestro caso de uso ["Cómo cambiar su par de claves DKIM"](#2selectors) cuando quiera cambiar al segundo selector.
 >> <br>
 >>
 >> *Ejemplo de resultado:*
@@ -548,9 +548,9 @@ Para cambiar al segundo selector, utilice la siguiente llamada a la API:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 
-- `organizationName`: introduzca el nombre de su plataforma Exchange con el formato «hosted-zz111111-1» o «private-zz111111-1». <br>
+- `organizationName`: introduzca el nombre de su plataforma Exchange con el formato "hosted-zz111111-1" o "private-zz111111-1". <br>
 - `selectorName`: escriba el nombre del selector al que desea cambiar. <br>
-- `exchangeService`: introduzca el nombre de su plataforma Exchange con el formato «hosted-zz111111-1» o «private-zz11111-1». <br>
+- `exchangeService`: introduzca el nombre de su plataforma Exchange con el formato "hosted-zz111111-1" o "private-zz11111-1". <br>
 - `domainName` : Introduzca el nombre de dominio asociado a su plataforma Exchange. <br>
 
 Después de cambiar al nuevo selector, conserve el antiguo durante 7 días antes de eliminarlo y crear uno nuevo.
@@ -565,7 +565,7 @@ Desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomana
 
 Si acaba de configurar el DKIM, esto significa que la activación del DKIM no ha finalizado, **se recomienda esperar 24h**.
 
-Si el estado permanece rojo después de las 24 horas, compruebe el estado del selector que ha activado. Para ello, consulte la sección «[Los diferentes estados del DKIM](#dkim-status)» de esta guía.
+Si el estado permanece rojo después de las 24 horas, compruebe el estado del selector que ha activado. Para ello, consulte la sección "[Los diferentes estados del DKIM](#dkim-status)" de esta guía.
 
 Estos son los 4 estados que tienen como resultado el icono DKIM en rojo en su área de cliente:
 
