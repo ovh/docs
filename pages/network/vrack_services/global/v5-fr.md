@@ -121,7 +121,7 @@ Cette section aborde les actions qui peuvent être effectuées via l'API. Cela i
     
 <blockquote>
     
-  Request Subnet creation (always synchronous)
+  Demande de création de Sous-réseau (toujours synchrone)
 
 ```bash
 $ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "vlan": "10"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet
@@ -160,10 +160,11 @@ $ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "v
 
 
 <details>
-  <summary><b>2. Create a Service Endpoint </b>     </summary>
+  <summary><b>2. Création d'un Service Endpoint </b>     </summary>
 
 <blockquote>
-1.&nbsp;<ins>Request Service Endpoint creation (asynchronous as a vRack association exists)</ins>  
+1.&nbsp;<ins>Demande de création d'un Service Endpoint (asynchrone si une association vRack existe)</ins>  
+
 
 Here we use the second managed serice listed previously in 3.1 section "List all Managed Services compatible with the vRack Services"
 
