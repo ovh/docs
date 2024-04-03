@@ -10,7 +10,7 @@ Pour un projet Public Cloud donné, vous ne pouvez attacher qu'un seul vRack. Si
 
 ## Load Balancer Floating IP dans l'espace client OVHcloud
 
-Actuellement, la page détaillant le Load Balancer dans l'espace client OVHcloud ne mentionne pas l'adresse FLoating IP associée à un Load Balancer.
+Actuellement, la page détaillant le Load Balancer dans l'espace client OVHcloud ne contient pas l'adresse FLoating IP associée à un Load Balancer.
 
 Vous pouvez retrouver cette information :
 
