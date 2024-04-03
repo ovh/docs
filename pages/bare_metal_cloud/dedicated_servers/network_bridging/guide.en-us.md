@@ -62,7 +62,7 @@ Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware
 
 ![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
 
-After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your additional IP row. This virtual MAC will be required in the next step.
+After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your additional IP row. This virtual MAC will be required when configuring your VM on the host.
 
 ### Step 2: Determine the gateway address
 
