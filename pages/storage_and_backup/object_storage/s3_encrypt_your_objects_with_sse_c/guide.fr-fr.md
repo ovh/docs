@@ -211,7 +211,7 @@ L'implémentation du chiffrement SSE-S3 sur OVHcloud S3 est conçue pour offrir 
 Pour envoyer un objet dans votre bucket S3 sur OVHcloud avec chiffrement SSE-S3, utilisez la commande Bash suivante via l'AWS CLI. Cette commande intègre l'option de chiffrement côté serveur pour renforcer la sécurité de vos données stockées.
 
 ```bash
-aws s3api put-object --bucket votre-bucket --key votre-objet --body chemin/vers/votre/fichier --server-side-encryption AES256 --endpoint-url https://s3.<region>.ovhcloud.com
+aws s3api put-object --bucket votre-bucket --key votre-objet --body chemin/vers/votre/fichier --server-side-encryption AES256 --endpoint-url https://s3.io.cloud.ovh.net
 ```
 Lorsque vous utilisez la commande AWS CLI pour uploader un objet avec chiffrement SSE-S3 sur OVHcloud S3, assurez-vous de remplacer les valeurs suivantes selon vos informations spécifiques :
 
@@ -227,13 +227,13 @@ L'option `--server-side-encryption AES256` dans la commande indique que vous sou
 Pour télécharger un objet qui a été chiffré avec SSE-S3 depuis OVHcloud S3, il n'est pas nécessaire de spécifier des headers du chiffrement dans la commande. En effet, l'objet peut être téléchargé directement sans manipulation supplémentaire liée au chiffrement, car le déchiffrement est géré automatiquement côté serveur. Voici un exemple de commande de téléchargement :
 
 ```bash
-aws s3api get-object --bucket votre-bucket --key votre-objet chemin/vers/destination/fichier --endpoint-url https://s3.<region>.ovhcloud.com 
+aws s3api get-object --bucket votre-bucket --key votre-objet chemin/vers/destination/fichier --endpoint-url https://s3.io.cloud.ovh.net
 ```
 
 - Remplacez `votre-bucket` par le nom de votre bucket.
 - Remplacez `votre-objet` par la clé de l'objet que vous souhaitez télécharger.
 - Remplacez `chemin/vers/destination/fichier` par le chemin où vous souhaitez sauvegarder le fichier téléchargé.
-- Le paramètre `--endpoint-url https://s3.<region>.ovhcloud.com` doit être ajusté à la région de votre service OVHcloud S3.
+- Le paramètre `--endpoint-url https://s3.io.cloud.ovh.net` doit être ajusté à la région de votre service OVHcloud S3.
 
 Attention de ne pas inclure de headers de chiffrement spécifiques lors du téléchargement d'un objet chiffré avec SSE-S3 pour éviter des erreurs, telles qu'une erreur 400 Bad Request. 
 
@@ -242,7 +242,7 @@ Attention de ne pas inclure de headers de chiffrement spécifiques lors du tél�
 Pour ajouter le chiffrement SSE-S3 à un bucket S3 existant sur OVHcloud, vous devez utiliser la commande `put-bucket-encryption` de l'AWS CLI. Cette commande configure le chiffrement du bucket pour que tous les nouveaux objets ajoutés soient automatiquement chiffrés avec SSE-S3. Voici la commande spécifique que vous utiliseriez :
 
 ```bash
-aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.<region>.ovhcloud.com
+aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' --endpoint-url https://s3.io.cloud.ovh.net
 ```
 
 - Remplacez `votre-bucket` par le nom de votre bucket S3.
@@ -255,7 +255,7 @@ Cela va configurer le bucket pour utiliser le chiffrement SSE-S3 avec les clés 
 Après avoir configuré le chiffrement de votre bucket via `PutBucketEncryption` pour utiliser SSE-S3, assurez-vous que tout est correctement mis en place en utilisant la commande suivante avec l'AWS CLI :
 
 ```bash
-aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.<region>.ovhcloud.com
+aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.io.cloud.ovh.net
 ```
 
 - Remplacez `votre-bucket` par le nom de votre bucket.
