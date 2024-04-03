@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding
 excerpt: Find out how to forward your logs from a Public Cloud Load Balancer to Logs Data Platform
-updated: 2024-03-29
+updated: 2024-04-03
 ---
  
 ## Objective
@@ -19,13 +19,13 @@ If you would like to find out more about Logs Data Platform before reading this 
 ## Requirements
 
 - A Logs Data Platform (LDP) account with at least one active *Stream* configured. This guide will walk you through all the necessary steps: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- An up-and-running [Public Cloud Load Balancer](../getting-started-01-create-lb-service).
+- An up-and-running [Public Cloud Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 - Both the LDP account and the Public Cloud Load Balancer account must belong to the same OVHcloud account.
 
 ## Concepts & limits
 
 > [!warning]
-> To date the logs of the **UDP** listeners are not forwarded
+> To date, the logs of the **UDP** listeners are not forwarded.
 > 
 
 **What are the logs of a Public Cloud Load Balancer?**
@@ -36,9 +36,9 @@ The log messages contain the following fields:
 
 | Field name | Description | Unit |
 |------------|-------------|---------| 
-| project_id | the ID of the public cloud project to which the load balancer belongs | uuid |
-| load_balancer_id | the ID of the load balancer that received the request/connection | uuid |
-| listener_id | the ID of the listener that received the request/connection | uuid |
+| project_id | The ID of the public cloud project to which the load balancer belongs | uuid |
+| load_balancer_id | The ID of the load balancer that received the request/connection | uuid |
+| listener_id | The ID of the listener that received the request/connection | uuid |
 | client_ip | IP address of the client that initiated the TCP connection to the Load Balancer | IP |
 | client_port | TCP port of the client that initiated the TCP connection to the Load Balancer | Numeric |
 | accept_date | The timestamp at which the request/connection was made | datetime (with millisecond resolution) e.g. 25/Mar/2024:14:07:19.536 |
@@ -52,7 +52,6 @@ The log messages contain the following fields:
 | member_id | The member to which the request / connection was sent | uuid |
 | tcp_total_session_duration_time | The time in milliseconds the TCP session has been opened when this request is made | Numeric |
 | termination_state | The session termination indicator: 2 letters for TCP, 4 letters for HTTP all the details on [HAProxy documentation page](https://docs.haproxy.org/2.6/configuration.html#8.5){.external}| String (e.g. "----") |
-
 
 The following fields are computed from `client_ip` and provided in logs:
 
@@ -68,7 +67,7 @@ Note that the forwarding activation is free of charge, but you will be charged f
 
 ### Enabling Public Cloud Load Balancer Log Forwarding using the OVHcloud Control Panel
 
-This feature is not yet available in the Control Panel
+This feature is not yet available in the Control Panel.
 
 ### Enabling Audit Log Forwarding using APIs
 
@@ -76,10 +75,10 @@ You will have to define the targeted *Stream* of one of your LDP account on whic
 
 You can retrieve the API specifications in the [OVH API Portal](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 
-#### Step 1: Retrieve your target Stream (and ID)
+#### Step 1 - Retrieve your target Stream (and ID)
 
-List data streams of your Logs Data Platform account (Enter your LDP ID in the form ldp-xx-xxxx into the field "serviceName"):
- 
+List data streams of your Logs Data Platform account (enter your LDP ID in the form ldp-xx-xxxx into the field "serviceName"):
+
 > [!api]
 >
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream
@@ -92,7 +91,7 @@ Get the details of a data stream:
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
 >
 
-#### Step 2: Create your subscription
+#### Step 2 - Create your subscription
 
 Use the following API call to create a subscription:
 
@@ -103,9 +102,9 @@ Use the following API call to create a subscription:
 
 You will need to replace:
 
-- **loadBalancerId**: this is the load balancer id, you can find it in the details page of your load balancer in the OVHCloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer) call.
-- **regionName**: the Openstack region, for example, `GRA11`.
-- **serviceName**: the Public Cloud Project id. You can find it in OVHCloud Control Panel under your project name or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) call.
+- **loadBalancerId**: this is the load balancer ID, you can find it in the details page of your load balancer in the OVHCloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/loadbalancer) call.
+- **regionName**: the OpenStack region, for example, `GRA11`.
+- **serviceName**: the Public Cloud Project ID. You can find it in the OVHcloud Control Panel under your project name or using the [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project) call.
 
 The POST request has a payload that requires:
 
@@ -136,14 +135,14 @@ You can use the `operationId` to retrieve the `subscriptionId` for further manag
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/operation/{operationId}
 >
 
-Alternatively once the operation is finished, the subscriptions can be retrieved using the following api call:
+Alternatively, once the operation is finished, the subscriptions can be retrieved using the following API call:
 
 > [!api]
 >
 > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer/{loadBalancerId}/log/subscription/
 >
 
-Once you have the `subscriptionId`, you can get the details using the following api call:
+Once you have the `subscriptionId`, you can get the details using the following API call:
 
 > [!api]
 >
@@ -171,18 +170,18 @@ GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer/
 
 Now that your logs are ingested and stored in your Logs Data Platform data stream, you can query your logs and build dashboards to have a graphical representation of your logs using the web-based UI of Graylog.
 
-- Through the OVHcloud Control Panel, retrieve the LDP username (ex: logs-xxxx) and its password in your Logs Data Platform account home page. You can refer to the [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) documentation.
+- In the OVHcloud Control Panel, retrieve the LDP username (ex: logs-xxxx) and its password in your Logs Data Platform account home page. You can refer to the [Quick start guide for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Open the Graylog web-ui. You can retrieve the link in your account home page or using your Access point depending on your account region (for example: Gravelines region is https://gra1.logs.ovh.com/).
 - Log into Graylog using your Logs Data Platform Username and Password.
 - Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} documentation for details on search syntax.
 
 Refer to the following documentation: [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) for more details about how to use your logs with Logs Data Platform, including how to:
 
-- setup alerts;
-- view the logs in real time through a WebSocket;
-- build visualization with OpenSearch Dashboards;
-- integrate with OpenSearch API;
-- connect with Grafana.
+- setup alerts
+- view the logs in real time through a WebSocket
+- build visualization with OpenSearch Dashboards
+- integrate with OpenSearch API
+- connect with Grafana
  
 ### How to manage your subscriptions?
 
