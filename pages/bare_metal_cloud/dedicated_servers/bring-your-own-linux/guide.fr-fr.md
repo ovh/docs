@@ -126,6 +126,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 | Champ | Description | Obligatoire |
 |-|-|-|
+| userMetadata/sshKey | La clé publique SSH | ❌ |
 | userMetadata/imageURL | L'URL de votre image Linux | ✅ |
 | userMetadata/imageCheckSum | Checksum de votre image | ❌ |
 | userMetadata/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |

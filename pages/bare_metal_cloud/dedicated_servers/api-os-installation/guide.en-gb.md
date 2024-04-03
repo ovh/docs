@@ -82,6 +82,23 @@ You can find interesting information such as the following:
 
 Some OSs can have a list of specific questions. If that is the case, the `inputs` key contains a list of questions.
 
+Example of specific questions for Debian 12 (Bookworm):
+
+```json
+{
+    "inputs": [
+        {
+            "default": "",
+            "name": "sshKey",
+            "mandatory": false,
+            "enum": [],
+            "description": "SSH Public Key",
+            "type": "sshPubKey"
+        }
+    ]
+}
+```
+
 Example of specific questions for Windows Server 2022 Standard (Core):
 
 ```json
@@ -97,6 +114,14 @@ Example of specific questions for Windows Server 2022 Standard (Core):
                 "en-us",
                 "fr-fr"
             ]
+        },
+        {
+            "default": "false",
+            "mandatory": false,
+            "type": "boolean",
+            "name": "useSpla",
+            "description": "Use your SPLA (your own product key that you may have added for this server)",
+            "enum": []
         }
     ]
 }
@@ -212,6 +237,23 @@ With the following parameters:
 - Key must be the `name` of the question.
 - Value must be the answer to the question, in the requested `type`.
 
+Payload example to install Debian 12 (Bookworm) with SSH key based authentication:
+
+```json
+{
+  "details": {
+    "customHostname": "mon-tux"
+  },
+  "templateName": "debian12_64",
+  "userMetadata": [
+    {
+      "key": "sshKey",
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    }
+  ]
+}
+```
+
 Payload example to install Windows Server 2022 Standard (Core) in French:
 
 ```json
@@ -224,6 +266,10 @@ Payload example to install Windows Server 2022 Standard (Core) in French:
     {
       "key": "language",
       "value": "fr-fr"
+    },
+    {
+      "key": "useSpla",
+      "value": "true"
     }
   ]
 }

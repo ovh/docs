@@ -98,6 +98,10 @@ The Bring Your Own Image (BYOI) payload should be similar to the following:
   "templateName": "byoi_64",
   "userMetadata": [
     {
+      "key": "sshKey",
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    },
+    {
       "key": "imageURL",
       "value": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw"
     },
@@ -135,6 +139,7 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 | Field | Description | Required |
 |-|-|-|
+| userMetadata/sshKey | SSH public key | ❌ |
 | userMetadata/imageURL | Your image URL | ✅ |
 | userMetadata/imageType | Your image format (qcow2, raw) | ✅ |
 | userMetadata/imageCheckSum | Your image's checksum | ❌ |

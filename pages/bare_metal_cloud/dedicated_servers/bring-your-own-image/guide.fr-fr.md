@@ -98,6 +98,10 @@ Le contenu de la requête API de Bring Your Own Image (BYOI) doit être similair
   "templateName": "byoi_64",
   "userMetadata": [
     {
+      "key": "sshKey",
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    },
+    {
       "key": "imageURL",
       "value": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw"
     },
@@ -135,6 +139,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 | Champ | Description | Obligatoire |
 |-|-|-|
+| userMetadata/sshKey | La clé publique SSH | ❌ |
 | userMetadata/imageURL | L'URL de votre image | ✅ |
 | userMetadata/imageType | Le type/format de votre image (qcow2, raw) | ✅ |
 | userMetadata/imageCheckSum | Checksum de votre image | ❌ |

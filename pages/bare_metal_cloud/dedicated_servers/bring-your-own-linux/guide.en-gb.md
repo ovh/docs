@@ -126,6 +126,7 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 | Field | Description | Required |
 |-|-|-|
+| userMetadata/sshKey | SSH public key | ❌ |
 | userMetadata/imageURL | Your Linux image URL | ✅ |
 | userMetadata/imageCheckSum | Your image's checksum | ❌ |
 | userMetadata/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
