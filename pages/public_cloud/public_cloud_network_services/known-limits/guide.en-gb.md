@@ -10,7 +10,7 @@ For a given Public Cloud project, you can attach only one vrack. If you wish to 
 
 ## Load Balancer Floating IP in OVHcloud Control panel
 
-Currently the floating IP associated to a Load Balancer is missing in the Load Balancer details page on OVHcloud Control panel. You can find it in [Horizon](../../compute/introducing_horizon/), in [Openstack CLI](../../compute/prepare_the_environment_for_using_the_openstack_api/) by doing `openstack floating ip list` and `openstack loadbalancer list` or through OVHcloud API.
+Currently the floating IP associated to a Load Balancer is missing in the Load Balancer details page on OVHcloud Control panel. You can find it in [Horizon](/pages/public_cloud/compute/introducing_horizon), in [Openstack CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) by doing `openstack floating ip list` and `openstack loadbalancer list` or through OVHcloud API.
 
 > [!api]
 >
