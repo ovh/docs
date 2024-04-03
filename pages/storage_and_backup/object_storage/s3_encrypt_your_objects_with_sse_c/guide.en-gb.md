@@ -220,7 +220,6 @@ When using the AWS CLI command to upload an object with SSE-S3 encryption to OVH
 - `your-bucket`: replace this value with the name of your S3 bucket where you want to send the object.
 - `your-object`: replace with the key or name under which you want the object to be stored in the bucket.
 - `path/to/your/file`: Specify the full path to the file you plan to send.
-- `<region>`: replace with the region of your OVHcloud S3 service, which hosts your bucket.
 
 The option `--server-side-encryption AES256` in the command indicates that you want to apply SSE-S3 encryption. This ensures that the sent object is securely encrypted directly on the OVHcloud server, providing an additional layer of protection for your data.
 
@@ -235,7 +234,6 @@ aws s3api get-object --bucket your-bucket --key your-object path/to/destination/
 - Replace `your-bucket` with the name of your bucket.
 - Replace `your-object` with the key of the object you want to download.
 - Replace `path/to/destination/file` with the path where you want to save the downloaded file.
-- The parameter `--endpoint-url https://s3.io.cloud.ovh.net` must be adjusted to the region of your OVHcloud S3 service.
 
 Be careful not to include specific encryption headers when downloading an encrypted object with SSE-S3 to avoid errors, such as a 400 Bad Request error. 
 
@@ -248,7 +246,6 @@ aws s3api put-bucket-encryption --bucket your-bucket --server-side-encryption-co
 ```
 
 - Replace `your-bucket` with the name of your S3 bucket.
-- Replace `<region>` with the region of your OVHcloud S3 service where your bucket is located.
 
 This will configure the bucket to use SSE-S3 encryption with keys managed by S3 (AES256) for all new objects. Existing objects will not be affected. If you also want to encrypt them, you will need to copy or upload them again after changing this configuration.
 
@@ -261,11 +258,10 @@ aws s3api get-bucket-encryption --bucket your-bucket --endpoint-url https://s3.i
 ```
 
 - Replace `your-bucket` with the name of your bucket.
-- And `<region>` by the region of your OVHcloud S3 service.
 
 With this command, you can check your bucket’s current encryption configuration to ensure that SSE-S3 encryption is enabled.
 
-In this order, replace `your-bucket` with the name of your bucket and `<region>` with the region of your OVHcloud S3 service. This command returns the details of your bucket’s current encryption configuration, confirming the use of SSE-S3 for data encryption at rest.
+In this order, replace `your-bucket` with the name of your bucket. This command returns the details of your bucket’s current encryption configuration, confirming the use of SSE-S3 for data encryption at rest.
 
 This extra step ensures full transparency and helps ensure your data is kept safe to the highest standards, with the simplicity and efficiency offered by SSE-S3 encryption managed by OVHcloud.
 

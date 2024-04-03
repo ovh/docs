@@ -219,7 +219,6 @@ Lorsque vous utilisez la commande AWS CLI pour uploader un objet avec chiffremen
 - `votre-bucket` : remplacez cette valeur par le nom de votre bucket S3 où vous souhaitez envoyer l'objet.
 - `votre-objet` : remplacez par la clé ou le nom sous lequel vous voulez que l'objet soit stocké dans le bucket.
 - `chemin/vers/votre/fichier` : indiquez le chemin d'accès complet au fichier que vous prévoyez d'envoyer.
-- `<region>` : remplacez par la région de votre service OVHcloud S3, qui héberge votre bucket.
 
 L'option `--server-side-encryption AES256` dans la commande indique que vous souhaitez appliquer le chiffrement SSE-S3. Cela garantit que l'objet envoyé est chiffré de manière sécurisée directement sur le serveur OVHcloud, offrant une couche supplémentaire de protection pour vos données.
 
@@ -247,7 +246,6 @@ aws s3api put-bucket-encryption --bucket votre-bucket --server-side-encryption-c
 ```
 
 - Remplacez `votre-bucket` par le nom de votre bucket S3.
-- Remplacez `<region>` par la région de votre service OVHcloud S3 où votre bucket est situé.
 
 Cela va configurer le bucket pour utiliser le chiffrement SSE-S3 avec les clés gérées par S3 (AES256) pour tous les nouveaux objets. Les objets existants ne seront pas affectés. Si vous souhaitez également les chiffrer, vous devrez les copier ou les uploader à nouveau après avoir changé cette configuration.
 
@@ -260,11 +258,10 @@ aws s3api get-bucket-encryption --bucket votre-bucket --endpoint-url https://s3.
 ```
 
 - Remplacez `votre-bucket` par le nom de votre bucket.
-- Et `<region>` par la région de votre service OVHcloud S3.
 
 Cette commande vous permet de vérifier la configuration actuelle du chiffrement de votre bucket pour vous assurer que le chiffrement SSE-S3 est bien activé.
 
-Dans cette commande, remplacez `votre-bucket` par le nom de votre bucket et `<region>` par la région de votre service OVHcloud S3. Cette commande vous renvoie les détails de la configuration du chiffrement actuelle de votre bucket, vous confirmant l'utilisation de SSE-S3 pour le chiffrement des données au repos.
+Dans cette commande, remplacez `votre-bucket` par le nom de votre bucket. Cette commande vous renvoie les détails de la configuration du chiffrement actuelle de votre bucket, vous confirmant l'utilisation de SSE-S3 pour le chiffrement des données au repos.
 
 Cette étape supplémentaire garantit une transparence totale et vous permet de vous assurer que la sécurité de vos données est maintenue selon les normes les plus élevées, avec la simplicité et l'efficacité que propose le chiffrement SSE-S3 gérée par OVHcloud.
 
