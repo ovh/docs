@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funzionalità, capacità e limiti
 excerpt: Scopri le funzionalità, le capacità e i limiti attuali delle istanze Local Zones
-updated: 2024-04-02
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -36,7 +36,7 @@ Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Loca
 
 ## Funzionalità e limiti
 
-Tutte le funzionalità delle istanze che non sono elencate qui, come il riavvio (reboot) delle istanze, il supporto di Block o Object Storage, saranno disponibili nei prossimi mesi. Il nostro obiettivo è quello di supportare tutte le funzionalità già supportate nelle regioni globali.
+Tutte le funzionalità delle istanze che non sono elencate qui, come il riavvio (reboot) delle istanze o il supporto di Object Storage, saranno disponibili nei prossimi mesi. Il nostro obiettivo è quello di supportare tutte le funzionalità già supportate nelle regioni globali.
 
 ## Feedback
 

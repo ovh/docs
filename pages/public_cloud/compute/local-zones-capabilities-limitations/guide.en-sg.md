@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-04-02
+updated: 2024-04-03
 ---
 
 ## Objective
@@ -32,7 +32,7 @@ Find more information on our [dedicated Local Zone Compute page](https://www.ovh
 
 ## Capabilities and limitations
 
-All instance features which aren't listed here, like rebooting instances, Block or Object Storage support will be released in the next couple months as the goal is to support the entire features set which is supported in global regions.
+All instance features which aren't listed here, like rebooting instances or Object Storage support will be released in the next couple months as the goal is to support the entire features set which is supported in global regions.
 
 ## Feedback
 

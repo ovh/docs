@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades y límites
 excerpt: Descubra las funcionalidades, capacidades y límites actuales de las instancias de Local Zone
-updated: 2024-04-02
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -36,7 +36,7 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 
 ## Capacidades y limitaciones
 
-Todas las funcionalidades de instancia que no aparecen aquí, como el reinicio (reinicio) de las instancias, la compatibilidad con Block u Object Storage, estarán disponibles en los próximos meses. Nuestro objetivo es admitir todas las funcionalidades que ya son compatibles en las regiones globales.
+Todas las funcionalidades de instancia que no aparecen aquí, como el reinicio (reinicio) de las instancias o la compatibilidad con Object Storage, estarán disponibles en los próximos meses. Nuestro objetivo es admitir todas las funcionalidades que ya son compatibles en las regiones globales.
 
 ## Feedback
 

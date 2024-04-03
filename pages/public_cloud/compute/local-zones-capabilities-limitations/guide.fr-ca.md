@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Fonctionnalités, capacités et limites
 excerpt: Découvrez les fonctionnalités, les capacités et les limites actuelles des instances Local Zones
-updated: 2024-04-02
+updated: 2024-04-03
 ---
 
 ## Objectif
@@ -32,7 +32,7 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 
 ## Capacités et limitations
 
-Toutes les fonctionnalités d'instance qui ne sont pas répertoriées ici, comme le redémarrage (reboot) des instances, la prise en charge de Block ou Object Storage seront disponibles dans les prochains mois. Notre objectif est de prendre en charge l'ensemble des fonctionnalités déjà supportées dans les régions globales.
+Toutes les fonctionnalités d'instance qui ne sont pas répertoriées ici, comme le redémarrage (reboot) des instances ou la prise en charge de Object Storage seront disponibles dans les prochains mois. Notre objectif est de prendre en charge l'ensemble des fonctionnalités déjà supportées dans les régions globales.
 
 ## Feedback
 
