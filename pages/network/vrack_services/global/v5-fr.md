@@ -728,44 +728,44 @@ $ curl -XDELETE https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456
 
 ---
 
-## Product configuration experience
+## Expérience de configuration du produit
 
-Behind the scenes, the status of VrackServices (VrackServices.productStatus) mirrors the state of the infrastructure configuration. This configuration is initiated once the following three criteria are met:
+En coulisses, le statut de VrackServices (VrackServices.productStatus) reflète l'état de la configuration de l'infrastructure. Cette configuration est initiée une fois que les trois critères suivants sont remplis :
 
-- The product is not suspended.
-- There is an existing vRack association.
-- At least one Service Endpoint has been set up.
+- Le produit n'est pas suspendu.
+- Une association vRack existe déjà.
+- Au moins un Point de Terminaison de Service a été configuré.
 
-If any of these requirements are no longer satisfied, the configuration is withdrawn from the OneAPI (either marked as DRAFT or SUSPENDED).
+Si l'une de ces exigences n'est plus satisfaite, la configuration est retirée de l'OneAPI (marquée soit comme BROUILLON soit comme SUSPENDUE).
 
-As an helper, a summary of the configuration is available with the VrackServices.productStatus attribut.
-It answers the question `does my current configuration makes the Managed Services to be reachable from the vRack ?`   
-- **ACTIVE:** yes, it does
-- **DRAFT:** no, either a Service Endpoint needs to be created or a vRack needs to be associated to the vRack Services
-- **SUSPENDED:** no, product is in Agora `suspension` state
+Comme aide, un résumé de la configuration est disponible avec l'attribut VrackServices.productStatus.
+Il répond à la question `Ma configuration actuelle permet-elle aux Services Gérés d'être accessibles depuis le vRack ?`
+- **ACTIF :** oui, c'est le cas
+- **DRAFT :** non, soit un Point de Terminaison de Service doit être créé, soit un vRack doit être associé aux Services vRack
+- **SUSPENDED :** non, le produit est dans l'état de `suspension` d'Agora
 
+ 
 ---
 
-## Contraints and limits
-### Vrack Services
-- A vRack Services is attached to a unique Zone.
-- Up to 20 vRack Services can be associated to a same vRack. So, customer is able to make reachable Managed Services from various Availability Zones.
 
+## Contraintes et limites
+### Services vRack
+- Un service vRack est attaché à une Zone unique.
+- Jusqu'à 20 services vRack peuvent être associés au même vRack. Ainsi, le client peut rendre les Services Gérés accessibles depuis différentes Zones de Disponibilité.
 
-### Subnet
-- Maximum of 5 Subnets per vRack Services can be defined by the customer.
-- The **range** attribut definition follows the **RFC 1918**.
-- Every Subnet **range** must be unique on a given vRack Services. Overlapping is detected and discarded at Subnet creation.
-- Every Subnet **vlan** must be unique on a given vRack Services. The default 'null' value can only be used by one Subnet.
-- Available **serviceRange** starts from /(range_length + 1) to /29
+### Sous-réseau
+- Un maximum de 5 Sous-réseaux par service vRack peut être défini par le client.
+- La définition de l'attribut **plage** suit le **RFC 1918**.
+- Chaque plage de Sous-réseau **range** doit être unique pour un service vRack donné. Les chevauchements sont détectés et écartés lors de la création du Sous-réseau.
+- Chaque **vlan** de Sous-réseau doit être unique pour un service vRack donné. La valeur par défaut 'null' ne peut être utilisée que par un Sous-réseau.
+- La plage de **serviceRange** disponible commence de /(longueur_de_plage + 1) à /29
 
 ### Service Endpoint
-- To guarantee the Subnet consistency, the Service Endpoint creation request is rejected if the remaining IPs pool on the Subnet does not fit the number of IPs required by the Managed Service.
-- Target Managed Service must be part of the same Zone than the vRack Services.
-- Each customer is allowed to create a maximum of 20 Service Endpoints.
-- Service range IPs are attributed to only one Managed Service at a time.
+- Pour garantir la cohérence du Sous-réseau, la demande de création de Service Endpoint est rejetée si le pool d'IPs restantes sur le Sous-réseau ne correspond pas au nombre d'IPs requis par le Service Géré.
+- Le Service Géré cible doit faire partie de la même Zone que les services vRack.
+- Chaque client est autorisé à créer un maximum de 20 Service Endpoints.
+- Les IPs de plage de service sont attribuées à un seul Service Géré à la fois.
 
+## Aller plus loin
 
-## Go further
-
-Join our community of users on <https://community.ovh.com/en/>.
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
