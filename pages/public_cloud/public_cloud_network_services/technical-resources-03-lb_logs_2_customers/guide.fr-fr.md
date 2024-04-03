@@ -19,7 +19,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 ## Prérequis
 
 - Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
-- Un [Public Cloud Load Balancer](../getting-started-01-create-lb-service] opérationnel.
+- Un [Public Cloud Load Balancer](../getting-started-01-create-lb-service) opérationnel.
 - Le compte LDP et le compte Public Cloud Load Balancer doivent appartenir au même compte OVHcloud.
 
 ## Concepts & limites
@@ -41,8 +41,8 @@ Les messages du journal contiennent les champs suivants :
 | listener_id | ID du processus d'écoute qui a reçu la demande/connexion | uuid |
 | client_ip | Adresse IP du client qui a initié la connexion TCP au Load Balancer | IP |
 | client_port | Port TCP du client qui a initié la connexion TCP au Load Balancer | Numérique |
-| accept_date | Horodatage auquel la requête/connexion a été effectuée | datetime (avec résolution en millisecondes), par exemple 25/Mar/2024:14:07:19.536 |
-| http_verb http_request http_version | La requête HTTP | String ex « GET / HTTP/1.1 » |
+| accept_date | Horodatage auquel la requête/connexion a été effectuée | datetime (avec résolution en millisecondes), par exemple : 25/Mar/2024:14:07:19.536 |
+| http_verb http_request http_version | La requête HTTP | String, par exemple : « GET / HTTP/1.1 » |
 | http_status | État HTTP retourné | Numérique |
 | bytes_read | Nombre d'octets lus par le serveur | Numérique |
 | bytes_uploaded | Nombre d'octets envoyés par le serveur au client | Numérique |
@@ -59,12 +59,11 @@ Les champs suivants sont calculés à partir de `client_ip` et fournis dans les 
 |--------------|-------------|-------|
 | client_ip_city_name | Ville calculée par Geoip à partir de `client_ip`| String (ex. `Lille`) |
 | client_ip_geolocation | Latitude, longitude calculée par Logstash Geoip à partir de `client_ip`| x.x,y.y (ex. `50.624,3.0511`) XST6Y7U899O0|
-| client_ip_country_code | Le code pays ISO 3166 A-2 calculé par Logstash Geoip à partir de `client_ip` ISO | XX (ex. « FR ») |      
-| Le code pays ISO 3166 A-2 calculé par Logstash Geoip à partir de `client_ip` ISO | XX (ex. « FR ») |
+| client_ip_country_code | Le code pays ISO 3166 A-2 calculé par Logstash Geoip à partir de `client_ip` ISO | XX (ex. « FR ») |
 
 ## Instructions
 
-Notez que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page] (https://www.ovhcloud.com/fr/logs-data-platform/).
+Notez que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](https://www.ovhcloud.com/fr/logs-data-platform/).
 
 ### Activation du Log *forwarding* du Load Balancer Public Cloud via l’espace client OVHcloud
 
@@ -112,7 +111,7 @@ La demande POST a une charge utile qui nécessite :
 - `kind` : le type de journal que vous voulez transférer. Notez que la seule valeur actuellement prise en charge pour Public Cloud Load Balancer est « haproxy » (vous pouvez trouver les types disponibles en utilisant l'appel [dedicated API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/region/-regionName-/loadbalancing/log/kind)). :
 - `streamId` : flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service Public Cloud Load Balancer soient transférés.
 
-- ```shell
+```shell
 POST /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer/{loadBalancerId}/log/subscription
 {
   "kind": "string", // Currently the only supported value is 'haproxy'.
@@ -136,7 +135,7 @@ Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à de
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/operation/{operationId}
 >
 
-ne fois l'opération terminée, vous pouvez également récupérer les abonnements à l'aide de l'appel d'api suivant :
+Une fois l'opération terminée, vous pouvez également récupérer les abonnements à l'aide de l'appel d'api suivant :
 
 > [!api]
 >
