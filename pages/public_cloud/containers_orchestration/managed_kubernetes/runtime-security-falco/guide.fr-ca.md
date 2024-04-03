@@ -204,7 +204,7 @@ Wed Apr  3 12:21:57 2024: Opening 'syscall' source with Kernel module
 
 The logs confirm that Falco and its rules have been loaded correctly.
 
-### Testig Falco
+### Testing Falco
 
 Even without [adding new rules](https://falco.org/docs/rules/), Falco contains existing default rules that we can use to test the behavior.
 Follow the steps below to fire an alert if someone execute a shell into a running container.
