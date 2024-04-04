@@ -1,14 +1,14 @@
 ---
 title: Activer et utiliser le mode rescue sur un VPS
 excerpt: Découvrez comment utiliser le mode rescue OVHcloud pour dépanner votre VPS et effectuer des vérifications système
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 ## Objectif
 
 Le mode secours (*rescue*) est un outil fourni par OVHcloud pour démarrer votre VPS dans un système d'exploitation temporaire. Vous pouvez alors accéder à votre système afin d'exécuter des tâches de diagnostic et résoudre différents problèmes, par exemple :
 
-- Réinitialisation du mot de passe de l'utilisateur pour récupérer l'accès
+- [Réinitialisation du mot de passe de l'utilisateur pour récupérer l'accès](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnostic des problèmes réseau
 - Réparer un système d'exploitation défectueux
 - Réparer un firewall logiciel mal configuré
