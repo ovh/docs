@@ -1,7 +1,7 @@
 ---
 title: Configuring OVHcloud Secondary DNS on a VPS
 excerpt: Find out how to add a secondary DNS server for your domain
-updated: 2022-01-12
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -48,7 +48,8 @@ The required action is different, depending on where the DNS of your domain name
 
 - If the domain name is managed by an external registrar **or** it uses external DNS servers at this point, log in to the control panel of your DNS provider and add a DNS zone record of the type TXT with the subdomain "ownercheck" and the value provided by executing [step 1](#retrievecode).
 
-- If the domain is managed by OVHcloud as its registrar **and** it uses OVHcloud DNS servers, add the TXT record in the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). You can follow the instructions in our [DNS zone guide](/pages/web_cloud/domains/dns_zone_edit) if you are not familiar with this process.
+- If the domain is managed by OVHcloud as its registrar **and** it uses OVHcloud DNS servers, go to the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then click on `Domain names`{.action} on the left banner on the screen and choose your domain name. In the center of the screen, go to `DNS zone`{.action} and click on the `Add an entry`{.action} button. Finally, follow the step-by-step process to add the TXT record.
+You can follow the instructions in our [DNS zone guide](/pages/web_cloud/domains/dns_zone_edit) if you are not familiar with this process.
 
 ![Secondary DNS](images/sec-04.png){.thumbnail}
 
