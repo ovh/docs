@@ -1,7 +1,7 @@
 ---
 title: "Remplacer une paire de clés SSH"
 excerpt: "Découvrez comment restaurer l'accès au serveur en cas de perte de votre clé privée, en générant une nouvelle paire de clés SSH"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 ## Objectif
