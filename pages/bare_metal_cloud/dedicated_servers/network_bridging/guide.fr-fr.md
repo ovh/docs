@@ -62,6 +62,8 @@ Sélectionnez « ovh » dans la liste déroulante « Type », tapez un nom dan
 
 ![Ajouter une MAC virtuelle (2)](images/addvmac2.png){.thumbnail}
 
+Après quelques secondes, une adresse MAC virtuelle apparaîtra dans la colonne "Virtual MAC" de la rangée votre adresse Additional IP. Cette adresse MAC virtuelle sera nécessaire lors de la configuration de votre VM sur l'hôte.
+
 ### Déterminer l'adresse de la passerelle (gateway)
 
 Pour configurer vos machines virtuelles pour l'accès à Internet, vous devez connaître la passerelle de votre machine hôte, c’est-à-dire, votre serveur dédié. L'adresse de la passerelle est constituée des trois premiers octets de l'adresse IP principale de votre serveur, le dernier octet étant de 254. Par exemple, si l’adresse IP principale de votre serveur est :

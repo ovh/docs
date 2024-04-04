@@ -66,6 +66,8 @@ Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome del
 
 ![Aggiungi un MAC virtuale (2)](images/addvmac2.png){.thumbnail}
 
+Dopo qualche secondo, nella colonna "MAC virtuale" della riga indirizzo Additional IP aggiuntivo apparirà un indirizzo MAC virtuale. Questo indirizzo MAC virtuale sarà necessario per la configurazione della macchina virtuale sull'host.
+
 ### Determinare l'indirizzo del gateway
 
 Per configurare le tue macchine virtuali per l'accesso a Internet, devi conoscere il gateway della tua macchina host, cioè il tuo server dedicato. L'indirizzo del gateway è composto dai primi tre byte dell'indirizzo IP principale del tuo server, l'ultimo byte è di 254. Ad esempio, se l'indirizzo IP principale del tuo server è:
