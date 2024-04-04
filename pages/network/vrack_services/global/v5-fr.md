@@ -144,6 +144,17 @@ Aisni, après un bref instant de mise en place vous serez en capacité de voir e
 
 ![overview 01](images/15-VRS.png){.thumbnail}
 
+---
+
+![overview 01](images/16-VRS.png){.thumbnail}
+
+---
+![overview 01](images/17-VRS.png){.thumbnail}
+
+---
+
+![overview 01](images/18-VRS.png){.thumbnail}
+
 </blockquote>      
 
 </details>
