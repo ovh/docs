@@ -108,18 +108,31 @@ L'association à un vRack est assez simple car il suffit simplement de sélectio
 
 <details>
   <summary><b>Création d'un Sous-réseau</b> </summary>
-
     
+<blockquote>  
 
 ![overview 01](images/10-VRS.png){.thumbnail}
+
+Afin de créer un sous-réseau il vous faudra renseigner 4 informations:
+- Son nom
+- Sa plage d'adresses
+- La plage d'adresses du service en tant que tel. Par conséquent, les adresses de cette plage ne doivent pas être utilisées par d'autres nœuds connectés au vRack. La plage d'adresse de service doit être un sous-ensemble de la plage d'addresses du sous-réseau, et sa taille doit être comprise entre /27 et /29.
+- Un VLAN sur lequel vous pouvez exposer ce sous-réseau. Vous pouvez très bien ne pas choisir de VLAN.
 
 ---
 
 ![overview 01](images/12-VRS.png){.thumbnail}
 
+Dans le cas contraire il vous sera demandé de préciser le numéro du VLAN.
+
 ---
 
 ![overview 01](images/14-VRS.png){.thumbnail}
+
+Aisni, après un bref instant de mise en place vous serez en capacité de voir et surtout d'administrer ce sous-réseau en vous rendant dans cet onglet.
+
+
+</blockquote>  
 
 </details>
 
@@ -127,8 +140,11 @@ L'association à un vRack est assez simple car il suffit simplement de sélectio
 <details>
   <summary><b>Création d'un Service Endpoint</b> </summary>
 
+<blockquote>  
+
 ![overview 01](images/15-VRS.png){.thumbnail}
-    
+
+</blockquote>      
 
 </details>
 
