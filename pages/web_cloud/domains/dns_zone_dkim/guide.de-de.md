@@ -787,7 +787,7 @@ Klicken Sie auf den Tab unten für Ihr Angebot.
 > [!tabs]
 > **Exchange**
 >> Verwenden Sie den folgenden API-Aufruf, um zum zweiten Selektor zu wechseln:
->> 
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
@@ -834,7 +834,7 @@ Wählen Sie Ihr E-Mail-Angebot in den folgenden Tabs aus, um den Status des DKIM
 
 Hier sind die 4 Zustände, die zu dem roten DKIM-Symbol in Ihrem Kundencenter führen. Klicken Sie auf den Tab für Ihren Fehlercode:
 
- [!tabs]
+> [!tabs]
 > **501**
 >>
 >> „**Only one DKIM selector has been initialized**“<br><br> 

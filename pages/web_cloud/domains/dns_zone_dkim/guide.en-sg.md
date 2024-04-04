@@ -555,11 +555,51 @@ From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&
 
 ![email](images/red-dkim.png){.thumbnail}
 
-If you have just configured the DKIM, it means that the DKIM activation has not finished. **Wait the full 24 hours**.
+Here are the 4 states that result in a red DKIM icon in your Control Panel. Click on the tab corresponding to your error code:
 
-If the status remains red after 24 hours, check the status of the selector you have enabled. To do this, click on the section “[The different states of DKIM](#dkim-status)” of this guide.
+> [!tabs]
+> **501**
+>>
+>> “**Only one DKIM selector has been initialized**”<br><br>
+>> Only a DKIM selector is present in your configuration. To allow us to switch to a new key when necessary, we are asked to configure the 2 selectors provided by the service.<br><br>
+>> To fix this error:
+>> - Check the status of the DKIM selectors to determine which one needs to be configured. Use the section “[The different states of DKIM](#dkim-status)” of this guide.
+>> - Once you have identified the selector you want to configure, follow the steps in the section “[Full DKIM configuration](#firststep)” of this guide, depending on your solution (Exchange or Email Pro), and apply it only to the selector concerned.
+>> Wait a maximum of 24 hours after configuring the selector.
+>>
+> **502**
+>>
+>> “**One DKIM configuration task is in error**”<br><br>
+>> An error has occurred configuring the DKIM. After 24 hours, if your configuration is still in this state, please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
+>>
+> **503**
+>>
+>> “**CNAME record is wrong**”<br><br>
+>> The CNAME record value required to configure the DKIM was not entered correctly. You must configure the DNS zone of the attached domain name correctly.
+>> To configure your DNS zone, retrieve the values of the CNAME record that appears:
+>>
+>>![email](images/dkim-503.png){.thumbnail}
+>>
+>> If we take the example of the capture above, the domain name is "**mydomain.ovh**" and we are asked to configure the "**2**" selector. Here, add a CNAME record with the subdomain value `ovhex1234567-selector2.domainkey.mydomain.ovh` and as a target `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
+>> Once you have configured your DNS zone, wait for the DNS propagation (24 hours maximum).
+>>.
+> **504**
+>>
+>> “**One CNAME record is missing**”<br><br> 
+>> The CNAME record value required to configure the DKIM is missing. You will need to configure the DNS zone for the domain name you are attaching.
+>> To configure your DNS zone, retrieve the values of the CNAME record that appears:
+>>
+>>![email](images/dkim-503.png){.thumbnail}
+>>
+>> If we take the example of the capture above, the domain name is "**mydomain.ovh**" and we are asked to configure the "**2**" selector. Here, add a CNAME record with the subdomain value `ovhex1234567-selector2.domainkey.mydomain.ovh` and as a target `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
+>> Once you have configured your DNS zone, wait for the DNS propagation (24 hours maximum).
+>>
 
-Here are the 4 states that result in a red DKIM box in your Control Panel:
+#### From the OVHcloud API interface, how do I understand the status of the DKIM that is not working? <a name="api-error"></a>
+
+If you are using the OVHcloud API to configure your DKIM and it is not functional, please use the section “[The different states of DKIM](#dkim-status)” of this guide to identify the status of your selectors.
+
+Below, you will find the states that may block your DKIM from working, and the appropriate solution for each situation.
 
  - `WaitingRecord`: The DNS records are pending configuration or being validated in the DNS zone. A regular automatic check is carried out to see if the DNS record is present and correctly entered. Depending on your solution, follow **step 5** in the section “[Full DKIM configuration](#firststep)” to configure the DNS zone correctly for the domain name concerned.
  - `ready`: The DNS  are present in the zone. The DKIM can now be enabled. Simply activate the selector by going to the section [Enable or change a DKIM selector](#enable-switch).

@@ -795,7 +795,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > **Exchange**
 >> Aby przełączyć się na drugi selektor, użyj następującego wywołania API:
 >> 
->> > [!API]
+>> > [!api]
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
@@ -808,7 +808,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > **E-mail Pro**
 >> Aby przełączyć się na drugi selektor, użyj następującego wywołania API:
 >>
->> > [!API]
+>> > [!api]
 >> >
 >> @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
@@ -862,7 +862,7 @@ Oto cztery statusy, po których w Panelu klienta wyświetli się czerwona ikona 
 >> Wartość rekordu CNAME potrzebnego do skonfigurowania DKIM nie została poprawnie wprowadzona. Należy poprawnie skonfigurować strefę DNS przypisanej nazwy domeny.
 >> Aby skonfigurować strefę DNS, pobierz wartości z rekordu CNAME, który się wyświetla :
 >>
->> ![email](obrazy/dkim-503.png){.thumbnail}
+>> ![email](images/dkim-503.png){.thumbnail}
 >>
 >> Jeśli weźmiemy przykład powyższego zrzutu, nazwą domeny będzie "**mydomain.ovh**", a następnie zostanie wyświetlona prośba o skonfigurowanie selektora "**2**". Tutaj należy dodać rekord CNAME z subdomeną `ovhex1234567-selector2.domainkey.mydomain.ovh` oraz jako adres docelowy `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
 >> Po skonfigurowaniu strefy DNS odczekaj chwilę na propagację DNS (maksymalnie 24 godziny)
@@ -873,7 +873,7 @@ Oto cztery statusy, po których w Panelu klienta wyświetli się czerwona ikona 
 >> Brak wartości rekordu CNAME wymaganej do skonfigurowania DKIM. Należy skonfigurować strefę DNS dla dołączonej nazwy domeny.
 >> Aby skonfigurować strefę DNS, pobierz wartości z rekordu CNAME, który się wyświetla :
 >>
->> ![email](obrazy/dkim-503.png){.thumbnail}
+>> ![email](images/dkim-503.png){.thumbnail}
 >>
 >> Jeśli weźmiemy przykład powyższego zrzutu, nazwą domeny będzie "**mydomain.ovh**", a następnie zostanie wyświetlona prośba o skonfigurowanie selektora "**2**". Tutaj należy dodać rekord CNAME z subdomeną `ovhex1234567-selector2.domainkey.mydomain.ovh` oraz jako adres docelowy `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
 >> Po skonfigurowaniu strefy DNS odczekaj chwilę na propagację DNS (maksymalnie 24 godziny)

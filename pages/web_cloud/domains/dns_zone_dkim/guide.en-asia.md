@@ -522,7 +522,6 @@ Here is what you will find in the header of the received email:
 Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
-
 To retrieve the header of an email, please read our guide on [Retrieving email headers](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 ### Use cases <a name="usecases"></a>
@@ -556,7 +555,7 @@ From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&
 
 ![email](images/red-dkim.png){.thumbnail}
 
-If you have just configured the DKIM, it means that the DKIM activation has not finished. **Wait the full 24 hours**.
+Here are the 4 states that result in a red DKIM icon in your Control Panel. Click on the tab corresponding to your error code:
 
 > [!tabs]
 > **501**
@@ -579,18 +578,18 @@ If you have just configured the DKIM, it means that the DKIM activation has not 
 >> The CNAME record value required to configure the DKIM was not entered correctly. You must configure the DNS zone of the attached domain name correctly.
 >> To configure your DNS zone, retrieve the values of the CNAME record that appears:
 >>
->>![email](images/dkim-503.png){.thumbnail}
+>> ![email](images/dkim-503.png){.thumbnail}
 >>
 >> If we take the example of the capture above, the domain name is "**mydomain.ovh**" and we are asked to configure the "**2**" selector. Here, add a CNAME record with the subdomain value `ovhex1234567-selector2.domainkey.mydomain.ovh` and as a target `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
 >> Once you have configured your DNS zone, wait for the DNS propagation (24 hours maximum).
->>.
+>>
 > **504**
 >>
 >> “**One CNAME record is missing**”<br><br> 
 >> The CNAME record value required to configure the DKIM is missing. You will need to configure the DNS zone for the domain name you are attaching.
 >> To configure your DNS zone, retrieve the values of the CNAME record that appears:
 >>
->>![email](images/dkim-503.png){.thumbnail}
+>> ![email](images/dkim-503.png){.thumbnail}
 >>
 >> If we take the example of the capture above, the domain name is "**mydomain.ovh**" and we are asked to configure the "**2**" selector. Here, add a CNAME record with the subdomain value `ovhex1234567-selector2.domainkey.mydomain.ovh` and as a target `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
 >> Once you have configured your DNS zone, wait for the DNS propagation (24 hours maximum).
