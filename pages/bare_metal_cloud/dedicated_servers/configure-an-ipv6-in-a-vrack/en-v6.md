@@ -90,6 +90,7 @@ To simplify IP addressing inside your network, you may want to use SLAAC. It can
 
 ![image-2024-3-29_14-48-7](https://github.com/ovh/docs/assets/60412/a26da7cd-9a9d-4841-b055-9997cf460adc)
 
+Don't forget to configure SLAAC on your host machine.
 
 </blockquote>
 </details>
