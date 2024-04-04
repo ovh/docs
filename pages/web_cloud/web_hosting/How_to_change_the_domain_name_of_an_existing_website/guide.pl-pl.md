@@ -5,7 +5,7 @@ updated: 2022-10-25
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -72,7 +72,7 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 Jeśli wszystkie działania zostały poprawnie zrealizowane, zgłoszenia w wielu lokalizacjach domen muszą być identyczne **chyba że korzystasz z płatnego certyfikatu SSL typu *Sectigo DV*, *Sectigo EV* lub *custom***.
 
-![MultiSite](images/multisites.png){.thumbnail}
+![MultiSite](images/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >

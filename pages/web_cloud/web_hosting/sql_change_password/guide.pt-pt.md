@@ -37,7 +37,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
@@ -53,7 +53,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 
 Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root-folders](images/root-folders.png){.thumbnail}
 
 A seguir, clique no separador `FTP-SSH`{.action} e aceda ao espaço que contém os ficheiros e as pastas do seu site (*espaço FTP*) clicando no botão `Explorador FTP`{.action}.
 
@@ -199,31 +199,31 @@ Novamente, dois casos são possíveis:
 
 Na secção `Alojamentos`{.action} da Área de Cliente, clique no separador `Bases de dados`{.action} à direita do ecrã:
 
-![database-password-step1](images/database-password-step1.png){.thumbnail}
+![database-password-step1](images/tab.png){.thumbnail}
 
 A seguir, clique nos três pontos situados no final da linha correspondente à base de dados do site e selecione a opção `Alterar palavra-passe`{.action}.
 
-![database-password-step2](images/database-password-step2.png){.thumbnail}
+![database-password-step2](images/change-password.png){.thumbnail}
 
 Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Etapa 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
 
-![database-password-step3](images/database-password-step3.png){.thumbnail}
+![database-password-step3](images/change-password-window.png){.thumbnail}
 
 #### Caso n°2: a base de dados do seu site faz parte de uma oferta Web Cloud Databases <a name="case2"></a>
 
 Aceda à secção `Bases de dados`{.action} da Área de Cliente e ao servidor em questão, clique no separador `Utilizadores e permissões`{.action}:
 
-![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
+![userDBpassword-step1](images/wcdb-tab.png){.thumbnail}
 
 Para alterar a palavra-passe da base de dados no servidor, clique nos três pontos à direita do `Nome de utilizador`{.action} identificado na [Etapa 2](#step2) e, a seguir, em `Alterar palavra-passe`{.action}.
 
-![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
+![userDBpassword-step2](images/wcdb-change-password.png){.thumbnail}
 
 Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Etapa 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
 
-![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
+![userDBpassword-step3](images/wcdb-change-password-window.png){.thumbnail}
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Partilhado: Guia de utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

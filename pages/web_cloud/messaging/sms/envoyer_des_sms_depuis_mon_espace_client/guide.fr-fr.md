@@ -43,6 +43,10 @@ N'hésitez pas à consulter notre [guide sur les carnets d'adresses SMS](/pages/
 
 ### Étape 2 : composer votre SMS
 
+> [!primary]
+>
+> Pour des raisons légales, un SMS à caractère commercial ne sera envoyé qu’entre **8 h et 20 h, du lundi au samedi**.
+
 Une fois l'expéditeur sélectionné et vos destinataires renseignés, vous pouvez désormais passer à la composition du message.
 
 ![envoi sms manager](images/sms-send-control-panel03E.png){.thumbnail}

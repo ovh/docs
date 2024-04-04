@@ -15,7 +15,7 @@ Für den Transfer einer .uk-Domain (oder einer ähnlichen Domain) ist ein spezif
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 **In dieser Anleitung erfahren Sie, wie Sie .uk-Domains zu OVHcloud transferieren.**
@@ -90,7 +90,7 @@ Der Autorisierungscode wird nach der Änderung des TAG automatisch generiert. We
 
 Da der Transfer kostenlos ist, ändert sich nichts am Ablaufdatum. Um die Domain nach dem Transfer zu verlängern, gehen Sie auf [die Website von OVHcloud](https://www.ovh.co.uk/cgi-bin/order/renew.cgi).
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Domainnamen zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 

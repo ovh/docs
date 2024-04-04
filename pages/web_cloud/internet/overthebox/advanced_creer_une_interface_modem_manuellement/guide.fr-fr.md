@@ -1,7 +1,6 @@
 ---
-title: 'Créer une interface modem manuellement'
-description: 'Créer une interface modem manuellement'
-excerpt: "Découvrez comment ajouter une interface modem manuellement depuis l'interface OverTheBox"
+title: 'Créer manuellement une interface modem'
+excerpt: "Découvrez comment ajouter manuellement une interface modem depuis l'interface OverTheBox"
 updated: 2021-04-16
 ---
 

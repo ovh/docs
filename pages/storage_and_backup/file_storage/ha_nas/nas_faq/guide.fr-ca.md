@@ -1,7 +1,7 @@
 ---
 title: Les questions fréquentes concernant le service NAS-HA
 excerpt: Une question sur le NAS-HA ? Voici les questions les plus fréquemment posées.
-updated: 2023-06-07
+updated: 2024-02-26
 ---
 
 ## Objectif
@@ -110,6 +110,14 @@ Non, il n'est pas possible d'installer un OS sur les offres NAS-HA.
 
 Oui, il est nécessaire de créer une ou plusieurs partitions selon votre utilisation. La création de partition n'est pas limitée.
 
+### Comment faire pour changer de capacité de stockage sur mon NAS-HA ?
+
+A ce jour, il n'est pas possible de modifier dynamiquement votre NAS-HA. Pour augmenter ou réduire votre provisionnement, il faut donc :
+
+1. Commander un nouveau service NAS-HA avec la nouvelle capacité souhaitée et ainsi disposer de vos deux NAS-HA : l'ancien et le nouveau.
+2. Migrer vos données en consultant notre guide « [Migration de données d'un NAS-HA vers un autre via NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_migration) ».
+3. Résilier l'ancien NAS-HA.
+
 ## Snapshots
 
 ### Que sont les snapshots ?
@@ -135,7 +143,7 @@ La fréquence des snapshots est administrable depuis votre espace client OVHclou
 - tous les trois jours ;
 - hebdomadaire.
 
-Vous pouvez aussi, à tout moment, créer des snapshots manuels, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou via l'appel [API](https://api.ovh.com/) suivant :
+Vous pouvez aussi, à tout moment, créer des snapshots manuels, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou via l'appel [API](https://ca.api.ovh.com/) suivant :
 
 > [!api]
 >

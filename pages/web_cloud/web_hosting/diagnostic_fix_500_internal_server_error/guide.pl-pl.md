@@ -5,14 +5,14 @@ updated: 2023-11-22
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
 
 Błędy 500 "Internal Server Error" mogą dotyczyć całości lub części Twojej strony, być losowe lub stałe. Mogą również pojawić się w postaci białej strony.
 
-![error500](images/error-500-2.png){.thumbnail}
+![error500](images/http-500.png){.thumbnail}
 
 Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie** przez komponent Twojej strony WWW.
 
@@ -22,7 +22,7 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#go-further) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -79,7 +79,7 @@ Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](/pages/web_
 
 Ze względów bezpieczeństwa Twoja strona WWW ukrywa ewentualne szczegóły dotyczące źródła błędu 500 dla każdego, kto ją łączy za pomocą przeglądarki internetowej.
 
-Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [pro2014](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub wyższej, połączyć się ze stroną za pomocą [połączenia ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub wyższej, połączyć się ze stroną za pomocą [połączenia ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Sprawdź stan bazy danych
 
@@ -99,7 +99,7 @@ Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodniki
 
 Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Zmiana wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)" i wróć do poprzedniej konfiguracji.
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Co zrobić, jeśli moja strona jest niedostępna?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

@@ -15,7 +15,7 @@ En al menos uno de los siguientes casos aparece una página **"Index of"**:
 - La configuración [Multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su nombre de dominio no está correctamente configurada hacia su directorio de destino
 - La carpeta de destino a la que apunta su dominio no contiene archivos **"index.html"** o **"index.php"**
 
-![index_of](images/index_of.png){.thumbnail}
+![index_of](images/index-of.png){.thumbnail}
 
 **Esta guía explica cómo corregir la visualización de una página "Index of".**
 
@@ -23,7 +23,7 @@ En al menos uno de los siguientes casos aparece una página **"Index of"**:
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -52,11 +52,11 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Carpeta raíz` q
 
 Ha importado los archivos de su sitio **mydomain.ovh** a la carpeta `www` de su alojamiento por [FTP](/pages/web_cloud/web_hosting/ftp_connection). Su dominio no está asociado a esta carpeta en la columna `Carpeta raíz` de su `Multisitio`{.action}.
 
-![index_of_multisite](images/index_of_multisite.png){.thumbnail}
+![index_of_multisite](images/root-folders-empty.png){.thumbnail}
 
 Modifique la `Carpeta raíz` haciendo clic en el botón `...`{.action} a la derecha de la tabla y luego en `Modificar el dominio`{.action} :
 
-![modify_domain](images/modify_domain.png){.thumbnail}
+![modify_domain](images/modify-domain.png){.thumbnail}
 
 En la nueva ventana:
 
@@ -64,7 +64,7 @@ En la nueva ventana:
 * Indique el directorio que contiene el archivo **index.php** o **index.html** del sitio web como `Carpeta raíz` (2).
 * Haga clic en `Siguiente` (3).
 
-![change_root_folder](images/change_root_folder01.png){.thumbnail}
+![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -73,17 +73,17 @@ En la nueva ventana:
 
 En la siguiente ventana, haga clic en `Aceptar`{.action}.
 
-![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
+![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
 
 En unos minutos (refrescando el navegador), obtendrá el siguiente resultado:
 
-![multisite_modified](images/multisite_modified.png){.thumbnail}
+![multisite_modified](images/root-folders-full-www.png){.thumbnail}
 
 Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
 
 Asegúrese también de que el directorio de destino contiene un archivo **index.php** o **index.html**.
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 

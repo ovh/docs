@@ -32,7 +32,7 @@ There are four steps to changing your website’s database password:
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -48,7 +48,7 @@ There are four steps to changing your website’s database password:
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root-folders](images/root-folders.png){.thumbnail}
 
 Then click on the `FTP-SSH`{.action} tab and go to the space containing your website’s files and folders (the *FTP space*) by clicking `FTP Explorer`{.action}.
 
@@ -164,17 +164,17 @@ Save this change.
 
 In the `Hosting Plans`{.action} section of the OVHcloud Control Panel, go to the `Databases`{.action} tab on the right-hand side of your screen:
 
-![database-password-step1](images/database-password-step1.png){.thumbnail}
+![database-password-step1](images/tab.png){.thumbnail}
 
 Next, click on the three dots to the right of your website’s database, then on `Change password`{.action}.
 
-![database-password-step2](images/database-password-step2.png){.thumbnail}
+![database-password-step2](images/change-password.png){.thumbnail}
 
 In the window that pops up, enter your database’s new password (defined at [step 3](#step3)), confirm it, then click on `Confirm`{.action}.
 
-![database-password-step3](images/database-password-step3.png){.thumbnail}
+![database-password-step3](images/change-password-window.png){.thumbnail}
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [FileZilla software usage with your hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

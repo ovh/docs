@@ -1,7 +1,7 @@
 ---
 title: 'Optimise your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 ## Objective
@@ -49,7 +49,7 @@ Answering those questions can help to focus on specific points and diagnose area
 
 The use of CMS such as WordPress, PrestaShop, Drupal or Joomla! requires many libraries, so that a single web page can handle a lot of elements.
 Internet browsers must load and read all of these elements.
-We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovhcloud.com/en-ca/web-hosting/){.external}.
+We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovhcloud.com/en-au/web-hosting/){.external}.
 
 You can find more informations regarding which plan to choose from on [this page](https://www.ovhcloud.com/en-au/web-hosting/uc-best-web-hosting/){.external}.
 
@@ -93,21 +93,23 @@ You can find more details on this topic in the Step 5 below.
 
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
-You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
 
-How to access the logs:
+How to access statistics and logs:
 
-- Click on the domain in the `Hosting`{.action} section,
-- Click on the `More +`{.action} tab then select `Statistics and logs`{.action}.
-- Then click on the links displayed to access either the _Website visit statistics_ or the _Logs_.
-![logs](images/logs_highlighted.png){.thumbnail}
+1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
+2. In the pop-up window, click the `Statistics and logs`{.action} tab.
+3. Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
 
-How to access the graphs:
+![logs](images/tab.png){.thumbnail}
 
-- Click on the domain in the `Hosting`{.action} section,
-- Once in the `General information`{.action} section, scroll down to the very bottom of the page, there you can consult the graphs of your hosting usage.
-- There you will be able to select the type of information as well as the time period for the data to be visualised.
-![graphs](images/graphs_highlighted.png){.thumbnail}
+How to access charts:
+
+1. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan concerned.
+2. In the pop-up window, click the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph linked to your hosting usage.
+3. Select the **type** of information as well as the **period** of the data displayed.
+
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 What are the different types of information that can be displayed?
 
@@ -147,13 +149,13 @@ In order to improve website access website downloads and get naturally optimised
 
 As a result you will improve response times for visitors all over the world because the static parts of your website will be downloaded directly by your visitor in the point of presence which is closest to them.
 
-Discover our [CDN solution here](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/){.external}.
+Discover our [CDN solution here](https://www.ovhcloud.com/en-au/web-hosting/options/cdn/){.external}.
 
 ### Step 6: Checking the Content Management System (CMS) and plugins used
 
 _This step is optional if you are not using a CMS._
 
-To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](https://www.ovhcloud.com/en-au/web-hosting/).
+To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](https://www.ovhcloud.com/en-au/web-hosting/){.external}.
 
 - **Using a cache plugin:** Using a CMS calls upon several libraries, so that one single web page can deal with an enormous amount of elements. In order to optimise your CMS, you should use several cache plugins to avoid regenerating all of your website content each time a page loads. We recommend that you search for cache plugins on the community websites relating to the CMS that you use (Joomla! - PrestaShop - WordPress) in order to avoid regenerating the entire content of your website each time you load the web page.
 
@@ -223,11 +225,18 @@ Example:
 
 Avoid using the "HAVING" clause which can slow down queries. You should also avoid using "GROUP BY", unless strictly necessary.
 
+#### Web Cloud Databases
+If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Web Cloud Databases offer to have more resources available.
+
+[See the Web Cloud Databases offer on our website](https://www.ovhcloud.com/en-au/web-cloud/databases/).
+
 ## Go further
 
 [Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Creating and managing a database in your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
+
+[Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

@@ -1,7 +1,7 @@
 ---
 title: "Activar el Alojamiento gratuito 100M"
 excerpt: "Descubra cómo activar su Alojamiento gratuito 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 > [!primary]
@@ -32,11 +32,11 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 En la sección **« Información general »**, acceda al apartado *«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}.
 
-![free100m](images/start10m-step1-01.png){.thumbnail}
+![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 
 Se mostrará la ventana de activación. En el **paso 1** se muestra información sobre el plan y el precio. Haga clic en `«Siguiente»`{.action}. En el **paso 2**, seleccione los cambios que quiera realizar en su zona DNS:
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >

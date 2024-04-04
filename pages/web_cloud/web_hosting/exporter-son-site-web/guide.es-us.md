@@ -34,7 +34,7 @@ Para conectarse a su espacio de almacenamiento necesitará lo siguiente:
 
 Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de ellos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección Web y,Haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
 
-![export-website](images/export-website-step1-1.png){.thumbnail}
+![export-website](images/tab-pro.png){.thumbnail}
 
 Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web_cloud/web_hosting/ftp_connection){.external}. Si no tiene la contraseña, consulte la guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
@@ -50,7 +50,7 @@ Una vez que se haya conectado al espacio de almacenamiento, solo tiene que desca
 
 Para consultar la carpeta en la que está almacenado el sitio web, abra la pestaña `Multisitio`{.action} del área de cliente de OVHcloud. Aparecerá una tabla en la que podrá consultar la `Carpeta raíz`{.action} del dominio correspondiente.
 
-![export-website](images/export-website-step1-2.png){.thumbnail}
+![export-website](images/root-folders.png){.thumbnail}
 
 ### 2. recuperar la copia de seguridad de la base de datos (opcional)
 
@@ -68,7 +68,7 @@ Si desea conservar el historial de los logs de su sitio web, puede acceder a ell
 
 Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en la pestaña `Estadísticas y logs`{.action}. Haga clic en el enlace que aparece `Ver los logs`{.action}.
 
-![export-website](images/export-website-step3-1.png){.thumbnail}
+![export-website](images/view-logs.png){.thumbnail}
 
 Se abrirá una ventana con los diferentes tipos de logs disponibles. Se clasifican por meses:
 
@@ -82,11 +82,11 @@ Se abrirá una ventana con los diferentes tipos de logs disponibles. Se clasific
 | SSH   	| estos logs indican las distintas conexiones realizadas con el protocolo SSH.                                                                                                                      	|
 | Cron  	| el resultado de la ejecución de las tareas planificadas.                                                                                                                                                	|
 
-![export-website](images/export-website-step3-3.png){.thumbnail}
+![export-website](images/raw-logs-general.png){.thumbnail}
 
 Al seleccionar el tipo de logs durante el mes que le interesa, estos se guardan al día:
 
-![export-website](images/export-website-step3-4.png){.thumbnail}
+![export-website](images/raw-logs.png){.thumbnail}
 
 ## Más información
 

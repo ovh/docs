@@ -6,7 +6,7 @@ updated: 2023-11-16
 
 > [!primary]
 >
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -53,21 +53,21 @@ Aby wygenerować link do pobrania, zaloguj się do [Panelu klienta OVHcloud](htt
 
 Wybierz kartę `FTP - SSH`{.action} i kliknij przycisk `Wygeneruj kopię zapasową`{.action} po prawej stronie.
 
-![kopia zapasowa](images/GenerateABackup.png){.thumbnail}
+![kopia zapasowa](images/generate-a-backup.png){.thumbnail}
 
 W oknie, które się otworzy wybierz jedną z dostępnych kopii zapasowych, po czym kliknij `Dalej`{.action}.
 
-![kopia zapasowa](images/GenerateABackup2.png){.thumbnail}
+![kopia zapasowa](images/generate-a-backup-step-1.png){.thumbnail}
 
 Pojawi się drugie okno z informacją, że link do pobrania pliku kopii zapasowej zostanie przesłany e-mailem i że OVHcloud nie przywróci automatycznie danych z Twojego hostingu Cloud Web.
 
-![kopia zapasowa](images/GenerateABackup3.png){.thumbnail}
+![kopia zapasowa](images/generate-a-backup-step-2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby potwierdzić zlecenie.
 
 Jeśli wygenerowana zostanie kopia zapasowa, w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} pojawi się następujący komunikat:
 
-![kopia zapasowa](images/BackupInProgress.png){.thumbnail}
+![kopia zapasowa](images/message-backup-progress.png){.thumbnail}
 
 Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
 
@@ -76,7 +76,7 @@ Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
 Po sfinalizowaniu tworzenia kopii zapasowej otrzymasz e-mail na adres e-mail powiązany z identyfikatorem administratora Twojego hostingu Cloud Web.<br>
 E-mail ten zawiera link do pobrania **ważny przez 9 dni** od otrzymania wiadomości e-mail:
 
-![kopia zapasowa](images/mailBackup.png){.thumbnail}
+![kopia zapasowa](images/backup-information.png){.thumbnail}
 
 Pobrany plik jest w formacie *.tar.gz*.
 

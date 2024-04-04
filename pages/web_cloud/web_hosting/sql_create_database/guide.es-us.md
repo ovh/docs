@@ -1,7 +1,7 @@
 ---
 title: "Crear una base de datos en un alojamiento web"
 excerpt: "Descubra cómo crear una base de datos en un alojamiento web de OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 ## Requisitos
 
 - Tener contratado un plan de [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que incluya al menos una base de datos.
-- Disponer de una base de datos disponible en "creación" entre las incluidas en su plan de hosting.
+- Disponer de una base de datos disponible en "creación" entre las que se incluyen en el plan de hosting. Si lo necesita, puede añadir bases de datos [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) a su alojamiento web.
 - Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) con los [permisos necesarios](/pages/account_and_service_management/account_information/managing_contacts) para gestionar el alojamiento web.
 
 ## Procedimiento
@@ -28,7 +28,19 @@ Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=g
 
 La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
+
+En la tabla, las bases de datos pueden tener varios tipos diferentes:
+
+- **Incluida**: indica que la base de datos está incluida en el plan de hosting. No genera ningún coste adicional.</br></br>
+- **Opcional**: indica que la base de datos se ha contratado como complemento de las bases de datos incluidas con el alojamiento web. Pague un complemento para disponer de esta base de datos adicional en su alojamiento web.</br></br>
+- **Incluida - retirada de la venta**: indica que la base de datos incluida va a retirarse pronto de la venta y quedar obsoleta. </br>Le recomendamos que, **antes** de que la base de datos quede obsoleta, recupere el contenido y la coloque en una nueva base de datos más reciente (que aún no tenga programada su finalización).</br></br>
+- **Opcional - retirada de la venta**: Indica que la base de datos contratada como complemento en su alojamiento web va a ser retirada de la venta y quedar obsoleta. </br>Le recomendamos que, **antes** de que la base de datos quede obsoleta, recupere el contenido y la coloque en una base de datos nueva y más reciente (que aún no haya finalizado).
+
+> [!success]
+>
+> Para duplicar rápidamente el contenido de una base de datos "**Incluida - retirada de la venta**" o "**Opcional - retirada de la venta**" en una nueva base de datos cuya obsolescencia aún no está programada, consulte nuestra guía "[Duplicar el contenido de una base de datos de OVHcloud en otra](/pages/web_cloud/web_hosting/copy_database)".
+>
 
 ### Etapa 2 - Crear la base de datos
 
@@ -40,7 +52,7 @@ Existen dos formas de crear una nueva base de datos:
 
 En la nueva ventana, seleccione la siguiente información:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Información|Descripción|  
 |---|---|
@@ -52,7 +64,7 @@ A continuación, haga clic en `Siguiente`{.action}.
 
 Se abrirá una nueva ventana:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Información|Descripción|
 |---|---|
@@ -80,7 +92,7 @@ crear una contraseña que no contenga datos personales (nombre, apellidos, fecha
 
 Complete la información solicitada y haga clic en `Siguiente`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Asegúrese de que toda la información mostrada en el resumen es correcta. En ese caso, haga clic en `Aceptar`{.action} para iniciar la creación de la base de datos.
 

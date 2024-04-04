@@ -1,7 +1,7 @@
 ---
 title: "Using automated tasks on a Web Hosting plan"
 excerpt: "Find out how to configure scheduled jobs on your Web Hosting"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -51,7 +51,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 In this section you will see an overview of your scheduled jobs and their settings.
 
-![cron control panel](images/cron-jobs-1.png){.thumbnail}
+![cron control panel](images/schedule-jobs.png){.thumbnail}
 
 ### Creating an automated task
 
@@ -59,7 +59,7 @@ In this section you will see an overview of your scheduled jobs and their settin
 
 To create a new cron task, click on the `Add a scheduling`{.action} button on the right-hand side. You can customise the settings for the task in the new window.
 
-![adding scheduling](images/cron-jobs-2.png){.thumbnail}
+![adding scheduling](images/add-scheduling-step-1.png){.thumbnail}
 
 |Option|Description|   
 |---|---|   
@@ -78,12 +78,12 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |Basic mode|
 |---|
 |Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.|
-|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-basic-mod-step-2.png){.thumbnail}|
 
 |Advanced mode| 
 |---|
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
-|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-expert-mod-step-2.png){.thumbnail}|
 
 > [!primary]
 >
@@ -94,13 +94,13 @@ The interface offers two modes to configure the frequency of your task. Use the 
 
 You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
 
-![cron control panel](images/cron-jobs-5.gif){.thumbnail}
+![cron control panel](images/add-scheduling-basic-mod-step-2.gif){.thumbnail}
 
 #### Step 3: Finishing the setup
 
 The summary lists all your settings including the *crontab* notation of the execution frequency. If everything is correct, click on `Confirm`{.action}.
 
-![cron confirmation](images/cron-jobs-6.png){.thumbnail}
+![cron confirmation](images/add-scheduling-step-3.png){.thumbnail}
 
 The task will be ready within a few minutes. You can then modify all of its settings or delete the task by clicking on `...`{.action} in the overview table in your OVHcloud Control Panel.
 
@@ -112,7 +112,7 @@ The task will be ready within a few minutes. You can then modify all of its sett
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
 |Variables|You can only define variables in a script. Adding them to the URL calling the script will not work (Example: www/jobs/cron.php?variable=value).|
 |Data limit|A task can only generate up to 5 MB of data (*stdin/stderr*). For example, if a script writes data into a .txt file, the execution will be stopped automatically once the file reaches 5 MB in size.|
-|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply reactivate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
+|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. The error report will only be sent when the 10 attempts have failed.</br>Correct your script according to the error report received, then reactivate the cron task in the Control Panel (click `...`{.action} then on `Edit`{.action}.)|
 |Execution reports|Reports will be sent to your selected email address only once a day (during night hours).|
 
 ### Troubleshooting
@@ -136,35 +136,35 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) f
 - Example of a successfully finished execution output
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
-[2020-08-11 00:36:01] 
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2023-08-11 00:36:01] 
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-10 22:39:44.086166 exitcode: 0
 </code></pre>
 
 - Example of a failed execution output due to exceeded execution time
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
+[2023-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2023-08-11 01:36:01] ## OVH ## END - 2023-08-11 01:36:01.086166 exitcode: 0
 </code></pre>
 
 - Example of a failed execution output because the script file was not found in the specified path
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+[2023-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-11 00:36:01.086166 exitcode: 255
 </code></pre>
 
 - Example of a failed execution output because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file
 
 <pre class="bgwhite"><code>
-[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
-[2020-08-11 18:07:10]
-[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
+[2023-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2023-08-11 18:07:10]
+[2023-08-11 18:07:10] ## OVH ## END - 2023-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
 ## Go further <a name="go-further"></a>

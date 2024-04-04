@@ -5,7 +5,7 @@ updated: 2023-11-22
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie
@@ -46,35 +46,35 @@ W zależności od Twojego przypadku ścieżka dostępu do źródłowej bazy dany
 
 [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz `Web Cloud`{.action} w menu na górze interfejsu. W lewej kolumnie przejdź do zakładki `Hosting`{.action}, następnie kliknij hosting www, na którym znajduje się źródłowa baza danych, której zawartość ma zostać skopiowana.
 
-![Lista hostingów](images/list-web-hosting.png){.thumbnail}
+![Lista hostingów](images/web-hosting-selection.png){.thumbnail}
 
 Po kliknięciu na zakładkę `Bazy danych`{.action} wyświetli się lista Twoich baz danych Start SQL.
 
-![Lista baz danych Start SQL](images/list-bdd-startsql.png){.thumbnail}
+![Lista baz danych Start SQL](images/sharedsql-dashboard-db-list.png){.thumbnail}
 
 #### Web Cloud Databases
 
 [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz `Web Cloud`{.action} w menu na górze interfejsu. W kolumnie z lewej strony przejdź do zakładki `Web Cloud Databases`{.action}, następnie wybierz serwer Web Cloud Databases, na którym znajduje się Twoja źródłowa baza danych, której zawartość chcesz skopiować.
 
-![Lista serwerów WCD](images/list-wcd-server.png){.thumbnail}
+![Lista serwerów WCD](images/wcdb-server-selection.png){.thumbnail}
 
 Po kliknięciu na zakładkę `Bazy danych`{.action} wyświetli się lista baz danych obecnych na Twoim serwerze Web Cloud Databases.
 
-![Lista baz danych WCD](images/list-database-wcd.png){.thumbnail}
+![Lista baz danych WCD](images/wcdb-dashboard-db-list.png){.thumbnail}
 
 ### Kopiuj zawartość bazy danych
 
 W zakładce `Bazy danych`{.action} i bez względu na ofertę, kliknij przycisk`...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, której zawartość chcesz skopiować, a następnie wybierz `Kopiuj bazę danych`{.action}.
 
-![CTA_copier_BDD](images/cta-copy-database.png){.thumbnail}
+![CTA_copier_BDD](images/copy-db-tool.png){.thumbnail}
 
 Wyświetli się okno, w którym zidentyfikujesz docelową bazę danych.
 
-![Interfejs kopiowania bazy danych](images/interface-copy-database.png){.thumbnail}
+![Interfejs kopiowania bazy danych](images/copy-db-tool-step-1.png){.thumbnail}
 
 Jeśli nie posiadasz docelowej bazy danych i jak pokazuje poniższy zrzut ekranu, kliknij poniższe łącze, aby kupić nową bazę danych:
 
-![Lista baz danych WCD](images/link-buy-database.png){.thumbnail}
+![Lista baz danych WCD](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
 Możesz wybrać zakup usługi "[start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)" lub serwera baz danych "[Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/)".
 
@@ -97,17 +97,17 @@ Właśnie wybrałeś `Skopiuj do bazy danych`{.action}. Pojawią się dwie listy
 
 Kliknij przycisk `Dalej`{.action}. Pojawi się następujący komunikat potwierdzający:
 
-![Wiadomość potwierdzająca skopiuj bazy danych](images/confirmation-copy-database.png){.thumbnail}
+![Wiadomość potwierdzająca skopiuj bazy danych](images/copy-db-tool-step-2.png){.thumbnail}
 
 Jeśli nie chcesz nadpisywać wybranej docelowej bazy danych, kliknij przycisk `Wstecz`{.action}, aby zmienić wybór lub kliknij przycisk `Anuluj`{.action}, aby anulować wszystkie operacje. W przeciwnym razie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić duplikowanie zawartości źródłowej bazy danych do docelowej bazy danych.
 
 Pojawi się następujący komunikat potwierdzający:
 
-![Wiadomość o sukcesie bazy danych](images/success-copy-database.png){.thumbnail}
+![Wiadomość o sukcesie bazy danych](images/copy-db-tool-copied-successfull.png){.thumbnail}
 
 Kopiowanie bazy danych może potrwać kilka minut. Aby upewnić się, że kopia została utworzona, przejdź do zakładki `Zadania w trakcie`{.action}. W tabeli pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu linia znika.
 
-![Zadania w trakcie](images/ongoing-tasks.png){.thumbnail}
+![Zadania w trakcie](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 #### Wybór 2 - Kopiuj do bazy danych dostępnej na serwerze Web Cloud Databases
 
@@ -115,13 +115,13 @@ Właśnie wybrałeś `Skopiuj do Web Cloud Databases`{.action}. Pojawią się dw
 
 Kliknij przycisk `Dalej`{.action}. Pojawi się następujący komunikat potwierdzający:
 
-![Wiadomość potwierdzająca skopiuj bazy danych](images/confirmation-copy-database.png){.thumbnail}
+![Wiadomość potwierdzająca skopiuj bazy danych](images/copy-db-tool-step-2.png){.thumbnail}
 
 Jeśli nie chcesz nadpisywać wybranej docelowej bazy danych, kliknij przycisk `Wstecz`{.action}, aby zmienić wybór lub kliknij przycisk `Anuluj`{.action}, aby anulować wszystkie operacje. W przeciwnym razie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić duplikowanie zawartości źródłowej bazy danych do docelowej bazy danych.
 
 Kopiowanie bazy danych może potrwać kilka minut. Aby upewnić się, że kopia została utworzona, przejdź do zakładki `Zadania w trakcie`{.action}. W tabeli pojawi się nowy wiersz odpowiadający kopii ze statusem "Zaplanowany". Po jej zakończeniu linia znika.
 
-![Zadania w trakcie](images/ongoing-tasks.png){.thumbnail}
+![Zadania w trakcie](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ### Konfiguracja strony WWW z nową bazą danych
 

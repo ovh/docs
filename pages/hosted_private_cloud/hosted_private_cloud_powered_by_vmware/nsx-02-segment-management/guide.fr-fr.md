@@ -1,7 +1,7 @@
 ---
 title: Gestion des segments dans NSX
 excerpt: "Découvrez la création et l'utilisation des segments dans l'interface NSX et vCenter"
-updated: 2023-02-27
+updated: 2024-02-23
 ---
 
 ## Objectif
@@ -34,6 +34,9 @@ Les segments sont liés à des zones de transports qui sont prédéfinies par OV
 - Avoir déployé **NSX**.
 
 ## En pratique
+
+> ![primary]
+> Prenez en compte que les désignations (telles que le numéro du VLAN) et les adresses IP des configurations réseau sont fournies à titre d'exemple et peuvent être modifiées en cas de nécessité.
 
 ### Création d'un segment de type overlay dans l'interface NSX
 

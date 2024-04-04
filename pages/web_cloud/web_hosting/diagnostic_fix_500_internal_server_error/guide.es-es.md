@@ -12,7 +12,7 @@ updated: 2023-11-22
 
 Los errores 500 "Internal Server Error" pueden afectar a la totalidad o parte de su sitio web, ser aleatorios o permanentes. También pueden aparecer como una página en blanco.
 
-![error500](images/error-500-2.png){.thumbnail}
+![error500](images/http-500.png){.thumbnail}
 
 A veces también se actualizan **automáticamente** en un componente del sitio web, por lo que no tiene que realizar ninguna acción.
 
@@ -22,7 +22,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -79,7 +79,7 @@ La guía "[Uso de FileZilla con el alojamiento](/pages/web_cloud/web_hosting/ftp
 
 Por motivos de seguridad, su sitio web oculta los detalles sobre el origen del error 500 a cualquier persona que se conecte a él a través de un navegador web.
 
-Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) a través de la fórmula de alojamiento [Pro2014](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o superior.
+Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) a través de la fórmula de alojamiento [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o superior.
 
 ### Comprobar el estado de la base de datos
 
@@ -100,7 +100,7 @@ Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una 
 
 Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para volver a la configuración anterior.
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [¿Qué hacer si mi sitio web no está accesible?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

@@ -88,7 +88,7 @@ Dato che nessuna protezione automatica antispam è in grado di determinare con l
 
 > [!primary]
 >
-Ricordati che non è possibile segnalare i falsi positivi direttamente da Outlook Web App. Se ricevi messaggi di posta falsamente contrassegnati come [SPAM], ti consigliamo di informare il nostro team di Supporto aprendo un ticket di assistenza dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+Ricordati che non è possibile segnalare i falsi positivi direttamente da Outlook Web App. Se ricevi messaggi di posta falsamente contrassegnati come [SPAM], ti consigliamo di informare il nostro team di Supporto aprendo un [ticket di assistenza](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 
 ## Per saperne di più 

@@ -2,7 +2,7 @@
 title: Mise en route de votre vSphere SecNumCloud
 excerpt: Découvrez comment prendre en main et configurer votre environnement vSphere SecNumCloud
 hidden: true
-updated: 2023-12-01
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -14,10 +14,10 @@ tout en maintenant le niveau de sécurité.
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private Cloud SecNumCloud](https://www.ovh.com/fr/private-cloud/){.external}.
-* Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-* Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}.
-* Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps){.external}.
+- Posséder une offre [Hosted Private Cloud SecNumCloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/){.external}.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}.
+- Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps){.external}.
 
 ## En pratique
 
@@ -36,27 +36,27 @@ Vous noterez qu'il n'y a pas de mot de passe dans l'email, celui-ci sera obtenu 
 ### Etape 1 : ajouter des adresses IP pour se connecter au vCenter
 
 Pour des raisons de sécurité, les interfaces de gestion sont restreintes par défaut.
-Vous devrez autoriser des adresses IP à se connecter au vCenter.
+Vous devrez autoriser vos adresses IP privées (RFC1918) et vos adresses IP publiques à se connecter au vCenter.
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter)
+- [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter)
 
 ### Etape 2 : configuration avancée de la sécurité
 
 Les mesures de sécurité suivantes sont mises en place à la livraison de votre service :
 
-* tous les utilisateurs existants de votre Private Cloud seront désactivés (lors de la livraison, seul l'utilisateur **admin** est présent);
-* vous devrez modifier les mots de passe des utilisateurs afin que ceux-ci soient réactivés;
-* vous devrez faire l'enrôlement 2FA au moment du changement des mots de passe des utilisateurs;
-* la modification des mots de passe de vos utilisateurs devra être réalisée uniquement à partir de l’interface sécurisée. Vous ne pourrez plus effectuer cette manipulation à partir de votre espace client OVHcloud.
+- tous les utilisateurs existants de votre Private Cloud seront désactivés (lors de la livraison, seul l'utilisateur **admin** est présent) ;
+- vous devrez modifier les mots de passe des utilisateurs afin que ceux-ci soient réactivés ;
+- vous devrez faire l'enrôlement 2FA au moment du changement des mots de passe des utilisateurs ;
+- la modification des mots de passe de vos utilisateurs devra être réalisée uniquement à partir de l’interface sécurisée. Vous ne pourrez plus effectuer cette manipulation à partir de votre espace client OVHcloud.
 
 Pour cela, effectuez les actions suivantes :
 
-* L'utilisateur « **admin** » doit avoir des informations à jour et disposer de l'autorisation nécessaire.
-* Depuis l'onglet `Utilisateurs`{.action} , assurez-vous, pour l'utilisateur « **admin** », que le numéro de téléphone et l'adresse e-mail sont correctement renseignés.
-* L'utilisateur « **admin** » doit aussi disposer de l'autorisation « **token validator** ».
-* Si nécessaire, pour modifier l'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}.
+- L'utilisateur « **admin** » doit avoir des informations à jour et disposer de l'autorisation nécessaire.
+- Depuis l'onglet `Utilisateurs`{.action} , assurez-vous, pour l'utilisateur « **admin** », que le numéro de téléphone et l'adresse e-mail sont correctement renseignés.
+- L'utilisateur « **admin** » doit aussi disposer de l'autorisation « **token validator** ».
+- Si nécessaire, pour modifier l'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}.
 
 N'hésitez pas à consulter notre guide [Présentation de l’espace client Hosted Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
 
@@ -77,11 +77,11 @@ Renseignez les informations demandées pour le compte **admin** (elles doivent �
 
 Au sein de l’interface, vous devez alors :
 
-- entrer le code reçu par SMS;
-- entrer le code reçu par courriel;
-- renseigner un nouveau mot de passe;
-- confirmer celui-ci;
-- scanner le QRcode avec l’application d’authentification de votre choix;
+- entrer le code reçu par SMS ;
+- entrer le code reçu par courriel ;
+- renseigner un nouveau mot de passe ;
+- confirmer celui-ci ;
+- scanner le QRcode avec l’application d’authentification de votre choix ;
 - entrer le code obtenu.
 
 Cliquez enfin sur le bouton `Define password`{.action}.
@@ -124,7 +124,7 @@ Si vous ne confirmez pas cette opération avant l'expiration, elle sera annulée
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Valider une opération avec un token](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure#valider-une-operation-avec-un-jeton)
+- [Valider une opération avec un token](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure#valider-une-operation-avec-un-jeton)
 
 A l'issue de cette étape, vous serez en capacité d'ouvrir une session sur l'interface vSphere et valider toutes les opérations sensibles sur l'infrastructure lors les prochaines étapes.
 
@@ -134,17 +134,17 @@ La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter 
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Mise en place d'un tunnel IPsec avec NSX ](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
+- [Mise en place d'un tunnel IPsec avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
 
 ### Etape 4 : activer la private gateway
 
 Nous allons maintenant basculer l'interface de management vSphere sur un des réseaux privés de l'environnement SecNumCloud.
 
-A l'issue de cette étape, la connexion au vCenter et aux API vSphere ne pourra se faire qu'en passant par les réseaux privés et via le VPN IPSec configuré à l'étape précédente pour l'extérieur.
+A l'issue de cette étape, la connexion au vCenter et aux API vSphere ne pourra se faire qu'en passant par le réseau privé de l'environnement SecNumCloud dans lequel la Private Gateway a été déployée.
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Activer la Private Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway)
+- [Activer la Private Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway)
 
 ### Etape 5 : mettre en place le KMS pour le chiffrement
 
@@ -154,11 +154,7 @@ Le prérequis est d'avoir un KMS compatible avec la solution VMware vSphere.
 
 Configurez le KMS (VNKP) dans vSphere en vous aidant du guide suivant :
 
-* [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
-
-Le guide suivant vous décrit comment déployer la solution KMS Thales :
-
-* [Mise en route du KMS CipherTrust Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_cipher_trust)
+- [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
 
 ### Etape  6: vérification de la conformité SecNumCloud
 

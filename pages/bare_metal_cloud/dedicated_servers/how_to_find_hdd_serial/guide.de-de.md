@@ -13,14 +13,14 @@ Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir un
 ## Voraussetzungen
 
 - Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external}.
-- Sie haben als Administrator (Root) via SSH Zugriff auf Ihren Server.
+- Sie haben als Administrator (sudo) via SSH Zugriff auf Ihren Server.
 - Auf Windows Servern ist das Tool sas2ircu installiert (verfügbar über das [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} Search Engine).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Bei einer NVMe-Festplatte muss der Server in den Rescue64-Modus versetzt und das standardmäßig installierte Tool nvme-cli verwendet werden.
+> Bei einer NVMe-Festplatte muss der Server in den Rescue-Modus versetzt und das standardmäßig installierte Tool nvme-cli verwendet werden.
 > 
 
 ### Seriennummer einer Festplatte ermitteln (Software-RAID)

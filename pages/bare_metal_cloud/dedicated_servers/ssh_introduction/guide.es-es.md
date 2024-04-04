@@ -1,7 +1,7 @@
 ---
 title: Introducción al SSH
 excerpt: "Cómo utilizar las conexiones SSH para acceder al servidor"
-updated: 2022-06-08
+updated: 2024-01-16
 ---
 
 > [!primary]
@@ -81,6 +81,8 @@ Si el puerto SSH del servidor no es el puerto estándar, utilice el siguiente co
 ssh username@server_IP -p port_number
 ```
 
+<a name="login"></a>
+
 ### Conexión y finalización
 
 Cuando se le pida una contraseña, escriba la del usuario que se conecta y pulse `Enter`.
@@ -135,10 +137,16 @@ Guarde los cambios y salga del editor. La nueva huella de clave debe ser aceptad
 En Windows, también se especifica la ruta del archivo `known_hosts` y la línea a eliminar, por ejemplo:
 
 ```console
-Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
-Acceda a esta carpeta, haga clic derecho en el archivo y abra con la aplicación Bloc de notas.
+Para solucionar este problema, utilice el siguiente comando con la dirección IP del servidor:
+
+```bash
+ssh-keygen -f "C:\Users\Name_Windows_User\.ssh\known_hosts" -R 169.254.10.254
+```
+
+También puede tener acceso a esta carpeta, hacer clic derecho en el archivo y abrirlo con la aplicación Bloc de notas.
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
@@ -165,6 +173,8 @@ Como de costumbre, el aviso de huella aparece en la primera conexión. Haga clic
 Consulte las FAQ oficiales y la documentación de PuTTY para más información.
 
 ## Más información <a name="gofurther"></a>
+
+[Configuración de las cuentas de usuario y del acceso root en un servidor](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
 [Creación de llaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 

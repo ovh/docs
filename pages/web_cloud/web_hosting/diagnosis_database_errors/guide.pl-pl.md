@@ -5,7 +5,7 @@ updated: 2023-10-26
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -18,7 +18,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -30,6 +30,8 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 ## W praktyce
 
 ### "Błąd podczas logowania do bazy danych"
+
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Zweryfikuj zdarzenia w trakcie
 
@@ -96,7 +98,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 Otrzymałeś e-mail z naszych usług informujący, że ilość danych na Twojej bazie przekracza dozwolony limit. Twoja baza została przeczytana w trybie tylko do odczytu. Dzięki temu nie można wprowadzać modyfikacji na Twojej stronie WWW.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 Odblokuj bazę danych na trzy sposoby:
 
@@ -154,7 +156,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wskazuje, że Twój serwer [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 W tej sytuacji możesz zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#zmiana-oferty-serwera-baz-danych) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
 
@@ -186,7 +188,7 @@ Upewnij się, że baza danych jest pusta w zakładce `Bazy danych`{.action} odpo
 
 Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-twojej-kopii-zapasowej-w-panelu-klienta):
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud. W razie potrzeby skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
 
@@ -278,7 +280,7 @@ Sprawdź nazwę serwera, który chcesz zarejestrować w [Panelu klienta OVHcloud
 > Jeśli chcesz zalogować się do bazy danych na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), nazwa serwera, która ma zostać wprowadzona jest w zakładce `Informacje ogólne`{.action}, w części `Informacje na temat połączenia`{.action}, `SQL`{.action} i w sekcji `Nazwa hosta`{.action}.
 >
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

@@ -11,7 +11,7 @@ Activez AMD SME sur votre serveur Ubuntu 20.04 et créez une machine virtuelle K
 ## Prérequis
 
 - Un serveur dédié avec d'un processeur Epyc AMD Naples/Rome
-- Accès administratif (root) au serveur avec SSH
+- Accès administratif (sudo) au serveur avec SSH
 - Ubuntu 20.04 installé
 
 ## En practique

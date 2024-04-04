@@ -1,20 +1,20 @@
 ---
 title: Using the OVHcloud Managed Kubernetes LoadBalancer
 excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
-updated: 2022-10-31
+updated: 2024-01-04
 ---
 
 ## Objective
 
-In this tutorial we are explaining how to deploy services on OVHcloud Managed Kubernetes service using our `LoadBalancer` to get external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantages. Then we will see a complete example of `LoadBalancer` service deployment.
+In this tutorial we are explaining how to use services on OVHcloud Managed Kubernetes service to expose your app by getting external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantages. Then we will see a complete example of `LoadBalancer` service deployment.
 
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
 > [!warning]
-> When a **LoadBalancer** Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your Kubernetes application.
-> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/asia/public-cloud/prices/#network)
+> When a **LoadBalancer** Service resource is created inside a Managed Kubernetes cluster, a Load Balancer for a Managed Kubernetes Service is automatically created, allowing public access to your Kubernetes application.
+> The Load Balancer for a Managed Kubernetes Service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following [page](https://www.ovhcloud.com/asia/public-cloud/prices/#2034).
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
@@ -76,7 +76,22 @@ The `LoadBalancer` is the best option for a production environment, with two cav
 > [!primary]
 > There is a limit of 200 active `LoadBalancer` per Openstack project (also named Openstack tenant). This limit can be exceptionally raised upon request through our support team.
 
+### Supported Load Balancers
+
+OVHcloud currently provides two types of load balancers that can be used with Managed Kubernetes Services:
+
+- [Load Balancer for Managed Kubernetes](https://www.ovhcloud.com/asia/public-cloud/load-balancer-kubernetes/), this load balancer type can only be used to expose resources of a Managed Kubernetes Service. It supports up to 2000 requests/second and a 200Mbits/s bandwidth.  
+- [Public Load Balancer](https://www.ovhcloud.com/asia/public-cloud/load-balancer/), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly (public-to-private or public-to-public) using [Floating IPs](https://www.ovhcloud.com/asia/public-cloud/floating-ip/), the possibility to collect metrics and TCP/UDP protocols.
+
+> [!warning] 
+> Usage of the [Public Load Balancer](https://www.ovhcloud.com/asia/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Alpha phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.com/channels/850031577277792286/1143208429872226325).
+
 ### Supported annotations
+
+> [!primary] 
+> This part of the documentation applies to [Load Balancer for Managed Kubernetes](https://www.ovhcloud.com/asia/public-cloud/load-balancer-kubernetes/).
+>
+> A dedicated documentation for [Public Load Balancer](https://www.ovhcloud.com/asia/public-cloud/load-balancer/) will be published with the release of the Beta phase.
 
 There are several annotations available to customize your load balancer:
 

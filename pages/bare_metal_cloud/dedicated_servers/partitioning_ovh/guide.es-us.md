@@ -11,7 +11,7 @@ updated: 2023-08-31
 > This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on RAID software as well as Logical volume management (LVM)
 >
 
-With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/es/bare-metal/), you can configure Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](https://ca.api.ovh.com/) as well as the [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://ca.api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
+With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/es/bare-metal/), you can configure Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](https://ca.api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://ca.api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
 
 Providing in-depth details about partitioning can help customers understand why:
 
@@ -153,7 +153,8 @@ A partition layout is a list of partitions. Here is an example of a partition st
 
 > [!primary]
 >
-> >
+> order: is the partition order within the partition array
+>
 
 > [!primary]
 >
@@ -234,7 +235,7 @@ Basic customer input data errors are directly handled by the OVHcloud API. This 
 
 Customer input data related to partitioning might be too specific to be checked by the OVHcloud API and therefore require **pre-processing**. The drawback is that customers are notified later during the OS installation process.
 
-Within the [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
+Within the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
 From the [OVHcloud API](https://ca.api.ovh.com/), this status can be obtained with the following API call:
 
 > [!api]
@@ -261,11 +262,11 @@ The following table gives an overview of well known customer errors and how to f
 |Error message|Details|Solution(s)|
 |---|---|---|
 |Some Linux distributions such as RHEL family OSes don't support those mountpoints / mountpoint reserved/managed by OVHcloud (`list forbidden mountpoints`). Please remove those mountpoints and restart an installation|- You have chosen `/boot/efi` as mountpoint. OVHcloud will create this partition automatically for you if your server needs one<br />- You have chosen a mountpoint that is symlinked on some operating systems. See [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/fhs.shtml) for more details.|- Choose another mountpoint for the partition or remove this partition from your partitioning layout|
-|Partition of type `t` with mountpoint `m` cannot fill the disk.|- You have chosen the `swap` partition to fill the disk (or partition with size 0 when defined within the [OVHcloud API](https://api.ovh.com/)), we disallow this to avoid creating unnecessarily large `swap` partitions|- Set a fixed size for the `swap` partition|
+|Partition of type `t` with mountpoint `m` cannot fill the disk.|- You have chosen the `swap` partition to fill the disk (or partition with size 0 when defined within the [OVHcloud API](https://ca.api.ovh.com/)), we disallow this to avoid creating unnecessarily large `swap` partitions|- Set a fixed size for the `swap` partition|
 |Missing `/` partition. Please add a `/` partition in your partition scheme!|- Any Linux-based OS needs at least a `/` partition|- Add a `/` partition in your partitioning layout|
-|`message`. Please adjust partitions so that the `p` partition fits on `n` disk(s)|- You have chosen a partition with a RAID that requires a number of disks that your server can provide, but some disks are already full because of other partitions and/or this current partition|- If it is not already set on another partition, set the partition size to fill the disk (or partition with size 0 when defined within the [OVHcloud API](https://api.ovh.com/))<br />- Reduce the size of this partition so that it fits the disks<br />- Reduce the size of other partitions so that this partition fits the disks|
+|`message`. Please adjust partitions so that the `p` partition fits on `n` disk(s)|- You have chosen a partition with a RAID that requires a number of disks that your server can provide, but some disks are already full because of other partitions and/or this current partition|- If it is not already set on another partition, set the partition size to fill the disk (or partition with size 0 when defined within the [OVHcloud API](https://ca.api.ovh.com/))<br />- Reduce the size of this partition so that it fits the disks<br />- Reduce the size of other partitions so that this partition fits the disks|
 |Error with MBR partition table: Partition `p` is larger than 2TiB and this server does not support GPT|- You have defined a partition with a size that exceeds 2TiB and you are trying to apply such partitioning to a server that doesn't support GPT|- Reduce the partition to a size less than 2TiB<br />- Apply this partitioning to another similar server that supports GPT<br />- If you are using [customer templates](#customertemplates) to apply a partitioning with partitions larger than 2TiB to GPT-compatible and GPT-incompatible servers, you should create two separate [customer templates](#customertemplates). One template can have partitions that exceed 2TiB and should be used with GPT-compatible servers, the other template must have smaller partitions and should be used with servers that are not compatible with GPT|
-|Error with MBR partition table: partition `p` cannot end after 2 TiB (`interval stop`) and this server does not support GPT! OVHcloud also needs to add a `cloud-init size` cloud-init partition at the very end of the disk. Therefore all customer partitions must end before (2TiB - `cloud-init size`).|- We need to add a config-drive partition at the end of 1 disk on your dedicated server. The last partition of your partitioning will end after the 2TiB position on disk. So appending a config-drive partition after the last partition will start after 2TiB position on disk and you are trying to apply such partitioning to a server that doesn't support GPT|- Reduce the partition `p` size (or any other partition) so that the total sum of all partitions size is less than 2TiB<br />- Do not define a partition that fills the disk (or partition with size 0 when defined within the [OVHcloud API](https://api.ovh.com/)) on a [customer template](#customertemplates) that will be used for servers with disks bigger than 2TiB that don't support GPT|
+|Error with MBR partition table: partition `p` cannot end after 2 TiB (`interval stop`) and this server does not support GPT! OVHcloud also needs to add a `cloud-init size` cloud-init partition at the very end of the disk. Therefore all customer partitions must end before (2TiB - `cloud-init size`).|- We need to add a config-drive partition at the end of 1 disk on your dedicated server. The last partition of your partitioning will end after the 2TiB position on disk. So appending a config-drive partition after the last partition will start after 2TiB position on disk and you are trying to apply such partitioning to a server that doesn't support GPT|- Reduce the partition `p` size (or any other partition) so that the total sum of all partitions size is less than 2TiB<br />- Do not define a partition that fills the disk (or partition with size 0 when defined within the [OVHcloud API](https://ca.api.ovh.com/)) on a [customer template](#customertemplates) that will be used for servers with disks bigger than 2TiB that don't support GPT|
 |`/boot` (or `/` if no `/boot` defined) partition cannot be larger than 2097151 MiB on this hardware|- GRUB partition cannot be larger than 2 TiB with this hardware raid controller|- Create a separate `/boot` partition with a size less than 2TiB (1GiB should be enough)|
 |`/boot` (or `/` if no `/boot` defined) partition type cannot be `XFS`|- GRUB partition doesn't support `XFS` filesystem type on this Operating System. This is the case for most of debian-like OSes (debian, proxmox, ubuntu)|- Create a separate `/boot` partition with filesystem other than `XFS`<br />- Don't create a separate `/boot` partition but choose a filesystem other than `XFS` for the `/` partition|
 |`ZFS` partition already exists with zpool name `n`. Either choose another name for the `m` partition or set the same RAID level for all partitions within zpool `n`|Assigning multiple `ZFS` partitions to the same zpool name is possible: it means each dataset will be part of the same zpool. This is possible only if all the datasets (therefore the partitions defined via the API) have the same RAID level|- Set the same RAID level as on the existing `ZFS` partition which will be part of the same zpool<br />- Choose another zpool name: this partition will not be part of the same zpool<br />- Don't provide any zpool name: we will assign a default zpool name and this partition will not be part of the same zpool|
@@ -286,11 +287,11 @@ In order to improve customer experience, reduce OVHcloud support workload and to
 
 ## Go further <a name="gofurther"></a>
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
-
-[Choosing the disk group to install an operating system](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

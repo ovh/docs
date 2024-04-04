@@ -5,7 +5,7 @@ updated: 2023-06-01
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -45,7 +45,7 @@ Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](
 
 Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 
-![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
+![ftpconnect](images/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +75,7 @@ Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stroni
 
 Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
+![ftpconnect](images/change-password.png){.thumbnail}
 
 W tym momencie dysponujesz wszystkimi elementami pozwalającymi na zalogowanie się do przestrzeni dyskowej FTP.
 
@@ -96,11 +96,11 @@ Aby zalogować się do Twojej przestrzeni dyskowej FTP za pomocą "FTP Explorer"
 
 W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting, przejdź do zakładki `FTP - SSH`{.action} i kliknij na przycisk `FTP Explorer`{.action}.
 
-![ftpconnect](images/connect-ftp-step3.png){.thumbnail}
+![ftpconnect](images/ftp-explorer.png){.thumbnail}
 
 Na nowej stronie, która się pojawi, wprowadź Twój identyfikator FTP oraz hasło, a następnie zaloguj się. Jeśli wprowadzone dane są poprawne, Twoja przestrzeń dyskowa się wyświetla.
 
-![ftpconnect](images/connect-ftp-step4.png){.thumbnail}
+![ftpconnect](images/login-interface.png){.thumbnail}
 
 #### 2. Logowanie przez program FTP <a name="ftpsoftware"></a>
 
@@ -156,7 +156,7 @@ Jeśli wprowadzone dane są poprawne, otrzymasz dostęp do przestrzeni FTP.
 
 Skorzystaj z naszej dokumentacji "[Korzystanie z połączenia SSH na hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)", jeśli to konieczne.
 
-![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
+![ftpconnect](images/terminal-ssh-connected.png){.thumbnail}
 
 ## Sprawdź również
 

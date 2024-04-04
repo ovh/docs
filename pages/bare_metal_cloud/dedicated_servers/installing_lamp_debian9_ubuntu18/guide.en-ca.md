@@ -1,5 +1,5 @@
 ---
-title: Setting up a web server (LAMP) on Debian or Ubuntu
+title: How to set up a web server (LAMP) on Debian or Ubuntu
 excerpt: Find out how to configure a LAMP-based web server
 updated: 2023-05-10
 ---

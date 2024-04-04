@@ -70,7 +70,7 @@ Der Assistent zeigt nun Informationen zur Konfiguration der gewünschten Nutzung
 >![Domain hinzufügen](images/add_domain_exchange_authoritative.png){.thumbnail}
 >
 
-> [!warnung]
+> [!warning]
 >
 > Wenn Sie beim Hinzufügen Ihres Domainnamens zu Ihrer E-Mail-Plattform die Meldung „**autoritative Domain erkannt**“ erhalten, bedeutet dies, dass dieser Domainname auf einer anderen E-Mail-Plattform im **autoritativen** Modus deklariert ist. Sie müssen es auf beiden Plattformen in den **nicht autorisierenden** Modus schalten, damit sie koexistieren können.
 
@@ -123,7 +123,7 @@ Wenn Sie eine Domain aus Ihrem Exchange oder E-Mail Pro Dienst entfernen möchte
 >
 > Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung ["Ihre E-Mail-Adresse manuell migrieren"](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
 
-Gehen Sie zum Tab `Assoziierte Domains`{.action} Ihres Dienstes. In der Tabelle gibt die `Spalte` Accounts die Anzahl der Accounts an, die Ihren Domainnamen zugewiesen sind.
+Gehen Sie zum Tab `Assoziierte Domains`{.action} Ihres Dienstes. In der Tabelle gibt die Spalte `E-Mail Accounts` die Anzahl der Accounts an, die Ihren Domainnamen zugewiesen sind.
 
 ![emailpro](images/add_domain_exchange_step6.png){.thumbnail}
 
@@ -134,7 +134,7 @@ Wenn E-Mail-Accounts die Domain verwenden, die Sie abtrennen möchten, haben Sie
     Im Bearbeitungsfenster können Sie die mit dem Account verbundene Domain über das Drop-down-Menü ändern.
     ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
 
-- **Konten Ihres Dienstes löschen**: Gehen Sie in den Tab `E-Mail Accounts`{.action}. Klicken Sie rechts neben dem zu löschenden Account auf den Button `...`{.action} und dann `Diesen Account zurücksetzen`{.action} oder `Zurücksetzen`{.action}.
+- **Accounts Ihres Dienstes löschen**: Gehen Sie in den Tab `E-Mail Accounts`{.action}. Klicken Sie rechts neben dem zu löschenden Account auf den Button `...`{.action} und dann `Diesen Account zurücksetzen`{.action} oder `Zurücksetzen`{.action}.
     ![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
 
 Sobald die Accounts einer anderen Domain zugewiesen wurden oder die Zurücksetzung abgeschlossen ist, kann die Domain gelöscht werden. 

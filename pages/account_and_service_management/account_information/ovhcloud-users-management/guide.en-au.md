@@ -1,21 +1,21 @@
 ---
 title: 'Managing users'
 excerpt: 'Find out how to manage users via your OVHcloud account'
-updated: 2023-07-19
+updated: 2024-03-05
 ---
 
 ## Objective
 
-With OVHcloud, you can create additional users with read or write access to your customer account. This means that you can grant other members of your company access to your OVHcloud services, without having to resort to risky practices like sharing passwords or two-factor authentication details.
+With OVHcloud, you can create additional local users with read or write access to your customer account. This means that you can grant other members of your company access to your OVHcloud services, without having to resort to risky practices like sharing passwords or two-factor authentication details.
 
 > [!primary]
 >
-> User management is different to contact management. A user will have an access to all sections of the OVHcloud Control Panel according to the level of rights he's granted.
+> User management is different from contact management. A user will have an access to all sections of the OVHcloud Control Panel according to the level of rights granted.
 >
 > The purpose of contact management is to delegate full management of the administrative, technical and billing aspects of one or more services on your OVHcloud account. For further information on contact management, please refer to [this guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
-**This guide details the privileges a user can hold, as well as the method for adding and managing users.**
+**This guide details the privileges a local user can hold, as well as the method for adding and managing users.**
 
 ## Requirements
 
@@ -23,6 +23,10 @@ With OVHcloud, you can create additional users with read or write access to your
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
+
+### Understanding identities
+
+Local users are one of the types of identities that can be set up on your OVHcloud account. Other account types are described in the [related documentation](/pages/manage_and_operate/iam/identities-management).
 
 ### User management
 
@@ -38,12 +42,20 @@ A window will pop up, and you will need to complete the required fields. Click `
 ![users-management](images/usersmanagement2.png){.thumbnail}
 
 | Field | Details |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | ID | Enter the user’s name or their role, for example. |
 | Email | Enter the user’s full email address. |
 | Password | Set the user password. The user can then change this password once their access has been created. <br>We also suggest reading our [guide on password management](/pages/account_and_service_management/account_information/manage-ovh-password) to define this password. |
-| Group | Choose a group from those available. |
+| Group | Choose a group from those available (see table below). |
 | Description | You can add a user description (such as their role within the company). |
+
+**Default group details:**
+
+| Role | Details |
+|--|--|
+| UNPRIVILEGED (Read-Only) | Gives read access to the OVHcloud Control Panel and all of its sections. |
+| DEFAULT (Restricted Admin) | Gives write access to the OVHcloud Control Panel and all of its sections, **except for** user management. |
+| ADMIN (Administrator) | Gives write access to the OVHcloud Control Panel and all of its sections, **including** user management. |
 
 The user then gets their own ID made up of your account’s numeric ID (which is listed in the “User management” menu) and their username, with the two values separated by a “/”.
 
@@ -73,14 +85,14 @@ On the `User management`{.action} tab, click on `Declare a group`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 
-A window will pop up and you will need to complete the required fields. Click `Confirm`{.action} to create the user.
+A window will pop up and you will need to complete the required fields. Click `Confirm`{.action} to create the group.
 
 ![users-management](images/usersmanagement8.png){.thumbnail}
 
 Groups give a default privilege level for the users they contain, according to the role you choose:
 
 | Role | Details |
-|------------------|----------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | None | Gives no access to the OVHcloud Control Panel if no IAM policy is set up. |
 | Read-Only | Gives read access to the OVHcloud Control Panel and all of its sections. |
 | Restricted Admin | Gives write access to the OVHcloud Control Panel and all of its sections, **except for** user management. |

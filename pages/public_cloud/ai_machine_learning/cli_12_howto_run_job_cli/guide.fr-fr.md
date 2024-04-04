@@ -160,4 +160,62 @@ In our example we do not require any environment variable.
 
 It is also possible to override the default CMD of Entrypoint of the Docker image, simply add the new command at the end of the job run request.
 To make sure flags from your command are not interpreted as `ovhai` parameters you can prefix your command by `--`.
-To simply print `Hello World` the c
+To simply print `Hello World` the command would be:
+
+``` {.console}
+ovhai job run ubuntu -- echo 'Hello World'
+```
+
+When a job is running a `job_url` is associated to it that allows you to access any service exposed in your job. By default, the exposed port for this url is the `8080`, in our case the Jupyter Notebook is directly exposed on `8080` and we do not need to override it.
+However, if you are running an experiment and monitoring it with Tensorboard the default port should be `6006`, you can override the port with:
+
+``` {.console}
+--default-http-port 6006
+```
+
+### Extra options
+
+A few other options are available for your jobs.
+
+-   `--timeout` timeout after which the job will stop even if the process in the job did not end, helps you control your consumption
+-   `--label` free labels to help you organize your jobs, labels are also used to scope `app_token`, learn more about `app_token` and how to create them [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli)
+-   `--read-user` you can add a `read-user` to a job, a read user will only have access to the service exposed behind the `job_url`. The read-user must match with the username of an AI Platform user with an `AI Training read` role.
+-   `--ssh-public-keys` allows you to access your job through SSH, it is particularly useful to [setup a VSCode Remote](/pages/public_cloud/ai_machine_learning/training_tuto_04_vscode_remote)
+-   `--from` run a job based on the specification of a previous one. All options will override the base job values. The `--image` is the flag used to override the image of the base job.
+
+### Run a job
+
+Finally, to submit a notebook job with 1 GPU, a dataset container and an output container we run
+
+``` {.console}
+ovhai job run --gpu 1 
+-v dataset@GRA:/workspace/dataset:ro:cache 
+-v output@GRA:/workspace/output:rw 
+ovhcom/ai-training-transformers:3.1.0
+```
+
+You can then follow the progress of all your jobs using the following commands:
+
+``` {.console}
+ovhai job ls
+```
+
+If you want to fetch the specific job you just selected, retrieve its `ID` and then:
+
+``` {.console}
+ovhai job get <job-id>
+```
+
+For more information about the job and its lifecycle refer to the [jobs page](/pages/public_cloud/ai_machine_learning/training_guide_03_concepts_jobs).
+
+## Going further
+
+To know more about the CLI and available commands to interact with your job check out the [overview of `ovhai`](/pages/public_cloud/ai_machine_learning/cli_15_commands_reference)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 

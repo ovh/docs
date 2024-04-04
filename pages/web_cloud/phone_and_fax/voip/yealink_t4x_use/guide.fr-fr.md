@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser le Yealink T4X'
 excerpt: 'Découvrez comment utiliser votre téléphone Yealink T4X'
-hidden: true
+flag: hidden
 updated: 2018-05-30
 ---
 

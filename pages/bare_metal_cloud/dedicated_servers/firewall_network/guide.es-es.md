@@ -1,7 +1,7 @@
 ---
-title: 'Configurar el firewall de red'
-excerpt: 'Cómo configurar el Network Firewall'
-updated: 2023-05-10
+title: 'Activación y configuración del Edge Network Firewall'
+excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
+updated: 2024-01-05
 ---
 
 > [!primary]
@@ -10,20 +10,24 @@ updated: 2023-05-10
 
 ## Objetivo
 
+Para proteger los servicios dde sus clientes expuestos en direcciones IP públicas, OVHcloud ofrece un firewall sin estado configurado e integrado en la **infraestructura anti-DDoS**: el Edge Network Firewall. Permite limitar la exposición de los servicios a los ataques DDoS, eliminando determinados flujos de red procedentes de fuera de la red de OVHcloud.
+
 Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Network Firewall. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
-**Esta guía explica cómo configurar el Network Firewall.**
+**Esta guía le mostrará cómo configurar el Edge Network Firewall para sus servicios.**
 
 > [!primary]
 >
 > Para más información sobre la solución anti-DDoS de OVHcloud, consulte la página <https://www.ovhcloud.com/es-es/security/anti-ddos/>.
 > 
 
-![El VAC en detalle](images/vac-inside.png){.thumbnail}
+| ![global-schema](images/global_schema.png) |
+|:--:|
+| Diagrama de los servicios de protección de juegos e infraestructuras anti-DDoS en OVHcloud |
 
 ## Requisitos
 
-- Tener contratado un servicio de OVHcloud que utilice el Network Firewall ([Servidores Dedicados](https://www.ovhcloud.com/es-es/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/es-es/vps/){.external}, [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}, etc.).
+- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/es-es/vps/){.external}, [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}, etc.).
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]
@@ -33,128 +37,174 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Procedimiento
 
-### Activar el Network Firewall 
+El Edge Network Firewall reduce la exposición a los ataques DDoS de red, ya que permite a los usuarios copiar algunas de las reglas del firewall del servidor en el perímetro de la red de OVHcloud. Esto bloquea los ataques entrantes lo más cerca posible de su origen, reduciendo el riesgo de saturación de los recursos del servidor o de las conexiones al rack en caso de ataques importantes.
+
+### Activar el Edge Network Firewall
 
 > [!primary]
 >
-> El Network Firewall protege la dirección IP asociada a un servidor. Por lo tanto, si tiene un servidor con varias direcciones IP, debe configurar cada IP de forma independiente. No es posible realizar la configuración global del servidor.
+> El Edge Network Firewall protege una IP específica asociada a un servidor (o servicio). Por lo tanto, si tiene un servidor con varias direcciones IP, debe configurar cada IP por separado.
 > 
 
-Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `Network`{.action}. Haga clic en `IP`{.action}.<br>
+Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action}, haga clic en el menú `Network`{.action} y abra la sección `IP`{.action}.<br>
 
 Puede utilizar el menú desplegable "Mis direcciones IP públicas y servicios asociados" para filtrar sus servicios por categorías.
 
-![filter service](images/selectservice.png){.thumbnail}
+![filter service](images/selectservice_cut.png){.thumbnail}
 
-A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente y seleccione `Crear firewall`{.action}.
+A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente y seleccione primero `Crear firewall`{.action}.
 
 ![Activación del firewall de red](images/firewallcreation2022.png){.thumbnail}
 
-Confirme la operación haciendo clic en `Aceptar`{.action}.
-
-![Confirmación](images/creationvalid.png){.thumbnail}
-
-Una vez creado el firewall, es necesario activarlo y configurarlo. Para ello, vuelva a hacer clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 y seleccione `Activar el firewall`{.action} (1). Repita el proceso y seleccione `Configurar el firewall`{.action} (2).
-
-![Activación de la configuración](images/activationconfig.png){.thumbnail}
-
-Es posible añadir hasta **20 reglas por IP**.
-
-> [!warning]
->
-> Si el Network firewall está configurado con reglas, estas reglas se aplican automáticamente a cada ataque DDoS. El firewall no puede desactivarse hasta que haya finalizado el ataque, por lo que es importante mantener las reglas de firewall actualizadas.
-> Las IP de OVHcloud no tienen ninguna regla configurada por defecto, por lo que pueden establecerse todas las conexiones.
-> No olvide comprobar regularmente sus reglas de firewall (si las tiene), aunque lo haya desactivado.
-> 
+A continuación, se le pedirá que confirme. Se creará el firewall y podrá configurar las reglas.
 
 > [!primary]
 >
-> - La fragmentación UDP está bloqueada (DROP) por defecto. Si utiliza una VPN, al activar el firewall de red no olvide configurar correctamente su MTU (unidad de transmisión máxima). Por ejemplo, en OpenVPN, puede marcar `MTU test`{.action}.
-> - El firewall de red no actúa dentro de la red de OVHcloud, por lo que las reglas creadas no afectan a las conexiones internas.
+> El botón `Crear firewall`{.action} solo estará disponible para las IP que nunca hayan configurado un firewall. Si no es la primera vez que configura el firewall, puede omitir este paso.
 >
 
-### Configurar el Network Firewall
+| ![Habilitando la configuración](images/activationconfig.png) |
+|:--:|
+| Haga clic en `Configuración del Edge Network Firewall`{.action} para empezar a configurarlo. |
+
+En esta página puede elegir entre **Activar** o **Desactivar** el firewall utilizando el botón del switch.
+También es posible hacerlo de otra manera explicada a continuación.
+
+Puede configurar hasta **20 reglas por IP**.
 
 > [!warning]
-> Tenga en cuenta que el Network Firewall de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe utilizar el cortafuegos del sistema operativo instalado en el servidor.<br>
-> Para más información, consulte las siguientes guías: [Configurar el firewall de Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) y [Configurar el firewall de Linux con iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
-
-Para añadir una regla, haga clic en el botón `Añadir una regla`{.action}.
-
-![Añadir una regla](images/addarule2022.png){.thumbnail}
-
-Para cada regla es necesario seleccionar:
-
-- la prioridad (de 0 a 19, siendo 0 la primera regla en aplicarse)
-- una acción (`Denegar`{.action} o `Autorizar`{.action})
-- el protocolo
-- una IP de origen (opcional)
-- el puerto de origen (TCP y UDP)
-- el puerto de destino (TCP y UDP)
-- las opciones TCP (solo TCP)
-
-![Añadir una regla](images/ajoutregle4.png){.thumbnail}
+> El Edge Network Firewall se activa automáticamente cuando se detecta un ataque DDoS y no puede desactivarse hasta que finalice el ataque. Como resultado, todas las reglas configuradas en el firewall se aplican durante la duración del ataque. Esta lógica permite a nuestros clientes descargar las reglas del firewall del servidor al borde de la red de OVHcloud mientras dure el ataque.
+>
+> Tenga en cuenta que debe configurar sus propios firewalls locales aunque se haya configurado el Edge Network Firewall, ya que su función principal es gestionar el tráfico procedente de fuera de la red de OVHcloud.
+>
+> Si ha configurado algunas reglas, le recomendamos que las compruebe con regularidad o cuando cambie el funcionamiento de sus servicios. Como se mencionó anteriormente, el Edge Network Firewall se activará automáticamente en caso de ataque DDoS, incluso cuando esté desactivado en la configuración IP.
+>
 
 > [!primary]
 >
-> - Prioridad 0: Se recomienda autorizar el protocolo TCP en todas las direcciones IP con la opción `ESTABLISHED`{.action}. Dicha opción permite comprobar que el paquete pertenece a una sesión abierta anteriormente (ya iniciada). Si no autoriza esta opción, el servidor no recibirá las respuestas para el protocolo TCP de las peticiones SYN/ACK.
-> - Prioridad 19: Se recomienda bloquear todo el protocolo IPv4 si no se cumple ninguna de las reglas anteriores.
-> 
+> - La fragmentación UDP está bloqueada (DROP) por defecto. Cuando habilite el Edge Network Firewall, si está usando una VPN, recuerde configurar correctamente la unidad de transmisión máxima (MTU). Por ejemplo, con OpenVPN, puede comprobar `MTU test`.
+> - El Edge Network Firewall (ENF) integrado en los centros de limpieza (*scrubbing centres* o VAC) solo gestiona el tráfico de red procedente de fuera de la red de OVHcloud.
+>
+
+### Configurar el Edge Network Firewall
+
+> [!warning]
+> Tenga en cuenta que el Edge Network Firewall de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe pasar por el cortafuegos del sistema operativo instalado en el servidor.
+>
+> Para más información, consulte las siguientes guías: [Configuración del firewall en Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) y [Configuración del firewall en Linux con iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
+>
+
+**Para añadir una regla:**
+
+| ![add-rule-btn](images/enf_add_rule.png) |
+|:--:|
+| Haga clic en `Añadir una regla`{.action}. |
+
+Para cada regla (excluyendo TCP), debe elegir:
+
+| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) |
+|:--|
+| &bull; Una prioridad (de 0 a 19, siendo 0 la primera regla que se aplica, seguida de las demás) <br>&bull; Una acción (`Aceptar`{.action} o `Denegar`{.action}) <br>&bull; El protocolo <br>&bull; IP de origen (opcional) |
+
+Para cada regla **TCP**, debe elegir:
+
+| ![add-rule-btn](images/enf_add_rule_tcp.png) |
+|:--|
+| &bull; Una prioridad (de 0 a 19, siendo 0 la primera regla que se aplica, seguida de las demás) <br>&bull; Una acción (`Aceptar`{.action} o `Denegar`{.action}) <br>&bull; El protocolo <br>&bull; IP de origen (opcional) <br>&bull; El puerto de origen (opcional) <br>&bull; El puerto de destino (opcional) <br>&bull; El estado TCP (opcional) <br>&bull; Fragmentos (opcional)|
+
+> [!primary]
+> Le recomendamos que autorice el protocolo TCP con una opción `established` (para los paquetes que forman parte de una sesión previamente abierta/iniciada), los paquetes ICMP (para ping y traceroute) y, opcionalmente, las respuestas DNS UDP de los servidores externos (si utiliza servidores DNS externos).
+>
+> **Ejemplo de configuración:**
+>
+> - Prioridad 0: Autorizar TCP `established`
+> - Prioridad 1: Autorizar UDP, puerto de origen 53
+> - Prioridad 2: Autorizar ICMP
+> - Prioridad 19: Denegar la IPv4
+
+> [!warning]
+> Las configuraciones de firewall con reglas de modo "Aceptar" únicamente no son efectivas en absoluto. Debe haber una instrucción acerca del tráfico que debe interrumpir el firewall. Verá una advertencia a menos que se cree la regla "Denegar".
+>
+
+**Activar el firewall:**
+
+| ![activate-desactivate](images/enf_enabled_button_01.png) |
+|:--:|
+| `Activar`{.action} para activar |
+
+Después de la confirmación, el firewall se activará.
+
+**Desactivar el firewall:**
+
+| ![activate-desactivate](images/enf_enabled_button_04.png) |
+|:--:|
+| `Activar`{.action} para activar |
+
+Después de la confirmación, el firewall se desactivará.
+
+Tenga en cuenta que las reglas se desactivan hasta que se detecta un ataque y, a continuación, se activan. Esta lógica se puede utilizar para reglas que sólo están activas cuando entra un ataque repetido conocido.
 
 ### Ejemplo de configuración
 
-Para dejar abiertos únicamente los puertos SSH (22), HTTP (80), HTTPS (443) y UDP (10000), autorizando el ICMP, utilice las reglas de la siguiente imagen:
+Para asegurarse de que sólo se dejan abiertos los puertos estándar para SSH (22), HTTP (80), HTTPS (443) y UDP (53) al autorizar ICMP, siga las reglas siguientes:
 
 ![Ejemplo de configuración](images/exemple.png){.thumbnail}
 
-Las reglas se ordenan cronológicamente de 0 (la primera regla leída) a 19 (la última regla leída). La cadena deja de recorrerse en el momento en el que pueda aplicarse una regla al paquete recibido.
+Las reglas se ordenan de 0 (la primera regla leída) a 19 (la última). La cadena de reglas se detiene en cuanto se aplica una regla al paquete.
 
-Por ejemplo, para un paquete destinado al puerto 80/TCP, se aplicará la regla 2 y ya no se leerán las siguientes. Para un paquete destinado al puerto 25/TCP, no se aplicará ninguna regla hasta la última (la 19), que lo bloqueará, ya que las anteriores no autorizan ninguna comunicación en el puerto 25.
-
-> [!warning]
-> Como ya se ha indicado, la configuración anterior es solo un ejemplo y debe utilizarse como referencia si las reglas no se aplican a los servicios alojados en el servidor. Es absolutamente necesario configurar las reglas de su firewall en función de los servicios alojados en su servidor. Una mala configuración de sus reglas de firewall puede provocar el bloqueo del tráfico legítimo y la inaccesibilidad de los servicios del servidor.
->
-
-### Mitigación
-
-Nuestra solución anti-DDoS (VAC) incluye tres modos de mitigación: automática, permanente o forzada.
-
-**Mitigación automática (detección permanente)**: por defecto, todas las IP de OVHcloud están sujetas a mitigación automática.  Con este modo, el tráfico pasa por el sistema de mitigación únicamente si se detecta que es "inusual" en relación con el tráfico normal recibido por el servidor.
-
-**Mitigación permanente**: este modo puede activarse o desactivarse desde el área de cliente. Con la mitigación permanente (si está activada), aplica un primer nivel de filtrado constante a través de nuestro Shield hardware.<br>
-Todo el tráfico pasa permanentemente por el sistema de mitigación antes de llegar al servidor. Recomendamos este modo para los servicios que sean objeto de ataques frecuentes.<br>
-Tenga en cuenta que la mitigación permanente forma parte de nuestra solución anti-DDoS (VAC). Puede activarla en su IP sin activar el Network Firewall.
-
-Para activarlo, haga clic en el menú `Bare Metal Cloud`{.action}, abra `Network`{.action} y haga clic en `IP`{.action}. A continuación, haga clic en los `...`{.action} a la derecha de la IPv4 correspondiente y seleccione `Mitigación: modo permanente`{.action}.
-
-**Mitigación forzada**: este modo se activa automáticamente en cuanto se detecta un ataque en el servidor. Una vez activado en nuestra infraestructura anti-DDoS, este modo no puede desactivarse. Para proteger nuestra infraestructura, la protección se activará durante todo el ataque, hasta que sea totalmente mitigado.
+Por ejemplo, la regla 2 interceptará un paquete para el puerto TCP 80 y no se aplicarán las reglas siguientes. Un paquete para el puerto TCP 25 sólo será capturado por la última regla (19), que lo bloqueará porque el firewall no permite la comunicación en el puerto 25 en las reglas anteriores.
 
 > [!warning]
->
-> Si nuestra solución anti-DDoS limita un ataque, las reglas configuradas de su Network Firewall se aplicarán finalmente, aunque haya desactivado el firewall. Si desea que no se aplique ninguna regla durante un ataque, debe eliminar toda regla previamente creada.
-> 
-> La mitigación está integrada en nuestra solución anti-DDoS (VAC), por lo que no puede desactivarse en un servicio. Todos los productos de OVHcloud se entregan con la protección anti-DDoS.
-
-### Configurar el firewall de red Armor (Firewall Game)
-
-> [!primary]
-> Por defecto, el cortafuegos Armor está preconfigurado con algunas reglas que OVHcloud ha determinado que funcionan con los juegos más comunes. Sin embargo, para los clientes que dispongan de un servidor dedicado Game, le ofrecemos la posibilidad de ir más lejos y configurar también las reglas para los puertos.
+> La configuración anterior es solo un ejemplo y solo debe utilizarse como referencia si las reglas no se aplican a los servicios alojados en su servidor. Es esencial que configure las reglas de su firewall para que coincidan con los servicios alojados en su servidor. Una configuración incorrecta de las reglas del firewall puede provocar el bloqueo del tráfico legítimo y la imposibilidad de acceder a los servicios del servidor.
 >
 
-Para configurar las reglas de sus puertos en Armor, debe conectarse primero al área de cliente de OVHcloud.<br>
-A continuación, acceda al menú `Bare Metal Cloud`{.action} , abra la sección `Network`{.action} y haga clic en `IP`{.action}. Haga clic en `...`{.action} junto a la dirección IP del servidor de juego y, seguidamente, en `Configurar el firewall « Game »`{.action}.
+### Mitigación de ataques: actividad del centro de limpieza
 
-![Game_wall](images/GAMEwall2021.png){.thumbnail}
+Nuestra infraestructura anti-DDoS (VAC) dispone de dos modos de funcionamiento: **automático** y **permanente**. El proceso de mitigación se realiza a través del centro de limpieza automatizado. Aquí es donde nuestra tecnología avanzada analiza en profundidad los paquetes e intenta eliminar el tráfico DDoS, permitiendo al mismo tiempo el paso del tráfico legítimo.
 
-En la siguiente pantalla, haga clic en el botón `Añadir una regla`{.action} para añadir una regla a Armor.
+- **Mitigación automática** es la opción por defecto: todas las IP de OVHcloud están sujetas a mitigación automática. Por lo general, esta es la mejor opción para sus servicios. En caso de que se detecte tráfico malicioso, se activa el centro de limpieza. Este estado se indica mediante el estado "Forzado" para una dirección IP determinada. En este momento, el Edge Network Firewall también está activo. La situación vuelve a la normalidad cuando se mitiga el ataque y no se observa ninguna actividad sospechosa.
 
-Es posible añadir hasta **30 reglas por IP**.
+- **Mitigación permanente** puede activarse o desactivarse desde el área de cliente de OVHcloud. Con la mitigación permanente, usted aplica permanentemente el primer nivel de filtrado para que todo el tráfico pase siempre a través del sistema de mitigación antes de llegar al servidor. No se recomienda habilitar esta opción durante períodos de tiempo más largos, a menos que experimente fluctuaciones de latencia debido a que el centro de limpieza redirige el tráfico con demasiada frecuencia.
 
-![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
+Tenga en cuenta que, en comparación con el modo automático, el nivel de protección **no** aumenta cuando este modo está activado.
 
-Active los puertos según sus necesidades en la siguiente pantalla y haga clic en el botón `Confirmar`{.action} cuando haya terminado de añadir las reglas. El firewall Armor se ha configurado correctamente.
+Para activarla, siga estos pasos:
+
+- Haga clic en el menú `Bare Metal Cloud`{.action}.
+- Vaya a `Network`{.action} en la columna izquierda.
+- Acceda a la sección `IP`{.action}.
+
+| ![menu-ipv4](images/mitigation_menu.png) |
+|:--:|
+| A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente. |
+
+| ![mitigación-opción](images/mitigation_menu_step_2.png) |
+|:--:|
+| Seleccione `Mitigación: modo permanente`{.action}. |
+
+> [!success]
+> **Sugerencias**
+>
+> Puede crear reglas de firewall que sólo se apliquen después de que se haya detectado un ataque. Para ello, deben crearse reglas de Edge Network Firewall, pero deben deshabilitarse.
+>
+
+> [!warning]
+> Si nuestra infraestructura anti-DDoS mitiga un ataque, las reglas del Edge Network Firewall se aplicarán eventualmente, incluso si ha desactivado el firewall. Si ha desactivado el firewall, recuerde eliminar también las reglas.
+>
+> Tenga en cuenta que nuestra infraestructura anti-DDoS no puede desactivarse en un servicio. Todos los productos de OVHcloud se entregan dentro del ámbito de protección y esto no se puede cambiar.
+>
+
+## Network Security Dashboard
+
+Para obtener información detallada sobre los ataques detectados y los resultados de las actividades del centro de limpieza, le recomendamos que explore nuestro [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
+
+## Conclusión
+
+Después de leer este tutorial, debería ser capaz de configurar el Edge Network Firewall para mejorar la seguridad de sus servicios de OVHcloud.
 
 ## Más información
+
+- [Protección de un servidor de juegos con el firewall de aplicaciones](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

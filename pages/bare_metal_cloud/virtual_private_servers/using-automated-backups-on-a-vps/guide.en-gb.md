@@ -19,7 +19,7 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - An OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/) already set up
-- Administrative access (root) via SSH to your VPS (optional)
+- Administrative access (sudo) via SSH to your VPS (optional)
 
 ## Instructions
 

@@ -1,11 +1,11 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia"
 excerpt: "Dowiedz się, jak za pomocą 1 kliknięcia zdiagnozować najczęstsze przypadki błędów związane z tworzeniem modułów"
-updated: 2023-11-30
+updated: 2024-03-12
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie
@@ -37,7 +37,7 @@ Jeśli konfiguracja modułu nie zostanie przeprowadzona prawidłowo, instalacja 
 
 ### Twoja domena nie jest proponowana podczas tworzenia "modułu za 1 kliknięciem"
 
-![domainenotproposed](images/domainenotproposed.png){.thumbnail}
+![domainenotproposed](images/domain-unavailable.png){.thumbnail}
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}, następnie sprawdź, czy spełnione są następujące warunki:
 
@@ -48,7 +48,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 ### "Wystąpił błąd podczas pobierania informacji (You need at least one free database)"
 
-![1freeDB](images/1freeDB.png){.thumbnail}
+![No databases available](images/message-no-db-available.png){.thumbnail}
 
 Ten komunikat pojawi się, gdy rozpoczniesz instalację "modułu za 1 kliknięciem", kiedy nie będziesz mógł lub przestanie mieć możliwości utworzenia nowej bazy danych przypisanej do Twojego hostingu.
 
@@ -58,7 +58,7 @@ Jeśli nie posiadasz już baz danych zawartych w Twoim hostingu, możesz zamówi
 
 [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW poprzez dodanie dodatkowej bazy danych. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}, następnie `Actions`{.action}, aby zamówić dodatkową bazę danych:
 
-![order_a_database](images/order_a_database.png){.thumbnail}
+![order_a_database](images/order-a-db.png){.thumbnail}
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
@@ -76,7 +76,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 
 [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij przycisk `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Oferta`, kliknij na przycisk`...`{.action} `Zmień ofertę`{.action}:
 
-![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
+![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
 Oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
 
@@ -93,7 +93,7 @@ Aby usunąć bazę danych z poziomu [Panelu klienta OVHcloud](https://www.ovh.co
 
 Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, którą chcesz usunąć, a następnie kliknij `Usuń bazę danych`{.action}:
 
-![delete_a_database](images/delete_a_database.png){.thumbnail}
+![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
@@ -123,7 +123,7 @@ Po wykonaniu wszystkich niezbędnych kopii zapasowych [usuń moduł za pomocą 1
 
 ### "Katalog instalacyjny nie jest pusty"
 
-![folder_not_empty](images/folder_not_empty.png){.thumbnail}
+![folder_not_empty](images/folder-not-empty.png){.thumbnail}
 
 Po uruchomieniu tworzenia "modułu za pomocą 1 kliknięcia" otrzymałeś wiadomość e-mail z informacją, że katalog instalacyjny "modułu za pomocą 1 kliknięcia" nie jest pusty.
 
@@ -131,7 +131,7 @@ Ten komunikat oznacza, że **Katalog główny** powiązany z Twoją nazwą domen
 
 Aby powiązać domenę z innym katalogiem, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}. W tabeli, która się wyświetli kliknij przycisk`...`{.action} po prawej stronie wiersza odpowiadającego nazwie Twojej domeny, następnie kliknij `Zmień domenę`{.action}. Na koniec podaj nazwę nowego **Katalog główny** (pusty katalog zostanie automatycznie utworzony na Twoim hostingu).
 
-![modify_root_folder](images/modify_root_folder.png){.thumbnail}
+![modify_root_folder](images/modify-domain.png){.thumbnail}
 
 Możesz również zalogować się do Twojego hostingu za pomocą protokołu [FTP](/pages/web_cloud/web_hosting/ftp_connection), a następnie usunąć zawartość folderu. Operacja ta została wykonana lokalnie lub po usunięciu pliku, poprzez przeniesienie całej jego zawartości do innego katalogu FTP.
 
@@ -145,7 +145,7 @@ Aby sprawdzić tę konfigurację, zapoznaj się z naszym przewodnikiem "[Zmień 
 
 ### "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB)"
 
-![not_enough_space](images/not_enough_space.png){.thumbnail}
+![not_enough_space](images/message-not-enough-ftp-space.png){.thumbnail}
 
 Ten komunikat oznacza, że [przestrzeń dyskowa FTP](/pages/web_cloud/web_hosting/ftp_connection) na Twoim hostingu zawiera zbyt dużą ilość danych. 
 
@@ -170,13 +170,13 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Usługa`, kliknij na przycisk `...`{.action} `Zmień ofertę`{.action}:
 
-![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
+![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
 Oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
 
 ### "Nie można połączyć się z bazą danych" <a name="delete-the-module"></a>
 
-![wrong_id_database](images/wrong_id_database.png){.thumbnail}
+![wrong_id_database](images/db-connection-failed.png){.thumbnail}
 
 Po uruchomieniu instalacji "modułu za pomocą 1 kliknięcia" w trybie zaawansowanym otrzymałeś wiadomość e-mail z informacją, że Twój "moduł za pomocą 1 kliknięcia" nie może połączyć się z wskazaną bazą danych.
 
@@ -184,7 +184,7 @@ W związku z tym sprawdź dane dostępowe do bazy danych. Aby odnaleźć moduły
 
 Usuń następnie "moduł za 1 kliknięciem". W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `Moduły CMS`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego nazwie Twojej domeny, następnie kliknij `Usuń moduł`{.action}.
 
-![delete_a_module](images/delete_a_module.png){.thumbnail}
+![delete_a_module](images/delete-a-module.png){.thumbnail}
 
 > [!warning]
 >
@@ -197,7 +197,7 @@ Następnie rozpocznij od nowa instalację "modułu za pomocą 1 kliknięcia".
 
 ### "You have insufficient rights on this database.".
 
-![insufficient_rights](images/insufficient_rights.png){.thumbnail}
+![insufficient_rights](images/db-insufficient-rights.png){.thumbnail}
 
 Ten komunikat pojawia się wyłącznie podczas instalacji "modułu za pomocą 1 kliknięcia" w **trybie zaawansowanym**. Nie można już edytować bazy danych, ponieważ ilość danych w bazie przekracza dozwolony limit. W takim przypadku baza danych zostanie zablokowana w trybie tylko do odczytu.
 
@@ -215,7 +215,7 @@ Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodat
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
-![cant_connect](images/cant_connect.png){.thumbnail}
+![cant_connect](images/db-cant-connect-access-denied.png){.thumbnail}
 
 Rozpoczęto instalację "modułu za 1 kliknięciem" w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) w bazie danych znajdującej się na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ten komunikat o błędzie został wysłany na e-mail. Oznacza to, że użytkownik wskazany podczas instalacji nie ma wystarczających uprawnień do bazy danych lub że podane dane logowania są nieprawidłowe.
 
@@ -225,7 +225,7 @@ Sprawdź również dane logowania, logując się [bezpośrednio](/pages/web_clou
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
-![cant_connect_server](images/cant_connect_server.png){.thumbnail}
+![cant_connect_server](images/db-cant-connect-server.png){.thumbnail}
 
 Rozpoczęto instalację "modułu za 1 kliknięciem" w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) w bazie danych znajdującej się na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ten komunikat o błędzie został wysłany na e-mail. Oznacza to, że podana nazwa serwera baz danych jest nieprawidłowa.
 

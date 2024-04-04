@@ -1,7 +1,7 @@
 ---
 title: "Gérer un VPS legacy"
 excerpt: "Apprenez à administrer un VPS d'une ancienne gamme depuis votre espace client OVHcloud"
-updated: 2023-06-29
+updated: 2024-01-22
 ---
 
 ## Objectif
@@ -34,6 +34,12 @@ Cette option ouvrira une fenêtre contextuelle pour initier le processus de [ré
 ### Redémarrer en mode rescue
 
 Cliquez sur cette option pour redémarrer le VPS en mode rescue. Retrouvez tous les détails dans [notre guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez utiliser la commande suivante pour identifier le point de montage de votre partition :
+
+```bash
+lsblk
+```
 
 ### Redémarrer mon VPS
 
@@ -118,8 +124,6 @@ Votre VPS peut être migré automatiquement vers la gamme actuelle. Découvrez l
 [Création et utilisation de clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
-
-[Configurer une nouvelle installation de Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
 
 [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 

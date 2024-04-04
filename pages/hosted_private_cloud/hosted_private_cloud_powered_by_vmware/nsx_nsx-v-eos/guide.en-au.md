@@ -1,12 +1,12 @@
 ---
 title: VMware NSX-V - End of Life
 excerpt: Analyse your use of the NSX-V features and choose between the different evolution scenarios, from disabling the NSX-V component to the migration to NSX
-updated: 2023-09-20
+updated: 2023-12-18
 ---
 
 ## Objective
 
-You are using the VMware NSX-V component (Network and Security Virtualization); we inform you that this component will no longer be maintained by VMware as of January 15, 2024, and will therefore be deactivated on that date.
+You are using the VMware NSX-V component (Network and Security Virtualization); we inform you that this component will no longer be maintained by OVHcloud as of July 31, 2024, and will therefore be deactivated on that date.
 
 This guide helps you analyse your use of NSX-V features and therefore offers you different evolution scenarios: From disabling the NSX-V component to migrating to its successor NSX-T (named NSX by VMware since version 4.0).
 

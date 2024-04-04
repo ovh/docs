@@ -1,7 +1,7 @@
 ---
 title: "Reindirizzare un dominio gestito da OVHcloud"
 excerpt: "I diversi tipi di redirect e come creare un reindirizzamento per un dominio gestito da OVHcloud"
-updated: 2023-10-24
+updated: 2024-03-08
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Visualizzi una tabella con tutti i reindirizzamenti attivi per il tuo dominio. P
 
 Clicca su `Aggiungi un reindirizzamento`{.action}.
 
-![Presentazione del menu reindirizzamento](images/RedirectionPanel.png){.thumbnail}
+![Presentazione del menu reindirizzamento](images/add-a-redirection.png){.thumbnail}
 
 Sono disponibili tre opzioni di reindirizzamento dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), ognuna delle quali è composta da **5 step** successivi. 
 
@@ -75,7 +75,7 @@ Questa opzione permette, dopo l'inserimento del dominio reindirizzato, di visual
 
 - **Esempio**: `domain1.tld` verso `domain2.tld`, nel browser comparirà `domain2.tld`.
 
-![Gif1](images/redirect1.gif){.thumbnail}
+![Gif1](images/visible-redirection.gif){.thumbnail}
 
 > Questo reindirizzamento "standard" restituirà un codice HTTP 301.
 
@@ -89,7 +89,7 @@ Questa opzione permette, dopo l'inserimento del dominio reindirizzato, di visual
 >>
 >> `Reindirizza anche`{.action} è possibile impostare una nuova casella per reindirizzare il tuo sottodominio in `www` verso la stessa destinazione scelta per il tuo dominio/sottodominio.
 >>
->> ![Step 1](images/Step1.png){.thumbnail}
+>> ![Step 1](images/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 2.
 >>
@@ -97,7 +97,7 @@ Questa opzione permette, dopo l'inserimento del dominio reindirizzato, di visual
 >>
 >> Seleziona `Verso un indirizzo Web`{.action}.
 >>
->> ![Step 2](images/Step2.png){.thumbnail}
+>> ![Step 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 3.
 >>
@@ -105,7 +105,7 @@ Questa opzione permette, dopo l'inserimento del dominio reindirizzato, di visual
 >>
 >> Seleziona `Con reindirizzamento visibile`{.action} e scegli tra le due opzioni indicate.
 >>
->> ![Step 3](images/Step3Visi.png){.thumbnail}
+>> ![Step 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 4.
 >>
@@ -113,7 +113,7 @@ Questa opzione permette, dopo l'inserimento del dominio reindirizzato, di visual
 >>
 >> Seleziona `Permanente (301)`{.action} tra le due opzioni indicate e inserisci il dominio o l'URL di destinazione del tuo reindirizzamento nel modulo `Indirizzo web`{.action} che appare.
 >>
->> ![Step 4](images/Step4VisiPerma.png){.thumbnail}
+>> ![Step 4](images/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 5.
 >>
@@ -121,7 +121,7 @@ Questa opzione permette, dopo l'inserimento del dominio reindirizzato, di visual
 >>
 >> In quest'ultimo step, assicurati che le informazioni visualizzate siano corrette.
 >>
->> ![Step 5](images/Step5VisiPerma.png){.thumbnail}
+>> ![Step 5](images/add-a-redirection-step-5-permanent.png){.thumbnail}
 >>
 >> Clicca su `Conferma`{.action} per confermare la tua configurazione.
 >> 
@@ -142,7 +142,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 
 - **Esempio**: `domain1.tld` verso `domain2.tld`, nel browser comparirà `domain2.tld`.
 
-![Gif1](images/redirect1.gif){.thumbnail}
+![Gif1](images/visible-redirection.gif){.thumbnail}
 
 > Questo reindirizzamento restituirà un codice HTTP 302.
 
@@ -156,7 +156,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> `Reindirizza anche`{.action} è possibile impostare una nuova casella per reindirizzare il tuo sottodominio in `www` verso la stessa destinazione scelta per il tuo dominio/sottodominio.
 >>
->> ![Step 1](images/Step1.png){.thumbnail}
+>> ![Step 1](images/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 2.
 >>
@@ -164,7 +164,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> Seleziona `Verso un indirizzo Web`{.action}.
 >>
->> ![Step 2](images/Step2.png){.thumbnail}
+>> ![Step 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 3.
 >>
@@ -172,7 +172,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> Seleziona `Con reindirizzamento visibile`{.action} e scegli tra le due opzioni indicate.
 >>
->> ![Step 3](images/Step3Visi.png){.thumbnail}
+>> ![Step 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 4.
 >>
@@ -180,7 +180,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> Seleziona `Temporaneo (302)`{.action} tra le due opzioni indicate e inserisci il dominio o l'URL di destinazione del tuo reindirizzamento nel modulo `Indirizzo web`{.action} che appare.
 >>
->> ![Step 4](images/Step4VisiTempo.png){.thumbnail}
+>> ![Step 4](images/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 5.
 >>
@@ -188,7 +188,7 @@ Infatti, il posizionamento sui motori di ricerca è meno efficace rispetto a un 
 >>
 >> In quest'ultimo step, assicurati che le informazioni visualizzate siano corrette.
 >>
->> ![Step 5](images/Step5VisiTempo.png){.thumbnail}
+>> ![Step 5](images/add-a-redirection-step-5-temporary.png){.thumbnail}
 >>
 >> Clicca su `Conferma`{.action} per confermare la tua configurazione.
 >> 
@@ -207,7 +207,7 @@ Questo reindirizzamento permette, dopo l'inserimento del dominio reindirizzato, 
 
 - **Esempio**: `domain1.tld` verso `domain2.tld`, nel browser comparirà `domain1.tld`.
 
-![Gif2](images/redirect2.gif){.thumbnail}
+![Gif2](images/invisible-redirection.gif){.thumbnail}
 
 Il reindirizzamento invisibile funziona con un tag HTML *iFrame* che permette al dominio reindirizzato di integrare nella propria pagina HTML il contenuto dell'altra pagina corrispondente al dominio di destinazione.
 
@@ -231,7 +231,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> `Reindirizza anche`{.action} è possibile impostare una nuova casella per reindirizzare il tuo sottodominio in `www` verso la stessa destinazione scelta per il tuo dominio/sottodominio.
 >>
->> ![Step 1](images/Step1.png){.thumbnail}
+>> ![Step 1](images/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 2.
 >>
@@ -239,7 +239,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> Seleziona `Verso un indirizzo Web`{.action}.
 >>
->> ![Step 2](images/Step2.png){.thumbnail}
+>> ![Step 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 3.
 >>
@@ -247,7 +247,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> Seleziona `Con un reindirizzamento invisibile`{.action} tra le due opzioni indicate.
 >>
->> ![Step 3](images/Step3Invi.png){.thumbnail}
+>> ![Step 3](images/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
 >>
 >> Clicca su `Avanti`{.action} per passare allo Step 4.
 >>
@@ -255,7 +255,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> Seleziona `Temporary (iframe)`{.action} e inserisci il dominio o l'URL di destinazione del tuo reindirizzamento nel modulo `Indirizzo web`{.action} che appare.
 >>
->> ![Step 4](images/Step4Invi.png){.thumbnail}
+>> ![Step 4](images/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
 >> Sono disponibili tre parametri opzionali:
 >>
@@ -269,7 +269,7 @@ Attenzione: le pagine incapsulate con un tag *iFrame* possono non essere lette s
 >>
 >> In quest'ultimo step, assicurati che le informazioni visualizzate siano corrette.
 >>
->> ![Step 5](images/Step5Invi.png){.thumbnail}
+>> ![Step 5](images/add-a-redirection-step-5-iframe.png){.thumbnail}
 >>
 >> Clicca su `Conferma`{.action} per confermare la tua configurazione.
 >> 

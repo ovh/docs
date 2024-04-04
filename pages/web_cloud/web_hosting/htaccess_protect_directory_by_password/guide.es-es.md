@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteger un directorio o el panel de administración de su sitio web con los archivos .htaccess y .htpasswd"
 excerpt: "Descubra cómo proteger un repertorio o el acceso a la administración de su sitio web mediante autenticación con los archivos .htaccess y .htpasswd"
-updated: 2023-06-01
+updated: 2024-01-29
 ---
 
 > [!primary]
@@ -63,11 +63,7 @@ A continuación explicamos los 4 pasos principales que debe seguir para proteger
 > Los pasos que se indican a continuación optimizarán la seguridad de los datos alojados.
 > Por lo tanto, si sus sitios web son compatibles, le recomendamos encarecidamente que utilice la versión de PHP más reciente posible.
 > 
-> Para modificar la versión de PHP de sus sitios web en su alojamiento web, consulte las siguientes guías:
-> 
-> - [Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
+> Para modificar la versión de PHP de sus sitios web en su alojamiento web, consulte nuestra guía "[Web hosting : entorno, versión PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 >
 > En efecto, los scripts e información descritos más abajo en este tutorial sólo funcionan con un entorno de ejecución y una versión PHP reciente.
 > 
@@ -80,11 +76,11 @@ Conéctese al [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_c
 
 Cree un archivo "crypt.php" en esta carpeta raíz.
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root_folder](images/root-folder.png){.thumbnail}
 
 Abra o cree la carpeta destinada a la protección de su sitio web. En nuestro ejemplo, esta es la carpeta "admin". Cree un archivo ".htpasswd" y un archivo ".htaccess" en este directorio.
 
-![folder_admin](images/folder_admin.png){.thumbnail}
+![admin-folder](images/admin-folder.png){.thumbnail}
 
 Para utilizar correctamente los archivos ".htaccess" y ".htpasswd", debe conocer y respetar las siguientes reglas: 
 

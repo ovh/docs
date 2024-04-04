@@ -1,6 +1,6 @@
 ---
-title: 'Managing Cloud Web runtime software applications'
-excerpt: 'Find out how to manage your Web Hosting plan’s runtime software applications, and complete your projects successfully'
+title: "Managing Cloud Web runtime software applications"
+excerpt: "Find out how to manage your Web Hosting plan’s runtime software applications, and complete your projects successfully"
 updated: 2022-07-27
 ---
 
@@ -29,7 +29,7 @@ To access your Cloud Web hosting plan’s runtime environments, log in to the [O
 
 The table that appears will list the runtime environments currently added to your Cloud Web hosting plan. Please note that a runtime environment will be created automatically when you set up your  hosting plan.
 
-![cloudweb](images/cloud-web-runtime-step1.png){.thumbnail}
+![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
 
 ### Step 2: Manage runtime environments.
 
@@ -80,7 +80,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 
 Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multisites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -94,7 +94,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 
 Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
 
-![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -108,7 +108,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 
 Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
 
-![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Step 3: Link the runtime environment to a multisite.
 
@@ -123,17 +123,15 @@ Once you have the runtime environments you need for your project, make sure they
 
 In the table, check if the displayed runtime environment is correct for the domains concerned in the Runtime software column. The names displayed correspond to the "custom name" you have defined.
 
-![cloudweb](images/cloud-web-runtime-step4.png){.thumbnail}
+![cloudweb](images/runtime-software-applications.png){.thumbnail}
 
 If you want to modify a runtime environment associated with a multisite, click on the cogwheel icon to the right of the domain concerned, and click `Modify`{.action}.
-
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
 
 Then select the environment next to `Runtime environment` in the popup window. As a reminder, the names displayed correspond to the "custom name" you have defined. The website or application accessible from the domain concerned must be compatible with the runtime environment you have chosen. 
 
 Once you have selected it, follow the remaining steps.
 
-![cloudweb](images/cloud-web-runtime-step6.png){.thumbnail}
+![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
 
 ## Go further
 

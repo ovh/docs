@@ -1,5 +1,5 @@
 ---
-title: 'Von der stündlichen auf monatliche Abrechnung umstellen'
+title: 'Public Cloud Compute - Von der stündlichen auf monatliche Abrechnung umstellen'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnungsart Ihrer Public Cloud Instanz ändern'
 updated: 2023-01-23
 ---

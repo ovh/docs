@@ -14,7 +14,9 @@ Afin de faciliter la gestion de votre accès à Internet, vous avez la possibili
 
 - Disposer d'un [accès à Internet OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. 
 - Avoir activé la gestion de votre box à distance.
-- Être connecté à l’[espace client OVHcloud](https://www.ovhtelecom.fr/manager/index.html#/){.external}, partie `Télécom`{.action}.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+
+![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 ## En pratique
 

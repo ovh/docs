@@ -79,14 +79,14 @@ You can increase the storage capacity of your email account, if it has not reach
 > **Emails (MXplan)**
 >>
 >> The capacity of an MXplan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).<br>
->> In the `Email accounts`{.action} tab, click the button to the right <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>of the account you want to change, and then click `Edit`{.action}.
+>> In the `Email accounts`{.action} tab, click the button to the right `...`{.action}of the account you want to change, and then click `Edit`{.action}.
 >> From the `Quota`{.action} box, select the size that suits you, click `Next`{.action}, then `Confirm`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> If your Exchange account reaches 50 GB saturation, it is possible for the **Hosted** and **Provider** offers to subscribe to an extension option to extend its capacity to 300 GB.<br>
->> From the `Email accounts`{.action} tab on your platform, click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button to the right of the account you want to modify, then click on `Increase capacity to 300GB`{.action}. Choose the billing method that best suits you and click `Validate`{.action}.<br><br>
+>> From the `Email accounts`{.action} tab on your platform, click the `...`{.action} button to the right of the account you want to modify, then click on `Increase capacity to 300GB`{.action}. Choose the billing method that best suits you and click `Validate`{.action}.<br><br>
 >>![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 >> If your Exchange account has already filled up its 300 GB of storage on a **Hosted** or **Provider** offer, you will need to free up space on your Exchange account by deleting unnecessary items or [archive your emails](#archiveorswitch) on your computer locally. This also applies to 50 GB Exchange accounts that are included in a **Private** solution.
@@ -169,7 +169,7 @@ Select the current solution for your email account from the menu below:
 > **Exchange**
 >>
 >> If your Exchange account is saturated with 50 GB of space, you can subscribe to an extension option to expand its capacity to 300 GB. This only if the Exchange account is on a **Hosted** or **Provider** offer.<br>
->> In the `Email accounts`{.action} tab on your Exchange platform, click the button to the right <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>of the account you want to modify, then click `Increase capacity to 300 GB`{.action}.<br><br>
+>> In the `Email accounts`{.action} tab on your Exchange platform, click the button to the right `...`{.action}of the account you want to modify, then click `Increase capacity to 300 GB`{.action}.<br><br>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 

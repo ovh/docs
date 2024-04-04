@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: My database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2023-11-30
+updated: 2023-12-13
 ---
 
 ## Objective
@@ -58,13 +58,13 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 A table listing your databases will appear at the bottom of the screen.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
 
 Note that `User name` and `Server address` of your database are listed in the table.
 
 In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
 Enter the login information for your database, then click `Login`{.action}.
 
@@ -119,6 +119,11 @@ Once you have determined whether or not the contents of your tables are necessar
 #### Case 1 - All of the contents of the large table are required for your website to work properly
 
 You will need to upgrade your database service to one that includes more space for databases.
+
+> [!primary]
+>
+> To increase the size allocated to your database, you will need to create a new, larger database, and copy the contents of the old database into the new one. You cannot directly increase the size of a database linked to a web hosting plan.
+>
 
 Consult our [Web Cloud Databasess](https://www.ovhcloud.com/en-sg/web-cloud/databases/) offer to choose your new database service. 
 

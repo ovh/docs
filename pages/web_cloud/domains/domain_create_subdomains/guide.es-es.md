@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo crear un subdominio?"
 excerpt: "Descubra cómo crear un subdominio en OVHcloud"
-updated: 2023-11-28
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-11-28
 
 ## Objetivo <a name="goal"></a>
 
-Internet se compone de *servidores* y *dispositivos* que interactúan entre sí a través de una red global. Cuando estos *servidores* y sus *dispositivos* están conectados a la red Internet, se les asigna una *dirección IP pública* (equivalente a una dirección postal). Esta *dirección IP* permite conectar a distancia un servidor o un dispositivo, de modo que un usuario puede consultar un sitio web introduciendo esta *dirección IP* gracias a su navegador de internet instalado en su ordenador.
+Internet se compone de servidores y dispositivos que interactúan entre sí a través de una red global. Cuando estos servidores y sus dispositivos están conectados a la red Internet, se les asigna una **dirección IP pública** (equivalente a una dirección postal). Esta *dirección IP* permite conectar a distancia un servidor o un dispositivo, de modo que un usuario puede consultar un sitio web introduciendo esta dirección IP gracias a su navegador de internet instalado en su ordenador.
 
 Los **dominios** se han creado para facilitar a los usuarios el acceso a un sitio web. En efecto, es más fácil elegir un nombre compuesto por una cadena de caracteres elegidos (por ejemplo: ovhcloud.com), que una secuencia de números que compone una *dirección IP* (por ejemplo: 54.39.46.56).
 
@@ -26,7 +26,7 @@ Un **nombre de dominio** se compone de niveles. Estos niveles suelen estar separ
 
 - **S**econd **L**evel **D**omain (**SLD**): representa los dominios de *segundo nivel*. Más comúnmente los llamamos **labels**. Al contratar un dominio, puede elegir libremente el **label** (siempre que no haya sido ya registrado por otro usuario con la misma extensión y con un límite de 63 caracteres). Por ejemplo, *ovhcloud* corresponde al sello del dominio *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): A partir de este tercer nivel, hablamos de *subdominio*. Esta guía explica en detalle su definición y cómo utilizarla con los distintos servicios.
+- Third Level Domain (**subdomain**): A partir de este tercer nivel, hablamos de **subdominio**. Esta guía explica en detalle su definición y cómo utilizarla con los distintos servicios.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
@@ -94,13 +94,13 @@ Existen dos situaciones posibles:
 >
 > 1: Para identificar la zona DNS activa de un dominio registrado en OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 >
-> 2: Si su dominio no está registrado con OVHcloud, contacte con el actual agente registrador* para conocer el lugar en el que está alojada su zona DNS activa.
+> 2: Si su dominio no está registrado con OVHcloud, contacte con el actual agente registrador* para conocer el lugar en el que está alojada su zona DNS activa. Puede consultar nuestra guía "[Transferir un dominio a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)" si desea realizar esta acción.
 >
 
 Si los servidores DNS declarados para el dominio tienen una de las dos formas siguientes:
 
-- *dnsXX.ovh.net* y *nsXX.ovh.net* (donde cada una de las "X" representa una cifra);
-- *dns200.anycast.me* y *ns200.anycast.me*.
+- `dnsXX.ovh.net` y `nsXX.ovh.net` (donde cada una de las "X" representa una cifra);
+- `dns200.anycast.me` y `ns200.anycast.me`.
 
 Esto significa que la zona DNS activa de su dominio está activada en OVHcloud.
 
@@ -120,9 +120,9 @@ Por ejemplo, puede añadir:
 >
 > La modificación de una zona DNS asociada a un dominio conlleva un retraso de propagación de **4** a **24** horas como máximo para que sea efectiva.
 >
-> Además, como en el caso de un dominio en sí mismo, la creación de un registro DNS para un subdominio por sí sola no suele ser suficiente para que funcione con el servicio *destino* que le haya indicado en el registro DNS. 
+> Además, como en el caso de un dominio en sí mismo, la creación de un registro DNS para un subdominio por sí sola no suele ser suficiente para que funcione con el servicio "destino" que le haya indicado en el registro DNS. 
 >
-> Efectivamente, por motivos de seguridad, también deberá autorizar al subdominio a acceder al servicio *cible* (alojamiento web, correo, etc.).
+> Efectivamente, por motivos de seguridad, también deberá autorizar al subdominio a acceder al servicio "destino" (alojamiento web, correo, etc.).
 >
 
 En la siguiente sección, explicamos cómo autorizar a un subdominio a que acceda a los distintos servicios del universo "Web Cloud" (alojamiento web, servidor Exchange...) que ofrece OVHcloud.
@@ -140,7 +140,7 @@ Para los servicios que no se mencionan, consulte la documentación relativa al s
 
 #### Caso 1: Ver un sitio web en mi alojamiento web de OVHcloud con un subdominio
 
-Al igual que para un dominio y para autorizar a un subdominio a mostrar el contenido de una carpeta *destino* presente en un alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Multisitio`{.action}.
+Al igual que para un dominio y para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" presente en un alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Multisitio`{.action}.
 
 Aquí es donde autoriza el acceso de su subdominio al alojamiento web en el que se encuentra su sitio web.
 
@@ -148,7 +148,7 @@ Para más información sobre la configuración de un dominio o subdominio en un 
 
 > [!warning]
 >
-> La adición de un dominio o subdominio en multisitio puede requerir la instalación de un *token* de validación. Para un subdominio, este mismo *token* no se tiene en cuenta y debe añadirse no para el subdominio sino para el nombre de dominio. En este caso, añada el *token* como un registro DNS de tipo TXT para el dominio en la zona DNS activa del dominio.
+> La adición de un dominio o subdominio en multisitio puede requerir la instalación de un token de validación. Para un subdominio, este mismo token no se tiene en cuenta y debe añadirse no para el subdominio sino para el nombre de dominio. En este caso, añada el token como un registro DNS de tipo TXT para el dominio en la zona DNS activa del dominio.
 >
 
 #### Caso 2 - Crear direcciones de correo Exchange con un subdominio

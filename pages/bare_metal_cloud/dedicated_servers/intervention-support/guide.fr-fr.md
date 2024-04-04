@@ -1,7 +1,7 @@
 ---
 title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
 excerpt: "Découvrez quelles actions peuvent être à effectuer par vos soins sur votre serveur suite à une intervention de maintenance"
-updated: 2023-05-09
+updated: 2024-01-15
 ---
 
 ## Objectif
@@ -467,7 +467,7 @@ Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping a
 
 Effectuez les actions suivantes :
 
-1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
+1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 ```bash
 root@rescue:~# cat /mnt/etc/network/interfaces
@@ -507,7 +507,10 @@ Aug  8 14:27:48 s22 kernel: [  102.139437] eth1: renamed from vethRSNNKL
 root@rescue:~#
 ```
 
-2\. Créez de nouveau le fichier `70-persistent-net.rules` avec la nouvelle adresse MAC et le nom de l'interface réseau repérée dans le fichier  `/mnt/etc/network/interfaces` :
+2\. Créez à nouveau le fichier `70-persistent-net.rules` et ajoutez :  
+
+- Le nom de l'interface réseau trouvé dans le fichier `/mnt/etc/network/interfaces`.
+- La nouvelle adresse MAC (visible dans l'onglet `Interfaces réseau`{.action} de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou dans le retour de la commande `ip link`).
 
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules

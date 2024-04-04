@@ -1,11 +1,11 @@
 ---
 title: "Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)"
 excerpt: "Dowiedz się, jak zainstalować Twoją stronę WWW za pomocą 'modułów za 1 kliknięciem'"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -20,7 +20,7 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
+- Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. Sprawdź stan poszczególnych wersji dostępnych na tej [stronie](https://webhosting-infos.hosting.ovh.net/). W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), która zostanie użyta na Twojej stronie WWW powinna zostać zadeklarowana jako [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) na Twoim hostingu OVHcloud.
 
@@ -41,7 +41,7 @@ Używając tego rozwiązania powinieneś wybrać spośród 4 systemów CMS wymie
 
 Jeśli chcesz zainstalować niedostępny CMS za pomocą naszych "modułów za 1 kliknięciem", możesz zainstalować go ręcznie na Twoim hostingu. Pod warunkiem, że ten CMS jest kompatybilny z naszą ofertą [hostingiem www OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 
-![Dostępne w OVHcloud CMS](images/CMS_logo.png){.thumbnail}
+![Dostępne w OVHcloud CMS](images/cms-logos.png){.thumbnail}
 
 ### Etap 2 - dostęp do zarządzania modułami za pomocą 1 kliknięcia
 
@@ -49,7 +49,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Na stronie znajdziesz ewentualne "moduły za 1 kliknięciem" już zainstalowane. Możesz zarządzać Twoimi "modułami za 1 kliknięciem" i instalować nowe.
 
-![Dostęp do sekcji Moduły OVHcloud](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Dostęp do sekcji Moduły OVHcloud](images/tab.png){.thumbnail}
 
 ### Etap 3 - dodaj "moduł za 1 kliknięciem"
 
@@ -57,7 +57,7 @@ W zakładce `Moduły CMS`{.action} Twojego hostingu kliknij przycisk `Dodaj modu
 
 W oknie, które się wyświetla wybierz odpowiedni CMS, a następnie wybierz domenę, którą chcesz zainstalować na Twojej stronie WWW:
 
-![Wybór modułu](images/add_a_module.png){.thumbnail}
+![Wybór modułu](images/add-a-module-select-module-and-domain.png){.thumbnail}
 
 Jeśli Twoja domena nie jest na liście, przejdź do zakładki `MultiSite`{.action}, aby ją dodać. Zapoznaj się z naszym przewodnikiem [Jak rozdzielić hosting WWW na kilka stron](/pages/web_cloud/web_hosting/multisites_configure_multisite), jeśli potrzebujesz.
 
@@ -92,7 +92,7 @@ Wybierz nazwę domeny Twojego CMS, sprawdź katalog docelowy, który pojawi się
 > Szybka instalacja pozwala na utworzenie bazy danych bez konieczności jej tworzenia.
 >
 
-![Prosta instalacja modułu](images/choose_installation.png){.thumbnail}
+![Prosta instalacja modułu](images/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
 Po zakończeniu instalacji otrzymasz e-mail z danymi do logowania do interfejsu administratora (*back office*) Twojego CMS-a. Zaloguj się do Panelu klienta i personalizuj Twoją stronę WWW.
 
@@ -107,7 +107,7 @@ Aby przeprowadzić tę metodę instalacji, upewnij się, że pole `Instalacja w 
 
 W celu przeprowadzenia tej instalacji upewnij się, że pole wyboru `Instalacja w trybie zaawansowanym`{.action} jest zaznaczone, po czym kliknij przycisk `Dalej`{.action}:
 
-![Instalacja w trybie zaawansowanym](images/advanced_installation.png){.thumbnail}
+![Instalacja w trybie zaawansowanym](images/add-a-module-advanced-mod-step-1.png){.thumbnail}
 
 ##### Wybierz bazę danych
 
@@ -122,7 +122,7 @@ Wpisz dane do logowania do bazy danych.
 > Dane do logowania do bazy danych utworzonej na instancji Web Cloud Databases znajdują się w [przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-![Baza danych do instalacji zaawansowanej](images/advanced_installation_database.png){.thumbnail}
+![Baza danych do instalacji zaawansowanej](images/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
 Istnieje kilka możliwości:
 
@@ -182,13 +182,13 @@ Po uzupełnieniu tych informacji kliknij przycisk `Dalej`{.action}:
 > Ostateczny katalog podany w określonej ścieżce instalacji musi być obowiązkowo i całkowicie pusty, aby instalacja mogła zostać zakończona.
 > 
 
-![Konfiguracja modułu dla instalacji zaawansowanej](images/advanced_installation_configuration.png){.thumbnail}
+![Konfiguracja modułu dla instalacji zaawansowanej](images/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
 ##### Potwierdź instalację
 
 Sprawdź informacje, które się wyświetlają i kliknij na `Zatwierdź`{.action}, jeśli wszystko jest w porządku:
 
-![Zatwierdzanie instalacji w trybie zaawansowanym](images/advanced_installation_summary.png){.thumbnail}
+![Zatwierdzanie instalacji w trybie zaawansowanym](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
 ### Etap 4: spersonalizuj swoją stronę
 
@@ -212,17 +212,19 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 ## Sprawdź również
 
-[Porównanie rozwiązań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}
+[Porównanie rozwiązań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}.
 
-[Jak rozdzielić hosting WWW na wiele stron](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Jak rozdzielić hosting WWW na wiele stron](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Zarządzanie bazą danych na hostingu](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Zarządzanie bazą danych na hostingu](/pages/web_cloud/web_hosting/sql_create_database).
 
-[Zarządzanie CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Zarządzanie CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Odinstaluj CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etap-3-usun-modul)
+[Odinstaluj CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etap-3-usun-modul).
 
-Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
+Jeśli chcesz zachować pełną kontrolę nad instalacją Twojego CMS-a, możesz [zainstalować ręcznie CMS na Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
+
+Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}.
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

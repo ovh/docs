@@ -1,6 +1,6 @@
 ---
-title: 'Installer Ghost sur son hébergement Cloud Web'
-excerpt: 'Découvrez comment installer un blog avec le moteur Ghost sur Cloud Web'
+title: "Installer Ghost sur son hébergement Cloud Web"
+excerpt: "Découvrez comment installer un blog avec le moteur Ghost sur Cloud Web"
 updated: 2022-05-04
 ---
 
@@ -33,7 +33,7 @@ Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connecte
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d'exécution Node.js est bien activé. Si tel est le cas, poursuivez vers l'étape 2 « [Associer Node.js à un multisite](./#etape-2-associer-nodejs-a-un-multisite) ».
 
-![ghostcloudweb](images/ghost-cloud-web-step1.png){.thumbnail}
+![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
 
 Si ce n'est pas le cas, ajoutez-en un nouveau (si votre offre vous le permet) ou modifiez le moteur d'exécution existant.
 
@@ -52,13 +52,13 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées avec les 
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d'informations sur la gestion des moteurs d'exécution, reportez-vous à notre guide « [Gérer les moteurs d’exécution de Cloud Web](/pages/web_cloud/web_hosting/manage-runtime){.external} ».
 
-![ghostcloudweb](images/ghost-cloud-web-step2.png){.thumbnail}
+![ghostcloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ### Étape 2 : associer Node.js à un multisite
 
 Maintenant que Node.js est activé en tant que moteur d'exécution, vous devez l'associer à l'un de vos multisites. Pour cela, positionnez-vous sur l'onglet `Multisite`{.action}. Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés en tant que multisite. 
 
-![ghostcloudweb](images/ghost-cloud-web-step3.png){.thumbnail}
+![ghostcloudweb](images/tab-nodejs8-full-disabled.png){.thumbnail}
 
 Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d'exécution Node.js est bien lié aux domaines concernés et que le dossier racine est correct. Aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l'étape 3 « [Créer une base de données MySQL](./#etape-3-creer-une-base-de-donnees-mysql) ».
 
@@ -82,7 +82,7 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées selon vot
 
 En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu'à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d'informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} ».
 
-![ghostcloudweb](images/ghost-cloud-web-step4.png){.thumbnail}
+![ghostcloudweb](images/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
 ### Étape 3 : créer une base de données MySQL
 
@@ -92,13 +92,13 @@ Positionnez-vous maintenant sur l'onglet `Bases de données`{.action}. Si celui-
 
 - **si vous avez déjà créé une base de données**, cliquez sur le bouton `Actions`{.action} au-dessus du tableau, puis sur `Créer une base de données`{.action}.
 
-![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
+![ghostcloudweb](images/tab.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, Seul « MySQL » en version « 5.6 » est disponible. Sélectionnez ensuite « Stockée dans votre instance Cloud Web », puis cliquez sur `Suivant`{.action}.
 
 Personnalisez ensuite un nom d'utilisateur et définissez-lui un mot de passe. Une fois ceci fait, cliquez sur `Suivant`{.action}. Confirmez alors la création de la base de données en cliquant sur `Valider`{.action}. Patientez ensuite quelques minutes le temps que la manipulation se réalise.
 
-![ghostcloudweb](images/ghost-cloud-web-step6.png){.thumbnail}
+![ghostcloudweb](images/create-a-database-step-2.png){.thumbnail}
 
 ### Étape 4 : créer les variables d'environnement
 
@@ -108,7 +108,7 @@ Pour ce tutoriel, nous allons créer des variables d'environnement dans lesquell
 
 Pour cela, positionnez-vous sur l'onglet `Variables d'environnement`{.action}. Le tableau affiche les variables déjà créées. Pour en ajouter une nouvelle, cliquez sur le bouton `Actions`{.action} au-dessus du tableau, puis sur `Ajouter une variable d'environnement`{.action}.
 
-![ghostcloudweb](images/ghost-cloud-web-step7.png){.thumbnail}
+![ghostcloudweb](images/add-an-environment-variable.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, complétez les informations demandées selon votre situation personnelle, puis cliquez sur le bouton `Confirmer`{.action} pour créer la variable. Voici celles que nous avons créées pour ce tutoriel :
 
@@ -133,7 +133,7 @@ Récupérez d'abord les informations vous permettant de vous connecter. Pour cel
 
 Si vous ne connaissez plus le mot de passe de l'utilisateur SSH, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné dans le tableau, puis sur `Changer le mot de passe`{.action}.
 
-![ghostcloudweb](images/ghost-cloud-web-step9.png){.thumbnail}
+![ghostcloudweb](images/change-password.png){.thumbnail}
 
 À présent, pour vous connecter en SSH, vous devez utiliser un terminal. Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 
@@ -247,7 +247,7 @@ Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVHclou
 
 Une fois ceci fait, l'application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
 
-![ghostcloudweb](images/ghost-cloud-web-step10.png){.thumbnail}
+![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
 
 ### Étape 8 : utiliser HTTPS
 

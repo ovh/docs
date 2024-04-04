@@ -1,7 +1,7 @@
 ---
 title: 'Filtrer et renvoyer ses appels'
 excerpt: 'Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud'
-updated: 2022-06-21
+updated: 2023-12-22
 ---
 
 ## Objectif
@@ -136,8 +136,11 @@ Concernant la configuration de nouveaux filtrages, trois moyens existent :
 Enfin, dans la partie « Configuration actuelle », vous pouvez visualiser les filtres en place sur vos listes mais aussi les supprimer. Pour cela, sélectionnez un ou plusieurs filtres puis cliquez sur le bouton `Supprimer le(s) filtre(s) sélectionné(s)`{.action}.
 
 > [!warning]
+> **Filtrage d'appels et renvoi d'appels vers le répondeur**
 >
-> Lors de vos paramétrages, pensez à autoriser dans vos listes les « services OVHcloud » (tels que le service de messagerie) si vous souhaitez toujours y accéder.
+> Lors de vos paramétrages, pensez à autoriser les services indispensables tels que le répondeur de votre ligne ou les « services OVHcloud ».
+>
+> Si vous ne le faites pas, un renvoi d'appel vers le répondeur de votre ligne ne pourra pas fonctionner.
 >
 
 ![gerer-appels-filtrage](images/manage-calls-filtering-step3.png){.thumbnail}

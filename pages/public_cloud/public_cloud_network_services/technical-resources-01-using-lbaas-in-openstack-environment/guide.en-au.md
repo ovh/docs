@@ -1,7 +1,7 @@
 ---
-title: Deploying an Octavia Load Balancer
-excerpt: Find out how to configure the Octavia LBaaS for Public Cloud
-updated: 2023-08-08
+title: Deploying a Public Cloud Load Balancer
+excerpt: Find out how to configure the Public Cloud Load Balancer
+updated: 2024-01-10
 ---
 
 ## Objective
@@ -69,12 +69,12 @@ openstack loadbalancer create --name loadbalancer_private_to_private --vip-subne
 +---------------------+--------------------------------------+
 ```
 
-> [!warning] **Octavia Flavors**
+> [!warning] **Load Balancer Flavors**
 > 
 > If you do not provide the parameter `--flavor` during the creation, the Load Balancer will be of a small size.
 > 
 
-Use the following command to display the Octavia flavors in OpenStack:
+Use the following command to display the flavors in OpenStack:
 
 ```bash
 ❯ openstack loadbalancer flavor list
@@ -87,9 +87,9 @@ Use the following command to display the Octavia flavors in OpenStack:
 +--------------------------------------+--------+--------------------------------------+---------+
 ```
 
-> [!warning] **Octavia status**
+> [!warning] **Status**
 >
-> The Octavia Load Balancer creation will take some time, mainly to create the instance and to configure the network.
+> The Load Balancer creation will take some time, mainly to create the instance and to configure the network.
 >
 > For the next configuration, you will have to wait until the `provisioning_status` becomes `ACTIVE`.
 
@@ -212,7 +212,7 @@ Backend 2
 
 ### Load Balancer with a public IP (Public → Private)
 
-We will be using the Octavia Load Balancer previously deployed in a private network and use an OpenStack Floating IP.
+We will be using the Load Balancer previously deployed in a private network and use an OpenStack Floating IP.
 
 We will need to create a Floating IP address on the public network (Ext-Net), and then associate it to the Load Balancer's VIP port.
 
@@ -225,7 +225,7 @@ Floating IP addresses are used in the OpenStack universe to expose resources (Ne
 You can expose two types of resources:
 
 - An instance with a private port
-- An Octavia Load Balancer Virtual IP address (VIP)
+- An Load Balancer Virtual IP address (VIP)
 
 Floating IP currently does not support IPv6.
 
@@ -304,6 +304,12 @@ Backend 2
 The public Gateway is defined by an L3 router attached to a private network with an external Gateway.
 
 ![diagram](images/topology.png){.thumbnail}
+
+### Delete the Load Balancer
+
+```bash
+openstack loadbalancer delete [--cascade] [--wait] <load_balancer>
+```
 
 ## Go further
 

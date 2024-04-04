@@ -1,7 +1,7 @@
 ---
-title: 'Primeros pasos con el servicio Cloud Databases'
-excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
-updated: 2023-05-31
+title: 'Primeros pasos con el servicio Web Cloud Databases'
+excerpt: 'Descubra cómo empezar a utilizar la solución Web Cloud Databases'
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Si el plan de hosting incluye la opción Web Cloud Databases, acceda al [área d
 
 En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Web Cloud Databases**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
 
-![Información general](images/web-cloud-databases-activation.png){.thumbnail}
+![Información general](images/web-cloud-databases-enable.png){.thumbnail}
 
 Para finalizar, siga las indicaciones que se ofrecen a continuación para determinar el tipo y la versión de su servidor Web Cloud Databases. A continuación, podrá acceder a ella desde la columna de la izquierda en la `Web Cloud Databases`{.action}.
 
@@ -54,7 +54,7 @@ En dicha pestaña podrá consultar la información más importante relativa al s
 |Datacenter|Muestra el centro de datos en el que se ha creado la instancia Cloud Databases. Asegúrese de que el datacenter sea el mismo que el del servicio (VPS, servidor dedicado, Public Cloud...) que aloje su sitio web.|
 |Host|Indica el servidor de OVHcloud en el que se ha creado la instancia. Se trata de una información inherente a la infraestructura de OVHcloud y se utiliza en nuestras comunicaciones relacionadas con [incidencias](http://status.ovh.es){.external}.|
 
-![Cloud Databases](images/web-cloud-databases-general-information.png){.thumbnail}
+![Cloud Databases](images/general-information.png){.thumbnail}
 
 ### Crear una base de datos
 
@@ -65,7 +65,7 @@ En dicha pestaña podrá consultar la información más importante relativa al s
 
 Para crear una base de datos en una instancia Cloud Databases, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Añadir una base de datos`{.action}.
 
-![Cloud Databases](images/web-cloud-databases-add-database.png){.thumbnail}
+![Cloud Databases](images/add-database.png){.thumbnail}
 
 Se abrirá una ventana en la que podrá elegir las siguientes opciones relativas a la nueva base de datos:
 
@@ -87,7 +87,7 @@ Complete la información solicitada y haga clic en `Aceptar`{.action}.
 > Por motivos de seguridad, los datos introducidos deben cumplir los criterios indicados.
 >
 
-![Cloud Databases](images/web-cloud-databases-add-database-step2.png){.thumbnail}
+![Cloud Databases](images/add-database-create-user-confirmation.png){.thumbnail}
 
 ### Crear un usuario
 
@@ -100,7 +100,7 @@ Si ha creado el usuario junto con la base de datos en la operación anterior, no
 
 Si su proyecto no requiere usuarios adicionales, puede omitir este paso. En caso contrario, para crear un usuario en su instancia Cloud Databases, abra la pestaña `Usuarios y permisos`{.action} y haga clic en el botón `Añadir un usuario`{.action}.
 
-![Cloud Databases](images/web-cloud-databases-add-user.png){.thumbnail}
+![Cloud Databases](images/add-user.png){.thumbnail}
 
 Se abrirá una ventana en la que deberá completar la información solicitada y hacer clic en `Aceptar`{.action}.
 
@@ -114,11 +114,11 @@ Se abrirá una ventana en la que deberá completar la información solicitada y 
 > Por motivos de seguridad, los datos introducidos deben cumplir los criterios indicados.
 >
 
-![Cloud Databases](images/web-cloud-databases-add-user-step2.png){.thumbnail}
+![Cloud Databases](images/add-user-confirmation.png){.thumbnail}
 
 Una vez que haya creado el usuario, deberá asignarle permisos para que pueda realizar acciones en la base de datos, tales como la lectura, la inserción o la eliminación de datos. Para ello, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar los permisos`{.action}. En la nueva página, seleccione los permisos marcando la opción correspondiente. Para un uso convencional, seleccione `Administrador`{.action}.
 
-![Cloud Databases](images/web-cloud-databases-add-rights.png){.thumbnail}
+![Cloud Databases](images/manage-rights.png){.thumbnail}
 
 ### Importar una base de datos
 
@@ -135,13 +135,13 @@ A continuación se explica cómo importar una base de datos utilizando la herram
 
 Abra la pestaña `Bases de datos`{.action}, haga clic en el icono con forma de rueda dentada correspondiente a la base de datos y seleccione `Importar un archivo`{.action}. Se abrirá una ventana en la que deberá marcar la opción `Importar un nuevo archivo`{.action}. Haga clic en `Siguiente`{.action}.
 
-![Cloud Databases](images/web-cloud-databases-add-import-step1.png){.thumbnail}
+![Cloud Databases](images/import-file.png){.thumbnail}
 
 **2. Seleccione y envíe el archivo de la copia de seguridad**
 
 Asigne un nombre al archivo para poder identificar la copia de seguridad más adelante si quiere restaurarla. A continuación, seleccione el archivo de la copia de seguridad en su ordenador y haga clic en `Enviar`{.action}. Espere hasta que la pantalla indique que el archivo se ha enviado correctamente y haga clic en `Siguiente`{.action}.
 
-![Cloud Databases](images/web-cloud-databases-add-import-step2.png){.thumbnail}
+![Cloud Databases](images/database-import-new-file-step-2.png){.thumbnail}
 
 **3. Ejecute la importación de la base de datos**
 
@@ -152,17 +152,17 @@ Por último, seleccione las opciones adicionales que quiera que se apliquen y ha
 |Vaciar la base de datos actual|Todo el contenido existente en la base de datos se eliminará y será sustituido por el de la copia de seguridad.|
 |Enviar un email cuando termine la importación|Si marca la casilla, se enviará una notificación por correo electrónico cuando haya finalizado la importación de la base de datos.|
 
-![Cloud Databases](images/web-cloud-databases-add-import-step3.png){.thumbnail} 
+![Cloud Databases](images/database-import-new-file-step-3-send-email.png){.thumbnail} 
 
 ### Autorizar una dirección IP <a name="trustip"></a>
 
 Para que sea posible acceder a la instancia Cloud Databases, deberá indicar las direcciones IP o rangos de IP autorizados a conectarse a la base de datos. Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Añadir una dirección IP/máscara`{.action}.
 
-![Cloud Databases](images/web-cloud-databases-add-ip-2022.png){.thumbnail}
+![Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
 
 En la nueva ventana, indique en **IP/máscara** la dirección IP o la máscara de red que quiera autorizar y, si lo desea, añada una descripción. Indique si quiere autorizar el acceso únicamente a las bases de datos o también al SFTP. Para terminar, haga clic en `Aceptar`{.action}.
 
-![Cloud Databases](images/web-cloud-databases-add-ip-step2.png){.thumbnail}
+![Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 ### Autorizar la conexión a un alojamiento web de OVHcloud <a name="trustip"></a>
 
@@ -170,7 +170,7 @@ Por defecto, la solución Cloud Databases está asociada automáticamente a los 
 
 Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Acceso a los alojamientos web de OVHcloud`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step3-2022.png){.thumbnail}
+![Web Cloud Databases](images/access-to-ovhcloud-web-hosting.png){.thumbnail}
 
 ### Conectar el sitio web con la base de datos
 
@@ -192,31 +192,11 @@ Para poder realizar esta operación, deberá disponer de los siguientes datos:
 > Por ejemplo, para el nombre de host `zz1111111-002.eu.clouddb.ovh.net` con el puerto SQL `34567`, deberá introducir `zz1111111-002.eu.clouddb.ovh.net:34567` en el Parte "Host" / "Nombre de host".
 >
 
-![Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}
+![Cloud Databases](images/login-information.png){.thumbnail}
 
 ### Obtener los logs de su servidor Web Cloud Databases
 
-Para comprobar los últimos logs de la base de datos, acceda a la pestaña `Logs`{.action} del servidor Cloud Databases. Esta pestaña muestra en tiempo real las alertas y errores.
-
-![Web Cloud Databases](images/web-cloud-databases-log01.png){.thumbnail}
-
-Para conocer todos los logs de su servidor Cloud Databases, conéctese por SFTP a este último.
-
-> [!warning]
->
-> Antes de conectarse, compruebe que la dirección IP del equipo que utilice esté autorizada en su servidor Cloud Databases, con la opción `SFTP` marcada. Para más información, consulte la sección [Autorizar la conexión a un alojamiento web de OVHcloud](#trustip) de esta guía.
-
-Puede consultar la información de conexión SFTP en la pestaña `Información general`{.action} de su servidor Cloud Databases. Si no conoce la `Contraseña del servidor`, haga clic en el botón `...`{.action} a la derecha para modificarlo.
-
-![Web Cloud Databases](images/web-cloud-databases-log02.png){.thumbnail}
-
-Conéctese a través de un cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
-
-En FileZilla, acceda al menú `Archivo`{.action} y acceda al menú `Gestor de sitios`{.action}". Haga clic en `Nuevo sitio`{.action} e introduzca los parámetros anteriores.
-
-![Web Cloud Databases](images/web-cloud-databases-log03.png){.thumbnail}
-
-El archivo de logs, llamado `stdout.log`, se encuentra en la raíz.
+Para acceder a los logs de su solución Web Cloud Databases, consulte nuestra guía "[Web Cloud Databases - ¿Cómo recuperar los logs?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Más información
 

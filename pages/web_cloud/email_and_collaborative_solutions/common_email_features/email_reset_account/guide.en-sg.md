@@ -23,7 +23,7 @@ You want to:
 
 To check if your MX Plan solution is a legacy version, please refer to the table in the “[Identifying your MX Plan solution](#whichmxplan)” section of this guide.
 
-Open `Emails`{.action} in the side panel, then choose the name of the MX Plan service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts. Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button to the right of the account you want to modify, then click `Reset this account`{.action}.
+Open `Emails`{.action} in the side panel, then choose the name of the MX Plan service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts. Click the `...`{.action} button to the right of the account you want to modify, then click `Reset this account`{.action}.
 
 ![email](images/email-mxplan-new-reset.png){.thumbnail}
 

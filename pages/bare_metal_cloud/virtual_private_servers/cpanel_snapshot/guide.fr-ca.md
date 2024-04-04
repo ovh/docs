@@ -1,15 +1,15 @@
 ---
 title: 'Sauvegarde automatique - Kernel panic (cPanel)'
 excerpt: 'Découvrez comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud'
-updated: 2023-06-05
+updated: 2024-01-31
 ---
 
 ## Objectif
 
-Lorsque vous utilisez la fonction de sauvegarde automatique sur un VPS qui exécute cPanel, vous pouvez rencontrer des cas de figure où votre VPS est bloqué dans l'état de sauvegarde trop longtemps et devient inaccessible. La cause principale est liée aux utilisateurs de cPanel utilisant l'accès Jailed Shell. Celui-ci crée un « virtfs » sur votre système de fichiers.
+Lorsque vous utilisez la fonction de sauvegarde automatique sur un VPS qui exécute cPanel, vous pouvez rencontrer des cas de figure où votre VPS est bloqué dans l'état de sauvegarde trop longtemps et devient inaccessible. La cause principale est liée aux utilisateurs de cPanel utilisant l'accès Jailed Shell. Celui-ci crée un « virtfs » sur votre système de fichiers. 
 
 Lors de la création d'une sauvegarde de votre VPS (dans le cas d'une souscription aux sauvegardes automatiques ou aux snapshots), l'hyperviseur communique avec votre VPS par l'intermédiaire du QEMU Guest Agent pour figer le système de fichiers sur le VPS, avant de procéder à la sauvegarde. Ce mécanisme permet de garantir qu'aucune écriture n'est effectuée sur votre disque pendant l'exécution de la sauvegarde et garantit donc la cohérence de la sauvegarde.
-<br>Cependant, lorsque vous autorisez l'accès à Jailed Shell, cPanel crée un « virtfs » qui ne peut pas être figé de cette façon. Celui-ci se bloque alors et provoque un kernel panic.
+<br>Cependant, lorsque vous autorisez l'accès à Jailed Shell, cPanel crée un « virtfs » qui ne peut pas être figé de cette façon. Celui-ci se bloque alors et provoque un kernel panic. 
 <br>Trois méthodes existent pour éviter cela :
 
 1. Désactiver le QEMU Guest Agent
@@ -18,7 +18,7 @@ Lors de la création d'une sauvegarde de votre VPS (dans le cas d'une souscripti
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr-ca/vps/) (VPS Value, Essential, Comfort ou Elite) sur votre compte OVHcloud
+- Disposer d'un [VPS](https://www.ovhcloud.com/fr-ca/vps/) avec une distribution [compatible](https://www.ovhcloud.com/fr-ca/vps/os/)
 - cPanel doit être installé sur votre serveur
 
 ## En pratique

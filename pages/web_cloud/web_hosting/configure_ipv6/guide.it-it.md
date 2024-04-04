@@ -1,7 +1,7 @@
 ---
 title: "Configura un indirizzo IPv6 per il tuo sito Web"
 excerpt: "Questa guida ti mostra come rendere il tuo sito Web compatibile con un indirizzo IPv6"
-updated: 2023-02-10
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -49,7 +49,7 @@ Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoman
 
 Nel riquadro **IPv6**, copia l'record e passa allo step successivo.
 
-![IPv6](images/ipv6_01.png){.thumbnail}
+![IPv6](images/find-ipv6.png){.thumbnail}
 
 ### Step 2: configurare la zona DNS attiva del dominio
 
@@ -66,7 +66,7 @@ Nella sezione `Web Cloud`{.action}, clicca su `Domini`{.action}. Seleziona il tu
 
 Inserisci l'indirizzo IPv6 precedentemente copiato utilizzando il tipo di record **AAAA**.
 
-![IPv6](images/ipv6_02.png){.thumbnail}
+![IPv6](images/add-dns-zone-entry-aaaa.png){.thumbnail}
 
 ## Per saperne di più <a name="go-further"></a>
 

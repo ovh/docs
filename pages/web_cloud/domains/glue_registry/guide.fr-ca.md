@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2023-07-25
+updated: 2024-03-07
 ---
 
 ## Objectif
@@ -37,22 +37,22 @@ Selon vos besoins, il est possible de personnaliser le nom des serveurs DNS de v
 
 ### Étape 1 : récupérez les serveurs DNS actuellement utilisés par votre nom de domaine <a name="step1"></a>
 
-Vous pouvez récupérer les serveurs DNS actuellement utilisés par votre nom de domaine à l'aide de l'outil DNS en ligne [Zonemaster](https://zonemaster.fr/fr/run-test){.external}.
+Vous pouvez récupérer les serveurs DNS actuellement utilisés par votre nom de domaine à l'aide de l'outil DNS en ligne [Zonemaster](https://zonemaster.net/fr/run-test){.external}.
 
-Pour cela, rendez-vous sur le lien [https://zonemaster.fr](https://zonemaster.fr/fr/run-test){.external}, saisissez votre nom de domaine sans les *www* (exemple : *domain.tld*) puis cochez le bouton `Options`{.action} situé juste en dessous du formulaire de saisie du nom de domaine.
+Pour cela, rendez-vous sur le lien [https://zonemaster.net](https://zonemaster.net/fr/run-test){.external}, saisissez votre nom de domaine sans les *www* (exemple : *domain.tld*) puis cochez le bouton `Options`{.action} situé juste en dessous du formulaire de saisie du nom de domaine.
 
-Dans les options disponibles, cliquez directement sur le bouton `Récupérer les DNS depuis la zone parente`{.action}.
+Dans les options disponibles, cliquez directement sur le bouton `Récupérer les NS depuis la zone parente`{.action}.
 
 Un résultat s'affiche :
 
-![glue-zonemaster](images/glue-dns-zonemaster.png){.thumbnail}
+![glue-zonemaster](images/nameservers.png){.thumbnail}
 
 Récupérez les *serveurs DNS* et conservez **toutes** leurs adresses IPv4 (sous la forme *X.X.X.X* où les *X* sont compris entre *0* et *255*) et IPv6 (les autres IPs qui ne sont pas des IPv4) associées. Vous en aurez besoin pour la suite de ce guide.
 
 Dans notre exemple illustré ci-dessus, le domaine **domain.tld** utilise actuellement les **serveurs DNS** suivants :
 
-- **dnsX1.ovh.net** associé à l'IPv4 *111.222.333.443* et l'IPv6 *0000:00d0:1:0000::1* ;
-- **dnsX2.ovh.net** associé à l'IPv4 *111.222.333.444* et l'IPv6 *0000:00d0:1:0000::2*.
+- **dnsX1.ovh.net** associé à l'IPv4 *203.0.113.0* et l'IPv6 *2001:db8:1:1b00:203:0:113:0* ;
+- **dnsX2.ovh.net** associé à l'IPv4 *203.0.113.1* et l'IPv6 *2001:db8:1:1b00:203:0:113:1*.
 
 Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
 
@@ -74,7 +74,7 @@ Sur la nouvelle page, cliquez sur l'onglet `GLUE`{.action}.
 
 Un tableau affiche alors les enregistrements « GLUE » actuellement configurés chez OVHcloud pour votre nom de domaine (s'il y en a). Afin d'ajouter un nouvel enregistrement « GLUE », cliquez sur le bouton `Ajouter`{.action}.
 
-![glueregistry](images/glue-add.png){.thumbnail}
+![glueregistry](images/add.png){.thumbnail}
 
 Dans la fenêtre qui s'ouvre sur votre écran, complétez les informations demandées :
 
@@ -83,17 +83,17 @@ Dans la fenêtre qui s'ouvre sur votre écran, complétez les informations deman
 |Nom du hôte|Personnalisez le nom d'hôte que vous souhaitez utiliser en tant que serveur DNS personnalisé.|
 |IP(s) de destination|Indiquez la ou les adresses IP (IPv4 et / ou IPv6) auxquelles le nom d'hôte doit être relié. Il s'agit de la ou des adresses IP du serveur DNS actuellement utilisé par votre nom de domaine. S'il y a plusieurs adresses IP, séparez-lez par des *virgules*.|
 
-![glueregistry](images/glue-add-glue.png){.thumbnail}
+![glueregistry](images/add-another-glue-record-step-1.png){.thumbnail}
 
 Dans l'image ci-dessus, tout en reprenant l'exemple de l'[étape 1](#step1), le « GLUE » que l'on souhaite ajouter ici (à partir du nom de domaine *domain.tld*) est **dns1.domain.tld**. 
 
-On indique pour ce « GLUE », comme adresses IP de *serveur DNS cible*, les adresses IP *111.222.333.443* (IPv4) et *0000:00d0:1:0000::1* (IPv6). Ces IPs correspondent à l'un des deux serveurs DNS actuellement utilisés pour *domain.tld* (**dnsX1.ovh.net**). 
+On indique pour ce « GLUE », comme adresses IP de *serveur DNS cible*, les adresses IP *203.0.113.0* (IPv4) et *2001:db8:1:1b00:203:0:113:0* (IPv6). Ces IPs correspondent à l'un des deux serveurs DNS actuellement utilisés pour *domain.tld* (**dnsX1.ovh.net**). 
 
 On ajoute ce « GLUE » pour que **dns1.domain.tld** puisse, au final, remplacer le nom de serveur DNS **dnsX1.ovh.net** actuellement utilisé par le nom de domaine *domain.tld*.
 
 Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}, prenez connaissance des informations affichées, puis cliquez sur `Valider`{.action}. Répétez cette manipulation autant de fois que nécessaire, selon le nombre de serveurs DNS utilisés par votre nom de domaine.
 
-Dans notre exemple, vous devrez réitérer l'opération pour créer le « GLUE » **dns2.domain.tld**. Ce dernier remplacera par la suite le serveur DNS **dnsX2.ovh.net**  actuellement associé aux IPv4 *111.222.333.444* et IPv6 *0000:00d0:1:0000::2*
+Dans notre exemple, vous devrez réitérer l'opération pour créer le « GLUE » **dns2.domain.tld**. Ce dernier remplacera par la suite le serveur DNS **dnsX2.ovh.net**  actuellement associé aux IPv4 *203.0.113.1* et IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 ### Étape 3 : créer les enregistrements DNS de type A et AAAA correspondants aux DNS personnalisés
 
@@ -104,7 +104,7 @@ Cette manipulation s'effectue depuis l’interface du prestataire gérant la con
 - **votre nom de domaine n'utilise pas une zone DNS active chez OVHcloud** : rapprochez-vous du prestataire gérant cette dernière. Une fois la manipulation effectuée, poursuivez vers l'étape suivante.
 - **votre nom de domaine utilise une zone DNS active chez OVHcloud** : connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine que vous avez utilisé pour créer les « GLUE » lors de l'[étape 2](#step2). Positionnez-vous sur l'onglet `Zone DNS`{.action} puis cliquez sur `Ajouter une entrée`{.action}. Sélectionnez l'entrée de type *A* ou *AAAA* en fonction du type d'IP associée que vous souhaitez ajouter. Suivez les étapes en renseignant le *sous-domaine* et l'adresse *IPv4* (A) ou *IPv6* (AAAA) puis poursuivez jusqu'à la validation de l'ajout. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
-![glueregistry](images/glue-dns-zone-add.png){.thumbnail}
+![glueregistry](images/add-an-entry.png){.thumbnail}
 
 > [!primary]
 >
@@ -115,10 +115,10 @@ Si l'on reprend notre exemple précédent, les enregistrements « GLUE » que l'
 
 De ce fait, on ajoute les enregistrements suivants dans la zone DNS active du nom de domaine *domain.tld* :
 
- - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *111.222.333.443* (IPv4 du serveur DNS **dnsX1.ovh.net**) ;
- - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *0000:00d0:1:0000::1* (IPv6 du serveur DNS **dnsX1.ovh.net**) ;
- - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *111.222.333.444* (IPv4 du serveur DNS **dnsX2.ovh.net**) ;
- - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *0000:00d0:1:0000::2* (IPv6 du serveur DNS **dnsX2.ovh.net**).
+ - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *203.0.113.0* (IPv4 du serveur DNS **dnsX1.ovh.net**) ;
+ - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *2001:db8:1:1b00:203:0:113:0* (IPv6 du serveur DNS **dnsX1.ovh.net**) ;
+ - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *203.0.113.1* (IPv4 du serveur DNS **dnsX2.ovh.net**) ;
+ - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *2001:db8:1:1b00:203:0:113:1* (IPv6 du serveur DNS **dnsX2.ovh.net**).
 
 On patiente le temps de la propagation DNS.
 
@@ -137,7 +137,7 @@ Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrit
 > Si vous avez personnalisé des serveurs DNS sur un nom de domaine pour les utiliser avec un autre nom de domaine qui n'est pas enregistré chez OVHcloud, rapprochez-vous du prestataire où est enregistré votre autre nom de domaine afin de modifier les serveurs DNS.
 >
 
-![glueregistry](images/glue-dns-servers-modify.png){.thumbnail}
+![glueregistry](images/modify-dns-servers.png){.thumbnail}
 
 > [!primary]
 >
@@ -157,7 +157,7 @@ Cette manipulation s'effectue depuis l’interface du prestataire gérant la con
 
 Une fenêtre comprenant votre zone DNS en mode *textuel* apparaît :
 
-![glueregistry](images/dns-text-format-edition.png){.thumbnail}
+![glueregistry](images/change-in-text-format-step-1.png){.thumbnail}
 
 > [!warning]
 >

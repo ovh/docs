@@ -1,23 +1,24 @@
 ---
 title: "Configure a custom iPXE script to boot your server from the OVHcloud API"
 excerpt: Find out how to configure a custom iPXE script to boot your server from the OVHcloud API
-updated: 2023-08-24
+updated: 2024-02-27
 ---
 
 ## Objective
 
 > [!warning]
 >
-> This article is intended for experimented users that have at least basic knowledge about [Preboot Execution Environment (PXE)](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) and its implementation being used at OVHcloud: [iPXE](https://ipxe.org/).
+> This article is intended for experienced users who have at least basic knowledge about [Preboot Execution Environment (PXE)](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) and its implementation being used at OVHcloud: [iPXE](https://ipxe.org/).
 >
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), it is possible to specify a boot mode among a predefined list: primary disk or rescue.<br>
 With the [OVHcloud API](https://ca.api.ovh.com/), you can define custom scripts.
 
-Using a custom script can be interesting in the following use cases:
+Using a custom script can be useful in the following use cases:
 
 - You are using a volatile OS that you don't want to install on disk and that remains only in memory.
-- You have a multi-cloud strategy and one of the other cloud providers you use doesn't offer the OS you want to install, nor does it offer an alternative solution such as [BringYourOwnImage](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image). You want a unique and standard installation process whatever the cloud provider is, so you have built your own rescue installation image to fully manage the complete OS installation of your dedicated server.
+- You have a multi-cloud strategy and one of the other cloud providers you use doesn't offer the OS you want to install, nor does it offer an alternative solution such as [BringYourOwnImage](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image).
+- You want a standard installation process whatever the cloud provider is, so you have built your own rescue installation image to fully manage the complete OS installation of your dedicated server.
 
 ## Requirements
 
@@ -27,11 +28,6 @@ Using a custom script can be interesting in the following use cases:
 > [!warning]
 >
 > Restarting a dedicated server can cause outage of all services that only depend on this dedicated server.
->
-
-> [!warning]
->
-> This feature is only available for `UEFI` servers. We are working on adding this feature to `LEGACY` boot servers as well.
 >
 
 ## Instructions
@@ -45,7 +41,7 @@ Using a custom script can be interesting in the following use cases:
 > @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
-Specify your script within the `bootScript` attibute directly.
+Specify your script within the `bootScript` attribute directly.
 
 #### Get the server iPXE script <a name="getIpxeScript"></a>
 
@@ -54,7 +50,7 @@ Specify your script within the `bootScript` attibute directly.
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
-You can see your script within the `bootScript` attibute.
+You can see your script within the `bootScript` attribute.
 
 For example:
 

@@ -5,7 +5,7 @@ updated: 2023-04-07
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
   
 ## Wprowadzenie
@@ -55,7 +55,7 @@ Wpisz nazwę domeny na pasku wyszukiwania przeglądarki internetowej.
 
 Jeśli pliki źródłowe Joomla! zostały poprawnie umieszczone w katalogu głównym, na stronie wyboru języka dla Joomla! pojawia się:
 
-![Joomla instalacja step 1](images/Joomla-install-select-language-1.png){.thumbnail}
+![Joomla instalacja step 1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-select-language-1.png){.thumbnail}
 
 Wybierz język, wpisz nazwę swojej strony www i kliknij `Setup Login Data`{.action}.
 
@@ -63,7 +63,7 @@ Wybierz język, wpisz nazwę swojej strony www i kliknij `Setup Login Data`{.act
 
 Zdefiniuj dostęp do swojej przestrzeni administracyjnej (*Back Office*) Joomla! :
 
-![Joomla instalacja step 2](images/Joomla-install-define-admin-2.png){.thumbnail}
+![Joomla instalacja step 2](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-define-admin-2.png){.thumbnail}
 
 > [!primary]
 >
@@ -80,7 +80,7 @@ Sprawdź podane elementy i kliknij `Setup Database Connection`{.action}.
 
 Wpisz wymagane informacje dotyczące bazy danych:
 
-![Joomla instalacja step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
+![Joomla instalacja step 3](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-db-connect-3.png){.thumbnail}
 
 W celu uzupełnienia poniższych pól należy zapoznać się z informacjami podanymi w **przewodniku nr 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation):
 
@@ -110,7 +110,7 @@ Kliknij polecenie `Install Joomla`{.action}.
 
 Pojawi się następujący komunikat:
 
-![Joomla instalacja step 3-1](images/Joomla-install-db-connect-3-1.png){.thumbnail}
+![Joomla instalacja step 3-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-db-connect-3-1.png){.thumbnail}
 
 Jeśli używasz bazy danych poza hostingiem lokalnym, usuń losowo wygenerowany token* podczas instalacji modułu Joomla!.
 
@@ -124,7 +124,7 @@ Następnie przejdź do przeglądarki internetowej i kliknij ponownie przycisk `I
 
 Po zakończeniu instalacji pojawi się następująca strona:
 
-![Joomla instalacja step 4](images/Joomla-install-ending-4.png){.thumbnail}
+![Joomla instalacja step 4](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/joomla/install-ending-4.png){.thumbnail}
 
 Instalacja została zakończona, ale w razie potrzeby możesz dodać dodatkowe języki do CMS-a.
 

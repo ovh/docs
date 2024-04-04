@@ -109,7 +109,7 @@ It is important to note that a resource (instance) remains fully private in this
 
 #### Load Balancer inside private networking <a name="loadbalancer"></a>
 
-OVHcloud offers the Octavia Load Balancer as part of the Public Cloud ecosystem. This provides the most flexibility for scaling your applications.
+OVHcloud offers a Load Balancer as part of the Public Cloud ecosystem. This provides the most flexibility for scaling your applications.
 
 The Public Cloud Load Balancer remains fully private, therefore it needs a Gateway service to access the public network and Floating IP for outbound service exposure.
 

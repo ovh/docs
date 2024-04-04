@@ -5,7 +5,7 @@ updated: 2023-10-26
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -45,13 +45,13 @@ W kolumnie **"Kopie zapasowe"** liczba ta odpowiada liczbie kopii zapasowych dos
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Zapisz teraz`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
+![Web Cloud Databases](images/back-up-now.png){.thumbnail}
 
 #### 2\. Eksport kopii zapasowej
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wyświetl kopie zapasowe.`{.action}
 
-![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
+![Web Cloud Databases](images/show-backups.png){.thumbnail}
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie `Pobierz kopię zapasową`{.action}, aby pobrać kopię zapasową.
 

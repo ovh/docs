@@ -1,7 +1,7 @@
 ---
 title: 'Backup automático - Kernel Panic (cPanel)'
 excerpt: 'Cómo solucionar los problemas de bloqueo de los servidores cPanel durante el backup automático de OVHcloud'
-updated: 2023-06-06
+updated: 2024-01-31
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Al crear una copia de seguridad de su VPS (en caso de suscribirse a las copias d
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) (VPS Value, Essential, Comfort o Elite) en su cuenta de OVHcloud.
+- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es-es/vps/){.external} con un [OS compatible con cPanel](https://www.ovhcloud.com/es-es/vps/os/).
 - cPanel debe estar instalado en su servidor
 
 ## Procedimiento

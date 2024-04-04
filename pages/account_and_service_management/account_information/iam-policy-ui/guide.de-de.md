@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2023-12-06
+updated: 2024-02-19
 ---
 
 > [!primary]
@@ -123,6 +123,9 @@ Die verfügbaren Aktionen hängen vom Ressourcentyp ab und gehören zu einer der
 - **Operate**: Änderungen an der produktbezogenen Infrastruktur ausführen (*Bsp.: Neustart eines Dedicated Servers*).
 
 Ein Suchfeld ist verfügbar, mit dem Sie eine bestimmte Aktion in der Liste identifizieren können.
+
+> [!primary]
+> Aktionen im Zusammenhang mit IP- und vRack-Produkten sowie Aktionen im Zusammenhang mit der Bestellung und Abrechnung sind im IAM von OVHcloud noch nicht verfügbar.
 
 #### Richtlinien bearbeiten
 

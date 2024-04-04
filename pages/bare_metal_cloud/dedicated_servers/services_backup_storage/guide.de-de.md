@@ -252,7 +252,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
 * **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
-##### lftp (für Linux)
+####lftp (für Linux)
 
 > [!primary]
 >

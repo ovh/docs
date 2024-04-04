@@ -1,7 +1,7 @@
 ---
 title: 'Importare un backup nel database di un hosting Web'
-excerpt: 'Come importare un backup in un database di un hosting Web OVH'
-updated: 2018-09-25
+excerpt: 'Come importare un backup in un database di un hosting Web OVHcloud'
+updated: 2023-12-11
 ---
 
 ## Obiettivo
@@ -48,13 +48,13 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Ti ricordiamo che scegliendo questa opzione il contenuto del database verrà sostituito con quello del backup.
 
-![Importazione database](images/database-import-step5.png){.thumbnail}
+![Importazione database](images/restore-backup.png){.thumbnail}
 
 Nella tabella sono elencati tutti i backup disponibili per il database selezionato, di cui viene mostrata la data di creazione e di cancellazione dal sistema OVHcloud.
 
 Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Verifica la correttezza delle informazioni e `Conferma`{.action} per avviare l’operazione. Attendi il completamento del processo.
 
-![Importazione database](images/database-import-step6.png){.thumbnail}
+![Importazione database](images/restore-the-backup.png){.thumbnail}
 
 ### Importazione dallo Spazio Cliente OVH
 
@@ -62,7 +62,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da importare e seleziona `Importa un file`{.action}.
 
-![Importazione database](images/database-import-step1.png){.thumbnail}
+![Importazione database](images/import-file.png){.thumbnail}
 
 Nella nuova finestra, seleziona `Importa un nuovo file`{.action} e poi clicca su `Seguente`{.action}.
 
@@ -71,13 +71,13 @@ Nella nuova finestra, seleziona `Importa un nuovo file`{.action} e poi clicca su
 > L’opzione `Utilizza un file esistente`{.action} permette di importare nuovamente i dati di un file già inviato nel tool di importazione. 
 >
 
-![Importazione database](images/database-import-step2.png){.thumbnail}
+![Importazione database](images/database-import-step-1-new-file.png){.thumbnail}
 
 Assegna un nome al tuo file di backup (per trovarlo più facilmente in un secondo momento) e clicca su `Browse...` per selezionare il file nel tuo computer. Clicca su `Seguente`{.action}.
 
 Attendi il completamento dell’operazione e poi clicca su `Seguente`{.action}.
 
-![Importazione database](images/database-import-step3.png){.thumbnail}
+![Importazione database](images/database-import-step-2-new-file.png){.thumbnail}
 
 Scegli se utilizzare o meno le opzioni aggiuntive proposte:
 
@@ -87,7 +87,7 @@ Scegli se utilizzare o meno le opzioni aggiuntive proposte:
 
 Una volta effettuata la tua scelta, clicca su `Conferma`{.action} e attendi la fine del processo. 
 
-![Importazione database](images/database-import-step4.png){.thumbnail}
+![Importazione database](images/database-import-step-3.png){.thumbnail}
 
 ### Interfaccia Web phpMyAdmin
 
@@ -95,7 +95,7 @@ Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVHcl
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi importare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
 
-![Importazione database](images/database-import-step7.png){.thumbnail}
+![Importazione database](images/go-to-phpmyadmin.png){.thumbnail}
 
 Nella pagina di phpMyAdmin, inserisci le informazioni relative al database, scegli dal menu a tendina se visualizzare i dati attuali del database ed effettua l’accesso.  Seleziona la scheda `Importa`{.action} e inserisci i dati richiesti. Ti ricordiamo che il file caricato non può superare la dimensione massima consentita.
 
@@ -166,4 +166,8 @@ Sostituisci le informazioni generiche del comando con i dati del database in que
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Inziare a utilizzare Web Cloud Databases'
 excerpt: 'Scopri come utilizzare la soluzione Web Cloud Databases'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Se la tua offerta di hosting include l'opzione Web Cloud Databases, accedi al tu
 
 Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Web Cloud Databases**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
 
-![Informazioni generali](images/web-cloud-databases-activation.png){.thumbnail}
+![Informazioni generali](images/web-cloud-databases-enable.png){.thumbnail}
 
 Per completare l'operazione segui le istruzioni riportate qui di seguito per determinare il tipo e la versione del tuo server Web Cloud Databases. e sarà accessibile dalla colonna di sinistra nel `Web Cloud Databases`{.action}.
 
@@ -54,7 +54,7 @@ In questa interfaccia puoi visualizzare anche le informazioni principali relativ
 |Datacenter|Indica il datacenter in cui è stata creata l’istanza. Assicurati che corrisponda a quello dell’hosting Web OVHcloud in cui è (o sarà) ospitato il tuo sito.|
 |Host|Indica il server OVHcloud in cui è stata creata l’istanza. Questa informazione è relativa all'infrastruttura OVHcloud e, in caso di [incidenti](http://status.ovh.net/){.external}, può essere presente nelle nostre comunicazioni.|
 
-![Web Cloud Databases](images/web-cloud-databases-general-information.png){.thumbnail}
+![Web Cloud Databases](images/general-information.png){.thumbnail}
 
 ### Crea un database
 
@@ -65,7 +65,7 @@ In questa interfaccia puoi visualizzare anche le informazioni principali relativ
 
 Per creare il tuo primo database sull’istanza Web Cloud Databases, clicca sulla scheda `Database`{.action} e poi sul pulsante `Aggiungi database`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-database.png){.thumbnail}
+![Web Cloud Databases](images/add-database.png){.thumbnail}
 
 Nella finestra che appare, oltre alla creazione del database, puoi scegliere di:
 
@@ -88,7 +88,7 @@ In base alla tua scelta, completa le informazioni richieste e poi clicca su `Con
 > Per motivi di sicurezza, durante l’inserimento dei dati ti invitiamo a rispettare i requisiti richiesti.
 >
 
-![Web Cloud Databases](images/web-cloud-databases-add-database-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-database-create-user-confirmation.png){.thumbnail}
 
 ### Crea un utente 
 
@@ -101,7 +101,7 @@ Se hai creato l'utente insieme al database, questo step è opzionale. Per un pro
 
 Se un utente aggiuntivo non è necessario al tuo progetto, puoi passare allo step successivo. In caso contrario, per creare un utente sulla tua istanza Web Cloud Databases, clicca sulla scheda `Utenti e diritti`{.action} e poi sul pulsante `Aggiungi un utente`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-user.png){.thumbnail}
+![Web Cloud Databases](images/add-user.png){.thumbnail}
 
 Inserisci le informazioni richieste nella finestra che appare e poi clicca su `Conferma`{.action}.
 
@@ -115,11 +115,11 @@ Inserisci le informazioni richieste nella finestra che appare e poi clicca su `C
 > Per motivi di sicurezza, durante l’inserimento dei dati ti invitiamo a rispettare i requisiti richiesti.
 >
 
-![Web Cloud Databases](images/web-cloud-databases-add-user-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-user-confirmation.png){.thumbnail}
 
 Una volta creato l’utente è necessario assegnargli i permessi per autorizzarlo a effettuare operazioni sul database (come lettura, inserimento e cancellazione dei dati): clicca sull’icona a forma di ingranaggio e seleziona `Gestisci i diritti`{.action}. Si apre una nuova pagina in cui puoi scegliere i permessi da assegnare. Per un utilizzo standard, scegli Amministratore.
 
-![Web Cloud Databases](images/web-cloud-databases-add-rights.png){.thumbnail}
+![Web Cloud Databases](images/manage-rights.png){.thumbnail}
 
 ### Importa un database
 
@@ -136,13 +136,13 @@ Negli step successivi descriviamo come importare un database attraverso lo Spazi
 
 Seleziona la scheda `Database`{.action}, clicca sull’icona a forma di ingranaggio e poi su `Importa un file`{.action}. Nella nuova finestra, seleziona l’opzione `Importa un nuovo file`{.action} e clicca su `Continua`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-import-step1.png){.thumbnail}
+![Web Cloud Databases](images/import-file.png){.thumbnail}
 
 - **Step 2: seleziona e invia il file di backup**
 
 Assegna un nome al file che ti permetterà di identificare questo backup in futuro nel caso in cui volessi ripristinarlo. In seguito, accanto a **File**, seleziona il file di backup del database sul tuo computer, poi clicca su `Continua`{.action}. Attendi la conferma di invio del file e poi clicca sul pulsante `Continua`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-import-step2.png){.thumbnail}
+![Web Cloud Databases](images/database-import-new-file-step-2.png){.thumbnail}
 
 - **Step 3: avvia l'importazione del database**
 
@@ -153,17 +153,17 @@ A questo punto scegli se applicare o meno le seguenti opzioni aggiuntive, poi cl
 |Svuota il database attuale|Il contenuto del database viene totalmente eliminato e sostituito da quello del backup.|
 |Ricevi una email al termine dell’importazione|Una volta completata l'importazione del database, riceverai una notifica via email.|
 
-![Web Cloud Databases](images/web-cloud-databases-add-import-step3.png){.thumbnail} 
+![Web Cloud Databases](images/database-import-new-file-step-3-send-email.png){.thumbnail} 
 
 ### Autorizza un indirizzo IP <a name="trustip"></a>
 
 Affinché l’accesso alla tua istanza Web Cloud Databases funzioni correttamente, è fondamentale indicare gli IP o i blocchi di IP che possono connettersi ai tuoi database. Per fare ciò, clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungere un IP/mask`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-2022.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
 
 Nella finestra che appare indica l’indirizzo IP o la mask da autorizzare in `IP/mask`{.action} e poi, se vuoi, aggiungi una descrizione. Decidi se vuoi fornire un accesso soltanto ai database o anche via SFTP. Infine clicca su `Conferma`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 ### Autorizza la connessione a un hosting Web OVHcloud <a name="trustip"></a>
 
@@ -171,7 +171,7 @@ Di default, la soluzione Web Cloud Databases è automaticamente associata agli h
 
 Clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Accesso agli hosting Web OVHcloud`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step3-2022.png){.thumbnail}
+![Web Cloud Databases](images/access-to-ovhcloud-web-hosting.png){.thumbnail}
 
 ### Collega il tuo sito al database
 
@@ -193,31 +193,11 @@ In ogni caso, è necessario disporre di queste cinque informazioni:
 > Ad esempio, per il nome host `zz1111111-002.eu.clouddb.ovh.net` con la porta SQL `34567`, dovrai inserire `zz1111111-002.eu.clouddb.ovh.net:34567` nel Parte "Host" / "Nome host".
 >
 
-![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}
+![Web Cloud Databases](images/login-information.png){.thumbnail}
 
 ### Recupera i log del tuo server Web Cloud Databases
 
-Per verificare gli ultimi log del tuo database, accedi alla scheda `Logs`{.action} del tuo server Web Cloud Databases. Questa scheda mostra in tempo reale gli alert e gli errori.
-
-![Web Cloud Databases](images/web-cloud-databases-log01.png){.thumbnail}
-
-Per recuperare tutti i log del tuo server Web Cloud Databases, accedi via SFTP a quest'ultimo.
-
-> [!warning]
->
-> Prima di connetterti verifica che l'indirizzo IP della postazione utilizzata sia autorizzato sul tuo server Web Cloud Databases, con l'opzione `SFTP` selezionata. Per maggiori informazioni, consulta la sezione [Autorizza la connessione a un hosting Web OVHcloud](#trustip) di questa guida.
-
-Le informazioni di connessione SFTP sono disponibili nella scheda `Informazioni generali`{.action} del tuo server Web Cloud Databases. Se non ricordi la `password del server`, clicca sul pulsante `...`{.action} a destra per modificarlo.
-
-![Web Cloud Databases](images/web-cloud-databases-log02.png){.thumbnail}
-
-Accedi tramite un client FTP (FileZilla, Cyberduck, WinSCP, ecc...).
-
-Per FileZilla, nel menu `File`{.action}, vai al `Gestionale di siti`{.action}. Clicca su `Nuovo sito`{.action} e inserisci le impostazioni rilevate precedentemente.
-
-![Web Cloud Databases](images/web-cloud-databases-log03.png){.thumbnail}
-
-Il file di log, chiamato `stdout.log`, si trova alla radice.
+Per accedere ai log della soluzione Web Cloud Databases, consulta la nostra guida "[Web Cloud Databases - Come recuperare i log?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Per saperne di più
 

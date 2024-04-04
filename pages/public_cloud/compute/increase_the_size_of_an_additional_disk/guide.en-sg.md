@@ -15,7 +15,7 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 - A [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your Public Cloud project
 - An [additional disk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your project
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
+- Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
 
 ## Instructions
 

@@ -1,7 +1,7 @@
 ---
 title: "Weiterleitung von bei OVHcloud verwalteten Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie verschiedene Weiterleitungsarten für einen von OVHcloud verwalteten Domainnamen erstellen"
-updated: 2023-10-24
+updated: 2024-03-08
 ---
 
 > [!primary]
@@ -53,7 +53,7 @@ Die Tabelle zeigt die für Ihre Domain aktiven Weiterleitungen an. Sie können I
 
 Klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 
-![Vorstellung des Menüs zur Weiterleitung](images/RedirectionPanel.png){.thumbnail}
+![Vorstellung des Menüs zur Weiterleitung](images/add-a-redirection.png){.thumbnail}
 
 Über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) sind drei Weiterleitungsoptionen verfügbar, von denen jede aus **fünf aufeinander folgenden Schritten** besteht. 
 
@@ -76,7 +76,7 @@ Mit dieser Option wird nach Aufruf der weitergeleiteten Domain die Zieldomain in
 
 - **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird die in der Adresszeile `domain2.tld` angezeigt.
 
-![GIF1](images/redirect1.gif){.thumbnail}
+![GIF1](images/visible-redirection.gif){.thumbnail}
 
 > Diese "Standard-Weiterleitung" wird einen HTTP 301 Code zurückgeben.
 
@@ -90,7 +90,7 @@ Mit dieser Option wird nach Aufruf der weitergeleiteten Domain die Zieldomain in
 >>
 >> Die Option `Ebenfalls weiterleiten`{.action} kann angehakt werden, um auch die Subdomain `www` Ihrer Domain/Subdomain weiterzuleiten.
 >>
->> ![Schritt 1](images/Step1.png){.thumbnail}
+>> ![Schritt 1](images/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 2 überzugehen.
 >>
@@ -98,7 +98,7 @@ Mit dieser Option wird nach Aufruf der weitergeleiteten Domain die Zieldomain in
 >>
 >> Wählen Sie `Zu einer Web-Adresse`{.action} aus.
 >>
->> ![Schritt 2](images/Step2.png){.thumbnail}
+>> ![Schritt 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 3 überzugehen.
 >>
@@ -106,7 +106,7 @@ Mit dieser Option wird nach Aufruf der weitergeleiteten Domain die Zieldomain in
 >>
 >> Wählen Sie `Mit einer sichtbaren Weiterleitung`{.action} aus den beiden Optionen.
 >>
->> ![Schritt 3](images/Step3Visi.png){.thumbnail}
+>> ![Schritt 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 4 überzugehen.
 >>
@@ -114,7 +114,7 @@ Mit dieser Option wird nach Aufruf der weitergeleiteten Domain die Zieldomain in
 >>
 >> Wählen Sie `Permanent (301)`{.action} aus den beiden Auswahlmöglichkeiten und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im Feld `Web-Adresse`{.action} ein.
 >>
->> ![Schritt 4](images/Step4VisiPerma.png){.thumbnail}
+>> ![Schritt 4](images/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 5 überzugehen.
 >>
@@ -122,7 +122,7 @@ Mit dieser Option wird nach Aufruf der weitergeleiteten Domain die Zieldomain in
 >>
 >> Überprüfen Sie im letzten Schritt, ob die angezeigten Informationen korrekt sind.
 >>
->> ![Schritt 5](images/Step5VisiPerma.png){.thumbnail}
+>> ![Schritt 5](images/add-a-redirection-step-5-permanent.png){.thumbnail}
 >>
 >> Klicken Sie auf `Bestätigen`{.action}, um Ihre Konfiguration zu validieren.
 > >
@@ -143,7 +143,7 @@ Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtb
 
 - **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird die in der Adresszeile `domain2.tld` angezeigt.
 
-![GIF1](images/redirect1.gif){.thumbnail}
+![GIF1](images/visible-redirection.gif){.thumbnail}
 
 > Diese Weiterleitung wird einen HTTP 302 Code zurückgeben.
 
@@ -157,7 +157,7 @@ Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtb
 >>
 >> Die Option `Ebenfalls weiterleiten`{.action} kann angehakt werden, um auch die Subdomain `www` Ihrer Domain/Subdomain weiterzuleiten.
 >>
->> ![Schritt 1](images/Step1.png){.thumbnail}
+>> ![Schritt 1](images/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 2 überzugehen.
 >>
@@ -165,7 +165,7 @@ Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtb
 >>
 >> Wählen Sie `Zu einer Web-Adresse`{.action}.
 >>
->> ![Schritt 2](images/Step2.png){.thumbnail}
+>> ![Schritt 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 3 überzugehen.
 >>
@@ -173,7 +173,7 @@ Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtb
 >>
 >> Wählen Sie `Mit einer sichtbaren Weiterleitung`{.action} aus den beiden Optionen.
 >>
->> ![Schritt 3](images/Step3Visi.png){.thumbnail}
+>> ![Schritt 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 4 überzugehen.
 >>
@@ -181,7 +181,7 @@ Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtb
 >>
 >> Wählen Sie `Temporär (302)`{.action} aus den beiden Auswahlmöglichkeiten und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im Feld `Web-Adresse`{.action} ein.
 >>
->> ![Schritt 4](images/Step4VisiTempo.png){.thumbnail}
+>> ![Schritt 4](images/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 5 überzugehen.
 >>
@@ -189,7 +189,7 @@ Die Positionierung in Suchmaschinen ist weniger effizient als bei einer **sichtb
 >>
 >> Überprüfen Sie im letzten Schritt, ob die angezeigten Informationen korrekt sind.
 >>
->> ![Schritt 5](images/Step5VisiTempo.png){.thumbnail}
+>> ![Schritt 5](images/add-a-redirection-step-5-temporary.png){.thumbnail}
 >>
 >> Klicken Sie auf `Bestätigen`{.action}, um Ihre Konfiguration zu validieren.
 >>
@@ -208,7 +208,7 @@ Diese Weiterleitung erlaubt es, nach der Eingabe der weitergeleiteten Domain, di
 
 - **Beispiel**: Wenn Sie `domain1.tld` auf `domain2.tld` weiterleiten, wird `domain1.tld` in der Adresszeile Ihres Browsers angezeigt.
 
-![GIF2](images/redirect2.gif){.thumbnail}
+![GIF2](images/invisible-redirection.gif){.thumbnail}
 
 Die unsichtbare Weiterleitung funktioniert über einen *iFrame* `HTML tag`. Damit kann Ihre weitergeleitete Domain den Inhalt der Zieldomain-Webseite in ihre eigene HTML-Seite integrieren.
 
@@ -232,7 +232,7 @@ Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zield
 >>
 >> Die Option `Ebenfalls weiterleiten`{.action} kann angehakt werden, um auch die Subdomain `www` Ihrer Domain/Subdomain weiterzuleiten.
 >>
->> ![Schritt 1](images/Step1.png){.thumbnail}
+>> ![Schritt 1](images/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 2 überzugehen.
 >>
@@ -240,7 +240,7 @@ Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zield
 >>
 >> Wählen Sie `Zu einer Web-Adresse`{.action} aus.
 >>
->> ![Schritt 2](images/Step2.png){.thumbnail}
+>> ![Schritt 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 3 überzugehen.
 >>
@@ -248,7 +248,7 @@ Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zield
 >>
 >> Wählen Sie `Mit einer unsichtbaren Weiterleitung`{.action} aus den beiden angegebenen Optionen.
 >>
->> ![Schritt 3](images/Step3Invi.png){.thumbnail}
+>> ![Schritt 3](images/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
 >>
 >> Klicken Sie auf `Weiter`{.action}, um zu Schritt 4 überzugehen.
 >>
@@ -256,7 +256,7 @@ Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zield
 >>
 >> Wählen Sie `Temporär (302)`{.action} aus den beiden Auswahlmöglichkeiten und geben Sie die Zieldomain oder -URL Ihrer Weiterleitung im Feld `Web-Adresse`{.action} ein.
 >>
->> ![Schritt 4](images/Step4Invi.png){.thumbnail}
+>> ![Schritt 4](images/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
 >> Für diesen Schritt stehen Ihnen drei optionale Einstellungen zur Verfügung:
 >>
@@ -270,7 +270,7 @@ Diese Einbettung von Inhalten verhindert, dass Besuchern Ihrer Website die Zield
 >>
 >> Überprüfen Sie im letzten Schritt, ob die angezeigten Informationen korrekt sind.
 >>
->> ![Schritt 5](images/Step5Invi.png){.thumbnail}
+>> ![Schritt 5](images/add-a-redirection-step-5-iframe.png){.thumbnail}
 >>
 >> Klicken Sie auf `Bestätigen`{.action}, um Ihre Konfiguration zu validieren.
 >>

@@ -1,6 +1,6 @@
 ---
 title: Comment activer mes lignes téléphoniques ? (Offres ADSL/VDSL/FTTH)
-updated: 2020-11-02
+updated: 2024-01-09
 ---
 
 ## Objectif
@@ -14,8 +14,11 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 
 - Disposer d'un [pack ADSL/VDSL/FTTH](https://www.ovhtelecom.fr/offre-internet/) actif.
 - Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
 
-## En Pratique
+![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+
+## En pratique
 
 ### Combien de lignes puis-je activer ?
 
@@ -30,8 +33,8 @@ En sélectionnant votre pack, vous obtenez une vue globale des services associé
 
 Dans l'exemple ci-dessus, il y a :
 
--   1 emplacement téléphonique déjà activé ;
--   1 emplacement fax déjà activé.
+- 1 emplacement téléphonique déjà activé ;
+- 1 emplacement fax déjà activé.
 
 Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique pour ce pack ADSL/VDSL/FTTH.
 
@@ -45,7 +48,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 
 Vous avez alors le choix d'activer la ligne **avec ou sans** téléphone.
 
-#### **Sans téléphone**
+#### Sans téléphone
 
 Une ligne sans téléphone est une ligne qui sera techniquement configurée directement dans le modem sans action de votre part. Il vous suffira de brancher un simple téléphone **analogique** sur le modem. Plus de détails [ici](./#comment-utiliser-les-lignes-activees-sans-telephone).
 
@@ -60,7 +63,7 @@ Pour activer une ligne sans téléphone, choisissez le nombre de lignes à activ
 
 Cette ligne sera alors disponible dans un délai moyen d'une heure.
 
-#### **Avec un téléphone**
+#### Avec un téléphone
 
 L'activation d'une ligne avec téléphone inclut l'envoi d'un téléphone IP sous caution qu'il suffira de brancher sur le réseau de votre modem comme un simple ordinateur.
 
@@ -94,7 +97,7 @@ Si vous avez activé une ligne sans téléphone, vous devez posséder un simple 
 
 Pour que cette ligne soit utilisable, **les conditions suivantes doivent être remplies**:
 
-Le voyant **Voice** du modem doit être allumé pour les modems Technicolor (TG788 et TG799). 
+Le voyant **Voice** du modem doit être allumé pour les modems Technicolor (TG788 et TG799).
 <br>Le voyant **Phone** du modem doit être allumé sur les modems Zyxel.
 <br>Si ce n'est pas le cas, vérifiez bien que l'activation de ligne a été effectuée sur l'espace client OVHcloud et patientez une heure.
 
@@ -109,6 +112,12 @@ Votre téléphone analogique doit être branché sur le port **phone 1** du mode
 >
 
 ![schéma branchement tg788](images/untitled.jpg){.thumbnail}
+
+### Désactiver une ligne téléphonique associée à une offre FTTH / xDSL
+
+La facturation des lignes téléphoniques incluses dans votre offre FTTH / xDSL est comprise dans la facturation globale de cette offre. Les désactiver n'aura donc pas d'impact sur cette facturation.
+
+Si vous souhaitez diminuer le nombre de lignes incluses dans votre offre, nous vous conseillons d'envisager de changer d'offre. Consultez notre guide « [Comment changer mon offre xDSL/FTTH](/pages/web_cloud/internet/internet_access/comment_changer_mon_offre_xdsl) ».
 
 ## Aller plus loin
 

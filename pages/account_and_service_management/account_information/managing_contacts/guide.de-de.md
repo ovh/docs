@@ -1,7 +1,7 @@
 ---
 title: 'Die Kontakte Ihrer Dienste verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten'
-updated: 2021-12-13
+updated: 2024-02-16
 ---
 
 > [!warning]
@@ -38,6 +38,10 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 - Der bisherige sowie der neue Rechnungskontakt haben keine offenen Rechnungsbeträge.
 
 ## In der praktischen Anwendung
+
+> [!primary]
+> Die Verwaltung der Kontakte ist nur zwischen zwei OVHcloud Kunden-Accounts in derselben geografischen Zone möglich.
+> Zum Beispiel ist es nicht möglich, Kontakte zwischen einem Kunden-Account in Europa und einem Account in Kanada zu verwalten.
 
 ### Auf die Kontaktverwaltung zugreifen <a name="gestion_des_contacts"></a>
 

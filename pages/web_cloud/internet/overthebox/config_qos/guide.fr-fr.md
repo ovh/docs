@@ -1,6 +1,6 @@
 ---
-title: 'Configurer la QoS'
-excerpt: "Découvrez comment configurer la QoS sur votre équipement OverTheBox afin d'améliorer la gestion de votre bande passante"
+title: 'Configurer la qualité de service (QoS) d’OverTheBox'
+excerpt: "Découvrez comment configurer la qualité de service (QoS) sur votre OverTheBox afin d'améliorer la gestion de votre bande passante"
 updated: 2021-04-28
 ---
 

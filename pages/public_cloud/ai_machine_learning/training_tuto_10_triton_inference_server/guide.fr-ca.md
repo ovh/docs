@@ -1,5 +1,5 @@
 ---
-title: : AI Training - Tutoriel - Premiers pas avec Triton Inference Server de NVIDIA et AI Training
+title: AI Training - Tutoriel - Premiers pas avec Triton Inference Server de NVIDIA et AI Training
 excerpt: "Comment utiliser de manière optimale les modèles d'IA avec le serveur d'inférence Triton de NVIDIA et AI Training"
 updated: 2023-11-27
 ---
@@ -286,7 +286,7 @@ Find the address of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Log in on the shared registry with your usual OpenStack credentials:
+Log in on the shared registry with your usual AI Platform user credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>

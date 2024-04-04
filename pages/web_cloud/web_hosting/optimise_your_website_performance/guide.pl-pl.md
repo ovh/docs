@@ -1,11 +1,11 @@
 ---
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -72,9 +72,9 @@ W przypadku korzystania z mechanizmu PHP-FPM zmieniają się niektóre zmienne s
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Informacje o aktualizacji wersji PHP zawiera [ten przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Informacje o aktualizacji wersji PHP zawiera [ten przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Aby zmienić wersję PHP-FPM na _stabilną_ lub uzyskać szczegółowe informacje o bardziej zaawansowanych opcjach hostingu WWW, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Aby zmienić wersję PHP-FPM na _stabilną_ lub uzyskać szczegółowe informacje o bardziej zaawansowanych opcjach hostingu WWW, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Plik _.ovhconfig_ działa w katalogu głównym hostingu albo w podkatalogu poziomu 1 (na przykład: _/www/_), ale nie w katalogach poziomu drugiego lub wyższego (na przykład: _/www/test/_, _/www/test/test2/_).
 
@@ -96,17 +96,21 @@ Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów ho
 
 Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-Dostęp do logów:
-\- Kliknij domenę w sekcji `Hosting`{.action}.
-\- Kliknij kartę `Więcej +`{.action}, a następnie wybierz pozycję `Statystyki i logi`{.action}.
-\- Kliknij wyświetlone linki, aby uzyskać dostęp do _statystyk odwiedzin witryny internetowej_ lub _logów_.
-![logs](images/logs_highlighted.png){.thumbnail}
+Dostęp do statystyk i logów:
+
+1. W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www.
+2. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+3. Kliknij przycisk `Wyświetl statystyki`{.action} wyświetlone, aby uzyskać dostęp do statystyk odwiedzin strony www lub `Sprawdź logi`{.action}, aby sprawdzić logi dostępne dla Twojego hostingu www.
+
+![logi](images/tab.png){.thumbnail}
 
 Dostęp do wykresów:
-\- Kliknij domenę w sekcji `Hosting`{.action}.
-\- W sekcji `Informacje ogólne`{.action} przewiń do dołu strony, gdzie znajdują się wykresy wykorzystania hostingu.
-\- Wybierz typ informacji i zakres dat, dla których chcesz wyświetlić dane.
-![graphs](images/graphs_highlighted.png){.thumbnail}
+
+1. W kolumnie po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting www.
+2. na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}. Przewiń w dół strony, na której znajduje się grafika związana z korzystaniem z hostingu.
+3. Wybierz **typ** informacji oraz **okres** wyświetlanych danych.
+
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Jakie typy informacji można wyświetlić?
 
@@ -228,7 +232,7 @@ Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, al
 
 ## Sprawdź również
 
-[Zmiana konfiguracji hostingu WWW](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
+[Zmiana konfiguracji hostingu WWW](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Zarządzanie bazą danych w hostingu WWW](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

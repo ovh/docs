@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z API OVHcloud'
 excerpt: 'Dowiedz się, jak korzystać z API OVHcloud'
-updated: 2023-09-08
+updated: 2024-02-01
 ---
 
 > [!primary]
@@ -199,6 +199,31 @@ client = ovh.Client(
 # Print nice welcome message
 print("Welcome", client.get('/me')['firstname'])
 ```
+
+#### Tworzenie listy i usuwanie kluczy
+
+Aktualnie w Panelu klienta nie ma opcji wyświetlania i usuwania kluczy. Możesz to zrobić za pomocą portalu API:
+
+- Wystaw identyfikatory kluczy z następującym wywołaniem:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application
+>
+
+- Pobierz informacje na temat klucza z następującego połączenia:
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/application/{applicationId}
+>
+
+- Odwołanie klucza za pomocą następującego wywołania:
+
+> [!api]
+>
+> @api {v1} /me DELETE /me/api/application/{applicationId}
+>
 
 ## Sprawdź również <a name="gofurther"></a>
 

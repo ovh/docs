@@ -84,7 +84,7 @@ Une fois la zone DNS créée, accédez à sa gestion à l'aide de notre guide «
 
 **Exemple** : Pour le nom de domaine « domain.tld », le rendu doit être le suivant :
 
-![hosting](images/DNSzone.png){.thumbnail}
+![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -137,7 +137,7 @@ Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHc
 
 **Exemple** : pour le nom de domaine « domain.tld » :
 
-![hosting](images/DNSmultisite.png){.thumbnail}
+![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
 
 **La modification des entrées DNS « A », « CNAME » et « TXT » doit être effectuée auprès du fournisseur DNS actuel de votre nom de domaine et nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effectif.**
 

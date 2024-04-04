@@ -1,7 +1,7 @@
 ---
 title: Zoptymalizuj wysyłkę e-maili
 excerpt: Dowiedz się, jak wysyłać e-maile zmniejszając ryzyko spamu
-updated: 2022-12-20
+updated: 2024-01-24
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-12-20
 
 ## Wprowadzenie
 
-Polityka antyspamowa jest coraz bardziej rygorystyczna. Aby ograniczyć wysyłkę e-maili i zapewnić otrzymywanie wiadomości bez blokady narzędzi bezpieczeństwa, konieczne jest zdefiniowanie parametrów uwierzytelniania i weryfikacji treści wiadomości.
+Ogólnie rzecz biorąc, polityka antyspamowa jest surowa. Aby usprawnić wysyłkę e-maili i zagwarantować, że adresaci będą je otrzymywać bez blokowania narzędzi zabezpieczających, konieczne jest wprowadzenie pewnych ustawień umożliwiających uwierzytelnianie wiadomości i ich zawartości na serwerach odbiorców, które je przetwarzają.
 
 **Niniejszy przewodnik wyjaśnia, jak zoptymalizować wysyłkę e-maili.**
 
@@ -23,7 +23,8 @@ Polityka antyspamowa jest coraz bardziej rygorystyczna. Aby ograniczyć wysyłk�
 
 ## Wymagania początkowe
 
-- Posiadać już skonfigurowany serwer poczty elektronicznej
+- Pełnienie funkcji administratora skonfigurowanego serwera e-mail.
+- Możliwość zarządzania strefą DNS domeny lub domen używanych do wysyłki
 
 > [!warning]
 >
@@ -41,20 +42,24 @@ W przypadku infrastruktury dedykowanej (serwer dedykowany, VPS, instancja Public
 > Symbol przed *all* ma wielkie znaczenie:
 >
 > - `+`: akceptuj
-> - `-`: nie akceptuj
-> - `~`: niepowodzenie miękkie (*soft fail*)
+> - `-`: odrzuć
+> - `~`: niepowodzenie (*soft fail*)
 > - `?`: neutralny
 >
 
-Aby uzyskać więcej informacji na temat składni rekordu SPF, zapoznaj się z poniższym linkiem: <http://www.open-spf.org/>.
-
-Możesz oczywiście pójść o krok dalej, konfigurując rekordu SPF danej domeny lub podając IPv6. Aby dowiedzieć się, jak to zrobić, zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji rekordu SPF](/pages/web_cloud/domains/dns_zone_spf).
+Możesz oczywiście pójść o krok dalej i skonfigurować rekord SPF dla określonej nazwy domeny lub użyć adresu IPv6. Aby lepiej zrozumieć rekord SPF, zapoznaj się z przewodnikiem dotyczącym [konfiguracji rekordu SPF](/pages/web_cloud/domains/dns_zone_spf).
 
 ### Konfiguracja rekordu DKIM
 
-Konfiguracja rekordu DKIM (DomainKeys Identified Mail) zapewnia dodatkową ochronę, aby konta e-mail nie były oznaczone jako spam. DKIM jest w uproszczeniu podpisem umożliwiającym uwierzytelnienie domeny nadawcy.
+Rekord DKIM (DomainKeys Identified Mail) służy do podpisywania e-maili, aby zapobiec ich przywłaszczeniu. Podpis ten działa na zasadzie pary klucz prywatny / klucz publiczny, pozwalając na uwierzytelnienie domeny nadawcy.
 
-Weryfikacja odbywa się za pomocą klucza DKIM, który ma zostać dodany do strefy DNS. Znajdziesz tu różne generatory kluczy DKIM, w tym <http://dkimcore.org/tools/keys.html>. Prosimy o ścisłe przestrzeganie instrukcji podanych na stronie wybranego generatora.
+Więcej informacji znajdziesz w przewodniku dotyczącym [konfiguracji rekordu DKIM](/pages/web_cloud/domains/dns_zone_dkim).
+
+### Konfiguruj rekord DMARC
+
+Rekord DMARC (Domain-based Message Authentication, Reporting and Conformance) to standard bezpieczeństwa oparty na 2 metodach zabezpieczeń e-mail SPF i DKIM. Argumenty zapisane w rekordzie DMARC kierują odbiorcą w jaki sposób należy przetwarzać e-maile, w zależności od wyniku SPF i/lub DKIM. Adres e-mail może zostać zdefiniowany w rekordzie DMARC, który otrzyma raport dotyczący niepowodzeń uwierzytelnienia.
+
+Więcej informacji zawiera przewodnik dotyczący [konfigurowania rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
 ### Konfiguracja rewers (*reverse IP*) <a name="reverseip"></a>
 
@@ -62,9 +67,9 @@ Aby zoptymalizować wysyłkę i zmniejszyć ryzyko blokady kont e-mail, należy 
 
 Najpierw należy utworzyć rekord A w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
 
-Jeśli Twoje Rewers DNS są zarządzane przez OVHcloud, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/domains/dns_zone_edit#dostep-do-interfejsu-zarzadzania-strefa-dns).
+Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z naszym przewodnikiem [dotyczącym edycji strefy DNS OVHcloud w Panelu klienta](/pages/web_cloud/domains/dns_zone_edit#dostep-do-interfejsu-zarzadzania-strefa-dns).
 
-Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
+Po zmianie strefy DNS Twojej domeny konieczny jest czas propagacji wynoszący maksymalnie 24 godziny, aby modyfikacje stały się widoczne.
 
 Następnie dodaj rekordu PTR (znany również jako rewers):
 
@@ -101,9 +106,9 @@ Wprowadź nazwę Twojej domeny w sekcji `Rewers` i kliknij `Zatwierdź`{.action}
  
 Microsoft używa białej listy. Oznacza to, że najpierw każdy serwer znajduje się na czarnej liście, a do zatwierdzenia serwera e-mail konieczna jest specjalna procedura.
 
-Przed rozpoczęciem procedury białej listy upewnij się, że skonfigurowałeś [rewers](#reverseip) dla Twojego IP (a nie domyślny rewers OVHcloud).
+rzed rozpoczęciem procedury białej listy adresów IP upewnij się, że skonfigurowałeś [rewers](#reverseip) dla Twojego adresu IP (a nie domyślny rewers OVHcloud).
 
-Microsoft również sprawdza pole SPF, dlatego zaleca się [skonfigurowanie pola](#spfrecord).
+Firma Microsoft sprawdza również rekord SPF, dlatego zaleca się jego skonfigurowanie.
 
 Następnie należy podpisać umowy SNDS (Smart Network Data Services) i JMRP (Junk Mail Reporting Partner Program).
 
@@ -139,15 +144,20 @@ Aby uzyskać więcej informacji, prosimy o otwarcie [wniosku o udzielenie pomocy
 
 #### Na serwer Gmail
 
-Dodanie określonych rekordów (np. rekordu DMARC) może ułatwić odbieranie e-maili, jeśli Twój odbiorca jest w Gmailu. Oto artykuł Google, który może Wam w tym pomóc: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
-
-Google proponuje również [artykuł poświęcony zapobieganiu spamowi](https://support.google.com/mail/answer/81126?hl=en){.external} dla użytkowników Gmail.
+Dodanie określonych rekordów, takich jak DMARC (Domain-based Message Authentication, Reporting and Conformance) lub DKIM (DomainKeys Identified Mail) może ułatwić odbieranie wiadomości e-mail, jeśli Twój odbiorca jest w Gmailu. Zapoznaj się z naszymi przewodnikami [na dole tej strony](#go-further), aby je skonfigurować.
 
 ### Sprawdź Twoje dane
 
 Może być interesujące, aby korzystać ze strony jak [Mail Tester](http://www.mail-tester.com/), aby sprawdzić, czy wszystkie ustawienia są poprawne.
 
 ## Sprawdź również
+
+[Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+
+[Konfiguracja rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)
+
+[Konfiguracja rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+
 
 Aby wesprzeć Cię w uruchomieniu Twoich rozwiązań OVHcloud, skontaktuj się z naszą [siecią partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

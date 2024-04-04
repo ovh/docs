@@ -1,6 +1,6 @@
 ---
-title: 'Gestionar los motores de ejecución en un hosting Cloud Web'
-excerpt: 'Cómo realizar las operaciones relativas a los motores de ejecución en un hosting Cloud Web'
+title: "Gestionar los motores de ejecución en un hosting Cloud Web"
+excerpt: "Cómo realizar las operaciones relativas a los motores de ejecución en un hosting Cloud Web"
 updated: 2022-07-27
 ---
 
@@ -23,9 +23,7 @@ Cloud Web ofrece la posibilidad de utilizar distintos lenguajes de programación
 
 Para adaptarse a todos los proyectos de forma óptima, los planes de alojamiento Cloud Web le permiten disponer de uno o varios motores de ejecución. Por lo tanto, la elección de uno u otro dependerá de lo que desee instrumentar. 
 
-Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicamente compatible con su alojamiento Cloud Web**. Puede consultar los lenguajes compatibles visitando el siguiente enlace: <https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/>. 
-
-Una vez que sepa exactamente qué motor o motores de ejecución debe utilizar, puede realizar las acciones que se detallan a continuación.
+Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicamente compatible con su alojamiento Cloud Web**. Puede consultar los lenguajes compatibles visitando el siguiente enlace: <https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/>.Una vez que sepa exactamente qué motor o motores de ejecución debe utilizar, puede realizar las acciones que se detallan a continuación.
 
 ### Etapa 1:  acceder a la gestión de los motores de ejecución
 
@@ -33,7 +31,7 @@ Para ver los motores de ejecución de su alojamiento Cloud Web, inicie sesión e
 
 Se mostrará una tabla con los motores de ejecución que haya añadido a su alojamiento Cloud Web hasta ese momento. Tenga en cuenta que se crea automáticamente un motor en el momento de la instalación de su alojamiento.
 
-![cloudweb](images/cloud-web-runtime-step1.png){.thumbnail}
+![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
 
 ### Etapa 2: gestionar los motores de ejecución
 
@@ -84,7 +82,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 
 Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio ){.external}».
 
-![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -98,7 +96,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 
 Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio ){.external}».
 
-![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -112,7 +110,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 
 Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio ){.external}».
 
-![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Etapa 3: asociar el motor de ejecución a un multisitio
 
@@ -127,17 +125,15 @@ Una vez que disponga del motor o los motores de ejecución necesarios para su pr
 
 En la columna `«Motor de ejecución»` de la tabla, compruebe que el motor de ejecución asociado a los dominios de su interés sea el correcto. Los nombres que se visualizan corresponden al «Nombre personalizado» que haya establecido.
 
-![cloudweb](images/cloud-web-runtime-step4.png){.thumbnail}
+![cloudweb](images/runtime-software-applications.png){.thumbnail}
 
 Si quiere cambiar el motor de ejecución asociado a un multisitio, haga clic en el pictograma con forma de rueda dentada situado a la derecha del dominio de su interés y, seguidamente, seleccione `«Editar»`{.action}.
-
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
 
 A continuación, seleccione el motor correcto al lado de `«Motor de ejecución»` en la ventana que aparece. Le recordamos que los nombres que aparecen corresponden al «Nombre personalizado» que haya establecido. Es absolutamente necesario que el sitio o la aplicación accesible desde el dominio en cuestión sea compatible con el motor de ejecución seleccionado. 
 
 Una vez seleccionado, prosiga con las etapas correspondientes hasta finalizar.
 
-![cloudweb](images/cloud-web-runtime-step6.png){.thumbnail}
+![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
 
 ## Más información
 

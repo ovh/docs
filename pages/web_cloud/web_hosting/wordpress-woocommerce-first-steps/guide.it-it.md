@@ -35,19 +35,19 @@ Se non lo hai già fatto, ti consigliamo di utilizzare il protocollo HTTPS prima
 
 Accedi alla tua interfaccia di amministrazione digitando `/wp-admin` o `/wp-login` nella barra di ricerca dopo l'URL del tuo dominio (il reindirizzamento avviene automaticamente):
 
-![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
+![Admin page of WordPress](images/admin-login.png){.thumbnail}
 
 Nel menu a sinistra, clicca su `Plugin`{.action} e poi su `Aggiungi nuovo`{.action}:
 
-![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
+![Dashboard, Plugins, Add new](images/plugins.png){.thumbnail}
 
 Nella nuova pagina `Aggiungi plugin`{.action}, inserisci "Woocommerce" nella barra di ricerca in alto a destra e clicca su `Installa adesso`{.action} nel riquadro associato all'estensione **WooCommerce**:
 
-![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
+![Install WooCommerce](images/add-plugin-woocommerce-install-now.png){.thumbnail}
 
 Clicca su `Attiva`{.action}:
 
-![Attivate WooCommerce](images/wordpress-woocommerce-first-steps_4.png){.thumbnail}
+![Attivate WooCommerce](images/add-plugin-woocommerce-activate.png){.thumbnail}
 
 ### Configurazione 
 
@@ -55,27 +55,27 @@ Clicca su `Attiva`{.action}:
 
 Se non hai ancora configurato la tua estensione **WooCommerce**, l'assistente di configurazione ti aiuterà a inserire le informazioni relative al tuo sito di vendita online. Inserisci il form e clicca su `Continua`{.action}:
 
-![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps_5.png){.thumbnail}
+![Setup Wizard - Store Details](images/woocommerce-store-details.png){.thumbnail}
 
 Seleziona il tuo o i tuoi domini di attività:
 
-![Setup Wizard - Industry](images/wordpress-woocommerce-first-steps_6.png){.thumbnail}
+![Setup Wizard - Industry](images/woocommerce-industry.png){.thumbnail}
 
 Scegli il tipo di prodotti che vuoi vendere sul tuo sito Web (alcune opzioni sono a pagamento):
 
-![Setup Wizard - Product Types](images/wordpress-woocommerce-first-steps_7.png){.thumbnail}
+![Setup Wizard - Product Types](images/woocommerce-product-types.png){.thumbnail}
 
 Indica la natura della tua attività:
 
-![Setup Wizard - Business Details](images/wordpress-woocommerce-first-steps_8.png){.thumbnail}
+![Setup Wizard - Business Details](images/woocommerce-business-details.png){.thumbnail}
 
 Aggiungi funzionalità opzionali (e gratuite) se vuoi:
 
-![Setup Wizard - Business Details, free features](images/wordpress-woocommerce-first-steps_9.png){.thumbnail}
+![Setup Wizard - Business Details, free features](images/woocommerce-business-details-2.png){.thumbnail}
 
 Infine, scegli un tema tra quelli proposti:
 
-![Setup Wizard - Choose a theme](images/wordpress-woocommerce-first-steps_10.png){.thumbnail}
+![Setup Wizard - Choose a theme](images/woocommerce-theme.png){.thumbnail}
 
 **WooCommerce**: crea un account per utilizzare l'estensione **Jetpack**, installata automaticamente oltre all'estensione **WooCommerce**. La creazione di un account è facoltativa, ti permetterà di accedere alle funzioni limitate di **Jetpack** senza doverti autenticare.
 
@@ -85,17 +85,17 @@ Il tuo e-commerce è stato configurato con i parametri generali.
 
 Clicca su `Plugin`{.action} per visualizzare le estensioni installate e su `Plugin installati` Visualizzi una lista delle tue estensioni. Clicca su `Impostazioni`{.action} nel modulo **WooCommerce**:
 
-![Setup Wizard - Estensione, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
+![Setup Wizard - Estensione, WooCommerce, Settings](images/plugins-woocommerce.png){.thumbnail}
 
 Per visualizzare le impostazioni, clicca su `WooCommerce`{.action} > `Impostazioni`{.action}:
 
-![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps_12.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings](images/dashboard-woocommerce-settings.png){.thumbnail}
 
 ### Regolamenti
 
 La pagina delle impostazioni contiene diverse schede:
 
-![Setup Wizard - WooCommerce, Settings, Tabs](images/wordpress-woocommerce-first-steps_13.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, Tabs](images/woocommerce-general.png){.thumbnail}
 
 #### Generale
 
@@ -108,7 +108,7 @@ Questa scheda ti permette di definire gli elementi seguenti:
 - cedole
 - dati monetari (valuta del sito, visualizzazione).
 
-![Setup Wizard - WooCommerce, Settings, General tab](images/wordpress-woocommerce-first-steps_14.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, General tab](images/woocommerce-general-currency.png){.thumbnail}
 
 #### Prodotti
 

@@ -39,19 +39,19 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 > **MX Plan email**
 >>
 >> Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Emails`{.action} tab. The window that appears will display all email accounts. <br>
->> Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
+>> Click the `...`{.action} button, then click `Edit`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Click `Microsoft`{.action}, then `Exchange`{.action} and choose the name of the service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display all email accounts.<br>
->> Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
+>> Click the `...`{.action} button, then click `Edit`{.action}.<br><br>
 >>![email](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 
 ### Changing the password via webmail
 
-Changing your password via webmail is available for OVHcloud email offers using **OWA** (**O**utlook **W**eb **A**pplication):
+Changing your password via webmail is available for OVHcloud email offers using **OWA** (**O**utlook **W**eb **A**pp):
 
 - MX Plan email
 - Exchange

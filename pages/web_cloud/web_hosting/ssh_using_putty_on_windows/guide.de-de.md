@@ -31,7 +31,7 @@ Diese Informationen finden Sie im Konfigurationspanel. Gehen Sie in den Bereich 
 - Setzen Sie das Häkchen bei SSH.
 - Klicken Sie auf Open.
 
-![Putty](images/3094.png){.thumbnail}
+![Putty](images/configuration.png){.thumbnail}
 
 ## Verbindung zu Ihrem Hosting
 

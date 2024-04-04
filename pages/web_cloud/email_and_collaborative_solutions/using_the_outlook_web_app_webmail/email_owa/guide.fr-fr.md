@@ -1,12 +1,12 @@
 ---
-title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)'
+title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2020-02-25
+updated: 2024-03-26
 ---
 
 ## Objectif
 
-Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web Application (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/fr/mail/).
+Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/fr/mail/).
 
 **Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
 
@@ -17,13 +17,13 @@ Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails 
 
 ## En pratique
 
-Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide. 
+Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur des paramètres non abordés dans ce guide.
 
 Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin_1) en bas de ce guide.
 
 > [!primary]
 >
-> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné. Vous pouvez utiliser la barre de navigation sur le côté gauche de ce guide pour passer aux paragraphes qui vous sont utiles.
+> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné.
 >
 
 ### Étape 1 : Se connecter à OWA
@@ -31,6 +31,12 @@ Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver
 Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](https://www.ovh.com/fr/mail/). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+>
+> Si vous êtes redirigé sur une interface **Roundcube**, cela signifie que vous êtes sur la version historique de l'offre MX Plan. Pour plus d'informations sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Pour vous familiariser avec l'interface **Roundcube**, consultez notre guide [Utiliser son adresse e-mail depuis le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
 
@@ -67,11 +73,11 @@ Pour lire un e-mail, sélectionnez son dossier si nécessaire. Cliquez ensuite s
 
 ### Envoyer et répondre
 
-Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en haut de l'interface du webmail. Le volet d’édition apparaîtra sur le côté droit. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Dès que vous êtes prêt à l'envoyer, cliquez sur `Envoyer`{.action}.
+Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en haut de l'interface du webmail. Le volet d’édition apparaîtra sur le côté droit. Remplissez les champs de votre e-mail (destinataires, objet, corps du message, pièces jointes). Cliquez sur `Envoyer`{.action} une fois votre e-mail rédigé.
 
 ![useowa](images/use-owa-step7.png){.thumbnail}
 
-Pour **répondre à un message**, [cliquez d'abord](./#afficher-les-e-mails) sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action}. Par contre, utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie).
+Pour **répondre à un message**, cliquez d'abord sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action} pour répondre à l'ensemble des destinataires. Utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie), cliquez sur `Répondre`{.action}.
 
 ![useowa](images/use-owa-step8.png){.thumbnail}
 
@@ -210,7 +216,7 @@ Vous pouvez ensuite naviguer dans l'arborescence « Options » sur le côté g
 
 ### Gestion des cookies
 
-Le webmail qui est utilisé pour nos offres e-mail est basé sur le logiciel Microsoft Outlook Web Application. Il est donc susceptible d'échanger des métadonnées avec les serveurs de Microsoft, sous forme de cookies nommés `appsforoffice.microsoft.com`.
+Le webmail qui est utilisé pour nos offres e-mail est basé sur le logiciel Microsoft Outlook Web App. Il est donc susceptible d'échanger des métadonnées avec les serveurs de Microsoft, sous forme de cookies nommés `appsforoffice.microsoft.com`.
 
 Si vous souhaitez désactiver ces échanges, vous pouvez utiliser sur votre navigateur une extension de type bloqueur de contenus (tel que uBlock Origin ou Ghostery).
 La désactivation de ces cookies peut néanmoins affecter la stabilité de votre webmail.

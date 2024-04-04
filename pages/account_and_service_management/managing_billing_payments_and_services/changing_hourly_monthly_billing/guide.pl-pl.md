@@ -1,5 +1,5 @@
 ---
-title: 'Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud'
+title: 'Public Cloud Compute - Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud'
 excerpt: 'Dowiedz się, jak zmienić typ rozliczenia za instancję Public Cloud'
 updated: 2023-01-23
 ---

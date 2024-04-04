@@ -62,7 +62,7 @@ Below you can find a summary of every configuration option available for OpenSea
 | Value type | boolean |
 | Minimum | |
 | Maximum | |
-| Description | Explicitly allow or block automatic creation of indices. Defaults to true |
+| Description | Explicitly allow or block automatic creation of indexes. Defaults to true |
 
 | | |
 |---|---|

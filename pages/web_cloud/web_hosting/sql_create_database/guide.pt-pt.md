@@ -1,7 +1,7 @@
 ---
 title: "Criar uma base de dados num alojamento web"
 excerpt: "Saiba como criar uma base de dados no seu alojamento web OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Uma base de dados (BDD) é utilizada para armazenar elementos dinâmicos (dados 
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclua, pelo menos, uma base de dados.
-- Dispor de uma base de dados disponível "criação" entre as incluídas na sua oferta de alojamento web.
+- Dispor de uma base de dados disponível "criação" entre as que estão incluídas na sua oferta de alojamento web. Se necessário, pode adicionar bases de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ao seu alojamento web.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) com as [autorizações necessárias](/pages/account_and_service_management/account_information/managing_contacts) para gerir o seu alojamento web.
 
 ## Instruções
@@ -28,7 +28,19 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
+
+Na tabela, as bases de dados podem ter vários Status diferentes:
+
+- **Incluída**: indica que a base de dados está incluída na sua oferta de alojamento web. Não implica custos adicionais.</br></br>
+- **Opcional** : indica que a base de dados foi subscrita em complemento das bases de dados incluídas com o seu alojamento web. Paga um complemento para dispor desta base de dados suplementar no seu alojamento web.</br></br>
+- **Incluída - retirada da venda**: indica que a base de dados incluída será em breve retirada da venda e tornar-se-á obsoleta. </br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cujo escoamento ainda não está agendado para terminar).</br></br>
+- **Opcional - retirada da venda** : indica que a base de dados subscrita em complemento do seu alojamento web ficará em breve retirada da venda e tornar-se-á obsoleta. </br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cuja venda ainda não está agendada para terminar).
+
+> [!success]
+>
+> Para duplicar rapidamente o conteúdo de uma base de dados "**Incluída - retirada da venda**" ou "**Opcional - retirada da venda**" numa nova base de dados cuja obsolescência ainda não está programada, consulte o guia "[Duplicar o conteúdo de uma base de dados OVHcloud noutra](/pages/web_cloud/web_hosting/copy_database)".
+>
 
 ### Etapa 2 - Criar a base de dados
 
@@ -40,7 +52,7 @@ Pode criar uma nova base de dados de duas formas:
 
 Na nova janela, selecione as seguintes informações:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Informação|Descrição|  
 |---|---| 
@@ -52,7 +64,7 @@ De seguida, clique em `Seguinte`{.action}.
 
 Ser-lhe-á exibida uma nova janela:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Informação|Descrição|
 |---|---| 
@@ -80,7 +92,7 @@ Ser-lhe-á exibida uma nova janela:
 
 Preencha as informações necessárias e clique em `Seguinte`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Certifique-se de que todas as informações apresentadas no resumo estão corretas. Se for o caso, clique em `Validar`{.action} para lançar a criação da sua base de dados.
 

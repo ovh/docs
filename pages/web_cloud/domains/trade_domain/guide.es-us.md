@@ -1,7 +1,7 @@
 ---
 title: "Cómo cambiar el propietario de un nombre de dominio"
 excerpt: "En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio."
-updated: 2023-12-04
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 >
 > - el sitio web del registro **TLD** correspondiente;
 > - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es/domains/tld/);
-> - la sección `Operaciones en curso`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para comprobar las actualizaciones del estado del dominio.
+> - actualizaciones de estado del dominio. Para comprobarlo, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}  de la columna izquierda de la página web de OVHcloud. En la columna de la izquierda, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 >
 
 ### 1. seleccionar el dominio
@@ -56,7 +56,7 @@ Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=got
 
 En la pestaña `Información general`{.action}, acceda a la sección **Suscripción** en la esquina inferior derecha. Haga clic en `...`{.action} delante de **Contactos** y, seguidamente, en `Cambiar de propietario`{.action}.
 
-![cambio de propietario](images/3652-2.png){.thumbnail}
+![cambio de propietario](images/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -67,9 +67,9 @@ En la pestaña `Información general`{.action}, acceda a la sección **Suscripci
 
 Se abrirá una nueva pestaña de su navegador con todos los dominios compatibles con el cambio de propietario. Seleccione un dominio de la lista marcando la casilla situada a la izquierda. Este paso también puede utilizarse para iniciar una operación conjunta: es posible cambiar el propietario de varios dominios a la vez, por ejemplo para cambiar el propietario de todos los dominios *.ovh*. A continuación, haga clic en `Continuar`{.action}.
 
-![cambio de propietario](images/3657.PNG){.thumbnail}
+![cambio de propietario](images/available-domains.png){.thumbnail}
 
-En el formulario de información del propietario, asegúrese de ingresar información válida en todos los campos obligatorios. Manténgase alerta sobre los errores de entrada y, en la medida de lo posible, utilice [caracteres imprimibles no ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenga en cuenta que cualquier información inexacta o falsa puede conllevar un error técnico y, por tanto, un retraso de todo el proceso de intercambio.
+En el formulario de información del propietario, asegúrese de ingresar información válida en todos los campos obligatorios. Manténgase alerta sobre los errores de entrada y, en la medida de lo posible, utilice [caracteres imprimibles ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenga en cuenta que cualquier información inexacta o falsa puede conllevar un error técnico y, por tanto, un retraso de todo el proceso de intercambio.
 
 Una vez que haya confirmado su solicitud de cambio, recibirá dos mensajes de correo electrónico para confirmar o cancelar la solicitud.
 
@@ -79,18 +79,15 @@ Una vez que haya confirmado su solicitud de cambio, recibirá dos mensajes de co
 Si la dirección de correo electrónico no se modifica como parte del cambio de propietario, la dirección de correo de referencia recibirá los dos mensajes, pero es necesario confirmar cada uno de ellos.
 <br>Una vez que los dos destinatarios hayan confirmado la solicitud por correo electrónico, el cambio de propietario del dominio se hará efectivo.
 
-> [!primary]
->
-> El procedimiento deberá ser validado por ambas partes en un plazo de 14 días a partir de la solicitud.
->
-> Si una de las partes rechaza la modificación, la solicitud se anulará.
->
-> Si la dirección de correo electrónico del propietario actual no está actualizada o no se puede acceder a ella, **en este caso**, puede contactar directamente con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
->
-
 > [!warning]
 >
-> Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain) durante un período de 60 días.
+> - El procedimiento deberá ser validado por ambas partes en un plazo de 14 días a partir de la solicitud. **Pasado este plazo, el procedimiento queda cancelado**.
+>
+> - Si una de las partes rechaza la modificación, la solicitud se anulará.
+>
+> - Si la dirección de correo electrónico del propietario actual no está actualizada o no se puede acceder a ella, **en este caso**, puede contactar directamente con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](/pages/web_cloud/domains/transfer_outgoing_domain) durante un período de 60 días.
 
 ### Actualización de la información del propietario <a name="updateownerinformation"></a>
 
@@ -98,7 +95,7 @@ Si tiene que actualizar algunos datos secundarios como el número de teléfono, 
 
 En la sección **Suscripción** de la pestaña `Información general`{.action}, haga clic en `...`{.action} delante de **Contactos** y seleccione `Actualizar la información del propietario`{.action}.
 
-![cambio de propietario](images/3658.png){.thumbnail}
+![cambio de propietario](images/refresh-owner-information.png){.thumbnail}
 
 No es necesario confirmar los cambios por correo electrónico.
 

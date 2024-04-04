@@ -1,7 +1,7 @@
 ---
 title: 'Gerir as suas instâncias Public Cloud'
 excerpt: 'Saiba como gerir as suas instâncias Public Cloud na Área de Cliente OVHcloud'
-updated: 2023-01-04
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=got
 
 Clique em `Instances`{.action} no menu à esquerda. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 Esta página lista o conjunto das suas instâncias Public Cloud e algumas das suas propriedades:
 
@@ -37,6 +37,7 @@ Esta página lista o conjunto das suas instâncias Public Cloud e algumas das su
 - O modelo da instância;
 - imagem, ou seja, o SO instalado na instância;
 - o endereço IPv4 da instância;
+- o endereço privado atualmente ligado à instância;
 - os volumes (discos) adicionais atualmente associados à instância;
 - o estado da instância, indicando se está no estado `Ativado`.
 
@@ -73,11 +74,11 @@ Clique em `Criar um backup automatizado`{.action}.
 
 Para mais informações, consulte o manual "[Guardar uma instância](/pages/public_cloud/compute/save_an_instance#criar-um-backup-automatizado-de-uma-instancia)".
 
-#### Suspender uma instância
+#### Parar uma Instância
 
 Clique em `Parar`{.action}.
 
-Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#parar-suspend-uma-instancia)".
+Isto colocará a instância no estado `Apagada`, mas continuará a ser-lhe cobrado o mesmo preço pela sua instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#parar-suspend-uma-instancia)".
 
 Clique em `Iniciar`{.action} para reativar a instância.
 
@@ -102,9 +103,9 @@ Confirme o pedido de reboot na janela que aparecer.
 
 Clique em `Suspender`{.action}.
 
-Isto colocará a instância no estado "*shelved*", apresentado aqui como `Suspended`. Consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-uma-instancia)" para obter mais informações sobre os diferentes estados de suspensão de uma instância.
+Isto colocará a instância no estado "*shelved*", apresentado aqui como `Suspensa`. Consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-uma-instancia)" para obter mais informações sobre os diferentes estados de suspensão de uma instância.
 
-Clique em `Reativar`{.action} para restaurar o estado `Ativado` da instância.
+Clique em `Reativar`{.action} para restaurar o estado `Ativada` da instância.
 
 #### Reinstalar uma instância
 
@@ -121,6 +122,10 @@ Clique em `Eliminar`{.action}.
 Esta ação terá por efeito eliminar definitivamente a instância, bem como todos os seus dados.
 
 Confirme o pedido de eliminação na janela que aparecer.
+
+> [!warning]
+> A eliminação de uma instância não elimina automaticamente todas as opções que lhe estão associadas (armazenamento, snapshot, backup, etc...), certifique-se de que todas as outras opções associadas à instância são igualmente eliminadas para deixar de ser faturado.
+>
 
 ### Aceder à consola VNC <a name="accessvnc"></a>
 

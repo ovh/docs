@@ -1,7 +1,7 @@
 ---
-title: 'Gestão de utilizadores'
-excerpt: 'Saiba como adicionar utilizadores a partir da sua conta OVHcloud'
-updated: 2023-07-19
+title: 'Criar e gerir utilizadores locais numa conta OVHcloud'
+excerpt: 'Saiba como adicionar utilizadores locais a partir da sua conta OVHcloud'
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-07-19
 
 ## Objetivo
 
-A OVHcloud permite-lhe criar utilizadores com permissão de leitura ou escrita na Área de Cliente. Assim, os membros da sua empresa podem ter acesso aos seus serviços OVHcloud. E isto sem que haja necessidade de recorrer a práticas pouco seguras como a partilha de palavras-passe ou de códigos de dupla autenticação.
+A OVHcloud permite-lhe criar utilizadores locais com permissão de leitura ou escrita na Área de Cliente. Assim, os membros da sua empresa podem ter acesso aos seus serviços OVHcloud. E isto sem que haja necessidade de recorrer a práticas pouco seguras como a partilha de palavras-passe ou de códigos de dupla autenticação.
 
 > [!primary]
 >
@@ -19,7 +19,7 @@ A OVHcloud permite-lhe criar utilizadores com permissão de leitura ou escrita n
 > Já a gestão de contactos visa delegar a administração completa dos aspetos administrativos, técnicos ou de faturação de um ou vários serviços associados à sua conta OVHcloud. Para mais informações acerca da gestão de contactos, consulte [este guia](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
-**Este guia explica os diferentes privilégios de que um utilizador pode dispor, bem como o método de criação e de gestão de utilizadores.**
+**Este guia explica os diferentes privilégios de que um utilizador local pode dispor, bem como o método de criação e de gestão de utilizadores.**
 
 ## Requisitos
 
@@ -27,6 +27,10 @@ A OVHcloud permite-lhe criar utilizadores com permissão de leitura ou escrita n
 - Ter acesso à Área de Cliente.
 
 ## Instruções
+
+### Apresentação das identidades
+
+Os utilizadores locais são um dos tipos de identidades que podem ser implementadas na sua conta OVHcloud. Outros tipos de conta são descritos em [documentação associada](/pages/manage_and_operate/iam/identities-management).
 
 ### Gestão dos utilizadores
 
@@ -42,12 +46,20 @@ Na janela que se abrir, complete os campos obrigatórios. Clique em `Validar`{.a
 ![users-management](images/usersmanagement2.png){.thumbnail}
 
 | Campo | Detalhes |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | ID de utilizador | Introduza, por exemplo, o nome do utilizador ou a sua função. |
 | E-mail | Introduza o endereço de e-mail do utilizador. |
 | Palavra-passe | Defina a palavra-passe do utilizador. Mais tarde, ele poderá alterar esta palavra-passe. <br>Sugerimos que consulte [o guia sobre a gestão de palavras-passe](/pages/account_and_service_management/account_information/manage-ovh-password){.external} antes de a definir. |
-| Grupo | Escolha um dos grupos disponíveis |
+| Grupo | Escolha um dos grupos disponíveis (ver quadro abaixo). |
 | Descrição | Pode acrescentar uma descrição do utilizador. Por exemplo, a função que desempenha. |
+
+**Detalhes do grupo predefinido:**
+
+| Papel | Detalhes |
+|--|--|
+| UNPRIVILEGED (Apenas leitura) | Dá acesso de leitura à Área de Cliente OVHcloud e a todas as suas secções. |
+| DEFAULT (Administrador restrito) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção** da gestão de** utilizadores. |
+| ADMIN (Administrador) | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **incluindo** a gestão dos utilizadores. |
 
 O utilizador receberá um ID próprio, composto pelo ID digital da conta (indicado no menu «Gestão de utilizadores») e pelo nome de utilizador, com as duas referências separadas por uma barra.
 
@@ -77,17 +89,17 @@ No separador `Gestão dos utilizadores`{.action}, clique em `Declarar um grupo`{
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 
-Aparecerá uma janela e deverá preencher os campos necessários. Clique em `Validar`{.action} para criar o utilizador.
+Aparecerá uma janela e deverá preencher os campos necessários. Clique em `Validar`{.action} para criar o grupo.
 
 ![users-management](images/usersmanagement8.png){.thumbnail}
 
 Os grupos atribuem um nível de privilégio por defeito aos utilizadores que contêm, em função do papel que escolhe:
 
 | Papel | Detalhes |
-|------------------|----------------------------------------------------------------------------------------------------------------------|
-| Nenhuma | Não dá acesso à Área de Cliente OVHcloud se não for implementada uma política IAM. |
-| Leitura Sozinha | Dá acesso de leitura à Área de Cliente OVHcloud e a todas as suas secções. |
-| Administração restrita | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção** da gestão de** utilizadores. |
+|--|--|
+| Nenhum | Não dá acesso à Área de Cliente OVHcloud se não for implementada uma política IAM. |
+| Apenas leitura | Dá acesso de leitura à Área de Cliente OVHcloud e a todas as suas secções. |
+| Administrador restrito | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **à exceção** da gestão de** utilizadores. |
 | Administrador | Dá acesso de escrita à Área de Cliente OVHcloud e a todas as suas secções, **incluindo** a gestão dos utilizadores. |
 
 #### Gerir os grupos

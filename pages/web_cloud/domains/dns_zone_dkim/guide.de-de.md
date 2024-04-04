@@ -1,7 +1,7 @@
 ---
 title: DKIM-Eintrag konfigurieren
 excerpt: Erfahren Sie hier, wie Sie einen DKIM-Eintrag für Domainnamen und OVHcloud E-Mail-Dienste einrichten
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -382,7 +382,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >> <br>
 >>
@@ -397,7 +397,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 > **2. Selektor erstellen**
 >> In diesem Schritt wird ein Selektor erstellt, ein Schlüsselpaar generiert und der DNS-Eintrag für den Domainnamen hinzugefügt.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > Es wird empfohlen, diesen Vorgang für jeden der Selektoren zweimal auszuführen. Mit der zweiten Auswahl können Sie bei Bedarf ein anderes Schlüsselpaar auswählen. Lesen Sie unter den Use Cases den Abschnitt [Wie ändere ich mein DKIM-Schlüsselpaar?](#2selectors).
@@ -847,7 +847,7 @@ Im Folgenden finden Sie die Zustände, die zu einem roten DKIM-Symbol in Ihrem K
  - `ready`: DNS-Einträge sind in der Zone vorhanden. DKIM kann jetzt aktiviert werden, indem Sie dem Abschnitt „[DKIM aktivieren oder ändern](#enable-switch)“ folgen.
  - `deleting`: DKIM wird gelöscht. Nach dem Löschen folgen Sie dem Abschnitt „[Vollständige DKIM-Konfiguration](#firststep)“.
  - `disabling`: DKIM wird deaktiviert. Danach können Sie ihn reaktivieren, indem Sie den Abschnitt „[DKIM aktivieren oder ändern](#enable-switch)“ verwenden.
- - `todo`: Der Task wurde initialisiert und muss gestartet werden. Wenn er sich nach 24 Stunden noch in diesem Status befindet, können Sie ein [Ticket beim Support](https://help.ovhcloud.com/csm?id=csm_cases_requests) unter Angabe der Selektor-ID öffnen.
+ - `todo`: Der Task wurde initialisiert und muss gestartet werden. Wenn er sich nach 24 Stunden noch in diesem Status befindet, können Sie ein [Ticket beim Support](https://help.ovhcloud.com/csm?id=csm_get_help) unter Angabe der Selektor-ID öffnen.
 
 ## Weiterführende Informationen
 

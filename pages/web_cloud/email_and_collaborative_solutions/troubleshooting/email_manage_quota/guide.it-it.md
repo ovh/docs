@@ -103,7 +103,7 @@ Se l'account email non ha raggiunto la sua capacità massima, è possibile aumen
 > **Email (MXplan)**
 >>
 >> La capacità di un account MXplan può variare da 2,5 MB a 5 GB. In caso di saturazione e capacità inferiore a 5 GB, è possibile modificarne la capacità tramite lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).<br>
->> Nella scheda `Account email`{.action}, clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>a destra dell'account da modificare e poi clicca su `Modifica`{.action}.
+>> Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action}a destra dell'account da modificare e poi clicca su `Modifica`{.action}.
 >> Dalla casella `Quota`{.action}, seleziona la dimensione più adatta alle tue esigenze, clicca su `Seguente`{.action} e poi `Conferma`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
@@ -114,7 +114,7 @@ Se l'account email non ha raggiunto la sua capacità massima, è possibile aumen
 > **Exchange**
 >>
 >> Se il tuo account Exchange raggiunge i 50 GB, è possibile, per le offerte **Hosted** e **Provider**, sottoscrivere un'opzione di estensione per estendere la sua capacità a 300 GB.<br>
->> Nella scheda `Account email`{.action} della tua piattaforma, clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>a destra dell'account da modificare e poi clicca su `Aumenta la capacità a 300 GB`{.action}. Scegli la modalità di fatturazione più adatta alle tue esigenze e clicca su `Conferma`{.action}.<br><br>
+>> Nella scheda `Account email`{.action} della tua piattaforma, clicca sul pulsante `...`{.action}a destra dell'account da modificare e poi clicca su `Aumenta la capacità a 300 GB`{.action}. Scegli la modalità di fatturazione più adatta alle tue esigenze e clicca su `Conferma`{.action}.<br><br>
 >>![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 >> Se il tuo account Exchange ha già riempito i 300 GB di spazio su un'offerta **Hosted** o **Provider**, devi liberare spazio sul tuo account Exchange eliminando elementi superflui o [archiviare le tue email](#archiveorswitch) sul tuo computer in locale. Questa situazione è valida anche per gli account Exchange da 50 GB presenti su un'offerta **Private**.
@@ -212,7 +212,7 @@ Seleziona l'offerta corrente del tuo account email nel menu qui sotto:
 > **Exchange**
 >>
 >> Se il tuo account Exchange raggiunge i 50 GB di spazio, è possibile attivare un'opzione di estensione per estenderne la capacità a 300 GB. Solo se l'account Exchange è presente su un'offerta **Hosted** o **Provider**.<br>
->> Nella scheda `Account email`{.action} della piattaforma Exchange, clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>a destra dell'account da modificare e poi su `Aumenta la capacità a 300 GB`{.action}.<br><br>
+>> Nella scheda `Account email`{.action} della piattaforma Exchange, clicca sul pulsante `...`{.action}a destra dell'account da modificare e poi su `Aumenta la capacità a 300 GB`{.action}.<br><br>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 

@@ -1,7 +1,7 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-updated: 2023-12-01
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ El protocolo SSH garantiza una comunicación encriptada entre el cliente y el se
 
 > [!primary]
 >
-Tenga en cuenta que es obligatorio disponer de un par de claves SSH para conectarse a sus instancias de Public Cloud, salvo en aquellas que funcionan con sistemas operativos Windows. Las claves SSH públicas que añada en su área de cliente de OVHcloud estarán disponibles para sus servicios de Public Cloud, en todas las regiones y en todos los datacenters. Solo es posible almacenar claves encriptadas **RSA** y **ECDSA**. Las claves ED25519 no son compatibles. 
+Tenga en cuenta que es obligatorio disponer de un par de claves SSH para conectarse a sus instancias de Public Cloud, salvo en aquellas que funcionan con sistemas operativos Windows. Las claves SSH públicas que añada en su área de cliente de OVHcloud estarán disponibles para sus servicios de Public Cloud, en todas las regiones y en todos los datacenters. Puede almacenar claves cifradas **RSA**, **ECDSA** y **ED25519**.
 >
 Para autenticarse en instancias Windows solo necesitará el nombre de usuario y la contraseña.
 >
@@ -54,6 +54,11 @@ El uso del parámetro «-t» con este comando permite especificar un método de 
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+o
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 El comando le pedirá que guarde la clave que acaba de crear en un archivo estándar:
@@ -153,9 +158,23 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+> [!success]
+>
+Es preferible crear una red privada antes de crear una instancia. Para más información sobre la creación de una red privada, consulte la guía [Configuración del vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>
+
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zones:**
+
+Las instancias Local Zone son una extensión de las regiones que acercan los servicios de OVHcloud a lugares específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones. Están estratégicamente situadas cerca de las zonas de alta demanda de los usuarios. Su principal objetivo es minimizar el tiempo necesario para la transferencia de datos entre el usuario y la nube, con el fin de que los servicios sean más rápidos y reactivos, y responder a las exigencias de residencia de los datos. Para obtener más información sobre las instancias Local Zone, consulte los vínculos siguientes: [Local Zone Compute](https://www.ovhcloud.com/es-es/public-cloud/local-zone-compute/) y [Local Zone Compute - Características, capacidades y límites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+
+**Global Regions:**
+
+Las Global Regions incluyen ino vaitest por uno o varios datacenters gestionados por OVHcloud. Cada región está situada en una zona geográfica diferente. Cada región global ofrece una o varias Availibility Zones (zonas de disponibilidad) como GRA11, GRA7, BHS5, DE1, etc.
 
 En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Podrá consultar las características de las diferentes instancias y los modelos de servidor disponibles de entre las siguientes categorías:
 

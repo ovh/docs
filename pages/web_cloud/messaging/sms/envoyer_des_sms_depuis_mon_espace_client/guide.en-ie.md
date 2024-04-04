@@ -43,6 +43,10 @@ Feel free to refer to our [guide on managing SMS address books](/pages/web_cloud
 
 ### Step 2: Compose your SMS message.
 
+> [!primary]
+>
+> For legal reasons, commercial SMS messages will only be sent between **08:00 and 20:00, from Monday to Friday**.
+
 Once you have selected a sender and entered your recipients, you can now start composing your message.
 
 ![send sms control panel](images/sms-send-control-panel03E.png){.thumbnail}

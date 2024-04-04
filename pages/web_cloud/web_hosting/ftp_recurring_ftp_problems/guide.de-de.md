@@ -29,7 +29,7 @@ Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](https://www.
 
 ### “Dieser Server unterstützt FTP auf TLS nicht“ (FileZilla)
 
-![filezilla_error](images/filezilla_error.png){.thumbnail}
+![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 Diese Nachricht im [FileZilla-Programm](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) zeigt an, dass Sie die SFTP- oder SSH-Option in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nicht aktiviert haben. Daher werden die zwischen Ihrem OVHcloud Hosting-Server und Ihrem Computer ausgetauschten Informationen nicht verschlüsselt.
 
@@ -66,7 +66,7 @@ Um den verbleibenden Speicherplatz auf Ihrem Hosting zu überprüfen, loggen Sie
 
 Die auf Ihrem Hosting-Server gespeicherte Datenmenge (ausgenommen Datenbanken) erscheint im Bereich `Allgemeine Informationen`{.action} unter `Speicherplatz`.
 
-![disk_space](images/disk_space.png){.thumbnail}
+![disk_space](images/find-disk-space.png){.thumbnail}
 
 ### Ich kann meine Dateien nicht auf den FTP Server übertragen
 
@@ -82,7 +82,7 @@ Wenn Sie über eine [Pro](https://www.ovhcloud.com/de/web-hosting/professional-o
 
 Dieser Link ist standardmäßig auf den Shared Hosting Paketen von OVHcloud installiert. Er zeigt die unten abgebildete Seite an:
 
-![site_under_construction](images/site_under_construction.png){.thumbnail}
+![site-under-construction](images/site-under-construction.png){.thumbnail}
 
 Wenn Sie die Funktion “[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ nicht für Ihre Website verwendet haben, müssen Sie das über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugängliche [Net2FTP-Programm](/pages/web_cloud/web_hosting/ftp_connection#1-via-ftp-explorer-verbinden) verwenden, um die Seite “Site under construction“ manuell zu löschen.
 

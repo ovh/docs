@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden"
-updated: 2023-12-04
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -16,8 +16,8 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot mit mindestens einer inkludierten Datenbank.
-- Eine in Ihrem Webhosting Angebot enthaltene Datenbanken ist noch verfügbar.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer inkludierten Datenbank.
+- Sie haben unter den in Ihrem Webhosting enthaltenen Datenbanken eine zur Erstellung verfügbare Datenbank. Bei Bedarf können Sie [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbanken zu Ihrem Webhosting hinzufügen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
 
 ## In der praktischen Anwendung
@@ -28,7 +28,19 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting erstellt wurden.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
+
+In der Tabelle können Datenbanken verschiedene Typen haben:
+
+- **Inklusive**: Gibt an, dass die Datenbank in Ihrem Webhosting enthalten ist. Sie verursacht keine zusätzlichen Kosten.</br></br>
+- **Optional**: Gibt an, dass die Datenbank als Ergänzung zu den in Ihrem Webhosting enthaltenen Datenbanken abonniert wurde. Sie zahlen einen Aufpreis, um über diese zusätzliche Datenbank auf Ihrem Webhosting zu verfügen.</br></br>
+- **Inklusive - aus dem Verkauf genommen**: Gibt an, dass die Inklusiv-Datenbank in Kürze aus dem Verkauf genommen wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, ihren Inhalt in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).</br></br>
+- **Optional – aus dem Verkauf genommen**: Gibt an, dass die zusätzlich zu Ihrem Webhosting abonnierte Datenbank in Kürze aus dem Verkauf genommen wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, den Inhalt der Datenbank in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).
+
+> [!success]
+>
+> Informationen zum schnellen Duplizieren des Inhalts einer Datenbank im Zustand **Inklusive - aus dem Verkauf genommen** oder **Optional - aus dem Verkauf genommen** in eine neue Datenbank, deren Obsoleszenz noch nicht geplant ist, finden Sie in unserer Anleitung "[Den Inhalt einer OVHcloud-Datenbank in einer anderen Datenbank duplizieren](/pages/web_cloud/web_hosting/copy_database)".
+>
 
 ### Schritt 2: Datenbank erstellen
 
@@ -40,7 +52,7 @@ Es gibt zwei Möglichkeiten, eine neue Datenbank zu erstellen:
 
 Wählen Sie im angezeigten Fenster unter den folgenden Optionen aus:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Information|Beschreibung|  
 |---|---|
@@ -52,7 +64,7 @@ Klicken Sie auf `Weiter`{.action}.
 
 Ein neues Fenster wird angezeigt:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Information|Beschreibung|
 |---|---|
@@ -80,7 +92,7 @@ Ein neues Fenster wird angezeigt:
 
 Geben Sie die erforderlichen Informationen ein und klicken Sie auf `Weiter`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Überprüfen Sie, ob alle Informationen in der Zusammenfassung korrekt sind. Ist das der Fall, klicken Sie auf `Bestätigen`{.action}, um mit der Erstellung der Datenbank zu beginnen.
 

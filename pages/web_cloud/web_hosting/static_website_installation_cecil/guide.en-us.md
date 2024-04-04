@@ -191,7 +191,7 @@ Then return to your page to see the result:
 
 If you prefer to use your usual code editor on your computer, log on to your server with an FTP client and retrieve the files:
 
-![FileZilla Download](images/static_website_installation_cecil11.png){.thumbnail}
+![FileZilla Download](images/cecil-folder.png){.thumbnail}
 
 You can now edit the files in your I.D.E.:
 

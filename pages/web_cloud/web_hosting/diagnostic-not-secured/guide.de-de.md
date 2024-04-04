@@ -10,21 +10,21 @@ updated: 2021-07-08
 
 ## Ziel  <a name="objective"></a>
 
-Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die nachfolgenden Beispiele zeigen an, dass Ihr Webhosting kein [SSL-Zertifikat](/pages/web_cloud/web_hosting/ssl_on_webhosting) enthält (wenn Ihre Website keine der in dieser Anleitung beschriebenen Fehlermeldungen anzeigt, gehen Sie zum Abschnitt [“Weiterführende Informationen“](#gofurther) in dieser Anleitung): 
+Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die nachfolgenden Beispiele zeigen an, dass Ihr Webhosting kein [SSL-Zertifikat](/pages/web_cloud/web_hosting/ssl_on_webhosting) enthält (wenn Ihre Website keine der in dieser Anleitung beschriebenen Fehlermeldungen anzeigt, gehen Sie zum Abschnitt [“Weiterführende Informationen“](#go-further) in dieser Anleitung): 
 
 |Browser|Betreffende Fehlermeldung|
 |-|---|
-|Chrome:<br>"Dies ist keine sichere Verbindung"|![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}|
-|Firefox:<br>"Warnung: Mögliches Sicherheitsrisiko erkannt"|![notsecured_firefox](images/notsecured_firefox.png){.thumbnail}|
-|Edge:<br>"Ihre Verbindung ist nicht privat"|![notsecured_edge](images/notsecured_edge.png){.thumbnail}|
-|Safari:<br>"Diese Verbindung ist nicht privat"|![notsecured_safari](images/notsecured_safari.png){.thumbnail}|
+|Chrome:<br>"Dies ist keine sichere Verbindung"|![notsecured_chrome](images/notsecured-chrome.png){.thumbnail}|
+|Firefox:<br>"Warnung: Mögliches Sicherheitsrisiko erkannt"|![notsecured_firefox](images/notsecured-firefox.png){.thumbnail}|
+|Edge:<br>"Ihre Verbindung ist nicht privat"|![notsecured_edge](images/notsecured-edge.png){.thumbnail}|
+|Safari:<br>"Diese Verbindung ist nicht privat"|![notsecured_safari](images/notsecured-safari.png){.thumbnail}|
 
 **Diese Anleitung erklärt, wie Sie Fehler der Art "Keine sichere Verbindung" beheben.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -48,7 +48,7 @@ Um die IP-Adresse Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-h
 
 Im Tab `Allgemeine Informationen`{.action} wird Ihnen die IPv4- und IPv6-Adresse Ihres Hostings angezeigt.
 
-![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
+![hosting-general-informations](images/find-ipv4-and-ipv6.png){.thumbnail}
 
 #### IP-Adresse in der DNS Zone überprüfen
 
@@ -58,7 +58,7 @@ Loggen Sie Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?a
 
 Wechseln Sie zum Tab `DNS-Zone`{.action} aus und notieren Sie das "Ziel" des Eintrags vom Typ `A` Ihres Domainnamens:
 
-![zone-dns-ip](images/zone-dns-ip.png){.thumbnail}
+![zone-dns-ip](images/dashboard-entry-a.png){.thumbnail}
 
 #### Die notwendigen Aktionen durchführen
 
@@ -67,15 +67,15 @@ Wechseln Sie zum Tab `DNS-Zone`{.action} aus und notieren Sie das "Ziel" des Ein
 |Die in der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) gelistete IP-Adresse entspricht der IP-Adresse Ihres Webhostings.|Fortfahren mit [Schritt 2](#step2)|
 |Die in der Zone angegebene IP-Adresse betrifft keines der Webhostings in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), aber erscheint in der [Adressliste unserer Web Server](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Überprüfen Sie, ob die betreffende IP Adresse zu einem Ihrer Webhostings in einem anderen [OVHcloud Kundenaccount](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) gehört, falls Sie mehrere haben. Für mehr Informationen kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).|
 |Die in der Zone eingertragene IP-Adresse ist nicht die Ihres Webhostings und erscheint auch nicht in der [Adressliste unserer Web Server](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/) für mehr Informationen.|
-|Im Tab `DNS-Zone`{.action} gibt ein Warnhinweis an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) verwendet. Diese werden in der Form "ns **?** .ovh.net" oder "dns **?** .ovh.net" angezeigt ("**?**" zu ersetzen mit der entsprechenden DNS-Servernummer):<br><br>![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain bearbeiten, damit sie mit den `NS`-Einträgen der DNS-Zone übereinstimmen. Befolgen Sie hierzu die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_general_information#dns-server-andern).|
-|Im Tab `DNS-Zone`{.action} gibt eine Nachricht an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) verwendet, die nicht dem Format "ns **?** .ovh.net" oder "dns **?** .ovh.net" entsprechen :<br><br>![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}|Kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/) für mehr Informationen.|
-|Ihre Domain ist nicht im Bereich `Domainnamen`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aufgelistet.<br><br>Oder der Tab `DNS-Zone`{.action} Ihrer Domainname erscheint wie folgt:<br><br>![dns](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Das bedeutet, dass dieser Domainname nicht in diesem [OVHcloud Kunden-Account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird.<br><br>Überprüfen Sie, ob er zu einem Ihrer anderen [OVHcloud Kunden-Accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) gehört, falls Sie mehrere davon erstellt haben.<br><br>Sie können auch, um den Registrar Ihres Domainnamens herauszufinden sowie die tatsächlich verwendeten DNS-Server zu überprüfen, das [WHOIS Tool](https://www.ovh.de/support/werkzeuge/check_whois.pl) verwenden.<br><br>Falls nötig kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).|
+|Im Tab `DNS-Zone`{.action} gibt ein Warnhinweis an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) verwendet. Diese werden in der Form "ns **?** .ovh.net" oder "dns **?** .ovh.net" angezeigt ("**?**" zu ersetzen mit der entsprechenden DNS-Servernummer):<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain bearbeiten, damit sie mit den `NS`-Einträgen der DNS-Zone übereinstimmen. Befolgen Sie hierzu die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_general_information#dns-server-andern).|
+|Im Tab `DNS-Zone`{.action} gibt eine Nachricht an, dass Ihre Domain andere [DNS-Server](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) verwendet, die nicht dem Format "ns **?** .ovh.net" oder "dns **?** .ovh.net" entsprechen :<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/) für mehr Informationen.|
+|Ihre Domain ist nicht im Bereich `Domainnamen`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aufgelistet.<br><br>Oder der Tab `DNS-Zone`{.action} Ihrer Domainname erscheint wie folgt:<br><br>![dns](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Das bedeutet, dass dieser Domainname nicht in diesem [OVHcloud Kunden-Account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird.<br><br>Überprüfen Sie, ob er zu einem Ihrer anderen [OVHcloud Kunden-Accounts](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) gehört, falls Sie mehrere davon erstellt haben.<br><br>Sie können auch, um den Registrar Ihres Domainnamens herauszufinden sowie die tatsächlich verwendeten DNS-Server zu überprüfen, das [WHOIS Tool](https://www.ovh.de/support/werkzeuge/check_whois.pl) verwenden.<br><br>Falls nötig kontaktieren Sie Ihren Webmaster oder einen [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).|
 
 ### Schritt 2: Das SSL-Zertifikat Ihres Hostings überprüfen <a name="step2"></a>
 
 Überprüfen Sie im Tab `Allgemeine Informationen`{.action} Ihres OVHcloud Hostings den Abschnitt `SSL-Zertifikat`:
 
-![ssl-certificate-in-general-tab](images/ssl-certificate-in-general-tab.png){.thumbnail}
+![ssl-certificate-in-general-tab](images/no-ssl-certificate.png){.thumbnail}
 
 #### Szenario 1: Ihr Hosting enthält kein SSL-Zertifikat
 
@@ -96,7 +96,7 @@ Wenn Sie über ein **importiertes SSL-Zertifikat** verfügen, kontaktieren Sie d
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

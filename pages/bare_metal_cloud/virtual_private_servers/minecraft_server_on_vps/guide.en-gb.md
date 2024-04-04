@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - How to create a Minecraft server on a VPS'
+title: 'How to create a Minecraft server on a VPS'
 excerpt: 'Find out how to install your own Minecraft server'
 updated: 2021-06-29
 ---
@@ -22,7 +22,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
 - A GNU/Linux distribution installed on the server
-- Administrative access (root) via SSH to your server
+- Administrative access (sudo) via SSH to your server
 - A basic understanding of GNU/Linux administration
 
 ## Instructions

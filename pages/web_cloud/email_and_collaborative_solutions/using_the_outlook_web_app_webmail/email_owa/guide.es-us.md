@@ -6,7 +6,7 @@ updated: 2021-06-25
 
 ## Objetivo
 
-Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web Application (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.com/world/es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
+Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.com/world/es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
 
 **En esta guía aprenderá a realizar las acciones más habituales con su dirección de correo en la interfaz de OWA.**
 
@@ -21,7 +21,7 @@ Esta guía le permitirá comprender mejor las tareas más habituales de la cuent
 
 > [!primary]
 >
-> Después de los dos primeros pasos, no es necesario seguir las instrucciones en un orden concreto. Puede utilizar la barra de navegación de la izquierda de esta guía para saltar al párrafo que más le interese.
+> Después de los dos primeros pasos, no es necesario seguir las instrucciones en un orden concreto.
 >
 
 ### 1. Acceder a OWA
@@ -208,7 +208,7 @@ Puede navegar por el árbol de «Opciones» de la parte izquierda de la página.
 
 ### Gestión de cookies
 
-El webmail utilizado para nuestros productos de correo está basado en el programa Microsoft Outlook Web Application. por lo que es susceptible de intercambiar metadatos con los servidores de Microsoft, en forma de cookies llamadas `appsforoffice.microsoft.com`.
+El webmail utilizado para nuestros productos de correo está basado en el programa Microsoft Outlook Web App. por lo que es susceptible de intercambiar metadatos con los servidores de Microsoft, en forma de cookies llamadas `appsforoffice.microsoft.com`.
 
 Si desea desactivar estos intercambios, puede utilizar en su navegador una extensión de tipo bloqueador de contenidos (como uBlock Origin o Ghostery).
 No obstante, la desactivación de estas cookies puede afectar a la estabilidad de su webmail.

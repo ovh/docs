@@ -16,7 +16,7 @@ Il trasferimento di un dominio.uk (o assimilato) richiede una procedura specific
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
 >
 
 **Come trasferire un dominio.uk (o equivalente) in OVHcloud**
@@ -94,7 +94,7 @@ Il codice di autorizzazione è generato automaticamente a seguito della modifica
 
 Poiché il trasferimento è gratuito, la data di scadenza del dominio dopo il trasferimento sarà la stessa che prima del trasferimento. Per rinnovarlo in seguito al trasferimento, accedi al [sito OVHcloud](https://www.ovh.co.uk/cgi-bin/order/renew.cgi).
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Trasferire un dominio in OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 

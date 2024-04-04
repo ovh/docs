@@ -1,12 +1,12 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-updated: 2021-06-25
+updated: 2024-03-26
 ---
 
 ## Ziel
 
-Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem Client Ihrer Wahl senden und empfangen. Um von überall über einen Webbrowser auf ein Konto zuzugreifen, bietet OVHcloud einen Online-E-Mail-Client namens Outlook Web Application (OWA). Unsere [Webmail-Anmeldeseite](https://www.ovh.de/mail) ist für alle aktiven E-Mail-Konten in MX Plan, Email Pro und Hosted Exchange der zentrale Zugriffspunkt auf die OWA Benutzeroberfläche.
+Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem Client Ihrer Wahl senden und empfangen. Um von überall über einen Webbrowser auf ein Konto zuzugreifen, bietet OVHcloud einen Online-E-Mail-Client namens Outlook Web App (OWA). Unsere [Webmail-Anmeldeseite](https://www.ovh.de/mail) ist für alle aktiven E-Mail-Konten in MX Plan, Email Pro und Hosted Exchange der zentrale Zugriffspunkt auf die OWA Benutzeroberfläche.
 
 **Diese Anleitung erläutert, wie Sie Ihre E-Mail-Adresse mit OWA verwenden und erklärt die wichtigsten Funktionen dieser Oberfläche.**
 
@@ -17,12 +17,13 @@ Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem
 
 ## In der praktischen Anwendung
 
+
 Diese Anleitung vermittelt Ihnen ein besseres Verständnis der üblichen Funktionen eines Mailkontos, die im OWA Webmail verfügbar sind. Da diese Anwendung jedoch ursprünglich nicht von OVHcloud erstellt wurde, können wir keine spezifischen Anweisungen zu Einstellungen geben, die in dieser Anleitung nicht erwähnt werden. In Bezug auf exklusive Exchange-Funktionen stehen gesonderte Anleitungen zur Verfügung, die im Abschnitt **Weiterführende Informationen** am Seitenende verlinkt sind.
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-> Nach den ersten beiden Schritten müssen die Anweisungen nicht in einer bestimmten Reihenfolge berücksichtigt werden. Mithilfe der Navigationsleiste auf der linken Seite dieser Anleitung können Sie zu den für Sie relevanten Abschnitten springen.
+> Nach den ersten beiden Schritten müssen die Anweisungen nicht in einer bestimmten Reihenfolge berücksichtigt werden.
 >
 
 ### 1. Zugriff auf OWA Webmail
@@ -30,6 +31,12 @@ Diese Anleitung vermittelt Ihnen ein besseres Verständnis der üblichen Funktio
 Um sich mit Ihrer E-Mail-Adresse bei OWA Webmail anzumelden, rufen Sie die allgemeine [Webmail-Anmeldeseite](https://www.ovh.de/mail) auf. Geben Sie Ihre vollständige E-Mail-Adresse und Ihr Passwort ein und klicken Sie danach auf die Schaltfläche `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+> 
+> Wenn Sie zu einem **Roundcube** Interface weitergeleitet werden, bedeutet dies, dass Sie die Legacy-Version der MX Plan Lösung verwenden. Weitere Informationen zu Ihrem MX Plan finden Sie auf unserer Seite "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
+>
+> Um sich mit dem **Roundcube** Interface vertraut zu machen, lesen Sie unsere Anleitung: [Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA Webmail anmelden, werden Sie aufgefordert, die Sprache und die Zeitzone der Benutzeroberfläche festzulegen. Um fortzufahren, klicken Sie auf `Speichern`{.action}.
 
@@ -209,7 +216,7 @@ Sie können dann die Baumstruktur „Optionen“ links auf der Seite durchsuchen
 
 ### Cookie-Verwaltung
 
-Das Webmail, das für unsere E-Mail Angebote verwendet wird, basiert auf der Software Microsoft Outlook Web Application. Es kann demnach Metadaten mit Microsoft Servern in Form von Cookies (etwa `appsforoffice.microsoft.com`) austauschen.
+Das Webmail, das für unsere E-Mail Angebote verwendet wird, basiert auf der Software Microsoft Outlook Web App. Es kann demnach Metadaten mit Microsoft Servern in Form von Cookies (etwa `appsforoffice.microsoft.com`) austauschen.
 
 Wenn Sie diese Datenübertragung deaktivieren möchten, können Sie in Ihrem Browser eine Erweiterung hinzufügen, die Inhalte blockiert, z.B. uBlock Origin oder Ghostery.
 Die Deaktivierung dieser Cookies kann möglicherweise die stabile Funktionalität Ihres Webmail-Accounts beeinträchtigen.

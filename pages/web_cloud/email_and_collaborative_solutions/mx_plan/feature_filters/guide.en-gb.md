@@ -1,7 +1,7 @@
 ---
 title: 'Creating filters for your email addresses'
 excerpt: 'Find out how to create and configure filter rules on your email address'
-updated: 2021-09-27
+updated: 2024-03-26
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 > [!warning]
 >
-> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pplication). You can identify which version you are using with the table below.
+> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pp). You can identify which version you are using with the table below.
 >
 
 MX Plan legacy version|MX Plan new version|
@@ -70,6 +70,11 @@ Second choice (Rule):
 - **spf**: Parameter that depends on a domain's SPF, example: `... has no SPF record`.
 - **includes**: Positive condition, example: `the subject contains ...`.
 - **does not include**: Negative condition, example: `... does not contain ...`.
+
+> [!primary]
+>
+> SPF (Sender Policy Framework) allows the server that receives an email to ensure that it has been sent from a trusted server.
+> It helps prevent identity fraud from email addresses that use your domain name (spoofing). For more information on the SPF record, please refer to our guide on [Configuring an SPF record on a domain name](/pages/web_cloud/domains/dns_zone_spf).
 
 Third choice (Value):
 

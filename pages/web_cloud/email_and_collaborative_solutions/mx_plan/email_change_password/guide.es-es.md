@@ -41,32 +41,32 @@ Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotoman
 >>
 >> Si no conoce el tipo de producto MXplan que posee, consulte el apartado [Identifique su producto MXplan](#whichmxplan).<br>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Correo electrónico`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
->> Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Cambiar la contraseña`{.action}.<br><br>
+>> Haga clic en el botón `...`{.action} y seleccione `Cambiar la contraseña`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **Emails MXplan (nueva versión)**
 >>
 >> Si no conoce el tipo de producto MXplan que posee, consulte el apartado [Identifique su producto MXplan](#whichmxplan).<br>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Correo electrónico`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
->> Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
+>> Haga clic en el botón `...`{.action} y seleccione `Editar`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
 >> Haga clic en `Email Pro`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.<br>
->> Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
+>> Haga clic en el botón `...`{.action} y seleccione `Editar`{.action}.<br><br>
 >>![Correo electrónico](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Haga clic en `Microsoft`{.action} / `Exchange`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.<br>
->> Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
+>> Haga clic en el botón `...`{.action} y seleccione `Editar`{.action}.<br><br>
 >>![Correo electrónico](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 
 ### Cambiar la contraseña desde el webmail
 
-La modificación de su contraseña a través del webmail está disponible para los servicios de correo electrónico de OVHcloud que utilizan **OWA** (**O**utlook **W**eb **A**pplication):
+La modificación de su contraseña a través del webmail está disponible para los servicios de correo electrónico de OVHcloud que utilizan **OWA** (**O**utlook **W**eb **A**pp):
 
 - Emails MXplan (nueva versión)
 - Email Pro

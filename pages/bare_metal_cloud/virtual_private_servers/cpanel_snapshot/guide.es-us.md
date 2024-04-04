@@ -1,7 +1,7 @@
 ---
 title: 'Backup automático - Kernel Panic (cPanel)'
 excerpt: 'Cómo solucionar los problemas de bloqueo de los servidores cPanel durante el backup automático de OVHcloud'
-updated: 2023-06-06
+updated: 2024-01-31
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Al crear una copia de seguridad de su VPS (en caso de suscribirse a las copias d
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es/vps/) (VPS Value, Essential, Comfort o Elite) en su cuenta de OVHcloud.
+- Tener contratado un servicio [VPS reciente](https://www.ovhcloud.com/es/vps/){.external} con un [OS compatible con cPanel](https://www.ovhcloud.com/es/vps/os/).
 - cPanel debe estar instalado en su servidor
 
 ## Procedimiento
@@ -47,7 +47,7 @@ systemctl disable qemu-guest-agent
 
 ### Pasar de Jailed Shell a Normal Shell
 
-Descubra las diferencias entre Jailed Shell y Normal Shell [aquí](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell)
+Descubra las diferencias entre Jailed Shell y Normal Shell [aquí](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell).
 
 Para desactivar un entorno Jailed Shell para todos los usuarios, debe desactivar la opción jailshell por defecto en la interfaz "WHM's Tweak Settings" (WHM >>Home >> Server Configuration >> Tweak Settings).
 

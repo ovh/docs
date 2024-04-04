@@ -25,7 +25,7 @@ Na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 Tem uma tabela que lhe permite consultar todas as operações associadas aos nomes de domínio da sua Área de Cliente.
 
-![domínio](images/domain-error-table01.png){.thumbnail}
+![domínio](images/domain-name-operations-header.png){.thumbnail}
 
 - `Domínio`: Domínio abrangido pela operação.
 - `Operação`:  Operação em curso no domínio.
@@ -38,7 +38,7 @@ Tem uma tabela que lhe permite consultar todas as operações associadas aos nom
 Todas as operações listadas nesta tabela não requerem a sua intervenção para que elas se desenrolem normalmente.<br>
 Neste guia, vamos focar as operações **em erro** através de exemplos recorrentes.
 
-![domínio](images/domain-error-table02.png){.thumbnail}
+![domínio](images/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
 
 ### Exemplos
 
@@ -57,41 +57,41 @@ Neste guia, vamos focar as operações **em erro** através de exemplos recorren
 
 Algumas extensões de nomes de domínio necessitam de justificar a sua utilização fornecendo documentos. Se for o caso, deverá enviar os documentos a partir da janela `Operações em curso`{.action}.
 
-![domínio](images/domain-error01.png){.thumbnail}
+![domínio](images/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
 
 Para apresentar o(s) documento(s) necessário(s), clique no botão `...`{.action} à direita da operação em causa.<br>
 Na janela que se segue, a secção "Descrição" irá permitir-lhe obter detalhes sobre o documento que pretende fornecer, assim como um botão para televerter o seu documento.
 
-![domínio](images/domain-error02.png){.thumbnail}
+![domínio](images/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 #### Informações em falta
 
 Ao registar o seu nome de domínio, é necessário, por vezes, completar os dados de "contacto". Se estas últimas não correspondem aos critérios do nome de domínio, pode obter o erro abaixo.
 
-![domínio](images/domain-error03.png){.thumbnail}
+![domínio](images/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
 
 Clique no botão `...`{.action} à direita da operação.<br>
 A janela seguinte aparece. Preencha os campos com as informações do contacto em questão.
 
-![domínio](images/domain-error04.png){.thumbnail}
+![domínio](images/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 #### Código de transferência errado 
 
 Ao transferir o seu domínio para a OVHcloud, deverá introduzir um código de transferência (**AuhInfo**) aquando da encomenda. Se este código estiver incorreto, a operação é suspensa, mas pode relançá-la introduzindo o código correto.
 
-![domínio](images/domain-error05.png){.thumbnail}
+![domínio](images/domain-name-operations-auth-code-missing.png){.thumbnail}
 
 Clique no botão `...`{.action} à direita da operação.<br>
 Aparecerá a janela seguinte, introduza o código de transferência (**AuthInfo**) e execute novamente a operação.
 
-![domínio](images/domain-error06.png){.thumbnail}
+![domínio](images/operation-data-auth-code-missing.png){.thumbnail}
 
 #### Erro associado aos servidores DNS
 
 Pode ocorrer um erro se os servidores DNS associados a um domínio não funcionarem.<br>
 No exemplo abaixo, o endereço IP do servidor DNS não responde.
 
-![domínio](images/domain-error07.png){.thumbnail}
+![domínio](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
 Na secção `Nomes de domínio`{.action}, selecione o domínio em questão e clique no separador `Servidores DNS`{.action}. A partir deste separador, [modifique os seus servidores DNS](/pages/web_cloud/domains/dns_server_general_information). 
 
@@ -105,7 +105,7 @@ Ao alterar os seus servidores DNS, o registry poderá verificar os novos servido
 
 Para verificar se o domínio está bloqueado, aceda à tabela `Operações em curso`{.action}.
 
-![domínio](images/domain-error08.png){.thumbnail}
+![domínio](images/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
 
 Para verificar o seu nome de domínio, sugerimos que utilize a ferramenta de verificação fornecida pelo registry:
 
@@ -129,7 +129,7 @@ Em primeiro lugar, verifique se o seu nome de domínio e os servidores DNS estã
 
 Se verificar uma anomalia não relacionada com a configuração dos servidores DNS ou da zona DNS, convidamo-lo a abrir um ticket de assistência junto do suporte OVHcloud para identificar a origem da avaria.
 
-![domínio](images/domain-error09.png){.thumbnail}
+![domínio](images/domain-name-operations-renewal-internal-error.png){.thumbnail}
 
 ## Saiba mais
 

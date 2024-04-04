@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installare manualmente un CMS sul tuo hosting"
 excerpt: "Questa guida ti mostra come installare manualmente un CMS sul tuo hosting"
-updated: 2023-04-04
+updated: 2024-03-28
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-04-04
 
 ## Obiettivo
 
-Questa guida ti mostra come installare manualmente un CMS (Content Management System) come WordPress, Joomla!, Drupal o PrestaShop.
+Questa guida ti mostra come installare manualmente un CMS (Content Management System) come WordPress, Joomla!, Drupal, PrestaShop, Pico, Grav, Typo3 o SPIP.
 
 > [!warning]
 >
@@ -24,6 +24,10 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 > - [Joomla!](https://www.joomla.org/){.external}
 > - [Drupal](https://www.drupal.org/){.external}
 > - [PrestaShop](https://www.prestashop.com/en/support){.external}
+> - [Pico](https://picocms.org/){.external}
+> - [Grav](https://getgrav.org/){.external}
+> - [Typo3](https://typo3.com/){.external}
+> - [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 >
 
 > [!success]
@@ -43,7 +47,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 ### Presentazione CMS
 
-Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per ciascuno dei 4 CMS citati precedentemente.
+Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per ciascuno dei CMS citati precedentemente.
 
 ##### WordPress
 
@@ -78,6 +82,30 @@ CMS creato nel 2005 e dedicato alla realizzazione di siti web e-commerce. Oltre 
 Per maggiori informazioni, consulta la nostra pagina relativa al [modulo PrestaShop](https://www.ovhcloud.com/it/web-hosting/uc-prestashop-website/)
 
 - Sito ufficiale di [PrestaShop](https://www.prestashop.com/){.external}
+
+#### Pico
+
+**Pico** è un CMS leggero basato su PHP, ideale per creare siti Web o blog. Privo di database, utilizza file Markdown per gestire il contenuto. che supporta estensioni per personalizzare il sito Web.
+
+- Sito ufficiale di [Pico](https://picocms.org/){.external}
+
+#### Grav
+
+**Grav** è un CMS moderno e flessibile basato su PHP. È progettato senza database e utilizza file Markdown per lo storage e la gestione dei contenuti. Grav si distingue per il suo sistema di gestione dei pacchetti che facilita l'installazione e l'aggiornamento dei plugin e dei temi per il vostro sito web.
+
+- Sito ufficiale di [Grav](https://getgrav.org/){.external}
+
+#### Typo3
+
+**Typo3** è un CMS basato su PHP, progettato per lo sviluppo di siti Web di tutte le dimensioni, dalle piccole alle grandi imprese. Utilizza un database per salvare il contenuto. Offre una vasta gamma di estensioni per estendere le sue funzionalità e personalizzare il tuo sito Web.
+
+- Sito ufficiale di [Typo3](https://typo3.com/){.external}
+
+#### SPIP
+
+**SPIP** è un CMS concepito principalmente per la pubblicazione e la gestione di siti Web editoriali come giornali o riviste online. Basato su PHP e basato su un database SQL, facilita la creazione di siti Web arricchiti di contenuti testuali, grafici e/o multimediali.
+
+- Sito ufficiale di [SPIP](https://www.spip.net/en_rubrique25.html){.external}
 
 > [!warning]
 >
@@ -127,9 +155,19 @@ Se non riesci a effettuare queste verifiche, contatta il provider della tua zona
 
 Se non utilizzi già un client FTP, puoi utilizzare Filezilla. Per maggiori informazioni, consulta la guida scaricare gratuitamente il link di download e una guida all'utilizzo nella nostra guida su [utilizzare FileZilla con la tua soluzione di hosting OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
+> [!primary]
+>
+> Ci sono altri client FTP che puoi utilizzare come, ad esempio, Cyberduck. Per maggiori informazioni, consulta la nostra documentazione relativa all'[utilizzo di Cyberduck con la tua soluzione di hosting OVHcloud](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac).
+>
+
 #### 1.4 - Preparare un database <a name="step1-4"></a>
 
-I CMS necessitano di un database per funzionare. Le nostre offerte di [hosting web](https://www.ovhcloud.com/it/web-hosting/) ne contengono, ad eccezione di [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/).
+> [!warning]
+>
+> Alcuni CMS funzionano senza database. Se questo è il caso del CMS che vuoi installare, salta questo step.
+>
+
+Per funzionare correttamente, la maggior parte dei CMS ha bisogno di un database. Le nostre offerte di [hosting web](https://www.ovhcloud.com/it/web-hosting/) ne contengono, ad eccezione di [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/).
 
 Utilizza la nostra documentazione per [creare un database dalla tua offerta di hosting web](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -161,10 +199,14 @@ Di seguito trovi i link alle pagine di download dei CMS citati in questo tutoria
 - [Joomla!](https://downloads.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/download){.external}
 - [Prestashop](https://www.prestashop.com/en/download){.external}
+- [Pico](https://picocms.org/download/){.external}
+- [Grav](https://getgrav.org/downloads){.external}
+- [Typo3](https://get.typo3.org/#download){.external}
+- [SPIP](https://www.spip.net/en_download){.external}
 
 > [!primary]
 >
-> Recupera la versione PHP e la versione MySQL o MariaDB necessarie per far funzionare il tuo CMS.
+> Recupera la versione PHP e, se il tuo CMS utilizza un database, identifica la versione MySQL o MariaDB necessaria per far funzionare il tuo CMS.
 >
 > Per farlo, consulta il link alla pagina ufficiale del CMS che vuoi installare:
 >
@@ -172,6 +214,10 @@ Di seguito trovi i link alle pagine di download dei CMS citati in questo tutoria
 > - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
+> - [Pico](https://picocms.org/download/){.external}
+> - [Grav](https://learn.getgrav.org/17/basics/requirements){.external}
+> - [Typo3](https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/SystemRequirements/Index.html){.external}
+> - [SPIP](https://www.spip.net/en_article6659.html){.external}
 >
 > Configura la versione di PHP sul tuo hosting Web consultando la nostra guida su [modifica della versione PHP di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
@@ -189,7 +235,7 @@ Segui le istruzioni fornite dal tuo CMS fino a che i file sorgente non saranno c
 
 >[!primary]
 >
-> Per maggiore semplicità, sostituisci in questo step il nome della cartella "**CMS**" con il nome del CMS che hai scelto per maggiore semplicità. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**)
+> Per maggiore semplicità, sostituisci in questo step il nome della cartella "**CMS**" con il nome del CMS che hai scelto. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**, ecc...)
 >
 
 Il file caricato è in formato **compresso** (zippato). Crea una cartella intitolata "**CMS**" sul tuo computer e **decomprimine** il contenuto del file scaricato all'interno della cartella "**CMS**".
@@ -204,7 +250,7 @@ Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tu
 
 Di seguito, un esempio con il CMS *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/web-hosting-tools/filezilla/ftp-upload-wordpress.png){.thumbnail}
 
 > [!warning]
 >
@@ -349,6 +395,10 @@ Per proseguire con l'installazione, segui uno di questi link cliccando sulla gui
 - [Completare l'installazione di Joomla!](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
 - [Completare l'installazione di Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
 - [Completare l'installazione di PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+- [Completare l'installazione di Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+- [Completare l'installazione di Grav](/pages/web_cloud/web_hosting/cms_manual_installation_grav)
+- [Completare l'installazione di Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+- [Completare l'installazione di SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 ## Per saperne di più <a name="go-further"></a>
 

@@ -5,7 +5,7 @@ updated: 2023-12-05
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie 
@@ -52,7 +52,7 @@ ls -la
 
 Aby uzyskać katalogi, należy je uzyskać zgodnie z poniższym obrazkiem:
 
-![hosting](images/3078.png){.thumbnail}
+![hosting](images/terminal-ls-la-svn.png){.thumbnail}
 
 ### Tworzenie kluczy publicznych / prywatnych
 
@@ -86,7 +86,7 @@ Postępuj zgodnie z poprzednio utworzonym kluczem, wszystko w tej samej linii.
 > Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
-![hosting](images/3080.png){.thumbnail}
+![hosting](images/terminal-homez-folder.png){.thumbnail}
 
 Możesz pobrać zawartość repozytorium bez konieczności logowania się bezpośrednio przez SSH do maszyny.
 
@@ -113,7 +113,7 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 - Utwórz katalog, kliknij prawym przyciskiem myszy i wybierz "SVN Checkout". 
 - Wpisz `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` w polu "URL of repository" i kliknij `OK`:
 
-![hosting](images/3081.png){.thumbnail}
+![hosting](images/checkout.png){.thumbnail}
 
 Dostępna jest bardzo dobra dokumentacja w języku angielskim dla Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 

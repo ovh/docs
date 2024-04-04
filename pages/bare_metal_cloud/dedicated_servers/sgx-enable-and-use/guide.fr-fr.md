@@ -13,19 +13,10 @@ La technologie Intel SGX fournit des fonctions de sécurité avancées de chiffr
 
 ## Prérequis
 
-- Avoir un serveur dédié de la [gamme Infrastructure](https://www.ovhcloud.com/fr/bare-metal/infra/){.external} ou de la [gamme Advance](https://www.ovhcloud.com/fr/bare-metal/advance/), avec l’option [SGX](https://www.ovhcloud.com/fr/bare-metal/intel-software-guard-extensions/){.external}
-- Disposer d’un accès administrateur (root) à votre serveur via SSH
-- Avoir accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou l’[API OVHcloud](https://api.ovh.com/){.external}
+- Avoir un serveur dédié compatible avec l’option [SGX](https://www.ovhcloud.com/fr/bare-metal/intel-software-guard-extensions/){.external}
+- Disposer des identifiants de connexion reçus par e-mail suite à l'installation
+- Avoir accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou l’[API OVHcloud](https://api.ovh.com/)
 - Ubuntu 18.04 ou équivalent installé sur le serveur
-
-> [!warning]
->
-> Parmi la gamme Advance, seuls les serveurs ci-dessous, équipés d'un CPU Intel, sont compatibles avec la technologie Intel SGX :
-> 
-> - Advance-1
-> - Advance-2
-> - Advance-6
-> - Advance-APAC
 
 ## En pratique
 

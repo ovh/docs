@@ -1,104 +1,200 @@
 ---
 title: 'Securing your OVHcloud account with two-factor authentication'
-excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication'
-updated: 2022-07-20
+excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication (2FA)'
+updated: 2024-03-18
 ---
 
 ## Objective
 
-OVHcloud offers tools to optimise security for your account and services.
-You can enable two-factor authentication (2FA). This is linked to your username-password couple, and you can use it via a device: e.g. a smartphone, tablet, or security key. 
+OVHcloud offers tools to enhance the security of your account and services.
+You can enable two-factor authentication (2FA) on your OVHcloud account. This two-factor authentication is added to your username/password pair, and is managed from a device you own: a phone, tablet, or security key.
 
-**Find out more about the methods we offer, and how to enable them.**
+**Find out more about the two-factor authentication methods available, and how to enable them.**
+
+This guide will help you:
+
+- [Understand the different two-factor authentication methods](#instructions)
+- [Enable your first two-factor authentication method](#enabling-2fa)
+- [Find out how to log in with two-factor authentication](#login-2fa)
+- [Find out what to do if your phone/tablet/key is lost/stolen/damaged](#lost-device)
+- [Find out how to disable two-factor authentication completely](#desactivation)
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- a smartphone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
-- an understanding of the [password management recommendations for accessing your account](/pages/account_and_service_management/account_information/manage-ovh-password)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A phone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
+- An understanding of the [password management recommendations for accessing your account](/pages/account_and_service_management/account_information/manage-ovh-password)
 
-## Instructions
+## Instructions <a name="instructions"></a>
 
-You can enable one or more two-factor authentication methods to secure and control access to the OVHcloud Control Panel.
-We offer three different methods:
+You can enable one or more two-factor authentication methods to secure and control access to your Control Panel.
 
-- **via SMS**. Enter your mobile phone number. You will be sent a one-time code via SMS each time you try to log in to your OVHcloud account. The main advantage of this method is that the code you use is sent to a device separate to your computer. If your computer’s security is compromised by malware, for example, your account will remain secure. However, it is important to keep in mind that you need sufficient network coverage to receive SMS messages.
+We offer four different methods (click on the tabs below to view their explanations):
 
-- **via an OTP mobile application**. Install an OTP mobile application on to your Android or iOS smartphone or tablet. Next, link the application to your OVHcloud account. Each time you try to log in to your account, the application will generate a one-time code valid for a short time period.
-Once you have linked the application to your account, your device no longer needs an internet connection for the codes to be generated.
+> [!tabs]
+> SMS
+>>![2FA sms](images/sms.svg)<br>
+>> For this method, you will need to enter your mobile number.
+>> A single-use code is sent to you via SMS each time you try to log in to your OVHcloud account.
+>>
+>> The main advantage of this method is that codes are sent to a device not attached to your computer. If your system is compromised, e.g. by malware, your account will remain secure.
+>> However, you must have sufficient network coverage to receive SMS messages.
+>>
+> Mobile App
+>>![2FA OTP](images/app.svg)<br>
+>> For this method, you will need to install an **OTP** application on your Android or iOS smartphone or tablet.
+>> Many OTP applications exist (no OTP applications have been developed by OVHcloud) and can be downloaded from the Google Play Store for Android or from the Apple Store for iOS. The following two applications are free:
+>>
+>> - FreeOTP for Android
+>> - OTP Auth for iOS
+>>
+>> Once the application is linked to your OVHcloud account, the application generates a single-use code that is valid for a short period of time (a few seconds) each time you try to log in.
+>>
+>> > [!success]
+>> > **Advantages of this method**:
+>>>
+>> > - Once you have linked the application to your account for the first time, you no longer need to be connected to the internet on your smartphone/tablet for the codes to be generated.
+>> > - You can use a single OTP application for all of your services or sites that require two-factor authentication.
+>>
+> Security key
+>>![2FA U2F](images/key.svg)<br>
+>> For this method, you must have a **U2F** physical key that you plug into a USB port on your computer each time you log in to your OVHcloud account. The authentication is then carried out automatically. 
+>>
+>> This method offers a higher level of security as it is based on an independent security equipment, totally separate from your computer, smartphone or tablet, and which is less exposed to the risk of hacking.
+> Backup codes
+>>![2FA codes](images/code.svg)<br>
+>> When you configure two-factor authentication (via **SMS**, **Mobile App** or **Security Key**) for the first time, you will see 10 **single-use backup codes** displayed in the Control Panel.
+>>
+>> This two-factor authentication method complements an already activated method (via **SMS**, **Mobile Application** or **Security key**). It cannot be activated alone.
+>>
+>> Each time you try to log in, you can enter one of the 10 single-use codes.
+>> It is essential to always have at least 1 remaining backup code. Remember to regenerate them via the OVHcloud Control Panel if you have used all of them, or if you have lost them.
 
-- **via a U2F security key**. This method involves plugging a U2F USB security key into your computer each time you log in to your OVHcloud account. When you plug in the key, the authentication process takes place automatically. This method offers a higher level of security, as it is based on independent security hardware that is completely separate from your computer, smartphone or tablet. As a result, it is less exposed to the risk of hacking.
+### Step 1 - Enable your first two-factor authentication method <a name="enabling-2fa"></a>
 
-### Step 1: Enable your first two-factor authentication method.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click your name in the top right-hand corner (1), then click your initials (2). Then click `Security`{.action} (3) and finally `Enable two-factor authentication`{.action} (4).
 
-- [Enabling two-factor authentication via SMS](/pages/account_and_service_management/account_information/enable-2fa-with-sms)
-- [Enabling two-factor authentication via mobile application](/pages/account_and_service_management/account_information/enable-2fa-with-mobile-app)
-- [Enabling two-factor authentication via security key](/pages/account_and_service_management/account_information/enable-2fa-with-security-key)
+![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
-Once you have added your first method, you can also add one or two other methods, so that you have more choice in how you log in to your account.
+**Click on the tab corresponding to the method of your choice:**
 
-### Step 2: Save the emergency security codes.
+> [!tabs]
+> SMS
+>> Choose the SMS method and click `Next`{.action}.
+>>
+>>![2FA sms](images/2024-002-sms-choice.png){.thumbnail width="400"}<br>
+>> Enter your mobile phone number in international format (for example, +33612345678 for a mobile phone in France) and confirm.
+>> A validation code is then sent by SMS to the number you have given.
+>>
+>>![2FA sms](images/2fasms3edit.png){.thumbnail width="400"}<br>
+>> Enter this code in the field provided.<br>
+>> You can also add a description for the phone number you entered.
+>>
+>>![2FA sms](images/2024-002-sms-code.png){.thumbnail width="400"}<br>
+>> Two-factor authentication is now enabled. You can also add other numbers.
+> Mobile App
+>> Choose the method by mobile application and click `Next`{.action}.
+>>
+>>![2FA mobileapp](images/2024-003-otp-choice.png){.thumbnail width="400"}<br>
+>> A QR code is generated, scan it via your OTP application. If your OTP application does not offer this option, click `Show secret`{.action} to display a code to enter into the OTP application.<br>
+>> Your application then generates a single-use code.
+>> Enter this code in the field to the right of the QR code. You can also add a description for this authentication method.
+>>
+>>![2FA mobileapp](images/2024-003-otp-code.png){.thumbnail width="400"}<br>
+>> Two-factor authentication is now enabled.
+> Security key
+>> Choose the security key method and click `Next`{.action}.
+>>
+>>![2FA securitykey](images/2024-004-u2f-choice.png){.thumbnail width="400"}<br>
+>> Plug in your security key when prompted. If it has a button, press it.
+>>
+>>![2FA securitykey](images/2024-004-u2f-insert.png){.thumbnail width="400"}
+>>
+>> > [!warning]
+>> > A pop-up window will open, prompting you to validate the key. If you don't see this window appear, make sure your browser isn't blocking pop-ups.
+>>
+>> Once the key is recognized, you can also add a description.
+>> Two-factor authentication is now enabled.
 
-When you add two-factor authentication for the first time, you are sent emergency codes. Please keep them saved somewhere safe. We recommend saving them in a password manager.
+Once you have added the first method, you can also **add one or two other methods** to give you multiple ways of logging in to your account.
 
-![2FA](images/2facodes.png){.thumbnail}
+### Step 2 - Save backup codes <a name="codes"></a>
 
-You can delete or regenerate them via the OVHcloud Control Panel:
+When you add two-factor authentication for the first time, you will see 10 single-use **backup codes** displayed in the OVHcloud Control Panel.
 
-![2FA](images/2facodesaction.png){.thumbnail}
+**Please keep them safe**. We recommend saving them in a password manager, such as [KeePass](https://keepass.info/){.external} or [Bitwarden](https://bitwarden.com/) (both applications are free).
+
+![2FA](images/2024-005-backup-codes.png){.thumbnail width="544"}
+
+You can regenerate or delete backup codes from your Control Panel:
+
+![2FA](images/emergency-codes.png){.thumbnail}
 
 > [!warning]
 >
-> As a reminder, please note that it is important to save these emergency codes and ensure that they are valid. If one of the security methods you have selected becomes unavailable (theft or loss of your mobile phone or security key), access to your account may be blocked.
-> 
+> It is **strongly recommended that you save these backup codes** and ensure that they are valid.
+> If you don't have a security code and your phone/smartphone/tablet or security key is lost or stolen, access to your Control Panel and your services may be blocked.
+>
 
-### Step 3: Log in to the OVHcloud Control Panel with two-factor authentication.
+### Step 3 - Log in to the OVHcloud Control Panel with two-factor authentication <a name="login-2fa"></a>
 
-Once you have enabled two-factor authentication, the login screen will show the security method selected. If you would like to use another method, click `Try another method`{.action}.
+Go to the [login page for the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and enter your ID (or primary email address) and password.
 
-![2FA](images/2fasmsloginedit.png){.thumbnail}
+The login screen displays the last two-factor authentication method used or entered. If you would like to use another method, click the `Try another method`{.action} button.
 
-All of the methods you have enabled will then appear:
+![2FA](images/2024-007-log-in-01.png){.thumbnail width="400"}
 
-![2FA](images/2faloginchoice.png){.thumbnail}
+All the methods you have enabled will then appear, including the backup codes method.
 
-### What do I do if I lose one of my devices, or if it stops working?
+![2FA](images/2024-007-log-in-02.png){.thumbnail width="400"}
 
-If you have lost one of your devices (mobile phone/smartphone/security key) or it stops working, we advise using one of the other two-factor authentication methods enabled on your account.
+By choosing this last method, you just need to enter one of your backup codes.
 
-You can also use one of the security codes provided to you. 
+![2FA](images/2024-007-log-in-03.png){.thumbnail width="400"}
 
-### Remove a device linked to two-factor authentication. <a name="delete-device"></a>
+### What do I do if I lose one of my devices, or if it stops working? <a name="lost-device"></a>
+
+If your device (mobile phone/smartphone/security key) is lost, stolen or no longer works, you can:
+
+- Use the active [backup codes](#codes) that you have backed up.
+- Use another two-factor authentication device, if you have enabled several.
+- [Disable two-factor authentication](#disable-2fa).
 
 > [!warning]
 >
-> Removing a device does not disable two-factor authentication. 
-> 
-> To avoid the risk of blocking access to your account, please check that you can use one of the following login methods before removing a device:
-> 
-> - via a working device
-> - via another working method of two-factor authentication 
-> - via valid security codes
-> 
+> If one of your devices has been lost or stolen, this can compromise the security of your OVHcloud account.
+> Once you regain access to your Control Panel, you must **remove this device from the list of devices used for two-factor authentication**.
+>
+> See the next chapter of this guide for details on removing a device.
+>
 
-To remove a device, please log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click on your name in the top right-hand corner (first step on the image below), then click your initials (second step). 
-
-![2FA](images/hub2FAb.png){.thumbnail}
-
-Next, click `Security`{.action} (the first step on the image below), then click on the `...`{.action} icon (second step) to the right of the device you want to delete, and finally, click `Remove`{.action} (third step).
-
-![2FA](images/hub2FAc.png){.thumbnail}
-
-You will then be sent a final validation code for the device you want to delete. Enter this code in the window that opens, then click `Confirm`{.action} to complete the deletion.
+#### Remove a device linked to two-factor authentication <a name="delete-device"></a> 
 
 > [!warning]
 >
-> If you no longer have access to the device you want to delete, you cannot delete it yourself from the OVHcloud Control Panel.
+> Before removing a device, and in order not to block access to your account, please check that you have:
 >
-> In this case, **contact our support teams directly** by following the process described [here](#2FA-deletion).
+> - Another functional device
+> - Another functional two-factor authentication method
+> - Valid backup codes
 >
 
-### Disable two-factor authentication completely <a name="disable-2fa"></a>
+To remove a device, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click your name in the top right-hand corner, then click your initials.
+
+Next, click `Security`{.action} then the `...`{.action} button to the right of the device you want to delete, then click `Delete`{.action}.
+
+![2FA](images/2024-006-delete-device.png){.thumbnail}
+
+A final validation code will then be sent to the device you want to delete. Enter this code in the window that opens, then click `Confirm`{.action} to complete the deletion.
+
+If you no longer have access to the device you want to delete, you cannot delete it yourself from the OVHcloud Control Panel.
+In this case, **contact our support teams directly** by [creating a ticket from the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) or by following the process described [below](#2FA-deletion).
+
+> [!warning]
+>
+> Removing a single device does not disable two-factor authentication on your OVHcloud account.
+
+### Disabling two-factor authentication completely <a name="disable-2fa"></a>
 
 #### If you still have access to your OVHcloud Control Panel
 
@@ -119,9 +215,17 @@ Before contacting us, you must gather the following documents:
 |OVHcloud account type|Needed documents|
 |---|---|
 |Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder|
-|Company|- Company registration documents<br><br>- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.<br><br>- Company registration documents|
+|Company|- Company registration documents<br><br>- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.|
 
-Once you have gathered your supporting documents, contact our OVHcloud support teams, dialing +353 (0) 1 691 72 83. 
+Once you have gathered your supporting documents, contact our OVHcloud support teams:
+
+- UK: +44333 370 0425
+- Ireland: +353 (0) 1 691 72 83
+- Canada: 1-855-684-5463
+- Australia: 1300 OVH AUS (684 287) (Calling from overseas? Dial +61 3 83 758 172)
+- India: 000 800 040 4567
+- Singapore: +65 6962 8979
+- Asia: +65 6962 8978
 
 > [!warning]
 >

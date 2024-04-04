@@ -1,7 +1,7 @@
 ---
 title: Spécifications techniques du SMPP
 excerpt: 'Découvrez les spécifications techniques du SMPP'
-updated: 2023-08-18
+updated: 2024-02-27
 ---
 
 ## Objectif
@@ -140,8 +140,8 @@ Le `submit_sm` est utilisée par un ESME pour soumettre un SMS au SMSC pour tran
         - `source_addr_ton` = 1
         - `source_addr_npi` = 1
 - `destination_addr` doit être un numéro international (ex : 33600000001)
-    - `source_addr_ton` = 1
-    - `source_addr_npi` = 1
+    - `dest_addr_ton` = 1
+    - `dest_addr_npi` = 1
 
 **Paramètres optionnels :**
 

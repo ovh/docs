@@ -28,8 +28,8 @@ Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für b
 ## Voraussetzungen
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Account.
-- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
-- Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH oder GUI. 
+- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse.
+- Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
 ## In der praktischen Anwendung
@@ -296,7 +296,7 @@ Wenn Sie über SSH mit Ihrem Server verbunden sind, geben Sie folgenden Befehl e
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre Additional IP. Wenn sie im Rescue-Modus antwortet, bedeutet dies wahrscheinlich, dass ein Konfigurationsfehler vorliegt. Wenn die IP jedoch noch nach wie vor nicht funktioniert, informieren Sie bitte unsere Support-Teams, indem Sie ein Support-Ticket über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellen.
+Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre Additional IP. Wenn sie im Rescue-Modus antwortet, bedeutet dies wahrscheinlich, dass ein Konfigurationsfehler vorliegt. Wenn die IP jedoch noch nach wie vor nicht funktioniert, informieren Sie bitte unsere Support-Teams, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
 
 ## Weiterführende Informationen
 

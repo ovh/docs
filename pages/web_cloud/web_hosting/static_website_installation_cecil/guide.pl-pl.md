@@ -5,7 +5,7 @@ updated: 2023-12-08
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -188,7 +188,7 @@ Następnie wróć na stronę, aby zobaczyć wynik:
 
 Jeśli wolisz używać Twojego zwykłego edytora kodu, zaloguj się z klientem FTP do Twojego serwera, aby pobrać pliki na komputerze:
 
-![Do pobrania z FileZilla](images/static_website_installation_cecil11.png){.thumbnail}
+![Do pobrania z FileZilla](images/cecil-folder.png){.thumbnail}
 
 Teraz możesz edytować pliki I.D.E. w swoim repozytorium:
 

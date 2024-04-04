@@ -23,7 +23,7 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
 
 - avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - un servizio [VPS OVHcloud](https://www.ovhcloud.com/it/vps/) già impostato
-- accesso come amministratore (root) mediante SSH al tuo VPS (opzionale)
+- accesso come amministratore (sudo) mediante SSH al tuo VPS (opzionale)
 
 ## Procedura
 

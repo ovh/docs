@@ -65,11 +65,11 @@ Im Tab `Allgemeine Informationen`{.action} können Sie überprüfen, ob die Vora
 
 Klicken Sie im Bereich **Sicherheit** auf `Ausgehender Transfer-TAG`{.action}.
 
-![ausgehender Transfer](images/img_4267.jpg){.thumbnail}
+![ausgehender Transfer](images/outgoing-transfer-tag.jpg){.thumbnail}
 
 Geben Sie im neuen Fenster den TAG Ihres neuen Registrars ein und klicken Sie dann auf `Bestätigen`{.action}.
 
-![ausgehender Transfer](images/img_4268.jpg){.thumbnail}
+![ausgehender Transfer](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Falls es Ihnen nicht möglich ist, den TAG Ihres Domainnamens über Ihr Kundencenter zu ändern, können Sie dies auch direkt bei der Registrierungsstelle beantragen. Weitere Informationen finden Sie auf der offiziellen [Website von Nominet](https://www.nominet.uk/domain-support/).
 
@@ -81,4 +81,6 @@ Eine erfolgreiche Änderung des TAG startet den Transferprozess. Wenden Sie sich
 
 [Einen Domainnamen zu einem anderen Registrar transferieren](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

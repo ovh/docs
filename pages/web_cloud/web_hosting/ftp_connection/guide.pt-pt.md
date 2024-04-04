@@ -45,7 +45,7 @@ Se não dispõe destes elementos, aceda à [Área de Cliente OVHcloud](https://w
 
 Aparecerá a informação relativa ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento web.
 
-![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
+![ftpconnect](images/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +75,7 @@ Encontre aqui uma descrição das informações essenciais exibidas na página `
 
 Se já não sabe a palavra-passe de um utilizador FTP ou SSH, consulte o nosso guia "[Modificar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
+![ftpconnect](images/change-password.png){.thumbnail}
 
 Nesta fase, dispõe de todos os elementos que lhe permitem aceder ao seu espaço de armazenamento FTP.
 
@@ -96,11 +96,11 @@ Para se ligar ao espaço de armazenamento FTP através do "FTP Explorer", aceda 
 
 Clique na secção `Alojamentos`{.action} na coluna da esquerda. Escolha o nome do alojamento web em causa, aceda ao separador `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
 
-![ftpconnect](images/connect-ftp-step3.png){.thumbnail}
+![ftpconnect](images/ftp-explorer.png){.thumbnail}
 
 Na nova página, insira o seu identificador FTP e a respetiva palavra-passe. Se as informações estiverem corretas, aparecerá o seu espaço de armazenamento.
 
-![ftpconnect](images/connect-ftp-step4.png){.thumbnail}
+![ftpconnect](images/login-interface.png){.thumbnail}
 
 #### 2. Ligação através de um software FTP <a name="ftpsoftware"></a>
 
@@ -156,7 +156,7 @@ Se as informações estiverem corretas, será ligado ao seu espaço de armazenam
 
 Para mais informações, consulte o manual "[Utilizar uma ligação SSH num alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)".
 
-![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
+![ftpconnect](images/terminal-ssh-connected.png){.thumbnail}
 
 ## Quer saber mais?
 

@@ -1,11 +1,11 @@
 ---
-title: 'Zarządzanie certyfikatem SSL na hostingu'
-excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud'
-updated: 2023-11-29
+title: "Zarządzanie certyfikatem SSL na hostingu"
+excerpt: "Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud"
+updated: 2023-12-06
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -38,17 +38,28 @@ W zależności od [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/opti
 
 Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
 
-![managessl](images/manage-ssl-step5.png){.thumbnail}
+![managessl](images/ssls.png){.thumbnail}
 
 Mogą pojawić się wówczas trzy statusy:
 
-|Statusy|Opis |
+|Statusy|Opis|
 |---|---|
 |Aktywny|Wskazuje, że certyfikat SSL jest już aktywny dla tej strony podpiętej w opcji MultiSite. Jeśli Twoja strona WWW nie używa protokołu HTTPS, skorzystaj z instrukcji zawartych w dokumentacji OVHcloud [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website){.external}.|
 |Do wygenerowania|Wskazuje, że certyfikat SSL został aktywowany dla danej strony podpiętej w opcji MutiSite, ale nie jest jeszcze aktywny. Odnów certyfikat SSL dla Twojego hostingu, aby uwzględniał nowe domeny.|
 |Wyłączony|Wskazuje, że certyfikat SSL nie jest aktywny dla danej strony podpiętej w opcji MultiSite. Aby go aktywować, postępuj zgodnie z instrukcjami podanymi poniżej.|
 
 Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij przycisk `...`{.action} po prawej stronie podpiętej w opcji MultiSite, a następnie `Zmień domenę`{.action}. W oknie, które się wyświetla zaznacz kratkę `SSL`{.action}. Możesz również włączyć opcję, aby zmienić subdomenę www w tym samym czasie co powiązana nazwa domeny. Postępuj zgodnie z instrukcjami, aż do potwierdzenia modyfikacji.
+
+> [!warning]
+>
+> Przypisanie certyfikatu SSL do wielokrotnego wejścia poprzez tabelę "MultiSite" jest możliwe tylko wtedy, gdy zamówiłeś bezpłatny certyfikat SSL **Let's Encrypt** dostarczony przez OVHcloud.
+>
+> Płatne certyfikaty SSL **Sectigo** (DV i EV) są ważne tylko dla jednej domeny (i jej subdomeny *www*). Informacja *Aktywny* nie będzie mogła pojawić się po prawej stronie innych stron podpiętych w opcji MultiSite.
+>
+> Niektóre certyfikaty SSL **Zewnętrzne** mogą być ważne dla kilku domen jednocześnie. Jeśli korzystasz z jednej z domen, informacja *Aktywny* nie pojawi się również dla wszystkich domen zadeklarowanych w tabeli "MultiSite". Certyfikat SSL będzie ważny dla domen, które *zawiera*.
+>
+
+![managessl](images/modify-domain.png){.thumbnail}
 
 Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat "Do wygenerowania". Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite.
 
@@ -72,9 +83,9 @@ Przed przeprowadzeniem tej konfiguracji upewnij się, że poprzedni etap [aktywa
 >
 > Przed kontynuowaniem upewnij się również, że wpis lub wpisy MultiSite, dla których aktywujesz opcję SSL, wskazują na adres IP hostingu. Konfiguracja ta jest automatycznie proponowana podczas dodawania lub modyfikowania wpisu w opcji MultiSite, ale musi być wykonywana ręcznie dla domeny, która nie jest zarządzana w Twoim Panelu klienta.<br>
 > - Znajdź adres IP Twojego hostingu w zakładce `Informacje ogólne`{.action}, z adnotacją `IPv4`.
-> ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
+> ![managessl](images/find-ipv4.png){.thumbnail}
 > - Konfiguracja strefy DNS domeny w opcji MultiSite w sekcji `Domeny`{.action}, w zakładce `Strefa DNS`{.action}. Zmień lub dodaj rekord typu `A` odpowiadający Twojemu rekordowi w opcji MultiSite i wprowadź adres IP Twojego hostingu w `Adres docelowy`.
-> ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
+> ![managessl](images/modify-an-entry.png){.thumbnail}
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami [dotyczącymi konfiguracji wpisu w opcji MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) lub [konfiguracji strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -90,11 +101,11 @@ Kliknij przycisk `...`{.action} obok napisu „Certyfikat SSL”, a następnie `
 
 Jeśli pojawi się informacja „Tak”, oznacza to, że certyfikat SSL jest już zainstalowany i skonfigurowany na hostingu. Nie będziesz mógł więc zamówić nowego, dopóki na hostingu będzie zainstalowany poprzedni.
 
-![managessl](images/manage-ssl-step1.png){.thumbnail}
+![managessl](images/order-an-ssl-certificate.png){.thumbnail}
 
 W oknie, które się pojawi wybierz certyfikat SSL, który chcesz zamówić. Nie wszystkie rozwiązania wymienione powyżej mogą być dostępne. Zależy to od wykupionego przez Ciebie [pakietu hostingowego](https://www.ovhcloud.com/pl/web-hosting/){.external} lub konfiguracji. Po wybraniu opcji kliknij `Dalej`{.action}.
 
-![managessl](images/manage-ssl-step2.png){.thumbnail}
+![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 W zależności od wybranego rozwiązania mogą pojawić się dodatkowe etapy:
 
@@ -106,7 +117,7 @@ W zależności od wybranego rozwiązania mogą pojawić się dodatkowe etapy:
 
 Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności od typu wybranego certyfikatu. Aby sprawdzić, czy certyfikat SSL jest zainstalowany na Twoim hostingu, przejdź do zakładki `Informacje ogólne`{.action} w Twoim Panelu klienta. Informacja „Tak” powinna pojawić się poniżej sekcji „Certyfikat SSL”.
 
-![managessl](images/manage-ssl-step4.png){.thumbnail}
+![managessl](images/tab-ssl-le.png){.thumbnail}
 
 ### 3. Ponowne wygenerowanie certyfikatu SSL na hostingu <a name="regeneratessl"></a>
 
@@ -119,13 +130,13 @@ Po aktywowaniu bezpiecznego połączenia SSL na jednej lub kilku stronach podpi�
 
 Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji `Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Wygeneruj ponownie certyfikat SSL`{.action}.
 
-![managessl](images/manage-ssl-step7.png){.thumbnail}
+![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
 
 Zapoznaj się z informacjami w oknie, które się wyświetli, po czym kliknij `Zatwierdź`{.action}. Zaczekaj następnie, aż certyfikat SSL zostanie odnowiony. Może to potrwać kilka godzin.
 
 Pamiętaj jednak, że Let's Encrypt, organizacja dostarczająca certyfikat SSL zawarty w Twoim hostingu, [ogranicza liczbę dopuszczalnych odnowień certyfikatu do pięciu tygodniowo](https://letsencrypt.org/docs/rate-limits/){.external}. Zalecamy ostrożność, gdyż zbyt duża liczba odnowień w krótkim czasie może spowodować czasową blokadę możliwości odnowienia certyfikatów.
 
-![managessl](images/manage-ssl-step8.png){.thumbnail}
+![managessl](images/ssl-regeneration.png){.thumbnail}
 
 ### Usunięcie certyfikatu SSL na hostingu <a name="deletessl"></a>
 
@@ -137,7 +148,79 @@ Gdy będziesz gotowy do usunięcia certyfikatu SSL zaloguj się do [Panelu klien
 
 Na stronie, która się wyświetli, zatwierdź usunięcie certyfikatu. Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin.
 
-![managessl](images/manage-ssl-step9.png){.thumbnail}
+![managessl](images/delete-ssl.png){.thumbnail}
+
+> [!warning]
+>
+> Usunięcie płatnego certyfikatu SSL **Sectigo** (DV lub EV) jest definitywne, nawet jeśli certyfikat jeszcze nie wygasł. Nie wykonasz zwrotu wpłaconej sumy za niewykorzystany czas. Jeśli chcesz ponownie zainstalować certyfikat SSL **Sectigo** (DV lub EV), musisz obowiązkowo złożyć nowe zamówienie i zapłacić za cały nowy wykupiony certyfikat SSL.
+>
+
+### Popraw często występujące błędy przy użyciu certyfikatów SSL oferowanych na hostingu
+
+####  "You already have an SSL certificate on your account. It will be migrated on new SSL offers in the next week."
+
+Ten komunikat wskazuje, że jesteś już właścicielem certyfikatu SSL. Aktywacja nowego certyfikatu SSL (Let's Encrypt) na Twoim hostingu nie jest zatem konieczna.
+
+Zapoznaj się z częścią "[Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite)" niniejszego przewodnika, aby kontynuować swoje działania.
+
+#### "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone."
+
+Powiadomienie to można wyjaśnić w trzech przypadkach.
+
+- 1: Domena przypisana do Twojej strony WWW wskazuje na adres IP usługi CDN Twojego hostingu, bez aktywnej opcji GeoCache:
+
+Aby rozwiązać ten problem, w strefie DNS włączonej dla Twojej domeny przypisz adres IP hostingu bez usługi CDN do Twojej domeny.
+
+Aby sprawdzić adres IP hostingu, zapoznaj się z naszym przewodnikiem "[Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
+Aby zmodyfikować aktywną strefę DNS Twojej domeny, zapoznaj się z naszym przewodnikiem "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+
+- 2: Domena przypisana do Twojej strony WWW nie wskazuje na adres IP Twojego hostingu:
+
+Aby rozwiązać ten problem, w strefie DNS Twojej domeny przypisz adres IP hostingu do Twojej domeny.
+Jeśli włączyłeś opcję GeoCache w Twoim hostingu, możesz również użyć adresu IP hostingu WWW w ramach usługi GeoCache.
+
+Aby sprawdzić adres IP hostingu, zapoznaj się z naszym przewodnikiem "[Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
+Aby zmodyfikować aktywną strefę DNS Twojej domeny, zapoznaj się z naszym przewodnikiem "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+
+- 3: Żadna z domen w zakładce "MultiSite" nie posiada opcji SSL "active":
+
+Aby rozwiązać ten problem, włącz certyfikat SSL dla domeny (domen). Jeśli potrzebujesz więcej informacji, zapoznaj się z częścią "[aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite)" niniejszego przewodnika, aby kontynuować Twoje działania.
+
+#### Certyfikat SSL jest aktywny na Twoim hostingu, ale na Twojej stronie pojawia się komunikat "Your connection is not private"
+
+Ten komunikat pojawia się w następujących przypadkach:
+
+- 1: Reguła przekierowywania "HTTPS" do adresu URL jest nieprawidłowo skonfigurowana lub nie istnieje w pliku ".htaccess":
+
+Aby to naprawić, zapoznaj się z naszym tutorialem "[przepisz adres URL dostępu do mojej strony za pomocą mod_rewrite w pliku .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" lub w przypadku trudności skorzystaj z usług [wyspecjalizowanego dostawcy](https://partner.ovhcloud.com/pl/directory/).
+
+- 2: Niektóre elementy strony internetowej nie są poprawnie przekierowywane do elementów zaszyfrowanych "HTTPS":
+
+Aby to naprawić, upewnij się, że cała Twoja strona WWW jest zaszyfrowana za pomocą protokołu "HTTPS".
+W razie potrzeby sprawdź tutorial "[Hosting WWW: przełącz stronę WWW na HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" lub skorzystaj z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) w przypadku trudności.
+
+> [!success]
+>
+> Odpowiednie elementy na stronie internetowej można zobaczyć bezpośrednio z informacji SSL przeglądarki internetowej, sprawdzając *szczegóły certyfikatu*.
+>
+
+#### Zamówiłeś certyfikat SSL Sectigo EV w tym samym czasie, co Twój hosting, ale certyfikat nie jest jeszcze aktywny i hosting nie działa poprawnie
+
+Ma to związek z etapami, które musisz przeprowadzić, aby aktywować certyfikat SSL EV na Twoim hostingu.
+
+Jeśli potrzebujesz, zapoznaj się z naszym przewodnikiem "[Korzystanie z certyfikatu SSL EV dla Twojej strony WWW](/pages/web_cloud/web_hosting/ssl_ev)", aby rozwiązać ten problem.
+
+> [!primary]
+>
+> Jeśli certyfikat SSL EV nie jest aktywny, zamówienie nie zostanie nigdy zamknięte i nie zostanie utworzona faktura. Z tego powodu usługa hostingu nie będzie działać prawidłowo.
+>
+
+#### Po wygaśnięciu certyfikatu SSL Sectigo (DV lub EV) wystąpi błąd "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone"
+
+Ten błąd pojawia się za każdym razem, gdy wygasa certyfikat SSL Sectigo (aktywowany bezpośrednio z hostingu) i zmienia się adres IP hostingu. Dlatego domena powinna wskazywać na poprawny adres IP (rekord typu A) bezpośrednio w aktywnej strefie DNS Twojej domeny.
+
+Aby sprawdzić adres IP hostingu, zapoznaj się z naszym przewodnikiem "[Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
+Aby zmodyfikować aktywną strefę DNS Twojej domeny, zapoznaj się z naszym przewodnikiem "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ## Sprawdź również
 

@@ -18,7 +18,7 @@ L'objectif de ce guide est de présenter les différentes méthodes disponibles 
 
 ### Dans les réponses HTTP
 
-Lors des appels d'API, il est possible d'obtenir le nom de l'action manquante dans la réponse de la requete HTTP : via le champ `unauthorizedActionsByIAM`.
+Lors des appels d'API, il est possible d'obtenir le nom de l'action manquante dans la réponse de la requête HTTP : via le champ `unauthorizedActionsByIAM`.
 Dans l'exemple suivant, l'action manquante est "*vps:apiovh:reboot*"
 
 ```json
@@ -33,7 +33,7 @@ Dans l'exemple suivant, l'action manquante est "*vps:apiovh:reboot*"
 ```
 
 Depuis l'espace client OVHcloud, basé entièrement sur nos APIs, il est aussi possible d'accéder à cette information à travers les outils de développement du navigateur internet. Ceci en analysant les erreurs 403.
-Pour cela rendez-vous dans l'onglet `Network`{.action} et sélectionnez la requète retournant un statut **403**, puis rendez-vous dans l'onglet `Response`{.action}.
+Pour cela, rendez-vous dans l'onglet `Network`{.action} et sélectionnez la requête retournant un statut **403**puis rendez-vous dans l'onglet `Response`{.action}.
 
 ![Browser development tool](images/browser_dev_tool.png){.thumbnail}
 
@@ -41,7 +41,7 @@ Pour cela rendez-vous dans l'onglet `Network`{.action} et sélectionnez la requ�
 
 Si la [transmission des logs du compte OVHcloud](/pages/manage_and_operate/iam/iam-logs-forwarding) vers LDP est activée, vous pouvez trouver l'information dans les logs des politiques d'accès.
 
-Dans l'interface de Graylog, faites une recherche sur le login de l'utilisateur concerné et les logs contenant des `unauthorized_actions_array` avec la requete `identities_array:*My_user* AND _exists_:unauthorized_actions_array`.
+Dans l'interface de Graylog, faites une recherche sur le login de l'utilisateur concerné et les logs contenant des `unauthorized_actions_array` avec la requête `identities_array:*My_user* AND _exists_:unauthorized_actions_array`.
 
 ![Graylog research](images/graylog_research.png){.thumbnail}
 
@@ -51,7 +51,7 @@ Les logs ainsi filtrés montrent les actions refusées par l'IAM d'OVHcloud pour
 
 Ici par exemple, l'utilisateur *Ines* a essayé de réaliser l'action *vps:apiovh:reboot* sans succès.
 
-Il est aussi possible de filtrer la recherche sur `authorized_actions_array` pour lister les actions autorisées par l'IAM d'OVHcloud
+Il est aussi possible de filtrer la recherche sur `authorized_actions_array` pour lister les actions autorisées par l'IAM d'OVHcloud.
 
 ## Aller plus loin
 

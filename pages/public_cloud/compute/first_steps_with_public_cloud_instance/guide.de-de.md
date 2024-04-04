@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instanzen verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kundencenter verwalten
-updated: 2023-01-04
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Klicken Sie im linken Menü auf `Instances`{.action}. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 Diese Seite zeigt alle Ihre Public Cloud Instanzen und einige ihrer Eigenschaften an:
 
@@ -37,6 +37,7 @@ Diese Seite zeigt alle Ihre Public Cloud Instanzen und einige ihrer Eigenschafte
 - Der Instanz-Typ
 - Das Image, d.h. das auf der Instanz installierte Betriebssystem
 - IPv4-Adresse der Instanz
+- Die private Adresse, die derzeit an die Instanz angehängt ist
 - Zusätzliche Volumes (Disks), die derzeit mit der Instanz verbunden sind
 - Instanz-Status, der anzeigt, ob sich die Instanz im Zustand `Aktiviert` befindet
 
@@ -77,7 +78,7 @@ Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstell
 
 Klicken Sie auf `Anhalten`{.action}.
 
-Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](/pages/public_cloud/compute/suspend_or_pause_an_instance#anhalten-einer-instanz-suspend).
+Dadurch wird die Instanz in den Zustand `Off` versetzt, aber Ihnen wird immer noch derselbe Preis für Ihre Instanz berechnet. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](/pages/public_cloud/compute/suspend_or_pause_an_instance#anhalten-einer-instanz-suspend).
 
 Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
 
@@ -122,6 +123,10 @@ Die Instanz und alle zugehörigen Daten werden damit endgültig entfernt.
 
 Bestätigen Sie die Löschungsanfrage im angezeigten Fenster.
 
+> [!warning]
+> Wenn Sie eine Instanz löschen, werden nicht automatisch alle zugehörigen Optionen gelöscht (z.B. Storage, Snapshot, Backup). Stellen Sie sicher, dass **alle** Optionen, die mit der Instanz verbunden sind, ebenfalls gelöscht werden, um deren Abrechnung zu stoppen.
+>
+
 ### Auf die VNC-Konsole zugreifen <a name="accessvnc"></a>
 
 Klicken Sie im linken Menü auf `Instances`{.action}. Klicken Sie auf der Instanzverwaltungsseite in der Tabelle auf den Namen der Instanz.
@@ -132,7 +137,7 @@ Wechseln Sie dann vom Dashboard zum Tab `VNC-Konsole`{.action}.
 
 Die VNC-Konsole bietet direkten Zugriff auf Ihre Instanz. Damit dieser Zugang funktioniert, müssen Sie zuerst einen Benutzernamen und ein Passwort auf der Instanz konfigurieren. 
 
-Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
+Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 ## Weiterführende Informationen
 

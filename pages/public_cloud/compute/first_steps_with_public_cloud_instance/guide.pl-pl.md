@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie instancjami Public Cloud'
 excerpt: 'Dowiedz się, jak zarządzać instancjami Public Cloud w Panelu klienta OVHcloud'
-updated: 2023-01-04
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 Kliknij `Instances`{.action} w menu po lewej stronie. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 Strona ta zawiera listę wszystkich instancji Public Cloud i niektórych ich właściwości:
 
@@ -37,6 +37,7 @@ Strona ta zawiera listę wszystkich instancji Public Cloud i niektórych ich wł
 - model instancji;
 - obraz, czyli system operacyjny zainstalowany na instancji;
 - adres IPv4 instancji;
+- adres prywatny aktualnie przypisany do instancji;
 - dodatkowe wolumeny (dyski) aktualnie przypisane do instancji;
 - status instancji, wskazujący, czy jest ona `włączona`.
 
@@ -73,11 +74,11 @@ Kliknij `Utwórz automatyczną`{.action} kopię zapasową.
 
 Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii zapasowej instancji](/pages/public_cloud/compute/save_an_instance#tworzenie-zautomatyzowanych-kopii-zapasowych-instancji)".
 
-#### Zawieś instancję
+#### Zatrzymanie instancji
 
 Kliknij przycisk `Zatrzymaj`{.action}.
 
-Działanie to spowoduje zawieszenie instancji. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zatrzymaj-suspend-instancje)".
+Spowoduje to przełączenie instancji w stan `Wyłączona`, ale nadal będzie naliczana ta sama cena za instancję. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zatrzymaj-suspend-instancje)".
 
 Kliknij `Uruchom`{.action}, aby ponownie włączyć instancję.
 
@@ -102,9 +103,9 @@ Potwierdź zlecenie restartu w oknie, które się wyświetli.
 
 Kliknij `Zawieś`{.action}.
 
-Wówczas instancja stanie się "*shelved*" wyświetlanym tutaj jako `Suspended`. Zapoznaj się z przewodnikiem "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zawies-shelve-instancje)", aby uzyskać więcej informacji na temat różnych stanów zawieszenia instancji.
+Wówczas instancja stanie się "*shelved*" wyświetlanym tutaj jako `Zawieszona`. Zapoznaj się z przewodnikiem "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zawies-shelve-instancje)", aby uzyskać więcej informacji na temat różnych stanów zawieszenia instancji.
 
-Kliknij `Reaktywuj`{.action}, aby przywrócić stan `Włączony` instancji.
+Kliknij `Reaktywuj`{.action}, aby przywrócić stan `Włączona` instancji.
 
 #### Reinstalacja instancji 
 
@@ -121,6 +122,10 @@ Kliknij `Usuń`{.action}.
 Operacja ta spowoduje definitywne usunięcie instancji oraz wszystkich jej danych.
 
 Potwierdź zlecenie usunięcia w oknie, które się wyświetli.
+
+> [!warning]
+> Usunięcie instancji nie powoduje automatycznego usunięcia wszystkich powiązanych z nią opcji (storage, snapshot, backup, itp...). Upewnij się, że wszystkie inne opcje powiązane z instancją również zostały usunięte, dzięki czemu przestaniesz być fakturowany.
+>
 
 ### Dostęp do konsoli VNC <a name="accessvnc"></a>
 

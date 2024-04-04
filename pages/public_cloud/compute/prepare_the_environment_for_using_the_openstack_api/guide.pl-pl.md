@@ -1,7 +1,7 @@
 ---
 title: 'Przygotowanie środowiska do korzystania z API OpenStack'
 excerpt: 'Zainstaluj środowisko OpenStack, aby monitorować Twoje instancje za pośrednictwem API'
-updated: 2023-11-29
+updated: 2024-01-22
 ---
 
 > [!primary]
@@ -17,7 +17,8 @@ Dzięki API OpenStack możesz zautomatyzować zarządzanie usługami, tworząc s
 > [!primary]
 >
 > OpenStack wymaga języka Python >=3.8.
->
+> Ten przewodnik opisuje instalację pakietu `python-openstackclient`, który zawiera wiersz poleceń dla większości projektów OpenStack.
+> Projekt Octavia (który zasila `Public Cloud Load Balancer`) nie jest dołączony. W związku z tym należy uruchomić `pip3 install python-octaviaclient` oprócz instrukcji instalacji znajdujących się poniżej.
 
 **Dowiedz się, jak zainstalować narzędzia OpenStack.**
 
@@ -26,12 +27,6 @@ Dzięki API OpenStack możesz zautomatyzować zarządzanie usługami, tworząc s
 - Posiadanie dostępu **root** do środowiska, które chcesz skonfigurować 
 
 ## W praktyce
-
-Aby skonfigurować Load Balancer Public Cloud, zainstaluj klienta Octavia Python:
-
-```console
-pip3 install python-octaviaclient
-```
 
 ### Debian
 

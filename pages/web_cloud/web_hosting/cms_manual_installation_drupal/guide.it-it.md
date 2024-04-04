@@ -55,7 +55,7 @@ Inserisci il dominio nella barra di ricerca del browser
 
 Se i file sorgente di Drupal sono stati inseriti correttamente nella cartella root, la pagina di selezione della lingua per Drupal appare:
 
-![Drupal Installstep 1](images/Drupal-install-language-1.png){.thumbnail}
+![Drupal Installstep 1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-language-1.png){.thumbnail}
 
 Seleziona la lingua del sito e clicca su `Save and Continue`{.action}.
 
@@ -67,7 +67,7 @@ Drupal propone diversi livelli di installazione:
 - una versione minima
 - una versione di presentazione 
 
-![Drupal Installstep 2](images/Drupal-install-profil-2.png){.thumbnail}
+![Drupal Installstep 2](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-profil-2.png){.thumbnail}
 
 Ti consigliamo di installare questi strumenti **Standard**. Clicca su `Save and Continue`{.action}.
 
@@ -75,7 +75,7 @@ Ti consigliamo di installare questi strumenti **Standard**. Clicca su `Save and 
 
 Inserisci le informazioni richieste relative al database:
 
-![Drupal Installstep 3](images/Drupal-install-db-config-3.png){.thumbnail}
+![Drupal Installstep 3](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-db-config-3.png){.thumbnail}
 
 Recupera le credenziali del tuo database (se necessario, consulta **lo Step 1.4** della guida sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation)).
 
@@ -106,13 +106,13 @@ Clicca su `Save and Continue`{.action}.
 
 Se tutto è stato realizzato correttamente, l'installazione di Drupal si avvia:
 
-![Drupal Installstep 4](images/Drupal-install-4.png){.thumbnail}
+![Drupal Installstep 4](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-4.png){.thumbnail}
 
 #### 2.4 - Configura le informazioni del sito e l'accesso "Amministratore"
 
 Una volta completato lo step precedente, visualizzi la pagina seguente:
 
-![Drupal Installstep 5-1](images/Drupal-install-configure-site-5-1.png){.thumbnail}
+![Drupal Installstep 5-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-configure-site-5-1.png){.thumbnail}
 
 Inserisci gli elementi richiesti:
 
@@ -126,7 +126,7 @@ Inserisci gli elementi richiesti:
 
 Prosegui nella lettura di questa guida in basso:
 
-![Drupal Installstep 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
+![Drupal Installstep 5-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-configure-site-5-2.png){.thumbnail}
 
 - *Email address*: inserisci il tuo indirizzo email. Idealmente inserisci lo stesso indirizzo indicato sopra nel form *Indirizzo email del sito*.
 
@@ -138,7 +138,7 @@ Clicca su `Save and Continue`{.action}.
 
 Se tutto è andato a buon fine, visualizzi la pagina seguente:
 
-![Drupal Installstep 6](images/Drupal-install-ending-6.png){.thumbnail}
+![Drupal Installstep 6](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-ending-6.png){.thumbnail}
 
 > [!success]
 >

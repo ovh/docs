@@ -98,6 +98,9 @@ W takim przypadku użyj następującego polecenia i spróbuj ponownie zamontowa�
 
 ```bash
 ntfsfix /dev/sda4
+```
+
+```bash
 mount /dev/sda4 /mnt
 ```
 

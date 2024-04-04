@@ -1,7 +1,7 @@
 ---
 title: Ajouter un champ MX à la configuration de son nom de domaine
 excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
-updated: 2023-08-30
+updated: 2024-02-29
 ---
 
 ## Objectif
@@ -21,9 +21,9 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification des enregistrements MX depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans la partie `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné, dans l'onglet `informations générales`{.action}. Si la mention `Actif` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
+> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Une fois positionné sur le domaine concerné, depuis l'onglet `informations générales`{.action}, dans la partie `Serveurs DNS`{.action}, si la mention `Actif` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
 >
-> ![email](images/email-dns-conf-mx00.png){.thumbnail}
+> ![email](images/dns-servers-enabled.png){.thumbnail}
 
 ## En pratique
 
@@ -35,7 +35,7 @@ Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@myd
 - **(1)** interroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX**.
 - **(2)** transmettre l'e-mail vers l'URL de l'enregistrement **MX** lu.
 
-![email](images/email-dns-conf-mx01-ca.png){.thumbnail}
+![email](images/mx-dns-resolution-apac-ca.png){.thumbnail}
 
 L'e-mail sera envoyé vers la cible **mx0.mail.ovh.ca** qui est précédée de la valeur **0**. Cette valeur est appelée priorité. La plus faible valeur est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
 
@@ -69,14 +69,14 @@ Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque lig
 Dans un premier temps, nous vous invitons à vérifier si des enregistrements MX existent déjà dans la configuration DNS OVHcloud de votre nom de domaine, en vous aidant de la liste de filtrages située au dessus du tableau de votre zone DNS.<br>
 Sélectionnez le type **MX** puis validez pour n'afficher que les entrées DNS MX de votre zone DNS. Aidez-vous de la capture d'écran ci-dessous.
 
-![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
+![dnsmxrecord](images/mx-entries-research.png){.thumbnail}
 
 - Si des enregistrements MX existent déjà et que vous souhaitez les modifier, cliquez sur le bouton `...`{.action} à droite de chaque ligne du tableau concernée puis cliquez sur `Modifier l'entrée`{.action}.
 - Si aucun enregistrement MX n'est présent, cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau puis choisissez `MX`{.action}. Complétez les informations demandées en fonction de la solution e-mail choisie :
 
 **Si vous disposez d'une solution e-mail OVHcloud**, reportez-vous aux informations données à l'étape « [Connaître la configuration MX d'OVHcloud ](#mxovhcloud) ».
 
-![dnsmxrecord](images/mx-records-dns-zone-modif.png){.thumbnail}
+![dnsmxrecord](images/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
 
 Une fois les informations complétées, finalisez les étapes puis cliquez sur `Valider`{.action}.
 

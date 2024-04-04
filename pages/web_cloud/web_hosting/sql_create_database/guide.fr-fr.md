@@ -24,7 +24,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
 
 Dans le tableau, les bases de données peuvent disposer de plusieurs statuts différents :
 
@@ -48,7 +48,7 @@ Il existe deux façons de créer une nouvelle base de données :
 
 Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Information|Description|  
 |---|---|
@@ -60,7 +60,7 @@ Ensuite, cliquez sur `Suivant`{.action}.
 
 Une nouvelle fenêtre s'affiche :
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
@@ -88,7 +88,7 @@ Une nouvelle fenêtre s'affiche :
 
 Complétez les informations requises et cliquez sur `Suivant`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Vérifiez que toutes les informations affichées dans le résumé sont correctes. Si tel est le cas, cliquez sur `Confirmer`{.action} pour lancer la création de votre base de données.
 

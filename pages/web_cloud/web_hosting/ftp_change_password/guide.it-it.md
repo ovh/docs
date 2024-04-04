@@ -1,7 +1,7 @@
 ---
 title: "Modificare la password di un utente FTP"
 excerpt: "Questa guida ti mostra come cambiare la password di un utente FTP creata sul tuo hosting Web OVHcloud"
-updated: 2023-05-29
+updated: 2024-02-29
 ---
 
 > [!primary]
@@ -45,24 +45,26 @@ Una tabella mostra gli *utenti FTP* creati sul tuo hosting Web. Questi utenti ti
 > Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-La nuova password dovrà rispettare la **politica delle password** che segue :
-
-- Minimo 8 caratteri
-- Massimo 30 caratteri
-- Almeno una lettera maiuscola;
-- Almeno una lettera minuscola
-- Almeno una cifra
-- Essere composto esclusivamente da cifre e lettere.
-
 In base al piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/), la modifica della password dell'utente FTP tramite la scheda `FTP-SSH`{.action} sarà effettuata su due sentieri diversi:
 
 - **per le offerte che non permettono di creare un secondo utente FTP** (offerte *Personale* e *Hosting gratuito 100M*): clicca sul *pittogramma a forma di matita* nella colonna `Password`{.action} della tabella che appare, inserisci la nuova password **seguendo la politica delle password** e confermala cliccando sul *pulsante verde* di conferma.
 
-![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
 
 - **per le offerte che permettono di creare diversi utenti FTP** (offerte *Pro* e *Performance*): clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modifica la password`{.action}. Nella nuova finestra, inserisci la nuova password**seguendo la politica delle password**, confermala inserendola una seconda volta e clicca su `Conferma`{.action}.
 
-![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
+![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+
+> [!primary]
+>
+> La nuova password dovrà rispettare la **politica delle password** che segue :
+>
+>- Minimo 8 caratteri
+>- Massimo 30 caratteri
+>- Almeno una lettera maiuscola;
+>- Almeno una lettera minuscola
+>- Almeno una cifra
+>- Essere composto esclusivamente da cifre e lettere.
 
 Consulta la scheda `Operazioni in corso`{.action} e aggiorna regolarmente la pagina. La modifica richiede solo pochi minuti per essere effettiva.
 

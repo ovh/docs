@@ -14,7 +14,9 @@ Vous avez la possibilité de bénéficier d'adresses E-mail avec nos offres FTTH
 
 - Disposer d'une [offre xDSL ou FTTH compatible](https://www.ovhtelecom.fr/adsl/){.external}.
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
-- Être connecté à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/index.html#/){.external}.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+
+![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 ## En pratique
 

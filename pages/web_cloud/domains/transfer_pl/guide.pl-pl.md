@@ -5,7 +5,7 @@ updated: 2022-10-19
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -98,7 +98,7 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 - W niektórych przypadkach proces transferu może wymagać dodatkowych informacji o właścicielu domeny. Aby dodać te informacje, kliknij opcję `Zarządzanie kontaktami/właściciela`{.action}.
 
-![domena](images/Order_summary.png){.thumbnail}
+![domena](images/order-summary.png){.thumbnail}
 
 Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, następnie `Operacje w toku`{.action}.
 
@@ -131,5 +131,9 @@ Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta
 ## Sprawdź również
 
 [Migracja strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -39,25 +39,25 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 >>
 >> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
 >>
->> Öffnen Sie `E-Mails`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Wechseln Sie zum Tab `E-Mails`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt. Klicken Sie auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Account löschen`{.action}.<br><br>
+>> Öffnen Sie `E-Mails`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Wechseln Sie zum Tab `E-Mails`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Account löschen`{.action}.<br><br>
 >>![E-Mail](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **MX Plan neue Version**
 >>
 >> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
 >>
->> Öffnen Sie `E-Mails`{.action} im Seitenfenster und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Wechseln Sie zum Tab `E-Mails`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt. Klicken Sie auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Diesen Account zurücksetzen`{.action}.<br><br>
+>> Öffnen Sie `E-Mails`{.action} im Seitenfenster und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Wechseln Sie zum Tab `E-Mails`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Diesen Account zurücksetzen`{.action}.<br><br>
 >>![E-Mail](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **E-Mail Pro**
 >>
->> Öffnen Sie `E-Mail Pro`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden Dienstes aus. Wechseln Sie zum Tab `E-Mail Accounts`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt. Klicken Sie auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Diesen Account zurücksetzen`{.action}.<br><br>
+>> Öffnen Sie `E-Mail Pro`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden Dienstes aus. Wechseln Sie zum Tab `E-Mail Accounts`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Diesen Account zurücksetzen`{.action}.<br><br>
 >> Wenn Sie Ihren Account nach dem Zurücksetzen endgültig löschen möchten, müssen Sie ihn kündigen. Lesen Sie hierzu unsere Anleitung zur [Verwaltung der Abrechnung Ihrer E-Mail Pro Accounts](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro).<br><br>
 >>![E-Mail](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Öffnen Sie `Microsoft`{.action} und dann `Exchange`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden Dienstes aus. Wechseln Sie zum Tab `E-Mail Accounts`{.action}. Klicken Sie auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Zurücksetzen`{.action}.<br><br>
+>> Öffnen Sie `Microsoft`{.action} und dann `Exchange`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden Dienstes aus. Wechseln Sie zum Tab `E-Mail Accounts`{.action}. Klicken Sie auf `...`{.action} rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Zurücksetzen`{.action}.<br><br>
 >> Wenn Sie Ihren Account nach dem Zurücksetzen endgültig löschen möchten, müssen Sie ihn kündigen. Lesen Sie hierzu unsere Anleitung zur [Verwaltung der Abrechnung Ihrer Exchange Accounts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange).<br><br>
 >>![E-Mail](images/exchange-reset.png){.thumbnail}<br>
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Passwort eines FTP-Benutzers ändern"
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern"
-updated: 2023-05-29
+updated: 2024-02-29
 ---
 
 > [!primary]
@@ -44,28 +44,30 @@ Eine Tabelle zeigt die *FTP-Benutzer*, die auf Ihrem Webhosting erstellt wurden.
 > Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Ihr neues Passwort muss folgenden **Richtlinien** entsprechen:
-
-- Mindestens 8 Zeichen
-- Maximal 30 Zeichen
-- Mindestens ein Großbuchstabe
-- Mindestens ein Kleinbuchstabe
-- Mindestens eine Ziffer
-- Nur Ziffern und Buchstaben
-
 Je nach Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erfolgt die Änderung des Passworts Ihres FTP-Benutzers im Tab `FTP-SSH`{.action} über zwei verschiedene Wege:
 
 - **Für Hosting-Pakete, die keinen zweiten FTP-Benutzer erstellen können** (*Kostenloses Hosting 100M* und *Basic Hosting*):
 
 Klicken Sie in der Spalte `Passwort`{.action} der angezeigten Tabelle auf das *Stift-Symbol*, geben Sie das neue Passwort **unter Beachtung der Passwortrichtlinie** ein und bestätigen Sie die Änderung, indem Sie auf den *grünen Button* klicken.
 
-![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
 
 - **Für Hosting-Pakete, die es erlauben, mehrere FTP-Benutzer zu erstellen** (*Pro* und *Performance*): 
 
 Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden FTP-Benutzer und anschließend auf `Passwort ändern`{.action}. Geben Sie im angezeigten Fenster das neue Passwort **unter Beachtung der Passwortrichtlinie** ein, bestätigen Sie, indem Sie es ein zweites Mal eingeben und klicken Sie dann auf den Button `Bestätigen`{.action}.
 
-![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
+![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+
+> [!primary]
+>
+> Ihr neues Passwort muss folgenden **Richtlinien** entsprechen:
+>
+>- Mindestens 8 Zeichen
+>- Maximal 30 Zeichen
+>- Mindestens ein Großbuchstabe
+>- Mindestens ein Kleinbuchstabe
+>- Mindestens eine Ziffer
+>- Nur Ziffern und Buchstaben
 
 Gehen Sie dann zum Tab `Aktuelle Tasks`{.action} und laden Sie die Seite ggf. neu um den Fortschritt zu überprüfen. Die Änderung benötigt einige Minuten, bis sie wirksam ist.
 
@@ -73,7 +75,7 @@ Gehen Sie dann zum Tab `Aktuelle Tasks`{.action} und laden Sie die Seite ggf. ne
 
 Um auf Ihren FTP-Speicherplatz zuzugreifen, lesen Sie unsere Anleitung ["Mit dem Speicherplatz Ihres Webhostings verbinden"](/pages/web_cloud/web_hosting/ftp_connection).
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password)
 

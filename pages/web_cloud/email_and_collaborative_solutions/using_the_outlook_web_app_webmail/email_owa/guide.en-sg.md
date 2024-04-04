@@ -6,7 +6,7 @@ updated: 2021-06-25
 
 ## Objective
 
-With an OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.com/sg/mail/) is the single point of access to the respective OWA for all active email accounts on your Email offer.
+With an OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](https://www.ovh.com/sg/mail/) is the single point of access to the respective OWA for all active email accounts on your Email offer.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
@@ -21,7 +21,7 @@ This guide will give you a better understanding of the usual email account tasks
 
 > [!primary]
 >
-> After the first two steps, the instructions don't have to be considered in a particular order. You can use the navigation bar on the left-hand side of this guide to jump to the paragraphs that are useful to you.
+> After the first two steps, the instructions don't have to be considered in a particular order.
 >
 
 ### 1. Accessing OWA webmail
@@ -188,7 +188,7 @@ You can then browse the "Options" tree-view on the left-hand side of the page. F
 
 ### Cookie management
 
-The webmail that is used for our email offers is based on Microsoft Outlook Web Application software. It is therefore likely to exchange metadata with Microsoft servers, in the form of cookies called `appsforoffice.microsoft.com`.
+The webmail that is used for our email offers is based on Microsoft Outlook Web App software. It is therefore likely to exchange metadata with Microsoft servers, in the form of cookies called `appsforoffice.microsoft.com`.
 
 If you want to disable these exchanges, you can use a content blocking extension (such as uBlock Origin or Ghostery) on your browser.
 However, disabling these cookies may affect the stability of your webmail.

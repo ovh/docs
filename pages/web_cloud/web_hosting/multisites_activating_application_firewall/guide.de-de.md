@@ -1,6 +1,6 @@
 ---
-title: 'Aktivieren der Web Application Firewall'
-excerpt: 'Aktivieren der Web Application Firewall'
+title: "Aktivieren der Web Application Firewall"
+excerpt: "Aktivieren der Web Application Firewall"
 updated: 2021-04-26
 ---
 
@@ -36,7 +36,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Klicken Sie auf den Tab `Allgemeine Informationen`{.action}. Die aktuelle `Globale PHP-Version` Version wird im Bereich **Konfiguration** angezeigt. Klicken Sie auf den Button `...`{.action} und wählen Sie `Konfiguration ändern`{.action}. Wählen Sie im neuen Fenster das Element `Aktuelle Konfiguration ändern`{.action} und klicken Sie auf `Weiter`{.action}.
 
-![managephpconfig](images/manage-php-config.png){.thumbnail}
+![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
 
 Stellen Sie im neuen Fenster sicher, dass die **Application Firewall** auf `aktiviert`{.action} eingestellt ist. Um die Konfiguration zu bestätigen, klicken Sie auf den Button `Bestätigen`{.action}.
 
@@ -44,17 +44,17 @@ Stellen Sie im neuen Fenster sicher, dass die **Application Firewall** auf `akti
 
 Wechseln Sie zum Tab `Multisite`{.action} Ihres Webhostings. Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Domain und wählen Sie die Option `Domain bearbeiten`{.action}.
 
-![Multisite](images/firewall-modify-multisite.png){.thumbnail}
+![Multisite](images/modify-a-domain.png){.thumbnail}
 
 Setzen Sie im Konfigurationsfenster einen Haken bei `Firewall aktivieren`{.action}. Sie können auch die `www`-Subdomain in diese Konfiguration aufnehmen, indem Sie oben die Checkbox anhaken.
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}, um die Multisite-Einstellungen zu ändern.
 
-![modifydomain](images/firewall-modify-domain.png){.thumbnail}
+![modifydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Aktivierungstask überprüfen
 
-![Multisite](images/firewal-ongoing-jobs.png){.thumbnail}
+![Multisite](images/firewall-planned.png){.thumbnail}
 
 Die Updates Ihrer Multisite-Konfiguration werden im Tab `Aktuelle Tasks`{.action} aufgeführt (der Status ist zunächst "geplant"). Die Firewall wird aktiv, sobald ihr Update-Task nicht mehr in der Liste angezeigt wird.
 
@@ -62,7 +62,7 @@ Die Updates Ihrer Multisite-Konfiguration werden im Tab `Aktuelle Tasks`{.action
 
 Der Tab `Multisite`{.action} Ihres Webhosting-Angebots zeigt ab, für welche Domainnamen die Firewall-Option aktiviert ist.
 
-![Multisite](images/firewall-enabled-multisite.png){.thumbnail}
+![Multisite](images/firewall-enabled.png){.thumbnail}
 
 Die angezeigte Tabelle enthält alle Domains, die Ihrem Webhosting Angebot hinzugefügt wurden. In der Spalte "Firewall" wird der Aktivierungsstatus für jede Domain angezeigt.
 

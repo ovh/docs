@@ -12,7 +12,7 @@ updated: 2023-11-24
 
 Es posible que aparezca en su navegador de internet la página de error **Sitio no instalado**, especialmente durante la primera instalación de su sitio web.
 
-![website not installed](images/site-not-installed2021.png){.thumbnail}
+![website not installed](images/site-not-installed.png){.thumbnail}
 
 **Descubra cómo identificar y resolver la página de error "Sitio no instalado"**
 
@@ -69,7 +69,7 @@ Para conocer la dirección IP de su alojamiento web, conéctese al [área de cli
 
 La dirección `IPv4` se encuentra en el recuadro `Información general`{.action}.
 
-![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
+![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
 Para más información, consulte la dirección IP asociada a su alojamiento web en nuestra guía "[Lista de direcciones IP asociadas a los alojamientos web de OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
 
@@ -90,10 +90,10 @@ Aparecerá una tabla con distintos registros DNS.
 
 |Escenarios posibles|Acción a realizar|
 |---|---|
-|En la zona DNS activa, su dominio o subdominio apunta a la dirección IP de su alojamiento web con un registro de tipo A (para una IPv4) o AAAA (para una IPv6).<br><br>![zonaDNS_IP2](images/zonedns_ip2.png){.thumbnail}|Esto indica que la configuración de su dominio es correcta.<br><br> Espere el tiempo de propagación DNS si el cambio es reciente.<br><br> No olvide reiniciar sus dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador. La razón es que la antigua configuración del dominio puede almacenarse en caché, lo que puede ralentizar la visualización de la actualización.|
+|En la zona DNS activa, su dominio o subdominio apunta a la dirección IP de su alojamiento web con un registro de tipo A (para una IPv4) o AAAA (para una IPv6).<br><br>![zonaDNS_IP2](images/dashboard-entry-a.png){.thumbnail}|Esto indica que la configuración de su dominio es correcta.<br><br> Espere el tiempo de propagación DNS si el cambio es reciente.<br><br> No olvide reiniciar sus dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador. La razón es que la antigua configuración del dominio puede almacenarse en caché, lo que puede ralentizar la visualización de la actualización.|
 |La zona DNS activa no tiene registros de tipo A o AAAA que vinculen el dominio o subdominio a la dirección IP de su alojamiento web. O bien, el registro existente apunta a otra dirección IP.|Agregue el nuevo registro de tipo A o AAAA o corrija el registro existente siguiendo [esta guía](/pages/web_cloud/domains/dns_zone_edit).|
-|Su dominio no aparece en la sección `Dominios`{.action} del área de cliente de OVHcloud.<br><br>O bien, la pestaña `Zona DNS`{.action} de su nombre de dominio se muestra de la siguiente manera:<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Esto significa que su nombre de dominio no se gestiona desde el área de cliente de OVHcloud.<br><br><br>Determine su "registro" a través de nuestra herramienta [WHOIS](https://www.ovhcloud.com/es/domains/whois/) y los servidores DNS a los que está asociado. <br><br>Encuentre y modifique la zona DNS en cuestión siguiendo la sección dedicada de la guía "[Alojar varios sitios web en un mismo hosting - añadir un dominio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
-|Esta advertencia aparece en la pestaña `Zona DNS`{.action}:<br><br>![advertencia_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Por lo tanto, deberá modificar los servidores DNS de su dominio siguiendo nuestra guía "[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information)."|
+|Su dominio no aparece en la sección `Dominios`{.action} del área de cliente de OVHcloud.<br><br>O bien, la pestaña `Zona DNS`{.action} de su nombre de dominio se muestra de la siguiente manera:<br><br>![zone-without-domain-top-of-the-page](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Esto significa que su nombre de dominio no se gestiona desde el área de cliente de OVHcloud.<br><br><br>Determine su "registro" a través de nuestra herramienta [WHOIS](https://www.ovhcloud.com/es/domains/whois/) y los servidores DNS a los que está asociado. <br><br>Encuentre y modifique la zona DNS en cuestión siguiendo la sección dedicada de la guía "[Alojar varios sitios web en un mismo hosting - añadir un dominio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
+|Esta advertencia aparece en la pestaña `Zona DNS`{.action}:<br><br>![advertencia_zonedns_pas_sur_srv_dns](images/message-other-ovh-dns-servers.png){.thumbnail}|Por lo tanto, deberá modificar los servidores DNS de su dominio siguiendo nuestra guía "[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information)."|
 
 ## Más información <a name="go-further"></a>
 

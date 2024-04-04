@@ -14,9 +14,10 @@ Esta guía explica los primeros pasos con el servicio Load Balancer y presenta s
 ## Procedimiento
 
 ### Administrar el Load Balancer en el área de cliente
-Para administrar el Load Balancer desde el área de cliente, acceda a la sección `Cloud`{.action}. En la columna izquierda, haga clic en `Load Balancer`{.action} y seleccione su Load Balancer. Se abrirá la página principal del servicio.
 
-![Load Balancer](images/lb_main_page.png){.thumbnail}
+Para gestionar el Load Balancer desde el área de cliente, acceda a la sección `Bare metal Cloud`{.action} y haga clic en `Network`{.action} y `Load Balancer`{.action}. Seleccione su servicio.
+
+![Load Balancer](images/lbip-main.png){.thumbnail}
 
 En dicha página, encontrará la siguiente información:
 

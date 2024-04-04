@@ -55,11 +55,11 @@ Toujours dans l'onglet `Informations générales`{.action}, suite à l'[étape 1
 
 Pour cela, dans le cadre « Sécurité », vérifiez l'état à côté de la mention « Délégation Sécurisée - DNSSEC ».
 
-![dnssec](images/activate-dnssec-step2.png){.thumbnail}
+![dnssec](images/activate-dnssec.png){.thumbnail}
 
 Grâce au bouton d'activation situé en dessus de la mention `Déléguation sécurisée - DNSSEC`{.action}, vous pouvez activer ou désactiver le **DNSSEC** sur votre nom de domaine. En réalisant cette actions, une nouvelle fenêtre apparaît depuis laquelle vous pouvez valider la modification.
 
-![dnssec](images/activate-dnssec-step3.png){.thumbnail}
+![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >

@@ -5,7 +5,7 @@ updated: 2023-05-04
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -15,7 +15,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 - Konfiguracja [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) Twojej domeny nie została poprawnie skonfigurowana w katalogu docelowym
 - Folder docelowy, do którego Twoja nazwa domeny nie zawiera plików **"index.html"** lub **"index.php"**
 
-![indeks](images/index_of.png){.thumbnail}
+![indeks](images/index-of.png){.thumbnail}
 
 **Dowiedz się, jak naprawić wyświetlanie strony "Index of".**
 
@@ -23,7 +23,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) ten przewodnik.
 
 >
 
@@ -53,11 +53,11 @@ Aby wyświetlić Twoją stronę WWW, w części hostingu `Multisite`{.action} na
 
 Przeprowadziłeś pliki strony **mydomain.ovh** do katalogu `www` hostingu przez [FTP](/pages/web_cloud/web_hosting/ftp_connection). Poza tym Twoja domena nie jest powiązana z tym folderem w kolumnie `Katalog główny` Twojej strony w opcji `MultiSite`{.action}.
 
-![index_of_multisite](images/index_of_multisite.png){.thumbnail}
+![index_of_multisite](images/root-folders-empty.png){.thumbnail}
 
 Zmień `Katalog główny` klikając przycisk `...`{.action} po prawej stronie tabeli, a następnie `Zmień domenę`{.action}:
 
-![modify_domain](images/modify_domain.png){.thumbnail}
+![modify_domain](images/modify-domain.png){.thumbnail}
 
 W oknie, które się wyświetla:
 
@@ -65,7 +65,7 @@ W oknie, które się wyświetla:
 * Wskaż katalog zawierający plik **index.php** lub **index.html** Twojej strony jako `Katalog główny` (2);
 * Kliknij `Dalej` (3).
 
-![change_root_folder](images/change_root_folder01.png){.thumbnail}
+![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -74,17 +74,17 @@ W oknie, które się wyświetla:
 
 W następnym oknie kliknij `Zatwierdź`{.action}.
 
-![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
+![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
 
 W ciągu kilku minut (odświeżając przeglądarkę) otrzymasz następujący wynik:
 
-![multisite_modified](images/multisite_modified.png){.thumbnail}
+![multisite_modified](images/root-folders-full-www.png){.thumbnail}
 
 Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestartuj urządzenie i w razie potrzeby wyczyść cache przeglądarki.
 
 Upewnij się również, czy w Twoim katalogu docelowym znajduje się plik **index.php** lub **index.html**.
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 

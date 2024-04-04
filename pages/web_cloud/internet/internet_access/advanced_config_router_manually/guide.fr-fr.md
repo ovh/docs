@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un routeur manuellement'
 excerpt: 'Découvrez comment configurer votre accès internet OVHcloud sur votre propre routeur'
-updated: 2023-08-08
+updated: 2024-01-10
 ---
 
 ## Objectif
@@ -34,6 +34,20 @@ Si vous utilisez votre propre modem/routeur, vous pouvez utiliser les API OVHclo
 > Chaque routeur à une méthode de configuration différente.
 > Ce guide liste les paramètres indispensables pour faire fonctionner votre connexion mais nous vous invitons à lire le manuel utilisateur de votre modem/routeur pour vérifier comment les appliquer.
 >
+
+### Connaître le profil de son modem
+
+Le profil de votre accès est disponible sur l'espace client. Pour le retrouver, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}.
+
+Cliquez sur `Accès Internet`{.action} puis sélectionnez votre offre xDSL ou FTTH.
+
+![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
+
+Par défaut, l'onglet affiché est `Mon accès`.
+
+Vous retrouverez, dans les `Caractéristiques`, les informations sur le profil du modem dans la section `Connexion`.
+
+![modem profil dans espace client](images/profil-2023.png){.thumbnail}
 
 ### Profil Standard
 
@@ -83,6 +97,27 @@ Les paramètres à configurer sont :
 - **IPv6**: IPv4/IPv6 DualStack, IPCPv6 activé
 - **Pour le VDSL**:
     - **Type**: VDSL over PTM
+- **Pour le FTTH**:
+    - **Type**: Ethernet
+
+### Profil Bouygues
+
+> [!primary]
+> La différence avec le profil Standard est l'activation du VLAN 4001.
+>
+
+Ce profil s'applique aux typologies d'accès suivantes :
+
+- Accès FTTH (Fibre) en collecte Bouygues
+
+Les paramètres à configurer sont :
+
+- **Mode de connexion**: PPPoE
+- **Nom d'utilisateur PPPoE**: le login reçu par e-mail (exemple: `FP_1111xxyy_1@byt.ovhcloud`)
+- **Mot de passe PPPoE**: le mot de passe reçu par e-mail
+- **MTU**: 1432 ou 1456 ou **1492** (recommandé)
+- **VLAN**: 4001 (802.1p : 0 , 802.1q: 4001)
+- **IPv6**: IPv4/IPv6 DualStack, IPCPv6 activé
 - **Pour le FTTH**:
     - **Type**: Ethernet
 

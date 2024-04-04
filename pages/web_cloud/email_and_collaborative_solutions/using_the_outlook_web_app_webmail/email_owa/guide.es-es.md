@@ -1,12 +1,12 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
-updated: 2021-06-25
+updated: 2024-03-26
 ---
 
 ## Objetivo
 
-Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web Application (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
+Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
 
 **En esta guía aprenderá a realizar las acciones más habituales con su dirección de correo en la interfaz de OWA.**
 
@@ -21,7 +21,7 @@ Esta guía le permitirá comprender mejor las tareas más habituales de la cuent
 
 > [!primary]
 >
-> Después de los dos primeros pasos, no es necesario seguir las instrucciones en un orden concreto. Puede utilizar la barra de navegación de la izquierda de esta guía para saltar al párrafo que más le interese.
+> Después de los dos primeros pasos, no es necesario seguir las instrucciones en un orden concreto.
 >
 
 ### 1. Acceder a OWA
@@ -29,6 +29,12 @@ Esta guía le permitirá comprender mejor las tareas más habituales de la cuent
 Para acceder al webmail de OWA con su dirección de correo electrónico, diríjase a la [página de inicio de sesión](https://www.ovh.es/mail/). Introduzca su dirección de correo electrónico completa y su contraseña, y haga clic en el botón `Iniciar sesión`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+> 
+> Si se le redirige a una interfaz **Roundcube**, significa que se encuentra en la versión antigua del servicio MX Plan. Para más información sobre la solución MX Plan, consulte nuestra página [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Para familiarizarse con la interfaz **Roundcube**, consulte nuestra guía [Webmail: Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Si es la primera vez que accede a esta dirección de correo a través del webmail de OWA, se le pedirá que configure el idioma y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
 
@@ -208,7 +214,7 @@ Puede navegar por el árbol de «Opciones» de la parte izquierda de la página.
 
 ### Gestión de cookies
 
-El webmail utilizado para nuestros productos de correo está basado en el programa Microsoft Outlook Web Application. por lo que es susceptible de intercambiar metadatos con los servidores de Microsoft, en forma de cookies llamadas `appsforoffice.microsoft.com`.
+El webmail utilizado para nuestros productos de correo está basado en el programa Microsoft Outlook Web App. por lo que es susceptible de intercambiar metadatos con los servidores de Microsoft, en forma de cookies llamadas `appsforoffice.microsoft.com`.
 
 Si desea desactivar estos intercambios, puede utilizar en su navegador una extensión de tipo bloqueador de contenidos (como uBlock Origin o Ghostery).
 No obstante, la desactivación de estas cookies puede afectar a la estabilidad de su webmail.

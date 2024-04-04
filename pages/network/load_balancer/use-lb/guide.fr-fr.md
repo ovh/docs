@@ -17,7 +17,9 @@ Ce guide a pour but de vous aider lors de la première prise en main de votre Lo
 
 ### Gérer son Load Balancer via l'espace client
 
-Pour gérer votre Load Balancer via l'espace client, rendez-vous dans la partie `Bare metal Cloud`{.action} puis dans `Load Balancer`{.action}. Sélectionnez votre service.
+Pour gérer votre Load Balancer via l'espace client, rendez-vous dans la partie `Bare metal Cloud`{.action} puis cliquez sur `Network`{.action} et `Load Balancer`{.action}. Sélectionnez votre service.
+
+![Load Balancer](images/lbip-main.png){.thumbnail}
 
 Sur la page de résumé de votre service Load Balancer, vous trouverez les menus suivants :
 

@@ -24,7 +24,7 @@ El nivel de RAID por defecto de los servidores de OVHcloud es el RAID 1. duplica
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) con RAID por hardware.
-- Tener acceso al servidor por SSH como administrador (root).
+- Tener acceso al servidor por SSH como administrador (sudo).
 
 ## Procedimiento
 
@@ -32,7 +32,7 @@ El nivel de RAID por defecto de los servidores de OVHcloud es el RAID 1. duplica
 
 En el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}. 
 
-Busque "Último sistema operativo (SO) instalado por OVHcloud" en la zona `Información general`{.action} y haga clic en `...`{.action} y, seguidamente, en `Instalar`{.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
+En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
 Seleccione **Instalar desde una plantilla de OVHcloud** y haga clic en `Siguiente`{.action}.
 

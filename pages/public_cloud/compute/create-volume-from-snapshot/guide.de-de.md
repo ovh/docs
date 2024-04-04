@@ -25,7 +25,7 @@ Dies kann in folgenden Fällen nützlich sein:
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 - Sie verfügen über einen Volume Snapshot in der gleichen OpenStack-Region.
-- Sie haben administrativen Zugriff (Root) über SSH oder RDP auf Ihre Instanzen.
+- Sie haben administrativen Zugriff (sudo) über SSH oder RDP auf Ihre Instanzen.
 
 ## In der praktischen Anwendung
 

@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -181,7 +181,7 @@ Assurez-vous également que le nom de domaine que vous souhaitez utiliser pour v
 
 ![email](images/dns-dkim-domain.png){.thumbnail}
 
-Pour configurer le DKIM, rendez-vous sur le site <https://api.ovh.com/console/>, connectez-vous à l'aide du bouton `Login`{.action} en haut à droite et renseignez vos identifiants OVHcloud.
+Pour configurer le DKIM, rendez-vous sur le site <https://ca.api.ovh.com/console/>, connectez-vous à l'aide du bouton `Login`{.action} en haut à droite et renseignez vos identifiants OVHcloud.
 
 > Appuyez-vous sur notre guide [« Découvrez comment utiliser les API OVHcloud »](/pages/manage_and_operate/api/first-steps) si vous n'avez jamais utilisé les API.
 
@@ -566,7 +566,7 @@ Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace
  - `ready` : les enregistrements DNS sont présents dans la zone. Le DKIM peut maintenant être activé. Il vous suffira d'activer le sélecteur en vous appuyant sur la section « [Activer ou changer un sélecteur DKIM](#enable-switch) ».
  - `deleting` : le DKIM est en cours de suppression. Après suppression, il vous faudra suivre la section « [Configuration complète du DKIM](#firststep) ».
  - `disabling` : le DKIM est en cours de désactivation. Après cette opération vous pourrez activer le sélecteur en vous appuyant de la section « [Activer ou changer un sélecteur DKIM](#enable-switch) ».
- - `todo` : la tâche a été initialisée, elle doit se lancer. Au-delà de 24 heures, si votre sélecteur est toujours dans cet état, nous vous invitons à ouvrir un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_cases_requests) en précisant le numéro du sélecteur concerné.
+ - `todo` : la tâche a été initialisée, elle doit se lancer. Au-delà de 24 heures, si votre sélecteur est toujours dans cet état, nous vous invitons à ouvrir un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant le numéro du sélecteur concerné.
 
 ## Aller plus loin
 

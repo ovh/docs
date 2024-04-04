@@ -25,7 +25,7 @@ Może to być przydatne w następujących przypadkach:
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
 - Posiadanie kopii zapasowej dysku w tym samym regionie OpenStack
-- Dostęp do instancji przez SSH jako administrator (root)
+- Dostęp do instancji przez SSH jako administrator (sudo)
 
 ## W praktyce
 

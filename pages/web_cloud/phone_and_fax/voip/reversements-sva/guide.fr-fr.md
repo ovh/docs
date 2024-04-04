@@ -1,7 +1,7 @@
 ---
 title: "Gérer les reversements ou les coûts de vos numéros spéciaux"
 excerpt: "Découvrez comment gérer les reversements et les coûts de vos numéros spéciaux SVA depuis l'espace client OVHcloud"
-updated: 2022-02-21
+updated: 2024-01-09
 ---
 
 ## Objectif
@@ -15,7 +15,9 @@ L'espace client OVHcloud vous permet de consulter et modifier votre palier tarif
 ## Prérequis
 
 - Posséder au moins [un numéro spécial](https://www.ovhtelecom.fr/telephonie/numeros/numeros-speciaux/) dans votre compte OVHcloud.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
@@ -59,6 +61,9 @@ Dans l'attente de ce délai, les reversements sont affichés comme « Différés
 Une fois le délai de 60 jours écoulé, les reversements sont « Disponibles » (2 dans l'image ci-dessous) et vous pouvez effectuer une demande de reversement de la somme concernée (3 dans l'image ci-dessous). Renseignez un numéro personnalisé de facture et cliquez sur `Valider`{.action} pour générer un virement vers votre compte prépayé OVHcloud. 
 
 ![reversements](images/reversements02.png){.thumbnail}
+
+> [!primary]
+> Un reversement ne peut être effectué que pour un montant minimal de 30 €.
 
 Une fois le reversement effectué par vos soins, cette somme est ajoutée à votre compte prépayé OVHcloud. Elle peut servir ainsi à régler vos prochaines factures de manière automatique.<br>
 Si vous le souhaitez , vous pouvez en demander le versement sur votre moyen de paiement par défaut. Dans ce cas, depuis l'onglet `Facturation`{.action} de votre groupe de téléphonie, cliquez sur `Virement vers un compte bancaire`{.action}.

@@ -5,7 +5,7 @@ updated: 2022-10-19
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -65,11 +65,11 @@ W zakładce `Informacje ogólne`{.action} możesz sprawdzić, czy spełnione są
 
 Kliknij link `Tag transferu wychodzącego`{.action} w sekcji zatytułowanej **Bezpieczeństwo**.
 
-![transfer wychodzący](images/img_4267.jpg){.thumbnail}
+![transfer wychodzący](images/outgoing-transfer-tag.jpg){.thumbnail}
 
 W oknie, które się wyświetli wprowadź TAG nowego operatora, po czym kliknij `Zatwierdź`{.action}.
 
-![transfer wychodzący](images/img_4268.jpg){.thumbnail}
+![transfer wychodzący](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Jeśli nie możesz zmienić wpisu TAG Twojej domeny w Panelu klienta, możesz zlecić jego zmianę w rejestrze Nominet. Więcej informacji znajduje się na oficjalnej [stronie internetowej Nominet](https://www.nominet.uk/domain-support/).
 
@@ -83,4 +83,8 @@ Skontaktuj się z nowym dostawcą, aby uzyskać więcej informacji oraz wszelkie
 
 [Transfer domeny do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

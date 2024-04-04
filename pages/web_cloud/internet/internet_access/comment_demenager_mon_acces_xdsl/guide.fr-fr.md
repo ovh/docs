@@ -1,7 +1,6 @@
 ---
 title: Comment déménager mon accès xDSL/FTTH
 excerpt: "Découvrez comment demander le déménagement de votre offre d'accès à Internet OVHcloud depuis votre espace client"
-odrder: 1
 updated: 2022-10-10
 ---
 
@@ -17,6 +16,9 @@ Déménager un accès xDSL/FTTH vous permet de recréer votre accès internet à
 - Disposer d'un abonnement xDSL(ADSL/VDSL) ou FTTH actif.
 - Disposer d'une offre xDSL ou FTTH récente (offres Pro, Connect, Express, Entreprise, Serenity).
 - La nouvelle adresse doit-être différente de l'ancienne.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+
+![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 > [!primary]
 >

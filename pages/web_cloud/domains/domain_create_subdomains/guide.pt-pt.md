@@ -1,7 +1,7 @@
 ---
 title: "Como criar um subdomínio?"
 excerpt: "Saiba a definição de um subdomínio e como criá-lo na OVHcloud"
-updated: 2023-11-28
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -10,9 +10,9 @@ updated: 2023-11-28
 
 ## Objetivo <a name="goal"></a>
 
-A Internet é composta por *servidores* e *dispositivos* que interagem entre si através de uma rede global. Quando estes *servidores* e os seus *dispositivos* estão ligados à rede Internet, é-lhes atribuído um *endereço IP público* (equivalente a um endereço postal). Este *endereço IP* permite ligar remotamente um servidor ou dispositivo, permitindo assim que um utilizador veja um website introduzindo esse *endereço IP* através do browser instalado no computador do utilizador.
+A Internet é composta por servidores e dispositivos que interagem entre si através de uma rede global. Quando estes servidores e os seus dispositivos estão ligados à rede Internet, é-lhes atribuído um **endereço IP público** (equivalente a um endereço postal). Este endereço IP permite ligar remotamente um servidor ou dispositivo, permitindo assim que um utilizador veja um website introduzindo esse endereço IP através do browser instalado no computador do utilizador.
 
-Os **domínios** foram criados para facilitar o acesso de utilizadores da Internet a um website. De facto, é mais fácil reter um nome composto por uma cadeia de caracteres selecionada (exemplo: ovhcloud.com) do que uma sequência de números composto por um *endereço IP* (exemplo: 54.39.46.56).
+Os **domínios** foram criados para facilitar o acesso de utilizadores da Internet a um website. De facto, é mais fácil reter um nome composto por uma cadeia de caracteres selecionada (exemplo: ovhcloud.com) do que uma sequência de números composto por um endereço IP (exemplo: 54.39.46.56).
 
 Um **nome de domínio** é composto por níveis. Estes níveis são geralmente separados por um `.` (com exceção de algumas **extensões** do *primeiro nível* como o *.co.uk*, *.gouv.fr* ou ainda *.notaires.fr*):
 
@@ -26,7 +26,7 @@ Um **nome de domínio** é composto por níveis. Estes níveis são geralmente s
 
 - **S**econd **L**evel **D**omain (**SLD**): representa os domínios de *segundo nível*. É mais comum chamarmos-lhes **labels**. Quando encomenda um domínio, pode definir livremente o **label** (desde que este não tenha já sido registado por outro utilizador na mesma extensão e com o limite de 63 caracteres). Por exemplo, *ovhcloud* corresponde ao logótipo do nome de domínio *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): é a partir deste terceiro nível que se fala de *subdomínio*. Neste manual, iremos explicar de forma mais pormenorizada a sua definição e como implementá-las com os seus diferentes serviços.
+- Third Level Domain (**subdomain**): é a partir deste terceiro nível que se fala de **subdomínio**. Neste manual, iremos explicar de forma mais pormenorizada a sua definição e como implementá-las com os seus diferentes serviços.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
@@ -94,13 +94,13 @@ Existem dois casos possíveis:
 >
 > 1: Para identificar a localização da zona DNS ativa de um domínio registado na OVHcloud, pode consultar o nosso guia "[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 >
-> 2: Se o domínio não estiver registado na OVHcloud, contacte o *agente de registo* atual do seu domínio para saber onde está alojada a sua zona DNS ativa.
+> 2: Se o domínio não estiver registado na OVHcloud, contacte o *agente de registo* atual do seu domínio para saber onde está alojada a sua zona DNS ativa. Tenha em conta que pode utilizar o nosso guia "[Transferir o seu nome de domínio para OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)" se deseja realizar esta ação.
 >
 
 Se os servidores DNS declarados para o seu nome de domínio tiverem uma das duas formas seguintes:
 
-- *dnsXX.ovh.net* e *nsXX.ovh.net* (em que cada um dos "X" representa um algarismo);
-- *dns200.anycast.me* e *ns200.anycast.me*.
+- `dnsXX.ovh.net` e `nsXX.ovh.net` (em que cada um dos "X" representa um algarismo);
+- `dns200.anycast.me` e `ns200.anycast.me`.
 
 Isto significa que a zona DNS ativa do seu domínio está ativa na OVHcloud.
 
@@ -120,9 +120,9 @@ Por exemplo, poderá adicionar:
 >
 > A modificação de uma zona DNS associada a um nome de domínio implica um prazo de propagação de **4** a **24** para que esta última seja efetiva.
 >
-> Como tal, a criação de um registo DNS para um subdomínio, por si só, não é suficiente para executar o serviço *destino* que definiu no registo DNS. 
+> Como tal, a criação de um registo DNS para um subdomínio, por si só, não é suficiente para executar o serviço "destino" que definiu no registo DNS. 
 >
-> De facto, por razões de segurança, deverá também autorizar que o subdomínio tenha acesso ao serviço *alvo* (alojamento web, e-mail, etc.).
+> De facto, por razões de segurança, deverá também autorizar que o subdomínio tenha acesso ao serviço "alvo" (alojamento web, e-mail, etc.).
 >
 
 Na parte seguinte, descubra como autorizar um subdomínio a poder aceder aos diferentes serviços do universo "Web Cloud" (alojamento web, servidor Exchange, etc.) propostos pela OVHcloud.
@@ -148,7 +148,7 @@ Para mais informações sobre a configuração de um domínio ou subdomínio num
 
 > [!warning]
 >
-> A adição multisite de um domínio ou de um subdomínio pode exigir a implementação de um *token* de validação. Para um subdomínio, este mesmo *token* não é tido em conta e deve ser adicionado não para o subdomínio mas para o nome de domínio. Neste caso, adicionar adicionalmente o *token* sob a forma de um registo DNS de tipo TXT para o nome de domínio na zona DNS ativa do seu domínio.
+> A adição multisite de um domínio ou de um subdomínio pode exigir a implementação de um token de validação. Para um subdomínio, este mesmo token não é tido em conta e deve ser adicionado não para o subdomínio mas para o nome de domínio. Neste caso, adicionar adicionalmente o token sob a forma de um registo DNS de tipo TXT para o nome de domínio na zona DNS ativa do seu domínio.
 >
 
 #### Casos 2 - Criar endereços de e-mail Exchange com um subdomínio

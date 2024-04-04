@@ -1,7 +1,7 @@
 ---
-title: Optimising the security of your website
-excerpt: Find out how to make your website more secure
-updated: 2021-12-10
+title: "How to secure your website?"
+excerpt: "Find out how to make your website more secure"
+updated: 2024-01-29
 ---
 
 ## Objective
@@ -17,12 +17,12 @@ However, if you experience any difficulties carrying out some of them, please do
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - The [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
@@ -113,14 +113,20 @@ You can perform these tests locally, for example by importing your data on [WAMP
 
 You can also create a **test version** of your website (e.g. test.mydomain.tld) within another folder of your FTP storage space (you can still use a basic template).
 
-## Go further <a name="gofurther"></a>
+### Step 12 - Secure access to your website using the ".htaccess" file
+
+The .htaccess file is an Apache configuration (HTTP) file that is run by your Web Hosting plan’s web server. With it, you can notably:
+
+- [Block access to your website for certain IP addresses](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
+- [Protect a directory or your website’s administration interface by attaching it to a .htpasswd file](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+- [Protect your WordPress CMS](/pages/web_cloud/web_hosting/htaccess_how_to_protect_wordpress).
+
+## Go further <a name="go-further"></a>
 
 [What to do if your WordPress site is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
 
 [Responding when your hosting is deactivated for security purposes](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
-
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

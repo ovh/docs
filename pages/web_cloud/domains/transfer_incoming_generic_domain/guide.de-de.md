@@ -8,6 +8,8 @@ updated: 2023-06-21
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Ziel
 
 Ihr Domainname wird derzeit von einem anderen **Registrar** verwaltet und Sie möchten ihn zu OVHcloud umziehen? Sie können dazu einen Transfervorgang einleiten.
@@ -49,17 +51,17 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 |Schritt|Beschreibung|Wer ist betroffen?|Wo?|Dauer|
 |---|---|---|---|---|
-|1|Domaininformationen überprüfen|Administrator des Domainnamens|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
-|2|Domainname entsperren und Transfer-Code beantragen|Der Administrator des Domainnamens mit Genehmigung des Inhabers|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
-|3|Domaintransfer beantragen|Jede Person, die den Transfer-Code sowie die Genehmigung des Inhabers hat|Beim neuen Registrar (OVHcloud)|Entsprechend Ihrem Vorgehen|
-|4|Transfer bestätigen|Ihr aktueller Registrar|Via Anfrage der Organisation, die Ihre Domainendung verwaltet|Maximal fünf Tage|
+|[1](#step1)|[Domaininformationen überprüfen](#step1)|Administrator des Domainnamens|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
+|[2](#step2)|[Domainname entsperren und Transfer-Code beantragen](#step2)|Der Administrator des Domainnamens mit Genehmigung des Inhabers|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
+|[3](#step3)|[Domaintransfer beantragen](#step3)|Jede Person, die den Transfer-Code sowie die Genehmigung des Inhabers hat|Beim neuen Registrar (OVHcloud)|Entsprechend Ihrem Vorgehen|
+|[4](#step4)|[Transfer bestätigen|Ihr aktueller Registrar](#step4)|Via Anfrage der Organisation, die Ihre Domainendung verwaltet|Maximal fünf Tage|
 
 > [!warning]
 >
 > Das genaue Verfahren für den Domaintransfer kann variieren, insbesondere bei bestimmten Ländercode-**TLD**s (**ccTLD**, z.B. .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi) und einigen speziellen **TLD**s (.am, .fm. etc.). Je nach Endung Ihres Domainnamens können zusätzliche Voraussetzungen notwendig sein. Wir empfehlen Ihnen, zunächst die für die betreffende Endung verfügbaren Informationen auf unserer Website zu überprüfen: <https://www.ovhcloud.com/de/domains/tld/>.
 >
 
-### Schritt 1: Domaininformationen überprüfen
+### Schritt 1: Domaininformationen überprüfen <a name="step1"></a>
 
 **Bevor Sie den Transfer beantragen, ist es wichtig zu überprüfen, dass die Angaben zu Ihrem Domainnamen aktuell sind.** Seit Inkrafttreten der DSGVO sind die im [Whois-Eintrag](https://www.ovhcloud.com/de/domains/whois/) sichtbaren Daten sehr begrenzt. Daher empfehlen wir Ihnen, die Informationen Ihres Domainnamens über Ihren aktuellen Registrar zu überprüfen.
 
@@ -72,7 +74,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 > Wenn Sie nicht wissen, welcher Registrar für Ihren Domainnamen verantwortlich ist, können Sie über die "Registrar"-Zeilen, die im Suchergebnis des [Whois](https://www.ovhcloud.com/de/domains/whois/){.external}-Tools erscheinen, Informationen zu dessen Identität erhalten.
 >
 
-### Schritt 2: Domainnamen entsperren und AUTH/INFO-Code beantragen
+### Schritt 2: Domainnamen entsperren und AUTH/INFO-Code beantragen <a name="step2"></a>
 
 Wenn Sie alle Informationen überprüft haben, muss Ihr Domainname noch entsperrt werden. Dieser Vorgang ist nur über Ihren aktuellen Registrar möglich. Fragen Sie dort an, um Informationen zum genauen Vorgehen zu erhalten.
 
@@ -85,7 +87,7 @@ Bitte beachten Sie, dass OVHcloud zum Zeitpunkt der Einleitung des Transfervorga
 > Sobald Ihr Domainname freigegeben ist, haben Sie sieben Tage Zeit, um den Transfer zu OVHcloud durchzuführen. Nach diesem Zeitraum wird Ihr Domainname automatisch gesperrt, wenn Sie keine Anfrage zur Änderung des Registrars einreichen.
 >
 
-### Schritt 3: Domaintransfer zu OVHcloud anfordern
+### Schritt 3: Domaintransfer zu OVHcloud anfordern <a name="step3"></a>
 
 Sobald Ihr Domainname freigegeben und der Code verfügbar ist, können Sie den Transfer zu OVHcloud beantragen. Dazu führen Sie einfach eine [Bestellung über unsere Website aus](https://www.ovhcloud.com/de/domains/){.external}. Geben Sie dort Ihren Domainnamen ein und folgen Sie den Bestellschritten.
 
@@ -124,7 +126,7 @@ Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Tr
 >
 > Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn im Bereich `Laufende Vorgänge`{.action} eingeben und damit den Transfer bestätigen.
 
-### Schritt 4: Validierung des Transfers durch den aktuellen Registrar
+### Schritt 4: Validierung des Transfers durch den aktuellen Registrar <a name="step4"></a>
 
 Sobald die Bestellung und der Transfer-Code bestätigt sind, wird der aktuelle Registrar (der noch nicht OVHcloud ist) eine Bestätigungsanfrage erhalten. Auch hier sind wieder je nach ausgeführter Aktion mehrere Ergebnisse möglich.
 

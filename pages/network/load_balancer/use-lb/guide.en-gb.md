@@ -17,9 +17,9 @@ This guide is designed to help you get started using the Load Balancer, by intro
 
 ### Managing your Load Balancer via the Control Panel
 
-To manage your Load Balancer via the Control Panel, go to the `Cloud`{.action} section (1), then the `Load Balancer`{.action} (2) section on the left-hand menu. The main page for the service will then appear:
+To manage your Load Balancer via the Control Panel, go to the `Bare Metal Cloud`{.action} section, click `Network`{.action} and `Load Balancer`{.action}. The main page for the service will then appear:
 
-![Load Balancer](images/lb_main_page.png){.thumbnail}
+![Load Balancer](images/lbip-main.png){.thumbnail}
 
 On this page, you will see the following information:
 

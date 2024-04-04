@@ -1,7 +1,7 @@
 ---
 title: "Utiliser l'accès SSH de son hébergement web"
 excerpt: "Apprenez à vous connecter et utiliser l'accès SSH de votre hébergement web OVHcloud"
-updated: 2022-01-19
+updated: 2024-01-22
 ---
 
 ## Objectif
@@ -28,7 +28,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Repérez dans le tableau la colonne « SSH » afin de vérifier que l'utilisateur (ou « login ») SSH concerné dispose bien d'un accès SSH actif. La mention « Désactivé » apparaît si ce n'est pas le cas.
 
-![usessh](images/use-ssh-step1.png){.thumbnail}
+![usessh](images/tab-ssh.png){.thumbnail}
 
 Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} bénéficie bien d'un accès SSH.
 
@@ -61,7 +61,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 Après l'envoi de la commande, vous serez invité à renseigner le mot de passe de l’utilisateur SSH. Une fois connecté, poursuivez vers l'étape suivante « [Interagir en SSH avec son espace de stockage](./#etape-4-interagir-en-ssh-avec-son-espace-de-stockage) ».
 
-![usessh](images/use-ssh-step3.png){.thumbnail}
+![usessh](images/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2 Depuis un logiciel
 
@@ -97,12 +97,23 @@ Via une commande, vous pouvez également lancer un script en utilisant une versi
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution doive être modifié pour une question de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting) » pour en apprendre plus.
+Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution doive être modifié pour une question de compatibilité. Reportez-vous à notre documentation « [Hébergement web : environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting) » pour en apprendre plus.
+
+> [!primary]
+>
+> Il est également possible de copier des fichiers et/ou dossiers à l'aide du **S**ecure **C**opy **P**rotocol (**SCP**).
+> Ce protocol utilise le protocol SSH pour dupliquer du contenu de manière sécurité entre :
+> 
+> - un ordinateur/appareil local vers un serveur distant
+> - un serveur distant et un ordinateur/appareil local
+> - deux serveurs distants
+>
+> Retrouvez plus d'information sur l'utilisation de la commande `scp` avec nos hébergements web OVHcloud dans notre guide « [Hébergement Web - Copier des fichiers avec la commande SCP](/pages/web_cloud/web_hosting/using-scp-command) »
+>
+
 ## Aller plus loin
 
-[Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
-
-[Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+[Hébergement web : environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

@@ -86,7 +86,7 @@ Consultez ensuite les [évènements en cours sur notre infrastructure](https://w
 
 ### Que faire si, après la mise en ligne de mon site, la page « Site en construction » d'OVHcloud reste affichée ?
 
-![site_en_construction](images/site_en_construction.png){.thumbnail}
+![site-en-construction](images/site-en-construction.png){.thumbnail}
 
 À l'installation de votre hébergement, OVHcloud met en place cette page d'attente sous la forme d'un fichier **index.html** contenu dans le dossier `www` de votre serveur FTP.
 
@@ -109,11 +109,11 @@ Deux scénarii sont possibles. Soit votre site a été créé avec cette adresse
 
 Dans le premier cas, après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre module depuis la partie `Hébergements` de votre espace client OVHcloud :
 
-![delete_a_module](images/delete_a_module.png){.thumbnail}
+![delete-a-module](images/delete-a-module.png){.thumbnail}
 
 Puis supprimez sa base de données depuis l'onglet du même nom situé à droite de votre écran, toujours dans la partie `Hébergements` :
 
-![delete_a_database](images/delete_a_database.png){.thumbnail}
+![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
  
 Enfin, relancez son installation sur le nom de domaine souhaité, en utilisant la fonctionnalité [Module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
@@ -132,9 +132,9 @@ Pour restaurer le code source de votre site, consultez notre guide « [Restaurer
 
 Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) ».
 
-### Que faire si mon site redirige vers le webmail OVHcloud ?
+### Que faire si mon site redirige vers le webmail-login-interface OVHcloud ?
 
-![webmail](images/webmail.png){.thumbnail}
+![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
 
 Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) ou de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) associés à votre nom de domaine.
 
@@ -154,7 +154,7 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 ### Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
 
-![too_many_redirect](images/too_many_redirect.png){.thumbnail}
+![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -173,7 +173,7 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site,
 
 ### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
 
-![503_varnish](images/503_varnish.png){.thumbnail}
+![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
 
 Si vous avez activé [l'option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
@@ -181,7 +181,7 @@ Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, conta
 
 ### Que faire si mon site affiche une erreur « Your request has been blocked » ?
 
-![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
+![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
 
 Ce message indique que le type de requête HTTP que vous tentez de faire sur votre site est interdit pour un temps limité. Dans cette situation, [examinez les logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site afin de déterminer quelles requêtes ont provoqué ce blocage.
 
@@ -189,7 +189,7 @@ Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de 
 
 ### Que faire si mon site affiche une erreur « Your IP has been banned » ?
 
-![your_ip_has_been_blocked](images/your_ip_has_been_blocked.png){.thumbnail}
+![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
 
 Ce message indique que l'adresse IP que vous utilisez pour vous connecter à votre site est bloquée pour un temps limité. 
 
@@ -199,7 +199,7 @@ Vous pouvez enfin contacter l'un de [nos partenaires](https://partner.ovhcloud.c
 
 ### J'ai commandé un domaine comportant des accents et il s'affiche écrit de façon étrange dans mon espace client. Que dois-je faire ?
 
-![notation_idn](images/notation_idn.png){.thumbnail}
+![idn-notation](images/idn-notation.png){.thumbnail}
 
 Vous n'avez aucune action à mener dans cette situation. Même si votre domaine s'affiche en [notation internationalisée (IDN)](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9){.external} dans votre espace client, il fonctionnera et s'affichera de façon tout à fait normale ailleurs. L'adresse Web de votre site s'affichera telle que vous l'avez demandée. Vos adresses e-mail s'afficheront également telles que vous le souhaitez chez vos correspondants.
 
@@ -208,7 +208,7 @@ Vous n'avez aucune action à mener dans cette situation. Même si votre domaine 
 > L'utilisation d'une adresse e-mail avec un domaine IDN dans un logiciel de messagerie (Outlook, Mail de macOS, etc.) n'est pas recommandée et peut provoquer des incompatibilités.
 >
 
-## Aller plus loin <a name="gofurther"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [FAQ - E-mails mutualisés MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

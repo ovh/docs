@@ -1,7 +1,7 @@
 ---
 title: Gestión de volúmenes persistentes en Tanzu Kubernetes Grid (EN)
 excerpt: How to deploy an application in Tanzu Kubernetes Grid with persistent volumes
-updated: 2022-11-10
+updated: 2024-01-10
 ---
 
 ## Objective
@@ -115,7 +115,7 @@ tanzu@bootstrap:~$
 Create a file named `default-pvc-storage.yaml` with this content:
 
 ```yaml
-kind: persistantVolumeClaim
+kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: default-pvc-storage
@@ -168,7 +168,7 @@ Return to the **Bootstrap** virtual machine and use the command line.
 Create a file named `second-storage-pvc.yaml`:
 
 ```yaml
-kind: persistantVolumeClaim
+kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: second-storage-pvc

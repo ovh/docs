@@ -84,7 +84,7 @@ Once you have created a DNS zone, you can start configuring it with the help of 
 
 **Example**: For the domain name "domain.tld", the result should be displayed as in the following image:
 
-![hosting](images/DNSzone.png){.thumbnail}
+![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -132,7 +132,7 @@ Declare and authorise your external domain name on your OVHcloud web hosting pla
 
 **Example** for the "domain.tld" domain name:
 
-![hosting](images/DNSmultisite.png){.thumbnail}
+![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
 
 **The modification of DNS records of the type "A", "CNAME" and "TXT" must be done at your domain name’s current DNS provider and will take between 4 and 24 hours to propagate fully.**
 

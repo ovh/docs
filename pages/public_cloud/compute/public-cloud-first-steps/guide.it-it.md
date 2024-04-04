@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2023-12-01
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ Il protocollo SSH assicura una comunicazione client-server criptata. L’utilizz
 
 > [!primary]
 >
-Ricordati che per connettersi alle istanze Public Cloud, è obbligatorio l’accesso in SSH basato sull’utilizzo di una chiave, ad eccezione di quelle che eseguono sistemi operativi Windows. Le chiavi SSH pubbliche aggiunte al tuo Spazio Cliente OVHcloud saranno disponibili per i servizi Public Cloud di tutte le regioni e i datacenter. È possibile salvare solo chiavi criptata **RSA** e **ECDSA**; ED25519 non è attualmente supportata. 
+Ricordati che per connettersi alle istanze Public Cloud, è obbligatorio l’accesso in SSH basato sull’utilizzo di una chiave, ad eccezione di quelle che eseguono sistemi operativi Windows. Le chiavi SSH pubbliche aggiunte al tuo Spazio Cliente OVHcloud saranno disponibili per i servizi Public Cloud di tutte le regioni e i datacenter. È possibile salvare chiavi crittografate **RSA**, **ECDSA** e **ED25519**.
 >
 La fase di autenticazione sulle istanze Windows richiede soltanto nome utente e password.
 >
@@ -53,7 +53,12 @@ $ ssh-keygen -b 4096
 L’utilizzo dell’opzione “-t” con il comando sopra citato consente di specificare un metodo crittografico, ad esempio:
 
 ```bash
-$ ssh-keygen -t ed25519 -a 256
+$ ssh-keygen -t ecdsa -a 256
+```
+oppure
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 Il comando ti chiederà di salvare la chiave appena creata nel file standard:
@@ -153,9 +158,23 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+> [!success]
+>
+> È preferibile creare una rete privata prima di procedere alla creazione di un’istanza. Per maggiori informazioni sulla creazione di una rete privata, consulta la guida [Configurazione della vRack sul Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina "Istanze", cliccando su `Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zone:**
+
+Le Local Zone sono un'estensione delle regioni che avvicinano i servizi OVHcloud a luoghi specifici, offrendo latenza ridotta e performance migliorate per le applicazioni. Sono strategicamente posizionate vicino alle zone a forte richiesta degli utenti. Il loro obiettivo principale è ridurre al minimo il tempo necessario al trasferimento dei dati tra utente e Cloud, per rendere i servizi più rapidi e più reattivi e per rispondere ai requisiti di residenza dei dati. Per maggiori informazioni sulle Local Zone, consulta i seguenti link: [Local Zone Compute](https://www.ovhcloud.com/it/public-cloud/local-zone-compute/) e [Local Zone Compute - Funzionalità, capacità e limiti](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+
+**Global Region:**
+
+Region supportate da uno o più datacenter gestiti da OVHcloud. Ogni Region è situata in una zona geografica diversa. Ogni Region fornisce una o più Availibility Zone, ad esempio GRA11, GRA7, BHS5, DE1, ecc.
 
 Per prima cosa, seleziona un modello di server in base alle tue esigenze. La procedura guidata fornisce una descrizione dei diversi casi d'uso e della disponibilità del modello di server. Puoi scegliere tra le seguenti categorie personalizzate:
 
@@ -196,7 +215,7 @@ Lo Step 4 consente di configurare opzioni aggiuntive.
 ![options select](images/instance-creation-04-2022.png){.thumbnail}
 
 - È possibile implementare più istanze con la configurazione selezionata (nella quota iniziale di cui sopra).
-- È possibile scegliere di creare un’istanza flessibile che consenta di effettuare, in un secondo momento, il downgrade per un modello più piccolo (anche cambiando categoria del modello di server). Tuttavia, questo limiterà l’istanza a 50GB di**storage incluso**, a prescindere dalle operazioni di upgrade o downgrade.
+- È possibile scegliere di creare un’istanza flessibile che consenta di effettuare, in un secondo momento, il downgrade per un modello più piccolo (anche cambiando categoria del modello di server). Tuttavia, questo limiterà l’istanza a 50GB di **storage incluso**, a prescindere dalle operazioni di upgrade o downgrade.
 - È possibile modificare il nome dell’istanza.
 - È possibile aggiungere uno script post-installazione. 
 - È possibile attivare i backup automatici per l’istanza. Ti consigliamo di consultare i dettagli relativi ai prezzi e alle opzioni di rotazione.

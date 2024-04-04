@@ -1,7 +1,7 @@
 ---
-title: 'Zarządzanie użytkownikami'
-excerpt: 'Dowiedz się, jak dodawać użytkowników z poziomu konta OVHcloud'
-updated: 2023-07-19
+title: 'Tworzenie użytkowników lokalnych i zarządzanie nimi na koncie OVHcloud'
+excerpt: 'Dowiedz się, jak dodawać użytkowników lokalnych z poziomu konta OVHcloud'
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-07-19
 
 ## Wprowadzenie
 
-OVHcloud umożliwia tworzenie użytkowników, którzy mogą działać w trybie odczytu lub zapisu w Twoim Panelu klienta. Dzięki temu możesz przyznać członkom Twojej firmy dostęp do usług OVHcloud, i to bez konieczności podejmowania ryzykownych działań, takich jak udostępnianie hasła lub kodu do weryfikacji dwuetapowej.
+OVHcloud umożliwia tworzenie użytkowników lokalnych, którzy mogą działać w trybie odczytu lub zapisu w Twoim Panelu klienta. Dzięki temu możesz przyznać członkom Twojej firmy dostęp do usług OVHcloud, i to bez konieczności podejmowania ryzykownych działań, takich jak udostępnianie hasła lub kodu do weryfikacji dwuetapowej.
 
 > [!primary]
 >
@@ -19,7 +19,7 @@ OVHcloud umożliwia tworzenie użytkowników, którzy mogą działać w trybie o
 > Zarządzanie kontaktami ma z kolei na celu całkowite oddelegowanie zarządzania aspektami administracyjnymi, technicznymi lub księgowymi jednej lub kilku usług na koncie OVHcloud. Więcej szczegółów dotyczących zarządzania kontaktami znajdziesz w [tym przewodniku](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
-**Ten przewodnik zawiera szczegółowe informacje na temat uprawnień, jakie może posiadać użytkownik, oraz na temat sposobów dodawania użytkowników i zarządzania nimi.**
+**Ten przewodnik zawiera szczegółowe informacje na temat uprawnień, jakie może posiadać użytkownik lokalny, oraz na temat sposobów dodawania użytkowników i zarządzania nimi.**
 
 ## Wymagania początkowe
 
@@ -27,6 +27,10 @@ OVHcloud umożliwia tworzenie użytkowników, którzy mogą działać w trybie o
 - Dostęp do Panelu klienta.
 
 ## W praktyce
+
+### Prezentacja tożsamości
+
+Użytkownicy lokalni to jeden z typów tożsamości, które można skonfigurować na koncie OVHcloud. Pozostałe typy kont opisano w [powiązanej dokumentacji](/pages/manage_and_operate/iam/identities-management).
 
 ### Zarządzanie użytkownikami
 
@@ -42,12 +46,20 @@ Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk 
 ![users-management](images/usersmanagement2.png){.thumbnail}
 
 | Pole | Szczegóły |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | Identyfikator | Wpisz na przykład nazwę użytkownika lub jego funkcję. |
 | E-mail | Wpisz pełny adres e-mail użytkownika. |
 | Hasło | Określ hasło dla użytkownika. Użytkownik będzie mógł je zmienić po uzyskaniu uprawnień do dostępu. <br>W celu utworzenia hasła zalecamy zapoznanie się z [przewodnikiem dotyczącym zarządzania hasłami](/pages/account_and_service_management/account_information/manage-ovh-password){.external}. |
-| Grupa | Wybierz grupę spośród dostępnych |
+| Grupa | Wybierz grupę spośród dostępnych (patrz tabela poniżej). |
 | Opis | Tutaj możesz dodać opis użytkownika. Przykład: jego rola w firmie. |
+
+**Domyślne informacje o grupach:**
+
+| Rola | Szczegóły |
+|--|--|
+| UNPRIVILEGED (Tylko Odczyt) | Dostęp w trybie odczytu do Panelu klienta OVHcloud i do wszystkich jego sekcji. |
+| DEFAULT (Ograniczony administrator) | Dostęp w trybie zapisu do Panelu klienta OVHcloud i do wszystkich jego sekcji, **z wyjątkiem** zarządzania użytkownikami. |
+| ADMIN (Administrator) | Dostęp w trybie zapisu do Panelu klienta OVHcloud i wszystkich jego sekcji **w tym*** zarządzanie użytkownikami. |
 
 Użytkownik otrzyma własny identyfikator składający się z identyfikatora numerycznego Twojego konta (który możesz sprawdzić w menu “Zarządzanie użytkownikami”) i jego nazwy użytkownika — obie wartości są rozdzielone znakiem “/”.
 
@@ -77,17 +89,17 @@ W zakładce `Zarządzanie użytkownikami`{.action} kliknij `Zgłoś grupę`{.act
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 
-Wyświetli się okno, w którym należy wypełnić wymagane pola. Kliknij `Zatwierdź`{.action}, aby utworzyć użytkownika.
+Wyświetli się okno, w którym należy wypełnić wymagane pola. Kliknij `Zatwierdź`{.action}, aby utworzyć grupę.
 
 ![users-management](images/usersmanagement8.png){.thumbnail}
 
 Grupy przyznają domyślny poziom przywileju użytkownikom, których dotyczą, w zależności od wybranej przez Ciebie roli:
 
 | Rola | Szczegóły |
-|------------------|----------------------------------------------------------------------------------------------------------------------|
-| Nie | Brak dostępu do Panelu klienta OVHcloud, jeśli nie wdrożono żadnej polityki IAM. |
-| Sam Odczyt | Dostęp w trybie odczytu do Panelu klienta OVHcloud i do wszystkich jego sekcji. |
-| Ograniczona administracja | Dostęp w trybie zapisu do Panelu klienta OVHcloud i do wszystkich jego sekcji, **z wyjątkiem** zarządzania użytkownikami. |
+|--|--|
+| Brak | Brak dostępu do Panelu klienta OVHcloud, jeśli nie wdrożono żadnej polityki IAM. |
+| Tylko Odczyt | Dostęp w trybie odczytu do Panelu klienta OVHcloud i do wszystkich jego sekcji. |
+| Ograniczony administrator | Dostęp w trybie zapisu do Panelu klienta OVHcloud i do wszystkich jego sekcji, **z wyjątkiem** zarządzania użytkownikami. |
 | Administrator | Dostęp w trybie zapisu do Panelu klienta OVHcloud i wszystkich jego sekcji **w tym*** zarządzanie użytkownikami. |
 
 #### Zarządzaj grupami

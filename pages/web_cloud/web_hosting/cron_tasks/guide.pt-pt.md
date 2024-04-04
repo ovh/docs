@@ -1,7 +1,7 @@
 ---
 title: "Criar tarefas automatizadas (CRON) no seu alojamento Web"
 excerpt: "Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -57,7 +57,7 @@ Selecione o alojamento em causa, clique no separador `Mais`{.action} e, a seguir
 
 Nesta secção, terá uma visão geral das tarefas planeadas e dos respetivos parâmetros.
 
-![cron control panel](images/cron-jobs-1.png){.thumbnail}
+![cron control panel](images/schedule-jobs.png){.thumbnail}
 
 ### Criação de uma tarefa automatizada
 
@@ -65,7 +65,7 @@ Nesta secção, terá uma visão geral das tarefas planeadas e dos respetivos pa
 
 Para criar uma tarefa CRON, clique no botão `Adicionar um planeamento`{.action} à direita. Pode personalizar os parâmetros da tarefa na nova janela.
 
-![adding scheduling](images/cron-jobs-2.png){.thumbnail}
+![adding scheduling](images/add-scheduling-step-1.png){.thumbnail}
 
 |Opção|Descrição|   
 |---|---|   
@@ -84,7 +84,7 @@ A interface oferece dois modos para configurar a frequência da sua tarefa. Util
 |Modo simples|
 |---|
 |Utilize os menus pendente para especificar a hora, os dias de um mês, os dias da semana e os meses da tarefa.|
-|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-basic-mod-step-2.png){.thumbnail}|
 
 > [!primary]
 >
@@ -96,17 +96,17 @@ A interface oferece dois modos para configurar a frequência da sua tarefa. Util
 |Modo expert| 
 |---|
 |Introduza valores numéricos como num *crontab*. Os asteriscos indicam cada valor do período, o que significa que a tarefa será realizada continuamente **uma vez por hora, todos os dias**, no exemplo.|
-|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-expert-mod-step-2.png){.thumbnail}|
 
 Pode alternar entre os dois modos durante a configuração para visualizar as alterações em conformidade. Tenha em atenção as [limitações durante o planeamento de uma tarefa num alojamento Web](./#limitacoes-das-tarefas-planificadas-no-seu-alojamento-web).
 
-![cron control panel](images/cron-jobs-5.gif){.thumbnail}
+![cron control panel](images/add-scheduling-basic-mod-step-2.gif){.thumbnail}
 
 #### Etapa 3: Fim da instalação
 
 O resumo lembra-lhe os parâmetros configurados, incluindo a notação *crontab* da frequência de execução. Se tudo estiver correto, clique em `Validar`{.action}.
 
-![cron confirmação](images/cron-jobs-6.png){.thumbnail}
+![cron confirmação](images/add-scheduling-step-3.png){.thumbnail}
 
 A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus parâmetros ou eliminar a tarefa clicando em `...`{.action} na tabela de apresentação do seu painel de configuração OVHcloud.
 
@@ -118,7 +118,7 @@ A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus par
 |Duração|A duração de execução de uma tarefa é de 60 minutos. Se um script ultrapassar este tempo de execução, será automaticamente interrompido pelo sistema.|
 |Variáveis|Apenas pode definir variáveis num script. Adicioná-las ao URL que chama o script não funcionará (Exemplo: www/jobs/cron.php?variável=value).|
 |Limite de dados|Uma tarefa só pode gerar 5 MB de dados (*stdin/stderr*). Por exemplo, se um script escrever dados num ficheiro .txt, a execução será automaticamente interrompida quando o ficheiro atingir 5 MB.|
-|Scripts que produzem erros|Se um script estiver defeituoso, será automaticamente desativado após 10 tentativas de execução falhadas. Reative-o de forma simples no Painel de configuração. (Clique em `...`{.action} e depois em `Alterar`{.action})|
+|Scripts que produzem erros|Se um script falhar, ele será automaticamente desativado após 10 tentativas de execução com falha. O relatório de erro só será enviado quando as 10 tentativas tiverem falhado.</br>Corrija o script em função do relatório de erro recebido e reative a "tarefa CRON" no painel de configuração (clique em `...`{.action} e em `Alterar`{.action}).|
 |Relatórios de execução|Os relatórios só serão enviados para o endereço eletrónico selecionado uma vez por dia (durante as horas noturnas).|
 
 ### Reparação
@@ -142,35 +142,35 @@ Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os
 - Exemplo de fim de script corretamente executado 
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
-[2020-08-11 00:36:01] 
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2023-08-11 00:36:01] 
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-10 22:39:44.086166 exitcode: 0
 </code></pre>
 
 - Exemplo de insucesso devido a ultrapassagem do tempo de execução
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
+[2023-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2023-08-11 01:36:01] ## OVH ## END - 2023-08-11 01:36:01.086166 exitcode: 0
 </code></pre>
 
 - Exemplo de falha porque o ficheiro de script não pode ser encontrado no caminho de acesso especificado
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+[2023-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-11 00:36:01.086166 exitcode: 255
 </code></pre>
 
 - Exemplo de falha devido a um erro de autorização (chmod) ou a uma configuração incorreta do ficheiro .ovhconfig
 
 <pre class="bgwhite"><code>
-[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
-[2020-08-11 18:07:10]
-[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
+[2023-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2023-08-11 18:07:10]
+[2023-08-11 18:07:10] ## OVH ## END - 2023-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
 ## Quer saber mais? <a name="go-further"></a>

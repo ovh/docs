@@ -109,7 +109,7 @@ Il est important de noter qu’une ressource (instance) reste totalement privée
 
 #### Load Balancer dans un réseau privé <a name="loadbalancer"></a>
 
-OVHcloud propose l'Octavia Load Balancer dans le cadre de l'écosystème Public Cloud. Il offre la plus grande flexibilité pour faire évoluer vos applications.
+OVHcloud propose un Load Balancer dans le cadre de l'écosystème Public Cloud. Il offre la plus grande flexibilité pour faire évoluer vos applications.
 
 Le Public Cloud Load Balancer reste entièrement privé, il a donc besoin d'un service Gateway pour accéder au réseau public et d'une Floating IP pour l'exposition du service sortant.
 

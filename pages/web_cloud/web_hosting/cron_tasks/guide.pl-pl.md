@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie automatycznych zadań (CRON) na Twoim hostingu"
 excerpt: "Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -28,7 +28,7 @@ updated: 2023-10-31
 </style>
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie 
@@ -57,7 +57,7 @@ Wybierz odpowiedni hosting, kliknij zakładkę `Więcej`{.action}, a następnie 
 
 W tej sekcji znajdziesz przegląd zaplanowanych zadań i ich parametrów.
 
-![cron control panel](images/cron-jobs-1.png){.thumbnail}
+![cron control panel](images/schedule-jobs.png){.thumbnail}
 
 ### Tworzenie zautomatyzowanego zadania
 
@@ -65,7 +65,7 @@ W tej sekcji znajdziesz przegląd zaplanowanych zadań i ich parametrów.
 
 Aby utworzyć zadanie CRON, kliknij przycisk `Dodaj harmonogram`{.action} po prawej stronie. W nowym oknie możesz spersonalizować ustawienia zadania.
 
-![adding scheduling](images/cron-jobs-2.png){.thumbnail}
+![adding scheduling](images/add-scheduling-step-1.png){.thumbnail}
 
 |Opcja|Opis|   
 |---|---|   
@@ -84,7 +84,7 @@ Interfejs pozwala na skonfigurowanie częstotliwości zadania w dwóch trybach. 
 |Tryb prosty|
 |---|
 |Użyj rozwijanych menu, aby określić godzinę, dni miesiąca, dni tygodnia i miesiące zadania.|
-|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-basic-mod-step-2.png){.thumbnail}|
 
 > [!primary]
 >
@@ -96,17 +96,17 @@ Interfejs pozwala na skonfigurowanie częstotliwości zadania w dwóch trybach. 
 |Tryb zaawansowany| 
 |---|
 |Wprowadź wartości liczbowe jak w *crontab*. Gwiazdki wskazują każdą wartość okresu, co oznacza, że zadanie będzie wykonywane stale **raz na godzinę każdego dnia** w tym przykładzie.|
-|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-expert-mod-step-2.png){.thumbnail}|
 
 Możesz przełączyć między dwoma trybami podczas konfiguracji, aby wyświetlić odpowiednie zmiany. Pamiętaj również o [ograniczeniach podczas planowania zadania na hostingu WWW](./#ograniczenia-zaplanowanych-zadan-na-twoim-hostingu).
 
-![cron control panel](images/cron-jobs-5.gif){.thumbnail}
+![cron control panel](images/add-scheduling-basic-mod-step-2.gif){.thumbnail}
 
 #### Etap 3: Koniec instalacji
 
 Podsumowanie zawiera informacje o skonfigurowanych parametrach, w tym *o ratingu crontab* częstotliwości wykonywania. Jeśli są poprawne, kliknij `Zatwierdź`{.action}.
 
-![cron](images/cron-jobs-6.png){.thumbnail}
+![cron](images/add-scheduling-step-3.png){.thumbnail}
 
 Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub usunąć zadanie klikając na `...`{.action} w tabeli prezentacji Twojego panelu konfiguracyjnego OVHcloud.
 
@@ -118,7 +118,7 @@ Zadanie będzie gotowe za kilka minut. Możesz zmienić wszystkie parametry lub 
 |Czas trwania|Czas wykonywania zadania to 60 minut. Jeśli skrypt przekracza ten czas, zostanie automatycznie zatrzymany przez system.|
 |Zmienna|Możesz zdefiniować tylko zmienne w skrypcie. Dodanie ich do adresu URL wywołującego skrypt nie będzie działać (Przykład: www/jobs/cron.php?zmienna=value).|
 |Limit danych|Zadanie może generować tylko 5 MB danych (*stdin/stderr*). Na przykład, jeśli skrypt zapisuje dane w pliku .txt, wykonywanie automatycznie kończy się, gdy plik osiągnie 5 MB.|
-|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 próbach wykonania, które nie powiodły się. Włącz ją w Panelu konfiguracyjnym. (Kliknij `...`{.action}, a następnie `Zmień`{.action})|
+|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 nieudanych próbach. Raport o błędach zostanie wysłany dopiero po 10 próbach zakończonych niepowodzeniem.</br>Popraw skrypt na podstawie otrzymanego raportu o błędzie, a następnie ponownie włącz "zadanie CRON" w panelu sterowania (kliknij opcję `...`{.action}, a następnie `Zmień`{.action}).|
 |Sprawozdania z realizacji|Raporty będą wysyłane na wybrany adres e-mail tylko raz dziennie (w godzinach nocnych).|
 
 ### Naprawa
@@ -142,35 +142,35 @@ Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony 
 - Przykład poprawnie wykonanego końca skryptu 
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
-[2020-08-11 00:36:01] 
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2023-08-11 00:36:01] 
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-10 22:39:44.086166 exitcode: 0
 </code></pre>
 
 - Przykład niepowodzenia z powodu przekroczenia czasu wykonywania
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-[2020-08-11 01:36:01] # OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maksymalna permitted (3600 seconds)
-[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
+[2023-08-11 01:36:01] # OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maksymalna permitted (3600 seconds)
+[2023-08-11 01:36:01] ## OVH ## END - 2023-08-11 01:36:01.086166 exitcode: 0
 </code></pre>
 
 - Przykład awarii, ponieważ plik skryptu nie może zostać znaleziony w określonej ścieżce dostępu
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+[2023-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-11 00:36:01.086166 exitcode: 255
 </code></pre>
 
 - Przykład niepowodzenia z powodu błędu autoryzacji (chmod) lub nieprawidłowej konfiguracji pliku .ovhconfig
 
 <pre class="bgwhite"><code>
-[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
-[2020-08-11 18:07:10]
-[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
+[2023-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2023-08-11 18:07:10]
+[2023-08-11 18:07:10] ## OVH ## END - 2023-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
 ## Sprawdź również <a name="go-further"></a>

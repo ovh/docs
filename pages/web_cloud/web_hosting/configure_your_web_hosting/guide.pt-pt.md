@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web : ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
-updated: 2023-09-05
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -195,7 +195,7 @@ Agora que conhece os diferentes parâmetros alteráveis para o seu alojamento we
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador
 `Informações gerais`{.action}. À direita da entrada `Versão global de PHP`{.action}", localizada quase no centro da página, clique no botão `...`{.action} e, a seguir, em `Alterar configuração`{.action}.
 
-![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
+![hostingconfiguration](images/modify-hosting-configuration.png){.thumbnail}
 
 > [!primary]
 >
@@ -222,7 +222,7 @@ Aparecerá uma janela com duas opções possíveis. Selecione a que corresponde 
 
 Clique em `Validar`{.action} para aplicar a alteração. Aguarde alguns instantes até que ela se realize.
 
-![hostingconfiguration](images/change-hosting-configuration-step3.png){.thumbnail}
+![hostingconfiguration](images/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 
 ### 3 - Método 2: modificar a configuração do alojamento web a partir do ficheiro ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -233,13 +233,13 @@ Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 Se for caso disso, consulte as instruções descritas na nossa documentação ["Alterar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password) para obter uma palavra-passe para o utilizador FTP.
 
-![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
+![ovhconfig](images/tab-perso.png){.thumbnail}
 
 #### 3.2 - Recuperar ou criar o ficheiro ".ovhconfig"
 
 Quando estiver conectado ao [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), visualizará o conjunto dos ficheiros alojados atualmente no seu espaço de armazenamento FTP. Fique posicionado na raiz do seu alojamento (que pode ser simbolizado por um "/"). Deverá encontrar o ficheiro ".ovhconfig".
 
-![ovhconfig](images/ovhconfig-step2.png){.thumbnail}
+![ovhconfig](images/ovhconfig-file.png){.thumbnail}
 
 A partir daí, existem duas possibilidades:
 
@@ -358,7 +358,7 @@ Consulte o guia "[Configurar um multisite no alojamento web](/pages/web_cloud/we
 > **Não é possível especificar um segundo [ambiente de execução](#runtime-environment), um segundo [modo de execução](#runtime-mod) e/ou um segundo [motor de execução PHP](#php-runtime)** num mesmo alojamento web. Apenas serão tidos em conta os que constam do ficheiro ".ovhconfig" que está na raiz do seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
-![ovhconfig](images/ovhconfig-step3.png){.thumbnail}
+![ovhconfig](images/root-folders.png){.thumbnail}
 
 ## Quer saber mais?
 

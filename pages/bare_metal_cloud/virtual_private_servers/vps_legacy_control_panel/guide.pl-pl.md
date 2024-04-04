@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie legacy VPS
 excerpt: Dowiedz się, jak zarządzać starym serwerem VPS z poziomu Panelu klienta OVHcloud
-updated: 2023-06-29
+updated: 2024-01-22
 ---
 
 > [!primary]
@@ -38,6 +38,12 @@ Ta opcja otworzy okno służące do rozpoczęcia procesu [rezygnacji z usługi](
 ### Restartuj do trybu Rescue
 
 Kliknij tę opcję, aby uruchomić VPS w trybie rescue. Szczegółowe informacje znajdziesz w [naszym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Możesz użyć następującego polecenia, aby określić punkt montowania partycji:
+
+```bash
+lsblk
+```
 
 ### Restart serwera VPS
 
@@ -122,8 +128,6 @@ Możesz automatycznie przenieść VPS do aktualnej gamy. Sprawdź zalety tej ofe
 [Tworzenie i wykorzystywanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
-
-[Skonfiguruj nową instalację Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
 
 [Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 

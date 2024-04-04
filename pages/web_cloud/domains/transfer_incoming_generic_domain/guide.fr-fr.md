@@ -1,8 +1,10 @@
 ---
 title: 'Transférer son nom de domaine vers OVHcloud'
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
-updated: 2023-06-21
+updated: 2024-01-22
 ---
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mbyfj1JyK7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Objectif
 
@@ -46,17 +48,17 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 |Étapes|Description|Qui est impliqué ?|Où ?|Temps requis|
 |---|---|---|---|---|
-|1|Vérification des informations associées au nom de domaine|L'administrateur du domaine|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
-|2|Déverrouillage du domaine et récupération du code de transfert|L'administrateur du domaine, avec l'autorisation du propriétaire|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
-|3|Demande de transfert de nom de domaine|Toute personne possédant le code de transfert, également avec la permission du propriétaire|Avec le nouveau bureau d'enregistrement (par exemple OVHcloud)|Dépend de vos actions|
-|4|Validation du transfert|Le bureau d'enregistrement actuel|À la demande de l'organisation gérant l'extension de nom de domaine|Cinq jours maximum|
+|[1](#step1)|[Vérification des informations associées au nom de domaine](#step1)|L'administrateur du domaine|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
+|[2](#step2)|[Déverrouillage du domaine et récupération du code de transfert](#step2)|L'administrateur du domaine, avec l'autorisation du propriétaire|Avec le bureau d'enregistrement actuel|Dépend de vos actions|
+|[3](#step3)|[Demande de transfert de nom de domaine](#step3)|Toute personne possédant le code de transfert, également avec la permission du propriétaire|Avec le nouveau bureau d'enregistrement (par exemple OVHcloud)|Dépend de vos actions|
+|[4](#step4)|[Validation du transfert](#step4)|Le bureau d'enregistrement actuel|À la demande de l'organisation gérant l'extension de nom de domaine|Cinq jours maximum|
 
 > [!warning]
 >
 > La procédure exacte de transfert de domaine peut varier, en particulier dans le cas de certains **TLD** de code de pays (**ccTLD**, tels que .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) et de quelques **TLD** spéciaux (.am, .fm, etc.). Selon l'extension de votre nom de domaine, des prérequis supplémentaires peuvent être nécessaires. Nous vous recommandons de vérifier d'abord les informations affichées pour l'extension concernée, sur notre site Web: <https://www.ovhcloud.com/fr/domains/tld/>.
 >
 
-### Étape 1 : vérifier les informations associées au nom de domaine
+### Étape 1 : vérifier les informations associées au nom de domaine <a name="step1"></a>
 
 **Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovhcloud.com/fr/domains/whois/) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
@@ -69,7 +71,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 > Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovhcloud.com/fr/domains/whois/){.external}, peuvent vous fournir des informations sur son identité.
 >
 
-### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert
+### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert <a name="step2"></a>
 
 Après avoir vérifié ces informations, vous devrez déverrouiller votre nom de domaine. Vous ne pouvez effectuer cette opération que via le bureau d'enregistrement du nom de domaine actuel. Contactez-le pour en savoir plus à propos de leur procédure.
 
@@ -82,7 +84,7 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 > Une fois votre nom de domaine déverrouillé, vous aurez sept (7) jours pour effectuer le transfert vers OVHcloud. Après cette période, votre nom de domaine sera verrouillé automatiquement si vous ne soumettez pas de demande de modification de bureau d'enregistrement de nom de domaine.
 >
 
-### Étape 3 : demander un transfert de nom de domaine vers OVHcloud
+### Étape 3 : demander un transfert de nom de domaine vers OVHcloud <a name="step3"></a>
 
 Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
@@ -121,7 +123,7 @@ Une fois la commande validée, vous recevrez un bon de commande. Le processus de
 >
 > Si le code de transfert n'a pas été saisi lors de la commande, vous pourrez le renseigner depuis la fenêtre `Opérations en cours`{.action} et ainsi valider le transfert.
 
-### Étape 4 : validation du transfert par le bureau d'enregistrement actuel
+### Étape 4 : validation du transfert par le bureau d'enregistrement actuel <a name="step4"></a>
 
 Une fois la commande et le code de transfert validés, le bureau d'enregistrement du nom de domaine actuel (qui n'est toujours pas OVHcloud) recevra une demande de validation. À ce stade, plusieurs résultats sont possibles, selon les actions entreprises.
 

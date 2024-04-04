@@ -1,12 +1,12 @@
 ---
 title: 'Utilizzare un account di posta da "Outlook on the web"'
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
-updated: 2021-06-25
+updated: 2024-03-26
 ---
 
 ## Obiettivo
 
-Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web Application (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
+Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web App (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
 
 **Questa guida spiega come eseguire azioni di carattere generale con il tuo indirizzo email nell’interfaccia OWA.**
 
@@ -21,7 +21,7 @@ Questa guida ti consentirà di comprendere meglio quello che è possibile ottene
 
 > [!primary]
 >
-> Dopo i primi due passaggi la procedura non deve essere seguita con un particolare ordine. Puoi passare direttamente ai paragrafi che ti servono utilizzando la barra di navigazione sul lato sinistro di questa guida.
+> Dopo i primi due passaggi la procedura non deve essere seguita con un particolare ordine.
 >
 
 ### 1. Accedere alla Webmail OWA
@@ -29,6 +29,12 @@ Questa guida ti consentirà di comprendere meglio quello che è possibile ottene
 Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina generale di login [della Webmail](https://www.ovh.it/mail). Digita il tuo indirizzo email e la tua password, quindi clicca sul pulsante `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+>
+> Se vieni reindirizzato su un’interfaccia **Roundcube**, significa che sei sulla versione storica dell’offerta MX Plan. Per maggiori informazioni sulla soluzione MX Plan, consulta la pagina [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Per familiarizzare con l'interfaccia **Roundcube**, consulta la nostra guida [Webmail: guida all’utilizzo di Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Se è la prima volta che accedi alla Webmail OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia e il fuso orario. Clicca su `Salva`{.action} per continuare.
 
@@ -208,7 +214,7 @@ Puoi quindi consultare la visualizzazione ad albero delle "Opzioni" sul lato sin
 
 ### Gestione dei cookies
 
-La Webmail utilizzata per le nostre soluzioni email è basata sul software Microsoft Outlook Web Application. È quindi in grado di scambiare metadati con i server di Microsoft, sotto forma di cookies denominati `appsforoffice.microsoft.com`.
+La Webmail utilizzata per le nostre soluzioni email è basata sul software Microsoft Outlook Web App. È quindi in grado di scambiare metadati con i server di Microsoft, sotto forma di cookies denominati `appsforoffice.microsoft.com`.
 
 Per disattivare questi scambi, è possibile utilizzare sul browser un'estensione di tipo "block" di contenuti (ad esempio, uBlock Origin o Ghostery).
 La disattivazione di questi cookies può compromettere la stabilità della webmail.

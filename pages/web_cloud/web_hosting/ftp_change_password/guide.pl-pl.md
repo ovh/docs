@@ -1,11 +1,11 @@
 ---
 title: "Zmiana hasła do konta FTP"
 excerpt: "Dowiedz się, jak zmienić hasło dla użytkownika FTP utworzonego na Twoim hostingu"
-updated: 2023-05-29
+updated: 2024-02-29
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -45,24 +45,26 @@ Tabela wyświetla *użytkowników FTP* utworzonych na Twoim hostingu. Użytkowni
 > Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Nowe hasło powinno być zgodne z następującą **polityką haseł** :
-
-- Minimum 8 znaki;
-- Maksymalnie 30 znaków;
-- Przynajmniej jedna wielka litera;
-- Przynajmniej jedna mała litera;
-- Przynajmniej jedną cyfrę;
-- Składać się wyłącznie z cyfr i liter.
-
 W zależności od pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zmiana hasła do konta FTP w zakładce `FTP-SSH`{.action} zostanie wykonana na dwie różne sposoby:
 
 - **w przypadku pakietów, które nie pozwalają na utworzenie drugiego użytkownika FTP** (oferty *Darmowy hosting 100M* i *Perso*): kliknij *piktogram w formie ołówka* w kolumnie `Hasło`{.action} tabeli, która się wyświetla, wprowadź nowe hasło **zgodnie z polityką haseł**, a następnie potwierdź zmianę, klikając *zielony przycisk* do zatwierdzenia.
 
-![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
 
 - **w przypadku pakietów umożliwiających utworzenie kilku użytkowników FTP** (oferty *Pro* i *Performance*): kliknij przycisk `...`{.action} po prawej stronie odpowiedniego użytkownika FTP a następnie kliknij `Zmień hasło`{.action}. W oknie, które się wyświetla wprowadź nowe hasło **zgodnie z polityką haseł**, potwierdź, wprowadzając je ponownie i klikając przycisk `Zatwierdź`{.action}.
 
-![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
+![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+
+> [!primary]
+>
+> Nowe hasło powinno być zgodne z następującą **polityką haseł** :
+>
+>- Minimum 8 znaki;
+>- Maksymalnie 30 znaków;
+>- Przynajmniej jedna wielka litera;
+>- Przynajmniej jedna mała litera;
+>- Przynajmniej jedną cyfrę;
+>- Składać się wyłącznie z cyfr i liter.
 
 Następnie przejdź do zakładki `Zadania w realizacji`{.action} i odśwież stronę regularnie. Efekty modyfikacji to zaledwie kilka minut.
 

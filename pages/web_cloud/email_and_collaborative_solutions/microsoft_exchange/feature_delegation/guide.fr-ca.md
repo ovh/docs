@@ -69,7 +69,7 @@ La manière de faire est différente selon le ou les droits que vous avez délé
 
 #### 2.1 Utiliser son « droit d'accès »
 
-- **Depuis le webmail Outlook Web Application (OWA)**
+- **Depuis le webmail Outlook Web App (OWA)**
 
 Rendez-vous à l'adresse <https://www.ovh.com/ca/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, effectuez un clic droit sur le nom du compte dans le menu à gauche, puis sélectionnez `Ajouter un dossier partagé`{.action}.
 
@@ -89,7 +89,7 @@ Cliquez à présent sur `Paramètres supplémentaires`{.action}. Dans la nouvell
 
 #### 2.2 Utiliser son « droit d'envoi »
 
-- **Depuis le webmail Outlook Web Application (OWA)**
+- **Depuis le webmail Outlook Web App (OWA)**
 
 Rendez-vous à l'adresse <https://www.ovh.com/ca/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 
@@ -111,7 +111,7 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 #### 2.3 Utiliser son « droit d'envoyer de la part de »
 
-- **Depuis le webmail Outlook Web Application (OWA)**
+- **Depuis le webmail Outlook Web App (OWA)**
 
 Rendez-vous à l'adresse <https://www.ovh.com/ca/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 

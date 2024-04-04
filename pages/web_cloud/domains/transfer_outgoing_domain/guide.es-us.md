@@ -59,7 +59,7 @@ Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?act
 
 En la pestaña `Información general`{.action}, encontrará el cursor `Protección contra la transferencia` en **Seguridad**. Por defecto, esta protección está `Activada`{.action}.
 
-![protección activada](images/outgoing-transfer-step1.png){.thumbnail}
+![protección activada](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la protección. Espere unos minutos a que el estado pase a `Desactivado`{.action}.
 
@@ -74,7 +74,7 @@ Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la prot
 > En efecto, algunos *códigos de transferencia* son gestionados directamente por el *registro* de la extensión del dominio. Un *registro* es una organización que gestiona el conjunto de dominios para una extensión determinada. Por ejemplo, el **AFNIC** gestiona el conjunto de dominios con la extensión "*.fr*". En ese caso, deberá contactar directamente con el *registro*, que gestiona la extensión del dominio, para obtener el *código de transferencia*.
 >
 
-![desactivación de la protección](images/outgoing-transfer-step2.png){.thumbnail}
+![desactivación de la protección](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -92,7 +92,7 @@ Una vez desbloqueada la protección contra la transferencia, deberá obtener el 
 
 Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también llamado código de transferencia, contraseña de dominio, AUTH-CODE o EPP-Code).
 
-![Transferencia saliente](images/outgoing-transfer-step3.png){.thumbnail}
+![Transferencia saliente](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
 

@@ -11,7 +11,7 @@ updated: 2023-08-31
 > This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on RAID software as well as Logical volume management (LVM)
 >
 
-With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-sg/bare-metal/), you can configure Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](https://ca.api.ovh.com/). as well as the [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://ca.api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
+With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-sg/bare-metal/), you can configure Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](https://ca.api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://ca.api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
 
 Providing in-depth details about partitioning can help customers understand why:
 
@@ -153,7 +153,8 @@ A partition layout is a list of partitions. Here is an example of a partition st
 
 > [!primary]
 >
-> >
+> order: is the partition order within the partition array
+>
 
 > [!primary]
 >
@@ -187,7 +188,7 @@ The following table provides an overview of filesystem compatibility with RAID l
 ¹ See the [ZFS vdevs vs standard RAID](#raidz2RAID) table for more details.<br />
 ² The RAID level for swap can only be set to 1 within the [OVHcloud API](https://ca.api.ovh.com/). In reality, the swap partitions will not use RAID. When a swap partition with size `s` is defined on a server with `n` disks, this will create `n` partitions of size `s` on every disk without any software RAID device underneath.<br />
 ³ Windows native RAID (the one configured by the OVHcloud installer) supports RAID 1 but only between two disks while other implementations allow for more than two.<br />
-⁴ The ESXi installer does not support custom partitioning schemes. Partitioning is defined by the software publisher. Nevertheless, the [OVHcloud API](https://ca.api.ovh.com/)ca. can give you an idea of what the partitioning looks like: see [OVHcloud templates](#OVHcloudtemplates) for more details.<br />
+⁴ The ESXi installer does not support custom partitioning schemes. Partitioning is defined by the software publisher. Nevertheless, the [OVHcloud API](https://ca.api.ovh.com/) can give you an idea of what the partitioning looks like: see [OVHcloud templates](#OVHcloudtemplates) for more details.<br />
 
 > [!warning]
 >
@@ -234,7 +235,7 @@ Basic customer input data errors are directly handled by the OVHcloud API. This 
 
 Customer input data related to partitioning might be too specific to be checked by the OVHcloud API and therefore require **pre-processing**. The drawback is that customers are notified later during the OS installation process.
 
-Within the [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
+Within the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration), this is visible on the progress bar
 From the [OVHcloud API](https://ca.api.ovh.com/), this status can be obtained with the following API call:
 
 > [!api]
@@ -286,11 +287,11 @@ In order to improve customer experience, reduce OVHcloud support workload and to
 
 ## Go further <a name="gofurther"></a>
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
-
-[Choosing the disk group to install an operating system](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

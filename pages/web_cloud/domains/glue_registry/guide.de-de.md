@@ -1,7 +1,7 @@
 ---
 title: "DNS-Server von Domainnamen individualisieren (Glue Records)"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Server Ihres OVHcloud Domainnamens anpassen"
-updated: 2023-07-27
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -39,22 +39,22 @@ Je nach Ihren Bedürfnissen können Sie die DNS-Server Ihres OVHcloud Domainname
 
 ### Schritt 1: Abrufen der DNS-Server, die derzeit vom Domainnamen verwendet werden <a name="step1"></a>
 
-Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS-Tool [Zonemaster](https://zonemaster.fr/en/run-test){.external} abrufen.
+Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS-Tool [Zonemaster](https://zonemaster.net/en/run-test){.external} abrufen.
 
-Gehen Sie hierzu auf [https://zonemaster.fr](https://zonemaster.fr/en/run-test){.external}, geben Sie Ihren Domainnamen ohne *www* (*domain.tld*) ein und klicken Sie dann auf den Button `Options`{.action} unter dem Eingabeformular für den Domainnamen.
+Gehen Sie hierzu auf [https://zonemaster.net](https://zonemaster.net/en/run-test){.external}, geben Sie Ihren Domainnamen ohne *www* (*domain.tld*) ein und klicken Sie dann auf den Button `Options`{.action} unter dem Eingabeformular für den Domainnamen.
 
 Klicken Sie in den Optionen auf `Fetch NS from parent zone`{.action}.
 
 Es wird ein Ergebnis angezeigt:
 
-![glue-zonemaster](images/glue-dns-zonemaster.png){.thumbnail}
+![glue-zonemaster](images/nameservers.png){.thumbnail}
 
 Notieren Sie die Namen der DNS-Server sowie **alle** IPv4-Adressen (in Form von *X.X.X.X*, wobei *X* zwischen *0* und *255* liegt) und IPv6 (weitere mögliche IP-Adressen, die keine IPv4-Adressen sind). Sie benötigen diese Daten für die weiteren Schritte dieser Anleitung.
 
 Im oben abgebildeten Beispiel verwendet **domain.tld** derzeit die folgenden **DNS-Server**:
 
-- **dnsX1.ovh.net** mit IPv4 *111.222.333.443* und IPv6 *0000:00d0:1:0000::1*
-- **dnsX2.ovh.net** mit IPv4 *111.222.333.444* und IPv6 *0000:00d0:1:0000::2*
+- **dnsX1.ovh.net** mit IPv4 *203.0.113.0* und IPv6 *2001:db8:1:1b00:203:0:113:0*
+- **dnsX2.ovh.net** mit IPv4 *203.0.113.1* und IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
@@ -76,7 +76,7 @@ Klicken Sie auf der neuen Seite auf den Tab `GLUE`{.action}.
 
 In der Tabelle werden die bei OVHcloud für den Domainnamen konfigurierten *Glue*-Einträge angezeigt. Um einen neuen *Glue*-Eintrag hinzuzufügen, klicken Sie auf `Hinzufügen`{.action}.
 
-![glueregistry](images/glue-add.png){.thumbnail}
+![glueregistry](images/add.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster die angeforderten Informationen ein:
 
@@ -85,17 +85,17 @@ Geben Sie im angezeigten Fenster die angeforderten Informationen ein:
 |Hostname|Passen Sie den Hostnamen an, den Sie als benutzerdefinierten DNS-Server verwenden möchten.|
 |Ziel-IP(s)|Geben Sie die IP-Adressen (IPv4 und/oder IPv6) ein, mit denen der Hostname verbunden werden soll. Hierbei handelt es sich um die IP-Adressen des DNS-Servers, der aktuell von Ihrem Domainnamen verwendet wird. Wenn mehrere IP-Adressen vorhanden sind, trennen Sie diese mit *einem Komma*.|
 
-![glueregistry](images/glue-add-glue.png){.thumbnail}
+![glueregistry](images/add-another-glue-record-step-1.png){.thumbnail}
 
 In der Abbildung oben, die dem Beispiel aus [Schritt 1](#step1) entspricht, ist der hinzuzufügende *Glue*-Eintrag **dns1.domain.tld** (für *domain.tld*). 
 
-Für diesen *Glue*-Eintrag werden als IP-Adressen des *Ziel-DNS-Servers* die IP-Adressen *111.222.333.443* (IPv4) und *0000:00d0:1:0000::1* (IPv6) angegeben. Diese IPs entsprechen einem der beiden DNS-Server, die derzeit für *domain.tld* (**dnsX1.ovh.net**) verwendet werden. 
+Für diesen *Glue*-Eintrag werden als IP-Adressen des *Ziel-DNS-Servers* die IP-Adressen *203.0.113.0* (IPv4) und *2001:db8:1:1b00:203:0:113:0* (IPv6) angegeben. Diese IPs entsprechen einem der beiden DNS-Server, die derzeit für *domain.tld* (**dnsX1.ovh.net**) verwendet werden. 
 
 Dieser *Glue*-Eintrag wird hinzugefügt, damit **dns1.domain.tld** den derzeit verwendeten DNS-Servernamen **dnsX1.ovh.net** durch den Domainnamen *domain.tld* ersetzen kann.
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}, überprüfen Sie die angezeigten Informationen und klicken Sie dann auf `Bestätigen`{.action}. Wiederholen Sie diesen Vorgang so oft wie nötig, abhängig von der Anzahl der von Ihrem Domainnamen verwendeten DNS-Server.
 
-In unserem Beispiel müssen Sie den Vorgang wiederholen, um die *Glue*-Einträge zu erstellen **dns2.domain.tld**. Dieser ersetzt später den DNS-Server **dnsX2.ovh.net**, der derzeit IPv4 *111.222.333.444* und IPv6 *0000:00d0:1:0000::2* zugewiesen ist.
+In unserem Beispiel müssen Sie den Vorgang wiederholen, um die *Glue*-Einträge zu erstellen **dns2.domain.tld**. Dieser ersetzt später den DNS-Server **dnsX2.ovh.net**, der derzeit IPv4 *203.0.113.1* und IPv6 *2001:db8:1:1b00:203:0:113:1* zugewiesen ist.
 
 ### Schritt 3: DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen
 
@@ -106,7 +106,7 @@ Gehen Sie hierzu in das Interface des Anbieters, der die DNS-Konfiguration Ihres
 - **Ihr Domainname verwendet keine aktive DNS-Zone bei OVHcloud**: Wenden Sie sich an den Anbieter, der die DNS-Zone verwaltet. Gehen Sie anschließend zum nächsten Schritt über.
 - **Ihr Domainname verwendet eine aktive DNS-Zone bei OVHcloud**: Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, mit dem Sie die *Glue*-Einträge im [Schritt 2](#step2) erstellt haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie dann auf `Eintrag hinzufügen`{.action}. Wählen Sie den Eintragstyp *A* oder *AAAA* aus, je nachdem, welchen IP-Typ Sie hinzufügen möchten. Folgen Sie den Anweisungen, indem Sie die *Subdomain* und die *IPv4* (A) oder *IPv6* (AAAA) eingeben und bis zur Bestätigung fortfahren. Falls erforderlich, folgen Sie den Anweisungen in unserer Dokumentation "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)".
 
-![glueregistry](images/glue-dns-zone-add.png){.thumbnail}
+![glueregistry](images/add-an-entry.png){.thumbnail}
 
 > [!primary]
 >
@@ -117,10 +117,10 @@ In unserem vorherigen Beispiel sind die *Glue*-Einträge, die Sie hinzufügen m�
 
 Folgende Einträge werden also zur aktiven DNS-Zone des Domainnamens *domain.tld* hinzugefügt:
 
- - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns1.domain.tld** zur IP *111.222.333.443* (IPv4 des DNS-Servers **dnsX1.ovh.net**)
- - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns1.domain.tld** zur IP *0000:00d0:1:0000::1* (IPv6 des DNS-Servers **dnsX1.ovh.net**)
- - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns2.domain.tld** zur IP *111.222.333.444* (IPv4 des DNS-Servers **dnsX2.ovh.net**)
- - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns2.domain.tld** zur IP *0000:00d0:1:0000::2* (IPv6 des DNS-Servers **dnsX2.ovh.net**)
+ - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns1.domain.tld** zur IP *203.0.113.0* (IPv4 des DNS-Servers **dnsX1.ovh.net**)
+ - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns1.domain.tld** zur IP *2001:db8:1:1b00:203:0:113:0* (IPv6 des DNS-Servers **dnsX1.ovh.net**)
+ - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns2.domain.tld** zur IP *203.0.113.1* (IPv4 des DNS-Servers **dnsX2.ovh.net**)
+ - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns2.domain.tld** zur IP *2001:db8:1:1b00:203:0:113:1* (IPv6 des DNS-Servers **dnsX2.ovh.net**)
 
 ### Schritt 4: DNS-Server Ihres Domainnamens ändern
 
@@ -137,7 +137,7 @@ Beenden Sie die Schritte und folgen Sie bei Bedarf den Anweisungen in unserer [D
 > Wenn Sie DNS-Server für einen Domainnamen angepasst haben, um diese mit einem anderen, nicht bei OVHcloud registrierten Domainnamen zu verwenden, wenden Sie sich an den Anbieter, bei dem Ihr Domainname registriert ist.
 >
 
-![glueregistry](images/glue-dns-servers-modify.png){.thumbnail}
+![glueregistry](images/modify-dns-servers.png){.thumbnail}
 
 > [!primary]
 >
@@ -157,7 +157,7 @@ Gehen Sie hierzu in das Interface des Anbieters, der die Ihre DNS-Konfiguration 
 
 Es erscheint ein Fenster mit Ihrer DNS Zone im Text-Modus:
 
-![glueregistry](images/dns-text-format-edition.png){.thumbnail}
+![glueregistry](images/change-in-text-format-step-1.png){.thumbnail}
 
 > [!warning]
 >

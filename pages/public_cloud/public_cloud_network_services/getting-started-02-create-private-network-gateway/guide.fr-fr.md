@@ -1,12 +1,12 @@
 ---
 title: Créer un réseau privé avec une Gateway
 excerpt: "Découvrez comment créer un réseau Privé avec une Gateway via l'espace client OVHcloud, l'API Openstack ou l'API OVHcloud"
-updated: 2022-11-02
+updated: 2024-03-08
 ---
 
 ## Objectif
 
-Une Gateway offre une méthode de connexion sortante sécurisée depuis vos instances en réseau privé, ou bien encore la possibilité d’utiliser des adresses Floating IP avec votre instance ou votre Load Balancer pour l’exposition de services.
+Une [Gateway](https://www.ovhcloud.com/fr/public-cloud/gateway/) offre une méthode de connexion sortante sécurisée depuis vos instances en réseau privé, ou bien encore la possibilité d’utiliser des adresses Floating IP avec votre instance ou votre Load Balancer pour l’exposition de services.
 
 Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), l’[API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ou l’[API OVHcloud](https://eu.api.ovh.com/).
 
@@ -99,23 +99,41 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Définir les variables d'environnement OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
- 
+
 > [!tabs]
 > **Étape 1**
->> Une fois votre environnement prêt, saisissez ce qui suit dans la ligne de commande :
+>> Une fois votre environnement prêt, saisissez ce qui suit dans la ligne de commande pour créer un réseau et un sous-réseau :
 >>
->> ```bash
+>> ```console
 >> openstack network create my_network
 >>
->> openstack subnet create my_subnet —subnet-range <my_private_ip_range/mask> —network my_network —no-dhcp
+>> openstack subnet create my_subnet --subnet-range <my_private_ip_range/mask> --network my_network --no-dhcp
+>>```
+>**Étape 2**
+>> Listez les différents niveaux de qualité de service :
 >>
->> openstack router create my_router
+>> ```console
+>> openstack network qos policy list
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | ID                                   | Name          | Shared | Default | Project                          |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> | a5524eb5-944e-4106-b209-9478bbdcedab | large_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | c210f5b2-db59-4973-a25f-9131195b6bcf | medium_router | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> | ec0ee74d-a1f3-43f6-87aa-b0e69ef8ce45 | small_router  | True   | False   | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+>> +--------------------------------------+---------------+--------+---------+----------------------------------+
+>> ```
+>>
+> **Étape 3**
+>>
+>>```console
+>> openstack router create my_router 
 >>
 >> openstack router add subnet my_router my_subnet
 >>
->> openstack router set —external-gateway Ext-Net my_router
+>> openstack router set --external-gateway Ext-Net --qos-policy QOS_ID_OF_YOUR_CHOICE my_router
 >> ```
->> 
+>>
+>> Si vous ne renseignez pas le paramètre `--qos-policy` , la qualité de service « small » sera appliquée.
 
 ### Via l'API OVHcloud
 
@@ -141,7 +159,7 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 >> > Cet appel identifie le projet via le champ "description".
 >> >
 >>
-> **Étape 2**<br>
+> **Étape 2**
 >> **Créez votre réseau privé avec une Public Gateway** 
 >> 
 >> > [!api]
@@ -187,6 +205,8 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 >>
 
 ## Aller plus loin
+
+Pour en savoir plus sur Gateway et ses cas d'usage, consultez notre [page dédiée](https://www.ovhcloud.com/fr/public-cloud/gateway/).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

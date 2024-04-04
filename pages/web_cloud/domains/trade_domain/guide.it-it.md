@@ -1,7 +1,7 @@
 ---
 title: "Cambiare il proprietario di un dominio"
 excerpt: "In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio"
-updated: 2023-12-04
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account_and
 >
 > - il sito web del registro **TLD** corrispondente;
 > - la [lista dei TLD disponibili su OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
-> - sezione `Operazioni in corso`{.action} dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per verificare gli aggiornamenti dello stato del dominio.
+> - gli aggiornamenti di stato del dominio. Per verificarlo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e poi su `Operazioni in corso`{.action}.
 >
 
 ### Step 1: seleziona il dominio
@@ -56,7 +56,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nella scheda `Informazioni generali`{.action}, clicca sul pulsante **Abbonamento** nell'angolo in basso a destra. Clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Modifica proprietario`{.action}.
 
-![modifica del proprietario](images/3652-2.png){.thumbnail}
+![modifica del proprietario](images/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -67,9 +67,9 @@ Nella scheda `Informazioni generali`{.action}, clicca sul pulsante **Abbonamento
 
 Si apre una nuova scheda del tuo browser con tutti i domini che possono essere utilizzati per la modifica del proprietario. Seleziona un dominio dalla lista selezionando la casella a sinistra. Questo step può essere utilizzato anche per avviare un'operazione in blocco: è possibile avviare la modifica del proprietario di diversi domini per volta, ad esempio per cambiare il proprietario di tutti i domini.*ovh*. Una volta effettuate le tue scelte, clicca su `Continua`{.action}.
 
-![modifica del proprietario](images/3657.PNG){.thumbnail}
+![modifica del proprietario](images/available-domains.png){.thumbnail}
 
-Nel form dei dettagli del proprietario, inserisci le informazioni valide in tutti i campi obbligatori. Prestare particolare attenzione agli errori di inserimento e utilizzare [caratteri non ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) per quanto possibile. Si ricorda che qualsiasi informazione inesatta o falsa può provocare un errore tecnico e quindi un ritardo dell'intero processo di scambio.
+Nel form dei dettagli del proprietario, inserisci le informazioni valide in tutti i campi obbligatori. Prestare particolare attenzione agli errori di inserimento e utilizzare [caratteri ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) per quanto possibile. Si ricorda che qualsiasi informazione inesatta o falsa può provocare un errore tecnico e quindi un ritardo dell'intero processo di scambio.
 
 Una volta confermata la tua richiesta, riceverai due email per confermare o annullare la tua richiesta:
 
@@ -79,18 +79,15 @@ Una volta confermata la tua richiesta, riceverai due email per confermare o annu
 Se l'indirizzo email non viene modificato in seguito alla modifica del proprietario, l'indirizzo email di riferimento riceverà le due email, ciascuna delle quali deve essere confermata.
 <br>Una volta che entrambi i destinatari avranno confermato la richiesta tramite email, la modifica del proprietario del dominio diventerà effettiva.
 
-> [!primary]
->
-> La procedura deve essere convalidata da entrambe le parti entro 14 giorni dalla richiesta.
->
-> Se la modifica è rifiutata da una delle parti, la domanda è annullata.
->
-> Se l'indirizzo e-mail del proprietario attuale è obsoleto o inaccessibile, è possibile, **in questo caso specifico**, contattare direttamente l'assistenza creando un ticket di assistenza dal proprio [centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
->
-
 > [!warning]
 >
-> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain) per un periodo di 60 giorni.
+> - La procedura deve essere convalidata da entrambe le parti entro 14 giorni dalla richiesta. **Trascorsi tali termini la procedura viene annullata**.
+>
+> - Se la modifica è rifiutata da una delle parti, la domanda è annullata.
+>
+> - Se l'indirizzo e-mail del proprietario attuale è obsoleto o inaccessibile, è possibile, **in questo caso specifico**, contattare direttamente l'assistenza creando un ticket di assistenza dal proprio [centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain) per un periodo di 60 giorni.
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 
@@ -98,7 +95,7 @@ Se è necessario aggiornare alcune informazioni secondarie come il numero di tel
 
 Nella sezione **Abbonamento** della scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Aggiorna le informazioni del proprietario `{.action}.
 
-![modifica del proprietario](images/3658.png){.thumbnail}
+![modifica del proprietario](images/refresh-owner-information.png){.thumbnail}
 
 Per questa operazione non è necessario confermare le modifiche tramite email.
 

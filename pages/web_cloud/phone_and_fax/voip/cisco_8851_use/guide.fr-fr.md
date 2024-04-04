@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser le Cisco 8851'
 excerpt: 'Découvrez comment utiliser votre téléphone Cisco 8851'
-hidden: true
+flag: hidden
 updated: 2018-06-28
 ---
 

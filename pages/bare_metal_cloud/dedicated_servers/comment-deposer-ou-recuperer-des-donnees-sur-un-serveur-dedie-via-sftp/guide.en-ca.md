@@ -1,7 +1,7 @@
 ---
 title: 'Retrieving and uploading data on a dedicated server via SFTP'
 excerpt: 'Find out how to easily transfer data to and from your dedicated server'
-updated: 2021-05-18
+updated: 2024-02-23
 ---
 
 ## Objective
@@ -11,9 +11,9 @@ As part of a migration process, you may find that you need to retrieve data stor
 **This tutorial will show you how to move and retrieve data on a dedicated server via SFTP.**
 
 > [!warning]
->This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
+> This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> We recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
@@ -33,6 +33,10 @@ By default, a server using a GNU/Linux-based operating system will have SSH acce
 #### **If you have access to your server**
 
 In the FileZilla GUI, enter your server's IP address into the `Host` field and your username and password into their respective fields. As for the `Port` field, enter "22" or whichever port your SSH service is listening on if you have modified it.
+
+> [!warning]
+> Note that access to the folder of the `root` user via SFTP is only possible by using the credentials of this user account. If you are certain that you need to access this folder remotely, you can find further information on how to enable this connection in our [user account guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
 
 As soon as the connection is established, you will see a tree-view of your files in the `Remote Site` section.
 

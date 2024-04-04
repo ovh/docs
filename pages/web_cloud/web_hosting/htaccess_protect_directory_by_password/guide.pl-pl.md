@@ -1,11 +1,11 @@
 ---
 title: "Tutorial - Chroń katalog lub interfejs administracyjny Twojej strony internetowej za pomocą plików .htaccess i .htpasswd"
 excerpt: "Dowiedz się, jak zabezpieczyć katalog lub dostęp do administrowania stroną WWW za pomocą uwierzytelnienia za pomocą plików .htaccess i .htpasswd"
-updated: 2023-06-01
+updated: 2024-01-29
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -61,10 +61,7 @@ Opiszemy 4 główne etapy, które należy wykonać, aby chronić dostęp do kata
 > Kolejne etapy optymalizują bezpieczeństwo przechowywanych danych.
 > W związku z tym oraz w przypadku kompatybilności stron WWW z Twoimi usługami rekomendujemy użycie najnowszej wersji PHP.
 > 
-> Aby zmienić wersję PHP swoich stron www na Twoim hostingu, zapoznaj się z następującymi przewodnikami:
-> 
-> - [Zmień konfigurację hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [Zmień wersję PHP hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+> Aby zmienić wersję PHP swoich stron www na Twoim hostingu, zapoznaj się z naszym przewodnikiem "[Hosting WWW : środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 >
 > Skrypty i informacje opisane poniżej w tym tutorialu działają jedynie w środowisku wykonawczym oraz w najnowszej wersji PHP.
 > 
@@ -77,11 +74,11 @@ Zaloguj się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 Utwórz plik "crypt.php" w tym katalogu głównym.
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root_folder](images/root-folder.png){.thumbnail}
 
 Otwórz lub utwórz folder przeznaczony do ochrony Twojej strony WWW. W poniższym przykładzie będzie to folder "admin". Utwórz w tym katalogu plik ".htpasswd" oraz plik ".htaccess".
 
-![folder_admin](images/folder_admin.png){.thumbnail}
+![admin-folder](images/admin-folder.png){.thumbnail}
 
 Aby poprawnie korzystać z plików ".htaccess" i ".htpasswd", musisz znać i przestrzegać następujących zasad: 
 

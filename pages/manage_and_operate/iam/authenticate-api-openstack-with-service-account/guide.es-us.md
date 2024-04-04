@@ -113,7 +113,7 @@ export OS_REGION_NAME=GRA1
 - **OS_PROJECT_ID**: your Public Cloud project ID.
 - **OS_CLIENT_ID**: your service account ID.
 - **OS_CLIENT_SECRET**: your service account secret.
-- **OS_REGION_NAME**: ehe region affected by your script.
+- **OS_REGION_NAME**: the region affected by your script.
 
 You can now use your command line to observe your virtual machines.
 

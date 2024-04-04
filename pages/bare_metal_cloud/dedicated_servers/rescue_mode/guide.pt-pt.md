@@ -1,7 +1,7 @@
 ---
-title: 'Ativar e utilizar o modo rescue'
-excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
-updated: 2023-09-05
+title: "Ativar e utilizar o modo rescue"
+excerpt: "Descubra como utilizar o modo rescue OVHcloud para solucionar problemas com o seu servidor dedicado"
+updated: 2024-01-09
 ---
 
 > [!primary]
@@ -10,20 +10,25 @@ updated: 2023-09-05
 
 ## Objetivo
 
-O modo rescue é uma ferramenta do seu servidor dedicado. Permite-lhe iniciar num sistema operativo temporário, com o objetivo de diagnosticar e resolver problemas.
+O Modo Rescue é uma ferramenta fornecida pela OVHcloud que lhe permite iniciar num sistema operativo temporário com o objetivo de diagnosticar e resolver problemas no seu servidor.
 
-O modo de segurança é geralmente adaptado às seguintes tarefas:
+O modo rescue é geralmente adaptado às seguintes tarefas:
 
-- Renovação da password root
+- [Reinicialização da palavra-passe do utilizador](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnóstico dos problemas de rede
 - Reparação de um sistema operativo defeituoso
 - Correção de uma configuração incorreta de uma firewall de software
 - Teste das performances dos discos
 - Teste do processador e da memória RAM
 
-O backup dos seus dados deve ser a primeira etapa do modo de recuperação se ainda não dispõe de backups recentes.
+> [!warning]
+>
+> Certifique-se de que efetua um backup dos seus dados se ainda não dispõe de backups recentes.
+>
+> Se tiver serviços em produção no seu servidor, o modo rescue interrompe-os-á enquanto a máquina não for reiniciada em modo normal.
+> 
 
-**Saiba como ativar e utilizar o modo rescue do seu servidor.**
+**Este manual explica como reiniciar um servidor em modo rescue e montar partições.**
 
 ## Requisitos
 
@@ -82,15 +87,15 @@ root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
-> 
-> É provável que o seu cliente SSH bloqueie a ligação em primeiro lugar, devido a uma incompatibilidade da marca ECDSA. Isto é normal, pois o modo rescue utiliza o seu próprio servidor SSH temporário.
 >
-> Para contornar este problema, pode comentar a pegada do seu sistema habitual adicionando um `#` à frente da sua linha no ficheiro *known_hosts*. Tenha o cuidado de retirar este caráter antes que o servidor volte ao estado normal.
+> O seu cliente SSH poderá bloquear a ligação inicialmente devido a uma incompatibilidade da impressão digital ECDSA. Isto é normal porque o modo rescue utiliza o seu próprio servidor SSH temporário.
+>
+> Uma forma de contornar este problema é "comentar" impressão digital do seu servidor adicionando um `#` na frente da linha no ficheiro `known_hosts`. Não se esqueça de cancelar esta alteração antes de passar o netboot de volta ao modo "normal".<br>Pode também eliminar a linha do ficheiro. O cliente SSH adicionará uma nova entrada digital ao servidor quando a ligação for estabelecida. Se precisar de mais instruções, consulte o guia [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction#login).
 >
 
 #### Montagem das suas partições
 
-A maior parte das modificações efetuadas no seu servidor através de SSH em modo rescue requerem a montagem de uma partição. De facto, este modo possui o seu próprio sistema de ficheiros temporários. Por isso, as modificações realizadas no sistema de ficheiros em modo rescue serão perdidas ao reiniciar o servido em modo normal.
+A menos que configure os discos do servidor de uma forma que exija que sejam desligados (*unmounted*), deve montar primeiro a partição do sistema.
 
 Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
 

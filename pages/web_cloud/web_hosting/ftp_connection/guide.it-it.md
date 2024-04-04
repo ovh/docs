@@ -45,7 +45,7 @@ Se non disponi di questi elementi, accedi alla sezione `Web Cloud`{.action} del 
 
 Visualizzi una tabella con tutti gli utenti FTP e SSH creati sul tuo hosting Web, con tutte le informazioni relative al tuo spazio di storage.
 
-![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
+![ftpconnect](images/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +75,7 @@ Di seguito trovi una descrizione delle informazioni essenziali visualizzate sull
 
 Se non conosci più la password di un utente FTP o SSH, consulta la nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
+![ftpconnect](images/change-password.png){.thumbnail}
 
 A questo punto, disporrai di tutti gli elementi che ti permetteranno di accedere al tuo spazio di archiviazione FTP.
 
@@ -96,11 +96,11 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca su `Hosting`{.action} nella colonna di sinistra. Clicca sulla scheda `FTP - SSH`{.action} e poi su `FTP Explorer`{.action}.
 
-![ftpconnect](images/connect-ftp-step3.png){.thumbnail}
+![ftpconnect](images/ftp-explorer.png){.thumbnail}
 
 Nella nuova pagina, inserisci l'identificativo FTP e la password associata. Se le informazioni sono corrette, visualizzi il tuo spazio di storage.
 
-![ftpconnect](images/connect-ftp-step4.png){.thumbnail}
+![ftpconnect](images/login-interface.png){.thumbnail}
 
 #### 2. Client FTP <a name="ftpsoftware"></a>
 
@@ -156,7 +156,7 @@ Se le informazioni sono corrette, verrà effettuato l'accesso allo spazio di sto
 
 Se necessario, consulta la guida "[Utilizzare una connessione SSH su un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting)".
 
-![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
+![ftpconnect](images/terminal-ssh-connected.png){.thumbnail}
 
 ## Per saperne di più
 

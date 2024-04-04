@@ -30,7 +30,7 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 
 ### "Este servidor não suporta FTP em TLS" (FileZilla)
 
-![filezilla_error](images/filezilla_error.png){.thumbnail}
+![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 Esta mensagem no software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que não ativou a opção SFTP ou SSH a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Assim, as informações trocadas entre o seu servidor de alojamento OVHcloud e o seu computador não serão encriptadas.
 
@@ -67,7 +67,7 @@ Para verificar o espaço de armazenamento restante no alojamento, aceda à [Áre
 
 A quantidade de dados registada no seu servidor de alojamento (exceto bases de dados) aparece na secção `Informações gerais`{.action} > `Espaço de disco`.
 
-![disk_space](images/disk_space.png){.thumbnail}
+![disk_space](images/find-disk-space.png){.thumbnail}
 
 ### Não consigo transferir os meus ficheiros para o servidor FTP.
 
@@ -83,7 +83,7 @@ Se dispõe de uma fórmula [Pro](https://www.ovhcloud.com/pt/web-hosting/profess
 
 Esta ligação é instalada de forma padrão nos alojamentos partilhados da OVHcloud. Ele dá a seguinte apresentação:
 
-![site_under_construction](images/site_under_construction.png){.thumbnail}
+![site-under-construction](images/site-under-construction.png){.thumbnail}
 
 Se não utilizou a funcionalidade "[Módulo 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar o seu site, deverá utilizar o software [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-ligacao-atraves-de-ftp-explorer) acessível através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para eliminar manualmente a página "Site em construção".
 

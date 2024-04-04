@@ -1,7 +1,7 @@
 ---
-title: 'Como utilizar o IPMI com servidores dedicados'
-excerpt: 'O IPMI permite aceder diretamente ao seu servidor, sem necessidade de usar outro software'
-updated: 2022-11-16
+title: "Como utilizar a consola IPMI com um servidor dedicado"
+excerpt: "Saiba como aceder ao servidor a partir da Área de Cliente sem usar outro software"
+updated: 2024-03-01
 ---
 
 > [!primary]
@@ -22,6 +22,8 @@ Atenção: por vezes, poderá encontrar o termo KVM (Keyboard Video and Mouse), 
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
 >
 > Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+
+<a name="procedure"></a>
 
 ## Instruções
 
@@ -189,6 +191,28 @@ No menu boot, selecione o leitor óptico (`UEFI: AMI Virtual CDROM0` neste exemp
 O ficheiro ISO vai agora ser telecarregado e o servidor vai começar a partir do ficheiro.
 
 ![Instalação do KVM](images/kvm_install07.png){.thumbnail}
+
+<a name="bios"></a>
+
+### Reiniciar um servidor no menu BIOS
+
+Você pode entrar no BIOS enquanto estiver configurando ou solucionando problemas com seu servidor. Uma forma prática de o fazer é utilizar a ferramenta `ipmiutil` (ver [página do projeto](https://ipmiutil.sourceforge.net/) para mais informações).
+
+Quando o servidor estiver em [modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) e quando estiver ligado, instale-o com o seguinte comando:
+
+```bash
+apt install ipmiutil
+```
+
+De seguida, reinicie o servidor com este comando:
+
+```bash
+ipmiutil reset -b
+```
+
+Aceda à [consola IPMI](#procedure) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). O menu BIOS do servidor deve ser exibido.
+
+![KVM BIOS](images/kvm_bios.png){.thumbnail}
 
 ## Quer saber mais?
 

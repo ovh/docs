@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2023-12-04
+updated: 2023-12-15
 ---
 
 ## Objective
@@ -12,9 +12,9 @@ A database is used to store dynamic elements (connection data, user data, displa
 
 ## Requirements
 
-- A [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes at least one database.
-- An available database of those included in your web hosting plan
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the [necessary permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage your web hosting plan
+- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes at least one database.
+- You have a database available for creation from the databases included in your web hosting plan. If required, you can add [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) databases to your web hosting plan.
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the [necessary permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage your web hosting plan.
 
 ## Instructions
 
@@ -24,7 +24,19 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 The table in this section contains all of the databases created with your web hosting plan.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/tab.png){.thumbnail}
+
+Databases in the table can have several different types:
+
+- **Included**: Indicates that the database is included in your web hosting plan. There is no additional cost.</br></br>
+- **Optional**: Indicates that the database has been subscribed to in addition to the databases included with your web hosting plan. You pay an additional fee to have this additional database on your web hosting plan.</br></br>
+- **Included - Discontinued**: Indicates that the included database will soon be discontinued and become obsolete. </br>We recommend that you retrieve its contents and place it in a newer database (which has not yet been scheduled for end of sales) **before** the database becomes obsolete.</br></br>
+- **Optional - Discontinued**: Indicates that the database you have subscribed to as an add-on to your web hosting plan will soon be removed from sale and become obsolete. </br>We recommend that you retrieve its contents and place it in a newer database (which is not scheduled to end) **before** the database becomes obsolete.
+
+> [!success]
+>
+> To quickly duplicate the content of a "**Included - Discontinued**" or "**Optional - Discontinued**" database in a new database that has not yet been scheduled for obsolescence, please read our guide on "[Duplicating the content of an OVHcloud database in another](/pages/web_cloud/web_hosting/copy_database)".
+>
 
 ### Step 2 - Create the database
 
@@ -36,7 +48,7 @@ There are two ways to create a new database:
 
 In the window that opens, select the following information:
 
-![database-creation-step1](images/database-creation-1.png){.thumbnail}
+![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
 
 |Information|Description|  
 |---|---|
@@ -48,7 +60,7 @@ Click on `Next`{.action}.
 
 A new window will appear:
 
-![database-creation-step2](images/database-creation-2.png){.thumbnail}
+![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
@@ -76,7 +88,7 @@ A new window will appear:
 
 Fill in the required information and click `Next`{.action}.
 
-![database-creation-step3](images/database-creation-3.png){.thumbnail}
+![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
 
 Verify that all information displayed in the summary is correct. If this is the case, click `Confirm`{.action} to launch the creation of your database.
 

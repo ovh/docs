@@ -28,7 +28,7 @@ First of all, you must have an S3-user with the correct rights to manage S3 buck
 
 To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
 
-Here, you can create your S3 user by clicking on `Create User`{.action}. If you already have OpenStack users, you can use them to use S3 buckets, instead of creating a new one.
+Here, you can create your S3 user by clicking on `Create User`{.action}. If you already have AI Platform users, you can use them to use S3 buckets, instead of creating a new one.
 
 > [!warning]
 >

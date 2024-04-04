@@ -5,7 +5,7 @@ updated: 2023-03-06
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 <style>
@@ -128,7 +128,7 @@ Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@conf
 
 ### Korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web Application** (OWA). Znajdziesz go pod linkiem <https://www.ovhcloud.com/pl/mail/>. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web App** (OWA). Znajdziesz go pod linkiem <https://www.ovhcloud.com/pl/mail/>. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
 

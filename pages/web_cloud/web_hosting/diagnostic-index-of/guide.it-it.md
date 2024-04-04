@@ -15,7 +15,7 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 - La configurazione [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo dominio non è correttamente configurata verso la tua directory di destinazione
 - La cartella di destinazione verso cui il tuo dominio punta non contiene file **"index.html"** o **"index.php"**
 
-![index_of](images/index_of.png){.thumbnail}
+![index_of](images/index-of.png){.thumbnail}
 
 **Questa guida ti mostra come correggere la visualizzazione di una pagina "Index of"**.
 
@@ -23,7 +23,7 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 
 >
 
@@ -53,11 +53,11 @@ Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del t
 
 Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo hosting tramite [FTP](/pages/web_cloud/web_hosting/ftp_connection). Il tuo dominio non è associato a questa cartella nella colonna `Cartella di root` del tuo `Multisito`{.action}.
 
-![index_of_multisite](images/index_of_multisite.png){.thumbnail}
+![index_of_multisite](images/root-folders-empty.png){.thumbnail}
 
 Modifica la `Cartella di root` cliccando sul pulsante `...`{.action} a destra della tabella e poi su `Modifica il dominio`{.action}:
 
-![modify_domain](images/modify_domain.png){.thumbnail}
+![modify_domain](images/modify-domain.png){.thumbnail}
 
 Nella finestra che appare:
 
@@ -65,7 +65,7 @@ Nella finestra che appare:
 * Indica la directory contenente il file **index.php** o **index.html** del tuo sito come `Cartella di root` (2);
 * Clicca su `Continua` (3).
 
-![change_root_folder](images/change_root_folder01.png){.thumbnail}
+![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -74,17 +74,17 @@ Nella finestra che appare:
 
 Nella nuova finestra, clicca su `Conferma`{.action}.
 
-![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
+![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
 
 In pochi minuti (rinfrescando il browser) otterrai questo risultato:
 
-![multisite_modified](images/multisite_modified.png){.thumbnail}
+![multisite_modified](images/root-folders-full-www.png){.thumbnail}
 
 e verifica che il tuo sito venga visualizzato correttamente. In caso contrario, riavvia il tuo dispositivo e svuota la cache del tuo browser se necessario.
 
 Assicurati inoltre che nella tua directory di destinazione sia presente un file **index.php** o **index.html**.
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 

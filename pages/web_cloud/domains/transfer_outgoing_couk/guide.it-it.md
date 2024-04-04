@@ -65,11 +65,11 @@ Nella scheda `Informazioni generali`{.action} è possibile verificare il rispett
 
 Clicca sul link `Tag per il trasferimento in uscita`{.action} nella sezione intitolata **Sicurezza**.
 
-![trasferimento in uscita](images/img_4267.jpg){.thumbnail}
+![trasferimento in uscita](images/outgoing-transfer-tag.jpg){.thumbnail}
 
 Nella nuova finestra, inserisci il TAG del tuo nuovo Registrar e poi clicca su `Conferma`{.action}.
 
-![trasferimento in uscita](images/img_4268.jpg){.thumbnail}
+![trasferimento in uscita](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Se non riesci a modificare il TAG del tuo dominio dallo Spazio Cliente OVHcloud, puoi richiederne la modifica al Registry Nominet. Per maggiori informazioni, consulta il [sito ufficiale Nominet](https://www.nominet.uk/domain-support/).
 
@@ -83,4 +83,6 @@ Contatta il tuo nuovo provider per maggiori informazioni e per qualsiasi domanda
 
 [Trasferire un dominio verso un altro Registrar](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

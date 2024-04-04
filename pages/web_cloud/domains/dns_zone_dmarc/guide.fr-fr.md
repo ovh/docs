@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DMARC sur votre nom de domaine
 excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail
-updated: 2023-10-25
+updated: 2023-12-13
 ---
 
 ## Objectif
@@ -13,10 +13,8 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 > [!warning]
 >
 > OVHcloud propose des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
-> De plus, la mise en place d'un enregistrement **DMARC**, quelle que soit l'[offre e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), est indisponible actuellement. Ce guide concerne **uniquement** les clients qui possèdent une zone DNS active chez OVHcloud pour leur nom de domaine associé à une **solution e-mail externe**.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 ## Prérequis
@@ -26,6 +24,11 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 
 ## En pratique
 
+Le DMARC permet au propriétaire d’un nom de domaine de gérer la sécurité des e-mails émis avec son nom de domaine. Il a pour objectif :
+
+- De déclarer, au serveur destinataire, les actions à mener en cas d’échec des mécanismes d'authentification SPF et/ou DKIM.
+- De mieux maitriser l’usage de son nom de domaine et détecter les tentatives d’usurpation à l'aide des rapports envoyés en cas d’échec d’authentification des e-mails. Par ailleurs, il améliore également la sécurité en créant le lien entre les protocoles SPF et DKIM.
+
 L' enregistrement DMARC contient des informations sur la politique à appliquer pour les e-mails malveillants qui tentent d'usurper votre nom de domaine.<br>
 DMARC interroge les mécanismes d'authentification [SPF](/pages/web_cloud/domains/dns_zone_spf) et [DKIM](/pages/web_cloud/domains/dns_zone_dkim) pour vérifier les e-mails entrants.<br>
 Le résultat de ces vérifications SPF et/ou DKIM est traduit par DMARC en « mesures à prendre » lorsqu'un e-mail échoue aux contrôles. Ces mesures peuvent être la mise en quarantaine ou le rejet des e-mails concernés.
@@ -34,7 +37,7 @@ Le résultat de ces vérifications SPF et/ou DKIM est traduit par DMARC en « me
 
 Pour bien comprendre comment fonctionne le DMARC, voici un exemple.
 
-Lorsque l'adresse **contact@mydomain.ovh** envoie un e-mail vers l'adresse de destination **recipient@otherdomain.ovh**, le serveur de réception du nom de domaine destinataire « **otherdomain.ovh** » va interroger la zone DNS du nom de domaine émetteur **mydomain.ovh** pour lire les instructions de l'enregistrement DMARC.
+Lorsque l'adresse **contact@mydomain.ovh** envoie un e-mail vers l'adresse de destination **recipient@otherdomain.ovh**, le serveur de réception va interroger la zone DNS du nom de domaine émetteur **mydomain.ovh** pour lire les instructions de l'enregistrement DMARC.
 
 L'enregistrement DMARC communique la politique à adopter en fonction du résultat des tests SPF et DKIM. Il peut également renseigner une ou des adresses e-mail (représentées dans notre exemple par l'adresse **report@mydomain.ovh**) servant à recevoir les rapports d'échecs d'e-mails envoyés depuis le nom de domaine **mydomain.ovh**.
 
@@ -42,13 +45,11 @@ Après lecture des instructions de l'enregistrement DMARC du nom de domaine **my
 
 ![dmarc](images/dns-dmarc-diagram.png){.thumbnail}
 
-### Configurer le DMARC 
-
-Vous devez d'abord activer le DMARC sur le service e-mail associé à votre nom de domaine.
+### Configurer le DMARC
 
 Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
-- Par le biais d'un [enregistrement DMARC](#dmarc-record). Cet enregistrement permet une configuration simplifiée du DMARC. Vous n'aurez qu'à compléter les champs avec les paramètres DMARC nécessaires à votre configuration. Cet enregistrement est lu comme un enregistrement TXT par les serveurs DNS.
+- Par [l'outil de configuration DMARC](#dmarc-record). Cet enregistrement permet une configuration simplifiée du DMARC. Vous n'aurez qu'à compléter les champs avec les paramètres DMARC nécessaires à votre configuration. Cet enregistrement est lu comme un enregistrement TXT par les serveurs DNS.
 - Par le biais d'un [enregistrement TXT](#txt-record). Cet enregistrement standard peut être utilisé dans le cadre de la configuration du DMARC depuis l'espace client OVHcloud. Il vous permettra d'intégrer l'ensemble des balises de paramétrage DMARC, y compris celles absentes via l'enregistrement DMARC OVHcloud. Il nécessite toutefois de bien respecter les règles de syntaxe du protocole DMARC.
 
 #### Enregistrement DMARC <a name="dmarc-record"></a>
@@ -57,14 +58,20 @@ Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace cli
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs mails » `DMARC`{.action}.
 
+- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine, n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, ajoutez votre sous-domaine après `_dmarc`. Par exemple, si on doit appliquer le DMARC à un sous-domaine *subdomain.mydomain.ovh*,  il faut saisir `_dmarc.subdomain` dans la case « sous-domaine » pour le nom de domaine *mydomain.ovh*.
+
 Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **l'enregistrement DMARC** OVHcloud :
 
 - **Version (v=)** : champ obligatoire déterminant la version du protocole DMARC.
 
 - **Règle pour le domaine (p=)** : politique à adopter par le destinataire à la demande du propriétaire du domaine expéditeur. La politique s'applique au domaine interrogé et aux sous-domaines, sauf si la balise de sous-domaine **sp=** indique des instructions différentes. Les valeurs possibles sont les suivantes :
-    - *aucune* : le propriétaire du domaine ne demande aucune action spécifique concernant la livraison des messages.
-    - *quarantaine* : en cas d'échec de la vérification du mécanisme DMARC, les e-mails doivent être considérés comme suspects par les destinataires. Selon les capacités du serveur destinataire, cela peut signifier « placer dans le dossier spam » et/ou « signaler comme suspect ».
+    - *none* : le propriétaire du domaine ne demande aucune action spécifique concernant la livraison des messages.
+    - *quarantine* : en cas d'échec de la vérification du mécanisme DMARC, les e-mails doivent être considérés comme suspects par les destinataires. Selon les capacités du serveur destinataire, cela peut signifier « placer dans le dossier spam » et/ou « signaler comme suspect ».
     - *reject* : rejet des e-mails qui échouent à la vérification du mécanisme DMARC.
+
+> [!warning]
+>
+> La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des e-mails de votre nom de domaine. Il est conseillé de configurer `p=none` et d'effectuer une analyse des rapports d’échec pendant plusieurs semaines , afin de régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maîtrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté ci-dessous, permet une transition progressive.
 
 - **Pourcentage des messages filtrés (pct=)** (valeur comprise entre 0 et 100, la valeur par défaut est 100) : pourcentage du flux de messages auquel la politique DMARC doit être appliquée. Le but de la balise « pct » est de permettre aux propriétaires de domaines d'adopter une mise en œuvre lente du mécanisme DMARC.
 
@@ -73,14 +80,14 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 - **Règle pour les sous-domaines (sp=)** : politique à adopter par le destinataire pour tous les sous-domaines. Elle s'applique uniquement aux sous-domaines du domaine interrogé et non au domaine lui-même. Sa syntaxe est identique à celle de la balise « p » définie ci-dessus. Si cette balise est absente, la politique spécifiée par la balise « p » est appliquée pour les sous-domaines.
 
 - **Mode d'alignement pour SPF (aspf=)** (la valeur par défaut est `r`) : indique le mode d'allignement SPF. Les valeurs sont les suivantes :
-    - `r`(relaxed) pour le mode souple : les e-mails échouant à l'authentification SPF sont marqués comme « indésirables » par le serveur destinataire.
-    - `s`(strict) pour le mode strict : les e-mails échouant à l'authentification SPF sont rejetés par le serveur destinataire.
+    - `r`(relaxed) pour le mode souple : les e-mails peuvent être, par exemple, envoyés depuis un sous-domaine du nom de domaine déclaré. On parle ici d'alignement partiel.
+    - `s`(strict) pour le mode strict : les e-mails doivent être envoyés depuis le nom de domaine déclaré et uniquement celui-ci. Le résultat est donc « aligné ».
 
 > [!primary]
 >
 > Dans le cadre des mécanismes d'authentification SPF et DKIM, l'**alignement** fait référence à la correspondance entre le nom de domaine (et/ou la signature du domaine) utilisé lors de l'envoi **et** le nom de domaine inscrit dans ces mécanismes.
 >
-> **Exemples** 
+> **Exemples**
 >
 > - **Aligné** : lorsque l'adresse *john.smith@mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh* et que les mécanismes d'authentification SPF et DKIM ont été configurés, on obtient un résultat aligné.
 > - **Partiellement aligné** : lorsque l'adresse *john.smith@subdomain.mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh*, mais que les mécanismes d'authentification SPF et DKIM ont été configurés uniquement sur le domaine principal (c'est à dire *mydomain.ovh*), on obtient un résultat partiellement aligné.
@@ -94,7 +101,9 @@ Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace clie
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs étendus » `TXT`{.action}.
 
-Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enregistrement TXT** avec les paramètres DMARC. Cette liste est complémentaire des balises mentionnées dans la section précédente « [Enregistrement DMARC](#dmarc-record) ».
+- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine, n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, ajoutez votre sous-domaine après `_dmarc`. Par exemple, si on doit appliquer le DMARC à un sous-domaine *subdomain.mydomain.ovh*,  il faut saisir `_dmarc.subdomain` dans la case « sous-domaine » pour le nom de domaine *mydomain.ovh*
+
+Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enregistrement TXT** avec les paramètres DMARC. Cette liste est complémentaire avec les balises mentionnées dans la section précédente « [Enregistrement DMARC](#dmarc-record) ».
 
 - **adkim** (la valeur par défaut est `r`) : indique le mode d'alignement DKIM. Les valeurs sont les suivantes :
     - `r`(relaxed) pour le mode souple : les e-mails échouant à l'authentification DKIM sont marqués comme « indésirables » par le serveur destinataire.
@@ -115,6 +124,12 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 ![dmarc](images/dns-dmarc-02.png){.thumbnail}
 
 #### Exemples d'enregistrement <a name="record-example"></a>
+
+> [!warning]
+>
+> Dans nos 2 exemples, le paramètre `p=` est utilisé sous sa forme restrictive pour illustrer le comportement d'un service e-mail dans ce cas de figure.
+>
+> La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des e-mails de votre nom de domaine. Il est conseillé de configurer `p=none` et d'effectuer une analyse des rapports d’échec pendant plusieurs semaines, afin de régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maîtrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté ci-dessous, permet une transition progressive.
 
 ##### Premier exemple
 
@@ -144,7 +159,7 @@ Nous obtenons le résultat suivant :
 
 - **p=quarantine** : les e-mails qui ne passent pas les tests DMARC sont traités comme « suspects ».
 
-- **pct=100** : la politique DMARC s'applique à 100% des messages provenant du flux d'e-mail du propriétaire du domaine.
+- **pct=100** : la politique DMARC s'applique à 50% des messages provenant du flux d'e-mail du propriétaire du domaine.
 
 - **ruf=mailto:report@mydomain.ovh** : adresse e-mail à laquelle les rapports d'échec détaillés doivent être envoyés via l'argument « mailto ».
 

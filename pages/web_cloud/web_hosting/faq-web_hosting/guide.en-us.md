@@ -79,7 +79,7 @@ Then check out the [current events on our infrastructure](https://www.status-ovh
 
 ### What do I do if, after my website has been put online, the OVHcloud "Website under construction" page remains displayed?
 
-![site_en_construction](images/site_en_construction.png){.thumbnail}
+![site-en-construction](images/site-en-construction.png){.thumbnail}
 
 When you install a Web Hosting plan, OVHcloud implements this page as an **index.html** file, contained in your FTP server’s root folder `www`.
 
@@ -102,11 +102,11 @@ There are two scenarios. Either your website was created with this web address o
 
 In the first case, after you have completed all the necessary backups, delete your module in the `Hosting plans` section of the OVHcloud Control Panel:
 
-![delete_a_module](images/delete_a_module.png){.thumbnail}
+![delete-a-module](images/delete-a-module.png){.thumbnail}
 
 Then delete its database from the database tab on the right-hand side of your screen, in the section `Hosting plans`:
 
-![delete_a_database](images/delete_a_database.png){.thumbnail}
+![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
  
 Finally, retry the installation on the domain name you want, using the [1-click module](/pages/web_cloud/web_hosting/cms_manage_1_click_module) feature.
 
@@ -125,9 +125,9 @@ To restore your website’s source code, please refer to our guide on [Restoring
 
 If your website has a database, please refer to our guide on [Restoring a backup of your database](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
-### What do I do if my website redirects to the OVHcloud webmail?
+### What do I do if my website redirects to the OVHcloud webmail-login-interface?
 
-![webmail](images/webmail.png){.thumbnail}
+![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
 
 This anomaly indicates an incorrect configuration in the [DNS servers](/pages/web_cloud/domains/dns_server_general_information) or the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) associated with your domain name.
 
@@ -147,7 +147,7 @@ Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} 
 
 ### What do I do if my website displays a page does not redirect correctly error?
 
-![too_many_redirect](images/too_many_redirect.png){.thumbnail}
+![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -166,7 +166,7 @@ If the restores do not allow you to restore access to your site, contact your we
 
 ### What do I do if my website displays a "503 error Backend fetch failed (Varnish cache)" error?
 
-![503_varnish](images/503_varnish.png){.thumbnail}
+![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
 
 If you have enabled the [CDN option](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) on your Web Hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
 
@@ -174,7 +174,7 @@ If you have not enabled this option or used *Maintenance* mode, please contact y
 
 ### What do I do if my website displays a "Your request has been blocked" error?
 
-![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
+![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
 
 This message indicates that the type of HTTP request you are trying to make on your website is prohibited for a limited time. In this situation, [examine your website’s logs](/pages/web_cloud/web_hosting/logs_and_statistics) to determine which requests caused this block.
 
@@ -182,7 +182,7 @@ To help you correct these anomalies, contact your webmaster or one of our [partn
 
 ### What should I do if my website has a "Your IP has been banned" error?
 
-![your_ip_has_been_blocked](images/your_ip_has_been_blocked.png){.thumbnail}
+![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
 
 This message indicates that the IP address you use to log on to your website is blocked for a limited time. 
 
@@ -192,7 +192,7 @@ You can also contact one of our [partners](https://partner.ovhcloud.com/en/direc
 
 ### I have ordered a domain name with special characters, and it appears written in a strange way in my Control Panel. What should I do?
 
-![notation_idn](images/notation_idn.png){.thumbnail}
+![idn-notation](images/idn-notation.png){.thumbnail}
 
 You have no action to take in this situation. Even if your domain appears in [internationalised notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} in your Control Panel, it will work and display in a completely normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
 
@@ -201,7 +201,7 @@ You have no action to take in this situation. Even if your domain appears in [in
 > Using an email address with an IDN domain in an email client (Outlook, macOS Mail, etc.) is not recommended and may cause incompatibilities.
 >
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [FAQ - MX Plan shared emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

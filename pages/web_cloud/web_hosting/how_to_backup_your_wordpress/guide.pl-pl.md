@@ -5,7 +5,7 @@ updated: 2023-02-22
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -44,7 +44,7 @@ Odzyskanie informacji odbywa się za pośrednictwem klienta FTP, takiego jak Fil
 
 Po zalogowaniu się do serwera przez FTP, pobierz (przeciągnij/upuść) zawartość katalogu `www` na prawym boku. Katalog ten zawiera wszystkie pliki i katalogi Twojej strony WordPress (konfiguracja, szablony, media, itp.).
 
-![Widok plików i katalogów WordPress z katalogiem głównym](images/how_to_backup_your_wordpress_1.png){.thumbnail}
+![Widok plików i katalogów WordPress z katalogiem głównym](images/wordpress-into-www.png){.thumbnail}
 
 Kliknij na katalog `www` i przeciągnij go do wybranego katalogu w oknie po lewej stronie. Transfer plików rozpocznie się automatycznie.
 
@@ -58,17 +58,17 @@ Aby wyeksportować Twoją bazę danych, przejdź do interfejsu _PHPMyAdmin_ popr
 >
 > Zapoznaj się z naszym przewodnikiem dotyczącym [eksportu bazy danych](/pages/web_cloud/web_hosting/sql_database_export).
 
-![Dostęp PHPMyAdmin - Strona główna](images/how_to_backup_your_wordpress_2.png){.thumbnail}
+![Dostęp PHPMyAdmin - Strona główna](images/pma-main-page.png){.thumbnail}
 
 Kliknij `Eksport`{.action} na górze strony:
 
-![Dostęp PHPMyAdmin - Eksport](images/how_to_backup_your_wordpress_3.png){.thumbnail}
+![Dostęp PHPMyAdmin - Eksport](images/pma-export.png){.thumbnail}
 
 Pozostaw wybór domyślny: metoda szybkiego eksportu i format SQL.
 
 Kliknij polecenie `Uruchom`{.action}, pobierz Twoją bazę danych w formacie SQL (Structured Query Language).
 
-![Dostęp PHPMyAdmin - Eksport - Pobieranie](images/how_to_backup_your_wordpress_4.png){.thumbnail}
+![Dostęp PHPMyAdmin - Eksport - Pobieranie](images/dowload-successfull.png){.thumbnail}
 
 ### Metoda 2 - wykonanie kopii zapasowej z rozszerzeniem
 
@@ -80,43 +80,43 @@ Pobierz rozszerzenie w formacie `.zip` na komputerze. W celu zachowania jasnośc
 
 Domyślnie jest to nazwa domeny, po której następuje `/wp-admin`:
 
-![Dostęp administratora do wp-admin](images/how_to_backup_your_wordpress_5.png){.thumbnail}
+![Dostęp administratora do wp-admin](images/login-interface.png){.thumbnail}
 
 Na stronie głównej przejdź do sekcji `Wtyczki`{.action}, następnie kliknij `Dodaj nową`{.action}:
 
-![Dodaj rozszerzenie](images/how_to_backup_your_wordpress_6.png){.thumbnail}
+![Dodaj rozszerzenie](images/plugins-add-new.png){.thumbnail}
 
 Pobierz rozszerzenie klikając na przycisk `Przeglądaj`{.action}:
 
-![Prześlij rozszerzenie](images/how_to_backup_your_wordpress_7.png){.thumbnail}
+![Prześlij rozszerzenie](images/plugins-add-new-updraftplus.png){.thumbnail}
 
 Kliknij polecenie `Zainstaluj`{.action}:
 
-![Zainstaluj rozszerzenie](images/how_to_backup_your_wordpress_8.png){.thumbnail}
+![Zainstaluj rozszerzenie](images/plugins-browse-updraftplus.png){.thumbnail}
 
 Po instalacji zostaniesz poproszony o włączenie rozszerzenia:
 
-![Potwierdzenie instalacji](images/how_to_backup_your_wordpress_9.png){.thumbnail}
+![Potwierdzenie instalacji](images/plugins-activate-updraftplus.png){.thumbnail}
 
 Po włączeniu domeny pojawi się ona na liście rozszerzeń:
 
-![Lista zainstalowanych rozszerzeń](images/how_to_backup_your_wordpress_10.png){.thumbnail}
+![Lista zainstalowanych rozszerzeń](images/plugins-list-updraftplus.png){.thumbnail}
 
 #### 2.2 - Skonfiguruj kopie zapasowe
 
 Na stronie, o której mowa powyżej, kliknij `Ustawienia`{.action}, a następnie na stronie `UpdraftPlus Backup/Restore`, kliknij zakładkę `Ustawienia`{.action}:
 
-![Strona UpdraftPlus Backup/Restore](images/how_to_backup_your_wordpress_11.png){.thumbnail}
+![Strona UpdraftPlus Backup/Restore](images/updraftplus-settings.png){.thumbnail}
 
 Zdefiniuj codzienną kopię zapasową swoich plików i bazy danych:
 
-![Strona UpdraftPlus Ustawienia](images/how_to_backup_your_wordpress_12.png){.thumbnail}
+![Strona UpdraftPlus Ustawienia](images/updraftplus-settings-2.png){.thumbnail}
 
 Wybierz kopię zapasową e-mailem.
 
 Kopie zapasowe zostaną wysłane na adres e-mail konta administratora (konto, którego używasz):
 
-![Kopia zapasowa na adres e-mail](images/how_to_backup_your_wordpress_13.png){.thumbnail}
+![Kopia zapasowa na adres e-mail](images/email-setting.png){.thumbnail}
 
 Na dole strony kliknij `Zapisz zmiany`{.action}, aby zatwierdzić.
 
@@ -124,11 +124,11 @@ Na dole strony kliknij `Zapisz zmiany`{.action}, aby zatwierdzić.
 
 Przejdź do zakładki `Kopia zapasowa/Przywracanie`{.action} i kliknij na przycisk `Utwórz kopię`{.action}:
 
-![Strona UpdraftPlus Kopia zapasowa/Przywracanie](images/how_to_backup_your_wordpress_14.png){.thumbnail}
+![Strona UpdraftPlus Kopia zapasowa/Przywracanie](images/updraftplus-backup-now.png){.thumbnail}
 
 W oknie, które się wyświetli kliknij ponownie `Utwórz kopię`{.action}:
 
-![Strona UpdraftPlus modalny Kopia zapasowa/Przywracanie](images/how_to_backup_your_wordpress_15.png){.thumbnail}
+![Strona UpdraftPlus modalny Kopia zapasowa/Przywracanie](images/updraftplus-perform-backup.png){.thumbnail}
 
 Po utworzeniu kopii zapasowych otrzymasz dwa e-maile: jeden z nich ma zawartość modułu Wordpress, drugi z bazą danych na swojej stronie internetowej.
 Jeśli nie otrzymasz e-maili, sprawdź adres e-mail używanego konta (w sekcji `Użytkownicy`{.action}). Sprawdź również swoje foldery "SPAM / Niechciany Poczta".

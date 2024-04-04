@@ -45,7 +45,7 @@ Si no dispone de estos datos, conéctese a su [área de cliente de OVHcloud](htt
 
 Se mostrará la información relativa a su espacio de almacenamiento y una tabla con los usuarios FTP y SSH creados en su alojamiento web.
 
-![Conexión FTP](images/connect-ftp-step1.png){.thumbnail}
+![Conexión FTP](images/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +75,7 @@ A continuación se muestra una descripción de la información esencial que se m
 
 Si ya no conoce la contraseña de un usuario FTP o SSH, consulte nuestra guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![Conexión FTP](images/connect-ftp-step2.png){.thumbnail}
+![Conexión FTP](images/change-password.png){.thumbnail}
 
 En este punto, dispondrá de todos los elementos necesarios para conectarse a su espacio de almacenamiento FTP.
 
@@ -96,11 +96,11 @@ Para conectarse a su espacio de almacenamiento FTP a través del "Explorador FTP
 
 Haga clic en el apartado `Alojamientos`{.action} en la columna izquierda. Seleccione el alojamiento correspondiente, abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
-![Conexión FTP](images/connect-ftp-step3.png){.thumbnail}
+![Conexión FTP](images/ftp-explorer.png){.thumbnail}
 
 Se abrirá una nueva página en la que deberá introducir su usuario FTP y su contraseña y, a continuación, conéctese. Si la información es correcta, aparecerá el espacio de almacenamiento.
 
-![Conexión FTP](images/connect-ftp-step4.png){.thumbnail}
+![Conexión FTP](images/login-interface.png){.thumbnail}
 
 #### 2. Conexión mediante un cliente FTP <a name="ftpsoftware"></a>
 
@@ -156,7 +156,7 @@ Si los datos son correctos, se conectará al espacio de almacenamiento FTP.
 
 Si necesita ayuda, consulte la guía "[Utilizar una conexión SSH en un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)".
 
-![Conexión FTP](images/connect-ftp-step5.png){.thumbnail}
+![Conexión FTP](images/terminal-ssh-connected.png){.thumbnail}
 
 ## Más información
 

@@ -1,16 +1,15 @@
 ---
 title: "Configurer une file d'appels"
 excerpt: "Découvrez comment configurer une file d'appels sur un numéro alias"
-updated: 2022-05-17
+updated: 2024-02-12
 ---
 
- 
 ## Objectif
- 
+
 La configuration en file d'appels permet de rediriger un appel entrant vers plusieurs lignes. Cette solution rend notamment possible la création d'une stratégie permettant d'éviter la perte d'appels.
 
 Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro principal, de faire sonner plusieurs lignes en même temps ou l'une après l'autre.
- 
+
 **Découvrez comment configurer intégralement une file d'appels.**
  
 ## Prérequis
@@ -28,7 +27,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la section `Télécom`{.action}.<br>
 Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
- 
+
 ### Étape 1 : appliquer la configuration
 
 - Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `File d'appels`{.action} puis cliquez sur `Paramétrer`{.action}.
@@ -38,7 +37,7 @@ Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequ
 ![fileappels](images/2022-VoIP-FA-01.png){.thumbnail}
 
 ### Étape 2 : paramétrer la file d'appels
- 
+
 Une fois la configuration de file d'appels appliquée, les menus de configuration vous sont présentés.
 
 ![fileappels](images/2022-VoIP-FA-02.png){.thumbnail}
@@ -46,7 +45,7 @@ Une fois la configuration de file d'appels appliquée, les menus de configuratio
 Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.action} puis, dans le cadre « Configuration », cliquez sur `Paramétrer la configuration`{.action}.
 
 ![fileappels](images/2022-VoIP-FA-03.png){.thumbnail}
- 
+
 Quatre menus principaux vous sont proposés :
 
 |Menu|Détails|
@@ -111,6 +110,18 @@ Dès qu'au moins une ligne est présente dans votre file, vous avez la possibili
 
 Une fois vos choix effectués, cliquez sur le bouton `Valider`{.action}.
 
+**Détails des stratégies proposées :**
+
+|Stratégie|Détails|
+|---|---|
+|Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l’appel sur son poste.|
+|Selon l'ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
+|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
+|Le plus ancien à avoir raccroché|Les téléphones sonnent les uns après les autres en suivant toujours le même ordre.|
+|Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l’activation.|
+|Selon une répartition de charge| Les téléphones sonneront suivant leur disponibilité depuis le dernier appel : le plus disponible en premier.|
+|Aléatoire|Les téléphones sonnent les uns après les autres de manière aléatoire.|
+
 ##### 3. Organiser les lignes de la file d’appels
 
 Vous avez la possibilité d'organiser les lignes dans votre file d'appels depuis le tableau où celles-ci apparaissent.<br>
@@ -129,6 +140,17 @@ Depuis le tableau des lignes de votre file d'appels, cliquez sur le bouton `...`
 La modification vous permet d'affiner les réglages de sonnerie de chaque ligne mais aussi d'activer/désactiver une ligne au sein de la file d'appels, en passant son `Statut`{.action} à `Activé` ou `Désactivé`.
 
 ![fileappels](images/2022-VoIP-FA-09.png){.thumbnail}
+
+> [!success]
+> **Connexion/déconnexion dans la file d'appels depuis un téléphone**
+>
+> Lorsque vous appelez le numéro de la file d'appels depuis une ligne qui en est membre, un menu vocal vous propose de :
+>
+> - taper `1` pour vous connecter à la file d'appels (ne fonctionne que si votre ligne était préalablement déconnectée de la file) ;
+> - taper `2` pour vous déconnecter de la file d'appels (ne fonctionne que si votre ligne était préalablement connectée à la file) ;
+> - taper `3` pour rejoindre la file d'appels et ainsi faire sonner ses membres.
+>
+> Vous pouvez ainsi gérer à la volée, directement depuis votre téléphone, l'activation de votre ligne au sein de la file d'appels.
 
 #### 2.2 Gérer les sons et l'attente <a name="manage-sounds"></a>
 

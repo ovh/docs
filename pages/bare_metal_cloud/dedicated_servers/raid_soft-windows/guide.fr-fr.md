@@ -33,7 +33,7 @@ La méthode à utiliser dépend du type de partition de vos disques. Suivez les 
 
 À l'invite de commande, ouvrez DiskPart :
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -159,7 +159,7 @@ Il est préférable de ne pas redémarrer le serveur tant que le processus de re
 
 À l'invite de commande, ouvrez DiskPart :
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -356,7 +356,7 @@ De retour à l'invite de commande, copiez les fichiers de démarrage de la parti
 
 Tapez les 3 commandes suivantes et exécutez-les chacune avec la touche `Entrer` :
 
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

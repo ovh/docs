@@ -6,9 +6,9 @@ updated: 2023-08-08
 
 ## Objectif
 
-Si vous souhaitez utiliser votre équipement personnel pour gérer la connexion PPPoE sur votre offre xDSL/FTTH OVHcloud, vous devez récupérer les identifiants PPPoE associés cet accès.
+Si vous souhaitez utiliser votre équipement personnel pour gérer la connexion PPPoE sur votre offre xDSL/FTTH OVHcloud, vous devez récupérer les identifiants PPPoE associés à cet accès.
 
-Les identifiants *Point to Point Protocol over Ethernet* (PPPoE) sont composés d'un nom d'utilisateur (ID) sous la forme xxxxxxxxxx@ovh.xxx et d'un mot de passe unique. Leur fonction est d'authentifier un équipement (équipement personnel ou modem fourni par OVHcloud) sur les infrastructures OVHcloud.
+Les identifiants *Point to Point Protocol over Ethernet* (PPPoE) sont composés d'un nom d'utilisateur (ID) sous la forme `xxxxxxxxxx@ovh.xxx` et d'un mot de passe unique. Leur fonction est d'authentifier un équipement (équipement personnel ou modem fourni par OVHcloud) sur les infrastructures OVHcloud.
 
 **Découvrez comment utiliser les API OVHcloud pour récupérer les identifiants PPPoE d'un accès à Internet**.
 

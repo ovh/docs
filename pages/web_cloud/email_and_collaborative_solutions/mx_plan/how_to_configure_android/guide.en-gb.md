@@ -1,97 +1,176 @@
 ---
-title: Configuring an email address on Android via the Gmail app
-excerpt: Find out how to configure an MX Plan email address on Android, via the Gmail app
-updated: 2018-03-12
+title: "MX Plan - Configuring an email address in Gmail for Android"
+excerpt: "Find out how to configure an MX Plan email address on Android, via the Gmail app"
+updated: 2023-12-15
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+</style>
 
 ## Objective
 
-You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device.
+You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device. In this guide, we will detail the process of configuring an MXplan email address in the Gmail application on Android devices.
 
 **Find out how to configure an MX Plan email address on Android, via the Gmail app.**
 
+> [!warning]
+>
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+
 ## Requirements
 
-- You need to have an MX Plan email address (included in the MX Plan solution and in [OVHcloud web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external}).
-- You need to have the Gmail app installed on your device. You can install the app from the Google Play Store.
-- You need to have the required credentials for the email address you would like to configure.
+- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- You need to have the Gmail app installed on your device. You can install it from the Google Play Store if it is not already present.
+- the required credentials for the email address you would like to configure
 
 > [!primary]
 >
-> This guide has been written using a Nexus 6 device, with Android version 7.1.1. For consistency purposes, we are using the Gmail app available to download from the Play Store. If you would like to use another app, the steps you need to take may differ from this guide.
+> This guide was written using a device that uses Android version 13.
 >
 
 ## Instructions
 
-### Step 1: Add the account
+### How to add your email account
 
-On your device’s homepage, open the `Gmail`{.action} app. You can add an account in two different ways:
+On your device’s homepage, open the `Gmail`{.action} app.
 
-- **If no account has been set:** Tap through the welcome screen, and tap `Add email address`{.action}. Next, choose `Other`{.action}. 
+![mxplan](images/mxplan-android-00.png){.thumbnail .w-400}
 
-- **If an account has already been set:** Tap the three-line icon on the top left-hand corner, then the arrow icon to the right of the of the account name that has already been set. Next, tap `Add account`{.action}, and choose `Other`{.action}. 
+Adding an account will be done differently **if no account is set** up, or **if an account has already been set up**. Select the tab corresponding to one of the two situations mentioned:
 
-![mxplan](images/configuration-gmail-application-android-step1.png){.thumbnail}
+> [!tabs]
+> **First configuration**
+>>
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-first.png){.thumbnail}|Select `Add Email Address`{.action}|
+>>
+> **Existing configuration**
+>>
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-existing.png){.thumbnail}|1. Go to the menu at the top left of the screen<br><br>2.Select `Settings`{.action}<br><br>3.Select `Add Account`{.action}|
+>>
 
-Enter your email address, then click `Next`{.action}.
+Follow the next steps in the configuration process by browsing the tabs below:
 
-When you choose your account type, we recommend selecting **IMAP**. However, you can still select **POP**. Please note that if you choose this, your emails will be stored locally on your Gmail app, so this is not a recommended option if you check your emails using a variety of email applications.
+> [!tabs]
+> **Step 1**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-01.png){.thumbnail}|From the menu of email account types, select `Other`{.action}.|
+>>
+> **Step 2**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-02.png){.thumbnail}|Enter your email address.|
+>>
+> **Step 3**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-03.png){.thumbnail}|Select the protocol for receiving emails. We recommend selecting `Personal (IMAP)`{.action}<br><br>You can find [more details on POP and IMAP](#popimap) protocols at the end of this guide to understand their differences.|
+>>
+> **Step 4**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-04.png){.thumbnail}|Enter the password for your email address. |
+>>
+> **Step 5**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-05.png){.thumbnail}|Complete the "**Incoming server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email password<br>- **Server**: enter **ssl0.ovh.net** |
+>>
+> **Step 6**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Complete the "**Outgoing server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email password<br>- **SMTP server**: enter **ssl0.ovh.net** |
+>>
+> **Step 7**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-07.png){.thumbnail}|Choose how often you want your emails to be synchronized.|
+>>
+> **Step 8**
+>> | | |
+>> |---|---|
+>> |![mxplan](images/mxplan-android-08.png){.thumbnail}|Determine the display name of your email address in the Gmail app, then tap `Next`{.action}|
+>>
 
-Enter your email password, then click `Next`{.action}.
+Once you have configured your email address, you can start using it! You can now send and receive messages from your Gmail application.
 
-![mxplan](images/configuration-gmail-application-android-step2.png){.thumbnail}
+> [!success]
+>
+> OVHcloud offers a web application that allows you to access your email address from a web browser, at <https://www.ovhcloud.com/en-gb/mail/>. You can log in using your email credentials.
 
-Enter the incoming server settings:
+### POP, IMAP and SMTP settings
 
-|Information|Description| 
-|---|---| 
-|Username|Enter your full email address.|  
-|Password|Enter the password for your email address.|
-|Server|Enter the server “ssl0.ovh.net”.|
+When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP**. To understand how they work, please refer to our section [“POP or IMAP, what is the difference?”](#popimap)
 
-Tap `Next`{.action}, then enter the outgoing server settings:
+- **For POP configuration**
 
-|Information|Description| 
-|---|---| 
-|Request a connection|Ensure that this button is enabled.|
-|Username|Enter your full email address.|  
-|Password|Enter the password for your email address.|
-|SMTP server|Enter the server “ssl0.ovh.net”.|
+|Information|Description|
+|---|---|
+|Username|Enter the **full email address**|
+|Password|Enter the password for the email address|
+|POP server|ssl0.ovh.net|
+|Port|995|
+|Security type|SSL/TLS|
 
-Then tap `Next`{.action}. If all the information you have entered is correct, you will be able to log in to your account straight away.
+- **For IMAP configuration**
 
-![mxplan](images/configuration-gmail-application-android-step3.png){.thumbnail}
+|Information|Description|
+|---|---|
+|Username|Enter the **full email address**|
+|Password|Enter the password for the email address|
+|POP server|ssl0.ovh.net|
+|Port|993|
+|Security type|SSL/TLS|
 
-Enter the account options, then tap `Next`{.action}. You can now set a name for this account, so that it can be distinguished from any other accounts associated with your app. You can also set the display name, which will appear when you send emails. Once you have done this, tap `Next`{.action}.
+For sending emails, if you need to enter the **SMTP** settings manually in your account preferences, you will find the settings below:
 
-To check that the account has been correctly configured, you can send a test email.
+- **SMTP configuration**
 
-If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our MX Plan solution are listed below:
+|Information|Description|
+|---|---|
+|Username|Enter the **full email address**|
+|Password|Enter the password for the email address|
+|POP server|ssl0.ovh.net|
+|Port|465|
+|Security type|SSL/TLS|
 
-- **for IMAP configuration**
+### POP or IMAP, what's the difference? <a name="popimap"></a>
 
-|Server type|Server name|Security type|Port|
-|---|---|---|---|
-|Incoming|ssl0.ovh.net|SSL/TLS|993|
-|Outgoing|ssl0.ovh.net|SSL/TLS|465|
+When you set up your email address manually, your email client asks if you want to use **POP** (**P**ost **O**ffice **P**rotocol) or **IMAP** (**I**nternet **M**essage **A**ccess **P**rotocol). To understand this properly, you will need to configure your email address to include POP and IMAP protocols.
 
-- **for POP configuration**
+When you configure your mail client, you must enter the information from the **incoming server** to receive the emails, and the **outgoing server** to send the emails. To send emails, there is no choice, the **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) is used. For the reception, you will have the choice between **POP** or **IMAP**.
 
-|Server type|Server name|Security type|Port|
-|---|---|---|---|
-|Incoming|ssl0.ovh.net|SSL/TLS|995|
-|Outgoing|ssl0.ovh.net|SSL/TLS|465|
+![mxplan](images/mxplan-android-popimap-01.png){.thumbnail}
 
-### Step 2: Use the email address
+To understand the difference between POP and IMAP, we will break down the elements that make up the processing of your incoming emails:
 
-Once you have configured your email address, you can start using it! You can now send and receive emails.
+1. **Your device**: a computer, smartphone or tablet. This is your consultation support.
 
-OVHcloud also has a web application you can use to access your email account from your browser, via the following address: <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+2. **Your email client**: software or application dedicated to managing your emails. Your choice will determine the level of usability and functionality you will need to view your emails.
+
+3. **The receiving protocol**: a choice that determines how you check emails on your device. This affects other devices that access the same email account.
+    - **IMAP**: Your email client queries the email server and downloads the emails to your device. When you view an unread email, the server marks it as “read” by default. Other devices configured in IMAP will be able to check this status and view this email until it has been deleted on one of the devices.
+    - **POP**: Your email client requests the email server and downloads the emails to your device. By default, once the email is downloaded to your device, the message is deleted from the server. As a result, other devices connected to this email address will not be able to view this email.
+
+![mxplan](images/mxplan-android-popimap-02.png){.thumbnail}
+
+> [!primary]
+>
+> This description is a summary, it represents the standard operation of these two protocols. You can configure the POP so that emails are not deleted when you check your emails. The goal here is to describe how these two protocols work natively and avoid any additional steps to match your needs.
 
 ## Go further
 
-[Configuring an Email Pro account on Android via the Gmail app](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android){.external}.
+[Configuring an Email Pro account on Android via the Gmail app](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android)
 
-[Configuring an Exchange account on Android via the Gmail app](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android){.external}.
+[Configuring an Exchange account on Android via the Gmail app](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.

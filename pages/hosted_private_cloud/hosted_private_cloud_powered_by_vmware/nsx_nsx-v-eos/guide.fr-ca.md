@@ -1,12 +1,12 @@
 ---
 title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
-updated: 2023-09-20
+updated: 2023-12-18
 ---
 
 ## Objectif
 
-Le composant NSX-v ne sera plus maintenu par VMware à compter du 15 janvier 2024. Ce guide vous aide à analyser votre utilisation des fonctionnalités de NSX-v et, en fonction de celle-ci, vous propose différents scénarios d’évolution : de la désactivation du composant NSX-v jusqu'à la migration vers son successeur NSX-T (appelé NSX par VMware depuis la version 4.0).
+Le composant NSX-v ne sera plus maintenu par OVHcloud à compter du 31 Juillet 2024. Ce guide vous aide à analyser votre utilisation des fonctionnalités de NSX-v et, en fonction de celle-ci, vous propose différents scénarios d’évolution : de la désactivation du composant NSX-v jusqu'à la migration vers son successeur NSX-T (appelé NSX par VMware depuis la version 4.0).
 
 ## En pratique
 

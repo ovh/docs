@@ -1,7 +1,7 @@
 ---
 title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
-updated: 2023-08-18
+updated: 2024-03-26
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Les Floating IP sont des adresses IP publiques sur [Public Cloud](https://www.ov
 ## Prérequis
 
 - Un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) existant sur votre compte OVHcloud
-- Avoir accès à l’API [OVHcloud](https://ca.api.ovh.com/) ou à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
+- Avoir accès à [l’API OVHcloud](https://ca.api.ovh.com/) ou à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
 - L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} installé sur votre environnement de travail (facultatif)
 
 ## Comprendre le service Floating IP
@@ -39,7 +39,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 #### Attacher une Floating IP à une instance
 
 > [!success]
-> Cliquez sur l'un des deux onglets ci-dessous selon que vous souhaitez associer une Floating IP à une nouvelle instance (**Option 1**) ou à une instance existante (**Option 2**).
+> Cliquez sur l'un des deux onglets ci-dessous selon que vous souhaitez associer une Floating IP à une nouvelle instance (**Option 1**) ou à une instance déjà existante (**Option 2**).
 
 > [!tabs]
 > **Option 1**
@@ -133,9 +133,12 @@ Dans l'onglet `Floating IP`{.action}, cliquez sur le bouton `...`{.action} à c�
 
 Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération peut prendre quelques minutes.
 
-#### Depuis l'API OpenStack
+### Depuis l'API OpenStack
 
 #### Attacher une Floating IP à une instance
+
+> [!success]
+> Cliquez sur les onglets ci-dessous pour afficher et suivre successivement chacune des 9 étapes.
 
 > [!tabs]
 > **Étape 1** 
@@ -320,7 +323,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> Comme vous pouvez le constater, la VM n'a qu'une IP privée mais elle est disponible depuis Internet via l'adresse Floating IP.
 >>
 >> ```bash
->> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 1.1.1.1
+>> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 213.186.33.99
 >> ubuntu@vm4fip:~$ curl ifconfig.me/ip
 >> 169.254.10.25
 >> ```
@@ -331,6 +334,9 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> >
 
 #### Ajouter un DNS à une adresse Floating IP
+
+> [!primary]
+> Cette manipulation doit être effectuée **après** avoir suivi les 9 étapes ci-dessus.
 
 Pour ajouter un DNS à une adresse floating IP, exécutez la commande suivante à partir de la ligne de commande:
 
@@ -372,7 +378,7 @@ $ openstack floating ip list
 $
 ```
 
-#### Depuis l'API OVHcloud
+### Depuis l'API OVHcloud
 
 #### Attacher une Floating IP à une instance
 

@@ -1,7 +1,7 @@
 ---
-title: 'Utilizar o acesso SSH do seu alojamento web'
-excerpt: 'Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud'
-updated: 2022-01-19
+title: "Utilizar o acesso SSH do seu alojamento web"
+excerpt: "Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud"
+updated: 2024-01-30
 ---
 
 > [!primary]
@@ -32,7 +32,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na coluna «SSH» da tabela, verifique se o utilizador SSH (ou «Login») em causa dispõe de um acesso SSH ativo. Se não for o caso, surgirá a menção «Desativado».
 
-![usessh](images/use-ssh-step1.png){.thumbnail}
+![usessh](images/tab-ssh.png){.thumbnail}
 
 Se o acesso SSH não estiver ativo, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Modificar`{.action}. Na janela que se abrir, ative o acesso SSH e conclua a modificação. Se não conseguir proceder à ativação, certifique-se de que o seu serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} beneficia de um acesso SSH.
 
@@ -68,7 +68,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4a-etapa-interagir-com-o-espaco-de-armazenamento-em-ssh).
 
-![usessh](images/use-ssh-step3.png){.thumbnail}
+![usessh](images/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2\. A partir de um programa
 
@@ -105,13 +105,23 @@ Através de um comando, pode igualmente lançar um script utilizando uma versão
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra [ao guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) «Alterar a configuração do alojamento web».
+Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra ao guia "[Alojamento web : ambiente, versão PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+
+> [!primary]
+>
+> Também é possível copiar ficheiros e/ou pastas com o **S**ecure **C**opy **P**rotocol (**SCP**).
+> Este protocolo utiliza o protocolo SSH para duplicar conteúdo de forma segura entre:
+> 
+> - um computador/dispositivo local para um servidor remoto
+> - um servidor remoto e um PC/dispositivo local
+> - dois servidores remotos
+>
+> Encontre mais informações sobre a utilização do comando `scp` com os nossos alojamentos web OVHcloud no nosso guia "[Alojamento Web - Copiar ficheiros com o comando SCP](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Quer saber mais?
 
-[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Alojamento web : ambiente, versão PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

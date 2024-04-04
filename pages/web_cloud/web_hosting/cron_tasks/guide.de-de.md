@@ -1,7 +1,7 @@
 ---
 title: "Automatische Tasks mit einem Webhosting verwenden"
 excerpt: "Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren"
-updated: 2023-10-31
+updated: 2024-02-08
 ---
 
 <style>
@@ -56,7 +56,7 @@ Wählen Sie das betreffende Hosting aus, klicken Sie auf den Tab `Mehr`{.action}
 
 In diesem Bereich erhalten Sie einen Überblick über Ihre geplanten Tasks und deren Einstellungen.
 
-![cron control panel](images/cron-jobs-1.png){.thumbnail}
+![cron control panel](images/schedule-jobs.png){.thumbnail}
 
 ### Erstellung eines automatisierten Tasks
 
@@ -64,11 +64,11 @@ In diesem Bereich erhalten Sie einen Überblick über Ihre geplanten Tasks und d
 
 Um einen CRON-Task zu erstellen, klicken Sie rechts auf den Button `Eine Planung hinzufügen`{.action}. Sie können die Task-Einstellungen im neuen Fenster anpassen.
 
-![adding scheduling](images/cron-jobs-2.png){.thumbnail}
+![adding scheduling](images/add-scheduling-step-1.png){.thumbnail}
 
 |Option|Beschreibung|   
 |---|---|   
-|Auszuführender Befehl|Legen Sie den Zugriffspfad zur Datei mit Ihrem Skript fest. Beispiel: www/jobs/cron.php|   
+|Auszuführender Befehl|Legen Sie den Zugriffspfad zur Datei mit Ihrem Skript fest. Beispiel: *www/jobs/cron.php*|   
 |Sprache |Wählen Sie die vom Skript verwendete PHP-Version aus.|
 |Aktivierung|Wählen Sie aus, ob der Task nach seiner Erstellung aktiv sein soll oder später aktiviert wird.| 
 |Logs per E-Mail|Wenn nötig wählen Sie einen Kontakt (Administrator oder Technischer) aus, an den im Falle eines Ausführungsfehlers ein Bericht versendet wird. Sie können auch eine andere E-Mail-Adresse angeben.| 
@@ -83,7 +83,7 @@ Das Interface bietet zwei Wege, um die Frequenz Ihres Tasks zu konfigurieren. Ve
 |Einfacher Modus|
 |---|
 |Verwenden Sie die Auswahlmenüs, um die Uhrzeit, die Tage eines Monats, die Wochentage und die Monate der Ausführung anzugeben.|
-|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-basic-mod-step-2.png){.thumbnail}|
 
 > [!primary]
 >
@@ -95,17 +95,17 @@ Das Interface bietet zwei Wege, um die Frequenz Ihres Tasks zu konfigurieren. Ve
 |Experten-Modus| 
 |---|
 |Geben Sie numerische Werte ein wie in einem *crontab*. Die Sterne stehen für "jeden Wert" des Zeitraums, was bedeutet, dass die Aufgabe in diesem Beispiel **einmal pro Stunde täglich** kontinuierlich ausgeführt würde.|
-|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+|![cron frequency](images/add-scheduling-expert-mod-step-2.png){.thumbnail}|
 
 Sie können während der Konfiguration zwischen den beiden Ansichten wechseln, um die Änderungen zu sehen. Beachten Sie auch die [Einschränkungen bei der Task-Planung auf einem Webhosting](./#einschrankungen-bei-geplanten-tasks-auf-ihrem-webhosting).
 
-![cron control panel](images/cron-jobs-5.gif){.thumbnail}
+![cron control panel](images/add-scheduling-basic-mod-step-2.gif){.thumbnail}
 
 #### Schritt 3: Abschluss der Installation
 
 Die Zusammenfassung listet alle Ihre Einstellungen auf, einschließlich der *crontab*-Notation der Ausführungsfrequenz. Wenn alles korrekt ist, klicken Sie auf `Bestätigen`{.action}.
 
-![cron bestätiging](images/cron-jobs-6.png){.thumbnail}
+![cron bestätiging](images/add-scheduling-step-3.png){.thumbnail}
 
 Der Task wird in einigen Minuten bereit sein. Sie können dann alle Einstellungen ändern oder den Task löschen, indem Sie auf `...`{.action} in der Task-Übersichtstabelle im OVHcloud Kundencenter klicken.
 
@@ -115,9 +115,9 @@ Der Task wird in einigen Minuten bereit sein. Sie können dann alle Einstellunge
 |---|---|
 |Zeitplanung|Sie werden bemerken, dass das Feld "Minuten" im Interface deaktiviert ist (angezeigt als "?" in *crontab*). Ein Task kann nur einmal pro Stunde ausgeführt werden, wobei die Ausführungsminute nicht spezifiziert werden kann.|
 |Laufzeit|Die Ausführungsdauer eines Tasks beträgt 60 Minuten. Wenn ein Skript diese Ausführungsdauer überschreitet, wird es automatisch vom System angehalten.|
-|Variable|Sie können Variablen nur in einem Skript definieren. Sie zur URL hinzuzufügen, die das Skript anruft, funktioniert nicht (Beispiel: www/jobs/cron.php?variable=value).|
+|Variable|Sie können Variablen nur in einem Skript definieren. Sie zur URL hinzuzufügen, die das Skript anruft, funktioniert nicht (Beispiel: *www/jobs/cron.php?variable=value*).|
 |Datenlimit|Ein Task kann nur 5 MB an Daten generieren (*stdin/stderr*). Wenn beispielsweise ein Skript Daten in eine .txt-Datei schreibt, endet die Ausführung automatisch, sobald die Datei 5 MB erreicht.|
-|Fehlergenerierende Skripte|Wenn ein Skript fehlerhaft ist, wird es nach 10 gescheiterten Ausführungsversuchen automatisch deaktiviert. Reaktivieren Sie es einfach im Kundencenter. (Klicken Sie auf `...`{.action} und dann `Ändern`{.action}.)|
+|Fehlergenerierende Skripte|Wenn ein Skript fehlerhaft ist, wird es nach 10 fehlgeschlagenen Ausführungsversuchen automatisch deaktiviert. Der Fehlerbericht wird erst gesendet, wenn alle 10 Versuche fehlgeschlagen sind.</br>Korrigieren Sie Ihr Skript auf der Grundlage des erhaltenen Fehlerberichts und reaktivieren Sie dann den Task im Kundencenter (klicken Sie auf `...`{.action} und dann auf `Ändern`{.action}.)|
 |Ausführungsberichte|Die Berichte werden nur einmal täglich (während der Nachtstunden) an die ausgewählte E-Mail-Adresse versandt.|
 
 ### Fehlerdiagnose
@@ -141,35 +141,35 @@ Weitere Informationen finden Sie in unserer Anleitung zu [Statistiken und Logs](
 - Beispiel für ein erfolgreich ausgeführtes Skript
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
-[2020-08-11 00:36:01] 
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2023-08-11 00:36:01] 
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-10 22:39:44.086166 exitcode: 0
 </code></pre>
 
 - Beispiel für einen Fehlschlag aufgrund einer Überschreitung der Ausführungsdauer
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
+[2023-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2023-08-11 01:36:01] ## OVH ## END - 2023-08-11 01:36:01.086166 exitcode: 0
 </code></pre>
 
 - Beispiel eines Fehlers, da die Skriptdatei im angegebenen Zugriffspfad nicht gefunden werden kann
 
 <pre class="bgwhite"><code>
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+[2023-08-11 00:36:01] ## OVH ## START - 2023-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
-[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+[2023-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2023-08-11 00:36:01] ## OVH ## END - 2023-08-11 00:36:01.086166 exitcode: 255
 </code></pre>
 
 - Beispiel eines Fehlers wegen Zugriffsrechten (chmod) oder einer fehlerhaften Konfiguration der .ovhconfig-Datei
 
 <pre class="bgwhite"><code>
-[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
-[2020-08-11 18:07:10]
-[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
+[2023-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2023-08-11 18:07:10]
+[2023-08-11 18:07:10] ## OVH ## END - 2023-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
 ## Weiterführende Informationen <a name="go-further"></a>

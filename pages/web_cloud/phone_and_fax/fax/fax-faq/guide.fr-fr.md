@@ -1,14 +1,19 @@
 ---
 title: FAQ sur la solution Fax OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur le service Fax OVHcloud
-updated: 2022-06-24
+updated: 2024-01-03
 ---
 
 ## Objectif
 
 Retrouvez ici les questions les plus fréquemment posées sur le service Fax OVHcloud.
 
-### Pourquoi mon Fax est-il en attente ? 
+### Comment commander des fax ?
+
+Pour envoyer des fax, vous devez d'abord disposer d'une ligne Fax dédiée à cet usage. Choisissez votre offre depuis notre page <https://www.ovhtelecom.fr/fax/> et votre ligne fax sera activée dans l'espace client à l'issue de la commande.<br>
+Par la suite, vous n'avez pas à commander de fax. Chaque envoi de fax vous sera facturé à hauteur du nombre de destinataires compris dans votre campagne de fax.
+
+### Pourquoi mon Fax est-il en attente ?
 
 Que cela soit [par e-mail](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail) ou via un logiciel de type Ecofax, l'envoi d'un document par fax est automatiquement mis en attente si celui-ci n'est pas encore traité par nos systèmes.<br>
 Si une erreur est rencontrée en cas d'envoi par e-mail, la raison de cette erreur sera envoyée à l'adresse e-mail émettrice. Retrouvez les erreurs les plus courantes dans notre guide sur [l'envoi de fax par e-mail](/pages/web_cloud/phone_and_fax/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail#errors).

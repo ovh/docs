@@ -105,7 +105,7 @@ Individuarlo in entrambe le posizioni evidenziate in arancione.
 
 Sempre nella scheda `FTP-SSH`{.action}, il nome host (`host`) è visibile sotto la dicitura `Server FTP e SFTP`{.action}.
 
-![hosting](images/ftp_host_name.png){.thumbnail}
+![hosting](images/hostname.png){.thumbnail}
 
 #### username
 

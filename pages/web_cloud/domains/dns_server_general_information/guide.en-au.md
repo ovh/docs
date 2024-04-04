@@ -26,7 +26,7 @@ For more information on DNS zones, please read our guide on [Editing an OVHcloud
 
 As a result, the **DNS servers** must be registered with the domain name in order to use the DNS zone they host.
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 The **DNS servers** usually work in pairs:
 
@@ -81,7 +81,7 @@ The table that opens will contain the DNS servers currently set by OVHcloud for 
 >
 > When you use the OVHcloud DNS servers, the numbers in the server names have no link to the service(s) you are using. Only the [Anycast DNS](https://www.ovhcloud.com/en-au/domains/options/) option  uses specific DNS servers that are automatically assigned to you.
 
-![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
+![dns-server](images/tab.png){.thumbnail}
 
 ### Modifying DNS servers
 
@@ -102,7 +102,7 @@ In the text fields, **replace** the current DNS server values with the informati
 
 Once you have entered this information, click `Apply configuration`{.action}. The statuses of the DNS servers will then be updated in the table, and will display the new information you have just provided.
 
-![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
+![dns-server](images/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -113,7 +113,7 @@ Once you have entered this information, click `Apply configuration`{.action}. Th
 
 The `Reset the DNS servers`{.action} button allows you to reset your current DNS servers by automatically replacing them with the original OVHcloud DNS servers. Use this option **only** if you would like to reuse the OVHcloud DNS servers (and the OVHcloud DNS zone associated with its DNS servers). 
 
-![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
+![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
 Once you have made the required changes, you must wait for them to become fully effective. Two successive periods must be taken into account:
 

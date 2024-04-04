@@ -24,7 +24,7 @@ Może to być przydatne w następujących przypadkach:
 
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
-- Dostęp administratora (root) do Twojej instancji przez SSH
+- Dostęp administratora (sudo) do Twojej instancji przez SSH
 
 > [!warning]
 >

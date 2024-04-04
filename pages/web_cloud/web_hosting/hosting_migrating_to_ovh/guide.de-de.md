@@ -1,5 +1,5 @@
 ---
-title: Migration Ihrer Website und E-Mails zu OVH
+title: Migration Ihrer Website und E-Mails zu OVHcloud
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website, E-Mails und Domains ohne Dienstunterbrechung zu OVHcloud migrieren"
 updated: 2023-11-15
 ---
@@ -87,7 +87,7 @@ Sobald die DNS-Zone eingerichtet ist, kann sie zur Verwendung mit dem Webhosting
 
 **Beispiel**: Für den Domainnamen "domain.tld" sollte das Ergebnis wie in der folgenden Abbildung angezeigt werden:
 
-![hosting](images/DNSzone.png){.thumbnail}
+![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -140,7 +140,7 @@ Deklarieren und authorisieren Sie Ihren externen Domainnamen auf Ihrem OVHcloud 
 
 **Beispiel** für "domain.tld":
 
-![hosting](images/DNSmultisite.png){.thumbnail}
+![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
 
 **Die Änderung der DNS-Einträge vom Typ "A", "CNAME" und "TXT" muss beim aktuellen DNS-Provider Ihres Domainnamens durchgeführt werden und erfordert eine Propagationszeit von 4 bis maximal 24 Stunden, bis die Änderungen voll wirksam sind.**
 
