@@ -124,7 +124,7 @@ Understanding the constraints of using IPv6 within the vRack environment is cruc
 Join our community of users on <https://community.ovh.com/en/>.
 
 
-UNDER THIS IS HTE PREVIOUS VERSION, DON'T CARE ABOUT IT
+UNDER THIS IS THE PREVIOUS VERSION, DON'T CARE ABOUT IT
 ---
 
 ---
