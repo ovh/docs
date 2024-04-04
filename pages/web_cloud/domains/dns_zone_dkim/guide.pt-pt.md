@@ -1,7 +1,7 @@
 ---
 title: Configurar um registo DKIM
 excerpt: Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud
-updated: 2024-02-16
+updated: 2024-04-04
 ---
 
 <style>
@@ -775,7 +775,7 @@ Pode consultar o cabeçalho do e-mail recebido:
 
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
-       spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
+       spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 

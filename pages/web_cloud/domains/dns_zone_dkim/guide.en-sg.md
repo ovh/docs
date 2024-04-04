@@ -1,7 +1,7 @@
 ---
 title: Configuring a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
-updated: 2024-02-16
+updated: 2024-04-04
 ---
 
 <style>
@@ -71,6 +71,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 - [Use cases](#usecases)
     - [How do I change my DKIM key pair?](#2selectors)
     - [Why does the DKIM icon appear in red in the Control Panel?](#reddkim)
+    - [From the OVHcloud API interface, how do I understand the state of the DKIM that is not working?](#api-error)
 
 
 ### How does DKIM work? <a name="how-dkim-work"></a>
@@ -153,12 +154,6 @@ To the right of the domain name concerned, you can see that the `DKIM` box is gr
 To activate the DKIM, simply click on the gray `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
 
 ![email](images/dkim-auto02.png){.thumbnail}
-
-> [!warning]
->
-> For the domain name’s DNS zone to be automatically configured, it is necessary for it to be managed from the same OVHcloud customer account as your email platform. If you have a DNS zone managed from another OVHcloud customer account, or a domain name external to OVHcloud, you will need to enter the DNS records manually.
->
-> To do this, you can use the information in **3. Retrieve the DNS record** in the [Full DKIM configuration](#firststep) section, by following the chapter corresponding to your email solution, [Exchange](#confex).
 
 The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
 
@@ -523,7 +518,7 @@ Here is what you will find in the header of the received email:
 
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
-       spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
+       spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
