@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2023-11-20
+updated: 2024-04-03
 ---
 
 ## Objective
@@ -40,6 +40,7 @@ To be considered as a valid owned block, imported blocks must be one of the foll
 | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
 | **For more information :** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[Description of the INETNUM Object](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
+
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
@@ -242,7 +243,7 @@ No, an IP range must be used in only one campus.
 
 ### Is changing the campus of an imported IP range possible?
 
-It is not possible to change the campus of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen a French campus at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across all the datacenters located in France (Gravelines, Roubaix and Strasbourg).
+It is not possible to change the campus of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen Gravelines, Roubaix or Strasbourg campus at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across those 3 campuses (and only those 3 ones).
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 
