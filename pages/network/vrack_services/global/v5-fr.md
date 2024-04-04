@@ -117,7 +117,7 @@ Cette section aborde les actions qui peuvent être effectuées via l'API. Cela i
 #### Basics
 
 <details>
-  <summary><b>1. Création d'un sous-réseau</b> </summary>
+  <summary><b>1. Créer un sous-réseau</b> </summary>
     
 <blockquote>
     
@@ -160,7 +160,7 @@ $ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "v
 
 
 <details>
-  <summary><b>2. Création d'un Service Endpoint </b>     </summary>
+  <summary><b>2. Créer un Service Endpoint </b>     </summary>
 
 <blockquote>
 1.&nbsp;<ins>Demande de création d'un Service Endpoint (asynchrone si une association vRack existe)</ins>  
@@ -288,7 +288,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 
 <details>
-  <summary><b>3. Association à un vRack</b>    </summary>
+  <summary><b>3. Associer à un vRack</b>    </summary>
 
 <blockquote>
 
