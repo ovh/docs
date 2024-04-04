@@ -45,7 +45,7 @@ This section displays basic information about this VPS and the state of the serv
 >>
 >> If you click on `...`{.action} and then select `Change the name`{.action}, you can enter a distinguishing name for this VPS. This is useful for easier Control Panel navigation in case you are managing multiple VPS services but it has no impact otherwise. The internal service name remains in the format *vps-XXXXXXX.vps.ovh.net*.
 >>
-> Name
+> Boot
 >>
 >> The boot mode displayed here is either the "normal" mode, in which the system loads the installed operating system (*LOCAL*) or the **rescue mode** provided by OVHcloud for troubleshooting purposes. Use the `...`{.action} button to [restart the VPS](#reboot-current-range) or boot it into rescue mode.
 >>
