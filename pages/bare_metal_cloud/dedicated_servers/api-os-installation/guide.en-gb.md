@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-03-04
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -59,7 +59,7 @@ You can find interesting information such as the following:
 |usage,category,family|Usage, category, and OS family|
 |project/os|Information about OS governance, version, release notes and project URL|
 |project/usage|Same as project/os, but at the software layer if applicable|
-|license/os|Information about OS license : licensing contract URL and licensing type|
+|license/os|Information about OS license: licensing contract URL and licensing type|
 |license/usage|Same as license/os, but at the software layer if applicable|
 |filesystems|Compatible file systems types|
 |hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
