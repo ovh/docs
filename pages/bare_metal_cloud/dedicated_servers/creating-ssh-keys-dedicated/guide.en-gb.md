@@ -1,7 +1,7 @@
 ---
 title: Creating and using SSH keys
 excerpt: Find out how to use SSH keys for a secure connection to your server
-updated: 2023-11-22
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -33,6 +33,8 @@ Be sure to consult our "Getting started" guides: <a name="getstarted"></a>
 
 We recommend reading the [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) as well.
 
+### Creating an SSH key
+
 The following instructions cover two methods of using SSH keys:
 
 - [Creating an **Open SSH** key pair and connecting to a server from the command line SSH client](#openssh)
@@ -40,7 +42,7 @@ The following instructions cover two methods of using SSH keys:
 
 You can use both methods side by side but keep in mind that `PuTTY` stores key files in a specific format which makes them incompatible with SSH key files created with the **Open SSH** client. This means that a private key created with the command line SSH client will have to be [converted to the `PuTTY` format](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt) first and vice versa.
 
-### Creating an SSH key pair from the command line <a name="openssh"></a>
+#### Creating an SSH key pair from the command line <a name="openssh"></a>
 
 From a **Mac** computer or a device with a **Linux OS** installed, open the command line application (`Terminal`).
 
@@ -155,7 +157,7 @@ Copy the full key string to the clipboard in order to [add it to your server](#a
 > When working from a **Windows** command line, use a `right-click` to **paste** the content of your clipboard into the command line window. To **copy** a string from the command line window, highlight it, then press `Enter`. You can also find these functions via a `right-click` on the menu bar.
 >
 
-### Creating an SSH key pair with PuTTY <a name="useputty"></a>
+#### Creating an SSH key pair with PuTTY <a name="useputty"></a>
 
 [PuTTY](https://putty.org/){.external} is an open source SSH client software with a graphical user interface, available for **Windows** and other operating systems. It provides a companion software to create SSH keys: `PuTTY Key Generator` (`PuTTYgen`).
 
