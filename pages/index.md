@@ -828,7 +828,7 @@
                 + [Encrypt your Secret for OVHcloud Managed Kubernetes with Sealed Secrets (Kubeseal)](public_cloud/containers_orchestration/managed_kubernetes/encrypt-secret-with-kubeseal)
                 + [Scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy](public_cloud/containers_orchestration/managed_kubernetes/installing-trivy)
                 + [Using RBAC to handle limited access to an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/rbac-custom-kubeconfig-limited-access)
-                + [Near real-time threats detection with Falco on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/runtime-security-falco/)
+                + [Near real-time threats detection with Falco on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/runtime-security-falco)
             + [Serverless](public-cloud-containers-orchestration-managed-kubernetes-k8s-serverless)
                 + [Installing a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS](public_cloud/containers_orchestration/managed_kubernetes/installing-openfaas)
                 + [Run Serverless containers on OVHcloud Managed Kubernetes with Knative](public_cloud/containers_orchestration/managed_kubernetes/installing-knative)
