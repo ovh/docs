@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2024-04-02
+updated: 2024-04-04
 ---
 
 > [!warning]
@@ -90,7 +90,7 @@ Le tableau suivant présente le comportement par défaut de la fonctionnalité d
 | Métadonnées d'objet des objets sources vers les réplicas | Objets stockés dans le stockage temporaire Cold Archive |
 | Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL | Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc. |
 | Mises à jour de la liste de contrôle d'accès des objets | Actions résultant des actions de configuration du cycle de vie |
-| Tags d'objets | Objets créés *avant* le téléversement de la configuration de réplication |
+| Tags d'objets | Objets créés *avant* l'upload de la configuration de réplication |
 | Configuration de la rétention des verrous d'objet S3 | Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
 
 ### Configuration de la réplication
