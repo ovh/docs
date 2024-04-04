@@ -165,8 +165,7 @@ $ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "v
 <blockquote>
 1.&nbsp;<ins>Demande de création d'un Service Endpoint (asynchrone si une association vRack existe)</ins>  
 
-
-Here we use the second managed serice listed previously in 3.1 section "List all Managed Services compatible with the vRack Services"
+Ici nous utilisons un identifiant `serviceId` présent dans la liste des services managés disponibles.
 
 ```bash
 $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7bf30-6722-4658-b3db-
@@ -211,8 +210,8 @@ $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7b
 > ```
 > 
 > </details>   
-2.&nbsp;<ins>Request a second Service Endpoint creation</ins>   
-Just in order to show you the behavior when you want launch a new request during the execution of the previous one.
+2.&nbsp;<ins>Création d'un second Service Endpoint</ins>   
+Juste pour vous montrer le comportement lorsque vous souhaitez lancer une nouvelle demande pendant l'exécution de la précédente.
 
 ```bash
 $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569efa-61f2-4deb-8beea60b4213e1dc"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
@@ -236,8 +235,9 @@ $ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569
 > 
 > </details>
 
-3. <ins>So you can fetch resource status of the first requested Service Endpoint.</ins>   
-In this way we can see the status of the resource is now READY
+3. <ins>Ainsi, vous pouvez récupérer le statut de la demande de création du premier Service Endpoint.</ins>
+  
+De cette manière, nous pouvons voir que le statut de la ressource est maintenant READY.
    
 ```bash
 $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint/end-5678901
@@ -288,11 +288,11 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 
 <details>
-  <summary><b>3. Associate to a vRack</b>    </summary>
+  <summary><b>3. Association à un vRack</b>    </summary>
 
 <blockquote>
 
-1. <ins>Check eligibility to the vRack</ins>
+1. <ins>Vérifier l'éligibilité du vRack</ins>
 
 ```bash
 $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/allowedServices?serviceFamily=vrackServices
@@ -324,7 +324,7 @@ $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/allowedServices?serviceFamil
 
 
 
-2. <ins>Request vRack association</ins>
+2. <ins>Requête d'association du vRack</ins>
 
 ```bash
 $ curl -XPOST -d '{"vrackServices": "vrs-1234567"}' https://api.ovh.com/1.0/vrack/pn-12345/vrackServices
@@ -351,8 +351,8 @@ $ curl -XPOST -d '{"vrackServices": "vrs-1234567"}' https://api.ovh.com/1.0/vrac
 
 
 
-3. <ins>Fetch asynchronous task because it can takes few secondes</ins>
-   Perhaps you can have some error during the execution of this task
+3. <ins>Récupérer la tâche asynchrone car cela peut prendre quelques secondes</ins>
+  Il se peut que vous rencontriez des erreurs lors de l'exécution de cette tâche
    
 ```bash
 $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/3456789
@@ -370,7 +370,7 @@ $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/3456789
 >     
 > </details>
    
-4. <ins>When this synchronous task is done you can fetch the vRack Services status</ins>
+4. <ins>Lorsque cette tâche synchrone est terminée, vous pouvez récupérer le statut du service vRack</ins>
 
 ```bash
 $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
@@ -422,11 +422,11 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 #### Others
 
 <details>
-  <summary><b>1. Extend the Subnet service range</b></summary>
+  <summary><b>1. Etendre la plage su Sous-réseau</b></summary>
 
 <blockquote>
 
-1. <ins>Create a 'extend-subnet-service-range.json' text file with these informations inside</ins>
+1. <ins>Créer un fichier texte 'extend-subnet-service-range.json' contenant ces informations</ins>
 
 ```bash
 $ cat extend-subnet-service-range.json
@@ -446,7 +446,7 @@ $ cat extend-subnet-service-range.json
 > 
 > </details>
 
-2. <ins>Request service range extension (asynchronous)</ins>
+2. <ins>Demander l'extension de la plage de service (asynchrone)</ins>
 
 ```bash
 $ curl -XPUT -d@extend-subnet-service-range.json https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-
@@ -478,7 +478,7 @@ $ curl -XPUT -d@extend-subnet-service-range.json https://api.ovh.com/2.0/vrackSe
 > 
 > </details>
 
-3. <ins>Fetch final state</ins>
+3. <ins>Récupérer l'état final</ins>
    
 ```bash
 $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890
@@ -515,11 +515,11 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 
 <details>
-  <summary><b>2. Dissociate the vRack Services from the vRack</b></summary>
+  <summary><b>2. Dissocier les services vRack du vRack</b></summary>
 
 <blockquote>
   
-1. <ins>Request vRack disassociation</ins>
+1. <ins>Demander la dissociation du vRack</ins>
 
 ```bash
 $ curl -XDELETE https://api.ovh.com/1.0/vrack/pn-12345/vrackServices/vrs-1234567
@@ -543,7 +543,7 @@ $ curl -XDELETE https://api.ovh.com/1.0/vrack/pn-12345/vrackServices/vrs-1234567
 > </details>
 
 
-2. <ins>Fetch asynchronous task using the created task id</ins>
+2. <ins>Récupérer la tâche asynchrone en utilisant l'identifiant de tâche créé</ins>
 
 ```bash
 $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/5678901
@@ -562,7 +562,7 @@ $ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/5678901
 > 
 > </details>
 
-3. <ins>Asynchronous task done -> Fetch the vRack Services status</ins>
+3. <ins>Tâche asynchrone terminée -> Récupérer le statut du service vRack</ins>
 
 ```bash
 $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
@@ -602,12 +602,12 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 
 
 <details>
-  <summary><b>3. Suspend the vRack Services</b></summary>
+  <summary><b>3. Suspendre un Service vRack</b></summary>
 
 <blockquote>
     
-  Suspend triggered on Agora 'SUSPENSION' event consumption
-Here we have the same result than dissociation
+Suspension déclenchée lors de la consommation de l'événement 'SUSPENSION' sur Agora
+Ici, nous avons le même résultat que la dissociation
 
 </blockquote>
 
@@ -615,12 +615,13 @@ Here we have the same result than dissociation
 
 
 <details>
-  <summary><b>4. Delete the vRack Services</b></summary>
+  <summary><b>4. Supprimer un Service vRack</b></summary>
 
 <blockquote>
 
-   Deletion triggered on Agora 'TERMINATION' event consumption
-   Then every resources deleted in cascade
+
+Suppression déclenchée lors de la consommation de l'événement 'TERMINATION' sur Agora
+Ensuite, toutes les ressources sont supprimées en cascade
 
 </blockquote>
 
@@ -630,7 +631,7 @@ Here we have the same result than dissociation
 #### Errors
 
 <details>
-  <summary><b>1. Create a Service Endpoint with a wrong Managed Service localization</b></summary>
+  <summary><b>1. Créer un Service Endpoiint avec une localisation de Service Managé incorrecte</b></summary>
 
 <blockquote>  
 
@@ -664,7 +665,7 @@ https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndp
 
 
 <details>
-  <summary><b>2. Create a Service Endpoint while Subnet ServiceRange is fully allocated</b></summary>
+  <summary><b>2. Créer un Service Endpoint alors que la plage de service du Sous-réseau est entièrement allouée</b></summary>
 
 <blockquote>
   
@@ -698,7 +699,7 @@ a85404eb52"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-45678
 
 
 <details>
-  <summary><b>3. Delete a Subnet that is associated to Service Endpoints</b></summary>
+  <summary><b>3. Supprimer un Sous-réseau qui est associé à un ou plusieurs Service Endpoint</b></summary>
 
 <blockquote>
 
