@@ -43,7 +43,7 @@ Vous pouvez utiliser la configuration interactive pour générer les fichiers de
 
 > [!primary]
 >
-> Pour utiliser la configuration interactive en exécutant la commande suivante :
+> Pour utiliser la configuration interactive, exécutez la commande suivante :
 > `aws configure`
 >
 
