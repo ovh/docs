@@ -62,7 +62,7 @@ Sélectionnez « ovh » dans la liste déroulante « Type », tapez un nom dan
 
 ![Ajouter une MAC virtuelle (2)](images/addvmac2.png){.thumbnail}
 
-Après quelques secondes, une adresse MAC virtuelle apparaîtra dans la colonne "Virtual MAC" de la rangée votre adresse Additional IP. Cette adresse MAC virtuelle sera nécessaire lors de la configuration de votre VM sur l'hôte.
+Après quelques secondes, une adresse MAC virtuelle apparaîtra dans la colonne "MAC virtuelle" de la rangée votre adresse Additional IP. Cette adresse MAC virtuelle sera nécessaire lors de la configuration de votre VM sur l'hôte.
 
 ### Déterminer l'adresse de la passerelle (gateway)
 
