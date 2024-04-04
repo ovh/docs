@@ -1,7 +1,7 @@
 ---
 title: Near real-time threats detection with Falco on OVHcloud Managed Kubernetes
 excerpt: Find out how to secure your OVHcloud Managed Kubernetes with Falco, a runtime security tool
-updated: 2024-04-03
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -15,12 +15,12 @@ updated: 2024-04-03
 Concretely, Falco:
 
 - Receives **Events**
-- Compares them to a set of **Rules*- to determine the actions to perform
+- Compares them to a set of **Rules** to determine the actions to perform
 - Generates **Alerts**: you can forward the Falco events to different endpoints (syslog, stdout, https, graph...) or to different apps (slack, discord, elasticsearch, kafka...) through [falcosidekick](https://github.com/falcosecurity/falcosidekick)
 
 ![falcosidekick](images/falcosidekick.png){.thumbnail}
 
-At OVHcloud, we like to provide you with the best products and services. As for us security is important, that's why we want to help you discover Falco which will help you secure your OVHcloud Managed Kubernetes with a runtime security tool.
+At OVHcloud, we like to provide you with the best products and services. As for us security is important, we want to help you discover Falco which will help you secure your OVHcloud Managed Kubernetes with a runtime security tool.
 
 In this guide you will:
 
