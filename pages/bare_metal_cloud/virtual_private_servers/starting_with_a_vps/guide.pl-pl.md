@@ -44,56 +44,61 @@ Karta `Strona`{.action} główna zawiera ważne informacje o Twojej usłudze i u
 
 W tej sekcji wyświetlane są podstawowe informacje o serwerze VPS i o stanie usługi.
 
-##### Nazwisko
-
-Jeśli klikniesz `...`{.action}, a następnie wybierzesz `Zmień nazwę`{.action}, będziesz mógł wprowadzić osobną nazwę dla tego VPS. Funkcja ta jest przydatna w przypadku zarządzania kilkoma usługami VPS. Nazwa wewnętrznej usługi jest zapisana w formacie *vps-XXXXXXX.vps.ovh.net*.
-
-##### Boot
-
-Wyświetlony tutaj tryb uruchamiania działa w trybie "normalnym", w którym system ładuje zainstalowany system operacyjny (*LOCAL*) lub w **trybie rescue** dostarczonym przez OVHcloud w przypadku rozwiązywania problemów. Użyj przycisku `...`{.action} aby [zrestartować serwer VPS](#reboot-current-range) lub uruchomić go w trybie Rescue.
-
-Więcej informacji na ten temat znajdziesz w naszym przewodniku o [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
-
-##### OS / Dystrybucja
-
-Jest to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny z dostępnych](#reinstallvps) opcji.
-
-Pamiętaj, że reinstalacja usunie wszystkie dane aktualnie hostowane na serwerze VPS (z wyjątkiem dodatkowych dysków).
-
-> [!primary]
->
-> Jeśli zamówiłeś VPS **Windows**, możesz wybrać do reinstalacji tylko jeden OS Windows. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
->
-
-Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji znajdziesz [poniżej](#reinstallvps) i w naszym przewodniku [Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
-
-##### Strefa / Lokalizacja
-
-W tych sekcjach znajdziesz informacje o lokalizacji serwera VPS. Może to być przydatne na przykład do identyfikacji skutków dla Twojej usługi wymienionych w [status reports](https://bare-metal-servers.status-ovhcloud.com/).
-
+> [!tabs]
+> Nazwisko
+>>
+>> Jeśli klikniesz `...`{.action}, a następnie wybierzesz `Zmień nazwę`{.action}, będziesz mógł wprowadzić osobną nazwę dla tego VPS. Funkcja ta jest przydatna w przypadku zarządzania kilkoma usługami VPS. Nazwa wewnętrznej usługi jest zapisana w formacie *vps-XXXXXXX.vps.ovh.net*.
+>>
+> Boot
+>>
+>> Wyświetlony tutaj tryb uruchamiania działa w trybie "normalnym", w którym system ładuje zainstalowany system operacyjny (*LOCAL*) lub w **trybie rescue** dostarczonym przez OVHcloud w przypadku rozwiązywania problemów. Użyj przycisku `...`{.action} aby [zrestartować serwer VPS](#reboot-current-range) lub uruchomić go w trybie Rescue.
+>>
+>> Więcej informacji na ten temat znajdziesz w naszym przewodniku o [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+>>
+> OS / Dystrybucja
+>>
+>> Jest to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny z dostępnych](#reinstallvps) opcji.
+>>
+>> Pamiętaj, że reinstalacja usunie wszystkie dane aktualnie hostowane na serwerze VPS (z wyjątkiem dodatkowych dysków).
+>>
+>> > [!primary]
+>> >
+>> > Jeśli zamówiłeś VPS **Windows**, możesz wybrać do reinstalacji tylko jeden OS Windows. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
+>>
+>>
+>> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji znajdziesz [poniżej](#reinstallvps) i w naszym przewodniku [Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+>> 
+> Strefa / Lokalizacja
+>>
+>> W tych sekcjach znajdziesz informacje o lokalizacji serwera VPS. Może to być przydatne na przykład do identyfikacji skutków dla Twojej usługi wymienionych w [status reports](https://bare-metal-servers.status-ovhcloud.com/).
+>>
+ 
 #### Twoja konfiguracja
 
-##### Model
-
-Ten element wskazuje model biznesowy identyfikujący model serwera VPS odpowiadający [ofertom VPS na naszej stronie](https://www.ovhcloud.com/pl/vps).
-
-##### vCores / Pamięć / Przestrzeń dyskowa
-
-Tutaj wyświetlają się bieżące zasoby Twojego serwera VPS. Możesz je zaktualizować osobno, klikając odpowiedni przycisk. Aktualizacje są ograniczone wybranym modelem VPS i mogą być dostępne tylko po przejściu na wyższą [gamę](https://www.ovhcloud.com/pl/vps).
+> [!tabs]
+> Model
+>>
+>> Ten element wskazuje model biznesowy identyfikujący model serwera VPS odpowiadający [ofertom VPS na naszej stronie](https://www.ovhcloud.com/pl/vps).
+>>
+> vCores / Pamięć / Przestrzeń dyskowa
+>> 
+>> Tutaj wyświetlają się bieżące zasoby Twojego serwera VPS. Możesz je zaktualizować osobno, klikając odpowiedni przycisk. Aktualizacje są ograniczone wybranym modelem VPS i mogą być dostępne tylko po przejściu na wyższą [gamę](https://www.ovhcloud.com/pl/vps).
+>> 
 
 #### Adresy IP
 
-##### IPv4
-
-Główny publiczny adres IPv4 serwera VPS jest konfigurowany automatycznie podczas instalacji. Więcej informacji na temat zarządzania adresami IP znajdziesz w przewodniku [Konfiguracja IP aliasing](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
-
-##### IPv6 / Gateway
-
-W tej części można zobaczyć publiczny adres IPv6 i adres przypisanej bramy. Są one automatycznie dołączane do serwera VPS podczas instalacji. Więcej informacji zawiera [ten przewodnik](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
-
-##### DNS secondary
-
-Funkcja ta jest przydatna przy instalowaniu usług DNS. Szczegółowo opisany jest [w przewodniku dotyczącym konfigurowania DNS secondary OVHcloud na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps).
+> [!tabs]
+> IPv4
+>>
+>> Główny publiczny adres IPv4 serwera VPS jest konfigurowany automatycznie podczas instalacji. Więcej informacji na temat zarządzania adresami IP znajdziesz w przewodniku [Konfiguracja IP aliasing](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>>
+> IPv6 / Gateway
+>> 
+>> W tej części można zobaczyć publiczny adres IPv6 i adres przypisanej bramy. Są one automatycznie dołączane do serwera VPS podczas instalacji. Więcej informacji zawiera [ten przewodnik](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>> 
+> DNS secondary
+>>
+>> Funkcja ta jest przydatna przy instalowaniu usług DNS. Szczegółowo opisany jest [w przewodniku dotyczącym konfigurowania DNS secondary OVHcloud na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps).
 
 #### Podsumowanie opcji
 
