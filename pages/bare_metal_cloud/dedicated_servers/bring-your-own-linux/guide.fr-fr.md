@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2024-02-14
+updated: 2024-04-04
 ---
 
 ## Objectif
@@ -126,6 +126,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 | Champ | Description | Obligatoire |
 |-|-|-|
+| userMetadata/sshKey | La clé publique SSH | ❌ |
 | userMetadata/imageURL | L'URL de votre image Linux | ✅ |
 | userMetadata/imageCheckSum | Checksum de votre image | ❌ |
 | userMetadata/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |

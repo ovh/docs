@@ -1,7 +1,7 @@
 ---
 title: "Primeiros passos com um servidor dedicado Kimsufi, So You Start ou Rise"
 excerpt: "Saiba como utilizar o seu novo servidor dedicado Kimsufi, So You Start ou Rise"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -65,43 +65,21 @@ Depois de escolher `Instalar a partir de um template OVHcloud`{.action}, pode se
 
 ![Seleção operacional](images/reinstalling-your-server-03.png){.thumbnail}
 
-Se tiver de alterar o esquema de particionamento do seu sistema operativo, selecione a opção "Personalizar a configuração das partições" antes de clicar em `Seguinte`{.action}.
+Se necessitar de alterar o esquema de particionamento do seu sistema operativo, selecione a opção "Personalizar a configuração das partições" antes de clicar em `Seguinte`{.action}.
 
 ![Personalizar a configuração das partições](images/reinstalling-your-server-04.png){.thumbnail}
 
 Este passo permite-lhe configurar o tipo de RAID e a partição, dentro dos limites do hardware e do sistema operativo.
 
-Depois de finalizar os ajustamentos, clique em `Seguinte`{.action} para aceder à página de resumo.
+Uma vez os ajustamentos concluídos, clique em `Seguinte`{.action} para aceder à página de resumo.
 
-#### Adicionar uma chave SSH (facultativo)
+Encontrará questões complementares específicas ao sistema operativo selecionado.
 
-Se instalar um sistema operativo GNU/Linux, pode adicionar a sua chave SSH à última etapa do processo de instalação.
+Por exemplo, se instalar um sistema operativo GNU/Linux, pode adicionar a sua chave SSH.
 
-![Personalizar SSH](images/SSH_01.png){.thumbnail}
+![configuração SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
-Se uma chave SSH já estiver registada, aparecerá no menu pendente em "Chaves SSH" na parte inferior. Caso contrário, terá de adicionar uma na secção "Serviços".
-
-Para isso, abra a barra lateral ao clicar no canto superior direito e utilize o atalho `Produtos e serviços`{.action}.
-
-![Personalizar SSH](images/SSH_02.png){.thumbnail}
-
-Em "Os meus serviços", passe para o separador `Chaves SSH`{.action} e clique em `Adicionar uma chave SSH`{.action}.
-
-![Personalizar SSH](images/SSH_03.png){.thumbnail}
-
-Uma vez que se trata da instalação de um servidor dedicado, tenha o cuidado de selecionar "Dedicado" no menu pendente (compatível com um VPS também).
-
-Na nova janela, introduza um ID (nome da sua escolha) e a própria chave (do tipo RSA, ECDSA ou Ed25519) nos campos correspondentes.
-
-![Personalizar SSH](images/SSH_04.png){.thumbnail}
-
-Para obter uma explicação detalhada sobre a geração de chaves SSH, consulte o nosso [guia](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
-> [!warning]
->A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
->
->Este guia foi concebido para o ajudar o mais possível nas tarefas mais comuns. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que contacte um fornecedor especializado.
->
+Por fim, clique em `Confirmar`{.action }para lançar a instalação do sistema operativo no seu servidor dedicado.
 
 <a name="connect"></a>
 

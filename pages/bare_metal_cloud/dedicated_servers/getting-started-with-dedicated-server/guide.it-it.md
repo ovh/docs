@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un server dedicato"
 excerpt: "Come eseguire le prime operazioni sul tuo nuovo server dedicato"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -13,8 +13,6 @@ updated: 2024-02-19
 Un server dedicato è una macchina fisica localizzata in uno dei nostri datacenter. Diversamente dalle soluzioni di hosting Web (descritte come "condivise"), che sono tecnicamente gestite da OVHcloud, l'amministrazione è interamente responsabilità dell'utente.
 
 **Questa guida ti mostra le operazioni di base da effettuare sul tuo nuovo server.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I2G6TkKg0gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisiti
 
@@ -71,43 +69,21 @@ Dopo aver scelto di `Installare a partire da un template OVHcloud`{.action}, puo
 
 ![Selezione operativa](images/reinstalling-your-server-03.png){.thumbnail}
 
-Per modificare lo schema di partizione del tuo sistema operativo, seleziona la casella "Personalizza la configurazione delle partizioni" e clicca su `Seguente`{.action}.
+Se è necessario modificare lo schema di partizione del sistema operativo, spunta la casella "Personalizza la configurazione delle partizioni" prima di cliccare su `Seguente`{.action}.
 
 ![Personalizzare la configurazione delle partizioni](images/reinstalling-your-server-04.png){.thumbnail}
 
 Questo step permette di configurare il tipo di RAID e il partizionamento, nei limiti dell'hardware e del sistema operativo.
 
-Una volta terminate le modifiche, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
+Una volta terminati gli adeguamenti, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
 
-#### Aggiunta di una chiave SSH (facoltativo)
+In particolare, sono disponibili domande complementari specifiche per il sistema operativo selezionato.
 
-Se installi un sistema operativo GNU/Linux, aggiungi la tua chiave SSH all'ultima fase del processo di installazione.
+Ad esempio, se installi un sistema operativo GNU/Linux, puoi aggiungere la tua chiave SSH.
 
-![Personalizza SSH](images/SSH_01.png){.thumbnail}
+![configurazione SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
-Se una chiave SSH è già registrata, appare nel menu a tendina con "Chiavi SSH" in basso. In caso contrario, è necessario aggiungerne una nella sezione "I tuoi servizi".
-
-Per farlo, apri la barra laterale cliccando sul tuo nome nell'angolo in alto a destra e utilizza la scorciatoia `Prodotti e servizi`{.action}.
-
-![Personalizza SSH](images/SSH_02.png){.thumbnail}
-
-In "I tuoi servizi", passa alla scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
-
-![Personalizza SSH](images/SSH_03.png){.thumbnail}
-
-Trattandosi dell'installazione di un server dedicato, seleziona "Dedicato" nel menu a tendina (compatibile anche con un VPS).
-
-Nella nuova finestra inserisci un ID (nome a tua scelta) e la chiave stessa (tipo RSA, ECDSA o Ed25519) nei campi corrispondenti.
-
-![Personalizza SSH](images/SSH_04.png){.thumbnail}
-
-Per maggiori informazioni sulla generazione di chiavi SSH, consulta la nostra [guida](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
-> [!warning]
->OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
->
->Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
->
+Clicca su `Conferma`{.action} per avviare l’installazione del sistema operativo sul tuo server dedicato.
 
 <a name="connect"></a>
 

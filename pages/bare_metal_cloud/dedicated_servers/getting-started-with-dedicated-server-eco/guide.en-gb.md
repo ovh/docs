@@ -1,7 +1,7 @@
 ---
 title: "Getting started with a Kimsufi, So You Start or Rise dedicated server"
 excerpt: "Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -63,41 +63,19 @@ After choosing `Install from an OVHcloud template`{.action} you can select the o
 
 If you need to modify the partioning scheme of your operating system, check the box "Customise the partition configuration" before clicking on `Next`{.action}.
 
-![SSH key configuration](images/reinstalling-your-server-04.png){.thumbnail}
+![partitioning configuration](images/reinstalling-your-server-04.png){.thumbnail}
 
 In this step you are able to set up RAID and partitioning options within the limits of the server's hardware and operating system.
 
 After you have finished your adjustments, click `Next`{.action} to arrive at the summary page.
 
-#### Adding an SSH key (optional)
+You will find additional questions that are specific to the chosen operating system.
 
-If you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process.
+For example, if you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process.
 
-![SSH key configuration](images/SSH_01.png){.thumbnail}
+![SSH key configuration](images/reinstalling-your-server-05.png){.thumbnail}
 
-If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
-
-To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
-
-![SSH key configuration](images/SSH_02.png){.thumbnail}
-
-In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
-
-![SSH key configuration](images/SSH_03.png){.thumbnail}
-
-As you are installing a dedicated server, make sure to select "Dedicated" from the drop-down menu (viable for a VPS as well).
-
-In the new window, enter an ID (a name of your choice) and the key itself (of type RSA, ECDSA or Ed25519) into the respective fields.
-
-![SSH key configuration](images/SSH_04.png){.thumbnail}
-
-For a detailed explanation on how to generate SSH keys, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
-> [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
->
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
->
+Finally, click `Confirm`{.action} to trigger the operating system installation on your dedicated server.
 
 <a name="connect"></a>
 
