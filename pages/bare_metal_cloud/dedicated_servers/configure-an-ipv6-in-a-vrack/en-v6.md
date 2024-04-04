@@ -35,106 +35,22 @@ IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limi
 By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern internet usage.
 
 
+
+
+
 ## Configuring IPv6 in a vRack   
-### Gathering IPv6 block:
+### Gathering new Additional IPv6 block
 To gather an IPv6 block with OVH's services, particularly for use with a vRack, it's important to understand that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, influencing where public traffic enters your vRack backend. Gathering IPv6 block: During Alpha stage, customer should request Additional IPv6 block for specified location using this form: https://survey.ovh.com/index.php/483751?lang=en Here's how you can use OVH's APIv6 to perform this task:
 
 **<ins>Prerequisites</ins>**
 - Ensure you have an OVH API consumer key. If you don't have one, you'll need to generate it by following the instructions on the OVH API authentication page.
 - Identify the region where you want your IPv6 block to be allocated. This is crucial as it determines the entry point of public traffic to your vRack.
 
-**<ins>Actions</ins>**   
-
-<details>
-<summary> <b>1. Authenticate with the OVH API </b></summary>
-<blockquote>
-
-```bash
-curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "Content-type: application/json" \
-"https://eu.api.ovh.com/1.0/auth/credential" \
--d '{"accessRules":[{"method":"GET","path":"/*"},{"method":"POST","path":"/*"},{"method":"PUT","path":"/*"},{"method":"DELETE","path":"/*"}]}'
-````   
-
-In this example, `abc123xyz` is a placeholder for your actual OVH application key. This command requests a new set of credentials (a consumer key) that will allow your application to make API calls under the specified access rules.    
-
-Upon successful execution of the command, the OVH API will return a JSON object containing a consumerKey and a validationUrl.
-
-<details>
-<summary>Here's an example of what the return might look like </summary>
-<blockquote>
-
-```json
-{
-  "validationUrl": "https://eu.api.ovh.com/auth/?credentialToken=dEf456GHi",
-  "consumerKey": "tUv123wXyZ",
-  "state": "pendingValidation"
-}
-```  
-- `validationUrl` is the URL you need to visit to validate the consumer key. This step is crucial as it activates the key for use with the API.
-- `consumerKey` is the key your application will use to authenticate subsequent API calls. Note that this key is in a `pendingValidation` state until you complete the validation process.
-- `state` indicates the current state of the consumer key. In this case, it's `pendingValidation`, meaning you need to visit the `validationUrl` to activate it.
-
-
-</blockquote>
-</details>
-
-</blockquote>
-</details>
+**<ins>Actions</ins>**  
 
 
 <details>
-<summary> <b>2. Request an IPv6 Block</b> </summary>
-<blockquote>
-    
-Assuming you've already authenticated and obtained your `consumerKey` from the previous step, here's how you might request an IPv6 block for your vRack:     
-
-```bash
-curl -XPOST -H "X-Ovh-Application: <application_key>" -H "X-Ovh-Consumer: <consumer_key>" -H "Content-type: application/json" \
-"https://eu.api.ovh.com/1.0/vrack/<vrack_id>/ip" \
--d '{"type":"ipv6", "region":"<region>"}'
-```
-
-In this command:   
-- `abc123xyz` is the placeholder for your OVH application key.
-- `tUv123wXyZ` is the consumer key you received from the authentication process.
-- `vrack1234` is a hypothetical vRack ID. Replace this with your actual vRack ID.
-- `GRA` represents the region where you want the IPv6 block allocated. OVHcloud has several data centers across the globe, so you would replace `GRA` with the specific region code that corresponds to your desired location.   
-
-
-Upon successful execution of the command, the OVH API will return information about the newly allocated IPv6 block.
-
-<details>
-<summary> Here's an example of what the return might look like </summary>
-<blockquote>
-
-```json
-{
-  "task": {
-    "id": 12345678,
-    "function": "addIpToVrack",
-    "status": "todo",
-    "progress": 0
-  },
-  "ipv6Block": {
-    "block": "2001:db8:abcd:0012::/64",
-    "region": "GRA"
-  }
-}
-```
-The `task` object provides details about the request to add an IPv6 block to your vRack. It includes a task `id` you can use to track the progress, the `function` being performed, the current `status` of the task, and its `progress`.
-   
-The `ipv6Block` object contains information about the allocated IPv6 block, including the `block` itself (in this example, `2001:db8:abcd:0012::/64`) and the `region` where it's allocated.
-
-
-</blockquote>
-</details>
-    
-</blockquote>
-</details>
-
-
-<details>
-<summary> <b>3. Check the Status of Your IPv6 Block Request</b> </summary>
+<summary> <b>Check the Status of Your IPv6 Block Request</b> </summary>
 <blockquote>
 
 Given you have your `application_key`, `consumer_key`, `vrack_id`, and now an `ipv6_block_id` from the previous operation, here's how you might construct the command:
