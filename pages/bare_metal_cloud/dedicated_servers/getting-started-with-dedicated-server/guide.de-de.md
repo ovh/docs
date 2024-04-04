@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit einem Dedicated Server"
 excerpt: "Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -13,8 +13,6 @@ updated: 2024-02-19
 Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie für die Verwaltung Ihres Servers allein verantwortlich.
 
 **Diese Anleitung erläutert einige Grundlagen zur Erstverwendung eines OVHcloud Dedicated Server.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I2G6TkKg0gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
@@ -73,41 +71,19 @@ Nachdem Sie `Installation mit einem OVHcloud Template`{.action} ausgewählt habe
 
 Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie einen Haken in dem Feld "Konfiguration der Partitionen anpassen", bevor Sie auf `Weiter`{.action} klicken.
 
-![Konfiguration der Partitionen anpassen](images/reinstalling-your-server-04.png){.thumbnail}
+![Konfiguration anpassen](images/reinstalling-your-server-04.png){.thumbnail}
 
 In diesem Schritt können Sie RAID- und Partitionierungsoptionen innerhalb der Grenzen der Serverhardware und des Betriebssystems einrichten.
 
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
 
-#### Hinzufügen eines SSH-Schlüssels (optional)
+Dort finden Sie unter anderem Zusatzoptionen zu dem ausgewählten Betriebssystem.
 
-Wenn Sie ein GNU/Linux-Betriebssystem installieren, können Sie Ihren SSH-Schlüssel im letzten Schritt des Installationsprozesses hinzufügen.
+Wenn Sie beispielsweise ein GNU/Linux-Betriebssystem installieren, können Sie Ihren SSH-Schlüssel hinzufügen.
 
-![SSH-Schlüssel personalisieren](images/SSH_01.png){.thumbnail}
+![SSH-Konfiguration](images/reinstalling-your-server-05.png){.thumbnail}
 
-Wenn ein SSH-Schlüssel bereits hinterlegt ist, erscheint er unten im Drop-down-Menü unter "SSH-Schlüssel". Falls nicht, fügen Sie zuerst einen im Bereich "Meine Dienstleistungen" hinzu.
-
-Öffnen Sie hierzu die Seitenleiste, indem Sie oben rechts auf Ihren Namen klicken und nutzen Sie dann den Shortcut `Produkte und Dienstleistungen`{.action}.
-
-![SSH-Schlüssel personalisieren](images/SSH_02.png){.thumbnail}
-
-Gehen Sie in "Meine Dienste" auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
-
-![SSH-Schlüssel personalisieren](images/SSH_03.png){.thumbnail}
-
-Da es sich um die Einrichtung eines Dedicated Servers handelt, wählen Sie im Drop-down-Menü "Dedicated" aus (ebenso gültig für einen VPS).
-
-Geben Sie im neuen Fenster eine ID (Name Ihrer Wahl) und den Schlüssel selbst (vom Typ RSA, ECDSA oder Ed25519) in die entsprechenden Felder ein.
-
-![SSH-Schlüssel personalisieren](images/SSH_04.png){.thumbnail}
-
-Weitere Informationen zur Erstellung von SSH-Schlüsseln finden Sie in unserer [Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
-> [!warning]
->OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Sie sind also verantwortlich für das ordnungsgemäße Funktionieren dieser Systeme.
->
->Diese Anleitung hilft Ihnen bei der Bewältigung allgemeiner Aufgaben. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten oder Zweifel hinsichtlich der Administration, Nutzung oder Implementierung der Dienste auf einem Server haben.
->
+Klicken Sie anschließend auf `Bestätigen`{.action}, um die Installation des Betriebssystems auf Ihrem Dedicated Server zu starten.
 
 <a name="connect"></a>
 

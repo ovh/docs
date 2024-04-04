@@ -1,7 +1,7 @@
 ---
 title: "How to get started with a dedicated server"
 excerpt: "Find out how to proceed after the delivery of your OVHcloud dedicated server"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 ## Objective
