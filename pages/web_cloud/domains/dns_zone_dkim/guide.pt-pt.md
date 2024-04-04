@@ -795,8 +795,8 @@ Clique no separador seguinte da sua oferta.
 > **Exchange**
 >> Para migrar para o segundo seletor, utilize a seguinte chamada API:
 >> 
->> [!api]
->> > >
+>> > [!api]
+>> > 
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> > >
 >>
@@ -808,10 +808,10 @@ Clique no separador seguinte da sua oferta.
 > **E-mail Pro**
 >> Para migrar para o segundo seletor, utilize a seguinte chamada API:
 >>
->> [!api]
->> > >
+>> > [!api]
+>> > 
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
->> > >
+>> > 
 >>
 >> - `service`: introduza o nome da sua plataforma E-mail Pro que se apresenta sob a forma "emailpro-zz111111-1". <br>
 >> - `seletorName` : introduza o nome do seletor no qual pretende migrar. <br>
