@@ -763,14 +763,14 @@ En coulisses, le statut de VrackServices (VrackServices.productStatus) reflète 
 
 - Le produit n'est pas suspendu.
 - Une association vRack existe déjà.
-- Au moins un Point de Terminaison de Service a été configuré.
+- Au moins un Service Endpoint a été configuré.
 
 Si l'une de ces exigences n'est plus satisfaite, la configuration est retirée de l'OneAPI (marquée soit comme BROUILLON soit comme SUSPENDUE).
 
 Comme aide, un résumé de la configuration est disponible avec l'attribut VrackServices.productStatus.
 Il répond à la question `Ma configuration actuelle permet-elle aux Services Gérés d'être accessibles depuis le vRack ?`
 - **ACTIF :** oui, c'est le cas
-- **DRAFT :** non, soit un Point de Terminaison de Service doit être créé, soit un vRack doit être associé aux Services vRack
+- **DRAFT :** non, soit un Service Endpoint doit être créé, soit un vRack doit être associé aux Services vRack
 - **SUSPENDED :** non, le produit est dans l'état de `suspension` d'Agora
 
  
