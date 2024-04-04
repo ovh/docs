@@ -102,6 +102,6 @@ The logs from journald arrived fully parsed and ready to be explored. Use differ
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Documentation: [Guides](/products/observability-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))
