@@ -260,7 +260,7 @@ spec:
 
 - `loadbalancer.openstack.org/keep-floatingip`
 
-  If 'true', the floating IP will **NOT** be deleted upon load balancer deletion. Default is 'false'. Useful if you want to keep your floating API after Load Balancer deletion.
+  If 'true', the floating IP will **NOT** be deleted upon load balancer deletion. Default is 'false'. Useful if you want to keep your Floating IP after Load Balancer deletion.
 
 - `loadbalancer.openstack.org/proxy-protocol`
 
