@@ -142,18 +142,23 @@ Aisni, après un bref instant de mise en place vous serez en capacité de voir e
 
 <blockquote>  
 
-![overview 01](images/15-VRS.png){.thumbnail}
-
----
-
 ![overview 01](images/16-VRS.png){.thumbnail}
+
+Les actions à mener sont très simple. En effet il suffit uniquement de renseigner 3 informations:
+- Le type du Service Managé.
+- Le nom du Service Managé.
+- Le sous-réseau souhaité
 
 ---
 ![overview 01](images/17-VRS.png){.thumbnail}
 
+Et parès un rapide moment d'attente ...
+
 ---
 
 ![overview 01](images/18-VRS.png){.thumbnail}
+
+... votre nouveau Service Endpoint est configuré et disponible.
 
 </blockquote>      
 
