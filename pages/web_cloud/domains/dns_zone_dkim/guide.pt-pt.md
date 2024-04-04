@@ -1,7 +1,7 @@
 ---
 title: Configurar um registo DKIM
 excerpt: Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud
-updated: 2024-02-16
+updated: 2024-04-04
 ---
 
 <style>
@@ -77,6 +77,7 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 - [Casos práticos](#usecases)
     - [Como alterar o par de chaves DKIM?](#2selectors)
     - [Porque é que o ícone DKIM aparece a vermelho na Área de Cliente?](#reddkim)
+    - [A partir da interface API OVHcloud, como compreender o estado do DKIM que não funciona?](#api-error)
 
 
 ### Como funciona o DKIM? <a name="how-dkim-work"></a>
@@ -175,7 +176,7 @@ Para ativar o DKIM, basta clicar na etiqueta `DKIM` cinzento e, a seguir, em `Va
 >
 > Para que a zona DNS do domínio em questão seja configurada automaticamente, é necessário que esta seja gerida a partir da mesma conta de cliente OVHcloud que a sua plataforma de e-mail. No quadro de uma zona DNS gerida a partir de outra conta de cliente OVHcloud ou de um nome de domínio externo à OVHcloud, será necessário introduzir manualmente os registos DNS.
 >
-> Para isso, consulte a etapa « **3.Obter o registo DNS** » da secção [Configuração completa do DKIM](#firststep), seguindo o capítulo correspondente ao seu serviço de e-mail, [Exchange](#confex) ou [E-mail Pro](#confemp).
+> Para isso, consulte a etapa "**3.Obter o registo DNS**" da secção [Configuração completa do DKIM](#firststep), seguindo o capítulo correspondente ao seu serviço de e-mail, [Exchange](#confex) ou [E-mail Pro](#confemp).
 
 A ativação automática do DKIM dura entre 30 minutos e 24 horas, no máximo. Para verificar se o seu DKIM está funcional, basta voltar ao separador `Domínios associados`{.action} da sua plataforma de e-mail e certificar-se de que a etiqueta `DKIM` ficou verde.
 
@@ -775,7 +776,7 @@ Pode consultar o cabeçalho do e-mail recebido:
 <pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
-Return-Path: <test-dkim@mydomain.ovh>
+Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
 Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçalho de um e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers)".
@@ -799,9 +800,9 @@ Clique no separador seguinte da sua oferta.
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> > >
 >>
->> - `organizationName` : introduza o nome da sua plataforma Exchange que se apresenta sob a forma « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `organizationName` : introduza o nome da sua plataforma Exchange que se apresenta sob a forma "hosted-zz111111-1" ou "private-zz111111-1". <br>
 >> - `seletorName` : introduza o nome do seletor no qual pretende migrar. <br>
->> - `exchangeService` : introduza o nome da sua plataforma Exchange que se apresenta sob a forma « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange que se apresenta sob a forma "hosted-zz111111-1" ou "private-zz111111-1". <br>
 >> - `domainName`: introduza o nome de domínio associado à sua plataforma Exchange. <br>
 >>
 > **E-mail Pro**
@@ -812,7 +813,7 @@ Clique no separador seguinte da sua oferta.
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> > >
 >>
->> - `service`: introduza o nome da sua plataforma E-mail Pro que se apresenta sob a forma « emailpro-zz111111-1 ». <br>
+>> - `service`: introduza o nome da sua plataforma E-mail Pro que se apresenta sob a forma "emailpro-zz111111-1". <br>
 >> - `seletorName` : introduza o nome do seletor no qual pretende migrar. <br>
 >> - `domainName` : introduza o nome de domínio associado à sua plataforma E-mail Pro na qual o DKIM deve estar presente.<br>
 >>
@@ -838,11 +839,51 @@ Clique no separador abaixo correspondente à sua oferta para verificar o estado 
 >>
 >>![email](images/red-dkim.png){.thumbnail}
 
-Se acabou de configurar o DKIM, isto significa que a ativação do DKIM não está terminada, **recomenda-se que aguarde 24 horas**.
+Eis os 4 estados que têm por resultado o ícone DKIM a vermelho na sua Área de Cliente. Clique no separador correspondente ao seu código de erro:
 
-Se o estado permanecer vermelho após 24h, verifique o estado do seletor que ativou. Para isso, utilize a secção « [Os diferentes estados do DKIM](#dkim-status) » deste guia.
+> [!tabs]
+> **501**
+>>
+>> "**Only one dkim seletor has been initialized**"<br><br>
+>> Apenas um seletor DKIM está presente na sua configuração. Para nos permitir mudar para uma nova chave, quando necessário, é necessário configurar os 2 seletores fornecidos pelo serviço.<br><br>
+>> Para corrigir este erro :
+>> - Verifique o estado dos seletores DKIM para identificar o que deve ser configurado. Para isso, consulte a secção "[Os diferentes estados do DKIM](#dkim-status)" deste guia.
+>> - Depois de identificar o seletor a configurar, siga as etapas da secção "[Configuração completa do DKIM](#firststep)" neste guia, de acordo com a sua oferta (Exchange ou E-mail Pro), aplicando-a apenas ao seletor em questão.
+>> Aguarde até 24 horas após a configuração do seletor.
+>>
+> **502**
+>>
+>> "**One DKIM configuration task is in error**"<br><br>
+>> Ocorreu um erro aquando da configuração do DKIM. Se a sua configuração ainda estiver nesse estado, após 24 horas, convidamo-lo a abrir um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_get_help).
+>>
+> **503**
+>>
+>> "**CNAME record is wrong**"<br><br>
+>> O valor do registo CNAME necessário para a configuração do DKIM não foi introduzido corretamente. Deve configurar corretamente a zona DNS do nome de domínio associado.
+>> Para configurar a zona DNS, recupere os valores do registo CNAME que se apresenta :
+>>
+>>![email](images/dkim-503.png){.thumbnail}
+>>
+>> Usando o exemplo da captura acima, o domínio é "**mydomain.ovh**" e é necessário configurar o seletor "**2**". Aqui, é preciso adicionar um registo CNAME que tem por subdomínio o valor `ovhex1234567-selector2.domainkey.mydomain.ovh` e como alvo `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
+>> Depois de configurar a sua zona DNS, aguarde o tempo da propagação DNS (24h no máximo)
+>>
+> **504**
+>>
+>> "**One CNAME record is missing**"<br><br>
+>> Falta o valor do registo CNAME necessário para a configuração do DKIM. Deve configurar a zona DNS do nome de domínio associado.
+>> Para configurar a zona DNS, recupere os valores do registo CNAME que se apresenta :
+>>
+>>![email](images/dkim-503.png){.thumbnail}
+>>
+>> Usando o exemplo da captura acima, o domínio é "**mydomain.ovh**" e é necessário configurar o seletor "**2**". Aqui, é preciso adicionar um registo CNAME que tem por subdomínio o valor `ovhex1234567-seletor2.domainkey.mydomain.ovh` e como alvo `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
+>> Depois de configurar a sua zona DNS, aguarde o tempo da propagação DNS (24h no máximo)
+>>
 
-Eis os 4 estados que têm por resultado o ícone DKIM a vermelho na sua Área de Cliente:
+#### A partir da interface API OVHcloud, como compreender o estado do DKIM que não funciona? <a name="api-error"></a>
+
+Se utilizar as API da OVHcloud para configurar o seu DKIM e este não estiver funcional, consulte a secção "[Os diferentes estados do DKIM](#dkim-status)" deste guia para identificar o estado dos seus seletores.
+
+Abaixo irá encontrar os estados que podem bloquear o funcionamento do seu DKIM e a solução adequada a cada situação.
 
  - `WaitingRecord`: os registos DNS estão a aguardar uma configuração ou em curso de validação na zona DNS do domínio. É efetuada uma verificação automática regular para verificar se o registo DNS está presente e corretamente indicado. Consoante a sua oferta, siga a **etapa 5** na secção "[Configuração completa do DKIM](#firststep)" para configurar corretamente a zona DNS do domínio em questão.
  - `ready`: os registos DNS estão presentes na zona. O DKIM pode agora ser ativado. Basta que ative o seletor recorrendo à secção "[Ativar ou alterar um seletor DKIM](#enable-switch)".
