@@ -1,7 +1,7 @@
 ---
 title: "Clients Kimsufi et So you Start - Se familiariser avec l'espace client OVHcloud"
 excerpt: "Apprenez à naviguer dans l'espace client OVHcloud"
-updated: 2023-01-05
+updated: 2024-04-04
 ---
 
 ## Objective
@@ -93,7 +93,7 @@ Dans l’espace client OVHcloud, ces options sont regroupées dans un espace com
 - **Mon niveau de support** (uniquement disponible pour les services OVHcloud) : vous trouverez plus d’informations sur le niveau de support proposé par OVHcloud dans cette rubrique.
 - **Gestion des utilisateurs** : cette rubrique vous permet de gérer vos utilisateurs. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - **Mes factures** : depuis cette rubrique, vous pouvez consulter vos factures, suivre les paiements effectués avec votre moyen de paiement par défaut et consulter vos avoirs. Plus d'informations sur [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management).
-- **Mes services** : cette rubrique vous permet de visualiser l'ensemble de vos services, vos contrats et vos clés SSH.
+- **Mes services** : cette rubrique vous permet de visualiser l'ensemble de vos services et vos contrats.
 - **Moyens de paiement** : dans cette rubrique, vous avez accès à votre moyen de paiement actuel, votre compte prépayé ainsi que vos vouchers OVHcloud. Vous y trouverez également l'option d'ajouter/supprimer une méthode de paiement. Pour plus d’informations sur la gestion de vos moyens de paiement, nous vous invitons à consulter [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 - **Mes commandes** : consultez vos commandes depuis cette page. Plus d'informations sur [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 - **Mes demandes d'assistance** : cette rubrique vous permet d’ouvrir/visualiser l’ensemble de vos demandes d’assistance.

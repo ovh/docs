@@ -1,7 +1,7 @@
 ---
 title: Kimsufi and So you Start customers - Get to know the OVHcloud Control Panel
 excerpt: Find out how to navigate the OVHcloud Control Panel
-updated: 2023-01-05
+updated: 2024-04-04
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Clients Kimsufi et So you Start - Se familiariser avec l'espace client OVHcloud"
 excerpt: "Apprenez à naviguer dans l'espace client OVHcloud"
-updated: 2023-01-05
+updated: 2024-04-04
 ---
 
 ## Objective
