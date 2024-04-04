@@ -31,11 +31,13 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 <details>
 
-  <summary><b>Liste de vos VRacks Services</b> </summary>
+  <summary><b>Liste de vos vRacks Services</b> </summary>
 
 <blockquote>
     
 ![overview 01](images/01-VRS.png){.thumbnail}
+
+Dans cet écran vous avez la liste des différents Services vRack déclarés.
 
 </blockquote>
 
@@ -46,24 +48,40 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
     
   <summary><b>Vue d'ensemble </b> </summary>
 
+<blockquote>  
+
 ![overview 01](images/07-VRS.png){.thumbnail}
+
+Dans ce premier onglet, vous avez toutes les informations générales relatives au Service vRack sélectionné.
 
 ---
 
 ![overview 01](images/08-VRS.png){.thumbnail}
 
+Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous avez la liste des sous-réseaux créés et disponibles pour le Service vRack sélectionné.
+
 ---
 
 ![overview 01](images/09-VRS.png){.thumbnail}
-  
-    
+
+Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous avez la liste des Services Endpoints créés et disponibles pour le Service vRack sélectionné.
+
+Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'étape de création d'un sous-réseau.
+
+</blockquote>    
 
 </details>
 
 <details>
-  <summary><b>Création d'un VRack Service</b> </summary>
+  <summary><b>Création d'un vRack Service</b> </summary>
+
+<blockquote>    
 
 ![overview 01](images/03-VRS.png){.thumbnail}
+
+La création dun vRack Service se déroule en lui attribuant un nom et une région.
+
+En effet vRack Services est un service régional. Vous devez donc choisir dans quelle région vous comptez l'utiliser. Pour bénéficier du Service Endpoint, vous devez sélectionner la région correspondante à votre service managé OVHcloud.
 
 ---
 
@@ -76,6 +94,8 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 ---
 
 ![overview 01](images/06-VRS.png){.thumbnail}
+
+</blockquote>    
     
 </details>
 
