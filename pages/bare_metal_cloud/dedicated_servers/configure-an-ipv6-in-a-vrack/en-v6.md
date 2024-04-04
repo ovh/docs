@@ -64,8 +64,36 @@ To gather an IPv6 block with OVH's services, particularly for use with a vRack, 
 ![image](https://github.com/ovh/docs/assets/60412/3a8d7daa-7c55-4b4b-a090-2043d98b7e56)
 
 ### Configuring an IPv6 block within your vRack
-        manual
-        autoconfiguration (slaac)
+
+<details>
+<summary> <b>Manual</b> </summary>
+<blockquote>
+
+Inside given /56 block, there is always first /64 subnet that is in bridged mode. You can view it this way:
+
+![image-2024-3-29_14-54-24](https://github.com/ovh/docs/assets/60412/c3c67e28-205c-4ebe-910f-fefa5c018781)
+
+
+To get more details:
+
+![image-2024-3-29_14-53-36](https://github.com/ovh/docs/assets/60412/574f9e7a-3c6c-4aea-b232-0e1167a8285a)
+
+
+</blockquote>
+</details>
+        
+<details>
+<summary> <b>Autoconfiguration (slaac)</b> </summary>
+<blockquote>
+
+To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
+
+![image-2024-3-29_14-48-7](https://github.com/ovh/docs/assets/60412/a26da7cd-9a9d-4841-b055-9997cf460adc)
+
+
+</blockquote>
+</details>
+
 ### Configuration on host side
         manual
         slaac
