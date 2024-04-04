@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise"
 excerpt: "Découvrez comment prendre en main votre nouveau serveur dédié Kimsufi, So You Start ou Rise"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 ## Objectif
@@ -69,35 +69,13 @@ Cette étape vous permet de configurer le type de RAID ainsi que le partitionnem
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
-#### Ajout d'une clé SSH (facultatif)
+Vous y trouverez notamment des questions complémentaires spécifiques au système d'exploitation sélectionné.
 
-Si vous installez un système d'exploitation GNU/Linux, vous pouvez ajouter votre clé SSH à la dernière étape du processus d'installation.
+Par exemple, si vous installez un système d'exploitation GNU/Linux, vous pouvez y ajouter votre clé SSH.
 
-![configuration SSH](images/SSH_01.png){.thumbnail}
+![configuration SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
-Si une clé SSH est déjà enregistrée, elle apparaît dans le menu déroulant sous « Clés SSH » en bas. Sinon, vous devrez d'abord en ajouter une dans la section « Mes services ».
-
-Pour ce faire, ouvrez la barre latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
-
-![configuration SSH](images/SSH_02.png){.thumbnail}
-
-Dans « Mes services », basculez vers l'onglet `Clés SSH`{.action} et cliquez sur `Ajouter une clé SSH`{.action}.
-
-![configuration SSH](images/SSH_03.png){.thumbnail}
-
-Comme il s'agit de l'installation d'un serveur dédié, veillez à sélectionner « Dédié » dans le menu déroulant (compatible avec un VPS également).
-
-Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-même (de type RSA, ECDSA ou Ed25519) dans les champs correspondants.
-
-![configuration SSH](images/SSH_04.png){.thumbnail}
-
-Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
-> [!warning]
->OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
->
->Ce guide est conçu pour vous aider le plus possible dans les tâches courantes. Néanmoins, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en oeuvre des services sur un serveur.
->
+Cliquez enfin sur `Confirmer`{.action} pour lancer l'installation du système d'exploitation sur votre serveur dédié.
 
 <a name="connect"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise"
 excerpt: "Découvrez comment prendre en main votre nouveau serveur dédié Kimsufi, So You Start ou Rise"
-updated: 2024-02-19
+updated: 2024-04-04
 ---
 
 ## Objectif
