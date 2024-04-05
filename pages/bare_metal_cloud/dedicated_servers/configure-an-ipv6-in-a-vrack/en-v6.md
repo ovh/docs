@@ -99,8 +99,28 @@ Don't forget to configure SLAAC on your host machine.
         manual
         slaac
 ### Setup verification
-        local
-        from remote
+<details>
+<summary> <b>Local</b> </summary>
+<blockquote>
+
+``` bash
+#debian@ns2000052:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
+PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c166) 56 data bytes
+64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=1 ttl=64 time=0.043 ms
+64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=2 ttl=64 time=0.034 ms
+```
+
+</blockquote>
+</details>
+
+<details>
+<summary> <b>Remote</b> </summary>
+<blockquote>
+
+...
+
+</blockquote>
+</details>    
 
 
 
