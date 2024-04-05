@@ -156,9 +156,24 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 ## Configuring IPv6 in a vRack for routed-mode
 ![image](https://github.com/ovh/docs/assets/60412/abe59737-c29f-4f71-8907-ea33549e780e)
 
-### Configuring an IPv6 block within your vRack
+
 
 ### Configuring routed subnet
+
+<details>
+<summary> <b>Define</b> </summary>
+<blockquote>
+
+To define routed subnets, you need to define them using API first. For that please use the call as in the example below:
+
+![image-2024-3-29_14-46-53](https://github.com/ovh/docs/assets/60412/c585d58c-3e5d-4a1c-be00-68267df881bd)
+
+
+</blockquote>
+</details>
+
+
+
 
 ### Configuration on host side
     manual
