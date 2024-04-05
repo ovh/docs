@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una dirección IP como alias'
 excerpt: 'Cómo añadir direcciones Additional IP a su configuración VPS'
-updated: 2024-04-04
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -70,7 +70,7 @@ La creación de este archivo de configuración impide la ejecución automática 
 
 #### 2\. crear una copia de seguridad
 
-Por defecto, el fichero de configuración se encuentra en la ruta `/etc/Network/interfaces.d`.
+Por defecto, el fichero de configuración se encuentra en la ruta `/etc/network/interfaces.d`.
 
 En nuestro ejemplo, nuestro archivo se llama `50-cloud-init`, por lo que hacemos una copia del archivo `50-cloud-init` utilizando el siguiente comando:
 

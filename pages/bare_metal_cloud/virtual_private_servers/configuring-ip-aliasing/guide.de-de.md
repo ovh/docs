@@ -1,7 +1,7 @@
 ---
 title: 'IP-Adresse als Alias konfigurieren'
 excerpt: 'Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration einbinden'
-updated: 2024-04-04
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -69,7 +69,7 @@ Die Erstellung dieser Konfigurationsdatei verhindert die automatische Ausführun
 
 #### Schritt 2: Backup erstellen
 
-Standardmäßig befindet sich die Konfigurationsdatei im Pfad `etc\Network\interfaces.d`.
+Standardmäßig befindet sich die Konfigurationsdatei im Pfad `etc/network/interfaces.d`.
 
 In unserem Beispiel heißt unsere Datei `50-cloud-init`, also erstellen wir eine Kopie der Datei `50-cloud-init` mit folgendem Befehl:
 
