@@ -66,6 +66,9 @@ Seleccione "ovh" en la lista desplegable "Tipo", escriba un nombre en el campo "
 
 ![Añadir una MAC virtual (2)](images/addvmac2.png){.thumbnail}
 
+Tras unos segundos, aparecerá una dirección MAC virtual en la columna "MAC virtual" de la fila de dirección Additional IP. 
+Esta dirección MAC virtual será necesaria cuando configure su máquina virtual en el host.
+
 ### Establecer la dirección de la puerta de enlace
 
 Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 254. Por ejemplo, si la dirección IP principal del servidor es:
