@@ -9,7 +9,7 @@ updated: 2024-04-05
 Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server.
 
 > [!primary]
-> To back up a Bare Metal Linux server using Veeam Backup and Replication (Enterprise), see [this guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-realisation).
+> To back up a Bare Metal Linux server using Veeam Backup and Replication (Enterprise), see [this guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux).
 
 ## Requirements
 

@@ -160,7 +160,7 @@ You can now proceed to perform a backup with Veeam Enterprise.
 
 Back up your environment using the Linux or Windows guide below:
 
-- For Linux: [Backing Up a Bare Metal Linux Server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
+- For Linux: [Backing Up a Bare Metal Linux Server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
 - For Windows: [Backing Up a Bare Metal Server Using Veeam Agent for Windows](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
 
 Join our community of users on <https://community.ovh.com/en/>.

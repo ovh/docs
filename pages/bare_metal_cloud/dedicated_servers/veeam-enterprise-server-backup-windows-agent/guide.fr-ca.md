@@ -9,7 +9,7 @@ updated: 2024-04-05
 Découvrez comment configurer Veeam Agent pour Microsoft Windows pour sauvegarder votre serveur Bare Metal Windows.
 
 > [!primary]
-> Pour sauvegarder un serveur Bare Metal Linux en utilisant Veeam Backup and Replication (Enterprise), consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-realisation).
+> Pour sauvegarder un serveur Bare Metal Linux en utilisant Veeam Backup and Replication (Enterprise), consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux).
 
 ## Prérequis
 
