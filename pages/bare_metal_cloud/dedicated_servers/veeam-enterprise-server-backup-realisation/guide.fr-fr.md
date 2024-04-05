@@ -1,21 +1,21 @@
 ---
-title: Sauvegarder un serveur Bare Metal avec Veeam Enterprise
-excerpt: Découvrez comment faire un backup de votre serveur Bare Metal avec Veeam Backup and Replication (Enterprise)
-updated: 2024-03-07
+title: Sauvegarder un serveur Bare Metal Linux avec Veeam Enterprise
+excerpt: Découvrez comment faire un backup de votre serveur Bare Metal Linux avec Veeam Backup and Replication (Enterprise)
+updated: 2024-04-05
 ---
 
 ## Objectif
 
 Qu'il s'agisse d'une panne matérielle ou de la suppression accidentelle d'un fichier important, effectuer des sauvegardes fréquentes est extrêmement important et peut vous faire économiser de nombreuses heures de travail inutiles.
 
-**Découvrez comment réaliser une sauvegarde de votre serveur Bare Metal avec Veeam Backup and Replication (Enterprise).**
+**Découvrez comment réaliser une sauvegarde de votre serveur Bare Metal Linux avec Veeam Backup and Replication (Enterprise).**
 
 > [!primary]
-> Pour sauvegarder votre serveur Bare Metal avec Veeam Agent pour Microsoft Windows, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent).
+> Pour sauvegarder un serveur Bare Metal Windows avec Veeam Agent pour Microsoft Windows, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent).
 
 ## Prérequis
 
-- Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+- Un [serveur Bare Metal Linux OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
 - [Veeam Backup & Replication installé et enregistré](/pages/storage_and_backup/backup_and_aster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!warning]
@@ -23,11 +23,11 @@ Qu'il s'agisse d'une panne matérielle ou de la suppression accidentelle d'un fi
 
 ## En pratique
 
-Pour commencer, dans l'onglet `Home`{.action}, cliquez sur le bouton `Backup Job`{.action} et sélectionnez l'une des options `<OS> computer...` à sauvegarder. Pour ce guide, nous sélectionnons Windows.
+Dans l'onglet `Home`{.action} de Veeam, cliquez sur le bouton `Backup Job`{.action} et sélectionnez l'option `Linux computer...`.
 
 ![Home - backup job](images/backup01.png){.thumbnail}
 
-Dans la section **Job Mode**, sélectionnez le **Type** deserveur et le **Mode** pour la sauvegarde.
+Dans la section **Job Mode**, sélectionnez le **Type** de serveur et le **Mode** pour la sauvegarde.
 
 Cliquez ensuite sur le bouton `Next`{.action}.
 
@@ -39,17 +39,17 @@ Cliquez ensuite sur le bouton `Next`{.action}.
 
 ![Name - name and description](images/backup03.png){.thumbnail}
 
-Dans la section **Computers**, cliquez sur le bouton `Add...`{.action}. Sélectionnez ensuite l'ordinateur individuel.
+Dans la section **Computers**, cliquez sur le bouton `Add...`{.action}.
 
 ![Ordinateurs - ajouter](images/backup04.png){.thumbnail}
 
 Dans la fenêtre **Add Computer**, entrez le **nom d'hôte ou l'adresse IP** du serveur.
 
-Cliquez ensuite sur le bouton `Add...`{.action}.
+Cliquez ensuite sur le bouton `Add...`{.action}, sélectionnez `Stored`{.action} puis `Linux account...`{.action}.
 
 ![Ajouter un ordinateur - nom d'hôte ou adresse IP](images/backup05.png){.thumbnail}
 
-Entrez le **Nom d'utilisateur** et le **Mot de passe** puis cliquez sur `OK`{.action}.
+Entrez le **Nom d'utilisateur** et le **Mot de passe**, cochez la case **Elevate account privileges automatically** puis cliquez sur `OK`{.action}.
 
 ![Ajouter un ordinateur - nom d'utilisateur et mot de passe](images/backup06.png){.thumbnail}
 
@@ -59,7 +59,7 @@ Cliquez ensuite sur le bouton `Next`{.action}.
 
 ![Mode de sauvegarde - mode de sélection](images/backup07.png){.thumbnail}
 
-Dans la section **Storage**, choisissez le **Backup repository** et les paramètres.
+Dans la section **Storage**, choisissez le **Backup repository** (répertoire de sauegarde) et les paramètres.
 
 Cliquez ensuite sur le bouton `Next`{.action}.
 
@@ -67,13 +67,13 @@ Cliquez ensuite sur le bouton `Next`{.action}.
 
 Cliquez de nouveau sur le bouton `Next`{.action} pour ignorer la section **Guest Processing**,$ car aucune configuration n'y est nécessaire.
 
-Dans la section **Schedule**, vous pouvez cliquer sur `Run the job automatically`{.action} si vous souhaitez configurer la tâche de sauvegarde pour qu'elle se produise de manière récurrente.
+Dans la section **Schedule**, vous pouvez cocher la case `Run the job automatically`{.action} si vous souhaitez que la tâche de sauvegarde se produise de manière récurrente.
 
 Pour ce guide, nous allons exécuter la sauvegarde manuellement. Nous allons donc cliquer sur le bouton `Apply`{.action} pour continuer.
 
 ![Schedule](images/backup09.png){.thumbnail}
 
-Vérifiez que tout est correct dans la section **Summary**.
+Vérifiez que toutes les informations sont correctes dans la section **Summary**.
 
 Si vous souhaitez lancer la tâche de sauvegarde dès la fin de la configuration, cochez la case `Run the job when I click Finish`{.action}.
 

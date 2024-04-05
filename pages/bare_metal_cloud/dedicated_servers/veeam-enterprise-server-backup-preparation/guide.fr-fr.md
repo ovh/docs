@@ -1,7 +1,7 @@
 ---
 title: Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise
 excerpt: Découvrez comment préparer la sauvegarde de votre serveur Bare Metal à l'aide de Veeam Backup and Replication (Enterprise)
-updated: 2024-03-26
+updated: 2024-04-05
 ---
 
 ## Objectif

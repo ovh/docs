@@ -1,21 +1,21 @@
 ---
-title: Backing up a Bare Metal Server with Veeam Enterprise
-excerpt: Learn how to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise)
-updated: 2024-03-07
+title: Backing up a Bare Metal Linux Server with Veeam Enterprise
+excerpt: Learn how to back up your Bare Metal Linux Server using Veeam Backup and Replication (Enterprise)
+updated: 2024-04-05
 ---
 
 ## Objective
 
 Whether it is a hardware failure or accidentally deleting an important file, maintaining frequent backups is extremely important and can save you countless hours of unnecessary work.
 
-**Learn how to back up your Bare Metal Server using Veeam Backup and Replication (Enterprise)**
+**Learn how to back up your Bare Metal Linux Server using Veeam Backup and Replication (Enterprise)**
 
 > [!primary]
-> To back up your Bare Metal server using the Veeam Agent for Microsoft Windows, see [this guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent).
+> To back up a Bare Metal Windows server using the Veeam Agent for Microsoft Windows, see [this guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent).
 
 ## Requirements
 
-- An [OVHcloud Bare Metal server](https://www.ovhcloud.com/en-au/bare-metal/)
+- An [OVHcloud Bare Metal Linux server](https://www.ovhcloud.com/en-au/bare-metal/)
 - [Veeam Backup & Replication installed and registered](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!warning]
@@ -23,7 +23,7 @@ Whether it is a hardware failure or accidentally deleting an important file, mai
 
 ## Instructions
 
-To begin, from the `Home`{.action} tab, click the `Backup Job`{.action} button and select one of the `<OS> computer...` options to backup. For this guide, we are selecting Windows.
+To begin, from the `Home`{.action} tab of Veeam, click the `Backup Job`{.action} button and select one of the `Linux computer...` option to backup.
 
 ![Home - backup job](images/backup01.png){.thumbnail}
 
@@ -39,17 +39,17 @@ Then, click the `Next`{.action} button.
 
 ![Name - name and description](images/backup03.png){.thumbnail}
 
-In the **Computers** section, click the `Add...`{.action} button. Then select the individual computer.
+In the **Computers** section, click the `Add...`{.action} button.
 
 ![Computers - add](images/backup04.png){.thumbnail}
 
 In the **Add Computer** pop-up, enter the **Host name or IP address** of the server.
 
-Then, click the `Add...`{.action} button.
+Then, click the `Add...`{.action} button, select `Stored`{.action} and then `Linux account...`{.action}.
 
 ![Add computer - host name or IP address](images/backup05.png){.thumbnail}
 
-Enter the **Username** and **Password** and then click `OK`{.action}.
+Enter the **Username** and **Password**. Select the **Elevate account privileges automatically** box and then click `OK`{.action}.
 
 ![Add computer - username and password](images/backup06.png){.thumbnail}
 
@@ -67,7 +67,7 @@ Then, click the `Next`{.action} button.
 
 Click the `Next`{.action} button again to skip the **Guest Processing** section, as no configurations are needed.
 
-In the **Schedule** section, you can click `Run the job automatically`{.action} if you would like to configure the backup job to be reoccurring. 
+In the **Schedule** section, you can click `Run the job automatically`{.action} if you would like to configure the backup job to be reoccurring.
 
 For this article, we will be executing the backup manually so we will click the `Apply`{.action} button to proceed.
 
@@ -75,7 +75,7 @@ For this article, we will be executing the backup manually so we will click the 
 
 Review the **Summary** section to ensure that everything is correct.
 
-If you want to run the job as soon as you finish setup, select the `Run the job`{.action} when I click Finish checkbox.
+If you want to run the job as soon as you finish setup, select the `Run the job when I click Finish`{.action} checkbox.
 
 ![Summary](images/backup10.png){.thumbnail}
 

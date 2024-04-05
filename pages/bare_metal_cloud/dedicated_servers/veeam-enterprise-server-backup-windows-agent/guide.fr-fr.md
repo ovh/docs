@@ -1,18 +1,21 @@
 ---
-title: "Sauvegarder un serveur Bare Metal via Veeam Agent pour Windows"
-excerpt: "Découvrez comment configurer Veeam Agent pour Microsoft Windows afin de sauvegarder votre serveur dédié"
-updated: 2024-03-07
+title: "Sauvegarder un serveur Bare Metal Windows via Veeam Agent pour Windows"
+excerpt: "Découvrez comment configurer Veeam Agent pour Microsoft Windows afin de sauvegarder votre serveur dédié Windows"
+updated: 2024-04-05
 ---
 
 ## Objectif
 
-Découvrez commentconfigurer Veeam Agent pour Microsoft Windows pour sauvegarder votre serveur Bare Metal.
+Découvrez comment configurer Veeam Agent pour Microsoft Windows pour sauvegarder votre serveur Bare Metal Windows.
+
+> [!primary]
+> Pour sauvegarder un serveur Bare Metal Linux en utilisant Veeam Backup and Replication (Enterprise), consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-realisation).
 
 ## Prérequis
 
-- Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+- Un [serveur Bare Metal OVHcloud sous Windows](https://www.ovhcloud.com/fr/bare-metal/)
 - Avoir installé [Veeam Backup and Replication 12.0](https://www.veeam.com/download-version.html?ad=downloads&tab=previous)
-- Le [logiciel d'installation](https://login.veeam.com/realms/veeamsso/protocol/openid-connect/auth?client_id=veeam-com&response_type=code&redirect_uri=https%3A%2F%2Fwww.veeam.com%2Foauth&scope=profile&state=e9a55dcbf050f86c5eb69ea264b8fb86) Veeam Agent for Microsoft Windows 6.0.2 (un compte Veeam est requis)
+- Le [logiciel d'installation Veeam Agent for Microsoft Windows 6.0.2](https://login.veeam.com/realms/veeamsso/protocol/openid-connect/auth?client_id=veeam-com&response_type=code&redirect_uri=https%3A%2F%2Fwww.veeam.com%2Foauth&scope=profile&state=e9a55dcbf050f86c5eb69ea264b8fb86) (un compte Veeam est requis)
 
 > [!warning]
 > Pour suivre les étapes de ce guide, vous devez avoir préalablement suivi les étapes détaillées de notre premier guide « [Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation) ».
@@ -68,6 +71,17 @@ Sélectionnez votre répertoire de sauvegarde (*backup repository*) et, si vous 
 Cliquez sur `Next`{.action}.
 
 ![Répertoire de sauvegarde](images/05-backup-repository.PNG){.thumbnail}
+
+> [!warning]
+> Si l'option « Standard S3 » n'apparaît pas en tant que réperoire de sauvegarde, suivez les étapes ci-dessous pour vérifier les droits d'accès.
+> Depuis l'interface de Veeam Enterprise, sélectionnez `Backup Repositories`{.action}, faites un clic droit sur votre répertoire et sélectionnez `Access permissions...`{.action}.
+>
+> ![Backup repository - access permissions](images/05-backup-repository-access-permissions.PNG){.thumbnail}
+>
+> Dans l'onglet `AStandalone applications`{.action}, assurez-vous que l'une des options **Allow** est sélectionnée pour l'accès au répertoire. Si vous devez ajouter votre compte ou votre groupe, vous pouvez utiliser le bouton `Add...`{.action} . Si vous avez apporté des modifications, sélectionnez `OK`{.action} pour les appliquer.
+>
+> ![Backup repository - standalone applications](images/05-backup-repository-standalone-applications.PNG){.thumbnail}
+>
 
 #### Sauvegarde en cache (facultatif)
 

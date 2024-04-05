@@ -1,7 +1,7 @@
 ---
 title: Restoring a Bare Metal Server with Veeam Enterprise
 excerpt: Learn how to restore a Bare Metal Server using the Veeam Backup & Replication application
-updated: 2024-03-07
+updated: 2024-04-05
 ---
 
 ## Objective

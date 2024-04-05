@@ -1,16 +1,19 @@
 ---
-title: Backing Up a Bare Metal Server Using Veeam Agent for Windows
-excerpt: Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal server.
-updated: 2024-03-07
+title: Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows
+excerpt: Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server.
+updated: 2024-04-05
 ---
 
 ## Objective
 
-Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal server.
+Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bare Metal Windows server.
+
+> [!primary]
+> To back up a Bare Metal Linux server using Veeam Backup and Replication (Enterprise), see [this guide](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-realisation).
 
 ## Requirements
 
-- An [OVHcloud Bare Metal server](https://www.ovhcloud.com/en-au/bare-metal/)
+- An [OVHcloud Bare Metal Windows server](https://www.ovhcloud.com/en-au/bare-metal/)
 - [Veeam Backup and Replication 12.0](https://www.veeam.com/download-version.html?ad=downloads&tab=previous) installed
 - Veeam Agent for Microsoft Windows 6.0.2 [installation software](https://login.veeam.com/realms/veeamsso/protocol/openid-connect/auth?client_id=veeam-com&response_type=code&redirect_uri=https%3A%2F%2Fwww.veeam.com%2Foauth&scope=profile&state=e9a55dcbf050f86c5eb69ea264b8fb86) (Veeam account required)
 
@@ -68,6 +71,17 @@ Select your **Backup repository** and, if desired, modify the retention policy.
 Click `Next`{.action}.
 
 ![Backup repository](images/05-backup-repository.PNG){.thumbnail}
+
+> [!warning]
+> If you do not see "Standard S3" as an option for your backup repository, use the steps below to check the access permissions.
+> From the Veeam Enterprise application interface, select `Backup Repositories`{.action}, right-click on your repository, and select `Access permissions...`{.action}.
+>
+> ![Backup repository - access permissions](images/05-backup-repository-access-permissions.PNG){.thumbnail}
+>
+> In the `Standalone applications`{.action} tab, make sure one of the **Allow** options is selected for repository access. If you need to add your account or group, you can use the `Add...`{.action} button. If you made changes, select `OK`{.action} to apply them.
+>
+> ![Backup repository - standalone applications](images/05-backup-repository-standalone-applications.PNG){.thumbnail}
+>
 
 #### Backup cache (optional)
 
