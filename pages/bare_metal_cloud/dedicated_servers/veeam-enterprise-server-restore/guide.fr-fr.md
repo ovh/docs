@@ -13,7 +13,7 @@ Si vous ne pouvez pas restaurer les données d’une sauvegarde, celle-ci ne ser
 ## Prérequis
 
 - Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-- [Veeam Backup & Replication installé et enregistré](/pages/storage_and_backup/backup_and_aster_recovery_solutions/veeam/veeam_veeam_backup_replication)
+- [Veeam Backup & Replication installé et enregistré](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!warning]
 > Ce guide n'est à suivre que si vous avez préalablement suivi les étapes détaillées dans [nos guides pour sauvegarder un serveur bare metal](/products/bare-metal-cloud-dedicated-servers-backup-restore).

@@ -16,7 +16,7 @@ Qu'il s'agisse d'une panne matérielle ou de la suppression accidentelle d'un fi
 ## Prérequis
 
 - Un [serveur Bare Metal Linux OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-- [Veeam Backup & Replication installé et enregistré](/pages/storage_and_backup/backup_and_aster_recovery_solutions/veeam/veeam_veeam_backup_replication)
+- [Veeam Backup & Replication installé et enregistré](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!warning]
 > Pour suivre les étapes de ce guide, vous devez avoir préalablement suivi les étapes détaillées de notre premier guide « [Préparer une sauvegarde de serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation) ».

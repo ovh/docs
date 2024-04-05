@@ -28,7 +28,7 @@ Téléchargez [Veeam Agent for Microsoft Windows 6.0.2](https://login.veeam.com/
 
 Installez Veeam Agent et sélectionnez `No`{.action} lorsque vous êtes invité à installer un fichier de licence.
 
-![License](images/01a-license.PNG){.thumbnail}
+![License](images/01a-licence.PNG){.thumbnail}
 
 Cliquez sur le bouton de menu et sélectionnez `+ Add New Job...`{.action}.
 
@@ -46,7 +46,7 @@ Vous pouvez modifier le nom et/ou la description par défaut. Cliquez ensuite su
 
 Choisissez les données à sauvegarder et cliquez sur `Next`{.action}.
 
-![Mode de sauvegarde](images/02b-mode-sauvegarde.PNG){.thumbnail}
+![Mode de sauvegarde](images/02b-backup-mode.PNG){.thumbnail}
 
 #### Destination
 
@@ -56,7 +56,7 @@ Choisissez `Veeam backup repository`{.action}. et cliquez sur `Next`{.action}.
 
 #### Serveur de sauvegarde
 
-Entrez le nom ou l'adresse IP du serveur Veeam Backup et renseignez vos identifiants Veeam (ils doivent être ceux d'un [compte de service Veeam Enterprise](/pages/storage_and_backup/backup_and_aster_recovery_solutions/veeam/veeam_backup_replication#creating-a-veeam-enterprise-service-account) valide).
+Entrez le nom ou l'adresse IP du serveur Veeam Backup et renseignez vos identifiants Veeam (ils doivent être ceux d'un [compte de service Veeam Enterprise](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_backup_replication#creating-a-veeam-enterprise-service-account) valide).
 
 Cliquez sur `Next`{.action}.
 
@@ -97,7 +97,7 @@ Si vous le souhaitez, vous pouvez activer des options d'accès avancé (*Guest p
 
 Cliquez sur `Next`{.action}.
 
-![Options avancées](images/07-traitement-invité.PNG){.thumbnail}
+![Options avancées](images/07-guest-processing.PNG){.thumbnail}
 
 #### Planification
 
@@ -117,7 +117,7 @@ Cliquez sur `Terminer`{.action}.
 
 Cliquez sur le bouton ☰ du menu, sélectionnez la tâche que vous venez de créer puis cliquez sur `Backup Now`{.action}.
 
-![Lancer la sauvegarde](images/10-start-backup.PNG){.thumbnail}
+![Lancer la sauvegarde](images/10-start-backup.png){.thumbnail}
 
 Vous pouvez suivre l'avancement de votre sauvegarde depuis l'application Veeam Agent :
 
