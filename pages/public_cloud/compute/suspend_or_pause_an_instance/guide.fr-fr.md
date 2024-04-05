@@ -59,7 +59,7 @@ Une fois la procédure terminée, votre instance aura le statut « Suspendue ».
 
 ![statut suspendu](images/instance_suspended.png){.thumbnail}
 
-Le snapshot sera ensuite disponible dans la rubrique `Instance Backup`{.action}. Un snapshot nommé *xxxxx-shelved* est alors visible :
+Le snapshot sera ensuite disponible dans la rubrique `Instance Backup`{.action} de la section `Storage` du menu gauche de l'espace Public Cloud. Un snapshot nommé *xxxxx-shelved* est alors visible :
 
 ![onglet snapshot](images/shelved_backup.png){.thumbnail}
 
@@ -231,6 +231,6 @@ Pour annuler cette action, saisissez la commande ci-dessous dans la ligne de com
 
 ## Aller plus loin
 
-[Documentation Openstack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[Documentation Openstack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
