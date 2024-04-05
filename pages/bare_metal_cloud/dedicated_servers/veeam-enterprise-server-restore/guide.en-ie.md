@@ -14,7 +14,9 @@ If you are unable to restore data from a backup, it serves no purpose. After rea
 
 - An [OVHcloud Bare Metal server](https://www.ovhcloud.com/en-ie/bare-metal/)
 - [Veeam Backup & Replication installed and registered](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
-- [Backing up a Bare Metal server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
+
+> [!primary]
+> This guide presupposes that you have followed the steps detailed in our [Backing up a Bare Metal Server guides](/products/bare-metal-cloud-dedicated-servers-backup-restore).
 
 ## Instructions
 
@@ -63,7 +65,5 @@ A pop-up window will appear that displays the progress of the restore. Once the 
 ![restore progress](images/DS_restore_Veeam09.png){.thumbnail}
 
 ## Go further
-
-[Backing up a Bare Metal server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
 
 Join our community of users on <https://community.ovh.com/en/>.

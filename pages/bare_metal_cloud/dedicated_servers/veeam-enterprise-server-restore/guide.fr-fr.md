@@ -14,7 +14,9 @@ Si vous ne pouvez pas restaurer les données d’une sauvegarde, celle-ci ne ser
 
 - Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
 - [Veeam Backup & Replication installé et enregistré](/pages/storage_and_backup/backup_and_aster_recovery_solutions/veeam/veeam_veeam_backup_replication)
-- [Avoir sauvegardé un serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
+
+> [!warning]
+> Ce guide n'est à suivre que si vous avez préalablement suivi les étapes détaillées dans [nos guides pour sauvegarder un serveur bare metal](/products/bare-metal-cloud-dedicated-servers-backup-restore).
 
 ## En pratique
 
@@ -63,7 +65,5 @@ Une fenêtre contextuelle s’affiche, indiquant la progression de la restaurati
 ![progression de la restauration](images/DS_restore_Veeam09.png){.thumbnail}
 
 ## Aller plus loin
-
-[Sauvegarder un serveur Bare Metal avec Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
