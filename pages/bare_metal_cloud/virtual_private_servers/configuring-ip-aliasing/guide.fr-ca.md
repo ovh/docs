@@ -66,7 +66,7 @@ La création de ce fichier de configuration empêche l'exécution automatique de
 
 #### Étape 2 : créer une sauvegarde
 
-Par défaut, le fichier de configuration est situé dans le chemin `etc\Nnetwork\interfaces.d`.
+Par défaut, le fichier de configuration est situé dans le chemin `etc/network/interfaces.d`.
 
 Dans notre exemple, notre fichier s'appelle `50-cloud-init`, donc nous faisons une copie du fichier `50-cloud-init` en utilisant la commande suivante :
 
