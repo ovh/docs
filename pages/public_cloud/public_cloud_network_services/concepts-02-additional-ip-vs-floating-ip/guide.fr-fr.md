@@ -42,7 +42,7 @@ Pour plus d'informations sur la configuration des Floating IP, consultez la page
 
 ### Comment obtenir des adresses IP publiques dans votre espace client ?
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section Public Cloud, allez dans la rubrique 'Network'{.action} du menu de gauche et sélectionnez `Public IPs`{.action}. Gérez ici les Additional IP et les Floating IP selon vos besoins.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Public Cloud`{action}, allez dans la rubrique `Network` du menu de gauche et sélectionnez `Public IPs`{.action}. Gérez ici les Additional IP et les Floating IP selon vos besoins.
 
 ![Concept IP](images/concip.png){.thumbnail}
 
@@ -50,7 +50,7 @@ En fonction de votre choix, vous pouvez faire votre sélection parmi les différ
 
 > [!warning]
 >
-> Les modes de tarification dépendant de l'usage de l'IP que vous choisissez. L'usage d'un Additional IP sera factué au mois tandis que l'usage d'un Floating IP sera facturé par heure. 
+> Les modes de tarification dépendent de l'utilisation de l'IP que vous choisissez. L'utilisation d'une adresse Additional IP est facturée au mois, tandis que l'utilisation d'une adresse Floating IP est facturée à l'heure.
 
 ## Aller plus loin
 
