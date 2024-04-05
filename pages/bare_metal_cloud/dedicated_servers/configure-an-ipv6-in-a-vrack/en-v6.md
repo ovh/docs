@@ -96,8 +96,31 @@ Don't forget to configure SLAAC on your host machine.
 </details>
 
 ### Configuration on host side
-        manual
-        slaac
+<details>
+<summary> <b>Automatic configuration</b></b> </summary>
+<blockquote>
+
+To use automatic configuration, please ensure you have configured your interface as the following:
+
+Ensure your host will accept Router Advertisements (for autoconfiguration) on the vrack interface (in our example "eth1"):
+``` bash
+$ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
+```
+ 
+Please note this setting will not work if ipv6.forwarding is enabled in your system. For that case please refer guide linked below.
+ 
+Bring up the interface:
+``` bash
+$ sudo ip link set up dev eth1
+$ ip -6 addr list dev eth1
+4: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    inet6 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166/64 scope global dynamic mngtmpaddr
+       valid_lft 2322122sec preferred_lft 334922sec
+```
+
+</blockquote>
+</details>
+        
 ### Setup verification
 <details>
 <summary> <b>Local</b> </summary>
