@@ -1,7 +1,7 @@
 ---
 title: Getting started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2024-04-04
+updated: 2024-04-05
 ---
 
 ## Objective
@@ -38,7 +38,7 @@ This dashboard (tab `Home`{.action}) contains important information about your s
 
 #### Your VPS <a name="yourvps"></a>
 
-This section displays basic information about this VPS and the state of the service.
+In this section you can find basic information about the VPS and the state of the service. Click the tabs below to view details.
 
 > [!tabs]
 > Name
@@ -49,20 +49,20 @@ This section displays basic information about this VPS and the state of the serv
 >>
 >> The boot mode displayed here is either the "normal" mode, in which the system loads the installed operating system (*LOCAL*) or the **rescue mode** provided by OVHcloud for troubleshooting purposes. Use the `...`{.action} button to [restart the VPS](#reboot-current-range) or boot it into rescue mode.
 >>
->>You can find further information in our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+>> You can find further information in our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 >>
 > OS/Distribution
 >>
 >> This is the operating system currently installed. Use the `...`{.action} button to [reinstall the same OS or select a different one from the available options](#reinstallvps).
 >>
->>Be advised that a reinstallation will erase all data currently hosted on the VPS (additional disks excluded).
+>> Be advised that a reinstallation will erase all data currently hosted on the VPS (additional disks excluded).
 >>
 >> > [!primary]
 >> >
 >> > If you have ordered a **Windows** VPS, you can only choose a Windows OS for reinstallation. Correspondingly, if Windows was not selected in the order process, it cannot be installed after the VPS is delivered.
->> >
->> >
->> >Once an operating system is installed, you assume the responsibility to implement security updates. You can find further information [below](#reinstallvps) and in our guide [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+>>
+>>
+>> Once an operating system is installed, you assume the responsibility to implement security updates. You can find further information [below](#reinstallvps) and in our guide [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 >> 
 > Zone / Location
 >>
@@ -70,6 +70,8 @@ This section displays basic information about this VPS and the state of the serv
 >>
  
 #### Your configuration
+
+Click the tabs below to view details for this section.
 
 > [!tabs]
 > Model
@@ -83,6 +85,8 @@ This section displays basic information about this VPS and the state of the serv
 
 #### IP
 
+Click the tabs below to view details for this section.
+
 > [!tabs]
 > IPv4
 >>
@@ -93,6 +97,7 @@ This section displays basic information about this VPS and the state of the serv
 >> Here you can see the public IPv6 address and the associated gateway address. These are automatically attached to the VPS at installation. Find more information in [this guide](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
 >> 
 > Secondary DNS
+>>
 >> This feature is useful for hosting DNS services. Our guide [Configuring OVHcloud Secondary DNS on a VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps) describes it in detail.
 
 #### Summary of options
