@@ -117,7 +117,7 @@ Click `Finish`{.action}.
 
 Click the menu ☰ button, select the job you just created, and click `Backup Now`{.action}.
 
-![Start backup](images/10-start-backup.PNG){.thumbnail}
+![Start backup](images/10-start-backup.png){.thumbnail}
 
 You can view the progress of your backup in the Veeam Agent application:
 

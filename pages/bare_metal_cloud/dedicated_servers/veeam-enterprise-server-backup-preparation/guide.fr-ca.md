@@ -28,7 +28,7 @@ Vous pouvez également configurer votre serveur dédié pour utiliser un réseau
 
 ### Mise en place de votre serveur de backup Veeam Enterprise
 
-Téléchargez, installez et créez une licence pour votre serveur de sauvegarde Veeam Enterprise à l'aide de notre guide « [Installer Veeam Backup & Replication](/pages/storage_and_backup/backup_and_aster_recovery_solutions/veeam/veeam_backup_replication) ».
+Téléchargez, installez et créez une licence pour votre serveur de sauvegarde Veeam Enterprise à l'aide de notre guide « [Installer Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication) ».
 
 À partir de cette étape, vous pouvez continuer la lecture de ce guide pour apprendre à configurer S3 Object Storage en tant que dépôt de sauvegarde ou vous pouvez passer directement à l'étape [Aller plus loin](#gofurther).
 
@@ -78,81 +78,81 @@ Dans l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&fr
 
 Sélectionnez le fichier JSON que vous venez de modifier et cliquez sur `Importer`{.action}.
 
-![Object Storage - Utilisateur S3 - Import JSON](images/backup-Preparation-01.png){.thumbnail}
+![Object Storage - Utilisateur S3 - Import JSON](images/backup-preparation-01.png){.thumbnail}
 
 ### Configuration du repository S3 dans Veeam Enterprise
 
 Depuis l'application Veeam, sélectionnez `Backup Infrastructure`{.action}, `Backup Repositories`{.action} et `Add Repository`{.action}.
 
-![Veeam - ajouter un référentiel](images/backup-Preparation-02.png){.thumbnail}
+![Veeam - ajouter un référentiel](images/backup-preparation-02.png){.thumbnail}
 
 Sélectionnez `Object storage`{.action} comme type de dépôt.
 
-![Veeam - Object Storage](images/backup-Preparation-03.png){.thumbnail}
+![Veeam - Object Storage](images/backup-preparation-03.png){.thumbnail}
 
 Sélectionnez `S3 Compatible`{.action}.
 
-![Veeam - compatible S3](images/backup-Preparation-04.png){.thumbnail}
+![Veeam - compatible S3](images/backup-preparation-04.png){.thumbnail}
 
 Attribuez un **Nom** au nouveau référentiel et cliquez sur `Next`{.action}.
 
-![Veeam - nom du dépôt](images/backup-Preparation-05.png){.thumbnail}
+![Veeam - nom du dépôt](images/backup-preparation-05.png){.thumbnail}
 
 Renseignez les informations **Service point** (Endpoint) et **Region** de votre service de stockage S3.
 
 > Vous pouvez retrouver ces informations dans la section `Public Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 > Cliquez sur `Object Storage`{.action} puis cliquez sur le bouton `...`{.action} à droite de votre conteneur et cliquez sur `Voir les objets`{.action}.
 >
-> ![Object storage - display objects](images/backup-Preparation-06.png){.thumbnail}
+> ![Object storage - display objects](images/backup-preparation-06.png){.thumbnail}
 >
-> ![Object storage - endpoint](images/backup-Preparation-07.png){.thumbnail}
+> ![Object storage - endpoint](images/backup-preparation-07.png){.thumbnail}
 
-![Veeam - service endpoint and region](images/backup-Preparation-08.png){.thumbnail}
+![Veeam - service endpoint and region](images/backup-preparation-08.png){.thumbnail}
 
 Cliquez sur `Add`{.action} pour entrer vos informations d'identification. Entrez votre **Access key** et votre **Secret key**, puis cliquez sur `OK`{.action}.
 
 > Ces informations sont disponibles dans votre espace client OVHcloud sous l'onglet `Utilisateurs S3`{.action} . La **clé d'accès** (Access key) est visible sur la page principale. 
 > La **Clé secrète** (Secret key) se trouve en cliquant sur le bouton `...`{.action} et en sélectionnant `Voir la clé secrète`{.action}. 
 >
-> ![Object storage - keys](images/backup-Preparation-09.png){.thumbnail}
+> ![Object storage - keys](images/backup-preparation-09.png){.thumbnail}
 
-![Veeam - keys](images/backup-Preparation-10.png){.thumbnail}
+![Veeam - keys](images/backup-preparation-10.png){.thumbnail}
 
 Cliquez sur `Browse...`{.action} pour sélectionner le **Bucket**.
 
-![Veeam - bucket](images/backup-Preparation-11.png){.thumbnail}
+![Veeam - bucket](images/backup-preparation-11.png){.thumbnail}
 
 Sélectionnez le bucket et cliquez sur `OK`{.action}.
 
-![Veeam - bucket](images/backup-Preparation-12.png){.thumbnail}
+![Veeam - bucket](images/backup-preparation-12.png){.thumbnail}
 
 Cliquez sur `Browse...`{.action} pour sélectionner le **Dossier** (Folder).
 
-![Veeam - folder](images/backup-Preparation-13.png){.thumbnail}
+![Veeam - folder](images/backup-preparation-13.png){.thumbnail}
 
 Cliquez sur `New Folder`{.action}, entrez un nom pour le dossier, sélectionnez-le, puis cliquez sur `OK`{.action}.
 
-![Veeam - folder](images/backup-Preparation-14.png){.thumbnail}
+![Veeam - folder](images/backup-preparation-14.png){.thumbnail}
 
 A l'étape de montage du serveur, cliquez sur `Next`{.action}.
 
-![Veeam - Mount Server](images/backup-Preparation-15.png){.thumbnail}
+![Veeam - Mount Server](images/backup-preparation-15.png){.thumbnail}
 
 Sur l'écran de récapitulatif, cliquez sur `Apply`{.action}.
 
-![Veeam - review](images/backup-Preparation-16.png){.thumbnail}
+![Veeam - review](images/backup-preparation-16.png){.thumbnail}
 
 Une fois les processus exécutés avec succès, cliquez sur `Next`{.action}.
 
-![Veeam - process end](images/backup-Preparation-17.png){.thumbnail}
+![Veeam - process end](images/backup-preparation-17.png){.thumbnail}
 
 Passez en revue la page de résumé et cliquez sur `Finish`{.action}.
 
-![Veeam - summary](images/backup-Preparation-18.png){.thumbnail}
+![Veeam - summary](images/backup-preparation-18.png){.thumbnail}
 
 Les dépôts de sauvegarde doivent maintenant ressembler à ceci :
 
-![Veeam - dépôts](images/backup-Preparation-19.png){.thumbnail}
+![Veeam - dépôts](images/backup-preparation-19.png){.thumbnail}
 
 Vous pouvez à présent effectuer une sauvegarde avec Veeam Enterprise.
 
