@@ -1,7 +1,7 @@
 ---
 title: Acheter une Additional IP
 excerpt: "Découvrez comment commander des adresses Additional IP pour vos instances"
-updated: 2023-01-04
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -59,7 +59,8 @@ Les pays suivants sont disponibles pour la géolocalisation des IP :
 > [!primary] **Disponibilité**
 > 
 > Il est possible que certains de ces pays ne soient pas listés, en fonction de la disponibilité actuelle des adresses IPv4.
-> 
+>
+> Il n'est pas possible de choisir plusieurs pays, vous devrez en choisir un parmi ceux proposés.  
 
 > [!primary] **Location**
 >
