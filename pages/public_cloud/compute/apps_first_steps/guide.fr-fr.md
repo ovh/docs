@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec les applications préinstallées
 excerpt: Découvrez comment déployer des applications préinstallées sur vos instances Public Cloud
-updated: 2021-09-07
+updated: 2024-04-05
 ---
 
 ## Objectif
@@ -21,6 +21,10 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 #### Installez l'application préinstallée de votre choix
 
 Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), les API OVHcloud ou de l'API OpenStack Horizon, installez l'application de votre choix sur votre instance Public Cloud.
+
+> [!primary]
+>
+> [Ce guide](/pages/public_cloud/compute/install_wordpress_on_an_instance) vous servira d'exemple pour installer une application sur votre instance Public Cloud. 
 
 #### Détails de connexion à l'application
 
