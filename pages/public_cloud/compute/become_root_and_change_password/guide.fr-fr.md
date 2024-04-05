@@ -1,7 +1,7 @@
 ---
 title: 'Passer root et définir un mot de passe'
 excerpt: "Apprenez à vous servir de l'utilisateur root et à créer un mot de passe pour celui-ci"
-updated: 2024-04-05
+updated: 2022-03-24
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 
 ### Définir le mot de passe root <a name="settingtherootpassword"></a>
 
-Pour commencer, ouvrez l'application PuttyGen, préalablement installée sur votre poste de travail, et établissez une [connexion SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
+Pour commencer, établissez une [connexion SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
 
 Utilisez la commande ci-dessous pour définir un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
 
@@ -64,7 +64,7 @@ Entrez ensuite le mot de passe root.
 
 Pour commencer, [définissez le mot de passe root](#settingtherootpassword).
 
-Ensuite, connectez-vous à votre espace client OVHcloud et rendez-vous dans la partie 'Public Cloud'{.action}. Allez dans la rubrique 'Instnces'{.action} puis accédez à la console VNC :
+Ensuite, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et rendez-vous dans la partie `Public Cloud`{.action}. Allez dans la rubrique `Instances`{.action}.
 
 Cliquez sur les `...`{.action} à droite de l’instance correspondante puis cliquez sur `Détail de l'instance`{.action}. 
 
