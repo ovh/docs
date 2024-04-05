@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un VPS
 excerpt: Aprenda a gestionar un VPS en su área de cliente y descubra las primeras etapas de su uso, incluyendo las conexiones a distancia y las medidas de seguridad
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -42,7 +42,7 @@ La pestaña `Inicio`{.action} contiene información importante sobre su servicio
 
 #### Su VPS <a name="yourvps"></a>
 
-Esta sección muestra información básica sobre este VPS y el estado del servicio.
+Esta sección contiene información básica sobre el VPS y el estado del servicio. Haga clic en las fichas siguientes para ver los detalles.
 
 > [!tabs]
 > Nombre
@@ -75,6 +75,8 @@ Esta sección muestra información básica sobre este VPS y el estado del servic
  
 #### Su configuración
 
+Haga clic en las fichas siguientes para ver los detalles de esta sección.
+
 > [!tabs]
 > Modelo
 >>
@@ -86,6 +88,8 @@ Esta sección muestra información básica sobre este VPS y el estado del servic
 >> 
 
 #### IP
+
+Haga clic en las fichas siguientes para ver los detalles de esta sección.
 
 > [!tabs]
 > IPv4

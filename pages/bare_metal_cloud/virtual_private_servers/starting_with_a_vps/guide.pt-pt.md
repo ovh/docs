@@ -1,7 +1,7 @@
 ---
 title: Primeiros passos com um VPS
 excerpt: Aprenda a gerir um VPS na sua Área de Cliente e descubra as primeiras etapas da sua utilização, nomeadamente as ligações remotas e as medidas de segurança
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -42,7 +42,7 @@ O separador `Página`{.action} inicial contém informações importantes sobre o
 
 #### O seu VPS <a name="yourvps"></a>
 
-Esta secção apresenta informações básicas sobre este VPS e o estado do serviço.
+Encontre nesta parte as informações de base sobre o VPS e o estado do serviço. Clique nas guias abaixo para ver os detalhes.
 
 > [!tabs]
 > Nome
@@ -75,6 +75,8 @@ Esta secção apresenta informações básicas sobre este VPS e o estado do serv
  
 #### A sua configuração
 
+Clique nas guias abaixo para ver os detalhes da secção.
+
 > [!tabs]
 > Modelo
 >>
@@ -85,6 +87,8 @@ Esta secção apresenta informações básicas sobre este VPS e o estado do serv
 >> Os recursos atuais do seu VPS são apresentados aqui e podem ser atualizados separadamente clicando no botão correspondente. As atualizações são limitadas pelo modelo de VPS selecionado e só podem estar disponíveis com a mudança para uma [gama superior](https://www.ovhcloud.com/pt/vps).
 
 #### IP
+
+Clique nas guias abaixo para ver os detalhes da secção.
 
 > [!tabs]
 > IPv4

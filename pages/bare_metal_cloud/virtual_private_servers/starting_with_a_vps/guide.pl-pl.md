@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -42,7 +42,7 @@ Karta `Strona`{.action} główna zawiera ważne informacje o Twojej usłudze i u
 
 #### Twój VPS <a name="yourvps"></a>
 
-W tej sekcji wyświetlane są podstawowe informacje o serwerze VPS i o stanie usługi.
+W tej części znajdziesz podstawowe informacje o serwerze VPS i stanie usługi. Kliknij poniższe zakładki, aby wyświetlić szczegółowe informacje.
 
 > [!tabs]
 > Nazwisko
@@ -75,6 +75,8 @@ W tej sekcji wyświetlane są podstawowe informacje o serwerze VPS i o stanie us
  
 #### Twoja konfiguracja
 
+Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
+
 > [!tabs]
 > Model
 >>
@@ -86,6 +88,8 @@ W tej sekcji wyświetlane są podstawowe informacje o serwerze VPS i o stanie us
 >> 
 
 #### Adresy IP
+
+Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 
 > [!tabs]
 > IPv4

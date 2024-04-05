@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 ## Objectif
@@ -40,7 +40,7 @@ L'onglet `Accueil`{.action} contient des informations importantes sur votre serv
 
 #### Votre VPS <a name="yourvps"></a>
 
-Cette section affiche les informations de base de votre VPS et l'état du service.
+Retrouvez dans cette partie les informations de base sur le VPS et l’état du service. Cliquez sur les onglets ci-dessous pour afficher les détails.
 
 > [!tabs]
 > Nom
@@ -73,6 +73,8 @@ Cette section affiche les informations de base de votre VPS et l'état du servic
  
 #### Votre configuration
 
+Cliquez sur les onglets ci-dessous pour afficher les détails de cette section.
+
 > [!tabs]
 > Modèle
 >>
@@ -83,6 +85,8 @@ Cette section affiche les informations de base de votre VPS et l'état du servic
 >> Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure](https://www.ovhcloud.com/fr-ca/vps).
 
 #### IP
+
+Cliquez sur les onglets ci-dessous pour afficher les détails de cette section.
 
 > [!tabs]
 > IPv4

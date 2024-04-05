@@ -1,7 +1,7 @@
 ---
 title: Getting started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 ## Objective
@@ -38,7 +38,7 @@ This dashboard (tab `Home`{.action}) contains important information about your s
 
 #### Your VPS <a name="yourvps"></a>
 
-This section displays basic information about this VPS and the state of the service.
+In this section you can find basic information about the VPS and the state of the service. Click the tabs below to view details.
 
 > [!tabs]
 > Name
@@ -71,6 +71,8 @@ This section displays basic information about this VPS and the state of the serv
  
 #### Your configuration
 
+Click the tabs below to view details for this section.
+
 > [!tabs]
 > Model
 >>
@@ -82,6 +84,8 @@ This section displays basic information about this VPS and the state of the serv
 >> 
 
 #### IP
+
+Click the tabs below to view details for this section.
 
 > [!tabs]
 > IPv4

@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -42,12 +42,12 @@ Der Tab `Start`{.action} enthält wichtige Informationen zu Ihrem Dienst und erm
 
 #### Ihr VPS <a name="yourvps"></a>
 
-In diesem Abschnitt werden Informationen zu diesem VPS und dem Status der Dienstleistung angezeigt.
+In diesem Bereich finden Sie Informationen zum VPS und dem Status der Dienstleistung. Klicken Sie auf die Tabs, um Erläuterungen anzuzeigen.
 
 > [!tabs]
 > Name
 >>
->> Wenn Sie auf `...`{.action} und dann auf `Namen ändern`{.action}, können Sie einen bezeichnenden Namen für diesen VPS eingeben. Diese Funktion ist nützlich, um die Navigation im Kundencenter zu vereinfachen, wenn Sie mehrere VPS-Dienstleistungen verwalten. Der interne Name der Dienstleistung bleibt im Format *vps-XXXXXXX.vps.ovh.net* erhalten.
+>> Wenn Sie auf `...`{.action} und dann auf `Namen ändern`{.action}, können Sie einen bezeichnenden Namen für diesen VPS eingeben. Diese Funktion ist nützlich, um die Navigation im Kundencenter zu vereinfachen, wenn Sie mehrere VPS-Dienstleistungen verwalten. Der interne Name der Dienstleistung bleibt stets im Format *vps-XXXXXXX.vps.ovh.net* erhalten.
 >>
 > Boot
 >>
@@ -75,6 +75,8 @@ In diesem Abschnitt werden Informationen zu diesem VPS und dem Status der Dienst
  
 #### Ihre Konfiguration
 
+Klicken Sie auf die Tabs, um Erläuterungen dieses Bereichs anzuzeigen.
+
 > [!tabs]
 > Modell
 >>
@@ -86,6 +88,8 @@ In diesem Abschnitt werden Informationen zu diesem VPS und dem Status der Dienst
 >> 
 
 #### IP
+
+Klicken Sie auf die Tabs, um Erläuterungen dieses Bereichs anzuzeigen.
 
 > [!tabs]
 > IPv4

@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un VPS
 excerpt: Come gestire un VPS dallo Spazio Cliente OVHcloud e scopri gli step iniziali del suo utilizzo, incluse le connessioni remote e le misure di sicurezza
-updated: 2024-03-14
+updated: 2024-04-05
 ---
 
 > [!primary]
@@ -42,7 +42,7 @@ La scheda `Home`{.action} contiene informazioni importanti sul tuo servizio e ti
 
 #### Il tuo VPS <a name="yourvps"></a>
 
-In questa sezione vengono visualizzate le informazioni di base sul VPS e lo stato del servizio.
+In questa sezione sono disponibili le informazioni di base sul VPS e lo stato del servizio. Fare clic sulle schede seguenti per visualizzare i dettagli.
 
 > [!tabs]
 > Nome
@@ -75,6 +75,8 @@ In questa sezione vengono visualizzate le informazioni di base sul VPS e lo stat
  
 #### La tua configurazione
 
+Fare clic sulle schede seguenti per visualizzare i dettagli di questa sezione.
+
 > [!tabs]
 > Modello
 >>
@@ -86,6 +88,8 @@ In questa sezione vengono visualizzate le informazioni di base sul VPS e lo stat
 >> 
 
 #### IP
+
+Fare clic sulle schede seguenti per visualizzare i dettagli di questa sezione.
 
 > [!tabs]
 > IPv4
