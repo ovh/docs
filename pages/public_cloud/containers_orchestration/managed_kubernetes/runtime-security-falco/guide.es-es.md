@@ -29,7 +29,7 @@ In this guide you will:
 - Visualize the events in UI
 - Forward and store the events in an OVHcloud Object Storage bucket
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=es){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -285,21 +285,21 @@ You should see the previous events generated thanks to our tests.
 
 You can also save/push the events to an OVHcloud Object Storage bucket (compatible with S3 API) to archive the outputs and be able to analyze them later if you want.
 
-To do that, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) guide.
+To do that, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) guide.
 
 For this guide, our Object Storage container is:
 
-- an `High Performance Object Storage - S3 API`
+- a `High Performance Object Storage - S3 API`
 - in `GRA` region
-- with a new created user
+- with a newly created user
 - named `falco`
 
 > [!primary]
-> Save the S3 credentials, you will use `S3 access key` and `S3 secret key` in the coming `helm install` command.
+> Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the coming `helm install` command.
 
 ![OVHcloud Object Storage](images/object-storage.png){.thumbnail}
 
-Click on the `falco` bucket to enter into it and display the information included useful `endpoint`
+Click on the `falco` bucket to enter it and display its information, including the useful `endpoint`.
 
 ![OVHcloud Object Storage falco bucket](images/falco-bucket.png){.thumbnail}
 
@@ -364,7 +364,7 @@ No further action should be required.
 ```
 
 > [!primary]
-> Don't forget to change the AWSAccessKeyID and the AWSSecretAccessKey in the `helm upgrade` command, and specifically in the `--set falcosidekick.config.aws.accesskeyid` and `--set falcosidekick.config.aws.secretaccesskey` parameters with the credentials you have during OVHcloud object storage container creation.
+> Don't forget to replace the AWSAccessKeyID and the AWSSecretAccessKey (in the `helm upgrade` command, and specifically in the `--set falcosidekick.config.aws.accesskeyid` and `--set falcosidekick.config.aws.secretaccesskey` parameters) with the credentials you retrieved during the OVHcloud Object Storage container creation.
 
 Run the command that generates a Falco event that will send the output in the bucket:
 
@@ -404,7 +404,7 @@ $ kubectl logs -l app.kubernetes.io/part-of=falcosidekick --all-containers -n fa
 2024/04/05 12:58:27 [INFO]  : AWS S3 - Upload payload OK
 ```
 
-Great, the logs confirmed to use that the events have been pushed to the UI and also to the OVHcloud S3 bucket.
+Great, the logs confirm that the events have been pushed to the UI and also to the OVHcloud S3 bucket.
 
 You can check on your OVHcloud Object Storage `falco` container/bucket that the output has been correctly stored:
 
