@@ -18,12 +18,32 @@ Apprenez à créer et à gérer un Health Monitor pour vos Load Balancers OVHclo
 
 ### Étape 1: Introduction aux concepts
 
-**Comprendre les bases** : Avant de commencer, il est crucial de maîtriser les concepts fondamentaux liés aux Load Balancers, tels que :
+Avant de plonger dans la création et la gestion d’un Health Monitor pour votre Load Balancer OVHcloud, il est essentiel de comprendre quelques concepts clés. Ces concepts constituent la base sur laquelle repose la configuration efficace de votre équilibreur de charge et son monitoring.
 
-- **Listeners** : Ils définissent les points d'écoute pour le trafic entrant, spécifiant les protocoles et les ports utilisés.
-- **Pools** : Ils regroupent les serveurs destinés à traiter les requêtes, associés à un Listener et définis par un algorithme de répartition de charge.
-- **Members** : Ce sont les serveurs en aval qui reçoivent le trafic, chaque membre est associé à un Pool.
-- **Health Monitors** : Ils permettent de vérifier périodiquement la santé des serveurs membres d'un Pool pour assurer une haute disponibilité.
+#### Listeners
+
+- **Définition** : Un Listener définit un point d'écoute pour le trafic entrant sur votre Load Balancer. Il est essentiellement configuré avec un protocole (HTTP, HTTPS, TCP, etc.) et un port spécifique sur lequel il écoute les requêtes entrantes.
+- **Rôle** : Le Listener agit comme une porte d'entrée pour le trafic, décidant de la manière dont les requêtes sont routées vers les serveurs en aval. Chaque Listener peut être configuré pour gérer le trafic de manière spécifique, selon les besoins de vos applications.
+
+#### Pools
+
+- **Définition** : Un Pool désigne un groupe de serveurs, appelés Members, destinés à traiter les requêtes dirigées par le Listener. Le Pool est défini par un algorithme de répartition de charge qui détermine comment les requêtes sont distribuées entre ses Members.
+- **Rôle** : Le Pool assure que le trafic entrant est traité efficacement en le distribuant entre les serveurs en aval selon l'algorithme de load balancing choisi (Round Robin, Least Connections, etc.), optimisant ainsi la réactivité et la disponibilité de vos services.
+
+#### Members
+
+- **Définition** : Les Members sont les serveurs en aval qui traitent les requêtes redirigées par le Load Balancer. Chaque Member est défini par son adresse IP et le port sur lequel il écoute, faisant partie d’un Pool spécifique.
+- **Rôle** : Les Members sont au cœur du processus de load balancing, traitant les requêtes et fournissant les réponses nécessaires aux clients. Leur santé et disponibilité sont cruciales pour la performance globale de l'application.
+
+#### Health Monitors
+
+- **Définition** : Un Health Monitor est un processus automatisé qui effectue régulièrement des vérifications de santé sur chaque Member d’un Pool pour s'assurer qu'ils sont en mesure de traiter les requêtes.
+- **Rôle** : Le Health Monitor est vital pour maintenir la haute disponibilité et la fiabilité de vos services. En détectant les serveurs défaillants, il permet au Load Balancer de rediriger le trafic uniquement vers les serveurs sains, minimisant ainsi les interruptions de service.
+
+La compréhension approfondie de ces concepts est fondamentale pour configurer et gérer efficacement un Load Balancer. Chaque élément joue un rôle spécifique dans l'acheminement et le traitement du trafic, assurant ainsi une expérience utilisateur fluide et performante.
+
+Pour entrer plus en détail, veuillez consulter : [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
+
 
 ### Étape 2: Configuration initiale
 
