@@ -1,7 +1,7 @@
 ---
 title: Displaying boot logs in the KVM
 excerpt: Find out how to diagnose a VPS by checking the boot log
-updated: 2021-07-05
+updated: 2024-04-07
 ---
 
 ## Objective
@@ -73,7 +73,7 @@ sdb       8:16   0   50G  0 disk
 
 The example output above shows that the system partition is mounted on **/mnt/sdb1**. (The primary disk is **sdb**, whereas **sda** is the rescue disk and **sda1** is the primary rescue partition mounted on **/**).
 
-If your VPS is of the [**current ranges**](https://www.ovhcloud.com/en-gb/vps/), no automatic mounting will occur and the `MOUNTPOINT` column should be empty. In that case, proceed with [step 4](#step4).
+If your VPS is of the [**current ranges**](https://www.ovhcloud.com/en-gb/vps/), no automatic mounting will occur and the `MOUNTPOINT` column should be empty. In that case, proceed with [step 4](#step4). Nevertheless, if the `MOUNTPOINT` column is not empty, go to our [Checking the file system on a VPS](/pages/bare_metal_cloud/virtual_private_servers/check-filesystem) guide to understand how to solve this issue.
 
 ### Step 3: Unmount the partition (older ranges only)
 
