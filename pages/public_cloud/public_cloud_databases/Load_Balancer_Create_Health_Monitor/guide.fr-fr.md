@@ -45,19 +45,33 @@ Pour des informations détaillées sur chaque architecture et les prérequis ré
 
 ### Étape 3: Création d’un Health Monitor
 
-Les Health Monitors effectuent des vérifications périodiques sur les serveurs pour s'assurer qu'ils sont prêts à recevoir et traiter les requêtes. Si un serveur ne répond pas correctement aux critères de santé définis, il est temporairement retiré du Pool, évitant ainsi de diriger les utilisateurs vers un service défaillant.
+Les Health Monitors jouent un rôle crucial dans la gestion de la disponibilité et des performances des services hébergés sur des infrastructures comme OVHcloud. Ils effectuent des vérifications régulières des serveurs pour garantir leur capacité à traiter les requêtes entrantes. Si un serveur ne répond pas aux critères de santé établis, il est temporairement retiré du pool, assurant ainsi que le trafic est dirigé uniquement vers les serveurs fonctionnels.
 
-### Types de Health Monitors et Leurs Utilisations
+## Types de Health Monitors et Configurations
 
-- **HTTP/S**: Ces Health Monitors envoient des requêtes HTTP ou HTTPS pour vérifier l'état de santé des applications web. Ils sont idéaux pour les services accessibles via des protocoles web standard.
-- **PING**: Effectuent des pings ICMP pour tester la disponibilité réseau d'un serveur. Utile pour une vérification rapide de la connectivité.
-- **TCP**: Tentent d'établir une connexion TCP pour s'assurer qu'un service est à l'écoute sur un port spécifique.
-- **TLS-HELLO**: Envoient un message SSL/TLS 'Client Hello' et attendent une réponse, vérifiant ainsi la capacité du serveur à initier une négociation SSL/TLS.
-  
-#### Types de Health Monitors Additionnels
+Différents types de Health Monitors répondent à divers besoins spécifiques :
 
-- **PING et TCP** : Idéaux pour des vérifications de base de la connectivité sans nécessiter un traitement spécifique par le serveur.
-- **HTTPS et TLS-HELLO** : Pertinents pour des vérifications dans des contextes sécurisés, en notant que les vérifications TLS-HELLO sont particulièrement utiles lorsque le serveur exige une validation de certificat client.
+### HTTP/S
+Effectue des requêtes HTTP ou HTTPS, idéal pour vérifier l'état de santé des applications web.
+- **`url_path`**: Chemin d'accès ciblé pour la vérification, par défaut à `/`.
+- **`http_method`**: Méthode HTTP utilisée pour la vérification, généralement `GET`.
+- **`expected_codes`**: Codes de réponse indiquant un état sain, typiquement `200`.
+
+### PING
+- Envoie des pings ICMP pour tester rapidement la disponibilité réseau d'un serveur.
+
+### TCP
+- Tente d'établir une connexion TCP pour confirmer la réactivité d'un service sur un port donné, sans transfert de données.
+
+### TLS-HELLO
+- Initie une négociation SSL/TLS avec un message 'Client Hello', vérifiant la capacité de réponse SSL/TLS du serveur.
+
+## Utilisations et Points Clés
+
+- Les vérifications **HTTP/S** et **TLS-HELLO** sont adaptées aux contextes sécurisés, particulièrement quand une authentification par certificat client est requise.
+- Les types **PING** et **TCP** conviennent pour des vérifications basiques de la connectivité, sans nécessiter de réponses spécifiques des serveurs.
+
+La configuration précise des Health Monitors, incluant la fréquence des vérifications (`delay`), le temps d'attente maximal pour une réponse (`timeout`), et le nombre d'essais avant de marquer un serveur comme défaillant (`max_retries`), est essentielle pour équilibrer efficacement une détection rapide des problèmes avec la minimisation des fausses alertes et la réduction de la charge sur les serveurs surveillés.
 
 ### Options de Configuration Clés
 
@@ -68,13 +82,23 @@ Les Health Monitors effectuent des vérifications périodiques sur les serveurs 
 - **`timeout`**: Temps d'attente maximum pour une réponse du serveur avant de le considérer comme défaillant.
 - **`max_retries`**: Nombre de tentatives de vérification échouées avant que le serveur ne soit marqué comme défaillant.
 
+### Pool vs Health Monitor Compatibility Matrix
+
+| Listener/Pool    | HTTP | HTTPS | SCTP | TCP | TERMINATED_HTTPS | UDP |
+|------------------|------|-------|------|-----|------------------|-----|
+| **HTTP**         | Y    | N     | N    | Y   | Y                | N   |
+| **HTTPS**        | N    | Y     | N    | Y   | N                | N   |
+| **PROXY**        | Y    | Y     | N    | Y   | Y                | N   |
+| **PROXYV2**      | Y    | Y     | N    | Y   | Y                | N   |
+| **SCTP**         | N    | N     | Y    | N   | N                | N   |
+| **TCP**          | N    | Y     | N    | Y   | N                | N   |
+| **UDP**          | N    | N     | N    | N   | N                | Y   |
+
+Pour plus d'informations, visitez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
+
 ### Meilleures Pratiques pour la Configuration des Health Monitors
 
 La mise en place efficace d’un Health Monitor est essentielle pour maintenir la haute disponibilité et la performance de vos services en ligne. Voici les meilleures pratiques pour optimiser votre configuration.
-
-#### Importance des Health Monitors
-
-Un Health Monitor joue un rôle critique dans la détection proactive des serveurs défaillants au sein d'un Pool, permettant leur exclusion temporaire pour assurer une expérience utilisateur ininterrompue. La configuration adéquate d’un Health Monitor contribue significativement à la résilience et à la fiabilité de vos services.
 
 #### Options Configurables
 
@@ -158,47 +182,6 @@ Remplacez `<POOL_ID>` par l'ID de votre Pool.
 - **Vérification** : Terraform confirmera la création du Health Monitor avec un résumé des ressources créées.
 
 Chaque méthode offre des avantages spécifiques selon votre familiarité avec les outils et votre environnement de travail. Le choix de l'interface dépend de vos préférences personnelles et des exigences techniques de votre projet.
-
-### Description des Health Monitors
-
-#### HTTP Health Monitors
-- **url_path**: Chemin de l'URL à récupérer. Par défaut, c'est `/`.
-- **http_method**: Méthode HTTP pour récupérer `url_path`. Par défaut, c'est `GET`.
-- **expected_codes**: Codes de statut HTTP indiquant un check de santé OK. Par défaut, c'est `200`.
-
-#### Autres Health Monitors
-- **PING**: Envoie des requêtes ICMP PING.
-- **TCP**: Ouvre une connexion TCP sans envoyer de données.
-- **HTTPS**: Similaire à HTTP mais pour les serveurs SSL.
-- **TLS-HELLO**: Vérifie la réponse aux messages SSLv3 client hello.
-
-### Pool vs Health Monitor Compatibility Matrix
-
-| Listener/Pool    | HTTP | HTTPS | SCTP | TCP | TERMINATED_HTTPS | UDP |
-|------------------|------|-------|------|-----|------------------|-----|
-| **HTTP**         | Y    | N     | N    | Y   | Y                | N   |
-| **HTTPS**        | N    | Y     | N    | Y   | N                | N   |
-| **PROXY**        | Y    | Y     | N    | Y   | Y                | N   |
-| **PROXYV2**      | Y    | Y     | N    | Y   | Y                | N   |
-| **SCTP**         | N    | N     | Y    | N   | N                | N   |
-| **TCP**          | N    | Y     | N    | Y   | N                | N   |
-| **UDP**          | N    | N     | N    | N   | N                | Y   |
-
-Pour plus d'informations, visitez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
-
-### Surveillance et Tests
-
-- **Validation** : Testez la configuration en simulant des pannes de serveur pour vérifier que le Health Monitor réagit comme attendu.
-  
-- **Monitoring** : Utilisez les outils de surveillance d’OVHcloud pour suivre les performances et l'état de santé de votre Load Balancer et ajustez la configuration au besoin.
-
-### Types de Health Monitors Additionnels
-
-- **PING et TCP** : Idéaux pour des vérifications de base de la connectivité sans nécessiter un traitement spécifique par le serveur.
-  
-- **HTTPS et TLS-HELLO** : Pertinents pour des vérifications dans des contextes sécurisés, en notant que les vérifications TLS-HELLO sont particulièrement utiles lorsque le serveur exige une validation de certificat client.
-
-En intégrant ces meilleures pratiques dans votre processus de configuration, vous maximisez la disponibilité et la performance de vos applications hébergées, tout en assurant une expérience utilisateur optimale.
 
 ### Surveillance et optimisation
 
