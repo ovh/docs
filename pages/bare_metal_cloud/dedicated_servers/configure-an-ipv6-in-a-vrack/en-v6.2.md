@@ -47,7 +47,7 @@ To request an Additional IPv6 block during early Alpha product stage, please sub
 <summary> <b>Check the Status of Your IPv6 Block Request</b> </summary>
 <blockquote>
 
-![image](https://github.com/ovh/docs/assets/60412/e4dc087c-f165-4a01-afcb-e6673cad16c7)
+![image-2024-3-29_14-55-25](https://github.com/ovh/docs/assets/60412/20108fc8-a30e-481d-b470-beb2b99e7b7a)
 
 
 </blockquote>
