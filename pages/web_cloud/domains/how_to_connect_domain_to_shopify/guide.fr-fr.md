@@ -48,10 +48,10 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 > [!tabs]
 > **Etape1**
 >> **Enregistrement A**<br><br>
->>  Pour identifier les enregistrements « A » existant, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
+>> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
 >> ![dnszone](images/filter-a.png){.thumbnail}<br>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul sans sous-domaine (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), supprimez-la pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), supprimez-le pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champs de pointage » `A`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 de Shopify `23.227.38.65` dans le champ **Cible**.
 >> ![dnszone](images/field-a.png){.thumbnail}<br><br>
@@ -60,8 +60,8 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> **Enregistrement AAAA**<br><br>
 >>  Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul sans sous-domaine (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), supprimez-la pour qu'elle ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul sans sous-domaine (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), supprimez-le pour qu'elle ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « AAAA » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champs de pointage » `AAAA`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv6 de Shopify `2620:0127:f00f:5::` dans le champ **Cible**.
 >> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
@@ -70,12 +70,12 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Si des enregistrements « TXT » pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`) sont présent, supprimez-les pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Si des enregistrements « TXT » pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`) sont présent, supprimez-les pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 > **Etape4**
 >> **Enregistrement CNAME**<br><br>
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champs de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `shops.myshopify.com.` dans le champ **Cible**.<br>
 >> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
