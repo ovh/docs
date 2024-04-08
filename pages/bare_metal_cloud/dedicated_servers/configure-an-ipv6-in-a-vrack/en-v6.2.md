@@ -10,23 +10,6 @@ The vRack network serves as a global private network bridging various OVHcloud p
 
 **This guide focuses on Additional IPv6 address block configuration within a vRack network.**
 
-## Usecases
-
-There are various usecases that this setup may help with, like:
-- Flexible IPv6 addressing - ability to leverage IPv6 blocks with various products within vRack network
-- Floating public IPv6 address - allowing to move an IPv6 address between servers, or even more - between different product ranges
-- Hierarchical routing - ability to delegate whole subnets to your customers hosted inside vRack
-
-## Requirements
-
-- A [vRack compatible server](https://www.ovh.com/ca/en/solutions/vrack/){.external}
-- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
-- Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
-
-> [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
->
-> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
 
 ## Introduction   
 IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated internet architectures. Here are the key benefits of integrating IPv6 with vRack:
@@ -40,7 +23,16 @@ IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limi
 By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern internet usage.
 
 
+## Requirements
 
+- A [vRack compatible server](https://www.ovh.com/ca/en/solutions/vrack/){.external}
+- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
+- Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
 
 
 
@@ -404,7 +396,7 @@ In this example:
 OVHcloud's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. 
 On the other hand, services like Additional IPv6 are regional, which means their functionality is linked to a particular location. 
 
-Below, an architecture is presented with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as suboptimal route example - a host in one region addressed with IPv6 address announced in another region. 
+Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
 ![image](https://github.com/ovh/docs/assets/60412/c8789220-2b6c-4245-bada-94e3854be8f7)
 
 Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in whole vRack** (as this may lead to unpredictable results and loosing connectivity randomly).
