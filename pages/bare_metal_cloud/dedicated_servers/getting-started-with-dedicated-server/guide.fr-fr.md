@@ -71,11 +71,11 @@ Cette étape vous permet de configurer le type de RAID ainsi que le partitionnem
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
-Vous y trouverez notamment des questions complémentaires spécifiques au système d'exploitation sélectionné.          
+Vous y trouverez notamment des questions complémentaires spécifiques au système d'exploitation sélectionné.
 
 Par exemple, si vous installez un système d'exploitation GNU/Linux, vous pouvez y ajouter votre clé SSH.
 
-Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).     
+Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 ![configuration SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Si vous avez installé un modèle d’OS OVHcloud sur votre serveur, un utilisat
 
 Vous recevrez alors un e-mail contenant les informations nécessaires à l'établissement d'une première connexion en SSH. SSH est un protocole de communication sécurisé, utilisé pour établir des connexions cryptées vers un hôte distant. Retrouvez plus d'informations dans notre guide : [Premiers pas en SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
-La plupart des systèmes d'exploitation de bureau actuels auront un client **Open SSH** installé nativement. Cela signifie que vos identifiants d'accès vous permettent d'établir rapidement une connexion à votre serveur dans l'application de ligne de commande appropriée (`Terminal`, `Command prompt`, `Powershell`, etc.). Entrez la commande suivante :
+La plupart des systèmes d'exploitation actuels disposent d'un client **Open SSH** installé nativement. Cela signifie que vos identifiants d'accès vous permettent d'établir rapidement une connexion à votre serveur depuis votre poste de travail via l'application de ligne de commande appropriée (`Terminal`, `Command prompt`, `Powershell`, etc.). Entrez la commande suivante :
 
 ```bash
 ssh username@IPv4
@@ -112,7 +112,7 @@ ssh ubuntu@203.0.113.1
 
 Vous pouvez également utiliser toute application tierce compatible avec **Open SSH**.
 
-Une fois connecté, vous pouvez remplacer le mot de passe prédéfini de l'utilisateur actuel par une meilleure phrase secrète en utilisant cette commande :
+Une fois connecté, vous pouvez remplacer le mot de passe prédéfini de l'utilisateur actuel par une meilleure phrase secrète (*passphrase*) en utilisant cette commande :
 
 ```bash
 passwd
@@ -136,10 +136,10 @@ passwd: password updated successfully
 >
 > Il n'est pas nécessaire d'utiliser le compte utilisateur « root » pour débuter l'administration de votre serveur. Ce compte doit d'abord être activé dans le système d'exploitation du serveur pour pouvoir l'utiliser. De plus, par mesure de sécurité, les connexions SSH avec l'utilisateur « root » sont **désactivées** par défaut.
 > 
-Sauf mention contraire, toutes les actions d'administration décrites dans notre documentation peuvent être accomplies par le compte d'utilisateur par défaut, c'est-à-dire en tapant `sudo` suivi de la commande correspondante. Apprenez-en plus sur ce sujet dans notre guide sur [Configuration des comptes utilisateurs et de l'accès root sur un serveur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+> Sauf mention contraire, toutes les actions d'administration décrites dans notre documentation peuvent être accomplies par le compte d'utilisateur par défaut, c'est-à-dire en tapant `sudo` suivi de la commande correspondante. Apprenez-en plus sur ce sujet dans notre guide sur la [configuration des comptes utilisateurs et de l'accès root sur un serveur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 >
 
-Selon vos besoins de sécurité, de mobilité et de commodité, les clés SSH peuvent servir de méthode de connexion supplémentaire ou remplacer les identifiants par un nom d'utilisateur et un mot de passe. Découvrez comment les utiliser dans notre guide : [Créer et utiliser des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Selon vos besoins en matière de sécurité, de mobilité et de commodité, les clés SSH peuvent servir de méthode de connexion supplémentaire ou même remplacer une identification via un nom d'utilisateur et un mot de passe. Découvrez comment les utiliser dans notre guide : [Créer et utiliser des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 #### Windows
 
@@ -153,10 +153,10 @@ Vous pouvez également utiliser toute application tierce compatible avec RDP. Ce
 
 > [!primary]
 >
-Si vous rencontrez des problèmes avec cette procédure, vérifiez que les connexions à distance (RDP) sont autorisées sur votre périphérique local en vérifiant les paramètres système, les règles de pare-feu et les restrictions réseau possibles. 
+> Si vous rencontrez des difficultés avec cette méthode, vérifiez que les connexions à distance (RDP) sont autorisées sur votre poste de travail en inspectant les paramètres système, les règles de pare-feu et les restrictions réseau possibles.
 > 
 
-En option de secours, vous pouvez utiliser la [console IPMI dans votre espace client OVHcloud](#console) pour vous connecter.
+En solution de secours, vous pouvez utiliser la [console IPMI dans votre espace client OVHcloud](#console) pour vous connecter.
 
 ##### Activation des journaux de démarrage Windows (facultatif)
 
@@ -165,21 +165,21 @@ Les journaux de démarrage de Windows peuvent être utiles pour les diagnostics 
 Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 
 > [!tabs]
-> **Se connecter au serveur**
+> 1. **Se connecter au serveur**
 >>
->> Connect to your server via RDP or [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).<br>
+>> Connectez-vous au serveur via RDP ou [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).<br>
 >>
-> **Ouvrir l'utilitaire « Exécuter »**
+> 2. **Ouvrir l'utilitaire « Exécuter »**
 >>
 >> Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.<br><br>
 >>![IPMI](images/windowsboot1.png){.thumbnail}<br>
 >>
-> **Ouvrir « msconfig »**
+> 3. **Ouvrir « msconfig »**
 >>
 >> Entrez « msconfig » et cliquez sur `OK`{.action}.<br><br>
 >>![IPMI](images/windowsboot2.png){.thumbnail}<br>
 >>
-> **Activer les logs**
+> 4. **Activer les logs**
 >>
 >> Dans la nouvelle fenêtre, activez l'option logs à côté de `Boot log`. Cliquez sur `OK`{.action}.<br><br>
 >>![IPMI](images/windowsboot3.png){.thumbnail}<br>
@@ -187,7 +187,7 @@ Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 
 Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier `.txt`. Le chemin d'accès au fichier est : `C:\Windows\ntbtlog.txt`.
 
-Pour accéder au fichier journal en mode rescue, veuillez suivre les instructions du [guide du mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+Pour accéder au fichier de logs en mode rescue, veuillez suivre les instructions du [guide du mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 <a name="reboot"></a>
 
