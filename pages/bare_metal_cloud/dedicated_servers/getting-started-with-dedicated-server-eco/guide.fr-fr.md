@@ -67,7 +67,7 @@ Cette étape vous permet de configurer le type de RAID ainsi que le partitionnem
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
-VVous y trouverez notamment des questions complémentaires spécifiques au système d'exploitation sélectionné.          
+Vous y trouverez notamment des questions complémentaires spécifiques au système d'exploitation sélectionné.          
 
 Par exemple, si vous installez un système d'exploitation GNU/Linux, vous pouvez y ajouter votre clé SSH.
 
