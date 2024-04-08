@@ -65,7 +65,7 @@ Les Health Monitors effectuent des vérifications périodiques sur les serveurs 
 
 ### Meilleures Pratiques pour la Configuration des Health Monitors
 
-La mise en place efficace d’un Health Monitor est essentielle pour maintenir la haute disponibilité et la performance de vos services en ligne. Voici un guide des meilleures pratiques pour optimiser votre configuration.
+La mise en place efficace d’un Health Monitor est essentielle pour maintenir la haute disponibilité et la performance de vos services en ligne. Voici les meilleures pratiques pour optimiser votre configuration.
 
 #### Importance des Health Monitors
 
