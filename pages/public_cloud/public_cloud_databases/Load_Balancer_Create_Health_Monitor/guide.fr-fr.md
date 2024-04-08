@@ -84,6 +84,8 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 
 #### Pool vs Health Monitor Compatibility Matrix
 
+##### Compatibilité entre Protocoles Listener et Pools
+
 | Listener/Pool    | HTTP | HTTPS | SCTP | TCP | TERMINATED_HTTPS | UDP |
 |------------------|------|-------|------|-----|------------------|-----|
 | **HTTP**         | Y    | N     | N    | Y   | Y                | N   |
@@ -93,6 +95,19 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 | **SCTP**         | N    | N     | Y    | N   | N                | N   |
 | **TCP**          | N    | Y     | N    | Y   | N                | N   |
 | **UDP**          | N    | N     | N    | N   | N                | Y   |
+
+##### Compatibilité entre Protocoles de Pools et Types de Health Monitors
+
+| Pool / Health Monitor | HTTP | HTTPS | PING | SCTP | TCP | TLS-HELLO | UDP-CONNECT |
+|-----------------------|------|-------|------|------|-----|-----------|-------------|
+| **HTTP**              | Y    | Y     | Y    | N    | Y   | Y         | N           |
+| **HTTPS**             | Y    | Y     | Y    | N    | Y   | Y         | N           |
+| **PROXY**             | Y    | Y     | Y    | N    | Y   | Y         | N           |
+| **PROXYV2**           | Y    | Y     | Y    | N    | Y   | Y         | N           |
+| **SCTP**              | Y    | N     | N    | Y    | Y   | N         | Y           |
+| **TCP**               | Y    | Y     | Y    | N    | Y   | Y         | N           |
+| **UDP**               | Y    | N     | N    | Y    | Y   | N         | Y           |
+
 
 Pour plus d'informations, visitez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
 
