@@ -10,7 +10,12 @@ The vRack network serves as a global private network bridging various OVHcloud p
 
 **This guide focuses on Additional IPv6 address block configuration within a vRack network.**
 
+## Usecases
 
+There are various usecases that this setup may help with, like:
+- Flexible IPv6 addressing - ability to leverage IPv6 blocks with various products within vRack network
+- Floating public IPv6 address - allowing to move an IPv6 address between servers, or even more - between different product ranges
+- Hierarchical routing - ability to delegate whole subnets to your customers hosted inside vRack
 
 ## Requirements
 
