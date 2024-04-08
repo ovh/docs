@@ -62,7 +62,7 @@ i.e. €23.63.
 
 ### View your bills
 
-To view the bills for a project, go to the `Public Cloud`{.action}(1) tab in the OVHcloud Control Panel. Next, select the public cloud project in the left-hand menu (2), then click `Billing Control`{.action} (3) and `History`{.action}(4).
+To view the bills for a project, open your `Public Cloud`{.action} project in the OVHcloud Control Panel, then click on `Billing Control`{.action} (in the `Project Management` section) and open the tab `History`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 
