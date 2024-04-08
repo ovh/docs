@@ -396,29 +396,27 @@ In this example:
 </details>
 
 ## Multiple locations with single vRack
+OVHcloud's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. 
+On a diagram below, we presented how this can be utilized together with two Additional IPv6 blocks available from different regions. It is also presented with example suboptimal routing case (when public IP is announced from one region, but addressing host in another region) for learning purposes.
 ![image](https://github.com/ovh/docs/assets/60412/c8789220-2b6c-4245-bada-94e3854be8f7)
-OVH's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. This is particularly beneficial for businesses that require high availability, disaster recovery solutions, or simply wish to maintain a unified network across multiple sites.
+
 
 ### Benefits
-- **Enhanced Connectivity:** By leveraging a single vRack across multiple locations, businesses can ensure seamless communication between servers, regardless of their physical location. This is crucial for applications that rely on real-time data synchronization or distributed computing.
-- **Scalability:** As organizational needs grow, the network can easily expand to include new servers in different locations without the need for complex reconfiguration. This scalability supports business growth and technological expansion with minimal disruption.
-- **Centralized Management:** Managing a network that spans multiple locations through a single vRack simplifies network administration. It allows for centralized control over security policies, access rules, and configurations, reducing the complexity and overhead associated with managing multiple disparate networks.
+- **Enhanced Connectivity:** By leveraging a single vRack across multiple locations, businesses can ensure seamless communication between servers, regardless of their physical location.
+- **Move to cloud:** vRack technology can be a great enabler on early steps of "move-to-cloud" organizational strategy, unblocking some legacy applications that still require local network communication.
 
 ### Risks and Considerations
-- **Dependency on vRack Infrastructure:** Relying on a single vRack for multi-location connectivity introduces a dependency on OVH's infrastructure. Any disruptions or limitations within the vRack network could potentially impact connectivity across all locations.
-- **No SLAAC Support:** One notable limitation in this setup is the inability to use Stateless Address Autoconfiguration (SLAAC) for IPv6 addresses when the network spans multiple locations. This means that IP addresses must be managed through alternative methods, such as DHCPv6 or static assignment, which could increase administrative overhead for network administrators.
-- **Network Complexity:** While a single vRack can simplify management in some respects, the underlying network architecture may become more complex, especially when integrating multiple sites with varying local network topologies. This complexity requires careful planning and expertise to ensure optimal performance and reliability.
+- **No SLAAC Support:** One notable limitation in this setup is the inability to use Stateless Address Autoconfiguration (SLAAC) for IPv6 addresses when the network spans across multiple locations. This means that IP addresses (and routes) must be managed statically. 
 
 
 ## Known Limitations
-Understanding the constraints of using IPv6 within the vRack environment is crucial for effective network planning. Here are the key limitations to consider:
-- **vRack as the Sole Backend**: The exclusive use of vRack as the backend network interface restricts design flexibility. All internal and external server communications must route through vRack, necessitating careful planning for connectivity and redundancy due to this dependency.
-- **SLAAC Limitations in Multi-Location Setups**: Stateless Address Autoconfiguration (SLAAC) is not supported for IPv6 across multiple vRack locations, presenting a challenge for network administration. This requires manual IPv6 address management, with DHCPv6 or static assignments as alternative strategies for IP distribution in dispersed networks.
-- **First /64 Bridging Cap**: The initial /64 IPv6 subnet in a vRack is limited to bridging 128 IP addresses, affecting the direct connection capacity. Strategic network and IP address planning are essential to ensure optimal connectivity for critical services and devices.
-- **Public Bandwidth Cap**: Outbound traffic from OVH to the internet is capped at 1Gbps per location, impacting data transfer rates for external communications.
-- **IPv6 Block Allocation Limit**: Users can obtain up to three /56 IPv6 prefixes per campus location, leading to a maximum allocation based on the number of campuses (N) x 3 x /56 prefixes.
-- **Mobility of IPv6 Blocks**: Due to the hierarchical design of the IPv6 address space, additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend. This regional specificity requires thoughtful deployment and management to align with your network's geographical distribution and connectivity needs.
-
+Understanding the constraints of using **Additional IPv6** within the **vRack** environment is crucial for effective network planning. Here are the key limitations to consider:
+- **vRack as the sole backend**: vRack network is the only backend for Additional IPv6 addresses. 
+- **SLAAC Limitations in Multi-Location Setups**: Stateless Address Autoconfiguration (SLAAC) is not supported for IPv6 across multiple vRack locations. 
+- **First /64 subnet is bridged one**: The very first /64 part of your Additional IPv6 block is bridged by default within your vRack. You can use up to 128 IP addresses inside of it.
+- **Public bandwidth cap**: Outbound traffic from OVH to the internet is capped at 1Gbps per location.
+- **IPv6 block allocation limits**: Users can obtain up to three /56 Additional IPv6 blocks per region location.
+- **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend. 
   
 
 ## Go Further   
