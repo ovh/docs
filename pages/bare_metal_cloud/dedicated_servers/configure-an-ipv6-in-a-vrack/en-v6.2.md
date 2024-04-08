@@ -58,12 +58,15 @@ To request an Additional IPv6 block during early Alpha product stage, please sub
 
 
 ## Configuring IPv6 in a vRack (basic mode)
+
+In this section we will present basic IPv6 setup for your vRack connected hosts.
+
 ![image](https://github.com/ovh/docs/assets/60412/3a8d7daa-7c55-4b4b-a090-2043d98b7e56)
 
-### Configuring an IPv6 block within your vRack
+### APIv6 setup
 
 <details>
-<summary> <b>Manual</b> </summary>
+<summary> <b>Static IP configuration</b> </summary>
 <blockquote>
 
 Inside given /56 block, there is always first /64 subnet that is in bridged mode. You can view it this way:
@@ -80,7 +83,7 @@ To get more details:
 </details>
         
 <details>
-<summary> <b>Autoconfiguration (slaac)</b> </summary>
+<summary> <b>Automatic IP configuration (SLAAC)</b> </summary>
 <blockquote>
 
 To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
@@ -92,21 +95,47 @@ Don't forget to configure SLAAC on your host machine.
 </blockquote>
 </details>
 
-### Configuration on host side
+### Host-side commands
 <details>
-<summary> <b>Automatic configuration</b></b> </summary>
+<summary> <b>Static IP configuration</b></b> </summary>
+<blockquote>
+
+In basic configuration, you may want to setup IP address and routing manually. This is also suggested setup when your machine acts as a router (XXX see "Configuring routed subnet") and has ipv6.forwarding mode enabled.
+
+First, let's add an IP address on the vrack interface (in our example "eth1"):
+``` bash
+$ sudo ip address add 2001:41d0:abcd:ef00::2/64 dev eth1
+```
+(Please note that the first IP address in a block, 2001:41d0:abcd:ef00::1/64 is gateway IP address and must not be used for host addressing).
+
+Optionally, if you want to use vRack interface as the main one for IPv6 traffic, default route can be configured the following way:
+``` bash
+$ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1/64 dev eth1
+```
+
+Finally, bring up the interface (and verify configured IP on it):
+``` bash
+$ sudo ip link set up dev eth1
+$ ip -6 addr list dev eth1
+4: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    inet6 2001:41d0:abcd:ef00::2/64 scope global static
+```
+
+</blockquote>
+</details>
+<details>
+<summary> <b>Automatic IP configuration (SLAAC)</b></b> </summary>
 <blockquote>
 
 To use automatic configuration, please ensure you have configured your interface as the following:
 
-Ensure your host will accept Router Advertisements (for autoconfiguration) on the vrack interface (in our example "eth1"):
+First, let's allow our host to accept Router Advertisements (for autoconfiguration) on the vrack interface (in our example "eth1"):
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
+Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer "XXX Configuring routed subnet setction" for details.
  
-Please note this setting will not work if ipv6.forwarding is enabled in your system. For that case please refer guide linked below.
- 
-Bring up the interface:
+Then, simply bring up the interface:
 ``` bash
 $ sudo ip link set up dev eth1
 $ ip -6 addr list dev eth1
@@ -114,6 +143,7 @@ $ ip -6 addr list dev eth1
     inet6 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166/64 scope global dynamic mngtmpaddr
        valid_lft 2322122sec preferred_lft 334922sec
 ```
+After a moment (configuration must propagate), specific IPv6 address (with flags _global_ and _dynamic_) should be visible on the interface.
 
 </blockquote>
 </details>
@@ -122,6 +152,7 @@ $ ip -6 addr list dev eth1
 <details>
 <summary> <b>Local</b> </summary>
 <blockquote>
+Most basic test is to ping local IP address on a host:
 
 ``` bash
 #debian@ns2000052:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
@@ -136,7 +167,8 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 <details>
 <summary> <b>Remote</b> </summary>
 <blockquote>
-
+Next, let's verify connectivity from remote:
+    
 ``` bash
 #ubuntu@remote-test:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
 PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c166) 56 data bytes
@@ -150,7 +182,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 
 
 
-## Configuring IPv6 in a vRack for routed-mode
+## Configuring an IPv6 in a vRack for routed-mode
 ![image](https://github.com/ovh/docs/assets/60412/abe59737-c29f-4f71-8907-ea33549e780e)
 
 
