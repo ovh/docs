@@ -108,6 +108,9 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 | **TCP**               | Y    | Y     | Y    | N    | Y   | Y         | N           |
 | **UDP**               | Y    | N     | N    | Y    | Y   | N         | Y           |
 
+**Légende :**
+- **Y**: Compatible
+- **N**: Non compatible
 
 Pour plus d'informations, visitez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
 
