@@ -10,7 +10,7 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 
 > [!warning]
 >
-> The domain name [registrar](https://www.ovhcloud.com/en-gb/learn/what-is-domain-name-registrar/) is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same registrar (usually once a year).
+> The domain name [registrar](https://www.ovhcloud.com/en/learn/what-is-domain-name-registrar/) is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same registrar (usually once a year).
 >
 > If OVHcloud is already the registrar of your domain name, the incoming domain transfer procedure does not apply. The incoming domain transfer procedure described in this guide is **only** appropriate for domain names registered with a registrar other than OVHcloud.
 >
@@ -46,7 +46,7 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or your current domain name registrar if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) or your current domain name registrar if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 > 
 
 ## Instructions
@@ -70,7 +70,7 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 
 > [!warning]
 >
-> Most extensions offer an anti-transfer locking feature, identifiable by a special status in the [WHOIS](https://www.ovhcloud.com/en-gb/domains/whois/), called “transferProhibited”.
+> Most extensions offer an anti-transfer locking feature, identifiable by a special status in the [WHOIS](https://www.ovhcloud.com/en/domains/whois/), called “transferProhibited”.
 >
 > This locking prevents any unintended transfer.
 >
@@ -101,8 +101,8 @@ Once you have obtained the authorization code, you can proceed with the transfer
 
 [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
