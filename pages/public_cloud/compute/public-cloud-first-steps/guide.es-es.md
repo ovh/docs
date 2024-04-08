@@ -1,7 +1,7 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -135,7 +135,7 @@ La clave estará lista cuando se complete la barra de progreso.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud)).
+Puede seleccionar y copiar la clave pública desde esta ventana (bajo la indicación: "Public key for pasting into OpenSSH authorized_keys file") para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud)).
 
 Guarde ambas claves como archivo y cree una frase de contraseña. Para acceder a su instancia de Public Cloud desde un dispositivo de trabajo solo necesitará la clave privada correspondiente. Así pues, le recomendamos que aplique medidas adicionales de seguridad. Cada vez que se establezca una conexión con la instancia, deberá introducir la frase de contraseña.
 
@@ -230,7 +230,7 @@ El modo público es el modelo de red clásico. Permite que las instancias tendr�
 
 El modo privado le permite asignar sus instancias únicamente a una red privada. Las instancias de este modo solo pueden estar expuestas a la red pública mediante un servicio Gateway o un Load Balancer con Floating IPs. Para más información, consulte nuestra guía sobre las [soluciones de red para el Public Cloud de OVHcloud](/products/public-cloud-network).
 
-Una vez elegido el modo, seleccione una red privada a la que quiere asociar la instancia o haga clic en `Crear una nueva red privada`{.action} para crear una nueva.
+Una vez elegido el modo, seleccione una red privada a la que quiere asociar la instancia o haga clic en `Crear una nueva red privada`{.action} para crear una nueva. Si selecciona esta última opción, será redirigido a la página de creación de la red privada y deberá volver a realizar toda la ruta de pedido de su instancia más adelante. Por lo tanto, es preferible crear una red privada antes de la creación de la instancia.
 
 Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.action} y, por último, elija el tipo de facturación.
 

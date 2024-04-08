@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -135,7 +135,7 @@ Una volta piena, la chiave sarà pronta.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puoi selezionare e copiare la chiave pubblica da questa finestra per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud).
+Puoi selezionare e copiare la chiave pubblica da questa finestra (sotto la voce: "Public key for pasting into OpenSSH authorized_keys file") per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud).
 
 Salva entrambe le chiavi su file e inserisci una passphrase nell’apposito campo. Poiché per accedere all’istanza Public Cloud dal tuo dispositivo di lavoro sarà necessaria solo la chiave privata corrispondente, in questa fase è necessario applicare adeguate misure di sicurezza. È necessario specificare la passphrase quando si accede all'istanza.
 
@@ -230,7 +230,7 @@ La modalità Public è il modello di rete classico che permette alle istanze di 
 
 La modalità Private ti offre la possibilità di assegnare le tue istanze esclusivamente a una rete privata. Le istanze di questa modalità possono essere esposte alla rete pubblica solo con un servizio Gateway o Load Balancer con Floating IP. Per maggiori informazioni, consulta la nostra guida sulle [soluzioni di rete per il Public Cloud OVHcloud](/products/public-cloud-network).
 
-Una volta scelta la modalità, seleziona una rete privata a cui associare l'istanza o clicca su `Crea una nuova rete privata`{.action} per crearne una nuova.
+Una volta scelta la modalità, seleziona una rete privata a cui associare l'istanza o clicca su `Crea una nuova rete privata`{.action} per crearne una nuova. Selezionando quest'ultima opzione verrai reindirizzato alla pagina di creazione della rete privata e sarà necessario ripetere l’intero percorso d’ordine della tua istanza in un secondo momento. È quindi preferibile creare una rete privata prima della creazione dell’istanza.
 
 Una volta completata l’operazione, clicca su `Continua`{.action} per procedere allo step finale e scegliere il metodo di pagamento.
 

@@ -27,7 +27,7 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 
 ### Criar uma instância a partir de um backup
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Public Cloud`{.action}. A seguir, clique em `Instance backup`{.action} no menu à esquerda.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Public Cloud`{.action}. Selecione o projeto Public Cloud em causa e depois clique em `Instance backup`{.action} na secção `Storage`.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie pierwszej instancji Public Cloud i łączenie się z nią'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -135,7 +135,8 @@ Klucz jest gotowy po wypełnieniu paska postępu.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-W tym oknie można wybrać i skopiować klucz publiczny, aby go zapisać w Panelu klienta OVHcloud — w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud).
+W tym oknie można wybrać i skopiować klucz publiczny (pod adnotacją: "Public key for pasting into OpenSSH authorized_keys file")
+, aby go zapisać w Panelu klienta OVHcloud — w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud).
 
 Zapisz oba klucze w plikach i wpisz hasło w odpowiednich polach. Ponieważ klucz prywatny będzie wymagany w celu uzyskania dostępu do instancji Public Cloud z działającego urządzenia, należy zastosować odpowiednie środki bezpieczeństwa. Hasło należy podać po nawiązaniu połączenia z instancją.
 
@@ -230,7 +231,7 @@ Tryb publiczny to klasyczny model sieci, który umożliwia przypisany publiczny 
 
 Tryb prywatny daje możliwość przypisywania instancji tylko do sieci prywatnej. Instancje w tym trybie mogą być dostępne w sieci publicznej wyłącznie za pomocą usługi Gateway lub Load Balancer z Floating IP. Więcej informacji znajdziesz w ddokumentacją dotyczącą [rozwiązań sieciowych dla Public Cloud OVHcloud](/products/public-cloud-network).
 
-Po wybraniu trybu wybierz prywatną sieć, do której chcesz przypisać instancję lub kliknij `Utwórz nową prywatną sieć`{.action}, aby stworzyć nową.
+Po wybraniu trybu wybierz prywatną sieć, do której chcesz przypisać instancję lub kliknij `Utwórz nową prywatną sieć`{.action}, aby stworzyć nową. Jeśli wybierzesz tę ostatnią opcję, nastąpi przekierowanie do strony tworzenia sieci prywatnej. Będziesz musiał później wykonać całą procedurę zamówienia instancji. Dlatego przed utworzeniem instancji lepiej jest utworzyć sieć prywatną.
 
 Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść do ostatniego kroku i wybrać metodę rozliczania.
 
