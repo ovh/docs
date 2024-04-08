@@ -42,9 +42,7 @@ Um servidor dedicado é um servidor físico situado num dos nossos datacenters. 
 
 ### Instalação ou reinstalação de um sistema operativo
 
-Quando o seu servidor dedicado for configurado pela primeira vez durante o processo de encomenda, pode selecionar o sistema operativo a instalar.
-
-Pode facilmente reinstalar o seu servidor e escolher outra imagem de OS na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique em `...`{.action} em frente do sistema operativo e, a seguir, em `Instalar`{.action}.
+Pode facilmente reinstalar o seu servidor ou escolher outra imagem de SO a instalar na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique em `...`{.action} em frente do sistema operativo e, a seguir, em `Instalar`{.action}.
 
 ![Botão Reinstalar](images/reinstalling-your-server-01.png){.thumbnail}
 

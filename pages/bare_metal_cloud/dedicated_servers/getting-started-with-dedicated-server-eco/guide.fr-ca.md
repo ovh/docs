@@ -34,9 +34,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ### Installation ou réinstallation d'un système d'exploitation
 
-Lorsque votre serveur dédié est configuré pour la première fois au cours du processus de commande, vous pouvez sélectionner le système d'exploitation à installer.
-
-Vous pouvez facilement réinstaller votre serveur et choisir une autre image d'OS dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
+Vous pouvez facilement réinstaller votre serveur ou choisir une autre image d'OS à installer dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -69,9 +67,11 @@ Cette étape vous permet de configurer le type de RAID ainsi que le partitionnem
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
-Vous y trouverez notamment des questions complémentaires spécifiques au système d'exploitation sélectionné.
+Vous y trouverez notamment des questions complémentaires spécifiques au système d'exploitation sélectionné.          
 
 Par exemple, si vous installez un système d'exploitation GNU/Linux, vous pouvez y ajouter votre clé SSH.
+
+Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).     
 
 ![configuration SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
@@ -80,6 +80,12 @@ Cliquez enfin sur `Confirmer`{.action} pour lancer l'installation du système d'
 <a name="connect"></a>
 
 ### Connexion à votre serveur
+
+> [!warning]
+> OVHcloud met à votre disposition des services dont la configuration et la gestion relèvent de votre responsabilité. Il vous appartient donc d’en assurer le bon fonctionnement.
+>
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous avez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
+>
 
 #### Linux
 

@@ -42,9 +42,7 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 ### Installazione o reinstallazione di un sistema operativo
 
-Quando il tuo server dedicato è configurato per la prima volta durante il processo di ordine, puoi selezionare il sistema operativo da installare.
-
-Reinstalla facilmente il tuo server e scegli un altro modello di sistema operativo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
+Reinstalla facilmente il tuo server o scegli un'altra immagine del sistema operativo da installare nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
 ![Pulsante Reinstalla](images/reinstalling-your-server-01.png){.thumbnail}
 
