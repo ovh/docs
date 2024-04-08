@@ -395,10 +395,14 @@ In this example:
 </blockquote>
 </details>
 
-## Multiple locations with single vRack
+## Multiple region locations vs. global vRack
 OVHcloud's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. 
-On a diagram below, we presented how this can be utilized together with two Additional IPv6 blocks available from different regions. It is also presented with example suboptimal routing case (when public IP is announced from one region, but addressing host in another region) for learning purposes.
+On the other hand, services like Additional IPv6 are regional, which means their functionality is linked to a particular location. 
+
+Below, an architecture is presented with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as suboptimal route example - a host in one region addressed with IPv6 address announced in another region. 
 ![image](https://github.com/ovh/docs/assets/60412/c8789220-2b6c-4245-bada-94e3854be8f7)
+
+Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in whole vRack** (as this may lead to unpredictable results and loosing connectivity randomly).
 
 
 ### Benefits
