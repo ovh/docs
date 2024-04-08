@@ -1,7 +1,7 @@
 ---
 title: Concepts - Additional IP or Floating IP (EN)
 excerpt: Find out how to use public IP addresses in the scope of Public Cloud Networking
-updated: 2022-11-02
+updated: 2024-04-05
 ---
 
 ## Objective
@@ -42,11 +42,16 @@ More information about configuring Floating IP is available on the [Public Cloud
 
 ### How to obtain public IP addresses in the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), open the Public Cloud section and select `Public IPs`{.action}. Here you can manage Additional IP and Floating IP addresses according to your needs.
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), in the `Public Cloud`{action} section, go to the `Network` section of the left-hand menu and select `Public IPs`{.action}. Here you can manage Additional IP and Floating IP addresses according to your needs.
 
 ![Concept IP](images/concip.png){.thumbnail}
 
 Depending on your choice, you can select from the different regions and further configuration options are available.
+
+> [!warning]
+>
+> The pricing methods depend on the use of the IP you choose. Additional IP usage is billed monthly, while Floating IP usage is billed hourly.
+>
 
 ## Go further
 
