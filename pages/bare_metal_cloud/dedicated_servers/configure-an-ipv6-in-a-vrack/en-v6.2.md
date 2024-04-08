@@ -183,11 +183,14 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 
 
 ## Configuring an IPv6 in a vRack for routed-mode
+In this section we will present more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color on a schema below).
+
 ![image](https://github.com/ovh/docs/assets/60412/abe59737-c29f-4f71-8907-ea33549e780e)
 
+The traffic path is as follows: inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local-link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
+Traffic comming back from such VM should use default route via first part of the local link (black one, fd00::1), then (possibly default) route from a host to it's gateway.
 
-
-### Configuring routed subnet
+### APIv6 commands
 
 <details>
 <summary> <b>Define</b> </summary>
@@ -204,10 +207,13 @@ To define routed subnets, you need to define them using API first. For that plea
 
 
 
-### Configuration on host side
+### Host-side configuration
     manual
     slaac (with accept\_ra=2)
     + adding route to routed subnet to your VMs (depends on the OS and hypervisor used)
+
+### VM-side configuration
+
 ### Setup verification
     local
     from remote
