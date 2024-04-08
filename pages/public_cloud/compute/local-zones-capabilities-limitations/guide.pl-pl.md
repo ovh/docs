@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funkcje, możliwości i ograniczenia
 excerpt: Poznaj aktualne funkcje, możliwości i ograniczenia instancji Local Zones
-updated: 2024-03-04
+updated: 2024-04-08
 ---
 
 > [!primary]
@@ -28,10 +28,15 @@ Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local 
 | Obsługa IPv4 | Tak |
 | Boot/Start | Tak |
 | Stop | Tak |
+| Block Storage | Tak |
+| Kopie zapasowe instancji | Nie |
+| Snapshoty wolumenów | Nie |
+| Kopie zapasowe woluminów | Nie |
+| Object Storage | Nie |
 
 ## Możliwości i ograniczenia
 
-Wszystkie funkcje instancji, których nie ma na liście, takie jak restart (reboot) instancji, obsługa bloków lub Object Storage, będą dostępne w ciągu najbliższych miesięcy. Naszym celem jest obsługa wszystkich funkcji już obsługiwanych w regionach globalnych.
+Wszystkie funkcje instancji, których nie ma na liście, takie jak restart (reboot) instancji lub obsługa Object Storage, będą dostępne w ciągu najbliższych miesięcy. Naszym celem jest obsługa wszystkich funkcji już obsługiwanych w regionach globalnych.
 
 ## Opinie
 
