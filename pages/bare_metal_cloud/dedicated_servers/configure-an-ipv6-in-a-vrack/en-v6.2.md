@@ -58,7 +58,8 @@ To request an Additional IPv6 block during early Alpha product stage, please sub
 
 In this section we will present basic IPv6 setup for your vRack connected hosts.
 
-![image](https://github.com/ovh/docs/assets/60412/3a8d7daa-7c55-4b4b-a090-2043d98b7e56)
+![image](https://github.com/ovh/docs/assets/60412/04b55646-15f9-4ecd-86f3-cea51fa7421e)
+
 
 ### APIv6 setup
 
