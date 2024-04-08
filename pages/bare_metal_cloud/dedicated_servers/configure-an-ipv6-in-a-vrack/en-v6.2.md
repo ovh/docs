@@ -193,13 +193,20 @@ Traffic comming back from such VM should use default route via first part of the
 ### APIv6 commands
 
 <details>
-<summary> <b>Define</b> </summary>
+<summary> <b>Define routed subnet</b> </summary>
 <blockquote>
 
-To define routed subnets, you need to define them using API first. For that please use the call as in the example below:
+To create a routed subnet, we must first define:
+- subnet in CIDR notation (size between /57 and /64)
+- next-hop address (so the host's IPv6 address)
+
+Please note that given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+
+Please use the call as follows in the example below:
 
 ![image-2024-3-29_14-46-53](https://github.com/ovh/docs/assets/60412/c585d58c-3e5d-4a1c-be00-68267df881bd)
 
+In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166
 
 </blockquote>
 </details>
@@ -208,19 +215,185 @@ To define routed subnets, you need to define them using API first. For that plea
 
 
 ### Host-side configuration
-    manual
-    slaac (with accept\_ra=2)
-    + adding route to routed subnet to your VMs (depends on the OS and hypervisor used)
 
-### VM-side configuration
+<details>
+<summary> <b>Static IP configuration for a host (recommended)</b> </summary>
+<blockquote>
+When hosting Virtual Machines, we strongly recommend to use static configuration on your host.
+
+Setup an IPv6 address, bring up the interface and (optionally) add default route over the vRack interface:
+``` bash
+$ sudo ip addr add 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166/64 dev eth1
+$ sudo ip link set dev eth1 up
+$ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
+```
+
+</blockquote>
+</details>
+
+<details>
+<summary> <b>Automatic IP configuration (SLAAC) for a host</b> </summary>
+<blockquote>
+In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
+Please note this bring additional risks (such as loosing access not only to a host but also to all VMs) and is not recommended.
+
+Ensuring IPv6 forwarding is enabled:
+``` bash
+$ sudo sysctl -w net.ipv6.conf.all.forwarding=1
+```
+
+Configuring Router Advertisements to be accepted (on vRack eth1 interface in our example):
+``` bash
+$ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=2
+```
+
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>Routed subnet configuration on a host and inside VM</b> </summary>
+<blockquote>
+
+To ensure that our host knows what to do with packets addressed to the new routed subnet (that will be on a VM), we must add specific route for it.
+In our example this is veth link with fd00::2/64 address inside a VM we will use for a routing.
+Please note that this is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
+``` bash
+$ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
+```
+
+</blockquote>
+</details>
+
+
+<details>
+<summary> <b>Routed subnet configuration inside a VM</b> </summary>
+Again, please note that used link between host and VMs is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
+
+<blockquote>
+Add our routed IP block inside a VM to ensure it can accept packets:
+    
+``` bash
+debian@vm-1:~$ sudo ip address add 2001:41d0:abcd:ef10::1/60 dev lo
+```
+
+Add default route on a VM to ensure traffic can get back out of it:
+``` bash
+debian@vm-1:~$ sudo ip -6 route add default via fd00::1
+```
+
+</blockquote>
+</details>
+
 
 ### Setup verification
-    local
-    from remote
+
+<details>
+<summary> <b>Local, on a host</b> </summary>
+<blockquote>
+
+Ping from the host into the container (using local link):
+``` bash
+debian@host:~$ ping fd00::2
+PING fd00::2(fd00::2) 56 data bytes
+64 bytes from fd00::2: icmp_seq=1 ttl=64 time=0.053 ms
+64 bytes from fd00::2: icmp_seq=2 ttl=64 time=0.071 ms
+```
+
+Ping from the host into the container (using routed subnet):
+``` bash
+debian@host:~$ ping 2001:41d0:abcd:ef10::1
+PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
+64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=1 ttl=64 time=0.054 ms
+64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=64 time=0.073 ms
+```
+
+Check route to our /60 subnet on a host:
+``` bash
+debian@host:~$ ip -6 route get 2001:41d0:abcd:ef10::1
+2001:41d0:abcd:ef10::1 from :: via fd00::2 dev veth1a src fd00::1 metric 1024 pref medium
+```
+
+</blockquote>
+</details>
+
+<details>
+<summary> <b>Local, on a VM</b> </summary>
+<blockquote>
+
+First, check routing table:
+``` bash
+debian@vm-1:~$ ip -6 route show
+2001:41d0:abcd:ef10::/60 dev lo proto kernel metric 256 pref medium
+fd00::/64 dev veth1b proto kernel metric 256 pref medium
+default via fd00::1 dev veth1b src 2001:41d0:abcd:ef10::1 metric 1024 pref medium
+```
+
+Ping host link local interface:
+``` bash
+debian@vm-1:~$ ping fd00::1
+PING fd00::1(fd00::1) 56 data bytes
+64 bytes from fd00::1: icmp_seq=1 ttl=64 time=0.051 ms
+64 bytes from fd00::1: icmp_seq=2 ttl=64 time=0.070 ms
+```
+
+Ping host global interface:
+``` bash
+debian@vm-1:~$ ping 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166
+PING 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166(2001:41d0:abcd:ef00:fe34:97ff:feb0:c166) 56 data bytes
+64 bytes from 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166: icmp_seq=1 ttl=64 time=0.050 ms
+64 bytes from 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166: icmp_seq=2 ttl=64 time=0.080 ms
+```
+
+Finally, let's ping external IPv4 from a VM:
+``` bash
+debian@vm-1:~$ ping 2001:41d0:242:d300::
+PING 2001:41d0:242:d300::(2001:41d0:242:d300::) 56 data bytes
+64 bytes from 2001:41d0:242:d300::: icmp_seq=1 ttl=57 time=0.388 ms
+64 bytes from 2001:41d0:242:d300::: icmp_seq=2 ttl=57 time=0.417 ms
+```
+
+Or, using domain name:
+``` bash
+debian@vm-1:~$ ping -6 proof.ovh.net
+PING proof.ovh.net(2001:41d0:242:d300:: (2001:41d0:242:d300::)) 56 data bytes
+64 bytes from 2001:41d0:242:d300:: (2001:41d0:242:d300::): icmp_seq=1 ttl=57 time=0.411 ms
+64 bytes from 2001:41d0:242:d300:: (2001:41d0:242:d300::): icmp_seq=2 ttl=57 time=0.415 ms
+```
 
 
+</blockquote>
+</details>
 
+<details>
+<summary> <b>From remote host</b> </summary>
+<blockquote>
+Let's check connectivity to our VM from outside of OVHcloud network:
 
+``` bash
+ubuntu@remote-test:~$ ping 2001:41d0:abcd:ef10::1
+PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
+64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=1 ttl=55 time=5.84 ms
+64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=55 time=2.98 ms
+```
+
+And traceroute from remote host (somewhere in the internet):
+``` bash
+ubuntu@remote-test:~$ mtr -rc1 2001:41d0:abcd:ef10::1
+Start: 2024-03-26T09:26:45+0000
+HOST: remote-test                  				Loss%   Snt   Last   Avg  Best  Wrst StDev
+...
+...
+  9.|-- 2001:41d0:abcd::2:5d        				0.0%     1    1.9   1.9   1.9   1.9   0.0
+ 10.|-- 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166     0.0%     1    2.2   2.2   2.2   2.2   0.0
+ 11.|-- 2001:41d0:abcd:ef10::1      				0.0%     1    2.2   2.2   2.2   2.2   0.0
+```
+In this example: 
+- hop 10 - our host's IP
+- hop 11 - our VM
+
+</blockquote>
+</details>
 
 ## Multiple locations with single vRack
 ![image](https://github.com/ovh/docs/assets/60412/c8789220-2b6c-4245-bada-94e3854be8f7)
