@@ -53,6 +53,11 @@ Les Health Monitors effectuent des vérifications périodiques sur les serveurs 
 - **PING**: Effectuent des pings ICMP pour tester la disponibilité réseau d'un serveur. Utile pour une vérification rapide de la connectivité.
 - **TCP**: Tentent d'établir une connexion TCP pour s'assurer qu'un service est à l'écoute sur un port spécifique.
 - **TLS-HELLO**: Envoient un message SSL/TLS 'Client Hello' et attendent une réponse, vérifiant ainsi la capacité du serveur à initier une négociation SSL/TLS.
+  
+#### Types de Health Monitors Additionnels
+
+- **PING et TCP** : Idéaux pour des vérifications de base de la connectivité sans nécessiter un traitement spécifique par le serveur.
+- **HTTPS et TLS-HELLO** : Pertinents pour des vérifications dans des contextes sécurisés, en notant que les vérifications TLS-HELLO sont particulièrement utiles lorsque le serveur exige une validation de certificat client.
 
 ### Options de Configuration Clés
 
@@ -97,14 +102,7 @@ Lors de la configuration de Health Monitors pour des applications web, gardez à
   
 - **Monitoring** : Utilisez les outils de surveillance d’OVHcloud pour suivre les performances et l'état de santé de votre Load Balancer et ajustez la configuration au besoin.
 
-#### Types de Health Monitors Additionnels
-
-- **PING et TCP** : Idéaux pour des vérifications de base de la connectivité sans nécessiter un traitement spécifique par le serveur.
-  
-- **HTTPS et TLS-HELLO** : Pertinents pour des vérifications dans des contextes sécurisés, en notant que les vérifications TLS-HELLO sont particulièrement utiles lorsque le serveur exige une validation de certificat client.
-
 En intégrant ces meilleures pratiques dans votre processus de configuration, vous maximisez la disponibilité et la performance de vos applications hébergées, tout en assurant une expérience utilisateur optimale.
-
 
 La configuration d'un Health Monitor est essentielle pour assurer la haute disponibilité de vos services. Selon l'interface choisie, voici les étapes à suivre :
 
