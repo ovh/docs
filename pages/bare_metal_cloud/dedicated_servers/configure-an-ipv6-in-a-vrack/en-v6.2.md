@@ -8,7 +8,7 @@ updated: 2024-02-12
 
 The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses. 
 
-**This guide simplifies configuring an additional IPv6 address block within vRack and its associated products.**
+**This guide focuses on Additional IPv6 address block configuration within a vRack network.**
 
 
 
@@ -414,7 +414,7 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 - **vRack as the sole backend**: vRack network is the only backend for Additional IPv6 addresses. 
 - **SLAAC Limitations in Multi-Location Setups**: Stateless Address Autoconfiguration (SLAAC) is not supported for IPv6 across multiple vRack locations. 
 - **First /64 subnet is bridged one**: The very first /64 part of your Additional IPv6 block is bridged by default within your vRack. You can use up to 128 IP addresses inside of it.
-- **Public bandwidth cap**: Outbound traffic from OVH to the internet is capped at 1Gbps per location.
+- **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 1Gbps per location.
 - **IPv6 block allocation limits**: Users can obtain up to three /56 Additional IPv6 blocks per region location.
 - **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend. 
   
@@ -433,10 +433,10 @@ UNDER THIS IS THE PREVIOUS VERSION, DON'T CARE ABOUT IT
 
 
 ### Adding an IPv6 block to the vRack   
-Adding an IPv6 block to your OVH vRack can be accomplished through the OVH APIv6, similar to how IPv4 blocks are currently added. This process can be configured in two primary modes: Bridge mode and Routed mode. Below are sample APIv6 commands for each setup, along with a brief note on additional host-side configurations that might be necessary for Routed mode.
+Adding an IPv6 block to your OVHcloud vRack can be accomplished through the OVHcloud APIv6, similar to how IPv4 blocks are currently added. This process can be configured in two primary modes: Bridge mode and Routed mode. Below are sample APIv6 commands for each setup, along with a brief note on additional host-side configurations that might be necessary for Routed mode.
 
 **<ins>Prerequisites</ins>**
-- Ensure you have an active OVH API consumer key. If not, generate one by following OVH's API authentication guidelines.
+- Ensure you have an active OVHcloud API consumer key. If not, generate one by following OVH's API authentication guidelines.
 - Have your vRack ID and the IPv6 block ready for configuration.
 
 **<ins>Actions</ins>**
@@ -456,7 +456,7 @@ curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "X-Ovh-Consumer: tUv123wXyZ" -H
 -d '{"ipBlock":"2001:db8:abcd:0012::/64", "mode":"bridge"}'
 ```
 
-- `abc123xyz`: Your OVH application key.
+- `abc123xyz`: Your OVHcloud application key.
 - `tUv123wXyZ`: The consumer key obtained from the authentication process.
 - `vrack1234`: Your vRack ID.
 - `2001:db8:abcd:0012::/64`: The IPv6 block you wish to add in Bridge mode.
@@ -489,7 +489,7 @@ curl -XPOST -H "X-Ovh-Application: abc123xyz" -H "X-Ovh-Consumer: tUv123wXyZ" -H
 <summary> <b>Expected Return from the Calls</b> </summary>
 <blockquote>
 
-For both Bridge and Routed mode setups, the OVH API will return a response indicating the success of the operation and details about the IPv6 block configuration.    
+For both Bridge and Routed mode setups, the OVHcloud API will return a response indicating the success of the operation and details about the IPv6 block configuration.    
 
 ```json
 {
