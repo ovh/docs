@@ -1,7 +1,7 @@
 ---
 title: 'Criação e conexão a uma primeira instância Public Cloud'
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 > [!primary]
@@ -135,7 +135,7 @@ A chave está pronta quando a barra de progressão estiver completa.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Nesta janela pode selecionar e copiar a chave pública para a guardar na Área de Cliente OVHcloud durante o [na etapa 2](./#etapa-2-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud).
+Nesta janela pode selecionar e copiar a chave pública (com a menção: "Public key for pasting into OpenSSH authorized_keys file") para a guardar na Área de Cliente OVHcloud durante o [na etapa 2](./#etapa-2-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud).
 
 Guarde ambas as chaves sob a forma de ficheiro e use a opção de criação de uma frase de acesso. Já que só será exigida uma chave privada correspondente para o acesso à instância de Public Cloud a partir do seu posto de trabalho, neste ponto impõe-se a aplicação de medidas de segurança adequadas. Quando se estabelecer uma conexão à instância, será preciso introduzir uma frase de acesso.
 
@@ -230,7 +230,7 @@ O modo Public é o modelo de rede clássico, permite que as suas instâncias ten
 
 O modo privado oferece-lhe a possibilidade de afetar as suas instâncias apenas a uma rede privada. As instâncias deste modo só podem ser expostas à rede pública através de um serviço Gateway ou Load Balancer com Floating IP. Para mais informações, consulte o nosso manual sobre as [soluções de rede para o Public Cloud da OVHcloud](/products/public-cloud-network).
 
-Depois de escolher o modo escolhido, selecione uma rede privada para associar a sua instância ou clique em `Criar uma nova rede privada`{.action} para criar uma nova.
+Depois de escolher o modo escolhido, selecione uma rede privada para associar a sua instância ou clique em `Criar uma nova rede privada`{.action} para criar uma nova. Se selecionar esta última opção, será redirecionado para a página de criação da rede privada e deverá fazer posteriormente a totalidade do percurso da encomenda da sua instância. Por isso, é preferível criar uma rede privada a montante da criação da sua instância.
 
 Quando tiver concluído, clique em `Seguinte`{.action} para avançar para o último passo e escolher um método de faturação.
 

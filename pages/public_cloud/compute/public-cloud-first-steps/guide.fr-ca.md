@@ -1,7 +1,7 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 ## Objectif
@@ -9,6 +9,8 @@ updated: 2024-03-12
 Les instances Public Cloud OVHcloud nécessitent une approche différente de celle d'une solution de serveur dédiée ou VPS.
 
 **Ce guide vous présente les premières étapes de la création et de la connexion à une instance Public Cloud.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v5G10wK7ksU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
@@ -131,7 +133,7 @@ La clé est prête lorsque la barre de progression est pleine.
 
 ![clé de sauvegarde](images/puttygen_03a.png){.thumbnail}
 
-Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
+Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre (sous la mention : "Public key for pasting into OpenSSH authorized_keys file") pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
 
 Enregistrez les deux clés dans des fichiers et utilisez l'option pour entrer une phrase secrète (passphrase). Étant donné que seule la clé privée correspondante sera requise pour accéder à votre instance Public Cloud depuis votre poste de travail, des mesures de sécurité appropriées doivent être appliquées à ce stade. La passphrase doit être entrée lorsqu'une connexion à l'instance est établie.
 
@@ -226,7 +228,7 @@ Le mode Public est le modèle de réseau classique, il permet à vos instances d
 
 Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à un réseau privé. Les instances de ce mode ne peuvent être exposées au réseau public qu'à l'aide d'un service Gateway ou Load Balancer avec des Floating IPs. Pour plus d'informations, consultez notre documentation sur les [solutions réseau pour le Public Cloud OVHcloud](/products/public-cloud-network).
 
-Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau.
+Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau. Si vous sélectionnez ce dernier choix, vous serez redirigé vers la page de création du réseau privé et vous devrez refaire ultérieurement l'intégralité du parcours de commande de votre instance. Il est donc préférable de créer un réseau privé en amont de la création de votre instance.
 
 Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la dernière étape et définir votre mode de facturation.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2024-03-12
+updated: 2024-04-03
 ---
 
 ## Objective
@@ -131,7 +131,7 @@ The key is ready when the progress bar is full.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-You can select and copy the public key from this window to save it in your OVHcloud Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel).
+You can select and copy the public key from this window (under the mention: "Public key for pasting into OpenSSH authorized_keys file") to save it in your OVHcloud Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel).
 
 Save both keys to files and use the option to enter a passphrase. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
 
@@ -225,7 +225,7 @@ The Public mode is the standard network model, it allows your instances to have 
 
 The Private mode provides you with the possiblity of assiging your instances to a private network only. Instances in this mode can only be exposed to the public network using a Gateway or a Loadbalancer service with Floating IPs. For more information, please consult our [Public Cloud Network Services](/products/public-cloud-network) guides.
 
-Once you have selected a mode, select a private network to attach your instance to or click on `Create a new private network`{.action} to create a new one.
+Once you have selected a mode, select a private network to attach your instance to or click on `Create a new private network`{.action} to create a new one. If you select this last choice, you will be redirected to the page for creating the private network, and you will need to repeat the entire order process for your instance later. It is therefore preferable to create a private network before creating your instance.
 
 When you have applied your choices, click `Next`{.action} to proceed to the final step and decide on a billing method.
 
