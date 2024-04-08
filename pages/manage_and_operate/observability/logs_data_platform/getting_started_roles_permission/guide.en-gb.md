@@ -51,13 +51,13 @@ Select the items you want to share in the role and they will switch from the **a
 ## Managing members
 
 To manage the members of a role, use the same `...`{.action} menu to navigate to the **Manage members** page. Click on `Add a member`{.action} to add a new member for this role.
- In the username box you must add a **Logs Data Platform username**. The ldp username can be found in the **Home** panel of your manager in the **General** section. Any Logs Data Platform user can be added to the role even if their assignated cluster is different from yours.
+In the username box you must add a **Logs Data Platform username**. The ldp username can be found in the **Home** panel of your OVHcloud Control Panel, in the **General** section. Any Logs Data Platform user can be added to the role even if their assignated cluster is different from yours.
 
-Once a member has been added, This member will see in their manager on the relevant pages the items that have been shared to them with an indication present on the **Shared** column. Their available actions will also be displayed when cliecking the `...`{.action} menu on their button.
+Once a member has been added, this member will see (on the relevant pages of the Control Panel) the items that have been shared to them with an indication present on the **Shared** column. Their available actions will also be displayed when clieking the `...`{.action} button menu.
 
 ![menu\_permission](images/shared_stream.png){.thumbnail}
 
-A user can use their usual Logs Data Platform account credentials on a different cluster to access a shared item if it is not on their assignated cluster. If one user has access to items on another cluster, they can create tokens for this new cluster access. As a reminder, creating an account on Logs Data Platform is free, any OVHcloud nic-handle can create one or several accounts and they don't have to pay for data that has been shared with them.
+A user can use their usual Logs Data Platform account credentials on a different cluster to access a shared item if it is not on their assignated cluster. If one user has access to items on another cluster, they can create tokens for this new cluster access. As a reminder, creating an account on Logs Data Platform is free, any OVHcloud account can create one or several accounts and they don't have to pay for data that has been shared with them.
 
 ## Using API
 
