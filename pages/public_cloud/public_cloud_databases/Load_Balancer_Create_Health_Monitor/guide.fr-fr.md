@@ -27,27 +27,22 @@ Pour entrer plus en détail, veuillez consulter : [OVHcloud Load Balancer Concep
 
 ### Étape 2: Configuration initiale
 
-Avant de configurer votre Health Monitor, il est crucial de préparer correctement votre environnement de réseau en fonction de l'architecture de votre Load Balancer. Cette étape est déterminante pour le bon fonctionnement de votre système de load balancing. Voici comment procéder en fonction de l'architecture choisie :
+Lors de la configuration initiale de votre Health Monitor pour le Load Balancer OVHcloud, suivez ces étapes clés selon l'architecture de votre choix :
 
-#### Configurer votre réseau
+1. **Configurer votre réseau :**
+   - **Réseau privé à privé :** Assurez la configuration du réseau privé pour un trafic interne fluide.
+   - **Public à privé :** Utilisez une IP flottante et configurez les règles de sécurité pour le trafic entrant.
+   - **Public à public :** Assignez des IP flottantes au Load Balancer et des IP publiques aux serveurs, en ajustant les règles de sécurité.
 
-- **Réseau privé à privé** : Dans cette configuration, le trafic entre le client et le Load Balancer, puis entre le Load Balancer et les serveurs (Members), reste entièrement dans le réseau privé. Assurez-vous que votre réseau privé est bien configuré et que les routes internes permettent la communication sans entrave entre ces composants.
-  
-- **Public à privé** : Ici, le trafic entre de l'extérieur (Internet) vers un IP flottante associée au Load Balancer, lequel redirige ensuite le trafic vers les serveurs en aval dans le réseau privé. Vous devez configurer une IP flottante et vous assurer que les règles de sécurité (groupes de sécurité) permettent le trafic entrant sur les ports requis par votre application.
+2. **Déterminer l'emplacement et l'accès des serveurs :**
+   - Placez vos serveurs pour minimiser la latence selon l'emplacement des utilisateurs.
+   - Configurez le Load Balancer différemment selon que les serveurs utilisent des IP privées ou publiques.
 
-- **Public à public** : Dans ce scénario, le trafic passe de l'extérieur vers les serveurs en aval qui sont également accessibles publiquement. Cela nécessite non seulement une IP flottante pour le Load Balancer, mais également des adresses IP publiques pour chaque serveur en aval. Les règles de sécurité doivent être ajustées en conséquence pour sécuriser le trafic tout en permettant l'accès nécessaire.
+3. **Vérification des prérequis réseau :**
+   - Revoyez les configurations réseau telles que les plages d'IP, les groupes de sécurité, et les règles de pare-feu.
 
-#### Déterminer l'emplacement et l'accès des serveurs
+Pour des informations détaillées sur chaque architecture et les prérequis réseau, consultez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
 
-- **Emplacement des serveurs** : L'emplacement physique ou virtuel de vos serveurs peut affecter la performance de votre Load Balancer. En fonction de votre fournisseur de cloud et de l'architecture de votre projet, envisagez de placer vos serveurs dans des zones qui minimisent la latence ou qui correspondent à la répartition géographique de vos utilisateurs.
-
-- **Méthode d'accès** : Selon que vos serveurs sont configurés avec des adresses IP privées ou publiques, la configuration de votre Load Balancer variera. Pour les serveurs avec des IP privées, assurez-vous que le Load Balancer est configuré pour communiquer efficacement au sein du réseau privé. Pour les serveurs avec des IP publiques, vérifiez que les règles de sécurité permettent le trafic nécessaire entre le Load Balancer et les serveurs.
-
-#### Vérification des prérequis réseau
-
-- Avant de procéder à la configuration de votre Load Balancer et de votre Health Monitor, revoyez tous les prérequis réseau liés à votre architecture spécifique. Cela inclut les plages d'IP autorisées, les groupes de sécurité, les règles de pare-feu, et toute autre configuration de réseau qui pourrait influencer le routage du trafic et la disponibilité de vos services.
-
-En préparant soigneusement votre environnement selon ces lignes directrices, vous posez les bases nécessaires pour une configuration réussie de votre Health Monitor et assurez une distribution efficace du trafic vers vos applications.
 
 ### Étape 3: Création d’un Health Monitor
 
