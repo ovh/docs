@@ -426,7 +426,7 @@ By default, different Services of LoadBalancer type should have different corres
 When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud resources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those resources, here are the naming templates:
 > [!warning]
 >
-> Do not change the name of ressources automatically created by MKS, it may result to inconsistency.
+> Do not change the name of resources automatically created by MKS, as it may result to inconsistencies.
 >
 >
 
