@@ -1,7 +1,7 @@
 ---
 title: 'Guide : Création et Gestion d’un Health Monitor pour Load Balancer OVHcloud'
 excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Load Balancers OVHcloud via Manager, CLI, Horizon et Terraform'
-updated: 2024-04-05
+updated: 2024-04-08
 ---
 
 ## Objectif
@@ -15,7 +15,7 @@ Apprenez à créer et à gérer un Health Monitor pour vos Load Balancers OVHclo
 - Un Load Balancer déjà configuré dans votre espace projet OVHcloud.
 
 ## En pratique
-
+### Étape 1: Les concepts 
 Comprendre ces concepts clés est essentiel pour la gestion efficace d'un Health Monitor avec votre Load Balancer OVHcloud :
 
 - **Listeners** : Points d'écoute configurés avec un protocole et un port, acheminant les requêtes vers les serveurs adaptés.
@@ -47,33 +47,33 @@ Pour des informations détaillées sur chaque architecture et les prérequis ré
 
 Les Health Monitors jouent un rôle crucial dans la gestion de la disponibilité et des performances des services hébergés sur des infrastructures comme OVHcloud. Ils effectuent des vérifications régulières des serveurs pour garantir leur capacité à traiter les requêtes entrantes. Si un serveur ne répond pas aux critères de santé établis, il est temporairement retiré du pool, assurant ainsi que le trafic est dirigé uniquement vers les serveurs fonctionnels.
 
-## Types de Health Monitors et Configurations
+### Types de Health Monitors et Configurations
 
 Différents types de Health Monitors répondent à divers besoins spécifiques :
 
-### HTTP/S
+#### HTTP/S
 Effectue des requêtes HTTP ou HTTPS, idéal pour vérifier l'état de santé des applications web.
 - **`url_path`**: Chemin d'accès ciblé pour la vérification, par défaut à `/`.
 - **`http_method`**: Méthode HTTP utilisée pour la vérification, généralement `GET`.
 - **`expected_codes`**: Codes de réponse indiquant un état sain, typiquement `200`.
 
-### PING
+#### PING
 - Envoie des pings ICMP pour tester rapidement la disponibilité réseau d'un serveur.
 
-### TCP
+#### TCP
 - Tente d'établir une connexion TCP pour confirmer la réactivité d'un service sur un port donné, sans transfert de données.
 
-### TLS-HELLO
+#### TLS-HELLO
 - Initie une négociation SSL/TLS avec un message 'Client Hello', vérifiant la capacité de réponse SSL/TLS du serveur.
 
-## Utilisations et Points Clés
+#### Utilisations et Points Clés
 
 - Les vérifications **HTTP/S** et **TLS-HELLO** sont adaptées aux contextes sécurisés, particulièrement quand une authentification par certificat client est requise.
 - Les types **PING** et **TCP** conviennent pour des vérifications basiques de la connectivité, sans nécessiter de réponses spécifiques des serveurs.
 
 La configuration précise des Health Monitors, incluant la fréquence des vérifications (`delay`), le temps d'attente maximal pour une réponse (`timeout`), et le nombre d'essais avant de marquer un serveur comme défaillant (`max_retries`), est essentielle pour équilibrer efficacement une détection rapide des problèmes avec la minimisation des fausses alertes et la réduction de la charge sur les serveurs surveillés.
 
-### Options de Configuration Clés
+#### Options de Configuration Clés
 
 - **`url_path`**: Spécifie le chemin d'accès pour les requêtes HTTP/S, permettant de cibler des endpoints spécifiques pour la vérification.
 - **`http_method`**: Détermine la méthode HTTP (GET, POST, HEAD) à utiliser pour les vérifications HTTP/S.
@@ -82,7 +82,7 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 - **`timeout`**: Temps d'attente maximum pour une réponse du serveur avant de le considérer comme défaillant.
 - **`max_retries`**: Nombre de tentatives de vérification échouées avant que le serveur ne soit marqué comme défaillant.
 
-### Pool vs Health Monitor Compatibility Matrix
+#### Pool vs Health Monitor Compatibility Matrix
 
 | Listener/Pool    | HTTP | HTTPS | SCTP | TCP | TERMINATED_HTTPS | UDP |
 |------------------|------|-------|------|-----|------------------|-----|
@@ -127,6 +127,16 @@ Lors de la configuration de Health Monitors pour des applications web, gardez à
 - **Monitoring** : Utilisez les outils de surveillance d’OVHcloud pour suivre les performances et l'état de santé de votre Load Balancer et ajustez la configuration au besoin.
 
 En intégrant ces meilleures pratiques dans votre processus de configuration, vous maximisez la disponibilité et la performance de vos applications hébergées, tout en assurant une expérience utilisateur optimale.
+
+#### Surveillance et optimisation
+
+**Ajustements et meilleures pratiques** : Pour maintenir une performance optimale, il est recommandé de :
+
+- Surveiller régulièrement la santé de vos serveurs et l'efficacité de votre Load Balancer.
+- Ajuster les paramètres du Health Monitor (délai, timeout, max-retries) selon les besoins et les performances observées.
+- Explorer des stratégies d'optimisation basées sur les données de performance et les retours d'expérience.
+
+### Étape 4:  Configuration d'un Health Monitor via Diverses Interfaces OVHcloud
 
 La configuration d'un Health Monitor est essentielle pour assurer la haute disponibilité de vos services. Selon l'interface choisie, voici les étapes à suivre :
 
@@ -182,14 +192,6 @@ Remplacez `<POOL_ID>` par l'ID de votre Pool.
 - **Vérification** : Terraform confirmera la création du Health Monitor avec un résumé des ressources créées.
 
 Chaque méthode offre des avantages spécifiques selon votre familiarité avec les outils et votre environnement de travail. Le choix de l'interface dépend de vos préférences personnelles et des exigences techniques de votre projet.
-
-### Surveillance et optimisation
-
-**Ajustements et meilleures pratiques** : Pour maintenir une performance optimale, il est recommandé de :
-
-- Surveiller régulièrement la santé de vos serveurs et l'efficacité de votre Load Balancer.
-- Ajuster les paramètres du Health Monitor (délai, timeout, max-retries) selon les besoins et les performances observées.
-- Explorer des stratégies d'optimisation basées sur les données de performance et les retours d'expérience.
 
 ## Aller plus loin
 
