@@ -31,7 +31,7 @@ Avant de débuter les deux étapes de ce guide, nous vous conseillons de vous fa
 
 > [!warning]
 >
-> Votre zone DNS est potentiellement déjà configuré, par défaut ou lié à un hébergement. Nous allons voir comment identifier chaque enregistrement DNS nécessaires à la connexion avec votre hébergement Shopify. Certains devront être supprimés pour éviter de rentrer en conflit avec des enregistrements DNS requis dans cette configuration. D'autres seront simplement à modifier ou à créer. Pour une meilleur compréhension, nous utiliserons le nom de domaine « **mydomain.ovh** » comme example, remplacez celui-ci par votre nom de domaine lors de la configuration.
+> Votre zone DNS est potentiellement déjà configurée, par défaut ou liée à un hébergement. Nous allons voir comment identifier chaque enregistrement DNS nécessaire à la connexion avec votre hébergement Shopify. Certains devront être supprimés pour éviter de rentrer en conflit avec des enregistrements DNS requis dans cette configuration. D'autres seront simplement à modifier ou à créer. Pour une meilleur compréhension, nous utiliserons le nom de domaine « **mydomain.ovh** » comme exemple, remplacez celui-ci par votre nom de domaine lors de la configuration.
 
 ### Configurer vos enregistrements DNS sur votre compte OVHcloud
 
@@ -108,3 +108,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
