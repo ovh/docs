@@ -97,15 +97,85 @@ Ce guide détaillé en markdown vous aide à naviguer à travers la configuratio
   
 ### Étape 3 : Configuration Automatisée avec Terraform
 
-- **Exemple de Configuration Terraform :**
-    ```hcl
-    resource "openstack_lb_l7policy_v2" "l7policy_1" {
-      name             = "https_redirect"
-      action           = "REDIRECT_TO_URL"
-      listener_id      = "${openstack_lb_listener_v2.listener_1.id}"
-      redirect_url     = "https://www.example.com"
-    }
-    ```
+La configuration automatisée avec Terraform permet de déployer et de gérer des ressources cloud de manière déclarative, en utilisant des fichiers de configuration au format HashiCorp Language (HCL). Cela facilite la mise en place de politiques L7 pour les Load Balancers chez OVHcloud. Voici un exemple plus détaillé de configuration d'une politique L7 avec Terraform :
+
+#### Prérequis
+
+- **Installation de Terraform :** Assurez-vous d'avoir Terraform installé sur votre machine. Vous pouvez télécharger la dernière version de Terraform sur le [site officiel](https://www.terraform.io/downloads.html).
+- **Configuration du Provider OpenStack :** Configurez Terraform pour utiliser le provider OpenStack. Vous devrez fournir vos identifiants d'API OVHcloud pour permettre à Terraform d'interagir avec votre projet Public Cloud.
+
+#### Configuration d'une Politique de Redirection HTTPS
+
+L'exemple suivant montre comment définir une ressource Terraform pour créer une politique L7 qui redirige toutes les requêtes HTTP vers HTTPS :
+
+```hcl
+# Définir le provider OpenStack
+provider "openstack" {
+  auth_url    = "https://auth.cloud.ovh.net/v3"
+  user_name   = "votre_nom_utilisateur"
+  tenant_name = "nom_de_votre_projet"
+  password    = "votre_mot_de_passe"
+  region      = "votre_région"
+}
+
+# Ressource pour le Load Balancer
+resource "openstack_lb_loadbalancer_v2" "loadbalancer_1" {
+  name          = "mon-loadbalancer"
+  vip_subnet_id = "id_de_votre_subnet"
+}
+
+# Ressource pour l'écouteur (Listener)
+resource "openstack_lb_listener_v2" "listener_1" {
+  name            = "mon-listener"
+  protocol        = "HTTP"
+  protocol_port   = 80
+  loadbalancer_id = openstack_lb_loadbalancer_v2.loadbalancer_1.id
+}
+
+# Ressource pour la Politique L7
+resource "openstack_lb_l7policy_v2" "l7policy_1" {
+  name         = "https_redirect"
+  action       = "REDIRECT_TO_URL"
+  listener_id  = openstack_lb_listener_v2.listener_1.id
+  redirect_url = "https://www.example.com"
+}
+```
+
+##### Déploiement avec Terraform
+
+Après avoir configuré votre politique L7 avec Terraform, suivez ces étapes pour le déploiement :
+
+###### Initialisation de Terraform
+
+- **Commande :** `terraform init`
+- **But :** Initialise le workspace Terraform dans votre répertoire contenant les fichiers de configuration.
+
+###### Planification des Changements
+
+- **Commande :** `terraform plan`
+- **But :** Affiche un aperçu des modifications que Terraform prévoit d'appliquer à votre infrastructure.
+
+###### Application de la Configuration
+
+- **Commande :** `terraform apply`
+- **But :** Applique la configuration définie dans vos fichiers Terraform pour créer ou mettre à jour les ressources spécifiées, ici la politique L7 sur votre Load Balancer.
+
+##### Avantages de l'Utilisation de Terraform
+
+###### Idempotence
+
+- **Description :** Terraform assure que l'état final de votre infrastructure correspond à la configuration définie, permettant une gestion prévisible et reproductible de vos ressources.
+
+###### Gestion de l'Infrastructure as Code (IaC)
+
+- **Description :** Facilite la documentation, le partage et la révision de votre infrastructure, rendant les modifications plus gérables et moins sujettes aux erreurs.
+
+###### Automatisation
+
+- **Description :** Simplifie la gestion des ressources cloud complexes en réduisant le temps et l'effort nécessaires à leur déploiement et à leur maintenance.
+
+L'utilisation de Terraform pour la configuration des politiques L7 intègre la gestion de ces règles dans le processus général de déploiement de votre infrastructure, offrant une plus grande flexibilité et automatisation. Cette approche structurée favorise une gestion plus efficace et cohérente de l'équilibrage de charge à travers les politiques et les règles de niveau 7, optimisant ainsi les performances et la sécurité de vos applications déployées sur OVHcloud.
+
 ## Pour Aller Plus Loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
