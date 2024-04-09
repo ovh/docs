@@ -19,9 +19,10 @@ Ce guide a pour but d'expliquer comment configurer et gérer des Policies et rè
 
 ### Concepts Clés Expliqués
 #### Policies et Règles L7
-- **Policies L7 : Une directive appliquée à un écouteur de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions peuvent inclure la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
 
-- **Règle L7 : Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
+- **Policies L7 :** Une directive appliquée à un écouteur de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions peuvent inclure la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
+
+- **Règle L7 :** Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
 
 ### Étape 1 : Configuration via le Manager OVHcloud
 
