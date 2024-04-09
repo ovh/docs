@@ -53,6 +53,7 @@ Für den Transfer eines GoDaddy-Domainnamens ist ein spezieller Ansatz erforderl
 > Einige Registrare löschen die DNS-Zone, sobald der Transfer Ihres Domainnamens abgeschlossen ist. Ist das der Fall, erstellen Sie Ihre DNS-Zone bei OVHcloud neu, bevor Sie mit den Aktionen zum Transfer Ihres Domainnamens beginnen.
 >
 > Lesen Sie hierzu die folgenden Anleitungen:
+>
 > - [DNS-Zone bei OVHcloud erstellen](/pages/web_cloud/domains/dns_zone_create)
 > - [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 >
