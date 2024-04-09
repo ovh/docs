@@ -1054,6 +1054,7 @@
                 + [Transferring a domain name from Gandi to OVHcloud](web_cloud/domains/transfer_incoming_gandi)
             + [Tutorials](web-cloud-domains-domain-names-tutorials)
                 + [Tutorial - Using Zonemaster](web_cloud/domains/dns_zonemaster)
+                + [How to connect an OVHcloud domain name to a Shopify hosting plan](web_cloud/domains/how_to_connect_domain_to_shopify)
             + [API](web-cloud-domains-domain-names-api)
                 + [Introduction](web_cloud/domains/api_domain_intro)
                 + [Order a Domain Name](web_cloud/domains/api_domain_order)
