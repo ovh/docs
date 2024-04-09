@@ -1,14 +1,14 @@
 ---
-title: "Transferring a Ionos domain name to OVHcloud"
-excerpt: "Find out how to transfer a Ionos domain name to OVHcloud"
+title: "Transferring a Hostinger domain name to OVHcloud"
+excerpt: "Find out how to transfer a Hostinger domain name to OVHcloud"
 updated: 2024-04-09
 ---
 
 ## Objective
 
-To transfer a Ionos domain name, you will need to follow a specific procedure.
+To transfer a Hostinger domain name, you will need to follow a specific procedure.
 
-**This guide explains how to transfer a Ionos domain name to OVHcloud.**
+**This guide explains how to transfer a Hostinger domain name to OVHcloud.**
 
 > [!warning]
 >
