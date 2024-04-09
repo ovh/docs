@@ -60,7 +60,7 @@ Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgesetzt*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-Der Snapshot ist dann in der Rubrik `Instance Backup`{.action} im Abschnitt `Storage` im linken Menü des Public Cloud-Bereichs verfügbar. Ein Snapshot mit dem Namen *xxxxx-shelved* ist dann sichtbar :
+Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.action} im Bereich `Storage`. Ein Snapshot mit dem Namen *xxxxx-shelved* wird dann angezeigt.
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
