@@ -1,14 +1,14 @@
 ---
 title: Comment connecter un nom de domaine OVHcloud à un hébergement Shopify
-excerpt: Vous trouverez dans ce guide les astuces pour vous connecter à votre nom de domaine OVHcloud depuis un hébergement Shopify
+excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement Shopify
 updated: 2024-04-03
 ---
 
 ## Objectif
 
-Si vous possédez un nom de domaine chez OVHcloud et que vous souhaitez le connecter à un hébergement Shopify, vous trouverez dans ce guide les étapes nécessaires pour y arriver.
+Si vous possédez un nom de domaine chez OVHcloud et que vous souhaitez le connecter à un hébergement Shopify. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre hébergement Shopify.
 
-**Découvrez comment connecter à votre nom de domaine OVHcloud à un hébergement Shopify**
+**Découvrez comment connecter votre nom de domaine OVHcloud à un hébergement Shopify**
 
 > [!warning]
 >
@@ -29,6 +29,10 @@ Si vous possédez un nom de domaine chez OVHcloud et que vous souhaitez le conne
 
 Avant de débuter les deux étapes de ce guide, nous vous conseillons de vous familiariser avec la configuration d'une zone DNS à l'aide de notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
+> [!warning]
+>
+> Votre zone DNS est potentiellement déjà configuré, par défaut ou lié à un hébergement. Nous allons voir comment identifier chaque enregistrement DNS nécessaires à la connexion avec votre hébergement Shopify. Certains devront être supprimés pour éviter de rentrer en conflit avec des enregistrements DNS requis dans cette configuration. D'autres seront simplement à modifier ou à créer. Pour une meilleur compréhension, nous utiliserons le nom de domaine « **mydomain.ovh** » comme example, remplacez celui-ci par votre nom de domaine lors de la configuration.
+
 ### Configurer vos enregistrements DNS sur votre compte OVHcloud
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
@@ -38,10 +42,6 @@ Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de doma
 ![dnszone](images/tab.png){.thumbnail}
 
 Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.action} à droite de chaque ligne du tableau concernée puis cliquez sur `Modifier l'entrée`{.action}.
-
-> [!primary]
->
-> Dans notre guide, nous utilisons l'exemple « mydomain.ovh » comme nom de domaine, remplacez cet exemple par le domaine que vous configurez.
 
 Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 
@@ -65,7 +65,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Si vous n'avez pas d'enregistrement « AAAA » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `AAAA`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv6 de Shopify `2620:0127:f00f:5::` dans le champ **Cible**.
 >> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
->> Cliquez sur `Suivant`{.action}, validez votre enregistrement « AAAA » et passez à l'étape 3.
+>> Cliquez sur `Suivant`{.action} puis validez votre enregistrement « AAAA » et passez à l'étape 3.
 > **Etape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
