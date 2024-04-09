@@ -41,7 +41,7 @@ Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de doma
 
 ![dnszone](images/tab.png){.thumbnail}
 
-Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.action} à droite de chaque ligne du tableau concernée puis cliquez sur `Modifier l'entrée`{.action}.
+Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.action} à droite de la ligne du tableau concernée puis en cliquant sur `Modifier l'entrée`{.action}.
 
 Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 
