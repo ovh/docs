@@ -1,6 +1,7 @@
 ---
 title: "VCD - Les concepts fondamentaux de vCD"
 excerpt: "Decouvrer les concepts fondamentaux de vCD"
+updated: 2024-04-09
 flag: hidden
 ---
 
