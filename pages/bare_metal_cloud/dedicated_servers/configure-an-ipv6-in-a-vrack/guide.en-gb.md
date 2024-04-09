@@ -247,8 +247,9 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 </details>
 
 <details>
-<summary> <b><a name="slaac-with-routed">Automatic IP configuration (SLAAC) for a host</a></b> </summary>
+<summary> <b>Automatic IP configuration (SLAAC) for a host</b> </summary>
 <blockquote>
+<a name="slaac-with-routed"></a>
 In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
 Please note this bring additional risks (such as loosing access not only to a host but also to all VMs) and is not recommended.
 
