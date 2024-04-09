@@ -25,8 +25,8 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 ## Requirements
 
-- A [vRack compatible server](https://www.ovh.com/ca/en/solutions/vrack/){.external}
 - A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
+- A [vRack compatible server](https://www.ovh.com/ca/en/solutions/vrack/){.external} attached to your vRack network
 - Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
 > [!warning]
