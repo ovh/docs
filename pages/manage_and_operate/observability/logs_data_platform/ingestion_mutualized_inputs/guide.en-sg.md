@@ -35,9 +35,9 @@ The log formats that are accepted by Logs Data Platform are the following:
 
 ### Mutualized vs Dedicated inputs
 
-This guide describes how the mutualized inputs that are by default included in the platform work. Before going on with the guide, here is a reminder of the few characteristics of dedicated inputs that differentiate them from the mutualized ones:
+This guide describes the mutualized inputs that are by default included in the platform work. Before going on with the guide, here is a reminder of the few characteristics of dedicated inputs that differentiate them from the mutualized ones:
 
-- They are optional, and charged on a *per-input* basis.
+- They are optional and charged on a *per-input* basis.
 - You can choose which port they listen to.
 - You can filter IP addresses that are allowed to send logs.
 - You can choose to run Logstash or Flowgger. You can configure their sources as well as transform the logs they ingest before storing them in Logs Data Platform.
@@ -79,7 +79,7 @@ To configure your software, you need the following information:
 
 If your software interacts directly with the OpenSearch API, please follow [this documentation](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input).
 
-You should now have every information you need to configure your software to ingest logs in Logs Data Platform.
+You should now have all the information you need to configure your software to ingest logs in Logs Data Platform.
 
 ## Go Further
 
@@ -91,4 +91,3 @@ You should now have every information you need to configure your software to ing
 [Python 3 SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_python_3_logging_ldp)<br> 
 [Rust SDK](/pages/manage_and_operate/observability/logs_data_platform/ingestion_rust_loggers) <br>
 [Ingest the logs from your Kubernetes cluster](/pages/manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit) <br>
-
