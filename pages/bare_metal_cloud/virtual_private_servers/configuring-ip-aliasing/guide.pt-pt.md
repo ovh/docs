@@ -348,7 +348,7 @@ Na Área de Cliente WHM, clique em `IP Functions`{.action} e selecione `Add a Ne
 
 #### Etapa 2: adicionar as informações dos Additional IP
 
-Introduza o seu endereço Additional IP na forma « xxx.xxx.xxx.xxx » no campo « New IP or IP range to add ».
+Introduza o seu endereço Additional IP na forma "xxx.xxx.xxx.xxx" no campo "New IP or IP range to add".
 
 Selecione `255.255.255.255` como máscara de sub-rede e clique em `Submit`{.action}.
 
@@ -361,7 +361,7 @@ Selecione `255.255.255.255` como máscara de sub-rede e clique em `Submit`{.acti
 
 #### Etapa 3: verificar a configuração IP atual
 
-De volta à secção "Funções de IP" {.action}, clique em "Mostrar ou Deletar Current IP Addresses" {.action} para verificar se o endereço Additional IP foi corretamente adicionado.
+De volta à secção `Funções de IP`{.action}, clique em `Mostrar ou Deletar Current IP Addresses`{.action} para verificar se o endereço Additional IP foi corretamente adicionado.
 
 ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 
@@ -381,14 +381,13 @@ Nesta secção, clique no botão `Add IP Address`{.action}.
 
 ![add ip information](images/Plesk-2024-vps.png){.thumbnail}
 
-Introduza o seu endereço Additional IP sob a forma `xxx.xxx.xxx.xxx/32` no campo « IP address and subnet mask » e, em seguida, clique em `OK`{.action}.
+Introduza o seu endereço Additional IP sob a forma `xxx.xxx.xxx.xxx/32` no campo "IP address and subnet mask" e, em seguida, clique em `OK`{.action}.
 
 ![add ip information](images/Plesk-additional-ip.png){.thumbnail}
 
-
 #### Etapa 3: verificar a configuração IP atual
 
-Na secção « IP Addresses », verifique se o endereço Additional IP foi adicionado com êxito.
+Na secção "IP Addresses", verifique se o endereço Additional IP foi adicionado com êxito.
 
 ![current IP configuration](images/plesk-final-configuration.png){.thumbnail}
 

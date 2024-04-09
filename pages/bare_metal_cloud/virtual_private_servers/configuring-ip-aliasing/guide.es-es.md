@@ -5,7 +5,7 @@ updated: 2024-04-05
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 > 
 
 > [!primary]
@@ -23,7 +23,7 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de red 
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. No tenemos acceso a estas máquinas, por lo que no somos los administradores de las mismas y no podremos asistirle. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de un servidor, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de un servidor, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Para más información, consulte el apartado "Más información" de esta guía.
 >
 
 ## Requisitos
@@ -361,7 +361,7 @@ En el área de cliente de WHM, haga clic en `IP Functions`{.action} y seleccione
 
 #### 2\. añadir la información de las direcciones Additional IP
 
-ntroduzca su dirección Additional IP con el formato «xxx.xxx.xxx.xxx» en el campo «New IP or IP range to add».
+Introduzca su dirección Additional IP con el formato `xxx.xxx.xxx.xxx` en el campo `New IP or IP range to add`.
 
 Seleccione `255.255.255.255` como máscara de subred y haga clic en `Submit`{.action}.
 
@@ -435,7 +435,7 @@ Ethernet adapter Ethernet:
 2. Haga clic derecho en `Ethernet`{.action};
 3. Haga clic en `Properties`{.action};
 4. Seleccione `Internet Protocol Version 4 (TCP/IPv4)`{.action} y haga clic en `Properties`{.action};
-5. Haga clic en `Use the following IP address`{.action} e introduzca la IP principal del servidor, la máscara de subred y la puerta de enlace por defecto obtenidas con el comando `ipconfig`{.action} anterior. En el cuadro «Preferred DNS Server», escriba «213.186.33.99».
+5. Haga clic en `Use the following IP address`{.action} e introduzca la IP principal del servidor, la máscara de subred y la puerta de enlace por defecto obtenidas con el comando `ipconfig`{.action} anterior. En el cuadro "Preferred DNS Server", escriba "213.186.33.99".
 
 ![change the ip configuration](images/configure-main-ip.png){.thumbnail}
 
