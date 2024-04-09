@@ -1,12 +1,12 @@
 ---
-title: 'Guide : Création et Gestion des Politiques et Règles de Niveau 7 (L7) pour les Load Balancers OVHcloud'
-excerpt: 'Découvrez comment configurer et gérer des politiques et règles de niveau 7 (L7) avec les Load Balancers OVHcloud, en utilisant le Manager, la CLI, Horizon et Terraform.'
+title: 'Guide : Création et Gestion des Policies et Règles de Niveau 7 (L7) pour les Load Balancers OVHcloud'
+excerpt: 'Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) avec les Load Balancers OVHcloud, en utilisant le Manager, la CLI, Horizon et Terraform.'
 updated: 2024-04-08
 ---
 
 ## Objectif
 
-Ce guide a pour but d'expliquer comment configurer et gérer des politiques et règles de niveau 7 (L7) pour les Load Balancers dans l'environnement OVHcloud. Utiliser les capacités L7 permet de diriger le trafic de manière intelligente, basée sur le contenu des requêtes HTTP/HTTPS, améliorant ainsi la sécurité, la performance, et la fiabilité de vos applications.
+Ce guide a pour but d'expliquer comment configurer et gérer des Policies et règles de niveau 7 (L7) pour les Load Balancers dans l'environnement OVHcloud. Utiliser les capacités L7 permet de diriger le trafic de manière intelligente, basée sur le contenu des requêtes HTTP/HTTPS, améliorant ainsi la sécurité, la performance, et la fiabilité de vos applications.
 
 ## Prérequis
 
@@ -16,6 +16,12 @@ Ce guide a pour but d'expliquer comment configurer et gérer des politiques et r
 - **CLI OpenStack :** Pour la gestion via la ligne de commande.
 - **Interface Horizon :** Pour une gestion graphique via OpenStack.
 - **Terraform :** (Optionnel) Pour la gestion via Infrastructure as Code.
+
+### Concepts Clés Expliqués
+#### Policies et Règles L7
+- **Policies L7 : Une directive appliquée à un écouteur de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions peuvent inclure la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
+
+- **Règle L7 : Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
 
 ### Étape 1 : Configuration via le Manager OVHcloud
 
