@@ -60,7 +60,7 @@ Once the process is completed, your instance will now appear as *Suspended*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-To view the snapshot, go to the left side menu and click on `Instance Backup`{.action}. A snapshot named *xxxxx-shelved* will now be visible:
+To view the snapshot, click on `Instance Backup`{.action} underneath the `Storage` tab in the left side menu. A snapshot named *xxxxx-shelved* will now be visible:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -232,6 +232,6 @@ To unpause the instance, type the following at the command line:
 
 ## Go further
 
-[Openstack documentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[OpenStack documentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

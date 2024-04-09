@@ -231,6 +231,6 @@ Pour annuler cette action, saisissez la commande ci-dessous dans la ligne de com
 
 ## Aller plus loin
 
-[Documentation Openstack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}
+[Documentation OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
