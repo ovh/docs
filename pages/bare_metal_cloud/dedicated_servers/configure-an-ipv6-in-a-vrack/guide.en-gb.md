@@ -38,10 +38,12 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 ## Gathering new Additional IPv6 block
 While requesting new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
-To request an Additional IPv6 block during early Alpha product stage, please submit : https://survey.ovh.com/index.php/483751?lang=en
 
 **<ins>Actions</ins>**  
 
+<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using : https://survey.ovh.com/index.php/483751?lang=en
+
+Once your request will be processed, we will inform you via email about Additional IPv6 block delivery.
 
 <details>
 <summary> <b>Check the Status of Your IPv6 Block Request</b> </summary>
