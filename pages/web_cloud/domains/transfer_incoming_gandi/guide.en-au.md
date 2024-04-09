@@ -25,7 +25,7 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 >
 > The Gandimail service is linked to your domain name. It will stop working as soon as the domain name is transferred out of Gandi. 
 >
-> The email addresses associated with this domain name will be permanently deleted 7 days later, **including all of their contents**.
+> The email accounts associated with this domain name will be permanently deleted 7 days later, **including all of their contents**.
 >
 > It is therefore essential to back up their content before starting the domain name transfer.
 >
@@ -71,7 +71,7 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 
 > [!warning]
 >
-> Most extensions offer an anti-transfer locking feature, identifiable by a special status in the [WHOIS](https://www.ovhcloud.com/en-au/domains/whois/), called “transferProhibited”.
+> Most extensions offer an antitransfer locking feature, identifiable by a special status in the [WHOIS](https://www.ovhcloud.com/en-au/domains/whois/), called “transferProhibited”.
 >
 > This locking prevents any unintended transfer.
 >
@@ -87,15 +87,15 @@ The authorization code secures your domain name against unauthorized transfers m
 To retrieve the transfer code for your domain name, follow the steps described in the [Gandi dedicated documentation](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
 
 ### Step 3 - Start transferring your domain name to OVHcloud
-  
+
 Once you have obtained the authorization code, you can proceed with the transfer of your domain name by following the steps in our guide “[Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)”.
 
 > [!warning]
 >
 > Within 24 hours of the initiation of the transfer, Gandi will send you a notification email to inform you of the domain name release.
 > This email may also contain a link allowing you to accept the transfer instead of Gandi, which will reduce the reserve time.
-> The reserve period corresponds to a period of 5 days (8 days for domain names managed by AFNIC) which allows the transfer to be canceled.
-> After this period (5 full days), the transfer will be completed automatically.
+> The reserve period is 5 days (8 days for domain names managed by AFNIC) and allows the transfer to be cancelled.
+> After this period (5 days), the transfer will be completed automatically.
 >
 
 ## Go further <a name="go-further"></a>
