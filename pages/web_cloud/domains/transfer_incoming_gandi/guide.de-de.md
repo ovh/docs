@@ -27,11 +27,11 @@ Für den Transfer eines Gandi-Domainnamens ist ein spezieller Ansatz erforderlic
 
 > [!warning]
 >
-> Der Gandimail-Dienst ist mit Ihrer Domain verbunden. Es wird nicht mehr funktionieren, sobald der Domainname aus Gandi transferiert wird. 
+> Der Gandimail-Dienst ist mit Ihrem Domainnamen verbunden. Er wird nicht mehr funktionieren, sobald der Domainname von Gandi transferiert wird. 
 >
-> E-Mail-Adressen, die mit dieser Domain verbunden sind, werden 7 Tage später endgültig gelöscht, **einschließlich des gesamten Inhalts**.
+> E-Mail-Accounts, die mit diesem Domainnamen verbunden sind, werden 7 Tage später endgültig gelöscht, **einschließlich des gesamten Inhalts**.
 >
-> Es ist daher wichtig, dass Sie Ihre Inhalte sichern, bevor Sie mit dem Transfer der Domain beginnen.
+> Es ist daher wichtig, dass Sie Ihre Inhalte sichern, bevor Sie mit dem Transfer des Domainnamens beginnen.
 >
 
 ## Voraussetzungen
@@ -73,31 +73,31 @@ Für den Transfer eines Gandi-Domainnamens ist ein spezieller Ansatz erforderlic
 
 > [!warning]
 >
-> Die meisten Domainendungen verfügen über eine Sperrfunktion gegen den Transfer, die im [Whois](https://www.ovhcloud.com/de/domains/whois/) als „transferProhibited“ bezeichnet werden kann.
+> Die meisten Domainendungen verfügen über eine Sperrfunktion gegen den Transfer, die im [Whois](https://www.ovhcloud.com/de/domains/whois/) als „transferProhibited“ bezeichnet ist.
 >
 > Diese Sperrung verhindert unbeabsichtigtes Übertragen.
 >
 > Solange die Sperre aktiv ist, ist die Übertragung nicht möglich.
 >
 
-Um Ihren Domainnamen bei Gandi zu entsperren, folgen Sie den Schritten in der [Gandi Dedicated Documentation](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html){.external}.
+Um Ihren Domainnamen bei Gandi zu entsperren, folgen Sie den Schritten in der [Gandi Dokumentation](https://docs.gandi.net/en/domain_names/transfer_out/transfer_lock.html){.external}.
 
 ### Schritt 2 - Autorisierungscode abrufen
 
-Der Autorisierungscode schützt Ihre Domain gegen unbefugte Transfers durch Dritte. Dieser Code ist erforderlich, um den Transfer Ihrer Domain zu einem neuen Registrar zu autorisieren.
+Der Autorisierungscode schützt Ihren Domainnamen gegen unbefugte Transfers durch Dritte. Dieser Code ist erforderlich, um den Transfer Ihres Domainnamens zu einem neuen Registrar zu autorisieren.
 
-Um den Transfer-Code für Ihre Domain abzurufen, folgen Sie den Schritten in der [Gandi Dedicated Documentation](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
+Um den Transfer-Code für Ihren Domainnamen abzurufen, folgen Sie den Schritten in der [Gandi Dokumentation](https://docs.gandi.net/en/domain_names/transfer_out/auth_info.html){.external}.
 
-### Schritt 3 - Transfer Ihrer Domain zu OVHcloud einleiten
+### Schritt 3 - Transfer Ihres Domainnamens zu OVHcloud einleiten
   
-Sobald Sie den Autorisierungscode erhalten haben, können Sie den Transfer Ihrer Domainnamen durchführen, indem Sie die Schritte in unserer Anleitung "[Domainnamen zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)" befolgen.
+Sobald Sie den Autorisierungscode erhalten haben, können Sie den Transfer Ihres Domainnamens durchführen, indem Sie die Schritte in unserer Anleitung "[Domainnamen zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)" befolgen.
 
 > [!warning]
 >
-> Innerhalb von 24 Stunden nach Beginn des Transfers wird Gandi Ihnen eine E-Mail mit einer Benachrichtigung zusenden, um Sie über die Freigabe der Domain zu informieren.
+> Innerhalb von 24 Stunden nach Beginn des Transfers wird Gandi Ihnen eine E-Mail mit einer Benachrichtigung zusenden, um Sie über die Freigabe des Domainnamens zu informieren.
 > Diese E-Mail kann auch einen Link enthalten, über den Sie den Transfer anstelle von Gandi akzeptieren können, was die Reservierungsfrist verkürzt.
-> Die Reservierungsfrist entspricht einer Frist von 5 Tagen (8 Tagen für Domainnamen, die von der AFNIC verwaltet werden), die es erlaubt, den Transfer zu stornieren.
-> Nach Ablauf dieser Frist (5 Tage „voll“) wird der Transfer automatisch abgeschlossen.
+> Die Reservierungsfrist beträgt 5 Tage (8 Tage für von AFNIC verwaltete Domainnamen) und erlaubt es, den Transfer zu stornieren.
+> Nach Ablauf dieser Frist (5 Tage) wird der Transfer automatisch abgeschlossen.
 >
 
 ## Weiterführende Informationen <a name="go-further"></a>
