@@ -1,7 +1,7 @@
 ---
 title: Comment connecter un nom de domaine OVHcloud à un hébergement Shopify
 excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un hébergement Shopify
-updated: 2024-04-03
+updated: 2024-04-09
 ---
 
 ## Objectif
