@@ -75,7 +75,7 @@ Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.g
 
 OVHcloud le solicitará el código de autorización o «Auth code» antes de iniciar el procedimiento de transferencia del dominio. Puede obtenerlo abriendo la página de su cartera de dominios`{.action} en GoDaddy.
 
-Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/obtener-codigo-de-autorizacion-para-mi-dominio-1685){.external}.
+Siga los pasos descritos en la [documentación dedicada de GoDaddy](https://es.godaddy.com/help/transferir-mi-dominio-fuera-de-godaddy-3560){.external}.
 
 ### Etapa 3 - Iniciar la transferencia del dominio a OVHcloud
 

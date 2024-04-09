@@ -75,7 +75,7 @@ Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej dla GoDad
 
 Przed rozpoczęciem procedury transferu domeny OVHcloud poprosi o podanie kodu autoryzacyjnego lub "Auth code". Możesz go uzyskać, otwierając stronę Twojego portfolio `Domeny`{.action} w GoDaddy.
 
-Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej GoDaddy](https://pl.godaddy.com/help/uzyskaj-kod-autoryzacyjny-dla-mojej-domeny-1685){.external}.
+Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej GoDaddy](https://pl.godaddy.com/help/przenoszenie-posiadanej-domeny-z-godaddy-3560){.external}.
 
 ### Etap 3 - Rozpocznij transfer domeny do OVHcloud
 

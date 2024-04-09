@@ -71,7 +71,7 @@ Befolgen Sie die Schritte in der [dedizierten Dokumentation von GoDaddy](https:/
 
 OVHcloud wird Sie auffordern, den Autorisierungscode oder „Auth Code“ anzugeben, bevor der Domaintransfer eingeleitet wird. Sie erhalten es, indem Sie die Seite mit Ihrem Portfolio an `Domainnamen`{.action} bei GoDaddy aufrufen.
 
-Folgen Sie den Schritten in der [dedizierten Dokumentation von GoDaddy](https://de.godaddy.com/help/autorisierungscode-fur-meine-domain-abrufen-1685){.external}.
+Folgen Sie den Schritten in der [dedizierten Dokumentation von GoDaddy](https://de.godaddy.com/help/meine-domain-von-godaddy-ubertragen-3560){.external}.
 
 ### Schritt 3 - Den Domaintransfer zu OVHcloud starten
 

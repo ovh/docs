@@ -69,7 +69,7 @@ Follow the steps described in [GoDaddy dedicated documentation](https://www.goda
 
 OVHcloud will ask you to provide the authorization code, or Auth code, before you begin the domain name transfer procedure. You can get it by opening your `Domain names`{.action} portfolio page at GoDaddy.
 
-Follow the steps described in [GoDaddy dedicated documentation](https://en.godaddy.com/help/transfer-my-domain-out-of-godaddy-3560){.external}.
+Follow the steps described in [GoDaddy dedicated documentation](https://www.godaddy.com/help/transfer-my-domain-away-from-godaddy-3560){.external}.
 
 ### Step 3 - Initiate the domain transfer to OVHcloud
 
