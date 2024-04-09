@@ -66,6 +66,7 @@ Deve também:
 > Alguns agentes de registo eliminam a zona DNS presente nas suas casas assim que a transferência do domínio é concluída. Se for o caso, crie de forma idêntica a sua zona DNS na OVHcloud antes de iniciar as ações ligadas à transferência do seu domínio.
 >
 > Para isso, consulte os seguintes guias:
+>
 > - [Criar uma zona DNS na OVHcloud](pages/web_cloud/domains/dns_zone_create)
 > - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >

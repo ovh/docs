@@ -60,6 +60,7 @@ To transfer a Gandi domain name, you will need to follow a specific procedure.
 > Some registrars delete the DNS zone as soon as your domain name transfer is complete. If this is the case, recreate your DNS zone identically at OVHcloud before starting the domain name transfer.
 >
 > To do this, refer to the following guides:
+>
 > - [Create a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 > - [Edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 >

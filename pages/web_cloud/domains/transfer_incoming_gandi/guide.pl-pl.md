@@ -66,6 +66,7 @@ Musisz również:
 > Rekordy usuwają strefę DNS obecną u nich w momencie zakończenia transferu Twojej domeny. W takim przypadku przed rozpoczęciem operacji związanych z transferem domeny utwórz ponownie strefę DNS w OVHcloud.
 >
 > Aby to zrobić, zapoznaj się z następującymi przewodnikami:
+>
 > - [Utwórz strefę DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 > - [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >

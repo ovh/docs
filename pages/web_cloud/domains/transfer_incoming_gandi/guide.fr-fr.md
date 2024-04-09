@@ -62,6 +62,7 @@ Vous devez aussi :
 > En effet, certains bureaux d'enregistrements suppriment la zone DNS présente chez eux dès que le transfert de votre nom de domaine est terminé. Si tel est le cas, recréez à l'identique votre zone DNS chez OVHcloud avant de démarrer les actions liées au transfert de votre nom de domaine.
 >
 > Pour cela, consultez les guides suivants :
+>
 > - [Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >
