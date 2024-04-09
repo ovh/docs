@@ -89,7 +89,7 @@ Para se familiarizar com a mudança de proprietário de um domínio, consulte es
 > Sugerimos que consulte o Hostinger para que tome as medidas adequadas à transferência do seu domínio.
 > 
 
-Para obter um código **EPP** ou **Auth** na Hostinger, siga os passos descritos na [documentação dedicada do Hostinger](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+Para obter um código **EPP** ou **Auth** na Hostinger, siga os passos descritos na [documentação dedicada do Hostinger](https://support.hostinger.com/pt/articles/1583203-como-obter-o-codigo-epp-ou-de-autenticacao-para-transferencia-de-dominio-na-hostinger){.external}.
 
 ### Iniciar a transferência do domínio para a OVHcloud
 
