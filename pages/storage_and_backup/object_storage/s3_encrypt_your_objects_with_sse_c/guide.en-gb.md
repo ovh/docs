@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Encrypt your server-side objects with SSE-C or SSE-S3
 excerpt: This guide explains how to encrypt your server-side objects with SSE-C or SSE-S3
-updated: 2024-04-08
+updated: 2024-04-10
 ---
 
 <style>
