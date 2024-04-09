@@ -440,6 +440,11 @@
             + [FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-faq)
             + [VPN-SPN Concept](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn)
             + [SPN Connector Concept](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn-connector)
+        + [VCD]
+          + [Getting Started](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
+          + [Creating a Virtual Machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
+          + [VCD - Concepts](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+          + [FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
         + [Getting started](hosted-private-cloud-nutanix-on-ovhcloud-getting-started)
             + [Nutanix global high-level documentation](hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
