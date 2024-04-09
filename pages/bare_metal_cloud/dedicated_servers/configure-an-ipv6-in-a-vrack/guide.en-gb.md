@@ -46,9 +46,10 @@ To request an Additional IPv6 block during early Alpha product stage, please sub
 <details>
 <summary> <b>Check the Status of Your IPv6 Block Request</b> </summary>
 <blockquote>
-
-![image-2024-3-29_14-55-25](https://github.com/ovh/docs/assets/60412/20108fc8-a30e-481d-b470-beb2b99e7b7a)
-
+    
+We can check services eligible for configuration using this GET API call:
+![image](https://github.com/ovh/docs/blob/ipv6_in_vrack/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/images/get-eligibleServices.png)
+New IPv6 block is there, let's configure it now!
 
 </blockquote>
 </details>
@@ -57,17 +58,33 @@ To request an Additional IPv6 block during early Alpha product stage, please sub
 ## Configuring IPv6 in a vRack (basic mode)
 
 In this section we will present basic IPv6 setup for your vRack connected hosts.
-
 ![image](https://github.com/ovh/docs/assets/60412/04b55646-15f9-4ecd-86f3-cea51fa7421e)
+
+Example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belongs to the first /64 subnet from given public /56 Additional IPv6 block. Both leverage vRack interface for public IPv6 connectivity.
 
 
 ### APIv6 setup
 
 <details>
+<summary> <b>Attributing Additional IPv6 to a vRack</b> </summary>
+<blockquote>
+Delivered IPv6 block (as seen previously with /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
+
+![image](https://github.com/ovh/docs/blob/ipv6_in_vrack/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/images/post-ipv6.png)
+
+It can be also verified this way:
+![image-2024-3-29_14-55-25](https://github.com/ovh/docs/assets/60412/20108fc8-a30e-481d-b470-beb2b99e7b7a)
+Now, we see our block configured with a vRack. Next step is to configure your host or VMs.
+
+</blockquote>
+</details>
+
+<details>
 <summary> <b>Static IP configuration</b> </summary>
 <blockquote>
 
-Inside given /56 block, there is always first /64 subnet that is in bridged mode. You can view it this way:
+Once Additional IPv6 /56 block is attributed to a vRack network, there is always first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
+Let's check exactly which subnet is bridged::
 
 ![image-2024-3-29_14-54-24](https://github.com/ovh/docs/assets/60412/c3c67e28-205c-4ebe-910f-fefa5c018781)
 
@@ -75,7 +92,7 @@ Inside given /56 block, there is always first /64 subnet that is in bridged mode
 To get more details:
 
 ![image-2024-3-29_14-53-36](https://github.com/ovh/docs/assets/60412/574f9e7a-3c6c-4aea-b232-0e1167a8285a)
-
+Notice that IP autoconfiguration (SLAAC) is turned off by default.
 
 </blockquote>
 </details>
@@ -98,7 +115,7 @@ Don't forget to configure SLAAC on your host machine.
 <summary> <b>Static IP configuration</b></b> </summary>
 <blockquote>
 
-In basic configuration, you may want to setup IP address and routing manually. This is also suggested setup when your machine acts as a router (XXX see "Configuring routed subnet") and has ipv6.forwarding mode enabled.
+In a basic configuration, you may want to setup an IP address and routing manually. This is also suggested way when your machine acts as a router (see [configuring routed subnet](#configuring-an-ipv6-in-a-vrack-for-routed-mode)) and has ipv6.forwarding mode enabled.
 
 First, let's add an IP address on the vrack interface (in our example "eth1"):
 ``` bash
@@ -131,7 +148,7 @@ First, let's allow our host to accept Router Advertisements (for autoconfigurati
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
-Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer "XXX Configuring routed subnet setction" for details.
+Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#host-side-configuration) for details.
  
 Then, simply bring up the interface:
 ``` bash
