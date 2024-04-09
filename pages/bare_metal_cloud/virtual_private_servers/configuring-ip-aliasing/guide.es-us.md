@@ -401,7 +401,7 @@ Introduzca su dirección Additional IP como `xxx.xxx.xxx.xxx/32` en el campo "IP
 
 #### 3\. comprobar la configuración IP actual
 
-En la sección "Direcciones IP", compruebe que la dirección Additional IP se haya añadido correctamente.
+En la sección "IP Addresses", compruebe que la dirección Additional IP se haya añadido correctamente.
 
 ![configuración IP actual](images/plesk-final-configuration.png){.thumbnail}
 
@@ -452,7 +452,13 @@ En la nueva ventana, haga clic en `Add...`{.action} en "IP addresses". Introduzc
 
 Confirme haciendo clic en `Add`{.action}.
 
-![Configuración del cambio de IP](images/images/final-configuration.png){.thumbnail}
+![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
+
+A continuación, haga clic en `OK`{.action} para aplicar la configuración.
+
+![Configuración del cambio de IP](images/final-configuration.png){.thumbnail}
+
+Perderá la conexión con su servidor durante unos segundos.
 
 #### 4\. comprobar la configuración IP actual
 

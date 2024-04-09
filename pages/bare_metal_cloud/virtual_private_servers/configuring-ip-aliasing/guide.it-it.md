@@ -399,7 +399,7 @@ Inserisci il tuo indirizzo Additional IP nella forma `xxx.xxx.xxx.xxx/32` nel ca
 
 #### Step 3: verifica la configurazione IP corrente
 
-Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, accedi alla sezione "Indirizzi IP".
+Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, accedi alla sezione "IP Addresses".
 
 ![configurazione IP attuale](images/plesk-final-configuration.png){.thumbnail}
 
@@ -419,7 +419,6 @@ Per recuperare la configurazione IP corrente, inserisci `ipconfig` nel prompt de
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
-
    Connection-specific DNS Suffix  . : openstacklocal
    Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
    IPv4 Address. . . . . . . . . . . : 192.0.2.29
@@ -450,25 +449,30 @@ Nella nuova finestra, clicca su `Add...`{.action} sotto "IP addresses". Inserisc
 
 Per confermare, clicca su `Add`{.action}.
 
+![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
+
+Fare quindi clic su `OK`{.action} per applicare la configurazione.
+
 ![Configurazione del trasferimento IP](images/final-configuration.png){.thumbnail}
+
+Si perderà la connessione al server per alcuni secondi.
 
 #### Step 4: verifica la nuova configurazione di rete
 
 Apri il prompt dei comandi (cmd) e inserisci `ipconfig`. La configurazione deve includere il nuovo indirizzo Additional IP.
 
- ```powershell
-   C:\Users\Administrator>ipconfig
-   Windows IP Configuration
-   Ethernet adapter Ethernet:
-
-      Connection-specific DNS Suffix  . :
-      Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
-      IPv4 Address. . . . . . . . . . . : 192.0.2.29
-      Subnet Mask . . . . . . . . . . . : 255.255.255.255
-      IPv4 Address. . . . . . . . . . . : 203.0.113.0
-      Subnet Mask . . . . . . . . . . . : 255.255.255.255
-      Default Gateway . . . . . . . . . : 192.0.2.1
-   ```
+```powershell
+C:\Users\Administrator>ipconfig
+Windows IP Configuration
+Ethernet adapter Ethernet:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
+   IPv4 Address. . . . . . . . . . . : 192.0.2.29
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   IPv4 Address. . . . . . . . . . . : 203.0.113.0
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 192.0.2.1
+```
 
 ### Diagnostica
 

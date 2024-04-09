@@ -293,6 +293,12 @@ sudo cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /
 
 Wenn Sie einen Fehler gemacht haben, können Sie die Änderungen mit den folgenden Befehlen rückgängig machen:
 
+```bash
+sudo rm -f /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo cp /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+#### Schritt 2: Netzwerkkonfigurationsdatei bearbeiten
 
 > [!primary]
 > Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel von Ihrem Namen abweichen kann. Passen Sie die Befehle an Ihren Dateinamen an.
@@ -389,7 +395,7 @@ Geben Sie Ihre Additional IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP ad
 
 Überprüfen Sie im Bereich "IP Addresses" ob die Additional IP korrekt hinzugefügt wurde.
 
-![aktuelle IP-Konfiguration](plesk-final-configuration.png){.thumbnail}
+![aktuelle IP-Konfiguration](images/plesk-final-configuration.png){.thumbnail}
 
 ### Windows Server
 
@@ -433,11 +439,15 @@ Die IP-Eigenschaften müssen nun zu einer statischen Konfiguration geändert wer
 
 #### Schritt 3: Die Additional IP in "Erweiterte TCP/IP Einstellungen" hinzufügen
 
-Klicken Sie im neuen Fenster auf `Add...`{.action} unter "IP-Adressen". Geben Sie Ihre Additional IP und die Subnetzmaske (255.255.255.255) ein.
+Klicken Sie im neuen Fenster auf `Add...`{.action} unter "IP addresses". Geben Sie Ihre Additional IP und die Subnetzmaske (255.255.255.255) ein.
 
 ![Advance Configuration section](images/configure-additional-ip.png){.thumbnail}
 
 Bestätigen Sie, indem Sie auf `Add`{.action} klicken.
+
+![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
+
+Klicken Sie dann auf `OK`{.action}, um die Konfiguration zu übernehmen.
 
 ![Additional IP configuration](images/final-configuration.png){.thumbnail}
 

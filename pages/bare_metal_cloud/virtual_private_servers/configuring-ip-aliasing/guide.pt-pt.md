@@ -361,7 +361,7 @@ Selecione `255.255.255.255` como máscara de sub-rede e clique em `Submit`{.acti
 
 #### Etapa 3: verificar a configuração IP atual
 
-De volta à secção `Funções de IP`{.action}, clique em `Mostrar ou Deletar Current IP Addresses`{.action} para verificar se o endereço Additional IP foi corretamente adicionado.
+De volta à secção `IP Functions`{.action}, clique em `Show or Delete Current IP Addresses`{.action} para verificar se o endereço Additional IP foi corretamente adicionado.
 
 ![check configured IP](images/cpanel-alma-3.png){.thumbnail}
 
@@ -405,12 +405,8 @@ Para obter a configuração IP atual, insira o `ipconfig` na encomenda.
 
 ```powershell
 C:\Users\Administrator>ipconfig
-
 Windows IP Configuration
-
-
 Ethernet adapter Ethernet:
-
    Connection-specific DNS Suffix  . : openstacklocal
    Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
    IPv4 Address. . . . . . . . . . . : 192.0.2.29
@@ -455,12 +451,8 @@ Abra a linha de comandos (cmd) e introduza o `ipconfig`. A configuração deve a
 
 ```powershell
 C:\Users\Administrator>ipconfig
-
 Windows IP Configuration
-
-
 Ethernet adapter Ethernet:
-
    Connection-specific DNS Suffix  . :
    Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
    IPv4 Address. . . . . . . . . . . : 192.0.2.29
