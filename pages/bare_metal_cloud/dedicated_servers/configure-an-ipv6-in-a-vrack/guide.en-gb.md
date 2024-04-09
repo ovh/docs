@@ -148,7 +148,7 @@ First, let's allow our host to accept Router Advertisements (for autoconfigurati
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
-Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#slaac-with-routed) for details.
+Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#host-side-configuration) for details.
  
 Then, simply bring up the interface:
 ``` bash
@@ -249,8 +249,8 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 <details>
 <summary> <b>Automatic IP configuration (SLAAC) for a host</b> </summary>
 <blockquote>
-<a name="slaac-with-routed"></a>
-In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
+
+    In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
 Please note this bring additional risks (such as loosing access not only to a host but also to all VMs) and is not recommended.
 
 Ensuring IPv6 forwarding is enabled:
