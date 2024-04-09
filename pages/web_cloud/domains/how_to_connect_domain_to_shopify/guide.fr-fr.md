@@ -12,7 +12,7 @@ Si vous possédez un nom de domaine chez OVHcloud et que vous souhaitez le conne
 
 > [!warning]
 >
-> - L’assistance Shopify n’a pas accès aux paramètres de votre nom de domaine OVHcloud et ne peut, par conséquent, pas vous conseiller sur les informations que vous devrez lui fournir.
+> - L’assistance Shopify n’a pas accès aux paramètres de votre nom de domaine OVHcloud et ne peut donc pas vous conseiller sur les informations que vous devrez lui fournir.
 >
 > - OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.<br><br> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
@@ -41,57 +41,57 @@ Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.a
 
 > [!primary]
 >
-> Dans notre guide, nous utilisons l'exemple « mydomain.ovh » comme nom de domaine, remplacez les exemples par celui que vous configurez.
+> Dans notre guide, nous utilisons l'exemple « mydomain.ovh » comme nom de domaine, remplacez cet exemple par le domaine que vous configurez.
 
 Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 
 > [!tabs]
-> **Etape1**
+> **Etape 1**
 >> **Enregistrement A**<br><br>
 >> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
 >> ![dnszone](images/filter-a.png){.thumbnail}<br>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), supprimez-le pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
->> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champs de pointage » `A`{.action}<br><br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 de Shopify `23.227.38.65` dans le champ **Cible**.
 >> ![dnszone](images/field-a.png){.thumbnail}<br><br>
->> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A » et passez à l'étape 2
-> **Etape2**
+>> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A » et passez à l'étape 2.
+> **Etape 2**
 >> **Enregistrement AAAA**<br><br>
 >>  Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul sans sous-domaine (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), supprimez-le pour qu'elle ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
->> - Si vous n'avez pas d'enregistrement « AAAA » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champs de pointage » `AAAA`{.action}<br><br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul sans sous-domaine (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Si vous n'avez pas d'enregistrement « AAAA » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `AAAA`{.action}<br><br>
 >> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv6 de Shopify `2620:0127:f00f:5::` dans le champ **Cible**.
 >> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
->> Cliquez sur `Suivant`{.action}, validez votre enregistrement « AAAA » et passez à l'étape 3
-> **Etape3**
+>> Cliquez sur `Suivant`{.action}, validez votre enregistrement « AAAA » et passez à l'étape 3.
+> **Etape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Si des enregistrements « TXT » pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`) sont présent, supprimez-les pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
-> **Etape4**
+>> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+> **Etape 4**
 >> **Enregistrement CNAME**<br><br>
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondante à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champs de pointage » `CNAME`{.action}.
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `shops.myshopify.com.` dans le champ **Cible**.<br>
 >> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
->> Cliquez sur `Suivant`{.action}, validez votre enregistrement « CNAME ».
+>> Cliquez sur `Suivant`{.action} puis validez votre enregistrement « CNAME ».
 
 La zone DNS est maintenant configurée pour faire le lien avec un hébergement Shopify.
 
 ### Connecter son nom de domaine à Shopify
 
-Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion de Shopify. Nous vous invitons à vous rendre directement à l’étape 2 du guide sur le site de Shopify, en cliquant sur [**ce lien**]( https://help.shopify.com/fr/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external}.
+Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion de Shopify. Nous vous invitons à vous rendre directement à l’étape 2 du guide sur le site de Shopify, en cliquant sur [**ce lien**](https://help.shopify.com/fr/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external}.
 
 > [!primary]
 >
 > la vérification de votre nom de domaine peut prendre jusqu’à 48 heures.
 
-Si vous avez des e-mails OVHcloud ou que vous prévoyez de souscrire à l'une de [nos offres e-mail](https://www.ovhcloud.com/fr/emails/), pour préparer vote zone DNS, consultez notre guide sur la [configuration d’un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx).
+Si vous utilisez une offre e-mail OVHcloud ou que vous prévoyez de souscrire à l'une de [nos offres e-mail](https://www.ovhcloud.com/fr/emails/), pour préparer vote zone DNS, consultez notre guide sur la [configuration d’un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx).
 
 ## Aller plus loin <a name="gofurther"></a>
 
