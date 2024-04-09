@@ -1,6 +1,6 @@
 ---
-title: 'Transfer domeny Ionos do OVHcloud'
-excerpt: 'Dowiedz się więcej o transferze domeny z systemu Ionos do OVHcloud'
+title: 'Transfer domeny Hostinger do OVHcloud'
+excerpt: 'Dowiedz się więcej o transferze domeny z systemu Hostinger do OVHcloud'
 updated: 2024-04-09
 ---
 
@@ -10,9 +10,9 @@ updated: 2024-04-09
 
 ## Wprowadzenie
 
-Transfer domeny Ionos wymaga zastosowania określonej procedury.
+Transfer domeny Hostinger wymaga zastosowania określonej procedury.
 
-**Dowiedz się, jak wykonać transfer domeny Ionos do OVHcloud**
+**Dowiedz się, jak wykonać transfer domeny Hostinger do OVHcloud**
 
 > [!warning]
 >
@@ -26,7 +26,7 @@ Transfer domeny Ionos wymaga zastosowania określonej procedury.
 
 ## Wymagania początkowe
 
-- Domena jest zarejestrowana u operatora Ionos.
+- Domena jest zarejestrowana u operatora Hostinger.
 - Domena istnieje od ponad 60 dni.
 - W ciągu ostatnich 60 dni domena nie została przeniesiona ani nie zmienił właściciela.
 - Nazwa domeny ma status "OK" lub "możliwy do przeniesienia".
