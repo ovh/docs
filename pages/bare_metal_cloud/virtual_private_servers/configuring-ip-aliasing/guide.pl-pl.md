@@ -419,12 +419,8 @@ Aby pobrać aktualną konfigurację IP, wprowadź `ipconfig` w wierszu poleceń.
 
 ```powershell
 C:\Users\Administrator>ipconfig
-
 Windows IP Configuration
-
-
 Ethernet adapter Ethernet:
-
    Connection-specific DNS Suffix  . : openstacklocal
    Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
    IPv4 Address. . . . . . . . . . . : 192.0.2.29
@@ -469,12 +465,8 @@ Otwórz wiersz poleceń (cmd) i wprowadź `ipconfig`. Konfiguracja musi teraz ob
 
 ```powershell
 C:\Users\Administrator>ipconfig
-
 Windows IP Configuration
-
-
 Ethernet adapter Ethernet:
-
    Connection-specific DNS Suffix  . :
    Link-local IPv6 Address . . . . . : fe90::30gf:258a:84d6:abcf%5
    IPv4 Address. . . . . . . . . . . : 192.0.2.29

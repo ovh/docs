@@ -445,6 +445,10 @@ Dans la nouvelle fenêtre, cliquez sur `Ajouter...`{.action} sous « Adresses IP
 
 Confirmez en cliquant sur `Ajouter`{.action}.
 
+![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
+
+Cliquez ensuite sur `OK`{.action} pour appliquer la configuration.
+
 ![Additional IP configuration](images/final-configuration.png){.thumbnail}
 
 Vous perdrez la connexion à votre serveur pendant quelques secondes.
