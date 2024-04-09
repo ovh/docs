@@ -2,20 +2,11 @@
 title: "VCD - Find out how to use the vCD user interface"
 excerpt: "Discover the vCD user interface"
 updated: 2024-04-09
+flag: hidden
 ---
- 
-## Objective
-  
-**This guide walks you through the different sections of the vCD interface.**
-  
-## Requirements
-  
-## Instructions
-  
-### Step 1
-  
-### Step 2
-  
-## Go further
-  
+
+> [!primary]
+> This page is a temporary placeholder for the future page detailing the different sections of the vCD interface.
+>
+
 Join our community of users on <https://community.ovh.com/en/>.

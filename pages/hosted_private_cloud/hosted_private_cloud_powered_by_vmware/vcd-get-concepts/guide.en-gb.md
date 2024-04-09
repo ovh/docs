@@ -1,21 +1,11 @@
 ---
-title: "VCD - Les concepts fondamentaux de vCD"
+title: "VCD - The fundamentals of vCD"
 excerpt: "Discover the basic concepts of vCD"
 updated: 2024-04-09
 ---
- 
-## Objective
-  
-**This guide explains the various basic concepts of vCD**
-  
-## Requirements
-  
-## Instructions
-  
-### Step 1
-  
-### Step 2
-  
-## Go further
-  
+
+> [!primary]
+> This page is a temporary placeholder for the future page detailing the basic concepts of vCD.
+>
+
 Join our community of users on <https://community.ovh.com/en/>.
