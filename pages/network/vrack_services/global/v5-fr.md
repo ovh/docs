@@ -32,10 +32,9 @@ Ces 3 étapes sont réalisables soit via l'API, soit via l'espace client et sont
 
 ### Manager via le Menu vRack
 
-<details>
-  <summary><b>Création d'un vRack Service</b> </summary>
+#### Création d'un vRack Service
 
-<blockquote>    
+    
 
 La création d'un vRack Service se déroule en lui attribuant un nom et une région.
 
@@ -62,9 +61,7 @@ L'association à un vRack est assez simple car il suffit simplement de sélectio
 
 ![overview 01](images/06-VRS.png){.thumbnail}
 
-</blockquote>    
-    
-</details>
+
 
 
 <details>
