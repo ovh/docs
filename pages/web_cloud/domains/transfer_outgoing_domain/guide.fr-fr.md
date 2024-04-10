@@ -1,7 +1,7 @@
 ---
 title: "Transférer un nom de domaine vers un autre bureau d'enregistrement"
 excerpt: "Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix"
-updated: 2023-06-20
+updated: 2024-04-10
 ---
 
 ## Objectif
@@ -54,6 +54,10 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 
 Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Protection contre le transfert` sous **Securité**. Par défaut, cette protection est `Activée`{.action}.
+
+> [!warning]
+>
+> Si vous n'avez pas le bouton `Protection contre le transfert` cela signifie que votre extension de nom de domaine ne nécessite pas de code de transfert. Vous pouvez alors lancer directement votre transfert.
 
 ![protection activée](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
