@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la gestion du compte OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur la gestion du compte OVHcloud
-updated: 2024-03-20
+updated: 2024-04-11
 ---
 
 ## Objectif
@@ -42,6 +42,19 @@ Pour visualiser ou modifier vos coordonnées, connectez-vous à votre [espace cl
 Vous voulez modifier l'adresse e-mail de votre compte OVHcloud ? Une demande de confirmation sera d'abord envoyée à l'adresse e-mail actuellement renseignée dans votre espace client. Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
 
 Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
+
+### Comment modifier mon adresse postale ?
+
+Suivez les instructions de notre guide « [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](pages/account_and_service_management/account_information/all_about_username#personal-information).
+
+### J'ai déménagé à l'étranger, que dois-je faire pour mes services OVHcloud déjà souscrits ?
+
+Connectez-vous à [votre espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur vos initiales puis rendez-vous dans `Mon compte`{.action}. Dans l'onglet `Ìnformations générales`{.action}, cliquez sur `Editer mon profil`{.action} pour accéder à la modification de votre adresse postale. Dès lors, trois possibilités existent :
+
+1. Si votre nouveau pays de résidence **apparaît dans la liste des pays proposés**, sélectionnez-le et mettez à jour toutes vos coordonnées.
+2. Si votre nouveau pays de résidence **n'apparaît pas dans cette liste**, rendez-vous sur la page <https://www.ovhcloud.com> puis cliquez sur le drapeau en haut à droite. Si votre nouveau pays de résidence fait partie des pays listés ici, vous devez alors [créer un nouveau compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation) en veillant à choisir ce pays dans le formulaire de création.<br>
+Le cas échéant et si votre nouveau pays de résidence est dans la même zone géographique que votre ancien pays de résidence (par exemple : deux pays en Europe), vous pouvez ensuite effectuer une [gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts) pour transférer l'administration de vos produits et services d'un compte à l'autre.
+3. Si votre nouveau pays de résidence n'est pas présent dans la liste des pays proposés dans votre espace client ou lors de la création d'un compte OVHcloud, contactez nos équipes du support en ouvrant un ticket d'assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### Comment bien renseigner mon numéro de téléphone lors de la création de mon compte ?
 
@@ -172,6 +185,26 @@ Un membre de notre équipe vous répondra alors dès que possible.
 ### J’ai répondu au service abuse OVHcloud mais mon service est toujours bloqué. Que puis-je faire ?
 
 Vous pouvez, depuis votre espace client OVHcloud, ouvrir une demande d’assistance auprès du Service Clients d'OVHcloud afin d’obtenir des informations complémentaires sur le traitement de votre ticket Abuse. Pour faciliter le traitement de votre demande, veillez à bien mentionner la référence de ce ticket Abuse dans votre demande d’assistance.
+
+## Comment résilier un service OVHcloud ?
+
+Suivez les indications de notre guide « [Comment résilier mes services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services) ».
+
+### Comment supprimer mon compte OVHcloud ?
+
+La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
+
+1. Vous n'avez plus de services visibles dans la section « [Mes Services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
+2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
+3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
+
+1. Connectez-vous au [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+2. Cliquez sur le bouton `Créer un ticket`{.action}
+3. Sélectionnez le motif `Gérez votre compte client OVHcloud`
+4. Précisez `Je veux fermer mon compte client OVHcloud` et suivez les étapes décrites.
 
 ## Aller plus loin
 
