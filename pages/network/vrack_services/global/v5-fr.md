@@ -132,7 +132,7 @@ Et après un rapide moment d'attente ...
 
 <blockquote>
     
-Dans cet écran vous avez la liste des différents Services vRack déclarés.
+Dans cet écran vous avez la liste des différents vRack Services déclarés.
 
 ![overview 01](images/01-VRS.png){.thumbnail}
 
@@ -235,7 +235,7 @@ Avec configuration réseau
 
 ### API
 
-Cette section aborde les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de services vRack à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des services vRack, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
+Cette section aborde les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de vRack Services à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des vRack Services, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
 
 #### Basics
 
@@ -638,7 +638,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456789
 
 
 <details>
-  <summary><b>2. Dissocier les services vRack du vRack</b></summary>
+  <summary><b>2. Dissocier les vRack Services du vRack</b></summary>
 
 <blockquote>
   
@@ -841,7 +841,7 @@ Si l'une de ces exigences n'est plus satisfaite, la configuration est retirée (
 Comme aide, un résumé de la configuration est disponible avec l'attribut VrackServices.productStatus.
 Il répond à la question `Ma configuration actuelle permet-elle aux Services Gérés d'être accessibles depuis le vRack ?`
 - **ACTIF :** oui, c'est le cas
-- **DRAFT :** non, soit un Service Endpoint doit être créé, soit un vRack doit être associé aux Services vRack
+- **DRAFT :** non, soit un Service Endpoint doit être créé, soit un vRack doit être associé aux vRack Services
 - **SUSPENDED :** non, le produit est dans l'état de `suspension` d'Agora
 
  
