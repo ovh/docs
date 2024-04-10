@@ -150,7 +150,7 @@ Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'
 
 Cette section aborde les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de vRack Services à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des vRack Services, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
 
-Vous devez vous authentifier au préalable via cette [page]([https://www.ovhcloud.com/fr/network/vrack/](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth)){.external}. 
+Vous devez vous authentifier au préalable via cette [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth){.external}. 
 
 #### Basics
 
