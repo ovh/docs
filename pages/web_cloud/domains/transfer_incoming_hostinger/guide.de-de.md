@@ -64,28 +64,28 @@ Für den Transfer eines Hostinger-Domainnamens ist ein spezieller Ansatz erforde
 
 > [!primary]
 >
-> Aus Sicherheitsgründen sind alle Domainnamen bei Hostinger **standardmäßig gesperrt**, um nicht autorisierte Transfers zu verhindern.
+> Aus Sicherheitsgründen sind alle Domainnamen bei Hostinger **standardmäßig gesperrt**, um unautorisierte Transfers zu verhindern.
 >
-> Bevor Sie Ihre Domain von Hostinger aus transferieren, müssen Sie sie daher zuerst **entsperren**.
+> Bevor Sie Ihren Domainnamen von Hostinger transferieren, müssen Sie ihn daher zuerst **entsperren**.
 > 
 
-Für Domainnamen, die bei Hostinger registriert sind, können Sie den Sperrstatus Ihrer Domain verwalten, indem Sie den Bereich `Domains`{.action} öffnen und die Domain auswählen, die transferiert werden soll.
+Für Domainnamen, die bei Hostinger registriert sind, können Sie den Sperrstatus verwalten, indem Sie den Bereich `Domains`{.action} öffnen und den Domainnamen auswählen, der transferiert werden soll.
 
 Folgen Sie den Schritten in der [Hostinger Dedicated Documentation](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
 
 ### EPP- oder Auth-Code abrufen
 
-Wenn Sie Ihre Domain von Hostinger zu einem anderen Registrar (z. B. OVHcloud) transferieren möchten, kann der neue Registrar einen Autorisierungscode (EPP-Code oder Auth-Code) anfordern, um zu überprüfen, ob Sie das Recht haben, in Bezug auf den Domainnamen zu handeln.
-Um sich mit der Änderung des Inhabers einer Domain vertraut zu machen, lesen Sie diese [Anleitung](pages/web_cloud/domains/trade_domain).
+Wenn Sie einen Domainnamen von Hostinger zu einem anderen Registrar (wie OVHcloud) transferieren möchten, kann der neue Registrar einen Autorisierungscode (EPP-Code oder Auth-Code) anfordern, um zu überprüfen, ob Sie das Recht haben, in Bezug auf den Domainnamen zu handeln.
+Um sich mit der Änderung des Inhabers eines Domainnamens vertraut zu machen, lesen Sie diese [Anleitung](pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >
-> Einige TLDs haben einen speziellen Transfer-Prozess. Dies gilt insbesondere für die Domains **.uk** und **.eu**.
+> Einige TLDs haben einen speziellen Transfer-Prozess. Dies gilt insbesondere für **.uk** und **.eu**.
 >
-> Wir empfehlen Ihnen, bei Hostinger die geeigneten Schritte zur Übertragung Ihrer Domain zu besprechen.
+> Wir empfehlen Ihnen, bei Hostinger die geeigneten Schritte zur Übertragung Ihrer Domainnamen zu prüfen.
 > 
 
-Um einen **EPP**- oder **Auth**-Code bei Hostinger zu erhalten, folgen Sie den Schritten in der [Hostinger Dedicated Documentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+Um den **EPP**- oder **Auth**-Code bei Hostinger zu erhalten, folgen Sie den Schritten in der [Hostinger Dokumentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
 
 ### Den Domaintransfer zu OVHcloud starten
 
