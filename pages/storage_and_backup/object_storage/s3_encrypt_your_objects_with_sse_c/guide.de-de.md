@@ -1,6 +1,6 @@
 ---
-title: Object Storage - Verschlüsseln Ihrer serverseitigen Objekte mit SSE-C (EN)
-excerpt: This guide explains how to encrypt your server-side objects with SSE-C
+title: Object Storage - Verschlüsseln Ihrer serverseitigen Objekte mit SSE-C oder SSE-S3 (EN)
+excerpt: This guide explains how to encrypt your server-side objects with SSE-C or SSE-S3
 updated: 2024-04-10
 ---
 
@@ -191,7 +191,6 @@ Our commitment to securing your data is reinforced through the use of OVHcloud K
 
 To further your understanding of OVHcloud Key Management Service (KMS) and its applications in various cloud infrastructure contexts, we recommend reading the following resources:
 
-- **[Getting started with the KMS CipherTrust Manager - OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_cipher_trust)**: this guide provides a detailed overview of how to implement and use the KMS to secure your data.
 - **[Enabling Virtual Machine Encryption (VM Encrypt) - OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)**: practical guide on enabling VM encryption using KMS capabilities.
 - **[Enabling virtual machine encryption with vSphere Native Key Provider - OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp)**: detailed instructions on using KMS in conjunction with the vSphere Native Key Provider for VM encryption.
 
