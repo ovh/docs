@@ -1,7 +1,7 @@
 ---
 title: "Hostinger-Domainnamen zu OVHcloud transferieren"
 excerpt: "Erfahren Sie hier, wie Sie einen Hostinger-Domainnamen zu OVHcloud transferieren"
-updated: 2024-04-09
+updated: 2024-04-10
 ---
 
 > [!primary]
