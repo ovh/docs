@@ -258,9 +258,9 @@ La requête peut combiner n'importe laquelle des actions suivantes sans interrup
     - créer un ou plusieurs Service Endpoint
     - supprimer un ou plusieurs Service Endpoint
  
-Notez qu'un Sous-réseau avec plusieurs Points de Terminaison de Service peut être créé dans le même corps de requête.   
+Notez qu'un Sous-réseau avec plusieurs Service Endpoint peut être créé dans le même corps de requête.   
 
-Notez que la suppression d'un Sous-réseau entraînera également la suppression des Points de Terminaison de Service intégrés.
+Notez que la suppression d'un Sous-réseau entraînera également la suppression des Service Endpoint intégrés.
 
 </blockquote>
 </details>
