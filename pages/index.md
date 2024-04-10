@@ -1061,6 +1061,7 @@
                 + [Transferring a domain name from GoDaddy to OVHcloud](web_cloud/domains/transfer_incoming_godaddy)
                 + [Transferring a domain name from Ionos to OVHcloud](web_cloud/domains/transfer_incoming_ionos)
                 + [Transferring a domain name from Gandi to OVHcloud](web_cloud/domains/transfer_incoming_gandi)
+                + [Transferring a domain name from Wix to OVHcloud](web_cloud/domains/transfer_incoming_wix)
             + [Tutorials](web-cloud-domains-domain-names-tutorials)
                 + [Tutorial - Using Zonemaster](web_cloud/domains/dns_zonemaster)
                 + [How to connect an OVHcloud domain name to a Shopify hosting plan](web_cloud/domains/how_to_connect_domain_to_shopify)
