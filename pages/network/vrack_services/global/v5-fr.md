@@ -542,7 +542,7 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 
 
 
-#### Others
+#### Autres
 
 <details>
   <summary><b>1. Etendre la plage du sous-réseau</b></summary>
@@ -724,34 +724,9 @@ $ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
 </details>
 
 
-<details>
-  <summary><b>3. Suspendre un Service vRack</b></summary>
-
-<blockquote>
-    
-Suspension déclenchée lors de la consommation de l'événement 'SUSPENSION' sur Agora
-Ici, nous avons le même résultat que la dissociation
-
-</blockquote>
-
-</details>
 
 
-<details>
-  <summary><b>4. Supprimer un Service vRack</b></summary>
-
-<blockquote>
-
-
-Suppression déclenchée lors de la consommation de l'événement 'TERMINATION' sur Agora
-Ensuite, toutes les ressources sont supprimées en cascade
-
-</blockquote>
-
-</details>
-
-
-#### Errors
+#### Erreurs
 
 <details>
   <summary><b>1. Créer un Service Endpoiint avec une localisation de Service Managé incorrecte</b></summary>
