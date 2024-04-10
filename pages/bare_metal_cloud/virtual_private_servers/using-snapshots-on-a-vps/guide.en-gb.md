@@ -1,7 +1,7 @@
 ---
 title: 'Using snapshots on a VPS'
 excerpt: 'Find out how to enable and use the Snapshot option in the OVHcloud Control Panel'
-updated: 2023-04-28
+updated: 2024-04-10
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 ### Step 1: Subscribing to the snapshot option
 
-From the `Home`{.action} tab, scroll down to the box labelled **Summary of options**. Click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
+From the `Home`{.action} tab, scroll down to the box labelled **Summary of options**. If "Snapshot" is already set to "Enabled" go directly to step 2. If "Snapshot" is not yet enqbled, click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -34,7 +34,7 @@ In the next step, please take note of the pricing information, then click on `Or
 
 ### Step 2: Taking a snapshot
 
-Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. The time it takes to create the snapshot depends on the storage space in use. Afterwards, the timestamp of the creation will appear in the **Summary of options** box.
+Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterward, refresh your page, and the timestamp of the creation will appear in the **Summary of options** box.
 
 ### Step 3: Deleting / restoring a snapshot
 
