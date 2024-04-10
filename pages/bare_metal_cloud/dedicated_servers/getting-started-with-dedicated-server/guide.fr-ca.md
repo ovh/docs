@@ -1,19 +1,19 @@
 ---
 title: "Premiers pas avec un serveur dédié"
-excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client et comment démarrer avec la configuration et la sécurisation d'un serveur"
-updated: 2024-04-04
+excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client OVHcloud et comment démarrer avec la configuration et la sécurisation d'un serveur"
+updated: 2024-04-10
 ---
 
 ## Objectif
 
-Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. Contrairement aux solutions d'hébergement web (décrites comme « mutualisées »), qui sont techniquement gérées par OVHcloud, vous êtes entièrement responsable de l'administration sur votre serveur dédié.
+Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un de nos datacenters. Contrairement aux offres d’hébergement web (également appelées « hébergements mutualisés »), qui sont techniquement gérées par OVHcloud, vous êtes entièrement responsable de l’administration de votre serveur dédié.
 
-**Découvrez comment prendre en main votre nouveau serveur dédié.**
+**Ce guide vous apporte toutes les informations nécessaires à vos premiers pas avec un serveur dédié.**
 
 ## Prérequis
 
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre espace client OVHcloud.
-- Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
+- Être connecté à votre serveur en SSH sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 > [!primary]
@@ -37,6 +37,11 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 <a name="install"></a>
 
 ### Installation ou réinstallation d'un système d'exploitation
+
+> [!success]
+>
+> Retrouvez plus d’informations sur les systèmes d’exploitation des serveurs sur [notre page web](https://www.ovhcloud.com/fr-ca/bare-metal/os/).
+>
 
 Vous pouvez facilement réinstaller votre serveur ou choisir une autre image d'OS à installer dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
@@ -93,9 +98,11 @@ Cliquez enfin sur `Confirmer`{.action} pour lancer l'installation du système d'
 
 #### Linux
 
-Une fois l'installation terminée, vous recevrez un e-mail contenant les instructions d'accès administratif. Vous pouvez vous connecter à votre serveur via un terminal de commande ou avec un client tiers en utilisant SSH, qui est un protocole de communication sécurisé.
+Si vous avez installé un modèle d’OS OVHcloud sur votre serveur, un utilisateur disposant d’autorisations élevées est créé automatiquement. Cet utilisateur sera nommé en fonction du système d'exploitation, par exemple « ubuntu » ou « rocky ».
 
-Utilisez les exemples suivants pour vous connecter à votre serveur et remplacez les informations d'identification par vos propres identifiants (l'adresse IP et le nom de référence du serveur sont interchangeables).
+Vous recevrez alors un e-mail contenant les informations nécessaires à l'établissement d'une première connexion en SSH. SSH est un protocole de communication sécurisé, utilisé pour établir des connexions cryptées vers un hôte distant. Retrouvez plus d'informations dans notre guide : [Premiers pas en SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+La plupart des systèmes d'exploitation actuels disposent d'un client **Open SSH** installé nativement. Cela signifie que vos identifiants d'accès vous permettent d'établir rapidement une connexion à votre serveur depuis votre poste de travail via l'application de ligne de commande appropriée (`Terminal`, `Command prompt`, `Powershell`, etc.). Entrez la commande suivante :
 
 ```bash
 ssh username@IPv4
@@ -107,7 +114,84 @@ ssh username@IPv4
 ssh ubuntu@203.0.113.1
 ```
 
-Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ».
+Vous pouvez également utiliser toute application tierce compatible avec **Open SSH**.
+
+Une fois connecté, vous pouvez remplacer le mot de passe prédéfini de l'utilisateur actuel par une meilleure phrase secrète (*passphrase*) en utilisant cette commande :
+
+```bash
+passwd
+```
+
+Sur une distribution GNU/Linux, **une invite de mot de passe n'affichera pas vos entrées clavier**.
+
+Tapez votre mot de passe actuel et appuyez sur `Entrée`{.action}. Entrez la nouvelle phrase secrète et retapez-la à l'invite suivante pour la confirmer.
+
+```console
+Changing password for ubuntu.
+Current password:
+New password: 
+Retype new password: 
+passwd: password updated successfully
+```
+
+> [!warning]
+> 
+> **Activation du compte utilisateur root**
+>
+> Il n'est pas nécessaire d'utiliser le compte utilisateur « root » pour débuter l'administration de votre serveur. Ce compte doit d'abord être activé dans le système d'exploitation du serveur pour pouvoir l'utiliser. De plus, par mesure de sécurité, les connexions SSH avec l'utilisateur « root » sont **désactivées** par défaut.
+> 
+> Sauf mention contraire, toutes les actions d'administration décrites dans notre documentation peuvent être accomplies par le compte d'utilisateur par défaut, c'est-à-dire en tapant `sudo` suivi de la commande correspondante. Apprenez-en plus sur ce sujet dans notre guide sur la [configuration des comptes utilisateurs et de l'accès root sur un serveur](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
+
+Selon vos besoins en matière de sécurité, de mobilité et de commodité, les clés SSH peuvent servir de méthode de connexion supplémentaire ou même remplacer une identification via un nom d'utilisateur et un mot de passe. Découvrez comment les utiliser dans notre guide : [Créer et utiliser des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+
+#### Windows
+
+Une fois l'installation terminée, vous recevrez un e-mail avec vos identifiants Windows. Vous pouvez ensuite vous connecter à votre serveur via RDP (**R**emote **D**esktop **P**rotocol). Sur votre périphérique Windows local, ouvrez l'application `Remote Desktop Connection`.
+
+![Windows remote](images/windows-connect-03.png){.thumbnail}
+
+Renseignez l'adresse IPv4 de votre serveur, puis votre nom d'utilisateur et votre passphrase. Généralement, un message d'avertissement apparaît, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter.
+
+Vous pouvez également utiliser toute application tierce compatible avec RDP. Cette condition est requise si Windows n'est pas installé sur votre périphérique local.
+
+> [!primary]
+>
+> Si vous rencontrez des difficultés avec cette méthode, vérifiez que les connexions à distance (RDP) sont autorisées sur votre poste de travail en inspectant les paramètres système, les règles de pare-feu et les restrictions réseau possibles.
+> 
+
+En solution de secours, vous pouvez utiliser la [console IPMI dans votre espace client OVHcloud](#console) pour vous connecter.
+
+##### Activation des logs de démarrage Windows (facultatif)
+
+Les logs de démarrage de Windows peuvent être utiles pour les diagnostics d'erreur de serveur.
+
+Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
+
+> [!tabs]
+> 1. **Se connecter au serveur**
+>>
+>> Connectez-vous au serveur via RDP ou [IPMI](#console).<br>
+>>
+> 2. **Ouvrir l'utilitaire « Exécuter »**
+>>
+>> Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.<br><br>
+>>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>
+> 3. **Ouvrir « msconfig »**
+>>
+>> Entrez « msconfig » et cliquez sur `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>
+> 4. **Activer les logs**
+>>
+>> Dans la nouvelle fenêtre, activez l'option logs à côté de `Boot log`. Cliquez sur `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>
+
+Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier `.txt`. Le chemin d'accès au fichier est : `C:\Windows\ntbtlog.txt`.
+
+Pour accéder au fichier de logs en mode rescue, veuillez suivre les instructions du [guide du mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 #### Windows
 

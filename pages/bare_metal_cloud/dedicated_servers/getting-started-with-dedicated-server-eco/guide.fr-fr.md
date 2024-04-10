@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise"
-excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client et comment démarrer avec la configuration et la sécurisation d'un serveur Kimsufi, So You Start ou Rise"
-updated: 2024-04-08
+excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client OVHcloud et comment démarrer avec la configuration et la sécurisation d'un serveur Kimsufi, So You Start ou Rise"
+updated: 2024-04-10
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 ## Prérequis
 
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) des gammes Kimsufi, So You Start ou Rise dans votre espace client OVHcloud.
-- Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
+- Être connecté à votre serveur en SSH sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -33,6 +33,11 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 <a name="install"></a>
 
 ### Installation ou réinstallation de votre serveur dédié
+
+> [!success]
+>
+> Retrouvez plus d’informations sur les systèmes d’exploitation des serveurs sur [notre page web](https://www.ovhcloud.com/fr/bare-metal/os/).
+>
 
 Vous pouvez facilement réinstaller votre serveur ou choisir une autre image d'OS à installer dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
@@ -138,7 +143,7 @@ Selon vos besoins en matière de sécurité, de mobilité et de commodité, les 
 
 #### Windows
 
-Une fois l'installation terminée, vous recevrez un e-mail avec vos identifiants Windows. Vous pouvez ensuite vous connecter à votre serveur via RDP (**R**remote **D**desktop **P**protocol). Sur votre périphérique Windows local, ouvrez l'application `Remote Desktop Connection`.
+Une fois l'installation terminée, vous recevrez un e-mail avec vos identifiants Windows. Vous pouvez ensuite vous connecter à votre serveur via RDP (**R**emote **D**esktop **P**rotocol). Sur votre périphérique Windows local, ouvrez l'application `Remote Desktop Connection`.
 
 ![Windows remote](images/windows-connect-03.png){.thumbnail}
 
@@ -162,7 +167,7 @@ Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 > [!tabs]
 > 1. **Se connecter au serveur**
 >>
->> Connectez-vous au serveur via RDP ou [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).<br>
+>> Connectez-vous au serveur via RDP ou [IPMI](#console).<br>
 >>
 > 2. **Ouvrir l'utilitaire « Exécuter »**
 >>

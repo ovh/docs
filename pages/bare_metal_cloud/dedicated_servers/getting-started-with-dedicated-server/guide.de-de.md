@@ -10,7 +10,7 @@ updated: 2024-04-10
 
 ## Ziel
 
-Ein dedizierter Server ist ein physischer Server („Bare Metal“) in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie für die Verwaltung Ihres Servers allein verantwortlich.
+Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie für die Verwaltung Ihres Servers allein verantwortlich.
 
 **Diese Anleitung erläutert die Grundlagen zur Erstverwendung eines OVHcloud Dedicated Server.**
 

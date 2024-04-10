@@ -1,7 +1,7 @@
 ---
 title: "How to get started with a Kimsufi, So You Start or Rise dedicated server"
 excerpt: "Find out how to manage a Kimsufi, So You Start or Rise in the OVHcloud Control Panel and how to start with configuring and securing a server"
-updated: 2024-04-08
+updated: 2024-04-10
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
-- Administrative access (sudo) via SSH or remote desktop (Windows) to your server
+- Administrative access via SSH or remote desktop (Windows) to your server
 
 ## Instructions
 
@@ -34,6 +34,11 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 ### Installing or reinstalling an operating system
 
+> [!success]
+>
+> Find more information about server operating systems on [our web page](https://www.ovhcloud.com/en/bare-metal/os/).
+>
+
 You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
@@ -46,7 +51,7 @@ In the popup window, select one of the installation options:
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk or Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 >
 You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
 >
@@ -160,21 +165,21 @@ Windows boot logs can be helpful for server error diagnostics.
 To activate them, follow the steps below by navigating through the tabs:
 
 > [!tabs]
-> **Connect to the server**
+> 1. **Connect to the server**
 >>
->> Connect to your server via RDP or [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).<br>
+>> Connect to your server via RDP or [IPMI](#console).<br>
 >>
-> **Open the "Run" utility**
+> 2. **Open the "Run" utility**
 >>
 >> Open the Windows start menu and click on `Run`{.action}.<br><br>
 >>![IPMI](images/windowsboot1.png){.thumbnail}<br>
 >>
-> **Open "msconfig"**
+> 3. **Open "msconfig"**
 >>
 >> Enter "msconfig" and click on `OK`{.action}.<br><br>
 >>![IPMI](images/windowsboot2.png){.thumbnail}<br>
 >>
-> **Activate logs**
+> 4. **Activate logs**
 >>
 >> In the new window, activate the logs option next to `Boot log`. Click on `OK`{.action}.<br><br>
 >>![IPMI](images/windowsboot3.png){.thumbnail}<br>
