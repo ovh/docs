@@ -1,7 +1,7 @@
 ---
 title: 'Trasferire un dominio GoDaddy in OVHcloud'
 excerpt: 'Questa guida ti mostra tutte le informazioni relative al trasferimento di un dominio GoDaddy in OVHcloud'
-updated: 2024-04-09
+updated: 2024-04-10
 ---
 
 > [!primary]
