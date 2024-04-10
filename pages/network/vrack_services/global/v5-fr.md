@@ -25,8 +25,7 @@ Les Services Endpoint relient vos services au réseau en les associant à un sou
 
 ## En pratique
 
-### Manager
-
+### Manager via le Menu vRack
 
 
 <details>
@@ -166,6 +165,67 @@ Et parès un rapide moment d'attente ...
 
 
 
+### Manager via le Menu Enterprise File Storage
+
+<details>
+
+  <summary><b>Vue d'ensemble</b> </summary>
+
+<blockquote>
+    
+![overview 01](images/01-EFS.png){.thumbnail}
+
+Sans configuration réseau
+
+
+---
+
+![overview 01](images/09-EFS.png){.thumbnail}
+
+Avec configuration réseau
+
+</blockquote>
+
+</details>
+
+<details>
+
+  <summary><b>Configurer les paramètres réseaux</b> </summary>
+
+<blockquote>
+
+![overview 01](images/03-EFS.png){.thumbnail}
+
+--- 
+
+![overview 01](images/05-EFS.png){.thumbnail}
+
+--- 
+
+![overview 01](images/06-EFS.png){.thumbnail}
+
+
+
+</blockquote>
+
+</details>
+
+
+<details>
+
+  <summary><b>Retirer une configuration réseau</b> </summary>
+
+<blockquote>
+
+![overview 01](images/09-EFS.png){.thumbnail}
+
+![overview 01](images/10-EFS.png){.thumbnail}
+
+
+
+</blockquote>
+
+</details>
 
 ---
 
