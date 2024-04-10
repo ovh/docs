@@ -24,9 +24,9 @@ Le Service Endpoint représente votre point d'accès au service managé. Il est 
 
 ## En pratique
 Configurer un Service Endpoint se déroule en 3 étapes:
-1/ Activer et configurer vRack Services
-2/ Crée un sous-réseau et une plage d'adresse pour les services managés
-3/ Crée le Service Endpoint
+1. Activer et configurer vRack Services
+2. Crée un sous-réseau et une plage d'adresse pour les services managés
+3. Crée le Service Endpoint
 
 Ces 3 étapes sont réalisables soit via l'API, soit via l'espace client et sont décrites en détails ci-dessous.
 
