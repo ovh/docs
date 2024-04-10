@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise"
-excerpt: "Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise"
-updated: 2024-04-04
+excerpt: "Come gestire un server dedicato Kimsufi, So You Start o Rise nello Spazio Cliente e come iniziare a utilizzare la configurazione e la protezione di un server"
+updated: 2024-04-10
 ---
 
 > [!primary]
@@ -10,14 +10,14 @@ updated: 2024-04-04
 
 ## Obiettivo
 
-Un server dedicato è una macchina fisica localizzata in uno dei nostri datacenter. Diversamente dalle soluzioni di hosting Web (descritte come "condivise"), che sono tecnicamente gestite da OVHcloud, l'amministrazione è interamente responsabilità dell'utente.
+Un server dedicato è un server fisico ("bare metal") situato in uno dei nostri datacenter. A differenza delle soluzioni di hosting Web (chiamate anche "shared hosting"), gestite tecnicamente da OVHcloud, sei l'unico responsabile della gestione del server dedicato.
 
-**Questa guida ti mostra le operazioni di base da effettuare sul tuo nuovo server Kimsufi, So You Start o Rise.**
+**Questa guida ti fornisce tutte le informazioni necessarie per muovere i primi passi nell'utilizzo di un server dedicato Kimsufi, So You Start o Rise.**
 
 ## Prerequisiti
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) di gamma Kimsufi, So You Start o Rise nello Spazio Cliente OVHcloud
-- Essere connesso al tuo server in SSH (accesso root) con Linux o tramite un desktop remoto con Windows
+- Essere connesso al tuo server in SSH con Linux o tramite un desktop remoto con Windows
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -38,9 +38,12 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 ### Installazione o reinstallazione di un sistema operativo
 
-Quando il tuo server dedicato è configurato per la prima volta durante il processo di ordine, puoi selezionare il sistema operativo da installare.
+> [!success]
+>
+> Per maggiori informazioni sui sistemi operativi dei server, accedi alla [pagina Web](https://www.ovhcloud.com/it/bare-metal/os/).
+>
 
-Reinstalla facilmente il tuo server e scegli un altro modello di sistema operativo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
+Reinstalla facilmente il tuo server o scegli un'altra immagine del sistema operativo da installare nel tuo  [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
 ![Pulsante Reinstalla](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -77,6 +80,8 @@ In particolare, sono disponibili domande complementari specifiche per il sistema
 
 Ad esempio, se installi un sistema operativo GNU/Linux, puoi aggiungere la tua chiave SSH.
 
+Per maggiori informazioni sulla generazione delle chiavi SSH, consulta la [nostra guida](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated). 
+
 ![configurazione SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
 Clicca su `Conferma`{.action} per avviare l’installazione del sistema operativo sul tuo server dedicato.
@@ -85,11 +90,19 @@ Clicca su `Conferma`{.action} per avviare l’installazione del sistema operativ
 
 ### Connessione al tuo server
 
+> [!warning]
+> OVHcloud mette a disposizione i servizi la cui configurazione e gestione sono di vostra responsabilità. È quindi responsabilità dell’utente garantirne il corretto funzionamento.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider di servizi specializzato](https://partner.ovhcloud.com/it/directory/).
+>
+
 #### Linux
 
-Una volta completata l'installazione, riceverai un'email con le istruzioni per l'accesso amministrativo. Accedi al tuo server tramite un terminale di comando o con un cliente terzo utilizzando SSH, che è un protocollo di comunicazione sicuro.
+Se sul server è stato installato un modello di OS OVHcloud, verrà creato automaticamente un utente con autorizzazioni elevate. Questo utente verrà nominato in base al sistema operativo, ad esempio "ubuntu" o "rocky".
 
-Utilizza questi esempi per connetterti al tuo server e sostituisci le informazioni di identificazione con i tuoi identificativi (l'indirizzo IP e il nome di riferimento del server sono intercambiabili).
+Riceverai un’email con le informazioni necessarie per effettuare il primo accesso in SSH. SSH è un protocollo di comunicazione sicuro, utilizzato per stabilire connessioni criptate verso un host remoto. Per maggiori informazioni, consulta la nostra guida: [Primi passi in SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+La maggior parte dei sistemi operativi attuali dispone di un client **Open SSH** installato nativamente. Le credenziali di accesso consentono quindi di stabilire rapidamente una connessione al server dalla workstation tramite l’applicazione da riga di comando appropriata (`Terminal`, `Command prompt`, `Powershell`, ecc...). Immettere il comando seguente:
 
 ```bash
 ssh username@IPv4
@@ -101,13 +114,84 @@ ssh username@IPv4
 ssh ubuntu@203.0.113.1
 ```
 
-Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+È inoltre possibile utilizzare qualsiasi applicazione terza compatibile con **Open SSH**.
+
+Una volta effettuato l’accesso, è possibile sostituire la password predefinita dell’utente corrente con una migliore frase segreta (*passphrase*) utilizzando questo comando:
+
+```bash
+passwd
+```
+
+In una distribuzione GNU/Linux, **il prompt della password non mostrerà le voci della tastiera**.
+
+Digita la password corrente e clicca su `Invio`{.action}. Digitare la nuova frase segreta e quindi ridigitarla al prompt successivo per confermarla.
+
+```console
+Changing password for ubuntu.
+Current password:
+New password: 
+Retype new password: 
+passwd: password updated successfully
+```
+
+> [!warning]
+> 
+> **Attivazione dell'account utente root**
+>
+> Non è necessario utilizzare l'account utente "root" per avviare l'amministrazione del server. Per utilizzare questo account, è necessario che sia stato abilitato nel sistema operativo del server. Inoltre, per motivi di sicurezza, le connessioni SSH con l’utente "root" sono **disattivate** di default.
+> 
+Se non diversamente specificato, tutte le operazioni di amministrazione descritte nella nostra documentazione possono essere effettuate dall’account utente predefinito, ovvero digitando `sudo` seguito dal relativo ordine. Per maggiori informazioni su questo argomento, consulta la nostra guida sulla [configurazione degli account utente e dell'accesso root su un server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
+
+A seconda delle esigenze in termini di sicurezza, mobilità e praticità, le chiavi SSH possono servire come metodo di connessione supplementare o anche sostituire un identificativo tramite un nome utente e una password. Questa guida ti mostra come utilizzarle: [Creare e utilizzare chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 #### Windows
 
-Una volta completata l'installazione, riceverai un'email con la password per l'accesso amministratore (sudo). Utilizza queste credenziali per connetterti al server via RDP (**R**emote **D**esktop **P**rotocol). Una volta connesso, Windows ti guiderà durante l'installazione iniziale.
+Una volta completata l’installazione, riceverai un’email con le credenziali Windows. Accedi al tuo server via RDP (**R**emote **D**esktop **P**rotocol). Nel dispositivo Windows locale, aprire l'applicazione `Remote Desktop Connection`.
 
-Consulta anche la nostra guida [Configurare una nuova installazione di Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
+![Windows remote](images/windows-connect-03.png){.thumbnail}
+
+Inserisci l’indirizzo IPv4 del server, poi il nome utente e la passphrase. In genere viene visualizzato un messaggio di avviso che richiede di confermare la connessione a causa di un certificato sconosciuto. Clicca su `Sì`{.action} per accedere.
+
+È inoltre possibile utilizzare qualsiasi applicazione di terze parti compatibile con RDP. Questa condizione è necessaria se Windows non è installato nel dispositivo locale.
+
+> [!primary]
+>
+> In caso di problemi con questo metodo, verificare che le connessioni remote (RDP) siano consentite sulla workstation controllando le impostazioni di sistema, le regole firewall e le eventuali restrizioni di rete.
+> 
+
+In modalità di backup, accedi utilizzando la [console IPMI dallo Spazio Cliente OVHcloud](#console).
+
+##### Attivazione dei log di avvio di Windows (facoltativo)
+
+I log di avvio di Windows possono essere utili per la diagnostica degli errori del server.
+
+Per attivarli, segui i passaggi seguenti scorrendo le schede:
+
+> [!tabs]
+> 1. **Connettersi al server**
+>>
+>> Connettiti al server tramite RDP o [IPMI](#console).<br>
+>>
+> 2. **Apri utilità "Run"**
+>>
+>> Apri il menu Start di Windows e clicca su `Esegui`{.action}.<br><br>
+>>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>
+> 3. **Apri "msconfig"**
+>>
+>> Inserisci "msconfig" e clicca su `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>
+> 4. **Attiva i log**
+>>
+>> Nella nuova finestra, seleziona l’opzione log accanto a `Boot log`. Clicca su `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>
+
+Al successivo avvio del server, i log verranno salvati in un file `.txt`. Il percorso del file è `C:\Windows\ntbtlog.txt`.
+
+Per accedere al file di log in modalità Rescue, segui le istruzioni nella [guida alla modalità Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 <a name="reboot"></a>
 
@@ -119,7 +203,7 @@ Il riavvio può essere necessario per applicare configurazioni aggiornate o riso
 reboot
 ```
 
-ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca `...`{.action} in corrispondenza di "Stato" nella sezione **Stato dei servizi** e poi clicca su `Riavvia`{.action} e `Conferma`{.action} nella finestra contestuale.
+Tuttavia, puoi effettuare un "hard reboot" in qualsiasi momento nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca `...`{.action} in corrispondenza di "Stato" nella sezione **Stato dei servizi** e poi clicca su `Riavvia`{.action} e `Conferma`{.action} nella finestra contestuale.
 
 ![Riavvia](images/rebooting-your-server.png){.thumbnail}
 
