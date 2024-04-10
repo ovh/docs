@@ -17,7 +17,7 @@ Il y 3 composants principaux dans la mise en place de cette configuration:
 Le produit vRack Services est le composant principal de votre configuration, nécessitant une activation dans une région choisie, ainsi qu'une association à un vRack. La région choisie doit correspondre à l'emplacement de votre service managé. Le service managé sera disponible à partir de la région choisie et accessible à tous serveurs connectés au vRack, quelque soit la région.
    
 2.&nbsp;<ins>Sous-réseau</ins>  
-Le produit vRack Services utilise le concept de sous-réseau (ou subnet) afin de définir une plage d'addresse IP privée utilisable pour communiquer avec les services managés. De manière générale, les sous-réseaux divisent un réseau plus large en segments, chacun disposant d'une plage spécifique d'adresses IP. Cette division logique permet une gestion efficace des ressources et du flux de trafic au sein de votre réseau.
+Le produit vRack Services utilise le concept de sous-réseau (ou subnet) afin de définir une plage d'addresse IP privée utilisable pour communiquer avec les services managés. Pour chaque sous-réseau, vous devrez définir une plage d'adresses IP réservée aux service managés, qui servira à attribuer les addresses IP au Service Endpoint.
    
 3.&nbsp;<ins>Service Endpoint</ins>   
 Le Service Endpoint représente votre point d'accès au service managé. Il est associé à un sous-réseau et dispose d'une ou plusieurs addresses IP privées attribuées automatiquement.
@@ -876,15 +876,28 @@ Il répond à la question `Ma configuration actuelle permet-elle aux Services G�
 ## Contraintes et limites
 ### vRack Services
 - Un vRack Services est attaché à une seule région.
-- Le service managé cible doit faire partie de la même région que le vRack Services.
-- Jusqu'à 20 vRack Services peuvent être associés au même vRack. Ainsi, le client peut rendre les service managés accessibles depuis différentes régions.
+- Au sein d'un vRack, il n'est pas possible de créer plusieurs vRack Services sur une même région.
+- Un maximum de 20 vRack Services peuvent être crées par compte utilisateur.
+- Plusieurs vRack Services peuvent être associés au même vRack. Ainsi, le client peut rendre les service managés accessibles depuis différentes régions.
+-  Le service managé a exposer doit obligatoirement faire partie de la même région que celle du vRack Services.public cloud...).
+
+**Note :** La capacité de bande passante entre le service managé et les hôtes consommateur du service ne sont pas garantie directement via le produit vRack Services. Le garanties de bande passante contractuelle sont porté par les services OVHcloud telles que les service managés (par ex. Enterprise File Storage) ou les services consommateur du service managé (par ex. serveurs Baremetal, clusters HPC, instances 
 
 ### Sous-réseau
+- La **plage** d'adresse du sous-réseau doit respecter le **RFC 1918**.
+- La longueur de la **plage** d'adresse du sous-réseau est comprise entre /16 et /24.
+- Chaque **plage** d'addresse de sous-réseau doit être unique pour un vRack Service donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
+- Il n'est pas possible de modifier la plage d'adresse de sous-réseau une fois créée.
+- La plage d'ID de VLAN valide est comprise entre 2 et 4094. La valeur "null" est autorisée (pas de VLAN / untagged).
 - Un maximum de 1 sous-réseau par service vRack peut être défini par le client.
-- La définition de l'attribut **plage** suit le **RFC 1918**.
-- Chaque plage de sous-réseau **range** doit être unique pour un service vRack donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
-- Chaque **vlan** de sous-réseau doit être unique pour un service vRack donné. La valeur par défaut 'null' ne peut être utilisée que par un Sous-réseau.
-- La plage de **serviceRange** disponible commence de /27 à /29
+- Un ID de VLAN ne peut être modifié une fois le sous-réseau créé.
+- Chaque VLAN ID doit être unique pour un vRack Service donné.
+- La première et la dernière adresses IP du sous-réseau n'est pas utilisable et ne doit donc pas être configuré sur un des serveurs attaché au vRack associé au vRack Services.
+
+### Plage d'addresse du service managé (Service Range)
+- La plage d'addresse du service managé doit être un sous-ensemble de la plage de sous-réseau.
+- La taille de plage est comprise entre /27 et /29
+- Il n'est pas possible de modifier la plage d'adresse du service managé une fois créée.
 
 ### Service Endpoint
 - Pour garantir la cohérence du sous-réseau, la demande de création de Service Endpoint est rejetée si le pool d'IPs restantes sur le sous-réseau ne correspond pas au nombre d'adresses IP requis par le service managé.
