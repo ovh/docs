@@ -1,14 +1,14 @@
 ---
-title: "Transférer un nom de domaine de Home.pl vers OVHcloud"
-excerpt: "Découvrez les démarches spécifiques pour transférer un nom de domaine depuis Home.pl vers OVHcloud"
+title: "Transférer un nom de domaine de home.pl vers OVHcloud"
+excerpt: "Découvrez les démarches spécifiques pour transférer un nom de domaine depuis home.pl vers OVHcloud"
 updated: 2024-04-10
 ---
 
 ## Objectif
 
-Le transfert d'un nom de domaine Home.pl nécessite de respecter une démarche spécifique.
+Le transfert d'un nom de domaine home.pl nécessite de respecter une démarche spécifique.
 
-**Découvrez comment transférer, étape par étape, un nom de domaine Home.pl vers OVHcloud**
+**Découvrez comment transférer, étape par étape, un nom de domaine home.pl vers OVHcloud**
 
 > [!warning]
 >
@@ -22,7 +22,7 @@ Le transfert d'un nom de domaine Home.pl nécessite de respecter une démarche s
 
 ## Prérequis
 
-- Le nom de domaine est enregistré auprès du bureau d'enregistrement Home.pl.
+- Le nom de domaine est enregistré auprès du bureau d'enregistrement home.pl.
 - Le nom de domaine existe depuis plus de 60 jours.
 - Le nom de domaine n'a pas été transféré ou n'a pas changé de propriétaire au cours des 60 derniers jours.
 - L'état du nom de domaine est « OK » ou « Transférable ».
@@ -62,7 +62,7 @@ Vous devez aussi :
 
 ### Déverrouiller le nom de domaine et récupérer le code de transfert
 
-Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de Home.pl](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form){.external}.
+Pour déverrouiller le nom de domaine et récupérer le code de transfert, suivez les étapes décrites dans la [documentation dédiée de home.pl](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form){.external}.
 
 ### Initier le transfert de domaine chez OVHcloud
 
