@@ -1059,6 +1059,7 @@
                 + [Transferring a domain name to OVHcloud](web_cloud/domains/transfer_incoming_generic_domain)
                 + [Transferring a domain name from Hostinger to OVHcloud](web_cloud/domains/transfer_incoming_hostinger)
                 + [Transferring a domain name from GoDaddy to OVHcloud](web_cloud/domains/transfer_incoming_godaddy)
+                + [Transferring a domain name from Home.pl to OVHcloud](web_cloud/domains/transfer_incoming_homepl)
                 + [Transferring a domain name from Ionos to OVHcloud](web_cloud/domains/transfer_incoming_ionos)
                 + [Transferring a domain name from Gandi to OVHcloud](web_cloud/domains/transfer_incoming_gandi)
             + [Tutorials](web-cloud-domains-domain-names-tutorials)
