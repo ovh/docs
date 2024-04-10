@@ -4,7 +4,7 @@ Le produit vRack Services vous permet de bénéficier de services réseau sur le
 
 Pour plus d'informations sur le réseau privé vRack veuillez consulter cette [page](https://www.ovhcloud.com/fr/network/vrack/){.external}.
 
-![global schema](images/global_schema_20240402.png){.thumbnail}
+![global schema](images/global_schema_20240410.png){.thumbnail}
 
 ## Objectif
 
