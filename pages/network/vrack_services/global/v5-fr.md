@@ -152,7 +152,7 @@ Cette section aborde les actions qui peuvent être effectuées via l'API. Cela i
 
 Vous devez vous authentifier au préalable via cette [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth){.external}. 
 
-#### Basics
+#### Actions
 
 <details>
 <summary><b>1. Lister les vRack Services</b></summary>
@@ -170,7 +170,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
 ```
 
 <details>
-<summary> Extrait du résultat de cette commande</summary>
+<summary> Extrait du résultat de cette commande (l'id qui sera utilisé dans notre exemple est le suivant `vrs-a9y-v91-xnm-f5u`)</summary>
 <blockquote>
     
 ``` json
@@ -231,193 +231,46 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
 </blockquote>
 </details>
 
-
-
-
-
-
-
-
-#### Autres
-
 <details>
-  <summary><b>1. Etendre la plage du sous-réseau</b></summary>
-
+<summary><b>2. Demander des mises à jour sur la configuration des vRack Services</b>
+</summary>
 <blockquote>
 
-1. <ins>Créer un fichier texte 'extend-subnet-service-range.json' contenant ces informations</ins>
+Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#put-/vrackServices/resource/-vrackServicesId-){.external}
+![image](https://github.com/ovh/docs/assets/60412/146cc671-6fdd-47ed-a741-5982bb9e07a8)
 
-```bash
-$ cat extend-subnet-service-range.json
-```
+Il s'agit de l'unique route gérant toute mise à jour de la configuration des vRack Services. Son fonctionnement est le suivant :
+1. Vous définissez une nouvelle spécification cible dans le corps de la requête.
+2. Si cette spécification est validée, vous recevez en retour la ressource avec les valeurs de targetSpec et de checksum mises à jour.
+3. La requête est traitée par une ou plusieurs tâches asynchrones qui visent à réconcilier l'état actuel avec le targetSpec.
 
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
-> ```console
-> {
->   "targetSpec": {
->     "displayName": "rbx_nominal_services",
->     "serviceRange": "172.21.0.0/28"
->   }
-> }
-> ```
-> 
-> </details>
+Le checksum aide à détecter les cas de concurrence sur les requêtes de mise à jour. Si la valeur du checksum interrogée diffère de celle renvoyée en réponse à votre requête initiale, cela signifie que le traitement de votre requête est terminé et qu'une autre requête est en cours de traitement.
 
-2. <ins>Demander l'extension de la plage de service (asynchrone)</ins>
+<br><br>
+<ins>Actions de configuration sans interruption</ins>
 
-```bash
-$ curl -XPUT -d@extend-subnet-service-range.json https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-
-4567890
-```
+La requête peut combiner n'importe laquelle des actions suivantes sans interruption (ce qui signifie qu'il n'y aura pas de coupure du service lors de la mise à jour) :
+- mettre à jour le nom d'affichage des vRack Services
+- créer un Sous-réseau
+- supprimer un Sous-réseau
+- mettre à jour un Sous-réseau :
+    - mettre à jour le nom d'affichage
+    - créer un ou plusieurs Service Endpoint
+    - supprimer un ou plusieurs Service Endpoint
+ 
+Notez qu'un Sous-réseau avec plusieurs Points de Terminaison de Service peut être créé dans le même corps de requête.   
 
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
->   
-> ```console
-> {
->   "id": "sub-4567890",
->   "resourceStatus": "UPDATING",
->   "targetSpec": {
->     "displayName": "rbx_nominal_services",
->     "serviceRange": "172.21.0.0/28"
->   },
->   "currentState": {
->     "displayName": "rbx_nominal_services",
->     "vrackServicesId": "vrs-1234567",
->     "range": "172.21.0.0/27",
->     "serviceRange": "172.21.0.0/29",
->     "vlan": 10
->   },
->   "createdAt": "2024-01-19T14:53:22.323452Z",
->   "updatedAt": "2024-01-19T14:58:22.323452Z"
-> }
-> ```
-> 
-> </details>
-
-3. <ins>Récupérer l'état final</ins>
-   
-```bash
-$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890
-```
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
->   
-> ```console
-> {
->   "id": "sub-4567890",
->   "resourceStatus": "READY",
->   "targetSpec": {
->     "displayName": "rbx_nominal_services",
->     "serviceRange": "172.21.0.0/28"
->   },
->   "currentState": {
->     "displayName": "rbx_nominal_services",
->     "vrackServicesId": "vrs-1234567",
->     "range": "172.21.0.0/27",
->     "serviceRange": "172.21.0.0/28",
->     "vlan": 10
->   },
->   "createdAt": "2024-01-19T14:53:22.323452Z",
->   "updatedAt": "2024-01-19T14:58:33.323452Z"
-> }
-> ```
-> 
-> </details>
+Notez que la suppression d'un Sous-réseau entraînera également la suppression des Points de Terminaison de Service intégrés.
 
 </blockquote>
-
 </details>
 
 
-<details>
-  <summary><b>2. Dissocier les vRack Services du vRack</b></summary>
-
-<blockquote>
-  
-1. <ins>Demander la dissociation du vRack</ins>
-
-```bash
-$ curl -XDELETE https://api.ovh.com/1.0/vrack/pn-12345/vrackServices/vrs-1234567
-```
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
-> ```console
-> {
->     todoDate: "2022-05-04T14:59:22.323452Z"
->     status: "init"
->     serviceName: "pn-12345"
->     orderId: null
->     lastUpdate: "2022-05-04T14:58:55.323452Z"
->     function: "removeVrackServices"
->     id: 5678901
-> }
-> ```
-> 
-> </details>
 
 
-2. <ins>Récupérer la tâche asynchrone en utilisant l'identifiant de tâche créé</ins>
-
-```bash
-$ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/5678901
-```
 
 
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
-> ```console
-> HTTP/1.1 404 Not Found
-> {
->     "message": "The requested object (taskId = 3205546) does not exist"
-> }
-> ```
-> 
-> </details>
 
-3. <ins>Tâche asynchrone terminée -> Récupérer le statut du service vRack</ins>
-
-```bash
-$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
-```
-
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
-> ```console
-> {
->     "id": "vrs-1234567",
->     "resourceStatus": "READY",
->     "targetSpec" : {
->         "displayName": "Backup_infra.",
->     },
->     "currentState": {
->         "productStatus": "DRAFT",
->         "displayName": "Backup_infra.",
->         "nicAdmin": "dp12345-ovh",
->         "nicTech": "dp12345-ovh",
->         "vrackId": null,
->         "zone": "rbx",
->         "region": "eu-east-1",
->         "az": "eu-east-1-a"
->     },
->     "createdAt": "2024-01-19T14:40:22.323452Z",
->     "updatedAt": "2024-01-19T14:59:55.323452Z"
-> }
-> ```
-> 
-> </details>
-
-</blockquote>
-
-</details>
 
 
 ## Contraintes et limites
