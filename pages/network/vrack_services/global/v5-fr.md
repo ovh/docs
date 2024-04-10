@@ -44,14 +44,14 @@ En effet vRack Services est un service régional. Vous devez donc choisir dans q
 
 ---
 
-Pour activer vRack Services vous devez avoir un vRAck. Si vous n'en avez pas à cette étape il est possible d'en commander un. 
+Pour activer vRack Services vous devez avoir un vRack. Si vous n'en avez pas à cette étape il est possible d'en commander un. 
 Vous n'êtes pas obligé d'un commander un à cette étape, vous pouvez le faire plus tard et revenir sur le processus de création du vRack Service.
 
 ![overview 01](images/04-VRS.png){.thumbnail}
 
 ---
 
-Ici, vous avez donc un état des lieux de votre de demande de création du vRack Service et pour ceux qui n'ont pas de vRAck associé, il est possible de le faire.
+Ici, vous avez donc un état des lieux de votre de demande de création du vRack Service et pour ceux qui n'ont pas de vRack associé, il est possible de le faire.
 
 ![overview 01](images/05-VRS.png){.thumbnail}
 
@@ -64,10 +64,9 @@ L'association à un vRack est assez simple car il suffit simplement de sélectio
 
 
 
-<details>
-  <summary><b>Création d'un Sous-réseau</b> </summary>
+#### Création d'un Sous-réseau
     
-<blockquote>  
+
 
 Afin de créer un sous-réseau il vous faudra renseigner 4 informations:
 - Son nom
@@ -89,15 +88,12 @@ Ainsi, après un bref instant de mise en place vous serez en capacité de voir e
 
 ![overview 01](images/14-VRS.png){.thumbnail}
 
-</blockquote>  
-
-</details>
 
 
-<details>
-  <summary><b>Création d'un Service Endpoint</b> </summary>
 
-<blockquote>  
+#### Création d'un Service Endpoint
+
+
 
 Les actions à mener sont très simple. En effet il suffit uniquement de renseigner 3 informations:
 - Le type du Service Managé.
@@ -118,31 +114,17 @@ Et après un rapide moment d'attente ...
 
 ![overview 01](images/18-VRS.png){.thumbnail}
 
-</blockquote>      
-
-</details>
 
 
-<details>
+#### Liste de vos vRacks Services
 
-  <summary><b>Liste de vos vRacks Services</b> </summary>
-
-<blockquote>
-    
 Dans cet écran vous avez la liste des différents vRack Services déclarés.
 
 ![overview 01](images/01-VRS.png){.thumbnail}
 
-</blockquote>
 
-</details>
+#### Vue d'ensemble
 
-
-<details>
-    
-  <summary><b>Vue d'ensemble </b> </summary>
-
-<blockquote>  
 
 Dans ce premier onglet, vous avez toutes les informations générales relatives au Service vRack sélectionné.
 
@@ -161,10 +143,6 @@ Dans cet onglet, qui ne contient aucune information lors de la création d'un Se
 Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'étape de création d'un sous-réseau.
 
 ![overview 01](images/09-VRS.png){.thumbnail}
-
-</blockquote>    
-
-</details>
 
 
 
