@@ -155,300 +155,347 @@ Vous devez vous authentifier au préalable via cette [page](https://eu.api.ovh.c
 #### Basics
 
 <details>
-  <summary><b>1. Créer un sous-réseau</b> </summary>
-    
+<summary><b>1. Lister les vRack Services</b></summary>
 <blockquote>
-    
-  Demande de création de Sous-réseau (toujours synchrone)
+    Vous devez tout d'abord lister vos vRack Services afin de récuperer l'id du vRack Services sur lequel vous voulez réaliser vos actions.
 
-```bash
-$ curl -XPOST -d '{"range": "172.21.0.0/27", "serviceRange": "172.21.0.0/29", "vlan": "10"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet
+Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
+![image](https://github.com/ovh/docs/assets/60412/7cdeb9c2-5a6e-4ca8-9403-8aede124e6d8)
+
+Voici la ligne de commande correspondante
+``` bash
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
+ -H "accept: application/json"\
+ -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
-> ```console
-> HTTP/1.1 201 Created
-> Location: https://api.ovh.com/2.0/vrackServices/vrs-2034567/subnet/sub-4567890
-> {
->     "id": "sub-4567890",
->     "resourceStatus": "READY",
->     "targetSpec" : {
->         "displayName": "rbx_nominal_services",
->         "serviceRange": "172.21.0.0/29"
->     },
->     "currentState": {
->         "displayName": "rbx_nominal_services",
->         "vrackServicesId": "vrs-1234567",
->         "range": "172.21.0.0/27",
->         "serviceRange": "172.21.0.0/29",
->         "vlan": 10,
->     },
->     "createdAt": "2024-01-19T14:53:22.323452Z",
->     "updatedAt": "2024-01-19T14:53:22.323452Z"
-> }
-> ```    
->     
-> </details>
-
-</blockquote>
-
-</details>
-
 
 <details>
-  <summary><b>2. Créer un Service Endpoint </b>     </summary>
-
+<summary> Extrait du résultat de cette commande</summary>
 <blockquote>
-1.&nbsp;<ins>Demande de création d'un Service Endpoint (asynchrone si une association vRack existe)</ins>  
-
-Ici nous utilisons un identifiant `serviceId` présent dans la liste des services managés disponibles.
-
-```bash
-$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "1fd7bf30-6722-4658-b3db-
-92e269185f46"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
-```  
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
->     
-> ```console
-> HTTP/1.1 201 Created
-> Location: https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint/end-5678901
-> {
->   "id": "end-5678901",
->   "resourceStatus": "CREATING",
->   "targetSpec": {
->     "displayName": "secured_data"
->   },
->   "currentState": {
->     "displayName": "secured_data",
->     "subnetId": "sub-4567890",
->     "serviceType": "entreprise-file-storage",
->     "serviceId": "1fd7bf30-6722-4658-b3db-92e269185f46",
->     "endpoints": {
->       1: {
->         "ip": "172.21.0.1",
->         "description": null        // Fetched from the Managed Service 'create' event
->       },
->       2: {
->         "ip": "172.21.0.2",
->         "description": null        // Fetched from the Managed Service 'create' event
->       },
->       3: {
->         "ip": "172.21.0.3",
->         "description": null        // Fetched from the Managed Service 'create' event
->       }
->     }
->   },
->   "createdAt": "2024-01-19T14:54:22.323452Z",
->   "updatedAt": "2024-01-19T14:54:22.323452Z"
-> }
-> ```
-> 
-> </details>   
-2.&nbsp;<ins>Création d'un second Service Endpoint</ins>   
-Juste pour vous montrer le comportement lorsque vous souhaitez lancer une nouvelle demande pendant l'exécution de la précédente.
-
-```bash
-$ curl -XPOST -d '{"serviceType": "entreprise-file-storage", "serviceId": "95569efa-61f2-4deb-8beea60b4213e1dc"}' https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint
+    
+``` json
+[
+  {
+    "checksum": "02643afe107az5025a342c96e6196a56",
+    "createdAt": "2024-04-09T14:56:46.564227Z",
+    "currentState": {
+      "displayName": "test_tracking",
+      "productStatus": "DRAFT",
+      "region": "LIM",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29",
+            "remainingIps": 3,
+            "reservedIps": 5,
+            "usedIps": 0
+          },
+          "vlan": null
+        }
+      ],
+      "vrackId": null
+    },
+    "currentTasks": [],
+    "id": "vrs-a9y-v91-xnm-f5u",
+    "resourceStatus": "READY",
+    "targetSpec": {
+      "displayName": "test_tracking",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29"
+          },
+          "vlan": null
+        }
+      ]
+    },
+    "updatedAt": "2024-04-09T15:16:14.97363Z",
+    "iam": {
+      "id": "e3cb9a6c-cf36-4b86-83d9-bfb1487110b5",
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-a9y-v91-xnm-f5u"
+    }
+  },
+  {
+    "checksum": "6e0f55fe79a65e340e7f7ad7b5618a40",
+    "createdAt": "2024-04-04T13:44:16.518228Z",
+    "currentState": {
+      "displayName": null,
+      "productStatus": "DRAFT",
+      "region": "LIM",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": "my_network",
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29",
+            "remainingIps": 3,
+            "reservedIps": 5,
+            "usedIps": 0
+          },
+          "vlan": 3000
+        }
+      ],
+      "vrackId": null
+    },
+    "currentTasks": [],
+    "id": "vrs-al3-vjo-myo-amc",
+    "resourceStatus": "READY",
+    "targetSpec": {
+      "displayName": null,
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": "my_network",
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29"
+          },
+          "vlan": 3000
+        }
+      ]
+    },
+    "updatedAt": "2024-04-09T14:43:52.729088Z",
+    "iam": {
+      "id": "7b84f200-08e0-483d-921c-2d2ce2c34176",
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-al3-vjo-myo-amc"
+    }
+  },
+  {
+    "checksum": "07f7331e4dc384f574a1bd5bff34294c",
+    "createdAt": "2024-03-28T10:31:21.230647Z",
+    "currentState": {
+      "displayName": null,
+      "productStatus": "DRAFT",
+      "region": "GRA",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29",
+            "remainingIps": 3,
+            "reservedIps": 5,
+            "usedIps": 0
+          },
+          "vlan": null
+        }
+      ],
+      "vrackId": "pn-1059066"
+    },
+    "currentTasks": [],
+    "id": "vrs-abc-6h7-ntc-i1s",
+    "resourceStatus": "READY",
+    "targetSpec": {
+      "displayName": null,
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29"
+          },
+          "vlan": null
+        }
+      ]
+    },
+    "updatedAt": "2024-04-05T14:14:08.183773Z",
+    "iam": {
+      "id": "2d17ae36-4d78-460c-a976-efd4465285a9",
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-abc-6h7-ntc-i1s"
+    }
+  },
+  {
+    "checksum": "67afe78f9814317234f1d5a2807596ae",
+    "createdAt": "2024-03-27T15:16:49.263975Z",
+    "currentState": {
+      "displayName": "test_qa_2",
+      "productStatus": "ACTIVE",
+      "region": "LIM",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [
+            {
+              "endpoints": [
+                {
+                  "description": "Nominal",
+                  "ip": "10.0.0.1"
+                }
+              ],
+              "managedServiceURN": "urn:v1:eu:resource:storageNetApp:3c27459b-15f1-4eed-892f-705f8a2f656c"
+            }
+          ],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29",
+            "remainingIps": 2,
+            "reservedIps": 5,
+            "usedIps": 1
+          },
+          "vlan": null
+        }
+      ],
+      "vrackId": "pn-1052123"
+    },
+    "currentTasks": [],
+    "id": "vrs-ax0-m5z-4i2-135",
+    "resourceStatus": "READY",
+    "targetSpec": {
+      "displayName": "test_qa_2",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [
+            {
+              "managedServiceURN": "urn:v1:eu:resource:storageNetApp:3c27459b-15f1-4eed-892f-705f8a2f656c"
+            }
+          ],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29"
+          },
+          "vlan": null
+        }
+      ]
+    },
+    "updatedAt": "2024-04-05T14:33:57.490763Z",
+    "iam": {
+      "id": "b585c18d-1706-444a-b74d-c3ad3f09a615",
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-ax0-m5z-4i2-135"
+    }
+  },
+  {
+    "checksum": "b0a91b4e7ed07a4eb82d0cea595b3e97",
+    "createdAt": "2024-03-26T08:51:19.324224Z",
+    "currentState": {
+      "displayName": "test_qa",
+      "productStatus": "DRAFT",
+      "region": "LIM",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29",
+            "remainingIps": 3,
+            "reservedIps": 5,
+            "usedIps": 0
+          },
+          "vlan": null
+        }
+      ],
+      "vrackId": "pn-1063503"
+    },
+    "currentTasks": [],
+    "id": "vrs-aop-730-vgo-njz",
+    "resourceStatus": "READY",
+    "targetSpec": {
+      "displayName": "test_qa",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29"
+          },
+          "vlan": null
+        }
+      ]
+    },
+    "updatedAt": "2024-04-05T14:31:16.687099Z",
+    "iam": {
+      "id": "10e12805-1521-4e47-bda9-b627d41ef1eb",
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-aop-730-vgo-njz"
+    }
+  },
+  {
+    "checksum": "39c6d2b2af13b32510f3a60d6a9ad5d7",
+    "createdAt": "2024-03-26T08:21:19.424277Z",
+    "currentState": {
+      "displayName": "my-VS-LIM",
+      "productStatus": "DRAFT",
+      "region": "LIM",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29",
+            "remainingIps": 3,
+            "reservedIps": 5,
+            "usedIps": 0
+          },
+          "vlan": null
+        }
+      ],
+      "vrackId": null
+    },
+    "currentTasks": [],
+    "id": "vrs-a82-tur-j9e-6cn",
+    "resourceStatus": "READY",
+    "targetSpec": {
+      "displayName": "my-VS-LIM",
+      "subnets": [
+        {
+          "cidr": "10.0.0.0/24",
+          "displayName": null,
+          "serviceEndpoints": [],
+          "serviceRange": {
+            "cidr": "10.0.0.0/29"
+          },
+          "vlan": null
+        }
+      ]
+    },
+    "updatedAt": "2024-04-02T08:55:31.854145Z",
+    "iam": {
+      "id": "e9e20fdc-7d67-4c03-89bf-2dd8cf49a827",
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-a82-tur-j9e-6cn"
+    }
+  },
+  {
+    "checksum": "116d53a1206d87790db6e2c55a8594e4",
+    "createdAt": "2024-03-22T08:38:19.359077Z",
+    "currentState": {
+      "displayName": null,
+      "productStatus": "DRAFT",
+      "region": "LIM",
+      "subnets": [],
+      "vrackId": null
+    },
+    "currentTasks": [],
+    "id": "vrs-aw7-pty-k6w-fcw",
+    "resourceStatus": "READY",
+    "targetSpec": {
+      "displayName": null,
+      "subnets": []
+    },
+    "updatedAt": "2024-03-22T08:38:20.885444Z",
+    "iam": {
+      "id": "1e8ed676-09f3-47be-b43f-92c061e8e28b",
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-aw7-pty-k6w-fcw"
+    }
+  }
+]
 ```
-
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
->     
-> ```console
-> HTTP/1.1 409 Conflict
-> {
->   "class": "Client::Conflict::ResourceBusy",
->   "message": "Subnet sub-1234567 is busy",
->   "details": {
->     "subnetId": "sub-1234567"
->   }
-> }
-> ```
-> 
-> </details>
-
-3. <ins>Ainsi, vous pouvez récupérer le statut de la demande de création du premier Service Endpoint.</ins>
-  
-De cette manière, nous pouvons voir que le statut de la ressource est maintenant READY.
-   
-```bash
-$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-4567890/serviceEndpoint/end-5678901
-```
-
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
->      
-> ```console
-> {
->   "id": "end-5678901",
->   "resourceStatus": "READY",
->   "targetSpec": {
->     "displayName": "critical_business"
->   },
->   "currentState": {
->     "displayName": "critical_business",
->     "subnetId": "sub-4567890",
->     "serviceType": "entreprise-file-storage",
->     "serviceId": "1fd7bf30-6722-4658-b3db-92e269185f46",
->     "endpoints": {
->       1: {
->         "ip": "172.21.0.1",
->         "description": null        // Fetched from the Managed Service 'create' event
->       },
->       2: {
->         "ip": "172.21.0.2",
->         "description": null        // Fetched from the Managed Service 'create' event
->       },
->       3: {
->         "ip": "172.21.0.3",
->         "description": null        // Fetched from the Managed Service 'create' event
->       }
->     }
->   },
->   "createdAt": "2024-01-19T14:54:22.323452Z",
->   "updatedAt": "2024-01-19T14:54:22.323452Z"
-> }
-> ```
-> 
-> </details>
 
 </blockquote>
-
 </details>
-
-
-
-<details>
-  <summary><b>3. Associer à un vRack</b>    </summary>
-
-<blockquote>
-
-1. <ins>Vérifier l'éligibilité du vRack</ins>
-
-```bash
-$ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/allowedServices?serviceFamily=vrackServices
-```  
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
->    
-> ```console
-> {
->   "ipLoadbalancing": null,
->   "dedicatedConnect": null,
->   "dedicatedServer": null,
->   "vrackServices": [
->     "vrs-2345678",
->     "vrs-1234567"
->   ],
->   "ip": null,
->   "dedicatedCloudDatacenter": null,
->   "ovhCloudConnect": null,
->   "cloudProject": null,
->   "dedicatedCloud": null,
->   "legacyVrack": null,
->   "dedicatedServerInterface": null
-> }
-> ```
-> 
-> </details>
-
-
-
-2. <ins>Requête d'association du vRack</ins>
-
-```bash
-$ curl -XPOST -d '{"vrackServices": "vrs-1234567"}' https://api.ovh.com/1.0/vrack/pn-12345/vrackServices
-```
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
->     
-> ```console
-> [
->     todoDate: "2024-01-19T14:51:22.323452Z"
->     status: "init"
->     serviceName: "pn-12345"
->     orderId: null
->     lastUpdate: "2024-01-19T14:51:22.323452Z"
->     targetDomain: "vrs-1234567"
->     function: "addVrackServices"
->     id: 3456789
-> ]
-> ```
-> 
-> </details>
-
-
-
-3. <ins>Récupérer la tâche asynchrone car cela peut prendre quelques secondes</ins>
-  Il se peut que vous rencontriez des erreurs lors de l'exécution de cette tâche
-   
-```bash
-$ curl -XGET https://api.ovh.com/1.0/vrack/pn-12345/task/3456789
-```
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
->     
-> ```console
-> HTTP/1.1 404 Not Found
-> {
->     "message": "The requested object (taskId = 3456789) does not exist"
-> }
-> ```
->     
-> </details>
-   
-4. <ins>Lorsque cette tâche synchrone est terminée, vous pouvez récupérer le statut du service vRack</ins>
-
-```bash
-$ curl -XGET https://api.ovh.com/2.0/vrackServices/vrs-1234567
-```
-
-> <details>
->   <summary>Afficher le retour de cette commande</summary>
-> 
->     
-> ```console
-> {
->   "id": "vrs-1234567",
->   "resourceStatus": "READY",
->   "targetSpec": {
->     "displayName": "Sample_Display_Name"
->   },
->   "currentState": {
->     "productStatus": "ACTIVE",
->     "displayName": "Sample_Display_Name",
->     "nicAdmin": "dp12345-ovh",
->     "nicTech": "dp12345-ovh",
->     "vrackId": "pn-12345",
->     "zone": "rbx",
->     "region": "eu-east-1",
->     "az": "eu-east-1-a"
->   },
->   "createdAt": "2024-01-19T14:40:22.323452Z",
->   "updatedAt": "2024-01-19T14:52:22.323452Z"
-> }
-> ```
->     
-> </details>
 
 </blockquote>
-
 </details>
-
-
-
-
 
 
 
