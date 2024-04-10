@@ -70,7 +70,7 @@ También debe:
 >
 > Por seguridad, todos los dominios de Hostinger están bloqueados **por defecto** para evitar transferencias no autorizadas.
 >
-> Por lo tanto, antes de transferir su nombre de dominio desde Hostinger, debe primero el **desbloquear**.
+> Por lo tanto, antes de transferir su nombre de dominio desde Hostinger, primero debe **desbloquearlo**.
 > 
 
 Para los dominios registrados en Hostinger, puede gestionar el estado de bloqueo de su dominio abriendo la sección `Dominios`{.action} y seleccionando el nombre de dominio a transferir.

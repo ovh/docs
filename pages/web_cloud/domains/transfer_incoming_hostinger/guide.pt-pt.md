@@ -16,7 +16,7 @@ A transferência de um nome de domínio Hostinger requer um processo específico
 
 > [!warning]
 >
-> O [agente de registo](https://www.ovhcloud.com/pt/learn/what-is-domain-name-registar/) de um domínio representa a organização/fornecedor acreditado junto do qual o domínio está registado/subscrito por um particular, uma associação ou uma organização. É nesse mesmo agente de registo que renova a subscrição do seu nome de domínio (geralmente uma vez por ano).
+> O [agente de registo](https://www.ovhcloud.com/pt/learn/what-is-domain-name-registrar/) de um domínio representa a organização/fornecedor acreditado junto do qual o domínio está registado/subscrito por um particular, uma associação ou uma organização. É nesse mesmo agente de registo que renova a subscrição do seu nome de domínio (geralmente uma vez por ano).
 >
 > Se a OVHcloud já é o agente registador do seu domínio **antes** de iniciar o procedimento que se seguirá, a transferência de entrada de domínio não é o procedimento adequado. O procedimento de transferência de domínio aplica-se *** apenas aos nomes de domínio registados noutro agente de registo que não a OVHcloud.
 >
@@ -70,7 +70,7 @@ Deve também:
 >
 > Por razões de segurança, todos os domínios Hostinger estão **bloqueados por predefinição** para evitar transferências não autorizadas.
 >
-> Por conseguinte, antes de transferir o seu domínio a partir do Hostinger, deve primeiro desbloqueá-lo **desbloquear**.
+> Por conseguinte, antes de transferir o seu nome de domínio da Hostinger, deve primeiro **desbloqueá-lo**.
 > 
 
 Para os nomes de domínio registados na Hostinger, pode gerir o estado de bloqueio do seu nome de domínio abrindo a secção `Domínios`{.action} e selecionando o nome de domínio a transferir.

@@ -70,7 +70,7 @@ Musisz również:
 >
 > Ze względów bezpieczeństwa wszystkie domeny w Hostinger są **domyślnie zablokowane**, aby uniknąć nieautoryzowanego transferu.
 >
-> Dlatego przed przeniesieniem domeny z Hostinger należy **odblokować**.
+> Dlatego przed przeniesieniem nazwy domeny z Hostingera należy ją najpierw **odblokować**.
 > 
 
 W przypadku domen zarejestrowanych w Hostingerze możesz zarządzać statusem blokady Twojej domeny otwierając sekcję `Domeny`{.action} i wybierając nazwę domeny, którą chcesz przenieść.

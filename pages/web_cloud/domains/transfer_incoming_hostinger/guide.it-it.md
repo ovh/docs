@@ -27,17 +27,17 @@ Il trasferimento di un dominio Hostinger richiede una procedura specifica.
 
 ## Prerequisiti
 
-- il dominio è registrato presso il Registrar Hostinger.
-- il dominio esiste da più di 60 giorni.
+- Il dominio è registrato presso il Registrar Hostinger.
+- Il dominio esiste da più di 60 giorni.
 - Il dominio non è stato trasferito o non ha cambiato proprietario nel corso degli ultimi 60 giorni.
 - Lo stato del dominio è "OK" o "Trasferibile".
-- il dominio non è scaduto e ha una data di scadenza che permette di completare il processo di trasferimento entro i termini (consigliato: oltre 60 giorni).
+- Il dominio non è scaduto e ha una data di scadenza che permette di completare il processo di trasferimento entro i termini (consigliato: oltre 60 giorni).
 
 È inoltre necessario:
 
 - Essere in grado di sbloccare il dominio.
-- essere in possesso del codice di trasferimento o avere la possibilità di recuperarlo.
-- essere abilitato a richiedere il trasferimento del dominio.
+- Essere in possesso del codice di trasferimento o avere la possibilità di recuperarlo.
+- Essere abilitato a richiedere il trasferimento del dominio.
 - Aver informato il proprietario del dominio e/o i suoi amministratori della richiesta di trasferimento.
 
 > [!warning]
@@ -71,7 +71,7 @@ Il trasferimento di un dominio Hostinger richiede una procedura specifica.
 >
 > Per motivi di sicurezza, tutti i domini in Hostinger sono **bloccati di default** per evitare trasferimenti non autorizzati.
 >
-> Prima di trasferire il dominio da Hostinger è quindi necessario **sbloccare** il.
+> Pertanto, prima di trasferire il vostro nome di dominio da Hostinger, dovete prima **sbloccarlo**.
 > 
 
 Per i domini registrati in Hostinger, è possibile gestire lo stato di blocco del dominio aprendo la sezione `Domini`{.action} e selezionando il dominio da trasferire.
