@@ -825,26 +825,6 @@ $ curl -XDELETE https://api.ovh.com/2.0/vrackServices/vrs-1234567/subnet/sub-456
 
 ---
 
-## Expérience de configuration du produit
-
-En coulisses, le statut de VrackServices (VrackServices.productStatus) reflète l'état de la configuration de l'infrastructure. Cette configuration est initiée une fois que les trois critères suivants sont remplis :
-
-- Le produit n'est pas suspendu.
-- Une association vRack existe déjà.
-- Au moins un Service Endpoint a été configuré.
-
-Si l'une de ces exigences n'est plus satisfaite, la configuration est retirée (marquée soit comme BROUILLON soit comme SUSPENDUE).
-
-Comme aide, un résumé de la configuration est disponible avec l'attribut VrackServices.productStatus.
-Il répond à la question `Ma configuration actuelle permet-elle aux Services Gérés d'être accessibles depuis le vRack ?`
-- **ACTIF :** oui, c'est le cas
-- **DRAFT :** non, soit un Service Endpoint doit être créé, soit un vRack doit être associé aux vRack Services
-- **SUSPENDED :** non, le produit est dans l'état de `suspension` d'Agora
-
- 
----
-
-
 ## Contraintes et limites
 ### vRack Services
 - Un vRack Services est attaché à une seule région.
