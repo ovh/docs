@@ -879,14 +879,14 @@ Il répond à la question `Ma configuration actuelle permet-elle aux Services G�
 - Au sein d'un vRack, il n'est pas possible de créer plusieurs vRack Services sur une même région.
 - Un maximum de 20 vRack Services peuvent être crées par compte utilisateur.
 - Plusieurs vRack Services peuvent être associés au même vRack. Ainsi, le client peut rendre les service managés accessibles depuis différentes régions.
--  Le service managé a exposer doit obligatoirement faire partie de la même région que celle du vRack Services.public cloud...).
+- Le service managé a exposer doit obligatoirement faire partie de la même région que celle du vRack Services.
 
-**Note :** La capacité de bande passante entre le service managé et les hôtes consommateur du service ne sont pas garantie directement via le produit vRack Services. Le garanties de bande passante contractuelle sont porté par les services OVHcloud telles que les service managés (par ex. Enterprise File Storage) ou les services consommateur du service managé (par ex. serveurs Baremetal, clusters HPC, instances 
+**Note :** La capacité de bande passante entre le service managé et les hôtes consommateurs du service n'est pas garanti directement via le produit vRack Services. Les garanties de bande passante contractuelles sont portées par les services OVHcloud tels que les service managés (par ex. Enterprise File Storage) ou les services consommateurs du service managé (par ex. serveurs Baremetal, clusters HPC, instances public cloud).
 
 ### Sous-réseau
-- La **plage** d'adresse du sous-réseau doit respecter le **RFC 1918**.
-- La longueur de la **plage** d'adresse du sous-réseau est comprise entre /16 et /24.
-- Chaque **plage** d'addresse de sous-réseau doit être unique pour un vRack Service donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
+- La plage d'adresse du sous-réseau doit respecter le RFC 1918.
+- La longueur de la plage d'adresse du sous-réseau est comprise entre /16 et /24.
+- Chaque plage d'addresse de sous-réseau doit être unique pour un vRack Service donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
 - Il n'est pas possible de modifier la plage d'adresse de sous-réseau une fois créée.
 - La plage d'ID de VLAN valide est comprise entre 2 et 4094. La valeur "null" est autorisée (pas de VLAN / untagged).
 - Un maximum de 1 sous-réseau par service vRack peut être défini par le client.
