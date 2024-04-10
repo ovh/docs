@@ -61,7 +61,7 @@ To transfer a GoDaddy domain name, you will need to follow a specific procedure.
 ### Step 1 - Unlock the domain name at GoDaddy
 
 Locking a domain name protects it against unauthorized transfer attempts.
-GoDaddy enables this protection by default. You will need to disable it in order to transfer your domain to OVHcloud.
+GoDaddy enables this protection by default. You will need to disable it in order to transfer your domain name to OVHcloud.
 
 Follow the steps described in [GoDaddy dedicated documentation](https://www.godaddy.com/help/unlock-or-lock-my-domain-410){.external}.
 
