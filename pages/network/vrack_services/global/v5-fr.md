@@ -28,7 +28,7 @@ Configurer un Service Endpoint se déroule en 3 étapes:
 2. Crée un sous-réseau et une plage d'adresse pour les services managés
 3. Crée le Service Endpoint
 
-Ces 3 étapes sont réalisables soit via l'API, soit via l'espace client et sont décrites en détails ci-dessous.
+Ces 3 étapes sont réalisables soit via l', soit via l'espace client et sont décrites en détails ci-dessous.
 
 ### Manager
 
@@ -104,7 +104,7 @@ Les actions à mener sont très simple. En effet il suffit uniquement de renseig
 
 ---
 
-Et après un rapide moment d'attente ...
+Et après un rde moment d'attente ...
 
 ![overview 01](images/17-VRS.png){.thumbnail}
 
@@ -149,6 +149,8 @@ Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'
 ### API
 
 Cette section aborde les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de vRack Services à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des vRack Services, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
+
+Vous devez vous authentifier au préalable via cette [page]([https://www.ovhcloud.com/fr/network/vrack/](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth)){.external}. 
 
 #### Basics
 
