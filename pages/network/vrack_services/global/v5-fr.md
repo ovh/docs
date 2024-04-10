@@ -30,7 +30,7 @@ Configurer un Service Endpoint se déroule en 3 étapes:
 
 Ces 3 étapes sont réalisables soit via l'API, soit via l'espace client et sont décrites en détails ci-dessous.
 
-### Manager via le Menu vRack
+### Manager
 
 #### Création d'un vRack Service
 
@@ -167,68 +167,6 @@ Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'
 </details>
 
 
-
-### Manager via le Menu Enterprise File Storage
-
-<details>
-
-  <summary><b>Vue d'ensemble</b> </summary>
-
-<blockquote>
-    
-Sans configuration réseau
-
-![overview 01](images/01-EFS.png){.thumbnail}
-
----
-
-Avec configuration réseau
-
-![overview 01](images/09-EFS.png){.thumbnail}
-
-</blockquote>
-
-</details>
-
-
-<details>
-
-  <summary><b>Configurer les paramètres réseaux</b> </summary>
-
-<blockquote>
-
-![overview 01](images/03-EFS.png){.thumbnail}
-
---- 
-
-![overview 01](images/05-EFS.png){.thumbnail}
-
---- 
-
-![overview 01](images/06-EFS.png){.thumbnail}
-
-
-</blockquote>
-
-</details>
-
-
-<details>
-
-  <summary><b>Retirer une configuration réseau</b> </summary>
-
-<blockquote>
-
-![overview 01](images/09-EFS.png){.thumbnail}
-
-![overview 01](images/10-EFS.png){.thumbnail}
-
-
-</blockquote>
-
-</details>
-
----
 
 ### API
 
