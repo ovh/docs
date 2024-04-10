@@ -170,7 +170,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
 ```
 
 <details>
-<summary> Extrait du résultat de cette commande (l'id qui sera utilisé dans notre exemple est le suivant `vrs-a9y-v91-xnm-f5u`)</summary>
+<summary> Extrait du résultat de cette commande</summary>
 <blockquote>
     
 ``` json
@@ -205,7 +205,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
       "displayName": "test_tracking",
       "subnets": [
         {
-          "cidr": "10.0.0.0/24",
+          "cidr": "10.0.0.0/24"
           "displayName": null,
           "serviceEndpoints": [],
           "serviceRange": {
@@ -226,13 +226,58 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
 ```
 
 </blockquote>
+
+
 </details>
+
+
+L'id qui sera utilisé dans notre exemple est le suivant `vrs-a9y-v91-xnm-f5u`
 
 </blockquote>
 </details>
 
 <details>
-<summary><b>2. Demander des mises à jour sur la configuration des vRack Services</b>
+<summary><b>2. Lister tous les services managés éligibles au vRack Services concerné</b></summary>
+<blockquote>
+
+Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource/-vrackServicesId-/eligibleManagedService){.external}
+![image](https://github.com/ovh/docs/assets/60412/3da50fd3-be4b-479b-a7b3-f3449406b6d7)
+
+Voici la ligne de commande correspondante
+``` bash
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u/eligibleManagedService" \
+ -H "accept: application/json"\
+ -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
+```
+
+<details>
+<summary>Résultat de cette commande</summary>
+<blockqquote>
+    
+``` json
+[
+  {
+    "managedServiceType": "storageNetApp",
+    "managedServiceURNs": [
+        "urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45",
+        "urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f"
+    ]
+  }
+]
+```
+
+</blockqquote>
+</details>
+
+Les ids des services managés utilisés plus bas dans notre exemple sont les suivants: 
+- `urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45`
+- `urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f`
+
+</blockquote>
+</details>
+
+<details>
+<summary><b>3. Demander des mises à jour sur la configuration des vRack Services</b>
 </summary>
 <blockquote>
 
