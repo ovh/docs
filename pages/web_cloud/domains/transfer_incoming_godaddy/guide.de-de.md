@@ -62,16 +62,16 @@ Für den Transfer eines GoDaddy-Domainnamens ist ein spezieller Ansatz erforderl
 
 ### Schritt 1 - Domain bei GoDaddy freigeben
 
-Das Sperren einer Domain schützt diese vor unerlaubten Transferversuchen.
-GoDaddy aktiviert diesen Schutz standardmäßig. Um Ihre Domain zu OVHcloud zu transferieren, müssen Sie sie daher deaktivieren.
+Das Sperren eines Domainnamens schützt ihn vor unerlaubten Transferversuchen.
+GoDaddy aktiviert diesen Schutz standardmäßig. Um Ihren Domainnamen zu OVHcloud zu transferieren, müssen Sie sie daher deaktivieren.
 
-Befolgen Sie die Schritte in der [dedizierten Dokumentation von GoDaddy](https://de.godaddy.com/help/meine-domain-entsperren-oder-sperren-410){.external}.
+Befolgen Sie die Schritte in der [GoDaddy Dokumentation](https://de.godaddy.com/help/meine-domain-entsperren-oder-sperren-410){.external}.
 
 ### Schritt 2 - Autorisierungscode erhalten 
 
-OVHcloud wird Sie auffordern, den Autorisierungscode oder „Auth Code“ anzugeben, bevor der Domaintransfer eingeleitet wird. Sie erhalten es, indem Sie die Seite mit Ihrem Portfolio an `Domainnamen`{.action} bei GoDaddy aufrufen.
+OVHcloud wird Sie auffordern, den Autorisierungscode oder „Auth Code“ anzugeben, bevor der Domaintransfer eingeleitet wird. Sie erhalten ihn, indem Sie die Seite mit Ihrem Portfolio an `Domainnamen`{.action} bei GoDaddy aufrufen.
 
-Folgen Sie den Schritten in der [dedizierten Dokumentation von GoDaddy](https://de.godaddy.com/help/meine-domain-von-godaddy-ubertragen-3560){.external}.
+Folgen Sie den Schritten in der [GoDaddy Dokumentation](https://de.godaddy.com/help/meine-domain-von-godaddy-ubertragen-3560){.external}.
 
 ### Schritt 3 - Den Domaintransfer zu OVHcloud starten
 
