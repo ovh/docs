@@ -64,32 +64,9 @@ Deve também:
 > Certifique-se também de que o agente de registo atual não vai fechar outros serviços, como, por exemplo, os endereços de correio eletrónico associados ao domínio.
 >
 
-### Desbloquear nome de domínio
+### Desbloquear o nome de domínio e recuperar o código de transferência
 
-> [!primary]
->
-> Por razões de segurança, todos os domínios Wix estão **bloqueados por predefinição** para evitar transferências não autorizadas.
->
-> Por conseguinte, antes de transferir o seu nome de domínio da Wix, deve primeiro **desbloqueá-lo**.
-> 
-
-Para os nomes de domínio registados na Wix, pode gerir o estado de bloqueio do seu nome de domínio abrindo a secção `Domínios`{.action} e selecionando o nome de domínio a transferir.
-
-Siga os passos descritos na [documentação dedicada de Wix](https://support.hostinger.com/pt/articles/4791444-como-bloquear-ou-desbloquear-a-transferencia-de-um-dominio){.external}.
-
-### Obter o código EPP ou Auth
-
-Se deseja **transferir** o seu domínio do Wix para outro agente registador (como a OVHcloud), o novo agente registador pode pedir um código de autorização (código "EPP" ou "Auth") para verificar se tem o direito de agir sobre o domínio.
-Para se familiarizar com a mudança de proprietário de um domínio, consulte este [guia](pages/web_cloud/domains/trade_domain).
-
-> [!warning]
->
-> Alguns TLDs têm um processo de transferência especial. Isto é válido nomeadamente para os domínios **.uk** e **.eu**.
->
-> Sugerimos que consulte o Wix para que tome as medidas adequadas à transferência do seu domínio.
-> 
-
-Para obter um código **EPP** ou **Auth** na Wix, siga os passos descritos na [documentação dedicada do Wix](https://support.hostinger.com/pt/articles/1583203-como-obter-o-codigo-epp-ou-de-autenticacao-para-transferencia-de-dominio-na-hostinger){.external}.
+Para desbloquear o domínio e obter o código de transferência, siga os passos descritos na [documentação dedicada do Wix](https://support.wix.com/pt/article/transferir-o-seu-dom%C3%ADnio-para-fora-do-wix){.external}.
 
 ### Iniciar a transferência do domínio para a OVHcloud
 
