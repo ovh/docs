@@ -122,7 +122,7 @@ Après quelques instants, votre nouveau Service Endpoint est configuré et dispo
 
 Dans cet écran vous trouverez la liste des différents vRack Services déclarés.
 
-![overview 01](images/01-VRS.png){.thumbnail}
+![overview 01](images/01-VRS-v2.png){.thumbnail}
 
 
 #### Vue d'ensemble
