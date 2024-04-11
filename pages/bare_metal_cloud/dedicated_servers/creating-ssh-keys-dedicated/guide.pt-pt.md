@@ -1,6 +1,6 @@
 ---
 title: Criar e utilizar chaves SSH
-excerpt: Descubra como criar uma chave SSH para efetuar uma ligação segura ao seu servidor
+excerpt: Descubra como criar um par de chaves SSH na sua estação de trabalho e como as utilizar para estabelecer uma ligação segura ao seu servidor
 updated: 2023-11-22
 ---
 
@@ -29,13 +29,15 @@ Trata-se geralmente do método de ligação mais seguro e mais prático.
 
 ## Instruções
 
-Não se esqueça de consultar os nossos manuais « Primeiros passos »: <a name="getstarted"></a>
+Não se esqueça de consultar os nossos manuais "Primeiros passos": <a name="getstarted"></a>
 
 - para um [servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) ;
 - para um [servidor dedicado da gama **Eco**](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco) ;
 - para um [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 Consulte também o guia de apresentação do [protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+### Criação de um par de chaves SSH
 
 As instruções seguintes abrangem dois métodos de utilização das chaves SSH:
 
@@ -46,7 +48,7 @@ Pode utilizar os dois métodos simultaneamente, mas tenha em conta que "PuTTY` c
 
 Isto significa que uma chave privada criada com o cliente SSH em linha de comandos deverá primeiro ser [convertida no formato `PuTTY` e vice-versa](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt){.external}.
 
-### Criação de um par de chaves SSH em linha de comandos <a name="openssh"></a>
+#### Criação de um par de chaves SSH em linha de comandos <a name="openssh"></a>
 
 A partir de um computador **Mac** ou de um periférico com um sistema operativo **Linux**, abra a aplicação de linha de comandos (`Terminal`).
 
@@ -56,7 +58,7 @@ Certifique-se de que tem uma pasta chamada `.ssh` no seu diretório `$HOME`. Se 
 mkdir ~/.ssh
 ```
 
-Num sistema operativo **Windows** atual, abra a linha de comandos introduzindo « cmd » na barra de pesquisa (ou abra `PowerShell` a partir do menu).
+Num sistema operativo **Windows** atual, abra a linha de comandos introduzindo "cmd" na barra de pesquisa (ou abra `PowerShell` a partir do menu).
 
 Aceda ao diretório `.ssh` do seu utilizador **Windows** ativo (por predefinição: `C:\Users\WindowsUsername.ssh`):
 
@@ -84,7 +86,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Confirme com a tecla "Enter" para aceitar o nome de ficheiro proposto ou insira um nome individual. Isto é relevante se vários pares de chaves forem colocados no diretório `.ssh`. Consulte a secção « [Gestão de Múltiplas Chaves SSH no Dispositivo Local](#multiplekeys) » deste guia.<br>
+Confirme com a tecla "Enter" para aceitar o nome de ficheiro proposto ou insira um nome individual. Isto é relevante se vários pares de chaves forem colocados no diretório `.ssh`. Consulte a secção "[Gestão de Múltiplas Chaves SSH no Dispositivo Local](#multiplekeys)" deste guia.<br>
 Este exemplo utiliza os nomes de ficheiros standard `id_rsa` e `id_rsa.pub`.
 
 Pode proteger a sua chave SSH com uma frase secreta (*passphrase*) na operação seguinte. Esta é uma etapa recomendada para uma maior segurança.
@@ -161,7 +163,7 @@ Copie a cadeia de chaves completa para a área de transferência para [adicionar
 > Quando estiver a trabalhar em linha de comandos sob **Windows**, clique com o botão direito do rato para **colar** o conteúdo da área de transferência na janela da linha de comandos. Para **copiar** um canal a partir da janela da linha de comandos, realce-o com o rato e prima a tecla ‘Enter`. Pode também consultar estas funções através de um "clique com o botão direito do rato" na barra de menu.
 >
 
-### Criar um par de chaves SSH com PuTTY <a name="useputty"></a>
+#### Criar um par de chaves SSH com PuTTY <a name="useputty"></a>
 
 [PuTTY](https://putty.org/){.external} é um software cliente SSH open source com uma interface gráfica do utilizador, disponível para **Windows** e outros sistemas operativos. Fornece um software complementar para criar chaves SSH: `PuTTY Key Generator` (`PuTTYgen`).
 
@@ -195,9 +197,9 @@ Copie a cadeia de chaves completa para a área de transferência para [adicionar
 > Por razões de conveniência de uso e segurança, lembre-se de usar um gerenciador de palavras-passe no seu dispositivo, como a solução open source `KeePass`.
 >
 
-Uma das vantagens de usar `PuTTY` é a capacidade de salvar várias conexões como « sessões ». Encontre mais informações na secção « [Gestão de várias chaves SSH no seu dispositivo local](#puttykeys) ».
+Uma das vantagens de usar `PuTTY` é a capacidade de salvar várias conexões como "sessões". Encontre mais informações na secção [Gestão de várias chaves SSH no seu dispositivo local](#puttykeys)".
 
-Para saber mais sobre as ligações SSH, consulte os guias de [primeiros passos](#getstarted) » e a nossa introdução ao [protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+Para saber mais sobre as ligações SSH, consulte os guias de [primeiros passos](#getstarted) e a nossa introdução ao "[protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 ### Adicionar chaves SSH ao servidor <a name="addserverkey"></a>
 
@@ -220,7 +222,7 @@ ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Por exemplo:
 
 ```bash
-ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@203.0.113.100
 ```
 
 A palavra-passe do utilizador será solicitada. receberá uma mensagem conforme indicado abaixo.
@@ -263,7 +265,7 @@ sudo systemctl restart ssh
 sudo systemctl restart sshd
 ```
 
-Para verificar que a chave foi corretamente configurada, ligue-se ao seu servidor com o comando seguinte. Substitua « utilizador » pelo nome de utilizador para o qual foram criadas as chaves e « IP_ADDRESS » pelo endereço IP (ou nome de host) do servidor ao qual pretende aceder:
+Para verificar que a chave foi corretamente configurada, ligue-se ao seu servidor com o comando seguinte. Substitua "utilizador" pelo nome de utilizador para o qual foram criadas as chaves e "IP_ADDRESS" pelo endereço IP (ou nome de host) do servidor ao qual pretende aceder:
 
 ```bash
 ssh user@IP_ADDRESS
@@ -272,7 +274,7 @@ ssh user@IP_ADDRESS
 Por exemplo:
     
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.100
 ```
 
 #### Adicionar chaves públicas suplementares ao seu servidor
@@ -311,9 +313,9 @@ Por exemplo:
 ssh -i ~/.ssh/KeyFileName user@IP_ADDRESS
 ```
 
-Como indicado nas secções anteriores, as mesmas instruções funcionarão num cliente **Windows*. Substitua apenas `~/` pelo caminho da sua pasta de utilizador **Windows**, por predefinição `C:\Users\WindowsUsername\`. Por exemplo: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@169.254.10.250`.
+Como indicado nas secções anteriores, as mesmas instruções funcionarão num cliente **Windows*. Substitua apenas `~/` pelo caminho da sua pasta de utilizador **Windows**, por predefinição `C:\Users\WindowsUsername\`. Por exemplo: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`.
 
-#### Utilização do ficheiro « config »
+#### Utilização do ficheiro "config"
 
 A alternativa para adicionar a opção `-i` em cada vez consiste em modificar um ficheiro chamado `config` na pasta `~/.ssh` (`\Users\Username\.ssh` para **Windows**). Permite configurar os detalhes das diferentes ligações (nome de utilizador, porta, ficheiro de chave, parâmetros opcionais, etc.)
 
@@ -336,7 +338,7 @@ Abra o arquivo e adicione as seguintes linhas na parte superior:
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 ```
 
@@ -346,15 +348,15 @@ De seguida, poderá ligar-se ao VPS com o nome de alias que definiu como `Host`:
 ssh ubuntu@vps
 ```
 
-Apenas o IP do servidor e o ficheiro de chave foram especificados no exemplo anterior, mas podem ser adicionados mais detalhes. Para configurar uma ligação SSH para um segundo servidor com o nome de utilizador « rocky », a [porta SSH modificada](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) « 49160 » e a chave privada no ficheiro « myserver_rsa », expanda o conteúdo do ficheiro como indicado neste exemplo:
+Apenas o IP do servidor e o ficheiro de chave foram especificados no exemplo anterior, mas podem ser adicionados mais detalhes. Para configurar uma ligação SSH para um segundo servidor com o nome de utilizador "rocky", a [porta SSH modificada](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) "49160" e a chave privada no ficheiro "myserver_rsa", expanda o conteúdo do ficheiro como indicado neste exemplo:
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 
 Host dedicated_server
-    HostName 169.254.10.251
+    HostName 203.0.113.101
     User rocky
     Port 49160
     IdentityFile ~/.ssh/myserver_rsa
@@ -370,7 +372,7 @@ Pode consultar [a página "man` correspondente](https://manpages.org/ssh_config/
 
 #### Utilização de PuTTY <a name="puttykeys"></a>
 
-Se seguiu as instruções das secções « [Criação de um par de chaves SSH com `PuTTY`](#useputty) » e « [Adição de chaves SSH ao servidor](#addserverkey) », dispõe de um par de chaves que lhe permite ligar-se ao servidor. 
+Se seguiu as instruções das secções "[Criação de um par de chaves SSH com `PuTTY`](#useputty)" e "[Adição de chaves SSH ao servidor](#addserverkey)", dispõe de um par de chaves que lhe permite ligar-se ao servidor. 
 
 `PuTTY` pode salvar as credenciais e parâmetros de uma conexão SSH como `Session`. Permite também estabelecer a ligação a diferentes servidores através de chaves individuais.
 
@@ -419,7 +421,7 @@ Se copiou a saída completa, o identificador após a chave já deve ser adiciona
 > Todas as chaves registadas na secção "Dedicado" estão disponíveis em pré-instalação num servidor dedicado ou num VPS. No que diz respeito às chaves SSH para os serviços Public Cloud, queira consultar [este manual](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
-### Definir uma chave SSH predefinida (apenas para a secção « Dedicado ») <a name="cpsshkey"></a>
+### Definir uma chave SSH predefinida (apenas para a secção "Dedicado") <a name="cpsshkey"></a>
 
 Se adicionou várias chaves SSH na sua Área de Cliente OVHcloud, é possível definir uma chave a utilizar como chave predefinida na conta. 
 

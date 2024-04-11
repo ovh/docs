@@ -12,7 +12,7 @@ updated: 2024-03-21
 
 Mit dem Pico **CMS** (**C**ontent **M**anagement **S**ystem) können Sie schnell Websites erstellen. Pico wurde für die einfache Erstellung und Verwaltung von Inhalten mithilfe von Markdown-Dateien entwickelt und ist ideal für die Erstellung von persönlichen Websites, Portfolios oder Projekten kleiner Unternehmen.
 
-**Dieses Tuorial erklärt, wie Sie Ihr Pico CMS eigenständig installieren.**
+**Dieses Tutorial erklärt, wie Sie Ihr Pico CMS eigenständig installieren.**
 
 ## Voraussetzungen
 
@@ -39,13 +39,13 @@ Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation 
 
 Geben Sie Ihren Domainnamen in die Suchleiste Ihres Webbrowsers ein.
 
-Wenn die Pico-Quelldateien erfolgreich in den Wurzelordner verschoben wurden, wird die folgende Seite angezeigt:
+Wenn die Quelldateien von Pico erfolgreich in den Wurzelordner verschoben wurden, wird die folgende Seite angezeigt:
 
 ![Pico installation](images/welcome_page.png){.thumbnail}
 
-Pico ist ein dateibasiertes CMS, was bedeutet, dass die gesamte Konfiguration und Erstellung von Inhalten direkt durch die Bearbeitung der Dateien auf dem Server erfolgt. Gehen Sie wie folgt vor, um Ihre Pico-Website einzurichten und anzupassen.
+Pico ist ein dateibasiertes CMS, was bedeutet, dass die gesamte Konfiguration und Erstellung von Inhalten direkt durch die Bearbeitung der Dateien auf dem Server erfolgt. Gehen Sie wie folgt vor, um Ihre Pico Website einzurichten und anzupassen.
 
-#### Die Struktur der Pico-Ordner verstehen
+#### Die Ordnerstruktur von Pico verstehen
 
 Nach der Installation finden Sie mehrere Ordner und Dateien im Hauptverzeichnis von Pico. Die wichtigsten sind:
 
@@ -98,7 +98,7 @@ Pico erlaubt es, Funktionen mit Plugins zu erweitern.
 
 ### Fazit
 
-Sie haben das CMS Pico manuell auf Ihrem OVHcloud Webhosting installiert. Nachdem Sie Ihre Website konfiguriert, personalisierte Inhalte hinzugefügt, das Theme angepasst und Plugins installiert haben, ist Ihre Pico-Website online über Ihren Domainnamen verfügbar.
+Sie haben das CMS Pico manuell auf Ihrem OVHcloud Webhosting installiert. Nachdem Sie Ihre Website konfiguriert, personalisierte Inhalte hinzugefügt, das Theme angepasst und Plugins installiert haben, ist Ihre Pico Website online über Ihren Domainnamen verfügbar.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
@@ -116,7 +116,7 @@ Sie haben das CMS Pico manuell auf Ihrem OVHcloud Webhosting installiert. Nachde
 
 [Tutorial - Manuelle Installation von SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
-[Tutorial - Manuelles Installieren eines CMS auf meinem Hosting](/pages/web_cloud/web_hosting/cms_manual_installation)
+[Tutorial - Manuelle Installation eines CMS auf einem Webhosting](/pages/web_cloud/web_hosting/cms_manual_installation)
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
  

@@ -285,7 +285,7 @@ Um sie zu aktivieren, folgen Sie den in den Tabs aufgeführten Schritten:
 >>
 >> Vebinden Sie sich mit Ihrem Server über Remote Desktop oder [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).<br>
 >>
-> Tool **"Ausführen" öffnen**
+> **Tool "Ausführen" öffnen**
 >>
 >> Öffnen Sie das Windows-Startmenü und klicken Sie auf `Run`{.action}.<br><br>
 >>![KVM](images/windowsboot1.png){.thumbnail}<br>

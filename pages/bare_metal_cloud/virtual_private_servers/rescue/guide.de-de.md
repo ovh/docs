@@ -12,7 +12,7 @@ updated: 2024-02-19
 
 Der Rescue-Modus ist ein von OVHcloud bereitgestelltes Tool, um Ihren VPS über ein temporäres Betriebssystem zu starten. Sie können dann auf Ihr System zugreifen, um Diagnoseaufgaben auszuführen und verschiedene Probleme zu beheben, beispielsweise:
 
-- Zurücksetzen von Benutzerkennwörtern, um den Zugriff wiederherzustellen
+- [Zurücksetzen von Benutzerkennwörtern, um den Zugriff wiederherzustellen](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Netzwerkprobleme diagnostizieren
 - Reparatur eines fehlerhaften Betriebssystems
 - Fehlkonfiguration der Firewall korrigieren

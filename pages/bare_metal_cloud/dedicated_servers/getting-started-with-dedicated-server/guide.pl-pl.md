@@ -86,7 +86,7 @@ Na przykład, jeśli instalujesz system operacyjny GNU/Linux, możesz dodać do 
 
 Aby uzyskać szczegółowe informacje na temat generowania kluczy SSH, zapoznaj się z naszym [przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).     
 
-![konfiguracja SSH](images/reinstaling-your-server-05.png){.thumbnail}
+![konfiguracja SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
 Kliknij przycisk `Potwierdź`{.action}, aby rozpocząć instalację systemu operacyjnego na Twoim serwerze dedykowanym.
 
