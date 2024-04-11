@@ -2,6 +2,7 @@
 title: "Transférer un nom de domaine de home.pl vers OVHcloud"
 excerpt: "Découvrez les démarches spécifiques pour transférer un nom de domaine depuis home.pl vers OVHcloud"
 updated: 2024-04-11
+flag: hidden
 ---
 
 ## Objectif

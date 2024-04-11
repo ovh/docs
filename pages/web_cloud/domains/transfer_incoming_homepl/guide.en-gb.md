@@ -2,6 +2,7 @@
 title: "Transferring a home.pl domain name to OVHcloud"
 excerpt: "Find out how to transfer a home.pl domain name to OVHcloud"
 updated: 2024-04-11
+flag: hidden
 ---
 
 ## Objective
@@ -60,11 +61,11 @@ To transfer a home.pl domain name, you will need to follow a specific procedure.
 
 ### Unlock the domain name and retrieve the transfer code
 
-To unlock the domain name and retrieve the transfer code, follow the steps described in [home.pl dedicated documentation](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form){.external}.
+To unlock the domain name and retrieve the transfer code, follow the steps described in the [home.pl dedicated documentation](https://pomoc.home.pl/baza-wiedzy/request-for-authinfo-code-form){.external}.
 
 ### Initiate domain transfer to OVHcloud
 
-Once you have obtained the authorization code, you can proceed with the transfer of your domain name by following the steps in our guide “[Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)”.
+Once you have obtained the authorization code, you can proceed with the transfer of your domain name by following the steps in our guide [Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 
 ## Go further <a name="go-further"></a>
 
