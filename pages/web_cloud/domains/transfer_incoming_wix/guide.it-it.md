@@ -65,32 +65,9 @@ Il trasferimento di un dominio Wix richiede una procedura specifica.
 > Assicurati che il tuo attuale Registrar non chiuda altri servizi, ad esempio gli indirizzi email associati al dominio.
 >
 
-### Sblocca il dominio
+### Sblocca il dominio e recupera il codice di trasferimento
 
-> [!primary]
->
-> Per motivi di sicurezza, tutti i domini in Wix sono **bloccati di default** per evitare trasferimenti non autorizzati.
->
-> Pertanto, prima di trasferire il vostro nome di dominio da Wix, dovete prima **sbloccarlo**.
-> 
-
-Per i domini registrati in Wix, è possibile gestire lo stato di blocco del dominio aprendo la sezione `Domini`{.action} e selezionando il dominio da trasferire.
-
-Segui gli step descritti nella [documentazione dedicata di Wix](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
-
-### Ottenere il codice EPP o Auth
-
-Se vuoi **trasferire** il dominio da Wix verso un altro Registrar (come OVHcloud), il nuovo Registrar può richiedere un codice di autorizzazione (codice "EPP" o "Auth") per verificare che tu abbia il diritto di agire sul dominio.
-Per familiarizzare con la modifica del proprietario di un dominio, consulta questa [guida](pages/web_cloud/domains/trade_domain).
-
-> [!warning]
->
-> Alcuni TLD hanno un processo di trasferimento speciale. Questo vale in particolare per i domini **.uk** e **.eu**.
->
-> Per conoscere le procedure appropriate per il trasferimento del dominio, contatta Wix.
-> 
-
-Per ottenere un codice **EPP** o **Auth** in Wix, segui gli step descritti nella [documentazione dedicata di Wix](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+Per sbloccare il dominio e recuperare il codice di trasferimento, segui i passaggi descritti nella [documentazione dedicata di Wix](https://support.wix.com/it/article/trasferire-il-tuo-dominio-wix-fuori-da-wix-6225331){.external}.
 
 ### Avvia il trasferimento di dominio in OVHcloud
 
