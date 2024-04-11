@@ -64,32 +64,9 @@ Musisz również:
 > Upewnij się również, że dotychczasowy operator nie zamknie dodatkowych usług, takich jak na przykład adresy e-mail powiązane z Twoją domeną.
 >
 
-### Odblokowanie domeny
+### Odblokowanie domeny i pobranie kodu transferu
 
-> [!primary]
->
-> Ze względów bezpieczeństwa wszystkie domeny w Wix są **domyślnie zablokowane**, aby uniknąć nieautoryzowanego transferu.
->
-> Dlatego przed przeniesieniem nazwy domeny z Wixa należy ją najpierw **odblokować**.
-> 
-
-W przypadku domen zarejestrowanych w Wixze możesz zarządzać statusem blokady Twojej domeny otwierając sekcję `Domeny`{.action} i wybierając nazwę domeny, którą chcesz przenieść.
-
-Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej dla Wix](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
-
-### Uzyskaj kod EPP lub Auth
-
-Jeśli chcesz **przenieść** Twoją domenę z Wix do innego operatora (np. OVHcloud), nowy operator może poprosić o kod autoryzacyjny (kod "EPP" lub "Auth"), aby sprawdzić, czy masz uprawnienia do działania w związku z domeną.
-Aby zapoznać się ze zmianą właściciela domeny, zapoznaj się z tym [przewodnikiem](pages/web_cloud/domains/trade_domain).
-
-> [!warning]
->
-> Niektóre rozszerzenia domen mają specjalny proces transferu. Dotyczy to w szczególności domen **.uk** i **.eu**.
->
-> Zapraszamy do zapoznania się z informacjami o odpowiednich krokach podjętych przez OVH w celu transferu Twojej domeny.
-> 
-
-Aby uzyskać kod **EPP** lub **Auth** w usłudze Wix, wykonaj kroki opisane w [dokumentacji dedykowanej usłudze Wix](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+Aby odblokować domenę i uzyskać kod transferu, wykonaj kroki opisane w [dedykowanej dokumentacji Wix](https://support.wix.com/en/article/transferring-your-wix-domain-away-from-wix-2477749){.external}.
 
 ### Rozpocznij transfer domeny do OVHcloud
 
