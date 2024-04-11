@@ -1,7 +1,7 @@
 ---
-title: Creating and using SSH keys
-excerpt: Find out how to use SSH keys for a secure connection to your server
-updated: 2024-04-04
+title: How to create and use SSH keys
+excerpt: Find out how to create SSH key pairs on your local device and use them to establish secure connections to your server
+updated: 2023-11-22
 ---
 
 ## Objective
@@ -33,7 +33,7 @@ Be sure to consult our "Getting started" guides: <a name="getstarted"></a>
 
 We recommend reading the [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) as well.
 
-### Creating an SSH key
+### Creating an SSH key pair
 
 The following instructions cover two methods of using SSH keys:
 
@@ -216,7 +216,7 @@ ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Example:
     
 ```bash
-ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@203.0.113.100
 ```
 
 You will be prompted for the user's password. If the process was successful, you will receive a message similar to the one below.
@@ -268,7 +268,7 @@ ssh user@IP_ADDRESS
 Example:
     
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.100
 ```
 
 #### Adding additional public keys to your server
@@ -285,7 +285,7 @@ Save the file and exit the editor.
 
 You might want to use multiple SSH key pairs to connect to different remote hosts. (If you are using `PuTTY`, skip to [the corresponding section](#puttykeys) below.) 
 
-Since all keys should be placed in the folder `.ssh` on your local device, the file names have to be different. When you [create a new key pair](#createnewkey) and you are asked to provide a file name, enter a name of your choice. Match it to your the name of your server for example.
+Since all keys should be placed in the folder `.ssh` on your local device, the file names have to be different. When you [create a new key pair](#createnewkey) and you are asked to provide a file name, enter a name of your choice. Match it to the name of your server for example.
 
 ```console
 Generating public/private rsa key pair.
@@ -304,10 +304,10 @@ ssh -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Example:
     
 ```bash
-ssh -i ~/.ssh/myVPS_rsa ubuntu@169.254.10.250
+ssh -i ~/.ssh/myVPS_rsa ubuntu@203.0.113.100
 ```
 
-As noted in previous sections, the same instructions will work on a **Windows** client. Only replace `~/` with the file path of your **Windows** user folder, by default `C:\Users\WindowsUsername\`. (Example: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@169.254.10.250`)
+As noted in previous sections, the same instructions will work on a **Windows** client. Only replace `~/` with the file path of your **Windows** user folder, by default `C:\Users\WindowsUsername\`. (Example: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`)
 
 #### Using the "config" file
 
@@ -332,7 +332,7 @@ Open the file and add the following lines at the top:
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 ```
 
@@ -346,11 +346,11 @@ Only the server IP and the key file were specified in the previous example but m
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 
 Host dedicated_server
-    HostName 169.254.10.251
+    HostName 203.0.113.101
     User rocky
     Port 49160
     IdentityFile ~/.ssh/myserver_rsa
