@@ -28,7 +28,7 @@ Configurer un Service Endpoint se déroule en 3 étapes:
 2. Créer un sous-réseau et une plage d'adresse pour les services managés
 3. Créer le Service Endpoint
 
-Ces 3 étapes sont réalisables soit via l', soit via l'espace client et sont décrites en détails ci-dessous.
+Ces 3 étapes sont réalisables soit via l'API, soit via l'espace client et sont décrites en détails ci-dessous.
 
 ### Manager
 
