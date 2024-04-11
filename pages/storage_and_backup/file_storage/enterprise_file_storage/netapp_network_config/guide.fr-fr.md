@@ -22,6 +22,7 @@ Découvrez dans ce guide comment rattacher votre service Enterprise File Storage
 
 ## Overview
 
+![Schéma global](images/global_schema_20240410.png){.thumbnail}
 
 
 Enterprise File Storage est un service exposé via une adresse IP sur le vRack. L’attribution de l’IP de votre service se fait donc selon trois étapes :
