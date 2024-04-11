@@ -88,15 +88,15 @@ You can now follow these guides to create and manage your volumes, snapshots and
 
 ## Go further <a name="gofurther"></a>
 
-[Enterprise File Storage - Gestion depuis l'espace client OVHcloud ](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-netapp-control-panel?id=kb_article_view&sysparm_article=KB0046818)
+[Managing Enterprise File Storage from the OVHcloud Control Panel ](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-netapp-control-panel?id=kb_article_view&sysparm_article=KB0046818)
 
-[Enterprise File Storage - API Quickstart](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start)
+[Enterprise File Storage - API Quickstart](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-netapp-quick-start?id=kb_article_view&sysparm_article=KB0046851)
 
-[Enterprise File Storage - Gestion des volumes](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes)
+[Enterprise File Storage - Managing volumes](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-netapp-volumes?id=kb_article_view&sysparm_article=KB0046894)
 
-[Enterprise File Storage - Gestion des ACL de volume](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_acl)
+[Enterprise File Storage - Managing volume ACLs](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-netapp-volume-acl?id=kb_article_view&sysparm_article=KB0046862)
 
-[Enterprise File Storage - Gestion des snapshots de volumes](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)
+[Enterprise File Storage - Managing volume snapshots ](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-netapp-volume-snapshots?id=kb_article_view&sysparm_article=KB0046880)
 
 If you need training or technical support to implement our solutions, contact your sales representative or click [this link](https://www.ovhcloud.com/fr/professional-services/) to request a quote and a personalised analysis of your project from our Professional Services team experts.
 
