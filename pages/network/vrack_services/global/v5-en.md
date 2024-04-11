@@ -134,17 +134,12 @@ This first tab contains all the general information related to the selected vRac
 
 ---
 
-This tab, which contains no information when a Services vRack is created, lists the subnets created and available for the selected Services vRack.
+In the `Subnet`{.action} tab, which contains no information when a Services vRack is created, lists the subnets created and available for the selected Services vRack.
 
-![overview 01](images/08-VRS.png){.thumbnail}
-
----
-
-This tab, which does not contain any information when a Services vRack is created, contains the list of Services Endpoints created and available for the selected Services vRack.
+In the `Service Endpoints`{.action} tab, which does not contain any information when a Services vRack is created, contains the list of Services Endpoints created and available for the selected Services vRack.
 
 Note that in order to create a Service Endpoint, you must first go through the subnet creation phase.
 
-![overview 01](images/09-VRS.png){.thumbnail}
 
 
 
