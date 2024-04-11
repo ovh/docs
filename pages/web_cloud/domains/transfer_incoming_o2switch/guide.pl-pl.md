@@ -64,7 +64,9 @@ Musisz również:
 > Upewnij się również, że dotychczasowy operator nie zamknie dodatkowych usług, takich jak na przykład adresy e-mail powiązane z Twoją domeną.
 >
 
+### Odblokowanie domeny i pobranie kodu transferu
 
+Aby odblokować domenę i uzyskać kod transferu, wykonaj kroki opisane w [dedykowanej dokumentacji O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert){.external}.
 
 ### Rozpocznij transfer domeny do OVHcloud
 
