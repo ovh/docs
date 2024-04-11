@@ -20,14 +20,24 @@ Découvrez dans ce guide comment rattacher votre service Enterprise File Storage
 - Avoir un service Enterprise File Storage dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
+## Overview
+
+
+
+Enterprise File Storage est un service exposé via une adresse IP sur le vRack. L’attribution de l’IP de votre service se fait donc selon trois étapes :
+1. Sélection ou création d’un vRack
+2. Création et activation du vRack Services
+3. Création d’un sous-réseau
+
+
 ## En pratique <a name="instructions"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionez `Bare Metal Cloud`{.action} dans la barre de navigation supérieure. Ouvrez `Storage et Backup`{.action} puis `Enterprise File Storage`{.action} dans le menu de gauche et sélectionnez votre service dans la liste.
 
-![Informations générales](images/manage_enterprise01.png){.thumbnail}
+![Sans configuration réseau](images/01-EFS.png){.thumbnail}
 
 
-
+Par défaut, le service n’est pas rattaché à un réseau privé, il est dans un statut `Prêt à configurer`{.action}. Cette étape est nécessaire avant même de pouvoir créer vos volumes et/ou paramétrer vos ACLs. Cliquer sur le lien `Configurer les paramètres réseaux`{.action} pour configurer votre vRack Service Endpoint, et ainsi permettre à vos volumes d’être consommés depuis votre réseau privé.
 
 ## Aller plus loin <a name="gofurther"></a>
 
