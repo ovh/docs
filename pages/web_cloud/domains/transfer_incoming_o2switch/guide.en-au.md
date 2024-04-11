@@ -58,7 +58,9 @@ To transfer a O2Switch domain name, you will need to follow a specific procedure
 > Also check that your current domain name registrar will not close other services, such as the email addresses associated with your domain name.
 >
 
+### Unlock the domain name and retrieve the transfer code
 
+To unlock the domain name and retrieve the transfer code, follow the steps described in the [O2Switch dedicated documentation](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert){.external}.
 
 ### Initiate domain transfer to OVHcloud
 
