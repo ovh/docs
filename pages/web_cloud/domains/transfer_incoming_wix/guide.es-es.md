@@ -64,32 +64,9 @@ También debe:
 > Asimismo, asegúrese de que su actual agente registrador no vaya a cerrar otros servicios, como las direcciones de correo asociadas al dominio.
 >
 
-### Desbloquear el dominio
+### Desbloquear el dominio y obtener el código de transferencia
 
-> [!primary]
->
-> Por seguridad, todos los dominios de Wix están bloqueados **por defecto** para evitar transferencias no autorizadas.
->
-> Por lo tanto, antes de transferir su nombre de dominio desde Wix, primero debe **desbloquearlo**.
-> 
-
-Para los dominios registrados en Wix, puede gestionar el estado de bloqueo de su dominio abriendo la sección `Dominios`{.action} y seleccionando el nombre de dominio a transferir.
-
-Siga los pasos descritos en la [documentación dedicada de Wix](https://support.hostinger.com/es/articles/4791444-como-bloquear-y-desbloquear-un-dominio-para-transferirlo){.external}.
-
-### Obtener el código EPP o Auth
-
-Si desea **transferir** su dominio de Wix a otro agente registrador (como OVHcloud), el nuevo agente registrador puede solicitar un código de autorización (código "EPP" o "Auth") para comprobar que tiene derecho a actuar sobre el dominio.
-Para más información sobre el cambio de propietario de un dominio, consulte esta [guía](pages/web_cloud/domains/trade_domain).
-
-> [!warning]
->
-> Algunos TLD tienen un proceso de transferencia especial. Esto es válido especialmente para los dominios **.uk** y **.eu**.
->
-> Puede ponerse en contacto con Wix para conocer los pasos que debe seguir para transferir su dominio.
-> 
-
-Para obtener un código **EPP** o **Auth** en Wix, siga los pasos descritos en la [documentación dedicada de Wix](https://support.hostinger.com/es/articles/1583203-como-obtener-un-codigo-epp-o-auth-para-transferencia-de-dominio-en-hostinger){.external}.
+Para desbloquear el dominio y obtener el código de transferencia, siga los pasos descritos en la [documentación dedicada de Wix](https://support.wix.com/es/article/transferir-tu-dominio-wix-fuera-de-wix){.external}.
 
 ### Iniciar la transferencia del dominio a OVHcloud
 
