@@ -57,7 +57,7 @@ Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Pr
 
 > [!warning]
 >
-> Si vous n'avez pas le bouton `Protection contre le transfert` cela signifie que votre extension de nom de domaine ne nécessite pas de code de transfert. Vous pouvez alors lancer directement votre transfert.
+> Si le bouton `Protection contre le transfert` n'est pas présent, cela signifie que votre extension de nom de domaine ne nécessite pas de code de transfert. Vous pouvez alors lancer directement votre transfert.
 
 ![protection activée](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
