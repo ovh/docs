@@ -60,7 +60,7 @@ To transfer a Wix domain name, you will need to follow a specific procedure.
 
 ### Unlock the domain name and retrieve the transfer code
 
-To unlock the domain name and retrieve the transfer code, follow the steps described in [Wix dedicated documentation](https://support.wix.com/en/article/transferring-your-wix-domain-away-from-wix-2477749){.external}.
+To unlock the domain name and retrieve the transfer code, follow the steps described in the [Wix dedicated documentation](https://support.wix.com/en/article/transferring-your-wix-domain-away-from-wix-2477749){.external}.
 
 ### Initiate domain transfer to OVHcloud
 
