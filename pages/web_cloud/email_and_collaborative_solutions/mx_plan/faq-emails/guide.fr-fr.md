@@ -46,7 +46,7 @@ Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la
 
 ### Mon adresse e-mail est saturée, je n'ai plus d'espace. Que puis-je faire ?
 
-Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) », celui-ci vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
+Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Ce guide vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
 
 ### Je souhaite changer d'offre e-mail pour mon adresse, comment puis-je le faire tout en gardant son contenu ?
 
