@@ -193,12 +193,6 @@ Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fi
 
 Pour accéder au fichier de logs en mode rescue, veuillez suivre les instructions du [guide du mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-#### Windows
-
-Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (sudo). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**emote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
-
-Consultez également notre guide « [Configurer une nouvelle installation de Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config) ».
-
 <a name="reboot"></a>
 
 ### Redémarrage de votre serveur dédié
