@@ -76,7 +76,7 @@ To create a subnet, you need to enter 4 pieces of information:
     - Addresses in this range must not be used by other nodes connected to the vRack.
 - A VLAN on which you can expose this subnet. You can choose not to have a VLAN.
 
-![overview 01](images/10-VRS.png){.thumbnail}
+![overview 01](images/10-VRS-v2.png){.thumbnail}
 
 ---
 
