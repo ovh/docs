@@ -74,7 +74,7 @@ Click on `Create an Endpoint Service`{.action}. Now all you need to do is fill i
 - The type of service to be managed -> select the Enterprise File Storage service
 - The name of the managed service -> select the ID of your Enterprise File Storage service
 - The desired subnet -> select the freshly configured subnet
-- 
+  
 ![Enable vRack Services](images/16-VRS.png){.thumbnail}
 
 After a few moments, your new Service Endpoint will be configured and available!
