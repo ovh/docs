@@ -51,13 +51,13 @@ Vous n'êtes pas obligé d'un commander un à cette étape, vous pouvez le faire
 
 ---
 
-Ici, vous avez donc un état des lieux de votre de demande de création du vRack Service et pour ceux qui n'ont pas de vRack associé, il est possible de le faire.
+Une fois la demande d'activation de vRack Services effectué, vous êtes redirigé sur la liste des vRack Services. Il est possible d'associer un vRack à un vRack Service directement à partir de cette page.
 
 ![overview 01](images/05-VRS.png){.thumbnail}
 
 ---
 
-L'association à un vRack est assez simple car il suffit simplement de sélectionner le vRack souhaité dans la liste proposée ici.
+L'association à un vRack est simple, il suffit de sélectionner le vRack souhaité dans la liste proposée ici.
 
 ![overview 01](images/06-VRS.png){.thumbnail}
 
@@ -71,7 +71,9 @@ L'association à un vRack est assez simple car il suffit simplement de sélectio
 Afin de créer un sous-réseau il vous faudra renseigner 4 informations:
 - Son nom
 - Sa plage d'adresses
-- La plage d'adresses réservée aux services managés. Par conséquent, les adresses de cette plage ne doivent pas être utilisées par d'autres nœuds connectés au vRack. La plage d'adresse de service doit être un sous-ensemble de la plage d'addresses du sous-réseau, et sa taille doit être comprise entre /27 et /29.
+- La plage d'adresses réservée aux services managés.
+    - Cette plage doit être un sous-ensemble de la plage d'addresses du sous-réseau, et sa taille doit être comprise entre /27 et /29.
+    - Les adresses de cette plage ne doivent pas être utilisées par d'autres nœuds connectés au vRack.
 - Un VLAN sur lequel vous pouvez exposer ce sous-réseau. Vous pouvez très bien ne pas choisir de VLAN.
 
 ![overview 01](images/10-VRS.png){.thumbnail}
@@ -104,13 +106,13 @@ Les actions à mener sont très simple. En effet il suffit uniquement de renseig
 
 ---
 
-Et après un rde moment d'attente ...
+Une fois la création du Service Endpoint demandée, vous êtes redirigé vers la liste des Service Endpoint. Une bannière vous indique le statut de création de votre Service Endpoint.
 
 ![overview 01](images/17-VRS.png){.thumbnail}
 
 ---
 
-... votre nouveau Service Endpoint est configuré et disponible.
+Après quelques instants, votre nouveau Service Endpoint est configuré et disponible.
 
 ![overview 01](images/18-VRS.png){.thumbnail}
 
@@ -118,7 +120,7 @@ Et après un rde moment d'attente ...
 
 #### Liste de vos vRacks Services
 
-Dans cet écran vous avez la liste des différents vRack Services déclarés.
+Dans cet écran vous trouverez la liste des différents vRack Services déclarés.
 
 ![overview 01](images/01-VRS.png){.thumbnail}
 
@@ -126,19 +128,19 @@ Dans cet écran vous avez la liste des différents vRack Services déclarés.
 #### Vue d'ensemble
 
 
-Dans ce premier onglet, vous avez toutes les informations générales relatives au Service vRack sélectionné.
+Dans ce premier onglet, vous trouverez toutes les informations générales relatives au Service vRack sélectionné.
 
 ![overview 01](images/07-VRS.png){.thumbnail}
 
 ---
 
-Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous avez la liste des sous-réseaux créés et disponibles pour le Service vRack sélectionné.
+Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous trouverez la liste des sous-réseaux créés et disponibles pour le Service vRack sélectionné.
 
 ![overview 01](images/08-VRS.png){.thumbnail}
 
 ---
 
-Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous avez la liste des Services Endpoints créés et disponibles pour le Service vRack sélectionné.
+Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous trouverez la liste des Services Endpoints créés et disponibles pour le Service vRack sélectionné.
 
 Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'étape de création d'un sous-réseau.
 
