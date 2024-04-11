@@ -47,7 +47,7 @@ En effet vRack Services est un service régional. Vous devez donc choisir dans q
 Pour activer vRack Services vous devez avoir un vRack. Si vous n'en avez pas à cette étape il est possible d'en commander un. 
 Vous n'êtes pas obligé d'un commander un à cette étape, vous pouvez le faire plus tard et revenir sur le processus de création du vRack Service.
 
-![overview 01](images/04-VRS.png){.thumbnail}
+![overview 01](images/04-VRS-v2.png){.thumbnail}
 
 ---
 
