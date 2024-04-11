@@ -91,6 +91,8 @@ Vous pouvez désormais suivre les guides suivants pour créer et gérer vos volu
 
 ## Aller plus loin <a name="gofurther"></a>
 
+[Enterprise File Storage - Gestion depuis l'espace client OVHcloud ](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-netapp-control-panel?id=kb_article_view&sysparm_article=KB0046818)
+
 [Enterprise File Storage - API Quickstart](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start)
 
 [Enterprise File Storage - Gestion des volumes](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes)
