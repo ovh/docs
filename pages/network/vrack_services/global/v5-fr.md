@@ -128,19 +128,19 @@ Dans cet écran vous trouverez la liste des différents vRack Services déclaré
 #### Vue d'ensemble
 
 
-Dans ce premier onglet, vous trouverez toutes les informations générales relatives au Service vRack sélectionné.
+Dans ce premier onglet, vous trouverez toutes les informations générales relatives au vRack Services sélectionné.
 
 ![overview 01](images/07-VRS.png){.thumbnail}
 
 ---
 
-Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous trouverez la liste des sous-réseaux créés et disponibles pour le Service vRack sélectionné.
+Dans cet onglet, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des sous-réseaux créés et disponibles pour le vRack Services sélectionné.
 
 ![overview 01](images/08-VRS.png){.thumbnail}
 
 ---
 
-Dans cet onglet, qui ne contient aucune information lors de la création d'un Service vRack, vous trouverez la liste des Services Endpoints créés et disponibles pour le Service vRack sélectionné.
+Dans cet onglet, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des Services Endpoints créés et disponibles pour le vRack Services sélectionné.
 
 Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'étape de création d'un sous-réseau.
 
@@ -403,12 +403,12 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 ### Sous-réseau
 - La plage d'adresse du sous-réseau doit respecter le RFC 1918.
 - La longueur de la plage d'adresse du sous-réseau est comprise entre /16 et /24.
-- Chaque plage d'addresse de sous-réseau doit être unique pour un vRack Service donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
+- Chaque plage d'addresse de sous-réseau doit être unique pour un vRack Services donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
 - Il n'est pas possible de modifier la plage d'adresse de sous-réseau une fois créée.
 - La plage d'ID de VLAN valide est comprise entre 2 et 4094. La valeur "null" est autorisée (pas de VLAN / untagged).
-- Un maximum de 1 sous-réseau par service vRack peut être défini par le client.
+- Un maximum de 1 sous-réseau par vRack Services peut être défini par le client.
 - Un ID de VLAN ne peut être modifié une fois le sous-réseau créé.
-- Chaque VLAN ID doit être unique pour un vRack Service donné.
+- Chaque VLAN ID doit être unique pour un vRack Services donné.
 - La première et la dernière adresses IP du sous-réseau n'est pas utilisable et ne doit donc pas être configuré sur un des serveurs attaché au vRack associé au vRack Services.
 
 ### Plage d'addresse du service managé (Service Range)
