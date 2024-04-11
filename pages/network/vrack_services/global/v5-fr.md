@@ -59,7 +59,7 @@ Une fois la demande d'activation de vRack Services effectué, vous êtes redirig
 
 L'association à un vRack est simple, il suffit de sélectionner le vRack souhaité dans la liste proposée ici.
 
-![overview 01](images/06-VRS.png){.thumbnail}
+![overview 01](images/06-VRS-v2.png){.thumbnail}
 
 
 
