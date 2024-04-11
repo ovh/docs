@@ -12,7 +12,7 @@ updated: 2024-02-19
 
 Tryb awaryjny (*rescue*) to dostarczone przez OVHcloud narzędzie do uruchamiania Twojego serwera VPS w tymczasowym systemie operacyjnym. Po wykonaniu tych czynności można zalogować się do systemu w celu wykonania zadań diagnostycznych i rozwiązania problemów, na przykład:
 
-- Reset hasła użytkownika w celu odzyskania dostępu
+- [Reset hasła użytkownika w celu odzyskania dostępu](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnostyka problemów z siecią
 - Naprawa uszkodzonego systemu operacyjnego
 - Napraw nieprawidłowo skonfigurowany firewall programowy

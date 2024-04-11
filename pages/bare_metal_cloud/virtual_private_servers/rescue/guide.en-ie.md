@@ -8,7 +8,7 @@ updated: 2024-02-19
 
 Rescue mode is a tool provided by OVHcloud to boot your VPS into a temporary operating system. You can then access your system in order to run diagnostic tasks and resolve various issues, for example:
 
-- Resetting your user password to regain access
+- [Resetting your user password to regain access](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosing network problems
 - Repairing a broken operating system
 - Fixing a misconfigured software firewall 

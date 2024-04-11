@@ -12,7 +12,7 @@ updated: 2024-02-19
 
 O modo de segurança (*rescue*) é uma ferramenta fornecida pela OVHcloud para iniciar o seu VPS num sistema operativo temporário. Em seguida, você pode acessar seu sistema para executar tarefas de diagnóstico e resolver vários problemas, como por exemplo:
 
-- Redefinição da palavra-passe do utilizador para recuperar o acesso
+- [Redefinição da palavra-passe do utilizador para recuperar o acesso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnóstico de Problemas de Rede
 - Reparar um sistema operativo com falha
 - Reparar uma firewall de software mal configurada
