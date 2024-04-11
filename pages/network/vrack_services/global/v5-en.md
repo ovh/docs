@@ -1,6 +1,6 @@
 ## Introduction
 
-The vRack Services product allows you to benefit from network services on the private vRack network. By creating a Service Endpoint, you can expose an OVHcloud managed service with a private IP address on your vRack. This ensures that all communications with your managed service remain private and secure as they never leave your private network, which is isolated from other clients and the public network. It's also quick and easy to configure, either via the API or the customer dashboard. The first Managed Service to support Service Endpoint is [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/){.external}. Other OVHcloud Managed Services will support Service Endpoint in the future.
+The vRack Services product allows you to benefit from network services on the vRack private network. By creating a Service Endpoint, you can expose an OVHcloud managed service with a private IP address on your vRack. This ensures that all communications with your managed service remain private and secure as they never leave your private network, which is isolated from other clients and the public network. It's also quick and easy to configure, either via the API or the control panel The first managed service to support Service Endpoint is [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/){.external}. Other OVHcloud managed services will support Service Endpoint in the future.
 
 For more information on the vRack Private Network, please visit this [page](https://www.ovhcloud.com/fr/network/vrack/){.external}.
 
@@ -14,17 +14,17 @@ This article explains how to expose your managed service on the vRack using the 
 There are 3 main components to setting up this configuration:
 
 1.&nbsp;<ins>vRack Service</ins>   
-The vRack Services product is the main component of your configuration and must be activated in a selected region and associated with a vRack. The selected region must match the location of your Managed Service. The Managed Service will be available from the selected region and will be accessible to all servers connected to the vRack, regardless of the region.
+The vRack Services product is the main component of your configuration and must be activated in a selected region and associated with a vRack. The selected region must match the location of your managed service. The managed service will be available from the selected region and will be accessible to all servers connected to the vRack, regardless of the region.
    
 2.&nbsp;<ins>Subnet</ins>  
 The vRack Services product uses the concept of a subnet to define a range of private IP addresses that can be used to communicate with managed services. Generally speaking, subnets divide a larger network into segments, each with a specific range of IP addresses. This logical division allows for efficient management of resources and traffic flow within your network.
    
 3.&nbsp;<ins>Service Endpoint</ins>   
-The Service Endpoint is your access point to the Managed Service. It is associated with a subnet and has one or more automatically assigned private IP addresses.
+The Service Endpoint is your access point to the managed service. It is associated with a subnet and has one or more automatically assigned private IP addresses.
 
 ## Instructions
 There are 3 steps to configuring a Service Endpoint:
-1. Enable and configure vRack services
+1. Activate and configure vRack services
 2. Create a subnet and address range for the managed services
 3. Create the Service Endpoint
 
@@ -71,7 +71,7 @@ Connecting to a vRack is simple, just select the vRack you want from the list he
 To create a subnet, you need to enter 4 pieces of information:
 - Its name
 - Its address range
-- The address range reserved for managed services.
+- The service range : the address range reserved for managed services.
     - This range must be a subset of the subnet address range and its size must be between /27 and /29.
     - Addresses in this range must not be used by other nodes connected to the vRack.
 - A VLAN on which you can expose this subnet. You can choose not to have a VLAN.
@@ -239,7 +239,7 @@ The ID used in our example is `vrs-a8y-v9a-x5m-f4u`
 </details>
 
 <details>
-<summary><b>2. List all Managed Services that are eligible for the vRack Services in question.</b></summary>
+<summary><b>2. List all managed services that are eligible for the vRack Services in question.</b></summary>
 <blockquote>
 
 Here is the relevant section of the API page, accessible via this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource/-vrackServicesId-/eligibleManagedService){.external}
@@ -391,7 +391,7 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
 
 <br>
 
-## Contraintes et limites
+## Constraints and limits
 ### vRack Services
 - A vRack Services is attached to a single region.
 - Within a vRack, it is not possible to create several vRack Services in the same region.
@@ -412,15 +412,15 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
 - Each VLAN ID must be unique for a given vRack Service.
 - The first and last IP addresses of the subnet cannot be used and therefore must not be configured on any of the servers connected to the vRack associated with the vRack Services.
 
-### Managed Service Address Range (Service Range)
-- The address range of the managed service must be a subset of the subnet range.
+### Service Range
+- The range must be a subset of the subnet range.
 - The range size is between /27 and /29.
 - It is not possible to change the address range of the managed service once it has been created.
 
 ### Service Endpoint
 - To ensure subnet consistency, the Service Endpoint creation request will be rejected if the pool of remaining IPs on the subnet does not match the number of IP addresses required by the managed service.
 - Each Customer may create a maximum of 20 Service Endpoints.
-- Service Range IP addresses are allocated to one Managed Service at a time.
+- Service Range IP addresses are allocated to one managed service at a time.
 
 ## Go further
 
