@@ -88,7 +88,7 @@ If not, you will be prompted to enter the VLAN number.
 
 After a short setup time, you'll be able to view and, most importantly, manage this subnet by going to this tab.
 
-![overview 01](images/14-VRS.png){.thumbnail}
+![overview 01](images/14-VRS-v2.png){.thumbnail}
 
 
 
