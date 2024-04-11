@@ -40,7 +40,7 @@ La création d'un vRack Service se déroule en lui attribuant un nom et une rég
 
 En effet vRack Services est un service régional. Vous devez donc choisir dans quelle région vous comptez l'utiliser. Pour bénéficier du Service Endpoint, vous devez sélectionner la région correspondante à votre service managé OVHcloud.
 
-![overview 01](images/03-VRS.png){.thumbnail}
+![overview 01](images/03-VRS-v2.png){.thumbnail}
 
 ---
 
