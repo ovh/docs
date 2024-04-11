@@ -58,32 +58,9 @@ To transfer a Wix domain name, you will need to follow a specific procedure.
 > Also check that your current domain name registrar will not close other services, such as the email addresses associated with your domain name.
 >
 
-### Unlock the domain name
+### Unlock the domain name and retrieve the transfer code
 
-> [!primary]
->
-> For security, all domain names at Wix are **locked by default** to prevent unauthorized transfers.
->
-> Therefore, before transferring your domain name from Wix, you must first **unlock it**.
-> 
-
-For domain names registered with Wix, you can manage the locked status of your domain name by opening the `Domains`{.action} section and selecting the domain name to transfer.
-
-Follow the steps described in the [Wix dedicated documentation](https://support.hostinger.com/en/articles/4791444-how-to-lock-or-unlock-a-domain-at-hostinger){.external}.
-
-### Get the EPP or Auth code
-
-If you would like to **transfer** your domain name from Wix to another registrar (such as OVHcloud), the new registrar can request an authorization code (“EPP” or “Auth”) to verify that you have the right to act on the domain name.
-To familiarize yourself with changing the owner of a domain name, please read this [guide](pages/web_cloud/domains/trade_domain).
-
-> [!warning]
->
-> Some TLDs have a special transfer process. This is especially true for **.uk** and **.eu**.
->
-> We invite you to check with Wix the appropriate steps to transfer your domain name.
-> 
-
-To get a **EPP** or **Auth** code from Wix, follow the steps described in the [Wix dedicated documentation](https://support.hostinger.com/en/articles/1583203-how-to-get-the-epp-code-at-hostinger){.external}.
+To unlock the domain name and retrieve the transfer code, follow the steps described in [Wix dedicated documentation](https://support.wix.com/en/article/transferring-your-wix-domain-away-from-wix-2477749){.external}.
 
 ### Initiate domain transfer to OVHcloud
 
