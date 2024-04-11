@@ -1,7 +1,7 @@
 ---
 title: Scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy
 excerpt: Find out how to scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy
-updated: 2022-06-01
+updated: 2024-04-11
 ---
 
 ## Objective
@@ -60,7 +60,7 @@ deployment.apps/hello-world-deployment   1/1     1            1           35m
 
 ### Installing Trivy CLI
 
-You can [install Trivy](https://aquasecurity.github.io/trivy/latest/getting-started/installation/) on your computer from the binaries, the source, HomeBrew, Arch Linux, Ubuntu, etc. and even use it directly from a Docker image.
+You can [install Trivy](https://aquasecurity.github.io/trivy/latest/getting-started/installation/) CLI on your computer from the binaries, the source, HomeBrew, Arch Linux, Ubuntu, etc. and even use it directly from a Docker image.
 
 For this tutorial you will install it via HomeBrew:
 
@@ -127,31 +127,40 @@ You should have a behavior like this:
 
 ```console
 $ trivy version
-Version: 0.28.1
+Version: 0.50.1
 ```
 
-Trivy is correctly installed on your computer, you can now use it to scan your Kubernetes cluster and display a report with existing vulnerabilities and misconfigurations.
+Trivy CLI is correctly installed on your computer, you can now use it to scan your Kubernetes cluster and display a report with existing vulnerabilities and misconfigurations.
 
 ### Generate Trivy reports
 
 The `trivy` CLI contains several commands and subcommands, here is an extract:
 
-```
-COMMANDS:
-   image, i          scan an image
-   filesystem, fs    scan local filesystem for language-specific dependencies and config files
-   rootfs            scan rootfs
-   repository, repo  scan remote repository
-   server, s         server mode
-   config, conf      scan config files
-   plugin, p         manage plugins
-   kubernetes, k8s   scan kubernetes vulnerabilities and misconfigurations
-   sbom              generate SBOM for an artifact
-   version           print the version
-   help, h           Shows a list of commands or help for one command
+```bash
+Scanning Commands
+  aws         [EXPERIMENTAL] Scan AWS account
+  config      Scan config files for misconfigurations
+  filesystem  Scan local filesystem
+  image       Scan a container image
+  kubernetes  [EXPERIMENTAL] Scan kubernetes cluster
+  repository  Scan a repository
+  rootfs      Scan rootfs
+  sbom        Scan SBOM for vulnerabilities and licenses
+  vm          [EXPERIMENTAL] Scan a virtual machine image
+
+Management Commands
+  module      Manage modules
+  plugin      Manage plugins
+
+Utility Commands
+  completion  Generate the autocompletion script for the specified shell
+  convert     Convert Trivy JSON report into a different format
+  help        Help about any command
+  server      Server mode
+  version     Print the version
 ```
 
-As you can see, the `trivy` CLI contains a lot of commands and options, as you can scan vulnerabilities in container images, file systemes, Git repositories, configuration issues, etc. For this tutorial we will focus on the `k8s` command.
+As you can see, the `trivy` CLI contains a lot of commands and options, as you can scan vulnerabilities in container images, file systemes, Git repositories, configuration issues, etc. For this tutorial we will focus on the `k8s` command (it's an alias for the `kubernetes` command).
 
 When you execute `trivy k8s`, the command works like the `kubectl` command. So when you execute the CLI, it searches your Kubernetes cluster configuration.
 
@@ -160,23 +169,44 @@ First, you will ask Trivy to generate a summary report only on the `default` nam
 To generate this report, simply execute the CLI:
 
 ```bash
-trivy k8s -n default --report summary
+trivy k8s -n default --report summary all
 ```
 
 This command runs tests on all nodes in the `default` namespace and displays a summary report:
 
 ```console
-$ trivy k8s -n default --report summary
+$ trivy k8s -n default --report summary all
 5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 2 p/s
 
-Summary Report for kubernetes-admin@my-cilium-cluster
+Summary Report for kubernetes-admin@my-kube
+
+
+Workload Assessment
 ┌───────────┬───────────────────────────────────┬────────────────────┬───────────────────┬───────────────────┐
 │ Namespace │             Resource              │  Vulnerabilities   │ Misconfigurations │      Secrets      │
 │           │                                   ├───┬───┬────┬───┬───┼───┬───┬───┬───┬───┼───┬───┬───┬───┬───┤
 │           │                                   │ C │ H │ M  │ L │ U │ C │ H │ M │ L │ U │ C │ H │ M │ L │ U │
 ├───────────┼───────────────────────────────────┼───┼───┼────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
-│ default   │ Deployment/hello-world-deployment │ 5 │ 9 │ 18 │ 2 │   │   │   │ 3 │ 8 │   │   │   │   │   │   │
+│ default   │ Deployment/hello-world-deployment │ 5 │ 7 │ 20 │ 2 │   │   │ 2 │ 4 │ 9 │   │   │   │   │   │   │
 └───────────┴───────────────────────────────────┴───┴───┴────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
+Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
+
+
+Infra Assessment
+┌───────────┬──────────┬───────────────────┬───────────────────┬───────────────────┐
+│ Namespace │ Resource │  Vulnerabilities  │ Misconfigurations │      Secrets      │
+│           │          ├───┬───┬───┬───┬───┼───┬───┬───┬───┬───┼───┬───┬───┬───┬───┤
+│           │          │ C │ H │ M │ L │ U │ C │ H │ M │ L │ U │ C │ H │ M │ L │ U │
+└───────────┴──────────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
+Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
+
+
+RBAC Assessment
+┌───────────┬──────────┬───────────────────┐
+│ Namespace │ Resource │  RBAC Assessment  │
+│           │          ├───┬───┬───┬───┬───┤
+│           │          │ C │ H │ M │ L │ U │
+└───────────┴──────────┴───┴───┴───┴───┴───┘
 Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
 ```
 
@@ -187,54 +217,65 @@ We will take a closer look at theses vulnerabilities and misconfigurations. For 
 To generate this full report, simply execute the CLI:
 
 ```bash
-trivy k8s -n default --report all
+trivy k8s -n default --report=all all
 ```
 
 You should obtain a report and a list of vulnerabilities and misconfigurations like this:
 
 ```console
-$ trivy k8s -n default --report all
+$ trivy k8s -n default --report=all all
+
 5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 2 p/s
 
-ovhplatform/hello (alpine 3.8.1)
+namespace: default, deployment: hello-world-deployment
 
-Total: 34 (UNKNOWN: 0, LOW: 2, MEDIUM: 18, HIGH: 9, CRITICAL: 5)
+Total: 34 (UNKNOWN: 0, LOW: 2, MEDIUM: 20, HIGH: 7, CRITICAL: 5)
 
-┌───────────────┬────────────────┬──────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
-│    Library    │ Vulnerability  │ Severity │ Installed Version │ Fixed Version │                            Title                             │
-├───────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libbz2        │ CVE-2019-12900 │ CRITICAL │ 1.0.6-r6          │ 1.0.6-r7      │ bzip2: out-of-bounds write in function BZ2_decompress        │
-│               │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-12900                   │
-├───────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libcrypto1.0  │ CVE-2018-0734  │ MEDIUM   │ 1.0.2p-r0         │ 1.0.2q-r0     │ openssl: timing side channel attack in the DSA signature     │
-│               │                │          │                   │               │ algorithm                                                    │
-│               │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2018-0734                    │
-│               ├────────────────┤          │                   │               ├──────────────────────────────────────────────────────────────┤
-│               │ CVE-2018-5407  │          │                   │               │ openssl: Side-channel vulnerability on SMT/Hyper-Threading   │
-│               │                │          │                   │               │ architectures (PortSmash)                                    │
-│               │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2018-5407                    │
-├───────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libcrypto1.0  │ CVE-2019-1547  │ MEDIUM   │ 1.0.2p-r0         │ 1.0.2t-r0     │ openssl: side-channel weak encryption vulnerability          │
-│               │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-1547                    │
-├───────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libcrypto1.0  │ CVE-2019-1551  │ MEDIUM   │ 1.0.2p-r0         │ 1.0.2u-r0     │ openssl: Integer overflow in RSAZ modular exponentiation on  │
-│               │                │          │                   │               │ x86_64                                                       │
-│               │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-1551                    │
-├───────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+┌───────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
+│    Library    │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                             │
+├───────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libbz2        │ CVE-2019-12900 │ CRITICAL │ fixed  │ 1.0.6-r6          │ 1.0.6-r7      │ bzip2: out-of-bounds write in function BZ2_decompress        │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2019-12900                   │
+├───────────────┼────────────────┼──────────┤        ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libcrypto1.0  │ CVE-2018-0734  │ MEDIUM   │        │ 1.0.2p-r0         │ 1.0.2q-r0     │ openssl: timing side channel attack in the DSA signature     │
+│               │                │          │        │                   │               │ algorithm                                                    │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2018-0734                    │
+│               ├────────────────┤          │        │                   │               ├──────────────────────────────────────────────────────────────┤
+│               │ CVE-2018-5407  │          │        │                   │               │ openssl: Side-channel vulnerability on SMT/Hyper-Threading   │
+│               │                │          │        │                   │               │ architectures (PortSmash)                                    │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2018-5407                    │
+│               ├────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2019-1547  │          │        │                   │ 1.0.2t-r0     │ openssl: side-channel weak encryption vulnerability          │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2019-1547                    │
+│               ├────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2019-1551  │          │        │                   │ 1.0.2u-r0     │ openssl: Integer overflow in RSAZ modular exponentiation on  │
+│               │                │          │        │                   │               │ x86_64                                                       │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2019-1551                    │
+│               ├────────────────┤          │        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2019-1559  │          │        │                   │ 1.0.2r-r0     │ openssl: 0-byte record padding oracle                        │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2019-1559                    │
+│               ├────────────────┼──────────┤        │                   ├───────────────┼──────────────────────────────────────────────────────────────┤
+│               │ CVE-2019-1563  │ LOW      │        │                   │ 1.0.2t-r0     │ openssl: information disclosure in PKCS7_dataDecode and      │
+│               │                │          │        │                   │               │ CMS_decrypt_set1_pkey                                        │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2019-1563                    │
+├───────────────┼────────────────┼──────────┤        ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 ...
-musl          │ CVE-2019-14697 │ CRITICAL │ 1.1.19-r10        │ 1.1.19-r11    │ musl libc through 1.1.23 has an x87 floating-point stack     │
-│               │                │          │                   │               │ adjustment im ......                                         │
-│               │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-14697                   │
-├───────────────┤                │          │                   │               │                                                              │
-│ musl-utils    │                │          │                   │               │                                                              │
-│               │                │          │                   │               │                                                              │
-│               │                │          │                   │               │                                                              │
-└───────────────┴────────────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+...
+├───────────────┼────────────────┼──────────┤        ├───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ musl          │ CVE-2019-14697 │ CRITICAL │        │ 1.1.19-r10        │ 1.1.19-r11    │ musl libc through 1.1.23 has an x87 floating-point stack     │
+│               │                │          │        │                   │               │ adjustment im ......                                         │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2019-14697                   │
+├───────────────┤                │          │        │                   │               │                                                              │
+│ musl-utils    │                │          │        │                   │               │                                                              │
+│               │                │          │        │                   │               │                                                              │
+│               │                │          │        │                   │               │                                                              │
+└───────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
 
-default-Deployment-hello-world-deployment-2137444644.yaml (kubernetes)
 
-Tests: 31 (SUCCESSES: 20, FAILURES: 11, EXCEPTIONS: 0)
-Failures: 11 (UNKNOWN: 0, LOW: 8, MEDIUM: 3, HIGH: 0, CRITICAL: 0)
+namespace: default, deployment: hello-world-deployment (kubernetes)
+
+Tests: 135 (SUCCESSES: 120, FAILURES: 15, EXCEPTIONS: 0)
+Failures: 15 (UNKNOWN: 0, LOW: 9, MEDIUM: 4, HIGH: 2, CRITICAL: 0)
 
 MEDIUM: Container 'hello-world' of Deployment 'hello-world-deployment' should set 'securityContext.allowPrivilegeEscalation' to false
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
@@ -242,55 +283,39 @@ A program inside the container can elevate its own privileges and run as root, w
 
 See https://avd.aquasec.com/misconfig/ksv001
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- default-Deployment-hello-world-deployment-2137444644.yaml:120-128
+ namespace: default, deployment: hello-world-deployment:20-23
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 120 ┌                 - image: ovhplatform/hello
- 121 │                   imagePullPolicy: Always
- 122 │                   name: hello-world
- 123 │                   ports:
- 124 │                     - containerPort: 80
- 125 │                       protocol: TCP
- 126 │                   resources: {}
- 127 │                   terminationMessagePath: /dev/termination-log
- 128 └                   terminationMessagePolicy: File
+  20 ┌                 - image: ovhplatform/hello
+  21 │                   name: hello-world
+  22 │                   ports:
+  23 └                     - containerPort: 80
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ...
-LOW: Container 'hello-world' of Deployment 'hello-world-deployment' should set 'securityContext.runAsGroup' > 10000
+...
+HIGH: deployment hello-world-deployment in default namespace should not set spec.template.spec.containers.ports.containerPort to less than 1024
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-Force the container to run with group ID > 10000 to avoid conflicts with the host’s user table.
+The ports which are lower than 1024 receive and transmit various sensitive and privileged data. Allowing containers to use them can bring serious implications.
 
-See https://avd.aquasec.com/misconfig/ksv021
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- default-Deployment-hello-world-deployment-2137444644.yaml:120-128
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 120 ┌                 - image: ovhplatform/hello
- 121 │                   imagePullPolicy: Always
- 122 │                   name: hello-world
- 123 │                   ports:
- 124 │                     - containerPort: 80
- 125 │                       protocol: TCP
- 126 │                   resources: {}
- 127 │                   terminationMessagePath: /dev/termination-log
- 128 └                   terminationMessagePolicy: File
+See https://avd.aquasec.com/misconfig/ksv117
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 
 The report can be very big. So, in order to take a look at our vulnerabilities and misconfigurations in a new report, you can also display only URGENT vulnerabilities:
 
 ```console
-$ trivy k8s -n default --report all --severity MEDIUM,HIGH,CRITICAL
-5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 3 p/s
+$ trivy k8s --namespace default --report=all all --severity MEDIUM,HIGH,CRITICAL
+5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 2 p/s
 
-ovhplatform/hello (alpine 3.8.1)
+namespace: default, deployment: hello-world-deployment
 
-Total: 32 (MEDIUM: 18, HIGH: 9, CRITICAL: 5)
+Total: 32 (MEDIUM: 20, HIGH: 7, CRITICAL: 5)
 
 ...
 
-default-Deployment-hello-world-deployment-2908255124.yaml (kubernetes)
+namespace: default, deployment: hello-world-deployment (kubernetes)
 
-Tests: 20 (SUCCESSES: 17, FAILURES: 3, EXCEPTIONS: 0)
-Failures: 3 (MEDIUM: 3, HIGH: 0, CRITICAL: 0)
+Tests: 75 (SUCCESSES: 69, FAILURES: 6, EXCEPTIONS: 0)
+Failures: 6 (MEDIUM: 4, HIGH: 2, CRITICAL: 0)
 
 MEDIUM: Container 'hello-world' of Deployment 'hello-world-deployment' should set 'securityContext.allowPrivilegeEscalation' to false
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
@@ -298,60 +323,74 @@ A program inside the container can elevate its own privileges and run as root, w
 
 See https://avd.aquasec.com/misconfig/ksv001
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- default-Deployment-hello-world-deployment-2908255124.yaml:120-128
+ namespace: default, deployment: hello-world-deployment:20-23
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 120 ┌                 - image: ovhplatform/hello
- 121 │                   imagePullPolicy: Always
- 122 │                   name: hello-world
- 123 │                   ports:
- 124 │                     - containerPort: 80
- 125 │                       protocol: TCP
- 126 │                   resources: {}
- 127 │                   terminationMessagePath: /dev/termination-log
- 128 └                   terminationMessagePolicy: File
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-MEDIUM: Container 'hello-world' of Deployment 'hello-world-deployment' should set 'securityContext.runAsNonRoot' to true
-════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.
-
-See https://avd.aquasec.com/misconfig/ksv012
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- default-Deployment-hello-world-deployment-2908255124.yaml:120-128
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
- 120 ┌                 - image: ovhplatform/hello
- 121 │                   imagePullPolicy: Always
- 122 │                   name: hello-world
- 123 │                   ports:
- 124 │                     - containerPort: 80
- 125 │                       protocol: TCP
- 126 │                   resources: {}
- 127 │                   terminationMessagePath: /dev/termination-log
- 128 └                   terminationMessagePolicy: File
+  20 ┌                 - image: ovhplatform/hello
+  21 │                   name: hello-world
+  22 │                   ports:
+  23 └                     - containerPort: 80
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ...
+...
+
+
+MEDIUM: container "hello-world" of deployment "hello-world-deployment" in "default" namespace should specify a seccomp profile
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+A program inside the container can bypass Seccomp protection policies.
+
+See https://avd.aquasec.com/misconfig/ksv104
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+HIGH: deployment hello-world-deployment in default namespace should not set spec.template.spec.containers.ports.containerPort to less than 1024
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+The ports which are lower than 1024 receive and transmit various sensitive and privileged data. Allowing containers to use them can bring serious implications.
+
+See https://avd.aquasec.com/misconfig/ksv117
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 
 And, finally, for this part, you can also scan only a specific resource, only a specific deployment for example:
 
 ```
-trivy k8s -n default --report summary deployment/hello-world-deployment
+trivy k8s --namespace default --report=summary deployments/hello-world-deployment
 ```
 
 You should obtain a result like this:
 
 ```console
-$ trivy k8s -n default --report summary deployment/hello-world-deployment
-1 / 1 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 1 p/s
+$ trivy k8s --namespace default --report=summary deployments/hello-world-deployment
+1 / 1 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 0 p/s
 
-Summary Report for kubernetes-admin@my-cilium-cluster
+Summary Report for kubernetes-admin@my-kube
+
+
+Workload Assessment
 ┌───────────┬───────────────────────────────────┬────────────────────┬───────────────────┬───────────────────┐
 │ Namespace │             Resource              │  Vulnerabilities   │ Misconfigurations │      Secrets      │
 │           │                                   ├───┬───┬────┬───┬───┼───┬───┬───┬───┬───┼───┬───┬───┬───┬───┤
 │           │                                   │ C │ H │ M  │ L │ U │ C │ H │ M │ L │ U │ C │ H │ M │ L │ U │
 ├───────────┼───────────────────────────────────┼───┼───┼────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
-│ default   │ Deployment/hello-world-deployment │ 5 │ 9 │ 18 │ 2 │   │   │   │ 3 │ 8 │   │   │   │   │   │   │
+│ default   │ Deployment/hello-world-deployment │ 5 │ 7 │ 20 │ 2 │   │   │ 2 │ 4 │ 9 │   │   │   │   │   │   │
 └───────────┴───────────────────────────────────┴───┴───┴────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
+Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
+
+
+Infra Assessment
+┌───────────┬──────────┬───────────────────┬───────────────────┬───────────────────┐
+│ Namespace │ Resource │  Vulnerabilities  │ Misconfigurations │      Secrets      │
+│           │          ├───┬───┬───┬───┬───┼───┬───┬───┬───┬───┼───┬───┬───┬───┬───┤
+│           │          │ C │ H │ M │ L │ U │ C │ H │ M │ L │ U │ C │ H │ M │ L │ U │
+└───────────┴──────────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
+Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
+
+
+RBAC Assessment
+┌───────────┬──────────┬───────────────────┐
+│ Namespace │ Resource │  RBAC Assessment  │
+│           │          ├───┬───┬───┬───┬───┤
+│           │          │ C │ H │ M │ L │ U │
+└───────────┴──────────┴───┴───┴───┴───┴───┘
 Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
 ```
 
@@ -360,18 +399,18 @@ Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
 You can generate and save a report, for all your namespaces, with the `-o` command
 
 ```bash
-$ trivy k8s -n default --report summary -o trivy-report.txt
+trivy k8s -A --report=summary all -o trivy-report.txt
 ```
 
 This will save the report in your working directory:
 
 ```console
-$ trivy k8s -n default --report summary -o trivy-report.txt
+$ trivy k8s -A --report=summary all -o trivy-report.txt
 
-1 / 5 [------------------------------------>__________________________________________________________________________________________________________________________________________________] 20.00% ? p/s5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 2 p/s
+94 / 94 [------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 3 p/s
 
-$ ll trivy-report.txt
--rw-r--r--  1 aurelievache  staff   1,8K 30 mai 17:00 trivy-report.txt
+$ ls -l trivy-report.txt
+-rw-r--r--  1 avache  staff  7933 11 avr 14:02 trivy-report.txt
 ```
 
 ### Installing Trivy Kubernetes Operator
@@ -406,8 +445,7 @@ Install the latest version of Trivy with `helm install` command:
 helm install trivy-operator aqua/trivy-operator \
    --namespace trivy-system \
    --create-namespace \
-   --set="trivy.ignoreUnfixed=true" \
-   --version v0.0.3
+   --set="trivy.ignoreUnfixed=true"
 ```
 
 This command will install the latest version of the Trivy Kubernetes Operator, create a new `trivy-system` namespace and configure it to scan all namespaces, except kube-system and trivy-system:
@@ -416,10 +454,9 @@ This command will install the latest version of the Trivy Kubernetes Operator, c
 $ helm install trivy-operator aqua/trivy-operator \
    --namespace trivy-system \
    --create-namespace \
-   --set="trivy.ignoreUnfixed=true" \
-   --version v0.0.3
+   --set="trivy.ignoreUnfixed=true"
 NAME: trivy-operator
-LAST DEPLOYED: Tue May 31 09:07:04 2022
+LAST DEPLOYED: Thu Apr 11 14:03:59 2024
 NAMESPACE: trivy-system
 STATUS: deployed
 REVISION: 1
@@ -437,10 +474,6 @@ Inspect created ConfigAuditReports by:
 
     kubectl get configauditreports --all-namespaces -o wide
 
-Inspect created CISKubeBenchReports by:
-
-    kubectl get ciskubebenchreports -o wide
-
 Inspect the work log of trivy-operator by:
 
     kubectl logs -n trivy-system deployment/trivy-operator
@@ -449,14 +482,14 @@ Inspect the work log of trivy-operator by:
 You can check if the Trivy pod is correctly running:
 
 ```console
-$ kubectl get po -n trivy-system
+$ kubectl get pod -n trivy-system
 NAME                              READY   STATUS    RESTARTS   AGE
-trivy-operator-7bdc55f8d6-h6kvp   1/1     Running   0          49s
+trivy-operator-84b86599cb-tzmg4   1/1     Running   0          89s
 ```
 
 Now you can inspect `VulnerabilityReports` for all your namespaces, with the following command:
 
-```
+```bash
 kubectl get vulnerabilityreports --all-namespaces -o wide
 ```
 
@@ -464,8 +497,10 @@ You should obtain a result like this:
 
 ```console
 $ kubectl get vulnerabilityreports --all-namespaces -o wide
-NAMESPACE   NAME                                                       REPOSITORY          TAG      SCANNER   AGE   CRITICAL   HIGH   MEDIUM   LOW   UNKNOWN
-default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     58s   5          9      18       2     0
+NAMESPACE       NAME                                                          REPOSITORY                               TAG                                        SCANNER   AGE   CRITICAL   HIGH   MEDIUM   LOW   UNKNOWN
+default         replicaset-hello-world-deployment-c7584d4f5-hello-world       ovhplatform/hello                        latest                                     Trivy     34s   5          7      20       2     0
+...
+...
 ```
 
 You can check your deployments for several critical, high, medium and low vulnerabilities.
@@ -479,9 +514,12 @@ kubectl get configauditreports --all-namespaces -o wide
 You should obtain a result like this:
 
 ```console
-$ kubectl get vuln --all-namespaces -o wide
-NAMESPACE   NAME                                                       REPOSITORY          TAG      SCANNER   AGE   CRITICAL   HIGH   MEDIUM   LOW   UNKNOWN
-default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     13m   5          9      18       2     0
+$ kubectl get configauditreports --all-namespaces -o wide
+NAMESPACE       NAME                                                SCANNER   AGE     CRITICAL   HIGH   MEDIUM   LOW
+default         replicaset-hello-world-deployment-c7584d4f5         Trivy     2m56s   0          3      4        9
+default         service-hello-world                                 Trivy     3m50s   0          0      0        0
+default         service-kubernetes                                  Trivy     3m44s   0          0      0        0
+...
 ```
 
 Thanks to the Kubernetes Operator, it's possible to integrate Trivy into your CI/CD pipeline to check cluster vulnerabilities and misconfiguration issues.
@@ -491,4 +529,4 @@ It thus allows you to automate a way to access reports, export the metrics from 
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/>.
+- Join our community of users on <https://community.ovh.com/en/>.
