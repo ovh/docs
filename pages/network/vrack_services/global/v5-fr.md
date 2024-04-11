@@ -134,17 +134,13 @@ Dans ce premier onglet, vous trouverez toutes les informations générales relat
 
 ---
 
-Dans cet onglet, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des sous-réseaux créés et disponibles pour le vRack Services sélectionné.
+Dans l'onglet `Sous-réseau`{.action}, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des sous-réseaux créés et disponibles pour le vRack Services sélectionné.
 
-![overview 01](images/08-VRS.png){.thumbnail}
 
----
-
-Dans cet onglet, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des Services Endpoints créés et disponibles pour le vRack Services sélectionné.
+Dans l'onglet `Service Endpoints`{.action}, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des Services Endpoints créés et disponibles pour le vRack Services sélectionné.
 
 Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'étape de création d'un sous-réseau.
 
-![overview 01](images/09-VRS.png){.thumbnail}
 
 
 
