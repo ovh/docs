@@ -25,7 +25,7 @@ This is "All you need to know about the Logstash Collector on the Logs Data Plat
 
 ### What is Logstash
 
-Logstash is a data processing pipeline that allows you to receive information from several sources, transforming them if necessary before sending to a variety of softwares. In the configuration file there are three main parts to configure:
+Logstash is a data processing pipeline that allows you to receive information from several sources, transforming it if necessary before sending it to a variety of softwares. In the configuration file there are three main parts to configure:
 
 - The Input part: details where your logs come from. For instance, some inputs may wait for logs and in some cases inputs are able to fetch them from a database.
 - The Filter part: details how Logstash should parse and transform your logs messages.
