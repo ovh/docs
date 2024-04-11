@@ -1,6 +1,6 @@
 ---
 title: Twórz i używaj kluczy SSH
-excerpt: Dowiedz się, jak utworzyć klucz SSH w celu nawiązania bezpiecznego połączenia z serwerem
+excerpt: Dowiedz się, jak utworzyć parę kluczy SSH na Twoim komputerze i wykorzystać je do nawiązania bezpiecznego połączenia z serwerem
 updated: 2023-11-22
 ---
 
@@ -37,6 +37,8 @@ Sprawdź przewodniki "Pierwsze kroki": <a name="getstarted"></a>
 
 Zapoznaj się również z przewodnikiem dotyczącym wprowadzenia do [protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
+### Tworzenie pary kluczy SSH
+
 Poniższe instrukcje dotyczą dwóch metod użycia kluczy SSH:
 
 - [Tworzenie pary kluczy **Open SSH** i łączenie się z serwerem za pomocą klienta SSH z linii poleceń](#openssh)
@@ -46,7 +48,7 @@ Możesz używać obu metod jednocześnie, ale należy pamiętać, że `PuTTY` pr
 
 Oznacza to, że klucz prywatny utworzony przy użyciu klienta SSH z linii poleceń należy najpierw przekonwertować na [format `PuTTY` i odwrotnie](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt){.external}.
 
-### Tworzenie pary kluczy SSH z linii poleceń <a name="openssh"></a>
+#### Tworzenie pary kluczy SSH z linii poleceń <a name="openssh"></a>
 
 Na komputerze **Mac** lub urządzeniu, na którym zainstalowany jest system operacyjny **Linux**, otwórz aplikację wiersza poleceń (`Terminal`).
 
@@ -161,7 +163,7 @@ Skopiuj cały ciąg klucza do schowka, aby go [dodać do serwera](#addserverkey)
 > Podczas pracy w wierszu poleceń **Windows** kliknij prawym przyciskiem myszy, aby **wkleić** zawartość Schowka w oknie wiersza polecenia. Aby **skopiować** ciąg z okna wiersza polecenia, podświetl go myszą, a następnie naciśnij klawisz `Enter`. Funkcje te można również odnaleźć po kliknięciu prawym przyciskiem myszy na pasku menu.
 >
 
-### Utwórz parę kluczy SSH za pomocą polecenia PuTTY <a name="useputty"></a>
+#### Utwórz parę kluczy SSH za pomocą polecenia PuTTY <a name="useputty"></a>
 
 [PuTTY](https://putty.org/){.external} to oprogramowanie klienckie SSH open source z graficznym interfejsem użytkownika, dostępne dla **Windows** i innych systemów operacyjnych. Jest dostępne dodatkowe oprogramowanie do tworzenia kluczy SSH: `PuTTY Key Generator` (`PuTTYgen`).
 
@@ -220,7 +222,7 @@ ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Przykład:
 
 ```bash
-ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@203.0.113.100
 ```
 
 Zostanie wyświetlony monit o podanie hasła użytkownika, który otrzyma taką wiadomość, jak poniżej.
@@ -272,7 +274,7 @@ ssh user@IP_ADDRESS
 Na przykład:
     
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.100
 ```
 
 ### Dodawanie dodatkowych kluczy publicznych do serwera
@@ -308,10 +310,10 @@ ssh -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Na przykład:
 
 ```bash
-ssh -i ~/.ssh/myVPS_rsa ubuntu@169.254.10.250
+ssh -i ~/.ssh/myVPS_rsa ubuntu@203.0.113.100
 ```
 
-Jak zostało to przedstawione w poprzednich sekcjach, te same instrukcje będą działać na kliencie **Windows**. Zamień tylko `~/` na ścieżkę folderu użytkownika **Windows**, domyślnie `C:\Users\WindowsUsername\`. Na przykład: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@169.254.10.250`.
+Jak zostało to przedstawione w poprzednich sekcjach, te same instrukcje będą działać na kliencie **Windows**. Zamień tylko `~/` na ścieżkę folderu użytkownika **Windows**, domyślnie `C:\Users\WindowsUsername\`. Na przykład: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`.
 
 ### Użycie pliku "config"
 
@@ -336,7 +338,7 @@ Otwórz plik i dodaj następujące wiersze u góry:
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 ```
 
@@ -350,11 +352,11 @@ W poprzednim przykładzie określono tylko adres IP serwera i plik klucza, ale m
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 
 Host dedicated_server
-    HostName 169.254.10.251
+    HostName 203.0.113.101
     User rocky
     Port 49160
     IdentityFile ~/.ssh/myserver_rsa
