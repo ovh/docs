@@ -1,148 +1,148 @@
 ## Introduction
 
-Le produit vRack Services vous permet de bénéficier de services réseau sur le réseau privé vRack. En créant un Service Endpoint, vous pouvez exposer, avec une adresse IP privée, un service managé par OVHcloud sur votre vRack. De cette façon, vous vous assurez que toutes les communications avec votre service managé restent privées et sécurisées, car elles ne quittent pas votre réseau privé, qui est isolé des autres clients et du réseau public. Il est également simple et rapide à configurer, soit via l'API, soit via l'espace client. Le premier service managé qui prend en charge Service Endpoint est [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/){.external}. D'autres services managés OVHcloud prendront en charge le Service Endpoint à l’avenir.
+The vRack Services product allows you to benefit from network services on the private vRack network. By creating a Service Endpoint, you can expose an OVHcloud managed service with a private IP address on your vRack. This ensures that all communications with your managed service remain private and secure as they never leave your private network, which is isolated from other clients and the public network. It's also quick and easy to configure, either via the API or the customer dashboard. The first Managed Service to support Service Endpoint is [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/){.external}. Other OVHcloud Managed Services will support Service Endpoint in the future.
 
-Pour plus d'informations sur le réseau privé vRack veuillez consulter cette [page](https://www.ovhcloud.com/fr/network/vrack/){.external}.
+For more information on the vRack Private Network, please visit this [page](https://www.ovhcloud.com/fr/network/vrack/){.external}.
 
 ![global schema](images/global_schema_20240410.png){.thumbnail}
 
-## Objectif
+## Objective
 
-Cet article vous explique comment exposer votre service managé sur le vRack avec le produit vRack Services, en utilisant la fonctionnalité Service Endpoint.
+This article explains how to expose your managed service on the vRack using the vRack Services product, using the Service Endpoint functionality.
 
 ## Overview
-Il y 3 composants principaux dans la mise en place de cette configuration:
+There are 3 main components to setting up this configuration:
 
 1.&nbsp;<ins>vRack Service</ins>   
-Le produit vRack Services est le composant principal de votre configuration, nécessitant une activation dans une région choisie, ainsi qu'une association à un vRack. La région choisie doit correspondre à l'emplacement de votre service managé. Le service managé sera disponible à partir de la région choisie et accessible à tous serveurs connectés au vRack, quelque soit la région.
+The vRack Services product is the main component of your configuration and must be activated in a selected region and associated with a vRack. The selected region must match the location of your Managed Service. The Managed Service will be available from the selected region and will be accessible to all servers connected to the vRack, regardless of the region.
    
-2.&nbsp;<ins>Sous-réseau</ins>  
-Le produit vRack Services utilise le concept de sous-réseau (ou subnet) afin de définir une plage d'addresse IP privée utilisable pour communiquer avec les services managés. De manière générale, les sous-réseaux divisent un réseau plus large en segments, chacun disposant d'une plage spécifique d'adresses IP. Cette division logique permet une gestion efficace des ressources et du flux de trafic au sein de votre réseau.
+2.&nbsp;<ins>Subnet</ins>  
+The vRack Services product uses the concept of a subnet to define a range of private IP addresses that can be used to communicate with managed services. Generally speaking, subnets divide a larger network into segments, each with a specific range of IP addresses. This logical division allows for efficient management of resources and traffic flow within your network.
    
 3.&nbsp;<ins>Service Endpoint</ins>   
-Le Service Endpoint représente votre point d'accès au service managé. Il est associé à un sous-réseau et dispose d'une ou plusieurs addresses IP privées attribuées automatiquement.
+The Service Endpoint is your access point to the Managed Service. It is associated with a subnet and has one or more automatically assigned private IP addresses.
 
-## En pratique
-Configurer un Service Endpoint se déroule en 3 étapes:
-1. Activer et configurer vRack Services
-2. Créer un sous-réseau et une plage d'adresse pour les services managés
-3. Créer le Service Endpoint
+## Instructions
+There are 3 steps to configuring a Service Endpoint:
+1. Enable and configure vRack services
+2. Create a subnet and address range for the managed services
+3. Create the Service Endpoint
 
-Ces 3 étapes sont réalisables soit via l'API, soit via l'espace client et sont décrites en détails ci-dessous.
+These 3 steps can be performed via either the API or the Customer Interface and are described in detail below.
 
 ### Manager
 
-#### Création d'un vRack Service
+#### Create a vRack Service
 
     
 
-La création d'un vRack Service se déroule en lui attribuant un nom et une région.
+A vRack Service is created by assigning it a name and a region.
 
-En effet vRack Services est un service régional. Vous devez donc choisir dans quelle région vous comptez l'utiliser. Pour bénéficier du Service Endpoint, vous devez sélectionner la région correspondante à votre service managé OVHcloud.
+The vRack Service is a regional service. You must therefore select the region in which you intend to use it. To benefit from the Service Endpoint, you must select the region corresponding to your OVHcloud managed service.
 
 ![overview 01](images/03-VRS-v2.png){.thumbnail}
 
 ---
 
-Pour activer vRack Services vous devez avoir un vRack. Si vous n'en avez pas à cette étape il est possible d'en commander un. 
-Vous n'êtes pas obligé d'un commander un à cette étape, vous pouvez le faire plus tard et revenir sur le processus de création du vRack Service.
+You must have a vRack to activate vRack Services. If you do not have one at this stage, you can order one. 
+You are under no obligation to order one at this stage, you can do so later and return to the vRack Service creation process.
 
 ![overview 01](images/04-VRS.png){.thumbnail}
 
 ---
 
-Une fois la demande d'activation de vRack Services effectué, vous êtes redirigé sur la liste des vRack Services. Il est possible d'associer un vRack à un vRack Service directement à partir de cette page.
+Once the vRack Services activation request has been made, you will be taken to the list of vRack Services. You can associate a vRack with a vRack Service directly from this page.
 
 ![overview 01](images/05-VRS.png){.thumbnail}
 
 ---
 
-L'association à un vRack est simple, il suffit de sélectionner le vRack souhaité dans la liste proposée ici.
+Connecting to a vRack is simple, just select the vRack you want from the list here.
 
 ![overview 01](images/06-VRS.png){.thumbnail}
 
 
 
 
-#### Création d'un Sous-réseau
+#### Create a subnet
     
 
 
-Afin de créer un sous-réseau il vous faudra renseigner 4 informations:
-- Son nom
-- Sa plage d'adresses
-- La plage d'adresses réservée aux services managés.
-    - Cette plage doit être un sous-ensemble de la plage d'addresses du sous-réseau, et sa taille doit être comprise entre /27 et /29.
-    - Les adresses de cette plage ne doivent pas être utilisées par d'autres nœuds connectés au vRack.
-- Un VLAN sur lequel vous pouvez exposer ce sous-réseau. Vous pouvez très bien ne pas choisir de VLAN.
+To create a subnet, you need to enter 4 pieces of information:
+- Its name
+- Its address range
+- The address range reserved for managed services.
+    - This range must be a subset of the subnet address range and its size must be between /27 and /29.
+    - Addresses in this range must not be used by other nodes connected to the vRack.
+- A VLAN on which you can expose this subnet. You can choose not to have a VLAN.
 
 ![overview 01](images/10-VRS.png){.thumbnail}
 
 ---
 
-Dans le cas contraire il vous sera demandé de préciser le numéro du VLAN.
+If not, you will be prompted to enter the VLAN number.
 
 ![overview 01](images/12-VRS.png){.thumbnail}
 
 ---
 
-Ainsi, après un bref instant de mise en place vous serez en capacité de voir et surtout d'administrer ce sous-réseau en vous rendant dans cet onglet.
+After a short setup time, you'll be able to view and, most importantly, manage this subnet by going to this tab.
 
 ![overview 01](images/14-VRS.png){.thumbnail}
 
 
 
 
-#### Création d'un Service Endpoint
+#### Create a Service Endpoint
 
 
 
-Les actions à mener sont très simple. En effet il suffit uniquement de renseigner 3 informations:
-- Le type du Service Managé.
-- Le nom du Service Managé.
-- Le sous-réseau souhaité
+The actions to be taken are very simple. All you need to do is enter 3 pieces of information:
+- The type of service to be managed.
+- The name of the managed service.
+- The desired subnet.
 
 ![overview 01](images/16-VRS.png){.thumbnail}
 
 ---
 
-Une fois la création du Service Endpoint demandée, vous êtes redirigé vers la liste des Service Endpoint. Une bannière vous indique le statut de création de votre Service Endpoint.
+Once you have requested the creation of the Service Endpoint, you will be taken to the list of Service Endpoints. A banner will display the creation status of your Service Endpoint.
 
 ![overview 01](images/17-VRS.png){.thumbnail}
 
 ---
 
-Après quelques instants, votre nouveau Service Endpoint est configuré et disponible.
+In a few moments, your new Service Endpoint will be configured and available.
 
 ![overview 01](images/18-VRS.png){.thumbnail}
 
 
 
-#### Liste de vos vRacks Services
+#### List of your vRacks Services
 
-Dans cet écran vous trouverez la liste des différents vRack Services déclarés.
+This screen lists the various vRack Services that have been declared.
 
 ![overview 01](images/01-VRS.png){.thumbnail}
 
 
-#### Vue d'ensemble
+#### Overview
 
 
-Dans ce premier onglet, vous trouverez toutes les informations générales relatives au vRack Services sélectionné.
+This first tab contains all the general information related to the selected vRack Services.
 
 ![overview 01](images/07-VRS.png){.thumbnail}
 
 ---
 
-Dans cet onglet, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des sous-réseaux créés et disponibles pour le vRack Services sélectionné.
+This tab, which contains no information when a Services vRack is created, lists the subnets created and available for the selected Services vRack.
 
 ![overview 01](images/08-VRS.png){.thumbnail}
 
 ---
 
-Dans cet onglet, qui ne contient aucune information lors de la création d'un vRack Services, vous trouverez la liste des Services Endpoints créés et disponibles pour le vRack Services sélectionné.
+This tab, which does not contain any information when a Services vRack is created, contains the list of Services Endpoints created and available for the selected Services vRack.
 
-Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'étape de création d'un sous-réseau.
+Note that in order to create a Service Endpoint, you must first go through the subnet creation phase.
 
 ![overview 01](images/09-VRS.png){.thumbnail}
 
@@ -150,18 +150,18 @@ Il est a noter que pour créer un Service Endpoint il faut d'abord passer par l'
 
 ### API
 
-Cette section aborde les actions qui peuvent être effectuées via l'API. Cela inclut la création de sous-réseaux et de Service Endpoint, l'association de vRack Services à un vRack et la gestion de ces services à l'aide d'instructions détaillées. Ces actions mettent en évidence les capacités opérationnelles des vRack Services, en démontrant comment ils peuvent être exploités pour améliorer et sécuriser votre infrastructure réseau.
+This section covers the actions that can be performed using the API. This includes creating subnets and Service Endpoints, associating vRack Services with a vRack, and managing these services with detailed instructions. These actions highlight the operational capabilities of vRack Services and how they can be used to enhance and secure your network infrastructure.
 
-Vous devez vous authentifier au préalable via cette [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth){.external}. 
+You must first authenticate via this [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth){.external}.
 
 #### <ins>Actions</ins>
 
 <details>
-<summary><b>1. Lister les vRack Services</b></summary>
+<summary><b>1. List vRack Services</b></summary>
 <blockquote>
-    Vous devez tout d'abord lister vos vRack Services afin de récuperer l'id du vRack Services sur lequel vous voulez réaliser vos actions.
+    First, you need to list your vRack services to get the ID of the vRack service on which you want to perform your actions.
 
-Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
+Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
 ![image](https://github.com/ovh/docs/assets/60412/7cdeb9c2-5a6e-4ca8-9403-8aede124e6d8)
 
 Voici la ligne de commande correspondante
