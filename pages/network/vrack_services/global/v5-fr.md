@@ -88,7 +88,7 @@ Dans le cas contraire il vous sera demandé de préciser le numéro du VLAN.
 
 Ainsi, après un bref instant de mise en place vous serez en capacité de voir et surtout d'administrer ce sous-réseau en vous rendant dans cet onglet.
 
-![overview 01](images/14-VRS.png){.thumbnail}
+![overview 01](images/14-VRS-v2.png){.thumbnail}
 
 
 
