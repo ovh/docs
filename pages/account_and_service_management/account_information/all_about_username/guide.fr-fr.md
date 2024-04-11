@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser mon compte OVHcloud et gérer mes informations personnelles'
 excerpt: "Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte."
-updated: 2021-07-01
+updated: 2024-04-11
 ---
 
 ## Objectif
@@ -103,6 +103,10 @@ Renseignez alors le code dans le champ intitulé `Code de validation`, puis vali
 
 ![identifiant client](images/nichandle08.png){.thumbnail}
 
+Si vous n'avez plus accès à l'adresse e-mail principale actuelle mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de permuter votre adresse e-mail principale et l'adresse e-mail de secours.
+
+Si vous n'avez accès ni à votre adresse e-mail principale, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
+
 #### Modifier le type de compte
 
 Cliquez sur la mention `type de compte` lorsque vous éditez votre profil. Un menu déroulant vous permet de définir le type de compte correspondant à votre situation.
@@ -117,16 +121,7 @@ Conformément au Réglement général sur la protection des données (RGPD), vou
 
 #### Supprimer mon compte OVHcloud
 
-Vous pouvez demander à supprimer votre compte OVHcloud et les données liées en complétant [le formulaire d'exercice des droits RGPD](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/){.external} et en y choisissant le « Droit d'effacement ».
-
-> [!warning]
->
-> La suppression de votre compte OVHcloud nécessite que les conditions suivantes soient remplies :
->
-> - votre compte ne doit plus contenir aucun service ;
->
-> - votre compte doit être exempt de toute facture ou commande impayée.
->
+Vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant les instructions de [notre guide sur la résiliation de services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services#faq).
 
 ### Gérer les accès à mon compte <a name="delegation"></a>
 
