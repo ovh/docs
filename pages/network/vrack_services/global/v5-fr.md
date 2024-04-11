@@ -76,7 +76,7 @@ Afin de créer un sous-réseau il vous faudra renseigner 4 informations:
     - Les adresses de cette plage ne doivent pas être utilisées par d'autres nœuds connectés au vRack.
 - Un VLAN sur lequel vous pouvez exposer ce sous-réseau. Vous pouvez très bien ne pas choisir de VLAN.
 
-![overview 01](images/10-VRS.png){.thumbnail}
+![overview 01](images/10-VRS-v2.png){.thumbnail}
 
 ---
 
