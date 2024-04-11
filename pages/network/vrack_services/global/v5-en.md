@@ -59,7 +59,7 @@ Once the vRack Services activation request has been made, you will be taken to t
 
 Connecting to a vRack is simple, just select the vRack you want from the list here.
 
-![overview 01](images/06-VRS.png){.thumbnail}
+![overview 01](images/06-VRS-v2.png){.thumbnail}
 
 
 
