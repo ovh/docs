@@ -164,7 +164,7 @@ You must first authenticate via this [page](https://eu.api.ovh.com/console-previ
 Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
 ![image](https://github.com/ovh/docs/assets/60412/7cdeb9c2-5a6e-4ca8-9403-8aede124e6d8)
 
-Voici la ligne de commande correspondante
+Here is the command line
 ``` bash
 curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
@@ -172,7 +172,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
 ```
 
 <details>
-<summary> Extrait du résultat de cette commande</summary>
+<summary> Here is an extract of the result of this command</summary>
 <blockquote>
     
 ``` json
@@ -201,7 +201,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
       "vrackId": null
     },
     "currentTasks": [],
-    "id": "vrs-a9y-v91-xnm-f5u",
+    "id": "vrs-a8y-v9a-x5m-f4u",
     "resourceStatus": "READY",
     "targetSpec": {
       "displayName": "test_tracking",
@@ -220,7 +220,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
     "updatedAt": "2024-04-09T15:16:14.97363Z",
     "iam": {
       "id": "e3cb9a6c-cf36-4b86-83d9-bfb1487110b5",
-      "urn": "urn:v1:eu:resource:vrackServices:vrs-a9y-v91-xnm-f5u"
+      "urn": "urn:v1:eu:resource:vrackServices:vrs-a8y-v9a-x5m-f4u"
     }
   },
   ...
@@ -233,27 +233,28 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
 </details>
 
 
-L'id qui sera utilisé dans notre exemple est le suivant `vrs-a9y-v91-xnm-f5u`
+The ID used in our example is `vrs-a8y-v9a-x5m-f4u`
 
 </blockquote>
 </details>
 
 <details>
-<summary><b>2. Lister tous les services managés éligibles au vRack Services concerné</b></summary>
+<summary><b>2. List all Managed Services that are eligible for the vRack Services in question.</b></summary>
 <blockquote>
 
-Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource/-vrackServicesId-/eligibleManagedService){.external}
+Here is the relevant section of the API page, accessible via this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource/-vrackServicesId-/eligibleManagedService){.external}
 ![image](https://github.com/ovh/docs/assets/60412/3da50fd3-be4b-479b-a7b3-f3449406b6d7)
 
-Voici la ligne de commande correspondante
+
+Here is the command line
 ``` bash
-curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u/eligibleManagedService" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u/eligibleManagedService" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
 
 <details>
-<summary>Résultat de cette commande</summary>
+<summary>Result of this command</summary>
 <blockqquote>
     
 ``` json
@@ -271,7 +272,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 </blockqquote>
 </details>
 
-Les ids des services managés utilisés plus bas dans notre exemple sont les suivants: 
+The ids of the managed services used in our example below are as follows:
 - `urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45`
 - `urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f`
 
@@ -279,51 +280,51 @@ Les ids des services managés utilisés plus bas dans notre exemple sont les sui
 </details>
 
 <details>
-<summary><b>3. Demander des mises à jour sur la configuration des vRack Services</b>
+<summary><b>3. Request vRack Services configuration updates</b>
 </summary>
 <blockquote>
 
-Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#put-/vrackServices/resource/-vrackServicesId-){.external}
+Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#put-/vrackServices/resource/-vrackServicesId-){.external}
 ![image](https://github.com/ovh/docs/assets/60412/146cc671-6fdd-47ed-a741-5982bb9e07a8)
 
-Il s'agit de l'unique route gérant toute mise à jour de la configuration des vRack Services. Son fonctionnement est le suivant :
-1. Vous définissez une nouvelle spécification cible dans le corps de la requête.
-2. Si cette spécification est validée, vous recevez en retour la ressource avec les valeurs de targetSpec et de checksum mises à jour.
-3. La requête est traitée par une ou plusieurs tâches asynchrones qui visent à réconcilier l'état actuel avec le targetSpec.
+This is the only route that manages any updates to the vRack Services configuration. It works as follows:
+1. You define a new target specification in the body of the request.
+2. If this specification is validated, you get the resource back with the updated targetSpec and checksum values.
+3. The request is processed by one or more asynchronous tasks aimed at reconciling the current state with the targetSpec.
 
-Le checksum aide à détecter les cas de concurrence sur les requêtes de mise à jour. Si la valeur du checksum interrogée diffère de celle renvoyée en réponse à votre requête initiale, cela signifie que le traitement de votre requête est terminé et qu'une autre requête est en cours de traitement.
+The checksum helps to detect cases of concurrency in update requests. If the checksum value queried differs from that returned in response to your original request, this means that processing of your request has been completed and that another request is being processed.
 
 <br><br>
-<ins>Actions de configuration sans interruption</ins>
+<ins>Configuration without interruption</ins>
 
-La requête peut combiner n'importe laquelle des actions suivantes sans interruption (ce qui signifie qu'il n'y aura pas de coupure du service lors de la mise à jour) :
-- mettre à jour le nom d'affichage des vRack Services
-- créer un Sous-réseau
-- supprimer un Sous-réseau
-- mettre à jour un Sous-réseau :
-    - mettre à jour le nom d'affichage
-    - créer un ou plusieurs Service Endpoint
-    - supprimer un ou plusieurs Service Endpoint
+The request can combine any of the following actions without interruption (i.e. the service will not be interrupted during the update)
+- Update the display name of the vRack service
+- Create a subnet
+- Delete a subnet
+- Update a subnet:
+    - Update the display name
+    - Create one or more Service Endpoints
+    - Delete one or more Service Endpoints
  
-Notez qu'un Sous-réseau avec plusieurs Service Endpoint peut être créé dans le même corps de requête.   
+Note that a Subnet with multiple Service Endpoints can be created in the same request body. 
 
-Notez que la suppression d'un Sous-réseau entraînera également la suppression des Service Endpoint intégrés.
+Note that deleting a Subnet will also delete the embedded Service Endpoints.
 
 </blockquote>
 </details>
 
 <br>
 
-#### <ins>Exemples</ins>
+#### <ins>Examples</ins>
 
-Pour cette section, veuillez bien lire la section `Actions` ci-dessus
+For this section, please see the 'Actions' section above.
 
 <details>
-<summary><b>Modifier le displayName du vRack Services concerné</b></summary>
+<summary><b>Change the displayName of the affected vRack Services</b></summary>
 <blockquote>
     
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
  -H "content-type: application/json" \
@@ -336,11 +337,11 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 
 <details>
-<summary><b>Créer un Sous-réseau vide</b></summary>
+<summary><b>Create an empty subnet</b></summary>
 <blockquote>
 
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
  -H "content-type: application/json" \
@@ -355,11 +356,11 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 
 <details>
-<summary><b>Créer un Service Endpoint dans un Sous-réseau existant</b></summary>
+<summary><b>Create a Service Endpoint in an existing subnet</b></summary>
 <blockquote>
 
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
  -H "content-type: application/json" \
@@ -373,11 +374,11 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 
 <details>
-<summary><b>Supprimer un Sous-réseau avec ses Service Endpoint</b></summary>
+<summary><b>Delete a subnet and its endpoint services</b></summary>
 <blockquote>
 
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
  -H "content-type: application/json" \
@@ -392,35 +393,35 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 ## Contraintes et limites
 ### vRack Services
-- Un vRack Services est attaché à une seule région.
-- Au sein d'un vRack, il n'est pas possible de créer plusieurs vRack Services sur une même région.
-- Un maximum de 20 vRack Services peuvent être crées par compte utilisateur.
-- Plusieurs vRack Services peuvent être associés au même vRack. Ainsi, le client peut rendre les service managés accessibles depuis différentes régions.
-- Le service managé a exposer doit obligatoirement faire partie de la même région que celle du vRack Services.
+- A vRack Services is attached to a single region.
+- Within a vRack, it is not possible to create several vRack Services in the same region.
+- A maximum of 20 vRack Services can be created per user account.
+- Several vRack Services can be associated with the same vRack. In this way, the customer can make the managed services accessible from different regions.
+- The managed service to be exposed must be part of the same region as the vRack Services.
 
-**Note :** La capacité de bande passante entre le service managé et les hôtes consommateurs du service n'est pas garanti directement via le produit vRack Services. Les garanties de bande passante contractuelles sont portées par les services OVHcloud tels que les service managés (par ex. Enterprise File Storage) ou les services consommateurs du service managé (par ex. serveurs Baremetal, clusters HPC, instances public cloud).
+**Note :** Bandwidth capacity between the managed service and the hosts consuming the service is not guaranteed directly by the vRack Services product. Contractual bandwidth guarantees are provided by OVHcloud services such as managed services (e.g. Enterprise File Storage) or services consuming the managed service (e.g. bare metal servers, HPC clusters, public cloud instances).
 
-### Sous-réseau
-- La plage d'adresse du sous-réseau doit respecter le RFC 1918.
-- La longueur de la plage d'adresse du sous-réseau est comprise entre /16 et /24.
-- Chaque plage d'addresse de sous-réseau doit être unique pour un vRack Services donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
-- Il n'est pas possible de modifier la plage d'adresse de sous-réseau une fois créée.
-- La plage d'ID de VLAN valide est comprise entre 2 et 4094. La valeur "null" est autorisée (pas de VLAN / untagged).
-- Un maximum de 1 sous-réseau par vRack Services peut être défini par le client.
-- Un ID de VLAN ne peut être modifié une fois le sous-réseau créé.
-- Chaque VLAN ID doit être unique pour un vRack Services donné.
-- La première et la dernière adresses IP du sous-réseau n'est pas utilisable et ne doit donc pas être configuré sur un des serveurs attaché au vRack associé au vRack Services.
+### Subnet
+- The subnet address range must conform to RFC 1918.
+- The length of the subnet range is between /16 and /24.
+- Each subnet address range must be unique for a given vRack Service. Overlaps are detected and discarded when the subnet is created.
+- It is not possible to change the subnet address range once it has been created.
+- The valid VLAN ID range is from 2 to 4094. The value "null" is allowed (no VLAN / untagged).
+- A maximum of 1 subnet per vRack Service can be defined by the customer.
+- A VLAN ID cannot be changed once the subnet has been created.
+- Each VLAN ID must be unique for a given vRack Service.
+- The first and last IP addresses of the subnet cannot be used and therefore must not be configured on any of the servers connected to the vRack associated with the vRack Services.
 
-### Plage d'addresse du service managé (Service Range)
-- La plage d'addresse du service managé doit être un sous-ensemble de la plage de sous-réseau.
-- La taille de plage est comprise entre /27 et /29
-- Il n'est pas possible de modifier la plage d'adresse du service managé une fois créée.
+### Managed Service Address Range (Service Range)
+- The address range of the managed service must be a subset of the subnet range.
+- The range size is between /27 and /29.
+- It is not possible to change the address range of the managed service once it has been created.
 
 ### Service Endpoint
-- Pour garantir la cohérence du sous-réseau, la demande de création de Service Endpoint est rejetée si le pool d'IPs restantes sur le sous-réseau ne correspond pas au nombre d'adresses IP requis par le service managé.
-- Chaque client est autorisé à créer un maximum de 20 Service Endpoints.
-- Les adresses IP de plage de service sont attribuées à un seul service managé à la fois.
+- To ensure subnet consistency, the Service Endpoint creation request will be rejected if the pool of remaining IPs on the subnet does not match the number of IP addresses required by the managed service.
+- Each Customer may create a maximum of 20 Service Endpoints.
+- Service Range IP addresses are allocated to one Managed Service at a time.
 
-## Aller plus loin
+## Go further
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.
