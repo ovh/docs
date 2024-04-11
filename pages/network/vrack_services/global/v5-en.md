@@ -53,7 +53,7 @@ You are under no obligation to order one at this stage, you can do so later and 
 
 Once the vRack Services activation request has been made, you will be taken to the list of vRack Services. You can associate a vRack with a vRack Service directly from this page.
 
-![overview 01](images/05-VRS.png){.thumbnail}
+![overview 01](images/05-VRS-v2.png){.thumbnail}
 
 ---
 
