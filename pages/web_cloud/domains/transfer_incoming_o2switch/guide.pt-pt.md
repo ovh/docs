@@ -64,6 +64,10 @@ Deve também:
 > Certifique-se também de que o agente de registo atual não vai fechar outros serviços, como, por exemplo, os endereços de correio eletrónico associados ao domínio.
 >
 
+### Desbloquear o nome de domínio e recuperar o código de transferência
+
+Para desbloquear o domínio e obter o código de transferência, siga os passos descritos na [documentação dedicada do O2Switch](https://faq.o2switch.fr/espace-client/recuperer-code-de-transfert){.external}.
+
 ### Iniciar a transferência do domínio para a OVHcloud
 
 Uma vez obtido o código de autorização, pode proceder à transferência do seu nome de domínio seguindo as etapas do nosso guia "[Transferir o seu nome de domínio para a OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)".
