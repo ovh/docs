@@ -47,7 +47,7 @@ The vRack Service is a regional service. You must therefore select the region in
 You must have a vRack to activate vRack Services. If you do not have one at this stage, you can order one. 
 You are under no obligation to order one at this stage, you can do so later and return to the vRack Service creation process.
 
-![overview 01](images/04-VRS.png){.thumbnail}
+![overview 01](images/04-VRS-v2.png){.thumbnail}
 
 ---
 
