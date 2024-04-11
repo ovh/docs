@@ -53,7 +53,7 @@ Vous n'êtes pas obligé d'un commander un à cette étape, vous pouvez le faire
 
 Une fois la demande d'activation de vRack Services effectué, vous êtes redirigé sur la liste des vRack Services. Il est possible d'associer un vRack à un vRack Service directement à partir de cette page.
 
-![overview 01](images/05-VRS.png){.thumbnail}
+![overview 01](images/05-VRS-v2.png){.thumbnail}
 
 ---
 
