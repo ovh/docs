@@ -2,6 +2,7 @@
 title: "O2Switch-Domainnamen zu OVHcloud transferieren"
 excerpt: "Erfahren Sie hier, wie Sie einen O2Switch-Domainnamen zu OVHcloud transferieren"
 updated: 2024-04-11
+flag: hidden
 ---
 
 > [!primary]

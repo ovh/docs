@@ -2,6 +2,7 @@
 title: 'Transfer domeny O2Switch do OVHcloud'
 excerpt: 'Dowiedz się więcej o transferze domeny z systemu O2Switch do OVHcloud'
 updated: 2024-04-11
+flag: hidden
 ---
 
 > [!primary]

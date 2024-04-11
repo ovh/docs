@@ -2,6 +2,7 @@
 title: "Transferring a O2Switch domain name to OVHcloud"
 excerpt: "Find out how to transfer a O2Switch domain name to OVHcloud"
 updated: 2024-04-11
+flag: hidden
 ---
 
 ## Objective
