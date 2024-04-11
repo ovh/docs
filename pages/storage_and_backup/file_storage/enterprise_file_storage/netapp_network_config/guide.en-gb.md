@@ -33,7 +33,7 @@ Enterprise File Storage is a service that is exposed to the vRack via an IP addr
 
 ## Instructions <a name="instructions"></a>
 
-Log in to your [OVHcloud Customer Area] (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=en) and select 'Bare Metal Cloud' {.action} from the top navigation bar. Go to `Storage and Backup`{.action} then `Enterprise File Storage`{.action} in the left hand menu and select your service from the list.
+Log in to your [OVHcloud Customer Area](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=en) and select 'Bare Metal Cloud' {.action} from the top navigation bar. Go to `Storage and Backup`{.action} then `Enterprise File Storage`{.action} in the left hand menu and select your service from the list.
 
 ![Sans configuration réseau](images/01-EFS.png){.thumbnail}
 
@@ -98,6 +98,6 @@ You can now follow these guides to create and manage your volumes, snapshots and
 
 [Enterprise File Storage - Gestion des snapshots de volumes](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)
 
-If you need training or technical support to implement our solutions, contact your sales representative or click [this link] (https://www.ovhcloud.com/fr/professional-services/) to request a quote and a personalised analysis of your project from our Professional Services team experts.
+If you need training or technical support to implement our solutions, contact your sales representative or click [this link](https://www.ovhcloud.com/fr/professional-services/) to request a quote and a personalised analysis of your project from our Professional Services team experts.
 
 Talk to our user community on <https://community.ovh.com/>.
