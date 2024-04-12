@@ -399,11 +399,11 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 ### Sous-réseau
 - La plage d'adresse du sous-réseau doit respecter le RFC 1918.
 - La longueur de la plage d'adresse du sous-réseau est comprise entre /16 et /24.
-- Chaque plage d'addresse de sous-réseau doit être unique pour un vRack Services donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
-- Il n'est pas possible de modifier la plage d'adresse de sous-réseau une fois créée.
+- Modifier la plage d'adresses de sous-réseau causera une interruption des Service Endpoints associés (pendant le temps de la reconfiguration).
 - La plage d'ID de VLAN valide est comprise entre 2 et 4094. La valeur "null" est autorisée (pas de VLAN / untagged).
-- Un maximum de 1 sous-réseau par vRack Services peut être défini par le client.
-- Un ID de VLAN ne peut être modifié une fois le sous-réseau créé.
+- Chaque plage d'addresse de sous-réseau doit être unique pour un vRack Services donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
+    - Pendant la beta, un maximum de 1 sous-réseau par vRack Services peut être défini par le client.
+- Modifier l'ID de VLAN causera une interruption des Service Endpoint associés (pendant le temps de la reconfiguration).
 - Chaque VLAN ID doit être unique pour un vRack Services donné.
 - La première et la dernière adresses IP du sous-réseau n'est pas utilisable et ne doit donc pas être configuré sur un des serveurs attaché au vRack associé au vRack Services.
 
@@ -414,7 +414,6 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 ### Service Endpoint
 - Pour garantir la cohérence du sous-réseau, la demande de création de Service Endpoint est rejetée si le pool d'IPs restantes sur le sous-réseau ne correspond pas au nombre d'adresses IP requis par le service managé.
-- Chaque client est autorisé à créer un maximum de 20 Service Endpoints.
 - Les adresses IP de plage de service sont attribuées à un seul service managé à la fois.
 
 ## Aller plus loin
