@@ -399,11 +399,11 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
 ### Subnet
 - The subnet address range must conform to RFC 1918.
 - The length of the subnet range is between /16 and /24.
-- Modifying the subnet range will cause an interruption of the associated service endpoints during the reconfiguration period.
+- Modifying the subnet range will cause an interruption of the associated service endpoints (during the reconfiguration period).
 - The valid VLAN ID range is from 2 to 4094. The value "null" is allowed (no VLAN / untagged).
 - Each subnet address range must be unique for a given vRack Service. Overlaps are detected and discarded when the subnet is created.
     - During the beta, a maximum of 1 subnet per vRack Service can be defined by the customer.
-- Modifying the VLAN ID will cause an interruption of the associated service endpoints during the reconfiguration period.
+- Modifying the VLAN ID will cause an interruption of the associated service endpoints (during the reconfiguration period).
 - Each VLAN ID must be unique for a given vRack Service.
 - The first and last IP addresses of the subnet cannot be used and therefore must not be configured on any of the servers connected to the vRack associated with the vRack Services.
 
