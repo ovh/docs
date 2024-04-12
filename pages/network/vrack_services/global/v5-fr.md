@@ -40,7 +40,7 @@ L'activation et le configuration de vRack Services se déroule en lui attribuant
 
 vRack Services est un service régional. Vous devez donc choisir dans quelle région vous comptez l'utiliser. Pour bénéficier du Service Endpoint, vous devez sélectionner la région correspondante à votre service managé OVHcloud.
 
-![overview 01](images/03-VRS-v2.png){.thumbnail}
+![overview 01](images/03-VRS-v4.png){.thumbnail}
 
 ---
 
@@ -284,10 +284,12 @@ Voici la section concernée dans la page de l'API disponible sur via cette [url]
 
 Il s'agit de l'unique route gérant toute mise à jour de la configuration des vRack Services. Son fonctionnement est le suivant :
 1. Vous définissez une nouvelle spécification cible dans le corps de la requête.
-2. Si cette spécification est validée, vous recevez en retour la ressource avec les valeurs de targetSpec et de checksum mises à jour.
-3. La requête est traitée par une ou plusieurs tâches asynchrones qui visent à réconcilier l'état actuel avec le targetSpec.
+2. Si cette spécification est validée, vous recevez en retour la ressource avec les valeurs de `targetSpec`{.action} et de `checksum`{.action} mises à jour.
+3. La requête est traitée par une ou plusieurs tâches asynchrones qui visent à réconcilier l'état actuel avec le `targetSpec`{.action}.
 
-Le checksum aide à détecter les cas de concurrence sur les requêtes de mise à jour. Si la valeur du checksum interrogée diffère de celle renvoyée en réponse à votre requête initiale, cela signifie que le traitement de votre requête est terminé et qu'une autre requête est en cours de traitement.
+Le `checksum`{.action} est utile dans deux cas :
+- <ins>Prévention des conflits lors des mises à jour :</ins> Lorsque vous souhaitez mettre à jour une ressource, il est judicieux de procéder en deux étapes. Commencez par effectuer une requête `GET`{.action} pour récupérer le `checksum`{.action} actuel de la ressource. Ensuite, vous pouvez appliquer les modifications souhaitées sur le `targetSpec`{.action}. Lorsque vous soumettez votre requête `PUT`{.action}, le `checksum`{.action} initial est également envoyé. Si la ressource a été modifiée entre-temps, votre demande sera refusée. Cette étape est cruciale car elle permet d'éviter d'écraser les modifications qui ont été apportées depuis votre dernière consultation. Ainsi, elle garantit l'intégrité et la cohérence des données.
+- <ins>Suivi de l'état des demandes :</ins> Une fois votre requête `PUT`{.action} acceptée, il est recommandé de surveiller régulièrement l'état de la ressource par des requêtes `GET`{.action} pour vérifier le `resourceStatus`{.action}. Cette pratique vous permet de confirmer que votre demande a été traitée et est considérée comme terminée lorsque le `resourceStatus`{.action} indique `READY`{.action} ou que le `checksum`{.action} est différent de celui renvoyé par votre requête `PUT`{.action} initiale. Si le `checksum`{.action} diffère, cela signifie non seulement que votre requête a été traitée avec succès, mais également qu'une autre requête a été acceptée et traitée juste après la vôtre pour la même ressource.
 
 <br><br>
 <ins>Actions de configuration sans interruption</ins>
