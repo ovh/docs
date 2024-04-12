@@ -149,11 +149,9 @@ This section covers the actions that can be performed using the API. This includ
 
 You must first authenticate via this [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth){.external}.
 
-#### <ins>Actions</ins>
+<ins>Actions :</ins>
 
-<details>
-<summary><b>1. List vRack Services</b></summary>
-<blockquote>
+#### 1. List vRack Services
     First, you need to list your vRack services to get the ID of the vRack service on which you want to perform your actions.
 
 Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
@@ -165,77 +163,11 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
  -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
-
-<details>
-<summary> Here is an extract of the result of this command</summary>
-<blockquote>
-    
-``` json
-[
-  {
-    "checksum": "02643afe107az5025a342c96e6196a56",
-    "createdAt": "2024-04-09T14:56:46.564227Z",
-    "currentState": {
-      "displayName": "test_tracking",
-      "productStatus": "DRAFT",
-      "region": "LIM",
-      "subnets": [
-        {
-          "cidr": "10.0.0.0/24",
-          "displayName": null,
-          "serviceEndpoints": [],
-          "serviceRange": {
-            "cidr": "10.0.0.0/29",
-            "remainingIps": 3,
-            "reservedIps": 5,
-            "usedIps": 0
-          },
-          "vlan": null
-        }
-      ],
-      "vrackId": null
-    },
-    "currentTasks": [],
-    "id": "vrs-a8y-v9a-x5m-f4u",
-    "resourceStatus": "READY",
-    "targetSpec": {
-      "displayName": "test_tracking",
-      "subnets": [
-        {
-          "cidr": "10.0.0.0/24"
-          "displayName": null,
-          "serviceEndpoints": [],
-          "serviceRange": {
-            "cidr": "10.0.0.0/29"
-          },
-          "vlan": null
-        }
-      ]
-    },
-    "updatedAt": "2024-04-09T15:16:14.97363Z",
-    "iam": {
-      "id": "e3cb9a6c-cf36-4b86-83d9-bfb1487110b5",
-      "urn": "urn:v1:eu:resource:vrackServices:vrs-a8y-v9a-x5m-f4u"
-    }
-  },
-  ...
-]
-```
-
-</blockquote>
-
-
-</details>
-
-
 The ID used in our example is `vrs-a8y-v9a-x5m-f4u`
 
-</blockquote>
-</details>
+<br><br>
 
-<details>
-<summary><b>2. List all managed services that are eligible for the vRack Services in question.</b></summary>
-<blockquote>
+#### 2. List all managed services that are eligible for the vRack Services in question.
 
 Here is the relevant section of the API page, accessible via this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource/-vrackServicesId-/eligibleManagedService){.external}
 ![image](https://github.com/ovh/docs/assets/60412/3da50fd3-be4b-479b-a7b3-f3449406b6d7)
@@ -248,36 +180,13 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
  -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
 
-<details>
-<summary>Result of this command</summary>
-<blockqquote>
-    
-``` json
-[
-  {
-    "managedServiceType": "storageNetApp",
-    "managedServiceURNs": [
-        "urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45",
-        "urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f"
-    ]
-  }
-]
-```
-
-</blockqquote>
-</details>
-
 The ids of the managed services used in our example below are as follows:
 - `urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45`
 - `urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f`
 
-</blockquote>
-</details>
+<br><br>
 
-<details>
-<summary><b>3. Request vRack Services configuration updates</b>
-</summary>
-<blockquote>
+#### 3. Request vRack Services configuration updates
 
 Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#put-/vrackServices/resource/-vrackServicesId-){.external}
 ![image](https://github.com/ovh/docs/assets/60412/146cc671-6fdd-47ed-a741-5982bb9e07a8)
@@ -305,18 +214,14 @@ Note that a Subnet with multiple Service Endpoints can be created in the same re
 
 Note that deleting a Subnet will also delete the embedded Service Endpoints.
 
-</blockquote>
-</details>
 
 <br>
 
-#### <ins>Examples</ins>
+<ins>Examples :</ins>
 
 For this section, please see the 'Actions' section above.
 
-<details>
-<summary><b>Change the displayName of the affected vRack Services</b></summary>
-<blockquote>
+#### Change the displayName of the affected vRack Services
     
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
@@ -327,13 +232,9 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
 
 ```
 
-</blockquote>
-</details>
+<br>
 
-
-<details>
-<summary><b>Create an empty subnet</b></summary>
-<blockquote>
+#### Create an empty subnet
 
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
@@ -344,15 +245,9 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
 
 ```
 
-</blockquote>
-</details>
+<br>
 
-
-
-
-<details>
-<summary><b>Create a Service Endpoint in an existing subnet</b></summary>
-<blockquote>
+#### Create a Service Endpoint in an existing subnet
 
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
@@ -363,14 +258,9 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
 
 ```
 
-</blockquote>
-</details>
+<br>
 
-
-
-<details>
-<summary><b>Delete a subnet and its endpoint services</b></summary>
-<blockquote>
+#### Delete a subnet and its endpoint services
 
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
@@ -380,9 +270,6 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
  -d '{"checksum":"8b70a21702a41638e32778c6400e1848","targetSpec":{"displayName":"MyVRS","subnets":[]}}' \
 
 ```
-
-</blockquote>
-</details>
 
 <br>
 
