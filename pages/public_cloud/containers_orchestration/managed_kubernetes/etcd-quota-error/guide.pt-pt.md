@@ -1,7 +1,7 @@
 ---
 title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
-updated: 2023-07-05
+updated: 2024-04-12
 ---
 
 ## Objective
@@ -145,6 +145,24 @@ kubectl get authrequests.dex.coreos.com -A | wc -l
 
 ```bash
 kubectl get reportchangerequest.kyverno.io -A | wc -l
+```
+
+- `vulnerabilityreports.aquasecurity.github.io`
+
+```bash
+kubectl get vulnerabilityreports.aquasecurity.github.io -A | wc -l
+```
+
+- `configauditreport.aquasecurity.github.io`
+
+```bash
+kubectl get configauditreport.aquasecurity.github.io -A | wc -l
+```
+
+- `clusterrbacassessmentreport.aquasecurity.github.io`
+
+```bash
+kubectl get clusterrbacassessmentreport.aquasecurity.github.io -A | wc -l
 ```
 
 If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.  
