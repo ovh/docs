@@ -234,22 +234,22 @@ Ceci se fait dans la console VPS KVM : cliquez sur le bouton `...`{.action} à c
 Pour finaliser la configuration initiale de votre VPS Windows, suivez les étapes ci-dessous en parcourant les onglets :
 
 > [!tabs]
-> **Paramètres régionaux**
+> 1. **Paramètres régionaux**
 >>
 >> Une fois la session KVM établie, vous pouvez terminer la configuration initiale de Windows en configurant votre **pays/région**, la **langue de Windows** préférée et votre **disposition de clavier**. Cliquez ensuite sur le bouton `Suivant`{.action} en bas à droite.<br><br>
 >>![KVM](images/setup-03.png){.thumbnail}<br>
 >>
-> **Mot de passe administrateur**
+> 2. **Mot de passe administrateur**
 >>
 >> Définissez un mot de passe pour votre compte Windows `Administrator` / `admin` et confirmez-le, puis cliquez sur `Terminer`{.action}.<br><br>
 >>![KVM](images/setup-04.png){.thumbnail}<br>
 >>
-> **Ecran de connexion**
+> 3. **Ecran de connexion**
 >>
 >> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.<br><br>
 >>![KVM](images/setup-05.png){.thumbnail}<br>
 >>
-> **Login administrateur**
+> 4. **Login administrateur**
 >>
 >> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur la `flèche`.<br><br>
 >>![KVM](images/setup-06.png){.thumbnail}<br>
@@ -277,21 +277,21 @@ Les journaux de démarrage de Windows peuvent être utiles pour les diagnostics 
 Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 
 > [!tabs]
-> **Se connecter au serveur**
+> 1. **Se connecter au serveur**
 >>
 >> Se connecter à votre serveur via un bureau à distance ou une session [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).<br>
 >>
-> **Ouvrir l'utilitaire « Exécuter »**
+> 2. **Ouvrir l'utilitaire « Exécuter »**
 >>
 >> Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.<br><br>
 >>![KVM](images/windowsboot1.png){.thumbnail}<br>
 >>
-> **Ouvrir « msconfig »**
+> 3. **Ouvrir « msconfig »**
 >>
 >> Entrez « msconfig » et cliquez sur `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot2.png){.thumbnail}<br>
 >>
-> **Activer les logs**
+> 4. **Activer les logs**
 >>
 >> Dans la nouvelle fenêtre, activez l'option logs à côté de `Boot log`. Cliquez sur `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot3.png){.thumbnail}<br>

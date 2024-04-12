@@ -234,22 +234,22 @@ This is done in the VPS KVM console: Click on `...`{.action} next to the name of
 To complete the initial setup of your Windows VPS, follow the steps below by navigating through the tabs:
 
 > [!tabs]
-> **Locale settings**
+> 1. **Locale settings**
 >>
 >> Once the KVM session is established, you can complete the initial setup of Windows by configuring your **country/region**, the preferred **Windows language**, and your **keyboard layout**. Then click on the button `Next`{.action} at the bottom right.<br><br>
 >>![KVM](images/setup-03.png){.thumbnail}<br>
 >>
-> **Administrator password**
+> 2. **Administrator password**
 >>
 >> Set a password for your Windows `Administrator` / `admin` account and confirm it, then click on `Finish`{.action}.<br><br>
 >>![KVM](images/setup-04.png){.thumbnail}<br>
 >>
-> **Login screen**
+> 3. **Login screen**
 >>
 >> Windows will apply your settings and then display the login screen. Click on the `Send CtrlAltDel`{.action} button in the top right corner to sign in.<br><br>
 >>![KVM](images/setup-05.png){.thumbnail}<br>
 >>
-> **Administrator login**
+> 4. **Administrator login**
 >>
 >> Enter the `Administrator` password you have created in the previous step and click on the `Arrow` button.<br><br>
 >>![KVM](images/setup-06.png){.thumbnail}<br>
@@ -277,21 +277,21 @@ Windows boot logs can be helpful for server error diagnostics.
 To activate them, follow the steps below by navigating through the tabs:
 
 > [!tabs]
-> **Connect to the server**
+> 1. **Connect to the server**
 >>
 >> Connect to your server via a Remote Desktop or [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) session.<br>
 >>
-> **Open the "Run" utility**
+> 2. **Open the "Run" utility**
 >>
 >> Open the Windows start menu and click on `Run`{.action}.<br><br>
 >>![KVM](images/windowsboot1.png){.thumbnail}<br>
 >>
-> **Open "msconfig"**
+> 3. **Open "msconfig"**
 >>
 >> Enter "msconfig" and click on `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot2.png){.thumbnail}<br>
 >>
-> **Activate logs**
+> 4. **Activate logs**
 >>
 >> In the new window, activate the logs option next to `Boot log`. Click on `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot3.png){.thumbnail}<br>
