@@ -307,6 +307,18 @@ Notez qu'un Sous-réseau avec plusieurs Service Endpoint peut être créé dans 
 
 Notez que la suppression d'un Sous-réseau entraînera également la suppression des Service Endpoint intégrés.
 
+<ins>Actions de configuration non transparentes</ins>
+La modification des caractéristiques de Sous-réseau énumérées ci-dessous entraînera une coupure de service pendant le traitement de la mise à jour. En effet elles sont interprétées comme la suppression du sous-réseau existant et la création d'un nouveau sous-réseau avec les caractéristiques fournies.  
+
+Les IP qui ont été attribuées aux services gérés seront réélues et peuvent donc changer :
+- modifications dans le Subnet ServiceRange
+- modifications sur le Subnet Vlan
+- modifications du CIDR du sous-réseau
+- 
+Les Services Endpoint des services intégrés seront également supprimés et recréés, ce qui implique une accessibilité fluctuante dans le vRack pour tous les services managés concernés.
+
+Le vrackId est un attribut en lecture seule car l'association vRack/vRackServices est gérée par l'API vRack.
+
 </blockquote>
 </details>
 
