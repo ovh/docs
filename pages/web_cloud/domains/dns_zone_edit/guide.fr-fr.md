@@ -282,11 +282,11 @@ Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette mani
 
 ### Cas particulier d'usage : l'utilisation des enregistrements CNAME <a name="techusecase"></a>
 
-Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*). La règle précisée [plus haut](#cname) dans ce guide s’applique alors également dans ce cas de figure. 
+Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *subdomain-with-its-own-DNS-zone.mydomain.ovh*). La règle précisée [plus haut](#cname) dans ce guide s’applique alors également dans ce cas de figure. 
 
-La zone DNS étant créée pour le sous-domaine (dans notre exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*), ce dernier est alors considéré comme un domaine à part entière dans sa zone DNS.
+La zone DNS étant créée pour le sous-domaine (dans notre exemple *subdomain-with-its-own-DNS-zone.mydomain.ovh*), ce dernier est alors considéré comme un domaine à part entière dans sa zone DNS.
 
-De ce fait et dans ce cas bien spécifique, vous ne pourrez pas créer un champ CNAME pour *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh* dans la zone DNS que vous avez créé pour celui-ci. Vous pourrez cependant créer des champs CNAME tels que *sous-domain.sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh* ou *xxx.sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*.
+De ce fait et dans ce cas bien spécifique, vous ne pourrez pas créer un champ CNAME pour *subdomain-with-its-own-DNS-zone.mydomain.ovh* dans la zone DNS que vous avez créé pour celui-ci. Vous pourrez cependant créer des champs CNAME tels que *subdomain.subdomain-with-its-own-DNS-zone.mydomain.ovh* ou *xxx.subdomain-with-its-own-DNS-zone.mydomain.ovh*.
 
 ## Aller plus loin
 
