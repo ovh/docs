@@ -1,7 +1,7 @@
 ---
 title: 'Éditer une zone DNS OVHcloud'
 excerpt: 'Découvrez comment éditer une zone DNS OVHcloud via votre espace client'
-updated: 2024-03-13
+updated: 2024-04-12
 ---
 
 ## Objectif
@@ -176,6 +176,8 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
 >>
 >> > [!warning]
+>> >
+>> > Si vous configurez une entrée CAA pour un nom de domaine, cette configuration s'appliquera également à **tous les sous-domaines** de ce même nom de domaine.
 >> >
 >> > Si vous utilisez un certificat SSL Let's Encrypt avec votre domaine sur un hébergement mutualisé OVHcloud et que vous utilisez un enregistrement CAA, ce dernier empêchera la régénération du certificat SSL Let's Encrypt.
 >>
