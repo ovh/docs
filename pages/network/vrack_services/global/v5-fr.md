@@ -32,13 +32,13 @@ Ces 3 étapes sont réalisables soit via l'API, soit via l'espace client et sont
 
 ### Manager
 
-#### Création d'un vRack Service
+#### Activation et configuration de vRack Services
 
     
 
-La création d'un vRack Service se déroule en lui attribuant un nom et une région.
+L'activation et le configuration de vRack Services se déroule en lui attribuant un nom et une région.
 
-En effet vRack Services est un service régional. Vous devez donc choisir dans quelle région vous comptez l'utiliser. Pour bénéficier du Service Endpoint, vous devez sélectionner la région correspondante à votre service managé OVHcloud.
+vRack Services est un service régional. Vous devez donc choisir dans quelle région vous comptez l'utiliser. Pour bénéficier du Service Endpoint, vous devez sélectionner la région correspondante à votre service managé OVHcloud.
 
 ![overview 01](images/03-VRS-v2.png){.thumbnail}
 
