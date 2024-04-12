@@ -308,6 +308,7 @@ Notez qu'un Sous-réseau avec plusieurs Service Endpoint peut être créé dans 
 Notez que la suppression d'un Sous-réseau entraînera également la suppression des Service Endpoint intégrés.
 
 <ins>Actions de configuration non transparentes</ins>
+
 La modification des caractéristiques de Sous-réseau énumérées ci-dessous entraînera une coupure de service pendant le traitement de la mise à jour. En effet elles sont interprétées comme la suppression du sous-réseau existant et la création d'un nouveau sous-réseau avec les caractéristiques fournies.  
 
 Les IP qui ont été attribuées aux services gérés seront réélues et peuvent donc changer :
