@@ -34,9 +34,9 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
 
+## Instructions
 
-
-## Gathering new Additional IPv6 block
+### Gathering new Additional IPv6 block
 While requesting new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
 
 **<ins>Actions</ins>**  
@@ -57,7 +57,7 @@ New IPv6 block is there, let's configure it now!
 </details>
 
 
-## Configuring IPv6 in a vRack (basic mode)
+### Configuring IPv6 in a vRack (basic mode)
 
 In this section we will present basic IPv6 setup for your vRack connected hosts.
 ![image](https://github.com/ovh/docs/assets/60412/04b55646-15f9-4ecd-86f3-cea51fa7421e)
@@ -65,7 +65,7 @@ In this section we will present basic IPv6 setup for your vRack connected hosts.
 Example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belongs to the first /64 subnet from given public /56 Additional IPv6 block. Both leverage vRack interface for public IPv6 connectivity.
 
 
-### APIv6 setup
+#### APIv6 setup
 
 <details>
 <summary> <b>Attributing Additional IPv6 to a vRack</b> </summary>
@@ -112,7 +112,7 @@ Don't forget to configure SLAAC on your host machine.
 </blockquote>
 </details>
 
-### Host-side commands
+#### Host-side commands
 <details>
 <summary> <b>Static IP configuration</b></b> </summary>
 <blockquote>
@@ -165,7 +165,7 @@ After a moment (configuration must propagate), specific IPv6 address (with flags
 </blockquote>
 </details>
         
-### Setup verification
+#### Setup verification
 <details>
 <summary> <b>Local</b> </summary>
 <blockquote>
@@ -199,7 +199,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 
 
 
-## Configuring an IPv6 in a vRack for routed-mode
+### Configuring an IPv6 in a vRack for routed-mode
 In this section we will present more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color on a schema below).
 
 ![image](https://github.com/ovh/docs/assets/60412/abe59737-c29f-4f71-8907-ea33549e780e)
@@ -207,7 +207,7 @@ In this section we will present more advanced IPv6 setup, where your vRack conne
 The traffic path is as follows: inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local-link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
 Traffic comming back from such VM should use default route via first part of the local link (black one, fd00::1), then (possibly default) route from a host to it's gateway.
 
-### APIv6 commands
+#### APIv6 commands
 
 <details>
 <summary> <b>Define routed subnet</b> </summary>
@@ -231,7 +231,7 @@ In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::
 
 
 
-### Host-side configuration
+#### Host-side configuration
 
 <details>
 <summary> <b>Static IP configuration for a host (recommended)</b> </summary>
@@ -304,7 +304,7 @@ debian@vm-1:~$ sudo ip -6 route add default via fd00::1
 </details>
 
 
-### Setup verification
+#### Setup verification
 
 <details>
 <summary> <b>Local, on a host</b> </summary>
