@@ -150,11 +150,13 @@ Cette section aborde les actions qui peuvent être effectuées via l'API. Cela i
 
 Vous devez vous authentifier au préalable via cette [page](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#auth){.external}. 
 
-#### <ins>Actions</ins>
+<br>
 
-<details>
-<summary><b>1. Lister les vRack Services</b></summary>
-<blockquote>
+<ins>Actions :</ins>
+
+
+#### 1. Lister les vRack Services
+
     Vous devez tout d'abord lister vos vRack Services afin de récuperer l'id du vRack Services sur lequel vous voulez réaliser vos actions.
 
 Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
@@ -167,76 +169,14 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
 
-<details>
-<summary> Extrait du résultat de cette commande</summary>
-<blockquote>
-    
-``` json
-[
-  {
-    "checksum": "02643afe107az5025a342c96e6196a56",
-    "createdAt": "2024-04-09T14:56:46.564227Z",
-    "currentState": {
-      "displayName": "test_tracking",
-      "productStatus": "DRAFT",
-      "region": "LIM",
-      "subnets": [
-        {
-          "cidr": "10.0.0.0/24",
-          "displayName": null,
-          "serviceEndpoints": [],
-          "serviceRange": {
-            "cidr": "10.0.0.0/29",
-            "remainingIps": 3,
-            "reservedIps": 5,
-            "usedIps": 0
-          },
-          "vlan": null
-        }
-      ],
-      "vrackId": null
-    },
-    "currentTasks": [],
-    "id": "vrs-a9y-v91-xnm-f5u",
-    "resourceStatus": "READY",
-    "targetSpec": {
-      "displayName": "test_tracking",
-      "subnets": [
-        {
-          "cidr": "10.0.0.0/24"
-          "displayName": null,
-          "serviceEndpoints": [],
-          "serviceRange": {
-            "cidr": "10.0.0.0/29"
-          },
-          "vlan": null
-        }
-      ]
-    },
-    "updatedAt": "2024-04-09T15:16:14.97363Z",
-    "iam": {
-      "id": "e3cb9a6c-cf36-4b86-83d9-bfb1487110b5",
-      "urn": "urn:v1:eu:resource:vrackServices:vrs-a9y-v91-xnm-f5u"
-    }
-  },
-  ...
-]
-```
 
-</blockquote>
-
-
-</details>
 
 
 L'id qui sera utilisé dans notre exemple est le suivant `vrs-a9y-v91-xnm-f5u`
 
-</blockquote>
-</details>
+<br><br>
 
-<details>
-<summary><b>2. Lister tous les services managés éligibles au vRack Services concerné</b></summary>
-<blockquote>
+#### 2. Lister tous les services managés éligibles au vRack Services concerné
 
 Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource/-vrackServicesId-/eligibleManagedService){.external}
 ![image](https://github.com/ovh/docs/assets/60412/3da50fd3-be4b-479b-a7b3-f3449406b6d7)
@@ -248,36 +188,14 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
  -H "authorization: Bearer eyJhbGciOiJFZERTGSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTM3MDhFNjRDMDA4MDEiLCJraW5kIjoib9F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg" \
 ```
 
-<details>
-<summary>Résultat de cette commande</summary>
-<blockqquote>
-    
-``` json
-[
-  {
-    "managedServiceType": "storageNetApp",
-    "managedServiceURNs": [
-        "urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45",
-        "urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f"
-    ]
-  }
-]
-```
-
-</blockqquote>
-</details>
 
 Les ids des services managés utilisés plus bas dans notre exemple sont les suivants: 
 - `urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45`
 - `urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f`
 
-</blockquote>
-</details>
+<br><br>
 
-<details>
-<summary><b>3. Demander des mises à jour sur la configuration des vRack Services</b>
-</summary>
-<blockquote>
+#### 3. Demander des mises à jour sur la configuration des vRack Services
 
 Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#put-/vrackServices/resource/-vrackServicesId-){.external}
 ![image](https://github.com/ovh/docs/assets/60412/146cc671-6fdd-47ed-a741-5982bb9e07a8)
@@ -307,6 +225,8 @@ Notez qu'un Sous-réseau avec plusieurs Service Endpoint peut être créé dans 
 
 Notez que la suppression d'un Sous-réseau entraînera également la suppression des Service Endpoint intégrés.
 
+<br><br>
+
 <ins>Actions de configuration non transparentes</ins>
 
 La modification des caractéristiques de Sous-réseau énumérées ci-dessous entraînera une coupure de service pendant le traitement de la mise à jour. En effet elles sont interprétées comme la suppression du sous-réseau existant et la création d'un nouveau sous-réseau avec les caractéristiques fournies.  
@@ -320,18 +240,15 @@ Les Services Endpoint des services intégrés seront également supprimés et re
 
 Le vrackId est un attribut en lecture seule car l'association vRack/vRackServices est gérée par l'API vRack.
 
-</blockquote>
-</details>
 
 <br>
 
-#### <ins>Exemples</ins>
+<ins>Exemples</ins>
 
 Pour cette section, veuillez bien lire la section `Actions` ci-dessus
 
-<details>
-<summary><b>Modifier le displayName du vRack Services concerné</b></summary>
-<blockquote>
+
+#### Modifier le displayName du vRack Services concerné
     
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
@@ -342,13 +259,9 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 ```
 
-</blockquote>
-</details>
+<br>
 
-
-<details>
-<summary><b>Créer un Sous-réseau vide</b></summary>
-<blockquote>
+#### Créer un Sous-réseau vide
 
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
@@ -359,15 +272,9 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 ```
 
-</blockquote>
-</details>
+<br>
 
-
-
-
-<details>
-<summary><b>Créer un Service Endpoint dans un Sous-réseau existant</b></summary>
-<blockquote>
+#### Créer un Service Endpoint dans un Sous-réseau existant
 
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
@@ -378,14 +285,9 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 
 ```
 
-</blockquote>
-</details>
+<br>
 
-
-
-<details>
-<summary><b>Supprimer un Sous-réseau avec ses Service Endpoint</b></summary>
-<blockquote>
+#### Supprimer un Sous-réseau avec ses Service Endpoint
 
 ``` bash
 curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
@@ -395,9 +297,6 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
  -d '{"checksum":"8b70a21702a41638e32778c6400e1848","targetSpec":{"displayName":"MyVRS","subnets":[]}}' \
 
 ```
-
-</blockquote>
-</details>
 
 <br>
 
