@@ -1,7 +1,7 @@
 ---
 title: Scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy
 excerpt: Find out how to scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy
-updated: 2024-04-11
+updated: 2024-04-12
 ---
 
 ## Objective
