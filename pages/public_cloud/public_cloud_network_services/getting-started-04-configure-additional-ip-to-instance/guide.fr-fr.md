@@ -1,7 +1,7 @@
 ---
 title: Configurer une Additional IP
 excerpt: Découvrez comment ajouter des adresses Additional IP à la configuration de votre instance
-updated: 2023-07-25
+updated: 2024-04-14
 ---
 
 > [!primary]
@@ -34,7 +34,7 @@ Vous devrez peut-être configurer des adresses Additional IP sur vos instances, 
 
 ## En pratique
 
-Ce guide contient les configurations des distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à se connecter à votre instance via SSH ou via une session de connexion à l’interface graphique utilisateur (VNC pour une instance Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu’utilisateur avec des autorisations élevées (administrateur/sudo).
+Ce guide contient les configurations des distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à se connecter à votre instance via SSH ou via une session de connexion à l’interface graphique utilisateur (VNC pour une instance Windows). Vous trouverez dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps) des rappels pour vous connecter à votre instance via SSH. Les exemples ci-dessous supposent que vous êtes connecté en tant qu’utilisateur avec des autorisations élevées (administrateur/sudo).
 
 > [!primary]
 >
