@@ -215,11 +215,10 @@ Le `checksum`{.action} est utile dans deux cas :
 La requête peut combiner n'importe laquelle des actions suivantes sans interruption (ce qui signifie qu'il n'y aura pas de coupure du service lors de la mise à jour) :
 - mettre à jour le nom d'affichage des vRack Services
 - créer un Sous-réseau
-- supprimer un Sous-réseau
+- supprimer un Sous-réseau sans Service Endpoint
 - mettre à jour un Sous-réseau :
     - mettre à jour le nom d'affichage
     - créer un ou plusieurs Service Endpoint
-    - supprimer un ou plusieurs Service Endpoint
  
 Notez qu'un Sous-réseau avec plusieurs Service Endpoint peut être créé dans le même corps de requête.   
 
@@ -235,6 +234,8 @@ Les IP qui ont été attribuées aux services managés seront réélues et peuve
 - modifications dans le Subnet ServiceRange
 - modifications sur le Subnet Vlan
 - modifications du CIDR du sous-réseau
+- supprimer un Sous-réseau avec des Service Endpoint
+- supprimer un ou plusieurs Service Endpoint
 
 Les Services Endpoint des services intégrés seront également supprimés et recréés, ce qui implique une accessibilité fluctuante dans le vRack pour tous les services managés concernés.
 
