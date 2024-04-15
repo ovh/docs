@@ -162,7 +162,7 @@ Vous devez vous authentifier au préalable via cette [page](https://eu.api.ovh.c
 Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
 ![image](https://github.com/ovh/docs/assets/60412/7cdeb9c2-5a6e-4ca8-9403-8aede124e6d8)
 
-Voici la ligne de commande correspondante
+Voici la ligne de commande correspondante :
 ``` bash
 curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
@@ -181,7 +181,7 @@ L'id qui sera utilisé dans notre exemple est le suivant `vrs-a9y-v91-xnm-f5u`
 Voici la section concernée dans la page de l'API disponible sur via cette [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource/-vrackServicesId-/eligibleManagedService){.external}
 ![image](https://github.com/ovh/docs/assets/60412/3da50fd3-be4b-479b-a7b3-f3449406b6d7)
 
-Voici la ligne de commande correspondante
+Voici la ligne de commande correspondante :
 ``` bash
 curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u/eligibleManagedService" \
  -H "accept: application/json"\
@@ -189,7 +189,7 @@ curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5
 ```
 
 
-Les ids des services managés utilisés plus bas dans notre exemple sont les suivants: 
+Les ids des services managés utilisés plus bas dans notre exemple sont les suivants : 
 - `urn:v1:eu:resource:storageNetApp:examples-26ca-4fa4-a53e-79c2d0948z45`
 - `urn:v1:eu:resource:storageNetApp:examples-9f3b-43a9-8908-c7ab1ac7e58f`
 
