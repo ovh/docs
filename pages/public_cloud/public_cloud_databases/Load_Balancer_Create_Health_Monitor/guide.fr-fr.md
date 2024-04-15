@@ -1,50 +1,21 @@
 ---
-title: 'Guide : Création et Gestion d’un Health Monitor pour Load Balancer OVHcloud'
-excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Load Balancers OVHcloud via Manager, CLI, Horizon et Terraform'
+title: 'Guide : Création et Gestion d’un Health Monitor pour le Public Cloud Load Balancer  OVHcloud'
+excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Public Cloud Load Balancers OVHcloud via le Control Panel OVHcloud, CLI, Horizon et Terraform'
 updated: 2024-04-08
 ---
 
 ## Objectif
 
-Apprenez à créer et à gérer un Health Monitor pour vos Load Balancers OVHcloud, en utilisant différentes interfaces telles que le Manager OVHcloud, la ligne de commande (CLI), Horizon, et Terraform.
+Apprenez à créer et à gérer un Health Monitor pour vos Load Balancers OVHcloud, en utilisant différentes interfaces telles que le Control Panel OVHcloud, la ligne de commande (CLI), Horizon, et Terraform.
 
 ## Prérequis
 
 - Un compte OVHcloud actif.
+- Comprendre les concepts d'un load balancer : voir [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 - Un projet Public Cloud chez OVHcloud avec un accès fonctionnel.
-- Un Load Balancer déjà configuré dans votre espace projet OVHcloud.
+- Un Load Balancer déjà configuré dans votre espace projet OVHcloud [GAL] Add link to configuration page
 
 ## En pratique
-### Étape 1: Les concepts 
-Comprendre ces concepts clés est essentiel pour la gestion efficace d'un Health Monitor avec votre Load Balancer OVHcloud :
-
-- **Listeners** : Points d'écoute configurés avec un protocole et un port, acheminant les requêtes vers les serveurs adaptés.
-- **Pools** : Groupes de serveurs (Members) gérant les requêtes, régis par un algorithme de répartition de charge.
-- **Members** : Serveurs traitant les requêtes, essentiels à la performance de l'application.
-- **Health Monitors** : Processus vérifiant la disponibilité des Members pour assurer une distribution efficace du trafic.
-
-Pour entrer plus en détail, veuillez consulter : [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
-
-### Étape 2: Configuration initiale
-
-Lors de la configuration initiale de votre Health Monitor pour le Load Balancer OVHcloud, suivez ces étapes clés selon l'architecture de votre choix :
-
-1. **Configurer votre réseau :**
-   - **Réseau privé à privé :** Assurez la configuration du réseau privé pour un trafic interne fluide.
-   - **Public à privé :** Utilisez une IP flottante et configurez les règles de sécurité pour le trafic entrant.
-   - **Public à public :** Assignez des IP flottantes au Load Balancer et des IP publiques aux serveurs, en ajustant les règles de sécurité.
-
-2. **Déterminer l'emplacement et l'accès des serveurs :**
-   - Placez vos serveurs pour minimiser la latence selon l'emplacement des utilisateurs.
-   - Configurez le Load Balancer différemment selon que les serveurs utilisent des IP privées ou publiques.
-
-3. **Vérification des prérequis réseau :**
-   - Revoyez les configurations réseau telles que les plages d'IP, les groupes de sécurité, et les règles de pare-feu.
-
-Pour des informations détaillées sur chaque architecture et les prérequis réseau, consultez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
-
-### Étape 3: Création d’un Health Monitor
-
 Les Health Monitors jouent un rôle crucial dans la gestion de la disponibilité et des performances des services hébergés sur des infrastructures comme OVHcloud. Ils effectuent des vérifications régulières des serveurs pour garantir leur capacité à traiter les requêtes entrantes. Si un serveur ne répond pas aux critères de santé établis, il est temporairement retiré du pool, assurant ainsi que le trafic est dirigé uniquement vers les serveurs fonctionnels.
 
 ### Types de Health Monitors et Configurations
@@ -52,16 +23,16 @@ Les Health Monitors jouent un rôle crucial dans la gestion de la disponibilité
 Différents types de Health Monitors répondent à divers besoins spécifiques :
 
 #### HTTP/S
-Effectue des requêtes HTTP ou HTTPS, idéal pour vérifier l'état de santé des applications web.
+Effectue des requêtes HTTP ou HTTPS, idéal pour vérifier l'état de santé des applications web ou d'API REST
 - **`url_path`**: Chemin d'accès ciblé pour la vérification, par défaut à `/`.
 - **`http_method`**: Méthode HTTP utilisée pour la vérification, généralement `GET`.
 - **`expected_codes`**: Codes de réponse indiquant un état sain, typiquement `200`.
 
 #### PING
-- Envoie des pings ICMP pour tester rapidement la disponibilité réseau d'un serveur.
+- Envoie des pings ICMP pour tester la disponibilité réseau d'un serveur.
 
 #### TCP
-- Tente d'établir une connexion TCP pour confirmer la réactivité d'un service sur un port donné, sans transfert de données.
+- Tente d'établir une connexion TCP pour confirmer la disponibilité d'un service écoutant sur un port donné, sans transfert de données.
 
 #### TLS-HELLO
 - Initie une négociation SSL/TLS avec un message 'Client Hello', vérifiant la capacité de réponse SSL/TLS du serveur.
@@ -84,7 +55,7 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 
 #### Pool vs Health Monitor Compatibility Matrix
 
-##### Compatibilité entre Protocoles Listener et Pools
+##### Compatibilité entre Protocoles Listener et Pools => à supprimer car ce n'est pas l'objet du document.
 
 | Listener/Pool    | HTTP | HTTPS | SCTP | TCP | TERMINATED_HTTPS | UDP |
 |------------------|------|-------|------|-----|------------------|-----|
@@ -114,11 +85,7 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 
 Pour plus d'informations, visitez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
 
-### Meilleures Pratiques pour la Configuration des Health Monitors
-
-La mise en place efficace d’un Health Monitor est essentielle pour maintenir la haute disponibilité et la performance de vos services en ligne. Voici les meilleures pratiques pour optimiser votre configuration.
-
-#### Options Configurables
+#### Options Configurables => quelle différences par rapport à #### Options de Configuration Clés ne peut on pas fusionner ?
 
 Pour un Health Monitor efficace, accordez une attention particulière aux paramètres suivants :
 
@@ -128,7 +95,7 @@ Pour un Health Monitor efficace, accordez une attention particulière aux param�
   
 - **Nombre de tentatives (`max-retries`)** : Indique combien de fois un serveur doit échouer aux vérifications de santé consécutives avant d'être considéré comme défaillant.
 
-#### Conseils pour les Moniteurs de Santé HTTP
+#### Conseils pour les Moniteurs de Santé HTTP => idem on pourrait fusionner.
 
 Lors de la configuration de Health Monitors pour des applications web, gardez à l'esprit les conseils suivants :
 
@@ -142,7 +109,7 @@ Lors de la configuration de Health Monitors pour des applications web, gardez à
 
 - **Validation** : Testez la configuration en simulant des pannes de serveur pour vérifier que le Health Monitor réagit comme attendu.
   
-- **Monitoring** : Utilisez les outils de surveillance d’OVHcloud pour suivre les performances et l'état de santé de votre Load Balancer et ajustez la configuration au besoin.
+- **Monitoring** : Utilisez les outils de surveillance d’OVHcloud pour suivre les performances et l'état de santé de votre Load Balancer et ajustez la configuration au besoin. => ajouter une lien vers la page de monitoring https://help.ovhcloud.com/csm/fr-public-cloud-network-loadbalancer-monitoring-prometheus?id=kb_article_view&sysparm_article=KB0061210
 
 En intégrant ces meilleures pratiques dans votre processus de configuration, vous maximisez la disponibilité et la performance de vos applications hébergées, tout en assurant une expérience utilisateur optimale.
 
@@ -154,11 +121,11 @@ En intégrant ces meilleures pratiques dans votre processus de configuration, vo
 - Ajuster les paramètres du Health Monitor (délai, timeout, max-retries) selon les besoins et les performances observées.
 - Explorer des stratégies d'optimisation basées sur les données de performance et les retours d'expérience.
 
-### Étape 4:  Configuration d'un Health Monitor via Diverses Interfaces OVHcloud
+### Étape 4:  Configuration d'un Health Monitor via diverses interfaces OVHcloud
 
-La configuration d'un Health Monitor est essentielle pour assurer la haute disponibilité de vos services. Selon l'interface choisie, voici les étapes à suivre :
+Selon l'interface choisie, voici les étapes à suivre :
 
-#### Manager OVHcloud
+#### Control Panel OVHcloud
 
 1. **Connexion** : Connectez-vous à votre espace client OVHcloud.
 2. **Sélection du projet** : Allez dans la section "Public Cloud" et sélectionnez votre projet.
@@ -181,7 +148,7 @@ La configuration d'un Health Monitor est essentielle pour assurer la haute dispo
 
 #### Horizon (OpenStack)
 
-1.  **Connexion** : Connectez-vous à l'interface Horizon de votre projet OpenStack.
+1.  **Connexion** : Connectez-vous à l'interface Horizon de votre projet OpenStack.  => ajouter le lien https://help.ovhcloud.com/csm/fr-public-cloud-compute-horizon?id=kb_article_view&sysparm_article=KB0050895
 2.  **Navigation** : Dans le menu de gauche, sous "Network", trouvez et sélectionnez "Load Balancers".
 3.  **Sélection du Load Balancer** : Choisissez le Load Balancer que vous voulez configurer et cliquez sur l'onglet "Health Monitors".
 4.  **Ajout d'un Health Monitor** : Cliquez sur "Create Health Monitor" et remplissez les champs requis comme le type, l'intervalle de vérification, le nombre maximal de tentatives, et le délai d'attente.
