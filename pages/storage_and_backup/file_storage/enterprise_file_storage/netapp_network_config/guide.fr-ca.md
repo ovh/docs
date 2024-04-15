@@ -1,23 +1,23 @@
 ---
-title: "Enterprise File Storage - Configuration du réseau privé - Beta"
+title: "Enterprise File Storage - Configuration du réseau privé - Bêta"
 excerpt: Découvrez configurer un réseau privé pour votre service Enterprise File Storage depuis votre espace client OVHcloud
 updated: 2024-04-15
 flag: hidden
 ---
 
 > [!warning]
-> La fonctionnalité configuration du réseau privé pour Enterprise File Storage est actuellement en phase bêta.
+> La fonctionnalité configuration du réseau privé pour Enterprise File Storage est actuellement en phase Bêta.
 > Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Enterprise File Storage.
 
 ## Objectif
 
 Les services Enterprise File Storage peuvent être gérés via [les API OVHcloud](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start) ou depuis votre espace client OVHcloud.
 
-Découvrez dans ce guide comment rattacher votre service Enterprise File Storage à un [réseau privé vRack](https://www.ovhcloud.com/fr-ca/network/vrack/), via la technologie vRack Services et vRack Service Endpoint.
+Découvrez dans ce guide comment rattacher votre service Enterprise File Storage à un [réseau privé vRack](https://www.ovhcloud.com/fr-ca/network/vrack/), via la technologie vRack Services et la fonctionnalité vRack Service Endpoint.
 
 > [!primary]
 >
-> Pour plus d’informations concernant les vRack Services, veuillez consulter [cette page](/pages/network/vrack_services/global).
+> Pour plus d’informations concernant vRack Services, consultez [cette page](/pages/network/vrack_services/global).
 >
 
 ## Prérequis
