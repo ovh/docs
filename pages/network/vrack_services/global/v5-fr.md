@@ -392,14 +392,15 @@ Retour de l'appel API :
 > - `currentTasks` : traitement asynchrone en cours
 >   
 
-> [!warning]
->
-> Résultat attendu: Avoir un vRack Services avec un `ressourceStatus` à `READY`
->
 
 <br><br>
 
 <ins>3. Un dernier GET afin de vérifier que les actions asynchrones sont terminées</ins>
+
+> [!warning]
+>
+> Résultat attendu: Avoir un vRack Services avec un `ressourceStatus` à `READY`
+>
 
 Action formulée avec le `GET`{.action} :
 
