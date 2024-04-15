@@ -99,7 +99,7 @@ Pour commencer, suivez les étapes de connexion ci-dessous :
 >
 > Si vous recevez le message d’alerte « This domain is already connected to another Squarespace site » (Ce domaine est déjà connecté à un autre site Squarespace), vérifiez vos autres sites web Squarespace pour déterminer à quel site le nom de domaine est connecté. Puis, déconnectez-le de ce site web. 
 
-Pour la suite du processus, nous vous invitons à vous rendre directement à l’étape 2 du guide sur le site de SquareSpace, en cliquant sur [**ce lien**](https://support.squarespace.com/hc/fr-fr/articles/205812378-Connecter-un-domaine-tiers-%C3%A0-votre-site-Squarespace){.external}.
+Pour la suite du processus, rendez-vous directement à l’étape 2 de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/205812378-Connecter-un-domaine-tiers-%C3%A0-votre-site-Squarespace){.external}.
 
 > [!primary]
 >
