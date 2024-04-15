@@ -1,19 +1,19 @@
 ---
 title: "Enterprise File Storage - Private network configuration - Beta (EN)"
-excerpt: "Find out how to set up a private network for your Enterprise File Storage service from your OVHcloud customer space."
+excerpt: "Find out how to set up a private network for your Enterprise File Storage service from your OVHcloud Control Panel"
 updated: 2024-04-15
 flag: hidden
 ---
 
 > [!warning]
 > Usage of private network configuration for Enterprise File Storage is currently in Beta phase.
-> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Enterprise File Storage services.
+> This guide may be incomplete and will be extended during the Beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Enterprise File Storage services.
 
 ## Objective
 
-Enterprise File Storage services can be managed via [OVHcloud APIs](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start) or from your OVHcloud Control Panel.
+Enterprise File Storage services can be managed via [OVHcloud API](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start) or from your OVHcloud Control Panel.
 
-This guide explains how to connect your Enterprise File Storage service to a [vRack private network](https://www.ovhcloud.com/fr/network/vrack/) using vRack Services and vRack Service Endpoint technology.
+This guide explains how to connect your Enterprise File Storage service to a [vRack private network](https://www.ovhcloud.com/it/network/vrack/) using vRack Services and vRack Service Endpoint technology.
 
 > [!primary]
 >
@@ -22,7 +22,7 @@ This guide explains how to connect your Enterprise File Storage service to a [vR
 
 ## Requirements
 
-- An [Enterprise File Storage](https://www.ovhcloud.com/it/storage-solutions/enterprise-file-storage/) service in your OVHcloud account.
+- An [Enterprise File Storage](https://www.ovhcloud.com/it/storage-solutions/enterprise-file-storage/) service in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Overview
@@ -47,7 +47,7 @@ Click the `Configure Network Parameters`{.action} link to configure your vRack S
 
 ### Step 1 - Selecting or creating a vRack
 
-You must have a vRack to activate your vRack services. If you don't have one at this stage, you can order one using the `Order`{.action} button in the Control Panel. The vRack is a free service. Otherwise, select your vRack from the drop down menu.
+You must have a vRack to activate your vRack services. OVHcloud vRack is a free service. If you don't have one at this stage, you can order one using the `Order`{.action} button in the Control Panel. Otherwise, select your vRack from the drop down menu.
 
 ![Sans configuration réseau](images/02-EFS.png){.thumbnail}
 
