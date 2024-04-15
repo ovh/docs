@@ -22,7 +22,7 @@ updated: 2024-04-15
 
 ### Using the Control Panel
 
-To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
+To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 
 ![My Dashboard containers](images/highperf-create-container-2022092808185322.png)
 
@@ -63,7 +63,7 @@ Name your bucket:
 
 ![Container name](images/highperf-create-container-20220928082938155.png)
 
-Finally, decide whether or not you wish to encrypt your data using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-encrypt-objects-sse-c?id=kb_article_view&sysparm_article=KB0047320). 
+Finally, decide whether or not you wish to encrypt your data using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
 ![Encryption](images/create-container-encryption.PNG)
 
