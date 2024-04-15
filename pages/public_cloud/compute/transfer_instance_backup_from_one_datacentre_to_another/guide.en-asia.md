@@ -76,6 +76,8 @@ Finally, run this command to download the backup on the jump host:
 $ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+<a name="transfer"></a>
+
 ### Transfer the backup to another OpenStack region
 
 To start the transfer process, you first need to load new environment variables.
