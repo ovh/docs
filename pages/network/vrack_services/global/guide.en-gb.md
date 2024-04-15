@@ -1,3 +1,9 @@
+---
+title: "vRack Services - Exposing a Managed Service on Your vRack"
+excerpt: "Discover how to expose your managed service on the vRack using the vRack Services product, using the Service Endpoint feature."
+updated: 2024-04-15
+---
+
 ## Introduction
 
 The vRack Services product allows you to benefit from network services on the vRack private network. By creating a Service Endpoint, you can expose an OVHcloud managed service with a private IP address on your vRack. This ensures that all communications with your managed service remain private and secure as they never leave your private network, which is isolated from other clients and the public network. It's also quick and easy to configure, either via the API or the control panel The first managed service to support Service Endpoint is [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/){.external}. Other OVHcloud managed services will support Service Endpoint in the future.
