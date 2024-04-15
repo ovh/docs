@@ -244,7 +244,7 @@ network:
 You can test your configuration using this command:
 
 ```bash
-~# sudo netplan try
+sudo netplan try
 ```
 
 If it is correct, apply it using the following command:

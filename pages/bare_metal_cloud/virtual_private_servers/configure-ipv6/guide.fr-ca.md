@@ -248,7 +248,7 @@ network:
 Vous pouvez tester votre configuration à l'aide de la commande suivante :
 
 ```bash
-~# sudo netplan try
+sudo netplan try
 ```
 
 Si elle est correcte, appliquez-la à l'aide de la commande suivante :
