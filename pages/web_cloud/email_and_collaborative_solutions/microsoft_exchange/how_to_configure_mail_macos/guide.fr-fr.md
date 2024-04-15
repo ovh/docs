@@ -1,7 +1,7 @@
 ---
 title: Configurer son compte Exchange sur Mail de macOS
 excerpt: Apprenez à configurer votre compte Exchange sur Mail de macOS El Capitan, Sierra et High Sierra
-updated: 2021-12-28
+updated: 2024-04-16
 ---
 
 <style>
@@ -62,16 +62,16 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 4**
->> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mailcomplète <br>- Mot de passe : laissez votre **adresse e-mail**<br> - URL interne : **ex?.mail.ovh.net** ( remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- URL externe : **ex?.mail.ovh.net** ( remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br><br>
+>> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mail complète <br>- Mot de passe : laissez votre **adresse e-mail**<br> - URL interne : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- URL externe : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br><br>
 >>
 >> > [!warning]
 >> >
->> > Il est normal de voir apparaitre le message en rouge « **Impossible de vérfier le nom ou le mot de passe du compte** » lorsque la fenêtre apparait la première fois. Néanmoins, si ce message persiste après validation, cela signifie que les informations saisie sont érronées.<br><br>
+>> > Il est normal de voir apparaître le message en rouge « **Impossible de vérfier le nom ou le mot de passe du compte** » lorsque la fenêtre apparaît la première fois. Néanmoins, si ce message persiste après validation, cela signifie que les informations saisies sont erronées.<br><br>
 >>
 >> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 5**
->> On plus de vos e-mails, vous pouvez sélectionner d'autres fonctionnalités Exchange que vous souhaitez gérer depuis votre Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
+>> En plus de vos e-mails, vous pouvez sélectionner d'autres fonctionnalités Exchange que vous souhaitez gérer depuis votre Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Utiliser l'adresse e-mail
 
@@ -88,7 +88,7 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
 - Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Préférences...`{.action} **ou** `Réglages...`{.action} selon votre version de macOS.
-- Depuis l'onglet `Comptes`{.action}, sélectionez le compte concerné dans la colonne de gauche, puis cliquez sur `Réglages du serveur`{.action}.
+- Depuis l'onglet `Comptes`{.action}, sélectionnez le compte concerné dans la colonne de gauche, puis cliquez sur `Réglages du serveur`{.action}.
 
 ![mailmac](images/mail-mac-exchange06.png){.thumbnail .w-400 .h-600}
 
