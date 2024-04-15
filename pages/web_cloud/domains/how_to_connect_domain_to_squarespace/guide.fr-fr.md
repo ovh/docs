@@ -53,7 +53,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
->> Pour SquareSpace, vous devrez créer 4 adresses IPv4. 
+>> Vous devrez créer 4 enregistrements de type « A » successivement afin de renseigner les 4 adresses IPv4 relatives à SquareSpace. 
 >> Laissez le champ **Sous-domaine** vide et saisissez les adresses IPv4 de SquareSpace `198.185.159.144` ; `198.185.159.145` ; `198.49.23.144` ; `198.49.23.145` dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A », ; répétez l'opération pour les 3 autres adresses IPv4 `198.185.159.145` ; `198.49.23.144` ; `198.49.23.145` et passez à l'étape 2.
 > **Etape 2**
