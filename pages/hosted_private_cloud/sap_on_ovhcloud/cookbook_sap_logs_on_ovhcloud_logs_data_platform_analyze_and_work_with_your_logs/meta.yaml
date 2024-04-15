@@ -1,2 +1,7 @@
 id: c187986a-7d6a-412c-b108-8a81aa736987
+<<<<<<< HEAD
 full_slug: sap-ldp-logs-analysis
+=======
+full_slug: sap-logs-on-ldp-analyze-and-work-with-logs
+reference_category: hosted-private-cloud-sap-ovhcloud-observability
+>>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
