@@ -1,6 +1,6 @@
 ---
 title: "Object Storage - Création d'un bucket"
-updated: 2022-09-27
+updated: 2024-04-15
 ---
 
 ## Objectif
@@ -59,9 +59,13 @@ Les informations d'identification de l'utilisateur sont alors affichées :
 
 ![User created credentials](images/highperf-create-container-20220928082836834.png)
 
-Pour finir, nommez votre bucket :
+Nommez votre bucket :
 
 ![Container name](images/highperf-create-container-20220928082938155.png)
+
+Enfin, décidez si vous souhaitez ou non chiffrer vos données à l’aide de [SSE-S3 (chiffrement côté serveur avec les clés managées OVHcloud)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
+
+![Encryption](images/create-container-encryption.PNG)
 
 Félicitations, votre bucket est créé :
 
