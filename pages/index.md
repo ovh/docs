@@ -1764,6 +1764,7 @@
             + [Enterprise File Storage - Managing volume ACLs](storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_acl)
             + [Enterprise File Storage - Managing volume snapshots](storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)
             + [Enterprise File Storage - FAQ](storage_and_backup/file_storage/enterprise_file_storage/netapp_faq)
+            + [Enterprise File Storage - Private network configuration - Beta](storage_and_backup/file_storage/enterprise_file_storage/netapp_network_config)
             + [File Storage services - Responsibility model](account_and_service_management/responsibility_sharing/file-storage)
         + [HA-NAS](storage-file-storage-ha-nas)
             + [Getting started with a HA-NAS solution](storage_and_backup/file_storage/ha_nas/nas_get_started)
