@@ -10,6 +10,6 @@ flag: hidden
 ## Objective
 
 > [!primary]
-> This page is a temporary placeholder for the future VCD FAQ.
+> This page is a temporary placeholder for the future SAP logs on OVHcloud Logs Data Platform feature.
 >
 Join our community of users on <https://community.ovh.com/en/>.
