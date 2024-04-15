@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Creating a bucket
-updated: 2022-09-27
+updated: 2024-04-15
 ---
 
 ## Objective
@@ -59,9 +59,11 @@ The user credentials are then displayed:
 
 ![User created credentials](images/highperf-create-container-20220928082836834.png)
 
-Finally, name your bucket:
+Name your bucket:
 
 ![Container name](images/highperf-create-container-20220928082938155.png)
+
+Finally, decide whether or not you wish to encrypt your data using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-encrypt-objects-sse-c?id=kb_article_view&sysparm_article=KB0047320). 
 
 Congratulations, your bucket is created:
 
