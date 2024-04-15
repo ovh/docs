@@ -399,7 +399,7 @@ Retour de l'appel API :
 
 > [!warning]
 >
-> Résultat attendu: Avoir un vRack Services avec un `ressourceStatus` à `READY`
+> Résultat attendu: Avoir un vRack Services avec un `ressourceStatus` à `READY`. Si ce n'est pas le cas, réitérer le `GET` quelques instants plus tard.
 >
 
 Action formulée avec le `GET`{.action} :
