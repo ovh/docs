@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2024-04-04
+updated: 2024-04-15
 ---
 
 > [!warning]
@@ -244,7 +244,7 @@ Réplication simple entre 2 buckets :
       "Status": "Enabled",
       "Priority": 1,
       "Filter": { },
-      "DeleteMarkerReplication": { "Status": "Disabled" }
+      "DeleteMarkerReplication": { "Status": "Disabled" },
       "Destination": {
         "Bucket": "arn:aws:s3:::destination-bucket"
       }
@@ -377,10 +377,12 @@ $ aws s3 mb s3://my-source-bucket
 aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
 ```
 
-#### Activer le versioning dans le bucket de destination
+#### Activer le versioning dans le bucket de destination et la source
 
 ```bash
 $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
+$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
+
 ```
 
 #### Appliquer la configuration de réplication
@@ -388,7 +390,7 @@ $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.
 À l'aide de la CLI AWS, la configuration de réplication est appliquée au bucket source.
 
 ```bash
-$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration <conf.json>
+$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration file://<<conf.json>
 ```
 
 **_Exemple:_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.
