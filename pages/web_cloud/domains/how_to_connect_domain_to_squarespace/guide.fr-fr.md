@@ -87,7 +87,8 @@ Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion
 >
 > Vous ne pouvez pas connecter un nom de domaine personnalisé à SquareSpace si le nom de domaine comprend le mot « squarespace » ou « sqsp ».
 
-Pour commencer, suivez les étapes de connexion ci-dessous : 
+Pour commencer, suivez les étapes de connexion ci-dessous :
+
 1.	Connectez-vous à votre compte SquareSpace et rendez-vous dans le panneau ‘Noms de domaine’{.action}. 
 2.	Cliquez sur ‘J’ai déjà un domaine’{.action} puis sur ‘Saisir le domaine’ {.action}. 
 3.	Cliquez sur ‘Connecter le Domaine’{.action}. 
