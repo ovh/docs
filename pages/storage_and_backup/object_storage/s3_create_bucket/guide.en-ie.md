@@ -65,6 +65,8 @@ Name your bucket:
 
 Finally, decide whether or not you wish to encrypt your data using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-encrypt-objects-sse-c?id=kb_article_view&sysparm_article=KB0047320). 
 
+![Encryption](images/create-container-encryption.PNG)
+
 Congratulations, your bucket is created:
 
 ![Result](images/highperf-create-container-20220928083209650.png)
