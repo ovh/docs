@@ -51,13 +51,13 @@ It is a regional service. You must therefore select the region in which you inte
 ---
 
 You must have a vRack to activate vRack Services. If you do not have one at this stage, you can order one. 
-You are under no obligation to order one at this stage, you can do so later and return to the vRack Service creation process.
+You are under no obligation to order one at this stage, you can do so later and return to the vRack Services creation process.
 
 ![overview 01](images/04-VRS-v2.png){.thumbnail}
 
 ---
 
-Once the vRack Services activation request has been made, you will be taken to the list of vRack Services. You can associate a vRack with a vRack Service directly from this page.
+Once the vRack Services activation request has been made, you will be taken to the list of vRack Services. You can associate a vRack with a vRack Services directly from this page.
 
 ![overview 01](images/05-VRS-v2.png){.thumbnail}
 
@@ -158,7 +158,7 @@ You must first authenticate via this [page](https://eu.api.ovh.com/console-previ
 <ins>Actions :</ins>
 
 #### 1. List vRack Services
-    First, you need to list your vRack services to get the ID of the vRack service on which you want to perform your actions.
+    First, you need to list your vRack services to get the ID of the vRack Services on which you want to perform your actions.
 
 Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
 ![image](https://github.com/ovh/docs/assets/60412/7cdeb9c2-5a6e-4ca8-9403-8aede124e6d8)
@@ -294,10 +294,10 @@ curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4
 - The length of the subnet range is between /16 and /24.
 - Modifying the subnet range will cause an interruption of the associated service endpoints (during the reconfiguration period).
 - The valid VLAN ID range is from 2 to 4094. The value "null" is allowed (no VLAN / untagged).
-- Each subnet address range must be unique for a given vRack Service. Overlaps are detected and discarded when the subnet is created.
-    - During the beta, a maximum of 1 subnet per vRack Service can be defined by the customer.
+- Each subnet address range must be unique for a given vRack Services. Overlaps are detected and discarded when the subnet is created.
+    - During the beta, a maximum of 1 subnet per vRack Services can be defined by the customer.
 - Modifying the VLAN ID will cause an interruption of the associated service endpoints (during the reconfiguration period).
-- Each VLAN ID must be unique for a given vRack Service.
+- Each VLAN ID must be unique for a given vRack Services.
 - The first and last IP addresses of the subnet cannot be used and therefore must not be configured on any of the servers connected to the vRack associated with the vRack Services.
 
 ### Service Range
