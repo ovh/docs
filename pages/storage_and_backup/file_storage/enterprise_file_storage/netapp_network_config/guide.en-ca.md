@@ -22,8 +22,8 @@ This guide explains how to connect your Enterprise File Storage service to a [vR
 
 ## Requirements
 
-- An [Enterprise File Storage](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/) service in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [Enterprise File Storage](https://www.ovhcloud.com/en-ca/storage-solutions/enterprise-file-storage/) service in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Overview
 
@@ -37,7 +37,7 @@ Enterprise File Storage is a service that is exposed to the vRack via an IP addr
 
 ## Instructions <a name="instructions"></a>
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Bare Metal Cloud`{.action} from the top navigation bar. Go to `Storage and Backup`{.action} then `Enterprise File Storage`{.action} and select your service from the list.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and select `Bare Metal Cloud`{.action} from the top navigation bar. Go to `Storage and Backup`{.action} then `Enterprise File Storage`{.action} and select your service from the list.
 
 ![without network configuration](images/01-EFS.png){.thumbnail}
 
@@ -108,6 +108,6 @@ You can now follow the guides below to create and manage your volumes, snapshots
 
 [Enterprise File Storage - Managing volume snapshots](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

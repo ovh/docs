@@ -13,7 +13,7 @@ flag: hidden
 
 Les services Enterprise File Storage peuvent être gérés via [les API OVHcloud](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start) ou depuis votre espace client OVHcloud.
 
-Découvrez dans ce guide comment rattacher votre service Enterprise File Storage à un [réseau privé vRack](https://www.ovhcloud.com/fr/network/vrack/), via la technologie vRack Services et vRack Service Endpoint.
+Découvrez dans ce guide comment rattacher votre service Enterprise File Storage à un [réseau privé vRack](https://www.ovhcloud.com/fr-ca/network/vrack/), via la technologie vRack Services et vRack Service Endpoint.
 
 > [!primary]
 >
@@ -22,8 +22,8 @@ Découvrez dans ce guide comment rattacher votre service Enterprise File Storage
 
 ## Prérequis
 
-- Avoir un service [Enterprise File Storage](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Avoir un service [Enterprise File Storage](https://www.ovhcloud.com/fr-ca/storage-solutions/enterprise-file-storage/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## Overview
 
@@ -37,7 +37,7 @@ Enterprise File Storage est un service exposé via une adresse IP sur le vRack. 
 
 ## En pratique <a name="instructions"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionez `Bare Metal Cloud`{.action} dans la barre de navigation supérieure. Ouvrez `Storage et Backup`{.action} puis `Enterprise File Storage`{.action} et sélectionnez votre service dans la liste.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionez `Bare Metal Cloud`{.action} dans la barre de navigation supérieure. Ouvrez `Storage et Backup`{.action} puis `Enterprise File Storage`{.action} et sélectionnez votre service dans la liste.
 
 ![Sans configuration réseau](images/01-EFS.png){.thumbnail}
 
@@ -110,6 +110,6 @@ Vous pouvez à présent suivre les guides ci-dessous pour créer et gérer vos v
 
 [Enterprise File Storage - Gestion des snapshots de volumes](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
