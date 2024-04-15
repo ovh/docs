@@ -157,7 +157,7 @@ You must first authenticate via this [page](https://eu.api.ovh.com/console-previ
 Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
 ![image](https://github.com/ovh/docs/assets/60412/7cdeb9c2-5a6e-4ca8-9403-8aede124e6d8)
 
-Here is the command line
+Here is the command line :
 ``` bash
 curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
@@ -173,7 +173,7 @@ Here is the relevant section of the API page, accessible via this [url](https://
 ![image](https://github.com/ovh/docs/assets/60412/3da50fd3-be4b-479b-a7b3-f3449406b6d7)
 
 
-Here is the command line
+Here is the command line :
 ``` bash
 curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u/eligibleManagedService" \
  -H "accept: application/json"\
@@ -191,7 +191,7 @@ The ids of the managed services used in our example below are as follows:
 Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#put-/vrackServices/resource/-vrackServicesId-){.external}
 ![image](https://github.com/ovh/docs/assets/60412/146cc671-6fdd-47ed-a741-5982bb9e07a8)
 
-This is the only route that manages any updates to the vRack Services configuration. It works as follows:
+This is the only route that manages any updates to the vRack Services configuration. It works as follows :
 1. You define a new target specification in the body of the request.
 2. If this specification is validated, you get the resource back with the updated targetSpec and checksum values.
 3. The request is processed by one or more asynchronous tasks aimed at reconciling the current state with the targetSpec.
