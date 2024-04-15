@@ -103,7 +103,7 @@ Pour la suite du processus, rendez-vous directement à l’étape 2 de ce [guide
 
 > [!primary]
 >
-> La vérification de votre nom de domaine peut prendre de 24 à 72 heures avant que la connexion ne fonctionne correctement. En attendant, SquareSpace vous invite à vérifier l’état d’avancement de la connexion et les paramètres du domaine dans le panneau ‘Aperçu du domaine’{.action}. Nous vous invitons pour cela à vous rendre à l’étape 7 de leur guide sur [**ce lien**](https://support.squarespace.com/hc/fr-fr/articles/205812378-Connecter-un-domaine-tiers-%C3%A0-votre-site-Squarespace){.external}.
+> La vérification de votre nom de domaine peut prendre de 24 à 72 heures avant que la connexion ne fonctionne correctement. En attendant, SquareSpace vous invite à vérifier l’état d’avancement de la connexion et les paramètres du nom de domaine dans le panneau `Aperçu du domaine`{.action}. Pour cela, rendez-vous à l’étape 7 de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/205812378-Connecter-un-domaine-tiers-%C3%A0-votre-site-Squarespace){.external}.
 
 Si vous utilisez une offre e-mail OVHcloud ou que vous prévoyez de souscrire à l'une de [nos offres e-mail](https://www.ovhcloud.com/fr/emails/), vous devez également préparer vote zone DNS en conséquence. Consultez notre guide sur la [configuration d’un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx).
 
