@@ -80,7 +80,7 @@ Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion
 > [!primary]
 >
 > - Vous pouvez connecter votre nom de domaine à un site SquareSpace d’essai ou payant. Vous ne pouvez pas le connecter à un site expiré.
-> - Si vous avez un compte e-mail associé à votre nom de domaine, vous pouvez continuer de l’utiliser une fois le domaine connecté à SquareSpace.
+> - Si vous avez un compte e-mail associé à votre nom de domaine, vous pouvez continuer de l’utiliser une fois le domaine connecté à SquareSpace. Avant de connecter votre nom de domaine, nous vous recommandons de prendre connaissance de ce [guide SquareSpace](https://support.squarespace.com/hc/fr-fr/articles/217601877-Utiliser-avec-Squarespace-une-adresse-e-mail-de-domaine-personnalis%C3%A9-que-vous-poss%C3%A9dez-d%C3%A9j%C3%A0){.external}.
 > - Vous pouvez utiliser plusieurs nom de domaine personnalisés pour votre site web. Vous pouvez en connecter ou en enregistrer autant que vous le souhaitez.
 
 > [!warning]
