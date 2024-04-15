@@ -6,7 +6,7 @@ updated: 2024-04-11
 
 ## Objective
 
-Enterprise File Storage services can be managed [via OVHcloud APIs](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start) or from your OVHcloud Customer Area.
+Enterprise File Storage services can be managed [via OVHcloud APIs](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start) or from your OVHcloud Control Panel.
 
 This guide explains how to connect your Enterprise File Storage service to a [vRack private network](https://www.ovhcloud.com/fr/network/vrack/) using vRack Services and vRack Service Endpoint technology.
 
@@ -33,7 +33,7 @@ Enterprise File Storage is a service that is exposed to the vRack via an IP addr
 
 ## Instructions <a name="instructions"></a>
 
-Log in to your [OVHcloud Customer Area](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=en) and select 'Bare Metal Cloud' {.action} from the top navigation bar. Go to `Storage and Backup`{.action} then `Enterprise File Storage`{.action} in the left hand menu and select your service from the list.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=en) and select 'Bare Metal Cloud' {.action} from the top navigation bar. Go to `Storage and Backup`{.action} then `Enterprise File Storage`{.action} in the left hand menu and select your service from the list.
 
 ![Sans configuration réseau](images/01-EFS.png){.thumbnail}
 
