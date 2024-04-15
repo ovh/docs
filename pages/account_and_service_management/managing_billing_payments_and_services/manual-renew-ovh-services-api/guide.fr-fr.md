@@ -1,12 +1,13 @@
 ---
 title: "Renouveler mes services via l'API OVHcloud"
 excerpt: 'Découvrez comment renouveler vos services via l’API OVHcloud'
-updated: 2020-05-05
+updated: 2024-05-15
 ---
 
 ## Objectif
 
-Nativement, OVHcloud vous propose le renouvellement automatique de votre offre. Il est néanmoins possible de renouveler vos services en utilisant les API.
+Originellement, OVHcloud vous propose le renouvellement automatique de votre offre. Il est néanmoins possible de renouveler vos services en utilisant les API.
+Il est possible également de réaliser cette démarche via l'espace client OVHcloud, comme le décrit le guide [Renouveler mes services OVH]([[https://api.ovh.com/console/#/service/{serviceId}/renew#GET](https://help.ovhcloud.com/csm/fr-billing-renewing-service-via-api?id=kb_article_view&sysparm_article=KB0042903](https://help.ovhcloud.com/csm/fr-billing-automatic-renewal?id=kb_article_view&sysparm_article=KB0042839))){.external}
 
 **Ce guide vous explique comment effectuer cette opération de renouvellement.**
 
