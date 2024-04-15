@@ -389,7 +389,7 @@ Retour de l'appel API :
 > Points remarquables:
 > - `targetSpec` mise à jour avec la demande et nous avons également un nouveau `checksum`
 > - `resourceStatus` passe à `UPDATING`
-> - `currentTasks`` : traitement asynchrone en cours
+> - `currentTasks` : traitement asynchrone en cours
 >   
 
 > [!warning]
