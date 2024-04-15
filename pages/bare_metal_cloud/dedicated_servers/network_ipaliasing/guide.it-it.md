@@ -288,7 +288,7 @@ network:
        INTERFACE_NAME:
            dhcp4: true
            addresses:
-           - ADDITIONAL_IP1/32
+           - ADDITIONAL_IP/32
 ```
 
 Se è necessario configurare due indirizzi Additional IP, il file di configurazione dovrebbe essere simile al seguente:

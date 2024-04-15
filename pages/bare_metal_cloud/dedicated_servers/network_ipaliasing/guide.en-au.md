@@ -272,7 +272,7 @@ network:
     INTERFACE_NAME:
       dhcp4: true
       addresses:
-        - ADDITIONAL_IP1/32
+        - ADDITIONAL_IP/32
 ```
 
 If you have two Additional IPs to configure, the configuration file should look like this:
