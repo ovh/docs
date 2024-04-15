@@ -1,7 +1,7 @@
 ---
 title: Upgrade your cluster service plan
 excerpt: Find out how to upgrade the service plan of your cluster
-updated: 2023-12-11
+updated: 2024-04-15
 ---
 
 ## Objective
@@ -19,11 +19,11 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 ## Instructions
 
-To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `General Information`{.action} tab.
+To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then you should direclty come across the `General Information`{.action} tab.
 
 ![Cluster overview](images/cluster_overview.png)
 
-Click `change solution`{.action} and choose the new plan of your cluster.
+Click `Upgrade your plan`{.action} and choose the desired new plan of your cluster.
 
 ![Change solution](images/plan_change_view.png)
 
