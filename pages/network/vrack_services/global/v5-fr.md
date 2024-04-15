@@ -250,7 +250,7 @@ Pour cette section, veuillez bien lire la section `Actions` ci-dessus
 
 <br>
 
-<ins>1. Récuperer le `checksum` et le `targetSpec` d'un vRack donné</ins> 
+<ins>1. Récuperer le `checksum` et le `targetSpec` du vRack Services donné</ins> 
 
 Action formulée avec un `GET`{.action} :
 
