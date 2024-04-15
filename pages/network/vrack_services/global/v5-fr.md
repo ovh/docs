@@ -480,7 +480,7 @@ Retour de l'appel API :
 > [!primary]
 >
 > Points remarquables:
-> - `resourceStatus` passe à `READY` ainsi le `currentState` est completement aligné avec le `targetSpec`.
+> - `currentState` est completement aligné avec le `targetSpec` ainsi `resourceStatus` passe à `READY`.
 > - `productStatus` passe à `ACTIVE` car la configuration du vRack Services actuel permet d'accéder au Service Endpoint depuis le vRack.
 > - L'IP attribuée au Service Managé est la suivante "10.120.0.1".
 > - Il reste 2 IP attribuables dans le ServiceRange.
