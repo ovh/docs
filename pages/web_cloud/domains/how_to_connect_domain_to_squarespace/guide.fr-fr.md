@@ -55,7 +55,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
 >> Pour SquareSpace, vous devrez créer 4 adresses IPv4. 
 >> Laissez le champ **Sous-domaine** vide et saisissez les adresses IPv4 de SquareSpace `198.185.159.144` ; `198.185.159.145` ; `198.49.23.144` ; `198.49.23.145` dans le champ **Cible**.
->> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A » et passez à l'étape 2.
+>> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A », ; répétez l'opération pour les 3 autres adresses IPv4 `198.185.159.145` ; `198.49.23.144` ; `198.49.23.145` et passez à l'étape 2.
 > **Etape 2**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
