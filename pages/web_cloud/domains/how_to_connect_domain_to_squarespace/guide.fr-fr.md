@@ -92,7 +92,7 @@ Pour commencer, suivez les étapes de connexion ci-dessous :
 1.	Connectez-vous à votre compte SquareSpace et rendez-vous dans le panneau `Noms de domaine`{.action}. 
 2.	Cliquez sur `J’ai déjà un domaine`{.action} puis sur `Saisir le domaine`{.action}. 
 3.	Cliquez sur ‘Connecter le Domaine’{.action}. 
-4.	Sélectionnez **OVHcloud** dans le menu déroulant. Si vous ne le trouvez pas dans la sélection, cliquez sur ‘Autre’{.action}. Vous pourrez connecter votre domaine même si le fournisseur ne figure pas sur la liste. 
+4.	Sélectionnez **OVHcloud** dans le menu déroulant. Si vous ne le trouvez pas dans la sélection, cliquez sur `Autre`{.action}. Vous pourrez connecter votre domaine même si le fournisseur ne figure pas sur la liste. 
 5.	Cliquez sur ‘Connecter le Domaine’{.action} puis sur ‘Continuer’{.action}.
 
 > [!warning]
