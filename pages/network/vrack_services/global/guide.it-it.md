@@ -51,7 +51,7 @@ vRack Services is activated and configured by assigning it a name and a region.
 
 It is a regional service. You must therefore select the region in which you intend to use it. To benefit from the Service Endpoint, you must select the region corresponding to your OVHcloud managed service.
 
-![overview 01](images/03-VRS-v2.png){.thumbnail}
+![overview 01](images/03-VRS-v4.png){.thumbnail}
 
 You must have a vRack to activate vRack Services. If you do not have one at this stage, you can order one uding the `Order`{.action} button in the Control Panel.
 
