@@ -1819,6 +1819,7 @@
         + [Cancelling an Additional IP service](network/additional_ip/additional-IP-cancellation)
     + [Network and Security](network-security)
         + [Monitoring DDoS attacks with the Network Security Dashboard](bare_metal_cloud/dedicated_servers/network_security_dashboard)
+        + [vRack Services - Exposing a Managed Service on Your vRack](network/vrack_services/global)
     + [OVHcloud Connect](products/network-ovhcloud-connect)
         + [Concepts](network-ovhcloud-connect-concepts)
             + [Concepts overview](network/ovhcloud_connect/occ-concepts-overview)
