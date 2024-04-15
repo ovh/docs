@@ -158,12 +158,13 @@ You must first authenticate via this [page](https://eu.api.ovh.com/console-previ
 <ins>Actions :</ins>
 
 #### 1. List vRack Services
-    First, you need to list your vRack services to get the ID of the vRack Services on which you want to perform your actions.
+First, you need to list your vRack services to get the ID of the vRack Services on which you want to perform your actions.
 
 Here is the relevant section of the API page available at this [url](https://eu.api.ovh.com/console-preview/?section=%2FvrackServices&branch=v2#get-/vrackServices/resource){.external}
 ![image](https://github.com/ovh/docs/assets/60412/7cdeb9c2-5a6e-4ca8-9403-8aede124e6d8)
 
 Here is the command line :
+
 ``` bash
 curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource" \
  -H "accept: application/json"\
@@ -210,11 +211,10 @@ The checksum helps to detect cases of concurrency in update requests. If the che
 The request can combine any of the following actions without interruption (i.e. the service will not be interrupted during the update)
 - Update the display name of the vRack service
 - Create a subnet
-- Delete a subnet
+- Delete a subnet with no Service Endpoints
 - Update a subnet:
     - Update the display name
-    - Create one or more Service Endpoints
-    - Delete one or more Service Endpoints
+    - Create one or more Service endpoints    
  
 Note that a Subnet with multiple Service Endpoints can be created in the same request body. 
 
@@ -223,59 +223,266 @@ Note that deleting a Subnet will also delete the embedded Service Endpoints.
 
 <br>
 
-<ins>Examples :</ins>
+<ins>Non-transparent configuration actions</ins>
 
-For this section, please see the 'Actions' section above.
+Modifying the Subnet characteristics listed below will cause a service interruption while the update is being processed. This is because they are interpreted as deleting the existing subnet and creating a new subnet with the characteristics provided. 
 
-#### Change the displayName of the affected vRack Services
-    
+The IPs assigned to the managed services will be re-elected and may therefore change:
+- changes to the Subnet ServiceRange
+- changes to the Subnet Vlan
+- changes to the Subnet CIDR
+- delete a Subnet with Service Endpoints
+- delete one or more Service Endpoints
+
+The Endpoint Services of the integrated services will also be deleted and recreated, which implies fluctuating accessibility in the vRack for all the managed services concerned.
+
+The vrackId is a read-only attribute because the vRack/vRackServices association is managed by the vRack API.
+
+
+<br><br>
+
+#### 4. Complete example, for a given vRack Services, of modifying its displayName and attaching an Endpoint Service to it.
+
+For this section, please read the `Actions` section above. 
+
+<br>
+
+<ins>1. Get the `checksum` and `targetSpec` of the given Services vRack</ins> 
+
+Action formulated with a `GET`{.action} :
+
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
  -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
- -H "content-type: application/json" \
- -d '{"checksum":"d41d8cd98f00b204e9800998ecf8427e","targetSpec":{"displayName":"Customized-VrackServices.DisplayName"}}' \
-
+ -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
 ```
 
 <br>
 
-#### Create an empty subnet
-
+Return API call:
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
- -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
- -H "content-type: application/json" \
- -d '{"checksum":"fa7cda24e4e94031fb70956edfdfb33a","targetSpec":{"displayName":"My_vRack_Services","subnets":[{"cidr":"10.120.0.0/16","serviceEndpoints":[],"serviceRange":{"cidr":"10.120.0.0/29"},"vlan":2}]}}' \
+{
+  "checksum": "609cf69014e57abfb3d892133692ac6f",
+  "createdAt": "2024-03-20T14:10:27.836606Z",
+  "currentState": {
+    "displayName": "My_vRackServices",
+    "productStatus": "DRAFT",
+    "region": "LIM",
+    "subnets": [
+      {
+        "cidr": "10.120.0.0/16",
+        "displayName": null,
+        "serviceEndpoints": [],
+        "serviceRange": {
+          "cidr": "10.120.0.0/29",
+          "remainingIps": 3,
+          "reservedIps": 5,
+          "usedIps": 0
+        },
+        "vlan": null
+      }
+    ],
+    "vrackId": "pn-xyzzz"
+  },
+  "currentTasks": [],
+  "id": "vrs-a9y-v91-xnm-f5u",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "My_vRackServices",
+    "subnets": [
+      {
+        "cidr": "10.120.0.0/16",
+        "displayName": null,
+        "serviceEndpoints": [],
+        "serviceRange": {
+          "cidr": "10.120.0.0/29"
+        },
+        "vlan": null
+      }
+    ]
+  },
+  "updatedAt": "2024-04-15T07:59:54.265287Z",
+  "iam": {
+    "id": "a912f8ea-7b17-4bef-88e0-9c9376578xxx",
+    "urn": "urn:v1:eu:resource:vrackServices:vrs-a9y-v91-xnm-f5u"
+  }
+}
 
 ```
 
+<br><br>
+
+<ins>2. Change the displayName and attach an Endpoint Service to it</ins>
+
+Action formulated with the `PUT`{.action} - Update in progress:
+
+``` bash
+curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+ -H "accept: application/json"\
+ -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg"\
+ -H "content-type: application/json" \
+ -d '{"checksum":"609cf69014e57abfb3d892133692ac6f","targetSpec":{"displayName":"My_vRackServices_updated","subnets":[{"cidr":"10.120.0.0/16","displayName":null,"serviceEndpoints":[{"managedServiceURN":"urn:v1:eu:resource:storageNetApp:f88c7410-f920-443b-ab1b-8c699a1c3xxx"}],"serviceRange":{"cidr":"10.120.0.0/29"},"vlan":null}]}}' \
+```
 <br>
 
-#### Create a Service Endpoint in an existing subnet
+Return API call :
 
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
- -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
- -H "content-type: application/json" \
- -d '{"checksum":"4c5d68ea2231e90db7495406018a0f5e","targetSpec":{"displayName":"My.vRack.Services","subnets":[{"cidr":"192.168.0.0/16","displayName":"My.Subnet","serviceEndpoints":[{"managedServiceURN":"urn:v1:eu:resource:storageNetApp:examples-00e1-4a3d-ae89-ac145675c8bb"}],"serviceRange":{"cidr":"192.168.0.0/29"},"vlan":30}]}}' \
-
+{
+  "checksum": "add878be3bb736263590d03fd000b113",
+  "createdAt": "2024-03-21T16:37:49.276927Z",
+  "currentState": {
+    "displayName": "My_vRackServices",
+    "productStatus": "DRAFT",
+    "region": "LIM",
+    "subnets": [
+      {
+        "cidr": "10.0.0.0/24",
+        "displayName": null,
+        "serviceEndpoints": [],
+        "serviceRange": {
+          "cidr": "10.0.0.0/29",
+          "remainingIps": 3,
+          "reservedIps": 5,
+          "usedIps": 0
+        },
+        "vlan": null
+      }
+    ],
+    "vrackId": "pn-xyzzz"
+  },
+  "currentTasks": [
+    {
+      "id": "cfa1a6a6-fb0a-11ee-a63c-4277d8ca4yyy",
+      "link": "/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u",
+      "status": "PENDING",
+      "type": "VrackServicesUpdate"
+    }
+  ],
+  "id": "vrs-a9y-v91-xnm-f5u",
+  "resourceStatus": "UPDATING",
+  "targetSpec": {
+    "displayName": "My_vRackServices_updated",
+    "subnets": [
+      {
+        "cidr": "10.120.0.0/16",
+        "displayName": null,
+        "serviceEndpoints": [
+          {
+            "managedServiceURN": "urn:v1:eu:resource:storageNetApp:f88c7410-f920-443b-ab1b-8c699a1c3xxx"
+          }
+        ],
+        "serviceRange": {
+          "cidr": "10.120.0.0/29"
+        },
+        "vlan": null
+      }
+    ]
+  },
+  "updatedAt": "2024-04-15T09:30:34.683716Z"
+}
 ```
 
+> [!primary]
+>
+> Notable points:
+> - `targetSpec` updated with the request and we also have a new `checksum`.
+> - `resourceStatus` changed to `UPDATING`.
+> - `currentTasks` : asynchronous processing in progress
+> 
+
+
+<br><br>
+
+<ins>3. A final GET to check that the asynchronous actions have been completed</ins>.
+
+> [!warning]
+>
+> Expected result: a Services vRack with `ressourceStatus` set to `READY`. If this is not the case, repeat the `GET` a few moments later.
+>
+
+Action formulated with `GET`{.action} :
+
+``` bash
+curl -X GET "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a9y-v91-xnm-f5u" \
+ -H "accept: application/json"\
+ -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6ImNkNDg5Mzg2ZTAyOGEzNjA1NDQ0ZmUwZTFjZjU5ZWI4ZTdmMzhkNjMwNmJhNzFlZDdhZWY1YmNmNGIxNWU5OGQiLCJpYXQiOjE3MTMxNzE2MTB9.h7HWtfCRhXV51P8QZSZfl0OEI_nagATzaI9lvYKOp4IV_-Jew5HFh970TWFtZnGoLTgY9DVP6qyCvB5qu2RZAg" \
+```
 <br>
 
-#### Delete a subnet and its endpoint services
+Return API call:
 
 ``` bash
-curl -X PUT "https://eu.api.ovh.com/v2/vrackServices/resource/vrs-a8y-v9a-x5m-f4u" \
- -H "accept: application/json"\
- -H "authorization: Bearer eyJhbGciOiJFZERTQSIsImtpZCI6IkVGNThFMkUxMTFBODNCREFEMDE4OUUzMzZERTk3MDhFNjRDMDA4MDEiLCJraW5kIjoib2F1dGgyIiwidHlwIjoiSldUIn0.eyJBY2Nlc3NUb2tlbiI6Ijc1MDE4MWFkODQ2MDVhYTA2MTY2ODNkNDIxOGEzMWZjMzZkZjM1NzExODFhYmM4ODY4OTliMmRlZjUwZTcxNDEiLCJpYXQiOjE3MTI3NTQ4Mzd9.TKbH0KW7stkOLWfNYMUdFfMSOYHubFLWWrF6CodVFDGHFE4yWiehGUqdgdUN1g9CC23sqr7M-fUvfHMmcpfPCg"\
- -H "content-type: application/json" \
- -d '{"checksum":"8b70a21702a41638e32778c6400e1848","targetSpec":{"displayName":"MyVRS","subnets":[]}}' \
-
+{
+  "checksum": "add878be3bb736263590d03fd000b113",
+  "createdAt": "2024-03-21T16:37:49.276927Z",
+  "currentState": {
+    "displayName": "My_vRackServices_updated",
+    "productStatus": "ACTIVE",
+    "region": "LIM",
+    "subnets": [
+      {
+        "cidr": "10.120.0.0/16",
+        "displayName": null,
+        "serviceEndpoints": [
+          {
+            "endpoints": [
+              {
+                "description": "Nominal",
+                "ip": "10.120.0.1"
+              }
+            ],
+            "managedServiceURN": "urn:v1:eu:resource:storageNetApp:f88c7410-f920-443b-ab1b-8c699a1c3xxx"
+          }
+        ],
+        "serviceRange": {
+          "cidr": "10.120.0.0/29",
+          "remainingIps": 2,
+          "reservedIps": 5,
+          "usedIps": 1
+        },
+        "vlan": null
+      }
+    ],
+    "vrackId": "pn-xyzzz"
+  },
+  "currentTasks": [],
+  "id": "vrs-a9y-v91-xnm-f5u",
+  "resourceStatus": "READY",
+  "targetSpec": {
+    "displayName": "My_vRackServices_updated",
+    "subnets": [
+      {
+        "cidr": "10.120.0.0/16",
+        "displayName": null,
+        "serviceEndpoints": [
+          {
+            "managedServiceURN": "urn:v1:eu:resource:storageNetApp:f88c7410-f920-443b-ab1b-8c699a1c3xxx"
+          }
+        ],
+        "serviceRange": {
+          "cidr": "10.120.0.0/29"
+        },
+        "vlan": null
+      }
+    ]
+  },
+  "updatedAt": "2024-04-15T09:31:16.562864Z",
+  "iam": {
+    "id": "1a8317c9-5020-4b55-bae4-1c01955b00bb",
+    "urn": "urn:v1:eu:resource:vrackServices:vrs-a9y-v91-xnm-f5u"
+  }
+}
 ```
+
+> [!primary]
+>
+> Notable points:
+> - `currentState` is completely aligned with the `targetSpec` so `resourceStatus` changes to `READY`.
+> - The `productStatus` is set to `ACTIVE` because the current vRack Services configuration allows the Endpoint Service to be accessed from the vRack.
+> - The IP allocated to the Managed Service is "10.120.0.1".
+> - There are still 2 assignable IPs in the ServiceRange.
+>
 
 <br>
 
