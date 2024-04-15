@@ -13,7 +13,7 @@ Cet article vous explique comment exposer votre service managé sur le vRack ave
 ## Overview
 Il y 3 composants principaux dans la mise en place de cette configuration:
 
-1.&nbsp;<ins>vRack Service</ins>   
+1.&nbsp;<ins>vRack Services</ins>   
 Le produit vRack Services est le composant principal de votre configuration, nécessitant une activation dans une région choisie, ainsi qu'une association à un vRack. La région choisie doit correspondre à l'emplacement de votre service managé. Le service managé sera disponible à partir de la région choisie et accessible à tous serveurs connectés au vRack, quelque soit la région.
    
 2.&nbsp;<ins>Sous-réseau</ins>  
@@ -51,7 +51,7 @@ Vous n'êtes pas obligé d'un commander un à cette étape, vous pouvez le faire
 
 ---
 
-Une fois la demande d'activation de vRack Services effectué, vous êtes redirigé sur la liste des vRack Services. Il est possible d'associer un vRack à un vRack Service directement à partir de cette page.
+Une fois la demande d'activation de vRack Services effectué, vous êtes redirigé sur la liste des vRack Services. Il est possible d'associer un vRack à un vRack Services directement à partir de cette page.
 
 ![overview 01](images/05-VRS-v2.png){.thumbnail}
 
@@ -244,7 +244,7 @@ Le vrackId est un attribut en lecture seule car l'association vRack/vRackService
 
 <br><br>
 
-#### 4. Exemple complet, pour un vRack Service donné, permettant de modifier son displayName et de lui attacher un Service Endpoint
+#### 4. Exemple complet, pour un vRack Services donné, permettant de modifier son displayName et de lui attacher un Service Endpoint
 
 Pour cette section, veuillez bien lire la section `Actions` ci-dessus   
 
@@ -394,7 +394,7 @@ Retour de l'appel API :
 
 > [!warning]
 >
-> Résultat attendu: Avoir un vRack Service avec un `ressourceStatus` à `READY`
+> Résultat attendu: Avoir un vRack Services avec un `ressourceStatus` à `READY`
 >
 
 <br><br>
@@ -480,7 +480,7 @@ Retour de l'appel API :
 >
 > Points remarquables:
 > - `resourceStatus` passe à `READY` ainsi le `currentState` est completement aligné avec le `targetSpec`.
-> - `productStatus` passe à `ACTIVE` car la configuration du vRack Service actuel permet d'accéder au Service Endpoint depuis le vRack.
+> - `productStatus` passe à `ACTIVE` car la configuration du vRack Services actuel permet d'accéder au Service Endpoint depuis le vRack.
 > - L'IP attribuée au Service Managé est la suivante "10.120.0.1".
 > - Il reste 2 IP attribuables dans le ServiceRange.
 >   
