@@ -18,12 +18,7 @@ flag: hidden
 
 ### First login
 
-Open your web browser and go to this [url](https://vcloud.vcd.ovh).
-You will be redirected to the vCD login page. Enter your organization name (provided in the account creation email).
-
-> [!success]
->
-> You can go to your organization's login page with this URL: `https://vcloud.vcd.ovh/tenant/{your-org}`.
+Open your web browser and go to the vCD login page. Enter your organization name (provided in the account creation email).
 
 ![First page connection](images/vcd-organization-connection.png){.thumbnail}
 
