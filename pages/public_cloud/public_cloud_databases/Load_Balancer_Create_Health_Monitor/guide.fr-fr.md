@@ -27,21 +27,7 @@ Pour entrer plus en détail, veuillez consulter : [OVHcloud Load Balancer Concep
 
 ### Étape 2: Configuration initiale
 
-Lors de la configuration initiale de votre Health Monitor pour le Load Balancer OVHcloud, suivez ces étapes clés selon l'architecture de votre choix :
-
-1. **Configurer votre réseau :**
-   - **Réseau privé à privé :** Assurez la configuration du réseau privé pour un trafic interne fluide.
-   - **Public à privé :** Utilisez une IP flottante et configurez les règles de sécurité pour le trafic entrant.
-   - **Public à public :** Assignez des IP flottantes au Load Balancer et des IP publiques aux serveurs, en ajustant les règles de sécurité.
-
-2. **Déterminer l'emplacement et l'accès des serveurs :**
-   - Placez vos serveurs pour minimiser la latence selon l'emplacement des utilisateurs.
-   - Configurez le Load Balancer différemment selon que les serveurs utilisent des IP privées ou publiques.
-
-3. **Vérification des prérequis réseau :**
-   - Revoyez les configurations réseau telles que les plages d'IP, les groupes de sécurité, et les règles de pare-feu.
-
-Pour des informations détaillées sur chaque architecture et les prérequis réseau, consultez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
+Pour des informations détaillées pour la Configuration initiale sur chaque architecture et les prérequis réseau, consultez [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283).
 
 ### Étape 3: Création d’un Health Monitor
 
