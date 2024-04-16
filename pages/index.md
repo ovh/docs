@@ -316,7 +316,7 @@
             + [Migrating a PCC to Hosted Private Cloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration)
             + [Migrating an infrastructure to a new vDC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
             + [Responsibility sharing for the VMware on OVHcloud service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing)
-            + [vCD - Getting Started](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
+            + [VMware Cloud Director - Find out how to use the vCD user interface](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
             + [vCD - Concepts](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
             + [vCD - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)
             + [VMware Cloud Director - Logging in to your organization](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
