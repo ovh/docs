@@ -57,6 +57,93 @@ Authorized members within an organization can access these catalogs to use the v
 
 In addition, organization administrators have the ability to copy items from public catalogs into their organization-specific catalog.
 
+<a name="key-features"></a>
+
+### Features of VMware Cloud Director at OVHcloud
+
+Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud Director solutions.
+
+|              | Advanced Network & Security | vSAN Storage |
+|:------------:|:---------------------------:|:------------:|
+| vCD Standard |              -              |       -      |
+| vCD Advanced |              ✅              |       -      |
+| vCD Prenium  |              ✅              |       ✅      |
+
+#### Cluster Management
+
+>[!succes]
+> All Cluster Management features are fully managed by OVHcloud.
+>
+
+| Features |
+| :-: |
+| ESXi management / capacity planning |
+| Hosts Failover / Proactive HA       |  
+| DRS / Storage DRS                   |
+| vMotion / Storage vMotion           |
+
+##### Virtual Machine Management
+
+|         Features        	| Standard 	| Advanced 	| Prenium 	|                                    Comments                                   	|
+|:-----------------------:	|:--------:	|:--------:	|:-------:	|:-----------------------------------------------------------------------------:	|
+|        Create VM        	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
+| Manage Virtual Machines 	|     ✅    	|     ✅    	|    ✅    	|                  Start, Stop, Suspend, Delete, Copy/clone...                  	|
+|      Affinity Rules     	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
+|   Anti-Affinity Rules   	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
+|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged sofware solutions (OpenSource Only !) 	|
+|    Create VM catalogs   	|     ✅    	|     ✅     |    ✅     	|                     Build your own catalog of VM templates                    	|
+
+#### Organisation / Virtual Datacenter Management
+
+|               Features              	| Standard 	| Advanced 	| Prenium 	|                                                Comments                                               	|
+|:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-----------------------------------------------------------------------------------------------------:	|
+|           User Management           	|     ✅    	|     ✅    	|    ✅    	|                                                                                                       	|
+| Identity Provider Integration - SSO 	|          	|          	|         	|                                     Roadmap (via OVHcloud uIAM service)                                    	|
+|         vCPU over-allocation        	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC.  Possible via the OVHcloud Control Panel or API. 	|
+
+#### Networking
+
+|             Features            	| Standard 	| Advanced 	| Prenium 	|                                                                                              Comments                                                                                              	|
+|:-------------------------------:	|:--------:	|:--------:	|:-------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+|     Routing & Switching IPv4    	|     ✅    	|     ✅    	|    ✅    	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
+|        Public IPv4 Range        	|     ✅    	|     ✅    	|    ✅    	|                                                                                                                                                                                                    	|
+| Private Network - vRack support 	|     ✅    	|     ✅    	|    ✅    	|                                                                                                                                                                                                    	|
+|     Routing & Switching IPv6    	|          	|          	|         	|                                                                                             in Roadmap                                                                                             	|
+|               VPN               	|          	|     ✅    	|    ✅    	|                                                            L2VPN, Policy based IPsec VPN  Not Supported: SSL VPN, Routed based IPsec VPN                                                           	|
+|          Load Balancing         	|          	|     ✅    	|    ✅    	|                                                                         Not supported with native VCD network capabilities                                                                         	|
+|     Advanced Load Balancing     	|          	|          	|         	|                                                                                             in Roadmap                                                                                             	|
+
+#### Security
+
+|       Features       	| Standard 	| Advanced 	| Prenium 	|  Comments  	|
+|:--------------------:	|:--------:	|:--------:	|:-------:	|:----------:	|
+|   Stateful Firewall  	|     ✅    	|     ✅    	|    ✅    	|            	|
+| Distributed Firewall 	|     ✅    	|     ✅    	|    ✅    	|            	|
+|    Security groups   	|     ✅    	|     ✅    	|    ✅    	|            	|
+|       IDS / IPS      	|          	|          	|         	| in Roadmap 	|
+|          WAF         	|          	|          	|         	| in Roadmap 	|
+
+#### Data protection
+
+|           Features           	| Standard 	| Advanced 	| Prenium 	|           Comments          	|
+|:----------------------------:	|:--------:	|:--------:	|:-------:	|:---------------------------:	|
+|      Backup as a Service     	|     ✅    	|     ✅    	|    ✅    	| Veeam Managed Backup Option 	|
+|   Virtual Machine Snapshots  	|     ✅    	|     ✅    	|    ✅    	|           1 per VM          	|
+| Protection / Replication VMs 	|          	|          	|         	|          in Roadmap         	|
+
+#### Storage
+
+|              Features             	| Standard 	| Advanced 	| Prenium 	| Comments 	|
+|:---------------------------------:	|:--------:	|:--------:	|:-------:	|:--------:	|
+|           NFS datastore           	|     ✅    	|     ✅    	|    ✅    	|          	|
+| High performance datastore (vSAN) 	|          	|          	|    ✅    	|          	|
+
+#### Monitoring
+
+|     Features    	| Standard 	| Advanced 	| Prenium 	|                      Comments                     	|
+|:---------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------:	|
+| Aria operations 	|     ✅    	|     ✅    	|    ✅    	| Resource management Metrics, Dashboard, Reporting 	|
+
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
