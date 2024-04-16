@@ -101,10 +101,12 @@ La CLI OpenStack permet de gérer vos ressources cloud via des commandes exécut
 - Ouvrez votre terminal.
 - Assurez-vous que l'environnement de votre CLI est configuré avec les bons identifiants API d'OVHcloud.
 - Obtenir la Liste des Listeners
-```shell
+
 Pour obtenir la liste des listeners disponibles, utilisez la commande suivante :
-```
+
+```shell
 openstack loadbalancer listener list
+```
 +--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
 | id                                   | default_pool_id                      | name                         | project_id                       | protocol | protocol_port | admin_state_up |
 +--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
