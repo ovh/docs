@@ -1,6 +1,6 @@
 ---
 title: 'FAQ Managed Private Registry (Harbor)'
-updated: 2023-07-21
+updated: 2024-04-17
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ Find below the exact locations of the dependencies:
 | US-EAST-VA     |      X       |            US-EAST-VA-1           |         US-EAST-VA         |
 
 ### What version of Harbor is offered?
-All new Private Registry services expose Harbor 2.x. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.
+All new Private Registry services expose Harbor 2.6.4. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.
 
 #### Tips and Tricks
 All traffic to and from the registry is completely **free**.
