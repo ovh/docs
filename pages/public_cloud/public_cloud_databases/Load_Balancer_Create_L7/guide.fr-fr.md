@@ -12,11 +12,18 @@ Ce guide a pour but d'expliquer comment configurer et gérer des policies et rè
 - **Compte OVHcloud :** Accès à un projet Public Cloud chez OVHcloud.
 - Comprendre les concepts d'un load balancer : voir [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 - **Load Balancer OVHcloud :** Un Load Balancer déjà configuré et en état de fonctionnement. voir [ Configuration d'un Load Balancer OVHcloud](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200)
-[GAL] indiquer que les 3 ci dessous sont optionnels en fonction de la manière dont l'utilisateur souhaite configurer son load balancer (les 3 ne sont pas obligatoires mais il en faut au moins une)
-- **Accès au Manager OVHcloud :** Pour la gestion via l'interface graphique. 
-- **CLI OpenStack :** Pour la gestion via la ligne de commande. => ajouter un lien vers https://help.ovhcloud.com/csm/fr-public-cloud-compute-prepare-openstack-api-environment?id=kb_article_view&sysparm_article=KB0050995
-- **Interface Horizon :** Pour une gestion graphique via OpenStack. => ajouter un lien vers https://help.ovhcloud.com/csm/fr-public-cloud-compute-horizon?id=kb_article_view&sysparm_article=KB0050895
-- **Terraform :** (Optionnel) Pour la gestion via Infrastructure as Code. => ajouter un lien vers https://registry.terraform.io/providers/ovh/ovh/latest/docs
+
+Pour configurer votre load balancer chez OVHcloud, vous avez plusieurs options de gestion disponibles. Vous n'avez pas besoin de toutes les utiliser, mais il est nécessaire d'en choisir au moins une selon vos préférences :
+
+- **Accès au Manager OVHcloud :** Permet la gestion via l'interface graphique, idéal pour ceux qui préfèrent une approche visuelle et intuitive.
+
+- **CLI OpenStack :** Pour la gestion via la ligne de commande. Plus d'informations pour préparer votre environnement API OpenStack sont disponibles [ici](https://help.ovhcloud.com/csm/fr-public-cloud-compute-prepare-openstack-api-environment?id=kb_article_view&sysparm_article=KB0050995).
+
+- **Interface Horizon :** Offre une gestion graphique via OpenStack pour les utilisateurs familiarisés avec cette plateforme. Détails supplémentaires [ici](https://help.ovhcloud.com/csm/fr-public-cloud-compute-horizon?id=kb_article_view&sysparm_article=KB0050895).
+
+- **Terraform :** (Optionnel) Permet la gestion via Infrastructure as Code, utile pour automatiser et reproduire des environnements via des fichiers de code. Informations sur le provider OVH pour Terraform disponibles [ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
+
+Chaque méthode offre des avantages spécifiques, permettant de personnaliser la gestion de votre load balancer selon vos besoins et votre expertise technique.
 
 ### Concepts Clés Expliqués
 #### Policies et Règles L7
