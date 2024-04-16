@@ -1,8 +1,7 @@
 ---
 title: "vRack Services - Exposer un service managé sur votre vRack"
 excerpt: "Découvrez comment exposer votre service managé sur le vRack avec le produit vRack Services et la fonctionnalité Service Endpoint"
-updated: 2024-04-15
-flag: hidden
+updated: 2024-04-17
 ---
 
 > [!warning]
