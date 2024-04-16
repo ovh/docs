@@ -1,5 +1,5 @@
 ---
-title: "vCD - FAQ"
+title: "VMware Cloud Director - FAQ"
 excerpt: "Retrouvez les questions les plus fréquentes concernant vCD"
 updated: 2024-04-16
 flag: hidden
