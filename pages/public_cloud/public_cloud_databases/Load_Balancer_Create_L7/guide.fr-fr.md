@@ -113,6 +113,27 @@ Voici un exemple de format de sortie de la commande :
 |----------|-----------------|--------------------------------|------------|----------|---------------|----------------|
 | REDACTED | REDACTED        | LB_S_GRA9-154-360-listener-1   | REDACTED   | HTTP     | 80            | True           |
 
+### Explications des Colonnes dans la Liste des Listeners
+
+- **`id`** : Identifiant unique du listener.
+- **`default_pool_id`** : ID du pool par défaut (où le listener envoie le trafic par défaut).
+- **`name`** : Nom du listener.
+- **`project_id`** : ID du projet associé à ce listener.
+- **`protocol`** : Le protocole utilisé par le listener (par exemple, HTTP, HTTPS).
+- **`protocol_port`** : Le port sur lequel le listener écoute.
+- **`admin_state_up`** : Indique si le listener est activé (`True`) ou désactivé (`False`).
+
+### Créer une Nouvelle Politique L7
+
+Utilisez la commande suivante pour créer une nouvelle politique L7, en remplaçant `mon-listener-id` par l'identifiant de votre listener et `https://monsite.com` par l'URL de redirection désirée :
+
+```bash
+openstack loadbalancer l7policy create \
+  --name ma-politique-l7 \
+  --listener mon-listener-id \
+  --action REDIRECT_TO_URL \
+  --redirect-url https://monsite.com
+```
 
 - Utilisez la commande suivante pour créer une nouvelle politique L7, en remplaçant `mon-listener-id` par l'identifiant de votre écouteur et `https://monsite.com` par l'URL de redirection désirée :
 
