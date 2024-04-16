@@ -317,7 +317,7 @@
             + [Migrating an infrastructure to a new vDC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
             + [Responsibility sharing for the VMware on OVHcloud service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing)
             + [VMware Cloud Director - Find out how to use the vCD user interface](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-            + [vCD - Concepts](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+            + [VMware Cloud Director - Concepts](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
             + [VMware Cloud Director - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)
             + [VMware Cloud Director - Logging in to your organization](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
             + [VMware Cloud Director - Creating a new virtual machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
