@@ -2,7 +2,6 @@
 title: "VMware Cloud Director - Logging in to your organization (EN)"
 excerpt: "How to log in to your organization and change your password"
 updated: 2024-04-16
-flag: hidden
 ---
 
 ## Objective

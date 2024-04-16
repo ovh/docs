@@ -2,7 +2,6 @@
 title: "VMware Cloud Director - Find out how to use the vCD user interface"
 excerpt: "Discover the vCD user interface"
 updated: 2024-04-16
-flag: hidden
 ---
 
 ## Objective

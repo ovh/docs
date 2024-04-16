@@ -2,7 +2,6 @@
 title: "VMware Cloud Director - Creating a new virtual machine (EN)"
 excerpt: "How to create a new Virtual Machine in vCD"
 updated: 2024-04-16
-flag: hidden
 ---
 
 ## Objective

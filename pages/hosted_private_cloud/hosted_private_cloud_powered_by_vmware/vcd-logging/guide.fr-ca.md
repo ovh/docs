@@ -2,7 +2,6 @@
 title: "VMware Cloud Director - Se connecter à son organisation"
 excerpt: "Comment se connecter à son organisation et changer son mot de passe"
 updated: 2024-04-16
-flag: hidden
 ---
 
 ## Objectif

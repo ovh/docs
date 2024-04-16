@@ -2,7 +2,6 @@
 title: "VMware Cloud Director - FAQ (EN)"
 excerpt: "Frequently asked questions on vCD"
 updated: 2024-04-16
-flag: hidden
 ---
 
 ## FAQ
