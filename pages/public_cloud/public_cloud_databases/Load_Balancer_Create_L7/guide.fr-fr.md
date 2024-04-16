@@ -25,14 +25,38 @@ Chaque méthode offre des avantages spécifiques, permettant de personnaliser la
 ### Concepts Clés Expliqués
 #### Policies et Règles L7
 
-- **Policy L7 :** Une directive appliquée à un écouteur de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions peuvent inclure la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
+- **Policy L7 :**
+  Une directive appliquée à un écouteur de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions possibles incluent la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
+  - **Principales caractéristiques :**
+    - **action** : L'action à réaliser (par exemple, redirect, reject).
+    - **redirect_http_code** : Le code HTTP utilisé lors de la redirection.
+    - **redirect_pool_id** : L'ID du pool de serveurs vers lequel rediriger.
+    - **redirect_prefix** : Le préfixe à ajouter à l'URL lors d'une redirection.
+    - **redirect_url** : L'URL spécifique vers laquelle rediriger.
+  - **Contraintes :**
+    - Les L7 policy ne s'appliquent qu'à des écouteurs de type `HTTP` ou `TERMINATED_HTTPS`.
 
-- **Règle L7 :** Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
+- **Règle L7 :**
+  Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
+  - **Principales caractéristiques :**
+    - **type** : Le type de condition (par exemple, HEADER, COOKIE, URI).
+    - **compare_type** : Le type de comparaison (par exemple, EQUAL_TO, STARTS_WITH).
+    - **value** : La valeur à comparer.
+    - **key** : La clé spécifique à comparer, si applicable.
 
-=> Ajouter des exemples de L7 Policy / L7 rules par exemple tiré du cookbook
+### Exemples de L7 Policy et L7 Rules
 
-=> Ajouter les contraintes : les L7 policy ne s'appliquent qu'à des listeners de type `HTTP` ou `TERMINATED_HTTPS`
-=> Ajouter les principales caractéristiques d'une L7 policy (action, redirect_http_code, redirect_pool_id, redirect_prefix, redirect_url et d'une L7 rule (type, compare_type, value, key)
+- **Exemple de Policy L7 :**
+  - **Action** : Redirect
+  - **redirect_url** : `https://example.com/newpath`
+  - **redirect_http_code** : 302
+
+  **Règle L7 associée :**
+  - **Type** : URI
+  - **compare_type** : STARTS_WITH
+  - **value** : `/oldpath`
+
+Cet exemple montre comment rediriger le trafic de `/oldpath` vers `https://example.com/newpath` avec un code de redirection HTTP 302 lorsque l'URI commence par `/oldpath`.
 
 ### Étape 1 : Configuration via l'espace client OVHcloud
 
@@ -76,8 +100,11 @@ La CLI OpenStack permet de gérer vos ressources cloud via des commandes exécut
 
 - Ouvrez votre terminal.
 - Assurez-vous que l'environnement de votre CLI est configuré avec les bons identifiants API d'OVHcloud.
-- => ajouter comment obtenir les listeners
--  openstack loadbalancer listener list
+- Obtenir la Liste des Listeners
+```shell
+Pour obtenir la liste des listeners disponibles, utilisez la commande suivante :
+```
+openstack loadbalancer listener list
 +--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
 | id                                   | default_pool_id                      | name                         | project_id                       | protocol | protocol_port | admin_state_up |
 +--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
