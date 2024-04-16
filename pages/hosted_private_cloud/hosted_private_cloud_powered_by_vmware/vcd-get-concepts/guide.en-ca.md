@@ -2,7 +2,6 @@
 title: "VMware Cloud Director - The fundamentals of vCD"
 excerpt: "Discover the basic concepts of vCD"
 updated: 2024-04-16
-flag: hidden
 ---
 
 ## Objective
