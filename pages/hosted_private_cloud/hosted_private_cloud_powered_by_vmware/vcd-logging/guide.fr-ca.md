@@ -18,13 +18,7 @@ flag: hidden
 
 ### Premiere connexion
 
-Ouvrez votre navigateur web et rendez-vous sur cette [url](https://vcloud.vcd.ovh).
-
-Vous allez être redirigé vers la page de connexion du vCD. Renseignez votre nom d'organisation (celui-ci est fourni dans l'e-mail de création de compte).
-
-> [!success]
->
-> Vous pouvez vous rendre directement sur la page de connexion de votre organisation avec cette URL : `https://vcloud.vcd.ovh/tenant/{votre-org}`.
+Ouvrez votre navigateur web et rendez-vous sur la page de connexion du vCD. Renseignez votre nom d'organisation (celui-ci est fourni dans l'e-mail de création de compte).
 
 ![First page connection](images/vcd-organization-connection.png){.thumbnail}
 
