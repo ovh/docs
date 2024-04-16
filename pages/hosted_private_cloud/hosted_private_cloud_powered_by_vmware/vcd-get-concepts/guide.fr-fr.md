@@ -57,6 +57,8 @@ Les membres autorisés au sein d'une organisation peuvent accéder à ces catalo
 
 De plus, les administrateurs d'organisation ont la capacité de copier des éléments provenant de catalogues publics dans le catalogue spécifique à leur organisation.
 
+<a name="key-features"></a>
+
 ### Fonctionnalités de VMware Cloud Director chez OVHcloud
 
 Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de VMware Cloud Director. 
@@ -66,7 +68,6 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | vCD Standard |              -              |       -      |
 | vCD Advanced |              ✅             |       -     |
 | vCD Prenium  |              ✅             |       ✅      |
-
 
 #### Cluster Management
 
@@ -81,7 +82,6 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | DRS / Storage DRS                   |
 | vMotion / Storage vMotion           |
 
-
 ##### Virtual Machine Management
 
 |         Features        	| Standard 	| Advanced 	| Prenium 	|                                    Comments                                   	|
@@ -92,7 +92,6 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 |   Anti-Affinity Rules   	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
 |    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged sofware solutions (OpenSource Only !) 	|
 |    Create VM catalogs   	|     ✅    	|     ✅     |    ✅     	|                     Build your own catalog of VM templates                    	|
-
 
 #### Organisation / Virtual Datacenter Management
 
@@ -144,7 +143,6 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 |     Features    	| Standard 	| Advanced 	| Prenium 	|                      Comments                     	|
 |:---------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------:	|
 | Aria operations 	|     ✅    	|     ✅    	|    ✅    	| Resource management Metrics, Dashboard, Reporting 	|
-
 
 ## Aller plus loin
 

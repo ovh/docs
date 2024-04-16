@@ -19,7 +19,7 @@ VMware Cloud Director by OVHcloud will be available in 3 tiers:
 - VCD Advanced, including advanced networking & security capabilities on top of the standard tier. 
 - VCD Premium, adding high-performance vSAN storage to the Advanced tier. 
 
-Please see [our key features page](https://www.ovhcloud.com/en/lp/vmware-vcd-evolution/) for more information.
+Please see [our key features page](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features) for more information.
 
 <a name="migrationvCD"></a>
 
