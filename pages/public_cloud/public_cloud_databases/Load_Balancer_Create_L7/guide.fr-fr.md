@@ -107,11 +107,27 @@ Pour obtenir la liste des listeners disponibles, utilisez la commande suivante :
 ```shell
 openstack loadbalancer listener list
 ```
+
+Voici un guide complet en Markdown pour gérer vos load balancers avec la CLI OpenStack, y compris la création de politiques L7 :
+
+Gérer les Load Balancers avec la CLI OpenStack
+La CLI OpenStack permet de gérer vos ressources cloud via des commandes exécutées dans votre terminal. Suivez ces instructions pour créer des politiques L7 :
+
+Ouvrez votre terminal.
+Assurez-vous que l'environnement de votre CLI est configuré avec les bons identifiants API d'OVHcloud.
+Obtenir la Liste des Listeners
+Pour obtenir la liste des listeners disponibles, utilisez la commande suivante :
+
+shell
+Copy code
+openstack loadbalancer listener list
+Voici un exemple de format de sortie de la commande :
 +--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
 | id                                   | default_pool_id                      | name                         | project_id                       | protocol | protocol_port | admin_state_up |
 +--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
-| REDACTED  | REDACTED | LB_S_GRA9-154-360-listener-1 | REDACTED | HTTP     |            80 | True           |
+| REDACTED                             | REDACTED                             | LB_S_GRA9-154-360-listener-1 | REDACTED                         | HTTP     |            80 | True           |
 +--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
+
 - Utilisez la commande suivante pour créer une nouvelle politique L7, en remplaçant `mon-listener-id` par l'identifiant de votre écouteur et `https://monsite.com` par l'URL de redirection désirée :
 
   ```bash
