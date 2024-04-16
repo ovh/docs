@@ -312,6 +312,7 @@
             + [Migrating a PCC to Hosted Private Cloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration)
             + [Migrating an infrastructure to a new vDC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
             + [Responsibility sharing for the VMware on OVHcloud service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing)
+            + [VMware Cloud Director - Creating a new virtual machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
             + [Using Active Directory server as an authentication source (Federation)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation)
             + [Keeping your vSphere web client secure](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_access_security_advices)
