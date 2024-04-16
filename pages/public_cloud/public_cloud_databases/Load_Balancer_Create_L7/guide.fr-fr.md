@@ -125,7 +125,7 @@ Voici un exemple de format de sortie de la commande :
 
 ### Créer une Nouvelle Politique L7
 
-Utilisez la commande suivante pour créer une nouvelle politique L7, en remplaçant `mon-listener-id` par l'identifiant de votre listener et `https://monsite.com` par l'URL de redirection désirée :
+- Utilisez la commande suivante pour créer une nouvelle politique L7, en remplaçant `mon-listener-id` par l'identifiant de votre listener et `https://monsite.com` par l'URL de redirection désirée :
 
 ```bash
 openstack loadbalancer l7policy create \
@@ -134,19 +134,6 @@ openstack loadbalancer l7policy create \
   --action REDIRECT_TO_URL \
   --redirect-url https://monsite.com
 ```
-
-- Utilisez la commande suivante pour créer une nouvelle politique L7, en remplaçant `mon-listener-id` par l'identifiant de votre écouteur et `https://monsite.com` par l'URL de redirection désirée :
-
-  ```bash
-  openstack loadbalancer l7policy create \
-    --name ma-politique-l7 \
-    --listener mon-listener-id \
-    --action REDIRECT_TO_URL \
-    --redirect-url https://monsite.com
-  ```
-
-Cette commande crée une politique L7 qui redirige toutes les requêtes vers l'URL spécifiée.
-
 #### Gestion via Horizon
 
 Horizon, l'interface web d'OpenStack, offre une vue graphique sur la configuration de vos ressources cloud, y compris les Load Balancers et les politiques L7 :
