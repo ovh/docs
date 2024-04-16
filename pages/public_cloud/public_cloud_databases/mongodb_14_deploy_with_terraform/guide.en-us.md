@@ -216,11 +216,11 @@ output "cluster_uri" {
 }
 
 output "user_name" {
-  value = ovh_cloud_project_database_mongodb_user.userjd.name
+  value = ovh_cloud_project_database_mongodb_user.tf_user.name
 }
 
 output "user_password" {
-  value     = ovh_cloud_project_database_mongodb_user.userjd.password
+  value     = ovh_cloud_project_database_mongodb_user.tf_user.password
   sensitive = true
 }
 ```
