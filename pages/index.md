@@ -318,7 +318,7 @@
             + [Responsibility sharing for the VMware on OVHcloud service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing)
             + [VMware Cloud Director - Find out how to use the vCD user interface](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
             + [vCD - Concepts](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
-            + [vCD - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)
+            + [VMware Cloud Director - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)
             + [VMware Cloud Director - Logging in to your organization](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
             + [Using Active Directory server as an authentication source (Federation)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation)
