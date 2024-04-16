@@ -62,7 +62,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 4**
->> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mail complète <br>- Mot de passe : laissez votre **adresse e-mail**<br> - URL interne : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- URL externe : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br><br>
+>> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mail complète <br>- Mot de passe : laissez votre **mot de passe**<br> - URL interne : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- URL externe : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br><br>
 >>
 >> > [!warning]
 >> >
