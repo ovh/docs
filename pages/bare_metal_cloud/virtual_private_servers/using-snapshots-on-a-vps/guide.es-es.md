@@ -30,7 +30,7 @@ Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?ac
 
 ### Paso 1: Suscribirse a la opción «Instantáneas»
 
-Acceda a la pestaña `«Inicio»`{.action} y desplácese hacia abajo hasta el cuadro «Resumen de opciones». Haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en `Contratar`{.action} (en el menú contextual).
+Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro «Resumen de opciones». Haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en `Contratar`{.action} (en el menú contextual).
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -110,27 +110,27 @@ El *qemu-guest-agent* necesario no está instalado por defecto en la mayoría de
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale la última versión del paquete:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Reiniciar el VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Verifique  el servicio para garantizar que está en ejecución:
 
 ```bash
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent status
 ```
 
 ##### **Distribuciones Red Hat (CentOS, Fedora)**
@@ -138,27 +138,27 @@ $ sudo service qemu-guest-agent status
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale y active el software:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Reiniciar el VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Verifique el software y compruebe que está en ejecución:
 
 ```bash
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**

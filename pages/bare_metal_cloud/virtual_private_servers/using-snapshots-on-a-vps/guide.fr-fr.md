@@ -1,7 +1,7 @@
 ---
-title: 'Utiliser le snapshot'
-excerpt: 'Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud'
-updated: 2023-04-28
+title: "Utiliser le snapshot"
+excerpt: "Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud"
+updated: 2024-04-15
 ---
 
 ## Objectif
@@ -28,7 +28,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ### Étape 1 : souscrire l'option snapshot
 
-Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ». Cliquez sur `...`{.action} à droite de l'option `«Snapshot»` puis cliquez sur `Commander`{.action} dans le menu qui s'affiche alors.
+Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ». Si « Snapshot » est déjà défini sur « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option `«Snapshot»` puis cliquez sur `Commander`{.action} dans le menu qui s'affiche alors.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -36,7 +36,7 @@ Veuillez alors prendre connaissance des informations de tarification de cette op
 
 ### Étape 2 : prendre un snapshot
 
-Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affiche dans le menu « Résumé des options ».
+Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez écrire une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affiche dans le menu « Résumé des options ».
 
 ### Étape 3 : supprimer/restaurer un snapshot
 
@@ -49,6 +49,8 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 > [!alert]
 >
 > Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créer un nouveau avant d'apporter des modifications au système restauré.
+>
+> Si la fonction snapshot est trop limitée pour votre projet, pensez à passer à l’option [Sauvegardes automatisées](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps).
 >
 
 ### Télécharger un snapshot
@@ -94,6 +96,8 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > Pour éviter de consommer trop d'espace de stockage, nous vous déconseillons de télécharger les snapshots directement sur le VPS.
 >
+> Le fichier téléchargé peut être importé dans votre Projet Public Cloud en tant qu'image (QCOW2) via [OpenStack](products/public-cloud-compute-instance-management). (Retrouvez un exemple d'utilisation dans [ce guide](/pages/public_cloud/compute/upload_own_image).)
+>
 
 ### Bonnes pratiques pour la création d'un snapshot
 
@@ -108,27 +112,27 @@ Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez le dernier package :
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Redémarrez le VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Vérifier le service pour vous assurer qu'il est en cours d'exécution :
 
 ```bash
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent status
 ```
 
 ##### **Distributions Redhat (CentOS, Fedora)**
@@ -136,30 +140,30 @@ $ sudo service qemu-guest-agent status
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez et activez l'agent :
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Redémarrez le VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
 
 ```bash
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent status
 ```
 
-##### **Problèmes Kernel sur Cpanel**
+##### **Problèmes Kernel sur cPanel**
 
 Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](/pages/bare_metal_cloud/virtual_private_servers/cpanel_snapshot) pour savoir comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud.
 
