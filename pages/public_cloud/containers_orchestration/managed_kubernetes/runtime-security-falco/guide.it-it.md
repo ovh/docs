@@ -1,7 +1,7 @@
 ---
 title: Near real-time threats detection with Falco on OVHcloud Managed Kubernetes
 excerpt: Find out how to secure your OVHcloud Managed Kubernetes with Falco, a runtime security tool
-updated: 2024-04-04
+updated: 2024-04-05
 ---
 
 ## Objective
@@ -27,6 +27,7 @@ In this guide you will:
 - Install Falco & Falcosidekick
 - Test the behaviour
 - Visualize the events in UI
+- Forward and store the events in an OVHcloud Object Storage bucket
 
 You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} to reinitialize your cluster before following this tutorial.
 
@@ -280,16 +281,145 @@ Click the "EVENTS" tab:
 
 You should see the previous events generated thanks to our tests.
 
+### Archiving the events to an OVHcloud Object Storage container (S3)
+
+You can also save/push the events to an OVHcloud Object Storage bucket (compatible with S3 API) to archive the outputs and be able to analyze them later if you want.
+
+To do that, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) guide.
+
+For this guide, our Object Storage container is:
+
+- a `High Performance Object Storage - S3 API`
+- in `GRA` region
+- with a newly created user
+- named `falco`
+
+> [!primary]
+> Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the coming `helm install` command.
+
+![OVHcloud Object Storage](images/object-storage.png){.thumbnail}
+
+Click on the `falco` bucket to enter it and display its information, including the useful `endpoint`.
+
+![OVHcloud Object Storage falco bucket](images/falco-bucket.png){.thumbnail}
+
+Now it's time to upgrade our Falco installation:
+
+```bash
+noglob helm upgrade falco \
+    --version 4.0.0 \
+    --create-namespace \
+    --namespace falco \
+    --set tty=true \
+    --set falcosidekick.enabled=true \
+    --set falcosidekick.image.tag=latest \
+    --set falcosidekick.webui.enabled=true \
+    --set falcosidekick.webui.user=myuser:mypassword \
+    --set falcosidekick.webui.service.type=LoadBalancer \
+    --set falcosidekick.config.aws.accesskeyid=xxxx \
+    --set falcosidekick.config.aws.secretaccesskey=yyyy \
+    --set falcosidekick.config.aws.checkidentity=false \
+    --set falcosidekick.config.aws.s3.bucket=falco \
+    --set falcosidekick.config.aws.region=gra \
+    --set falcosidekick.config.extraEnv[0].name=AWS_S3_ENDPOINT,falcosidekick.config.extraEnv[0].value=https://s3.gra.perf.cloud.ovh.net \
+  falcosecurity/falco
+```
+
+> [!primary]
+> `noglob` is necessary if you are in a `zsh` environment. Indeed, zsh will try to interpret `[]` chars and `noglob` will skip it.
+
+This command will upgrade your Falco installation with a new Falcosidekick source to push the outputs to our OVHcloud Object Storage bucket:
+
+```console
+$ noglob helm upgrade falco \
+    --version 4.0.0 \
+    --create-namespace \
+    --namespace falco \
+    --set tty=true \
+    --set falcosidekick.enabled=true \
+    --set falcosidekick.image.tag=latest \
+    --set falcosidekick.webui.enabled=true \
+    --set falcosidekick.webui.user=myuser:mypassword \
+    --set falcosidekick.webui.service.type=LoadBalancer \
+    --set falcosidekick.config.aws.accesskeyid=xxxx \
+    --set falcosidekick.config.aws.secretaccesskey=yyyy \
+    --set falcosidekick.config.aws.checkidentity=false \
+    --set falcosidekick.config.aws.s3.bucket=falco \
+    --set falcosidekick.config.aws.region=gra \
+    --set falcosidekick.config.extraEnv[0].name=AWS_S3_ENDPOINT,falcosidekick.config.extraEnv[0].value=https://s3.gra.perf.cloud.ovh.net \
+  falcosecurity/falco
+Release "falco" has been upgraded. Happy Helming!
+NAME: falco
+LAST DEPLOYED: Fri Apr  5 14:46:36 2024
+NAMESPACE: falco
+STATUS: deployed
+REVISION: 3
+NOTES:
+Falco agents are spinning up on each node in your cluster. After a few
+seconds, they are going to start monitoring your containers looking for
+security issues.
+
+
+No further action should be required.
+```
+
+> [!primary]
+> Don't forget to replace the AWSAccessKeyID and the AWSSecretAccessKey (in the `helm upgrade` command, and specifically in the `--set falcosidekick.config.aws.accesskeyid` and `--set falcosidekick.config.aws.secretaccesskey` parameters) with the credentials you retrieved during the OVHcloud Object Storage container creation.
+
+Run the command that generates a Falco event that will send the output in the bucket:
+
+```console
+$ kubectl exec -it demo-falco -- sh -c "ls -al"
+total 64
+drwxr-xr-x    1 root     root          4096 Apr  4 08:51 .
+drwxr-xr-x    1 root     root          4096 Apr  4 08:51 ..
+drwxr-xr-x    2 root     root          4096 Jan 26 17:53 bin
+drwxr-xr-x    5 root     root           360 Apr  4 08:51 dev
+drwxr-xr-x    1 root     root          4096 Apr  4 08:51 etc
+drwxr-xr-x    2 root     root          4096 Jan 26 17:53 home
+drwxr-xr-x    7 root     root          4096 Jan 26 17:53 lib
+drwxr-xr-x    5 root     root          4096 Jan 26 17:53 media
+drwxr-xr-x    2 root     root          4096 Jan 26 17:53 mnt
+drwxr-xr-x    2 root     root          4096 Jan 26 17:53 opt
+dr-xr-xr-x  203 root     root             0 Apr  4 08:51 proc
+drwx------    2 root     root          4096 Jan 26 17:53 root
+drwxr-xr-x    1 root     root          4096 Apr  4 08:51 run
+drwxr-xr-x    2 root     root          4096 Jan 26 17:53 sbin
+drwxr-xr-x    2 root     root          4096 Jan 26 17:53 srv
+dr-xr-xr-x   13 root     root             0 Apr  4 08:51 sys
+drwxrwxrwt    2 root     root          4096 Jan 26 17:53 tmp
+drwxr-xr-x    7 root     root          4096 Jan 26 17:53 usr
+drwxr-xr-x   12 root     root          4096 Jan 26 17:53 var
+```
+
+Display the logs:
+
+```console
+$ kubectl logs -l app.kubernetes.io/part-of=falcosidekick --all-containers -n falco -f
+...
+2024/04/05 12:46:45 [INFO]  : Falcosidekick is up and listening on :2801
+2024/04/05 12:46:45 [INFO]  : Enabled Outputs : [AWSS3 WebUI]
+...
+2024/04/05 12:58:26 [INFO]  : WebUI - Post OK (200)
+2024/04/05 12:58:27 [INFO]  : AWS S3 - Upload payload OK
+```
+
+Great, the logs confirm that the events have been pushed to the UI and also to the OVHcloud S3 bucket.
+
+You can check on your OVHcloud Object Storage `falco` container/bucket that the output has been correctly stored:
+
+![OVHcloud S3 bucket falco](images/bucket.png){.thumbnail}
+
 ### What's next?
 
-We installed Falco and falcosidekick and discovered how to test it and visualize the events but we didn't see all its features. If you are interested in them, visit the [Falco official website](https://falco.org/).
+We installed Falco & falcosidekick, discovered how to test it, visualize the events and how to forward the alerts in a bucket but we didn't see all its features. If you are interested in them, visit the [Falco official website](https://falco.org/).
 
-After receving events we can, for example, forward the alerts to a multiples of apps thanks to Falcosidekick:
+After receving events we can, for example, forward the alerts to other multiples apps thanks to Falcosidekick:
 
 - Slack
 - Discord
 - Elasticsearch
-- S3
+- S3 (done)
 - SMTP
 - Opsgenie
 - Webhook

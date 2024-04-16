@@ -5,7 +5,7 @@ updated: 2023-01-16
 
 ## Objective
 
-Now that you can send logs, you are maybe wondering how to tell Logs Data Platform what kind of data you send. It can be dates, numbers, boolean values, or just plain text strings.
+Now that you can send logs, you may be wondering how to tell Logs Data Platform what kind of data you send. It can be dates, numbers, boolean values, or just plain text strings.
 
 **This guide will help you ensure that your logs are properly parsed.**
 
@@ -17,9 +17,9 @@ Now that you can send logs, you are maybe wondering how to tell Logs Data Platfo
 
 ### What is a valid log for Logs Data Platform?
 
-Each log received on Logs Data Platform is transformed into a [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external} formatted log. What is GELF? A standardized JSON way to send logs. GELF stands for Graylog Extended Log Format. Using this format gives us two advantages, It is directly compatible with Graylog and it is still extensible enough to enrich your logs as you would like to.
+Each log received on Logs Data Platform is transformed into a [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}-formatted log. What is GELF? A standardized JSON way to send logs. GELF stands for Graylog Extended Log Format. Using this format gives us two advantages: It is directly compatible with Graylog and it is still extensible enough to enrich your logs as you would like to.
 
-This format impose a few conventions that if you don't follow can have many consequences :
+This format impose a few conventions that if you don't follow can have many consequences:
 
 - Logs Data Platform will rewrite your field as an incorrect one (with a `_fixit` suffix).
 - Your log will be rejected.
@@ -34,7 +34,7 @@ First please check the table below to know which field are reserved and what is 
 |full_message|String|A long message that can i.e. contain a backtrace; optional.|
 |timestamp|Number|Seconds since UNIX epoch with optional decimal places for milliseconds; SHOULD be set by client library. Will be set to NOW by server if absent.|
 |level|Number|The level equal to the standard syslog levels; optional, default is 1 (ALERT).|
-|line|Number|We consider this value to be a standard in the logs messages so we force it being a Number.|
+|line|Number|We consider this value to be a standard in the logs messages so we force it to be a Number.|
 |X-OVH-TOKEN|String|Mandatory on direct access, don't try to forge strange ones, you will be banished.|
 |X-OVH-CONTENT-SIZE|Number|Size in bytes of the current log.|
 |X-OVH-TO-FREEZE|String|If given, will build another archive containing only its value (separated by a line break).|
@@ -45,7 +45,7 @@ First please check the table below to know which field are reserved and what is 
 
 ### Can I go deeper?
 
-Of course. As we said before, you can send some additional fields as long as you prepend them with the `_` (underscore) character. You can use any JSON valid character for your field, except the `.` (dot) character. But don't worry, if you do so, we will rewrite your '.' in a very cute underscore. So how can you send special type as number, date and boolean ? Here is the answer :
+Of course. As we said before, you can send some additional fields as long as you prepend them with the `_` (underscore) character. You can use any JSON valid character for your field, except the `.` (dot) character. But don't worry, if you do so, we will rewrite your '.' in a very cute underscore. So how can you send special type as number, date and boolean? Here is the answer:
 
 |Case sensitive suffix|ES Type|About|
 |---|---|---|
@@ -81,7 +81,7 @@ Specifying correct numeric suffix type is the only way to generate numeric Widge
 
 ![Numeric widget](images/bytes.png){.thumbnail}
 
-Our platform limits the usage of IP adresses as field keys. IP addresses have a high cardinality and thus are not allowed to be used as keys (of course they are supported and enriched as values, as you can see above). If you use an IP address as key, it will be changed. For example:
+Our platform limits the usage of IP addresses as field keys. IP addresses have a high cardinality and thus are not allowed to be used as keys (of course they are supported and enriched as values, as you can see above). If you use an IP address as a key, it will be changed. For example:
 
 ```json
 {

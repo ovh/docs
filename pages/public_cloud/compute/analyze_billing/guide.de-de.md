@@ -62,7 +62,7 @@ Ergebnis: 23,63€
 
 ### Ihre Rechnungen einsehen
 
-Um die Rechnungen eines Projekts anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie links auf `Billing Control`{.action} und dann auf den Tab `History`{.action}.
+Um die Rechnungen eines Projekts anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie links auf `Billing Control`{.action} (im Abschnitt `Project Management`) und dann auf den Tab `History`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 

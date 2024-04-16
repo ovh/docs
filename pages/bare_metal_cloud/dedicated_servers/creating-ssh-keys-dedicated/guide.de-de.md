@@ -1,6 +1,6 @@
 ---
 title: SSH-Schlüssel erstellen und verwenden
-excerpt: Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden
+excerpt: Erfahren Sie hier, wie Sie SSH-Schlüssel auf Ihrem lokalen Gerät konfigurieren und für eine sichere Verbindung zu Ihrem Server verwenden
 updated: 2023-11-22
 ---
 
@@ -14,7 +14,7 @@ Die Verwendung des SSH-Protokolls ermöglicht einen sicheren Kanal über ein ung
 
 Dies ist in der Regel die sicherste und bequemste Verbindungsmethode.
 
-**Diese Anleitung erläutert, wie Sie SSH-Schlüssel auf Ihrem lokalen Gerät konfigurieren, um sie für den sicheren Zugriff auf Remoteserver zu verwenden.**
+**Diese Anleitung erklärt, wie Sie SSH-Schlüssel auf Ihrem lokalen Gerät konfigurieren, um sie für den sicheren Zugriff auf Remoteserver zu verwenden.**
 
 ## Voraussetzungen
 
@@ -37,7 +37,9 @@ Beachten Sie auch unsere Anleitungen zu "Ersten Schritten": <a name="getstarted"
 
 Lesen Sie auch die Einführung zum [SSH Protokoll](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
-Die folgenden Anweisungen behandeln zwei Methoden zum Verwenden von SSH-Schlüsseln:
+### SSH-Schlüsselpaar erzeugen
+
+Die folgenden Erläuterungen behandeln zwei Methoden zum Verwenden von SSH-Schlüsseln:
 
 - [Erstellung eines **Open SSH** Schlüsselpaars und Verbindung mit einem Server über SSH-Client in der Befehlszeile](#openssh)
 - [Erstellung eines Schlüsselpaars mit `PuTTY` und Verbindung mit einem Server über den SSH-Client von `PuTTY`](#useputty)
@@ -46,7 +48,7 @@ Sie können beide Methoden nebeneinander verwenden, aber beachten Sie, dass `PuT
 
 Dies bedeutet, dass ein privater Schlüssel, der mit dem SSH-Client in der Befehlszeile erstellt wurde, zuerst [in das `PuTTY`-Format konvertiert werden muss und umgekehrt](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt){.external}.
 
-### Erstellung eines SSH-Schlüsselpaars in der Befehlszeile <a name="openssh"></a>
+#### Erstellung eines SSH-Schlüsselpaars in der Befehlszeile <a name="openssh"></a>
 
 Öffnen Sie die Befehlszeilenanwendung (`Terminal`) auf einem **Mac**-Computer oder einem Gerät, auf dem ein **Linux**-Betriebssystem installiert ist.
 
@@ -175,7 +177,7 @@ Kopieren Sie die vollständige Schlüsselzeichenfolge in die Zwischenablage, um 
 > Wenn Sie in der Befehlszeile unter **Windows** arbeiten, klicken Sie mit der rechten Mautaste, um den Inhalt der Zwischenablage in das Befehlszeilenfenster **einzufügen**. Um eine Zeichenfolge aus dem Befehlszeilenfenster zu **kopieren**, markieren Sie sie mit der Maus und drücken Sie die `Eingabetaste`. Sie finden diese Funktionen auch über einen `Rechtsklick` auf die Menüleiste.
 >
 
-### SSH-Schlüsselpaar mit PuTTY erstellen <a name="useputty"></a> 
+#### SSH-Schlüsselpaar mit PuTTY erstellen <a name="useputty"></a> 
 
 [PuTTY](https://putty.org/){.external} ist ein Open Source SSH Client mit grafischer Benutzeroberfläche, verfügbar für **Windows** und andere Betriebssysteme, der zusätzliche Software zum Erstellen von SSH-Schlüsseln beinhaltet: `PuTTY Key Generator` (kurz `PuTTYgen`).
 
@@ -234,7 +236,7 @@ ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Beispiel:
 
 ```bash
-ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@203.0.113.100
 ```
 
 Sie werden nach dem Passwort des Benutzers gefragt. Sie erhalten eine Bestätigung wie die folgende:
@@ -286,7 +288,7 @@ ssh user@IP_ADDRESS
 Beispiel:
     
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.100
 ```
 
 ### Zusätzliche öffentliche Schlüssel zu Ihrem Server hinzufügen
@@ -322,10 +324,10 @@ ssh -i ~/.ssh/KeyFileName user@IP_ADDRESS
 Beispiel:
 
 ```bash
-ssh -i ~/.ssh/myVPS_rsa ubuntu@169.254.10.250
+ssh -i ~/.ssh/myVPS_rsa ubuntu@203.0.113.100
 ```
 
-Wie in den vorherigen Abschnitten beschrieben, funktionieren dieselben Anweisungen auf einem **Windows** Client. Ersetzen Sie lediglich `~/` durch den Pfad des Benutzerordners von **Windows**, standardmäßig `C:\Users\WindowsUsername\`. Zum Beispiel: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@169.254.10.250`.
+Wie in den vorherigen Abschnitten beschrieben, funktionieren dieselben Anweisungen auf einem **Windows** Client. Ersetzen Sie lediglich `~/` durch den Pfad des Benutzerordners von **Windows**, standardmäßig `C:\Users\WindowsUsername\`. Zum Beispiel: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`.
 
 #### Verwendung der Datei "config"
 
@@ -350,7 +352,7 @@ Im Folgenden finden Sie ein einfaches Beispiel für die Konfiguration einer SSH-
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 ```
 
@@ -364,11 +366,11 @@ Im vorherigen Beispiel wurden nur die Server-IP und die Schlüsseldatei angegebe
 
 ```console
 Host vps
-    HostName 169.254.10.250
+    HostName 203.0.113.100
     IdentityFile ~/.ssh/myVPS_rsa
 
 Host dedicated_server
-    HostName 169.254.10.251
+    HostName 203.0.113.101
     User rocky
     Port 49160
     IdentityFile ~/.ssh/myserver_rsa

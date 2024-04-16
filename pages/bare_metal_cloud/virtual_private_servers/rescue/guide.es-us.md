@@ -12,7 +12,7 @@ updated: 2024-02-19
 
 El modo de rescate (*rescue*) es una herramienta proporcionada por OVHcloud para arrancar su VPS en un sistema operativo temporal. A continuación, puede acceder al sistema para realizar tareas de diagnóstico y solucionar problemas como los siguientes:
 
-- Restablecimiento de la contraseña del usuario para recuperar el acceso
+- [Restablecimiento de la contraseña del usuario para recuperar el acceso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnóstico de problemas de red
 - Reparar un sistema operativo defectuoso
 - Reparar un firewall de software mal configurado

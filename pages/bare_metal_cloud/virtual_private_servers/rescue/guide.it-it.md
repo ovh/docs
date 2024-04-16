@@ -12,7 +12,7 @@ updated: 2024-02-19
 
 La modalità di ripristino (*rescue*) è uno strumento fornito da OVHcloud per avviare il tuo VPS in un sistema operativo temporaneo. È quindi possibile accedere al sistema per eseguire attività di diagnostica e risolvere diversi problemi, ad esempio:
 
-- Reimposta la password dell'utente per recuperare l'accesso
+- [Reimposta la password dell'utente per recuperare l'accesso](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 - Diagnosi di problemi di rete
 - Riparare un sistema operativo difettoso
 - Riparare un firewall software mal configurato

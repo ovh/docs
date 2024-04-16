@@ -98,7 +98,7 @@ Sie haben das CMS Typo3 manuell auf Ihrem OVHcloud Webhosting installiert. Nachd
 
 [Tutorial - Manuelle Installation von SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
-[Tutorial - Manuelles Installieren eines CMS auf meinem Hosting](/pages/web_cloud/web_hosting/cms_manual_installation)
+[Tutorial - Manuelle Installation eines CMS auf einem Webhosting](/pages/web_cloud/web_hosting/cms_manual_installation)
 
 [Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)
  

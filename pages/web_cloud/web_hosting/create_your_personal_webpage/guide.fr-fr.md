@@ -180,7 +180,7 @@ La balise HTML utilisée pour afficher une image est la balise `<img>`. Contrair
 ##### **Optimiser ses images**
 
 Une image de grande taille, c'est une image qui mettra du temps à être chargée par votre navigateur, particulièrement si vos visiteurs utilisent un smartphone ou une tablette connecté(e) au réseau 4 ou 5G.
-En règle générale, vous devez optimiser vos images et en limiter le poids. Ce poids est exprimé en octets. Les unités généralement utilisées sont les kilo-octets (1 ko = 1.000 octets) ou le méga-octet (1 Mo = 1.000.000 octets). Une image suppérieure à quelques dizaines de ko est considérée comme lourde et mérite d'être optimisée. 
+En règle générale, vous devez optimiser vos images et en limiter le poids. Ce poids est exprimé en octets. Les unités généralement utilisées sont les kilo-octets (1 ko = 1.000 octets) ou le méga-octet (1 Mo = 1.000.000 octets). Une image supérieure à quelques dizaines de ko est considérée comme lourde et mérite d'être optimisée. 
 
 **Exemple** : si vos images pèsent chacune 1 Mo, vous serez limité à moins de 100 images sur votre hébergement gratuit 100M. Si vous parvenez à réduire leur taille entre 50 ko et 200 ko, vous pourriez en présenter jusqu'à plusieurs milliers sur votre page web.
 

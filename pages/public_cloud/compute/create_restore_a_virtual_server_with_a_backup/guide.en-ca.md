@@ -23,7 +23,7 @@ You can make use of these instance backups for two basic purposes:
 
 ### Creating an instance from a backup
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project. Click on `Instance Backup`{.action} in the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project. Then Click `Instance backup`{.action} under the `Storage` section.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 

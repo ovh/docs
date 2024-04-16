@@ -58,6 +58,7 @@ Il trasferimento di un dominio Ionos richiede una procedura specifica.
 > Alcuni Registrar eliminano la zona DNS in loro possesso al termine del trasferimento del dominio. In questo caso, ricrea la zona DNS in OVHcloud prima di avviare le azioni associate al trasferimento del dominio.
 >
 > Per farlo, consulta queste guide:
+>
 > - [Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 > - [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >

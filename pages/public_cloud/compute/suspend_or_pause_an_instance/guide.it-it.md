@@ -64,7 +64,7 @@ Una volta completata la procedura, l'istanza si presenta come *Sospesa*.
 
 ![sospeso](images/instance_suspended.png){.thumbnail}
 
-Lo snapshot sarà disponibile nella sezione `Instance Backup`{.action}. Un'istantanea chiamata *xxxxx-shelved* è quindi visibile:
+Lo snapshot sarà quindi disponibile nella sezione `Instance Backup`{.action} del menu `Storage` a sinistra dello spazio Public Cloud. Sarà quindi visibile uno snapshot denominato *xxxxx-shelved*:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -236,6 +236,6 @@ Per riattivare l'istanza, esegui questo comando:
 
 ## Per saperne di più
 
-[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html)
+[Documentazione OpenStack](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

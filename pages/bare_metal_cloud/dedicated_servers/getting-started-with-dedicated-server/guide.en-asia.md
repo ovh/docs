@@ -1,20 +1,20 @@
 ---
-title: "Getting started with a dedicated server"
-excerpt: "Find out how to proceed after the delivery of your dedicated server"
-updated: 2024-04-04
+title: "How to get started with a dedicated server"
+excerpt: "Find out how to manage a dedicated server in the OVHcloud Control Panel and how to start with configuring and securing a server"
+updated: 2024-04-10
 ---
 
 ## Objective
 
-A dedicated server is a physical server located in one of our data centres. Unlike Web Hosting plans (also referred to as "shared hosting"), which are technically managed by OVHcloud, you are fully responsible for the administration of your dedicated server.
+A dedicated server is a physical server ("bare metal") located in one of our data centres. Unlike Web Hosting plans (also referred to as "shared hosting"), which are technically managed by OVHcloud, you are fully responsible for the administration of your dedicated server.
 
-**This guide will help you with the first steps of managing your dedicated server.**
+**This guide provides all the information required for your first steps with a dedicated server.**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
-- Administrative access (sudo) via SSH or remote desktop (Windows) to your server
+- Administrative access via SSH or remote desktop (Windows) to your server
 
 > [!primary]
 >
@@ -38,9 +38,12 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ### Installing or reinstalling an operating system
 
-When your dedicated server is first set up during the order process, you can select which operating system will be installed.
+> [!success]
+>
+> Find more information about server operating systems on [our web page](https://www.ovhcloud.com/asia/bare-metal/os/).
+>
 
-You can easily reinstall your server and choose a different OS image in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
+You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). In the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -52,7 +55,7 @@ In the popup window, select one of the installation options:
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk or Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/asia/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/asia/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 >
 You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
 >
@@ -77,6 +80,8 @@ You will find additional questions that are specific to the chosen operating sys
 
 For example, if you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process.
 
+For a detailed explanation on how to generate SSH keys, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+
 ![SSH key configuration](images/reinstalling-your-server-05.png){.thumbnail}
 
 Finally, click `Confirm`{.action} to trigger the operating system installation on your dedicated server.
@@ -85,11 +90,19 @@ Finally, click `Confirm`{.action} to trigger the operating system installation o
 
 ### Logging on to your server
 
+> [!warning]
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
+
 #### Linux
 
-Once the installation is completed, you will receive an email containing instructions for administrative access. You can connect to your server through a command terminal or with a third-party client by using SSH which is a secure communication protocol.
+If you have installed an OVHcloud OS template on your server, a user with elevated permissions is created automatically. This user will be named according to the operating system, for example "ubuntu" or "rocky".
 
-Use the following examples to log on to your server, replacing the credentials with your actual information (IP address and server reference name are interchangeable).
+You will then receive an email containing the information needed to establish a first connection with SSH. SSH is a secure communication protocol, used to establish encrypted connections to a remote host. You can find more detailed information in our guide: [Getting started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+Most current desktop operating systems will have an **Open SSH** client natively installed. This means that your access credentials allow you to quickly establish a connection to your server in the appropriate command line application (`Terminal`, `Command prompt`, `Powershell`, etc.). Enter the following command:
 
 ```bash
 ssh username@IPv4
@@ -101,13 +114,85 @@ ssh username@IPv4
 ssh ubuntu@203.0.113.1
 ```
 
-You can learn more about SSH in [this guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+You can use any third-party application compatible with **Open SSH** as well.
+
+Once connected, you can replace the predefined password for the current user with a better passphrase by using this command:
+
+```bash
+passwd
+```
+
+On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
+
+Type your current password and press `Enter`{.action}. Enter the new passphrase and type it again at the next prompt to confirm it.
+
+```console
+Changing password for ubuntu.
+Current password:
+New password: 
+Retype new password: 
+passwd: password updated successfully
+```
+
+> [!warning]
+> 
+> **Activating the root user account**
+>
+> It is not necessary to use the "root" user account to get started with administrating your server. This account has to be enabled first in the server OS in order to use it. Moreover, SSH connections with the user "root" are **disabled** by default as a security measure.
+> 
+Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+>
+
+Depending on your requirements for security, mobility and convenience, SSH keys can serve as an additional connection method or replace logins with username and password. Find out how to use them in our guide: [Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 #### Windows
 
-Once the installation is completed, you will receive an email containing your password for administrative (sudo) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
+Once the installation is completed, you will receive an email with your Windows login credentials. You can then connect to your server via RDP (**R**emote **D**esktop **P**rotocol). On your local Windows device, open the `Remote Desktop Connection` client application.
 
-Please also refer to our guide on [Configuring a new Windows Server installation](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
+![Windows remote](images/windows-connect-03.png){.thumbnail}
+
+Enter the IPv4 address of your server, then your username and passphrase. Usually a warning message will appear, asking to confirm the connection because of an unknown certificate. Click on `Yes`{.action} to log in.
+
+You can use also use any third-party application compatible with RDP. This is a requirement if your local device does not have Windows installed.
+
+> [!primary]
+>
+If you experience any issues with this procedure, verify that remote (RDP) connections are allowed on your local device by checking your system settings, firewall rules and possible network restrictions. 
+> 
+
+As a fallback option, you can use the [IPMI console in your OVHcloud Control Panel](#console) to connect.
+
+##### Enabling Windows boot logs (optional)
+
+Windows boot logs can be helpful for server error diagnostics.
+
+To activate them, follow the steps below by navigating through the tabs:
+
+> [!tabs]
+> 1. **Connect to the server**
+>>
+>> Connect to your server via RDP or [IPMI](#console).<br>
+>>
+> 2. **Open the "Run" utility**
+>>
+>> Open the Windows start menu and click on `Run`{.action}.<br><br>
+>>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>
+> 3. **Open "msconfig"**
+>>
+>> Enter "msconfig" and click on `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>
+> 4. **Activate logs**
+>>
+>> In the new window, activate the logs option next to `Boot log`. Click on `OK`{.action}.<br><br>
+>>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>
+
+The next time your server boots, logs will be saved into a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.
+
+To access the log file in rescue mode, please follow the instructions in the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
 
 <a name="reboot"></a>
 

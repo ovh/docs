@@ -448,7 +448,7 @@ Confirm by clicking on `Add`{.action}.
 
 ![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
 
-Once done, click on `OK`{.action} to apply the configuration. 
+Once done, click on `OK`{.action} to apply the configuration.
 
 ![Additional IP configuration](images/final-configuration.png){.thumbnail}
 
