@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Se connecter à son organisation"
 excerpt: "Comment se connecter à son organisation et changer son mot de passe"
-updated: 2024-04-15
+updated: 2024-04-16
 flag: hidden
 ---
 
@@ -12,45 +12,52 @@ flag: hidden
 ## Prérequis
 
 - Un navigateur web
-- Le mail de création de compte
+- Avoir reçu l'e-mail de création de compte
 
 ## En pratique
 
 ### Premiere connexion
 
-Ouvrer votre navigateur web et rendez-vous sur cette [url](https://vcloud.vcd.ovh).
-Vous allez être redirigé vers la page de connexion du vCD. Renseignez votre nom d'organisation (Celui-ci est fourni dans le mail de création de compte).
+Ouvrez votre navigateur web et rendez-vous sur cette [url](https://vcloud.vcd.ovh).
 
-Conseil : Vous pouvez vous rendre direction sur la page de connexion de votre organisation avec cette url : **https://vcloud.vcd.ovh/tenant/{votre-org}**
+Vous allez être redirigé vers la page de connexion du vCD. Renseignez votre nom d'organisation (celui-ci est fourni dans l'e-mail de création de compte).
 
-![First page connection](images/vcd-organization-connection.png)
+> [!success]
+>
+> Vous pouvez vous rendre directement sur la page de connexion de votre organisation avec cette URL : `https://vcloud.vcd.ovh/tenant/{votre-org}`.
 
-Vous êtes maintenant invité à entrer votre nom d'utilisateur et votre mot de passe dans les champs appropriés (Ces informations sont fournies dans le mail de création).
-Cliquez sur le bouton "Se connecter" pour accéder à VMware Cloud Director.
+![First page connection](images/vcd-organization-connection.png){.thumbnail}
 
-![Login connection](images/vcd-login-connection.png)
+Vous êtes maintenant invité à entrer votre nom d'utilisateur et votre mot de passe dans les champs appropriés (ces informations sont fournies dans l'e-mail de création de votre compte).
 
-Vous allez être redirigé vers le tableau de bord de votre organisation que nous allons décrire dans le [ce guide](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-dashboard-overview).
+Cliquez sur le bouton `Se connecter`{.action} pour accéder à VMware Cloud Director.
 
-![Dashboard](images/vcd-dashboard-view.png)
+![Login connection](images/vcd-login-connection.png){.thumbnail}
 
-### Changement de mot de passe
+Vous allez être redirigé vers le tableau de bord de votre organisation que nous allons décrire dans le [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started).
 
-Une fois connecté, recherchez un lien ou un bouton intitulé **Admin OVHCloud Organization Administrator** ou similaire. Celui-ci est situé dans le coin supérieur droit de l'interface utilisateur.
+![Dashboard](images/vcd-dashboard-view.png){.thumbnail}
 
-![Admin Button](images/vcd-settings.png)
+### Modification du mot de passe
 
-Un menu déroulant apparé, choississez l'option **Change Password**.
+Une fois connecté, recherchez un lien ou un bouton intitulé **Admin OVHcloud Organization Administrator** ou équivalent. Celui-ci est situé dans le coin supérieur droit de l'interface utilisateur.
 
-![Option Change Password](images/vcd-change-password-option.png)
+![Admin Button](images/vcd-settings.png){.thumbnail}
 
-Vous serez invité à saisir votre ancien mot de passe ainsi que votre nouveau mot de passe souhaité.
-Complétez les champs correspondant puis cliquez sur **SAVE**.
+Un menu déroulant apparaît, choississez l'option `Change Password`{.action}.
 
-![Change password](images/vcd-change-password.png)
+![Option Change Password](images/vcd-change-password-option.png){.thumbnail}
 
-Lors du changement de mot de passe vous devriez recevoir un mail de confirmation.
+Vous serez invité à saisir votre ancien mot de passe ainsi que votre nouveau mot de passe.
+
+Complétez les champs correspondants puis cliquez sur `SAVE`{.action}.
+
+![Change password](images/vcd-change-password.png){.thumbnail}
+
+Vous devriez recevoir un mail de confirmation du changement de mot de passe.
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
