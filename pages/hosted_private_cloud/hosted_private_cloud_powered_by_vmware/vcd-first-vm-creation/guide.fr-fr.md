@@ -2,6 +2,7 @@
 title: "VCD - Création d'une nouvelle machine virtuelle"
 excerpt: "Comment créer une nouvelle machine virtuelle dans vCD"
 updated: 2024-04-16
+flag: hidden
 ---
 
 ## Objectif
