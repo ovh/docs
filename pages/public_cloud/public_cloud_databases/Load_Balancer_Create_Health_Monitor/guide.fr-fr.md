@@ -1,7 +1,7 @@
 ---
 title: 'Guide : Création et Gestion d’un Health Monitor pour Load Balancer OVHcloud'
 excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Load Balancers OVHcloud via Manager, CLI, Horizon et Terraform'
-updated: 2024-04-08
+updated: 2024-04-16
 ---
 
 ## Objectif
