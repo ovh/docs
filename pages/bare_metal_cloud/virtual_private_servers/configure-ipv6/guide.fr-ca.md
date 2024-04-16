@@ -295,7 +295,7 @@ IPV6_DEFAULTGW=2607:5300:201:abcd::1
 - Créez un fichier (avec les privilèges *sudo*), indiquant les itinéraires IPv6 par défaut :
 
 ```bash
-~# sudo touch /etc/sysconfig/network-scripts/route6-eth0
+sudo touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
 - Modifiez le fichier et ajoutez les lignes ci-dessous. Remplacez les éléments génériques (*IPV6_GATEWAY* et **eth0**, si nécessaire) par vos valeurs personnalisées.
