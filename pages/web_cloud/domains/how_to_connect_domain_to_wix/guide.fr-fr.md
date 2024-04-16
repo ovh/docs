@@ -33,7 +33,19 @@ Avant de suivre les deux étapes de ce guide, nous vous conseillons de vous fami
 >
 > Votre zone DNS est potentiellement déjà préconfigurée ou liée à un hébergement. Nous allons voir comment identifier chaque enregistrement DNS nécessaire à la connexion avec votre hébergement Wix. Certains devront être supprimés pour éviter de rentrer en conflit avec des enregistrements DNS requis dans cette configuration. D'autres seront simplement à modifier ou à créer. Pour une meilleure compréhension, nous utiliserons le nom de domaine « **mydomain.ovh** » comme exemple. Remplacez celui-ci par votre nom de domaine lors de la configuration.
 
-### Configurer vos enregistrements DNS sur votre compte OVHcloud
+### 1. Configurer votre hébergement Wix
+
+Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous devez d'abord préparer votre hébergement en suivant les instructions de **l'étape 1** depuis [**ce lien de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
+
+### 2. Configurer vos enregistrements DNS sur votre compte OVHcloud
+
+> [!warning]
+>
+> Avant de poursuivre : <br>
+> - Ouvrez un onglet en parallèle sur votre navigateur internet.
+> - Ouvrez [**cette page de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
+> - Positionnez-vous sur la partie « **Étape 2 | Mettre à jour les enregistrements DNS dans le compte de votre hébergeur de domaine** ».<br>
+> Les instructions suivantes vous aiderons à configurer plus facilement votre zone DNS OVHcloud.
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
@@ -51,41 +63,30 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
 >> ![dnszone](images/filter-a.png){.thumbnail}<br>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www.» est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul et avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
->> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 de Wix `185.230.63.107` dans le champ **Cible**.
+>> Laissez le champ **Sous-domaine** vide et saisissez l'adresse IPv4 *relevée depuis votre interface Wix* dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action}, validez votre enregistrement « A » et passez à l'étape 2.
 > **Etape 2**
+>> **Enregistrement AAAA**<br><br>
+>>  Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
+>> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> - Si des enregistrements « AAAA » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec les enregistrements « A » et « CNAME » que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul et avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+> **Etape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.»  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
-> **Etape 3**
+>> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www.» (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 3. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www.» puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+> **Etape 4**
 >> **Enregistrement CNAME**<br><br>
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](images/filter-cname.png){.thumbnail}<br>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
->> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `pointing.wixdns.net.` dans le champ **Cible**.<br>
+>> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez la valeur *relevée depuis votre interface Wix* dans le champ **Cible**.<br>
 >> Cliquez sur `Suivant`{.action} puis validez votre enregistrement « CNAME ».
 
 La zone DNS est maintenant configurée pour faire le lien avec un hébergement Wix.
-
-### Connecter son nom de domaine à Wix
-
-Les manipulations pour cette étape sont à réaliser depuis l'espace de gestion de Wix. 
-
-Pour commencer, suivez les étapes de connexion décrites ci-dessous : 
-1.	Connectez-vous à votre compte Wix et rendez-vous sur la section hébergeur de votre domaine et accédez à ‘Domaines’{.action}. 
-2.	Cliquez sur ‘Ajouter un domaine existant’{.action} puis sur ‘Connecter un domaine que vous possédez déjà’ {.action}. 
-3.	Choisissez le site auquel vous souhaitez connecter votre domaine et cliquez sur ‘Suivant’{.action}. 
-4.	Saisissez le nom de domaine et cliquez sur ‘C'est parti’{.action}.
-5.	Cliquez sur ‘Je possède ce domaine’{.action}.
-6.	Vérifiez les informations à l'écran et cliquez sur ‘Démarrer’{.action}.
-7.	Cliquez sur le lien ‘Pointage’{.action} dans la phrase en haut de l'écran.
-8.	Cliquez sur ‘Passer au pointage’{.action}.
-
-Pour la suite du processus, nous vous invitons à vous rendre directement à l’étape 2 du guide sur le site de Wix, en cliquant sur [**ce lien**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
 
 > [!primary]
 >
