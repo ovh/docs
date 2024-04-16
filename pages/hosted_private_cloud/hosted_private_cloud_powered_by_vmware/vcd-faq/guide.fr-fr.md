@@ -1,7 +1,7 @@
 ---
 title: "vCD - FAQ"
 excerpt: "Retrouvez les questions les plus fréquentes concernant vCD"
-updated: 2024-04-09
+updated: 2024-04-16
 flag: hidden
 ---
 
