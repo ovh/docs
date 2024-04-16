@@ -11,7 +11,7 @@ Ce guide a pour but d'expliquer comment configurer et gérer des policies et rè
 
 - **Compte OVHcloud :** Accès à un projet Public Cloud chez OVHcloud.
 - Comprendre les concepts d'un load balancer : voir [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
-- **Load Balancer OVHcloud :** Un Load Balancer déjà configuré et en état de fonctionnement.[Configuration d'un Load Balancer OVHcloud](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200)
+- **Load Balancer OVHcloud :** Un Load Balancer déjà configuré et en état de fonctionnement. voir [ Configuration d'un Load Balancer OVHcloud](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200)
 [GAL] indiquer que les 3 ci dessous sont optionnels en fonction de la manière dont l'utilisateur souhaite configurer son load balancer (les 3 ne sont pas obligatoires mais il en faut au moins une)
 - **Accès au Manager OVHcloud :** Pour la gestion via l'interface graphique. 
 - **CLI OpenStack :** Pour la gestion via la ligne de commande. => ajouter un lien vers https://help.ovhcloud.com/csm/fr-public-cloud-compute-prepare-openstack-api-environment?id=kb_article_view&sysparm_article=KB0050995
