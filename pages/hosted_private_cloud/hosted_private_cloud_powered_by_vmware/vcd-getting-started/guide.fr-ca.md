@@ -1,6 +1,6 @@
 ---
-title: "VCD - Décrouver comment utiliser l'interface utilisateur de vCD"
-excerpt: "Decouvrer l'interface utilisateur de vCD"
+title: "VMware Cloud Director - Découvrez comment utiliser l'interface utilisateur de vCD"
+excerpt: "Découvrez l'interface utilisateur de VMware Cloud Director"
 updated: 2024-04-16
 flag: hidden
 ---
