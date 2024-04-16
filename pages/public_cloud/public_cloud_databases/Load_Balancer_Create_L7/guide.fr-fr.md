@@ -3,7 +3,6 @@ title: 'Guide : Création et Gestion des Policies et Règles de Niveau 7 (L7) po
 excerpt: 'Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) avec les Load Balancers Public Cloud OVHcloud, en utilisant l'espace client OVHcloud, la CLI, Horizon et Terraform.'
 updated: 2024-04-08
 ---
-
 ## Objectif
 
 Ce guide a pour but d'expliquer comment configurer et gérer des policies et règles de niveau 7 (L7) pour les Load Balancers dans l'environnement OVHcloud. Utiliser les capacités L7 permet de diriger le trafic de manière intelligente, basée sur le contenu des requêtes HTTP/HTTPS, améliorant ainsi la sécurité, la performance, et la fiabilité de vos applications.
