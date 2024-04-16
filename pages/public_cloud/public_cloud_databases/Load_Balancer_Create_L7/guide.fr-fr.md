@@ -1,6 +1,6 @@
 ---
-title: 'Guide : Création et Gestion des Policies et Règles de Niveau 7 (L7) pour les Load Balancers OVHcloud'
-excerpt: 'Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) avec les Load Balancers OVHcloud, en utilisant le Manager, la CLI, Horizon et Terraform.'
+title: 'Guide : Création et Gestion des Policies et Règles de Niveau 7 (L7) pour les Load Balancers Public Cloud OVHcloud'
+excerpt: 'Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) avec les Load Balancers Public Cloud OVHcloud, en utilisant l'espace client OVHcloud, la CLI, Horizon et Terraform.'
 updated: 2024-04-08
 ---
 
@@ -11,11 +11,13 @@ Ce guide a pour but d'expliquer comment configurer et gérer des policies et rè
 ## Prérequis
 
 - **Compte OVHcloud :** Accès à un projet Public Cloud chez OVHcloud.
-- **Load Balancer OVHcloud :** Un Load Balancer déjà configuré et en état de fonctionnement.
-- **Accès au Manager OVHcloud :** Pour la gestion via l'interface graphique.
-- **CLI OpenStack :** Pour la gestion via la ligne de commande.
-- **Interface Horizon :** Pour une gestion graphique via OpenStack.
-- **Terraform :** (Optionnel) Pour la gestion via Infrastructure as Code.
+- Comprendre les concepts d'un load balancer : voir [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
+- **Load Balancer OVHcloud :** Un Load Balancer déjà configuré et en état de fonctionnement. => ajouter le lien vers [la page de doc configuration ](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200)
+[GAL] indiquer que les 3 ci dessous sont optionnels en fonction de la manière dont l'utilisateur souhaite configurer son load balancer (les 3 ne sont pas obligatoires mais il en faut au moins une)
+- **Accès au Manager OVHcloud :** Pour la gestion via l'interface graphique. 
+- **CLI OpenStack :** Pour la gestion via la ligne de commande. => ajouter un lien vers https://help.ovhcloud.com/csm/fr-public-cloud-compute-prepare-openstack-api-environment?id=kb_article_view&sysparm_article=KB0050995
+- **Interface Horizon :** Pour une gestion graphique via OpenStack. => ajouter un lien vers https://help.ovhcloud.com/csm/fr-public-cloud-compute-horizon?id=kb_article_view&sysparm_article=KB0050895
+- **Terraform :** (Optionnel) Pour la gestion via Infrastructure as Code. => ajouter un lien vers https://registry.terraform.io/providers/ovh/ovh/latest/docs
 
 ### Concepts Clés Expliqués
 #### Policies et Règles L7
@@ -24,11 +26,16 @@ Ce guide a pour but d'expliquer comment configurer et gérer des policies et rè
 
 - **Règle L7 :** Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
 
-### Étape 1 : Configuration via le Manager OVHcloud
+=> Ajouter des exemples de L7 Policy / L7 rules par exemple tiré du cookbook
 
-La configuration des politiques et règles L7 via le Manager OVHcloud vous permet de gérer votre Load Balancer de manière intuitive et graphique. Voici le détail des étapes à suivre :
+=> Ajouter les contraintes : les L7 policy ne s'appliquent qu'à des listeners de type `HTTP` ou `TERMINATED_HTTPS`
+=> Ajouter les principales caractéristiques d'une L7 policy (action, redirect_http_code, redirect_pool_id, redirect_prefix, redirect_url et d'une L7 rule (type, compare_type, value, key)
 
-#### 1. **Accéder au Manager OVHcloud**
+### Étape 1 : Configuration via l'espace client OVHcloud
+
+La configuration des politiques et règles L7 via l'espace client OVHcloud vous permet de gérer votre Load Balancer de manière intuitive et graphique. Voici le détail des étapes à suivre :
+
+#### 1. **Accéder à l'espace client OVHcloud**
 
 - Allez sur le [site d'OVHcloud](https://www.ovh.com/manager/) et connectez-vous avec vos identifiants.
 - Une fois dans votre espace client, vous aurez une vue d'ensemble de tous vos services OVHcloud.
@@ -42,7 +49,7 @@ La configuration des politiques et règles L7 via le Manager OVHcloud vous perme
 
 #### 3. **Gérer les Politiques L7**
 
-- Après avoir sélectionné votre Load Balancer, vous accéderez à son interface de gestion. Trouvez et cliquez sur l'onglet « **Écouteurs** ».
+- Après avoir sélectionné votre Load Balancer, vous accéderez à son interface de gestion. Trouvez et cliquez sur l'onglet « **Écouteurs** ». => D'où ces écouteurs sortent-ils ? 
 - Sélectionnez l'écouteur à configurer pour afficher ses détails.
 - Localisez la section « **Politiques L7** » pour voir les politiques existantes ou pour en ajouter de nouvelles.
 - Cliquez sur « **Ajouter une politique L7** » ou « **Gérer les politiques L7** », selon l'interface.
@@ -66,6 +73,13 @@ La CLI OpenStack permet de gérer vos ressources cloud via des commandes exécut
 
 - Ouvrez votre terminal.
 - Assurez-vous que l'environnement de votre CLI est configuré avec les bons identifiants API d'OVHcloud.
+- => ajouter comment obtenir les listeners
+-  openstack loadbalancer listener list
++--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
+| id                                   | default_pool_id                      | name                         | project_id                       | protocol | protocol_port | admin_state_up |
++--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
+| REDACTED  | REDACTED | LB_S_GRA9-154-360-listener-1 | REDACTED | HTTP     |            80 | True           |
++--------------------------------------+--------------------------------------+------------------------------+----------------------------------+----------+---------------+----------------+
 - Utilisez la commande suivante pour créer une nouvelle politique L7, en remplaçant `mon-listener-id` par l'identifiant de votre écouteur et `https://monsite.com` par l'URL de redirection désirée :
 
   ```bash
@@ -81,10 +95,6 @@ Cette commande crée une politique L7 qui redirige toutes les requêtes vers l'U
 #### Gestion via Horizon
 
 Horizon, l'interface web d'OpenStack, offre une vue graphique sur la configuration de vos ressources cloud, y compris les Load Balancers et les politiques L7 :
-
-##### Connexion
-
-- Accédez à Horizon en utilisant vos identifiants OVHcloud.
 
 ##### Navigation
 
@@ -147,41 +157,6 @@ resource "openstack_lb_l7policy_v2" "l7policy_1" {
   redirect_url = "https://www.example.com"
 }
 ```
-
-##### Déploiement avec Terraform
-
-Après avoir configuré votre politique L7 avec Terraform, suivez ces étapes pour le déploiement :
-
-###### Initialisation de Terraform
-
-- **Commande :** `terraform init`
-- **But :** Initialise le workspace Terraform dans votre répertoire contenant les fichiers de configuration.
-
-###### Planification des Changements
-
-- **Commande :** `terraform plan`
-- **But :** Affiche un aperçu des modifications que Terraform prévoit d'appliquer à votre infrastructure.
-
-###### Application de la Configuration
-
-- **Commande :** `terraform apply`
-- **But :** Applique la configuration définie dans vos fichiers Terraform pour créer ou mettre à jour les ressources spécifiées, ici la politique L7 sur votre Load Balancer.
-
-##### Avantages de l'Utilisation de Terraform
-
-###### Idempotence
-
-- **Description :** Terraform assure que l'état final de votre infrastructure correspond à la configuration définie, permettant une gestion prévisible et reproductible de vos ressources.
-
-###### Gestion de l'Infrastructure as Code (IaC)
-
-- **Description :** Facilite la documentation, le partage et la révision de votre infrastructure, rendant les modifications plus gérables et moins sujettes aux erreurs.
-
-###### Automatisation
-
-- **Description :** Simplifie la gestion des ressources cloud complexes en réduisant le temps et l'effort nécessaires à leur déploiement et à leur maintenance.
-
-L'utilisation de Terraform pour la configuration des politiques L7 intègre la gestion de ces règles dans le processus général de déploiement de votre infrastructure, offrant une plus grande flexibilité et automatisation. Cette approche structurée favorise une gestion plus efficace et cohérente de l'équilibrage de charge à travers les politiques et les règles de niveau 7, optimisant ainsi les performances et la sécurité de vos applications déployées sur OVHcloud.
 
 ## Pour Aller Plus Loin
 
