@@ -320,6 +320,7 @@
             + [vCD - Concepts](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
             + [vCD - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)
             + [VMware Cloud Director - Logging in to your organization](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
+            + [VMware Cloud Director - Creating a new virtual machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
             + [Using Active Directory server as an authentication source (Federation)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation)
             + [Keeping your vSphere web client secure](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_access_security_advices)
