@@ -13,6 +13,20 @@ updated: 2024-04-10
 >>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style> 
+
 ## Objective
 
 <<<<<<< HEAD
@@ -120,5 +134,9 @@ The OVHcloud API available at api.ovh.com can helps you to retrieve your data to
 - [Archiving your logs - Cold-storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage/guide.en-gb.md)
 - [Logs Data Platform - Archive mirror](https://github.com/ovh/ldp-archive-mirror)
 
+<<<<<<< HEAD
 >>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
 Join our community of users on <https://community.ovh.com/en/>.
+=======
+Join our community of users on <https://community.ovh.com/en/>.
+>>>>>>> a61ca5d818 (Add style tag)
