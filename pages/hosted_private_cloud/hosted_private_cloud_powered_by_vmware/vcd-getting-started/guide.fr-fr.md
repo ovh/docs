@@ -1,30 +1,29 @@
 ---
 title: "VMware Cloud Director - Découvrez comment utiliser l'interface utilisateur de vCD"
-excerpt: "Decouvrez l'interface utilisateur de VMware Cloud Director"
+excerpt: "Découvrez l'interface utilisateur de VMware Cloud Director"
 updated: 2024-04-16
 flag: hidden
 ---
 
 ## Objectif
 
-**Ce guide vous guide à travers les différentes section de l'interface de vCD.**
+**Ce guide vous présente les différentes sections de l'interface de VMware Cloud Director.**
 
 ## Prérequis
 
 >[!primary]
-> Si vous ne savez comment vous connecter au portail web de votre organisation, vous pouvez retrouver [ce guide](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging/)
+> Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
-- Avoir un compte vCD
+- Avoir un compte VMware Cloud Director
 
 ## En pratique
 
-VMware vCloud Director (vCD) est une plateforme de gestion de cloud computing. Celle-ci permet la création, la gestion et le déploiement de ressources informatiques virtualisées à grande échelle, vCD offre une infrastructure agile et évolutive. Grâce à son interface utilisateur conviviale et à ses fonctionnalités avancées telles que la gestion des ressources, la facturation automatisée et la sécurité renforcée, vCloud Director simplifie la gestion des environnements cloud complexes. 
+VMware vCloud Director (vCD) est une plateforme de gestion de cloud computing. Celle-ci permet la création, la gestion et le déploiement de ressources informatiques virtualisées à grande échelle. vCD offre une infrastructure agile et évolutive. Grâce à son interface utilisateur conviviale et à ses fonctionnalités avancées telles que la gestion des ressources, la facturation automatisée et la sécurité renforcée, vCloud Director simplifie la gestion des environnements cloud complexes.
 
 Cette solution vous permet de provisionner et de gérer efficacement des machines virtuelles, des réseaux virtuels et d'autres ressources, offrant ainsi une agilité opérationnelle et une flexibilité accrues pour répondre aux besoins changeants des entreprises.
 
 >[!primary]
->Une fois connecté à votre interface web, vous serez accueilli par un tableau de bord affichant vos **vDC**, ainsi qu'un résumé détaillé de votre utilisation des ressources (10). En haut de l'écran, vous trouverez également une barre de navigation regroupant les différentes options de paramétrage disponibles pour vCloud Director (vCD).
-
+> Une fois connecté à votre interface web, vous serez accueilli par un tableau de bord affichant vos **vDC**, ainsi qu'un résumé détaillé de votre utilisation des ressources (10). En haut de l'écran, vous trouverez également une barre de navigation regroupant les différentes options de paramétrage disponibles pour vCloud Director (vCD).
 
 ![Dashboard Overview](images/vcd-dashboard-overview.png){.thumbnail}
 
@@ -45,11 +44,11 @@ Les différentes sections disponibles :
 
 ![Datacenters Overview](images/vcd-datacenters-overview.png){.thumbnail}
 
-Dans cette section retrouvez ici tous vos datacenters virtuels (**vDC**) commandés avec différents emplacements de datacenters, un bref suivi de votre consommation de ressources et du nombre de vApps/VM en cours d’exécution.
+Retrouvez dans cette sections tous vos datacenters virtuels (**vDC**) commandés avec différents emplacements de datacenters, un bref suivi de votre consommation de ressources et du nombre de vApps/VM en cours d’exécution.
 
 ### Applications
 
-Dans cette section profitez d'une vision d'ensemble complète de tous vos vApps et machines virtuelles sur vos centres de données virtuels (vcd) : créez, accédez et supprimez des vApps ou des machines virtuelles en toute simplicité.
+Cette section vous permet de profiter d'une vision d'ensemble complète de tous vos vApps et machines virtuelles sur vos centres de données virtuels (vcd) : créez, accédez et supprimez des vApps ou des machines virtuelles en toute simplicité.
 
 ![Applications Overview](images/vcd-applications-overview.png){.thumbnail}
 
@@ -57,31 +56,31 @@ Dans cette section profitez d'une vision d'ensemble complète de tous vos vApps 
 
 ![Réseau Overview](images/vcd-networking-overview.png){.thumbnail}
 
-Dans cette section retrouvez tous les composants réseau de vos environnements vCD ici : réseaux, passerelles Edge, passerelles fournisseur, plages d'adresses IP, groupes de centres de données et balises de sécurité.
+Dans cette section, retrouvez tous les composants réseau de vos environnements vCD : réseaux, passerelles Edge, passerelles fournisseur, plages d'adresses IP, groupes de centres de données et balises de sécurité.
 
 ### Content Hub
 
 ![Content Hub Overview](images/vcd-content-overview.png){.thumbnail}
 
-Dans cette section, vous pouvez administrer vos catalogues : créez, supprimez ou téléchargez des fichiers ISO, des modèles OVA, ou bien utilisez tout simplement les modèles préconfigurés disponibles dans le catalogue OVHcloud.
+Cette section vous permet d'administrer vos catalogues : créez, supprimez ou téléchargez des fichiers ISO, des modèles OVA, ou bien utilisez tout simplement les modèles préconfigurés disponibles dans le catalogue OVHcloud.
 
 ### Administration
 
 ![Administration Overview](images/vcd-administration-overview.png){.thumbnail}
 
-Dans cette section, vous avez la possibilité de gérer les utilisateurs de votre organisation, de créer des rôles et des groupes, et de configurer un fournisseur d'identification (OIDC/SAML). Vous pouvez également paramétrer des stratégies d'alerte et d'expiration par e-mail pour vos applications.
+Vous avez la possibilité de gérer ici les utilisateurs de votre organisation, de créer des rôles et des groupes et de configurer un fournisseur d'identification (OIDC/SAML). Vous pouvez également paramétrer des stratégies d'alertes et d'expiration par e-mail pour vos applications.
 
 ### Monitoring
 
 ![Monitoring Overview](images/vcd-monitoring-overview.png){.thumbnail}
 
-Dans cette section, vous pouvez accéder à l'historique complet de toutes les tâches et événements survenus dans votre organisation. Vous pouvez filtrer pour retrouver plus facilement les tâches/événements souhaités.
+Dans cette section, vous pouvez accéder à l'historique complet de toutes les tâches et événements survenus dans votre organisation. Vous pouvez utiliser les filtres pour retrouver plus facilement les tâches/événements souhaités.
 
 ### More
 
 ![More options Overview](images/vcd-more-overview.png){.thumbnail}
 
-Dans cette section, accédez aux plugins essentiels : Veeam pour la protection des données afin de sauvegarder votre infrastructure, et le responsable des opérations pour obtenir un détail exhaustif de votre consommation.
+Dans cette section, accédez aux plugins essentiels : Veeam pour la protection des données afin de sauvegarder votre infrastructure, et le *Operations Manager* pour obtenir un détail exhaustif de votre consommation.
 
 ### Loupe
 
@@ -96,5 +95,7 @@ Utilisez cette fonction pour rechercher des composants au sein de votre organisa
 Consultez ici toutes les actions récentes effectuées au sein de votre organisation.
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

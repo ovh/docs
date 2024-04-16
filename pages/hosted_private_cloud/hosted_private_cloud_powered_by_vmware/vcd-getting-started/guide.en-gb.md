@@ -1,7 +1,7 @@
 ---
-title: "VCD - Find out how to use the vCD user interface"
+title: "VMware Cloud Director - Find out how to use the vCD user interface"
 excerpt: "Discover the vCD user interface"
-updated: 2024-04-15
+updated: 2024-04-16
 flag: hidden
 ---
 
@@ -12,23 +12,22 @@ flag: hidden
 ## Requirements
 
 >[!primary]
-> If you are unsure how to log in to your organization’s web portal, you can find [this guide](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging/)
+> If you are unsure how to log in to your organization’s web portal, read [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) first.
 
-- a vCD account
+- a VMware Cloud Director account
 
-## In practice
+## Instructions
 
 VMware vCloud Director (vCD) is a cloud computing management platform. vCD enables the creation, management and deployment of virtualized computing resources on a large scale, and offers an agile and scalable infrastructure. With an easy-to-use user interface and advanced features such as resource management, automated billing, and enhanced security, vCloud Director simplifies the management of complex cloud environments. 
 
 This solution enables you to provision and efficiently manage virtual machines, virtual networks, and other resources, providing increased operational agility and flexibility to meet changing business needs.
 
 >[!primary]
->Once you have logged in to your web interface, you will be greeted by a dashboard displaying your **vDC**, as well as a detailed summary of your resource usage (10). At the top of the screen, you will also find a navigation bar with the different settings options available for vCloud Director (vCD).
-
+> Once you have logged in to your web interface, you will be greeted by a dashboard displaying your **vDC**, as well as a detailed summary of your resource usage (10). At the top of the screen, you will also find a navigation bar with the different settings options available for vCloud Director (vCD).
 
 ![Dashboard Overview](images/vcd-dashboard-overview.png){.thumbnail}
 
-The different sections available:
+The different sections available are the following:
 
 1. **Data Centers**
 2. **Applications**
@@ -57,7 +56,7 @@ In this section, get a comprehensive overview of all your vApps and virtual mach
 
 ![Network Overview](images/vcd-networking-overview.png){.thumbnail}
 
-In this section, you can find all the network components of your vCD environments here: networks, Edge Gateways, Provider Gateways, IP address ranges, datacentre groups, and security tags.
+In this section, you can find all the network components of your vCD environments: networks, Edge Gateways, Provider Gateways, IP address ranges, datacentre groups, and security tags.
 
 ### Content Hub
 
@@ -69,7 +68,7 @@ In this section, you can manage your catalogs: create, delete or download ISO fi
 
 ![Administration Overview](images/vcd-administration-overview.png){.thumbnail}
 
-In this section, you can manage users in your organization, create roles and groups, and configure an identification provider (OIDC/SAML). You can also set up email alert and expiration policies for your applications.
+In this section, you can manage users in your organization, create roles and groups, and configure an identification provider (OIDC/SAML). You can also set up email alerts and expiration policies for your applications.
 
 ### Monitoring
 
@@ -94,7 +93,9 @@ Use this feature to search for components within your organization. The vertical
 ![Tasks Overview](images/vcd-recent-tasks-overview.png){.thumbnail}
 
 See here for all recent actions in your organization.
-  
+
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
