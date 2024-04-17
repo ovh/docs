@@ -1,7 +1,7 @@
 ---
-title: Cómo conectar un dominio de OVHcloud a un alojamiento web de Shopify
-excerpt: Prepara y configura la zona DNS de tu dominio de OVHcloud para conectarla a un alojamiento de Shopify
-updated: 2024-04-09
+title: "Cómo conectar un dominio de OVHcloud a un alojamiento web de Shopify"
+excerpt: "Prepara y configura la zona DNS de tu dominio de OVHcloud para conectarla a un alojamiento de Shopify"
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Si tiene un dominio con OVHcloud y quiere conectarlo a un alojamiento Shopify, E
 >
 > - El servicio de soporte de Shopify no tiene acceso a la configuración del dominio de OVHcloud y no puede aconsejarle sobre la información que debe proporcionarle.
 >
-> - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más](#aller-plus-loin) información de esta guía.
+> - La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.<br><br> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte la sección [Más](#go-further) información de esta guía.
 >
 
 ## Requisitos
@@ -50,32 +50,32 @@ Cada registro DNS puede modificarse haciendo clic en el botón `...`{.action} a 
 Siga los pasos en el orden indicado en las fichas siguientes:
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >> **Registro A**<br><br>
 >> Para identificar los registros "A" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `A`.<br>
 >> ![dnszone](images/filter-a.png){.thumbnail}<br>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde a su nombre de dominio solo, sin subdominio (por ejemplo: `mydomain.ovh.`) y haga clic en `Editar el registro`{.action}.<br>
->> - Si hay un registro para el subdominio "www." (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
+>> - Si hay un registro para el subdominio "www." (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "A" existente, haga clic en el botón `Añadir una entrada`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `A`{.action}<br><br>
 >> Deje el campo **Subdominio** en blanco e introduzca la dirección IPv4 de Shopify `23.227.38.65` en el campo **Destino**.
 >> ![dnszone](images/field-a.png){.thumbnail}<br><br>
->> Haga clic en `Siguiente`{.action}, acepte el registro "A" y continúe con el paso 2.
-> **Paso 2**
+>> Haga clic en `Siguiente`{.action}, acepte el registro "A" y continúe con el etapa 2.
+> **Etapa 2**
 >> **Registro AAAA**<br><br>
 >>  Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
 >> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo sin subdominio (p. ej.: `mydomain.ovh.`) y haga clic en `Editar el registro`{.action}.<br>
->> - Si hay un registro para el subdominio "www." (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
+>> - Si hay un registro para el subdominio "www." (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
 >> - Si no tiene un registro "AAAA", haga clic en el botón `Añadir una entrada`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `AAAA`{.action}<br><br>
 >> Deje el campo **Subdominio** en blanco e introduzca la dirección IPv6 de Shopify `2620:0127:f00f:5::` en el campo **Destino**.
 >> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
->> Haga clic en `Siguiente`{.action} y acepte el registro "AAAA" y continúe con el paso 3.
-> **Paso 3**
+>> Haga clic en `Siguiente`{.action} y acepte el registro "AAAA" y continúe con el etapa 3.
+> **Etapa 3**
 >> **Registro TXT**<br><br>
 >>  Para identificar los registros "TXT" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `TXT`.<br>
 >> ![dnszone](images/filter-txt.png){.thumbnail}<br>
->> - Si existen registros "TXT" para el dominio solo (por ejemplo, `mydomain.ovh.`) y para su subdominio "www" (por ejemplo, `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
-> **Paso 4**
+>> - Si existen registros "TXT" para el dominio solo (por ejemplo, `mydomain.ovh.`) y para su subdominio "www" (por ejemplo, `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el etapa 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
+> **Etapa 4**
 >> **Registro CNAME**<br><br>
 >>  Para identificar los registros "CNAME" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `CNAME`.<br>
 >> ![dnszone](images/filter-cname.png){.thumbnail}
@@ -97,7 +97,7 @@ Las operaciones de este paso deben realizarse desde el área de cliente de Shopi
 
 Si utiliza un servicio de correo de OVHcloud o tiene previsto contratar uno de [nuestros servicios de correo](https://www.ovhcloud.com/es-es/emails/), deberá preparar su zona DNS en consecuencia. Para más información, consulte nuestra guía sobre la [configuración de un registro MX](/pages/web_cloud/domains/dns_zone_mx).
 
-## Ir más lejos <a name="gofurther"></a>
+## Ir más lejos <a name="go-further"></a>
 
 [Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
