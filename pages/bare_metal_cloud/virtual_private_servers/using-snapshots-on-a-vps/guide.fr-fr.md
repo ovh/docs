@@ -9,12 +9,12 @@ updated: 2024-04-15
 La création d'un snapshot (instantané) est un moyen simple et rapide de sauvegarder un système fonctionnel avant d'y apporter des modifications pouvant avoir des conséquences non souhaitées ou imprévues. Par exemple, tester une nouvelle configuration ou un nouveau logiciel. 
 Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
-**Ce guide explique l'utilisation des snapshots pour votre VPS.**
+**Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pazh9ozbkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!primary]
->Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr/vps/options/) afin de comparer les détails et tarifs de chaque option.
+> Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr/vps/options/) afin de comparer les détails et tarifs de chaque option.
 >
 
 ## Prérequis
@@ -28,11 +28,11 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ### Étape 1 : souscrire l'option snapshot
 
-Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ». Si « Snapshot » est déjà défini sur « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option `«Snapshot»` puis cliquez sur `Commander`{.action} dans le menu qui s'affiche alors.
+Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ». Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Commander`{.action} dans le menu qui s'affiche.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
-Veuillez alors prendre connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}. Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation.
+Veuillez prendre connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}. Vous serez orienté dans le processus de commande et recevrez un e-mail de confirmation.
 
 ### Étape 2 : prendre un snapshot
 
@@ -50,7 +50,7 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 >
 > Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créer un nouveau avant d'apporter des modifications au système restauré.
 >
-> Si la fonction snapshot est trop limitée pour votre projet, pensez à passer à l’option [Sauvegardes automatisées](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps).
+> Si la fonction snapshot est trop limitée pour votre projet, l'option [Sauvegardes automatisées](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) est une alternative.
 >
 
 ### Télécharger un snapshot
@@ -61,14 +61,14 @@ Le snapshot en cours peut être récupéré via un lien de téléchargement. Cli
 
 > [!primary]
 >
-> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si son modèle de nommage est similaire à : *vpsXXXX.ovh.net* (où *X* représente un nombre). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si le nom du modèle est nommé de cette façon : *vpsXXXX.ovh.net* (les *X* représentent le numéro de votre modèle). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
 
 Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}.
 
 ![snapshotvps](images/snapshot_vps04.png){.thumbnail}
 
-Après quelques secondes, un message de succès s'affiche. En dessous, vous pouvez copier la commande complète de téléchargement en un clic.
+Patientez un instant, un message de succès s'affiche. En dessous, vous pouvez copier la commande complète de téléchargement en un clic.
 
 ![snapshotvps](images/snapshot_vps05.png){.thumbnail}
 
@@ -96,7 +96,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > Pour éviter de consommer trop d'espace de stockage, nous vous déconseillons de télécharger les snapshots directement sur le VPS.
 >
-> Le fichier téléchargé peut être importé dans votre Projet Public Cloud en tant qu'image (QCOW2) via [OpenStack](products/public-cloud-compute-instance-management). (Retrouvez un exemple d'utilisation dans [ce guide](/pages/public_cloud/compute/upload_own_image).)
+> Le fichier téléchargé peut être importé dans un Projet Public Cloud en tant qu'image (QCOW2) via [OpenStack](products/public-cloud-compute-instance-management). (Retrouvez un exemple d'utilisation dans [ce guide](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Bonnes pratiques pour la création d'un snapshot
