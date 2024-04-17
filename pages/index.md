@@ -511,7 +511,7 @@
             + [Backup SAP HANA with Veeam Backup and Replication](hosted_private_cloud/sap_on_ovhcloud/cookbook_veeam_backup_sap_hana)
             + [SAP logs on OVHcloud Logs Data Platform - Solution Setup](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
             + [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_analyze_and_work_with_your_logs)
-            + [SAP logs on OVHcloud Lods Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
+            + [SAP logs on OVHcloud Logs Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
 + Public Cloud
     + [Compute](products/public-cloud-compute)
         + [Getting started](public-cloud-compute-getting-started)
