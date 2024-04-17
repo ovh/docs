@@ -1,6 +1,6 @@
 ---
 title: "VMware Cloud Director - Creating a new virtual machine (EN)"
-excerpt: "How to create a new Virtual Machine in vCD"
+excerpt: "How to create a new Virtual Machine in VCD"
 updated: 2024-04-16
 ---
 
@@ -13,12 +13,12 @@ This guide details how to create your first virtual machine using two methods:
 
 ## Requirements
 
-- A VMware Cloud Director 
+- A VMware Cloud Director
 - An ISO of an operating system
 
 ## Instructions
 
-### Creating a virtual machine 
+### Creating a virtual machine
 
 To create your virtual machine, first go to the datacentre where you plan to deploy it. Next, navigate to the `Compute`{.action} > `Virtual Machine`{.action} > `NEW VM`{.action} section.
 

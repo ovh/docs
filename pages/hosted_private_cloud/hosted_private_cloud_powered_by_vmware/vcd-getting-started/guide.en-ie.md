@@ -1,12 +1,12 @@
 ---
-title: "VMware Cloud Director - Find out how to use the vCD user interface"
-excerpt: "Discover the vCD user interface"
+title: "VMware Cloud Director - Find out how to use the VCD user interface"
+excerpt: "Discover the VCD user interface"
 updated: 2024-04-16
 ---
 
 ## Objective
 
-**This guide will walk you through the different sections of the vCD interface.**
+**This guide will walk you through the different sections of the VCD interface.**
 
 ## Requirements
 
@@ -17,12 +17,12 @@ updated: 2024-04-16
 
 ## Instructions
 
-VMware vCloud Director (vCD) is a cloud computing management platform. vCD enables the creation, management and deployment of virtualized computing resources on a large scale, and offers an agile and scalable infrastructure. With an easy-to-use user interface and advanced features such as resource management, automated billing, and enhanced security, vCloud Director simplifies the management of complex cloud environments. 
+VMware vCloud Director (VCD) is a cloud computing management platform. VCD enables the creation, management and deployment of virtualized computing resources on a large scale, and offers an agile and scalable infrastructure. With an easy-to-use user interface and advanced features such as resource management, automated billing, and enhanced security, vCloud Director simplifies the management of complex cloud environments.
 
 This solution enables you to provision and efficiently manage virtual machines, virtual networks, and other resources, providing increased operational agility and flexibility to meet changing business needs.
 
 >[!primary]
-> Once you have logged in to your web interface, you will be greeted by a dashboard displaying your **vDC**, as well as a detailed summary of your resource usage (10). At the top of the screen, you will also find a navigation bar with the different settings options available for vCloud Director (vCD).
+> Once you have logged in to your web interface, you will be greeted by a dashboard displaying your **vDC**, as well as a detailed summary of your resource usage (10). At the top of the screen, you will also find a navigation bar with the different settings options available for vCloud Director (VCD).
 
 ![Dashboard Overview](images/vcd-dashboard-overview.png){.thumbnail}
 
@@ -55,7 +55,7 @@ In this section, get a comprehensive overview of all your vApps and virtual mach
 
 ![Network Overview](images/vcd-networking-overview.png){.thumbnail}
 
-In this section, you can find all the network components of your vCD environments: networks, Edge Gateways, Provider Gateways, IP address ranges, datacentre groups, and security tags.
+In this section, you can find all the network components of your VCD environments: networks, Edge Gateways, Provider Gateways, IP address ranges, datacentre groups, and security tags.
 
 ### Content Hub
 

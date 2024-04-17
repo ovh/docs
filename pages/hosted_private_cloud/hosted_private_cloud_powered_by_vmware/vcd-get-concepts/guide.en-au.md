@@ -1,24 +1,24 @@
 ---
-title: "VMware Cloud Director - The fundamentals of vCD"
-excerpt: "Discover the basic concepts of vCD"
+title: "VMware Cloud Director - The fundamentals of VCD"
+excerpt: "Discover the basic concepts of VCD"
 updated: 2024-04-16
 ---
 
 ## Objective
 
-**This guide details the fundamentals of vCD at OVHcloud.**
+**This guide details the fundamentals of VCD at OVHcloud.**
 
 ## Fundamental concepts
 
-In this section, we will detail the essential foundations of VMware Cloud Director (VCD). 
+In this section, we will detail the essential foundations of VMware Cloud Director (VCD).
 
 By defining these principles in a clear and concise way, we will provide the necessary foundation for effective and successful VCD use. Whether it’s for administrators looking to deploy complex infrastructures, or for users looking to access resources seamlessly, this exploration of VCD basics is a vital starting point.
 
 ### Organizations
 
-An organization is an administrative entity that groups together specific users, groups, and IT resources. 
+An organization is an administrative entity that groups together specific users, groups, and IT resources.
 
-Users authenticate at the organization level by providing credentials established by an organization administrator when they are created or imported. 
+Users authenticate at the organization level by providing credentials established by an organization administrator when they are created or imported.
 
 System administrators are responsible for creating and provisioning organizations, while organization administrators are responsible for managing users, groups, and catalogs specific to the organization.
 
@@ -42,17 +42,17 @@ Only system administrators have the privilege to create such networks, but organ
 
 ### vApp Networks
 
-A vApp network is included in a vApp, and facilitates communication between the vApp’s various virtual machines. 
+A vApp network is included in a vApp, and facilitates communication between the vApp’s various virtual machines.
 
-It is possible to connect a vApp network to an organization's virtual datacentre network, which allows the vApp to communicate with other vApps within the organization. 
+It is possible to connect a vApp network to an organization's virtual datacentre network, which allows the vApp to communicate with other vApps within the organization.
 
 Furthermore, if the organization’s virtual datacentre network is connected to an external network, this allows the vApp to communicate outside the organization as well.
 
 ### Catalogs
 
-Organizations use catalogs to store vApp templates and media files. 
+Organizations use catalogs to store vApp templates and media files.
 
-Authorized members within an organization can access these catalogs to use the vApp templates and the media files contained within them to create their own vApps. 
+Authorized members within an organization can access these catalogs to use the vApp templates and the media files contained within them to create their own vApps.
 
 In addition, organization administrators have the ability to copy items from public catalogs into their organization-specific catalog.
 
@@ -64,9 +64,9 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 |              | Advanced Network & Security | vSAN Storage |
 |:------------:|:---------------------------:|:------------:|
-| vCD Standard |              -              |       -      |
-| vCD Advanced |              ✅              |       -      |
-| vCD Prenium  |              ✅              |       ✅      |
+| VCD Standard |              -              |       -      |
+| VCD Advanced |              ✅              |       -      |
+| VCD Prenium  |              ✅              |       ✅      |
 
 #### Cluster Management
 
@@ -77,9 +77,20 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 | Features |
 | :-: |
 | ESXi management / capacity planning |
-| Hosts Failover / Proactive HA       |  
+| Hosts Failover / Proactive HA       |
 | DRS / Storage DRS                   |
 | vMotion / Storage vMotion           |
+
+##### Virtual Machine Management
+
+|         Features        	| Standard 	| Advanced 	| Prenium 	|                                    Comments                                   	|
+|:-----------------------:	|:--------:	|:--------:	|:-------:	|:-----------------------------------------------------------------------------:	|
+|        Create VM        	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
+| Manage Virtual Machines 	|     ✅    	|     ✅    	|    ✅    	|                  Start, Stop, Suspend, Delete, Copy/clone...                  	|
+|      Affinity Rules     	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
+|   Anti-Affinity Rules   	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
+|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged sofware solutions  	                    |
+|    Create VM catalogs   	|     ✅    	|     ✅     |    ✅     	|                     Build your own catalog of VM templates                    	|
 
 #### Organisation / Virtual Datacenter Management
 
