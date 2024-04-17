@@ -174,7 +174,6 @@ So, add the IP range `192.168.12.0/24`, which you picked and used when you decla
 This way, all Public Cloud instances hosted on it can directly access the MongoDB service.
 
 ```bash
-resource "ovh_cloud_project_database_mongodb_user" "userjd" {
 resource "ovh_cloud_project_database_ip_restriction" "iprestriction" {
   service_name = ovh_cloud_project_database.service.service_name
   engine       = ovh_cloud_project_database.service.engine
