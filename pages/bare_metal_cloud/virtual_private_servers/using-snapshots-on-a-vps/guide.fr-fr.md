@@ -36,7 +36,7 @@ Veuillez prendre connaissance des informations de tarification de cette option, 
 
 ### Étape 2 : prendre un snapshot
 
-Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez écrire une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affiche dans le menu « Résumé des options ».
+Une fois l'option activée, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Prendre un Snapshot`{.action} dans le menu qui apparaît. Vous pouvez tapez une description qui sera attachée à votre snapshot. La durée de création du snapshot dépend de l'espace de stockage utilisé. Par la suite, l'horodatage de la création s'affiche dans le menu « Résumé des options ».
 
 ### Étape 3 : supprimer/restaurer un snapshot
 
