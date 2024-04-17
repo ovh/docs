@@ -1,7 +1,7 @@
 ---
-title: Come connettere un dominio OVHcloud a un hosting Shopify
-excerpt: Prepara e configura la zona DNS del dominio OVHcloud per connetterla a un hosting Shopify
-updated: 2024-04-09
+title: "Come connettere un dominio OVHcloud a un hosting Shopify"
+excerpt: "Prepara e configura la zona DNS del dominio OVHcloud per connetterla a un hosting Shopify"
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -12,13 +12,13 @@ updated: 2024-04-09
 
 Se il dominio è registrato in OVHcloud e vuoi connetterlo a un hosting Shopify. Questa guida ti mostra la procedura da seguire per preparare e configurare la zona DNS di OVHcloud e configurare l’hosting Shopify.
 
-**Come connettere un dominio OVHcloud a un hosting Shopify**
+**Questa guida ti mostra come connettere un dominio OVHcloud a un hosting Shopify**
 
 > [!warning]
 >
 > - L’assistenza Shopify non ha accesso ai parametri del dominio OVHcloud e non può quindi consigliarti quali informazioni è necessario fornire.
 >
-> - OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.<br><br> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](https://partner.ovhcloud.com/it/) o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne](#aller-plus-loin) di più.
+> - OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.<br><br> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne](#go-further) di più.
 >
 
 ## Prerequisiti
@@ -97,7 +97,7 @@ Le operazioni per questo step devono essere effettuate dallo spazio di gestione 
 
 Se utilizzi un servizio di posta elettronica OVHcloud o prevedi di sottoscrivere una delle [nostre soluzioni email](https://www.ovhcloud.com/it/emails/), è necessario preparare la zona DNS in modo adeguato. Consulta la nostra guida sulla [configurazione di un record MX](/pages/web_cloud/domains/dns_zone_mx).
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
