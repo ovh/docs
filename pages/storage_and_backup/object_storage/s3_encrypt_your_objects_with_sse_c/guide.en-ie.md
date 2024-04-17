@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Encrypt your server-side objects with SSE-C or SSE-S3
 excerpt: This guide explains how to encrypt your server-side objects with SSE-C or SSE-S3
-updated: 2024-04-10
+updated: 2024-04-17
 ---
 
 <style>
@@ -406,7 +406,6 @@ aws s3api get-object \
 
 - **Potential overhead**: Encryption and decryption may cause a slight overhead.
 - **Performance Optimization**: To improve performance, perform encryption and decryption in a geographical region close to your location to minimize latency.
-
 
 ## Conclusion
 

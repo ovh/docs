@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C ou SSE-S3
 excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-S3
-updated: 2024-04-10
+updated: 2024-04-17
 ---
 
 <style>
@@ -304,10 +304,15 @@ Un tableau comparatif peut être utile pour résumer ces éléments, offrant une
 | Méthode de Chiffrement | Avantages | Inconvénients | Cas d’Usage Recommandés |
 |------------------------|-----------|---------------|-------------------------|
 | **CSE (Client-Side Encryption)** | - Contrôle total sur les clés de chiffrement<br>- Sécurité maximisée car les clés ne quittent jamais le client | - Gestion complexe des clés<br>- Responsabilité complète de la sécurité des clés | - Scénarios nécessitant une conformité spécifique<br>- Haute sensibilité des données |
-| **SSE-C (Server-Side Encryption with Customer Keys)** | - Maîtrise sur les clés de chiffrement<br>- Sécurité renforcée sans la complexité totale de CSE | - Nécessité de fournir les clés à chaque requête<br>- Gestion des clés plus complexe que SSE-S3 | - Conformité et contrôle sur les clés<br>- Besoins intermédiaires en sécurité |
-| **SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys)** | - Simplicité de mise en œuvre<br>- Gestion des clés automatique par OVHcloud<br>- Transparence d'utilisation | - Moins de contrôle sur les clés de chiffrement par rapport à CSE et SSE-C | - Usage général où la facilité de gestion est prioritaire<br>- Données moins sensibles |
+| **SSE-C (Server-Side Encryption with Customer Keys)** | - Maîtrise sur les clés de chiffrement<br>- Sécurité renforcée sans la complexité totale de CSE<br>- Aucun coût supplémentaire | - Nécessité de fournir les clés à chaque requête<br>- Gestion des clés plus complexe que SSE-S3 | - Conformité et contrôle sur les clés<br>- Besoins intermédiaires en sécurité |
+| **SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys)** | - Simplicité de mise en œuvre<br>- Gestion des clés automatique par OVHcloud<br>- Transparence d'utilisation<br>- Aucun coût supplémentaire | - Moins de contrôle sur les clés de chiffrement par rapport à CSE et SSE-C | - Usage général où la facilité de gestion est prioritaire<br>- Données moins sensibles |
 
 Chaque méthode de chiffrement a ses propres forces et faiblesses. Le choix de la méthode dépend de plusieurs facteurs, notamment le niveau de sécurité requis, la complexité de la gestion des clés que vous êtes prêt à assumer, et les spécificités réglementaires ou de conformité auxquelles votre organisation doit adhérer.
+
+> [!primary]
+>
+> Il n’y a pas de frais supplémentaires pour l’utilisation du chiffrement côté serveur avec SSE-C ou SSE-S3.
+>
 
 ### Cas d'usage recommandés pour le chiffrement sur OVHcloud S3 Object Storage
 
@@ -388,14 +393,18 @@ aws s3api get-object \
 - **En-têtes nécessaires** : assurez-vous que les en-têtes `--sse-customer-algorithm`, `--sse-customer-key`, et `--sse-customer-key-md5` sont inclus correctement dans votre commande.
 - **Vérification de la clé**: Confirmez que la clé de chiffrement est exacte et n'a subi aucune modification ou altération depuis son utilisation pour chiffrer l'objet.
 
+### En cas de perte de la clé de chiffrement SSE-C
+
+- **Récupération impossible** : Si la clé de chiffrement est perdue, il n'est pas possible de récupérer les données chiffrées avec SSE-C. Conservez vos clés en lieu sûr et envisagez d'utiliser des services de gestion des clés pour améliorer la sécurité.
+
 ### Erreur de requête incorrecte lors de l'utilisation de SSE-S3
 
 - **Sans en-têtes spécifiques** : pour SSE-S3, évitez de spécifier des en-têtes de chiffrement lors du téléchargement. L'option `--server-side-encryption AES256` suffit.
 - **Vérification de la méthode de chiffrement**: assurez-vous que l'objet n'a pas été chiffré initialement avec une méthode différente.
 
-### Problèmes de performance ou de latence lors du chiffrement/déchiffrement
+### Problèmes de performance ou de latence lors du chiffrement/déchiffrement avec SSE-S3
 
-- **Surcharge potentielle** : le chiffrement et le déchiffrement peuvent causer une surcharge. Vérifiez que votre infrastructure réseau et système est capable de gérer cette charge additionnelle.
+- **Surcharge potentielle** : le chiffrement et le déchiffrement peuvent causer une surcharge.
 - **Optimisation de performance** : pour améliorer les performances, réalisez le chiffrement et le déchiffrement dans une région géographique proche de votre localisation pour minimiser la latence.
 
 ### En cas de perte de la clé de chiffrement SSE-C
@@ -404,7 +413,7 @@ aws s3api get-object \
 
 ## Conclusion
 
-Cette documentation met en évidence notre engagement à fournir des solutions de sécurité des données avancées. Que vous optiez pour le chiffrement côté client (CSE) ou côté serveur (SSE-S3), notre objectif est de vous offrir une sécurité optimale sans surcharge opérationnelle.
+Cette documentation met en évidence notre engagement à fournir des solutions de sécurité des données avancées. Que vous optiez pour le chiffrement côté client (CSE) ou côté serveur (SSE-S3), notre objectif est de vous offrir une sécurité optimale avec une surcharge opérationnell minimale.
 
 L'OVHcloud Key Management Service (KMS) témoigne de notre engagement dans la sécurisation de vos données, offrant une protection complète sans les complexités de gestion directe des clés. Nous encourageons l'adoption de ces pratiques de chiffrement pour sécuriser vos données au repos, vous fournissant les outils et les connaissances nécessaires pour une mise en œuvre efficace. OVHcloud est à votre disposition pour toute assistance supplémentaire concernant le chiffrement et la sécurité des données. N'hésitez pas à consulter nos ressources supplémentaires ou à contacter notre support technique pour toute clarification ou assistance.
 
