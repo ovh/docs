@@ -283,7 +283,7 @@ Lors de l'utilisation du chiffrement SSE-S3 sur OVHcloud S3, il est important de
 
 #### Performances
 
-- **Surcharge** : le chiffrement SSE-S3 peut introduire une légère surcharge due au processus de chiffrement et de déchiffrement. Cependant, cette surcharge est généralement minime et n'affecte pas significativement les performances globales.
+- ***Overhead*** : le chiffrement SSE-S3 peut introduire un léger *overhead* dû au processus de chiffrement et de déchiffrement. Cependant, cet *overhead* est généralement minime et n'affecte pas significativement les performances globales.
 
 #### Sécurité
 
@@ -404,7 +404,7 @@ aws s3api get-object \
 
 ### Problèmes de performance ou de latence lors du chiffrement/déchiffrement avec SSE-S3
 
-- **Surcharge potentielle** : le chiffrement et le déchiffrement peuvent causer une surcharge.
+- ***Overhead* potentiel** : le chiffrement et le déchiffrement peuvent causer un *overhead*.
 - **Optimisation de performance** : pour améliorer les performances, réalisez le chiffrement et le déchiffrement dans une région géographique proche de votre localisation pour minimiser la latence.
 
 ### En cas de perte de la clé de chiffrement SSE-C
@@ -413,7 +413,7 @@ aws s3api get-object \
 
 ## Conclusion
 
-Cette documentation met en évidence notre engagement à fournir des solutions de sécurité des données avancées. Que vous optiez pour le chiffrement côté client (CSE) ou côté serveur (SSE-S3), notre objectif est de vous offrir une sécurité optimale avec une surcharge opérationnell minimale.
+Cette documentation met en évidence notre engagement à fournir des solutions de sécurité des données avancées. Que vous optiez pour le chiffrement côté client (CSE) ou côté serveur (SSE-S3), notre objectif est de vous offrir une sécurité optimale avec un *overhead* opérationnel minimal.
 
 L'OVHcloud Key Management Service (KMS) témoigne de notre engagement dans la sécurisation de vos données, offrant une protection complète sans les complexités de gestion directe des clés. Nous encourageons l'adoption de ces pratiques de chiffrement pour sécuriser vos données au repos, vous fournissant les outils et les connaissances nécessaires pour une mise en œuvre efficace. OVHcloud est à votre disposition pour toute assistance supplémentaire concernant le chiffrement et la sécurité des données. N'hésitez pas à consulter nos ressources supplémentaires ou à contacter notre support technique pour toute clarification ou assistance.
 
