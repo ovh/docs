@@ -94,11 +94,11 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 #### Organisation / Virtual Datacenter Management
 
-|               Features              	| Standard 	| Advanced 	| Prenium 	|                                                Comments                                               	|
-|:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-----------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|                                                                                                       	|
-| Identity Provider Integration - SSO 	|          	|          	|         	|                                     Roadmap (via OVHcloud uIAM service)                                    	|
-|         vCPU over-allocation        	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC. Possible via the OVHcloud Control Panel or API. 	|
+|               Features              	| Standard 	| Advanced 	| Prenium 	|                                                 Comments                                                	|
+|:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
+|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a VCD Organisation Manage roles/permissions for Organisation users           	|
+| Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
+| vCPU over-allocation                	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
 #### Networking
 
@@ -109,16 +109,16 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | Private Network - vRack support 	|     ✅    	|     ✅    	|    ✅    	|                                                                                                                                                                                                    	|
 |     Routing & Switching IPv6    	|          	|          	|         	|                                                                                             in Roadmap                                                                                             	|
 |               VPN               	|          	|     ✅    	|    ✅    	|                                                            L2VPN, Policy based IPsec VPN  Not Supported: SSL VPN, Routed based IPsec VPN                                                           	|
-|          Load Balancing         	|          	|     ✅    	|    ✅    	|                                                                         Not supported with native VCD network capabilities                                                                         	|
+|          Load Balancing         	|          	|         	|        	|                                                                         Not supported with native VCD network capabilities                                                                         	|
 |     Advanced Load Balancing     	|          	|          	|         	|                                                                                             in Roadmap                                                                                             	|
 
 #### Security
 
 |       Features       	| Standard 	| Advanced 	| Prenium 	|  Comments  	|
 |:--------------------:	|:--------:	|:--------:	|:-------:	|:----------:	|
-|   Stateful Firewall  	|     ✅    	|     ✅    	|    ✅    	|            	|
-| Distributed Firewall 	|     ✅    	|     ✅    	|    ✅    	|            	|
-|    Security groups   	|     ✅    	|     ✅    	|    ✅    	|            	|
+|   Stateful Firewall  	|        	|     ✅    	|    ✅    	|            	|
+| Distributed Firewall 	|        	|     ✅    	|    ✅    	|            	|
+|    Security groups   	|         	|     ✅    	|    ✅    	|            	|
 |       IDS / IPS      	|          	|          	|         	| in Roadmap 	|
 |          WAF         	|          	|          	|         	| in Roadmap 	|
 
