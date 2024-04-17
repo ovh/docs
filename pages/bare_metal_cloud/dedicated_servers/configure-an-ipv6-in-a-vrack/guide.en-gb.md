@@ -201,6 +201,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 ### Configuring an IPv6 in a vRack for routed-mode
 In this section we will present more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color on a schema below).
 
+TODO: update image
 ![image](https://github.com/ovh/docs/assets/60412/abe59737-c29f-4f71-8907-ea33549e780e)
 
 The traffic path is as follows: inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local-link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
@@ -222,7 +223,7 @@ Please use the call as follows in the example below:
 
 ![image-2024-3-29_14-46-53](https://github.com/ovh/docs/assets/60412/c585d58c-3e5d-4a1c-be00-68267df881bd)
 
-In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166
+In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00::2
 
 </blockquote>
 </details>
@@ -239,7 +240,7 @@ When hosting Virtual Machines, we strongly recommend to use static configuration
 
 Setup an IPv6 address, bring up the interface and (optionally) add default route over the vRack interface:
 ``` bash
-$ sudo ip addr add 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166/64 dev eth1
+$ sudo ip addr add 2001:41d0:abcd:ef00::2/64 dev eth1
 $ sudo ip link set dev eth1 up
 $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 ```
@@ -252,7 +253,7 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 <blockquote>
 
     In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
-Please note this bring additional risks (such as loosing access not only to a host but also to all VMs) and is not recommended.
+Please note this bring additional risks (such as loosing access not only to the host but also to all VMs) and is not recommended.
 
 Ensuring IPv6 forwarding is enabled:
 ``` bash
@@ -356,10 +357,10 @@ PING fd00::1(fd00::1) 56 data bytes
 
 Ping host global interface:
 ``` bash
-debian@vm-1:~$ ping 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166
-PING 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166(2001:41d0:abcd:ef00:fe34:97ff:feb0:c166) 56 data bytes
-64 bytes from 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166: icmp_seq=1 ttl=64 time=0.050 ms
-64 bytes from 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166: icmp_seq=2 ttl=64 time=0.080 ms
+debian@vm-1:~$ ping 2001:41d0:abcd:ef00::2
+PING 2001:41d0:abcd:ef00::2(2001:41d0:abcd:ef00::2) 56 data bytes
+64 bytes from 2001:41d0:abcd:ef00::2: icmp_seq=1 ttl=64 time=0.050 ms
+64 bytes from 2001:41d0:abcd:ef00::2: icmp_seq=2 ttl=64 time=0.080 ms
 ```
 
 Finally, let's ping external IPv4 from a VM:
@@ -402,12 +403,12 @@ HOST: remote-test                  				Loss%   Snt   Last   Avg  Best  Wrst StDe
 ...
 ...
   9.|-- 2001:41d0:abcd::2:5d        				0.0%     1    1.9   1.9   1.9   1.9   0.0
- 10.|-- 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166     0.0%     1    2.2   2.2   2.2   2.2   0.0
+ 10.|-- 2001:41d0:abcd:ef00::2      				0.0%     1    2.2   2.2   2.2   2.2   0.0
  11.|-- 2001:41d0:abcd:ef10::1      				0.0%     1    2.2   2.2   2.2   2.2   0.0
 ```
 In this example: 
-- hop 10 - our host's IP
-- hop 11 - our VM
+- hop 10 - our host's IP address
+- hop 11 - our VM's IP address
 
 </blockquote>
 </details>
