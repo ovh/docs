@@ -35,7 +35,7 @@ Avant de suivre les deux étapes de ce guide, nous vous conseillons de vous fami
 
 ### 1. Configurer votre hébergement Wix
 
-Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous devez d'abord préparer votre hébergement en suivant les instructions de **l'étape 1** depuis [**ce lien de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
+Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous devez d'abord préparer votre hébergement en suivant les instructions de **l'étape 1** depuis [**cette page de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882).
 
 ### 2. Configurer vos enregistrements DNS sur votre compte OVHcloud
 
