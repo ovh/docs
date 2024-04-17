@@ -1,5 +1,5 @@
 ---
-title: Configurer son adresse e-mail sur Outlook pour Windows
+title: "MX Plan : Configurer son adresse e-mail sur Outlook pour Windows"
 excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows
 updated: 2024-02-16
 ---
@@ -29,6 +29,10 @@ Les comptes MX Plan peuvent être configurés sur différents logiciels de messa
 
 ## En pratique
 
+> [!alert]
+>
+> Avant de débuter votre configuration à l'aide de ce guide, assurez-vous que le drapeau situé tout en haut à droite de cette page correspond bien à votre pays ou votre région, car les paramètres dépendent de votre localisation.
+
 ### Ajouter le compte
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
@@ -45,7 +49,6 @@ Les comptes MX Plan peuvent être configurés sur différents logiciels de messa
 >
 > Avant de poursuivre, consultez la section « [POP ou IMAP, quelle est la différence ?](#popimap) » de ce guide.
 >
-
 > Dans les paramètres suivants, vous constaterez la possibilité de renseigner 2 noms d'hôtes différents pour le même serveur (entrant ou sortant). Ces valeurs renvoient exactement au même serveur, elles ont été mises en place pour faciliter la saisie et éviter la confusion entre les protocoles POP, IMAP et SMTP qui utilisent des ports différents.
 
 Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les onglets ci-dessous.
@@ -58,10 +61,12 @@ Pour configurer votre adresse e-mail, suivez les étapes en cliquant sur les ong
 >>
 > **Etape 2**
 >> Saisissez le mot de passe de votre adresse e-mail puis cliquez sur `Suivant`{.action}.
+>>
 >> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
 >>
 > **Etape 3**
->> Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche.<br>Cliquez sur `Modifier les paramètres du compte`{.action}. En fonction de votre choix (**POP** ou **IMAP**), passez à l'étape 4 correspondante.
+>> Si Outlook n'est pas parvenu à configurer automatiquement votre adresse, cette fenêtre s'affiche. Cliquez sur `Modifier les paramètres du compte`{.action}. En fonction de votre choix (**POP** ou **IMAP**), passez à l'étape 4 correspondante.
+>>
 >> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
 >>
 > **Etape 4 - IMAP**
