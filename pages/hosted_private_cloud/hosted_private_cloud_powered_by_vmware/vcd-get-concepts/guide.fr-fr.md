@@ -70,7 +70,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 #### Cluster Management
 
-> [!prilarty]
+> [!success]
 > Toutes les fonctionnalités concernant le Cluster Management sont entièrement managées par OVHcloud.
 >
 
