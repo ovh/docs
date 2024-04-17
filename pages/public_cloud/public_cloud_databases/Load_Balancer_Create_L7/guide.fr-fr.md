@@ -26,7 +26,7 @@ Chaque méthode offre des avantages spécifiques, permettant de personnaliser la
 #### Policies et Règles L7
 
 - **Policy L7 :**
-  Une directive appliquée à un écouteur de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions possibles incluent la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
+  Une directive appliquée à un listener de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions possibles incluent la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
   - **Principales caractéristiques :**
     - **action** : L'action à réaliser (par exemple, redirect, reject).
     - **redirect_http_code** : Le code HTTP utilisé lors de la redirection.
