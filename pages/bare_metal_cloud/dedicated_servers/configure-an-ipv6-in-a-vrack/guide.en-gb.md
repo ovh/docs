@@ -100,7 +100,6 @@ Notice that IP autoconfiguration (SLAAC) is turned off by default.
         
 <details>
 <summary> <b>Automatic IP configuration (SLAAC)</b> </summary>
-<blockquote>
 
 To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
 
@@ -108,7 +107,6 @@ To simplify IP addressing inside your network, you may want to use SLAAC. It can
 
 Don't forget to configure SLAAC on your host machine.
 
-</blockquote>
 </details>
 
 #### Host-side commands
