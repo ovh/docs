@@ -1,6 +1,6 @@
 ---
 title: "VMware Cloud Director - FAQ"
-excerpt: "Frequently asked questions on vCD"
+excerpt: "Frequently asked questions on VCD"
 updated: 2024-04-16
 ---
 
@@ -10,13 +10,13 @@ updated: 2024-04-16
 
 ### What is VMware Cloud Director by OVHcloud ?
 
-This is a new product available in the VMware on OVHcloud offering that provides you with a virtual Datacenter powered by VMware technology, on top of a mutualized infrastructure hosted and operated by OVHcloud.   
+This is a new product available in the VMware on OVHcloud offering that provides you with a virtual Datacenter powered by VMware technology, on top of a mutualized infrastructure hosted and operated by OVHcloud.
 
 VMware Cloud Director by OVHcloud will be available in 3 tiers:
 
 - VCD Standard, providing the standard VMware stack virtualization capabilities.
-- VCD Advanced, including advanced networking & security capabilities on top of the standard tier. 
-- VCD Premium, adding high-performance vSAN storage to the Advanced tier. 
+- VCD Advanced, including advanced networking & security capabilities on top of the standard tier.
+- VCD Premium, adding high-performance vSAN storage to the Advanced tier.
 
 Please see [our key features page](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features) for more information.
 
@@ -24,7 +24,7 @@ Please see [our key features page](/pages/hosted_private_cloud/hosted_private_cl
 
 ### How migration will be done by OVHcloud ?
 
-If you choose to migrate to VCD, OVHcloud will be handling the migration for you. 
+If you choose to migrate to VCD, OVHcloud will be handling the migration for you.
 
 As an exception, we won’t be charging the new current server/host prices during the migration process. We’ll absorb the costs of the license price increase while the migration is ongoing. Whether or not you choose to continue using the current solution, you will still benefit from the new VCD prices right away, starting on May 1st 2024.
 
@@ -63,9 +63,9 @@ With VMware Cloud Director, you are able to set group affinity for Virtual Machi
 
 ### Which certifications apply to the new VCD service ?
 
-At the service launch, no specific certification will be applicable to the VMware Cloud Director by OVHcloud service. 
+At the service launch, no specific certification will be applicable to the VMware Cloud Director by OVHcloud service.
 
-However, supporting HDS, ISO27001, SOC2 or PCI-DSS certifications are clearly our roadmap objectives. 
+However, supporting HDS, ISO27001, SOC2 or PCI-DSS certifications are clearly our roadmap objectives.
 
 ## Go further
 

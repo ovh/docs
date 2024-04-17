@@ -1,24 +1,24 @@
 ---
-title: "VMware Cloud Director - Les concepts fondamentaux de vCD"
-excerpt: "Decouvrez les concepts fondamentaux de vCD"
+title: "VMware Cloud Director - Les concepts fondamentaux de VCD"
+excerpt: "Decouvrez les concepts fondamentaux de VCD"
 updated: 2024-04-16
 ---
 
 ## Objectif
 
-**Ce guide vous détaille les fondamentaux de vCD chez OVHcloud.**
+**Ce guide vous détaille les fondamentaux de VCD chez OVHcloud.**
 
 ## Concept fondamentaux
 
-Dans cette section, nous allons établir les bases essentielles de VMware Cloud Director (VCD). 
+Dans cette section, nous allons établir les bases essentielles de VMware Cloud Director (VCD).
 
 En définissant ces principes de manière claire et concise, nous allons fournir les bases nécessaires pour une utilisation efficace et réussie de VCD. Que ce soit pour les administrateurs cherchant à déployer des infrastructures complexes ou pour les utilisateurs souhaitant accéder aux ressources de manière transparente, cette exploration des concepts de base de VCD constitue un point de départ essentiel.
 
 ### Organisations
 
-Une organisation représente une entité administrative regroupant des utilisateurs, des groupes et des ressources informatiques spécifiques. 
+Une organisation représente une entité administrative regroupant des utilisateurs, des groupes et des ressources informatiques spécifiques.
 
-Les utilisateurs s'authentifient au niveau de l'organisation en fournissant des informations d'identification établies par un administrateur d'organisation lors de leur création ou de leur importation. 
+Les utilisateurs s'authentifient au niveau de l'organisation en fournissant des informations d'identification établies par un administrateur d'organisation lors de leur création ou de leur importation.
 
 Les administrateurs système sont responsables de la création et du provisionnement des organisations, tandis que les administrateurs d'organisation prennent en charge la gestion des utilisateurs, des groupes et des catalogues propres à l'organisation.
 
@@ -44,13 +44,13 @@ Seuls les administrateurs système ont le privilège de créer de tels réseaux,
 
 Un réseau vApp est inclus dans une vApp et facilite la communication entre les différentes machines virtuelles de cette vApp.
 
-Il est possible de connecter un réseau vApp à un réseau de datacenter virtuel d'organisation, ce qui permet à la vApp de communiquer avec d'autres vApps au sein de l'organisation. 
+Il est possible de connecter un réseau vApp à un réseau de datacenter virtuel d'organisation, ce qui permet à la vApp de communiquer avec d'autres vApps au sein de l'organisation.
 
 De plus, si le réseau de datacenter virtuel d'organisation est connecté à un réseau externe, cela offre la possibilité à la vApp de communiquer également en dehors de l'organisation.
 
 ### Catalogue
 
-Les organisations exploitent des catalogues pour stocker des modèles vApp ainsi que des fichiers multimédia. 
+Les organisations exploitent des catalogues pour stocker des modèles vApp ainsi que des fichiers multimédia.
 
 Les membres autorisés au sein d'une organisation peuvent accéder à ces catalogues pour utiliser les modèles vApp et les fichiers multimédia qui y sont contenus afin de créer leurs propres vApps.
 
@@ -60,13 +60,13 @@ De plus, les administrateurs d'organisation ont la capacité de copier des élé
 
 ### Fonctionnalités de VMware Cloud Director chez OVHcloud
 
-Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de VMware Cloud Director. 
+Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de VMware Cloud Director.
 
 |              | Advanced Network & Security | vSAN Storage |
 |:------------:|:---------------------------:|:------------:|
-| vCD Standard |              -              |       -      |
-| vCD Advanced |              ✅             |       -     |
-| vCD Prenium  |              ✅             |       ✅      |
+| VCD Standard |              -              |       -      |
+| VCD Advanced |              ✅             |       -     |
+| VCD Prenium  |              ✅             |       ✅      |
 
 #### Cluster Management
 
@@ -77,7 +77,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | Features |
 | :-: |
 | ESXi management / capacity planning |
-| Hosts Failover / Proactive HA       |  
+| Hosts Failover / Proactive HA       |
 | DRS / Storage DRS                   |
 | vMotion / Storage vMotion           |
 
@@ -89,7 +89,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | Manage Virtual Machines 	|     ✅    	|     ✅    	|    ✅    	|                  Start, Stop, Suspend, Delete, Copy/clone...                  	|
 |      Affinity Rules     	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
 |   Anti-Affinity Rules   	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged sofware solutions (OpenSource Only !) 	|
+|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged sofware solutions  	                    |
 |    Create VM catalogs   	|     ✅    	|     ✅     |    ✅     	|                     Build your own catalog of VM templates                    	|
 
 #### Organisation / Virtual Datacenter Management

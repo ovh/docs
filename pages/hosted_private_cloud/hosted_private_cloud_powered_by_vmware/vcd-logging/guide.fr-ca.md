@@ -17,7 +17,7 @@ updated: 2024-04-16
 
 ### Premiere connexion
 
-Ouvrez votre navigateur web et rendez-vous sur la page de connexion du vCD. Renseignez votre nom d'organisation (celui-ci est fourni dans l'e-mail de création de compte).
+Ouvrez votre navigateur web et rendez-vous sur la page de connexion du VCD. Renseignez votre nom d'organisation (celui-ci est fourni dans l'e-mail de création de compte).
 
 ![First page connection](images/vcd-organization-connection.png){.thumbnail}
 

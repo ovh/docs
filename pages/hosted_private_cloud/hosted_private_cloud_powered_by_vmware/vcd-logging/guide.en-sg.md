@@ -17,7 +17,7 @@ updated: 2024-04-16
 
 ### First login
 
-Open your web browser and go to vCD login page. Enter your organization name (provided in the account creation email).
+Open your web browser and go to VCD login page. Enter your organization name (provided in the account creation email).
 
 ![First page connection](images/vcd-organization-connection.png){.thumbnail}
 
