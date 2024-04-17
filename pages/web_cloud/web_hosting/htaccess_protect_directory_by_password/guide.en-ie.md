@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Protect a directory or administration interface of your website with .htaccess and .htpasswd files"
 excerpt: "Find out how to protect a directory or administration interface by authenticating with .htaccess and .htpasswd files"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 ## Objective
@@ -17,7 +17,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 > The following examples should be set up in files named ".htaccess" and ".htpasswd". Please note that the rules you define in this file have a direct impact on your website. Always check the rules you add before applying them to your website. 
 > 
@@ -27,7 +27,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions
@@ -42,7 +42,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 >
 > If you have any questions regarding the creation, use or programming of your website, OVHcloud support will not be able to provide you with assistance in this regard.
 >
-> To do this, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+> To do this, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner).
 >
 
 We will explain the 4 main steps to take to protect access to a directory or all or part of your website:
@@ -252,8 +252,8 @@ In the script above, replace the following with your own values:
 
 [Tutorial - Rewrite the URL for accessing your website](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

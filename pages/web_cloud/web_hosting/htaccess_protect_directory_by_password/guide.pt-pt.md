@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteger um diretório ou a interface de administração do seu website por ficheiros .htaccess e .htpasswd"
 excerpt: "Descruba como proteger um diretório ou o acesso à administração do seu website através de uma autenticação com os ficheiros .htaccess e .htpasswd"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -21,7 +21,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 > Os exemplos que se seguem são implementados em ficheiros denominados ".htaccess" e ".htpasswd". Atenção, as regras que define nestes ficheiros têm consequências diretas no seu website. Verifique sempre as regras que adicionou antes de as aplicar ao seu website. 
 > 
@@ -31,7 +31,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 ## Requisitos
 
 - Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de credenciais de acesso ao [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Instruções
@@ -46,7 +46,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 >
 > Para qualquer questão relativa à criação, utilização ou programação do seu website, o suporte da OVHcloud não poderá ajudá-lo nestas questões.
 >
-> Para isso, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os nossos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+> Para isso, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os nossos [parceiros OVHcloud](/links/partner).
 >
 
 Vamos explicar-lhe as 4 etapas principais a realizar para proteger o acesso a um diretório ou a totalidade ou parte do seu website:
@@ -256,8 +256,8 @@ No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 [Reescrever o URL de acesso ao meu website graças ao mod_rewrite através do ficheiro .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

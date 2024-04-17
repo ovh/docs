@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ordner und Verwaltungsinterface Ihrer Website mit den Dateien .htaccess und .htpasswd schützen"
 excerpt: "Erfahren Sie hier, wie Sie Verzeichnisse oder den Adminbereich Ihrer Website durch Authentifizierung mittels .htaccess und .htpasswd schützen"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ Verwenden Sie hierzu zwei Apache-Konfigurationsdateien (HTTP), die im [FTP-Berei
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 > Die folgenden Beispiele sind in eine ".htaccess" Datei oder eine ".htpasswd" Datei einzufügen. Achtung, die Regeln, die Sie in diesen Dateien festlegen, haben direkte Auswirkungen auf Ihre Website. Überprüfen Sie systematisch die Regeln, die Sie hinzufügen, bevor Sie sie auf Ihrer Website anwenden. 
 > 
@@ -30,7 +30,7 @@ Verwenden Sie hierzu zwei Apache-Konfigurationsdateien (HTTP), die im [FTP-Berei
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 - Sie verfügen über die Zugangsdaten zum [FTP-Bereich Ihres Hostings](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## In der praktischen Anwendung
@@ -45,7 +45,7 @@ Verwenden Sie hierzu zwei Apache-Konfigurationsdateien (HTTP), die im [FTP-Berei
 >
 > Bei Fragen zur Erstellung, Nutzung oder Programmierung Ihrer Website kann der OVHcloud Support Sie nicht unterstützen.
 >
-> Kontaktieren Sie hierzu unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+> Kontaktieren Sie hierzu unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner).
 >
 
 Wir erklären die 4 wichtigsten Schritte zum Schutz des Zugriffs auf ein Verzeichnis oder Teile Ihrer Website:
@@ -255,8 +255,8 @@ Ersetzen Sie im oben stehenden Skript die folgenden Elemente mit Ihren eigenen W
 
 [Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
