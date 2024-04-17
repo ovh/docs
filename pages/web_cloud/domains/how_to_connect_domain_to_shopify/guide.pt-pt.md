@@ -89,7 +89,7 @@ A zona DNS está agora configurada para fazer a ligação a um alojamento Shopif
 
 ### Ligar o seu domínio ao Shopify
 
-As manipulações para esta etapa devem ser realizadas a partir da Área de Gestão do Shopify. Sugerimos que vá diretamente à etapa 2 do guia no site da Shopify, clicando [**nesta ligação**](https://help.shopify.com/pt/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external}.
+As manipulações para esta etapa devem ser realizadas a partir da Área de Gestão do Shopify. Sugerimos que vá diretamente à etapa 2 do guia no site da Shopify, clicando [**nesta ligação**](https://help.shopify.com/en/manual/domains/add-a-domain/connecting-domains/connect-domain-manual){.external}.
 
 > [!primary]
 >
