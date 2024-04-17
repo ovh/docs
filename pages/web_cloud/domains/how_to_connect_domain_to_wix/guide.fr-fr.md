@@ -83,7 +83,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> ![dnszone](images/filter-cname.png){.thumbnail}<br>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
->> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez la valeur *relevée depuis votre interface Wix* dans le champ **Cible**.<br>
+>> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez la valeur relevée depuis votre interface Wix dans le champ **Cible**.<br>
 >> Cliquez sur `Suivant`{.action} puis validez votre enregistrement « CNAME ».
 
 La zone DNS est maintenant configurée pour faire le lien avec un hébergement Wix.
