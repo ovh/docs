@@ -1073,6 +1073,7 @@
                 + [Tutorial - Using Zonemaster](web_cloud/domains/dns_zonemaster)
                 + [How to connect an OVHcloud domain name to a Shopify hosting plan](web_cloud/domains/how_to_connect_domain_to_shopify)
                 + [How to connect an OVHcloud domain name to a SquareSpace hosting plan](web_cloud/domains/how_to_connect_domain_to_squarespace)
+                + [How to connect an OVHcloud domain name to a Wix hosting plan](web_cloud/domains/how_to_connect_domain_to_wix)
             + [API](web-cloud-domains-domain-names-api)
                 + [Introduction](web_cloud/domains/api_domain_intro)
                 + [Order a Domain Name](web_cloud/domains/api_domain_order)
