@@ -1,6 +1,6 @@
 ---
 title: "MX Plan : Configurer son adresse e-mail sur Outlook pour Windows"
-excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows
+excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows"
 updated: 2024-02-16
 ---
 
