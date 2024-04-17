@@ -45,7 +45,7 @@ Lorsque vous utilisez un hébergement Wix avec un nom de domaine OVHcloud, vous 
 > - Ouvrez un onglet en parallèle sur votre navigateur internet.
 > - Ouvrez [**cette page de la documentation Wix**](https://support.wix.com/fr/article/connecter-un-domaine-%C3%A0-wix-par-pointage-5727882){.external}.
 > - Positionnez-vous sur la partie « **Étape 2 | Mettre à jour les enregistrements DNS dans le compte de votre hébergeur de domaine** » de la documentation Wix.<br>
-> Les instructions suivantes vous aiderons à configurer plus facilement votre zone DNS OVHcloud.
+> Les instructions suivantes vous aideront à configurer plus facilement votre zone DNS OVHcloud.
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
