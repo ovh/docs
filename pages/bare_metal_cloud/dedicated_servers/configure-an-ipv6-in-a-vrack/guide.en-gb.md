@@ -68,8 +68,8 @@ Example above shows two hosts with their vRack-side interfaces configured with I
 #### APIv6 setup
 
 <details>
-<summary> <b><a name="attributing-to-vrack">Attributing Additional IPv6 to a vRack</a></b> </summary>
-<blockquote>
+<summary>Attributing Additional IPv6 to a vRack</summary>
+
 Delivered IPv6 block (as seen previously with /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
 
 ![image](https://github.com/ovh/docs/blob/ipv6_in_vrack/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/images/post-ipv6.png)
@@ -78,15 +78,12 @@ It can be also verified this way:
 ![image-2024-3-29_14-55-25](https://github.com/ovh/docs/assets/60412/20108fc8-a30e-481d-b470-beb2b99e7b7a)
 Now, we see our block configured with a vRack. Next step is to configure your host or VMs.
 
-</blockquote>
 </details>
 
 <details>
-
-##### <summary><b>Static IP configuration</b></summary>
+<summary>Static IP configuration</summary>
 
 <blockquote>
-
 Once Additional IPv6 /56 block is attributed to a vRack network, there is always first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
 Let's check exactly which subnet is bridged::
 
