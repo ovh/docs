@@ -111,7 +111,7 @@ Haga clic en `Aceptar`{.action} para restaurar la copia de seguridad.
 
 > [!primary]
 >
-> La restauración automática puede tardar desde unos minutos hasta unas horas. Si dura **más de 24 horas**, contacte con [el soporte de OVHcloud](https://www.ovhcloud.com/es/support-levels/).
+> La restauración automática puede tardar desde unos minutos hasta unas horas. Si dura **más de 24 horas**, contacte con [el soporte de OVHcloud](/links/support).
 >
 
 ### Restaurar un archivo desde un programa o una interfaz web <a name="viainterface"></a>
@@ -197,6 +197,6 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

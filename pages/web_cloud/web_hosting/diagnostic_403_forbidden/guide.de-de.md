@@ -92,7 +92,7 @@ Beachten Sie zunächst das Datum des Versands der E-Mail von OVHcloud, in der di
 > - Die Zugriffsberechtigungen sind auf "**CHMOD 700**" im FTP-Root Ihres Webhostings gesetzt.
 > - Die Zugriffsberechtigungen sind auf "**CHMOD 000**" im FTP-Root Ihres Webhostings gesetzt.
 >
-> Wenn sie "**CHMOD 000**" zurücksetzen möchten, kontaktieren Sie unsere [Support-Teams](https://www.ovhcloud.com/de/support-levels/), um den Status Ihrer Website überprüfen zu lassen, bevor Sie mit den in dieser Anleitung beschriebenen Schritten fortfahren. 
+> Wenn sie "**CHMOD 000**" zurücksetzen möchten, kontaktieren Sie unsere [Support-Teams](/links/support), um den Status Ihrer Website überprüfen zu lassen, bevor Sie mit den in dieser Anleitung beschriebenen Schritten fortfahren. 
 >
 > Je nach Ihrer Situation können die Zugangsbeschränkungen von "**CHMOD 000**" zu "**CHMOD 700**" geändert werden, damit Sie wieder auf den FTP-Bereich Ihres Webhostings zugreifen können.
 >
@@ -199,6 +199,6 @@ Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung er
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

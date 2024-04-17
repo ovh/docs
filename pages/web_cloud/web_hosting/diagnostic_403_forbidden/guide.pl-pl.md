@@ -93,7 +93,7 @@ Najpierw zapisz datę wysłania wiadomości e-mail OVHcloud informującej o wył
 > - dezaktywacja przy użyciu "**CHMOD 700**" w katalogu głównym FTP Twojego hostingu;
 > - dezaktywacja przy użyciu "**CHMOD 000**" w katalogu głównym FTP Twojego hostingu.
 >
-> W przypadku dezaktywacji przez ograniczenie dostępu do FTP z "**CHMOD 000**" należy skontaktować się z naszymi [zespołami pomocy](https://www.ovhcloud.com/pl/support-levels/), aby dokonać podsumowania sytuacji przed kontynuowaniem kroków opisanych w tym przewodniku. 
+> W przypadku dezaktywacji przez ograniczenie dostępu do FTP z "**CHMOD 000**" należy skontaktować się z naszymi [zespołami pomocy](/links/support), aby dokonać podsumowania sytuacji przed kontynuowaniem kroków opisanych w tym przewodniku. 
 >
 > W zależności od Twojej sytuacji, domeny będą stosować niższe ograniczenia, zmieniając "**CHMOD 000**" na "**CHMOD 700**", dzięki czemu będziesz mógł działać na przestrzeni FTP Twojego hostingu.
 >
@@ -199,6 +199,6 @@ Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została 
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

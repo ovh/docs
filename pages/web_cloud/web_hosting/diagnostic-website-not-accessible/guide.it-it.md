@@ -139,6 +139,6 @@ Il tuo sito Web sarà disponibile entro 24 ore.
 
 Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

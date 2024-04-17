@@ -159,6 +159,6 @@ Do not install plugins or templates that have not been recommended by the offici
 
 For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community on <https://community.ovh.com/en/>.

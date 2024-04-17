@@ -107,7 +107,7 @@ Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valid
 
 > [!primary]
 >
-> La restauration automatique peut prendre de quelques minutes à quelques heures. Si elle dure **plus de 24 heures**, contactez [le support d'OVHcloud](https://www.ovhcloud.com/fr-ca/support-levels/).
+> La restauration automatique peut prendre de quelques minutes à quelques heures. Si elle dure **plus de 24 heures**, contactez [le support d'OVHcloud](/links/support).
 >
 
 ### Restaurer un fichier depuis un logiciel ou une interface <a name="viainterface"></a>
@@ -193,6 +193,6 @@ Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers sou
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

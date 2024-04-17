@@ -111,7 +111,7 @@ Klicken Sie auf den Button `Bestätigen`{.action}, um die Wiederherstellung zu s
 
 > [!primary]
 >
-> Die automatische Wiederherstellung kann einige Minuten bis einige Stunden in Anspruch nehmen. Wenn der Vorgang **über 24 Stunden*** dauert, kontaktieren Sie den [OVHcloud Support](https://www.ovhcloud.com/de/support-levels/).
+> Die automatische Wiederherstellung kann einige Minuten bis einige Stunden in Anspruch nehmen. Wenn der Vorgang **über 24 Stunden*** dauert, kontaktieren Sie den [OVHcloud Support](/links/support).
 >
 
 ### Datei mithilfe einer Software oder über ein Interface wiederherstellen
@@ -197,6 +197,6 @@ Nach dem Login können Sie die gewünschten Dateien wiederherstellen. Gehen Sie 
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

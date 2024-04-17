@@ -89,7 +89,7 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 > - une désactivation en appliquant un « **CHMOD 700** » à la racine FTP de votre hébergement web ;
 > - une désactivation en appliquant un « **CHMOD 000** » à la racine FTP de votre hébergement web.
 >
-> Dans le cas d'une désactivation par restriction d'accès FTP en « **CHMOD 000** », contactez obligatoirement nos [équipes support](https://www.ovhcloud.com/fr/support-levels/) pour faire le point sur la situation avant de poursuivre les étapes décrites dans ce guide. 
+> Dans le cas d'une désactivation par restriction d'accès FTP en « **CHMOD 000** », contactez obligatoirement nos [équipes support](/links/support) pour faire le point sur la situation avant de poursuivre les étapes décrites dans ce guide. 
 >
 > En fonction de votre situation, ces derniers appliqueront une restriction moins élevée en transformant le « **CHMOD 000** » en « **CHMOD 700** » afin que vous puissiez agir sur l'espace FTP de votre hébergement web.
 >
@@ -195,6 +195,6 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

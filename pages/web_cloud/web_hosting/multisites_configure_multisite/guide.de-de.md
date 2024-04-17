@@ -182,6 +182,6 @@ Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehö
 
 [Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie [hier unsere Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie [hier unsere Support-Angebote einsehen](/links/support).
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

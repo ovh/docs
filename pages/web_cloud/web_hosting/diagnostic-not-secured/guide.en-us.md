@@ -109,6 +109,6 @@ If you **imported a SSL certificate** from another provider, contact its support
  
 For specialized service providers (SEO, IT development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 
-If you need assistance using and configuring your OVHcloud solutions, please refer to our [support offers page](https://www.ovhcloud.com/en/support-levels/).
+If you need assistance using and configuring your OVHcloud solutions, please refer to our [support offers page](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

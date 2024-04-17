@@ -111,7 +111,7 @@ Clicca su `Conferma`{.action} per avviare l’operazione.
 
 > [!primary]
 >
-> Il ripristino automatico può richiedere da qualche minuto a qualche ora. Se dura **più di 24 ore**, contatta [il supporto OVHcloud](https://www.ovhcloud.com/it/support-levels/).
+> Il ripristino automatico può richiedere da qualche minuto a qualche ora. Se dura **più di 24 ore**, contatta [il supporto OVHcloud](/links/support).
 >
 
 ### Ripristina un file da un software o un’interfaccia Web <a name="viainterface"></a>
@@ -199,6 +199,6 @@ A questo punto non ti resta che ripristinare i file: recuperali esplorando il co
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

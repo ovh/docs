@@ -108,7 +108,7 @@ Once you are ready to start restoring the backup, click `Confirm`{.action}.
 
 > [!primary]
 >
-> Automatic restoration can take from a few minutes to a few hours. If it takes **more than 24 hours**, contact [OVHcloud support](https://www.ovhcloud.com/en-ie/support-levels/).
+> Automatic restoration can take from a few minutes to a few hours. If it takes **more than 24 hours**, contact [OVHcloud support](/links/support).
 >
 
 ### Restore a file using a software program or interface <a name="viainterface"></a>
@@ -192,6 +192,6 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

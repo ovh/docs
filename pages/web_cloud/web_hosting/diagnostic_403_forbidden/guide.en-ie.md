@@ -89,7 +89,7 @@ First, take note of the date on which the OVHcloud email regarding the deactivat
 > - Access permissions are set to **CHMOD 700** at the FTP root of your web hosting plan
 > - Access permissions are set to **CHMOD 000** at the FTP root of your web hosting plan.
 >
-> If you wish to revert **CHMOD 000** permissions, please contact our [support teams](https://www.ovhcloud.com/en-ie/support-levels/) to check the status of your issue before following the steps in this guide. 
+> If you wish to revert **CHMOD 000** permissions, please contact our [support teams](/links/support) to check the status of your issue before following the steps in this guide. 
 >
 > Depending on your situation, access restrictions can be changed from **CHMOD 000** to **CHMOD 700** to allow you access to your web hosting plan’s FTP space.
 >
@@ -195,6 +195,6 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.
