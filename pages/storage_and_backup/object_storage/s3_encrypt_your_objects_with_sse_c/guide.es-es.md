@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Cifre sus objetos del lado del servidor con SSE-C o SSE-S3 (EN)
 excerpt: This guide explains how to encrypt your server-side objects with SSE-C or SSE-S3
-updated: 2024-04-10
+updated: 2024-04-17
 ---
 
 <style>
@@ -283,7 +283,7 @@ When using SSE-S3 encryption on OVHcloud S3, it is important to consider the fol
 
 #### Performance
 
-- **Overload**: SSE-S3 encryption can introduce a slight overload due to the encryption and decryption process. However, this overload is usually minimal and does not significantly affect overall performance.
+- **Overhead**: SSE-S3 encryption can introduce a slight overhead due to the encryption and decryption process. However, this overhead is usually minimal and does not significantly affect overall performance.
 
 #### Security
 
@@ -304,10 +304,15 @@ A comparative table may be useful for summarizing these elements, providing a cl
 | Encryption method | Benefits | Cons | Recommended Use Cases |
 |-------------------|----------|------|-----------------------|
 | **CSE (Client-Side Encryption)** | - Full control over encryption keys<br>- Maximized security because keys never leave the client | - Complex key management<br>- Full responsibility for key security | - Scenarios requiring specific compliance<br>- High data sensitivity |
-| **SSE-C (Server-Side Encryption with Customer Keys)** | - Control over encryption keys<br>- Enhanced security without the total complexity of CSE | - Need to provide keys at each request<br>- More complex key management than SSE-S3 | - Compliance and key control<br>- Intermediate security needs |
-| **SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys)** | - Simple to implement<br>- Automatic key management by OVHcloud<br>- Transparent usage | - Less control over encryption keys compared to CSE and SSE-C | - General purpose where manageability is paramount<br>- Less sensitive data |
+| **SSE-C (Server-Side Encryption with Customer Keys)** | - Control over encryption keys<br>- Enhanced security without the total complexity of CSE<br>- No additonal cost | - Need to provide keys at each request<br>- More complex key management than SSE-S3 | - Compliance and key control<br>- Intermediate security needs |
+| **SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys)** | - Simple to implement<br>- Automatic key management by OVHcloud<br>- Transparent usage<br>- No additonal cost | - Less control over encryption keys compared to CSE and SSE-C | - General purpose where manageability is paramount<br>- Less sensitive data |
 
 Each encryption method has its own strengths and weaknesses. The choice of method depends on several factors, including the level of security required, the complexity of managing the keys you are willing to assume, and the regulatory or compliance specifics your organization must adhere to.
+
+> [!primary]
+>
+> There are no additional fees for using server-side encryption with SSE-C or SSE-S3.
+>
 
 ### Recommended use cases for encryption on OVHcloud S3 Object Storage
 
@@ -388,23 +393,23 @@ aws s3api get-object \
 - **Required headers**: ensure that the headers `--sse-customer-algorithm`, `--sse-customer-key`, and `--sse-customer-key-md5` are correctly included in your order.
 - **Key verification**: Confirm that the encryption key is correct and has not been modified or altered since it was used to encrypt the object.
 
+### In case of a loss of the SSE-C encryption key
+
+- **Cannot Recover**: If the encryption key is lost, it is not possible to recover data encrypted with SSE-C. Keep your keys in a safe place and consider using key management services to improve security.
+
 ### Bad query error when using SSE-S3
 
 - **Without specific headers**: For SSE-S3, avoid specifying encryption headers during download. The `--server-side-encryption AES256` option is sufficient.
 - **Verifying encryption method**: Make sure the object was not originally encrypted with a different method.
 
-### Performance or latency issues during encryption/decryption
+### Performance or latency issues during encryption/decryption with SSE-S3
 
-- **Potential overload**: Encryption and decryption may cause overload. Verify that your network and system infrastructure is capable of handling this additional load.
+- **Potential overhead**: Encryption and decryption may cause a slight overhead.
 - **Performance Optimization**: To improve performance, perform encryption and decryption in a geographical region close to your location to minimize latency.
-
-### In case of a loss of the SSE-C encryption key
-
-- **Cannot Recover**: If the encryption key is lost, it is not possible to recover data encrypted with SSE-C. Keep your keys in a safe place and consider using key management services to improve security.
 
 ## Conclusion
 
-This documentation highlights our commitment to providing advanced data security solutions. Whether you opt for client-side (CSE) or server-side (SSE-S3) encryption, our goal is to offer you optimal security with no operational overload.
+This documentation highlights our commitment to providing advanced data security solutions. Whether you opt for client-side (CSE) or server-side (SSE-S3) encryption, our goal is to offer you optimal security with minimal operational overhead.
 
 The OVHcloud Key Management Service (KMS) is a testament to our commitment to securing your data, offering comprehensive protection without the complexities of direct key management. We encourage the adoption of these encryption practices to secure your data at rest, providing you with the tools and knowledge necessary for effective implementation. OVHcloud is here to help with any additional support regarding data encryption and security. Please refer to our additional resources or contact our technical support team for any clarification or assistance.
 
