@@ -8,7 +8,7 @@ updated: 2024-04-16
 
 **Retrouvez ci-dessous les questions les plus fréquentes concernant VMWare Cloud Director par OVHcloud**
 
-<a name="vCDonOVH"></a>
+<a name="VCDonOVH"></a>
 
 ### Qu’est-ce que VMware Cloud Director par OVHcloud ?
 
@@ -22,7 +22,7 @@ VMware Cloud Director par OVHcloud sera disponible en 3 niveaux :
 
 Pour plus d'informations, voir la page [les principes clés de VCD sur OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features).
 
-<a name="migrationvCD"></a>
+<a name="migrationVCD"></a>
 
 ### Comment la migration sera-t-elle effectuée par OVHcloud ?
 
