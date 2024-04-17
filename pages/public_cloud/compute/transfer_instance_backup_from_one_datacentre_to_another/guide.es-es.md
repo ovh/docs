@@ -78,6 +78,8 @@ Por último, ejecute este comando para descargar la copia de seguridad en el hos
 $ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
+<a name="transfer"></a>
+
 ### Transferir el backup a otra región de OpenStack
 
 Para iniciar la transferencia, deberá cargar en primer lugar nuevas variables de entorno.

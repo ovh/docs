@@ -237,22 +237,22 @@ Odbywa się to w konsoli VPS KVM: kliknij przycisk `...`{.action} obok nazwy ser
 Aby dokończyć wstępną konfigurację serwera VPS Windows, wykonaj poniższe kroki w zakładkach:
 
 > [!tabs]
-> **Ustawienia regionalne**
+> 1. **Ustawienia regionalne**
 >>
 >> Po ustanowieniu sesji KVM możesz zakończyć wstępną konfigurację systemu Windows, konfigurując **kraj/region**, **preferowany język Windows** i **układ klawiatury**. Następnie kliknij przycisk `Dalej`{.action} na dole po prawej stronie.<br><br>
 >>![KVM](images/setup-03.png){.thumbnail}<br>
 >>
-> **Hasło administratora**
+> 2. **Hasło administratora**
 >>
 >> Ustaw hasło dla konta Windows `Administrator` / `admin` i potwierdź je, następnie kliknij `Zakończ`{.action}.<br><br>
 >>![KVM](images/setup-04.png){.thumbnail}<br>
 >>
-> **Ekran logowania**
+> 3. **Ekran logowania**
 >>
 >> System Windows zastosuje ustawienia i wyświetli ekran logowania. Kliknij przycisk `Send CtrlAltDel`{.action} w prawym górnym rogu, aby się zalogować.<br><br>
 >>![KVM](images/setup-05.png){.thumbnail}<br>
 >>
-> **Login administratora**
+> 4. **Login administratora**
 >>
 >> Wprowadź hasło `Administrator`, które utworzyłeś na poprzednim etapie i kliknij przycisk `strzałka`.<br><br>
 >>![KVM](images/setup-06.png){.thumbnail}<br>
@@ -280,21 +280,21 @@ Dzienniki rozruchowe systemu Windows mogą być przydatne w diagnostyce błędó
 Aby je włączyć, na kartach wykonaj następujące kroki:
 
 > [!tabs]
-> **Logowanie do serwera**
+> 1. **Logowanie do serwera**
 >>
 >> Połącz się z serwerem za pomocą zdalnego pulpitu lub sesji [KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).<br>
 >>
-> **Otwórz narzędzie "Uruchom"**
+> 2. **Otwórz narzędzie "Uruchom"**
 >>
 >> Otwórz menu Start systemu Windows i kliknij polecenie `Uruchom`{.action}.<br><br>
 >>![KVM](images/windowsboot1.png){.thumbnail}<br>
 >>
-> **Otwórz "msconfig"**
+> 3. **Otwórz "msconfig"**
 >>
 >> Wpisz "msconfig" i kliknij na `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot2.png){.thumbnail}<br>
 >>
-> **Włącz logi**
+> 4. **Włącz logi**
 >>
 >> W nowym oknie włącz opcję logi obok `Boot log`. Kliknij przycisk `OK`{.action}.<br><br>
 >>![KVM](images/windowsboot3.png){.thumbnail}<br>
