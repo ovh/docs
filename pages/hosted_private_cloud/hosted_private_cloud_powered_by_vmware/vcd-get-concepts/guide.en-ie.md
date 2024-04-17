@@ -70,7 +70,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 #### Cluster Management
 
-> [!succes]
+> [!success]
 > All Cluster Management features are fully managed by OVHcloud.
 >
 
