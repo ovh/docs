@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ordner und Verwaltungsinterface Ihrer Website mit den Dateien .htaccess und .htpasswd schützen"
 excerpt: "Erfahren Sie hier, wie Sie Verzeichnisse oder den Adminbereich Ihrer Website durch Authentifizierung mittels .htaccess und .htpasswd schützen"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -257,6 +257,6 @@ Ersetzen Sie im oben stehenden Skript die folgenden Elemente mit Ihren eigenen W
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

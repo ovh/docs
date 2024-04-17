@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Protect a directory or administration interface of your website with .htaccess and .htpasswd files"
 excerpt: "Find out how to protect a directory or administration interface by authenticating with .htaccess and .htpasswd files"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 ## Objective
@@ -254,6 +254,6 @@ In the script above, replace the following with your own values:
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

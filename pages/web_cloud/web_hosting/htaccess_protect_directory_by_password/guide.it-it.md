@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteggere una directory o l'interfaccia di amministrazione del tuo sito web con file .htaccess e .htpasswd"
 excerpt: "Questa guida ti mostra come proteggere una directory o l'accesso alla gestione del tuo sito Web tramite un'autenticazione con i file .htaccess e .htpasswd"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -257,6 +257,6 @@ Nello script di cui sopra, sostituisci questi elementi con i tuoi valori:
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

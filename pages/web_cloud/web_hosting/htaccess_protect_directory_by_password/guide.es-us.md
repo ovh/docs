@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteger un directorio o el panel de administración de su sitio web con los archivos .htaccess y .htpasswd"
 excerpt: "Descubra cómo proteger un repertorio o el acceso a la administración de su sitio web mediante autenticación con los archivos .htaccess y .htpasswd"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -258,6 +258,6 @@ Además, mientras no se haya autenticado para acceder a los archivos afectados p
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

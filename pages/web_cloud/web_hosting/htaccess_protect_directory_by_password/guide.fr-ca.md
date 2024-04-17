@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Protéger un répertoire ou l'interface d'administration de votre site web par des fichiers « .htaccess » et « .htpasswd »"
 excerpt: "Decouvrez comment protéger un répertoire ou l'accès à l'administration de votre site web via une authentification avec les fichiers « .htaccess » et « .htpasswd »"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 ## Objectif
@@ -254,6 +254,6 @@ Dans le script ci-dessus, remplacez les éléments suivants par vos propres vale
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

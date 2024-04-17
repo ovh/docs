@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteger um diretório ou a interface de administração do seu website por ficheiros .htaccess e .htpasswd"
 excerpt: "Descruba como proteger um diretório ou o acesso à administração do seu website através de uma autenticação com os ficheiros .htaccess e .htpasswd"
-updated: 2024-01-29
+updated: 2024-04-17
 ---
 
 > [!primary]
@@ -258,6 +258,6 @@ No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
