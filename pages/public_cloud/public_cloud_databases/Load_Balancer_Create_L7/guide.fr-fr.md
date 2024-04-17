@@ -34,7 +34,7 @@ Chaque méthode offre des avantages spécifiques, permettant de personnaliser la
     - **redirect_prefix** : Le préfixe à ajouter à l'URL lors d'une redirection.
     - **redirect_url** : L'URL spécifique vers laquelle rediriger.
   - **Contraintes :**
-    - Les L7 policy ne s'appliquent qu'à des écouteurs de type `HTTP` ou `TERMINATED_HTTPS`.
+    - Les L7 policy ne s'appliquent qu'à des listeners de type `HTTP` ou `TERMINATED_HTTPS`.
 
 - **Règle L7 :**
   Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
@@ -76,8 +76,8 @@ La configuration des politiques et règles L7 via l'espace client OVHcloud vous 
 
 #### 3. **Gérer les Politiques L7**
 
-- Après avoir sélectionné votre Load Balancer, vous accéderez à son interface de gestion. Trouvez et cliquez sur l'onglet « **Écouteurs** ». => D'où ces écouteurs sortent-ils ? 
-- Sélectionnez l'écouteur à configurer pour afficher ses détails.
+- Après avoir sélectionné votre Load Balancer, vous accéderez à son interface de gestion. Trouvez et cliquez sur l'onglet « **litseners** ».
+- Sélectionnez l'litsener à configurer pour afficher ses détails.
 - Localisez la section « **Politiques L7** » pour voir les politiques existantes ou pour en ajouter de nouvelles.
 - Cliquez sur « **Ajouter une politique L7** » ou « **Gérer les politiques L7** », selon l'interface.
 - Remplissez le formulaire de création de politique L7 :
@@ -145,7 +145,7 @@ Horizon, l'interface web d'OpenStack, offre une vue graphique sur la configurati
 ##### Configuration des Politiques L7
 
 - Trouvez le Load Balancer que vous souhaitez configurer et cliquez dessus pour accéder à ses détails.
-- Localisez l'écouteur (listener) auquel vous souhaitez ajouter des politiques L7 et sélectionnez l'option pour gérer ou ajouter des politiques.
+- Localisez le listener auquel vous souhaitez ajouter des politiques L7 et sélectionnez l'option pour gérer ou ajouter des politiques.
 - Vous serez guidé à travers un formulaire pour définir le nom de la politique, l'action à entreprendre (par exemple, redirection vers une URL ou un pool spécifique), et tout critère spécifique pour activer la politique.
 - Une fois la politique créée, vous pouvez également ajouter des règles spécifiques à cette politique en suivant des étapes similaires.
 
@@ -183,7 +183,7 @@ resource "openstack_lb_loadbalancer_v2" "loadbalancer_1" {
   vip_subnet_id = "id_de_votre_subnet"
 }
 
-# Ressource pour l'écouteur (Listener)
+# Ressource pour du Listener
 resource "openstack_lb_listener_v2" "listener_1" {
   name            = "mon-listener"
   protocol        = "HTTP"
