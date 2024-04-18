@@ -1,9 +1,6 @@
 ---
 title: "SAP logs on OVHcloud Logs Data Platform - Solution Setup"
-slug: sap-logs-on-ldp-solution-setup
 excerpt: "This guide provides instructions for configuring your SAP logs on OVHcloud Logs Data Platform"
-section: "Observability"
-order: 01
 updated: 2024-04-10
 ---
 
