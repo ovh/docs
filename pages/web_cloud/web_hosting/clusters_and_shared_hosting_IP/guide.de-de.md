@@ -16,7 +16,7 @@ Es kann notwendig werden, Zugriffseinstellungen für Dienste manuell anzupassen.
 
 > [!primary]
 >
-> Bitte beachten Sie, dass die IP-Adressen der CDN-Option "Anycast"-Adressen sind; das bedeutet, sie benötigen keine Geolokalisierung (siehe auch die Informationen auf unserer [Webseite](https://www.ovhcloud.com/de/web-hosting/options/cdn/).
+> Bitte beachten Sie, dass die IP-Adressen der CDN-Option "Anycast"-Adressen sind; das bedeutet, sie benötigen keine Geolokalisierung (siehe auch die Informationen auf unserer [Webseite](/links/web/hosting-options-cdn).
 > 
 
 ## Voraussetzungen

@@ -82,7 +82,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 > [!warning]
 > 
-> Alcune opzioni sono bloccate sull'offerta Basic e richiedono la sottoscrizione della [CDN security](https://www.ovhcloud.com/it/web-hosting/options/cdn/) o della [CDN Advanced](https://www.ovhcloud.com/it/web-hosting/options/cdn/)
+> Alcune opzioni sono bloccate sull'offerta Basic e richiedono la sottoscrizione della [CDN security](/links/web/hosting-options-cdn) o della [CDN Advanced](/links/web/hosting-options-cdn)
 
 ![CDN](images/sharedcdn-modify-cdn.png){.thumbnail}
 
@@ -126,14 +126,14 @@ Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la 
 
 > [!warning]
 >
-> Per usufruire di una quota di regole più elevata e di parametri aggiuntivi sulla creazione di regole di messa in cache, puoi optare per l'opzione [CDN Advanced](https://www.ovhcloud.com/it/web-hosting/options/cdn/)
+> Per usufruire di una quota di regole più elevata e di parametri aggiuntivi sulla creazione di regole di messa in cache, puoi optare per l'opzione [CDN Advanced](/links/web/hosting-options-cdn)
 
 #### Configura le opzioni della CDN Security
 
 Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini `...`{.action} a destra del record multisito e poi su Modifica la CDN. 
 
 > [!primary]
->  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](https://www.ovhcloud.com/it/web-hosting/options/cdn/) o della [CDN Advanced](https://www.ovhcloud.com/it/web-hosting/options/cdn/)
+>  le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN security](/links/web/hosting-options-cdn) o della [CDN Advanced](/links/web/hosting-options-cdn)
 
 - **Cross-Origin Resource Sharing (CORS)**: Indica, nell'elenco, i domini esterni che saranno autorizzati ad accedere alle risorse del tuo sito web per condividerle. 
 
@@ -181,7 +181,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 > [!primary]
 >
-> Le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN Advanced](https://www.ovhcloud.com/it/web-hosting/options/cdn/).
+> Le opzioni presentate qui sotto richiedono la sottoscrizione della [CDN Advanced](/links/web/hosting-options-cdn).
 
 - **Header HTTP di geolocalizzazione**: Determina il paese del visitatore per personalizzare l'esperienza proposta. Il codice paese viene aggiunto automaticamente nell'header di ogni richiesta per essere manipolato dal tuo server di origine. Gli elementi di identificazione nell'header si presentano con le denominazioni `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 

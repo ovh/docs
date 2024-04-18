@@ -78,7 +78,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 > [!warning]
 >
-> Some options are locked on the Basic solution and require you to sign up to [CDN Security](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/).
+> Some options are locked on the Basic solution and require you to sign up to [CDN Security](/links/web/hosting-options-cdn) or [CDN Advanced](/links/web/hosting-options-cdn).
 
 ![CDN](images/sharedcdn-modify-cdn.png){.thumbnail}
 
@@ -122,14 +122,14 @@ Once you have configured your rules and chosen your options, click `Apply config
 
 > [!warning]
 >
-> To have a higher quota of rules and more settings available than creating cache rules, you can choose the [Advanced CDN option](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/).
+> To have a higher quota of rules and more settings available than creating cache rules, you can choose the [Advanced CDN option](/links/web/hosting-options-cdn).
 
 #### Configuring CDN Security options
 
 Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
 
 > [!primary]
-> The options explained below require a subscription to [CDN Security](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/) or [CDN Advanced](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/).
+> The options explained below require a subscription to [CDN Security](/links/web/hosting-options-cdn) or [CDN Advanced](/links/web/hosting-options-cdn).
 
 - **Cross-Origin Resource Sharing (CORS)**: In the list, enter the external domain names that will be authorised to access your website’s resources for the purpose of sharing them.
 
@@ -177,7 +177,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 > [!primary]
 >
-> The options presented below require a subscription to [CDN Advanced](https://www.ovhcloud.com/en-ie/web-hosting/options/cdn/).
+> The options presented below require a subscription to [CDN Advanced](/links/web/hosting-options-cdn).
 
 - **Geolocation HTTP Header**: Determine the country of the visitor to customise the proposed experience. The country code is automatically added in the header of each request to be handled by your original server. The identification elements in the header are called `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 

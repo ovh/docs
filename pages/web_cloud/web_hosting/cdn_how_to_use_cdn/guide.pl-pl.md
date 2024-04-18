@@ -81,7 +81,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 > [!warning]
 > 
-> Niektóre opcje są zablokowane dla oferty Basic i wymagają zamówienia usługi [CDN security](https://www.ovhcloud.com/pl/web-hosting/options/cdn/) lub [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
+> Niektóre opcje są zablokowane dla oferty Basic i wymagają zamówienia usługi [CDN security](/links/web/hosting-options-cdn) lub [CDN Advanced](/links/web/hosting-options-cdn)
 
 ![GeoCache](images/sharedcdn-modify-cdn.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 > [!warning]
 >
-> Aby korzystać z wyższego limitu reguł i dodatkowych parametrów podczas tworzenia reguły cache, możesz wybrać opcję [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/).
+> Aby korzystać z wyższego limitu reguł i dodatkowych parametrów podczas tworzenia reguły cache, możesz wybrać opcję [CDN Advanced](/links/web/hosting-options-cdn).
 
 #### Konfiguracja opcji CDN Security
 
@@ -133,7 +133,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 > [!primary]
 >
-> Poniższe opcje wymagają zamówienia na [CDN security](https://www.ovhcloud.com/pl/web-hosting/options/cdn/) lub [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
+> Poniższe opcje wymagają zamówienia na [CDN security](/links/web/hosting-options-cdn) lub [CDN Advanced](/links/web/hosting-options-cdn)
 
 - **Cross-Origin Resource Sharing (CORS)**: Wpisz na liście nazwy domen zewnętrznych, które będą mogły uzyskać dostęp do zasobów Twojej strony WWW, aby je udostępnić. 
 
@@ -181,7 +181,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 > [!primary]
 >
-> Poniższe opcje wymagają zamówienia usługi [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/).
+> Poniższe opcje wymagają zamówienia usługi [CDN Advanced](/links/web/hosting-options-cdn).
 
 - **Header HTTP z geolokalizacją**: Określ kraj odwiedzającego, aby spersonalizować proponowane doświadczenie. Kod kraju jest automatycznie dodawany do nagłówka każdego zapytania, aby mógł być zarządzany przez Twój serwer. Elementy identyfikacyjne w nagłówku są oznaczone `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City`.
 

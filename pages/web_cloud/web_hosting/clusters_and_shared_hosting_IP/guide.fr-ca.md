@@ -17,7 +17,7 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 > [!primary]
 >
 > Les adresses IP de l'option CDN sont "Anycast".
-> C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](https://www.ovhcloud.com/fr-ca/web-hosting/options/cdn/)).
+> C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](/links/web/hosting-options-cdn)).
 > 
 
 ## Prérequis

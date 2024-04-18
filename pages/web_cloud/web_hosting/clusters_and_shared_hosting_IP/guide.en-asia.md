@@ -12,7 +12,7 @@ It might become necessary to manually adjust the access settings of a service. T
 
 > [!primary]
 >
-> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](https://www.ovhcloud.com/asia/web-hosting/options/cdn/)).
+> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](/links/web/hosting-options-cdn)).
 > 
 
 ## Requirements
