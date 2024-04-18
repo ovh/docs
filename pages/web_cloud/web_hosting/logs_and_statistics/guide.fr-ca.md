@@ -58,7 +58,7 @@ Le champ `Period selection` en haut à droite vous permet de sélectionner une p
 >
 > Nous ne serons pas en mesure de vous accompagner sur l'interprétation des logs de votre hébergement web car cela relève uniquement du développement web et non de l'hébergement web.
 >
-> N'hésitez pas à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés.
+> N'hésitez pas à contacter un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés.
 >
 
 Vous pouvez visualiser les logs bruts de votre site web avec un différé d'environ 5 minutes.
@@ -126,7 +126,7 @@ Sur la nouvelle page qui apparaît, récupérez l'URL située dans la barre d'ad
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

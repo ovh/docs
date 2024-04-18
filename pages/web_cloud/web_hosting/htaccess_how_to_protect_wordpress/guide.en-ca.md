@@ -12,7 +12,7 @@ This tutorial will show you how to configure certain features of your web hostin
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This tutorial explains how to secure your WordPress with one or more .htaccess files.**
@@ -36,7 +36,7 @@ This tutorial will show you how to configure certain features of your web hostin
 >
 > If you are not using a CMS, OVHcloud also provides a [tutorial on protecting a directory or the administration interface of your website via .htaccess files](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> If you have any questions about creating, using or programming your website, please contact our [user community](https://community.ovh.com/en/) or our [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/). OVHcloud support teams will not be able to assist you with these issues.
+> If you have any questions about creating, using or programming your website, please contact our [user community](https://community.ovh.com/en/) or our [OVHcloud partners](/links/partner). OVHcloud support teams will not be able to assist you with these issues.
 >
 
 ## FAQ
@@ -170,7 +170,7 @@ The **wp-admin** directory is used to access your administration interface. (The
 
 [Official Apache .htaccess tutorial](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

@@ -16,7 +16,7 @@ A website essentially composed of static web pages guarantees a better loading t
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -222,6 +222,6 @@ Using a template engine, widely used in the web developer community, will allow 
 
 [Our FileZilla user guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -151,7 +151,7 @@ As a reminder, if you encounter any difficulties publishing your website, we rec
 
 [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

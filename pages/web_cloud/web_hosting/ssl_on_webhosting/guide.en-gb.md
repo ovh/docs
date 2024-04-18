@@ -138,7 +138,7 @@ Please note that Let's Encrypt, the authority that delivers the SSL certificate 
 
 You can also delete an SSL certificate that has been set up on your web hosting plan. Before you start making any changes, **we strongly advise ensuring that the certificate deletion will not render your websites inaccessible**. Please keep in mind that your web users will see a security error when they try to access a website that works in HTTPS, but does not have a secure SSL connection. 
 
-Since this verification involves checking your website settings, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
+Since this verification involves checking your website settings, we recommend contacting a [specialist service provider](/links/partner) if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
 
 Once you are ready to delete the SSL certificate, log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Then click on `...`{.action} next to "SSL certificate", then `Delete SSL`{.action}.
 
@@ -188,12 +188,12 @@ This message appears in the following cases:
 
 - 1: The redirection rule to your URL in HTTPS is misconfigured or does not exist in the .htaccess file:
 
-To correct this, read our tutorial “[Rewrite the URL for accessing my website using mod_rewrite via the .htaccess file](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)” or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties.
+To correct this, read our tutorial “[Rewrite the URL for accessing my website using mod_rewrite via the .htaccess file](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)” or contact a [specialist provider](/links/partner) if you experience any difficulties.
 
 - 2: Some elements of the web page are not redirected correctly to elements encrypted in HTTPS:
 
 To correct this, you need to ensure that your entire website is accessed via the HTTPS protocol.
-If you need help with this, please refer to our tutorial [web hosting: switching your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website), or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties.
+If you need help with this, please refer to our tutorial [web hosting: switching your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website), or contact a [specialist provider](/links/partner) if you experience any difficulties.
 
 > [!success]
 >
@@ -220,7 +220,7 @@ To edit your domain name’s active DNS zone, please read our guide on [Editing 
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

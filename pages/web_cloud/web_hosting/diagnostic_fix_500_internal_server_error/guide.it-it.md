@@ -59,7 +59,7 @@ Per verificarlo, [connettiti in FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 Rinomina questo file in.`htaccess.old` e prova il tuo sito.
 
-Se il dominio è di nuovo accessibile, è in causa il `.htaccess`. Il progetto dovrà pertanto essere modificato. Per farlo, contatta uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).
+Se il dominio è di nuovo accessibile, è in causa il `.htaccess`. Il progetto dovrà pertanto essere modificato. Per farlo, contatta uno dei nostri [partner](/links/partner).
 
 ### Verifica i permessi su cartelle e file
 
@@ -116,6 +116,6 @@ Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del 
 
 [Risolvere l’errore «Sito non installato»](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

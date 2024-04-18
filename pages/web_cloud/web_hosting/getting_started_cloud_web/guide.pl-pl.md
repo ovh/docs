@@ -132,7 +132,7 @@ Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj si�
 
 #### 2. Ręczna instalacja projektu
 
-W przypadku nowej strony WWW lub migracji strony istniejącej, ręczna instalacja może wymagać odpowiednich kompetencji technicznych. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub kontakt z producentem oprogramowania. 
+W przypadku nowej strony WWW lub migracji strony istniejącej, ręczna instalacja może wymagać odpowiednich kompetencji technicznych. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub kontakt z producentem oprogramowania. 
 
 Jeśli decydujesz się na ręczną instalację, powinieneś posiadać wszystkie pliki strony WWW lub aplikacji, które zamierzasz zainstalować, jak również (o ile jest to niezbędne dla jej poprawnego funkcjonowania), dane dostępowe bazy danych utworzonej uprzednio na hostingu Cloud Web. W przypadku migracji strony WWW zadbaj o wykonanie jej pełnej kopii.
 
@@ -195,7 +195,7 @@ Jeśli chcesz uzyskać więcej informacji dotyczących korzystania z RoundCube, 
 
 [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

@@ -142,7 +142,7 @@ Tenga en cuenta que Let's Encrypt, la autoridad que emite el certificado SSL inc
 
 También es posible eliminar el certificado SSL instalado en un alojamiento web. Antes de realizar esta operación, **le recomendamos encarecidamente que se asegure previamente de que la eliminación del certificado no afectará al acceso a sus sitios web**. Por otro lado, tenga en cuenta que los internautas verán una advertencia de seguridad cuando accedan a un sitio web que funcione en HTTPS pero carezca de una conexión SSL segura.
 
-Esta comprobación se realiza directamente en la configuración del propio sitio web. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle.
+Esta comprobación se realiza directamente en la configuración del propio sitio web. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle.
 
 Una vez que esté listo para eliminar el certificado SSL, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}. Haga clic en el botón `···`{.action} situado junto a **Certificado SSL** y seleccione `Eliminar el SSL`{.action}.
 
@@ -192,12 +192,12 @@ Este mensaje aparece en los siguientes casos:
 
 - 1: La regla de redirección a su URL en HTTPS está mal configurada o no existe en el archivo ".htaccess" :
 
-Para solucionarlo, consulte nuestro tutorial "[Reescribir la URL de acceso a mi sitio web con mod_rewrite a través del archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene alguna dificultad.
+Para solucionarlo, consulte nuestro tutorial "[Reescribir la URL de acceso a mi sitio web con mod_rewrite a través del archivo .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" o contacte con un [proveedor especializado](/links/partner) si tiene alguna dificultad.
 
 - 2: Algunos elementos de la página web no se redirigen correctamente a elementos cifrados en HTTPS:
 
 Para corregirlo, asegúrese de que todo su sitio web esté cifrado mediante el protocolo HTTPS.
-Si lo necesita, consulte nuestro tutorial "[Web hosting: cambiar su sitio web a HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en caso de que tenga problemas.
+Si lo necesita, consulte nuestro tutorial "[Web hosting: cambiar su sitio web a HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" o contacte con un [proveedor especializado](/links/partner) en caso de que tenga problemas.
 
 > [!success]
 >
@@ -224,7 +224,7 @@ Para editar la zona DNS activa de su dominio, consulte nuestra guía "[Editar un
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

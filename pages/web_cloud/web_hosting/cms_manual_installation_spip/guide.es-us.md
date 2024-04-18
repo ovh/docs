@@ -83,6 +83,6 @@ Acaba de instalar manualmente el CMS Spip en su alojamiento web de OVHcloud. Su 
 
 [Crear una base de datos en un alojamiento web](/pages/web_cloud/web_hosting/sql_create_database)
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

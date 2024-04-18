@@ -102,6 +102,6 @@ Acaba de instalar manualmente el CMS Typo3 en su alojamiento web de OVHcloud. De
 
 [Crear una base de datos en un alojamiento web](/pages/web_cloud/web_hosting/sql_create_database)
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -107,7 +107,7 @@ Repita este processo as vezes que desejar a fim de criar várias bases de dados 
 
 > [!warning]
 >
-> Este guia não substitui a assistência de um profissional em desenvolvimento. Recomendamos que, caso de precise de ajuda, recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do software da sua solução. A OVHcloud não poderá fornecer-lhe qualquer assistência a este respeito. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
+> Este guia não substitui a assistência de um profissional em desenvolvimento. Recomendamos que, caso de precise de ajuda, recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do software da sua solução. A OVHcloud não poderá fornecer-lhe qualquer assistência a este respeito. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
 >
 
 Agora pode utilizar a sua base de dados. Para isso, precisará das suas informações de início de sessão:
@@ -127,7 +127,7 @@ Consulte a tabela que se apresenta para ver o conjunto das informações de liga
 > Se já não se lembrar da palavra-passe de início de sessão da base de dados, consulte o guia "[Alterar a palavra-passe da base de dados](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Em função do software utilizado, é possível que esta ligação tenha de ser configurada manualmente ou através de uma interface gerida pela interface de configuração (backend) do website. Uma vez que este procedimento diz respeito à configuração do seu website e não ao seu alojamento OVHcloud, recomendamos que consulte os recursos disponíveis online ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+Em função do software utilizado, é possível que esta ligação tenha de ser configurada manualmente ou através de uma interface gerida pela interface de configuração (backend) do website. Uma vez que este procedimento diz respeito à configuração do seu website e não ao seu alojamento OVHcloud, recomendamos que consulte os recursos disponíveis online ou que recorra a um [fornecedor especializado](/links/partner).
 
 > [!primary]
 >
@@ -178,7 +178,7 @@ Depois de a base de dados ter sido otimizada (eliminada), recalcule a sua quota 
 
 [Otimizar as performances do seu website](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  

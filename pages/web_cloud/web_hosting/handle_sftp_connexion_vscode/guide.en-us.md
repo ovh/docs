@@ -26,7 +26,7 @@ If you have an OVHcloud web hosting plan, you can access a storage space that al
 >
 > OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
 > 
-> We offer this tutorial to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) or [the publisher of the Visual Studio Code IDE](https://code.visualstudio.com/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> We offer this tutorial to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or [the publisher of the Visual Studio Code IDE](https://code.visualstudio.com/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 ### Install the SFTP extension for Visual Studio Code
@@ -184,7 +184,7 @@ The purpose of this tutorial is to provide an effective introduction to managing
 
 [Use SSH access on your web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting) (only available with a [Professional or Performance web hosting plan](https://www.ovhcloud.com/en/web-hosting/))
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

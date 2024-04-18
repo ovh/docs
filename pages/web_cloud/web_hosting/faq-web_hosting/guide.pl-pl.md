@@ -108,7 +108,7 @@ Możliwe są dwa scenariusze. Twoja strona WWW została utworzona z tego adresu 
 
 > [!warning]
 >
-> Usunięcie bazy danych, np. modułu za 1 kliknięciem, jest nieodwracalne. Prowadzi to również do **usunięcia kopii zapasowych** danych, których dotyczy operacja. Zanim usuniesz Twoją stronę WWW z hostingu OVHcloud, **upewnij się, że jesteś w stanie odtworzyć ją w identyczny** sposób. Jeśli nie masz pewności co do przeprowadzenia czynności, skontaktuj się z Webmasterem lub jednym z [naszych partnerów](https://partner.ovhcloud.com/pl/directory/).
+> Usunięcie bazy danych, np. modułu za 1 kliknięciem, jest nieodwracalne. Prowadzi to również do **usunięcia kopii zapasowych** danych, których dotyczy operacja. Zanim usuniesz Twoją stronę WWW z hostingu OVHcloud, **upewnij się, że jesteś w stanie odtworzyć ją w identyczny** sposób. Jeśli nie masz pewności co do przeprowadzenia czynności, skontaktuj się z Webmasterem lub jednym z [naszych partnerów](/links/partner).
 >
 
 W pierwszym przypadku, po wykonaniu wszystkich niezbędnych kopii zapasowych, usuń moduł z części `Hosting` w Panelu klienta:
@@ -154,7 +154,7 @@ Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z
 
 - Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_general_information#zresetuj-serwery-dns).
 
-- Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+- Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](/links/partner) na stronie [partnerów OVHcloud](/links/partner).
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Strona nie przekierowuje się poprawnie"?
 
@@ -173,7 +173,7 @@ Przywróć zawartość Twojej strony WWW do poprzedniego stanu:
 
 - Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Przywrócenie kopii zapasowej bazy danych](/pages/web_cloud/web_hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta).
 
-W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj się z Webmasterem lub poszukaj wyspecjalizowanego webmastera na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj się z Webmasterem lub poszukaj wyspecjalizowanego webmastera na stronie [partnerów OVHcloud](/links/partner).
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "503 error Backend fetch failed (Varnish cache)"?
 
@@ -181,7 +181,7 @@ W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj 
 
 Jeśli włączyłeś [opcję CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) hostingu, wyłącz tryb *Maintenance* na swojej stronie WordPress lub PrestaShop.
 
-Jeśli nie włączyłeś tej opcji lub nie korzystałeś z trybu *konserwacji*, skontaktuj się z Webmasterem lub poszukaj specjalistycznego dostawcy na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+Jeśli nie włączyłeś tej opcji lub nie korzystałeś z trybu *konserwacji*, skontaktuj się z Webmasterem lub poszukaj specjalistycznego dostawcy na stronie [partnerów OVHcloud](/links/partner).
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Your request has been blocked"?
 
@@ -189,7 +189,7 @@ Jeśli nie włączyłeś tej opcji lub nie korzystałeś z trybu *konserwacji*, 
 
 Wiadomość ta wskazuje, że rodzaj zapytania HTTP, które chcesz wykonać na Twojej stronie WWW jest zabroniony na ograniczony czas. W takiej sytuacji [sprawdź logi](/pages/web_cloud/web_hosting/logs_and_statistics) strony, aby określić, które zapytania spowodowały blokadę.
 
-W celu usunięcia nieprawidłowości skontaktuj się z Biurem Webmasterem lub jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/).
+W celu usunięcia nieprawidłowości skontaktuj się z Biurem Webmasterem lub jednym z naszych [partnerów](/links/partner).
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Your IP has been banned"?
 
@@ -199,7 +199,7 @@ Wiadomość ta wskazuje, że adres IP, którego używasz do logowania się do Tw
 
 W tej sytuacji [sprawdź logi](/pages/web_cloud/web_hosting/logs_and_statistics), aby określić, które zapytania spowodowały blokadę Twojej strony.<br>
 Sprawdź również, czy komputer nie jest zainfekowany wirusem.<br>
-Możesz również skontaktować się z [naszymi partnerami](https://partner.ovhcloud.com/pl/directory/), aby sprawdzić kod informatyczny Twojej strony.
+Możesz również skontaktować się z [naszymi partnerami](/links/partner), aby sprawdzić kod informatyczny Twojej strony.
 
 ### Zamówiłem domenę z akcentami i wyświetla się ona w moim panelu klienta w bardzo dziwny sposób. Co mam zrobić?
 

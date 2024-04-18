@@ -27,7 +27,7 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 When your OVHcloud shared database reaches a certain saturation level (**overquota**), our robots will send a notification to the email address of the database’s [administrator contact](/pages/account_and_service_management/account_information/managing_contacts). 
@@ -74,7 +74,7 @@ Enter the login information for your database, then click `Login`{.action}.
 >
 > From here on, your actions affect the content of your database. The changes you make in **phpMyAdmin** can have irreversible consequences if they are not carried out correctly.
 >
-> Be sure about each command you execute on the database. If you experience any difficulties, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/). OVHcloud cannot assist you with the content of your database.
+> Be sure about each command you execute on the database. If you experience any difficulties, we recommend contacting a [specialist provider](/links/partner). OVHcloud cannot assist you with the content of your database.
 >
 
 Once connected, the following page is displayed:
@@ -149,7 +149,7 @@ Before you do the following, check if the data in the large table corresponds to
 
 > [!alert]
 >
-> The rest of this tutorial will show you how to delete data stored in your database. Be sure of the actions you need to take or contact a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) if in doubt.
+> The rest of this tutorial will show you how to delete data stored in your database. Be sure of the actions you need to take or contact a [specialist provider](/links/partner) if in doubt.
 >
 
 OVHcloud shared databases have several SQL commands to influence their content.
@@ -200,7 +200,7 @@ DROP TABLE `table_1`
 
 [Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

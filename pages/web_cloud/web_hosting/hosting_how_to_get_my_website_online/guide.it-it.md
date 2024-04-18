@@ -158,7 +158,7 @@ In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consig
 
 [Modificare la password di un utente FTP ](/pages/web_cloud/web_hosting/ftp_change_password)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

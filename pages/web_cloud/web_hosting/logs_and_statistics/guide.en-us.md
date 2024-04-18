@@ -58,7 +58,7 @@ The `Period selection` field in the top right-hand corner allows you to select a
 >
 > We will not be able to assist you in interpreting your web hosting plan’s logs, as this is strictly a web development issue not related to web hosting plans.
 >
-> Do not hesitate to contact a [specialist provider](https://partner.ovhcloud.com/en/directory/) if you experience any difficulties.
+> Do not hesitate to contact a [specialist provider](/links/partner) if you experience any difficulties.
 >
 
 You can view your website’s raw logs with a delay of around 5 minutes.
@@ -126,7 +126,7 @@ On the new page that pops up, retrieve the URL located in the address bar of you
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

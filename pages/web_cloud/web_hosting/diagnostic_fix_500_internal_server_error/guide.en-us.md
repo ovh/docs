@@ -54,7 +54,7 @@ To check this, [log in to your hosting plan via FTP](/pages/web_cloud/web_hostin
 
 Then rename this file to `.htaccess.old` and refresh the page in your browser.
 
-If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, you may consider contacting an OVHcloud [partner](https://partner.ovhcloud.com/en/directory/).
+If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, you may consider contacting an OVHcloud [partner](/links/partner).
 
 ### Check folder and file permissions
 
@@ -111,6 +111,6 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 
 [Resolving a “Website not installed” error](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

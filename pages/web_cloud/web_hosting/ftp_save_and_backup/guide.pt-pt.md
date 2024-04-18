@@ -120,7 +120,7 @@ Esta operação realiza-se em vários passos. Certifique-se de que tem a palavra
 
 > [!warning]
 >
-> Para realizar as seguintes ações, deve ter conhecimentos sobre o programa ou a interface que vai utilizar. A seguir, propomos-lhe algumas indicações sobre como realizá-las. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
+> Para realizar as seguintes ações, deve ter conhecimentos sobre o programa ou a interface que vai utilizar. A seguir, propomos-lhe algumas indicações sobre como realizá-las. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
 #### 1 - Escolher o programa ou a interface que vai utilizar
@@ -195,7 +195,7 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_database_export)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

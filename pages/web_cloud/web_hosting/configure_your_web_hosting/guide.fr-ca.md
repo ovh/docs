@@ -53,7 +53,7 @@ Avant de commencer, retrouvez ci-après la description technique de chacun des p
 
 > [!warning]
 >
-> Modifier au moins l'un de ces éléments peut avoir des conséquences sur l'affichage ou le bon fonctionnement de votre site web. **Assurez-vous au préalable que votre site web est compatible avec les changements que vous souhaitez effectuer dans la configuration de votre hébergement web**. Contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) en cas de doutes ou si vous rencontrez des difficultés.
+> Modifier au moins l'un de ces éléments peut avoir des conséquences sur l'affichage ou le bon fonctionnement de votre site web. **Assurez-vous au préalable que votre site web est compatible avec les changements que vous souhaitez effectuer dans la configuration de votre hébergement web**. Contactez un [prestataire spécialisé](/links/partner) en cas de doutes ou si vous rencontrez des difficultés.
 >
 
 ####  1.1 - Les environnements d'exécution <a name="runtime-environment"></a>
@@ -183,7 +183,7 @@ Maintenant que vous connaissez les différents paramètres modifiables pour votr
 
 > [!warning]
 >
-> Pour rappel, modifier au moins l'un de ces éléments peut avoir des conséquences sur l'affichage ou le bon fonctionnement de votre site web. **Assurez-vous au préalable que votre site web est compatible avec les changements que vous souhaitez effectuer dans la configuration de votre hébergement web.** Contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) en cas de doute ou si vous rencontrez des difficultés.
+> Pour rappel, modifier au moins l'un de ces éléments peut avoir des conséquences sur l'affichage ou le bon fonctionnement de votre site web. **Assurez-vous au préalable que votre site web est compatible avec les changements que vous souhaitez effectuer dans la configuration de votre hébergement web.** Contactez un [prestataire spécialisé](/links/partner) en cas de doute ou si vous rencontrez des difficultés.
 >
 
 #### 2.1 - Accéder à la gestion de la configuration de l'hébergement web
@@ -360,7 +360,7 @@ Consultez notre guide « [Configurer un multisite sur votre hébergement web](/p
 
 [Se connecter à l’espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

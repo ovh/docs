@@ -132,7 +132,7 @@ Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie 
 
 #### 2. Projekt manuell einrichten
 
-Die manuelle Einrichtung Ihres Projekts ist um einiges technischer und erfordert zusätzliche Kenntnisse Ihrerseits − egal ob Sie eine neue Website erstellen oder eine bereits existierende migrieren möchten. Deshalb empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber der Software zu kontaktieren. 
+Die manuelle Einrichtung Ihres Projekts ist um einiges technischer und erfordert zusätzliche Kenntnisse Ihrerseits − egal ob Sie eine neue Website erstellen oder eine bereits existierende migrieren möchten. Deshalb empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber der Software zu kontaktieren. 
 
 Wenn Sie sich für die manuelle Installation entschieden haben, benötigen Sie alle Dateien der Website oder Anwendung, die Sie einrichten möchten. Falls Sie zuvor eine Datenbank auf Ihrem Cloud Web Hosting angelegt haben, brauchen Sie außerdem die zugehörigen Angaben und Login-Daten. Wenn Sie eine Website migrieren, erstellen Sie zunächst ein komplettes Backup aller zugehörigen Daten.
 
@@ -195,7 +195,7 @@ Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfe
 
 [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 

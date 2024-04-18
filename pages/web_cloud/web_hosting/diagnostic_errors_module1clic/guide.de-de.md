@@ -19,7 +19,7 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further
 ).
 >
 
@@ -87,7 +87,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
 > [!warning]
 >
-> Das Löschen einer Datenbank ist endgültig. Außerdem werden die Backups der betreffenden Datenbank gelöscht. Im Zweifelsfall wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](https://partner.ovhcloud.com/de/directory/).
+> Das Löschen einer Datenbank ist endgültig. Außerdem werden die Backups der betreffenden Datenbank gelöscht. Im Zweifelsfall wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 >
 
 Um eine Datenbank über Ihr [OVHcloud Kundencenter](/links/manager) zu löschen, gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
@@ -112,7 +112,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 >
 > In dieser Situation können Sie die Daten einer Website mit einem [PHP-Skript oder einem SSH-Befehl](/pages/web_cloud/web_hosting/sql_database_export) sichern.
 >
-> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](https://community.ovh.com/en/) oder einen unserer [Partner](https://partner.ovhcloud.com/de/directory/).<br>
+> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](https://community.ovh.com/en/) oder einen unserer [Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
@@ -158,7 +158,7 @@ In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 > [!primary]
 >
-> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).<br>
+> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner).<br>
 > Der OVHcloud Support ist nicht berechtigt, Sie bei diesen Fragen zu unterstützen.
 >
 
@@ -210,7 +210,7 @@ Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestelle
 >
 > **Das Löschen von Elementen aus der Datenbank kann zur Störung der Website führen.**
 >
-> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](https://community.ovh.com/en/) oder an die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).<br>
+> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](https://community.ovh.com/en/) oder an die [OVHcloud Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
@@ -284,7 +284,7 @@ Anschließend starten Sie die Installation eines neuen 1-Klick-Moduls.
 
 [Wiederkehrende Probleme bei der Verwendung von FTP-Software](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 

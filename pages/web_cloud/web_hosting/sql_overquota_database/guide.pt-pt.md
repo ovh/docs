@@ -31,7 +31,7 @@ Este tutorial propõe-lhe as ações a empreender quando a sua base de dados par
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 Quando a sua base de dados partilhada da OVHcloud chega a saturação (**overquota**), os nossos robôs avisam-no por e-mail no endereço de e-mail do [contacto "Administrador"](/pages/account_and_service_management/account_information/managing_contacts) da base de dados. 
@@ -78,7 +78,7 @@ Introduza as informações de acesso à sua base de dados e depois clique em `En
 >
 > A partir de agora, intervém diretamente sobre o conteúdo da sua base de dados. As manipulações que realiza no phpMyAdmin podem ter consequências irreversíveis se estas não forem realizadas corretamente.
 >
-> Certifique-se de que as suas operações são efetuadas. Se tiver alguma dificuldade, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). A OVHcloud não lhe poderá fornecer assistência relativamente ao conteúdo da sua base de dados.
+> Certifique-se de que as suas operações são efetuadas. Se tiver alguma dificuldade, recomendamos que recorra a um [fornecedor especializado](/links/partner). A OVHcloud não lhe poderá fornecer assistência relativamente ao conteúdo da sua base de dados.
 >
 
 Uma vez ligado, aparecerá a seguinte página:
@@ -153,7 +153,7 @@ Antes de efetuar o seguinte, verifique se os dados contidos na tabela volumosa c
 
 > [!alert]
 >
-> O resto deste manual explica-lhe como eliminar dados presentes na sua base de dados. Em caso de dúvida, certifique-se de que está a fazer ou a contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+> O resto deste manual explica-lhe como eliminar dados presentes na sua base de dados. Em caso de dúvida, certifique-se de que está a fazer ou a contactar um [fornecedor especializado](/links/partner).
 >
 
 As bases de dados partilhadas da OVHcloud dispõem de vários comandos SQL para agir sobre o seu conteúdo.
@@ -204,7 +204,7 @@ DROP TABLE `table_1`
 
 [Duplicar o conteúdo de uma base de dados noutra](/pages/web_cloud/web_hosting/copy_database)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

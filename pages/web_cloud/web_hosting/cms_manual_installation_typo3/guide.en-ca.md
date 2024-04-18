@@ -98,6 +98,6 @@ You have just manually installed CMS Typo3 on your OVHcloud web hosting plan. Af
 
 [Creating a database on your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
  
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
 Join our community of users on <https://community.ovh.com/en/>.

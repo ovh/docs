@@ -22,7 +22,7 @@ Permite, a partir de um terminal e graças a um comando Linux, copiar um ficheir
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Ir mais longe"](#go-further) deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Ir mais longe"](#go-further) deste guia.
 >
 
 **Saiba como utilizar o comando Secure Copy Protocol (SCP) em SSH para copiar ficheiros de ou para o seu alojamento web.**
@@ -143,6 +143,6 @@ Para verificar se algum conteúdo do seu alojamento web foi copiado localmente p
 
 [Ligar-se ao espaço de armazenamento FTP do seu alojamento web](/pages/web_cloud/web_hosting/ftp_connection)
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

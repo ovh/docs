@@ -57,7 +57,7 @@ Prima di iniziare, consulta la descrizione tecnica di ogni parametro modificabil
 
 > [!warning]
 >
-> La modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche che vuoi apportare alla configurazione del tuo hosting Web**. Contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di dubbi o difficoltà.
+> La modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche che vuoi apportare alla configurazione del tuo hosting Web**. Contatta un [provider specializzato](/links/partner) in caso di dubbi o difficoltà.
 >
 
 ##### 1.1 - Gli ambienti di esecuzione <a name="runtime-environment"></a>
@@ -187,7 +187,7 @@ Ora che conosci i diversi parametri modificabili per il tuo hosting Web OVHcloud
 
 > [!warning]
 >
-> Ti ricordiamo che la modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del tuo sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche alla configurazione del tuo hosting Web.** Contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di dubbi o difficoltà.
+> Ti ricordiamo che la modifica di uno o più di questi elementi potrebbe avere conseguenze sulla visualizzazione o sul corretto funzionamento del tuo sito Web. **Assicurati prima che il tuo sito Web sia compatibile con le modifiche alla configurazione del tuo hosting Web.** Contatta un [provider specializzato](/links/partner) in caso di dubbi o difficoltà.
 >
 
 #### 2.1 - Accedi alla gestione della configurazione dell’hosting Web
@@ -364,7 +364,7 @@ Se necessario, consulta la nostra guida "[Configurare un multisito su un hosting
 
 [Accedere allo spazio di storage dell’hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

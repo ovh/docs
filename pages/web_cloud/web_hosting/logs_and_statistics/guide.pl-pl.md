@@ -62,7 +62,7 @@ Pole `Period selection` w prawym górnym rogu umożliwia wybranie konkretnego ok
 >
 > Nie będziemy w stanie udzielić Ci wsparcia w interpretacji logów Twojego hostingu, ponieważ jest to wyłącznie kwestia rozwoju www, a nie hostingu.
 >
-> W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+> W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 
 Możesz wyświetlać logi Twojej strony z około 5-minutowym opóźnieniem.
@@ -130,7 +130,7 @@ Na stronie, która się otworzy, pobierz adres URL z paska adresu przeglądarki 
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

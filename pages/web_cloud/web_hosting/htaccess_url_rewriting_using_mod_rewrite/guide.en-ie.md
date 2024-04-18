@@ -36,7 +36,7 @@ The **mod_rewrite** module offers an infinite number of possibilities. Below are
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 >
 > The following examples should be set up in a ".htaccess" file. Please note that the rules you define in this file have a direct impact on your website. Always verify the rules you add before applying them to your website.
@@ -133,7 +133,7 @@ In our example, all requests made with a URL in **http://** will be automaticall
 
 [Protect your website's administration interface with a .htaccess file](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

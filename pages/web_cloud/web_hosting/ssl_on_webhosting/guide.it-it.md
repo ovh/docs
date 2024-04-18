@@ -192,12 +192,12 @@ Questo messaggio viene visualizzato nei seguenti casi:
 
 - 1: La regola di reindirizzamento verso il tuo URL in "HTTPS" non è configurata correttamente o non esiste nel file ".htaccess":
 
-Per risolvere il problema, consulta il nostro tutorial "[Riscrivere l'URL di accesso al mio sito grazie al mod_rewrite tramite il file .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di difficoltà.
+Per risolvere il problema, consulta il nostro tutorial "[Riscrivere l'URL di accesso al mio sito grazie al mod_rewrite tramite il file .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" o rivolgiti a un [provider specializzato](/links/partner) in caso di difficoltà.
 
 - 2: Alcuni elementi della pagina Web non sono correttamente reindirizzati verso elementi cifrati in "HTTPS":
 
 Per risolvere il problema, è necessario crittografare l’intero sito Web con il protocollo "HTTPS".
-In caso di difficoltà o dubbi, consulta il nostro tutorial "[Hosting Web: passare il proprio sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+In caso di difficoltà o dubbi, consulta il nostro tutorial "[Hosting Web: passare il proprio sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" o rivolgiti a un [provider specializzato](/links/partner).
 
 > [!success]
 >
@@ -226,7 +226,7 @@ Per modificare la zona DNS attiva del dominio, consulta la nostra guida "[Modifi
 
 [Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website){.external}
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

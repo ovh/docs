@@ -22,7 +22,7 @@ La modifica della password di un database deve quindi essere sempre effettuata:
 
 Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mostrerà un "[errore di connessione al database](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
-Per modificare la password del database è quindi necessario eseguire **tutte le operazioni** indicate in questa guida. In caso di dubbi sulle operazioni da effettuare, contatta il tuo webmaster o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+Per modificare la password del database è quindi necessario eseguire **tutte le operazioni** indicate in questa guida. In caso di dubbi sulle operazioni da effettuare, contatta il tuo webmaster o rivolgiti a un [provider specializzato](/links/partner).
 
 La modifica della password del database del tuo sito avviene in quattro step:
 
@@ -231,6 +231,6 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 [Risolvi gli errori più frequenti associati ai database](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

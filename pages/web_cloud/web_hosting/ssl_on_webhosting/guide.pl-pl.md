@@ -192,12 +192,12 @@ Ten komunikat pojawia się w następujących przypadkach:
 
 - 1: Reguła przekierowywania "HTTPS" do adresu URL jest nieprawidłowo skonfigurowana lub nie istnieje w pliku ".htaccess":
 
-Aby to naprawić, zapoznaj się z naszym tutorialem "[przepisz adres URL dostępu do mojej strony za pomocą mod_rewrite w pliku .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" lub w przypadku trudności skorzystaj z usług [wyspecjalizowanego dostawcy](https://partner.ovhcloud.com/pl/directory/).
+Aby to naprawić, zapoznaj się z naszym tutorialem "[przepisz adres URL dostępu do mojej strony za pomocą mod_rewrite w pliku .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" lub w przypadku trudności skorzystaj z usług [wyspecjalizowanego dostawcy](/links/partner).
 
 - 2: Niektóre elementy strony internetowej nie są poprawnie przekierowywane do elementów zaszyfrowanych "HTTPS":
 
 Aby to naprawić, upewnij się, że cała Twoja strona WWW jest zaszyfrowana za pomocą protokołu "HTTPS".
-W razie potrzeby sprawdź tutorial "[Hosting WWW: przełącz stronę WWW na HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" lub skorzystaj z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) w przypadku trudności.
+W razie potrzeby sprawdź tutorial "[Hosting WWW: przełącz stronę WWW na HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" lub skorzystaj z pomocy [wyspecjalizowanego usługodawcy](/links/partner) w przypadku trudności.
 
 > [!success]
 >
@@ -224,7 +224,7 @@ Aby zmodyfikować aktywną strefę DNS Twojej domeny, zapoznaj się z naszym prz
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

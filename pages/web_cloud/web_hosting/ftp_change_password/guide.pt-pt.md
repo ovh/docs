@@ -22,7 +22,7 @@ Este acesso permite nomeadamente [publicar o seu site](/pages/web_cloud/web_host
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/), não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais"](#go-further)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner), não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais"](#go-further)?
 >
 
 ## Requisitos
@@ -82,7 +82,7 @@ Para aceder ao seu espaço de armazenamento FTP, consulte o nosso guia "[Aceder 
 
 [Publicar o seu site](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

@@ -16,7 +16,7 @@ Questa guida ti mostra come configurare alcune funzionalità del tuo hosting Web
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o [l'amministratore del CMS WordPress](https://wordpress.com/it/support/){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o [l'amministratore del CMS WordPress](https://wordpress.com/it/support/){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
 
 **Questa guida ti mostra come proteggere il tuo WordPress con uno o più file htaccess.**
@@ -40,7 +40,7 @@ I file **.htaccess** possono essere creati e modificati con editor di testo come
 >
 > Se non utilizzi un CMS, OVHcloud mette a tua disposizione un tutorial sulla [protezione di una directory o dell'interfaccia di gestione del tuo sito Web tramite file .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Per qualsiasi domanda relativa alla creazione, all'utilizzo o alla programmazione del tuo sito Web, contatta la nostra [community di utenti](https://community.ovh.com/en/) o i nostri [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). I team del supporto OVHcloud non saranno in grado di fornirti assistenza su questi argomenti.
+> Per qualsiasi domanda relativa alla creazione, all'utilizzo o alla programmazione del tuo sito Web, contatta la nostra [community di utenti](https://community.ovh.com/en/) o i nostri [partner OVHcloud](/links/partner). I team del supporto OVHcloud non saranno in grado di fornirti assistenza su questi argomenti.
 >
 
 ## FAQ
@@ -174,7 +174,7 @@ La directory **wp-admin** permette di accedere alla tua interfaccia di amministr
 
 Consulta il [tutorial disponibile sul sito della Fondazione Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

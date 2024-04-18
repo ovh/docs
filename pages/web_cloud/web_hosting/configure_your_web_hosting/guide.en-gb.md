@@ -53,7 +53,7 @@ Before you begin, please find the technical description below for each of the se
 
 > [!warning]
 >
-> Modifying at least one of these elements may affect the display or the proper functioning of your website. **Please ensure that your website is compatible with the changes you want to make to your web hosting plan’s configuration**. Contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you have any doubts or encounter any difficulties.
+> Modifying at least one of these elements may affect the display or the proper functioning of your website. **Please ensure that your website is compatible with the changes you want to make to your web hosting plan’s configuration**. Contact a [specialist provider](/links/partner) if you have any doubts or encounter any difficulties.
 >
 
 #### 1.1 - Runtime environments <a name="runtime-environment"></a>
@@ -182,7 +182,7 @@ Now that you know the different editable settings for your OVHcloud Web Hosting 
 
 > [!warning]
 >
-> As a reminder, changing at least one of these elements may affect the display or the proper functioning of your website. **Please ensure that your website is compatible with the changes you want to make to your web hosting plan’s configuration.** If you have any doubts or encounter any difficulties, please contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/).
+> As a reminder, changing at least one of these elements may affect the display or the proper functioning of your website. **Please ensure that your website is compatible with the changes you want to make to your web hosting plan’s configuration.** If you have any doubts or encounter any difficulties, please contact a [specialist provider](/links/partner).
 >
 
 #### 2.1 - Access Web Hosting plan configuration management
@@ -360,7 +360,7 @@ Refer to our guide on [Configuring a multisite on your web hosting plan](/pages/
 
 [Log in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

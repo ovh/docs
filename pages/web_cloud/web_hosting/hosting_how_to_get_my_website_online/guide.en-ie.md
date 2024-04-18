@@ -120,7 +120,7 @@ There are several methods for importing a database. OVHcloud offers one of these
 
 Once your database is available and you have uploaded your files to your storage space, all you need to do is connect them. To do this, you will need the following information: a username, the associated password, the name of the database and the address of the server.
 
-How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVHcloud. We therefore recommend that you contact your website’s editor or a similar professional (such as a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/)) if you need assistance with this procedure.
+How this connection is created will depend on the type of website you are publishing. This process is dictated by how your website is configured and has nothing to do with OVHcloud. We therefore recommend that you contact your website’s editor or a similar professional (such as a [specialist service provider](/links/partner)) if you need assistance with this procedure.
 
 ### Step 4: access your website
 
@@ -144,7 +144,7 @@ As a reminder, if you encounter difficulties when publishing your website, we re
 
 [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

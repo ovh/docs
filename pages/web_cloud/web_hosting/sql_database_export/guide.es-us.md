@@ -45,7 +45,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de backup
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Para más información, consulte la sección [«Más información»](#go-further) de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección [«Más información»](#go-further) de esta guía.
 >
 
 ### Obtener una copia de seguridad a través de la herramienta de OVHcloud
@@ -94,7 +94,7 @@ Una vez en la interfaz de conexión a *phpMyAdmin*, introduzca los datos de la b
 
 > [!warning]
 >
-> La interfaz *phpMyAdmin* no ha sido creada por OVHcloud, por lo que deberá realizar la operación según sus propios conocimientos. Le recomendamos que, si necesita ayuda, contacte con un [proveedor de servicios especializado](https://partner.ovhcloud.com/es/directory/) o con el editor de la interfaz. Nosotros no podremos asistirle.
+> La interfaz *phpMyAdmin* no ha sido creada por OVHcloud, por lo que deberá realizar la operación según sus propios conocimientos. Le recomendamos que, si necesita ayuda, contacte con un [proveedor de servicios especializado](/links/partner) o con el editor de la interfaz. Nosotros no podremos asistirle.
 >
 
 ### Recuperar una copia de seguridad utilizando un script
@@ -103,7 +103,7 @@ Esta operación se realiza en varios pasos. Asegúrese de disponer de la informa
 
 > [!warning]
 >
-> Esta solución requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo hacerlo. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle.
+> Esta solución requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo hacerlo. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle.
 >
 
 #### Etapa 1: crear el script de backup
@@ -155,7 +155,7 @@ Para realizar la operación, deberá utilizar comandos desde un terminal para in
 
 > [!warning]
 >
-> Este tipo de acceso requiere conocimientos técnicos más avanzados. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle.
+> Este tipo de acceso requiere conocimientos técnicos más avanzados. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle.
 >
 
 Una vez conectado al espacio de almacenamiento FTP por SSH, utilice un comando para realizar la copia de seguridad de la base de datos. A continuación se incluye una descripción que puede ayudarle a realizar esta operación. Tenga en cuenta que la copia de seguridad se realizará en el directorio actual en el momento en que envíe el comando en su terminal.
@@ -178,7 +178,7 @@ Sustituya la información genérica del comando por la información de la base d
 
 [Tutorial: ¿Qué hacer cuando la base de datos está llena?](/pages/web_cloud/web_hosting/sql_overquota_database)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

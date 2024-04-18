@@ -204,7 +204,7 @@ Si votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
 
 [Les certificats SSL sur les hébergements web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

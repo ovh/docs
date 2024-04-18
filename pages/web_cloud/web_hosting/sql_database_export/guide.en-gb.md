@@ -41,7 +41,7 @@ We recommend reading this guide, and focusing on the backup method you wish to u
 >
 > OVHcloud provides services that you are responsible for configuring, managing and managing. It is up to you to ensure that it works properly.
 >
-> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) if you experience any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 ### Retrieve a backup via the OVHcloud tool
@@ -89,7 +89,7 @@ Once you have reached the interface for connecting to *phpMyAdmin*, enter the in
 
 > [!warning]
 >
-> Since the *phpMyAdmin* interface was not created by OVHcloud, you will need to rely on your own knowledge to carry out the manipulation. We recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or getting in touch with the interface’s publisher if you experience any difficulties. We will not be able to assist you with this.
+> Since the *phpMyAdmin* interface was not created by OVHcloud, you will need to rely on your own knowledge to carry out the manipulation. We recommend contacting a [specialist provider](/links/partner) and/or getting in touch with the interface’s publisher if you experience any difficulties. We will not be able to assist you with this.
 >
 
 ### Retrieve a backup using a script
@@ -98,7 +98,7 @@ There are several steps to this process. Make sure you have the information you 
 
 > [!warning]
 >
-> This solution requires programming skills. You will find below some information on how to proceed. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties. We will not be able to assist you with this.
+> This solution requires programming skills. You will find below some information on how to proceed. However, we recommend contacting a [specialist provider](/links/partner) if you experience any difficulties. We will not be able to assist you with this.
 >
 
 #### Step 1: Create the backup script
@@ -150,7 +150,7 @@ To do this, you will need to use commands from a terminal to interact with your 
 
 > [!warning]
 >
-> More advanced knowledge is required to use this type of access. Below you will find some information on how to proceed. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you encounter any difficulties. We will not be able to assist you with this.
+> More advanced knowledge is required to use this type of access. Below you will find some information on how to proceed. However, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you with this.
 >
 
 Once you have logged in to your FTP storage space via an SSH connection, use a command to back up the database. You will find below one that can help you with this process. Bear in mind that the backup will be made in the current directory when you send the command in your terminal.
@@ -173,7 +173,7 @@ Replace the generic information for this command with the information for the da
 
 [Tutorial - What should I do when my database is full?](/pages/web_cloud/web_hosting/sql_overquota_database)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

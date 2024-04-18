@@ -37,7 +37,7 @@ O facto de o seu website possuir ou não uma ligação segura torna-se cada vez 
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
 >
 
 Encontre aqui as principais etapas descritas no resto deste guia para passar o seu website em *HTTPS*:
@@ -100,7 +100,7 @@ Se o seu alojamento web dispuser de um certificado SSL ativo, o [multisite](/pag
 >
 > Antes de começar, recomendamos que guarde um backup completo do website. Esta cópia de segurança deve conter não só os ficheiros presentes no [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup), mas também os ficheiros de [base de dados](/pages/web_cloud/web_hosting/sql_database_export) se o website utilizar uma.
 >
-> A partir desta etapa, as ações devem ser realizadas diretamente a partir dos ficheiros que compõem o seu website. Não hesite em contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se encontrar dificuldades.
+> A partir desta etapa, as ações devem ser realizadas diretamente a partir dos ficheiros que compõem o seu website. Não hesite em contactar um [fornecedor especializado](/links/partner) se encontrar dificuldades.
 >
 
 Existem várias formas de ativar o *HTTPS* no seu website. Para esta operação, é necessário realizar operações na configuração do website que utiliza. As informações apresentadas a seguir podem ajudá-lo neste processo de ativação, mas também podem revelar-se incompletas ou desadequadas à sua situação em termos de utilização.
@@ -157,7 +157,7 @@ Se o website se apresentar corretamente e não aparecer nenhum aviso após a ati
 
 [Gerir um certificado SSL num alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

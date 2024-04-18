@@ -57,7 +57,7 @@ Zanim rozpoczniesz pracę z hostingiem OVHcloud, zapoznaj się z opisem technicz
 
 > [!warning]
 >
-> Modyfikacja co najmniej jednego z tych elementów może mieć wpływ na wyświetlanie lub prawidłowe działanie witryny. **Upewnij się wcześniej, że Twoja strona WWW jest kompatybilna ze zmianami, które chcesz wprowadzić w konfiguracji Twojego hostingu**. W razie wątpliwości lub trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+> Modyfikacja co najmniej jednego z tych elementów może mieć wpływ na wyświetlanie lub prawidłowe działanie witryny. **Upewnij się wcześniej, że Twoja strona WWW jest kompatybilna ze zmianami, które chcesz wprowadzić w konfiguracji Twojego hostingu**. W razie wątpliwości lub trudności skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 
 #### 1.1 - Środowiska uruchomieniowe <a name="runtime-environment"></a>
@@ -187,7 +187,7 @@ Teraz już znasz różne modyfikowalne ustawienia Twojego hostingu WWW OVHcloud,
 
 > [!warning]
 >
-> Przypominamy, że zmiana co najmniej jednego z tych elementów może mieć wpływ na wyświetlanie lub prawidłowe działanie Twojej strony WWW. **Upewnij się wcześniej, czy Twoja strona WWW jest zgodna ze zmianami, które chcesz wprowadzić w konfiguracji Twojego hostingu.** W przypadku wątpliwości lub trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+> Przypominamy, że zmiana co najmniej jednego z tych elementów może mieć wpływ na wyświetlanie lub prawidłowe działanie Twojej strony WWW. **Upewnij się wcześniej, czy Twoja strona WWW jest zgodna ze zmianami, które chcesz wprowadzić w konfiguracji Twojego hostingu.** W przypadku wątpliwości lub trudności skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 
 #### 2.1 - Dostęp do interfejsu zarządzania konfiguracją hostingu WWW
@@ -363,7 +363,7 @@ Zapoznaj się z naszym przewodnikiem "[Konfiguracja MultiSite na Twoim hostingu]
 
 [Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  

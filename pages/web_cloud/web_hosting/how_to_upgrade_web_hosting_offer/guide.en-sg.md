@@ -93,7 +93,7 @@ Follow [these instructions](#modify) to change your solution.
 
 [Optimising your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

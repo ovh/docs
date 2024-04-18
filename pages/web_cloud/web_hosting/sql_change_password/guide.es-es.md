@@ -22,7 +22,7 @@ Por lo tanto, siempre debe cambiar la contraseña de una base de datos:
 
 Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrará un "[error al conectar a la base de datos](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-al-conectar-a-la-base-de-datos)".
 
-Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
+Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](/links/partner).
 
 La modificación de la contraseña de la base de datos del sitio web se realiza en cuatro pasos:
 
@@ -231,6 +231,6 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 [Resolver los errores más frecuentes asociados a las bases de datos](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

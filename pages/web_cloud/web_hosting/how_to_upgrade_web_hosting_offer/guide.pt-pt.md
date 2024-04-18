@@ -62,7 +62,7 @@ De seguida, selecione a nova subscrição e a respetiva duração. Valide os con
 
 Certifique-se de que a nova oferta inclui suficientes [bases de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/). Verifique também se o tamanho é suficiente.
 
-Caso contrário, elimine as bases de dados não utilizadas e, se necessário, reduza a quantidade de dados nelas contida. Esta quantidade não deverá ultrapassar a dimensão máxima das bases de dados da nova oferta. Para qualquer pedido de assistência sobre as manipulações a efetuar, contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Caso contrário, elimine as bases de dados não utilizadas e, se necessário, reduza a quantidade de dados nelas contida. Esta quantidade não deverá ultrapassar a dimensão máxima das bases de dados da nova oferta. Para qualquer pedido de assistência sobre as manipulações a efetuar, contacte os [parceiros OVHcloud](/links/partner).
 
 Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Bases de dados`{.action} e clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, em `Recalcular o limite`{.action}.
 
@@ -189,7 +189,7 @@ Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 
 [Otimização das performances do seu site](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

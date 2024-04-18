@@ -30,7 +30,7 @@ Gli hosting Web OVHcloud mettono a disposizione uno spazio di storage per la ges
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o [l’editor dell’IDE Visual Studio Code](https://code.visualstudio.com/){.external}. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o [l’editor dell’IDE Visual Studio Code](https://code.visualstudio.com/){.external}. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 ### Installare l'estensione SFTP per Visual Studio Code
@@ -187,7 +187,7 @@ Questa guida è finalizzata a presentare in modo efficace la gestione di un prog
 
 [Utilizzare l’accesso SSH del proprio hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Ti ricordiamo che per utilizzare SSH è necessario disporre di una [soluzione di hosting Web Pro o Performance](https://www.ovhcloud.com/it/web-hosting/).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

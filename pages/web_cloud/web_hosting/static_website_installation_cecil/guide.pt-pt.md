@@ -219,6 +219,6 @@ Um [guia sobre o formato Markdown](https://www.markdownguide.org/){.external}
 
 Nosso [guia sobre a utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

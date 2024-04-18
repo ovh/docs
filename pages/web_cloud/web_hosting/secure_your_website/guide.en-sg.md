@@ -131,6 +131,6 @@ The .htaccess file is an Apache configuration (HTTP) file that is run by your We
 
 [Responding when your hosting is deactivated for security purposes](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

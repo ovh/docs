@@ -90,7 +90,7 @@ Once you have downloaded your files, you can [connect to your FTP space](/pages/
 
 [Logging in using the Filezilla software](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

@@ -19,7 +19,7 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 >
 
 ## Requisitos
@@ -86,7 +86,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 > [!warning]
 >
-> La operación de eliminación de una base de datos es permanente. Esta operación también implica la eliminación de las copias de seguridad de la base de datos correspondiente. En caso de duda, póngase en contacto con su webmaster o con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).
+> La operación de eliminación de una base de datos es permanente. Esta operación también implica la eliminación de las copias de seguridad de la base de datos correspondiente. En caso de duda, póngase en contacto con su webmaster o con uno de nuestros [partners](/links/partner).
 >
 
 Para eliminar una base de datos de su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
@@ -111,7 +111,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 >
 > En esta situación, puede realizar una copia de seguridad de los datos de un único sitio web utilizando un [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).<br>
+> Si tiene cualquier duda sobre las operaciones que debe realizar, póngase en contacto con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con uno de nuestros [partners](/links/partner).<br>
 > No podremos asistirle.
 >
 
@@ -157,7 +157,7 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 
 > [!primary]
 >
-> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).<br>
+> Si tiene preguntas sobre la eliminación de datos para reducir la cantidad de datos en su alojamiento web, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
 > El soporte de OVHcloud no está autorizado a asistirle.
 >
 
@@ -209,7 +209,7 @@ Si no dispone de otras bases de datos y no desea contratar una solución adicion
 >
 > **Eliminar elementos de la base de datos puede provocar la interrupción del sitio web.**
 >
-> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).<br>
+> Si tiene más preguntas, póngase en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner).<br>
 > No podremos asistirle.
 >
 
@@ -283,7 +283,7 @@ Una vez finalizado, vuelva a instalar un nuevo "módulo en un clic".
 
 [Problemas recurrentes al utilizar un programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  

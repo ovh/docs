@@ -22,7 +22,7 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further) ?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further) ?
 >
 
 ## Requisitos
@@ -59,7 +59,7 @@ Para o verificar, [ligue-se FTP](/pages/web_cloud/web_hosting/ftp_connection) ao
 
 De seguida, renomeie este ficheiro em `.htaccess.old` e volte a testar o seu site.
 
-Se este último estiver de novo acessível, então o `.htaccess` está em causa. Por conseguinte, deverá ser alterado. Se desejar, contacte um dos nossos [parceiros](https://partner.ovhcloud.com/pt/directory/) a este respeito.
+Se este último estiver de novo acessível, então o `.htaccess` está em causa. Por conseguinte, deverá ser alterado. Se desejar, contacte um dos nossos [parceiros](/links/partner) a este respeito.
 
 ### Verificar permissões nas pastas e nos ficheiros
 
@@ -116,6 +116,6 @@ Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu al
 
 [Resolver o erro “Site não instalado”](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

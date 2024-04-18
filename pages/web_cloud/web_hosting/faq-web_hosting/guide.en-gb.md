@@ -104,7 +104,7 @@ There are two scenarios. Either your website was created with this web address o
 
 > [!warning]
 >
-> Deleting a database, like deleting a 1-click module, is permanent. It also **deletes backups** of the data concerned. Before deleting your website on the OVHcloud hosting plan, **ensure that you are able to recreate it identically**. If you are unsure about the changes to be made, contact your webmaster or one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) about it.
+> Deleting a database, like deleting a 1-click module, is permanent. It also **deletes backups** of the data concerned. Before deleting your website on the OVHcloud hosting plan, **ensure that you are able to recreate it identically**. If you are unsure about the changes to be made, contact your webmaster or one of our [partners](/links/partner) about it.
 >
 
 In the first case, after you have completed all the necessary backups, delete your module in the `Hosting plans` section of the OVHcloud Control Panel:
@@ -150,7 +150,7 @@ Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} 
 
 - If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web_cloud/domains/dns_server_general_information#resetting-dns-servers).
 
-- If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) page.
+- If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contact your webmaster or search for a [specialist service provider](/links/partner) via the [OVHcloud partners](/links/partner) page.
 
 ### What do I do if my website displays a page does not redirect correctly error?
 
@@ -169,7 +169,7 @@ Restore your website to its previous state:
 
 - If your website has a database, please refer to our guide [Importing a backup into a Web Hosting plan database](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
-If the restores do not allow you to restore access to your site, contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) on the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) website.
+If the restores do not allow you to restore access to your site, contact your webmaster or search for a [specialist service provider](/links/partner) on the [OVHcloud partners](/links/partner) website.
 
 ### What do I do if my website displays a "503 error Backend fetch failed (Varnish cache)" error?
 
@@ -177,7 +177,7 @@ If the restores do not allow you to restore access to your site, contact your we
 
 If you have enabled the [CDN option](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) on your Web Hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
 
-If you have not enabled this option or used *Maintenance* mode, please contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) website.
+If you have not enabled this option or used *Maintenance* mode, please contact your webmaster or search for a [specialist service provider](/links/partner) via the [OVHcloud partners](/links/partner) website.
 
 ### What do I do if my website displays a "Your request has been blocked" error?
 
@@ -185,7 +185,7 @@ If you have not enabled this option or used *Maintenance* mode, please contact y
 
 This message indicates that the type of HTTP request you are trying to make on your website is prohibited for a limited time. In this situation, [examine your website’s logs](/pages/web_cloud/web_hosting/logs_and_statistics) to determine which requests caused this block.
 
-To help you correct these anomalies, contact your webmaster or one of our [partners](https://partner.ovhcloud.com/en-gb/directory/).
+To help you correct these anomalies, contact your webmaster or one of our [partners](/links/partner).
 
 ### What should I do if my website has a "Your IP has been banned" error?
 
@@ -195,7 +195,7 @@ This message indicates that the IP address you use to log on to your website is 
 
 In this situation, [review the logs](/pages/web_cloud/web_hosting/logs_and_statistics) of your site, to determine which queries caused this block.<br>
 Also, make sure your computer is not infected with a virus.<br>
-You can also contact one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) to check your website’s source code.
+You can also contact one of our [partners](/links/partner) to check your website’s source code.
 
 ### I have ordered a domain name with special characters, and it appears written in a strange way in my Control Panel. What should I do?
 

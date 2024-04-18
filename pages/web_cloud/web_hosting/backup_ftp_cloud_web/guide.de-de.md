@@ -95,7 +95,7 @@ Sobald Ihre Dateien heruntergeladen wurden, können Sie sich [auf Ihrem FTP-Spei
 
 [Verwendung von Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 

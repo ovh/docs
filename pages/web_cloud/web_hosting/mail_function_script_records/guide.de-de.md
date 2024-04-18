@@ -189,7 +189,7 @@ Unser Anti-Spam-Dienst wird die Situation analysieren und unser Support kann Ihn
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der OVHcloud Community. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Ihre Fragen in der OVHcloud Community. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 Wir empfehlen Ihnen dringend, die "mail()"-Funktion von PHP bevorzugt zu nutzen. Ein Webhosting erlaubt es Ihnen jedoch, E-Mails über ein Skript mit SMTP (Simple Mail Transfer Protocol) zu versenden. Die Gesamtgröße Ihrer E-Mail darf nicht größer sein als **10 MB** (d.h. **7-8 MB ohne Kapselung**).
@@ -223,7 +223,7 @@ $mail->Password = "IhrPasswort";
 
 [FTP-Speicherplatz Ihres Hostings wiederherstellen](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 

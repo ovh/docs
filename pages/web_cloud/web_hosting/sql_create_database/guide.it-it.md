@@ -107,7 +107,7 @@ Ripeti questo processo per tutti i database che vuoi creare (nel limite dei data
 
 > [!warning]
 >
-> Questa guida non sostituisce l’assistenza di un professionista in sviluppo. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del software della tua soluzione. OVHcloud non sarà in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida non sostituisce l’assistenza di un professionista in sviluppo. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner) o il fornitore del software della tua soluzione. OVHcloud non sarà in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 A questo punto è possibile utilizzare il database. Per farlo, avrai bisogno delle tue informazioni di connessione:
@@ -127,7 +127,7 @@ Tutte le informazioni di connessione al database sono disponibili nella tabella.
 > Se non ricordi più la password di accesso al database, consulta la nostra guida "[Modificare la password del database](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-In base al software utilizzato, è possibile che questa connessione richieda una configurazione manuale o un’interfaccia generata dall’interfaccia di configurazione (backend) del sito Web. Dato che questa procedura riguarda la configurazione del sito Web e non l’hosting OVHcloud, consigliamo di consultare le risorse disponibili online o ricorrere a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+In base al software utilizzato, è possibile che questa connessione richieda una configurazione manuale o un’interfaccia generata dall’interfaccia di configurazione (backend) del sito Web. Dato che questa procedura riguarda la configurazione del sito Web e non l’hosting OVHcloud, consigliamo di consultare le risorse disponibili online o ricorrere a un [provider specializzato](/links/partner).
 
 > [!primary]
 >
@@ -178,7 +178,7 @@ Una volta che il database è stato ottimizzato (eliminato), ricalcola la quota d
 
 [Ottimizzare le prestazioni del sito Web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

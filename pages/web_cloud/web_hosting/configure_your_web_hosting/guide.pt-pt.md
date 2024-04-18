@@ -57,7 +57,7 @@ Antes de começar, encontrará de seguida a descrição técnica de cada um dos 
 
 > [!warning]
 >
-> A alteração de, pelo menos, um destes itens pode afetar a visualização ou o funcionamento do website. **Assegure-se de que o seu website é compatível com as alterações que deseja efetuar na configuração do seu alojamento web**. Contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) em caso de dúvida ou se encontrar dificuldades.
+> A alteração de, pelo menos, um destes itens pode afetar a visualização ou o funcionamento do website. **Assegure-se de que o seu website é compatível com as alterações que deseja efetuar na configuração do seu alojamento web**. Contacte um [fornecedor especializado](/links/partner) em caso de dúvida ou se encontrar dificuldades.
 >
 
 #### 1.1 - Os ambientes de execução <a name="runtime-environment"></a>
@@ -187,7 +187,7 @@ Agora que conhece os diferentes parâmetros alteráveis para o seu alojamento we
 
 > [!warning]
 >
-> Lembre-se de que a alteração de, pelo menos, um destes itens pode afetar a visualização ou o funcionamento do website. **Assegure-se de que o seu website é compatível com as alterações que deseja efetuar na configuração do seu alojamento web.** Contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) em caso de dúvida ou se encontrar dificuldades.
+> Lembre-se de que a alteração de, pelo menos, um destes itens pode afetar a visualização ou o funcionamento do website. **Assegure-se de que o seu website é compatível com as alterações que deseja efetuar na configuração do seu alojamento web.** Contacte um [fornecedor especializado](/links/partner) em caso de dúvida ou se encontrar dificuldades.
 >
 
 #### 2.1 - Aceder à gestão da configuração do alojamento web
@@ -364,7 +364,7 @@ Consulte o guia "[Configurar um multisite no alojamento web](/pages/web_cloud/we
 
 [Ligar-se ao espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  

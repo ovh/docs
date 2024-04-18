@@ -13,7 +13,7 @@ Your database usage may result in anomalies on your website or error messages in
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -49,7 +49,7 @@ Log in to the file storage space of your Web Hosting plan by [FTP](/pages/web_cl
 >
 > The name and content of the file relevant for database connection information depends on the CMS used for the website. This does not lie in the scope of responsibility of OVHcloud.
 >
-> We recommend that you contact the publisher of the [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) concerned or a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) if necessary. We will not be able to assist you with this.
+> We recommend that you contact the publisher of the [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) concerned or a [specialised service provider](/links/partner) if necessary. We will not be able to assist you with this.
 >
 
 Then check the **exact** match between the login details for [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface) and the login details for your website’s configuration file.
@@ -86,7 +86,7 @@ In your [OVHcloud Control Panel](/links/manager), open the `Hosting plans`{.acti
 >
 > If you are unable to restore access to your website as a result of these changes, [back up your database](/pages/web_cloud/web_hosting/sql_database_export) then [restore it to an earlier date](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#restoring-a-specific-backup) from your [OVHcloud Control Panel](/links/manager).
 >
-> Contact a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) if necessary. We will not be able to assist you with this.
+> Contact a [specialised service provider](/links/partner) if necessary. We will not be able to assist you with this.
 >
 
 ### You have exceeded the authorised quota
@@ -107,7 +107,7 @@ If you have a **Personal** or **Professional** Web Hosting plan, we recommend th
 >
 > In this case, changing your Web Hosting plan would be ineffective, as your database will continue to fill up.
 >
-> If you notice a sudden increase in the size of your database, or if you have a "blog" type site that normally does not use much data, we advise you to contact a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) as soon as possible. We will not be able to provide you with support on this matter.
+> If you notice a sudden increase in the size of your database, or if you have a "blog" type site that normally does not use much data, we advise you to contact a [specialised service provider](/links/partner) as soon as possible. We will not be able to provide you with support on this matter.
 >
 
 To upgrade your subscription, log in to your [OVHcloud Control Panel](/links/manager) and open `Hosting plans`{.action} in the left-hand menu. Select the relevant service and click on the `...`{.action} button in the `Solution` section of the right-hand info box, then select `Upgrade`{.action}.
@@ -135,7 +135,7 @@ Then update the data usage from the `Databases`{.action} tab of the relevant ser
 
 > [!warning]
 >
-> This operation requires advanced technical knowledge. We recommend contacting a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) if you need to use this method. We will not be able to assist you with this.
+> This operation requires advanced technical knowledge. We recommend contacting a [specialised service provider](/links/partner) if you need to use this method. We will not be able to assist you with this.
 >
 
 #### Method 4: Optimise your database
@@ -144,7 +144,7 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 > [!warning]
 >
-> If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/). We will not be able to assist you in this regard.
+> If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
 >
 
 ### RAM overflows
@@ -168,7 +168,7 @@ You can also optimise your database by following the instructions of our guide "
 
 > [!primary]
 >
-> If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/). We will not be able to assist you with this.
+> If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.
 >
 
 ### Database import errors
@@ -187,7 +187,7 @@ You can also tick the `Empty the current database`{.action} box just before [lau
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-If necessary, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/) for more information. We will not be able to assist you in correcting this issue.
+If necessary, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner) for more information. We will not be able to assist you in correcting this issue.
 
 > [!success]
 >
@@ -220,7 +220,7 @@ To resolve this issue, you can use the following methods:
 
 - Increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerned in the `Databases` section of your [OVHcloud Control Panel](/links/manager). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
-- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/). We will not be able to assist you with this.)
+- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.)
 
 - [Optimise your database](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases), then repeat the export/import operations.
 
@@ -254,7 +254,7 @@ In this situation, you will need to [optimise your databases](/pages/web_cloud/w
 
 > [!warning]
 >
-> If you have any questions about the changes you need to make in order to reduce the number of active connections to your database, please contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/). We will not be able to assist you in this regard.
+> If you have any questions about the changes you need to make in order to reduce the number of active connections to your database, please contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
 >
 
 ### "Name or service not known"
@@ -282,6 +282,6 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 
 [Resolving the most common 1-click module errors](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

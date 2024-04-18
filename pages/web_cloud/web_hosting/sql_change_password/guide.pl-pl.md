@@ -22,7 +22,7 @@ Zmiana hasła do bazy danych musi zatem zawsze być wykonywana:
 
 Dopóki zmiana nie zostanie dokonana **w tych dwóch miejscach**, Twoja strona WWW będzie wyświetlać "[błąd w logowaniu do bazy danych](/pages/web_cloud/web_hosting/diagnosis_database_errors#blad-podczas-logowania-do-bazy-danych)".
 
-Jeśli chcesz zmienić hasło do bazy danych, wykonaj **wszystkie operacje** opisane w tym przewodniku. W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z webmasterem lub skontaktuj się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług hostingowych.
+Jeśli chcesz zmienić hasło do bazy danych, wykonaj **wszystkie operacje** opisane w tym przewodniku. W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z webmasterem lub skontaktuj się z [wyspecjalizowanym](/links/partner) dostawcą usług hostingowych.
 
 Zmiana hasła do bazy danych składa się z czterech etapów:
 
@@ -231,6 +231,6 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 [Rozwiąż najczęstsze błędy związane z bazami danych](/pages/web_cloud/web_hosting/diagnosis_database_errors)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

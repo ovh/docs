@@ -219,7 +219,7 @@ Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/en-sg/web-cl
 
 If you would like to retain full control over how your CMS is installed, you can [install a CMS manually on your OVHcloud web hosting plan](/pages/web_cloud/web_hosting/cms_manual_installation).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

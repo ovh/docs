@@ -59,7 +59,7 @@ Para comprobarlo, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connecti
 
 Cambie el nombre del archivo a `.htaccess.old` y permanezca en su sitio web.
 
-Si este último vuelve a estar accesible, entonces el `.htaccess` está en cuestión. Por lo tanto, deberá modificarse. Si lo desea, contacte con uno de nuestros [partners](https://partner.ovhcloud.com/es/directory/) al respecto.
+Si este último vuelve a estar accesible, entonces el `.htaccess` está en cuestión. Por lo tanto, deberá modificarse. Si lo desea, contacte con uno de nuestros [partners](/links/partner) al respecto.
 
 ### Comprobar los permisos de carpetas y archivos
 
@@ -116,6 +116,6 @@ Por último, si se ha producido un error al actualizar la versión PHP del aloja
 
 [Solucionar el error «Sitio no instalado»](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

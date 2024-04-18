@@ -12,7 +12,7 @@ updated: 2024-01-29
 
 Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a disponibilidade dos seus serviços, proteger a integridade dos seus dados e proteger o acesso às suas soluções. Apenas diz respeito aos websites alojados nas [soluções partilhadas da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 
-É organizado por etapas, por ordem crescente de importância e de dificuldade técnica, o que significa que os primeiros passos são os mais indispensáveis. A segurança do seu site será medida pelo elemento que lhe diz respeito que está menos protegido. Recomendamos que realize o conjunto das ações descritas. No entanto, se encontrar dificuldades em realizar algumas das operações descritas aqui, não hesite em contactar a [comunidade OVHcloud](https://community.ovh.com/en/) ou os nossos [parceiros](https://partner.ovhcloud.com/pt/directory/).
+É organizado por etapas, por ordem crescente de importância e de dificuldade técnica, o que significa que os primeiros passos são os mais indispensáveis. A segurança do seu site será medida pelo elemento que lhe diz respeito que está menos protegido. Recomendamos que realize o conjunto das ações descritas. No entanto, se encontrar dificuldades em realizar algumas das operações descritas aqui, não hesite em contactar a [comunidade OVHcloud](https://community.ovh.com/en/) ou os nossos [parceiros](/links/partner).
 
 **Descubra como proteger o seu website.**
 
@@ -102,7 +102,7 @@ Adicione ao seu site um plugin de segurança recomendado pelo editor do CMS:
 
 ### Etapa 10 - Verifique se existem ficheiros maliciosos no seu alojamento web
 
-Este passo requer a ligação ao seu [espaço FTP](/pages/web_cloud/web_hosting/ftp_connection). Implica competências técnicas para reconhecer eventuais ficheiros maliciosos no seu alojamento. Se tiver dificuldades em efetuar esta verificação, não hesite em contactar os nossos [parceiros](https://partner.ovhcloud.com/pt/directory/).
+Este passo requer a ligação ao seu [espaço FTP](/pages/web_cloud/web_hosting/ftp_connection). Implica competências técnicas para reconhecer eventuais ficheiros maliciosos no seu alojamento. Se tiver dificuldades em efetuar esta verificação, não hesite em contactar os nossos [parceiros](/links/partner).
 
 Em caso de dúvidas, consulte [o passo 1 deste manual](#local) e [altere a palavra-passe](/pages/web_cloud/web_hosting/ftp_change_password) do seu espaço FTP.
 
@@ -130,6 +130,6 @@ O ficheiro ".htaccess" é um ficheiro de configuração (HTTP) Apache executado 
 
 [Reagir em caso de desativação por motivos de segurança de um alojamento](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

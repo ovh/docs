@@ -12,7 +12,7 @@ updated: 2024-01-29
 
 Questa guida ti mostra come acquisire conoscenze fondamentali per assicurare la disponibilità dei tuoi servizi, proteggere l'integrità dei tuoi dati e rendere sicuro l'accesso alle tue soluzioni. Riguarda solo i siti Web ospitati sulle [soluzioni condivise OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
 
-Il progetto è organizzato gradualmente in ordine crescente di importanza e difficoltà tecniche, il che significa che i primi passi sono i più indispensabili. La sicurezza del tuo sito sarà misurata in base all'elemento che lo riguarda e che è meno protetto. Ti consigliamo di eseguire tutte le azioni descritte. Tuttavia, in caso di difficoltà nell'esecuzione di alcune delle operazioni descritte, contatta la [community OVHcloud](https://community.ovh.com/en/) o i nostri [partner](https://partner.ovhcloud.com/it/directory/).
+Il progetto è organizzato gradualmente in ordine crescente di importanza e difficoltà tecniche, il che significa che i primi passi sono i più indispensabili. La sicurezza del tuo sito sarà misurata in base all'elemento che lo riguarda e che è meno protetto. Ti consigliamo di eseguire tutte le azioni descritte. Tuttavia, in caso di difficoltà nell'esecuzione di alcune delle operazioni descritte, contatta la [community OVHcloud](https://community.ovh.com/en/) o i nostri [partner](/links/partner).
 
 **Questa guida ti mostra come proteggere il tuo sito Web.**
 
@@ -20,7 +20,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o contattare l'amministratore del servizio. OVHcloud non potrà fornirti assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie sul tuo VPS. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner) o contattare l'amministratore del servizio. OVHcloud non potrà fornirti assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
 >
 
 ## Prerequisiti
@@ -102,7 +102,7 @@ Aggiungi al tuo sito un plugin di sicurezza consigliato dall'editor del CMS:
 
 ### Step 10 - Verificare la presenza di file dannosi sull’hosting Web
 
-Per effettuare questa operazione, accedi al tuo [spazio FTP](/pages/web_cloud/web_hosting/ftp_connection). E richiede competenze tecniche per riconoscere eventuali file malevoli sul tuo hosting. In caso di difficoltà nell'effettuare questa verifica, contatta i nostri [partner](https://partner.ovhcloud.com/it/directory/).
+Per effettuare questa operazione, accedi al tuo [spazio FTP](/pages/web_cloud/web_hosting/ftp_connection). E richiede competenze tecniche per riconoscere eventuali file malevoli sul tuo hosting. In caso di difficoltà nell'effettuare questa verifica, contatta i nostri [partner](/links/partner).
 
 In caso di dubbi su questo punto, consulta lo [Step 1](#local) di questa guida e [modifica la password](/pages/web_cloud/web_hosting/ftp_change_password) del tuo spazio FTP.
 
@@ -130,6 +130,6 @@ Il file ".htaccess" è un file di configurazione (HTTP) Apache eseguito dal serv
 
 [Reagire in caso di disattivazione per motivi di sicurezza di un hosting](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

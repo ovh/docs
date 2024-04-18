@@ -101,7 +101,7 @@ Uma vez na página de phpMyAdmin, introduza as informações da base de dados, s
 
 > [!warning]
 >
-> A interface phpMyAdmin não pertence à OVHcloud, pelo que deverá encarregar-se da realização das operações necessárias. Recomendamos que, caso de precise de ajuda, recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
+> A interface phpMyAdmin não pertence à OVHcloud, pelo que deverá encarregar-se da realização das operações necessárias. Recomendamos que, caso de precise de ajuda, recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
 ### Importar um backup utilizando um script
@@ -110,7 +110,7 @@ Esta operação realiza-se em vários passos. Certifique-se de que possui o fich
 
 > [!warning]
 >
-> Esta operação requer conhecimentos técnicos de programação. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
+> Esta operação requer conhecimentos técnicos de programação. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica.
 >
 
 #### 1 - Criar um script de importação
@@ -153,7 +153,7 @@ Para interagir com o seu espaço de armazenamento, deverá executar comandos a p
 
 > [!warning]
 >
-> Este tipo de acesso requer conhecimento técnicos mais avançados. Apresentamos a seguir algumas informações sobre como fazer. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
+> Este tipo de acesso requer conhecimento técnicos mais avançados. Apresentamos a seguir algumas informações sobre como fazer. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica.
 >
 
 Depois de aceder ao espaço de armazenamento por SSH, utilize um comando que lhe permita realizar a importação da base de dados. Apresentamos a seguir um exemplo que o ajudará a realizar esta operação. Tenha em atenção que, em primeiro lugar, deverá carregar o backup que pretende importar no espaço de armazenamento e enviar o comando no seu terminal posicionando-se no diretório onde se encontra este último.
@@ -166,7 +166,7 @@ Substitua a informação genérica do script pela informação da base de dados 
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

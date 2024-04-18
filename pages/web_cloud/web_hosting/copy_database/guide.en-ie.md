@@ -186,7 +186,7 @@ For example, this error can occur when you use MySQL for your source database, a
 
 [Import a backup into a web hosting database](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

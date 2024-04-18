@@ -49,7 +49,7 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten, sofern die **Ausfälle nicht auf Ebene der Hosting-Infrastruktur verursacht werden**. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten, sofern die **Ausfälle nicht auf Ebene der Hosting-Infrastruktur verursacht werden**. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 > [!success]
@@ -136,7 +136,7 @@ phpinfo();
 >
 > In manchen Fällen können **.htaccess** Dateien in Ordnern, die sich auf derselben Ebene oder höher wie Ihre **phpinfo.php** befinden, die Anzeige von **phpinfo.php** im Webbrowser beeinträchtigen. 
 >
-> Änderungen an einer **.htaccess** können Auswirkungen auf die korrekte Anzeige Ihrer Website haben. Wenden Sie sich an [spezialisierter Dienstleister](https://partner.ovhcloud.com/de/directory/), wenn Sie Schwierigkeiten haben, die folgenden Maßnahmen durchzuführen.
+> Änderungen an einer **.htaccess** können Auswirkungen auf die korrekte Anzeige Ihrer Website haben. Wenden Sie sich an [spezialisierter Dienstleister](/links/partner), wenn Sie Schwierigkeiten haben, die folgenden Maßnahmen durchzuführen.
 >
 > **Als sachkundiger Nutzer** benennen Sie in diesem Fall Ihre **.htaccess** in **.htaccess_OLD** um, damit der Server sie nicht mehr während Ihres Tests ausführt. Benennen Sie die Datei(en) nach Ihrer Diagnose wieder korrekt.
 >
@@ -191,7 +191,7 @@ An dieser Stelle sollte eindeutig sein, dass Verlangsamungen von Seiten/Skripte/
 
 > [!warning]
 >
-> Wenn Sie Schwierigkeiten haben, die folgenden Aktionen durchzuführen, können Sie einen [sachverständigen Partner](https://partner.ovhcloud.com/de/directory/) kontaktieren. OVHcloud kann keine Unterstützung bei der Entwicklung oder Optimierung Ihrer Website anbieten.
+> Wenn Sie Schwierigkeiten haben, die folgenden Aktionen durchzuführen, können Sie einen [sachverständigen Partner](/links/partner) kontaktieren. OVHcloud kann keine Unterstützung bei der Entwicklung oder Optimierung Ihrer Website anbieten.
 >
 
 Im Folgenden finden Sie die notwendigen Aktionen, um die Quelle(n) der Langsamkeit zu ermitteln und Ihre Website zu optimieren.
@@ -255,7 +255,7 @@ Um das Aufkommen an Abfragen für jeden Seitenaufbau zu reduzieren, können Sie 
 
 > [!warning]
 >
-> Änderungen in Ihrer Datenbank können irreversible Folgen haben, wenn sie nicht systematisch und korrekt durchgeführt werden. Wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), falls Sie sich der geeigneten Maßnahmen nicht sicher sind. 
+> Änderungen in Ihrer Datenbank können irreversible Folgen haben, wenn sie nicht systematisch und korrekt durchgeführt werden. Wenden Sie sich an einen [spezialisierten Dienstleister](/links/partner), falls Sie sich der geeigneten Maßnahmen nicht sicher sind. 
 >
 
 Überprüfen Sie, ob eine große Anzahl an Anfragen an Ihre Datenbank erfolgt.<br>
@@ -297,7 +297,7 @@ Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](https://www.ovhcl
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 

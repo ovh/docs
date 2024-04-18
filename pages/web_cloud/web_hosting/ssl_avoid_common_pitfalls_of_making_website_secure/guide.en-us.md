@@ -12,7 +12,7 @@ In this tutorial, you will find some examples of situations you may encounter wh
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en/directory/) or reaching out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This guide explains how to avoid common website security errors with SSL.**
@@ -59,6 +59,6 @@ RewriteRule ^(.*)$ https://www.yourdomain.tld/$1 [R,L]
 
 ## Go further <a name="go-further"></a>
  
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
 Join our community of users on <https://community.ovh.com/en/>.

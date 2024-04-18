@@ -52,7 +52,7 @@ Accedi in [FTP](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di arch
 >
 > La scelta e la configurazione del file contenente le informazioni di connessione al database sono inerenti al mittente del contenuto (CMS) interessato e non a OVHcloud.
 >
-> In caso di necessità, ti consigliamo di rivolgerti all'editor del [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizzato per creare il tuo sito o di rivolgerti a uno specialista del settore(https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
+> In caso di necessità, ti consigliamo di rivolgerti all'editor del [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizzato per creare il tuo sito o di rivolgerti a uno specialista del settore(/links/partner). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
 Verifica la corrispondenza **esatta** tra le credenziali di connessione a [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database) e quelle del file di configurazione del tuo sito.
@@ -88,7 +88,7 @@ Nello Spazio Cliente OVHcloud (/links/manager), sezione `Hosting`{.action}, clic
 > [!primary]
 > Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](/pages/web_cloud/web_hosting/sql_database_export) e [ripristina il database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](/links/manager).
 >
-> Contatta uno specialista del settore (https://partner.ovhcloud.com/it/directory/) se necessario. Non saremo in grado di fornirti assistenza al riguardo.
+> Contatta uno specialista del settore (/links/partner) se necessario. Non saremo in grado di fornirti assistenza al riguardo.
 >
 
 ### Superamento della quota autorizzata del database
@@ -109,7 +109,7 @@ Se disponi di una formula **Personale** o **Pro***, ti consigliamo di passare al
 >
 > Un'anomalia può provocare un aumento permanente della dimensione del tuo database, nel qual caso la modifica dell'offerta di hosting risulterebbe inefficace.
 >
-> Ti consigliamo quindi di contattare immediatamente uno specialista (https://partner.ovhcloud.com/it/directory/) se riscontri un improvviso aumento nella dimensione del tuo database o se disponi di un sito di tipo "blog" normalmente a basso consumo di dati. Non saremo in grado di fornirti assistenza in merito.
+> Ti consigliamo quindi di contattare immediatamente uno specialista (/links/partner) se riscontri un improvviso aumento nella dimensione del tuo database o se disponi di un sito di tipo "blog" normalmente a basso consumo di dati. Non saremo in grado di fornirti assistenza in merito.
 >
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Hosting`{.action} > 'hosting interessato'. Clicca sul pulsante `...`{.action} nella sezione `Offre` sulla destra dello schermo e su `Modifica dell'offerta`{.action}.
@@ -136,7 +136,7 @@ Esegui il calcolo della quota utilizzando la scheda `Database`{.action} dell'hos
 
 > [!warning]
 >
-> Questa operazione richiede competenze tecniche molto elevate. In caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore (https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirvi assistenza in merito.
+> Questa operazione richiede competenze tecniche molto elevate. In caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore (/links/partner). Non saremo in grado di fornirvi assistenza in merito.
 >
 
 #### Metodo 4: ottimizzare il tuo database
@@ -145,7 +145,7 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configu
 
 > [!warning]
 >
-> Se i consigli forniti sull'ottimizzazione del database non sono sufficienti per sbloccare l'accesso al tuo sito, ti consigliamo di contattare la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
+> Se i consigli forniti sull'ottimizzazione del database non sono sufficienti per sbloccare l'accesso al tuo sito, ti consigliamo di contattare la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
 >
 
 Superamento della capacità della RAM
@@ -168,7 +168,7 @@ In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages
 Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](/pages/web_cloud/web_cloud_databases/configure-database-server#ottimizza-i-tuoi-database)".
 
 > [!primary]
-> Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
+> Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
 ### Errori di importazione di database
@@ -185,7 +185,7 @@ Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima 
 
 ![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
-Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](https://community.ovh.com/en/) o un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
+Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](https://community.ovh.com/en/) o un [provider specializzato](/links/partner). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
 
 > [!success]
 >
@@ -218,7 +218,7 @@ Per risolvere questa anomalia, puoi:
 
 - Aumentare la [quantità di RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](/links/manager). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
 
-- Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) OVHcloud non potrà fornirti alcuna assistenza al riguardo).
+- Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner) OVHcloud non potrà fornirti alcuna assistenza al riguardo).
 
 - [Ottimizza il tuo database](/pages/web_cloud/web_cloud_databases/configure-database-server) e ripeti le operazioni di esportazione/importazione.
 
@@ -252,7 +252,7 @@ Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi d
 
 > [!warning]
 >
-> Per maggiori informazioni sulle operazioni da effettuare per ridurre il numero di connessioni attive sul database, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
+> Per maggiori informazioni sulle operazioni da effettuare per ridurre il numero di connessioni attive sul database, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
 >
 
 #### "Name or service not known"
@@ -278,6 +278,6 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](/link
 
 [Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

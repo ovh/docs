@@ -18,7 +18,7 @@ This access allows you to [put your website online](/pages/web_cloud/web_hosting
 >
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the ["Go further"](#go-further) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -76,7 +76,7 @@ To access your FTP storage space, please refer to our guide ["Logging in to your
 
 [Put your website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

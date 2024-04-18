@@ -57,7 +57,7 @@ A continuación ofrecemos una descripción técnica de cada uno de los parámetr
 
 > [!warning]
 >
-> Cambiar al menos uno de estos elementos puede afectar a la visualización o al buen funcionamiento del sitio web. **Asegúrese previamente de que su sitio web es compatible con los cambios que desea realizar en la configuración de su alojamiento web**. En caso de duda o de dificultad, puede ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
+> Cambiar al menos uno de estos elementos puede afectar a la visualización o al buen funcionamiento del sitio web. **Asegúrese previamente de que su sitio web es compatible con los cambios que desea realizar en la configuración de su alojamiento web**. En caso de duda o de dificultad, puede ponerse en contacto con un [proveedor especializado](/links/partner).
 >
 
 #### 1.1 - Entornos de ejecución <a name="runtime-environment"></a>
@@ -187,7 +187,7 @@ Una vez que conozca los distintos parámetros que puede modificar para su alojam
 
 > [!warning]
 >
-> Le recordamos que modificar al menos uno de estos elementos puede afectar a la visualización o al buen funcionamiento de su sitio web. **Asegúrese previamente de que su sitio web es compatible con los cambios que desea realizar en la configuración de su alojamiento web.** En caso de duda o de que tenga dificultades, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
+> Le recordamos que modificar al menos uno de estos elementos puede afectar a la visualización o al buen funcionamiento de su sitio web. **Asegúrese previamente de que su sitio web es compatible con los cambios que desea realizar en la configuración de su alojamiento web.** En caso de duda o de que tenga dificultades, contacte con un [proveedor especializado](/links/partner).
 >
 
 #### 2.1 - Acceder a la gestión de la configuración del alojamiento web
@@ -364,7 +364,7 @@ Si lo necesita, consulte nuestra guía "[Configurar un multisitio en un alojamie
 
 [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

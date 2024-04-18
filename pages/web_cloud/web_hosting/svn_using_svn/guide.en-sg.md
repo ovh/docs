@@ -137,6 +137,6 @@ svn+ssh://login@ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 
 [Accessing a Web Hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

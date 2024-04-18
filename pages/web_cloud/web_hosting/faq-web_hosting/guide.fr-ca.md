@@ -91,7 +91,7 @@ Deux scénarii sont possibles. Soit votre site a été créé avec cette adresse
 
 > [!warning]
 >
-> La suppression d'une base de données, comme celle d'un module en 1 clic, est définitive. Elle entraîne également la **suppression des sauvegardes** des données concernées. Avant de supprimer votre site sur l'hébergement OVHcloud, **assurez-vous d'être capable de le recréer à l'identique**. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/).
+> La suppression d'une base de données, comme celle d'un module en 1 clic, est définitive. Elle entraîne également la **suppression des sauvegardes** des données concernées. Avant de supprimer votre site sur l'hébergement OVHcloud, **assurez-vous d'être capable de le recréer à l'identique**. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 >
 
 Dans le premier cas, après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre module depuis la partie `Hébergements` de votre espace client OVHcloud :
@@ -137,7 +137,7 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 - Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_general_information#reinitialiser-les-serveurs-dns).
 
-- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contactez votre Webmaster ou recherchez un [prestataire spécialisé](/links/partner) via la page des [partenaires OVHcloud](/links/partner).
 
 ### Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
 
@@ -156,7 +156,7 @@ Restaurez votre site à son état précédent :
 
 - Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client).
 
-Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](/links/partner) sur le site des [partenaires OVHcloud](/links/partner).
 
 ### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
 
@@ -164,7 +164,7 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site,
 
 Si vous avez activé [l'option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
-Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](/links/partner) sur le site des [partenaires OVHcloud](/links/partner).
 
 ### Que faire si mon site affiche une erreur « Your request has been blocked » ?
 
@@ -172,7 +172,7 @@ Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, conta
 
 Ce message indique que le type de requête HTTP que vous tentez de faire sur votre site est interdit pour un temps limité. Dans cette situation, [examinez les logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site afin de déterminer quelles requêtes ont provoqué ce blocage.
 
-Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 
 ### Que faire si mon site affiche une erreur « Your IP has been banned » ?
 
@@ -182,7 +182,7 @@ Ce message indique que l'adresse IP que vous utilisez pour vous connecter à vot
 
 Dans cette situation, [examinez les logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site, afin de déterminer quelles requêtes ont provoqué ce blocage.<br>
 Vérifiez également que votre poste informatique n'est pas infecté par un virus.<br>
-Vous pouvez enfin contacter l'un de [nos partenaires](https://partner.ovhcloud.com/fr-ca/directory/), afin qu'il vérifie le code informatique de votre site.
+Vous pouvez enfin contacter l'un de [nos partenaires](/links/partner), afin qu'il vérifie le code informatique de votre site.
 
 ### J'ai commandé un domaine comportant des accents et il s'affiche écrit de façon étrange dans mon espace client. Que dois-je faire ?
 

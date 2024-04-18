@@ -108,7 +108,7 @@ Zwei Szenarien sind möglich. Entweder wurde Ihre Website mit dieser Adresse ers
 
 > [!warning]
 >
-> Die Löschung einer Datenbank wie eines 1-Klick-Moduls ist endgültig. Sie führt auch zur **Löschung der Backups** der betreffenden Daten. Bevor Sie Ihre Website auf dem OVHcloud-Hosting löschen, **stellen Sie sicher, dass Sie sie auf die gleiche Weise neu erstellen können**. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, kontaktieren Sie bitte Ihren Webmaster oder einen unserer [Partner](https://partner.ovhcloud.com/de/directory/).
+> Die Löschung einer Datenbank wie eines 1-Klick-Moduls ist endgültig. Sie führt auch zur **Löschung der Backups** der betreffenden Daten. Bevor Sie Ihre Website auf dem OVHcloud-Hosting löschen, **stellen Sie sicher, dass Sie sie auf die gleiche Weise neu erstellen können**. Wenn Sie sich nicht sicher sind, welche Änderungen notwendig sind, kontaktieren Sie bitte Ihren Webmaster oder einen unserer [Partner](/links/partner).
 >
 
 Im ersten Fall löschen Sie Ihr Modul nach Durchführung aller notwendigen Backups aus dem Bereich `Hosting-Pakete` in Ihrem OVHcloud Kundencenter:
@@ -154,7 +154,7 @@ Vergleichen Sie die **Ziele** der `NS`-Einträge im Tab `DNS-Zone`{.action} mit 
 
 - Wenn die Elemente nicht identisch sind, aber die im Tab desselben Namens aufgeführten `DNS-Server` in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, setzen Sie die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_general_information#dns-server-zurucksetzen) fort.
 
-- Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud-Partner](https://partner.ovhcloud.com/de/directory/).
+- Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](/links/partner) auf der [Seite der OVHcloud-Partner](/links/partner).
 
 ### Was tun, wenn meine Website einen Fehler “Die Seite leitet sich nicht richtig um“ zeigt?
 
@@ -173,7 +173,7 @@ Stellen Sie Ihre Website in ihrem vorherigen Zustand wieder her:
 
 - Wenn Ihre Website eine Datenbank enthält, lesen Sie unsere Anleitung [Backup Ihrer Datenbank wiederherstellen](/pages/web_cloud/web_hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen).
 
-Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wiederherstellen können, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wiederherstellen können, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](/links/partner) auf der [Seite der OVHcloud Partner](/links/partner).
 
 ### Was soll ich tun, wenn meine Website einen Fehler “503 error Backend fetch failed (Varnish cache)“ anzeigt?
 
@@ -181,7 +181,7 @@ Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wieder
 
 Wenn Sie die [CDN Option](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) Ihres Hostings aktiviert haben, deaktivieren Sie den *Wartungsmodus* für Ihr WordPress oder PrestaShop.
 
-Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der Seite der [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](/links/partner) auf der Seite der [OVHcloud Partner](/links/partner).
 
 ### Was soll ich tun, wenn meine Website einen Fehler “Your request has been blocked“ zeigt?
 
@@ -189,7 +189,7 @@ Wenn Sie diese Option nicht aktiviert oder den *Wartungsmodus* verwendet haben, 
 
 Diese Nachricht zeigt an, dass die Art der HTTP-Anfrage, die Sie auf Ihrer Seite durchführen möchten, für eine begrenzte Zeit verboten ist. Überprüfen Sie in diesem Fall die [Logs Ihrer Website](/pages/web_cloud/web_hosting/logs_and_statistics), um herauszufinden, welche Anfragen zu dieser Sperrung geführt haben.
 
-Kontaktieren Sie Ihren Webmaster oder einen [unserer Partner](https://partner.ovhcloud.com/de/directory/), um Ihnen dabei zu helfen.
+Kontaktieren Sie Ihren Webmaster oder einen [unserer Partner](/links/partner), um Ihnen dabei zu helfen.
 
 ### Was soll ich tun, wenn meine Website einen Fehler “Your IP has been banned“ zeigt?
 
@@ -199,7 +199,7 @@ Diese Nachricht zeigt an, dass die IP-Adresse, die Sie verwenden, um sich mit Ih
 
 In diesem Fall überprüfen Sie [die Logs](/pages/web_cloud/web_hosting/logs_and_statistics) Ihrer Website, um festzustellen, welche Anfragen zu dieser Sperrung geführt haben.<br>
 Überprüfen Sie außerdem, dass Ihr Rechner nicht mit einem Virus infiziert ist.<br>
-Kontaktieren Sie einen [unserer Partner](https://partner.ovhcloud.com/de/directory/), um den Code Ihrer Website zu überprüfen.
+Kontaktieren Sie einen [unserer Partner](/links/partner), um den Code Ihrer Website zu überprüfen.
 
 ### Ich habe eine Domain mit Sonderzeichen bestellt, die in meinem Kundencenter auf ungewöhnliche Weise geschrieben wird. Was soll ich tun?
 

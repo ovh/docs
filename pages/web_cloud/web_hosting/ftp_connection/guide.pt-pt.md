@@ -170,7 +170,7 @@ Para mais informações, consulte o manual "[Utilizar uma ligação SSH num aloj
 
 [Utilize o Cyberduck com o seu alojamento web](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

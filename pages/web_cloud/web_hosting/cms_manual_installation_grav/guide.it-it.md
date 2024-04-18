@@ -121,6 +121,6 @@ Il CMS Grav è stato installato manualmente sull’hosting Web OVHcloud. Dopo av
 
 [Tutorial - Installa manualmente un CMS sul tuo hosting](/pages/web_cloud/web_hosting/cms_manual_installation)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

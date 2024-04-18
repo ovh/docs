@@ -128,7 +128,7 @@ Si vous désirez obtenir plus d'informations sur les modules en 1 clic OVHcloud,
 
 #### 2. Installer manuellement votre projet
 
-Qu'il s'agisse d'un nouveau site internet ou de la migration d'un site déjà existant, l'installation manuelle peut se révéler plus technique et devra être effectuée en fonction de vos propres connaissances. Pour cela, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. 
+Qu'il s'agisse d'un nouveau site internet ou de la migration d'un site déjà existant, l'installation manuelle peut se révéler plus technique et devra être effectuée en fonction de vos propres connaissances. Pour cela, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. 
 
 Si votre choix se porte sur l'installation manuelle, vous devrez être en possession de l'ensemble des fichiers du site internet ou de l'application que vous souhaitez installer ainsi que, si cela est requis pour son bon fonctionnement, des identifiants d'une base de données préalablement créée sur votre hébergement Cloud Web. Dans le cadre de la migration d'un site internet, munissez-vous de la copie complète de ce dernier.
 
@@ -191,7 +191,7 @@ Si vous désirez obtenir plus de détails sur l'utilisation de Roundcube, consul
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

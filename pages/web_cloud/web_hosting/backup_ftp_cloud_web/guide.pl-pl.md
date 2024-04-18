@@ -95,7 +95,7 @@ Po pobraniu plików możesz [połączyć się z przestrzenią FTP](/pages/web_cl
 
 [Logowanie za pomocą programu Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 

@@ -41,7 +41,7 @@ Riconoscere a colpo d’occhio se un sito è sicuro è sempre più facile.
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 Segui i passaggi descritti in questa guida per cambiare il tuo sito Web in *HTTPS*:
@@ -59,7 +59,7 @@ Per attivare un certificato SSL sul tuo hosting Web o verificare che sia già in
 
 Prima di apportare qualsiasi modifica alla configurazione del sito Web, è importante assicurarsi che il sito sia configurato per utilizzare *HTTPS* correttamente. La procedura da seguire non è universale, ma dipende dal tipo di sito Web utilizzato.
 
-Le informazioni riportate di seguito sono pertanto generiche. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+Le informazioni riportate di seguito sono pertanto generiche. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner).
 
 #### 2.1 - Evitare di mischiare contenuti HTTP e HTTPS
 
@@ -104,7 +104,7 @@ Una volta che l’hosting Web dispone di un certificato SSL attivo e che il [mul
 >
 > Prima di effettuare qualsiasi operazione ti consigliamo di effettuare un backup completo del tuo sito Web. Questo backup deve contenere non solo i file presenti nello [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup), ma anche quelli di [il database](/pages/web_cloud/web_hosting/sql_database_export) se il sito web ne utilizza uno.
 >
-> A partire da questo step, è possibile eseguire le azioni direttamente dai file che compongono il sito Web. In caso di difficoltà o dubbi, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
+> A partire da questo step, è possibile eseguire le azioni direttamente dai file che compongono il sito Web. In caso di difficoltà o dubbi, contatta un [provider specializzato](/links/partner).
 >
 
 Per attivare il *HTTPS* sul sito Web sono disponibili diversi metodi. è necessario apportare modifiche alla sua configurazione. Le informazioni fornite in questa guida potrebbero essere d’aiuto nel processo di attivazione, ma potrebbero rivelarsi incomplete o non applicabili al tuo caso d’uso.
@@ -161,7 +161,7 @@ Se il sito Web appare correttamente e non compare alcun avviso dopo il passaggio
 
 [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

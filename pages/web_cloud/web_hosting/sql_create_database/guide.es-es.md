@@ -107,7 +107,7 @@ Repita este proceso tantas veces como desee para crear varias bases de datos (co
 
 > [!warning]
 >
-> Esta guía no sustituye a la asistencia de un profesional en desarrollo. Le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del software de su solución. OVHcloud no podrá asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
+> Esta guía no sustituye a la asistencia de un profesional en desarrollo. Le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](/links/partner) o con el editor del software de su solución. OVHcloud no podrá asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
 >
 
 Ya puede utilizar su base de datos. Para ello, necesitará su información de conexión:
@@ -127,7 +127,7 @@ Se mostrará una tabla con toda la información relativa a la conexión a la bas
 > Si no recuerda su contraseña de conexión a la base de datos, consulte nuestra guía "[Cambiar la contraseña de la base de datos](/pages/web_cloud/web_hosting/sql_change_password)".
 >
 
-Según el programa utilizado, es posible que esta conexión necesite ser configurada manualmente o a través de una interfaz generada por la interfaz de configuración (backend) del sitio web. Este procedimiento afecta a la configuración del sitio web y no al alojamiento de OVHcloud, por lo que le recomendamos que consulte los recursos disponibles en internet o que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
+Según el programa utilizado, es posible que esta conexión necesite ser configurada manualmente o a través de una interfaz generada por la interfaz de configuración (backend) del sitio web. Este procedimiento afecta a la configuración del sitio web y no al alojamiento de OVHcloud, por lo que le recomendamos que consulte los recursos disponibles en internet o que contacte con un [proveedor especializado](/links/partner).
 
 > [!primary]
 >
@@ -178,7 +178,7 @@ Una vez que la base de datos haya sido optimizada (depurada), vuelva a calcular 
 
 [Optimizar el rendimiento de su sitio web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

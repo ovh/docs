@@ -45,7 +45,7 @@ Consulte este manual de acordo com o método de backup pretendido.
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção [Quer saber mais?](#go-further) deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção [Quer saber mais?](#go-further) deste guia.
 >
 
 ### Recuperar um backup através da ferramenta da OVHcloud
@@ -94,7 +94,7 @@ Uma vez na interface de ligação a *phpMyAdmin*, introduza as informações da 
 
 > [!warning]
 >
-> Como a interface *phpMyAdmin* não foi criada pela OVHcloud, deverá realizar a operação de acordo com os seus conhecimentos. Recomendamos que, em caso de dúvida, recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
+> Como a interface *phpMyAdmin* não foi criada pela OVHcloud, deverá realizar a operação de acordo com os seus conhecimentos. Recomendamos que, em caso de dúvida, recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
 ### Recuperar um backup usando um script
@@ -103,7 +103,7 @@ Esta operação realiza-se em várias etapas. Certifique-se de que possui a info
 
 > [!warning]
 >
-> Esta solução requer conhecimentos de programação. Apresentamos a seguir algumas informações sobre como o fazer. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
+> Esta solução requer conhecimentos de programação. Apresentamos a seguir algumas informações sobre como o fazer. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica.
 >
 
 #### Etapa 1: criar o script de backup
@@ -155,7 +155,7 @@ Para interagir com o espaço de armazenamento FTP, deverá utilizar comandos a p
 
 > [!warning]
 >
-> São necessários conhecimentos mais avançados para utilizar este tipo de acesso. Apresentamos a seguir algumas informações sobre a operação. Contudo, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
+> São necessários conhecimentos mais avançados para utilizar este tipo de acesso. Apresentamos a seguir algumas informações sobre a operação. Contudo, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica.
 >
 
 Depois de aceder ao espaço de armazenamento FTP por SSH, utilize um comando que lhe permita efetuar o backup da base de dados. Apresentamos a seguir um exemplo que o ajudará a realizar esta operação. Tenha em conta que o backup será realizado no diretório que estiver ativo no momento em que introduzir o comando no terminal.
@@ -178,7 +178,7 @@ Substitua a informação genérica deste comando pela informação da base de da
 
 [Tutorial - O que fazer quando o meu banco de dados estiver cheio?](/pages/web_cloud/web_hosting/sql_overquota_database)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 

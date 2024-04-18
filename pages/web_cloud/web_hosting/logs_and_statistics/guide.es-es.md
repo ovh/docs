@@ -62,7 +62,7 @@ El campo `Period selection` situado en la parte superior derecha permite selecci
 >
 > No podremos asesorarle sobre la interpretación de los logs de su alojamiento web, ya que solo es cuestión de desarrollo web y no de alojamiento web.
 >
-> No dude en contactar con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene alguna duda.
+> No dude en contactar con un [proveedor especializado](/links/partner) si tiene alguna duda.
 >
 
 Puede visualizar los logs en bruto de su sitio web con un retraso de aproximadamente 5 minutos.
@@ -130,7 +130,7 @@ En la nueva página, consulte la dirección URL de su navegador de internet.
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

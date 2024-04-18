@@ -108,7 +108,7 @@ Sono possibili due scenari. Il tuo sito è stato creato con questo indirizzo Web
 
 > [!warning]
 >
-> L'eliminazione di un database, come quello di un modulo in 1 click, è definitiva. e l'**eliminazione dei backup** dei dati. Prima di rimuovere un sito sull'hosting OVHcloud, assicurati **di essere in grado di ricrearlo allo stesso** modo. Se non sei sicuro delle operazioni da effettuare, contatta il tuo Webmaster o uno dei [nostri partner](https://partner.ovhcloud.com/it/directory/).
+> L'eliminazione di un database, come quello di un modulo in 1 click, è definitiva. e l'**eliminazione dei backup** dei dati. Prima di rimuovere un sito sull'hosting OVHcloud, assicurati **di essere in grado di ricrearlo allo stesso** modo. Se non sei sicuro delle operazioni da effettuare, contatta il tuo Webmaster o uno dei [nostri partner](/links/partner).
 >
 
 Nel primo caso, dopo aver effettuato tutti i backup necessari, elimina il tuo modulo dalla sezione `Hosting` dello Spazio Cliente OVHcloud:
@@ -154,7 +154,7 @@ Confronta i `Destinazione` degli record di tipo `NS` indicati nella scheda `Zona
 
 - Se gli elementi non corrispondono, ma i `Server DNS` indicati nella scheda con lo stesso nome appaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effettua una reinizializzazione seguendo le indicazioni di [questa guida](/pages/web_cloud/domains/dns_server_general_information#reinizializza-i-server-dns).
 
-- Se gli elementi non corrispondono e i `Server DNS` indicati nella scheda con lo stesso nome non compaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) tramite la pagina dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+- Se gli elementi non corrispondono e i `Server DNS` indicati nella scheda con lo stesso nome non compaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contatta il tuo Webmaster o cerca un [provider specializzato](/links/partner) tramite la pagina dei [partner OVHcloud](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "La pagina non si reindirizza correttamente"?
 
@@ -173,7 +173,7 @@ Ripristina il tuo sito allo stato precedente:
 
 - Se il tuo sito contiene un database, consulta la guida [Importare un backup nel database di un hosting Web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh).
 
-Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) sul sito dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta il tuo Webmaster o cerca un [provider specializzato](/links/partner) sul sito dei [partner OVHcloud](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "503 error Backend fetch failed (Varnish cache)"?
 
@@ -181,7 +181,7 @@ Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta
 
 Se hai attivato l'[opzione CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) del tuo hosting, disattiva la modalità *Maintenance* sul tuo sito WordPress o PrestaShop.
 
-Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) sul sito dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, contatta il tuo Webmaster o cerca un [provider specializzato](/links/partner) sul sito dei [partner OVHcloud](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "Your request has been blocked"?
 
@@ -189,7 +189,7 @@ Se non hai attivato questa opzione o utilizzato la modalità *Maintenance*, cont
 
 Questo messaggio indica che il tipo di richiesta HTTP che stai cercando di effettuare sul tuo sito è vietato per un periodo di tempo limitato. In questa situazione, [controlla i log](/pages/web_cloud/web_hosting/logs_and_statistics) del tuo sito per determinare quali richieste abbiano causato il blocco.
 
-Per risolvere eventuali problemi, contatta il tuo Webmaster o uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).
+Per risolvere eventuali problemi, contatta il tuo Webmaster o uno dei nostri [partner](/links/partner).
 
 ### Cosa fare se il tuo sito mostra un errore "Your IP has been banned"?
 
@@ -199,7 +199,7 @@ Questo messaggio indica che l'indirizzo IP utilizzato per connetterti al tuo sit
 
 In questo caso, esamina i [log del tuo sito](/pages/web_cloud/web_hosting/logs_and_statistics), per determinare quali richieste abbiano provocato questo blocco.<br>
 Verifica anche che il tuo computer non sia infettato da un virus.<br>
-contatta uno dei [nostri partner](https://partner.ovhcloud.com/it/directory/) per verificare il codice informatico del tuo sito.
+contatta uno dei [nostri partner](/links/partner) per verificare il codice informatico del tuo sito.
 
 ### Ho ordinato un dominio con accenti e si affigge in modo strano nel mio Spazio Cliente. Cosa devo fare?
 

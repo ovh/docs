@@ -157,7 +157,7 @@ Le recomendamos que, si necesita ayuda para publicar su sitio web, se ponga en c
 
 [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

@@ -12,7 +12,7 @@ updated: 2024-01-29
 
 Esta guía explica cómo adquirir conocimientos básicos para garantizar la disponibilidad de sus servicios, proteger la integridad de sus datos y proteger el acceso a sus soluciones. Solo concierne a los sitios web alojados en las [soluciones compartidas de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
 
-Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).
+Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con nuestros [partners](/links/partner).
 
 **Esta guía explica cómo proteger un sitio web.**
 
@@ -102,7 +102,7 @@ Añada a su sitio web un plugin de seguridad recomendado por el editor del CMS:
 
 ### Etapa 10 - Compruebe si hay archivos maliciosos en su alojamiento web
 
-Para ello, debe conectarse al [espacio FTP](/pages/web_cloud/web_hosting/ftp_connection). y requiere conocimientos técnicos para reconocer los posibles archivos maliciosos del alojamiento. Si necesita ayuda para realizar esta comprobación, no dude en ponerse en contacto con nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).
+Para ello, debe conectarse al [espacio FTP](/pages/web_cloud/web_hosting/ftp_connection). y requiere conocimientos técnicos para reconocer los posibles archivos maliciosos del alojamiento. Si necesita ayuda para realizar esta comprobación, no dude en ponerse en contacto con nuestros [partners](/links/partner).
 
 Si tiene dudas sobre este asunto, no olvide realizar las comprobaciones que se describen en [el etapa 1 de esta guía](#local) y [cambiar la contraseña](/pages/web_cloud/web_hosting/ftp_change_password) de su espacio FTP.
 
@@ -130,6 +130,6 @@ El archivo ".htaccess" es un archivo de configuración (HTTP) Apache que ejecuta
 
 [Reaccionar en caso de desactivación por seguridad de un alojamiento](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

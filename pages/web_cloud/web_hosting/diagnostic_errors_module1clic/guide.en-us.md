@@ -15,7 +15,7 @@ However, if they are not configured correctly, the 1-click module installation m
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 > 
 
 ## Requirements
@@ -82,7 +82,7 @@ Once complete, you will be able to install a new 1-click module.
 
 > [!warning]
 >
-> The operation to delete a database is permanent. It also deletes backups of the database concerned. If you have any doubts, please contact your webmaster or one of our [partners](https://partner.ovhcloud.com/en/directory/).
+> The operation to delete a database is permanent. It also deletes backups of the database concerned. If you have any doubts, please contact your webmaster or one of our [partners](/links/partner).
 >
 
 To delete a database from your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned.
@@ -107,7 +107,7 @@ Once complete, you will be able to install a new 1-click module.
 >
 > In this situation, you can back up data from a single website using a [PHP script or an SSH command](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> If you have any questions on how to proceed, please contact the [OVHcloud community](https://community.ovh.com/en/) or one of our [partners](https://partner.ovhcloud.com/en/directory/).<br>
+> If you have any questions on how to proceed, please contact the [OVHcloud community](https://community.ovh.com/en/) or one of our [partners](/links/partner).<br>
 > We will not be able to assist you with this.
 >
 
@@ -153,7 +153,7 @@ In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!primary]
 >
-> If you have any questions about deleting data to reduce the amount of data on your web hosting plan, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).<br>
+> If you have any questions about deleting data to reduce the amount of data on your web hosting plan, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner).<br>
 > OVHcloud support is not authorised to provide you with assistance in this regard.
 >
 
@@ -205,7 +205,7 @@ If you do not have any other databases and you do not want to order an additiona
 >
 > **Deleting items from your database can cause your website to go down.**
 >
-> If you have any further questions, please contact our [community of users](https://community.ovh.com/en/) or the [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).<br>
+> If you have any further questions, please contact our [community of users](https://community.ovh.com/en/) or the [OVHcloud partners](/links/partner).<br>
 > We will not be able to assist you with this.
 >
 
@@ -279,7 +279,7 @@ Once you have finished installing a new 1-click module, restart it.
 
 [Recurring problems using FTP software](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
