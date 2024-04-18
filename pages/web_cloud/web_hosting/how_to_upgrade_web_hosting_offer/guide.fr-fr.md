@@ -12,7 +12,7 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 - de plus d'espace de stockage FTP ;
 - de bases de données supplémentaires ; 
 - d'adresses e-mails additionnelles ;
-- de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (à partir de [l'offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external} (compris dans [les offres Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
+- de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (à partir de [l'offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service Web Cloud Databases](/links/web/databases){.external} (compris dans [les offres Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud, sans interruption de service.**
 

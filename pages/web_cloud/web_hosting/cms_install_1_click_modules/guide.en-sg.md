@@ -211,7 +211,7 @@ If you need help with your CMS's features, please contact the publisher of the C
 
 [Managing a database on a web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
 
-Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external}.
+Explore our [Web Cloud Database solutions](/links/web/databases){.external}.
 
 [Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 

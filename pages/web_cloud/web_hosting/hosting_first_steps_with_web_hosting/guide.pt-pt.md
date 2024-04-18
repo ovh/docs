@@ -180,7 +180,7 @@ Encontre mais informações sobre as nossas diferentes ofertas CDN no nosso guia
 
 #### Os servidores de bases de dados Web Cloud Databases
 
-Se dispõe de um alojamento web **Performance**, pode ativar gratuitamente um servidor de base de dados [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/).
+Se dispõe de um alojamento web **Performance**, pode ativar gratuitamente um servidor de base de dados [Web Cloud Databases](/links/web/databases).
 
 Encontre mais detalhes sobre a sua utilização na nossa documentação "[Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 

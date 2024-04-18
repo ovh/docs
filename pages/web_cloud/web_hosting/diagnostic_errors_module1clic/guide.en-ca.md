@@ -50,7 +50,7 @@ This message appears when you launch the installation of your 1-click module whe
 
 #### Solution #1: Order a new database
 
-If you no longer have any databases included with your web hosting plan, you can order a new [Start SQL database](https://www.ovhcloud.com/en-ca/web-hosting/options/start-sql/) and combine it with your current web hosting plan. You can then relaunch the installation of the 1-click module. If you need more storage space (more than 1GB), we recommend using our [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) service instead.
+If you no longer have any databases included with your web hosting plan, you can order a new [Start SQL database](https://www.ovhcloud.com/en-ca/web-hosting/options/start-sql/) and combine it with your current web hosting plan. You can then relaunch the installation of the 1-click module. If you need more storage space (more than 1GB), we recommend using our [Web Cloud Databases](/links/web/databases) service instead.
 
 In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan you would like to add an additional database to. On the page that pops up, click on the `Databases`{.action} tab, then on `Actions`{.action} to order an additional database:
 
@@ -60,7 +60,7 @@ Once complete, you will be able to install a new 1-click module.
 
 > [!primary]
 >
-> As a reminder, do not hesitate to consult in advance our unitary database offers [Start SQL](https://www.ovhcloud.com/en-ca/web-hosting/options/start-sql/) and [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/).
+> As a reminder, do not hesitate to consult in advance our unitary database offers [Start SQL](https://www.ovhcloud.com/en-ca/web-hosting/options/start-sql/) and [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solution 2: Modify your web hosting plan
@@ -74,7 +74,7 @@ In your [OVHcloud Control Panel](/links/manager), click `Web Cloud`{.action}. Cl
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-The offers [Pro](https://www.ovhcloud.com/en-ca/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/) will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) server for free.
+The offers [Pro](https://www.ovhcloud.com/en-ca/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/) will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
 Once complete, you will be able to install a new 1-click module.
 
@@ -168,7 +168,7 @@ In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action}
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-The [Pro](https://www.ovhcloud.com/en-ca/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/) offers will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) server for free.
+The [Pro](https://www.ovhcloud.com/en-ca/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/) offers will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
 ### "Unable to connect to database" <a name="delete-the-module"></a>
 

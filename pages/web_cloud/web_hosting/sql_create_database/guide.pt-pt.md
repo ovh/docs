@@ -154,7 +154,7 @@ Para verificar as snapshots disponíveis, bem como a data e a hora de criação,
 
 **Demasiadas ligações**
 
-As bases de dados de alojamento web são limitadas a 30 ligações simultâneas (variável do sistema *max_connections*). Os pedidos SQL devem, portanto, ser otimizados para evitar este tipo de erros. Se, apesar de tudo, os problemas persistirem, devem ser consideradas medidas alternativas. Por exemplo, pode migrar a sua base de dados numa base de dados [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) ou ainda realizar uma [atualização da sua oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/).
+As bases de dados de alojamento web são limitadas a 30 ligações simultâneas (variável do sistema *max_connections*). Os pedidos SQL devem, portanto, ser otimizados para evitar este tipo de erros. Se, apesar de tudo, os problemas persistirem, devem ser consideradas medidas alternativas. Por exemplo, pode migrar a sua base de dados numa base de dados [Web Cloud Databases](/links/web/databases) ou ainda realizar uma [atualização da sua oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/).
 
 **Erros de ligação / "não encontrado"**
 

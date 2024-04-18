@@ -54,7 +54,7 @@ Questo messaggio viene visualizzato quando si avvia l’installazione del "modul
 
 #### Soluzione n°1: ordina un nuovo database
 
-Se con il tuo hosting Web non sono più inclusi database, puoi ordinare un nuovo [database Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e associarlo al tuo attuale hosting Web. In seguito sarà possibile riavviare l'installazione del "modulo in 1 click". Se hai bisogno di più spazio di storage (superiore a 1 GB), ti consigliamo di utilizzare il nostro servizio [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+Se con il tuo hosting Web non sono più inclusi database, puoi ordinare un nuovo [database Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e associarlo al tuo attuale hosting Web. In seguito sarà possibile riavviare l'installazione del "modulo in 1 click". Se hai bisogno di più spazio di storage (superiore a 1 GB), ti consigliamo di utilizzare il nostro servizio [Web Cloud Databases](/links/web/databases).
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web per cui vuoi aggiungere un database supplementare. Clicca sulla scheda `Database`{.action} e poi su `Azioni`{.action} per ordinare un database aggiuntivo:
 
@@ -64,7 +64,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
 > [!primary]
 >
-> Ti ricordiamo di consultare preventivamente le nostre offerte di database unitari [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e la nostra offerta [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+> Ti ricordiamo di consultare preventivamente le nostre offerte di database unitari [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e la nostra offerta [Web Cloud Databases](/links/web/databases).
 >
 
 #### Soluzione n°2: modificare il piano di hosting Web
@@ -78,7 +78,7 @@ Nel tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Le offerte [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+Le offerte [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
 
 Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
@@ -172,7 +172,7 @@ Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Clou
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Le offerte [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+Le offerte [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
 
 ### "Impossibile connettersi al database" <a name="delete-the-module"></a>
 

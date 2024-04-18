@@ -66,9 +66,9 @@ W przypadku nadużycia lub włamania, część lub całość Twojej usługi moż
 
 #### Jednoczesne połączenia z bazą danych
 
-Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (limit ten wzrasta do 200, jeśli korzystasz z oferty [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/)). Zapoznaj się z [szczegółami naszych ofert hostingu WWW](/links/web/hosting), aby poznać opcje dostępne w każdej ofercie hostingu WWW.
+Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (limit ten wzrasta do 200, jeśli korzystasz z oferty [Web Cloud Databases](/links/web/databases)). Zapoznaj się z [szczegółami naszych ofert hostingu WWW](/links/web/hosting), aby poznać opcje dostępne w każdej ofercie hostingu WWW.
 
-Możesz również zamówić dodatkowe pakiety [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/), które mają opcje personalizacji:
+Możesz również zamówić dodatkowe pakiety [Web Cloud Databases](/links/web/databases), które mają opcje personalizacji:
 
 - *max_connections*: domyślnie 100 z możliwością zwiększenia do 200;
 - *max_user_connections*: domyślnie 50 z możliwością zwiększenia do 200.
@@ -83,7 +83,7 @@ Ze względów bezpieczeństwa nie jest możliwe połączenie się z serwera zewn
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Tylko serwery baz danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) umożliwiają łączenie się z nimi serwerom zewnętrznym. Autoryzacja adresu IP zewnętrznego serwera na serwerze baz danych. W razie potrzeby sprawdź przewodnik "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Tylko serwery baz danych [Web Cloud Databases](/links/web/databases) umożliwiają łączenie się z nimi serwerom zewnętrznym. Autoryzacja adresu IP zewnętrznego serwera na serwerze baz danych. W razie potrzeby sprawdź przewodnik "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Zmienne współdzielonego serwera SQL
 

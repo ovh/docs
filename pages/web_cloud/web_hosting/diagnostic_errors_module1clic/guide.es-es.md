@@ -54,7 +54,7 @@ Este mensaje aparece al iniciar la instalación de su "módulo en un clic" cuand
 
 #### Solución n° 1: contratar una nueva base de datos
 
-Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar una nueva [base de datos Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y asociarla a su alojamiento web actual. A continuación, podrá reiniciar la instalación del "módulo en un clic". Si necesita más espacio de almacenamiento (superior a 1 GB), le recomendamos que utilice nuestro servicio [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar una nueva [base de datos Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y asociarla a su alojamiento web actual. A continuación, podrá reiniciar la instalación del "módulo en un clic". Si necesita más espacio de almacenamiento (superior a 1 GB), le recomendamos que utilice nuestro servicio [Web Cloud Databases](/links/web/databases).
 
 En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento web al que quiera añadir una base de datos adicional. En la nueva página, haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
 
@@ -64,7 +64,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 > [!primary]
 >
-> Le recordamos que no dude en consultar nuestras ofertas de bases de datos unitarias [start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/), así como nuestra oferta [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+> Le recordamos que no dude en consultar nuestras ofertas de bases de datos unitarias [start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/), así como nuestra oferta [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solución n° 2: modificar su plan de hosting
@@ -78,7 +78,7 @@ En su [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
 Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
@@ -172,7 +172,7 @@ En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web 
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
+Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
 ### "No se puede conectar a la base de datos" <a name="delete-the-module"></a>
 

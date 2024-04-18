@@ -228,7 +228,7 @@ Avoid using the "HAVING" clause which can slow down queries. You should also avo
 #### Web Cloud Databases
 If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Web Cloud Databases offer to have more resources available.
 
-[See the Web Cloud Databases offer on our website](https://www.ovhcloud.com/en-gb/web-cloud/databases/).
+[See the Web Cloud Databases offer on our website](/links/web/databases).
 
 ## Go further
 

@@ -10,7 +10,7 @@ updated: 2023-11-22
 
 ## Wprowadzenie
 
-Twoja baza danych jest kluczowym elementem w budowaniu dynamicznej strony WWW. W trakcie cyklu życia Twojej strony internetowej, ze względów praktycznych lub technicznych, możesz skopiować zawartość Twojej bazy danych do innej bazy danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+Twoja baza danych jest kluczowym elementem w budowaniu dynamicznej strony WWW. W trakcie cyklu życia Twojej strony internetowej, ze względów praktycznych lub technicznych, możesz skopiować zawartość Twojej bazy danych do innej bazy danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [Web Cloud Databases](/links/web/databases).
 
 **Dowiedz się, jak skopiować zawartość bazy danych OVHcloud do innej bazy danych OVHcloud.**
 
@@ -21,7 +21,7 @@ Twoja baza danych jest kluczowym elementem w budowaniu dynamicznej strony WWW. W
 
 ## Wymagania początkowe
 
-- Posiadanie ofert baz danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) i/lub [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/). Obie bazy danych muszą zostać wcześniej utworzone, aby można było korzystać z narzędzia do powielania.
+- Posiadanie ofert baz danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) i/lub [Web Cloud Databases](/links/web/databases). Obie bazy danych muszą zostać wcześniej utworzone, aby można było korzystać z narzędzia do powielania.
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 - Wystarczające uprawnienia do wszystkich odpowiednich usług bazodanowych. Więcej informacji znajdziesz w naszym przewodniku [Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
 
@@ -38,7 +38,7 @@ Zanim rozpoczniesz, upewnij się, że:
 Funkcja ta jest dostępna do skopiowania: 
 
 - bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) (zawartej w niektórych naszych [hostingach www](/links/web/hosting) lub [zamówionej oddzielnie](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/));
-- bazy danych zainstalowanej na serwerze [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartej w ofercie [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) lub [zamówionej oddzielnie](https://www.ovhcloud.com/pl/web-cloud/databases/)). 
+- bazy danych zainstalowanej na serwerze [Web Cloud Databases](/links/web/databases) (zawartej w ofercie [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) lub [zamówionej oddzielnie](/links/web/databases)). 
 
 W zależności od Twojego przypadku ścieżka dostępu do źródłowej bazy danych jest inna.
 
@@ -76,7 +76,7 @@ Jeśli nie posiadasz docelowej bazy danych i jak pokazuje poniższy zrzut ekranu
 
 ![Lista baz danych WCD](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-Możesz wybrać zakup usługi "[start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)" lub serwera baz danych "[Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/)".
+Możesz wybrać zakup usługi "[start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)" lub serwera baz danych "[Web Cloud Databases](/links/web/databases)".
 
 > [!primary]
 >
@@ -158,8 +158,8 @@ Mogą wystąpić problemy podczas procesu kopiowania zawartości bazy danych.
 To powiadomienie oznacza, że posiadasz tylko jedną aktywną bazę danych. Do skopiowania źródłowej bazy danych potrzebna jest również aktywna docelowa baza danych. W tym celu możesz:
 
 - Skonfiguruj nową bazę danych dostępną na Twoim hostingu;
-- Skonfiguruj nową bazę danych na swoim serwerze [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/);
-- Zamów ofertę "[start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)" lub serwer baz danych "[Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/)"
+- Skonfiguruj nową bazę danych na swoim serwerze [Web Cloud Databases](/links/web/databases);
+- Zamów ofertę "[start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)" lub serwer baz danych "[Web Cloud Databases](/links/web/databases)"
 
 #### Trwa już wykonywanie operacji
 
@@ -170,7 +170,7 @@ Ten komunikat oznacza, że dla Twojej bazy danych trwa już wykonywanie zadania.
 Docelowa baza danych nie zawiera wystarczającej ilości miejsca. Dostępne są dwa rozwiązania:
 
 - Zamów nową bazę danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) dysponującą większą przestrzenią.
-- Jeśli posiadasz serwer [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/), zmień ofertę Web Cloud Databases dysponującą większą przestrzenią dyskową.
+- Jeśli posiadasz serwer [Web Cloud Databases](/links/web/databases), zmień ofertę Web Cloud Databases dysponującą większą przestrzenią dyskową.
 
 #### Źródłowa i docelowa baza danych są niezgodne
 

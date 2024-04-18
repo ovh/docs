@@ -125,13 +125,13 @@ You will need to upgrade your database service to one that includes more space f
 > To increase the size allocated to your database, you will need to create a new, larger database, and copy the contents of the old database into the new one. You cannot directly increase the size of a database linked to a web hosting plan.
 >
 
-Consult our [Web Cloud Databasess](https://www.ovhcloud.com/en-au/web-cloud/databases/) offer to choose your new database service. 
+Consult our [Web Cloud Databasess](/links/web/databases) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 
 You can duplicate the content of your OVHcloud database directly to another of your OVHcloud databases, using a feature in your [OVHcloud Control Panel](/links/manager). To do this, please refer to our guide "[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)".
 
-If you are migrating to a database outside of the [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) and [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) solutions, you can manually move the content from your old database to a new one using our guides:
+If you are migrating to a database outside of the [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) and [Web Cloud Databases](/links/web/databases) solutions, you can manually move the content from your old database to a new one using our guides:
 
 - [Export your existing database](/pages/web_cloud/web_hosting/sql_database_export)
 - [First steps with Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)

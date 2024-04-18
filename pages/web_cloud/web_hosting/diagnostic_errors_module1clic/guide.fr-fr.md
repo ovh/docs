@@ -50,7 +50,7 @@ Ce message apparaît quand vous lancez l'installation de votre « module en 1 cl
 
 #### Solution n°1 : commander une nouvelle base de données
 
-Si vous n'avez plus de bases de données incluses avec votre hébergement web, vous pouvez commander une nouvelle [base de données Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) tout en l'associant à votre hébergement web actuel. Vous pourrez ensuite relancer l’installation du « module en 1 clic ». Si vous avez besoin de plus d’espace de stockage (supérieur à 1 Go), nous vous recommandons plutôt d'utiliser notre service [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+Si vous n'avez plus de bases de données incluses avec votre hébergement web, vous pouvez commander une nouvelle [base de données Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) tout en l'associant à votre hébergement web actuel. Vous pourrez ensuite relancer l’installation du « module en 1 clic ». Si vous avez besoin de plus d’espace de stockage (supérieur à 1 Go), nous vous recommandons plutôt d'utiliser notre service [Web Cloud Databases](/links/web/databases).
 
 Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'ajout d'une base de données supplémentaire. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}, puis sur `Actions`{.action} pour commander une base de données supplémentaire:
 
@@ -60,7 +60,7 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 
 > [!primary]
 >
-> Pour rappel, n'hésitez pas à consulter au préalable nos offres de base de données unitaires [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/), ainsi que notre offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+> Pour rappel, n'hésitez pas à consulter au préalable nos offres de base de données unitaires [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/), ainsi que notre offre [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solution n°2 : modifier votre offre d'hébergement web
@@ -74,7 +74,7 @@ Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.ac
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
 
 Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 clic ».
 
@@ -168,7 +168,7 @@ Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie 
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
 
 ### « Impossible de se connecter à la base de données » <a name="delete-the-module"></a>
 

@@ -10,7 +10,7 @@ updated: 2023-11-22
 
 ## Obiettivo
 
-Il database è un elemento centrale nella costruzione di un sito Web dinamico. Durante il ciclo di vita del sito Web, per motivi pratici o tecnici, potrebbe essere necessario copiare il contenuto del database in un altro database [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+Il database è un elemento centrale nella costruzione di un sito Web dinamico. Durante il ciclo di vita del sito Web, per motivi pratici o tecnici, potrebbe essere necessario copiare il contenuto del database in un altro database [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Web Cloud Databases](/links/web/databases).
 
 **Questa guida ti mostra come copiare il contenuto di un database OVHcloud in un altro database OVHcloud**
 
@@ -21,7 +21,7 @@ Il database è un elemento centrale nella costruzione di un sito Web dinamico. D
 
 ## Prerequisiti
 
-- Disporre di offerte di database [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e/o [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/). Prima di poter utilizzare lo strumento di replica è necessario creare preventivamente i due database interessati.
+- Disporre di offerte di database [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e/o [Web Cloud Databases](/links/web/databases). Prima di poter utilizzare lo strumento di replica è necessario creare preventivamente i due database interessati.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - di disporre dei diritti sufficienti su tutti i servizi di database interessati. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
 
@@ -38,7 +38,7 @@ Prima di iniziare, assicurati che:
 Questa funzionalità è disponibile per la copia: 
 
 - un database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) (incluso in alcuni dei nostri [hosting Web](/links/web/hosting) o [ordinato separatamente](https://www.ovhcloud.com/it/web-hosting/options/start-sql/);
-- di un database presente su un server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) (incluso con i nostri [hosting Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) o [ordinato separatamente](https://www.ovhcloud.com/it/web-cloud/databases/). 
+- di un database presente su un server [Web Cloud Databases](/links/web/databases) (incluso con i nostri [hosting Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) o [ordinato separatamente](/links/web/databases). 
 
 Il percorso per accedere al database di origine è diverso in base alla situazione.
 
@@ -76,7 +76,7 @@ Se non si dispone di un database di destinazione e come illustrato nella scherma
 
 ![Lista dei database WCD](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-È possibile scegliere se acquistare un'offerta "[start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/)" o un server di database "[Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/)".
+È possibile scegliere se acquistare un'offerta "[start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/)" o un server di database "[Web Cloud Databases](/links/web/databases)".
 
 > [!primary]
 >
@@ -158,8 +158,8 @@ Durante il processo di copia del contenuto del database potrebbero verificarsi p
 Questa notifica indica che è attivo un solo database. Per copiare il database di origine, è necessario disporre anche di un database di destinazione attivo. Per farlo, puoi:
 
 - Configura un nuovo database disponibile sul tuo hosting Web;
-- Configura un nuovo database sul tuo server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/);
-- Ordinare un'offerta "[start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/)" o un server di database "[Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/)"
+- Configura un nuovo database sul tuo server [Web Cloud Databases](/links/web/databases);
+- Ordinare un'offerta "[start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/)" o un server di database "[Web Cloud Databases](/links/web/databases)"
 
 #### Hai già un'azione in corso
 
@@ -170,7 +170,7 @@ Questo messaggio indica che sul database è già in corso un'operazione. Clicca 
 Spazio insufficiente nel database di destinazione. Le soluzioni disponibili sono due:
 
 - Ordinare un nuovo database [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) con più spazio.
-- Se possiedi un server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/), scegli un'offerta Web Cloud Databases con più spazio di storage.
+- Se possiedi un server [Web Cloud Databases](/links/web/databases), scegli un'offerta Web Cloud Databases con più spazio di storage.
 
 #### I database di origine e di destinazione sono incompatibili
 

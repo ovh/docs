@@ -154,7 +154,7 @@ Para comprobar los snapshots disponibles, así como la fecha y hora de su creaci
 
 **Demasiadas conexiones**
 
-Las bases de datos de alojamiento web están limitadas a 30 conexiones simultáneas (variable del sistema *max_connections*). Por lo tanto, las solicitudes SQL deben optimizarse para evitar este tipo de errores. Si los problemas persisten a pesar de todo, se deben considerar medidas alternativas. Por ejemplo, puede migrar su base de datos a una base de datos [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/) o realizar una [actualización de su plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/uc-best-web-hosting/).
+Las bases de datos de alojamiento web están limitadas a 30 conexiones simultáneas (variable del sistema *max_connections*). Por lo tanto, las solicitudes SQL deben optimizarse para evitar este tipo de errores. Si los problemas persisten a pesar de todo, se deben considerar medidas alternativas. Por ejemplo, puede migrar su base de datos a una base de datos [Web Cloud Databases](/links/web/databases) o realizar una [actualización de su plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/uc-best-web-hosting/).
 
 **Errores de conexión / "no encontrado"**
 

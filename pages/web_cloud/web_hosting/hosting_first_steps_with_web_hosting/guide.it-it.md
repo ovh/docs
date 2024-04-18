@@ -180,7 +180,7 @@ Per maggiori informazioni sulle nostre offerte CDN, consulta la nostra guida "[A
 
 #### I server di database Web Cloud Databases
 
-Se hai attivato un hosting Web **Performance**, puoi attivare gratuitamente un server di database [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
+Se hai attivato un hosting Web **Performance**, puoi attivare gratuitamente un server di database [Web Cloud Databases](/links/web/databases).
 
 Per maggiori informazioni sul suo utilizzo, consulta la nostra documentazione "[Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 

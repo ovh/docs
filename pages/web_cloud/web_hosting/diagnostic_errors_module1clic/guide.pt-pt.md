@@ -54,7 +54,7 @@ Esta mensagem é apresentada quando inicia a instalação do "módulo 1 clique" 
 
 #### Solução n°1: encomendar uma nova base de dados
 
-Se já não tiver bases de dados incluídas com o seu alojamento web, pode encomendar uma nova [base de dados Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) associando-a ao seu alojamento web atual. De seguida, poderá reiniciar a instalação do "módulo 1 clique em". Se precisar de mais espaço de armazenamento (superior a 1 GB), recomendamos que utilize o nosso serviço [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/).
+Se já não tiver bases de dados incluídas com o seu alojamento web, pode encomendar uma nova [base de dados Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) associando-a ao seu alojamento web atual. De seguida, poderá reiniciar a instalação do "módulo 1 clique em". Se precisar de mais espaço de armazenamento (superior a 1 GB), recomendamos que utilize o nosso serviço [Web Cloud Databases](/links/web/databases).
 
 Na sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web afetado pela adição de uma base de dados suplementar. Na página que se abrir, clique no separador `Bases de dados`{.action} e, a seguir, em `Ações`{.action} para encomendar uma base de dados suplementar:
 
@@ -64,7 +64,7 @@ Uma vez concluído, poderá instalar um novo "módulo com 1 clique".
 
 > [!primary]
 >
-> Nota: não hesite em consultar previamente as nossas ofertas de bases de dados unitárias [start-SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/), bem como a nossa oferta [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/).
+> Nota: não hesite em consultar previamente as nossas ofertas de bases de dados unitárias [start-SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/), bem como a nossa oferta [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solução n°2: modificar a sua oferta de alojamento web
@@ -78,7 +78,7 @@ Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.actio
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-As ofertas [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/).
+As ofertas [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](/links/web/databases).
 
 Uma vez concluído, poderá instalar um novo "módulo com 1 clique".
 
@@ -172,7 +172,7 @@ Na sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-As ofertas [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/).
+As ofertas [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](/links/web/databases).
 
 ### "Não é possível estabelecer ligação à base de dados" <a name="delete-the-module"></a>
 

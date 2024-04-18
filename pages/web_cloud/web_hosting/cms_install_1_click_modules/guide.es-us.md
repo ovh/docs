@@ -216,7 +216,7 @@ Si desea obtener ayuda sobre las funcionalidades de su CMS, consulte con el edit
 
 [Gestión de una base de datos desde un alojamiento compartido](/pages/web_cloud/web_hosting/sql_create_database).
 
-Descubra nuestras [ofertas Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/){.external}.
+Descubra nuestras [ofertas Web Cloud Databases](/links/web/databases){.external}.
 
 [Gestionar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 

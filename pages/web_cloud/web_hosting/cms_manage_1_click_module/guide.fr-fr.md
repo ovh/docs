@@ -107,7 +107,7 @@ Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’a
 
 Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**. Rendez-vous pour cela dans votre [espace client OVHcloud](/links/manager). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action}.
 
-Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [Cloud Database](https://www.ovhcloud.com/fr/web-cloud/databases/), vous pouvez considérer qu'il s'agit de celle de votre site.
+Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [Cloud Database](/links/web/databases), vous pouvez considérer qu'il s'agit de celle de votre site.
 
 Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 

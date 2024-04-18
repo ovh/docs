@@ -180,7 +180,7 @@ Para más información, consulte nuestra guía "[Acelerar un sitio web utilizand
 
 #### Los servidores de bases de datos Web Cloud Databases
 
-Si tiene un alojamiento web **Performance**, puede activar gratuitamente un servidor de bases de datos [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/).
+Si tiene un alojamiento web **Performance**, puede activar gratuitamente un servidor de bases de datos [Web Cloud Databases](/links/web/databases).
 
 Para más información, consulte nuestra guía "[Primeros pasos con el servicio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 

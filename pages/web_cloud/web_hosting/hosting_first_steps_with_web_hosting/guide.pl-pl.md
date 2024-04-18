@@ -180,7 +180,7 @@ Więcej informacji na temat ofert CDN znajdziesz w przewodniku "[Przewodnik doty
 
 #### Serwery baz danych Web Cloud Databases
 
-Jeśli posiadasz hosting www **Performance**, możesz za darmo aktywować serwer bazy danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+Jeśli posiadasz hosting www **Performance**, możesz za darmo aktywować serwer bazy danych [Web Cloud Databases](/links/web/databases).
 
 Więcej szczegółów na temat korzystania z tej usługi znajdziesz w przewodniku "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 

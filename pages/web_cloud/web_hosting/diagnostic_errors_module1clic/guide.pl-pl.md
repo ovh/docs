@@ -54,7 +54,7 @@ Ten komunikat pojawi się, gdy rozpoczniesz instalację "modułu za 1 kliknięci
 
 #### Rozwiązanie nr 1: zamów nową bazę danych
 
-Jeśli nie posiadasz już baz danych zawartych w Twoim hostingu, możesz zamówić nową [bazę danych Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/), łącząc ją z Twoim aktualnym hostingiem. Następnie będziesz mógł wznowić instalację "modułu za pomocą 1 kliknięcia". Jeśli potrzebujesz więcej przestrzeni dyskowej (więcej niż 1 GB), zalecamy skorzystanie z naszej usługi [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+Jeśli nie posiadasz już baz danych zawartych w Twoim hostingu, możesz zamówić nową [bazę danych Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/), łącząc ją z Twoim aktualnym hostingiem. Następnie będziesz mógł wznowić instalację "modułu za pomocą 1 kliknięcia". Jeśli potrzebujesz więcej przestrzeni dyskowej (więcej niż 1 GB), zalecamy skorzystanie z naszej usługi [Web Cloud Databases](/links/web/databases).
 
 [Panel klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW poprzez dodanie dodatkowej bazy danych. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}, następnie `Actions`{.action}, aby zamówić dodatkową bazę danych:
 
@@ -64,7 +64,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 
 > [!primary]
 >
-> Przypomnę, że zachęcamy do wcześniejszego zapoznania się z naszą ofertą baz danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) oraz ofertą [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+> Przypomnę, że zachęcamy do wcześniejszego zapoznania się z naszą ofertą baz danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) oraz ofertą [Web Cloud Databases](/links/web/databases).
 >
 
 #### Rozwiązanie nr 2: zmień ofertę hostingową
@@ -78,7 +78,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+Oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](/links/web/databases).
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
@@ -172,7 +172,7 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+Oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) pozwalają na utworzenie do trzech dodatkowych "modułów za 1 kliknięciem" z niezależną bazą danych dla każdego z nich. Oferty **Performance** pozwolą Ci również na bezpłatną aktywację serwera [Web Cloud Databases](/links/web/databases).
 
 ### "Nie można połączyć się z bazą danych" <a name="delete-the-module"></a>
 

@@ -64,9 +64,9 @@ Im Missbrauchsfall oder bei erwiesenem Risiko kann ein Teil oder die Gesamtheit 
 
 #### Simultane Verbindungen mit der Datenbank
 
-Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 Simultanverbindungen pro Datenbank (200 bei [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/)). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](/links/web/hosting) nachlesen.
+Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 Simultanverbindungen pro Datenbank (200 bei [Web Cloud Databases](/links/web/databases)). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](/links/web/hosting) nachlesen.
 
-Darüber hinaus können Sie auch zusätzliche [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) bestellen und weiter anpassen:
+Darüber hinaus können Sie auch zusätzliche [Web Cloud Databases](/links/web/databases) bestellen und weiter anpassen:
 
 - *max_connections*: 100 mit der Möglichkeit, auf 200 zu wechseln
 - *max_user_connections*: 50 mit der Möglichkeit, auf 200 zu wechseln
@@ -81,7 +81,7 @@ Aus Sicherheitsgründen ist es nicht möglich, sich über einen externen Server 
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Nur [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Datenbankserver ermöglichen die Verbindung mit externen Servern. Dazu wird vorher die IP-Adresse des externen Servers auf Ihrem Datenbankserver autorisiert. Bei Bedarf lesen Sie dazu unsere Anleitung „[Erste Schritte mit Ihrem Angebot Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“.
+Nur [Web Cloud Databases](/links/web/databases) Datenbankserver ermöglichen die Verbindung mit externen Servern. Dazu wird vorher die IP-Adresse des externen Servers auf Ihrem Datenbankserver autorisiert. Bei Bedarf lesen Sie dazu unsere Anleitung „[Erste Schritte mit Ihrem Angebot Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“.
 
 #### Shared SQL Server-Variablen
 

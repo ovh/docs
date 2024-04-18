@@ -176,7 +176,7 @@ Retrouvez plus d'informations sur nos différentes offres CDN dans notre guide �
 
 #### Les serveurs de base de données Web Cloud Databases
 
-Si vous disposez d'un hébergement web **Performance**, vous pouvez activer gratuitement un serveur de base de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+Si vous disposez d'un hébergement web **Performance**, vous pouvez activer gratuitement un serveur de base de données [Web Cloud Databases](/links/web/databases).
 
 Retrouvez plus de détails sur son utilisation dans notre documentation « [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 

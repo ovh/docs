@@ -66,9 +66,9 @@ In caso di abuso o pirateria, una parte o la totalità del servizio potrà esser
 
 #### Connessioni simultanee al database
 
-Sui piani di hosting Web (database condivisi), esiste un limite di 30 connessioni simultanee per database (questo limite passa a 200 se utilizzi una soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/). Consulta il [dettaglio delle nostre offerte di hosting Web](/links/web/hosting) per conoscere le opzioni disponibili in ogni offerta di hosting Web.
+Sui piani di hosting Web (database condivisi), esiste un limite di 30 connessioni simultanee per database (questo limite passa a 200 se utilizzi una soluzione [Web Cloud Databases](/links/web/databases). Consulta il [dettaglio delle nostre offerte di hosting Web](/links/web/hosting) per conoscere le opzioni disponibili in ogni offerta di hosting Web.
 
-È inoltre possibile ordinare soluzioni [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) aggiuntive, che dispongono di opzioni di personalizzazione:
+È inoltre possibile ordinare soluzioni [Web Cloud Databases](/links/web/databases) aggiuntive, che dispongono di opzioni di personalizzazione:
 
 - *max_connections*: 100 di default, con possibilità di passare a 200;
 - *max_user_connections*: 50 di default, con possibilità di passare a 200.
@@ -83,7 +83,7 @@ Per ragioni di sicurezza, non è consentita la connessione a un database incluso
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Solo i server di database [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) permettono a server esterni di connettersi. previa autorizzazione dell’indirizzo IP del tuo server esterno sul tuo database server. Se necessario, consulta la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Solo i server di database [Web Cloud Databases](/links/web/databases) permettono a server esterni di connettersi. previa autorizzazione dell’indirizzo IP del tuo server esterno sul tuo database server. Se necessario, consulta la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Variabili server SQL condiviso
 

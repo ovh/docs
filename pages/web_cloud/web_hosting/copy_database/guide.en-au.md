@@ -6,7 +6,7 @@ updated: 2023-11-22
 
 ## Objective
 
-Your database is a central part of building your dynamic website. During the life cycle of your website, for practical or technical reasons, you may copy the content of one database to a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) or [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/).
+Your database is a central part of building your dynamic website. During the life cycle of your website, for practical or technical reasons, you may copy the content of one database to a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) or [Web Cloud Databases](/links/web/databases).
 
 **This guide explains how to duplicate the content of an OVHcloud database into another OVHcloud database.**
 
@@ -17,7 +17,7 @@ Your database is a central part of building your dynamic website. During the lif
 
 ## Requirements
 
-- You are using a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) and/or [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) solution. The two databases concerned must be created beforehand in order to use the replication tool.
+- You are using a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) and/or [Web Cloud Databases](/links/web/databases) solution. The two databases concerned must be created beforehand in order to use the replication tool.
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You have sufficient rights to all database services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
@@ -34,7 +34,7 @@ Before you begin, make sure that:
 This feature is available for:
 
 - A [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) database (included in some of our [web hostings](/links/web/hosting) or [ordered separately](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/)).
-- A database hosted on a [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) server (included with our [Performance web hosting](https://www.ovhcloud.com/en-au/web-hosting/performance-offer/) or [ordered separately](https://www.ovhcloud.com/en-au/web-cloud/databases/)). 
+- A database hosted on a [Web Cloud Databases](/links/web/databases) server (included with our [Performance web hosting](https://www.ovhcloud.com/en-au/web-hosting/performance-offer/) or [ordered separately](/links/web/databases)). 
 
 Depending on your situation, the path to your source database is different.
 
@@ -72,7 +72,7 @@ If you do not have a destination database, click on the link to purchase a new d
 
 ![WCD DB List](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-You can choose between a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) solution, or a [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) server.
+You can choose between a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) solution, or a [Web Cloud Databases](/links/web/databases) server.
 
 > [!primary]
 >
@@ -154,8 +154,8 @@ During the process of copying the contents of the database, you may encounter di
 This means that you only have one active database. To copy your source database, you also need an active destination database. To do this, you can:
 
 - Configure a new database available on your Web Hosting plan.
-- Configure a new database on your [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) server.
-- Order a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) solution or a [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) database server.
+- Configure a new database on your [Web Cloud Databases](/links/web/databases) server.
+- Order a [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) solution or a [Web Cloud Databases](/links/web/databases) database server.
 
 #### You already have an action in progress
 
@@ -166,7 +166,7 @@ This message means that a task is already in progress on your database. Go to th
 Your destination database is not of a sufficient size. There are two ways to resolve this:
 
 - Order a new [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) database with more space.
-- If you have a [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) server, switch to a Web Cloud Databases solution with more storage space.
+- If you have a [Web Cloud Databases](/links/web/databases) server, switch to a Web Cloud Databases solution with more storage space.
 
 #### The source and destination databases are incompatible
 

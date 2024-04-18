@@ -55,7 +55,7 @@ Diese Meldung erscheint, wenn Sie die Installation Ihres 1-Klick-Moduls starten,
 
 #### Lösung 1: Eine neue Datenbank bestellen
 
-Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des 1-Klick-Moduls neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
+Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des 1-Klick-Moduls neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](/links/web/databases).
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, für das Sie eine zusätzliche Datenbank hinzufügen möchten. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action} und dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
 
@@ -65,7 +65,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
 > [!primary]
 >
-> Denken Sie daran, sich vorab über unsere Datenbankangebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) zu informieren.
+> Denken Sie daran, sich vorab über unsere Datenbankangebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](/links/web/databases) zu informieren.
 >
 
 #### Lösung 2: Ihr Webhosting Angebot ändern
@@ -79,7 +79,7 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.ac
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server aktivieren.
+Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
 Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
@@ -173,7 +173,7 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web C
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server aktivieren.
+Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
 ### „Verbindung zur Datenbank kann nicht hergestellt werden“ <a name="delete-the-module"></a>
 

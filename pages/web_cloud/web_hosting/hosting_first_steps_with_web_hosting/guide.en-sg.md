@@ -176,7 +176,7 @@ You can find more information on our CDN solutions in our guide on "[Speeding up
 
 #### Web Cloud Database Servers
 
-If you have a **Performance** web hosting plan, you can activate a [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) for free.
+If you have a **Performance** web hosting plan, you can activate a [Web Cloud Databases](/links/web/databases) for free.
 
 You can find more details on how to use it in our documentation “[Getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
 

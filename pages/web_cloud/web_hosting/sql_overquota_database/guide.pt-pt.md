@@ -135,7 +135,7 @@ Recomendamos esta oferta para bases de dados volumosas.
 
 É possível duplicar o conteúdo da sua base de dados OVHcloud diretamente para outra das suas bases de dados OVHcloud graças a uma funcionalidade presente na sua [Área de Cliente OVHcloud](/links/manager). Para isso, consulte o guia "[Duplicar o conteúdo de uma base de dados noutra](/pages/web_cloud/web_hosting/copy_database)".
 
-No caso de uma migração para uma base de dados externa às ofertas [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) e [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/), pode migrar manualmente o conteúdo da sua antiga base de dados para uma nova através dos nossos guias:
+No caso de uma migração para uma base de dados externa às ofertas [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) e [Web Cloud Databases](/links/web/databases), pode migrar manualmente o conteúdo da sua antiga base de dados para uma nova através dos nossos guias:
 
 - [Exportar a sua base de dados existente](/pages/web_cloud/web_hosting/sql_database_export)
 - [Primeiros passos com a oferta Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)

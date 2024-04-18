@@ -129,13 +129,13 @@ Deberá bascular su base de datos con una base de datos más voluminosa.
 > Para aumentar el tamaño asignado a la base de datos, es necesario crear una nueva base de datos más grande y copiar el contenido de la antigua en la nueva. No es posible aumentar directamente el tamaño de una base de datos asociada a un alojamiento web.
 >
 
-Consulte nuestra oferta de bases de datos [Web Cloud Databasess](https://www.ovhcloud.com/es/web-cloud/databases/) para elegir su nuevo servicio de bases de datos. 
+Consulte nuestra oferta de bases de datos [Web Cloud Databasess](/links/web/databases) para elegir su nuevo servicio de bases de datos. 
 
 Es recomendable para bases de datos de gran tamaño.
 
 Es posible duplicar el contenido de una base de datos de OVHcloud directamente en otra de sus bases de datos de OVHcloud gracias a la funcionalidad que ofrece su [área de cliente de OVHcloud](/links/manager). Para ello, consulte nuestra guía "[Duplicar el contenido de una base de datos en otra](/pages/web_cloud/web_hosting/copy_database)".
 
-En caso de migrar a una base de datos externa a los planes de hosting [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) y [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/), puede mover manualmente el contenido de su antigua base de datos hacia una nueva mediante nuestras guías:
+En caso de migrar a una base de datos externa a los planes de hosting [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) y [Web Cloud Databases](/links/web/databases), puede mover manualmente el contenido de su antigua base de datos hacia una nueva mediante nuestras guías:
 
 - [Exportar la base de datos existente](/pages/web_cloud/web_hosting/sql_database_export)
 - [Primeros pasos con Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)

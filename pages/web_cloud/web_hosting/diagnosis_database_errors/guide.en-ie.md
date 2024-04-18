@@ -20,7 +20,7 @@ Your database usage may result in anomalies on your website or error messages in
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/)
 - access to the [OVHcloud Control Panel](/links/manager)
-- an OVHcloud database service: [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/)
+- an OVHcloud database service: [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or [Web Cloud Databases](/links/web/databases)
 
 ## Instructions
 

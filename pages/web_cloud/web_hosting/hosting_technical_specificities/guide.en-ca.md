@@ -62,9 +62,9 @@ In the event of abuse or proven risk, your service may be suspended (in accordan
 
 #### Simultaneous database connections
 
-On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (this limit increases to 200 if you use a [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) offer). See the [details of our Web Hosting plans](/links/web/hosting) to find out the options available in each Web Hosting plan.
+On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (this limit increases to 200 if you use a [Web Cloud Databases](/links/web/databases) offer). See the [details of our Web Hosting plans](/links/web/hosting) to find out the options available in each Web Hosting plan.
 
-You can also order additional [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) solutions, which have customization options:
+You can also order additional [Web Cloud Databases](/links/web/databases) solutions, which have customization options:
 
 - *max_connections*: 100 by default, with the option of increasing to 200.
 - *max_user_connections*: 50 by default, with the option of increasing to 200.
@@ -79,7 +79,7 @@ For security reasons, it is not possible to connect from an external server to a
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Only [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) database servers allow external servers to connect to them. This is because you have previously authorized your external server’s IP address on your database server. If necessary, please refer to our guide on "[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Only [Web Cloud Databases](/links/web/databases) database servers allow external servers to connect to them. This is because you have previously authorized your external server’s IP address on your database server. If necessary, please refer to our guide on "[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Shared SQL server variables
 

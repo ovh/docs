@@ -21,7 +21,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 - Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Utiliser l'une de nos offres de bases de données [Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) ou [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/).
+- Utiliser l'une de nos offres de bases de données [Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) ou [Web Cloud Databases](/links/web/databases).
 
 ## En pratique
 
@@ -150,7 +150,7 @@ Pour optimiser votre base de données, suivez les instructions de notre guide «
 
 ### Dépassements de la mémoire RAM
 
-Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager) indique que votre serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
+Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager) indique que votre serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](/links/web/databases) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
 
 ![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
@@ -196,7 +196,7 @@ Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com
 >
 > Quels éléments dans le script d'import de ma base de données peuvent causer une erreur « #1044 - Access denied for user to database » ?
 
-Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/).
+Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](/links/web/databases).
 
 Par ailleurs, la requête suivante n'est pas autorisée :
 
@@ -250,7 +250,7 @@ Dans cette situation, [vérifiez les identifiants renseignés](/pages/web_cloud/
 
 Le nombre maximal de connexions actives pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/)) est de **30**.
 
-Ce nombre est de **200** pour les bases des serveurs [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) et [Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/)  (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
+Ce nombre est de **200** pour les bases des serveurs [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) et [Cloud Databases](/links/web/databases)  (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
@@ -277,7 +277,7 @@ Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](/lin
 >
 > Si la base à laquelle vous souhaitez vous connecter apparaît dans l'onglet `Bases de données`{.action} de la partie `Hébergements`{.action} de votre [espace client OVHcloud](/links/manager), le nom à renseigner est inscrit dans la colonne `Adresse du serveur`.
 >
-> Si vous souhaitez vous connecter à une base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/), le nom de serveur à renseigner est inscrit dans l'onglet `Informations générales`{.action}, partie `Informations de connexions`{.action}, `SQL`{.action} et dans la rubrique `Nom d'hôte`{.action}.
+> Si vous souhaitez vous connecter à une base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](/links/web/databases), le nom de serveur à renseigner est inscrit dans l'onglet `Informations générales`{.action}, partie `Informations de connexions`{.action}, `SQL`{.action} et dans la rubrique `Nom d'hôte`{.action}.
 >
 
 ### Connexion impossible sur une base de données Cloud Databases
