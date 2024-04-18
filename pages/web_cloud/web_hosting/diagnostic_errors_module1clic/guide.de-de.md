@@ -55,7 +55,7 @@ Diese Meldung erscheint, wenn Sie die Installation Ihres 1-Klick-Moduls starten,
 
 #### Lösung 1: Eine neue Datenbank bestellen
 
-Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des 1-Klick-Moduls neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](/links/web/databases).
+Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](/links/web/hosting-options-startsql) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des 1-Klick-Moduls neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](/links/web/databases).
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, für das Sie eine zusätzliche Datenbank hinzufügen möchten. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action} und dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
 
@@ -65,7 +65,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
 > [!primary]
 >
-> Denken Sie daran, sich vorab über unsere Datenbankangebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](/links/web/databases) zu informieren.
+> Denken Sie daran, sich vorab über unsere Datenbankangebote [Start SQL](/links/web/hosting-options-startsql) und [Web Cloud Databases](/links/web/databases) zu informieren.
 >
 
 #### Lösung 2: Ihr Webhosting Angebot ändern
@@ -202,7 +202,7 @@ Starten Sie dann die Installation eines neuen 1-Klick-Moduls.
 
 Diese Meldung erscheint nur bei der Installation eines 1-Klick-Moduls im **Erweiterten Modus**. Die Datenbank kann nicht mehr geändert werden, da die Datenmenge in der Datenbank den zulässigen Grenzwert überschreitet. In diesem Fall ist die Datenbank schreibgeschützt gesperrt.
 
-Installieren Sie in dieser Situation Ihr 1-Klick-Modul über den [einfachen Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank. Bei Bedarf können Sie ein [Datenbank-Angebot](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen.
+Installieren Sie in dieser Situation Ihr 1-Klick-Modul über den [einfachen Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank. Bei Bedarf können Sie ein [Datenbank-Angebot](/links/web/hosting-options-startsql) bestellen.
 
 Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestellen möchten, [exportieren Sie eine lokale Kopie Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_database_export), und löschen Sie dann die nicht benötigten Daten.
 

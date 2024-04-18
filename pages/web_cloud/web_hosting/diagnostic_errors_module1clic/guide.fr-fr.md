@@ -50,7 +50,7 @@ Ce message apparaît quand vous lancez l'installation de votre « module en 1 cl
 
 #### Solution n°1 : commander une nouvelle base de données
 
-Si vous n'avez plus de bases de données incluses avec votre hébergement web, vous pouvez commander une nouvelle [base de données Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) tout en l'associant à votre hébergement web actuel. Vous pourrez ensuite relancer l’installation du « module en 1 clic ». Si vous avez besoin de plus d’espace de stockage (supérieur à 1 Go), nous vous recommandons plutôt d'utiliser notre service [Web Cloud Databases](/links/web/databases).
+Si vous n'avez plus de bases de données incluses avec votre hébergement web, vous pouvez commander une nouvelle [base de données Start SQL](/links/web/hosting-options-startsql) tout en l'associant à votre hébergement web actuel. Vous pourrez ensuite relancer l’installation du « module en 1 clic ». Si vous avez besoin de plus d’espace de stockage (supérieur à 1 Go), nous vous recommandons plutôt d'utiliser notre service [Web Cloud Databases](/links/web/databases).
 
 Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'ajout d'une base de données supplémentaire. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}, puis sur `Actions`{.action} pour commander une base de données supplémentaire:
 
@@ -60,7 +60,7 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 
 > [!primary]
 >
-> Pour rappel, n'hésitez pas à consulter au préalable nos offres de base de données unitaires [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/), ainsi que notre offre [Web Cloud Databases](/links/web/databases).
+> Pour rappel, n'hésitez pas à consulter au préalable nos offres de base de données unitaires [start SQL](/links/web/hosting-options-startsql), ainsi que notre offre [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solution n°2 : modifier votre offre d'hébergement web
@@ -197,7 +197,7 @@ Puis relancez l'installation d'un nouveau « module en 1 clic ».
 
 Ce message apparaît exclusivement lors de l'installation d'un « module en 1 clic » en **mode avancé**. Votre base de données ne peut plus être modifiée, car la quantité de données qu'elle contient dépasse la limite autorisée. Dans ce cas, votre base de données est bloquée en lecture seule.
 
-Dans cette situation, installez votre « module en 1 clic » en passant par le [mode « simple »](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) complémentaire.
+Dans cette situation, installez votre « module en 1 clic » en passant par le [mode « simple »](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](/links/web/hosting-options-startsql) complémentaire.
 
 Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez localement une copie de votre base](/pages/web_cloud/web_hosting/sql_database_export), puis supprimez les données inutiles.
 

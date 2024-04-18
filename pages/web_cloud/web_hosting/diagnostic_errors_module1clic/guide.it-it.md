@@ -54,7 +54,7 @@ Questo messaggio viene visualizzato quando si avvia l’installazione del "modul
 
 #### Soluzione n°1: ordina un nuovo database
 
-Se con il tuo hosting Web non sono più inclusi database, puoi ordinare un nuovo [database Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e associarlo al tuo attuale hosting Web. In seguito sarà possibile riavviare l'installazione del "modulo in 1 click". Se hai bisogno di più spazio di storage (superiore a 1 GB), ti consigliamo di utilizzare il nostro servizio [Web Cloud Databases](/links/web/databases).
+Se con il tuo hosting Web non sono più inclusi database, puoi ordinare un nuovo [database Start SQL](/links/web/hosting-options-startsql) e associarlo al tuo attuale hosting Web. In seguito sarà possibile riavviare l'installazione del "modulo in 1 click". Se hai bisogno di più spazio di storage (superiore a 1 GB), ti consigliamo di utilizzare il nostro servizio [Web Cloud Databases](/links/web/databases).
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web per cui vuoi aggiungere un database supplementare. Clicca sulla scheda `Database`{.action} e poi su `Azioni`{.action} per ordinare un database aggiuntivo:
 
@@ -64,7 +64,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
 > [!primary]
 >
-> Ti ricordiamo di consultare preventivamente le nostre offerte di database unitari [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e la nostra offerta [Web Cloud Databases](/links/web/databases).
+> Ti ricordiamo di consultare preventivamente le nostre offerte di database unitari [start SQL](/links/web/hosting-options-startsql) e la nostra offerta [Web Cloud Databases](/links/web/databases).
 >
 
 #### Soluzione n°2: modificare il piano di hosting Web
@@ -201,7 +201,7 @@ Riavvia l’installazione del "modulo in 1 click".
 
 Questo messaggio viene visualizzato solo quando si installa un "modulo in 1 click" in **modalità avanzata**. Impossibile modificare il database perché la quantità di dati in esso contenuti supera il limite consentito. In questo caso, il database è bloccato in sola lettura.
 
-In questo caso, installa il "modulo in 1 click" passando per la [modalità "semplice"](/pages/web_cloud/web_hosting/cms_install_1_click_modules) o scegli un altro database durante l’installazione in modalità avanzata. Se necessario, ordina una [offerta di database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) aggiuntiva.
+In questo caso, installa il "modulo in 1 click" passando per la [modalità "semplice"](/pages/web_cloud/web_hosting/cms_install_1_click_modules) o scegli un altro database durante l’installazione in modalità avanzata. Se necessario, ordina una [offerta di database](/links/web/hosting-options-startsql) aggiuntiva.
 
 Se non disponi di altri database e non vuoi ordinare un piano aggiuntivo, [importa una copia locale del database](/pages/web_cloud/web_hosting/sql_database_export) e poi elimina i dati non necessari.
 

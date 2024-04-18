@@ -60,7 +60,7 @@ Wählen Sie anschließend Ihr neues Abonnement und dessen Laufzeit aus. Bestäti
 
 #### 1 - Start SQL-Datenbanken
 
-Stellen Sie sicher, dass das neue Angebot genügend [Datenbanken](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) enthält. Prüfen Sie auch, ob die Größen ausreichen.
+Stellen Sie sicher, dass das neue Angebot genügend [Datenbanken](/links/web/hosting-options-startsql) enthält. Prüfen Sie auch, ob die Größen ausreichen.
 
 Löschen Sie andernfalls nicht verwendete Datenbanken, und reduzieren Sie ggf. die Datenmenge in diesen Datenbanken. Diese Menge darf die maximale Datenbankgröße des neuen Angebots nicht überschreiten. Wenn Sie weitere Unterstützung bei den durchzuführenden Aktionen benötigen, wenden Sie sich an die [OVHcloud Partner](/links/partner).
 

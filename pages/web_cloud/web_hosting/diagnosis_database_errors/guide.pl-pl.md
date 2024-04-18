@@ -25,7 +25,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 - Posiadanie [hostingu](/links/web/hosting) OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/)
+- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](/links/web/hosting-options-startsql) lub [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/)
 
 ## W praktyce
 
@@ -123,7 +123,7 @@ Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#methode2).
 
 Możesz również przenieść dane na nową bazę:
 
-- Zamów w razie potrzeby [bazę danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) o wyższej wielkości, a następnie uruchom [kreacja](/pages/web_cloud/web_hosting/sql_create_database);
+- Zamów w razie potrzeby [bazę danych](/links/web/hosting-options-startsql) o wyższej wielkości, a następnie uruchom [kreacja](/pages/web_cloud/web_hosting/sql_create_database);
 - Wykonaj [eksport swoich danych](/pages/web_cloud/web_hosting/sql_database_export), następnie [je importować](/pages/web_cloud/web_hosting/sql_importing_mysql_database) w nowej bazie;
 - Wprowadź dane dostępowe nowej bazy danych do [pliku konfiguracyjnego](#config_file) swojej strony.
 
@@ -248,7 +248,7 @@ W takiej sytuacji [sprawdź wpisane dane](/pages/web_cloud/web_cloud_databases/c
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-Maksymalna liczba aktywnych połączeń dla baz danych dostarczanych na hostingu ([StartSQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)) wynosi **30**.
+Maksymalna liczba aktywnych połączeń dla baz danych dostarczanych na hostingu ([StartSQL](/links/web/hosting-options-startsql)) wynosi **30**.
 
 Liczba ta wynosi **200** dla baz serwerów [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
 

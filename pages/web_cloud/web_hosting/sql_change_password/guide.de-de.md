@@ -43,7 +43,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud-databases/).
+- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](/links/web/hosting-options-startsql) oder einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud-databases/).
 - Sie verfügen über die FTP-Zugangsdaten, um sich auf dem [Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings einzuloggen.
 
 ## In der praktischen Anwendung

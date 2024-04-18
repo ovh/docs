@@ -39,7 +39,7 @@ There are four steps to changing your website’s database password:
 
 - An OVHcloud [Web Hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [database associated with your hosting](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)
+- A [database associated with your hosting](/links/web/hosting-options-startsql)
 - FTP login details to log in to your [hosting’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions

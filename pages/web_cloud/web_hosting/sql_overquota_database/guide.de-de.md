@@ -134,7 +134,7 @@ Wir empfehlen diese Lösung für große Datenbanken.
 
 Es ist möglich, den Inhalt Ihrer OVHcloud Datenbank direkt in eine andere Ihrer OVHcloud Datenbanken zu kopieren, indem Sie eine Funktion in Ihrem [OVHcloud Kundencenter](/links/manager) nutzen. Weitere Informationen finden Sie in unserer Anleitung „[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)“.
 
-Zur Migration auf eine Datenbank außerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](/links/web/databases) können Sie den Inhalt Ihrer alten Datenbank mithilfe unserer Anleitungen manuell in eine neue Datenbank verschieben:
+Zur Migration auf eine Datenbank außerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) und [Web Cloud Databases](/links/web/databases) können Sie den Inhalt Ihrer alten Datenbank mithilfe unserer Anleitungen manuell in eine neue Datenbank verschieben:
 
 - [Exportieren Sie Ihre bestehende Datenbank](/pages/web_cloud/web_hosting/sql_database_export)
 - [Erste Schritte mit Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)

@@ -54,7 +54,7 @@ Este mensaje aparece al iniciar la instalación de su "módulo en un clic" cuand
 
 #### Solución n° 1: contratar una nueva base de datos
 
-Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar una nueva [base de datos Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y asociarla a su alojamiento web actual. A continuación, podrá reiniciar la instalación del "módulo en un clic". Si necesita más espacio de almacenamiento (superior a 1 GB), le recomendamos que utilice nuestro servicio [Web Cloud Databases](/links/web/databases).
+Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar una nueva [base de datos Start SQL](/links/web/hosting-options-startsql) y asociarla a su alojamiento web actual. A continuación, podrá reiniciar la instalación del "módulo en un clic". Si necesita más espacio de almacenamiento (superior a 1 GB), le recomendamos que utilice nuestro servicio [Web Cloud Databases](/links/web/databases).
 
 En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento web al que quiera añadir una base de datos adicional. En la nueva página, haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
 
@@ -64,7 +64,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 > [!primary]
 >
-> Le recordamos que no dude en consultar nuestras ofertas de bases de datos unitarias [start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/), así como nuestra oferta [Web Cloud Databases](/links/web/databases).
+> Le recordamos que no dude en consultar nuestras ofertas de bases de datos unitarias [start SQL](/links/web/hosting-options-startsql), así como nuestra oferta [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solución n° 2: modificar su plan de hosting
@@ -201,7 +201,7 @@ A continuación, vuelva a instalar un nuevo "módulo en un clic".
 
 Este mensaje aparece únicamente al instalar un "módulo en un clic" en **modo avanzado**. La base de datos no se puede modificar porque la cantidad de datos que contiene supera el límite permitido. En este caso, la base de datos está bloqueada como de sólo lectura.
 
-En este caso, instale su "módulo en un clic" pasando por el [modo simple](/pages/web_cloud/web_hosting/cms_install_1_click_modules) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) complementaria.
+En este caso, instale su "módulo en un clic" pasando por el [modo simple](/pages/web_cloud/web_hosting/cms_install_1_click_modules) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](/links/web/hosting-options-startsql) complementaria.
 
 Si no dispone de otras bases de datos y no desea contratar una solución adicional, [importe localmente una copia de su base de datos](/pages/web_cloud/web_hosting/sql_database_export) y elimine los datos que no necesite.
 

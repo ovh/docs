@@ -54,7 +54,7 @@ Ten komunikat pojawi się, gdy rozpoczniesz instalację "modułu za 1 kliknięci
 
 #### Rozwiązanie nr 1: zamów nową bazę danych
 
-Jeśli nie posiadasz już baz danych zawartych w Twoim hostingu, możesz zamówić nową [bazę danych Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/), łącząc ją z Twoim aktualnym hostingiem. Następnie będziesz mógł wznowić instalację "modułu za pomocą 1 kliknięcia". Jeśli potrzebujesz więcej przestrzeni dyskowej (więcej niż 1 GB), zalecamy skorzystanie z naszej usługi [Web Cloud Databases](/links/web/databases).
+Jeśli nie posiadasz już baz danych zawartych w Twoim hostingu, możesz zamówić nową [bazę danych Start SQL](/links/web/hosting-options-startsql), łącząc ją z Twoim aktualnym hostingiem. Następnie będziesz mógł wznowić instalację "modułu za pomocą 1 kliknięcia". Jeśli potrzebujesz więcej przestrzeni dyskowej (więcej niż 1 GB), zalecamy skorzystanie z naszej usługi [Web Cloud Databases](/links/web/databases).
 
 [Panel klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW poprzez dodanie dodatkowej bazy danych. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}, następnie `Actions`{.action}, aby zamówić dodatkową bazę danych:
 
@@ -64,7 +64,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 
 > [!primary]
 >
-> Przypomnę, że zachęcamy do wcześniejszego zapoznania się z naszą ofertą baz danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) oraz ofertą [Web Cloud Databases](/links/web/databases).
+> Przypomnę, że zachęcamy do wcześniejszego zapoznania się z naszą ofertą baz danych [start SQL](/links/web/hosting-options-startsql) oraz ofertą [Web Cloud Databases](/links/web/databases).
 >
 
 #### Rozwiązanie nr 2: zmień ofertę hostingową
@@ -201,7 +201,7 @@ Następnie rozpocznij od nowa instalację "modułu za pomocą 1 kliknięcia".
 
 Ten komunikat pojawia się wyłącznie podczas instalacji "modułu za pomocą 1 kliknięcia" w **trybie zaawansowanym**. Nie można już edytować bazy danych, ponieważ ilość danych w bazie przekracza dozwolony limit. W takim przypadku baza danych zostanie zablokowana w trybie tylko do odczytu.
 
-W takiej sytuacji zainstaluj moduł za pomocą 1 kliknięcia i przejdź do [trybu prostego](/pages/web_cloud/web_hosting/cms_install_1_click_modules) lub wybierz inną bazę danych podczas instalacji w trybie zaawansowanym. W razie potrzeby zamów [ofertę baz danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
+W takiej sytuacji zainstaluj moduł za pomocą 1 kliknięcia i przejdź do [trybu prostego](/pages/web_cloud/web_hosting/cms_install_1_click_modules) lub wybierz inną bazę danych podczas instalacji w trybie zaawansowanym. W razie potrzeby zamów [ofertę baz danych](/links/web/hosting-options-startsql).
 
 Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodatkowego, [importuj lokalnie kopię bazy](/pages/web_cloud/web_hosting/sql_database_export) i usuń zbędne dane.
 

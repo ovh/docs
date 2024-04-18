@@ -60,7 +60,7 @@ Następnie wybierz nową subskrypcję i jej czas trwania. Zaakceptuj regulaminy 
 
 #### 1 - Bazy danych Start SQL
 
-Sprawdź, czy nowa oferta zawiera wystarczającą liczbę [baz danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/). Sprawdź również, czy ich rozmiary są wystarczające.
+Sprawdź, czy nowa oferta zawiera wystarczającą liczbę [baz danych](/links/web/hosting-options-startsql). Sprawdź również, czy ich rozmiary są wystarczające.
 
 W przeciwnym razie usuń nieużywane bazy danych i w razie potrzeby zmniejsz ilość danych w nich zawartych. Ilość ta nie może przekroczyć maksymalnego rozmiaru baz danych w nowej ofercie. Jeśli potrzebujesz wsparcia w zakresie wymaganych działań, skontaktuj się z [partnerami OVHcloud](/links/partner).
 

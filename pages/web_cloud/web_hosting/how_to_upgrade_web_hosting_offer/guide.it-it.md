@@ -60,7 +60,7 @@ Seleziona il nuovo abbonamento e la durata. Conferma i contratti corrispondenti 
 
 #### 1 - Database Start SQL
 
-Assicurati che la nuova offerta includa un numero sufficiente di [database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/). Verificare inoltre che le dimensioni siano sufficienti.
+Assicurati che la nuova offerta includa un numero sufficiente di [database](/links/web/hosting-options-startsql). Verificare inoltre che le dimensioni siano sufficienti.
 
 In caso contrario, eliminare i database inutilizzati e, se necessario, ridurre la quantità di dati in essi contenuti. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta. Per assistenza sulle operazioni da effettuare, contatta i [partner OVHcloud](/links/partner).
 

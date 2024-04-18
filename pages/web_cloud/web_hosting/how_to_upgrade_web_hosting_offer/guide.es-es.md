@@ -60,7 +60,7 @@ A continuación, seleccione la nueva suscripción y su duración. Acepte los con
 
 #### 1 - Bases de datos Start SQL
 
-Asegúrese de que el nuevo plan tiene suficientes [bases de datos](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/). Compruebe también que el tamaño es suficiente.
+Asegúrese de que el nuevo plan tiene suficientes [bases de datos](/links/web/hosting-options-startsql). Compruebe también que el tamaño es suficiente.
 
 En caso contrario, elimine las bases de datos no utilizadas y, si es necesario, reduzca la cantidad de datos que contienen. Esta cantidad no debe superar el tamaño máximo de las bases de datos del nuevo producto. Si necesita ayuda para realizar las operaciones necesarias, puede ponerse en contacto con los [partners de OVHcloud](/links/partner).
 

@@ -50,7 +50,7 @@ This message appears when you launch the installation of your 1-click module whe
 
 #### Solution #1: Order a new database
 
-If you no longer have any databases included with your web hosting plan, you can order a new [Start SQL database](https://www.ovhcloud.com/en/web-hosting/options/start-sql/) and combine it with your current web hosting plan. You can then relaunch the installation of the 1-click module. If you need more storage space (more than 1GB), we recommend using our [Web Cloud Databases](/links/web/databases) service instead.
+If you no longer have any databases included with your web hosting plan, you can order a new [Start SQL database](/links/web/hosting-options-startsql) and combine it with your current web hosting plan. You can then relaunch the installation of the 1-click module. If you need more storage space (more than 1GB), we recommend using our [Web Cloud Databases](/links/web/databases) service instead.
 
 In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan you would like to add an additional database to. On the page that pops up, click on the `Databases`{.action} tab, then on `Actions`{.action} to order an additional database:
 
@@ -60,7 +60,7 @@ Once complete, you will be able to install a new 1-click module.
 
 > [!primary]
 >
-> As a reminder, do not hesitate to consult in advance our unitary database offers [Start SQL](https://www.ovhcloud.com/en/web-hosting/options/start-sql/) and [Web Cloud Databases](/links/web/databases).
+> As a reminder, do not hesitate to consult in advance our unitary database offers [Start SQL](/links/web/hosting-options-startsql) and [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solution 2: Modify your web hosting plan
@@ -197,7 +197,7 @@ Then relaunch the installation of a new 1-click module.
 
 This message only appears when you install a 1-click module in **advanced mode**. Your database can no longer be modified because the amount of data in it exceeds the limit. In this case, your database is locked to read-only mode.
 
-In this situation, install your 1-click module via [simple mode](/pages/web_cloud/web_hosting/cms_install_1_click_modules), or choose another database when you install it in advanced mode. If required, order an additional [database solution](https://www.ovhcloud.com/en/web-hosting/options/start-sql/).
+In this situation, install your 1-click module via [simple mode](/pages/web_cloud/web_hosting/cms_install_1_click_modules), or choose another database when you install it in advanced mode. If required, order an additional [database solution](/links/web/hosting-options-startsql).
 
 If you do not have any other databases and you do not want to order an additional solution, [import a copy of your database locally](/pages/web_cloud/web_hosting/sql_database_export), then delete the data you no longer need.
 

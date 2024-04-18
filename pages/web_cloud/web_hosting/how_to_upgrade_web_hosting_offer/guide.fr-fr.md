@@ -56,7 +56,7 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 
 #### 1 - Bases de données Start SQL
 
-Assurez-vous que la nouvelle offre comporte assez de [bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/). Vérifiez aussi que leurs tailles sont suffisantes.
+Assurez-vous que la nouvelle offre comporte assez de [bases de données](/links/web/hosting-options-startsql). Vérifiez aussi que leurs tailles sont suffisantes.
 
 Dans le cas contraire, supprimez les bases de données inutilisées et réduisez, si nécessaire, la quantité de données qu'elles contiennent. Cette quantité ne devra pas dépasser la taille maximale des bases de données de la nouvelle offre. Pour toute demande d'assistance sur les manipulations à effectuer, contactez les [partenaires OVHcloud](/links/partner).
 

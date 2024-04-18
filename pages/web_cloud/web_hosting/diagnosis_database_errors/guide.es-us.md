@@ -25,7 +25,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 - Disponer de un [plan de hosting](/links/web/hosting) OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+- Utilizar uno de nuestros productos de bases de datos [Web Cloud](/links/web/hosting-options-startsql) o [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 ## Procedimiento
 
@@ -123,7 +123,7 @@ Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
 También puede migrar sus datos a una nueva base de datos:
 
-- Contrate, si es necesario, una [base de datos](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) de mayor tamaño y lance su [creación](/pages/web_cloud/web_hosting/sql_create_database).
+- Contrate, si es necesario, una [base de datos](/links/web/hosting-options-startsql) de mayor tamaño y lance su [creación](/pages/web_cloud/web_hosting/sql_create_database).
 - Realice un [exportar sus datos](/pages/web_cloud/web_hosting/sql_database_export) y a continuación [importar los](/pages/web_cloud/web_hosting/sql_importing_mysql_database) en la nueva base de datos;
 - Integre las claves de la nueva base de datos en el [archivo de configuración](#config_file) de su sitio web.
 
@@ -252,7 +252,7 @@ En ese caso, [compruebe los identificadores indicados](/pages/web_cloud/web_clou
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) es de **30**.
+El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](/links/web/hosting-options-startsql) es de **30**.
 
 Este número es de **200** para las bases de servidores [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (Puede cambiar este parámetro en la sección `Configuración`{.action} del servidor de la base de datos).
 

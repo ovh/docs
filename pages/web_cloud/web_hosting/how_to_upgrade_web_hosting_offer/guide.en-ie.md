@@ -55,7 +55,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 
 #### 1 - Start SQL databases
 
-Make sure there are enough [databases](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) in the new plan. Also check that they are of sufficient size.
+Make sure there are enough [databases](/links/web/hosting-options-startsql) in the new plan. Also check that they are of sufficient size.
 
 Otherwise, delete unused databases and reduce the amount of data in them, if necessary. This quantity must not exceed the maximum database size for the new solution. If you need assistance with how to proceed, please contact [OVHcloud partners](/links/partner).
 

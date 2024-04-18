@@ -13,7 +13,7 @@ A database is used to store dynamic elements (connection data, user data, displa
 ## Requirements
 
 - You have an [OVHcloud web hosting plan](/links/web/hosting) that includes at least one database.
-- You have a database available for creation from the databases included in your web hosting plan. If required, you can add [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) databases to your web hosting plan.
+- You have a database available for creation from the databases included in your web hosting plan. If required, you can add [Start SQL](/links/web/hosting-options-startsql) databases to your web hosting plan.
 - You have access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage your web hosting plan.
 
 ## Instructions

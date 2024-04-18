@@ -24,7 +24,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
-- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/).
+- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](/links/web/hosting-options-startsql) oder [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/).
 
 ## In der praktischen Anwendung
 
@@ -122,7 +122,7 @@ Wenn Sie ein Webhosting **Performance** verwenden, gehen Sie zu [Methode 2](#met
 
 Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
-- Wenn nötig, bestellen Sie einen [Datenbank-Dienst](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) mit höherer Kapazität und [erstellen Sie die neue Datenbank](/pages/web_cloud/web_hosting/sql_create_database).
+- Wenn nötig, bestellen Sie einen [Datenbank-Dienst](/links/web/hosting-options-startsql) mit höherer Kapazität und [erstellen Sie die neue Datenbank](/pages/web_cloud/web_hosting/sql_create_database).
 - Führen Sie einen [Export Ihrer Daten](/pages/web_cloud/web_hosting/sql_database_export) durch und [importieren Sie diese](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in die neue Datenbank.
 - Integrieren Sie die Login-Daten der neuen Datenbank in die [Konfigurationsdatei](#config_file) Ihrer Website.
 
@@ -247,7 +247,7 @@ Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Angeboten gelieferten Datenbanken ([StartSQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)) beträgt **30**.
+Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Angeboten gelieferten Datenbanken ([StartSQL](/links/web/hosting-options-startsql)) beträgt **30**.
 
 Diese Zahl erhöht sich auf **200** für Datenbanken auf [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankdienstes geändert werden).
 

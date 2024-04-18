@@ -10,7 +10,7 @@ updated: 2023-11-22
 
 ## Objetivo
 
-Su base de datos es un elemento central en la construcción de su sitio web dinámico. Durante el ciclo de vida de su sitio web, puede que necesite copiar el contenido de su base de datos en otra de sus bases de datos [start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [Web Cloud Databases](/links/web/databases).
+Su base de datos es un elemento central en la construcción de su sitio web dinámico. Durante el ciclo de vida de su sitio web, puede que necesite copiar el contenido de su base de datos en otra de sus bases de datos [start SQL](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
 
 **Descubra cómo copiar el contenido de una base de datos de OVHcloud en otra base de datos de OVHcloud.**
 
@@ -21,7 +21,7 @@ Su base de datos es un elemento central en la construcción de su sitio web din�
 
 ## Requisitos
 
-- Tener contratadas bases de datos [start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y/o [Web Cloud Databases](/links/web/databases). Es necesario crear previamente las dos bases de datos para poder utilizar la herramienta de duplicación.
+- Tener contratadas bases de datos [start SQL](/links/web/hosting-options-startsql) y/o [Web Cloud Databases](/links/web/databases). Es necesario crear previamente las dos bases de datos para poder utilizar la herramienta de duplicación.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager)
 - Disponer de los permisos necesarios para todos los servicios de bases de datos afectados. Para más información, consulte nuestra guía [Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts).
 
@@ -37,7 +37,7 @@ Antes de empezar, asegúrese de que:
 
 Esta funcionalidad está disponible para la copia: 
 
-- una base de datos [Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) (incluida en algunos de nuestros [alojamientos web](/links/web/hosting) o [contratada por separado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/);
+- una base de datos [Start SQL](/links/web/hosting-options-startsql) (incluida en algunos de nuestros [alojamientos web](/links/web/hosting) o [contratada por separado](/links/web/hosting-options-startsql);
 - de una base de datos alojada en un servidor [Web Cloud Databases](/links/web/databases) (incluida con nuestros [planes de hosting Performance](/links/web/hosting-performance-offer) o [contratada por separado](/links/web/databases). 
 
 En función de su situación, la ruta de acceso a la base de datos de origen es diferente.
@@ -76,7 +76,7 @@ Si no tiene una base de datos destino y como se muestra en la siguiente captura 
 
 ![Lista de bases de datos WCD](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-Puede elegir entre contratar un servicio "[start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/)" o un servidor de bases de datos "[Web Cloud Databases](/links/web/databases)".
+Puede elegir entre contratar un servicio "[start SQL](/links/web/hosting-options-startsql)" o un servidor de bases de datos "[Web Cloud Databases](/links/web/databases)".
 
 > [!primary]
 >
@@ -159,7 +159,7 @@ Esta notificación significa que sólo tiene una base de datos activa. Para copi
 
 - Configurar una nueva base de datos disponible en su alojamiento web;
 - Configurar una nueva base de datos en su servidor [Web Cloud Databases](/links/web/databases);
-- Contratar un servicio "[start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/)" o un servidor de bases de datos "[Web Cloud Databases](/links/web/databases)"
+- Contratar un servicio "[start SQL](/links/web/hosting-options-startsql)" o un servidor de bases de datos "[Web Cloud Databases](/links/web/databases)"
 
 #### Ya tiene una acción en curso
 
@@ -169,7 +169,7 @@ Este mensaje indica que ya hay una tarea en curso en la base de datos. Acceda a 
 
 No hay suficiente espacio en la base de datos de destino. Puede elegir entre dos soluciones:
 
-- Contratar una nueva base de datos [start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) con más espacio.
+- Contratar una nueva base de datos [start SQL](/links/web/hosting-options-startsql) con más espacio.
 - Si tiene un servidor [Web Cloud Databases](/links/web/databases), cambie a una solución Web Cloud Databases con más espacio de almacenamiento.
 
 #### Las bases de datos de origen y de destino no son compatibles

@@ -17,7 +17,7 @@ Uma base de dados (BDD) é utilizada para armazenar elementos dinâmicos (dados 
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) que inclua, pelo menos, uma base de dados.
-- Dispor de uma base de dados disponível "criação" entre as que estão incluídas na sua oferta de alojamento web. Se necessário, pode adicionar bases de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ao seu alojamento web.
+- Dispor de uma base de dados disponível "criação" entre as que estão incluídas na sua oferta de alojamento web. Se necessário, pode adicionar bases de dados [Start SQL](/links/web/hosting-options-startsql) ao seu alojamento web.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager) com as [autorizações necessárias](/pages/account_and_service_management/account_information/managing_contacts) para gerir o seu alojamento web.
 
 ## Instruções

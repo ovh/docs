@@ -10,7 +10,7 @@ updated: 2023-11-22
 
 ## Ziel
 
-Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies is möglich innerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](/links/web/databases).
+Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies is möglich innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 **Diese Anleitung erklärt, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren.**
 
@@ -20,7 +20,7 @@ Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des
 
 ## Voraussetzungen
 
-- Sie verfügen über Datenbanken der Dienste [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](/links/web/databases). Beide Datenbanken müssen erstellt sein, bevor die Duplikationsfunktion verwendet werden kann.
+- Sie verfügen über Datenbanken der Dienste [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases). Beide Datenbanken müssen erstellt sein, bevor die Duplikationsfunktion verwendet werden kann.
 - Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zur Verwaltung aller betroffenen Datenbankdienste. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## In der praktischen Anwendung
@@ -35,7 +35,7 @@ Bevor Sie beginnen, überprüfen Sie diese Voraussetzungen:
 
 Die Duplikationsfunktion ist verfügbar für folgende Dienste:
 
-- [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) (in einigen unserer [Webhostings](/links/web/hosting) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-hosting/options/start-sql/))
+- [Start SQL](/links/web/hosting-options-startsql) (in einigen unserer [Webhostings](/links/web/hosting) enthalten oder [separat bestellt](/links/web/hosting-options-startsql))
 - [Web Cloud Databases](/links/web/databases) (in unseren [Performance Hostings](/links/web/hosting-performance-offer) enthalten oder [separat bestellt](/links/web/databases)). 
 
 Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedlich.
@@ -74,7 +74,7 @@ Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Text, um eine ne
 
 ![WCD DB-Liste](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-Sie haben die Wahl zwischen [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](/links/web/databases).
+Sie haben die Wahl zwischen [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 > [!primary]
 >
@@ -157,7 +157,7 @@ Dies bedeutet, dass nur eine Datenbank aktiv ist. Zum Kopieren der Quelldatenban
 
 - Konfigurieren Sie eine neue Datenbank auf Ihrem Webhosting.
 - Konfigurieren Sie eine neue Datenbank auf Ihrem [Web Cloud Databases](/links/web/databases) Server.
-- Bestellen Sie eine neue Datenbank innerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](/links/web/databases).
+- Bestellen Sie eine neue Datenbank innerhalb der Angebote [Start SQL](/links/web/hosting-options-startsql) oder [Web Cloud Databases](/links/web/databases).
 
 #### Es wird bereits eine Aktion ausgeführt
 
@@ -167,7 +167,7 @@ Diese Meldung bedeutet, dass bereits ein Task für die Datenbank ausgeführt wir
 
 Ihre Zieldatenbank enthält nicht genügend Speicherplatz. Sie haben zwei Möglichkeiten:
 
-- Eine neue Datenbank des Typs [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) mit mehr Speicherplatz bestellen.
+- Eine neue Datenbank des Typs [Start SQL](/links/web/hosting-options-startsql) mit mehr Speicherplatz bestellen.
 - Wenn Sie bereits über einen [Web Cloud Databases](/links/web/databases) Server verfügen, wechseln Sie zu einem Angebot mit mehr Speicherplatz.
 
 #### Quell- und Zieldatenbank sind nicht kompatibel
