@@ -21,7 +21,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/)
+- Tener un [dominio](/links/web/domains)
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) o un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/)
 - Tener un editor de texto (bloc de notas, TextEdit, Notepad++, etc.).
 - Haber instalado un cliente FTP (como [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) para descargar (subir al alojamiento) los archivos en su espacio dedicado.

@@ -13,7 +13,7 @@ Votre hébergement web vous permet de gérer un certificat SSL. Vous pouvez comm
 ## Prérequis
 
 - Posséder un [hébergement web OVHcloud](/links/web/hosting){.external}.
-- Avoir enregistré au moins un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
+- Avoir enregistré au moins un [nom de domaine](/links/web/domains){.external}.
 - Avoir accès à votre [espace client OVHcloud](/links/manager){.external}, partie « Web ».
 
 ## En pratique

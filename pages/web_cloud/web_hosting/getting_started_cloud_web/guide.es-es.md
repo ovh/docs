@@ -18,7 +18,7 @@ El plan de hosting Cloud Web de OVHcloud es el resultado de combinar veinte año
 
 - Tener contratado un plan de hosting [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/) de OVHcloud.
 - Haber recibido el email de confirmación de la instalación del hosting Cloud Web.
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/) con el que poder acceder a su sitio web.
+- Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento

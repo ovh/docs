@@ -25,7 +25,7 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 ## Voraussetzungen
 
 - Sie haben ein [Webhosting](/links/web/hosting) in Ihrem OVHcloud Account.
-- Sie verfügen über mindestens einen mit dem Hosting verbundenen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}.
+- Sie verfügen über mindestens einen mit dem Hosting verbundenen [Domainnamen](/links/web/domains){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 
 ## In der praktischen Anwendung

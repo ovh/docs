@@ -41,7 +41,7 @@ Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Ordinare o disporre di un [hosting condiviso OVHcloud](/links/web/hosting) sul quale non è già installato alcun certificato SSL.
-- Ordinare o disporre di un [dominio](https://www.ovhcloud.com/it/domains/) e disporre dei diritti esclusivi sull'utilizzo. Il dominio non deve essere già associato a un certificato SSL.
+- Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sull'utilizzo. Il dominio non deve essere già associato a un certificato SSL.
 - essere un'organizzazione (impresa, agenzia governativa, ...) registrata presso un registro ufficiale.
 - Disporre dell'autorizzazione della tua organizzazione per ordinare un certificato SSL EV
 - Essere in grado di giustificare con esattezza le informazioni e le coordinate relative alla tua organizzazione.

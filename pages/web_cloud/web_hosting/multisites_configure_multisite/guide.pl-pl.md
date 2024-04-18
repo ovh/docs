@@ -25,7 +25,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 ## Wymagania początkowe
 
 - Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting){.external}.
-- Zarejestrowana domena lub kilka [domen](https://www.ovhcloud.com/pl/domains/){.external}.
+- Zarejestrowana domena lub kilka [domen](/links/web/domains){.external}.
 - Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns))
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 

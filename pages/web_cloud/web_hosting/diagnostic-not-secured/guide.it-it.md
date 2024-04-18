@@ -44,7 +44,7 @@ Per risolvere questa anomalia, è necessario:
 
 #### Verifica l'indirizzo IP dell'hosting
 
-I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](/links/web/hosting). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](https://www.ovhcloud.com/it/domains/).
+I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](/links/web/hosting). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](/links/web/domains).
 
 Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), clicca su `Web Cloud`{.action} `Hosting`{.action} e seleziona l'hosting interessato.
 

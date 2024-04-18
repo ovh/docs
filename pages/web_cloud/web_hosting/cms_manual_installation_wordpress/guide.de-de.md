@@ -30,7 +30,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 ## Voraussetzungen
 
 - Sie verfügen über ein [Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie verfügen über einen [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

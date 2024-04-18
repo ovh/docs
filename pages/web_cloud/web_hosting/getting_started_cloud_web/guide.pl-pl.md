@@ -18,7 +18,7 @@ Oferta hostingu Cloud Web łączy w sobie 20 lat doświadczenia OVHcloud w zakre
 
 - Posiadanie hostingu SSD [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/)
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Cloud Web została zainstalowana
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/), pod którą dostępna będzie Twoja strona WWW
+- Posiadanie [domeny](/links/web/domains), pod którą dostępna będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

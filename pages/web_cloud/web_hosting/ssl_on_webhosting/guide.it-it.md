@@ -17,7 +17,7 @@ Le operazioni di gestione degli hosting Web OVHcloud, disponibili direttamente n
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting){.external} attivo.
-- Aver registrato almeno un [dominio](https://www.ovhcloud.com/it/domains/){.external}.
+- Aver registrato almeno un [dominio](/links/web/domains){.external}.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}.
 
 ## Procedura

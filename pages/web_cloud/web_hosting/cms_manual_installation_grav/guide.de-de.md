@@ -17,7 +17,7 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) Grav ermöglicht die schnell
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot.
-- Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/).
+- Sie besitzen eine [Domain](/links/web/domains).
 - Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
 
 ## In der praktischen Anwendung

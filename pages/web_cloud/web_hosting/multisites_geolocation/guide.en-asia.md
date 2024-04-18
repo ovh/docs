@@ -21,7 +21,7 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud Web Hosting plan](/links/web/hosting){.external}
-- One or more [domain names](https://www.ovhcloud.com/asia/domains/){.external}
+- One or more [domain names](/links/web/domains){.external}
 
 ## Instructions
 

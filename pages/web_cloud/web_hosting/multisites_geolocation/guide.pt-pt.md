@@ -25,7 +25,7 @@ A opção de geolocalização no seu alojamento pode ser útil para o referencia
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Dispor de um [nome de domínio](/links/web/domains)
   
 ## Instruções
 

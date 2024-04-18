@@ -14,7 +14,7 @@ There are a multitude of different websites on the internet. Whether you are cre
 
 - You must have an [OVHcloud Web Hosting plan](/links/web/hosting){.external}.
 - You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} that can be used to access your website.
+- You must have a [domain name](/links/web/domains){.external} that can be used to access your website.
 - You must be logged in to your [OVHcloud Control Panel](/links/manager){.external}.
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan).
 

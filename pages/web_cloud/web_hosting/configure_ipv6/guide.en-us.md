@@ -20,7 +20,7 @@ Our web hosting plans have been compatible with IPv6 since 2011. However, enabli
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en/domains/){.external}
+- A [domain name](/links/web/domains){.external}
 - An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 

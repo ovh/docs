@@ -19,7 +19,7 @@ Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis 
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie erhielten eine E-Mail, die bestätigt, dass Ihr Webhosting eingerichtet wurde.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/), mit dem Sie auf Ihre Webseite zugreifen können.
+- Sie verfügen über einen [Domainnamen](/links/web/domains), mit dem Sie auf Ihre Webseite zugreifen können.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

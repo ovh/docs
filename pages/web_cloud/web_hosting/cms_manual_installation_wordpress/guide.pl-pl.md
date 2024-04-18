@@ -32,7 +32,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System) W
 ## Wymagania
 
 - Posiadanie oferty[hostingu](/links/web/hosting), która zawiera przynajmniej jedną bazę danych.
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie [domeny](/links/web/domains)
 - Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce

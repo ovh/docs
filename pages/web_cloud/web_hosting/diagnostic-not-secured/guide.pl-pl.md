@@ -44,7 +44,7 @@ Aby usunąć tę anomalię, należy:
 
 #### Sprawdź adres IP hostingu
 
-[Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](/links/web/hosting). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](https://www.ovhcloud.com/pl/domains/).
+[Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](/links/web/hosting). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](/links/web/domains).
 
 Aby odnaleźć adres IP Twojego hostingu [hosting OVHcloud](/links/web/hosting), kliknij na górze [Panel klienta OVHcloud](/links/manager) na `Web Cloud`{.action}, następnie na `Hosting`{.action} i wybierz odpowiedni hosting.
 

@@ -44,7 +44,7 @@ Para resolver esta anomalía, deberá:
 
 #### Comprobar la dirección IP del alojamiento
 
-Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](/links/web/hosting). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](https://www.ovhcloud.com/es-es/domains/).
+Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](/links/web/hosting). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](/links/web/domains).
 
 Para encontrar la dirección IP de su [hosting OVHcloud](/links/web/hosting), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione el alojamiento correspondiente.
 

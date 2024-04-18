@@ -26,7 +26,7 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting){.external} attivo
-- Disporre di almeno un [dominio](https://www.ovhcloud.com/it/domains/){.external} associato all'hosting
+- Disporre di almeno un [dominio](/links/web/domains){.external} associato all'hosting
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura

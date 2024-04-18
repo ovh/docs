@@ -37,7 +37,7 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
 
 - You have access to the [OVHcloud Control Panel](/links/manager).
 - You plan to order an SSL secured [OVHcloud web hosting plan](/links/web/hosting) or you have a web hosting plan in your customer account without an SSL certificate installed.
-- You manage a [domain name](https://www.ovhcloud.com/en-sg/domains/) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
+- You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 - You represent an organisation (company, government agency, etc.) registered with an official registry.
 - You have your organisation’s permission to order an EV SSL certificate.
 - You are able to provide an accurate account of your organisation's information and contact details.

@@ -30,7 +30,7 @@ Wenn Sie in Ihrem Kundencenter eingeloggt sind:
 
 ### Wie kann ich meine Website online stellen? 
 
-Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](https://www.ovhcloud.com/de/domains/), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meinedomain.com*). Sie benötigen auch ein [Hosting](/links/web/hosting), auf dem Ihre Website installiert werden kann.
+Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](/links/web/domains), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meinedomain.com*). Sie benötigen auch ein [Hosting](/links/web/hosting), auf dem Ihre Website installiert werden kann.
 
 Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-website/) und folgen Sie dann den Anweisungen in der Anleitung "[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 

@@ -27,7 +27,7 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
+- Disposer d'un [nom de domaine](/links/web/domains)
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique

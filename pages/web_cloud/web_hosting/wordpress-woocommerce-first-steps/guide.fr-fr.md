@@ -18,7 +18,7 @@ Découvrez comment créer une boutique en ligne avec l'extension open source **W
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Disposer d'un [nom de domaine](/links/web/domains).
 - Avoir préalablement [installé WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur votre hébergement web.
 
 Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide « [Passer son site internet en HTTPS grâce au SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website) ».

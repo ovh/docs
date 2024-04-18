@@ -24,7 +24,7 @@ Este tutorial vai permitir-lhe criar os seus primeiros conteúdos, organizá-los
 ## Requisitos
 
 - Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Dispor de um [nome de domínio](/links/web/domains)
 - Ter [instalado Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) no seu alojamento web.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 

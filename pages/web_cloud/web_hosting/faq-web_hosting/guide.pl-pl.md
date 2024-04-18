@@ -30,7 +30,7 @@ Po zalogowaniu się do Panelu klienta:
 
 ### Jak umieścić moją stronę w internecie? 
 
-Aby uruchomić Twoją stronę WWW w Internecie, musisz posiadać [Domeny](https://www.ovhcloud.com/pl/domains/) odpowiadającą adresowi WWW, z którego będzie ona dostępna (na przykład: *mojadomena.com*). Będziesz również potrzebował [hostingu](/links/web/hosting), na którym będziesz mógł zainstalować Twoją stronę.
+Aby uruchomić Twoją stronę WWW w Internecie, musisz posiadać [Domeny](/links/web/domains) odpowiadającą adresowi WWW, z którego będzie ona dostępna (na przykład: *mojadomena.com*). Będziesz również potrzebował [hostingu](/links/web/hosting), na którym będziesz mógł zainstalować Twoją stronę.
 
 Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodnikiem](https://www.ovhcloud.com/pl/web-hosting/uc-website/), a następnie postępuj zgodnie z instrukcjami zawartymi w przewodniku [Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 

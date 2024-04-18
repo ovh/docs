@@ -17,7 +17,7 @@ Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
-- Zarejestrowanie co najmniej jednej [domeny](https://www.ovhcloud.com/pl/domains/){.external}
+- Zarejestrowanie co najmniej jednej [domeny](/links/web/domains){.external}
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce

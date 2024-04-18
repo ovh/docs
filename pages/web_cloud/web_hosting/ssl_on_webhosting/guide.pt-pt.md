@@ -17,7 +17,7 @@ O seu alojamento web permite-lhe gerir um certificado SSL. Podem encomendá-lo a
 ## Requisitos
 
 - Dispor de um [alojamento web da OVHcloud](/links/web/hosting){.external}.
-- Ter registado, pelo menos, um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external}.
+- Ter registado, pelo menos, um [nome de domínio](/links/web/domains){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, na secção “Web”.
 
 ## Instruções

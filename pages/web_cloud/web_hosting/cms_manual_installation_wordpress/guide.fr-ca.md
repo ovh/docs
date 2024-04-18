@@ -27,7 +27,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
+- Disposer d'un [nom de domaine](/links/web/domains)
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique

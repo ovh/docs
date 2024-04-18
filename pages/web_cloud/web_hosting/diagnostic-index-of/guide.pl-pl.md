@@ -29,7 +29,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie [domeny](/links/web/domains)
 - Posiadanie [hostingu](/links/web/hosting)
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 

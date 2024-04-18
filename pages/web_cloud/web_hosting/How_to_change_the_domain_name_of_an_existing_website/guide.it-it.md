@@ -26,7 +26,7 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Disporre di un [dominio](/links/web/domains)
 - Disporre di un [hosting condiviso OVHcloud](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 

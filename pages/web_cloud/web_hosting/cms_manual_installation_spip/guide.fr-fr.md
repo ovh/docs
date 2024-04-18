@@ -13,7 +13,7 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) SPIP est une solution adapté
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) incluant au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Disposer d'un [nom de domaine](/links/web/domains).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique

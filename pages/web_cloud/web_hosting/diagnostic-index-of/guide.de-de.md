@@ -27,7 +27,7 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie verfügen über einen [Domainnamen](/links/web/domains).
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

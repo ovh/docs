@@ -19,7 +19,7 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 
 - [plan hostingu WWW OVHcloud](/links/web/hosting){.external}
 - e-mail potwierdzający skonfigurowanie planu hostingu WWW
-- [nazwa domeny](https://www.ovhcloud.com/pl/domains/){.external} umożliwiająca dostęp do witryny internetowej
+- [nazwa domeny](/links/web/domains){.external} umożliwiająca dostęp do witryny internetowej
 - dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce

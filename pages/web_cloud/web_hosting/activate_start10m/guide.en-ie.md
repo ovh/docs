@@ -6,7 +6,7 @@ updated: 2023-12-18
 
 ## Objective
 
-With [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external}, OVHcloud offers you a 100 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a 100M free hosting on your [domain name](https://www.ovhcloud.com/en-ie/domains/){.external}.
+With [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external}, OVHcloud offers you a 100 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a 100M free hosting on your [domain name](/links/web/domains){.external}.
 
 > [!warning]
 >
@@ -19,8 +19,8 @@ With [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} in your OVHcloud Control Panel, detached from any web hosting plan, and with no associated [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
-- Access to the [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} in your [OVHcloud Control Panel](/links/manager){.external}
+- A [domain name](/links/web/domains){.external} in your OVHcloud Control Panel, detached from any web hosting plan, and with no associated [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Access to the [domain name](/links/web/domains){.external} in your [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions
 

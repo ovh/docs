@@ -25,7 +25,7 @@ La opción de geolocalización en su alojamiento puede ser útil para el posicio
 
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Disponer de un [hosting OVHcloud](/links/web/hosting)
-- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
+- Disponer de un [dominio](/links/web/domains)
   
 ## Procedimiento
 

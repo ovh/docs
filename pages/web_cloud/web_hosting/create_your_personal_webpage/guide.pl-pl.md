@@ -21,7 +21,7 @@ Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowy hosting 10
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie [domeny](/links/web/domains)
 - Posiadanie [hostingu OVHcloud](/links/web/hosting) lub bezpłatnego [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
 - Posiadanie edytora tekstu (notebooka, TextEdit, Notepad++, itp.)
 - Instalacja klienta FTP (takiego jak [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) do pobrania (umieszczenie na hostingu) plików z serwera dedykowanego.

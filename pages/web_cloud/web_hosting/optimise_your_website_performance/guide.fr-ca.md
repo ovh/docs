@@ -18,7 +18,7 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 
 - Un [hébergement web OVHcloud](/links/web/hosting){.external}
 - Un e-mail confirmant que votre hébergement web a été configuré;
-- Un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} lié à votre hébergement web;
+- Un [nom de domaine](/links/web/domains){.external} lié à votre hébergement web;
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

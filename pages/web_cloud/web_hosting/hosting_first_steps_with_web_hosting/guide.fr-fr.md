@@ -28,7 +28,7 @@ Elles vous permettent de gagner du temps sur « l'administration serveur » et d
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Disposer d'un [nom de domaine](/links/web/domains).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique

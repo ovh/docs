@@ -18,7 +18,7 @@ A nossa oferta de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting
 
 - Ter um serviço de [alojamento Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do alojamento Cloud Web.
-- Ter um [domínio](https://www.ovhcloud.com/pt/domains/){.external} (endereço que permite identificar e aceder ao seu site).
+- Ter um [domínio](/links/web/domains){.external} (endereço que permite identificar e aceder ao seu site).
 - Aceder à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

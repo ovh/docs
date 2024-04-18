@@ -14,7 +14,7 @@ For our new [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-off
 
 - a [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/)
 - an email confirming that your hosting plan has been set up
-- a [domain name](https://www.ovhcloud.com/en-gb/domains/) for your website
+- a [domain name](/links/web/domains) for your website
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

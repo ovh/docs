@@ -25,7 +25,7 @@ Opcja geolokalizacji na Twoim hostingu może być przydatna w pozycjonowaniu (SE
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie [hostingu OVHcloud](/links/web/hosting)
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie [domeny](/links/web/domains)
   
 ## W praktyce
 

@@ -21,7 +21,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 ## Requirements
 
 - A compatible [OVHcloud Web Hosting plan](/links/web/hosting){.external}
-- One or more [domain names](https://www.ovhcloud.com/en-ie/domains/){.external}
+- One or more [domain names](/links/web/domains){.external}
 - The right to modify your domain name's configuration (the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit))
 - Access to the [OVHcloud Control Panel](/links/manager){.external}
 

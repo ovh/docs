@@ -41,7 +41,7 @@ Para los alojamientos compartidos de OVHcloud, la autoridad de certificación qu
 
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Contratar o disponer de un [hosting OVHcloud](/links/web/hosting) en el que no haya ningún certificado SSL instalado.
-- Contratar o disponer de un [nombre de dominio](https://www.ovhcloud.com/es/domains/) y disponer de los derechos exclusivos sobre su uso. El nombre de dominio no debe estar ya asociado a un certificado SSL.
+- Contratar o disponer de un [nombre de dominio](/links/web/domains) y disponer de los derechos exclusivos sobre su uso. El nombre de dominio no debe estar ya asociado a un certificado SSL.
 - Ser una organización (empresa, agencia gubernamental...) registrada en un registro oficial.
 - La autorización de su organización para contratar un certificado SSL EV.
 - Estar en condiciones de justificar con exactitud la información y los datos relativos a su organización.

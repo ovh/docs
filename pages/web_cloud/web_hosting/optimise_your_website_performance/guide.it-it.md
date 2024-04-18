@@ -19,7 +19,7 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 
 - Una [soluzione Web Hosting OVHcloud](/links/web/hosting){.external}
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
-- Un [dominio](https://www.ovhcloud.com/it/domains/){.external}per accedere al tuo sito
+- Un [dominio](/links/web/domains){.external}per accedere al tuo sito
 - avere accesso allo [Spazio Cliente](/links/manager){.external}OVHcloud
 
 ## Procedura

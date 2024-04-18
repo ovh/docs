@@ -32,7 +32,7 @@ Pozwalają one zaoszczędzić czas potrzebny na "administrowanie serwerem" i sku
 
 - Zakupienie [hostingu OVHcloud](/links/web/hosting).
 - Otrzymanie wiadomości e-mail potwierdzającej uruchomienie usługi.
-- Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/).
+- Posiadanie [nazwy domeny](/links/web/domains).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce

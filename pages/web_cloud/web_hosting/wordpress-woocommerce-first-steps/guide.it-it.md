@@ -22,7 +22,7 @@ Scopri come creare un negozio online con l'estensione open source **WooCommerce*
 ## Prerequisiti
 
 - Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Disporre di un [dominio](/links/web/domains)
 - Aver precedentemente [installato WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sul tuo hosting Web
 
 Se non lo hai già fatto, ti consigliamo di utilizzare il protocollo HTTPS prima di continuare con questa guida: "[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".

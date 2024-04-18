@@ -14,7 +14,7 @@ Notre offre d’hébergement Cloud Web allie nos vingt ans d’expérience dans 
 
 - Disposer d'une offre d'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Avoir reçu l’e-mail vous confirmant l’installation de votre hébergement Cloud Web.
-- Disposer d’un [nom de domaine](https://www.ovhcloud.com/fr/domains/) qui sera l’adresse à laquelle votre site sera accessible.
+- Disposer d’un [nom de domaine](/links/web/domains) qui sera l’adresse à laquelle votre site sera accessible.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique

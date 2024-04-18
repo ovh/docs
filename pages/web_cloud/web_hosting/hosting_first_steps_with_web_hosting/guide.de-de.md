@@ -32,7 +32,7 @@ So sparen Sie Zeit bei der Administration und können sich ganz auf Folgendes ko
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
-- Sie haben einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie haben einen [Domainnamen](/links/web/domains).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

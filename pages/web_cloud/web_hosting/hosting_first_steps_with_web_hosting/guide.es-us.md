@@ -32,7 +32,7 @@ Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse �
 
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
-- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/) con el que poder acceder a su sitio web.
+- Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento

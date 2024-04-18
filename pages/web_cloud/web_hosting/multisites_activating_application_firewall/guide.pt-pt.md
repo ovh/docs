@@ -26,7 +26,7 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}.
-- Dispor de, pelo menos, um [domínio](https://www.ovhcloud.com/pt/domains/){.external} associado ao alojamento.
+- Dispor de, pelo menos, um [domínio](/links/web/domains){.external} associado ao alojamento.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

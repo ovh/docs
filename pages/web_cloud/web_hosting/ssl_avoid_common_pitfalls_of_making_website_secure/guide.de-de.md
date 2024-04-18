@@ -23,7 +23,7 @@ In dieser Anleitung finden Sie einige Beispiele für mögliche Problemsituatione
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting){.external}.
-- Sie haben mindestens einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} registriert.
+- Sie haben mindestens einen [Domainnamen](/links/web/domains){.external} registriert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich "Web Cloud".
 
 ## In der praktischen Anwendung

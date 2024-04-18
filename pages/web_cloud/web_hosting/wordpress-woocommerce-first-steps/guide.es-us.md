@@ -22,7 +22,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
-- Tener un [dominio](https://www.ovhcloud.com/es/domains/).
+- Tener un [dominio](/links/web/domains).
 - Haber contratado previamente [WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en su alojamiento web.
 
 Si todavía no lo ha hecho, le recomendamos que cambie el sitio web a HTTPS antes de continuar con este tutorial con la guía "[Habilitar HTTPS en un sitio web gracias al SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".

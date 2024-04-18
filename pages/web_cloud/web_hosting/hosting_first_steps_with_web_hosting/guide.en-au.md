@@ -28,7 +28,7 @@ This saves you time on server administration and allows you to focus only on:
 
 - You have ordered an [OVHcloud Web Hosting plan](/links/web/hosting){.external}.
 - You have received an email confirming that your Web Hosting plan has been set up.
-- You have a [domain name](https://www.ovhcloud.com/en-au/domains/).
+- You have a [domain name](/links/web/domains).
 - You have access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions

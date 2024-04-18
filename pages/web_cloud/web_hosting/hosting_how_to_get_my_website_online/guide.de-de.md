@@ -18,7 +18,7 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting){.external}.
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}, über den Ihre Website erreichbar sein wird.
+- Sie verfügen über einen [Domainnamen](/links/web/domains){.external}, über den Ihre Website erreichbar sein wird.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 

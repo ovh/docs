@@ -10,7 +10,7 @@ updated: 2023-12-18
 
 ## Obiettivo
 
-Con [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external}, OVHcloud ti offre un hosting Web da 100 MB e un account email con 5 GB di storage. Questa guida ti mostra come attivare l’hosting gratuito 100M sul tuo [dominio](https://www.ovhcloud.com/it/domains/){.external}.
+Con [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external}, OVHcloud ti offre un hosting Web da 100 MB e un account email con 5 GB di storage. Questa guida ti mostra come attivare l’hosting gratuito 100M sul tuo [dominio](/links/web/domains){.external}.
 
 > [!warning]
 >
@@ -23,7 +23,7 @@ Con [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} nel tuo [Spazio Cliente OVHcloud](/links/manager){.external}, scollegato da un hosting Web e senza [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associato.
+- Disporre di un [dominio](/links/web/domains){.external} nel tuo [Spazio Cliente OVHcloud](/links/manager){.external}, scollegato da un hosting Web e senza [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associato.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}.
 
 ## Procedura

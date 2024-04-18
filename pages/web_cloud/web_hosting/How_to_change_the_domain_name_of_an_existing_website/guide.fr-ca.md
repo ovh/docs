@@ -21,7 +21,7 @@ Ce tutoriel a pour objectif de vous expliquer les principales étapes à suivre 
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
+- Disposer d'un [nom de domaine](/links/web/domains).
 - Disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 

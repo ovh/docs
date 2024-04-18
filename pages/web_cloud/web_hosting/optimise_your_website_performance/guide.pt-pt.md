@@ -19,7 +19,7 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 
 - um [plano de Alojamento Web OVHcloud](/links/web/hosting){.external}
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
-- um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} que pode ser utilizado para aceder ao seu website
+- um [nome de domínio](/links/web/domains){.external} que pode ser utilizado para aceder ao seu website
 - acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
 ## Instruções

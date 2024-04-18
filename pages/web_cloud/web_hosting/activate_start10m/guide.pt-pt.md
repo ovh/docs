@@ -10,7 +10,7 @@ updated: 2023-12-18
 
 ## Objetivo
 
-Com o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external}, a OVHcloud oferece-lhe um alojamento Web de 100MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](https://www.ovhcloud.com/pt/domains/){.external}.
+Com o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external}, a OVHcloud oferece-lhe um alojamento Web de 100MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](/links/web/domains){.external}.
 
 > [!warning]
 >
@@ -23,7 +23,7 @@ Com o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-ho
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} no seu [Área de Cliente OVHcloud](/links/manager){.external}, desassociado de qualquer alojamento Web e sem nenhum [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associado.
+- Dispor de um [nome de domínio](/links/web/domains){.external} no seu [Área de Cliente OVHcloud](/links/manager){.external}, desassociado de qualquer alojamento Web e sem nenhum [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associado.
 - Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

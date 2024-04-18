@@ -16,7 +16,7 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/){.external} en su área de cliente de OVHcloud.
+- Disponer de un [dominio](/links/web/domains){.external} en su área de cliente de OVHcloud.
 - Tener contratado un [plan de hosting](/links/web/hosting){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 

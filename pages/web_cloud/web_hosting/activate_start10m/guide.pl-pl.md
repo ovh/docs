@@ -10,7 +10,7 @@ updated: 2023-12-18
 
 ## Wprowadzenie 
 
-Dzięki [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external}, OVHcloud oferuje hosting WWW o rozmiarze 100 MB oraz konto e-mail o pojemności 5 GB. Z tego przewodnika dowiesz się, jak włączyć Darmowy hosting 100M w swojej [domenie](https://www.ovhcloud.com/pl/domains/){.external}.
+Dzięki [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external}, OVHcloud oferuje hosting WWW o rozmiarze 100 MB oraz konto e-mail o pojemności 5 GB. Z tego przewodnika dowiesz się, jak włączyć Darmowy hosting 100M w swojej [domenie](/links/web/domains){.external}.
 
 > [!warning]
 >
@@ -23,7 +23,7 @@ Dzięki [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-host
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} w [Panelu klienta OVHcloud](/links/manager){.external}, odłączone od hostingu www i bez żadnego [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Posiadanie [domeny](/links/web/domains){.external} w [Panelu klienta OVHcloud](/links/manager){.external}, odłączone od hostingu www i bez żadnego [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce

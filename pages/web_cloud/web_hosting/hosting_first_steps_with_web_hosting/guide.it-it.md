@@ -32,7 +32,7 @@ che permettono di risparmiare tempo sull’"amministrazione server" e di concent
 
 - Disporre di un piano di [hosting Web](/links/web/hosting) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Disporre di un [dominio](/links/web/domains)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

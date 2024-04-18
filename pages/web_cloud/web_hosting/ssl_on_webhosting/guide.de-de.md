@@ -17,7 +17,7 @@ Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting){.external}.
-- Sie haben mindestens eine [Domain](https://www.ovhcloud.com/de/domains/){.external} registriert.
+- Sie haben mindestens eine [Domain](/links/web/domains){.external} registriert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

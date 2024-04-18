@@ -41,7 +41,7 @@ W przypadku hostingu współdzielonego OVHcloud instytucja certyfikująca certyf
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Zamów lub zamów [hosting OVHcloud](/links/web/hosting), dla którego nie został zainstalowany żaden certyfikat SSL.
-- Zamów [domenę](https://www.ovhcloud.com/pl/domains/) i uzyskaj wyłączne prawa do korzystania z tej domeny. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
+- Zamów [domenę](/links/web/domains) i uzyskaj wyłączne prawa do korzystania z tej domeny. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
 - Być organizacją (firma, agencja rządowa, ...) zarejestrowaną w oficjalnym rejestrze.
 - Posiadanie upoważnienia organizacji do zamawiania certyfikatu SSL EV
 - Być w stanie dokładnie uzasadnić informacje i dane kontaktowe dotyczące organizacji.

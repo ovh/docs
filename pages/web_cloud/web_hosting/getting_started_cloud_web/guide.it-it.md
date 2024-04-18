@@ -18,7 +18,7 @@ La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza n
 
 - Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Cloud Web
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) attivo, che corrisponderà all’indirizzo del tuo sito
+- Disporre di un [dominio](/links/web/domains) attivo, che corrisponderà all’indirizzo del tuo sito
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

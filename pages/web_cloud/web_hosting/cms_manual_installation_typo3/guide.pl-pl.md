@@ -17,7 +17,7 @@ updated: 2024-03-28
 ## Wymagania początkowe
 
 - Posiadanie hostingu [OVHcloud](/links/web/hosting) zawierającego co najmniej jedną bazę danych.
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/).
+- Posiadanie [domeny](/links/web/domains).
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce

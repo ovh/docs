@@ -20,7 +20,7 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
+- Disposer d'un [nom de domaine](/links/web/domains)
 - Avoir [installé Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur votre hébergement web
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 

@@ -25,7 +25,7 @@ L'opzione di geolocalizzazione sul tuo hosting può essere utile per l'SEO se il
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un [hosting condiviso OVHcloud](/links/web/hosting)
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Disporre di un [dominio](/links/web/domains)
   
 ## Procedura
 

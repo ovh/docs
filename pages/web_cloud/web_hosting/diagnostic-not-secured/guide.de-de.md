@@ -42,7 +42,7 @@ Um die Problemursache zu beheben müssen Sie:
 
 #### Die IP-Adresse des Hostings überprüfen
 
-Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass Ihre Website auf einem unserer [Web Cloud Angebote](/links/web/hosting) gehostet wird. Überprüfen Sie daher die IP-Adresse des Servers, auf den Ihr [Domainname](https://www.ovhcloud.com/de/domains/) verweist.
+Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass Ihre Website auf einem unserer [Web Cloud Angebote](/links/web/hosting) gehostet wird. Überprüfen Sie daher die IP-Adresse des Servers, auf den Ihr [Domainname](/links/web/domains) verweist.
 
 Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinden, gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action} und wählen Sie das betreffende Hosting unter `Hosting-Pakete`{.action} aus.
 

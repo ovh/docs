@@ -26,7 +26,7 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 
 ## Requisitos
 
-- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/).
+- Tener un [dominio](/links/web/domains).
 - Disponer de un [hosting OVHcloud](/links/web/hosting).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 

@@ -21,7 +21,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 ## Prérequis
 
 - Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting){.external} compatible.
-- Disposer d'un ou plusieurs [noms de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
+- Disposer d'un ou plusieurs [noms de domaine](/links/web/domains){.external}.
 - Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 

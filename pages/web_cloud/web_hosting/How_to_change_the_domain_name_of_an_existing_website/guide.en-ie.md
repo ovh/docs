@@ -21,7 +21,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 
 ## Requirements
 
-- A [domain name](https://www.ovhcloud.com/en-ie/domains/).
+- A [domain name](/links/web/domains).
 - An [OVHcloud shared hosting](/links/web/hosting).
 - Access to the [OVHcloud Control Panel](/links/manager).
 

@@ -16,7 +16,7 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 
 ## Prerequisiti
 
-- Aver registrato un [dominio](https://www.ovhcloud.com/it/domains/){.external} nello Spazio Cliente OVHcloud
+- Aver registrato un [dominio](/links/web/domains){.external} nello Spazio Cliente OVHcloud
 - Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 

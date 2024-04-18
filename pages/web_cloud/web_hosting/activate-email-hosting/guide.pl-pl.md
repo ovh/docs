@@ -16,7 +16,7 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}i możliwość zarządzania nią w Panelu klienta
+- Posiadanie [domeny](/links/web/domains){.external}i możliwość zarządzania nią w Panelu klienta
 - Posiadanie [hostingu WWW](/links/web/hosting){.external}.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 

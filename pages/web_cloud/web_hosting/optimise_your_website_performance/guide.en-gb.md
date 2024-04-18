@@ -18,7 +18,7 @@ This guide will help you get a basic understanding on what points can affect per
 
 - an [OVHcloud Web Hosting plan](/links/web/hosting)
 - an email confirming that your Web Hosting plan has been set up
-- a [domain name](https://www.ovhcloud.com/en-gb/domains/) that can be used to access your website
+- a [domain name](/links/web/domains) that can be used to access your website
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
