@@ -177,7 +177,7 @@ Le recomendamos que no utilice el `Tipo de servidor`{.action} **POP** en la secc
 
 En la sección `Cuenta de destino`{.action}, introduzca únicamente la dirección de correo electrónico de OVHcloud correspondiente y su contraseña asociada. Dejando el `Tipo de servidor`{.action} como `Hosted by OVH (Autodetect)`{.action}.
 
-Una vez completada la migración, conéctese a su dirección de correo electrónico de OVHcloud utilizando el [webmail OVHcloud](https://www.ovhcloud.com/es/mail/) para comprobar que todos sus mensajes de correo estén presentes en la nueva cuenta.
+Una vez completada la migración, conéctese a su dirección de correo electrónico de OVHcloud utilizando el [webmail OVHcloud](/links/web/email) para comprobar que todos sus mensajes de correo estén presentes en la nueva cuenta.
 
 Repita la operación para todas sus cuentas de correo.
 

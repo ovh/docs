@@ -174,7 +174,7 @@ We recommend that you do not use the `Server type`{.action} **POP** in the `Sour
 
 As for `Destination account`{.action}, enter only the relevant OVHcloud email address and password. Keep the `Server type`{.action} in `Hosted by OVH (Autodetect)`{.action}.
 
-Once the migration is complete, log in to your OVHcloud email account using [OVHcloud webmail](https://www.ovhcloud.com/en-au/mail/) to check that all your emails are in the new account.
+Once the migration is complete, log in to your OVHcloud email account using [OVHcloud webmail](/links/web/email) to check that all your emails are in the new account.
 
 Repeat for all of your email accounts.
 

@@ -184,7 +184,7 @@ Wir empfehlen Ihnen, als `Server type`{.action} unter `Source account`{.action} 
 
 Geben Sie im Bereich `Destination account`{.action} ausschließlich die betreffende OVHcloud E-Mail-Adresse und das zugehörige Passwort ein. Hierbei bleibt der `Server type`{.action} auf `Hosted by OVH (Autodetect)`{.action}.
 
-Wenn die Migration abgeschlossen ist, loggen Sie sich über [OVHcloud Webmail](https://www.ovhcloud.com/de/mail/) in Ihren OVHcloud E-Mail-Account ein, um zu überprüfen, ob alle Ihre E-Mails im neuen Account enthalten sind.
+Wenn die Migration abgeschlossen ist, loggen Sie sich über [OVHcloud Webmail](/links/web/email) in Ihren OVHcloud E-Mail-Account ein, um zu überprüfen, ob alle Ihre E-Mails im neuen Account enthalten sind.
 
 Wiederholen Sie den Vorgang für alle Ihre E-Mail-Accounts.
 
