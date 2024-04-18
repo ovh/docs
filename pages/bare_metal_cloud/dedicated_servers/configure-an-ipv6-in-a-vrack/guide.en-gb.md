@@ -8,7 +8,6 @@ updated: 2024-04-18
 details>summary {
     color:rgb(33, 153, 232) !important;
     cursor: pointer;
-    margin-bottom: 5px;
 }
 details>summary::before {
     content:'\25B6';
@@ -91,10 +90,10 @@ Example above shows two hosts with their vRack-side interfaces configured with I
 
 Delivered IPv6 block (as seen previously with /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
 
-<img src="https://github.com/ovh/docs/blob/ipv6_in_vrack/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/images/post-ipv6.png" alt="api post add block"/>
+<img src="/images/post-ipv6.png" alt="api post add block"/>
 
 <br/>It can be also verified this way:
-<img src="https://github.com/ovh/docs/assets/60412/20108fc8-a30e-481d-b470-beb2b99e7b7a" alt="GET ipv6 call"/>
+<img src="/images/20240418-04.png" alt="GET ipv6 call"/>
 <br/>Now, we see our block configured with a vRack. Next step is to configure your host or VMs.
 
 </blockquote>
@@ -107,11 +106,12 @@ Delivered IPv6 block (as seen previously with /eligibleServices API call), can n
     Once Additional IPv6 /56 block is attributed to a vRack network, there is always first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
     Let's check exactly which subnet is bridged:
 
-    <img src="https://github.com/ovh/docs/assets/60412/c3c67e28-205c-4ebe-910f-fefa5c018781" alt="API call get ipv6"/>)
+
+    <img src="/images/20240418-05.png" alt="API call get ipv6"/>)
 
     <br/>To get more details:
 
-    <img src="https://github.com/ovh/docs/assets/60412/574f9e7a-3c6c-4aea-b232-0e1167a8285a" alt="API call get bridged"/>
+    <img src="/images/20240418-06.png" alt="API call get bridged"/>
     <br/>Notice that IP autoconfiguration (SLAAC) is turned off by default.
 
 </blockquote>
@@ -123,7 +123,8 @@ Delivered IPv6 block (as seen previously with /eligibleServices API call), can n
     
     To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
 
-    <img src="https://github.com/ovh/docs/assets/60412/a26da7cd-9a9d-4841-b055-9997cf460adc" alt="API call POST enable SLAAC"/>
+
+    <img src="/images/20240418-07.png" alt="API call POST enable SLAAC"/>
 
     <br/>Don't forget to configure SLAAC on your host machine.
 
@@ -444,7 +445,7 @@ OVHcloud's vRack technology enables organizations to connect servers across diff
 On the other hand, services like Additional IPv6 are regional, which means their functionality is linked to a particular location. 
 
 Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
-![image](https://github.com/ovh/docs/assets/60412/c8789220-2b6c-4245-bada-94e3854be8f7)
+![image](images/20240418-08.png)
 
 Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in whole vRack** (as this may lead to unpredictable results and loosing connectivity randomly).
 
