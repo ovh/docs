@@ -4,6 +4,20 @@ excerpt: This guide will show you how to configure a block of public IPV6 addres
 updated: 2024-04-18
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses. 
@@ -50,10 +64,10 @@ Once your request will be processed, we will inform you via email about Addition
 <details>
 <summary> <b>Check the Status of Your IPv6 Block Request</b> </summary>
 <blockquote>
-    
+
 We can check services eligible for configuration using this GET API call:
-![image](https://github.com/ovh/docs/blob/ipv6_in_vrack/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/images/get-eligibleServices.png)
-New IPv6 block is there, let's configure it now!
+<img src="/images/get-eligibleServices.png" alt="api get eligible services"/>
+<br/>New IPv6 block is there, let's configure it now!
 
 </blockquote>
 </details>
@@ -71,45 +85,48 @@ Example above shows two hosts with their vRack-side interfaces configured with I
 #### APIv6 setup
 
 <details>
-<summary>Attributing Additional IPv6 to a vRack</summary>
+<summary> <b>Attributing Additional IPv6 to a vRack</b></summary>
+<blockquote>
 
 Delivered IPv6 block (as seen previously with /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
 
-![image](https://github.com/ovh/docs/blob/ipv6_in_vrack/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/images/post-ipv6.png)
+<img src="https://github.com/ovh/docs/blob/ipv6_in_vrack/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/images/post-ipv6.png" alt="api post add block"/>
 
-It can be also verified this way:
-![image-2024-3-29_14-55-25](https://github.com/ovh/docs/assets/60412/20108fc8-a30e-481d-b470-beb2b99e7b7a)
-Now, we see our block configured with a vRack. Next step is to configure your host or VMs.
+<br/>It can be also verified this way:
+<img src="https://github.com/ovh/docs/assets/60412/20108fc8-a30e-481d-b470-beb2b99e7b7a" alt="GET ipv6 call"/>
+<br/>Now, we see our block configured with a vRack. Next step is to configure your host or VMs.
 
+</blockquote>
 </details>
 
 <details>
-<summary>Static IP configuration</summary>
-
+<summary> <b>Static IP configuration</b></summary>
 <blockquote>
-Once Additional IPv6 /56 block is attributed to a vRack network, there is always first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
-Let's check exactly which subnet is bridged::
 
-![image-2024-3-29_14-54-24](https://github.com/ovh/docs/assets/60412/c3c67e28-205c-4ebe-910f-fefa5c018781)
+    Once Additional IPv6 /56 block is attributed to a vRack network, there is always first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
+    Let's check exactly which subnet is bridged::
 
+    <img src="https://github.com/ovh/docs/assets/60412/c3c67e28-205c-4ebe-910f-fefa5c018781" alt="API call get ipv6"/>)
 
-To get more details:
+    <br/>To get more details:
 
-![image-2024-3-29_14-53-36](https://github.com/ovh/docs/assets/60412/574f9e7a-3c6c-4aea-b232-0e1167a8285a)
-Notice that IP autoconfiguration (SLAAC) is turned off by default.
+    <img src="https://github.com/ovh/docs/assets/60412/574f9e7a-3c6c-4aea-b232-0e1167a8285a" alt="API call get bridged"/>
+    <br/>Notice that IP autoconfiguration (SLAAC) is turned off by default.
 
 </blockquote>
 </details>
         
 <details>
-<summary><b>Automatic IP configuration (SLAAC)</b></summary>
+<summary> <b>Automatic IP configuration (SLAAC)</b></summary>
+<blockquote>
+    
+    To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
 
-To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
+    <img src="https://github.com/ovh/docs/assets/60412/a26da7cd-9a9d-4841-b055-9997cf460adc" alt="API call POST enable SLAAC"/>
 
-![image-2024-3-29_14-48-7](https://github.com/ovh/docs/assets/60412/a26da7cd-9a9d-4841-b055-9997cf460adc)
+    <br/>Don't forget to configure SLAAC on your host machine.
 
-Don't forget to configure SLAAC on your host machine.
-
+</blockquote>
 </details>
 
 #### Host-side commands
@@ -118,20 +135,20 @@ Don't forget to configure SLAAC on your host machine.
 <summary> <b>Static IP configuration</b></b> </summary>
 <blockquote>
 
-In a basic configuration, you may want to setup an IP address and routing manually. This is also suggested way when your machine acts as a router (see [configuring routed subnet](#configuring-an-ipv6-in-a-vrack-for-routed-mode)) and has ipv6.forwarding mode enabled.
+    In a basic configuration, you may want to setup an IP address and routing manually. This is also suggested way when your machine acts as a router (see <a href="#configuring-an-ipv6-in-a-vrack-for-routed-mode">configuring routed subnet</a>) and has ipv6.forwarding mode enabled.
 
-First, let's add an IP address on the vrack interface (in our example "eth1"):
+    <br/><br/>First, let's add an IP address on the vrack interface (in our example "eth1"):
 ``` bash
 $ sudo ip address add 2001:41d0:abcd:ef00::2/64 dev eth1
 ```
 (Please note that the first IP address in a block, 2001:41d0:abcd:ef00::1/64 is gateway IP address and must not be used for host addressing).
 
-Optionally, if you want to use vRack interface as the main one for IPv6 traffic, default route can be configured the following way:
+<br/>Optionally, if you want to use vRack interface as the main one for IPv6 traffic, default route can be configured the following way:
 ``` bash
 $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1/64 dev eth1
 ```
 
-Finally, bring up the interface (and verify configured IP on it):
+<br/>Finally, bring up the interface (and verify configured IP on it):
 ``` bash
 $ sudo ip link set up dev eth1
 $ ip -6 addr list dev eth1
@@ -141,19 +158,20 @@ $ ip -6 addr list dev eth1
 
 </blockquote>
 </details>
+
 <details>
 <summary> <b>Automatic IP configuration (SLAAC)</b></b> </summary>
 <blockquote>
 
 To use automatic configuration, please ensure you have configured your interface as the following:
 
-First, let's allow our host to accept Router Advertisements (for autoconfiguration) on the vrack interface (in our example "eth1"):
+<br/><br/>First, let's allow our host to accept Router Advertisements (for autoconfiguration) on the vrack interface (in our example "eth1"):
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
-Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to [Automatic IP configuration for routed subnet](#host-side-configuration) for details.
+Important to note is that this setting will not work if ipv6.forwarding is enabled in your system. In such case please refer to <a href="#host-side-configuration">Automatic IP configuration for routed subnet</a> for details.
  
-Then, simply bring up the interface:
+<br/><br/>Then, simply bring up the interface:
 ``` bash
 $ sudo ip link set up dev eth1
 $ ip -6 addr list dev eth1
@@ -161,7 +179,7 @@ $ ip -6 addr list dev eth1
     inet6 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166/64 scope global dynamic mngtmpaddr
        valid_lft 2322122sec preferred_lft 334922sec
 ```
-After a moment (configuration must propagate), specific IPv6 address (with flags _global_ and _dynamic_) should be visible on the interface.
+After a moment (configuration must propagate), specific IPv6 address (with flags <i>global</i> and <i>dynamic</i>) should be visible on the interface.
 
 </blockquote>
 </details>
@@ -175,7 +193,7 @@ After a moment (configuration must propagate), specific IPv6 address (with flags
 Most basic test is to ping local IP address on a host:
 
 ``` bash
-#debian@ns2000052:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
+debian@host:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
 PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c166) 56 data bytes
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=1 ttl=64 time=0.043 ms
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=2 ttl=64 time=0.034 ms
@@ -187,10 +205,10 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 <details>
 <summary> <b>Remote</b> </summary>
 <blockquote>
-Next, let's verify connectivity from remote:
-    
+
+Next, let's verify connectivity from remote:    
 ``` bash
-#ubuntu@remote-test:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
+ubuntu@remote-test:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
 PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c166) 56 data bytes
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=1 ttl=55 time=7.23 ms
 64 bytes from 2001:41d0:900:2100:fe34:97ff:feb0:c166: icmp_seq=2 ttl=55 time=6.90 ms
@@ -217,14 +235,14 @@ Traffic comming back from such VM should use default route via first part of the
 <blockquote>
 
 To create a routed subnet, we must first define:
-- subnet in CIDR notation (size between /57 and /64)
-- next-hop address (so the host's IPv6 address)
+</br>- subnet in CIDR notation (size between /57 and /64)
+<br/>- next-hop address (so the host's IPv6 address)
 
-Please note that given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+<br/><br/>Please note that given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
-Please use the call as follows in the example below:
+<br/><br/>Please use the call as follows in the example below:
 
-![Define routed subnet](images/20240418-02.png){.thumbnail}
+<img src="images/20240418-02.png" alt="Define routed subnet"/>
 
 In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00::2
 
@@ -242,7 +260,7 @@ In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::
 
 When hosting Virtual Machines, we strongly recommend to use static configuration on your host.
 
-Setup an IPv6 address, bring up the interface and (optionally) add default route over the vRack interface:
+<br/><br/>Setup an IPv6 address, bring up the interface and (optionally) add default route over the vRack interface:
 ``` bash
 $ sudo ip addr add 2001:41d0:abcd:ef00::2/64 dev eth1
 $ sudo ip link set dev eth1 up
@@ -256,15 +274,15 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 <summary><b>Automatic IP configuration (SLAAC) for a host</b></summary>
 <blockquote>
 
-    In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
-Please note this bring additional risks (such as loosing access not only to the host but also to all VMs) and is not recommended.
+In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
+<br/>Please note this bring additional risks (such as loosing access not only to the host but also to all VMs) and is not recommended.
 
-Ensuring IPv6 forwarding is enabled:
+<br/><br/>Ensuring IPv6 forwarding is enabled:
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.all.forwarding=1
 ```
 
-Configuring Router Advertisements to be accepted (on vRack eth1 interface in our example):
+<br/>Configuring Router Advertisements to be accepted (on vRack eth1 interface in our example):
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=2
 ```
@@ -278,8 +296,9 @@ $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=2
 <blockquote>
 
 To ensure that our host knows what to do with packets addressed to the new routed subnet (that will be on a VM), we must add specific route for it.
-In our example this is veth link with fd00::2/64 address inside a VM we will use for a routing.
-Please note that this is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
+<br/>In our example this is veth link with fd00::2/64 address inside a VM we will use for a routing.
+
+<br/><br/>Please note that this is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
 ``` bash
 $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 ```
@@ -290,11 +309,11 @@ $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 
 <details>
 <summary> <b>Routed subnet configuration inside a VM</b> </summary>
+<blockquote>
 
 Again, please note that used link between host and VMs is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
 
-<blockquote>
-Add our routed IP block inside a VM to ensure it can accept packets:
+<br/><br/>Add our routed IP block inside a VM to ensure it can accept packets:
     
 ``` bash
 debian@vm-1:~$ sudo ip address add 2001:41d0:abcd:ef10::1/60 dev lo
@@ -412,8 +431,8 @@ HOST: remote-test                  				Loss%   Snt   Last   Avg  Best  Wrst StDe
  11.|-- 2001:41d0:abcd:ef10::1      				0.0%     1    2.2   2.2   2.2   2.2   0.0
 ```
 In this example: 
-- hop 10 - our host's IP address
-- hop 11 - our VM's IP address
+<br/>- hop 10 - our host's IP address
+<br/>- hop 11 - our VM's IP address
 
 </blockquote>
 </details>
