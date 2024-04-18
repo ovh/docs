@@ -23,7 +23,7 @@ Dieses Tutorial zeigt anhand von Beispielen die möglichen Aktionen, wenn eine O
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit einer dazugehörigen OVHcloud Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit einer dazugehörigen OVHcloud Datenbank.
   
 ## In der praktischen Anwendung
 

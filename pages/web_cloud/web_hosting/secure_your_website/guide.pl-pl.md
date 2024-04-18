@@ -10,7 +10,7 @@ updated: 2024-01-29
 
 ## Wprowadzenie 
 
-Z tego przewodnika dowiesz się, jak zapewnić dostępność usług, bezpieczeństwo danych oraz dostęp do rozwiązań. Dotyczy on wyłącznie stron WWW hostowanych na [rozwiązaniach hostingowych OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+Z tego przewodnika dowiesz się, jak zapewnić dostępność usług, bezpieczeństwo danych oraz dostęp do rozwiązań. Dotyczy on wyłącznie stron WWW hostowanych na [rozwiązaniach hostingowych OVHcloud](/links/web/hosting).
 
 Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i trudności technicznych, co oznacza, że pierwsze kroki są najbardziej potrzebne. Bezpieczeństwo Twojej strony będzie mierzone przy użyciu najmniej chronionego elementu. Zalecamy przeprowadzenie wszystkich opisanych działań. Jeśli jednak napotkasz trudności w przeprowadzeniu niektórych z opisanych tutaj operacji, skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub naszymi [partnerami](/links/partner).
 
@@ -25,7 +25,7 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 
 ## Wymagania początkowe
 
-- [OVHcloud Web Hosting plan](https://www.ovhcloud.com/pl/web-hosting/)
+- [OVHcloud Web Hosting plan](/links/web/hosting)
 - posiadanie [login details](/pages/web_cloud/web_hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
 - dostęp do [OVHcloud Control Panel](/links/manager)
 - dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}

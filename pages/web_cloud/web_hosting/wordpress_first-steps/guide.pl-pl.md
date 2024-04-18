@@ -23,7 +23,7 @@ Tutorial ten pozwoli Ci na tworzenie pierwszych treści, ich organizację, umies
 
 ## Wymagania
 
-- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera przynajmniej jedną bazę danych.
+- Posiadanie oferty [hostingu](/links/web/hosting), która zawiera przynajmniej jedną bazę danych.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - [Instalacja Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) na Twoim hostingu
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager){.external}

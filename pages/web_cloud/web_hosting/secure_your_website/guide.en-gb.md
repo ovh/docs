@@ -6,7 +6,7 @@ updated: 2024-01-29
 
 ## Objective
 
-This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared Web Hosting servers](https://www.ovhcloud.com/en-gb/web-hosting/).
+This guide will provide you with basic knowledge to ensure that your services are always available, protect your data integrity and secure the access to your solutions. It only applies to websites hosted on OVHcloud [shared Web Hosting servers](/links/web/hosting).
 
 The recommendations below are ordered by decreasing importance and increasing technical difficulty, which means that the first steps are the most essential. The security of your site will be measured by the element least protected. We therefore recommend carrying out all of the actions described in this guide. 
 
@@ -22,7 +22,7 @@ However, if you experience any difficulties carrying out some of them, please do
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 - The [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}

@@ -23,7 +23,7 @@ This access allows you to [put your website online](/pages/web_cloud/web_hosting
 
 ## Requirements
 
-- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An OVHcloud [Web Hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -41,7 +41,7 @@ A table will display the *FTP users* created on your Web Hosting plan. These use
 > For more information on password management best practices, follow the instructions in this [guide](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
+Depending on which OVHcloud [Web Hosting plan](/links/web/hosting) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
 
 - **For Web Hosting plans that do not allow you to create a second FTP user** (*100M free hosting* and *Personal hosting*): Click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
 

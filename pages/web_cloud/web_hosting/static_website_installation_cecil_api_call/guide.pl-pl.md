@@ -23,7 +23,7 @@ Tutorial wyjaśnia, jak używać generatora strony [Cecil](https://cecil.app){.e
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec rozwiązań oferowanych domyślnie w naszej ofercie hostingu.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec rozwiązań oferowanych domyślnie w naszej ofercie hostingu.
 - Zaznajomiony z wprowadzaniem wiersza poleceń.
 - Instalacja i skonfigurowanie aplikacji **Cecil** na Twoim hostingu (zapoznaj się z naszym tutorialem [dotyczącym instalacji i konfiguracji Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil)).
 

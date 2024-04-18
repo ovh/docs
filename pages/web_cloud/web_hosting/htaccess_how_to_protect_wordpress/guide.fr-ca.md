@@ -19,7 +19,7 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 
 ## Prérequis
 
-- Disposer d'un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) et avoir installé WordPress.
+- Disposer d'un [hébergement web](/links/web/hosting) et avoir installé WordPress.
 - Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre [tutoriel sur l'utilisation de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 
 Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs de texte comme :
@@ -45,7 +45,7 @@ Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs
 
 Un fichier **.htaccess** permet de configurer un serveur web. Dans le cas d'un hébergement web mutualisé, il s'agit du serveur web open source «**Apache**». La syntaxe de ce fichier est définie par l'organisme qui édite et maintient **Apache**. Contrairement à la plupart des fichiers de configuration d'un serveur, les fichiers **.htaccess** sont situés dans les répertoires des sites web, plus précisément dans l'espace de stockage FTP de votre hébergement web. Un fichier **.htaccess** aura des effets sur le répertoire dans lequel il est présent, ainsi que dans tous les sous-répertoires présents à l'intérieur.
 
-Nos offres d'hébergements mutualisés n'autorisent pas les fichiers de configuration serveur. Cependant, les fichiers **.htaccess** donnent la possibilité de modifier certaines caractéristiques et comportements. De plus, il n'est pas nécessaire de redémarrer le serveur **Apache** afin que les indications et modifications écrites dans le fichier **.htaccess** soient prises en compte. L'ensemble de nos offres d'[hébergement web mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) permettent de configurer des fichiers  **.htaccess**.
+Nos offres d'hébergements mutualisés n'autorisent pas les fichiers de configuration serveur. Cependant, les fichiers **.htaccess** donnent la possibilité de modifier certaines caractéristiques et comportements. De plus, il n'est pas nécessaire de redémarrer le serveur **Apache** afin que les indications et modifications écrites dans le fichier **.htaccess** soient prises en compte. L'ensemble de nos offres d'[hébergement web mutualisé OVHcloud](/links/web/hosting) permettent de configurer des fichiers  **.htaccess**.
 
 Le point devant le nom du fichier **.htaccess** (qui n'a lui-même pas d'extension) désigne un fichier caché. De plus, ces fichiers ne sont pas accessibles par les utilisateurs extérieurs venant consulter votre site web.
 

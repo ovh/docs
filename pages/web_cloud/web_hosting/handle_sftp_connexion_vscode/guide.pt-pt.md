@@ -21,7 +21,7 @@ Se dispõe de um alojamento web OVHcloud, pode aceder a um espaço de armazename
   
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting)
 - Instalar [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) na sua máquina
 
 ## Instruções
@@ -185,7 +185,7 @@ Este guia tem como objetivo apresentar de forma eficaz a gestão de um projeto a
 
 [Utilizar o FileZilla com o seu alojamento OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utilizar o acesso SSH do alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Lembre-se de que, para utilizar o SSH, deve dispor de um [plano de alojamento web Pro ou Performance](https://www.ovhcloud.com/pt/web-hosting/).
+[Utilizar o acesso SSH do alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Lembre-se de que, para utilizar o SSH, deve dispor de um [plano de alojamento web Pro ou Performance](/links/web/hosting).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

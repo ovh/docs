@@ -12,8 +12,8 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
+- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
 - Avere accesso al backup da importare nel database o essere in grado di recuperarlo
 - In base al metodo di importazione scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager){.external} o disporre dei dati di connessione al database
 
@@ -29,7 +29,7 @@ Prima di iniziare, è necessario indicare il metodo con cui intendi importare il
 
 - **script**: per utilizzare questa soluzione è necessario creare uno script e salvarlo sull’hosting Web OVHcloud e richiede quindi competenze specifiche.
 
-- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} compatibile.
+- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external} compatibile.
 
 Alcune delle opzioni elencate non vengono eseguite in un’interfaccia OVHcloud e non possiamo quindi fornire assistenza sul loro utilizzo. Le informazioni contenute in questa guida potrebbero esserti di aiuto per effettuare l’operazione ma non si sostituiscono all’aiuto di un webmaster.
 

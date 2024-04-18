@@ -23,7 +23,7 @@ Questa guida ti mostra le operazioni da effettuare quando il tuo database condiv
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Disporre di una [offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) con un database condiviso OVHcloud associato
+- Disporre di una [offerta di hosting Web OVHcloud](/links/web/hosting) con un database condiviso OVHcloud associato
   
 ## Procedura
 

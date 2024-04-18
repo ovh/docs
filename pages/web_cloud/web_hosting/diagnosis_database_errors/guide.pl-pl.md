@@ -23,7 +23,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) OVHcloud
+- Posiadanie [hostingu](/links/web/hosting) OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/)
 
@@ -104,7 +104,7 @@ Odblokuj bazę danych na trzy sposoby:
 
 #### Metoda 1: przejdź na wyższą ofertę
 
-Jeśli posiadasz wzór **Personal** lub **Pro**, w tej sytuacji zalecamy przejście na górną [ofertę hostingową](https://www.ovhcloud.com/pl/web-hosting/). Zmiana abonamentu zwiększy rozmiar bazy danych, dzięki czemu będzie ona automatycznie odnawiana. Metoda ta jest najprostsza i nie wymaga szczególnych kompetencji technicznych.
+Jeśli posiadasz wzór **Personal** lub **Pro**, w tej sytuacji zalecamy przejście na górną [ofertę hostingową](/links/web/hosting). Zmiana abonamentu zwiększy rozmiar bazy danych, dzięki czemu będzie ona automatycznie odnawiana. Metoda ta jest najprostsza i nie wymaga szczególnych kompetencji technicznych.
 
 > [!warning]
 >

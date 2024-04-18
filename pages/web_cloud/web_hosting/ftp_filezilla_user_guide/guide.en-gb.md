@@ -21,7 +21,7 @@ You can use it to put files or your website online by [connecting to your web ho
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 - You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php){.external}.
 
 ## Interface overview <a name="interface"></a>

@@ -30,7 +30,7 @@ Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować C
   
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
+- Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
   
@@ -38,7 +38,7 @@ Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować C
 
 ### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
-Aby zainstalować CMS **Drupal** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), potrzebne są jakieś przygotowania.
+Aby zainstalować CMS **Drupal** na Twoim [hostingu](/links/web/hosting), potrzebne są jakieś przygotowania.
 
 Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation) i przejdź do etapu 2 poniżej.
 

@@ -24,7 +24,7 @@ No entanto, se a configuração destes últimos não for realizada corretamente,
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) compatível.
+- Ter um serviço de [alojamento web](/links/web/hosting) compatível.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter utilizado a funcionalidade "[Módulo em 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar um novo website.
 
@@ -71,7 +71,7 @@ Uma vez concluído, poderá instalar um novo "módulo com 1 clique".
 
 > [!primary]
 >
-> Encontre a comparação das nossas diferentes [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/).
+> Encontre a comparação das nossas diferentes [ofertas de alojamento](/links/web/hosting).
 >
 
 Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que aparece na parte `Subscrição` - `Oferta`, clique no botão `...`{.action} `Mudar de oferta`{.action}:
@@ -165,7 +165,7 @@ Nesta situação, [ligue-se em FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!primary]
 >
-> Encontre a comparação das nossas diferentes [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+> Encontre a comparação das nossas diferentes [ofertas de alojamento web](/links/web/hosting).
 >
 
 Na sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que aparece na parte `Subscrição` - `Oferta`, clique no botão `...`{.action} `Mudar de oferta`{.action}:

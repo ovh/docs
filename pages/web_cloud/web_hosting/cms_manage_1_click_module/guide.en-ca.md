@@ -18,7 +18,7 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) that allows you to install a 1-click module
+- An [OVHcloud Web Hosting plan](/links/web/hosting) that allows you to install a 1-click module
 - A 1-click module on your web hosting plan (If you did not install one yet, follow the instructions in this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules))
 - Access to the [OVHcloud Control Panel](/links/manager)
 

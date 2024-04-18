@@ -16,7 +16,7 @@ Il **CMS** (**C**ontent **M**anagement **S**ystem) Grav permette di sviluppare r
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting).
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
@@ -24,7 +24,7 @@ Il **CMS** (**C**ontent **M**anagement **S**ystem) Grav permette di sviluppare r
 
 ### Prepara l'installazione
 
-Per installare il CMS **Grav** sul tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), è necessario effettuare alcuni preparativi.
+Per installare il CMS **Grav** sul tuo [hosting Web](/links/web/hosting), è necessario effettuare alcuni preparativi.
 
 Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) prima di proseguire con lo step successivo.
 

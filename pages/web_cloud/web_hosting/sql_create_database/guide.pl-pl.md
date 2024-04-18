@@ -16,7 +16,7 @@ Baza danych (bazy danych) służy do przechowywania elementów dynamicznych (dan
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającego co najmniej jedną bazę danych.
+- Posiadanie hostingu [OVHcloud](/links/web/hosting) zawierającego co najmniej jedną bazę danych.
 - Posiadanie "utworzonej" bazy danych zawierającej dane zawarte w Twojej usłudze hostingu. W razie potrzeby możesz dodać bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) do Twojego hostingu.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager) z [niezbędnymi uprawnieniami](/pages/account_and_service_management/account_information/managing_contacts) w celu zarządzania hostingiem.
 
@@ -57,7 +57,7 @@ W wyświetlonym oknie wybierz następujące informacje:
 |Informacje|Opis|  
 |---|---| 
 |**Wybierz typ bazy danych**|Wybierz rozmiar bazy danych. Rozmiar ten odnosi się do przestrzeni, na którą przeznaczona jest Twoja baza danych.|
-|**Wybierz silnik dla bazy danych**|Wybierz silnik, którego ma używać baza danych. Bazy danych zawarte w [usłudze hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) są dostępne tylko w silniku MySQL.|
+|**Wybierz silnik dla bazy danych**|Wybierz silnik, którego ma używać baza danych. Bazy danych zawarte w [usłudze hostingu OVHcloud](/links/web/hosting) są dostępne tylko w silniku MySQL.|
 |**Wybierz wersję bazy danych, którą chcesz dodać**|Wybierz wersję używaną przez silnik bazy danych. Upewnij się, że Twoja strona WWW jest zgodna z wybraną wersją.|
 
 Następnie kliknij przycisk `Dalej`{.action}.

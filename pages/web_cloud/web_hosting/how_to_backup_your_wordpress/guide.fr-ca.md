@@ -22,7 +22,7 @@ Sur un hébergement web mutualisé, vous êtes responsable des sauvegardes de vo
 
 ## Prérequis
 
-- Disposer d'un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) et avoir installé WordPress
+- Disposer d'un [hébergement web](/links/web/hosting) et avoir installé WordPress
 
 ## En pratique
 

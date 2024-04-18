@@ -26,7 +26,7 @@ Once you have logged in to your Control Panel:
 
 ### How do I put my website online? 
 
-To put your website online, you need to have a [domain name](https://www.ovhcloud.com/en-au/domains/) corresponding to the web address from which your website will be accessible (e.g.: *mydomain.com*). You will also need a [Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/) plan to set up your website on.
+To put your website online, you need to have a [domain name](https://www.ovhcloud.com/en-au/domains/) corresponding to the web address from which your website will be accessible (e.g.: *mydomain.com*). You will also need a [Web Hosting](/links/web/hosting) plan to set up your website on.
 
 To follow the steps required to build your website, go to this [page](https://www.ovhcloud.com/en-au/web-hosting/uc-website/), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
@@ -34,7 +34,7 @@ To follow the steps required to build your website, go to this [page](https://ww
 
 ### How do I change my hosting plan?
 
-To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/en-au/web-hosting/).
+To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](/links/web/hosting).
 
 Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 

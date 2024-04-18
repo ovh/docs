@@ -16,7 +16,7 @@ Los alojamientos web de OVHcloud son compatibles con los certificados SSL. Puede
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
 - Tener al menos un [dominio](https://www.ovhcloud.com/es-es/domains/){.external}.
 - Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Web Cloud`{.action}.
 
@@ -103,7 +103,7 @@ Si, por el contrario, se indica "Sí", significa que ya hay un certificado SSL i
 
 ![Contratar un certificado SSL](images/order-an-ssl-certificate.png){.thumbnail}
 
-En el cuadro de diálogo, seleccione el tipo de certificado SSL que quiera contratar. Es posible que, en función del [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} o de su configuración, algunas de las opciones que explicamos a continuación no estén disponibles. Una vez que haya seleccionado el tipo de certificado, haga clic en `Siguiente`{.action}.
+En el cuadro de diálogo, seleccione el tipo de certificado SSL que quiera contratar. Es posible que, en función del [plan de hosting](/links/web/hosting){.external} o de su configuración, algunas de las opciones que explicamos a continuación no estén disponibles. Una vez que haya seleccionado el tipo de certificado, haga clic en `Siguiente`{.action}.
 
 ![Contratar un certificado SSL](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 

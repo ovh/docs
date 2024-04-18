@@ -24,7 +24,7 @@ Jeśli konfiguracja modułu nie zostanie przeprowadzona prawidłowo, instalacja 
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie kompatybilnego [hostingu](/links/web/hosting).
 - Dostęp do[Panelu klienta OVHcloud](/links/manager).
 - Użycie funkcji "[Moduł za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" w celu utworzenia nowej strony WWW.
 
@@ -71,7 +71,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](https://www.ovhcloud.com/pl/web-hosting/).
+> Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](/links/web/hosting).
 >
 
 [Panel klienta OVHcloud](/links/manager), kliknij przycisk `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Oferta`, kliknij na przycisk`...`{.action} `Zmień ofertę`{.action}:
@@ -165,7 +165,7 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](https://www.ovhcloud.com/pl/web-hosting/).
+> Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](/links/web/hosting).
 >
 
 [Panel klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Usługa`, kliknij na przycisk `...`{.action} `Zmień ofertę`{.action}:

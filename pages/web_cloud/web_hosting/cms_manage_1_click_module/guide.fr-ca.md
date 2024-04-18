@@ -19,7 +19,7 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/) permettant l'installation d'un module en 1 clic.
+- Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting) permettant l'installation d'un module en 1 clic.
 - Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 

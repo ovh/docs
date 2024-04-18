@@ -12,7 +12,7 @@ Maintenir la sécurité de vos sites web est crucial pour le développement de v
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
+- Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting).
 - Être connecté à votre dashboard MainWP.
 
 > [!warning]

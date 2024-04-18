@@ -24,7 +24,7 @@ updated: 2023-11-24
 
 ## Requisitos
 
-- Dispor de um serviço [de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um serviço [de alojamento partilhado](/links/web/hosting)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor igualmente da gestão da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) à qual está associada o seu domínio.
 

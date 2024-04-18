@@ -31,7 +31,7 @@ Um Cyberduck herunterzuladen, gehen Sie auf die [offizielle Website](https://cyb
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Cyberduck heruntergeladen und installiert.
 
 ## In der praktischen Anwendung

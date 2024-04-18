@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/). Así podrá disponer de:
+Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad de sus [planes de hosting](/links/web/hosting). Así podrá disponer de:
 
 - un alojamiento más potente;
 - más espacio de almacenamiento FTP;
@@ -22,7 +22,7 @@ Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad 
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/)
+- Tener un [plan de hosting](/links/web/hosting)
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Ser, como mínimo, el contacto «[Administrador](/pages/account_and_service_management/account_information/managing_contacts)» de los servicios para los que quiera modificar la suscripción.
 
@@ -141,7 +141,7 @@ Una vez verificados estos 6 puntos, puede realizar su [cambio de producto](#modi
 
 #### Tiene contratado un plan de hosting gratuito de 100M <a name="100m"></a>
 
-En caso de cambiar de plan de hosting [100M gratuito](/pages/web_cloud/web_hosting/activate_start10m), solo se ofrecerá el [plan de hosting Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/). No obstante, tras cambiar a la solución Personal, podrá actualizarla a todos nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+En caso de cambiar de plan de hosting [100M gratuito](/pages/web_cloud/web_hosting/activate_start10m), solo se ofrecerá el [plan de hosting Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/). No obstante, tras cambiar a la solución Personal, podrá actualizarla a todos nuestros [planes de hosting](/links/web/hosting).
 
 Siga [estas instrucciones](#modify) para realizar el cambio de producto.
 

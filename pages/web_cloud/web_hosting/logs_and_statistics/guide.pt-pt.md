@@ -16,7 +16,7 @@ O acesso aos logs e às estatísticas do seu website está incluído na sua ofer
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
+- Ter um serviço de [alojamento web](/links/web/hosting){.external} compatível.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

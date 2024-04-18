@@ -41,7 +41,7 @@ This device also legally protects you from actions resulting from a possible hac
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 

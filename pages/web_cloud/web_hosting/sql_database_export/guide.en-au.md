@@ -12,8 +12,8 @@ Databases are used by most websites and **C**ontent **M**anagement **S**ystems (
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}
-- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](/links/web/hosting){.external}
+- a database created as part of an [OVHcloud Web Hosting plan](/links/web/hosting){.external}
 - Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVHcloud Control Panel](/links/manager){.external}, or have the information you need in order to connect to the database.
 
 ## Instructions
@@ -26,7 +26,7 @@ Before you begin, define the method you will follow to retrieve the backup of yo
 
 - **Use a script that performs the backup**: this method involves creating a script saved on your OVHcloud Web Hosting plan, which will perform the backup. Specific knowledge is required for this creation.
 
-- **Backing up from an SSH command** : this method involves connecting to your FTP storage space via the SSH protocol, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/){.external} solution are required to use this type of access.
+- **Backing up from an SSH command** : this method involves connecting to your FTP storage space via the SSH protocol, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting](/links/web/hosting){.external} solution are required to use this type of access.
 
 > [!success]
 >

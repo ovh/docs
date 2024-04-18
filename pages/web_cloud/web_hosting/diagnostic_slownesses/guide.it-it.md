@@ -41,7 +41,7 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 
 ## Prerequisiti
 
-- Disporre di un sito ospitato su una delle nostre offerte di [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di un sito ospitato su una delle nostre offerte di [hosting condiviso OVHcloud](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -294,7 +294,7 @@ Per ottimizzare il tuo sito è possibile consultarlo su [gtmetrix.com](https://g
 
 Se il tuo hosting Web e il tuo database **non sono in causa** e il tuo sito Web continua ad essere lento, nonostante la realizzazione di **tutti gli step** di questa guida, probabilmente l'offerta che utilizzi per ospitare il tuo sito Web non è o non è più adatta alle tue necessità. 
 
-È possibile scegliere una [offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/) superiore o un'infrastruttura dedicata come [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o un [Server Dedicato](/links/bare-metal/bare-metal). 
+È possibile scegliere una [offerta di hosting condiviso](/links/web/hosting) superiore o un'infrastruttura dedicata come [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o un [Server Dedicato](/links/bare-metal/bare-metal). 
 
 ## Per saperne di più <a name="go-further"></a>
 

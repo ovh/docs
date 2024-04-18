@@ -27,7 +27,7 @@ Diese Fehler können auch durch Updates entstehen, die **automatisch** von Kompo
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
@@ -78,7 +78,7 @@ Die Anleitung "[Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filez
 
 Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler vom Typ "500".
 
-Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](/pages/web_cloud/web_hosting/ssh_on_webhosting) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](https://www.ovhcloud.com/de/web-hosting/)).
+Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](/pages/web_cloud/web_hosting/ssh_on_webhosting) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](/links/web/hosting)).
 
 ### Den Zustand der Datenbank überprüfen
 

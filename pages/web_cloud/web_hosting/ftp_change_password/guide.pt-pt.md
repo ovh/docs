@@ -27,7 +27,7 @@ Este acesso permite nomeadamente [publicar o seu site](/pages/web_cloud/web_host
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
@@ -45,7 +45,7 @@ Um quadro apresenta os *utilizadores FTP* criados no seu alojamento web. Estes u
 > Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Dependendo do seu plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/), a alteração da palavra-passe do utilizador FTP através do separador `FTP-SSH`{.action} poderá ser efetuada de duas formas:
+Dependendo do seu plano de [alojamento web da OVHcloud](/links/web/hosting), a alteração da palavra-passe do utilizador FTP através do separador `FTP-SSH`{.action} poderá ser efetuada de duas formas:
 
 - **para as ofertas que não permitem criar um segundo utilizador FTP** (ofertas *Alojamento gratuito 100M* e *Perso*): clique no *pictograma em forma de lápis* na coluna `Palavra-passe`{.action} do quadro que aparece, introduza a nova palavra-passe **seguindo a política das palavras-passe** e confirme a alteração clicando no *botão verde* de validação.
 

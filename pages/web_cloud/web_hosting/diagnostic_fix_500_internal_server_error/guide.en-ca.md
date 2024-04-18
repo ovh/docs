@@ -23,7 +23,7 @@ These errors may also come from updates carried out **automatically** by compone
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
 - access to the [OVHcloud Control Panel](/links/manager)
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
@@ -74,7 +74,7 @@ The [FileZilla guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#file
 
 For security reasons, your website hides all technical details about the error 500.
 
-To verify these details, you can use a [SSH connection](/pages/web_cloud/web_hosting/ssh_on_webhosting). (SSH is only available with the [Professional Hosting and Performance Hosting](https://www.ovhcloud.com/en-ca/web-hosting/).)
+To verify these details, you can use a [SSH connection](/pages/web_cloud/web_hosting/ssh_on_webhosting). (SSH is only available with the [Professional Hosting and Performance Hosting](/links/web/hosting).)
 
 ### Check the status of the database
 

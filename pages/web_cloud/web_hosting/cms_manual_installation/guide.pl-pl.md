@@ -39,7 +39,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
+- Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
@@ -114,7 +114,7 @@ Więcej informacji znajduje się na naszej stronie dotyczącej [modułu PrestaSh
 
 ### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
-Aby zainstalować CMS na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), potrzebne są jakieś przygotowania.
+Aby zainstalować CMS na Twoim [hostingu](/links/web/hosting), potrzebne są jakieś przygotowania.
 
 #### 1.1 - Sprawdź zgłoszenie w katalogu głównym
 
@@ -129,7 +129,7 @@ Zapoznaj się z naszą dokumentacją [jak dodać stronę podpiętą w opcji Mult
 
 #### 1.2 - Sprawdź "wskazanie" domeny
 
-- Upewnij się, czy domena, której będziesz używał do uzyskania dostępu do CMS-a, jak również jej subdomena w www, wskazują na adres IP Twojej usługi [hosting](https://www.ovhcloud.com/pl/web-hosting/).
+- Upewnij się, czy domena, której będziesz używał do uzyskania dostępu do CMS-a, jak również jej subdomena w www, wskazują na adres IP Twojej usługi [hosting](/links/web/hosting).
 
 Aby uzyskać adres IP Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) w części `Web Cloud`{.action} i wybierz ofertę hostingu w sekcji `Hosting`{.action}.<br>
 W ramce `Informacje ogólne`{.action} po prawej stronie znajdziesz adres IP Twojego hostingu w formularzu `IPv4`{.action}.
@@ -167,7 +167,7 @@ Jeśli nie korzystasz już z klienta FTP, możesz użyć programu Filezilla. W d
 > Niektóre systemy CMS działają bez baz danych. Jeśli jest to przypadek systemu CMS, który chcesz zainstalować, pomiń ten krok.
 >
 
-Większość systemów CMS potrzebuje do działania bazy danych. Nasza oferta[hosting](https://www.ovhcloud.com/pl/web-hosting/) zawiera listę usług, z wyjątkiem [darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).
+Większość systemów CMS potrzebuje do działania bazy danych. Nasza oferta[hosting](/links/web/hosting) zawiera listę usług, z wyjątkiem [darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).
 
 Skorzystaj z naszej dokumentacji, aby [utworzyć bazę danych w ramach Twojego hostingu](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -408,7 +408,7 @@ Aby kontynuować instalację, kliknij w przewodnik dotyczący systemu CMS:
 
 [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-Zobacz nasze [rozwiązania hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}
+Zobacz nasze [rozwiązania hostingu WWW](/links/web/hosting){.external}
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

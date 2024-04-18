@@ -16,7 +16,7 @@ Dzięki [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-host
 >
 > Ten darmowy hosting o rozmiarze 100 MB jest odpowiedni do prostej strony WWW w której **można wyświetlić serwer bez bazy danych**.
 > Jest to również właściwe, jeśli nie potrzebujesz więcej niż jednego konta e-mail typu "MX plan". 
-> Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, takich jak CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), zachęcamy do zamówienia jednej z [naszych ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/) na naszej stronie internetowej lub w Twoim [Panelu klienta OVHcloud](/links/manager){.external}.
+> Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, takich jak CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), zachęcamy do zamówienia jednej z [naszych ofert hostingu www](/links/web/hosting) na naszej stronie internetowej lub w Twoim [Panelu klienta OVHcloud](/links/manager){.external}.
 >
 
 **Dowiedz się, jak włączyć darmowy hosting 100M**
@@ -60,7 +60,7 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 >
 > Możesz również usunąć bezpłatną ofertę, dbając o wcześniejsze pobranie danych o hostingu oraz zawartości konta e-mail.
 >
-> Aby uzyskać więcej informacji, sprawdź [naszą ofertę hostingu](https://www.ovhcloud.com/pl/web-hosting/).
+> Aby uzyskać więcej informacji, sprawdź [naszą ofertę hostingu](/links/web/hosting).
 >
 
 **Etap 3** przypomina o cenniku oferty. 

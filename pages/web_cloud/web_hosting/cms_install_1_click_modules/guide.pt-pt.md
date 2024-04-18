@@ -18,7 +18,7 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 ## Requisitos
 
-- Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados.
+- Dispor de um serviço de [alojamento web](/links/web/hosting) que inclua pelo menos uma base de dados.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma versão recente de PHP e um ambiente de execução compatível no seu alojamento web da OVHcloud. Descubra o estado das diferentes versões disponíveis nesta [página](https://webhosting-infos.hosting.ovh.net/). Caso seja necessário, consulte o nosso [guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) sobre o assumpto, para alterar rapidamente esta configuração.
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
@@ -39,7 +39,7 @@ De todos os CMS, a OVHcloud propõe 4 em instalação automática com os seus "m
 
 Ao utilizar esta solução, deverá escolher entre os 4 CMS citados acima. Caso já tenha escolhido esta opção, continue a ler as diferentes etapas deste guia. Caso contrário, consulte o nosso [comparativo dos CMS](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/) para fazer a sua escolha.
 
-Se deseja instalar um CMS indisponível através dos nossos "módulos 1 clique", pode instalá-lo manualmente no seu alojamento. Isto sob reserva de que este CMS seja compatível com as nossas ofertas de[alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+Se deseja instalar um CMS indisponível através dos nossos "módulos 1 clique", pode instalá-lo manualmente no seu alojamento. Isto sob reserva de que este CMS seja compatível com as nossas ofertas de[alojamento web da OVHcloud](/links/web/hosting).
 
 ![Logo CMS](images/cms-logos.png){.thumbnail}
 

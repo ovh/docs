@@ -22,7 +22,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/asia/domains/).
-- An [OVHcloud shared hosting](https://www.ovhcloud.com/asia/web-hosting/).
+- An [OVHcloud shared hosting](/links/web/hosting).
 - Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions

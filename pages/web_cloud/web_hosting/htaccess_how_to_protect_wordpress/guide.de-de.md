@@ -22,7 +22,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) und haben WordPress installiert.
+- Sie verfügen über ein [Webhosting](/links/web/hosting) und haben WordPress installiert.
 - Sie haben einen FTP-Client, z.B. [FileZilla](https://filezilla-project.org/) installiert, wie in unserem [Tutorial zu FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) erläutert.
 
 **.htaccess**-Dateien können mit Texteditoren erstellt und bearbeitet werden, zum Beispiel:
@@ -48,7 +48,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 
 Mit einer **.htaccess**-Datei können Sie einen Webserver konfigurieren. Bei Webhostings handelt es sich um den Open Source Webserver **Apache**. Die Syntax dieser Datei wird von der Organisation definiert, die **Apache** entwickelt. Im Gegensatz zu den meisten Konfigurationsdateien eines Servers befinden sich die **.htaccess**-Dateien in den Verzeichnissen von Websites, genauer: im FTP-Speicherplatz Ihres Webhostings. Eine **.htaccess**-Datei hat Auswirkungen auf das Verzeichnis, in dem sie liegt, sowie auf alle Unterverzeichnisse dieses Ordners.
 
-Unsere Webhosting-Angebote erlauben keine Serverkonfigurationsdateien. Die **.htaccess**-Dateien ermöglichen es jedoch, bestimmte Eigenschaften und Verhaltensweisen zu ändern. Darüber hinaus ist es nicht notwendig, **Apache** neu zu starten, damit die Inhalte und Änderungen in der **.htaccess**-Datei berücksichtigt werden. Mit unseren [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) können **.htaccess**-Dateien konfiguriert werden.
+Unsere Webhosting-Angebote erlauben keine Serverkonfigurationsdateien. Die **.htaccess**-Dateien ermöglichen es jedoch, bestimmte Eigenschaften und Verhaltensweisen zu ändern. Darüber hinaus ist es nicht notwendig, **Apache** neu zu starten, damit die Inhalte und Änderungen in der **.htaccess**-Datei berücksichtigt werden. Mit unseren [OVHcloud Webhostings](/links/web/hosting) können **.htaccess**-Dateien konfiguriert werden.
 
 Der Punkt vor dem Dateinamen **.htaccess** (der selbst keine Endung hat) kennzeichnet eine versteckte Datei. Außerdem sind diese Dateien für externe Benutzer, die Ihre Website aufrufen, nicht verfügbar.
 

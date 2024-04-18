@@ -8,7 +8,7 @@ updated: 2023-06-12
 
 You can use Secure Socket Layer (SSL) certificates to encrypt any exchange of data on your website. This prevents unauthorised persons and malicious robots from viewing requests to or from your website.
 
-OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](https://www.ovhcloud.com/en-au/web-hosting/). They are set out in our guide on [Managing an SSL certificate on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting). SSL certificates are essential for the security of your website.
+OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](/links/web/hosting). They are set out in our guide on [Managing an SSL certificate on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting). SSL certificates are essential for the security of your website.
 
 There are three types of SSL certificates:
 
@@ -36,7 +36,7 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
 ## Requirements <a name="requirements"></a>
 
 - You have access to the [OVHcloud Control Panel](/links/manager).
-- You plan to order an SSL secured [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) or you have a web hosting plan in your customer account without an SSL certificate installed.
+- You plan to order an SSL secured [OVHcloud web hosting plan](/links/web/hosting) or you have a web hosting plan in your customer account without an SSL certificate installed.
 - You manage a [domain name](https://www.ovhcloud.com/en-au/domains/) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 - You represent an organisation (company, government agency, etc.) registered with an official registry.
 - You have your organisation’s permission to order an EV SSL certificate.

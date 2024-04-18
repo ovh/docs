@@ -17,7 +17,7 @@ Si ha contratado un plan de hosting con OVHcloud sin asociarlo directamente a un
 ## Requisitos
 
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/){.external} en su área de cliente de OVHcloud.
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener contratado un [plan de hosting](/links/web/hosting){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!warning]
@@ -44,7 +44,7 @@ Se mostrará la ventana de activación. Seleccione el dominio que quiere utiliza
 ![Activar el correo](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} superior desde nuestra página comercial.
+> Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](/links/web/hosting){.external} superior desde nuestra página comercial.
 >
 > Atención: La activación de la opción de correo puede tardar unos minutos. Recibirá un mensaje de correo electrónico para confirmar la instalación y activación de la solución MXPLAN. Incluye, entre otras cosas, la gestión y la configuración de sus direcciones de correo.
 >

@@ -42,7 +42,7 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 
 ## Prérequis
 
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

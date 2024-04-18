@@ -34,7 +34,7 @@ Um die Datei ".htaccess" korrekt zu verwenden müssen Sie folgende Regeln kennen
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 
 ## In der praktischen Anwendung
 

@@ -42,9 +42,9 @@ Um die Problemursache zu beheben müssen Sie:
 
 #### Die IP-Adresse des Hostings überprüfen
 
-Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass Ihre Website auf einem unserer [Web Cloud Angebote](https://www.ovhcloud.com/de/web-hosting/) gehostet wird. Überprüfen Sie daher die IP-Adresse des Servers, auf den Ihr [Domainname](https://www.ovhcloud.com/de/domains/) verweist.
+Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass Ihre Website auf einem unserer [Web Cloud Angebote](/links/web/hosting) gehostet wird. Überprüfen Sie daher die IP-Adresse des Servers, auf den Ihr [Domainname](https://www.ovhcloud.com/de/domains/) verweist.
 
-Um die IP-Adresse Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) herauszufinden, gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action} und wählen Sie das betreffende Hosting unter `Hosting-Pakete`{.action} aus.
+Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinden, gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action} und wählen Sie das betreffende Hosting unter `Hosting-Pakete`{.action} aus.
 
 Im Tab `Allgemeine Informationen`{.action} wird Ihnen die IPv4- und IPv6-Adresse Ihres Hostings angezeigt.
 
@@ -52,7 +52,7 @@ Im Tab `Allgemeine Informationen`{.action} wird Ihnen die IPv4- und IPv6-Adresse
 
 #### IP-Adresse in der DNS Zone überprüfen
 
-Überprüfen Sie nun, ob die in der [DNS Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) hinterlegte IP-Adresse der Adresse Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/) entspricht.
+Überprüfen Sie nun, ob die in der [DNS Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) hinterlegte IP-Adresse der Adresse Ihres [Webhostings](/links/web/hosting) entspricht.
 
 Loggen Sie Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und  und wählen Sie den Domainnamen Ihrer Website unter `Domainnamen`{.action} aus.
 

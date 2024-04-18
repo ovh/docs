@@ -18,7 +18,7 @@ Um website composto essencialmente por páginas web estáticas garante um melhor
 
 ## Requisitos
 
-- Ter um [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclui um acesso SSH. Este acesso permite instalar em linha de comandos uma ou várias soluções alternativas às que são propostas por predefinição nas nossas ofertas de alojamento web.
+- Ter um [plano de alojamento web da OVHcloud](/links/web/hosting) que inclui um acesso SSH. Este acesso permite instalar em linha de comandos uma ou várias soluções alternativas às que são propostas por predefinição nas nossas ofertas de alojamento web.
 - estar familiarizado com a introdução em linha de comandos.
 - Ter capacidade para transferir ficheiros em FTP com um cliente como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Parametrizar a sua zona DNS para apontar o seu nome de domínio (ou subdomínio) para o seu alojamento web partilhado. Isto é particularmente útil se deseja alojar vários sites em [multi-sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web partilhado.
@@ -26,7 +26,7 @@ Um website composto essencialmente por páginas web estáticas garante um melhor
 
 ## Instruções
 
-Os [alojamentos web partilhados](https://www.ovhcloud.com/pt/web-hosting/) permitem declarar domínios ou subdomínios em multi-sites. Um domínio ou um subdomínio é necessário para implementar o seu website realizado com **Cecil**.
+Os [alojamentos web partilhados](/links/web/hosting) permitem declarar domínios ou subdomínios em multi-sites. Um domínio ou um subdomínio é necessário para implementar o seu website realizado com **Cecil**.
 
 Para o ajudar a declarar um domínio ou um subdomínio em multi-site no seu alojamento, consulte a nossa página "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 

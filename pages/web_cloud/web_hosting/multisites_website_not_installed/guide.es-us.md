@@ -24,7 +24,7 @@ Es posible que aparezca en su navegador de internet la página de error **Sitio 
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/)
+- Tener un [plan de hosting](/links/web/hosting)
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Disponer también de la gestión de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) a la que esté asociado el dominio.
 

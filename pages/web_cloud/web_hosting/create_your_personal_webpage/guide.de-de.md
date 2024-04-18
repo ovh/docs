@@ -21,7 +21,7 @@ Hier erfahren Sie, wie Sie die Homepage einer Website mit *Kostenloses Hosting 1
 ## Voraussetzungen
 
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder ein [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) oder ein [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 - Sie haben einen Texteditor (Notepad, TextEdit, Notepad++, etc.).
 - Sie haben einen FTP-Client ([Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php) etc.) installiert, um Dateien auf Ihren Hosting-Speicherplatz zu übertragen.
 
@@ -174,7 +174,7 @@ Sie können das Ergebnis in Ihrem Browser sehen: Listenelemente werden in der Re
 
 #### Bilder hinzufügen, um Ihre Seite attraktiver zu machen
 
-Das Web ist vor allem ein visuelles Medium. Wir werden in diesem Bereich erklären, wie Sie Bilder in Ihre Seiten einfügen. *Kostenloses Hosting 100M* bietet Ihnen einen Speicherplatz von 100 MB. Dies genügt für Ihre HTML und CSS Seiten, kann aber zu gering ausfallen, wenn Sie viele Bilder auf Ihrer Seite platzieren möchten. In diesem Fall empfehlen wir Ihnen, ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu bestellen, um mehr Speicherplatz zu erhalten.
+Das Web ist vor allem ein visuelles Medium. Wir werden in diesem Bereich erklären, wie Sie Bilder in Ihre Seiten einfügen. *Kostenloses Hosting 100M* bietet Ihnen einen Speicherplatz von 100 MB. Dies genügt für Ihre HTML und CSS Seiten, kann aber zu gering ausfallen, wenn Sie viele Bilder auf Ihrer Seite platzieren möchten. In diesem Fall empfehlen wir Ihnen, ein [OVHcloud Webhosting](/links/web/hosting) zu bestellen, um mehr Speicherplatz zu erhalten.
 
 Der zur Anzeige eines Bildes verwendete Tag ist `<img>`. Im Gegensatz zu den Tags, die wir zuvor gesehen haben, gibt es kein Öffnen und Schließen dieses Elements (*self-closing* Tag). Die Attribute dieses Tags ermöglichen das Hinzufügen des Bilddatei-Pfads sowie einen beschreibenden Text.
 

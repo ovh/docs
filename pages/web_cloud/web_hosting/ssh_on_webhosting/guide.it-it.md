@@ -16,7 +16,7 @@ Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storag
 
 ## Prerequisiti
 
-- Disporre di una soluzione [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) con accesso SSH
+- Disporre di una soluzione [hosting Web OVHcloud](/links/web/hosting) con accesso SSH
 - Disporre delle informazioni necessarie per l’accesso in SSH allo spazio di storage
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}
 
@@ -34,7 +34,7 @@ Nella tabella, individua la colonna “SSH” e verifica che l’utente SSH (o �
 
 ![usessh](images/tab-ssh.png){.thumbnail}
 
-Se l’accesso SSH non è attivo, clicca sul pulsante `(...)`{.action} in corrispondenza dell’account interessato e seleziona `Modifica`{.action}. Quindi, nella nuova finestra, attiva l’accesso SSH e poi conferma la modifica. Se non hai la possibilità di attivarlo, assicurati che la tua [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) disponga di un accesso SSH.
+Se l’accesso SSH non è attivo, clicca sul pulsante `(...)`{.action} in corrispondenza dell’account interessato e seleziona `Modifica`{.action}. Quindi, nella nuova finestra, attiva l’accesso SSH e poi conferma la modifica. Se non hai la possibilità di attivarlo, assicurati che la tua [soluzione di hosting Web OVHcloud](/links/web/hosting) disponga di un accesso SSH.
 
 ### Step 2: recupera i dati necessari a effettuare l’accesso <a name="sshlogin"></a>
 

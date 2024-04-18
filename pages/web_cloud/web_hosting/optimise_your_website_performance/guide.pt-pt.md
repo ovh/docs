@@ -17,7 +17,7 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 
 ## Requisitos
 
-- um [plano de Alojamento Web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}
+- um [plano de Alojamento Web OVHcloud](/links/web/hosting){.external}
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
 - um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} que pode ser utilizado para aceder ao seu website
 - acesso à [Área de Cliente OVHcloud](/links/manager){.external}
@@ -50,7 +50,7 @@ A resposta a estas questões pode ajudá-lo a centrar-se em pontos específicos 
 
 A utilização de um CMS, como o WordPress, PrestaShop, Drupal ou Joomla!, requer muitas bibliotecas para permitir que uma única página web possa gerir diversos elementos.
 Os browsers têm de carregar e ler todos estes elementos.
-Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](/links/web/hosting){.external}.
 
 Encontrará mais informações acerca do plano a escolher [nesta página](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/){.external}.
 
@@ -156,7 +156,7 @@ Conheça a nossa [solução CDN aqui](https://www.ovh.pt/cdn/){.external}.
 
 _Este passo é opcional se não utilizar um CMS._
 
-Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+Para garantir a adaptação da sua oferta de alojamento às necessidades do seu CMS, pode encontrar uma comparação dos nossos serviços na [página de produto](/links/web/hosting){.external}.
 
 - **Utilização de um plugin de cache:** A utilização de um CMS requer várias bibliotecas para que uma única página web consiga gerir uma grande quantidade de elementos. Para otimizar o seu CMS, deve utilizar diversos plugins de cache para evitar regenerar todo o conteúdo do seu website sempre que uma página é carregada. Recomendamos que procure plugins de cache em websites da comunidade relacionados com o CMS que utiliza (Joomla! - PrestaShop - WordPress) para evitar regenerar todo o conteúdo do seu website sempre que carrega a página web.
 

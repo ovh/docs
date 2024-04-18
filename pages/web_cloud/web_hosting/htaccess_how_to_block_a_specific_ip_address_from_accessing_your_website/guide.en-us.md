@@ -23,7 +23,7 @@ You can create multiple ".htaccess" files in [the FTP space](/pages/web_cloud/we
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 
 ## Instructions
 

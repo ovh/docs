@@ -19,7 +19,7 @@ updated: 2023-03-07
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) with SSH access
+- An [OVHcloud Web Hosting plan](/links/web/hosting) with SSH access
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

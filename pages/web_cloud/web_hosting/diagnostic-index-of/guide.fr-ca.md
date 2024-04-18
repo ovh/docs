@@ -25,7 +25,7 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 ## Prérequis
 
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
+- Disposer d'une [offre d'hébergement web](/links/web/hosting)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique

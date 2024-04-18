@@ -23,7 +23,7 @@ I moduli in 1 click permettono di installare facilmente e rapidamente un softwar
 
 ## Prerequisiti
 
-- Disporre di un'[offerta di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) che consenta l'installazione di un modulo in 1 click
+- Disporre di un'[offerta di hosting Web Cloud](/links/web/hosting) che consenta l'installazione di un modulo in 1 click
 - Aver creato un modulo in 1 click sul tuo hosting (Se non l'hai ancora installato, segui questa [guida](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 

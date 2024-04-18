@@ -35,7 +35,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database
+- An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en-au/domains/)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
@@ -110,7 +110,7 @@ You can find more information on our [PrestaShop module page](https://www.ovhclo
 
 ### Step 1: Prepare the installation <a name="step1"></a>
 
-To install a CMS on your [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/), you will need to make some preparations.
+To install a CMS on your [web hosting plan](/links/web/hosting), you will need to make some preparations.
 
 #### 1.1 Check the root folder declaration
 
@@ -125,7 +125,7 @@ Please refer to our documentation, which describes [how to add a multisite on yo
 
 #### 1.2 Check the domain name resolution
 
-- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/).
+- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](/links/web/hosting).
 
 To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
 In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
@@ -163,7 +163,7 @@ If you are not already using an FTP client, you can use Filezilla. You can find 
 > Some CMS systems work without a database. If this is the case for the CMS you want to install, skip this step.
 >
 
-Most CMSs require a database to work. Our [web hosting offers](https://www.ovhcloud.com/en-au/web-hosting/) include them.
+Most CMSs require a database to work. Our [web hosting offers](/links/web/hosting) include them.
 
 Use our documentation to [create a database from your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 

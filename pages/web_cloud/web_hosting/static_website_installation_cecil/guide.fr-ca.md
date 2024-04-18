@@ -14,7 +14,7 @@ Un site web composé essentiellement de pages web statiques garantit un meilleur
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant un accès SSH. Cet accès permet d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergements web.
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) incluant un accès SSH. Cet accès permet d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergements web.
 - Être familiarisé à la saisie en ligne de commande.
 - Être en capacité de transférer des fichiers en FTP avec un client comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Paramétrer votre zone DNS pour faire pointer votre nom de domaine (ou sous-domaine) vers votre hébergement web mutualisé. Cela s'avère notamment utile si vous souhaitez héberger plusieurs sites en [multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web mutualisé.
@@ -22,7 +22,7 @@ Un site web composé essentiellement de pages web statiques garantit un meilleur
 
 ## En pratique
 
-Les [hébergements web mutualisés](https://www.ovhcloud.com/fr-ca/web-hosting/) permettent de déclarer des domaines ou sous-domaines en multisites. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
+Les [hébergements web mutualisés](/links/web/hosting) permettent de déclarer des domaines ou sous-domaines en multisites. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
 
 Pour vous aider à déclarer un domaine ou un sous-domaine en multisite sur votre hébergement, consultez notre page « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 

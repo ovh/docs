@@ -27,7 +27,7 @@ Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](/pages/web_cloud
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
 
 ## W praktyce
 

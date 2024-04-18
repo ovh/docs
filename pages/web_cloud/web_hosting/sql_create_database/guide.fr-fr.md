@@ -12,7 +12,7 @@ Une base de données (BDD) est utilisée pour stocker des éléments dynamiques 
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant au moins une base de données.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting) incluant au moins une base de données.
 - Disposer d’une base de données disponible en « création » parmi celles incluses dans votre offre d’hébergement web. Si besoin, vous pouvez ajouter des bases de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) à votre hébergement web.
 - Disposer d'un accès à l'[espace client OVHcloud](/links/manager) avec les [autorisations nécessaires](/pages/account_and_service_management/account_information/managing_contacts) pour gérer votre hébergement web.
 
@@ -53,7 +53,7 @@ Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
 |Information|Description|  
 |---|---|
 |**Sélectionnez le type de base de données**|Choisissez la taille de la base de données. Cette taille fait référence à l'espace dont dispose votre base de données pour le stockage des données.|
-|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) sont uniquement disponibles avec le moteur MySQL.|
+|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](/links/web/hosting) sont uniquement disponibles avec le moteur MySQL.|
 |**Sélectionnez la version de la base de données à ajouter**|Choisissez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie.|
 
 Ensuite, cliquez sur `Suivant`{.action}.

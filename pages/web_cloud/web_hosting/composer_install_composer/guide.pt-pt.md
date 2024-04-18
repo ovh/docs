@@ -23,7 +23,7 @@ updated: 2023-02-24
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} com acesso SSH.
+- Ter um [serviço de alojamento web](/links/web/hosting){.external} com acesso SSH.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

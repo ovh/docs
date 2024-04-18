@@ -30,7 +30,7 @@ Accedi allo Spazio Cliente:
 
 ### Come mettere online il tuo sito? 
 
-Per pubblicare online il tuo sito, è necessario disporre di un [dominio](https://www.ovhcloud.com/it/domains/) che corrisponda all'indirizzo Web da cui il tuo sito sarà accessibile (ad esempio: *miodominio.com*). Ti servirà anche un [hosting](https://www.ovhcloud.com/it/web-hosting/) su cui installare il tuo sito.
+Per pubblicare online il tuo sito, è necessario disporre di un [dominio](https://www.ovhcloud.com/it/domains/) che corrisponda all'indirizzo Web da cui il tuo sito sarà accessibile (ad esempio: *miodominio.com*). Ti servirà anche un [hosting](/links/web/hosting) su cui installare il tuo sito.
 
 Per seguire gli step necessari alla costruzione del tuo sito, consulta [questa pagina](https://www.ovhcloud.com/it/web-hosting/uc-website/) e segui le istruzioni contenute nella guida [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
@@ -46,7 +46,7 @@ Consulta la guida [Condividere un hosting tra più siti](/pages/web_cloud/web_ho
 
 ### Come cambiare il piano di hosting?
 
-Per ordinare la soluzione di hosting Web più adatta alle tue esigenze, consulta le nostre offerte su [questa pagina](https://www.ovhcloud.com/it/web-hosting/).
+Per ordinare la soluzione di hosting Web più adatta alle tue esigenze, consulta le nostre offerte su [questa pagina](/links/web/hosting).
 
 Una volta effettuata la scelta, segui la procedura descritta nella guida [Fai evolvere la tua offerta di hosting Web](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 

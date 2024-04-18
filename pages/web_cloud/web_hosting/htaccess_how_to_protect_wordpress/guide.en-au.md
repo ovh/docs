@@ -19,7 +19,7 @@ This tutorial will show you how to configure certain features of your web hostin
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) with WordPress installed.
+- An [OVHcloud web hosting plan](/links/web/hosting) with WordPress installed.
 - Using an FTP client such as [FileZilla](https://filezilla-project.org/), as explicated in our [FileZilla tutorial](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)”.
 
 **.htaccess** files can be created and modified with text editors, for example:
@@ -45,7 +45,7 @@ This tutorial will show you how to configure certain features of your web hostin
 
 You can use a **.htaccess** file to configure a web server. For web hosting plans, this is the open source web server **Apache**. The syntax of this file is defined by the organisation that develops and maintains **Apache**. Unlike most configuration files on a server, **.htaccess** files are located in the directories of websites, more precisely in the FTP storage space of your web hosting plan. A **.htaccess** file will affect the directory in which it is located and all its subdirectories.
 
-Our web hosting plans do not allow server configuration files. However, **.htaccess** files provide the ability to modify certain characteristics and behaviours. In addition, you do not need to reboot the **Apache** server for the instructions and modifications written to the **.htaccess** file to be applied. All of our [OVHcloud web hosting](https://www.ovhcloud.com/en-au/web-hosting/) offers allow you to configure **.htaccess** files.
+Our web hosting plans do not allow server configuration files. However, **.htaccess** files provide the ability to modify certain characteristics and behaviours. In addition, you do not need to reboot the **Apache** server for the instructions and modifications written to the **.htaccess** file to be applied. All of our [OVHcloud web hosting](/links/web/hosting) offers allow you to configure **.htaccess** files.
 
 The dot in front of the file name **.htaccess** (which itself does not have an extension) denotes a hidden file. Furthermore, these files are not accessible by external users visiting your website.
 

@@ -23,7 +23,7 @@ Este tutorial propõe-lhe as ações a empreender quando a sua base de dados par
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Ter um [serviço de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) com uma base de dados partilhada da OVHcloud associada.
+- Ter um [serviço de alojamento web da OVHcloud](/links/web/hosting) com uma base de dados partilhada da OVHcloud associada.
   
 ## Instruções
 

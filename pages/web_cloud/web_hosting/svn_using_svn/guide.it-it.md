@@ -23,7 +23,7 @@ SVN, che è l'abbreviazione di "sovversione", è un sistema di gestione delle ve
 
 ## Pre-obbligatorio
 
-- Disporre di un'[offerta di hosting Web](https://www.ovhcloud.com/it/web-hosting/) che permette una connessione SSH (**a partire dall'offerta Pro**)
+- Disporre di un'[offerta di hosting Web](/links/web/hosting) che permette una connessione SSH (**a partire dall'offerta Pro**)
 - Connettersi in SSH al tuo hosting Web (consulta la nostra guida [Utilizzare l'accesso SSH al tuo hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting))
 
 ## Procedura

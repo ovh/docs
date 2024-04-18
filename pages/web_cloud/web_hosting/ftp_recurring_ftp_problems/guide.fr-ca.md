@@ -6,7 +6,7 @@ updated: 2022-01-05
 
 ## Objectif
 
-L'utilisation de logiciels FTP lors de la connexion à votre [hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/) peut engendrer différentes anomalies. Ce guide vous permettra de résoudre les plus courantes d'entre elles.
+L'utilisation de logiciels FTP lors de la connexion à votre [hébergement Web Cloud](/links/web/hosting) peut engendrer différentes anomalies. Ce guide vous permettra de résoudre les plus courantes d'entre elles.
 
 **Découvrez comment résoudre les erreurs liées aux logiciels FTP.**
 
@@ -19,7 +19,7 @@ L'utilisation de logiciels FTP lors de la connexion à votre [hébergement Web C
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
+- Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique

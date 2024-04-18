@@ -18,7 +18,7 @@ Un sitio web compuesto principalmente por páginas web estáticas garantiza un m
 
 ## Requisitos
 
-- Disponer de un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) con acceso SSH. Este acceso permite instalar en línea de comandos una o más soluciones alternativas a las que ofrecen nuestros planes de hosting por defecto.
+- Disponer de un [plan de hosting de OVHcloud](/links/web/hosting) con acceso SSH. Este acceso permite instalar en línea de comandos una o más soluciones alternativas a las que ofrecen nuestros planes de hosting por defecto.
 - Estar familiarizado con la entrada en línea de comandos.
 - Poder transferir archivos por FTP con un cliente como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Configurar la zona DNS para que su dominio (o subdominio) apunte hacia su alojamiento web compartido. Esto resulta especialmente útil si desea alojar varios sitios web en [multisitios](/pages/web_cloud/web_hosting/multisites_configure_multisite) en su alojamiento compartido.
@@ -26,7 +26,7 @@ Un sitio web compuesto principalmente por páginas web estáticas garantiza un m
 
 ## Procedimiento
 
-Los [alojamientos web compartidos](https://www.ovhcloud.com/es-es/web-hosting/) permiten declarar dominios o subdominios en multisitios. Un dominio o subdominio es necesario para desplegar su sitio web con **Cecil**.
+Los [alojamientos web compartidos](/links/web/hosting) permiten declarar dominios o subdominios en multisitios. Un dominio o subdominio es necesario para desplegar su sitio web con **Cecil**.
 
 Si necesita ayuda para declarar un dominio o subdominio multisitio en su alojamiento, consulte nuestra página "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 

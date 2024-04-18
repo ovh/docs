@@ -16,8 +16,8 @@ Bazy danych są używane przez większość stron WWW i serwerów **C**ontent **
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
+- Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVHcloud](/links/web/hosting){.external}
 - W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
 ## W praktyce
@@ -30,7 +30,7 @@ Przed rozpoczęciem określ metodę, której będziesz używać do pobierania ko
 
 - **Użycie skryptu do tworzenia kopii zapasowych** : przed wykonaniem kopii zapasowej należy utworzyć skrypt zarejestrowany na Twoim hostingu OVHcloud. Potrzebna jest szczególna wiedza na ten temat.
 
-- **Wykonanie kopii zapasowej przy użyciu komendy SSH** : metoda ta wymaga zalogowania się do przestrzeni dyskowej FTP przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z przestrzenią dyskową FTP. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- **Wykonanie kopii zapasowej przy użyciu komendy SSH** : metoda ta wymaga zalogowania się do przestrzeni dyskowej FTP przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z przestrzenią dyskową FTP. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](/links/web/hosting){.external}.
 
 > [!success]
 >

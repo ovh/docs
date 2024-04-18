@@ -31,7 +31,7 @@ Permite, a partir de um terminal e graças a um comando Linux, copiar um ficheir
 
 - Dispor de um terminal compatível com os comandos Linux e SSH (por exemplo, o *terminal* do MacOS ou o emulador *Ubuntu* no Windows)
 - Estar familiarizado com os comandos Linux e SSH
-- Ter um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) com acesso em SSH
+- Ter um serviço de [alojamento web](/links/web/hosting) com acesso em SSH
 - Ter acesso à sua [Área de Cliente OVHcloud](/links/manager){.external}
 
 ## Instruções

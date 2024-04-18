@@ -14,9 +14,9 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 > [!primary]
 >
-> Esta guía se refiere principalmente a los mensajes de correo enviados desde scripts situados en su [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) mediante la función "mail()" de PHP.
+> Esta guía se refiere principalmente a los mensajes de correo enviados desde scripts situados en su [alojamiento web de OVHcloud](/links/web/hosting) mediante la función "mail()" de PHP.
 >
-> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](/links/web/hosting){.external}, consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
@@ -37,7 +37,7 @@ El seguimiento y la gestión del correo automatizado de su alojamiento web de OV
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-Se abrirá una página en la que podrá consultar y gestionar los mensajes de correo automatizados enviados desde su [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
+Se abrirá una página en la que podrá consultar y gestionar los mensajes de correo automatizados enviados desde su [alojamiento web de OVHcloud](/links/web/hosting).
 
 ### Presentación del apartado "Scripts de correo electrónico"
 

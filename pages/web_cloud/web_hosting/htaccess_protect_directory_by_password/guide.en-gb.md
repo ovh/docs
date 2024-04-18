@@ -26,7 +26,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 

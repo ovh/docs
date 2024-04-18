@@ -16,7 +16,7 @@ El **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 permite desarrollar sit
 
 ## Requisitos
 
-- Tener contratado un plan de [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que incluya al menos una base de datos.
+- Tener contratado un plan de [alojamiento web de OVHcloud](/links/web/hosting) que incluya al menos una base de datos.
 - Tener un [dominio](https://www.ovhcloud.com/es/domains/).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
@@ -24,7 +24,7 @@ El **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 permite desarrollar sit
 
 ### Preparar la instalación
 
-Para instalar el CMS **Typo3** en su [alojamiento web](https://www.ovhcloud.com/es/web-hosting/), es necesario realizar algunos preparativos.
+Para instalar el CMS **Typo3** en su [alojamiento web](/links/web/hosting), es necesario realizar algunos preparativos.
 
 Siga el **conjunto de pasos** descritos en nuestro tutorial sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de continuar con el siguiente paso.
 

@@ -27,7 +27,7 @@ Questo accesso permette in particolare di [pubblicare il vostro sito](/pages/web
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) attivo
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting) attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
@@ -45,7 +45,7 @@ Una tabella mostra gli *utenti FTP* creati sul tuo hosting Web. Questi utenti ti
 > Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-In base al piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/), la modifica della password dell'utente FTP tramite la scheda `FTP-SSH`{.action} sarà effettuata su due sentieri diversi:
+In base al piano di [hosting Web OVHcloud](/links/web/hosting), la modifica della password dell'utente FTP tramite la scheda `FTP-SSH`{.action} sarà effettuata su due sentieri diversi:
 
 - **per le offerte che non permettono di creare un secondo utente FTP** (offerte *Personale* e *Hosting gratuito 100M*): clicca sul *pittogramma a forma di matita* nella colonna `Password`{.action} della tabella che appare, inserisci la nuova password **seguendo la politica delle password** e confermala cliccando sul *pulsante verde* di conferma.
 

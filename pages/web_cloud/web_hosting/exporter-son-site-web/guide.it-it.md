@@ -10,13 +10,13 @@ updated: 2022-02-03
 
 ## Obiettivo
 
-Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in formato standard, da un [hosting Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in formato standard, da un [hosting Web OVHcloud](/links/web/hosting){.external}.
 
 **Questa guida ti mostra come esportare il tuo sito Web OVHcloud.**
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
@@ -42,7 +42,7 @@ Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio 
 
 - **utilizzare un software compatibile con il protocollo FTP o SFTP**: dovrai installare sul tuo computer un software compatibile, come [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Se hai bisogno di aiuto per utilizzarlo, contatta il produttore del software installato:
 
-- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](/links/web/hosting){.external} specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 

@@ -36,7 +36,7 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 
 ## Prérequis
 
-- Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
+- Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](/links/web/hosting)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -290,7 +290,7 @@ Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur
 
 Si votre hébergement web et votre base de données **ne sont pas en cause** et que votre site web continue d'être lent, malgré la réalisation de **toutes les étapes** de ce guide, cela signifie probablement que l'offre que vous utilisez pour héberger votre site web n'est pas ou plus adaptée à votre besoin. 
 
-Vous pouvez envisager une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr/web-hosting/) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](/links/bare-metal/vps) ou un [Serveur Dédié](/links/bare-metal/bare-metal). 
+Vous pouvez envisager une [offre d'hébergement mutualisée](/links/web/hosting) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](/links/bare-metal/vps) ou un [Serveur Dédié](/links/bare-metal/bare-metal). 
 
 ## Aller plus loin <a name="go-further"></a>
 

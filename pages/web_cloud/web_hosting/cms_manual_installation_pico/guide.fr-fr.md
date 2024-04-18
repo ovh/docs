@@ -12,7 +12,7 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) Pico permet de créer rapidem
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
@@ -20,7 +20,7 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) Pico permet de créer rapidem
 
 ### Préparer l'installation
 
-Pour installer le CMS **Pico** sur votre [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer le CMS **Pico** sur votre [hébergement web](/links/web/hosting), quelques préparatifs sont nécessaires.
 
 Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) avant de poursuivre à l'étape suivante.
 

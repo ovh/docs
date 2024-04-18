@@ -22,7 +22,7 @@ Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowy hosting 10
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) lub bezpłatnego [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting) lub bezpłatnego [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
 - Posiadanie edytora tekstu (notebooka, TextEdit, Notepad++, itp.)
 - Instalacja klienta FTP (takiego jak [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) do pobrania (umieszczenie na hostingu) plików z serwera dedykowanego.
 
@@ -177,7 +177,7 @@ Możesz zobaczyć wynik w przeglądarce: domyślnie elementy list są wyświetla
 
 #### Dodaj obrazy, aby Twoja strona była bardziej atrakcyjna
 
-Internet to przede wszystkim medium wizualne. W tej części zobaczymy, jak wstawić obrazy do treści. Oferta Darmowy hosting 100M oferuje przestrzeń dyskową 100 MB. To wystarczy dla Twoich stron HTML i CSS, ale może być to ograniczone, jeśli chcesz umieścić dużo obrazów na swojej stronie. W tym przypadku zalecamy wybranie [oferty hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) umożliwiającej szybsze przechowywanie danych.
+Internet to przede wszystkim medium wizualne. W tej części zobaczymy, jak wstawić obrazy do treści. Oferta Darmowy hosting 100M oferuje przestrzeń dyskową 100 MB. To wystarczy dla Twoich stron HTML i CSS, ale może być to ograniczone, jeśli chcesz umieścić dużo obrazów na swojej stronie. W tym przypadku zalecamy wybranie [oferty hostingu OVHcloud](/links/web/hosting) umożliwiającej szybsze przechowywanie danych.
 
 Znacznik HTML używany do wyświetlania obrazu jest znacznikiem `<img>`. W przeciwieństwie do tych, które widzieliśmy wcześniej, nie ma otwartości i zamknięcia tego elementu. Porozmawiamy o autofermantycznym tagu. Są to atrybuty tego znacznika, które umożliwiają powiązanie lokalizacji pliku z opisowym tekstem obrazu.
 

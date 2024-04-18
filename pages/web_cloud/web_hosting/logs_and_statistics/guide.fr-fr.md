@@ -12,7 +12,7 @@ L'accès aux logs et aux statistiques de votre site web est compris dans votre o
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} compatible.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external} compatible.
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

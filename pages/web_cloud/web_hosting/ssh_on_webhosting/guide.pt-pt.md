@@ -16,7 +16,7 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 
 ## Requisitos
 
-- Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} com acesso SSH.
+- Ter um [plano de alojamento web OVHcloud](/links/web/hosting){.external} com acesso SSH.
 - Estar na posse das informações necessárias à conexão em SSH ao espaço de armazenamento.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}.
 
@@ -34,7 +34,7 @@ Na coluna «SSH» da tabela, verifique se o utilizador SSH (ou «Login») em cau
 
 ![usessh](images/tab-ssh.png){.thumbnail}
 
-Se o acesso SSH não estiver ativo, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Modificar`{.action}. Na janela que se abrir, ative o acesso SSH e conclua a modificação. Se não conseguir proceder à ativação, certifique-se de que o seu serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} beneficia de um acesso SSH.
+Se o acesso SSH não estiver ativo, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Modificar`{.action}. Na janela que se abrir, ative o acesso SSH e conclua a modificação. Se não conseguir proceder à ativação, certifique-se de que o seu serviço de [alojamento web OVHcloud](/links/web/hosting){.external} beneficia de um acesso SSH.
 
 ### 2.ª etapa: Obter as informações de acesso <a name="sshlogin"></a>
 

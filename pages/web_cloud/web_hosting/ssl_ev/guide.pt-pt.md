@@ -12,7 +12,7 @@ updated: 2023-06-08
 
 Os certificados Secure Socket Layer (SSL) permitem encriptar as trocas efetuadas a partir ou para o seu website. Isto evita que uma pessoa ou um robô malicioso venha "ouvir" claramente os pedidos enviados ou enviados com o seu website.
 
-A OVHcloud propõe vários tipos de certificados SSL nas nossas ofertas de [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/). Estes são apresentados no nosso guia "[Gerir um certificado SSL no seu alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)". Os certificados SSL são incontornáveis para a segurança do seu website.
+A OVHcloud propõe vários tipos de certificados SSL nas nossas ofertas de [alojamento partilhado OVHcloud](/links/web/hosting). Estes são apresentados no nosso guia "[Gerir um certificado SSL no seu alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)". Os certificados SSL são incontornáveis para a segurança do seu website.
 
 Existem três tipos de certificados SSL:
 
@@ -40,7 +40,7 @@ Para os alojamentos partilhados da OVHcloud, a autoridade de certificação que 
 ## Requisitos <a name="requirements"></a>
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Encomendar ou dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) no qual nenhum certificado SSL já está instalado.
+- Encomendar ou dispor de um [alojamento partilhado OVHcloud](/links/web/hosting) no qual nenhum certificado SSL já está instalado.
 - Encomendar ou dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/) e dispor dos direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
 - ser uma organização (empresa, agência governamental, ...) registada num registo oficial.
 - Ter a autorização da sua organização para encomendar um certificado SSL EV.

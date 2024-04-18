@@ -35,7 +35,7 @@ Aby poprawnie korzystać z pliku ".htaccess", musisz znać i przestrzegać nast�
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
 
 ## W praktyce
 

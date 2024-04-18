@@ -44,9 +44,9 @@ Per risolvere questa anomalia, è necessario:
 
 #### Verifica l'indirizzo IP dell'hosting
 
-I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovhcloud.com/it/web-hosting/). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](https://www.ovhcloud.com/it/domains/).
+I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](/links/web/hosting). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](https://www.ovhcloud.com/it/domains/).
 
-Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/), clicca su `Web Cloud`{.action} `Hosting`{.action} e seleziona l'hosting interessato.
+Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](/links/web/hosting), clicca su `Web Cloud`{.action} `Hosting`{.action} e seleziona l'hosting interessato.
 
 Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IPV6 del tuo hosting.
 
@@ -54,7 +54,7 @@ Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IP
 
 #### Verifica l'indirizzo IP nella zona DNS
 
-A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) corrisponda a quello del tuo [hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/).
+A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) corrisponda a quello del tuo [hosting Web Cloud](/links/web/hosting).
 
 Clicca su `Nomi di dominio`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona il dominio del tuo sito.
 

@@ -24,7 +24,7 @@ Opcja geolokalizacji na Twoim hostingu może być przydatna w pozycjonowaniu (SE
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
   
 ## W praktyce

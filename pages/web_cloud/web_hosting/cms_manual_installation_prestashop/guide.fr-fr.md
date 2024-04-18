@@ -26,7 +26,7 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
@@ -34,7 +34,7 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 ### Etape 1 - préparer l'installation <a name="step1"></a>
 
-Pour installer le CMS **PrestaShop** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer le CMS **PrestaShop** sur votre offre d'[hébergement web](/links/web/hosting), quelques préparatifs sont nécessaires.
 
 Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) avant de poursuivre vers l'étape 2 ci-dessous.
 

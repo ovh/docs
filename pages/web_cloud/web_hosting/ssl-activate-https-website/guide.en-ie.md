@@ -12,7 +12,7 @@ With an OVHcloud Web Hosting plan, you can get an [SSL certificate](https://www.
 
 ## Requirements
 
-- An [SSL certificate](https://www.ovhcloud.com/en-ie/web-hosting/options/ssl/){.external} set up on your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
+- An [SSL certificate](https://www.ovhcloud.com/en-ie/web-hosting/options/ssl/){.external} set up on your [OVHcloud Web Hosting plan](/links/web/hosting){.external}
 - At least one website set up and accessible via your OVHcloud Web Hosting plan
 - Access to the [OVHcloud Control Panel](/links/manager){.external}, part `Web Cloud`{.action}
 

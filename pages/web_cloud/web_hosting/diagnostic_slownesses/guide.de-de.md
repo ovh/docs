@@ -41,7 +41,7 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 
 ## Voraussetzungen
 
-- Sie hosten eine Website auf einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie hosten eine Website auf einem [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## Voraussetzungen
@@ -293,7 +293,7 @@ Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem S
 
 Wenn Ihr Webhosting und Ihre Datenbank **nicht betroffen sind** und Ihre Website trotz der Umsetzung **aller Schritte** in dieser Anleitung weiterhin langsam ist, bedeutet dies wahrscheinlich, dass Ihr Webhosting Dienst den Ansprüchen Ihrer Website nicht oder nicht mehr genügt. 
 
-Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder eine dedizierte Infrastruktur in Betracht, wie einen [Virtual Private Server (VPS)](/links/bare-metal/vps) oder einen [Dedicated Server](/links/bare-metal/bare-metal).
+Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](/links/web/hosting) oder eine dedizierte Infrastruktur in Betracht, wie einen [Virtual Private Server (VPS)](/links/bare-metal/vps) oder einen [Dedicated Server](/links/bare-metal/bare-metal).
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

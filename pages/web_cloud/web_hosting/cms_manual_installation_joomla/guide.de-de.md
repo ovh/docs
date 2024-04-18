@@ -29,7 +29,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) Joomla! in
  
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
+- Sie verfügen über ein [Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
   
@@ -37,7 +37,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) Joomla! in
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a>
 
-Um das CMS **Joomla!** auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren sind einige Vorbereitungen erforderlich.
+Um das CMS **Joomla!** auf Ihrem [OVHcloud Webhosting](/links/web/hosting) zu installieren sind einige Vorbereitungen erforderlich.
 
 Führen Sie zunächst **alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation) aus, bevor Sie mit Schritt 2 fortfahren.
 

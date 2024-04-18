@@ -21,7 +21,7 @@ You may see the error page **Site not installed** displayed on your web browser,
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access to the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) your domain name is attached to.
 

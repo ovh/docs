@@ -41,7 +41,7 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 
 ## Requisitos
 
-- Dispor de um site alojado numa das nossas ofertas de [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um site alojado numa das nossas ofertas de [alojamento partilhado OVHcloud](/links/web/hosting)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
@@ -295,7 +295,7 @@ Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.
 
 Se o seu alojamento web e a sua base de dados ***não estiverem em causa** e o seu website continuar a ser lento, apesar da realização de **todas as etapas** deste guia, isso provavelmente significa que a oferta que utiliza para alojar o seu website não é ou deixou de ser adaptada às suas necessidades. 
 
-Pode considerar uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) ou um [Servidor Dedicado](/links/bare-metal/bare-metal). 
+Pode considerar uma [oferta de alojamento partilhado](/links/web/hosting) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) ou um [Servidor Dedicado](/links/bare-metal/bare-metal). 
 
 ## Quer saber mais? <a name="go-further"></a>
 

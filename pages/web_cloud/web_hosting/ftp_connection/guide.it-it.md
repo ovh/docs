@@ -16,7 +16,7 @@ Le offerte di hosting Web OVHcloud danno accesso a uno spazio di storage FTP che
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}
 
 > [!primary]
@@ -70,7 +70,7 @@ Di seguito trovi una descrizione delle informazioni essenziali visualizzate sull
 
 > [!primary]
 >
-> In base all'offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, alcune delle informazioni descritte in precedenza (in particolare quelle relative all'SSH) potrebbero non comparire.
+> In base all'offerta di [hosting Web OVHcloud](/links/web/hosting){.external}, alcune delle informazioni descritte in precedenza (in particolare quelle relative all'SSH) potrebbero non comparire.
 >
 
 Se non conosci più la password di un utente FTP o SSH, consulta la nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -88,7 +88,7 @@ La connessione allo spazio di storage FTP può essere effettuata in diversi modi
 - [2. Connessione tramite un software FTP](#ftpsoftware): permette di accedere al tuo spazio di storage FTP tramite un software (ad esempio [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) o [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). 
 Dovrai installare il client FTP o il software scelto sul tuo computer.
 
-- [3. Connessione via un accesso SSH](#ssh): permette di accedere al tuo spazio di storage FTP tramite un accesso SSH. Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} **Pro** o **Performance**.
+- [3. Connessione via un accesso SSH](#ssh): permette di accedere al tuo spazio di storage FTP tramite un accesso SSH. Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'offerta di [hosting Web OVHcloud](/links/web/hosting){.external} **Pro** o **Performance**.
 
 #### 1. FTP Explorer <a name="ftpexplorer"></a>
 

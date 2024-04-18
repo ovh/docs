@@ -26,7 +26,7 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

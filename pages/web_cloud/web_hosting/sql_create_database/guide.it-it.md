@@ -16,7 +16,7 @@ Un database (BDD) è utilizzato per archiviare elementi dinamici (dati di connes
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting) che includa almeno un database.
 - Disporre di un database disponibile in "creazione" tra quelli inclusi nel piano di hosting Web. Se necessario, è possibile aggiungere database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) al proprio hosting Web.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) con le [autorizzazioni necessarie](/pages/account_and_service_management/account_information/managing_contacts) per gestire l’hosting Web.
 
@@ -57,7 +57,7 @@ Nella nuova finestra, seleziona le informazioni richieste:
 |Informazione|Descrizione|  
 |---|---| 
 |**Seleziona il tipo di database**|Scegli la dimensione del database. Questa dimensione si riferisce allo spazio di cui dispone il tuo database per l'archiviazione dei dati.|
-|**Seleziona il motore del database da aggiungere**|Scegli il motore che il database deve utilizzare. I database inclusi nella [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) sono disponibili esclusivamente con il motore MySQL.|
+|**Seleziona il motore del database da aggiungere**|Scegli il motore che il database deve utilizzare. I database inclusi nella [soluzione di hosting Web OVHcloud](/links/web/hosting) sono disponibili esclusivamente con il motore MySQL.|
 |**Seleziona la versione del database da aggiungere**|Scegli la versione utilizzata dal motore del database. Assicurati che il sito Web sia compatibile con la versione scelta.|
 
 Clicca su `Continua`{.action}.

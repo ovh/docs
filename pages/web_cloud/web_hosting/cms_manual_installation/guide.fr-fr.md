@@ -35,7 +35,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
@@ -110,7 +110,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 ### Etape 1 - préparer l'installation <a name="step1"></a>
 
-Pour installer un CMS sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
+Pour installer un CMS sur votre offre d'[hébergement web](/links/web/hosting), quelques préparatifs sont nécessaires.
 
 #### 1.1 - Vérifier la déclaration du « dossier racine »
 
@@ -125,7 +125,7 @@ Consultez notre documentation qui décrit [comment ajouter un multisite sur son 
 
 #### 1.2 - Vérifier le « pointage » du nom de domaine
 
-- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](/links/web/hosting).
 
 Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
 Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}.
@@ -163,7 +163,7 @@ Si vous n'utilisez pas déjà un client FTP, vous pouvez utiliser Filezilla. Ret
 > Certains CMS fonctionnent sans base de données. Si c'est le cas pour le CMS que vous souhaitez installer, passez cette étape.
 >
 
-La plupart des CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) en contiennent, à l'exception de [l'hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
+La plupart des CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](/links/web/hosting) en contiennent, à l'exception de [l'hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
 

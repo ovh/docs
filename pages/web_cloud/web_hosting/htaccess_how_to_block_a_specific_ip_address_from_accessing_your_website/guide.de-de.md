@@ -27,7 +27,7 @@ Sie können mehrere ".htaccess" Dateien in [FTP-Bereich](/pages/web_cloud/web_ho
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 

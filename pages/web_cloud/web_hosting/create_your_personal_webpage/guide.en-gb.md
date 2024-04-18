@@ -17,7 +17,7 @@ Find out how to create the first page of a website on a 100M free hosting plan, 
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) or a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting) or a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
 - A text editor (Notepad, TextEdit, Notepad++, etc.)
 - An FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to transfer files to your hosting storage space
 
@@ -172,7 +172,7 @@ You can see the result in your browser: by default, list items are displayed wit
 
 #### Add pictures to make your page more attractive
 
-The web is primarily a visual medium. In this section, we will look at how to insert images into your content. 100M free hosting comes with 100 MB of storage. This is enough for your HTML and CSS pages, but it can be limited if you want to put a lot of images on your site. If this is the case, we recommend opting for an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), as this would give you more storage.
+The web is primarily a visual medium. In this section, we will look at how to insert images into your content. 100M free hosting comes with 100 MB of storage. This is enough for your HTML and CSS pages, but it can be limited if you want to put a lot of images on your site. If this is the case, we recommend opting for an [OVHcloud web hosting plan](/links/web/hosting), as this would give you more storage.
 
 The HTML tag used to display an image is the `<img>` tag. Unlike the tags we saw earlier, there is no opening and closing of this item. We'll call it a self-closing tag. The attributes of this tag will provide the link to the file location and the descriptive text of the image.
 

@@ -27,7 +27,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
@@ -45,7 +45,7 @@ Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Est
 > Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
+Según el plan de [hosting de OVHcloud](/links/web/hosting), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
 
 - **productos que no permiten crear un segundo usuario FTP** (*Alojamiento gratuito 100M* y *Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
 

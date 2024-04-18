@@ -26,7 +26,7 @@ This tutorial will help you install Joomla! CMS (Content Management System) manu
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database
+- An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en-au/domains/)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
@@ -34,7 +34,7 @@ This tutorial will help you install Joomla! CMS (Content Management System) manu
 
 ### Step 1: Prepare for the installation <a name="step1"></a>
 
-To install the **Joomla!** CMS on your [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/), you will need to make some preparations.
+To install the **Joomla!** CMS on your [web hosting plan](/links/web/hosting), you will need to make some preparations.
 
 Follow **all steps** described in our tutorial on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation) before continuing with step 2 below.
 

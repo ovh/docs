@@ -16,7 +16,7 @@ L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
+- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura

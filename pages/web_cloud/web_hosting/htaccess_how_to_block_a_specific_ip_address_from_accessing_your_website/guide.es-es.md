@@ -28,7 +28,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Disponer de un [hosting OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/)
+- Disponer de un [hosting OVHcloud](/links/web/hosting)
 
 ## Procedimiento
 

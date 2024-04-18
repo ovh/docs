@@ -39,9 +39,9 @@ To solve this issue, you will need to:
 
 #### Check the hosting IP address
 
-The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](https://www.ovhcloud.com/en-gb/web-hosting/). For this reason, you will need to check the IP address of the server your [domain name](https://www.ovhcloud.com/en-gb/domains/) is attached to.
+The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](/links/web/hosting). For this reason, you will need to check the IP address of the server your [domain name](https://www.ovhcloud.com/en-gb/domains/) is attached to.
 
-To find the IP address of your [OVHcloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](/links/manager), then on `Hosting plans`{.action}.
+To find the IP address of your [OVHcloud hosting plan](/links/web/hosting), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](/links/manager), then on `Hosting plans`{.action}.
 
 In the `General information`{.action} tab, note the IPv4 and/or IPv6 address of your web hosting.
 
@@ -49,7 +49,7 @@ In the `General information`{.action} tab, note the IPv4 and/or IPv6 address of 
 
 #### Check the IP address in the DNS zone
 
-You now need to check that the IP address listed in the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to the one of your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+You now need to check that the IP address listed in the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) corresponds to the one of your [OVHcloud Web Hosting plan](/links/web/hosting).
 
 Click on `Domain names`{.action} of your [OVHcloud Control Panel](/links/manager) and select your website’s domain name.
 

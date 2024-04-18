@@ -15,7 +15,7 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 ## Prérequis
 
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 > [!warning]
@@ -42,7 +42,7 @@ La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous sou
 ![email-activation](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} supérieure depuis notre page commerciale.
+> Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](/links/web/hosting){.external} supérieure depuis notre page commerciale.
 >
 > Attention : l'activation de l'option e-mail peut prendre quelques minutes. Vous recevrez un e-mail pour vous confirmer l'installation et l'activation de l'offre MXPLAN. Elle inclut notamment la gestion et la configuration de vos adresses e-mail.
 >

@@ -26,7 +26,7 @@ Ceci en utilisant deux fichiers de configuration (HTTP) Apache à placer dans [l
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- Disposer d'une [offre d'hébergement web](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer des identifiants de connexion à [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection).
 

@@ -44,9 +44,9 @@ Para resolver esta anomalía, deberá:
 
 #### Comprobar la dirección IP del alojamiento
 
-Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](https://www.ovhcloud.com/es/web-hosting/). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](https://www.ovhcloud.com/es/domains/).
+Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](/links/web/hosting). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](https://www.ovhcloud.com/es/domains/).
 
-Para encontrar la dirección IP de su [hosting OVHcloud](https://www.ovhcloud.com/es/web-hosting/), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione el alojamiento correspondiente.
+Para encontrar la dirección IP de su [hosting OVHcloud](/links/web/hosting), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o IPV6 de su alojamiento.
 
@@ -54,7 +54,7 @@ En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o I
 
 #### Verificar la dirección IP en la zona DNS
 
-Compruebe que la dirección IP indicada en [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) corresponde a la de su [Web Cloud hosting](https://www.ovhcloud.com/es/web-hosting/).
+Compruebe que la dirección IP indicada en [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) corresponde a la de su [Web Cloud hosting](/links/web/hosting).
 
 Haga clic en `Dominios`{.action} de su [área de cliente de OVHcloud](/links/manager) y seleccione el dominio de su sitio web.
 

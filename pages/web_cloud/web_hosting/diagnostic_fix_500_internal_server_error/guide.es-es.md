@@ -27,7 +27,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener un [plan de hosting](/links/web/hosting).
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 

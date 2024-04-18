@@ -20,7 +20,7 @@ However, if they are not configured correctly, the 1-click module installation m
 
 ## Requirements
 
-- A compatible [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
+- A compatible [web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - The [1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) feature used to install your website
 
@@ -67,7 +67,7 @@ Once complete, you will be able to install a new 1-click module.
 
 > [!primary]
 >
-> Compare our different [hosting plans](https://www.ovhcloud.com/asia/web-hosting/).
+> Compare our different [hosting plans](/links/web/hosting).
 >
 
 In your [OVHcloud Control Panel](/links/manager), click `Web Cloud`{.action}. Click `Hosting plans`{.action}, then select the web hosting plan concerned. On the page that appears in the `Plan` - `Solution` section, click the `...`{.action} `Change plan`{.action}:
@@ -161,7 +161,7 @@ In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!primary]
 >
-> Compare our web hosting plans (https://www.ovhcloud.com/asia/web-hosting/).
+> Compare our web hosting plans (/links/web/hosting).
 >
 
 In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action}, then select the web hosting plan concerned. On the page that appears in the `Plan` - `Solution` section, click the `...`{.action} `Change plan`{.action}:

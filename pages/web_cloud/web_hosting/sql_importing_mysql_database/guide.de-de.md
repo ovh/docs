@@ -13,8 +13,8 @@ Fast alle Content-Management-Systeme (CMS) wie WordPress oder Joomla! verwenden 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Ihr [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting){.external} Angebot.
+- Ihr [OVHcloud Webhosting](/links/web/hosting){.external} Angebot beinhaltet eine Datenbank.
 - Sie haben Zugriff auf das Backup, das Sie in Ihre Datenbanken importieren möchten.
 - Je nach der verwendeten Import-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVHcloud Kundencenter](/links/manager){.external}, oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
 
@@ -30,7 +30,7 @@ Bevor Sie beginnen, wählen Sie die Methode aus, die Sie für den Import des Bac
 
 - **Backup über ein Skript importieren**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVHcloud Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
 
-- **Backup über einen SSH-Befehl importieren**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für den Import. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
+- **Backup über einen SSH-Befehl importieren**: Verbinden Sie sich hierfür via SSH mit Ihrem Speicherplatz und verwenden Sie die entsprechenden Befehle für den Import. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein passendes [OVHcloud Webhosting](/links/web/hosting){.external} Angebot erforderlich.
 
 Einige der oben aufgeführten Methoden lassen sich nicht über ein OVHcloud Interface ausführen. Daher können wir Ihnen nicht sagen, wie diese umzusetzen sind. Im Folgenden geben wir Ihnen hierzu zwar einige Informationen, sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
 

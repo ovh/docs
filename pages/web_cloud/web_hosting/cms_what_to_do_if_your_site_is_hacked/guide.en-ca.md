@@ -27,7 +27,7 @@ Hacking can occur in several ways (non-exhaustive list):
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/fr-ca/web-hosting/) with your website hosted on it.
+- An [OVHcloud web hosting plan](/links/web/hosting) with your website hosted on it.
 - Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions

@@ -27,7 +27,7 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 
 - Disposer d'un terminal compatible avec les commandes Linux et SSH (par exemple, le *terminal* de MacOS ou l'émulateur *Ubuntu* sur Windows)
 - Être familiarisé avec les commandes Linux et SSH
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) bénéficiant d'un accès en SSH
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) bénéficiant d'un accès en SSH
 - Avoir accès à votre [espace client OVHcloud](/links/manager){.external}
 
 ## En pratique

@@ -30,7 +30,7 @@ Wenn Sie in Ihrem Kundencenter eingeloggt sind:
 
 ### Wie kann ich meine Website online stellen? 
 
-Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](https://www.ovhcloud.com/de/domains/), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meinedomain.com*). Sie benötigen auch ein [Hosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Ihre Website installiert werden kann.
+Um Ihre Website online zu stellen benötigen Sie einen [Domainnamen](https://www.ovhcloud.com/de/domains/), der der Webadresse entspricht, über die Ihre Website erreichbar ist (Beispiel: *meinedomain.com*). Sie benötigen auch ein [Hosting](/links/web/hosting), auf dem Ihre Website installiert werden kann.
 
 Folgen Sie den für die Erstellung Ihrer Website notwendigen Schritten auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-website/) und folgen Sie dann den Anweisungen in der Anleitung "[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 
@@ -46,7 +46,7 @@ Lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pag
 
 ## Wie kann ich das Hosting-Angebot ändern?
 
-Um das Webhosting-Angebot zu bestellen, das am besten zu Ihren Bedürfnissen passt, können Sie unsere Angebote auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/) vergleichen.
+Um das Webhosting-Angebot zu bestellen, das am besten zu Ihren Bedürfnissen passt, können Sie unsere Angebote auf [dieser Seite](/links/web/hosting) vergleichen.
 
 Wenn Sie Ihre Wahl getroffen haben, folgen Sie den Anweisungen in unserer Anleitung [Webhosting Angebot upgraden](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 

@@ -30,7 +30,7 @@ utilizzando due file di configurazione (HTTP) Apache da inserire nello [spazio F
 
 ## Prerequisiti
 
-- Disporre di una [offerta di hosting Web](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una [offerta di hosting Web](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre delle credenziali di accesso a [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection)
 

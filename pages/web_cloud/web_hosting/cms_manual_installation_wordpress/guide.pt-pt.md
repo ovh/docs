@@ -31,7 +31,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente o CMS (Content 
 
 ## Requisitos
 
-- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
+- Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
@@ -39,7 +39,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente o CMS (Content 
 
 ### Etapa 1 - preparar a instalação <a name="step1"></a>
 
-Para instalar o CMS **WordPress** na sua oferta de[alojamento web](https://www.ovhcloud.com/pt/web-hosting/), são necessários alguns preparativos.
+Para instalar o CMS **WordPress** na sua oferta de[alojamento web](/links/web/hosting), são necessários alguns preparativos.
 
 Siga os **passos indicados** no nosso manual sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de avançar com o passo 2 abaixo.
 

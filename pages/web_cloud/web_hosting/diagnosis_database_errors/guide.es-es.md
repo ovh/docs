@@ -23,7 +23,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 ## Requisitos
 
-- Disponer de un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) OVHcloud.
+- Disponer de un [plan de hosting](/links/web/hosting) OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
@@ -104,7 +104,7 @@ Desbloquee la base de datos de tres formas distintas:
 
 #### Método 1: cambiar la suscripción a un plan superior
 
-Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](https://www.ovhcloud.com/es-es/web-hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
+Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](/links/web/hosting). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
 
 > [!warning]
 >

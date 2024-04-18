@@ -12,7 +12,7 @@ La fidélisation de vos clients est primordiale pour le développement de votre 
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
+- Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting).
 - Être connecté à votre dashboard MainWP. Pour plus d'informations, consultez notre guide « [Administrer plusieurs sites web WordPress avec le plugin MainWP](/pages/web_cloud/web_hosting/mainwp_general) ».
 
 > [!warning]

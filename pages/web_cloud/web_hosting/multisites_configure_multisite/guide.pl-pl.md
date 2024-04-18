@@ -24,7 +24,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting){.external}.
 - Zarejestrowana domena lub kilka [domen](https://www.ovhcloud.com/pl/domains/){.external}.
 - Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns))
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
@@ -33,7 +33,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 > [!primary]
 >
-> Większość ofert [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} dysponuje opcją tworzenia spersonalizowanego(ych) adresu(ów) e-mail powiązanego z Twoją domeną.
+> Większość ofert [hostingu OVHcloud](/links/web/hosting){.external} dysponuje opcją tworzenia spersonalizowanego(ych) adresu(ów) e-mail powiązanego z Twoją domeną.
 > Ta opcja e-mail może zostać włączona dla **jednej** domeny. Oznacza to, że jeśli korzystasz z opcji *MultiSite* dla kilku różnych domen, możesz włączyć tę opcję tylko dla jednej domeny.
 > Zapoznaj się z [przewodnikiem](/pages/web_cloud/web_hosting/activate-email-hosting), aby uzyskać więcej informacji na temat aktywacji tej opcji.
 >
@@ -169,7 +169,7 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 >
 > Jeśli chcesz dodać kilka stron WWW, powtórz ten etap.
 >
-> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external} znajdziesz liczbę zalecanych stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
+> Zalecamy nie instalować na jednym hostingu zbyt wielu stron. Im większa liczba zainstalowanych stron, tym większe zużycie przypisanych do danego hostingu zasobów. [Na stronie z ofertą hostingu WWW](/links/web/hosting){.external} znajdziesz liczbę zalecanych stron WWW, które możesz zainstalować na Twojej przestrzeni dyskowej.
 >
 
 ## Sprawdź również

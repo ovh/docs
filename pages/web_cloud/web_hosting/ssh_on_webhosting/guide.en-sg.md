@@ -12,7 +12,7 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 ## Requirements
 
-- an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external} with SSH access
+- an [OVHcloud web hosting plan](/links/web/hosting){.external} with SSH access
 - the login credentials required to connect to your storage space via SSH
 - access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager){.external}
 
@@ -30,7 +30,7 @@ Find the table in the ‘SSH’ column to check if the SSH user (or ‘login’)
 
 ![usessh](images/tab-ssh.png){.thumbnail}
 
-If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external} offers SSH access.
+If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](/links/web/hosting){.external} offers SSH access.
 
 ### Step 2: Retrieve your connection information <a name="sshlogin"></a>
 

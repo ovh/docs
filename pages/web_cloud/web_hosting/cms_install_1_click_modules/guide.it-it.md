@@ -18,7 +18,7 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting) che includa almeno un database.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Scopri lo stato delle diverse versioni disponibili in questa [pagina](https://webhosting-infos.hosting.ovh.net/). Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
@@ -39,7 +39,7 @@ Tra tutti i CMS, OVHcloud ne propone 4 per l'installazione automatica con i "mod
 
 Utilizzando questa soluzione, dovrai scegliere tra i 4 CMS citati sopra. Se hai già scelto OVH, prosegui nella lettura degli step di questa guida. In caso contrario, consulta la nostra pagina [comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/) per effettuare la tua scelta.
 
-Per installare un CMS non disponibile tramite i nostri "moduli in 1 click", è possibile installarlo manualmente sul tuo hosting. Questo CMS è compatibile con le nostre soluzioni di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+Per installare un CMS non disponibile tramite i nostri "moduli in 1 click", è possibile installarlo manualmente sul tuo hosting. Questo CMS è compatibile con le nostre soluzioni di [hosting Web OVHcloud](/links/web/hosting).
 
 ![Logo dei CMS](images/cms-logos.png){.thumbnail}
 

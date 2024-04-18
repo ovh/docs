@@ -16,7 +16,7 @@ Con [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting
 >
 > Questo hosting gratuito da 100 MB è ideale per una semplice pagina Web di presentazione, **non include database**.
 > È necessario anche se non sono necessari più indirizzi email come "MX Plan". 
-> Per creare un sito Web composto da più pagine e che necessita di database, come un CMS (WordPress, Joomla!, PrestaShop, Drupal, ecc...), ti consigliamo di ordinare direttamente uno [dei nostri hosting Web](https://www.ovhcloud.com/it/web-hosting/) dal nostro sito o dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
+> Per creare un sito Web composto da più pagine e che necessita di database, come un CMS (WordPress, Joomla!, PrestaShop, Drupal, ecc...), ti consigliamo di ordinare direttamente uno [dei nostri hosting Web](/links/web/hosting) dal nostro sito o dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
 >
 
 **Questa guida ti mostra come attivare il tuo hosting gratuito 100M**
@@ -60,7 +60,7 @@ Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la
 >
 > Puoi anche scegliere di eliminare l'offerta gratuita prendendo cura di recuperare preventivamente i tuoi dati di hosting e il contenuto del tuo indirizzo email.
 >
-> Per maggiori informazioni, consulta le nostre [offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
+> Per maggiori informazioni, consulta le nostre [offerte di hosting](/links/web/hosting).
 >
 
 **Lo Step 3** ti ricorda la tariffazione dell'offerta. 

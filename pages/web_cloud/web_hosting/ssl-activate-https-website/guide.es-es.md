@@ -16,7 +16,7 @@ Los planes de hosting de OVHcloud le permiten disfrutar de un [certificado SSL](
 
 ## Requisitos
 
-- Tener un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} instalado en su [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Tener un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} instalado en su [alojamiento web de OVHcloud](/links/web/hosting){.external}.
 - Tener al menos un sitio web instalado y accesible en su alojamiento web de OVHcloud.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
 

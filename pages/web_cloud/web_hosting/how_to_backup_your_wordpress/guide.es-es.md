@@ -26,7 +26,7 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 
 ## Requisitos
 
-- Disponer de un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/) y haber instalado WordPress.
+- Disponer de un [alojamiento web](/links/web/hosting) y haber instalado WordPress.
 
 ## Procedimiento
 

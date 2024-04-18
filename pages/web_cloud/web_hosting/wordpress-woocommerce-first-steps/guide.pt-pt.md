@@ -21,7 +21,7 @@ Saiba como criar uma loja online com a extensão open source **WooCommerce** com
   
 ## Requisitos
 
-- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
+- Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/).
 - Ter previamente [instalado WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) no seu alojamento web.
 

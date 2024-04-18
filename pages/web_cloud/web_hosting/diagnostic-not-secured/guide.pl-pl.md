@@ -44,9 +44,9 @@ Aby usunąć tę anomalię, należy:
 
 #### Sprawdź adres IP hostingu
 
-[Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](https://www.ovhcloud.com/pl/web-hosting/). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](https://www.ovhcloud.com/pl/domains/).
+[Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](/links/web/hosting). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](https://www.ovhcloud.com/pl/domains/).
 
-Aby odnaleźć adres IP Twojego hostingu [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), kliknij na górze [Panel klienta OVHcloud](/links/manager) na `Web Cloud`{.action}, następnie na `Hosting`{.action} i wybierz odpowiedni hosting.
+Aby odnaleźć adres IP Twojego hostingu [hosting OVHcloud](/links/web/hosting), kliknij na górze [Panel klienta OVHcloud](/links/manager) na `Web Cloud`{.action}, następnie na `Hosting`{.action} i wybierz odpowiedni hosting.
 
 W zakładce `Informacje ogólne`{.action} podaj adres IPV4 i/lub IPV6 Twojego hostingu.
 
@@ -54,7 +54,7 @@ W zakładce `Informacje ogólne`{.action} podaj adres IPV4 i/lub IPV6 Twojego ho
 
 #### Sprawdź adres IP w strefie DNS
 
-Teraz sprawdź, czy adres IP podany w [Strefa DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns) odpowiada adresowi Twojej [hostingu Web Cloud](https://www.ovhcloud.com/pl/web-hosting/).
+Teraz sprawdź, czy adres IP podany w [Strefa DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns) odpowiada adresowi Twojej [hostingu Web Cloud](/links/web/hosting).
 
 Kliknij przycisk `Domeny{.action} w lewym górnym rogu [Panelu klienta OVHcloud](/links/manager) i wybierz nazwę domeny Twojej strony.
 

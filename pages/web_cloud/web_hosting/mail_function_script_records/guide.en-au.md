@@ -10,9 +10,9 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 > [!primary]
 >
-> This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) using the PHP "mail()" function.
+> This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting plan](/links/web/hosting) using the PHP "mail()" function.
 >
-> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](/links/web/hosting){.external} , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,7 +24,7 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 # Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} solution.
+- An [OVHcloud web hosting plan](/links/web/hosting){.external} solution.
 - Access to the [OVHcloud Control Panel](/links/manager){.external}.
 
 ## Instructions
@@ -33,7 +33,7 @@ You can monitor and manage automated emails from your OVHcloud web hosting plan 
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-This page enables you to monitor and manage automated emails sent from your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/).
+This page enables you to monitor and manage automated emails sent from your [OVHcloud web hosting plan](/links/web/hosting).
 
 ### Overview of the “Email scripts” section
 

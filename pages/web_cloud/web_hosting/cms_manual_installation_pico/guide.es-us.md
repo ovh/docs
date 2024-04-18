@@ -16,7 +16,7 @@ El **CMS** (**C**ontent **M**anagement **S**ystem) Pico permite crear rápidamen
 
 ## Requisitos
 
-- Tener contratado [un plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
+- Tener contratado [un plan de hosting de OVHcloud](/links/web/hosting).
 - Tener un [dominio](https://www.ovhcloud.com/es/domains/).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
@@ -24,7 +24,7 @@ El **CMS** (**C**ontent **M**anagement **S**ystem) Pico permite crear rápidamen
 
 ### Preparar la instalación
 
-Para instalar el CMS **Pico** en su [alojamiento web](https://www.ovhcloud.com/es/web-hosting/), es necesario realizar algunos preparativos.
+Para instalar el CMS **Pico** en su [alojamiento web](/links/web/hosting), es necesario realizar algunos preparativos.
 
 Siga el**conjunto de pasos** descritos en nuestro tutorial sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de continuar con el siguiente paso.
 

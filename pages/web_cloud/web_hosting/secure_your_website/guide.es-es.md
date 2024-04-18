@@ -10,7 +10,7 @@ updated: 2024-01-29
 
 ## Objetivo
 
-Esta guía explica cómo adquirir conocimientos básicos para garantizar la disponibilidad de sus servicios, proteger la integridad de sus datos y proteger el acceso a sus soluciones. Solo concierne a los sitios web alojados en las [soluciones compartidas de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
+Esta guía explica cómo adquirir conocimientos básicos para garantizar la disponibilidad de sus servicios, proteger la integridad de sus datos y proteger el acceso a sus soluciones. Solo concierne a los sitios web alojados en las [soluciones compartidas de OVHcloud](/links/web/hosting).
 
 Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con nuestros [partners](/links/partner).
 
@@ -25,7 +25,7 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 
 ## Requisitos
 
-- un [plan OVHcloud Web Hosting](https://www.ovhcloud.com/es-es/web-hosting/)
+- un [plan OVHcloud Web Hosting](/links/web/hosting)
 - tener los detalles de [inicio de sesión](/pages/web_cloud/web_hosting/ftp_connection#1-obtener-los-datos-de-conexion) para acceder al espacio de almacenamiento de su plan de alojamiento
 - acceso al [panel de control de OVHcloud](/links/manager)
 - acceso a la [interfaz de administración de su sitio web](https://codex.wordpress.org/es:First_Steps_With_WordPress){.external}

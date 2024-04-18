@@ -24,7 +24,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 
 ## Requisitos
 
-- Ter um serviço [de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
+- Ter um serviço [de alojamento web OVHcloud](/links/web/hosting){.external} compatível.
 - Dispor de um ou vários [domínios](https://www.ovhcloud.com/pt/domains/){.external}.
 - Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
@@ -33,7 +33,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 
 > [!primary]
 >
-> A maioria das ofertas de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} dispõem de uma opção incluída de criação de endereço(s) de e-mail personalizado(s) com o seu nome de domínio.
+> A maioria das ofertas de [alojamento web OVHcloud](/links/web/hosting){.external} dispõem de uma opção incluída de criação de endereço(s) de e-mail personalizado(s) com o seu nome de domínio.
 > Esta opção de e-mail pode ser ativada para **apenas um** nome de domínio. Isto significa que se utilizar o *multisite* com vários domínios, só poderá ativar esta opção para um dos seus nomes de domínio.
 > Não hesite em consultar o nosso [guia](/pages/web_cloud/web_hosting/activate-email-hosting) para mais pormenores sobre a ativação desta opção.
 >
@@ -72,7 +72,7 @@ No caso de um nome de domínio externo à sua conta de cliente (outro identifica
 > [!warning]
 > Esta etapa só se aplica se tiver selecionado "Adicionar um domínio registado na OVHcloud". O domínio ou a zona DNS devem estar localizados **na Área de Cliente**. Para os nomes de domínio externos, passe ao [passo 2.2: adicionar um domínio externo](#add-external-domain){.external}
 
-Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, alguns elementos propostos não poderão ser selecionados.
+Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu serviço de [alojamento web](/links/web/hosting){.external}, alguns elementos propostos não poderão ser selecionados.
 
 > [!primary]
 > Para adicionar um subdomínio, deve primeiro selecionar o domínio principal na lista (exemplo: domain.tld). O passo seguinte permitir-lhe-á indicar o subdomínio (exemplo: **blog**.domain.tld).
@@ -132,7 +132,7 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 > ![multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder utilizar, alterando as definições dos parâmetros do multisite quando este for adicionado.
+ Aqui, deverá personalizar a adição do domínio. Tenha em atenção que algumas opções incluídas na sua oferta de [alojamento web](/links/web/hosting){.external} não podem ser ativadas durante este processo. Deverá finalizar esta operação antes de as poder utilizar, alterando as definições dos parâmetros do multisite quando este for adicionado.
 
 |Informação|Descrição|
 |---|---|
@@ -169,7 +169,7 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 >
 > Se pretender adicionar vários websites, deverá repetir esta etapa.
 >
-> Lembre-se de que quanto maior for o número de sites no seu alojamento, maior será a solicitação de recursos atribuídos. [A página das nossas ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} indica o número de websites recomendados que pode alojar no seu espaço.
+> Lembre-se de que quanto maior for o número de sites no seu alojamento, maior será a solicitação de recursos atribuídos. [A página das nossas ofertas de alojamento web](/links/web/hosting){.external} indica o número de websites recomendados que pode alojar no seu espaço.
 >
 
 ## Quer saber mais?

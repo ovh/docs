@@ -10,7 +10,7 @@ updated: 2022-01-05
 
 ## Wprowadzenie 
 
-Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](https://www.ovhcloud.com/pl/web-hosting/) może spowodować różne nieprawidłowości. Niniejszy przewodnik pozwoli Ci rozwiązać najczęstsze z nich.
+Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](/links/web/hosting) może spowodować różne nieprawidłowości. Niniejszy przewodnik pozwoli Ci rozwiązać najczęstsze z nich.
 
 **Dowiedz się, jak usunąć błędy związane z oprogramowaniem FTP.**
 
@@ -23,7 +23,7 @@ Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](https://w
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [oferty hostingu WWW Cloud](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

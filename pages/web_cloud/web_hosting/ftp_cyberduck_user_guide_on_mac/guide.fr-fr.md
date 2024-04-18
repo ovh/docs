@@ -27,7 +27,7 @@ Pour télécharger Cyberduck, rendez-vous sur le [site officiel](https://cyberdu
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external}.
 - Avoir téléchargé et installé l'application Cyberduck sur votre ordinateur.
 
 ## En pratique

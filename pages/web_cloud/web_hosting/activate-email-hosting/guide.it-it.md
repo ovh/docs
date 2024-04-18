@@ -17,7 +17,7 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 ## Prerequisiti
 
 - Aver registrato un [dominio](https://www.ovhcloud.com/it/domains/){.external} nello Spazio Cliente OVHcloud
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
+- Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 > [!warning]
@@ -44,7 +44,7 @@ Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare g
 ![Attivazione email](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Per usufruire di più account email inclusi, ordina una [offerta di hosting web](https://www.ovhcloud.com/it/web-hosting/){.external} superiore dalla nostra pagina commerciale.
+> Per usufruire di più account email inclusi, ordina una [offerta di hosting web](/links/web/hosting){.external} superiore dalla nostra pagina commerciale.
 >
 > Attenzione: l’attivazione dell’opzione email potrebbe richiedere alcuni minuti. Riceverai un’email di conferma dell’installazione e dell’attivazione della soluzione MXPLAN. e include la gestione e la configurazione degli indirizzi email.
 >

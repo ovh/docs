@@ -18,7 +18,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
@@ -83,7 +83,7 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 - **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. FileZilla. Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH.
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](/links/web/hosting){.external} z dostępem SSH.
 
 #### 3. Zapisanie plików na przestrzeni dyskowej
 
@@ -116,7 +116,7 @@ Jeśli przenosisz istniejącą stronę WWW do OVHcloud, pobierz bazę danych od 
 
 #### 2. Utworzenie bazy danych w OVHcloud 
 
-Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external},[Web Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
+Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](/links/web/hosting){.external},[Web Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
 Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](/links/manager){.external} i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
 

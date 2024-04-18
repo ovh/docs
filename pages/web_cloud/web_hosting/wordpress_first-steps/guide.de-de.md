@@ -22,7 +22,7 @@ Mithilfe dieser Anleitung können Sie Ihre ersten Inhalte erstellen, organisiere
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
+- Sie verfügen über ein [Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben [WordPress installiert](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).

@@ -17,7 +17,7 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 
 ## Prerequisiti
 
-- Una [soluzione Web Hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Una [soluzione Web Hosting OVHcloud](/links/web/hosting){.external}
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
 - Un [dominio](https://www.ovhcloud.com/it/domains/){.external}per accedere al tuo sito
 - avere accesso allo [Spazio Cliente](/links/manager){.external}OVHcloud
@@ -50,7 +50,7 @@ Le risposte a queste domande possono aiutarti a concentrarti su aspetti ben spec
 
 I CMS come WordPress, PrestaShop, Drupal o Joomla! utilizzano numerose librerie, in modo che una sola pagina possa contenere molti elementi.
 Questi devono essere caricati e letti dal browser Internet dei tuoi utenti.
-Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](https://www.ovhcloud.com/it/web-hosting/){.external}.
+Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](/links/web/hosting){.external}.
 
 Per maggiori informazioni clicca [qui](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/){.external}.
 
@@ -156,7 +156,7 @@ Trovi tutte le offerte CDN OVHcloud [qui](https://www.ovh.it/cdn/){.external}.
 
 _Se non utilizzi un CMS, questo step è facoltativo_
 
-Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](https://www.ovhcloud.com/it/web-hosting/){.external}.
+Per essere sicuro che il tuo piano di hosting sia adatto alle esigenze del tuo CMS, puoi confrontare i nostri servizi in [questa pagina](/links/web/hosting){.external}.
 
 - **Utilizzo dei plugin di cache:** I CMS utilizzano molte librerie in modo che una sola pagina Web possa contenere una grande quantità di elementi. Per ottimizzare l’utilizzo del tuo CMS, ti consigliamo di usare dei plugin di cache che ti permettono di evitare di rigenerare completamente il contenuto del tuo sito ogni volta che la pagina viene caricata. Cercane uno sul sito del CMS che utilizzi (Joomla! - PrestaShop - WordPress) per ottimizzare il tuo sito.
 

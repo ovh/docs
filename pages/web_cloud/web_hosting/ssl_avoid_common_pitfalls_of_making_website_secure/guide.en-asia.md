@@ -19,7 +19,7 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - At least one [domain name](https://www.ovhcloud.com/asia/domains/)
 - Access to the [OVHcloud Control Panel](/links/manager) in the "Web Cloud" section
 

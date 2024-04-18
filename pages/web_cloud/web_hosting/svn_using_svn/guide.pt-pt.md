@@ -23,7 +23,7 @@ SVN, que é a abreviação de "subversion", é um sistema de gestão de versões
 
 ## Pré-requisitos
 
-- Ter um [plano de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que permite uma ligação SSH (**a partir da oferta Pro**)
+- Ter um [plano de alojamento web](/links/web/hosting) que permite uma ligação SSH (**a partir da oferta Pro**)
 - Aceder via SSH ao seu alojamento Web (pode consultar o nosso guia [Utilizar o acesso SSH do alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting))
 
 ## Instruções

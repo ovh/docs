@@ -19,7 +19,7 @@ SVN, qui est l'abrévation de « subversion », est un système de gestion de ve
 
 ## Pre-requis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) permettant une connexion SSH (**à partir de l'offre Pro**)
+- Disposer d'une [offre d'hébergement web](/links/web/hosting) permettant une connexion SSH (**à partir de l'offre Pro**)
 - Se connecter en SSH à votre hébergement Web (vous pouvez consulter notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting))
 
 ## En pratique

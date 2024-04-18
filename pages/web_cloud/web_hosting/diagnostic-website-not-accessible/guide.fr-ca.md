@@ -113,7 +113,7 @@ Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
-Si votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/), cliquez sur l'onglet `Hébergements`{.action}, puis sur l'offre concernée.
+Si votre site est hébergé sur l'une de nos [offres Web Cloud](/links/web/hosting), cliquez sur l'onglet `Hébergements`{.action}, puis sur l'offre concernée.
 
 Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou IPV6 de votre domaine.
 

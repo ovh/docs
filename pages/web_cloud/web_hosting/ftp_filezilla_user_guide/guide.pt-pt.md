@@ -26,7 +26,7 @@ Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
-- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting){.external}.
 - Ter instalado o software Filezilla no seu computador. Este último está disponível gratuitamente a partir da página [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ## Apresentação da interface <a name="interface"></a>

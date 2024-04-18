@@ -20,7 +20,7 @@ Cependant, si la configuration de ces derniers n'est pas correctement réalisée
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) compatible.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) compatible.
 - Être connecté à l'[espace client OVHcloud](/links/manager).
 - Avoir utilisé la fonctionnalité « [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » pour créer un nouveau site web.
 
@@ -67,7 +67,7 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 
 > [!primary]
 >
-> Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/).
+> Retrouvez le comparatif de nos différentes [offres d'hébergement](/links/web/hosting).
 >
 
 Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} `Changer d'offre`{.action} :
@@ -161,7 +161,7 @@ Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_c
 
 > [!primary]
 >
-> Retrouvez le comparatif de nos différentes [offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
+> Retrouvez le comparatif de nos différentes [offres d'hébergement web](/links/web/hosting).
 >
 
 Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} `Changer d'offre`{.action} :

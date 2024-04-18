@@ -26,7 +26,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 ## Requisitos
 
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/).
-- Dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

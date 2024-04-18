@@ -16,7 +16,7 @@ Le operazioni di gestione degli hosting Web OVHcloud, disponibili direttamente n
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attivo.
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting){.external} attivo.
 - Aver registrato almeno un [dominio](https://www.ovhcloud.com/it/domains/){.external}.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}.
 
@@ -103,7 +103,7 @@ Nel caso che invece compaia la voce “Sì”, significa che sull’hosting Web 
 
 ![Gestione SSL](images/order-an-ssl-certificate.png){.thumbnail}
 
-Nella nuova finestra, seleziona il certificato che vuoi generare. Ti ricordiamo che, in base al [piano di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo e alla sua configurazione, alcune delle soluzioni elencate in questa guida potrebbero non essere disponibili. Una volta effettuata la scelta, clicca sul pulsante `Seguente`{.action}.
+Nella nuova finestra, seleziona il certificato che vuoi generare. Ti ricordiamo che, in base al [piano di hosting Web](/links/web/hosting){.external} attivo e alla sua configurazione, alcune delle soluzioni elencate in questa guida potrebbero non essere disponibili. Una volta effettuata la scelta, clicca sul pulsante `Seguente`{.action}.
 
 ![Gestione SSL](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 

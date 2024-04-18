@@ -10,7 +10,7 @@ updated: 2022-01-05
 
 ## Objetivo
 
-A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) pode causar várias anomalias. Este guia permitir-lhe-á resolver os problemas mais comuns.
+A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud](/links/web/hosting) pode causar várias anomalias. Este guia permitir-lhe-á resolver os problemas mais comuns.
 
 **Descubra como corrigir os erros relacionados com o software FTP.**
 
@@ -23,7 +23,7 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 
 ## Requisitos
 
-- Ter um [serviço de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter um [serviço de alojamento Web Cloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

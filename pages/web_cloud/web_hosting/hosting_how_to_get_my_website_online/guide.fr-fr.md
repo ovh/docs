@@ -6,13 +6,13 @@ updated: 2024-03-21
 
 ## Objectif
 
-Il existe une multitude de sites internet. Qu'il s'agisse de blogs, de boutiques en ligne, de sites personnels ou professionnels, votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} vous permet de réaliser votre projet, tant que celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
+Il existe une multitude de sites internet. Qu'il s'agisse de blogs, de boutiques en ligne, de sites personnels ou professionnels, votre [hébergement web OVHcloud](/links/web/hosting){.external} vous permet de réaliser votre projet, tant que celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Apprenez à mettre en ligne un site internet sur votre hébergement web OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} qui sera l'adresse d'accès à votre site web.
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
@@ -76,7 +76,7 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 
 - **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme FileZilla. Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
 
 #### 3. Télécharger les fichiers sur l'espace de stockage
 
@@ -109,7 +109,7 @@ Si vous êtes en train de migrer un site internet, récupérez la base de donné
 
 #### 2. Créer la base de données chez OVHcloud
 
-Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external}), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
+Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external}), munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
 
 Si vous souhaitez créer une nouvelle base de données chez OVHcloud, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, puis cliquez sur `Hébergements`{.action}. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `Base de données`{.action}.
 

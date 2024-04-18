@@ -20,7 +20,7 @@ Dieses Tutorial erklärt, wie Sie einen Onlineshop mit der Open-Source-Anwendung
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
+- Sie verfügen über ein [Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben [WordPress installiert](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

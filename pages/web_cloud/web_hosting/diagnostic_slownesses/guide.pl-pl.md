@@ -41,7 +41,7 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 
 ## Wymagania początkowe
 
-- Posiadanie strony internetowej zainstalowanej w ramach jednej z naszych ofert[hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie strony internetowej zainstalowanej w ramach jednej z naszych ofert[hosting OVHcloud](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
@@ -295,7 +295,7 @@ Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na
 
 Jeśli Twój hosting WWW i baza danych **nie są przedmiotem dyskusji** i Twoja strona WWW będzie się powoli rozwijać, pomimo realizacji **wszystkich etapów** tego przewodnika, prawdopodobnie oznacza to, że oferta, której używasz do hostowania Twojej strony WWW nie jest lub jest bardziej odpowiednia dla Twojego projektu. 
 
-Możesz rozważyć ofertę [hostingu współdzielonego](https://www.ovhcloud.com/pl/web-hosting/) lub infrastrukturę dedykowaną, taką jak [Serwer Wirtualny Prywatny (VPS)](/links/bare-metal/vps) lub [Serwer dedykowany](/links/bare-metal/bare-metal). 
+Możesz rozważyć ofertę [hostingu współdzielonego](/links/web/hosting) lub infrastrukturę dedykowaną, taką jak [Serwer Wirtualny Prywatny (VPS)](/links/bare-metal/vps) lub [Serwer dedykowany](/links/bare-metal/bare-metal). 
 
 ## Sprawdź również <a name="go-further"></a>
 

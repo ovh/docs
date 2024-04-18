@@ -23,7 +23,7 @@ Tutorial ten wyjaśnia, jakie działania należy podjąć, gdy wirtualna baza da
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) wraz z powiązaną bazą danych współdzieloną OVHcloud.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting) wraz z powiązaną bazą danych współdzieloną OVHcloud.
   
 ## W praktyce
 

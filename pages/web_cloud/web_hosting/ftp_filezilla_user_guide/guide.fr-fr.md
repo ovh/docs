@@ -23,7 +23,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
 - Avoir installé le logiciel Filezilla sur votre ordinateur. Celui-ci est disponible gratuitement depuis la page [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ## Présentation de l'interface <a name="interface"></a>

@@ -22,7 +22,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 - Sie verwenden einen unserer Datenbankdienste: [Web Cloud](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/).
 
@@ -103,7 +103,7 @@ Sie können Ihre Datenbank mit drei Methoden entsperren:
 
 #### Methode 1: Ihren Dienst upgraden
 
-Wenn Sie über ein Webhosting **Basic** oder **Pro** verfügen, empfehlen wir Ihnen, auf das [nächsthöhere Hosting-Angebot](https://www.ovhcloud.com/de/web-hosting/) umzusteigen. Diese Erweiterung erhöht auch die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
+Wenn Sie über ein Webhosting **Basic** oder **Pro** verfügen, empfehlen wir Ihnen, auf das [nächsthöhere Hosting-Angebot](/links/web/hosting) umzusteigen. Diese Erweiterung erhöht auch die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
 
 > [!warning]
 >

@@ -24,7 +24,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 
 ## Prerequisiti
 
-- Disporre di una soluzione [di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} compatibile
+- Disporre di una soluzione [di hosting Web OVHcloud](/links/web/hosting){.external} compatibile
 - Disporre di uno o più [domini](https://www.ovhcloud.com/it/domains/){.external}
 - Poter modificare la configurazione dei tuoi domini (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns))
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
@@ -33,7 +33,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 
 > [!primary]
 >
-> La maggior parte delle soluzioni di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} includono un’opzione per la creazione di indirizzi email personalizzati con il dominio.
+> La maggior parte delle soluzioni di [hosting Web OVHcloud](/links/web/hosting){.external} includono un’opzione per la creazione di indirizzi email personalizzati con il dominio.
 > Questa opzione email può essere attivata per **un solo* dominio. *multisito* con diversi domini permette di attivare questa opzione solo per uno dei tuoi domini.
 > Per maggiori informazioni sull’attivazione di questa opzione, consulta la nostra [guida](/pages/web_cloud/web_hosting/activate-email-hosting).
 >
@@ -72,7 +72,7 @@ Nel caso di un dominio esterno al tuo account cliente (altro identificativo clie
 > [!warning]
 > Questo step è valido solo se hai selezionato l'opzione "Aggiungi un dominio registrato in OVHcloud". Il dominio o la sua zona DNS devono trovarsi **nello Spazio Cliente**. Per i domini esterni, passa allo [Step 2.2: aggiungere un dominio esterno](#add-external-domain){.external}.
 
-A questo punto è necessario personalizzare l'aggiunta del dominio o sottodominio. In base al piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivato, alcune opzioni potrebbero non essere disponibili.
+A questo punto è necessario personalizzare l'aggiunta del dominio o sottodominio. In base al piano di [hosting Web](/links/web/hosting){.external} attivato, alcune opzioni potrebbero non essere disponibili.
 
 > [!primary]
 > Per aggiungere un sottodominio, è necessario selezionare il dominio principale nella lista (ad esempio: domain.tld). Lo step successivo ti permetterà di indicare il sottodominio (esempio: **blog**.domain.tld).
@@ -132,7 +132,7 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 > ![multisito](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- Una volta selezionato il dominio che vuoi associare all’hosting, è necessario personalizzarne i parametri. Tieni presente che alcune delle opzioni incluse nel tuo piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} non potranno essere attivate durante questo processo: sarà prima necessario aggiungere il dominio e modificare i parametri del multisito.
+ Una volta selezionato il dominio che vuoi associare all’hosting, è necessario personalizzarne i parametri. Tieni presente che alcune delle opzioni incluse nel tuo piano di [hosting Web](/links/web/hosting){.external} non potranno essere attivate durante questo processo: sarà prima necessario aggiungere il dominio e modificare i parametri del multisito.
 
 |Campo|Descrizione|
 |---|---|
@@ -169,7 +169,7 @@ Se invece vuoi effettuare un’installazione manuale, assicurati di avere a disp
 >
 > Per aggiungere più siti Web, ripeti questa operazione.
 >
-> Ti consigliamo però di prestare la massima attenzione:  maggiore è il numero di siti ospitati, più alto sarà il numero di risorse necessarie. [La pagina delle nostre soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} indica il numero di siti Internet raccomandati che puoi ospitare sul tuo spazio.
+> Ti consigliamo però di prestare la massima attenzione:  maggiore è il numero di siti ospitati, più alto sarà il numero di risorse necessarie. [La pagina delle nostre soluzioni di hosting Web](/links/web/hosting){.external} indica il numero di siti Internet raccomandati che puoi ospitare sul tuo spazio.
 >
 
 ## Per saperne di più

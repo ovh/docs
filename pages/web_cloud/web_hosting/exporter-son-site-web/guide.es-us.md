@@ -10,13 +10,13 @@ updated: 2022-02-03
 
 ## Objetivo
 
-Esta guía explica los pasos que debe seguir para exportar todos los elementos de su sitio web al formato estándar desde un [alojamiento web de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+Esta guía explica los pasos que debe seguir para exportar todos los elementos de su sitio web al formato estándar desde un [alojamiento web de OVHcloud](/links/web/hosting){.external}.
 
 **Esta guía explica cómo exportar un sitio web de OVHcloud.**
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
@@ -42,7 +42,7 @@ Una vez que disponga de todos los elementos necesarios, la recuperación de los 
 
 - **Cliente FTP o SFTP** : deberá instalar en su ordenador un programa compatible, como [FileZilla ](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del programa instalado, ya que OVHcloud no lo ha creado.
 
-- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} específico. Para más información, consulte nuestra guía ["Utilizar el acceso SSH de un alojamiento web"](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+- **Acceso SSH**: Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](/links/web/hosting){.external} específico. Para más información, consulte nuestra guía ["Utilizar el acceso SSH de un alojamiento web"](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
 
 #### 1.2. Descargar los archivos desde el espacio de almacenamiento.
 

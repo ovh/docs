@@ -30,7 +30,7 @@ Depois de aceder à Área de Cliente:
 
 ### Como pôr o meu site em linha? 
 
-Para colocar o seu site online, deverá dispor de um [domínio](https://www.ovhcloud.com/pt/domains/) correspondente ao endereço Web a partir do qual o seu site estará acessível (exemplo: *meudominio.com*). Também precisará de um [alojamento](https://www.ovhcloud.com/pt/web-hosting/) para instalar o seu site.
+Para colocar o seu site online, deverá dispor de um [domínio](https://www.ovhcloud.com/pt/domains/) correspondente ao endereço Web a partir do qual o seu site estará acessível (exemplo: *meudominio.com*). Também precisará de um [alojamento](/links/web/hosting) para instalar o seu site.
 
 Para seguir os passos necessários para construir o seu website, consulte esta [página](https://www.ovhcloud.com/pt/web-hosting/uc-website/) e siga as instruções do guia [Publicar um website no seu alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
@@ -46,7 +46,7 @@ Consulte o guia [Partilhar o alojamento entre vários sites](/pages/web_cloud/we
 
 ### Como mudar de fórmula de alojamento?
 
-Para encomendar a fórmula de alojamento web mais adaptada às suas necessidades, pode consultar as nossas ofertas em [esta página](https://www.ovhcloud.com/pt/web-hosting/).
+Para encomendar a fórmula de alojamento web mais adaptada às suas necessidades, pode consultar as nossas ofertas em [esta página](/links/web/hosting).
 
 Uma vez selecionada a opção, siga as instruções do nosso manual ["Fazer evoluir o seu plano de alojamento web"](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 

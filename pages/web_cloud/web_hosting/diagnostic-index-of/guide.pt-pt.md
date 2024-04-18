@@ -29,7 +29,7 @@ Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 ## Requisitos
 
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
+- Ter um [serviço de alojamento web](/links/web/hosting)
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

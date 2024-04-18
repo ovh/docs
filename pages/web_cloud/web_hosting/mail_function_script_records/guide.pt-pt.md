@@ -14,9 +14,9 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 
 > [!primary]
 >
-> Este guia trata principalmente dos e-mails enviados a partir de scripts situados no seu [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) com a ajuda da função "mail()" de PHP.
+> Este guia trata principalmente dos e-mails enviados a partir de scripts situados no seu [alojamento web da OVHcloud](/links/web/hosting) com a ajuda da função "mail()" de PHP.
 >
-> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}, consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](/links/web/hosting){.external}, consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}.
 - Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
@@ -37,7 +37,7 @@ O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVH
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-A página que aparece permite-lhe seguir e gerir os e-mails automatizados enviados a partir do seu [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+A página que aparece permite-lhe seguir e gerir os e-mails automatizados enviados a partir do seu [alojamento web da OVHcloud](/links/web/hosting).
 
 ### Apresentação da parte "Scripts emails"
 

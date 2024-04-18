@@ -21,7 +21,7 @@ Si tiene contratado un plan de hosting de OVHcloud, puede acceder a un espacio d
   
 ## Requisitos
 
-- Tener contratado un plan de hosting de OVHcloud (https://www.ovhcloud.com/es/web-hosting/)
+- Tener contratado un plan de hosting de OVHcloud (/links/web/hosting)
 - Instalar [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) en el equipo
 
 ## Procedimiento
@@ -185,7 +185,7 @@ Esta guía explica cómo administrar un proyecto desde Visual Studio Code de for
 
 [Utilizar FileZilla con el alojamiento de OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Recuerde que para utilizar el SSH, debe disponer de un [plan de hosting Profesional o Performance](https://www.ovhcloud.com/es/web-hosting/).
+[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Recuerde que para utilizar el SSH, debe disponer de un [plan de hosting Profesional o Performance](/links/web/hosting).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

@@ -25,7 +25,7 @@ Per funzionare correttamente, ciascun server salva nella memoria cache una parte
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) attivo
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting) attivo
 
 ## Procedura
 

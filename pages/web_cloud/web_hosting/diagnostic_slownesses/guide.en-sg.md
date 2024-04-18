@@ -36,7 +36,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 
 ## Requirements
 
-- A website hosted on an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- A website hosted on an [OVHcloud web hosting plan](/links/web/hosting)
 - A [domain name](https://www.ovhcloud.com/en-sg/domains/)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
@@ -290,7 +290,7 @@ You can find optimisation suggestions for your site by analysing it at [gtmetrix
 
 If your web hosting plan and your **database are not affected** and your website continues to be slow, despite completing **all of the steps** in this guide, this probably means that the solution you are using to host your website is not or is no longer adapted to your needs.
 
-You might consider a more capable [shared hosting offer](https://www.ovhcloud.com/en-sg/web-hosting/) or a dedicated infrastructure such as a [Virtual Private Server (VPS)](/links/bare-metal/vps) or [Dedicated Server](/links/bare-metal/bare-metal). 
+You might consider a more capable [shared hosting offer](/links/web/hosting) or a dedicated infrastructure such as a [Virtual Private Server (VPS)](/links/bare-metal/vps) or [Dedicated Server](/links/bare-metal/bare-metal). 
 
 ## Go further <a name="go-further"></a>
 

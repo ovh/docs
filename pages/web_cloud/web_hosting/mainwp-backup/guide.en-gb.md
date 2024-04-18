@@ -19,7 +19,7 @@ MainWP offers several extensions for backing up your websites.
 
 ## Requirements
 
-- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- A [Web Cloud hosting plan](/links/web/hosting).
 - Access to your MainWP dashboard.
 
 > [!warning]

@@ -39,7 +39,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
   
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que contenga al menos una base de datos.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/)
 - Estar conectado al [área de cliente de OVHcloud](/links/manager)
   
@@ -114,7 +114,7 @@ Más información en nuestra página relativa a [PrestaShop](https://www.ovhclou
 
 ### Etapa 1 - preparar la instalación <a name="step1"></a>
 
-Para instalar un CMS en su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), es necesario realizar algunos preparativos.
+Para instalar un CMS en su [plan de hosting](/links/web/hosting), es necesario realizar algunos preparativos.
 
 #### 1.1 - Comprobar la declaración de la "carpeta raíz"
 
@@ -128,7 +128,7 @@ Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](
 
 #### 1.2 - Comprobar el "puntero" del nombre de dominio
 
-- Asegúrese de que el dominio que utilizará para acceder al CMS y el subdominio en "www" apuntan a la dirección IP de su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+- Asegúrese de que el dominio que utilizará para acceder al CMS y el subdominio en "www" apuntan a la dirección IP de su [plan de hosting](/links/web/hosting).
 
 Para obtener la dirección IP de su plan de hosting, conéctese a su [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y seleccione su plan de hosting en la sección `Alojamientos`{.action}.<br>
 En el recuadro `Información general`{.action}, a su derecha, encontrará la dirección IP de su alojamiento web en el formulario `IPv4`{.action}.
@@ -165,7 +165,7 @@ Si todavía no utiliza un cliente FTP, puede utilizar Filezilla. Consulte la pá
 > Algunos CMS funcionan sin bases de datos. Si es el caso del CMS que quiere instalar, omita este paso.
 >
 
-La mayoría de los CMS necesitan una base de datos para funcionar. Nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) contienen, a excepción de [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/).
+La mayoría de los CMS necesitan una base de datos para funcionar. Nuestros [planes de hosting](/links/web/hosting) contienen, a excepción de [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/).
 
 Utilice nuestra guía para [crear una base de datos desde su plan de hosting](/pages/web_cloud/web_hosting/sql_create_database).
 

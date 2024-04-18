@@ -29,7 +29,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
-- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
+- Tener un [plan de hosting](/links/web/hosting).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento

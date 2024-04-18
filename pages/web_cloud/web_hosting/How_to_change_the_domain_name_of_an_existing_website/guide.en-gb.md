@@ -22,7 +22,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

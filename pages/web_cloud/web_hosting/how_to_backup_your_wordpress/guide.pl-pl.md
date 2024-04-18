@@ -26,7 +26,7 @@ Na hostingu możesz zarządzać kopiami zapasowymi Twojej strony WWW. Nawet jeś
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) i zainstalowanie WordPressa
+- Posiadanie [hostingu](/links/web/hosting) i zainstalowanie WordPressa
 
 ## W praktyce
 

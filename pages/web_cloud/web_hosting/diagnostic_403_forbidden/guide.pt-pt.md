@@ -45,7 +45,7 @@ Após a deteção de um funcionamento suspeito, os nossos robôs de segurança p
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) OVHcloud.
+- Ter um [serviço de alojamento web](/links/web/hosting) OVHcloud.
 - Dispor dos [dados de acesso](/pages/web_cloud/web_hosting/ftp_connection) ao espaço FTP de armazenamento do seu alojamento.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 

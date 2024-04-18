@@ -25,7 +25,7 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}.
 - Posiadanie co najmniej jednej [domeny](https://www.ovhcloud.com/pl/domains/){.external} przypisanej do hostingu
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 

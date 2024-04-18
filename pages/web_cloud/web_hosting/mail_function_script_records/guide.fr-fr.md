@@ -10,9 +10,9 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 > [!primary]
 >
-> Ce guide concerne principalement les e-mails envoyés depuis des scripts situés sur votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) à l'aide de la fonction « mail() » de PHP.
+> Ce guide concerne principalement les e-mails envoyés depuis des scripts situés sur votre [hébergement web OVHcloud](/links/web/hosting) à l'aide de la fonction « mail() » de PHP.
 >
-> Si vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}, consultez notre documentation sur les [E-mails mutualisés - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Si vous souhaitez gérer les adresses e-mail comprises dans votre offre MX Plan ou dans votre offre d'[hébergement web OVHcloud](/links/web/hosting){.external}, consultez notre documentation sur les [E-mails mutualisés - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,7 +24,7 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
@@ -33,7 +33,7 @@ Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHclo
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
+La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](/links/web/hosting).
 
 ### Présentation de la partie « Scripts emails »
 

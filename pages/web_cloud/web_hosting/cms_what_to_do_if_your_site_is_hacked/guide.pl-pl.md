@@ -31,7 +31,7 @@ Piractwo może pojawić się na kilka sposobów (niewyczerpująca lista):
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/) na Twojej stronie WWW z hostingiem
+- Posiadanie [hostingu WWW Cloud](/links/web/hosting) na Twojej stronie WWW z hostingiem
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

@@ -25,7 +25,7 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
 - Tener al menos un [dominio](https://www.ovhcloud.com/es/domains/){.external} asociado al alojamiento.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 

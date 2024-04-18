@@ -10,13 +10,13 @@ updated: 2024-03-21
 
 ## Obiettivo
 
-I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}.
+I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVHcloud](/links/web/hosting){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Questa guida ti mostra le operazioni da eseguire per mettere online un sito su un hosting Web OVHcloud.** 
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
+- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} attivo, che corrisponderà all’indirizzo del sito
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
@@ -82,7 +82,7 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in tre mod
 
 - **software compatibile con il protocollo FTP**: sarà necessario installare sul tuo computer un software compatibile con il protocollo FTP (ad esempio, FileZilla). Per informazioni sul suo utilizzo, contatta l’editor del software scelto.
 
-- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage. Questo tipo di accesso richiede conoscenze avanzate e una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attiva.
+- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage. Questo tipo di accesso richiede conoscenze avanzate e una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external} attiva.
 
 #### 3. Caricare i file
 
@@ -115,7 +115,7 @@ Se stai migrando un sito, contatta il tuo precedente provider per recuperare il 
 
 #### 2. Creare il database in OVHcloud 
 
-Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
+Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](/links/web/hosting){.external} o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
 Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.

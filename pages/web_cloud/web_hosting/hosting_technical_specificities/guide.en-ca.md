@@ -12,7 +12,7 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -62,14 +62,14 @@ In the event of abuse or proven risk, your service may be suspended (in accordan
 
 #### Simultaneous database connections
 
-On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (this limit increases to 200 if you use a [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) offer). See the [details of our Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/) to find out the options available in each Web Hosting plan.
+On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (this limit increases to 200 if you use a [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) offer). See the [details of our Web Hosting plans](/links/web/hosting) to find out the options available in each Web Hosting plan.
 
 You can also order additional [Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-cloud/databases/) solutions, which have customization options:
 
 - *max_connections*: 100 by default, with the option of increasing to 200.
 - *max_user_connections*: 50 by default, with the option of increasing to 200.
 
-To find out more, read the details of our [Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/) and our guide “[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
+To find out more, read the details of our [Web Hosting plans](/links/web/hosting) and our guide “[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
 
 #### Connections from an external server
 

@@ -32,7 +32,7 @@ Na przykład Apache pobiera zapytania HTTP generowane przez przeglądarki intern
   
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
   
 ## W praktyce
 

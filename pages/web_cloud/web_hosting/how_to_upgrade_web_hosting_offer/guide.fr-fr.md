@@ -6,7 +6,7 @@ updated: 2023-09-14
 
 ## Objectif
 
-Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/). Vous pouvez ainsi disposer :
+Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités de vos [offres d'hébergement Web](/links/web/hosting). Vous pouvez ainsi disposer :
 
 - d'un hébergement plus puissant ;
 - de plus d'espace de stockage FTP ;
@@ -18,7 +18,7 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/)
+- Disposer d'une [offre d'hébergement web](/links/web/hosting)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être, a minima, contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » des services pour lesquels vous souhaitez modifier l'abonnement.
 
@@ -137,7 +137,7 @@ Une fois ces 6 points vérifiés, vous pouvez réaliser votre [changement d'offr
 
 #### Vous possédez une offre d'hébergement gratuit 100M <a name="100m"></a>
 
-Dans le cadre d'un changement depuis une offre d'[hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, vous pourrez faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
+Dans le cadre d'un changement depuis une offre d'[hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, vous pourrez faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](/links/web/hosting).
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 

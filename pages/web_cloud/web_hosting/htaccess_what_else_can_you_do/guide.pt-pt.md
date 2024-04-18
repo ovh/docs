@@ -35,7 +35,7 @@ Para utilizar corretamente o ficheiro ".htaccess", deve conhecer e respeitar as 
 
 ## Requisitos
 
-- Dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
 
 ## Instruções
 

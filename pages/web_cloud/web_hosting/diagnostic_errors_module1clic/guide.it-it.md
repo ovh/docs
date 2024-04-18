@@ -24,7 +24,7 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) compatibile.
+- Disporre di un piano di [hosting Web](/links/web/hosting) compatibile.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Aver utilizzato la funzionalità "[Modulo in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" per creare un nuovo sito Web.
 
@@ -71,7 +71,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
 > [!primary]
 >
-> Confronta le nostre diverse [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/).
+> Confronta le nostre diverse [soluzioni di hosting](/links/web/hosting).
 >
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:
@@ -165,7 +165,7 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 
 > [!primary]
 >
-> Confronta le nostre diverse [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+> Confronta le nostre diverse [soluzioni di hosting Web](/links/web/hosting).
 >
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:

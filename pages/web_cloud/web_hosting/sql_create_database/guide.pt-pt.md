@@ -16,7 +16,7 @@ Uma base de dados (BDD) é utilizada para armazenar elementos dinâmicos (dados 
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclua, pelo menos, uma base de dados.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) que inclua, pelo menos, uma base de dados.
 - Dispor de uma base de dados disponível "criação" entre as que estão incluídas na sua oferta de alojamento web. Se necessário, pode adicionar bases de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ao seu alojamento web.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager) com as [autorizações necessárias](/pages/account_and_service_management/account_information/managing_contacts) para gerir o seu alojamento web.
 
@@ -57,7 +57,7 @@ Na nova janela, selecione as seguintes informações:
 |Informação|Descrição|  
 |---|---| 
 |**Selecione o tipo de base de dados**|Selecione o tamanho da base de dados. Este tamanho refere-se ao espaço de que a sua base de dados dispõe para o armazenamento de dados.
-|**Selecione o motor da base de dados a adicionar**|Selecione o motor que pretende que a base de dados utilize. As bases de dados incluídas no seu [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) só estão disponíveis com o motor MySQL.|
+|**Selecione o motor da base de dados a adicionar**|Selecione o motor que pretende que a base de dados utilize. As bases de dados incluídas no seu [plano de alojamento web da OVHcloud](/links/web/hosting) só estão disponíveis com o motor MySQL.|
 |**Selecione a versão da base de dados adicionar**|Selecione a versão utilizada pelo motor da base de dados. Certifique-se de que o seu website é compatível com a versão que escolheu.|
 
 De seguida, clique em `Seguinte`{.action}.

@@ -24,7 +24,7 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
 - Sie sind mit der Befehlszeileneingabe vertraut.
 - Sie können Ihre Dateien per FTP mit einem Client wie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) übertragen.
 - Sie haben Ihre DNS-Zone konfiguriert, um Ihren Domainnamen (oder eine Subdomain) auf Ihr Webhosting zu verweisen. Dies ist besonders relevant, wenn Sie auf Ihrem Hosting mehrere Websites als [Multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) hosten möchten.
@@ -32,7 +32,7 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 
 ## In der praktischen Anwendung
 
-Mit [Webhostings](https://www.ovhcloud.com/de/web-hosting/) können Sie Domainnamen oder Subdomains für mehrere Websites deklarieren. Sie benötigen einen Domainnamen oder eine Subdomain, um Ihre mit **Cecil** erstellte Seite zu veröffentlichen.
+Mit [Webhostings](/links/web/hosting) können Sie Domainnamen oder Subdomains für mehrere Websites deklarieren. Sie benötigen einen Domainnamen oder eine Subdomain, um Ihre mit **Cecil** erstellte Seite zu veröffentlichen.
 
 Um Ihnen dabei zu helfen, einen Domainnamen oder eine Subdomain zu deklarieren, verwenden Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 

@@ -17,7 +17,7 @@ This tutorial explains how to create an online store with the open-source plugin
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)  that contains at least one database
+- An [OVHcloud web hosting plan](/links/web/hosting)  that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en-ie/domains/).
 - [WordPress installed](/pages/web_cloud/web_hosting/cms_install_1_click_modules) on your web hosting plan
 

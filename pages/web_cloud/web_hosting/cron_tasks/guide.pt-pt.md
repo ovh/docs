@@ -46,7 +46,7 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 
 ## Requisitos
 
-- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

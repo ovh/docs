@@ -10,7 +10,7 @@ updated: 2024-01-29
 
 ## Ziel 
 
-Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Die Maßnahmen wie hier beschrieben betreffen nur Webseiten, die auf OVHcloud [Webhosting-Diensten](https://www.ovhcloud.com/de/web-hosting/) gehostet werden.
+Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Die Maßnahmen wie hier beschrieben betreffen nur Webseiten, die auf OVHcloud [Webhosting-Diensten](/links/web/hosting) gehostet werden.
 
 Die nachstehenden Empfehlungen sind nach abnehmender Wichtigkeit und zunehmendem technischen Schwierigkeitsgrad angeordnet. Die zuerst beschriebenen Schritte sind also am wichtigsten. Die Sicherheit Ihrer Website kann danach bemessen werden, welches Element am wenigsten geschützt ist. Wir empfehlen deshalb, möglichst alle Maßnahmen durchzuführen.
 
@@ -26,7 +26,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
 - Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.

@@ -6,7 +6,7 @@ updated: 2023-09-15
 
 ## Objectif
 
-Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/). Vous pouvez ainsi disposer :
+Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités de vos [offres d'hébergement Web](/links/web/hosting). Vous pouvez ainsi disposer :
 
 - d'un hébergement plus puissant ;
 - de plus d'espace de stockage FTP ;
@@ -18,7 +18,7 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
+- Disposer d'une [offre d'hébergement web](/links/web/hosting)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être, a minima, contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » des services pour lesquels vous souhaitez modifier l'abonnement.
 

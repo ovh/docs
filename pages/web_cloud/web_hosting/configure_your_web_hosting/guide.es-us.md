@@ -10,7 +10,7 @@ updated: 2024-03-12
 
 ## Objetivo
 
-Los planes de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} permiten alojar el sitio web que usted quiera, siempre que sea compatible con la [configuración de nuestras infraestructuras compartidas](https://webhosting-infos.hosting.ovh.net){.external}.
+Los planes de [hosting de OVHcloud](/links/web/hosting){.external} permiten alojar el sitio web que usted quiera, siempre que sea compatible con la [configuración de nuestras infraestructuras compartidas](https://webhosting-infos.hosting.ovh.net){.external}.
 No obstante, en nuestras infraestructuras compartidas, puede modificar los siguientes parámetros para su alojamiento web:
 
 - [El entorno de ejecución](#runtime-environment)
@@ -46,7 +46,7 @@ En resumen, modificar la configuración de un alojamiento web desde el [área de
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, a excepción de [un plan de hosting Cloud Web](https://www.ovhcloud.com/es/web-hosting/cloud-web-offer/).
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}, a excepción de [un plan de hosting Cloud Web](https://www.ovhcloud.com/es/web-hosting/cloud-web-offer/).
 - Tener acceso a su plan de hosting desde el [área de cliente de OVHcloud](/links/manager) o conocer la información necesaria para conectarse al [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Procedimiento
@@ -136,7 +136,7 @@ A continuación, póngalo en línea en su [espacio de almacenamiento FTP](/pages
 
 > [!warning]
 >
-> La modificación de la versión de PHP mediante un archivo ".htaccess" ya no es posible en los últimos [planes de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).<br>
+> La modificación de la versión de PHP mediante un archivo ".htaccess" ya no es posible en los últimos [planes de hosting de OVHcloud](/links/web/hosting).<br>
 > El comando que permite cambiar la versión de PHP en el archivo ".htaccess" tampoco permite utilizar las versiones recientes de PHP en nuestras infraestructuras.
 > Es obligatorio utilizar el archivo ".ovhconfig".
 >

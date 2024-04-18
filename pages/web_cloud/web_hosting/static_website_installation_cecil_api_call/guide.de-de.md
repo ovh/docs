@@ -22,7 +22,7 @@ In dieser Anleitung erfahren Sie, wie Sie das Web-Entwicklungstool [Cecil](https
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
 - Sie sind mit der Befehlszeileneingabe vertraut.
 - Sie haben die Anwendung **Cecil** auf Ihrem Hosting installiert und konfiguriert (gemäß unseres Tutorials zur [Installation und Konfiguration von Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil)).
 

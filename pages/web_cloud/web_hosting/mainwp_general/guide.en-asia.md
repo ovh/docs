@@ -21,7 +21,7 @@ Managing multiple websites can be complex and time-consuming. If you manage mult
 
 ## Requirements
 
-- A [Web Cloud hosting plan](https://www.ovhcloud.com/asia/web-hosting/).
+- A [Web Cloud hosting plan](/links/web/hosting).
 - Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
 - Access to the WordPress administration interface.
 

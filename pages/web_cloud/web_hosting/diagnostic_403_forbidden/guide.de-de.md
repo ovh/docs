@@ -44,7 +44,7 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection) für den FTP-Speicherplatz Ihres Hostings.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

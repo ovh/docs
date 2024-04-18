@@ -12,7 +12,7 @@ Votre hébergement web vous permet de gérer un certificat SSL. Vous pouvez comm
 
 ## Prérequis
 
-- Posséder un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Posséder un [hébergement web OVHcloud](/links/web/hosting){.external}.
 - Avoir enregistré au moins un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
 - Avoir accès à votre [espace client OVHcloud](/links/manager){.external}, partie « Web ».
 
@@ -99,7 +99,7 @@ Si le mot « Oui » apparaît, cela signifie qu'un certificat SSL a déjà ét
 
 ![managessl](images/order-an-ssl-certificate.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, sélectionnez le certificat SSL que vous souhaitez commander. Selon votre [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} et sa configuration, il se peut qu'aucune des solutions répertoriées ci-dessous ne soit disponible. Une fois que vous avez sélectionné une option, cliquez sur le bouton `Suivant`{.action}.
+Dans la fenêtre qui apparaît, sélectionnez le certificat SSL que vous souhaitez commander. Selon votre [offre d'hébergement web](/links/web/hosting){.external} et sa configuration, il se peut qu'aucune des solutions répertoriées ci-dessous ne soit disponible. Une fois que vous avez sélectionné une option, cliquez sur le bouton `Suivant`{.action}.
 
 ![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 

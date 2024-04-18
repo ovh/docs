@@ -17,7 +17,7 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}i możliwość zarządzania nią w Panelu klienta
-- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie [hostingu WWW](/links/web/hosting){.external}.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 > [!warning]
@@ -44,7 +44,7 @@ Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać
 ![email-activation](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](https://www.ovhcloud.com/pl/web-hosting/){.external} na naszej stronie handlowej.
+> Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting){.external} na naszej stronie handlowej.
 >
 > Uwaga: aktywacja opcji e-mail może zająć kilka minut. Otrzymasz e-mail potwierdzający instalację i aktywację oferty MXPLAN. Obejmuje to zarządzanie i konfigurację adresów e-mail.
 >

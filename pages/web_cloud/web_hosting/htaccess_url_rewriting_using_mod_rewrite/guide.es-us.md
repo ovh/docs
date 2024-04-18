@@ -32,7 +32,7 @@ El "**mod_rewrite**" ofrece un número infinito de posibilidades. A continuació
   
 ## Requisitos
 
-- Disponer de un [hosting OVHcloud](https://www.ovhcloud.com/es/web-hosting/)
+- Disponer de un [hosting OVHcloud](/links/web/hosting)
   
 ## Procedimiento
 

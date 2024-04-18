@@ -19,7 +19,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) OVHcloud.
+- Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Utiliser l'une de nos offres de bases de données [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 
@@ -100,7 +100,7 @@ Trois méthodes vous permettront de débloquer votre base de données :
 
 #### Méthode 1 : passer votre abonnement sur une offre supérieure
 
-Si vous disposez d'une formule **Perso** ou **Pro**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](https://www.ovhcloud.com/fr/web-hosting/). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
+Si vous disposez d'une formule **Perso** ou **Pro**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](/links/web/hosting). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
 
 > [!warning]
 >

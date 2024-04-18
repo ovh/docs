@@ -26,7 +26,7 @@ Num alojamento web partilhado, é responsável pelos backups do seu website. Mes
 
 ## Requisitos
 
-- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e ter instalado o WordPress
+- Ter um [alojamento web](/links/web/hosting) e ter instalado o WordPress
 
 ## Instruções
 

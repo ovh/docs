@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Obiettivo
 
-Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capacità delle tue [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/). In questo modo è possibile disporre di:
+Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capacità delle tue [offerte di hosting Web](/links/web/hosting). In questo modo è possibile disporre di:
 
 - hosting più potente;
 - più spazio di archiviazione FTP;
@@ -22,7 +22,7 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una [soluzione di hosting Web](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - essere almeno contatto "[Amministratore](/pages/account_and_service_management/account_information/managing_contacts)" dei servizi per i quali si desidera modificare l'abbonamento.
 
@@ -141,7 +141,7 @@ Una volta verificati questi 6 punti, potrai realizzare il tuo [cambio di offerta
 
 #### Hai attivato un'offerta di hosting gratuito 100M <a name="100m"></a>
 
-In caso di modifica da un'offerta di [hosting gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), verrà proposta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, dopo un cambio verso l’offerta Personale, è possibile farlo evolvere verso tutte le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+In caso di modifica da un'offerta di [hosting gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), verrà proposta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, dopo un cambio verso l’offerta Personale, è possibile farlo evolvere verso tutte le nostre [offerte di hosting Web](/links/web/hosting).
 
 Segui [queste istruzioni](#modify) per modificare l’offerta.
 

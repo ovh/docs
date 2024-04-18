@@ -14,9 +14,9 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 > [!primary]
 >
-> Niniejszy przewodnik dotyczy przede wszystkim wiadomości e-mail wysyłanych ze skryptów znajdujących się na [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) za pomocą funkcji "mail()" PHP.
+> Niniejszy przewodnik dotyczy przede wszystkim wiadomości e-mail wysyłanych ze skryptów znajdujących się na [hostingu OVHcloud](/links/web/hosting) za pomocą funkcji "mail()" PHP.
 >
-> Jeśli chcesz zarządzać adresami e-mail zawartymi w Twojej usłudze MX Plan lub usłudze[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, zapoznaj się z naszą dokumentacją dotyczącą [E-maili na hostingu - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Jeśli chcesz zarządzać adresami e-mail zawartymi w Twojej usłudze MX Plan lub usłudze[hostingu OVHcloud](/links/web/hosting){.external}, zapoznaj się z naszą dokumentacją dotyczącą [E-maili na hostingu - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie oferty [hostingu OVHcloud](/links/web/hosting){.external}.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
@@ -37,7 +37,7 @@ Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hosti
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-Wyświetli się strona, na której możesz monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+Wyświetli się strona, na której możesz monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z [hostingu OVHcloud](/links/web/hosting).
 
 ### Prezentacja części "Skrypty e-mail"
 

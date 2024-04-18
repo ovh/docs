@@ -20,7 +20,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 ## Prérequis
 
-- Disposer d'une offre [d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} compatible.
+- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
 - Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
@@ -29,7 +29,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 > [!primary]
 >
-> La plupart des offres d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} disposent d'une option incluse de création d'adresse(s) e-mail personnalisée(s) avec votre nom de domaine.
+> La plupart des offres d'[hébergement web OVHcloud](/links/web/hosting){.external} disposent d'une option incluse de création d'adresse(s) e-mail personnalisée(s) avec votre nom de domaine.
 > Cette option e-mail peut être activée pour **un seul** nom de domaine. Cela signifie que si vous effectuez du *multisite* avec plusieurs noms de domaine différents, vous ne pourrez activer cette option que pour un seul de vos noms de domaines.
 > N'hésitez pas à consulter notre [guide](/pages/web_cloud/web_hosting/activate-email-hosting) pour plus de détails sur l'activation de cette option.
 >
@@ -68,7 +68,7 @@ Dans le cas d'un nom de domaine externe à votre compte client (autre identifian
 > [!warning]
 > Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine enregistré chez OVHcloud ». Le nom de domaine ou sa zone DNS doivent se trouver **dans votre espace client**. Pour les noms de domaine externes, passez à l'[étape 2.2 : ajouter un nom de domaine externe](#add-external-domain){.external}.
 
-Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
+Vous devez à présent personnaliser l’ajout du domaine ou sous-domaine. Selon votre offre d'[hébergement web](/links/web/hosting){.external}, certains éléments parmi les choix proposés ne pourront pas être sélectionnés.
 
 > [!primary]
 > Pour ajouter un sous-domaine, vous devez d’abord sélectionner le domaine principal dans la liste (exemple: domain.tld). L’étape suivante vous permettra d’indiquer le sous-domaine (exemple: **blog**.domain.tld).
@@ -128,7 +128,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 > ![multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- Vous devez à présent personnaliser l’ajout du domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du multisite lorsqu’il sera ajouté.
+ Vous devez à présent personnaliser l’ajout du domaine. À noter que certaines options comprises dans votre offre d'[hébergement web](/links/web/hosting){.external} ne peuvent pas être activées pendant ce processus. Vous devrez finaliser la manipulation avant de pouvoir les utiliser, en modifiant les paramètres du multisite lorsqu’il sera ajouté.
 
 |Information|Description|
 |---|---|
@@ -165,7 +165,7 @@ A contrario, si vous souhaitez installer manuellement votre site, munissez-vous 
 >
 > Si vous souhaitez ajouter plusieurs sites web, vous devrez répéter cette étape.
 >
-> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} indique le nombre de sites Internet recommandés que vous pouvez accueillir sur votre espace.
+> Nous vous invitons à être vigilant sur le nombre de sites que vous partagez sur votre hébergement. Plus celui-ci est élevé, plus les ressources qui lui sont allouées sont sollicitées. [La page de nos offres d'hébergement web](/links/web/hosting){.external} indique le nombre de sites Internet recommandés que vous pouvez accueillir sur votre espace.
 >
 
 ## Aller plus loin

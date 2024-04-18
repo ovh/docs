@@ -31,7 +31,7 @@ Aby pobrać Cyberduck, przejdź do [oficjalnej strony](https://cyberduck.io/) ap
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu web](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie [hostingu web](/links/web/hosting){.external}.
 - Pobranie i zainstalowanie aplikacji Cyberduck na komputerze.
 
 ## W praktyce

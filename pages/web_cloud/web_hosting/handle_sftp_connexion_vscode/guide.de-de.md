@@ -21,7 +21,7 @@ Wenn Sie über ein OVHcloud Webhosting verfügen, können Sie auf einen Speicher
   
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) installiert.
 
 ## In der praktischen Anwendung
@@ -186,7 +186,7 @@ In diesem Tutorial wird die effiziente Verwaltung eines Projekts in Visual Studi
 
 [FileZilla mit Ihrem OVHcloud Hosting verwenden](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting) (nur verfügbar mit [Pro oder Performance Webhostings](https://www.ovhcloud.com/de/web-hosting/))
+[SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting) (nur verfügbar mit [Pro oder Performance Webhostings](/links/web/hosting))
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

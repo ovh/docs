@@ -26,7 +26,7 @@ Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zaloguj�
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie [hostingu WWW](/links/web/hosting){.external}.
 - Instalacja programu Filezilla na Twoim komputerze Jest on dostępny bezpłatnie na stronie [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ## Prezentacja interfejsu <a name="interface"></a>

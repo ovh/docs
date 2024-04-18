@@ -17,7 +17,7 @@ It might become necessary to manually adjust the access settings of a service. T
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

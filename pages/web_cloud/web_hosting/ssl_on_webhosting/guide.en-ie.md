@@ -12,7 +12,7 @@ You can manage an SSL certificate on your web hosting plan. You can either order
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
+- An [OVHcloud web hosting plan](/links/web/hosting){.external}
 - At least one [domain name](https://www.ovhcloud.com/en-ie/domains/){.external}
 - Access to the [OVHcloud Control Panel](/links/manager)
 
@@ -99,7 +99,7 @@ If the word "Yes" is visible, an SSL certificate has already been set up on the 
 
 ![managessl](images/order-an-ssl-certificate.png){.thumbnail}
 
-In the window that appears, select the SSL certificate you would like to order. Depending on the [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
+In the window that appears, select the SSL certificate you would like to order. Depending on the [web hosting plan](/links/web/hosting){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
 
 ![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 

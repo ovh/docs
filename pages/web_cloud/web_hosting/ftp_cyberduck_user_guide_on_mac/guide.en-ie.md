@@ -27,7 +27,7 @@ To download Cyberduck, go to the [official website](https://cyberduck.io/) of th
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - The Cyberduck application downloaded and installed
 
 ## Instructions

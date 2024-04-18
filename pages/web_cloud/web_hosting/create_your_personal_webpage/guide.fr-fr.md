@@ -173,7 +173,7 @@ Vous pouvez voir le résultat dans votre navigateur : par défaut, les élément
 
 #### Ajouter des images pour rendre votre page plus attrayante
 
-Le web est un média avant tout visuel. Nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre d'hébergement gratuit 100M vous propose un espace de stockage de 100 Mo. C'est suffisant pour vos pages HTML et CSS, mais cela peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas de figure, de souscrire à une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) permettant de bénéficier d'un stockage plus conséquent.
+Le web est un média avant tout visuel. Nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre d'hébergement gratuit 100M vous propose un espace de stockage de 100 Mo. C'est suffisant pour vos pages HTML et CSS, mais cela peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas de figure, de souscrire à une [offre d'hébergement web OVHcloud](/links/web/hosting) permettant de bénéficier d'un stockage plus conséquent.
 
 La balise HTML utilisée pour afficher une image est la balise `<img>`. Contrairement aux balises que nous avons vues précédemment, il n'y a pas d'ouverture et de fermeture de cet élément. On parlera de balise autofermante. Ce sont les attributs de cette balise qui permettront de donner le lien de l'emplacement du fichier et le texte descriptif de l'image.
 

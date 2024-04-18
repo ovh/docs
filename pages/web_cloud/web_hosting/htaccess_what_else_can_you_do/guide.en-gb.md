@@ -31,7 +31,7 @@ To use the .htaccess file correctly, you need to know and follow the following r
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 
 ## Instructions
 

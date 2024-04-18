@@ -42,7 +42,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 
 ## Requisitos
 
-- Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter um [plano de alojamento web OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou a um [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
 - Ter acesso às credenciais FTP para aceder ao [espaço de armazenamento do alojamento](/pages/web_cloud/web_hosting/ftp_connection).
@@ -191,7 +191,7 @@ Guarde esta modificação.
 
 Novamente, dois casos são possíveis: 
 
-- Se a base de dados estiver na parte da [Área de Cliente OVHcloud](/links/manager) dedicada ao seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), siga as [instruções](#case1).
+- Se a base de dados estiver na parte da [Área de Cliente OVHcloud](/links/manager) dedicada ao seu [alojamento web](/links/web/hosting), siga as [instruções](#case1).
 
 - Se a sua base de dados estiver na parte da sua [Área de Cliente OVHcloud](/links/manager) dedicada às suas ofertas [Web Cloud Databases](/products/web-cloud-clouddb), siga as [instruções](#case2).
 

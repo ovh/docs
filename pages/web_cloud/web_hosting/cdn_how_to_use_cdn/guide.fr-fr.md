@@ -21,7 +21,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+- Posséder une [offre d'hébergement web](/links/web/hosting).
 
 ## En pratique
 

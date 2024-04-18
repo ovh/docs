@@ -16,7 +16,7 @@ Mit dem Pico **CMS** (**C**ontent **M**anagement **S**ystem) können Sie schnell
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
@@ -24,7 +24,7 @@ Mit dem Pico **CMS** (**C**ontent **M**anagement **S**ystem) können Sie schnell
 
 ### Installation vorbereiten
 
-Für die Installation des CMS **Pico** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) sind einige Vorbereitungen erforderlich.
+Für die Installation des CMS **Pico** auf Ihrem [Webhosting](/links/web/hosting) sind einige Vorbereitungen erforderlich.
 
 Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), bevor Sie zum nächsten Schritt übergehen.
 

@@ -16,7 +16,7 @@ Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting){.external}.
 - Sie haben mindestens eine [Domain](https://www.ovhcloud.com/de/domains/){.external} registriert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
@@ -103,7 +103,7 @@ Wenn das Wort "Ja" erscheint, bedeutet dies, dass bereits ein SSL-Zertifikat auf
 
 ![ssl verwalten](images/order-an-ssl-certificate.png){.thumbnail}
 
-Wählen Sie in dem neuen Fenster das SSL-Zertifikat aus, das Sie bestellen möchten. Je nach Art Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} und dessen Konfiguration kann es sein, dass keine der nachstehend aufgeführten Lösungen verfügbar ist. Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
+Wählen Sie in dem neuen Fenster das SSL-Zertifikat aus, das Sie bestellen möchten. Je nach Art Ihres [Webhostings](/links/web/hosting){.external} und dessen Konfiguration kann es sein, dass keine der nachstehend aufgeführten Lösungen verfügbar ist. Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
 
 ![ssl verwalten](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 

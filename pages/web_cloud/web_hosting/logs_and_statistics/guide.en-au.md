@@ -12,7 +12,7 @@ Access to your website’s logs and statistics is included in your web hosting p
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

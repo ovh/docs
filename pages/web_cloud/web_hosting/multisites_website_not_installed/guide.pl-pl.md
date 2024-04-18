@@ -24,7 +24,7 @@ W przeglądarce internetowej może pojawić się komunikat o błędzie **Niezain
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu](/links/web/hosting)
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 - Zarządzanie [strefą DNS](/pages/web_cloud/domains/dns_zone_edit), do której przypisana jest Twoja domena.
 

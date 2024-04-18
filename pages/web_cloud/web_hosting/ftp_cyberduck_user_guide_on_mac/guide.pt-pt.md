@@ -31,7 +31,7 @@ Para transferir o Cyberduck, aceda a [site oficial](https://cyberduck.io/) da ap
 
 ## Requisitos
 
-- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um plano de [alojamento web](/links/web/hosting){.external}.
 - Ter transferido e instalado a aplicação Cyberduck no seu computador.
 
 ## Instruções

@@ -23,7 +23,7 @@ Questa guida ti mostra come configurare alcune funzionalità del tuo hosting Web
 
 ## Prerequisiti
 
-- Disporre di un [hosting Web](https://www.ovhcloud.com/it/web-hosting/) e aver installato WordPress
+- Disporre di un [hosting Web](/links/web/hosting) e aver installato WordPress
 - Essere in grado di utilizzare un client FTP come [FileZilla](https://filezilla-project.org/) Consulta la guida "[Utilizzare FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)".
 
 I file **.htaccess** possono essere creati e modificati con editor di testo come:
@@ -49,7 +49,7 @@ I file **.htaccess** possono essere creati e modificati con editor di testo come
 
 Un file **.htaccess** permette di configurare un server Web. Nel caso di un hosting web condiviso, si tratta del server web open source "**Apache**". La sintassi di questo file è definita dall'organismo che modifica e mantiene **Apache**. A differenza della maggior parte dei file di configurazione di un server, i file **.htaccess** sono situati nelle directory dei siti Web, nello spazio di storage FTP del tuo hosting Web. Un file **.htaccess** avrà effetti sulla directory in cui è presente e su tutte le sottocartelle presenti all'interno.
 
-Le nostre offerte di hosting condivisi non autorizzano i file di configurazione server. Tuttavia, i file **.htaccess** danno la possibilità di modificare alcune caratteristiche e comportamenti. Inoltre, non è necessario riavviare il server **Apache** affinché le indicazioni e le modifiche scritte nel file **.htaccess** siano prese in carico. Tutte le nostre offerte di [hosting web condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/) permettono di configurare file **.htaccess*.
+Le nostre offerte di hosting condivisi non autorizzano i file di configurazione server. Tuttavia, i file **.htaccess** danno la possibilità di modificare alcune caratteristiche e comportamenti. Inoltre, non è necessario riavviare il server **Apache** affinché le indicazioni e le modifiche scritte nel file **.htaccess** siano prese in carico. Tutte le nostre offerte di [hosting web condiviso OVHcloud](/links/web/hosting) permettono di configurare file **.htaccess*.
 
 Il punto davanti al nome del file **.htaccess** (senza estensione) designa un file nascosto. Questi file non sono accessibili da utenti esterni che accedono al tuo sito Web.
 

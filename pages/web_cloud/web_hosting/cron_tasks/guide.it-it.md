@@ -46,7 +46,7 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
+- Disporre di una soluzione di [hosting Web](/links/web/hosting) attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

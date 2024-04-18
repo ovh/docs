@@ -20,7 +20,7 @@ L'option de géolocalisation sur votre hébergement peut être utile pour le ré
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
+- Disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting)
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 
 ## En pratique

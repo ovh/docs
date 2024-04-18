@@ -39,7 +39,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 
 ## Requisitos
 
-- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
+- Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
@@ -114,7 +114,7 @@ Encontre mais informações na nossa página sobre o [módulo PrestaShop](https:
 
 ### Etapa 1 - preparar a instalação <a name="step1"></a>
 
-Para instalar um CMS na sua oferta de[alojamento web](https://www.ovhcloud.com/pt/web-hosting/), é necessário efetuar alguns preparativos.
+Para instalar um CMS na sua oferta de[alojamento web](/links/web/hosting), é necessário efetuar alguns preparativos.
 
 #### 1.1 - Verificar a declaração do "dossier raiz"
 
@@ -129,7 +129,7 @@ Consulte o nosso manual que descreve [como adicionar um multi-site ao seu alojam
 
 #### 1.2 - Verificar o "apontamento" do domínio
 
-- Certifique-se de que o domínio que utiliza para aceder ao seu CMS, bem como o subdomínio "www" apontam para o endereço IP do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+- Certifique-se de que o domínio que utiliza para aceder ao seu CMS, bem como o subdomínio "www" apontam para o endereço IP do seu serviço de [alojamento web](/links/web/hosting).
 
 Para obter o endereço IP da sua oferta de alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action} e selecione a sua oferta de alojamento web na secção `Alojamentos`{.action}.<br>
 Na caixa `Informações gerais`{.action} à direita, encontrará o endereço IP do seu alojamento web no formulário `IPv4`{.action}.
@@ -167,7 +167,7 @@ Se ainda não utilizar um cliente FTP, pode utilizar o Filezilla. Encontre o lin
 > Alguns CMS funcionam sem base de dados. Se for o caso do CMS que deseja instalar, ignore esta etapa.
 >
 
-A maioria dos CMS precisam de uma base de dados para funcionar. As nossas ofertas de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) incluem-no, com exceção de [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/).
+A maioria dos CMS precisam de uma base de dados para funcionar. As nossas ofertas de [alojamento web](/links/web/hosting) incluem-no, com exceção de [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/).
 
 Utilize o nosso manual para [criar uma base de dados a partir do seu alojamento web](/pages/web_cloud/web_hosting/sql_create_database).
 

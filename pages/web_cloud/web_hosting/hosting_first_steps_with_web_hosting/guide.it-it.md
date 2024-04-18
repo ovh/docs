@@ -10,13 +10,13 @@ updated: 2024-02-08
 
 ## Obiettivo
 
-OVHcloud propone [diverse soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/). Sono concepite per diversi casi d’uso:
+OVHcloud propone [diverse soluzioni di hosting Web](/links/web/hosting). Sono concepite per diversi casi d’uso:
 
 - Iniziare a utilizzare il Web.
 - creare rapidamente un sito Web (professionale o meno), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) come *WordPress*, *Joomla!*, *PrestaShop* o *Drupal* o ancora un negozio online.
 - Personalizzare uno o più indirizzi email con il dominio che vuoi utilizzare per il tuo sito Web.
 - Gestire più siti Web su una sola offerta di hosting Web.
-- Disporre di uno o più database ([inclusi con alcune delle nostre soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/)).
+- Disporre di uno o più database ([inclusi con alcune delle nostre soluzioni di hosting Web](/links/web/hosting)).
 - ecc.
 
 Queste offerte ti risparmiano la necessità di gestire la manutenzione, l'aggiornamento e la sicurezza di un'infrastruttura di hosting Web.<br>
@@ -30,17 +30,17 @@ che permettono di risparmiare tempo sull’"amministrazione server" e di concent
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attivo
+- Disporre di un piano di [hosting Web](/links/web/hosting) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-L’obiettivo di questa guida è quello di indicare le principali azioni realizzabili con le nostre soluzioni di [hosting Web](https://www.ovhcloud.com/it/web-hosting/). 
+L’obiettivo di questa guida è quello di indicare le principali azioni realizzabili con le nostre soluzioni di [hosting Web](/links/web/hosting). 
 Ciascuna di tali azioni sarà accompagnata da uno o più link verso guide specifiche (relative all'azione in questione).
 
-Puoi utilizzare questa guida come "repository" di azioni possibili dalla sottoscrizione della tua offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) e per tutta la durata del suo utilizzo.
+Puoi utilizzare questa guida come "repository" di azioni possibili dalla sottoscrizione della tua offerta di [hosting Web](/links/web/hosting) e per tutta la durata del suo utilizzo.
 
 > [!primary]
 > 
@@ -63,7 +63,7 @@ Prima di iniziare, è fondamentale identificare e delineare chiaramente le propr
 - Hai bisogno di uno o più database per far funzionare il tuo sito Web?
 - Hai bisogno di uno o più indirizzi email personalizzati con il tuo dominio?
 
-In base alle risposte fornite, prima di proseguire verifica che il piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) soddisfi tutte le esigenze.
+In base alle risposte fornite, prima di proseguire verifica che il piano di [hosting Web](/links/web/hosting) soddisfi tutte le esigenze.
 
 In caso contrario, consulta la nostra guida "[Hosting Web: come far evolvere la tua offerta?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
@@ -104,7 +104,7 @@ Per utilizzare questa opzione, consulta la nostra guida "[Installare il tuo sito
 
 ### Step 3 - Crea i tuoi indirizzi email (facoltativo) <a name="email-creation"></a>
 
-Il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) include uno o più indirizzi email, che è possibile scegliere se attivare o meno.
+Il servizio di [hosting Web](/links/web/hosting) include uno o più indirizzi email, che è possibile scegliere se attivare o meno.
 
 Per prima cosa consulta la nostra guida "[Attivare gli indirizzi email inclusi in un hosting Web](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
@@ -150,13 +150,13 @@ Per verificare e/o modificare il collegamento tra il dominio e il servizio di po
 
 ### Step 5 - Altre opzioni disponibili con gli hosting Web <a name="other-options"></a>
 
-In base alla tua [offerta di hosting Web](https://www.ovhcloud.com/it/web-hosting/), opzioni / offerte / funzionalità aggiuntive sono disponibili gratuitamente.
+In base alla tua [offerta di hosting Web](/links/web/hosting), opzioni / offerte / funzionalità aggiuntive sono disponibili gratuitamente.
 
 #### I certificati SSL
 
 I certificati SSL permettono di rendere accessibile il sito Web utilizzando il protocollo HTTPS. Questo protocollo cripta gli scambi tra il vostro hosting Web e le persone che consultano il vostro sito Web.
 
-Qualunque sia l'[hosting Web](https://www.ovhcloud.com/it/web-hosting/), è possibile attivare gratuitamente un certificato SSL **Let's encrypt**.
+Qualunque sia l'[hosting Web](/links/web/hosting), è possibile attivare gratuitamente un certificato SSL **Let's encrypt**.
 
 Per maggiori informazioni sui certificati SSL (gratuiti o a pagamento) proposti sugli hosting Web, consulta la nostra guida "[Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
@@ -186,7 +186,7 @@ Per maggiori informazioni sul suo utilizzo, consulta la nostra documentazione "[
 
 #### Invia email dal tuo sito Web
 
-Tutti i nostri [hosting Web](https://www.ovhcloud.com/it/web-hosting/) permettono di inviare gratuitamente email a partire dal tuo sito Web o da uno script specifico.
+Tutti i nostri [hosting Web](/links/web/hosting) permettono di inviare gratuitamente email a partire dal tuo sito Web o da uno script specifico.
 
 Per maggiori informazioni su questa funzionalità, consulta la nostra guida "[Gestire l’invio delle email automatiche](/pages/web_cloud/web_hosting/mail_function_script_records)".
 
@@ -194,7 +194,7 @@ Per maggiori informazioni su questa funzionalità, consulta la nostra guida "[Ge
 
 Le operazioni "CRON" permettono di eseguire automaticamente script ospitati su un hosting Web.
 
-Se il tuo piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) dispone di questa opzione, consulta la nostra guida "[Crea task automatizzati (CRON) sul tuo hosting Web](/pages/web_cloud/web_hosting/cron_tasks)" per maggiori dettagli.
+Se il tuo piano di [hosting Web](/links/web/hosting) dispone di questa opzione, consulta la nostra guida "[Crea task automatizzati (CRON) sul tuo hosting Web](/pages/web_cloud/web_hosting/cron_tasks)" per maggiori dettagli.
 
 ## Per saperne di più
 

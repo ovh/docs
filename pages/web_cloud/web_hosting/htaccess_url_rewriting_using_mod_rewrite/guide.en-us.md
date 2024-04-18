@@ -28,7 +28,7 @@ The **mod_rewrite** module offers an infinite number of possibilities. Below are
   
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
   
 ## Instructions
 

@@ -10,7 +10,7 @@ updated: 2022-01-05
 
 ## Ziel 
 
-Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](https://www.ovhcloud.com/de/web-hosting/) kann zu verschiedenen Anomalien führen. In dieser Anleitung können Sie die gängigsten Lösungen auswählen.
+Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](/links/web/hosting) kann zu verschiedenen Anomalien führen. In dieser Anleitung können Sie die gängigsten Lösungen auswählen.
 
 **Diese Anleitung erklärt, wie Sie gängige Fehler im Zusammenhang mit FTP-Programmen beheben.**
 
@@ -22,7 +22,7 @@ Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](https://www.
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

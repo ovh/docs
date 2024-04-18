@@ -39,7 +39,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 ## Prerequisiti
 
-- Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
+- Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
@@ -114,7 +114,7 @@ Per maggiori informazioni, consulta la nostra pagina relativa al [modulo PrestaS
 
 ### Step 1 - preparare l'installazione <a name="step1"></a>
 
-Per installare un CMS sulla tua offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), sono necessari alcuni preparativi.
+Per installare un CMS sulla tua offerta di [hosting Web](/links/web/hosting), sono necessari alcuni preparativi.
 
 #### 1.1 - Verifica la dichiarazione della "cartella di root"
 
@@ -129,7 +129,7 @@ Consulta la nostra documentazione che descrive [come aggiungere un multisito su 
 
 #### 1.2 - Verifica il "puntamento" del dominio
 
-- Assicurati che il dominio che utilizzerai per accedere al tuo CMS e il sottodominio in "www" puntino verso l'indirizzo IP della tua offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/).
+- Assicurati che il dominio che utilizzerai per accedere al tuo CMS e il sottodominio in "www" puntino verso l'indirizzo IP della tua offerta di [hosting web](/links/web/hosting).
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} e seleziona la tua soluzione di hosting Web nella sezione `Hosting`{.action}.<br>
 Nel riquadro `Informazioni generali`{.action} sulla tua destra, clicca su `IPv4`{.action} e seleziona l'indirizzo IP del tuo hosting Web.
@@ -167,7 +167,7 @@ Se non utilizzi già un client FTP, puoi utilizzare Filezilla. Per maggiori info
 > Alcuni CMS funzionano senza database. Se questo è il caso del CMS che vuoi installare, salta questo step.
 >
 
-Per funzionare correttamente, la maggior parte dei CMS ha bisogno di un database. Le nostre offerte di [hosting web](https://www.ovhcloud.com/it/web-hosting/) ne contengono, ad eccezione di [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/).
+Per funzionare correttamente, la maggior parte dei CMS ha bisogno di un database. Le nostre offerte di [hosting web](/links/web/hosting) ne contengono, ad eccezione di [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/).
 
 Utilizza la nostra documentazione per [creare un database dalla tua offerta di hosting web](/pages/web_cloud/web_hosting/sql_create_database).
 

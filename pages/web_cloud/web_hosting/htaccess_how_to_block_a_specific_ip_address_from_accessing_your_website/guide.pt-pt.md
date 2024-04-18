@@ -27,7 +27,7 @@ Pode criar vários ficheiros ".htaccess" no [espaço FTP](/pages/web_cloud/web_h
 
 ## Requisitos
 
-- Dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
 
 ## Instruções
 

@@ -16,7 +16,7 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) SPIP ist eine Lösung für r
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot mit mindestens einer Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot mit mindestens einer Datenbank.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
@@ -24,7 +24,7 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) SPIP ist eine Lösung für r
 
 ### Installation vorbereiten
 
-Um das CMS **SPIP** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren, sind einige Vorbereitungen erforderlich.
+Um das CMS **SPIP** auf Ihrem [Webhosting](/links/web/hosting) zu installieren, sind einige Vorbereitungen erforderlich.
 
 Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), bevor Sie zum nächsten Schritt übergehen.
 

@@ -19,7 +19,7 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) with an associated OVHcloud shared database
+- An [OVHcloud web hosting plan](/links/web/hosting) with an associated OVHcloud shared database
   
 ## Instructions
 

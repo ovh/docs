@@ -12,7 +12,7 @@ Grâce à votre hébergement web OVHcloud, vous pouvez bénéficier d'un [certif
 
 ## Prérequis
 
-- Disposer d'un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} installé sur votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} installé sur votre [hébergement web OVHcloud](/links/web/hosting){.external}.
 - Disposer d'au moins un site web installé et accessible sur votre hébergement web OVHcloud.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Web Cloud`{.action}.
 

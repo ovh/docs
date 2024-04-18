@@ -16,8 +16,8 @@ As bases de dados são utilizadas pela maior parte dos websites e dos **C**onten
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting){.external}.
+- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external}.
 - Consoante o método de backup utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVHcloud](/links/manager){.external} ou às informações que lhe permitem aceder à base de dados.
 
 ## Instruções
@@ -30,7 +30,7 @@ Antes de começar, defina o método que vai seguir para recuperar a cópia de se
 
 - **Utilizar um script que realize o backup** : este método requer a criação de um script registado no alojamento web da OVHcloud para poder realizar o backup. São necessários conhecimentos específicos para esta criação.
 
-- **Efetuar o backup através de SSH** : este método requer que se ligue ao espaço de armazenamento FTP através do protocolo SSH e que utilize comandos para interagir com este. Este tipo de acesso requer conhecimentos mais avançados, bem como uma oferta de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} específica.
+- **Efetuar o backup através de SSH** : este método requer que se ligue ao espaço de armazenamento FTP através do protocolo SSH e que utilize comandos para interagir com este. Este tipo de acesso requer conhecimentos mais avançados, bem como uma oferta de [alojamento web OVHcloud](/links/web/hosting){.external} específica.
 
 > [!success]
 >

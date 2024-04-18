@@ -30,7 +30,7 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
   
 ## Prerequisiti
 
-- Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
+- Disporre di un'offerta di [hosting web](/links/web/hosting) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
   
@@ -38,7 +38,7 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
 
 ### Step 1 - preparare l'installazione <a name="step1"></a>
 
-Per installare il CMS **Drupal** sulla tua offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/), sono necessari alcuni preparativi.
+Per installare il CMS **Drupal** sulla tua offerta di [hosting web](/links/web/hosting), sono necessari alcuni preparativi.
 
 Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) prima di proseguire allo Step 2.
 

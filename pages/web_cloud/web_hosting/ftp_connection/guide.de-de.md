@@ -17,7 +17,7 @@ Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz, um die Date
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager). 
 
 > [!primary]
@@ -71,7 +71,7 @@ Nachstehend finden Sie eine Beschreibung der wesentlichen Informationen, die auf
 
 > [!primary]
 >
-> Je nach Ihrem [OVHcloud Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} werden einige der oben beschriebenen Informationen (insbesondere bezüglich SSH) möglicherweise nicht angezeigt.
+> Je nach Ihrem [OVHcloud Webhosting-Angebot](/links/web/hosting){.external} werden einige der oben beschriebenen Informationen (insbesondere bezüglich SSH) möglicherweise nicht angezeigt.
 >
 
 Wenn Sie das Passwort eines FTP- oder SSH-Benutzers nicht mehr kennen, lesen Sie unsere Anleitung "[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -89,7 +89,7 @@ Die Verbindung zum FTP-Speicherplatz ist auf mehrere Arten möglich. Folgen Sie 
 - [2. Verbindung über einen FTP-Client](#ftpsoftware): Ermöglicht den Zugriff auf Ihren FTP-Speicherplatz über eine Client-Software (z.B. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) oder [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
 Installieren Sie zunächst das gewählte FTP-Programm auf Ihrem Computer.
 
-- [3. Verbindung über einen SSH Zugang](#ssh): Ermöglicht den Zugriff auf Ihren FTP-Speicherplatz über einen SSH-Zugang. Für die Nutzung dieses Zugriffstyps sind fortgeschrittene Kenntnisse sowie ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} **Pro** oder **Performance** erforderlich.
+- [3. Verbindung über einen SSH Zugang](#ssh): Ermöglicht den Zugriff auf Ihren FTP-Speicherplatz über einen SSH-Zugang. Für die Nutzung dieses Zugriffstyps sind fortgeschrittene Kenntnisse sowie ein [OVHcloud Webhosting](/links/web/hosting){.external} **Pro** oder **Performance** erforderlich.
 
 #### 1. Via "FTP Explorer" verbinden <a name="ftpexplorer"></a>
 

@@ -14,9 +14,9 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 > [!primary]
 >
-> Diese Anleitung betrifft hauptsächlich E-Mails, die über Skripte auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit der "mail()"-Funktion von PHP versendet werden.
+> Diese Anleitung betrifft hauptsächlich E-Mails, die über Skripte auf Ihrem [OVHcloud Webhosting](/links/web/hosting) mit der "mail()"-Funktion von PHP versendet werden.
 >
-> Wenn Sie die E-Mail-Accounts Ihres MX Plans oder Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} verwalten möchten, lesen Sie unsere Dokumentation zu [Hosted E-Mail - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Wenn Sie die E-Mail-Accounts Ihres MX Plans oder Ihres [OVHcloud Webhostings](/links/web/hosting){.external} verwalten möchten, lesen Sie unsere Dokumentation zu [Hosted E-Mail - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -37,7 +37,7 @@ Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webho
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-Hier können Sie über Ihr [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) versendete automatische E-Mails verwalten.
+Hier können Sie über Ihr [OVHcloud Webhosting](/links/web/hosting) versendete automatische E-Mails verwalten.
 
 ### Informationen im Tab "E-Mail-Skripte"
 

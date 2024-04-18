@@ -44,9 +44,9 @@ Para resolver esta anomalia, deverá:
 
 #### Verificar o endereço IP do alojamento
 
-As mensagens de erro mencionadas [acima](#objective) não significam necessariamente que o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovhcloud.com/pt/web-hosting/). Por isso, verifique o endereço IP do servidor ao qual está ligado o seu [nome de domínio](https://www.ovhcloud.com/pt/domains/).
+As mensagens de erro mencionadas [acima](#objective) não significam necessariamente que o seu site está alojado numa das nossas [ofertas Web Cloud](/links/web/hosting). Por isso, verifique o endereço IP do servidor ao qual está ligado o seu [nome de domínio](https://www.ovhcloud.com/pt/domains/).
 
-Para encontrar o endereço IP do seu [alojamento OVHcloud](https://www.ovhcloud.com/pt/web-hosting/), clique no topo do seu [Área de Cliente OVHcloud](/links/manager) nos `Web Cloud`{.action} e, nos `Alojamentos`{.action} e escolha o alojamento em causa.
+Para encontrar o endereço IP do seu [alojamento OVHcloud](/links/web/hosting), clique no topo do seu [Área de Cliente OVHcloud](/links/manager) nos `Web Cloud`{.action} e, nos `Alojamentos`{.action} e escolha o alojamento em causa.
 
 No separador `Informações gerais`{.action}, tome nota do endereço IPV4 e/ou IPV6 do seu alojamento.
 
@@ -54,7 +54,7 @@ No separador `Informações gerais`{.action}, tome nota do endereço IPV4 e/ou I
 
 #### Verificar o endereço IP na zona DNS
 
-Agora tem de verificar que o endereço IP indicado na [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) corresponde ao do seu [alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/).
+Agora tem de verificar que o endereço IP indicado na [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) corresponde ao do seu [alojamento Web Cloud](/links/web/hosting).
 
 Clique em `Noms de domínio`{.action} do seu [Área de Cliente OVHcloud](/links/manager) e selecione o nome de domínio do seu site.
 

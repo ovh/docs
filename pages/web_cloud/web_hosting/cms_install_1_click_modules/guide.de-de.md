@@ -19,7 +19,7 @@ updated: 2024-03-21
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit mindestens einer Datenbank.
 - Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Sie können den Stand der verschiedenen Versionen auf [dieser Seite](https://webhosting-infos.hosting.ovh.net/) überprüfen. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
 - Falls ein bereits vorhandenes Verzeichnis zur Installation des 1-Klick-Moduls verwendet werden soll, muss dieses leer sein.
 - Der Domainname (und gegebenenfalls die Subdomain) den Sie für Ihre Website verwenden möchten, ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
@@ -39,7 +39,7 @@ OVHcloud bietet 4 CMS als automatische Installation über 1-Klick-Modul an.
 
 Wählen Sie aus den oben aufgeführten 4 CMS aus und folgen dann den Schritten in dieser Anleitung. Sie können unsere [Übersichtsseite für CMS](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/) verwenden, um Ihre Auswahl zu erleichtern.
 
-Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) kompatibel ist.
+Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem [OVHcloud Webhosting](/links/web/hosting) kompatibel ist.
 
 ![CMS-Logos](images/cms-logos.png){.thumbnail}
 

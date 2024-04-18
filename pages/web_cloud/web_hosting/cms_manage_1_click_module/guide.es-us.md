@@ -23,7 +23,7 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting Cloud](https://www.ovhcloud.com/es/web-hosting/) que permita instalar un módulo en 1 clic (solo la oferta gratuita [Start10M](/pages/web_cloud/web_hosting/activate_start10m) no está incluida).
+- Tener contratado un plan de [hosting Cloud](/links/web/hosting) que permita instalar un módulo en 1 clic (solo la oferta gratuita [Start10M](/pages/web_cloud/web_hosting/activate_start10m) no está incluida).
 - Haber creado un módulo en 1 clic en su alojamiento (si todavía no ha realizado la instalación, siga las indicaciones de esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 

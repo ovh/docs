@@ -19,7 +19,7 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - At least one [domain name](https://www.ovhcloud.com/en-au/domains/)
 - Access to the [OVHcloud Control Panel](/links/manager) in the "Web Cloud" section
 

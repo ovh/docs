@@ -24,7 +24,7 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) compatible.
+- Tener contratado un [plan de hosting](/links/web/hosting) compatible.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Haber utilizado la funcionalidad "[Módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear un nuevo sitio web.
 
@@ -71,7 +71,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 > [!primary]
 >
-> Consultar la comparativa de nuestras distintas soluciones [alojamiento web](https://www.ovhcloud.com/es/web-hosting/).
+> Consultar la comparativa de nuestras distintas soluciones [alojamiento web](/links/web/hosting).
 >
 
 En su [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action} :
@@ -165,7 +165,7 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 
 > [!primary]
 >
-> Consultar la comparativa de nuestros diferentes [planes de hosting](https://www.ovhcloud.com/es/web-hosting/).
+> Consultar la comparativa de nuestros diferentes [planes de hosting](/links/web/hosting).
 >
 
 En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action}:

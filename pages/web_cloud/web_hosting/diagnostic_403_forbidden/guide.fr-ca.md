@@ -41,7 +41,7 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) OVHcloud.
+- Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
 - Disposer des [identifiants de connexion](/pages/web_cloud/web_hosting/ftp_connection) à l'espace de stockage FTP de votre hébergement web.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 

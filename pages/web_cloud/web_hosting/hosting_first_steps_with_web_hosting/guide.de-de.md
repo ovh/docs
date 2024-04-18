@@ -10,13 +10,13 @@ updated: 2024-02-13
 
 ## Ziel 
 
-OVHcloud bietet mehrere [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/). Sie sind für verschiedene Einsatzzwecke konzipiert:
+OVHcloud bietet mehrere [Webhosting-Angebote](/links/web/hosting). Sie sind für verschiedene Einsatzzwecke konzipiert:
 
 - Erste Schritte im Web.
 - Schnelles Erstellen einer Website (professionell oder nicht), eines Blogs, eines **C**ontent **M**anagement **S**ystem (**CMS**) wie *WordPress*, *Joomla!*, *PrestaShop* oder *Drupal* oder eines Onlineshops.
 - Personalisieren von E-Mail-Adressen mit dem Domainnamen, den Sie für Ihre Website verwenden möchten.
 - Verwaltung mehrerer Websites auf einem einzigen Webhosting.
-- Verwaltung von Datenbanken ([bei einigen unserer Webhostings inklusive](https://www.ovhcloud.com/de/web-hosting/)).
+- Verwaltung von Datenbanken ([bei einigen unserer Webhostings inklusive](/links/web/hosting)).
 - etc.
 
 Diese Angebote ersparen Ihnen die Verwaltung der Wartung, der Updates und der Sicherheit einer Webhosting-Infrastruktur.<br>
@@ -30,17 +30,17 @@ So sparen Sie Zeit bei der Administration und können sich ganz auf Folgendes ko
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
 - Sie haben einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Ziel dieser Anleitung ist es, Ihnen die wichtigsten Aktionen aufzuzeigen, die mit unseren [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Lösungen durchgeführt werden können. 
+Ziel dieser Anleitung ist es, Ihnen die wichtigsten Aktionen aufzuzeigen, die mit unseren [Webhosting](/links/web/hosting) Lösungen durchgeführt werden können. 
 Jede dieser Aktionen wird durch einen oder mehrere Links zu spezifischen Leitfäden (im Zusammenhang mit der jeweiligen Aktion) begleitet.
 
-Sie können diese Anleitung also als „Repository“ für die möglichen Aktionen verwenden, sobald Sie Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) abonniert haben und während Sie es verwenden.
+Sie können diese Anleitung also als „Repository“ für die möglichen Aktionen verwenden, sobald Sie Ihr [Webhosting](/links/web/hosting) abonniert haben und während Sie es verwenden.
 
 > [!primary]
 > 
@@ -63,7 +63,7 @@ Bevor Sie beginnen, ist es wichtig, Ihre Bedürfnisse klar zu identifizieren und
 - Benötige ich eine oder mehrere Datenbanken, um meine Website zu betreiben?
 - Benötige ich eine oder mehrere personalisierte E-Mail-Adressen mit meinem Domainnamen?
 
-Je nach Ihren Antworten überprüfen Sie, ob Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot Ihren Anforderungen entspricht, bevor Sie fortfahren.
+Je nach Ihren Antworten überprüfen Sie, ob Ihr [Webhosting](/links/web/hosting) Angebot Ihren Anforderungen entspricht, bevor Sie fortfahren.
 
 Ist das nicht der Fall, lesen Sie unsere Anleitung „[Webhosting: Wie kann ich mein Angebot wechseln?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)“.
 
@@ -104,7 +104,7 @@ Um diese Option zu verwenden, lesen Sie unsere Anleitung „[Installation Ihrer 
 
 ### Schritt 3 - E-Mail-Accounts erstellen (optional) <a name="email-creation"></a>
 
-Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthält eine oder mehrere E-Mail-Accounts, die Sie aktivieren können.
+Ihr [Webhosting](/links/web/hosting) enthält eine oder mehrere E-Mail-Accounts, die Sie aktivieren können.
 
 Befolgen Sie zunächst unsere Anleitung „[Die in Ihrem Webhosting inklusiven E-Mail-Accounts aktivieren](/pages/web_cloud/web_hosting/activate-email-hosting)“.
 
@@ -150,13 +150,13 @@ Um die Verbindung zwischen Ihrem Domainnamen und Ihrem OVHcloud E-Mail-Angebot z
 
 ### Schritt 5 - Weitere Optionen für Webhostings <a name="other-options"></a>
 
-Abhängig von Ihrem [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) sind zusätzliche Optionen / Angebote / Funktionen kostenlos verfügbar.
+Abhängig von Ihrem [Webhosting Angebot](/links/web/hosting) sind zusätzliche Optionen / Angebote / Funktionen kostenlos verfügbar.
 
 #### SSL Zertifikate
 
 Mit SSL Zertifikaten wird Ihre Website über HTTPS erreichbar gemacht. Dieses Protokoll verschlüsselt die Kommunikation zwischen Ihrem Webhosting und den Personen, die Ihre Website besuchen.
 
-Sie können ein kostenloses SSL-Zertifikat von **Let's Encrypt** für jedes [Webhosting](https://www.ovhcloud.com/de/web-hosting/) aktivieren.
+Sie können ein kostenloses SSL-Zertifikat von **Let's Encrypt** für jedes [Webhosting](/links/web/hosting) aktivieren.
 
 Weitere Informationen zu den SSL-Zertifikaten (kostenlos oder kostenpflichtig), die auf Webhostings angeboten werden, finden Sie in unserer Anleitung „[SSL-Zertifikate auf Webhostings](/pages/web_cloud/web_hosting/ssl_on_webhosting)“.
 
@@ -186,7 +186,7 @@ Weitere Informationen zur Verwendung finden Sie in unserer Dokumentation „[Ers
 
 #### E-Mails von Ihrer Website aus versenden
 
-Alle unsere [Webhosting](https://www.ovhcloud.com/de/web-hosting/) ermöglichen den kostenlosen Versand von E-Mails von Ihrer Website oder einem bestimmten Skript aus.
+Alle unsere [Webhosting](/links/web/hosting) ermöglichen den kostenlosen Versand von E-Mails von Ihrer Website oder einem bestimmten Skript aus.
 
 Weitere Informationen zu dieser Funktion finden Sie in unserer Anleitung „[Automatische E-Mails eines Webhostings verwalten](/pages/web_cloud/web_hosting/mail_function_script_records)“.
 
@@ -194,7 +194,7 @@ Weitere Informationen zu dieser Funktion finden Sie in unserer Anleitung „[Aut
 
 Mit den CRON Tasks können Sie automatisch Skripte ausführen, die auf Ihrem Webhosting gehostet werden.
 
-Wenn Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) über diese Option verfügt, lesen Sie unsere Anleitung „[Automatische Tasks mit einem Webhosting verwendenn](/pages/web_cloud/web_hosting/cron_tasks)“ für weitere Informationen.
+Wenn Ihr [Webhosting](/links/web/hosting) über diese Option verfügt, lesen Sie unsere Anleitung „[Automatische Tasks mit einem Webhosting verwendenn](/pages/web_cloud/web_hosting/cron_tasks)“ für weitere Informationen.
 
 ## Weiterführende Informationen
 

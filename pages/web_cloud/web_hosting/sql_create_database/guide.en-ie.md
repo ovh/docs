@@ -12,7 +12,7 @@ A database is used to store dynamic elements (connection data, user data, displa
 
 ## Requirements
 
-- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that includes at least one database.
+- You have an [OVHcloud web hosting plan](/links/web/hosting) that includes at least one database.
 - You have a database available for creation from the databases included in your web hosting plan. If required, you can add [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) databases to your web hosting plan.
 - You have access to the [OVHcloud Control Panel](/links/manager) with the [necessary permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage your web hosting plan.
 
@@ -53,7 +53,7 @@ In the window that opens, select the following information:
 |Information|Description|  
 |---|---|
 |**Select the type of database**|Choose the size of the database. This size refers to the space available to your database for storing data.|
-|**Select the database engine to be added**|Choose the engine you want the database to use. The databases included in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) are only available with the MySQL engine.|
+|**Select the database engine to be added**|Choose the engine you want the database to use. The databases included in your [OVHcloud web hosting plan](/links/web/hosting) are only available with the MySQL engine.|
 |**Select the version of the database to be added**|Choose the version used by the database engine. Make sure your website is compatible with the version you have chosen.|
 
 Click on `Next`{.action}.

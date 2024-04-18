@@ -23,7 +23,7 @@ Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](/pages
 
 ## Prérequis
 
-- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)
+- Disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting)
 
 ## En pratique
 

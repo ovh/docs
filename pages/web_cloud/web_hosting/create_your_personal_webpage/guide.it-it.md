@@ -24,7 +24,7 @@ Questa guida ti mostra come creare la prima pagina di un sito Web su un Hosting 
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) o di un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
+- Disporre di un piano di [hosting Web OVHcloud](/links/web/hosting) o di un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
 - Disporre di un editor di testo (ad esempio notebook, TextEdit, Notepad++, ecc...)
 - Aver installato un client FTP (come [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), ecc...) per trasferire (depositare sull'hosting) i suoi file sul suo spazio dedicato.
 
@@ -179,7 +179,7 @@ Puoi vedere il risultato nel tuo browser: di default, gli elementi delle liste s
 
 #### Aggiungi immagini per rendere la tua pagina più attraente
 
-Il web è soprattutto un mezzo visivo. In questa sezione vedremo come inserire le immagini nel tuo contenuto. L'offerta Hosting gratuito 100M ti offre uno spazio di storage da 100 MB. È sufficiente per le tue pagine HTML e CSS, ma può essere limitato per mettere molte immagini sul tuo sito. In questo caso, ti consigliamo di optare per un'[offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che permetta di usufruire di uno storage di maggiore entità.
+Il web è soprattutto un mezzo visivo. In questa sezione vedremo come inserire le immagini nel tuo contenuto. L'offerta Hosting gratuito 100M ti offre uno spazio di storage da 100 MB. È sufficiente per le tue pagine HTML e CSS, ma può essere limitato per mettere molte immagini sul tuo sito. In questo caso, ti consigliamo di optare per un'[offerta di hosting Web OVHcloud](/links/web/hosting) che permetta di usufruire di uno storage di maggiore entità.
 
 Il tag HTML utilizzato per visualizzare un'immagine è il tag `<img>`. Contrariamente ai tag che abbiamo visto prima, non c'è apertura e chiusura di questo elemento. Parleremo di targhette autofermanti. Sono gli attributi di questo tag che permettono di collegare la posizione del file e il testo descrittivo dell'immagine.
 

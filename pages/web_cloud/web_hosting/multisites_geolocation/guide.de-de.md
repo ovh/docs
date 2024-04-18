@@ -23,7 +23,7 @@ Die Geolokalisierungsoption für Ihr Webhosting kann für die Suchmaschinenoptim
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 
 ## In der praktischen Anwendung

@@ -19,7 +19,7 @@ Ce tutoriel vous décrit comment utiliser le générateur de site [Cecil](https:
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant un accès SSH. Cet accès permet d'installer, en ligne de commande, une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergement web.
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) incluant un accès SSH. Cet accès permet d'installer, en ligne de commande, une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergement web.
 - Être familiarisé à la saisie en ligne de commande.
 - Avoir installé et configuré l'application **Cecil** sur votre hébergement (reportez-vous à notre tutoriel sur [l'installation et la configuration de Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil)).
 

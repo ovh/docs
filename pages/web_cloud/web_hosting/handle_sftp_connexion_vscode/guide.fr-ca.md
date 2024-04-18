@@ -17,7 +17,7 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
   
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting)
 - Installer [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) sur votre machine
 
 ## En pratique
@@ -181,7 +181,7 @@ Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet
 
 [Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement web Pro ou Performance](https://www.ovhcloud.com/fr-ca/web-hosting/).
+[Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement web Pro ou Performance](/links/web/hosting).
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

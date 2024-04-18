@@ -8,7 +8,7 @@ updated: 2023-06-07
 
 Les certificats Secure Socket Layer (SSL) permettent de chiffrer les échanges effectués depuis ou vers votre site web. Cela évite qu'une personne ou un robot malveillant ne vienne « écouter » clairement les requêtes envoyées ou émises avec votre site web.
 
-OVHcloud propose plusieurs types de certificats SSL sur nos offres d'[hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/). Ils sont présentés dans notre guide « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ». Les certificats SSL sont incontournables pour la sécurité de votre site web.
+OVHcloud propose plusieurs types de certificats SSL sur nos offres d'[hébergement mutualisé OVHcloud](/links/web/hosting). Ils sont présentés dans notre guide « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ». Les certificats SSL sont incontournables pour la sécurité de votre site web.
 
 Trois types de certificats SSL existent :
 
@@ -36,7 +36,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 ## Prérequis <a name="requirements"></a>
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Commander ou disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) sur lequel aucun certificat SSL n'est déjà installé.
+- Commander ou disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting) sur lequel aucun certificat SSL n'est déjà installé.
 - Commander ou disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/) et disposer des droits exclusifs sur son utilisation. Le nom de domaine ne doit pas déjà être lié à un certificat SSL.
 - Être une organisation (entreprise, agence gouvernementale, ...) enregistrée auprès d'un registre officiel.
 - Disposer de l'autorisation de votre organisation à commander un certificat SSL EV.

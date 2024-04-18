@@ -31,7 +31,7 @@ Permette, da un terminale e con l’aiuto di un comando Linux, di copiare un fil
 
 - Disporre di un terminale compatibile con i comandi Linux e SSH (ad esempio, il *terminale* di MacOS o l’emulatore *Ubuntu* su Windows)
 - Familiarizzare con i comandi Linux e SSH
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) con accesso in SSH
+- Disporre di una soluzione di [hosting Web](/links/web/hosting) con accesso in SSH
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
   
 ## Procedura

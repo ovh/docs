@@ -16,7 +16,7 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting){.external} compatível.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
@@ -66,14 +66,14 @@ Em caso de abuso ou pirataria, uma parte ou o conjunto do seu serviço poderá s
 
 #### Ligações simultâneas à base de dados
 
-Nas ofertas de alojamento web (bases de dados partilhadas), existe um limite de 30 ligações simultâneas por base de dados (este limite passa para 200 se utilizar uma oferta [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/). Consultar [detalhes das nossas ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) para conhecer as opções disponíveis em cada oferta de alojamento web.
+Nas ofertas de alojamento web (bases de dados partilhadas), existe um limite de 30 ligações simultâneas por base de dados (este limite passa para 200 se utilizar uma oferta [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/). Consultar [detalhes das nossas ofertas de alojamento web](/links/web/hosting) para conhecer as opções disponíveis em cada oferta de alojamento web.
 
 Pode igualmente encomendar ofertas [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) suplementares, estas dispõem de opções de personalização:
 
 - *max_connections*: 100 por predefinição, com possibilidade de passar para 200;
 - *max_user_connections*: 50 por predefinição, com possibilidade de passar para 200.
 
-Para saber mais, consulte os detalhes dos nossos [planos de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e o nosso guia "[Primeiros passos com a sua oferta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Para saber mais, consulte os detalhes dos nossos [planos de alojamento web](/links/web/hosting) e o nosso guia "[Primeiros passos com a sua oferta Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Ligações a partir de um servidor externo
 

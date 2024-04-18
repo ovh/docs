@@ -16,7 +16,7 @@ Dostęp do logów i statystyk Twojej strony WWW jest zawarty w wybranej przez Ci
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie kompatybilnego [hostingu](/links/web/hosting){.external}.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce

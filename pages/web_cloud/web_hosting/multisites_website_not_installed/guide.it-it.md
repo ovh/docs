@@ -24,7 +24,7 @@ La pagina di errore **Sito non installato** può essere visualizzata sul browser
 
 ## Prerequisiti
 
-- Disporre di una [offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una [offerta di hosting condiviso](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre anche della gestione della [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) alla quale è associato il dominio.
 

@@ -38,7 +38,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
@@ -113,7 +113,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](https:
 
 ### Schritt 1: Installation vorbereiten <a name="step1"></a> 
 
-Um ein CMS auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot zu installieren sind einige Vorbereitungen erforderlich.
+Um ein CMS auf Ihrem [Webhosting](/links/web/hosting) Angebot zu installieren sind einige Vorbereitungen erforderlich.
 
 #### 1.1 Überprüfen Sie das Wurzelverzeichnis
 
@@ -128,7 +128,7 @@ In unserer Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/
 
 #### 1.2 DNS-Auflösung des Domainnamens überprüfen
 
-- Vergewissern Sie sich, dass der Domainname, den Sie für den Zugriff auf Ihr CMS verwenden, sowie dessen "www"-Subdomain auf die IP-Adresse Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) verweisen.
+- Vergewissern Sie sich, dass der Domainname, den Sie für den Zugriff auf Ihr CMS verwenden, sowie dessen "www"-Subdomain auf die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) verweisen.
 
 Um die IP-Adresse Ihres Webhostings zu erfahren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr Webhosting im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} aus.<br>
 Im Kasten `Allgemeine Informationen`{.action} finden Sie die IP-Adresse Ihres Webhostings im Eintrag `IPv4`{.action}.
@@ -166,7 +166,7 @@ Wenn Sie noch keinen FTP-Client verwenden, können Sie FileZilla installieren. D
 > Einige CMS funktionieren ohne Datenbanken. Wenn dies für das CMS der Fall ist, das Sie installieren möchten, überspringen Sie diesen Schritt.
 >
 
-Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/) enthalten diese mit Ausnahme des [100M kostenlosen Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting Angebote](/links/web/hosting) enthalten diese mit Ausnahme des [100M kostenlosen Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 
 Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank über Ihr Webhosting](/pages/web_cloud/web_hosting/sql_create_database).
 

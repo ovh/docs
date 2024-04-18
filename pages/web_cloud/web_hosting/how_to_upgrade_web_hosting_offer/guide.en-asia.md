@@ -6,7 +6,7 @@ updated: 2023-09-19
 
 ## Objective
 
-In your [OVHcloud Control Panel](/links/manager), you can increase the capacity of your [web hosting plans](https://www.ovhcloud.com/asia/web-hosting/). A subscription upgrade provides the following advantages:
+In your [OVHcloud Control Panel](/links/manager), you can increase the capacity of your [web hosting plans](/links/web/hosting). A subscription upgrade provides the following advantages:
 
 - More powerful hosting
 - More FTP storage space
@@ -18,7 +18,7 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
 
 ## Instructions

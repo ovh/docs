@@ -23,7 +23,7 @@ Este tutorial explica como utilizar o gerador de site [Cecil](https://cecil.app)
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) com acesso SSH. Este acesso permite instalar, em linha de comandos, uma ou várias soluções alternativas às propostas por defeito nas nossas ofertas de alojamento web.
+- Ter um [serviço de alojamento web da OVHcloud](/links/web/hosting) com acesso SSH. Este acesso permite instalar, em linha de comandos, uma ou várias soluções alternativas às propostas por defeito nas nossas ofertas de alojamento web.
 - Estar familiarizado com a introdução em linha de comandos.
 - Ter instalado e configurado a aplicação **Cecil** no seu alojamento (consulte o nosso tutorial sobre [a instalação e a configuração do Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil)).
 

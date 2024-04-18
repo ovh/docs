@@ -27,7 +27,7 @@ Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. 
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
-- Tener contratado un [plan de alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener contratado un [plan de alojamiento web](/links/web/hosting){.external}.
 
 ## Procedimiento
 

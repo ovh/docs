@@ -16,7 +16,7 @@ O sistema **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 oferece a capaci
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclua, pelo menos, uma base de dados.
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) que inclua, pelo menos, uma base de dados.
 - Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/).
 Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
@@ -24,7 +24,7 @@ Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ### Preparar a instalação
 
-Para instalar o CMS **Typo3** no seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), alguns preparativos são necessários.
+Para instalar o CMS **Typo3** no seu [alojamento web](/links/web/hosting), alguns preparativos são necessários.
 
 Siga o **conjunto de passos** descritos no nosso tutorial de [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de avançar para o passo seguinte.
 

@@ -27,7 +27,7 @@ W szczególności dostęp ten umożliwia [umieszczenie strony w Internecie](/pag
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie [hostingu OVHcloud](/links/web/hosting).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
@@ -45,7 +45,7 @@ Tabela wyświetla *użytkowników FTP* utworzonych na Twoim hostingu. Użytkowni
 > Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/account_information/manage-ovh-password).
 >
 
-W zależności od pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zmiana hasła do konta FTP w zakładce `FTP-SSH`{.action} zostanie wykonana na dwie różne sposoby:
+W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana hasła do konta FTP w zakładce `FTP-SSH`{.action} zostanie wykonana na dwie różne sposoby:
 
 - **w przypadku pakietów, które nie pozwalają na utworzenie drugiego użytkownika FTP** (oferty *Darmowy hosting 100M* i *Perso*): kliknij *piktogram w formie ołówka* w kolumnie `Hasło`{.action} tabeli, która się wyświetla, wprowadź nowe hasło **zgodnie z polityką haseł**, a następnie potwierdź zmianę, klikając *zielony przycisk* do zatwierdzenia.
 

@@ -23,7 +23,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que contenga al menos una base de datos.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/)
 - Haber [instalado WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en su alojamiento web
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}

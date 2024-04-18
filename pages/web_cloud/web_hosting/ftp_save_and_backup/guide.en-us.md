@@ -19,7 +19,7 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 
 ## Requirements
 
-- A [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} (please note that this does not work with [Cloud Web](https://www.ovhcloud.com/en/web-hosting/cloud-web-offer/)).
+- A [Web Hosting plan](/links/web/hosting){.external} (please note that this does not work with [Cloud Web](https://www.ovhcloud.com/en/web-hosting/cloud-web-offer/)).
 - Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVHcloud Control Panel](/links/manager){.external}, or have the FTP user password required to access your storage space. 
 
 ## Instructions

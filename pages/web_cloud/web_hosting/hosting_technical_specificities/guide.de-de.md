@@ -64,14 +64,14 @@ Im Missbrauchsfall oder bei erwiesenem Risiko kann ein Teil oder die Gesamtheit 
 
 #### Simultane Verbindungen mit der Datenbank
 
-Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 Simultanverbindungen pro Datenbank (200 bei [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/)). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) nachlesen.
+Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 Simultanverbindungen pro Datenbank (200 bei [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/)). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](/links/web/hosting) nachlesen.
 
 Darüber hinaus können Sie auch zusätzliche [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) bestellen und weiter anpassen:
 
 - *max_connections*: 100 mit der Möglichkeit, auf 200 zu wechseln
 - *max_user_connections*: 50 mit der Möglichkeit, auf 200 zu wechseln
 
-Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) und unserer Anleitung „[Erste Schritte mit Ihrem Angebot Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“.
+Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](/links/web/hosting) und unserer Anleitung „[Erste Schritte mit Ihrem Angebot Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“.
 
 #### Verbindungen über einen externen Server
 

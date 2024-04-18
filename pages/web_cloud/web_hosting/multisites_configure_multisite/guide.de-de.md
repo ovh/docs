@@ -24,7 +24,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 ## Voraussetzungen
 
-- Sie haben ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie besitzen eine oder mehrere [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}.
 - Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
@@ -33,7 +33,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 > [!primary]
 >
-> Die meisten Angebote der Reihe [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} inkludieren eine Option zur Erstellung von E-Mail-Accounts mit Adressen, die Ihren Domainnamen verwenden.
+> Die meisten Angebote der Reihe [OVHcloud Webhosting](/links/web/hosting){.external} inkludieren eine Option zur Erstellung von E-Mail-Accounts mit Adressen, die Ihren Domainnamen verwenden.
 >
 > Diese Option kann für **nur einen** Domainnamen aktiviert werden. Während *Multisite* mit mehreren verschiedenen Domainnamen funktioniert, können Sie die E-Mail-Option nur für einen Ihrer Domainnamen aktivieren.
 >
@@ -74,7 +74,7 @@ Falls die Domain einem anderen Kunden-Account zugeordnet ist oder außerhalb von
 > [!warning]
 > Dieser Schritt gilt nur, wenn Sie "Eine bei OVHcloud registrierte Domain hinzufügen" ausgewählt haben. Die Domain oder deren DNS-Zone muss sich **in Ihrem Kundencenter** befinden. Für externe Domainnamen gehen Sie zu [Schritt 2.2: eine externe Domain hinzufügen](#add-external-domain).
 
-Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} können manche Optionen nicht verfügbar sein.
+Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [Webhosting-Angebot](/links/web/hosting){.external} können manche Optionen nicht verfügbar sein.
 
 > [!primary]
 > Um eine Subdomain hinzuzufügen, wählen Sie zuerst die Hauptdomain aus der Liste aus (Beispiel: domain.tld). Im nächsten Schritt können Sie die Subdomain angeben (Beispiel: **blog**.domain.tld).
@@ -134,7 +134,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 > ![Multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- Passen Sie nun die Optionen zum Hinzufügen der Domain an. Einige Optionen Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} können nicht direkt beim Hinzufügen der Domain aktiviert werden. Sie können die Optionen erst im Anschluss verwenden, indem Sie die Multisite-Einstellungen ändern, nachdem die Domain hinzugefügt wurde.
+ Passen Sie nun die Optionen zum Hinzufügen der Domain an. Einige Optionen Ihres [Webhostings](/links/web/hosting){.external} können nicht direkt beim Hinzufügen der Domain aktiviert werden. Sie können die Optionen erst im Anschluss verwenden, indem Sie die Multisite-Einstellungen ändern, nachdem die Domain hinzugefügt wurde.
 
 |Information|Beschreibung|
 |---|---|
@@ -171,7 +171,7 @@ Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehö
 >
 > Wenn Sie mehrere Websites hinzufügen möchten, müssen Sie diese Schritte wiederholen.
 >
-> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](https://www.ovhcloud.com/de/web-hosting/){.external} gibt an, wie viele empfohlene Websites Sie auf Ihrem Speicherplatz hosten können.
+> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](/links/web/hosting){.external} gibt an, wie viele empfohlene Websites Sie auf Ihrem Speicherplatz hosten können.
 >
 
 ## Weiterführende Informationen

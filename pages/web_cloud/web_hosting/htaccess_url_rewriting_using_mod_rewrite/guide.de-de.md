@@ -31,7 +31,7 @@ Das Modul "**mod_rewrite**" bietet hierbei endlose Möglichkeiten. Im Folgenden 
  
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
   
 ## In der praktischen Anwendung
 

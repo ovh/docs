@@ -16,8 +16,8 @@ La mayoría de los sitios web utilizan bases de datos y **C**ontent **M**anageme
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud.](https://www.ovhcloud.com/es-es/web-hosting/){.external}
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud.](/links/web/hosting){.external}
 - Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
@@ -30,7 +30,7 @@ Antes de empezar, defina el método que va a seguir para recuperar la copia de s
 
 - **Utilizar un script para realizar la copia de seguridad** : Para ello, deberá crear un script y colocarlo en su alojamiento web de OVHcloud. Se requieren conocimientos específicos para esta creación.
 
-- **Realizar la copia de seguridad mediante un comando SSH** : Para ello, deberá conectarse al espacio de almacenamiento FTP por SSH y utilizar los comandos necesarios para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} específico.
+- **Realizar la copia de seguridad mediante un comando SSH** : Para ello, deberá conectarse al espacio de almacenamiento FTP por SSH y utilizar los comandos necesarios para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados y un [plan de hosting de OVHcloud](/links/web/hosting){.external} específico.
 
 > [!success]
 >

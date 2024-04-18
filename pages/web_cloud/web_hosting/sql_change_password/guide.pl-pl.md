@@ -42,7 +42,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu WWW OVHcloud](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Korzystanie z [bazy danych powiązanej z hostingiem](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub z [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
 - Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection).
@@ -191,7 +191,7 @@ Zapisz tę zmianę.
 
 Ponownie, możliwe są dwa przypadki: 
 
-- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](/links/manager) poświęconej [hostingowi](https://www.ovhcloud.com/pl/web-hosting/), postępuj zgodnie z tymi [instrukcjami](#case1).
+- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](/links/manager) poświęconej [hostingowi](/links/web/hosting), postępuj zgodnie z tymi [instrukcjami](#case1).
 
 - Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](/links/manager) poświęconej ofertom [Web Cloud Databases](/products/web-cloud-clouddb), postępuj zgodnie z tymi [instrukcjami](#case2).
 

@@ -26,7 +26,7 @@ Une fois connecté à votre espace client :
 
 ### Comment mettre en ligne mon site ? 
 
-Pour mettre en ligne votre site, vous devez disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/) qui correspondra à l'adresse Web depuis laquelle votre site sera accessible (exemple : *mondomaine.com*). Vous aurez également besoin d'un [hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/) sur lequel installer votre site.
+Pour mettre en ligne votre site, vous devez disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/) qui correspondra à l'adresse Web depuis laquelle votre site sera accessible (exemple : *mondomaine.com*). Vous aurez également besoin d'un [hébergement](/links/web/hosting) sur lequel installer votre site.
 
 Pour suivre les étapes nécessaires à la construction de votre site, consultez cette [page](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/) puis suivez les instructions du guide [Mettre en ligne un site Internet sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 

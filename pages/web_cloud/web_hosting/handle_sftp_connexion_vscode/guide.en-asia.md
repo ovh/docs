@@ -17,7 +17,7 @@ If you have an OVHcloud web hosting plan, you can access a storage space that al
   
 ## Requirements
 
-- a [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
+- a [OVHcloud web hosting plan](/links/web/hosting)
 - Install [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) on your machine
 
 ## Instructions
@@ -182,7 +182,7 @@ The purpose of this tutorial is to provide an effective introduction to managing
 
 [Use FileZilla with your OVHcloud hosting plan](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Use SSH access on your web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting) (only available with a [Professional or Performance web hosting plan](https://www.ovhcloud.com/asia/web-hosting/))
+[Use SSH access on your web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting) (only available with a [Professional or Performance web hosting plan](/links/web/hosting))
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

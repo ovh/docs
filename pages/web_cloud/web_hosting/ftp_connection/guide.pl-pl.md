@@ -16,7 +16,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
 - Dostęp do [Panelu klienta](/links/manager){.external}, sekcja `Web Cloud`{.action}
 
 > [!primary]
@@ -70,7 +70,7 @@ Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stroni
 
 > [!primary]
 >
-> W zależności od oferty [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
+> W zależności od oferty [hosting OVHcloud](/links/web/hosting){.external}, którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
 >
 
 Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -88,7 +88,7 @@ Połączenie z przestrzenią dyskową FTP można wykonać na kilka sposobów. Pr
 - [2. Połączenie przez program FTP](#ftpsoftware): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przy użyciu programu (takiego jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
 Najpierw zainstaluj wybrany program/klient FTP na komputerze.
 
-- [3. Połączenie przez dostęp SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przez SSH. Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} **Pro** lub **Performance**.
+- [3. Połączenie przez dostęp SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przez SSH. Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting){.external} **Pro** lub **Performance**.
 
 #### 1. Logowanie przez FTP Explorer <a name="ftpexplorer"></a>
 

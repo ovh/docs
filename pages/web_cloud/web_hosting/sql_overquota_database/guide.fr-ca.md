@@ -19,7 +19,7 @@ Ce tutoriel vous propose des actions à entreprendre lorsque votre base de donn�
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) avec une base de données mutualisée OVHcloud associée.
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) avec une base de données mutualisée OVHcloud associée.
   
 ## En pratique
 

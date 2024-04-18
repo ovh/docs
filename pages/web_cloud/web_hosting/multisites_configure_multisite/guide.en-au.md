@@ -20,7 +20,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 ## Requirements
 
-- A compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}
+- A compatible [OVHcloud Web Hosting plan](/links/web/hosting){.external}
 - One or more [domain names](https://www.ovhcloud.com/en-au/domains/){.external}
 - The right to modify your domain name's configuration (the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit))
 - Access to the [OVHcloud Control Panel](/links/manager){.external}
@@ -29,7 +29,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 > [!primary]
 >
-> Most [OVHcloud Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/){.external} offers include the option of creating email accounts with custom addresses using your domain name. This email option can be enabled for **only one** domain name.
+> Most [OVHcloud Web Hosting](/links/web/hosting){.external} offers include the option of creating email accounts with custom addresses using your domain name. This email option can be enabled for **only one** domain name.
 >
 > This means that if you use *multisite* with several different domain names, you can only enable this option for one of your domain names.
 > Please refer to our [guide](/pages/web_cloud/web_hosting/activate-email-hosting) for more details on how to enable this option.
@@ -69,7 +69,7 @@ For a domain name that is external to your customer account (another NIC handle)
 > [!warning]
 > This step only applies if you have selected "Add an OVHcloud-registered domain". The domain name or its DNS zone must be **in your Control Panel**. For external domain names, go to [Step 2.2: add an external domain](#add-external-domain){.external}.
 
-You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} you have.
+You will now need to customise the way you add your domain or subdomain. Some of the choices offered cannot be selected, depending on which [Web Hosting plan](/links/web/hosting){.external} you have.
 
 > [!primary]
 > To add a subdomain, you must first select the primary domain from the list (example: domain.tld). In the next step, you can enter the subdomain (e.g. **blog**.domain.tld).
@@ -129,7 +129,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 > ![multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
+ You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](/links/web/hosting){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
 
 |Information|Description|
 |---|---|
@@ -164,7 +164,7 @@ However, if you would like to set up your website manually, you can put it onlin
 >
 > If you would like to add several websites, you will need to repeat this step.
 >
-> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. Our [Web Hosting page](https://www.ovhcloud.com/en-au/web-hosting/){.external} shows the recommended number of websites you can host on your plan.
+> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. Our [Web Hosting page](/links/web/hosting){.external} shows the recommended number of websites you can host on your plan.
 >
 
 ## Go further

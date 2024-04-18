@@ -16,7 +16,7 @@ Con el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-w
 >
 > Este alojamiento gratuito de 100 MB es adecuado para una simple página web de presentación. **no incluye base de datos**.
 > También es conveniente si no necesita varias direcciones de correo electrónico de tipo MX Plan. 
-> Si quiere crear un sitio web que tenga varias páginas y que requiera una base de datos, como un CMS (WordPress, Joomla, PrestaShop, Drupal, etc.), puede contratar uno de [nuestros planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) directamente desde nuestro sitio web o desde su [área de cliente de OVHcloud](/links/manager){.external}.
+> Si quiere crear un sitio web que tenga varias páginas y que requiera una base de datos, como un CMS (WordPress, Joomla, PrestaShop, Drupal, etc.), puede contratar uno de [nuestros planes de hosting](/links/web/hosting) directamente desde nuestro sitio web o desde su [área de cliente de OVHcloud](/links/manager){.external}.
 >
 
 **Cómo activar el alojamiento gratuito 100M**
@@ -60,7 +60,7 @@ Si su proyecto evoluciona rápidamente hacia un alojamiento que dispone de una b
 >
 > También puede eliminar la oferta gratuita, con el cuidado de obtener previamente los datos de su alojamiento y el contenido de su dirección de correo electrónico.
 >
-> Para más información, consulte nuestras [ofertas de alojamiento](https://www.ovhcloud.com/es-es/web-hosting/).
+> Para más información, consulte nuestras [ofertas de alojamiento](/links/web/hosting).
 >
 
 **El paso 3** le recuerda el precio de la solución. 

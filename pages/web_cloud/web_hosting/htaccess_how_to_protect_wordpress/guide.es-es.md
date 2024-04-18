@@ -23,7 +23,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) y haber instalado WordPress.
+- Tener un [plan de hosting](/links/web/hosting) y haber instalado WordPress.
 - Estar en condiciones de utilizar un cliente FTP como [FileZilla](https://filezilla-project.org/). Puede consultar nuestra guía "[Utilizar FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)".
 
 Los archivos **.htaccess** se pueden crear y modificar con editores de texto como:
@@ -49,7 +49,7 @@ Si no utiliza un CMS, OVHcloud pone a su disposición un tutorial sobre la [prot
 
 Un archivo **.htaccess** permite configurar un servidor web. En el caso de un alojamiento web compartido, se trata del servidor web de código abierto "**Apache**". La sintaxis de este archivo es definida por la organización que edita y mantiene **Apache**. A diferencia de la mayoría de los archivos de configuración de un servidor, los archivos **.htaccess** se encuentran en los directorios de los sitios web, concretamente en el espacio de almacenamiento FTP de su alojamiento web. Un archivo **.htaccess** tendrá efectos en el directorio en el que está presente, así como en todos los subdirectorios presentes en el interior.
 
-Nuestros planes de hosting no permiten los archivos de configuración del servidor. Sin embargo, los archivos **.htaccess** permiten modificar determinadas características y comportamientos. Además, no es necesario reiniciar el servidor **Apache** para que se apliquen las indicaciones y modificaciones escritas en el archivo **.htaccess**. Todos nuestros [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) permiten configurar archivos **.htaccess**.
+Nuestros planes de hosting no permiten los archivos de configuración del servidor. Sin embargo, los archivos **.htaccess** permiten modificar determinadas características y comportamientos. Además, no es necesario reiniciar el servidor **Apache** para que se apliquen las indicaciones y modificaciones escritas en el archivo **.htaccess**. Todos nuestros [planes de hosting de OVHcloud](/links/web/hosting) permiten configurar archivos **.htaccess**.
 
 El punto situado delante del nombre del archivo **.htaccess** (que a su vez no tiene extensión) designa un archivo oculto. Además, estos archivos no son accesibles para usuarios externos que visiten su sitio web.
 

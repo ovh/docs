@@ -6,7 +6,7 @@ updated: 2024-03-12
 
 ## Objective
 
-The [OVHcloud Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/){.external} offers allow you to host your websites, provided they are compatible with the [configuration of our shared infrastructure](https://webhosting-infos.hosting.ovh.net){.external}.
+The [OVHcloud Web Hosting](/links/web/hosting){.external} offers allow you to host your websites, provided they are compatible with the [configuration of our shared infrastructure](https://webhosting-infos.hosting.ovh.net){.external}.
 However, on our shared infrastructure, you can modify the following settings for your web hosting plan:
 
 - [Runtime environment](#runtime-environment)
@@ -42,7 +42,7 @@ In short, changing your Web Hosting plan’s configuration from the [OVHcloud Co
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, with the exception of a [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/)
+- An [OVHcloud web hosting plan](/links/web/hosting){.external}, with the exception of a [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/)
 - Access to your web hosting plan in the [OVHcloud Control Panel](/links/manager), or via [FTP login](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions
@@ -132,7 +132,7 @@ Put it online by placing it in your [FTP storage space](/pages/web_cloud/web_hos
 
 > [!warning]
 >
-> You can no longer modify the PHP version via a .htaccess file on the latest [OVHcloud Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/) solutions.<br>
+> You can no longer modify the PHP version via a .htaccess file on the latest [OVHcloud Web Hosting](/links/web/hosting) solutions.<br>
 > The command to change the PHP version in the .htaccess file does not allow us to use recent PHP versions on our infrastructure.
 > You must use the .ovhconfig file.
 >

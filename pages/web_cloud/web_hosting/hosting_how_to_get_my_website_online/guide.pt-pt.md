@@ -10,13 +10,13 @@ updated: 2024-03-21
 
 ## Sumário
 
-Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net){.external}.
+Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja online, quer seja para partilhar uma paixão ou promover a sua atividade profissional, o seu [alojamento web da OVHcloud](/links/web/hosting){.external} permite-lhe alojar o site que quiser, na medida em que seja compatível com a [configuração das nossas infraestruturas](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Saiba como publicar um site no alojamento web da OVHcloud.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting){.external}.
 
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Ter um [domínio](https://www.ovhcloud.com/pt/domains/){.external} (endereço que permite identificar e aceder ao seu site).
@@ -81,7 +81,7 @@ Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pod
 
 - **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível como o FileZilla. Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização.
 
-- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos técnicos avançados. Por outro lado, nem todos os planos de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} são compatíveis.
+- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos técnicos avançados. Por outro lado, nem todos os planos de [alojamento web da OVHcloud](/links/web/hosting){.external} são compatíveis.
 
 #### 2.3. Carregar os ficheiros para o espaço de armazenamento
 
@@ -114,7 +114,7 @@ Se estiver a migrar um site já existente, obtenha a base de dados junto do anti
 
 #### 3.2. Criar a base de dados na OVHcloud 
 
-Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} ou [Web Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
+Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](/links/web/hosting){.external} ou [Web Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
 Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
 

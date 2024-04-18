@@ -16,7 +16,7 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) Grav ermöglicht die schnell
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot.
 - Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/).
 - Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
 
@@ -24,7 +24,7 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) Grav ermöglicht die schnell
 
 ### Installation vorbereiten
 
-Für die Installation des CMS **Grav** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) sind einige Vorbereitungen erforderlich.
+Für die Installation des CMS **Grav** auf Ihrem [Webhosting](/links/web/hosting) sind einige Vorbereitungen erforderlich.
 
 Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), bevor Sie zum nächsten Schritt übergehen.
 

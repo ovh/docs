@@ -21,7 +21,7 @@ A website essentially composed of static web pages guarantees a better loading t
 
 ## Requirements
 
-- Have an [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
+- Have an [OVHcloud web hosting plan](/links/web/hosting) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
 - Be familiar with command line input.
 - Be able to transfer files via FTP with a client like [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Configure your DNS zone to point your domain name (or subdomain) to your web hosting plan. This is particularly useful if you would like to host several websites in [multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your shared web hosting plan.
@@ -29,7 +29,7 @@ A website essentially composed of static web pages guarantees a better loading t
 
 ## Instructions
 
-You can use [shared web hosting](https://www.ovhcloud.com/asia/web-hosting/) to declare domains or subdomains on multiple websites. You need a domain or subdomain to deploy your website created with **Cecil**.
+You can use [shared web hosting](/links/web/hosting) to declare domains or subdomains on multiple websites. You need a domain or subdomain to deploy your website created with **Cecil**.
 
 To help you declare a domain or subdomain on multiple websites on your hosting plan, go to our page “[Hosting multiple websites on your hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
 

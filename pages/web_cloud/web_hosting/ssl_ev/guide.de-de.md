@@ -12,7 +12,7 @@ updated: 2023-06-08
 
 Secure Socket Layer (SSL) Zertifikate erlauben es, Verbindungen von oder zu Ihrer Website zu verschlüsseln. So wird verhindert, dass unbefugte Personen oder Roboter auf ausgehende und eingehende Anfragen von Ihrer Website zugreifen können.
 
-OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für die [Webhostings](https://www.ovhcloud.com/de/web-hosting/) an, wie in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)" beschrieben. SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
+OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für die [Webhostings](/links/web/hosting) an, wie in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)" beschrieben. SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
 
 Es gibt drei Arten von SSL-Zertifikaten:
 
@@ -40,7 +40,7 @@ Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifik
 ## Voraussetzungen <a name="requirements"></a>
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie bestellen oder verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), auf dem noch kein SSL Zertifikat installiert ist.
+- Sie bestellen oder verfügen über ein [OVHcloud Webhosting](/links/web/hosting), auf dem noch kein SSL Zertifikat installiert ist.
 - Sie bestellen oder verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) und dessen exklusive Nutzungsrechte. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
 - Sie vertreten eine Organisation (Unternehmen, Regierungsbehörde, etc.), die in einem amtlichen Register eingetragen ist.
 - Sie haben die Genehmigung Ihrer Organisation, ein EV SSL-Zertifikat zu bestellen.

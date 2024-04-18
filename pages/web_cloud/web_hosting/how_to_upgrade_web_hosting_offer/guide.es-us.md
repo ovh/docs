@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/). Así podrá disponer de:
+Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad de sus [planes de hosting](/links/web/hosting). Así podrá disponer de:
 
 - un alojamiento más potente;
 - más espacio de almacenamiento FTP;
@@ -22,7 +22,7 @@ Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad 
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/)
+- Tener un [plan de hosting](/links/web/hosting)
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Ser, como mínimo, el contacto «[Administrador](/pages/account_and_service_management/account_information/managing_contacts)» de los servicios para los que quiera modificar la suscripción.
 

@@ -30,7 +30,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que contenga al menos una base de datos.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}
 
@@ -38,7 +38,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ### Etapa 1 - preparar la instalación <a name="step1"></a>
 
-Para instalar el CMS **Drupal** en su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/), es necesario realizar algunos preparativos.
+Para instalar el CMS **Drupal** en su [plan de hosting](/links/web/hosting), es necesario realizar algunos preparativos.
 
 Siga el **conjunto de etapas** descritos en nuestro tutorial sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de continuar en el siguiente paso 2.
 

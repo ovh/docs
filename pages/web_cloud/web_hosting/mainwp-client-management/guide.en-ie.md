@@ -12,7 +12,7 @@ Retaining customers is vital to your company’s development. Whether you have o
 
 ## Requirements
 
-- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/).
+- A [Web Cloud hosting plan](/links/web/hosting).
 - Access to your MainWP dashboard. For more information, please read our guide on [Managing multiple WordPress websites with the MainWP plugin](/pages/web_cloud/web_hosting/mainwp_general).
 
 > [!warning]

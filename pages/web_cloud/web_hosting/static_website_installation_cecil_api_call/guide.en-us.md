@@ -19,7 +19,7 @@ This tutorial describes how to use the [Cecil](https://cecil.app){.external} sit
 
 ## Requirements
 
-- Have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
+- Have an [OVHcloud web hosting plan](/links/web/hosting) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
 - Be familiar with command line input.
 - You need to have installed and configured the **Cecil** application on your web hosting plan (see our tutorial on [installing and configuring Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil)).
 

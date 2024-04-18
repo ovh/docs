@@ -30,7 +30,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter um [serviço de alojamento web](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de credenciais de acesso ao [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection).
 

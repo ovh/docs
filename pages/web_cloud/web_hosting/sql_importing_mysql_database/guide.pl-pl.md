@@ -12,8 +12,8 @@ Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania 
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Posiadanie bazy danych utworzonej w ramach [pakietu hostingowego WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie [hostingu WWW OVHcloud](/links/web/hosting){.external}
+- Posiadanie bazy danych utworzonej w ramach [pakietu hostingowego WWW OVHcloud](/links/web/hosting){.external}
 - Posiadanie kopii zapasowej danych, które chcesz importować do bazy lub które chcesz przywrócić
 - W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
@@ -29,7 +29,7 @@ Przed rozpoczęciem operacji określ metodę, której użyjesz do importu kopii 
 
 - **Import przy użyciu skryptu**: rozwiązanie wymaga utworzenia skryptu służącego do wykonania importu. Skrypt przechowywany jest na Twoim hostingu OVHcloud. W przypadku tej metody konieczna jest odpowiednia wiedza umożliwiająca utworzenie skryptu. 
 
-- **Import przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- **Import przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVHcloud](/links/web/hosting){.external}.
 
 Niektóre z powyższych metod nie są powiązane z interfejsem OVHcloud. W takich przypadkach wykonaj operację, bazując na własnej wiedzy. Poniżej zamieszczamy kilka pomocnych informacji, nie zastąpią one jednak pomocy technicznej webmastera.
 

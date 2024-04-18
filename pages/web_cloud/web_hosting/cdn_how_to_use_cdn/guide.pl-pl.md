@@ -25,7 +25,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie [hostingu WWW](/links/web/hosting).
 
 ## W praktyce
 

@@ -22,7 +22,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Tener un [dominio](https://www.ovhcloud.com/es-es/domains/)
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) o un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/)
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) o un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/)
 - Tener un editor de texto (bloc de notas, TextEdit, Notepad++, etc.).
 - Haber instalado un cliente FTP (como [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) para descargar (subir al alojamiento) los archivos en su espacio dedicado.
 
@@ -177,7 +177,7 @@ Puede ver el resultado en su navegador: de forma predeterminada, los elementos d
 
 #### Añadir imágenes para hacer su página más atractiva
 
-La web es un medio sobre todo visual. Veremos en esta sección cómo insertar imágenes en su contenido. El producto Alojamiento gratuito 100M le ofrece un espacio de almacenamiento de 100 MB. Esto es suficiente para las páginas HTML y CSS, pero puede ser limitado si desea poner muchas imágenes en su sitio web. En ese caso, le recomendamos que contrate un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que le permita disfrutar de un mayor almacenamiento.
+La web es un medio sobre todo visual. Veremos en esta sección cómo insertar imágenes en su contenido. El producto Alojamiento gratuito 100M le ofrece un espacio de almacenamiento de 100 MB. Esto es suficiente para las páginas HTML y CSS, pero puede ser limitado si desea poner muchas imágenes en su sitio web. En ese caso, le recomendamos que contrate un [plan de hosting de OVHcloud](/links/web/hosting) que le permita disfrutar de un mayor almacenamiento.
 
 La etiqueta HTML usada para mostrar una imagen es la etiqueta `<img>`. A diferencia de las etiquetas que hemos visto antes, no hay apertura ni cierre de este elemento. Hablaremos de una etiqueta de autocierre. Los atributos de esta etiqueta son los que le permitirán vincular la ubicación del archivo con el texto descriptivo de la imagen.
 

@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Objetivo
 
-A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidades dos seus [planos de alojamento web](https://www.ovhcloud.com/pt/web-hosting/). Assim, pode dispor de:
+A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidades dos seus [planos de alojamento web](/links/web/hosting). Assim, pode dispor de:
 
 - de um alojamento mais potente;
 - mais espaço de armazenamento FTP;
@@ -22,7 +22,7 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 
 ## Requisitos
 
-- Dispor de um [plano de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um [plano de alojamento web](/links/web/hosting)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ser, no mínimo, o contacto « [Administrador](/pages/account_and_service_management/account_information/managing_contacts) » dos serviços para os quais pretende alterar a subscrição.
 
@@ -141,7 +141,7 @@ Depois de verificar estes 6 pontos, pode realizar o seu [alteração da oferta](
 
 #### Possui uma oferta de alojamento gratuito 100M <a name="100m"></a>
 
-Se efetuar uma alteração a partir de uma oferta de [alojamento gratuito 100M](pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma alteração para a oferta Perso, poderá fazer evoluir esta última para o conjunto dos nossos [alojamentos web](https://www.ovhcloud.com/pt/web-hosting/).
+Se efetuar uma alteração a partir de uma oferta de [alojamento gratuito 100M](pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma alteração para a oferta Perso, poderá fazer evoluir esta última para o conjunto dos nossos [alojamentos web](/links/web/hosting).
 
 Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 

@@ -23,7 +23,7 @@ updated: 2023-02-24
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} con accesso SSH
+- Disporre di una [soluzione di hosting Web](/links/web/hosting){.external} con accesso SSH
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura

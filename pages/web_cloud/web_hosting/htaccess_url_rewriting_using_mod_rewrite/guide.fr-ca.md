@@ -27,7 +27,7 @@ Le « **mod_rewrite** » offre une infinité de possibilités. Nous allons vous 
 
 ## Prérequis
 
-- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)
+- Disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting)
 
 ## En pratique
 

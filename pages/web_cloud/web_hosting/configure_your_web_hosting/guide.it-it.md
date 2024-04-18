@@ -10,7 +10,7 @@ updated: 2024-03-12
 
 ## Obiettivo
 
-Le offerte di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare il sito Web che si desidera, purché sia compatibile con la [configurazione delle nostre infrastrutture condivise](https://webhosting-infos.hosting.ovh.net){.external}.
+Le offerte di [hosting Web OVHcloud](/links/web/hosting){.external} permettono di ospitare il sito Web che si desidera, purché sia compatibile con la [configurazione delle nostre infrastrutture condivise](https://webhosting-infos.hosting.ovh.net){.external}.
 Tuttavia, sulle nostre infrastrutture condivise, è possibile modificare i seguenti parametri per il tuo hosting Web:
 
 - [ambiente di esecuzione](#runtime-environment)
@@ -46,7 +46,7 @@ Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cl
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, ad eccezione di una [soluzione di hosting Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/).
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}, ad eccezione di una [soluzione di hosting Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/).
 - Avere accesso al piano di hosting Web dallo [Spazio Cliente OVHcloud](/links/manager) o conoscere le informazioni di accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Procedura
@@ -136,7 +136,7 @@ Accedi allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!warning]
 >
-> La modifica della versione di PHP tramite un file ".htaccess" non è più possibile sulle ultime offerte di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).<br>
+> La modifica della versione di PHP tramite un file ".htaccess" non è più possibile sulle ultime offerte di [hosting Web OVHcloud](/links/web/hosting).<br>
 > Il comando che permette di modificare la versione di PHP nel file ".htaccess" non permette di utilizzare le versioni recenti di PHP sulle nostre infrastrutture.
 > È necessario utilizzare il file ".ovhconfig".
 >

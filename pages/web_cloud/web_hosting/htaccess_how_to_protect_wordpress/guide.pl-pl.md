@@ -23,7 +23,7 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) i zainstalowanie modułu WordPress
+- Posiadanie [hostingu](/links/web/hosting) i zainstalowanie modułu WordPress
 - Możliwość korzystania z klienta FTP takiego jak [FileZilla](https://filezilla-project.org/). Zapoznaj się z naszym przewodnikiem "[Użyj FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)".
 
 Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tekstu, takich jak:
@@ -49,7 +49,7 @@ Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tek
 
 Plik **.htaccess** pozwala na skonfigurowanie serwera www. W przypadku hostingu współdzielonego chodzi o serwer open source "**Apache**". Składnia tego pliku jest definiowana przez organ, który edytuje i utrzymuje **Apache**. W przeciwieństwie do większości plików konfiguracyjnych serwera, pliki **.htaccess** znajdują się w katalogach stron www, a dokładniej w przestrzeni dyskowej FTP Twojego hostingu. Plik **.htaccess** będzie miał wpływ na katalog, w którym jest obecny, oraz na wszystkie podkatalogi znajdujące się wewnątrz.
 
-Nasze pakiety hostingowe nie zezwalają na pliki konfiguracyjne serwera. Jednak pliki **.htaccess** umożliwiają modyfikację niektórych funkcji i zachowań. Ponadto, nie ma potrzeby restartu serwera **Apache**, aby uwzględnić informacje i zmiany zapisane w pliku **.htaccess**. Wszystkie nasze oferty[hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) pozwalają na skonfigurowanie plików **.htaccess**.
+Nasze pakiety hostingowe nie zezwalają na pliki konfiguracyjne serwera. Jednak pliki **.htaccess** umożliwiają modyfikację niektórych funkcji i zachowań. Ponadto, nie ma potrzeby restartu serwera **Apache**, aby uwzględnić informacje i zmiany zapisane w pliku **.htaccess**. Wszystkie nasze oferty[hosting OVHcloud](/links/web/hosting) pozwalają na skonfigurowanie plików **.htaccess**.
 
 Punkt przed nazwą pliku **.htaccess** (który sam nie ma rozszerzenia) oznacza ukryty plik. Ponadto pliki te nie są dostępne dla użytkowników z zewnątrz odwiedzających Twoją stronę WWW.
 

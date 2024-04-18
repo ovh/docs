@@ -21,7 +21,7 @@ Jeśli posiadasz hosting od OVHcloud, zyskasz dostęp do przestrzeni dyskowej um
   
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie hostingu [OVHcloud](/links/web/hosting)
 - Zainstaluj [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) na komputerze
 
 ## W praktyce
@@ -185,7 +185,7 @@ Celem tego przewodnika jest przedstawienie w sposób efektywny sposobu zarządza
 
 [Korzystanie z FileZilla na Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Korzystanie z dostępu do hostingu WWW przez SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Pamiętaj, że aby korzystać z SSH, musisz mieć wykupiony [hosting Pro lub Performance](https://www.ovhcloud.com/pl/web-hosting/).
+[Korzystanie z dostępu do hostingu WWW przez SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Pamiętaj, że aby korzystać z SSH, musisz mieć wykupiony [hosting Pro lub Performance](/links/web/hosting).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

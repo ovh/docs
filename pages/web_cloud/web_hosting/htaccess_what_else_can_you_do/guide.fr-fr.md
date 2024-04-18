@@ -31,7 +31,7 @@ Pour utiliser correctement le fichier « .htaccess », vous devez connaître et 
 
 ## Prérequis
 
-- Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
+- Disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting)
 
 ## En pratique
 

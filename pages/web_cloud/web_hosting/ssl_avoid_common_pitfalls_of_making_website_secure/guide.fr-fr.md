@@ -19,7 +19,7 @@ Retrouvez, dans ce tutoriel, quelques exemples de situations concernant la sécu
 
 ## Prérequis
 
-- Posséder un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Posséder un [hébergement web OVHcloud](/links/web/hosting){.external}.
 - Avoir enregistré au moins un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}.
 - Avoir accès à votre [espace client OVHcloud](/links/manager){.external}, partie « Web cloud ».
 

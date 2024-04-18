@@ -16,7 +16,7 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} compatible.
+- Tener contratado un [plan de hosting](/links/web/hosting){.external} compatible.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento

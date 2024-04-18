@@ -13,7 +13,7 @@ Ce guide vous présente comment activer cette offre sur votre [nom de domaine](h
 >
 > Cet hébergement gratuit de 100 Mo convient pour une simple page Web de présentation, il **n'inclut pas de base de données**.
 > Il convient également si vous n'avez pas besoin de plusieurs adresses e-mail de type "MX plan". 
-> Si vous souhaitez mettre en place un site Web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), nous vous invitons à commander directement l'une de [nos offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/) depuis notre site ou votre [espace client OVHcloud](/links/manager){.external}.
+> Si vous souhaitez mettre en place un site Web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), nous vous invitons à commander directement l'une de [nos offres d'hébergement Web](/links/web/hosting) depuis notre site ou votre [espace client OVHcloud](/links/manager){.external}.
 >
 
 **Découvrez comment activer votre hébergement gratuit 100M**
@@ -57,7 +57,7 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 >
 > Vous pouvez aussi choisir de supprimer l'offre gratuite en prenant soin de récupérer au préalable vos données d'hébergement et le contenu de votre adresse mail.
 >
-> Pour plus de détails, consultez nos [offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/).
+> Pour plus de détails, consultez nos [offres d'hébergement](/links/web/hosting).
 >
 
 **L'étape 3** vous rappelle la tarification de l'offre. 

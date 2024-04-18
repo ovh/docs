@@ -23,7 +23,7 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
 
 ## En pratique
 

@@ -6,13 +6,13 @@ updated: 2024-03-21
 
 ## Objective
 
-There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud Web Hosting space](https://www.ovhcloud.com/en-ie/web-hosting/){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
+There are a multitude of different websites on the internet. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, your [OVHcloud Web Hosting space](/links/web/hosting){.external} lets you host the site you want, provided it is compatible with the [configuration of our infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Learn how to publish a website on your OVHcloud Web Hosting space.**
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
+- You must have an [OVHcloud Web Hosting plan](/links/web/hosting){.external}.
 - You must have received an email confirming that your Web Hosting plan has been set up.
 - You must have a [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} that can be used to access your website.
 - You must be logged in to your [OVHcloud Control Panel](/links/manager){.external}.
@@ -69,7 +69,7 @@ Once you are in possession of all the elements, you have three different options
 
 - **Use FTP-compatible software.** You will need to install an FTP-compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact its publisher if you encounter any difficulties when using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} are required to use this type of access.
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud Web Hosting plan](/links/web/hosting){.external} are required to use this type of access.
 
 #### 3. Uploading the files to the storage space
 
@@ -102,7 +102,7 @@ If you are migrating an existing website, you can recover your existing database
 
 #### 2. Create the database with OVHcloud 
 
-If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
+If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](/links/web/hosting){.external}, a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
 
 If you want to create a new database with OVHcloud, log in to your [OVHcloud Control Panel](/links/manager){.external}, then click on `Hosting plans`{.action}. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
 

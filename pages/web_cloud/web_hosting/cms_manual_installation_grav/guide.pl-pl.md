@@ -16,7 +16,7 @@ updated: 2024-03-28
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie hostingu [OVHcloud](/links/web/hosting).
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/).
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
 
@@ -24,7 +24,7 @@ updated: 2024-03-28
 
 ### Przygotowanie do instalacji
 
-Aby zainstalować CMS **Grav** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), należy wykonać kilka czynności przygotowawczych.
+Aby zainstalować CMS **Grav** na Twoim [hostingu](/links/web/hosting), należy wykonać kilka czynności przygotowawczych.
 
 Postępuj zgodnie z **wszystkimi krokami** opisanymi w tutorialu [Instalacja ręczna modułu CMS](/pages/web_cloud/web_hosting/cms_manual_installation), aby przejść do kolejnego etapu.
 

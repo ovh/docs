@@ -6,13 +6,13 @@ updated: 2024-02-13
 
 ## Objective
 
-OVHcloud offers [several web hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/). They are designed for different use cases:
+OVHcloud offers [several web hosting plans](/links/web/hosting). They are designed for different use cases:
 
 - Get started on the web.
 - Quickly create a website (professional or not), a blog, a **C**ontent **M**anagement **S**ystem (**CMS**) such as *WordPress*, *Joomla!*, *PrestaShop* or *Drupal*, or an online store.
 - Customize one or more email addresses with the domain name you want to use for your website.
 - Manage multiple websites on a single web hosting plan.
-- Configure one or more databases ([included with some of our web hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/)).
+- Configure one or more databases ([included with some of our web hosting plans](/links/web/hosting)).
 - etc.
 
 These solutions spare you the hassle of maintaining, updating, and securing a web hosting infrastructure.<br>
@@ -26,17 +26,17 @@ This saves you time on server administration and allows you to focus only on:
 
 ## Requirements
 
-- You have ordered an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external}.
+- You have ordered an [OVHcloud Web Hosting plan](/links/web/hosting){.external}.
 - You have received an email confirming that your Web Hosting plan has been set up.
 - You have a [domain name](https://www.ovhcloud.com/en-sg/domains/).
 - You have access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
-The purpose of this guide is to show you the main actions you can take with our [web hosting](https://www.ovhcloud.com/en-sg/web-hosting/) solutions. 
+The purpose of this guide is to show you the main actions you can take with our [web hosting](/links/web/hosting) solutions. 
 Each of these actions will be accompanied by one or more links to specific guides (relevant to the action).
 
-You can use this guide as a "repository" of possible actions when you subscribe to your [web hosting](https://www.ovhcloud.com/en-sg/web-hosting/) offer and throughout its use.
+You can use this guide as a "repository" of possible actions when you subscribe to your [web hosting](/links/web/hosting) offer and throughout its use.
 
 > [!primary]
 > 
@@ -59,7 +59,7 @@ Before you begin, it’s essential to clearly identify and define your needs by 
 - Do I need one or more databases to run my website?
 - Do I need one or more custom email addresses with my domain name?
 
-Depending on your answers, please ensure that your [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) meets all of your needs before you proceed.
+Depending on your answers, please ensure that your [web hosting plan](/links/web/hosting) meets all of your needs before you proceed.
 
 If this is not the case, please refer to our guide on "[Web Hosting: How to change your solution?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
@@ -100,7 +100,7 @@ To use this option, please refer to our guide on "[Setting up your website with 
 
 ### Step 3 - Create your email addresses (optional) <a name="email-creation"></a>
 
-Your [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) includes one or more email accounts, which you can choose to enable or disable.
+Your [Web Hosting plan](/links/web/hosting) includes one or more email accounts, which you can choose to enable or disable.
 
 First of all, please read our guide on "[Activating email addresses included in your Web Hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
@@ -146,13 +146,13 @@ To check and/or modify the link between your domain name and your OVHcloud email
 
 ### Step 5 - Other options available with web hosting plans <a name="other-options"></a>
 
-Depending on your [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/), additional options/offers/features are available free of charge.
+Depending on your [web hosting plan](/links/web/hosting), additional options/offers/features are available free of charge.
 
 #### SSL certificates
 
 SSL certificates are used to make your website accessible using the HTTPS protocol. This protocol encrypts the exchanges between your web hosting plan and the people who visit your website.
 
-No matter which [web hosting](https://www.ovhcloud.com/en-sg/web-hosting/) you are using, you can activate an SSL certificate from **Let's encrypt** free of charge.
+No matter which [web hosting](/links/web/hosting) you are using, you can activate an SSL certificate from **Let's encrypt** free of charge.
 
 For more details on free and paid SSL certificates offered on web hosting plans, please read our guide on "[Managing SSL certificates on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
@@ -182,7 +182,7 @@ You can find more details on how to use it in our documentation “[Getting star
 
 #### Send emails from your website
 
-All [web hosting](https://www.ovhcloud.com/en-sg/web-hosting/) allow you to send emails free of charge from your website or a specific script.
+All [web hosting](/links/web/hosting) allow you to send emails free of charge from your website or a specific script.
 
 You can find all the details on this feature in our guide on "[Monitoring and managing automated emails in your web hosting plan](/pages/web_cloud/web_hosting/mail_function_script_records)".
 
@@ -190,7 +190,7 @@ You can find all the details on this feature in our guide on "[Monitoring and ma
 
 With CRON tasks, you can automatically run scripts hosted on your web hosting plan.
 
-If your [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) has this option, please refer to our guide on "[Using automated tasks on a Web Hosting plan](/pages/web_cloud/web_hosting/cron_tasks)" for further details.
+If your [web hosting plan](/links/web/hosting) has this option, please refer to our guide on "[Using automated tasks on a Web Hosting plan](/pages/web_cloud/web_hosting/cron_tasks)" for further details.
 
 ## Go further
 

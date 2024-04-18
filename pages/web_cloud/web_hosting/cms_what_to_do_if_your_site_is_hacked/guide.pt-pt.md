@@ -31,7 +31,7 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 
 ## Requisitos
 
-- Ter [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) com o seu website alojado em cima.
+- Ter [oferta de alojamento Web Cloud](/links/web/hosting) com o seu website alojado em cima.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

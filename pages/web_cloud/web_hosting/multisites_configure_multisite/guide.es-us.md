@@ -24,7 +24,7 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} compatible.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external} compatible.
 - Tener uno o más [dominios](https://www.ovhcloud.com/es/domains/){.external}.
 - Poder modificar la configuración de sus dominios (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
@@ -33,7 +33,7 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 
 > [!primary]
 >
-> La mayoría de los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} incluyen una opción de creación de direcciones de correo personalizadas con su nombre de dominio.
+> La mayoría de los [planes de hosting de OVHcloud](/links/web/hosting){.external} incluyen una opción de creación de direcciones de correo personalizadas con su nombre de dominio.
 > Esta opción de correo electrónico puede activarse para **un solo** nombre de dominio. Esto significa que si realiza el *multisite* con varios dominios diferentes, solo podrá activar esta opción para uno de sus dominios.
 > No dude en consultar nuestra [guide](/pages/web_cloud/web_hosting/activate-email-hosting) para más detalles sobre la activación de esta opción.
 >
@@ -72,7 +72,7 @@ Para un dominio externo a su cuenta de cliente (otro identificador de cliente) o
 > [!warning]
 > Este paso solo es pertinente si ha seleccionado la opción "Añadir un dominio registrado con OVHcloud". El nombre de dominio o su zona DNS debe estar **en el área de cliente**. Si quiere añadir un dominio externo, vaya al paso [2.2. Añadir un dominio externo](#add-external-domain){.external}.
 
-A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} contratado, algunas opciones podrían no estar disponibles.
+A continuación, deberá personalizar la adición del dominio o subdominio. Según el [plan de hosting de OVHcloud](/links/web/hosting){.external} contratado, algunas opciones podrían no estar disponibles.
 
 > [!primary]
 > Para añadir un subdominio, es necesario seleccionar primero el dominio principal de la lista (por ejemplo: domain.tld). En la siguiente etapa podrá indicar el subdominio (por ejemplo: **blog**.domain.tld).
@@ -132,7 +132,7 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 > ![Multisitio](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
+ Una vez seleccionado el dominio que quiera asociar al alojamiento, deberá personalizar su información. Tenga en cuenta que algunas opciones incluidas en su [plan de hosting de OVHcloud](/links/web/hosting){.external} no pueden activarse durante este proceso. Es necesario añadir el dominio en primer lugar y posteriormente activar dichas opciones modificando la configuración del multisitio.
 
 |Campo|Descripción|
 |---|---|
@@ -169,7 +169,7 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 >
 > Si quiere utilizar su hosting para alojar varios sitios web, deberá realizar esta operación tantas veces como sea necesario.
 >
-> Recuerde que cuantos más sitios web aloje en su hosting, mayor será la demanda de recursos asignados. [En la página de nuestros planes de hosting](https://www.ovhcloud.com/es/web-hosting/){.external} puede consultar el número de sitios web recomendados que puede alojar en su espacio.
+> Recuerde que cuantos más sitios web aloje en su hosting, mayor será la demanda de recursos asignados. [En la página de nuestros planes de hosting](/links/web/hosting){.external} puede consultar el número de sitios web recomendados que puede alojar en su espacio.
 >
 
 ## Más información

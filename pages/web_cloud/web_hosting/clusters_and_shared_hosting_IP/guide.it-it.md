@@ -26,7 +26,7 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
+- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura

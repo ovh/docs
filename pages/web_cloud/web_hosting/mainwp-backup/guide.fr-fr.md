@@ -19,7 +19,7 @@ MainWP propose plusieurs extensions permettant de sauvegarder vos sites web.
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
+- Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting).
 - Être connecté à votre dashboard MainWP.
 
 > [!warning]

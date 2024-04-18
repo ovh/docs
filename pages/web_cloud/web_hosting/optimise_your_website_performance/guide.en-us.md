@@ -16,7 +16,7 @@ This guide will help you get a basic understanding on what points can affect per
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
 - an email confirming that your Web Hosting plan has been set up
 - a [domain name](https://www.ovhcloud.com/en/domains/) that can be used to access your website
 - access to the [OVHcloud Control Panel](/links/manager)
@@ -49,7 +49,7 @@ Answering those questions can help to focus on specific points and diagnose area
 
 The use of CMS such as WordPress, PrestaShop, Drupal or Joomla! requires many libraries, so that a single web page can handle a lot of elements.
 Internet browsers must load and read all of these elements.
-We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovhcloud.com/en/web-hosting/){.external}.
+We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](/links/web/hosting){.external}.
 
 You can find more informations regarding which plan to choose from on [this page](https://www.ovhcloud.com/en/web-hosting/uc-best-web-hosting/){.external}.
 
@@ -155,7 +155,7 @@ Discover our [CDN solution here](https://www.ovhcloud.com/en/web-hosting/options
 
 _This step is optional if you are not using a CMS._
 
-To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](https://www.ovhcloud.com/en/web-hosting/){.external}.
+To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](/links/web/hosting){.external}.
 
 - **Using a cache plugin:** Using a CMS calls upon several libraries, so that one single web page can deal with an enormous amount of elements. In order to optimise your CMS, you should use several cache plugins to avoid regenerating all of your website content each time a page loads. We recommend that you search for cache plugins on the community websites relating to the CMS that you use (Joomla! - PrestaShop - WordPress) in order to avoid regenerating the entire content of your website each time you load the web page.
 

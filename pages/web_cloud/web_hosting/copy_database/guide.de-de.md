@@ -35,7 +35,7 @@ Bevor Sie beginnen, überprüfen Sie diese Voraussetzungen:
 
 Die Duplikationsfunktion ist verfügbar für folgende Dienste:
 
-- [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) (in einigen unserer [Webhostings](https://www.ovhcloud.com/de/web-hosting/) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-hosting/options/start-sql/))
+- [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) (in einigen unserer [Webhostings](/links/web/hosting) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-hosting/options/start-sql/))
 - [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in unseren [Performance Hostings](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-cloud/databases/)). 
 
 Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedlich.

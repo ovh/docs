@@ -23,7 +23,7 @@ Encontre, neste tutorial, alguns exemplos de situações relativas à segurança
 
 ## Requisitos
 
-- Dispor de um [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Dispor de um [alojamento web OVHcloud](/links/web/hosting){.external}.
 - Ter registado, pelo menos, um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external}.
 - Ter acesso à sua [Área de Cliente OVHcloud](/links/manager){.external}, parte "Web cloud".
 

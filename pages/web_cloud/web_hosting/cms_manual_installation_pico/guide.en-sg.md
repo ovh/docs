@@ -12,7 +12,7 @@ With the **CMS** (**C**ontent **M**anagement **S**ystem) Pico, you can create we
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/).
+- An [OVHcloud web hosting plan](/links/web/hosting).
 - A [domain name](https://www.ovhcloud.com/en-sg/domains/).
 - Access to the [OVHcloud Control Panel](/links/manager).
 
@@ -20,7 +20,7 @@ With the **CMS** (**C**ontent **M**anagement **S**ystem) Pico, you can create we
 
 ### Prepare for installation
 
-To install the **Pico** CMS on your [web hosting](https://www.ovhcloud.com/en-sg/web-hosting/), you will need to make some preparations.
+To install the **Pico** CMS on your [web hosting](/links/web/hosting), you will need to make some preparations.
 
 Follow the **full set of steps** described in our tutorial on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation) before continuing on to the next step.
 

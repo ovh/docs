@@ -12,7 +12,7 @@ Les offres d'hébergement web OVHcloud vous donnent accès à un espace de stock
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} bénéficiant d'un accès SSH.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} bénéficiant d'un accès SSH.
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}, partie `Web Cloud`{.action}.
 
 > [!warning]
@@ -29,7 +29,7 @@ Repérez dans le tableau la colonne « **SSH** » afin de vérifier que l'utilis
 
 ![usessh](images/tab-ssh.png){.thumbnail}
 
-Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} bénéficie bien d'un accès SSH.
+Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné, puis sur `Modifier`{.action}. Dans la fenêtre qui s'affiche, activez alors l'accès SSH puis finalisez la modification. Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting){.external} bénéficie bien d'un accès SSH.
 
 ### Étape 2 : récupérer les informations nécessaires pour se connecter <a name="sshlogin"></a>
 

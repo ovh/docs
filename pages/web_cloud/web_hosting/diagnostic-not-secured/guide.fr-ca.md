@@ -40,9 +40,9 @@ Afin de résoudre cette anomalie, vous devrez :
 
 #### Vérifier l'adresse IP de l'hébergement
 
-Les messages d'erreur mentionnés [plus haut](#objectif) ne signifient pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/). Vous devez donc vérifier l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
+Les messages d'erreur mentionnés [plus haut](#objectif) ne signifient pas forcément que votre site est hébergé sur l'une de nos [offres Web Cloud](/links/web/hosting). Vous devez donc vérifier l'adresse IP du serveur auquel est relié votre [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
 
-Pour retrouver l'adresse IP de votre [hébergement OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/), cliquez en haut de votre [espace client OVHcloud](/links/manager) sur `Web Cloud`{.action} puis, sur `Hébergements`{.action} et choisissez l'hébergement concerné.
+Pour retrouver l'adresse IP de votre [hébergement OVHcloud](/links/web/hosting), cliquez en haut de votre [espace client OVHcloud](/links/manager) sur `Web Cloud`{.action} puis, sur `Hébergements`{.action} et choisissez l'hébergement concerné.
 
 Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre hébergement.
 
@@ -50,7 +50,7 @@ Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IP
 
 #### Vérifier l'adresse IP dans la zone DNS
 
-Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) correspond bien à celle de votre [hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
+Il vous faut maintenant vérifier que l'adresse IP indiquée dans la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) correspond bien à celle de votre [hébergement Web Cloud](/links/web/hosting).
 
 Cliquez sur `Noms de domaine`{.action} dans votre [espace client OVHcloud](/links/manager) et sélectionnez le nom de domaine de votre site.
 

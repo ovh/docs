@@ -16,7 +16,7 @@ Datenbanken werden von den meisten Websites und **C**ontent **M**anagement **S**
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}, das eine Datenbank enthält.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting){.external}, das eine Datenbank enthält.
 - Je nach der verwendeten Backup-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhostings über das [OVHcloud Kundencenter](/links/manager){.external} oder die Login-Daten der Datenbank.
 
 ## In der praktischen Anwendung
@@ -29,7 +29,7 @@ Entscheiden Sie zunächst, mit welcher Methode Sie das Backup der Datenbank wied
 
 - **Backup über ein Skript erstellen**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVHcloud Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
 
-- **Backup über SSH-Zugang erstellen**: Loggen Sie sich hierfür via SSH in Ihren FTP-Speicherbereich ein und verwenden Sie die Kommandozeile, um mit diesem zu interagieren. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} erforderlich.
+- **Backup über SSH-Zugang erstellen**: Loggen Sie sich hierfür via SSH in Ihren FTP-Speicherbereich ein und verwenden Sie die Kommandozeile, um mit diesem zu interagieren. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](/links/web/hosting){.external} erforderlich.
 
 > [!success]
 >

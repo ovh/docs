@@ -17,7 +17,7 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 ## Requisitos
 
 - Dispor de um [nome de domínio](https://www.ovh.com/pt/dominios/){.external} na sua Área de Cliente OVHcloud.
-- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 > [!warning]
@@ -44,7 +44,7 @@ Aparecerá a janela de ativação. Escolha o nome de domínio ao qual pretende a
 ![Ativação de e-mail](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} superior a partir da nossa página comercial.
+> Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](/links/web/hosting){.external} superior a partir da nossa página comercial.
 >
 > Atenção: a ativação da opção de e-mail pode levar alguns minutos. Receberá um e-mail para confirmar a instalação e a ativação da oferta MXPLAN. Inclui a gestão e a configuração dos seus endereços de e-mail.
 >

@@ -18,7 +18,7 @@ Un sito Web composto principalmente da pagine Web statiche garantisce tempi di c
 
 ## Prerequisiti
 
-- Disporre di una [offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) con accesso SSH Questo accesso permette di installare online una o più soluzioni alternative a quelle proposte di default nelle nostre soluzioni di hosting Web.
+- Disporre di una [offerta di hosting Web OVHcloud](/links/web/hosting) con accesso SSH Questo accesso permette di installare online una o più soluzioni alternative a quelle proposte di default nelle nostre soluzioni di hosting Web.
 - Aver familiarità con l'inserimento da riga di comando
 - Essere in grado di trasferire file in FTP con un cliente come [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 - Impostare la tua zona DNS per far puntare il tuo dominio (o sottodominio) verso il tuo hosting Web condiviso. Questa operazione è utile se vuoi ospitare più siti in [multisiti](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul tuo hosting web condiviso.
@@ -26,7 +26,7 @@ Un sito Web composto principalmente da pagine Web statiche garantisce tempi di c
 
 ## Procedura
 
-I [hosting web condivisi](https://www.ovhcloud.com/it/web-hosting/) permettono di dichiarare domini o sottodomini in multisiti. Per implementare il tuo sito Web con **Cecil** è necessario un dominio o un sottodominio.
+I [hosting web condivisi](/links/web/hosting) permettono di dichiarare domini o sottodomini in multisiti. Per implementare il tuo sito Web con **Cecil** è necessario un dominio o un sottodominio.
 
 Per aiutarti a dichiarare un dominio o un sottodominio su un multisito sul tuo hosting, consulta la nostra pagina "[Condivisione dell'hosting tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 

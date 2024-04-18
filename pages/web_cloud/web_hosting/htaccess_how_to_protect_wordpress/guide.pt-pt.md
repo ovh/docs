@@ -23,7 +23,7 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 
 ## Requisitos
 
-- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e ter instalado o WordPress.
+- Ter um [alojamento web](/links/web/hosting) e ter instalado o WordPress.
 - Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)".
 
 Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto como:
@@ -49,7 +49,7 @@ Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto
 
 Um ficheiro **.htaccess** permite configurar um servidor web. No caso de um alojamento web partilhado, trata-se do servidor web open source "**Apache**". A sintaxe deste ficheiro é definida pelo organismo que edita e mantém **Apache**. Contrariamente à maioria dos ficheiros de configuração de um servidor, os ficheiros **.htaccess** estão localizados nos diretórios dos websites, mais precisamente no espaço de armazenamento FTP do seu alojamento web. Um ficheiro **.htaccess** terá efeitos no diretório no qual está presente, bem como em todos os sub-diretórios presentes no interior.
 
-As nossas ofertas de alojamento partilhado não permitem os ficheiros de configuração do servidor. No entanto, os ficheiros **.htaccess** dão a possibilidade de modificar certas características e comportamentos. Além disso, não é necessário reiniciar o servidor **Apache** para que as indicações e modificações escritas no ficheiro **.htaccess** sejam tomadas em conta. O conjunto das nossas ofertas de [alojamento web partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) permitem configurar ficheiros **.htaccess**.
+As nossas ofertas de alojamento partilhado não permitem os ficheiros de configuração do servidor. No entanto, os ficheiros **.htaccess** dão a possibilidade de modificar certas características e comportamentos. Além disso, não é necessário reiniciar o servidor **Apache** para que as indicações e modificações escritas no ficheiro **.htaccess** sejam tomadas em conta. O conjunto das nossas ofertas de [alojamento web partilhado OVHcloud](/links/web/hosting) permitem configurar ficheiros **.htaccess**.
 
 O ponto em frente ao nome do ficheiro **.htaccess** (que não tem extensão por si) designa um ficheiro escondido. Além disso, estes ficheiros não são acessíveis aos utilizadores externos que acedem ao seu website.
 

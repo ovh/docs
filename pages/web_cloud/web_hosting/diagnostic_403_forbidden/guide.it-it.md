@@ -45,7 +45,7 @@ In seguito al rilevamento di un funzionamento sospetto, i nostri sistemi di sicu
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) OVHcloud
+- Disporre di una [soluzione di hosting Web](/links/web/hosting) OVHcloud
 - Disporre delle [credenziali di accesso](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di storage FTP dell'hosting
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 

@@ -32,7 +32,7 @@ La pirateria può manifestarsi in diversi modi (elenco non esaustivo):
 
 ## Prerequisiti
 
-- Disporre di una [offerta di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) con il tuo sito Web ospitato su
+- Disporre di una [offerta di hosting Web Cloud](/links/web/hosting) con il tuo sito Web ospitato su
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura

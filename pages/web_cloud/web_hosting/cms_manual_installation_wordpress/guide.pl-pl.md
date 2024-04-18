@@ -31,7 +31,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System) W
 
 ## Wymagania
 
-- Posiadanie oferty[hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera przynajmniej jedną bazę danych.
+- Posiadanie oferty[hostingu](/links/web/hosting), która zawiera przynajmniej jedną bazę danych.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}
 
@@ -39,7 +39,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System) W
 
 ### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
-Aby zainstalować CMS **WordPress** na Twoim hostingu [hosting](https://www.ovhcloud.com/pl/web-hosting/), konieczne są pewne przygotowania.
+Aby zainstalować CMS **WordPress** na Twoim hostingu [hosting](/links/web/hosting), konieczne są pewne przygotowania.
 
 Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation) i przejdź do etapu 2 poniżej.
 

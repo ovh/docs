@@ -31,7 +31,7 @@ Para descargar Cyberduck, acceda al [sitio web oficial](https://cyberduck.io/) d
 
 ## Requisitos
 
-- Tener contratado un plan de hosting [web hosting](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener contratado un plan de hosting [web hosting](/links/web/hosting){.external}.
 - Haber descargado e instalado la aplicación Cyberduck en su ordenador.
 
 ## Procedimiento

@@ -21,7 +21,7 @@ Gli hosting Web OVHcloud mettono a disposizione uno spazio di storage per la ges
   
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - Installare [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) sul computer
 
 ## Procedura
@@ -185,7 +185,7 @@ Questa guida è finalizzata a presentare in modo efficace la gestione di un prog
 
 [Utilizzare FileZilla con l’hosting OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utilizzare l’accesso SSH del proprio hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Ti ricordiamo che per utilizzare SSH è necessario disporre di una [soluzione di hosting Web Pro o Performance](https://www.ovhcloud.com/it/web-hosting/).
+[Utilizzare l’accesso SSH del proprio hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Ti ricordiamo che per utilizzare SSH è necessario disporre di una [soluzione di hosting Web Pro o Performance](/links/web/hosting).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

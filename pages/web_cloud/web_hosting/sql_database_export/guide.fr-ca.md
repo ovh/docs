@@ -12,8 +12,8 @@ Les bases de données sont utilisées par la plupart des sites web et des **C**o
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
-- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Disposer d'une offre d’[hébergement web OVHcloud](/links/web/hosting){.external}.
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
 - Selon la méthode de sauvegarde utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](/links/manager){.external} ou des informations permettant de se connecter à la base de données.
 
 ## En pratique
@@ -26,7 +26,7 @@ Avant de commencer, définissez la méthode que vous allez suivre pour récupér
 
 - **Utiliser un script réalisant la sauvegarde** : cette méthode nécessite de créer un script enregistré sur votre hébergement web OVHcloud afin de pouvoir réaliser la sauvegarde. Des connaissances spécifiques pour cette création sont nécessaires.
 
-- **Réaliser la sauvegarde depuis une commande SSH** : cette méthode nécessite de vous connecter à votre espace de stockage FTP via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- **Réaliser la sauvegarde depuis une commande SSH** : cette méthode nécessite de vous connecter à votre espace de stockage FTP via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](/links/web/hosting){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
 > [!success]
 >

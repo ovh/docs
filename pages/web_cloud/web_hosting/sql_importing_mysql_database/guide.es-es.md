@@ -12,8 +12,8 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](/links/web/hosting){.external}.
 - Tener la copia de seguridad que quiera importar en la base de datos.
 - Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 

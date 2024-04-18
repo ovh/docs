@@ -41,7 +41,7 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 
 ## Requisitos
 
-- Tener un sitio web alojado en uno de nuestros planes de hosting de OVHcloud (https://www.ovhcloud.com/es/web-hosting/)
+- Tener un sitio web alojado en uno de nuestros planes de hosting de OVHcloud (/links/web/hosting)
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
@@ -292,7 +292,7 @@ Puede encontrar pistas de optimización para su sitio web analizándolo en [gtme
 
 Si su alojamiento web y su base de datos **no están en juego** y su sitio web sigue siendo lento, a pesar de haber realizado **todas las etapas** de esta guía, lo más probable es que el servicio que utiliza para alojar su sitio web no sea o no adecuado para sus necesidades. 
 
-Puede considerar un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) superior o una infraestructura dedicada como un [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) o un [Servidor Dedicado](/links/bare-metal/bare-metal). 
+Puede considerar un [plan de hosting](/links/web/hosting) superior o una infraestructura dedicada como un [Servidor Privado Virtual (VPS)](/links/bare-metal/vps) o un [Servidor Dedicado](/links/bare-metal/bare-metal). 
 
 ## Más información <a name="go-further"></a>
 

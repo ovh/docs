@@ -12,7 +12,7 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}
+- An [OVHcloud web hosting plan](/links/web/hosting){.external}
 - Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 > [!primary]
@@ -66,7 +66,7 @@ Below is a description of the essential information displayed on the `FTP-SSH` p
 
 > [!primary]
 >
-> Depending on which OVHcloud [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external} you have, some of the information listed above (particularly concerning SSH) may not appear.
+> Depending on which OVHcloud [web hosting plan](/links/web/hosting){.external} you have, some of the information listed above (particularly concerning SSH) may not appear.
 >
 
 If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
@@ -84,7 +84,7 @@ There are several ways you can access your FTP storage space. We recommend readi
 - [2. Logging in via FTP software](#ftpsoftware): Allows you to access your FTP storage space via software (e.g. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) or [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
 You must first install the FTP client/software you have chosen on your computer.
 
-- [3. Connecting via SSH access](#ssh): Allows you to access your FTP storage space via SSH. You will need advanced knowledge and an [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external} **Pro** or **Performance** to use this access type.
+- [3. Connecting via SSH access](#ssh): Allows you to access your FTP storage space via SSH. You will need advanced knowledge and an [OVHcloud web hosting plan](/links/web/hosting){.external} **Pro** or **Performance** to use this access type.
 
 #### 1. Log in via FTP Explorer <a name="ftpexplorer"></a>
 

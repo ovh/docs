@@ -22,7 +22,7 @@ Saiba como criar a primeira página de um site num alojamento gratuito 100M grá
 ## Requisitos
 
 - Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) ou um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/)
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) ou um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/)
 - Ter um editor de texto (bloco de notas, TextEdit, Notepad++, etc.)
 - Ter instalado um cliente FTP (por exemplo, [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) para telecarregar (colocar no alojamento) os seus ficheiros no seu espaço dedicado.
 
@@ -177,7 +177,7 @@ Pode ver o resultado no seu browser: por predefinição, os elementos das listas
 
 #### Adicionar imagens para tornar a sua página mais atraente
 
-A web é, antes de mais, um meio visual. Vamos ver nesta secção como inserir imagens no seu conteúdo. A oferta alojamento gratuito 100M propõe-lhe um espaço de armazenamento de 100MB. É suficiente para as suas páginas HTML e CSS, mas pode ser limitado se deseja colocar muitas imagens no seu site. Neste caso, sugerimos que subscreva uma [oferta de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que lhe permita beneficiar de um maior armazenamento.
+A web é, antes de mais, um meio visual. Vamos ver nesta secção como inserir imagens no seu conteúdo. A oferta alojamento gratuito 100M propõe-lhe um espaço de armazenamento de 100MB. É suficiente para as suas páginas HTML e CSS, mas pode ser limitado se deseja colocar muitas imagens no seu site. Neste caso, sugerimos que subscreva uma [oferta de alojamento web da OVHcloud](/links/web/hosting) que lhe permita beneficiar de um maior armazenamento.
 
 O identificador HTML utilizado para apresentar uma imagem é o identificador `<img>`. Contrariamente às balizas que vimos anteriormente, não há abertura e encerramento deste elemento. Falamos de baliza autoferoz. São os atributos desta baliza que permitirão estabelecer a ligação entre a localização do ficheiro e o texto descritivo da imagem.
 

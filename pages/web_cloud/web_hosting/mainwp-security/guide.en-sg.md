@@ -12,7 +12,7 @@ Maintaining the security of your websites is crucial for the development of your
 
 ## Requirements
 
-- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/).
+- A [Web Cloud hosting plan](/links/web/hosting).
 - Access to your MainWP dashboard.
 
 > [!warning]

@@ -72,7 +72,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
 > [!primary]
 >
-> Vergleich unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/).
+> Vergleich unserer [Webhosting-Angebote](/links/web/hosting).
 >
 
 Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:
@@ -166,7 +166,7 @@ In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 > [!primary]
 >
-> Vergleich unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/).
+> Vergleich unserer [Webhosting-Angebote](/links/web/hosting).
 >
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:

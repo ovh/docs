@@ -26,7 +26,7 @@ Permette di pubblicare online file o sito Internet [accedendo allo spazio FTP](/
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
+- Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva
 - Aver installato il software Filezilla sul tuo computer Disponibile gratuitamente sulla pagina [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
 ## Presentazione dell'interfaccia <a name="interface"></a>

@@ -16,7 +16,7 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 
 ## Requisitos
 
-- Tener contratado un plan de [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que incluya al menos una base de datos.
+- Tener contratado un plan de [alojamiento web de OVHcloud](/links/web/hosting) que incluya al menos una base de datos.
 - Disponer de una base de datos disponible en "creación" entre las que se incluyen en el plan de hosting. Si lo necesita, puede añadir bases de datos [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) a su alojamiento web.
 - Tener acceso al [área de cliente de OVHcloud](/links/manager) con los [permisos necesarios](/pages/account_and_service_management/account_information/managing_contacts) para gestionar el alojamiento web.
 
@@ -57,7 +57,7 @@ En la nueva ventana, seleccione la siguiente información:
 |Información|Descripción|  
 |---|---|
 |**Seleccione el tipo de base de datos**|Elija el tamaño de la base de datos. Este tamaño se refiere al espacio de almacenamiento de datos de la base de datos.|
-|**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Las bases de datos incluidas en su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) solo están disponibles con el motor MySQL.|
+|**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Las bases de datos incluidas en su [plan de hosting de OVHcloud](/links/web/hosting) solo están disponibles con el motor MySQL.|
 |**Seleccione la versión de la base de datos que quiere añadir**|Elija la versión que utiliza el motor de la base de datos. Asegúrese de que su sitio web es compatible con la versión que ha elegido.|
 
 A continuación, haga clic en `Siguiente`{.action}.

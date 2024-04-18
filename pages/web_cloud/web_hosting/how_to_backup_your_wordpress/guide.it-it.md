@@ -26,7 +26,7 @@ Su un hosting Web condiviso, sei responsabile dei backup del tuo sito Web. Anche
 
 ## Prerequisiti
 
-- Disporre di un [hosting Web](https://www.ovhcloud.com/it/web-hosting/) e aver installato WordPress
+- Disporre di un [hosting Web](/links/web/hosting) e aver installato WordPress
   
 ## Procedura
 

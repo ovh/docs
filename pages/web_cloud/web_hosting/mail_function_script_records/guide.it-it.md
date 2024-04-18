@@ -14,9 +14,9 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 > [!primary]
 >
-> Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+> Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](/links/web/hosting).
 >
-> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](/links/web/hosting){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -28,7 +28,7 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
@@ -37,7 +37,7 @@ Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud 
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-La nuova pagina ti permette di seguire e gestire le email automatiche inviate dal tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
+La nuova pagina ti permette di seguire e gestire le email automatiche inviate dal tuo [hosting Web OVHcloud](/links/web/hosting).
 
 ### Presentazione della sezione "Script email"
 

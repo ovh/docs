@@ -6,7 +6,7 @@ updated: 2022-01-05
 
 ## Objective
 
-Using FTP software when logging in to your [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) can cause various anomalies. This guide will help you resolve the most common ones.
+Using FTP software when logging in to your [Web Hosting plan](/links/web/hosting) can cause various anomalies. This guide will help you resolve the most common ones.
 
 **Find out how to resolve the most common FTP software related issues.**
 
@@ -18,7 +18,7 @@ Using FTP software when logging in to your [Web Hosting plan](https://www.ovhclo
 
 ## Requirements
 
-- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
+- An OVHcloud [Web Hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

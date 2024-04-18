@@ -6,7 +6,7 @@ updated: 2023-09-19
 
 ## Objective
 
-In your [OVHcloud Control Panel](/links/manager), you can increase the capacity of your [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/). A subscription upgrade provides the following advantages:
+In your [OVHcloud Control Panel](/links/manager), you can increase the capacity of your [web hosting plans](/links/web/hosting). A subscription upgrade provides the following advantages:
 
 - More powerful hosting
 - More FTP storage space
@@ -18,7 +18,7 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
 
 ## Instructions
@@ -136,7 +136,7 @@ Once these 6 points have been verified, you can complete your [solution change](
 
 #### You have a free 100M hosting plan <a name="100m"></a>
 
-If you are changing your plan from a [100M free hosting](/pages/web_cloud/web_hosting/activate_start10m) plan, only [the Personal plan](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) will be available. However, after changing to the Personal plan, you can upgrade it to all of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/).
+If you are changing your plan from a [100M free hosting](/pages/web_cloud/web_hosting/activate_start10m) plan, only [the Personal plan](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) will be available. However, after changing to the Personal plan, you can upgrade it to all of our [web hosting plans](/links/web/hosting).
 
 Follow [these instructions](#modify) to change your solution.
 

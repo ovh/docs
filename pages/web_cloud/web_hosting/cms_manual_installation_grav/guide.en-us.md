@@ -12,7 +12,7 @@ The **CMS** (**C**ontent **M**anagement **S**ystem) Grav enables websites to be 
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/).
+- An [OVHcloud web hosting plan](/links/web/hosting).
 - A [domain name](https://www.ovhcloud.com/en/domains/).
 - Access to the [OVHcloud Control Panel](/links/manager).
 
@@ -20,7 +20,7 @@ The **CMS** (**C**ontent **M**anagement **S**ystem) Grav enables websites to be 
 
 ### Prepare for installation
 
-To install the **Grav** CMS on your [web hosting](https://www.ovhcloud.com/en/web-hosting/), you will need to make some preparations.
+To install the **Grav** CMS on your [web hosting](/links/web/hosting), you will need to make some preparations.
 
 Follow the **full set of steps** described in our tutorial on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation) before continuing on to the next step.
 

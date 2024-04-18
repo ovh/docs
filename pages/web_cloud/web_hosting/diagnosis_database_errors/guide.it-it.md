@@ -23,7 +23,7 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
+- Disporre di una soluzione di [hosting Web](/links/web/hosting) attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/)
 ## Procedura
@@ -101,7 +101,7 @@ Tre metodi ti permettono di sbloccare il tuo database:
 
 ##### Metodo 1: attiva il tuo abbonamento su un'offerta superiore
 
-Se disponi di una formula **Personale** o **Pro***, ti consigliamo di passare all'[offerta di hosting superiore](https://www.ovhcloud.com/it/web-hosting/). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
+Se disponi di una formula **Personale** o **Pro***, ti consigliamo di passare all'[offerta di hosting superiore](/links/web/hosting). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
 
 > [!warning]
 >

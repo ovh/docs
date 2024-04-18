@@ -16,7 +16,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem przez protokół SSH.
+- Posiadanie [hostingu WWW OVHcloud](/links/web/hosting) z dostępem przez protokół SSH.
 - Posiadanie informacji umożliwiających logowanie się do przestrzeni dyskowej za pomocą SSH.
 - Mieć dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
@@ -34,7 +34,7 @@ Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (
 
 ![usessh](images/tab-ssh.png){.thumbnail}
 
-Jeżeli dostęp nie jest aktywny, kliknij przycisk `...`{.action} po prawej stronie wybranego użytkownika, a następnie `Zmień`{.action}. W oknie, które się wyświetli, włącz dostęp SSH, a następnie dokończ procedurę zmiany ustawienia. Jeżeli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa www OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) posiada dostęp przez protokół SSH.
+Jeżeli dostęp nie jest aktywny, kliknij przycisk `...`{.action} po prawej stronie wybranego użytkownika, a następnie `Zmień`{.action}. W oknie, które się wyświetli, włącz dostęp SSH, a następnie dokończ procedurę zmiany ustawienia. Jeżeli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa www OVHcloud](/links/web/hosting) posiada dostęp przez protokół SSH.
 
 ### Etap 2: pobranie informacji niezbędnych do logowania <a name="sshlogin"></a>
 

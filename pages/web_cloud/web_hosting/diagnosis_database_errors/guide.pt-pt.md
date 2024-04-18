@@ -23,7 +23,7 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) OVHcloud.
+- Ter um [serviço de alojamento web](/links/web/hosting) OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma das nossas ofertas de bases de dados [Web Cloud](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
 
@@ -104,7 +104,7 @@ Três métodos irão permitir-lhe desbloquear a sua base de dados:
 
 #### Método 1: passar a sua subscrição para uma oferta superior
 
-Se dispõe de uma fórmula **Perso** ou **Pro**, aconselhamos-o a passar para a [oferta de alojamento superior](https://www.ovhcloud.com/pt/web-hosting/). Esta alteração de subscrição irá aumentar o tamanho da sua base de dados, o que a irá reabrir automaticamente. Este método é o mais simples e não exige qualquer competência técnica específica.
+Se dispõe de uma fórmula **Perso** ou **Pro**, aconselhamos-o a passar para a [oferta de alojamento superior](/links/web/hosting). Esta alteração de subscrição irá aumentar o tamanho da sua base de dados, o que a irá reabrir automaticamente. Este método é o mais simples e não exige qualquer competência técnica específica.
 
 > [!warning]
 >

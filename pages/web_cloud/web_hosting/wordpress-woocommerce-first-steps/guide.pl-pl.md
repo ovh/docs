@@ -21,7 +21,7 @@ Dowiedz się, jak utworzyć sklep internetowy z rozszerzeniem open source **WooC
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera przynajmniej jedną bazę danych.
+- Posiadanie oferty [hostingu](/links/web/hosting), która zawiera przynajmniej jedną bazę danych.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - [Instalacja WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) na Twoim hostingu
 

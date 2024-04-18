@@ -25,7 +25,7 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Tener contratado un [plan de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener contratado un [plan de alojamiento web](/links/web/hosting).
 
 ## Procedimiento
 

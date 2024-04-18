@@ -23,7 +23,7 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 
 ## Requisitos
 
-- Ter um [serviço de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) que permite a instalação de um módulo 1 clique.
+- Ter um [serviço de alojamento Web Cloud](/links/web/hosting) que permite a instalação de um módulo 1 clique.
 - Ter criado um módulo 1 clique no alojamento (Se ainda não o fez, siga as instruções deste [manual](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 

@@ -17,7 +17,7 @@ Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie erhielten eine E-Mail, die bestätigt, dass Ihr Webhosting eingerichtet wurde.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/), mit dem Sie auf Ihre Webseite zugreifen können.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
@@ -42,7 +42,7 @@ Die Beantwortung dieser Fragen kann dazu beitragen, sich auf bestimmte Punkte zu
 
 Für die Verwendung von CMS wie WordPress, PrestaShop, Drupal oder Joomla! sind viele Bibliotheken erforderlich, deshalb könnte eine einzelne Webseite viele Elemente zu verarbeiten haben.
 Internetbrowser müssen alle diese Elemente laden und lesen.
-Wir geben Empfehlungen dazu, welches Webhosting-Angebot für das oben aufgeführte CMS verwendet werden sollte auf [der Produktseite](https://www.ovhcloud.com/de/web-hosting/).
+Wir geben Empfehlungen dazu, welches Webhosting-Angebot für das oben aufgeführte CMS verwendet werden sollte auf [der Produktseite](/links/web/hosting).
 
 Weitere Informationen dazu, welches Hostingpaket sich eignet, finden Sie auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/).
 
@@ -145,7 +145,7 @@ Entdecken Sie hier unsere [CDN Lösung](https://www.ovh.de/cdn/).
 
 _Dieser Schritt ist optional, wenn Sie kein CMS verwenden._
 
-Um sicherzustellen, dass Ihr Hosting-Angebot an die Anforderungen Ihres CMS angepasst ist, finden Sie einen Vergleich unserer Dienste auf [der Produktseite](https://www.ovhcloud.com/de/web-hosting/).
+Um sicherzustellen, dass Ihr Hosting-Angebot an die Anforderungen Ihres CMS angepasst ist, finden Sie einen Vergleich unserer Dienste auf [der Produktseite](/links/web/hosting).
 
 - **Verwenden eines Cache-Plugins:** Um CMS verwenden zu können, benötigen Sie mehrere Bibliotheken, sodass eine einzelne Webseite eine enorme Anzahl von Elementen verarbeiten kann. Um Ihr CMS zu optimieren, sollten Sie Cache-Plugins verwenden, um zu vermeiden, dass der gesamte Inhalt Ihrer Webseite bei jedem Laden einer Seite neu generiert wird. Wir empfehlen, auf den Community-Websites nach Cache-Plugins suchen, die sich auf das von Ihnen verwendete CMS beziehen (Joomla! - PrestaShop - WordPress).
 

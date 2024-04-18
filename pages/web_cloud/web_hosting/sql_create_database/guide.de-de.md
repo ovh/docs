@@ -16,7 +16,7 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer inkludierten Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit mindestens einer inkludierten Datenbank.
 - Sie haben unter den in Ihrem Webhosting enthaltenen Datenbanken eine zur Erstellung verfügbare Datenbank. Bei Bedarf können Sie [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbanken zu Ihrem Webhosting hinzufügen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
 
@@ -57,7 +57,7 @@ Wählen Sie im angezeigten Fenster unter den folgenden Optionen aus:
 |Information|Beschreibung|  
 |---|---|
 |**Wählen Sie den Typ der Datenbank aus**|Wählen Sie die Größe der Datenbank aus. Diese Größe bezieht sich auf den Speicherplatz, den Ihre Datenbank zum Speichern von Daten hat.|
-|**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) inkludierten Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
+|**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in einem [OVHcloud Webhosting](/links/web/hosting) inkludierten Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
 |**Wählen Sie die Version der Datenbank aus**|Wählen Sie die Version aus, die vom Datenbankmodul verwendet wird. Stellen Sie sicher, dass Ihre Website mit der von Ihnen gewählten Version kompatibel ist.|
 
 Klicken Sie auf `Weiter`{.action}.

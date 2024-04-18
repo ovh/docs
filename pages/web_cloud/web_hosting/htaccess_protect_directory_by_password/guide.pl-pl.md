@@ -30,7 +30,7 @@ Używając dwóch plików konfiguracyjnych (HTTP) Apache do umieszczenia w [prze
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie danych do logowania do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection)
 

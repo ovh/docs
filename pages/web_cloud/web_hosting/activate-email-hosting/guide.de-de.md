@@ -16,7 +16,7 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 ## Voraussetzungen
 
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) in Ihrem OVHcloud Kundencenter.
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
@@ -43,7 +43,7 @@ Daraufhin öffnet sich das Aktivierungsfenster. Wählen Sie aus, welchen Domainn
 ![Aktivierung der E-Mail-Adressen](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Wenn Sie mehr inklusive E-Mail-Accounts nutzen möchten, können Sie ein leistungsfähigeres [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} über unsere Webseite auswählen.
+> Wenn Sie mehr inklusive E-Mail-Accounts nutzen möchten, können Sie ein leistungsfähigeres [Webhosting-Angebot](/links/web/hosting){.external} über unsere Webseite auswählen.
 >
 > Achtung: Die Aktivierung der Option E-Mail kann einige Minuten in Anspruch nehmen. Sie erhalten eine E-Mail, die die Installation und Aktivierung des Dienstes MX Plan bestätigt. Dies ist Voraussetzung zur Erstellung und Konfiguration Ihrer E-Mail-Accounts.
 >

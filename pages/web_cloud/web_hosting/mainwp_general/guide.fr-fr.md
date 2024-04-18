@@ -21,7 +21,7 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
+- Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Être connecté à l'interface d'administration de WordPress.
 

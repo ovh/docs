@@ -16,8 +16,8 @@ I database sono utilizzati dalla maggior parte dei siti Web e **C**ontent **M**a
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
+- Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external}
 - In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVHcloud](/links/manager){.external} o disporre dei dati di connessione al database
 
 ## Procedura
@@ -30,7 +30,7 @@ Prima di iniziare, definisci il metodo che intendi utilizzare per recuperare il 
 
 - **Utilizza uno script per il backup** : per poter effettuare il backup è necessario creare uno script e salvarlo sull’hosting Web OVHcloud. Per questa creazione sono necessarie conoscenze specifiche.
 
-- **Effettua il backup da un comando SSH**: questo metodo richiede l’accesso allo spazio di storage FTP tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso. Questo tipo di accesso richiede conoscenze avanzate e una soluzione [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} specifica.
+- **Effettua il backup da un comando SSH**: questo metodo richiede l’accesso allo spazio di storage FTP tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso. Questo tipo di accesso richiede conoscenze avanzate e una soluzione [hosting Web OVHcloud](/links/web/hosting){.external} specifica.
 
 > [!success]
 >

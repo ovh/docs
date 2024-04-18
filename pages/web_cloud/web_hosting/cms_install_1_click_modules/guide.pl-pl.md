@@ -18,7 +18,7 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting) zawierającej co najmniej jedną bazę danych.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. Sprawdź stan poszczególnych wersji dostępnych na tej [stronie](https://webhosting-infos.hosting.ovh.net/). W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
@@ -39,7 +39,7 @@ Spośród wszystkich systemów CMS, OVHcloud oferuje 4 modułów za pomocą 1 kl
 
 Używając tego rozwiązania powinieneś wybrać spośród 4 systemów CMS wymienionych powyżej. Jeśli już dokonałeś wyboru, przejdź do kolejnych etapów niniejszego przewodnika. Jeśli tak się nie stanie, skorzystaj z naszych [porównań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/), aby dokonać wyboru.
 
-Jeśli chcesz zainstalować niedostępny CMS za pomocą naszych "modułów za 1 kliknięciem", możesz zainstalować go ręcznie na Twoim hostingu. Pod warunkiem, że ten CMS jest kompatybilny z naszą ofertą [hostingiem www OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+Jeśli chcesz zainstalować niedostępny CMS za pomocą naszych "modułów za 1 kliknięciem", możesz zainstalować go ręcznie na Twoim hostingu. Pod warunkiem, że ten CMS jest kompatybilny z naszą ofertą [hostingiem www OVHcloud](/links/web/hosting).
 
 ![Dostępne w OVHcloud CMS](images/cms-logos.png){.thumbnail}
 

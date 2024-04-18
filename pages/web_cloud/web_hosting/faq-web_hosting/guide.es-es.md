@@ -30,7 +30,7 @@ Una vez que se haya conectado al área de cliente,
 
 ### ¿Cómo publicar mi sitio web? 
 
-Para publicar su sitio web, debe disponer de un [nombre de dominio](https://www.ovhcloud.com/es-es/domains/) que corresponda a la dirección web desde la que estará accesible su sitio web (por ejemplo: *mi dominio.com*). También necesitará un [alojamiento](https://www.ovhcloud.com/es-es/web-hosting/) en el que instalar su sitio web.
+Para publicar su sitio web, debe disponer de un [nombre de dominio](https://www.ovhcloud.com/es-es/domains/) que corresponda a la dirección web desde la que estará accesible su sitio web (por ejemplo: *mi dominio.com*). También necesitará un [alojamiento](/links/web/hosting) en el que instalar su sitio web.
 
 Para más información, consulte esta [página](https://www.ovhcloud.com/es-es/web-hosting/uc-website/) y siga las indicaciones de la guía [Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
@@ -46,7 +46,7 @@ Consulte la guía "[Alojar varios sitios web en un mismo hosting](/pages/web_clo
 
 ### ¿Cómo cambiar de plan de alojamiento?
 
-Para contratar el plan de hosting más adecuado para usted, puede consultar nuestros planes en [esta página](https://www.ovhcloud.com/es-es/web-hosting/).
+Para contratar el plan de hosting más adecuado para usted, puede consultar nuestros planes en [esta página](/links/web/hosting).
 
 A continuación, siga las indicaciones de nuestra guía ["Mejorar el plan de hosting"](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer).
 

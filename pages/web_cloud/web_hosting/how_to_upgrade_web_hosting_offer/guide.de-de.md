@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Ziel 
 
-Im [OVHcloud Kundencenter](/links/manager) können Sie die Kapazitäten Ihrer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/) erweitern. Ein Abonnement-Upgrade bietet die folgenden Vorteile:
+Im [OVHcloud Kundencenter](/links/manager) können Sie die Kapazitäten Ihrer [Webhosting-Angebote](/links/web/hosting) erweitern. Ein Abonnement-Upgrade bietet die folgenden Vorteile:
 
 - Leistungsfähigeres Hosting
 - Mehr FTP-Speicherplatz
@@ -22,7 +22,7 @@ Im [OVHcloud Kundencenter](/links/manager) können Sie die Kapazitäten Ihrer [W
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/)
+- Sie verfügen über ein [Webhosting Angebot](/links/web/hosting)
 - Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt
 - Sie sind mindestens „[Administrator](/pages/account_and_service_management/account_information/managing_contacts)“ der Dienste, für die Sie das Abonnement ändern möchten.
 
@@ -141,7 +141,7 @@ Nachdem Sie diese 6 Punkte überprüft haben, können Sie Ihren [Angebotswechsel
 
 #### Sie nutzen das Angebot Kostenloses Hosting 100M <a name="100m"></a>
 
-Sie können Ihr [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](https://www.ovhcloud.com/de/web-hosting/).
+Sie können Ihr [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](/links/web/hosting).
 
 Folgen Sie [diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 

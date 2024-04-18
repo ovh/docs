@@ -12,7 +12,7 @@ With [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting
 >
 > This 100 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.
 > It is also suitable if you do not need several "MX plan" email accounts. 
-> If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/) directly from our website or your [OVHcloud Control Panel](/links/manager){.external}.
+> If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](/links/web/hosting) directly from our website or your [OVHcloud Control Panel](/links/manager){.external}.
 >
 
 **Find out how to activate your 100M free hosting plan**
@@ -56,7 +56,7 @@ The activation window will appear. **Step 1** will detail the plan and its price
 >
 > You can also choose to delete the free offer after backing up your hosting data and the contents of your email account.
 >
-> For more details, see our [hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/).
+> For more details, see our [hosting offers](/links/web/hosting).
 >
 
 **Step 3** reminds you of the pricing of the offer. 

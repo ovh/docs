@@ -18,7 +18,7 @@ Strona www zawierająca statyczne strony internetowe gwarantuje lepszy czas ład
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec tych oferowanych domyślnie w naszych pakietach hostingowych.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec tych oferowanych domyślnie w naszych pakietach hostingowych.
 - Zapoznanie się z wprowadzaniem wiersza poleceń.
 - Możliwość przesyłania plików przez FTP z klientem, takim jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Ustawienie strefy DNS w celu przekierowania domeny (lub subdomeny) na hosting. Jest to przydatne, jeśli chcesz hostować kilka stron WWW na [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) na Twoim hostingu.
@@ -26,7 +26,7 @@ Strona www zawierająca statyczne strony internetowe gwarantuje lepszy czas ład
 
 ## W praktyce
 
-[hosting współdzielony](https://www.ovhcloud.com/pl/web-hosting/) pozwala na zgłaszanie domen lub subdomen w opcji MultiSite. Do wdrożenia Twojej strony WWW z systemem **Cecil** konieczna jest domena lub subdomena.
+[hosting współdzielony](/links/web/hosting) pozwala na zgłaszanie domen lub subdomen w opcji MultiSite. Do wdrożenia Twojej strony WWW z systemem **Cecil** konieczna jest domena lub subdomena.
 
 Aby pomóc Ci w zadeklarowaniu domeny lub subdomeny w opcji MultiSite na Twoim hostingu, wejdź na naszą stronę "[Udostępnienie hostingu między kilkoma stronami](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 

@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Wprowadzenie
 
-[Panel klienta OVHcloud](/links/manager) pozwala na zwiększenie wydajności Twoich [ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/). Możesz również:
+[Panel klienta OVHcloud](/links/manager) pozwala na zwiększenie wydajności Twoich [ofert hostingu www](/links/web/hosting). Możesz również:
 
 - wydajniejszego hostingu;
 - więcej przestrzeni dyskowej FTP;
@@ -22,7 +22,7 @@ updated: 2023-09-19
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu](/links/web/hosting)
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 - Posiadanie co najmniej kontaktu "[Administrator](/pages/account_and_service_management/account_information/managing_contacts)" dla usług, dla których chcesz zmienić subskrypcję.
 
@@ -141,7 +141,7 @@ Po sprawdzeniu tych 6 punktów możesz wprowadzić [zmiana oferty](#modify).
 
 #### Posiadasz darmowy hosting 100M <a name="100m"></a>
 
-W przypadku zmiany oferty z [darmowego hostingu 100M](/pages/web_cloud/web_hosting/activate_start10m) będziesz mógł wybrać tylko [hosting Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/). Niemniej jednak, po przejściu na ofertę Perso, będziesz mógł zmienić ją na wszystkie nasze [oferty hostingu www](https://www.ovhcloud.com/pl/web-hosting/).
+W przypadku zmiany oferty z [darmowego hostingu 100M](/pages/web_cloud/web_hosting/activate_start10m) będziesz mógł wybrać tylko [hosting Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/). Niemniej jednak, po przejściu na ofertę Perso, będziesz mógł zmienić ją na wszystkie nasze [oferty hostingu www](/links/web/hosting).
 
 Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
 

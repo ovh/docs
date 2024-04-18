@@ -46,7 +46,7 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener contratado un [plan de hosting](/links/web/hosting).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
