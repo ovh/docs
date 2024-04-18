@@ -87,7 +87,7 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 |Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](https://www.ovhcloud.com/pl/web-hosting/options/cdn/){.external}. Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
 |Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
 |Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](https://www.ovhcloud.com/pl/web-hosting/options/){.external}.|
-|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](https://www.ovhcloud.com/pl/web-hosting/uc-website-traffic-analysis/){.external} statystyk.|
+|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](/links/web/hosting-traffic-analysis){.external} statystyk.|
 
 > [!warning]
 >

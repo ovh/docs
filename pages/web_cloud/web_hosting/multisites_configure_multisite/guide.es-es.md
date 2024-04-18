@@ -87,7 +87,7 @@ A continuación, deberá personalizar la adición del dominio o subdominio. Seg�
 |Activar la CDN|Permite activar el servicio CDN (almacenamiento en caché de los elementos estáticos del sitio web, como las imágenes) en el dominio seleccionado. Más información en nuestra página sobre [CDN](https://www.ovhcloud.com/es-es/web-hosting/options/cdn/){.external}. Si activa conjuntamente las opciones SSL y CDN, podrá disfrutar también del protocolo **HTTP2** (activo por defecto en nuestro datacenter de Gravelines).|
 |IP del país|Permite disfrutar de una dirección IP geolocalizada (a elegir entre diversos países) en el dominio seleccionado. Más información en nuestra página sobre las [IP](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}.|
 |Activar el firewall|Permite activar un firewall (análisis de las peticiones) en el dominio seleccionado. Más información en nuestra página sobre [Mod Security](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}.|
-|Logs separados|Permite activar un nuevo espacio de logs en el dominio seleccionado. Deberá elegir un dominio de la lista, que determinará el nombre de acceso al nuevo espacio. Más información en [nuestra página sobre estadísticas completas](https://www.ovhcloud.com/es-es/web-hosting/uc-website-traffic-analysis/){.external}.|
+|Logs separados|Permite activar un nuevo espacio de logs en el dominio seleccionado. Deberá elegir un dominio de la lista, que determinará el nombre de acceso al nuevo espacio. Más información en [nuestra página sobre estadísticas completas](/links/web/hosting-traffic-analysis){.external}.|
 
 > [!warning]
 >
