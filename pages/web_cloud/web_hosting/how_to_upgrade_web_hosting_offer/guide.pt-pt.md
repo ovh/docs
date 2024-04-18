@@ -16,7 +16,7 @@ A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidade
 - mais espaço de armazenamento FTP;
 - de bases de dados suplementares; 
 - endereços de e-mail adicionais;
-- de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [a oferta Pro](/links/web/hosting-professional-offer)) ou o [serviço Web Cloud Databases](/links/web/databases){.external} (incluído em [oferta Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/).
+- de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [a oferta Pro](/links/web/hosting-professional-offer)) ou o [serviço Web Cloud Databases](/links/web/databases){.external} (incluído em [oferta Performance](/links/web/hosting-performance-offer).
 
 **Saiba como fazer evoluir a sua oferta de alojamento OVHcloud, sem interrupção de serviço.**
 
@@ -75,7 +75,7 @@ Após a eliminação dos dados das suas bases de dados, recalcule o limite utili
 
 #### 2 - Web Cloud Databases
 
-Se utilizar a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluída com o seu alojamento web [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e pretender colocar o seu alojamento web numa oferta [Pro](/links/web/hosting-professional-offer), deverá primeiro dissociar a oferta Web Cloud Databases do seu alojamento web.<br>
+Se utilizar a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluída com o seu alojamento web [Performance](/links/web/hosting-performance-offer) e pretender colocar o seu alojamento web numa oferta [Pro](/links/web/hosting-professional-offer), deverá primeiro dissociar a oferta Web Cloud Databases do seu alojamento web.<br>
 Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}. Na coluna central `Configuração`, clique no botão `...`{.action} à direita da menção `Web Cloud Databases`{.action} e, a seguir, em `Desassociar`{.action}.
 
 ![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}

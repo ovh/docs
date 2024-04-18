@@ -74,7 +74,7 @@ In your [OVHcloud Control Panel](/links/manager), click `Web Cloud`{.action}. Cl
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-The offers [Pro](/links/web/hosting-professional-offer) and [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
+The offers [Pro](/links/web/hosting-professional-offer) and [Performance](/links/web/hosting-performance-offer) will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
 Once complete, you will be able to install a new 1-click module.
 
@@ -168,7 +168,7 @@ In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action}
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-The [Pro](/links/web/hosting-professional-offer) and [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) offers will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
+The [Pro](/links/web/hosting-professional-offer) and [Performance](/links/web/hosting-performance-offer) offers will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
 ### "Unable to connect to database" <a name="delete-the-module"></a>
 

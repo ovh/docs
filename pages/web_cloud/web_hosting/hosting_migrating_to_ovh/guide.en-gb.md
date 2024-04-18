@@ -57,7 +57,7 @@ Several OVHcloud web hosting plans contain an MX Plan email solution. With this 
 
 - Hosting [Personal](/links/web/hosting-personal-offer) with **10 MX Plan email accounts**
 - Hosting [Pro](/links/web/hosting-professional-offer) with **100 MX Plan email accounts** (for business)
-- Hosting [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) with **1000 MX Plan email accounts** (scalable dedicated resources)
+- Hosting [Performance](/links/web/hosting-performance-offer) with **1000 MX Plan email accounts** (scalable dedicated resources)
 - Hosting [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) with **200 MX Plan email accounts** (for application developers)
 
 Once you have chosen your hosting plan, click the `Order`{.action} button on the commercial pages above. Follow the steps for the **order without requesting the transfer of your domain name**.

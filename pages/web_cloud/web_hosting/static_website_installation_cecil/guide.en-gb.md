@@ -154,7 +154,7 @@ You can view it on your server by typing your website URL, followed by `/mypage/
 
 #### Change on server
 
-You can edit Markdown files directly on the Web Hosting server. With your [Performance Hosting](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) SSH access, you can use [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} or [vim](https://www.vim.org/){.external}.
+You can edit Markdown files directly on the Web Hosting server. With your [Performance Hosting](/links/web/hosting-performance-offer) SSH access, you can use [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} or [vim](https://www.vim.org/){.external}.
 The screenshots of this tutorial were taken under **GNU nano**.
 
 Edit the file `mypage.md` located in the `pages` directory by typing the following command if you are at the root of your site:

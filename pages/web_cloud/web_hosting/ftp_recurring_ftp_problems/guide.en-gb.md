@@ -35,7 +35,7 @@ Otherwise, go to the [OVHcloud Control Panel](/links/manager), go to the `Web Cl
 
 If you have a [Personal](/links/web/hosting-personal-offer) Web Hosting plan, tick the `Disabled`{.action} box in the `SFTP`{.action} column, then wait a few minutes.
 
-If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) Web Hosting plan, click on the `...`{.action} button to the right of the FTP user concerned, then on `Edit`{.action}.
+If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](/links/web/hosting-performance-offer) Web Hosting plan, click on the `...`{.action} button to the right of the FTP user concerned, then on `Edit`{.action}.
 
 Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), click `Next`{.action} and then click on `Confirm`{.action}. Wait a few minutes.
 
@@ -72,7 +72,7 @@ For example, for [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_gui
 
 Also limit the size of your data transfers (you cannot send more than **5000 files and folders** on OVHcloud shared servers on a single transfer). Split your imports if necessary and use compressed folders.
 
-If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) Web Hosting plan, use the [SSH protocol](/pages/web_cloud/web_hosting/ssh_on_webhosting) to import files on to your file storage space.
+If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](/links/web/hosting-performance-offer) Web Hosting plan, use the [SSH protocol](/pages/web_cloud/web_hosting/ssh_on_webhosting) to import files on to your file storage space.
 
 ### I can't delete the symbolic link "index.html" on my FTP space.
 

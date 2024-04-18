@@ -151,7 +151,7 @@ Lo si può visualizzare sul server digitando l'URL del sito, seguito da `/mypage
 
 #### Modifica sul server
 
-Per modificare i file _Markdown_ è possibile accedere direttamente al server di hosting Web. Sulla tua offerta di [hosting Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), il tuo accesso SSH permette di utilizzare indifferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} o [vim](https://www.vim.org/){.external}.
+Per modificare i file _Markdown_ è possibile accedere direttamente al server di hosting Web. Sulla tua offerta di [hosting Performance](/links/web/hosting-performance-offer), il tuo accesso SSH permette di utilizzare indifferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} o [vim](https://www.vim.org/){.external}.
 Le schermate di questo tutorial sono state effettuate con **GNU nano**.
 
 Modifica il file `mypage.md` nella directory `pages` digitando questo comando se sei alla radice del tuo sito:

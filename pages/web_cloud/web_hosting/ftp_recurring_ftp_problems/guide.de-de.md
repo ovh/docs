@@ -39,7 +39,7 @@ Ist das nicht der Fall, gehen Sie in Ihr [OVHcloud Kundencenter](/links/manager)
 
 Wenn Sie über ein Webhosting [Basic](/links/web/hosting-personal-offer) verfügen, setzen Sie in der Spalte `SFTP`{.action} den Haken bei der Feld `Deaktiviert`{.action} und warten Sie einige Minuten.
 
-Wenn Sie über ein Webhosting [Pro](/links/web/hosting-professional-offer) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem betreffenden FTP-Benutzer und dann auf `Ändern`{.action}.
+Wenn Sie über ein Webhosting [Pro](/links/web/hosting-professional-offer) oder [Performance](/links/web/hosting-performance-offer) verfügen, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem betreffenden FTP-Benutzer und dann auf `Ändern`{.action}.
 
 Wählen Sie `SFTP`{.action} oder `Aktiviert`{.action} aus (um das SSH-Protokoll auf Ihrem Hosting zu aktivieren), klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}. Die Umstellung dauert einige Minuten.
 
@@ -76,7 +76,7 @@ Klicken Sie zum Beispiel für [Filezilla](/pages/web_cloud/web_hosting/ftp_filez
 
 Begrenzen Sie auch die Größe Ihrer Datentransfers (Sie können nicht mehr als **5000 Dateien und Ordner** auf den Shared Hosting Servern von OVHcloud in einem einzigen Transfer versenden). Führen Sie mehrere Importe durch, wenn nötig unter Verwendung komprimierter Ordner.
 
-Wenn Sie über eine [Pro](/links/web/hosting-professional-offer) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) Lösung verfügen, verwenden Sie vorzugsweise das [SSH-Protokoll](/pages/web_cloud/web_hosting/ssh_on_webhosting), um Ihre Dateien dem Speicherplatz Ihres Hostings hinzuzufügen.
+Wenn Sie über eine [Pro](/links/web/hosting-professional-offer) oder [Performance](/links/web/hosting-performance-offer) Lösung verfügen, verwenden Sie vorzugsweise das [SSH-Protokoll](/pages/web_cloud/web_hosting/ssh_on_webhosting), um Ihre Dateien dem Speicherplatz Ihres Hostings hinzuzufügen.
 
 ### Der symbolische Link “index.html“ kann nicht in meinem FTP-Bereich gelöscht werden
 

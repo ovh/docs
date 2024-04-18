@@ -60,7 +60,7 @@ Varios planes de hosting de OVHcloud contienen una solución de correo electrón
 
 - El alojamiento [Personal](/links/web/hosting-personal-offer) con **10 direcciones de correo** "MX Plan"
 - El alojamiento [Pro](/links/web/hosting-professional-offer) con **100 direcciones de correo** "MX Plan"
-- El alojamiento [Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) con **1000 direcciones de correo** "MX Plan". Esta oferta se divide en 4 "subproductos".
+- El alojamiento [Performance](/links/web/hosting-performance-offer) con **1000 direcciones de correo** "MX Plan". Esta oferta se divide en 4 "subproductos".
 
 Si todavía no es cliente de OVHcloud, haga clic en el botón `Contratar`{.action} de las páginas comerciales anteriores. Siga los pasos del pedido **sin solicitar la transferencia del dominio**.
 

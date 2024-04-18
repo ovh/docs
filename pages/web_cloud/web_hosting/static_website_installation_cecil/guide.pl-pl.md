@@ -151,7 +151,7 @@ Możesz wyświetlić go na Twoim serwerze, wpisując adres URL strony, a następ
 
 #### Zmiana dla serwera
 
-Edycja plików _Markdown_ może odbywać się bezpośrednio na serwerze hostingowym. W ofercie [hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) dostęp SSH pozwala na korzystanie z protokołu [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} lub [vim](https://www.vim.org/){.external}.
+Edycja plików _Markdown_ może odbywać się bezpośrednio na serwerze hostingowym. W ofercie [hosting Performance](/links/web/hosting-performance-offer) dostęp SSH pozwala na korzystanie z protokołu [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} lub [vim](https://www.vim.org/){.external}.
 Zrzuty ekranu z niniejszego tutoriala przeprowadzono w **GNU nano**.
 
 Edytuj plik `mypage.md` znajdujący się w katalogu `pages`, wpisując następujące polecenie, jeśli znajdujesz się w katalogu głównym Twojej strony:

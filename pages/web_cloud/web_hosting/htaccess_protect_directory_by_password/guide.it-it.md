@@ -123,7 +123,7 @@ Sostituisci `plain_text_password1`, `plain_text_password2` e `plain_text_passwor
 > Per maggiori informazioni sull'argomento, consulta la [documentazione ufficiale Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Se disponi di un hosting [Pro](/links/web/hosting-professional-offer) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), collegati in [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) al tuo hosting Web. Scendete nella "**directory**" dove si trova il vostro script "crypt.php".
+Se disponi di un hosting [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), collegati in [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) al tuo hosting Web. Scendete nella "**directory**" dove si trova il vostro script "crypt.php".
 
 Per effettuare questa operazione, utilizza il comando SSH:
 

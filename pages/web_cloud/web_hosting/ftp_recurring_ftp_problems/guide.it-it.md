@@ -40,7 +40,7 @@ In caso contrario, accedi alla sezione Web del tuo [Spazio Cliente OVHcloud](/li
 
 Se disponi di un hosting [Personale](/links/web/hosting-personal-offer), seleziona la casella `Disattivato`{.action} nella colonna `SFTP`{.action} e attendi qualche minuto.
 
-Se disponi di un hosting [Pro](/links/web/hosting-professional-offer) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modifica`{.action}.
+Se disponi di un hosting [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modifica`{.action}.
 
 Scegli `SFTP`{.action} o `Attivo`{.action} (per attivare il protocollo SSH sul tuo hosting), clicca su `Continua`{.action} e infine su `Conferma`{.action}. Attendi qualche minuto.
 
@@ -77,7 +77,7 @@ Per esempio, per [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_gui
 
 Limita anche la dimensione dei tuoi trasferimenti di dati (non puoi inviare più di **5.000 file e cartelle** sui server condivisi OVHcloud in un solo trasferimento). Effettua le tue importazioni in più volte, se necessario, utilizzando cartelle compresse.
 
-Se disponi di una [formula Pro](/links/web/hosting-professional-offer) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), utilizza preferibilmente il [protocollo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) per effettuare l'importazione di file sullo spazio di archiviazione dei file del tuo hosting.
+Se disponi di una [formula Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), utilizza preferibilmente il [protocollo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) per effettuare l'importazione di file sullo spazio di archiviazione dei file del tuo hosting.
 
 ### Non riesco a eliminare il link simbolico "index.html" sul mio spazio FTP
 

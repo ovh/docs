@@ -12,7 +12,7 @@ In your [OVHcloud Control Panel](/links/manager), you can increase the capacity 
 - More FTP storage space
 - Additional databases
 - Additional email accounts
-- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](/links/web/hosting-professional-offer)) or the [Web Cloud Databases service](/links/web/databases){.external} (included in [the Performance offers](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/))
+- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](/links/web/hosting-professional-offer)) or the [Web Cloud Databases service](/links/web/databases){.external} (included in [the Performance offers](/links/web/hosting-performance-offer))
 
 **This guide explains how to upgrade your OVHcloud hosting plan without any service interruptions.**
 
@@ -70,7 +70,7 @@ Once you have deleted data from your databarrrrrses, recalculate the quota used.
 
 #### 2 - Web Cloud Databases
 
-If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) solution included with your web hosting plan [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/), and you want to change your web hosting plan to a [Pro](/links/web/hosting-professional-offer) solution, you will need to detach the Web Cloud Databases solution from your web hosting plan.<br>
+If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) solution included with your web hosting plan [Performance](/links/web/hosting-performance-offer), and you want to change your web hosting plan to a [Pro](/links/web/hosting-professional-offer) solution, you will need to detach the Web Cloud Databases solution from your web hosting plan.<br>
 To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, stay in the `General information`{.action} tab. In the central `Configuration` column, click the `...`{.action}' button to the right of the `Web Cloud Databases`{.action} heading, then `Detach`{.action}.
 
 ![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}

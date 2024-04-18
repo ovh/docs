@@ -38,7 +38,7 @@ Antes de empezar, asegúrese de que:
 Esta funcionalidad está disponible para la copia: 
 
 - una base de datos [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) (incluida en algunos de nuestros [alojamientos web](/links/web/hosting) o [contratada por separado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/);
-- de una base de datos alojada en un servidor [Web Cloud Databases](/links/web/databases) (incluida con nuestros [planes de hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) o [contratada por separado](/links/web/databases). 
+- de una base de datos alojada en un servidor [Web Cloud Databases](/links/web/databases) (incluida con nuestros [planes de hosting Performance](/links/web/hosting-performance-offer) o [contratada por separado](/links/web/databases). 
 
 En función de su situación, la ruta de acceso a la base de datos de origen es diferente.
 

@@ -158,7 +158,7 @@ Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/page
 
 > [!warning]
 >
-> Pour augmenter sa RAM, le Web Cloud Databases ne doit pas avoir été activé via un hébergement Performance. Si vous souhaitez augmenter la quantité de mémoire vive d'une base de données incluse dans les [offres performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/){.external}, il vous faut d'abord en délier cette base de données.
+> Pour augmenter sa RAM, le Web Cloud Databases ne doit pas avoir été activé via un hébergement Performance. Si vous souhaitez augmenter la quantité de mémoire vive d'une base de données incluse dans les [offres performance](/links/web/hosting-performance-offer){.external}, il vous faut d'abord en délier cette base de données.
 >
 > Pour délier la base de données, connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez l'onglet `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web sur lequel le Web Cloud Databases est activé.
 >

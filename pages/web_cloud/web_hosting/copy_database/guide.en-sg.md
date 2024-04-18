@@ -34,7 +34,7 @@ Before you begin, make sure that:
 This feature is available for:
 
 - A [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) database (included in some of our [web hostings](/links/web/hosting) or [ordered separately](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)).
-- A database hosted on a [Web Cloud Databases](/links/web/databases) server (included with our [Performance web hosting](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/) or [ordered separately](/links/web/databases)). 
+- A database hosted on a [Web Cloud Databases](/links/web/databases) server (included with our [Performance web hosting](/links/web/hosting-performance-offer) or [ordered separately](/links/web/databases)). 
 
 Depending on your situation, the path to your source database is different.
 

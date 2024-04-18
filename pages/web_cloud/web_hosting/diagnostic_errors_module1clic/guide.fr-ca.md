@@ -74,7 +74,7 @@ Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.ac
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Les offres [Pro](/links/web/hosting-professional-offer) et [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
+Les offres [Pro](/links/web/hosting-professional-offer) et [Performance](/links/web/hosting-performance-offer) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
 
 Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 clic ».
 
@@ -168,7 +168,7 @@ Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie 
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Les offres [Pro](/links/web/hosting-professional-offer) et [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
+Les offres [Pro](/links/web/hosting-professional-offer) et [Performance](/links/web/hosting-performance-offer) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](/links/web/databases).
 
 ### « Impossible de se connecter à la base de données » <a name="delete-the-module"></a>
 

@@ -157,7 +157,7 @@ In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_clo
 
 > [!warning]
 >
-> To increase the amount of RAM, the database needs to be a standalone service and not one of those included with a Performance web hosting plan. If you want to increase the amount of RAM of a database included in the [Performance offers](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/){.external}, you first need to detach it.
+> To increase the amount of RAM, the database needs to be a standalone service and not one of those included with a Performance web hosting plan. If you want to increase the amount of RAM of a database included in the [Performance offers](/links/web/hosting-performance-offer){.external}, you first need to detach it.
 > 
 > To detach the database, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the web hosting plan that has the database activated.
 >

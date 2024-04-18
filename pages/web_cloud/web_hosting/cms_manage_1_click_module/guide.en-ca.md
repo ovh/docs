@@ -133,7 +133,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 >
 > Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your Control Panel.
 >
-> If you have a [Personal Hosting](/links/web/hosting-personal-offer) subscription or if you have already created all four databases of your [Pro Hosting](/links/web/hosting-professional-offer) or [Performance Hosting](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
+> If you have a [Personal Hosting](/links/web/hosting-personal-offer) subscription or if you have already created all four databases of your [Pro Hosting](/links/web/hosting-professional-offer) or [Performance Hosting](/links/web/hosting-performance-offer), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
 To complete the removal of your module, in the `Web Cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](/links/manager), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and then `Delete database`{.action}.

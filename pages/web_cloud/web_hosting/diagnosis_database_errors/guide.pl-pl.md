@@ -162,7 +162,7 @@ W tej sytuacji możesz zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_c
 
 > [!warning]
 >
-> Aby zwiększyć pamięć RAM, nie należy włączać usługi Web Cloud Databases za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach wydajności](https://www.ovhcloud.com/pl/web-hosting/performance-offer/){.external}, musisz ją odłączyć.
+> Aby zwiększyć pamięć RAM, nie należy włączać usługi Web Cloud Databases za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach wydajności](/links/web/hosting-performance-offer){.external}, musisz ją odłączyć.
 > 
 > Aby odłączyć bazę danych, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij polecenie `Hosting`{.action}, następnie wybierz hosting, na którym aktywowana jest usługa Web Cloud Databases.
 >

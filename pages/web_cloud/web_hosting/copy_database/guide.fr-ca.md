@@ -34,7 +34,7 @@ Avant de commencer, assurez-vous que :
 Cette fonctionnalité est disponible pour la copie : 
 
 - d'une base de données [Start SQL](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) (incluse dans certains de nos [hébergements web](/links/web/hosting) ou [commandée séparément](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/));
-- d'une base de données présente sur un serveur [Web Cloud Databases](/links/web/databases) (incluse avec nos [hébergements Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) ou [commandée séparément](/links/web/databases)). 
+- d'une base de données présente sur un serveur [Web Cloud Databases](/links/web/databases) (incluse avec nos [hébergements Performance](/links/web/hosting-performance-offer) ou [commandée séparément](/links/web/databases)). 
 
 Selon votre situation, le chemin pour accéder à votre base de données source est différent.
 

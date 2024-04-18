@@ -150,7 +150,7 @@ Puede visualizarlo en su servidor escribiendo la URL de su sitio web, seguido de
 
 #### Modificación del servidor
 
-La edición de los archivos _Markdown_ puede realizarse directamente en el servidor de alojamiento web. En su [plan de hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/), su acceso SSH permite utilizar indistintamente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} o [vim](https://www.vim.org/){.external}.
+La edición de los archivos _Markdown_ puede realizarse directamente en el servidor de alojamiento web. En su [plan de hosting Performance](/links/web/hosting-performance-offer), su acceso SSH permite utilizar indistintamente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} o [vim](https://www.vim.org/){.external}.
 Las capturas de pantalla del presente tutorial se han realizado en **GNU nano**.
 
 Edite el archivo `mypage.md` situado en el directorio `pages` introduciendo el siguiente comando si está en la raíz de su sitio :

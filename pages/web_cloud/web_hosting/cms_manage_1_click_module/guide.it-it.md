@@ -140,7 +140,7 @@ Clicca sui tre puntini `...`{.action} a destra della linea che indica il tuo mod
 >
 > L'eliminazione del modulo 1 click **non comporta automaticamente l'eliminazione del database**. Se avvii l'installazione di un nuovo CMS senza aver prima eliminato il database del precedente (e il tuo hosting non consente la creazione automatica di un nuovo database), il messaggio "[Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#si-e-verificato-un-errore-durante-il-caricamento-delle-informazioni-you-need-at-least-one-free-database)" comparirà sul tuo Spazio Cliente.
 >
-> Se disponi di un abbonamento [Personale](/links/web/hosting-personal-offer) o hai già creato quattro database sul tuo hosting [Pro](/links/web/hosting-professional-offer) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), dovrai eliminare il database identificato nello [Step 1](#step1) **PRIMA** di poter creare un nuovo modulo in 1 click.
+> Se disponi di un abbonamento [Personale](/links/web/hosting-personal-offer) o hai già creato quattro database sul tuo hosting [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), dovrai eliminare il database identificato nello [Step 1](#step1) **PRIMA** di poter creare un nuovo modulo in 1 click.
 >
 
 Per completare l'eliminazione del tuo modulo, clicca sulla scheda `Database`{.action}, sempre nella sezione `Web Cloud`{.action}, `Hosting`{.action} e sull'hosting interessato sul tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `...`{.action} a destra della linea che designa il database e sul pulsante `Elimina il database`{.action} di dati.

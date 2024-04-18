@@ -157,7 +157,7 @@ Sie können sie auf dem Server öffnen, indem Sie die URL Ihrer Seite gefolgt vo
 
 #### Auf dem Server arbeiten
 
-Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](https://www.ovhcloud.com/de/web-hosting/performance-offer/) können Sie [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} oder [vim](https://www.vim.org/){.external} verwenden.
+Markdown-Dateien können direkt auf dem Webhosting-Server bearbeitet werden. Mit dem SSH-Zugang der [Performance Hostings](/links/web/hosting-performance-offer) können Sie [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} oder [vim](https://www.vim.org/){.external} verwenden.
 
 Die Screenshots dieses Tutorials wurden unter **GNU nano** erstellt.
 

@@ -60,7 +60,7 @@ Diverse offerte di hosting condiviso OVHcloud contengono un'offerta email "MX Pl
 
 - L'hosting [Personale](/links/web/hosting-personal-offer) con **10 indirizzi email** "MX Plan"
 - Hosting [Pro](/links/web/hosting-professional-offer) con **100 indirizzi email** "MX Plan"
-- Hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) con **1000 indirizzi email** "MX Plan". Questa offerta è disponibile in 4 "sottolivello".
+- Hosting [Performance](/links/web/hosting-performance-offer) con **1000 indirizzi email** "MX Plan". Questa offerta è disponibile in 4 "sottolivello".
 - L'hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) con **200 indirizzi email** "MX Plan". Questa offerta è utilizzata dagli sviluppatori di applicazioni.
 
 Una volta scelta la soluzione di hosting, se non sei ancora cliente OVHcloud, clicca su `Ordine`{.action} nelle precedenti pagine commerciali. Segui gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
