@@ -59,7 +59,7 @@ You can find more information on our [WordPress module page](/links/web/hosting-
 
 The **Joomla!** community is very large and can provide assistance and services in all areas related to this CMS (help, documentation, technical assistance, themes, etc.)
 
-You can find more information on our [Joomla! module page](https://www.ovhcloud.com/en/web-hosting/uc-joomla-website/). 
+You can find more information on our [Joomla! module page](/links/web/hosting-joomla). 
 
 - [Official site of Joomla!](https://www.joomla.org/){.external}
 

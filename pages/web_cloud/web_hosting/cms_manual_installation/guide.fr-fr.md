@@ -59,7 +59,7 @@ Retrouvez plus d'informations sur notre page relative au [module WordPress](/lin
 
 La communauté **Joomla!** est très grande et peut fournir de l’assistance et des services dans tous les domaines concernant ce CMS (aide, documentation, assistance technique, thèmes, etc.)
 
-Retrouvez plus d'informations sur notre page relative au [module Joomla!](https://www.ovhcloud.com/fr/web-hosting/uc-joomla-website/)
+Retrouvez plus d'informations sur notre page relative au [module Joomla!](/links/web/hosting-joomla)
 
 - Site officiel de [Joomla!](https://www.joomla.org/){.external}
 

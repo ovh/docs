@@ -63,7 +63,7 @@ Per maggiori informazioni, consulta la nostra pagina relativa al [modulo WordPre
 
 La Community **Joomla!** è molto grande e può fornire assistenza e servizi in tutti i settori del CMS (assistenza, documentazione, assistenza tecnica, temi, ecc...)
 
-Per maggiori informazioni, consulta la nostra pagina relativa a [modulo Joomla!](https://www.ovhcloud.com/it/web-hosting/uc-joomla-website/)
+Per maggiori informazioni, consulta la nostra pagina relativa a [modulo Joomla!](/links/web/hosting-joomla)
 
 - Sito ufficiale di [Joomla!](https://www.joomla.org/){.external}
 

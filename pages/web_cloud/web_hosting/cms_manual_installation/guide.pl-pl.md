@@ -63,7 +63,7 @@ Więcej informacji znajduje się na naszej stronie dotyczącej [modułu WordPres
 
 Społeczność **Joomla!** jest bardzo duża i może udzielać wsparcia i usług we wszystkich dziedzinach związanych z CMS-em (pomoc, dokumentacja, pomoc techniczna, tematy, itp.)
 
-Więcej informacji znajduje się na naszej stronie dotyczącej [modułu Joomla!](https://www.ovhcloud.com/pl/web-hosting/uc-joomla-website/)
+Więcej informacji znajduje się na naszej stronie dotyczącej [modułu Joomla!](/links/web/hosting-joomla)
 
 - Oficjalna strona [Joomla!](https://www.joomla.org/){.external}
 
