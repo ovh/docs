@@ -53,7 +53,7 @@ Poniżej znajdziesz krótki opis każdego z systemów CMS, o których mowa powy�
 
 **WordPress** jest zazwyczaj używany do tworzenia strony www lub bloga. Opiera się na technologii PHP i oferuje szeroki wachlarz narzędzi, takich jak korektor ortograficzny, wtyczki do sklepów internetowych, SEO czy bezpieczeństwo Twojej strony www.
 
-Więcej informacji znajduje się na naszej stronie dotyczącej [modułu WordPress](https://www.ovhcloud.com/pl/web-hosting/uc-wordpress-website/)
+Więcej informacji znajduje się na naszej stronie dotyczącej [modułu WordPress](/links/web/hosting-wordpress)
 
 - Oficjalna strona [WordPress](https://https://wordpress.com/){.external}
 

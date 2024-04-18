@@ -52,7 +52,7 @@ Um Ihnen bei der Auswahl des CMS zu helfen, finden Sie hier eine kurze Beschreib
 
 **WordPress** wird üblicherweise für die Erstellung einer Website oder eines Blogs verwendet. Es basiert auf PHP und enthält eine Vielzahl an Tools wie Rechtschreibprüfung und Plugins für E-Commerce, SEO sowie die Sicherheit Ihrer Website.
 
-Weitere Informationen finden Sie auf unserer Seite zum [WordPress Modul](https://www.ovhcloud.com/de/web-hosting/uc-wordpress-website/).
+Weitere Informationen finden Sie auf unserer Seite zum [WordPress Modul](/links/web/hosting-wordpress).
 
 - Offizielle Website von [WordPress](https://https://wordpress.com/){.external}
 

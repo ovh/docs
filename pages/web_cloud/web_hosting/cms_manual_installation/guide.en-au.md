@@ -49,7 +49,7 @@ To help you choose your CMS, find below a short description for each of the CMS 
 
 **WordPress** is typically used to create a website or blog. It is based on PHP technology and includes a range of tools such as a spell checker, as well as plugins for e-commerce, SEO and even your website security.
 
-You can find more information on our [WordPress module page](https://www.ovhcloud.com/en-au/web-hosting/uc-wordpress-website/). 
+You can find more information on our [WordPress module page](/links/web/hosting-wordpress). 
 
 - [Official WordPress website](https://https://wordpress.com/){.external}
 

@@ -53,7 +53,7 @@ Per aiutarti a scegliere il tuo CMS, scopri di seguito una breve descrizione per
 
 **WordPress** è generalmente utilizzato per creare un sito Web o un blog. È basato sulla tecnologia PHP e comporta una gamma di strumenti come un correttore ortografico e plugin per l'e-commerce, la SEO e la sicurezza del tuo sito Web.
 
-Per maggiori informazioni, consulta la nostra pagina relativa al [modulo WordPress](https://www.ovhcloud.com/it/web-hosting/uc-wordpress-website/)
+Per maggiori informazioni, consulta la nostra pagina relativa al [modulo WordPress](/links/web/hosting-wordpress)
 
 - Sito ufficiale di [WordPress](https://https://wordpress.com/){.external}
 
