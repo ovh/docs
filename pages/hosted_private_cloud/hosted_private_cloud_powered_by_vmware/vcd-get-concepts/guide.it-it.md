@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - The fundamentals of VCD (EN)"
 excerpt: "Discover the basic concepts of VCD"
-updated: 2024-04-16
+updated: 2024-04-18
 ---
 
 ## Objective
@@ -102,15 +102,15 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 #### Networking
 
-|             Features            	| Standard 	| Advanced 	| Prenium 	|                                                                                              Comments                                                                                              	|
-|:-------------------------------:	|:--------:	|:--------:	|:-------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
-|     Routing & Switching IPv4    	|     ✅    	|     ✅    	|    ✅    	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
-|        Public IPv4 Range        	|     ✅    	|     ✅    	|    ✅    	|                                                                                                                                                                                                    	|
-| Private Network - vRack support 	|     ✅    	|     ✅    	|    ✅    	|                                                                                                                                                                                                    	|
-|     Routing & Switching IPv6    	|          	|          	|         	|                                                                                             in Roadmap                                                                                             	|
-|               VPN               	|          	|     ✅    	|    ✅    	|                                                            L2VPN, Policy based IPsec VPN  Not Supported: SSL VPN, Routed based IPsec VPN                                                           	|
-|          Load Balancing         	|          	|         	|        	|                                                                         Not supported with native VCD network capabilities                                                                         	|
-|     Advanced Load Balancing     	|          	|          	|         	|                                                                                             in Roadmap                                                                                             	|
+| Features                        	| Standard 	| Advanced 	| Prenium 	| Comments                                                                                                                                                                                           	|
+|---------------------------------	|----------	|----------	|---------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Routing & Switching IPv4        	| ✅        	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
+| Public IPv4 Range               	| ✅        	| ✅        	| ✅       	|                                                                                                                                                                                                    	|
+| Private Network - vRack support 	| ✅        	| ✅        	| ✅       	|                                                                                                                                                                                                    	|
+| Routing & Switching IPv6        	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	|
+| VPN                             	|          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	|
+| Load Balancing                  	|          	|          	|         	| Not supported with native VCD network capabilities                                                                                                                                                 	|
+| Advanced Load Balancing         	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	|
 
 #### Security
 
