@@ -57,7 +57,7 @@ While requesting new Additional IPv6 block, it's important to note that the allo
 
 **<ins>Actions</ins>**  
 
-<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using: [this form](https://survey.ovh.com/index.php/483751?lang=en)
+<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using [this form](https://survey.ovh.com/index.php/483751?lang=en)
 
 Once your request will be processed, we will inform you via email about Additional IPv6 block delivery.
 
@@ -104,7 +104,7 @@ Delivered IPv6 block (as seen previously with /eligibleServices API call), can n
 <blockquote>
 
     Once Additional IPv6 /56 block is attributed to a vRack network, there is always first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
-    Let's check exactly which subnet is bridged::
+    Let's check exactly which subnet is bridged:
 
     <img src="https://github.com/ovh/docs/assets/60412/c3c67e28-205c-4ebe-910f-fefa5c018781" alt="API call get ipv6"/>)
 
@@ -216,7 +216,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 ```
 
 </blockquote>
-</details>    
+</details>
 
 ### Configuring an IPv6 in a vRack for routed-mode
 
@@ -235,16 +235,16 @@ Traffic comming back from such VM should use default route via first part of the
 <blockquote>
 
 To create a routed subnet, we must first define:
-</br>- subnet in CIDR notation (size between /57 and /64)
-<br/>- next-hop address (so the host's IPv6 address)
+<br/>- <b>subnet in CIDR notation</b> (size between /57 and /64)
+<br/>- <b>next-hop address</b> (so the host's IPv6 address)
 
 <br/><br/>Please note that given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
-<br/><br/>Please use the call as follows in the example below:
+<br/><br/>Example below shows how to define such subnet:
 
 <img src="images/20240418-02.png" alt="Define routed subnet"/>
 
-In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00::2
+Here, we defined routed subnet 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00::2
 
 </blockquote>
 </details>
@@ -271,7 +271,7 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 </details>
 
 <details>
-<summary><b>Automatic IP configuration (SLAAC) for a host</b></summary>
+<summary> <b>Automatic IP configuration (SLAAC) for a host</b></summary>
 <blockquote>
 
 In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
