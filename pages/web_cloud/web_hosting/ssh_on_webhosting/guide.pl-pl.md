@@ -22,7 +22,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 > [!warning]
 > 
-> Dostęp SSH do hostingu OVHcloud jest możliwy od [oferta Pro](https://www.ovhcloud.com/pl/web-hosting/compare/).
+> Dostęp SSH do hostingu OVHcloud jest możliwy od [oferta Pro](/links/web/hosting-compare).
 
 ## W praktyce
 

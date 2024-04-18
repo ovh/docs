@@ -22,7 +22,7 @@ Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storag
 
 > [!warning]
 > 
-> L'accesso SSH a un hosting Web OVHcloud è possibile a partire da [l'offerta Pro](https://www.ovhcloud.com/it/web-hosting/compare/).
+> L'accesso SSH a un hosting Web OVHcloud è possibile a partire da [l'offerta Pro](/links/web/hosting-compare).
 
 ## Procedura
 

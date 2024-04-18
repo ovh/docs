@@ -22,7 +22,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 > [!warning]
 > 
-> Es posible acceder por SSH a un alojamiento web de OVHcloud desde [el plan Pro](https://www.ovhcloud.com/es-es/web-hosting/compare/).
+> Es posible acceder por SSH a un alojamiento web de OVHcloud desde [el plan Pro](/links/web/hosting-compare).
 
 ## Procedimiento
 

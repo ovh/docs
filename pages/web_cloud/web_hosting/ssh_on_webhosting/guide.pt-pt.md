@@ -22,7 +22,7 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 
 > [!warning]
 > 
-> O acesso SSH a um alojamento web da OVHcloud é possível a partir de [oferta Pro](https://www.ovhcloud.com/pt/web-hosting/compare/).
+> O acesso SSH a um alojamento web da OVHcloud é possível a partir de [oferta Pro](/links/web/hosting-compare).
 
 ## Instruções
 
