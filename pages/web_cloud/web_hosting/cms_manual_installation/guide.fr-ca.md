@@ -75,7 +75,7 @@ Retrouvez plus d'informations sur notre page relative au [module Drupal](https:/
 
 CMS créé en 2005 et dédié à la réalisation de sites web e-commerce. En dehors des fonctionnalités courantes des boutiques en ligne, ce logiciel peut également être personnalisé avec des modules, des thèmes et des modèles. 
 
-Retrouvez plus d'informations sur notre page relative au [module PrestaShop](https://www.ovhcloud.com/fr-ca/web-hosting/uc-prestashop-website/)
+Retrouvez plus d'informations sur notre page relative au [module PrestaShop](/links/web/hosting-prestashop)
 
 - Site officiel de [PrestaShop](https://www.prestashop.com/){.external}
 

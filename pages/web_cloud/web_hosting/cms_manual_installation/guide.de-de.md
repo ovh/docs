@@ -78,7 +78,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [Drupal Modul](https://ww
 
 PrestaShop wurde 2005 für die Realisierung von E-Commerce-Websites entwickelt. Abgesehen von den gängigen Funktionen von Onlineshops kann diese Software auch mit Modulen, Themes und Templates personalisiert werden. 
 
-Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](https://www.ovhcloud.com/de/web-hosting/uc-prestashop-website/).
+Weitere Informationen finden Sie auf unserer Seite zum [PrestaShop Modul](/links/web/hosting-prestashop).
 
 - Offizielle Website von [PrestaShop](https://www.prestashop.com/){.external}
 

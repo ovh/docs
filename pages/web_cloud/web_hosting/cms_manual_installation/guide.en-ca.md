@@ -75,7 +75,7 @@ You can find more information on our [Drupal module page](https://www.ovhcloud.c
 
 A CMS created in 2005 and dedicated to building e-commerce websites. Apart from the common features of online stores, this software can also be customised with modules, themes and templates. 
 
-You can find more information on our [PrestaShop module page](https://www.ovhcloud.com/en-ca/web-hosting/uc-prestashop-website/).
+You can find more information on our [PrestaShop module page](/links/web/hosting-prestashop).
 
 - [PrestaShop official website](https://www.prestashop.com/){.external} 
 

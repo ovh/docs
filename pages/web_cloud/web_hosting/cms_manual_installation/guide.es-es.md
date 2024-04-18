@@ -79,7 +79,7 @@ Más información en nuestra página relativa a [Drupal](https://www.ovhcloud.co
 
 CMS creado en 2005 y dedicado a la creación de sitios web de e-commerce. Fuera de las funcionalidades habituales de las tiendas en linea, este software también puede personalizarse con módulos, temas y modelos. 
 
-Más información en nuestra página relativa a [PrestaShop](https://www.ovhcloud.com/es-es/web-hosting/uc-prestashop-website/)
+Más información en nuestra página relativa a [PrestaShop](/links/web/hosting-prestashop)
 
 - Sitio oficial de [PrestaShop](https://www.prestashop.com/){.external}
 

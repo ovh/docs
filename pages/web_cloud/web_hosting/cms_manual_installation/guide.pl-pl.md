@@ -79,7 +79,7 @@ Więcej informacji znajduje się na naszej stronie dotyczącej [modułu Drupal](
 
 CMS, utworzony w 2005 roku i przeznaczony do tworzenia stron e-commerce. Oprogramowanie to, oprócz popularnych funkcji sklepów internetowych, może być również spersonalizowane z modułami, szablonami i modelami. 
 
-Więcej informacji znajduje się na naszej stronie dotyczącej [modułu PrestaShop](https://www.ovhcloud.com/pl/web-hosting/uc-prestashop-website/)
+Więcej informacji znajduje się na naszej stronie dotyczącej [modułu PrestaShop](/links/web/hosting-prestashop)
 
 - Oficjalna strona [PrestaShop](https://www.prestashop.com/){.external}
 
