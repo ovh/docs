@@ -1,5 +1,5 @@
 ---
-title: "MX Plan : Configuring your email address in Outlook for Windows"
+title: "MX Plan: Configuring your email address in Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan email address in Outlook for Windows"
 updated: 2024-02-16
 ---
@@ -50,7 +50,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 >
 > Before you continue, please read the "[POP or IMAP, what is the difference?](#popimap)" section of this guide.
 >
-> In the following settings, you will see that you can enter 2 different host names for the same server (incoming or outgoing). These values refer to exactly the same server, and have been set up to facilitate typing and avoid confusion between POP, IMAP and SMTP protocols that use different ports.
+> In the following settings, you will see that you can enter 2 different host names for the same server (incoming or outgoing). These values refer to the same server, and have been set up to facilitate typing and avoid confusion between POP, IMAP and SMTP protocols that use different ports.
 
 To configure your email address, follow the steps by clicking on the tabs below.
 
@@ -61,33 +61,33 @@ To configure your email address, follow the steps by clicking on the tabs below.
 >> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
 >>
 > **Step 2**
->> Enter the password for your email address, then click `Next`{.action}.
+>> Enter the password for your email account, then click `Next`{.action}.
 >>
 >> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
 >>
 > **Step 3**
->> If Outlook was unable to automatically configure your address, this window appears. Click `Change Account`{.action} Settings. Depending on your choice (**POP** or **IMAP**), go to step 4.
+>> If Outlook was unable to automatically configure your account, this window appears. Click `Change Account Settings`{.action}. Depending on your choice (**POP** or **IMAP**), go to step 4.
 >>
 >> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
 >>
 > **Step 4 - IMAP**
 >> If you chose IMAP, enter the following parameters. If you have chosen POP, go to the "**Step 4 - POP**" tab.<br>
->> In **Incoming Mail**, type:<br>- The server **imap.mail.ovh.net** or **ssl0.ovh.net** <br>- Port **993**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- The **smtp.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
+>> In **Incoming Mail**, type:<br>- Server **imap.mail.ovh.net** or **ssl0.ovh.net** <br>- Port **993**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- Server **smtp.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
 >>
 > **Step 4 - POP**
->> In **Incoming Mail**, type:<br>- The **pop.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **995**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- The **smtp.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
+>> In **Incoming Mail**, type:<br>- Server **pop.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **995**<br>- **SSL/TLS encryption method**<br><br>In **Outgoing Mail**, type:<br>- Server **smtp.mail.ovh.net** or **ssl0.ovh.net server** <br>- Port **465**<br>- **SSL/TLS encryption method**<br><br>Click `Next`{.action} to confirm.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
 
 ### Using your email address
 
-Once you have configured your email address, you can start using it! You can now send and receive emails.
+Once you have configured your email account, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also has a web application you can use to access your email account from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### Retrieving a backup of your email address
+### Retrieving a backup of your email account
 
 If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporting-from-windows).
 
@@ -114,7 +114,7 @@ When you choose your account type, we recommend using **IMAP** to receive emails
 |Information|Description|
 |---|---|
 |Username|Enter the **full email address**|
-|Password|Enter the password for the email address|
+|Password|Enter the password for the email account|
 |Server (incoming)|pop.mail.ovh.net **or** ssl0.ovh.net|
 |Port|995|
 |Security type|SSL/TLS|
@@ -124,7 +124,7 @@ When you choose your account type, we recommend using **IMAP** to receive emails
 |Information|Description|
 |---|---|
 |Username|Enter the **full email address**|
-|Password|Enter the password for the email address|
+|Password|Enter the password for the email account|
 |Server (incoming)|imap.mail.ovh.net **or** ssl0.ovh.net|
 |Port|993|
 |Security type|SSL/TLS|
@@ -136,32 +136,32 @@ For sending emails, if you need to enter the **SMTP** settings manually in your 
 |Information|Description|
 |---|---|
 |Username|Enter the **full email address**|
-|Password|Enter the password for the email address|
+|Password|Enter the password for the email account|
 |Server (outgoing)|smtp.mail.ovh.net **or** ssl0.ovh.net|
 |Port|465|
 |Security type|SSL/TLS|
 
 ### POP or IMAP, what's the difference? <a name="popimap"></a>
 
-When you set up your email address manually, your email client asks if you want to use **POP** (**P**ost **O**ffice **P**rotocol) or **IMAP**(**I**nternet **M**essage **A**ccess **P**rotocol). To understand this properly, you need to understand the role of POP and IMAP protocols in your email address configuration.
+When you set up your email account manually, your email client asks if you want to use **POP** (**P**ost **O**ffice **P**rotocol) or **IMAP**(**I**nternet **M**essage **A**ccess **P**rotocol). To understand this properly, you need to understand the role of POP and IMAP protocols in your email account configuration.
 
-When you configure your mail client, you must enter the information from the **incoming server** to receive the emails, and the **outgoing server** to send the emails. To send emails, there is no choice, the **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) is used. For the reception, you will have the choice between **POP** or **IMAP**.
+When you configure your mail client, you must enter the information from the **incoming server** to receive the emails, and the **outgoing server** to send the emails. To send emails, there is no choice, **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol) is used. For the reception, you will have the choice between **POP** or **IMAP**.
 
 ![mxplan](images/mxplan-popimap-01.png){.thumbnail}
 
 To understand the difference between POP and IMAP, we will detail the elements that make up the processing of your incoming emails:
 
-1. **Your device**: a computer, smartphone or tablet. This is your consultation support.
-2. **Your email client**: an application dedicated to managing your emails. Your choice will determine the level of usability and functionality you will need to view your emails.
-3. **The receiving protocol**: a choice that determines how you check emails on your device. This affects other devices that access the same email account.
-    - **IMAP**: Your email client queries the email server and downloads the emails to your device. When you view an unread email, the server marks it as "read" by default. Other devices configured in IMAP will be able to check this status and view this email until it has been deleted on one of the devices.
-    - **POP**: Your email client queries the email server and downloads the emails to your device. By default, once the email is downloaded to your device, the message is deleted from the server. As a result, other devices connected to this email address will not be able to view this email.
+1. **Your device**: A computer, smartphone or tablet running an email client.
+2. **Your email client**: A software used to manage email accounts and their content. Your choice will determine the level of usability and functionality you will need to view your emails.
+3. **The receiving protocol**: The protocol setting determines how your client retrieves emails. This affects other email clients that access the same email account.
+    - **IMAP**: Your email client queries the email server and downloads the emails to your device. When you view an unread email, the server marks it as "read" by default. Other clients configured in IMAP will be able to check this status and view this email until it has been deleted by one of the clients.
+    - **POP**: Your email client queries the email server and downloads the emails to your device. By default, once the email is downloaded to your device, the message is deleted from the server. As a result, other devices connected to this email account will not be able to view this email.
 
 ![mxplan](images/mxplan-popimap-02.png){.thumbnail}
 
 > [!primary]
 >
-> This description is a summary, it represents the standard operation of these two protocols. You can set the POP so that emails are not deleted when you check your emails. Our aim is to describe the native functioning of these two protocols.
+> This description is a summary of the standard operation of these two protocols. You can set up POP to not delete emails from the server when you retrieve them. Our aim is to describe the native functioning of these two protocols.
 
 ## Go further <a name="gofurther"></a>
 
