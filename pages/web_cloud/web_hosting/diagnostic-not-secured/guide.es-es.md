@@ -81,7 +81,7 @@ En la pestaña `Información general`{.action} de su alojamiento OVHcloud, consu
 
 #### Escenario 1: su alojamiento no contiene certificado SSL
 
-Active un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/) en su alojamiento siguiendo las instrucciones de este [guía](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Active un [certificado SSL](/links/web/hosting-options-ssl) en su alojamiento siguiendo las instrucciones de este [guía](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Escenario 2: el certificado SSL de su alojamiento no funciona
 

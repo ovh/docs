@@ -10,13 +10,13 @@ updated: 2024-02-26
 
 ## Objetivo
 
-Los planes de hosting de OVHcloud le permiten disfrutar de un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/). Este último permite que uno o varios de sus sitios web dispongan de una conexión segura, por lo que es posible acceder a ellos mediante el protocolo *HTTPS*. Para ello, es necesario realizar diversas acciones antes de que los sitios web puedan utilizar esta conexión segura.
+Los planes de hosting de OVHcloud le permiten disfrutar de un [certificado SSL](/links/web/hosting-options-ssl). Este último permite que uno o varios de sus sitios web dispongan de una conexión segura, por lo que es posible acceder a ellos mediante el protocolo *HTTPS*. Para ello, es necesario realizar diversas acciones antes de que los sitios web puedan utilizar esta conexión segura.
 
 **Decubra cómo activar un certificado SSL en un sitio web HTTPS.**
 
 ## Requisitos
 
-- Tener un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} instalado en su [alojamiento web de OVHcloud](/links/web/hosting){.external}.
+- Tener un [certificado SSL](/links/web/hosting-options-ssl){.external} instalado en su [alojamiento web de OVHcloud](/links/web/hosting){.external}.
 - Tener al menos un sitio web instalado y accesible en su alojamiento web de OVHcloud.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
 

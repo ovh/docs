@@ -34,7 +34,7 @@ También puede [eliminar el certificado SSL de un alojamiento web](#deletessl). 
 
 ### 1. Activar un certificado SSL en un multisitio <a name="multisite"></a>
 
-Según el [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} que quiera contratar, puede activar una conexión SSL segura en uno o más multisitios. Para ello, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
+Según el [certificado SSL](/links/web/hosting-options-ssl){.external} que quiera contratar, puede activar una conexión SSL segura en uno o más multisitios. Para ello, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
 
 Se mostrará una tabla que contiene todos los dominios añadidos al alojamiento web. La columna SSL muestra el estado de activación de las conexiones SSL seguras en los multisitios.
 
@@ -89,10 +89,10 @@ Antes de realizar esta configuración, asegúrese de que ha realizado correctame
 >
 > Para más información, consulte nuestras guías [sobre la configuración de un registro multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite) o [sobre la configuración de una zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 
-Existen diversas fórmulas para disponer de un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} en un alojamiento web de OVHcloud:
+Existen diversas fórmulas para disponer de un [certificado SSL](/links/web/hosting-options-ssl){.external} en un alojamiento web de OVHcloud:
 
-- certificado SSL gratuito Let's Encrypt, [incluido con los planes de hosting compatibles](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external};
-- certificado SSL de pago, [disponible como opción en los planes de hosting compatibles](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external};
+- certificado SSL gratuito Let's Encrypt, [incluido con los planes de hosting compatibles](/links/web/hosting-options-ssl){.external};
+- certificado SSL de pago, [disponible como opción en los planes de hosting compatibles](/links/web/hosting-options-ssl){.external};
 - importación de un certificado SSL contratado con otro proveedor.
 
 Para activar el certificado, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}. En la pestaña Certificado SSL, aparecerá la indicación "No", indicando que no hay ningún certificado SSL configurado ni instalado en el alojamiento web.
@@ -123,7 +123,7 @@ La configuración del certificado podría tardar desde unos minutos hasta varios
 
 > [!primary]
 >
-> Esta operación solo se aplica a los certificados SSL gratuitos Let's Encrypt [incluidos con un plan de hosting compatible](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/) que permiten activar una conexión SSL segura para varios multisitios.
+> Esta operación solo se aplica a los certificados SSL gratuitos Let's Encrypt [incluidos con un plan de hosting compatible](/links/web/hosting-options-ssl) que permiten activar una conexión SSL segura para varios multisitios.
 >
 
 Una vez que haya activado la conexión segura SSL en uno o más multisitios, su estado cambiará a "Por generar". Es necesario generar (o regenerar) el certificado SSL de un alojamiento web para poder añadir dominios a dicho certificado.

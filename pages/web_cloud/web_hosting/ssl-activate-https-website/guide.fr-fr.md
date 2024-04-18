@@ -6,13 +6,13 @@ updated: 2024-02-26
 
 ## Objectif
 
-Grâce à votre hébergement web OVHcloud, vous pouvez bénéficier d'un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/). Ce dernier permet à un ou plusieurs de vos sites internet de disposer d'une connexion sécurisée en étant par conséquent accessibles en *HTTPS*. Pour cela, plusieurs étapes sont nécessaires avant que vos sites puissent utiliser cette connexion sécurisée.
+Grâce à votre hébergement web OVHcloud, vous pouvez bénéficier d'un [certificat SSL](/links/web/hosting-options-ssl). Ce dernier permet à un ou plusieurs de vos sites internet de disposer d'une connexion sécurisée en étant par conséquent accessibles en *HTTPS*. Pour cela, plusieurs étapes sont nécessaires avant que vos sites puissent utiliser cette connexion sécurisée.
 
 **Découvrez comment passer votre site web en HTTPS après avoir activé un certificat SSL.**
 
 ## Prérequis
 
-- Disposer d'un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/){.external} installé sur votre [hébergement web OVHcloud](/links/web/hosting){.external}.
+- Disposer d'un [certificat SSL](/links/web/hosting-options-ssl){.external} installé sur votre [hébergement web OVHcloud](/links/web/hosting){.external}.
 - Disposer d'au moins un site web installé et accessible sur votre hébergement web OVHcloud.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Web Cloud`{.action}.
 

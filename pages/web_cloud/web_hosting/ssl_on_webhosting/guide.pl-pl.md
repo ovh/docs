@@ -34,7 +34,7 @@ Możesz również [usunąć certyfikat SSL na hostingu](#deletessl). **Pamiętaj
 
 ### 1. Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite <a name="multisite"></a>
 
-W zależności od [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}, który chcesz zamówić, możesz aktywować bezpieczne połączenie SSL na jednej lub kilku stronach podpiętych w opcji MultiSite. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
+W zależności od [certyfikatu SSL](/links/web/hosting-options-ssl){.external}, który chcesz zamówić, możesz aktywować bezpieczne połączenie SSL na jednej lub kilku stronach podpiętych w opcji MultiSite. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
 
 Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
 
@@ -89,10 +89,10 @@ Przed przeprowadzeniem tej konfiguracji upewnij się, że poprzedni etap [aktywa
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami [dotyczącymi konfiguracji wpisu w opcji MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) lub [konfiguracji strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
 
-Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}:
+Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb](/links/web/hosting-options-ssl){.external}:
 
-- bezpłatny certyfikat SSL Let's Encrypt [zawarty w ofercie kompatybilnego hostingu](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external};
-- płatny certyfikat SSL [w opcji z kompatybilnym hostingiem](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external};
+- bezpłatny certyfikat SSL Let's Encrypt [zawarty w ofercie kompatybilnego hostingu](/links/web/hosting-options-ssl){.external};
+- płatny certyfikat SSL [w opcji z kompatybilnym hostingiem](/links/web/hosting-options-ssl){.external};
 - import certyfikatu SSL uzyskanego we własnym zakresie.
 
 Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji `Informacje ogólne`{.action}. W zakładce „Certyfikat SSL” powinna pojawić się informacja „Nie” wskazująca, że na Twoim hostingu nie został zainstalowany żaden certyfikat SSL.
@@ -123,7 +123,7 @@ Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności
 
 > [!primary]
 >
-> Operacja ta dotyczy wyłącznie certyfikatów SSL Let's Encrypt [zawartych w ofercie kompatybilnego hostingu](https://www.ovhcloud.com/pl/web-hosting/options/ssl/) umożliwiających aktywację bezpiecznego połączenia SSL dla kilku stron podpiętych w opcji MultiSite.
+> Operacja ta dotyczy wyłącznie certyfikatów SSL Let's Encrypt [zawartych w ofercie kompatybilnego hostingu](/links/web/hosting-options-ssl) umożliwiających aktywację bezpiecznego połączenia SSL dla kilku stron podpiętych w opcji MultiSite.
 >
 
 Po aktywowaniu bezpiecznego połączenia SSL na jednej lub kilku stronach podpiętych w opcji MultiSite status wskazuje: „Do wygenerowania”. Operacja ta konieczna jest, aby dodać do certyfikatu SSL na Twoim hostingu wybraną domenę lub domeny.

@@ -76,7 +76,7 @@ In the `General information`{.action} tab of the concerned hosting plan within y
 
 #### Scenario 1: your Web Hosting plan does not contain any SSL certificate
 
-Activate an [SSL certificate](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/) on your Web Hosting plan by following the instructions in this [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Activate an [SSL certificate](/links/web/hosting-options-ssl) on your Web Hosting plan by following the instructions in this [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Scenario 2: the SSL certificate on your Web Hosting plan does not work
 

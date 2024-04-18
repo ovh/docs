@@ -10,7 +10,7 @@ updated: 2024-02-26
 
 ## Ziel
 
-Mit Ihrem OVHcloud Webhosting verfügen Sie über ein [SSL-Zertifikat](https://www.ovhcloud.com/de/web-hosting/options/ssl/). Mit diesem können Sie eine oder mehrere Ihrer Websites über eine gesicherte Verbindung mittels *HTTPS* erreichbar machen. Bevor Ihre Websites diese sichere Verbindung verwenden können, sind einige Schritte erforderlich.
+Mit Ihrem OVHcloud Webhosting verfügen Sie über ein [SSL-Zertifikat](/links/web/hosting-options-ssl). Mit diesem können Sie eine oder mehrere Ihrer Websites über eine gesicherte Verbindung mittels *HTTPS* erreichbar machen. Bevor Ihre Websites diese sichere Verbindung verwenden können, sind einige Schritte erforderlich.
 
 **Diese Anleitung erklärt, wie Sie Ihre Website nach der Aktivierung eines SSL-Zertifikats auf HTTPS umstellen.**
 

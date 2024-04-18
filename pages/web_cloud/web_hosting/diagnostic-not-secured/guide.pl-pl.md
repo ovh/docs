@@ -81,7 +81,7 @@ W zakładce `Informacje ogólne`{.action} Twojego hostingu OVHcloud sprawdź sek
 
 #### Scenariusz 1: Twój hosting nie zawiera certyfikatu SSL
 
-Włącz [certyfikat SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/) na Twoim hostingu postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Włącz [certyfikat SSL](/links/web/hosting-options-ssl) na Twoim hostingu postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Scenariusz 2: certyfikat SSL nie działa
 

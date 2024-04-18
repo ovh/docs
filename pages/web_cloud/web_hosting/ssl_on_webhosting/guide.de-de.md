@@ -34,7 +34,7 @@ Sie können auch [SSL-Zertifikat auf einem Webhosting löschen](#deletessl). **B
 
 ### 1. SSL-Zertifikat für eine Multisite aktivieren <a name="multisite"></a>
 
-Je nach Art des [SSL-Zertifikats](https://www.ovhcloud.com/de/web-hosting/options/ssl/){.external}, das Sie bestellen möchten, können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
+Je nach Art des [SSL-Zertifikats](/links/web/hosting-options-ssl){.external}, das Sie bestellen möchten, können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
 
 Die angezeigte Tabelle listet alle Domains auf, die Ihrem Webhosting zugewiesen sind. Die Spalte "SSL" zeigt Ihnen den Aktivierungsstatus der gesicherten SSL-Verbindungen für Ihre Multisites.
 
@@ -123,7 +123,7 @@ Je nach Art des gewählten Zertifikats kann die Konfiguration wenige Minuten bis
 
 > [!primary]
 >
-> Dieser Vorgang gilt nur für kostenlose Let's Encrypt SSL-Zertifikate [inklusive bei einem kompatiblen Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/options/ssl/), mit denen eine sichere SSL-Verbindung für mehrere Multisites aktiviert werden kann.
+> Dieser Vorgang gilt nur für kostenlose Let's Encrypt SSL-Zertifikate [inklusive bei einem kompatiblen Webhosting Angebot](/links/web/hosting-options-ssl), mit denen eine sichere SSL-Verbindung für mehrere Multisites aktiviert werden kann.
 >
 
 Wenn Sie eine gesicherte SSL-Verbindung für eine oder mehrere Ihrer Multisites aktiviert haben, zeigt der Status "Zu erstellen" an. Diese Neuerstellung ist unerlässlich, um die betreffenden Domainnamen zu Ihrem SSL-Zertifikat hinzufügen zu können.

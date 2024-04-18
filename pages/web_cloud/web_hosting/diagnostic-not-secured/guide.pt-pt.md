@@ -81,7 +81,7 @@ No separador `Informações gerais`{.action} do seu alojamento OVHcloud, verifiq
 
 #### Cenário 1: o seu alojamento não contém um certificado SSL
 
-Ative um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/) no seu alojamento, seguindo as instruções deste [guia](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Ative um [certificado SSL](/links/web/hosting-options-ssl) no seu alojamento, seguindo as instruções deste [guia](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Cenário 2: o certificado SSL do seu alojamento não funciona
 

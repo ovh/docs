@@ -6,13 +6,13 @@ updated: 2024-02-28
 
 ## Objective
 
-With an OVHcloud Web Hosting plan, you can get an [SSL certificate](https://www.ovhcloud.com/asia/web-hosting/options/ssl/). This allows one or more of your websites to have a secure connection by being accessible in *HTTPS*. To do this, you will need to follow several steps before your websites can use this secure connection.
+With an OVHcloud Web Hosting plan, you can get an [SSL certificate](/links/web/hosting-options-ssl). This allows one or more of your websites to have a secure connection by being accessible in *HTTPS*. To do this, you will need to follow several steps before your websites can use this secure connection.
 
 **This guide explains how to switch your website to HTTPS after activating an SSL certificate.**
 
 ## Requirements
 
-- An [SSL certificate](https://www.ovhcloud.com/asia/web-hosting/options/ssl/){.external} set up on your [OVHcloud Web Hosting plan](/links/web/hosting){.external}
+- An [SSL certificate](/links/web/hosting-options-ssl){.external} set up on your [OVHcloud Web Hosting plan](/links/web/hosting){.external}
 - At least one website set up and accessible via your OVHcloud Web Hosting plan
 - Access to the [OVHcloud Control Panel](/links/manager){.external}, part `Web Cloud`{.action}
 

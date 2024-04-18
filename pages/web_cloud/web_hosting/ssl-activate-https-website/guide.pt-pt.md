@@ -6,13 +6,13 @@ updated: 2024-02-26
 
 ## Objetivo
 
-Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/). Este último permite dispor de uma ligação segura a um ou vários dos seus websites, estando, por conseguinte, acessíveis através de *HTTPS*. Para isso, são necessárias várias etapas para que os seus sites possam utilizar esta ligação segura.
+Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SSL](/links/web/hosting-options-ssl). Este último permite dispor de uma ligação segura a um ou vários dos seus websites, estando, por conseguinte, acessíveis através de *HTTPS*. Para isso, são necessárias várias etapas para que os seus sites possam utilizar esta ligação segura.
 
 **Saiba como passar o seu website para HTTPS após ter ativado um certificado SSL.**
 
 ## Requisitos
 
-- Dispor de um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external} instalado no seu [alojamento web OVHcloud](/links/web/hosting){.external}.
+- Dispor de um [certificado SSL](/links/web/hosting-options-ssl){.external} instalado no seu [alojamento web OVHcloud](/links/web/hosting){.external}.
 - Ter pelo menos um website instalado e acessível no alojamento web da OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
 

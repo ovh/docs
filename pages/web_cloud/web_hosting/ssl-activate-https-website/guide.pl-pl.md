@@ -10,13 +10,13 @@ updated: 2024-02-26
 
 ## Wprowadzenie
 
-Dzięki hostingowi OVHcloud możesz uzyskać [certyfikat SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/). Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą *HTTPS*. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
+Dzięki hostingowi OVHcloud możesz uzyskać [certyfikat SSL](/links/web/hosting-options-ssl). Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą *HTTPS*. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
 
 **Dowiedz się, jak aktywować certyfikat SSL na Twojej stronie WWW za pomocą protokołu HTTPS.**
 
 ## Wymagania początkowe
 
-- Posiadanie [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external} zainstalowanego na [hostingu OVHcloud](/links/web/hosting){.external}.
+- Posiadanie [certyfikatu SSL](/links/web/hosting-options-ssl){.external} zainstalowanego na [hostingu OVHcloud](/links/web/hosting){.external}.
 - Posiadanie co najmniej jednej strony WWW zainstalowanej i dostępnej na Twoim hostingu OVHcloud.
 - Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, sekcja `Web Cloud`{.action}.
 

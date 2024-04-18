@@ -77,7 +77,7 @@ Dans l'onglet `Informations générales`{.action} de votre hébergement OVHcloud
 
 #### Scénario 1 : votre hébergement ne contient pas de certificat SSL
 
-Activez un [certificat SSL](https://www.ovhcloud.com/fr/web-hosting/options/ssl/) sur votre hébergement en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Activez un [certificat SSL](/links/web/hosting-options-ssl) sur votre hébergement en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Scénario 2 : le certificat SSL de votre hébergement ne fonctionne pas
 

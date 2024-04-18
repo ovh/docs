@@ -34,7 +34,7 @@ Também pode [eliminar o certificado SSL num alojamento web](#deletessl). **Tenh
 
 ### 1. Ativar um certificado SSL num multisite <a name="multisite"></a>
 
-Em função do [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external} que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
+Em função do [certificado SSL](/links/web/hosting-options-ssl){.external} que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
 
 Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna "SSL" mostra-lhe o estado de ativação das ligações SSL seguras nos seus multi-sites.
 
@@ -89,10 +89,10 @@ Antes de realizar esta configuração, certifique-se de que a etapa anterior de 
 >
 > Para mais informações, consulte os nossos manuais [sobre a configuração de uma entrada multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) ou sobre [a configuração de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 
-O alojamento web da OVHcloud permite-lhe ativar um [certificado SSL graças a várias soluções](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}:
+O alojamento web da OVHcloud permite-lhe ativar um [certificado SSL graças a várias soluções](/links/web/hosting-options-ssl){.external}:
 
-- um certificado SSL gratuito Let's Encrypt, [incluído num plano de alojamento web compatível](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external};
-- um certificado SSL pago, [como opção num plano de alojamento web compatível](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external};
+- um certificado SSL gratuito Let's Encrypt, [incluído num plano de alojamento web compatível](/links/web/hosting-options-ssl){.external};
+- um certificado SSL pago, [como opção num plano de alojamento web compatível](/links/web/hosting-options-ssl){.external};
 - a importação de um certificado SSL encomendado junto de outro fornecedor.
 
 Para ativar o certificado, aceda à [Área de Cliente OVHcloud](/links/manager){.external}e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Clique no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve surgir a menção “Não”, o que indica que não há nenhum certificado instalado no alojamento web. 
@@ -123,7 +123,7 @@ A configuração do certificado pode demorar alguns minutos ou vários dias, dep
 
 > [!primary]
 >
-> Esta operação aplica-se apenas aos certificados SSL gratuitos Let's Encrypt [incluído num plano de alojamento web compatível](https://www.ovhcloud.com/pt/web-hosting/options/ssl/) que permitem ativar uma ligação SSL segura para vários multi-sites.
+> Esta operação aplica-se apenas aos certificados SSL gratuitos Let's Encrypt [incluído num plano de alojamento web compatível](/links/web/hosting-options-ssl) que permitem ativar uma ligação SSL segura para vários multi-sites.
 >
 
 Depois de ativar uma ligação SSL segura num ou vários dos seus multisites, o estado indica “A gerar / atualizar”. Esta geração é essencial para poder adicionar ao certificado SSL do seu alojamento web.
