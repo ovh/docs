@@ -117,7 +117,7 @@ Tem ao dispor duas formas de efetuar a instalação do seu projeto. Repita o pro
 
 #### 1. Utilizar os nossos módulos em 1 clique
 
-Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ainda por personalizar (tema, textos, etc.). A OVHcloud disponibiliza quatro com os módulos em 1 clique, a descobrir na página [Criar um site com os módulos em 1 clique](https://www.ovhcloud.com/pt/web-hosting/uc-website/){.external}.
+Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ainda por personalizar (tema, textos, etc.). A OVHcloud disponibiliza quatro com os módulos em 1 clique, a descobrir na página [Criar um site com os módulos em 1 clique](/links/web/hosting-website){.external}.
 
 Se optar pela utilização dos nossos módulos em 1 clique, e ainda posicionado no alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} em causa, clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}. Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
 

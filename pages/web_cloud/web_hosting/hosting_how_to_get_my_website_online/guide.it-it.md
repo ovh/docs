@@ -28,7 +28,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 
 Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa fare con il sito Web? Come pubblicarlo? Gli hosting OVHcloud offrono numerose opzioni: 
 
-- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud ["Creare un sito Internet con i moduli in 1 click"](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}. Per maggiori informazioni, consulta la guida ["Installare il proprio sito con i moduli in 1 click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud ["Creare un sito Internet con i moduli in 1 click"](/links/web/hosting-website){.external}. Per maggiori informazioni, consulta la guida ["Installare il proprio sito con i moduli in 1 click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **creare un sito chiavi in mano da installare manualmente**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...) da installare sul proprio hosting Web OVHcloud.
 

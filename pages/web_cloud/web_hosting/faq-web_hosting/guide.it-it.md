@@ -32,7 +32,7 @@ Accedi allo Spazio Cliente:
 
 Per pubblicare online il tuo sito, è necessario disporre di un [dominio](/links/web/domains) che corrisponda all'indirizzo Web da cui il tuo sito sarà accessibile (ad esempio: *miodominio.com*). Ti servirà anche un [hosting](/links/web/hosting) su cui installare il tuo sito.
 
-Per seguire gli step necessari alla costruzione del tuo sito, consulta [questa pagina](https://www.ovhcloud.com/it/web-hosting/uc-website/) e segui le istruzioni contenute nella guida [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
+Per seguire gli step necessari alla costruzione del tuo sito, consulta [questa pagina](/links/web/hosting-website) e segui le istruzioni contenute nella guida [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 **Consigli e suggerimenti**: Per aiutarti a creare il tuo sito, OVHcloud ti permette di installare sul tuo hosting un software di assistenza alla creazione di siti (WordPress, PrestaShop, Joomla! e Drupal), grazie alla funzionalità [CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

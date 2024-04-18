@@ -113,7 +113,7 @@ There are two ways of setting up your project. Once you have picked the techniqu
 
 #### 1. Use our 1-click modules.
 
-By using our 1-click modules, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more. OVHcloud offers four structures with its 1-click modules. You can find out more about them by browsing our webpage on [Creating a website with 1-click modules](https://www.ovhcloud.com/en-gb/web-hosting/uc-website/){.external}.
+By using our 1-click modules, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more. OVHcloud offers four structures with its 1-click modules. You can find out more about them by browsing our webpage on [Creating a website with 1-click modules](/links/web/hosting-website){.external}.
 
 If your choice of method involves using our 1-click modules, stay on the section for the [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) hosting plan concerned, click on the  `1-click modules`{.action} tab, then click `Add a module`{.action}. You can then choose whether to install it in ‘basic’ mode (non-customisable), or ‘advanced’ mode (customisable).
 

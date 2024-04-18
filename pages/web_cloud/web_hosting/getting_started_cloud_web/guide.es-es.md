@@ -115,7 +115,7 @@ Existen dos formas de instalar un proyecto. Si quiere instalar más de uno, debe
 
 #### 5.1. Utilizar los módulos en un clic
 
-Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic, que puede consultar en la página [Crear un sitio web con los CMS más populares](https://www.ovhcloud.com/es-es/web-hosting/uc-website/){.external}.
+Los módulos en un clic permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.). OVHcloud ofrece cuatro módulos en un clic, que puede consultar en la página [Crear un sitio web con los CMS más populares](/links/web/hosting-website){.external}.
 
 Si elige esta opción, una vez seleccionado el alojamiento Cloud Web en el área de cliente de OVHcloud, abra la pestaña `Módulos en un clic`{.action} y seleccione `Añadir un módulo`{.action}. A continuación podrá comenzar la instalación en modo estándar (no personalizable) o avanzado (que permite personalizar determinados elementos).
 

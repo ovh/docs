@@ -32,7 +32,7 @@ Po zalogowaniu się do Panelu klienta:
 
 Aby uruchomić Twoją stronę WWW w Internecie, musisz posiadać [Domeny](/links/web/domains) odpowiadającą adresowi WWW, z którego będzie ona dostępna (na przykład: *mojadomena.com*). Będziesz również potrzebował [hostingu](/links/web/hosting), na którym będziesz mógł zainstalować Twoją stronę.
 
-Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodnikiem](https://www.ovhcloud.com/pl/web-hosting/uc-website/), a następnie postępuj zgodnie z instrukcjami zawartymi w przewodniku [Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
+Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodnikiem](/links/web/hosting-website), a następnie postępuj zgodnie z instrukcjami zawartymi w przewodniku [Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 **Wskazówki i porady**: OVHcloud, aby pomóc Ci w zbudowaniu strony WWW, modułu PrestaShop, Joomla! i Drupal, pozwala na zainstalowanie na Twoim hostingu oprogramowania do wspomagania tworzenia stron WordPress, PrestaShop, Joomla! i Drupal. Jest to możliwe dzięki funkcji [Moduły za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 

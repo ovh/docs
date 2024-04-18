@@ -28,7 +28,7 @@ Once you have logged in to your Control Panel:
 
 To put your website online, you need to have a [domain name](/links/web/domains) corresponding to the web address from which your website will be accessible (e.g.: *mydomain.com*). You will also need a [Web Hosting](/links/web/hosting) plan to set up your website on.
 
-To follow the steps required to build your website, go to this [page](https://www.ovhcloud.com/en-sg/web-hosting/uc-website/), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
+To follow the steps required to build your website, go to this [page](/links/web/hosting-website), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 **Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, PrestaShop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules) feature.
 

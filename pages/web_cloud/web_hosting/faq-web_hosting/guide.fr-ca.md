@@ -28,7 +28,7 @@ Une fois connecté à votre espace client :
 
 Pour mettre en ligne votre site, vous devez disposer d'un [nom de domaine](/links/web/domains) qui correspondra à l'adresse Web depuis laquelle votre site sera accessible (exemple : *mondomaine.com*). Vous aurez également besoin d'un [hébergement](/links/web/hosting) sur lequel installer votre site.
 
-Pour suivre les étapes nécessaires à la construction de votre site, consultez cette [page](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/) puis suivez les instructions du guide [Mettre en ligne un site Internet sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
+Pour suivre les étapes nécessaires à la construction de votre site, consultez cette [page](/links/web/hosting-website) puis suivez les instructions du guide [Mettre en ligne un site Internet sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 **Trucs et Astuces** : Pour vous aider à créer votre site, OVHcloud vous permet d'installer sur votre hébergement un logiciel d'assistance à la création de sites (WordPress, PrestaShop, Joomla! et Drupal), grâce la fonctionnalité [Modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
