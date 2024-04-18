@@ -66,7 +66,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 |:------------:|:---------------------------:|:------------:|
 | VCD Standard |              -              |       -      |
 | VCD Advanced |              ✅              |       -      |
-| VCD Prenium  |              ✅              |       ✅      |
+| VCD Premium  |              ✅              |       ✅      |
 
 #### Cluster Management
 
@@ -83,18 +83,18 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 ##### Virtual Machine Management
 
-|         Features        	| Standard 	| Advanced 	| Prenium 	|                                    Comments                                   	|
+|         Features        	| Standard 	| Advanced 	| Premium 	|                                    Comments                                   	|
 |:-----------------------:	|:--------:	|:--------:	|:-------:	|:-----------------------------------------------------------------------------:	|
 |        Create VM        	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
 | Manage Virtual Machines 	|     ✅    	|     ✅    	|    ✅    	|                  Start, Stop, Suspend, Delete, Copy/clone...                  	|
 |      Affinity Rules     	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
 |   Anti-Affinity Rules   	|     ✅    	|     ✅    	|    ✅    	|                                                                               	|
-|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged sofware solutions  	                    |
+|    VMware Marketplace   	|     ✅    	|     ✅     |    ✅     	| Allowed to deploy VMs with pre-packaged software solutions  	                    |
 |    Create VM catalogs   	|     ✅    	|     ✅     |    ✅     	|                     Build your own catalog of VM templates                    	|
 
 #### Organisation / Virtual Datacenter Management
 
-|               Features              	| Standard 	| Advanced 	| Prenium 	|                                                 Comments                                                	|
+|               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
 |:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
 |           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a VCD Organisation Manage roles/permissions for Organisation users           	|
 | Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
@@ -102,7 +102,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 #### Networking
 
-|             Features            	| Standard 	| Advanced 	| Prenium 	|                                                                                              Comments                                                                                              	|
+|             Features            	| Standard 	| Advanced 	| Premium 	|                                                                                              Comments                                                                                              	|
 |:-------------------------------:	|:--------:	|:--------:	|:-------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
 |     Routing & Switching IPv4    	|     ✅    	|     ✅    	|    ✅    	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
 |        Public IPv4 Range        	|     ✅    	|     ✅    	|    ✅    	|                                                                                                                                                                                                    	|
@@ -114,7 +114,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 #### Security
 
-|       Features       	| Standard 	| Advanced 	| Prenium 	|  Comments  	|
+|       Features       	| Standard 	| Advanced 	| Premium 	|  Comments  	|
 |:--------------------:	|:--------:	|:--------:	|:-------:	|:----------:	|
 |   Stateful Firewall  	|        	|     ✅    	|    ✅    	|            	|
 | Distributed Firewall 	|        	|     ✅    	|    ✅    	|            	|
@@ -124,7 +124,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 #### Data protection
 
-|           Features           	| Standard 	| Advanced 	| Prenium 	|           Comments          	|
+|           Features           	| Standard 	| Advanced 	| Premium 	|           Comments          	|
 |:----------------------------:	|:--------:	|:--------:	|:-------:	|:---------------------------:	|
 |      Backup as a Service     	|     ✅    	|     ✅    	|    ✅    	| Veeam Managed Backup Option 	|
 |   Virtual Machine Snapshots  	|     ✅    	|     ✅    	|    ✅    	|           1 per VM          	|
@@ -132,14 +132,14 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 #### Storage
 
-|              Features             	| Standard 	| Advanced 	| Prenium 	| Comments 	|
+|              Features             	| Standard 	| Advanced 	| Premium 	| Comments 	|
 |:---------------------------------:	|:--------:	|:--------:	|:-------:	|:--------:	|
 |           NFS datastore           	|     ✅    	|     ✅    	|    ✅    	|          	|
 | High performance datastore (vSAN) 	|          	|          	|    ✅    	|          	|
 
 #### Monitoring
 
-|     Features    	| Standard 	| Advanced 	| Prenium 	|                      Comments                     	|
+|     Features    	| Standard 	| Advanced 	| Premium 	|                      Comments                     	|
 |:---------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------:	|
 | Aria operations 	|     ✅    	|     ✅    	|    ✅    	| Resource management Metrics, Dashboard, Reporting 	|
 
