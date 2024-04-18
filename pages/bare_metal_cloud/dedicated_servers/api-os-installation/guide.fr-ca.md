@@ -114,14 +114,6 @@ Exemple de valeurs pour la clef `inputs`{.action} pour Windows Server 2022 Stand
                 "en-us",
                 "fr-fr"
             ]
-        },
-        {
-            "default": "false",
-            "mandatory": false,
-            "type": "boolean",
-            "name": "useSpla",
-            "description": "Use your SPLA (your own product key that you may have added for this server)",
-            "enum": []
         }
     ]
 }
@@ -266,10 +258,6 @@ Exemple d'un payload pour installer Windows Server 2022 Standard (Core) en fran√
     {
       "key": "language",
       "value": "fr-fr"
-    },
-    {
-      "key": "useSpla",
-      "value": "true"
     }
   ]
 }
