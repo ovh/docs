@@ -247,7 +247,7 @@ Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, ta
 
 > [!primary]
 >
-> OVHcloud ofrece varios [productos CDN](https://www.ovhcloud.com/es/web-hosting/options/). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](/links/manager) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud ofrece varios [productos CDN](/links/web/hosting-options). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](/links/manager) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimice su base de datos

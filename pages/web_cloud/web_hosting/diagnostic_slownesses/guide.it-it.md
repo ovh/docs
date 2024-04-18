@@ -249,7 +249,7 @@ Per diminuire il flusso di richieste a ogni caricamento delle tue pagine, puoi a
 
 > [!primary]
 >
-> OVHcloud propone diverse [offerte CDN](https://www.ovhcloud.com/it/web-hosting/options/). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud propone diverse [offerte CDN](/links/web/hosting-options). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - ottimizza il tuo database

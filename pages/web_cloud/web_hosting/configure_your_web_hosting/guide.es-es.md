@@ -271,7 +271,7 @@ Personalice los valores de las variables según la configuración que quiera uti
 |---|---|
 |app.engine|Permite modificar [el motor PHP](#php-runtime) utilizado por el alojamiento. Introduzca **php** para activar el acelerador PHP-FPM y **phpcgi** para desactivarlo.|
 |app.engine.version|Permite definir [la versión de PHP](#php-versions) utilizada por el alojamiento entre [las que ofrece OVHcloud](/links/web/hosting-programming-language){.external}. Introduzca la versión que desee (en función del entorno de ejecución que haya elegido).|
-|http.firewall|Permite activar o desactivar el [firewall incluido con los alojamientos web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}. Introduzca **security** para activarlo o **none** para desactivarlo.|
+|http.firewall|Permite activar o desactivar el [firewall incluido con los alojamientos web de OVHcloud](/links/web/hosting-options){.external}. Introduzca **security** para activarlo o **none** para desactivarlo.|
 |environment|Permite gestionar el comportamiento de la caché de los archivos estáticos de su sitio web y el tratamiento de los errores PHP. Esto corresponde al [modo de ejecución](#runtime-mod). Introduzca **production** para maximizar el almacenamiento en caché y ocultar los errores PHP o **development** para que no se aplique ninguna caché y se muestren los errores PHP.|
 |container.image|Permite modificar [el entorno de ejecución](#runtime-environment) utilizado por el alojamiento. Introduzca el entorno de ejecución (**legacy**,**stable** o **stable64**) que desee. Si elige el entorno de ejecución **stable64**, compruebe que su sitio web es compatible con la arquitectura de 64 bits.|
 

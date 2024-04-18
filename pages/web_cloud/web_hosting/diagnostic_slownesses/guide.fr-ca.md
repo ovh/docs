@@ -243,7 +243,7 @@ Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous 
 
 > [!primary]
 >
-> OVHcloud propose plusieurs [offres CDN](https://www.ovhcloud.com/fr-ca/web-hosting/options/). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud propose plusieurs [offres CDN](/links/web/hosting-options). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - optimisez votre base de données

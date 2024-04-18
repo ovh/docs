@@ -249,7 +249,7 @@ Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, 
 
 > [!primary]
 >
-> A OVHcloud oferece várias [ofertas CDN](https://www.ovhcloud.com/pt/web-hosting/options/). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e consulte o nosso guia sobre [utilização do CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> A OVHcloud oferece várias [ofertas CDN](/links/web/hosting-options). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e consulte o nosso guia sobre [utilização do CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - otimize a sua base de dados

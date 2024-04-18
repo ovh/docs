@@ -248,7 +248,7 @@ Um das Aufkommen an Abfragen für jeden Seitenaufbau zu reduzieren, können Sie 
 
 > [!primary]
 >
-> OVHcloud bietet mehrere [CDN-Optionen](https://www.ovhcloud.com/de/web-hosting/options/) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud bietet mehrere [CDN-Optionen](/links/web/hosting-options) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimieren Sie Ihre Datenbank

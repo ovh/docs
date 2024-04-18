@@ -245,7 +245,7 @@ To reduce the flow of requests each time your pages load, you can also set up a 
 
 > [!primary]
 >
-> OVHcloud offers several [CDN options](https://www.ovhcloud.com/en-ca/web-hosting/options/). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then read our guide on [Using the OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud offers several [CDN options](/links/web/hosting-options). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then read our guide on [Using the OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - optimise your database

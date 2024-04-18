@@ -267,7 +267,7 @@ Customise the values of the variables depending on the configuration you want to
 |---|---|
 |app.engine|Allows you to modify [the PHP engine](#php-runtime) used by the hosting system. Enter **php** to enable the PHP-FPM accelerator, and **phpcgi** to disable it.|
 |app.engine.version|Allows you to define [the PHP version](#php-versions) used by the hosting plan among [the ones OVHcloud offers](/links/web/hosting-programming-language){.external}. Enter the version of your choice (appropriate for the runtime environment you have chosen to use).|
-|http.firewall|Enables or disables the [firewall of your OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/options/){.external}. Enter **security** to enable it, or **none** to disable it.|
+|http.firewall|Enables or disables the [firewall of your OVHcloud web hosting plan](/links/web/hosting-options){.external}. Enter **security** to enable it, or **none** to disable it.|
 |environment|Allows you to manage the behaviour of your website's static file cache, as well as PHP error processing. This corresponds to [execution mode](#runtime-mod). Enter **production** to maximise caching and hide PHP errors, or **development** so that no cache is applied and PHP errors are displayed.|
 |container.image|Allows you to modify the [runtime environment](#runtime-environment) used by the hosting. Enter the runtime environment (**legacy**,**stable** or **stable64**) of your choice. If you choose the **stable64** runtime environment, ensure that your site is compatible with 64-bit architecture.|
 

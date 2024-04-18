@@ -82,8 +82,8 @@ You will now need to customise the way you add your domain or subdomain. Some of
 |Root folder|Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.domain.tld, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
 |SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](/links/web/hosting-options-ssl){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from the **HTTP2** protocol (the latter is enabled by default in our Gravelines data centre).|
 |Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](/links/web/hosting-options-cdn){.external}. By enabling SSL and the CDN, you can also benefit from the **HTTP2** protocol (the latter is activated by default in our Gravelines data centre).|
-|Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](https://www.ovhcloud.com/en-ie/web-hosting/options/){.external}.|
-|Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovhcloud.com/en-ie/web-hosting/options/){.external}.|
+|Geolocated IP|Provides you with a geolocated IP address (from a country list) for the selected domain. To find out more about this, go to [our IP page](/links/web/hosting-options){.external}.|
+|Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](/links/web/hosting-options){.external}.|
 |Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space. Find out more about this on [our detailed statistics page](/links/web/hosting-traffic-analysis){.external}.|
 
 > [!warning]
@@ -135,7 +135,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 |---|---|
 |Domain|Enter the domain name you want to use. Add subdomains (e.g. **blog**.domain.tld) if required, and create the corresponding "www" subdomain at the same time (e.g. **www.blog**.domain.tld). This domain will correspond to the website that you want to put online. As a reminder, you must have the appropriate rights to modify the domain’s configuration (its DNS zone) to finalise this addition.|
 |Root folder| Define the folder on your storage space to which the domain points. The website files need to be placed in this folder. For example, for blog.domain.tld, the root directory could be "blog". If the directory does not exist, it will be created automatically.|
-|Enable IPv6|Enables the IPv6 protocol on the selected domain. To find out more about this, go to [our IP page](https://www.ovhcloud.com/en-ie/web-hosting/options/){.external}.|
+|Enable IPv6|Enables the IPv6 protocol on the selected domain. To find out more about this, go to [our IP page](/links/web/hosting-options){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that appears.
 
