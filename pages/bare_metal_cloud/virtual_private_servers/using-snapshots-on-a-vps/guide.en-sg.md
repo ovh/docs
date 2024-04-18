@@ -35,7 +35,7 @@ In the next step, please take note of the pricing information, then click on `Or
 
 ### Step 2: Taking a snapshot
 
-Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterward, refresh your page, and the timestamp of the creation will appear in the **Summary of options** box.
+Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. You can write a description that will be attached to your snapshot. The time it takes to create the snapshot depends on the storage space in use. Afterwards, refresh your page to see the timestamp of the creation in the **Summary of options** box.
 
 ### Step 3: Deleting or restoring a snapshot
 

@@ -1,7 +1,7 @@
 ---
-title: 'Utilizar snapshots num alojamento VPS'
-excerpt: 'Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OVHcloud'
-updated: 2023-04-28
+title: "Utilizar snapshots num alojamento VPS"
+excerpt: "Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OVHcloud"
+updated: 2024-04-15
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=got
 
 ### Passo 1: Subscrever a opção snapshot
 
-No separador `Inicial`{.action}, procure a caixa "Sumário de opções". Clique em `...`{.action} ao lado da opção "Snapshot" e no respetivo menu clique em `Encomendar`{.action}.
+No separador `Inicial`{.action}, procure a caixa "Sumário de opções". Se "Snapshot" já estiver no estado "Ativada", passe diretamente para a etapa 2. Se "Snapshot" ainda não estiver ativado, clique em `...`{.action} ao lado da opção "Snapshot" e no respetivo menu clique em `Encomendar`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Na etapa seguinte, tome nota da informação relativa ao preço e depois clique 
 
 ### Passo 2: Obter um snapshot
 
-Uma vez ativada esta opção, clique em `...`{.action} junto à opção "Snapshot" e no respetivo menu clique em `Obter snapshot`{.action}. A duração da criação da snapshot depende do espaço de armazenamento utilizado. No final, o tempo de duração será indicado na caixa “Sumário de opções”.
+Uma vez ativada esta opção, clique em `...`{.action} junto à opção "Snapshot" e no respetivo menu clique em `Obter snapshot`{.action}. Pode introduzir uma descrição que será associada à sua snapshot. A duração da criação da snapshot depende do espaço de armazenamento utilizado. No final, o tempo de duração será indicado na caixa “Sumário de opções”.
 
 ### Passo 3: Apagar/restaurar um snapshot
 
@@ -51,6 +51,8 @@ Se tem a certeza que pretende restaurar o estado do seu alojamento VPS de acordo
 > [!alert]
 >
 > Tenha em atenção que quando restaurar um VPS a partir de um instantâneo, este será eliminado. Se deseja conservar a mesma imagem, deve tomar uma nova antes de efetuar modificações no sistema restaurado.
+>
+> Se a função snapshot é demasiado limitada para o seu projeto, a opção [Backups automatizados](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) é uma alternativa.
 >
 
 ### Descarregar uma snapshot
@@ -95,6 +97,8 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 > [!primary]
 >
 > Para evitar o consumo de espaço de armazenamento excessivo, desaconselhamos o download das snapshots diretamente para o VPS.
+>
+> O ficheiro descarregado pode ser importado para um Projeto Public Cloud enquanto imagem (QCOW2) via [OpenStack](products/public-cloud-compute-instance-management). (Consulte um exemplo de utilização em [este manual](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Boas práticas para a criação de uma snapshot

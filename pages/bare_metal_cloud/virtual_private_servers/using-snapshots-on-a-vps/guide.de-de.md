@@ -1,7 +1,7 @@
 ---
-title: 'Snapshots auf einem VPS verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Snapshot-Option aktivieren und verwenden'
-updated: 2023-04-28
+title: "Snapshots auf einem VPS verwenden"
+excerpt: "Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Snapshot-Option aktivieren und verwenden"
+updated: 2024-04-15
 ---
 
 > [!primary]
@@ -30,7 +30,8 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 ### Schritt 1: Snapshot-Option aktivieren
 
-Scrollen Sie im Tab `Start`{.action} nach unten zum Feld mit der Bezeichnung **Zusammenfassung der Optionen**. Klicken Sie auf `...`{.action} neben der Option “Snapshot”. Im Kontextmenü klicken Sie auf `Bestellen`{.action}.
+Scrollen Sie im Tab `Start`{.action} nach unten zum Feld mit der Bezeichnung **Zusammenfassung der Optionen**. 
+Wenn sich die Option bereits im Status "Aktiviert" befindet, fahren Sie direkt mit Schritt 2 fort. Wenn "Snapshot" noch nicht aktiviert ist, klicken Sie auf `...`{.action} neben "Snapshot". Im Kontextmenü klicken Sie auf `Bestellen`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -38,7 +39,7 @@ Beachten Sie im nächsten Schritt die Kosteninformation und klicken Sie dann auf
 
 ### Schritt 2: Einen Snapshot erstellen
 
-Sobald die Option aktiviert ist, klicken Sie auf `...`{.action} neben der Option “Snapshot”. Im Kontextmenü klicken Sie auf `Snapshot erstellen`{.action}. Die Dauer der Erstellung des Snapshots hängt vom verwendeten Speicherplatz ab. Anschließend wird der Zeitstempel der Erstellung im Bereich **Zusammenfassung der Optionen** angezeigt.
+Sobald die Option aktiviert ist, klicken Sie auf `...`{.action} neben der Option "Snapshot". Im Kontextmenü klicken Sie auf `Snapshot erstellen`{.action}. Sie können eine Beschreibung eingeben, die an Ihren Snapshot angehängt wird. Die Dauer der Erstellung des Snapshots hängt vom verwendeten Speicherplatz ab. Anschließend wird der Zeitstempel der Erstellung im Bereich **Zusammenfassung der Optionen** angezeigt.
 
 ### Schritt 3: Einen Snapshot löschen/wiederherstellen
 
@@ -51,6 +52,8 @@ Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetz
 > [!alert]
 >
 > Dabei ist zu beachten, dass der Snapshot im Zuge der Wiederherstellung gelöscht wird. Wenn Sie einen identischen Snapshot behalten möchten, ist es notwendig, einen neuen Snapshot zu erzeugen, bevor Sie Änderungen am wiederhergestellten System vornehmen.
+>
+> Wenn die Snapshot-Funktion für Ihr Projekt zu eingeschränkt ist, gibt es die Option [Automatische Backups](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) als Alternative.
 >
 
 ### Snapshot herunterladen
@@ -97,6 +100,8 @@ temp_url_sig=f508cacda60256d5f211dddf3f81130e935f0e4&temp_url_expres=1678247579"
 > [!primary]
 >
 Wir empfehlen, Snapshots nicht direkt auf den VPS herunterzuladen, um die Auslastung des Speicherplatzes zu vermeiden.
+>
+> Die heruntergeladene Datei kann über [OpenStack](products/public-cloud-compute-instance-management) als Image (QCOW2) in ein Public Cloud Projekt importiert werden. (Nutzungsbeispiele finden Sie z.B. in [dieser Anleitung](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Optimale Vorgehensweise zur Snapshot-Erstellung

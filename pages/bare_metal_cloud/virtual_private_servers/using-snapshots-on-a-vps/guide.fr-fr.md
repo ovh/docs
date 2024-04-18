@@ -185,4 +185,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Utiliser la sauvegarde automatique sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
