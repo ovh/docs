@@ -62,7 +62,8 @@ New IPv6 block is there, let's configure it now!
 ### Configuring IPv6 in a vRack (basic mode)
 
 In this section we will present basic IPv6 setup for your vRack connected hosts.
-![image](https://github.com/ovh/docs/assets/60412/04b55646-15f9-4ecd-86f3-cea51fa7421e)
+
+![Configuring IPv6 in a vRack](images/20240418-03.png){.thumbnail}
 
 Example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belongs to the first /64 subnet from given public /56 Additional IPv6 block. Both leverage vRack interface for public IPv6 connectivity.
 
