@@ -121,7 +121,7 @@ Per la ricezione delle email, durante la scelta del tipo di account, ti consigli
 |---|---|
 |Nome utente|Inserisci l’indirizzo email **completo**|
 |Password|Inserisci la password associata all’indirizzo email|
-|Server (in entrata)|pop.mail.ovh.net **ou** ssl0.ovh.net|
+|Server (in entrata)|pop.mail.ovh.net **o** ssl0.ovh.net|
 |Porta|995|
 |Tipo di sicurezza|SSL/TLS|
 
@@ -131,7 +131,7 @@ Per la ricezione delle email, durante la scelta del tipo di account, ti consigli
 |---|---|
 |Nome utente|Inserisci l’indirizzo email **completo**|
 |Password|Inserisci la password associata all’indirizzo email|
-|Server (in entrata)|imap.mail.ovh.net **ou** ssl0.ovh.net|
+|Server (in entrata)|imap.mail.ovh.net **o** ssl0.ovh.net|
 |Porta|993|
 |Tipo di sicurezza|SSL/TLS|
 
@@ -143,7 +143,7 @@ Per l’invio delle email, se hai necessità di inserire manualmente le impostaz
 |---|---|
 |Nome utente|Inserisci l’indirizzo email **completo**|
 |Password|Inserisci la password associata all’indirizzo email|
-|Server (in uscita)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
+|Server (in uscita)|smtp.mail.ovh.net **o** ssl0.ovh.net|
 |Porta|465|
 |Tipo di sicurezza|SSL/TLS|
 
