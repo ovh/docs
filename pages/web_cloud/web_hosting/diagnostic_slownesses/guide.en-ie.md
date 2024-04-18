@@ -29,7 +29,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 >
 > Our shared hosting plans do not have a Service Level Agreement (SLA).
 >
-> If you need a service with a guaranteed availability rate higher than 99%, we recommend that you consider using a [Virtual Private Server (VPS)](https://www.ovhcloud.com/en-ie/vps/) or a [Dedicated Server](/links/bare-metal/bare-metal).
+> If you need a service with a guaranteed availability rate higher than 99%, we recommend that you consider using a [Virtual Private Server (VPS)](/links/bare-metal/vps) or a [Dedicated Server](/links/bare-metal/bare-metal).
 >
 > Furthermore, the performance of OVHcloud shared hosting infrastructures is monitored 24/7. This is to enable a general high availability, and where applicable, a quick recovery of your services in the event of an overload.
 >
@@ -292,7 +292,7 @@ You can find optimisation suggestions for your site by analysing it at [gtmetrix
 
 If your web hosting plan and your **database are not affected** and your website continues to be slow, despite completing **all of the steps** in this guide, this probably means that the solution you are using to host your website is not or is no longer adapted to your needs.
 
-You might consider a more capable [shared hosting offer](https://www.ovhcloud.com/en-ie/web-hosting/) or a dedicated infrastructure such as a [Virtual Private Server (VPS)](https://www.ovhcloud.com/en-ie/vps/) or [Dedicated Server](/links/bare-metal/bare-metal). 
+You might consider a more capable [shared hosting offer](https://www.ovhcloud.com/en-ie/web-hosting/) or a dedicated infrastructure such as a [Virtual Private Server (VPS)](/links/bare-metal/vps) or [Dedicated Server](/links/bare-metal/bare-metal). 
 
 ## Go further <a name="go-further"></a>
 

@@ -34,7 +34,7 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 >
 > I nostri hosting condivisi non dispongono di "Service Level Agreement" (SLA). 
 >
-> In caso di necessità di un servizio con un tasso di disponibilità SLA superiore al 99%, ti consigliamo di considerare l'utilizzo di un [Server Privato Virtuale (VPS)](https://www.ovhcloud.com/it/vps/) o di un [Server Dedicato](/links/bare-metal/bare-metal).
+> In caso di necessità di un servizio con un tasso di disponibilità SLA superiore al 99%, ti consigliamo di considerare l'utilizzo di un [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o di un [Server Dedicato](/links/bare-metal/bare-metal).
 >
 > Inoltre, le prestazioni dell'infrastruttura di hosting condivisi OVHcloud sono monitorate 24 ore su 24 e 7 giorni su 7, al fine di garantirti un alto tasso di disponibilità e, in caso di comprovata necessità, un rapido ripristino dei tuoi servizi.
 >
@@ -294,7 +294,7 @@ Per ottimizzare il tuo sito è possibile consultarlo su [gtmetrix.com](https://g
 
 Se il tuo hosting Web e il tuo database **non sono in causa** e il tuo sito Web continua ad essere lento, nonostante la realizzazione di **tutti gli step** di questa guida, probabilmente l'offerta che utilizzi per ospitare il tuo sito Web non è o non è più adatta alle tue necessità. 
 
-È possibile scegliere una [offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/) superiore o un'infrastruttura dedicata come [Server Privato Virtuale (VPS)](https://www.ovhcloud.com/it/vps/) o un [Server Dedicato](/links/bare-metal/bare-metal). 
+È possibile scegliere una [offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/) superiore o un'infrastruttura dedicata come [Server Privato Virtuale (VPS)](/links/bare-metal/vps) o un [Server Dedicato](/links/bare-metal/bare-metal). 
 
 ## Per saperne di più <a name="go-further"></a>
 

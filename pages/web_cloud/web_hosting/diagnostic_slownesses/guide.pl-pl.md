@@ -34,7 +34,7 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 >
 > Nasza oferta hostingu współdzielonego nie dysponuje "Service Level Agreement" (SLA). 
 >
-> Jeśli potrzebujesz usługi ze współczynnikiem dostępności SLA większym niż 99%, zalecamy rozważenie korzystania z [Prywatnego Serwera Wirtualnego (VPS)](https://www.ovhcloud.com/pl/vps/) lub [Serwera dedykowanego](/links/bare-metal/bare-metal).
+> Jeśli potrzebujesz usługi ze współczynnikiem dostępności SLA większym niż 99%, zalecamy rozważenie korzystania z [Prywatnego Serwera Wirtualnego (VPS)](/links/bare-metal/vps) lub [Serwera dedykowanego](/links/bare-metal/bare-metal).
 >
 > Ponadto wydajność infrastruktury hostingu współdzielonego OVHcloud jest monitorowana 24 godziny na 24 i 7 dni na 7. W celu zapewnienia wysokiego poziomu dostępności oraz, w razie potrzeby, szybkiego przywrócenia usług w przypadku stwierdzonego przeciążenia.*
 >
@@ -295,7 +295,7 @@ Możesz sprawdzić ścieżki optymalizacji dla Twojej strony, analizując ją na
 
 Jeśli Twój hosting WWW i baza danych **nie są przedmiotem dyskusji** i Twoja strona WWW będzie się powoli rozwijać, pomimo realizacji **wszystkich etapów** tego przewodnika, prawdopodobnie oznacza to, że oferta, której używasz do hostowania Twojej strony WWW nie jest lub jest bardziej odpowiednia dla Twojego projektu. 
 
-Możesz rozważyć ofertę [hostingu współdzielonego](https://www.ovhcloud.com/pl/web-hosting/) lub infrastrukturę dedykowaną, taką jak [Serwer Wirtualny Prywatny (VPS)](https://www.ovhcloud.com/pl/vps/) lub [Serwer dedykowany](/links/bare-metal/bare-metal). 
+Możesz rozważyć ofertę [hostingu współdzielonego](https://www.ovhcloud.com/pl/web-hosting/) lub infrastrukturę dedykowaną, taką jak [Serwer Wirtualny Prywatny (VPS)](/links/bare-metal/vps) lub [Serwer dedykowany](/links/bare-metal/bare-metal). 
 
 ## Sprawdź również <a name="go-further"></a>
 

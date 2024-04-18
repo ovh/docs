@@ -34,7 +34,7 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 >
 > Unsere Webhostings verfügen nicht über ein "Service Level Agreement" (SLA).
 >
-> Wenn Sie einen Dienst mit einer Verfügbarkeitsgarantie von mehr als 99% benötigen, empfehlen wir die Verwendung eines [Virtual Private Server (VPS)](https://www.ovhcloud.com/de/vps/) oder eines [Dedicated Server](/links/bare-metal/bare-metal).
+> Wenn Sie einen Dienst mit einer Verfügbarkeitsgarantie von mehr als 99% benötigen, empfehlen wir die Verwendung eines [Virtual Private Server (VPS)](/links/bare-metal/vps) oder eines [Dedicated Server](/links/bare-metal/bare-metal).
 >
 > Darüber hinaus wird die Performance der Hosting-Infrastruktur von OVHcloud permanent überwacht. Damit wird eine generell hohe Verfügbarkeit und gegebenenfalls eine schnelle Wiederherstellung Ihrer Dienste im Falle einer Überlastung sichergestellt.
 >
@@ -293,7 +293,7 @@ Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem S
 
 Wenn Ihr Webhosting und Ihre Datenbank **nicht betroffen sind** und Ihre Website trotz der Umsetzung **aller Schritte** in dieser Anleitung weiterhin langsam ist, bedeutet dies wahrscheinlich, dass Ihr Webhosting Dienst den Ansprüchen Ihrer Website nicht oder nicht mehr genügt. 
 
-Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder eine dedizierte Infrastruktur in Betracht, wie einen [Virtual Private Server (VPS)](https://www.ovhcloud.com/de/vps/) oder einen [Dedicated Server](/links/bare-metal/bare-metal).
+Ziehen Sie in diesem Fall ein leistungsfähigeres [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder eine dedizierte Infrastruktur in Betracht, wie einen [Virtual Private Server (VPS)](/links/bare-metal/vps) oder einen [Dedicated Server](/links/bare-metal/bare-metal).
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
