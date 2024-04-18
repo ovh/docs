@@ -103,7 +103,7 @@ Wir empfehlen, Snapshots nicht direkt auf den VPS herunterzuladen, um die Auslas
 >
 > Die heruntergeladene Datei kann über [OpenStack](products/public-cloud-compute-instance-management) als Image (QCOW2) in ein Public Cloud Projekt importiert werden. (Nutzungsbeispiele finden Sie z.B. in [dieser Anleitung](/pages/public_cloud/compute/upload_own_image).)
 >
-
+ 
 ### Optimale Vorgehensweise zur Snapshot-Erstellung
 
 #### Konfiguration des QEMU-Agents auf einem VPS
