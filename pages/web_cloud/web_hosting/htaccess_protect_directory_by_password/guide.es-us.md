@@ -152,7 +152,7 @@ php crypt.php
 
 > [!warning]
 >
-> Por motivos de seguridad, se recomienda el uso del SSH. No obstante, si tiene un producto [Perso](https://www.ovhcloud.com/es/web-hosting/personal-offer/) en el que el SSH no está disponible, puede igualmente ejecutar el fichero "crypt.php" a través de su navegador web.
+> Por motivos de seguridad, se recomienda el uso del SSH. No obstante, si tiene un producto [Perso](/links/web/hosting-personal-offer) en el que el SSH no está disponible, puede igualmente ejecutar el fichero "crypt.php" a través de su navegador web.
 >
 > Para ello, introduzca la siguiente URL: `https://domain.tld/crypt.php` modificando `domain.tld` por su propio nombre de dominio. Esto se muestra directamente en la barra de direcciones de su navegador web.
 >

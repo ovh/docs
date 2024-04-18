@@ -105,9 +105,9 @@ If you would like to keep the same number of mailboxes and **before downgrading 
 
 #### 5 - Mailing lists
 
-The [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) feature is optional on [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) hosting plans.
+The [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) feature is optional on [Personal](/links/web/hosting-personal-offer) hosting plans.
 
-To upgrade your web hosting plan to a [Personal] plan (https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/), you will first need to delete the mailing lists, or order an email solution that includes this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](/links/manager).
+To upgrade your web hosting plan to a [Personal] plan (/links/web/hosting-personal-offer), you will first need to delete the mailing lists, or order an email solution that includes this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](/links/manager).
 
 To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Emails`{.action}, then select the email solution concerned. On the page that opens, in the `Subscription`{.action} box, to the right of `Solution`{.action}, click the `...`{.action} button, then `Change solution`{.action}.
 
@@ -136,7 +136,7 @@ Once these 6 points have been verified, you can complete your [solution change](
 
 #### You have a free 100M hosting plan <a name="100m"></a>
 
-If you are changing your plan from a [100M free hosting](/pages/web_cloud/web_hosting/activate_start10m) plan, only [the Personal plan](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) will be available. However, after changing to the Personal plan, you can upgrade it to all of our [web hosting plans](/links/web/hosting).
+If you are changing your plan from a [100M free hosting](/pages/web_cloud/web_hosting/activate_start10m) plan, only [the Personal plan](/links/web/hosting-personal-offer) will be available. However, after changing to the Personal plan, you can upgrade it to all of our [web hosting plans](/links/web/hosting).
 
 Follow [these instructions](#modify) to change your solution.
 
@@ -169,7 +169,7 @@ This calculation is the price difference between your original plan and your new
 
 > **Example:**<br>
 >
-> You subscribed to a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) subscription on 1 January 2022.
+> You subscribed to a [Personal](/links/web/hosting-personal-offer) subscription on 1 January 2022.
 >
 > On October 31, 2022, you upgrade this **Personal** plan to the [Pro](/links/web/hosting-professional-offer) plan.<br>
 >

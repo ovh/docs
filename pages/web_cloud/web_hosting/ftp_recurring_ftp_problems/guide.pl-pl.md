@@ -38,7 +38,7 @@ Jeśli dane, które chcesz wymienić za pomocą tego kanału nie są poufne, kli
 
 W przeciwnym razie przejdź do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}. Wybierz odpowiedni hosting i wybierz kartę `FTP-SSH`{.action}.
 
-Jeśli dysponujesz hostingiem [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), zaznacz kratkę `Wyłączone`{.action} w kolumnie `SFTP`{.action}, następnie odczekaj kilka minut.
+Jeśli dysponujesz hostingiem [Perso](/links/web/hosting-personal-offer), zaznacz kratkę `Wyłączone`{.action} w kolumnie `SFTP`{.action}, następnie odczekaj kilka minut.
 
 Jeśli dysponujesz hostingiem [Pro](/links/web/hosting-professional-offer) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), kliknij przycisk `...`{.action} po prawej stronie odpowiedniego użytkownika FTP a następnie kliknij `Zmien`{.action}.
 

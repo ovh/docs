@@ -38,7 +38,7 @@ Se os dados que deseja trocar por esta via não são confidenciais, clique em `O
 
 Caso contrário, aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action} e, a seguir, clique em `Alojamentos`{.action}. Selecione o alojamento correspondente e escolha o separador `FTP-SSH`{.action}.
 
-Se dispõe de um alojamento [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), selecione a casa `Desativado`{.action} na coluna `SFTP`{.action} e aguarde alguns minutos.
+Se dispõe de um alojamento [Perso](/links/web/hosting-personal-offer), selecione a casa `Desativado`{.action} na coluna `SFTP`{.action} e aguarde alguns minutos.
 
 Se dispõe de um alojamento [Pro](/links/web/hosting-professional-offer) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), clique no botão `...`{.action} à direita do utilizador FTP em causa, depois por `Alterar`{.action}.
 

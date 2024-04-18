@@ -58,7 +58,7 @@ Se tal interrupção ocorrer, este guia será construído de forma a minimizar a
 
 Várias ofertas de alojamento partilhado OVHcloud incluem uma oferta de e-mail "MX Plan". Esta oferta de e-mail permite criar endereços de e-mail com um espaço de armazenamento de 5 GB no máximo para cada endereço. Escolha a seguir as ofertas de alojamento em função da versão PHP, da versão SQL, do número de endereços de e-mail que precisa e do tamanho do seu site a migrar:
 
-- O alojamento [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) com **10 endereços de e-mail** "MX Plan"
+- O alojamento [Perso](/links/web/hosting-personal-offer) com **10 endereços de e-mail** "MX Plan"
 - O alojamento [Pro](/links/web/hosting-professional-offer) com **100 endereços de e-mail** "MX Plan"
 - O alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) com **1000 endereços de e-mail** "MX Plan". Esta oferta é indicada em 4 "subofertas".
 - O alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/) com **200 endereços de e-mail** "MX Plan". Esta oferta é utilizada pelos programadores de aplicações.

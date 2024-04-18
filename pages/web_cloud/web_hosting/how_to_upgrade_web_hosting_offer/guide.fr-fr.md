@@ -106,9 +106,9 @@ Si vous souhaitez conserver le même nombre de boîtes e-mail et **avant de pass
 
 #### 5 - Mailing lists
 
-La fonctionnalité [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) est en option sur les hébergements [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/).
+La fonctionnalité [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) est en option sur les hébergements [Perso](/links/web/hosting-personal-offer).
 
-Pour passer votre hébergement web sur une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), vous devrez dans un premier temps supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](/links/manager).
+Pour passer votre hébergement web sur une offre [Perso](/links/web/hosting-personal-offer), vous devrez dans un premier temps supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](/links/manager).
 
 Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `E-mails`{.action} puis sélectionnez l'offre e-mail concernée. Sur la page qui s'affiche, dans l'encadré `Abonnement`{.action} et à droite de la mention `Offre`{.action}, cliquez sur le bouton  `...`{.action} puis sur `Changer d'offre`{.action}.
 
@@ -137,7 +137,7 @@ Une fois ces 6 points vérifiés, vous pouvez réaliser votre [changement d'offr
 
 #### Vous possédez une offre d'hébergement gratuit 100M <a name="100m"></a>
 
-Dans le cadre d'un changement depuis une offre d'[hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, vous pourrez faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](/links/web/hosting).
+Dans le cadre d'un changement depuis une offre d'[hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m), seule [l'offre Perso](/links/web/hosting-personal-offer) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, vous pourrez faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](/links/web/hosting).
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
@@ -170,7 +170,7 @@ Ce calcul correspond à la différence de tarif entre votre offre initiale et vo
 
 > **Exemple :**<br>
 >
-> Vous avez souscrit à un abonnement [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) au 1er janvier 2022.
+> Vous avez souscrit à un abonnement [Perso](/links/web/hosting-personal-offer) au 1er janvier 2022.
 >
 > Le 31 octobre 2022, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](/links/web/hosting-professional-offer).<br>
 >

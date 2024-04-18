@@ -78,7 +78,7 @@ This calculation is the price difference between your original plan and your new
 
 > **Example:**<br>
 >
-> You have subscribed to a [Personal](https://www.ovhcloud.com/asia/web-hosting/personal-offer/) subscription on 1 January 2022.
+> You have subscribed to a [Personal](/links/web/hosting-personal-offer) subscription on 1 January 2022.
 >
 > On October 31, 2022, you upgrade this **Personal** plan to the [Pro](/links/web/hosting-professional-offer) plan.<br>
 >

@@ -110,9 +110,9 @@ Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, müssen Sie ei
 
 #### 5 - Mailinglisten
 
-Die Funktion [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) ist optional für die Hostings von [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) verfügbar.
+Die Funktion [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) ist optional für die Hostings von [Basic](/links/web/hosting-personal-offer) verfügbar.
 
-Wenn Sie Ihr Webhosting auf ein [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Angebot  umstellen möchten, müssen Sie zunächst die Mailinglisten löschen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](/links/manager).
+Wenn Sie Ihr Webhosting auf ein [Basic](/links/web/hosting-personal-offer) Angebot  umstellen möchten, müssen Sie zunächst die Mailinglisten löschen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](/links/manager).
 
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mails`{.action} und wählen Sie das betreffende E-Mail-Angebot aus. Klicken Sie auf der angezeigten Seite auf `Abonnement`{.action} und rechts neben `Angebot`{.action} auf den Button `...`{.action} und dann auf `Angebot wechseln`{.action}.
 
@@ -141,7 +141,7 @@ Nachdem Sie diese 6 Punkte überprüft haben, können Sie Ihren [Angebotswechsel
 
 #### Sie nutzen das Angebot Kostenloses Hosting 100M <a name="100m"></a>
 
-Sie können Ihr [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](/links/web/hosting).
+Sie können Ihr [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](/links/web/hosting-personal-offer) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](/links/web/hosting).
 
 Folgen Sie [diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 
@@ -174,7 +174,7 @@ Diese Berechnung entspricht der Preisdifferenz zwischen Ihrem ursprünglichen un
 
 > **Beispiel:**<br>
 >
-> Sie haben am 1. Januar 2022 ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) abonniert.
+> Sie haben am 1. Januar 2022 ein [Basic Hosting](/links/web/hosting-personal-offer) abonniert.
 >
 > Am 31. Oktober 2022 wechseln Sie von diesem **Basic** Angebot zu einem Abo für das [Pro Hosting](/links/web/hosting-professional-offer).<br>
 >

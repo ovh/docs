@@ -110,9 +110,9 @@ Se pretender conservar o mesmo número de caixas de correio e **antes de passar 
 
 #### 5 - Mailing lists
 
-A funcionalidade [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) é opcional nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/).
+A funcionalidade [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) é opcional nos alojamentos [Perso](/links/web/hosting-personal-offer).
 
-Para passar o seu alojamento web para uma oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](/links/manager).
+Para passar o seu alojamento web para uma oferta [Perso](/links/web/hosting-personal-offer), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](/links/manager).
 
 Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
 
@@ -141,7 +141,7 @@ Depois de verificar estes 6 pontos, pode realizar o seu [alteração da oferta](
 
 #### Possui uma oferta de alojamento gratuito 100M <a name="100m"></a>
 
-Se efetuar uma alteração a partir de uma oferta de [alojamento gratuito 100M](pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma alteração para a oferta Perso, poderá fazer evoluir esta última para o conjunto dos nossos [alojamentos web](/links/web/hosting).
+Se efetuar uma alteração a partir de uma oferta de [alojamento gratuito 100M](pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](/links/web/hosting-personal-offer) lhe será proposta. No entanto, após uma alteração para a oferta Perso, poderá fazer evoluir esta última para o conjunto dos nossos [alojamentos web](/links/web/hosting).
 
 Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 
@@ -174,7 +174,7 @@ Este cálculo corresponde à diferença de preço entre a sua oferta inicial e a
 
 > **Exemplo:**<br>
 >
-> Subscreveu a subscrição [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) em 1 de janeiro de 2022.
+> Subscreveu a subscrição [Perso](/links/web/hosting-personal-offer) em 1 de janeiro de 2022.
 >
 > Em 31 de outubro de 2022, a renovação desta oferta **Perso** passa para uma subscrição da oferta [Pro](/links/web/hosting-professional-offer).<br>
 >

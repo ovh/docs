@@ -79,7 +79,7 @@ Ce calcul correspond à la différence de tarif entre votre offre initiale et vo
 
 > **Exemple :**<br>
 >
-> Vous avez souscrit à un abonnement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) au 1er janvier 2022.
+> Vous avez souscrit à un abonnement [Perso](/links/web/hosting-personal-offer) au 1er janvier 2022.
 >
 > Le 31 octobre 2022, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](/links/web/hosting-professional-offer).<br>
 >

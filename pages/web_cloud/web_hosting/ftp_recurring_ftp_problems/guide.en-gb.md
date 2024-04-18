@@ -33,7 +33,7 @@ If the data you want to exchange via this link is not confidential, click `OK`{.
 
 Otherwise, go to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then `Hosting plans`{.action}. Select the hosting plan concerned, then choose the `FTP-SSH`{.action} tab.
 
-If you have a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) Web Hosting plan, tick the `Disabled`{.action} box in the `SFTP`{.action} column, then wait a few minutes.
+If you have a [Personal](/links/web/hosting-personal-offer) Web Hosting plan, tick the `Disabled`{.action} box in the `SFTP`{.action} column, then wait a few minutes.
 
 If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) Web Hosting plan, click on the `...`{.action} button to the right of the FTP user concerned, then on `Edit`{.action}.
 

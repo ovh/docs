@@ -54,7 +54,7 @@ Si une telle interruption devait avoir lieu, ce guide est construit de telle sor
 
 Plusieurs offres d'hébergement mutualisé OVHcloud contiennent une offre e-mail « MX Plan ». Cette offre e-mail permet de créer des adresses e-mail avec un espace de stockage de 5 Go maximum pour chaque adresse. Choisissez parmi les offres d'hébergement ci-dessous en fonction de la version PHP, de la version SQL, du nombre d'adresses e-mail dont vous avez besoin et de la taille de votre site à migrer :
 
-- L'hébergement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) avec **10 adresses e-mail** « MX Plan »
+- L'hébergement [Perso](/links/web/hosting-personal-offer) avec **10 adresses e-mail** « MX Plan »
 - L'hébergement [Pro](/links/web/hosting-professional-offer) avec **100 adresses e-mail** « MX Plan »
 - L'hébergement [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) avec **1000 adresses e-mail** « MX Plan ». Cette offre est déclinée en 4 « sous-offres ».
 

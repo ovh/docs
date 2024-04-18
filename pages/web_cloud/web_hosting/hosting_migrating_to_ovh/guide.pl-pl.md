@@ -58,7 +58,7 @@ W przypadku wystąpienia takiej przerwy przewodnik ten jest tak skonstruowany, a
 
 Kilka ofert hostingu OVHcloud zawiera ofertę e-mail "MX Plan". Ta oferta e-mail pozwala na tworzenie kont e-mail z przestrzenią dyskową do 5 GB dla każdego konta. Wybierz spośród poniższych pakietów hostingowych w zależności od wersji PHP, wersji SQL, liczby kont e-mail, których potrzebujesz oraz rozmiaru Twojej strony, którą chcesz przenieść:
 
-- Hosting [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) z **10 adresów e-mail** "MX Plan"
+- Hosting [Perso](/links/web/hosting-personal-offer) z **10 adresów e-mail** "MX Plan"
 - Hosting [Pro](/links/web/hosting-professional-offer) z **100 adresów e-mail** "MX Plan"
 - Hosting [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) z **1000 adresów e-mail** "MX Plan". Oferta jest podzielona na 4 "podoferty".
 - Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/) z **200 adresów e-mail** "MX Plan". Ta oferta jest używana przez programistów aplikacji.

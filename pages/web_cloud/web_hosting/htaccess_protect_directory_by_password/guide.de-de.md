@@ -149,7 +149,7 @@ php crypt.php
 
 > [!warning]
 >
-> Die Verwendung von SSH wird aus Sicherheitsgründen empfohlen. Wenn es sich bei Ihrem Hosting jedoch um ein **Starter** oder ein [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Webhosting handelt, ist SSH nicht verfügbar. Sie können dann die Datei "crypt.php" über Ihren Browser ausführen.
+> Die Verwendung von SSH wird aus Sicherheitsgründen empfohlen. Wenn es sich bei Ihrem Hosting jedoch um ein **Starter** oder ein [Basic](/links/web/hosting-personal-offer) Webhosting handelt, ist SSH nicht verfügbar. Sie können dann die Datei "crypt.php" über Ihren Browser ausführen.
 >
 > Geben Sie hierzu die URL `https://domain.tld/crypt.php` ein und ersetzen Sie `domain.tld` mit Ihrem Hosting-Domainnamen in der Adresszeile Ihres Browsers.
 >

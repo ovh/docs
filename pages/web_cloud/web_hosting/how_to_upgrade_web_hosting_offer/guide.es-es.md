@@ -110,9 +110,9 @@ Si quiere conservar el mismo número de cuentas de correo y **antes de cambiar s
 
 #### 5 - Listas de correo
 
-La funcionalidad [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) es opcional en los alojamientos [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/).
+La funcionalidad [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) es opcional en los alojamientos [Personal](/links/web/hosting-personal-offer).
 
-Para cambiar el alojamiento web a un plan de hosting [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/), deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente de OVHcloud](/links/manager).
+Para cambiar el alojamiento web a un plan de hosting [Personal](/links/web/hosting-personal-offer), deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente de OVHcloud](/links/manager).
 
 Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Direcciones de correo`{.action} y seleccione el servicio de correo correspondiente. En la página que aparece, en el recuadro `Suscripción`{.action} y a la derecha de la mención `Producto`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar de plan`{.action}.
 
@@ -141,7 +141,7 @@ Una vez verificados estos 6 puntos, puede realizar su [cambio de producto](#modi
 
 #### Tiene contratado un plan de hosting gratuito de 100M <a name="100m"></a>
 
-En caso de cambiar de plan de hosting [100M gratuito](/pages/web_cloud/web_hosting/activate_start10m), solo se ofrecerá el [plan de hosting Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/). No obstante, tras cambiar a la solución Personal, podrá actualizarla a todos nuestros [planes de hosting](/links/web/hosting).
+En caso de cambiar de plan de hosting [100M gratuito](/pages/web_cloud/web_hosting/activate_start10m), solo se ofrecerá el [plan de hosting Personal](/links/web/hosting-personal-offer). No obstante, tras cambiar a la solución Personal, podrá actualizarla a todos nuestros [planes de hosting](/links/web/hosting).
 
 Siga [estas instrucciones](#modify) para realizar el cambio de producto.
 
@@ -174,7 +174,7 @@ Este cálculo corresponde a la diferencia de precio entre su oferta inicial y su
 
 > **Ejemplo:**<br>
 >
-> Ha contratado una suscripción [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) el 1 de enero de 2022.
+> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2022.
 >
 > El 31 de octubre de 2022, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
 >

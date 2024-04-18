@@ -83,7 +83,7 @@ Este cálculo corresponde a la diferencia de precio entre su oferta inicial y su
 
 > **Ejemplo:**<br>
 >
-> Ha contratado una suscripción [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) el 1 de enero de 2022.
+> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2022.
 >
 > El 31 de octubre de 2022, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
 >

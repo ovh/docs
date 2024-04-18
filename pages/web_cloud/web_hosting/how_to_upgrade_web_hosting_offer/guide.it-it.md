@@ -110,9 +110,9 @@ Per conservare lo stesso numero di caselle email **prima di passare l’hosting 
 
 #### 5 - Mailing list
 
-La funzionalità [Mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) è in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/).
+La funzionalità [Mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) è in opzione sugli hosting [Personale](/links/web/hosting-personal-offer).
 
-Per attivare l’hosting Web su una soluzione [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/), è necessario eliminare le mailing list o ordinare un servizio di posta elettronica che includa questa funzionalità (**MX Plan 100** o **MX Plan Full***) dallo [Spazio Cliente OVHcloud](/links/manager).
+Per attivare l’hosting Web su una soluzione [Personale](/links/web/hosting-personal-offer), è necessario eliminare le mailing list o ordinare un servizio di posta elettronica che includa questa funzionalità (**MX Plan 100** o **MX Plan Full***) dallo [Spazio Cliente OVHcloud](/links/manager).
 
 Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Email`{.action} e seleziona il servizio di posta in questione. Nella nuova pagina, nel riquadro `Abbonamento`{.action} e a destra della voce `Servizio`{.action}, clicca sul pulsante `...`{.action} e poi su `Modifica offerta`{.action}.
 
@@ -141,7 +141,7 @@ Una volta verificati questi 6 punti, potrai realizzare il tuo [cambio di offerta
 
 #### Hai attivato un'offerta di hosting gratuito 100M <a name="100m"></a>
 
-In caso di modifica da un'offerta di [hosting gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), verrà proposta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, dopo un cambio verso l’offerta Personale, è possibile farlo evolvere verso tutte le nostre [offerte di hosting Web](/links/web/hosting).
+In caso di modifica da un'offerta di [hosting gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), verrà proposta solo [l'offerta Personale](/links/web/hosting-personal-offer). Tuttavia, dopo un cambio verso l’offerta Personale, è possibile farlo evolvere verso tutte le nostre [offerte di hosting Web](/links/web/hosting).
 
 Segui [queste istruzioni](#modify) per modificare l’offerta.
 
@@ -174,7 +174,7 @@ Questo calcolo corrisponde alla differenza di prezzo tra il piano iniziale e il 
 
 > **Esempio:**<br>
 >
-> Hai sottoscritto un abbonamento [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) il 1° gennaio 2022.
+> Hai sottoscritto un abbonamento [Personale](/links/web/hosting-personal-offer) il 1° gennaio 2022.
 >
 > Il 31 ottobre 2022, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](/links/web/hosting-professional-offer).<br>
 >

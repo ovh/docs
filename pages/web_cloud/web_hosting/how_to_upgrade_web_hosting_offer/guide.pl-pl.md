@@ -110,9 +110,9 @@ Jeśli chcesz zachować tę samą liczbę kont e-mail i **przed zmianą hostingu
 
 #### 5 - Listy mailingowe
 
-Funkcja [Mailing Lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) jest opcjonalna dla hostingu [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/).
+Funkcja [Mailing Lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) jest opcjonalna dla hostingu [Perso](/links/web/hosting-personal-offer).
 
-Aby zmienić pakiet hostingowy na ofertę [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), należy najpierw usunąć listy mailingowe lub zamówić ofertę poczty elektronicznej zawierającą tę funkcję (**MX Plan 100** lub **MX Plan Full**) w [Panelu klienta OVHcloud](/links/manager).
+Aby zmienić pakiet hostingowy na ofertę [Perso](/links/web/hosting-personal-offer), należy najpierw usunąć listy mailingowe lub zamówić ofertę poczty elektronicznej zawierającą tę funkcję (**MX Plan 100** lub **MX Plan Full**) w [Panelu klienta OVHcloud](/links/manager).
 
 W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `E-maile`{.action}, po czym wybierz odpowiednią ofertę e-mail. Na stronie, która się wyświetla w ramce `Abonament`{.action} i po prawej stronie wzmianki `Usługa`{.action} kliknij przycisk `...`{.action} następnie `Zmień ofertę`{.action}.
 
@@ -141,7 +141,7 @@ Po sprawdzeniu tych 6 punktów możesz wprowadzić [zmiana oferty](#modify).
 
 #### Posiadasz darmowy hosting 100M <a name="100m"></a>
 
-W przypadku zmiany oferty z [darmowego hostingu 100M](/pages/web_cloud/web_hosting/activate_start10m) będziesz mógł wybrać tylko [hosting Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/). Niemniej jednak, po przejściu na ofertę Perso, będziesz mógł zmienić ją na wszystkie nasze [oferty hostingu www](/links/web/hosting).
+W przypadku zmiany oferty z [darmowego hostingu 100M](/pages/web_cloud/web_hosting/activate_start10m) będziesz mógł wybrać tylko [hosting Perso](/links/web/hosting-personal-offer). Niemniej jednak, po przejściu na ofertę Perso, będziesz mógł zmienić ją na wszystkie nasze [oferty hostingu www](/links/web/hosting).
 
 Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
 
@@ -174,7 +174,7 @@ Obliczenie to stanowi różnicę w cenie między Twoją ofertą początkową a n
 
 > **Przykład:**<br>
 >
-> Zamówiłeś abonament [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) od 1 stycznia 2022.
+> Zamówiłeś abonament [Perso](/links/web/hosting-personal-offer) od 1 stycznia 2022.
 >
 > 31 października 2022 zmienisz abonament z tej oferty **Perso** na ofertę [Pro](/links/web/hosting-professional-offer).<br>
 >

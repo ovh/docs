@@ -38,7 +38,7 @@ Se i dati che vuoi scambiare tramite questo canale non sono riservati, clicca su
 
 In caso contrario, accedi alla sezione Web del tuo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud`{.action} e poi `Hosting`{.action}. Seleziona l'hosting interessato e clicca sulla scheda `FTP-SSH`{.action}.
 
-Se disponi di un hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/), seleziona la casella `Disattivato`{.action} nella colonna `SFTP`{.action} e attendi qualche minuto.
+Se disponi di un hosting [Personale](/links/web/hosting-personal-offer), seleziona la casella `Disattivato`{.action} nella colonna `SFTP`{.action} e attendi qualche minuto.
 
 Se disponi di un hosting [Pro](/links/web/hosting-professional-offer) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), clicca sul pulsante `...`{.action} a destra dell'utente FTP interessato e poi su `Modifica`{.action}.
 
