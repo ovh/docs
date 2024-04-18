@@ -1,5 +1,5 @@
 ---
-title: "MX Plan : Konfiguration Ihrer E-Mail-Adresse auf Outlook für Windows"
+title: "MX Plan: Konfiguration Ihrer E-Mail-Adressen in Outlook für Windows"
 excerpt: "Erfahren Sie hier, wie Sie Ihren Mailaccount in Outlook für Windows einrichten"
 updated: 2024-02-16
 ---
@@ -12,7 +12,7 @@ updated: 2024-02-16
 
 MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden.
 
-**Diese Anleitung erklärt, wie Sie Ihre E-Mail-Adresse in Windows Outlook 2016 oder neuer einrichten.**
+**Diese Anleitung erklärt, wie Sie Ihren E-Mail-Account in Windows Outlook 2016 oder neuer einrichten.**
 
 > [!warning]
 > In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
@@ -22,20 +22,20 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 
 ## Voraussetzungen
 
-- Sie verfügen über eine MX Plan E-Mail-Adresse (als MX Plan Dienst oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Sie verfügen über einen MX Plan E-Mail-Account (als MX Plan Dienst oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Microsoft Outlook ist auf Ihrem Gerät installiert.
-- Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
+- Sie verfügen über Anmeldeinformationen für den E-Mail-Account, den Sie konfigurieren möchten.
 
 > [!primary]
 >
-> Sie verwenden Outlook für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
+> Sie verwenden Outlook für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adressen in Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## In der praktischen Anwendung
 
 > [!alert]
 >
-> Bevor Sie mit der Konfiguration in dieser Anleitung beginnen, stellen Sie sicher, dass die Markierung oben rechts auf dieser Seite Ihrem Land oder Ihrer Region entspricht, da die Einstellungen von Ihrem Standort abhängig sind.
+> Bevor Sie mit der Konfiguration in dieser Anleitung beginnen, stellen Sie sicher, dass das Flaggensymbol oben rechts auf dieser Seite Ihrem Land oder Ihrer Region entspricht, da die Einstellungen lokal unterschiedlich sind.
 
 ### Account hinzufügen
 
@@ -53,44 +53,44 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 >
 > Bevor Sie fortfahren, lesen Sie den Abschnitt „[POP oder IMAP, was ist der Unterschied?](#popimap)“ in dieser Anleitung.
 >
-> In den folgenden Einstellungen können Sie zwei verschiedene Hostnamen für denselben Server angeben (ein- oder ausgehend). Diese Werte beziehen sich exakt auf denselben Server und wurden so gesetzt, dass die Eingabe erleichtert und Verwechslungen zwischen POP, IMAP und SMTP, die unterschiedliche Ports verwenden, vermieden werden.
+> In den folgenden Einstellungen können Sie zwei verschiedene Hostnamen für denselben Server angeben (ein- oder ausgehend). Diese Werte beziehen sich auf denselben Server und sollen die Eingabe erleichtern sowie Verwechslungen zwischen POP, IMAP und SMTP, die unterschiedliche Ports verwenden, vermeiden.
 
-Um Ihre E-Mail-Adresse zu konfigurieren, folgen Sie den Anweisungen auf den Tab unten.
+Um Ihren E-Mail-Account zu konfigurieren, folgen Sie den Anweisungen in den Tabs.
 
 > [!tabs]
 > **Schritt 1**
->> Wählen Sie aus den verschiedenen Kontotypen IMAP oder POP aus. <br>Wir empfehlen die Verwendung von IMAP.
+>> Wählen Sie den Kontotyp IMAP oder POP aus.<br>Wir empfehlen die Verwendung von IMAP.
 >>
 >> ![Outlook](images/config-outlook-mxplan02.png){.thumbnail}
 >>
 > **Schritt 2**
->> Geben Sie das Passwort Ihrer E-Mail-Adresse ein und klicken Sie dann auf `Weiter`{.action}.
+>> Geben Sie das Passwort Ihres E-Mail-Accounts ein und klicken Sie dann auf `Weiter`{.action}.
 >>
 >> ![Outlook](images/config-outlook-mxplan03.png){.thumbnail}
 >>
 > **Schritt 3**
->> Wenn Outlook Ihre Adresse nicht automatisch konfigurieren konnte, wird dieses Fenster angezeigt. Klicken Sie auf `Kontoeinstellungen`{.action} ändern. Fahren Sie abhängig von Ihrer Auswahl (**POP** oder **IMAP**) mit Schritt 4 fort.
+>> Wenn Outlook Ihren Account nicht automatisch konfigurieren konnte, wird dieses Fenster angezeigt. Klicken Sie auf `Kontoeinstellungen ändern`{.action}. Fahren Sie abhängig von Ihrer Auswahl (**POP** oder **IMAP**) mit Schritt 4 fort.
 >>
 >> ![Outlook](images/config-outlook-mxplan04.png){.thumbnail}
 >>
 > **Schritt 4 - IMAP**
 >> Wenn Sie IMAP ausgewählt haben, geben Sie die folgenden Parameter ein. Wenn Sie sich für POP entschieden haben, gehen Sie zum Tab „**Schritt 4 - POP**“.<br>
->> Geben Sie unter **Eingehende** E-Mail Folgendes ein:<br>- Der Server **imap.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **993**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Geben Sie unter **Ausgehende** E-Mails Folgendes ein:<br>- Der Server **smtp.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **465**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Klicken Sie zum Bestätigen auf `Weiter`{.action}.<br>
+>> Geben Sie unter **Incoming Mail** Folgendes ein:<br>- Server **imap.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **993**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Geben Sie unter **Outgoing Mail** Folgendes ein:<br>- Server **smtp.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **465**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Klicken Sie zum Bestätigen auf `Weiter`{.action}.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05.png){.thumbnail}
 >>
 > **Schritt 4 - POP**
->> Geben Sie unter **Eingehende** E-Mail Folgendes ein:<br>- Der Server **pop.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **995**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Geben Sie unter **Ausgehende** E-Mails Folgendes ein:<br>- Der Server **smtp.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **465**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Klicken Sie zum Bestätigen auf `Weiter`{.action}.<br>
+>> Geben Sie unter **Incoming Mail** Folgendes ein:<br>- Server **pop.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **995**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Geben Sie unter **Outgoing Mail** Folgendes ein:<br>- Server **smtp.mail.ovh.net** oder **ssl0.ovh.net** <br>- Port **465**<br>- **SSL/TLS-Verschlüsselungsmethode**<br><br>Klicken Sie zum Bestätigen auf `Weiter`{.action}.<br>
 >>
 >> ![Outlook](images/config-outlook-mxplan05-pop.png){.thumbnail}
 
 ### E-Mail-Adresse verwenden
 
-Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
+Sobald Ihr E-Mail-Account eingerichtet ist, können Sie ihn verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) heranziehen.
+OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihren E-Mail-Account zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) heranziehen.
 
-### Backup Ihrer E-Mail-Adresse
+### Backup Ihres E-Mail-Accounts
 
 Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#uber-windows-exportieren)".
 
@@ -108,7 +108,7 @@ Das Fenster ist in zwei Bereiche unterteilt, für **eingehende** und **ausgehend
 
 ![Outlook](images/config-outlook-mxplan07.png){.thumbnail}
 
-### POP-, IMAP- und SMTP-Parameterrückruf <a name="popimap-settings"></a>
+### Einstellungen POP, IMAP und SMTP<a name="popimap-settings"></a>
 
 Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können auch **POP** auswählen. Um zu verstehen, wie diese funktionieren, lesen Sie den Abschnitt „[POP oder IMAP, was ist der Unterschied?](#popimap)“ weiter unten.
 
@@ -117,7 +117,7 @@ Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps d
 |Information|Beschreibung|
 |---|---|
 |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
 |Server (eingehend)|pop.mail.ovh.net **oder** ssl0.ovh.net|
 |Port|995|
 |Sicherheitstyp|SSL/TLS|
@@ -127,7 +127,7 @@ Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps d
 |Information|Beschreibung|
 |---|---|
 |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
 |Server (eingehend)|imap.mail.ovh.net **oder** ssl0.ovh.net|
 |Port|993|
 |Sicherheitstyp|SSL/TLS|
@@ -139,7 +139,7 @@ Wenn Sie die **SMTP**-Einstellungen für den E-Mail-Versand manuell in den Konto
 |Information|Beschreibung|
 |---|---|
 |Nutzername|Geben Sie die **vollständige E-Mail-Adresse ein**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein|
 |Server (ausgehend)|smtp.mail.ovh.net **oder** ssl0.ovh.net|
 |Port|465|
 |Sicherheitstyp|SSL/TLS|
@@ -154,17 +154,17 @@ Bei der Konfiguration Ihres E-Mail-Clients müssen Sie die Informationen des ein
 
 Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verstehen, werden wir die Elemente, aus denen sich die Verarbeitung Ihrer eingehenden E-Mails zusammensetzt, im Einzelnen beschreiben:
 
-1. **Ihr Gerät**: ein Computer, Smartphone oder Tablet. Dies ist Ihr Beratungsmedium.
-2. **Ihr E-Mail**-Client: eine dedizierte Anwendung zur Verwaltung Ihrer E-Mails. Die Wahl der Option bestimmt, wie ergonomisch und funktional der E-Mail-Zugriff sein muss.
-3. **Empfangsprotokoll**: Wahl, wie E-Mails auf Ihrem Gerät abgerufen werden. Ihre Wahl wirkt sich auf andere Geräte aus, die denselben E-Mail-Account nutzen.
-    - **IMAP**: Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Wenn Sie eine ungelesene E-Mail anzeigen, wird diese vom Server standardmäßig als „gelesen“ markiert. Andere IMAP-fähige Geräte können diesen Status sehen und diese E-Mail sehen, bis sie auf einem der Geräte gelöscht wurde.
-    - **POP**: Ihr E-Mail-Client fragt den E-Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Standardmäßig wird die Nachricht vom Server gelöscht, sobald sie auf Ihr Gerät heruntergeladen wurde. Daher können andere Geräte, die mit dieser E-Mail-Adresse verbunden sind, diese E-Mail nicht anzeigen.
+1. **Ihr Gerät**: Computer, Smartphone oder Tablet auf dem ein E-Mail-Client läuft.
+2. **Ihr E-Mail-Client**: Anwendung zur Verwaltung Ihrer E-Mail-Accounts und deren Inhalte. Mit der Auswahl entscheiden Sie über die Funktionalität des E-Mail-Zugriffs.
+3. **Empfangsprotokoll**: Das ausgewählte Protokoll bestimmt, wie E-Mails vom Client abgerufen werden. Diese Wahl wirkt sich auf andere E-Mail-Clients aus, die denselben E-Mail-Account nutzen.
+    - **IMAP**: Ihr E-Mail-Client fragt den Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Wenn Sie eine ungelesene E-Mail anzeigen, wird diese vom Server standardmäßig als „gelesen“ markiert. Andere IMAP-fähige Geräte können diesen Status sehen und die E-Mail so lamge abrufen, bis sie von einem der Clients gelöscht wird.
+    - **POP**: Ihr E-Mail-Client fragt den Mail-Server ab und lädt die E-Mails auf Ihr Gerät herunter. Standardmäßig wird die Nachricht vom Server gelöscht, sobald sie auf Ihr Gerät heruntergeladen wurde. Daher können andere Geräte, die diesen E-Mail-Account nutzen, die entsprechende E-Mail nicht anzeigen.
 
 ![mxplan](images/mxplan-popimap-02.png){.thumbnail}
 
 > [!primary]
 >
-> Diese Beschreibung ist eine Zusammenfassung, sie stellt die Standardfunktionen beider Protokolle dar. Sie können den POP so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Unser Ziel ist es, die native Funktionsweise dieser beiden Protokolle zu beschreiben.
+> Diese Beschreibung ist eine Zusammenfassung der Standardfunktionen beider Protokolle. Sie können auch POP so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Unser Ziel ist es, die native Funktionsweise dieser beiden Protokolle zu beschreiben.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
