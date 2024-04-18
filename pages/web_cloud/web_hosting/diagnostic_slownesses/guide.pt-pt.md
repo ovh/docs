@@ -34,7 +34,7 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 >
 > As nossas ofertas de alojamento partilhado não dispõem de "Service Level Agreement" (SLA). 
 >
-> Se precisar de um serviço com uma taxa de disponibilidade SLA superior a 99%, sugerimos que considere a utilização de um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou de um [Servidor Dedicado](https://www.ovhcloud.com/pt/bare-metal/).
+> Se precisar de um serviço com uma taxa de disponibilidade SLA superior a 99%, sugerimos que considere a utilização de um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou de um [Servidor Dedicado](/links/bare-metal/bare-metal).
 >
 > Além disso, as performances da infraestrutura de alojamento partilhado OVHcloud são monitorizadas 24 horas por dia e 7 dias por semana. Isto de forma a garantir-lhe uma alta taxa de disponibilidade e, se for caso disso, um restabelecimento rápido dos seus serviços em caso de sobrecarga comprovada.*
 >
@@ -295,7 +295,7 @@ Pode encontrar pistas de otimização para o seu site analisando-o em [gtmetrix.
 
 Se o seu alojamento web e a sua base de dados ***não estiverem em causa** e o seu website continuar a ser lento, apesar da realização de **todas as etapas** deste guia, isso provavelmente significa que a oferta que utiliza para alojar o seu website não é ou deixou de ser adaptada às suas necessidades. 
 
-Pode considerar uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou um [Servidor Dedicado](https://www.ovhcloud.com/pt/bare-metal/). 
+Pode considerar uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/) superior ou uma infraestrutura dedicada como um [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/pt/vps/) ou um [Servidor Dedicado](/links/bare-metal/bare-metal). 
 
 ## Quer saber mais? <a name="go-further"></a>
 

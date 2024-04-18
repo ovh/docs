@@ -34,7 +34,7 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 >
 > Nuestros planes de hosting no disponen de "Service Level Agreement" (SLA). 
 >
-> Si necesita un servicio con una tasa de disponibilidad SLA superior al 99%, le recomendamos que considere la posibilidad de utilizar un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/es/vps/) o un [Servidor Dedicado](https://www.ovhcloud.com/es/bare-metal/).
+> Si necesita un servicio con una tasa de disponibilidad SLA superior al 99%, le recomendamos que considere la posibilidad de utilizar un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/es/vps/) o un [Servidor Dedicado](/links/bare-metal/bare-metal).
 >
 > Por otro lado, el rendimiento de la infraestructura de alojamientos compartidos OVHcloud se monitoriza las 24 horas del día, los 7 días de la semana. Esto le garantiza un alto índice de disponibilidad y, en su caso, una rápida recuperación de sus servicios en caso de sobrecarga comprobada.*
 >
@@ -292,7 +292,7 @@ Puede encontrar pistas de optimización para su sitio web analizándolo en [gtme
 
 Si su alojamiento web y su base de datos **no están en juego** y su sitio web sigue siendo lento, a pesar de haber realizado **todas las etapas** de esta guía, lo más probable es que el servicio que utiliza para alojar su sitio web no sea o no adecuado para sus necesidades. 
 
-Puede considerar un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) superior o una infraestructura dedicada como un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/es/vps/) o un [Servidor Dedicado](https://www.ovhcloud.com/es/bare-metal/). 
+Puede considerar un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) superior o una infraestructura dedicada como un [Servidor Privado Virtual (VPS)](https://www.ovhcloud.com/es/vps/) o un [Servidor Dedicado](/links/bare-metal/bare-metal). 
 
 ## Más información <a name="go-further"></a>
 

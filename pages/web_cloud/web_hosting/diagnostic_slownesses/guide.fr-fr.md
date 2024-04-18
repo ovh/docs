@@ -29,7 +29,7 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 >
 > Nos offres d'hébergements mutualisés ne disposent pas de « Service Level Agreement » (SLA). 
 >
-> Si vous avez besoin d'un service offrant un taux de disponibilité SLA supérieur à 99%, nous vous conseillons d'envisager l'utilisation d'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou d'un [Serveur Dédié](https://www.ovhcloud.com/fr/bare-metal/).
+> Si vous avez besoin d'un service offrant un taux de disponibilité SLA supérieur à 99%, nous vous conseillons d'envisager l'utilisation d'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou d'un [Serveur Dédié](/links/bare-metal/bare-metal).
 >
 > Par ailleurs, les performances de l'infrastructure d'hébergements mutualisés OVHcloud sont monitorées 24 heures sur 24 et 7 jours sur 7. Ceci afin de vous garantir un haut taux de disponibilité et, le cas échéant, un rétablissement rapide de vos services en cas de surcharge avérée.
 >
@@ -290,7 +290,7 @@ Vous pouvez trouver des pistes d'optimisation pour votre site en l'analysant sur
 
 Si votre hébergement web et votre base de données **ne sont pas en cause** et que votre site web continue d'être lent, malgré la réalisation de **toutes les étapes** de ce guide, cela signifie probablement que l'offre que vous utilisez pour héberger votre site web n'est pas ou plus adaptée à votre besoin. 
 
-Vous pouvez envisager une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr/web-hosting/) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou un [Serveur Dédié](https://www.ovhcloud.com/fr/bare-metal/). 
+Vous pouvez envisager une [offre d'hébergement mutualisée](https://www.ovhcloud.com/fr/web-hosting/) supérieure ou une infrastructure dédiée telle qu'un [Serveur Privé Virtuel (VPS)](https://www.ovhcloud.com/fr/vps/) ou un [Serveur Dédié](/links/bare-metal/bare-metal). 
 
 ## Aller plus loin <a name="go-further"></a>
 
