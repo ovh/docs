@@ -11,7 +11,8 @@ The vRack network serves as a global private network bridging various OVHcloud p
 **This guide focuses on Additional IPv6 address block configuration within a vRack network.**
 
 
-## Introduction   
+## Introduction
+
 IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated internet architectures. Here are the key benefits of integrating IPv6 with vRack:
 
 - **Flexibility for Advanced Networking**: IPv6 significantly increases the address space, providing the flexibility needed to scale infrastructure, manage failover scenarios and support larger solutions. This ensures that networks can grow and adapt without the space constraints of IPv4.
@@ -37,6 +38,7 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 ## Instructions
 
 ### Gathering new Additional IPv6 block
+
 While requesting new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
 
 **<ins>Actions</ins>**  
@@ -99,7 +101,7 @@ Notice that IP autoconfiguration (SLAAC) is turned off by default.
 </details>
         
 <details>
-<summary> <b>Automatic IP configuration (SLAAC)</b> </summary>
+<summary><b>Automatic IP configuration (SLAAC)</b></summary>
 
 To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled with simple POST method:
 
@@ -110,6 +112,7 @@ Don't forget to configure SLAAC on your host machine.
 </details>
 
 #### Host-side commands
+
 <details>
 <summary> <b>Static IP configuration</b></b> </summary>
 <blockquote>
@@ -163,9 +166,11 @@ After a moment (configuration must propagate), specific IPv6 address (with flags
 </details>
         
 #### Setup verification
+
 <details>
 <summary> <b>Local</b> </summary>
 <blockquote>
+
 Most basic test is to ping local IP address on a host:
 
 ``` bash
@@ -194,9 +199,8 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 </blockquote>
 </details>    
 
-
-
 ### Configuring an IPv6 in a vRack for routed-mode
+
 In this section we will present more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color on a schema below).
 
 ![Configuring an IPv6 in a vRack for routed-mode](images/20240418-01.png){.thumbnail}
@@ -234,6 +238,7 @@ In the example above, we define routed subnet at a size of 2001:41d0:abcd:ef10::
 <details>
 <summary> <b>Static IP configuration for a host (recommended)</b> </summary>
 <blockquote>
+
 When hosting Virtual Machines, we strongly recommend to use static configuration on your host.
 
 Setup an IPv6 address, bring up the interface and (optionally) add default route over the vRack interface:
@@ -247,7 +252,7 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 </details>
 
 <details>
-<summary> <b>Automatic IP configuration (SLAAC) for a host</b> </summary>
+<summary><b>Automatic IP configuration (SLAAC) for a host</b></summary>
 <blockquote>
 
     In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
@@ -284,6 +289,7 @@ $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 
 <details>
 <summary> <b>Routed subnet configuration inside a VM</b> </summary>
+
 Again, please note that used link between host and VMs is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
 
 <blockquote>
@@ -377,13 +383,13 @@ PING proof.ovh.net(2001:41d0:242:d300:: (2001:41d0:242:d300::)) 56 data bytes
 64 bytes from 2001:41d0:242:d300:: (2001:41d0:242:d300::): icmp_seq=2 ttl=57 time=0.415 ms
 ```
 
-
 </blockquote>
 </details>
 
 <details>
 <summary> <b>From remote host</b> </summary>
 <blockquote>
+
 Let's check connectivity to our VM from outside of OVHcloud network:
 
 ``` bash
@@ -412,6 +418,7 @@ In this example:
 </details>
 
 ## Multiple region locations vs. global vRack
+
 OVHcloud's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. 
 On the other hand, services like Additional IPv6 are regional, which means their functionality is linked to a particular location. 
 
@@ -422,15 +429,19 @@ Please note that in such setups (with Additional IPv6 from more than single regi
 
 
 ### Benefits
+
 - **Enhanced Connectivity:** By leveraging a vRack network together with public IP blocks routed in multiple locations, businesses can ensure seamless communication around the globe, regardless of backend server physical location.
 - **Move to cloud:** vRack technology can be a great enabler on early steps of "move-to-cloud" organizational strategy, unblocking some legacy applications that still require local network communication.
 
 ### Risks and Considerations
+
 - **No SLAAC support in multi-location setups:** When there is more than one location acting in routing public IP traffic (both IPv4 and IPv6) into the same vRack, Stateless Address Autoconfiguration (SLAAC) **should not be used**. As an example of such situation, let's consider existing hosts using IPv4 addresses. Such hosts are becoming reconfigured automatically by SLAAC with IPv6 gateway setup from other region. Together with IPv6 prioritization over IPv4 by some Operating Systems this situation can lead to suboptimal routing or even total loss of connectivity for such hosts.
 
 
 ## Known Limitations
+
 Understanding the constraints of using **Additional IPv6** within the **vRack** environment is crucial for effective network planning. Here are the key limitations to consider:
+
 - **Additional IPv6 goes only with vRack**: Please note that Additional IPv6 addresses can only be configured with vRack-connected backends.
 - **SLAAC limitations in multi-location setups**: Stateless Address Autoconfiguration (SLAAC) is not supported when there is public IP traffic (both IPv6 and IPv4) routed into vRack in multiple region locations.
 - **Up to 128 hosts inside bridged subnet**: You can use up to 128 IP addresses directly on vRack.
@@ -440,5 +451,6 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 - **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend. 
   
 
-## Go Further   
+## Go Further
+
 Join our community of users on <https://community.ovh.com/en/>.
