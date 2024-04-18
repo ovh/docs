@@ -1,7 +1,12 @@
 id: 833f6b43-6e94-43bc-9f2d-4f813ceca55e
 <<<<<<< HEAD
+<<<<<<< HEAD
 full_slug: sap-ldp-logs-index
 =======
 full_slug: sap-logs-on-ldp-index-of-sap-logs
 reference_category: hosted-private-cloud-sap-ovhcloud-observability
 >>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
+=======
+full_slug: sap-ldp-logs-index
+reference_category: hosted-private-cloud-sap-ovhcloud-observability
+>>>>>>> c6e9fc6087 (fix: fixed guide headers, index links and slugs)

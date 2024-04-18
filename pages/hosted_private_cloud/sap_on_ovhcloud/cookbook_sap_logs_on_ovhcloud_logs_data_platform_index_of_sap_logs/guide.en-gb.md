@@ -1,14 +1,15 @@
 ---
 title: "SAP logs on OVHcloud Logs Data Platform - Index of SAP logs"
 <<<<<<< HEAD
+<<<<<<< HEAD
 excerpt: "This guide is designed to help you retrieve the right fields from your SAP logs to perform searches in your logs."
 updated: 2024-03-30
 flag: hidden
 =======
 slug: sap-logs-on-ldp-index-of-sap-logs
+=======
+>>>>>>> c6e9fc6087 (fix: fixed guide headers, index links and slugs)
 excerpt: "This guide is designed to help you retrieve the right fields from your SAP logs to perform searches in your logs."
-section: "Observability"
-order: 03
 updated: 2024-04-10
 >>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
 ---

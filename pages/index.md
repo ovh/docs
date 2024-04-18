@@ -526,10 +526,16 @@
               + [VMware Cloud Director - Veeam plugin on VCD](products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware/vcd-backup)
 =======
         + [Observability](hosted-private-cloud-sap-ovhcloud-observability)
+<<<<<<< HEAD
             + [SAP logs on OVHcloud Logs Data Platform - Solution Setup](hosted_private_cloud/sap_on_ovhcloud/sap-logs-on-ldp-solution-setup)
             + [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](hosted_private_cloud/sap_on_ovhcloud/sap_logs_on_ldp_analyze_and_work_with_logs)
             + [SAP logs on OVHcloud Lods Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/sap-logs-on-ldp-index-of-sap-logs)
 >>>>>>> 52a51e141e (feat: added docs for the new feature SAP logs on OVHcloud Logs Data Platform)
+=======
+            + [SAP logs on OVHcloud Logs Data Platform - Solution Setup](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
+            + [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_analyze_and_work_with_your_logs)
+            + [SAP logs on OVHcloud Logs Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
+>>>>>>> c6e9fc6087 (fix: fixed guide headers, index links and slugs)
 + Public Cloud
     + [Compute](products/public-cloud-compute)
         + [Getting started](public-cloud-compute-getting-started)
@@ -1935,7 +1941,7 @@
                 + [Pushing logs from software - Apache](manage_and_operate/observability/logs_data_platform/ingestion_apache)
                 + [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit)
                 + [Pushing logs from OVHcloud account to Logs Data Platform](manage_and_operate/iam/iam-logs-forwarding)
-                + [Pushing logs from SAP to Logs Data Platform](hosted_private_cloud/sap_on_ovhcloud/sap-logs-on-ldp-solution-setup)
+                + [Pushing logs from SAP to Logs Data Platform](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
             + [Visualizing, querying and exploiting your logs](observability-logs-data-platform-visualizing-querying-exploiting)
                 + [Exposing your logs to third-party tools via the OpenSearch API](manage_and_operate/observability/logs_data_platform/integration_opensearch_api)
                 + [Using OpenSearch Dashboards with Logs Data Platform](manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards)
