@@ -43,7 +43,7 @@ While requesting new Additional IPv6 block, it's important to note that the allo
 
 **<ins>Actions</ins>**  
 
-<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using : [this form](https://survey.ovh.com/index.php/483751?lang=en)
+<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using: [this form](https://survey.ovh.com/index.php/483751?lang=en)
 
 Once your request will be processed, we will inform you via email about Additional IPv6 block delivery.
 
