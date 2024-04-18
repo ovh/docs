@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 > [!success]
 >
-> Para instalar su CMS **automáticamente** desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), consulte nuestra documentación sobre la instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar su CMS **automáticamente** desde su [área de cliente de OVHcloud](/links/manager), consulte nuestra documentación sobre la instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Descubra cómo configurar su sitio web instalando manualmente un CMS.**
@@ -41,7 +41,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Estar conectado al [área de cliente de OVHcloud](/links/manager)
   
 ## Procedimiento
 
@@ -130,10 +130,10 @@ Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](
 
 - Asegúrese de que el dominio que utilizará para acceder al CMS y el subdominio en "www" apuntan a la dirección IP de su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 
-Para obtener la dirección IP de su plan de hosting, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action} y seleccione su plan de hosting en la sección `Alojamientos`{.action}.<br>
+Para obtener la dirección IP de su plan de hosting, conéctese a su [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y seleccione su plan de hosting en la sección `Alojamientos`{.action}.<br>
 En el recuadro `Información general`{.action}, a su derecha, encontrará la dirección IP de su alojamiento web en el formulario `IPv4`{.action}.
 
-Si la zona DNS activa de su dominio está gestionada en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), compare la dirección IP de su alojamiento con la presente en la zona DNS de su dominio, ayudándole a nuestra documentación sobre las [zonas DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Si la zona DNS activa de su dominio está gestionada en su [área de cliente de OVHcloud](/links/manager), compare la dirección IP de su alojamiento con la presente en la zona DNS de su dominio, ayudándole a nuestra documentación sobre las [zonas DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >

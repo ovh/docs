@@ -25,7 +25,7 @@ In dieser Anleitung werden die verschiedenen Aktionen beschrieben, die durchgef�
 - Sie haben Zugriff auf die aktive DNS-Zone (Domain Name System) Ihres Domainnamens.
 - Sie haben Zugriff auf die Dateien und Datenbanken Ihrer Website bei Ihrem aktuellen Hosting-Anbieter.
 - Sie verfügen über die Login-Daten (Benutzer, Passwort, Server) Ihrer aktuellen E-Mail-Accounts.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -65,7 +65,7 @@ Mehrere OVHcloud Shared Hosting Angebote enthalten "MX Plan" E-Mail-Dienste. Mit
 
 Wenn Sie sich für ein passendes Webhosting-Angebot entschieden haben, klicken Sie auf den Button `Bestellen`{.action} auf unserer Webseite. Folgen Sie den Bestellschritten, aber **leiten Sie dabei noch nicht den Transfer Ihres Domainnamens ein**.
 
-Wenn Sie bereits Kunde sind, kann die Bestellung auch über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausgeführt werden. Wenn Sie eingeloggt sind, klicken Sie auf den Bereich `Web Cloud`{.action}. Klicken Sie dann links auf den Button `Bestellen`{.action} und wählen Sie `Hosting-Pakete`{.action}. Folgen Sie den Bestellschritten **ohne den Transfer Ihrer Domain zu beantragen**.
+Wenn Sie bereits Kunde sind, kann die Bestellung auch über Ihr [OVHcloud Kundencenter](/links/manager) ausgeführt werden. Wenn Sie eingeloggt sind, klicken Sie auf den Bereich `Web Cloud`{.action}. Klicken Sie dann links auf den Button `Bestellen`{.action} und wählen Sie `Hosting-Pakete`{.action}. Folgen Sie den Bestellschritten **ohne den Transfer Ihrer Domain zu beantragen**.
 
 Sobald die Zahlung bestätigt wurde, startet die Installation des Hostings. Sie erhalten eine E-Mail an Ihre Kontakt-E-Mail-Adresse, die Zugangsdaten zum FTP-Speicherplatz (File Transfer Protocol) Ihres Webhostings enthält.
 
@@ -75,7 +75,7 @@ Sobald die Zahlung bestätigt wurde, startet die Installation des Hostings. Sie 
 
 ### Schritt 2: Eine DNS-Zone für Ihren Domainnamen bei OVHcloud erstellen und vorkonfigurieren <a name="step2"></a>
 
-Wenn Ihr Webhosting eingerichtet ist, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und erstellen Sie eine DNS-Zone für Ihren Domainnamen. Verwenden Sie dabei nicht "**www**". Weitere Informationen finden Sie in unserer Anleitung zur [Erstellung einer DNS-Zone bei OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Wenn Ihr Webhosting eingerichtet ist, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und erstellen Sie eine DNS-Zone für Ihren Domainnamen. Verwenden Sie dabei nicht "**www**". Weitere Informationen finden Sie in unserer Anleitung zur [Erstellung einer DNS-Zone bei OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Sobald die DNS-Zone eingerichtet ist, kann sie zur Verwendung mit dem Webhosting vorbereitet werden. Verwenden Sie dazu unsere Anleitung zum [Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit). Fügen Sie folgende Einträge hinzu, sofern diese nicht existieren:
 

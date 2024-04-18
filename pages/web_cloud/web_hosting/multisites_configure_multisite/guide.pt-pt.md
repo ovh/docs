@@ -27,7 +27,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 - Ter um serviço [de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
 - Dispor de um ou vários [domínios](https://www.ovhcloud.com/pt/domains/){.external}.
 - Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
@@ -40,7 +40,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 
 ### 1 - Aceder à gestão multisite <a name="multisite-menu"></a>
 
-Em primeiro lugar, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action}, selecione o serviço correspondente e clique no separador `Multisite`{.action}.
+Em primeiro lugar, aceda à Área de [Cliente OVHcloud](/links/manager){.external} e selecione a `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action}, selecione o serviço correspondente e clique no separador `Multisite`{.action}.
 
 Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua solução de alojamento web. Alguns foram criados automaticamente durante a instalação do alojamento.
 

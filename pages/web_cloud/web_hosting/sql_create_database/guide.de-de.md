@@ -18,13 +18,13 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer inkludierten Datenbank.
 - Sie haben unter den in Ihrem Webhosting enthaltenen Datenbanken eine zur Erstellung verfügbare Datenbank. Bei Bedarf können Sie [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbanken zu Ihrem Webhosting hinzufügen.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Auf die Datenbankverwaltung des Webhostings zugreifen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} links unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Web Cloud`{.action} links unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting erstellt wurden.
 
@@ -98,7 +98,7 @@ Geben Sie die erforderlichen Informationen ein und klicken Sie auf `Weiter`{.act
 
 > [!primary]
 >
-> Wenn Sie auf `Bestätigen`{.action} klicken, wird die Erstellung der Datenbank bis zu **15 Minuten** dauern. Laden Sie die Seite des [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu, wenn die Datenbank nicht automatisch in der Tabelle mit den Datenbanken erscheint.
+> Wenn Sie auf `Bestätigen`{.action} klicken, wird die Erstellung der Datenbank bis zu **15 Minuten** dauern. Laden Sie die Seite des [OVHcloud Kundencenters](/links/manager) neu, wenn die Datenbank nicht automatisch in der Tabelle mit den Datenbanken erscheint.
 >
 
 Wiederholen Sie diesen Vorgang so oft wie nötig, um mehrere Datenbanken zu erstellen (im Rahmen der in Ihrem Webhosting verfügbaren Datenbanken).
@@ -118,7 +118,7 @@ Sie können nun Ihre Datenbank verwenden. Hierzu benötigen Sie Ihre Anmeldeinfo
 
 Diese Informationen sind für die Verbindung von Websites mit der Datenbank unbedingt erforderlich.
 
-Um diese Verbindungsinformationen einzusehen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie auf den Tab `Datenbanken`{.action}.
+Um diese Verbindungsinformationen einzusehen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie auf den Tab `Datenbanken`{.action}.
 
 Die Verbindungsinformationen zu Ihrer Datenbank finden Sie in der angezeigten Tabelle, aus Sicherheitsgründen unter Ausnahme von Passwörtern.
 
@@ -136,7 +136,7 @@ Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder �
 
 #### Auf das phpMyAdmin-Interface zugreifen
 
-OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügung: phpMyAdmin. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
+OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügung: phpMyAdmin. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
 
 Klicken Sie in der angezeigten Tabelle auf `...`{.action} rechts neben der betreffenden Datenbank und dann im Drop-down-Menü auf `Zugang zu phpMyAdmin`{.action}.
 
@@ -150,7 +150,7 @@ Falls nötig, folgen Sie [Schritt 3](#step3) dieser Anleitung, um die Zugangsdat
 
 Für jede Webhosting-Datenbank werden täglich Snapshots erstellt (maximal 32 insgesamt). Sie können damit schnell eine frühere Version einer Datenbank über Ihr OVHcloud Kundencenter wiederherstellen.
 
-Um die verfügbaren Snapshots sowie deren Erstellungsdatum und -zeit zu einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
+Um die verfügbaren Snapshots sowie deren Erstellungsdatum und -zeit zu einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
 
 Klicken Sie in der hier angezeigten Tabelle auf das Symbol neben dem grünen Kreis. Von dort können Sie auch jedes Backup einer Datenbank herunterladen. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export)“.
 

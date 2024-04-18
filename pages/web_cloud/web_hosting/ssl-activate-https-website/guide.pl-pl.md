@@ -18,7 +18,7 @@ Dzięki hostingowi OVHcloud możesz uzyskać [certyfikat SSL](https://www.ovhclo
 
 - Posiadanie [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external} zainstalowanego na [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Posiadanie co najmniej jednej strony WWW zainstalowanej i dostępnej na Twoim hostingu OVHcloud.
-- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, sekcja `Web Cloud`{.action}.
 
 ## W praktyce
 

@@ -13,13 +13,13 @@ Access to your website’s logs and statistics is included in your web hosting p
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 To access the different statistical data and logs on your web hosting plan, perform the following actions:
 
-1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
 4. Select the web hosting plan concerned.
@@ -107,7 +107,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 You can also access the statistics/logs link directly from your Control Panel:
 
-1. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
 4. Select the web hosting plan concerned.

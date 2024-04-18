@@ -24,7 +24,7 @@ In dieser Anleitung finden Sie einige Beispiele für mögliche Problemsituatione
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
 - Sie haben mindestens einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} registriert.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich "Web Cloud".
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich "Web Cloud".
 
 ## In der praktischen Anwendung
 

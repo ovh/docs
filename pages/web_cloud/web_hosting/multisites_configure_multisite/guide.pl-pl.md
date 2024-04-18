@@ -27,7 +27,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 - Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Zarejestrowana domena lub kilka [domen](https://www.ovhcloud.com/pl/domains/){.external}.
 - Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns))
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -40,7 +40,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 ### Etap 1: zarządzanie opcją MultiSite <a name="multisite-menu"></a>
 
-Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
+Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodanych do Twojego rozwiązania hostingowego. Niektóre z nich zostały utworzone automatycznie podczas instalacji Twojego hostingu.
 

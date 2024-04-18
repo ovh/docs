@@ -24,7 +24,7 @@ El uso de software FTP durante la conexión a su [hosting Web Cloud](https://www
 ## Requisitos
 
 - Tener contratado un plan de [hosting Web Cloud](https://www.ovhcloud.com/es/web-hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -32,11 +32,11 @@ El uso de software FTP durante la conexión a su [hosting Web Cloud](https://www
 
 ![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
 
-Este mensaje en el programa [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que no ha activado la opción SFTP o SSH desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Por ese motivo, la información intercambiada entre el servidor de hosting de OVHcloud y su ordenador no se cifrará.
+Este mensaje en el programa [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que no ha activado la opción SFTP o SSH desde el [área de cliente de OVHcloud](/links/manager). Por ese motivo, la información intercambiada entre el servidor de hosting de OVHcloud y su ordenador no se cifrará.
 
 Si los datos que desea intercambiar por este medio no son confidenciales, haga clic en `Aceptar`{.action}.
 
-En caso contrario, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action} y, seguidamente, `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP-SSH`{.action}.
+En caso contrario, acceda al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP-SSH`{.action}.
 
 Si dispone de un alojamiento [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/), marque la casilla `Desactivado`{.action} en la columna `SFTP`{.action} y espere unos minutos.
 
@@ -63,7 +63,7 @@ Si no puede autenticarse, modifique su contraseña FTP siguiendo las instruccion
 
 La falta de espacio en su alojamiento compartido puede provocar fallos de funcionamiento en su sitio web al intentar modificarlo o actualizarlo.
 
-Para comprobar el espacio de almacenamiento restante del alojamiento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en `Web Cloud`{.action} y, seguidamente, en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente.
+Para comprobar el espacio de almacenamiento restante del alojamiento, conéctese al [área de cliente de OVHcloud](/links/manager). Haga clic en `Web Cloud`{.action} y, seguidamente, en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente.
 
 La cantidad de datos almacenados en el servidor de alojamiento (excluyendo las bases de datos) se muestra en la sección `Información general`{.action} > `Espacio en disco`.
 
@@ -85,7 +85,7 @@ Este enlace se instala por defecto en los alojamientos compartidos de OVHcloud. 
 
 ![site-under-construction](images/site-under-construction.png){.thumbnail}
 
-Si no ha utilizado la funcionalidad "[Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear su sitio web, deberá utilizar el programa [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para eliminar manualmente la página "Sitio en construcción".
+Si no ha utilizado la funcionalidad "[Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear su sitio web, deberá utilizar el programa [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](/links/manager) para eliminar manualmente la página "Sitio en construcción".
 
 ## Más información <a name="go-further"></a>
 

@@ -47,7 +47,7 @@ In seguito al rilevamento di un funzionamento sospetto, i nostri sistemi di sicu
 
 - Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) OVHcloud
 - Disporre delle [credenziali di accesso](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di storage FTP dell'hosting
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -75,7 +75,7 @@ Verifica la sicurezza della tua o delle tue postazioni/dispositivi informatici:
 
 > [!warning]
 >
-> Prima di modificare la password del database del tuo sito Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), aggiorna il file di configurazione del tuo sito Web per connettersi al database con la nuova password.
+> Prima di modificare la password del database del tuo sito Web dallo [Spazio Cliente OVHcloud](/links/manager), aggiorna il file di configurazione del tuo sito Web per connettersi al database con la nuova password.
 >
 > In caso contrario, la modifica della password del tuo database determinerà un blocco dell'accesso al tuo sito Web o ai tuoi servizi/clienti che lo utilizzano.
 >
@@ -162,7 +162,7 @@ SITE CHMOD 705 .
 
 #### Riattiva il tuo hosting con FTP Explorer "net2ftp"
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Web Cloud`{.action}, poi `Hosting`{.action} e clicca sulla scheda `FTP-SSH`{.action} dell'hosting in questione.
+Nello [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}, poi `Hosting`{.action} e clicca sulla scheda `FTP-SSH`{.action} dell'hosting in questione.
 
 Clicca su `FTP Explorer`{.action} e accedi al tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 

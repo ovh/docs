@@ -33,7 +33,7 @@ Pozwalają one zaoszczędzić czas potrzebny na "administrowanie serwerem" i sku
 - Zakupienie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 - Otrzymanie wiadomości e-mail potwierdzającej uruchomienie usługi.
 - Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -93,7 +93,7 @@ W takim przypadku zachęcamy do zapoznania się bezpośrednio z naszym przewodni
 ##### Przypadek nr 2 - Stwórz stronę WWW za pomocą systemu CMS
 
 OVHcloud udostępnia opcję "Moduły za 1 kliknięciem".<br>
-Po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i za pomocą hostingu możesz szybko zainstalować systemy CMS *WordPress*, *Joomla!*, *PrestaShop* i *Drupal*.
+Po zalogowaniu się do [Panelu klienta OVHcloud](/links/manager) i za pomocą hostingu możesz szybko zainstalować systemy CMS *WordPress*, *Joomla!*, *PrestaShop* i *Drupal*.
 
 Aby skorzystać z tej opcji, zapoznaj się z naszym przewodnikiem "[Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -114,7 +114,7 @@ Po włączeniu tej opcji zapoznaj się z naszym przewodnikiem "[Tworzenie konta 
 >
 > - Jeśli przenosisz stronę WWW i/lub jeśli są to adresy e-mail powiązane z nazwą domeny Twojej strony WWW, zapoznaj się z naszym przewodnikiem "[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Znajdziesz tam wszystkie kluczowe etapy migracji bez przerwy w działaniu wszystkich Twoich usług (nazwa domeny, strona WWW, adres(y) e-mail, etc.).
 >
-> - Jeśli nie przypisałeś domeny podczas zamawiania hostingu i chcesz skorzystać z opcji "adres(y) e-mail zawarty(e) w Twoim hostingu", przeprowadź tę operację ręcznie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> - Jeśli nie przypisałeś domeny podczas zamawiania hostingu i chcesz skorzystać z opcji "adres(y) e-mail zawarty(e) w Twoim hostingu", przeprowadź tę operację ręcznie w [Panelu klienta OVHcloud](/links/manager).
 
 ### Etap 4 - Sprawdź i/lub zmodyfikuj konfigurację Twojej domeny <a name="domain-configuration"></a>
 

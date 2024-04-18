@@ -29,11 +29,11 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 ## Wymagania początkowe
 
 - Posiadanie oferty [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
-Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu się przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
+Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](/links/manager){.external}. Po zalogowaniu się przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Stan ten występuje, gdy:
 
 - zbyt dużo e-maili zostało wysłanych bardzo szybko;
 - zbyt dużo e-maili zwróconych w błąd;
-- samodzielnie wyłączyłeś funkcję z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- samodzielnie wyłączyłeś funkcję z [Panelu klienta OVHcloud](/links/manager).
 
 Aby odblokować sytuację, przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
@@ -196,7 +196,7 @@ Mimo że rekomendujemy korzystanie z funkcji "mail()" PHP, hosting współdzielo
 
 > [!warning]
 > 
-> E-maile wysyłane za pomocą skryptu wykorzystującego konfigurację SMTP nie mogą być zarządzane i monitorowane za pomocą [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> E-maile wysyłane za pomocą skryptu wykorzystującego konfigurację SMTP nie mogą być zarządzane i monitorowane za pomocą [Panelu klienta OVHcloud](/links/manager).
 > 
 
 W tym celu możesz użyć następującego skryptu, zastępując jedynie wartości `Host`, `Username` i `Password` własnymi ustawieniami SMTP:

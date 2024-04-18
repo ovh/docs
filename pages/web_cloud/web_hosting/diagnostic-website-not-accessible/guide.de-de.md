@@ -29,7 +29,7 @@ Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht er
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain bzw. der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) sowie der DNS-Server.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zum Verwalten der Domain bzw. der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) sowie der DNS-Server.
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
@@ -44,7 +44,7 @@ Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht er
 > Daher empfehlen wir Ihnen dringend, die [automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#in-der-praktischen-anwendung) für alle Ihre OVHcloud Abonnements zu aktivieren.
 >
 
-Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Produkte und Dienstleistungen`{.action}.
+Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Produkte und Dienstleistungen`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}
 
@@ -56,7 +56,7 @@ Nach dieser Verlängerung ist Ihre Website innerhalb von maximal 48 Stunden verf
 
 ### Schritt 2: DNS Server überprüfen
 
-Um die Gültigkeit Ihrer [DNS Server](/pages/web_cloud/domains/dns_server_general_information) zu überprüfen, klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Domainnamen`{.action} und dann auf die Domain Ihrer Website.
+Um die Gültigkeit Ihrer [DNS Server](/pages/web_cloud/domains/dns_server_general_information) zu überprüfen, klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Domainnamen`{.action} und dann auf die Domain Ihrer Website.
 
 #### Szenario 1: keine Anomalien bei den DNS Servern
 

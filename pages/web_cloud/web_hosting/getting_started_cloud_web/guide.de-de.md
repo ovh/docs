@@ -19,7 +19,7 @@ Unser Cloud Web Hosting Angebot kombiniert 20 Jahre Webhosting-Erfahrung mit der
 - Sie verfügen über ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Angebot.
 - Sie haben die Bestätigungs-E-Mail zur Installation Ihres Cloud Web Hostings erhalten.
 - Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/), über die Ihre Website erreichbar sein wird.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie sind in Ihrem [Kundencenter](/links/manager) eingeloggt.
 
 ## In der praktischen Anwendung
 
@@ -46,7 +46,7 @@ Aktuell sind folgende Programmiersprachen verfügbar:
 - Python
 - Ruby
 
-Um zu den Runtime Engines Ihres Cloud Web Hostings zu gelangen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Web Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
+Um zu den Runtime Engines Ihres Cloud Web Hostings zu gelangen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Web Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
 
 Bei der Installation Ihres Hostings wird automatisch eine Engine erstellt und als `Standardauswahl` in der zugehörigen Tabelle angezeigt. Um eine bereits eingerichtete Runtime Engine zu bearbeiten, klicken Sie auf die drei Punkte rechts daneben und anschließend auf `Bearbeiten`{.action}. 
 
@@ -150,8 +150,8 @@ Es gibt mehrere zu OVHcloud gehörige DNS-Einträge. Wir interessieren uns an di
 
 |DNS-Eintrag|Zugehöriger Dienst|Wo finde ich den Eintrag?|
 |---|---|---|
-|A|Für die Website|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Hosting-Pakete`{.action} zum betreffenden Cloud Web Hosting. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.|
-|MX|Für E-Mails|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `E-Mails`{.action} zur betreffenden Domain. Dann suchen Sie in dem Tab `Allgemeine Informationen`{.action} die Angaben, die neben dem Punkt „MX Einträge“ stehen.|
+|A|Für die Website|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} im Bereich `Hosting-Pakete`{.action} zum betreffenden Cloud Web Hosting. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.|
+|MX|Für E-Mails|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} im Bereich `E-Mails`{.action} zur betreffenden Domain. Dann suchen Sie in dem Tab `Allgemeine Informationen`{.action} die Angaben, die neben dem Punkt „MX Einträge“ stehen.|
 
 #### 2. DNS-Einträge überprüfen oder bearbeiten
 
@@ -161,14 +161,14 @@ Nun, da Sie die DNS-Einträge für Ihr Cloud Web Hosting und Ihr OVHcloud E-Mail
 >
 > - Wenn Ihre Domain nicht die DNS-Konfiguration von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration verwaltet wird.
 > 
-> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere DNS-Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
+> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere DNS-Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](/links/manager){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
 >
 
 Lesen Sie in der folgenden Tabelle, wo Sie die entsprechenden Änderungen vornehmen:
 
 |Verwendete DNS-Konfiguration|Wo nehme ich die Änderungen vor?|
 |---|---|
-|OVHcloud|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Bearbeiten der OVHcloud DNS-Zone“](/pages/web_cloud/domains/dns_zone_edit){.external}|
+|OVHcloud|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Bearbeiten der OVHcloud DNS-Zone“](/pages/web_cloud/domains/dns_zone_edit){.external}|
 |Andere|Verwenden Sie das Interface des Anbieters, der die DNS-Konfiguration Ihrer Domain verwaltet. Bei Problemen wenden Sie sich bitte an Ihren Anbieter.|
 
 Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von bis zu 24 Stunden, bis sie voll wirksam ist. Falls Sie mehrere Domains als Multisite mit Ihrem Cloud Web Hosting verbunden haben, müssen die notwendigen Änderungen für jede Domain einzeln durchgeführt werden. 

@@ -26,7 +26,7 @@ Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego pr
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} w Panelu klienta OVHcloud.
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -45,7 +45,7 @@ Aby sprawdzić, czy Twoja strona WWW używa już adresu IPv6, użyj strony [ipv6
 
 ### Etap 1: pobrać adres IPv6 Twojego hostingu
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij przycisk `Hosting`{.action}, wybierz odpowiedni hosting i przejdź do zakładki `Informacje ogólne`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}. W sekcji `Web Cloud`{.action} kliknij przycisk `Hosting`{.action}, wybierz odpowiedni hosting i przejdź do zakładki `Informacje ogólne`{.action}.
 
 W ramce **IPv6** skopiuj wpis i przejdź do kolejnego etapu.
 

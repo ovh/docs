@@ -17,7 +17,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 
 > [!success]
 >
-> Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](/links/manager), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Pour installer **manuellement un autre CMS** (Joomla!, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -28,7 +28,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -69,7 +69,7 @@ La page suivante apparaît :
 
 Renseignez les informations demandées concernant la base de données :
 
-- *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](/links/manager).
 
 - *Identifiant* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).

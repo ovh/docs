@@ -18,13 +18,13 @@ La mayoría de los sitios web utilizan bases de datos y **C**ontent **M**anageme
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Disponer de una base de datos creada en un [alojamiento web de OVHcloud.](https://www.ovhcloud.com/es/web-hosting/){.external}
-- Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o disponer de las claves necesarias para conectarse a la base de datos.
+- Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
 
 Antes de empezar, defina el método que va a seguir para recuperar la copia de seguridad de la base de datos. Puede elegir entre varias opciones:
 
-- **Utilizar la herramienta de backup de OVHcloud** : Esta solución permite recuperar copias de seguridad de sus bases de datos desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Este método no requiere conocimientos técnicos.
+- **Utilizar la herramienta de backup de OVHcloud** : Esta solución permite recuperar copias de seguridad de sus bases de datos desde el [área de cliente de OVHcloud](/links/manager){.external}. Este método no requiere conocimientos técnicos.
 
 - **Realizar la copia de seguridad desde la interfaz web phpMyAdmin**: Este método requiere conectarse a la interfaz *phpMyAdmin* para realizar la manipulación. Para ello, es necesario conocer la interfaz *phpMyAdmin*.
 
@@ -50,7 +50,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de backup
 
 ### Obtener una copia de seguridad a través de la herramienta de OVHcloud
 
-Para acceder a la herramienta de backup de OVHcloud, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Para acceder a la herramienta de backup de OVHcloud, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el alojamiento web. A continuación, podrá elegir entre realizar una nueva copia de seguridad o recuperar una ya existente, realizando dos operaciones distintas.
 
@@ -80,7 +80,7 @@ Para descargar una copia de seguridad, haga clic en el botón `...`{.action} a l
 
 ### Recuperar una copia de seguridad desde la interfaz web phpMyAdmin
 
-Para realizar la operación, conéctese a *phpMyAdmin*. Para conocer el enlace de acceso a este último, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Para realizar la operación, conéctese a *phpMyAdmin*. Para conocer el enlace de acceso a este último, conéctese al [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el alojamiento web. Haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, seguidamente, en `Acceder a phpMyAdmin »`{.action}.
 

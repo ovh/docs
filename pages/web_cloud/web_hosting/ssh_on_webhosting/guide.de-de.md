@@ -18,7 +18,7 @@ Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-St
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot mit SSH-Zugang.
 - Sie verfügen über die erforderlichen Informationen, um sich via SSH mit Ihrem Speicherplatz zu verbinden.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 > [!warning]
 > 
@@ -28,7 +28,7 @@ Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-St
 
 ### Schritt 1: Sicherstellen, dass der SSH-Zugang aktiv ist <a name="sshcheck"></a>
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action}. Es werden nun die Informationen für Ihren Speicherplatz angezeigt. 
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action}. Es werden nun die Informationen für Ihren Speicherplatz angezeigt. 
 
 Gehen Sie in der angezeigten Tabelle zur Spalte „SSH“ und überprüfen Sie, dass der betreffende SSH-Benutzer (oder „Login“) über einen aktiven SSH-Zugang verfügt. Ist das nicht der Fall, wird der Status „Deaktiviert“ angezeigt.
 

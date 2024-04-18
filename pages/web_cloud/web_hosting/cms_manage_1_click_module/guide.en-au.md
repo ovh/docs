@@ -20,13 +20,13 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that allows you to install a 1-click module
 - A 1-click module on your web hosting plan (If you did not install one yet, follow the instructions in this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules))
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Access your website
 
-To access the public section of your website after installing a 1-click module, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the relevant hosting plan then click on the `1-click modules`{.action} tab.
+To access the public section of your website after installing a 1-click module, go to your [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the relevant hosting plan then click on the `1-click modules`{.action} tab.
 
 Next, click on the `...`{.action} button to the right of the line related to your 1-click module, then on `Access module`{.action}.
 
@@ -37,19 +37,19 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 ### Access the administrator interface
 
-To access the admin section of your 1-click module, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the relevant hosting plan then click on the `1-click modules`{.action} tab.
+To access the admin section of your 1-click module, go to your [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the relevant hosting plan then click on the `1-click modules`{.action} tab.
 
 Next, click on the `...`{.action} button to the right of the line related to your module then `Access the module's administration interface`{.action}.
 
 ### Find the administrator login of your module
 
-Click on the `1-click modules`{.action} tab in the `Hosting plans`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Your module’s admin ID will appear in the `Login` column.
+Click on the `1-click modules`{.action} tab in the `Hosting plans`{.action} section of your [OVHcloud Control Panel](/links/manager). Your module’s admin ID will appear in the `Login` column.
 
-You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
+You can also search for the email received after the creation of your module from your [OVHcloud Control Panel](/links/manager): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
 
 ### Change your module password <a name="password-change"></a>
 
-You can change the administrator password of your module via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or by going directly to the login page of your website’s admin interface.
+You can change the administrator password of your module via the [OVHcloud Control Panel](/links/manager) or by going directly to the login page of your website’s admin interface.
 Either ways, you will receive an email containing a link to reset your password.
 
 > [!primary]
@@ -58,7 +58,7 @@ Either ways, you will receive an email containing a link to reset your password.
 >
 > Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
 >
-> You can also view all emails sent by our services from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au): click on your name in the top right-hand corner of the screen, then, in the context menu, click on `Service emails`{.action}.
+> You can also view all emails sent by our services from your [OVHcloud Control Panel](/links/manager): click on your name in the top right-hand corner of the screen, then, in the context menu, click on `Service emails`{.action}.
 >
 > **Link validity period:**
 >
@@ -103,7 +103,7 @@ However, we strongly recommend using the documentation provided by your CMS publ
 
 #### Step 1: Identify the database linked to your module <a name="step1"></a>
 
-To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
+To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](/links/manager) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
@@ -125,7 +125,7 @@ To back up your website, follow the instructions of this [guide](/pages/web_clou
 > Deleting your 1-click module and its database will also delete **all of their backups**. Deleted data cannot be retrieved later on.
 >
 
-To delete your 1-click module, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on `1-click modules`{.action}.
+To delete your 1-click module, go to your [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on `1-click modules`{.action}.
 
 Then click on the `...`{.action} button to the right of the line related to your module then click on `Delete the module`{.action}.
 
@@ -136,7 +136,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 > If you have a [Personal Hosting](https://www.ovhcloud.com/en-au/web-hosting/personal-offer/) offer or if you already created all four databases of your [Pro](https://www.ovhcloud.com/en-au/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-au/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
-To complete the removal of your module, in the `Web Cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Databases`{.action} tab, then click on the `...`{.action} button on the right of the line concerning your database and on `Delete database`{.action}.
+To complete the removal of your module, in the `Web Cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](/links/manager), go to the `Databases`{.action} tab, then click on the `...`{.action} button on the right of the line concerning your database and on `Delete database`{.action}.
 
 Before attempting to install a new module again, verify that the previously requested removal tasks have been completed in the `Ongoing jobs`{.action} tab.
 

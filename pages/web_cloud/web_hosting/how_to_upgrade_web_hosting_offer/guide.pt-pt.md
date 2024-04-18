@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Objetivo
 
-A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) permite aumentar as capacidades dos seus [planos de alojamento web](https://www.ovhcloud.com/pt/web-hosting/). Assim, pode dispor de:
+A sua [Área de Cliente OVHcloud](/links/manager) permite aumentar as capacidades dos seus [planos de alojamento web](https://www.ovhcloud.com/pt/web-hosting/). Assim, pode dispor de:
 
 - de um alojamento mais potente;
 - mais espaço de armazenamento FTP;
@@ -23,7 +23,7 @@ A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 ## Requisitos
 
 - Dispor de um [plano de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Ser, no mínimo, o contacto « [Administrador](/pages/account_and_service_management/account_information/managing_contacts) » dos serviços para os quais pretende alterar a subscrição.
 
 ## Instruções
@@ -40,7 +40,7 @@ A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 ### Alterar a oferta de alojamento web <a name="modify"></a>
 
-Para alterar a sua subscrição, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o alojamento correspondente.
+Para alterar a sua subscrição, aceda à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o alojamento correspondente.
 
 No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta` e, a seguir, em `Mudar de oferta`{.action}.
 
@@ -64,7 +64,7 @@ Certifique-se de que a nova oferta inclui suficientes [bases de dados](https://w
 
 Caso contrário, elimine as bases de dados não utilizadas e, se necessário, reduza a quantidade de dados nelas contida. Esta quantidade não deverá ultrapassar a dimensão máxima das bases de dados da nova oferta. Para qualquer pedido de assistência sobre as manipulações a efetuar, contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
-Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Bases de dados`{.action} e clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, em `Recalcular o limite`{.action}.
+Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Bases de dados`{.action} e clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, em `Recalcular o limite`{.action}.
 
 ![quota](images/recalculate-quota.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Após a eliminação dos dados das suas bases de dados, recalcule o limite utili
 #### 2 - Web Cloud Databases
 
 Se utilizar a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluída com o seu alojamento web [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e pretender colocar o seu alojamento web numa oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), deverá primeiro dissociar a oferta Web Cloud Databases do seu alojamento web.<br>
-Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}. Na coluna central `Configuração`, clique no botão `...`{.action} à direita da menção `Web Cloud Databases`{.action} e, a seguir, em `Desassociar`{.action}.
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}. Na coluna central `Configuração`, clique no botão `...`{.action} à direita da menção `Web Cloud Databases`{.action} e, a seguir, em `Desassociar`{.action}.
 
 ![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}
 
@@ -85,13 +85,13 @@ Esta ação permitir-lhe-á encomendar uma oferta Web Cloud Databases independen
 Se não deseja conservar estes dados, pode igualmente eliminar o seu serviço Web Cloud Databases antes de passar para a oferta *Pro* : 
 
 1. Efetue o backup dos seus dados conforme indicado neste [guia](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no canto superior direito do rato sobre o seu nome e, a seguir, clique no ícone `Produtos e serviços`{.action}. Clique então no botão `...`{.action} à direita da linha da oferta Web Cloud Databases/SQL Privado em causa e depois em `Eliminar o meu alojamento SQL Privado`{.action}.
+2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](/links/manager). Para isso, aceda à [Área de Cliente OVHcloud](/links/manager), clique no canto superior direito do rato sobre o seu nome e, a seguir, clique no ícone `Produtos e serviços`{.action}. Clique então no botão `...`{.action} à direita da linha da oferta Web Cloud Databases/SQL Privado em causa e depois em `Eliminar o meu alojamento SQL Privado`{.action}.
 
 #### 3 - Espaço de armazenamento FTP
 
 Certifique-se de que a nova oferta oferece um espaço de armazenamento [FTP](/pages/web_cloud/web_hosting/ftp_connection) suficiente para que seja possível a importação dos ficheiros do seu alojamento atual.
 
-Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que é apresentada, encontre a quota sob a menção `Espaço de disco`.
+Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que é apresentada, encontre a quota sob a menção `Espaço de disco`.
 
 ![ftp](images/find-disk-space.png){.thumbnail}
 
@@ -99,26 +99,26 @@ Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamen
 
 Certifique-se de que a nova oferta inclui endereços de correio eletrónico suficientes disponíveis. Caso contrário, remova os endereços de e-mail não utilizados após [copiar](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) os respetivos conteúdos, se necessário.
 
-Se pretender conservar o mesmo número de caixas de correio e **antes de passar o seu alojamento web para uma oferta inferior**, é igualmente possível encomendar uma nova oferta de correio eletrónico **MX Plan**. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
+Se pretender conservar o mesmo número de caixas de correio e **antes de passar o seu alojamento web para uma oferta inferior**, é igualmente possível encomendar uma nova oferta de correio eletrónico **MX Plan**. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
 
 ![mxplan](images/change-solution.png){.thumbnail}
 
 >[!primary]
 >
-> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
+> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 >
 
 #### 5 - Mailing lists
 
 A funcionalidade [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) é opcional nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/).
 
-Para passar o seu alojamento web para uma oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Para passar o seu alojamento web para uma oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](/links/manager).
 
-Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
 
 >[!primary]
 >
-> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
+> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 >
 
 #### 6 - Utilizadores FTP
@@ -158,12 +158,12 @@ Se a opção **Boost** for adequada às suas necessidades, encontrará abaixo as
 > [!tabs]
 > **Ativar a opção Boost**
 >>>
->>> Para ativar a opção Boost, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. No quadro "Informações gerais" da página que se abrir, clique no botão `...`{.action} à direita de `Boost` e, a seguir, em `Aplicar opção boost ao serviço`{.action}.<br><br>
+>>> Para ativar a opção Boost, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. No quadro "Informações gerais" da página que se abrir, clique no botão `...`{.action} à direita de `Boost` e, a seguir, em `Aplicar opção boost ao serviço`{.action}.<br><br>
 >>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>>
 > **Desativar a opção Boost**
 >>>
->>> Para desativar a opção Boost, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Mais` e clique em `Aplicar opção boost ao serviço`{.action}.<br>
+>>> Para desativar a opção Boost, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Mais` e clique em `Aplicar opção boost ao serviço`{.action}.<br>
 >>> Aparece o quadro de utilização da opção Boost, clique em `Desativar a opção boost`{.action}.<br><br>
 >>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 

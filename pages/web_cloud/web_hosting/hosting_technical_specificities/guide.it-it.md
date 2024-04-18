@@ -17,7 +17,7 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -32,7 +32,7 @@ I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configura
 
 - Utilizza la **modalità passiva** per le connessioni FTP. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
 
-- Se riscontri l’errore di accesso "Autenticazione di connessione 530 non riuscita" durante la connessione al tuo spazio di storage FTP: assicurati che le informazioni di accesso al tuo spazio FTP siano corrette. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Clicca sulla scheda `FTP - SSH`{.action}.
+- Se riscontri l’errore di accesso "Autenticazione di connessione 530 non riuscita" durante la connessione al tuo spazio di storage FTP: assicurati che le informazioni di accesso al tuo spazio FTP siano corrette. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Clicca sulla scheda `FTP - SSH`{.action}.
 
 In questa interfaccia sono disponibili tutte le informazioni di connessione allo spazio di storage FTP, ad eccezione della password.
 
@@ -174,7 +174,7 @@ Questa guida ti mostra come [accedere allo spazio di storage FTP del tuo hosting
 > OVHcloud fornisce un servizio di backup automatico dei dati e la messa a disposizione di questi backup. *non contrattuale* ed è presente in aggiunta ai tuoi servizi. Effettivamente, è vostra responsabilità impostare la vostra propria politica di ripristino e determinare i punti di ripristino nel momento che ritenete opportuno.
 >
 
-Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in un datacenter situato a Strasburgo (SBG). La politica di conservazione dei backup è di 30 giorni.
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](/links/manager){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in un datacenter situato a Strasburgo (SBG). La politica di conservazione dei backup è di 30 giorni.
 
 Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export) nella nostra documentazione.
 

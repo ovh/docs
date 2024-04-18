@@ -21,7 +21,7 @@ Ce guide vous présente les différentes actions à réaliser pour migrer l'ense
 - Avoir accès à la zone DNS (Domain Name System) active de votre nom de domaine.
 - Avoir accès aux fichiers et à la base de données de votre site Web chez votre hébergeur actuel.
 - Disposer des identifiants (utilisateur, mot de passe, serveur) de vos adresses e-mail actuelles.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -61,7 +61,7 @@ Plusieurs offres d'hébergement mutualisé OVHcloud contiennent une offre e-mail
 
 Une fois votre offre d'hébergement choisie, si vous n'êtes pas encore client OVHcloud, cliquez sur le bouton `Commander`{.action} présent sur les pages commerciales ci-dessus. Suivez les étapes de la commande **sans demander le transfert de votre nom de domaine**.
 
-Vous pouvez aussi effectuer la commande depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, cliquez sur la partie `Web Cloud`{.action}, cliquez ensuite sur le bouton `Commander`{.action}, dans la partie supérieure gauche, puis sur `Hébergement`{.action}. Poursuivez les étapes de la commande **sans demander le transfert de votre nom de domaine**.
+Vous pouvez aussi effectuer la commande depuis votre [espace client OVHcloud](/links/manager). Une fois connecté, cliquez sur la partie `Web Cloud`{.action}, cliquez ensuite sur le bouton `Commander`{.action}, dans la partie supérieure gauche, puis sur `Hébergement`{.action}. Poursuivez les étapes de la commande **sans demander le transfert de votre nom de domaine**.
 
 Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un e-mail sera envoyé sur votre adresse e-mail de contact. Celui-ci contiendra les identifiants d'accès à l'espace de stockage FTP (File Transfert Protocol) de votre hébergement Web.
 
@@ -72,7 +72,7 @@ Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un 
 
 ### Etape 2 : créer et préconfigurer une zone DNS pour votre nom de domaine chez OVHcloud <a name="step2"></a>
 
-Lorsque votre hébergement est créé, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis créez une zone DNS pour votre nom de domaine **sans les « www »**. Vous pouvez vous aider de notre guide sur la [création d'une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Lorsque votre hébergement est créé, connectez-vous à votre [espace client OVHcloud](/links/manager) puis créez une zone DNS pour votre nom de domaine **sans les « www »**. Vous pouvez vous aider de notre guide sur la [création d'une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Une fois la zone DNS créée, accédez à sa gestion à l'aide de notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ». Si elles ne sont pas présentes, renseignez les entrées suivantes :
 

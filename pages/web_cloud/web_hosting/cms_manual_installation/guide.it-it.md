@@ -32,7 +32,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 > [!success]
 >
-> Per installare il tuo CMS **automaticamente** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), consulta la nostra guida sull'[installazione di un modulo "in un click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Per installare il tuo CMS **automaticamente** dal tuo [Spazio Cliente OVHcloud](/links/manager), consulta la nostra guida sull'[installazione di un modulo "in un click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Questa guida ti mostra come configurare un sito Web installando manualmente un CMS.**
@@ -41,7 +41,7 @@ Questa guida ti mostra come installare manualmente un CMS (Content Management Sy
 
 - Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -131,10 +131,10 @@ Consulta la nostra documentazione che descrive [come aggiungere un multisito su 
 
 - Assicurati che il dominio che utilizzerai per accedere al tuo CMS e il sottodominio in "www" puntino verso l'indirizzo IP della tua offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/).
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action} e seleziona la tua soluzione di hosting Web nella sezione `Hosting`{.action}.<br>
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} e seleziona la tua soluzione di hosting Web nella sezione `Hosting`{.action}.<br>
 Nel riquadro `Informazioni generali`{.action} sulla tua destra, clicca su `IPv4`{.action} e seleziona l'indirizzo IP del tuo hosting Web.
 
-Se la zona DNS attiva del tuo dominio è gestita dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), compara l'indirizzo IP del tuo hosting con quello presente nella zona DNS del tuo dominio, consultando la nostra documentazione sulle [zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Se la zona DNS attiva del tuo dominio è gestita dallo [Spazio Cliente OVHcloud](/links/manager), compara l'indirizzo IP del tuo hosting con quello presente nella zona DNS del tuo dominio, consultando la nostra documentazione sulle [zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >

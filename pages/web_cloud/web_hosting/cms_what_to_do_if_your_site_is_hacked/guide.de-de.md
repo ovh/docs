@@ -32,7 +32,7 @@ Ein Hack kann diverse Folgen haben (nicht erschöpfende Liste):
 ## Voraussetzungen
 
 - Ihre Webseite befindet sich auf einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -149,7 +149,7 @@ Gleichen Sie die Zeitpunkte für die Wiederherstellung Ihres FTP-Speicherplatzes
 > OVHcloud setzt Sicherheitsroboter ein, die von Ihrem Hosting ausgehende Angriffe erkennen können. Diese deaktivieren Ihr Hosting und und informieren Sie per E-Mail, dass Ihr Hosting deaktiviert wurde.
 > Zusätzlich zu dieser E-Mail erscheint in der Regel eine "403 Forbidden" Fehlerseite, wenn Sie auf Ihre Website zugreifen.
 >
-> Wenn sich Ihr Hosting im Zustand "Disabled" befindet, wird auch die über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbare Option zur automatischen Wiederherstellung deaktiviert.
+> Wenn sich Ihr Hosting im Zustand "Disabled" befindet, wird auch die über Ihr [OVHcloud Kundencenter](/links/manager) verfügbare Option zur automatischen Wiederherstellung deaktiviert.
 > Sie müssen eine "manuelle" Wiederherstellung Ihrer Website durchführen, die verbleibenden schadhaften Elemente entfernen und alle Sicherheitslücken in diesem Backup beheben. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
 >
 > Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).

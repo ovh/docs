@@ -27,7 +27,7 @@ Several error messages may appear on your browser in the event of your site bein
 ## Requirements
 
 - control over your domain’s servers and [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the [OVHcloud Control Panel](/links/manager)
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
@@ -42,7 +42,7 @@ Several error messages may appear on your browser in the event of your site bein
 > As a result, we strongly recommend that you enable [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instructions) for all of your OVHcloud subscriptions.
 >
 
-To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then click on `Products and services`{.action} within the right-hand menu.
+To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `Products and services`{.action} within the right-hand menu.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -54,7 +54,7 @@ After the renewal of your offer is completed, your website will be available wit
 
 ### Step 2: check the DNS servers
 
-To check that your [DNS servers](/pages/web_cloud/domains/dns_server_general_information) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then on your domain name.
+To check that your [DNS servers](/pages/web_cloud/domains/dns_server_general_information) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](/links/manager), then on your domain name.
 
 #### Scenario 1: no anomalies appear on the DNS servers
 

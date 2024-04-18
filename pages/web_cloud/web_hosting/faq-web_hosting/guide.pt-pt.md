@@ -12,13 +12,13 @@ updated: 2023-04-24
 
 ### Como configurar o meu alojamento?
 
-Para configurar o seu alojamento, comece por aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A partir da secção `Alojamentos`, poderá gerir os seus certificados SSL, a versão PHP, a opção CDN, o multi-site, as bases de dados, etc.
+Para configurar o seu alojamento, comece por aceder à [Área de Cliente OVHcloud](/links/manager). A partir da secção `Alojamentos`, poderá gerir os seus certificados SSL, a versão PHP, a opção CDN, o multi-site, as bases de dados, etc.
 
 **Truques e dicas**: Para o ajudar a configurar o seu alojamento, sugerimos que consulte a rubrica "Primeiros passos", que poderá encontrar [aqui](/products/web-cloud-hosting).
 
 ### Como gerir as minhas palavras-passe?
 
-Para gerir as suas palavras-passe, antes de mais tem de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se tiver esquecido o ID ou a palavra-passe, clique em `Perdeu o identificador ou a palavra-passe?`{.action}, na janela de login. Receberá um e-mail para dar início a um processo de reinicialização.
+Para gerir as suas palavras-passe, antes de mais tem de aceder à [Área de Cliente OVHcloud](/links/manager). Se tiver esquecido o ID ou a palavra-passe, clique em `Perdeu o identificador ou a palavra-passe?`{.action}, na janela de login. Receberá um e-mail para dar início a um processo de reinicialização.
 
 Também pode consultar o guia [Definir e gerir a palavra-passe da sua conta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -67,7 +67,7 @@ Para isso, clique no separador `Informações gerais`{.action} do seu alojamento
 
 Para aumentar a RAM de uma oferta Web Cloud Databases associada a um alojamento partilhado **Performance**, deverá obrigatoriamente e previamente desassociar a oferta Web Cloud Databases do seu alojamento **Performance** para migrar para uma oferta superior.
 
-Para isso, aceda à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Aceda à secção `Web Cloud`{.action}, no separador `os Alojamentos`{.action}, à esquerda. 
+Para isso, aceda à Área de Cliente OVHcloud (/links/manager). Aceda à secção `Web Cloud`{.action}, no separador `os Alojamentos`{.action}, à esquerda. 
 
 Na página `Informações gerais`{.action}, encontra-se no centro da página uma caixa intitulada `Configuração`{.action}. À direita da menção `Web Cloud Databases`{.action}, clique no botão `...`{.action} depois `Desassociar`{.action}. Escolha a duração da renovação mais curta e prossiga até à validação da encomenda.
 
@@ -84,7 +84,7 @@ Para mais informações, consulte o nosso guia sobre a ["Configuração de uma o
 
 ### O que fazer se o meu site tiver um problema de funcionamento? 
 
-Várias razões podem explicar o mau funcionamento do seu site. Para identificar a causa, comece por verificar que nenhuma das suas subscrições precisa de ser **renovada** ligando-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Várias razões podem explicar o mau funcionamento do seu site. Para identificar a causa, comece por verificar que nenhuma das suas subscrições precisa de ser **renovada** ligando-se à sua [Área de Cliente OVHcloud](/links/manager).
 
 Consulte os [eventos em curso na nossa infraestrutura](https://www.status-ovhcloud.com/). Se todos os seus serviços estiverem ativos e não forem afetados por qualquer incidente ou manutenção, sugerimos que realize um diagnóstico mais aprofundado.
 
@@ -144,7 +144,7 @@ Esta anomalia indica uma configuração errada dos [servidores DNS](/pages/web_c
 
 O caso mais comum é o seguinte: encomendou separadamente o seu nome de domínio e o seu alojamento, pelo que não estão ligados entre si através da sua zona DNS.
 
-Aceda à secção `Nomes de domínio`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no domínio em questão e, a seguir, no separador `Servidores DNS`{.action}.
+Aceda à secção `Nomes de domínio`{.action} da [Área de Cliente OVHcloud](/links/manager). Clique no domínio em questão e, a seguir, no separador `Servidores DNS`{.action}.
 
 De seguida, tome nota dos servidores DNS indicados e aceda ao separador `Zona DNS`{.action}.
 

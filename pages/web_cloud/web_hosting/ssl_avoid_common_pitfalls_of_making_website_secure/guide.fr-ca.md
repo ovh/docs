@@ -21,7 +21,7 @@ Retrouvez, dans ce tutoriel, quelques exemples de situations concernant la sécu
 
 - Posséder un [hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Avoir enregistré au moins un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
-- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie « Web cloud ».
+- Avoir accès à votre [espace client OVHcloud](/links/manager){.external}, partie « Web cloud ».
 
 ## En pratique
 

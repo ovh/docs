@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Disponer de un [plan de hosting Cloud](https://www.ovhcloud.com/es-es/web-hosting/) con su sitio web alojado en él.
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -149,7 +149,7 @@ Ajuste al máximo las fechas de restauración de su espacio de almacenamiento FT
 > OVHcloud dispone de robots de seguridad que pueden detectar acciones maliciosas realizadas desde su alojamiento. que desactivan el alojamiento y le informan por correo electrónico de que el alojamiento ha sido desactivado.
 > Para completar el email, la página "403 Forbidden" aparece por lo general cuando intenta acceder al sitio web.
 >
-Si el alojamiento está "desactivado", también se desactivarán los robots de restauración automática disponibles desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Si el alojamiento está "desactivado", también se desactivarán los robots de restauración automática disponibles desde el [área de cliente de OVHcloud](/links/manager).
 > Deberá restaurar el sitio web "manualmente", eliminar los elementos maliciosos residuales y corregir todos los fallos de seguridad presentes en el snapshot. Realice esta acción **antes** de reactivar el alojamiento.
 >
 > Para reactivar el alojamiento web, siga las indicaciones del apartado 4 de esta [guía](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).

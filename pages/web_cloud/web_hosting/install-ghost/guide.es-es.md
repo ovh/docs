@@ -21,7 +21,7 @@ Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web d
 - Tener contratado un plan de [hosting Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external} de OVHcloud.
 - Haber activado Node.js como motor de ejecución.
 - Haber añadido el dominio correspondiente como multisitio y haber establecido Node.js como motor de ejecución.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Web Cloud`{.action}.
 - Conocimientos necesarios:
     - Estar familiarizado con el ecosistema Node.js.
     - Conectarse por SSH.
@@ -31,7 +31,7 @@ Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web d
 
 ### 1. Activar el motor de ejecución Node.js
 
-Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
+Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
 
 Se mostrará una tabla con los motores de ejecución que haya añadido hasta ese momento. Asegúrese de que el motor de ejecución Node.js esté activado. Si lo está, vaya al apartado [2. Asociar Node.js a un multisitio](./#2-asociar-nodejs-a-un-multisitio).
 
@@ -244,7 +244,7 @@ Ya hemos terminado de instalar y configurar Ghost. Solo queda reiniciar el demon
 
 ### 7. Reiniciar el demonio Node.js
 
-Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Abra la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
+Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](/links/manager){.external}. Abra la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
 
 A continuación, la aplicación estará accesible desde el dominio indicado en la configuración del multisitio.
 

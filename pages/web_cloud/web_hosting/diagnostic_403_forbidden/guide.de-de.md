@@ -46,7 +46,7 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection) für den FTP-Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -74,7 +74,7 @@ Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie dies
 
 > [!warning]
 >
-> Bevor Sie Datenbankpasswörter Ihrer Website über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern, aktualisieren Sie die Konfigurationsdatei Ihrer Website, damit sie weiterhin auf die Datenbank zugreifen kann.
+> Bevor Sie Datenbankpasswörter Ihrer Website über Ihr [OVHcloud Kundencenter](/links/manager) ändern, aktualisieren Sie die Konfigurationsdatei Ihrer Website, damit sie weiterhin auf die Datenbank zugreifen kann.
 >
 > Bleibt diese Aktualisierung aus, führt die Änderung des Passworts Ihrer Datenbank dazu, dass die Website unzugänglich wird und jegliche Dienste mit Datenbankzugriff blockiert werden.
 >
@@ -162,7 +162,7 @@ SITE CHMOD 705.
 
 #### Ihr Webhosting mit dem FTP-Explorer (“net2ftp“) reaktivieren
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und öffnen Sie `Hosting-Pakete`{.action} im linken Menü. Wechseln Sie zum Tab `FTP-SSH`{.action} des betroffenen Hostings.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und öffnen Sie `Hosting-Pakete`{.action} im linken Menü. Wechseln Sie zum Tab `FTP-SSH`{.action} des betroffenen Hostings.
 
 Klicken Sie auf den Button `FTP-Explorer`{.action} und [loggen Sie sich in Ihren FTP-Speicherplatz ein](/pages/web_cloud/web_hosting/ftp_connection). 
 

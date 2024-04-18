@@ -18,11 +18,11 @@ It might become necessary to manually adjust the access settings of a service. T
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
 ### Cluster 002

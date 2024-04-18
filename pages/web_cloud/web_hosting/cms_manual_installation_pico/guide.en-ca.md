@@ -14,7 +14,7 @@ With the **CMS** (**C**ontent **M**anagement **S**ystem) Pico, you can create we
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/).
 - A [domain name](https://www.ovhcloud.com/en-ca/domains/).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 

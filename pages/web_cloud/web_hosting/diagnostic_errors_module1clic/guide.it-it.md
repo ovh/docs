@@ -25,7 +25,7 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) compatibile.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Aver utilizzato la funzionalità "[Modulo in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" per creare un nuovo sito Web.
 
 ## Procedura
@@ -39,7 +39,7 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 
 ![domainenotproposed](images/domain-unavailable.png){.thumbnail}
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web interessato dall’installazione. Nella nuova pagina clicca sulla scheda `Multisito`{.action} ed effettua le seguenti verifiche:
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web interessato dall’installazione. Nella nuova pagina clicca sulla scheda `Multisito`{.action} ed effettua le seguenti verifiche:
 
 |Scenario|Soluzione|
 |---|---| 
@@ -56,7 +56,7 @@ Questo messaggio viene visualizzato quando si avvia l’installazione del "modul
 
 Se con il tuo hosting Web non sono più inclusi database, puoi ordinare un nuovo [database Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e associarlo al tuo attuale hosting Web. In seguito sarà possibile riavviare l'installazione del "modulo in 1 click". Se hai bisogno di più spazio di storage (superiore a 1 GB), ti consigliamo di utilizzare il nostro servizio [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/).
 
-Nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web per cui vuoi aggiungere un database supplementare. Clicca sulla scheda `Database`{.action} e poi su `Azioni`{.action} per ordinare un database aggiuntivo:
+Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web per cui vuoi aggiungere un database supplementare. Clicca sulla scheda `Database`{.action} e poi su `Azioni`{.action} per ordinare un database aggiuntivo:
 
 ![order_a_database](images/order-a-db.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 > Confronta le nostre diverse [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/).
 >
 
-Nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:
+Nel tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
@@ -89,7 +89,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 > L'operazione di eliminazione di un database è definitiva. Comporta anche la cancellazione dei backup del database in questione. In caso di dubbi, contatta il tuo webmaster o uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).
 >
 
-Per eliminare un database dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato.
+Per eliminare un database dallo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato.
 
 Clicca sulla scheda `Database`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al database che vuoi eliminare e poi su `Elimina il database`{.action}:
 
@@ -129,7 +129,7 @@ Dopo aver avviato la creazione del "modulo in 1 click", hai ricevuto un’email 
 
 Questo messaggio indica che la **Cartella di root** associata al dominio contiene già uno o più file o cartelle.
 
-Per associare un dominio a un’altra directory, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `Multisito`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Modifica il dominio`{.action}. Infine, inserisci il nome di una nuova **Cartella di root** (verrà creata automaticamente una directory vuota sul tuo hosting Web).
+Per associare un dominio a un’altra directory, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `Multisito`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Modifica il dominio`{.action}. Infine, inserisci il nome di una nuova **Cartella di root** (verrà creata automaticamente una directory vuota sul tuo hosting Web).
 
 ![modify_root_folder](images/modify-domain.png){.thumbnail}
 
@@ -168,7 +168,7 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 > Confronta le nostre diverse [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
 >
 
-Nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:
+Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
@@ -182,7 +182,7 @@ Dopo aver avviato l’installazione del "modulo in 1 click" in modalità avanzat
 
 ed è quindi necessario verificare gli identificativi del database. Per trovarli, consulta questa [guida](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Elimina il "modulo in 1 click". Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `CMS in 1 click`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Elimina un modulo`{.action}.
+Elimina il "modulo in 1 click". Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `CMS in 1 click`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Elimina un modulo`{.action}.
 
 ![delete_a_module](images/delete-a-module.png){.thumbnail}
 
@@ -229,7 +229,7 @@ Verifica le credenziali di accesso [accedi direttamente](/pages/web_cloud/web_cl
 
 Hai avviato l’installazione di un "modulo in 1 click" in [modalità avanzata](/pages/web_cloud/web_hosting/cms_install_1_click_modules) su un database situato su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Questo messaggio di errore è stato ricevuto via email. Significa che il nome del database server specificato non è corretto.
 
-Per recuperare il nome del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}. Clicca su `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il database server interessato.
+Per recuperare il nome del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}. Clicca su `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il database server interessato.
 
 Nella nuova pagina, il nome del server da utilizzare è indicato nel riquadro `Informazioni di login`, sottosezione `SQL`, sotto la dicitura `Nome host`.
 

@@ -43,11 +43,11 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) with the necessary permissions to manage the Web Hosting plan 
+- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan 
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `cron`{.action} tab by selecting it in the `More`{.action} submenu.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `cron`{.action} tab by selecting it in the `More`{.action} submenu.
 
 In this section you will see an overview of your scheduled jobs and their settings.
 
@@ -127,7 +127,7 @@ Always make sure to use absolute paths to files in your scripts. The "DIR" const
  
 #### Checking your execution logs
 
-In your Web Hosting's logs, accessible from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), you will see the log category labelled "cron".
+In your Web Hosting's logs, accessible from the [OVHcloud Control Panel](/links/manager), you will see the log category labelled "cron".
 
 Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) for details.
 

@@ -27,11 +27,11 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 ## Wymagania początkowe
 
 - Zakupienie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
-Aby poznać klaster hostingu, w którym hostowana jest Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} po czym wybierz odpowiedni hosting. Następnie przejdź do zakładki `FTP - SSH`{.action}.
+Aby poznać klaster hostingu, w którym hostowana jest Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](/links/manager) wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} po czym wybierz odpowiedni hosting. Następnie przejdź do zakładki `FTP - SSH`{.action}.
 Na tej stronie możesz sprawdzić numer klastra hostingu WWW, używając **Serwer FTP**.
 
 ### Klaster 002

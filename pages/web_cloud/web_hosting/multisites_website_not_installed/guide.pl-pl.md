@@ -25,7 +25,7 @@ W przeglądarce internetowej może pojawić się komunikat o błędzie **Niezain
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [panelu klienta OVHcloud](/links/manager)
 - Zarządzanie [strefą DNS](/pages/web_cloud/domains/dns_zone_edit), do której przypisana jest Twoja domena.
 
 ## W praktyce
@@ -40,7 +40,7 @@ Poniższe kroki pozwolą Ci naprawić błąd `Strona nie została zainstalowana`
 
 ### Etap 1 - Sprawdź deklarację Twojej domeny lub subdomeny na hostingu <a name="check-multisites"></a>
 
-[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action} znajdującej się u góry strony, a następnie kliknij zakładkę `Hosting`{.action} w kolumnie z lewej strony.
+[Panel klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.action} znajdującej się u góry strony, a następnie kliknij zakładkę `Hosting`{.action} w kolumnie z lewej strony.
 
 Wybierz odpowiedni hosting z listy, następnie kliknij zakładkę `MultiSite`{.action}.
 
@@ -65,7 +65,7 @@ Etap ten polega na upewnieniu się, że Twoja domena lub subdomena wskazuje z ak
 
 #### 2\.1 Identyfikacja adresu IP hostingu OVHcloud
 
-Aby odnaleźć adres IP hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action} znajdującej się u góry strony. W kolumnie po lewej stronie kliknij zakładkę `Hosting`{.action}, po czym wybierz z listy odpowiedni hosting.
+Aby odnaleźć adres IP hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action} znajdującej się u góry strony. W kolumnie po lewej stronie kliknij zakładkę `Hosting`{.action}, po czym wybierz z listy odpowiedni hosting.
 
 Adres `IPv4` znajdziesz w ramce `Informacje ogólne`{.action}.
 
@@ -84,7 +84,7 @@ Sprawdź, czy adres IP Twojego hostingu wyświetla się w aktywnej strefie DNS T
 > Jeśli zmodyfikujesz bezpośrednio **serwery DNS** powiązane z Twoją domeną, może to potrwać do **48 godzin** maksymalnie.
 >
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action} znajdującej się u góry strony. Przejdź do sekcji `Domeny`{.action}, wybierz swoją domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
+W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action} znajdującej się u góry strony. Przejdź do sekcji `Domeny`{.action}, wybierz swoją domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
 
 Pojawi się tabela z różnymi rekordami DNS.
 

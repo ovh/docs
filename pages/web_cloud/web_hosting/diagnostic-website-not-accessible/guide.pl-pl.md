@@ -31,7 +31,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 ## Wymagania początkowe
 
 - Zarządzanie serwerami i [strefą DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns) domeny
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
 ## W praktyce
@@ -58,7 +58,7 @@ Po odnowieniu domeny Twoja strona będzie dostępna w ciągu 48 godzin.
 
 ### Etap 2: sprawdź serwery DNS
 
-Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_general_information), w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
+Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_general_information), w [Panelu klienta OVHcloud](/links/manager) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
 
 #### Scenariusz 1: brak anomalii na serwerach DNS
 

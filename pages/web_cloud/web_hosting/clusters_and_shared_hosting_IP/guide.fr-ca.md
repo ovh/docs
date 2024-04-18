@@ -22,12 +22,12 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 - Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 
 ## En pratique
 
-Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement Web concerné. Ensuite, accédez à l'onglet `FTP - SSH`{.action}.
+Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, connectez-vous à l'[espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement Web concerné. Ensuite, accédez à l'onglet `FTP - SSH`{.action}.
 Vous pouvez vérifier le numéro de cluster de l'hébergement Web sur cette page sous **Serveur FTP**.
 
 ### Cluster 002

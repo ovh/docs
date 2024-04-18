@@ -15,7 +15,7 @@ For our new [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-off
 - a [Cloud Web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/)
 - an email confirming that your hosting plan has been set up
 - a [domain name](https://www.ovhcloud.com/en-ie/domains/) for your website
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -42,7 +42,7 @@ The languages currently available are:
 - Python
 - Ruby
 
-To access the runtime software applications for your [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
+To access the runtime software applications for your [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/) hosting plan, log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
 
@@ -146,8 +146,8 @@ There are several OVHcloud DNS records. We will focus on two particular records,
 
 |DNS record|Associated service|Where to find it|
 |---|---|---|
-|A|For the website|In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
-|MX|For emails|In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
+|A|For the website|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
+|MX|For emails|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
 
 #### 2. Check and/or modify the DNS records.
 
@@ -157,14 +157,14 @@ Now that you are more familiar with the OVHcloud DNS records for your [Cloud Web
 >
 > - If your domain name does not use the OVHcloud DNS configuration, you will need to make changes using the interface given by the service provider managing your domain name.
 > 
-> - If your domain name is registered with OVHcloud, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, select the domain name concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](/links/manager){.external}, select the domain name concerned, and go to the `DNS servers`{.action} tab.
 >
 
 Please read the instructions below to see where you should make the changes:
 
 |DNS configuration used|Where to make the changes|
 |---|---|
-|OVHcloud|In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit){.external}.|
+|OVHcloud|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit){.external}.|
 |Other|From the interface given by the service provider managing your domain name’s DNS configuration. Please contact your service provider if you encounter any difficulties making these changes.|
 
 Once you have modified your domain name’s DNS configuration, you will need to allow a maximum of 24 hours for the changes to fully propagate and take effect. If you have added several domain names to your Cloud Web hosting plan as a multisite, you will need to make these two changes for each individual domain name. 

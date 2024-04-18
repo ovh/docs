@@ -17,7 +17,7 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 > [!success]
 >
-> Pour installer Joomla! **automatiquement** depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Pour installer Joomla! **automatiquement** depuis votre [espace client OVHcloud](/links/manager), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Pour installer **manuellement un autre CMS** (WordPress, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -28,7 +28,7 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -96,7 +96,7 @@ Pour les bases de données créées sur un Web Cloud Databases, référez-vous a
 
 - *Saisissez soit un mot de passe que vous avez créé, soit un mot de passe fourni par votre hébergeur* : vous l'avez vous-même défini lors de la création de votre base de données. Il est également possible que vous l'ayez modifié entre temps, nous vous invitons à le vérifier.
 
-- *Entrer le nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Il est identique au nom d'utilisateur de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
+- *Entrer le nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](/links/manager). Il est identique au nom d'utilisateur de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 
 - *Saisissez un préfixe de table ou utilisez celui qui est généré de manière aléatoire* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 

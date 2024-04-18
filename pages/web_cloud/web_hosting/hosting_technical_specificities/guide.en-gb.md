@@ -13,7 +13,7 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -28,7 +28,7 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 
 - Use **passive mode** for FTP connections. Make sure that your script or FTP client is configured accordingly.
 
-- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space: Make sure that the access information to your FTP space is correct. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that opens, click on the `FTP - SSH`{.action} tab.
+- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space: Make sure that the access information to your FTP space is correct. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that opens, click on the `FTP - SSH`{.action} tab.
 
 It will contain all of the information required to log in to your FTP storage space, with the exception of the password.
 
@@ -170,7 +170,7 @@ Find out how to [log in to your Web Hosting plan’s FTP storage space](/pages/w
 > OVHcloud provides an automatic data backup service, as well as the provision of these backups. However, this function is *non-contractual* and is provided in addition to your services. It remains your responsibility to set up your own restoration policy, and to determine restore points at times you deem appropriate.
 >
 
-For shared databases (included in your Web Hosting plan) or database servers (Web Cloud Databases) offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. These backups are accessible via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or via the [OVHcloud API](https://api.ovh.com/). Backups are also stored on another infrastructure. This data is replicated in a data centre in Strasbourg (SBG). The backup retention policy is 30 days.
+For shared databases (included in your Web Hosting plan) or database servers (Web Cloud Databases) offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. These backups are accessible via the [OVHcloud Control Panel](/links/manager){.external} or via the [OVHcloud API](https://api.ovh.com/). Backups are also stored on another infrastructure. This data is replicated in a data centre in Strasbourg (SBG). The backup retention policy is 30 days.
 
 Find out how to [Retrieve a backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export) in our documentation.
 

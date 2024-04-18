@@ -33,7 +33,7 @@ La pirateria può manifestarsi in diversi modi (elenco non esaustivo):
 ## Prerequisiti
 
 - Disporre di una [offerta di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) con il tuo sito Web ospitato su
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -150,7 +150,7 @@ Fai coincidere il più possibile le date di ripristino del tuo spazio di storage
 > OVHcloud dispone di robot di sicurezza in grado di rilevare azioni malevoli eseguite dal tuo hosting. che disattivano il tuo hosting e ti avvisano via email che il tuo hosting è stato disattivato.
 > In aggiunta a questa email, in genere compare una pagina "403 Forbidden" quando cerchi di accedere al tuo sito.
 >
-> Se il tuo hosting è "disattivato", i robot di ripristino automatico disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) saranno disattivati.
+> Se il tuo hosting è "disattivato", i robot di ripristino automatico disponibili nello [Spazio Cliente OVHcloud](/links/manager) saranno disattivati.
 > È necessario effettuare un ripristino "manuale" del sito, eliminare gli elementi malevoli residui e correggere eventuali falle di sicurezza presenti nel backup. Questa operazione **prima** di riattivare il tuo hosting.
 >
 > Per riattivare l'hosting Web, segui le istruzioni riportate nello Step 4 di questa [guida](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).

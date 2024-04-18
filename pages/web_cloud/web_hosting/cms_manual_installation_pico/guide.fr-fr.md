@@ -14,7 +14,7 @@ Le **CMS** (**C**ontent **M**anagement **S**ystem) Pico permet de créer rapidem
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 

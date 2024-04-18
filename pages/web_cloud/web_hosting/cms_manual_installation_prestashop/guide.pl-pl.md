@@ -21,7 +21,7 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 > [!success]
 >
-> Aby zainstalować PrestaShop **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu "za jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Aby zainstalować PrestaShop **automatycznie** z poziomu [Panelu klienta OVHcloud](/links/manager), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu "za jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Aby zainstalować **ręcznie inny CMS** (WordPress, Joomla!, Drupal), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -32,7 +32,7 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 - Posiadanie oferty[hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
   
 ## W praktyce
 
@@ -119,7 +119,7 @@ Wpisz wymagane informacje dotyczące bazy danych:
 > - Nazwa serwera bazy danych Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** odnosi się do twojego identyfikatora OVHcloud bez **"-ovh"**, a **"X"** należy zastąpić pozostałą częścią odniesienia do usługi Web Cloud Databases.
 >
 
-- *Database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- *Database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](/links/manager).
 
 - *Database login*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
 W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku ["Ręczna instalacja CMS"](/pages/web_cloud/web_hosting/cms_manual_installation) w punkcie **etap 1.4**) .

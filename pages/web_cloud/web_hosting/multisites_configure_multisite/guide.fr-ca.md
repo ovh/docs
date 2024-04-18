@@ -23,7 +23,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 - Disposer d'une offre [d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
 - Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns)).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -36,7 +36,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 ### Étape 1 : accéder à la gestion multisite <a name="multisite-menu"></a>
 
-Tout d'abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
+Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
 
 Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajoutés à votre solution d'hébergement web. Certains d’entre eux ont été créés automatiquement lors de l’installation de votre hébergement.
 

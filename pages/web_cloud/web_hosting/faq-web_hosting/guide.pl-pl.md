@@ -12,13 +12,13 @@ updated: 2023-04-24
  
 ### W jaki sposób skonfigurować moją usługę hostingu?
 
-W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Hosting` możesz zarządzać certyfikatami SSL, wersjami PHP, opcją CDN, stronami podpiętymi w opcji MultiSite, bazami danych, itp.
+W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](/links/manager). W sekcji `Hosting` możesz zarządzać certyfikatami SSL, wersjami PHP, opcją CDN, stronami podpiętymi w opcji MultiSite, bazami danych, itp.
 
 **Wskazówki i porady**: Aby pomóc Ci w skonfigurowaniu Twojego hostingu, zapoznaj się z sekcją "*Pierwsze kroki*", którą zobaczysz [tutaj](/products/web-cloud-hosting).
 
 ### Jak zarządzać swoimi hasłami?
 
-Aby zarządzać swoimi hasłami, musisz najpierw zalogować się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeżeli nie pamiętasz swojego loginu lub hasła, kliknij opcję `Nie pamiętasz identyfikatora klienta lub hasła?`{.action} znajdującą się pod okienkiem logowania. Zostanie do Ciebie wysłana wiadomość e-mail z procedurą przywracania danych.
+Aby zarządzać swoimi hasłami, musisz najpierw zalogować się do Twojego [panelu klienta OVHcloud](/links/manager). Jeżeli nie pamiętasz swojego loginu lub hasła, kliknij opcję `Nie pamiętasz identyfikatora klienta lub hasła?`{.action} znajdującą się pod okienkiem logowania. Zostanie do Ciebie wysłana wiadomość e-mail z procedurą przywracania danych.
 
 Zapoznaj się również z przewodnikiem [Tworzenie i zarządzanie hasłem do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -67,7 +67,7 @@ W tym celu kliknij zakładkę `Informacje ogólne`{.action} Twojego hostingu. W 
 
 Aby zwiększyć pamięć RAM w ofercie WWW Cloud Databases powiązanej z hostingiem współdzielonym **Performance**, należy najpierw odłączyć ofertę Web Cloud Databases od hostingu **Performance**, aby przejść na wyższą ofertę.
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji `Web Cloud`{.action}, a następnie na odpowiedni hosting po lewej stronie w zakładce `Hosting`{.action}. 
+W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager). Przejdź do sekcji `Web Cloud`{.action}, a następnie na odpowiedni hosting po lewej stronie w zakładce `Hosting`{.action}. 
 
 Na stronie `Informacje ogólne`{.action}, która się wyświetla znajdziesz ramkę zatytułowaną `Konfiguracja`{.action} w centrum strony. Po prawej stronie pozycji `Web Cloud Databases`{.action} kliknij przycisk `...`{.action} a następnie na `Odłącz`{.action}. Wybierz najkrótszy okres odnowienia i postępuj zgodnie z instrukcjami aż do zatwierdzenia zamówienia.
 
@@ -84,7 +84,7 @@ Więcej informacji znajdziesz w naszym przewodniku dotyczącym ["Konfiguracji us
 
 ### Co zrobić w przypadku awarii mojej strony www? 
 
-Istnieje kilka powodów, dla których Twoja strona WWW nie działa. Aby zidentyfikować przyczynę takiej sytuacji, sprawdź, czy żaden z subskrypcji nie musi zostać **odnowiony** po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Istnieje kilka powodów, dla których Twoja strona WWW nie działa. Aby zidentyfikować przyczynę takiej sytuacji, sprawdź, czy żaden z subskrypcji nie musi zostać **odnowiony** po zalogowaniu się do [Panelu klienta OVHcloud](/links/manager).
 
 Następnie sprawdź bieżące [wydarzenia na naszej infrastrukturze](https://www.status-ovhcloud.com/). Jeśli wszystkie Twoje usługi są aktywne i nie mają wpływu na jakiekolwiek incydenty lub prace konserwacyjne, wykonaj dokładniejszą diagnostykę.
 
@@ -144,7 +144,7 @@ Ta nieprawidłowość wskazuje na nieprawidłową konfigurację [serwery DNS](/p
 
 Najczęstszym przypadkiem jest: zamówiłeś oddzielnie domenę i hosting, więc nie są one ze sobą połączone za pomocą strefy DNS.
 
-Przejdź do sekcji `Domeny`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij odpowiednią domenę, a następnie zakładkę `Serwery DNS`{.action}.
+Przejdź do sekcji `Domeny`{.action} w Twoim [Panelu klienta OVHcloud](/links/manager). Kliknij odpowiednią domenę, a następnie zakładkę `Serwery DNS`{.action}.
 
 Następnie zapisz wskazane serwery DNS i przejdź do zakładki `Strefa DNS`{.action}.
 

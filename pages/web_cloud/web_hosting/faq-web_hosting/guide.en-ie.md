@@ -8,13 +8,13 @@ updated: 2023-04-24
 
 ### How do I configure my hosting space?
 
-To configure your hosting, first log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Hosting plans` section, you can manage your SSL certificates, the PHP version, the CDN option, the multisite, databases, etc.
+To configure your hosting, first log in to the [OVHcloud Control Panel](/links/manager). In the `Hosting plans` section, you can manage your SSL certificates, the PHP version, the CDN option, the multisite, databases, etc.
 
 **Tips and tricks**: To help you configure your hosting, please check the `Getting started` section [here](/pages/web_cloud/web_hosting/hosting_first_steps_with_web_hosting).
 
 ### How do I manage my passwords?
 
-To manage your passwords, first log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). If you have forgotten your username or password, click on `Forgotten your username or password`{.action} in the login window. You will be sent an email with the reset procedure.
+To manage your passwords, first log in to the [OVHcloud Control Panel](/links/manager). If you have forgotten your username or password, click on `Forgotten your username or password`{.action} in the login window. You will be sent an email with the reset procedure.
 
 You can also refer to our guide [Setting and managing an account password](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -63,7 +63,7 @@ To do this, click on the `General information`{.action} tab on your web hosting 
 
 To increase the RAM for a Web Cloud Databases service linked to a **Performance** hosting plan, you will need detach it from your **Performance** web hosting plan beforehand in order to switch to a higher plan.
 
-To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Go to the `Web Cloud`{.action} section, then click on the relevant hosting plan in the `Hosting plans`{.action} section in the left-hand column. 
+To do this, log in to your [OVHcloud Control Panel](/links/manager). Go to the `Web Cloud`{.action} section, then click on the relevant hosting plan in the `Hosting plans`{.action} section in the left-hand column. 
 
 On the new `General information`{.action} page that appears, you will see a box labelled `Configuration`{.action} in the centre of the page. To the right of `Web Cloud Databases`{.action}, click on the `...`{.action} button then `Detach`{.action}. Select the shortest renewal duration, then continue until you confirm your order.
 
@@ -80,7 +80,7 @@ You can find more information in our guide on [Configuring a Web Cloud Databases
 
 ### What do I do if my website isn't working properly? 
 
-There are several reasons why your website might not be working properly. To identify the cause, start by verifying that none of your subscriptions need to be **renewed** by logging into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+There are several reasons why your website might not be working properly. To identify the cause, start by verifying that none of your subscriptions need to be **renewed** by logging into your [OVHcloud Control Panel](/links/manager).
 
 Then check out the [current events on our infrastructure](https://www.status-ovhcloud.com/). If all of your services are active and are not affected by any incidents or maintenance, please carry out a more in-depth diagnostic.
 
@@ -140,7 +140,7 @@ This anomaly indicates an incorrect configuration in the [DNS servers](/pages/we
 
 The most common case is: If you have ordered your domain name and Web Hosting plan separately, they will not be linked via their DNS zone.
 
-Go to the `Domain names`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Click on the domain name concerned, then on the `DNS servers`{.action} tab.
+Go to the `Domain names`{.action} section of the [OVHcloud Control Panel](/links/manager). Click on the domain name concerned, then on the `DNS servers`{.action} tab.
 
 Then note down the DNS servers listed and go to the `DNS zone`{.action} tab.
 

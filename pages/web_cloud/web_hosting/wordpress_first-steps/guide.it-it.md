@@ -26,7 +26,7 @@ Questa guida ti mostra come creare i tuoi primi contenuti, organizzarli, metterl
 - Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Aver [installato Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sul tuo hosting Web
-- Avere accesso allo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo[Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 

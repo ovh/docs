@@ -21,7 +21,7 @@ Questa guida ti mostra come installare manualmente il CMS (Content Management Sy
 
 > [!success]
 >
-> Per installare WordPress **automaticamente** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), consulta la nostra guida sull'[installazione di un modulo "in un click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Per installare WordPress **automaticamente** dal tuo [Spazio Cliente OVHcloud](/links/manager), consulta la nostra guida sull'[installazione di un modulo "in un click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Per installare **manualmente un altro CMS** (Joomla!, Drupal, PrestaShop), consulta la nostra guida sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -32,7 +32,7 @@ Questa guida ti mostra come installare manualmente il CMS (Content Management Sy
 
 - Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -73,7 +73,7 @@ Visualizzi questa pagina:
 
 Inserisci le informazioni richieste relative al database:
 
-- *Database Name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- *Database Name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](/links/manager).
 
 - *Username*: è identico al nome del database se utilizzi un database incluso con il tuo hosting Web.
 Per i database creati su un Web Cloud Databases, consulta le informazioni indicate nello **Step 1.4** del tutorial sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation)

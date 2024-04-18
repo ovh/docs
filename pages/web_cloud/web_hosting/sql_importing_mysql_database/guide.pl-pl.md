@@ -15,15 +15,15 @@ Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Posiadanie bazy danych utworzonej w ramach [pakietu hostingowego WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Posiadanie kopii zapasowej danych, które chcesz importować do bazy lub które chcesz przywrócić
-- W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
+- W zależności od metody importu, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
 ## W praktyce
 
 Przed rozpoczęciem operacji określ metodę, której użyjesz do importu kopii zapasowej do odpowiedniej bazy danych.  W zależności od Twoich kompetencji technicznych masz do wyboru kilka możliwości.
 
-- **Przywrócenie bazy danych z wcześniejszej daty**: rozwiązanie to umożliwia przywrócenie zawartości Twoich baz danych dzięki kopiom zapasowym zapisanym w narzędziu do tworzenia kopii zapasowych OVHcloud. Rozwiązanie to nie wymaga specjalnych kompetencji technicznych, a operację można przeprowadzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- **Przywrócenie bazy danych z wcześniejszej daty**: rozwiązanie to umożliwia przywrócenie zawartości Twoich baz danych dzięki kopiom zapasowym zapisanym w narzędziu do tworzenia kopii zapasowych OVHcloud. Rozwiązanie to nie wymaga specjalnych kompetencji technicznych, a operację można przeprowadzić w [Panelu klienta](/links/manager){.external}.
 
-- **Import pliku z kopią zapasową**: rozwiązanie to umożliwia import danych z pliku kopii zapasowej do jednej z Twoich baz danych.  Operacja ta przeprowadzana jest w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- **Import pliku z kopią zapasową**: rozwiązanie to umożliwia import danych z pliku kopii zapasowej do jednej z Twoich baz danych.  Operacja ta przeprowadzana jest w [Panelu klienta](/links/manager){.external}.
 
 - **Import realizowany w interfejsie phpMyAdmin**: rozwiązanie wymaga zalogowania się do interfejsu phpMyAdmin. Aby skorzystać z tej metody, konieczna jest znajomość interfejsu phpMyAdmin. Ponadto należy pamiętać, że plik kopii zapasowej nie może przekraczać określonego rozmiaru.
 
@@ -44,7 +44,7 @@ Przejdź do metody importu, która Cię interesuje opisanej w dalszej części d
 
 ### Przywracanie kopii zapasowej w Panelu klienta.
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, którą chcesz przywrócić do wcześniejszej daty, a następnie kliknij `Przywróć kopię zapasową`{.action}. Pamiętaj, że operacja ta spowoduje zastąpienie zawartości aktualnej bazy danych zawartością kopii zapasowej.
 
@@ -58,7 +58,7 @@ Kliknij trzy kropki po prawej stronie kopii zapasowej, którą chcesz przywróci
 
 ### Import Twojej kopii zapasowej w Panelu klienta.
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, do której chcesz importować dane, a następnie kliknij `Importuj plik`{.action}.
 
@@ -91,7 +91,7 @@ Po dokonaniu wyboru, kliknij przycisk `Zatwierdź`{.action}, następnie zaczekaj
 
 ### Import za pomocą interfejsu phpMyAdmin
 
-W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 

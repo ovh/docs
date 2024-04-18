@@ -17,7 +17,7 @@ Die OVHcloud Webhosting-Angebote basieren auf einer geteilten Infrastruktur (*sh
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -31,7 +31,7 @@ Die OVHcloud Webhosting-Angebote basieren auf einer geteilten Infrastruktur (*sh
 
 - Für FTP-Verbindungen ist der **passive Modus** zu verwenden. Stellen Sie sicher, dass Ihr Skript oder Ihr FTP-Client entsprechend konfiguriert ist.
 
-- Wenn beim Anmelden bei Ihrem FTP-Speicherplatz der Zugriffsfehler "Fehler 530: Login-Authentifizierung fehlgeschlagen" auftritt: Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Speicherplatz korrekt sind. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf `FTP - SSH`{.action}.
+- Wenn beim Anmelden bei Ihrem FTP-Speicherplatz der Zugriffsfehler "Fehler 530: Login-Authentifizierung fehlgeschlagen" auftritt: Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Speicherplatz korrekt sind. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf `FTP - SSH`{.action}.
 
 Dort finden Sie alle Login-Daten zu Ihrem FTP-Speicherplatz mit Ausnahme des Passworts.
 
@@ -172,7 +172,7 @@ In unserer Dokumentation erfahren Sie, wie Sie sich mit dem [FTP-Speicherplatz I
 > OVHcloud stellt einen Dienst zur automatischen Datensicherung und zur Wiederherstellung dieser Backups bereit. Es handelt sich jedoch um eine nicht-vertragliche Zusatzleistung. Es liegt in Ihrer Verantwortung, eine geeignete Backup-Strategie einzusetzen und Wiederherstellungspunkte zu Zeiten zu bestimmen, die Sie für angebracht halten.
 >
 
-Für in Webhostings enthalten Datenbanken oder Datenbankserver (Web Cloud Databases) in Gravelines (GRA), Frankreich und Beauharnois (BHS), Kanada wird täglich ein Backup der Datenbanken durchgeführt. Diese Backups sind verfügbar (über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [OVHcloud API](https://api.ovh.com/)). Die Backups werden zusätzlich auf einer anderen Infrastruktur gespeichert. Diese Daten werden in einem Rechenzentrum in Straßburg (SBG) repliziert. Die Aufbewahrungsfrist für Backups beträgt 30 Tage.
+Für in Webhostings enthalten Datenbanken oder Datenbankserver (Web Cloud Databases) in Gravelines (GRA), Frankreich und Beauharnois (BHS), Kanada wird täglich ein Backup der Datenbanken durchgeführt. Diese Backups sind verfügbar (über das [OVHcloud Kundencenter](/links/manager){.external} oder über die [OVHcloud API](https://api.ovh.com/)). Die Backups werden zusätzlich auf einer anderen Infrastruktur gespeichert. Diese Daten werden in einem Rechenzentrum in Straßburg (SBG) repliziert. Die Aufbewahrungsfrist für Backups beträgt 30 Tage.
 
 In unserer Dokumentation erfahren Sie, wie Sie [Backups einer Webhosting-Datenbank abrufen](/pages/web_cloud/web_hosting/sql_database_export).
 

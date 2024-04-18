@@ -18,13 +18,13 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 
 - Tener contratado un plan de [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos.
 - Disponer de una base de datos disponible en "creación" entre las que se incluyen en el plan de hosting. Si lo necesita, puede añadir bases de datos [Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) a su alojamiento web.
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) con los [permisos necesarios](/pages/account_and_service_management/account_information/managing_contacts) para gestionar el alojamiento web.
+- Tener acceso al [área de cliente de OVHcloud](/links/manager) con los [permisos necesarios](/pages/account_and_service_management/account_information/managing_contacts) para gestionar el alojamiento web.
 
 ## Procedimiento
 
 ### Etapa 1 - Acceder a la pestaña de gestión de las bases de datos de un alojamiento web
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección "Web Cloud" de la página {.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea crear una base de datos y abra la pestaña `Bases de datos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección "Web Cloud" de la página {.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea crear una base de datos y abra la pestaña `Bases de datos`{.action}.
 
 La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 
@@ -98,7 +98,7 @@ Asegúrese de que toda la información mostrada en el resumen es correcta. En es
 
 > [!primary]
 >
-> Al hacer clic en `Aceptar`{.action}, la creación de la base de datos puede tardar hasta **15 minutos**. Recargue la página web de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) si la base de datos no aparece automáticamente en la tabla que enumera sus bases de datos.
+> Al hacer clic en `Aceptar`{.action}, la creación de la base de datos puede tardar hasta **15 minutos**. Recargue la página web de su [área de cliente de OVHcloud](/links/manager) si la base de datos no aparece automáticamente en la tabla que enumera sus bases de datos.
 >
 
 Repita este proceso tantas veces como desee para crear varias bases de datos (con el límite de las bases de datos disponibles en su plan).
@@ -118,7 +118,7 @@ Ya puede utilizar su base de datos. Para ello, necesitará su información de co
 
 Esta información es esencial para que el sitio web pueda conectarse a la base de datos.
 
-Si necesita más información sobre la conexión, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}.
+Si necesita más información sobre la conexión, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con toda la información relativa a la conexión a la base de datos. Esto excepto *password* por motivos de seguridad.
 
@@ -136,7 +136,7 @@ Según el programa utilizado, es posible que esta conexión necesite ser configu
 
 #### Acceder a la interfaz phpMyAdmin
 
-OVHcloud ofrece una herramienta en línea para la gestión de bases de datos llamada phpMyAdmin. Para acceder a la aplicación, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}. En la tabla que se abre, haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, a continuación, haga clic en `Acceder a phpMyAdmin`{.action} en el menú desplegable.
+OVHcloud ofrece una herramienta en línea para la gestión de bases de datos llamada phpMyAdmin. Para acceder a la aplicación, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}. En la tabla que se abre, haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, a continuación, haga clic en `Acceder a phpMyAdmin`{.action} en el menú desplegable.
 
 ![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Si lo necesita, consulte el [Etapa 3](#step3) de esta guía para obtener la info
 
 Para cada base de datos de alojamiento web, se crean snapshots automáticamente cada día (hasta un máximo de 32). Puede restaurar rápidamente una versión anterior de una base de datos desde el área de cliente de OVHcloud.
 
-Para comprobar los snapshots disponibles, así como la fecha y hora de su creación, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección "Web Cloud" de la página {.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera consultar los snapshots disponibles para su base de datos. A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el símbolo situado junto al círculo verde. También puede descargar cada copia de seguridad de una base de datos desde ese mismo lugar. Para más información, consulte nuestra guía "[Recuperar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)".
+Para comprobar los snapshots disponibles, así como la fecha y hora de su creación, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección "Web Cloud" de la página {.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera consultar los snapshots disponibles para su base de datos. A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el símbolo situado junto al círculo verde. También puede descargar cada copia de seguridad de una base de datos desde ese mismo lugar. Para más información, consulte nuestra guía "[Recuperar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)".
 
 #### Entender los problemas comunes
 

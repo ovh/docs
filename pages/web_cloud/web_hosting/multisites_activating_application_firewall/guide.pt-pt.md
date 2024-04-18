@@ -27,11 +27,11 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 
 - Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Dispor de, pelo menos, um [domínio](https://www.ovhcloud.com/pt/domains/){.external} associado ao alojamento.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action}. Na barra à esquerda, clique em `Alojamentos`{.action} e, a seguir, no alojamento correspondente.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager){.external} e selecione `Web Cloud`{.action}. Na barra à esquerda, clique em `Alojamentos`{.action} e, a seguir, no alojamento correspondente.
 
 ### Ativar a firewall aplicativa na configuração PHP
 

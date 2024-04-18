@@ -33,7 +33,7 @@ che permettono di risparmiare tempo sull’"amministrazione server" e di concent
 - Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -93,7 +93,7 @@ In questo caso, è possibile consultare la guida "[Mettere online un sito Intern
 ##### Caso n°2 - Creare un sito Web utilizzando un CMS
 
 OVHcloud mette a disposizione l’opzione "Moduli in 1 click".<br>
-Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e tramite il tuo hosting Web, questa opzione permette di installare rapidamente i CMS *WordPress*, *Joomla!*, *PrestaShop* e *Drupal*.
+Una volta connesso allo [Spazio Cliente OVHcloud](/links/manager) e tramite il tuo hosting Web, questa opzione permette di installare rapidamente i CMS *WordPress*, *Joomla!*, *PrestaShop* e *Drupal*.
 
 Per utilizzare questa opzione, consulta la nostra guida "[Installare il tuo sito Web con un 'CMS in 1 click'](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -114,7 +114,7 @@ Una volta attivata l’opzione, consulta la nostra guida "[Creare un account ema
 >
 > - In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc...).
 >
-> - Se non hai associato un dominio al momento dell’ordine del tuo hosting Web e vuoi usufruire dell’opzione "indirizzo/i email incluso/i con il tuo hosting Web", è necessario effettuare l’operazione manualmente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> - Se non hai associato un dominio al momento dell’ordine del tuo hosting Web e vuoi usufruire dell’opzione "indirizzo/i email incluso/i con il tuo hosting Web", è necessario effettuare l’operazione manualmente dallo [Spazio Cliente OVHcloud](/links/manager).
 
 ### Step 4 - Verifica e/o modifica la configurazione del dominio <a name="domain-configuration"></a>
 

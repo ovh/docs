@@ -38,7 +38,7 @@ Dans de rares cas, les lenteurs d'affichage peuvent aussi provenir de votre four
 ## Prérequis
 
 - Disposer d'un site hébergé sur l'une de nos offres d'[hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -94,7 +94,7 @@ Tous les diagnostics de l'étape 1 doivent être réalisés **sans exception** a
 
 Pour être sûr que vos services (hébergement mutualisé **et** base de données) ne font pas l'objet d'une maintenance ou d'un incident, récupérez les informations sur le cluster et le filer de votre hébergement mutualisé ainsi que les informations générales relatives à votre base de données. Vous pourrez ensuite vérifier leur statut sur [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le `filer` où il se trouve.
+Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le `filer` où il se trouve.
 
 ![Récupérer Filer](images/find-filer.png){.thumbnail}
 
@@ -243,7 +243,7 @@ Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous 
 
 > [!primary]
 >
-> OVHcloud propose plusieurs [offres CDN](https://www.ovhcloud.com/fr-ca/web-hosting/options/). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud propose plusieurs [offres CDN](https://www.ovhcloud.com/fr-ca/web-hosting/options/). Si vous souhaitez en utiliser ou en activer une pour votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) puis consultez notre guide sur [l'utilisation du CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - optimisez votre base de données

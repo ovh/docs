@@ -33,7 +33,7 @@ Isto permite-lhe poupar tempo "administração de servidores" e concentrar-se ap
 - Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Ter um [domínio](https://www.ovhcloud.com/pt/domains/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -93,7 +93,7 @@ Neste caso, siga diretamente o nosso guia "[Publicar um site num alojamento web]
 ##### Caso n°2 - Criar um website utilizando um CMS
 
 A OVHcloud oferece-lhe a opção "Módulos 1 clique".<br>
-Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e o alojamento web alojado, poderá instalar rapidamente os CMS *WordPress*, *Joomla!*, *PrestaShop* e *Drupal*.
+Depois de aceder à [Área de Cliente OVHcloud](/links/manager) e o alojamento web alojado, poderá instalar rapidamente os CMS *WordPress*, *Joomla!*, *PrestaShop* e *Drupal*.
 
 Para utilizar esta opção, consulte o guia "[Instalar o seu website com um 'módulo 1 clique' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -114,7 +114,7 @@ Uma vez ativada a opção, consulte o guia "[Criar um endereço de e-mail com a 
 >
 > - Se estiver a migrar um website e/ou se se tratar de endereços de e-mail associados ao nome de domínio do seu website, consulte o nosso guia "[Como migrar um site e e-mails para a OVHcloud?](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Irá encontrar todas as etapas chave para migrar sem interrupção o conjunto dos seus serviços (nome de domínio, site, endereço(s) de e-mail, etc.).
 >
-> - Se não tiver associado um domínio durante a encomenda do seu alojamento web e pretender beneficiar da opção "endereço(s) de e-mail incluído(s) com o seu alojamento web", deverá efetuar a operação manualmente a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> - Se não tiver associado um domínio durante a encomenda do seu alojamento web e pretender beneficiar da opção "endereço(s) de e-mail incluído(s) com o seu alojamento web", deverá efetuar a operação manualmente a partir da sua [Área de Cliente OVHcloud](/links/manager).
 
 ### Etapa 4 - Verificar e/ou alterar a configuração do seu domínio <a name="domain-configuration"></a>
 

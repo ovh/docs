@@ -17,7 +17,7 @@ This tutorial will help you install PrestaShop CMS (Content Management System) m
 
 > [!success]
 >
-> To install PrestaShop **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install PrestaShop **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > To manually **install another CMS** (WordPress, Joomla!, Drupal), please refer to our documentation on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -28,7 +28,7 @@ This tutorial will help you install PrestaShop CMS (Content Management System) m
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that contains at least one database
 - A [domain name](https://www.ovhcloud.com/asia/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -115,7 +115,7 @@ Enter the information requested for the database:
 > - The server name of a Web Cloud Databases database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your Web Cloud Databases service.
 >
 
-- *Database name*: This name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- *Database name*: This name was defined when the database was created in the [OVHcloud Control Panel](/links/manager).
 
 - *Database login*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS tutorial](/pages/web_cloud/web_hosting/cms_manual_installation).
 

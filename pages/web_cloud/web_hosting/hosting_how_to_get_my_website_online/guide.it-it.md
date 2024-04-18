@@ -19,7 +19,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 - Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} attivo, che corrisponderà all’indirizzo del sito
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
@@ -68,7 +68,7 @@ Per accedere allo spazio di storage sono necessari:
 
 Questi dati sono indicati nell’email di conferma dell’installazione dell'hosting Web.
 
-Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}. 
+Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}. 
 
 ![Installazione sito](images/tab-pro.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Se stai migrando un sito, contatta il tuo precedente provider per recuperare il 
 
 Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
-Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
+Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.
 
 ![Installazione sito](images/tab.png){.thumbnail}

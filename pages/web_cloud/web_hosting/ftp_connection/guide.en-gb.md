@@ -13,7 +13,7 @@ OVHcloud web hosting plans provide you with access to an FTP storage space, whic
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 > [!primary]
 > Only **Pro** and **Performance** web hosting plans allow SSH connections and multiple FTP users to be activated.
@@ -32,12 +32,12 @@ To connect to your FTP storage space, you will need the following:
 
 > [!primary]
 >
-> These elements were sent to you in the email informing you that your web hosting plan has been set up after completing your order. You can access them via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+> These elements were sent to you in the email informing you that your web hosting plan has been set up after completing your order. You can access them via your [OVHcloud Control Panel](/links/manager){.external}.
 >
 > **If you already have these items**, proceed directly to step 2 "[Access your storage space](#ftp_storage_access)" in this guide.
 >
 
-If you do not have this information at hand, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. Click on the `Hosting plans`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, then go to the `FTP - SSH`{.action} tab. 
+If you do not have this information at hand, log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. Click on the `Hosting plans`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, then go to the `FTP - SSH`{.action} tab. 
 
 The information associated with your storage space will then appear, along with a table listing the FTP and SSH users created on your web hosting plan.
 

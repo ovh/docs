@@ -19,7 +19,7 @@ La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza n
 - Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Cloud Web
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) attivo, che corrisponderà all’indirizzo del tuo sito
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -46,7 +46,7 @@ I linguaggi di programmazione disponibili sono:
 - Python
 - Ruby
 
-Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} nella barra dei servizi a sinistra e scegli il nome del tuo Cloud Web. Infine, posizionati sulla scheda `Programma d’esecuzione`{.action}.
+Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca su `Hosting`{.action} nella barra dei servizi a sinistra e scegli il nome del tuo Cloud Web. Infine, posizionati sulla scheda `Programma d’esecuzione`{.action}.
 
 Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modifica`{.action}. 
 
@@ -150,8 +150,8 @@ Esistono diversi record DNS relativi a OVHcloud. Ci concentreremo in particolare
 
 |Record DNS|Servizio associato|Dove recuperarlo?|
 |---|---|---|
-|A|Per il sito Internet|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} e seleziona il tuo hosting Cloud Web. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.|
-|MX|Per le email|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} e seleziona il tuo dominio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action}.|
+|A|Per il sito Internet|Nello [Spazio Clienti OVHcloud](/links/manager){.external}, clicca su `Hosting`{.action} e seleziona il tuo hosting Cloud Web. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.|
+|MX|Per le email|Nello [Spazio Clienti OVHcloud](/links/manager){.external}, clicca su `Email`{.action} e seleziona il tuo dominio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action}.|
 
 #### 6.2. Verificare e modificare i record DNS
 
@@ -161,14 +161,14 @@ Adesso che conosci i record DNS relativi al tuo Cloud Web e il tuo servizio di p
 >
 > - Se il tuo dominio non utilizza i DNS di OVHcloud, è necessario effettuare la modifica tramite l’interfaccia del provider che gestisce i nameserver del tuo dominio.
 > 
-> - Se il tuo dominio è registrato presso OVHcloud, puoi verificare se utilizza i nostri DNS accedendo allo [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Server DNS`{.action} e seleziona il tuo dominio.
+> - Se il tuo dominio è registrato presso OVHcloud, puoi verificare se utilizza i nostri DNS accedendo allo [Spazio Clienti OVHcloud](/links/manager){.external} > `Server DNS`{.action} e seleziona il tuo dominio.
 >
 
 Segui le indicazioni sottostanti per sapere dove effettuare le operazioni:
 
 |Configurazione DNS utilizzata|Dove effettuare le operazioni?|
 |---|---|
-|OVHcloud|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.|
+|OVHcloud|Nello [Spazio Clienti OVHcloud](/links/manager){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.|
 |Altro|Attraverso l’interfaccia del provider che gestisce la configurazione DNS del tuo dominio. Ti suggeriamo inoltre di contattarlo se trovi difficoltà nello svolgere queste operazioni.|
 
 Una volta modificata la configurazione DNS del tuo dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore. Se hai aggiunto più domini al tuo hosting Cloud Web come Multisito, è necessario ripetere queste due operazioni per ciascun dominio. 

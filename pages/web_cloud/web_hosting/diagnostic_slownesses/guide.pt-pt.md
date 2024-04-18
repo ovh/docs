@@ -42,7 +42,7 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 ## Requisitos
 
 - Dispor de um site alojado numa das nossas ofertas de [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -98,7 +98,7 @@ Todos os diagnósticos da etapa 1 devem ser realizados **sem exceção** para de
 
 Para ter a certeza de que os seus serviços (alojamento partilhado **e** base de dados) não são objeto de manutenção ou incidente, recupere as informações sobre o cluster e file do seu alojamento partilhado, assim como as informações gerais relativas à sua base de dados. De seguida, poderá verificar o seu estado em [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
+Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
 
 ![Recuperar Filer](images/find-filer.png){.thumbnail}
 
@@ -249,7 +249,7 @@ Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, 
 
 > [!primary]
 >
-> A OVHcloud oferece várias [ofertas CDN](https://www.ovhcloud.com/pt/web-hosting/options/). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e consulte o nosso guia sobre [utilização do CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> A OVHcloud oferece várias [ofertas CDN](https://www.ovhcloud.com/pt/web-hosting/options/). Se pretender utilizá-los ou ativar um para o seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e consulte o nosso guia sobre [utilização do CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - otimize a sua base de dados

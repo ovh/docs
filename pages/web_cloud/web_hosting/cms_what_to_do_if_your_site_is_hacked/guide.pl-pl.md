@@ -32,7 +32,7 @@ Piractwo może pojawić się na kilka sposobów (niewyczerpująca lista):
 ## Wymagania początkowe
 
 - Posiadanie [hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/) na Twojej stronie WWW z hostingiem
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -149,7 +149,7 @@ Wybierz maksymalnie dwie daty przywrócenia przestrzeni dyskowej FTP i bazy dany
 > OVHcloud dysponuje robotami bezpieczeństwa, które mogą wykrywać złośliwe operacje wykonywane z poziomu Twojego hostingu. Strony dezaktywują Twój hosting i powiadamiają e-mail, że Twój hosting został wyłączony.
 > Jako uzupełnienie tego e-maila, zazwyczaj pojawia się strona "403 Forbidden", gdy próbujesz wejść na Twoją stronę.
 >
-> Jeśli Twój hosting jest wyłączony, roboty przywracania automatycznego dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) zostaną również wyłączone.
+> Jeśli Twój hosting jest wyłączony, roboty przywracania automatycznego dostępne w [Panelu klienta OVHcloud](/links/manager) zostaną również wyłączone.
 > Musisz wykonać ręczne przywracanie strony, usunąć pozostałości złośliwych elementów, a następnie usunąć luki bezpieczeństwa występujące w kopii zapasowej. To **przed** włączyć hosting.
 >
 > Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).

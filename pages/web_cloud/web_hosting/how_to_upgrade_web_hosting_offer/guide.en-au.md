@@ -6,7 +6,7 @@ updated: 2023-09-19
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), you can increase the capacity of your [web hosting plans](https://www.ovhcloud.com/en-au/web-hosting/). A subscription upgrade provides the following advantages:
+In your [OVHcloud Control Panel](/links/manager), you can increase the capacity of your [web hosting plans](https://www.ovhcloud.com/en-au/web-hosting/). A subscription upgrade provides the following advantages:
 
 - More powerful hosting
 - More FTP storage space
@@ -19,7 +19,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
+- Access to the [OVHcloud Control Panel](/links/manager) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
 
 ## Instructions
 
@@ -39,7 +39,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 > If you would like to change your subscription to a lower plan, please follow the steps in our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
-To modify your subscription, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the hosting plan concerned.
+To modify your subscription, go to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the hosting plan concerned.
 
 In the `Plan` box, click the `...`{.action} button to the right of `Solution`, then `Change plan`{.action}.
 
@@ -62,12 +62,12 @@ If the **Boost** option is right for you, please find instructions below on how 
 > [!tabs]
 > **Enable the Boost option**
 >>
->> To enable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
+>> To enable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
 >>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
 >>
->> To disable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
+>> To disable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
 >> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.<br><br>
 >>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 

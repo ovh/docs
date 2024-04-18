@@ -24,7 +24,7 @@ However, if you experience any difficulties completing some of these steps, plea
 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
 - having the [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- access to the [OVHcloud Control Panel](/links/manager)
 - access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
 ## Instructions

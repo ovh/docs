@@ -18,7 +18,7 @@ Por isso, a alteração da palavra-passe de uma base de dados deve ser sempre ef
 
 - No [ficheiro de configuração](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-1-identificar-a-base-de-dados-do-modulo) do seu site através do [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection);
 
-- **E** no servidor que contém a base de dados através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- **E** no servidor que contém a base de dados através da [Área de Cliente OVHcloud](/links/manager).
 
 Enquanto esta alteração não for efetuada **nestes dois locais**, o seu site irá apresentar um "[erro de ligação à base de dados](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
@@ -43,7 +43,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 ## Requisitos
 
 - Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou a um [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
 - Ter acesso às credenciais FTP para aceder ao [espaço de armazenamento do alojamento](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -51,7 +51,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 
 ### Etapa 1: identificar o ficheiro de configuração do seu site <a name="step1"></a>
 
-Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
+Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Para determinar o caso aplicável ao seu website, no ficheiro de configuração 
 - Para o DRUPAL: o nome aparece na rubrica **"database"**;
 - Para PRESTASHOP: o nome aparece em **"database_name"**.
 
-De seguida, volte à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na secção `Web Cloud`{.action}:
+De seguida, volte à sua [Área de Cliente OVHcloud](/links/manager) na secção `Web Cloud`{.action}:
 
 - Aceda à secção `Alojamentos`{.action} e, a seguir, ao alojamento correspondente;
 - Clique no separador `Bases de dados`{.action} **à direita** do ecrã;
@@ -191,9 +191,9 @@ Guarde esta modificação.
 
 Novamente, dois casos são possíveis: 
 
-- Se a base de dados estiver na parte da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dedicada ao seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), siga as [instruções](#case1).
+- Se a base de dados estiver na parte da [Área de Cliente OVHcloud](/links/manager) dedicada ao seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), siga as [instruções](#case1).
 
-- Se a sua base de dados estiver na parte da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dedicada às suas ofertas [Web Cloud Databases](/products/web-cloud-clouddb), siga as [instruções](#case2).
+- Se a sua base de dados estiver na parte da sua [Área de Cliente OVHcloud](/links/manager) dedicada às suas ofertas [Web Cloud Databases](/products/web-cloud-clouddb), siga as [instruções](#case2).
 
 #### Caso n°1: a base de dados do seu site faz parte da sua oferta de alojamento <a name="case1"></a>
 

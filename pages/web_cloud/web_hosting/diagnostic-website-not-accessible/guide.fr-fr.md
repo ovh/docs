@@ -27,7 +27,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 ## Prérequis
 
 - Avoir la gestion des serveurs et de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) de votre domaine
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique
@@ -42,7 +42,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 > De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 >
 
-Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
+Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](/links/manager), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -54,7 +54,7 @@ Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
 ### Étape 2 : vérifier les serveurs DNS
 
-Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information), dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
+Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information), dans votre [espace client OVHcloud](/links/manager) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
 #### Scénario 1 : aucune anomalie sur les serveurs DNS
 

@@ -18,7 +18,7 @@ Your database is a central part of building your dynamic website. During the lif
 ## Requirements
 
 - You are using a [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) and/or [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) solution. The two databases concerned must be created beforehand in order to use the replication tool.
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have sufficient rights to all database services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## Instructions
@@ -40,7 +40,7 @@ Depending on your situation, the path to your source database is different.
 
 #### Start SQL database
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Hosting plans`{.action} tab, then click on the web hosting plan that contains the source database you want to duplicate.
+In your [OVHcloud Control Panel](/links/manager), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Hosting plans`{.action} tab, then click on the web hosting plan that contains the source database you want to duplicate.
 
 ![Hosting list](images/web-hosting-selection.png){.thumbnail}
 
@@ -50,7 +50,7 @@ By clicking on the `Databases`{.action} tab, you will see a list of your Start S
 
 #### Web Cloud Databases
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Web Cloud Databases`{.action} tab, then select the Web Cloud Databases server that contains the source database you want to duplicate.
+In your [OVHcloud Control Panel](/links/manager), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Web Cloud Databases`{.action} tab, then select the Web Cloud Databases server that contains the source database you want to duplicate.
 
 ![WCD Server List](images/wcdb-server-selection.png){.thumbnail}
 
@@ -76,7 +76,7 @@ You can choose between a [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/
 
 > [!primary]
 >
-> When you purchase your new database, it is not activated by default. To enable it, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and go to the `Web Cloud`{.action} section.
+> When you purchase your new database, it is not activated by default. To enable it, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section.
 > 
 > - For a Shared SQL database: Follow our guide on [Creating a database on your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 > - For a database on a Web Cloud Databases server: Follow our guide [Creating a database on a Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server).

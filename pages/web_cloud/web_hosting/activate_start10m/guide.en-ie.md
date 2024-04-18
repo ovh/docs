@@ -12,7 +12,7 @@ With [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting
 >
 > This 100 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.
 > It is also suitable if you do not need several "MX plan" email accounts. 
-> If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/) directly from our website or your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+> If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/) directly from our website or your [OVHcloud Control Panel](/links/manager){.external}.
 >
 
 **Find out how to activate your 100M free hosting plan**
@@ -20,11 +20,11 @@ With [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} in your OVHcloud Control Panel, detached from any web hosting plan, and with no associated [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
-- Access to the [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- Access to the [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} in your [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Domain names`{.action}, then choose the domain name concerned.
+Log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Domain names`{.action}, then choose the domain name concerned.
 
 In the **General information** box , you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}.
 
@@ -38,7 +38,7 @@ The activation window will appear. **Step 1** will detail the plan and its price
 >
 > If you tick one or both of the `DNS A record` and `DNS MX record` boxes, this will overwrite the configuration originally set up in your domain's DNS zone.
 >
-> If your DNS zone is not managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, you will need to make the modifications manually in your external DNS zone.
+> If your DNS zone is not managed in your [OVHcloud Control Panel](/links/manager){.external}, you will need to make the modifications manually in your external DNS zone.
 >
 > For more details, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 >
@@ -50,7 +50,7 @@ The activation window will appear. **Step 1** will detail the plan and its price
 
 > [!primary]
 >
-> If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from 100M free hosting to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+> If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from 100M free hosting to a **Personal** hosting plan from your [OVHcloud Control Panel](/links/manager){.external}.
 >
 > To switch to the **Pro** or **Performance** plan, you will need to switch from the 100M free hosting plan to the **Personal** plan beforehand.
 >

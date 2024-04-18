@@ -31,7 +31,7 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

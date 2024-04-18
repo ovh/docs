@@ -27,7 +27,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/).
 - Dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -46,7 +46,7 @@ Declare o seu novo nome de domínio através da nossa documentação sobre a [ad
 Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 - O seu novo domínio deve apontar para a mesma "pasta raiz" que o domínio utilizado atualmente para aceder ao seu site.
-- Verifique que o seu novo domínio aponta para o endereço IP correto do seu alojamento partilhado. Para obter o endereço IP, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Web cloud`{.action}, clique nos `Alojamentos`{.action}, selecione o seu alojamento e recupere **o IPv4** no separador `Informações gerais`{.action}.
+- Verifique que o seu novo domínio aponta para o endereço IP correto do seu alojamento partilhado. Para obter o endereço IP, aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web cloud`{.action}, clique nos `Alojamentos`{.action}, selecione o seu alojamento e recupere **o IPv4** no separador `Informações gerais`{.action}.
 
 > [!warning]
 >

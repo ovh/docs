@@ -20,7 +20,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 > [!success]
 >
-> Um Drupal **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Um Drupal **automatisch** in Ihrem [OVHcloud Kundencenter](/links/manager) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Um ein **anderes CMS manuell** zu installieren (Joomla!, WordPress, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -31,7 +31,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 - Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
   
 ## In der praktischen Anwendung
 
@@ -80,7 +80,7 @@ Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf 
 
 - *Database type*: Wählen Sie aus den angebotenen Optionen den Typ Ihrer Datenbank aus.
 
-- *Database name*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
+- *Database name*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](/links/manager) definiert.
 
 - *Database username*: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 

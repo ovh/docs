@@ -27,7 +27,7 @@ Su hosting Cloud Web dispone de un espacio de almacenamiento en el que podrá al
 ## Requisitos
 
 - Tener un [hosting Cloud Web.](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 - Tener acceso a la dirección de correo electrónico de contacto asociada a su ID de cliente.
 
 ## Procedimiento
@@ -43,13 +43,13 @@ OVHcloud solo podrá ofrecer las copias de seguridad antes mencionadas, siempre 
 
 ### Obtener una copia de seguridad
 
-A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaurar el espacio FTP en un clic desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+A diferencia de los alojamientos compartidos de OVHcloud, no es posible restaurar el espacio FTP en un clic desde el [área de cliente de OVHcloud](/links/manager){.external}.
 
 Se genera un enlace de descarga de la copia de seguridad y se envía por correo electrónico a la dirección de correo electrónico asociada al ID de cliente administrador del hosting Cloud Web.
 
 #### Paso 1 - Generar el enlace de recuperación enviado por correo electrónico
 
-Para generar el enlace de recuperación, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el Cloud Web correspondiente. 
+Para generar el enlace de recuperación, conéctese al [área de cliente de OVHcloud](/links/manager){.external}, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el Cloud Web correspondiente. 
 
 Seleccione la pestaña `FTP - SSH`{.action} y haga clic en el botón `Generar una copia de seguridad`{.action} a la derecha.
 
@@ -65,7 +65,7 @@ Se abrirá una segunda ventana en la que deberá indicar que el enlace de recupe
 
 Haga clic en `Confirmar`{.action} para aceptar su solicitud.
 
-Si la generación de la copia de seguridad se ha iniciado correctamente, aparecerá el siguiente mensaje en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}:
+Si la generación de la copia de seguridad se ha iniciado correctamente, aparecerá el siguiente mensaje en el [área de cliente de OVHcloud](/links/manager){.external}:
 
 ![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](/pag
 
 > [!primary]
 >
-> Utilice los puertos indicados en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} para conectarse por SFTP y SSH, ya que el puerto 22 no funcionará para su hosting Cloud Web.
+> Utilice los puertos indicados en el [área de cliente de OVHcloud](/links/manager){.external} para conectarse por SFTP y SSH, ya que el puerto 22 no funcionará para su hosting Cloud Web.
 >
 
 ## Más información 

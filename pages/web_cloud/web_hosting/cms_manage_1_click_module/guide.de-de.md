@@ -24,13 +24,13 @@ updated: 2022-09-05
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Sie 1-Klick-Module installieren können (ausgenommen  [Kostenloses Hosting 100M](/pages/web_cloud/web_hosting/activate_start10m)).
 - Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Login zu Ihrer Seite
 
-Um nach der Installation eines 1-Klick-Moduls auf den öffentlichen Teil Ihrer Website zuzugreifen, gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
+Um nach der Installation eines 1-Klick-Moduls auf den öffentlichen Teil Ihrer Website zuzugreifen, gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Zugang zum Modul`{.action}.
 
@@ -41,19 +41,19 @@ Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modu
 
 ### Administrator-Interface
 
-Um auf den Administratorbereich Ihrer Website zuzugreifen, gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
+Um auf den Administratorbereich Ihrer Website zuzugreifen, gehen Sie im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr Modul und dann auf `Zum Verwaltungsinterface des Moduls`{.action}.
 
 ### Administrator-Login
 
-Klicken Sie im Bereich `Hosting-Pakete`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Tab `1-Klick-Module`{.action}. Die Administrator-ID Ihres Moduls wird in der Spalte `Login` angezeigt.
+Klicken Sie im Bereich `Hosting-Pakete`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) auf den Tab `1-Klick-Module`{.action}. Die Administrator-ID Ihres Moduls wird in der Spalte `Login` angezeigt.
 
-Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `E-Mails vom Support`{.action}.
+Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr [OVHcloud Kundencenter](/links/manager) abrufen: Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `E-Mails vom Support`{.action}.
 
 ### Passwort Ihres Moduls ändern <a name="password-change"></a>
 
-Sie können das Passwort Ihres Moduls über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern oder direkt auf die Login-Seite Ihrer Website zum Administrator-Bereich gehen.
+Sie können das Passwort Ihres Moduls über Ihr [OVHcloud Kundencenter](/links/manager) ändern oder direkt auf die Login-Seite Ihrer Website zum Administrator-Bereich gehen.
 
 In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesandt.
 
@@ -63,7 +63,7 @@ In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesan
 >
 > Überprüfen Sie in der betreffenden Mailbox die Ordner für `Spam`{.action} und `Gelöschte Elemente`{.action}.
 >
-> Sie finden auch alle von unseren Diensten versendeten E-Mails über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de): Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `E-Mails vom Support`{.action}.
+> Sie finden auch alle von unseren Diensten versendeten E-Mails über Ihr [OVHcloud Kundencenter](/links/manager): Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `E-Mails vom Support`{.action}.
 >
 > **Laufzeit der Links:**
 >
@@ -83,7 +83,7 @@ In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesan
 > Ist das nicht der Fall, folgen Sie der offiziellen Dokumentation des verwendeten CMS oder kontaktieren Sie direkt den Herausgeber des CMS.
 >
 
-Um das Passwort für den Zugang zum Verwaltungsinterface Ihrer Website zu ändern, gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
+Um das Passwort für den Zugang zum Verwaltungsinterface Ihrer Website zu ändern, gehen Sie im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Passwort ändern`{.action}. Klicken Sie auf `Bestätigen`{.action}. Sie erhalten in einigen Minuten per E-Mail einen Link um Ihr Passwort zurückzusetzen.
 
@@ -109,7 +109,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modu
 
 #### Schritt 1: Die zu Ihrem Modul gehörige Datenbank identifizieren <a name="step1"></a>
 
-Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
+Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
 
 Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
 
@@ -133,7 +133,7 @@ Folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/ex
 > Die Löschung Ihres 1-Klick-Moduls und seiner Datenbank zieht auch die Löschung **aller entsprechenden Backups** nach sich. Die gelöschten Daten können danach nicht mehr abgerufen werden.
 >
 
-Um Ihr 1-Klick-Modul zu löschen, gehen Sie in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, das betreffende Hosting und dann auf `1-Klick-Module`{.action}.
+Um Ihr 1-Klick-Modul zu löschen, gehen Sie in Ihr [OVHcloud Kundencenter](/links/manager), klicken Sie auf `Web Cloud`{.action}, `Hosting-Pakete`{.action}, das betreffende Hosting und dann auf `1-Klick-Module`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr Modul und dann auf den Befehl `Das Modul löschen`{.action}.
 
@@ -144,7 +144,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr M
 > Wenn Sie über ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) verfügen oder bereits vier Datenbanken auf Ihrem [Pro Hosting](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance Hosting](https://www.ovhcloud.com/de/web-hosting/performance-offer/) erstellt haben, müssen Sie **ZUERST** die im [ersten Schritt](#step1) identifizierte Datenbank löschen, um ein neues 1-Klick-Modul erstellen zu können.
 >
 
-Um die Löschung Ihres Moduls abzuschließen, gehen Sie in im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}. Klicken Sie auf `...`{.action} rechts neben der Datenbank und wählen Sie `Die Datenbank löschen`{.action} aus.
+Um die Löschung Ihres Moduls abzuschließen, gehen Sie in im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}. Klicken Sie auf `...`{.action} rechts neben der Datenbank und wählen Sie `Die Datenbank löschen`{.action} aus.
 
 Überprüfen Sie im Tab `Aktuelle Tasks`{.action}, dass die zuvor ausgelösten Lösch-Tasks abgeschlossen sind bevor Sie die Installation eines neuen Moduls starten.
 

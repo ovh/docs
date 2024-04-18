@@ -21,7 +21,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting).
 
 ## W praktyce
@@ -71,7 +71,7 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 - adres serwera;
 - port połączenia z serwerem.
 
-Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta](/links/manager){.external} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
 ![instalacja strony www](images/tab-pro.png){.thumbnail}
 
@@ -118,7 +118,7 @@ Jeśli przenosisz istniejącą stronę WWW do OVHcloud, pobierz bazę danych od 
 
 Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external},[Web Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
-Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
+Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](/links/manager){.external} i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
 
 Następnie kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 

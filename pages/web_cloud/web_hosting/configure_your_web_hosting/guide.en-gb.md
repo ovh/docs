@@ -17,7 +17,7 @@ However, on our shared infrastructure, you can modify the following settings for
 
 These configuration settings can be modified in two ways:
 
-- In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- In your [OVHcloud Control Panel](/links/manager)
 - In the FTP storage space of your OVHcloud web hosting plan using a file named ".ovhconfig"
 
 > [!primary]
@@ -27,7 +27,7 @@ These configuration settings can be modified in two ways:
 > They contain the values of the elements mentioned above.
 >
 
-In short, changing your Web Hosting plan’s configuration from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), or changing the values in the .ovhconfig file is the same as doing the same.
+In short, changing your Web Hosting plan’s configuration from the [OVHcloud Control Panel](/links/manager), or changing the values in the .ovhconfig file is the same as doing the same.
 
 ### Summary
 
@@ -43,7 +43,7 @@ In short, changing your Web Hosting plan’s configuration from the [OVHcloud Co
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, with the exception of a [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/)
-- Access to your web hosting plan in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), or via [FTP login](/pages/web_cloud/web_hosting/ftp_connection)
+- Access to your web hosting plan in the [OVHcloud Control Panel](/links/manager), or via [FTP login](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions
 
@@ -114,7 +114,7 @@ Although OVHcloud manages the installation of the latest PHP versions on its ser
 
 You can find out which PHP version is currently used by your web hosting plan in two ways:
 
-- **In the OVHcloud Control Panel**: Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information`{.action} tab, find the version below *Global PHP version*. 
+- **In the OVHcloud Control Panel**: Log in to the [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information`{.action} tab, find the version below *Global PHP version*. 
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
 
@@ -187,7 +187,7 @@ Now that you know the different editable settings for your OVHcloud Web Hosting 
 
 #### 2.1 - Access Web Hosting plan configuration management
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Make sure you are positioned on the tab
+Log in to your [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. Make sure you are positioned on the tab
 `General information`{.action}. On the right-hand side of `Global PHP version`{.action} located almost in the center of the page, click the `...`{.action} button, then `Modify configuration`{.action}.
 
 ![hostingconfiguration](images/modify-hosting-configuration.png){.thumbnail}
@@ -196,7 +196,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 >
 > If the `Modify configuration`{.action} button is greyed out, it may be that the **global PHP version** is being verified. If this is the case, a blue round symbol will appear next to the version, indicating that a check is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
 >
-> If the `Global PHP version`{.action} option does not appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), check that the *.ovhconfig* file exists in the FTP root of your OVHcloud web hosting plan.
+> If the `Global PHP version`{.action} option does not appear in your [OVHcloud Control Panel](/links/manager), check that the *.ovhconfig* file exists in the FTP root of your OVHcloud web hosting plan.
 >
 > Find all the information about the *.ovhconfig* file in the third part “[Method 2: Modify your Web Hosting plan’s configuration with the “.ovhconfig” file](#setting-ovhconfig)” of this guide.
 >
@@ -225,7 +225,7 @@ Once you are ready, click `Confirm`{.action} to apply the modification. Wait a f
 
 You will need your primary FTP username, its password, and the FTP server address.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the web hosting plan concerned. Go to the `FTP - SSH`{.action} tab. Here, you will find the information you need to log in.
+Log in to your [OVHcloud Control Panel](/links/manager){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the web hosting plan concerned. Go to the `FTP - SSH`{.action} tab. Here, you will find the information you need to log in.
 
 For the FTP user password, please refer to our guide on [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password) if necessary.
 
@@ -345,7 +345,7 @@ Once you have modified the .ovhconfig file, upload it to your [FTP storage space
 
 If you use your web hosting plan to host several websites on it (in *multisites*), there are various reasons why you may want to use a different PHP version for some of your *multisites*.
 
-Create a .ovhconfig file containing the PHP version you want for the *multisites* concerned. Use the instructions in the section [3.3 - Modify the content of the .ovhconfig file](#update-ovhconfig) of this guide, if required. When you upload the .ovhconfig file to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), do so in the root folder where the files that make up the relevant "*multisites*" website are located. You can find the root folder of your *multisites* in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Multisite`{.action} tab of the Web Hosting plan concerned.
+Create a .ovhconfig file containing the PHP version you want for the *multisites* concerned. Use the instructions in the section [3.3 - Modify the content of the .ovhconfig file](#update-ovhconfig) of this guide, if required. When you upload the .ovhconfig file to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), do so in the root folder where the files that make up the relevant "*multisites*" website are located. You can find the root folder of your *multisites* in your [OVHcloud Control Panel](/links/manager) in the `Multisite`{.action} tab of the Web Hosting plan concerned.
 
 Refer to our guide on [Configuring a multisite on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite), if required.
 

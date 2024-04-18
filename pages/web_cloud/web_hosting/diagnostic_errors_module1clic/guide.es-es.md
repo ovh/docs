@@ -25,7 +25,7 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 ## Requisitos
 
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) compatible.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Haber utilizado la funcionalidad "[Módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear un nuevo sitio web.
 
 ## Procedimiento
@@ -39,7 +39,7 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 
 ![domainenotproposed](images/domain-unavailable.png){.thumbnail}
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la nueva página, haga clic en la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la nueva página, haga clic en la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 
 |Escenario|Solución|
 |---|---|
@@ -56,7 +56,7 @@ Este mensaje aparece al iniciar la instalación de su "módulo en un clic" cuand
 
 Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar una nueva [base de datos Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y asociarla a su alojamiento web actual. A continuación, podrá reiniciar la instalación del "módulo en un clic". Si necesita más espacio de almacenamiento (superior a 1 GB), le recomendamos que utilice nuestro servicio [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/).
 
-En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento web al que quiera añadir una base de datos adicional. En la nueva página, haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
+En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento web al que quiera añadir una base de datos adicional. En la nueva página, haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
 
 ![order_a_database](images/order-a-db.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 > Consultar la comparativa de nuestras distintas soluciones [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/).
 >
 
-En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action} :
+En su [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action} :
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
@@ -89,7 +89,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 > La operación de eliminación de una base de datos es permanente. Esta operación también implica la eliminación de las copias de seguridad de la base de datos correspondiente. En caso de duda, póngase en contacto con su webmaster o con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).
 >
 
-Para eliminar una base de datos de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+Para eliminar una base de datos de su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 
 A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a la base de datos que desea suprimir y seleccione `Eliminar la base de datos`{.action}:
 
@@ -129,7 +129,7 @@ Después de haber iniciado la creación de su "módulo en un clic", ha recibido 
 
 Este mensaje significa que la **Carpeta raíz** asociada al dominio ya contiene uno o varios archivos o carpetas.
 
-Para asociar su dominio a otro directorio, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, haga clic en la pestaña `Multisitio`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Modificar el dominio`{.action}. Por último, indique el nombre de un nuevo **Carpeta raíz** (se creará automáticamente un directorio vacío en su alojamiento web).
+Para asociar su dominio a otro directorio, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, haga clic en la pestaña `Multisitio`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Modificar el dominio`{.action}. Por último, indique el nombre de un nuevo **Carpeta raíz** (se creará automáticamente un directorio vacío en su alojamiento web).
 
 ![modify_root_folder](images/modify-domain.png){.thumbnail}
 
@@ -168,7 +168,7 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 > Consultar la comparativa de nuestros diferentes [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 >
 
-En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action}:
+En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
@@ -182,7 +182,7 @@ Tras instalar el "módulo en un clic" en modo avanzado, recibirá un mensaje de 
 
 Por lo tanto, compruebe las claves de la base de datos. Para más información, consulte esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-A continuación, elimine el "módulo en un clic". Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, abra la pestaña `Módulos en un clic`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Eliminar el módulo`{.action}.
+A continuación, elimine el "módulo en un clic". Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, abra la pestaña `Módulos en un clic`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Eliminar el módulo`{.action}.
 
 ![delete_a_module](images/delete-a-module.png){.thumbnail}
 
@@ -229,7 +229,7 @@ Compruebe también sus claves [conectándose directamente](/pages/web_cloud/web_
 
 Ha iniciado la instalación de un "módulo en un clic" en [modo avanzado](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en una base de datos situada en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ha recibido este mensaje de error por correo electrónico. Significa que el nombre del servidor de bases de datos que ha especificado es incorrecto.
 
-Para consultar el nombre del servidor de bases de datos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}de la página. Haga clic en `Web Cloud Databases`{.action} en la columna izquierda y seleccione el servidor de bases de datos correspondiente.
+Para consultar el nombre del servidor de bases de datos, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}de la página. Haga clic en `Web Cloud Databases`{.action} en la columna izquierda y seleccione el servidor de bases de datos correspondiente.
 
 En la nueva página, el nombre del servidor que debe utilizarse aparece en el recuadro `Datos de conexión`, subparte `SQL`, con la mención `Nombre de host`..
 

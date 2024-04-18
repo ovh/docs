@@ -25,7 +25,7 @@ En este tutorial encontrará algunos ejemplos de situaciones relativas a la segu
 
 - Tener un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Haber registrado al menos un [dominio](https://www.ovhcloud.com/es-es/domains/){.external}.
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, parte "Web cloud".
+- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}, parte "Web cloud".
 
 ## Procedimiento
 

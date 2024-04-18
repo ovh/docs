@@ -24,7 +24,7 @@ updated: 2023-12-04
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.com/de/hosting/){.external} Angebot (mit Ausnahme von [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/)).
-- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhostings über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder das Passwort des FTP-Benutzers, um sich mit Ihrem Speicherplatz zu verbinden. 
+- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhostings über das [OVHcloud Kundencenter](/links/manager){.external} oder das Passwort des FTP-Benutzers, um sich mit Ihrem Speicherplatz zu verbinden. 
 
 ## In der praktischen Anwendung
 
@@ -52,7 +52,7 @@ Entscheiden Sie sich für eine Wiederherstellungsmethode, die Sie verwenden möc
 >
 > Unsere Roboter installieren das Backup auf Ihrem Hosting, bevor der FTP Inhalt gelöscht und von der Wiederherstellung überschrieben wird.
 >
-> Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. 
+> Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. 
 >
 > Die Speicherplatzbelegung erscheint auf dieser Seite:
 >
@@ -83,11 +83,11 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 > Konkret bedeutet das Folgendes:
 >
 > - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
-> - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst unter `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
+> - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst unter `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
 > - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
 >
 
-Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann zum Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
+Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](/links/manager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann zum Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
 
 ![FTP-Backup](images/restore-backup.png){.thumbnail}
 
@@ -131,7 +131,7 @@ Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwe
 
 - **Cyberduck**: Laden Sie Cyberduck zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von Cyberduck eine Anleitung zur Verfügung](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac) (Englisch). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
-- **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
+- **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVHcloud Kundencenter](/links/manager). Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
 
 Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren.
 

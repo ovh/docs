@@ -32,7 +32,7 @@ Za pomocą terminala i polecenia Linux można skopiować plik lub folder zawiera
 - Terminal kompatybilny z poleceniami Linux i SSH (na przykład *terminal* MacOS lub emulator *Ubuntu* na Windows)
 - Zaznajomienie się z poleceniami Linux i SSH
 - Posiadanie [hostingu web](https://www.ovhcloud.com/pl/web-hosting/) z dostępem przez SSH
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce
 

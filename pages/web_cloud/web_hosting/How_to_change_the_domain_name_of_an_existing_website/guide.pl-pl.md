@@ -27,7 +27,7 @@ Tutorial wyjaśnia, jakie kroki należy podjąć w przypadku zmiany domeny dost�
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -46,7 +46,7 @@ Nowa domena zostanie zarejestrowana w dokumentacji OVHcloud dotyczącej dodania 
 Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 - Twoja nowa domena musi wskazywać na ten sam "folder główny", który jest używany do łączenia się ze stroną WWW.
-- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, wybierz hosting i pobierz **IPv4** w zakładce `Informacje ogólne`{.action}.
+- Sprawdź, czy Twoja nowa domena wskazuje prawidłowy adres IP hostingu. Aby pobrać adres IP, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web cloud`{.action}, kliknij przycisk `Hosting`{.action}, wybierz hosting i pobierz **IPv4** w zakładce `Informacje ogólne`{.action}.
 
 > [!warning]
 >

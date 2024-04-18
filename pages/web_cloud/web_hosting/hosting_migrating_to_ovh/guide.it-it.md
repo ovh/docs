@@ -25,7 +25,7 @@ Questa guida ti mostra le operazioni da effettuare per migrare tutti i tuoi siti
 - Avere accesso alla zona DNS (Domain Name System) attiva del dominio
 - Avere accesso ai file e al database del tuo sito Web presso il tuo attuale provider
 - Disporre delle credenziali (utente, password, server) dei tuoi indirizzi email correnti
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -65,7 +65,7 @@ Diverse offerte di hosting condiviso OVHcloud contengono un'offerta email "MX Pl
 
 Una volta scelta la soluzione di hosting, se non sei ancora cliente OVHcloud, clicca su `Ordine`{.action} nelle precedenti pagine commerciali. Segui gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
 
-L'ordine è disponibile anche nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi alla sezione `Web Cloud`{.action} e clicca su `Ordinare`{.action} > `Hosting`{.action}. Continua con gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
+L'ordine è disponibile anche nello Spazio Cliente OVHcloud (/links/manager). Accedi alla sezione `Web Cloud`{.action} e clicca su `Ordinare`{.action} > `Hosting`{.action}. Continua con gli step dell'ordine **senza richiedere il trasferimento del tuo dominio**.
 
 Una volta confermato il pagamento, l'installazione dell'hosting verrà avviata. Riceverai un'email al tuo indirizzo email di contatto. che contiene le credenziali di accesso allo spazio di storage FTP (File Transfert Protocol) del tuo hosting Web.
 
@@ -76,7 +76,7 @@ Una volta confermato il pagamento, l'installazione dell'hosting verrà avviata. 
 
 ### Step 2: creare e preconfigurare una zona DNS per il tuo dominio presso OVHcloud <a name="step2"></a>
 
-Una volta creato il tuo hosting, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e crea una zona DNS per il tuo dominio **senza le "www"**. Per maggiori informazioni, consulta la guida sulla [creazione di una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Una volta creato il tuo hosting, accedi allo [Spazio Cliente OVHcloud](/links/manager) e crea una zona DNS per il tuo dominio **senza le "www"**. Per maggiori informazioni, consulta la guida sulla [creazione di una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Una volta creata la zona DNS, consulta la guida [Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit). Se non sono presenti, inserisci le seguenti voci:
 

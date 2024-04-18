@@ -22,7 +22,7 @@ You may see the error page **Site not installed** displayed on your web browser,
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access to the [DNS zone](/pages/web_cloud/domains/dns_zone_edit) your domain name is attached to.
 
 ## Instructions
@@ -37,7 +37,7 @@ The following steps will allow you to correct the “Site not installed” error
 
 ### Step 1 - Verify the declaration of your domain name or subdomain on your web hosting plan <a name="check-multisites"></a>
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Web Cloud`{.action} section at the top of the page, then click on the `Hosting plans`{.action} tab in the left-hand column.
+In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section at the top of the page, then click on the `Hosting plans`{.action} tab in the left-hand column.
 
 Select the web hosting plan concerned from the list, then click on the `Multisite`{.action} tab.
 
@@ -62,7 +62,7 @@ This step involves checking that your domain or subdomain points to your web hos
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan
 
-To find the IP address of your web hosting plan, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then go to the `Web Cloud`{.action} section at the top of the page. Click on the `Hosting plans`{.action} tab in the left-hand column, then select the web hosting plan concerned from the list.
+To find the IP address of your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section at the top of the page. Click on the `Hosting plans`{.action} tab in the left-hand column, then select the web hosting plan concerned from the list.
 
 You will find the `IPv4` address in the box `General information`{.action}.
 
@@ -81,7 +81,7 @@ You will now need to check that your web hosting plan’s IP address appears in 
 > If you modify the **DNS servers** associated with your domain name, this period can be up to **48 hours** maximum.
 >
 
-To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then go to the `Web Cloud`{.action} section at the top of the page. Go to the `Domain names`{.action} section, select your domain name, then go to the `DNS zone`{.action} tab.
+To do this, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section at the top of the page. Go to the `Domain names`{.action} section, select your domain name, then go to the `DNS zone`{.action} tab.
 
 A table with different DNS records will appear.
 

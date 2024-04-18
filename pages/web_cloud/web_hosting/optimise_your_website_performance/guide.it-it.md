@@ -20,7 +20,7 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 - Una [soluzione Web Hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
 - Un [dominio](https://www.ovhcloud.com/it/domains/){.external}per accedere al tuo sito
-- avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}OVHcloud
+- avere accesso allo [Spazio Cliente](/links/manager){.external}OVHcloud
 
 ## Procedura
 
@@ -94,7 +94,7 @@ Puoi trovare maggiori informazioni più avanti, allo step 5.
 
 Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulteriori informazioni qui di seguito) per trovare l’origine dei ritardi e poi consulta i log per rilevare le date dei picchi.
 
-Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external}.
+Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](/links/manager)){.external}.
 
 Come accedere alle statistiche e ai log:
 
@@ -168,7 +168,7 @@ _Se non usi un database, questo step è facoltativo_
 È possibile accedere al database utilizzando PHPMyAdmin. (Dato che le istruzioni su come utilizzare PHPMyAdmin andrebbero oltre lo scopo di questa guida, non saranno forniti ulteriori dettagli).
 Tuttavia, sono disponibili numerose guide esterne su questo argomento.
 
-**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
+**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](/links/manager){.external}:
 
 - Clicca sul tuo dominio nella sezione `Hosting`{.action}
 - Vai alla scheda `Database`{.action}

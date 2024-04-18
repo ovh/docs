@@ -20,7 +20,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) Joomla! in
 
 > [!success]
 >
-> Um Joomla! **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Um Joomla! **automatisch** in Ihrem [OVHcloud Kundencenter](/links/manager) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Um ein **anderes CMS manuell** zu installieren (WordPress, Drupal, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -31,7 +31,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) Joomla! in
 
 - Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
   
 ## In der praktischen Anwendung
 
@@ -98,7 +98,7 @@ Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf 
 
 - *Either a password you created or a password provided by your host*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
-- *Enter the database name*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert. Er ist identisch mit dem Benutzernamen der Datenbank, wenn Sie eine Datenbank verwenden, die in Ihrem Webhosting enthalten ist.
+- *Enter the database name*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](/links/manager) definiert. Er ist identisch mit dem Benutzernamen der Datenbank, wenn Sie eine Datenbank verwenden, die in Ihrem Webhosting enthalten ist.
 
 - *Enter a table prefix or use the randomly generated one*: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank eingeben, die bereits von einer anderen Website verwendet wird, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
 

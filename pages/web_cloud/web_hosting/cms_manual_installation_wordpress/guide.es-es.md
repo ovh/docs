@@ -21,7 +21,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 > [!success]
 >
-> Para instalar WordPress **automáticamente** desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), consulte nuestra documentación sobre la [instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar WordPress **automáticamente** desde su [área de cliente de OVHcloud](/links/manager), consulte nuestra documentación sobre la [instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Para instalar **otro CMS** (Joomla, Drupal, PrestaShop), consulte nuestra documentación sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/)
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}
 
 ## Procedimiento
 
@@ -73,7 +73,7 @@ Se abrirá la siguiente página:
 
 Introduzca la información solicitada para la base de datos:
 
-- *Database Name*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- *Database Name*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](/links/manager).
 
 - *Username*: es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
 Para las bases de datos creadas en una Web Cloud Databases, consulte la información indicada en **el etapa 1.4** del tutorial sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).

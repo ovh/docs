@@ -42,7 +42,7 @@ This device also legally protects you from actions resulting from a possible hac
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 ## Instructions
@@ -71,7 +71,7 @@ First, check the security of your computers and devices:
 
 > [!warning]
 >
-> Before changing the password for your website’s database in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), update your website’s configuration file so that it connects to the database with the new password.
+> Before changing the password for your website’s database in your [OVHcloud Control Panel](/links/manager), update your website’s configuration file so that it connects to the database with the new password.
 >
 > Otherwise, changing your database password will result in your website and any services accessing it being blocked.
 >
@@ -158,7 +158,7 @@ SITE CHMOD 705.
 
 #### Reactivating your hosting via your web browser with the FTP Explorer ("net2ftp")
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section, then open `Hosting plans`{.action} and switch to the `FTP-SSH`{.action} tab of the web hosting plan concerned.
+In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then open `Hosting plans`{.action} and switch to the `FTP-SSH`{.action} tab of the web hosting plan concerned.
 
 Click on the button `FTP Explorer`{.action} and log in to your [FTP storage](/pages/web_cloud/web_hosting/ftp_connection).
 

@@ -25,7 +25,7 @@ Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zaloguj�
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Instalacja programu Filezilla na Twoim komputerze Jest on dostępny bezpłatnie na stronie [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
@@ -56,13 +56,13 @@ W tabeli poniżej wpisz informacje korzystając z paska szybkiego połączenia:
 |Hasło|Hasło przypisane do użytkownika.|
 |Port|Jest to zazwyczaj uzupełniane automatycznie przez oprogramowanie. W przeciwnym razie wprowadź:<br><br>- port "21" dla połączenia FTP;<br>- port "22" dla połączenia SFTP (w przypadku gdy połączenie jest włączone). Więcej informacji o SFTP znajdziesz w [sekcji poświęconej temu tutorialu](#sftp).|
 
-Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji "Web Cloud" i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej:
+Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} w sekcji "Web Cloud" i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej:
 
 ![hosting](images/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
-> Niektóre oferty OVHcloud nie używają portu 22 do połączenia przez SFTP i/lub SSH. Użyj więc portów, które wyświetlają się w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Niektóre oferty OVHcloud nie używają portu 22 do połączenia przez SFTP i/lub SSH. Użyj więc portów, które wyświetlają się w Twoim [Panelu klienta OVHcloud](/links/manager){.external}.
 >
 
 Po poprawnym wpisaniu wszystkiego w ramce **1** poniższego obrazka kliknij `Szybkie`{.action} połączenie.
@@ -73,7 +73,7 @@ Jeśli logowanie przebiegło pomyślnie, zostaniesz o tym poinformowany poprzez 
 
 ### Połączenie z Filezilla przez SFTP <a name="sftp"></a>
 
-SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) to protokół podobny do protokołu **FTP**. Podobnie jak SSH, używa domyślnego portu 22 zamiast portu 21. Jeśli korzystasz z hostingu Cloud Web, powinieneś użyć portu, który wyświetla się w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Port 22 został dezaktywowany przez bezpieczeństwo poprzez SSH i SFTP dla hostingu Cloud Web.
+SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) to protokół podobny do protokołu **FTP**. Podobnie jak SSH, używa domyślnego portu 22 zamiast portu 21. Jeśli korzystasz z hostingu Cloud Web, powinieneś użyć portu, który wyświetla się w Twoim [Panelu klienta OVHcloud](/links/manager){.external}. Port 22 został dezaktywowany przez bezpieczeństwo poprzez SSH i SFTP dla hostingu Cloud Web.
 
 > [!success]
 >
@@ -84,7 +84,7 @@ SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) to protokół podobny do 
 
 Sprawdź najpierw, czy SFTP jest aktywny dla Twojego **Login FTP**.
 
-Przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji "Web Cloud", następnie kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}.
+Przejdź do [Panelu klienta OVHcloud](/links/manager){.external}, w sekcji "Web Cloud", następnie kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}.
 
 Następnie sprawdź, czy **SFTP** jest aktywny w tabeli na dole strony.
 
@@ -127,7 +127,7 @@ Wyświetlony poniżej komunikat wskazuje błąd w identyfikacji podczas logowani
 
 Ten rodzaj wiadomości jest generowany przez błąd w momencie połączenia Login/Hasło.
 
-Sprawdź dane do logowania, aby upewnić się, że nie został wyświetlony żaden błąd. Możesz zmienić hasło do FTP Twojego hostingu bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Sprawdź dane do logowania, aby upewnić się, że nie został wyświetlony żaden błąd. Możesz zmienić hasło do FTP Twojego hostingu bezpośrednio w [Panelu klienta OVHcloud](/links/manager){.external}.
 
 > [!success]
 > Zapoznaj się z przewodnikiem dotyczącym [zmiany hasła FTP](/pages/web_cloud/web_hosting/ftp_change_password) na hostingu.
@@ -136,7 +136,7 @@ W poniższym przypadku błąd jest generowany przez nieprawidłową nazwę hosta
 
 ![hosting](images/connection-timed-out-after-20s.png){.thumbnail}
 
-Sprawdź nazwę hosta zadeklarowaną w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Sprawdź nazwę hosta zadeklarowaną w Twoim [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ### Transfer plików
 

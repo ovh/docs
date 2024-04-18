@@ -28,7 +28,7 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Disporre di un [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -47,7 +47,7 @@ Dichiarare il vostro nuovo dominio con la nostra documentazione sull'[aggiunta d
 Per superare lo Step 1 sono necessarie diverse condizioni:
 
 - Il tuo nuovo dominio deve puntare alla stessa "cartella di root" del dominio utilizzato per accedere al tuo sito
-- Verifica che il tuo nuovo dominio punti verso il giusto indirizzo IP del tuo hosting condiviso. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web cloud`{.action}, clicca su `Hosting plans`{.action}, seleziona il tuo hosting e recupera **l'IPv4** nella scheda `Informazioni generali`{.action}.
+- Verifica che il tuo nuovo dominio punti verso il giusto indirizzo IP del tuo hosting condiviso. Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web cloud`{.action}, clicca su `Hosting plans`{.action}, seleziona il tuo hosting e recupera **l'IPv4** nella scheda `Informazioni generali`{.action}.
 
 > [!warning]
 >

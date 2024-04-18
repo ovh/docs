@@ -23,7 +23,7 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 - Ter um serviço de [alojamento Cloud Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external}.
 - Ter ativado Node.js como motor de execução.
 - Ter adicionado o domínio em questão como multisite e ter definido Node.js como o motor de execução.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, na secção `Web Cloud`{.action}.
 - O que precisa de saber:
     - Conhecer as bases do ecossistema Node.js
     - Aceder através de SSH.
@@ -33,7 +33,7 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 
 ### 1 - Ativar Node.js como motor de execução
 
-Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente](/links/manager){.external}. Clique em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
 
 A tabela que aparece indica os motores de execução que se encontram adicionados. Certifique-se de que o motor de execução Node.js está ativo. Se tal for o caso, consulte o passo “[2 - Associar o Node.js a um multisite](./#2-associar-o-nodejs-a-um-multisite)”.
 
@@ -246,7 +246,7 @@ A instalação e a configuração de Ghost ficam assim concluídas. Só falta re
 
 ### 7 - Reiniciar o *daemon* Node.js
 
-Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No separador `Multi-site`{.action}, clique no botão `...`{.action} no final da linha correspondente ao domínio.{.action} à direita, em `Reiniciar`{.action}.
+Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](/links/manager){.external}. No separador `Multi-site`{.action}, clique no botão `...`{.action} no final da linha correspondente ao domínio.{.action} à direita, em `Reiniciar`{.action}.
 
 Depois de realizar esta operação, a aplicação ficará acessível através do nome de domínio escolhido na configuração do seu multisite.
 

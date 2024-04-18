@@ -23,7 +23,7 @@ Gli [hosting Cloud Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/cloud-w
 - Disporre di un [hosting Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external} attivo
 - Aver impostato Node.js come motore di esecuzione
 - Aver aggiunto il dominio in questione come multisito e definito Node.js come motore di esecuzione associato
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}
 - Competenze necessarie:
     - Conoscenze di base dell’ecosistema Node.js
     - Saper effettuare un accesso via SSH
@@ -33,7 +33,7 @@ Gli [hosting Cloud Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/cloud-w
 
 ### Step 1: attiva Node.js come motore di esecuzione
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Programma di esecuzione`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Programma di esecuzione`{.action}.
 
 Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzione: assicurati che Node.js sia attivo. Se il motore risulta abilitato passa direttamente allo [Step 2: associa Node.js a un multisito](./#step-2-associa-nodejs-a-un-multisito).
 
@@ -244,7 +244,7 @@ A questo punto l’installazione e la configurazione di Ghost sono completate e 
 
 ### Step 7: riavvia il daemon Node.js
 
-Per riavviare il daemon Node.js, torna allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Apri la scheda `Multisito`{.action}, clicca sul pulsante `...`{.action} a destra in corrispondenza del tuo dominio e seleziona `Riavvia`{.action}.
+Per riavviare il daemon Node.js, torna allo [Spazio Cliente OVHcloud](/links/manager){.external}. Apri la scheda `Multisito`{.action}, clicca sul pulsante `...`{.action} a destra in corrispondenza del tuo dominio e seleziona `Riavvia`{.action}.
 
 L’applicazione sarà accessibile dal dominio scelto durante la configurazione del multisito. 
 

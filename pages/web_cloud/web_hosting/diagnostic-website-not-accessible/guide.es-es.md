@@ -31,7 +31,7 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 ## Requisitos
 
 - Tener la gestión de los servidores y de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) del dominio.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
@@ -58,7 +58,7 @@ Una vez completada la renovación del plan, su sitio web estará disponible en u
 
 ### Etapa 2: comprobar los servidores DNS
 
-Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), haga clic en [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el dominio del `Dominios`{.action}.
+Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), haga clic en [área de cliente de OVHcloud](/links/manager) y seleccione el dominio del `Dominios`{.action}.
 
 #### Situación 1: no hay anomalías en los servidores DNS
 

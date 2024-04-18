@@ -32,7 +32,7 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 ## Requisitos
 
 - Ter [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) com o seu website alojado em cima.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -149,7 +149,7 @@ Façam coincidir ao máximo as datas de restauro do seu espaço de armazenamento
 > A OVHcloud dispõe de robôs de segurança que podem detetar ações maliciosas realizadas a partir do seu alojamento. Estes últimos desativam o seu alojamento e notificam-no por e-mail de que o seu alojamento foi desativado.
 > Além deste e-mail, uma página "403 Forbidden" aparece normalmente quando tenta aceder ao seu website.
 >
-> Se o seu alojamento estiver desativado, os robôs de restauro automático disponíveis a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) também serão desativados.
+> Se o seu alojamento estiver desativado, os robôs de restauro automático disponíveis a partir do seu [Área de Cliente OVHcloud](/links/manager) também serão desativados.
 > Deve obrigatoriamente efetuar um restauro "manual" do seu site, eliminar os elementos maliciosos residuais e corrigir todas as falhas de segurança presentes neste backup. Isto **antes** de reativar o alojamento.
 >
 > Para reativar o alojamento Web, siga as instruções indicadas no passo 4 deste [guia](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).

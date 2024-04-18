@@ -29,11 +29,11 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
-Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
+Il monitoraggio e la gestione delle email automatiche dell'hosting Web OVHcloud sono disponibili nello [Spazio Cliente OVHcloud](/links/manager){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Questo stato si verifica quando:
 
 - sono state inviate troppe email molto rapidamente
 - troppe email sono tornate in errore
-- hai disattivato la funzionalità dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- hai disattivato la funzionalità dallo [Spazio Cliente OVHcloud](/links/manager).
 
 Per sbloccare la situazione, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista. Clicca sulla scheda `Plus`{.action} e poi su `Script email`{.action}.
 
@@ -196,7 +196,7 @@ Anche se ti consigliamo vivamente di privilegiare l'utilizzo della funzione "mai
 
 > [!warning]
 > 
-> Le email emesse con uno script che utilizzano una configurazione SMTP non potranno essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Le email emesse con uno script che utilizzano una configurazione SMTP non potranno essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](/links/manager).
 > 
 
 utilizzando il seguente script, sostituendo i valori `Host`, `Username` e `Password` con i parametri SMTP:

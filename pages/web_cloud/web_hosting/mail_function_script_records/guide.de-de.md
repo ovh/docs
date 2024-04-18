@@ -29,11 +29,11 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
+Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](/links/manager){.external}. Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Dieser Zustand tritt in den folgenden Fällen ein:
 
 - Zu viele E-Mails wurden in schneller Folge gesendet.
 - Zu viele E-Mails geben Fehlermeldungen zurück.
-- Sie haben die Funktion selbst über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) deaktiviert.
+- Sie haben die Funktion selbst über Ihr [OVHcloud Kundencenter](/links/manager) deaktiviert.
 
 Gehen Sie zum Entsperren in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
 
@@ -196,7 +196,7 @@ Wir empfehlen Ihnen dringend, die "mail()"-Funktion von PHP bevorzugt zu nutzen.
 
 > [!warning]
 > 
-> E-Mails, die über ein Skript mit SMTP-Konfiguration versendet werden, können nicht über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet und verfolgt werden.
+> E-Mails, die über ein Skript mit SMTP-Konfiguration versendet werden, können nicht über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet und verfolgt werden.
 > 
 
 Verwenden Sie hierzu folgendes Skript, indem Sie ausschließlich die Werte `Host`, `Username` und `Password` durch Ihre eigenen SMTP-Einstellungen ersetzen:

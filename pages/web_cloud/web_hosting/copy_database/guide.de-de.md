@@ -21,7 +21,7 @@ Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des
 ## Voraussetzungen
 
 - Sie verfügen über Datenbanken der Dienste [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/). Beide Datenbanken müssen erstellt sein, bevor die Duplikationsfunktion verwendet werden kann.
-- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zur Verwaltung aller betroffenen Datenbankdienste. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
+- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](/links/manager) mit den erforderlichen Berechtigungen zur Verwaltung aller betroffenen Datenbankdienste. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## In der praktischen Anwendung
 
@@ -42,7 +42,7 @@ Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedli
 
 #### Start SQL
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting mit der Quelldatenbank.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting mit der Quelldatenbank.
 
 ![Liste der Hostings](images/web-hosting-selection.png){.thumbnail}
 
@@ -52,7 +52,7 @@ Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start
 
 #### Web Cloud Databases
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Web Cloud Databases`{.action} und wählen Sie den Web Cloud Databases Server mit der Quelldatenbank aus.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Web Cloud Databases`{.action} und wählen Sie den Web Cloud Databases Server mit der Quelldatenbank aus.
 
 ![Liste der WCD-Server](images/wcdb-server-selection.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Sie haben die Wahl zwischen [Start SQL](https://www.ovhcloud.com/de/web-hosting/
 
 > [!primary]
 >
-> Ihre neu bestellte Datenbank wird nicht automatisch aktiviert. Loggen Sie sich zum Aktivieren der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+> Ihre neu bestellte Datenbank wird nicht automatisch aktiviert. Loggen Sie sich zum Aktivieren der Datenbank in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 > 
 > - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)“.
 > - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung „[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)“.

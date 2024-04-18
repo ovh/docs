@@ -15,7 +15,7 @@ Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage F
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}, partie `Web Cloud`{.action}.
 
 > [!primary]
 > Seuls les hébergements web **Pro** ou **Performance** permettent l'activation de plusieurs utilisateurs FTP et disposent de connexions en SSH.
@@ -34,12 +34,12 @@ Pour vous connecter à votre espace de stockage FTP, récupérez les éléments 
 
 > [!primary]
 >
-> Ces éléments vous ont été communiqués dans l’e-mail notifiant l’installation de votre hébergement web lors de sa souscription. Ils sont accessibles depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+> Ces éléments vous ont été communiqués dans l’e-mail notifiant l’installation de votre hébergement web lors de sa souscription. Ils sont accessibles depuis votre [espace client OVHcloud](/links/manager){.external}.
 >
 > **Si vous disposez déjà de ces éléments**, poursuivez directement vers l'étape 2 « [Accéder à votre espace de stockage](#ftp_storage_access) » de ce guide.
 > 
 
-Si vous ne disposez pas de ces éléments, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} dans la colonne de gauche. Choisissez le nom de l'hébergement web concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
+Si vous ne disposez pas de ces éléments, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} dans la colonne de gauche. Choisissez le nom de l'hébergement web concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 Les informations liées à votre espace de stockage apparaissent alors, ainsi qu'un tableau listant les utilisateurs FTP et SSH créés sur votre hébergement web.
 
@@ -90,7 +90,7 @@ Vous devrez au préalable installer le logiciel/client FTP choisi sur votre ordi
 
 #### 1. Connexion via le « FTP Explorer » <a name="ftpexplorer"></a>
 
-Pour vous connecter à votre espace de stockage FTP via le « FTP Explorer », connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} puis rendez-vous dans la partie `Web Cloud`{.action}.
+Pour vous connecter à votre espace de stockage FTP via le « FTP Explorer », connectez-vous à l'[espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web Cloud`{.action}.
 
 Cliquez sur la section `Hébergements`{.action} dans la colonne de gauche. Choisissez le nom de l'hébergement web concerné, positionnez-vous sur l'onglet `FTP - SSH`{.action} puis cliquez sur le bouton `FTP Explorer`{.action}. 
 

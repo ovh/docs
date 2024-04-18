@@ -19,7 +19,7 @@ L'option de géolocalisation sur votre hébergement peut être utile pour le ré
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 
@@ -27,7 +27,7 @@ L'option de géolocalisation sur votre hébergement peut être utile pour le ré
 
 Pour les sites web principalement consultés à l'étranger et hébergés sur notre infrastructure d'hébergements mutualisés OVHcloud, nous proposons une option de géolocalisation par adresse IP. Elle permet de mieux référencer les sites web dans le pays où se situe l'adresse IP choisie avec l'option.
 
-Pour utiliser l'option de géolocalisation par IP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Pour utiliser l'option de géolocalisation par IP, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}.
 
 Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste.<br>
 Cliquez ensuite sur l'onglet `Multisite`{.action} puis sur le bouton `...`{.action} situé à droite de votre nom de domaine dans le tableau. Enfin, cliquez sur `Modifier le domaine`{.action}.
@@ -44,7 +44,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action} depuis la fenêtre r�
 
 >[!primary]
 >
-> Si la zone DNS active de votre nom de domaine est entièrement gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), l'entrée de type A dans la zone DNS de votre nom de domaine se changera automatiquement. Vous pouvez vérifier que l'adresse IP a bien été mise à jour à l'aide de notre guide sur [l'édition d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> Si la zone DNS active de votre nom de domaine est entièrement gérée dans votre [espace client OVHcloud](/links/manager), l'entrée de type A dans la zone DNS de votre nom de domaine se changera automatiquement. Vous pouvez vérifier que l'adresse IP a bien été mise à jour à l'aide de notre guide sur [l'édition d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
 > Dans le cas contraire, vous devrez effectuer la modification manuellement auprès du fournisseur qui gère la zone DNS active de votre nom de domaine. Retrouvez [ici](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) la documentation qui recense toutes les adresses IP de notre infrastructure d'hébergements mutualisés OVHcloud.
 >

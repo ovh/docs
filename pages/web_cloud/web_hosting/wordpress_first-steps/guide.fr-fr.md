@@ -22,7 +22,7 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 - Avoir [installé Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur votre hébergement web
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 

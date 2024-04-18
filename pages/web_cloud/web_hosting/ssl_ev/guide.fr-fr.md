@@ -35,7 +35,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 
 ## Prérequis <a name="requirements"></a>
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Commander ou disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) sur lequel aucun certificat SSL n'est déjà installé.
 - Commander ou disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/) et disposer des droits exclusifs sur son utilisation. Le nom de domaine ne doit pas déjà être lié à un certificat SSL.
 - Être une organisation (entreprise, agence gouvernementale, ...) enregistrée auprès d'un registre officiel.
@@ -127,7 +127,7 @@ Toutes les actions décrites dans cette étape peuvent être effectuées sur plu
 Une fois votre commande effectuée, Sectigo vous enverra un e-mail contenant un lien de validation ainsi qu'une procédure à suivre.
 Vérifiez vos informations et validez votre demande en suivant les indications présentes dans cet e-mail. 
 
-Dans le but de s'assurer que les échanges par e-mail avec Sectigo se passent correctement, vérifiez également la validité de l'adresse e-mail renseignée dans le formulaire lors de votre commande du SSL EV, ainsi que l'adresse e-mail de contact associée à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Dans le but de s'assurer que les échanges par e-mail avec Sectigo se passent correctement, vérifiez également la validité de l'adresse e-mail renseignée dans le formulaire lors de votre commande du SSL EV, ainsi que l'adresse e-mail de contact associée à votre [espace client OVHcloud](/links/manager).
 
 > [!primary]
 >

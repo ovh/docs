@@ -22,7 +22,7 @@ Managing multiple websites can be complex and time-consuming. If you manage mult
 ## Requirements
 
 - A [Web Cloud hosting plan](https://www.ovhcloud.com/en-au/web-hosting/).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), in the `Web Cloud`{.action} section.
+- Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
 - Access to the WordPress administration interface.
 
 > [!warning]
@@ -76,7 +76,7 @@ In the main menu on the left, click `Sites`{.action}, then `Add New`{.action}. T
 
 Enter the URL of the child site you want to connect to the MainWP dashboard. Just below, select the button to indicate that you have installed and activated the MainWP Child plugin on your child website. The following two new fields are displayed:
 
-- `Administrator username`: log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), then go to the `Web Cloud`{.action} section. Select the web hosting plan concerned, and click the `1-click modules`{.action} tab. In the table that pops up, identify the row that corresponds to your 1-click module. Your admin name is in the `Login`{.action} column.
+- `Administrator username`: log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Select the web hosting plan concerned, and click the `1-click modules`{.action} tab. In the table that pops up, identify the row that corresponds to your 1-click module. Your admin name is in the `Login`{.action} column.
 - `Site title`: enter the value you want. If you connect many child websites, remember to enter an explicit site title.
 
 ![mainWP](images/add_site.png){.thumbnail}

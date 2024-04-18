@@ -13,7 +13,7 @@ With a Cloud Web hosting plan, you can choose from a range of different coding l
 ## Requirements
 
 - a [Cloud Web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/)
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -23,7 +23,7 @@ So if you have not done so yet, **please ensure that your project is compatible 
 
 ### Step 1: Access the runtime environment management interface.
 
-To access your Cloud Web hosting plan’s runtime environments, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime environments`{.action} tab.
+To access your Cloud Web hosting plan’s runtime environments, log in to the [OVHcloud Control Panel](/links/manager){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime environments`{.action} tab.
 
 The table that appears will list the runtime environments currently added to your Cloud Web hosting plan. Please note that a runtime environment will be created automatically when you set up your web hosting plan.
 

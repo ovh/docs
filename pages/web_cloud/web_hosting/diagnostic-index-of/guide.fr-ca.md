@@ -26,13 +26,13 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web mutualisé. Ceci via l'onglet [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) de votre hébergement web présent dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web mutualisé. Ceci via l'onglet [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) de votre hébergement web présent dans votre [espace client OVHcloud](/links/manager).
 
 La page **Index of** indique que le répertoire cible concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « *point d'entrée* » de votre site web. Le nom de ce fichier est normalisé.
 

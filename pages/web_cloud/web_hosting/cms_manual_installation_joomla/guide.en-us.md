@@ -17,7 +17,7 @@ This tutorial will help you install Joomla! CMS (Content Management System) manu
 
 > [!success]
 >
-> To install Joomla! **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install Joomla! **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > To manually **install another CMS** (WordPress, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -28,7 +28,7 @@ This tutorial will help you install Joomla! CMS (Content Management System) manu
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -95,7 +95,7 @@ Have your database login details ready (if necessary, see **Step 1.4** in the [m
 
 - *Either a password you created or a password provided by your host*: You defined it yourself when you created your database. You may have modified it in the meantime.
 
-- *Enter the database name*: This name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). It is identical to the database username if you are using a database included with your web hosting plan.
+- *Enter the database name*: This name was defined when the database was created in the [OVHcloud Control Panel](/links/manager). It is identical to the database username if you are using a database included with your web hosting plan.
 
 - *Enter a table prefix or use the randomly generated one*: If you are installing with a brand new database, enter your preferred prefix. If you are using a database that has already been used by another website, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](/pages/web_cloud/web_hosting/cms_manual_installation) to avoid entering a table prefix that has already been used in your database.
 

@@ -18,13 +18,13 @@ Baza danych (bazy danych) służy do przechowywania elementów dynamicznych (dan
 
 - Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającego co najmniej jedną bazę danych.
 - Posiadanie "utworzonej" bazy danych zawierającej dane zawarte w Twojej usłudze hostingu. W razie potrzeby możesz dodać bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) do Twojego hostingu.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) z [niezbędnymi uprawnieniami](/pages/account_and_service_management/account_information/managing_contacts) w celu zarządzania hostingiem.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager) z [niezbędnymi uprawnieniami](/pages/account_and_service_management/account_information/managing_contacts) w celu zarządzania hostingiem.
 
 ## W praktyce
 
 ### Etap 1 - Dostęp do karty zarządzania bazami danych na hostingu WWW
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, wybierz ofertę hostingu, na której chcesz utworzyć bazę danych, następnie kliknij zakładkę `Bazy danych`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, wybierz ofertę hostingu, na której chcesz utworzyć bazę danych, następnie kliknij zakładkę `Bazy danych`{.action}.
 
 Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hostingu.
 
@@ -98,7 +98,7 @@ Sprawdź, czy wszystkie wyświetlane informacje są poprawne. Jeśli tak, klikni
 
 > [!primary]
 >
-> Po kliknięciu przycisku `Zatwierdź`{.action} utworzenie bazy danych może potrwać do **15 minut**. Odśwież stronę internetową [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jeśli baza danych nie wyświetla się automatycznie w tabeli zawierającej listę Twoich baz danych.
+> Po kliknięciu przycisku `Zatwierdź`{.action} utworzenie bazy danych może potrwać do **15 minut**. Odśwież stronę internetową [Panelu klienta OVHcloud](/links/manager), jeśli baza danych nie wyświetla się automatycznie w tabeli zawierającej listę Twoich baz danych.
 >
 
 Powtórz ten proces tyle razy, ile chcesz, aby utworzyć kilka baz danych (w ramach limitu baz danych dostępnych w Twojej ofercie).
@@ -118,7 +118,7 @@ Teraz możesz korzystać z bazy danych. W tym celu potrzebujesz danych do logowa
 
 Informacje te są niezbędne, aby Twoja strona WWW mogła połączyć się z bazą danych.
 
-W razie potrzeby, aby pobrać dane do logowania, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}.
+W razie potrzeby, aby pobrać dane do logowania, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}.
 
 Wszystkie informacje dotyczące połączenia z bazą danych odnajdziesz w tabeli, która się wyświetli. Powyższe nie dotyczy *hasła* ze względów bezpieczeństwa.
 
@@ -136,7 +136,7 @@ W zależności od używanego oprogramowania może być konieczne ręczne skonfig
 
 #### Dostęp do interfejsu phpMyAdmin
 
-OVHcloud udostępnia narzędzie online do zarządzania bazami danych "phpMyAdmin". Aby odnaleźć link dostępu do tej aplikacji, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie z menu rozwijanego kliknij `Dostęp do phpMyAdmin`{.action}.
+OVHcloud udostępnia narzędzie online do zarządzania bazami danych "phpMyAdmin". Aby odnaleźć link dostępu do tej aplikacji, zaloguj się do [panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie z menu rozwijanego kliknij `Dostęp do phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
@@ -148,7 +148,7 @@ W razie potrzeby skorzystaj z [etapu 3](#step3) niniejszego przewodnika, aby uzy
 
 W przypadku każdej bazy danych w ramach hostingu WWW codziennie będą automatycznie tworzone migawki (maksymalnie do 32 migawek). To oznacza, że można szybko przywrócić wcześniejszą wersję bazy danych z poziomu Panelu klienta OVHcloud.
 
-Aby sprawdzić, czy są dostępne migawki oraz ich datę i godzinę utworzenia, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz sprawdzić snapshoty dostępne dla Twojej bazy danych, następnie kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij symbol obok zielonego kółka. Z tego miejsca można też pobrać kopię zapasową bazy danych. Więcej informacji na ten temat znajdziesz w naszym przewodniku "[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)".
+Aby sprawdzić, czy są dostępne migawki oraz ich datę i godzinę utworzenia, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz sprawdzić snapshoty dostępne dla Twojej bazy danych, następnie kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij symbol obok zielonego kółka. Z tego miejsca można też pobrać kopię zapasową bazy danych. Więcej informacji na ten temat znajdziesz w naszym przewodniku "[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)".
 
 #### Zrozum typowe problemy
 

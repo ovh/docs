@@ -25,7 +25,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 - Tener acceso a la zona DNS (Domain Name System) activa del dominio.
 - Tener acceso a los archivos y a la base de datos de su sitio web en su actual proveedor de hosting.
 - Disponer de las claves (usuario, contraseña, servidor) de las direcciones de correo actuales.
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -64,7 +64,7 @@ Varios planes de hosting de OVHcloud contienen una solución de correo electrón
 
 Si todavía no es cliente de OVHcloud, haga clic en el botón `Contratar`{.action} de las páginas comerciales anteriores. Siga los pasos del pedido **sin solicitar la transferencia del dominio**.
 
-También puede realizar el pedido desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Una vez que se haya conectado, haga clic en el menú `Web Cloud`{.action}, haga clic en el botón `Contratar`{.action}, en la parte superior izquierda y seleccione `Alojamiento`{.action}. Continúe con el pedido **sin solicitar la transferencia del dominio**.
+También puede realizar el pedido desde el [área de cliente de OVHcloud](/links/manager). Una vez que se haya conectado, haga clic en el menú `Web Cloud`{.action}, haga clic en el botón `Contratar`{.action}, en la parte superior izquierda y seleccione `Alojamiento`{.action}. Continúe con el pedido **sin solicitar la transferencia del dominio**.
 
 Una vez validado el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico en su dirección de correo electrónico de contacto. que contendrá las claves de acceso al espacio de almacenamiento FTP (File Transfert Protocol) de su alojamiento web.
 
@@ -75,7 +75,7 @@ Además de la solución MX Plan, OVHcloud ofrece otras soluciones de correo. Por
 
 ### Etapa 2: crear y preconfigurar una zona DNS para su dominio en OVHcloud <a name="step2"></a>
 
-Una vez creado el alojamiento, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y cree una zona DNS para su dominio **sin los "www"**. Si lo necesita, consulte nuestra guía sobre la [creación de una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Una vez creado el alojamiento, conéctese a su [área de cliente de OVHcloud](/links/manager) y cree una zona DNS para su dominio **sin los "www"**. Si lo necesita, consulte nuestra guía sobre la [creación de una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Una vez que haya creado la zona DNS, acceda a su gestión en la guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit). Si no están presentes, introduzca las siguientes entradas:
 

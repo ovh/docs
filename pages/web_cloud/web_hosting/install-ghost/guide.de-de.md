@@ -23,7 +23,7 @@ In diesem Tutorial richten wir mit Ghost einen Blog auf einem Cloud Web Hosting 
 - ein [OVHcloud Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external}.
 - Sie haben Node.js als Runtime Engine aktiviert.
 - Sie haben die betreffende Domain als Multisite hinzugefügt und Node.js als deren Runtime Engine festgelegt.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 - Erforderliche Kenntnisse:
     - Sie haben Grundkenntnisse im Node.js-Ökosystem.
     - Sie wissen, wie Sie sich via SSH verbinden.
@@ -33,7 +33,7 @@ In diesem Tutorial richten wir mit Ghost einen Blog auf einem Cloud Web Hosting 
 
 ### Schritt 1: Node.js als Runtime Engine aktivieren
 
-Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
+Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
 
 Es wird eine Tabelle angezeigt, die alle aktuell hinzugefügten Runtime Engines enthält. Vergewissern Sie sich, dass Node.js als Runtime Engine aktiviert ist. Ist das der Fall, gehen Sie zu Schritt 2 „[Node.js mit einer Multisite verbinden](./#schritt-2-nodejs-mit-einer-multisite-verbinden)“ über.
 
@@ -247,7 +247,7 @@ Installation und Konfiguration von Ghost sind hiermit abgeschlossen. Starten Sie
 
 ### Schritt 7: Node.js-*Daemon* neu starten
 
-Um den Node.js-*Daemon* neu zu starten, gehen Sie zunächst in Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie zum Tab `Multisite`{.action} , klicken Sie rechts neben der betreffenden Domain auf den Button `...`{.action} rechts, dann auf `Neu starten`{.action}.
+Um den Node.js-*Daemon* neu zu starten, gehen Sie zunächst in Ihr [Kundencenter](/links/manager){.external}. Gehen Sie zum Tab `Multisite`{.action} , klicken Sie rechts neben der betreffenden Domain auf den Button `...`{.action} rechts, dann auf `Neu starten`{.action}.
 
 Nach dem Neustart ist die Anwendung über die in der Konfiguration Ihrer Multisite ausgewählte Domain erreichbar.
 

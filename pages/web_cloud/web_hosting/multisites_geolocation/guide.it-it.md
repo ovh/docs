@@ -23,7 +23,7 @@ L'opzione di geolocalizzazione sul tuo hosting può essere utile per l'SEO se il
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
   
@@ -31,7 +31,7 @@ L'opzione di geolocalizzazione sul tuo hosting può essere utile per l'SEO se il
 
 Per i siti Web consultati principalmente all'estero e ospitati sulla nostra infrastruttura di hosting condivisi OVHcloud, proponiamo un'opzione di geolocalizzazione per indirizzo IP. Permette di indicizzare meglio i siti Web nel Paese in cui si trova l'indirizzo IP scelto con l'opzione.
 
-Per utilizzare l'opzione di geolocalizzazione via IP, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+Per utilizzare l'opzione di geolocalizzazione via IP, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
 
 Accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona l'hosting interessato nella lista.<br>
 Clicca sulla scheda `Multisito`{.action} e poi sul pulsante `...`{.action} situato a destra del tuo dominio nella tabella. Infine clicca su `Modifica il dominio`{.action}.
@@ -48,7 +48,7 @@ Clicca su `Continua`{.action} e poi su `Conferma`{.action} dalla finestra riepil
 
 >[!primary]
 >
-> Se la zona DNS attiva del dominio è gestita totalmente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), l'accesso di tipo A nella zona DNS del dominio si modifica automaticamente. Per verificare che l'indirizzo IP sia stato aggiornato correttamente, consulta la guida su [modifica della zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> Se la zona DNS attiva del dominio è gestita totalmente dallo [Spazio Cliente OVHcloud](/links/manager), l'accesso di tipo A nella zona DNS del dominio si modifica automaticamente. Per verificare che l'indirizzo IP sia stato aggiornato correttamente, consulta la guida su [modifica della zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
 > In caso contrario, sarà necessario effettuare la modifica manualmente presso il provider che gestisce la zona DNS attiva del dominio. Consulta [qui](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) la documentazione che contiene tutti gli indirizzi IP della nostra infrastruttura di hosting condivisi OVHcloud.
 >

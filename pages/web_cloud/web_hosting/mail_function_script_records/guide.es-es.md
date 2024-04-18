@@ -29,11 +29,11 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
-El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Este estado se produce cuando:
 
 - se han enviado demasiados mensajes de correo muy rápidamente.
 - se han devuelto demasiados mensajes de correo.
-- usted mismo ha desactivado la funcionalidad desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- usted mismo ha desactivado la funcionalidad desde su [área de cliente de OVHcloud](/links/manager).
 
 Para desbloquear la situación, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
@@ -196,7 +196,7 @@ Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()
 
 > [!warning]
 > 
-> Los emails enviados con un script que utilicen una configuración SMTP no podrán ser gestionados y seguidos desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+> Los emails enviados con un script que utilicen una configuración SMTP no podrán ser gestionados y seguidos desde su [área de cliente OVHcloud](/links/manager).
 > 
 
 Para ello, puede utilizar el siguiente script sustituyendo únicamente los valores `Host`, `Username` y `Password` por sus propios parámetros SMTP:

@@ -15,7 +15,7 @@ L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cl
 ## Prérequis
 
 - Disposer d’un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client](/links/manager), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir:
     - Les bases de l’écosystème Python.
     - Se connecter en SSH.
@@ -25,7 +25,7 @@ L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cl
 
 ### Étape 1 : activez Python comme moteur d’exécution
 
-Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Python est bien activé. Si tel est le cas, poursuivez vers l’étape 2 : [« Associez Python à un multisite »](./#etape-2-associez-python-a-un-multisite).
 
@@ -279,7 +279,7 @@ Modifiez le fichier « mysite/settings.py » avec la commande suivante, en rem
     
 ### Étape 7 : redémarrez le _daemon_ Python
 
-Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis choisissez `Redémarrer`{.action}.
+Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHcloud](/links/manager). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis choisissez `Redémarrer`{.action}.
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
     

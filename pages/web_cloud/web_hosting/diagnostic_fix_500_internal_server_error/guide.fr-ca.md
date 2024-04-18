@@ -22,7 +22,7 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/)
-- Etre connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Etre connecté à votre [espace client OVHcloud](/links/manager)
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique

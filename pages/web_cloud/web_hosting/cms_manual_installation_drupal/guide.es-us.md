@@ -21,7 +21,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 > [!success]
 >
-> Para instalar Drupal **automáticamente** desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), consulte nuestra documentación sobre la [instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar Drupal **automáticamente** desde su [área de cliente de OVHcloud](/links/manager), consulte nuestra documentación sobre la [instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Para instalar **otro CMS** (WordPress, Joomla!, PrestaShop), consulte nuestra documentación sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}
 
 ## Procedimiento
 
@@ -81,7 +81,7 @@ Si lo necesita, consulte la guía sobre la [instalación manual de un CMS](/page
 
 - *Database type* : seleccione el tipo de base de datos que desee,
 
-- *Database name* : este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- *Database name* : este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](/links/manager).
 
 - *Database username* : es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web. Para las bases de datos creadas en un servicio Web Cloud Databases, consulte la información indicada en **el etapa 1.4** del tutorial sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 

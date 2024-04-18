@@ -25,7 +25,7 @@ An "**Index of**" page appears in at least one of the following cases:
 
 - A [domain name](https://www.ovhcloud.com/en/domains/)
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

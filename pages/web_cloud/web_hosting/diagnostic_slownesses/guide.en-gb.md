@@ -38,7 +38,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 
 - A website hosted on an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -94,7 +94,7 @@ All diagnostics in step 1 must be performed **without exception** to determine w
 
 To ensure that your services (shared hosting **and** database) are not undergoing maintenance or an incident, retrieve the cluster and filer information of your web hosting as well as the general information relating to your database. You can then check their status at [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-To find out the cluster and filer of your hosting, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the web hosting plan concerned. In the `General information`{.action} tab you can see the `Datacenter` and `Filer` of your web hosting.
+To find out the cluster and filer of your hosting, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the web hosting plan concerned. In the `General information`{.action} tab you can see the `Datacenter` and `Filer` of your web hosting.
 
 ![Retrieve Filer](images/find-filer.png){.thumbnail}
 
@@ -245,7 +245,7 @@ To reduce the flow of requests each time your pages load, you can also set up a 
 
 > [!primary]
 >
-> OVHcloud offers several [CDN options](https://www.ovhcloud.com/en-gb/web-hosting/options/). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then read our guide on [Using the OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud offers several [CDN options](https://www.ovhcloud.com/en-gb/web-hosting/options/). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then read our guide on [Using the OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimise your database

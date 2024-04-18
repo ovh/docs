@@ -27,7 +27,7 @@ Ihr Cloud Web Hosting verfügt über einen Speicherplatz, in dem Sie Ihre Websit
 ## Voraussetzungen
 
 - Sie verfügen über ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external}.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben Zugriff auf die Kontakt-E-Mail-Adresse Ihres Kunden-Accounts.
 
 ## In der praktischen Anwendung
@@ -43,13 +43,13 @@ Nur die oben genannten Backups können von OVHcloud angeboten werden, sofern Ihr
 
 ### Backup exportieren
 
-Im Gegensatz zu den Shared Hosting Paketen von OVHcloud ist es unmöglich, den FTP-Bereich mit einem Klick über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wiederherzustellen.
+Im Gegensatz zu den Shared Hosting Paketen von OVHcloud ist es unmöglich, den FTP-Bereich mit einem Klick über das [OVHcloud Kundencenter](/links/manager) wiederherzustellen.
 
 Es wird ein Link zum Download des Backups erstellt und per E-Mail an die Adresse gesendet, die der Administrator-Kundenkennung des Cloud Web Hostings zugeordnet ist.
 
 #### Schritt 1 - Den per E-Mail versandten Link zur Wiederherstellung erstellen
 
-Um den Link zur Wiederherstellung zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und dann auf das betreffende Hosting. 
+Um den Link zur Wiederherstellung zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und dann auf das betreffende Hosting. 
 
 Wählen Sie den Tab `FTP - SSH`{.action} aus und klicken Sie rechts auf `Backup erstellen`{.action}.
 
@@ -65,7 +65,7 @@ Es erscheint ein zweites Fenster, in dem Sie darauf hingewiesen werden, dass Ihn
 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Anfrage zu bestätigen.
 
-Wenn die Erstellung des Backups erfolgreich gestartet wurde, erscheint in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) folgende Nachricht:
+Wenn die Erstellung des Backups erfolgreich gestartet wurde, erscheint in Ihrem [OVHcloud Kundencenter](/links/manager) folgende Nachricht:
 
 ![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Sobald Ihre Dateien heruntergeladen wurden, können Sie sich [auf Ihrem FTP-Spei
 
 > [!primary]
 >
-> Verwenden Sie die in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angegebenen Ports für SFTP- und SSH-Verbindungen, da Port 22 für Ihr Cloud Web Hosting nicht funktioniert.
+> Verwenden Sie die in Ihrem [OVHcloud Kundencenter](/links/manager) angegebenen Ports für SFTP- und SSH-Verbindungen, da Port 22 für Ihr Cloud Web Hosting nicht funktioniert.
 >
 
 ## Weiterführende Informationen 

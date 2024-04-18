@@ -25,7 +25,7 @@ Möglicherweise wird in Ihrem Webbrowser die Fehlerseite **Seite nicht installie
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die erforderlichen Berechtigungen zum Verwalten der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) des Domainnamens.
 
 ## In der praktischen Anwendung
@@ -40,7 +40,7 @@ Mit den folgenden Schritten können Sie in beiden Fällen den Fehler `Seite nich
 
 ### Schritt 1 - Überprüfen Sie die Deklaration Ihrer Domain oder Subdomain auf Ihrem Webhosting <a name="check-multisites"></a>
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oben auf der Seite in den Bereich `Web Cloud`{.action} und klicken Sie dann auf den Tab `Hosting-Pakete`{.action} in der linken Spalte.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) oben auf der Seite in den Bereich `Web Cloud`{.action} und klicken Sie dann auf den Tab `Hosting-Pakete`{.action} in der linken Spalte.
 
 Wählen Sie das betreffende Webhosting aus der Liste aus und klicken Sie dann auf den Tab `Multisite`{.action}.
 
@@ -65,7 +65,7 @@ In diesem Schritt überprüfen Sie, dass Ihre Domain oder Subdomain über die ak
 
 #### 2\.1 IP-Adresse Ihres OVHcloud Webhostings identifizieren
 
-Um die IP-Adresse Ihres Webhostings zu finden, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie dann oben auf der Seite in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus der Liste aus.
+Um die IP-Adresse Ihres Webhostings zu finden, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann oben auf der Seite in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus der Liste aus.
 
 Die `IPv4` Adresse finden Sie in der Box `Allgemeine Informationen`{.action}.
 
@@ -84,7 +84,7 @@ Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung
 > Wenn Sie die mit Ihrer Domain verbundenen **DNS-Server** ändern, kann die Bearbeitungszeit bis zu **48 Stunden** betragen.
 >
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie oben auf der Seite in den Bereich `Web Cloud`{.action}. Gehen Sie in den Bereich `Domainnamen`{.action}, wählen Sie Ihren Domainnamen aus und gehen Sie dann in den Tab `DNS-Zone`{.action}.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie oben auf der Seite in den Bereich `Web Cloud`{.action}. Gehen Sie in den Bereich `Domainnamen`{.action}, wählen Sie Ihren Domainnamen aus und gehen Sie dann in den Tab `DNS-Zone`{.action}.
 
 Eine Tabelle mit verschiedenen DNS-Einträgen wird angezeigt.
 

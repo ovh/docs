@@ -13,7 +13,7 @@ This guideline will outline the steps to follow in order to export all elements 
 ## Requirements
 
 - an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- access to the [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions
 
@@ -28,7 +28,7 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
+This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
 ![export-website](images/tab-pro.png){.thumbnail}
 

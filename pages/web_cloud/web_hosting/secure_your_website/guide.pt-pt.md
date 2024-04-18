@@ -27,7 +27,7 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 
 - um [plano OVHcloud Web Hosting](https://www.ovhcloud.com/pt/web-hosting/)
 - ter os [detalhes de login](/pages/web_cloud/web_hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso) para acessar o espaço de armazenamento do seu plano de hospedagem
-- acesso ao [Painel de Controlo da Nuvem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- acesso ao [Painel de Controlo da Nuvem OVHcloud](/links/manager)
 - acesso à [interface admin para o seu site](https://codex.wordpress.org/pt-br:Primeiros_Passos_com_o_WordPress){.external}
 
 ## Instruções

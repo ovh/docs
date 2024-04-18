@@ -18,7 +18,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem przez protokół SSH.
 - Posiadanie informacji umożliwiających logowanie się do przestrzeni dyskowej za pomocą SSH.
-- Mieć dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
+- Mieć dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!warning]
 > 
@@ -28,7 +28,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ### Etap 1: upewnij się, że dostęp przez SSH jest aktywny <a name="sshcheck"></a>
 
-Rozpocznij od zalogowania się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action} i kliknij `Hostingi`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. 
+Rozpocznij od zalogowania się do [panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action} i kliknij `Hostingi`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. 
 
 Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (lub „Login”) posiada aktywny dostęp przez protokół SSH. Jeżeli tak nie jest, pojawi się informacja „Wyłączony”.
 

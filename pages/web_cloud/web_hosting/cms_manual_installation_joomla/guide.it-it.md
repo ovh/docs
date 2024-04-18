@@ -21,7 +21,7 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
 
 > [!success]
 >
-Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), consulta la nostra guida sull'[installazione di un modulo in un click](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](/links/manager), consulta la nostra guida sull'[installazione di un modulo in un click](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Per installare **manualmente un altro CMS** (WordPress, Drupal, PrestaShop), consulta la nostra guida sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -32,7 +32,7 @@ Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](htt
 
 - Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
   
 ## Procedura
 
@@ -100,7 +100,7 @@ Per i database creati su un Web Cloud Databases, consulta le informazioni indica
 
 - *Either a password you created or a password provided by your host*: l'hai definito tu stesso durante la creazione del tuo database. Se nel frattempo è possibile che tu l'abbia modificato, ti consigliamo di verificarlo.
 
-- *Enter the database name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se utilizzi un database incluso con il tuo hosting Web, è lo stesso nome utente del database.
+- *Enter the database name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](/links/manager). Se utilizzi un database incluso con il tuo hosting Web, è lo stesso nome utente del database.
 
 - *Enter a table prefix or use the randomly generated one*: se l'installazione avviene con un nuovo database, inserisci il "prefisso" che preferisci. Se utilizzi un database già utilizzato da un altro sito, consulta **lo Step 1.4** della guida sull'[installazione manuale di un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) per non inserire un "prefisso" di tavolo già utilizzato nel tuo database.
 

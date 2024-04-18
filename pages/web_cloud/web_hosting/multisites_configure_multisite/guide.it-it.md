@@ -27,7 +27,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 - Disporre di una soluzione [di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} compatibile
 - Disporre di uno o più [domini](https://www.ovhcloud.com/it/domains/){.external}
 - Poter modificare la configurazione dei tuoi domini (la [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns))
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -40,7 +40,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 
 ### Step 1: accedi alla gestione del multisito <a name="multisite-menu"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. clicca su `Hosting`{.action}, seleziona il tuo servizio e clicca sulla scheda `Multisito`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. clicca su `Hosting`{.action}, seleziona il tuo servizio e clicca sulla scheda `Multisito`{.action}.
 
 Visualizzi una tabella con tutti i domini e i sottodomini aggiunti alla tua soluzione di hosting Web. alcuni dei quali sono stati creati automaticamente durante l’installazione.
 

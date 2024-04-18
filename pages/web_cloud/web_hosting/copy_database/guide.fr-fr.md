@@ -18,7 +18,7 @@ Votre base de données est un élément central dans la construction de votre si
 ## Prérequis
 
 - Disposer d’offres de bases de données [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) et/ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Les deux bases de données concernées doivent être préalablement créées pour pouvoir utiliser l'outil de duplication.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à l’[espace client OVHcloud](/links/manager)
 - Disposer des droits suffisants sur l’ensemble des services de base de données concernées. Retrouvez plus d'informations sur notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## En pratique
@@ -40,7 +40,7 @@ Selon votre situation, le chemin pour accéder à votre base de données source 
 
 #### Base de données Start SQL
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement web où se trouve la base de données source dont le contenu est à copier.
+Dans votre [espace client OVHcloud](/links/manager), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement web où se trouve la base de données source dont le contenu est à copier.
 
 ![Liste des hébergements](images/web-hosting-selection.png){.thumbnail}
 
@@ -50,7 +50,7 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos bases d
 
 #### Web Cloud Databases
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Databases où se trouve votre base de données source dont le contenu est à copier.
+Dans votre [espace client OVHcloud](/links/manager), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Databases où se trouve votre base de données source dont le contenu est à copier.
 
 ![Liste des serveurs WCD](images/wcdb-server-selection.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Vous pourrez choisir entre acheter une offre « [start SQL](https://www.ovhcloud
 
 > [!primary]
 >
-> Lorsque vous achetez votre nouvelle base de données, celle-ci n’est pas activée par défaut. N'oubliez pas de l'activer. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}.
+> Lorsque vous achetez votre nouvelle base de données, celle-ci n’est pas activée par défaut. N'oubliez pas de l'activer. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 > 
 > - Pour une base de données « Shared SQL » : suivez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) »;
 > - Pour une base de données qui sera présente sur un serveur « Web Cloud Databases » : suivez notre guide « [Créer une base de données sur un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».

@@ -17,7 +17,7 @@ This tutorial will help you install the WordPress CMS (Content Management System
 
 > [!success]
 >
-> To install WordPress **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install WordPress **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > To manually **install another CMS** (Joomla!, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -28,7 +28,7 @@ This tutorial will help you install the WordPress CMS (Content Management System
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en-ie/domains/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -69,7 +69,7 @@ The following page appears:
 
 Enter the information requested for the database:
 
-- Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- Database name: this name was defined when the database was created in the [OVHcloud Control Panel](/links/manager).
 
 - Username: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS](/pages/web_cloud/web_hosting/cms_manual_installation) tutorial.
 

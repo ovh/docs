@@ -27,11 +27,11 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
-Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web em causa. A seguir, aceda ao separador `FTP - SSH`{.action}.
+Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web em causa. A seguir, aceda ao separador `FTP - SSH`{.action}.
 Pode verificar o número de cluster do alojamento Web nesta página em **Servidor FTP**.
 
 ### Cluster 002

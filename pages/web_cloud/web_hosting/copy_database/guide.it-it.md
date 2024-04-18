@@ -22,7 +22,7 @@ Il database è un elemento centrale nella costruzione di un sito Web dinamico. D
 ## Prerequisiti
 
 - Disporre di offerte di database [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e/o [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/). Prima di poter utilizzare lo strumento di replica è necessario creare preventivamente i due database interessati.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - di disporre dei diritti sufficienti su tutti i servizi di database interessati. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## Procedura
@@ -44,7 +44,7 @@ Il percorso per accedere al database di origine è diverso in base alla situazio
 
 #### Database Start SQL
 
-Nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Web Cloud`{.action} nel menu in alto nell’interfaccia. Nella colonna a sinistra, clicca sulla scheda `Hosting`{.action} e poi sull’hosting Web in cui si trova il database di origine il cui contenuto deve essere copiato.
+Nel tuo [Spazio Cliente OVHcloud](/links/manager), seleziona `Web Cloud`{.action} nel menu in alto nell’interfaccia. Nella colonna a sinistra, clicca sulla scheda `Hosting`{.action} e poi sull’hosting Web in cui si trova il database di origine il cui contenuto deve essere copiato.
 
 ![Lista degli hosting](images/web-hosting-selection.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Clicca sulla scheda `Database`{.action} per visualizzare la lista dei database S
 
 #### Web Cloud Databases
 
-Nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Web Cloud`{.action} nel menu in alto nell’interfaccia. Nella colonna a sinistra, clicca sulla scheda `Web Cloud Databases`{.action} e seleziona il server Web Cloud Databases in cui si trova il database sorgente il cui contenuto deve essere copiato.
+Nel tuo [Spazio Cliente OVHcloud](/links/manager), seleziona `Web Cloud`{.action} nel menu in alto nell’interfaccia. Nella colonna a sinistra, clicca sulla scheda `Web Cloud Databases`{.action} e seleziona il server Web Cloud Databases in cui si trova il database sorgente il cui contenuto deve essere copiato.
 
 ![Lista dei server WCD](images/wcdb-server-selection.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Se non si dispone di un database di destinazione e come illustrato nella scherma
 
 > [!primary]
 >
-> Il nuovo database acquistato non è abilitato per impostazione predefinita. Ricordati di attivarla. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
+> Il nuovo database acquistato non è abilitato per impostazione predefinita. Ricordati di attivarla. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 > 
 > - Per un database "Shared SQL": consulta la nostra guida "[Creare un database sul proprio hosting Web](/pages/web_cloud/web_hosting/sql_create_database)";
 > - Per creare un database che sarà presente su un server "Web Cloud Databases": consulta la nostra guida "[Creare un database su un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".

@@ -32,7 +32,7 @@ Permite copiar un archivo o una carpeta que contiene uno o varios archivos desde
 - Tener un terminal compatible con los comandos Linux y SSH (por ejemplo, el *terminal* de MacOS o el emulador *Ubuntu* en Windows)
 - Familiarizarse con los comandos Linux y SSH
 - Tener contratado un plan de [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/) con acceso por SSH
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
+- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}
 
 ## Procedimiento
 

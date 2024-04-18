@@ -13,19 +13,19 @@ Ce guide vous présente comment activer cette offre sur votre [nom de domaine](h
 >
 > Cet hébergement gratuit de 100 Mo convient pour une simple page Web de présentation, il **n'inclut pas de base de données**.
 > Il convient également si vous n'avez pas besoin de plusieurs adresses e-mail de type "MX plan". 
-> Si vous souhaitez mettre en place un site Web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), nous vous invitons à commander directement l'une de [nos offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/) depuis notre site ou votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+> Si vous souhaitez mettre en place un site Web comprenant plusieurs pages et nécessitant une base de données, tel qu'un CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), nous vous invitons à commander directement l'une de [nos offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/) depuis notre site ou votre [espace client OVHcloud](/links/manager){.external}.
 >
 
 **Découvrez comment activer votre hébergement gratuit 100M**
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, détaché de tout hébergement Web et sans aucun [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associé.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre [espace client OVHcloud](/links/manager){.external}, détaché de tout hébergement Web et sans aucun [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) associé.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 
 Dans le cadre **Informations générales** vous trouverez la mention *Hébergement Web et e-mail gratuit*. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer`{.action}.
 
@@ -39,7 +39,7 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 >
 > Si vous cochez l'une des deux cases `Entrée DNS A` et `Entrée DNS MX` ou les deux, cela écrasera la configuration initialement mise en place dans la zone DNS de votre domaine.
 >
-> Si votre zone DNS n'est pas gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous devrez effectuer les modifications manuellement dans votre zone DNS externe.
+> Si votre zone DNS n'est pas gérée dans votre [espace client OVHcloud](/links/manager){.external}, vous devrez effectuer les modifications manuellement dans votre zone DNS externe.
 >
 > Pour plus de détails, consultez notre guide sur [l'édition d'une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
@@ -51,7 +51,7 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 
 > [!primary]
 >
-> Si votre projet est amené à évoluer rapidement vers un hébergement disposant d'une base de données, d'un espace de stockage plus important ou davantage d'adresses e-mail, vous pourrez basculer directement et uniquement de l'hébergement gratuit 100M vers une offre d'hébergement **Perso** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+> Si votre projet est amené à évoluer rapidement vers un hébergement disposant d'une base de données, d'un espace de stockage plus important ou davantage d'adresses e-mail, vous pourrez basculer directement et uniquement de l'hébergement gratuit 100M vers une offre d'hébergement **Perso** depuis votre [espace client OVHcloud](/links/manager){.external}.
 >
 > Une bascule vers l'offre **Pro** ou **Performance** nécessite de passer préalablement de l'offre d'hébergement gratuit 100M à l'offre **Perso**.
 >

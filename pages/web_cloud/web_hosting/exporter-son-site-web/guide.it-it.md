@@ -17,7 +17,7 @@ Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in for
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -32,7 +32,7 @@ Per accedere allo spazio di storage sono necessari:
 - l'indirizzo del server.
 - porta di connessione al server
 
-Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma, Se non ne hai ancora uno, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione "Web" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. 
+Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma, Se non ne hai ancora uno, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} nella sezione "Web" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. 
 
 ![export-website](images/tab-pro.png){.thumbnail}
 

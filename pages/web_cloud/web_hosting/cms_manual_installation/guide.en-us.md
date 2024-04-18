@@ -28,7 +28,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 > [!success]
 >
-> To install your CMS **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install your CMS **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **This tutorial explains how to configure your website by manually installing a CMS.**
@@ -37,7 +37,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -127,10 +127,10 @@ Please refer to our documentation, which describes [how to add a multisite on yo
 
 - Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](https://www.ovhcloud.com/en/web-hosting/).
 
-To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
+To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
 In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
 
-If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation .
+If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](/links/manager), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation .
 
 > [!warning]
 >

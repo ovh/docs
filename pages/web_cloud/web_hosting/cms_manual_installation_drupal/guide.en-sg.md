@@ -17,7 +17,7 @@ This tutorial will help you install Drupal CMS (Content Management System) manua
 
 > [!success]
 >
-> To install Drupal **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install Drupal **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > To manually **install another CMS** (WordPress, Joomla!, PrestaShop), please refer to our documentation on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -28,7 +28,7 @@ This tutorial will help you install Drupal CMS (Content Management System) manua
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en-sg/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -77,7 +77,7 @@ Have your database login details ready (if necessary, see **Step 1.4** in the [m
 
 - *Database type*: Select your database type from the choices available.
 
-- *Database name*: This name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- *Database name*: This name was defined when the database was created in the [OVHcloud Control Panel](/links/manager).
 
 - *Database username*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS tutorial](/pages/web_cloud/web_hosting/cms_manual_installation).
 

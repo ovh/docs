@@ -30,13 +30,13 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/)
 - Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
 ### Entender el origen de la página "Index of"
 
-O seu nome de domínio é declarado para aceder a um diretório alvo (um `Carpeta raíz`) no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Isto no separador [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu alojamento web presente no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+O seu nome de domínio é declarado para aceder a um diretório alvo (um `Carpeta raíz`) no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Isto no separador [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu alojamento web presente no seu [Área de Cliente OVHcloud](/links/manager).
 
 A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 

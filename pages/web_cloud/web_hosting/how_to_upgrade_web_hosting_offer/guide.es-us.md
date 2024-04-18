@@ -10,7 +10,7 @@ updated: 2023-09-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/). Así podrá disponer de:
+Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/). Así podrá disponer de:
 
 - un alojamiento más potente;
 - más espacio de almacenamiento FTP;
@@ -23,7 +23,7 @@ Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&fr
 ## Requisitos
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/)
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Ser, como mínimo, el contacto «[Administrador](/pages/account_and_service_management/account_information/managing_contacts)» de los servicios para los que quiera modificar la suscripción.
 
 ## Procedimiento
@@ -44,7 +44,7 @@ Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&fr
 > Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
-Para modificar su suscripción, acceda a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Para modificar su suscripción, acceda a su [área de cliente de OVHcloud](/links/manager) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En el recuadro `Suscripción`, haga clic en el botón `...`{.action} a la derecha de `Solución` y seleccione `Cambiar de plan`{.action}.
 
@@ -67,12 +67,12 @@ Si la opción **Boost** es adecuada para usted, encontrará a continuación las 
 > [!tabs]
 > **Activar la opción Boost**
 >>>
->> Para activar la opción Boost, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En el recuadro `Información general` de la página que se abre, haga clic en el botón `...`{.action} a la derecha de `Boost` y seleccione `Mejorar mi plan`{.action}.<br><br>
+>> Para activar la opción Boost, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En el recuadro `Información general` de la página que se abre, haga clic en el botón `...`{.action} a la derecha de `Boost` y seleccione `Mejorar mi plan`{.action}.<br><br>
 >>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>>
 > **Desactivar la opción Boost**
 >>>
->> Para desactivar la opción Boost, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Abra la pestaña `Más` y haga clic en `Mejorar mi plan`{.action}.<br>
+>> Para desactivar la opción Boost, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Abra la pestaña `Más` y haga clic en `Mejorar mi plan`{.action}.<br>
 >> Se mostrará la tabla de uso de la opción Boost. Haga clic en `Desactivar el plan Boost`{.action}.<br><br>
 >>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 

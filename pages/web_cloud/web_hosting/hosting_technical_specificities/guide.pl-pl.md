@@ -17,7 +17,7 @@ Pakiety hostingowe OVHcloud są współdzielone. W związku z tym konfiguracja t
 ## Wymagania początkowe
 
 - Posiadanie kompatybilnego [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -32,7 +32,7 @@ Pakiety hostingowe OVHcloud są współdzielone. W związku z tym konfiguracja t
 
 - Użyj pasywnego **trybu** dla połączeń FTP. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
-- Jeśli napotkasz błąd dostępu "Uwierzytelnienie połączenia 530 się nie powiodło" podczas logowania do przestrzeni dyskowej FTP: Upewnij się, że informacje dotyczące dostępu do przestrzeni FTP są poprawne. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+- Jeśli napotkasz błąd dostępu "Uwierzytelnienie połączenia 530 się nie powiodło" podczas logowania do przestrzeni dyskowej FTP: Upewnij się, że informacje dotyczące dostępu do przestrzeni FTP są poprawne. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
 
 Znajdziesz tam wszystkie informacje dotyczące logowania do Twojej przestrzeni dyskowej FTP z wyjątkiem hasła.
 
@@ -174,7 +174,7 @@ Dowiedz się, jak [zalogować się do przestrzeni dyskowej FTP Twojego hostingu]
 > OVHcloud dostarcza usługę automatycznego tworzenia kopii zapasowych danych oraz udostępnienia tych kopii. Pozostaje jednak *poza umową* i jest obecny jako uzupełnienie Twoich usług. Twoim obowiązkiem jest wdrożenie własnej polityki gastronomicznej i wskazanie punktów przywracania usług w chwilach, które uznasz za stosowne.
 >
 
-W przypadku baz danych współdzielonych (zawartych w Twojej ofercie hostingu WWW) lub serwerów baz danych (Web Cloud Databases), oferowanych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie, tworzenie kopii zapasowych baz jest wykonywane codziennie. Kopie zapasowe są dostępne (w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [API OVHcloud](https://api.ovh.com/)). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane są kopiowane w centrum danych zlokalizowanym w Strasburgu (SBG). Czas przechowywania kopii zapasowych to 30 dni.
+W przypadku baz danych współdzielonych (zawartych w Twojej ofercie hostingu WWW) lub serwerów baz danych (Web Cloud Databases), oferowanych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie, tworzenie kopii zapasowych baz jest wykonywane codziennie. Kopie zapasowe są dostępne (w [Panelu klienta OVHcloud](/links/manager){.external} lub [API OVHcloud](https://api.ovh.com/)). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane są kopiowane w centrum danych zlokalizowanym w Strasburgu (SBG). Czas przechowywania kopii zapasowych to 30 dni.
 
 Dowiedz się, jak [Pobrać kopię zapasową bazy danych hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export) znaleźć w naszej dokumentacji.
 

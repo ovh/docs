@@ -25,13 +25,13 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 
 - Posiadanie [oferty hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/) umożliwiającej instalację modułu za pomocą 1 kliknięcia.
 - Instalacja modułu za 1 kliknięciem (Jeśli jeszcze nie przeprowadziłeś tej instalacji, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 ### Dostęp do strony
 
-Aby uzyskać dostęp do publicznej strony po zainstalowaniu modułu za 1 kliknięciem, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły CMS`{.action}.
+Aby uzyskać dostęp do publicznej strony po zainstalowaniu modułu za 1 kliknięciem, przejdź do [Panelu klienta OVHcloud](/links/manager), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły CMS`{.action}.
 
 Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii dla Twojego modułu, po czym kliknij `Dostęp do modułu`{.action}.
 
@@ -42,7 +42,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 ### Dostęp do interfejsu administratora
 
-Aby uzyskać dostęp do części strony zarezerwowanej dla administratorów, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły CMS`{.action}.
+Aby uzyskać dostęp do części strony zarezerwowanej dla administratorów, przejdź do [Panelu klienta OVHcloud](/links/manager), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły CMS`{.action}.
 
 Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii dla Twojego modułu, po czym kliknij `Dostęp do interfejsu administracyjnego modułu`{.action}.
 
@@ -50,7 +50,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 Kliknij zakładkę `Moduły CMS`{.action} w części `Hosting`{.action} w Panelu klienta. Identyfikator administratora modułu pojawi się w kolumnie `Login`.
 
-Możesz również wyszukać e-mail otrzymany podczas tworzenia modułu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl): kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu, które się wyświetla kliknij `E-maile od działu wsparcia`{.action}.
+Możesz również wyszukać e-mail otrzymany podczas tworzenia modułu w [Panelu klienta OVHcloud](/links/manager): kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu, które się wyświetla kliknij `E-maile od działu wsparcia`{.action}.
 
 ### Zmiana hasła do modułu <a name="password-change"></a>
 
@@ -63,7 +63,7 @@ W obu przypadkach otrzymasz e-mail z prośbą o zresetowanie hasła.
 >
 > Na odpowiedniej skrzynce e-mail sprawdź foldery `Spams`{.action} i `Usunięte`{.action}.
 >
-> Wszystkie e-maile wysłane przez OVHcloud są również dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl): kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu kontekstowym po prawej stronie ekranu kliknij `E-maile od działu wsparcia`{.action}.
+> Wszystkie e-maile wysłane przez OVHcloud są również dostępne w [Panelu klienta OVHcloud](/links/manager): kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu kontekstowym po prawej stronie ekranu kliknij `E-maile od działu wsparcia`{.action}.
 >
 > **Okres ważności linków:**
 >
@@ -83,7 +83,7 @@ W obu przypadkach otrzymasz e-mail z prośbą o zresetowanie hasła.
 > W przeciwnym razie należy postępować zgodnie z oficjalną dokumentacją używanego przez Ciebie CMS lub skontaktować się bezpośrednio z producentem CMS-a.
 >
 
-Aby zmienić hasło dostępu do interfejsu administracyjnego Twojej strony **w Panelu klienta OVHcloud**, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły za 1 kliknięciem`{.action}.
+Aby zmienić hasło dostępu do interfejsu administracyjnego Twojej strony **w Panelu klienta OVHcloud**, przejdź do [Panelu klienta OVHcloud](/links/manager), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły za 1 kliknięciem`{.action}.
 
 Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii dla Twojego modułu, a następnie `Zmień hasło`{.action}. Kliknij `Zatwierdź`{.action}. W ciągu kilku minut otrzymasz e-mail z linkiem do zresetowania hasła.
 
@@ -108,7 +108,7 @@ Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygo
 
 #### Etap 1: zidentyfikować bazę danych powiązaną z modułem <a name="step1"></a>
 
-Aby usunąć moduł za pomocą 1 kliknięcia, należy rozpocząć od zidentyfikowania bazy danych w **sposób** pewny. W tym celu przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Bazy danych`{.action}.
+Aby usunąć moduł za pomocą 1 kliknięcia, należy rozpocząć od zidentyfikowania bazy danych w **sposób** pewny. W tym celu przejdź do [Panelu klienta OVHcloud](/links/manager). Kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Bazy danych`{.action}.
 
 Jeśli w tej części Panelu klienta dysponujesz jedną bazą danych i nie posiadasz rozwiązań [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) , możesz uznać, że chodzi o Twoją stronę WWW.
 
@@ -132,7 +132,7 @@ Aby wykonać kopię zapasową Twojej strony WWW, postępuj zgodnie z instrukcjam
 > Usunięcie modułu za 1 kliknięciem i bazy danych spowoduje usunięcie wszystkich kopii **zapasowych** modułu. Usunięte dane nie będą mogły zostać później odzyskane.
 >
 
-Aby usunąć moduł za 1 kliknięciem, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij `Web Cloud`{.action}, `Hosting`{.action}, a następnie `Moduły CMS`{.action}.
+Aby usunąć moduł za 1 kliknięciem, przejdź do [Panelu klienta OVHcloud](/links/manager), kliknij `Web Cloud`{.action}, `Hosting`{.action}, a następnie `Moduły CMS`{.action}.
 
 Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii wyznaczającej moduł, po czym kliknij polecenie `Usuń moduł`{.action}.
 
@@ -143,7 +143,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 > Jeśli posiadasz hosting [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) lub utworzyłeś już cztery bazy danych na hostingu [Hosting Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), usuń bazę danych zidentyfikowaną w [etapie 1](#step1) **PRZEDADP**, aby utworzyć nowy moduł za pomocą 1 kliknięcia.
 >
 
-Aby dokończyć usuwanie modułu, przejdź do zakładki `Bazy danych`{.action}, nadal w części `Web cloud`{.action}, `Hosting`{.action} i odpowiedni hosting w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie kliknij przycisk `...`{.action} po prawej stronie linii wyznaczającej bazę i przyciskUsuń `Usuń bazę danych`{.action}.
+Aby dokończyć usuwanie modułu, przejdź do zakładki `Bazy danych`{.action}, nadal w części `Web cloud`{.action}, `Hosting`{.action} i odpowiedni hosting w [Panelu klienta OVHcloud](/links/manager), następnie kliknij przycisk `...`{.action} po prawej stronie linii wyznaczającej bazę i przyciskUsuń `Usuń bazę danych`{.action}.
 
 Przed ponownym uruchomieniem instalacji nowego modułu sprawdź, czy wymagane wcześniej zadania usunięcia zostały sfinalizowane w zakładce `Zadania w trakcie`{.action}.
 

@@ -14,7 +14,7 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 - an [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external} with SSH access
 - the login credentials required to connect to your storage space via SSH
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager){.external}
 
 > [!warning]
 > 
@@ -24,7 +24,7 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 ### Step 1: Ensure that SSH access is enabled <a name="sshcheck"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
+Log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
 
 Find the table in the ‘SSH’ column to check if the SSH user (or ‘login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 

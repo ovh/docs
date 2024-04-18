@@ -13,7 +13,7 @@ Cloud Web met à disposition de multiples langages de développement pour constr
 ## Prérequis
 
 - Disposer d'une offre d'hébergement [Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 ## En pratique
 
@@ -23,7 +23,7 @@ Ainsi, si ce n'est pas encore fait, **assurez-vous de la compatibilité techniqu
 
 ### Étape 1 : accéder à la gestion des moteurs d'exécution
 
-Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d'exécution ajoutés actuellement à votre hébergement Cloud Web. À noter qu'un moteur a été automatiquement créé lors de l'installation de votre hébergement.
 

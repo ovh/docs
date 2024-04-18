@@ -22,7 +22,7 @@ Your Cloud Web hosting plan has a storage space you can use to host your website
 ## Requirements
 
 - A [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external}
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the contact email address linked to your OVHcloud customer account
 
 ## Instructions
@@ -38,13 +38,13 @@ Only the backups mentioned above can be offered by OVHcloud, provided that your 
 
 ### Retrieve a backup
 
-Unlike OVHcloud shared hosting, you cannot restore the FTP space in one click from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+Unlike OVHcloud shared hosting, you cannot restore the FTP space in one click from the [OVHcloud Control Panel](/links/manager).
 
 A link to download the backup is generated, then sent by email to the email address associated with the Cloud Web hosting plan’s admin NIC handle.
 
 #### Step 1 - Generate the recovery link sent by email
 
-To generate the recovery link, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then click on the Cloud Web concerned. 
+To generate the recovery link, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then click on the Cloud Web concerned. 
 
 Select the `FTP - SSH`{.action} tab and click the `Generate a backup`{.action} button on the right.
 
@@ -60,7 +60,7 @@ A second window will appear, notifying you that the link to retrieve the backup 
 
 Click `Confirm`{.action} to confirm your request.
 
-If you have successfully generated the backup, the following message will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB):
+If you have successfully generated the backup, the following message will appear in your [OVHcloud Control Panel](/links/manager):
 
 ![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Once you have downloaded your files, you can [connect to your FTP space](/pages/
 
 > [!primary]
 >
-> Please use the ports listed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) for SFTP and SSH connections, as port 22 will not work for your Cloud Web hosting.
+> Please use the ports listed in your [OVHcloud Control Panel](/links/manager) for SFTP and SSH connections, as port 22 will not work for your Cloud Web hosting.
 >
 
 ## Go further 

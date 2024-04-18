@@ -39,7 +39,7 @@ Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifik
  
 ## Voraussetzungen <a name="requirements"></a>
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie bestellen oder verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), auf dem noch kein SSL Zertifikat installiert ist.
 - Sie bestellen oder verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) und dessen exklusive Nutzungsrechte. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
 - Sie vertreten eine Organisation (Unternehmen, Regierungsbehörde, etc.), die in einem amtlichen Register eingetragen ist.
@@ -130,7 +130,7 @@ Die in diesem Schritt beschriebenen Aktionen können über mehrere Tage hinweg e
 Sobald Ihre Bestellung ausgeführt wurde, sendet Sectigo Ihnen eine E-Mail mit einem Validierungslink und der Ablaufprozedur.
 Überprüfen Sie Ihre Angaben und bestätigen Sie Ihre Anfrage gemäß den Informationen in dieser E-Mail. 
 
-Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse in Ihrem [OVHcloud Kundencenter](/links/manager).
 
 > [!primary]
 >

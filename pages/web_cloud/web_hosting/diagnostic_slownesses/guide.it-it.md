@@ -42,7 +42,7 @@ In rari casi, la visualizzazione lenta può anche provenire dal tuo provider Int
 ## Prerequisiti
 
 - Disporre di un sito ospitato su una delle nostre offerte di [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -98,7 +98,7 @@ Tutte le diagnostiche dello step 1 devono essere eseguite **senza eccezione** pe
 
 Per garantire che i tuoi servizi (hosting condiviso **e** database) non siano oggetto di manutenzione o incidente, recupera le informazioni sul cluster e il filer del tuo hosting condiviso, così come le informazioni generali relative al tuo database. In seguito potrai verificare il loro stato su [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, seleziona il cluster e il file in cui si trova il tuo hosting condiviso, clicca su `Hosting`{.action} e seleziona l'hosting Web corrispondente. Nella scheda `Informazioni generali`{.action}, clicca su `datacenter` del tuo hosting condiviso e `filer` dov'è.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}, seleziona il cluster e il file in cui si trova il tuo hosting condiviso, clicca su `Hosting`{.action} e seleziona l'hosting Web corrispondente. Nella scheda `Informazioni generali`{.action}, clicca su `datacenter` del tuo hosting condiviso e `filer` dov'è.
 
 ![Recupera Filer](images/find-filer.png){.thumbnail}
 
@@ -249,7 +249,7 @@ Per diminuire il flusso di richieste a ogni caricamento delle tue pagine, puoi a
 
 > [!primary]
 >
-> OVHcloud propone diverse [offerte CDN](https://www.ovhcloud.com/it/web-hosting/options/). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud propone diverse [offerte CDN](https://www.ovhcloud.com/it/web-hosting/options/). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - ottimizza il tuo database

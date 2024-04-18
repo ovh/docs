@@ -17,7 +17,7 @@ Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów 
 ## Wymagania początkowe
 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -32,7 +32,7 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 - adres serwera;
 - port połączenia z serwerem.
 
-Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji „Web” i kliknij `Hostingi`{.action} . Wybierz odpowiedni hosting i przejdź do karty `FTP - SSH`{.action}. 
+Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [panelu klienta OVHcloud](/links/manager){.external} w sekcji „Web” i kliknij `Hostingi`{.action} . Wybierz odpowiedni hosting i przejdź do karty `FTP - SSH`{.action}. 
 
 ![export-website](images/tab-pro.png){.thumbnail}
 

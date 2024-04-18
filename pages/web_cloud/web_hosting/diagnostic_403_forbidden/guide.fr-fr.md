@@ -43,7 +43,7 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) OVHcloud.
 - Disposer des [identifiants de connexion](/pages/web_cloud/web_hosting/ftp_connection) à l'espace de stockage FTP de votre hébergement web.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -71,7 +71,7 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 
 > [!warning]
 >
-> Avant de modifier le mot de passe de la base de données de votre site web depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mettez à jour le fichier de configuration de votre site web afin qu'il se connecte à la base de données avec le nouveau mot de passe.
+> Avant de modifier le mot de passe de la base de données de votre site web depuis votre [espace client OVHcloud](/links/manager), mettez à jour le fichier de configuration de votre site web afin qu'il se connecte à la base de données avec le nouveau mot de passe.
 >
 > Dans le cas contraire, la modification du mot de passe de votre base de données entraînera une coupure d'accès à votre site web ou à vos services/clients qui l'utilisent.
 >
@@ -158,7 +158,7 @@ SITE CHMOD 705 .
 
 #### Réactiver votre hébergement avec le FTP Explorer « net2ftp »
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche et sélectionnez l'hébergement web concerné. Sélectionnez l'onglet `FTP-SSH`{.action} sur la page qui s'affiche.
+Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche et sélectionnez l'hébergement web concerné. Sélectionnez l'onglet `FTP-SSH`{.action} sur la page qui s'affiche.
 
 Appuyez sur le bouton `FTP Explorer`{.action} et connectez-vous à votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection). 
 

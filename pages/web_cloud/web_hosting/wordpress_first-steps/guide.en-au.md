@@ -22,7 +22,7 @@ This tutorial will help you create your first content, organise it, put it onlin
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database.
 - A [domain name](https://www.ovhcloud.com/en-au/domains/)
 - [WordPress installed](/pages/web_cloud/web_hosting/cms_install_1_click_modules) on your web hosting plan
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions
 

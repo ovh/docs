@@ -14,7 +14,7 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) that contains at least one database.
 - Your OVHcloud web hosting uses a recent PHP version and a compatible runtime environment. You can check the status of the different versions on [this page](https://webhosting-infos.hosting.ovh.net/). If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting), to change this configuration quickly.
 - If you want to install the 1-click module in an existing folder, this folder must be empty.
@@ -41,7 +41,7 @@ If you would like to install a CMS that is not available as a 1-click modules, y
 
 ### Step 2: Access the 1-click module manager
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the web hosting plan you would like to install a 1-click module on. Then click the `1-click modules`{.action} tab.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the web hosting plan you would like to install a 1-click module on. Then click the `1-click modules`{.action} tab.
 
 You will find any 1-click modules already installed. You can manage your 1-click modules and install new ones.
 
@@ -94,7 +94,7 @@ Once the installation is complete, you will receive an email containing the logi
 
 > [!primary]
 >
-> It may take up to 15 minutes for the module to be installed after you click the `Install`{.action} button in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+> It may take up to 15 minutes for the module to be installed after you click the `Install`{.action} button in your [OVHcloud Control Panel](/links/manager).
 >
 
 #### Advanced installation of a 1-click module
@@ -136,7 +136,7 @@ The remaining information requested for the database is as follows:
 > - The server name of a Cloud Web Databases database starts with your OVHcloud NIC handle and is in the following form: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where the **"X"** are to be replaced by the reference of your Cloud Databases web service.
 >
 
-- *Database name*: this name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- *Database name*: this name was defined when the database was created in the [OVHcloud Control Panel](/links/manager).
 
 - *Port*: Use the number **3306** (the default port) for a database included with your web hosting plan. For a database on a Cloud Web Databases instance, see [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

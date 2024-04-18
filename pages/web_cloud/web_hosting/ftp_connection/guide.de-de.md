@@ -18,7 +18,7 @@ Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz, um die Date
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). 
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager). 
 
 > [!primary]
 > Nur die Webhosting-Angebote **Pro** und **Performance** erlauben die Aktivierung mehrerer FTP-Benutzer und verfügen über SSH-Verbindungen.
@@ -37,12 +37,12 @@ Um sich mit Ihrem FTP-Speicherplatz zu verbinden, benötigen Sie folgende Inform
 
 > [!primary]
 >
-> Diese Informationen wurden Ihnen in der E-Mail mitgeteilt, in der die Installation Ihres Webhostings nach Bestellung bestätigt wurde. Sie sind auch im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar.
+> Diese Informationen wurden Ihnen in der E-Mail mitgeteilt, in der die Installation Ihres Webhostings nach Bestellung bestätigt wurde. Sie sind auch im [OVHcloud Kundencenter](/links/manager) verfügbar.
 >
 > **Wenn Sie diese Daten bereits haben**, gehen Sie direkt zu Schritt 2: [Zugang zu Ihrem FTP-Speicherplatz](#ftp_storage_access).
 > 
 
-Wenn Sie die Verbindungsdaten nicht zur Hand haben, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action}. Wählen Sie das betreffende Webhosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
+Wenn Sie die Verbindungsdaten nicht zur Hand haben, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action}. Wählen Sie das betreffende Webhosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
 
 Die Informationen zu Ihrem Speicherplatz sowie eine Tabelle mit den auf Ihrem Webhosting erstellten FTP- und SSH-Benutzern werden angezeigt.
 
@@ -93,7 +93,7 @@ Installieren Sie zunächst das gewählte FTP-Programm auf Ihrem Computer.
 
 #### 1. Via "FTP Explorer" verbinden <a name="ftpexplorer"></a>
 
-Um den "FTP-Explorer" zu verwenden, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+Um den "FTP-Explorer" zu verwenden, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 
 Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action}. Wählen Sie das betreffende Webhosting aus, gehen Sie auf den Tab `FTP - SSH`{.action} und klicken Sie dann auf den Button `FTP-Explorer`{.action}.
 

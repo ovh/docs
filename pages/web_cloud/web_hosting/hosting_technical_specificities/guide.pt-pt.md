@@ -17,7 +17,7 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
@@ -32,7 +32,7 @@ As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a co
 
 - Utilizar o **modo passivo** para as ligações FTP. Certifique-se de que o script ou o cliente FTP está configurado em conformidade.
 
-- Se encontrar o erro de acesso "falha de autenticação de ligação 530" ao aceder ao espaço de armazenamento FTP: Certifique-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, clique no separador `FTP - SSH`{.action}.
+- Se encontrar o erro de acesso "falha de autenticação de ligação 530" ao aceder ao espaço de armazenamento FTP: Certifique-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, clique no separador `FTP - SSH`{.action}.
 
 Nele, encontrará todas as informações de ligação ao seu espaço de armazenamento FTP, com exceção da palavra-passe.
 

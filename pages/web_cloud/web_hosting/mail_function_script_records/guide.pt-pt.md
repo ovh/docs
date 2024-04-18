@@ -29,11 +29,11 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Ter acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
-O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
+O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](/links/manager){.external}. Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Este estado ocorre quando:
 
 - demasiados e-mails foram enviados muito rapidamente;
 - demasiados e-mails foram devolvidos em erro;
-- desativou a funcionalidade a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- desativou a funcionalidade a partir do seu [Área de Cliente OVHcloud](/links/manager).
 
 Para desbloquear a situação, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
@@ -196,7 +196,7 @@ Embora recomendamos vivamente que privilegie a utilização da função "mail()"
 
 > [!warning]
 > 
-> Os e-mails emitidos com um script utilizando uma configuração SMTP não poderão ser geridos e acompanhados a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Os e-mails emitidos com um script utilizando uma configuração SMTP não poderão ser geridos e acompanhados a partir do seu [Área de Cliente OVHcloud](/links/manager).
 > 
 
 Para isso, pode utilizar o seguinte script substituindo apenas os valores `Host`, Username e `Password` pelos seus próprios parâmetros SMTP:

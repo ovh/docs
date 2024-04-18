@@ -28,13 +28,13 @@ Questo accesso permette in particolare di [pubblicare il vostro sito](/pages/web
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 ### Step 1 : accedere alla gestione utenti FTP
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla sezione `Web Cloud`{.action}, seleziona il tuo `Hosting`{.action} e scegli il nome dell'hosting. Seleziona la scheda `FTP-SSH`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sulla sezione `Web Cloud`{.action}, seleziona il tuo `Hosting`{.action} e scegli il nome dell'hosting. Seleziona la scheda `FTP-SSH`{.action}.
 
 Una tabella mostra gli *utenti FTP* creati sul tuo hosting Web. Questi utenti ti permettono di accedere al tuo spazio di archiviazione FTP per mettere online i file del tuo sito web. Un utente viene creato automaticamente durante l'installazione del tuo hosting Web.
 

@@ -25,7 +25,7 @@ La pagina di errore **Sito non installato** può essere visualizzata sul browser
 ## Prerequisiti
 
 - Disporre di una [offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre anche della gestione della [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) alla quale è associato il dominio.
 
 ## Procedura
@@ -40,7 +40,7 @@ Gli step successivi ti permetteranno di correggere l’errore `Sito non installa
 
 ### Step 1 - Verifica la dichiarazione del dominio o sottodominio sull’hosting Web <a name="check-multisites"></a>
 
-Nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Web Cloud`{.action} in alto nella pagina, poi clicca sulla scheda `Hosting`{.action} nella colonna di sinistra.
+Nel tuo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Web Cloud`{.action} in alto nella pagina, poi clicca sulla scheda `Hosting`{.action} nella colonna di sinistra.
 
 Seleziona l’hosting Web nella lista e clicca sulla scheda `Multisito`{.action}.
 
@@ -65,7 +65,7 @@ Per prima cosa è necessario verificare che il dominio o sottodominio punti vers
 
 #### 2\.1 Identificare l’indirizzo IP dell’hosting Web OVHcloud
 
-Per recuperare l’indirizzo IP dell’hosting Web, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action} in alto nella pagina. Clicca sulla scheda `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web interessato dalla lista.
+Per recuperare l’indirizzo IP dell’hosting Web, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action} in alto nella pagina. Clicca sulla scheda `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web interessato dalla lista.
 
 L’indirizzo `IPv4` è disponibile nel riquadro `Informazioni generali`{.action}.
 
@@ -84,7 +84,7 @@ A questo punto, è necessario verificare che l’indirizzo IP dell’hosting Web
 > Se modifichi direttamente i **server DNS** associati al tuo dominio, l'intervallo di tempo massimo consentito è di **48 ore**.
 >
 
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla sezione `Web Cloud`{.action} in alto nella pagina. Accedi alla sezione `Domini`{.action}, seleziona il tuo dominio e clicca sulla scheda `Zona DNS`{.action}.
+Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca sulla sezione `Web Cloud`{.action} in alto nella pagina. Accedi alla sezione `Domini`{.action}, seleziona il tuo dominio e clicca sulla scheda `Zona DNS`{.action}.
 
 Viene visualizzata una tabella con diversi record DNS.
 

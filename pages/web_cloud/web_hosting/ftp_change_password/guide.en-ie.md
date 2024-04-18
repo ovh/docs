@@ -24,13 +24,13 @@ This access allows you to [put your website online](/pages/web_cloud/web_hosting
 ## Requirements
 
 - An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Step 1: Access the FTP user management interface
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, then select the service concerned. Click on the `FTP-SSH`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager). Go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, then select the service concerned. Click on the `FTP-SSH`{.action} tab.
 
 A table will display the *FTP users* created on your Web Hosting plan. These users allow you to access your FTP storage space to put your website files online. When you set up your Web Hosting plan, a user account will be created automatically.
 

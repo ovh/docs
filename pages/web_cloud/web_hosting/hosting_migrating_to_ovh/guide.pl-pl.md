@@ -25,7 +25,7 @@ Niniejszy przewodnik prezentuje działania, które należy przeprowadzić, aby p
 - Dostęp do strefy DNS (Domain Name System) domeny
 - Dostęp do plików i bazy danych na Twojej stronie WWW u Twojego aktualnego dostawcy.
 - Posiadanie danych dostępowych (użytkownika, hasła, serwera) dla aktualnych adresów e-mail
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -65,7 +65,7 @@ Kilka ofert hostingu OVHcloud zawiera ofertę e-mail "MX Plan". Ta oferta e-mail
 
 Po wybraniu oferty hostingu, jeśli nie jesteś jeszcze klientem OVHcloud, kliknij przycisk `Zamów`{.action} na powyższych stronach handlowych. Postępuj zgodnie z kolejnymi poleceniami **bez konieczności przenoszenia domeny*.
 
-Zamówienie można złożyć w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Po zalogowaniu kliknij pozycję `Web Cloud`{.action}, następnie kliknij przycisk `Zamów`{.action} w lewym górnym rogu, a następnie kliknij `Hosting`{.action}. Przejdź przez kolejne etapy zamówienia **bez konieczności transferu domeny**.
+Zamówienie można złożyć w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu kliknij pozycję `Web Cloud`{.action}, następnie kliknij przycisk `Zamów`{.action} w lewym górnym rogu, a następnie kliknij `Hosting`{.action}. Przejdź przez kolejne etapy zamówienia **bez konieczności transferu domeny**.
 
 Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mail do kontaktu zostanie wysłana wiadomość. Identyfikatory dostępu do przestrzeni dyskowej FTP (File Transfert Protocol) Twojego hostingu WWW.
 
@@ -76,7 +76,7 @@ Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mai
 
 ### Etap 2: utworzyć i wstępnie skonfigurować strefę DNS dla Twojej domeny w OVHcloud <a name="step2"></a>
 
-Po utworzeniu hostingu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie utwórz strefę DNS dla Twojej domeny **bez wpisywania jej na listę "www"**. Zapoznaj się z naszym przewodnikiem [dotyczącym tworzenia strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Po utworzeniu hostingu zaloguj się do [Panelu klienta OVHcloud](/links/manager), następnie utwórz strefę DNS dla Twojej domeny **bez wpisywania jej na listę "www"**. Zapoznaj się z naszym przewodnikiem [dotyczącym tworzenia strefy DNS w OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Po utworzeniu strefy DNS zaloguj się do jej zarządzania, korzystając z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". Jeśli nie są obecne, wprowadź następujące wpisy:
 

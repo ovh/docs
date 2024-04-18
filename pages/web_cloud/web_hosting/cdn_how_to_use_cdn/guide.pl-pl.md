@@ -24,7 +24,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/).
 
 ## W praktyce
@@ -37,7 +37,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
 
 > [!primary]
 > 
@@ -49,7 +49,7 @@ Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana 
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
 
 Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -289,7 +289,7 @@ Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w o
 > [!warning]
 >
 > Wyłączenie opcji GeoCache dla strony www wymaga zmiany adresu IP, którego będziesz używał do przekierowania domeny na hosting.
-> Zmiana ta jest wykonywana automatycznie, jeśli aktywna strefa DNS Twojej domeny jest zarządzana również z poziomu [konto OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) zawierającego Twój hosting.
+> Zmiana ta jest wykonywana automatycznie, jeśli aktywna strefa DNS Twojej domeny jest zarządzana również z poziomu [konto OVHcloud](/links/manager) zawierającego Twój hosting.
 >
 > W przeciwnym razie należy wykonać następujące dwa działania:
 >
@@ -299,7 +299,7 @@ Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w o
 > Modyfikacja wpisu w aktywnej strefie DNS domeny wiąże się z opóźnieniem propagacji wynoszącym **4** do **24** godzin, zanim wejdzie on w życie. W tym czasie może pojawić się losowo strona z kodem **520**. Zjawisko to jest związane z faktem, że niektóre części sieci DNS nadal przekierowują zapytania na adres IP usługi CDN powiązanej z Twoim hostingiem.
 >
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
 
 Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -309,7 +309,7 @@ Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
 
 ![GeoCache](images/resiliation.png){.thumbnail}
 

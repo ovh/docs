@@ -25,11 +25,11 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 # Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} solution.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
+- Access to the [OVHcloud Control Panel](/links/manager){.external}.
 
 ## Instructions
 
-You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Once you have logged in, go to the `Web Cloud`{.action} section, open `Hosting plans`{.action} and select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
+You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](/links/manager){.external}. Once you have logged in, go to the `Web Cloud`{.action} section, open `Hosting plans`{.action} and select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -102,7 +102,7 @@ This state occurs when:
 
 - Too many emails were sent in quick succession.
 - Too many emails are returned in error.
-- You have disabled the feature in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- You have disabled the feature in your [OVHcloud Control Panel](/links/manager).
 
 To resolve this, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, then select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
 
@@ -192,7 +192,7 @@ Although we strongly recommend using PHP’s "mail()" function, shared hosting a
 
 > [!warning]
 > 
-> Emails sent with a script that uses an SMTP configuration cannot be managed and tracked from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+> Emails sent with a script that uses an SMTP configuration cannot be managed and tracked from your [OVHcloud Control Panel](/links/manager).
 > 
 
 To do this, you can use the following script by replacing only the `Host`, `Username` and `Password` values with your own SMTP settings:

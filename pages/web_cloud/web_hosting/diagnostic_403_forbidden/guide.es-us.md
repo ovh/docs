@@ -47,7 +47,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un plan de [hosting](https://www.ovhcloud.com/es/web-hosting/) de OVHcloud.
 - Disponer de las [claves de conexión](/pages/web_cloud/web_hosting/ftp_connection) al espacio FTP de almacenamiento del alojamiento.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -75,7 +75,7 @@ En primer lugar, compruebe la seguridad de sus equipos o dispositivos informáti
 
 > [!warning]
 >
-> Antes de cambiar la contraseña de la base de datos de su sitio web desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), actualice el archivo de configuración de su sitio web para que se conecte a la base de datos con la nueva contraseña.
+> Antes de cambiar la contraseña de la base de datos de su sitio web desde el [área de cliente de OVHcloud](/links/manager), actualice el archivo de configuración de su sitio web para que se conecte a la base de datos con la nueva contraseña.
 >
 > Si no, al cambiar la contraseña de la base de datos se cortará el acceso al sitio web o a los servicios que lo utilicen.
 >
@@ -160,7 +160,7 @@ SITE CHMOD 705 .
 
 #### Reactivar el alojamiento con el explorador FTP "net2ftp"
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
+En el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
 
 Pulse el botón `Explorador FTP `{.action} y conéctese a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 

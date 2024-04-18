@@ -42,7 +42,7 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 ## Wymagania początkowe
 
 - Posiadanie strony internetowej zainstalowanej w ramach jednej z naszych ofert[hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -98,7 +98,7 @@ Wszystkie diagnozy z etapu 1 muszą być wykonane **bez wyjątku**, aby określi
 
 Aby mieć pewność, że Twoje usługi (hosting współdzielony **i** baza danych) nie podlegają konserwacji lub awarii, pobierz informacje o klastrze i przędz z hostingu współdzielonego oraz ogólne informacje dotyczące bazy danych. Następnie możesz sprawdzić ich status na stronie [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action} i wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdziesz `centrum` danych hostingu współdzielonego oraz `filer`, w którym znajduje się ono.
+Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action} i wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdziesz `centrum` danych hostingu współdzielonego oraz `filer`, w którym znajduje się ono.
 
 ![Pobierz Filer](images/find-filer.png){.thumbnail}
 
@@ -249,7 +249,7 @@ Aby zmniejszyć przepływ zapytań do każdego załadowania strony, możesz rów
 
 > [!primary]
 >
-> OVHcloud oferuje kilka [oferty CDN](https://www.ovhcloud.com/pl/web-hosting/options/). Jeśli chcesz korzystać z tej usługi lub ją włączyć dla Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie zapoznaj się z naszym przewodnikiem dotyczącym [korzystania z usługi CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud oferuje kilka [oferty CDN](https://www.ovhcloud.com/pl/web-hosting/options/). Jeśli chcesz korzystać z tej usługi lub ją włączyć dla Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie zapoznaj się z naszym przewodnikiem dotyczącym [korzystania z usługi CDN OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - zoptymalizuj bazę danych

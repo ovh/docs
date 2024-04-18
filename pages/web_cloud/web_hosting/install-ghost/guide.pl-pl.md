@@ -23,7 +23,7 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 - Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} od OVHcloud
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta](/links/manager){.external} > sekcja `Web Cloud`{.action}
 -Co powinieneś umieć:
     - Znać podstawy ekosystemu Node.js
     - Łączyć się z serwerem za pomocą protokołu SSH
@@ -33,7 +33,7 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ### Etap 1: włącz Node.js jako framework
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do zakładki `Frameworki`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](/links/manager){.external}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do zakładki `Frameworki`{.action}.
 
 Wyświetli się tabela z listą frameworków obecnie dodanych do Twojego hostingu Cloud Web. Upewnij się, czy framework Node.js jest aktywowany. Jeśli tak, przejdź do etapu 2 [Powiąż Node.js ze stroną podpiętą w opcji MultiSite](./#etap-2-powiaz-nodejs-ze-strona-podpieta-w-opcji-multisite).
 
@@ -247,7 +247,7 @@ Instalacja i konfiguracja silnika Ghost są zakończone. Teraz uruchom ponownie 
 
 ### Etap 7: ponowne uruchomienie *daemona* Node.js
 
-Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Przejdź do zakładki `MultiSite`{.action}, po prawej stronie nazwy wybranej domeny kliknij na przycisk `...`{.action} po prawej stronie, po czym kliknij `Uruchom ponownie`{.action}.
+Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](/links/manager){.external}. Przejdź do zakładki `MultiSite`{.action}, po prawej stronie nazwy wybranej domeny kliknij na przycisk `...`{.action} po prawej stronie, po czym kliknij `Uruchom ponownie`{.action}.
 
 W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny wybranej w konfiguracji Twojej strony podpiętej w opcji MultiSite.
 

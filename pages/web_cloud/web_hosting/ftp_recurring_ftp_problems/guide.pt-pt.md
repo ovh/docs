@@ -24,7 +24,7 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 ## Requisitos
 
 - Ter um [serviço de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -32,11 +32,11 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 
 ![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
 
-Esta mensagem no software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que não ativou a opção SFTP ou SSH a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Assim, as informações trocadas entre o seu servidor de alojamento OVHcloud e o seu computador não serão encriptadas.
+Esta mensagem no software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que não ativou a opção SFTP ou SSH a partir da [Área de Cliente OVHcloud](/links/manager). Assim, as informações trocadas entre o seu servidor de alojamento OVHcloud e o seu computador não serão encriptadas.
 
 Se os dados que deseja trocar por esta via não são confidenciais, clique em `OK`{.action}.
 
-Caso contrário, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action} e, a seguir, clique em `Alojamentos`{.action}. Selecione o alojamento correspondente e escolha o separador `FTP-SSH`{.action}.
+Caso contrário, aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action} e, a seguir, clique em `Alojamentos`{.action}. Selecione o alojamento correspondente e escolha o separador `FTP-SSH`{.action}.
 
 Se dispõe de um alojamento [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), selecione a casa `Desativado`{.action} na coluna `SFTP`{.action} e aguarde alguns minutos.
 
@@ -63,7 +63,7 @@ Se não conseguir autenticar-se, altere a sua palavra-passe FTP de acordo com as
 
 A falta de espaço no seu alojamento partilhado pode provocar disfunções no seu site quando o tenta alterar ou atualizar.
 
-Para verificar o espaço de armazenamento restante no alojamento, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action} e depois em `Alojamentos`{.action}. Selecione o alojamento em causa.
+Para verificar o espaço de armazenamento restante no alojamento, aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action} e depois em `Alojamentos`{.action}. Selecione o alojamento em causa.
 
 A quantidade de dados registada no seu servidor de alojamento (exceto bases de dados) aparece na secção `Informações gerais`{.action} > `Espaço de disco`.
 
@@ -85,7 +85,7 @@ Esta ligação é instalada de forma padrão nos alojamentos partilhados da OVHc
 
 ![site-under-construction](images/site-under-construction.png){.thumbnail}
 
-Se não utilizou a funcionalidade "[Módulo 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar o seu site, deverá utilizar o software [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-ligacao-atraves-de-ftp-explorer) acessível através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para eliminar manualmente a página "Site em construção".
+Se não utilizou a funcionalidade "[Módulo 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar o seu site, deverá utilizar o software [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-ligacao-atraves-de-ftp-explorer) acessível através da [Área de Cliente OVHcloud](/links/manager) para eliminar manualmente a página "Site em construção".
 
 ## Quer saber mais? <a name="go-further"></a>
 

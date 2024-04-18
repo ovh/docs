@@ -82,7 +82,7 @@ Ce fichier est présent dans le dossier .vscode, lui-même positionné à la rac
 
 ### Configurer le fichier sftp.json
 
-Avant de travailler sur votre projet, téléchargez-le dans votre dossier local précédemment créé. Cependant, dans un premier temps, assurez-vous que le fichier « sftp.json » est correctement configuré. Les informations utiles sont présentes dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
+Avant de travailler sur votre projet, téléchargez-le dans votre dossier local précédemment créé. Cependant, dans un premier temps, assurez-vous que le fichier « sftp.json » est correctement configuré. Les informations utiles sont présentes dans votre [espace client OVHcloud](/links/manager). Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
 
 Dans le fichier « sftp.json » , rentrez les valeurs pour les entrées suivantes :
 

@@ -47,7 +47,7 @@ Após a deteção de um funcionamento suspeito, os nossos robôs de segurança p
 
 - Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) OVHcloud.
 - Dispor dos [dados de acesso](/pages/web_cloud/web_hosting/ftp_connection) ao espaço FTP de armazenamento do seu alojamento.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -75,7 +75,7 @@ Em primeiro lugar, verifique a segurança do(s) seu(s) posto(s)/aparelho(s) info
 
 > [!warning]
 >
-> Antes de alterar a palavra-passe da base de dados do seu website a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), atualize o ficheiro de configuração do seu website para que se ligue à base de dados com a nova palavra-passe.
+> Antes de alterar a palavra-passe da base de dados do seu website a partir do seu [Área de Cliente OVHcloud](/links/manager), atualize o ficheiro de configuração do seu website para que se ligue à base de dados com a nova palavra-passe.
 >
 > Caso contrário, a alteração da palavra-passe da sua base de dados irá causar uma interrupção no acesso ao seu website ou aos seus serviços/clientes que o utilizam.
 >
@@ -162,7 +162,7 @@ SITE CHMOD 705 .
 
 #### Reativar o alojamento com o Explorador FTP "net2ftp"
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action} e clique em `Alojamentos`{.action } e em `FTP-SSH`{.action}.
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} e clique em `Alojamentos`{.action } e em `FTP-SSH`{.action}.
 
 Carregue no botão `Explorador FTP`{.action} e ligue-se ao seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 

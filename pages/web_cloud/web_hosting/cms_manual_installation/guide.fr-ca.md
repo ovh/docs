@@ -28,7 +28,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 > [!success]
 >
-> Pour installer votre CMS **automatiquement** depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Pour installer votre CMS **automatiquement** depuis votre [espace client OVHcloud](/links/manager), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Découvrez comment configurer votre site web en installant manuellement un CMS.**
@@ -37,7 +37,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -127,10 +127,10 @@ Consultez notre documentation qui décrit [comment ajouter un multisite sur son 
 
 - Assurez-vous que le nom de domaine que vous utiliserez pour accéder à votre CMS, ainsi que son sous-domaine en « www », pointent bien vers l'adresse IP de votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
 
-Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
+Pour récupérer l'adresse IP de votre offre d'hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action} puis sélectionnez votre offre d'hébergement web dans la section `Hébergements`{.action}.<br>
 Dans l'encadré `Informations générales`{.action} sur votre droite, vous trouverez l'adresse IP de votre hébergement web dans le formulaire `IPv4`{.action}.
 
-Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Si la zone DNS active de votre domaine est gérée dans votre [espace client OVHcloud](/links/manager), comparez l'adresse IP de votre hébergement avec celle présente dans la zone DNS de votre domaine, en vous aidant de notre documentation sur les [zones DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >

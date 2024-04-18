@@ -25,13 +25,13 @@ An "**Index of**" page appears in at least one of the following cases:
 
 - A [domain name](https://www.ovhcloud.com/en-ie/domains/)
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Understanding the origin of the "Index of" page
 
-Your domain name is declared to access a target directory (a `Root Folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. You can do this via the [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) tab in your web hosting plan, in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+Your domain name is declared to access a target directory (a `Root Folder`) on the server [FTP](/pages/web_cloud/web_hosting/ftp_connection) of your web hosting plan. You can do this via the [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) tab in your web hosting plan, in your [OVHcloud Control Panel](/links/manager).
 
 The "**Index of**" page indicates that the target directory does not contain a **index.php** or **index.html** file. A file of this type is the *entry point* for your website. This file name is standardised.
 

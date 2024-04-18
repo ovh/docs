@@ -27,7 +27,7 @@ Il tuo hosting Cloud Web dispone di uno spazio di storage in cui puoi ospitare s
 ## Prerequisiti
 
 - Disporre di un [hosting Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Avere accesso all'indirizzo email di contatto associato al tuo identificativo cliente
 
 ## Procedura
@@ -43,13 +43,13 @@ OVHcloud può offrire solo i backup indicati, a condizione che il tuo hosting Cl
 
 ### Recupera un backup
 
-Diversamente dagli hosting condivisi OVHcloud, il ripristino dello spazio FTP non può essere effettuato cliccando sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+Diversamente dagli hosting condivisi OVHcloud, il ripristino dello spazio FTP non può essere effettuato cliccando sul tuo [Spazio Cliente OVHcloud](/links/manager){.external}.
 
 Viene generato un link per scaricare il backup e inviato via email all'indirizzo email associato all'identificativo cliente amministratore dell'hosting Cloud Web.
 
 #### Step 1 - Genera il link di recupero inviato via email
 
-Per generare il link di recupero, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e poi sul Cloud Web corrispondente. 
+Per generare il link di recupero, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}, accedi alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e poi sul Cloud Web corrispondente. 
 
 Seleziona la scheda `FTP - SSH`{.action} e clicca sul pulsante `Genera un backup`{.action} a destra.
 
@@ -65,7 +65,7 @@ Si apre una nuova finestra in cui viene indicato che il link di recupero del fil
 
 Clicca su `Conferma`{.action} per confermare la tua richiesta.
 
-Se la generazione del backup è stata avviata correttamente, visualizzi questo messaggio nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
+Se la generazione del backup è stata avviata correttamente, visualizzi questo messaggio nello [Spazio Cliente OVHcloud](/links/manager){.external}:
 
 ![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Una volta scaricati i file, potrai [accedere al tuo spazio FTP](/pages/web_cloud
 
 > [!primary]
 >
-> Utilizza le porte indicate nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per le connessioni SFTP e SSH perché la porta 22 non sarà funzionale per il tuo hosting Cloud Web.
+> Utilizza le porte indicate nello [Spazio Cliente OVHcloud](/links/manager){.external} per le connessioni SFTP e SSH perché la porta 22 non sarà funzionale per il tuo hosting Cloud Web.
 >
 
 ## Per saperne di più 

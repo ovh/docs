@@ -31,7 +31,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 > [!success]
 >
-> Um Ihr CMS **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Um Ihr CMS **automatisch** in Ihrem [OVHcloud Kundencenter](/links/manager) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Diese Anleitung erklärt, wie Sie Ihre Website konfigurieren, indem Sie ein CMS manuell installieren.**
@@ -40,7 +40,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -130,10 +130,10 @@ In unserer Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/
 
 - Vergewissern Sie sich, dass der Domainname, den Sie für den Zugriff auf Ihr CMS verwenden, sowie dessen "www"-Subdomain auf die IP-Adresse Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) verweisen.
 
-Um die IP-Adresse Ihres Webhostings zu erfahren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr Webhosting im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} aus.<br>
+Um die IP-Adresse Ihres Webhostings zu erfahren, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr Webhosting im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} aus.<br>
 Im Kasten `Allgemeine Informationen`{.action} finden Sie die IP-Adresse Ihres Webhostings im Eintrag `IPv4`{.action}.
 
-Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der in der DNS-Zone Ihres Domainnamens eingetragenen. Verwenden Sie dazu unsere Dokumentation zur [Verwaltung von OVHcloud DNS-Zonen](/pages/web_cloud/domains/dns_zone_edit).
+Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der in der DNS-Zone Ihres Domainnamens eingetragenen. Verwenden Sie dazu unsere Dokumentation zur [Verwaltung von OVHcloud DNS-Zonen](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >

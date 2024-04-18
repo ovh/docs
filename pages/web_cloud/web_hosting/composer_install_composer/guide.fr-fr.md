@@ -20,7 +20,7 @@ updated: 2023-02-24
 ## Prérequis
 
 - Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} disposant d'un accès SSH.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 

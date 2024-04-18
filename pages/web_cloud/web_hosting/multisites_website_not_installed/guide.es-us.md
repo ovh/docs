@@ -25,7 +25,7 @@ Es posible que aparezca en su navegador de internet la página de error **Sitio 
 ## Requisitos
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/)
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Disponer también de la gestión de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) a la que esté asociado el dominio.
 
 ## Procedimiento
@@ -40,7 +40,7 @@ A continuación se explica cómo corregir el error `Sitio no instalado` en ambos
 
 ### Etapa 1 - Compruebe la declaración de su dominio o subdominio en su alojamiento web <a name="check-multisites"></a>
 
-En su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Web Cloud`{.action} de la parte superior de la página y, en la columna izquierda, haga clic en `Alojamientos`{.action}.
+En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action} de la parte superior de la página y, en la columna izquierda, haga clic en `Alojamientos`{.action}.
 
 Seleccione el alojamiento web correspondiente en la lista y abra la pestaña de `Multisitio`{.action}.
 
@@ -65,7 +65,7 @@ Este paso consiste en comprobar que el dominio o subdominio apuntan hacia la dir
 
 #### 2\.1 Identificar la dirección IP de su alojamiento web de OVHcloud
 
-Para conocer la dirección IP de su alojamiento web, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Para conocer la dirección IP de su alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 La dirección `IPv4` se encuentra en el recuadro `Información general`{.action}.
 
@@ -84,7 +84,7 @@ A continuación, compruebe que la dirección IP del alojamiento web aparece en l
 > Si modifica directamente los **servidores DNS** asociados a su dominio, este plazo puede llegar hasta **48 horas** como máximo.
 >
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. Acceda a la sección `Dominios`{.action} de la columna izquierda, seleccione su dominio y acceda a la pestaña `Zona DNS`{.action}.
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. Acceda a la sección `Dominios`{.action} de la columna izquierda, seleccione su dominio y acceda a la pestaña `Zona DNS`{.action}.
 
 Aparecerá una tabla con distintos registros DNS.
 

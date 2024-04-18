@@ -35,7 +35,7 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
     
 ## Requirements <a name="requirements"></a>
 
-- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You plan to order an SSL secured [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) or you have a web hosting plan in your customer account without an SSL certificate installed.
 - You manage a [domain name](https://www.ovhcloud.com/en-ie/domains/) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 - You represent an organisation (company, government agency, etc.) registered with an official registry.
@@ -127,7 +127,7 @@ All of the actions described in this step might be performed over several days. 
 Once your order has been placed, Sectigo will send you an email containing a validation link and a procedure to follow.
 Check your information and confirm your request by following the instructions in this email.
 
-To ensure that email exchanges with Sectigo are going well, also check the validity of the email address entered in the form when you ordered the EV SSL, as well as the contact email address associated with your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+To ensure that email exchanges with Sectigo are going well, also check the validity of the email address entered in the form when you ordered the EV SSL, as well as the contact email address associated with your [OVHcloud Control Panel](/links/manager).
 
 > [!primary]
 >

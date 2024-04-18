@@ -26,7 +26,7 @@ Unsere Webhostings sind seit 2011 mit IPv6 kompatibel, doch die Aktivierung dies
 
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -44,7 +44,7 @@ Um zu überprüfen, ob Ihre Website bereits eine IPv6-Adresse verwendet, können
 
 ### Schritt 1: IPv6-Adresse Ihres Webhostings abrufen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
 
 Kopieren Sie im Abschnitt **IPv6** die Adresse und gehen Sie zum nächsten Schritt über.
 

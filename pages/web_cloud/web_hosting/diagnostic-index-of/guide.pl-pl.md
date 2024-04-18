@@ -31,13 +31,13 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
 ### Zrozumieć pochodzenie strony "Index of"
 
-Twoja domena jest zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) na hostingu. Jest to w zakładce [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) Twojego hostingu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Twoja domena jest zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web_cloud/web_hosting/ftp_connection) na hostingu. Jest to w zakładce [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) Twojego hostingu w [Panelu klienta OVHcloud](/links/manager).
 
 Strona **Index of** wskazuje, że dany katalog docelowy nie zawiera pliku **index.php** lub **index.html**. Plik ten stanowi "*punkt wejścia*" Twojej strony WWW. Nazwa tego pliku jest znormalizowana.
 

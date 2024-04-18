@@ -18,7 +18,7 @@ Zmiana hasła do bazy danych musi zatem zawsze być wykonywana:
 
 - W [pliku konfiguracyjnym](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etap-1-zidentyfikowac-baze-danych-powiazana-z-modulem) Twojej strony WWW za [pomocą przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection);
 
-- **I** w serwerze zawierającym bazę danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- **I** w serwerze zawierającym bazę danych w [Panelu klienta OVHcloud](/links/manager).
 
 Dopóki zmiana nie zostanie dokonana **w tych dwóch miejscach**, Twoja strona WWW będzie wyświetlać "[błąd w logowaniu do bazy danych](/pages/web_cloud/web_hosting/diagnosis_database_errors#blad-podczas-logowania-do-bazy-danych)".
 
@@ -43,7 +43,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 ## Wymagania początkowe
 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Korzystanie z [bazy danych powiązanej z hostingiem](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub z [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
 - Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -51,7 +51,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 ### Etap 1: zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
+W [Panelu klienta OVHcloud](/links/manager) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Aby określić, który przypadek dotyczy Twojej strony WWW, w pliku konfiguracyj
 - Dla DRUPAL: nazwa pojawia się pod **"database"**;
 - Dla PRESTASHOP: nazwa pojawia się pod **"database_name"**.
 
-Następnie wróć do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}:
+Następnie wróć do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}:
 
 - Przejdź do sekcji `Hosting`{.action}, a następnie do odpowiedniego hostingu;
 - Kliknij kartę `Bazy danych`{.action} **po prawej stronie** ekranu;
@@ -191,9 +191,9 @@ Zapisz tę zmianę.
 
 Ponownie, możliwe są dwa przypadki: 
 
-- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej [hostingowi](https://www.ovhcloud.com/pl/web-hosting/), postępuj zgodnie z tymi [instrukcjami](#case1).
+- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](/links/manager) poświęconej [hostingowi](https://www.ovhcloud.com/pl/web-hosting/), postępuj zgodnie z tymi [instrukcjami](#case1).
 
-- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej ofertom [Web Cloud Databases](/products/web-cloud-clouddb), postępuj zgodnie z tymi [instrukcjami](#case2).
+- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](/links/manager) poświęconej ofertom [Web Cloud Databases](/products/web-cloud-clouddb), postępuj zgodnie z tymi [instrukcjami](#case2).
 
 #### Przypadek nr 1: baza danych twojej strony jest częścią twojej oferty hostingowej <a name="case1"></a>
 

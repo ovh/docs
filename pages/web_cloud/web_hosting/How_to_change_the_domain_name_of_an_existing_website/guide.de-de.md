@@ -27,7 +27,7 @@ In diesem Tutorial erklären wir Ihnen die wichtigsten Schritte, die Sie bei der
 
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -46,7 +46,7 @@ Melden Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [H
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 - Ihre neue Domain muss auf dasselbe Wurzelverzeichnis verweisen wie die Domain, die derzeit für den Zugang zu Ihrer Website verwendet wird.
-- Überprüfen Sie, ob Ihre neue Domain korrekt auf die IP-Adresse Ihres Webhostings verweist. Um die IP-Adresse abzurufen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie Ihr Hosting aus. Sie finden die Adresse unter **IPv4** im Tab `Allgemeine Informationen`{.action}.
+- Überprüfen Sie, ob Ihre neue Domain korrekt auf die IP-Adresse Ihres Webhostings verweist. Um die IP-Adresse abzurufen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie Ihr Hosting aus. Sie finden die Adresse unter **IPv4** im Tab `Allgemeine Informationen`{.action}.
 
 > [!warning]
 >

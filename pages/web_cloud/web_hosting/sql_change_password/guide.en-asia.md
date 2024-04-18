@@ -14,7 +14,7 @@ The password change for a database must therefore always be carried out in two p
 
 - In your website’s [configuration file](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-1-identify-the-database-linked-to-your-module) via the [FTP space on your Web Hosting plan](/pages/web_cloud/web_hosting/ftp_connection).
 
-- **And** on the server that contains their database, via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- **And** on the server that contains their database, via the [OVHcloud Control Panel](/links/manager).
 
 Until this change is made **in both locations**, your site will display a "[database connection error](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
@@ -38,7 +38,7 @@ There are four steps to changing your website’s database password:
 ## Requirements
 
 - An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [database associated with your hosting](https://www.ovhcloud.com/asia/web-hosting/options/start-sql/)
 - FTP login details to log in to your [hosting’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
@@ -46,7 +46,7 @@ There are four steps to changing your website’s database password:
 
 ### Step 1: Identify your website’s configuration file <a name="step1"></a>
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
+In the [OVHcloud Control Panel](/links/manager), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -77,7 +77,7 @@ In the configuration file identified in [step 1](#step1), start by noting down t
 - For DRUPAL: The name appears under "**database**".
 - For PRESTASHOP: The name appears under "**database_name**".
 
-Then go back to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open the `Web Cloud`{.action} section:
+Then go back to the [OVHcloud Control Panel](/links/manager) and open the `Web Cloud`{.action} section:
 
 - Go to the `Hosting plans`{.action} section, then to the Web Hosting plan concerned.
 - Click on `Databases`{.action} tab **on the right-hand side** of your screen.

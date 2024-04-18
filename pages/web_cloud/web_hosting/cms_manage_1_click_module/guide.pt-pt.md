@@ -25,13 +25,13 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 
 - Ter um [serviço de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) que permite a instalação de um módulo 1 clique.
 - Ter criado um módulo 1 clique no alojamento (Se ainda não o fez, siga as instruções deste [manual](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Aceder ao seu site
 
-Para aceder à parte pública do seu site após a instalação de um módulo 1 clique, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Módulos "1 clique"`{.action}.
+Para aceder à parte pública do seu site após a instalação de um módulo 1 clique, aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Módulos "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha relativa ao módulo e, a seguir, em `Aceder ao módulo`{.action}.
 
@@ -42,7 +42,7 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao módul
 
 ### Aceder à interface de administrador
 
-Para aceder à parte do seu site reservada aos administradores, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Módulos "1 clique"`{.action}.
+Para aceder à parte do seu site reservada aos administradores, aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Módulos "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha relativa ao módulo e, a seguir, em `Aceder à interface de administração do módulo`{.action}.
 
@@ -50,11 +50,11 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao módul
 
 Clique no separador `Módulos "1 clique"`{.action} a partir da parte `Alojamentos`{.action} da sua Área de Cliente. O identificador administrador do seu módulo aparece na coluna `Nome de utilizador`.
 
-Também pode procurar o e-mail recebido durante a criação do módulo a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do ecrã e, no menu que aparecer, clique em `E-mails de serviço`{.action}.
+Também pode procurar o e-mail recebido durante a criação do módulo a partir do seu [Área de Cliente OVHcloud](/links/manager): clique no seu nome no canto superior direito do ecrã e, no menu que aparecer, clique em `E-mails de serviço`{.action}.
 
 ### Modificar a palavra-passe do seu módulo <a name="password-change"></a>
 
-Pode alterar a palavra-passe do módulo a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou através de uma ligação direta à página de acesso ao espaço de administrador do seu website.
+Pode alterar a palavra-passe do módulo a partir da [Área de Cliente OVHcloud](/links/manager) ou através de uma ligação direta à página de acesso ao espaço de administrador do seu website.
 Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password.
 
 > [!primary]
@@ -63,7 +63,7 @@ Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password
 >
 > Na caixa de e-mail em causa, verifique as pastas `Spams`{.action} e `Elementos suprimidos`{.action}.
 >
-> Pode igualmente encontrar o conjunto dos e-mails enviados pelos nossos serviços a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do seu ecrã e, no menu contextual à direita do ecrã, clique em `E-mails de serviço`{.action}.
+> Pode igualmente encontrar o conjunto dos e-mails enviados pelos nossos serviços a partir do seu [Área de Cliente OVHcloud](/links/manager): clique no seu nome no canto superior direito do seu ecrã e, no menu contextual à direita do ecrã, clique em `E-mails de serviço`{.action}.
 >
 > **Duração dos vínculos:**
 >
@@ -108,7 +108,7 @@ No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a opera
 
 #### Etapa 1: identificar a base de dados do módulo <a name="step1"></a>
 
-Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Bases de dados`{.action}.
+Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Bases de dados`{.action}.
 
 Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/), pode considerar que se trata do seu site.
 
@@ -132,7 +132,7 @@ Para guardar o seu site, siga as instruções deste [guia](/pages/web_cloud/web_
 > A eliminação do módulo 1 clique e da base de dados irá também resultar **na eliminação de todos os backups**. Os dados eliminados não poderão ser recuperados posteriormente.
 >
 
-Para eliminar o módulo 1 clique, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e em `Módulos "1 clique"`{.action}.
+Para eliminar o módulo 1 clique, aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e em `Módulos "1 clique"`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita da linha que designa o seu módulo e, a seguir, no comando `Eliminar o módulo`{.action}.
 
@@ -143,7 +143,7 @@ A seguir, clique no botão `...`{.action} à direita da linha que designa o seu 
 > Se dispõe de uma subscrição [Hosting Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ou se já criou quatro bases de dados sobre o seu alojamento [Hosting Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Hosting Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), deverá eliminar a base de dados identificada [no passo 1](#step1) **ANTES** de poder criar um novo módulo 1 clique.
 >
 
-Para terminar a eliminação do módulo, aceda ao separador `Bases de dados`{.action}, ainda na secção `Web cloud`{.action}, `Alojamentos`{.action} e no alojamento em causa, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e clique em `...`{.action} à direita da linha que designa a base e no botão `Eliminar base de dados`{.action}.
+Para terminar a eliminação do módulo, aceda ao separador `Bases de dados`{.action}, ainda na secção `Web cloud`{.action}, `Alojamentos`{.action} e no alojamento em causa, na [Área de Cliente OVHcloud](/links/manager) e clique em `...`{.action} à direita da linha que designa a base e no botão `Eliminar base de dados`{.action}.
 
 Antes de reiniciar a instalação de um novo módulo, verifique que as tarefas de eliminação solicitadas anteriormente foram finalizadas através do separador `operações em curso`{.action}.
 

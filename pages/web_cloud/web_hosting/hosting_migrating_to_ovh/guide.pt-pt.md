@@ -25,7 +25,7 @@ Este guia apresenta-lhe as diferentes ações a realizar para migrar o conjunto 
 - Ter acesso à zona DNS (Domain Name System) ativa do seu domínio.
 - Ter acesso aos ficheiros e à base de dados do seu website no seu alojamento atual.
 - Dispor de dados de acesso (utilizador, palavra-passe, servidor) aos seus endereços de e-mail atuais.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -65,7 +65,7 @@ Várias ofertas de alojamento partilhado OVHcloud incluem uma oferta de e-mail "
 
 Depois de escolher a oferta de alojamento, se ainda não é cliente da OVHcloud, clique no botão `Encomendar`{.action} presente nas páginas comerciais acima. Siga os passos da encomenda **sem solicitar a transferência do seu nome de domínio**.
 
-Também pode efetuar a encomenda a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Depois de estabelecer a ligação, clique na parte `Web Cloud`{.action} e, na parte superior esquerda, clique no botão `Encomendar`{.action}, e depois nos `Alojamento`{.action}. Siga as etapas da encomenda **sem solicitar a transferência do seu nome de domínio**.
+Também pode efetuar a encomenda a partir do seu [Área de Cliente OVHcloud](/links/manager). Depois de estabelecer a ligação, clique na parte `Web Cloud`{.action} e, na parte superior esquerda, clique no botão `Encomendar`{.action}, e depois nos `Alojamento`{.action}. Siga as etapas da encomenda **sem solicitar a transferência do seu nome de domínio**.
 
 Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-mail será enviado para o seu endereço de e-mail de contacto. Este último conterá as credenciais de acesso ao espaço de armazenamento FTP (File Transfer Protocol) do seu alojamento Web.
 
@@ -76,7 +76,7 @@ Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-ma
 
 ### Etapa 2 : criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud <a name="step2"></a>
 
-Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](/links/manager) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Depois de criar a zona DNS, aceda à secção de gestão usando o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)". Se não estiverem presentes, introduza as seguintes entradas:
 

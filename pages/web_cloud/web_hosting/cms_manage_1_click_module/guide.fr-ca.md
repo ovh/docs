@@ -21,13 +21,13 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 
 - Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/) permettant l'installation d'un module en 1 clic.
 - Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 ### Accéder à votre site
 
-Pour accéder à la partie publique de votre site suite à l'installation d'un module en 1 clic, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Modules en 1 clic`{.action}.
+Pour accéder à la partie publique de votre site suite à l'installation d'un module en 1 clic, rendez-vous dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Modules en 1 clic`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Accéder au module`{.action}.
 
@@ -38,7 +38,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 ### Accéder à l'interface administrateur
 
-Pour accéder à la partie de votre site réservée aux administrateurs, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Modules en 1 clic`{.action}.
+Pour accéder à la partie de votre site réservée aux administrateurs, rendez-vous dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Modules en 1 clic`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant votre module puis sur `Accéder à l'interface d'administration du module`{.action}.
 
@@ -46,11 +46,11 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 Cliquez sur l'onglet `Modules en 1 clic`{.action} depuis la partie `Hébergements`{.action} de votre espace client. L'identifiant administrateur de votre module apparaît dans la colonne `Login`.
 
-Vous pouvez également rechercher l'e-mail reçu lors de la création de votre module depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) : cliquez sur votre nom en haut à droite de l'écran puis, dans le menu qui apparaît, cliquez sur `Emails de service`{.action}.
+Vous pouvez également rechercher l'e-mail reçu lors de la création de votre module depuis votre [espace client OVHcloud](/links/manager) : cliquez sur votre nom en haut à droite de l'écran puis, dans le menu qui apparaît, cliquez sur `Emails de service`{.action}.
 
 ### Modifier le mot de passe de votre module <a name="password-change"></a>
 
-Vous pouvez modifier le mot de passe de votre module depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou en vous rendant directement sur la page de connexion à l'espace administrateur de votre site Web.
+Vous pouvez modifier le mot de passe de votre module depuis votre [espace client OVHcloud](/links/manager) ou en vous rendant directement sur la page de connexion à l'espace administrateur de votre site Web.
 Dans les deux cas, un e-mail de réinitialisation de mot de passe vous sera envoyé.
 
 > [!primary]
@@ -59,7 +59,7 @@ Dans les deux cas, un e-mail de réinitialisation de mot de passe vous sera envo
 >
 > Sur la boîte e-mail concernée, vérifiez les dossiers `Spams`{.action} et `Corbeille`{.action}.
 >
-> Vous pouvez également retrouver l'ensemble des e-mails envoyés par nos services depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) : cliquez sur votre nom en haut à droite de votre écran puis, dans le menu contextuel à droite de l'écran, cliquez sur `Emails de service`{.action}.
+> Vous pouvez également retrouver l'ensemble des e-mails envoyés par nos services depuis votre [espace client OVHcloud](/links/manager) : cliquez sur votre nom en haut à droite de votre écran puis, dans le menu contextuel à droite de l'écran, cliquez sur `Emails de service`{.action}.
 >
 > **Durée de validité des liens :**
 >
@@ -105,7 +105,7 @@ Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’a
 
 #### Étape 1 : identifier la base de données liée à votre module <a name="step1"></a>
 
-Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**. Rendez-vous pour cela dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action}.
+Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**. Rendez-vous pour cela dans votre [espace client OVHcloud](/links/manager). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action}.
 
 Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 
@@ -127,7 +127,7 @@ Pour sauvegarder votre site, suivez les instructions de ce [guide](/pages/web_cl
 > La suppression de votre module en 1 clic et de sa base de données entraîneront également celle de **l'ensemble de leurs sauvegardes**. Les données supprimées ne pourront pas être récupérées par la suite.
 >
 
-Pour supprimer votre module en 1 clic, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
+Pour supprimer votre module en 1 clic, rendez-vous dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur `Modules en 1 clic`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne désignant votre module puis sur la commande `Supprimer le module`{.action}.
 
@@ -138,7 +138,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne désignant vo
 > Si vous disposez d'un hébergement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) ou si vous avez déjà créé quatre bases de données sur votre hébergement [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), vous devrez donc supprimer la base de données identifiée à [l'étape 1](#step1) **AVANT** de pouvoir créer un nouveau module en 1 clic.
 >
 
-Pour finaliser la suppression de votre module, rendez-vous donc dans l'onglet `Bases de données`{.action}, toujours dans la partie `Web cloud`{.action}, `Hébergements`{.action} et dans l'hébergement concerné sur votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis cliquer sur `...`{.action} à droite de la ligne désignant la base et sur le bouton `Supprimer la base de données`{.action}.
+Pour finaliser la suppression de votre module, rendez-vous donc dans l'onglet `Bases de données`{.action}, toujours dans la partie `Web cloud`{.action}, `Hébergements`{.action} et dans l'hébergement concerné sur votre [espace client OVHcloud](/links/manager) puis cliquer sur `...`{.action} à droite de la ligne désignant la base et sur le bouton `Supprimer la base de données`{.action}.
 
 Avant de relancer l'installation d'un nouveau module, vérifiez que les tâches de suppression demandées précédemment ont bien été finalisées via l'onglet `Tâches en cours`{.action}.
 

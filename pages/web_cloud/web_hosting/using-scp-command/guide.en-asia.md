@@ -28,7 +28,7 @@ It allows you to copy a file or folder containing one or more files from a termi
 - A terminal compatible with Linux and SSH commands (for example, the *terminal* of MacOS or the *Ubuntu* emulator on Windows)
 - Familiarity with Linux and SSH commands
 - A [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) with SSH access
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+- Access to your [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions
 

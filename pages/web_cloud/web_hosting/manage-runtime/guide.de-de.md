@@ -17,7 +17,7 @@ Bei Cloud Web stehen für Ihr Projekt verschiedene Entwicklungssprachen zur Verf
 ## Voraussetzungen
 
 - Sie haben ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -29,7 +29,7 @@ Wenn Sie ermittelt haben, welche Runtime Engine(s) Sie verwenden möchten, könn
 
 ### Schritt 1: Auf die Verwaltung der Runtime Engines zugreifen
 
-Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `Runtime Engines`{.action}.
+Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `Runtime Engines`{.action}.
 
 Es wird eine Tabelle angezeigt, die alle aktuell zu Ihrem Cloud Web Hosting hinzugefügten Runtime Engines enthält. Bitte beachten Sie, dass bei der Installation Ihres Hostings automatisch eine Engine erstellt wird.
 

@@ -28,7 +28,7 @@ Hacking can occur in several ways (non-exhaustive list):
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) with your website hosted on it.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -145,7 +145,7 @@ Make the restore dates for your FTP storage space and SQL database coincide as m
 > OVHcloud has security robots that can detect malicious actions originating from your hosting. They will deactivate your hosting plan and notify you via email that your hosting plan has been deactivated.
 > In addition to this email, a "403 Forbidden" page usually appears when you try to access your website.
 >
-> If your hosting system is in the "disabled" state, the automatic restoration robots available from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) will be disabled as well.
+> If your hosting system is in the "disabled" state, the automatic restoration robots available from your [OVHcloud Control Panel](/links/manager) will be disabled as well.
 > You will need to carry out a “manual” restore of your site, delete the remaining malicious elements, then correct all security vulnerabilities present in this backup. Do this **before** reactivating your hosting.
 >
 > To reactivate the Web Hosting, follow the instructions in step 4 of [this guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).

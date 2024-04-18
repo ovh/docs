@@ -16,19 +16,19 @@ Dzięki [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-host
 >
 > Ten darmowy hosting o rozmiarze 100 MB jest odpowiedni do prostej strony WWW w której **można wyświetlić serwer bez bazy danych**.
 > Jest to również właściwe, jeśli nie potrzebujesz więcej niż jednego konta e-mail typu "MX plan". 
-> Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, takich jak CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), zachęcamy do zamówienia jednej z [naszych ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/) na naszej stronie internetowej lub w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Jeśli chcesz uruchomić stronę WWW zawierającą kilka stron i wymagającą bazy danych, takich jak CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), zachęcamy do zamówienia jednej z [naszych ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/) na naszej stronie internetowej lub w Twoim [Panelu klienta OVHcloud](/links/manager){.external}.
 >
 
 **Dowiedz się, jak włączyć darmowy hosting 100M**
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, odłączone od hostingu www i bez żadnego [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} w [Panelu klienta OVHcloud](/links/manager){.external}, odłączone od hostingu www i bez żadnego [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action}  na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, kliknij `Domeny`{.action}  na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę.
 
 W ramce **Informacje ogólne** znajduje się pozycja *Darmowy hosting WWW i e-mail*. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Włącz`{.action}.
 
@@ -42,7 +42,7 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 >
 > Jeśli zaznaczysz jedno z dwóch pól `Rekord DNS A` i `Rekord DNS MX` lub oba te pola, zostanie on usunięty z konfiguracji pierwotnie wprowadzonej w strefie DNS Twojej domeny.
 >
-> Jeśli Twoja strefa DNS nie jest zarządzana w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wprowadź ręcznie zmiany w zewnętrznej strefie DNS.
+> Jeśli Twoja strefa DNS nie jest zarządzana w [Panelu klienta OVHcloud](/links/manager){.external}, wprowadź ręcznie zmiany w zewnętrznej strefie DNS.
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [edycji strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
@@ -54,7 +54,7 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 
 > [!primary]
 >
-> Jeśli Twój projekt wymaga szybszego przejścia na hosting z bazą danych, z większej przestrzeni dyskowej lub z większej liczby adresów e-mail, będziesz mógł przejść bezpośrednio i tylko z Darmowy hosting 100M na ofertę hostingu **Perso** z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Jeśli Twój projekt wymaga szybszego przejścia na hosting z bazą danych, z większej przestrzeni dyskowej lub z większej liczby adresów e-mail, będziesz mógł przejść bezpośrednio i tylko z Darmowy hosting 100M na ofertę hostingu **Perso** z [Panelu klienta OVHcloud](/links/manager){.external}.
 >
 > Przejście na ofertę **Pro** lub **Performance** wymaga wcześniejszego przejścia z oferty Darmowy hosting 100M na ofertę **Perso**.
 >

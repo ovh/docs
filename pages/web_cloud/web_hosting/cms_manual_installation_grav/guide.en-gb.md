@@ -14,7 +14,7 @@ The **CMS** (**C**ontent **M**anagement **S**ystem) Grav enables websites to be 
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

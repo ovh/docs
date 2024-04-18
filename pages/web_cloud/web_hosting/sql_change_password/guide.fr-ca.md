@@ -14,7 +14,7 @@ Le changement de mot de passe d'une base de données doit donc toujours être ef
 
 - Dans le [fichier de configuration](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-1-identifier-la-base-de-donnees-liee-a-votre-module) de votre site via [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection);
 
-- **Et** dans le serveur contenant sa base de données via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- **Et** dans le serveur contenant sa base de données via votre [espace client OVHcloud](/links/manager).
 
 Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une « [erreur de connexion à la base de données](/pages/web_cloud/web_hosting/diagnosis_database_errors#erreur-lors-de-la-connexion-a-la-base-de-donnees) ».
 
@@ -39,7 +39,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/).
 - Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -47,7 +47,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 
 ### Étape 1 : identifier le fichier de configuration de votre site <a name="step1"></a>
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Web Cloud`{.action} puis sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}. Identifiez le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
+Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Web Cloud`{.action} puis sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}. Identifiez le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
 
 ![root-folders](images/root-folders.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Dans le fichier de configuration identifié à [l'étape 1](#step1), commencez p
 - Pour DRUPAL : le nom apparaît sous **« database »**;
 - Pour PRESTASHOP : le nom apparaît sous **« database_name »**.
 
-Retournez ensuite dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) toujours dans la partie `Web Cloud`{.action} :
+Retournez ensuite dans votre [espace client OVHcloud](/links/manager) toujours dans la partie `Web Cloud`{.action} :
 
 - Rendez-vous dans la partie `Hébergements`{.action} puis dans l'hébergement concerné;
 - Cliquez sur l'onglet `Bases de données`{.action} **à droite** de votre écran;

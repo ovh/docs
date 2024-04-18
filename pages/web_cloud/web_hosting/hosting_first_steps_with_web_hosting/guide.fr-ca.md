@@ -29,7 +29,7 @@ Elles vous permettent de gagner du temps sur « l'administration serveur » et d
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -89,7 +89,7 @@ Pour ce cas de figure, nous vous invitons à suivre directement notre guide « [
 ##### Cas n°2 - Créer un site web en utilisant un CMS
 
 OVHcloud vous met à disposition l'option « Modules en 1 clic ».<br>
-Une fois connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et via votre hébergement web, cette option vous permet d'installer rapidement les CMS *WordPress*, *Joomla!*, *PrestaShop* et *Drupal*.
+Une fois connecté à votre [espace client OVHcloud](/links/manager) et via votre hébergement web, cette option vous permet d'installer rapidement les CMS *WordPress*, *Joomla!*, *PrestaShop* et *Drupal*.
 
 Pour utiliser cette option, consultez notre guide « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 
@@ -110,7 +110,7 @@ Une fois l'option activée, consultez notre guide « [Créer une adresse e-mail]
 >
 > - Si vous migrez un site web et/ou s'il s'agit d'adresses e-mail associées au nom de domaine de votre site web, consultez notre guide « [Migrer son site web et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ». Vous y retrouverez toutes les étapes clés pour migrer sans interruption l'ensemble de vos services (nom de domaine, site web, adresse(s) e-mail, etc.).
 >
-> - Si vous n'avez pas attaché un nom de domaine lors de la commande de votre hébergement web et si vous souhaitez bénéficier de l'option « adresse(s) e-mail incluse(s) avec votre hébergement web », vous devrez effectuer l'opération manuellement depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+> - Si vous n'avez pas attaché un nom de domaine lors de la commande de votre hébergement web et si vous souhaitez bénéficier de l'option « adresse(s) e-mail incluse(s) avec votre hébergement web », vous devrez effectuer l'opération manuellement depuis votre [espace client OVHcloud](/links/manager).
 
 ### Étape 4 - Vérifier et/ou modifier la configuration de votre nom de domaine <a name="domain-configuration"></a>
 

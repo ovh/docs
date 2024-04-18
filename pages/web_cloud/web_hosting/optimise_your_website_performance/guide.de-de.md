@@ -20,7 +20,7 @@ Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie erhielten eine E-Mail, die bestätigt, dass Ihr Webhosting eingerichtet wurde.
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/), mit dem Sie auf Ihre Webseite zugreifen können.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -84,7 +84,7 @@ Weitere Details zu diesem Thema finden Sie unten in Schritt 5.
 
 Vergleichen Sie die Grafiken der Ressourcennutzung Ihres Hostings (weitere Informationen unten), um den Ursprung der Verzögerungen zu ermitteln, und entnehmen Sie die Daten dieser Spitzenwerte aus den Protokollen.
 
-Sie können direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihre Logs, Statistiken und Verlaufsdiagramme zugreifen.
+Sie können direkt über das [OVHcloud Kundencenter](/links/manager) auf Ihre Logs, Statistiken und Verlaufsdiagramme zugreifen.
 
 Zugriff auf Statistiken und Logs:
 
@@ -157,7 +157,7 @@ _Dieser Schritt ist optional, wenn Sie keine Datenbank verwenden._
 Sie können mit PHPMyAdmin auf Ihre Datenbank zugreifen. Anweisungen zur Verwendung von PHPMyAdmin würden den Rahmen dieser Anleitung sprengen und werden daher nicht weiter ausgeführt.
 Es gibt jedoch viele externe Tutorials zu diesem Thema.
 
-**So greifen Sie über phpMyAdmin auf die Datenbank zu:** Um über phpMyAdmin auf Ihre Datenbank zuzugreifen, gehen Sie wie folgt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vor:
+**So greifen Sie über phpMyAdmin auf die Datenbank zu:** Um über phpMyAdmin auf Ihre Datenbank zuzugreifen, gehen Sie wie folgt über das [OVHcloud Kundencenter](/links/manager) vor:
 
 - Klicken Sie im Bereich `Hosting-Pakete`{.action} auf Ihre Domain.
 - Wechseln Sie zur Registerkarte `Datenbanken`{.action}.

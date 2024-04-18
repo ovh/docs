@@ -22,7 +22,7 @@ Administrer plusieurs sites web peut s'avérer complexe et chronophage. Si vous 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Être connecté à l'interface d'administration de WordPress.
 
 > [!warning]
@@ -76,7 +76,7 @@ Dans le menu principal à gauche, cliquez sur `Sites`{.action}, puis sur `Add Ne
 
 Renseignez l'URL du site enfant que voulez connecter au dashboard MainWP. Juste en dessous, sélectionnez le bouton pour indiquer que vous avez bien installé et activé le plugin MainWP Child sur votre site enfant. Les deux nouveaux champs suivants s'affichent :
 
-- `Administrator username` (nom d'administrateur) : connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Sélectionnez l'hébergement web concerné et cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
+- `Administrator username` (nom d'administrateur) : connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Sélectionnez l'hébergement web concerné et cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant à votre module en un clic. Votre nom d'administrateur se trouve dans la colonne `Login`{.action}.
 - `Site title` (titre du site) : renseignez la valeur que vous souhaitez. Si vous connectez de nombreux sites web enfants, pensez à renseigner un titre de site explicite.
 
 ![mainWP](images/add_site.png){.thumbnail}

@@ -19,7 +19,7 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 ## Requisitos
 
 - Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma versão recente de PHP e um ambiente de execução compatível no seu alojamento web da OVHcloud. Descubra o estado das diferentes versões disponíveis nesta [página](https://webhosting-infos.hosting.ovh.net/). Caso seja necessário, consulte o nosso [guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) sobre o assumpto, para alterar rapidamente esta configuração.
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
 - O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web da OVHcloud.
@@ -45,7 +45,7 @@ Se deseja instalar um CMS indisponível através dos nossos "módulos 1 clique",
 
 ### Etapa 2 - aceder à gestão dos "módulos em 1 clique"
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action}, selecione a oferta de alojamento em que deseja instalar um "módulo em 1 clique" e clique no separador `Modulos "1 clique"`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action}, selecione a oferta de alojamento em que deseja instalar um "módulo em 1 clique" e clique no separador `Modulos "1 clique"`{.action}.
 
 Aqui, encontrará os eventuais "módulos 1 clique" já instalados. Poderá gerir os seus "módulos 1 clique" e instalar novos módulos.
 
@@ -98,7 +98,7 @@ Uma vez terminada a instalação, receberá um e-mail com as informações de li
 
 > [!primary]
 >
-> A instalação e a receção do e-mail podem levar até 15 minutos a contar do momento em que clicar no botão `Instalar`{.action} na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> A instalação e a receção do e-mail podem levar até 15 minutos a contar do momento em que clicar no botão `Instalar`{.action} na sua [Área de Cliente OVHcloud](/links/manager).
 >
 
 #### Instalação avançada
@@ -140,7 +140,7 @@ As restantes informações solicitadas para a base de dados são as seguintes:
 > - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` onde os **"X"** devem ser substituídos pela referência do seu serviço Web Cloud Databases.
 >
 
-- *Nome da base de dados* : este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- *Nome da base de dados* : este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
 
 - *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

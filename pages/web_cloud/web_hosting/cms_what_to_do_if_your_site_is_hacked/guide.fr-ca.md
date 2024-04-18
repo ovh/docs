@@ -28,7 +28,7 @@ Un piratage peut se manifester de plusieurs manières (liste non exhaustive) :
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/) avec votre site Web hébergé dessus.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -145,7 +145,7 @@ Faites coïncider au maximum les dates de restauration de votre espace de stocka
 > OVHcloud dispose de robots de sécurité qui peuvent détecter des actions malveillantes réalisées depuis votre hébergement. Ces derniers désactivent votre hébergement et vous notifient par e-mail que votre hébergement a été désactivé.
 > En complément de cet e-mail, une page « 403 Forbidden » apparaît généralement lorsque vous tentez d'accéder à votre site.
 >
-> Si votre hébergement est en état « désactivé », les robots de restauration automatique disponibles depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) seront désactivés également.
+> Si votre hébergement est en état « désactivé », les robots de restauration automatique disponibles depuis votre [espace client OVHcloud](/links/manager) seront désactivés également.
 > Vous devrez obligatoirement effectuer une restauration « manuelle » de votre site, supprimer les éléments malveillants résiduels puis corriger toutes les failles de sécurité présentes dans cette sauvegarde. Ceci **avant** de réactiver votre hébergement.
 >
 > Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).

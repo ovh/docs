@@ -22,7 +22,7 @@ Our web hosting plans have been compatible with IPv6 since 2011. However, enabli
 
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/)
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -41,7 +41,7 @@ To check if your website already uses an IPv6 address, use [ipv6-test.com](https
 
 ### Step 1: Retrieve your web hosting plan’s IPv6 address
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select the plan concerned, then go to the `General information`{.action} tab.
+Log in to your [OVHcloud Control Panel](/links/manager){.external}. In the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select the plan concerned, then go to the `General information`{.action} tab.
 
 In the **IPv6** box, copy the address and proceed to the next step.
 

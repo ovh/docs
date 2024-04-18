@@ -22,7 +22,7 @@ This guide will outline the steps you need to take to migrate your entire websit
 - Access to your domain name’s active DNS (Domain Name System) zone
 - Access to your website’s files and database at your current hosting provider
 - Credentials (user, password, server) for your current email accounts
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -61,7 +61,7 @@ Several OVHcloud web hosting plans contain an MX Plan email solution. With this 
 
 Once you have chosen your hosting plan, click the `Order`{.action} button on the commercial pages above. Follow the steps for the **order without requesting the transfer of your domain name**.
 
-As an OVHcloud customer you can also place an order from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Once you have logged in, click on the `Web Cloud`{.action} section, then click on the `Order`{.action} button in the top left-hand corner and choose `Hosting plans`{.action}. Continue with the steps for the **order process without requesting the transfer of your domain name**.
+As an OVHcloud customer you can also place an order from your [OVHcloud Control Panel](/links/manager). Once you have logged in, click on the `Web Cloud`{.action} section, then click on the `Order`{.action} button in the top left-hand corner and choose `Hosting plans`{.action}. Continue with the steps for the **order process without requesting the transfer of your domain name**.
 
 Once the payment has been confirmed, the hosting plan installation will begin. An email will be sent to your contact email address. It will contain the credentials for accessing your web hosting plan’s FTP (File Transfer Protocol) storage space.
 
@@ -72,7 +72,7 @@ Once the payment has been confirmed, the hosting plan installation will begin. A
 
 ### Step 2: Create and preconfigure a DNS zone for your domain name at OVHcloud <a name="step2"></a>
 
-After your hosting service is installed, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) to create a DNS zone for your domain name. Do not use "**www**" when doing this. You can refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create).
+After your hosting service is installed, log in to your [OVHcloud Control Panel](/links/manager) to create a DNS zone for your domain name. Do not use "**www**" when doing this. You can refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
 Once you have created a DNS zone, you can start configuring it with the help of our guide: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit). Add the following records if they do not exist:
 

@@ -18,13 +18,13 @@ Un database (BDD) è utilizzato per archiviare elementi dinamici (dati di connes
 
 - Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
 - Disporre di un database disponibile in "creazione" tra quelli inclusi nel piano di hosting Web. Se necessario, è possibile aggiungere database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) al proprio hosting Web.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) con le [autorizzazioni necessarie](/pages/account_and_service_management/account_information/managing_contacts) per gestire l’hosting Web.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) con le [autorizzazioni necessarie](/pages/account_and_service_management/account_information/managing_contacts) per gestire l’hosting Web.
 
 ## Procedura
 
 ### Step 1 - Accedi alla scheda di gestione dei database di un hosting Web
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi creare un database e poi clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi creare un database e poi clicca sulla scheda `Database`{.action}.
 
 La tabella di questa sezione contiene tutti i database creati con il tuo hosting Web.
 
@@ -98,7 +98,7 @@ Verificare che tutte le informazioni visualizzate nel riepilogo siano corrette. 
 
 > [!primary]
 >
-> Cliccando su `Conferma`{.action}, la creazione del database potrebbe richiedere fino a **15 minuti**. Ricarica la pagina Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) se il database non compare automaticamente nella tabella che elenca i tuoi database.
+> Cliccando su `Conferma`{.action}, la creazione del database potrebbe richiedere fino a **15 minuti**. Ricarica la pagina Web del tuo [Spazio Cliente OVHcloud](/links/manager) se il database non compare automaticamente nella tabella che elenca i tuoi database.
 >
 
 Ripeti questo processo per tutti i database che vuoi creare (nel limite dei database disponibili nella tua offerta).
@@ -118,7 +118,7 @@ A questo punto è possibile utilizzare il database. Per farlo, avrai bisogno del
 
 Queste informazioni sono essenziali perché il sito Web possa connettersi al database.
 
-Se necessario, per recuperare queste informazioni di connessione, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi recuperare le informazioni di connessione al tuo database e poi clicca sulla scheda `Database`{.action}.
+Se necessario, per recuperare queste informazioni di connessione, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi recuperare le informazioni di connessione al tuo database e poi clicca sulla scheda `Database`{.action}.
 
 Tutte le informazioni di connessione al database sono disponibili nella tabella. Ad eccezione della *password*, per motivi di sicurezza.
 
@@ -136,7 +136,7 @@ In base al software utilizzato, è possibile che questa connessione richieda una
 
 #### Accedi all'interfaccia phpMyAdmin
 
-OVHcloud fornisce uno strumento online per la gestione dei database, "phpMyAdmin". Per trovare il link di accesso a questa applicazione, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi recuperare le informazioni di connessione al tuo database e poi clicca sulla scheda `Database`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra del database interessato e poi su `Accedi a phpMyAdmin`{.action} nel menu a tendina.
+OVHcloud fornisce uno strumento online per la gestione dei database, "phpMyAdmin". Per trovare il link di accesso a questa applicazione, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi recuperare le informazioni di connessione al tuo database e poi clicca sulla scheda `Database`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra del database interessato e poi su `Accedi a phpMyAdmin`{.action} nel menu a tendina.
 
 ![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Se necessario, consulta lo [step 3](#step3) di questa guida per trovare le infor
 
 Per ogni database di hosting Web, vengono creati automaticamente degli Snapshot ogni giorno (fino a un massimo di 32). È quindi possibile ripristinare rapidamente una versione precedente di un database dallo Spazio Cliente OVHcloud.
 
-Per verificare gli Snapshot disponibili e la data e l’ora della loro creazione, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi consultare gli Snapshot disponibili per il tuo database e poi clicca sulla scheda `Database`{.action}. Nella tabella visualizzata, fare clic sul simbolo accanto al cerchio verde. È inoltre possibile scaricare ogni backup di un database da questa interfaccia. Per maggiori informazioni al riguardo, consulta la nostra guida "[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export)".
+Per verificare gli Snapshot disponibili e la data e l’ora della loro creazione, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi consultare gli Snapshot disponibili per il tuo database e poi clicca sulla scheda `Database`{.action}. Nella tabella visualizzata, fare clic sul simbolo accanto al cerchio verde. È inoltre possibile scaricare ogni backup di un database da questa interfaccia. Per maggiori informazioni al riguardo, consulta la nostra guida "[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export)".
 
 #### Comprendere i problemi più comuni
 

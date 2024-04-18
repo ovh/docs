@@ -17,7 +17,7 @@ Cloud Web mette a tua disposizione diversi linguaggi di programmazione per conse
 ## Prerequisiti
 
 - Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}
 
 ## Procedura
 
@@ -29,7 +29,7 @@ Una volta indicati i motori di esecuzione da utilizzare, segui la procedura desc
 
 ### Step 1: accedi alla gestione dei motori di esecuzione
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Motori di esecuzione`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio Cloud Web nella sezione `Hosting`{.action} nel menu a sinistra  e clicca sulla scheda `Motori di esecuzione`{.action}.
 
 Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzione di hosting Cloud Web. Considera che durante l’installazione dell’hosting, sul tuo servizio viene creato automaticamente un motore.
 

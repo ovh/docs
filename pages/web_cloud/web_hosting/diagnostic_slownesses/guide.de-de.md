@@ -42,7 +42,7 @@ In seltenen Fällen können die Verzögerungen bei der Anzeige auch mit Ihrem In
 ## Voraussetzungen
 
 - Sie hosten eine Website auf einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## Voraussetzungen
 
@@ -97,7 +97,7 @@ Alle Diagnosen in Schritt 1 sind **ausnahmslos** durchzuführen, um festzustelle
 
 Um sicherzustellen, dass Ihre Dienste (Webhosting **und** Datenbank) derzeit von keiner Störung oder Wartung beeinträchtigt werden, benötigen Sie die Cluster- und Filer-Nummer des Hostings sowie die allgemeinen Daten zur entsprechenden Datenbank. Damit können Sie den Status auf [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/) überprüfen.
 
-Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie `Rechenzentrum` und `Filer` des Webhostings einsehen.
+Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie `Rechenzentrum` und `Filer` des Webhostings einsehen.
 
 ![Filer abrufen](images/find-filer.png){.thumbnail}
 
@@ -248,7 +248,7 @@ Um das Aufkommen an Abfragen für jeden Seitenaufbau zu reduzieren, können Sie 
 
 > [!primary]
 >
-> OVHcloud bietet mehrere [CDN-Optionen](https://www.ovhcloud.com/de/web-hosting/options/) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud bietet mehrere [CDN-Optionen](https://www.ovhcloud.com/de/web-hosting/options/) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimieren Sie Ihre Datenbank

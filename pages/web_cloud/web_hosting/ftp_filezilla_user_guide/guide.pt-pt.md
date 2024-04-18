@@ -25,7 +25,7 @@ Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter instalado o software Filezilla no seu computador. Este último está disponível gratuitamente a partir da página [filezilla-project.org](https://filezilla-project.org/download.php){.external}
 
@@ -56,13 +56,13 @@ A partir da barra de ligação rápida, complete as informações através da se
 |Palavra-passe|Password associada ao utilizador.|
 |Porta|Geralmente, é automaticamente complementado pelo software. Caso contrário, introduza:<br><br>- a porta 21 para uma ligação FTP;<br>- a porta 22 para uma ligação SFTP (no caso de esta estar ativada). Encontre mais informações sobre o SFTP na secção [dedicada deste tutorial](#sftp).|
 
-Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
+Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
 
 ![alojamento](images/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
-> Algumas ofertas da OVHcloud não utilizam a porta 22 para as ligações em SFTP e/ou SSH. Utilize as portas que aparecem na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+> Algumas ofertas da OVHcloud não utilizam a porta 22 para as ligações em SFTP e/ou SSH. Utilize as portas que aparecem na sua [Área de Cliente OVHcloud](/links/manager){.external}
 >
 
 Quando tudo estiver corretamente introduzido na caixa **1** da imagem abaixo, clique em `Ligação rápida`{.action}.
@@ -73,7 +73,7 @@ Se a ligação for bem-sucedida, será informado através do estado presente na 
 
 ### Ligação com Filezilla em SFTP <a name="sftp"></a>
 
-O **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) é um protocolo semelhante ao **FTP**. Como o SSH, utiliza a porta 22 predefinida em vez da porta 21. Se utiliza uma oferta de alojamento Cloud Web, deve utilizar a porta apresentada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. A porta 22 é desativada por segurança em SSH e SFTP para os alojamentos Cloud Web.
+O **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) é um protocolo semelhante ao **FTP**. Como o SSH, utiliza a porta 22 predefinida em vez da porta 21. Se utiliza uma oferta de alojamento Cloud Web, deve utilizar a porta apresentada na [Área de Cliente OVHcloud](/links/manager){.external}. A porta 22 é desativada por segurança em SSH e SFTP para os alojamentos Cloud Web.
 
 > [!success]
 >
@@ -84,7 +84,7 @@ O **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) é um protocolo 
 
 Em primeiro lugar, verifique se o SFTP está ativado para o seu **Login FTP**.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção "Web Cloud", e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção "Web Cloud", e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}.
 
 De seguida, verifique se o **SFTP** está ativo na tabela.
 
@@ -127,7 +127,7 @@ A mensagem apresentada abaixo indica um erro de identificação aquando da liga�
 
 Este tipo de mensagem é gerada por um erro no binário Login/Palavra-passe.
 
-Verifique os seus dados de acesso para garantir que não há erros. Se necessário, pode alterar a palavra-passe do acesso FTP do seu alojamento diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+Verifique os seus dados de acesso para garantir que não há erros. Se necessário, pode alterar a palavra-passe do acesso FTP do seu alojamento diretamente na [Área de Cliente OVHcloud](/links/manager){.external}.
 
 > [!success]
 > Está disponível um guia sobre a [alteração da palavra-passe FTP](/pages/web_cloud/web_hosting/ftp_change_password) nas ofertas partilhadas.
@@ -136,7 +136,7 @@ No caso abaixo, o erro é gerado por um nome de host incorreto:
 
 ![alojamento](images/connection-timed-out-after-20s.png){.thumbnail}
 
-Verifique este último em relação ao nome do host declarado na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+Verifique este último em relação ao nome do host declarado na sua [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ### Transferência dos ficheiros
 

@@ -25,7 +25,7 @@ updated: 2023-11-24
 ## Requisitos
 
 - Dispor de um serviço [de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor igualmente da gestão da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) à qual está associada o seu domínio.
 
 ## Instruções
@@ -40,7 +40,7 @@ Os passos seguintes irão permitir-lhe corrigir o erro `Site não instalado` nes
 
 ### Passo 1 - Verifique a declaração do seu domínio ou subdomínio no seu alojamento web <a name="check-multisites"></a>
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action} no topo da página e clique no separador `Alojamentos`{.action} na coluna da esquerda.
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} no topo da página e clique no separador `Alojamentos`{.action} na coluna da esquerda.
 
 Selecione o alojamento web em causa na lista e, em seguida, clique no separador `Multisite`{.action}.
 
@@ -65,7 +65,7 @@ Este passo consiste em verificar se o seu domínio ou subdomínio aponta correta
 
 #### 2\.1 Identificar o endereço IP do seu alojamento web da OVHcloud
 
-Para encontrar o endereço IP do seu alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action} situado no topo da página. Clique no separador `Alojamentos`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web em causa na lista.
+Para encontrar o endereço IP do seu alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action} situado no topo da página. Clique no separador `Alojamentos`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web em causa na lista.
 
 Poderá consultar o endereço `IPv4` na caixa `Informações gerais`{.action}.
 
@@ -84,7 +84,7 @@ A seguir, deve verificar se o endereço IP do alojamento web está indicado na z
 > Se modificar diretamente os **servidores DNS** associados ao seu domínio, este prazo pode ir até **48 horas**, no máximo.
 >
 
-Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}, no topo da página. Aceda à secção `Nomes de domínio`{.action}, selecione o seu domínio e aceda ao separador `Zona DNS`{.action}.
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}, no topo da página. Aceda à secção `Nomes de domínio`{.action}, selecione o seu domínio e aceda ao separador `Zona DNS`{.action}.
 
 Aparece uma tabela com os diferentes registos DNS.
 

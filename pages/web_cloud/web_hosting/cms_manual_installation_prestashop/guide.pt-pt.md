@@ -21,7 +21,7 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 
 > [!success
 >
-> Para instalar o PrestaShop **automaticamente** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar o PrestaShop **automaticamente** a partir do seu [Área de Cliente OVHcloud](/links/manager), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Para instalar **manualmente um outro CMS** (WordPress, Joomla!, Drupal), consulte o nosso manual sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -32,7 +32,7 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 
 - Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
   
 ## Instruções
 
@@ -119,7 +119,7 @@ Insira as informações solicitadas relativas à base de dados:
 > - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** corresponde ao seu identificador OVHcloud sem o **"-ovh"** e os **"X"** devem ser substituídos pelo resto da referência do seu serviço Web Cloud Databases.
 >
 
-- *Database name*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- *Database name*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](/links/manager).
 
 - *Database login*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web.
 Para as bases de dados criadas num serviço Web Cloud Databases, consulte as informações mencionadas no **etapa 1.4** do nosso guia sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation).

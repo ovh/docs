@@ -47,7 +47,7 @@ Po wykryciu podejrzanego działania nasze roboty związane z bezpieczeństwem mo
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) OVHcloud
 - Posiadanie [danych do logowania](/pages/web_cloud/web_hosting/ftp_connection) do przestrzeni dyskowej FTP Twojego hostingu
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -75,7 +75,7 @@ Sprawdź najpierw bezpieczeństwo swoich stacji/urządzeń:
 
 > [!warning]
 >
-> Przed zmianą hasła do bazy danych na Twojej stronie WWW z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zaktualizuj plik konfiguracyjny Twojej strony WWW, aby połączył się z bazą danych za pomocą nowego hasła.
+> Przed zmianą hasła do bazy danych na Twojej stronie WWW z poziomu [Panelu klienta OVHcloud](/links/manager), zaktualizuj plik konfiguracyjny Twojej strony WWW, aby połączył się z bazą danych za pomocą nowego hasła.
 >
 > W przeciwnym razie zmiana hasła do Twojej bazy danych spowoduje zablokowanie dostępu do Twojej strony WWW lub do Twoich usług/klientów, którzy jej używają.
 >
@@ -162,7 +162,7 @@ STRONA CHMOD 705.
 
 #### Włącz ponownie hosting FTP Explorer "net2ftp"
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action}, następnie `Hosting`{.action} i kliknij zakładkę `FTP-SSH`{.action} odpowiedniego hostingu.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.action}, następnie `Hosting`{.action} i kliknij zakładkę `FTP-SSH`{.action} odpowiedniego hostingu.
 
 Naciśnij przycisk `FTP Explorer`{.action} i zaloguj się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
 

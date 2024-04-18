@@ -17,13 +17,13 @@ L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
 Per accedere ai diversi dati statistici e log dell’hosting Web, esegui queste operazioni: 
 
-1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
@@ -111,7 +111,7 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 
 Puoi anche recuperare il link di accesso alle statistiche / log direttamente dal tuo Spazio Cliente:
 
-1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.

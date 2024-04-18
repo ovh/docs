@@ -28,13 +28,13 @@ Este acesso permite nomeadamente [publicar o seu site](/pages/web_cloud/web_host
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Etapa 1: Aceder à gestão dos utilizadores FTP
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `FTP-SSH`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `FTP-SSH`{.action}.
 
 Um quadro apresenta os *utilizadores FTP* criados no seu alojamento web. Estes utilizadores permitem-lhe aceder ao seu espaço de armazenamento FTP para que possa publicar os ficheiros do seu website. Um utilizador é automaticamente criado durante a instalação do alojamento web.
 

@@ -39,7 +39,7 @@ Para los alojamientos compartidos de OVHcloud, la autoridad de certificación qu
     
 ## Requisitos <a name="requirements"></a>
 
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Contratar o disponer de un [hosting OVHcloud](https://www.ovhcloud.com/es/web-hosting/) en el que no haya ningún certificado SSL instalado.
 - Contratar o disponer de un [nombre de dominio](https://www.ovhcloud.com/es/domains/) y disponer de los derechos exclusivos sobre su uso. El nombre de dominio no debe estar ya asociado a un certificado SSL.
 - Ser una organización (empresa, agencia gubernamental...) registrada en un registro oficial.
@@ -131,7 +131,7 @@ Todas las acciones descritas en esta etapa se pueden realizar en varios días. L
 Una vez realizado el pedido, Sectigo le enviará un mensaje de correo electrónico con un enlace de validación y un procedimiento a seguir.
 Compruebe que la información y la solicitud son correctos siguiendo las indicaciones que se ofrecen en este email. 
 
-Para asegurarse de que la comunicación con Sectigo se realiza correctamente, compruebe también la validez de la dirección de correo electrónico que se indica en el formulario al contratar el SSL EV y la dirección de correo electrónico de contacto asociada a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Para asegurarse de que la comunicación con Sectigo se realiza correctamente, compruebe también la validez de la dirección de correo electrónico que se indica en el formulario al contratar el SSL EV y la dirección de correo electrónico de contacto asociada a su [área de cliente de OVHcloud](/links/manager).
 
 > [!primary]
 >

@@ -18,7 +18,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) con acceso SSH.
 - Disponer de las claves necesarias para conectarse por SSH al espacio de almacenamiento.
-- Conectarse al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `WebCloud`{.action}.
+- Conectarse al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `WebCloud`{.action}.
 
 > [!warning]
 > 
@@ -28,7 +28,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 ### 1\. Comprobar que el acceso SSH está activo <a name="sshcheck"></a>
 
-En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento. 
+En primer lugar, conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento. 
 
 En la columna «SSH» podrá consultar si el usuario SSH (o «Login SSH») dispone de un acceso SSH activo. En caso de que no esté activado, aparecerá la mención «Desactivado».
 

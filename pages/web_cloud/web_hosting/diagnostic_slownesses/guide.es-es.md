@@ -42,7 +42,7 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 ## Requisitos
 
 - Tener un sitio web alojado en uno de nuestros [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/)
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
@@ -98,7 +98,7 @@ Todos los diagnósticos del etapa 1 deben realizarse **sin excepción** para det
 
 Para asegurarse de que sus servicios (alojamiento compartido **et** de la base de datos) no son objeto de mantenimiento o de incidente, consulte la información del cluster y el filer de su alojamiento compartido, así como la información general relativa a su base de datos. Compruebe su estado en [status.ovhcloud.com](https://web-cloud.status-ovhcloud.com/).
 
-Para conocer el cluster y el filer en el que se encuentra su alojamiento compartido, conéctese a su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la pestaña `Información general`{.action}, consulte el `datacenter` de su alojamiento compartido y el `filer` en el que se encuentra.
+Para conocer el cluster y el filer en el que se encuentra su alojamiento compartido, conéctese a su [área de cliente OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la pestaña `Información general`{.action}, consulte el `datacenter` de su alojamiento compartido y el `filer` en el que se encuentra.
 
 ![Obtener Filer](images/find-filer.png){.thumbnail}
 
@@ -249,7 +249,7 @@ Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, ta
 
 > [!primary]
 >
-> OVHcloud ofrece varios [productos CDN](https://www.ovhcloud.com/es-es/web-hosting/options/). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+> OVHcloud ofrece varios [productos CDN](https://www.ovhcloud.com/es-es/web-hosting/options/). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](/links/manager) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimice su base de datos

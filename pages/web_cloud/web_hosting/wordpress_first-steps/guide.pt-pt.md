@@ -26,7 +26,7 @@ Este tutorial vai permitir-lhe criar os seus primeiros conteúdos, organizá-los
 - Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
 - Ter [instalado Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) no seu alojamento web.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
 ## Instruções
 

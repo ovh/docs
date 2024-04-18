@@ -12,13 +12,13 @@ updated: 2023-04-24
 
 ### Wie konfiguriere ich mein Webhosting?
 
-Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Im Bereich `Hosting-Pakete` können Sie unter anderem Ihre SSL Zertifikate, die PHP Version, die CDN Option, die Multisite, die Datenbanken usw. verwalten.
+Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Im Bereich `Hosting-Pakete` können Sie unter anderem Ihre SSL Zertifikate, die PHP Version, die CDN Option, die Multisite, die Datenbanken usw. verwalten.
 
 **Tipps und Tricks**: Um Ihnen bei der Konfiguration Ihres Hostings zu helfen, lesen Sie die Rubrik **Erste Schritte**, die Sie [hier](/products/web-cloud-hosting) finden.
 
 ### Wie verwalte ich meine Passwörter?
 
-Um Ihre Passwörter zu verwalten, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Sollten Sie Ihre Kennung oder Ihr Passwort vergessen haben, klicken Sie unter dem Login-Fenster auf `Login oder Passwort vergessen`{.action}. Ihnen wird eine E-Mail mit der Vorgehensweise zum Zurücksetzen gesendet.
+Um Ihre Passwörter zu verwalten, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Sollten Sie Ihre Kennung oder Ihr Passwort vergessen haben, klicken Sie unter dem Login-Fenster auf `Login oder Passwort vergessen`{.action}. Ihnen wird eine E-Mail mit der Vorgehensweise zum Zurücksetzen gesendet.
 
 Sie können auch die Anleitung [Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password) lesen.
 
@@ -67,7 +67,7 @@ Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hosting
 
 Um den RAM eines Web Cloud Databases Dienstes zu erhöhen, wenn Ihr Web Cloud Databases Dienst an ein **Performance** Webhosting gebunden ist, müssen Sie ihn zuerst von Ihrem **Performance** Hosting trennen, um den Dienst hochzustufen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, um den Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und wählen Sie Ihr Hosting unter `Hosting-Pakete`{.action} in der linken Spalte aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, um den Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und wählen Sie Ihr Hosting unter `Hosting-Pakete`{.action} in der linken Spalte aus.
 
 Auf der neuen Seite `Allgemeine Informationen`{.action} finden Sie mittig den Bereich `Konfiguration`{.action}. Klicken Sie rechts neben `Web Cloud Databases`{.action} auf `...`{.action} und dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie fort bis zur Bestätigung der Bestellung.
 
@@ -84,7 +84,7 @@ Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines 
 
 ### Was tun, wenn mein Webhosting nicht korrekt funktioniert? 
 
-Es kann verschiedene Gründe geben, warum Ihre Website nicht wie erwartet funktioniert. Um die Ursache zu ermitteln, stellen Sie zunächst sicher, dass **keiner Ihrer Dienste verlängert werden muss**, indem Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen.
+Es kann verschiedene Gründe geben, warum Ihre Website nicht wie erwartet funktioniert. Um die Ursache zu ermitteln, stellen Sie zunächst sicher, dass **keiner Ihrer Dienste verlängert werden muss**, indem Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) einloggen.
 
 Überprüfen Sie dann die [aktuellen Vorgänge auf unserer Infrastruktur](https://www.status-ovhcloud.com/). Wenn alle Ihre Dienste aktiv sind und von keinerlei Störungen oder Wartungsarbeiten betroffen sind, empfehlen wir Ihnen eine genauere Diagnose.
 
@@ -144,7 +144,7 @@ Diese Anomalie ist Folge einer fehlerhaften Konfiguration auf der Ebene der [DNS
 
 Der häufigste Fall ist: Domainname und Hosting wurden getrennt bestellt. Sie sind also nicht über die DNS-Zone untereinander verbunden.
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Domainnamen`{.action}. Klicken Sie auf die betreffende Domain und dann auf den Tab `DNS-Server`{.action}.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Domainnamen`{.action}. Klicken Sie auf die betreffende Domain und dann auf den Tab `DNS-Server`{.action}.
 
 Notieren Sie sich die angegebenen DNS-Server und gehen Sie dann auf den Tab `DNS-Zone`{.action}.
 

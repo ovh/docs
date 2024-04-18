@@ -25,11 +25,11 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
+Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](/links/manager){.external}. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Cet état survient lorsque :
 
 - trop d'e-mails ont été émis très rapidement ;
 - trop d'e-mails sont retournés en erreur ;
-- vous avez vous-même désactivé la fonctionnalité depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- vous avez vous-même désactivé la fonctionnalité depuis votre [espace client OVHcloud](/links/manager).
 
 Pour débloquer la situation, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
@@ -192,7 +192,7 @@ Même si nous vous recommandons vivement de privilégier l'utilisation de la fon
 
 > [!warning]
 > 
-> Les e-mails émis avec un script utilisant une configuration SMTP ne pourront pas être gérés et suivis depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+> Les e-mails émis avec un script utilisant une configuration SMTP ne pourront pas être gérés et suivis depuis votre [espace client OVHcloud](/links/manager).
 > 
 
 Pour cela, vous pouvez utiliser le script suivant en remplaçant uniquement les valeurs `Host`, `Username` et `Password` par vos propres paramètres SMTP :

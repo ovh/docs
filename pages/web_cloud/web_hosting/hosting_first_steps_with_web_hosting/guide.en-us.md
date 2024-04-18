@@ -29,7 +29,7 @@ This saves you time on server administration and allows you to focus only on:
 - You have ordered an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external}.
 - You have received an email confirming that your Web Hosting plan has been set up.
 - You have a [domain name](https://www.ovhcloud.com/en/domains/).
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -89,7 +89,7 @@ If this is the case, please follow our guide on "[Publishing a website on your W
 ##### Case 2 - Create a website using a CMS
 
 OVHcloud offers the "1-click modules" option.<br>
-Once you have logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), this option allows you to quickly install the *WordPress*, *Joomla!*, *PrestaShop* and *Drupal* CMS on your hosting.
+Once you have logged in to your [OVHcloud Control Panel](/links/manager), this option allows you to quickly install the *WordPress*, *Joomla!*, *PrestaShop* and *Drupal* CMS on your hosting.
 
 To use this option, please refer to our guide on "[Setting up your website with a 1-click module (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -110,7 +110,7 @@ Once you have enabled this option, please refer to our guide on "[Creating an em
 >
 > - If you are migrating a website and/or if you are looking for email addresses associated with your website’s domain name, please read our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". You will find all the key steps for migrating all of your services without any interruptions (domain name, website, email address(es), etc.).
 >
-> - If you did not attach a domain name when you ordered your web hosting plan, and you would like to use the "email address(es) included with your web hosting plan" option, you will need to do this manually from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+> - If you did not attach a domain name when you ordered your web hosting plan, and you would like to use the "email address(es) included with your web hosting plan" option, you will need to do this manually from your [OVHcloud Control Panel](/links/manager).
 
 ### Step 4 - Verify and/or modify your domain name’s configuration <a name="domain-configuration"></a>
 

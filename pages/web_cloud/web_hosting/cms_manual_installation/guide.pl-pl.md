@@ -32,7 +32,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 
 > [!success]
 >
-> Aby zainstalować CMS **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu "jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Aby zainstalować CMS **automatycznie** z poziomu [Panelu klienta OVHcloud](/links/manager), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu "jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Dowiedz się, jak skonfigurować Twoją stronę WWW, instalując ręcznie CMS.**
@@ -41,7 +41,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System), 
 
 - Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce
 
@@ -131,10 +131,10 @@ Zapoznaj się z naszą dokumentacją [jak dodać stronę podpiętą w opcji Mult
 
 - Upewnij się, czy domena, której będziesz używał do uzyskania dostępu do CMS-a, jak również jej subdomena w www, wskazują na adres IP Twojej usługi [hosting](https://www.ovhcloud.com/pl/web-hosting/).
 
-Aby uzyskać adres IP Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części `Web Cloud`{.action} i wybierz ofertę hostingu w sekcji `Hosting`{.action}.<br>
+Aby uzyskać adres IP Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) w części `Web Cloud`{.action} i wybierz ofertę hostingu w sekcji `Hosting`{.action}.<br>
 W ramce `Informacje ogólne`{.action} po prawej stronie znajdziesz adres IP Twojego hostingu w formularzu `IPv4`{.action}.
 
-Jeśli aktywną strefą DNS Twojej domeny jest zarządzana w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), porównaj adres IP Twojego hostingu z adresem IP w strefie DNS Twojej domeny, korzystając z naszej dokumentacji dotyczącej [stref DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Jeśli aktywną strefą DNS Twojej domeny jest zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager), porównaj adres IP Twojego hostingu z adresem IP w strefie DNS Twojej domeny, korzystając z naszej dokumentacji dotyczącej [stref DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >

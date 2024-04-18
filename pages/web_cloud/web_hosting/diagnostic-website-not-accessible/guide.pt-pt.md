@@ -31,7 +31,7 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 ## Requisitos
 
 - Ter a gestão dos servidores e da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) do seu domínio.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
 ## Instruções
@@ -58,7 +58,7 @@ Uma vez terminada a renovação da sua oferta, o seu website estará disponível
 
 ### Etapa 2: verificar os servidores DNS
 
-Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
+Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_general_information), na [Área de Cliente OVHcloud](/links/manager) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
 
 #### Cenário 1: nenhuma anomalia nos servidores DNS
 

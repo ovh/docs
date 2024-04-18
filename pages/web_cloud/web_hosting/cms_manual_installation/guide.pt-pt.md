@@ -32,7 +32,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 
 > [!success]
 >
-> Para instalar o seu CMS **automaticamente** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar o seu CMS **automaticamente** a partir do seu [Área de Cliente OVHcloud](/links/manager), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Descubra como configurar o seu website instalando manualmente um CMS.**
@@ -41,7 +41,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 
 - Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
 ## Instruções
 
@@ -131,10 +131,10 @@ Consulte o nosso manual que descreve [como adicionar um multi-site ao seu alojam
 
 - Certifique-se de que o domínio que utiliza para aceder ao seu CMS, bem como o subdomínio "www" apontam para o endereço IP do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 
-Para obter o endereço IP da sua oferta de alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action} e selecione a sua oferta de alojamento web na secção `Alojamentos`{.action}.<br>
+Para obter o endereço IP da sua oferta de alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action} e selecione a sua oferta de alojamento web na secção `Alojamentos`{.action}.<br>
 Na caixa `Informações gerais`{.action} à direita, encontrará o endereço IP do seu alojamento web no formulário `IPv4`{.action}.
 
-Se a zona DNS ativa do seu domínio for gerida no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), compare o endereço IP do seu alojamento com o endereço IP presente na zona DNS do seu domínio, através da nossa documentação sobre as [zonas DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Se a zona DNS ativa do seu domínio for gerida no seu [Área de Cliente OVHcloud](/links/manager), compare o endereço IP do seu alojamento com o endereço IP presente na zona DNS do seu domínio, através da nossa documentação sobre as [zonas DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >

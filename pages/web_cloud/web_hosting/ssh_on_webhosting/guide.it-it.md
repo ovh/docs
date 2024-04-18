@@ -18,7 +18,7 @@ Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storag
 
 - Disporre di una soluzione [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) con accesso SSH
 - Disporre delle informazioni necessarie per l’accesso in SSH allo spazio di storage
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}
 
 > [!warning]
 > 
@@ -28,7 +28,7 @@ Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storag
 
 ### Step 1: verifica che l’accesso SSH sia attivo <a name="sshcheck"></a>
 
-Per prima cosa, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}, quindi clicca su `hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. Visualizzi le informazioni associate allo spazio di storage. 
+Per prima cosa, accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}, quindi clicca su `hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. Visualizzi le informazioni associate allo spazio di storage. 
 
 Nella tabella, individua la colonna “SSH” e verifica che l’utente SSH (o “Login”) interessato, disponga di un accesso SSH attivo. In caso contrario visualizzi la voce ”Disattivato”.
 

@@ -31,7 +31,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 ## Prerequisiti
 
 - Avere la gestione dei server e della [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) del dominio
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
@@ -58,7 +58,7 @@ Una volta terminato il rinnovo dell'offerta, il tuo sito Web sarà disponibile e
 
 ### Step 2: verifica i server DNS
 
-Per verificare la validità dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_general_information), clicca in tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) sui `Domini`{.action} e poi sul dominio del tuo sito.
+Per verificare la validità dei tuoi [server DNS](/pages/web_cloud/domains/dns_server_general_information), clicca in tuo [Spazio Cliente OVHcloud](/links/manager) sui `Domini`{.action} e poi sul dominio del tuo sito.
 
 #### Scenario 1: nessuna anomalia sui server DNS
 

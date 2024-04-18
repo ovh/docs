@@ -21,7 +21,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 > [!success]
 >
-> Para instalar Joomla! **automáticamente** desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), consulte nuestra documentación sobre la [instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar Joomla! **automáticamente** desde su [área de cliente de OVHcloud](/links/manager), consulte nuestra documentación sobre la [instalación de un módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Para **instalar otro CMS** (WordPress, Drupal, PrestaShop), consulte nuestra documentación sobre la instalación manual de un CMS (/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}
   
 ## Procedimiento
 
@@ -100,7 +100,7 @@ Para las bases de datos creadas en una Web Cloud Databases, consulte la informac
 
 -*Either a password you created or a password provided by your host* : se ha establecido usted mismo al crear la base de datos. También es posible que la haya modificado. Por favor, compruebe que la haya modificado.
 
--*Enter the database name*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es idéntico al nombre de usuario de la base de datos si utiliza una base de datos incluida con su alojamiento web.
+-*Enter the database name*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](/links/manager). Es idéntico al nombre de usuario de la base de datos si utiliza una base de datos incluida con su alojamiento web.
 
 -*Enter a table prefix or use the randomly generated one*: si la instalación se realiza con una nueva base de datos, introduzca el prefijo que prefiera. Si utiliza una base de datos ya utilizada en otro sitio web, puede consultar el **etapa 1.4** de la guía sobre la [instalación manual de un CMS](/pages/web_cloud/web_hosting/cms_manual_installation) para evitar que se introduzca un "prefijo" de tabla que ya utiliza su base de datos.
 

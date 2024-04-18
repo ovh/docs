@@ -20,7 +20,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
 
 ## En pratique
@@ -33,7 +33,7 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 
 ####  Si l'option CDN n'est pas commandée ou activée sur votre hébergement Web
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action} ou `Activer l'option`{.action} si l'option CDN est déjà incluse dans votre hébergement.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action} ou `Activer l'option`{.action} si l'option CDN est déjà incluse dans votre hébergement.
 
 > [!primary]
 > 
@@ -45,7 +45,7 @@ Vous serez redirigé vers la génération du bon de commande. Une fois la comman
 
 #### Si l'option CDN est déjà activée sur votre hébergement Web
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
 
 Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -285,7 +285,7 @@ Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées 
 > [!warning]
 >
 > Désactiver l'option CDN pour un site web nécessite de changer l'adresse IP à utiliser pour rediriger votre nom de domaine vers votre hébergement web.
-> Ce changement se fait automatiquement si la zone DNS active de votre nom de domaine est également gérée depuis le [compte OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) contenant votre hébergement web.
+> Ce changement se fait automatiquement si la zone DNS active de votre nom de domaine est également gérée depuis le [compte OVHcloud](/links/manager) contenant votre hébergement web.
 >
 > Dans le cas contraire, vous devrez effectuer les deux actions suivantes :
 >
@@ -295,7 +295,7 @@ Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées 
 > La modification d'une entrée dans la zone DNS active d'un nom de domaine entraîne un délai de propagation de **4** à **24** heures pour être pleinement effective. Le temps que cette propagation se finalise, une page contenant le code **520** peut apparaître aléatoirement. Ce phénomène est lié au fait que certaines parties du réseau DNS redirigent encore les requêtes vers l'adresse IP du CDN lié à votre hébergement web.
 >
 
-Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier`{.action}.
 
 Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -305,7 +305,7 @@ Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis s
 
 Cette action a pour but de supprimer l'option CDN pour l'ensemble de votre hébergement Web.
 
-Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
 
 ![CDN](images/resiliation.png){.thumbnail}
 

@@ -17,7 +17,7 @@ Esta guía explica los pasos que debe seguir para exportar todos los elementos d
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
@@ -32,7 +32,7 @@ Para conectarse a su espacio de almacenamiento necesitará lo siguiente:
 - la dirección del servidor.
 - el puerto de conexión al servidor.
 
-Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de ellos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección Web y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
+Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de ellos, conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección Web y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
 
 ![export-website](images/tab-pro.png){.thumbnail}
 

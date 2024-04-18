@@ -19,19 +19,19 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen
 > Dieses kostenlose Webhosting mit 100 MB Speicherplatz ist für eine einfache Präsentationsseite geeignet; es enthält **keine Datenbank**.
 > Es eignet sich auch für die E-Mail-Nutzung, wenn Sie nicht mehr als einen "MX Plan" E-Mail-Account benötigen.
 >
-> Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank benötigt, wie etwa WordPress, Joomla!, PrestaShop oder Drupal, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
+> Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank benötigt, wie etwa WordPress, Joomla!, PrestaShop oder Drupal, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](/links/manager) eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
 >
 
 **Diese Anleitung erklärt, wie Sie Ihr <i>Kostenloses Hosting 100M</i> aktivieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, der nicht bereits mit einem Webhosting oder einem [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) verbunden ist. 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} in Ihrem [OVHcloud Kundencenter](/links/manager){.external}, der nicht bereits mit einem Webhosting oder einem [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) verbunden ist. 
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie den Domainnamen aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie den Domainnamen aus.
 
 Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt *Gratis Webhosting und E-Mail*. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Aktivieren`{.action}.
 
@@ -45,7 +45,7 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 >
 > Wenn Sie eine oder beide der Optionen `DNS A Eintrag` und `DNS MX Eintrag` anhaken, wird die in der DNS-Zone Ihrer Domain bereits vorhandene Konfiguration überschrieben.
 >
-> Wenn Ihre DNS-Zone nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwaltet wird, müssen die Änderungen manuell in Ihrer externen DNS-Zone durchgeführt werden.
+> Wenn Ihre DNS-Zone nicht in Ihrem [OVHcloud Kundencenter](/links/manager){.external} verwaltet wird, müssen die Änderungen manuell in Ihrer externen DNS-Zone durchgeführt werden.
 >
 > Weitere Informationen finden Sie in unserer Anleitung zum [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
 >
@@ -57,7 +57,7 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 
 > [!primary]
 >
-> Wenn Ihr Projekt künftig auf ein Hosting mit einer Datenbank, einem größeren Speicherplatz oder mehr E-Mail-Accounts erweitert werden muss, können Sie von **Kostenloses Hosting 100M** ausschließlich auf ein Webhosting-Angebot **Basic** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} wechseln.
+> Wenn Ihr Projekt künftig auf ein Hosting mit einer Datenbank, einem größeren Speicherplatz oder mehr E-Mail-Accounts erweitert werden muss, können Sie von **Kostenloses Hosting 100M** ausschließlich auf ein Webhosting-Angebot **Basic** in Ihrem [OVHcloud Kundencenter](/links/manager){.external} wechseln.
 >
 > Ein Wechsel zum Angebot **Pro** oder **Performance** erfordert einen vorherigen Wechsel von **Kostenloses Hosting 100M** zum Angebot **Basic**.
 >

@@ -6,7 +6,7 @@ updated: 2023-09-15
 
 ## Objectif
 
-Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/). Vous pouvez ainsi disposer :
+Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/). Vous pouvez ainsi disposer :
 
 - d'un hébergement plus puissant ;
 - de plus d'espace de stockage FTP ;
@@ -19,7 +19,7 @@ Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être, a minima, contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » des services pour lesquels vous souhaitez modifier l'abonnement.
 
 ## En pratique
@@ -40,7 +40,7 @@ Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=
 > Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 > 
 
-Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
+Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
 
 Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
 
@@ -63,12 +63,12 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 > [!tabs]
 > **Activer l'option Boost**
 >>
->> Pour activer l'option Boost, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Dans l'encadré `Informations générales` de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.<br><br>
+>> Pour activer l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Dans l'encadré `Informations générales` de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.<br><br>
 >> ![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Désactiver l'option Boost**
 >>
->> Pour désactiver l'option Boost, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, rendez-vous dans l'onglet `Plus` puis cliquez sur `Booster mon offre`{.action}.<br>
+>> Pour désactiver l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, rendez-vous dans l'onglet `Plus` puis cliquez sur `Booster mon offre`{.action}.<br>
 >> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
 >> ![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 

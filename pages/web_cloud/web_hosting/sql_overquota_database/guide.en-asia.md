@@ -18,7 +18,7 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) with an associated OVHcloud shared database
   
 ## Instructions
@@ -54,7 +54,7 @@ The first step is to identify the large table or tables in your database.
 
 Retrieve your database access data directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} , then choose the web hosting plan associated to your OVHcloud shared database. Go to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} , then choose the web hosting plan associated to your OVHcloud shared database. Go to the `Databases`{.action} tab.
 
 A table listing your databases will appear at the bottom of the screen.
 
@@ -129,7 +129,7 @@ Consult our [Web Cloud Databasess](https://www.ovhcloud.com/asia/web-cloud/datab
 
 We recommend this solution for large databases.
 
-You can duplicate the content of your OVHcloud database directly to another of your OVHcloud databases, using a feature in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). To do this, please refer to our guide "[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)".
+You can duplicate the content of your OVHcloud database directly to another of your OVHcloud databases, using a feature in your [OVHcloud Control Panel](/links/manager). To do this, please refer to our guide "[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)".
 
 If you are migrating to a database outside of the [Start SQL](https://www.ovhcloud.com/asia/web-hosting/options/start-sql/) and [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solutions, you can manually move the content from your old database to a new one using our guides:
 

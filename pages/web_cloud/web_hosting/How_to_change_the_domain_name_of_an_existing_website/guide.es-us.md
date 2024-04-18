@@ -28,7 +28,7 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 
 - Tener un [dominio](https://www.ovhcloud.com/es/domains/).
 - Disponer de un [hosting OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -47,7 +47,7 @@ Declare su nuevo dominio con ayuda de nuestra documentación sobre el[adición d
 Para que el paso 1 se cumpla correctamente, deberá cumplir varias condiciones:
 
 - El nuevo dominio debe apuntar hacia la misma "carpeta raíz" que el dominio utilizado actualmente para acceder a su sitio web.
-- Compruebe que su nuevo dominio apunta correctamente a la dirección IP correcta de su alojamiento compartido. Para obtener la dirección IP, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione su alojamiento y recupere **l IPv4** en la pestaña `Información general`{.action}.
+- Compruebe que su nuevo dominio apunta correctamente a la dirección IP correcta de su alojamiento compartido. Para obtener la dirección IP, conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione su alojamiento y recupere **l IPv4** en la pestaña `Información general`{.action}.
 
 > [!warning]
 >

@@ -19,7 +19,7 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 - Un [hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}
 - Un e-mail confirmant que votre hébergement web a été configuré;
 - Un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} lié à votre hébergement web;
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -93,7 +93,7 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
-Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](/links/manager){.external}.
 
 Comment accéder aux statistiques et logs :
 
@@ -169,7 +169,7 @@ Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de
 Vous pouvez accéder à votre base de données à l’aide de PHPMyAdmin; l'utilisation détaillée de PHPMyAdmin va au-delà de la portée de ce guide. Par conséquent, nous n’aborderons pas le sujet en détail.
 Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
-**Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} :
+**Comment accéder à la base de données par le biais de phpMyAdmin :** Pour accéder à votre base de données par le biais de phpMyAdmin, procédez comme suit à partir de [l’espace client OVHcloud](/links/manager){.external} :
 
 - Cliquez sur votre domaine dans la section `Hébergement`{.action} ;
 

@@ -23,7 +23,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 
 - A [domain name](https://www.ovhcloud.com/asia/domains/).
 - An [OVHcloud shared hosting](https://www.ovhcloud.com/asia/web-hosting/).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -42,7 +42,7 @@ Declare your new domain name using our guide on [adding a multisite on your web 
 There are several conditions to meet for this part:
 
 - Your new domain must point to the same root folder as the domain currently used to access your site.
-- Check that your new domain points to the IP address of your hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Web cloud`{.action} section, click on `Hosting plans`{.action}, select your Hosting, then retrieve **IPv4** in the `General information`{.action} tab.
+- Check that your new domain points to the IP address of your hosting plan. To retrieve the IP address, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web cloud`{.action} section, click on `Hosting plans`{.action}, select your Hosting, then retrieve **IPv4** in the `General information`{.action} tab.
 
 > [!warning]
 >

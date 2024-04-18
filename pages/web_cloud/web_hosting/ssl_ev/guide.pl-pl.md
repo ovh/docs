@@ -39,7 +39,7 @@ W przypadku hostingu współdzielonego OVHcloud instytucja certyfikująca certyf
     
 ## Wymagania początkowe <a name="requirements"></a>
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Zamów lub zamów [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), dla którego nie został zainstalowany żaden certyfikat SSL.
 - Zamów [domenę](https://www.ovhcloud.com/pl/domains/) i uzyskaj wyłączne prawa do korzystania z tej domeny. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
 - Być organizacją (firma, agencja rządowa, ...) zarejestrowaną w oficjalnym rejestrze.
@@ -131,7 +131,7 @@ Wszystkie działania opisane na tym etapie mogą być przeprowadzane w ciągu ki
 Po zrealizowaniu zamówienia Sectigo prześle Ci wiadomość e-mail z linkiem uwierzytelniającym i z procedurą, którą należy postępować.
 Sprawdź Twoje dane i zatwierdź zlecenie, postępując zgodnie z instrukcjami zawartymi w tym e-mailu. 
 
-Aby upewnić się, że korespondencja za pomocą wiadomości e-mail z Sectigo przebiega prawidłowo, sprawdź również ważność konta e-mail podanego w formularzu podczas składania zamówienia na certyfikat SSL EV, jak również adres e-mail do kontaktu powiązany z Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Aby upewnić się, że korespondencja za pomocą wiadomości e-mail z Sectigo przebiega prawidłowo, sprawdź również ważność konta e-mail podanego w formularzu podczas składania zamówienia na certyfikat SSL EV, jak również adres e-mail do kontaktu powiązany z Twoim [Panelu klienta OVHcloud](/links/manager).
 
 > [!primary]
 >

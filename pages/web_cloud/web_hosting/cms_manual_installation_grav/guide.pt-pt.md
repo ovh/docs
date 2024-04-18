@@ -18,7 +18,7 @@ O **CMS** (**C**ontent **M**anagement **S**ystem) Grav permite desenvolver rapid
 
 - Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 - Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/).
-Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 

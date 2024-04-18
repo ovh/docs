@@ -23,7 +23,7 @@ Ce tutoriel a pour objectif de vous expliquer les principales étapes à suivre 
 
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
 - Disposer d'un [hébergement mutualisé OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -42,7 +42,7 @@ Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[a
 Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 - Votre nouveau domaine doit pointer vers le même « dossier racine » que le domaine utilisé actuellement pour accéder à votre site.
-- Vérifiez que votre nouveau domaine pointe bien vers la bonne adresse IP de votre hébergement mutualisé. Pour récupérer l'adresse IP, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, sélectionnez votre hébergement puis récupérez **l'IPv4** dans l'onglet `Informations générales`{.action}.
+- Vérifiez que votre nouveau domaine pointe bien vers la bonne adresse IP de votre hébergement mutualisé. Pour récupérer l'adresse IP, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, sélectionnez votre hébergement puis récupérez **l'IPv4** dans l'onglet `Informations générales`{.action}.
 
 > [!warning]
 >

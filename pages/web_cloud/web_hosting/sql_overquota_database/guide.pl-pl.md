@@ -22,7 +22,7 @@ Tutorial ten wyjaśnia, jakie działania należy podjąć, gdy wirtualna baza da
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) wraz z powiązaną bazą danych współdzieloną OVHcloud.
   
 ## W praktyce
@@ -58,7 +58,7 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 
 Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Operację tę przeprowadź, korzystając z **etapu 1** naszego przewodnika dotyczącego [zmiany hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz pozycję `Web Cloud`{.action} na górnym pasku nawigacji. Kliknij `Hosting`{.action}, następnie wybierz hosting www powiązany z Twoją bazą danych na hostingu OVHcloud. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz pozycję `Web Cloud`{.action} na górnym pasku nawigacji. Kliknij `Hosting`{.action}, następnie wybierz hosting www powiązany z Twoją bazą danych na hostingu OVHcloud. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela z listą baz danych wyświetla się u dołu ekranu.
 
@@ -133,7 +133,7 @@ Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](https://www.ovh
 
 Zalecamy tę ofertę dla dużych baz danych.
 
-Zawartość Twojej bazy danych OVHcloud można duplikować bezpośrednio do innej bazy danych OVHcloud, korzystając z funkcji dostępnej w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu zapoznaj się z przewodnikiem "[Duplikuj zawartość jednej bazy danych w innej](/pages/web_cloud/web_hosting/copy_database)".
+Zawartość Twojej bazy danych OVHcloud można duplikować bezpośrednio do innej bazy danych OVHcloud, korzystając z funkcji dostępnej w Twoim [Panelu klienta OVHcloud](/links/manager). W tym celu zapoznaj się z przewodnikiem "[Duplikuj zawartość jednej bazy danych w innej](/pages/web_cloud/web_hosting/copy_database)".
 
 W przypadku migracji na zewnętrzną bazę danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) i [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) możesz ręcznie przenieść zawartość starej bazy danych do nowej za pomocą naszych przewodników:
 

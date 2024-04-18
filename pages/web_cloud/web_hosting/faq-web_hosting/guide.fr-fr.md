@@ -8,13 +8,13 @@ updated: 2023-04-21
 
 ### Comment configurer mon hébergement ?
 
-Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Depuis la rubrique `Hébergements`, vous pourrez notamment gérer vos certificats SSL, la version PHP, l'option CDN, le multisite, les bases de données, etc.
+Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](/links/manager). Depuis la rubrique `Hébergements`, vous pourrez notamment gérer vos certificats SSL, la version PHP, l'option CDN, le multisite, les bases de données, etc.
 
 **Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique « *Premiers pas* » que vous retrouverez [ici](/products/web-cloud-hosting).
 
 ### Comment gérer mes mots de passe ?
 
-Pour gérer vos mots de passe, vous devez tout d'abord vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). En cas d'oubli de votre identifiant ou de votre mot de passe, cliquez sur `Identifiant ou mot de passe oublié`{.action} sous la fenêtre de connexion. Un e-mail vous sera envoyé avec une procédure de réinitialisation.
+Pour gérer vos mots de passe, vous devez tout d'abord vous connecter à votre [espace client OVHcloud](/links/manager). En cas d'oubli de votre identifiant ou de votre mot de passe, cliquez sur `Identifiant ou mot de passe oublié`{.action} sous la fenêtre de connexion. Un e-mail vous sera envoyé avec une procédure de réinitialisation.
 
 Vous pouvez également consulter le guide « [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password) ».
 
@@ -63,7 +63,7 @@ Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hé
 
 Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud`{.action} puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
+Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager). Rendez-vous dans la partie `Web Cloud`{.action} puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
 
 Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
 
@@ -80,7 +80,7 @@ Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offr
 
 ### Que faire si mon site web dysfonctionne ? 
 
-Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site. Pour en identifier la cause, commencez par vérifier qu'aucun de vos abonnements n'a besoin d'être **renouvelé** en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site. Pour en identifier la cause, commencez par vérifier qu'aucun de vos abonnements n'a besoin d'être **renouvelé** en vous connectant à votre [espace client OVHcloud](/links/manager).
 
 Consultez ensuite les [évènements en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont affectés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi.
 
@@ -140,7 +140,7 @@ Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](/
 
 Le cas le plus courant est le suivant : vous avez commandé séparément votre nom de domaine et votre hébergement, ils ne sont donc pas reliés entre eux via leur zone DNS.
 
-Rendez-vous dans la partie `Domaines`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur le nom de domaine concerné puis sur l'onglet `Serveurs DNS`{.action}.
+Rendez-vous dans la partie `Domaines`{.action} de votre [espace client OVHcloud](/links/manager). Cliquez sur le nom de domaine concerné puis sur l'onglet `Serveurs DNS`{.action}.
 
 Notez ensuite les serveurs DNS indiqués puis rendez-vous dans l'onglet `Zone DNS`{.action}.
 

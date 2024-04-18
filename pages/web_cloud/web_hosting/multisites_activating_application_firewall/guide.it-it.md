@@ -27,11 +27,11 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 - Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Disporre di almeno un [dominio](https://www.ovhcloud.com/it/domains/){.external} associato all'hosting
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e poi su quello corrispondente.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e poi su quello corrispondente.
 
 ### Attiva il firewall applicativo nella configurazione PHP
 

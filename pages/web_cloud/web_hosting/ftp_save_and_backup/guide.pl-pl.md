@@ -24,7 +24,7 @@ W ramach usługi hostingu OVHcloud otrzymujesz dostęp do przestrzeni dyskowej, 
 ## Wymagania początkowe
 
 - Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external} (nie dotyczy hostingu [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/)).
-- W zależności od użytej metody, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub posiadanie hasła użytkownika FTP umożliwiającego zalogowanie do przestrzeni dyskowej. 
+- W zależności od użytej metody, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager){.external} lub posiadanie hasła użytkownika FTP umożliwiającego zalogowanie do przestrzeni dyskowej. 
 
 ## W praktyce
 
@@ -52,7 +52,7 @@ Określ również metodę przywracania, której użyjesz.
 >
 > Nasze roboty instalują na Twoim hostingu kopię zapasową, zanim usuną zawartość FTP, która zostanie zastąpiona przywróceniem danych.
 >
-> Aby sprawdzić rozmiar używany na Twoim hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji `Web Cloud`{.action} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting. 
+> Aby sprawdzić rozmiar używany na Twoim hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager). Przejdź do sekcji `Web Cloud`{.action} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting. 
 >
 > Wykorzystany limit pojawia się na stronie, która się wyświetla:
 >
@@ -83,11 +83,11 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 > W tym przypadku:
 >
 > - Do [kontaktu administratora](/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami) hostingu wysyłamy e-mail z naszymi zespołami. 
-> - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij Twoją usługę w sekcji `Hosting`{.action}, a następnie zakładkę `Informacje ogólne`{.action}.
+> - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](/links/manager){.external}. W sekcji `Web Cloud`{.action} kliknij Twoją usługę w sekcji `Hosting`{.action}, a następnie zakładkę `Informacje ogólne`{.action}.
 > - Strona (-y), na której (-ych) hostowane są strony "403 Forbidden".
 >
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} , następnie wybierz nazwę odpowiedniego hostingu. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `Przywróć kopię zapasową`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action} , następnie wybierz nazwę odpowiedniego hostingu. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `Przywróć kopię zapasową`{.action}.
 
 ![kopia zapasowa](images/restore-backup.png){.thumbnail}
 
@@ -131,7 +131,7 @@ Na wstępie określ program lub interfejs, którego będziesz używał do łącz
 
 - **program Cyberduck**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu Cyberduck na Twoim hostingu](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
-- **interfejs FTP Explorer**: zaloguj się do interfejsu w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action}.
+- **interfejs FTP Explorer**: zaloguj się do interfejsu w [Panelu klienta](/links/manager){.external}. Po zalogowaniu, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action}.
 
 Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
 

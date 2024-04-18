@@ -33,7 +33,7 @@ So sparen Sie Zeit bei der Administration und können sich ganz auf Folgendes ko
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
 - Sie haben einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -93,7 +93,7 @@ Folgen Sie in diesem Fall unserer Anleitung „[Eine Website auf Ihrem Webhostin
 ##### Fall 2 - Erstellen einer Website mithilfe eines CMS
 
 OVHcloud stellt Ihnen die Option „1-Klick-Module“ zur Verfügung.<br>
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, können Sie mit dieser Option schnell die CMS *WordPress*, *Joomla!*, *PrestaShop* und *Drupal* auf dem Hosting installieren.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt sind, können Sie mit dieser Option schnell die CMS *WordPress*, *Joomla!*, *PrestaShop* und *Drupal* auf dem Hosting installieren.
 
 Um diese Option zu verwenden, lesen Sie unsere Anleitung „[Installation Ihrer Website mit 1-Klick-Modulen (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“.
 
@@ -114,7 +114,7 @@ Wenn die Option aktiviert ist, lesen Sie unsere Anleitung „[E-Mail-Accounts mi
 >
 > - Wenn Sie eine Website migrieren und/oder es sich um E-Mail-Adressen handelt, die mit dem Domainnamen Ihrer Website verknüpft sind, lesen Sie unsere Anleitung „[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“. Dort finden Sie alle wesentlichen Schritte für eine unterbrechungsfreie Migration aller Ihrer Dienstleistungen (Domainname, Website, E-Mail-Adresse(n) etc.).
 >
-> - Wenn Sie bei der Bestellung Ihres Webhostings keinen Domainnamen hinzugefügt haben und die Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ nutzen möchten, müssen Sie die Operation manuell über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen.
+> - Wenn Sie bei der Bestellung Ihres Webhostings keinen Domainnamen hinzugefügt haben und die Option „E-Mail-Adresse(n) bei Ihrem Webhosting inklusive“ nutzen möchten, müssen Sie die Operation manuell über Ihr [OVHcloud Kundencenter](/links/manager) durchführen.
 
 ### Schritt 4 - Konfiguration Ihrer Domain überprüfen und/oder ändern <a name="domain-configuration"></a>
 

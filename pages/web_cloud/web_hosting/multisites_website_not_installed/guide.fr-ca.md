@@ -21,7 +21,7 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer également de la gestion de la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) à laquelle est rattachée votre nom de domaine.
 
 ## En pratique
@@ -36,7 +36,7 @@ Les étapes suivantes vous permettront de corriger l’erreur `Site non install�
 
 ### Étape 1 - Vérifier la déclaration de votre nom de domaine ou de votre sous-domaine sur votre hébergement web <a name="check-multisites"></a>
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page, puis cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche.
+Dans votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page, puis cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche.
 
 Sélectionnez l'hébergement web concerné dans la liste, puis cliquez sur l’onglet `Multisite`{.action}.
 
@@ -61,7 +61,7 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
 
-Pour retrouver l'adresse IP de votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné dans la liste.
+Pour retrouver l'adresse IP de votre hébergement web, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné dans la liste.
 
 Vous retrouverez l'adresse `IPv4` dans l'encadré `Informations générales`{.action}.
 
@@ -80,7 +80,7 @@ Vous devez maintenant vérifier que l'adresse IP de votre hébergement web appar
 > Si vous modifiez directement les **serveurs DNS** associés à votre nom de domaine, ce délai peut aller jusqu'à **48 heures** maximum.
 >
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Rendez vous dans la partie `Domaines`{.action}, sélectionnez votre nom de domaine puis dirigez-vous dans l'onglet `Zone DNS`{.action}.
+Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Rendez vous dans la partie `Domaines`{.action}, sélectionnez votre nom de domaine puis dirigez-vous dans l'onglet `Zone DNS`{.action}.
 
 Un tableau avec différents enregistrements DNS s'affiche.
 

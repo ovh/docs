@@ -12,13 +12,13 @@ updated: 2023-04-24
 
 ### ¿Cómo configurar mi alojamiento?
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para configurar el alojamiento. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, la versión PHP, la opción CDN, el multisitio, las bases de datos, etc.
+Conéctese al [área de cliente de OVHcloud](/links/manager) para configurar el alojamiento. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, la versión PHP, la opción CDN, el multisitio, las bases de datos, etc.
 
 **Trucos y Trucos**: Para ayudarle a configurar su alojamiento, consulte la sección *Primeros pasos* que encontrará [aquí](/products/web-cloud-hosting).
 
 ### ¿Cómo administrar mis contraseñas?
 
-Para gestionar sus contraseñas, debe conectarse en primer lugar al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En caso de olvidar su identificador o su contraseña, haga clic en el `¿No recuerda su ID de cliente o contraseña?`{.action} en la ventana de conexión. Recibirá la información necesaria por correo electrónico.
+Para gestionar sus contraseñas, debe conectarse en primer lugar al [área de cliente de OVHcloud](/links/manager). En caso de olvidar su identificador o su contraseña, haga clic en el `¿No recuerda su ID de cliente o contraseña?`{.action} en la ventana de conexión. Recibirá la información necesaria por correo electrónico.
 
 También puede consultar la guía [Establecer y gestionar la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -60,7 +60,7 @@ Para ello, acceda a la pestaña `Información general`{.action} del alojamiento.
 
 Para aumentar la RAM de un plan de hosting Cloud Databases asociado a un alojamiento compartido **Performance**, deberá eliminar obligatoria y previamente el plan de hosting Cloud Databases del alojamiento **Performance** para migrar a un plan superior.
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Acceda a la sección `Web Cloud`{.action} y seleccione el alojamiento correspondiente en la pestaña `Alojamientos`{.action}. 
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager). Acceda a la sección `Web Cloud`{.action} y seleccione el alojamiento correspondiente en la pestaña `Alojamientos`{.action}. 
 
 En la página Información general{.action}, encontrará un recuadro titulado `Configuración`{.action} en el centro de la página. Haga clic en el botón `...`{.action} a la derecha de la mención `Web Cloud Databases`{.action} y luego en `Desvincular`{.action}. Seleccione la duración de renovación más corta y continúe hasta la validación del pedido.
 
@@ -77,7 +77,7 @@ Para más información, consulte nuestra guía ["Configuración de un plan de ho
 
 ### ¿Qué hacer si mi sitio web no funciona bien? 
 
-Existen diversos motivos por los que podría haber fallado el funcionamiento del sitio web. Para identificar la causa, compruebe que ninguna de sus suscripciones necesita ser **renovada** conectándose al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Existen diversos motivos por los que podría haber fallado el funcionamiento del sitio web. Para identificar la causa, compruebe que ninguna de sus suscripciones necesita ser **renovada** conectándose al [área de cliente de OVHcloud](/links/manager).
 
 Consulte a continuación los [eventos en curso en nuestra infraestructura](https://www.status-ovhcloud.com/). Si todos sus servicios están activos y no se ven afectados por ninguna incidencia o mantenimiento, le invitamos a realizar un diagnóstico más detallado.
 
@@ -137,7 +137,7 @@ Esta anomalía indica una configuración errónea a nivel de los [servidores DNS
 
 El caso más común es el siguiente: usted ha contratado por separado su dominio y su alojamiento, por lo que no están conectados entre sí a través de su zona DNS.
 
-Acceda a la sección `Dominios`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en el dominio correspondiente y, seguidamente, en la pestaña `Servidores DNS`{.action}.
+Acceda a la sección `Dominios`{.action} del [área de cliente de OVHcloud](/links/manager). Haga clic en el dominio correspondiente y, seguidamente, en la pestaña `Servidores DNS`{.action}.
 
 Anote los servidores DNS indicados y acceda a la pestaña `Zona DNS`{.action}.
 

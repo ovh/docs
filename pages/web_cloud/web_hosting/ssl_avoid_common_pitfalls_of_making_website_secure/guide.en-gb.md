@@ -21,7 +21,7 @@ In this tutorial, you will find some examples of situations you may encounter wh
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - At least one [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the "Web Cloud" section
+- Access to the [OVHcloud Control Panel](/links/manager) in the "Web Cloud" section
 
 ## Instructions
 

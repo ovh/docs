@@ -10,7 +10,7 @@ updated: 2023-10-26
 
 ## Obiettivo
 
-L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), così come sull'interfaccia [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
+L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [Spazio Cliente OVHcloud](/links/manager), così come sull'interfaccia [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Scopri come risolvere gli errori associati ai database sugli hosting condivisi OVHcloud.**
 
@@ -24,7 +24,7 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/)
 ## Procedura
 
@@ -37,7 +37,7 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server Web Cloud Databases o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
 
 > [!primary]
-> Per maggiori informazioni, accedi allo Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}:
+> Per maggiori informazioni, accedi allo Spazio Cliente OVHcloud (/links/manager), sezione `Web Cloud`{.action}:
 >
 > - Per recuperare la `Datacenter` del tuo hosting e la `Filer` (server di file), seleziona `Hosting`{.action} e poi l'hosting interessato. Queste informazioni sono disponibili nella scheda `Informazioni generali`{.action}.
 > - Per recuperare il **cluster** di server su cui è ospitato il tuo hosting, clicca su `FTP-SSH`{.action}. Questa informazione verrà mostrata nella `Server FTP`
@@ -78,7 +78,7 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Hosting`{.action}, clicca su `Database`{.action} e verifica la corrispondenza tra gli elementi visualizzati e quelli presenti nel file `wp-config.php`:
+Nello Spazio Cliente OVHcloud (/links/manager), sezione `Hosting`{.action}, clicca su `Database`{.action} e verifica la corrispondenza tra gli elementi visualizzati e quelli presenti nel file `wp-config.php`:
 
 - **my_database** deve corrispondere a quanto indicato in `Nome del database`
 - **my_user** deve corrispondere a quanto riportato nella `Nome utente`
@@ -86,7 +86,7 @@ Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from
 - **my_server.mysql.db** deve corrispondere a quanto riportato su `Indirizzo del server`.
 
 > [!primary]
-> Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](/pages/web_cloud/web_hosting/sql_database_export) e [ripristina il database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](/pages/web_cloud/web_hosting/sql_database_export) e [ripristina il database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](/links/manager).
 >
 > Contatta uno specialista del settore (https://partner.ovhcloud.com/it/directory/) se necessario. Non saremo in grado di fornirti assistenza al riguardo.
 >
@@ -112,7 +112,7 @@ Se disponi di una formula **Personale** o **Pro***, ti consigliamo di passare al
 > Ti consigliamo quindi di contattare immediatamente uno specialista (https://partner.ovhcloud.com/it/directory/) se riscontri un improvviso aumento nella dimensione del tuo database o se disponi di un sito di tipo "blog" normalmente a basso consumo di dati. Non saremo in grado di fornirti assistenza in merito.
 >
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Hosting`{.action} > 'hosting interessato'. Clicca sul pulsante `...`{.action} nella sezione `Offre` sulla destra dello schermo e su `Modifica dell'offerta`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Hosting`{.action} > 'hosting interessato'. Clicca sul pulsante `...`{.action} nella sezione `Offre` sulla destra dello schermo e su `Modifica dell'offerta`{.action}.
 
 Se utilizzi un'offerta **Performance**, consulta la sezione [metodo 2](#methode2).
 
@@ -150,17 +150,17 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configu
 
 Superamento della capacità della RAM
 
-Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
+Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
 ![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
-In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
+In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
 > [!warning]
 >
 > Per aumentare la RAM, il Web Cloud Databases non deve essere attivato tramite un hosting Performance. Per aumentare la quantità di RAM di un database incluso nelle [offerte performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/){.external}, è necessario scollegarla prima.
 > 
-> Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l'hosting Web su cui è attivo il Web Cloud Databases.
+> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l'hosting Web su cui è attivo il Web Cloud Databases.
 >
 > Nella zona `Configurazione`, clicca sui `...`{.action} in corrispondenza dell'entrata della `Database Privato` e clicca su `Scollega`{.action}.
 >
@@ -204,7 +204,7 @@ Sostituiscila con:
 USE `Database-Name`;
 ```
 
-(`Database-Name`: inserisci il nome del database indicato nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).)
+(`Database-Name`: inserisci il nome del database indicato nel tuo [Spazio Cliente OVHcloud](/links/manager).)
 
 ##### "MySQL server has gone away"
 
@@ -216,7 +216,7 @@ Questo messaggio di errore compare durante l'[importazione di un database](/page
 
 Per risolvere questa anomalia, puoi:
 
-- Aumentare la [quantità di RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
+- Aumentare la [quantità di RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](/links/manager). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
 
 - Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) OVHcloud non potrà fornirti alcuna assistenza al riguardo).
 
@@ -265,11 +265,11 @@ Questo messaggio di errore compare durante la [connessione a PhpMyAdmin](/pages/
 
 ![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
-Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 > [!success]
 >
-> Se il database a cui vuoi connetterti compare nella scheda `Database`{.action} della sezione `Hosting`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), il nome da inserire è indicato nella colonna `Indirizzo del server`.
+> Se il database a cui vuoi connetterti compare nella scheda `Database`{.action} della sezione `Hosting`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager), il nome da inserire è indicato nella colonna `Indirizzo del server`.
 >
 > Se vuoi connetterti a un database su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
 >

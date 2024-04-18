@@ -33,7 +33,7 @@ Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse �
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/) con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -93,7 +93,7 @@ Colocar la base de datos local en la base de datos asociada a su alojamiento web
 ##### Caso n°2 - Crear un sitio web utilizando un CMS
 
 OVHcloud pone a su disposición la opción Módulos en un clic.<br>
-Una vez conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y a través de su alojamiento web, esta opción le permite instalar rápidamente los CMS *WordPress*, *Joomla!*, *PrestaShop* y *Drupal*.
+Una vez conectado a su [área de cliente de OVHcloud](/links/manager) y a través de su alojamiento web, esta opción le permite instalar rápidamente los CMS *WordPress*, *Joomla!*, *PrestaShop* y *Drupal*.
 
 Para utilizar esta opción, consulte nuestra guía "[Instalar su sitio web con un 'módulo en 1 clic' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -114,7 +114,7 @@ Una vez activada la opción, consulte nuestra guía "[Crear una dirección de co
 >
 > - Si va a migrar un sitio web y/o se trata de direcciones de correo asociadas al dominio de su sitio web, consulte nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". En ella encontrará todos los pasos clave para migrar sin interrupción todos sus servicios (nombre de dominio, sitio web, dirección(s) de correo electrónico, etc.).
 >
-> - Si no ha asociado un dominio al contratar el alojamiento web y quiere disfrutar de la opción "dirección(s) de correo incluida(s) con el alojamiento web", deberá realizar la operación manualmente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> - Si no ha asociado un dominio al contratar el alojamiento web y quiere disfrutar de la opción "dirección(s) de correo incluida(s) con el alojamiento web", deberá realizar la operación manualmente desde el [área de cliente de OVHcloud](/links/manager).
 
 ### Etapa 4 - Comprobar y/o modificar la configuración de su dominio <a name="domain-configuration"></a>
 
