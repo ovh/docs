@@ -82,7 +82,7 @@ Continue a encomenda até ao pagamento para validar o pedido de criação do cer
 
 #### 1.2 - Para um novo nome de domínio e um novo alojamento
 
-Se ainda não encomendou o seu nome de domínio e o alojamento associado, aceda à nossa [página inicial da OVHcloud](https://www.ovhcloud.com/pt/), introduza um nome de domínio no **formulário de pesquisa previsto para este efeito** e clique em `Pesquisar`{.action} para iniciar a sua encomenda.
+Se ainda não encomendou o seu nome de domínio e o alojamento associado, aceda à nossa [página inicial da OVHcloud](/links/website), introduza um nome de domínio no **formulário de pesquisa previsto para este efeito** e clique em `Pesquisar`{.action} para iniciar a sua encomenda.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 

@@ -78,7 +78,7 @@ Proceed with the order until payment in order to confirm the request to create t
 
 #### 1.2 - For a new domain name and a new hosting
 
-If you have not yet ordered your domain name and associated hosting package, go to our [OVHcloud homepage](https://www.ovhcloud.com/en-ca/), enter a domain name in the **search form** and click `Search`{.action} to start the order process.
+If you have not yet ordered your domain name and associated hosting package, go to our [OVHcloud homepage](/links/website), enter a domain name in the **search form** and click `Search`{.action} to start the order process.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 

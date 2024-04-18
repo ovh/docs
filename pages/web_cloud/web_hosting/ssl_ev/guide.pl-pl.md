@@ -82,7 +82,7 @@ Postępuj zgodnie z poleceniem aż do płatności, aby potwierdzić zlecenie utw
 
 #### 1.2 - Dla nowej domeny i nowego hostingu
 
-Jeśli jeszcze nie zamówiłeś domeny i przypisanego hostingu, przejdź do [strony głównej OVHcloud](https://www.ovhcloud.com/pl/), wpisz nazwę domeny w **formularz przeszukiwania przeznaczony do tego celu**, a następnie kliknij `Szukaj`{.action}, aby rozpocząć zamówienie.
+Jeśli jeszcze nie zamówiłeś domeny i przypisanego hostingu, przejdź do [strony głównej OVHcloud](/links/website), wpisz nazwę domeny w **formularz przeszukiwania przeznaczony do tego celu**, a następnie kliknij `Szukaj`{.action}, aby rozpocząć zamówienie.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 

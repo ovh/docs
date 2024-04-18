@@ -82,7 +82,7 @@ Continua l'ordine fino al pagamento per confermare la richiesta di creazione del
 
 #### 1.2 - Per un nuovo dominio e un nuovo hosting
 
-Se non hai ancora ordinato il tuo dominio e il servizio di hosting associato, accedi alla pagina [homepage OVHcloud](https://www.ovhcloud.com/it/), inserisci un dominio nel**form di ricerca previsto a questo scopo** e clicca su `Cerca`{.action} per avviare il tuo ordine.
+Se non hai ancora ordinato il tuo dominio e il servizio di hosting associato, accedi alla pagina [homepage OVHcloud](/links/website), inserisci un dominio nel**form di ricerca previsto a questo scopo** e clicca su `Cerca`{.action} per avviare il tuo ordine.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 

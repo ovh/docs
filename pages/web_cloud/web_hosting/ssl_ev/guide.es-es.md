@@ -82,7 +82,7 @@ Continúe con el pedido hasta que abone el importe pendiente para validar la sol
 
 #### 1.2 - Para un nuevo dominio y alojamiento
 
-Si todavía no ha contratado su dominio y el alojamiento asociado, acceda a nuestra [página de inicio de OVHcloud](https://www.ovhcloud.com/es-es/), introduzca un dominio en el **formulario de búsqueda previsto a tal efecto** y haga clic en `Buscar`{.action} para iniciar el pedido.
+Si todavía no ha contratado su dominio y el alojamiento asociado, acceda a nuestra [página de inicio de OVHcloud](/links/website), introduzca un dominio en el **formulario de búsqueda previsto a tal efecto** y haga clic en `Buscar`{.action} para iniciar el pedido.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 

@@ -78,7 +78,7 @@ Poursuivez la commande jusqu'au paiement afin de valider la demande de création
 
 #### 1.2 - Pour un nouveau nom de domaine et un nouvel hébergement
 
-Si vous n'avez pas encore commandé votre nom de domaine et l'hébergement associé, rendez-vous sur notre [page d'accueil OVHcloud](https://www.ovhcloud.com/fr/), saisissez un nom de domaine dans le **formulaire de recherche prévu à cet effet** puis cliquez sur `Rechercher`{.action} pour démarrer votre commande.
+Si vous n'avez pas encore commandé votre nom de domaine et l'hébergement associé, rendez-vous sur notre [page d'accueil OVHcloud](/links/website), saisissez un nom de domaine dans le **formulaire de recherche prévu à cet effet** puis cliquez sur `Rechercher`{.action} pour démarrer votre commande.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
