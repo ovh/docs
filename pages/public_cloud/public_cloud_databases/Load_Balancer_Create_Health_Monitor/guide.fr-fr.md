@@ -1,6 +1,6 @@
 ---
-title: 'Guide : Création et Gestion d’un Health Monitor pour le Public Cloud Load Balancer  OVHcloud'
-excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Public Cloud Load Balancers OVHcloud via le Control Panel OVHcloud, CLI, Horizon et Terraform'
+title: 'Guide : Création et Gestion d’un Health Monitor pour le Load Balancer Public Cloud OVHcloud'
+excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Load Balancers Public Cloud OVHcloud via l'espace client OVHcloud, CLI, Horizon et Terraform'
 updated: 2024-04-17
 ---
 
@@ -13,7 +13,7 @@ Apprenez à créer et à gérer un Health Monitor pour vos Load Balancers OVHclo
 - Un compte OVHcloud actif.
 - Comprendre les concepts d'un load balancer : voir [OVHcloud Load Balancer Concepts](https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
 - Un projet Public Cloud chez OVHcloud avec un accès fonctionnel.
-- Un Load Balancer déjà configuré dans votre espace projet OVHcloud [GAL] (https://help.ovhcloud.com/csm/en-gb-public-cloud-network-load-balancer-concepts?id=kb_article_view&sysparm_article=KB0059283)
+- Un Load Balancer [déjà configuré](https://help.ovhcloud.com/csm/fr-public-cloud-network-getting-started-load-balancer?id=kb_article_view&sysparm_article=KB0050200) dans votre espace projet OVHcloud]
 
 ## En pratique
 ### Création d’un Health Monitor
@@ -54,6 +54,8 @@ La configuration précise des Health Monitors, incluant la fréquence des vérif
 - **`delay`**: Interval en secondes entre chaque vérification de santé, permettant de contrôler la fréquence des tests.
 - **`timeout`**: Temps d'attente maximum pour une réponse du serveur avant de le considérer comme défaillant.
 - **`max_retries`**: Nombre de tentatives de vérification échouées avant que le serveur ne soit marqué comme défaillant.
+
+[GAL] Le chapitre ci dessous fait doublon avec celui ci dessus (cf mon premier lot de remarque) il faut fusionner. A discuter.
 
 Pour un Health Monitor efficace, accordez une attention particulière aux paramètres suivants :
 
@@ -97,7 +99,7 @@ En intégrant ces meilleures pratiques dans votre processus de configuration, vo
 
 Selon l'interface choisie, voici les étapes à suivre :
 
-#### Control Panel OVHcloud
+#### Espace client OVHcloud
 
 1. **Connexion** : Connectez-vous à votre espace client OVHcloud.
 2. **Sélection du projet** : Allez dans la section "Public Cloud" et sélectionnez votre projet.
