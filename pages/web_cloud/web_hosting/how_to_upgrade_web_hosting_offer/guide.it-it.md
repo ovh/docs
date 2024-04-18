@@ -147,7 +147,7 @@ Segui [queste istruzioni](#modify) per modificare l’offerta.
 
 #### Potenzia temporaneamente il tuo hosting Performance <a name="boost"></a>
 
-Con l'[opzione Boost](https://www.ovhcloud.com/it/web-hosting/options/boost/), disponibile sulle nostre soluzioni *Performance*, è possibile aumentare temporaneamente le risorse CPU e RAM dell’hosting Web per assorbire un aumento temporaneo del traffico. Se l'aumento dura nel tempo, puoi anche [passare all'offerta Performance di livello superiore](#modify) per disporre di queste risorse in modo permanente.
+Con l'[opzione Boost](/links/web/hosting-options-boost), disponibile sulle nostre soluzioni *Performance*, è possibile aumentare temporaneamente le risorse CPU e RAM dell’hosting Web per assorbire un aumento temporaneo del traffico. Se l'aumento dura nel tempo, puoi anche [passare all'offerta Performance di livello superiore](#modify) per disporre di queste risorse in modo permanente.
 
 > [!warning]
 >

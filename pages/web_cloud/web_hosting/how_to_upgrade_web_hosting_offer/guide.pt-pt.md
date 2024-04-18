@@ -147,7 +147,7 @@ Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 
 #### Boost temporariamente ao seu alojamento Performance <a name="boost"></a>
 
-Com a [opção Boost](https://www.ovhcloud.com/pt/web-hosting/options/boost/), disponível nas nossas ofertas *Performance*, pode aumentar temporariamente os recursos de CPU e RAM do seu alojamento web para absorver um aumento pontual do tráfego. Se este aumento se prolongar no tempo, pode igualmente [migrar para a oferta Performance de nível superior](#modify) de forma a dispor destes recursos de forma permanente.
+Com a [opção Boost](/links/web/hosting-options-boost), disponível nas nossas ofertas *Performance*, pode aumentar temporariamente os recursos de CPU e RAM do seu alojamento web para absorver um aumento pontual do tráfego. Se este aumento se prolongar no tempo, pode igualmente [migrar para a oferta Performance de nível superior](#modify) de forma a dispor destes recursos de forma permanente.
 
 > [!warning]
 >

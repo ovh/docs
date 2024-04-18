@@ -56,7 +56,7 @@ A continuación, seleccione la nueva suscripción y su duración. Acepte los con
 
 #### Mejorar temporalmente su plan de hosting Performance <a name="boost"></a>
 
-Con la [opción Boost](https://www.ovhcloud.com/es/web-hosting/options/boost/), disponible en nuestros planes *Performance*, puede aumentar temporalmente los recursos de CPU y RAM de su alojamiento web para absorber un aumento puntual del tráfico. Si este aumento se prolonga en el tiempo, también puede [cambiar al plan Performance de nivel superior](#modify) para disponer de estos recursos de forma permanente.
+Con la [opción Boost](/links/web/hosting-options-boost), disponible en nuestros planes *Performance*, puede aumentar temporalmente los recursos de CPU y RAM de su alojamiento web para absorber un aumento puntual del tráfico. Si este aumento se prolonga en el tiempo, también puede [cambiar al plan Performance de nivel superior](#modify) para disponer de estos recursos de forma permanente.
 
 > [!warning]
 >

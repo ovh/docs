@@ -142,7 +142,7 @@ Follow [these instructions](#modify) to change your solution.
 
 #### Temporarily boost your Performance hosting <a name="boost"></a>
 
-With the [Boost option](https://www.ovhcloud.com/en-gb/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your web hosting plan’s CPU and RAM resources to absorb a one-off increase in traffic. If this increase continues over time, you can also [switch to the higher-level Performance plan](#modify) so that you have these resources permanently.
+With the [Boost option](/links/web/hosting-options-boost), available on our *Performance* plans, you can temporarily increase your web hosting plan’s CPU and RAM resources to absorb a one-off increase in traffic. If this increase continues over time, you can also [switch to the higher-level Performance plan](#modify) so that you have these resources permanently.
 
 > [!warning]
 >

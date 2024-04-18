@@ -147,7 +147,7 @@ Folgen Sie [diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 
 #### Ihr Performance Hosting vorübergehend boosten <a name="boost"></a>
 
-Mit der [Boost Option](https://www.ovhcloud.com/de/web-hosting/options/boost/), die für unsere *Performance* Angebote verfügbar ist, können Sie die CPU und RAM Ressourcen Ihres Hostings vorübergehend erhöhen, um einen punktuellen Anstieg des Traffics abzufangen. Wenn diese Erhöhung über einen längeren Zeitraum erfolgt, können Sie auch [zu einem höheren Performance Angebot wechseln](#modify), um diese Ressourcen dauerhaft verfügbar zu machen.
+Mit der [Boost Option](/links/web/hosting-options-boost), die für unsere *Performance* Angebote verfügbar ist, können Sie die CPU und RAM Ressourcen Ihres Hostings vorübergehend erhöhen, um einen punktuellen Anstieg des Traffics abzufangen. Wenn diese Erhöhung über einen längeren Zeitraum erfolgt, können Sie auch [zu einem höheren Performance Angebot wechseln](#modify), um diese Ressourcen dauerhaft verfügbar zu machen.
 
 > [!warning]
 >
