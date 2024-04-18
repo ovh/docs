@@ -71,7 +71,7 @@ Más información en nuestra página relativa a [Joomla!](/links/web/hosting-joo
 
 **Drupal** es una plataforma open source gratuita con PHP creada en 2000. **Drupal** permite crear rápidamente sitios web dinámicos.
 
-Más información en nuestra página relativa a [Drupal](https://www.ovhcloud.com/es-es/web-hosting/uc-drupal-website/)
+Más información en nuestra página relativa a [Drupal](/links/web/hosting-drupal)
 
 - Sitio oficial de [Drupal](https://www.drupal.org/){.external}
 

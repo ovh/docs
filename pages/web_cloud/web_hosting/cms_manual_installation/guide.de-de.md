@@ -70,7 +70,7 @@ Weitere Informationen finden Sie auf unserer Seite zum [Joomla! Modul](/links/we
 
 **Drupal** ist eine kostenlose Open-Source-Plattform, die auf PHP basiert. **Drupal** existiert seit 2000 und ermöglicht die schnelle Erstellung dynamischer Webseiten.
 
-Weitere Informationen finden Sie auf unserer Seite zum [Drupal Modul](https://www.ovhcloud.com/de/web-hosting/uc-drupal-website/).
+Weitere Informationen finden Sie auf unserer Seite zum [Drupal Modul](/links/web/hosting-drupal).
 
 - Offizielle Website von [Drupal](https://www.drupal.org/){.external}
 

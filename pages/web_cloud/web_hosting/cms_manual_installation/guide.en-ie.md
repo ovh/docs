@@ -67,7 +67,7 @@ You can find more information on our [Joomla! module page](/links/web/hosting-jo
 
 **Drupal** is a free open-source platform under PHP created in 2000. **Drupal** allows you to create dynamic websites quickly.
 
-You can find more information on our [Drupal module page](https://www.ovhcloud.com/en-ie/web-hosting/uc-drupal-website/). 
+You can find more information on our [Drupal module page](/links/web/hosting-drupal). 
 
 - [Official Drupal website](https://www.drupal.org/){.external} 
 

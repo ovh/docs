@@ -71,7 +71,7 @@ Encontre mais informações na nossa página sobre o [módulo Joomla!](/links/we
 
 **Drupal** é uma plataforma open source sob PHP criada em 2000. **Drupal** permite criar rapidamente websites dinâmicos.
 
-Encontre mais informações na nossa página sobre o [módulo Drupal](https://www.ovhcloud.com/pt/web-hosting/uc-drupal-website/)
+Encontre mais informações na nossa página sobre o [módulo Drupal](/links/web/hosting-drupal)
 
 - Site oficial de [Drupal](https://www.drupal.org/){.external}
 
