@@ -16,7 +16,7 @@ Im [OVHcloud Kundencenter](/links/manager) können Sie die Kapazitäten Ihrer [W
 - Mehr FTP-Speicherplatz
 - Zusätzliche Datenbanken
 - Zusätzliche E-Mail-Accounts
-- Zusätzliche Funktionen wie [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (ab [dem Pro Angebot](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Web Cloud Databases](/links/web/databases){.external} (in [den Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/))
+- Zusätzliche Funktionen wie [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (ab [dem Pro Angebot](/links/web/hosting-professional-offer)) oder [Web Cloud Databases](/links/web/databases){.external} (in [den Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/))
 
 **Diese Anleitung erklärt, wie Sie Ihr OVHcloud Hosting ohne Dienstunterbrechung skalieren können.**
 
@@ -75,7 +75,7 @@ Nach der Löschung der Daten Ihrer Datenbanken müssen Sie das verwendete Quota 
 
 #### 2 - Web Cloud Databases
 
-Wenn Sie das Angebot [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) nutzen, das mit Ihrem Webhosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) inklusive ist, und Ihr Webhosting auf ein Angebot [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) herunterstufen möchten, müssen Sie zunächst das Angebot Web Cloud Databases von Ihrem Webhosting trennen. <br>
+Wenn Sie das Angebot [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) nutzen, das mit Ihrem Webhosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) inklusive ist, und Ihr Webhosting auf ein Angebot [Pro](/links/web/hosting-professional-offer) herunterstufen möchten, müssen Sie zunächst das Angebot Web Cloud Databases von Ihrem Webhosting trennen. <br>
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Bleiben Sie auf der angezeigten Seite im Tab `Allgemeine Informationen`{.action}. Klicken Sie in der mittleren Spalte `Konfiguration` auf den Button `...`{.action} rechts neben `Web Cloud Databases`{.action} und dann auf `Abtrennen`{.action}.
 
 ![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}
@@ -176,7 +176,7 @@ Diese Berechnung entspricht der Preisdifferenz zwischen Ihrem ursprünglichen un
 >
 > Sie haben am 1. Januar 2022 ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) abonniert.
 >
-> Am 31. Oktober 2022 wechseln Sie von diesem **Basic** Angebot zu einem Abo für das [Pro Hosting](https://www.ovhcloud.com/de/web-hosting/professional-offer/).<br>
+> Am 31. Oktober 2022 wechseln Sie von diesem **Basic** Angebot zu einem Abo für das [Pro Hosting](/links/web/hosting-professional-offer).<br>
 >
 > Folglich wird der Betrag für die verbleibende Laufzeit des **Basic** Abos (2 Monate vom 1. November 2022 bis zum 1. Januar 2023) automatisch von den Kosten des neuen **Pro** Abonnements bis zum 1. Januar 2023 abgezogen. Sie zahlen also nur die Differenz.
 > Ab dem 1. Januar 2023 wird Ihnen das **Pro** Abonnement dann nach dem geltenden Tarif berechnet.

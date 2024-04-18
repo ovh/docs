@@ -78,7 +78,7 @@ Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.actio
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-As ofertas [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](/links/web/databases).
+As ofertas [Pro](/links/web/hosting-professional-offer) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](/links/web/databases).
 
 Uma vez concluído, poderá instalar um novo "módulo com 1 clique".
 
@@ -172,7 +172,7 @@ Na sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-As ofertas [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](/links/web/databases).
+As ofertas [Pro](/links/web/hosting-professional-offer) e [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três "módulos 1 clique" suplementares com uma base de dados independente para cada um deles. As ofertas **Performance** permitem-lhe também ativar gratuitamente um servidor [Web Cloud Databases](/links/web/databases).
 
 ### "Não é possível estabelecer ligação à base de dados" <a name="delete-the-module"></a>
 

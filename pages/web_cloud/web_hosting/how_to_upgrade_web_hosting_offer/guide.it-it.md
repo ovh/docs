@@ -16,7 +16,7 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 - più spazio di archiviazione FTP;
 - banche dati supplementari; 
 - di indirizzi email aggiuntivi;
-- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/)) o il [servizio Web Cloud Databases](/links/web/databases){.external} (incluso nelle [offerte Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
+- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases){.external} (incluso nelle [offerte Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
 
 **Questa guida ti mostra come far evolvere la tua soluzione di hosting OVHcloud senza interruzioni del servizio.**
 
@@ -75,7 +75,7 @@ In seguito alla cancellazione dei dati sui database, ricalcola la quota utilizza
 
 #### 2 - Web Cloud Databases
 
-Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) inclusa con il tuo hosting Web [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare il tuo hosting Web su un’offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/), dovrai innanzitutto dissociare l’offerta Web Cloud dal tuo hosting Web.<br>
+Se utilizzi l’offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) inclusa con il tuo hosting Web [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare il tuo hosting Web su un’offerta [Pro](/links/web/hosting-professional-offer), dovrai innanzitutto dissociare l’offerta Web Cloud dal tuo hosting Web.<br>
 Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella nuova pagina, rimani sulla scheda `Informazioni generali`{.action}. Nella colonna centrale `Configurazione`, clicca sul pulsante `...`{.action} a destra della voce `Web Cloud Databases`{.action} e poi su `Scollega`{.action}.
 
 ![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}
@@ -176,7 +176,7 @@ Questo calcolo corrisponde alla differenza di prezzo tra il piano iniziale e il 
 >
 > Hai sottoscritto un abbonamento [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) il 1° gennaio 2022.
 >
-> Il 31 ottobre 2022, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/).<br>
+> Il 31 ottobre 2022, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](/links/web/hosting-professional-offer).<br>
 >
 > Di conseguenza, l'importo corrispondente alla durata residua dell'abbonamento **Personale** (2 mesi, dal 1° novembre 2022 al 1° gennaio 2023) viene automaticamente sottratto dal costo del nuovo abbonamento **Pro**, fino al 1° gennaio 2023. Pagherete solo la differenza.
 > A partire dal 1° gennaio 2023, ti sarà fatturato l'abbonamento **Pro** alla tariffa in vigore.

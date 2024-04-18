@@ -59,7 +59,7 @@ Se tale interruzione dovesse verificarsi, la guida deve essere costruita in modo
 Diverse offerte di hosting condiviso OVHcloud contengono un'offerta email "MX Plan". Questa offerta email permette di creare indirizzi email con uno spazio di storage massimo di 5 GB per ogni indirizzo. Scegli tra le offerte di hosting qui sotto in base alla versione PHP, alla versione SQL, al numero di indirizzi email di cui hai bisogno e alla dimensione del tuo sito da migrare:
 
 - L'hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) con **10 indirizzi email** "MX Plan"
-- Hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) con **100 indirizzi email** "MX Plan"
+- Hosting [Pro](/links/web/hosting-professional-offer) con **100 indirizzi email** "MX Plan"
 - Hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) con **1000 indirizzi email** "MX Plan". Questa offerta è disponibile in 4 "sottolivello".
 - L'hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) con **200 indirizzi email** "MX Plan". Questa offerta è utilizzata dagli sviluppatori di applicazioni.
 

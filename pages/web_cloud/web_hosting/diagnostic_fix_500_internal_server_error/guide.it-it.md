@@ -79,7 +79,7 @@ In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](/pages/web_cl
 
 Per ragioni di sicurezza, il tuo sito nasconde gli eventuali dettagli sull'origine dell'errore 500 a chiunque vi si connetta tramite un browser web.
 
-Se vuoi avere accesso a questi dettagli, dal piano di hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Se vuoi avere accesso a questi dettagli, dal piano di hosting [Pro](/links/web/hosting-professional-offer) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Verifica lo stato del database
 

@@ -73,7 +73,7 @@ Par exemple pour [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_gui
 
 Limitez également la taille de vos transferts de données (vous ne pourrez pas envoyer plus de **5000 fichiers et dossiers** sur les serveurs mutualisés OVHcloud en un seul transfert). Effectuez vos imports en plusieurs fois si nécessaire en utilisant des dossiers compressés.
 
-Si vous disposez d'une [formule Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
+Si vous disposez d'une [formule Pro](/links/web/hosting-professional-offer) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
 
 ### Je n'arrive pas à supprimer le lien symbolique « index.html » sur mon espace FTP
 

@@ -78,7 +78,7 @@ En su [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
+Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
 Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
@@ -172,7 +172,7 @@ En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web 
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Los planes [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
+Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
 ### "No se puede conectar a la base de datos" <a name="delete-the-module"></a>
 

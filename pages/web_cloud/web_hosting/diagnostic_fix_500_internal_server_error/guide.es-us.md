@@ -79,7 +79,7 @@ La guía "[Uso de FileZilla con el alojamiento](/pages/web_cloud/web_hosting/ftp
 
 Por motivos de seguridad, su sitio web oculta los detalles sobre el origen del error 500 a cualquier persona que se conecte a él a través de un navegador web.
 
-Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) a través de la fórmula de alojamiento [Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o superior.
+Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) a través de la fórmula de alojamiento [Pro](/links/web/hosting-professional-offer) o superior.
 
 ### Comprobar el estado de la base de datos
 

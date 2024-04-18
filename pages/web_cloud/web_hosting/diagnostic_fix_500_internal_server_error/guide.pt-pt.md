@@ -79,7 +79,7 @@ O guia "[Partilhado : Guia de utilização do FileZilla](/pages/web_cloud/web_ho
 
 Por razões de segurança, o seu website oculta eventuais detalhes sobre a origem do erro 500 a qualquer pessoa que se lhe ligue por um browser.
 
-Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting) a partir da fórmula de alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou superior.
+Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting) a partir da fórmula de alojamento [Pro](/links/web/hosting-professional-offer) ou superior.
 
 ### Verificar o estado da base de dados
 

@@ -79,7 +79,7 @@ Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](/pages/web_
 
 Ze względów bezpieczeństwa Twoja strona WWW ukrywa ewentualne szczegóły dotyczące źródła błędu 500 dla każdego, kto ją łączy za pomocą przeglądarki internetowej.
 
-Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub wyższej, połączyć się ze stroną za pomocą [połączenia ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [Pro](/links/web/hosting-professional-offer) lub wyższej, połączyć się ze stroną za pomocą [połączenia ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Sprawdź stan bazy danych
 

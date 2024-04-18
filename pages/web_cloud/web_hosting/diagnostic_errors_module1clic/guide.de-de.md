@@ -79,7 +79,7 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.ac
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
+Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
 Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
@@ -173,7 +173,7 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web C
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
+Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
 ### „Verbindung zur Datenbank kann nicht hergestellt werden“ <a name="delete-the-module"></a>
 

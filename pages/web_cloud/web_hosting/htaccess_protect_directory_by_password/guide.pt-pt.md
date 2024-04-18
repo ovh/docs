@@ -124,7 +124,7 @@ Substitua apenas `plain_text_password1`, `plain_text_password2` e `plain_text_pa
 > Para mais informações sobre o assumpto, consulte a [documentação oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda em [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) ao seu alojamento web. Desça à "**pasta raiz**" onde está o script "crypt.php".
+Se dispõe de um alojamento [Pro](/links/web/hosting-professional-offer) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda em [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) ao seu alojamento web. Desça à "**pasta raiz**" onde está o script "crypt.php".
 
 Para isso, utilize o seguinte comando SSH:
 

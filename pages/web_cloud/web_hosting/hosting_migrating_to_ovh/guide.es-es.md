@@ -59,7 +59,7 @@ En caso de que se produzca dicha interrupción, la guía se construirá de forma
 Varios planes de hosting de OVHcloud contienen una solución de correo electrónico MX Plan. Esta solución de correo permite crear direcciones de correo con un espacio de almacenamiento de hasta 5 GB para cada dirección. Elija entre los siguientes planes de hosting en función de la versión PHP, la versión SQL, el número de direcciones de correo que necesite y el tamaño del sitio web que quiere migrar:
 
 - El alojamiento [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) con **10 direcciones de correo** "MX Plan"
-- El alojamiento [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) con **100 direcciones de correo** "MX Plan"
+- El alojamiento [Pro](/links/web/hosting-professional-offer) con **100 direcciones de correo** "MX Plan"
 - El alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) con **1000 direcciones de correo** "MX Plan". Esta oferta se divide en 4 "subproductos".
 - El alojamiento [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/) con **200 direcciones de correo** "MX Plan". Esta oferta la utilizan los desarrolladores de aplicaciones.
 

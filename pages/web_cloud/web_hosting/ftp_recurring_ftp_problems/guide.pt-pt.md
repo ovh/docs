@@ -40,7 +40,7 @@ Caso contrário, aceda à [Área de Cliente OVHcloud](/links/manager), na secç�
 
 Se dispõe de um alojamento [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), selecione a casa `Desativado`{.action} na coluna `SFTP`{.action} e aguarde alguns minutos.
 
-Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), clique no botão `...`{.action} à direita do utilizador FTP em causa, depois por `Alterar`{.action}.
+Se dispõe de um alojamento [Pro](/links/web/hosting-professional-offer) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), clique no botão `...`{.action} à direita do utilizador FTP em causa, depois por `Alterar`{.action}.
 
 Escolha `SFTP`{.action} ou `Ativado`{.action} (para ativar o protocolo SSH no seu alojamento), clique em `Seguinte`{.action} e depois em `Validar`{.action}. Aguarde alguns minutos.
 
@@ -77,7 +77,7 @@ Por exemplo, para o [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_
 
 Limite igualmente o tamanho das suas transferências de dados (não poderá enviar mais de **5000 ficheiros e pastas** para os servidores partilhados OVHcloud numa única transferência). Se necessário, realize as suas importações várias vezes com base em pastas comprimidas.
 
-Se dispõe de uma fórmula [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), utilize de preferência o [protocolo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) para realizar as suas importações de ficheiros no espaço de armazenamento de ficheiros do seu alojamento.
+Se dispõe de uma fórmula [Pro](/links/web/hosting-professional-offer) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), utilize de preferência o [protocolo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) para realizar as suas importações de ficheiros no espaço de armazenamento de ficheiros do seu alojamento.
 
 ### Não consigo eliminar o link simbólico "index.html" no meu espaço FTP
 

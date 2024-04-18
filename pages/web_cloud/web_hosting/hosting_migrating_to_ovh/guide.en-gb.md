@@ -56,7 +56,7 @@ This guide is designed to minimise the duration of such an interruption.
 Several OVHcloud web hosting plans contain an MX Plan email solution. With this email offer, you can create email accounts with a maximum storage space of 5 GB each. Choose from the following hosting plans, considering the PHP version, SQL version, number of email accounts you need, and the size of your website to migrate:
 
 - Hosting [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) with **10 MX Plan email accounts**
-- Hosting [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) with **100 MX Plan email accounts** (for business)
+- Hosting [Pro](/links/web/hosting-professional-offer) with **100 MX Plan email accounts** (for business)
 - Hosting [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) with **1000 MX Plan email accounts** (scalable dedicated resources)
 - Hosting [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) with **200 MX Plan email accounts** (for application developers)
 

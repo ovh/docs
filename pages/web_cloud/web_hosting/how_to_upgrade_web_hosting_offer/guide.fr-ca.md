@@ -12,7 +12,7 @@ Votre [espace client OVHcloud](/links/manager) permet d'augmenter les capacités
 - de plus d'espace de stockage FTP ;
 - de bases de données supplémentaires ; 
 - d'adresses e-mails additionnelles ;
-- de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (à partir de [l'offre Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/)) ou le [service Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/){.external} (compris dans [les offres Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/)).
+- de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (à partir de [l'offre Pro](/links/web/hosting-professional-offer)) ou le [service Web Cloud Databases](/links/web/hosting-professional-offer){.external} (compris dans [les offres Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud, sans interruption de service.**
 
@@ -81,7 +81,7 @@ Ce calcul correspond à la différence de tarif entre votre offre initiale et vo
 >
 > Vous avez souscrit à un abonnement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) au 1er janvier 2022.
 >
-> Le 31 octobre 2022, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/).<br>
+> Le 31 octobre 2022, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](/links/web/hosting-professional-offer).<br>
 >
 > Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2022 au 1er janvier 2023) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2023. Vous ne paierez que la différence.
 > À partir du 1er janvier 2023, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.

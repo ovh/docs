@@ -123,7 +123,7 @@ Ersetzen Sie `plain_text_password1`, `plain_text_password2` und `plain_text_pass
 > Weitere Informationen zum Thema finden Sie in der [offiziellen Apache Dokumentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Wenn Sie über ein Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder Webhosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, loggen Sie sich über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) in Ihr Webhosting ein. Wechseln Sie zum "**Wurzelverzeichnis**", in dem sich Ihr Skript "crypt.php" befindet.
+Wenn Sie über ein Webhosting [Pro](/links/web/hosting-professional-offer) oder Webhosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, loggen Sie sich über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) in Ihr Webhosting ein. Wechseln Sie zum "**Wurzelverzeichnis**", in dem sich Ihr Skript "crypt.php" befindet.
 
 Verwenden Sie hierzu folgenden Befehl:
 

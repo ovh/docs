@@ -124,7 +124,7 @@ Zastąp wyłącznie `plain_text_password1`, `plain_text_password2` i `plain_text
 > Więcej informacji na ten temat znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Jeśli dysponujesz hostingiem [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), zaloguj się do hostingu za pomocą [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Przejdź do "**katalog główny**", w którym znajduje się Twój skrypt "crypt.php".
+Jeśli dysponujesz hostingiem [Pro](/links/web/hosting-professional-offer) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), zaloguj się do hostingu za pomocą [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Przejdź do "**katalog główny**", w którym znajduje się Twój skrypt "crypt.php".
 
 W tym celu użyj następującej komendy SSH:
 

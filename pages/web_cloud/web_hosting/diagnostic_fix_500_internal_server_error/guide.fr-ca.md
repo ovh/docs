@@ -73,7 +73,7 @@ Le guide « [Utilisation du logiciel FileZilla avec votre hébergement](/pages/w
 
 Pour des raisons de sécurité, votre site masque les détails éventuels sur l'origine de l'erreur 500 à toute personne s'y connectant par un navigateur web.
 
-Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/), de vous connecter à votre site via une [connexion ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [Pro](/links/web/hosting-professional-offer), de vous connecter à votre site via une [connexion ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Vérifier l'état de la base de données
 

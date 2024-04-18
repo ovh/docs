@@ -36,7 +36,7 @@ Dans le cas contraire, rendez-vous dans votre [espace client OVHcloud](/links/ma
 
 Si vous disposez d'un hébergement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/), cochez la case `Désactivé`{.action} dans la colonne `SFTP`{.action} puis patientez quelques minutes.
 
-Si vous disposez d'un hébergement [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.
+Si vous disposez d'un hébergement [Pro](/links/web/hosting-professional-offer) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.
 
 Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH sur votre hébergement), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}. Patientez quelques minutes.
 
@@ -73,7 +73,7 @@ Par exemple pour [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_gui
 
 Limitez également la taille de vos transferts de données (vous ne pourrez pas envoyer plus de **5000 fichiers et dossiers** sur les serveurs mutualisés OVHcloud en un seul transfert). Effectuez vos imports en plusieurs fois si nécessaire en utilisant des dossiers compressés.
 
-Si vous disposez d'une [formule Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
+Si vous disposez d'une [formule Pro](/links/web/hosting-professional-offer) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
 
 ### Je n'arrive pas à supprimer le lien symbolique « index.html » sur mon espace FTP
 

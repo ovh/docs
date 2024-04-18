@@ -59,7 +59,7 @@ Diese Anleitung ist derart gestaltet, die Dauer einer möglichen Unterbrechung z
 Mehrere OVHcloud Shared Hosting Angebote enthalten "MX Plan" E-Mail-Dienste. Mit diesem E-Mail-Angebot können E-Mail-Accounts mit jeweils maximal 5 GB Speicherplatz erstellt werden. Wählen Sie aus den unten stehenden Hosting-Angeboten eines aus, das den Anforderungen Ihrer Website an PHP-Version, SQL-Version, Anzahl der benötigten E-Mail-Accounts, sowie der Größe der zu migrierenden Website entspricht:
 
 - Hosting [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) mit **10 "MX Plan E-Mail-Accounts**
-- Hosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) mit **100 "MX Plan E-Mail-Accounts** (für gewerbliche Webseiten)
+- Hosting [Pro](/links/web/hosting-professional-offer) mit **100 "MX Plan E-Mail-Accounts** (für gewerbliche Webseiten)
 - Hosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) mit **1000 "MX Plan E-Mail-Accounts** (skalierbare dedizierte Ressourcen)
 - Hosting [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) mit **200 E-Mail-Accounts** (für Anwendungsentwickler)
 

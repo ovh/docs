@@ -40,7 +40,7 @@ En caso contrario, acceda al [área de cliente de OVHcloud](/links/manager), en 
 
 Si dispone de un alojamiento [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/), marque la casilla `Desactivado`{.action} en la columna `SFTP`{.action} y espere unos minutos.
 
-Si dispone de un alojamiento [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/), haga clic en el botón `...`{.action} a la derecha del usuario FTP correspondiente y seleccione `Editar`{.action}.
+Si dispone de un alojamiento [Pro](/links/web/hosting-professional-offer) o [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/), haga clic en el botón `...`{.action} a la derecha del usuario FTP correspondiente y seleccione `Editar`{.action}.
 
 Seleccione `SFTP`{.action} o `Activado`{.action} (para activar el protocolo SSH en su alojamiento), haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}. Espere unos minutos.
 
@@ -77,7 +77,7 @@ Por ejemplo, en [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guid
 
 Limite también el tamaño de sus transferencias de datos (no podrá enviar más de **5.000 archivos y carpetas** a los servidores compartidos de OVHcloud en una sola transferencia). Realice sus importaciones varias veces si es necesario utilizando carpetas comprimidas.
 
-Si dispone de una [fórmula Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/), utilice preferentemente el [protocolo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) para importar los archivos en el espacio de almacenamiento de los archivos del alojamiento.
+Si dispone de una [fórmula Pro](/links/web/hosting-professional-offer) o [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/), utilice preferentemente el [protocolo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) para importar los archivos en el espacio de almacenamiento de los archivos del alojamiento.
 
 ### No puedo eliminar el enlace simbólico "index.html" en mi espacio FTP.
 

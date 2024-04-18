@@ -78,7 +78,7 @@ Nel tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Le offerte [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
+Le offerte [Pro](/links/web/hosting-professional-offer) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
 
 Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
@@ -172,7 +172,7 @@ Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Clou
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Le offerte [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
+Le offerte [Pro](/links/web/hosting-professional-offer) e [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
 
 ### "Impossibile connettersi al database" <a name="delete-the-module"></a>
 
