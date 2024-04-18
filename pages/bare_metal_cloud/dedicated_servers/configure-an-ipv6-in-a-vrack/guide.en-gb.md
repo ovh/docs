@@ -435,7 +435,7 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 - **SLAAC limitations in multi-location setups**: Stateless Address Autoconfiguration (SLAAC) is not supported when there is public IP traffic (both IPv6 and IPv4) routed into vRack in multiple region locations.
 - **Up to 128 hosts inside bridged subnet**: You can use up to 128 IP addresses directly on vRack.
 - **Up to 128 next-hop routes**: You can use up to 128 routes for routed subnets inside a vRack.
-- **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 1Gbps per location.
+- **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 5Gbps per region location.
 - **IPv6 block allocation limits**: Users can obtain up to three /56 Additional IPv6 blocks per region location.
 - **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend. 
   
