@@ -88,7 +88,7 @@ Nachfolgend finden Sie die jeweils verfügbaren Elemente:
 
 PHP ist eine dynamische Programmiersprache, die zur Erstellung von Websites verwendet wird. Für Ihre Website kann es erforderlich sein, dass Sie abhängig von deren Alter, durchgeführten Updates oder bestimmten für das reibungslose Funktionieren der Website erforderlichen Variablen die verwendete PHP-Version ändern.
 
-Verschiedene Versionen von PHP sind in Verwendung. Versionsaktualiserungen wenden Korrekturen an und fügen Features hinzu oder entfernen diese. OVHcloud bietet die neuesten PHP-Hauptversionen an, deren Liste Sie [hier](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/) einsehen können.
+Verschiedene Versionen von PHP sind in Verwendung. Versionsaktualiserungen wenden Korrekturen an und fügen Features hinzu oder entfernen diese. OVHcloud bietet die neuesten PHP-Hauptversionen an, deren Liste Sie [hier](/links/web/hosting-programming-language) einsehen können.
 
 Einige PHP-Versionen funktionieren nur in bestimmten Laufzeitumgebungen. Nachfolgend finden Sie die mit den OVHcloud Webhostings und den kompatiblen [Laufzeitumgebungen](#runtime-environment) verfügbaren PHP-Versionen:
 
@@ -271,7 +271,7 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie mi
 |Variablen|Detail|
 |---|---|
 |app.engine|Ermöglicht das Ändern der [PHP-Engine](#php-runtime), die vom Hosting verwendet wird. Geben Sie **php** ein, um den PHP-FPM Booster zu aktivieren, und **phpcgi**, um ihn zu deaktivieren.|
-|app.engine.version|Definiert die vom Hosting verwendete [PHP-Version](#php-versions) unter [den von OVHcloud angebotenen Versionen](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/){.external}. Geben Sie die gewünschte Version ein (die der ausgewählten Laufzeitumgebung entspricht).|
+|app.engine.version|Definiert die vom Hosting verwendete [PHP-Version](#php-versions) unter [den von OVHcloud angebotenen Versionen](/links/web/hosting-programming-language){.external}. Geben Sie die gewünschte Version ein (die der ausgewählten Laufzeitumgebung entspricht).|
 |http.firewall|Hier können Sie die [OVHcloud Webhosting Firewall](https://www.ovhcloud.com/de/web-hosting/options/){.external} aktivieren oder deaktivieren. Geben Sie **security** zum Aktivieren oder **none** zum Deaktivieren ein.|
 |environment|Ermöglicht die Verwaltung des Cacheverhaltens der statischen Dateien Ihrer Website sowie der PHP-Fehlerbehandlung. Dies entspricht dem [Runtime-Modus](#runtime-mod). Geben Sie **production** ein, um das Caching zu maximieren und PHP-Fehler zu verbergen. Mit **development** wird kein Cache angewendet und PHP-Fehler werden angezeigt.|
 |container.image|Ermöglicht das Ändern der [Laufzeitumgebung](#runtime-environment), die vom Hosting verwendet wird. Geben Sie die gewünschte Laufzeitumgebung ein (**legacy**,**stable** oder **stable64**). Wenn Sie die Laufzeitumgebung **stable64** wählen, überprüfen Sie, ob Ihre Website mit der 64-Bit-Architektur kompatibel ist.|

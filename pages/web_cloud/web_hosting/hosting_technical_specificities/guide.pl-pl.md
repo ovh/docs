@@ -102,7 +102,7 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych i łączenia
 
 ### PHP
 
-Zapoznaj się z [Pakietami hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/), aby upewnić się, czy oferta hostingu, którą chcesz zamówić, odpowiada Twoim potrzebom.
+Zapoznaj się z [Pakietami hostingu WWW](/links/web/hosting-programming-language), aby upewnić się, czy oferta hostingu, którą chcesz zamówić, odpowiada Twoim potrzebom.
 
 > [!warning]
 >

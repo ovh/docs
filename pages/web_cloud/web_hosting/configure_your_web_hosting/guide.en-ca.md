@@ -83,7 +83,7 @@ Below are the elements contained in our different runtime environments:
 
 PHP is a dynamic programming language used to build websites. For your website, depending on its age, the updates made, and certain variables required for it to work properly, you may need to change the PHP version it uses.
 
-There are several versions of the PHP programming language. Version upgrades provide various patches and add or remove features. OVHcloud offers the latest major versions of PHP, a list of which can be found [here](https://www.ovhcloud.com/en-ca/web-hosting/uc-programming-language/).
+There are several versions of the PHP programming language. Version upgrades provide various patches and add or remove features. OVHcloud offers the latest major versions of PHP, a list of which can be found [here](/links/web/hosting-programming-language).
 
 Some PHP versions only work with certain runtime environments. Below are the PHP versions available on OVHcloud web hosting plans and compatible [runtime environments](#runtime-environment):
 
@@ -266,7 +266,7 @@ Customise the values of the variables depending on the configuration you want to
 |Variables|Detail|
 |---|---|
 |app.engine|Allows you to modify [the PHP engine](#php-runtime) used by the hosting system. Enter **php** to enable the PHP-FPM accelerator, and **phpcgi** to disable it.|
-|app.engine.version|Allows you to define [the PHP version](#php-versions) used by the hosting plan among [the ones OVHcloud offers](https://www.ovhcloud.com/en-ca/web-hosting/uc-programming-language/){.external}. Enter the version of your choice (appropriate for the runtime environment you have chosen to use).|
+|app.engine.version|Allows you to define [the PHP version](#php-versions) used by the hosting plan among [the ones OVHcloud offers](/links/web/hosting-programming-language){.external}. Enter the version of your choice (appropriate for the runtime environment you have chosen to use).|
 |http.firewall|Enables or disables the [firewall of your OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/options/){.external}. Enter **security** to enable it, or **none** to disable it.|
 |environment|Allows you to manage the behaviour of your website's static file cache, as well as PHP error processing. This corresponds to [execution mode](#runtime-mod). Enter **production** to maximise caching and hide PHP errors, or **development** so that no cache is applied and PHP errors are displayed.|
 |container.image|Allows you to modify the [runtime environment](#runtime-environment) used by the hosting. Enter the runtime environment (**legacy**,**stable** or **stable64**) of your choice. If you choose the **stable64** runtime environment, ensure that your site is compatible with 64-bit architecture.|

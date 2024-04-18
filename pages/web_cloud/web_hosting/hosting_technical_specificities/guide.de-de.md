@@ -100,7 +100,7 @@ Weitere Informationen zur Verwaltung von Datenbanken und zur Verbindung mit dem 
 
 ### PHP
 
-Wir empfehlen, die Details der [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/) auf unserer Website nachzulesen, um sicherzustellen, dass das gewünschte Angebot Ihren Anforderungen entspricht.
+Wir empfehlen, die Details der [Webhosting Angebote](/links/web/hosting-programming-language) auf unserer Website nachzulesen, um sicherzustellen, dass das gewünschte Angebot Ihren Anforderungen entspricht.
 
 > [!warning]
 >

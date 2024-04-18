@@ -98,7 +98,7 @@ Pour plus d'informations sur la gestion des bases de données et sur la connecti
 
 ### PHP
 
-Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-programming-language/) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander convient à vos besoins.
+Nous vous recommandons de consulter nos [offres d'hébergement web](/links/web/hosting-programming-language) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander convient à vos besoins.
 
 > [!warning]
 >

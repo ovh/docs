@@ -87,7 +87,7 @@ Encontre aqui os elementos contidos nos nossos diferentes ambientes de execuçã
 
 PHP é uma linguagem de programação dinâmica utilizada para criar websites. Para o seu website, e em função da sua antiguidade, das atualizações efetuadas ou de certas variáveis necessárias ao seu bom funcionamento, poderá ser necessário alterar a versão de PHP que utiliza.
 
-Existem várias versões da linguagem de programação PHP. A evolução das versões traz correções diversas, assim como a adição ou o encerramento de funcionalidades. A OVHcloud propõe as últimas versões principais de PHP da qual pode encontrar a lista [aqui](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/).
+Existem várias versões da linguagem de programação PHP. A evolução das versões traz correções diversas, assim como a adição ou o encerramento de funcionalidades. A OVHcloud propõe as últimas versões principais de PHP da qual pode encontrar a lista [aqui](/links/web/hosting-programming-language).
 
 Certas versões de PHP só funcionam com certos ambientes de execução. Encontrará abaixo as versões de PHP disponíveis nos alojamentos partilhados OVHcloud e [os ambientes de execução](#runtime-environment) compatíveis:
 
@@ -270,7 +270,7 @@ Personalize os valores das variáveis em função da configuração que pretende
 |Variáveis|Detalhe|
 |---|---| 
 |app.engine|Permite alterar [o motor PHP](#php-runtime) utilizado pelo alojamento. Introduza **php** para ativar o acelerador PHP-FPM e **phpcgi** para o desativar.|
-|app.engine.version|Permite definir [a versão de PHP](#php-versions) utilizada pelo alojamento entre [as que a OVHcloud propõe](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/){.external}. Insira a versão da sua escolha (adequada ao ambiente de execução que escolheu utilizar).|
+|app.engine.version|Permite definir [a versão de PHP](#php-versions) utilizada pelo alojamento entre [as que a OVHcloud propõe](/links/web/hosting-programming-language){.external}. Insira a versão da sua escolha (adequada ao ambiente de execução que escolheu utilizar).|
 |http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/options/){.external}. Introduza **security** para a ativar ou **none** para a desativar.|
 |environment|Permite gerir o comportamento da cache dos ficheiros estáticos do seu website, assim como o tratamento dos erros PHP. Corresponde a [modo de execução](#runtime-mod). Insira **production** para maximizar a colocação em cache e ocultar os erros PHP ou **development** para que nenhuma cache seja aplicada e que os erros PHP sejam apresentados.|
 |container.image|Permite alterar [o ambiente de execução](#runtime-environment) utilizado pelo alojamento. Indique o ambiente de execução (**legacy**,**stable** ou **stable64**) à sua escolha. Se escolher o ambiente de execução **stable64**, verifique se o seu site é compatível com a arquitetura de 64 bits.|

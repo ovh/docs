@@ -102,7 +102,7 @@ Para mais informações sobre a gestão das bases de dados e sobre a ligação �
 
 ### PHP
 
-Recomendamos que consulte as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/) para se certificar de que a oferta de alojamento web que deseja encomendar se adapta às suas necessidades.
+Recomendamos que consulte as nossas [ofertas de alojamento web](/links/web/hosting-programming-language) para se certificar de que a oferta de alojamento web que deseja encomendar se adapta às suas necessidades.
 
 > [!warning]
 >

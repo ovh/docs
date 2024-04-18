@@ -102,7 +102,7 @@ Per maggiori informazioni sulla gestione dei database e la connessione all'inter
 
 ### PHP
 
-Ti consigliamo di consultare le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/) per assicurarti che l’offerta di hosting Web che vuoi ordinare si adatti alle tue necessità.
+Ti consigliamo di consultare le nostre [offerte di hosting Web](/links/web/hosting-programming-language) per assicurarti che l’offerta di hosting Web che vuoi ordinare si adatti alle tue necessità.
 
 > [!warning]
 >

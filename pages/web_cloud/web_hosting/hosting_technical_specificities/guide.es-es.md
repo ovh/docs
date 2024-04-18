@@ -102,7 +102,7 @@ Para más información sobre la gestión de las bases de datos y la conexión a 
 
 ### PHP
 
-Le recomendamos que consulte nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/) para asegurarse de que el plan de hosting que desea contratar se ajusta a sus necesidades.
+Le recomendamos que consulte nuestros [planes de hosting](/links/web/hosting-programming-language) para asegurarse de que el plan de hosting que desea contratar se ajusta a sus necesidades.
 
 > [!warning]
 >

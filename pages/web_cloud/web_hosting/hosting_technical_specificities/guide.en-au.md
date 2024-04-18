@@ -98,7 +98,7 @@ For more information on database management and connections to the *phpMyAdmin* 
 
 ### PHP
 
-We recommend referring to our [Web Hosting plans](https://www.ovhcloud.com/en-au/web-hosting/uc-programming-language/) to ensure that the Web Hosting plan you want to order is right for you.
+We recommend referring to our [Web Hosting plans](/links/web/hosting-programming-language) to ensure that the Web Hosting plan you want to order is right for you.
 
 > [!warning]
 >
