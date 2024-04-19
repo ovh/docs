@@ -37,7 +37,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 ### Step 1: Access multisite management <a name="multisite-menu"></a>
 
-First, log in to the [OVHcloud Control Panel](	/links/manager){.external} and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, select the plan concerned, then choose the `Multisite`{.action} tab.
+First, log in to the [OVHcloud Control Panel](/links/manager){.external} and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, select the plan concerned, then choose the `Multisite`{.action} tab.
 
 The table displayed will list all of the domain names and subdomains added to your Web Hosting plan. Some of these will have been created automatically, when your hosting was set up.
 
