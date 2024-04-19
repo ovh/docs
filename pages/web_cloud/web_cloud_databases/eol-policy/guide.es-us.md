@@ -19,7 +19,7 @@ Tener al menos una de las 3 ofertas siguientes:
 
 - Una de las bases de datos incluidas con un [alojamiento web](/links/web/hosting).
 - Una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) {.external} (incluida en un [plan de hosting Performance](/links/web/hosting)).
-- Un pack de bases de datos [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/).
+- Un pack de bases de datos [Start SQL](/links/web/hosting-options-startsql).
 
 ## Procedimiento
 

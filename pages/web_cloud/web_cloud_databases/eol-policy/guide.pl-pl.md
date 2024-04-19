@@ -19,7 +19,7 @@ Posiadanie co najmniej jednej z 3 poniższych ofert:
 
 - Jedna z baz danych zawartych w ofercie [Hosting WWW](/links/web/hosting).
 - Jedna [instancja Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze [Hosting www Performance](/links/web/hosting).
-- Pakiet bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
+- Pakiet bazy danych [Start SQL](/links/web/hosting-options-startsql).
 
 ## W praktyce
 

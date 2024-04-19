@@ -19,7 +19,7 @@ Almeno una delle 3 offerte seguenti:
 
 - Uno dei database inclusi con un [Hosting Web](/links/web/hosting).
 - Una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di [Hosting Performance](/links/web/hosting).
-- Pack di database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/).
+- Pack di database [Start SQL](/links/web/hosting-options-startsql).
 
 ## Procedura
 
