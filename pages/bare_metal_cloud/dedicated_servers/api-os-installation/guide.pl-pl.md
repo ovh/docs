@@ -82,6 +82,11 @@ You can find interesting information such as the following:
 
 Some OSs can have a list of specific questions. If that is the case, the `inputs` key contains a list of questions.
 
+> [!api]
+>
+> @api {v1} /dedicated/installationTemplate GET  /dedicated/installationTemplate/{templateName}
+>
+
 Example of specific questions for Debian 12 (Bookworm):
 
 ```json
