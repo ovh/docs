@@ -12,15 +12,15 @@ The **CMS** (**C**ontent **M**anagement **S**ystem) Typo3 enables the developmen
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that contains at least one database
-- A [domain name](https://www.ovhcloud.com/en-ie/domains/).
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
+- A [domain name](/links/web/domains).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
 ### Prepare for installation
 
-To install the **Typo3** CMS on your [web hosting](https://www.ovhcloud.com/en-ie/web-hosting/), you will need to make some preparations.
+To install the **Typo3** CMS on your [web hosting](/links/web/hosting), you will need to make some preparations.
 
 Follow the **full set of steps** described in our tutorial on [installing a CMS manually](/pages/web_cloud/web_hosting/cms_manual_installation) before continuing on to the next step.
 
@@ -98,6 +98,6 @@ You have just manually installed CMS Typo3 on your OVHcloud web hosting plan. Af
 
 [Creating a database on your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
  
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
 Join our community of users on <https://community.ovh.com/en/>.

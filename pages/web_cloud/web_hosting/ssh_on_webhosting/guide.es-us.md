@@ -16,25 +16,25 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) con acceso SSH.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting) con acceso SSH.
 - Disponer de las claves necesarias para conectarse por SSH al espacio de almacenamiento.
-- Conectarse al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `WebCloud`{.action}.
+- Conectarse al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `WebCloud`{.action}.
 
 > [!warning]
 > 
-> Es posible acceder por SSH a un alojamiento web de OVHcloud desde [el plan Pro](https://www.ovhcloud.com/es/web-hosting/compare/).
+> Es posible acceder por SSH a un alojamiento web de OVHcloud desde [el plan Pro](/links/web/hosting-compare).
 
 ## Procedimiento
 
 ### 1\. Comprobar que el acceso SSH está activo <a name="sshcheck"></a>
 
-En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento. 
+En primer lugar, conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento. 
 
 En la columna «SSH» podrá consultar si el usuario SSH (o «Login SSH») dispone de un acceso SSH activo. En caso de que no esté activado, aparecerá la mención «Desactivado».
 
 ![usessh](images/tab-ssh.png){.thumbnail}
 
-Para activarlo, haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar`{.action}. Aparecerá una ventana en la que podrá activar el acceso SSH. Si no tiene la opción de activarlo, asegúrese de que su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) dispone de un acceso SSH.
+Para activarlo, haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar`{.action}. Aparecerá una ventana en la que podrá activar el acceso SSH. Si no tiene la opción de activarlo, asegúrese de que su [plan de hosting de OVHcloud](/links/web/hosting) dispone de un acceso SSH.
 
 ### 2\. Obtener los datos de conexión <a name="sshlogin"></a>
 
@@ -123,8 +123,8 @@ Según la versión de PHP que utilice, es posible que tenga que modificar el ent
 
 [Web hosting : entorno, versión PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

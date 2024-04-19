@@ -23,8 +23,8 @@ Los planes de hosting de OVHcloud incluyen un espacio de almacenamiento en el qu
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} (salvo el hosting [Cloud Web](https://www.ovhcloud.com/es/web-hosting/cloud-web-offer/)).
-- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
+- Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting){.external} (salvo el hosting [Cloud Web](/links/web/hosting-cloud-web-offer)).
+- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](/links/manager){.external} o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
 
 ## Procedimiento
 
@@ -52,7 +52,7 @@ Asimismo, deberá decidir el método de restauración que quiera utilizar:
 >
 > Esto se debe a que nuestros robots instalan la copia de seguridad en su alojamiento antes de borrar el contenido FTP que será reemplazado por la restauración.
 >
-> Para comprobar la cuota utilizada en su alojamiento web, inicie sesión en su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Vaya a la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. A continuación, elija el nombre del alojamiento en cuestión. 
+> Para comprobar la cuota utilizada en su alojamiento web, inicie sesión en su [área de cliente OVHcloud](/links/manager). Vaya a la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. A continuación, elija el nombre del alojamiento en cuestión. 
 >
 > La cuota utilizada aparece en la página que aparece:
 >
@@ -83,11 +83,11 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > En este caso:
 >
 > - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
-> - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
+> - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](/links/manager){.external}. En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
 > - Los sitios web alojados muestran una página "403 Forbidden".
 >
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Restaurar una copia de seguridad`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Restaurar una copia de seguridad`{.action}.
 
 ![backup ftp](images/restore-backup.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Haga clic en `Aceptar`{.action} para restaurar la copia de seguridad.
 
 > [!primary]
 >
-> La restauración automática puede tardar desde unos minutos hasta unas horas. Si dura **más de 24 horas**, contacte con [el soporte de OVHcloud](https://www.ovhcloud.com/es/support-levels/).
+> La restauración automática puede tardar desde unos minutos hasta unas horas. Si dura **más de 24 horas**, contacte con [el soporte de OVHcloud](/links/support).
 >
 
 ### Restaurar un archivo desde un programa o una interfaz web <a name="viainterface"></a>
@@ -131,7 +131,7 @@ En primer lugar, debe decidir qué programa o interfaz web va a utilizar para co
 
 - **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}. Esta guía no sustituye a la documentación oficial del editor.
 
-- **FTP Explorer**: Puede acceder desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
+- **FTP Explorer**: Puede acceder desde el [área de cliente de OVHcloud](/links/manager){.external}. Para ello, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
 ![backup ftp](images/ftp-explorer.png){.thumbnail}
 
@@ -195,8 +195,8 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 
 [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

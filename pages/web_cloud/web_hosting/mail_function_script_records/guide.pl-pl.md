@@ -14,9 +14,9 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 > [!primary]
 >
-> Niniejszy przewodnik dotyczy przede wszystkim wiadomości e-mail wysyłanych ze skryptów znajdujących się na [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) za pomocą funkcji "mail()" PHP.
+> Niniejszy przewodnik dotyczy przede wszystkim wiadomości e-mail wysyłanych ze skryptów znajdujących się na [hostingu OVHcloud](/links/web/hosting) za pomocą funkcji "mail()" PHP.
 >
-> Jeśli chcesz zarządzać adresami e-mail zawartymi w Twojej usłudze MX Plan lub usłudze[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, zapoznaj się z naszą dokumentacją dotyczącą [E-maili na hostingu - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Jeśli chcesz zarządzać adresami e-mail zawartymi w Twojej usłudze MX Plan lub usłudze[hostingu OVHcloud](/links/web/hosting){.external}, zapoznaj się z naszą dokumentacją dotyczącą [E-maili na hostingu - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -28,16 +28,16 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie oferty [hostingu OVHcloud](/links/web/hosting){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
-Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu się przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
+Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](/links/manager){.external}. Po zalogowaniu się przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-Wyświetli się strona, na której możesz monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
+Wyświetli się strona, na której możesz monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z [hostingu OVHcloud](/links/web/hosting).
 
 ### Prezentacja części "Skrypty e-mail"
 
@@ -106,7 +106,7 @@ Stan ten występuje, gdy:
 
 - zbyt dużo e-maili zostało wysłanych bardzo szybko;
 - zbyt dużo e-maili zwróconych w błąd;
-- samodzielnie wyłączyłeś funkcję z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- samodzielnie wyłączyłeś funkcję z [Panelu klienta OVHcloud](/links/manager).
 
 Aby odblokować sytuację, przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
@@ -189,14 +189,14 @@ Nasza usługa anty-spamowa będzie analizować sytuację, a nasz dział wsparcia
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji następną część, która pomoże Ci w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
+> Oddajemy do Twojej dyspozycji następną część, która pomoże Ci w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
 >
 
 Mimo że rekomendujemy korzystanie z funkcji "mail()" PHP, hosting współdzielony umożliwia wysyłanie e-maili przy użyciu skryptu SMTP (Simple Mail Transfer Protocol). Całkowity rozmiar wiadomości e-mail nie może przekroczyć **10 MB** (tj. **7/8 MB bez kapsułek**).
 
 > [!warning]
 > 
-> E-maile wysyłane za pomocą skryptu wykorzystującego konfigurację SMTP nie mogą być zarządzane i monitorowane za pomocą [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> E-maile wysyłane za pomocą skryptu wykorzystującego konfigurację SMTP nie mogą być zarządzane i monitorowane za pomocą [Panelu klienta OVHcloud](/links/manager).
 > 
 
 W tym celu możesz użyć następującego skryptu, zastępując jedynie wartości `Host`, `Username` i `Password` własnymi ustawieniami SMTP:
@@ -223,8 +223,8 @@ $mail->Password = "YourEmailPassword";
 
 [Przywracanie przestrzeni dyskowej FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

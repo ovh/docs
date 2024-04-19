@@ -16,12 +16,12 @@ Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [edytora CMS Joomla!](https://www.joomla.org/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS Joomla!](https://www.joomla.org/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
 > [!success]
 >
-> Do zainstalowania Joomla! **automatycznie** w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) sprawdź naszą dokumentację dotyczącą [instalacji modułu "jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Do zainstalowania Joomla! **automatycznie** w [Panelu klienta OVHcloud](/links/manager) sprawdź naszą dokumentację dotyczącą [instalacji modułu "jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Aby zainstalować **ręcznie inny CMS** (WordPress, Drupal, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -30,15 +30,15 @@ Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
   
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Dostęp do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie oferty [hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
+- Posiadanie [domeny](/links/web/domains)
+- Dostęp do[Panelu klienta OVHcloud](/links/manager){.external}
   
 ## W praktyce
 
 ### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
-Instalacja CMS **Joomla!** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/) wymaga przygotowania.
+Instalacja CMS **Joomla!** na Twoim [hostingu](/links/web/hosting) wymaga przygotowania.
 
 Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation) i przejdź do etapu 2 poniżej.
 
@@ -100,7 +100,7 @@ W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapozna
 
 - *Either a password you created or a password provided by your host*: zdefiniowałeś ją podczas tworzenia bazy danych. Możliwe jest również, że w międzyczasie zmieniłeś hasło. Prosimy o jego sprawdzenie.
 
-- *Enter the database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jest on identyczny z nazwą użytkownika bazy danych, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
+- *Enter the database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](/links/manager). Jest on identyczny z nazwą użytkownika bazy danych, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
 
 - *Enter a table prefix or use the randomly generated one*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli korzystasz z bazy danych wykorzystywanej już przez inną stronę WWW, zapoznaj się z **krokiem 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation), aby nie wprowadzić prefiksu tabeli już używanego w Twojej bazie danych.
 
@@ -137,8 +137,8 @@ Instalacja została zakończona, ale w razie potrzeby możesz dodać dodatkowe j
 
 [Oficjalna strona Joomla!](https://joomla.org){.external}
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

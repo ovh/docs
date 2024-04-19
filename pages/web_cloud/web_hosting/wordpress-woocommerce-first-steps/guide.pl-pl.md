@@ -16,13 +16,13 @@ Dowiedz się, jak utworzyć sklep internetowy z rozszerzeniem open source **WooC
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/), [edytora CMS WordPress](https://wordpress.com/support/){.external} lub [edytora WooCommerce](https://woocommerce.com/){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner), [edytora CMS WordPress](https://wordpress.com/support/){.external} lub [edytora WooCommerce](https://woocommerce.com/){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera przynajmniej jedną bazę danych.
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Posiadanie oferty [hostingu](/links/web/hosting), która zawiera przynajmniej jedną bazę danych.
+- Posiadanie [domeny](/links/web/domains)
 - [Instalacja WordPress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) na Twoim hostingu
 
 Jeśli jeszcze tego nie zrobiłeś, zalecamy aktywację HTTPS Twojej strony WWW, zanim przejdziesz do tego tutoriala, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Przejdź na swoją stronę WWW poprzez HTTPS za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)".  
@@ -162,8 +162,8 @@ Kilka przydatnych linków:
 - The [WooCommerce](https://woocommerce.com/){.external}
 - Sklep [Rozszerzenia WooCommerce](https://woocommerce.com/products/){.external}
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

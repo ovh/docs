@@ -27,7 +27,7 @@ Pode criar vários ficheiros ".htaccess" no [espaço FTP](/pages/web_cloud/web_h
 
 ## Requisitos
 
-- Dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um [alojamento partilhado OVHcloud](/links/web/hosting)
 
 ## Instruções
 
@@ -370,6 +370,6 @@ Independentemente da segurança do acesso geral ao alojamento, o ficheiro ".htac
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

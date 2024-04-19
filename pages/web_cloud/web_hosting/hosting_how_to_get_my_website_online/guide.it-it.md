@@ -10,16 +10,16 @@ updated: 2024-03-21
 
 ## Obiettivo
 
-I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}.
+I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale... gli [hosting Web OVHcloud](/links/web/hosting){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Questa guida ti mostra le operazioni da eseguire per mettere online un sito su un hosting Web OVHcloud.** 
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
+- Disporre di un piano di [hosting Web](/links/web/hosting){.external} attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} attivo, che corrisponderà all’indirizzo del sito
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un [dominio](/links/web/domains){.external} attivo, che corrisponderà all’indirizzo del sito
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
@@ -28,7 +28,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 
 Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa fare con il sito Web? Come pubblicarlo? Gli hosting OVHcloud offrono numerose opzioni: 
 
-- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud ["Creare un sito Internet con i moduli in 1 click"](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}. Per maggiori informazioni, consulta la guida ["Installare il proprio sito con i moduli in 1 click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud ["Creare un sito Internet con i moduli in 1 click"](/links/web/hosting-website){.external}. Per maggiori informazioni, consulta la guida ["Installare il proprio sito con i moduli in 1 click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **creare un sito chiavi in mano da installare manualmente**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...) da installare sul proprio hosting Web OVHcloud.
 
@@ -68,7 +68,7 @@ Per accedere allo spazio di storage sono necessari:
 
 Questi dati sono indicati nell’email di conferma dell’installazione dell'hosting Web.
 
-Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}. 
+Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}. 
 
 ![Installazione sito](images/tab-pro.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Una volta recuperati i dati potrai connetterti allo spazio di storage in tre mod
 
 - **software compatibile con il protocollo FTP**: sarà necessario installare sul tuo computer un software compatibile con il protocollo FTP (ad esempio, FileZilla). Per informazioni sul suo utilizzo, contatta l’editor del software scelto.
 
-- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage. Questo tipo di accesso richiede conoscenze avanzate e una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attiva.
+- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage. Questo tipo di accesso richiede conoscenze avanzate e una soluzione di [hosting Web OVHcloud](/links/web/hosting){.external} attiva.
 
 #### 3. Caricare i file
 
@@ -115,9 +115,9 @@ Se stai migrando un sito, contatta il tuo precedente provider per recuperare il 
 
 #### 2. Creare il database in OVHcloud 
 
-Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
+Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](/links/web/hosting){.external} o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
-Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
+Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.
 
 ![Installazione sito](images/tab.png){.thumbnail}
@@ -158,8 +158,8 @@ In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consig
 
 [Modificare la password di un utente FTP ](/pages/web_cloud/web_hosting/ftp_change_password)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

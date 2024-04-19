@@ -14,12 +14,12 @@ This tutorial describes how to use the [Cecil](https://cecil.app){.external} sit
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- Have an [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
+- Have an [OVHcloud web hosting plan](/links/web/hosting) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
 - Be familiar with command line input.
 - You need to have installed and configured the **Cecil** application on your web hosting plan (see our tutorial on [installing and configuring Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil)).
 
@@ -248,8 +248,8 @@ This tutorial shows you an example of how to integrate dynamic data retrieved fr
     - [A list of public APIs](https://github.com/public-api-lists/public-api-lists){.external}
 - [Cecil commands](https://cecil.app/documentation/commands/){.external}
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

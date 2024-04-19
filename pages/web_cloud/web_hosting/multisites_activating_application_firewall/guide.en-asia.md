@@ -20,13 +20,13 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}
-- at least one [domain name](https://www.ovhcloud.com/asia/domains/){.external} attached to the hosting
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- an [OVHcloud Web Hosting plan](/links/web/hosting){.external}
+- at least one [domain name](/links/web/domains){.external} attached to the hosting
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to `Web Cloud`{.action}. 
+Log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. 
 Click on `Hosting Plans`{.action} and select the plan concerned.
 
 ### Activating the application firewall in PHP configuration
@@ -64,8 +64,8 @@ The table displayed contains all of the domain names that have been added to you
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

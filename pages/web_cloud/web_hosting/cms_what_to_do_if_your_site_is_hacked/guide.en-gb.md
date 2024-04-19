@@ -22,13 +22,13 @@ Hacking can occur in several ways (non-exhaustive list):
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) with your website hosted on it.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud web hosting plan](/links/web/hosting) with your website hosted on it.
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -91,7 +91,7 @@ We also recommend using a [password manager](/pages/account_and_service_manageme
 
 > [!warning]
 >
-> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) in cyber security.
+> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](/links/partner) in cyber security.
 >
 
 Use our guide to [your web hosting plan’s statistics and logs](/pages/web_cloud/web_hosting/logs_and_statistics) to search for malicious elements injected into your website. You can find the information in the web logs. 
@@ -145,7 +145,7 @@ Make the restore dates for your FTP storage space and SQL database coincide as m
 > OVHcloud has security robots that can detect malicious actions originating from your hosting. They will deactivate your hosting plan and notify you via email that your hosting plan has been deactivated.
 > In addition to this email, a "403 Forbidden" page usually appears when you try to access your website.
 >
-> If your hosting system is in the "disabled" state, the automatic restoration robots available from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) will be disabled as well.
+> If your hosting system is in the "disabled" state, the automatic restoration robots available from your [OVHcloud Control Panel](/links/manager) will be disabled as well.
 > You will need to carry out a “manual” restore of your site, delete the remaining malicious elements, then correct all security vulnerabilities present in this backup. Do this **before** reactivating your hosting.
 >
 > To reactivate the Web Hosting, follow the instructions in step 4 of [this guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).
@@ -216,8 +216,8 @@ Please also refer to our guide on [how to secure your website](/pages/web_cloud/
 
 [Optimise your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

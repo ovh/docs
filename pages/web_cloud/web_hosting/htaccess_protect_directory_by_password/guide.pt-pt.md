@@ -30,7 +30,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter um [serviço de alojamento web](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor de credenciais de acesso ao [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -124,7 +124,7 @@ Substitua apenas `plain_text_password1`, `plain_text_password2` e `plain_text_pa
 > Para mais informações sobre o assumpto, consulte a [documentação oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda em [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) ao seu alojamento web. Desça à "**pasta raiz**" onde está o script "crypt.php".
+Se dispõe de um alojamento [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), aceda em [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) ao seu alojamento web. Desça à "**pasta raiz**" onde está o script "crypt.php".
 
 Para isso, utilize o seguinte comando SSH:
 
@@ -150,7 +150,7 @@ php crypt.php
 
 > [!warning]
 >
-> Por razões de segurança, recomenda-se a utilização de SSH. No entanto, se dispõe de uma oferta **Starter** ou [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) em que o SSH está indisponível, também pode executar o ficheiro "crypt.php" através do seu browser.
+> Por razões de segurança, recomenda-se a utilização de SSH. No entanto, se dispõe de uma oferta **Starter** ou [Perso](/links/web/hosting-personal-offer) em que o SSH está indisponível, também pode executar o ficheiro "crypt.php" através do seu browser.
 >
 > Para isso, introduza o seguinte URL: `https://domain.tld/crypt.php` para alterar o seu `domain.tld`. Isto diretamente na barra de endereço do seu browser.
 >

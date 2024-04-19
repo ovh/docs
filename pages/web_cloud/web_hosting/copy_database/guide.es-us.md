@@ -10,7 +10,7 @@ updated: 2023-11-22
 
 ## Objetivo
 
-Su base de datos es un elemento central en la construcción de su sitio web dinámico. Durante el ciclo de vida de su sitio web, puede que necesite copiar el contenido de su base de datos en otra de sus bases de datos [start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/).
+Su base de datos es un elemento central en la construcción de su sitio web dinámico. Durante el ciclo de vida de su sitio web, puede que necesite copiar el contenido de su base de datos en otra de sus bases de datos [start SQL](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
 
 **Descubra cómo copiar el contenido de una base de datos de OVHcloud en otra base de datos de OVHcloud.**
 
@@ -21,8 +21,8 @@ Su base de datos es un elemento central en la construcción de su sitio web din�
 
 ## Requisitos
 
-- Tener contratadas bases de datos [start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) y/o [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/). Es necesario crear previamente las dos bases de datos para poder utilizar la herramienta de duplicación.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tener contratadas bases de datos [start SQL](/links/web/hosting-options-startsql) y/o [Web Cloud Databases](/links/web/databases). Es necesario crear previamente las dos bases de datos para poder utilizar la herramienta de duplicación.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager)
 - Disponer de los permisos necesarios para todos los servicios de bases de datos afectados. Para más información, consulte nuestra guía [Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## Procedimiento
@@ -37,14 +37,14 @@ Antes de empezar, asegúrese de que:
 
 Esta funcionalidad está disponible para la copia: 
 
-- una base de datos [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) (incluida en algunos de nuestros [alojamientos web](https://www.ovhcloud.com/es/web-hosting/) o [contratada por separado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/);
-- de una base de datos alojada en un servidor [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/) (incluida con nuestros [planes de hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) o [contratada por separado](https://www.ovhcloud.com/es/web-cloud/databases/). 
+- una base de datos [Start SQL](/links/web/hosting-options-startsql) (incluida en algunos de nuestros [alojamientos web](/links/web/hosting) o [contratada por separado](/links/web/hosting-options-startsql);
+- de una base de datos alojada en un servidor [Web Cloud Databases](/links/web/databases) (incluida con nuestros [planes de hosting Performance](/links/web/hosting-performance-offer) o [contratada por separado](/links/web/databases). 
 
 En función de su situación, la ruta de acceso a la base de datos de origen es diferente.
 
 #### Base de datos Start SQL
 
-En su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), seleccione `Web Cloud`{.action} en el menú superior. En la columna izquierda, abra la pestaña `Alojamientos`{.action} y haga clic en el alojamiento web en el que se encuentra la base de datos de origen cuyo contenido desea copiar.
+En su [área de cliente de OVHcloud](/links/manager), seleccione `Web Cloud`{.action} en el menú superior. En la columna izquierda, abra la pestaña `Alojamientos`{.action} y haga clic en el alojamiento web en el que se encuentra la base de datos de origen cuyo contenido desea copiar.
 
 ![Lista de alojamientos](images/web-hosting-selection.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Al hacer clic en la pestaña de `Bases de datos`{.action}, aparecerá la lista d
 
 #### Web Cloud Databases
 
-En su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), seleccione `Web Cloud`{.action} en el menú superior. En la columna izquierda, abra la pestaña `Web Cloud Databases`{.action} y seleccione el servidor Web Cloud Databases en el que se encuentra la base de datos de origen cuyo contenido desea copiar.
+En su [área de cliente de OVHcloud](/links/manager), seleccione `Web Cloud`{.action} en el menú superior. En la columna izquierda, abra la pestaña `Web Cloud Databases`{.action} y seleccione el servidor Web Cloud Databases en el que se encuentra la base de datos de origen cuyo contenido desea copiar.
 
 ![Lista de servidores WCD](images/wcdb-server-selection.png){.thumbnail}
 
@@ -76,11 +76,11 @@ Si no tiene una base de datos destino y como se muestra en la siguiente captura 
 
 ![Lista de bases de datos WCD](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
-Puede elegir entre contratar un servicio "[start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/)" o un servidor de bases de datos "[Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/)".
+Puede elegir entre contratar un servicio "[start SQL](/links/web/hosting-options-startsql)" o un servidor de bases de datos "[Web Cloud Databases](/links/web/databases)".
 
 > [!primary]
 >
-> La nueva base de datos no está activada de forma predeterminada cuando la adquiere. No olvide activarlo. Para ello, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}.
+> La nueva base de datos no está activada de forma predeterminada cuando la adquiere. No olvide activarlo. Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 > 
 > - Para una base de datos Shared SQL, siga nuestra guía "[Crear una base de datos en un alojamiento web](/pages/web_cloud/web_hosting/sql_create_database)";
 > - Para una base de datos que estará presente en un servidor Web Cloud Databases, siga nuestra guía "[Crear una base de datos en un servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
@@ -158,8 +158,8 @@ Puede haber problemas durante el proceso de copia del contenido de la base de da
 Esta notificación significa que sólo tiene una base de datos activa. Para copiar la base de datos de origen, también necesita una base de datos de destino activa. Para ello, puede:
 
 - Configurar una nueva base de datos disponible en su alojamiento web;
-- Configurar una nueva base de datos en su servidor [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/);
-- Contratar un servicio "[start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/)" o un servidor de bases de datos "[Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/)"
+- Configurar una nueva base de datos en su servidor [Web Cloud Databases](/links/web/databases);
+- Contratar un servicio "[start SQL](/links/web/hosting-options-startsql)" o un servidor de bases de datos "[Web Cloud Databases](/links/web/databases)"
 
 #### Ya tiene una acción en curso
 
@@ -169,8 +169,8 @@ Este mensaje indica que ya hay una tarea en curso en la base de datos. Acceda a 
 
 No hay suficiente espacio en la base de datos de destino. Puede elegir entre dos soluciones:
 
-- Contratar una nueva base de datos [start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) con más espacio.
-- Si tiene un servidor [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/), cambie a una solución Web Cloud Databases con más espacio de almacenamiento.
+- Contratar una nueva base de datos [start SQL](/links/web/hosting-options-startsql) con más espacio.
+- Si tiene un servidor [Web Cloud Databases](/links/web/databases), cambie a una solución Web Cloud Databases con más espacio de almacenamiento.
 
 #### Las bases de datos de origen y de destino no son compatibles
 
@@ -190,8 +190,8 @@ Por ejemplo, este error puede producirse al utilizar MySQL para la base de datos
 
 [Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

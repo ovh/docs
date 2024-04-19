@@ -26,12 +26,12 @@ Para descargar Cyberduck, acceda al [sitio web oficial](https://cyberduck.io/) d
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
 
-- Tener contratado un plan de hosting [web hosting](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener contratado un plan de hosting [web hosting](/links/web/hosting){.external}.
 - Haber descargado e instalado la aplicación Cyberduck en su ordenador.
 
 ## Procedimiento
@@ -232,6 +232,6 @@ Para comprobar que la reapertura es efectiva, inicie sesión en su sitio web des
 
 [Tutorial - Utilizar FileZilla con el alojamiento de OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

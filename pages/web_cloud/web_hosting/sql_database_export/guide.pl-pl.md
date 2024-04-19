@@ -16,21 +16,21 @@ Bazy danych są używane przez większość stron WWW i serwerów **C**ontent **
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
+- Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVHcloud](/links/web/hosting){.external}
+- W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](/links/manager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
 ## W praktyce
 
 Przed rozpoczęciem określ metodę, której będziesz używać do pobierania kopii zapasowej bazy danych. Masz kilka możliwości:
 
-- **Użycie narzędzia OVHcloud do tworzenia kopii zapasowych** : rozwiązanie to umożliwia pobranie kopii zapasowych baz danych z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Metoda ta nie wymaga specjalnych umiejętności technicznych.
+- **Użycie narzędzia OVHcloud do tworzenia kopii zapasowych** : rozwiązanie to umożliwia pobranie kopii zapasowych baz danych z poziomu [Panelu klienta OVHcloud](/links/manager){.external}. Metoda ta nie wymaga specjalnych umiejętności technicznych.
 
 - **Wykonanie kopii zapasowej w interfejsie phpMyAdmin** : przed operacją należy zalogować się do interfejsu *phpMyAdmin*. Wymaga to pełnej kontroli nad interfejsem *phpMyAdmin*.
 
 - **Użycie skryptu do tworzenia kopii zapasowych** : przed wykonaniem kopii zapasowej należy utworzyć skrypt zarejestrowany na Twoim hostingu OVHcloud. Potrzebna jest szczególna wiedza na ten temat.
 
-- **Wykonanie kopii zapasowej przy użyciu komendy SSH** : metoda ta wymaga zalogowania się do przestrzeni dyskowej FTP przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z przestrzenią dyskową FTP. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- **Wykonanie kopii zapasowej przy użyciu komendy SSH** : metoda ta wymaga zalogowania się do przestrzeni dyskowej FTP przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z przestrzenią dyskową FTP. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](/links/web/hosting){.external}.
 
 > [!success]
 >
@@ -45,12 +45,12 @@ Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz trudności, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ### Pobierz kopię zapasową, korzystając z narzędzia OVHcloud
 
-Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Aby uzyskać dostęp do narzędzia do tworzenia kopii zapasowych OVHcloud, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz wybrać jedną z dwóch dostępnych metod tworzenia nowej kopii zapasowej lub odzyskania kopii już istniejącej.
 
@@ -80,7 +80,7 @@ Aby pobrać kopię zapasową, kliknij przycisk `...`{.action} po prawej stronie 
 
 ### Pobierz kopię zapasową, używając interfejsu phpMyAdmin
 
-Aby przeprowadzić operację, zaloguj się do *phpMyAdmin*. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Aby przeprowadzić operację, zaloguj się do *phpMyAdmin*. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij przycisk`...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Dostęp do phpMyAdmin`{.action}.
 
@@ -94,7 +94,7 @@ Po zalogowaniu się do *phpMyAdmin* wprowadź informacje dotyczące bazy danych,
 
 > [!warning]
 >
-> Interfejs *phpMyAdmin* nie został utworzony przez OVHcloud, należy więc wykonać operację, bazując na własnej wiedzy. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i/lub skontaktowanie się ze stroną lub wydawcą interfejsu. Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
+> Interfejs *phpMyAdmin* nie został utworzony przez OVHcloud, należy więc wykonać operację, bazując na własnej wiedzy. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) i/lub skontaktowanie się ze stroną lub wydawcą interfejsu. Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 >
 
 ### Pobierz kopię zapasową, używając skryptu
@@ -103,7 +103,7 @@ Operacja składa się z kilku etapów. Upewnij się, czy posiadasz informacje po
 
 > [!warning]
 >
-> Rozwiązanie to wymaga umiejętności programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
+> Rozwiązanie to wymaga umiejętności programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 >
 
 ### Etap 1: utwórz skrypt kopii zapasowej
@@ -155,7 +155,7 @@ Aby przeprowadzić operację, wpisz odpowiednie komendy w terminalu, aby połąc
 
 > [!warning]
 >
-> Aby korzystać z tego typu dostępu, konieczna jest zaawansowana wiedza techniczna. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania, jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
+> Aby korzystać z tego typu dostępu, konieczna jest zaawansowana wiedza techniczna. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania, jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 >
 
 Po zalogowaniu się do przestrzeni dyskowej FTP za pomocą SSH, wprowadź komendę pozwalającą na utworzenie kopii zapasowej bazy danych. Poniżej przykład komendy, która może być pomocna w przeprowadzanej przez Ciebie operacji. Pamiętaj, że kopia zapasowa zostanie zapisana w aktywnym katalogu w momencie, gdy wyślesz komendę do terminala.
@@ -178,8 +178,8 @@ Zastąp informacje ogólne dotyczące tego polecenia informacjami dotyczącymi o
 
 [Tutorial - Co zrobić, gdy baza danych jest zapełniona?](/pages/web_cloud/web_hosting/sql_overquota_database)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

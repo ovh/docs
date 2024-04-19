@@ -29,7 +29,7 @@ Verwenden Sie hierzu zwei Apache-Konfigurationsdateien (HTTP), die im [FTP-Berei
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 - Sie verfügen über die Zugangsdaten zum [FTP-Bereich Ihres Hostings](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -123,7 +123,7 @@ Ersetzen Sie `plain_text_password1`, `plain_text_password2` und `plain_text_pass
 > Weitere Informationen zum Thema finden Sie in der [offiziellen Apache Dokumentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Wenn Sie über ein Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder Webhosting [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, loggen Sie sich über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) in Ihr Webhosting ein. Wechseln Sie zum "**Wurzelverzeichnis**", in dem sich Ihr Skript "crypt.php" befindet.
+Wenn Sie über ein Webhosting [Pro](/links/web/hosting-professional-offer) oder Webhosting [Performance](/links/web/hosting-performance-offer) verfügen, loggen Sie sich über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) in Ihr Webhosting ein. Wechseln Sie zum "**Wurzelverzeichnis**", in dem sich Ihr Skript "crypt.php" befindet.
 
 Verwenden Sie hierzu folgenden Befehl:
 
@@ -149,7 +149,7 @@ php crypt.php
 
 > [!warning]
 >
-> Die Verwendung von SSH wird aus Sicherheitsgründen empfohlen. Wenn es sich bei Ihrem Hosting jedoch um ein **Starter** oder ein [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Webhosting handelt, ist SSH nicht verfügbar. Sie können dann die Datei "crypt.php" über Ihren Browser ausführen.
+> Die Verwendung von SSH wird aus Sicherheitsgründen empfohlen. Wenn es sich bei Ihrem Hosting jedoch um ein **Starter** oder ein [Basic](/links/web/hosting-personal-offer) Webhosting handelt, ist SSH nicht verfügbar. Sie können dann die Datei "crypt.php" über Ihren Browser ausführen.
 >
 > Geben Sie hierzu die URL `https://domain.tld/crypt.php` ein und ersetzen Sie `domain.tld` mit Ihrem Hosting-Domainnamen in der Adresszeile Ihres Browsers.
 >

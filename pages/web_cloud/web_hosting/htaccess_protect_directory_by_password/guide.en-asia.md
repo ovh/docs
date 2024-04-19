@@ -26,7 +26,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - The login details to access [your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
@@ -120,7 +120,7 @@ Replace `plain_text_password1`, `plain_text_password2` and `plain_text_password3
 > For more information on this subject, see the [official Apache documentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-If you have a [Pro](https://www.ovhcloud.com/asia/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/asia/web-hosting/performance-offer/) hosting plan, then log in with [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) to your web hosting. Go to the **root folder** where your script “crypt.php” is located.
+If you have a [Pro](/links/web/hosting-professional-offer) or [Performance](/links/web/hosting-performance-offer) hosting plan, then log in with [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) to your web hosting. Go to the **root folder** where your script “crypt.php” is located.
 
 To do this, use the following command:
 
@@ -146,7 +146,7 @@ php crypt.php
 
 > [!warning]
 >
-> For security reasons, SSH is recommended. However, if you have a [Personal](https://www.ovhcloud.com/asia/web-hosting/personal-offer/) hosting plan where SSH is unavailable, you can also run the "crypt.php" file via your web browser.
+> For security reasons, SSH is recommended. However, if you have a [Personal](/links/web/hosting-personal-offer) hosting plan where SSH is unavailable, you can also run the "crypt.php" file via your web browser.
 >
 > To do this, enter the URL `https://domain.tld/crypt.php` and replace `domain.tld` by your own domain name. This is done directly in the address bar of your web browser.
 >

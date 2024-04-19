@@ -10,15 +10,15 @@ updated: 2024-02-26
 
 ## Objetivo
 
-Los planes de hosting de OVHcloud le permiten disfrutar de un [certificado SSL](https://www.ovhcloud.com/es/web-hosting/options/ssl/). Este último permite que uno o varios de sus sitios web dispongan de una conexión segura, por lo que es posible acceder a ellos mediante el protocolo *HTTPS*. Para ello, es necesario realizar diversas acciones antes de que los sitios web puedan utilizar esta conexión segura.
+Los planes de hosting de OVHcloud le permiten disfrutar de un [certificado SSL](/links/web/hosting-options-ssl). Este último permite que uno o varios de sus sitios web dispongan de una conexión segura, por lo que es posible acceder a ellos mediante el protocolo *HTTPS*. Para ello, es necesario realizar diversas acciones antes de que los sitios web puedan utilizar esta conexión segura.
 
 **Decubra cómo activar un certificado SSL en un sitio web HTTPS.**
 
 ## Requisitos
 
-- Tener un [certificado SSL](https://www.ovhcloud.com/es/web-hosting/options/ssl/){.external} instalado en su [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Tener un [certificado SSL](/links/web/hosting-options-ssl){.external} instalado en su [alojamiento web de OVHcloud](/links/web/hosting){.external}.
 - Tener al menos un sitio web instalado y accesible en su alojamiento web de OVHcloud.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, parte `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
 
 ## Procedimiento
 
@@ -41,7 +41,7 @@ Cada vez es más fácil ver si un sitio web dispone o no de una conexión segura
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 >
 
 A continuación le ofrecemos los Etapas principales para activar el protocolo HTTPS en su sitio web:
@@ -59,7 +59,7 @@ Para activar un certificado SSL en un alojamiento web o comprobar que ya hay un 
 
 Antes de realizar cualquier cambio en la configuración de su sitio web, asegúrese previamente de que este está listo para utilizar el protocolo *HTTPS* correctamente. No existe un procedimiento universal, ya que depende del sitio web que utilice.
 
-Por lo tanto, la siguiente información es genérica. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+Por lo tanto, la siguiente información es genérica. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner).
 
 #### 2.1 - Evite mezclar contenido HTTP y HTTPS
 
@@ -104,7 +104,7 @@ Una vez que el alojamiento web disponga de un certificado SSL activo, que el [mu
 >
 > Antes de realizar cualquier operación, le recomendamos que guarde una copia de seguridad completa del sitio web. Esta copia de seguridad debe contener no solo los archivos presentes en el [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup), sino también los de [la base de datos](/pages/web_cloud/web_hosting/sql_database_export) si el sitio web utiliza una.
 >
-> En efecto, a partir de este paso, deberá realizar las acciones directamente desde los archivos que componen su sitio web. No dude en contactar con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) si tiene alguna dificultad.
+> En efecto, a partir de este paso, deberá realizar las acciones directamente desde los archivos que componen su sitio web. No dude en contactar con un [proveedor especializado](/links/partner) si tiene alguna dificultad.
 >
 
 Existen múltiples formas de activar el protocolo *HTTPS* en su sitio web. Para ello, deberá realizar determinadas acciones en la configuración del sitio web que utilice. La información que se indica a continuación puede servir de ayuda, pero puede que no sea completa o no se aplique a su caso particular.
@@ -153,8 +153,8 @@ Si su sitio web se muestra correctamente y no aparece ninguna advertencia despu�
 
 [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

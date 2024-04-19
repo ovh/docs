@@ -16,15 +16,15 @@ A partir de **CMS** (**C**ontent **M**anagement **S**ystem), o Pico permite a cr
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
-- Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
+- Dispor de um [domínio](/links/web/domains).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Preparar a instalação
 
-Para instalar o CMS **Pico** no seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), são necessários alguns preparativos.
+Para instalar o CMS **Pico** no seu [alojamento web](/links/web/hosting), são necessários alguns preparativos.
 
 Siga o **conjunto de passos** descritos no nosso tutorial de [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation) antes de avançar para o passo seguinte.
 
@@ -118,6 +118,6 @@ Acaba de instalar manualmente o CMS Pico no seu alojamento web da OVHcloud. Depo
 
 [Tutorial - Instalar manualmente um CMS no meu alojamento](/pages/web_cloud/web_hosting/cms_manual_installation)
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

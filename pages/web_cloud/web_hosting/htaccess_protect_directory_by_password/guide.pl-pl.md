@@ -30,7 +30,7 @@ Używając dwóch plików konfiguracyjnych (HTTP) Apache do umieszczenia w [prze
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [hostingu](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie danych do logowania do [przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection)
 
@@ -124,7 +124,7 @@ Zastąp wyłącznie `plain_text_password1`, `plain_text_password2` i `plain_text
 > Więcej informacji na ten temat znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Jeśli dysponujesz hostingiem [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), zaloguj się do hostingu za pomocą [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Przejdź do "**katalog główny**", w którym znajduje się Twój skrypt "crypt.php".
+Jeśli dysponujesz hostingiem [Pro](/links/web/hosting-professional-offer) lub [Performance](/links/web/hosting-performance-offer), zaloguj się do hostingu za pomocą [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Przejdź do "**katalog główny**", w którym znajduje się Twój skrypt "crypt.php".
 
 W tym celu użyj następującej komendy SSH:
 
@@ -150,7 +150,7 @@ php crypt.php
 
 > [!warning]
 >
-> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą **Starter** lub [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), dla której SSH jest niedostępny, możesz również uruchomić plik "crypt.php" za pomocą przeglądarki internetowej.
+> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą **Starter** lub [Perso](/links/web/hosting-personal-offer), dla której SSH jest niedostępny, możesz również uruchomić plik "crypt.php" za pomocą przeglądarki internetowej.
 >
 > W tym celu wprowadź następujący adres URL: `https://domain.tld/crypt.php` poprzez modyfikację `domain.tld` przez Twoją własną domenę. Znajduje się to bezpośrednio na pasku adresowym przeglądarki internetowej.
 >

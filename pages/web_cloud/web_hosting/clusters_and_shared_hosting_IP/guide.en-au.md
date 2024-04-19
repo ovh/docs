@@ -12,17 +12,17 @@ It might become necessary to manually adjust the access settings of a service. T
 
 > [!primary]
 >
-> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](https://www.ovhcloud.com/en-au/web-hosting/options/cdn/)).
+> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](/links/web/hosting-options-cdn)).
 > 
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
 ### Cluster 002
@@ -777,8 +777,8 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 [Optimise your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

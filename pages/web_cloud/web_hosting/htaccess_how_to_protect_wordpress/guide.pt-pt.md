@@ -16,14 +16,14 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 >
 
 **Descubra como proteger o seu WordPress com um ou vários ficheiros htaccess.**
 
 ## Requisitos
 
-- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e ter instalado o WordPress.
+- Ter um [alojamento web](/links/web/hosting) e ter instalado o WordPress.
 - Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)".
 
 Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto como:
@@ -40,7 +40,7 @@ Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto
 >
 > Se não utiliza um CMS, a OVHcloud disponibiliza também um tutorial para a [proteção de um diretório ou da interface de administração do seu website através de ficheiros .htaccess](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> Para qualquer questão relativa à criação, utilização ou programação do seu website, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os nossos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/). As equipas de suporte da OVHcloud não poderão ajudá-lo nestas questões.
+> Para qualquer questão relativa à criação, utilização ou programação do seu website, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os nossos [parceiros OVHcloud](/links/partner). As equipas de suporte da OVHcloud não poderão ajudá-lo nestas questões.
 >
 
 ## FAQ
@@ -49,7 +49,7 @@ Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto
 
 Um ficheiro **.htaccess** permite configurar um servidor web. No caso de um alojamento web partilhado, trata-se do servidor web open source "**Apache**". A sintaxe deste ficheiro é definida pelo organismo que edita e mantém **Apache**. Contrariamente à maioria dos ficheiros de configuração de um servidor, os ficheiros **.htaccess** estão localizados nos diretórios dos websites, mais precisamente no espaço de armazenamento FTP do seu alojamento web. Um ficheiro **.htaccess** terá efeitos no diretório no qual está presente, bem como em todos os sub-diretórios presentes no interior.
 
-As nossas ofertas de alojamento partilhado não permitem os ficheiros de configuração do servidor. No entanto, os ficheiros **.htaccess** dão a possibilidade de modificar certas características e comportamentos. Além disso, não é necessário reiniciar o servidor **Apache** para que as indicações e modificações escritas no ficheiro **.htaccess** sejam tomadas em conta. O conjunto das nossas ofertas de [alojamento web partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) permitem configurar ficheiros **.htaccess**.
+As nossas ofertas de alojamento partilhado não permitem os ficheiros de configuração do servidor. No entanto, os ficheiros **.htaccess** dão a possibilidade de modificar certas características e comportamentos. Além disso, não é necessário reiniciar o servidor **Apache** para que as indicações e modificações escritas no ficheiro **.htaccess** sejam tomadas em conta. O conjunto das nossas ofertas de [alojamento web partilhado OVHcloud](/links/web/hosting) permitem configurar ficheiros **.htaccess**.
 
 O ponto em frente ao nome do ficheiro **.htaccess** (que não tem extensão por si) designa um ficheiro escondido. Além disso, estes ficheiros não são acessíveis aos utilizadores externos que acedem ao seu website.
 
@@ -174,8 +174,8 @@ O diretório **wp-admin** permite-lhe ligar-se à sua interface de administraç�
 
 Consulte o [tutorial disponível no site da Fundação Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

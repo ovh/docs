@@ -19,14 +19,14 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further
 ).
 >
 
 ## Voraussetzungen
 
 - Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben die Option [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules) verwendet, um eine neue Website zu erstellen.
 
 ## In der praktischen Anwendung
@@ -40,7 +40,7 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des 1-K
 
 ![domainenotproposed](images/domain-unavailable.png){.thumbnail}
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, das installiert werden soll. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}, und führen Sie dann die folgenden Überprüfungen durch:
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, das installiert werden soll. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}, und führen Sie dann die folgenden Überprüfungen durch:
 
 |Szenario|Lösung|
 |---|---|
@@ -55,9 +55,9 @@ Diese Meldung erscheint, wenn Sie die Installation Ihres 1-Klick-Moduls starten,
 
 #### Lösung 1: Eine neue Datenbank bestellen
 
-Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des 1-Klick-Moduls neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
+Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](/links/web/hosting-options-startsql) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des 1-Klick-Moduls neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](/links/web/databases).
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, für das Sie eine zusätzliche Datenbank hinzufügen möchten. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action} und dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, für das Sie eine zusätzliche Datenbank hinzufügen möchten. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action} und dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
 
 ![order_a_database](images/order-a-db.png){.thumbnail}
 
@@ -65,21 +65,21 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
 > [!primary]
 >
-> Denken Sie daran, sich vorab über unsere Datenbankangebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) zu informieren.
+> Denken Sie daran, sich vorab über unsere Datenbankangebote [Start SQL](/links/web/hosting-options-startsql) und [Web Cloud Databases](/links/web/databases) zu informieren.
 >
 
 #### Lösung 2: Ihr Webhosting Angebot ändern
 
 > [!primary]
 >
-> Vergleich unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/).
+> Vergleich unserer [Webhosting-Angebote](/links/web/hosting).
 >
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:
+Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server aktivieren.
+Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](/links/web/hosting-performance-offer) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
 Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
@@ -87,10 +87,10 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 
 > [!warning]
 >
-> Das Löschen einer Datenbank ist endgültig. Außerdem werden die Backups der betreffenden Datenbank gelöscht. Im Zweifelsfall wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](https://partner.ovhcloud.com/de/directory/).
+> Das Löschen einer Datenbank ist endgültig. Außerdem werden die Backups der betreffenden Datenbank gelöscht. Im Zweifelsfall wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 >
 
-Um eine Datenbank über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu löschen, gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+Um eine Datenbank über Ihr [OVHcloud Kundencenter](/links/manager) zu löschen, gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 
 Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} in der Zeile mit der Datenbank, die Sie löschen möchten, und klicken Sie dann auf `Datenbank löschen`{.action}:
 
@@ -112,7 +112,7 @@ Anschließend können Sie ein neues 1-Klick-Modul installieren.
 >
 > In dieser Situation können Sie die Daten einer Website mit einem [PHP-Skript oder einem SSH-Befehl](/pages/web_cloud/web_hosting/sql_database_export) sichern.
 >
-> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](https://community.ovh.com/en/) oder einen unserer [Partner](https://partner.ovhcloud.com/de/directory/).<br>
+> Bei Fragen zu den durchzuführenden Aktionen wenden Sie sich bitte an die [OVHcloud Community](https://community.ovh.com/en/) oder einen unserer [Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
@@ -130,7 +130,7 @@ Nachdem Sie mit der Erstellung Ihres 1-Klick-Moduls begonnen haben, haben Sie ei
 
 Diese Nachricht bedeutet, dass das Ihrem Domainnamen zugeordnete **Wurzelverzeichnis** bereits eine oder mehrere Dateien oder Ordner enthält.
 
-Um Ihre Domain mit einem anderen Verzeichnis zu verbinden, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts neben der Zeile für Ihren Domainnamen und dann auf `Domain bearbeiten`{.action}. Geben Sie zum Schluss einen Namen für ein neues **Wurzelverzeichnis** ein (ein leeres Verzeichnis wird automatisch auf Ihrem Webhosting erstellt).
+Um Ihre Domain mit einem anderen Verzeichnis zu verbinden, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} rechts neben der Zeile für Ihren Domainnamen und dann auf `Domain bearbeiten`{.action}. Geben Sie zum Schluss einen Namen für ein neues **Wurzelverzeichnis** ein (ein leeres Verzeichnis wird automatisch auf Ihrem Webhosting erstellt).
 
 ![modify_root_folder](images/modify-domain.png){.thumbnail}
 
@@ -158,7 +158,7 @@ In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 > [!primary]
 >
-> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).<br>
+> Wenn Sie Fragen zum Löschen von Daten haben, um die Datenmenge auf Ihrem Webhosting zu reduzieren, wenden Sie sich an unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner).<br>
 > Der OVHcloud Support ist nicht berechtigt, Sie bei diesen Fragen zu unterstützen.
 >
 
@@ -166,14 +166,14 @@ In dieser Situation nutzen Sie [FTP](/pages/web_cloud/web_hosting/ftp_connection
 
 > [!primary]
 >
-> Vergleich unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/).
+> Vergleich unserer [Webhosting-Angebote](/links/web/hosting).
 >
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der Seite im Bereich `Abo` - `Angebot` auf den Button `...`{.action} `Angebot wechseln`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-Die Angebote [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) und [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server aktivieren.
+Die Angebote [Pro](/links/web/hosting-professional-offer) und [Performance](/links/web/hosting-performance-offer) ermöglichen Ihnen die Erstellung von bis zu drei zusätzlichen 1-Klick-Modulen mit einer unabhängigen Datenbank für jedes Modul. Mit den **Performance** Angeboten können Sie auch kostenlos einen [Web Cloud Databases](/links/web/databases) Server aktivieren.
 
 ### „Verbindung zur Datenbank kann nicht hergestellt werden“ <a name="delete-the-module"></a>
 
@@ -183,7 +183,7 @@ Nachdem Sie mit der Installation Ihres 1-Klick-Moduls im fortgeschrittenen Modus
 
 Überprüfen Sie die Login-Daten Ihrer Datenbank. Weitere Informationen finden Sie in [unserer Anleitung](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Löschen Sie anschließend Ihr 1-Klick-Modul. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} in der Zeile für Ihren Domainnamen und dann auf `Das Modul löschen`{.action}.
+Löschen Sie anschließend Ihr 1-Klick-Modul. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie auf der angezeigten Seite auf den Tab `1-Klick-Module`{.action}. Klicken Sie in der angezeigten Tabelle auf den Button `...`{.action} in der Zeile für Ihren Domainnamen und dann auf `Das Modul löschen`{.action}.
 
 ![delete_a_module](images/delete-a-module.png){.thumbnail}
 
@@ -202,7 +202,7 @@ Starten Sie dann die Installation eines neuen 1-Klick-Moduls.
 
 Diese Meldung erscheint nur bei der Installation eines 1-Klick-Moduls im **Erweiterten Modus**. Die Datenbank kann nicht mehr geändert werden, da die Datenmenge in der Datenbank den zulässigen Grenzwert überschreitet. In diesem Fall ist die Datenbank schreibgeschützt gesperrt.
 
-Installieren Sie in dieser Situation Ihr 1-Klick-Modul über den [einfachen Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank. Bei Bedarf können Sie ein [Datenbank-Angebot](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen.
+Installieren Sie in dieser Situation Ihr 1-Klick-Modul über den [einfachen Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank. Bei Bedarf können Sie ein [Datenbank-Angebot](/links/web/hosting-options-startsql) bestellen.
 
 Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestellen möchten, [exportieren Sie eine lokale Kopie Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_database_export), und löschen Sie dann die nicht benötigten Daten.
 
@@ -210,7 +210,7 @@ Wenn Sie keine anderen Datenbanken haben und kein zusätzliches Angebot bestelle
 >
 > **Das Löschen von Elementen aus der Datenbank kann zur Störung der Website führen.**
 >
-> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](https://community.ovh.com/en/) oder an die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).<br>
+> Bei weiteren Fragen wenden Sie sich bitte an unsere [User Community](https://community.ovh.com/en/) oder an die [OVHcloud Partner](/links/partner).<br>
 > Wir können Ihnen in diesem Zusammenhang keine Unterstützung bieten.
 >
 
@@ -230,7 +230,7 @@ Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/we
 
 Sie haben die Installation eines 1-Klick-Moduls im [erweiterten Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules) auf einer Datenbank auf einem [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) Server gestartet. Sie haben diese Fehlermeldung per E-Mail erhalten. Dies bedeutet, dass der eingegebene Name des Datenbankservers falsch ist.
 
-Um den Namen Ihres Datenbankservers zu finden, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den betreffenden Datenbankserver aus.
+Um den Namen Ihres Datenbankservers zu finden, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den betreffenden Datenbankserver aus.
 
 Auf der angezeigten Seite wird der Name des zu verwendenden Servers in der Randleiste `Verbindungsinformationen`, Unterabschnitt `SQL`, unter dem Begriff `Hostname` angezeigt.
 
@@ -284,8 +284,8 @@ Anschließend starten Sie die Installation eines neuen 1-Klick-Moduls.
 
 [Wiederkehrende Probleme bei der Verwendung von FTP-Software](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

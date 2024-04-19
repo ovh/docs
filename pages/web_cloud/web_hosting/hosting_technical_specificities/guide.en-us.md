@@ -12,8 +12,8 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -21,14 +21,14 @@ OVHcloud Web Hosting plans are shared. As a result, the configuration of these s
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 > 
 
 ### FTP
 
 - Use **passive mode** for FTP connections. Make sure that your script or FTP client is configured accordingly.
 
-- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space: Make sure that the access information to your FTP space is correct. To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that opens, click on the `FTP - SSH`{.action} tab.
+- If you encounter the access error "530 login authentication failed" when connecting to your FTP storage space: Make sure that the access information to your FTP space is correct. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that opens, click on the `FTP - SSH`{.action} tab.
 
 It will contain all of the information required to log in to your FTP storage space, with the exception of the password.
 
@@ -62,14 +62,14 @@ In the event of abuse or proven risk, your service may be suspended (in accordan
 
 #### Simultaneous database connections
 
-On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (this limit increases to 200 if you use a [Web Cloud Databases](https://www.ovhcloud.com/en/web-cloud/databases/) offer). See the [details of our Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/) to find out the options available in each Web Hosting plan.
+On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (this limit increases to 200 if you use a [Web Cloud Databases](/links/web/databases) offer). See the [details of our Web Hosting plans](/links/web/hosting) to find out the options available in each Web Hosting plan.
 
-You can also order additional [Web Cloud Databases](https://www.ovhcloud.com/en/web-cloud/databases/) solutions, which have customization options:
+You can also order additional [Web Cloud Databases](/links/web/databases) solutions, which have customization options:
 
 - *max_connections*: 100 by default, with the option of increasing to 200.
 - *max_user_connections*: 50 by default, with the option of increasing to 200.
 
-To find out more, read the details of our [Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/) and our guide “[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
+To find out more, read the details of our [Web Hosting plans](/links/web/hosting) and our guide “[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)”.
 
 #### Connections from an external server
 
@@ -79,7 +79,7 @@ For security reasons, it is not possible to connect from an external server to a
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Only [Web Cloud Databases](https://www.ovhcloud.com/en/web-cloud/databases/) database servers allow external servers to connect to them. This is because you have previously authorized your external server’s IP address on your database server. If necessary, please refer to our guide on "[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+Only [Web Cloud Databases](/links/web/databases) database servers allow external servers to connect to them. This is because you have previously authorized your external server’s IP address on your database server. If necessary, please refer to our guide on "[Getting started with your Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
 #### Shared SQL server variables
 
@@ -98,7 +98,7 @@ For more information on database management and connections to the *phpMyAdmin* 
 
 ### PHP
 
-We recommend referring to our [Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/uc-programming-language/) to ensure that the Web Hosting plan you want to order is right for you.
+We recommend referring to our [Web Hosting plans](/links/web/hosting-programming-language) to ensure that the Web Hosting plan you want to order is right for you.
 
 > [!warning]
 >
@@ -168,7 +168,7 @@ Find out how to [log in to your Web Hosting plan’s FTP storage space](/pages/w
 > OVHcloud provides an automatic data backup service, as well as the provision of these backups. However, this function is *non-contractual* and is provided in addition to your services. It remains your responsibility to set up your own restoration policy, and to determine restore points at times you deem appropriate.
 >
 
-For shared databases (included in your Web Hosting plan) or database servers (Web Cloud Databases) offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. These backups are accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} or via the [OVHcloud API](https://api.ovh.com/). Backups are also stored on another infrastructure. This data is replicated in a data centre in Strasbourg (SBG). The backup retention policy is 30 days.
+For shared databases (included in your Web Hosting plan) or database servers (Web Cloud Databases) offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. These backups are accessible via the [OVHcloud Control Panel](/links/manager){.external} or via the [OVHcloud API](https://api.ovh.com/). Backups are also stored on another infrastructure. This data is replicated in a data centre in Strasbourg (SBG). The backup retention policy is 30 days.
 
 Find out how to [Retrieve a backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export) in our documentation.
 
@@ -227,8 +227,8 @@ In order to be used as part of OVHcloud Web Statistics, the aforementioned data 
 
 [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -46,12 +46,12 @@ Na Twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie [hostingu WWW](/links/web/hosting).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
 
 Wybierz odpowiedni hosting, kliknij zakładkę `Więcej`{.action}, a następnie `Cron`{.action}.
 
@@ -133,7 +133,7 @@ Zawsze korzystaj z bezwzględnych ścieżek dostępu do plików skryptów. Stał
  
 #### Weryfikacja logów wykonawczych
 
-W \[logach] Twojego hostingu WWW, które są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zobaczysz kategorię logów zatytułowaną "CRON".
+W \[logach] Twojego hostingu WWW, które są dostępne w [Panelu klienta OVHcloud](/links/manager){.external}, zobaczysz kategorię logów zatytułowaną "CRON".
 
 Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony zainstalowanej na hostingu"](/pages/web_cloud/web_hosting/logs_and_statistics).
 
@@ -179,8 +179,8 @@ Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony 
 
 [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

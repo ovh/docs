@@ -12,9 +12,9 @@ You can manage an SSL certificate on your web hosting plan. You can either order
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- At least one [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud web hosting plan](/links/web/hosting)
+- At least one [domain name](/links/web/domains)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ You can also [delete the SSL certificate on a web hosting plan](#deletessl). **P
 
 ### 1. Enabling SSL on a multisite <a name="multisite"></a>
 
-Depending on which [SSL certificate](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external} you would like to order, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `Multisite`{.action} tab.
+Depending on which [SSL certificate](/links/web/hosting-options-ssl){.external} you would like to order, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `Multisite`{.action} tab.
 
 The table displayed will contain all of the domain names that have been added to your web hosting plan. In the "SSL" column, you will see the activation status for secure SSL connections on your multisites. 
 
@@ -85,13 +85,13 @@ Before you configure this, make sure that the previous step of [Activating an SS
 >
 > For more details, please refer to our guides [on configuring a multisite record](/pages/web_cloud/web_hosting/multisites_configure_multisite) or [on configuring a DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
-With an OVHcloud web hosting plan, you can choose from a range of [SSL certificate solutions](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external}:
+With an OVHcloud web hosting plan, you can choose from a range of [SSL certificate solutions](/links/web/hosting-options-ssl){.external}:
 
-- A free Let's Encrypt SSL certificate ([included with compatible web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external})
-- A paid SSL certificate ([available as an option with compatible web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/){.external})
+- A free Let's Encrypt SSL certificate ([included with compatible web hosting plans](/links/web/hosting-options-ssl){.external})
+- A paid SSL certificate ([available as an option with compatible web hosting plans](/links/web/hosting-options-ssl){.external})
 - Importing an SSL certificate ordered from another provider
 
-To start activating your certificate, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Beneath "SSL certificate", the word "No" should be visible, showing that no SSL certificates have been set up on your web hosting plan.
+To start activating your certificate, log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Beneath "SSL certificate", the word "No" should be visible, showing that no SSL certificates have been set up on your web hosting plan.
 
 Click on `...`{.action} next to "SSL certificate", then `Order an SSL certificate`{.action}.
 
@@ -99,7 +99,7 @@ If the word "Yes" is visible, an SSL certificate has already been set up on the 
 
 ![managessl](images/order-an-ssl-certificate.png){.thumbnail}
 
-In the window that appears, select the SSL certificate you would like to order. Depending on the [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
+In the window that appears, select the SSL certificate you would like to order. Depending on the [web hosting plan](/links/web/hosting){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
 
 ![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
@@ -119,12 +119,12 @@ Certificate setup may take between several minutes and several days, depending o
 
 > [!primary]
 >
-> This operation only applies to Let's Encrypt free SSL certificates [included with compatible web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/options/ssl/) that enable a secure SSL connection for multiple multisites.
+> This operation only applies to Let's Encrypt free SSL certificates [included with compatible web hosting plans](/links/web/hosting-options-ssl) that enable a secure SSL connection for multiple multisites.
 >
 
 Once you have activated a secure SSL connection across one or more of your multisites, the status will then change to `To generate`. This generation is essential for adding the domain names concerned to the SSL certificate on your web hosting plan. 
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Then click on `...`{.action} next to "SSL certificate", then `Regenerate SSL certificate`{.action}.
+To do this, log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Then click on `...`{.action} next to "SSL certificate", then `Regenerate SSL certificate`{.action}.
 
 ![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
 
@@ -138,9 +138,9 @@ Please note that Let's Encrypt, the authority that delivers the SSL certificate 
 
 You can also delete an SSL certificate that has been set up on your web hosting plan. Before you start making any changes, **we strongly advise ensuring that the certificate deletion will not render your websites inaccessible**. Please keep in mind that your web users will see a security error when they try to access a website that works in HTTPS, but does not have a secure SSL connection. 
 
-Since this verification involves checking your website settings, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
+Since this verification involves checking your website settings, we recommend contacting a [specialist service provider](/links/partner) if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
 
-Once you are ready to delete the SSL certificate, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Then click on `...`{.action} next to "SSL certificate", then `Delete SSL`{.action}.
+Once you are ready to delete the SSL certificate, log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Then click on `...`{.action} next to "SSL certificate", then `Delete SSL`{.action}.
 
 On the page that appears, confirm the deletion. The deletion will take effect within a few hours. 
 
@@ -188,12 +188,12 @@ This message appears in the following cases:
 
 - 1: The redirection rule to your URL in HTTPS is misconfigured or does not exist in the .htaccess file:
 
-To correct this, read our tutorial “[Rewrite the URL for accessing my website using mod_rewrite via the .htaccess file](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)” or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties.
+To correct this, read our tutorial “[Rewrite the URL for accessing my website using mod_rewrite via the .htaccess file](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)” or contact a [specialist provider](/links/partner) if you experience any difficulties.
 
 - 2: Some elements of the web page are not redirected correctly to elements encrypted in HTTPS:
 
 To correct this, you need to ensure that your entire website is accessed via the HTTPS protocol.
-If you need help with this, please refer to our tutorial [web hosting: switching your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website), or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties.
+If you need help with this, please refer to our tutorial [web hosting: switching your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website), or contact a [specialist provider](/links/partner) if you experience any difficulties.
 
 > [!success]
 >
@@ -220,8 +220,8 @@ To edit your domain name’s active DNS zone, please read our guide on [Editing 
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

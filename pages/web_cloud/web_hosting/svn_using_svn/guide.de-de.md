@@ -18,12 +18,12 @@ SVN, die Abkürzung für "Subversion", ist ein Versionsverwaltungssystem.
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „[Weiterführende Informationen](#go-further)" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „[Weiterführende Informationen](#go-further)" dieser Anleitung.
 > 
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) mit SSH (**ab dem Pro Angebot**).
+- Sie verfügen über ein [Webhosting Angebot](/links/web/hosting) mit SSH (**ab dem Pro Angebot**).
 - Sie können sich über SSH mit Ihrem Webhosting verbinden (vgl. unsere Anleitung [SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting)).
 
 ## In der praktischen Anwendung
@@ -142,6 +142,6 @@ svn+ssh://login@ftp.ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 
 [SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

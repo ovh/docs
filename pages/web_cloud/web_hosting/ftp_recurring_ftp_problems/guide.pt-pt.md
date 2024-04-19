@@ -10,7 +10,7 @@ updated: 2022-01-05
 
 ## Objetivo
 
-A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) pode causar várias anomalias. Este guia permitir-lhe-á resolver os problemas mais comuns.
+A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud](/links/web/hosting) pode causar várias anomalias. Este guia permitir-lhe-á resolver os problemas mais comuns.
 
 **Descubra como corrigir os erros relacionados com o software FTP.**
 
@@ -18,13 +18,13 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
 
-- Ter um [serviço de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter um [serviço de alojamento Web Cloud](/links/web/hosting).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -32,15 +32,15 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 
 ![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
 
-Esta mensagem no software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que não ativou a opção SFTP ou SSH a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Assim, as informações trocadas entre o seu servidor de alojamento OVHcloud e o seu computador não serão encriptadas.
+Esta mensagem no software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que não ativou a opção SFTP ou SSH a partir da [Área de Cliente OVHcloud](/links/manager). Assim, as informações trocadas entre o seu servidor de alojamento OVHcloud e o seu computador não serão encriptadas.
 
 Se os dados que deseja trocar por esta via não são confidenciais, clique em `OK`{.action}.
 
-Caso contrário, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action} e, a seguir, clique em `Alojamentos`{.action}. Selecione o alojamento correspondente e escolha o separador `FTP-SSH`{.action}.
+Caso contrário, aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action} e, a seguir, clique em `Alojamentos`{.action}. Selecione o alojamento correspondente e escolha o separador `FTP-SSH`{.action}.
 
-Se dispõe de um alojamento [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), selecione a casa `Desativado`{.action} na coluna `SFTP`{.action} e aguarde alguns minutos.
+Se dispõe de um alojamento [Perso](/links/web/hosting-personal-offer), selecione a casa `Desativado`{.action} na coluna `SFTP`{.action} e aguarde alguns minutos.
 
-Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), clique no botão `...`{.action} à direita do utilizador FTP em causa, depois por `Alterar`{.action}.
+Se dispõe de um alojamento [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), clique no botão `...`{.action} à direita do utilizador FTP em causa, depois por `Alterar`{.action}.
 
 Escolha `SFTP`{.action} ou `Ativado`{.action} (para ativar o protocolo SSH no seu alojamento), clique em `Seguinte`{.action} e depois em `Validar`{.action}. Aguarde alguns minutos.
 
@@ -63,7 +63,7 @@ Se não conseguir autenticar-se, altere a sua palavra-passe FTP de acordo com as
 
 A falta de espaço no seu alojamento partilhado pode provocar disfunções no seu site quando o tenta alterar ou atualizar.
 
-Para verificar o espaço de armazenamento restante no alojamento, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action} e depois em `Alojamentos`{.action}. Selecione o alojamento em causa.
+Para verificar o espaço de armazenamento restante no alojamento, aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action} e depois em `Alojamentos`{.action}. Selecione o alojamento em causa.
 
 A quantidade de dados registada no seu servidor de alojamento (exceto bases de dados) aparece na secção `Informações gerais`{.action} > `Espaço de disco`.
 
@@ -77,7 +77,7 @@ Por exemplo, para o [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_
 
 Limite igualmente o tamanho das suas transferências de dados (não poderá enviar mais de **5000 ficheiros e pastas** para os servidores partilhados OVHcloud numa única transferência). Se necessário, realize as suas importações várias vezes com base em pastas comprimidas.
 
-Se dispõe de uma fórmula [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), utilize de preferência o [protocolo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) para realizar as suas importações de ficheiros no espaço de armazenamento de ficheiros do seu alojamento.
+Se dispõe de uma fórmula [Pro](/links/web/hosting-professional-offer) ou [Performance](/links/web/hosting-performance-offer), utilize de preferência o [protocolo SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) para realizar as suas importações de ficheiros no espaço de armazenamento de ficheiros do seu alojamento.
 
 ### Não consigo eliminar o link simbólico "index.html" no meu espaço FTP
 
@@ -85,14 +85,14 @@ Esta ligação é instalada de forma padrão nos alojamentos partilhados da OVHc
 
 ![site-under-construction](images/site-under-construction.png){.thumbnail}
 
-Se não utilizou a funcionalidade "[Módulo 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar o seu site, deverá utilizar o software [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-ligacao-atraves-de-ftp-explorer) acessível através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para eliminar manualmente a página "Site em construção".
+Se não utilizou a funcionalidade "[Módulo 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar o seu site, deverá utilizar o software [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-ligacao-atraves-de-ftp-explorer) acessível através da [Área de Cliente OVHcloud](/links/manager) para eliminar manualmente a página "Site em construção".
 
 ## Quer saber mais? <a name="go-further"></a>
 
 [Utilização do software FileZilla com o seu alojamento](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

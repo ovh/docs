@@ -24,7 +24,7 @@ Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu ge
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
@@ -37,7 +37,7 @@ Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu ge
 
 #### Wenn die CDN-Option nicht auf Ihrem Webhosting bestellt oder aktiviert wurde
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" danach auf `CDN bestellen`{.action} oder `Option aktivieren`{.action}, wenn die CDN-Option bereits in Ihrem Hosting enthalten ist.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" danach auf `CDN bestellen`{.action} oder `Option aktivieren`{.action}, wenn die CDN-Option bereits in Ihrem Hosting enthalten ist.
 
 > [!primary]
 > 
@@ -49,7 +49,7 @@ Sie werden zum Bestellformular weitergeleitet. Sobald die Bestellung bezahlt wur
 
 #### Wenn die CDN Option bereits für Ihr Webhosting aktiviert ist
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
 
 Haken Sie "CDN aktivieren" an, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
@@ -82,7 +82,7 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 > [!warning]
 > 
-> Einige Optionen sind für das Hosting-Angebot "Basic" nicht verfügbar und erfordern die Aktivierung von [CDN Security](https://www.ovhcloud.com/de/web-hosting/options/cdn/) oder [CDN Advanced](https://www.ovhcloud.com/de/web-hosting/options/cdn/).
+> Einige Optionen sind für das Hosting-Angebot "Basic" nicht verfügbar und erfordern die Aktivierung von [CDN Security](/links/web/hosting-options-cdn) oder [CDN Advanced](/links/web/hosting-options-cdn).
 
 ![CDN](images/sharedcdn-modify-cdn.png){.thumbnail}
 
@@ -126,14 +126,14 @@ Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration 
 
 > [!warning]
 >
-> Um eine höhere Quota an Regeln und zusätzliche Einstellungen für die Erstellung von Cache-Regeln zu erhalten, können Sie sich für die [CDN Advanced Option](https://www.ovhcloud.com/de/web-hosting/options/cdn/) entscheiden.
+> Um eine höhere Quota an Regeln und zusätzliche Einstellungen für die Erstellung von Cache-Regeln zu erhalten, können Sie sich für die [CDN Advanced Option](/links/web/hosting-options-cdn) entscheiden.
 
 #### CDN Security Optionen konfigurieren
 
 Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann `CDN bearbeiten`{.action}. 
 
 > [!primary]
->  Für die unten aufgeführten Optionen ist [CDN Security](https://www.ovhcloud.com/de/web-hosting/options/cdn/) oder [CDN Advanced](https://www.ovhcloud.com/de/web-hosting/options/cdn/) erforderlich.
+>  Für die unten aufgeführten Optionen ist [CDN Security](/links/web/hosting-options-cdn) oder [CDN Advanced](/links/web/hosting-options-cdn) erforderlich.
 
 - **Cross-Origin Resource Sharing (CORS)**: Geben Sie in der Liste die externen Domainnamen an, die auf die Ressourcen Ihrer Website zugreifen dürfen.
 
@@ -181,7 +181,7 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 > [!primary]
 >
->  Die unten aufgeführten Optionen erfordern das Abo eines [CDN Advanced](https://www.ovhcloud.com/de/web-hosting/options/cdn/).
+>  Die unten aufgeführten Optionen erfordern das Abo eines [CDN Advanced](/links/web/hosting-options-cdn).
 
 - **Geolocation HTTP Header**: Bestimmen Sie das Land des Besuchers, um die Ausgabe entsprechend anzupassen. Der Ländercode wird automatisch im Header jeder Anfrage hinzugefügt, um von Ihrem Original-Server bearbeitet zu werden. Die Identifikationselemente im Header werden unter den Bezeichnungen `Geo-Country-Code`, `Geo-Country-Name`, `Geo-Region`, `Geo-City` angegeben.
 
@@ -289,7 +289,7 @@ Diese Aktion ermöglicht die Deaktivierung des CDN für einen oder mehrere Ihrer
 > [!warning]
 >
 > Die Deaktivierung der CDN-Option für eine Website erfordert die Änderung der IP-Adresse, die für die Weiterleitung Ihres Domainnamens auf Ihr Webhosting verwendet wird.
-> Diese Änderung erfolgt automatisch, wenn die aktive DNS-Zone Ihres Domainnamens auch über den [OVHcloud Account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, der Ihr Webhosting enthält.
+> Diese Änderung erfolgt automatisch, wenn die aktive DNS-Zone Ihres Domainnamens auch über den [OVHcloud Account](/links/manager) verwaltet wird, der Ihr Webhosting enthält.
 >
 > Wenn dies nicht der Fall ist, müssen Sie die beiden folgenden Aktionen ausführen:
 >
@@ -299,7 +299,7 @@ Diese Aktion ermöglicht die Deaktivierung des CDN für einen oder mehrere Ihrer
 > Die Änderung eines Eintrags in der aktiven DNS-Zone eines Domainnamens führt zu einer Propagationsverzögerung von **4** bis **24** Stunden, um voll wirksam zu sein. Bis diese Propagierung abgeschlossen ist, wird möglicherweise eine Seite mit dem Code **520** angezeigt. Dies hängt damit zusammen, dass Teile des DNS-Netzwerks die Anfragen immer noch an die IP-Adresse des CDN weiterleiten, das mit Ihrem Webhosting verbunden ist.
 >
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
 
 Entfernen Sie den Haken bei "CDN aktivieren", klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
@@ -309,7 +309,7 @@ Entfernen Sie den Haken bei "CDN aktivieren", klicken Sie auf `Weiter`{.action} 
 
 Sie können hiermit die CDN-Option für Ihr gesamtes Webhosting kündigen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" und danach auf `CDN kündigen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie auf `...`{.action} rechts neben "CDN-Option" und danach auf `CDN kündigen`{.action}.
 
 ![CDN](images/resiliation.png){.thumbnail}
 
@@ -364,8 +364,8 @@ Das Fehlen von "X-CDN" zeigt an, dass der Aufruf der Domain das CDN nicht durchl
 
 ## Weiterführende Informationen
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -8,14 +8,14 @@ updated: 2022-05-04
 
 Django CMS est un système de gestion de contenu (CMS) écrit en Python et basé sur le framework web Django.
 
-L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Python comme moteur d’exécution pour vos sites web. Vous pouvez donc y installer et héberger Django CMS, ainsi que toute autre application web conçue dans ce langage.
+L’[hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer) permet d’utiliser Python comme moteur d’exécution pour vos sites web. Vous pouvez donc y installer et héberger Django CMS, ainsi que toute autre application web conçue dans ce langage.
 
 À travers ce tutoriel, nous allons installer un site web avec Django CMS sur un hébergement Cloud Web d’OVHcloud. Puis nous le mettrons à disposition derrière votre nom de domaine.
 
 ## Prérequis
 
-- Disposer d’un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Disposer d’un [hébergement Cloud Web OVHcloud](/links/web/hosting-cloud-web-offer).
+- Être connecté à votre [espace client](/links/manager), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir:
     - Les bases de l’écosystème Python.
     - Se connecter en SSH.
@@ -25,7 +25,7 @@ L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cl
 
 ### Étape 1 : activez Python comme moteur d’exécution
 
-Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Python est bien activé. Si tel est le cas, poursuivez vers l’étape 2 : [« Associez Python à un multisite »](./#etape-2-associez-python-a-un-multisite).
 
@@ -279,7 +279,7 @@ Modifiez le fichier « mysite/settings.py » avec la commande suivante, en rem
     
 ### Étape 7 : redémarrez le _daemon_ Python
 
-Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis choisissez `Redémarrer`{.action}.
+Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHcloud](/links/manager). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis choisissez `Redémarrer`{.action}.
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
     
@@ -315,8 +315,8 @@ Vous trouverez plus d'informations sur Django CMS et ses fonctionnalités dans l
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -16,15 +16,15 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 
 ## Prerequisiti
 
-- Aver registrato un [dominio](https://www.ovhcloud.com/it/domains/){.external} nello Spazio Cliente OVHcloud
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Aver registrato un [dominio](/links/web/domains){.external} nello Spazio Cliente OVHcloud
+- Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 > [!warning]
 >
 > Per attivare l’opzione "indirizzo(i) email incluso(i) nell’hosting Web" per un dominio esterno (non registrato in OVHcloud) **di cui è obbligatorio essere l’amministratore**, è necessario creare (almeno) in OVHcloud una zona DNS per il dominio esterno. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)". In questo modo, il tuo dominio comparirà nella lista dei domini disponibili al momento dell’attivazione dell’opzione.
 >
-> Inoltre, se il dominio è già registrato in OVHcloud o se esiste già una zona DNS in un altro [account OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) rispetto al dominio, consulta la nostra documentazione "[Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts)" per recuperarne la gestione.
+> Inoltre, se il dominio è già registrato in OVHcloud o se esiste già una zona DNS in un altro [account OVHcloud](/links/manager) rispetto al dominio, consulta la nostra documentazione "[Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts)" per recuperarne la gestione.
 >
 Se il dominio è già associato all’opzione "indirizzo/i email incluso/i con il tuo hosting Web" di un altro hosting Web, non sarà possibile associarlo direttamente al tuo hosting Web. Fai il punto della situazione con l’attuale gestore dell’hosting Web, consulta questa guida.
 >
@@ -33,7 +33,7 @@ Se il dominio è già associato all’opzione "indirizzo/i email incluso/i con i
 
 ### Attiva il servizio di posta
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action}.
 
 Nel riquadro `Configurazione` è disponibile la dicitura `Account email`: clicca sul pulsante `...`{.action} a destra e poi su `Attiva il tuo servizio di posta`{.action}.
 
@@ -44,7 +44,7 @@ Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare g
 ![Attivazione email](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Per usufruire di più account email inclusi, ordina una [offerta di hosting web](https://www.ovhcloud.com/it/web-hosting/){.external} superiore dalla nostra pagina commerciale.
+> Per usufruire di più account email inclusi, ordina una [offerta di hosting web](/links/web/hosting){.external} superiore dalla nostra pagina commerciale.
 >
 > Attenzione: l’attivazione dell’opzione email potrebbe richiedere alcuni minuti. Riceverai un’email di conferma dell’installazione e dell’attivazione della soluzione MXPLAN. e include la gestione e la configurazione degli indirizzi email.
 >
@@ -53,7 +53,7 @@ Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare g
 
 Una volta che la soluzione giunge a scadenza o è necessario eliminarla, è possibile conservare gli indirizzi email ad essa associati.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action}.
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Scollega la tua opzione email`{.action}.
 
@@ -69,7 +69,7 @@ Il servizio di posta associato all’hosting Web può anche essere eliminato def
 >
 > Questa operazione è irreversibile: non è possibile riattivare il servizio di posta in seguito alla sua disattivazione.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action}.
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Disattiva l’opzione email`{.action}.
 
@@ -81,8 +81,8 @@ Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrisponde
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

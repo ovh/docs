@@ -12,14 +12,14 @@ This tutorial will show you how to configure certain features of your web hostin
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This tutorial explains how to secure your WordPress with one or more .htaccess files.**
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) with WordPress installed.
+- An [OVHcloud web hosting plan](/links/web/hosting) with WordPress installed.
 - Using an FTP client such as [FileZilla](https://filezilla-project.org/), as explicated in our [FileZilla tutorial](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)”.
 
 **.htaccess** files can be created and modified with text editors, for example:
@@ -36,7 +36,7 @@ This tutorial will show you how to configure certain features of your web hostin
 >
 > If you are not using a CMS, OVHcloud also provides a [tutorial on protecting a directory or the administration interface of your website via .htaccess files](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
-> If you have any questions about creating, using or programming your website, please contact our [user community](https://community.ovh.com/en/) or our [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/). OVHcloud support teams will not be able to assist you with these issues.
+> If you have any questions about creating, using or programming your website, please contact our [user community](https://community.ovh.com/en/) or our [OVHcloud partners](/links/partner). OVHcloud support teams will not be able to assist you with these issues.
 >
 
 ## FAQ
@@ -45,7 +45,7 @@ This tutorial will show you how to configure certain features of your web hostin
 
 You can use a **.htaccess** file to configure a web server. For web hosting plans, this is the open source web server **Apache**. The syntax of this file is defined by the organisation that develops and maintains **Apache**. Unlike most configuration files on a server, **.htaccess** files are located in the directories of websites, more precisely in the FTP storage space of your web hosting plan. A **.htaccess** file will affect the directory in which it is located and all its subdirectories.
 
-Our web hosting plans do not allow server configuration files. However, **.htaccess** files provide the ability to modify certain characteristics and behaviours. In addition, you do not need to reboot the **Apache** server for the instructions and modifications written to the **.htaccess** file to be applied. All of our [OVHcloud web hosting](https://www.ovhcloud.com/en-ca/web-hosting/) offers allow you to configure **.htaccess** files.
+Our web hosting plans do not allow server configuration files. However, **.htaccess** files provide the ability to modify certain characteristics and behaviours. In addition, you do not need to reboot the **Apache** server for the instructions and modifications written to the **.htaccess** file to be applied. All of our [OVHcloud web hosting](/links/web/hosting) offers allow you to configure **.htaccess** files.
 
 The dot in front of the file name **.htaccess** (which itself does not have an extension) denotes a hidden file. Furthermore, these files are not accessible by external users visiting your website.
 
@@ -170,8 +170,8 @@ The **wp-admin** directory is used to access your administration interface. (The
 
 [Official Apache .htaccess tutorial](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

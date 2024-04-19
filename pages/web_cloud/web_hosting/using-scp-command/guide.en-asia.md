@@ -18,7 +18,7 @@ It allows you to copy a file or folder containing one or more files from a termi
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This guide explains how to use the Secure Copy Protocol (SCP) command in SSH to copy files to and from your Web Hosting plan.**
@@ -27,8 +27,8 @@ It allows you to copy a file or folder containing one or more files from a termi
 
 - A terminal compatible with Linux and SSH commands (for example, the *terminal* of MacOS or the *Ubuntu* emulator on Windows)
 - Familiarity with Linux and SSH commands
-- A [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) with SSH access
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+- A [web hosting plan](/links/web/hosting) with SSH access
+- Access to your [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions
 
@@ -139,6 +139,6 @@ To check that content on your web hosting plan has been copied locally on your c
 
 [Logging in to your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -20,13 +20,13 @@ Sie können damit Dateien bzw. Ihre Websiten online stellen, indem Sie sich im [
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben FileZilla auf Ihrem Gerät installiert. Das Programm ist kostenlos verfügbar auf der offiziellen Seite: [filezilla-project.org](https://FileZilla-project.org/download.php){.external}
 
 ## Interface Übersicht <a name="interface"></a>
@@ -56,13 +56,13 @@ Tragen Sie die nötigen Details in die Schnellverbindungsleiste mithilfe der fol
 |Password|Passwort des FTP-Benutzers.|
 |Port|Wird in der Regel automatisch durch die Software ergänzt. Wenn nicht, geben Sie ein:<br><br>\- Port `21` für eine FTP Verbindung.<br>\- Port `22` für eine SFTP-Verbindung (falls aktiviert). Weitere Informationen zu SFTP finden Sie [weiter unten in diesem Tutorial](#sftp).|
 
-Falls diese Informationen nicht vorliegen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Die Informationen zu Ihrem Speicherplatz werden dort angezeigt.
+Falls diese Informationen nicht vorliegen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein und klicken Sie dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Die Informationen zu Ihrem Speicherplatz werden dort angezeigt.
 
 ![Hosting](images/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
-> Einige OVHcloud Angebote verwenden Port 22 nicht für SFTP- und/oder SSH-Verbindungen. Im Zweifel verwenden Sie die Ports, die in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zu finden sind.
+> Einige OVHcloud Angebote verwenden Port 22 nicht für SFTP- und/oder SSH-Verbindungen. Im Zweifel verwenden Sie die Ports, die in Ihrem [OVHcloud Kundencenter](/links/manager){.external} zu finden sind.
 >
 
 Wenn Sie alle Werte eingetragen haben wie im Bild zu sehen, klicken Sie auf `Quickconnect`{.action}.
@@ -73,7 +73,7 @@ Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie über den Status i
 
 ### Verbindung mit SFTP in FileZilla <a name="sftp"></a>
 
-Das Protokoll **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) ist nahezu identisch mit **FTP**, verwendet aber (wie SSH) standardmäßig Port 22 statt Port 21. Wenn Sie ein Cloud Web Hosting-Angebot verwenden, verwenden Sie den Port, der in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angezeigt wird. Port 22 ist aus Sicherheitsgründen für Cloud Web Hostings deaktiviert und kann daher nicht für Verbindungen über SSH oder SFTP verwendet werden.
+Das Protokoll **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) ist nahezu identisch mit **FTP**, verwendet aber (wie SSH) standardmäßig Port 22 statt Port 21. Wenn Sie ein Cloud Web Hosting-Angebot verwenden, verwenden Sie den Port, der in Ihrem [OVHcloud Kundencenter](/links/manager){.external} angezeigt wird. Port 22 ist aus Sicherheitsgründen für Cloud Web Hostings deaktiviert und kann daher nicht für Verbindungen über SSH oder SFTP verwendet werden.
 
 > [!success]
 >
@@ -84,7 +84,7 @@ Das Protokoll **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) ist nahez
 
 Überprüfen Sie zuerst, dass SFTP für Ihren **FTP**-Login aktiviert ist.
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich "Web Cloud" und klicken Sie dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager){.external} in den Bereich "Web Cloud" und klicken Sie dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
 
 Überprüfen Sie anschließend, ob **SFTP** in der Tabelle unten aktiv ist.
 
@@ -127,7 +127,7 @@ Die unten abgebildete Nachricht zeigt einen Authentifizierungsfehler bei der Ver
 
 Diese Nachricht entsteht durch einen Fehler beim eingegebenen Login/Passwort.
 
-Überprüfen Sie Ihre Zugangsdaten, um sicherzustellen, dass diese korrekt sind. Nötigenfalls können Sie das Passwort des FTP-Zugangs für Ihr Hosting direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ändern.
+Überprüfen Sie Ihre Zugangsdaten, um sicherzustellen, dass diese korrekt sind. Nötigenfalls können Sie das Passwort des FTP-Zugangs für Ihr Hosting direkt im [OVHcloud Kundencenter](/links/manager){.external} ändern.
 
 > [!success]
 > Sie finden genauere Informationen dazu in der [Anleitung zur Änderung des FTP-Passworts](/pages/web_cloud/web_hosting/ftp_change_password).
@@ -136,7 +136,7 @@ Im folgenden Fall wird der Fehler aufgrund eines falschen Hostnamens generiert:
 
 ![Hosting](images/connection-timed-out-after-20s.png){.thumbnail}
 
-Überprüfen Sie diesen anhand des in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angezeigten Hostnamens.
+Überprüfen Sie diesen anhand des in Ihrem [OVHcloud Kundencenter](/links/manager){.external} angezeigten Hostnamens.
 
 ### Dateitransfer
 
@@ -285,8 +285,8 @@ Im Allgemeinen finden Sie [hier alle unsere Hilfen zu Webhostings](/products/web
 
 Die offizielle Website von FileZilla finden Sie [hier](https://filezilla-project.org/).
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

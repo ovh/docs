@@ -23,8 +23,8 @@ These errors may also come from updates carried out **automatically** by compone
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- an [OVHcloud Web Hosting plan](/links/web/hosting)
+- access to the [OVHcloud Control Panel](/links/manager)
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
@@ -54,7 +54,7 @@ To check this, [log in to your hosting plan via FTP](/pages/web_cloud/web_hostin
 
 Then rename this file to `.htaccess.old` and refresh the page in your browser.
 
-If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, you may consider contacting an OVHcloud [partner](https://partner.ovhcloud.com/en-gb/directory/).
+If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, you may consider contacting an OVHcloud [partner](/links/partner).
 
 ### Check folder and file permissions
 
@@ -74,7 +74,7 @@ The [FileZilla guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#file
 
 For security reasons, your website hides all technical details about the error 500.
 
-To verify these details, you can use a [SSH connection](/pages/web_cloud/web_hosting/ssh_on_webhosting). (SSH is only available with the [Professional Hosting, Performance Hosting and Cloud Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/).)
+To verify these details, you can use a [SSH connection](/pages/web_cloud/web_hosting/ssh_on_webhosting). (SSH is only available with the [Professional Hosting, Performance Hosting and Cloud Web Hosting](/links/web/hosting).)
 
 ### Check the status of the database
 
@@ -111,6 +111,6 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 
 [Resolving a “Website not installed” error](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -18,8 +18,8 @@ Ce tutoriel vous propose des actions à entreprendre lorsque votre base de donn�
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) avec une base de données mutualisée OVHcloud associée.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting) avec une base de données mutualisée OVHcloud associée.
   
 ## En pratique
 
@@ -27,7 +27,7 @@ Ce tutoriel vous propose des actions à entreprendre lorsque votre base de donn�
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 Lorsque votre base de données mutualisée OVHcloud arrive à saturation (**overquota**), nos robots vous avertissent par e-mail sur l'adresse e-mail du [contact « Administrateur »](/pages/account_and_service_management/account_information/managing_contacts) de la base de données. 
@@ -54,7 +54,7 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web associé à votre base de données mutualisée OVHcloud. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web associé à votre base de données mutualisée OVHcloud. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Un tableau listant vos bases de données s'affiche sur la partie basse de l'écran.
 
@@ -74,7 +74,7 @@ Renseignez les informations d'accès à votre base de données puis cliquez sur 
 >
 > Désormais, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans phpMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
 >
-> Assurez-vous des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
+> Assurez-vous des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
 >
 
 Une fois connecté, la page suivante s'affiche :
@@ -125,13 +125,13 @@ Vous devrez basculer votre base de données sur une base de données plus volumi
 > Pour augmenter la taille allouée à votre base de données, vous devrez obligatoirement créer une nouvelle base de données plus grande et copier le contenu de l'ancienne dans la nouvelle. En effet, il n'est pas possible d'augmenter directement la taille d'une base de données liée à un hébergement web.
 >
 
-Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovhcloud.com/fr/web-cloud/databases/) pour choisir votre nouveau service de base de données. 
+Consultez notre offre de bases de données [Web Cloud Databasess](/links/web/databases) pour choisir votre nouveau service de base de données. 
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
-Il est possible de dupliquer le contenu de votre base de données OVHcloud directement vers une autre de vos bases de données OVHcloud grâce à une fonctionnalité présente dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, consultez notre guide « [Dupliquer le contenu d'une base de données dans une autre](/pages/web_cloud/web_hosting/copy_database) ».
+Il est possible de dupliquer le contenu de votre base de données OVHcloud directement vers une autre de vos bases de données OVHcloud grâce à une fonctionnalité présente dans votre [espace client OVHcloud](/links/manager). Pour cela, consultez notre guide « [Dupliquer le contenu d'une base de données dans une autre](/pages/web_cloud/web_hosting/copy_database) ».
 
-Dans le cas d'une migration vers une base de données externe aux offres [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) et [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/), vous pouvez déplacer manuellement le contenu de votre ancienne base de données vers une nouvelle à l'aide de nos guides:
+Dans le cas d'une migration vers une base de données externe aux offres [Start SQL](/links/web/hosting-options-startsql) et [Web Cloud Databases](/links/web/databases), vous pouvez déplacer manuellement le contenu de votre ancienne base de données vers une nouvelle à l'aide de nos guides:
 
 - [Exporter votre base de données existante](/pages/web_cloud/web_hosting/sql_database_export)
 - [Premiers pas avec l'offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -149,7 +149,7 @@ Avant d'effectuer ce qui suit, vérifiez si les données contenues dans la table
 
 > [!alert]
 >
-> La suite de ce guide vous décrit comment supprimer des données présentes dans votre base de données. Assurez-vous de ce que vous faites ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de doute.
+> La suite de ce guide vous décrit comment supprimer des données présentes dans votre base de données. Assurez-vous de ce que vous faites ou contactez un [prestataire spécialisé](/links/partner) en cas de doute.
 >
 
 Les bases de données mutualisées OVHcloud disposent de plusieurs commandes SQL pour agir sur leur contenu.
@@ -200,8 +200,8 @@ DROP TABLE `table_1`
 
 [Dupliquer le contenu d'une base de données dans une autre](/pages/web_cloud/web_hosting/copy_database)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

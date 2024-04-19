@@ -23,15 +23,15 @@ Opcja geolokalizacji na Twoim hostingu może być przydatna w pozycjonowaniu (SE
   
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Posiadanie [hostingu OVHcloud](/links/web/hosting)
+- Posiadanie [domeny](/links/web/domains)
   
 ## W praktyce
 
 Dla stron www odwiedzanych głównie za granicą i hostowanych na naszej infrastrukturze hostingu współdzielonego OVHcloud proponujemy opcję geolokalizacji za pomocą adresu IP. Umożliwia lepsze pozycjonowanie stron www w kraju, w którym znajduje się wybrany adres IP z opcją.
 
-Aby skorzystać z opcji geolokalizacji IP, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Aby skorzystać z opcji geolokalizacji IP, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 Po zalogowaniu przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy.<br>
 Następnie kliknij zakładkę `MultiSite`{.action}, a następnie przycisk `...`{.action} znajduje się po prawej stronie Twojej domeny w tabeli. Następnie kliknij polecenie `Zmień domenę`{.action}.
@@ -48,7 +48,7 @@ Kliknij przycisk `Dalej`{.action}, a następnie kliknij `Zatwierdź`{.action} w 
 
 >[!primary]
 >
-> Jeśli aktywna strefa DNS Twojej domeny jest w pełni zarządzana w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), wpis A w strefie DNS Twojej domeny zostanie automatycznie zmieniony. Możesz sprawdzić, czy adres IP został zaktualizowany w naszym przewodniku dotyczącym [edycji strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> Jeśli aktywna strefa DNS Twojej domeny jest w pełni zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager), wpis A w strefie DNS Twojej domeny zostanie automatycznie zmieniony. Możesz sprawdzić, czy adres IP został zaktualizowany w naszym przewodniku dotyczącym [edycji strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
 > W przeciwnym razie przeprowadź ręcznie zmianę u dostawcy zarządzającego aktywną strefą DNS Twojej domeny. Zapoznaj się z dokumentacją [tutaj](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) zawierającą listę adresów IP naszej infrastruktury hostingu współdzielonego OVHcloud.
 >
@@ -57,8 +57,8 @@ Kliknij przycisk `Dalej`{.action}, a następnie kliknij `Zatwierdź`{.action} w 
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

@@ -16,15 +16,15 @@ Das **CMS** (**C**ontent **M**anagement **S**ystem) SPIP ist eine Lösung für r
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot mit mindestens einer Datenbank.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot mit mindestens einer Datenbank.
+- Sie verfügen über einen [Domainnamen](/links/web/domains).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Installation vorbereiten
 
-Um das CMS **SPIP** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren, sind einige Vorbereitungen erforderlich.
+Um das CMS **SPIP** auf Ihrem [Webhosting](/links/web/hosting) zu installieren, sind einige Vorbereitungen erforderlich.
 
 Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web_cloud/web_hosting/cms_manual_installation), bevor Sie zum nächsten Schritt übergehen.
 
@@ -83,6 +83,6 @@ Sie haben das CMS SPIP manuell auf Ihrem OVHcloud Webhosting installiert. Ihre S
 
 [Eine Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

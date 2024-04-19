@@ -10,25 +10,25 @@ updated: 2023-12-18
 
 ## Objetivo
 
-Con el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external}, OVHcloud le ofrece un alojamiento web de 100 MB y una cuenta de correo con 5 GB de almacenamiento. Esta guía explica cómo activar el alojamiento gratuito 100M en su [nombre de dominio](https://www.ovhcloud.com/es-es/domains/){.external}.
+Con el [Alojamiento gratuito 100M](/links/web/domains-free-hosting){.external}, OVHcloud le ofrece un alojamiento web de 100 MB y una cuenta de correo con 5 GB de almacenamiento. Esta guía explica cómo activar el alojamiento gratuito 100M en su [nombre de dominio](/links/web/domains){.external}.
 
 > [!warning]
 >
 > Este alojamiento gratuito de 100 MB es adecuado para una simple página web de presentación. **no incluye base de datos**.
 > También es conveniente si no necesita varias direcciones de correo electrónico de tipo MX Plan. 
-> Si quiere crear un sitio web que tenga varias páginas y que requiera una base de datos, como un CMS (WordPress, Joomla, PrestaShop, Drupal, etc.), puede contratar uno de [nuestros planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) directamente desde nuestro sitio web o desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+> Si quiere crear un sitio web que tenga varias páginas y que requiera una base de datos, como un CMS (WordPress, Joomla, PrestaShop, Drupal, etc.), puede contratar uno de [nuestros planes de hosting](/links/web/hosting) directamente desde nuestro sitio web o desde su [área de cliente de OVHcloud](/links/manager){.external}.
 >
 
 **Cómo activar el alojamiento gratuito 100M**
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, no asociado a ningún alojamiento web y sin ningún [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) asociado.
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de un [dominio](/links/web/domains){.external} en su [área de cliente de OVHcloud](/links/manager){.external}, no asociado a ningún alojamiento web y sin ningún [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) asociado.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Dominios`{.action}  en la columna izquierda y seleccione el dominio correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Dominios`{.action}  en la columna izquierda y seleccione el dominio correspondiente.
 
 En la sección **« Información general »**, acceda al apartado *«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}.
 
@@ -42,7 +42,7 @@ Se mostrará la ventana de activación. En el **paso 1** se muestra información
 >
 > Si selecciona una de las dos casillas de verificación `Entrada DNS A` y  `Entrada DNS MX` o ambas, la configuración inicial se vaciará en la zona DNS del dominio.
 >
-Si su zona DNS no está gestionada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, deberá realizar los cambios manualmente en su zona DNS externa.
+Si su zona DNS no está gestionada en su [área de cliente de OVHcloud](/links/manager){.external}, deberá realizar los cambios manualmente en su zona DNS externa.
 >
 > Para más información, consulte nuestra guía sobre [la edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
@@ -54,13 +54,13 @@ Si su zona DNS no está gestionada en su [área de cliente de OVHcloud](https://
 
 > [!primary]
 >
-Si su proyecto evoluciona rápidamente hacia un alojamiento que dispone de una base de datos, un espacio de almacenamiento más grande o más direcciones de correo, podrá migrar directamente y únicamente del Alojamiento gratuito 100M a un plan de hosting **Personal** desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+Si su proyecto evoluciona rápidamente hacia un alojamiento que dispone de una base de datos, un espacio de almacenamiento más grande o más direcciones de correo, podrá migrar directamente y únicamente del Alojamiento gratuito 100M a un plan de hosting **Personal** desde su [área de cliente OVHcloud](/links/manager){.external}.
 >
 > Para migrar al plan **Pro** o **Performance**, es necesario cambiar del Alojamiento gratuito 100M al plan **Personal**.
 >
 > También puede eliminar la oferta gratuita, con el cuidado de obtener previamente los datos de su alojamiento y el contenido de su dirección de correo electrónico.
 >
-> Para más información, consulte nuestras [ofertas de alojamiento](https://www.ovhcloud.com/es-es/web-hosting/).
+> Para más información, consulte nuestras [ofertas de alojamiento](/links/web/hosting).
 >
 
 **El paso 3** le recuerda el precio de la solución. 
@@ -79,8 +79,8 @@ Consulte la guía [creación de una cuenta MX Plan](/pages/web_cloud/email_and_c
 
 [Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

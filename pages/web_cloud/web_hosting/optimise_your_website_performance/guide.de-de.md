@@ -17,10 +17,10 @@ Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie erhielten eine E-Mail, die bestätigt, dass Ihr Webhosting eingerichtet wurde.
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/), mit dem Sie auf Ihre Webseite zugreifen können.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über einen [Domainnamen](/links/web/domains), mit dem Sie auf Ihre Webseite zugreifen können.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -42,9 +42,9 @@ Die Beantwortung dieser Fragen kann dazu beitragen, sich auf bestimmte Punkte zu
 
 Für die Verwendung von CMS wie WordPress, PrestaShop, Drupal oder Joomla! sind viele Bibliotheken erforderlich, deshalb könnte eine einzelne Webseite viele Elemente zu verarbeiten haben.
 Internetbrowser müssen alle diese Elemente laden und lesen.
-Wir geben Empfehlungen dazu, welches Webhosting-Angebot für das oben aufgeführte CMS verwendet werden sollte auf [der Produktseite](https://www.ovhcloud.com/de/web-hosting/).
+Wir geben Empfehlungen dazu, welches Webhosting-Angebot für das oben aufgeführte CMS verwendet werden sollte auf [der Produktseite](/links/web/hosting).
 
-Weitere Informationen dazu, welches Hostingpaket sich eignet, finden Sie auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/).
+Weitere Informationen dazu, welches Hostingpaket sich eignet, finden Sie auf [dieser Seite](/links/web/hosting-best-web).
 
 ### Schritt 2: Überprüfen der PHP-Version
 Durch die Verwendung der neuesten PHP-Version, die mit Ihrer Seite kompatibel ist, könnte die Leistung erheblich beeinflusst werden.
@@ -84,7 +84,7 @@ Weitere Details zu diesem Thema finden Sie unten in Schritt 5.
 
 Vergleichen Sie die Grafiken der Ressourcennutzung Ihres Hostings (weitere Informationen unten), um den Ursprung der Verzögerungen zu ermitteln, und entnehmen Sie die Daten dieser Spitzenwerte aus den Protokollen.
 
-Sie können direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihre Logs, Statistiken und Verlaufsdiagramme zugreifen.
+Sie können direkt über das [OVHcloud Kundencenter](/links/manager) auf Ihre Logs, Statistiken und Verlaufsdiagramme zugreifen.
 
 Zugriff auf Statistiken und Logs:
 
@@ -145,7 +145,7 @@ Entdecken Sie hier unsere [CDN Lösung](https://www.ovh.de/cdn/).
 
 _Dieser Schritt ist optional, wenn Sie kein CMS verwenden._
 
-Um sicherzustellen, dass Ihr Hosting-Angebot an die Anforderungen Ihres CMS angepasst ist, finden Sie einen Vergleich unserer Dienste auf [der Produktseite](https://www.ovhcloud.com/de/web-hosting/).
+Um sicherzustellen, dass Ihr Hosting-Angebot an die Anforderungen Ihres CMS angepasst ist, finden Sie einen Vergleich unserer Dienste auf [der Produktseite](/links/web/hosting).
 
 - **Verwenden eines Cache-Plugins:** Um CMS verwenden zu können, benötigen Sie mehrere Bibliotheken, sodass eine einzelne Webseite eine enorme Anzahl von Elementen verarbeiten kann. Um Ihr CMS zu optimieren, sollten Sie Cache-Plugins verwenden, um zu vermeiden, dass der gesamte Inhalt Ihrer Webseite bei jedem Laden einer Seite neu generiert wird. Wir empfehlen, auf den Community-Websites nach Cache-Plugins suchen, die sich auf das von Ihnen verwendete CMS beziehen (Joomla! - PrestaShop - WordPress).
 
@@ -157,7 +157,7 @@ _Dieser Schritt ist optional, wenn Sie keine Datenbank verwenden._
 Sie können mit PHPMyAdmin auf Ihre Datenbank zugreifen. Anweisungen zur Verwendung von PHPMyAdmin würden den Rahmen dieser Anleitung sprengen und werden daher nicht weiter ausgeführt.
 Es gibt jedoch viele externe Tutorials zu diesem Thema.
 
-**So greifen Sie über phpMyAdmin auf die Datenbank zu:** Um über phpMyAdmin auf Ihre Datenbank zuzugreifen, gehen Sie wie folgt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vor:
+**So greifen Sie über phpMyAdmin auf die Datenbank zu:** Um über phpMyAdmin auf Ihre Datenbank zuzugreifen, gehen Sie wie folgt über das [OVHcloud Kundencenter](/links/manager) vor:
 
 - Klicken Sie im Bereich `Hosting-Pakete`{.action} auf Ihre Domain.
 - Wechseln Sie zur Registerkarte `Datenbanken`{.action}.

@@ -16,12 +16,12 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [edytora CMS PrestaShop](https://www.prestashop.com/en/support){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner) lub [edytora CMS PrestaShop](https://www.prestashop.com/en/support){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 > [!success]
 >
-> Aby zainstalować PrestaShop **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu "za jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Aby zainstalować PrestaShop **automatycznie** z poziomu [Panelu klienta OVHcloud](/links/manager), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu "za jednym kliknięciem"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 > Aby zainstalować **ręcznie inny CMS** (WordPress, Joomla!, Drupal), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
@@ -30,15 +30,15 @@ Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
   
 ## Wymagania początkowe
 
-- Posiadanie oferty[hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie oferty[hostingu](/links/web/hosting), która zawiera co najmniej jedną bazę danych.
+- Posiadanie [domeny](/links/web/domains)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
   
 ## W praktyce
 
 ### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
-Aby zainstalować CMS **PrestaShop** na Twoim hostingu [hosting www](https://www.ovhcloud.com/pl/web-hosting/), konieczne są pewne przygotowania.
+Aby zainstalować CMS **PrestaShop** na Twoim hostingu [hosting www](/links/web/hosting), konieczne są pewne przygotowania.
 
 Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym[Ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation) i przejdź do etapu 2 poniżej.
 
@@ -119,7 +119,7 @@ Wpisz wymagane informacje dotyczące bazy danych:
 > - Nazwa serwera bazy danych Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** odnosi się do twojego identyfikatora OVHcloud bez **"-ovh"**, a **"X"** należy zastąpić pozostałą częścią odniesienia do usługi Web Cloud Databases.
 >
 
-- *Database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- *Database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](/links/manager).
 
 - *Database login*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
 W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku ["Ręczna instalacja CMS"](/pages/web_cloud/web_hosting/cms_manual_installation) w punkcie **etap 1.4**) .
@@ -167,8 +167,8 @@ Pobierz dane do logowania modułu PrestaShop przed opuszczeniem strony.
 
 [Oficjalna strona PrestaShop](https://prestashop.com)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

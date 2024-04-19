@@ -6,15 +6,15 @@ updated: 2024-02-28
 
 ## Objective
 
-With an OVHcloud Web Hosting plan, you can get an [SSL certificate](https://www.ovhcloud.com/asia/web-hosting/options/ssl/). This allows one or more of your websites to have a secure connection by being accessible in *HTTPS*. To do this, you will need to follow several steps before your websites can use this secure connection.
+With an OVHcloud Web Hosting plan, you can get an [SSL certificate](/links/web/hosting-options-ssl). This allows one or more of your websites to have a secure connection by being accessible in *HTTPS*. To do this, you will need to follow several steps before your websites can use this secure connection.
 
 **This guide explains how to switch your website to HTTPS after activating an SSL certificate.**
 
 ## Requirements
 
-- An [SSL certificate](https://www.ovhcloud.com/asia/web-hosting/options/ssl/){.external} set up on your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}
+- An [SSL certificate](/links/web/hosting-options-ssl){.external} set up on your [OVHcloud Web Hosting plan](/links/web/hosting){.external}
 - At least one website set up and accessible via your OVHcloud Web Hosting plan
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, part `Web Cloud`{.action}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}, part `Web Cloud`{.action}
 
 ## Instructions
 
@@ -37,7 +37,7 @@ These indicators help to determine whether your website has a secure connection 
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 Below are the main steps described in the rest of this guide to switch your website to *HTTPS*:
@@ -55,7 +55,7 @@ To activate an SSL certificate on your Web Hosting plan, or check that an SSL ce
 
 Before you make any changes to your website’s configuration, it is important to ensure that it is ready to use *HTTPS* protocol correctly. There is no one-size-fits-all approach, as it depends on the website you are using.
 
-The information below is generic. We recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) if you experience any difficulties.
+The information below is generic. We recommend contacting a [specialist provider](/links/partner) if you experience any difficulties.
 
 #### 2.1 - Avoid mixing HTTP and HTTPS content
 
@@ -100,7 +100,7 @@ As soon as your Web Hosting plan has an active SSL certificate, and the [multisi
 >
 > Before you take any steps, we recommend that you retrieve a full backup of your website. This backup must contain not only the files on the [FTP storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup), but also those from the [database](/pages/web_cloud/web_hosting/sql_database_export) if the website uses one.
 >
-> You can do this directly from the files that make up your website. Do not hesitate to contact a [specialist provider](https://partner.ovhcloud.com/asia/directory/) if you encounter any difficulties.
+> You can do this directly from the files that make up your website. Do not hesitate to contact a [specialist provider](/links/partner) if you encounter any difficulties.
 >
 
 There are many ways to activate *HTTPS* on your website. To do this, you will need to make changes to the website’s configuration. The information below can help you with this activation process, but it may also be incomplete or irrelevant, depending on your use case.
@@ -149,8 +149,8 @@ If your website displays correctly and no warning appears after switching to *HT
 
 [Managing an SSL certificate on a Web Hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

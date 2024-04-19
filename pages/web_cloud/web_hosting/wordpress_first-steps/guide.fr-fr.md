@@ -12,17 +12,17 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur du CMS WordPress](https://wordpress.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à [l'éditeur du CMS WordPress](https://wordpress.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment créer un site web avec le CMS WordPress.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) qui contient au moins une base de données.
+- Disposer d'un [nom de domaine](/links/web/domains)
 - Avoir [installé Wordpress](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur votre hébergement web
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -185,8 +185,8 @@ Vos liens seront alors construits à partir du slug précédemment renseigné lo
     - [Elementor](https://elementor.com/){.external}, un autre éditeur de thèmes.
 - Le site officiel [WordPress](https://wordpress.org/){.external}.
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

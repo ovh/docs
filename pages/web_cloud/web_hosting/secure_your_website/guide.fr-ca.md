@@ -6,10 +6,10 @@ updated: 2024-01-26
 
 ## Objectif
 
-Ce guide vous permet d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions. Il concerne uniquement les sites Web hébergés sur les [solutions mutualisées OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
+Ce guide vous permet d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions. Il concerne uniquement les sites Web hébergés sur les [solutions mutualisées OVHcloud](/links/web/hosting).
 
 Ce guide est organisé par étapes dans un ordre croissant de difficulté technique. La sécurité de votre site se mesurera à l'élément le concernant qui est le moins protégé. Nous vous préconisons donc de réaliser l'ensemble des actions décrites ici.<br/>
-Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre elles, n'hésitez pas à contacter la [communauté OVHcloud](https://community.ovh.com/) ou nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/).
+Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre elles, n'hésitez pas à contacter la [communauté OVHcloud](https://community.ovh.com/) ou nos [partenaires](/links/partner).
 
 **Découvrez comment sécuriser votre site Web.**
 
@@ -17,14 +17,14 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) OVHcloud.
+- Disposer d'une [offre d'hébergement web](/links/web/hosting) OVHcloud.
 - Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -98,7 +98,7 @@ Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS 
 
 ### Étape 10 - Vérifier si des fichiers malveillants sont présents sur votre hébergement web
 
-Cette étape nécessite de vous connecter à votre [espace FTP](/pages/web_cloud/web_hosting/ftp_connection). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/).
+Cette étape nécessite de vous connecter à votre [espace FTP](/pages/web_cloud/web_hosting/ftp_connection). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](/links/partner).
 
 En cas de doutes sur ce sujet, pensez également à effectuer les vérifications décrites à [l'étape 1 de ce guide](#local) et à [changer le mot de passe](/pages/web_cloud/web_hosting/ftp_change_password) de votre espace FTP.
 
@@ -126,6 +126,6 @@ Le fichier « .htaccess » est un fichier de configuration (HTTP) Apache exécut
 
 [Réagir en cas de désactivation pour sécurité d’un hébergement](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

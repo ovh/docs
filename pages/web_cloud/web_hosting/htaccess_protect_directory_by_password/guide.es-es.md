@@ -30,7 +30,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+- Tener un [plan de hosting](/links/web/hosting).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Disponer de las claves de conexión al [espacio FTP de su alojamiento](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -126,7 +126,7 @@ Sustituya únicamente por `plain_text_password1`, `plain_text_password2` y `plai
 > Para más información sobre el asunto, consulte la [documentación oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Si dispone de un alojamiento [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/), conéctese a su alojamiento web en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Vaya a la carpeta "**raíz*" en la que se encuentra su script "crypt.php".
+Si dispone de un alojamiento [Pro](/links/web/hosting-professional-offer) o [Performance](/links/web/hosting-performance-offer), conéctese a su alojamiento web en [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Vaya a la carpeta "**raíz*" en la que se encuentra su script "crypt.php".
 
 Para ello, utilice el siguiente comando SSH:
 
@@ -152,7 +152,7 @@ php crypt.php
 
 > [!warning]
 >
-> Por motivos de seguridad, se recomienda el uso del SSH. No obstante, si tiene un producto **Starter** o [Perso](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) en el que el SSH no está disponible, puede igualmente ejecutar el fichero "crypt.php" a través de su navegador web.
+> Por motivos de seguridad, se recomienda el uso del SSH. No obstante, si tiene un producto **Starter** o [Perso](/links/web/hosting-personal-offer) en el que el SSH no está disponible, puede igualmente ejecutar el fichero "crypt.php" a través de su navegador web.
 >
 > Para ello, introduzca la siguiente URL: `https://domain.tld/crypt.php` modificando `domain.tld` por su propio nombre de dominio. Esto se muestra directamente en la barra de direcciones de su navegador web.
 >

@@ -23,15 +23,15 @@ Los módulos en 1 clic permiten la instalación fácil y rápida de un programa 
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting Cloud](https://www.ovhcloud.com/es/web-hosting/) que permita instalar un módulo en 1 clic (solo la oferta gratuita [Start10M](/pages/web_cloud/web_hosting/activate_start10m) no está incluida).
+- Tener contratado un plan de [hosting Cloud](/links/web/hosting) que permita instalar un módulo en 1 clic (solo la oferta gratuita [Start10M](/pages/web_cloud/web_hosting/activate_start10m) no está incluida).
 - Haber creado un módulo en 1 clic en su alojamiento (si todavía no ha realizado la instalación, siga las indicaciones de esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
 ### Acceder al sitio web
 
-Para acceder a la parte pública de su sitio web tras la instalación de un módulo en 1 clic, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y, seguidamente, en la pestaña `Módulos en 1 clic`{.action}.
+Para acceder a la parte pública de su sitio web tras la instalación de un módulo en 1 clic, acceda al [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y, seguidamente, en la pestaña `Módulos en 1 clic`{.action}.
 
 A continuación, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Acceder al módulo`{.action}.
 
@@ -42,7 +42,7 @@ A continuación, haga clic en el botón `...`{.action} a la derecha de la línea
 
 ### Acceder al panel de administración
 
-Para acceder a la parte del sitio web reservada a los administradores, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y, seguidamente, en la pestaña `Módulos en 1 clic`{.action}.
+Para acceder a la parte del sitio web reservada a los administradores, acceda al [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y, seguidamente, en la pestaña `Módulos en 1 clic`{.action}.
 
 A continuación, haga clic en el botón `..`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Acceder al panel de administración del módulo`{.action}.
 
@@ -50,11 +50,11 @@ A continuación, haga clic en el botón `..`{.action} a la derecha de la línea 
 
 Haga clic en la pestaña `Módulos en 1 clic`{.action} desde el menú `Alojamientos`{.action} del área de cliente. El usuario de administrador de su módulo aparece en la columna `Login`.
 
-También puede consultar el mensaje de correo electrónico recibido al crear el módulo desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws): haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú que aparece, haga clic en `Emails de servicio`{.action}.
+También puede consultar el mensaje de correo electrónico recibido al crear el módulo desde su [área de cliente de OVHcloud](/links/manager): haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú que aparece, haga clic en `Emails de servicio`{.action}.
 
 ### Cambiar la contraseña del módulo <a name="password-change"></a>
 
-Puede cambiar la contraseña de su módulo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o directamente desde la página de conexión al área de administrador de su sitio web.
+Puede cambiar la contraseña de su módulo desde el [área de cliente de OVHcloud](/links/manager) o directamente desde la página de conexión al área de administrador de su sitio web.
 En ambos casos, recibirá un mensaje de correo electrónico con el fin de restaurar la contraseña.
 
 > [!primary]
@@ -63,7 +63,7 @@ En ambos casos, recibirá un mensaje de correo electrónico con el fin de restau
 >
 > Compruebe las carpetas `Spams`{.action} y `Papelera`{.action} en la cuenta de correo correspondiente.
 >
-> También puede consultar todos los mensajes enviados por nuestros servicios desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws): haga clic en su nombre en la esquina superior derecha de su pantalla y, en el menú contextual situado a la derecha de la pantalla, haga clic en `Emails de servicio`{.action}.
+> También puede consultar todos los mensajes enviados por nuestros servicios desde el [área de cliente de OVHcloud](/links/manager): haga clic en su nombre en la esquina superior derecha de su pantalla y, en el menú contextual situado a la derecha de la pantalla, haga clic en `Emails de servicio`{.action}.
 >
 > **Duración de validez de los enlaces :**
 >
@@ -83,7 +83,7 @@ En ambos casos, recibirá un mensaje de correo electrónico con el fin de restau
 > Si no utiliza el CMS, deberá consultar la documentación oficial del CMS que utilice o contactar directamente con el editor del CMS.
 >
 
-Para cambiar la contraseña de acceso al panel de administración de su sitio web **desde el área de cliente de OVHcloud**, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y abra la pestaña `Módulos en 1 clic`{.action}.
+Para cambiar la contraseña de acceso al panel de administración de su sitio web **desde el área de cliente de OVHcloud**, acceda al [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y abra la pestaña `Módulos en 1 clic`{.action}.
 
 A continuación, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Cambiar la contraseña`{.action}. Haga clic en `Aceptar`{.action}. En unos minutos recibirá por correo electrónico un enlace a la restauración de la contraseña.
 
@@ -97,7 +97,7 @@ A continuación, haga clic en el botón `...`{.action} a la derecha de la línea
 > - PrestaShop : El editor de este programa no ofrece documentación en la fecha para cambiar la contraseña de acceso al panel de administración de PrestaShop. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://www.prestashop.com){.external} para acceder a su página oficial.
 >
 También es posible cambiar la contraseña de acceso al panel de administración del CMS directamente desde la base de datos.<br>
-No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la documentación que le ofrezca el editor del CMS o que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Más información en la sección (#go-further) de esta guía.
+No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la documentación que le ofrezca el editor del CMS o que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Más información en la sección (#go-further) de esta guía.
 
 ### Eliminar el módulo
 
@@ -108,7 +108,7 @@ No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la d
 
 #### Etapa 1: identificar la base de datos asociada a su módulo <a name="step1"></a>
 
-Para eliminar el módulo en 1 clic, es necesario empezar identificando su base de datos de forma **segura**. Para ello, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en `Web Cloud`{.action}, `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Para eliminar el módulo en 1 clic, es necesario empezar identificando su base de datos de forma **segura**. Para ello, acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en `Web Cloud`{.action}, `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 En caso contrario, abra la pestaña `Multisitio`{.action}. Anote el nombre de la `Carpeta raíz`: es el directorio en el que se encuentran los archivos que constituyen su módulo en 1 clic en el servidor FTP.
 
@@ -130,7 +130,7 @@ Para hacer copias de seguridad de su sitio web, siga las instrucciones de esta [
 > La eliminación de su módulo en 1 clic y de su base de datos conllevará igualmente la de **todas sus copias de seguridad**. Los datos eliminados no podrán recuperarse más adelante.
 >
 
-Para eliminar el módulo en 1 clic, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y seleccione `Módulos en 1 clic`{.action}.
+Para eliminar el módulo en 1 clic, acceda al [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y seleccione `Módulos en 1 clic`{.action}.
 
 Haga clic en el botón `...`{.action} a la derecha de la línea que designa el módulo y, seguidamente, en el comando `Eliminar el módulo`{.action}.
 
@@ -138,10 +138,10 @@ Haga clic en el botón `...`{.action} a la derecha de la línea que designa el m
 >
 > Si elimina el módulo 1 clic **no se eliminará automáticamente la base de datos**. Si inicia la instalación de un nuevo CMS sin haber eliminado previamente la base de datos del anterior (y su alojamiento no permite la creación automática de una nueva base de datos), el mensaje "[Se ha producido un error al cargar la información. (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#se-ha-producido-un-error-al-cargar-la-informacion-you-need-at-least-one-free-database)" se mostrará en su área de cliente.
 >
-> Si tiene contratado [Hosting Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/), o si ya ha creado cuatro bases de datos en su alojamiento [Hosting Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o [Hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/), deberá eliminar la base de datos indicada en el [paso 1](#step1) **ANTES** de poder crear un nuevo módulo en 1 clic.
+> Si tiene contratado [Hosting Personal](/links/web/hosting-personal-offer), o si ya ha creado cuatro bases de datos en su alojamiento [Hosting Pro](/links/web/hosting-professional-offer) o [Hosting Performance](/links/web/hosting-performance-offer), deberá eliminar la base de datos indicada en el [paso 1](#step1) **ANTES** de poder crear un nuevo módulo en 1 clic.
 >
 
-Para terminar de eliminar el módulo, acceda a la pestaña `Bases de datos`{.action}, en la sección `Web cloud`{.action}, `Alojamientos`{.action}" y en el alojamiento correspondiente de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y haga clic en `...`{.action} a la derecha de la línea que designa la base de datos y haga clic en el botón `Eliminar la base de datos`{.action}.
+Para terminar de eliminar el módulo, acceda a la pestaña `Bases de datos`{.action}, en la sección `Web cloud`{.action}, `Alojamientos`{.action}" y en el alojamiento correspondiente de su [área de cliente de OVHcloud](/links/manager) y haga clic en `...`{.action} a la derecha de la línea que designa la base de datos y haga clic en el botón `Eliminar la base de datos`{.action}.
 
 Antes de reanudar la instalación de un nuevo módulo, compruebe que las tareas de eliminación solicitadas anteriormente se hayan completado en la pestaña `Tareas en curso`{.action}.
 
@@ -162,8 +162,8 @@ No instale en su sitio plugins ni plantillas que no hayan sido recomendados por 
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

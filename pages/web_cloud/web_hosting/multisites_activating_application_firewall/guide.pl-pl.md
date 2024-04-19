@@ -25,13 +25,13 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
-- Posiadanie co najmniej jednej [domeny](https://www.ovhcloud.com/pl/domains/){.external} przypisanej do hostingu
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}.
+- Posiadanie co najmniej jednej [domeny](/links/web/domains){.external} przypisanej do hostingu
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
-Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij sekcję `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu.
+Zaloguj się do swojego [panelu klienta OVHcloud](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij sekcję `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu.
 
 ### Włącz firewall aplikacyjny w konfiguracji PHP
 
@@ -69,8 +69,8 @@ Wyświetlana tabela zawiera wszystkie nazwy domen dodanych do Twojego hostingu. 
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

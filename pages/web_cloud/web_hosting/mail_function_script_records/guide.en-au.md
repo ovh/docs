@@ -10,9 +10,9 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 > [!primary]
 >
-> This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) using the PHP "mail()" function.
+> This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting plan](/links/web/hosting) using the PHP "mail()" function.
 >
-> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](/links/web/hosting){.external} , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,16 +24,16 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 
 # Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} solution.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
+- An [OVHcloud web hosting plan](/links/web/hosting){.external} solution.
+- Access to the [OVHcloud Control Panel](/links/manager){.external}.
 
 ## Instructions
 
-You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Once you have logged in, go to the `Web Cloud`{.action} section, open `Hosting plans`{.action} and select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
+You can monitor and manage automated emails from your OVHcloud web hosting plan in your [OVHcloud Control Panel](/links/manager){.external}. Once you have logged in, go to the `Web Cloud`{.action} section, open `Hosting plans`{.action} and select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
 
 ![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
-This page enables you to monitor and manage automated emails sent from your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/).
+This page enables you to monitor and manage automated emails sent from your [OVHcloud web hosting plan](/links/web/hosting).
 
 ### Overview of the “Email scripts” section
 
@@ -102,7 +102,7 @@ This state occurs when:
 
 - Too many emails were sent in quick succession.
 - Too many emails are returned in error.
-- You have disabled the feature in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- You have disabled the feature in your [OVHcloud Control Panel](/links/manager).
 
 To resolve this, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, then select the relevant hosting plan from the list. Click on the `More`{.action} tab, then select `Email scripts`{.action}.
 
@@ -185,14 +185,14 @@ Our antispam service will analyse the situation, and our support team will get b
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 Although we strongly recommend using PHP’s "mail()" function, shared hosting allows you to send emails via a script that uses Simple Mail Transfer Protocol (SMTP). The total size of your email can not exceed **10 MB** (i.e. **7/8 MB excluding encapsulation**).
 
 > [!warning]
 > 
-> Emails sent with a script that uses an SMTP configuration cannot be managed and tracked from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+> Emails sent with a script that uses an SMTP configuration cannot be managed and tracked from your [OVHcloud Control Panel](/links/manager).
 > 
 
 To do this, you can use the following script by replacing only the `Host`, `Username` and `Password` values with your own SMTP settings:
@@ -219,8 +219,8 @@ $mail->Password = "YourEmailPassword";
 
 [Restore your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

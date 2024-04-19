@@ -15,13 +15,13 @@ However, if they are not configured correctly, the 1-click module installation m
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 > 
 
 ## Requirements
 
-- A compatible [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A compatible [web hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - The [1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules) feature used to install your website
 
 ## Instructions
@@ -35,7 +35,7 @@ However, if they are not configured correctly, the 1-click module installation m
 
 ![domainenotproposed](images/domain-unavailable.png){.thumbnail}
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned by the installation. On the page that pops up, click on the `Multisite`{.action} tab, then perform the following checks:
+Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned by the installation. On the page that pops up, click on the `Multisite`{.action} tab, then perform the following checks:
 
 |Scenario|Solution|
 |---|---|
@@ -50,9 +50,9 @@ This message appears when you launch the installation of your 1-click module whe
 
 #### Solution #1: Order a new database
 
-If you no longer have any databases included with your web hosting plan, you can order a new [Start SQL database](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) and combine it with your current web hosting plan. You can then relaunch the installation of the 1-click module. If you need more storage space (more than 1GB), we recommend using our [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) service instead.
+If you no longer have any databases included with your web hosting plan, you can order a new [Start SQL database](/links/web/hosting-options-startsql) and combine it with your current web hosting plan. You can then relaunch the installation of the 1-click module. If you need more storage space (more than 1GB), we recommend using our [Web Cloud Databases](/links/web/databases) service instead.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan you would like to add an additional database to. On the page that pops up, click on the `Databases`{.action} tab, then on `Actions`{.action} to order an additional database:
+In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the web hosting plan you would like to add an additional database to. On the page that pops up, click on the `Databases`{.action} tab, then on `Actions`{.action} to order an additional database:
 
 ![order_a_database](images/order-a-db.png){.thumbnail}
 
@@ -60,21 +60,21 @@ Once complete, you will be able to install a new 1-click module.
 
 > [!primary]
 >
-> As a reminder, do not hesitate to consult in advance our unitary database offers [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) and [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/).
+> As a reminder, do not hesitate to consult in advance our unitary database offers [Start SQL](/links/web/hosting-options-startsql) and [Web Cloud Databases](/links/web/databases).
 >
 
 #### Solution 2: Modify your web hosting plan
 
 > [!primary]
 >
-> Compare our different [hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/).
+> Compare our different [hosting plans](/links/web/hosting).
 >
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click `Web Cloud`{.action}. Click `Hosting plans`{.action}, then select the web hosting plan concerned. On the page that appears in the `Plan` - `Solution` section, click the `...`{.action} `Change plan`{.action}:
+In your [OVHcloud Control Panel](/links/manager), click `Web Cloud`{.action}. Click `Hosting plans`{.action}, then select the web hosting plan concerned. On the page that appears in the `Plan` - `Solution` section, click the `...`{.action} `Change plan`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-The offers [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) server for free.
+The offers [Pro](/links/web/hosting-professional-offer) and [Performance](/links/web/hosting-performance-offer) will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
 Once complete, you will be able to install a new 1-click module.
 
@@ -82,10 +82,10 @@ Once complete, you will be able to install a new 1-click module.
 
 > [!warning]
 >
-> The operation to delete a database is permanent. It also deletes backups of the database concerned. If you have any doubts, please contact your webmaster or one of our [partners](https://partner.ovhcloud.com/en-gb/directory/).
+> The operation to delete a database is permanent. It also deletes backups of the database concerned. If you have any doubts, please contact your webmaster or one of our [partners](/links/partner).
 >
 
-To delete a database from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned.
+To delete a database from your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned.
 
 On the page that opens, click on the `Databases`{.action} tab. In the table that appears, click the `...`{.action} button to the right of the row corresponding to the database you want to delete, then `Delete a database`{.action} :
 
@@ -107,7 +107,7 @@ Once complete, you will be able to install a new 1-click module.
 >
 > In this situation, you can back up data from a single website using a [PHP script or an SSH command](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> If you have any questions on how to proceed, please contact the [OVHcloud community](https://community.ovh.com/en/) or one of our [partners](https://partner.ovhcloud.com/en-gb/directory/).<br>
+> If you have any questions on how to proceed, please contact the [OVHcloud community](https://community.ovh.com/en/) or one of our [partners](/links/partner).<br>
 > We will not be able to assist you with this.
 >
 
@@ -125,7 +125,7 @@ After you launched the creation of your 1-click module, you received an email st
 
 This message means that the **root folder** associated with your domain name already contains one or more files or folders.
 
-To link your domain name to another directory, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned. On the page that opens, click on the `Multisite`{.action} tab. In the table that appears, click the `...`{.action} button to the right of the line corresponding to your domain name, then click `Modify domain`{.action}. Finally, enter the name of a new **root folder** (an empty directory will be created automatically on your Web Hosting plan).
+To link your domain name to another directory, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned. On the page that opens, click on the `Multisite`{.action} tab. In the table that appears, click the `...`{.action} button to the right of the line corresponding to your domain name, then click `Modify domain`{.action}. Finally, enter the name of a new **root folder** (an empty directory will be created automatically on your Web Hosting plan).
 
 ![modify_root_folder](images/modify-domain.png){.thumbnail}
 
@@ -153,7 +153,7 @@ In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!primary]
 >
-> If you have any questions about deleting data to reduce the amount of data on your web hosting plan, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).<br>
+> If you have any questions about deleting data to reduce the amount of data on your web hosting plan, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner).<br>
 > OVHcloud support is not authorised to provide you with assistance in this regard.
 >
 
@@ -161,14 +161,14 @@ In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!primary]
 >
-> Compare our web hosting plans (https://www.ovhcloud.com/en-gb/web-hosting/).
+> Compare our web hosting plans (/links/web/hosting).
 >
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action}, then select the web hosting plan concerned. On the page that appears in the `Plan` - `Solution` section, click the `...`{.action} `Change plan`{.action}:
+In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action}, then select the web hosting plan concerned. On the page that appears in the `Plan` - `Solution` section, click the `...`{.action} `Change plan`{.action}:
 
 ![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
 
-The [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) offers will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) server for free.
+The [Pro](/links/web/hosting-professional-offer) and [Performance](/links/web/hosting-performance-offer) offers will allow you to create up to three additional 1-click modules with an independent database for each of them. With the **Performance** plans, you can also activate a [Web Cloud Databases](/links/web/databases) server for free.
 
 ### "Unable to connect to database" <a name="delete-the-module"></a>
 
@@ -178,7 +178,7 @@ After launching the installation of your 1-click module in advanced mode, you re
 
 You will need to check your database credentials. To find them, please refer to this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Then delete your 1-click module. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned. On the page that opens, click on the `1-click modules`{.action} tab. In the table that appears, click the `...`{.action} button to the right of the line corresponding to your domain name, then click `Delete the module`{.action}.
+Then delete your 1-click module. To do this, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, then select the Web Hosting plan concerned. On the page that opens, click on the `1-click modules`{.action} tab. In the table that appears, click the `...`{.action} button to the right of the line corresponding to your domain name, then click `Delete the module`{.action}.
 
 ![delete_a_module](images/delete-a-module.png){.thumbnail}
 
@@ -197,7 +197,7 @@ Then relaunch the installation of a new 1-click module.
 
 This message only appears when you install a 1-click module in **advanced mode**. Your database can no longer be modified because the amount of data in it exceeds the limit. In this case, your database is locked to read-only mode.
 
-In this situation, install your 1-click module via [simple mode](/pages/web_cloud/web_hosting/cms_install_1_click_modules), or choose another database when you install it in advanced mode. If required, order an additional [database solution](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/).
+In this situation, install your 1-click module via [simple mode](/pages/web_cloud/web_hosting/cms_install_1_click_modules), or choose another database when you install it in advanced mode. If required, order an additional [database solution](/links/web/hosting-options-startsql).
 
 If you do not have any other databases and you do not want to order an additional solution, [import a copy of your database locally](/pages/web_cloud/web_hosting/sql_database_export), then delete the data you no longer need.
 
@@ -205,7 +205,7 @@ If you do not have any other databases and you do not want to order an additiona
 >
 > **Deleting items from your database can cause your website to go down.**
 >
-> If you have any further questions, please contact our [community of users](https://community.ovh.com/en/) or the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).<br>
+> If you have any further questions, please contact our [community of users](https://community.ovh.com/en/) or the [OVHcloud partners](/links/partner).<br>
 > We will not be able to assist you with this.
 >
 
@@ -225,7 +225,7 @@ You can also check the credentials by [directly connecting](/pages/web_cloud/web
 
 You have launched the installation of a 1-click module in [advanced mode](/pages/web_cloud/web_hosting/cms_install_1_click_modules) on a database located on a [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) server. You have received this error message by email. This means that the database server name you provided is incorrect.
 
-To find the name of your database server , log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the `Web Cloud`{.action} section. Click `Web Cloud Databases`{.action} in the left-hand column, then select the database server concerned.
+To find the name of your database server , log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click `Web Cloud Databases`{.action} in the left-hand column, then select the database server concerned.
 
 On the page that pops up, the name of the server to use is listed in the `Login information` box, in the `SQL` subsection, under `Host name`.
 
@@ -279,8 +279,8 @@ Once you have finished installing a new 1-click module, restart it.
 
 [Recurring problems using FTP software](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

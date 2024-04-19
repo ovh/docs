@@ -24,13 +24,13 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 
 ## Voraussetzungen
 
-- Sie haben ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem OVHcloud Account.
-- Sie verfügen über mindestens einen mit dem Hosting verbundenen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben ein [Webhosting](/links/web/hosting) in Ihrem OVHcloud Account.
+- Sie verfügen über mindestens einen mit dem Hosting verbundenen [Domainnamen](/links/web/domains){.external}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager)
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf den Bereich `Hosting-Pakete`{.action} und dann auf das betreffende Hosting.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf den Bereich `Hosting-Pakete`{.action} und dann auf das betreffende Hosting.
 
 ### Die Application Firewall in der PHP Konfiguration aktivieren
 
@@ -68,8 +68,8 @@ Die angezeigte Tabelle enthält alle Domains, die Ihrem Webhosting Angebot hinzu
 
 ## Weiterführende Informationen
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

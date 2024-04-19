@@ -21,7 +21,7 @@ Si tiene contratado un plan de hosting de OVHcloud, puede acceder a un espacio d
   
 ## Requisitos
 
-- Tener contratado un plan de hosting de OVHcloud (https://www.ovhcloud.com/es-es/web-hosting/)
+- Tener contratado un plan de hosting de OVHcloud (/links/web/hosting)
 - Instalar [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) en el equipo
 
 ## Procedimiento
@@ -30,7 +30,7 @@ Si tiene contratado un plan de hosting de OVHcloud, puede acceder a un espacio d
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Este tutorial le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el [editor del IDE de Visual Studio Code](https://code.visualstudio.com/){.external}. Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de este tutorial.
+> Este tutorial le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el [editor del IDE de Visual Studio Code](https://code.visualstudio.com/){.external}. Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de este tutorial.
 >
 
 ### Instalar la extensión SFTP para Visual Studio Code
@@ -86,7 +86,7 @@ Este archivo se encuentra en la carpeta .vscode, que a su vez se sitúa en la ra
 
 ### Configurar archivo sftp.json
 
-Antes de trabajar en el proyecto, cárguelo en la carpeta local que creó anteriormente. No obstante, en primer lugar, asegúrese de que el archivo "sftp.json" está correctamente configurado. La información útil puede consultarse en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
+Antes de trabajar en el proyecto, cárguelo en la carpeta local que creó anteriormente. No obstante, en primer lugar, asegúrese de que el archivo "sftp.json" está correctamente configurado. La información útil puede consultarse en el [área de cliente de OVHcloud](/links/manager). En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}.
 
 En el archivo "sftp.json", introduzca los valores para las siguientes entradas:
 
@@ -185,10 +185,10 @@ Esta guía explica cómo administrar un proyecto desde Visual Studio Code de for
 
 [Utilizar FileZilla con el alojamiento de OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Recuerde que para utilizar el SSH, debe disponer de un [plan de hosting Profesional o Performance](https://www.ovhcloud.com/es-es/web-hosting/).
+[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting). Recuerde que para utilizar el SSH, debe disponer de un [plan de hosting Profesional o Performance](/links/web/hosting).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

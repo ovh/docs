@@ -10,24 +10,24 @@ updated: 2024-01-29
 
 ## Ziel 
 
-Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Die Maßnahmen wie hier beschrieben betreffen nur Webseiten, die auf OVHcloud [Webhosting-Diensten](https://www.ovhcloud.com/de/web-hosting/) gehostet werden.
+Diese Anleitung bietet Ihnen grundlegendes Wissen, um die Verfügbarkeit Ihrer Dienstleistungen zu gewährleisten, die Integrität Ihrer Daten zu schützen und den Zugang zu Ihren Lösungen zu sichern. Die Maßnahmen wie hier beschrieben betreffen nur Webseiten, die auf OVHcloud [Webhosting-Diensten](/links/web/hosting) gehostet werden.
 
 Die nachstehenden Empfehlungen sind nach abnehmender Wichtigkeit und zunehmendem technischen Schwierigkeitsgrad angeordnet. Die zuerst beschriebenen Schritte sind also am wichtigsten. Die Sicherheit Ihrer Website kann danach bemessen werden, welches Element am wenigsten geschützt ist. Wir empfehlen deshalb, möglichst alle Maßnahmen durchzuführen.
 
-Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich an die [OVHcloud Community](https://community.ovh.com/en/) oder [unsere Partner](https://partner.ovhcloud.com/de/directory/).
+Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operationen durchzuführen, wenden Sie sich an die [OVHcloud Community](https://community.ovh.com/en/) oder [unsere Partner](/links/partner).
 
 **Diese Anleitung erklärt, wie Sie Ihre Website schützen.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
 - Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.
 
@@ -103,7 +103,7 @@ Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplug
 
 ### Schritt 10: Überprüfen Sie Ihr Webhosting auf schädliche Dateien
 
-Loggen Sie sich hierzu in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) ein. Es erfordert technische Kenntnisse, um kompromittierte Dateien auf Ihrem Hosting zu erkennen. Sollten Sie Schwierigkeiten haben, diese Überprüfung durchzuführen, wenden Sie sich an unsere [Partner](https://partner.ovhcloud.com/de/directory/).
+Loggen Sie sich hierzu in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) ein. Es erfordert technische Kenntnisse, um kompromittierte Dateien auf Ihrem Hosting zu erkennen. Sollten Sie Schwierigkeiten haben, diese Überprüfung durchzuführen, wenden Sie sich an unsere [Partner](/links/partner).
 
 Im Zweifelsfall können Sie auch die in [Schritt 1](#local) dieser Anleitung beschriebenen Überprüfungen durchführen und das [Passwort Ihres FTP-Bereichs ändern](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -129,6 +129,6 @@ Die Datei “.htaccess“ ist eine Apache-Konfigurationsdatei (HTTP), die vom We
 
 [Was tun, wenn Ihr Hosting aus Sicherheitsgründen deaktiviert wurde?](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Für den Austausch mit unserer User Community besuchen Sie <https://community.ovh.com/en/>.

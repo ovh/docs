@@ -18,7 +18,7 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 **Découvrez comment utiliser la commande Secure Copy Protocol (SCP) en SSH pour copier des fichiers depuis ou vers votre hébergement web.**
@@ -27,8 +27,8 @@ Il permet, depuis un terminal et à l'aide d'une commande Linux, de copier un fi
 
 - Disposer d'un terminal compatible avec les commandes Linux et SSH (par exemple, le *terminal* de MacOS ou l'émulateur *Ubuntu* sur Windows)
 - Être familiarisé avec les commandes Linux et SSH
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) bénéficiant d'un accès en SSH
-- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) bénéficiant d'un accès en SSH
+- Avoir accès à votre [espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -139,6 +139,6 @@ Pour vérifier que du contenu présent sur votre hébergement web a bien été c
 
 [Se connecter à l'espace de stockage FTP de votre hébergement web](/pages/web_cloud/web_hosting/ftp_connection)
  
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
  
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

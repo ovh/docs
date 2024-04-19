@@ -16,9 +16,9 @@ Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
-- Zarejestrowanie co najmniej jednej [domeny](https://www.ovhcloud.com/pl/domains/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
+- Posiadanie [hostingu OVHcloud](/links/web/hosting){.external}
+- Zarejestrowanie co najmniej jednej [domeny](/links/web/domains){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -34,7 +34,7 @@ Możesz również [usunąć certyfikat SSL na hostingu](#deletessl). **Pamiętaj
 
 ### 1. Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite <a name="multisite"></a>
 
-W zależności od [certyfikatu SSL](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}, który chcesz zamówić, możesz aktywować bezpieczne połączenie SSL na jednej lub kilku stronach podpiętych w opcji MultiSite. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
+W zależności od [certyfikatu SSL](/links/web/hosting-options-ssl){.external}, który chcesz zamówić, możesz aktywować bezpieczne połączenie SSL na jednej lub kilku stronach podpiętych w opcji MultiSite. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
 
 Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
 
@@ -89,13 +89,13 @@ Przed przeprowadzeniem tej konfiguracji upewnij się, że poprzedni etap [aktywa
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami [dotyczącymi konfiguracji wpisu w opcji MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) lub [konfiguracji strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
 
-Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external}:
+Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb](/links/web/hosting-options-ssl){.external}:
 
-- bezpłatny certyfikat SSL Let's Encrypt [zawarty w ofercie kompatybilnego hostingu](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external};
-- płatny certyfikat SSL [w opcji z kompatybilnym hostingiem](https://www.ovhcloud.com/pl/web-hosting/options/ssl/){.external};
+- bezpłatny certyfikat SSL Let's Encrypt [zawarty w ofercie kompatybilnego hostingu](/links/web/hosting-options-ssl){.external};
+- płatny certyfikat SSL [w opcji z kompatybilnym hostingiem](/links/web/hosting-options-ssl){.external};
 - import certyfikatu SSL uzyskanego we własnym zakresie.
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji `Informacje ogólne`{.action}. W zakładce „Certyfikat SSL” powinna pojawić się informacja „Nie” wskazująca, że na Twoim hostingu nie został zainstalowany żaden certyfikat SSL.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.external}i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji `Informacje ogólne`{.action}. W zakładce „Certyfikat SSL” powinna pojawić się informacja „Nie” wskazująca, że na Twoim hostingu nie został zainstalowany żaden certyfikat SSL.
 
 Kliknij przycisk `...`{.action} obok napisu „Certyfikat SSL”, a następnie `Zamów certyfikat SSL`{.action}.
 
@@ -103,7 +103,7 @@ Jeśli pojawi się informacja „Tak”, oznacza to, że certyfikat SSL jest ju�
 
 ![managessl](images/order-an-ssl-certificate.png){.thumbnail}
 
-W oknie, które się pojawi wybierz certyfikat SSL, który chcesz zamówić. Nie wszystkie rozwiązania wymienione powyżej mogą być dostępne. Zależy to od wykupionego przez Ciebie [pakietu hostingowego](https://www.ovhcloud.com/pl/web-hosting/){.external} lub konfiguracji. Po wybraniu opcji kliknij `Dalej`{.action}.
+W oknie, które się pojawi wybierz certyfikat SSL, który chcesz zamówić. Nie wszystkie rozwiązania wymienione powyżej mogą być dostępne. Zależy to od wykupionego przez Ciebie [pakietu hostingowego](/links/web/hosting){.external} lub konfiguracji. Po wybraniu opcji kliknij `Dalej`{.action}.
 
 ![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
@@ -123,12 +123,12 @@ Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności
 
 > [!primary]
 >
-> Operacja ta dotyczy wyłącznie certyfikatów SSL Let's Encrypt [zawartych w ofercie kompatybilnego hostingu](https://www.ovhcloud.com/pl/web-hosting/options/ssl/) umożliwiających aktywację bezpiecznego połączenia SSL dla kilku stron podpiętych w opcji MultiSite.
+> Operacja ta dotyczy wyłącznie certyfikatów SSL Let's Encrypt [zawartych w ofercie kompatybilnego hostingu](/links/web/hosting-options-ssl) umożliwiających aktywację bezpiecznego połączenia SSL dla kilku stron podpiętych w opcji MultiSite.
 >
 
 Po aktywowaniu bezpiecznego połączenia SSL na jednej lub kilku stronach podpiętych w opcji MultiSite status wskazuje: „Do wygenerowania”. Operacja ta konieczna jest, aby dodać do certyfikatu SSL na Twoim hostingu wybraną domenę lub domeny.
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji `Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Wygeneruj ponownie certyfikat SSL`{.action}.
+Zaloguj się do [Panelu klienta](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji `Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Wygeneruj ponownie certyfikat SSL`{.action}.
 
 ![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
 
@@ -144,7 +144,7 @@ Możesz usunąć certyfikat SSL aktualnie zainstalowany na Twoim hostingu. Jedna
 
 Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 
-Gdy będziesz gotowy do usunięcia certyfikatu SSL zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Usuń certyfikat SSL`{.action}.
+Gdy będziesz gotowy do usunięcia certyfikatu SSL zaloguj się do [Panelu klienta](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Usuń certyfikat SSL`{.action}.
 
 Na stronie, która się wyświetli, zatwierdź usunięcie certyfikatu. Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin.
 
@@ -192,12 +192,12 @@ Ten komunikat pojawia się w następujących przypadkach:
 
 - 1: Reguła przekierowywania "HTTPS" do adresu URL jest nieprawidłowo skonfigurowana lub nie istnieje w pliku ".htaccess":
 
-Aby to naprawić, zapoznaj się z naszym tutorialem "[przepisz adres URL dostępu do mojej strony za pomocą mod_rewrite w pliku .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" lub w przypadku trudności skorzystaj z usług [wyspecjalizowanego dostawcy](https://partner.ovhcloud.com/pl/directory/).
+Aby to naprawić, zapoznaj się z naszym tutorialem "[przepisz adres URL dostępu do mojej strony za pomocą mod_rewrite w pliku .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" lub w przypadku trudności skorzystaj z usług [wyspecjalizowanego dostawcy](/links/partner).
 
 - 2: Niektóre elementy strony internetowej nie są poprawnie przekierowywane do elementów zaszyfrowanych "HTTPS":
 
 Aby to naprawić, upewnij się, że cała Twoja strona WWW jest zaszyfrowana za pomocą protokołu "HTTPS".
-W razie potrzeby sprawdź tutorial "[Hosting WWW: przełącz stronę WWW na HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" lub skorzystaj z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) w przypadku trudności.
+W razie potrzeby sprawdź tutorial "[Hosting WWW: przełącz stronę WWW na HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" lub skorzystaj z pomocy [wyspecjalizowanego usługodawcy](/links/partner) w przypadku trudności.
 
 > [!success]
 >
@@ -224,8 +224,8 @@ Aby zmodyfikować aktywną strefę DNS Twojej domeny, zapoznaj się z naszym prz
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

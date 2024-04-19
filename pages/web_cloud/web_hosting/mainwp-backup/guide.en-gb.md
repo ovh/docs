@@ -19,14 +19,14 @@ MainWP offers several extensions for backing up your websites.
 
 ## Requirements
 
-- A [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- A [Web Cloud hosting plan](/links/web/hosting).
 - Access to your MainWP dashboard.
 
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) or [the publisher of the MainWP plugin](https://mainwp.com/support/){.external} if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 ## Instructions
@@ -119,6 +119,6 @@ Select the elements you want to restore, then confirm. The following confirmatio
 
 [Restore your web hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -12,7 +12,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
 >
 > Find below the links to the respective official pages of the CMS mentioned above:
 >
@@ -28,16 +28,16 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 > [!success]
 >
-> To install your CMS **automatically** from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> To install your CMS **automatically** from your [OVHcloud Control Panel](/links/manager), please refer to our documentation on [installing a 1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **This tutorial explains how to configure your website by manually installing a CMS.**
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) that contains at least one database
-- A [domain name](https://www.ovhcloud.com/en-sg/domains/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An [OVHcloud web hosting plan](/links/web/hosting) that contains at least one database
+- A [domain name](/links/web/domains)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -49,7 +49,7 @@ To help you choose your CMS, find below a short description for each of the CMS 
 
 **WordPress** is typically used to create a website or blog. It is based on PHP technology and includes a range of tools such as a spell checker, as well as plugins for e-commerce, SEO and even your website security.
 
-You can find more information on our [WordPress module page](https://www.ovhcloud.com/en-sg/web-hosting/uc-wordpress-website/). 
+You can find more information on our [WordPress module page](/links/web/hosting-wordpress). 
 
 - [Official WordPress website](https://https://wordpress.com/){.external}
 
@@ -59,7 +59,7 @@ You can find more information on our [WordPress module page](https://www.ovhclou
 
 The **Joomla!** community is very large and can provide assistance and services in all areas related to this CMS (help, documentation, technical assistance, themes, etc.)
 
-You can find more information on our [Joomla! module page](https://www.ovhcloud.com/en-sg/web-hosting/uc-joomla-website/). 
+You can find more information on our [Joomla! module page](/links/web/hosting-joomla). 
 
 - [Official site of Joomla!](https://www.joomla.org/){.external}
 
@@ -67,7 +67,7 @@ You can find more information on our [Joomla! module page](https://www.ovhcloud.
 
 **Drupal** is a free open-source platform under PHP created in 2000. **Drupal** allows you to create dynamic websites quickly.
 
-You can find more information on our [Drupal module page](https://www.ovhcloud.com/en-sg/web-hosting/uc-drupal-website/). 
+You can find more information on our [Drupal module page](/links/web/hosting-drupal). 
 
 - [Official Drupal website](https://www.drupal.org/){.external} 
 
@@ -75,7 +75,7 @@ You can find more information on our [Drupal module page](https://www.ovhcloud.c
 
 A CMS created in 2005 and dedicated to building e-commerce websites. Apart from the common features of online stores, this software can also be customised with modules, themes and templates. 
 
-You can find more information on our [PrestaShop module page](https://www.ovhcloud.com/en-sg/web-hosting/uc-prestashop-website/).
+You can find more information on our [PrestaShop module page](/links/web/hosting-prestashop).
 
 - [PrestaShop official website](https://www.prestashop.com/){.external} 
 
@@ -110,7 +110,7 @@ You can find more information on our [PrestaShop module page](https://www.ovhclo
 
 ### Step 1: Prepare the installation <a name="step1"></a>
 
-To install a CMS on your [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/), you will need to make some preparations.
+To install a CMS on your [web hosting plan](/links/web/hosting), you will need to make some preparations.
 
 #### 1.1 Check the root folder declaration
 
@@ -125,12 +125,12 @@ Please refer to our documentation, which describes [how to add a multisite on yo
 
 #### 1.2 Check the domain name resolution
 
-- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/).
+- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](/links/web/hosting).
 
-To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
+To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](/links/manager) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
 In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
 
-If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation .
+If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](/links/manager), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web_cloud/domains/dns_zone_edit) documentation .
 
 > [!warning]
 >
@@ -163,7 +163,7 @@ If you are not already using an FTP client, you can use Filezilla. You can find 
 > Some CMS systems work without a database. If this is the case for the CMS you want to install, skip this step.
 >
 
-Most CMSs require a database to work. Our [web hosting offers](https://www.ovhcloud.com/en-sg/web-hosting/) include them.
+Most CMSs require a database to work. Our [web hosting offers](/links/web/hosting) include them.
 
 Use our documentation to [create a database from your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -404,8 +404,8 @@ To continue with the installation, follow the guide corresponding to your CMS:
 
 [Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

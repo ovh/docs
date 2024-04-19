@@ -6,15 +6,15 @@ updated: 2024-02-26
 
 ## Objetivo
 
-Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/). Este último permite dispor de uma ligação segura a um ou vários dos seus websites, estando, por conseguinte, acessíveis através de *HTTPS*. Para isso, são necessárias várias etapas para que os seus sites possam utilizar esta ligação segura.
+Graças ao seu alojamento web da OVHcloud, pode beneficiar de um [certificado SSL](/links/web/hosting-options-ssl). Este último permite dispor de uma ligação segura a um ou vários dos seus websites, estando, por conseguinte, acessíveis através de *HTTPS*. Para isso, são necessárias várias etapas para que os seus sites possam utilizar esta ligação segura.
 
 **Saiba como passar o seu website para HTTPS após ter ativado um certificado SSL.**
 
 ## Requisitos
 
-- Dispor de um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external} instalado no seu [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Dispor de um [certificado SSL](/links/web/hosting-options-ssl){.external} instalado no seu [alojamento web OVHcloud](/links/web/hosting){.external}.
 - Ter pelo menos um website instalado e acessível no alojamento web da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, parte `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, parte `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -37,7 +37,7 @@ O facto de o seu website possuir ou não uma ligação segura torna-se cada vez 
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção ["Quer saber mais?"](#go-further) deste guia.
 >
 
 Encontre aqui as principais etapas descritas no resto deste guia para passar o seu website em *HTTPS*:
@@ -100,7 +100,7 @@ Se o seu alojamento web dispuser de um certificado SSL ativo, o [multisite](/pag
 >
 > Antes de começar, recomendamos que guarde um backup completo do website. Esta cópia de segurança deve conter não só os ficheiros presentes no [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup), mas também os ficheiros de [base de dados](/pages/web_cloud/web_hosting/sql_database_export) se o website utilizar uma.
 >
-> A partir desta etapa, as ações devem ser realizadas diretamente a partir dos ficheiros que compõem o seu website. Não hesite em contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se encontrar dificuldades.
+> A partir desta etapa, as ações devem ser realizadas diretamente a partir dos ficheiros que compõem o seu website. Não hesite em contactar um [fornecedor especializado](/links/partner) se encontrar dificuldades.
 >
 
 Existem várias formas de ativar o *HTTPS* no seu website. Para esta operação, é necessário realizar operações na configuração do website que utiliza. As informações apresentadas a seguir podem ajudá-lo neste processo de ativação, mas também podem revelar-se incompletas ou desadequadas à sua situação em termos de utilização.
@@ -137,7 +137,7 @@ Este segundo exemplo de script tem o efeito de transformar todos os URL recebido
 
 Para este segundo exemplo, verifique se todos os seus nomes de domínio ou subdomínios alvo têm um certificado SSL ativo.
 
-**Atenção**, para as ofertas de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/), o script a utilizar é o seguinte:
+**Atenção**, para as ofertas de alojamento [Cloud Web](/links/web/hosting-cloud-web-offer), o script a utilizar é o seguinte:
 
 ```bash
 RewriteEngine On
@@ -157,8 +157,8 @@ Se o website se apresentar corretamente e não aparecer nenhum aviso após a ati
 
 [Gerir um certificado SSL num alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -27,8 +27,8 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [hostingu](/links/web/hosting)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
 ## W praktyce
@@ -59,7 +59,7 @@ Aby to sprawdzić, [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_con
 
 Zmień nazwę pliku na `.htaccess.old` i przetestuj swoją stronę.
 
-Jeśli domena jest ponownie dostępna, `.htaccess` jest kwestionowana. W związku z tym konieczne jest wprowadzenie zmian. Jeśli sobie tego życzysz, skontaktuj się z jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/).
+Jeśli domena jest ponownie dostępna, `.htaccess` jest kwestionowana. W związku z tym konieczne jest wprowadzenie zmian. Jeśli sobie tego życzysz, skontaktuj się z jednym z naszych [partnerów](/links/partner).
 
 ### Sprawdź uprawnienia na folderach i plikach
 
@@ -79,7 +79,7 @@ Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](/pages/web_
 
 Ze względów bezpieczeństwa Twoja strona WWW ukrywa ewentualne szczegóły dotyczące źródła błędu 500 dla każdego, kto ją łączy za pomocą przeglądarki internetowej.
 
-Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub wyższej, połączyć się ze stroną za pomocą [połączenia ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [Pro](/links/web/hosting-professional-offer) lub wyższej, połączyć się ze stroną za pomocą [połączenia ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Sprawdź stan bazy danych
 
@@ -115,6 +115,6 @@ Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoz
 
 [Usunięcie błędu "Strona nie została zainstalowana"](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

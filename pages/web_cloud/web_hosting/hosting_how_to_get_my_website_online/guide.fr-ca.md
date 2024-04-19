@@ -6,16 +6,16 @@ updated: 2024-03-21
 
 ## Objectif
 
-Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} vous permet d'y héberger le site internet que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
+Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer un blog ou une boutique en ligne, de partager une passion ou de promouvoir une activité professionnelle, votre [hébergement web OVHcloud](/links/web/hosting){.external} vous permet d'y héberger le site internet que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures](https://webhosting-infos.hosting.ovh.net){.external}.
 
 **Découvrez comment mettre en ligne un site internet sur votre hébergement web OVHcloud**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}qui sera l'adresse d'accès à votre site web.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Disposer d'un [nom de domaine](/links/web/domains){.external}qui sera l'adresse d'accès à votre site web.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web).
 
 ## En pratique
@@ -24,7 +24,7 @@ Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer 
 
 Avoir une vision claire de votre objectif est primordial pour mener à bien votre projet. Que souhaitez-vous faire avec votre site internet ? Comment le mettre en ligne ? Plusieurs possibilités s'offrent à vous pour concrétiser votre projet sur un hébergement web OVHcloud.
 
-- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre déjà compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page web d'OVHcloud [« Créer un site Internet avec les modules en 1 clic »](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/){.external}. Vous pouvez également consulter le guide [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre déjà compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page web d'OVHcloud [« Créer un site Internet avec les modules en 1 clic »](/links/web/hosting-website){.external}. Vous pouvez également consulter le guide [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Utiliser un site clés en main à installer manuellement** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.) que vous devrez installer vous-même sur votre hébergement web OVHcloud.
 
@@ -42,7 +42,7 @@ Après avoir évalué les différentes possibilités ci-dessus, deux choix s'off
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 ### Étape 2 : mise en ligne des fichiers du site sur l'espace de stockage
@@ -64,7 +64,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 - l’adresse de ce serveur ;
 - le port de connexion au serveur.
 
-Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
+Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 ![siteinstallation](images/tab-pro.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 
 - **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme FileZilla. Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} spécifique sont nécessaires pour utiliser ce type d'accès.
 
 #### 3. Télécharger les fichiers sur l'espace de stockage
 
@@ -109,9 +109,9 @@ Si vous êtes en train de migrer un site internet, récupérez la base de donné
 
 #### 2. Créer la base de données chez OVHcloud .
 
-Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} , munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
+Si vous disposez déjà d'une base de données que vous souhaitez utiliser (issue d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} , munissez-vous du nom d'utilisateur et de son mot de passe, du nom de la base de données ainsi que de l'adresse du serveur. Poursuivez alors vers l'étape suivante.
 
-Si vous souhaitez créer une nouvelle base de données chez OVHcloud, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis cliquez sur `Hébergements`{.action}. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `Base de données`{.action}.
+Si vous souhaitez créer une nouvelle base de données chez OVHcloud, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, puis cliquez sur `Hébergements`{.action}. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `Base de données`{.action}.
 
 Dès lors, cliquez sur le bouton `Créer une base de données`{.action} ou, si ce dernier n'apparaît pas, sur `Actions`{.action} puis sur `Créer une base de données`{.action}. Suivez alors les informations qui s'affichent.
 
@@ -127,7 +127,7 @@ Il existe plusieurs méthodes pour effectuer cet import. OVHcloud en propose une
 
 Une fois la base de données disponible et les fichiers téléchargés sur votre espace de stockage, il ne vous reste plus qu'à les relier. Pour cela, vous devez être en possession des informations permettant de vous connecter à la base de données : un nom d'utilisateur, son mot de passe, le nom de la base de données ainsi que de l'adresse du serveur.
 
-Créer ce lien dépend du site internet que vous êtes en train de mettre en ligne. Celui-ci est inhérent à la configuration du site internet et non à OVHcloud. Nous vous recommandons donc de vous rapprocher de l'éditeur de votre site ou de faire appel à un professionnel tel qu'un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous souhaitez obtenir de l'aide pour réaliser cette manipulation.
+Créer ce lien dépend du site internet que vous êtes en train de mettre en ligne. Celui-ci est inhérent à la configuration du site internet et non à OVHcloud. Nous vous recommandons donc de vous rapprocher de l'éditeur de votre site ou de faire appel à un professionnel tel qu'un [prestataire spécialisé](/links/partner) si vous souhaitez obtenir de l'aide pour réaliser cette manipulation.
 
 ### Étape 4 : accéder à votre site internet
 
@@ -141,7 +141,7 @@ Si vous constatez que celui-ci ne s'affiche pas correctement, nous vous conseill
 
 - **vérifier que le code du site ne comporte pas d'erreur** : cette vérification est sûrement la plus technique, mais il se peut que les fichiers que vous avez téléchargés comportent des erreurs et ne permettent pas au serveur d'afficher correctement, voir pas du tout, votre site internet.
 
-Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de votre site internet, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service (du CMS installé par exemple).
+Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de votre site internet, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service (du CMS installé par exemple).
 
 ## Aller plus loin
 
@@ -153,8 +153,8 @@ Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de vot
 
 [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

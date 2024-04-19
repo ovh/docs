@@ -27,7 +27,7 @@ Several error messages may appear on your browser in the event of your site bein
 ## Requirements
 
 - control over your domain’s servers and [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- access to the [OVHcloud Control Panel](/links/manager)
 - being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
@@ -42,7 +42,7 @@ Several error messages may appear on your browser in the event of your site bein
 > As a result, we strongly recommend that you enable [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instructions) for all of your OVHcloud subscriptions.
 >
 
-To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), then click on `Products and services`{.action} within the right-hand menu.
+To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `Products and services`{.action} within the right-hand menu.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
@@ -54,7 +54,7 @@ After the renewal of your offer is completed, your website will be available wit
 
 ### Step 2: check the DNS servers
 
-To check that your [DNS servers](/pages/web_cloud/domains/dns_server_general_information) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), then on your domain name.
+To check that your [DNS servers](/pages/web_cloud/domains/dns_server_general_information) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](/links/manager), then on your domain name.
 
 #### Scenario 1: no anomalies appear on the DNS servers
 
@@ -84,7 +84,7 @@ Your website will then be available within a maximum of 48 hours.
 
 > [!warning]
 >
-> In this situation, please contact your DNS Zone provider, your webmaster or a [OVHcloud partner](https://partner.ovhcloud.com/asia/directory/) before making any changes.
+> In this situation, please contact your DNS Zone provider, your webmaster or a [OVHcloud partner](/links/partner) before making any changes.
 >
 > The DNS servers used by your domain name may be functional and the problem accessing your website be linked to a missing or incorrect entry in the active [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns). Changing the DNS servers in this situation might make your e-mail addresses or other online applications related to your domain name unavailable.
 >
@@ -113,7 +113,7 @@ In this step, you will find your hosting plan’s IP address, then add it to you
 
 If your site is not hosted on the OVHcloud infrastructure or is managed by another provider, please contact the concerned support service.
 
-If your site is hosted on one of our [Cloud web offers](https://www.ovhcloud.com/asia/web-hosting/), click on the `Hosting plans`{.action} tab and choose the web hosting offer which contains your website.
+If your site is hosted on one of our [Cloud web offers](/links/web/hosting), click on the `Hosting plans`{.action} tab and choose the web hosting offer which contains your website.
 
 In the `General information`{.action} tab, copy the IPV4 and/or IPV6 address of your domain name.
 
@@ -133,8 +133,8 @@ Your website will then be available within a maximum of 24 hours.
 
 [Resolving the most common 1-click module errors](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

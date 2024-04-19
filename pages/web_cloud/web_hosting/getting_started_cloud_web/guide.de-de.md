@@ -16,10 +16,10 @@ Unser Cloud Web Hosting Angebot kombiniert 20 Jahre Webhosting-Erfahrung mit der
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Angebot.
+- Sie verfügen über ein [Cloud Web Hosting](/links/web/hosting-cloud-web-offer) Angebot.
 - Sie haben die Bestätigungs-E-Mail zur Installation Ihres Cloud Web Hostings erhalten.
-- Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/), über die Ihre Website erreichbar sein wird.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie besitzen eine [Domain](/links/web/domains), über die Ihre Website erreichbar sein wird.
+- Sie sind in Ihrem [Kundencenter](/links/manager) eingeloggt.
 
 ## In der praktischen Anwendung
 
@@ -31,7 +31,7 @@ Cloud Web Hosting bietet mehr Konfigurationsmöglichkeiten als ein klassisches W
 
 - **Ermitteln Sie die technischen Voraussetzungen für die Installation**: Möglicherweise müssen für Ihr Projekt bestimmte technische Voraussetzungen erfüllt sein. Überprüfen Sie diese am besten im Voraus.
 
-- **Stellen Sie sicher, dass Ihr Projekt mit Cloud Web Hosting technisch kompatibel ist**: Benötigen Sie eine bestimmte Runtime Engine oder SQL-Sprache? Falls Sie das noch nicht getan haben, überprüfen Sie, dass alles, was Sie brauchen, bei Ihrem [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Hosting verfügbar ist.
+- **Stellen Sie sicher, dass Ihr Projekt mit Cloud Web Hosting technisch kompatibel ist**: Benötigen Sie eine bestimmte Runtime Engine oder SQL-Sprache? Falls Sie das noch nicht getan haben, überprüfen Sie, dass alles, was Sie brauchen, bei Ihrem [Cloud Web](/links/web/hosting-cloud-web-offer) Hosting verfügbar ist.
 
 Nachdem Sie sich die verschiedenen Optionen angesehen und Ihr Projekt genau definiert haben, können Sie mit der Umsetzung beginnen.
 
@@ -46,11 +46,11 @@ Aktuell sind folgende Programmiersprachen verfügbar:
 - Python
 - Ruby
 
-Um zu den Runtime Engines Ihres Cloud Web Hostings zu gelangen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Web Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
+Um zu den Runtime Engines Ihres Cloud Web Hostings zu gelangen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Web Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
 
 Bei der Installation Ihres Hostings wird automatisch eine Engine erstellt und als `Standardauswahl` in der zugehörigen Tabelle angezeigt. Um eine bereits eingerichtete Runtime Engine zu bearbeiten, klicken Sie auf die drei Punkte rechts daneben und anschließend auf `Bearbeiten`{.action}. 
 
-Je nach [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Angebot können Sie auch zusätzliche Runtime Engines hinzufügen. Klicken Sie hierzu auf den Button `Aktionen`{.action} und anschließend auf `Runtime Engine hinzufügen`{.action}. Bitte beachten Sie, das die maximale Anzahl an Runtime Engines von dem von Ihnen bestellten Cloud Web Angebot abhängig ist.
+Je nach [Cloud Web](/links/web/hosting-cloud-web-offer) Angebot können Sie auch zusätzliche Runtime Engines hinzufügen. Klicken Sie hierzu auf den Button `Aktionen`{.action} und anschließend auf `Runtime Engine hinzufügen`{.action}. Bitte beachten Sie, das die maximale Anzahl an Runtime Engines von dem von Ihnen bestellten Cloud Web Angebot abhängig ist.
 
 Überprüfen Sie daher, bevor Sie fortfahren, dass Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen.
 
@@ -117,7 +117,7 @@ Es gibt zwei mögliche Vorgehensweisen, um Ihr Projekt einzurichten. Wenn Sie me
 
 #### 1. OVHcloud 1-Klick-Module verwenden
 
-Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung. Nähere Informationen finden Sie auf der Webseite [„Erstellen Sie Ihre Website mit 1-Klick-Modulen“](https://www.ovhcloud.com/de/web-hosting/uc-website/){.external}.
+Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung. Nähere Informationen finden Sie auf der Webseite [„Erstellen Sie Ihre Website mit 1-Klick-Modulen“](/links/web/hosting-website){.external}.
 
 Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klicken Sie bei dem entsprechenden Cloud Web Hosting auf den Tab `1 Klick Module`{.action} und anschließend auf `Ein Modul hinzufügen`{.action}. Nun können Sie auswählen, ob Sie eine „einfache“ (nicht personalisierbare) Installation oder die Installation „im Experten-Modus“ (mit anpassbaren Optionen) durchführen möchten.
 
@@ -132,7 +132,7 @@ Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie 
 
 #### 2. Projekt manuell einrichten
 
-Die manuelle Einrichtung Ihres Projekts ist um einiges technischer und erfordert zusätzliche Kenntnisse Ihrerseits − egal ob Sie eine neue Website erstellen oder eine bereits existierende migrieren möchten. Deshalb empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber der Software zu kontaktieren. 
+Die manuelle Einrichtung Ihres Projekts ist um einiges technischer und erfordert zusätzliche Kenntnisse Ihrerseits − egal ob Sie eine neue Website erstellen oder eine bereits existierende migrieren möchten. Deshalb empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber der Software zu kontaktieren. 
 
 Wenn Sie sich für die manuelle Installation entschieden haben, benötigen Sie alle Dateien der Website oder Anwendung, die Sie einrichten möchten. Falls Sie zuvor eine Datenbank auf Ihrem Cloud Web Hosting angelegt haben, brauchen Sie außerdem die zugehörigen Angaben und Login-Daten. Wenn Sie eine Website migrieren, erstellen Sie zunächst ein komplettes Backup aller zugehörigen Daten.
 
@@ -150,8 +150,8 @@ Es gibt mehrere zu OVHcloud gehörige DNS-Einträge. Wir interessieren uns an di
 
 |DNS-Eintrag|Zugehöriger Dienst|Wo finde ich den Eintrag?|
 |---|---|---|
-|A|Für die Website|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Hosting-Pakete`{.action} zum betreffenden Cloud Web Hosting. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.|
-|MX|Für E-Mails|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `E-Mails`{.action} zur betreffenden Domain. Dann suchen Sie in dem Tab `Allgemeine Informationen`{.action} die Angaben, die neben dem Punkt „MX Einträge“ stehen.|
+|A|Für die Website|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} im Bereich `Hosting-Pakete`{.action} zum betreffenden Cloud Web Hosting. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.|
+|MX|Für E-Mails|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} im Bereich `E-Mails`{.action} zur betreffenden Domain. Dann suchen Sie in dem Tab `Allgemeine Informationen`{.action} die Angaben, die neben dem Punkt „MX Einträge“ stehen.|
 
 #### 2. DNS-Einträge überprüfen oder bearbeiten
 
@@ -161,14 +161,14 @@ Nun, da Sie die DNS-Einträge für Ihr Cloud Web Hosting und Ihr OVHcloud E-Mail
 >
 > - Wenn Ihre Domain nicht die DNS-Konfiguration von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration verwaltet wird.
 > 
-> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere DNS-Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
+> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob sie unsere DNS-Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](/links/manager){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
 >
 
 Lesen Sie in der folgenden Tabelle, wo Sie die entsprechenden Änderungen vornehmen:
 
 |Verwendete DNS-Konfiguration|Wo nehme ich die Änderungen vor?|
 |---|---|
-|OVHcloud|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Bearbeiten der OVHcloud DNS-Zone“](/pages/web_cloud/domains/dns_zone_edit){.external}|
+|OVHcloud|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Bearbeiten der OVHcloud DNS-Zone“](/pages/web_cloud/domains/dns_zone_edit){.external}|
 |Andere|Verwenden Sie das Interface des Anbieters, der die DNS-Konfiguration Ihrer Domain verwaltet. Bei Problemen wenden Sie sich bitte an Ihren Anbieter.|
 
 Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von bis zu 24 Stunden, bis sie voll wirksam ist. Falls Sie mehrere Domains als Multisite mit Ihrem Cloud Web Hosting verbunden haben, müssen die notwendigen Änderungen für jede Domain einzeln durchgeführt werden. 
@@ -195,8 +195,8 @@ Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfe
 
 [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

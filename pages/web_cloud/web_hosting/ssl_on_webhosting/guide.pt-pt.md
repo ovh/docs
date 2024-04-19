@@ -16,9 +16,9 @@ O seu alojamento web permite-lhe gerir um certificado SSL. Podem encomendá-lo a
 
 ## Requisitos
 
-- Dispor de um [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Ter registado, pelo menos, um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”.
+- Dispor de um [alojamento web da OVHcloud](/links/web/hosting){.external}.
+- Ter registado, pelo menos, um [nome de domínio](/links/web/domains){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, na secção “Web”.
 
 ## Instruções
 
@@ -34,7 +34,7 @@ Também pode [eliminar o certificado SSL num alojamento web](#deletessl). **Tenh
 
 ### 1. Ativar um certificado SSL num multisite <a name="multisite"></a>
 
-Em função do [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external} que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
+Em função do [certificado SSL](/links/web/hosting-options-ssl){.external} que pretende encomendar, pode ativar uma ligação SSL segura num ou vários dos seus multi-sites. Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
 
 Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna "SSL" mostra-lhe o estado de ativação das ligações SSL seguras nos seus multi-sites.
 
@@ -89,13 +89,13 @@ Antes de realizar esta configuração, certifique-se de que a etapa anterior de 
 >
 > Para mais informações, consulte os nossos manuais [sobre a configuração de uma entrada multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) ou sobre [a configuração de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 
-O alojamento web da OVHcloud permite-lhe ativar um [certificado SSL graças a várias soluções](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}:
+O alojamento web da OVHcloud permite-lhe ativar um [certificado SSL graças a várias soluções](/links/web/hosting-options-ssl){.external}:
 
-- um certificado SSL gratuito Let's Encrypt, [incluído num plano de alojamento web compatível](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external};
-- um certificado SSL pago, [como opção num plano de alojamento web compatível](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external};
+- um certificado SSL gratuito Let's Encrypt, [incluído num plano de alojamento web compatível](/links/web/hosting-options-ssl){.external};
+- um certificado SSL pago, [como opção num plano de alojamento web compatível](/links/web/hosting-options-ssl){.external};
 - a importação de um certificado SSL encomendado junto de outro fornecedor.
 
-Para ativar o certificado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Clique no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve surgir a menção “Não”, o que indica que não há nenhum certificado instalado no alojamento web. 
+Para ativar o certificado, aceda à [Área de Cliente OVHcloud](/links/manager){.external}e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Clique no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve surgir a menção “Não”, o que indica que não há nenhum certificado instalado no alojamento web. 
 
 Clique no botão `...`{.action} junto de “Certificado SSL” e, a seguir, em `Encomendar um certificado SSL`{.action}.
 
@@ -103,7 +103,7 @@ Por outro lado, se vir a menção “Sim”, isto significa que um certificado S
 
 ![managessl](images/order-an-ssl-certificate.png){.thumbnail}
 
-Na janela que aparecer, selecione o certificado SSL que pretende encomendar. Em função da sua [oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} e da respetiva configuração, é possível que nenhuma das soluções apresentadas abaixo esteja disponível. Uma vez selecionada uma opção, clique no botão `Seguinte`{.action}.
+Na janela que aparecer, selecione o certificado SSL que pretende encomendar. Em função da sua [oferta de alojamento web](/links/web/hosting){.external} e da respetiva configuração, é possível que nenhuma das soluções apresentadas abaixo esteja disponível. Uma vez selecionada uma opção, clique no botão `Seguinte`{.action}.
 
 ![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
@@ -123,12 +123,12 @@ A configuração do certificado pode demorar alguns minutos ou vários dias, dep
 
 > [!primary]
 >
-> Esta operação aplica-se apenas aos certificados SSL gratuitos Let's Encrypt [incluído num plano de alojamento web compatível](https://www.ovhcloud.com/pt/web-hosting/options/ssl/) que permitem ativar uma ligação SSL segura para vários multi-sites.
+> Esta operação aplica-se apenas aos certificados SSL gratuitos Let's Encrypt [incluído num plano de alojamento web compatível](/links/web/hosting-options-ssl) que permitem ativar uma ligação SSL segura para vários multi-sites.
 >
 
 Depois de ativar uma ligação SSL segura num ou vários dos seus multisites, o estado indica “A gerar / atualizar”. Esta geração é essencial para poder adicionar ao certificado SSL do seu alojamento web.
 
-Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos` e escolha o nome do alojamento correspondente. Clique no separador `Informações gerais`{.action}. A seguir, clique nos três pontos junto de “Certificado SSL” e selecione `Gerar / atualizar certificado SSL`{.action}.
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos` e escolha o nome do alojamento correspondente. Clique no separador `Informações gerais`{.action}. A seguir, clique nos três pontos junto de “Certificado SSL” e selecione `Gerar / atualizar certificado SSL`{.action}.
 
 ![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
 
@@ -144,7 +144,7 @@ Se pretender, também pode eliminar o certificado SSL atualmente instalado no se
 
 Como esta verificação se realiza diretamente na configuração do website, recomendamos que recorra a um fornecedor especializado se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica.
 
-Quando estiver preparado para eliminar o certificado SSL, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. Clique nos três pontos junto de “Certificado SSL” e selecione a opção `Eliminar o certificado SSL`{.action}.
+Quando estiver preparado para eliminar o certificado SSL, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. Clique nos três pontos junto de “Certificado SSL” e selecione a opção `Eliminar o certificado SSL`{.action}.
 
 Na página que aparecer, valide a eliminação. Esta última será concluída em algumas horas.
 
@@ -192,12 +192,12 @@ Esta mensagem é apresentada nos seguintes casos:
 
 - 1: A regra de reencaminhamento para o seu URL em "HTTPS" está mal configurada ou não existe no ficheiro ".htaccess":
 
-Para corrigir isto, consulte o nosso tutorial "[Reescrever o URL de acesso ao meu site graças ao mod_rewrite através do ficheiro .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" ou recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se encontrar dificuldades.
+Para corrigir isto, consulte o nosso tutorial "[Reescrever o URL de acesso ao meu site graças ao mod_rewrite através do ficheiro .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)" ou recorra a um [fornecedor especializado](/links/partner) se encontrar dificuldades.
 
 - 2 : Alguns elementos da página web não são corretamente reencaminhados para elementos encriptados em "HTTPS":
 
 Para corrigir isto, deve certificar-se de que o conjunto do seu website está encriptado com o protocolo "HTTPS".
-Se necessário, consulte o nosso tutorial "[Alojamento web: transformar o seu website em HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" ou recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se encontrar dificuldades.
+Se necessário, consulte o nosso tutorial "[Alojamento web: transformar o seu website em HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)" ou recorra a um [fornecedor especializado](/links/partner) se encontrar dificuldades.
 
 > [!success]
 >
@@ -224,8 +224,8 @@ Para editar a zona DNS ativa do seu domínio, consulte o guia "[Editar uma zona 
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

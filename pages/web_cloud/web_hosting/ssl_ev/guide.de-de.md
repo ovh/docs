@@ -12,7 +12,7 @@ updated: 2023-06-08
 
 Secure Socket Layer (SSL) Zertifikate erlauben es, Verbindungen von oder zu Ihrer Website zu verschlüsseln. So wird verhindert, dass unbefugte Personen oder Roboter auf ausgehende und eingehende Anfragen von Ihrer Website zugreifen können.
 
-OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für die [Webhostings](https://www.ovhcloud.com/de/web-hosting/) an, wie in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)" beschrieben. SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
+OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für die [Webhostings](/links/web/hosting) an, wie in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)" beschrieben. SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
 
 Es gibt drei Arten von SSL-Zertifikaten:
 
@@ -39,9 +39,9 @@ Für OVHcloud Hosting-Dienste ist die Zertifizierungsstelle, die EV SSL-Zertifik
  
 ## Voraussetzungen <a name="requirements"></a>
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie bestellen oder verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), auf dem noch kein SSL Zertifikat installiert ist.
-- Sie bestellen oder verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) und dessen exklusive Nutzungsrechte. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie bestellen oder verfügen über ein [OVHcloud Webhosting](/links/web/hosting), auf dem noch kein SSL Zertifikat installiert ist.
+- Sie bestellen oder verfügen über einen [Domainnamen](/links/web/domains) und dessen exklusive Nutzungsrechte. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
 - Sie vertreten eine Organisation (Unternehmen, Regierungsbehörde, etc.), die in einem amtlichen Register eingetragen ist.
 - Sie haben die Genehmigung Ihrer Organisation, ein EV SSL-Zertifikat zu bestellen.
 - Sie sind in der Lage, Kontaktdaten und weitere Auskünfte zu Ihrer Organisation korrekt anzugeben.
@@ -53,7 +53,7 @@ Sie können über [diese Adresse](https://help.sectigostore.com/support/solution
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen keine Unterstützung **für jegliche von der Zertifizierungsstelle Sectigo durchgeführten Verifizierungen** anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen keine Unterstützung **für jegliche von der Zertifizierungsstelle Sectigo durchgeführten Verifizierungen** anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ### Schritt 1: EV SSL-Zertifikat bestellen
@@ -81,7 +81,7 @@ Führen Sie die Bestellung bis zur Zahlung durch, um die Anfrage zur Erstellung 
 
 #### 1.2 - Für einen neuen Domainnamen und ein neues Hosting
 
-Wenn Sie Ihren Domainnamen und das dazugehörige Hosting noch nicht bestellt haben, gehen Sie auf die [Startseite von OVHcloud](https://www.ovhcloud.com/de/), geben Sie einen Domainnamen in das dafür vorgesehene **Suchformular** ein und klicken Sie anschließend auf `Suchen`{.action}, um Ihre Bestellung zu starten.
+Wenn Sie Ihren Domainnamen und das dazugehörige Hosting noch nicht bestellt haben, gehen Sie auf die [Startseite von OVHcloud](/links/website), geben Sie einen Domainnamen in das dafür vorgesehene **Suchformular** ein und klicken Sie anschließend auf `Suchen`{.action}, um Ihre Bestellung zu starten.
 
 ![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
@@ -130,7 +130,7 @@ Die in diesem Schritt beschriebenen Aktionen können über mehrere Tage hinweg e
 Sobald Ihre Bestellung ausgeführt wurde, sendet Sectigo Ihnen eine E-Mail mit einem Validierungslink und der Ablaufprozedur.
 Überprüfen Sie Ihre Angaben und bestätigen Sie Ihre Anfrage gemäß den Informationen in dieser E-Mail. 
 
-Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse in Ihrem [OVHcloud Kundencenter](/links/manager).
 
 > [!primary]
 >
@@ -178,8 +178,8 @@ Sie müssen nur noch [Ihre Website auf HTTPS umstellen](/pages/web_cloud/web_hos
 
 [Ihre Website auf HTTPS umstellen](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

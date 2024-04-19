@@ -16,7 +16,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou ao editor do CMS. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou ao editor do CMS. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 >
 > Para contactar os diferentes editores dos CMS acima mencionados, consulte as ligações às respetivas páginas oficiais:
 >
@@ -32,16 +32,16 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente um CMS (Content
 
 > [!success]
 >
-> Para instalar o seu CMS **automaticamente** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para instalar o seu CMS **automaticamente** a partir do seu [Área de Cliente OVHcloud](/links/manager), consulte o nosso manual sobre a [instalação de um módulo "num clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 >
 
 **Descubra como configurar o seu website instalando manualmente um CMS.**
 
 ## Requisitos
 
-- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Ter um plano de [alojamento web](/links/web/hosting) que contenha, pelo menos, uma base de dados.
+- Dispor de um [nome de domínio](/links/web/domains)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
 ## Instruções
 
@@ -53,7 +53,7 @@ Para o ajudar a escolher o seu CMS, descubra em baixo uma breve descrição para
 
 **WordPress** é geralmente utilizado para criar um website ou um blogue. Baseia-se na tecnologia PHP e inclui uma gama variada de ferramentas como um corretor ortográfico, assim como plugins para o e-commerce, o SEO ou ainda a segurança do seu website.
 
-Encontre mais informações na nossa página sobre o [módulo WordPress](https://www.ovhcloud.com/pt/web-hosting/uc-wordpress-website/)
+Encontre mais informações na nossa página sobre o [módulo WordPress](/links/web/hosting-wordpress)
 
 - Site oficial da [WordPress](https://https://wordpress.com/){.external}
 
@@ -63,7 +63,7 @@ Encontre mais informações na nossa página sobre o [módulo WordPress](https:/
 
 A comunidade **Joomla!** é de grande dimensão e pode prestar assistência e serviços em todos os domínios relacionados com este CMS (ajuda, documentação, assistência técnica, temas, etc.)
 
-Encontre mais informações na nossa página sobre o [módulo Joomla!](https://www.ovhcloud.com/pt/web-hosting/uc-joomla-website/)
+Encontre mais informações na nossa página sobre o [módulo Joomla!](/links/web/hosting-joomla)
 
 - Site oficial de [Joomla!](https://www.joomla.org/){.external}
 
@@ -71,7 +71,7 @@ Encontre mais informações na nossa página sobre o [módulo Joomla!](https://w
 
 **Drupal** é uma plataforma open source sob PHP criada em 2000. **Drupal** permite criar rapidamente websites dinâmicos.
 
-Encontre mais informações na nossa página sobre o [módulo Drupal](https://www.ovhcloud.com/pt/web-hosting/uc-drupal-website/)
+Encontre mais informações na nossa página sobre o [módulo Drupal](/links/web/hosting-drupal)
 
 - Site oficial de [Drupal](https://www.drupal.org/){.external}
 
@@ -79,7 +79,7 @@ Encontre mais informações na nossa página sobre o [módulo Drupal](https://ww
 
 CMS criado em 2005 e dedicado à realização de websites de e-commerce. Para além das funcionalidades comuns das lojas online, este software também pode ser personalizado com módulos, temas e modelos. 
 
-Encontre mais informações na nossa página sobre o [módulo PrestaShop](https://www.ovhcloud.com/pt/web-hosting/uc-prestashop-website/)
+Encontre mais informações na nossa página sobre o [módulo PrestaShop](/links/web/hosting-prestashop)
 
 - Site oficial de [PrestaShop](https://www.prestashop.com/){.external}
 
@@ -114,7 +114,7 @@ Encontre mais informações na nossa página sobre o [módulo PrestaShop](https:
 
 ### Etapa 1 - preparar a instalação <a name="step1"></a>
 
-Para instalar um CMS na sua oferta de[alojamento web](https://www.ovhcloud.com/pt/web-hosting/), é necessário efetuar alguns preparativos.
+Para instalar um CMS na sua oferta de[alojamento web](/links/web/hosting), é necessário efetuar alguns preparativos.
 
 #### 1.1 - Verificar a declaração do "dossier raiz"
 
@@ -129,12 +129,12 @@ Consulte o nosso manual que descreve [como adicionar um multi-site ao seu alojam
 
 #### 1.2 - Verificar o "apontamento" do domínio
 
-- Certifique-se de que o domínio que utiliza para aceder ao seu CMS, bem como o subdomínio "www" apontam para o endereço IP do seu serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+- Certifique-se de que o domínio que utiliza para aceder ao seu CMS, bem como o subdomínio "www" apontam para o endereço IP do seu serviço de [alojamento web](/links/web/hosting).
 
-Para obter o endereço IP da sua oferta de alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action} e selecione a sua oferta de alojamento web na secção `Alojamentos`{.action}.<br>
+Para obter o endereço IP da sua oferta de alojamento web, aceda à [Área de Cliente OVHcloud](/links/manager) na parte `Web Cloud`{.action} e selecione a sua oferta de alojamento web na secção `Alojamentos`{.action}.<br>
 Na caixa `Informações gerais`{.action} à direita, encontrará o endereço IP do seu alojamento web no formulário `IPv4`{.action}.
 
-Se a zona DNS ativa do seu domínio for gerida no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), compare o endereço IP do seu alojamento com o endereço IP presente na zona DNS do seu domínio, através da nossa documentação sobre as [zonas DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+Se a zona DNS ativa do seu domínio for gerida no seu [Área de Cliente OVHcloud](/links/manager), compare o endereço IP do seu alojamento com o endereço IP presente na zona DNS do seu domínio, através da nossa documentação sobre as [zonas DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 > [!warning]
 >
@@ -167,7 +167,7 @@ Se ainda não utilizar um cliente FTP, pode utilizar o Filezilla. Encontre o lin
 > Alguns CMS funcionam sem base de dados. Se for o caso do CMS que deseja instalar, ignore esta etapa.
 >
 
-A maioria dos CMS precisam de uma base de dados para funcionar. As nossas ofertas de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) incluem-no, com exceção de [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/).
+A maioria dos CMS precisam de uma base de dados para funcionar. As nossas ofertas de [alojamento web](/links/web/hosting) incluem-no, com exceção de [alojamento gratuito 100M](/links/web/domains-free-hosting).
 
 Utilize o nosso manual para [criar uma base de dados a partir do seu alojamento web](/pages/web_cloud/web_hosting/sql_create_database).
 
@@ -408,8 +408,8 @@ Para prosseguir com a instalação, clique no guia correspondente ao seu CMS:
 
 [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as [nossas diferentes ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as [nossas diferentes ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

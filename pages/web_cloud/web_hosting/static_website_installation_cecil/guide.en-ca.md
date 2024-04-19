@@ -16,12 +16,12 @@ A website essentially composed of static web pages guarantees a better loading t
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](/links/partner) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- Have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
+- Have an [OVHcloud web hosting plan](/links/web/hosting) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
 - Be familiar with command line input.
 - Be able to transfer files via FTP with a client like [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide).
 - Configure your DNS zone to point your domain name (or subdomain) to your web hosting plan. This is particularly useful if you would like to host several websites in [multisites](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your shared web hosting plan.
@@ -29,7 +29,7 @@ A website essentially composed of static web pages guarantees a better loading t
 
 ## Instructions
 
-You can use [shared web hosting](https://www.ovhcloud.com/en-ca/web-hosting/) to declare domains or subdomains on multiple websites. You need a domain or subdomain to deploy your website created with **Cecil**.
+You can use [shared web hosting](/links/web/hosting) to declare domains or subdomains on multiple websites. You need a domain or subdomain to deploy your website created with **Cecil**.
 
 To help you declare a domain or subdomain on multiple websites on your hosting plan, go to our page “[Hosting multiple websites on your hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
 
@@ -154,7 +154,7 @@ You can view it on your server by typing your website URL, followed by `/mypage/
 
 #### Change on server
 
-You can edit Markdown files directly on the Web Hosting server. With your [Performance Hosting](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/) SSH access, you can use [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} or [vim](https://www.vim.org/){.external}.
+You can edit Markdown files directly on the Web Hosting server. With your [Performance Hosting](/links/web/hosting-performance-offer) SSH access, you can use [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} or [vim](https://www.vim.org/){.external}.
 The screenshots of this tutorial were taken under **GNU nano**.
 
 Edit the file `mypage.md` located in the `pages` directory by typing the following command if you are at the root of your site:
@@ -222,6 +222,6 @@ Using a template engine, widely used in the web developer community, will allow 
 
 [Our FileZilla user guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our community of users on <https://community.ovh.com/en/>.

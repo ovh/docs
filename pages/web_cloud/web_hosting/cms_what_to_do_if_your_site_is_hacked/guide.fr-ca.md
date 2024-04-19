@@ -22,13 +22,13 @@ Un piratage peut se manifester de plusieurs manières (liste non exhaustive) :
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/) avec votre site Web hébergé dessus.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer d'une [offre d'hébergement Web Cloud](/links/web/hosting) avec votre site Web hébergé dessus.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -91,7 +91,7 @@ Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) en cyber sécurité.
+> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](/links/partner) en cyber sécurité.
 >
 
 Utilisez notre guide sur [les statistiques et logs de votre hébergement Web](/pages/web_cloud/web_hosting/logs_and_statistics) pour rechercher les éléments malveillants injectés dans votre site web. Vous trouverez les informations dans les logs « web ». 
@@ -145,7 +145,7 @@ Faites coïncider au maximum les dates de restauration de votre espace de stocka
 > OVHcloud dispose de robots de sécurité qui peuvent détecter des actions malveillantes réalisées depuis votre hébergement. Ces derniers désactivent votre hébergement et vous notifient par e-mail que votre hébergement a été désactivé.
 > En complément de cet e-mail, une page « 403 Forbidden » apparaît généralement lorsque vous tentez d'accéder à votre site.
 >
-> Si votre hébergement est en état « désactivé », les robots de restauration automatique disponibles depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) seront désactivés également.
+> Si votre hébergement est en état « désactivé », les robots de restauration automatique disponibles depuis votre [espace client OVHcloud](/links/manager) seront désactivés également.
 > Vous devrez obligatoirement effectuer une restauration « manuelle » de votre site, supprimer les éléments malveillants résiduels puis corriger toutes les failles de sécurité présentes dans cette sauvegarde. Ceci **avant** de réactiver votre hébergement.
 >
 > Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden).
@@ -215,8 +215,8 @@ Consultez également notre guide sur [comment sécuriser votre site Web](/pages/
 
 [Optimiser les performances de son site](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

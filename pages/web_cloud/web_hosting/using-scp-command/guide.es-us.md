@@ -22,7 +22,7 @@ Permite copiar un archivo o una carpeta que contiene uno o varios archivos desde
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Para más información, consulte la sección ["Más información"](#go-further) de esta guía.
 >
 
 **Descubra cómo utilizar el comando Secure Copy Protocol (SCP) por SSH para copiar archivos desde o hacia su alojamiento web.**
@@ -31,8 +31,8 @@ Permite copiar un archivo o una carpeta que contiene uno o varios archivos desde
 
 - Tener un terminal compatible con los comandos Linux y SSH (por ejemplo, el *terminal* de MacOS o el emulador *Ubuntu* en Windows)
 - Familiarizarse con los comandos Linux y SSH
-- Tener contratado un plan de [alojamiento web](https://www.ovhcloud.com/es/web-hosting/) con acceso por SSH
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Tener contratado un plan de [alojamiento web](/links/web/hosting) con acceso por SSH
+- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}
 
 ## Procedimiento
 
@@ -143,6 +143,6 @@ Para comprobar que el contenido de su alojamiento web se ha copiado localmente e
 
 [Conectarse al espacio de almacenamiento FTP de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

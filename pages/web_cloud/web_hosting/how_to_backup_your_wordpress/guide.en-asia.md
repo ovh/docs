@@ -15,14 +15,14 @@ On a web hosting plan, you are responsible for your website’s backups. Althoug
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This tutorial explains how to back up the content of your WordPress website and its database.**
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) with [WordPress installed](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+- An [OVHcloud web hosting plan](/links/web/hosting) with [WordPress installed](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
 ## Instructions
 
@@ -146,8 +146,8 @@ By applying these best practices, you will have the possibility to restore the w
 - [WordPress official website](https://wordpress.org){.external}
 - [More information on backups for your web hosting plan](/pages/web_cloud/web_hosting/hosting_technical_specificities#automatic-backup-information)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

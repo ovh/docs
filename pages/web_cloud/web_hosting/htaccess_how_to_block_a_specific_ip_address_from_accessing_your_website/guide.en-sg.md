@@ -23,7 +23,7 @@ You can create multiple ".htaccess" files in [the FTP space](/pages/web_cloud/we
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- An [OVHcloud Web Hosting plan](/links/web/hosting)
 
 ## Instructions
 
@@ -367,6 +367,6 @@ Besides general access security to the hosting, the ".htaccess" file allows you 
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

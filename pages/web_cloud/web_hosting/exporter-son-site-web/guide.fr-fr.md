@@ -6,14 +6,14 @@ updated: 2022-02-03
 
 ## Objectif
 
-Ce guide vous présente les étapes pour exporter l’ensemble des éléments de votre site web au format standard, depuis un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+Ce guide vous présente les étapes pour exporter l’ensemble des éléments de votre site web au format standard, depuis un [hébergement web OVHcloud](/links/web/hosting){.external}.
 
 **Découvrez comment exporter votre site web OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une [offre d'hébergement web OVHcloud](/links/web/hosting){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -28,7 +28,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 - l’adresse du serveur.
 - le port de connexion au serveur.
 
-Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
+Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 ![export-website](images/tab-pro.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Une fois tous les éléments en votre possession, la récupération de vos fichi
 
 - **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [ FileZilla ](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](/links/web/hosting){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}. 
 
 #### 1.2 Télécharger les fichiers depuis votre espace de stockage.
 
@@ -101,8 +101,8 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}.
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

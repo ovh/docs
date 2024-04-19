@@ -28,7 +28,7 @@ Puoi creare diversi file ".htaccess" in [lo spazio FTP](/pages/web_cloud/web_hos
 
 ## Prerequisiti
 
-- Disporre di un [hosting condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di un [hosting condiviso OVHcloud](/links/web/hosting)
 
 ## Procedura
 
@@ -372,6 +372,6 @@ Indipendentemente dalla sicurezza sull'accesso generale all'hosting, il file ".h
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
