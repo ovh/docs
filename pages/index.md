@@ -207,7 +207,7 @@
             + [Configuring the vRack between the Public Cloud and a Dedicated Server](bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
     + [Virtual Private Servers](products/bare-metal-cloud-virtual-private-servers)
         + [Getting started](bare-metal-cloud-virtual-private-servers-getting-started)
-            + [Getting started with a VPS](bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
+            + [How to get started with a VPS](bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
             + [FAQ](bare_metal_cloud/virtual_private_servers/vps-faq)
             + [How to configure user accounts and root access on a server](bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
             + [Securing a VPS](bare_metal_cloud/virtual_private_servers/secure_your_vps)

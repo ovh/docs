@@ -50,7 +50,7 @@ The transfer procedure has several steps. These steps will involve various entit
 |[1](#step1)|[Checking the information associated with the domain](#step1)|The domain administrator|With the current registrar|Depends on your actions|
 |[2](#step2)|[Unlocking the domain and retrieving the transfer code](#step2)|The domain administrator, with the owner's permission|With the current registrar|Depends on your actions|
 |[3](#step3)|[Requesting the domain name transfer](#step3)|Whoever has the transfer code and the owner's permission|With the new registrar|Depends on your actions|
-|[4](#step4)|[Transfer confirmation|With the current registrar](#step4)|At the request of the organisation managing the domain name extension|Five days maximum|
+|[4](#step4)|[Transfer confirmation](#step4)|With the current registrar|At the request of the organisation managing the domain name extension|Five days maximum|
 
 > [!warning]
 >

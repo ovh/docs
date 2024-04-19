@@ -55,7 +55,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 |[1](#step1)|[Weryfikacja informacji związanych z domeną](#step1)|Administrator domeny|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
 |[2](#step2)|[Odblokowanie domeny i pobranie kodu transferu](#step2)|Administrator domeny, za zgodą właściciela|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
 |[3](#step3)|[Wniosek o transfer domeny](#step3)|Każda osoba posiadająca kod transferu, za zgodą właściciela|U nowego operatora (np. OVHcloud)|W zależności od podjętych przez Ciebie działań|
-|[4](#step4)|[Zatwierdzenie transferu|U obecnego operatora domeny](#step4)|Na prośbę organizacji zarządzającej rozszerzeniem Twojej domeny|Maksymalnie 5 dni|
+|[4](#step4)|[Zatwierdzenie transferu](#step4)|U obecnego operatora domeny|Na prośbę organizacji zarządzającej rozszerzeniem Twojej domeny|Maksymalnie 5 dni|
 
 > [!warning]
 >
