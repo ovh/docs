@@ -18,7 +18,7 @@ Découvre comment créer la première page d'un site web sur un hébergement gra
 ## Prérequis
 
 - Posséder un [nom de domaine](/links/web/domains)
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit 100M](/links/web/domains-free-hosting)
 - Avoir un éditeur de texte (bloc-notes, TextEdit, Notepad++, etc.)
 - Avoir installé un client FTP (tel que [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) pour téléverser (déposer sur l'hébergement) ses fichiers sur son espace dédié.
 

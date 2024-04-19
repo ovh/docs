@@ -6,7 +6,7 @@ updated: 2023-12-18
 
 ## Objective
 
-With [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external}, OVHcloud offers you a 100 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a 100M free hosting on your [domain name](/links/web/domains){.external}.
+With [100M free hosting](/links/web/domains-free-hosting){.external}, OVHcloud offers you a 100 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a 100M free hosting on your [domain name](/links/web/domains){.external}.
 
 > [!warning]
 >

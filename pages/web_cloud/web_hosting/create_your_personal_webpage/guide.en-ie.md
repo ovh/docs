@@ -17,7 +17,7 @@ Find out how to create the first page of a website on a 100M free hosting plan, 
 ## Requirements
 
 - A [domain name](/links/web/domains)
-- An [OVHcloud web hosting plan](/links/web/hosting) or a [100M free hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/)
+- An [OVHcloud web hosting plan](/links/web/hosting) or a [100M free hosting plan](/links/web/domains-free-hosting)
 - A text editor (Notepad, TextEdit, Notepad++, etc.)
 - An FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to transfer files to your hosting storage space
 

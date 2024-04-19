@@ -22,7 +22,7 @@ Saiba como criar a primeira página de um site num alojamento gratuito 100M grá
 ## Requisitos
 
 - Dispor de um [domínio](/links/web/domains)
-- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) ou um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/)
+- Ter um serviço de [alojamento web da OVHcloud](/links/web/hosting) ou um [Alojamento gratuito 100M](/links/web/domains-free-hosting)
 - Ter um editor de texto (bloco de notas, TextEdit, Notepad++, etc.)
 - Ter instalado um cliente FTP (por exemplo, [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) para telecarregar (colocar no alojamento) os seus ficheiros no seu espaço dedicado.
 

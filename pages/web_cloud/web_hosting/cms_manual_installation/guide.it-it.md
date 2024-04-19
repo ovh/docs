@@ -167,7 +167,7 @@ Se non utilizzi già un client FTP, puoi utilizzare Filezilla. Per maggiori info
 > Alcuni CMS funzionano senza database. Se questo è il caso del CMS che vuoi installare, salta questo step.
 >
 
-Per funzionare correttamente, la maggior parte dei CMS ha bisogno di un database. Le nostre offerte di [hosting web](/links/web/hosting) ne contengono, ad eccezione di [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/).
+Per funzionare correttamente, la maggior parte dei CMS ha bisogno di un database. Le nostre offerte di [hosting web](/links/web/hosting) ne contengono, ad eccezione di [Hosting gratuito 100M](/links/web/domains-free-hosting).
 
 Utilizza la nostra documentazione per [creare un database dalla tua offerta di hosting web](/pages/web_cloud/web_hosting/sql_create_database).
 

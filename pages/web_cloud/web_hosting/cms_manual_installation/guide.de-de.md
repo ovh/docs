@@ -166,7 +166,7 @@ Wenn Sie noch keinen FTP-Client verwenden, können Sie FileZilla installieren. D
 > Einige CMS funktionieren ohne Datenbanken. Wenn dies für das CMS der Fall ist, das Sie installieren möchten, überspringen Sie diesen Schritt.
 >
 
-Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting Angebote](/links/web/hosting) enthalten diese mit Ausnahme des [100M kostenlosen Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+Die meisten CMS benötigen eine Datenbank, um zu funktionieren. Unsere [Webhosting Angebote](/links/web/hosting) enthalten diese mit Ausnahme des [100M kostenlosen Hostings](/links/web/domains-free-hosting).
 
 Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank über Ihr Webhosting](/pages/web_cloud/web_hosting/sql_create_database).
 

@@ -21,7 +21,7 @@ Hier erfahren Sie, wie Sie die Homepage einer Website mit *Kostenloses Hosting 1
 ## Voraussetzungen
 
 - Sie verfügen über einen [Domainnamen](/links/web/domains).
-- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) oder ein [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) oder ein [Kostenloses Hosting 100M](/links/web/domains-free-hosting).
 - Sie haben einen Texteditor (Notepad, TextEdit, Notepad++, etc.).
 - Sie haben einen FTP-Client ([Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php) etc.) installiert, um Dateien auf Ihren Hosting-Speicherplatz zu übertragen.
 

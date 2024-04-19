@@ -167,7 +167,7 @@ Jeśli nie korzystasz już z klienta FTP, możesz użyć programu Filezilla. W d
 > Niektóre systemy CMS działają bez baz danych. Jeśli jest to przypadek systemu CMS, który chcesz zainstalować, pomiń ten krok.
 >
 
-Większość systemów CMS potrzebuje do działania bazy danych. Nasza oferta[hosting](/links/web/hosting) zawiera listę usług, z wyjątkiem [darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).
+Większość systemów CMS potrzebuje do działania bazy danych. Nasza oferta[hosting](/links/web/hosting) zawiera listę usług, z wyjątkiem [darmowy hosting 100M](/links/web/domains-free-hosting).
 
 Skorzystaj z naszej dokumentacji, aby [utworzyć bazę danych w ramach Twojego hostingu](/pages/web_cloud/web_hosting/sql_create_database).
 

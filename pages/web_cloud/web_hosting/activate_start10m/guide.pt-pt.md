@@ -10,7 +10,7 @@ updated: 2023-12-18
 
 ## Objetivo
 
-Com o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external}, a OVHcloud oferece-lhe um alojamento Web de 100MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](/links/web/domains){.external}.
+Com o [Alojamento gratuito 100M](/links/web/domains-free-hosting){.external}, a OVHcloud oferece-lhe um alojamento Web de 100MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](/links/web/domains){.external}.
 
 > [!warning]
 >
