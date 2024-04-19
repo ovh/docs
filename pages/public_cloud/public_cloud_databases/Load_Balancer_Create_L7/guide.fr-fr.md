@@ -234,7 +234,7 @@ resource "openstack_lb_loadbalancer_v2" "loadbalancer_1" {
   vip_subnet_id = "id_de_votre_subnet"
 }
 
-# Ressource pour du Listener
+# Ressource pour le Listener
 resource "openstack_lb_listener_v2" "listener_1" {
   name            = "mon-listener"
   protocol        = "HTTP"
@@ -249,8 +249,15 @@ resource "openstack_lb_l7policy_v2" "l7policy_1" {
   listener_id  = openstack_lb_listener_v2.listener_1.id
   redirect_url = "https://www.example.com"
 }
+
+# Ressource pour la Règle L7
+resource "openstack_lb_l7rule_v2" "l7rule_1" {
+  l7policy_id   = openstack_lb_l7policy_v2.l7policy_1.id
+  type          = "HOST_NAME"
+  compare_type  = "REGEX"
+  value         = ".*"
+}
 ```
-[GAL] Avoir une politiqyue sans règle n'a pas de sens. Ajouter une règle L7. 
 
 ## Pour Aller Plus Loin
 
