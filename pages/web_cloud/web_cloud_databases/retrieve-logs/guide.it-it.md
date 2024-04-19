@@ -20,7 +20,7 @@ La soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/Databas
 ## Prerequisiti
 
 - Disporre di una soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) (inclusa o meno in una soluzione di [hosting Web performance](https://www.ovhcloud.com/it/web-hosting/)).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}.
 
 ## Procedura
 
@@ -35,7 +35,7 @@ La soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/Databas
 
 Per verificare in tempo reale i log della soluzione Web Cloud Databases, esegui queste operazioni:
 
-1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu a tendina `Web Cloud Databases`{.action}.
 4. Seleziona la soluzione Web Cloud Databases.
@@ -65,7 +65,7 @@ Per recuperare lo storico dei log della soluzione Web Cloud Databases, è necess
 
 Per recuperare le informazioni di connessione in SFTP alla soluzione Web Cloud Databases, esegui queste operazioni:
 
-1. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu a tendina `Web Cloud Databases`{.action}.
 4. Seleziona la soluzione Web Cloud Databases.

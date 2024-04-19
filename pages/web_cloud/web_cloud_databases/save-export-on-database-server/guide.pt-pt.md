@@ -17,7 +17,7 @@ A sua base de dados pode conter um grande volume de informações essenciais ao 
 ## Requisitos
 
 - Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) {.external} (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
@@ -30,7 +30,7 @@ A sua base de dados pode conter um grande volume de informações essenciais ao 
 
 ### Salvaguardar e exportar uma base de dados a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Bases de dados`.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Bases de dados`.
 
 Ao nível da coluna **«Backups»**, o algarismo corresponde ao número de salvaguardas disponíveis para a sua base de dados.
 

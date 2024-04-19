@@ -18,13 +18,13 @@ A sua solução Web Cloud Databases está associada de forma padrão à rede de 
 ## Requisitos
 
 - Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) (associada a um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/)).
-- Aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Aceder à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
 ### Ativação do seu servidor Web Cloud Databases incluído com o seu plano de alojamento web
 
-Se a sua oferta de alojamento inclui a opção Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
+Se a sua oferta de alojamento inclui a opção Web Cloud Databases, aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
 
 No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Web Cloud Databases**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
 
@@ -34,7 +34,7 @@ Para concluir, siga as instruções seguintes para determinar o tipo e a versão
 
 ### Consultar informações gerais da instância Web Cloud Databases
 
-Na[Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Web Cloud Databases`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
+Na[Área de Cliente OVHcloud](/links/manager){.external}, no menu à esquerda, aceda à secção `Web Cloud Databases`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
 
 > [!primary]
 >

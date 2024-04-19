@@ -17,7 +17,7 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 ## Requisitos
 
 - Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es/web-hosting/)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -30,7 +30,7 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 
 ### Restaurar e importar una base de datos desde el área de clientes
 
-Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en la pestaña `Web` y seleccione `Web Cloud Databases`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
+Acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en la pestaña `Web` y seleccione `Web Cloud Databases`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
 
 En la columna **"Copias de seguridad"**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
 

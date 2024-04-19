@@ -17,13 +17,13 @@ Os servidores Web Cloud Databases oferecem-lhe a possibilidade de agir sobre os 
 ## Requisitos
 
 - Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Visualizar as informações gerais do servidor de bases de dados
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud Databases`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud Databases`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
 
 Esta secção apresenta as informações essenciais da instância SQL. Sugerimos que dedique alguns minutos para verificar se estão corretas ou se correspondem às indicações descritas a abaixo.
 
@@ -48,7 +48,7 @@ O seu Web Cloud Databases está acessível a partir dos seus alojamentos web da 
 
 Para que o acesso à sua instância Web Cloud Databases funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados.
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud Databases`{.action} e clique na Web Cloud Databases SQL em causa. 
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud Databases`{.action} e clique na Web Cloud Databases SQL em causa. 
 
 Clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
@@ -70,14 +70,14 @@ Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os a
 > 
 > Se a sua oferta Web Cloud Databases está associada a uma oferta de alojamento web **Performance**, deverá obrigatoriamente e previamente desassociar a oferta Web Cloud Databases do seu alojamento **Performance** para migrar para uma oferta superior.
 >
-> Para desassociar uma oferta Web Cloud Databases associada a um alojamento web **Performance**, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud`{.action} e, a seguir, no separador `Alojamentos`{.action}, que aparece na coluna da esquerda. 
+> Para desassociar uma oferta Web Cloud Databases associada a um alojamento web **Performance**, aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud`{.action} e, a seguir, no separador `Alojamentos`{.action}, que aparece na coluna da esquerda. 
 >
 > Na nova página `Informações gerais`{.action}, encontrará no centro da página uma caixa intitulada `Configuração`{.action}. À direita da menção `Web Cloud Databases`{.action}, clique no botão `...`{.action} depois `Desassociar`{.action}. Escolha a duração da renovação mais curta e prossiga até à validação da encomenda.
 >
 > **Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**
 >
 
-Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
+Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 No separador **"Informações gerais"**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção "RAM" e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
 ![Web Cloud Databases](images/change-the-amount-of-ram.png){.thumbnail}
@@ -98,7 +98,7 @@ Após a validação dos contratos, será reencaminhado para a ordem de encomenda
 
 ### Alterar a configuração do servidor de bases de dados
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor Web Cloud Databases. 
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor Web Cloud Databases. 
 
 #### Instância MySQL e MariaDB
 
@@ -228,7 +228,7 @@ Para aceder aos logs da sua solução Web Cloud Databases, consulte o guia "[Web
 
 #### Acompanhar a RAM consumida
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **"Estatísticas de memória RAM utilizada"**.
 
@@ -238,7 +238,7 @@ Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **"
 
 Este gráfico permite acompanhar, relativamente às últimas 24 horas, o volume de conexões por minuto no servidor de bases de dados.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **"Estatísticas do total de conexões por minuto"**.
 

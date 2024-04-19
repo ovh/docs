@@ -18,13 +18,13 @@ Twoje rozwiązanie Web Cloud Databases jest domyślnie powiązane z siecią host
 ## Wymagania początkowe
 
 - Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartego w ofercie [pakiecie hostingowym performance](https://www.ovhcloud.com/pl/web-hosting/))
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce
 
 ### Włączenie prywatnego Web Cloud Databases zawartego w ofercie hostingu
 
-Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
+Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, przejdź do [Panelu klienta OVHcloud](/links/manager){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
 
 W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie **Web Cloud Databases**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 
@@ -34,7 +34,7 @@ Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej,
 
 ### Wyświetlanie informacji ogólnych o instancji
 
-W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W menu usług po lewej stronie [Panelu klienta](/links/manager){.external}, przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 > [!primary]
 >

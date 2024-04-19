@@ -16,7 +16,7 @@ With the [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/database
 ## Requirements
 
 - A [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) solution (included in a [Performance web hosting](https://www.ovhcloud.com/en-ie/web-hosting/) solution or standalone)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -31,7 +31,7 @@ With the [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/database
 
 To check the logs for your Web Cloud Databases solution in real time, perform the following actions:
 
-1. Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. In the top menu of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Web Cloud Databases`{.action} dropdown menu.
 4. Select the Web Cloud Databases solution concerned.
@@ -61,7 +61,7 @@ To retrieve the log history of your Web Cloud Databases solution, you will need 
 
 To retrieve the SFTP connection information for your Web Cloud Databases solution, perform the following actions:
 
-1. Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. In the top menu of the Control Panel, click on the `Web Cloud`{.action} tab.
 3. In the left-hand column, click on the `Web Cloud Databases`{.action} dropdown menu.
 4. Select the Web Cloud Databases solution concerned.

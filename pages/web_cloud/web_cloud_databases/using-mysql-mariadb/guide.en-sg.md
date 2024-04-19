@@ -25,7 +25,7 @@ This engine is 100% compatible, and is "freer" than its sibling MySQL. All the b
 ## Requirements
 
 - A [Web Cloud Databases instance](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
+- Access to the [OVHcloud Control Panel](/links/manager){.external}.
 - You need to have read the [Web Cloud Databases startup guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
 ## Instructions
@@ -50,7 +50,7 @@ To log in to your database, make sure that you have:
 - The password associated with the user
 - The database name
 
-All this information is available in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+All this information is available in the [OVHcloud Control Panel](/links/manager).
 
 Please also read our guide on [getting started with the Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

@@ -29,7 +29,7 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 ## Prerequisiti
 
 - Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Consulta la guida [all'avvio di Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ## Procedura
@@ -54,7 +54,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 - Disporre della password associata all'utente
 - Disporre del nome del tuo database
 
-Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](/links/manager).
 
 Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

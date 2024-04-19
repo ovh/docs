@@ -29,7 +29,7 @@ Este motor é 100% compatível, e é mais "livre" que o seu irmão mais velho My
 ## Pre-requisitos
 
 - Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/){.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Consultar o [guia de arranque do Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ## Instruções
@@ -54,7 +54,7 @@ De forma a poder ligar-se à base de dados, assegure-se que:
 - Ter a palavra-passe associada ao utilizador
 - Ter o nome da base de dados
 
-Todas estas informações estão disponíveis no seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Todas estas informações estão disponíveis no seu [Espaço Cliente OVHcloud](/links/manager).
 
 Temos á sua disposição um guia que será útil: [Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

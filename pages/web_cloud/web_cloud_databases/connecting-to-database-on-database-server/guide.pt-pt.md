@@ -17,7 +17,7 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 ## Requisitos
 
 - Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -37,7 +37,7 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ####  Pelo phpMyAdmin OVHcloud 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados.
 
 No separador `Informações gerais`, encontrará a ligação de acesso ao phpMyAdmin no quadro **"Gestão da base de dados"** sob a menção "Interface do utilizador".
 
@@ -49,11 +49,11 @@ Será conduzido à página de conexão do phpMyAdmin.
 
 Introduza os seguintes elementos para se ligar à sua base de dados:
 
-- **Servidor:** Indique o *nome do host* do seu servidor de bases de dados, seguido do *número da porta*. O *número da porta* deve ser separado do *nome do host* por um "**espaço**" ou por "**:**". Por exemplo, se o *nome do host* for **aaXXXXX-XXX.eu.clouddb.ovh.net** e o *número da porta* for **12345**, deverá introduzir-se **aaXXXXXXX-XXX.eu.clouddb.ovh.net:12345** ou **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**. Para encontrar o *nome do host* e o *número da porta* do seu servidor Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página `Informações gerais`, aparecerá o *nome do host* e o *número da porta* na caixa `Informações da ligação`.
+- **Servidor:** Indique o *nome do host* do seu servidor de bases de dados, seguido do *número da porta*. O *número da porta* deve ser separado do *nome do host* por um "**espaço**" ou por "**:**". Por exemplo, se o *nome do host* for **aaXXXXX-XXX.eu.clouddb.ovh.net** e o *número da porta* for **12345**, deverá introduzir-se **aaXXXXXXX-XXX.eu.clouddb.ovh.net:12345** ou **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**. Para encontrar o *nome do host* e o *número da porta* do seu servidor Web Cloud Databases, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página `Informações gerais`, aparecerá o *nome do host* e o *número da porta* na caixa `Informações da ligação`.
 
-- **Utilizador:** indique o *nome de utilizador* do servidor de bases de dados. Para encontrar o *nome de utilizador* da sua base de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}. Encontrará uma tabela com o conjunto dos utilizadores criados no seu serviço Web Cloud Databases.
+- **Utilizador:** indique o *nome de utilizador* do servidor de bases de dados. Para encontrar o *nome de utilizador* da sua base de dados, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}. Encontrará uma tabela com o conjunto dos utilizadores criados no seu serviço Web Cloud Databases.
 
-- **Palavra-passe:** indique a *palavra-passe* associada ao *nome de utilizador* em questão. Se já não se lembra da *palavra-passe* associada ao seu *nome de utilizador*, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}. Clique no botão `...`{.action} situado à direita de *o utilizador* em causa para `Alterar palavra-passe`{.action}.
+- **Palavra-passe:** indique a *palavra-passe* associada ao *nome de utilizador* em questão. Se já não se lembra da *palavra-passe* associada ao seu *nome de utilizador*, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}. Clique no botão `...`{.action} situado à direita de *o utilizador* em causa para `Alterar palavra-passe`{.action}.
 
 > [!warning]
 >

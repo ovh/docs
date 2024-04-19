@@ -29,7 +29,7 @@ Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni d
 ## Wymagania początkowe
 
 - Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Przeglądanie [przewodnik dotyczący uruchomienia usługi Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ## W praktyce
@@ -54,7 +54,7 @@ Aby zalogować się do bazy danych, musisz dysponować:
 - Hasło przypisane do użytkownika
 - Posiadanie bazy danych
 
-Wszystkie te informacje są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Wszystkie te informacje są dostępne w [Panelu klienta OVHcloud](/links/manager).
 
 Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

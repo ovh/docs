@@ -20,7 +20,7 @@ Mit der Datenbank-Lösung [Web Cloud Databases](https://www.ovhcloud.com/de/web-
 ## Voraussetzungen
 
 - Sie verfügen über [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten oder separat).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -34,7 +34,7 @@ Mit der Datenbank-Lösung [Web Cloud Databases](https://www.ovhcloud.com/de/web-
 
 So überprüfen Sie die Logs Ihrer Web Cloud Databases Lösung in Echtzeit:
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Web Cloud Databases`{.action}.
 4. Wählen Sie die betreffende Web Cloud Databases Lösung aus.
@@ -64,7 +64,7 @@ Um den Logverlauf Ihrer Web Cloud Databases Lösung abzurufen, muss eine SFTP-Ve
 
 So finden Sie die SFTP-Verbindungsinformationen zu Ihrer Web Cloud Databases Lösung:
 
-1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Web Cloud Databases`{.action}.
 4. Wählen Sie die betreffende Web Cloud Databases Lösung aus.

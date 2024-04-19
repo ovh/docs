@@ -20,7 +20,7 @@ Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databas
 ## Wymagania początkowe
 
 - Posiadanie rozwiązania [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartego lub nie w ofercie [hostingu performance](https://www.ovhcloud.com/pl/web-hosting/)).
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -35,7 +35,7 @@ Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databas
 
 Aby w czasie rzeczywistym sprawdzać logi rozwiązania Web Cloud Databases, wykonaj następujące czynności:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 3. W lewej kolumnie kliknij menu rozwijane `Web Cloud Databases`{.action}.
 4. Wybierz odpowiednie rozwiązanie Web Cloud Databases.
@@ -65,7 +65,7 @@ Aby pobrać historię logów rozwiązania Web Cloud Databases, należy połączy
 
 Aby uzyskać informacje na temat logowania przez SFTP do rozwiązania Web Cloud Databases, wykonaj następujące czynności:
 
-1. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
 3. W lewej kolumnie kliknij menu rozwijane `Web Cloud Databases`{.action}.
 4. Wybierz odpowiednie rozwiązanie Web Cloud Databases.

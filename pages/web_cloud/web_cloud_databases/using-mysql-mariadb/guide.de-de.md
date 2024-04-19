@@ -29,7 +29,7 @@ Das System ist 100% kompatibel und gilt insgesamt als „freier“ als das origi
 ## Voraussetzungen
 
 - Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (auch enthalten in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben die [Anleitung zum Start mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) befolgt.
 
 ## In der praktischen Anwendung
@@ -54,7 +54,7 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie:
 - Das Passwort des Benutzers
 - Den Namen Ihrer Datenbank
 
-Diese Informationen sind über Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehbar.
+Diese Informationen sind über Ihr [Kundencenter](/links/manager) einsehbar.
 
 Die Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
