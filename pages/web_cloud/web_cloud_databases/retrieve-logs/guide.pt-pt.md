@@ -28,7 +28,7 @@ Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 > 
-> Nós disponibilizamos-lhe este tutorial a fim de o acompanhar nas tarefas mais comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência na interpretação dos logs disponíveis com a sua solução Web Cloud Databases. Mais informações na secção "[Vá mais longe](#go-further)" deste tutorial.
+> Nós disponibilizamos-lhe este tutorial a fim de o acompanhar nas tarefas mais comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). Não poderemos proporcionar-lhe assistência na interpretação dos logs disponíveis com a sua solução Web Cloud Databases. Mais informações na secção "[Vá mais longe](#go-further)" deste tutorial.
 >
 
 ### Consultar os logs da solução Web Cloud Databases em tempo real
@@ -105,6 +105,6 @@ Poderá descarregá-lo para o seu computador para o consultar.
 
 [Primeiros passos com o seu Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

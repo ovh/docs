@@ -24,7 +24,7 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

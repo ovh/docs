@@ -28,7 +28,7 @@ La soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/Databas
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti assistenza nell’interpretazione dei log disponibili con la tua soluzione Web Cloud Databases. Per maggiori informazioni consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. In caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](/links/partner). OVHcloud non potrà fornirti assistenza nell’interpretazione dei log disponibili con la tua soluzione Web Cloud Databases. Per maggiori informazioni consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 >
 
 ### Consultare in tempo reale i log della soluzione Web Cloud Databases
@@ -105,6 +105,6 @@ Il file di log, chiamato `stdout.log`, si trova nella root.
 
 [Iniziare a utilizzare il Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -24,7 +24,7 @@ La solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/database
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur l'interprétation des logs disponibles avec votre solution Web Cloud Databases. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur l'interprétation des logs disponibles avec votre solution Web Cloud Databases. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 >
 
 ### Consulter les logs de votre solution Web Cloud Databases en temps réel
@@ -101,6 +101,6 @@ Vous pourrez le télécharger sur votre poste pour le consulter.
 
 [Premiers pas avec votre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

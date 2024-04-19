@@ -28,7 +28,7 @@ La solución [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/data
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Este tutorial le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). OVHcloud no podrá ayudarle a interpretar los logs disponibles con su solución Web Cloud Databases. Para más información, consulte el apartado "[Más información](#go-further)" de este tutorial.
+> Este tutorial le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner). OVHcloud no podrá ayudarle a interpretar los logs disponibles con su solución Web Cloud Databases. Para más información, consulte el apartado "[Más información](#go-further)" de este tutorial.
 >
 
 ### Consultar los logs de su solución Web Cloud Databases en tiempo real
@@ -105,6 +105,6 @@ Puede descargarlo en su equipo para consultarlo.
 
 [Primeros pasos con su Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

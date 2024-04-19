@@ -180,7 +180,7 @@ You are now connected to your database.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
