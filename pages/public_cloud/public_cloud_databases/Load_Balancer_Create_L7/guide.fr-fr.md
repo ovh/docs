@@ -177,16 +177,33 @@ Horizon, l'interface web d'OpenStack, offre une vue graphique sur la configurati
 
 ##### Configuration des Politiques L7
 
-- Trouvez le Load Balancer que vous souhaitez configurer et cliquez dessus pour accéder à ses détails.
-- Localisez le listener auquel vous souhaitez ajouter des politiques L7 et sélectionnez l'option pour gérer ou ajouter des politiques. [GAL] Il faut guider plus : il faut cliquer sur le listener pour avoir son détail. Ensuite on a un onglet L7 policies qui liste les policies. A partir de la "Create L7 Policy" 
-- Vous serez guidé à travers un formulaire pour définir le nom de la politique, l'action à entreprendre (par exemple, redirection vers une URL ou un pool spécifique), et tout critère spécifique pour activer la politique.
-- Une fois la politique créée, vous pouvez également ajouter des règles spécifiques à cette politique en suivant des étapes similaires. [GAL] Préciser comment ajouter une L7 Rule
+### Configuration de Politiques L7 sur un Load Balancer
 
-Que vous choisissiez la CLI pour sa rapidité et sa flexibilité dans les scripts, ou Horizon pour sa facilité d'utilisation et son interface graphique intuitive, ces outils augmentent considérablement votre capacité à gérer finement le trafic entrant sur vos applications déployées chez OVHcloud.
+1. **Accès au Load Balancer** :
+   - Naviguez jusqu'au Load Balancer que vous souhaitez configurer et cliquez dessus pour accéder à ses détails.
 
-Ce guide détaillé en markdown vous aide à naviguer à travers la configuration avancée des politiques et règles de niveau 7 pour les Load Balancers OVHcloud, en utilisant à la fois la ligne de commande et les interfaces graphiques fournies par OpenStack et OVHcloud. [GAL] Valeur ajoutée de cette phase ?
+2. **Gestion des Listeners** :
+   - Trouvez le listener auquel vous souhaitez ajouter des politiques L7 et cliquez dessus pour accéder à ses détails.
+   - Dans les détails du listener, localisez et cliquez sur l'onglet `L7 policies`. Cet onglet liste toutes les politiques existantes.
+   - Pour ajouter une nouvelle politique, cliquez sur le bouton `Create L7 Policy`.
 
+3. **Création de la Politique L7** :
+   - Vous serez guidé à travers un formulaire pour définir :
+     - **Nom de la politique** : Attribuez un nom unique à la politique.
+     - **Action** : Choisissez l'action que la politique doit exécuter (par exemple, REDIRECT_TO_URL, REDIRECT_TO_POOL, REJECT).
+     - **Conditions spécifiques** : Définissez tout critère spécifique qui doit être rencontré pour que la politique soit activée.
 
+4. **Ajout de Règles à la Politique** :
+   - Une fois la politique créée, pour ajouter des règles spécifiques à cette politique, retournez à l'écran de détails de la politique L7.
+   - Cliquez sur `Add Rule` pour configurer les règles qui détermineront les conditions précises sous lesquelles la politique s'appliquera.
+     - Vous serez invité à spécifier des critères tels que le type de condition (URI, Header, Cookie), le type de comparaison (EQUAL_TO, STARTS_WITH, etc.), et les valeurs à comparer.
+
+### Outils de Gestion
+
+- **CLI (Command Line Interface)** : Idéale pour ceux qui préfèrent une approche scriptable et rapide pour la gestion des configurations.
+- **Horizon (Interface Graphique)** : Parfait pour ceux qui privilégient une interface visuelle intuitive pour la navigation et la gestion des configurations. Horizon est particulièrement utile pour les utilisateurs moins familiers avec la ligne de commande.
+
+Que vous optiez pour la CLI pour sa rapidité et sa flexibilité dans les scripts, ou Horizon pour sa facilité d'utilisation et son interface graphique intuitive, ces outils augmentent considérablement votre capacité à gérer finement le trafic entrant sur vos applications déployées chez OVHcloud.
   
 ### Étape 3 : Configuration Automatisée avec Terraform
 
