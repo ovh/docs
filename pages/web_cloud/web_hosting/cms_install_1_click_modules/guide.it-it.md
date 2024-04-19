@@ -37,7 +37,7 @@ Un CMS permette di progettare un sito Web tramite un'interfaccia di facile utili
 
 Tra tutti i CMS, OVHcloud ne propone 4 per l'installazione automatica con i "moduli in 1 click". 
 
-Utilizzando questa soluzione, dovrai scegliere tra i 4 CMS citati sopra. Se hai già scelto OVH, prosegui nella lettura degli step di questa guida. In caso contrario, consulta la nostra pagina [comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/) per effettuare la tua scelta.
+Utilizzando questa soluzione, dovrai scegliere tra i 4 CMS citati sopra. Se hai già scelto OVH, prosegui nella lettura degli step di questa guida. In caso contrario, consulta la nostra pagina [comparativa dei CMS](/links/web/hosting-cms-comparison) per effettuare la tua scelta.
 
 Per installare un CMS non disponibile tramite i nostri "moduli in 1 click", è possibile installarlo manualmente sul tuo hosting. Questo CMS è compatibile con le nostre soluzioni di [hosting Web OVHcloud](/links/web/hosting).
 
@@ -212,7 +212,7 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 ## Per saperne di più
 
-[Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}.
+[Scegli il CMS per il tuo sito Web](/links/web/hosting-cms-comparison){.external}.
 
 [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 

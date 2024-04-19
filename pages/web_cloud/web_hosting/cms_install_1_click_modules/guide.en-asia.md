@@ -33,7 +33,7 @@ With a CMS, you can build a website via an easy-to-use interface. Several types 
 
 Of all CMSs, OVHcloud offers 4 with its 1-click modules, which can be installed automatically. 
 
-Using this solution, you will need to choose from the 4 CMSs listed above. If you have already made your choice, continue reading the steps in this guide. Otherwise, please refer to our [CMS comparison](https://www.ovhcloud.com/asia/web-hosting/uc-cms-comparison/) to make your choice.
+Using this solution, you will need to choose from the 4 CMSs listed above. If you have already made your choice, continue reading the steps in this guide. Otherwise, please refer to our [CMS comparison](/links/web/hosting-cms-comparison) to make your choice.
 
 If you would like to install a CMS that is not available as a 1-click modules, you can install it manually on your web hosting plan. This is provided that the CMS is compatible with our [OVHcloud web hosting offers](/links/web/hosting).
 
@@ -205,7 +205,7 @@ If you need help with your CMS's features, please contact the publisher of the C
 
 ## Go further
 
-[Choosing a CMS for building your website](https://www.ovhcloud.com/asia/web-hosting/uc-cms-comparison/){.external}.
+[Choosing a CMS for building your website](/links/web/hosting-cms-comparison){.external}.
 
 [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
