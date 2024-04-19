@@ -1,8 +1,12 @@
 ---
-title: 'Guide : Création et Gestion des Policies et Règles de Niveau 7 (L7) pour les Load Balancers Public Cloud OVHcloud'
+title: 'Guide : Création et Gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud'
 excerpt: 'Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) pour les Load Balencers Public Cloud OVHcloud'
 updated: 2024-04-17
 ---
+
+title: 'Guide : Création et Gestion d’un Health Monitor pour le Load Balancer Public Cloud OVHcloud'
+excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Load Balancers Public Cloud OVHcloud via l'espace client OVHcloud, CLI, Horizon et Terraform'
+updated: 2024-04-17
 
 ## Objectif
 
