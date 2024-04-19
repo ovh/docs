@@ -1,7 +1,7 @@
 ---
-title: 'Guide : Création et Gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud'
-excerpt: 'Découvrez comment configurer et gérer des Policies et règles de niveau 7 (L7) pour les Load Balencers Public Cloud OVHcloud'
-updated: 2024-04-17
+title: Guide : Création et Gestion d'un Health Monitor pour le Load Balancer Public Cloud OVHcloud
+excerpt: This guide walks you through various methods to optimize the performance of your OVHcloud Object Storage buckets, including using byte range fetches and multipart uploads.
+updated: 2024-03-19
 ---
 
 ## Objectif
