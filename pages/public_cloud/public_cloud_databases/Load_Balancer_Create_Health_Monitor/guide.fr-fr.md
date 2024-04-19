@@ -1,6 +1,6 @@
 ---
 title: 'Guide : Création et Gestion d’un Health Monitor pour le Load Balancer Public Cloud OVHcloud'
-excerpt: 'Maîtrisez la mise en place et la gestion d’un Health Monitor avec les Load Balancers Public Cloud OVHcloud via l'espace client OVHcloud, CLI, Horizon et Terraform'
+excerpt: 'aîtrisez la mise en place et la gestion d’un Health Monitor avec les Load Balancers Public Cloud OVHcloud via l'espace client OVHcloud, CLI, Horizon et Terraform'
 updated: 2024-04-17
 ---
 
