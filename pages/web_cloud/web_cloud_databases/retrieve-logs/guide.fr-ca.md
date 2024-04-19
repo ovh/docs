@@ -6,7 +6,7 @@ updated: 2024-03-07
 
 ## Objectif
 
-La solution [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) permet d'héberger plusieurs bases de données. Dans certaines situations, vous pouvez être amené à consulter / récupérer les logs  :
+La solution [Web Cloud Databases](/links/web/databases) permet d'héberger plusieurs bases de données. Dans certaines situations, vous pouvez être amené à consulter / récupérer les logs  :
 
 - de votre serveur Web Cloud Databases ;
 - pour l'une des bases de données hébergée sur votre serveur Web Cloud Databases.
@@ -15,8 +15,8 @@ La solution [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/datab
 
 ## Prérequis
 
-- Disposer d'une solution [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) (incluse ou non dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr-ca/web-hosting/)).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Disposer d'une solution [Web Cloud Databases](/links/web/databases) (incluse ou non dans une offre d'[hébergement web performance](/links/web/hosting)).
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -24,14 +24,14 @@ La solution [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/datab
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur l'interprétation des logs disponibles avec votre solution Web Cloud Databases. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance sur l'interprétation des logs disponibles avec votre solution Web Cloud Databases. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 >
 
 ### Consulter les logs de votre solution Web Cloud Databases en temps réel
 
 Pour vérifier en temps réel les logs de votre solution Web Cloud Databases, effectuez les actions suivantes :
 
-1. Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
 3. Dans la colonne de gauche, cliquez sur le menu déroulant `Web Cloud Databases`{.action}.
 4. Sélectionnez la solution Web Cloud Databases concernée.
@@ -61,7 +61,7 @@ Pour récupérer l'historique des logs de votre solution Web Cloud Databases, vo
 
 Pour retrouver les informations de connexion en SFTP à votre solution Web Cloud Databases, réalisez les actions suivantes :
 
-1. Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
 3. Dans la colonne de gauche, cliquez sur le menu déroulant `Web Cloud Databases`{.action}.
 4. Sélectionnez la solution Web Cloud Databases concernée.
@@ -101,6 +101,6 @@ Vous pourrez le télécharger sur votre poste pour le consulter.
 
 [Premiers pas avec votre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

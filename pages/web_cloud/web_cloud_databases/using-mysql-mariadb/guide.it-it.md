@@ -28,8 +28,8 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di una [istanza Web Cloud Databases](/links/web/databases){.external} (inclusa in un'offerta di[hosting web performance](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Consulta la guida [all'avvio di Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 ## Procedura
@@ -54,7 +54,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 - Disporre della password associata all'utente
 - Disporre del nome del tuo database
 
-Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](/links/manager).
 
 Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
@@ -120,8 +120,8 @@ cat nome_database.sql | mysql --host=server --user=utente --port=porta --passwor
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

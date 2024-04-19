@@ -17,9 +17,9 @@ I database gestiti OVHcloud propongono diversi Sistemi di Gestione Database (SGB
 
 Almeno una delle 3 offerte seguenti:
 
-- Uno dei database inclusi con un [Hosting Web](https://www.ovhcloud.com/it/web-hosting/).
-- Una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di [Hosting Performance](https://www.ovhcloud.com/it/web-hosting/).
-- Pack di database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/).
+- Uno dei database inclusi con un [Hosting Web](/links/web/hosting).
+- Una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di [Hosting Performance](/links/web/hosting).
+- Pack di database [Start SQL](/links/web/hosting-options-startsql).
 
 ## Procedura
 
@@ -78,8 +78,8 @@ La cessazione può avvenire in due modi, a seconda dei casi:
 
 ## Per saperne di più
   
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.

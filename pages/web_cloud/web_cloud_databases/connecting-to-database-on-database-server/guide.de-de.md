@@ -16,14 +16,14 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovhcloud.com/de/web-cloud/databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine [Web Cloud Databases Instanz](/links/web/databases){.external} (in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten)
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die [Web Cloud Databases Dienste](https://www.ovhcloud.com/de/web-cloud/databases/) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
+> Beachten Sie, dass die [Web Cloud Databases Dienste](/links/web/databases) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
 > <br> - Es gibt keinen "root"-Zugang. 
 > <br> - Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
@@ -37,7 +37,7 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 #### phpMyAdmin von OVHcloud
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} links auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} links auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Im Tab `Allgemeine Informationen` finden Sie den Zugangslink zu phpMyAdmin im Rahmen **„Administration der Datenbank“** unter „Benutzer-Interface“.
 
@@ -49,11 +49,11 @@ Damit gelangen Sie zur Loginseite von phpMyAdmin.
 
 Tragen Sie die folgenden Angaben ein, um sich mit Ihrer Datenbank zu verbinden:
 
-- **Server:** Geben Sie den *Hostnamen* Ihres Datenbankservers ein, gefolgt von der *Port-Nummer*. Die *Port-Nummer* muss vom *Hostnamen* durch ein **Leerzeichen** oder "**:**" getrennt werden. Wenn zum Beispiel der *Hostname* **aaXXXXX-XXX.eu.clouddb.ovh.net** und die *Port-Nummer* **12345** ist, kann **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** oder **aaXXXXX-XXX.eu.clouddb.ovh.net 12345** eingegeben werden. Um den *Hostnamen* und die *Port-Nummer* Ihres Web Cloud Databases Servers zu finden, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie zum Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den Namen Ihres Datenbankservers aus. Auf der Seite `Allgemeine Informationen` werden der *Hostname* und die *Port-Nummer* unter `Verbindungsinformationen` angezeigt.
+- **Server:** Geben Sie den *Hostnamen* Ihres Datenbankservers ein, gefolgt von der *Port-Nummer*. Die *Port-Nummer* muss vom *Hostnamen* durch ein **Leerzeichen** oder "**:**" getrennt werden. Wenn zum Beispiel der *Hostname* **aaXXXXX-XXX.eu.clouddb.ovh.net** und die *Port-Nummer* **12345** ist, kann **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** oder **aaXXXXX-XXX.eu.clouddb.ovh.net 12345** eingegeben werden. Um den *Hostnamen* und die *Port-Nummer* Ihres Web Cloud Databases Servers zu finden, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie zum Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den Namen Ihres Datenbankservers aus. Auf der Seite `Allgemeine Informationen` werden der *Hostname* und die *Port-Nummer* unter `Verbindungsinformationen` angezeigt.
 
-- **Username:** Geben Sie den *Benutzernamen* Ihres Datenbankservers ein. Um den *Benutzernamen* Ihrer Datenbank zu finden, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den Namen Ihres Datenbankservers aus. Klicken Sie auf der angezeigten Seite auf den Tab `Benutzer und Rechte`{.action}. Dort finden Sie eine Tabelle mit allen für Ihr Angebot Web Cloud Databases erstellten Benutzern.
+- **Username:** Geben Sie den *Benutzernamen* Ihres Datenbankservers ein. Um den *Benutzernamen* Ihrer Datenbank zu finden, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den Namen Ihres Datenbankservers aus. Klicken Sie auf der angezeigten Seite auf den Tab `Benutzer und Rechte`{.action}. Dort finden Sie eine Tabelle mit allen für Ihr Angebot Web Cloud Databases erstellten Benutzern.
 
-- **Password:** Geben Sie das *Passwort* für den betreffenden *Benutzer* ein. Wenn Sie das zugehörige *Passwort* dieses *Benutzernamens* nicht kennen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie zum Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den Namen Ihres Datenbankservers aus. Klicken Sie auf der angezeigten Seite auf den Tab `Benutzer und Rechte`{.action}. Klicken Sie auf den Button `...`{.action} rechts vom betreffenden *Benutzer*, um `Passwort ändern`{.action}.
+- **Password:** Geben Sie das *Passwort* für den betreffenden *Benutzer* ein. Wenn Sie das zugehörige *Passwort* dieses *Benutzernamens* nicht kennen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie zum Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den Namen Ihres Datenbankservers aus. Klicken Sie auf der angezeigten Seite auf den Tab `Benutzer und Rechte`{.action}. Klicken Sie auf den Button `...`{.action} rechts vom betreffenden *Benutzer*, um `Passwort ändern`{.action}.
 
 > [!warning]
 >
@@ -183,8 +183,8 @@ Sie sind nun mit Ihrer Datenbank verbunden.
 
 ## Weiterführende Informationen
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

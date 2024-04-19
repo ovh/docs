@@ -16,14 +16,14 @@ updated: 2023-10-31
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di una [istanza Web Cloud Databases](/links/web/databases){.external} (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
 > [!primary]
 >
-> Attenzione: le soluzioni [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> Attenzione: le soluzioni [Web Cloud Databases](/links/web/databases){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
 > <br> - Attenzione: non sono presenti accessi "root".
 > <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
 >
@@ -37,7 +37,7 @@ updated: 2023-10-31
 
 ####  Per phpMyAdmin OVHcloud 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server.
 
 Nella scheda `Informazioni generali`, trovi il link di accesso a phpMyAdmin nel riquadro **"Gestione database"** alla voce "Interfaccia utente".
 
@@ -49,11 +49,11 @@ Si aprirà la pagina di connessione di phpMyAdmin.
 
 Per accedere al database, inserisci quanto segue:
 
-- **Server:** inserire il *Nome host* del database server seguito dal *numero di porta*. Il *numero di porta* deve essere separato dal *nome host* da un "**spazio**" o da "**:**". Ad esempio, se il *Nome host* è **aaXXXXX-XXX.eu.clouddb.ovh.net** e il *numero di porta* è **12345**, è necessario inserire **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** o **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Per recuperare il *Nome host* e il *numero di porta* del tuo server Web Cloud Databases, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e accedi alla sezione `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Nella pagina `Informazioni generali` che appare, troverai il *Nome host* e il *numero di porta* nel riquadro `Informazioni di login`.
+- **Server:** inserire il *Nome host* del database server seguito dal *numero di porta*. Il *numero di porta* deve essere separato dal *nome host* da un "**spazio**" o da "**:**". Ad esempio, se il *Nome host* è **aaXXXXX-XXX.eu.clouddb.ovh.net** e il *numero di porta* è **12345**, è necessario inserire **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** o **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Per recuperare il *Nome host* e il *numero di porta* del tuo server Web Cloud Databases, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e accedi alla sezione `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Nella pagina `Informazioni generali` che appare, troverai il *Nome host* e il *numero di porta* nel riquadro `Informazioni di login`.
 
-- **Utente:** Inserisci il *nome utente* del tuo database server. Per recuperare il *nome utente* del tuo database, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`{.action}. Troverai una tabella con tutti gli utenti creati sulla tua soluzione Web Cloud Databases.
+- **Utente:** Inserisci il *nome utente* del tuo database server. Per recuperare il *nome utente* del tuo database, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca su `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`{.action}. Troverai una tabella con tutti gli utenti creati sulla tua soluzione Web Cloud Databases.
 
-- **Password:** Inserisci la *password* associata al *nome utente* pertinente. Se non ricordi più la *password* associata al tuo *nome utente*, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`{.action}. Clicca sul pulsante `...`{.action} a destra di *l’utente* interessato per `Modifica la password`{.action}.
+- **Password:** Inserisci la *password* associata al *nome utente* pertinente. Se non ricordi più la *password* associata al tuo *nome utente*, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`{.action}. Clicca sul pulsante `...`{.action} a destra di *l’utente* interessato per `Modifica la password`{.action}.
 
 > [!warning]
 >
@@ -183,8 +183,8 @@ Da questo momento sei connesso correttamente al tuo database:
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -12,8 +12,8 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud-databases/) (auch in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud-databases/) (auch in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten)
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -25,7 +25,7 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 ### Datenbank über das Kundencenter wiederherstellen und importieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfügbaren Sicherungen.
 
@@ -100,7 +100,7 @@ Lassen Sie die Standardoptionen aktiviert und klicken Sie auf `Ausführen`{.acti
 
 #### MySQL oder MariaDB Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
+Diese Aktion ist nur über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) von einem [OVHcloud Webhosting](/links/web/hosting) aus möglich.
 
 ```bash
 cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --password=passwort datenbankname
@@ -119,7 +119,7 @@ cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --pa
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](/links/web/hosting) aus möglich.
 >
 
 ### Import von PostgreSQL Datenbanken außerhalb des Kundencenters
@@ -128,7 +128,7 @@ In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglich
 
 #### PostgreSQL Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich (ab Version "stable").
+Diese Aktion ist nur über [SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting) von einem [OVHcloud Webhosting](/links/web/hosting) aus möglich (ab Version "stable").
 
 ```bash
 psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql
@@ -147,13 +147,13 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](/links/web/hosting) aus möglich.
 >
 
 ## Weiterführende Informationen
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

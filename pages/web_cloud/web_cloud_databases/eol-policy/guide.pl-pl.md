@@ -17,9 +17,9 @@ Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami da
 
 Posiadanie co najmniej jednej z 3 poniższych ofert:
 
-- Jedna z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
-- Jedna [instancja Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze [Hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
-- Pakiet bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
+- Jedna z baz danych zawartych w ofercie [Hosting WWW](/links/web/hosting).
+- Jedna [instancja Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze [Hosting www Performance](/links/web/hosting).
+- Pakiet bazy danych [Start SQL](/links/web/hosting-options-startsql).
 
 ## W praktyce
 
@@ -79,8 +79,8 @@ Rezygnacja może zostać dokonana na dwa sposoby, w zależności od przypadku:
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

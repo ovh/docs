@@ -13,9 +13,9 @@ Les bases de données managées OVHcloud proposent plusieurs Systèmes de Gestio
 
 Posséder au moins l'une des 3 offres suivantes:
 
-- Une des bases de données incluses avec un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
-- Une [instance Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr-ca/web-hosting/)).
-- Un pack de base de données [Start SQL](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/).
+- Une des bases de données incluses avec un [hébergement web](/links/web/hosting).
+- Une [instance Web Cloud Databases](/links/web/databases){.external} (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
+- Un pack de base de données [Start SQL](/links/web/hosting-options-startsql).
 
 ## En pratique
 
@@ -75,8 +75,8 @@ La cessation peut être faite de deux façons, selon les cas:
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
