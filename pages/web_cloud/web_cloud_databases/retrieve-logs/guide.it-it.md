@@ -10,7 +10,7 @@ updated: 2024-03-07
 
 ## Obiettivo
 
-La soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/Databases/) permette di ospitare più database. In alcune situazioni, potrebbe essere necessario consultare / recuperare i log:
+La soluzione [Web Cloud Databases](/links/web/databases) permette di ospitare più database. In alcune situazioni, potrebbe essere necessario consultare / recuperare i log:
 
 - del tuo server Web Cloud Databases;
 - per uno dei database ospitati sul tuo server Web Cloud Databases.
