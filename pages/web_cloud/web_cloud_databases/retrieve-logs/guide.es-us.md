@@ -19,7 +19,7 @@ La solución [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databas
 
 ## Requisitos
 
-- Disponer de una solución [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/) (incluida o no en un [plan de hosting Performance](https://www.ovhcloud.com/es/web-hosting/)).
+- Disponer de una solución [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/) (incluida o no en un [plan de hosting Performance](/links/web/hosting)).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento

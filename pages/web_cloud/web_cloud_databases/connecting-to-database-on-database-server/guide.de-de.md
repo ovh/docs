@@ -16,7 +16,7 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovhcloud.com/de/web-cloud/databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovhcloud.com/de/web-cloud/databases/){.external} (in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten)
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

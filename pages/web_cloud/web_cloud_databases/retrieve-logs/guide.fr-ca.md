@@ -15,7 +15,7 @@ La solution [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/datab
 
 ## Prérequis
 
-- Disposer d'une solution [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) (incluse ou non dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr-ca/web-hosting/)).
+- Disposer d'une solution [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) (incluse ou non dans une offre d'[hébergement web performance](/links/web/hosting)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

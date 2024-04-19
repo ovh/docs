@@ -16,7 +16,7 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ## Requisitos
 
-- Tener una [instancia Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es/web-hosting/))
+- Tener una [instancia Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/) (incluida en un plan de [hosting Performance](/links/web/hosting))
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento

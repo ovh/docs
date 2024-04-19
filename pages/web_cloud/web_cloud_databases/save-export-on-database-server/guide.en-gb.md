@@ -12,7 +12,7 @@ Your database can contain a lot of essential information for your website. It is
 
 ## Requirements
 
-- You must have a [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- You must have a [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](/links/web/hosting)).
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

@@ -16,7 +16,7 @@ Web Cloud Databases Datenbanken geben Ihnen die Möglichkeit, auf die globalen E
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (auch in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

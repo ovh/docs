@@ -12,7 +12,7 @@ Les serveurs de bases de données Web Cloud Databases vous donnent la possibilit
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse dans une offre d'[hébergement web performance](/links/web/hosting)).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique

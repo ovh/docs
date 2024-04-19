@@ -17,7 +17,7 @@ Su solución Cloud Databases está asociada por defecto a la red de alojamientos
 
 ## Requisitos
 
-- Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluido en un [plan de hosting performance](https://www.ovhcloud.com/es/web-hosting/)).
+- Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluido en un [plan de hosting performance](/links/web/hosting)).
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento

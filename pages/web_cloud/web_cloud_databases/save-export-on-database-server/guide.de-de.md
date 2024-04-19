@@ -16,7 +16,7 @@ Ihre Datenbank enthält in der Regel wichtige Datensätze für den Betrieb Ihrer
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](/links/web/hosting) Angebot enthalten).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -88,7 +88,7 @@ mysqldump --host=server --user=benutzername --port=port --password=passwort date
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](/links/web/hosting) aus möglich.
 >
 
 #### 2\. Export und Import von PostgreSQL-Datenbanken außerhalb des Kundencenters
@@ -113,7 +113,7 @@ pg_dump --host=server --port=port --user=benutzername --password=passwort datenb
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](/links/web/hosting) aus möglich.
 >
 
 ## Weiterführende Informationen

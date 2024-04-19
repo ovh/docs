@@ -12,7 +12,7 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external} (included in a [Performance web hosting plan](/links/web/hosting)).
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

@@ -13,8 +13,8 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 
 At least one of the following 3 solutions:
 
-- One of the included databases with a [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/).
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-sg/web-hosting/) offer).
+- One of the included databases with a [Web Hosting plan](/links/web/hosting).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance Web Hosting](/links/web/hosting) offer).
 - A [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) database pack.
 
 ## Instructions

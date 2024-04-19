@@ -16,7 +16,7 @@ Uma base de dados (*database*, «DB» ou «BDD») permite armazenar elementos co
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web Performance](/links/web/hosting)
 - Ter acesso à Área de Cliente OVHcloud (/links/manager)
 
 ## Instruções

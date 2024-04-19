@@ -28,7 +28,7 @@ Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni d
   
 ## Wymagania początkowe
 
-- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/){.external} (zawartej w ofercie[hostingu www Performance](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Przeglądanie [przewodnik dotyczący uruchomienia usługi Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

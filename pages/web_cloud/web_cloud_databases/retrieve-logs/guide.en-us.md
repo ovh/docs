@@ -15,7 +15,7 @@ With the [Web Cloud Databases](https://www.ovhcloud.com/en/web-cloud/databases/)
 
 ## Requirements
 
-- A [Web Cloud Databases](https://www.ovhcloud.com/en/web-cloud/databases/) solution (included in a [Performance web hosting](https://www.ovhcloud.com/en/web-hosting/) solution or standalone)
+- A [Web Cloud Databases](https://www.ovhcloud.com/en/web-cloud/databases/) solution (included in a [Performance web hosting](/links/web/hosting) solution or standalone)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

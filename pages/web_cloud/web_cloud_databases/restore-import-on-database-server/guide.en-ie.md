@@ -12,7 +12,7 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)) in your OVHcloud account
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in a [Performance web hosting plan](/links/web/hosting)) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

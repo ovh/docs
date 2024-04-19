@@ -16,7 +16,7 @@ Os servidores Web Cloud Databases oferecem-lhe a possibilidade de agir sobre os 
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

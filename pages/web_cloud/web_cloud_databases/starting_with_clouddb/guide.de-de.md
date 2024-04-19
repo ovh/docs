@@ -20,7 +20,7 @@ Ihre Web Cloud Databases Lösung ist standardmäßig an das Webhosting-Netzwerk 
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (im [Webhosting Performance](https://www.ovhcloud.com/de/web-hosting/)).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/) (im [Webhosting Performance](/links/web/hosting)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

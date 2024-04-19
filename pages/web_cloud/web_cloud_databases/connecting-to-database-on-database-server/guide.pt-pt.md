@@ -16,7 +16,7 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) (incluída numa oferta de [alojamento web Performance](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções

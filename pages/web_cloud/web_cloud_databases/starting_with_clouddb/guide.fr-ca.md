@@ -13,7 +13,7 @@ Par défaut, votre solution Web Cloud Databases est liée au réseau d'hébergem
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr-ca/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web performance](/links/web/hosting)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

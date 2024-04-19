@@ -16,7 +16,7 @@ Za pomocą serwerów baz Web Cloud Databases możesz wpłynąć na globalne para
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](/links/web/hosting).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce

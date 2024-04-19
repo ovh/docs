@@ -19,7 +19,7 @@ Mit der Datenbank-Lösung [Web Cloud Databases](https://www.ovhcloud.com/de/web-
 
 ## Voraussetzungen
 
-- Sie verfügen über [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten oder separat).
+- Sie verfügen über [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten oder separat).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

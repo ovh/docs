@@ -16,7 +16,7 @@ updated: 2023-10-31
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web Performance](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura

@@ -12,7 +12,7 @@ Votre base de données peut contenir un grand nombre d'informations essentielles
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr-ca/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
