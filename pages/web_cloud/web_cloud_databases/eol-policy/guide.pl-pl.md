@@ -4,7 +4,7 @@ updated: 2023-03-07
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -33,7 +33,7 @@ Produkty objęte tą polityką wycofania z eksploatacji to:
 
 ### Definicje i wytyczne polityki wycofania z eksploatacji
 
-![tymelina](images/ovh.eol.policy.timeline.png)
+![tymelina](images/ovhcloud-eol-policy-for-managed-databases-timeline.png)
 
 EOL = End Of Life
 

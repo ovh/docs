@@ -1,7 +1,7 @@
 ---
-title: 'Accessing a web hosting plan via SSH'
-excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting plan'
-updated: 2022-01-19
+title: "Accessing a web hosting plan via SSH"
+excerpt: "Find out how to connect and use SSH access on an OVHcloud web hosting plan"
+updated: 2024-01-30
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 Find the table in the ‘SSH’ column to check if the SSH user (or ‘login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 
-![usessh](images/use-ssh-step1.png){.thumbnail}
+![usessh](images/tab-ssh.png){.thumbnail}
 
 If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external} offers SSH access.
 
@@ -64,7 +64,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh).
 
-![usessh](images/use-ssh-step3.png){.thumbnail}
+![usessh](images/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2 From a software application
 
@@ -101,13 +101,23 @@ You can also run a command to launch a script using a specific PHP version. E.g.
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation.
+Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation "[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
+
+> [!primary]
+>
+> Files and folders can also be copied using the **S**ecure **C**opy **P**protocol (**SCP**).
+> This protocol uses the SSH protocol to duplicate content securely between:
+>
+> - A local computer/device and a remote server.
+> - A remote server and a local computer/device.
+> - Two remote servers.
+>
+> Find more information on using the `scp` command with our OVHcloud web hosting plans in our guide "[Web Hosting - Copying files with the SCP command](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Web Hosting : environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

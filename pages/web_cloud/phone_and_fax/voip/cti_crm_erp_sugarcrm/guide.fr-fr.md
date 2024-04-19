@@ -2,6 +2,7 @@
 title: Intégration CTI de la téléphonie OVHcloud aux CRM et ERP - exemple avec SugarCRM
 excerpt: Ce guide montre un exemple de remontée de fiche avec le CRM SugarCRM
 updated: 2018-03-26
+flag: hidden
 ---
 
 ## Objectif

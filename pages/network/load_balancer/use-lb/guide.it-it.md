@@ -17,9 +17,9 @@ Questa guida ti mostra come utilizzare il Load Balancer e presenta le principali
 
 ### Gestisci il Load Balancer dallo Spazio Cliente OVH
 
-Accedi alla sezione `Cloud`{.action} (1) del tuo Spazio Cliente OVH e seleziona `Load Balancer`{.action} (2) dal menu a sinistra. Si apre la pagina principale del servizio:
+Per gestire il Load Balancer accedi alla sezione `Bare Metal Cloud`{.action} dello Spazio Cliente e clicca su `Network`{.action} e `Load Balancer`{.action}. Seleziona il servizio.
 
-![Load Balancer](images/lb_main_page.png){.thumbnail}
+![Load Balancer](images/lbip-main.png){.thumbnail}
 
 In questa interfaccia sono disponibili le seguenti informazioni:
 

@@ -21,7 +21,7 @@ This may be useful in the following cases:
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account
 - A volume snapshot in the same OpenStack region
-- Administrative access (root) to your instance via SSH or RDP
+- Administrative access (sudo) to your instance via SSH or RDP
 
 ## Instructions
 

@@ -29,8 +29,8 @@ Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dl
 ## Wymagania początkowe
 
 - jednego [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/) lub bloku Additional IP
-- dostęp administratora (root) przez SSH lub GUI do serwera
+- adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+- dostęp administratora (sudo) przez SSH lub GUI do serwera
 - podstawowa wiedza o sieciach i ich administrowaniu
 
 ## W praktyce
@@ -297,7 +297,7 @@ Po zalogowaniu się do serwera przez SSH wprowadź następującą komendę:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Aby przetestować połączenie, wystarczy wysłać ping na adres Additional IP z zewnątrz. Jeśli odpowiada w trybie Rescue, prawdopodobnie oznacza to, że wystąpił błąd w konfiguracji. Jeśli jednak adres IP nadal nie działa, poinformuj o tym zespół pomocy technicznej OVHcloud, wysyłając zgłoszenie serwisowe w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Aby przetestować połączenie, wystarczy wysłać ping na adres Additional IP z zewnątrz. Jeśli odpowiada w trybie Rescue, prawdopodobnie oznacza to, że wystąpił błąd w konfiguracji. Jeśli jednak adres IP nadal nie działa, poinformuj o tym zespół pomocy technicznej OVHcloud, [wysyłając zgłoszenie serwisowe](https://help.ovhcloud.com/csm?id=csm_get_help).
  
 ## Sprawdź również
 

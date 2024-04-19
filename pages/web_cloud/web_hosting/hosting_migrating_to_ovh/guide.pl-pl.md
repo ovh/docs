@@ -5,7 +5,7 @@ updated: 2023-11-15
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -88,7 +88,7 @@ Po utworzeniu strefy DNS zaloguj się do jej zarządzania, korzystając z naszeg
 
 **Przykład**: W przypadku domeny "domain.tld" należy podać następujący tekst:
 
-![hosting](images/DNSzone.png){.thumbnail}
+![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
 
 > [!success]
 >
@@ -141,7 +141,7 @@ Zarządzaj zewnętrzną domeną na hostingu OVHcloud za pomocą naszego przewodn
 
 **Przykład**: dla domeny "domain.tld":
 
-![hosting](images/DNSmultisite.png){.thumbnail}
+![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
 
 **Zmiana wpisów DNS "A", "CNAME" i "TXT" musi zostać wykonana przez aktualnego dostawcę DNS Twojej domeny. Czas propagacji wynosi maksymalnie 4-24 godzin, zanim stanie się w pełni skuteczny.**
 
@@ -251,4 +251,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

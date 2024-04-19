@@ -1,6 +1,6 @@
 ---
-title: 'Webmail: guida all’utilizzo di RoundCube'
-updated: 2022-05-31
+title: 'Webmail: guida all’utilizzo di Roundcube'
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -9,9 +9,9 @@ updated: 2022-05-31
 
 ## Obiettivo
 
-Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un software di terze parti o tramite una webmail. OVHcloud fornisce un servizio di posta online chiamato RoundCube che permette l'accesso a un account email tramite un browser.
+Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un software di terze parti o tramite una webmail. OVHcloud fornisce un servizio di posta online chiamato Roundcube che permette l'accesso a un account email tramite un browser.
 
-**Come utilizzare la Webmail RoundCube per i tuoi indirizzi email OVHcloud**
+**Come utilizzare la Webmail Roundcube per i tuoi indirizzi email OVHcloud**
 
 ## Prerequisiti
 
@@ -20,23 +20,61 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
 
 ## Procedura
 
-### Accedi alla Webmail RoundCube
+**Sommario**
+
+- [Accedi alla Webmail Roundcube](#roundcube-connexion)
+- [Interfaccia generale della Webmail Roundcube](#general-interface)
+    - [Gestione delle cartelle (colonna di sinistra)](#leftcolumn)
+    - [Lista delle email ricevute/inviate (finestra superiore)](#topwindow)
+        - [Tipo di visualizzazione](#topwindow-display)
+        - [Azione su un'email selezionata](#topwindow-action)
+        - [Ricerca un'email](#topwindow-search)
+    - [Contenuto di un'email (finestra inferiore)](#lowerwindow)
+- [Configura le preferenze dell'interfaccia Roundcube](#roundcube-settings)
+    - [Interfaccia utente](#user-interface-settings)
+    - [Impaginazione messaggi](#mail-view-settings)
+    - [Visualizzazione messaggi](#mail-display-settings)
+    - [Composizione messaggi](#mail-writing-settings)
+    - [Contatti](#contacts-settings)
+    - [Cartelle speciali](#special-folder-settings)
+    - [Impostazioni del server](#server-settings)
+    - [Cifratura](#encryption)
+- [Gestisci le identità e la loro firma](#identity-signature)
+    - [Impostare gli attributi di un'identità](#identity)
+    - [Aggiungere una firma](#signature)
+- [Rubrica di contatti](#contact-book)
+    - [Gruppi](#group)
+    - [Contatti](#contacts)
+    - [Importa contatti](#import-contacts)
+    - [Esporta i contatti](#export-contacts)
+- [Risposte (template)](#responses)
+- [Aggiungi una risposta automatica](#automatic-respond)
+- [Modificare la password del tuo indirizzo email](#password)
+- [Redazione di un'email](#email-writing)
+- [casi d'uso](#usecase)
+
+### Accedi alla Webmail Roundcube <a name="roundcube-connexion"></a>
 
 Accedi alla pagina <https://www.ovh.com/it/mail/>. Inserisci un indirizzo email e la password e clicca su `Connessione`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
-Verrai reindirizzato all'interfaccia RoundCube.
+Verrai reindirizzato all'interfaccia Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
 
+> [!primary]
+> 
+> Quando ti connetti per la prima volta all'interfaccia Roundcube, l'aspetto potrebbe essere diverso da quello che vedrai in questa guida. Questo significa che l’aspetto "classico" è stato definito sull’interfaccia. Per cambiarla, segui la sezione "[Interfaccia utente](#user-interface-settings)" e seleziona la visualizzazione "Larry".
+> L'aspetto dell'interfaccia non influirà sulle spiegazioni riportate di seguito in questa documentazione.
+
 > [!warning]
 > 
-> Se il server è reindirizzato a un'interfaccia **O**utlook **W**eb **A**ccess (OWA), significa che sei sull'ultima versione della soluzione MX Plan. Per maggiori informazioni sulla soluzione MX Plan, consulta la pagina [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+> Se il server è reindirizzato a un'interfaccia **O**utlook **W**eb **A**pp (OWA), significa che sei sull'ultima versione della soluzione MX Plan. Per maggiori informazioni sulla soluzione MX Plan, consulta la pagina [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
 > Per familiarizzare con l'interfaccia **OWA**, consulta la nostra guida [Consultare il suo account email dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-### Interfaccia generale della Webmail RoundCube <a name="general-interface"></a>
+### Interfaccia generale della Webmail Roundcube <a name="general-interface"></a>
 
 Una volta connesso al tuo account email, hai accesso alla finestra principale di Roundcube, composta da 3 zone:
 
@@ -68,7 +106,7 @@ Le caselle da barrare a livello delle cartelle corrispondono alle "iscrizioni". 
 
 In questa finestra è mostrato il contenuto della cartella selezionata nella colonna di sinistra. 
 
-##### **Tipo di visualizzazione**
+##### Tipo di visualizzazione <a name="topwindow-display"></a>
 
 Questa finestra è presentata in una forma personalizzata. Clicca sull'icona a forma di ingranaggio in alto a sinistra da questa finestra.
 
@@ -81,7 +119,7 @@ Questa finestra è presentata in una forma personalizzata. Clicca sull'icona a f
 - **Colonna di selezione**: permette di scegliere la colonna su cui effettuare la selezione di default.
 - **Ordine di selezione**: permette di scegliere l'ordine di selezione ascendente o discendente, in funzione della colonna di selezione.
 
-##### **Azione su un'email selezionata**
+##### Azione su un'email selezionata <a name="topwindow-action"></a>
 
 Quando viene selezionata un'email, è possibile agire su di essa. Ecco le azioni possibili:
 
@@ -107,7 +145,7 @@ Quando viene selezionata un'email, è possibile agire su di essa. Ecco le azioni
 > Se uno dei tuoi interlocutori richiede che gli sia inviato un messaggio di conferma durante la lettura della sua email, riceverai questo messaggio: `il mittente di questo messaggio ha chiesto di essere avvisato quando leggerai questo messaggio. Desiderate avvisare il mittente?`.
 > 
 
-##### **Ricerca un'email**
+##### Ricerca un'email <a name="topwindow-search"></a>
 
 È disponibile uno strumento di ricerca nella parte superiore destra dell'interfaccia.
 
@@ -128,13 +166,13 @@ Visualizza le scorciatoie, a destra, delle funzioni seguenti:
 
 ![hosting](images/roundcube05.png){.thumbnail}
 
-### Configura le preferenze dell'interfaccia Roundcube
+### Configura le preferenze dell'interfaccia Roundcube <a name="roundcube-settings"></a>
 
 I seguenti capitoli della guida corrispondono alle schede che compongono la parte `Preferenze`{.action} delle `Impostazioni`{.action} di Roundcube. La loro descrizione non è esaustiva.
 
 ![hosting](images/roundcube06.png){.thumbnail}
 
-#### Interfaccia utente
+#### Interfaccia utente <a name="user-interface-settings"></a>
 
 Definisci qui la `lingua` d'uso dell'interfaccia Roundcube, il `fuso orario`, il `formato orario` e il `formato data`.
 
@@ -142,33 +180,38 @@ Con l'opzione `Date più leggibilie` graziose è possibile visualizzare la data 
 
 La casella `Display next list entry after delete/move` significa che, dopo un'operazione di eliminazione o spostamento su un'email, l'elemento della linea inferiore sarà sistematicamente selezionato, indipendentemente dall'ordine di selezione. 
 
-#### Impaginazione messaggi
+È possibile scegliere l'estetica di visualizzazione della propria interfaccia. È possibile scegliere tra la visualizzazione **Classic** o la visualizzazione **Larry**.
 
-Definisci qui l'ergonomia per visualizzare e agire sulle email. L'opzione `Layout` permette di configurare le 3 finestre descritte nella sezione [Interfaccia generale della Webmail RoundCube](#topwindow).
+#### Impaginazione messaggi <a name="mail-view-settings"></a>
 
-#### Visualizzazione messaggi
+Definisci qui l'ergonomia per visualizzare e agire sulle email. L'opzione `Layout` permette di configurare le 3 finestre descritte nella sezione [Interfaccia generale della Webmail Roundcube](#topwindow).
+
+#### Visualizzazione messaggi <a name="mail-display-settings"></a>
 
 Definisci come visualizzare le email.<br>
 Ti consigliamo di avere la casella `Mostra HTML` selezionata, per assicurarti che le email formattate dal mittente siano correttamente visualizzate.<br>
 Ti consigliamo inoltre di mantenere l'opzione `Permetti risorse remote (immagini, stili)` per `mai`. in quanto evita di caricare gli elementi di un'email che sembra malevolo.
 
-#### Composizione messaggi
+#### Composizione messaggi <a name="mail-writing-settings"></a>
 
 Definisci la forma predefinita durante la redazione di un'email o di una risposta.<br>
 Ti consigliamo di utilizzare l'opzione `Scrivi i messaggi in HTML` su `sempre`, per utilizzare di default gli strumenti HTML e non alterare la firma HTML.
 
-#### Contatti
+#### Contatti <a name="contacts-settings"></a>
 
 Personalizza qui la configurazione delle informazioni nella tua rubrica.
 
-#### Cartelle speciali
+#### Cartelle speciali <a name="special-folder-settings"></a>
 
 Roundcube dispone di 4 cartelle speciali: `Bozze`, `Inviate`, `Marce`, `Cestino`.
 
 Non consigliamo di modificarli, ma è possibile attribuire il comportamento di una cartella speciale a un'altra cartella creata successivamente, grazie ai menu a tendina.<br>
-**Ad esempio**, è possibile attribuire il comportamento "Bozze" a un'altra cartella creata. Le email salvate saranno considerate come bozze fino al loro invio effettivo.
 
-#### Impostazioni del server
+**Ad esempio**, è possibile assegnare il comportamento Bozze a un'altra cartella creata facendo clic sull'elenco a discesa e selezionando la cartella. Se non gli viene assegnata nessuna cartella, verrà automaticamente impostata sull’opzione "Drafts". Le email che saranno salvate lì saranno considerate bozze fino all'invio effettivo.
+
+> In pratica, creo una sottocartella "Bozze email dei clienti". Accedi alla sezione `Preferenze`{.action} / `Cartelle speciali`{.action} e seleziona l’opzione "Bozze". Nel menu a tendina, seleziona la cartella "Bozze e-mail clienti" per sostituire "Drafts". Le email scritte in questa cartella verranno considerate bozze.
+
+#### Impostazioni del server <a name="server-settings"></a>
 
 In questa scheda è possibile ottimizzare lo spazio occupato su un account email. Infatti, l'opzione `Svuota il cestino all'uscita` permette di evitare il cumulo degli elementi che sono stati eliminati. L'opzione `Elimina direttamente i messaggi in Spam` eliminerà automaticamente tutte le email considerate SPAM.
 
@@ -176,13 +219,24 @@ In questa scheda è possibile ottimizzare lo spazio occupato su un account email
 > 
 > Si sconsiglia di attivare l'opzione `Elimina direttamente i messaggi in Spam` nel caso in cui un falso positivo (e-mail erroneamente dichiarato come "SPAM") si trovi dichiarato SPAM per il server ricevente. Infatti, quando un'email è inserita nella cartella "Posta elettronica", è ancora possibile verificare se l'email è legittima.
 
-### Gestisci le identità e la loro firma <a name="identity"></a>
+#### Crittografia <a name="encryption"></a>
+
+Se il browser lo consente, è possibile installare e attivare l’estensione "Mailvelope". È un'estensione del browser che integra il PGP (**P**retty **G**ood **P**rivacy) nella tua messaggeria Web. Il sistema di cifratura PGP e, di conseguenza, l'estensione "Mailvelope" permettono di:
+
+- Cifrare e decrittografare le email nel tuo browser.
+- Mantenere privato il contenuto delle tue email nei confronti del tuo provider di posta.
+
+Sarete così soli a poter leggere le vostre email. Questa estensione è un modo per proteggere la tua Webmail se ricevi email di natura confidenziale.
+
+Per maggiori informazioni, consulta le FAQ "Mailvelope" all'indirizzo <https://mailvelope.com/faq>.
+
+### Gestisci le identità e la loro firma <a name="identity-signature"></a>
 
 Clicca su `Impostazioni`{.action} nella barra superiore e seleziona `Identità`{.action} nella colonna di sinistra. "L'identità" permette di personalizzare le informazioni inviate ai destinatari, come ad esempio il nome visualizzato o la firma.
 
 ![hosting](images/roundcube07.png){.thumbnail}
 
-#### Impostare gli attributi di un'identità 
+#### Impostare gli attributi di un'identità <a name="identity"></a>
 
 - **Nome visualizzato**: questo nome comparirà nella sezione "Mittente" del destinatario
 - **E-mail**: corrisponde all'indirizzo da cui è stata inviata l'email.
@@ -197,7 +251,7 @@ Clicca su `Impostazioni`{.action} nella barra superiore e seleziona `Identità`{
 > 
 > Completare la casella **E-mail** con un indirizzo email diverso da quello a cui sei connesso è considerato un'usurpazione di identità elettronica (*spoofing*). L'indirizzo IP utilizzato per l'invio rischia di essere "bandito" e/o considerato "SPAM" presso i tuoi destinatari. 
 
-#### Aggiungere una firma
+#### Aggiungere una firma <a name="signature"></a>
 
 Di default, la casella `firma` è in "testo chiaro". Questo formato non consente di effettuare modifiche avanzate o di inserire un'immagine nella firma. Per usufruire delle opzioni di modifica avanzate per una firma, ti consigliamo di attivare la modalità HTML cliccando su **Firma HTML** sotto il riquadro di registrazione.
 
@@ -218,7 +272,7 @@ Clicca sul pulsante `< >`{.action} nella barra degli strumenti HTML e inserisci 
 
 ![hosting](images/roundcube08.png){.thumbnail}
 
-### Rubrica di contatti
+### Rubrica di contatti <a name="contact-book"></a>
 
 Clicca su `Contatti`{.action} nella barra superiore per accedere alla rubrica. Esso è diviso in **3 colonne**:
 
@@ -255,7 +309,7 @@ Inserisci le informazioni del contatto.
 > [!primary]
 > Aggiungi campi supplementari tramite il menu a tendina `Aggiungi campo...`{.action}, sotto i campi `Nome` e `Indirizzo`.
 
-#### Importa contatti
+#### Importa contatti <a name="import-contacts"></a>d
 
 Dalla finestra `Contatti`{.action}, nella barra superiore, clicca su `importare`{.action} per aprire la finestra di importazione.
 
@@ -265,7 +319,7 @@ Dalla finestra `Contatti`{.action}, nella barra superiore, clicca su `importare`
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-#### Esporta i contatti Roundcube
+#### Esporta i contatti Roundcube <a name="export-contacts"></a>
 
 Dalla finestra `Contatti`{.action}, nella barra superiore, clicca sulla freccia verso il basso a destra del pulsante `Esporta`{.action}.
 
@@ -290,7 +344,15 @@ Per aggiungere una risposta, clicca sul pulsante `+`{.action} in fondo alla colo
 > 
 > Le "risposte" sono redatte in formato "testo chiaro".
 
-### Redazione di un'email
+### Aggiungi una risposta automatica <a name="automatic-respond"></a>
+
+Aggiungi una risposta automatica al tuo indirizzo email quando sei assente o non sei disponibile. Questa funzione non può essere attivata dalla Webmail ma dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Creare una risposta automatica per il proprio indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+
+### Modificare la password del tuo indirizzo email <a name="password"></a>
+
+Per modificare la password di un indirizzo email è necessario accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Modificare la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+
+### Redazione di un'email <a name="email-writing"></a>
 
 Nella scheda `E-mail`{.action} nella barra superiore, clicca su `Nuovo messaggio`{.action}.
 
@@ -326,11 +388,28 @@ Nella barra superiore sono disponibili le seguenti azioni:
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
+### casi d'uso <a name="usecase"></a>
+
+#### Verifica della richiesta non riuscita
+
+Quando si tenta di accedere alla Webmail Roundcube, viene visualizzato il seguente messaggio:
+
+```console
+IMPOSSIBILE VERIFICARE LA RICHIESTA
+Per la tua protezione, l'accesso a questa risorsa è protetto dagli attacchi CSFR.
+Se vedi questo, probabilmente non ti sei disconnesso prima di uscire dall'applicazione Web.
+Per continuare, è necessaria l'interazione umana.
+```
+
+Come indicato nel messaggio, l’account email è considerato già connesso. Si parla di "sessione", ciò significa che il tuo account email è già in uso agli occhi del server di posta e che questa sessione precedente deve essere chiusa. Verifica che il tuo account email non sia già stato aperto su roundcube. Cancella anche i dati in cache sul tuo browser Internet.
+
 ## Per saperne di più
 
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Modifica la password di un indirizzo email MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+
+[Creare una risposta automatica per il proprio indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Crea filtri per i tuoi indirizzi email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 

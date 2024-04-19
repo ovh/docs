@@ -96,11 +96,11 @@ To ensure that your services (shared hosting **and** database) are not undergoin
 
 o find out the cluster and filer of your hosting, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the web hosting plan concerned. In the `General information`{.action} tab you can see the `Datacenter` and `Filer` of your web hosting.
 
-![Retrieve Filer](images/DropFilerCluster1.png){.thumbnail}
+![Retrieve Filer](images/find-filer.png){.thumbnail}
 
 Then click on the `Multisite`{.action} tab to retrieve the cluster number where your shared hosting is located.
 
-![Recover cluster](images/DropFilerCluster2.png){.thumbnail}
+![Recover cluster](images/find-cluster.png){.thumbnail}
 
 > [!success]
 >

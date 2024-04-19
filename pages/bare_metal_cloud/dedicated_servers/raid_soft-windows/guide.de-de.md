@@ -37,7 +37,7 @@ Welche Methode zu verwenden ist, hängt vom Partitionstyp Ihrer Disks ab. Befolg
 
 Öffnen Sie an der Eingabeaufforderung DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -164,7 +164,7 @@ Es ist empfehlenswert, den Server erst nach Abschluss der Wiederherstellung neu 
 
 Öffnen Sie an der Eingabeaufforderung DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -360,8 +360,8 @@ Leaving DiskPart...
 Kopieren Sie an der Eingabeaufforderung die Startdateien von der Boot-Partition (EFI) der ersten Disk (`Disk 0`) auf die Boot-Partition der zweiten Disk (`Disk 1`).
 
 Geben Sie die folgenden 3 Befehle ein und führen Sie sie jeweils mit `Enter` aus:
- 
-```
+
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

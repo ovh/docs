@@ -1,8 +1,6 @@
 ---
 title: 'Configurer votre propre serveur DNS'
-keywords: DNS
-description: 'Configurer votre propre serveur DNS'
-excerpt: 'Vous souhaitez utiliser un serveur DNS en particulier, voici le guide pour spécifier votre serveur DNS transmis par DHCP'
+excerpt: 'Découvrez comment spécifier votre serveur DNS transmis par DHCP'
 updated: 2021-04-13
 ---
 

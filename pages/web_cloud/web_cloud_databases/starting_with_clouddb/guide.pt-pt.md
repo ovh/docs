@@ -1,7 +1,7 @@
 ---
 title: 'Web Cloud Databases - primeira utilização'
 excerpt: 'Saiba como começar a usar e a gerir o serviço Web Cloud Databases'
-updated: 2023-05-31
+updated: 2024-03-18
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Se a sua oferta de alojamento inclui a opção Web Cloud Databases, aceda à [Á
 
 No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Web Cloud Databases**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
 
-![Informações gerais](images/web-cloud-databases-activation.png){.thumbnail}
+![Informações gerais](images/web-cloud-databases-enable.png){.thumbnail}
 
 Para concluir, siga as instruções seguintes para determinar o tipo e a versão do seu servidor Web Cloud Databases. De seguida, poderá aceder através da coluna da esquerda na `Web Cloud Databases`{.action}.
 
@@ -54,7 +54,7 @@ Aí pode consultar as informações mais relevantes relativamente à sua instân
 |Datacenter|Indica o datacenter onde instância está alojada.|
 |Host|Indica o servidor OVHcloud onde a instância foi criada. Esta informação, inerente à infraestrutura da OVHcloud, poderá ser incluída na página sobre o [Estado dos Serviços](https://www.status-ovhcloud.com/){.external}.|
 
-![Web Cloud Databases](images/web-cloud-databases-general-information.png){.thumbnail}
+![Web Cloud Databases](images/general-information.png){.thumbnail}
 
 ### Criar uma base de dados
 
@@ -65,7 +65,7 @@ Aí pode consultar as informações mais relevantes relativamente à sua instân
 
 Para criar a primeira base de dados na instância Web Cloud Databases, clique no separador `Bases de dados`{.action} e no botão `Criar base de dados`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-database.png){.thumbnail}
+![Web Cloud Databases](images/add-database.png){.thumbnail}
 
 Na janela que se abrir, e além da criação da base de dados, pode optar por:
 
@@ -88,7 +88,7 @@ Segundo o que preferir, complete de seguida as informações pedidas e clique em
 > Por razões de segurança, preencha os campos de acordo com as indicações apresentadas.
 >
 
-![Web Cloud Databases](images/web-cloud-databases-add-database-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-database-create-user-confirmation.png){.thumbnail}
 
 ### Criação de um utilizador
 
@@ -101,7 +101,7 @@ Se criou o utilizador ao mesmo tempo que a base de dados durante a etapa anterio
 
 Se o seu projeto não precisa de um utilizador adicional, pode passar à etapa seguinte. Caso contrário, para criar um utilizador na instância Web Cloud Databases, clique no separador `Utilizadores e permissões`{.action} e no botão `Adicionar utilizador`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-user.png){.thumbnail}
+![Web Cloud Databases](images/add-user.png){.thumbnail}
 
 Na janela que se abrir, introduza as informações pedidas e clique em `Validar`{.action}.
 
@@ -115,11 +115,11 @@ Na janela que se abrir, introduza as informações pedidas e clique em `Validar`
 > Por razões de segurança, preencha os campos de acordo com as indicações apresentadas.
 >
 
-![Web Cloud Databases](images/web-cloud-databases-add-user-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-user-confirmation.png){.thumbnail}
 
 Depois de criar o utilizador, é necessário atribuir-lhe permissões para agir sobre a base de dados (ações como a leitura, inserção ou eliminação de dados). Para isso, clique no ícone em forma de roda dentada e em `Gerir permissões`{.action}. Agora selecione o tipo de permissão. Para uma utilização normal, selecione `Administrador`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-rights.png){.thumbnail}
+![Web Cloud Databases](images/manage-rights.png){.thumbnail}
 
 ### Importação de uma base de dados
 
@@ -136,13 +136,13 @@ As etapas a seguir descrevem como importar uma base de dados por meio da ferrame
 
 Clique no separador `Bases de dados`{.action}. A seguir clique no ícone em forma de roda dentada e em `Importar ficheiro`{.action}. Na nova janela, selecione `Importar novo ficheiro`{.action}. Clique em `Seguinte`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-import-step1.png){.thumbnail}
+![Web Cloud Databases](images/import-file.png){.thumbnail}
 
 - **Etapa 2: selecionar e enviar o ficheiro de backup**
 
 Introduza um nome de ficheiro que lhe permita identificar este backup mais tarde se desejar restaurá-lo. A seguir, ao lado de **Ficheiro**, selecione no seu computador o ficheiro de backup da base de dados e clique em `Enviar`{.action}. Aguarde a confirmação de envio. De seguida, clique em `Seguinte`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-import-step2.png){.thumbnail}
+![Web Cloud Databases](images/database-import-new-file-step-2.png){.thumbnail}
 
 - **Etapa 3: iniciar a importação da base de dados**
 
@@ -153,17 +153,17 @@ Escolha aplicar ou não as opções adicionais descritas abaixo e clique em `Con
 |Limpar a base de dados atual|O conteúdo presente na base de dados será eliminado por inteiro e substituído pelo conteúdo do backup.|
 |Enviar um e-mail no final da importação|No final do processo, é-lhe enviado um e-mail para informar que a importação foi concluída.|
 
-![Web Cloud Databases](images/web-cloud-databases-add-import-step3.png){.thumbnail} 
+![Web Cloud Databases](images/database-import-new-file-step-3-send-email.png){.thumbnail} 
 
 ### Autorizar um endereço IP <a name="trustip"></a>
 
 De modo que o acesso à sua instância Web Cloud Databases funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados. Para isso, clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-2022.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
 
 Na janela que se abrir, indique em `IP/máscara`{.action} o endereço IP ou a máscara que pretende autorizar e adicione uma descrição se desejar. Decida se quer dar acesso apenas às bases de dados ou ao SFTP. Por fim, clique em `Validar`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step2.png){.thumbnail}
+![Web Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 #### Autorizar a ligação a um alojamento web OVHcloud <a name="trustip"></a>
 
@@ -171,7 +171,7 @@ Por predefinição, a sua solução Web Cloud Databases está automaticamente as
 
 Para isso, clique no separador `IP autorizados`{.action} e no botão `Acesso aos alojamentos web OVHcloud`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-add-ip-step3-2022.png){.thumbnail}
+![Web Cloud Databases](images/access-to-ovhcloud-web-hosting.png){.thumbnail}
 
 ### Ligar o site à base de dados
 
@@ -193,31 +193,11 @@ Durante este procedimento, serão solicitadas cinco informações essenciais:
 > Por exemplo, para o nome do host `zz1111111-002.eu.clouddb.ovh.net` com porta SQL `34567`, você precisará inserir `zz1111111-002.eu.clouddb.ovh.net:34567` no Parte "Host" / "Hostname".
 >
 
-![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}
+![Web Cloud Databases](images/login-information.png){.thumbnail}
 
 #### Obter os logs do seu servidor Web Cloud Databases
 
-Para verificar os últimos logs da sua base de dados, aceda ao separador `Logs`{.action} do seu servidor Web Cloud Databases. Este separador apresenta em tempo real os alertas e os erros.
-
-![Web Cloud Databases](images/web-cloud-databases-log01.png){.thumbnail}
-
-Para obter o conjunto dos logs do seu servidor Web Cloud Databases, ligue-se através de SFTP neste último.
-
-> [!warning]
->
-> Antes de se conectar, verifique que o endereço de IP do computador que utiliza é autorizado no seu servidor Web Cloud Databases, com a opção "SFTP`" selecionada. Para mais informações, consulte a secção [Autorizar a ligação a um alojamento web da OVHcloud](#trustip) neste guia.
-
-Encontre as informações de ligação SFTP a partir do separador `Informações gerais`{.action} do seu servidor Web Cloud Databases. Se não sabe a palavra-passe do servidor, clique no botão `...`{.action} à direita para o modificar.
-
-![Web Cloud Databases](images/web-cloud-databases-log02.png){.thumbnail}
-
-Ligue-se através de um cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
-
-Para o FileZilla, no menu `Ficheiro`{.action}, dirija-se ao `Gestor dos websites`{.action}. Clique em `Novo site`{.action} e introduza os parâmetros anteriormente identificados.
-
-![Web Cloud Databases](images/web-cloud-databases-log03.png){.thumbnail}
-
-O ficheiro de logs, chamado `stdout.log`, encontra-se na raiz.
+Para aceder aos logs da sua solução Web Cloud Databases, consulte o guia "[Web Cloud Databases - Como recuperar os logs ?](/pages/web_cloud/web_cloud_databases/retrieve-logs)".
 
 ## Quer saber mais?
 

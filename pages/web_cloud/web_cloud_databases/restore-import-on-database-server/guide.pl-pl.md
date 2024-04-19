@@ -5,7 +5,7 @@ updated: 2023-10-26
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -40,7 +40,7 @@ Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wy�
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-restore01.png){.thumbnail}
+![Web Cloud Databases](images/restore-the-backup.png){.thumbnail}
 
 > [!warning]
 >
@@ -51,7 +51,7 @@ Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} 
 
 Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-import01.png){.thumbnail}
+![Web Cloud Databases](images/import-file.png){.thumbnail}
 
 Masz dwie możliwości:
 
@@ -66,7 +66,7 @@ Wpisz nazwę pliku importowanego, kliknij `Przeglądaj`{.action}, aby go wybrać
 > Plik musi mieć format ".sql", ".txt" lub ".gz".
 > 
 
-![Web Cloud Databases](images/web-cloud-databases-import02.png){.thumbnail}
+![Web Cloud Databases](images/database-import-new-file-step-2.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 
@@ -76,7 +76,7 @@ Jeśli wcześniej zaimportowałeś plik, możesz wybrać opcję **"Import istnie
 
 Wybierz plik w rozwijanym menu i kliknij `Dalej`{.action}.
 
-![Web Cloud Databases](images/web-cloud-databases-import03.png){.thumbnail}
+![Web Cloud Databases](images/database-import-existing-file-step-2.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 

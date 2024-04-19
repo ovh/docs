@@ -95,11 +95,11 @@ Pour être sûr que vos services (hébergement mutualisé **et** base de donnée
 
 Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le `filer` où il se trouve.
 
-![Récupérer Filer](images/DropFilerCluster1.png){.thumbnail}
+![Récupérer Filer](images/find-filer.png){.thumbnail}
 
 Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérer le numéro du cluster où se trouve votre hébergement mutualisé.
 
-![Récupérer cluster](images/DropFilerCluster2.png){.thumbnail}
+![Récupérer cluster](images/find-cluster.png){.thumbnail}
 
 > [!success]
 >

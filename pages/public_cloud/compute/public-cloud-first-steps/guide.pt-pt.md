@@ -1,7 +1,7 @@
 ---
 title: 'Criação e conexão a uma primeira instância Public Cloud'
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-updated: 2023-12-01
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ O protocolo SSH assegura a encriptação das comunicações cliente-servidor. O 
 
 > [!primary]
 >
-Tenha em atenção que as conexões a instâncias de Public Cloud exigem um login SSH com chave, com exceção das que se baseiam em sistemas operativos Windows. As chaves públicas SSH adicionadas à sua Área de Cliente OVHcloud ficarão disponíveis para serviços Public Cloud em todas as regiões e datacenters. Só poderá armazenar chaves encriptadas **RSA** e **ECDSA**; a ED25519 não é suportada atualmente. 
+Tenha em atenção que as conexões a instâncias de Public Cloud exigem um login SSH com chave, com exceção das que se baseiam em sistemas operativos Windows. As chaves públicas SSH adicionadas à sua Área de Cliente OVHcloud ficarão disponíveis para serviços Public Cloud em todas as regiões e datacenters. Pode armazenar chaves encriptadas **RSA**, **ECDSA** e **ED25519**.
 >
 A autenticação de conexão em instâncias Windows só requer o nome de utilizador e a palavra-passe.
 >
@@ -54,6 +54,11 @@ A utilização da opção «-t» com este comando permite-lhe especificar um mé
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+ou
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 O comando irá solicitar-lhe que guarde a chave recém-criada no ficheiro padrão:
@@ -145,7 +150,7 @@ As chaves SSH armazenadas propiciam uma criação de instâncias mais rápida. S
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Chaves SSH`{.action}, na barra de navegação à esquerda, sob «Gestão de projetos».
 
-Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, introduza um nome para a chave e cole a cadeia (copiada na etapa 1](./#etapa-1-criacao-de-chaves-ssh) do ficheiro público ou da janela PuTTYgen) no campo «Chave». Para confirmar, clique em `Adicionar`{.action}.
+Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, introduza um nome para a chave e cole a cadeia (copiada na [etapa 1](./#etapa-1-criacao-de-chaves-ssh) do ficheiro público ou da janela PuTTYgen) no campo «Chave». Para confirmar, clique em `Adicionar`{.action}.
 
 ![add key](images/puttygen-04.png){.thumbnail}
 
@@ -153,9 +158,23 @@ Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, int
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+> [!success]
+>
+> Antes de criar uma instância, é preferível criar uma rede privada. Para mais informações sobre a criação de uma rede privada, consulte o guia [Configuração do vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+>
+
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. Na página «Home», clique em `Criar uma instância`{.action}. (Encontrará a mesma funcionalidade na página «Instâncias», clicando em `Instâncias`{.action} na barra de navegação à esquerda, sob «Compute».)
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zones:**
+
+As Local Zones(zonas locals) são uma extensão das regiões que aproximam os serviços da OVHcloud de locais específicos, oferecendo uma latência reduzida e performances melhoradas para as aplicações. Eles estão estrategicamente localizados perto de áreas de alta demanda dos usuários. O seu objetivo principal é o de minimizar o tempo necessário à transferência dos dados entre o utilizador e a cloud, a fim de tornar os serviços mais rápidos e mais reativos, e de responder às exigências de residência dos dados. Para mais informações sobre as Local Zones, consulte os seguintes links: [Local Zone Compute](https://www.ovhcloud.com/pt/public-cloud/local-zone-compute/) e [Local Zone Compute - Funcionalidades, capacidades e limites](/pages/public_cloud/compute//local-zones-capabilities-limitations).
+
+
+**Global Regions:**
+
+As Global Regions são suportadas por um ou vários datacenters geridos pela OVHcloud. Cada região está situada numa zona geográfica diferente. Cada região fornece uma ou várias Availibility Zones, por exemplo GRA11, GRA7, BHS5, DE1 etc.
 
 Antes de mais, escolha um modelo de servidor de acordo com as suas necessidades. O assistente vai fornecer descrições dos vários casos de uso e da disponibilidade dos modelos. Pode escolher entre as seguintes categorias personalizadas:
 

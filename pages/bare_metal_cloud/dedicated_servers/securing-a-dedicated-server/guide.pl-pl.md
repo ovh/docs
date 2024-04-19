@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczanie serwera dedykowanego"
 excerpt: "Dowiedz się, jak zwiększyć bezpieczeństwo serwera dedykowanego"
-updated: 2023-02-24
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Kiedy zamawiasz serwer dedykowany, możesz wybrać dystrybucję lub system opera
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
-- Dostęp administratora (root) do serwera przez SSH
+- Dostęp administratora (sudo) do serwera przez SSH
 
 ## W praktyce
 
@@ -71,14 +71,23 @@ W tym celu zmodyfikuj plik konfiguracyjny usługi za pomocą wybranego edytora t
 Należy znaleźć następujące lub równoważne linie:
 
 ```console
-# What ports, IPs and protocols we listen for
-Port 22
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
 ```
 
 Zamień liczbę **22** na wybrany numer portu.<br>
 **Pamiętaj, aby nie wpisywać numeru portu już używanego w systemie**.
 Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.<br>
 Zapisz i wyjdź z pliku konfiguracyjnego.
+
+Jeśli linia jest "zakomentowana" (tj. poprzedzona znakiem "#"), jak w powyższym przykładzie, należy usunąć znak "#" przed zapisaniem pliku, aby zmiana została uwzględniona. Przykład:
+
+```console
+Port 49152
+#AddressFamily any
+#ListenAddress 0.0.0.0
+```
 
 Zrestartuj usługę:
 
@@ -87,6 +96,31 @@ sudo systemctl restart sshd
 ```
 
 Powinno to wystarczyć do wdrożenia zmian. W przeciwnym razie zrestartuj serwer (`~$ sudo reboot`).
+
+**Dla systemu Ubuntu 23.04 i nowszych wersji**
+
+W przypadku najnowszych wersji Ubuntu, konfiguracja SSH jest zarządzana w pliku `ssh.socket`.
+
+Aby zaktualizować port SSH, edytuj wiersz `Listenstream` w pliku konfiguracyjnym za pomocą wybranego edytora tekstu (`nano` użyty w tym przykładzie):
+
+```bash
+sudo nano /lib/systemd/system/ssh.socket
+```
+
+```console
+[Socket]
+ListenStream=49152
+Accept=no
+```
+
+Zapisz zmiany i wykonaj następujące polecenia:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ssh.service
+```
+
+Jeśli włączona jest zapora systemu operacyjnego, upewnij się, że zezwalasz na nowy port w regułach zapory.
 
 Pamiętaj, że podczas każdego zlecenia połączenia SSH z Twoim serwerem należy wskazać nowy port, na przykład:
 
@@ -99,61 +133,9 @@ ssh username@IPv4_serwer -p NewPortNumber
 > Pamiętaj, że modyfikacja domyślnego portu protokołu SSH lub innego protokołu stanowi potencjalne ryzyko. Niektóre usługi nie mogą zostać skonfigurowane i używane z niestandardowymi portami i nie będą działały, jeśli domyślny port zostanie zmodyfikowany.
 >
 
-### Zmiana hasła przypisanego do użytkownika "root"
-
-Zdecydowanie zaleca się zmianę hasła użytkownika root, aby nie pozostawiać go w pozycji domyślnej w nowym systemie. Więcej informacji znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
-
 ### Utworzenie użytkownika z ograniczonymi prawami
 
-Zadania, które nie wymagają uprawnień root, powinny być wykonywane za pomocą standardowego użytkownika. Możesz utworzyć nowego użytkownika za pomocą następującego polecenia:
-
-```bash
-sudo adduser Nazwa_Nowego_Użytkownika
-```
-
-Następnie wpisz informacje wymagane przez system: hasło, nazwa itd.
-
-Nowy użytkownik będzie mógł logować się przez SSH. Podczas tworzenia połączenia należy stosować określone dane identyfikacyjne.
-
-Po zalogowaniu wprowadź następującą komendę, aby wykonać operacje wymagające uprawnień root:
-
-```bash
-su root
-```
-
-Wprowadź hasło, kiedy zostaniesz zaproszony, a aktywne połączenie zostanie przekierowane na użytkownika root.
-
-### Uniemożliwienie dostępu do serwera za pomocą użytkownika root
-
-Użytkownik root jest tworzony domyślnie w systemach GNU/Linux. Jest to najwyższy poziom dostępu do systemu operacyjnego.<br>
-Nie zaleca się, aby nawet niebezpieczne było udostępnianie serwera wyłącznie za pomocą root, ponieważ może to spowodować nieodwracalne szkody.
-
-Zalecamy wyłączenie bezpośredniego dostępu użytkowników root przez protokół SSH. Pamiętaj, aby utworzyć innego użytkownika przed wykonaniem kroków poniżej.
-
-Zmodyfikuj plik konfiguracyjny SSH w sposób opisany powyżej:
-
-```bash
-sudo nano /etc/ssh/sshd_config
-```
-
-Znajdź następującą sekcję:
-
-```console
-# Authentication: 
-LoginGraceTime 120
-PermitRootLogin yes 
-StrictModes yes
-```
-
-Zamień **yes** na **no** w linii `PermitRootLogin`.
-
-Aby zmiana ta została uwzględniona, uruchom ponownie usługę SSH:
-
-```bash
-sudo systemctl restart sshd
-```
-
-Połączenia z serwerem za pośrednictwem użytkownika root (`ssh root@IPv4_serwer`) zostaną odrzucone.
+Zadania, które nie wymagają uprawnień root, powinny być wykonywane za pomocą standardowego użytkownika. Więcej informacji znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
 ### Konfiguracja wewnętrznej zapory sieciowej (iptables)
 
@@ -201,7 +183,7 @@ Ważne jest, aby wiedzieć, że ogólne parametry będą brane pod uwagę tylko 
 Poniżej przedstawiamy przykładowe linie pod `[DEFAULT]`:
 
 ```console
-bantime  = 10m
+bantime = 10m
 maxretry = 5
 enabled = false
 ```

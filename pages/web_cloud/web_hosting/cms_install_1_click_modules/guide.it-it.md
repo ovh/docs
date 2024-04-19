@@ -1,7 +1,7 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 - Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
+- Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Scopri lo stato delle diverse versioni disponibili in questa [pagina](https://webhosting-infos.hosting.ovh.net/). Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
 - Il dominio (con sottodominio se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato come [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul tuo hosting Web OVHcloud.
 
@@ -41,7 +41,7 @@ Utilizzando questa soluzione, dovrai scegliere tra i 4 CMS citati sopra. Se hai 
 
 Per installare un CMS non disponibile tramite i nostri "moduli in 1 click", è possibile installarlo manualmente sul tuo hosting. Questo CMS è compatibile con le nostre soluzioni di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
 
-![Logo dei CMS](images/CMS_logo.png){.thumbnail}
+![Logo dei CMS](images/cms-logos.png){.thumbnail}
 
 ### Step 2 - accedi alla gestione dei "moduli in 1 click"
 
@@ -49,7 +49,7 @@ Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoman
 
 In questa interfaccia sono elencati gli eventuali "moduli in 1 click" già installati. è possibile gestire i "moduli in 1 click" e installarne di nuovi.
 
-![Accesso alla sezione Moduli in 1 click](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Accesso alla sezione Moduli in 1 click](images/tab.png){.thumbnail}
 
 ### Step 3 - Aggiungi un "modulo in 1 click"
 
@@ -57,7 +57,7 @@ Nella scheda `Moduli in 1 click`{.action} del tuo hosting, clicca su `Aggiungi u
 
 Nella nuova finestra, scegli il CMS e seleziona il dominio con cui vuoi installare il tuo sito Web:
 
-![Scelta del modulo](images/add_a_module.png){.thumbnail}
+![Scelta del modulo](images/add-a-module-select-module-and-domain.png){.thumbnail}
 
 Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} per aggiungerlo. Consulta la nostra guida [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} in caso di necessità.
 
@@ -94,7 +94,7 @@ Scegli il dominio del tuo CMS, controlla la directory di destinazione che appare
 > Per un'installazione rapida, non crei il database prima, ma il robot installerà la macchina virtuale.
 >
 
-![Installazione base di un modulo](images/choose_installation.png){.thumbnail}
+![Installazione base di un modulo](images/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
 Una volta completata l'installazione, riceverai un'email con le informazioni di connessione all'interfaccia amministratore (*back office*) del tuo CMS. Accedi alla pagina per personalizzare il tuo sito Web.
 
@@ -107,7 +107,7 @@ Una volta completata l'installazione, riceverai un'email con le informazioni di 
 
 Assicurati che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}:
 
-![Installazione avanzata di un modulo](images/advanced_installation.png){.thumbnail}
+![Installazione avanzata di un modulo](images/add-a-module-advanced-mod-step-1.png){.thumbnail}
 
 ##### Scegli il database
 
@@ -122,7 +122,7 @@ Inserisci le informazioni di connessione al tuo database.
 > Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-![Database per l'installazione avanzata](images/advanced_installation_database.png){.thumbnail}
+![Database per l'installazione avanzata](images/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
 Esistono diverse possibilità:
 
@@ -182,13 +182,13 @@ Una volta inseriti tutti i dati, clicca su `Continua`{.action}:
 > La cartella finale indicata nel percorso di installazione inserito deve essere obbligatoriamente e completamente vuota affinché l'installazione possa essere completata.
 >
 
-![Configurazione del modulo per installazione avanzata](images/advanced_installation_configuration.png){.thumbnail}
+![Configurazione del modulo per installazione avanzata](images/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
 ##### Conferma l'installazione
 
 Verifica le informazioni visualizzate e clicca su `Conferma`{.action} se tutto è in ordine:
 
-![Conferma dell’installazione in modalità avanzata](images/advanced_installation_summary.png){.thumbnail}
+![Conferma dell’installazione in modalità avanzata](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
 ### Step 4: personalizza il tuo sito
 
@@ -212,17 +212,19 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 ## Per saperne di più
 
-[Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
+[Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}.
 
-[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
+[Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
-[Gestire un database da un hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database){.external}
+[Gestire un database da un hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database).
 
-[Gestire il vostro CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Gestire il vostro CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-[Disinstallare il tuo CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
+[Disinstallare il tuo CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo).
 
-Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
+Per mantenere il pieno controllo sull’installazione del CMS è possibile [installare manualmente un CMS sull’hosting Web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
+
+Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}.
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

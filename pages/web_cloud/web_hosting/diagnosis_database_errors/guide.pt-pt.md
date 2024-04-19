@@ -18,7 +18,7 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 >
 > A OVHcloud disponibiliza-lhe serviços cuja configuração e gestão são da responsabilidade do cliente. O cliente é o único responsável pelo seu bom funcionamento.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
@@ -30,6 +30,8 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 ## Instruções
 
 ### "Error establishing a database connection"
+
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Verificar os incidentes em curso
 
@@ -96,7 +98,7 @@ No seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 Recebeu um e-mail dos nossos serviços indicando que a quantidade de dados na sua base de dados ultrapassa o limite autorizado. A sua base de dados passou então a ler sozinha. Isto impede qualquer modificação do seu site.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 Três métodos irão permitir-lhe desbloquear a sua base de dados:
 
@@ -154,7 +156,7 @@ Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configur
 
 A seguinte mensagem na parte `Bases de dados`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) indica que o seu servidor [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) consumiu uma quantidade de recursos demasiado importante na infraestrutura OVHcloud:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 Nesta situação, pode aumentar a [quantidade de memória RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida) disponível a partir da parte `Bases de dados`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique no botão `...`{.action} na rubrica `RAM`.
 
@@ -190,7 +192,7 @@ Caso contrário, [guarde os dados presentes](/pages/web_cloud/web_hosting/sql_da
 
 Também pode selecionar a casa `Limpar a base de dados atual`{.action} imediatamente antes de [lançar a importação](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importar-o-seu-proprio-backup-a-partir-da-area-de-cliente):
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 Contacte, se necessário, a nossa [comunidade](https://community.ovh.com/en/) ou um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) sobre este assumpto. Não poderemos prestar-lhe assistência na correção desta anomalia.
 
@@ -282,7 +284,7 @@ Verifique o nome do servidor a inscrever no seu [Área de Cliente OVHcloud](http
 > Se pretender ligar-se a uma base de dados num servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), o nome do servidor a introduzir está inscrito no separador `Informações gerais`{.action}, parte `Informações da ligação`{.action}, `SQL`{.action} e na rubrica `Nome do host`{.action}.
 >
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Primeiros passos com o serviço Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

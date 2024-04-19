@@ -1,7 +1,7 @@
 ---
 title: 'Criando seu primeiro projeto Public Cloud da OVHcloud'
 excerpt: 'Saiba como criar seu primeiro projeto Public Cloud através da Área de Cliente OVHcloud'
-updated: 2021-10-06
+updated: 2024-02-22
 ---
 
 > [!primary]
@@ -20,40 +20,42 @@ A criação de um projeto é a primeira etapa na implantação de [instâncias P
 
 ## Instruções
 
-Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e clique no menu `Public Cloud`{.action}. Em seguida, clique em `Crie o seu primeiro projeto Public Cloud da OVH`{.action}.
+Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e clique no menu `Public Cloud`{.action}.
 
-Agora você pode adicionar um *voucher* se tiver um. Somente um comprovante fornecido para a sua ramificação de nuvem OVHcloud pode ser usado.
+Após ter tomado conhecimento, valide os termos dos contratos selecionando a casa correspondente e clique em `Descobrir o universo Public Cloud`{.action}.
 
-> [!warning]
-> Se você tiver criado anteriormente um projeto Public Cloud na sua conta e o tiver excluído, você não se qualificará para usar o *voucher*.
+![criação de projeto](images/firstproject2024.png){.thumbnail width="400"}
+
+- Se ainda não tiver um método de pagamento válido na sua conta OVHcloud, o processo de criação do projeto Public Cloud começará. O seu projeto será então criado em [Modo Descoberta](#discovery).
+- Se já tiver indicado um método de pagamento na sua conta OVHcloud, deve dar o nome do seu projeto Public Cloud e selecionar o seu método de pagamento.
+
+![criação de projeto](images/project-creation.png){.thumbnail width="400"}
+
+Após a conclusão do processo de criação, o seu novo projeto Public Cloud será visível no canto superior esquerdo da secção "Public Cloud" {.action} da Área de Cliente OVHcloud:
+
+![novo projeto criado](images/public-cloud-interface.png){.thumbnail width="400"}
+
+Já tem acesso a todo o ecossistema Public Cloud da OVHcloud, descubra esta nova interface da sua Área de Cliente consultando o nosso guia "[Familiarizar-se com a interface Public Cloud](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)".
+
+<a name="discovery"></a>
+
+> [!primary]
+> **Modo Descoberta**
 >
-
-Dê ao seu projeto um nome, leia e aceite os contratos e clique no botão `Continuar`{.action}.
-
-![name project](images/confirmvoucher.png){.thumbnail}
-
-Em seguida, você será solicitado a **Registrar um método de pagamento** se ainda não tiver um. Isso será solicitado mesmo que seja aplicado um *voucher*.
-
-Selecione um método de pagamento e clique em `Criar o meu projeto`{.action}
-
-![add payment method](images/pci-project-03b_2020.png){.thumbnail}
-
-Uma vez concluído, a criação do projeto começará:
-
-![create project](images/creatingproject.png){.thumbnail}
-
-Quando o processo estiver concluído, seu novo projeto Public Cloud estará disponível na seção `Public Cloud`{.action} na Área de Cliente OVHcloud:
-
-![new project created](images/newprojectcreated.png){.thumbnail}
+> Se se tratar do seu primeiro projeto Public Cloud e não tiver indicado nenhum método de pagamento na sua conta, o seu projeto Public Cloud será restringido ao "Modo Descoberta" da Área de Cliente OVHcloud. Isto significa que pode procurar e descobrir os produtos Public Cloud, mas ainda não pode criar recursos como as instâncias.
+>
+> Para explorar plenamente o potencial do Public Cloud e iniciar os seus primeiros recursos, clique em `Ativar o projeto`{.action} na página inicial do seu projeto.
+>
+>![Ativar projeto](images/activate-project.png){.thumbnail width="400"}
 
 ## Quer saber mais?
 
+- [Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
+- [Gestão de contactos de um projeto](/pages/public_cloud/compute/change_project_contacts)
+- [Delegar projetos](/pages/public_cloud/compute/delegate_projects)
+- [Eliminar um projeto Public Cloud](/pages/public_cloud/compute/delete_a_project)
+- [Informações sobre o método de faturação cloud](/pages/public_cloud/compute/analyze_billing)
+
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
-[Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-[Gestão de contactos de um projeto](/pages/public_cloud/compute/change_project_contacts)
-[Delegar projetos](/pages/public_cloud/compute/delegate_projects)
-[Eliminar um projeto Public Cloud](/pages/public_cloud/compute/delete_a_project)
-[Informações sobre o método de faturação cloud](/pages/public_cloud/compute/analyze_billing)
- 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

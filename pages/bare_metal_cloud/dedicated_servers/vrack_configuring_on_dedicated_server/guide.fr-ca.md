@@ -8,7 +8,7 @@ updated: 2023-09-12
 
 Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs serveurs (quel que soit leur nombre et leur emplacement physique dans nos datacenters) et de les connecter à un switch virtuel au sein d’un même réseau privé. Vos serveurs peuvent ainsi communiquer de manière privée et sécurisée entre eux, au sein d'un VLAN dédié.
 
-**Déouvrez comment configurer le vRack sur plusieurs serveurs dédiés.**
+**Découvrez comment configurer le vRack sur plusieurs serveurs dédiés.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -16,7 +16,7 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 - Un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) activé dans votre compte
 - Plusieurs [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs-dedies/) (compatibles vRack)
-- Disposer d’un accès administrateur (root) au serveur via SSH ou RDP
+- Disposer d’un accès administrateur (sudo) au serveur via SSH ou RDP
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 

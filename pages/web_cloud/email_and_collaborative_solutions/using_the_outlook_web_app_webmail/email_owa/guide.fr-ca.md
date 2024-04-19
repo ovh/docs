@@ -1,12 +1,12 @@
 ---
-title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)'
+title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
 updated: 2020-02-25
 ---
 
 ## Objectif
 
-Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web Application (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/ca/fr/mail/).
+Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/ca/fr/mail/).
 
 **Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
 
@@ -23,7 +23,7 @@ Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver
 
 > [!primary]
 >
-> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné. Vous pouvez utiliser la barre de navigation sur le côté gauche de ce guide pour passer aux paragraphes qui vous sont utiles.
+> Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné.
 >
 
 ### Étape 1 : Se connecter à OWA
@@ -210,7 +210,7 @@ Vous pouvez ensuite naviguer dans l'arborescence « Options » sur le côté gau
 
 ### Gestion des cookies
 
-Le webmail qui est utilisé pour nos offres e-mail est basé sur le logiciel Microsoft Outlook Web Application. Il est donc susceptible d'échanger des métadonnées avec les serveurs de Microsoft, sous forme de cookies nommés `appsforoffice.microsoft.com`.
+Le webmail qui est utilisé pour nos offres e-mail est basé sur le logiciel Microsoft Outlook Web App. Il est donc susceptible d'échanger des métadonnées avec les serveurs de Microsoft, sous forme de cookies nommés `appsforoffice.microsoft.com`.
 
 Si vous souhaitez désactiver ces échanges, vous pouvez utiliser sur votre navigateur une extension de type bloqueur de contenus (tel que uBlock Origin ou Ghostery).
 La désactivation de ces cookies peut néanmoins affecter la stabilité de votre webmail.

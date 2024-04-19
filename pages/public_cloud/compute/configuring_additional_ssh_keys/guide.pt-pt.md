@@ -1,7 +1,7 @@
 ---
 title: Configurar as chaves SSH suplementares
 excerpt: Saiba como configurar chaves SSH adicionais para a sua instância Public Cloud
-updated: 2022-02-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -18,13 +18,13 @@ Ao criar uma instância, pode ser configurada uma única chave SSH para a ligaç
 
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter acesso à instância via SSH enquanto administrador (root).
+- Ter acesso à instância via SSH enquanto administrador (sudo).
 
 ## Instruções
 
 > [!primary]
 >
-Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
+Atualmente, suportamos os seguintes formatos de chave SSH: **RSA**, **ECDSA** e **ED25519**.
 >
 
 ### Criação da chave SSH

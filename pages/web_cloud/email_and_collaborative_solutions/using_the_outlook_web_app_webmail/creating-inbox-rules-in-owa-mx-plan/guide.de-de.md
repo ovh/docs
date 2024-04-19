@@ -92,7 +92,7 @@ Da kein automatisierter Spam-Schutz definitiv entscheiden kann, ob es sich bei e
 
 > [!primary]
 >
-> Bitte beachten Sie, dass Spam-*False Positives* nicht direkt in OWA deklariert werden können. Wenn Sie E-Mails erhalten, die fälschlicherweise als \[SPAM] gekennzeichnet sind, empfehlen wir, unser Support-Team zu informieren, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/#/support/tickets/new) erstellen.
+> Bitte beachten Sie, dass Spam-*False Positives* nicht direkt in OWA deklariert werden können. Wenn Sie E-Mails erhalten, die fälschlicherweise als \[SPAM] gekennzeichnet sind, empfehlen wir, unser Support-Team zu informieren, indem Sie eine [Support-Anfrage](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
 >
 
 ## Weiterführende Informationen

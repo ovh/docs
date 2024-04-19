@@ -1,7 +1,7 @@
 ---
 title: Mounting HA-NAS via NFS share
 excerpt: Find out how to connect to your HA-NAS using an NFS share
-updated: 2023-07-06
+updated: 2024-03-13
 ---
 
 ## Objective
@@ -23,7 +23,7 @@ The OVHcloud HA-NAS service allows you to manage file storage that can be access
 - An operating system compatible with NFS installed on your server
 - [A partition created on the service with the NFS protcol enabled](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#partition)
 - [An ACL entry for the server's IP address](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#addaccess)
-- Administrative access (root) to your server via SSH or GUI
+- Administrative access (sudo) to your server via SSH or GUI
 
 ## Instructions
 
@@ -221,6 +221,41 @@ ubuntu@server:~$ nfsstat -m
 In the return, the parameter `vers=3` or `vers=4` tells you which protocol is used.
 
 Command usage will be similar for CentOS and Fedora.
+
+**Can I enter a specific version for using NFSv4?**
+
+As before, your NFS client will try to connect directly to the highest version supported by it.
+If you wish, you can choose between NFSv4.1 and NFSv4.2.
+
+To force the use of NFSv4.1, you must use the following command:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Example:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+To force the use of NFSv4.2, you must use the following command:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Example:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+You can use this command to check the version of your current mount:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
 
 ## Go further
 

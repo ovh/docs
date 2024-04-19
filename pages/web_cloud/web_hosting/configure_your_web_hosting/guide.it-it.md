@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web : ambiente, versione PHP, .ovhconfig"
 excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
-updated: 2023-09-05
+updated: 2024-03-12
 ---
 
 > [!primary]
@@ -195,7 +195,7 @@ Ora che conosci i diversi parametri modificabili per il tuo hosting Web OVHcloud
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Assicurati di essere posizionato sulla scheda
 `Informazioni generali`{.action}. A destra della voce `Versione PHP`{.action}, situata quasi al centro della pagina, clicca sul pulsante `...`{.action} e poi su `Modifica la configurazione`{.action}.
 
-![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
+![hostingconfiguration](images/modify-hosting-configuration.png){.thumbnail}
 
 > [!primary]
 >
@@ -222,7 +222,7 @@ Nella nuova finestra, sono disponibili due opzioni. Seleziona quella che corrisp
 
 Clicca su `Conferma`{.action} per applicare la modifica. e attendi il tempo necessario alla loro propagazione.
 
-![hostingconfiguration](images/change-hosting-configuration-step3.png){.thumbnail}
+![hostingconfiguration](images/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 
 ### 3 - Metodo 2: modificare la configurazione dell’hosting Web dal file ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -233,13 +233,13 @@ Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?act
 
 Per conoscere la password associata a un utente FTP, consulta le istruzioni fornite nella nostra guida ["Modificare la password di un utente FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
+![ovhconfig](images/tab-perso.png){.thumbnail}
 
 #### 3.2 - Recuperare o creare il file ".ovhconfig"
 
 Una volta effettuato l’accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), visualizzi tutti i file attualmente ospitati su questo spazio. Rimani posizionato sulla root dell’hosting (simbolo "/"). dovrebbe essere presente il file ".ovhconfig".
 
-![ovhconfig](images/ovhconfig-step2.png){.thumbnail}
+![ovhconfig](images/ovhconfig-file.png){.thumbnail}
 
 A questo punto, si presentano due possibilità:
 
@@ -358,7 +358,7 @@ Se necessario, consulta la nostra guida "[Configurare un multisito su un hosting
 > **Non è possibile specificare un secondo [ambiente di esecuzione](#runtime-environment), un secondo [modo di esecuzione](#runtime-mod) e/o un secondo [motore di esecuzione PHP](#php-runtime)** sullo stesso hosting Web. Saranno presi in considerazione solo quelli inseriti nel file ".ovhconfig" che si trova nella root del tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
-![ovhconfig](images/ovhconfig-step3.png){.thumbnail}
+![ovhconfig](images/root-folders.png){.thumbnail}
 
 ## Per saperne di più
 

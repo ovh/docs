@@ -39,19 +39,19 @@ Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanage
 > **Emails MXplan**
 >>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
->> Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Modifier`{.action}.<br><br>
+>> Cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.<br>
->> Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Modifier`{.action}.<br><br>
+>> Cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.<br><br>
 >>![email](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 
 ### Modifier le mot de passe depuis le webmail
 
-La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pplication) :
+La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pp) :
 
 - Emails MXplan
 - Exchange

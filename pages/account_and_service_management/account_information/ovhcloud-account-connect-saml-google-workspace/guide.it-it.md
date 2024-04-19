@@ -1,7 +1,7 @@
 ---
 title: Attiva le connessioni SSO di Google Workspace con il tuo account OVHcloud
 excerpt: "Questa guida ti mostra come associare il tuo servizio Google Workspace al tuo account OVHcloud tramite SAML 2.0"
-updated: 2023-06-01
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -103,6 +103,8 @@ Clicca sul pulsante `Connessione SSO`{.action}.
 
 Inserisci i metadati XML del tuo servizio Google Workspace. Completa il campo "Nome attributo di gruppo" con il valore `Group`. Clicca su `Conferma`{.action}.
 
+Per conservare gli utenti locali, spunta la casella `Conservare gli utenti OVHcloud attivi`.
+
 ![OVHcloud di connessione SSO Step 2](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
 A questo punto è necessario trovare il Google Workspace come provider di identità e i gruppi predefiniti.
@@ -162,6 +164,8 @@ Verifica che il gruppo sia aggiunto al tuo account OVHcloud nella sezione "Grupp
 
 Quando ti connetti con un utente del gruppo **Intern**, il tuo account OVHcloud riconoscerà che l'utente ha il ruolo "UNPRIVILEGED" specificato dal suo gruppo.
 
+Attenzione: se concedi il privilegio `Nessuno`, sarà necessario assegnare i diritti a questo gruppo tramite le [politiche IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+
 In seguito, potrai disconnetterti dal tuo account e collegarti al tuo Google Workspace come provider di identità.
 
 ### Connexion via SSO
@@ -187,6 +191,8 @@ Adesso sei connesso con lo stesso identificativo cliente, ma tramite l'utente Go
 [Definizione e gestione della password del tuo account](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 [Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
+
+[Come utilizzare le politiche IAM dallo Spazio Cliente](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
 

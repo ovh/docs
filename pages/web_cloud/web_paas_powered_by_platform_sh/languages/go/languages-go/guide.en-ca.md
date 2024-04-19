@@ -1,34 +1,69 @@
 ---
 title: Go
-updated: 2022-06-02
+updated: 2023-12-14
 ---
 
-## Objective  
+## Objective
 
 Web PaaS supports building and deploying applications written in Go using Go modules. They're compiled during the Build hook phase, and support both committed dependencies and download-on-demand.
 
 ## Supported versions
 
-| **Grid** | 
-|----------------------------------|  
-|  1.16 |  
-|  1.17 |  
-|  1.18 |  
+You can select the major and minor version. Patch versions are applied periodically for bug fixes and the like. When you deploy your app, you always get the latest available patches.
 
-To specify a Go container, use the `type` property in your `.platform.app.yaml`.
-```yaml   
-type: 'golang:1.18'
-``` 
+<table>
+    <thead>
+        <tr>
+            <th>Grid</th>
+            <th>Dedicated Gen 3</th>
+            <th>Dedicated Gen 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.21</td>
+            <td>None available</td>
+            <td>None available</td>
+        </tr>
+        <tr>
+            <td>1.20</td>
+            <td>None available</td>
+            <td>None available</td>
+        </tr>
+    </tbody>
+</table>
 
-## Deprecated versions
-- 1.8  
-- 1.9  
-- 1.10  
-- 1.11  
-- 1.12  
-- 1.13  
-- 1.14  
+
+### Specify the language
+
+To use Go, specify type as your app's `type`.
+
+```yaml 
+type: 'golang:<VERSION_NUMBER>'
+```
+
+For example:
+
+```yaml 
+type: 'golang:1.21'
+```
+
+### Deprecated versions
+
+The following versions are deprecated. They're available, but they aren't receiving security updates from upstream and aren't guaranteed to work. They will be removed in the future, so we advise you to migrate to one of the [supported versions](#supported-versions).
+
+- 1.19
+- 1.18
+- 1.17
+- 1.16
 - 1.15
+- 1.14
+- 1.13
+- 1.12
+- 1.11
+- 1.10
+- 1.9
+- 1.8
 
 ## Go modules
 
@@ -40,7 +75,7 @@ Assuming your `go.mod` and `go.sum` files are present in your repository, your a
 
 The following basic `.platform.app.yaml` file is sufficient to run most Go applications.
 
-```yaml
+```yaml 
 name: app
 
 type: golang:1.14
@@ -62,61 +97,16 @@ web:
     locations:
         /:
             # Route all requests to the Go app, unconditionally.
-            # If you want some files served directly by the web server without hitting Go, see
-            #  [Configuration app](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app)
             allow: false
             passthru: true
 
 disk: 1024
 ```
 
-Note that there is still an Nginx proxy server sitting in front of your application. If desired, certain paths may be served directly by Nginx without hitting your application (for static files, primarily) or you may route all requests to the Go application unconditionally, as in the example above.
+Note that there is still an Nginx proxy server sitting in front of your application.
+If desired, certain paths may be served directly by Nginx without hitting your application (for static files, primarily) or you may route all requests to the Go application unconditionally, as in the example above.
 
 ## Project templates
-
-### Hugo 
-
-![image](images/hugo.png)
-
-<p>This template provides a basic Hugo skeleton.  All files are generated at build time, so at runtime only static files need to be served.  The Hugo executable itself is downloaded during the build hook. You can specify the version to use by updating the `.platform.app.yaml` file.  It also includes a minimal template to get you started, but you are free to replace it with your own template.</p>
-<p>Hugo is a static site generator written in Go, using Go's native template packages for formatting.</p>
-  
-#### Features
-- Go 1.15<br />  
-- Automatic TLS certificates<br />  
-- Hugo downloaded on the fly during build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/hugo) on GitHub.
-
-### Basic Go 
-
-![image](images/BasicGo.png)
-
-<p>This template provides the most basic configuration for running a custom Go project using Go modules.  It demonstrates the Web PaaS `config-reader` library and connecting to a MariaDB instance.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
-<p>Go is a statically typed, compiled language with an emphasis on easy concurrency and network services.</p>
-  
-#### Features
-- Go 1.15<br />  
-- MariaDB 10.4<br />  
-- Automatic TLS certificates<br />  
-- Git module-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/golang) on GitHub.
-
-### Echo 
-
-![image](images/BasicGo.png)
-
-<p>This template demonstrates building the Echo framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Echo is a lightweight, minimalist web framework written in Go.</p>
-  
-#### Features
-- Go 1.14<br />  
-- MariaDB 10.4<br />  
-- Automatic TLS certificates<br />  
-- Git module-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/echo) on GitHub.
 
 ### Beego 
 
@@ -133,6 +123,21 @@ Note that there is still an Nginx proxy server sitting in front of your applicat
  
 [View the repository](https://github.com/platformsh-templates/beego) on GitHub.
 
+### Echo 
+
+![image](images/BasicGo.png)
+
+<p>This template demonstrates building the Echo framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Echo is a lightweight, minimalist web framework written in Go.</p>
+  
+#### Features
+- Go 1.14<br />  
+- MariaDB 10.4<br />  
+- Automatic TLS certificates<br />  
+- Git module-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/echo) on GitHub.
+
 ### Gin 
 
 ![image](images/gin.png)
@@ -146,4 +151,3 @@ Note that there is still an Nginx proxy server sitting in front of your applicat
 - Git module-based build<br />  
  
 [View the repository](https://github.com/platformsh-templates/gin) on GitHub.
-

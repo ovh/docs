@@ -1,7 +1,7 @@
 ---
 title: 'Optimisation des performances de votre site'
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -41,7 +41,7 @@ Il serait judicieux de noter la date à laquelle vous avez constaté un ralentis
 
 Si le problème concerne seulement une seule page et non tout le site web, il est impératif d’analyser cette page en particulier et de vérifier la requête ou le script qui serait à l’origine du temps de latence.
 
-4. **Le site affiche-t-il une page d’erreur ? Si oui, de quel type ?**
+4. **Le site affiche-t-il une page d’erreur ? Si oui, de quel type ?**
 
 Vérifiez si des erreurs sont créées pour identifier la source du temps de latence. Pour avoir un meilleur aperçu des erreurs qui surviennent sur votre hébergement, veuillez consulter les fichiers journaux.
 
@@ -51,6 +51,8 @@ L’utilisation des CMS comme WordPress, PrestaShop, Drupal ou Joomla! nécessit
 Les navigateurs Internet doivent pouvoir charger et lire tous ces éléments.
 Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 
+Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovhcloud.com/fr-ca/web-hosting/uc-best-web-hosting/){.external}.
+
 ### Étape 2 : Vérification de la version PHP
 
 Utiliser la dernière version de PHP compatible avec votre site peut avoir une influence considérable sur son rendement.
@@ -59,9 +61,9 @@ Pour vérifier si votre site web est compatible avec la dernière version PHP, v
 **PHP-FPM**
 
 Nous avons adapté PHP-FPM à notre infrastructure web afin d’accélérer les réponses PHP et de réduire substantiellement la charge du processeur central.
-Des tests ont révélé un rendement jusqu’à **7 fois supérieur**à l’ancien mécanisme.
+Des tests ont révélé un rendement jusqu’à **7 fois supérieur** à l’ancien mécanisme.
 
-Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
+Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
 
 |Variable|sans PHP-FPM|avec PHP-FPM|
 | ------------- |:-------------:| -----:|
@@ -71,9 +73,9 @@ Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
 
 Pour plus d’information sur les mises à jour PHP, veuillez vous référer à [ce guide](/pages/web_cloud/web_hosting/configure_your_web_hosting){.externe}.
 
-Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en savoir plus sur les options avancées de votre hébergement web, veuillez consulter [ce guide](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en savoir plus sur les options avancées de votre hébergement web, veuillez consulter [ce guide](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Le fichier _.ovhconfig_ fonctionne à la racine de l’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas dans des répertoires de niveau 2 ou supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
+Le fichier _.ovhconfig_ fonctionne à la racine de l’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas dans des répertoires de niveau 2 ou supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
 
 ### Étape 3 : Vérification du contenu média (images, vidéos...)
 
@@ -91,28 +93,25 @@ Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 c
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
-Vous pouvez accéder à vos fichiers journaux, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+Vous pouvez accéder à vos logs, aux statistiques et aux graphiques directement à partir de [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
-Comment accéder aux fichiers journaux :
+Comment accéder aux statistiques et logs :
 
-- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
+1. Cliquez sur `Hébergement`{.action} dans la colonne de gauche puis sélectionnez l'hébergement web concerné.
+2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}.
+3. Cliquez ensuite sur le bouton `Voir les statistiques`{.action} affiché pour accéder aux statistiques de visite du site web ou sur `Voir les logs`{.action} pour consulter les logs disponibles pour votre hébergement web.
 
-- Cliquez sur l’onglet `Plus +`{.action}, puis sélectionnez `Statistiques et fichiers journaux`{.action} ;
-
-- Cliquez ensuite sur les liens affichés pour accéder soit aux _statistiques de visite du site web_ ou aux _fichiers journaux_.
-
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Comment accéder aux graphiques :
 
-- Cliquez sur le domaine dans la section `Hébergement`{.action} ;
+1. Cliquez sur `Hébergement`{.action} dans la colonne de gauche puis sélectionnez l'hébergement web concerné.
+2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}. Défilez jusqu’au bas de la page où se trouve le graphique lié à l’utilisation de votre hébergement.
+3. Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
 
-- Lorsque vous êtes dans la section `Informations générales`{.action}, défilez jusqu’au bas de la page où vous pouvez consulter les graphiques liés à l’utilisation de votre hébergement ;
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
-- Sélectionnez le type d’information ainsi que la période des données affichées.
-![graphs](images/graphs_highlighted.png){.thumbnail}
-
-Quels sont les différents types de renseignements qui peuvent être affichés?
+Quels sont les différents types de renseignements qui peuvent être affichés ?
 
 - **Requêtes HTTP**: Indique le nombre moyen de consultations du site. Les consultations sont classées selon le statut HTTP 2xx/3xx/4xx/5xx.
 
@@ -149,7 +148,7 @@ Pour améliorer l’accès au site web, les téléchargements et profiter d’un
 
 Ainsi, vous améliorez le temps de réponse pour les visiteurs dans le monde entier puisque les parties statiques de votre site web seront téléchargées directement par votre visiteur au point de présence le plus proche de leur emplacement.
 
-Découvrez notre [solution CDN](https://www.ovhcloud.com/fr-ca/web-hosting/options/cdn/){.external}. 
+Découvrez notre [solution CDN](https://www.ovh.com/fr/cdn/){.external}. 
 
 ### Étape 6 : Contrôle du système de gestion du contenu (CMS) et des plugins utilisés
 
@@ -232,11 +231,17 @@ Par exemple :
 
 Évitez d’utiliser la clause « HAVING » qui peut ralentir les recherches. Évitez également la clause « GROUP BY », à moins que son utilisation soit absolument nécessaire.
 
+#### Web Cloud Databases
+Si, en dépit de toutes les modifications et mesures d’optimisation que vous avez appliquées, la base de données est toujours lente, ou si un grand nombre de requêtes sont envoyées à la base de données, vous pourrez éventuellement opter pour notre offre Web Cloud Databases pour disposer de plus de ressources.
+[Consulter notre offre Web Cloud Databases sur le site](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/){.external}.
+
 ## Aller plus loin
 
 [Modifier la configuration d’un d’hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.externe}
 
 [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database){.external}
+
+[Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

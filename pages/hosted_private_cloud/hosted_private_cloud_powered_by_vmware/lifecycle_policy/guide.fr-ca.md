@@ -1,7 +1,7 @@
 ---
 title: Cycle de vie de la solution VMware on OVHcloud
 excerpt: VMware on OVHcloud
-updated: 2023-06-26
+updated: 2024-01-22
 ---
 
 > [!warning]
@@ -97,8 +97,8 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 | DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2024 | 31/08/2024 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2025 | 31/08/2025 |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/09/2024 | 31/08/2025 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/09/2024 | 31/08/2025 |
 | Essentials (Intel Broadwell) | 2020 |            |            |            |
 | Premier (Intel Xeon Gold) | 2020 |            |            |            |
 
@@ -115,7 +115,7 @@ Pour connaître la politique de cycle de vie des produits VMware, merci de vous 
 Vous pouvez connaître votre version de NSX-v dans la section « Networking and security » de vSphere, puis dans l'onglet « about NSX ».<br>
 Si la version est antérieure à 6.4.12, nous vous invitons à contacter nos équipes du support afin de procéder à la mise à jour de ce composant.
 
-VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructures OVHcloud jusqu'au 15/01/2024. Vous devrez migrer depuis NSX Datacenter for vSphere vers NSX (NSX-T) avant cette date (15/01/2024).
+VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructures OVHcloud jusqu'au 31/07/2024. Vous devrez migrer depuis NSX Datacenter for vSphere vers NSX (NSX-T) avant cette date (31/07/2024).
 
 ### Cycle de vie Veeam Backup & Replication
 

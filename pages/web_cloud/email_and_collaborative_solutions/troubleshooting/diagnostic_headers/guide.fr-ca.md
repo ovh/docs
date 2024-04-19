@@ -134,7 +134,7 @@ L'en-tête complet de l'e-mail apparaît dans une fenêtre séparée. Vous pouve
 
 ### Récupérer un en-tête sur un webmail <a name="webmail"></a>
 
-#### Outlook Web Application (OWA) <a name="owa"></a>
+#### Outlook Web App (OWA) <a name="owa"></a>
 
 ##### **Récupérer l'en-tête**
 
@@ -166,7 +166,7 @@ Pour récupérer l'en-tête, sélectionnez l'e-mail concerné, puis cliquez sur 
 
 #### Outlook.com
 
-Pour afficher l'en-tête dans l'interface webmail <Outlook.com>, consultez la rubrique [Outlook Web Application](#owa) de ce guide.
+Pour afficher l'en-tête dans l'interface webmail &#60;Outlook.com&#62;, consultez la rubrique [Outlook Web App](#owa) de ce guide.
 
 ## Aller plus loin
 

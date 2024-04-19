@@ -19,7 +19,7 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, aggiungi spazio 
 - Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo progetto Public Cloud.
 - Disporre di un [disco aggiuntivo](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- Avere accesso amministrativo (root) alla tua istanza via SSH (Linux) o RDP (Windows).
+- Avere accesso amministrativo (sudo) alla tua istanza via SSH (Linux) o RDP (Windows).
 
 ## Procedura
 

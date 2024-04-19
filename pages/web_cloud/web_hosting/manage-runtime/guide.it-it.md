@@ -1,6 +1,6 @@
 ---
-title: 'Gestire i motori di esecuzione di un hosting Cloud Web'
-excerpt: 'Come scegliere i motori di esecuzione del tuo hosting per realizzare al meglio i tuoi progetti'
+title: "Gestire i motori di esecuzione di un hosting Cloud Web"
+excerpt: "Come scegliere i motori di esecuzione del tuo hosting per realizzare al meglio i tuoi progetti"
 updated: 2022-07-27
 ---
 
@@ -33,7 +33,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzione di hosting Cloud Web. Considera che durante l’installazione dell’hosting, sul tuo servizio viene creato automaticamente un motore.
 
-![cloudweb](images/cloud-web-runtime-step1.png){.thumbnail}
+![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
 
 ### Step 2: gestisci i motori di esecuzione
 
@@ -84,7 +84,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -98,7 +98,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
-![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -112,7 +112,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
-![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Step 3: associa il motore di esecuzione a un multisito
 
@@ -127,17 +127,15 @@ Una volta impostati i motori di esecuzione per il tuo progetto, assicurati che s
 
 e verifica che i nomi mostrati nella colonna `Motore di esecuzione` della tabella corrispondano ai nomi personalizzati indicati durante la creazione del motore.
 
-![cloudweb](images/cloud-web-runtime-step4.png){.thumbnail}
+![cloudweb](images/runtime-software-applications.png){.thumbnail}
 
 Per modificare un motore associato a un multisito, clicca sull’icona a forma di ingranaggio in corrispondenza del dominio in questione e clicca su `Modifica`{.action}.
-
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
 
 Nella nuova finestra, accanto a `Motore di esecuzione`, seleziona il motore corretto. Ti ricordiamo che i nomi visualizzati corrispondono al “nome personalizzato” che hai definito e che è necessario che il sito o l’applicazione accessibile dal dominio in questione siano compatibili con il motore scelto. 
 
 Una volta selezionato il motore, segui gli step fino al completamento dell’operazione.
 
-![cloudweb](images/cloud-web-runtime-step6.png){.thumbnail}
+![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
 
 ## Per saperne di più
 

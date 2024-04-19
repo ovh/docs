@@ -1,7 +1,7 @@
 ---
-title: Die Sicherheit Ihrer Website optimieren
-excerpt: Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen
-updated: 2021-12-10
+title: "Die Sicherheit Ihrer Website optimieren"
+excerpt: "Erfahren Sie hier, wie Sie die Sicherheit Ihrer Website erhöhen"
+updated: 2024-01-29
 ---
 
 > [!primary]
@@ -21,12 +21,12 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
 - Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.
@@ -45,7 +45,7 @@ Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https:/
 - Führen Sie einen vollständigen Scan aus, nachdem Sie Ihr Anti-Virus-/Anti-Malware-Programm aktualisiert haben.
 - Ändern Sie regelmäßig das Administratorpasswort Ihrer Systeme (für mehr Informationen zu angemessenen Passwörtern folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/account_information/all_about_username#ein-starkes-und-einzigartiges-passwort-erstellen)).
 
-### Schritt 2: Sichern Sie Ihr OVHcloud Kundencenter
+### Schritt 2: Ihr OVHcloud Kundencenter absichern
 
 Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) und folgen Sie den Anweisungen in dieser [Anleitung](/pages/account_and_service_management/account_information/all_about_username).
 
@@ -78,7 +78,7 @@ Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E
 Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
 Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsmittel** regelmäßig zu überprüfen.
 
-### Schritt 6: Überprüfen Sie, dass Ihre Website aktuell ist
+### Schritt 6: Überprüfen, dass Ihre Website auf dem neuesten Stand ist
 
 Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
 
@@ -88,11 +88,11 @@ Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_host
 
 Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das Protokoll **HTTPS** gemäß dieser [Anleitung](/pages/web_cloud/web_hosting/ssl-activate-https-website). Die Aktivierung dieses Protokolls erlaubt es, den Datenaustausch über Ihre Website zu verschlüsseln (insbesondere Angaben, die Benutzer in Formulare eingeben).
 
-### Schritt 8: Schützen Sie Ihre Formulare
+### Schritt 8: Formulare schützen
 
 Eingabe-Formulare auf Webseiten sind bevorzugte Ziele von Hackern/Spammern. Schützen Sie Ihre Formulare vor Angriffen, indem Sie **CAPTCHA**-Plugins einrichten.
 
-### Schritt 9: Richten Sie ein Sicherheitsplugin auf Ihrer Seite ein
+### Schritt 9: Sicherheitsplugin auf Ihrer Website einrichten
 
 Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplugin hinzu:
 
@@ -101,13 +101,13 @@ Fügen Sie Ihrer Website ein vom Herausgeber des CMS empfohlenes Sicherheitsplug
 - [Drupal](https://www.drupal.de/){.external}
 - [PrestaShop](https://www.prestashop.com/de){.external}
 
-### Schritt 10: Stellen Sie sicher, dass Ihr Hosting keine schädlichen Dateien enthält
+### Schritt 10: Überprüfen Sie Ihr Webhosting auf schädliche Dateien
 
 Loggen Sie sich hierzu in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) ein. Es erfordert technische Kenntnisse, um kompromittierte Dateien auf Ihrem Hosting zu erkennen. Sollten Sie Schwierigkeiten haben, diese Überprüfung durchzuführen, wenden Sie sich an unsere [Partner](https://partner.ovhcloud.com/de/directory/).
 
 Im Zweifelsfall können Sie auch die in [Schritt 1](#local) dieser Anleitung beschriebenen Überprüfungen durchführen und das [Passwort Ihres FTP-Bereichs ändern](/pages/web_cloud/web_hosting/ftp_change_password).
 
-### Schritt 11: Testen Sie die Backups Ihrer Seite
+### Schritt 11: Testen Sie die Backups Ihrer Website
 
 Die [Sicherungen](#backup) der Daten Ihrer Webseite (FTP-Dateien und Datenbanken) sollten regelmäßig durchgeführt werden. Es besteht aber keine Garantie, dass diese auch im Ernstfall Ihre Daten korrekt wiederherstellen können. Testen Sie auch die Sicherungen Ihrer Datenbank, um sicherzustellen, dass sie nicht korrupt sind.
 
@@ -115,14 +115,20 @@ Sie können diese Tests lokal durchführen, etwa indem Sie Ihre Daten einer Soft
 
 Sie können auch in einem anderen Ordner Ihres Webhostings eine **Testversion** Ihrer Webseite erstellen (z.B.: test.meinedomain.tld). (Es ist hierbei möglich, ein Basistemplate zu verwenden).
 
-## Weiterführende Informationen <a name="gofurther"></a>
+### Schritt 12: Den Zugang zu Ihrer Website mit der Datei “.htaccess“ absichern
+
+Die Datei “.htaccess“ ist eine Apache-Konfigurationsdatei (HTTP), die vom Webserver Ihres Webhostings ausgeführt wird. Sie dient u.a. folgenden Funktionen:
+
+- [Blockieren des Zugriffs auf Ihre Website für bestimmte IP-Adressen](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
+- [Verzeichnis oder Verwaltungsinterface Ihrer Website mit einer “.htpasswd“ Datei schützen](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password)
+- [WordPress CMS schützen](/pages/web_cloud/web_hosting/htaccess_how_to_protect_wordpress)
+
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Was tun, wenn Ihre WordPress Seite gehackt wurde?](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
 
 [Was tun, wenn Ihr Hosting aus Sicherheitsgründen deaktiviert wurde?](/pages/web_cloud/web_hosting/diagnostic_403_forbidden)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
-
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community besuchen Sie <https://community.ovh.com/en/>.

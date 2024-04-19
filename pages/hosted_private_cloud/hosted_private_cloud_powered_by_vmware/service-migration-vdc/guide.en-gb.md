@@ -1,7 +1,7 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2023-12-05
+updated: 2024-02-19
 ---
 
 <style>
@@ -109,6 +109,7 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &ensp;&ensp;[Step 6.6 Remove old datastores](#removeoldds)<br />
 &ensp;&ensp;[Step 6.7 Remove old hosts](#removeoldhosts)<br />
 &ensp;&ensp;[Step 6.8 Remove the source vDC](#removeoldvdc)<br />
+[Step 7 How to recreate an advanced NSXv architecture on NSX](#creatensxvonnsx)<br />
 
 <a name="design"></a>
 ### Step 1 Design your infrastructure
@@ -176,7 +177,7 @@ You can add a destination vDC following those steps:
 <a name="addhostandds"></a>
 #### Step 2.2 Add new hosts and Datastores
 
-In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Hosted Private Cloud billing](/pages/account_and_service_management/managing_billing_payments_and_services/information_about_dedicated_cloud_billing#add-resources-billed-monthly) guide.
+In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Hosted Private Cloud billing](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#monthly-resources) guide.
 <a name="converttoglobal"></a>
 #### Step 2.3 Convert a datastore to a global datastore
 
@@ -539,6 +540,9 @@ Here is how to proceed:
 > [!warning]
 >
 > This API call is to be executed on the old vDC (source vDC).
+> 
+> Warning! Between 7:00 pm and 8:00 am, the robot does not execute. It waits until 8:00 am to work. 
+> This period is defined in the operation of the robot.
 
 > [!api]
 >
@@ -711,6 +715,62 @@ With the API, ask for the vDC deletion:
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
+
+<a name="creatensxvonnsx"></a>
+
+### Step 7 - How to recreate an advanced NSXv architecture on NSX
+
+You can find all the information on setting up an advanced NSX-v architecture on NSX by watching this video.
+
+<iframe src="https://player.vimeo.com/video/891113062?h=dfd1a3d5dc&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/891113062">Recreate an advanced NSX-v architecture on NSX</a> from <a href="https://vimeo.com/ovhcloud">OVHcloud</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+## FAQ
+
+Below is a list of frequently asked questions about vDC migration.
+
+> [!faq]
+>
+> What are the impacts when sharing my datastores between my vDCs?
+>> There is no impact on your production, billing or ZFS snapshots. However, it is not currently possible to unshare a datastore. We'll change that later.
+> Will the VMs (with public IPs) be accessible from the outside if they are in the new vDC when the PFSENSEs are in the old vDC?
+>> Yes, the VM network is at the level of the VMware infrastructure and therefore on the 2 vDC.
+> Is it possible to set up a PFSENSE in the old vDC and another in the new vDC?
+>> Yes, it is even necessary to have 2 different PFSENSEs to avoid IP conflicts.
+> Are the VXLANs available on both vDCs?
+>> VXLANs are only available on Premier, not Essentials.
+> We do not use NSX. The migration procedure specifies that the source/destination vDS must have the same version. On the source, our only vDS is in 6.0.0, so I guess we have to update it. The documentation/video/interface indicate that we can do it ourselves without any downtime if it's vRack. I thought it was vRack but we can't update (the menu is grayed out). Does that mean it's vxlan? How do I tell the difference between vRack and vLAN?
+>> If it is grayed out, it is probably the public DVS (vmnetwork) /vxlan. The vrack DVS is a second DVS with the word "vrack" at the end. Please open a support ticket so that we can confirm this with you and perform the DVS upgrade if required.
+> How do I know if my network adapters are VLAN or VxLAN and compatible with Essentials? In vSphere, I see for example and without further details: vxw-dvs-74-virtualwire-20-sid-...
+>> All that is %-virtual-% is vxlan.
+> If I have several VMs that pass through the same EDGE NSX, will I need to migrate all of the VMs and the EDGE at the same time, otherwise I will no longer have an internet connection on some VMs?
+>> Yes, you will need to move the EDGE with a redeployment before moving the VMs. Depending on the case, with or without wide area networks, the two actions can be separated.
+> Can we create a DRS pool for global datastores? I think I have already tried unsuccessfully between 2 vDC 2014 / 2016.
+>> There are limitations for global datastores. We recommend only using them to migrate between the two vDCs, then having "standard" datastores on the new vDC and making the datastores global at the end of the migration.
+> We have an SDDC 2016 with 6 x 6 TB SSD Acceleraded (ordered in 2021) with "convert to global" available in the OVHcloud Control Panel. Can we convert them to global and keep them as they are in the new vDC (to avoid the vMotion storage phase)? Memo: the 6 DS are in a storage cluster.
+>> Yes, if the VMs point to these DS, there will be no storage motion steps.
+> What are the limitations/differences in migration depending on the range you have chosen (Essentials or Premier)?
+>> There are no differences between upgrading to Essentials or Premier. The only difference is in the steps linked to the NSX component. These steps are required for an upgrade to Premier and are not relevant for an upgrade to Essentials.
+> How long will it take to migrate (depending on the number of VMs)?
+>> The speeds recorded for the Storage Motion step are between 0.5 and 1TB per hour. For vMotion, this depends heavily on the size of the VM, on average less than a minute; it can take up to 3 minutes for VMs of several TB.
+> Which Microsoft licenses are available in SPLA mode?
+>> Windows licenses (standard and datacentre) and SQL Server (standard and web) are available on 2020 solutions in SPLA mode.
+> I need to upgrade 2 VMware infrastructure, which are currently used as part of a DRP zerto with data replication. Do I need to upgrade my secondary or primary infrastructure first?
+>> There is no obligation, we recommend you to upgrade the secondary infrastructure first to control the process before you upgrade the primary infrastructure.
+> Will the historical cap on hourly resources still be deployed?
+>> No, the hourly billing limit is disabled on the 2020 offers (Premier & Essentials). All older ranges will continue to work with the hourly billing limit in place.
+> Will the price of previous offers change?
+>> No, there are no price changes planned for the old solutions.
+> In which language are OVHcloud Professional Services available?
+>> OVHcloud Professional Services are available in English and French.
+> Can OVHcloud Professional Services recreate my NSX user accounts & configurations for me?
+>> Our Professional Services do not carry out any operations on the customer's infrastructure. We are here to help, guide and advise you. In this scenario, we will direct our customer to a partner who will be able to execute the operations in the customer infrastructure.
+> What is the duration of the credits in the Pack of Technical Advice Services?
+>> The pack is valid for 3 months from the order date.
+> How do I know how many hours of Credits have been used and are still outstanding?
+>> Your OVHcloud sales representative or technical referrer is able to provide you with this information.
+> What happens if the consulting session takes less time than expected?
+>> A session is scheduled and counted in 1-hour blocks. For example, a session scheduled for 2 hours and 1.5 hours would be billed for 2 hours. A session scheduled for 3 hours but only 1.5 hours would be charged at 2 hours.
 
 ## Go further
 

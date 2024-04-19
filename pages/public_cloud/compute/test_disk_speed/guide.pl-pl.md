@@ -17,7 +17,7 @@ Możliwe, że będziesz chciał sprawdzić prędkość dysków w ramach testów,
 ## Wymagania początkowe
 
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}.
-- Dostęp administracyjny (root) do tej instancji przez SSH (tylko dla Linux)
+- Dostęp administracyjny (sudo) do tej instancji przez SSH (tylko dla Linux)
 
 ## W praktyce
 
@@ -27,16 +27,16 @@ Komenda, której potrzebujesz do weryfikacji prędkości dysku nazywa się `fio`
 
 Aby zainstalować `fio`, połącz się przez SSH z Twoją instancją i wprowadź następujące polecenie:
 
-```
-root@server:~$ apt-get install fio
+```bash
+apt install fio
 ```
 
 ### Sprawdź prędkość dysku
 
 Aby przetestować dyski, wykonaj to polecenie:
 
-```
-root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```bash
+fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
@@ -48,15 +48,15 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 
 Aby sprawdzić wydajność dodatkowego dysku, należy przejść do jednego z katalogów punktu montażu.
 
-```
-root@server:~$ cd /mnt/disk
+```bash
+cd /mnt/disk
 ```
 
 ### Analizuj dane
 
 Po wykonaniu tego polecenia, otrzymasz wynik podobny do tego:
 
-```
+```console
 fio-2.1.11
 Starting 1 process
 test: Laying out IO file(s) (1 file(s) / 1024MB)
@@ -92,7 +92,7 @@ vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 
 Informacja, która nas interesuje, odnosi się do IOPS. Można ja znaleźć w 6 linii wyniku:
 
-```
+```console
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 

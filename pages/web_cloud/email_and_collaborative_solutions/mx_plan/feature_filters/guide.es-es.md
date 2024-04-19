@@ -1,7 +1,7 @@
 ---
 title: 'Crear filtros para sus direcciones de correo'
 excerpt: 'Cómo crear y configurar un filtro en una dirección de correo electrónico'
-updated: 2021-09-27
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -26,7 +26,7 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
 > [!warning]
 >
-> La siguiente guía se dirige a los titulares de la solución MX Plan "histórico". Para el nuevo plan, la gestión de los filtros se realiza directamente a través del webmail OWA (**O**utlook **W**eb **A**pplication). Identifique su producto utilizando la siguiente tabla.
+> La siguiente guía se dirige a los titulares de la solución MX Plan "histórico". Para el nuevo plan, la gestión de los filtros se realiza directamente a través del webmail OWA (**O**utlook **W**eb **A**pp). Identifique su producto utilizando la siguiente tabla.
 >
 
 Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
@@ -78,6 +78,11 @@ Segunda opción (regla):
 - **spf:** Indique el valor del [registro SPF](/pages/web_cloud/domains/dns_zone_spf) que quiera tener en cuenta, por ejemplo: "... no tiene registro SPF ... ".
 - **contiene:** ejemplo: "... contiene ... ".
 - **no contiene:** ejemplo: "... no contiene ... ".
+
+> [!primary]
+>
+> El SPF (Sender Policy Framework) permite que el servidor que recibe un mensaje de correo electrónico se asegure de que el mensaje se ha enviado desde un servidor de confianza.
+> Permite evitar posibles usurpaciones de identidad procedentes de direcciones de correo que utilizan su nombre de dominio (spoofing). Para más información sobre el SPF, consulte la guía «[Configurar un registro SPF en un dominio](/pages/web_cloud/domains/dns_zone_spf) ».
 
 Tercera opción (valor):
 

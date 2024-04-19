@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature (EN)
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2023-11-20
+updated: 2024-04-03
 ---
 
 ## Objective
@@ -23,7 +23,7 @@ These IP addresses will be imported in the form of a /24 IP block size and will 
 
 ### Your IP range must be in a supported RIR <a name="supportedrir"></a>
 
-A [Regional Internet registry](https://en.wikipedia.org/wiki/Regional_Internet_registry) (RIR) is an organization that manages IP addresses in a given region.
+A [Regional Internet registry](https://en.wikipedia.org/wiki/Regional_Internet_registry) (RIR) is an organization that manages IP addresses in a given region. 
 
 You need to own (see below) a public IPv4 block with one of the following RIRs:
 
@@ -34,10 +34,13 @@ It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This en
 
 Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.
 
+To be considered as a valid owned block, imported blocks must be one of the following types :
+
 | ARIN (object *Network type*) | RIPE (object *status*) |
 | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
 | **For more information :** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[Description of the INETNUM Object](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
+
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
@@ -240,7 +243,7 @@ No, an IP range must be used in only one campus.
 
 ### Is changing the campus of an imported IP range possible?
 
-It is not possible to change the campus of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen a French campus at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across all the datacenters located in France (Gravelines, Roubaix and Strasbourg).
+It is not possible to change the campus of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen Gravelines, Roubaix or Strasbourg campus at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across those 3 campuses (and only those 3 ones).
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 

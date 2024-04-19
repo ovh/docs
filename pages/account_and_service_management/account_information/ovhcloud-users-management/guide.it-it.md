@@ -1,7 +1,7 @@
 ---
-title: 'Gestire gli utenti dei servizi OVHcloud'
-excerpt: 'Come aggiungere nuovi utenti dal tuo account OVHcloud'
-updated: 2023-07-19
+title: 'Creare e gestire utenti locali su un account OVHcloud'
+excerpt: 'Scopri come aggiungere utenti locali dal tuo account OVHcloud'
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-07-19
 
 ## Obiettivo
 
-OVHcloud ti offre la possibilità di creare utenti che possano eseguire operazioni di lettura e scrittura nel tuo Spazio Cliente. Questo significa che puoi fornire ai dipendenti della tua azienda un accesso ai tuoi servizi OVHcloud, senza dover ricorrere a pratiche rischiose come la condivisione di password o di codici di doppia autenticazione.
+OVHcloud ti offre la possibilità di creare utenti locali che possano eseguire operazioni di lettura e scrittura nel tuo Spazio Cliente. Questo significa che puoi fornire ai dipendenti della tua azienda un accesso ai tuoi servizi OVHcloud, senza dover ricorrere a pratiche rischiose come la condivisione di password o di codici di doppia autenticazione.
 
 > [!primary]
 >
@@ -19,7 +19,7 @@ OVHcloud ti offre la possibilità di creare utenti che possano eseguire operazio
 > Le gestione dei contatti consiste, invece, nel delegare la completa gestione degli aspetti amministrativi, tecnici o di fatturazione di uno o più servizi sul tuo account OVHcloud. Per maggiori informazioni sulla gestione dei contatti, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts).
 >
 
-**Questa guida ti mostra i diversi privilegi di cui un utente può usufruire e il metodo per aggiungere e gestire gli utenti.**
+**Questa guida ti mostra i diversi privilegi di cui un utente locale può usufruire e il metodo per aggiungere e gestire gli utenti.**
 
 ## Prerequisiti
 
@@ -27,6 +27,10 @@ OVHcloud ti offre la possibilità di creare utenti che possano eseguire operazio
 - Avere accesso allo Spazio Cliente OVHcloud
 
 ## Procedura
+
+### Presentazione delle identità
+
+Gli utenti locali sono uno dei tipi di identità che possono essere associati al tuo account OVHcloud. Gli altri tipi di account sono descritti nella [documentazione associata](/pages/manage_and_operate/iam/identities-management).
 
 ### Gestione degli utenti
 
@@ -42,12 +46,20 @@ Nella nuova finestra, inserisci le informazioni richieste. Clicca su `Conferma`{
 ![users-management](images/usersmanagement2.png){.thumbnail}
 
 | Campo | Descrizione |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | Identificativo | Ad esempio, inserisci il nome dell’utente oppure il suo ruolo. |
-| Email | Inserisci l’indirizzo email dell’utente |
+| Email | Inserisci l’indirizzo email dell’utente. |
 | Password | Definisci la password dell'utente. Potrà modificarla più avanti, una volta creato il suo accesso. <br>Per impostare la password, consulta [la guida sulla gestione delle password](/pages/account_and_service_management/account_information/manage-ovh-password). |
-| Gruppo | Scegli un gruppo tra quelli disponibili |
-| Descrizione | È possibile aggiungere una descrizione dell’utente Esempio: il suo ruolo nell’azienda |
+| Gruppo | Scegli un gruppo tra quelli disponibili (vedere la tabella sottostante).|
+| Descrizione | È possibile aggiungere una descrizione dell’utente Esempio: il suo ruolo nell’azienda. |
+
+**Dettagli dei gruppi predefiniti:**
+
+| Ruolo | Dettagli |
+|--|--|
+| UNPRIVILEGED (Sola Lettura) | Consente l’accesso in lettura allo Spazio Cliente OVHcloud e a tutte le sue sezioni. |
+| DEFAULT (Amministratore con restrizioni) | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, ad eccezione della gestione degli utenti**. |
+| ADMIN (Amministratore) | Consente l’accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **inclusa** la gestione degli utenti. |
 
 L’utente otterrà quindi il proprio identificativo composto dall’identificativo numerico del tuo account (indicato nel menu “Gestione degli utenti”) e dal suo nome utente, entrambi i valori sono separati da uno slash “/”.
 
@@ -77,17 +89,17 @@ Nella scheda `Gestione utenti`{.action}, clicca su `Dichiarare un gruppo`{.actio
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 
-Viene visualizzata una finestra in cui è necessario completare i campi richiesti. Clicca su `Conferma`{.action} per creare l’utente.
+Viene visualizzata una finestra in cui è necessario completare i campi richiesti. Clicca su `Conferma`{.action} per creare il gruppo.
 
 ![users-management](images/usersmanagement8.png){.thumbnail}
 
 I gruppi assegnano un livello di privilegio predefinito agli utenti che contengono, in base al ruolo scelto:
 
 | Ruolo | Dettagli |
-|------------------|----------------------------------------------------------------------------------------------------------------------|
+|--|--|
 | Nessuno | Non concede l’accesso allo Spazio Cliente OVHcloud se non è stata applicata una politica IAM. |
 | Sola Lettura | Consente l’accesso in lettura allo Spazio Cliente OVHcloud e a tutte le sue sezioni. |
-| Amministrazione limitata | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, ad eccezione della gestione degli utenti**. |
+| Amministratore con restrizioni | Consente l'accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, ad eccezione della gestione degli utenti**. |
 | Amministratore | Consente l’accesso in scrittura allo Spazio Cliente OVHcloud e a tutte le sue sezioni, **inclusa** la gestione degli utenti. |
 
 #### Gestisci i gruppi

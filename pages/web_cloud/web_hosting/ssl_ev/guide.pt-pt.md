@@ -65,7 +65,7 @@ Consulte o nosso guia sobre como [gerir um certificado SSL no alojamento web](/p
 
 Insira com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL EV. 
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Clique em `Continuer`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 
@@ -84,19 +84,19 @@ Continue a encomenda até ao pagamento para validar o pedido de criação do cer
 
 Se ainda não encomendou o seu nome de domínio e o alojamento associado, aceda à nossa [página inicial da OVHcloud](https://www.ovhcloud.com/pt/), introduza um nome de domínio no **formulário de pesquisa previsto para este efeito** e clique em `Pesquisar`{.action} para iniciar a sua encomenda.
 
-![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
+![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
 De seguida, selecione o seu nome de domínio, escolha o seu alojamento e as suas opções até ao passo `Configure o seu alojamento web`.
 
 Selecione as suas escolhas de instalação de `módulo em 1 clique`{.action} e `CDN`{.action}, e desça no final da página até à secção `Torne o seu website seguro com os nossos certificados SSL`{.action}.
  
-![SSL EV order](images/ssl_ev_order.png){.thumbnail}
+![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
 
 Escolha `Sectigo EV SSL`{.action} e depois clique em `Seguinte`{.action}.
 
 Na nova página que aparece, introduza com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL EV:
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Clique em `Seguinte`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 

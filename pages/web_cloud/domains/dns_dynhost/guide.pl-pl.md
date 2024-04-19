@@ -1,11 +1,11 @@
 ---
 title: "Konfiguracja dynamicznego DNS (DynHost/DynDNS) dla Twojej domeny"
 excerpt: "Dowiedz się, jak skonfigurować dynamiczny rekord DNS dla Twojej domeny OVHcloud"
-updated: 2023-08-16
+updated: 2024-03-07
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie
@@ -52,7 +52,7 @@ Na przykład, **DynHost** może być używany, jeśli pacjent *samodzielnie host
 
 Aby utworzyć użytkownika DynHost, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `DynHost`{.action}.
 
-![dynhost](images/use-dynhost-step1.png){.thumbnail}
+![dynhost](images/tab.png){.thumbnail}
 
 Kliknij przycisk `Zarządzaj dostępami`{.action}, a następnie kliknij `Utwórz identyfikator`{.action}. W oknie, które się wyświetla, wprowadź wymagane informacje:
 
@@ -69,7 +69,7 @@ Kliknij przycisk `Zarządzaj dostępami`{.action}, a następnie kliknij `Utwórz
 
 Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Identyfikator pojawi się wówczas w tabeli figurującej na aktualnej stronie. Jeśli potrzebujesz dodatkowych loginów DynHost, powtórz ten etap tyle razy, ile to konieczne.
 
-![dynhost](images/use-dynhost-step2.png){.thumbnail}
+![dynhost](images/create-a-dynhost-username.png){.thumbnail}
 
 ### Etap 2: tworzenie dynamicznego rekordu DNS (DynHost) <a name="step2"></a>
 
@@ -89,7 +89,7 @@ Gdy jesteś gotowy, aby utworzyć rekord DynHost, przejdź ponownie na stronę g
 
 Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Rekord DynHost pojawi się wówczas w tabeli figurującej na aktualnej stronie. Jeśli potrzebujesz dodatkowych identyfikatorów DynHost, powtórz ten etap tyle razy, ile to konieczne.
 
-![dynhost](images/use-dynhost-step3.png){.thumbnail}
+![dynhost](images/create-a-dynhost.png){.thumbnail}
 
 ### Etap 3: automatyzacja zmiany DynHost
 
@@ -110,7 +110,9 @@ Po wybraniu i zainstalowaniu klienta skonfiguruj go, używając informacji o uż
 
 W zależności od używanego klienta, oprócz elementów użytkownika DynHost i odpowiedniej subdomeny może być wymagany adres URL aktualizacji. W takim przypadku użyj poniższego adresu URL i zastąp w nim informacje ogólne:
 
-`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
+```bash
+https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
 
 |Informacje|Czym należy zastąpić|
 |---|---|
@@ -124,7 +126,7 @@ Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. W tym celu zal
 > Każda zmiana w strefie DNS może spowodować, że aktualizacja będzie trwać od 4 do 24 godzin.
 >
 
-![dynhost](images/use-dynhost-step4.png){.thumbnail}
+![dynhost](images/target.png){.thumbnail}
 
 ## Sprawdź również <a name="go-further"></a>
 

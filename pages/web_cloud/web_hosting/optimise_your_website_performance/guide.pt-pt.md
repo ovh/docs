@@ -1,7 +1,7 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -72,9 +72,9 @@ Algumas variáveis do servidor são alteradas através da utilização do PHP-FP
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Pode obter informações sobre como atualizar o PHP [neste guia](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Pode obter informações sobre como atualizar o PHP [neste guia](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter detalhes sobre opções mais avançadas do seu alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter detalhes sobre opções mais avançadas do seu alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 O ficheiro _.ovhconfig_ funciona na raiz do pacote de alojamento ou num subdiretório de nível 1 (por ex.: _/www/_), mas não em diretórios de nível 2 ou superiores (por ex.: _/www/test/_ , _/www/test/test2/_)
 
@@ -96,17 +96,21 @@ Correlacione os gráficos da utilização de recursos do seu alojamento (mais in
 
 Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-Como aceder aos logs:
-\- Clique no domínio na secção `Alojamento`{.action},
-\- Clique no separador `Mais +`{.action} e, de seguida, selecione `Estatísticas e logs`{.action}.
-\- De seguida, clique nas hiperligações apresentadas para aceder às _Estatísticas de visitas do website_ ou aos _Logs_.
-![logs](images/logs_highlighted.png){.thumbnail}
+Como aceder às estatísticas e logs:
+
+1. Clique em `Alojamento`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente.
+2. Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
+3. De seguida, clique no botão `Ver estatísticas`{.action} apresentado para aceder às estatísticas de visita do website ou em `Consultar os logs`{.action} para consultar os logs disponíveis para o seu alojamento web.
+
+![logs](images/tab.png){.thumbnail}
 
 Como aceder aos gráficos:
-\- Clique no domínio da secção `Alojamento`{.action},
-\- Na secção `Informação geral`{.action}, desloque-se para baixo até à parte inferior da página, onde pode consultar os gráficos da utilização do seu alojamento.
-\- Nessa secção, pode selecionar o tipo de informação e o período de tempo para a visualização dos dados.
-![gráficos](images/graphs_highlighted.png){.thumbnail}
+
+1. Clique em `Alojamento`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente.
+2. Na página que se abrir, clique no separador `Estatísticas e logs`{.action}. Desloque-se até à parte inferior da página onde se encontra o gráfico relativo à utilização do seu alojamento.
+3. Selecione o **tipo** de informação bem como o **período** dos dados apresentados.
+
+![gráficos](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Quais são os diferentes tipos de informação que podem ser visualizados?
 
@@ -228,7 +232,7 @@ Se, apesar de todas as alterações e otimizações realizadas, a base de dados 
 
 ## Quer saber mais?
 
-[Alterar a configuração de um plano de alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
+[Alterar a configuração de um plano de alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Gestão de uma base de dados num pacote de alojamento web](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

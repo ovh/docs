@@ -154,7 +154,7 @@ Um die `.eml` Datei herunterzuladen wählen Sie eine E-Mail aus. Klicken Sie auf
 
 ![E-Mails](images/roundcube02.png){.thumbnail}
 
-#### Outlook Web Application (OWA) <a name="owa"></a>
+#### Outlook Web App (OWA) <a name="owa"></a>
 
 ##### **Header anzeigen**
 
@@ -186,7 +186,7 @@ Um den Header abzurufen, wählen Sie die betreffende E-Mail aus und klicken Sie 
 
 #### Outlook.com
 
-Um den Header im Webmail-Interface von <Outlook.com> anzuzeigen, folgen Sie dem Abschnitt [Outlook Web Application](#owa) dieser Anleitung.
+Um den Header im Webmail-Interface von &#60;Outlook.com&#62; anzuzeigen, folgen Sie dem Abschnitt [Outlook Web App](#owa) dieser Anleitung.
 
 ## Weiterführende Informationen
 

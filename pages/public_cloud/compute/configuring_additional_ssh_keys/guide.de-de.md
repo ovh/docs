@@ -1,7 +1,7 @@
 ---
 title: 'Zusätzliche SSH-Schlüssel konfigurieren'
 excerpt: Erfahren Sie hier, wie Sie zusätzliche SSH-Schlüssel für Ihre Public Cloud Instanz konfigurieren
-updated: 2022-02-04
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -18,13 +18,13 @@ Bei der Erstellung einer Instanz kann nur ein SSH-Schlüssel für den Erstzugrif
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH.  
+- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH.  
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfehlen wir Ihnen die Verwendung der RSA- oder ECDSA-Verschlüsselung. ED25519 wird derzeit nicht unterstützt.
+Wir unterstützen derzeit die folgenden SSH-Schlüsselformate: **RSA**, **ECDSA** und **ED25519**.
 >
 
 ### SSH-Schlüssel erstellen

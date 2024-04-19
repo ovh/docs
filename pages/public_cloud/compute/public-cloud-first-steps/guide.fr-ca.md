@@ -1,7 +1,7 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-updated: 2023-12-01
+updated: 2024-03-12
 ---
 
 ## Objectif
@@ -27,7 +27,7 @@ Le protocole SSH assure une communication client-serveur chiffrée. L'utilisatio
 
 > [!primary]
 >
-Notez qu'une connexion SSH basée sur des clés est obligatoire pour les connexions aux instances Public Cloud, à l'exception de celles qui exécutent des systèmes d'exploitation Windows. Les clés SSH publiques ajoutées à votre Panneau de configuration OVHcloud seront disponibles pour les services Public Cloud de toutes les régions et de tous les data centres. Vous ne pouvez stocker que les clés cryptées **RSA** et **ECDSA** ; ED25519 n'est pas pris en charge actuellement. 
+Notez qu'une connexion SSH basée sur des clés est obligatoire pour les connexions aux instances Public Cloud, à l'exception de celles qui exécutent des systèmes d'exploitation Windows. Les clés SSH publiques ajoutées à votre Panneau de configuration OVHcloud seront disponibles pour les services Public Cloud de toutes les régions et de tous les data centres. Vous pouvez stocker des clés cryptées **RSA**, **ECDSA** et **ED25519**.
 >
 L'authentification de connexion sur les instances Windows nécessite uniquement le nom d'utilisateur et le mot de passe.
 >
@@ -51,6 +51,11 @@ L'utilisation de l'option « -t » avec cette commande vous permet de spécifier
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
+```
+ou
+
+```bash
+$ ssh-keygen -t ed25519
 ```
 
 La commande vous invite à enregistrer la nouvelle clé dans le fichier standard :
@@ -149,9 +154,23 @@ Cliquez sur le bouton `Ajouter une clé SSH`{.action}. Dans la nouvelle fenêtre
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+> [!success]
+>
+Il est préférable de créer un réseau privé avant de procéder à la création d'une instance. Pour plus d'informations sur la création d'un réseau privé, consultez le guide [Configuration du vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+> 
+
 Connectez-vous à l'espace client [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. (Vous pouvez trouver la même fonctionnalité en cliquant sur `Instances`{.action} dans la barre de navigation de gauche sous `Compute`.)
 
-![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
+![instance select](images/instance-creation-2024.png){.thumbnail}
+
+**Local Zones :**
+
+Les Local Zones sont une extension des régions qui rapprochent les services OVHcloud de lieux spécifiques, offrant une latence réduite et des performances améliorées pour les applications. Elles sont stratégiquement placées à proximité de zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs, et de répondre aux exigences de résidence des données. Pour plus d'informations sur les Local Zones, consultez les liens suivants : [Local Zone Compute](https://www.ovhcloud.com/fr-ca/public-cloud/local-zone-compute/) et [Local Zone Compute - Fonctionnalités, capacités et limites](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+
+
+**Régions Globales :**
+
+Il s’agit de régions supportées par un ou plusieurs datacenters gérés par OVHcloud. Chaque région est située dans une zone géographique différente. Chaque région globale fournit une ou plusieurs Availibility Zone, par exemple GRA11, GRA7, BHS5, DE1 etc.
 
 Commencez par choisir un modèle de serveur en fonction de vos besoins. L'assistant fournit une description des différents cas d'usage et de la disponibilité du modèle de serveur. Vous avez le choix entre les catégories personnalisées suivantes:
 
@@ -313,7 +332,7 @@ Dans la première étape, choisissez vos paramètres de localisation en sélecti
 
 ![windows sysprep](images/windows-connect-02.png){.thumbnail}
 
-La deuxième étape nécessite la configuration du compte « Administrateur » par défaut. Entrez votre mot de passe deux fois et cliquez sur `Terminer`{.action} pour valider le processus d'installation. Utilisez le symbole de l'oeil pour vérifier si tous les caractères saisis dans les champs correspondent à la configuration réelle de votre clavier.
+La deuxième étape nécessite la configuration du compte « Administrator » par défaut. Entrez votre mot de passe deux fois et cliquez sur `Terminer`{.action} pour valider le processus d'installation. Utilisez le symbole de l'oeil pour vérifier si tous les caractères saisis dans les champs correspondent à la configuration réelle de votre clavier.
 
 L'instance redémarrera et vous pourrez vous connecter avec ces informations d'identification à l'aide d'un logiciel de bureau distant RDP (Remote Desktop Protocol).
 

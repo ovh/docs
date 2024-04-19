@@ -1,7 +1,7 @@
 ---
 title: 'Envoyer des SMS depuis une URL - http2sms'
 excerpt: 'Découvrez comment envoyer des SMS depuis une adresse http'
-updated: 2020-05-20
+updated: 2023-12-21
 ---
 
 ## Objectif
@@ -11,6 +11,7 @@ Différentes méthodes existent pour envoyer des SMS. L'une d'entre elles consis
 **Apprenez comment envoyer des SMS grâce à l'outil Wget.**
 
 ## Prérequis
+
 - Avoir créé un utilisateur SMS via l'espace client OVHcloud ou directement via les API. À cet effet, vous pouvez consulter le guide suivant : [Tout savoir sur les utilisateurs SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms)
 - Disposer d'un compte SMS OVHcloud avec des crédits SMS
 - Disposer d'un expéditeur SMS actif. Pour en savoir plus à ce sujet, vous pouvez consulter ce [guide](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms)
@@ -29,7 +30,7 @@ Votre URL devra avoir la forme suivante :
 https://www.ovh.com/cgi-bin/sms/http2sms.cgi?&account=XXXXXXX&login=XXXXXXX&password=XXXXXXX&from=XXXXXXX&to=XXXXXXX&message=XXXXXXX
 ```
 
-Les paramètres suivants doivent être séparés par des &. Remplacez les X par les informations ci-dessous:
+Les paramètres suivants doivent être séparés par le caractère `&`. Remplacez les X de l'exemple ci-dessus par les informations suivantes :
 
 |Paramètres|À remplacer par|
 |---|---|
@@ -40,7 +41,32 @@ Les paramètres suivants doivent être séparés par des &. Remplacez les X par 
 |to|Numéro de téléphone du destinataire du message au **format international** (00336xxxx pour un numéro français). Il est possible d'ajouter des destinataires à la suite, séparés par une virgule ",".|
 |message|Votre message. Ajouter %0d pour effectuer un saut de ligne dans le SMS envoyé|
 
-Par défaut le message est envoyé immédiatement.
+Par défaut, le message est envoyé immédiatement.<br>
+Votre navigateur vous affichera les informations suivantes :
+
+- statut de l'envoi
+- nombre de crédits restants sur le compte SMS
+- ID(s) des SMS envoyés
+
+Par exemple :
+
+```
+OK
+85.95
+123456789
+```
+
+Retrouvez plus de détails sur l'analyse des envois effectués [dans l'étape 3 de ce guide](#analysis).
+
+#### Cas particulier : envoi d'un SMS depuis un expéditeur au format court permettant la réponse
+
+Pour envoyer un SMS depuis un expéditeur au format court permettant la réponse du destinataire, vous devez laisser vide le paramètre `from` et ajouter le champ `senderForResponse=1`.
+
+Votre URL aura ainsi la forme suivante (où les X doivent être remplacés par les valeurs décrites dans le tableau ci-dessus) :
+
+```
+https://www.ovh.com/cgi-bin/sms/http2sms.cgi?&account=XXXXXXX&login=XXXXXXX&password=XXXXXXX&from=&senderForResponse=1&to=XXXXXXX&message=XXXXXXX
+```
 
 ### Étape 2 : Ajouter des champs facultatifs
 
@@ -99,7 +125,7 @@ Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il s
 | 7bits (norme GSM 03.38) | 149 caractères | 153 caractères |
 | Unicode | 59 caractères | 70 caractères  |
 
-### Étape 3 : Analyser les envois effectués
+### Étape 3 : Analyser les envois effectués <a name="analysis"></a>
 
 Une fois l'envoi effectué, un code de retour API vous indiquera si votre SMS a bien été envoyé ou s'il est en échec.
 Un code supérieur à 100 et inférieur à 200 indique que le message a bien été envoyé.

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring additional SSH keys'
 excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
-updated: 2022-02-04
+updated: 2024-01-08
 ---
 
 ## Objective
@@ -14,13 +14,13 @@ When creating an instance, only one SSH key for the initial connection can be co
 
 - A [Public Cloud instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- Administrative access (root) to your instance via SSH
+- Administrative access (sudo) to your instance via SSH
 
 ## Instructions
 
 > [!primary]
 >
-If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
+We currently support the following SSH key formats: **RSA**, **ECDSA** and **ED25519**.
 >
 
 ### Creating the SSH key

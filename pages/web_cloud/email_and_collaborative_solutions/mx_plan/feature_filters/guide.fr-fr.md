@@ -1,7 +1,7 @@
 ---
 title: 'Créer des filtres pour vos adresses e-mail'
 excerpt: 'Découvrez comment créer et configurer un filtre sur votre adresse e-mail'
-updated: 2021-09-27
+updated: 2024-03-20
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 
 > [!warning]
 >
-> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pplication). Identifiez votre offre à l'aide du tableau ci-dessous.
+> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pp). Identifiez votre offre à l'aide du tableau ci-dessous.
 >
 
 Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
@@ -74,6 +74,11 @@ Deuxième choix (règle) :
 - **spf :** Indiquez une valeur du [champ SPF](/pages/web_cloud/domains/dns_zone_spf) à prendre en compte, par exemple : « ... n'a pas de champ SPF ... ».
 - **contient :** exemple : « ... contient ... ».
 - **ne contient pas :** exemple : « ... ne contient pas ... ».
+
+> [!primary]
+>
+> Le SPF (Sender Policy Framework) permet au serveur qui reçoit un e-mail de s’assurer que ce dernier a bien été envoyé depuis un serveur de confiance.
+> Il permet de prévenir les potentielles usurpations d'identité venant d'adresses e-mail utilisant votre nom de domaine (spoofing). Pour plus d'infos sur le SPF, reportez-vous au guide « [Configurer un enregistrement SPF sur son nom de domaine](/pages/web_cloud/domains/dns_zone_spf) ».
 
 Troisième choix (valeur) :
 

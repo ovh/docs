@@ -22,17 +22,17 @@ Aufgrund der Änderungen, die Sie im Kundencenter vornehmen müssen, ist es wich
 
 Informationen zu den **DNS Servern** finden Sie in [unserer Anleitung](/pages/web_cloud/domains/dns_server_general_information).
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Wenn Sie *mydomain.ovh* eingeben, werden die zu dieser Domain gehörenden **DNS Server** abgefragt. Diese enthalten die **DNS-Zone** der Domain *mydomain.ovh*, in der die IP-Adresse des Hostings von *mydomain.ovh* angegeben ist. So kann Ihr Browser die auf dem Hosting enthaltene Website *mydomain.ovh* anzeigen. Man nennt das eine DNS-Auflösung.
 
-![DNS](images/dnssolve.gif){.thumbnail}
+![DNS](images/dns-resolution.gif){.thumbnail}
 
 ### Die DNS-Zone 
 
 Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensätzen**. Mit diesen können Sie Ihre Domain mit den Servern verbinden, auf denen Ihre Internetdienste gehostet werden, wie zum Beispiel Websites (über A-Eintrag) oder E-Mail-Adressen (MX-Eintrag).
 
-![DNS](images/dnszone.png){.thumbnail}
+![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
 
 **Diese Anleitung erklärt, wie Sie Ihre OVHcloud DNS-Zone über Ihr Kundencenter bearbeiten.**
 
@@ -64,7 +64,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHCloud an. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 
-![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
+![dnszone](images/tab.png){.thumbnail}
 
 ### DNS Einträge
 
@@ -203,7 +203,7 @@ Um einen neuen DNS-Eintrag hinzuzufügen, klicken Sie im Tab `DNS-Zone`{.action}
 
 Bitte überprüfen Sie zunächst, ob dieser Eintrag bereits existiert und auf ein anderes Ziel verweist. Filtern Sie hierzu die angezeigten Einträge nach Eintragstyp oder der verbundenen Domain. Wenn der Eintrag bereits existiert, ändern Sie ihn gemäß der nachfolgenen Anweisungen.
 
-![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
+![dnszone](images/add-an-entry.png){.thumbnail}
 
 > Wenn Ihr Ziel eine URL ist, denken Sie daran, diese mit einem Punkt abzuschließen. Wenn Sie dies nicht tun, wird Ihre Domain am Ende Ihres Zieles automatisch hinzugefügt.
 >
@@ -215,7 +215,7 @@ Bitte überprüfen Sie zunächst, ob dieser Eintrag bereits existiert und auf ei
 
 Um einen DNS-Eintrag zu ändern, klicken Sie im Tab `DNS-Zone`{.action} auf den Button `...`{.action} in der gewünschen Tabellenzeile. Klicken Sie anschließend auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 
-![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
+![dnszone](images/modify-record.png){.thumbnail}
 
 #### DNS-Eintrag löschen
 
@@ -223,7 +223,7 @@ Um einen DNS-Eintrag zu löschen, klicken Sie im Tab `DNS-Zone`{.action} auf den
 
 Sie können mehrere Einträge auf einmal löschen, indem Sie im linken Teil der Tabelle einen Haken setzen und dann auf den Button `Löschen`{.action} klicken.
 
-![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+![dnszone](images/delete-record.png){.thumbnail}
 
 #### Die DNS-Zone zurücksetzen
 
@@ -234,7 +234,7 @@ Sie können Ihre DNS-Zone auf zwei Zustände zurücksetzen:
 
 Klicken Sie im Tab `DNS-Zone`{.action} auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den angezeigten Schritten.
 
-![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
 Sie haben die Wahl zwischen folgenden Optionen:
 

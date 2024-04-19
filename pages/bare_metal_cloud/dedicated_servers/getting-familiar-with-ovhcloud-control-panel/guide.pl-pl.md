@@ -1,7 +1,7 @@
 ---
 title: "Klienci Kimsufi i So you Start - Zapoznaj się z Panelem klienta OVHcloud"
 excerpt: "Dowiedz się, jak zarządzać usługami w Panelu klienta OVHcloud"
-updated: 2023-01-05
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -97,7 +97,7 @@ W Panelu klienta OVHcloud te opcje są pogrupowane we wspólnej przestrzeni. Kli
 - **Mój poziom wsparcia** (dotyczy wyłącznie usług OVHcloud): w tym punkcie znajdziesz więcej informacji na temat poziomu wsparcia oferowanego przez OVHcloud.
 - **Zarządzanie użytkownikami**: w tej sekcji możesz zarządzać użytkownikami. Więcej informacji znajdziesz w [tym przewodniku](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 - **Faktury**: w tej sekcji możesz sprawdzać faktury, monitorować płatności dokonywane przy użyciu domyślnego sposobu płatności i sprawdzać stan konta. Więcej informacji na temat [tego przewodnika](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management).
-- **Moje usługi**: w tej sekcji możesz wyświetlić wszystkie Twoje usługi, regulaminy i klucze SSH.
+- **Moje usługi**: W tej sekcji możesz wyświetlać wszystkie Twoje usługi i regulaminy.
 - **Sposoby płatności**: w tej sekcji masz dostęp do Twojego aktualnego sposobu płatności, konta przedpłaconego oraz voucherów OVHcloud. Znajdziesz tu również opcję dodawania/usuwania metody płatności. Więcej informacji na temat zarządzania sposobami płatności znajdziesz w [tym przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 - **Moje zamówienia**: sprawdź zamówienia na tej stronie. Więcej informacji na temat [tego przewodnika](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders).
 - **Moje kontakty**: w tej sekcji możesz wyświetlać i zarządzać kontaktami przypisanymi do Twoich usług. W zakładce **Moje zlecenia** znajdziesz zlecenia zmiany danych wysłane z Twojego konta klienta oraz otrzymane zlecenia dotyczące zarządzania usługami. Aby uzyskać więcej informacji na temat zarządzania kontaktami z usługami, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts).

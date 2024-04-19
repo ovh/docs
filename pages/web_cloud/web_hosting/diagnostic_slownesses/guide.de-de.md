@@ -99,11 +99,11 @@ Um sicherzustellen, dass Ihre Dienste (Webhosting **und** Datenbank) derzeit von
 
 Um Cluster und Filer Ihres Webhostings zu ermitteln, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Im Tab `Allgemeine Informationen`{.action} können Sie `Rechenzentrum` und `Filer` des Webhostings einsehen.
 
-![Filer abrufen](images/DropFilerCluster1.png){.thumbnail}
+![Filer abrufen](images/find-filer.png){.thumbnail}
 
 Klicken Sie anschließend auf den Tab `Multisite`{.action}, um die Cluster-Nummer Ihres Hostings zu ermitteln.
 
-![Cluster abrufen](images/DropFilerCluster2.png){.thumbnail}
+![Cluster abrufen](images/find-cluster.png){.thumbnail}
 
 > [!success]
 >

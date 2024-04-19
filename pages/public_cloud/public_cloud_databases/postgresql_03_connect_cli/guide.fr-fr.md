@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Se connecter avec CLI (EN)
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Command Line Interface (CLI)
-updated: 2022-04-04
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -51,7 +51,7 @@ We will now follow official PostgreSQL documentation to perform our first connec
 In your CLI, type **psql --version**. The result should look like this:
 
 ```console
-laptop$ psql --version
+$ psql --version
 psql (PostgreSQL) 13.4 (Ubuntu 13.4-1))
 ```
 
@@ -64,14 +64,14 @@ We will follow official PostgreSQL documentation: <https://www.postgresql.org/do
 To perform a connection, simply type **psql** followed by the Service URI copied before:
 
 ```console
-laptop$psql "postgres://<username>:<password>@<hostname>:<port>/defaultdb?sslmode=require"
+$ psql "postgres://<username>:<password>@<hostname>:<port>/defaultdb?sslmode=require"
 ```
 
 Don't forget you need to modify the username, password, hostname and port.
 In our example, it will look like this:
 
 ```console
-laptop$psql "postgre://avnadmin:Mysup3rs3cur3p4ssw0rd@postgresql-ab123456-cd7891011.database.cloud.ovh.net:20184/defaultdb?sslmode=require"
+$ psql "postgre://avnadmin:Mysup3rs3cur3p4ssw0rd@postgresql-ab123456-cd7891011.database.cloud.ovh.net:20184/defaultdb?sslmode=require"
 ```
 
 Once connected correctly, you should see something similar to:
@@ -84,7 +84,10 @@ Type "help" for help.
 defaultdb=>
 ```
 
-Congratulations! You are now fully able to interact with your PostgreSQL instance!
+> [!success]
+>
+> Congratulations! You are now fully able to interact with your PostgreSQL instance!
+>
 
 ### PostgreSQL client usage
 
@@ -99,6 +102,26 @@ To verify:
 - `select * from pg_user;` will display information about existing users.
 
 In our example, it will look like this:
+
+```sql
+defaultdb=> \h CREATE DATABASE
+Command:     CREATE DATABASE
+Description: create a new database
+Syntax:
+CREATE DATABASE name
+    [ [ WITH ] [ OWNER [=] user_name ]
+           [ TEMPLATE [=] template ]
+           [ ENCODING [=] encoding ]
+           [ LOCALE [=] locale ]
+           [ LC_COLLATE [=] lc_collate ]
+           [ LC_CTYPE [=] lc_ctype ]
+           [ TABLESPACE [=] tablespace_name ]
+           [ ALLOW_CONNECTIONS [=] allowconn ]
+           [ CONNECTION LIMIT [=] connlimit ]
+           [ IS_TEMPLATE [=] istemplate ] ]
+
+URL: https://www.postgresql.org/docs/13/sql-createdatabase.html
+```
 
 ```sql
 defaultdb=> \l+
@@ -122,26 +145,6 @@ defaultdb=> select * from pg_user;
  _aiven    |    16399 | f           | t        | t       | f            | ******** |          |
  avnadmin  |    16400 | t           | f        | t       | t            | ******** |          |
 (3 rows)
-```
-
-```sql
-defaultdb=> \h CREATE DATABASE
-Command:     CREATE DATABASE
-Description: create a new database
-Syntax:
-CREATE DATABASE name
-    [ [ WITH ] [ OWNER [=] user_name ]
-           [ TEMPLATE [=] template ]
-           [ ENCODING [=] encoding ]
-           [ LOCALE [=] locale ]
-           [ LC_COLLATE [=] lc_collate ]
-           [ LC_CTYPE [=] lc_ctype ]
-           [ TABLESPACE [=] tablespace_name ]
-           [ ALLOW_CONNECTIONS [=] allowconn ]
-           [ CONNECTION LIMIT [=] connlimit ]
-           [ IS_TEMPLATE [=] istemplate ] ]
-
-URL: https://www.postgresql.org/docs/13/sql-createdatabase.html
 ```
 
 ## Go further

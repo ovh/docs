@@ -1,7 +1,7 @@
 ---
 title: "Changing the owner of a domain name"
 excerpt: "Find out how to change the owner of a a domain name in the OVHcloud Control Panel"
-updated: 2023-12-04
+updated: 2024-03-07
 ---
 
 ## Objective
@@ -40,17 +40,17 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 >
 > - The website of the respective **TLD** registry
 > - The [list of **TLD**s available at OVHcloud](https://www.ovhcloud.com/asia/domains/tld/)
-> - The section `Ongoing operations`{.action} of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) to check any pending status updates of the domain name
+> - The domain name status updates. To check this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then `Ongoing operations`{.action}.
 
 ### Step 1: Select the domain
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action}. In the `Domains`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action}. In the `Domain names`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
 
 ### Step 2: Inititate the owner change procedure
 
 In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change domain name holder`{.action}.
 
-![changing owner](images/3652-2.png){.thumbnail}
+![changing owner](images/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -60,9 +60,9 @@ In the `General information`{.action} tab, go to the **Plan** section in the bot
 
 A new browser tab will open with all eligible domains. Select a domain name on the list by using the checkbox to the left of it. This step can also be used to launch a bulk operation: it is possible to initiate a domain trade for multiple domain names at once, for example to change the owner of all .ovh domains. When you have made your choices, click `Continue`{.action}.
 
-![changing owner](images/3657.PNG){.thumbnail}
+![changing owner](images/available-domains.png){.thumbnail}
 
-In the owner details form, make sure to enter valid information into all the required fields. Avoid spelling mistakes and using [non-ASCII printable characters](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) whenever possible. Please note that any inaccurate or false information may cause a technical error and therefore a delay of the entire trading process. 
+In the owner details form, make sure to enter valid information into all the required fields. Avoid spelling mistakes and using [ASCII printable characters](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) whenever possible. Please note that any inaccurate or false information may cause a technical error and therefore a delay of the entire trading process. 
 
 Once you have confirmed your trade request, two emails will be sent to confirm or decline this change:
 
@@ -72,18 +72,15 @@ Once you have confirmed your trade request, two emails will be sent to confirm o
 If the email address is not changed as part of the domain trade, one recipient will receive both emails but each of them needs to be confirmed regardless.
 <br>Once the two recipients confirm the agreement via email, the domain name owner change will become effective.
 
-> [!primary]
->
-> The procedure can be validated by both parties during a period of 14 days.
-> 
-> If the change is declined by one of the two parties, the action will be cancelled.
->
-> If the current owner's email address is obsolete or inaccessible, you can **in this case**, contact support directly by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
->
-
 > [!warning]
 >
-> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain) for a period of 60 days. 
+> - The procedure can be validated by both parties during a period of 14 days. **After this period, the procedure is cancelled**.
+> 
+> - If the change is declined by one of the two parties, the action will be cancelled.
+>
+> - If the current owner's email address is obsolete or inaccessible, you can **in this case**, contact support directly by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> - If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](/pages/web_cloud/domains/transfer_outgoing_domain) for a period of 60 days.
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 
@@ -91,7 +88,7 @@ If you need to update some secondary information such as phone number, address e
 
 In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
 
-![changing owner](images/3658.png){.thumbnail}
+![changing owner](images/refresh-owner-information.png){.thumbnail}
 
 With this operation you do not need to confirm changes by email.
 

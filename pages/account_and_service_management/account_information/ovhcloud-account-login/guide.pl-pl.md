@@ -1,7 +1,7 @@
 ---
 title: Logowanie do Panelu klienta OVHcloud
 excerpt: 'Dowiedz się, jak zalogować się do Twojego konta OVHcloud'
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 > [!primary]
@@ -45,7 +45,7 @@ Identyfikator klienta jest podany w e-mailu z potwierdzeniem utworzenia konta, w
 
 Identyfikator klienta jest podany w prawym górnym rogu wszystkich faktur.
 
-![identyfikator klienta](images/nichandle01b.png){.thumbnail}
+![identyfikator klienta](images/customer-id-bill-en.png){.thumbnail}
 
 ##### **Logowanie bez identyfikatora**
 

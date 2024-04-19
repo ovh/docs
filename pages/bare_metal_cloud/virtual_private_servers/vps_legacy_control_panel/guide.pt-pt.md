@@ -1,7 +1,7 @@
 ---
 title: Gerir um VPS legacy
 excerpt: Saiba como administrar um VPS de uma gama antiga a partir da sua Área de Cliente OVHcloud
-updated: 2023-06-29
+updated: 2024-01-22
 ---
 
 > [!primary]
@@ -38,6 +38,12 @@ Esta opção irá abrir uma janela para iniciar o processo de [rescisão do serv
 ### Reiniciar em Modo de Rescue
 
 Clique para reiniciar o VPS em modo rescue. Encontre todos os detalhes no [nosso guia](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+Nas antigas gamas de VPS, as suas partições serão automaticamente montadas em modo rescue. Pode utilizar o comando seguinte para identificar o ponto de montagem da sua partição:
+
+```bash
+lsblk
+```
 
 ### Reiniciar o meu VPS
 
@@ -122,8 +128,6 @@ O seu VPS pode ser migrado automaticamente para a gama atual. Descubra as vantag
 [Criação e utilização de chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Como proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
-
-[Configurar uma nova instalação do Windows Server](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
 
 [VPS: primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 

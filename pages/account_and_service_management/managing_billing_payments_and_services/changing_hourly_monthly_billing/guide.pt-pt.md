@@ -1,5 +1,5 @@
 ---
-title: 'Passar de uma faturação à hora para uma faturação ao mês'
+title: 'Public Cloud Compute - Passar de uma faturação à hora para uma faturação ao mês'
 excerpt: 'Saiba como modificar o tipo de faturação da sua instância Public Cloud'
 updated: 2023-01-23
 ---

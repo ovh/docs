@@ -1,7 +1,7 @@
 ---
-title: Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise
-excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise
-updated: 2023-09-11
+title: "Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise"
+excerpt: "Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise"
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -22,9 +22,23 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 ## Procedura
 
-Quando il tuo server dedicato è configurato per la prima volta durante il processo di ordine, puoi selezionare il sistema operativo da installare.
+### Sommario
 
-### Installa o reinstalla il tuo server dedicato
+- [Installazione o reinstallazione di un sistema operativo](#install)
+- [Connessione al tuo server](#connect)
+- [Riavvio del tuo server dedicato](#reboot)
+- [Protezione del tuo server dedicato](#secure)
+- [Monitoraggio OVHcloud](#monitoring-server)
+- [Configurazione rete](#network)
+- [Modalità Rescue](#rescue)
+- [Accesso con l'IPMI](#console)
+- [Backup Storage](#backup)
+
+<a name="install"></a>
+
+### Installazione o reinstallazione di un sistema operativo
+
+Quando il tuo server dedicato è configurato per la prima volta durante il processo di ordine, puoi selezionare il sistema operativo da installare.
 
 Reinstalla facilmente il tuo server e scegli un altro modello di sistema operativo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
@@ -51,41 +65,23 @@ Dopo aver scelto di `Installare a partire da un template OVHcloud`{.action}, puo
 
 ![Selezione operativa](images/reinstalling-your-server-03.png){.thumbnail}
 
-Per modificare lo schema di partizione del tuo sistema operativo, seleziona la casella "Personalizza la configurazione delle partizioni" e clicca su `Seguente`{.action}.
+Se è necessario modificare lo schema di partizione del sistema operativo, spunta la casella "Personalizza la configurazione delle partizioni" prima di cliccare su `Seguente`{.action}.
 
 ![Personalizzare la configurazione delle partizioni](images/reinstalling-your-server-04.png){.thumbnail}
 
-Una volta terminate le modifiche, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
+Questo step permette di configurare il tipo di RAID e il partizionamento, nei limiti dell'hardware e del sistema operativo.
 
-#### Aggiunta di una chiave SSH (facoltativo)
+Una volta terminati gli adeguamenti, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
 
-Se installi un sistema operativo GNU/Linux, aggiungi la tua chiave SSH all'ultima fase del processo di installazione.
+In particolare, sono disponibili domande complementari specifiche per il sistema operativo selezionato.
 
-![Personalizza SSH](images/SSH_01.png){.thumbnail}
+Ad esempio, se installi un sistema operativo GNU/Linux, puoi aggiungere la tua chiave SSH.
 
-Se una chiave SSH è già registrata, appare nel menu a tendina con "Chiavi SSH" in basso. In caso contrario, è necessario aggiungerne una nella sezione "I tuoi servizi".
+![configurazione SSH](images/reinstalling-your-server-05.png){.thumbnail}
 
-Per farlo, apri la barra laterale cliccando sul tuo nome nell'angolo in alto a destra e utilizza la scorciatoia `Prodotti e servizi`{.action}.
+Clicca su `Conferma`{.action} per avviare l’installazione del sistema operativo sul tuo server dedicato.
 
-![Personalizza SSH](images/SSH_02.png){.thumbnail}
-
-In "I tuoi servizi", passa alla scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
-
-![Personalizza SSH](images/SSH_03.png){.thumbnail}
-
-Trattandosi dell'installazione di un server dedicato, seleziona "Dedicato" nel menu a tendina (compatibile anche con un VPS).
-
-Nella nuova finestra inserisci un ID (nome a tua scelta) e la chiave stessa (tipo RSA, ECDSA o Ed25519) nei campi corrispondenti.
-
-![Personalizza SSH](images/SSH_04.png){.thumbnail}
-
-Per maggiori informazioni sulla generazione di chiavi SSH, consulta la nostra [guida](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
-> [!warning]
->OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
->
->Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
->
+<a name="connect"></a>
 
 ### Connessione al tuo server
 
@@ -95,27 +91,27 @@ Una volta completata l'installazione, riceverai un'email con le istruzioni per l
 
 Utilizza questi esempi per connetterti al tuo server e sostituisci le informazioni di identificazione con i tuoi identificativi (l'indirizzo IP e il nome di riferimento del server sono intercambiabili).
 
-**Esempio con root:**
-
 ```bash
-ssh root@IPv4_del_tuo_server 
+ssh username@IPv4
 ```
 
-**Esempio con un utente preconfigurato:**
+**Esempio:**
 
 ```bash
-ssh ubuntu@nome_di_riferimento_del_tuo_server
+ssh ubuntu@203.0.113.1
 ```
 
 Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
 #### Windows
 
-Una volta completata l'installazione, riceverai un'email con la password per l'accesso amministratore (root). Utilizza queste credenziali per connetterti al server via RDP (**R**emote **D**esktop **P**rotocol). Una volta connesso, Windows ti guiderà durante l'installazione iniziale.
+Una volta completata l'installazione, riceverai un'email con la password per l'accesso amministratore (sudo). Utilizza queste credenziali per connetterti al server via RDP (**R**emote **D**esktop **P**rotocol). Una volta connesso, Windows ti guiderà durante l'installazione iniziale.
 
 Consulta anche la nostra guida [Configurare una nuova installazione di Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_first_config).
 
-### Riavvio del tuo server dedicato <a name="reboot"></a>
+<a name="reboot"></a>
+
+### Riavvio del tuo server dedicato
 
 Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
 
@@ -127,13 +123,17 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 
 ![Riavvia](images/rebooting-your-server.png){.thumbnail}
 
+<a name="secure"></a>
+
 ### Protezione del tuo server dedicato
 
 Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida [Mettere in sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 
 Se utilizzi un server Windows, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoraggio OVHcloud <a name="monitoring-server"></a>
+<a name="monitoring-server"></a>
+
+### Monitoraggio OVHcloud
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
 
@@ -150,6 +150,8 @@ Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni 
 Clicca su `Conferma`{.action} per aggiornare la tua configurazione di sorveglianza.
 
 Per maggiori informazioni sul monitoraggio, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
+
+<a name="network"></a>
 
 ### Configurazione rete
 
@@ -181,11 +183,15 @@ Per maggiori informazioni sulla configurazione dell'alias IP, consulta la guida 
 
 Tutti i server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6. Per utilizzare gli indirizzi di questo blocco, è necessario apportare modifiche alla configurazione di rete. Consulta la nostra guida [Configurazione IPv6](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 
+<a name="rescue"></a>
+
 ### Modalità Rescue
 
 Per risolvere qualsiasi problema, riavvia il server in modalità Rescue dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). È importante identificare i problemi del server in questa modalità, per escludere i problemi legati al software prima di contattare il nostro team di supporto.
 
 Consulta la guida [Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
+<a name="console"></a>
 
 ### Accesso con l'IPMI
 
@@ -197,6 +203,8 @@ Consulta la guida [Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud
 OVHcloud implementa tutti i server dedicati con una console IPMI (Intelligent Platform Management Interface) che si esegue nel browser o da un'applet Java e ti permette di connetterti direttamente al tuo server anche se non dispone di connessione di rete. che è uno strumento utile per risolvere i problemi che hanno potuto mettere il tuo server online.
 
 Per maggiori informazioni, consulta la guida [Utilizzare l'IPMI sui server dedicati](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+
+<a name="backup"></a>
 
 ### Backup Storage
 
@@ -211,9 +219,13 @@ Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](/pag
 
 ## Per saperne di più
 
+[Configurazione degli account utente e dell'accesso root su un server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+
 [Mettere in sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
 [Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

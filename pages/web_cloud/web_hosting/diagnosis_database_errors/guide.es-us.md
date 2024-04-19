@@ -18,7 +18,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Le ofrecemos esta guía para ayudarle a completar mejor las tareas más comunes. Sin embargo, le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle. Más información en la sección [Más información](#gofurther) de esta guía.
+> Le ofrecemos esta guía para ayudarle a completar mejor las tareas más comunes. Sin embargo, le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle. Más información en la sección [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -30,6 +30,8 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 ## Procedimiento
 
 ### "Error al conectar a la base de datos"
+
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Comprobar los incidentes en curso
 
@@ -96,7 +98,7 @@ En el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 Nuestros servicios le han enviado por correo electrónico un mensaje indicándole que la cantidad de datos en la base de datos supera el límite autorizado. La base de datos ha pasado a ser de solo lectura. Esto impide realizar cambios en el sitio web.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 Desbloquee la base de datos de tres formas distintas:
 
@@ -154,7 +156,7 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
 
@@ -190,7 +192,7 @@ En caso contrario, [guarde los datos presentes](/pages/web_cloud/web_hosting/sql
 
 También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo antes de [iniciar la importación](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importar-una-copia-de-seguridad-desde-el-area-de-cliente):
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). No podremos asistirle en la corrección de esta anomalía.
 
@@ -282,7 +284,7 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 > Si desea conectarse a una base de datos en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
 >
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Primeros pasos con el servicio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

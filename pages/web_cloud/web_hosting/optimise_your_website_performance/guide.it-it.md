@@ -1,7 +1,7 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -72,9 +72,9 @@ Utilizzando PHP-FPM cambiano alcune variabili del server:
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Per configurare una nuova versione di PHP, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Per configurare una nuova versione di PHP, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informazioni sulle opzioni più avanzate del tuo Web hosting, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informazioni sulle opzioni più avanzate del tuo Web hosting, consulta [questa guida](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Il file _.ovhconfig_ funziona nella root del tuo hosting o nella sottodirectory di livello 1 (es.:_/www/_), ma non nella directory di livello 2 o superiore (es.: _/www/test/_, _/www/test/test2/_)
 
@@ -96,19 +96,21 @@ Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulterio
 
 Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external}.
 
-Per accedere ai log:
+Come accedere alle statistiche e ai log:
 
-- Nella sezione `Hosting`{.action}, clicca sul Dominio.
-- Clicca sulla scheda `More+`{.action} e seleziona `Statistiche e log`{.action}.
-- Quindi clicca sui link visualizzati per accedere alle_Statistiche sito Web_ oppure ai _Log_.
-![logs](images/logs_highlighted.png){.thumbnail}
+1. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione.
+2. Clicca sulla scheda `Statistiche e log`{.action}.
+3. Clicca sul pulsante `Visualizza le statistiche`{.action} per accedere alle statistiche di visita del sito Web o su `Visualizza i log`{.action} per consultare i log disponibili per il tuo hosting Web.
 
-Per consultare i grafici:
+![logs](images/tab.png){.thumbnail}
 
-- Nella sezione `Hosting`{.action}, clicca sul Dominio.
--  Vai alla sezione `Informazioni generali`{.action}, scorri fino in fondo alla pagina e consulta i grafici relativi all’utilizzo del tuo hosting.
-Qui puoi selezionare il tipo di informazione e il periodo di tempo riguardante i dati da visualizzare.
-![graphs](images/graphs_highlighted.png){.thumbnail}
+Come accedere ai grafici:
+
+1. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web in questione.
+2. Nella nuova pagina, clicca sulla scheda `Statistiche e log`{.action}. Sfoglia fino in fondo alla pagina in cui si trova il grafico associato all’utilizzo dell’hosting.
+3. Seleziona il **tipo** di informazioni e il **periodo** dei dati visualizzati.
+
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Che tipo di informazioni è possibile visualizzare?
 
@@ -233,7 +235,7 @@ Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è
 
 ## Per saperne di più 
 
-[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
+[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Gestisci un database dal tuo hosting condiviso](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

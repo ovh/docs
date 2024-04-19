@@ -1,6 +1,6 @@
 ---
 title: 'Jak zezwolić na mniej bezpieczne połączenia w Gmailu'
-hidden: true
+flag: hidden
 updated: 2022-04-06
 ---
 

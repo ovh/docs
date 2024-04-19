@@ -13,14 +13,14 @@ Pour minimiser le risque d'erreur pendant le remplacement d’un disque dur, nou
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
-- Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
+- Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 - Avoir installé l'utilitaire sas2ircu sur votre serveur Windows (disponible via le moteur de recherche [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
 ## En pratique
 
 > [!primary]
 >
-> Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode Rescue64 et d'utiliser l'outil nvme-cli installé par défaut.
+> Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode Rescue et d'utiliser l'outil nvme-cli installé par défaut.
 > 
 
 ### Récupérer le numéro de série d'un disque (RAID logiciel)

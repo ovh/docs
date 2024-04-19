@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2023-11-14
+updated: 2024-03-21
 ---
 
 ## Objectif
@@ -14,9 +14,9 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. 
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
+- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Découvrez l'état des différentes versions disponibles sur cette [page](https://webhosting-infos.hosting.ovh.net/). Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
 
@@ -37,7 +37,7 @@ En utilisant cette solution, vous devrez choisir parmi les 4 CMS cités plus hau
 
 Si vous souhaitez installer un CMS indisponible via nos « modules en 1 clic », vous pouvez l'installer manuellement sur votre hébergement. Ceci sous réserve que ce CMS soit compatible avec nos offres d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
 
-![Logo des CMS](images/CMS_logo.png){.thumbnail}
+![Logo des CMS](images/cms-logos.png){.thumbnail}
 
 ### Étape 2 - accéder à la gestion des « modules en 1 clic »
 
@@ -45,7 +45,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Vous y retrouverez les éventuels « modules en 1 clic » déjà installés. Vous pourrez y gérer vos « modules en 1 clic » et en installer de nouveaux.
 
-![Accès à la section Modules 1 clic](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Accès à la section Modules 1 clic](images/tab.png){.thumbnail}
 
 ### Étape 3 - ajouter un « module en 1 clic »
 
@@ -53,9 +53,9 @@ Dans l'onglet `Modules en 1 clic`{.action} de votre hébergement, cliquez sur le
 
 Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez le domaine avec lequel vous désirez installer votre site web :
 
-![Choix du module](images/add_a_module.png){.thumbnail}
+![Choix du module](images/add-a-module-select-module-and-domain.png){.thumbnail}
 
-Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} si besoin.
+Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) si besoin.
 
 > [!primary]
 >
@@ -88,7 +88,7 @@ Choisissez le nom de domaine de votre CMS, contrôlez le répertoire cible qui a
 > Pour une installation rapide, ne créez pas la base de données au préalable, le robot d'installation s'en chargera.
 > 
 
-![Installation rapide d'un module](images/choose_installation.png){.thumbnail}
+![Installation rapide d'un module](images/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
 Une fois l'installation terminée, vous recevrez un e-mail contenant les informations de connexion à l'interface administrateur (*back office*) de votre CMS. Connectez-vous à celle-ci pour personnaliser votre site web.
 
@@ -101,7 +101,7 @@ Une fois l'installation terminée, vous recevrez un e-mail contenant les informa
 
 Pour réaliser cette méthode d'installation, assurez-vous que la case `Installation en mode avancé`{.action} est cochée, puis cliquez sur le bouton `Suivant`{.action} :
 
-![Installation avancée d'un module](images/advanced_installation.png){.thumbnail}
+![Installation avancée d'un module](images/add-a-module-advanced-mod-step-1.png){.thumbnail}
 
 ##### Choisir la base de données
 
@@ -116,7 +116,7 @@ Renseignez les informations de connexion à votre base de données.
 > Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-![Base de données pour installation avancée](images/advanced_installation_database.png){.thumbnail}
+![Base de données pour installation avancée](images/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
 Il existe plusieurs possibilités :
 
@@ -176,15 +176,15 @@ Une fois ces informations complétées, cliquez sur le bouton `Suivant`{.action}
 > Le dossier final indiqué dans le chemin d'installation renseigné doit être obligatoirement et entièrement vide pour que l'installation aboutisse.
 > 
 
-![Configuration du module pour installation avancée](images/advanced_installation_configuration.png){.thumbnail}
+![Configuration du module pour installation avancée](images/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
 ##### Confirmer l'installation
 
 Vérifiez les informations affichées puis cliquez sur `Valider`{.action} si tout est en ordre :
 
-![Validation de l'installation en mode avancé](images/advanced_installation_summary.png){.thumbnail}
+![Validation de l'installation en mode avancé](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
-### Étape 4 : personnaliser mon site
+### Étape 4 - personnaliser mon site
 
 L'installation peut prendre une dizaine de minutes.
 
@@ -217,6 +217,8 @@ Découvrez nos [offres Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-c
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
 [Désinstaller votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
+
+Si vous souhaitez garder un contrôle total sur l'installation de votre CMS, vous pouvez [installer manuellement un CMS sur votre hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

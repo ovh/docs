@@ -1,7 +1,7 @@
 ---
 title: "Montowanie NAS-HA przy użyciu zasobów NFS"
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
-updated: 2023-07-06
+updated: 2024-03-13
 ---
 
 > [!primary]
@@ -27,7 +27,7 @@ Usługa NAS-HA OVHcloud pozwala na zarządzanie przestrzenią dyskową plików d
 - Posiadanie systemu operacyjnego kompatybilnego z NFS zainstalowanego na Twoim serwerze
 - [Utworzenie partycji dla Twojej usługi przy użyciu protokołu NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#partition)
 - [Posiadanie wpisu ACL dla adresu IP serwera](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#addaccess)
-- Dostęp administracyjny (root) do serwera przez SSH lub GUI
+- Dostęp administracyjny (sudo) do serwera przez SSH lub GUI
 
 ## W praktyce
 
@@ -225,6 +225,41 @@ ubuntu@server:~$ nfsstat -m
 W powrocie parametr `vers=3` lub `vers=4` wskazuje, który protokół jest używany.
 
 Korzystanie z poleceń będzie podobne dla CentOS i Fedora.
+
+**Czy można wprowadzić wersję przeznaczoną do użycia przez NFSv4?**
+
+Podobnie jak poprzednio, klient NFS będzie próbował połączyć się bezpośrednio z najwyższą wersją, do której ma dostęp.
+Możesz wybrać NFSv4.1 lub NFSv4.2
+
+Aby wymusić użycie NFSv4.1, użyj następującego polecenia:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Przykład:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.1 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Aby wymusić użycie NFSv4.2, użyj następującego polecenia:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Przykład:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4.2 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Za pomocą tego polecenia możesz sprawdzić wersję aktualnego pakietu:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
 
 ## Sprawdź również
 

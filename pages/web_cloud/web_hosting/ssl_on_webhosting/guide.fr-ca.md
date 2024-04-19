@@ -34,7 +34,7 @@ Selon le [certificat SSL ](https://www.ovhcloud.com/fr-ca/web-hosting/options/ss
 
 Le tableau qui s'affiche contient tous les noms de domaine ajoutés à votre hébergement web. La colonne « SSL » vous montre l'état d'activation des connexions SSL sécurisées sur vos multisites.
 
-![managessl](images/manage-ssl-step5.png){.thumbnail}
+![managessl](images/ssls.png){.thumbnail}
 
 Trois états peuvent alors apparaître :
 
@@ -55,7 +55,7 @@ Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droit
 > Certains certificats SSL **Externes** peuvent être valables pour plusieurs noms de domaine à la fois. Si vous utilisez l'un d'eux, la mention *Activé* n'apparaîtra pas non plus pour tous vos noms de domaines déclarés dans le tableau « multisite ». Néanmoins, votre certificat SSL sera tout de même valable pour les noms de domaines qu'il *englobe*.
 >
 
-![managessl](images/manage-ssl-step6.png){.thumbnail}
+![managessl](images/modify-domain.png){.thumbnail}
 
 Une fois que vous avez soumis la demande d'activation, l'état de la connexion sécurisée SSL pour le multisite concerné doit être actualisé au bout de quelques secondes, le statut étant remplacé par « À générer ». Répétez cette action si nécessaire si vous souhaitez activer SSL pour d'autres multisites.
 
@@ -79,9 +79,9 @@ Avant de procéder à cette configuration, assurez-vous que l'étape précédent
 >
 > Avant de poursuivre, assurez-vous également que le ou les entrées multisite pour lesquelles vous activez l'option SSL pointent vers l'adresse IP de l'hébergement web. Cette configuration vous est automatiquement proposée lorsque vous ajoutez ou modifiez une entrée multisite, mais doit être faite manuellement pour un nom de domaine qui n'est pas géré dans votre espace client.<br>
 > - Retrouvez l'adresse IP de votre hébergement depuis l'onglet `Informations générales`{.action}, sous la mention `IPv4`.
-> ![managessl](images/manage-ssl-arecord01.png){.thumbnail}
+> ![managessl](images/find-ipv4.png){.thumbnail}
 > - Configurez la zone DNS du nom de domaine déclaré en multisite, depuis la rubrique `Domaines`{.action}, onglet `Zone DNS`{.action}. Modifiez ou ajoutez un enregistrement de type `A` corespondant à votre entrée multisite et renseignez l'adresse IP de votre hébergement dans la `Cible`.
-> ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
+> ![managessl](images/modify-an-entry.png){.thumbnail}
 >
 > Pour plus de détails, n'hésitez pas à consulter nos guides [sur la configuration d'une entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) ou sur [la configuration d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit#les-enregistrements-dns).
 
@@ -97,11 +97,11 @@ Cliquez sur le bouton `...`{.action} à côté de « Certificat SSL », puis s
 
 Si le mot « Oui » apparaît, cela signifie qu'un certificat SSL a déjà été installé et configuré sur l'hébergement web. Par conséquent, vous ne pourrez pas commander un autre certificat tant que le certificat existant est actif.
 
-![managessl](images/manage-ssl-step1.png){.thumbnail}
+![managessl](images/order-an-ssl-certificate.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, sélectionnez le certificat SSL que vous souhaitez commander. Selon votre [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} et sa configuration, il se peut qu'aucune des solutions répertoriées ci-dessous ne soit disponible. Une fois que vous avez sélectionné une option, cliquez sur le bouton `Suivant`{.action}.
 
-![managessl](images/manage-ssl-step2.png){.thumbnail}
+![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 Selon la solution que vous avez sélectionnée, il peut y avoir des étapes supplémentaires :
 
@@ -113,7 +113,7 @@ Selon la solution que vous avez sélectionnée, il peut y avoir des étapes supp
 
 La configuration du certificat peut prendre entre plusieurs minutes et plusieurs jours, selon le type de certificat choisi. Pour vérifier si le certificat SSL a été configuré sur votre hébergement web, accédez à l'onglet `Informations générales`{.action} de votre espace client OVHcloud. Le mot « Oui » doit alors apparaître sous « Certificat SSL ».
 
-![managessl](images/manage-ssl-step4.png){.thumbnail}
+![managessl](images/tab-ssl-le.png){.thumbnail}
 
 ### 3. Regénérer un certificat SSL sur un hébergement web <a name="regeneratessl"></a>
 
@@ -126,13 +126,13 @@ Une fois que vous avez activé une connexion SSL sécurisée sur un ou plusieurs
 
 Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Cliquez sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton `...`{.action} à côté de « Certificat SSL », puis sur`Regénérer le certificat SSL`{.action}.
 
-![managessl](images/manage-ssl-step7.png){.thumbnail}
+![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
 
 Prenez connaissance des informations affichées dans la fenêtre qui apparaît, puis cliquez sur le bouton `Valider`{.action}. Attendez ensuite que votre certificat SSL soit regénéré. Cette étape peut prendre plusieurs heures.
 
 Veuillez noter que Let's Encrypt, l'autorité qui fournit le certificat SSL inclus avec votre hébergement web, impose une [limite de cinq regénérations par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Par conséquent, nous vous invitons à être vigilant sur les différentes regénérations que vous pourriez entreprendre à court terme  afin de ne pas être temporairement bloqué.
 
-![managessl](images/manage-ssl-step8.png){.thumbnail}
+![managessl](images/ssl-regeneration.png){.thumbnail}
 
 ### Supprimer un certificat SSL sur un hébergement web <a name="deletessl"></a>
 
@@ -144,7 +144,7 @@ Dès que vous êtes prêt à supprimer le certificat SSL, connectez-vous à votr
 
 Sur la page qui apparaît, confirmez la suppression. Celle-ci sera effective sous quelques heures au maximum.
 
-![managessl](images/manage-ssl-step9.png){.thumbnail}
+![managessl](images/delete-ssl.png){.thumbnail}
 
 > [!warning]
 >
@@ -176,7 +176,7 @@ Pour résoudre cette situation, via la zone DNS active de votre nom de domaine, 
 Si vous avez activé une option CDN sur votre hébergement web, vous pouvez également utiliser l'adresse IP de l'hébergement web avec CDN.
 
 Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
-Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) »
+Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 - 3 : Aucun des noms de domaines présent dans l'onglet « multisite » ne dispose d'une option SSL « active » :
 
@@ -216,7 +216,7 @@ Si besoin, consultez notre guide « [Utiliser un certificat SSL EV pour votre si
 Cette erreur survient chaque fois que le Certificat SSL Sectigo (activé directement depuis l'hébergement web) expire et que l'adresse IP de l'hébergement web change. De ce fait, vous devez faire pointer votre nom de domaine vers la bonne adresse IP (enregistrement de type A), directement depuis la zone DNS active de votre nom de domaine.
 
 Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
-Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) »
+Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ## Aller plus loin
 

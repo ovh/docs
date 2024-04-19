@@ -5,7 +5,7 @@ updated: 2023-08-25
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -30,7 +30,7 @@ Więcej informacji o strefach DNS znajdziesz w przewodniku "[Edycja strefy DNS O
 
 W związku z tym należy zadeklarować serwery **DNS**, aby móc korzystać ze strefy DNS, którą hostują. 
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 **Serwery DNS** działają w parach:
 
@@ -85,7 +85,7 @@ Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktua
 >
 > Gdy korzystasz z serwerów DNS OVHcloud, numery zawarte w nazwach serwerów nie mają żadnego związku z używanymi przez Ciebie usługami. Tylko opcja [DNS anycast](https://www.ovhcloud.com/pl/domains/options/) używa określonych serwerów DNS, które są automatycznie przypisywane. 
 
-![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
+![dns-server](images/tab.png){.thumbnail}
 
 ### Zmień serwery DNS
 
@@ -106,7 +106,7 @@ W formularzach wprowadzania należy **zastąpić** aktualne wartości serwerów 
 
 Po wpisaniu informacji, kliknij przycisk `Zastosuj konfigurację`{.action}. Statusy serwerów DNS zostaną zaktualizowane w tabeli i pojawią się nowe informacje, które właśnie podałeś.
 
-![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
+![dns-server](images/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -117,7 +117,7 @@ Po wpisaniu informacji, kliknij przycisk `Zastosuj konfigurację`{.action}. Stat
 
 Przycisk `Resetuj serwery DNS`{.action} pozwala zresetować aktualne serwery DNS, zastępując je automatycznie serwerami DNS OVHcloud, z których pochodzą. Użyj tej opcji **tylko**, jeśli chcesz ponownie korzystać z serwerów DNS OVHcloud (oraz strefy DNS OVHcloud powiązanej z serwerami DNS OVHcloud). 
 
-![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
+![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
 Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne. Na czas oczekiwania składają się dwa czynniki:
 

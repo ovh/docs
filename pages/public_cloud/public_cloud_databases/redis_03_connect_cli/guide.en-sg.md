@@ -48,7 +48,7 @@ In your terminal, type `redis-cli -u rediss://<username>:<password>@<hostname>:<
 The result should look like this :
 
 ```bash
-laptop$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
+$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
 Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
 PONG
 ```
@@ -67,7 +67,7 @@ Don't forget you need to modify the username, password, hostname and port.
 In our example, it will look like this :
 
 ```bash
-laptop$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185    
+$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185    
 Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
 redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185> PING
 PONG

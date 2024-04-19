@@ -1,11 +1,11 @@
 ---
 title: "Uruchomienie strony WWW na hostingu"
 description: "Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -30,7 +30,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVHcloud daje Ci kilka możliwości.
 
-- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). Firma OVHcloud proponuje cztery moduły CMS kompatybilne z jej infrastrukturą, o których możesz dowiedzieć się więcej na stronie [Twoja strona WWW dzięki modułom CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). OVHcloud oferuje cztery kompatybilne z naszą infrastrukturą moduły za 1 kliknięciem, które można znaleźć na stronie internetowej OVHcloud ["Tworzenie strony internetowej z modułami za 1 kliknięciem"](https://www.ovhcloud.com/pl/web-hosting/uc-website/){.external}. Możesz również zapoznać się z przewodnikiem ["Instalacja strony WWW za pomocą modułów 1 kliknięcia"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVHcloud.
 
@@ -73,7 +73,7 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 
 Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
-![instalacja strony www](images/get-website-online-step1.png){.thumbnail}
+![instalacja strony www](images/tab-pro.png){.thumbnail}
 
 Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [Logowanie do przestrzeni dyskowej hostingu](/pages/web_cloud/web_hosting/ftp_connection). Jeśli nie posiadasz hasła, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -97,7 +97,7 @@ Istnieje możliwość, że na Twojej przestrzeni dyskowej znajdziesz plik zatytu
 >
 > Plik "index.php" zawsze przejdzie przez plik "index.html". W związku z tym, gdy oba są obecne, wywoływany jest tylko "index.php".
 
-![instalacja strony www](images/get-website-online-step2.png){.thumbnail}
+![instalacja strony www](images/root-folders.png){.thumbnail}
 
 ### Etap 3: 
 
@@ -122,7 +122,7 @@ Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu k
 
 Następnie kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 
-![instalacja strony www](images/get-website-online-step3.png){.thumbnail}
+![instalacja strony www](images/tab.png){.thumbnail}
 
 #### 3. Import istniejącej bazy danych
 

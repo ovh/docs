@@ -1,8 +1,6 @@
 ---
-title: 'Ajouter un serveur Active Directory dans les options DHCP'
-keywords: 'Active, Directory'
-description: 'Ajouter un serveur Active Directory dans les options DHCP'
-excerpt: "Certains services rendus par un serveur Active Directory nécessitent d'ajouter l'ip du serveur AD dans les options DHCP"
+title: 'Ajouter un serveur Active Directory à OverTheBox'
+excerpt: "Découvrez comment ajouter un serveur Active Directory dans les options DHCP"
 updated: 2021-04-13
 ---
 

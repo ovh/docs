@@ -1,7 +1,7 @@
 ---
 title: "Attivare gli indirizzi email inclusi in un hosting Web"
 excerpt: "Questa guida ti mostra come attivare gli account di posta inclusi nella tua soluzione di hosting Web"
-updated: 2023-03-02
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -20,6 +20,15 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 - Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
+> [!warning]
+>
+> Per attivare l’opzione "indirizzo(i) email incluso(i) nell’hosting Web" per un dominio esterno (non registrato in OVHcloud) **di cui è obbligatorio essere l’amministratore**, è necessario creare (almeno) in OVHcloud una zona DNS per il dominio esterno. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)". In questo modo, il tuo dominio comparirà nella lista dei domini disponibili al momento dell’attivazione dell’opzione.
+>
+> Inoltre, se il dominio è già registrato in OVHcloud o se esiste già una zona DNS in un altro [account OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) rispetto al dominio, consulta la nostra documentazione "[Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts)" per recuperarne la gestione.
+>
+Se il dominio è già associato all’opzione "indirizzo/i email incluso/i con il tuo hosting Web" di un altro hosting Web, non sarà possibile associarlo direttamente al tuo hosting Web. Fai il punto della situazione con l’attuale gestore dell’hosting Web, consulta questa guida.
+>
+
 ## Procedura
 
 ### Attiva il servizio di posta
@@ -28,14 +37,17 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro `Configurazione` è disponibile la dicitura `Account email`: clicca sul pulsante `...`{.action} a destra e poi su `Attiva il tuo servizio di posta`{.action}.
 
-![Attivazione email](images/mail-hosting01.png){.thumbnail}
+![Attivazione email](images/enable-email-included-webhosting.png){.thumbnail}
 
 Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare gli indirizzi email e conferma la scelta effettuata.
 
-![Attivazione email](images/mail-hosting02.png){.thumbnail}
+![Attivazione email](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Per usufruire di più account email inclusi, ordina una [offerta di hosting web](https://www.ovhcloud.com/it/web-hosting/){.external} superiore dalla nostra pagina commerciale.
+>
+> Attenzione: l’attivazione dell’opzione email potrebbe richiedere alcuni minuti. Riceverai un’email di conferma dell’installazione e dell’attivazione della soluzione MXPLAN. e include la gestione e la configurazione degli indirizzi email.
+>
 
 ### Mantieni gli indirizzi email alla scadenza dell’hosting Web
 
@@ -45,7 +57,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Scollega la tua opzione email`{.action}.
 
-![Attivazione email](images/mail-hosting03.png){.thumbnail}
+![Attivazione email](images/detach-email-included-webhosting.png){.thumbnail}
 
 Verrà proposto l’acquisto di un'offerta MX personalizzata. Una volta saldato l’ordine, gli account di posta continueranno a funzionare anche dopo la disattivazione dell’hosting Web.
  
@@ -61,7 +73,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Disattiva l’opzione email`{.action}.
 
-![Attivazione email](images/mail-hosting04.png){.thumbnail}
+![Attivazione email](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >

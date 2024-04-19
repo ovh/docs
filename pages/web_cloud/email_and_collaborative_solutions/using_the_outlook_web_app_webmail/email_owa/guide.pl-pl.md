@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-updated: 2021-06-25
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2021-06-25
 
 ## Wprowadzenie
 
-Dzięki rozwiązaniom poczty elektronicznej OVHcloud można wysyłać oraz odbierać e-maile przy użyciu wybranego urządzenia i klienta poczty. Aby umożliwić dostęp do konta z dowolnego miejsca przy użyciu przeglądarki, OVHcloud udostępnia klient poczty e-mail online o nazwie Outlook Web Application (OWA). [Strona logowania do interfejsu webmail](https://www.ovh.pl/mail/) zapewnia dostęp do odpowiednich interfejsów OWA dla wszystkich aktywnych kont e-mail w ramach usług MX Plan, E-mail Pro i Hosted Exchange.
+Dzięki rozwiązaniom poczty elektronicznej OVHcloud można wysyłać oraz odbierać e-maile przy użyciu wybranego urządzenia i klienta poczty. Aby umożliwić dostęp do konta z dowolnego miejsca przy użyciu przeglądarki, OVHcloud udostępnia klient poczty e-mail online o nazwie Outlook Web App (OWA). [Strona logowania do interfejsu webmail](https://www.ovh.pl/mail/) zapewnia dostęp do odpowiednich interfejsów OWA dla wszystkich aktywnych kont e-mail w ramach usług MX Plan, E-mail Pro i Hosted Exchange.
 
 **Dowiedz się, jak wykonać typowe działania dotyczące adresu e-mail w interfejsie OWA.**
 
@@ -25,7 +25,7 @@ Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mai
 
 > [!primary]
 >
-> Instrukcji przedstawionych po dwóch pierwszych krokach nie trzeba wykonywać w konkretnej kolejności. Pasek nawigacji znajdujący się po lewej stronie przewodnika umożliwia przejście do fragmentów przydatnych w danym przypadku.
+> Instrukcji przedstawionych po dwóch pierwszych krokach nie trzeba wykonywać w konkretnej kolejności.
 >
 
 ### 1. Dostęp do interfejsu OWA webmail
@@ -33,6 +33,12 @@ Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mai
 Aby zalogować się do interfejsu OWA webmail przy użyciu swojego adresu e-mail, przejdź do ogólnej [strony logowania do interfejsu webmail](https://www.ovh.pl/mail/). Wpisz pełny adres e-mail i hasło, a następnie kliknij przycisk `Zaloguj`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
+
+> [!warning]
+> 
+> Jeśli zostałeś przekierowany do interfejsu **Roundcube**, oznacza to, że korzystasz z poprzedniej wersji usługi MX Plan. Aby uzyskać więcej informacji na temat oferty MX Plan, sprawdź naszą stronę [Pierwsze kroki z ofertą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+>
+> Aby zapoznać się z interfejsem **Roundcube**, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu danego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Kliknij przycisk `Zapisz`{.action}, aby kontynuować.
 
@@ -212,7 +218,7 @@ Po lewej stronie pojawi się drzewo menu „Opcje”. W tym widoku można dostos
 
 ### Zarządzanie plikami cookie
 
-Aplikacja webmail, która jest używana w naszych ofertach e-mail, jest oparta na oprogramowaniu Microsoft Outlook Web Application. Może więc wymieniać metadane z serwerami Microsoft w postaci plików cookie nazywanych `appsforoffice.microsoft.com`.
+Aplikacja webmail, która jest używana w naszych ofertach e-mail, jest oparta na oprogramowaniu Microsoft Outlook Web App. Może więc wymieniać metadane z serwerami Microsoft w postaci plików cookie nazywanych `appsforoffice.microsoft.com`.
 
 Jeśli chcesz wyłączyć tę wymianę, możesz w przeglądarce używać rozszerzenia typu bloker treści (takiego jak uBlock Origin lub Ghostery).
 Wyłączenie tych plików cookie może mieć wpływ na stabilność usługi webmail.

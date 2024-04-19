@@ -1,6 +1,6 @@
 ---
 title: 'Configurer une route statique'
-excerpt: "Découvrez comment configurer une route statique sur votre équipement OverTheBox afin qu'un flux ne passe pas par le tunnel chiffré"
+excerpt: "Découvrez comment configurer une route statique sur votre OverTheBox pour gérer vos flux réseaux"
 updated: 2021-06-14
 ---
 

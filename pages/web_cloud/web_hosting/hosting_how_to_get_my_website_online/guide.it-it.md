@@ -1,7 +1,7 @@
 ---
 title: "Mettere online un sito Internet su un hosting Web"
 excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 
 Per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere. Cosa fare con il sito Web? Come pubblicarlo? Gli hosting OVHcloud offrono numerose opzioni: 
 
-- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). Con i moduli in 1 click sono infatti disponibili 4 CMS già compatibili con le infrastrutture OVHcloud. Per maggiori informazioni, consulta [questa pagina](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}.
+- **creare un sito chiavi in mano con i moduli in 1 click**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...). OVHcloud propone quattro moduli compatibili con le nostre infrastrutture in 1 click, disponibili nella pagina Web OVHcloud ["Creare un sito Internet con i moduli in 1 click"](https://www.ovhcloud.com/it/web-hosting/uc-website/){.external}. Per maggiori informazioni, consulta la guida ["Installare il proprio sito con i moduli in 1 click"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **creare un sito chiavi in mano da installare manualmente**: questa soluzione permette di utilizzare una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...) da installare sul proprio hosting Web OVHcloud.
 
@@ -70,7 +70,7 @@ Questi dati sono indicati nell’email di conferma dell’installazione dell'hos
 
 Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}. 
 
-![Installazione sito](images/get-website-online-step1.png){.thumbnail}
+![Installazione sito](images/tab-pro.png){.thumbnail}
 
 In questa interfaccia sono disponibili le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -96,7 +96,7 @@ Per conoscere la cartella in cui pubblicare il sito, accedi alla scheda `Multisi
 >
 > Un file "index.php" sostituirà sempre il file "index.html". Pertanto, quando entrambi sono presenti, sarà chiamato solo "index.php".
 
-![Installazione sito](images/get-website-online-step2.png){.thumbnail}
+![Installazione sito](images/root-folders.png){.thumbnail}
 
 ### Step 3: associa il sito Web a un database
 
@@ -120,7 +120,7 @@ Se disponi già di un database (incluso, ad esempio, in una soluzione di [hostin
 Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.
 
-![Installazione sito](images/get-website-online-step3.png){.thumbnail}
+![Installazione sito](images/tab.png){.thumbnail}
 
 #### 3. Importare il database esistente 
 

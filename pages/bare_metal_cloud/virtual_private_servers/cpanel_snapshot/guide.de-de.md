@@ -1,7 +1,7 @@
 ---
 title: 'Automatische Sicherung - Kernel Panic (cPanel)'
 excerpt: 'Erfahren Sie, wie Sie Probleme mit der Blockierung von cPanel-Servern beim automatischen Backup von OVHcloud lösen.'
-updated: 2023-06-06
+updated: 2024-01-31
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Wenn Sie jedoch den Jailed Shell Zugang aktiviert haben, erstellt cPanel ein *vi
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) (VPS Value, Essential, Comfort oder Elite) in Ihrem OVHcloud Account.
+- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
 - cPanel ist auf dem Server installiert.
 
 ## In der praktischen Anwendung

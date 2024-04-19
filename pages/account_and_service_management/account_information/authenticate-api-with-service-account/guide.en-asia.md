@@ -1,10 +1,10 @@
 ---
 title: How to use service accounts to connect to OVHcloud APIs
-excerpt: "How to connect to APIs with OVHcloud service accounts using the Oauth2 protocol"
+excerpt: "How to connect to APIs with OVHcloud service accounts using the OAuth2 protocol"
 updated: 2023-08-24
 ---
 
- 
+
 
 ## Objective
 
@@ -20,9 +20,9 @@ This can allow you to:
 - provide your monitoring with information from our infrastructure
 - etc...
 
-The service accounts work with the Oauth2 *client credentials* flow. This means you can integrate the use of the OVHcloud API with all the tools that follow this protocol. The v1 and v2 versions of the OVHcloud API are compatible with the *client credentials* and *authorization code* flows of Oauth2.
+The service accounts work with the OAuth2 *client credentials* flow. This means you can integrate the use of the OVHcloud API with all the tools that follow this protocol. The v1 and v2 versions of the OVHcloud API are compatible with the *client credentials* and *authorization code* flows of OAuth2.
 
-Oauth2 also allows you to develop third-party applications that connect to OVHcloud APIs, without collecting credentials. If you would like to create your own applications using OVHcloud account information, you can use the *authorization code* flow, which is not described in this guide.
+OAuth2 also allows you to develop third-party applications that connect to OVHcloud APIs, without collecting credentials. If you would like to create your own applications using OVHcloud account information, you can use the *authorization code* flow, which is not described in this guide.
 
 ## Requirements
 
@@ -49,7 +49,7 @@ For example, for the */v1/hosting/web* call, the name of the action required is 
 
 You can also use the **\*** operator to designate a subset of rights. In our example, we would like to provide all rights to the APIs linked to the product **Web Hosting plans**. We will then use the **webHosting:** action
 
-As part of our example, we have created the following access policy: 
+As part of our example, we have created the following access policy:
 
 ```json
 {
@@ -87,7 +87,7 @@ curl --request POST \
   --data scope=all
 ```
 
-By modifying the following data: 
+By modifying the following data:
 
 - **client_id**: your service account ID
 - **client_secret**: token for your service account
@@ -95,7 +95,7 @@ By modifying the following data:
 Depending on the location of your API, you will need to use the following URL:
 
 - **EU API**: `https://www.ovh.com/auth/oauth2/token`
-- **CA API**: `https://www.ovh.ca/auth/oauth2/token`
+- **CA API**: `https://ca.ovh.com/auth/oauth2/token`
 
 Following this API call, you will receive a response in the following format:
 
@@ -114,7 +114,7 @@ To get information on your web hosting plan, you can now make a call on:
 
 > [!api]
 >
-> @api {v1} /hosting/web GET /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}
 >
 
 To do this, you will need to provide the token retrieved earlier in the header of your request, as follows:
@@ -122,7 +122,7 @@ To do this, you will need to provide the token retrieved earlier in the header o
 ```bash
 curl -i -X GET "https://{eu|ca}.api.ovh.com/v1/hosting/web/xxxxxxx.cluster001.hosting.ovh.net" \
   -H "accept: application/json"\
-  -H "authorization: your-api-token" 
+  -H "Authorization: Bearer your-api-token"
 ```
 
 With this access policy, you only have access to the webhosting APIs. The other APIs will return the following HTTP 403 error:

@@ -20,7 +20,7 @@ Se riscontri un malfunzionamento del disco oppure il nostro sistema ti ha inviat
 ## Prerequisiti
 
 - Avere un [server dedicato OVHcloud](https://www.ovh.it/server_dedicati/){.external}
-- Avere l’accesso amministratore (*root*) al server via SSH
+- Avere l’accesso amministratore (sudo) al server via SSH
 
 ## Procedura
 
@@ -134,7 +134,7 @@ root@rescue:~# nvme list
 
 #### Sostituzione del disco a freddo (spegnimento del server necessario)
 
-Per richiedere la sostituzione di un disco, basta creare un ticket presso il nostro team di assistenza direttamente dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Al fine di accelerare il processo, fornisci gli elementi collegati ai test. Di seguito, un riepilogo delle informazioni che dovrai fornire.
+Per richiedere la sostituzione di un disco, basta creare un ticket presso il nostro team di assistenza direttamente dal tuo [Centro assistenza](https://help.ovhcloud.com/csm?id=csm_get_help). Al fine di accelerare il processo, fornisci gli elementi collegati ai test. Di seguito, un riepilogo delle informazioni che dovrai fornire.
 
 - **Il numero di serie del disco da sostituire e di tutti gli altri dischi funzionanti**. Per recuperare il numero di serie del disco da sostituire consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial){.external}. Se non è possibile recuperare il numero di serie del disco, è necessario farlo presente nel ticket e comunicarci il numero di serie del o dei dischi da non sostituire. 
 

@@ -18,17 +18,17 @@ Au vu des manipulations que vous serez amenés à effectuer dans l'espace client
 
 Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) » .
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Si nous reprenons l'exemple plus haut, lorsque vous tapez *mydomain.ovh*, les **serveurs DNS** associés à ce nom de domaine seront interrogés. Ces derniers contiennent la **zone DNS** du nom de domaine *mydomain.ovh* où est renseignée l'adresse IP de l'hébergement de *mydomain.ovh*. Ainsi votre navigateur est en mesure d'afficher le site internet *mydomain.ovh* contenu sur l'hébergement. On appelle cela une résolution DNS.
 
-![DNS](images/dnssolve.gif){.thumbnail}
+![DNS](images/dns-resolution.gif){.thumbnail}
 
 ### La zone DNS 
 
 La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enregistrements**. Ces derniers permettent de faire le lien entre votre nom de domaine et les serveurs qui hébergent vos services internet, tels que des sites web (via l'enregistrement A) ou des adresses e-mail (enregistrement MX).
 
-![DNS](images/dnszone.png){.thumbnail}
+![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
 
 **Découvrez comment éditer votre zone DNS OVHcloud via votre espace client.**
 
@@ -57,7 +57,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Le tableau qui apparaît affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHCloud. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
 
-![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
+![dnszone](images/tab.png){.thumbnail}
 
 ### Les enregistrements DNS
 
@@ -141,7 +141,7 @@ Pour ajouter un nouvel enregistrement DNS, depuis l'onglet `Zone DNS`{.action} d
 
 Nous vous invitons à vérifier au préalable si cet enregistrement n'existe pas déjà et ne pointe pas vers une cible différente. Pour cela, filtrez le contenu du tableau par type d'enregistrement ou par domaine. Si l'enregistrement existe déjà, nous vous invitons à le modifier grâce à la manipulation décrite juste après.
 
-![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
+![dnszone](images/add-an-entry.png){.thumbnail}
 
 > Lorsque la cible de votre enregistrement est une URL, pensez à ponctuer celle-ci. En effet, si vous ne le faites pas, votre nom de domaine sera automatiquement ajouté à la fin de votre cible.
 >
@@ -153,7 +153,7 @@ Nous vous invitons à vérifier au préalable si cet enregistrement n'existe pas
 
 Pour modifier un enregistrement DNS, toujours depuis l'onglet `Zone DNS`{.action} de votre espace client, cliquez sur le pictogramme `...`{.action} dans le tableau à droite de l'entrée choisie. Cliquez ensuite sur `Modifier l'entrée`{.action} puis suivez les étapes qui s'affichent.
 
-![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
+![dnszone](images/modify-record.png){.thumbnail}
 
 #### Supprimer un enregistrement DNS
 
@@ -161,7 +161,7 @@ Pour supprimer un enregistrement DNS, toujours depuis l'onglet `Zone DNS`{.actio
 
 Vous pouvez supprimer plusieurs entrées en une seule fois en les cochant depuis la partie gauche du tableau, puis en cliquant sur le bouton `Supprimer`{.action}.
 
-![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+![dnszone](images/delete-record.png){.thumbnail}
 
 #### Réinitialiser la zone DNS
 
@@ -172,7 +172,7 @@ Réinitialiser votre zone DNS vous permet de :
 
 Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Réinitialiser ma zone DNS`{.action} puis suivez les étapes qui s'affichent.
 
-![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
 Vous avez le choix entre :
 

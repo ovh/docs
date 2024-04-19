@@ -5,7 +5,7 @@ updated: 2023-04-24
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Zarządzanie usługą
@@ -90,7 +90,7 @@ Następnie sprawdź bieżące [wydarzenia na naszej infrastrukturze](https://www
 
 ### Co zrobić, jeśli po uruchomieniu strony WWW OVHcloud strona w budowie pozostanie wyświetlona?
 
-![strona_budowlana](images/site_en_construction.png){.thumbnail}
+![strona_budowlana](images/site-en-construction.png){.thumbnail}
 
 Po zainstalowaniu hostingu OVHcloud umieszcza tę stronę oczekiwania w formie pliku **index.html** zawartego w folderze `www` Twojego serwera FTP.
 
@@ -113,11 +113,11 @@ Możliwe są dwa scenariusze. Twoja strona WWW została utworzona z tego adresu 
 
 W pierwszym przypadku, po wykonaniu wszystkich niezbędnych kopii zapasowych, usuń moduł z części `Hosting` w Panelu klienta:
 
-![delete_a_module](images/delete_a_module.png){.thumbnail}
+![delete-a-module](images/delete-a-module.png){.thumbnail}
 
 Następnie usuń bazę danych w zakładce z tej samej nazwy po prawej stronie ekranu, w części `Hosting`:
 
-![delete_a_database](images/delete_a_database.png){.thumbnail}
+![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
  
 Następnie uruchom ponownie instalację dla wybranej domeny, korzystając z funkcji [Module za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
@@ -136,9 +136,9 @@ Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodni
 
 Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Import kopii zapasowej do bazy danych hostingu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta).
 
-### Co zrobić, jeśli moja strona przekieruje się na webmail OVHcloud?
+### Co zrobić, jeśli moja strona przekieruje się na webmail-login-interface OVHcloud?
 
-![Webmail](images/webmail.png){.thumbnail}
+![Webmail](images/webmail-login-interface.png){.thumbnail}
 
 Ta nieprawidłowość wskazuje na nieprawidłową konfigurację [serwery DNS](/pages/web_cloud/domains/dns_server_general_information) lub [strefa DNS](/pages/web_cloud/domains/dns_zone_edit) przypisanych do Twojej domeny.
 
@@ -158,7 +158,7 @@ Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Strona nie przekierowuje się poprawnie"?
 
-![too_many_redirect](images/too_many_redirect.png){.thumbnail}
+![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -177,7 +177,7 @@ W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj 
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "503 error Backend fetch failed (Varnish cache)"?
 
-![503_varnish](images/503_varnish.png){.thumbnail}
+![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
 
 Jeśli włączyłeś [opcję CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) hostingu, wyłącz tryb *Maintenance* na swojej stronie WordPress lub PrestaShop.
 
@@ -185,7 +185,7 @@ Jeśli nie włączyłeś tej opcji lub nie korzystałeś z trybu *konserwacji*, 
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Your request has been blocked"?
 
-![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
+![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
 
 Wiadomość ta wskazuje, że rodzaj zapytania HTTP, które chcesz wykonać na Twojej stronie WWW jest zabroniony na ograniczony czas. W takiej sytuacji [sprawdź logi](/pages/web_cloud/web_hosting/logs_and_statistics) strony, aby określić, które zapytania spowodowały blokadę.
 
@@ -193,7 +193,7 @@ W celu usunięcia nieprawidłowości skontaktuj się z Biurem Webmasterem lub je
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Your IP has been banned"?
 
-![your_ip_has_been_blocked](images/your_ip_has_been_blocked.png){.thumbnail}
+![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
 
 Wiadomość ta wskazuje, że adres IP, którego używasz do logowania się do Twojej strony, jest zablokowany na ograniczony czas. 
 
@@ -203,7 +203,7 @@ Możesz również skontaktować się z [naszymi partnerami](https://partner.ovhc
 
 ### Zamówiłem domenę z akcentami i wyświetla się ona w moim panelu klienta w bardzo dziwny sposób. Co mam zrobić?
 
-![rating_idn](images/notation_idn.png){.thumbnail}
+![rating_idn](images/idn-notation.png){.thumbnail}
 
 Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres Twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. Twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
 
@@ -212,7 +212,7 @@ Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja dom
 > Korzystanie z konta e-mail z domeną IDN w programie pocztowym (Outlook, Mail macOS, etc.) nie jest zalecane i może powodować niezgodności.
 >
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [FAQ - E-maile na hostingu MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

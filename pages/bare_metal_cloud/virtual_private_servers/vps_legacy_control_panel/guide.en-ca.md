@@ -1,7 +1,7 @@
 ---
 title: "Managing a legacy VPS"
 excerpt: "Find out how to manage a VPS of a discontinued range in the OVHcloud Control Panel"
-updated: 2023-06-27
+updated: 2024-01-22
 ---
 
 ## Objective
@@ -30,6 +30,12 @@ This will open a popup window to initiate the process of [cancelling your servic
 ### Reboot in rescue mode
 
 Click on this option to restart the VPS into rescue mode. Find all the details in [our guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+On legacy VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following command to verify this and identify where your partition is mounted:
+
+```bash
+lsblk
+```
 
 ### Reboot my VPS
 
@@ -114,8 +120,6 @@ Your VPS can be migrated to the current range automatically. Find out the benefi
 [Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
-
-[Configuring a new Windows Server installation](/pages/bare_metal_cloud/virtual_private_servers/windows_first_config)
 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 

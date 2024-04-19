@@ -1,7 +1,7 @@
 ---
 title: "Paramétrer un DNS dynamique (DynHost/DynDNS) pour votre nom de domaine"
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
-updated: 2023-08-16
+updated: 2024-03-07
 ---
 
 ## Objectif
@@ -48,7 +48,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 Pour créer un utilisateur DynHost, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web cloud`{.action}. Dans la colonne de gauche, cliquez sur l'onglet `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche, cliquez sur l'onglet `DynHost`{.action}.
 
-![dynhost](images/use-dynhost-step1.png){.thumbnail}
+![dynhost](images/tab.png){.thumbnail}
 
 Cliquez sur le bouton `Gérer les accès`{.action} puis sur `Créer un identifiant`{.action}. Dans la fenêtre qui s'affiche, complétez les informations demandées :
 
@@ -65,7 +65,7 @@ Cliquez sur le bouton `Gérer les accès`{.action} puis sur `Créer un identifia
 
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'identifiant apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin de créer plusieurs identifiants DynHost.
 
-![dynhost](images/use-dynhost-step2.png){.thumbnail}
+![dynhost](images/create-a-dynhost-username.png){.thumbnail}
 
 ### Étape 2 : créer l'enregistrement DNS dynamique (DynHost) <a name="step2"></a>
 
@@ -85,7 +85,7 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous
 
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
 
-![dynhost](images/use-dynhost-step3.png){.thumbnail}
+![dynhost](images/create-a-dynhost.png){.thumbnail}
 
 ### Étape 3 : automatiser le changement du DynHost
 
@@ -106,7 +106,9 @@ Une fois le client choisi et installé, vous devrez le configurer en utilisant l
 
 Selon le client utilisé, une adresse URL de mise à jour peut être requise en plus des éléments de l'utilisateur DynHost et du sous-domaine concerné. Si tel est le cas, utilisez l'adresse URL ci-dessous en prenant soin d'y remplacer les informations génériques :
 
-`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
+```bash
+https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
 
 |Information|À remplacer par|
 |---|---|
@@ -120,7 +122,7 @@ Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. 
 > Toute modification dans la zone DNS active d'un nom de domaine peut entraîner un délai de propagation de la mise à jour de 4 à 24 heures.
 >
 
-![dynhost](images/use-dynhost-step4.png){.thumbnail}
+![dynhost](images/target.png){.thumbnail}
 
 ## Aller plus loin <a name="go-further"></a>
 

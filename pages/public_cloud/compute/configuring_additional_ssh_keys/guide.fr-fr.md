@@ -1,7 +1,7 @@
 ---
 title: 'Configurer des clés SSH supplémentaires'
 excerpt: 'Découvrez comment configurer des clés SSH supplémentaires pour votre instance Public Cloud'
-updated: 2022-02-04
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -14,13 +14,13 @@ Lors de la création d’une instance, une seule clé SSH peut être configurée
 
 - Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Avoir accès à votre instance via SSH en tant qu'administrateur (root)
+- Avoir accès à votre instance via SSH en tant qu'administrateur (sudo)
 
 ## En pratique
 
 > [!primary]
 >
-Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est pas pris en charge actuellement.
+Nous prenons actuellement en charge les formats de clés SSH suivants : **RSA**, **ECDSA** et **ED25519**.
 >
 
 ### Création de la clé SSH

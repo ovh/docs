@@ -5,7 +5,7 @@ updated: 2023-12-04
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -35,13 +35,13 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu się przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
-![hosting](images/monitoring-automatic-emails-step1.png){.thumbnail}
+![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
 
 Wyświetli się strona, na której możesz monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 
 ### Prezentacja części "Skrypty e-mail"
 
-![hosting](images/Interface.png){.thumbnail}
+![hosting](images/tab.png){.thumbnail}
 
 Na stronie wyświetla się kilka informacji umożliwiających wyświetlenie aktywności wysyłanych z skryptów automatycznych wiadomości e-mail:
 
@@ -129,7 +129,7 @@ Status ten występuje, gdy e-maile uznawane za SPAM zostały wysłane z Twojego 
 
 Na ogół blokadą tą towarzyszy wysłanie e-maila o nazwie **"Nadużycie na hostingu domain.tld"** wygenerowanego automatycznie przez nasze roboty związane z bezpieczeństwem:
 
-![hosting](images/AbuseMail.png){.thumbnail}
+![hosting](images/email-script-disabled.png){.thumbnail}
 
 W porównaniu z tą sytuacją możliwe są trzy przypadki:
 

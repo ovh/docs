@@ -74,7 +74,7 @@ Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und 
 
 #### 2.1 Zugangsrechte nutzen
 
-- **Über die Outlook Web Application (OWA)**
+- **Über die Outlook Web App (OWA)**
 
 Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie links im Menü auf den betreffenden Account und wählen Sie `Freigegebenen Ordner hinzufügen`{.action}.
 
@@ -94,7 +94,7 @@ Klicken Sie nun auf `Weitere Einstellungen`{.action}. Gehen Sie im neuen Fenster
 
 #### 2.2 „Senden als“-Berechtigung nutzen
 
-- **Über die Outlook Web Application (OWA)**
+- **Über die Outlook Web App (OWA)**
 
 Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 
@@ -116,7 +116,7 @@ Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 #### 2.3 „Senden im Auftrag von“-Berechtigung nutzen
 
-- **Über die Outlook Web Application (OWA)**
+- **Über die Outlook Web App (OWA)**
 
 Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 

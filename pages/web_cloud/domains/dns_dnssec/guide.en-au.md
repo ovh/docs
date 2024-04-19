@@ -53,11 +53,11 @@ The page that appears will display general information about the service.
 
 In the `General information`{.action} tab, following [step 1](#step1), you can see the activation status of the **DNSSEC** on your domain name: Check the status next to "Secured Delegation - DNSSEC" inside the box "Security".
 
-![dnssec](images/activate-dnssec-step2.png){.thumbnail}
+![dnssec](images/activate-dnssec.png){.thumbnail}
 
 With the activation button above `Secured Delegation - DNSSEC`{.action}, you can activate or deactivate **DNSSEC** on your domain name. When you perform these actions, a new window will appear in which you can validate the change.
 
-![dnssec](images/activate-dnssec-step3.png){.thumbnail}
+![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >

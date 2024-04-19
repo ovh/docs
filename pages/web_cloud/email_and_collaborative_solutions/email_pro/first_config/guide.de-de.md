@@ -1,8 +1,12 @@
 ---
 title: 'Konfiguration von E-Mail Pro'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
-updated: 2020-04-09
+updated: 2024-01-29
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
 
 ## Ziel
 
@@ -27,7 +31,7 @@ Loggen Sie sich hierzu in Ihrem Kundencenter ein und wählen Sie den betreffende
 
 > [!primary]
 >
-> Der Name eines E-Mail Pro Dienstes in Ihrem OVHcloud Kundencenter beginnt mit *emailpro-*, enthält dann einen Teil Ihrer Kundenkennung und endet mit einer Zahl (1 für den ersten eingerichteten E-Mail Pro Dienst, 2 für den zweiten usw.).
+> Der Name eines E-Mail Pro Dienstes in Ihrem OVHcloud Kundencenter beginnt mit *emailpro-*, enthält dann einen Teil Ihrer Kundenkennung und endet mit einer Zahl (1 für den ersten eingerichteten E-Mail Pro Dienst, 2 für den zweiten, etc.).
 >
 
 ### Schritt 2: Ihre Domain hinzufügen
@@ -36,60 +40,82 @@ Wenn Sie Ihren E-Mail Pro Dienst gerade bestellt haben, erscheint automatisch ei
 
 Sie haben folgende Auswahlmöglichkeiten:
 
-- **Eine Domain in der Liste auswählen**: Es werden nur Domains mit OVHcloud Konfiguration angezeigt, die mit Ihrer Kundenkennung verknüpft sind.
-- **Eine Domain hinzufügen, die nicht in Ihrem OVHcloud Account verwaltetet wird**: Sie sollten in der Lage sein, die Konfiguration der Domain zu ändern (die zugehörige DNS-Zone), damit der E-Mail Pro Dienst korrekt funktioniert.
+- **Eine Domain aus der Liste auswählen**: Es werden nur die Domainnamen angezeigt, die Sie in Ihrem OVHcloud Kundencenter verwalten. Wenn die Domain bei OVHcloud registriert ist, aber nicht in Ihrem Kundencenter angezeigt wird, wählen Sie „Eine Domain eingeben, die nicht in Ihrem OVHcloud Account verwaltet wird“.
+- **Eine Domain hinzufügen, die nicht in Ihrem OVHcloud Account verwaltetet wird**: Wählen Sie diese Option, wenn die betreffende Domain bei OVHcloud registriert ist, aber nicht in Ihrem Kunden-Account konfigurierbar ist, **oder** wenn Ihre Domain bei einem anderen Registrar registriert ist. Sie müssen in der Lage sein, die Konfiguration der Domain (ihre DNS-Zone) zu ändern, damit der E-Mail Pro Dienst korrekt funktioniert.
 
-Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
+Nachdem Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
 
-![emailpro](images/first_config_email_pro_add_domain.png){.thumbnail}
+![emailpro](images/emailpro-01.png){.thumbnail}
 
 Das Fenster zeigt dann die Informationen zur Konfiguration eines Modus an.
 
-- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Es wird standardmäßig der nicht-autoritative Modus eingestellt.
-- **Wenn Sie in der Liste eine von OVHcloud verwaltete Domain ausgewählt haben**: Sie haben die Wahl zwischen zwei Modi.
+![emailpro](images/emailpro-02.png){.thumbnail}
 
-|Modus|Beschreibung|
-|---|---|
-|Autoritativ|Empfiehlt sich, wenn Sie nur die E-Mail Pro Lösung mit Ihrer Domain verwenden. Die gleichzeitige Verwendung einer anderen E-Mail-Lösung mit Ihrem E-Mail Pro Dienst ist nicht möglich.|
-|Nicht-autoritativ|Empfiehlt sich, wenn Sie neben der E-Mail Pro Lösung gleichzeitig eine andere E-Mail-Lösung mit Ihrer Domain verwenden.| 
+- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Der nicht-autoritative Modus wird standardmäßig konfiguriert.
 
-> [!primary]
+- **Wenn Sie in der Liste eine von OVHcloud verwaltete Domain ausgewählt haben**: Sie können einen Modus auswählen.
+    - **Autoritativ**: Passend, wenn Ihre E-Mail Pro Lösung die einzige E-Mail-Lösung ist, die Sie mit Ihrem Domainnamen verwenden. Es ist nicht möglich, eine andere E-Mail-Lösung mit Ihrem Dienst zu verwenden.
+    - **Nicht-autoritativ**: Wählen Sie diese Option, wenn Sie die E-Mail Pro-Lösung und **eine andere E-Mail-Lösung** verwenden, die denselben Domainnamen verwendet.
+
+> **Autoritativer Modus und nicht-autoritativer Modus**
 >
-> Die Wahl des Modus ist nicht dauerhaft festgelegt und kann im Nachhinein über das OVHcloud Kundencenter geändert werden.
+> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server Email Pro*) übermittelt wird, werden alle E-Mail-Adressen Ihres Domainnamens ausschließlich auf dieser Plattform gehostet. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, sendet der E-Mail Pro Server *Inbound mail server Email Pro* eine Fehlermeldung an den Absender, da diese Adresse auf dem E-Mail Pro Server *Inbound mail server Email Pro* nicht existiert.
+> - Wenn eine E-Mail im **nicht-autoritativen** Modus an Ihre E-Mail Pro Plattform (*Inbound Mail Server Email Pro*) gesendet wird, werden die E-Mail-Adressen Ihrer Domain zwischen Ihrer Haupt-E-Mail-Plattform (*Inbound Mail Server Email Pro*) und einem anderen E-Mail-Dienst (*Inbound Mail Server MX Plan*) aufgeteilt. <br> <br> Wenn Sie zum Beispiel eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, wird die E-Mail vom E-Mail Pro *Inbound Mail Server Email Pro* an den MX Plan Server *Inbound mail server MX Plan* weitergeleitet, damit dieser die E-Mail bereitstellen kann.
 >
+> ![Add Domain](images/authoritative-mode.png){.thumbnail}
+>
+
+> [!warning]
+>
+> Wenn Sie die Nachricht "**authoritative domain detected**" erhalten, wenn Sie Ihren Domainnamen auf Ihrer E-Mail-Plattform hinzufügen, bedeutet dies, dass dieser Domainname auf einer anderen E-Mail-Plattform als **autoritativ** deklariert ist. Daher müssen beide Plattformen in den **nicht-autoritativen** Modus versetzt werden, damit sie nebeneinander verwendet können.
+
+Wenn Sie sich für den **nicht-autoritativen** Modus entscheiden, gibt es zwei Möglichkeiten:
+
+- **Sie verwenden E-Mail-Accounts bei OVHcloud (Exchange oder MX Plan)**: Geben Sie als Ziel-E-Mail-Server *mx1.mail.ovh.net* ein (funktioniert ebenso mit *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net*).
+- **Sie verwenden einen externen E-Mail-Dienst (E-Mail-Angebot eines anderen Anbieters, privater E-Mail-Server)**: Geben Sie in das Feld Ziel-E-Mail-Server den Hostnamen des Eingangsservers dieses externen Dienstes ein. Stellen Sie vorher sicher, dass dieser E-Mail-Anfragen von Ihrem E-Mail Pro Dienst zulässt.
+
+Die Wahl des Modus ist nicht dauerhaft festgelegt und kann im Nachhinein über das OVHcloud Kundencenter geändert werden.
 
 Klicken Sie auf `Weiter`{.action}, um die Domain hinzuzufügen.
 
-![emailpro](images/first_config_email_pro_add_domain_step2.png){.thumbnail}
+**Wenn Sie einen von OVHcloud verwalteten Domainnamen ausgewählt haben**, kann dessen Konfiguration automatisch vorgenommen werden. Setzen Sie hierzu einen Haken im entsprechenden Feld und klicken Sie dann auf `Weiter`{.action}, um mit dem Hinzufügen der Domain fortzufahren.
 
-**Wenn Sie in der Liste eine von OVHcloud verwaltete Domain ausgewählt haben**, kann deren Konfiguration automatisch vorgenommen werden. Setzen Sie hierzu einen Haken im entsprechenden Kästchen und klicken Sie dann auf `Weiter`{.action}, um mit dem Hinzufügen der Domain fortzufahren.
+![emailpro](images/emailpro-03.png){.thumbnail}
 
-**Wenn Sie eine Domain angegeben haben, die nicht von OVHcloud verwaltet wird**, wird die Konfiguration im folgenden Schritt vorgenommen.
+- **SRV**: DNS-Eintrag für die automatische Konfiguration Ihrer E-Mail-Software, wenn Sie Ihre E-Mail-Adresse darin eintragen.
+- **MX**: Für den Empfang von E-Mails über Domainnamen notwendiger DNS-Eintrag für E-Mail-Server.
+- **DKIM**: Einrichtung einer verschlüsselten digitalen Signatur zur Sicherung des E-Mail-Verkehrs. Weitere Informationen finden Sie in unserer Anleitung „[Einen DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)“.
 
-![emailpro](images/first_config_email_pro_add_domain_step3.png){.thumbnail}
+**Für einen nicht von OVHcloud verwalteten Domainnamen** fahren Sie mit Schritt 3 fort.
 
-Am Ende der Konfiguration werden Sie aufgefordert, die angezeigten Informationen zu überprüfen und auf `Bestätigen`{.action} zu klicken, um das Hinzufügen der Domain zu veranlassen.
+Am Ende der Konfiguration überprüfen Sie die angezeigten Informationen. Klicken Sie danach auf `Bestätigen`{.action}, um die Domain hinzufügen.
 
 ### Schritt 3: Ihre Domain konfigurieren
 
-Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie bitte in der angezeigten Tabelle, dass die Konfiguration korrekt ist.
+Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie in der angezeigten Tabelle, dass die Konfiguration korrekt ist.
 
-In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX-Felder der Domain korrekt ist. Ein rotes Kästchen zeigt an, dass die Konfiguration geändert werden muss.
+In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX-Felder der Domain korrekt ist. Ein rotes Feld zeigt an, dass die Konfiguration geändert werden muss.
 
-- **Wenn Sie beim Hinzufügen der Domain die automatische Konfiguration gewählt haben**: Es kann einige Stunden dauern, bis diese im OVHcloud Kundencenter angezeigt wird.
-- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Klicken Sie auf das rote Kästchen, um zu sehen, welche Änderungen notwendig sind. Wenn Sie diese erst durchgeführt haben, kann es einige Stunden dauern, bis sie im OVHcloud Kundencenter angezeigt werden.
+- **Automatische Konfiguration beim Hinzufügen eines Domainnamens von OVHcloud**: Wenn Sie gerade erst eine Änderung vorgenommen haben, kann es einige Stunden dauern, bis diese im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angezeigt wird.
 
-![emailpro](images/first_config_email_pro_configure_domain.png){.thumbnail}
+- **Manuelle Konfiguration einer nicht von OVHcloud verwalteten Domain**: Klicken Sie auf das rote Feld, um zu sehen, welche Änderungen notwendig sind.
+    - *CNAME-Eintrag*: Folgen Sie unserer Anleitung „[CNAME-Eintrag erstellen, um eine assoziierte Domain hinzuzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)“.
+    - *MX-Eintrag*: Folgen Sie unserer Anleitung „[MX-Eintrag zur Domainkonfiguration hinzufügen](/pages/web_cloud/domains/dns_zone_mx)“.
+    - *SRV-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
+    - *SPF-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[Einen SPF-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_spf)“.
+    - *DKIM-Eintrag*: Geben Sie in Ihrer DNS-Zone die Informationen, die Sie beim Klicken auf das rote Feld erhalten haben, ein. Folgen Sie unserer Anleitung „[Einen DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)“.
+
+![emailpro](images/emailpro-04.png){.thumbnail}
 
 ### Schritt 4: E-Mail Pro Accounts konfigurieren
 
-Zur Konfiguration Ihrer E-Mail-Adressen gehen Sie in den Tab `E-Mail-Accounts`{.action}. Die Tabelle zeigt die bestellten Accounts als “*@configureme.me*” an.
+Zur Konfiguration Ihrer E-Mail-Accounts gehen Sie in den Tab `E-Mail-Accounts`{.action}. Die Tabelle zeigt die bestellten Accounts als “*@configureme.me*” an.
 
 Um sie zu konfigurieren klicken Sie auf `...`{.action} und dann auf `Ändern`{.action}.
 
-![emailpro](images/first_config_email_pro_configure_email_accounts.png){.thumbnail}
+![emailpro](images/emailpro-05.png){.thumbnail}
 
-Ergänzen Sie die angezeigten Informationen.
+Ergänzen Sie die angezeigten Werte.
 
 |Bezeichnung|Beschreibung|
 |---|---|
@@ -97,7 +123,7 @@ Ergänzen Sie die angezeigten Informationen.
 |Vorname|Geben Sie einen Vornamen an.|
 |Name|Geben Sie einen Nachnamen an.|
 |Anzeigename|Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.|
-|Passwort und Bestätigung|Wählen Sie ein Passwort und bestätigen Sie dieses.| 
+|Passwort und Bestätigung|Wählen Sie ein Passwort und bestätigen Sie es.| 
 
 Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigten Informationen und klicken Sie dann auf `Bestätigen`{.action}, um die Konfiguration Ihres Accounts abzuschließen.
 
@@ -106,13 +132,11 @@ Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überpr�
 > Führen Sie diesen Schritt für alle zur Verfügung stehenden Accounts durch. Sie können weitere Accounts über den Button `Accounts bestellen`{.action} hinzufügen.
 >
 
-![emailpro](images/first_config_email_pro_configure_email_accounts_step2.png){.thumbnail}
-
 ### Schritt 5: Ihre E-Mail-Adressen verwenden
 
-Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (eine *Webapp*) zur Verfügung. Diese App ist über die Adresse <https://www.ovh.de/mail> erreichbar, auf der Sie die Login-Daten für Ihre E-Mail-Adresse eingeben.
+Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (*Web App*) zur Verfügung. Diese App ist über die Adresse <https://www.ovhcloud.com/de/mail/> erreichbar. Geben Sie hier Ihre E-Mail-Adresse und das Passwort ein, um sich einzuloggen.
 
-Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die passende [E-Mail Pro Anleitung](/products/web-cloud-email-collaborative-solutions-email-pro). Wenn Sie nur die erforderlichen Informationen zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
+Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, nutzen Sie hierzu die passende [E-Mail Pro Anleitung](/products/web-cloud-email-collaborative-solutions-email-pro). Wenn Sie nur die erforderlichen Daten zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
 
 |Servertyp|Servername|Sicherheitstyp|Port|
 |---|---|---|---|

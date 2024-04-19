@@ -83,7 +83,7 @@ Install the `awscli` client:
 pip3 install awscli awscli-plugin-endpoint
 ```
 
-Complete and write down the configuration for `awscli` into `~/.aws/config`:
+Complete and write down the configuration into `~/.aws/config`:
 
 ```yaml
 [plugins]

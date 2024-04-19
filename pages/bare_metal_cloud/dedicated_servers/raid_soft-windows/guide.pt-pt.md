@@ -37,7 +37,7 @@ O método a utilizar depende do tipo de partição dos seus discos. Siga as inst
 
 Na linha de comandos, abra o DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -163,7 +163,7 @@ DISKPART> list volume
 
 Na linha de comandos, abra o DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -360,7 +360,7 @@ De volta à linha de comandos, copie os ficheiros de arranque da partição de a
 
 Introduza os 3 comandos seguintes e execute cada um com a tecla `Entrer`:
 
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

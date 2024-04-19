@@ -12,7 +12,7 @@ updated: 2023-11-22
 
 Gli errori 500 "Internal Server Error" possono riguardare la totalità o parte del tuo sito, essere casuali o permanenti. Possono anche apparire sotto forma di una pagina bianca.
 
-![error500](images/error-500-2.png){.thumbnail}
+![error500](images/http-500.png){.thumbnail}
 
 A volte provengono anche da un aggiornamento effettuato **automaticamente** da un componente del tuo sito e quindi possono verificarsi senza intervento da parte tua.
 
@@ -22,7 +22,7 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
 >
 
 ## Prerequisiti
@@ -79,7 +79,7 @@ In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](/pages/web_cl
 
 Per ragioni di sicurezza, il tuo sito nasconde gli eventuali dettagli sull'origine dell'errore 500 a chiunque vi si connetta tramite un browser web.
 
-Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
+Se vuoi avere accesso a questi dettagli, dal piano di hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 
 ### Verifica lo stato del database
 
@@ -100,7 +100,7 @@ Se il tuo sito contiene un database, consulta la nostra guida [Importare un back
 
 Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del tuo hosting, consulta la nostra guida "[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" per ritornare alla configurazione precedente.
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Cosa fare se il tuo sito è inaccessibile?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

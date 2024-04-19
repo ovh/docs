@@ -52,7 +52,7 @@ Définissez également la méthode de restauration que vous allez utiliser :
 >
 > Le quota utilisé apparaît sur la page qui s'affiche :
 >
-> ![ftp quota](images/check-ftp-quota.png){.thumbnail}
+> ![ftp quota](images/find-disk-space.png){.thumbnail}
 >
 > Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
 >
@@ -85,7 +85,7 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
 
-![backupftp](images/backupftp-step1.png){.thumbnail}
+![backupftp](images/restore-backup.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, sélectionnez la date de restauration souhaitée dans le menu déroulant en vous aidant des informations ci-dessous :
 
@@ -99,7 +99,7 @@ Dans la fenêtre qui s'affiche, sélectionnez la date de restauration souhaitée
 
 Une fois la date sélectionnée, cliquez sur le bouton `Suivant`{.action}. 
 
-![backupftp](images/backupftp-step2.png){.thumbnail}
+![backupftp](images/restore-backup-step-1.png){.thumbnail}
 
 Prenez quelques instants afin de vous assurer qu'aucun fichier ne sera perdu suite à la restauration, comme un fichier que vous auriez placé sur votre espace de stockage après la date de restauration choisie. Comme précisé, la restauration va en effet écraser l'ensemble des données actuelles afin de les remplacer par celles de la sauvegarde.
 
@@ -131,7 +131,7 @@ Dans un premier temps, définissez le logiciel ou l'interface que vous allez uti
 
 Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape suivante.
 
-![backupftp](images/backupftp-step3.png){.thumbnail}
+![backupftp](images/ftp-explorer.png){.thumbnail}
 
 #### Étape 2 : se connecter à la sauvegarde
 
@@ -139,7 +139,7 @@ Depuis l'interface ou le logiciel sélectionné, vous allez devoir vous connecte
 
 Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
-![backupftp](images/backupftp-step4.png){.thumbnail}
+![backupftp](images/login-infos.png){.thumbnail}
 
 Vous devrez compléter votre nom d'utilisateur (ou « login ») FTP principal d'un suffixe déterminant la sauvegarde à laquelle vous vous connecterez. Aidez-vous des indications ci-dessous pour savoir comment accéder à la sauvegarde souhaitée :
 
@@ -155,7 +155,7 @@ Prenez soin de remplacer l’information générique « utilisateurftp » par vo
 
 La méthode pour vous connecter à votre espace de stockage diffère selon l'interface ou le logiciel utilisé. Vous trouverez ci-dessous une image présentant la connexion depuis l'interface de FTP Explorer.
 
-![backupftp](images/backupftp-step5.png){.thumbnail}
+![backupftp](images/login-interface-snap0.png){.thumbnail}
 
 #### Étape 3 : récupérer le ou les fichiers souhaités
 

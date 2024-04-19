@@ -1,7 +1,7 @@
 ---
 title: 'Optimizar el rendimiento de su sitio web'
 excerpt: 'Cómo analizar la latencia de su sitio web y cómo mejorarla'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -72,9 +72,9 @@ Algunas variables del servidor se modifican con la utilización de PHP-FPM:
 |max_input_vars|2000|16 000|
 |memory_limit|128 M|512 M|
 
-Averigüe cómo actualizar el lenguaje PHP en [esta guía](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Averigüe cómo actualizar el lenguaje PHP en [esta guía](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener información sobre opciones más avanzadas de su hospedaje web, consulte [esta guía](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener información sobre opciones más avanzadas de su hospedaje web, consulte [esta guía](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 El archivo _.ovhconfig_ opera en la raíz del paquete de hospedaje o en un subdirectorio de nivel 1 (p. ej.: _/www/_), pero no en directorios de nivel 2 o superior (p. ej.: _/www/test/_ y _/www/test/test2/_)
 
@@ -96,21 +96,21 @@ Correlacione los gráficos de recursos utilizados de su hospedaje (más informac
 
 Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
-Cómo acceder a los registros:
+Cómo acceder a las estadísticas y los logs:
 
-- Haga clic en el dominio en la sección `Hospedaje`{.action}.
-- Haga clic en la pestaña `Más +`{.action} y, a continuación, seleccione `Estadísticas y registros`{.action}.
-- Después, haga clic en los enlaces mostrados para acceder tanto a las _estadísticas de visitas al sitio web_ como a los _registros_.
+1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
+2. En la página que se abre, haga clic en la pestaña `Estadísticas y logs`{.action}.
+3. Haga clic en el botón `Ver las estadísticas`{.action} mostradas para acceder a las estadísticas de visita del sitio web o en `Ver los logs`{.action} para consultar los logs disponibles para su alojamiento web.
 
-![logs](images/logs_highlighted.png){.thumbnail}
+![logs](images/tab.png){.thumbnail}
 
 Cómo acceder a los gráficos:
 
-- En la sección `Hospedaje`{.action}, haga clic en el dominio.
-- En la sección `Información general`{.action}, desplace la pantalla hasta el final de la página, donde podrá consultar los gráficos de utilización de su hospedaje.
-- Allí, podrá seleccionar el tipo de información, así como el periodo de los datos que desea ver.
+1. Haga clic en `Alojamiento`{.action} en la columna de la izquierda y seleccione el alojamiento web correspondiente.
+2. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action} y desplácese hasta la parte inferior de la página en la que se encuentra el gráfico relativo al uso del alojamiento.
+3. Seleccione el **tipo** de información y el **período** de los datos mostrados.
 
-![graphs](images/graphs_highlighted.png){.thumbnail}
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 ¿Qué tipo de información puede mostrarse?
 
@@ -226,11 +226,18 @@ Ejemplo:
 
 Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. También debería evitar el uso de «GROUP BY», a menos que sea estrictamente necesario.
 
+#### Web Cloud Databases
+Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de Web Cloud Databases para disponer de más recursos.
+
+[Consultar la solución Web Cloud Databases en nuestro sitio web](https://www.ovh.es/cloud/cloud-databases/){.external}.
+
 ## Más información
 
-[Modificar la configuración de un plan de hospedaje web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
+[Modificar la configuración de un plan de hospedaje web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Gestionar una base de datos en un paquete de hospedaje web](/pages/web_cloud/web_hosting/sql_create_database){.external}
+
+[Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

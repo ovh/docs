@@ -11,7 +11,7 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 - La configuration [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) de votre nom de domaine n’est pas correctement paramétrée vers votre répertoire cible
 - Le dossier cible vers lequel votre nom de domaine pointe ne contient pas de fichiers **« index.html »** ou **« index.php »**
 
-![index_of](images/index_of.png){.thumbnail}
+![index_of](images/index-of.png){.thumbnail}
 
 **Découvrez comment corriger l’affichage d’une page « Index of ».**
 
@@ -19,7 +19,7 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -48,11 +48,11 @@ Pour afficher votre site web, vous devrez donc, depuis la partie `Multisite`{.ac
 
 Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](/pages/web_cloud/web_hosting/ftp_connection). Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite`{.action}.
 
-![index_of_multisite](images/index_of_multisite.png){.thumbnail}
+![index_of_multisite](images/root-folders-empty.png){.thumbnail}
 
 Modifiez le `Dossier racine` en cliquant sur le bouton `...`{.action} à droite du tableau puis sur `Modifier le domaine`{.action} :
 
-![modify_domain](images/modify_domain.png){.thumbnail}
+![modify_domain](images/modify-domain.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche :
 
@@ -60,7 +60,7 @@ Dans la fenêtre qui s'affiche :
 * Indiquez le répertoire contenant le fichier **index.php** ou **index.html** de votre site comme `Dossier racine` (2) ;
 * Cliquez sur `Suivant` (3).
 
-![change_root_folder](images/change_root_folder01.png){.thumbnail}
+![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -69,17 +69,17 @@ Dans la fenêtre qui s'affiche :
 
 Dans la fenêtre suivante, cliquez sur `Valider`{.action}.
 
-![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
+![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
 
 Sous quelques minutes (en rafraîchissant votre navigateur), vous obtiendrez le résultat suivant :
 
-![multisite_modified](images/multisite_modified.png){.thumbnail}
+![multisite_modified](images/root-folders-full-www.png){.thumbnail}
 
 Vérifiez que votre site web s'affiche correctement. Dans le cas contraire, redémarrez votre appareil et videz le cache de votre navigateur si nécessaire.
 
 Assurez-vous également qu'un fichier **index.php** ou **index.html** est présent dans votre répertoire cible.
 
-## Aller plus loin <a name="gofurther"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 

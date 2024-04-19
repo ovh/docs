@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z aliasów i przekierowań e-mail'
 excerpt: 'Dowiedz się, jak zarządzać aliasami i przekierowaniami e-mail'
-updated: 2020-05-20
+updated: 2024-03-26
 ---
 
 <style>
@@ -11,7 +11,7 @@ updated: 2020-05-20
 </style>
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -60,7 +60,7 @@ Rozdziały "[Utwórz przekierowanie](#redirect)" i "[Utwórz alias](#alias)" dot
 - posiadasz starszą wersję usługi MXplan (aby to sprawdzić, sprawdź ramkę poniżej).
 - posiadasz domenę zarejestrowaną w OVHcloud bez dołączonej oferty e-mail.
 
-W przypadku tych dwóch wyjątków, zapoznaj się bezpośrednio z rozdziałem "[Tworzenie przekierowania lub aliasu na historycznej usłudze MX Plan lub nazwie domeny bez oferty e-mail](#mxplanlegacy)".
+W przypadku tych dwóch wyjątków możliwe jest tylko przekierowanie. Zapraszamy do zapoznania się bezpośrednio z rozdziałem "[Tworzenie przekierowania lub aliasu na historycznej usłudze MX Plan lub nazwie domeny bez oferty e-mail](#mxplanlegacy)".
 
 >
 > W zależności od daty aktywacji oferty MX Plan lub jeśli [oferta została niedawno przeniesiona](https://www.ovhcloud.com/pl/web-hosting/mxplan-migration/), możliwe jest, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, musisz ją zidentyfikować.<br> 
@@ -171,6 +171,11 @@ Metoda tworzenia aliasu lub przekierowania jest ściśle taka sama. Postępuj zg
 > **Etap 2**
 >>
 >> Pojawia się tabela już aktywnych przekierowań. Kliknij przycisk `Dodaj przekierowanie`{.action} znajdujący się po prawej.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > Aby zmienić lub usunąć przekierowanie, kliknij `...`{.action}, po prawej stronie wybranego przekierowania.
+>>
 >> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Etap 3**

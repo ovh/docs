@@ -1,5 +1,5 @@
 ---
-title: 'Switching from hourly to monthly billing'
+title: 'Public Cloud Instances - Switching from hourly to monthly billing'
 excerpt: 'Find out how to change the billing rate for your Public Cloud instance'
 updated: 2023-01-23
 ---

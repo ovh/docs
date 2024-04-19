@@ -27,7 +27,7 @@ Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 Abra la pestaña `Bases de datos` y haga clic en `Añadir una base de datos.`{.action}
 
-![web-cloud-databases](images/web-cloud-databases-createdb01.png){.thumbnail}
+![web-cloud-databases](images/add-database.png){.thumbnail}
 
 Introduzca los campos de acuerdo con los criterios indicados. Es posible crear directamente un usuario marcando la casilla **"Crear un usuario"**:
 
@@ -38,7 +38,7 @@ Introduzca los campos de acuerdo con los criterios indicados. Es posible crear d
 
 Haga clic en `Aceptar`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-createdb02.png){.thumbnail}
+![web-cloud-databases](images/add-database-confirmation.png){.thumbnail}
 
 ### Crear un usuario
 
@@ -48,7 +48,7 @@ Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 Acceda a la pestaña `Usuarios y permisos` y haga clic en `Añadir un usuario`{.action}
 
-![web-cloud-databases](images/web-cloud-databases-user01.png){.thumbnail}
+![web-cloud-databases](images/add-user.png){.thumbnail}
 
 Introduzca un nombre de usuario y una contraseña y haga clic en `Aceptar`{.action}.
 
@@ -60,7 +60,7 @@ Para administrar los permisos de cada usuario, acceda al [área de cliente de OV
 
 Haga clic en el botón `...`{.action} a la derecha del usuario correspondiente y, seguidamente, en `Gestionar los permisos`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-rights01.png){.thumbnail}
+![web-cloud-databases](images/manage-rights.png){.thumbnail}
 
 En la columna izquierda, **"Bases de datos"**, encontrará una lista de las bases de datos del servidor de bases de datos.
 
@@ -75,7 +75,7 @@ La descripción de los tres tipos de derechos propuestos es la siguiente:
 > 
 > La segmentación de los permisos mencionados es exclusiva de OVHcloud. De este modo, un usuario con permisos `Administrador` podrá realizar **DLL** (Data Definición Language) y **DML** (Data Manipulation Language), mientras que un usuario con permisos `Lectura/Escritura` solo realizará la Manipulación del DML (Data Manipulation Language).
 
-![web-cloud-databases](images/web-cloud-databases-rights02.png){.thumbnail}
+![web-cloud-databases](images/changing-user-rights.png){.thumbnail}
 
 #### Eliminar una base de datos
 
@@ -90,7 +90,7 @@ Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 Para eliminar una base de datos en su servidor de bases de datos, abra la pestaña `Bases de datos`, haga clic en el botón `...`{.action} situado a la derecha de la base de datos correspondiente y seleccione `Eliminar la base`{.action}.
 
-![web-cloud-databases](images/web-cloud-databases-deldb01.png){.thumbnail}
+![web-cloud-databases](images/delete-the-database.png){.thumbnail}
 
 ## Más información
 

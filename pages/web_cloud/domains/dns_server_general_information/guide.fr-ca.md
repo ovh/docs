@@ -26,7 +26,7 @@ Pour plus d'information sur les zones DNS, consultez notre guide « [Editer une 
 
 De ce fait, ce sont les **serveurs DNS** qui doivent être déclarés auprès du nom de domaine pour utiliser la zone DNS qu'ils hébergent. 
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Les **serveurs DNS** fonctionnent généralement par paire :
 
@@ -81,7 +81,7 @@ Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVH
 >
 > Lorsque vous utilisez les serveurs DNS OVHcloud, les numéros présents dans les noms des serveurs n'ont aucun lien avec le ou les services que vous utilisez. Seule l'option [DNS anycast](https://www.ovhcloud.com/fr-ca/domains/options/) utilise des serveurs DNS spécifiques qui vous sont automatiquement attribués. 
 
-![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
+![dns-server](images/tab.png){.thumbnail}
 
 ### Modifier les serveurs DNS
 
@@ -102,7 +102,7 @@ Dans les formulaires de saisie, **remplacez** les valeurs actuelles des serveurs
 
 Une fois que vous avez saisi ces informations, cliquez sur `Appliquer la configuration`{.action}. Les statuts des serveurs DNS seront alors mis à jour dans le tableau et afficheront les nouvelles informations que vous venez de fournir.
 
-![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
+![dns-server](images/edit-dns-servers.png){.thumbnail}
 
 > [!success]
 >
@@ -113,7 +113,7 @@ Une fois que vous avez saisi ces informations, cliquez sur `Appliquer la configu
 
 Le bouton `Réinitialiser les serveurs DNS`{.action} permet de réinitialiser les serveurs DNS actuels en les remplaçant automatiquement par les serveurs DNS OVHcloud d'origine. Utilisez cette option **uniquement** si vous souhaitez réutiliser les serveurs DNS OVHcloud (et la zone DNS OVHcloud associée à ses serveurs DNS). 
 
-![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
+![dns-server](images/reset-the-dns-servers.png){.thumbnail}
 
 Une fois les modifications requises effectuées, vous devez attendre qu'elles soient pleinement effectives. Deux périodes successives doivent être prises en compte :
 

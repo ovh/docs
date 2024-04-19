@@ -58,7 +58,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz`{.action} unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
 
-![Schutz aktiviert](images/outgoing-transfer-step1.png){.thumbnail}
+![Schutz aktiviert](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie diesen Schutz entfernen möchten. Warten Sie einige Minuten, bis der Status sich auf `Deaktiviert`{.action} ändert.
 
@@ -73,7 +73,7 @@ Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie
 > Bestimmte Transfer-Codes werden direkt seitens der Registry der entsprechenden Domainendung verwaltet. Die Registry ist die Organisation, die eine oder mehrere TLDs und damit alle Domainnamen mit dieser Endung verwaltet. Zum Beispiel verwaltet die **AFNIC** alle Domainnamen mit der Endung *.fr*. In diesem Fall kontaktieren Sie die zuständige *Registry*, um Ihren Transfer-Code zu erhalten.
 >
 
-![Deaktivierung](images/outgoing-transfer-step2.png){.thumbnail}
+![Deaktivierung](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -91,7 +91,7 @@ Sobald der Transfer-Schutz aufgehoben ist, können Sie den Transfer-Code Ihres D
 
 Es öffnet sich ein Fenster mit Ihrem AUTH/INFO-Code (auch Transfer-Code, Domainpasswort, AUTH-CODE oder EPP-Code genannt).
 
-![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
+![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
 

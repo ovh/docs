@@ -11,7 +11,7 @@ updated: 2022-02-08
  
 ## Ziel
 
-Sie haben versehentlich ein oder mehrere Elemente (E-Mail, Kontakt, Kalender) gelöscht und Ihren "Trash"-Ordner geleert. Diese Elemente können dennoch bis zu 14 Tage nach der Löschung über das OWA Webmail (Outlook Web Application) wiederhergestellt werden.
+Sie haben versehentlich ein oder mehrere Elemente (E-Mail, Kontakt, Kalender) gelöscht und Ihren "Trash"-Ordner geleert. Diese Elemente können dennoch bis zu 14 Tage nach der Löschung über das OWA Webmail (Outlook Web App) wiederhergestellt werden.
 
 **Diese Anleitung erklärt, wie Sie über Webmail (OWA) gelöschte Elemente Ihres E-Mail-Accounts wiederherstellen.**
  

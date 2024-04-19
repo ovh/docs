@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu DKIM
 excerpt: Dowiedz się, jak skonfigurować rekord DKIM w Twojej domenie i platformie e-mail OVHcloud
-updated: 2023-09-07
+updated: 2024-02-16
 ---
 
 <style>
@@ -28,7 +28,7 @@ updated: 2023-09-07
 </style>
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie
@@ -398,7 +398,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 > **2.Utwórz wyłącznik**
 >> Teraz utworzysz wyłącznik, wygeneruj parę kluczy i rekord DNS przypisany do domeny.<br>
->> <br>
+>>
 >> > [!primary]
 >> >
 >> > Zalecamy wykonanie tej operacji dwukrotnie dla każdego z wcześniej wymienionych selektorów. Drugi selektor umożliwi zmianę pary kluczy, gdy będzie to konieczne. Zapoznaj się z przykładem zastosowania ["Jak zmienić parę kluczy DKIM"](#2selectors).
@@ -596,7 +596,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1".<br>
@@ -848,7 +848,7 @@ Oto cztery statusy, w których w Panelu klienta wyświetlana jest czerwona ikona
  - `ready`: rekordy DNS są obecne w strefie. Teraz można aktywować DKIM. Wystarczy włączyć selektor, naciskając sekcję "[Włącz lub zmień selektor DKIM](#enable-switch)".
  - `deleting`: trwa usuwanie DKIM. Po usunięciu serwera wykonaj kolejno kroki w sekcji "[Pełna konfiguracja DKIM](#firststep)".
  - `disabling`: trwa wyłączanie DKIM. Po tej operacji możesz aktywować selektor, naciskając sekcję "[Włącz lub zmień selektor DKIM](#enable-switch)".
- - `todo`: Zadanie zostało zainicjowane, musi zostać uruchomione. Po upływie 24 godzin, jeśli selektor nadal jest w tym stanie, prosimy o otwarcie [zgłoszenia w dziale obsługi klienta](https://help.ovhcloud.com/csm?id=csm_cases_requests) i podanie numeru selektora zgłoszeń.
+ - `todo`: Zadanie zostało zainicjowane, musi zostać uruchomione. Po upływie 24 godzin, jeśli selektor nadal jest w tym stanie, prosimy o otwarcie [zgłoszenia w dziale obsługi klienta](https://help.ovhcloud.com/csm?id=csm_get_help) i podanie numeru selektora zgłoszeń.
 
 ## Sprawdź również
 

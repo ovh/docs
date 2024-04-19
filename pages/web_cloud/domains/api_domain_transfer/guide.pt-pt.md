@@ -128,4 +128,4 @@ Your new registrar will then proceed with the transfer.
 
 > [!warning]
 >
-> If the domain name has been suspended or expired, you will need to [create a support ticket](https://www.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.
+> If the domain name has been suspended or expired, you will need to [create a support request](https://help.ovhcloud.com/csm?id=csm_get_help).

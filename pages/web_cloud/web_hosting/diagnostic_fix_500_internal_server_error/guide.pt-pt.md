@@ -12,7 +12,7 @@ updated: 2023-11-22
 
 Os erros 500 "Internal Server Error" podem afetar a totalidade ou parte do seu site, ser aleatórios ou permanentes. Podem também aparecer sob a forma de uma página em branco.
 
-![error500](images/error-500-2.png){.thumbnail}
+![error500](images/http-500.png){.thumbnail}
 
 Por vezes, provêm também de uma atualização efetuada **automaticamente** por um componente do seu site e, portanto, ocorrem sem ação da sua parte.
 
@@ -22,7 +22,7 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther) ?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further) ?
 >
 
 ## Requisitos
@@ -79,7 +79,7 @@ O guia "[Partilhado : Guia de utilização do FileZilla](/pages/web_cloud/web_ho
 
 Por razões de segurança, o seu website oculta eventuais detalhes sobre a origem do erro 500 a qualquer pessoa que se lhe ligue por um browser.
 
-Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting) a partir da fórmula de alojamento [pro2014](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou superior.
+Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](/pages/web_cloud/web_hosting/ssh_on_webhosting) a partir da fórmula de alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou superior.
 
 ### Verificar o estado da base de dados
 
@@ -100,7 +100,7 @@ Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um bac
 
 Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para voltar à configuração anterior.
 
-## Saiba mais <a name="gofurther"></a>
+## Saiba mais <a name="go-further"></a>
 
 [O que fazer se o meu site está inacessível?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

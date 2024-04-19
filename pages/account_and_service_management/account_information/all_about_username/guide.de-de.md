@@ -160,9 +160,9 @@ Sie können die administrative **oder** technische Verwaltung **oder** die Rechn
 
 Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter informiert werden, empfehlen wir Ihnen, sofort [Ihr Passwort zu ändern](/pages/account_and_service_management/account_information/manage-ovh-password#passwort-andern) und Ihren Account zusätzlich [mit Zwei-Faktor-Authentifizierung zu schützen](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
-Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktieren Sie den OVHcloud Support](https://www.ovh.com/manager/dedicated/#/support/tickets/new) unter +49 681 906730, damit unsere Teams Sie bei den notwendigen Schritten unterstützen können.
+Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktieren Sie den OVHcloud Support](https://help.ovhcloud.com/csm?id=csm_get_help) unter +49 681 906730, damit unsere Teams Sie bei den notwendigen Schritten unterstützen können.
 
-## Weiterführende Informationen
+## Weiterführende Informationen3
 
 [Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password)
 

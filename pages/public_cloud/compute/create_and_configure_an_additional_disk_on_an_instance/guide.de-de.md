@@ -23,7 +23,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
+- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
 > [!warning]
 >

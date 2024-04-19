@@ -1,7 +1,7 @@
 ---
 title: "Ativar os endereços de e-mail incluídos no seu alojamento web"
 excerpt: "Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web"
-updated: 2023-03-02
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -20,6 +20,15 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 - Ter um serviço de [alojamento Web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
+> [!warning]
+>
+> Se pretender ativar a opção "endereço(s) de e-mail incluído(s) com o seu alojamento web" para um domínio externo (não registado na OVHcloud) **do qual deve ser obrigatoriamente o administrador**, deve criar (no mínimo) uma zona DNS na OVHcloud para o seu domínio externo. Consulte o guia "[Criar uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create)" se necessário. Isto permitirá que o seu domínio apareça na lista de nomes de domínio disponíveis aquando da ativação da opção.
+>
+> Além disso, se o seu domínio já estiver registado na OVHcloud ou se já existir uma zona DNS para este último noutra [conta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) que o seu, consulte a nossa documentação "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)" para recuperar a gestão da mesma.
+>
+> Por fim, se o seu domínio já estiver associado à opção "endereço(s) de e-mail incluído(s) com o seu alojamento web" outro alojamento web, não poderá associá-lo ao seu próprio alojamento web diretamente. Consulte o gestor do alojamento web atual através deste manual.
+>
+
 ## Instruções
 
 ### Ativação da sua oferta de e-mail
@@ -28,14 +37,17 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na tabela `Configuração`, poderá ver a menção `Endereços de e-mail`. Clique no botão `...`{.action} à direita e, a seguir, em `Ativar a solução de e-mail`{.action}.
 
-![Ativação de e-mail](images/mail-hosting01.png){.thumbnail}
+![Ativação de e-mail](images/enable-email-included-webhosting.png){.thumbnail}
 
 Aparecerá a janela de ativação. Escolha o nome de domínio ao qual pretende associar os seus endereços de e-mail e valide a sua escolha.
 
-![Ativação de e-mail](images/mail-hosting02.png){.thumbnail}
+![Ativação de e-mail](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} superior a partir da nossa página comercial.
+>
+> Atenção: a ativação da opção de e-mail pode levar alguns minutos. Receberá um e-mail para confirmar a instalação e a ativação da oferta MXPLAN. Inclui a gestão e a configuração dos seus endereços de e-mail.
+>
 
 ### Conservação de endereços de e-mail antes da expiração do alojamento web
 
@@ -45,7 +57,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Endereços de e-mail` e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 
-![Ativação de e-mail](images/mail-hosting03.png){.thumbnail}
+![Ativação de e-mail](images/detach-email-included-webhosting.png){.thumbnail}
 
 Ser-lhe-á proposta uma oferta MX adaptada. Uma vez a encomenda regularizada, os seus e-mails continuarão a funcionar após a suspensão do alojamento web.
  
@@ -61,7 +73,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Endereços de e-mail` e, a seguir, em `Rescindir a opção de e-mail`{.action}.
 
-![Ativação de e-mail](images/mail-hosting04.png){.thumbnail}
+![Ativação de e-mail](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >

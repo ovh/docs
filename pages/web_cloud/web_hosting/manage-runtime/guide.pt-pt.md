@@ -1,7 +1,6 @@
 ---
-title: 'Gerir os motores de execução de um alojamento Cloud Web'
-excerpt: 'Saiba como gerir os motores de execução do seu alojamento para concretizar os seus projetos'
-hidden: true
+title: "Gerir os motores de execução de um alojamento Cloud Web"
+excerpt: "Saiba como gerir os motores de execução do seu alojamento para concretizar os seus projetos"
 updated: 2022-07-27
 ---
 
@@ -34,7 +33,7 @@ Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Ár
 
 A tabela que aparece indica os motores de execução adicionados atualmente ao seu alojamento Cloud Web. Ao instalar um alojamento, um motor será automaticamente criado.
 
-![cloudweb](images/cloud-web-runtime-step1.png){.thumbnail}
+![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
 
 ### Etapa 2: gerir os motores de execução
 
@@ -85,7 +84,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 
 Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -99,7 +98,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 
 Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
-![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -113,7 +112,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 
 Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
-![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Etapa 3: associar o motor de execução a um multi-site
 
@@ -128,17 +127,15 @@ Uma vez que dispõe dos motores de execução necessários para o seu projeto, c
 
 Na tabela, consulte a coluna `Motor de execução` para verificar se o motor apresentado para os domínios em questão é o correto. Os nomes que aparecem correspondem ao “nome personalizado” que definiu.
 
-![cloudweb](images/cloud-web-runtime-step4.png){.thumbnail}
+![cloudweb](images/runtime-software-applications.png){.thumbnail}
 
 Se pretender alterar um motor associado a um multi-site, clique no ícone em forma de roda dentada à direita do domínio em questão e, em seguida, em `Alterar`{.action}.
-
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
 
 De seguida, selecione o motor certo junto da opção `Motor de execução` na janela que irá aparecer. Lembrete: os nomes que aparecem correspondem ao “nome personalizado” que definiu. É imperativo que o website ou a aplicação acessível a partir do domínio em questão seja compatível com o motor escolhido. 
 
 Depois de selecionado, siga os passos até ao fim.
 
-![cloudweb](images/cloud-web-runtime-step6.png){.thumbnail}
+![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
 
 ## Quer saber mais?
 

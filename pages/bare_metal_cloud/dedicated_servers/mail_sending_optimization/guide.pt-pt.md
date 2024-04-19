@@ -1,7 +1,7 @@
 ---
 title: Otimizar o envio de e-mails
 excerpt: Saiba como enviar e-mails limitando o risco de spam
-updated: 2022-12-20
+updated: 2024-01-24
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-12-20
 
 ## Objetivo
 
-As políticas antisspam são cada vez mais rigorosas. Para simplificar o envio de e-mails e para que os seus destinatários os recebam sem bloquear as ferramentas de segurança, são necessárias configurações para autenticar as suas mensagens e validar o seu conteúdo.
+Em geral, as políticas antisspam são rígidas. De forma a simplificar o envio de mensagens e permitir que os destinatários as recebam sem bloquear as ferramentas de segurança, são necessárias definições para autenticar as suas mensagens e o seu conteúdo nos servidores destinatários que processam essas mensagens.
 
 **Este guia dá-lhe alguns conselhos para otimizar o envio dos seus e-mails.**
 
@@ -23,7 +23,8 @@ As políticas antisspam são cada vez mais rigorosas. Para simplificar o envio d
 
 ## Requisitos
 
-- Ter um servidor de e-mail já configurado
+- Ser administrador de um servidor de correio eletrónico configurado.
+- Poder gerir a zona DNS do(s) domínio(s) utilizado(s) para o envio
 
 > [!warning]
 >
@@ -34,27 +35,31 @@ As políticas antisspam são cada vez mais rigorosas. Para simplificar o envio d
 
 ### Configurar o registo SPF <a name="spfrecord"></a>
 
-No caso de uma infraestrutura dedicada (servidor dedicado, VPS, instância Public Cloud ou Hosted Private Cloud), o campo SPF ótimo apresenta-se sob a forma:  `v=spf1 ip4:server_ipv4 ~all`. Não se esqueça de substituir 'server_ipv4' pelo endereço IPv4 do seu servidor.
+No caso de uma infraestrutura dedicada (servidor dedicado, VPS, instância Public Cloud ou Hosted Private Cloud), o registo SPF (Sender Policy Framework) ideal apresenta-se sob a forma: `v=spf1 ip4:ipv4_do_servidor ~all`.
 
 > [!primary]
 >
 > O símbolo em frente ao *all* tem grande importância:
 >
 > - `+`: aceitar
-> - `-`: não aceitar
-> - `~`: falha suave (*soft fail*)
+> - `-`: rejeitar
+> - `~`: falha (*soft fail*)
 > - `?`: neutro
 >
 
-Para mais informações sobre a sintaxe do registo SPF, consulte a seguinte ligação: <http://www.open-spf.org/>.
-
-Pode, naturalmente, ir mais longe, configurando o registo SPF de um domínio específico ou especificando um IPv6. Para saber como realizar esta operação, consulte o nosso manual sobre como [configurar o registo SPF](/pages/web_cloud/domains/dns_zone_spf).
+Pode ir mais longe configurando o registo SPF para um domínio específico ou utilizando o endereço IPv6. Para compreender melhor o registo SPF, consulte o nosso manual sobre a [configuração de um registo SPF](/pages/web_cloud/domains/dns_zone_spf).
 
 ### Configurar o registo DKIM
 
-A configuração de um registo DKIM (DomainKeys Identified Mail) oferece uma proteção suplementar para evitar que os seus e-mails sejam marcados como spam. Simplificando, o DKIM é uma assinatura que permite autenticar o domínio remetente.
+O registo DKIM (DomainKeys Identified Mail) permite assinar os e-mails para evitar a sua usurpação. Esta assinatura funciona com base no princípio de um par chave privada/chave pública, que permite autenticar o domínio remetente.
 
-Esta autenticação é realizada através de uma chave DKIM a adicionar na sua zona DNS. Encontrará diferentes geradores de chaves DKIM, entre os quais <http://dkimcore.org/tools/keys.html>. Queira seguir as indicações fornecidas no site do gerador à sua escolha.
+Para mais informações, consulte o nosso guia sobre a [configuração de um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim).
+
+### Configurar o registo DMARC
+
+O registo DMARC (Domain-based Message Authentication, Reporting and Conformance) é uma norma de segurança que se baseia nos 2 métodos de segurança de e-mail SPF e DKIM. Os argumentos no registo DMARC orientam o destinatário na forma como processa os e-mails, em função do resultado SPF e/ou DKIM. É possível definir um endereço de e-mail no registo DMARC, que receberá um relatório sobre as falhas de autenticação.
+
+Para obter mais informações, consulte o nosso manual sobre a [configuração de um registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
 ### Configurar a reverse (*reverse IP*) <a name="reverseip"></a>
 
@@ -62,7 +67,7 @@ Sempre com o objetivo de otimizar o envio e de reduzir os riscos de bloqueio dos
 
 Em primeiro lugar, deve criar um registo A na zona DNS do seu domínio com o endereço IP do seu servidor como alvo.
 
-Se os seus servidores DNS são geridos pela OVHcloud, consulte este [guia](/pages/web_cloud/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
+Se os seus servidores DNS são geridos pela OVHcloud, consulte o nosso guia sobre [a edição de uma zona DNS da OVHcloud através da Área de Cliente](/pages/web_cloud/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
 
 Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 
@@ -101,9 +106,9 @@ Introduza o seu domínio na secção `Reverse` e clique em `Validar`{.action}.
  
 A Microsoft utiliza uma política de lista branca. Isto significa que, de início, todos os servidores estão na lista negra e é necessário um procedimento específico para que o seu servidor de e-mail seja validado.
 
-Antes de começar o procedimento de whitelist do seu IP, certifique-se de que configurou corretamente uma [reverse](#reverseip) no seu IP (e não a reverse predefinida da OVHcloud).
+Antes de iniciar o procedimento de whitelist do seu IP, certifique-se de que configurou corretamente uma [reverse](#reverseip) no seu endereço IP (e não a reverse por defeito da OVHcloud).
 
-A Microsoft também verifica o registo SPF, pelo que é recomendado que [configure um registo](#spfrecord).
+A Microsoft também verifica o registo SPF, pelo que é aconselhável configurá-lo.
 
 A seguir, deve assinar os contratos SNDS (Smart Network Data Services) e JMRP (Junk Mail Reporting Partner Program).
 
@@ -139,15 +144,19 @@ Para mais informações queira abrir um [pedido de assistência](https://support
 
 #### Para um servidor Gmail
 
-A adição de registos específicos (por exemplo, um registo DMARC) pode facilitar a receção dos e-mails se o seu destinatário estiver no Gmail. Aqui está um artigo da Google que o pode ajudar: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
-
-A Google também disponibiliza um [artigo dedicado à prevenção do spam](https://support.google.com/mail/answer/81126?hl=en){.external} para os utilizadores do Gmail.
+A adição de registos específicos, como por exemplo um registo DMARC (Domain-based Message Authentication, Reporting, and Conformance) ou DKIM (DomainKeys Identified Mail), pode facilitar a receção de e-mails se o seu destinatário estiver no Gmail. Consulte os nossos guias mencionados [na parte inferior desta página](#go-further) para os configurar.
 
 ### Verificar as suas informações
 
 Pode ser interessante utilizar um site como o [Mail Tester](http://www.mail-tester.com/) para verificar que todas as suas configurações estão corretas.
 
 ## Quer saber mais?
+
+[Configurar um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+
+[Configurar um registo SPF](/pages/web_cloud/domains/dns_zone_spf)
+
+[Configurar um registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Para ser acompanhado sobre a implementação das suas soluções OVHcloud, contacte a nossa [rede de parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
  

@@ -100,11 +100,11 @@ Per garantire che i tuoi servizi (hosting condiviso **e** database) non siano og
 
 Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}, seleziona il cluster e il file in cui si trova il tuo hosting condiviso, clicca su `Hosting`{.action} e seleziona l'hosting Web corrispondente. Nella scheda `Informazioni generali`{.action}, clicca su `datacenter` del tuo hosting condiviso e `filer` dov'è.
 
-![Recupera Filer](images/DropFilerCluster1.png){.thumbnail}
+![Recupera Filer](images/find-filer.png){.thumbnail}
 
 Clicca sulla scheda `Multisito`{.action} per recuperare il numero del cluster in cui si trova il tuo hosting condiviso.
 
-![Recuperare cluster](images/DropFilerCluster2.png){.thumbnail}
+![Recuperare cluster](images/find-cluster.png){.thumbnail}
 
 > [!success]
 >

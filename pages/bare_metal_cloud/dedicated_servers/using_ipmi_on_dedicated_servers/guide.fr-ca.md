@@ -1,7 +1,7 @@
 ---
-title: "Utilisation de l'IPMI pour les serveurs dédiés"
-excerpt: "L'IPMI permet de vous connecter à votre serveur sans utiliser un logiciel externe"
-updated: 2022-11-16
+title: "Comment utiliser la console IPMI avec un serveur dédié"
+excerpt: "Découvrez comment vous connecter à votre serveur depuis votre espace client sans utiliser de logiciel externe"
+updated: 2024-03-01
 ---
 
 ## Objectif
@@ -18,6 +18,8 @@ La console IPMI (Intelligent Platform Management Interface) permet d’établir 
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
 >
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+
+<a name="procedure"></a>
 
 ## En pratique
 
@@ -142,6 +144,28 @@ Dans le BIOS, naviguez jusqu'à l'onglet `Boot`{.action} et remplacez `UEFI Boot
 ![Bios](images/bios.png){.thumbnail}
 
 Enfin, appuyez sur la touche `F4` pour enregistrer vos modifications et redémarrer le serveur.
+
+<a name="bios"></a>
+
+### Redémarrer un serveur dans le menu BIOS
+
+Vous pouvez accéder au BIOS lors de la configuration ou du dépannage de votre serveur. Un moyen pratique d'y parvenir est d'utiliser l'outil `ipmiutil` (voir la [page du projet](https://ipmiutil.sourceforge.net/) pour plus d'informations).
+
+Lorsque le serveur est en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) et une fois que vous y êtes connecté, installez-le avec la commande suivante :
+
+```bash
+apt install ipmiutil
+```
+
+Redémarrez ensuite le serveur avec cette commande :
+
+```bash
+ipmiutil reset -b
+```
+
+Accédez alors à la [console IPMI](#procedure) dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Le menu BIOS du serveur doit s'afficher.
+
+![KVM BIOS](images/kvm_bios.png){.thumbnail}
 
 ## Aller plus loin
 

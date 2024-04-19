@@ -187,7 +187,7 @@ A continuación, vuelva a su página para ver el resultado :
 
 Si prefiere utilizar su editor de código habitual, conéctese con un cliente FTP a su servidor para recuperar los archivos de su ordenador :
 
-![Descargando con FileZilla](images/static_website_installation_cecil11.png){.thumbnail}
+![Descargando con FileZilla](images/cecil-folder.png){.thumbnail}
 
 Ahora puede editar los archivos de su I.D.E.:
 

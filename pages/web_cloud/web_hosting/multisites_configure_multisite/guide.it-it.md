@@ -1,7 +1,7 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 excerpt: 'Questa guida ti mostra come condividere il tuo hosting Web tra più siti Internet'
-updated: 2023-09-08
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -49,13 +49,13 @@ Visualizzi una tabella con tutti i domini e i sottodomini aggiunti alla tua solu
 > Se migri il tuo sito e desideri evitare interruzioni di servizio, segui lo [Step 3: mettere online](#site-online) il tuo sito Web
 >
 
-![multisito](images/access-multisite-ovh.png){.thumbnail}
+![multisito](images/tab.png){.thumbnail}
 
 ### Step 2: aggiungi un dominio o un sottodominio <a name="add-domain"></a>
 
 Per aggiungere un nuovo dominio o sottodominio al tuo hosting Web, clicca sul pulsante `Azioni`{.action} a sinistra e poi su `Aggiungi un dominio o un sottodominio`{.action}, seleziona la scheda che appare.
 
-![azioni](images/actions-multisite-ovh.png){.thumbnail}
+![azioni](images/actions-menu.png){.thumbnail}
 
 - **Aggiungi un dominio registrato in OVHcloud**:
 
@@ -65,7 +65,7 @@ Nello Spazio Cliente OVHcloud vengono mostrati solo i domini per i quali sei [co
 
 Nel caso di un dominio esterno al tuo account cliente (altro identificativo cliente) o esterno a OVHcloud (provider di domini terzi), seleziona `Aggiungi un dominio esterno`{.action} e clicca su `Seguente`{.action}. e prosegui seguendo lo[Step 2.2: aggiungi un dominio esterno](#add-external-domain).
 
-![multisito](images/add-multisite-step1.png){.thumbnail}
+![multisito](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Step 2.1: aggiungere un dominio registrato in OVHcloud <a name="add-ovhcloud-domain"></a>
 
@@ -75,14 +75,14 @@ Nel caso di un dominio esterno al tuo account cliente (altro identificativo clie
 A questo punto è necessario personalizzare l'aggiunta del dominio o sottodominio. In base al piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivato, alcune opzioni potrebbero non essere disponibili.
 
 > [!primary]
-> Per aggiungere un sottodominio, è necessario selezionare il dominio principale nella lista (ad esempio: midomain.ovh). Lo step successivo ti permetterà di indicare il sottodominio (esempio: **blog**.mydomain.ovh).
+> Per aggiungere un sottodominio, è necessario selezionare il dominio principale nella lista (ad esempio: domain.tld). Lo step successivo ti permetterà di indicare il sottodominio (esempio: **blog**.domain.tld).
 
-![multisito](images/add-multisite-step2.png){.thumbnail}
+![multisito](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Campo|Descrizione|
 |---|---|
-|Dominio|Di default, il dominio selezionato viene inserito automaticamente.  È possibile aggiungere un sottodominio (ad esempio, **blog**.mydomain.ovh) e creare contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.mydomain.ovh). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online.|
-|Cartella di root|Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.mydomain.ovh, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
+|Dominio|Di default, il dominio selezionato viene inserito automaticamente.  È possibile aggiungere un sottodominio (ad esempio, **blog**.domain.tld) e creare contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.domain.tld). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online.|
+|Cartella di root|Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.domain.tld, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
 |SSL|Permette di usufruire di una connessione sicura (https://) sul dominio selezionato.  Per maggiori informazioni, accedi alla pagina relativa ai [certificati SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}. Attivando contemporaneamente le opzioni SSL e CDN (Content Delivery Network), potrai usufruire anche del protocollo **HTTP2**.|
 |Attiva la CDN|Permette di attivare la CDN sul dominio selezionato memorizzando in cache gli elementi statici di un sito, ad esempio le immagini. Per maggiori informazioni, accedi alla pagina relativa alla [CDN](https://www.ovhcloud.com/it/web-hosting/options/cdn/){.external}.  Attivando contemporaneamente le opzioni SSL e CDN (Content Delivery Network), potrai usufruire anche del protocollo **HTTP2**.|
 |IP del Paese|Permette di usufruire di un indirizzo IP geolocalizzato (a scelta tra diversi Paesi) per il dominio selezionato. Per maggiori informazioni, accedi alla pagina relativa agli [IP](https://www.ovhcloud.com/it/web-hosting/options/){.external}. |
@@ -96,7 +96,7 @@ A questo punto è necessario personalizzare l'aggiunta del dominio o sottodomini
 
 Una volta inseriti tutti i dati, clicca su `Seguente`{.action} e verifica la correttezza delle informazioni inserite.
 
-![multisito](images/add-multisite-step3.png){.thumbnail}
+![multisito](images/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Selezionando un dominio registrato in OVHcloud, hai la possibilità di modificarne automaticamente o manualmente la configurazione DNS:
 
@@ -121,32 +121,32 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 >
 > |Campo|Dove trovare l’informazione|Azione da realizzare|
 > |---|---|---|
-> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.mydomain.ovh) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.mydomain.ovh` è necessario creare il record per il sottodominio `ovhcontrol.mydomain.ovh` e non `ovhcontrol.blog.mydomain.ovh`.<br></br>Per recuperarla, consulta i [server DNS](/pages/web_cloud/domains/dns_server_general_information#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
+> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.domain.tld) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.domain.tld` è necessario creare il record per il sottodominio `ovhcontrol.domain.tld` e non `ovhcontrol.blog.domain.tld`.<br></br>Per recuperarla, consulta i [server DNS](/pages/web_cloud/domains/dns_server_general_information#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
 >
-> ![multisito](images/add-multisite-external-step3.png){.thumbnail}
+> ![multisito](images/find-token.png){.thumbnail}
 >
 > |Campo|Dove trovare l’informazione|Azione da realizzare|
 > |---|---|---|
 > |A e AAAA|Nella scheda `Informazioni generali`{.action}, in corrispondenza di **IPv4** e **IPv6**.|Questi due record permettono che il dominio mostri il sito Internet ospitato nel tuo hosting Web.  Associa il tuo dominio o sottodominio all'indirizzo IP del tuo hosting.|
 >
-> ![multisito](images/add-multisite-external-step4.png){.thumbnail}
+> ![multisito](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Una volta selezionato il dominio che vuoi associare all’hosting, è necessario personalizzarne i parametri. Tieni presente che alcune delle opzioni incluse nel tuo piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} non potranno essere attivate durante questo processo: sarà prima necessario aggiungere il dominio e modificare i parametri del multisito.
 
 |Campo|Descrizione|
 |---|---|
-|Dominio|Inserisci il dominio che vuoi utilizzare. Se necessario, aggiungi un sottodominio (ad esempio, **blog**.mydomain.ovh) e crei contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.mydomain.ovh). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online. Ti ricordiamo che, per poter completare l’aggiunta del dominio, devi essere in grado di modificarne la configurazione (zona DNS).|
-|Cartella di root| Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.mydomain.ovh, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
+|Dominio|Inserisci il dominio che vuoi utilizzare. Se necessario, aggiungi un sottodominio (ad esempio, **blog**.domain.tld) e crei contemporaneamente il sottodominio "www" corrispondente (ad esempio, **www.blog**.domain.tld). Questo dominio corrisponderà al nome del sito che vuoi pubblicare online. Ti ricordiamo che, per poter completare l’aggiunta del dominio, devi essere in grado di modificarne la configurazione (zona DNS).|
+|Cartella di root| Definisci la cartella, sul tuo spazio di archiviazione, verso cui il dominio punta. È in questo spazio che i file del sito dovranno essere messi online. Ad esempio, per blog.domain.tld, la cartella di root potrebbe essere "blog". Se la cartella non esiste, verrà creata automaticamente.|
 |Attiva l’IPv6|Permette di attivare il protocollo IPv6 sul dominio selezionato.  Per maggiori informazioni, accedi alla pagina relativa agli [IP](https://www.ovhcloud.com/it/web-hosting/options/){.external}. |
 
 Una volta inseriti tutti i dati, clicca su `Seguente`{.action} e verifica la correttezza delle informazioni inserite.
 
-![multisito](images/add-multisite-external-step1.png){.thumbnail}
+![multisito](images/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
 Per aggiungere un dominio esterno a OVHcloud è necessaria una conferma aggiuntiva obbligatoria. In questo modo siamo in grado di assicurarci che l'aggiunta del dominio esterno sia legittima. Un messaggio ti inviterà a modificare la configurazione DNS del dominio.
 
-![multisito](images/add-multisite-external-step2.png){.thumbnail}
+![multisito](images/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 
 annota i parametri indicati e clicca su `Conferma`{.action}. A questo punto, il dominio viene aggiunto temporaneamente, per il tempo necessario a modificare la configurazione DNS.
 

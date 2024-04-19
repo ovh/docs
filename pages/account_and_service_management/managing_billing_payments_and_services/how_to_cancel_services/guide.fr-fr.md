@@ -1,14 +1,61 @@
 ---
-title: Comment résilier vos services OVHcloud
-excerpt: Découvrez comment interrompre vos abonnements OVHcloud
-updated: 2023-11-16
+title: Comment résilier mes services OVHcloud
+excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
+updated: 2024-01-19
 ---
 
 ## Objectif
 
-Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis l'espace client OVHcloud.
 
-Tout d'abord, prenez connaissance de la partie « [Que se passe-t-il lorsqu'un service OVHcloud est résilié ?](#consequences) ».<br> Choisissez ensuite le produit concerné dans la partie « [Comment résilier votre abonnement ?](#terminate) ».
+- Tout d'abord, prenez connaissance de la partie « Que se passe-t-il lorsqu'un service OVHcloud est résilié ? » ci-dessous.
+- Choisissez ensuite le produit concerné dans la partie « [Comment résilier votre abonnement ?](#terminate) ».
+
+### Que se passe-t-il lorsqu'un service OVHcloud est résilié ? <a name="consequences"></a>
+
+La « résiliation » d'un service OVHcloud implique qu'il sera interrompu **de façon définitive** à la fin de l'abonnement en cours (avec une exception, toutefois, pour les [noms de domaines](#domain)). 
+Vous pouvez résilier votre service ou [annuler une demande de résiliation](#cancel) jusqu'à 24 heures avant la date de fin d'abonnement.
+
+S'il s'agit d'une offre de messagerie, d'un serveur ou d'un hébergement Web, l'ensemble des données concernées seront supprimées **sans possibilité de récupération**.<br>
+S'il s'agit d'un nom de domaine ou d'un numéro de téléphone, ils seront remis en circulation et pourront être **commandés par d'autres clients**.
+
+Avant de procéder à la résiliation d'un service, vous devez donc être **certain** :
+
+- que l'opération va concerner un service que vous ne souhaitez plus utiliser ;
+- que vous possédez une solution **fonctionnelle** pour le remplacer ;
+- que vous avez sauvegardé l'ensemble des données concernées.
+
+<a name="domain"></a>
+
+> [!primary]
+> **Résiliation d'un nom de domaine**
+>
+> Suite à votre résiliation et à la fin de l'abonnement en cours, votre nom de domaine générique (.com, .org. net, etc.) vous reste « réservé » pendant une période dite « de « *grâce* » (environ 7 jours) puis pendant celle de « *rédemption* » (environ 35 à 40 jours supplémentaires). Cela signifie que vous seul serez en mesure de le renouveler pendant ces périodes. Pour plus de détails, consultez la [FAQ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#faq) en bas de notre guide « [Comment renouveler mes services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) ».
+>
+
+## Prérequis
+
+- Etre le « contact administrateur » du service à résilier (pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition))
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ;
+- Posséder des services OVHcloud actifs (non suspendus pour un défaut de paiement)
+
+## En pratique
+
+La procédure de résiliation est identique pour la majorité des services OVHcloud.
+
+Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#specific-cases) dans ce guide.
+
+### Comment résilier votre abonnement ? <a name="terminate"></a>
+
+Pour résilier l'abonnement à votre service, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+
+![produits et services](images/products-services-fr.png){.thumbnail}
+
+Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
+
+![résilier](images/cancel-fr.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 > [!primary]
 >
@@ -17,161 +64,49 @@ Tout d'abord, prenez connaissance de la partie « [Que se passe-t-il lorsqu'un s
 > N'hésitez donc pas à nous en dire plus sur votre expérience personnelle avec OVHcloud via le formulaire proposé lors de la résiliation. Nous vous remercions par avance de votre contribution à l'amélioration de nos produits.
 >
 
-## Que se passe-t-il lorsqu'un service OVHcloud est résilié ? <a name="consequences"></a>
+La résiliation de votre service aura lieu à la **date d'effet** indiquée dans le tableau « Mes services ». Si vous ne voyez pas le statut « Résiliation demandée » apparaître, rafraîchissez la page.
 
-La « résiliation » d'un service OVHcloud implique qu'il sera interrompu **de façon définitive** à la fin de l'abonnement en cours (avec une exception, toutefois, pour les [noms de domaines](#domain)). Vous pouvez résilier votre service ou [annuler une demande de résiliation](#cancel) jusqu'à 24 heures avant la date de fin d'abonnement.
+![demande de résiliation](images/cancellation-request-fr.png){.thumbnail}
 
-S'il s'agit d'une offre de messagerie, d'un serveur ou d'un hébergement Web, l'ensemble des données concernées seront supprimées **sans possibilité de récupération**.
+### Cas particuliers <a name="specific-cases"></a>
 
-S'il s'agit d'un nom de domaine ou d'un numéro de téléphone, ils seront remis en circulation et pourront être **commandés par d'autres clients**.
+#### E-mail MX Plan <a name="mxplan"></a>
 
-Ceci implique que, avant toute résiliation, vous devez être **certain** :
+La plupart des services MX Plan sont liés à un hébergement. Si c'est le cas et que vous souhaitez supprimer cette option e-mail, suivez [les instructions de ce guide](/pages/web_cloud/web_hosting/activate-email-hosting/#suppression-de-loffre-e-mail-liee-a-votre-hebergement-web). **Attention**, la suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes et n'octroie aucun remboursement.
 
-- que l'opération va concerner un service que vous ne souhaitez plus utiliser;
-- que vous possédez, si nécessaire, une solution *fonctionnelle* pour le remplacer;
-- que vous avez sauvegardé, si besoin, l'ensemble des données concernées.
+Si votre offre e-mail MX Plan a été commandée indépendamment de tout hébergement, suivez [la procédure détaillée ci-dessus](#terminate).
 
-## Comment résilier votre abonnement ? <a name="terminate"></a>
+#### E-mail Pro <a name="emailpro"></a>
 
-> [!warning]
->
-> La résiliation ne peut être appliquée que si les conditions suivantes sont remplies :
->
-> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition));
-> * le service n'est pas en renouvellement manuel;
-> * le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture.
->
+Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#supprimer-un-compte).
 
-Cliquez sur le type de produit à résilier dans la liste suivante des principales offres OVHcloud : 
+#### Hosted Exchange <a name="hosted"></a>
 
-[Bare Metal Cloud](#baremetalcloud)<br />
-&emsp;&emsp;[Serveur dédié](#dedicated)<br />
-&emsp;&emsp;[VPS](#vps)<br />
-&emsp;&emsp;[Managed Bare Metal](#managedbaremetal)<br />
-&emsp;&emsp;[Serveur NAS-HA](#nas)<br />
-&emsp;&emsp;[Load Balancer](#iplb)<br />
-&emsp;&emsp;[Licences](#licences)<br />
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes).
 
-[Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
-&emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
+#### Private Exchange <a name="private"></a>
 
-[Public Cloud](#publiccloud)<br />
+Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes_1).
 
-[Web Cloud](#webcloud)<br />
-&emsp;&emsp;[Nom de domaine](#domain)<br />
-&emsp;&emsp;[Hébergement Web](#hosting)<br />
-&emsp;&emsp;[Certificat SSL Sectigo](#ssl_sectigo)<br />
-&emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
-&emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
-&emsp;&emsp;[E-mail Pro](#emailpro)<br />
-&emsp;&emsp;[Hosted Exchange](#hosted)<br />
-&emsp;&emsp;[Private Exchange](#private)<br />
-&emsp;&emsp;[Office 365 csp 1](#office-csp1)<br />
-&emsp;&emsp;[Office 365 csp 2](#office-csp2)<br />
-&emsp;&emsp;[Sharepoint](#sharepoint)<br />
+#### Office 365 csp 1 <a name="office-csp1"></a>
 
-[Telecom](#telecom)<br />
-&emsp;&emsp;[xDSL](#xdsl)<br />
-&emsp;&emsp;[VoIP](#voip)<br />
-&emsp;&emsp;[OverTheBox](#otb)<br />
-&emsp;&emsp;[SMS](#sms)<br />
-&emsp;&emsp;[FAX](#fax)<br />
+Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gerer-vos-abonnements).
 
-[Solutions transverses](#transversal)<br />
-&emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />
+#### Office 365 csp 2 <a name="office-csp2"></a>
 
-### Bare Metal Cloud <a name="baremetalcloud"></a>
+Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerer-vos-abonnements).
 
-#### Serveur dédié <a name="dedicated"></a>
+#### Sharepoint <a name="sharepoint"></a>
 
-Pour résilier votre [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+Vous pouvez soit **supprimer** un compte individuel de votre plateforme [Sharepoint](https://www.ovhcloud.com/fr/collaborative-tools/sharepoint/), soit résilier la plateforme Sharepoint entière.
+Si vous souhaitez résilier la plateforme entière, nous vous conseillons de commencer par la suppression préalable de chaque compte individuel.
 
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
+- Pour supprimer un compte Sharepoint individuel, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez successivement sur `Microsoft`{.action}, `Sharepoint`{.action} puis sur votre plateforme Sharepoint.<br>
+Dans l'onglet `Utilisateurs`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer puis sur `Supprimer le compte`{.action}. Prenez connaissance des informations et cliquez sur `Valider`{.action}.
 
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+- Pour résilier l'ensemble de votre plateforme Sharepoint, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
 
-#### VPS <a name="vps"></a>
-
-Pour résilier votre serveur [VPS](https://www.ovhcloud.com/fr/vps/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-#### Managed Bare Metal <a name="managedbaremetal"></a>
-
-Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de ce [guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
-
-#### Serveur NAS-HA <a name="nas"></a>
-
-Pour résilier votre [Serveur NAS-HA](https://www.ovh.com/ca/fr/nas/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-#### Load Balancer <a name="iplb"></a>
-
-Pour résilier votre offre [Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-#### Licences <a name="licences"></a>
-
-Pour résilier une licence souscrite auprès d'OVHcloud, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite de la licence à résilier puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-### Hosted Private Cloud <a name="privatecloud"></a>
-
-#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
-
-Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
-
-#### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
-
-Pour résilier votre service [Veeam Cloud Connect](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-### Public Cloud <a name="publiccloud"></a>
-
-Chaque service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) peut être supprimé en cliquant sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
-
-![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
-
-Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
-
-Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/compute/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
-
-### Web Cloud <a name="webcloud"></a>
-
-#### Nom de domaine <a name="domain"></a>
-
-> [!primary]
->
-> Suite à votre résiliation et à la fin de l'abonnement en cours, votre nom de domaine générique (.com, .org. net, etc.) vous reste « réservé » pendant la période dite « de « *grâce* » (5 jours) puis pendant celle de « *rédemption* » (35 à 40 jours supplémentaires), ce qui signifie que vous seul serez en mesure de le renouveler pendant ces périodes.
->
-
-Pour résilier votre [nom de domaine](https://www.ovhcloud.com/fr/domains/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-#### Hébergement Web <a name="hosting"></a>
-
-Pour résilier votre [hébergement Web](https://www.ovhcloud.com/fr/web-hosting/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
+Cliquez ensuite sur le bouton `...`{.action} à droite de la plateforme Sharepoint à résilier, puis sur `Résilier`{.action}.
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
@@ -179,82 +114,13 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 Il n'y a pas de résiliation possible avant échéance sur les offres [SSL sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/), étant donné qu'elles ne sont pas renouvelées automatiquement. Il vous suffira donc de ne pas les renouveler à la prochaine échéance.
 
-#### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
-
-Pour résilier votre offre [Web Paas](https://www.ovhcloud.com/fr/web-paas/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-#### Web Cloud Databases <a name="webclouddatabases"></a>
-
-Pour résilier votre offre [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-#### E-mail MX Plan <a name="mxplan"></a>
-
-Une offre MX Plan n'est pas soumise à un abonnement périodique. Elle ne peut donc pas faire l'objet d'une résiliation mais, si tel est votre souhait, vous pouvez supprimer votre offre.
-
-Pour supprimer votre offre [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Supprimer immédiatement le MX Plan`{.action}.
-
-Précisez les raisons de votre demande de suppression puis cliquez sur `Valider`{.action}.
-
-Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors envoyé, vous permettant de valider la suppression immédiate.
-
-> [!warning]
->
-> La suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes. L'action de supprimer un MX Plan n'octroie aucun remboursement.
->
-
-#### E-mail Pro <a name="emailpro"></a>
-
-Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#supprimer-un-compte).
-
-#### Hosted Exchange <a name="hosted"></a>
-
-Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes).
-
-#### Private Exchange <a name="private"></a>
-
-Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes_1).
-
-#### Office 365 csp 1 <a name="office-csp1"></a>
-
-Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gerer-vos-abonnements).
-
-#### Office 365 csp 2 <a name="office-csp2"></a>
-
-Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerer-vos-abonnements).
-
-#### Sharepoint <a name="sharepoint"></a>
-
-Vous pouvez soit **supprimer** un compte individuel de votre plateforme [Sharepoint](https://www.ovhcloud.com/fr/collaborative-tools/sharepoint/), soit résilier la plateforme Sharepoint entière.
-Si vous souhaitez résilier la plateforme entière, nous vous conseillons de commencer par la suppression préalable de chaque compte individuel.
-
-* Pour supprimer un compte Sharepoint individuel, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez successivement sur `Microsoft`{.action}, `Sharepoint`{.action} puis sur votre plateforme Sharepoint.<br>
-Dans l'onglet `Utilisateurs`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer puis sur `Supprimer le compte`{.action}. Prenez connaissance des informations et cliquez sur `Valider`{.action}.
-
-* Pour résilier l'ensemble de votre plateforme Sharepoint, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite de la plateforme Sharepoint à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
-
-### Telecom <a name="telecom"></a>
-
-#### xDSL / FTTH <a name="xdsl"></a>
+#### Offre d'accès à Internet (FTTH / xDSL) <a name="xdsl"></a>
 
 Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-internet/), suivez les instructions de ce [guide](/pages/web_cloud/internet/internet_access/comment_resilier_mon_acces_xdsl).
 
 > [!warning]
 >
-> **Cas particulier**
+> **Cas d'une offre Pack SIP Trunk**
 >
 > Si vous souhaitez résilier une offre [Pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/), il vous faut **impérativement** créer une demande d'assistance auprès des équipes Support via votre espace client OVHcloud.
 >
@@ -262,14 +128,6 @@ Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-intern
 #### VoIP <a name="voip"></a>
 
 Pour résilier une offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce guide pour [résilier une ligne SIP ou Trunk](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-sip-trunk) ou pour [résilier un numéro alias](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-alias).
-
-#### OverTheBox <a name="otb"></a>
-
-Pour résilier votre service [OverTheBox](https://www.ovhtelecom.fr/overthebox/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 #### SMS <a name="sms"></a>
 
@@ -281,15 +139,25 @@ Si vous souhaitez supprimer un compte SMS, nous vous invitons à créer une dema
 
 Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-fax).
 
-### Solutions transverses <a name="transversal"></a>
+#### Managed Bare Metal <a name="managedbaremetal"></a>
 
-#### SSL Gateway <a name="ssl_gateway"></a>
+Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de [ce guide](/pages/bare_metal_cloud/managed_bare_metal/how-to-cancel).
 
-Pour résilier votre offre [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
+Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+#### Public Cloud <a name="publiccloud"></a>
+
+Chaque service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) peut être supprimé depuis l'onglet `Public Cloud`{.action} de l'espace client.
+
+Sélectionnez un service à gauche, cliquez sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
+
+![public cloud instance deletion](images/pci-deletion-fr.png){.thumbnail}
+
+Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (retrouvez plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
+
+Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/compute/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ## Comment annuler la résiliation de votre abonnement ? <a name="cancel"></a>
 
@@ -302,9 +170,41 @@ Pour annuler une demande de résiliation, connectez-vous à votre [espace client
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
 
-![cancel_termination](images/cancel_termination.png){.thumbnail}
+![cancel_termination](images/cancel_termination-fr.png){.thumbnail}
 
 Enfin, cliquez sur `Confirmer l'annulation`{.action}.
+
+L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page « Mes services » si vous voyez toujours le statut « Résiliation demandée ».
+
+## FAQ
+
+> [!faq]
+>
+> Je ne parviens pas à résilier un service. Que faire ?
+>> Si vous ne parvenez pas à résilier un service (le bouton `Résilier`{.action} n'est pas proposé), celui-ci peut faire partie des cas particuliers détaillés [plus haut dans ce guide](#specific-cases).
+>> Vérifiez également que les conditions suivantes sont bien remplies :
+>>
+>> - Vous devez être le « contact administrateur » du service. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
+>> - Le service est en **renouvellement automatique**. Si votre service est en [renouvellement manuel](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#auto-vs-manual), il sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
+>> - Le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture. Vérifiez que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
+>>
+>> Si vous ne parvenez toujours pas à résilier votre service, contactez nos équipes du support en ouvrant un ticket depuis le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help).
+> Comment résilier tous mes services ?
+>> Vous devez effectuer la procédure de résiliation pour chaque service de façon unitaire. Il n'est pas possible de résilier plusieurs services à la fois ou de demander une résiliation globale à nos équipes du support client.
+> Comment supprimer mon compte OVHcloud ?
+>> La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
+>>
+>> 1. Vous n'avez plus de services visibles dans la section « [Mes Services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
+>> 2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
+>> 3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+>> 4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+>>
+>> Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
+>>
+>> 1. Connectez-vous au [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+>> 2. Cliquez sur le bouton `Créer un ticket`{.action}
+>> 3. Sélectionnez le motif `Gérez votre compte client OVHcloud`
+>> 4. Précisez `Je veux fermer mon compte client OVHcloud` et suivez les étapes décrites.
 
 ## Aller plus loin <a name="gofurther"></a>
 

@@ -5,7 +5,7 @@ updated: 2022-07-07
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -22,17 +22,17 @@ W związku z operacjami, które przeprowadzasz w Panelu klienta, ważne jest roz
 
 Informacje dotyczące **serwerów DNS** oraz ich modyfikacja znajdziesz w przewodniku "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
 
-![DNS](images/dnsserver.png){.thumbnail}
+![DNS](images/dns-server.png){.thumbnail}
 
 Jeśli powtórzymy powyższy przykład, po wpisaniu adresu *mydomain.ovh*, zostaną przesłuchane **serwery DNS** powiązane z tą nazwą domeny. Serwery zawierają **strefę DNS** domeny *mojadomena.ovh*, w której podano adres IP hostingu *mydomain.ovh*. Dzięki temu Twoja przeglądarka może wyświetlić stronę internetową *mojadomena.ovh* zawartą na hostingu. Nazywamy to rozdzielczością DNS.
 
-![DNS](images/dnssolve.gif){.thumbnail}
+![DNS](images/dns-resolution.gif){.thumbnail}
 
 ### Strefa DNS 
 
 Strefa DNS domeny to plik konfiguracyjny składający się z **rekordów**. Umożliwiają one powiązanie domeny z serwerami hostującymi Twoje usługi internetowe, takimi jak strony WWW (poprzez rekord A) lub konta e-mail (rekord MX).
 
-![DNS](images/dnszone.png){.thumbnail}
+![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
 
 **Dowiedz się, jak edytować strefę DNS w Panelu klienta.**
 
@@ -64,7 +64,7 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Pojawi się tabela wyszczególniająca rekord DNS przypisany do Twojej domeny w OVHCloud dla każdego wiersza. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny. 
 
-![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
+![dnszone](images/tab.png){.thumbnail}
 
 ### Wpisy DNS
 
@@ -202,7 +202,7 @@ Aby dodać nowy rekord DNS w zakładce `Strefa DNS`{.action} Twojej domeny, klik
 
 Zalecamy uprzednie sprawdzenie, czy rekord ten nie istnieje i czy nie wskazuje na inny cel. W tym celu włącz sortowanie zawartości tabeli według typu rekordu i nazwy domeny. Jeśli rekord już istnieje, rekomendujemy jego zmianę zgodnie z procedurą opisaną poniżej.
 
-![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
+![dnszone](images/add-an-entry.png){.thumbnail}
 
 > Jeśli celem twojego rekordu jest adres URL, pamiętaj o zaznaczeniu tego adresu. W przeciwnym razie Twoja domena zostanie automatycznie dodana na końcu Twojej docelowej strony.
 >
@@ -214,7 +214,7 @@ Zalecamy uprzednie sprawdzenie, czy rekord ten nie istnieje i czy nie wskazuje n
 
 Aby zmienić rekord DNS, kliknij ikonkę `Strefa DNS`{.action} w Panelu klienta, `...`{.action} w tabeli po prawej stronie wybranego rekordu. Następnie kliknij `Zmień rekord`{.action}, po czym postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 
-![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
+![dnszone](images/modify-record.png){.thumbnail}
 
 #### Usunięcie rekordu DNS
 
@@ -222,7 +222,7 @@ Aby usunąć rekord DNS, kliknij ikonkę `Strefa DNS`{.action} w Panelu klienta 
 
 Możesz usunąć kilka rekordów za jednym razem, zaznaczając je w lewej części tabeli i klikając przycisk `Usuń`{.action}.
 
-![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+![dnszone](images/delete-record.png){.thumbnail}
 
 #### Zresetuj strefę DNS
 
@@ -233,7 +233,7 @@ Zresetuj strefę DNS:
 
 W zakładce `Strefa DNS`{.action} kliknij `Zresetuj strefę DNS`{.action}, a następnie postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlają.
 
-![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+![dnszone](images/reset-my-dns-zone.png){.thumbnail}
 
 Możesz wybrać:
 

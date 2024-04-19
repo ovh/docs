@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Shared Responsibility"
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Object Storage"
-updated: 2023-03-20
+updated: 2024-02-26
 ---
 
 ## Objectif
@@ -35,13 +35,16 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produce, route, deliver and maintain physical Instances and hosting buldings | I | RA |
+| Produce, route, deliver and maintain physical and virtuel Instances for service hosting | I | RA |
+| Create S3 credentials for an OpenStack user | RA |  |
 
-#### 2.2. Customer Information System setup
+#### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Create S3 credentials for an OpenStack user | RA |  |
+| Use S3 API to import data in bucket | RA |  |
+
+
 
 ### 3. Service usage
 

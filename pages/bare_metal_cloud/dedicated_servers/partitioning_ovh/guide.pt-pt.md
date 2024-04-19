@@ -8,7 +8,7 @@ updated: 2023-08-31
 
 > [!warning]
 >
-> This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on RAID software as well as Logical volume management (LVM).
+> This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on RAID software as well as Logical volume management (LVM)
 >
 
 With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/pt/bare-metal/), you can configure Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](https://api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
@@ -153,7 +153,8 @@ A partition layout is a list of partitions. Here is an example of a partition st
 
 > [!primary]
 >
-> >
+> order: is the partition order within the partition array
+>
 
 > [!primary]
 >
@@ -286,11 +287,11 @@ In order to improve customer experience, reduce OVHcloud support workload and to
 
 ## Go further <a name="gofurther"></a>
 
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
+
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
-
-[Choosing the disk group to install an operating system](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

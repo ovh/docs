@@ -1,11 +1,11 @@
 ---
-title: 'Aktywacja zapory systemowej'
-excerpt: 'Hosting www: Aktywacja zapory systemowej'
+title: "Aktywacja zapory systemowej"
+excerpt: "Hosting www: Aktywacja zapory systemowej"
 updated: 2021-04-26
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -37,7 +37,7 @@ Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?acti
 
 Następnie przejdź do zakładki `Informacje ogólne`{.action}. Aktualna `wersja globalna PHP` wyświetla się w strefie **Konfiguracja**. Kliknij przycisk `...`{.action} i wybierz `Zmień konfigurację`{.action}. W oknie, które się otworzy wybierz element `Zmień bieżącą`{.action} konfigurację i kliknij przycisk `Dalej`{.action}.
 
-![managephpconfig](images/manage-php-config.png){.thumbnail}
+![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
 
 W nowym oknie upewnij się, że **Aplikacja firewall** jest ustawiona na `Włącz`{.action}. Aby potwierdzić konfigurację, kliknij przycisk `Potwierdź`{.action}.
 
@@ -45,17 +45,17 @@ W nowym oknie upewnij się, że **Aplikacja firewall** jest ustawiona na `Włąc
 
 Kliknij zakładkę `MultiSite`{.action} w Twoim pakiecie hostingowym. Kliknij przycisk `...`{.action} po prawej stronie wybranej domeny i wybierz opcję `Zmień domenę`{.action}.
 
-![zapalenie skóry](images/firewall-modify-multisite.png){.thumbnail}
+![zapalenie skóry](images/modify-a-domain.png){.thumbnail}
 
 W oknie konfiguracji zaznacz kratkę `Włącz firewall`{.action}. Możesz również włączyć subdomenę `www` do tej konfiguracji, zaznaczając kratkę na górze.
 
 Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}, aby zmienić ustawienia MultiSite.
 
-![modyfydomain](images/firewall-modify-domain.png){.thumbnail}
+![modyfydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Sprawdź stan zadania aktywacji
 
-![zarządzanie w trakcie](images/firewal-ongoing-jobs.png){.thumbnail}
+![zarządzanie w trakcie](images/firewall-planned.png){.thumbnail}
 
 Zadania związane z aktualizacją konfiguracji MultiSite zostaną wymienione w zakładce `Operacje w toku`{.action} (status początkowy to "Zaplanowany"). Firewall będzie aktywny, gdy jego zadanie aktualizacji nie pojawi się już na liście.
 
@@ -63,7 +63,7 @@ Zadania związane z aktualizacją konfiguracji MultiSite zostaną wymienione w z
 
 Zakładka `MultiSite`{.action} w Twoim pakiecie hostingowym zawiera informacje o domenach, dla których aktywowana jest opcja firewalla.
 
-![gerageenabled](images/firewall-enabled-multisite.png){.thumbnail}
+![gerageenabled](images/firewall-enabled.png){.thumbnail}
 
 Wyświetlana tabela zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "Firewall" wyświetla się status aktywacji każdej domeny.
 

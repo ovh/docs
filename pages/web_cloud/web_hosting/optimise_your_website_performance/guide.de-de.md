@@ -1,7 +1,7 @@
 ---
 title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
-updated: 2022-02-03
+updated: 2024-01-08
 ---
 
 > [!primary]
@@ -63,9 +63,9 @@ Einige Servervariablen werden über die Verwendung von PHP-FPM geändert:
 |max_input_vars|2000|16000|
 |memory_limit|128 M|512 M|
 
-Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
+Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Die Datei _.ovhconfig_ befindet sich im Stammverzeichnis des Hosting-Pakets oder in einem Unterverzeichnis der Ebene 1 (z.B.: _/www/_), jedoch nicht in Verzeichnissen der Ebene 2 oder darunter (z.B.: _/www/test/_ , _/www/test/test2/_)
 
@@ -81,19 +81,26 @@ Es liegt an Ihnen, diejenigen auszuwählen, die Ihren spezifischen Anforderungen
 Weitere Details zu diesem Thema finden Sie unten in Schritt 5.
 
 ### Schritt 4: Optimieren Ihrer Skripte
+
 Vergleichen Sie die Grafiken der Ressourcennutzung Ihres Hostings (weitere Informationen unten), um den Ursprung der Verzögerungen zu ermitteln, und entnehmen Sie die Daten dieser Spitzenwerte aus den Protokollen.
 
 Sie können direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihre Logs, Statistiken und Verlaufsdiagramme zugreifen.
 
-So greifen Sie auf die Logs zu: Klicken Sie auf die Domain im Abschnitt `Hosting-Pakete`{.action}. Klicken Sie auf die Registerkarte `Mehr+`{.action} und wählen Sie dann `Statistiken und Logs`{.action}. Klicken Sie dann auf die angezeigten Links, um entweder auf die _Besucherstatistiken_ oder die _Logs_ zuzugreifen.
+Zugriff auf Statistiken und Logs:
 
-![logs](images/logs_highlighted.png){.thumbnail}
+1. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+3. Klicken Sie anschließend auf den Button `Die Statistiken anzeigen`{.action} angezeigt, um auf die Besucherstatistiken der Website zuzugreifen, oder auf `Die Logs einsehen`{.action}, um die für Ihr Webhosting verfügbaren Logs anzuzeigen.
 
-So greifen Sie auf die Hosting-Graphen zu: Klicken Sie auf die Domain im Abschnitt `Hosting-Pakete`{.action}. Scrollen Sie im Abschnitt `Allgemeine Informationen`{.action} bis zum Ende der Seite. Dort können Sie die Graphen zur Hosting-Nutzung einsehen.
+![logs](images/tab.png){.thumbnail}
 
-Sie können die Art der Informationen sowie den Zeitraum für die Visualisierung der Daten auswählen.
+Zugriff auf Nutzungsgraphen:
 
-![graphs](images/graphs_highlighted.png){.thumbnail}
+1. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+2. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Scrollen Sie bis zum Ende der Seite, um die Graphen zur Webhosting-Nutzung einzusehen.
+3. Wählen Sie den **Informationstyp** sowie den **Zeitraum** der angezeigten Daten aus.
+
+![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
 
 Welche verschiedenen Arten von Informationen können angezeigt werden?
 
@@ -213,7 +220,7 @@ Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenomme
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

@@ -133,7 +133,7 @@ root@rescue:~# nvme list
 
 #### Substituir o disco a frio (desligando o servidor)
 
-Para pedir a substituição de um disco, basta criar um ticket junto do serviço de apoio técnico, a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. De modo a acelerar o processo, é conveniente fornecer os elementos ligados aos testes. Aqui fica uma lista do que é preciso:
+Para pedir a substituição de um disco, basta criar um ticket junto do serviço de apoio técnico, a partir da [Centro de Ajuda](https://help.ovhcloud.com/csm?id=csm_get_help). De modo a acelerar o processo, é conveniente fornecer os elementos ligados aos testes. Aqui fica uma lista do que é preciso:
 
 - **O número de série do disco a substituir, bem como de todos os outros discos sem problemas**. Para obter o número de série do disco a substituir, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial). Se por alguma razão não conseguir obter o número de série do disco, queira mencioná-lo no ticket e comunicar-nos o número de série do(s) disco(s) a não substituir. 
 
@@ -196,9 +196,9 @@ Se possui um servidor em RAID por software, convém que execute manualmente a re
 
 ## Quer saber mais?
 
-[«RAID por software»](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
+[RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[«RAID por hardware» - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
+[RAID por hardware - EN](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
 
 [Modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

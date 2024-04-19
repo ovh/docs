@@ -1,11 +1,11 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2023-11-21
+updated: 2024-03-12
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -43,7 +43,7 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 > 
 > Jeśli posiadasz opcję CDN sprzed 19/11/2020, możesz zamówić nową usługę Shared CDN klikając na `Aktualizuj CDN do wyższej`{.action} wersji.
 
-![GeoCache](images/manage_CDN_01.png){.thumbnail}
+![GeoCache](images/order.png){.thumbnail}
 
 Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana kilka minut po jej opłaceniu.
 
@@ -53,24 +53,19 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![GeoCache](images/manage_CDN_01_02.png){.thumbnail}
+![GeoCache](images/activation.png){.thumbnail}
 
 > [!warning]
 > 
 > W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.<br>
 > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
-
  
-**Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?** <br>
-<br>
+**Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
+
 Funkcja GeoCache wykorzystuje zasadę działania IP Anycast. Użytkownik nie łączy się z tym samym serwerem z każdej lokalizacji, lecz z najbliższym, co pozwala bardzo skutecznie skrócić czas ładowania plików statycznych. Geolokalizacja adresu IP jest więc zbędna. <br>
 Jeśli chodzi o SEO (pozycjonowanie w wyszukiwarkach), szybkość wyświetlania strony ma większe znaczenie niż geolokalizacja adresu IP hostingu.
 
 ### Zarządzaj usługą Shared CDN 
-
-> [!primary]
-> 
-> Opcja shared CDN jest już zawarta w ofercie hostingu Performance lub dostępna w zamówieniu od 19/11/20. W przypadku starszych wersji, skorzystaj z punktu [Zarządzanie usługą CDN (wersja historyczna)](#cdnbusiness).
 
 #### Wyczyść cache usługi Shared CDN
 
@@ -78,7 +73,7 @@ Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, 
 
 Przejdź do karty `MultiSite`{.action} Twojego hostingu, kliknij `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Wyczyść CDN`{.action}.
 
-![GeoCache](images/manage_sharedCDN_01.png){.thumbnail}
+![GeoCache](images/sharedcdn-clear-cache.png){.thumbnail}
 
 #### Konfiguracja opcji usługi Shared CDN
 
@@ -88,7 +83,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 > 
 > Niektóre opcje są zablokowane dla oferty Basic i wymagają zamówienia usługi [CDN security](https://www.ovhcloud.com/pl/web-hosting/options/cdn/) lub [CDN Advanced](https://www.ovhcloud.com/pl/web-hosting/options/cdn/)
 
-![GeoCache](images/manage_sharedCDN_02.png){.thumbnail}
+![GeoCache](images/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Zawsze online**: Umożliwia przechowywanie danych CDN online w przypadku awarii serwera.
 
@@ -102,7 +97,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 Po wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
 
-![GeoCache](images/manage_sharedCDN_03.png){.thumbnail}
+![GeoCache](images/sharedcdn-option-settings.png){.thumbnail}
 
 ##### **Utwórz regułę cache** <a name="cacherules"></a>
 
@@ -110,7 +105,7 @@ Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do kar
 
 W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
-![GeoCache](images/manage_sharedCDN_04.png){.thumbnail}
+![GeoCache](images/sharedcdn-create-cache-rule.png){.thumbnail}
 
 - **Nazwa reguły**: Nadaj nazwę swojej regule.
 
@@ -124,7 +119,7 @@ Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 
 Reguły znajdują się na liście. Możesz zmienić regułę klikając na `...`{.action} po prawej stronie, a następnie na `Zmień regułę`{.action}; lub usunąć ją, klikając `Usuń regułę`{.action}.
 
-![GeoCache](images/manage_sharedCDN_05.png){.thumbnail}
+![GeoCache](images/sharedcdn-cache-rules.png){.thumbnail}
 
 Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
 
@@ -144,7 +139,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 	Po włączeniu funkcji kliknij `Edytuj listę zewnętrznych`{.action} zasobów, aby dodać domeny, które mogą współdzielić Twoje zasoby.
 
-	![GeoCache](images/manage_CDNsecurity_01.png){.thumbnail}
+	![GeoCache](images/security-cors.png){.thumbnail}
 
 	Po uzupełnieniu listy kliknij `Zatwierdź`{.action}.
 
@@ -156,13 +151,13 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 	Po włączeniu funkcji kliknij rozwijane menu, aby wybrać między stałym `przekierowaniem (301)` lub tymczasowym `przekierowaniem (302)`.
 
-	![GeoCache](images/manage_CDNsecurity_02.png){.thumbnail}
+	![GeoCache](images/security-https-redirect.png){.thumbnail}
 
 - **HTTP Strict Transport Security (HSTS)**: Zarządzaj dostępem do Twojej strony WWW za pomocą protokołu HTTPS. Rozwiązanie WWW jest więc zabezpieczone przed atakami przez retrogradację (lub ataki typu repli).
 
 	Po aktywacji funkcji określ okres, w którym przeglądarka zastosuje funkcję HSTS na Twojej stronie WWW. 
 
-	![GeoCache](images/manage_CDNsecurity_03.png){.thumbnail}
+	![GeoCache](images/security-hsts.png){.thumbnail}
 
 > [!primary]
 >
@@ -192,12 +187,12 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 - **Prefetch**: Przewiduj załadowanie tego zasobu. Prześlij ją automatycznie do pamięci cache CDN za pomocą *header link* Twojej strony WWW. Mechanizm ten jest używany przede wszystkim do ładowania CSS, JavaScript, zdjęć, plików wideo lub czcionek www, które są wymagane przez motyw strony internetowej. 
 
-	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hello", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
+	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hi", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
 
 	```	
 	<?php
 	header("Link: </cache/style.css>; rel=prefetch");
-	print Hello
+	print Hi
 	?> 
 	```
 
@@ -207,7 +202,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 	W zakładce MultiSite kliknij przycisk `...`{.action} po prawej stronie wpisu MultiSite, a następnie `Wyczyść CDN`{.action}. 
 
-	![GeoCache](images/manage_CDNadvanced_01.png){.thumbnail}
+	![GeoCache](images/advanced-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Zarządzanie umieszczeniem w pamięci cache treści, w oparciu o parametry (zwane również *Query String*) zapytania URL. W zależności od konfiguracji wybierz zachowanie pamięci cache CDN:
 	- *Wyłączone*: Zasoby są umieszczane w pamięci cache z ustawieniami bez sortowania. Co spowoduje na przykład utworzenie 2 iteracji w pamięci cache CDN dla 2 URL o tych samych parametrach w innej kolejności.
@@ -222,7 +217,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 	Listę tworzy się w dolnej części, wraz ze wszystkimi linkami, które masz na liście, możesz usunąć jeden z wybranych przez Ciebie, a następnie klikając `Usuń`{.action}.
 
-	![GeoCache](images/manage_CDNadvanced_02.png){.thumbnail}
+	![GeoCache](images/advanced-prewarm.png){.thumbnail}
 
 - **Cache rule**: Utwórz do 100 reguł. Określają one częstotliwość odświeżania bufora dla określonych zasobów na Twojej stronie. Aby uzyskać więcej informacji, zapoznaj się [z przewodnikiem](#cacherulesadv).
 
@@ -234,7 +229,7 @@ Aby dodać regułę cache do jednego z elementów Twojej strony, przejdź do kar
 
 W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
-![GeoCache](images/manage_CDNadvanced_03.png){.thumbnail}
+![GeoCache](images/advanced-create-cache-rule.png){.thumbnail}
 
 * **Nazwa reguły**: Nadaj nazwę swojej regule.
 * **Rodzaj zasobów**: Wybierz spośród poniższych opcji:
@@ -250,7 +245,7 @@ Po dokonaniu wyboru kliknij przycisk `Utwórz regułę`{.action}.
 
 Reguły znajdują się na liście. Możesz zmienić regułę klikając `...`{.action} po prawej stronie, po czym kliknij `Zmień regułę`{.action}. Możesz ją usunąć, klikając `Usuń regułę`{.action}.
 
-![GeoCache](images/manage_CDNadvanced_04.png){.thumbnail}
+![GeoCache](images/advanced-cache-rules.png){.thumbnail}
 
 Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.action}, a następnie `Zatwierdź konfigurację`{.action} w następnym oknie.
 
@@ -258,21 +253,7 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 W zakładce `MultiSite`{.action} Twojego hostingu, w tabeli możesz wyświetlić statystyki usługi CDN, wskazując liczbę zapytań na minutę zmierzonych w tym CDN.
 
-![GeoCache](images/manage_CDNstat_01.png){.thumbnail}
-
-### Zarządzaj usługą CDN Business <a name="cdnbusiness"></a>
-
-> [!primary]
-> 
-> Opcja CDN jest już zawarta w ofertach hostingu Performance lub w ofertach zamówionych przed 19/11/2020.
-
-#### Czyszczenie pamięci cache w GeoCache
-
-Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, zwłaszcza po wprowadzeniu zmian w plikach statycznych. Na przykład przy publikowaniu nowej wersji swojej witryny. Należy wówczas całkowicie wyczyścić pamięć podręczną w GeoCache.
-
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Wyczyść pamięć cache`{.action}.
-
-![GeoCache](images/manage_CDN_02.png){.thumbnail}
+![GeoCache](images/statistics.png){.thumbnail}
 
 ### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
 
@@ -295,6 +276,7 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. 
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
+
 > [!warning]
 >
 > Przeniesienie do pamięci cache za pomocą nagłówków HTTP umożliwia przechowywanie plików nie tylko w GeoCache, ale też w przeglądarkach Twoich użytkowników. Dlatego też zaleca się zmienianie nazw plików po każdym ich uaktualnieniu, aby internauci nie oglądali nieaktualnych wersji plików znajdujących się w pamięci cache.
@@ -321,7 +303,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![GeoCache](images/manage_CDN_03.png){.thumbnail}
+![GeoCache](images/deactivation.png){.thumbnail}
 
 ### Usuń opcję CDN na Twoim hostingu
 
@@ -329,7 +311,7 @@ Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
 Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
 
-![GeoCache](images/manage_CDN_04.png){.thumbnail}
+![GeoCache](images/resiliation.png){.thumbnail}
 
 Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
 

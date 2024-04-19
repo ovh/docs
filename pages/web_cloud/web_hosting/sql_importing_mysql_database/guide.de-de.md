@@ -1,7 +1,7 @@
 ---
 title: 'Backup in eine Webhosting-Datenbank importieren'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVHcloud Webhostings importieren.'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
  
 
@@ -49,13 +49,13 @@ Loggen Sie sich hierfür im [OVHcloud Kundencenter](https://www.ovh.com/auth/?ac
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, die Sie wieder auf eine ältere Version zurücksetzen möchten, und wählen Sie dann `Eine Sicherung wiederherstellen`{.action}. Bitte beachten Sie, dass der aktuelle Inhalt der Datenbank durch den Inhalt des ausgewählten Backups ersetzt wird.
 
-![Datenbankimport](images/database-import-step5.png){.thumbnail}
+![Datenbankimport](images/restore-backup.png){.thumbnail}
 
 Es werden Ihnen nun alle verfügbaren Backups der ausgewählten Datenbank angezeigt. In der Tabelle finden Sie das genaue Erstellungsdatum des jeweiligen Backups sowie das Datum, zu dem dieses vom OVHcloud Backup-Tool wieder gelöscht wird.
 
 Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie wiederherstellen möchten, und gehen Sie dann auf `Sicherung wiederherstellen`{.action}. Vergewissern Sie sich, dass die Informationen im angezeigten Fenster korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}. Warten Sie, bis die Wiederherstellung abgeschlossen ist.
 
-![Datenbankimport](images/database-import-step6.png){.thumbnail}
+![Datenbankimport](images/restore-the-backup.png){.thumbnail}
 
 ### Eigene Backup-Datei über das Kundencenter importieren
 
@@ -63,7 +63,7 @@ Loggen Sie sich hierfür im [OVHcloud Kundencenter](https://www.ovh.com/auth/?ac
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie nun auf die drei Punkte rechts neben der Datenbank, in die Sie die Daten importieren möchten, und wählen Sie dann `Datei importieren`{.action}.
 
-![Datenbankimport](images/database-import-step1.png){.thumbnail}
+![Datenbankimport](images/import-file.png){.thumbnail}
 
 Wählen Sie im angezeigten Fenster `Eine neue Datei importieren`{.action} und klicken Sie anschließend auf `Weiter`{.action}.
 
@@ -72,13 +72,13 @@ Wählen Sie im angezeigten Fenster `Eine neue Datei importieren`{.action} und kl
 > Über den Button `Bestehende Datei verwenden`{.action} können Sie die Daten einer bereits an das Import-Tool versendeten Datei erneut importieren.
 >
 
-![Datenbankimport](images/database-import-step2.png){.thumbnail}
+![Datenbankimport](images/database-import-step-1-new-file.png){.thumbnail}
 
 Geben Sie einen Dateinamen ein (über den Sie das Backup zu einem späteren Zeitpunkt finden und wiederherstellen können). Wählen Sie dann unter `Datei` die Backup-Datei der Datenbank auf Ihrem Computer aus. Klicken Sie auf `Absenden`{.action}.
 
 Warten Sie, bis die Meldung erscheint, dass die Datei erfolgreich übermittelt wurde, und klicken Sie dann auf `Weiter`{.action}.
 
-![Datenbankimport](images/database-import-step3.png){.thumbnail}
+![Datenbankimport](images/database-import-step-2-new-file.png){.thumbnail}
 
 Wenn Sie möchten, können Sie nun die angezeigten Zusatzoptionen auswählen:
 
@@ -88,7 +88,7 @@ Wenn Sie möchten, können Sie nun die angezeigten Zusatzoptionen auswählen:
 
 Nachdem Sie Ihre Auswahl getroffen haben, klicken Sie auf `Bestätigen`{.action} und warten Sie, bis der Import abgeschlossen ist.
 
-![Datenbankimport](images/database-import-step4.png){.thumbnail}
+![Datenbankimport](images/database-import-step-3.png){.thumbnail}
 
 ### Backup über das phpMyAdmin-Webinterface importieren
 
@@ -96,7 +96,7 @@ Loggen Sie sich auf phpMyAdmin ein, um den Import durchzuführen. Loggen Sie sic
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie auf die drei Punkte rechts neben der betreffenden Datenbank und gehen Sie dann auf `Zugang zu phpMyAdmin`{.action}.
 
-![Datenbankimport](images/database-import-step7.png){.thumbnail}
+![Datenbankimport](images/go-to-phpmyadmin.png){.thumbnail}
 
 Geben Sie im phpMyAdmin-Webinterface die Informationen zu Ihrer Datenbank ein, wählen Sie über das Drop-down-Menü die aktuellen Daten der Datenbank (Current) und loggen Sie sich ein. Gehen Sie nach dem Login auf den Tab `Importieren`{.action} und vervollständigen Sie die angeforderten Informationen. Zur Erinnerung: Die Backup-Datei darf eine bestimmte Größe nicht überschreiten.
 
@@ -166,5 +166,9 @@ cat name_backup_datei.sql | mysql --host=server_adresse --user=name_benutzer--pa
 Achten Sie außerdem darauf, die allgemeinen Informationen des Beispielbefehls mit den spezifischen Informationen der betreffenden Datenbank zu ersetzen. Wir empfehlen Ihnen, nach dem Import die Backup-Datei aus dem Verzeichnis, in das Sie sie hochgeladen haben, zu löschen.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

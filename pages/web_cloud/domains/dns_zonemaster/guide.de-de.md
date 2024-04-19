@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Verwendung von Zonemaster
-updated: 2023-06-06
+updated: 2024-03-08
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ updated: 2023-06-06
 
 ## Ziel
 
-[Zonemaster](https://zonemaster.net/) ist ein Tool, das aus der Zusammenarbeit zwischen der [AFNIC](https://www.afnic.fr/en/) (französische Registry) und der [Swedish Internet Foundation](https://internetstiftelsen.se/en/) (Schwedische Registry) hervorgegangen ist. So können Sie die DNS-Konfiguration (Domain Name System) einer Domain analysieren und herausfinden, welche Elemente verbessert oder korrigiert werden können.
+[Zonemaster](https://zonemaster.net/en/run-test) ist ein Tool, das aus der Zusammenarbeit zwischen der [AFNIC](https://www.afnic.fr/en/) (französische Registry) und der [Swedish Internet Foundation](https://internetstiftelsen.se/en/) (Schwedische Registry) hervorgegangen ist. So können Sie die DNS-Konfiguration (Domain Name System) einer Domain analysieren und herausfinden, welche Elemente verbessert oder korrigiert werden können.
 
 > [!primary]
 >
@@ -33,7 +33,7 @@ Mit dem Zonemaster Tool können Sie entweder eine vorhandene DNS-Konfiguration e
 
 Um die aktuelle Konfiguration einer Domain zu überprüfen, geben Sie Ihren Domainnamen ein und klicken Sie dann auf `Run`{.action}.
 
-![Screenshot aus dem Zonemaster-Formular. Die Domain "mydomain.ovh" wurde eingegeben und ist bereit, getestet zu werden.](images/zonemaster01.png){.thumbnail}
+![Screenshot aus dem Zonemaster-Formular. Die Domain "domain.tld" wurde eingegeben und ist bereit, getestet zu werden.](images/run-domain-test.png){.thumbnail}
 
 Um eine DNS-Konfiguration zu überprüfen, die für die betreffende Domain erstellt, aber noch nicht angewandt wurde, aktivieren Sie das Feld `Options`{.action} und geben Sie folgende Angaben ein:
 
@@ -42,17 +42,17 @@ Um eine DNS-Konfiguration zu überprüfen, die für die betreffende Domain erste
 
 Sie können auch die Überprüfung eines bestimmten IP-Protokolls erzwingen, indem Sie `Disable IPv4` und `Disable IPv6` verwenden.
 
-> **Beispiel**:<br><br> Sie besitzen die Domain "mydomain.ovh", die aktuell die DNS-Server "dns19.ovh.net" und "ns19.ovh.net" verwendet. 
+> **Beispiel**:<br><br> Sie besitzen die Domain "domain.tld", die aktuell die DNS-Server "dnsXX.ovh.net" und "nsXX.ovh.net" verwendet. 
 >
-> Sie haben eine DNS-Zone für diese Domain auf den DNS-Servern "mydns.test.ovh"und "mydns2.test.ovh" konfiguriert.<br>
-> Bevor Sie die DNS-Server ändern, können Sie eine erweiterte Suche mithilfe des Feldes `Options`{.action} durchführen, indem Sie "mydns.test.ovh"und "mydns2.test.ovh" jeweils als DNS-Server in `Nameservers` eingeben.<br>
-> Zonemaster führt einen Test durch und simuliert dabei die Nutzung der Server "mydns.test.ovh" und "mydns2.test.ovh" mit "mydomain.ovh".<br>
-> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die beiden Namensserver "mydns.test.ovh" und "mydns2.test.ovh" wurden im Abschnitt "Namensserver" des Formulars eingetragen.](images/zonemaster02.png){.thumbnail}
+> Sie haben eine DNS-Zone für diese Domain auf den DNS-Servern "dns1.test.tld"und "dns2.test.tld" konfiguriert.<br>
+> Bevor Sie die DNS-Server ändern, können Sie eine erweiterte Suche mithilfe des Feldes `Options`{.action} durchführen, indem Sie "dns1.test.tld"und "dns2.test.tld" jeweils als DNS-Server in `Nameservers` eingeben.<br>
+> Zonemaster führt einen Test durch und simuliert dabei die Nutzung der Server "dns1.test.tld" und "dns2.test.tld" mit "domain.tld".<br>
+> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die beiden Namensserver "dns1.test.tld" und "dns2.test.tld" wurden im Abschnitt "Namensserver" des Formulars eingetragen.](images/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Wenn Sie eine Domain angeben und auf die Buttons `Fetch NS from parent zone`{.action} und `Fetch DS from parent zone`{.action} klicken, erscheinen die der Domain zugewiesenen DNS-Server sowie die Informationen zum DS-Eintrag (DNSSEC), wenn dieser konfiguriert ist.
-> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die Schaltfläche „Fetch NS from parent zone“ ist hervorgehoben und die Nameserver der Domain „mydomain.ovh“ sind im Abschnitt „Nameservers“ des Formulars vorab ausgefüllt.](images/zonemaster03.png){.thumbnail}
+> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die Schaltfläche „Fetch NS from parent zone“ ist hervorgehoben und die Nameserver der Domain „domain.tld“ sind im Abschnitt „Nameservers“ des Formulars vorab ausgefüllt.](images/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Ergebnis
 
@@ -65,7 +65,7 @@ Sobald das Formular validiert wurde, werden die Ergebnisse nach Testgruppen ange
 
 Für jeden Test können weitere Einzelheiten ermittelt werden, zum Beispiel zum Verständnis des Fehlers bei einer Fehlfunktion, oder nur zur Information.
 
-![Screenshot der Ergebnisseite von Zonemaster für die Domain „mydomain.ovh“. Der Abschnitt „Address“ wird erweitert.](images/zonemaster04.png){.thumbnail}
+![Screenshot der Ergebnisseite von Zonemaster für die Domain „domain.tld“. Der Abschnitt „Address“ wird erweitert.](images/domain-analysis.png){.thumbnail}
 
 ### Nützliche Informationen
 

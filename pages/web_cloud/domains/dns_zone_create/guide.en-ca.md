@@ -1,7 +1,7 @@
 ---
 title: Creating an OVHcloud DNS zone for a domain name
 excerpt: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
-updated: 2023-07-21
+updated: 2024-03-11
 ---
 
 ## Objective
@@ -59,16 +59,16 @@ On the page that appears, enter the domain name (*domain.tld*), for which you wo
 
 If a message appears notifying you that the DNS zone cannot be created, check that the domain name meets the necessary requirements, or ask the person managing it to do this for you. Once everything is correct, try again.
 
-![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
+![dnszonecreate](images/adding-a-dns-zone.png){.thumbnail}
 
 Once the verification is complete, choose whether to enable the minimum records for the DNS zone you are going to create. This choice is not definitive, as you can always [edit DNS zone records](/pages/web_cloud/domains/dns_zone_edit) later.
 
-![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
+![dnszonecreate](images/adding-a-dns-zone-step-2.png){.thumbnail}
 
 |Enable minimal entries?|Details|
 |---|---|
-|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.</br>![minimal-dns-entries](images/minimal.png){.thumbnail}|
-|No|Select this option if you plan to use OVHcloud services as a [web hosting](https://www.ovhcloud.com/en-ca/web-hosting/){.external}, with the zone preconfigured for this purpose.</br>![no-minimum-dns-entries](images/no_minimal.png){.thumbnail}|
+|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.</br>![minimal-dns-entries](images/dashboard-minimal-entries.png){.thumbnail}|
+|No|Select this option if you plan to use OVHcloud services as a [web hosting](https://www.ovhcloud.com/en-ca/web-hosting/){.external}, with the zone preconfigured for this purpose.</br>![no-minimum-dns-entries](images/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Once you have chosen your DNS zone, follow the steps until you have created it.
 
@@ -99,7 +99,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 On the page that appears, the DNS servers that you need to use with your domain name to enable the OVHcloud DNS zone will appear below `Name Servers`{.action}.
 
-![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
+![dnszonecreate](images/name-servers.png){.thumbnail}
 
 Once you have the information, **edit your domain name’s DNS servers in the interface of the service provider managing your domain name**. Once you have configured your domain name, you will need to allow a maximum of **48 hours** for the changes to propagate fully.
 

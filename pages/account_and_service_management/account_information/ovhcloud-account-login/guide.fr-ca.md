@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l'espace client OVHcloud"
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
-updated: 2021-07-01
+updated: 2024-02-27
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ La gestion de vos services s'effectue principalement via l'espace client OVHclou
 
 ### Se connecter à l'espace client OVHcloud
 
-Rendez-vous sur [la page d'authentification OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, renseignez votre identifiant client (ou votre adresse e-mail principale) et votre mot de passe.
+Rendez-vous sur [la page d'authentification OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, renseignez votre adresse e-mail principale et votre mot de passe.
 
 ![identifiant client](images/log-in.png){.thumbnail}
 
@@ -29,30 +29,7 @@ Si vous avez activé la [double authentification](/pages/account_and_service_man
 
 ### Que faire si je ne parviens pas à me connecter ? <a name="login-failure"></a>
 
-La suite de ce guide vous donne des méthodes pour résoudre les cas fréquents d'échecs de connexion à l'espace client OVHcloud.
-
-#### Je ne connais pas mon identifiant client, comment le retrouver ?
-
-L'identifiant client OVHcloud, qui se présente sous la forme **xx11111-ovh**, vous sera invariablement demandé lorsque vous vous connecterez à votre compte ou que vous contacterez l'assistance technique d'OVHcloud. Vous pouvez le retrouver de différentes manières.
-
-##### **Dans les e-mails envoyés par OVHcloud**
-
-Votre identifiant client est renseigné sur l'e-mail de confirmation de création du compte, les messages de confirmation de commande ou de renouvellement, ainsi que dans les notifications de connexion à votre compte.
-
-##### **Sur mes factures**
-
-Votre identifiant client est renseigné en haut à droite sur toutes vos factures.
-
-![identifiant client](images/nichandle01b.png){.thumbnail}
-
-##### **Se connecter sans identifiant**
-
-Si vous ne retrouvez pas votre identifiant, sachez que vous pouvez vous connecter en utilisant l'adresse e-mail principale (à la place de l'identifiant)que vous avez renseignée dans votre compte.
-
-Une fois connecté, vous pourrez prendre note de votre identifiant qui est affiché dans votre espace client, en cliquant sur votre nom en haut à droite.
-<br>Il apparaît sous votre adresse e-mail principale.
-
-![identifiant client](images/nic-handle.png){.thumbnail}
+La suite de ce guide vous donne des méthodes pour résoudre les cas fréquents d'échec de connexion à l'espace client OVHcloud.
 
 ### J'ai perdu mon mot de passe
 
@@ -64,11 +41,15 @@ Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peu
 
 Si vous avez renseigné une adresse e-mail de secours, vous pouvez contacter le support OVHcloud au 1-855-684-5463 afin que cette adresse de secours devienne l'adresse e-mail principale.
 
-Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account_and_service_management/account_information/all_about_username#backup-email) dans votre compte.
+Une fois cette action effectuée, il est essentiel de [renseigner une nouvelle adresse e-mail de secours](/pages/account_and_service_management/account_information/all_about_username#backup-email) dans votre compte.
 
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 
-Dans ce cas de figure, vous pouvez utiliser les codes de secours de la double authentification, utiliser un autre périphérique, ou désactiver la double authentification.
+Dans ce cas de figure, vous pouvez :
+
+- utiliser les code de secours actifs que vous avez sauvegardés ;
+- utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs ;
+- désactiver la double authentification.
 
 Consultez les démarches appropriées sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner) ».
 

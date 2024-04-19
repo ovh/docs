@@ -1,34 +1,41 @@
 ---
 title: Comment résilier un accès xDSL/FTTH
 excerpt: Découvrez comment demander la résiliation de votre accès Internet
-updated: 2022-10-10
+updated: 2024-01-09
 ---
 
 ## Objectif
 
-Votre offre d'accès à Internet ne vous convient plus, vous pouvez en demander la résiliation depuis votre espace client OVHcloud.
+Si votre offre d'accès à Internet ne vous convient plus, vous pouvez en demander la résiliation depuis votre espace client OVHcloud.
 La résiliation sera effective à la prochaine facturation de votre accès à Internet. Les instructions pour retourner votre modem vous seront envoyées par e-mail.
+
+> [!success]
+> Si vous souhaitez changer d'offre, consultez notre guide « [Comment changer mon offre xDSL/FTTH](/pages/web_cloud/internet/internet_access/comment_changer_mon_offre_xdsl) ».
 
 ## Prérequis
 
 - Disposer d'un accès xDSL/FTTH actif.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+
+![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 > [!primary]
 > La résiliation d'un [pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/) doit faire l'objet d'une [« demande d'assistance »](https://www.ovh.com/manager/dedicated/index.html#/support/tickets) via l'espace-client OVHcloud afin que les équipes du support la mettent en place.
-> 
+>
 
 ## En pratique
 
 ### Demander la résiliation
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`, puis sélectionnez votre pack dans le menu `Accès Internet`.
-<br>Cliquez alors sur le bouton `Résilier`{.action} dans le cadre « Informations Générales ».
+
+Cliquez alors sur le bouton `Résilier`{.action} dans le cadre « Informations Générales ».
 
 ![Resiliation acces](images/Resiliation01-edit-2022.png){.thumbnail}
 
 Si vous êtes toujours engagé pour cet accès, le montant des frais de résiliation sera indiqué dans la rubrique « Restant à payer ».
-<br>Choisissez la date souhaitée pour cette résiliation ainsi que la raison de cette dernière.
+
+Choisissez la date souhaitée pour cette résiliation ainsi que la raison de cette dernière.
 
 ![Raison resiliation](images/Resiliation02-edit-2022.png){.thumbnail}
 

@@ -52,7 +52,7 @@ ls -la
 
 Deve obter os diretórios conforme indicado na seguinte imagem:
 
-![alojamento](images/3078.png){.thumbnail}
+![alojamento](images/terminal-ls-la-svn.png){.thumbnail}
 
 ### Criação das chaves públicas / privadas
 
@@ -86,7 +86,7 @@ Seguir a chave criada anteriormente, tudo na mesma linha.
 > Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
-![alojamento](images/3080.png){.thumbnail}
+![alojamento](images/terminal-homez-folder.png){.thumbnail}
 
 Poderá recuperar o conteúdo do depósito sem no entanto se ligar diretamente através de SSH na máquina.
 
@@ -113,7 +113,7 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 - Crie um diretório, clique com o botão direito e selecione "SVN Checkout". 
 - Introduza `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` no campo "URL of repository" e clique em `OK`:
 
-![alojamento](images/3081.png){.thumbnail}
+![alojamento](images/checkout.png){.thumbnail}
 
 Existe uma excelente documentação em inglês para a Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 

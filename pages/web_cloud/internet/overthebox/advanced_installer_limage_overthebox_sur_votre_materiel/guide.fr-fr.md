@@ -1,7 +1,7 @@
 ---
 title: "Installer l'image OverTheBox sur votre matériel"
-excerpt: "Découvrez comment installer une image OverTheBox manuellement sur votre matériel"
-updated: 2023-11-21
+excerpt: "Découvrez comment installer manuellement une image OverTheBox sur votre matériel"
+updated: 2024-02-27
 ---
 
 ## Objectif
@@ -179,7 +179,7 @@ Dans cet exemple, on identifie que la destination d'installation sera **mmcblk0*
 
 #### Téléchargez l'image OverTheBox
 
-La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.net/stable/](http://downloads.overthebox.ovh/stable/){.external}
+La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.net/stable/](http://downloads.overthebox.net/stable/){.external}
 
 ```bash
 wget http://downloads.overthebox.net/stable/v5.0.1/targets/x86/64/latest.img.gz

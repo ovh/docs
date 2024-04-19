@@ -5,7 +5,7 @@ updated: 2023-02-23
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
   
 ## Wprowadzenie
@@ -35,19 +35,19 @@ Jeśli jeszcze tego nie zrobiłeś, zalecamy aktywację HTTPS Twojej strony WWW,
 
 Zaloguj się do Twojego interfejsu administracyjnego, wpisując `/wp-admin` lub `/wp-login` na pasku wyszukiwania po adresie URL Twojej domeny (przekierowanie odbywa się automatycznie):
 
-![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
+![Admin page of WordPress](images/admin-login.png){.thumbnail}
 
 W menu po lewej stronie przejdź do `Wtyczki`{.action}, następnie kliknij `Dodaj nową`{.action}:
 
-![Dashboard, Wtyczki, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
+![Dashboard, Wtyczki, Add new](images/plugins.png){.thumbnail}
 
 Na nowej stronie `Dodaj wtyczki`{.action}, wprowadź "woocommerce" na pasku wyszukiwania w prawym górnym rogu, następnie kliknij `Zainstaluj`{.action} w ramce rozszerzenia **WooCommerce**:
 
-![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
+![Install WooCommerce](images/add-plugin-woocommerce-install-now.png){.thumbnail}
 
 Kliknij na `Włącz`{.action}:
 
-![Activate WooCommerce](images/wordpress-woocommerce-first-steps_4.png){.thumbnail}
+![Activate WooCommerce](images/add-plugin-woocommerce-activate.png){.thumbnail}
 
 ### Konfiguracja 
 
@@ -55,27 +55,27 @@ Kliknij na `Włącz`{.action}:
 
 Jeśli jeszcze nie skonfigurowałeś Twojego rozszerzenia **WooCommerce**, asystent konfiguracji pomoże Ci podać informacje dotyczące Twojej strony WWW. Wpisz formularz i kliknij na `Kontynuuj`{.action}:
 
-![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps_5.png){.thumbnail}
+![Setup Wizard - Store Details](images/woocommerce-store-details.png){.thumbnail}
 
 Wybierz domenę lub domeny:
 
-![Setup Wizard - Industry](images/wordpress-woocommerce-first-steps_6.png){.thumbnail}
+![Setup Wizard - Industry](images/woocommerce-industry.png){.thumbnail}
 
 Wybierz rodzaj produktów, które chcesz sprzedać na swojej stronie www (niektóre opcje są płatne):
 
-![Setup Wizard - Product Types](images/wordpress-woocommerce-first-steps_7.png){.thumbnail}
+![Setup Wizard - Product Types](images/woocommerce-product-types.png){.thumbnail}
 
 Następnie podaj rodzaj działalności:
 
-![Setup Wizard - Business Details](images/wordpress-woocommerce-first-steps_8.png){.thumbnail}
+![Setup Wizard - Business Details](images/woocommerce-business-details.png){.thumbnail}
 
 Dodaj opcje dodatkowe (i darmowe):
 
-![Setup Wizard - Business Details, free features](images/wordpress-woocommerce-first-steps_9.png){.thumbnail}
+![Setup Wizard - Business Details, free features](images/woocommerce-business-details-2.png){.thumbnail}
 
 Na koniec wybierz temat spośród zaproponowanych:
 
-![Setup Wizard - Choose a theme](images/wordpress-woocommerce-first-steps_10.png){.thumbnail}
+![Setup Wizard - Choose a theme](images/woocommerce-theme.png){.thumbnail}
 
 **WooCommerce** zachęca Cię do utworzenia konta, aby korzystać z rozszerzenia **Jetpack**, automatycznie instalowanego rozszerzenia poza rozszerzeniem **WooCommerce**. To konto jest opcjonalne. Będziesz miał dostęp do ograniczonych funkcji **Jetpack** bez konieczności logowania.
 
@@ -85,17 +85,17 @@ Twój sklep internetowy jest teraz skonfigurowany z parametrami ogólnymi.
 
 Kliknij na `Wtyczki`{.action}, aby wyświetlić zainstalowane rozszerzenia, a następnie na `Zainstalowane wtyczki`. Wyświetli się lista rozszerzeń. Kliknij na `Ustawienia`{.action} w module **WooCommerce** :
 
-![Setup Wizard - Rozszerzenie, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
+![Setup Wizard - Rozszerzenie, WooCommerce, Settings](images/plugins-woocommerce.png){.thumbnail}
 
 Możesz również uzyskać dostęp do tych ustawień, klikając bezpośrednio na `WooCommerce`{.action}, a następnie na `Ustawienia`{.action}:
 
-![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps_12.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings](images/dashboard-woocommerce-settings.png){.thumbnail}
 
 ### Regulacje
 
 Strona ustawień zawiera kilka zakładek:
 
-![Setup Wizard - WooCommerce, Settings, Tabs](images/wordpress-woocommerce-first-steps_13.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, Tabs](images/woocommerce-general.png){.thumbnail}
 
 #### Ogólne
 
@@ -108,7 +108,7 @@ W zakładce tej możesz zdefiniować następujące elementy:
 - kupony
 - dane pieniężne (waluta lokalizacji, wyświetlanie).
 
-![Setup Wizard - WooCommerce, Settings, General tab](images/wordpress-woocommerce-first-steps_14.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, General tab](images/woocommerce-general-currency.png){.thumbnail}
 
 #### Produkty
 

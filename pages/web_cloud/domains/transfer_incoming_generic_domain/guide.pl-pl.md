@@ -1,12 +1,14 @@
 ---
 title: 'Transfer domeny do OVHcloud'
 excerpt: "Dowiedz się, jak wykonać transfer domeny do OVHcloud"
-updated: 2023-06-22
+updated: 2024-01-31
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wprowadzenie
 
@@ -50,17 +52,17 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 |Etapy|Opis|Kto wykonuje działanie?|Gdzie?/Jak?|Czas realizacji|
 |---|---|---|---|---|
-|1|Weryfikacja informacji związanych z domeną|Administrator domeny|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
-|2|Odblokowanie domeny i pobranie kodu transferu|Administrator domeny, za zgodą właściciela|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
-|3|Wniosek o transfer domeny|Każda osoba posiadająca kod transferu, za zgodą właściciela|U nowego operatora (np. OVHcloud)|W zależności od podjętych przez Ciebie działań|
-|4|Zatwierdzenie transferu|U obecnego operatora domeny|Na prośbę organizacji zarządzającej rozszerzeniem Twojej domeny|Maksymalnie 5 dni|
+|[1](#step1)|[Weryfikacja informacji związanych z domeną](#step1)|Administrator domeny|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
+|[2](#step2)|[Odblokowanie domeny i pobranie kodu transferu](#step2)|Administrator domeny, za zgodą właściciela|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
+|[3](#step3)|[Wniosek o transfer domeny](#step3)|Każda osoba posiadająca kod transferu, za zgodą właściciela|U nowego operatora (np. OVHcloud)|W zależności od podjętych przez Ciebie działań|
+|[4](#step4)|[Zatwierdzenie transferu|U obecnego operatora domeny](#step4)|Na prośbę organizacji zarządzającej rozszerzeniem Twojej domeny|Maksymalnie 5 dni|
 
 > [!warning]
 >
 > Dokładna procedura transferu domeny może się różnić, w szczególności w przypadku niektórych **TLD** kodu kraju (**ccTLD**, takich jak .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz niektórych specjalnych **TLD** (.am, .fm, itp.). W zależności od rozszerzenia Twojej domeny, mogą być konieczne dodatkowe wymagania. Zalecamy sprawdzenie w pierwszej kolejności informacji wyświetlanych dla danego rozszerzenia na naszej stronie internetowej: <https://www.ovhcloud.com/pl/domains/tld/>.
 >
 
-### Etap 1: weryfikacja informacji związanych z domeną
+### Etap 1: weryfikacja informacji związanych z domeną <a name="step1"></a>
 
 **W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](https://www.ovhcloud.com/pl/domains/whois/). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
 
@@ -73,7 +75,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 > Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją domenę, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia [Whois](https://www.ovhcloud.com/pl/domains/whois/){.external}.
 >
 
-### Etap 2: odblokowanie domeny i pobranie kodu transferu
+### Etap 2: odblokowanie domeny i pobranie kodu transferu <a name="step2"></a>
 
 Po sprawdzeniu informacji dotyczących domeny konieczne jest jej odblokowanie.  Operacja ta może zostać przeprowadzona wyłącznie we współpracy z aktualnym operatorem.  Zalecamy kontakt z operatorem i uzyskanie informacji o przebiegu procedury.
 
@@ -86,7 +88,7 @@ Pamiętaj, że OVHcloud nie jest operatorem Twojej domeny w momencie rozpoczęci
 > Po odblokowaniu Twojej domeny otrzymasz siedem (7) dni na transfer do OVHcloud. Po tym czasie Twoja domena zostanie automatycznie zablokowana, jeśli nie złożysz wniosku o zmianę operatora domeny.
 >
 
-### Etap 3: zlecić transfer domeny do OVHcloud
+### Etap 3: zlecić transfer domeny do OVHcloud <a name="step3"></a>
 
 Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić transfer domeny do OVHcloud z [naszej strony](https://www.ovhcloud.com/pl/domains/){.external}. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
 
@@ -125,7 +127,7 @@ Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po 
 >
 > Jeśli kod transferu nie został wpisany podczas składania zamówienia, możesz go wpisać w oknie `Operacje w toku`{.action}, aby potwierdzić operację.
 
-### Etap 4: potwierdzenie transferu przez aktualnego operatora
+### Etap 4: potwierdzenie transferu przez aktualnego operatora <a name="step4"></a>
 
 Po zatwierdzeniu zamówienia i kodu transferu aktualny operator (którym nie jest jeszcze OVHcloud) otrzyma prośbę o zatwierdzenie. Możliwych jest kilka scenariuszy w zależności od podjętych działań.
 

@@ -45,32 +45,32 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 >>
 >> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
 >> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden Dienstes aus. Gehen Sie zum Tab `E-Mails`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
->> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Passwort ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button `...`{.action} und dann auf `Passwort ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **MX Plan E-Mail (neue Version)**
 >>
 >> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
 >> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden Dienstes aus. Gehen Sie zum Tab `E-Mails`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
->> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button `...`{.action} und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **E-Mail Pro**
 >>
 >> Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie den Dienstnamen aus. Gehen Sie zum Tab `E-Mail Accounts`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
->> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button `...`{.action} und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Klicken Sie auf `Microsoft`{.action}, dann `Exchange`{.action} und wählen Sie den Dienstnamen aus. Gehen Sie zum Tab `E-Mail Accounts`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
->> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button `...`{.action} und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 
 ### Passwort über Webmail ändern
 
-Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebote unter Verwendung von **OWA** (**O**utlook **W**eb **A**pplication) verfügbar:
+Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebote unter Verwendung von **OWA** (**O**utlook **W**eb **A**pp) verfügbar:
 
 - MX Plan E-Mail (Neue Version)
 - E-Mail Pro

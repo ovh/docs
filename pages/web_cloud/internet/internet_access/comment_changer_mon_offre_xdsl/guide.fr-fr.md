@@ -1,6 +1,6 @@
 ---
 title: Comment changer mon offre xDSL/FTTH
-updated: 2023-02-16
+updated: 2024-01-09
 ---
 
 ## Objectif
@@ -11,6 +11,9 @@ Vous pouvez faire évoluer votre offre xDSL/FTTH afin de pouvoir accéder à de 
 
 - Disposer d'un accès xDSL/FTTH actif.
 - Disposer d'une offre éligible au changement d'offre.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+
+![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 > [!primary]
 > Le changement d'offre n'est pas disponible sur les offres SDSL.
@@ -26,7 +29,7 @@ Les options suivantes ne peuvent pas être conservées en tant qu'**options incl
 - EcoFax Pro
 - Compte(s) Exchange
 
-Lors d'un changement d'offre vers les nouvelles offres FTTH Pro et xDSL Pro, vous pourrez soit résilier ces options ou choisir de les conserver aux tarifs en vigueur.
+Lors d'un changement d'offre vers les nouvelles offres FTTH Pro et xDSL Pro, vous pourrez choisir de résilier ces options ou de les conserver aux tarifs en vigueur.
 
 ### Changer d’offre
 

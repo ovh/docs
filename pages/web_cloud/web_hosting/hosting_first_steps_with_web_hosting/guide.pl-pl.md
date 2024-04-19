@@ -1,176 +1,215 @@
 ---
-title: "Pierwsze kroki z hostingiem OVHcloud"
-excerpt: "Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu"
-updated: 2023-11-16
+title: "Hosting WWW - Jak rozpocząć korzystanie z usługi w kilku etapach"
+excerpt: "Poznaj pierwsze kroki, które pozwolą Ci połączyć Twoją domenę, zamieścić w Internecie stronę WWW i utworzyć konta e-mail na Twoim hostingu"
+updated: 2024-02-08
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie 
 
-Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliwia on zbudowanie strony opartej na gotowych rozwiązaniach (WordPress, PrestaShop, Joomla!, Drupal) lub własnej strony WWW działającej na stale dostępnych serwerach OVHcloud. Dziękujemy za zaufanie. Przewodnik, który dla Ciebie udostępniamy, zawiera informacje, jak w prosty sposób stworzyć własną stronę internetową.
+OVHcloud oferuje [kilka ofert hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/). Są one przeznaczone do różnych zastosowań:
 
-**Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu.**
+- Rozpocznij działalność online.
+- Szybkie tworzenie strony WWW (firmowej lub nie), bloga, **C**ontent **M**anagement **S**ystem (**CMS**), np. *WordPress*, *Joomla!*, *PrestaShop* lub *Drupal*, a także sklep internetowy.
+- Spersonalizuj jeden lub więcej adresów e-mail powiązanych z nazwą domeny, której chcesz użyć na Twojej stronie WWW.
+- Zarządzanie kilkoma stronami WWW w ramach jednego hostingu.
+- Posiadanie jednej lub kilku baz danych [zawartych w niektórych pakietach hostingowych OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)).
+- itp.
+
+Te oferty oszczędzają na zarządzaniu utrzymaniem, aktualizacjami i bezpieczeństwem infrastruktury hostingowej WWW.<br>
+Pozwalają one zaoszczędzić czas potrzebny na "administrowanie serwerem" i skupić się wyłącznie na:
+
+- rozwój, aktualizacja i bezpieczeństwo strony WWW, bloga, CMS'a lub sklepu internetowego;
+- bezpieczeństwo i optymalizacja jednej lub kilku baz danych (baz), jeśli oferta dysponuje;
+- Konfiguracja i zarządzanie adresami e-mail zawartymi w ofercie hostingu.
+
+**Dowiedz się, jak powiązać domenę, zamieścić w Internecie stronę WWW i utworzyć jeden lub więcej kont e-mail za pomocą hostingu.**
 
 ## Wymagania początkowe
 
-- Zakupienie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Zakupienie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 - Otrzymanie wiadomości e-mail potwierdzającej uruchomienie usługi.
-- Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/){.external}, czyli adresu, pod którym dostępna będzie Twoja strona.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [nazwy domeny](https://www.ovhcloud.com/pl/domains/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
-> [!success]
+Celem niniejszego przewodnika jest wskazanie najważniejszych działań, jakie należy podjąć w związku z naszymi rozwiązaniami [hostingowymi web](https://www.ovhcloud.com/pl/web-hosting/). 
+Każdemu z tych działań będzie towarzyszyć jedno lub więcej łączy do konkretnych przewodników (związanych z danym działaniem).
+
+Możesz zatem używać tego przewodnika jako "repozytorium" możliwych działań od momentu subskrypcji Twojej oferty [hostingu web](https://www.ovhcloud.com/pl/web-hosting/) i w trakcie jej używania.
+
+> [!primary]
+> 
+> Aby lepiej zrozumieć ten przewodnik, termin "strona internetowa" odnosi się obecnie do wszystkich rodzajów stron internetowych (strona internetowa, blog, CMS, sklep internetowy, itp.) wspomnianych powyżej w tym przewodniku.
 >
-> Zanim przejdziesz do dalszej lektury tego przewodnika, upewnij się, że nazwa domeny lub subdomeny, której chcesz użyć, jest poprawnie powiązana z Twoim hostingiem WWW OVHcloud. W tym celu zapoznaj się z przewodnikiem "[Udostępnienie hostingu WWW OVHcloud kilku stronom WWW](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
->
 
-### Etap 1: Wybór projektu WWW
+**Podsumowanie:**
 
-Chcesz stworzyć blog czy sklep internetowy? Dzielić się swoją pasją czy promować w Internecie własny biznes? A może chcesz przenieść istniejącą już stronę na serwer OVH? Aby z sukcesem zrealizować projekt, należy jasno określić swój cel.
+- [Etap 1 - Określenie rozmiaru projektu](#project-delimitation)
+- [Etap 2 - instalacja strony www](#website-installation)
+- [Etap 3 - Tworzenie kont e-mail (opcjonalnie)](#email-creation)
+- [Etap 4 - Sprawdź i/lub zmodyfikuj konfigurację Twojej domeny](#domain-configuration)
+- [Etap 5 - Inne opcje dostępne w ramach hostingu www](#other-options)
 
-Dzięki hostingowi OVHcloud, możesz stworzyć nową stronę internetową lub przenieść istniejącą już stronę.
+### Etap 1 - Określenie rozmiaru projektu <a name="project-delimitation"></a>
 
-- **Tworzenie nowej strony internetowej**
+Zanim zaczniesz, koniecznie zidentyfikuj i jasno określ swoje potrzeby, zadając sobie następujące pytania: 
 
-Jeżeli posiadasz odpowiednią wiedzę w zakresie programowania, możesz sam stworzyć stronę internetową lub skorzystać z gotowych rozwiązań CMS (Content Management System). Pierwsze z podanych rozwiązań wymaga umiejętności technicznych, jednak daje możliwość stworzenia unikalnej strony WWW. Drugie rozwiązanie umożliwia skorzystanie z gotowego projektu strony bez konieczności posiadania umiejętności technicznych.
+- Czy muszę **utworzyć** czy **migrować** (z innego dostawcy hostingu) moją stronę WWW?
+- Czy potrzebuję jednej lub kilku baz danych(ów), aby uruchomić stronę WWW?
+- Czy potrzebuję jednego lub kilku spersonalizowanych adresów (adresów) e-mail powiązanych z moją domeną?
 
-OVHcloud udostępnia w Panelu klienta narzędzia umożliwiające automatyczną instalację wybranego systemu CMS: WordPress, PrestaShop, Drupal lub Joomla!. Jeżeli nie wiesz, który z systemów CMS wybrać, poniższe [zestawienie](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external} pomoże Ci podjąć decyzję. Jeżeli OVHcloud nie ma w swojej ofercie systemu CMS, który chcesz wykorzystać, możesz zainstalować go ręcznie na hostingu.
+W zależności od otrzymanych odpowiedzi sprawdź, czy oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/) odpowiada Twoim potrzebom, zanim przejdziesz dalej.
 
-- **Przenoszenie istniejącej już strony na serwer OVH**
+Jeśli nie znajdujesz, zapoznaj się z przewodnikiem "[Hosting: jak zmienić ofertę?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)".
 
-Przenoszenie strony może okazać się trudne, zwłaszcza jeżeli dotyczy ono świadczonych aktualnie usług, których przerwanie nie jest możliwe. Niniejszy przewodnik opisuje jedynie niektóre z etapów, które należy przeprowadzić w ramach przenoszenia usług. Aby zapoznać się z całym procesem przenoszenia strony internetowej zapraszamy do przeczytania przewodnika zatytułowanego [Przenoszenie strony internetowej na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
+### Etap 2 - instalacja strony www <a name="website-installation"></a>
 
-### Etap 2: instalacja strony internetowej
+Po zdefiniowaniu Twojego projektu możesz rozpocząć instalację strony WWW.
 
-Gdy projekt został już dokładnie określony, jedyne co pozostaje, to umieszczenie go na hostingu. Kolejny etap polega więc na umieszczeniu Twojej strony internetowej w sieci. W tym celu możesz skorzystać z trzech możliwości w zależności od czasu i umiejętności technicznych, którymi dysponujesz w tym zakresie.
+Istnieją dwa możliwe scenariusze: **migruj** istniejącą stronę WWW lub **utwórz** nową stronę WWW.
 
-#### W pełni automatyczna instalacja bez tworzenia bazy danych, dla osób nie posiadających wymaganych umiejętności technicznych
+#### Migracja Twojej strony WWW
 
-Rozwiązanie to wykorzystuje pre-instalowane moduły OVHcloud dostępne w Panelu klienta. Jest to narzędzie umożliwiające prostą i szybką instalację systemu CMS. OVHcloud przeprowadza instalację strony, a następnie przekazuje klientowi dane do logowania.
+Jeśli chcesz przenieść stronę WWW z innego dostawcy hostingu, zapoznaj się bezpośrednio z naszym przewodnikiem "[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Znajdziesz tam wszystkie kluczowe etapy migracji bez przerwy w działaniu wszystkich Twoich usług (nazwa domeny, strona WWW, adres(y) e-mail, etc.).
 
-Aby instalacja modułu OVHcloud była możliwa, upewnij się, że katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej). Aby dokonać szybkiej instalacji modułu, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Moduły`{.action} wybierz opcję `Dodaj moduł`{.action}.
+#### Załóż nową stronę www
 
-![Dostęp do modułów](images/access_to_the_1_click_modules_section.png){/thumbnail}
+W takim przypadku masz do wyboru kilka rozwiązań.
 
-Aby rozpocząć instalację modułu, wybierz CMS, który chcesz zainstalować i upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} nie jest zaznaczone. Następnie kliknij `Instalacja`{.action}.
+##### Przypadek nr 1 - Umieszczenie w Internecie strony WWW zbudowanej lokalnie
 
-Teraz należy jedynie czekać na wiadomość e-mail z potwierdzeniem zainstalowania modułu i informacjami dotyczącymi logowania się na stronę. Następnie możesz przeprowadzić poniższe etapy.
+W takim przypadku zachęcamy do zapoznania się bezpośrednio z naszym przewodnikiem "[Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". Znajdziesz tam wszystkie etapy do wykonania:
 
-Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVHcloud dostępnych z automatyczną instalacją, zapoznaj się z dokumentacją: [Instalacja strony za pomocą modułów](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
+- umieszczenie strony WWW na przestrzeni dyskowej FTP Twojego hostingu;
+- stworzyć bazę danych powiązaną z Twoim hostingiem ;
+- umieszczenie lokalnej bazy danych w bazie danych powiązanej z Twoim hostingiem;
+- powiązać bazę danych ze stroną WWW zainstalowaną na Twoim hostingu.
 
-#### W pełni automatyczna instalacja z przygotowywaniem bazy danych, dla osób nie posiadających wymaganych umiejętności technicznych
+##### Przypadek nr 2 - Stwórz stronę WWW za pomocą systemu CMS
 
-Rozwiązanie to wykorzystuje moduły OVHcloud — narzędzie umożliwiające prostą instalację systemu CMS. OVHcloud instaluje stronę dzięki spersonalizowanym informacjom dostarczanym przez klienta (np. personalizacja danych do logowania do CMS). Rozwiązanie to wymaga, aby hosting posiadał co najmniej jedną bazę danych.
+OVHcloud udostępnia opcję "Moduły za 1 kliknięciem".<br>
+Po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i za pomocą hostingu możesz szybko zainstalować systemy CMS *WordPress*, *Joomla!*, *PrestaShop* i *Drupal*.
 
-Aby instalacja modułu OVHcloud była możliwa, koniecznie upewnij się, że:
-
-- katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej);
-- baza danych została już utworzona na Twoim hostingu (w tym celu wybierz zakładkę `Bazy danych`{.action}, a następnie opcję `Stwórz bazę danych`{.action}).
-
-Aby utworzyć bazę danych, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Bazy danych`{.action} wybierz opcję `Stwórz bazę danych`{.action}. Uzupełnij wymagane informacje, a następnie zaczekaj na zakończenie instalacji.
-
-![Dostęp do modułów OVHcloud ](images/create_a_database.png){/thumbnail}
-
-Gdy baza danych została już utworzona, wybierz zakładkę `Moduły`{.action}, by przeprowadzić instalację modułu, a następnie wybierz opcję `Dodaj moduł`{.action}. Wybierz CMS, który chcesz zainstalować i upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} nie jest zaznaczone, następnie wybierz opcję `Instalacja`{.action}.
-
-![Dostęp do modułów OVHcloud](images/access_to_the_1_click_modules_section.png){/thumbnail}
-
-Wpisz wymagane informacje aż do rozpoczęcia instalacji modułu. Teraz należy jedynie czekać na wiadomość e-mail z potwierdzeniem instalacji, a następnie przeprowadzić wskazane poniżej etapy.
-
-Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVHcloud dostępnych za pomocą 1 kliknięcia, zapoznaj się z dokumentacją: [Instalacja strony za pomocą modułów](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
-
-#### Konfiguracja ręczna, wymagane umiejętności techniczne
-
-Rozwiązanie to stosowane jest w przypadku tworzenia lub przenoszenia strony internetowej bez wykorzystywania modułów OVHcloud. Konieczne jest posiadanie plików strony internetowej, którą chcesz zainstalować. Należy zalogować się ręcznie do przestrzeni dyskowej, aby wgrać pliki strony internetowej, a następnie, o ile to możliwe, połączyć ją z uprzednio utworzoną bazą danych.
-
-Biorąc pod uwagę, że strony internetowe mogą się w znaczącym stopniu od siebie różnić, nie ma uniwersalnego sposobu postępowania, jednak możemy pokierować Cię w zakresie hostingu OVHcloud przy użyciu naszej dokumentacji: [Umieszczanie strony w sieci](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} oraz [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, o ile jest on wykorzystywany. Gdy strona zostanie już ręcznie zainstalowana na hostingu, przeprowadź wskazane poniżej etapy.
-
-### Etap 3: tworzenie adresów e-mail
-
-Możesz pominąć ten etap, jeżeli nie chcesz korzystać z adresów e-mail wchodzących w skład Twojego [pakietu hostingowego](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby stworzyć jeden lub kilka adresów e-mail, upewnij się najpierw, że jesteś zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `E-maile`{.action} wybierz opcję `Załóż adres e-mail`{.action}.
-
-![Załóż adres e-mail](images/create_an_email_address.png){/thumbnail}
-
-Wpisz wymagane informacje aż do utworzenia adresu e-mail. Powtórz ten etap, aby utworzyć większą liczbę adresów. Jeżeli jesteś w trakcie przenoszenia Twoich adresów e-mail na serwer OVHcloud, skorzystaj z naszego narzędzia [OVH Mail Migrator](https://omm.ovh.net/){.external}, które pomoże Ci wykonać wszystkie kroki. 
-
-Jeżeli chcesz otrzymać więcej informacji dotyczących tworzenia adresu e-mail lub przenoszenia usług do OVHcloud, zapoznaj się z dokumentacją: [Tworzenie konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external} oraz [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, o ile jest on wykorzystywany.
-
-### Etap 4: weryfikacja lub modyfikacja konfiguracji domeny
-
-Na tym etapie hosting OVHcloud powinien być już zainstalowany, a adresy e-mail utworzone. Możliwe, że adresy te nie są jeszcze funkcjonalne, jeżeli konfiguracja nazwy domeny nie jest prawidłowa. Konfiguracja ta powiązana jest z rekordami DNS, które gwarantują dostępność strony internetowej i odbiór wiadomości wysyłanych na Twoje adresy e-mail w nazwie domeny.
-
-Na przykład osoby odwiedzające Twoją stronę internetową wpisują do przeglądarki adres Twojej strony (Twoją nazwę domeny). W tym momencie następuje rozpoznawanie nazw DNS. Jest to proces umożliwiający przypisanie nazwy domeny do serwera, na którym znajduje się Twoja strona internetowa. Korelacja ta możliwa jest dzięki informacjom wskazanym w strefie DNS: jest to rodzaj katalogu, w którym zarejestrowana została konfiguracja Twojej domeny.
-
-Jeżeli zakupiłeś nazwę domeny wraz z hostingiem OVHcloud i nie dokonałeś żadnej modyfikacji w strefie DNS z Panelu klienta OVHcloud, możesz przejść do kolejnego etapu. W przeciwnym wypadku, lub jeżeli nie masz całkowitej pewności co do wykonywanych działań, zalecamy pozostanie na obecnym etapie.
-
-#### Typy rekordów DNS w OVHcloud 
-
-Istnieje wiele rekordów DNS dostępnych w OVHcloud. Skupimy się w szczególności na dwóch z nich — tych, które zagwarantują dostępność Twojej strony internetowej i otrzymywanie wiadomości wysłanych na Twoje adresy e-mail.
-
-- **Rekord A, dla strony internetowej**
-
-Aby sprawdzić rekord A, którego należy użyć w strefie DNS Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj adres IP, który znajduje się obok `IPv4`{.action}.
-
-![Zmień rekord A](images/know_the_OVH_A_records.png){/thumbnail}
-
-- **Rekordy MX, dla adresów e-mail**
-
-Aby sprawdzić rekordy MX, których należy użyć w strefie Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj informacje, które znajdują się obok `Rekordów MX`{.action}. Rekordy te mogą różnić się w zależności od filtra DNS, który postanowiłeś zastosować.
-
-![Zmień rekordy MX](images/know_the_OVH_MX_records.png){/thumbnail}
-
-#### Sprawdzanie lub modyfikowanie rekordów DNS
-
-Teraz, gdy znasz już typy rekordów powiązane z Twoim hostingiem OVHcloud, należy je sprawdzić lub zmienić, jeżeli to konieczne. Czynności, które należy przeprowadzić zależą od projektu, który realizujesz.
-
-- **Zakup domeny wraz z hostingiem OVH**
-
-Konfiguracja Twojej domeny jest już prawidłowa. Przejdź do następnego etapu. Jeżeli natomiast dokonałeś zmian w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w strefie DNS Twojej domeny, może okazać się, że konfiguracja jest nieprawidłowa.
- 
-Aby uzyskać dostęp do strefy DNS Twojej domeny OVHcloud wybierz sekcję `Domeny`{.action} Kliknij nazwę danej domeny. Następnie w zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje.
-
-- **Domena nie korzystająca ze strefy DNS OVH**
- 
-Sprawdź strefę DNS Twojej domeny u usługodawcy, który nią zarządza. Jeżeli to konieczne, zmodyfikuje niezbędne informacje.
-
-- **Przenoszenie usług (stron internetowych i adresów e-mail) na serwer OVHcloud**
-
-W takim przypadku zmiany wprowadzone w DNS mogą spowodować brak dostępności usług, jeżeli są przeprowadzane w nieodpowiednim momencie. Zgodnie z różnymi etapami opisanymi w dokumentacji [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, zmiana serwerów DNS domeny powinna odbywać się na końcu procesu.
+Aby skorzystać z tej opcji, zapoznaj się z naszym przewodnikiem "[Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 > [!primary]
 >
-> Zmiana w strefie DNS staje się widoczna po czasie wynoszącym od 4 do maksymalnie 24 godzin.
+> Jeśli wolisz ręcznie zainstalować CMS bez korzystania z opcji "Moduły za 1 kliknięciem", zapoznaj się z naszą dokumentacją "[Ręczna instalacja CMS na hostingu](/pages/web_cloud/web_hosting/cms_manual_installation)".
 >
 
-### Etap 5: personalizacja strony internetowej
+### Etap 3 - Tworzenie kont e-mail (opcjonalnie) <a name="email-creation"></a>
 
-Twoja strona jest już dostępna. Możesz pominąć ten etap, jeżeli przeniosłeś istniejącą stronę, która została już spersonalizowana! Jednak w przypadku gdy zainstalowałeś nową stronę internetową, na przykład za pomocą naszych modułów, możesz ją spersonalizować zmieniając jej tytuł i publikując Twoje pierwsze treści.
+Oferta [hostingu web](https://www.ovhcloud.com/pl/web-hosting/) zawiera co najmniej jeden adres e-mail, który możesz aktywować lub nie.
 
-Jeżeli chcesz otrzymać pomoc w zakresie funkcjonalności Twojej strony, zachęcamy do zapoznania się ze stroną jej wydawcy, na której znajdziesz przydatną dokumentację.
+Najpierw zapoznaj się z naszym przewodnikiem "[Aktywacja kont e-mail zawartych w hostingu](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
-### Etap 6: korzystanie z adresów e-mail
+Po włączeniu tej opcji zapoznaj się z naszym przewodnikiem "[Tworzenie konta e-mail w ramach usługi MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)", aby spersonalizować jeden lub więcej adresów e-mail (e-mail) z Twoją domeną.
 
-Możesz już korzystać z adresów e-mail. W tym celu OVHcloud udostępnia aplikację internetową (Webmail): RoundCube. Jest ona dostępna pod adresem <https://www.ovhcloud.com/pl/mail/>, gdzie uzyskasz informacje dotyczące danych do logowania na pocztę e-mail utworzoną na serwerze.
-Jeżeli chcesz otrzymać więcej informacji odnośnie korzystania z RoundCube, zapoznaj się z naszym przewodnikiem: [Korzystanie z RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Jeżeli chcesz skonfigurować adres e-mail na komputerze lub urządzeniu mobilnym (np. na smartphonie lub tablecie), zapoznaj się z dokumentacją dostępną na poniższej stronie: </products/web-cloud-email-collaborative-solutions-mx-plan>.
+> **Przypadki Szczegółowe:**
+>
+> - Jeśli przenosisz stronę WWW i/lub jeśli są to adresy e-mail powiązane z nazwą domeny Twojej strony WWW, zapoznaj się z naszym przewodnikiem "[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Znajdziesz tam wszystkie kluczowe etapy migracji bez przerwy w działaniu wszystkich Twoich usług (nazwa domeny, strona WWW, adres(y) e-mail, etc.).
+>
+> - Jeśli nie przypisałeś domeny podczas zamawiania hostingu i chcesz skorzystać z opcji "adres(y) e-mail zawarty(e) w Twoim hostingu", przeprowadź tę operację ręcznie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+### Etap 4 - Sprawdź i/lub zmodyfikuj konfigurację Twojej domeny <a name="domain-configuration"></a>
+
+Na tym etapie Twoja strona WWW musi być zainstalowana na hostingu, a Twoje konta e-mail utworzone. Elementy te mogą jeszcze nie działać, dopóki konfiguracja Twojej domeny z nowymi usługami nie zostanie zakończona.
+
+Połączenie między Twoją domeną i usługami (hosting, serwer e-mail, etc.) jest realizowane przede wszystkim za pomocą aktywnej strefy DNS Twojej domeny oraz zawartych w niej wpisów DNS.
+
+> [!primary]
+>
+> W pełni aktywna zmiana strefy DNS wymaga czasu propagacji, który wynosi od 4 do 24 godzin.
+>
+
+> **Przypadki Szczegółowe:**
+>
+> Jeśli migrujesz stronę WWW i/lub konta e-mail powiązane z nazwą domeny Twojej strony WWW, zapoznaj się z naszym przewodnikiem "[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Znajdziesz tam wszystkie kluczowe etapy migracji bez przerwy w działaniu wszystkich Twoich usług (nazwa domeny, strona WWW, adres(y) e-mail, etc.).
+
+Aby sprawdzić i/lub zmienić połączenie między Twoją domeną i hostingiem, **zapoznaj się z następującymi przewodnikami w kolejności:**
+
+- [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) : znajdziesz w nim wszystkie adresy IP naszej infrastruktury hostingu. Niniejszy przewodnik jest szczególnie przydatny w przypadku domen, których aktywna strefa DNS nie jest zarządzana w OVHcloud (lub zarządzana na innym koncie klienta OVHcloud niż Twoje).
+- [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite): Ten przewodnik wyjaśnia, jak dodać kilka domen do hostingu. Może również pomóc w sprawdzeniu, czy w zakładce `MultiSite`{.action} Twojego hostingu masz poprawną nazwę domeny. Jeśli jest taka potrzeba, możesz ją zmienić i zrobić to, co konieczne, w strefie DNS aktywnej dla Twojej domeny.
+- [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit): Niniejszy przewodnik wyjaśnia, jak edytować strefę DNS obecną w OVHcloud. Będzie Ci on przydatny, jeśli aktywna strefa DNS Twojej domeny znajduje się na innym koncie klienta OVHcloud niż Twoje. Może również służyć do zalogowania się do strefy DNS OVHcloud Twojej domeny, w celu sprawdzenia, czy adres IP (rekord wejściowy(e) typu *A* i/lub *AAAA*) zadeklarowany dla Twojej domeny w strefie DNS odpowiada adresowi IP Twojego hostingu.
+
+Aby zweryfikować i/lub zmodyfikować powiązanie między Twoją domeną i usługą e-mail OVHcloud, zapoznaj się z przewodnikiem "[Konfiguracja rekordu MX](/pages/web_cloud/domains/dns_zone_mx)" : znajdziesz w nim nazwy serwerów e-mail OVHcloud, ale również procedurę przekierowywania domeny na te serwery.
+
+> [!primary]
+>
+> Jeśli strefa DNS aktywna dla Twojej domeny nie jest zarządzana w OVHcloud:
+> 
+> - **W przypadku połączenia domeny z hostingiem** : zapoznaj się wyłącznie z przewodnikami "[Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" i "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)", które zostały wymienione powyżej, aby uzyskać adres IP hostingu WWW, i potwierdź poprawność wpisywania domeny na hostingu WWW. Następnie skontaktuj się z organizacją zarządzającą aktywną strefą DNS Twojej domeny, aby przekierować ją na Twój hosting.
+>
+> - **W celu utworzenia powiązania między Twoją domeną i usługą e-mail OVHcloud** : zapoznaj się wyłącznie z przewodnikiem "[Konfiguracja rekordu MX](/pages/web_cloud/domains/dns_zone_mx)", aby dowiedzieć się, jakie serwery e-mail OVHcloud należy wpisać w aktywnej strefie DNS Twojej domeny. Następnie skontaktuj się z organem zarządzającym aktywną strefą DNS Twojej domeny, aby przekierować ją na serwery e-mail OVHcloud.
+>
+
+### Etap 5 - Inne opcje dostępne w ramach hostingu www <a name="other-optionsn"></a>
+
+W zależności od [pakietu hostingowego](https://www.ovhcloud.com/pl/web-hosting/) dodatkowe opcje / oferty / funkcje są dostępne bezpłatnie.
+
+#### Certyfikaty SSL
+
+Certyfikaty SSL umożliwiają dostęp do Twojej strony WWW przy użyciu protokołu HTTPS. Protokół ten szyfruje ruch między Twoim hostingiem a osobami odwiedzającymi Twoją stronę WWW.
+
+Bez względu na [hosting web](https://www.ovhcloud.com/pl/web-hosting/) możesz aktywować bezpłatny certyfikat SSL **Let's encrypt**.
+
+Więcej informacji o certyfikatach SSL (bezpłatnych lub płatnych) oferowanych na hostingu znajdziesz w przewodniku "[Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
+
+#### Oferty CDN
+
+Wszystkie nasze oferty CDN pozwalają na umieszczenie w pamięci cache części Twojej strony WWW. Skraca to czas ładowania się stron WWW, zwłaszcza w przypadku użytkowników geograficznie oddalonych od centrum danych, w którym znajduje się Twój hosting.
+
+W ramach hostingu OVHcloud oferuje 3 oferty CDN:
+
+- **CDN Basic**
+- **CDN Security**
+- **CDN Advanced**
+
+Więcej informacji na temat ofert CDN znajdziesz w przewodniku "[Przewodnik dotyczący usługi CDN na hostingu www](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
+
+> [!primary]
+>
+> Oferta **CDN Basic** jest zawarta w cenie hostingu **Performance**.
+>
+> Nie można połączyć kilku usług CDN na tym samym hostingu.
+
+#### Serwery baz danych Web Cloud Databases
+
+Jeśli posiadasz hosting www **Performance**, możesz za darmo aktywować serwer bazy danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
+
+Więcej szczegółów na temat korzystania z tej usługi znajdziesz w przewodniku "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+
+#### Wysyłanie wiadomości z Twojej strony WWW
+
+Wszystkie nasze [hostingi](https://www.ovhcloud.com/pl/web-hosting/) umożliwiają wysyłanie e-maili z Twojej strony WWW lub konkretnego skryptu za darmo.
+
+Szczegółowe informacje na temat tej funkcji znajdziesz w przewodniku "[Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu](/pages/web_cloud/web_hosting/mail_function_script_records)".
+
+#### Zaplanowane zadania "CRON"
+
+Zadania "CRON" pozwalają na automatyczne wykonywanie skryptów zainstalowanych na Twoim hostingu.
+
+Jeśli w Twojej ofercie [hostingu web](https://www.ovhcloud.com/pl/web-hosting/) taka opcja jest dostępna, zapoznaj się z naszym przewodnikiem "[Tworzenie automatycznych zadań (CRON) na Twoim hostingu](/pages/web_cloud/web_hosting/cron_tasks)", aby uzyskać więcej szczegółów.
 
 ## Sprawdź również
 
-[Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Umieszczanie strony w sieci](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
-[Instalacja strony z modułu OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Tworzenie konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+[Tworzenie konta e-mail w ramach usługi MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
 
-[Korzystanie z RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
+[Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

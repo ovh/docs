@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Protect a directory or administration interface of your website with .htaccess and .htpasswd files"
 excerpt: "Find out how to protect a directory or administration interface by authenticating with .htaccess and .htpasswd files"
-updated: 2023-06-01
+updated: 2024-01-29
 ---
 
 ## Objective
@@ -57,10 +57,7 @@ We will explain the 4 main steps to take to protect access to a directory or all
 > The steps that follow will optimise the security of your hosted data.
 > Therefore, if your websites are compatible, we strongly recommend that you use the most recent PHP version possible.
 > 
-> To modify the PHP version of your websites on your web hosting plan, please refer to the following guides:
-> 
-> - [Modify your web hosting plan’s configuration](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [Change the PHP version of your web hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+> To modify the PHP version of your websites on your web hosting plan, please refer to our guide: [Web Hosting: Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 > The scripts and information described below in this tutorial only work with a runtime environment and a recent PHP version.
 > 
@@ -73,11 +70,11 @@ Log in to [the FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) o
 
 Create a "crypt.php" file in this root folder.
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root_folder](images/root-folder.png){.thumbnail}
 
 Open or create the website folder you want to protect. In our example below, it will be the "admin" folder. Create a ".htpasswd" file and a ".htaccess" file in this directory.
 
-![folder_admin](images/folder_admin.png){.thumbnail}
+![admin-folder](images/admin-folder.png){.thumbnail}
 
 To use the ".htaccess" and ".htpasswd" files correctly, you need to follow the following rules:
 

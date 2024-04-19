@@ -24,7 +24,7 @@ Puede añadir un servidor secundario o sustituir esta configuración por la suya
 ## Requisitos
 
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
-- Tener acceso de administrador (root) a la instancia a través de SSH o RDP.
+- Tener acceso de administrador (sudo) a la instancia a través de SSH o RDP.
 - Conocimientos básicos de red y administración.
 
 ## Procedimiento

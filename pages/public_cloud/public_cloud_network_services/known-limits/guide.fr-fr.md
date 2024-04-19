@@ -1,8 +1,27 @@
 ---
 title: Public Cloud Network Services - Limites connues
 excerpt: 'Prérequis et limites à respecter'
-updated: 2023-11-14
+updated: 2024-04-03
 ---
+
+## Projets Vrack et Public Cloud
+
+Pour un projet Public Cloud donné, vous ne pouvez attacher qu'un seul vRack. Si vous souhaitez créer un réseau privé entre 2 projets Public Cloud (ou plus), vous devez attacher le même vRack à ces projets Public Cloud.
+
+## Load Balancer Floating IP dans l'espace client OVHcloud
+
+Actuellement, la page détaillant le Load Balancer dans l'espace client OVHcloud ne contient pas l'adresse FLoating IP associée à un Load Balancer.
+
+Vous pouvez retrouver cette information :
+
+- dans [Horizon](/pages/public_cloud/compute/introducing_horizon) ;
+- via le [CLI OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)) en effectuant `openstack floating ip list` et `openstack loadbalancer list` ;
+- en utilisant l'API OVHcloud :
+
+> [!api]
+>
+> @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/loadbalancer/{loadBalancerId}
+>
 
 ## IP utilisées par les services
 

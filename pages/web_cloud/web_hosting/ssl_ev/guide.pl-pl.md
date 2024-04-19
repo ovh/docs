@@ -5,7 +5,7 @@ updated: 2023-06-08
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -65,7 +65,7 @@ Zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL 
 
 Wpisz poprawnie informacje wymagane przez **Sectigo**, zanim otrzymasz certyfikat SSL EV. 
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Kliknij polecenie `Dalej`{.action} raz **wszystkie elementy** poprawnie wprowadzone.
 
@@ -84,19 +84,19 @@ Postępuj zgodnie z poleceniem aż do płatności, aby potwierdzić zlecenie utw
 
 Jeśli jeszcze nie zamówiłeś domeny i przypisanego hostingu, przejdź do [strony głównej OVHcloud](https://www.ovhcloud.com/pl/), wpisz nazwę domeny w **formularz przeszukiwania przeznaczony do tego celu**, a następnie kliknij `Szukaj`{.action}, aby rozpocząć zamówienie.
 
-![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
+![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
 
 Następnie wybierz domenę, wybierz hosting oraz opcje, aż do etapu `Konfiguracja hostingu`.
 
 Wybierz moduł `moduł za 1 kliknięciem`{.action} i `CDN`{.action} i przejdź na dół strony, aż do sekcji `Zabezpiecz swoją stronę za pomocą naszych certyfikatów SSL`{.action}.
 
-![SSL EV order](images/ssl_ev_order.png){.thumbnail}
+![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
 
 Wybierz `Sectigo EV SSL`{.action} i kliknij `Dalej`{.action}.
 
 Na nowej stronie, która się wyświetla, wprowadź poprawnie informacje wymagane przez **Sectigo**, zanim certyfikat SSL EV zostanie wydany:
 
-![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
 
 Kliknij polecenie `Dalej`{.action} raz **wszystkie elementy** poprawnie wprowadzone.
 

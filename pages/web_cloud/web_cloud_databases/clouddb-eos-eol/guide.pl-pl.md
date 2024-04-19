@@ -1,10 +1,10 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2023-11-14
+updated: 2024-02-08
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -20,7 +20,6 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |MariaDB 10.11|Do określenia|Do określenia|Do określenia|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|Do określenia|Do określenia|Do określenia|
-|PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
 |PostgreSQL 14|Do określenia|Do określenia|Do określenia|

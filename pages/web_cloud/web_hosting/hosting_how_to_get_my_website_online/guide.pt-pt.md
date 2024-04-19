@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -29,7 +29,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 É primordial que tenha uma visão clara do seu objetivo para conduzir o projeto a bom porto. O que é que pretende fazer com o seu site? Como quer publicá-lo? Tem ao seu dispor várias possibilidades para concretizar o seu projeto num alojamento web da OVHcloud.
 
-- **Usar um site chave-na-mão graças aos módulos 1 clique da OVHcloud**: esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar que poderá personalizar (tema, textos, etc.). A OVHcloud disponibiliza quatro com os módulos 1 clique, a descobrir na página [“Criar um site com os módulos 1 clique”](https://www.ovhcloud.com/pt/web-hosting/uc-website/){.external}.
+- **Usar um site chave-na-mão graças aos módulos 1 clique da OVHcloud**: esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar que poderá personalizar (tema, textos, etc.). A OVHcloud propõe quatro já compatíveis com as nossas infraestruturas com os seus módulos 1 clique a descobrir na página web da OVHcloud ["Criar um site Internet com os módulos 1 clique"](https://www.ovhcloud.com/pt/web-hosting/uc-website/){.external}. Pode igualmente consultar o guia ["Instalar o seu site com os módulos 1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Usar um site chave-na-mão de instalação manual**: esta solução permite beneficiar de uma estrutura de site pronta a ser usada e personalizável (tema, textos, etc.), que deverá instalar no seu alojamento web da OVHcloud.
 
@@ -71,7 +71,7 @@ Para se ligar ao espaço de armazenamento, deve dispor dos seguintes elementos:
 
 Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
 
-![siteinstallation](images/get-website-online-step1.png){.thumbnail}
+![siteinstallation](images/tab-pro.png){.thumbnail}
 
 Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection). Caso tenha perdido a palavra-passe, consulte o manual [“Alterar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -95,7 +95,7 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 >
 > Um ficheiro "index.php" tomará sempre o controlo sobre um ficheiro "index.html". Por conseguinte, quando ambos estiverem presentes, apenas será chamado "index.php".
 
-![siteinstallation](images/get-website-online-step2.png){.thumbnail}
+![siteinstallation](images/root-folders.png){.thumbnail}
 
 ### 3 - Associar o site a uma base de dados
 
@@ -120,7 +120,7 @@ Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente
 
 Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
 
-![siteinstallation](images/get-website-online-step3.png){.thumbnail}
+![siteinstallation](images/tab.png){.thumbnail}
 
 #### 3.3. Importar a base de dados existente 
 

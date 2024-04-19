@@ -23,7 +23,7 @@ Da sich Ihre Bedürfnisse und die OVHcloud Dedicated Server Produktreihen ständ
 ## Voraussetzungen
 
 - Sie haben zwei [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, mit installiertem Betriebssystem.
-- Sie haben administrativen Zugriff (Root) auf Ihre Server.
+- Sie haben administrativen Zugriff (sudo) auf Ihre Server.
 - Sie verfügen über Systemadministrationskenntnisse.
 
 ## In der praktischen Anwendung

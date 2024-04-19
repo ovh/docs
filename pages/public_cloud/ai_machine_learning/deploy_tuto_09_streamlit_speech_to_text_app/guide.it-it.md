@@ -151,7 +151,7 @@ Find the address of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Log in on your shared registry with your usual OpenStack credentials:
+Log in on your shared registry with your usual AI Platform user credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
@@ -188,7 +188,7 @@ ovhai job run <shared-registry-address>/streamlit_app:latest \
 >
 > `--volume` allows you to specify what volume you want to add to your job. As mentioned, we add the volume `speech_to_text_app_models` and we put it in `RW` (read and write) mode since we want to add our models to this volume. If you do not have this volume in your Object Storage list, do not worry, it will be created automatically. As you can see, the `--volume` parameter also allows you to get files from a GitHub repository, which in our case contains the script to download the models.
 >
-> `--bash` allows you to provide commands through which you install the librairies mentioned in your `requirements.txt` file, and run the python script.
+> `--bash` allows you to provide commands through which you install the libraries mentioned in your `requirements.txt` file, and run the python script.
 >
 
 When you run this command, an `Info url` will appear. Opening it will allow you to **track the status of the job**.

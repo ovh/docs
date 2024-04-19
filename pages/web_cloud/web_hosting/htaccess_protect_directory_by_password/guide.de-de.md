@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Ordner und Verwaltungsinterface Ihrer Website mit den Dateien .htaccess und .htpasswd schützen"
 excerpt: "Erfahren Sie hier, wie Sie Verzeichnisse oder den Adminbereich Ihrer Website durch Authentifizierung mittels .htaccess und .htpasswd schützen"
-updated: 2023-06-01
+updated: 2024-01-29
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ Verwenden Sie hierzu zwei Apache-Konfigurationsdateien (HTTP), die im [FTP-Berei
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 > Die folgenden Beispiele sind in eine ".htaccess" Datei oder eine ".htpasswd" Datei einzufügen. Achtung, die Regeln, die Sie in diesen Dateien festlegen, haben direkte Auswirkungen auf Ihre Website. Überprüfen Sie systematisch die Regeln, die Sie hinzufügen, bevor Sie sie auf Ihrer Website anwenden. 
 > 
@@ -60,10 +60,7 @@ Wir erklären die 4 wichtigsten Schritte zum Schutz des Zugriffs auf ein Verzeic
 > Die folgenden Schritte optimieren die Sicherheit Ihrer gehosteten Daten.
 > Deshalb empfehlen wir Ihnen, wenn Ihre Websites kompatibel sind, die aktuellste Version von PHP zu verwenden.
 > 
-> Um die PHP-Version Ihrer Webseiten auf Ihrem Webhosting zu ändern, lesen Sie folgende Anleitungen:
-> 
-> - [Konfiguration eines Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [PHP-Version eines Webhostings ändern](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+> Um die PHP-Version Ihrer Webseiten auf Ihrem Webhosting zu ändern, lesen Sie unsere Anleitung „[Webhosting: Laufzeitumgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)“.
 >
 > Die hier beschriebenen Skripte und Informationen funktionieren nur im Modus "Produktion" und mit einer aktuellen PHP-Version.
 > 
@@ -76,11 +73,11 @@ Loggen Sie sich im [FTP-Bereich](/pages/web_cloud/web_hosting/ftp_connection) Ih
 
 Erstellen Sie die Datei "crypt.php" in diesem Wurzelverzeichnis.
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root_folder](images/root-folder.png){.thumbnail}
 
 Öffnen oder erstellen Sie den Ordner, dessen Zugang Sie sichern möchten. Im folgenden Beispiel ist das der Ordner "admin". Erstellen Sie in diesem Verzeichnis die Dateien ".htpasswd" und ".htaccess".
 
-![folder_admin](images/folder_admin.png){.thumbnail}
+![admin-folder](images/admin-folder.png){.thumbnail}
 
 Beachten Sie diese Regeln, um mit den Dateien ".htpasswd" und ".htaccess" korrekt umzugehen:
 

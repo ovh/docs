@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ There are many different types of website you can put online. Whether you are cr
 
 It is important to have a clear idea of your objective, for your project to succeed. What do you want to do with your website? How will you publish it? There are several ways to get your project off the ground with an OVHcloud web hosting plan.
 
-- **Using a turn-key website, with OVHcloud’s one-click modules**: this solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures, and they are detailed on the [Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules) page.
+- **Using a turn-key website, with OVHcloud’s one-click modules**: This solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures that are featured on the OVHcloud webpage ["How to create a website"](https://www.ovhcloud.com/asia/web-hosting/uc-website/){.external}. Please also see our guide ["Setting up your website with 1-click modules"](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Using a turn-key website that you install manually**: this solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), and you set it up yourself on your OVHcloud web hosting plan.
 
@@ -66,7 +66,7 @@ To log in to your storage space, you will need the following:
 
 These elements were sent to you in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
-![websitesetup](images/get-website-online-step1.png){.thumbnail}
+![websitesetup](images/tab-pro.png){.thumbnail}
 
 The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_change_password). If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -90,7 +90,7 @@ You may find a file called “index.html” in your storage space. This file may
 >
 > An "index.php" file will always take over an "index.html" file. Therefore, when both are present, only "index.php" will be called.
 
-![websitesetup](images/get-website-online-step2.png){.thumbnail}
+![websitesetup](images/root-folders.png){.thumbnail}
 
 ### Step 3: Connect your website to a database
 
@@ -115,7 +115,7 @@ If you want to create a new database with OVHcloud, log in to the [OVHcloud Cont
 
 Now click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Now follow the information shown.
 
-![websitesetup](images/get-website-online-step3.png){.thumbnail}
+![websitesetup](images/tab.png){.thumbnail}
 
 #### 3. Import the existing database
 

@@ -1,7 +1,7 @@
 ---
 title: "Attivare l'hosting gratuito 100M"
 excerpt: "Questa guida ti mostra come attivare il piano di Hosting gratuito 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 > [!primary]
@@ -32,11 +32,11 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro **Informazioni generali** visualizzi la voce *Hosting Web e email gratis*. Clicca sui tre puntini `...`{.action} a destra e poi su `Attiva`{.action}.
 
-![free100m](images/start10m-step1-01.png){.thumbnail}
+![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 
 Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la relativa tariffa. Quindi clicca su `Continua`{.action}. Allo **step 2**, seleziona le modifiche da apportare alla tua zona DNS.
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW: moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2023-11-30
+updated: 2023-12-13
 ---
 
 > [!primary]
@@ -62,13 +62,13 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Tabela z listą baz danych wyświetla się u dołu ekranu.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
 
 Zwróć uwagę, **dla bazy danych, która jest wysycona**, jego `Nazwa użytkownika` i `Adres serwera`, które są zawarte w tabeli zawierającej listę Twoich baz danych. 
 
 W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, która jest wysycona, a następnie kliknij `Dostęp do phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
 Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 
@@ -123,6 +123,11 @@ Po określeniu, czy zawartość Twoich tabel jest niezbędna czy nie, masz do wy
 #### Przypadki nr 1 - Cała zawartość tabeli jest niezbędna do prawidłowego działania Twojej strony WWW.
 
 Musisz zmienić bazę danych na większą bazę danych.
+
+> [!primary]
+>
+> Aby zwiększyć rozmiar bazy danych, musisz utworzyć nową, większą bazę danych i skopiować zawartość ze starej do nowej. Nie jest możliwe bezpośrednie zwiększenie rozmiaru bazy danych powiązanej z hostingiem.
+>
 
 Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](https://www.ovh.pl/cloud/cloud-databases/), aby wybrać nową usługę baz danych. 
 

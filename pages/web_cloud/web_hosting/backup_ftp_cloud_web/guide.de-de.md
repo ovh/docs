@@ -53,21 +53,21 @@ Um den Link zur Wiederherstellung zu erstellen, loggen Sie sich in Ihrem [OVHclo
 
 Wählen Sie den Tab `FTP - SSH`{.action} aus und klicken Sie rechts auf `Backup erstellen`{.action}.
 
-![backupftpcw](images/GenerateABackup.png){.thumbnail}
+![backupftpcw](images/generate-a-backup.png){.thumbnail}
 
 Wählen Sie im neu angezeigten Fenster eines der verfügbaren Backups aus und klicken Sie dann auf `Weiter`{.action}.
 
-![backupftpcw](images/GenerateABackup2.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
 
 Es erscheint ein zweites Fenster, in dem Sie darauf hingewiesen werden, dass Ihnen der Link zur Wiederherstellung der Backup-Datei per E-Mail gesendet wird und dass OVHcloud keine automatische Wiederherstellung auf Ihrem Cloud Web Hosting durchführen wird.
 
-![backupftpcw](images/GenerateABackup3.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Anfrage zu bestätigen.
 
 Wenn die Erstellung des Backups erfolgreich gestartet wurde, erscheint in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) folgende Nachricht:
 
-![backupftpcw](images/BackupInProgress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 Die Erstellung des Backups dauert zwischen 10 und 15 Minuten.
 
@@ -76,7 +76,7 @@ Die Erstellung des Backups dauert zwischen 10 und 15 Minuten.
 Wenn das Backup bereit ist, erhalten Sie eine E-Mail an die E-Mail-Adresse, die der Administrator-Kundenkennung Ihres Cloud Web Hostings zugewiesen ist.<br>
 Diese E-Mail enthält einen Download-Link, der **9 Tage** ab Eingang der E-Mail gültig ist:
 
-![backupftpcw](images/mailBackup.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 Die heruntergeladene Datei ist im Format *.tar.gz*.
 
@@ -100,4 +100,3 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
-

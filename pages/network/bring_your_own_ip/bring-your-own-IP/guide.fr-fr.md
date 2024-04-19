@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2023-11-20
+updated: 2024-04-03
 ---
 
 ## Objectif
@@ -40,7 +40,6 @@ Pour que le bloc soit considéré comme valide, les blocs importés doivent êtr
 | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
 | **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
-
 
 ### Avoir une plage d'IP d'une taille prise en charge <a name="haveaniprangeofasupportedsize"></a>
 
@@ -245,7 +244,7 @@ Non, une plage d'IP doit être utilisée dans un seul campus.
 
 ### Est-il possible de changer le campus d'une plage IP importée ?
 
-Il n'est pas possible de changer le campus d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi un campus français au moment de la commande et que la commande a été effectuée après le 1er janvier 2023, vous pourrez utiliser vos blocs IP sur tous les datacentres situés en France (Roubaix, Gravelines et Strasbourg).
+Il n'est pas possible de changer le campus d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi le campus de Gravelines, Roubaix ou Strasbourg au moment de la commande et si vous avez commandé le service après le 1er janvier 2023, vous pourrez déplacer vos blocs IP sur ces 3 campus (et uniquement sur ces 3 campus).
 
 ### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA de mon IP importée ?
 

@@ -1,5 +1,5 @@
 ---
-title: 'Mettre à jour son OverTheBox'
+title: 'Comment mettre à jour OverTheBox ?'
 excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
 updated: 2023-11-21
 ---

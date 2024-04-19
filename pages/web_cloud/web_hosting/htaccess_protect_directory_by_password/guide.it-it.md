@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Proteggere una directory o l'interfaccia di amministrazione del tuo sito web con file .htaccess e .htpasswd"
 excerpt: "Questa guida ti mostra come proteggere una directory o l'accesso alla gestione del tuo sito Web tramite un'autenticazione con i file .htaccess e .htpasswd"
-updated: 2023-06-01
+updated: 2024-01-29
 ---
 
 > [!primary]
@@ -61,11 +61,7 @@ Per proteggere l'accesso a una directory o a una parte del tuo sito, ti spieghia
 > Gli step successivi per ottimizzare la sicurezza dei tuoi dati ospitati.
 > Se i tuoi siti Web sono compatibili, ti consigliamo di utilizzare la versione più recente possibile di PHP.
 > 
-> Per modificare la versione di PHP sui tuoi siti Web, consulta queste guide:
-> 
-> - [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-> - [Cambiare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
->
+> Per modificare la versione di PHP sui tuoi siti Web, consulta la nostra guida "[Hosting Web : ambiente, versione PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 > In effetti, gli script e le informazioni descritte in questa guida funzionano solo con un ambiente di esecuzione e una versione PHP recente.
 > 
 > In caso contrario, ti consigliamo di ottimizzare il tuo sito Web per renderlo compatibile prima di installare quello che seguirà. Questa operazione ridurrà ulteriormente il rischio di pirateria informatica attraverso falle di sicurezza.
@@ -77,11 +73,11 @@ Accedi a [lo spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 Crea un file "crypt.php" in questa "cartella root".
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root_folder](images/root-folder.png){.thumbnail}
 
 Apri o crea la cartella per essere protetta dal tuo sito Web. Nel nostro esempio, si tratterà della cartella "admin". Crea in questa directory un file ".htpasswd" e un file ".htaccess".
 
-![folder_admin](images/folder_admin.png){.thumbnail}
+![admin-folder](images/admin-folder.png){.thumbnail}
 
 Per utilizzare correttamente i file ".htaccess" e ".htpasswd", è necessario conoscere e rispettare queste regole: 
 

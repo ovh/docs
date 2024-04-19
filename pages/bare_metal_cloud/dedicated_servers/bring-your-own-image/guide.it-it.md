@@ -1,152 +1,183 @@
 ---
-title: Utilizza la funzionalità Bring Your Own Image
-excerpt: Scopri come creare le tue immagini grazie a Bring Your Own Image
-updated: 2022-11-25
+title: Bring Your Own Image (BYOI) (EN)
+excerpt: Find out how to easily deploy your own images on dedicated servers
+updated: 2024-04-04
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
+## Objective
 
-## Obiettivo
+The Bring Your Own Image feature (BYOI) enables you to deploy *cloudready* images directly on your dedicated server. You can therefore use the bare metal service as a resource for your deployments.
 
-Grazie alla tecnologia Bring Your Own Image, è possibile implementare immagini *Cloudready* direttamente sui tuoi server dedicati. È possibile utilizzare il prodotto bare metal come risorsa per i deploy.
+**What does *cloudready* mean?**
 
-**Cosa significa *cloudready*?**
-<br>In una frase, essere agnostici dell'infrastruttura su cui l'immagine inizia.
-Oltre ai requisiti e ai limiti indicati in appresso, è necessario assicurarsi che l'immagine (recuperata, generata) risponda alla corretta definizione delle aspettative tecniche di un'immagine Cloudready. L'immagine deve essere in grado di bootare correttamente indipendentemente dalla tipologia di server su cui avvia, deve anche imbarcare il servizio Cloud Init nel caso di utilizzo di un Config Drive. Le configurazioni di sistema devono permettere di lasciare che l'OS si avvii completamente, in particolare quelle relative alla rete.
+The *cloudready* standard generally means being agnostic of the infrastructure on which the image is deployed.
+In addition to the requirement and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
 
-**Scopri come configurare BringYourOwnImage con l'APIv6 OVHcloud**
+**This guide explains how to use Bring Your Own Image (BYOI) on your OVHcloud dedicated server.**
 
-## Prerequisiti
+## Requirements
 
-- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per la sezione ["Implementazione dallo Spazio Cliente"](#viacontrolpanel) di questa guida.
-- Essere connesso alle [API OVHcloud](https://api.ovh.com/){.external} per la sezione ["Implementazione via API"](#viaapi) di questa guida.
-- Aver generato i [credenziali per utilizzare l'APIv6](/pages/manage_and_operate/api/first-steps) per la sezione ["Implementazione via API"](#viaapi) di questa guida.
-- La dimensione della tua immagine deve essere inferiore alla quantità della RAM del tuo server meno 3GiB.
+- A [dedicated server](https://www.ovhcloud.com/it/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
+- Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
+- Your image must be smaller than the Server RAM minus 3GiB
 
 > [!warning]
 >
-> Una nuova installazione effettuata da BringYourOwnImage cancella tutti i dati presenti sul server.
+> As with any classical OS installation, a new installation with BYOI will erase all the data on the server.
 >
 
-## Procedura
+## Instructions
 
-**Limitazioni tecniche**
+**Technical limitations:**
 
-Esistono ancora alcune limitazioni tecniche legate all'utilizzo di prodotti fisici come i server dedicati.
-Nel preparare il deploy, è necessario tenere conto dei requisiti elencati qui sotto. Tale elenco non è esaustivo.
+There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
-- Tipo di boot: **uefi** o **legacy**
-- Il tipo di partizione: **MBR** o **GPT**
-- Formato dell'immagine: **qcow2** o **raw**
+- Boot type: **uefi** or **legacy**
+- Partition type: **MBR** or **GPT**
+- Image format: **qcow2** or **raw**
 
-Se il tuo server dispone di un boot **uefi**, sarà necessario prevedere nella tua immagine una partizione **EFI** se desideri che il tuo server possa boot.
+> [!warning]
+> **About RAID:**
+>
+> - Bring Your Own Image (BYOI) does not support software RAID configuration at install-time, but you can use the service [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux) for that. Choose the custom image method that fits your needs: [Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux).
+>
+> - Hardware RAID is supported, if your server supports it, because it is configured before the image is deployed on disk.
+>
 
-**Metodi di implementazione**
+**Deployment methods:**
 
-- [Implementazione dallo Spazio Cliente](#viacontrolpanel): permettendoti di creare rapidamente e facilmente la tua immagine direttamente dal tuo Spazio Cliente OVHcloud.
-- [Implementazione via API](#viaapi): puoi utilizzare le API OVHcloud per integrarle nei tuoi script per automatizzare il deploy.
+- [Deployment via the Control Panel](#viacontrolpanel): allows you to simply deploy your image using the OVHcloud Control Panel.
+- [Deployment via API](#viaapi): you can use the OVHcloud API to integrate images into your own scripts to automate deployments.
 
-### Crea la tua immagine dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
+### Deploy your image via the Control Panel <a name="viacontrolpanel"></a>
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sezione `Bare Metal Cloud`{.action}, poi `Server Dedicati`{.action}, seleziona il tuo server.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) and go to the `Bare Metal Cloud`{.action} section, then select your server under `Dedicated servers`{.action}.
 
-Nel riquadro `Informazioni generali`, clicca sul pulsante `...`{.action} davanti alle `Informazioni generali`. Infine clicca su `Installa`{.action}.
+In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
-![bring your ownimage](images/byoi-controlpanel01.png){.thumbnail}
+![BringYourOwnImage Control Panel 01](images/byoi-controlpanel01.png){.thumbnail}
 
-Nella nuova finestra, seleziona `Installa partendo da un'immagine personalizzata`{.action} e clicca su `Installa`{.action}.
+In the window that appears, select `Install from an OVHcloud template`{.action} and click `Next`{.action}.
 
-![bring your ownimage](images/byoi-controlpanel02.png){.thumbnail}
+![BringYourOwnImage Control Panel 02](images/byoi-controlpanel02.png){.thumbnail}
 
-Verrai reindirizzato alla pagina di configurazione. Assicurati che l'URL dell'immagine sia nel formato adeguato. Completa i campi richiesti in questa pagina. Una volta confermata la correttezza delle informazioni, clicca su `Installa il sistema`{.action}.
+In the window that appears, select `Custom` in the menu, then `Bring Your Own Image - byoi`, and click `Next`{.action}.
 
-Per maggiori informazioni, consulta la sezione ["Tabelle opzioni"](#options) di questa guida. 
+![BringYourOwnImage Control Panel 03](images/byoi-controlpanel03.png){.thumbnail}
 
-Per l'attivazione di `ConfigDrive`, consulta la documentazione su [questa pagina](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
+You will be redirected to the configuration page. Make sure your image URL is in the correct format. Complete the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Confirm`{.action}.
 
-![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
+You can find more details on the options in the [deployment options](#options) section below.
 
-### Crea la tua immagine dalle API <a name="viaapi"></a>
+For more information and examples about Cloud-Init's ConfigDrive, please read the official documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/examples.html).
 
-Clicca su [https://api.ovh.com/](https://api.ovh.com/){.external}, accedi alla sezione `/dedicated/server`{.action}. Il campo `Filter` ti permetterà di ricercare "BringYourOwnImage".
+![BringYourOwnImage Control Panel 04](images/byoi-controlpanel04.png){.thumbnail}
 
-Disponi di tre chiamate API legate alla funzionalità BringYourOwnImage.
+### Deploy your image via the APIs <a name="viaapi"></a>
 
-![Calls API](images/apicalls.png){.thumbnail}
-
-Per creare e configurare la tua immagine, utilizza questa chiamata e inserisci i campi richiesti:
+Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
-| Champ | Descrizione |
+The Bring Your Own Image (BYOI) payload should be similar to the following:
+
+> [!warning]
+>
+> In the `userMetadata` section, only `imageURL` and `imageType` are mandatory.
+>
+
+```json
+{
+  "details": {
+    "customHostname": "myCustomBYOI"
+  },
+  "templateName": "byoi_64",
+  "userMetadata": [
+    {
+      "key": "sshKey",
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    },
+    {
+      "key": "imageURL",
+      "value": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw"
+    },
+    {
+      "key": "imageType",
+      "value": "raw"
+    },
+    {
+      "key": "httpHeaders0Key",
+      "value": "Authorization"
+    },
+    {
+      "key": "httpHeaders0Value",
+      "value": "Basic bG9naW46cGFzc3dvcmQ="
+    },
+    {
+      "key": "imageCheckSum",
+      "value": "2cbd3dd5606ef95a5cfa47943b3ad453fcc43522915be7f559a296a71395f82f88e621e558df7aa5f3d2e62c20043f9430ad18c900e565a1c070066e8d008aaa"
+    },
+    {
+      "key": "imageCheckSumType",
+      "value": "sha512"
+    },
+    {
+      "key": "configDriveUserData",
+      "value": "#!/bin/bash\necho \"Hi, sounds that BYOI is a success!\" > /etc/motd\n"
+    }
+  ]
+}
+```
+
+Once you completed the fields, start the deployment by clicking `Execute`{.action}.
+
+#### Deployment options <a name="options"></a>
+
+| Field | Description | Required |
+|-|-|-|
+| userMetadata/sshKey | SSH public key | ❌ |
+| userMetadata/imageURL | Your image URL | ✅ |
+| userMetadata/imageType | Your image format (qcow2, raw) | ✅ |
+| userMetadata/imageCheckSum | Your image's checksum | ❌ |
+| userMetadata/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
+| userMetadata/configDriveUserData | Your configDrive file content¹ | ❌ |
+| userMetadata/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
+| userMetadata/httpHeaders?Key | HTTP Headers key  | ❌² |
+| userMetadata/httpHeaders?Value | HTTP Headers value | ❌² |
+
+¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
+² Use only if you need HTTP Headers, such as `Basic Auth`<br />
+
+> [!primary]
+>
+> The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
+>
+
+#### Result examples
+
+Here are some results you might have:
+
+| Message | Meaning |
 |-|-|
-| serviceName | Il nome del tuo server. |
-| URL | L'URL dove recuperare l'immagine. |
-| checkSum | Il checksum della tua immagine. |
-| checkSumType | Il checksum dell'immagine da implementare (md5, sha1, sha256, sha512). |
-| enable (ConfigDrive)* | Attiva la creazione della partizione ConfigDrive (cloud-init) |
-| hostname (ConfigDrive)* | L'hostname del tuo server. |
-| sshKey (ConfigDrive)* | La tua chiave SSH pubblica. |
-| userData (ConfigDrive)* | Il tuo script di post-installazione. |
-| userMetadatas (ConfigDrive)* | Meta datas utilizzati da CloudInit al momento del boot. |
-| description | Il nome della tua immagine. |
-| diskGroupId | ID del disco che deve essere utilizzato. |
-| httpHeader | Solo se necessario per scaricare l'immagine. |
-| type | Tipo/formato della tua immagine (qcow2, raw, ova). |
+| Can't write qcow2 on disk. | Could not burn qcow2 image on disk. |
+| Could not download, qcow2 image is too big to download in memory. | There is not enough RAM space to store your image. |
+| Could not download image located: `http://path/of/your/image`. | Impossible to download image located `http://path/of/your/image`. |
+| Bad format image, expected: qcow2, raw. | Incorrect image format. |
+| Bad checkSumType, expected: sha1, sha256, md5. | Incorrect checksum type. |
+| Bad $checkSumType for downloaded file, got: 1234 while expecting 5678. | Incorrect checksum signature. |
+| Can not move backup GPT data structures to the end of disk. | Disk format is not correct. |
+| Could not create configdrive on disk. | Impossible to create config-drive partition. |
 
-* Il ConfigDrive è una partizione utilizzata da cloud-init al primo boot del tuo server per stabilire la configurazione desiderata. È possibile scegliere se attivare o meno questa opzione.
+## Go further
 
-![POST API call](images/postapicall.png){.thumbnail}
+[OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-Una volta completati i campi, esegui il deploy cliccando su `Execute`{.action}.
+[Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
-### Verifica l'installazione
+[Bring Your Own Image (BYOI) / Bring Your Own Linux (BYOLinux), a comparison sheet](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux)
 
-Per monitorare lo sviluppo della tua immagine, utilizza la chiamata API qui sotto o tramite KVM / [IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
->
-
-In questo esempio, il deploy è in fase di avvio.
-
-![GET API call](images/getapicall.png){.thumbnail}
-
-L'installazione può durare una decina di minuti. Una volta terminata l'operazione, lo stato del tuo deploy passerà in "done" e il tuo server sarà riavviato su disco.
-
-#### Esempi di ritorno
-
-Ecco alcuni esempi:
-
-| Message | Significato |
-|-|-|
-| Can't write qcow2 on disk. | Impossibile scrivere l'immagine qcow2 sul disco. |
-| Could not download, qcow2 image is too big to download in memory. | Non c'è abbastanza spazio di RAM per scaricare l'immagine. |
-| Could not download image located: `http://path/of/your/image` | Impossibile scaricare l'immagine situata: `http://path/of/your/image` |
-| Bad format image, expected: qcow2, raw. | Il formato dell'immagine non è corretto. |
-| Bad checkSumType, expected: sha1, sha256, md5. | Il tipo di checksum non è corretto. |
-| Bad $checkSumType for downloaded file, got: 1234 while expecting 5678. | Il checksum non è corretto. |
-| Can not move backup GPT data structures to the end of disk | Il formato disco non è corretto. |
-| Could not create configdrive on disk | Impossibile creare la partizione configdrive sul disk. |
-
-### Elimina l'installazione
-
-Puoi scegliere di eliminare il tuo deploy utilizzando questa chiamata:
-
-> [!api]
->
-> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
->
-
-eliminando lo stato di deploy e impostando il server in modalità Rescue.
-
-## Per saperne di più
-
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Join our user community on <https://community.ovh.com/en/>.

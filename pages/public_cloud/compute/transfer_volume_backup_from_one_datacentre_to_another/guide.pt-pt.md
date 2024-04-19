@@ -1,7 +1,7 @@
 ---
-title: Transferir o backup de um volume de um datacenter para outro
-excerpt: Transferir o backup de um volume de um datacenter para outro
-updated: 2021-01-19
+title: "Transferir o backup de um volume de uma região OpenStack para outra"
+excerpt: "Descubra como transferir um backup de volume de uma região OpenStack para outra"
+updated: 2024-01-11
 ---
 
 > [!primary]
@@ -10,46 +10,54 @@ updated: 2021-01-19
 
 ## Objetivo
 
-Poderá necessitar de migrar os seus volumes adicionais de um datacenter para outro, quer porque está disponível um novo centro de dados, quer porque deseja migrar da [OVHcloud Labs](https://labs.ovh.com/){.external} para a [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}.
+Poderá ter de migrar volumes adicionais de uma região OpenStack para outra, quer seja porque uma nova região está disponível, quer seja porque deseja migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} para [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/compute/){.external}.
 
-**Este guia explica como transferir os backups de um volume de um datacenter para o outro para evitar uma reinstalação.**
+**Descubra como transferir um backup de volume de uma região do OpenStack para outra..**
 
 ## Requisitos
 
-* Dispor de uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
-* Dispor de um acesso administrador (root) ao datacenter através de SSH.
-* Ler o manual [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}. (Recomendado)
+- CLI OpenStack. Consulte o nosso guia « [Como preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ».
+- A Conectividade às API OVHcloud OpenStack.
+- Do espaço de armazenamento disponível correspondente ao tamanho do disco do volume (para o armazenamento de backup temporário).
 
-> [!primary]
->
-Os comandos deste manual baseiam-se na CLI OpenStack, ao contrário das API `Nova` e `Glance`.
->
+Este ambiente será utilizado como « jump host » para transferir a cópia de segurança de uma região para outra. Este ambiente pode ser uma instância alojada na OVHcloud ou na sua máquina local.
 
 ## Instruções
 
 ### Criação de um backup
 
-- Listar os volumes existantes:
-
 ```sh
-root@server:~$ openstack volume list
+openstack volume list
 +--------------------------------------+--------------+--------+------+------------------------------------+
 | ID                                   | Display Name | Status | Size | Attached to                        |
 +--------------------------------------+--------------+--------+------+------------------------------------+
-| 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 | volume       | in-use |   10 | Attached to server 1 on /dev/sdb  |
+| 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 | volume       | in-use |   10 | Attached to Server 1 on /dev/sdb   |
 +--------------------------------------+--------------+--------+------+------------------------------------+
+```
+
+Se o volume estiver associado a uma instância, deve em primeiro lugar desassociá-lo antes de criar o backup.
+
+Utilizar o comando abaixo para recuperar o ID da instância:
+
+```sh
+$ openstack server list
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
+| ID                                   | Name      | Status | Networks                                       | Image    | Flavor |
++--------------------------------------+-----------+--------+--------------------------------------------------------------------+
+| a8b6b51-4413-4d1a-8113-9597d804b07e  | Server 1  | ACTIVE | Ext-Net=155.55.55.155, 2607:5300:23x:5000::8d5 | Centos 7 | b2-7   |
++--------------------------------------+-----------+--------+------------------------------------------------+----------+--------+
 ```
 
 De seguida, execute o comando abaixo para desmontar o volume a partir da instância:
 
 ```sh
-root@server:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
+$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
 Agora, crie um backup sob a forma de imagem através deste comando:
 
 ```sh
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
+$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
 +---------------------+------------------------------------------------------+
 |       Property      |                         Value                        |
 +---------------------+------------------------------------------------------+
@@ -71,57 +79,61 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Execute o seguinte comando para listar as imagens disponíveis:
 
 ```sh
-root@server:~$ openstack image list
-+--------------------------------------+-----------------------------------------------+--------+
-| ID                                   | Name                                          | Status |
-+--------------------------------------+-----------------------------------------------+--------+
-| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                                   | active |
-| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7                                      | active |
-| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8                                      | active |
-| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19                                     | active |
-| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20                                     | active |
-| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                                   | active |
-| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04                                  | active |
-| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04                                  | active |
-| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2                        | active |
-+--------------------------------------+-----------------------------------------------+--------+
+$ openstack image list
++--------------------------------------+--------------------------------+--------+
+| ID                                   | Name                           | Status |
++--------------------------------------+--------------------------------+--------+
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                    | active |
+| 73958794-ecf6-4e68-ab7f-1506eadac05b | Debian 7                       | active |
+| bdcb5042-3548-40d0-b06f-79551d3b4377 | Debian 8                       | active |
+| 7250cc02-ccc1-4a46-8361-a3d6d9113177 | Fedora 19                      | active |
+| 57b9722a-e6e8-4a55-8146-3e36a477eb78 | Fedora 20                      | active |
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume                    | active |
+| 3bda2a66-5c24-4b1d-b850-83333b580674 | Ubuntu 12.04                   | active |
+| 9bfac38c-688f-4b63-bf3b-69155463c0e7 | Ubuntu 14.04                   | active |
+| 6a123897-a5bb-46cd-8f5d-ecf9ab9877f2 | Windows-Server-2012-r2         | active |
++--------------------------------------+--------------------------------+--------+
 ```
 
 De seguida, identifique o backup na lista:
 
 ```sh
-| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume | qcow2 | bare | 319356928 | active | 
++--------------------------------------+-------------+-------------+----------------+-----------+--------+
+| ID                                   | Name        | disk_format |container_format|           | Status |
++--------------------------------------+---------------------------+----------------+-----------+--------+
+| 8625f87e-8248-4e62-a0ce-a89c7bd1a9be | snap_volume | qcow2       | bare           | 319356928 | active |
++--------------------------------------+-------------+-------------+----------------+-----------+--------+
 ```
 
 Por fim, execute este comando para descarregar o backup:
 
 ```sh
-root@server:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
+$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
-### Transferir o backup para outro centro de dados
+### Transferir a cópia de segurança para outra região OpenStack
 
 Para lançar o processo de transferência, deverá começar por carregar novas variáveis de ambiente.
 
 > [!warning]
 >
-Se transferir a sua cópia de segurança para um datacenter no mesmo projeto, deverá alterar a variável OS_REGION_NAME.
+Se transferir a sua cópia de segurança para uma região OpenStack no mesmo projeto, deverá alterar a variável OS_REGION_NAME.
 >
 
 ```sh
-root@server:~$ export OS_REGION_NAME=SBG1
+export OS_REGION_NAME=SBG1
 ```
 
 Se transferir o seu backup para outro projeto ou conta, deverá recarregar as variáveis de ambiente associadas a esta conta através do seguinte comando:
 
 ```sh
-root@server:~$ source openrc.sh
+$ source openrc.sh
 ```
 
-Para transferir o backup para o novo datacenter, utilize o comando abaixo:
+Para transferir a cópia de segurança para a nova região OpenStack, utilize o comando abaixo:
 
 ```sh
-root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume
+$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume
 +------------------+------------------------------------------------------+
 | Field            | Value                                                |
 +------------------+------------------------------------------------------+
@@ -152,7 +164,7 @@ root@server:~$ openstack image create --disk-format qcow2 --container-format bar
 Utilize o ID da backup como imagem com o seguinte comando:
 
 ```sh
-root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
+$ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
@@ -180,6 +192,6 @@ root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c
 
 ## Quer saber mais?
 
-[Transferir a cópia de segurança de uma instância de um datacenter para outro](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
+[Transferir a cópia de segurança de uma instância de uma região OpenStack para outra](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

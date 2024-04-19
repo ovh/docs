@@ -1,6 +1,6 @@
 ---
-title: "Installation OverTheBox Plus ou IT v2"
-excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox Plus ou IT v2 afin de profiter de votre offre OverTheBox"
+title: "Installer OverTheBox v2 (Plus & IT)"
+excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox v2 (Plus & IT)"
 updated: 2021-04-14
 ---
 

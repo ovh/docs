@@ -1,50 +1,14 @@
 ---
 title: 'Dépannage C530 IP'
-hidden: true
+flag: hidden
 updated: 2018-03-26
 ---
 
-**Sommaire :**
-
-### Configuration automatique via code d'auto-configuration {#configuration-automatique-via-code-dauto-configuration}
-
-En cas de mauvaise manipulation OVH met à disposition un système de génération de code permettant au téléphone de récupérer sa configuration initiale.
-
-L'Espace Client génère un code spécifique qu'il faut rentrer sur le combiné associé à la base.
-
-Pour générer ce code d'auto-configuration rendez-vous dans votre Espace Client :
-
--   [Connectez-vous avec vos identifiants : https://www.ovhtelecom.fr/espaceclient/](https://www.ovhtelecom.fr/espaceclient/){.external-link}
--   Cliquez sur le lien "**Administrez vos services de téléphonie via l'ancienne interface**".
--   Sélectionnez la ligne que vous souhaitez reconfigurer.
--   Cliquez sur "**Assistance**".
--   Cliquez sur "**Dépannage Plug & Phone**".
-
-![depannage-c530ip](images/Depannage1.jpg){.thumbnail}
-
--   Un pop-up apparaît vous demandant l'adresse IP publique de votre connexion Internet. Si votre PC est sur le même réseau que le téléphone, l'IP publique sera donc identique. Celle-ci vous sera donc indiquée par la phrase "***Pour information, l'adresse IP avec laquelle vous vous connectez est :xxx****.xxx.xxx.xxx"*.
-
-![depannage-c530ip](images/Depannage2.jpg){.thumbnail}
-
--   Une fois l'IP publique saisie cliquez sur le bouton "**Suivant**".
--   Un code d'auto-configuration est alors généré :
-
-![depannage-c530ip](images/Depannage3.png){.thumbnail}
-
--   Pour saisir ce code sur votre combiné il faut appuyer sur le bouton central :![](images/combine.png){.thumbnail}
--   Rendez-vous sur le menu "**Réglages**" caractérisé par une roue crantée.
--   Puis sur "**Téléphonie"**et "**Assistant VoIP"**.
-
-![depannage-c530ip](images/Depannage4.png){.thumbnail}
-
--   Sélectionnez le compte l'emplacement du compte SIP souhaité, par défaut IP1 ![depannage-c530ip](images/Depannage5.png){.thumbnail}
-
--   Validez en appuyant sur le bouton correspondant au choix "**Oui**".
--   Saisissez le code généré dans l'Espace Client puis validez en appuyant sur le bouton correspondant au choix "**OK**".
--   Un message "**Enregistrement auprès du fournisseur**" apparaîtra suivi du message "**Compte IP enregistré auprès du fournisseur**" si l'opération réussie.
--   Comme le C530 IP peut avoir plusieurs combinés un choix vous est proposé : **Affect connexion à combiné ?INT 1 ?**Par défaut vous pouvez valider et passer à l'étape suivante cela permet de confirmer le choix de recevoir les appels du compte SIP sur le combiné INT1.
--   Le même choix vous sera proposé pour émettre les appels.
--   Une fois ces étapes réalisées votre téléphone est fonctionnel.
+> [!warning]
+> 
+> Ce guide est à présent déprécié et est uniquement conservé afin de documenter des dysfonctionnements spécifiques au téléphone concerné.
+> Le processus de dépannage pour nos téléphones est à présent documenté sur [cette page](/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel).
+>
 
 ### Mon combiné affiche "Pas de base" {#mon-combiné-affiche-pas-de-base}
 

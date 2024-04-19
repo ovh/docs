@@ -7,7 +7,7 @@ updated: 2022-02-08
  
 ## Objectif
 
-Vous avez supprimé par erreur un ou plusieurs éléments (e-mail, contact, rendez-vous du calendrier) et vous avez vidé votre corbeille. Il est toujours possible de les restaurer jusqu'à 14 jours après leur suppression via le webmail OWA (Outlook Web Application).
+Vous avez supprimé par erreur un ou plusieurs éléments (e-mail, contact, rendez-vous du calendrier) et vous avez vidé votre corbeille. Il est toujours possible de les restaurer jusqu'à 14 jours après leur suppression via le webmail OWA (Outlook Web App).
 
 **Découvrez comment restaurer des éléments supprimés depuis votre compte e-mail via le webmail (OWA)**
  

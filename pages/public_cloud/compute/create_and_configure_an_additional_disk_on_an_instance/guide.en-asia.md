@@ -19,7 +19,7 @@ This can be useful in cases where:
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
+- Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
 
 > [!warning]
 >

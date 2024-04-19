@@ -54,7 +54,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 On the `General information`{.action} tab you can find the `Protection against domain name transfer`{.action} slider button under **Security**, set to `Enabled`{.action} by default.
 
-![outgoingtransfer](images/outgoing-transfer-step1.png){.thumbnail}
+![outgoingtransfer](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Click on the slider and confirm in the popup window that you want to remove this protection. Allow a few minutes for the status to change to `Disabled`{.action}.
 
@@ -69,7 +69,7 @@ Click on the slider and confirm in the popup window that you want to remove this
 > Some *transfer codes* are directly managed by the *registry* of your domain name extension. A *registry* is an organisation that manages all domain names for a given extension. For example, the **AFNIC** manages all domain names with the extension *.fr*. If this is the case, you must contact the *registry* managing your domain name extension directly to retrieve the *transfer code*.
 >
 
-![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
+![outgoingtransfer](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -85,7 +85,7 @@ Click on the slider and confirm in the popup window that you want to remove this
 
 Once you have removed the transfer protection, you can retrieve your domain name’s transfer code in the `General information`{.action} tab. Refresh the page if necessary. Click on `AUTH/INFO`{.action} under `Protection against domain name transfer`{.action}. A window displaying your AUTH/INFO code (also known as transfer code, domain password, AUTH-CODE or EPP-Code) will open.
 
-![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
+![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 The code will be requested by your new registrar to complete the transfer process. You can verify the details with your provider.
 
@@ -112,4 +112,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.

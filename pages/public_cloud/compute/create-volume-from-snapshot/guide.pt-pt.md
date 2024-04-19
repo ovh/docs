@@ -25,7 +25,7 @@ Tal pode ser útil nos seguintes casos:
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
 - Ter um backup de disco na mesma região OpenStack.
-- Ter acesso à instância via SSH enquanto administrador (root).
+- Ter acesso à instância via SSH enquanto administrador (sudo).
 
 ## Instruções
 

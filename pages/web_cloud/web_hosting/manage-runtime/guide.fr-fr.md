@@ -1,6 +1,6 @@
 ---
-title: 'Gérer les moteurs d’exécution d’un hébergement Cloud Web'
-excerpt: 'Apprenez à gérer les moteurs d’exécution de votre hébergement pour mener à bien vos projets'
+title: "Gérer les moteurs d’exécution d’un hébergement Cloud Web"
+excerpt: "Apprenez à gérer les moteurs d’exécution de votre hébergement pour mener à bien vos projets"
 updated: 2022-07-27
 ---
 
@@ -19,9 +19,7 @@ Cloud Web met à disposition de multiples langages de développement pour constr
 
 Afin de s'adapter au mieux à votre projet, Cloud Web vous permet de disposer d'un ou de plusieurs moteurs d'exécution. L'utilisation de l'un plutôt qu'un autre dépend alors de ce que vous souhaitez mettre en place. 
 
-Ainsi, si ce n'est pas encore fait, **assurez-vous de la compatibilité technique de votre projet avec votre hébergement Cloud Web**. Les langages sont listés à cette adresse : <https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/>. 
-
-Après avoir déterminé avec précision le ou les moteurs d'exécution à utiliser, vous pouvez débuter les manipulations décrites ci-dessous.
+Ainsi, si ce n'est pas encore fait, **assurez-vous de la compatibilité technique de votre projet avec votre hébergement Cloud Web**. Les langages sont listés à cette adresse : <https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/>.Après avoir déterminé avec précision le ou les moteurs d'exécution à utiliser, vous pouvez débuter les manipulations décrites ci-dessous.
 
 ### Étape 1 : accéder à la gestion des moteurs d'exécution
 
@@ -29,7 +27,7 @@ Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connecte
 
 Le tableau qui apparaît affiche les moteurs d'exécution ajoutés actuellement à votre hébergement Cloud Web. À noter qu'un moteur a été automatiquement créé lors de l'installation de votre hébergement.
 
-![cloudweb](images/cloud-web-runtime-step1.png){.thumbnail}
+![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
 
 ### Étape 2 : gérer les moteurs d'exécution
 
@@ -80,7 +78,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external} ».
 
-![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -94,7 +92,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external} ».
 
-![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -108,7 +106,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external} ».
 
-![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
+![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Étape 3 : associer le moteur d'exécution à un multisite
 
@@ -123,7 +121,7 @@ Lorsque vous disposez du ou des moteurs d'exécution nécessaires à votre proje
 
 Dans le tableau, vérifiez pour les domaines concernés si le moteur affiché est correct dans la colonne `Moteur d'exécution`. Les noms qui s'affichent correspondent au « nom personnalisé » que vous avez défini.
 
-![cloudweb](images/cloud-web-runtime-step4.png){.thumbnail}
+![cloudweb](images/runtime-software-applications.png){.thumbnail}
 
 Si vous souhaitez modifier un moteur associé à un multisite, cliquez sur `...`{.action} à droite du domaine concerné puis cliquez sur `Modifier`{.action}.
 
@@ -131,7 +129,7 @@ Sélectionnez alors le bon moteur à côté de `Moteur d'exécution` dans la fen
 
 Une fois sélectionné, suivez les étapes jusqu'à la finalisation.
 
-![cloudweb](images/cloud-web-runtime-step6.png){.thumbnail}
+![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
 
 ## Aller plus loin
 

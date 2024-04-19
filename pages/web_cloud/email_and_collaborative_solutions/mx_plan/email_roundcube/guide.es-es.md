@@ -1,6 +1,6 @@
 ---
 title: 'Webmail: Guía de uso de Roundcube'
-updated: 2022-05-31
+updated: 2024-03-26
 ---
 
 > [!primary]
@@ -20,7 +20,40 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
 
 ## Procedimiento
 
-### Conectarse al webmail Roundcube
+**sumario**
+
+- [Conectarse al webmail Roundcube](#roundcube-connexion)
+- [Interfaz general del webmail Roundcube](#general-interface)
+    - [Gestión de carpetas (columna izquierda)](#leftcolumn)
+    - [Lista de mensajes recibidos/enviados (ventana superior)](#topwindow)
+        - [Tipo de visualización](#topwindow-display)
+        - [Acción sobre un mensaje de correo electrónico seleccionado](#topwindow-action)
+        - [Buscar un email](#topwindow-search)
+    - [Contenido de un mensaje de correo (ventana inferior)](#lowerwindow)
+- [Configurar preferencias de la interfaz de Roundcube](#roundcube-settings)
+    - [Interfaz de Usuario](#user-interface-settings)
+    - [Vista de Buzón](#mail-view-settings)
+    - [Vista de Mensajes](#mail-display-settings)
+    - [Composición de Mensajes](#mail-writing-settings)
+    - [Contactos](#contacts-settings)
+    - [Carpetas especiales](#special-folder-settings)
+    - [Configuración del servidor](#server-settings)
+    - [Cifrado](#encryption)
+- [Gestionar las identidades y su firma](#identity-signature)
+    - [Configurar atributos de identidad](#identity)
+    - [Añadir una firma](#signature)
+- [Agenda de contactos](#contact-book)
+    - [Grupos](#group)
+    - [Contactos](#contacts)
+    - [Importar contactos](#import-contacts)
+    - [Exportar contactos](#export-contacts)
+- [Respuestas (plantillas)](#responses)
+- [Añadir un contestador o respuesta automática](#automatic-respond)
+- [Cambiar la contraseña de su dirección de correo](#password)
+- [Redacción de un email](#email-writing)
+- [casos de uso](#usecase)
+
+### Conectarse al webmail Roundcube <a name="roundcube-connexion"></a>
 
 Acceda a la página <https://www.ovh.com/es/mail/>. Introduzca una dirección de correo electrónico y la contraseña, y haga clic en `Conexión`{.action}. 
 
@@ -30,9 +63,14 @@ El sistema le redirigirá a la interfaz Roundcube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
 
+> [!primary]
+> 
+> La primera vez que se conecte a Roundcube, la apariencia puede ser diferente de la que se muestra en esta guía. Esto significa que el aspecto "clásico" se ha definido en su interfaz. Para cambiarla, vaya a la sección «[Interfaz de usuario](#user-interface-settings)» y seleccione la vista "Larry".
+> La apariencia de la interfaz no afectará a las siguientes explicaciones de esta documentación.
+
 > [!warning]
 > 
-> Si es redirigido a una interfaz **O**utlook **W**eb **A**ccess (OWA), significa que está en la última versión de la solución MX Plan. Para más información sobre la solución MX Plan, consulte nuestra página [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
+> Si es redirigido a una interfaz **O**utlook **W**eb **A**pp (OWA), significa que está en la última versión de la solución MX Plan. Para más información sobre la solución MX Plan, consulte nuestra página [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
 > Para familiarizarse con la interfaz **OWA**, consulte nuestra guía [Consultar su cuenta de correo desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -68,7 +106,7 @@ Las casillas de verificación de las carpetas corresponden a "suscripciones". La
 
 Esta ventana muestra el contenido de la carpeta seleccionada en la columna izquierda. 
 
-##### **Tipo de visualización**
+##### Tipo de visualización <a name="topwindow-display"></a>
 
 Esta ventana se presenta en una forma que se puede personalizar. Para ello, haga clic en la rueda dentada situada en la parte superior izquierda de esta ventana.
 
@@ -81,7 +119,7 @@ Es posible configurar los siguientes elementos:
 - **Columna de ordenación**: permite elegir la columna en la que se realizará la ordenación predeterminada.
 - **Criterio de ordenación**: permite elegir el orden ascendente o descendente, en función de la columna de orden.
 
-##### **Acción sobre un mensaje de correo electrónico seleccionado**
+##### Acción sobre un mensaje de correo electrónico seleccionado <a name="topwindow-action"></a>
 
 Cuando se selecciona un mensaje de correo electrónico, es posible realizar cambios en el mismo. Acceda a las siguientes acciones:
 
@@ -107,7 +145,7 @@ Cuando se selecciona un mensaje de correo electrónico, es posible realizar camb
 > Si uno de sus interlocutores solicita que se le acuse de lectura al leer su mensaje de correo electrónico, recibirá el siguiente mensaje: `el remitente de este mensaje ha solicitado que le avisen cuando lea este mensaje. ¿Desea avisar al remitente ?`
 > 
 
-##### **Buscar un email**
+##### Buscar un email <a name="topwindow-search"></a>
 
 Una herramienta de búsqueda está disponible en la parte superior derecha de la interfaz.
 
@@ -128,13 +166,13 @@ A la derecha encontrará los atajos para las siguientes funciones:
 
 ![hosting](images/roundcube05.png){.thumbnail}
 
-### Configurar preferencias de la interfaz de Roundcube
+### Configurar preferencias de la interfaz de Roundcube <a name="roundcube-settings"></a>
 
 Los siguientes capítulos de esta guía corresponden a las pestañas que componen la sección `Preferencias`{.action} de `Configuración`{.action} de Roundcube. Su descripción es incompleta.
 
 ![hosting](images/roundcube06.png){.thumbnail}
 
-#### Interfaz de Usuario
+#### Interfaz de Usuario <a name="user-interface-settings"></a>
 
 Establezca aquí el `idioma` de uso de la interfaz de usuario Roundcube, la `zona horaria`, el `formato de hora` y el `formato de fecha`.
 
@@ -142,33 +180,38 @@ La opción `Transformar fechas recientes` permite mostrar la fecha de recepción
 
 La casilla `Display next list entry after delete/move` significa que después de realizar una acción de borrado o mover a un email, el elemento de la línea inferior se seleccionará sistemáticamente, independientemente del orden de clasificación. 
 
-#### Vista de Buzón
+Puede elegir la estética de visualización de su interfaz. Puede elegir entre mostrar **Classic** o **Larry**.
+
+#### Vista de Buzón <a name="mail-view-settings"></a>
 
 Establezca aquí la usabilidad para visualizar y actuar en el correo. La opción `Disposición` permite organizar las 3 ventanas descritas en la sección [Interfaz general del webmail Roundcube](#topwindow).
 
-#### Vista de Mensajes
+#### Vista de Mensajes <a name="mail-display-settings"></a>
 
 Indique cómo se muestran los mensajes de correo.<br>
 Es recomendable que la casilla `Mostrar en HTML` esté marcada para asegurarse de que los mensajes que haya recibido el remitente se muestren correctamente.<br>
 También se recomienda mantener la opción `Allow remote resources (images, styles)` en `nunca`. para evitar que se carguen los elementos de un mensaje de correo electrónico que parezca malicioso.
 
-#### Composición de Mensajes
+#### Composición de Mensajes <a name="mail-writing-settings"></a>
 
 Establezca la forma predeterminada para redactar un mensaje de correo o una respuesta.<br>
 Le recomendamos que elija la opción `Redactar mensajes HTML` para `siempre`, ya que por defecto la herramienta de edición HTML no alterará la firma HTML.
 
-#### Contactos
+#### Contactos <a name="contacts-settings"></a>
 
 Personalice aquí la organización de los datos en su libreta de direcciones.
 
-#### Carpetas especiales
+#### Carpetas especiales <a name="special-folder-settings"></a>
 
 Roundcube dispone de 4 carpetas especiales: `Borradores`, `Enviados`, `SPAM`, `Papelera`.
 
 No recomendamos cambiarlos, pero es posible atribuir el comportamiento de una carpeta especial a otra carpeta creada posteriormente, gracias a los menús desplegables.<br>
-**Por ejemplo**, puede asignar el comportamiento "borradores" a otra carpeta que haya creado. Los mensajes de correo electrónico que se registren en él serán considerados una mezcla hasta que se envíen efectivamente.
 
-#### Configuración del servidor
+**Por ejemplo**, puede asignar el comportamiento « Borradores » a otra carpeta que haya creado haciendo clic en la lista desplegable y eligiendo esa carpeta. Si no se le asigna ninguna carpeta, se pondrá automáticamente en la opción « Drafts ». Los mensajes de correo electrónico que se guarden en dicha carpeta se considerarán borradores hasta que se envíen.
+
+> En la práctica, creo una subcarpeta denominada Borradores de correo de clientes. Voy a `Mis preferencias`{.action} / `Carpetas especiales`{.action} y elijo la opción «Borradores». En el menú desplegable, selecciono la carpeta "Borradores de mensajes de correo de clientes" para sustituir "Drafts". Los mensajes redactados en esta carpeta se considerarán borradores.
+
+#### Configuración del servidor <a name="server-settings"></a>
 
 En esta pestaña, puede optimizar el espacio ocupado de una cuenta de correo. La opción `Vaciar Papelera al cerrar sesión` permite evitar la acumulación de elementos eliminados. La opción `Directamente eliminar mensajes en SPAM` eliminará automáticamente todos los emails considerados como spam.
 
@@ -176,13 +219,24 @@ En esta pestaña, puede optimizar el espacio ocupado de una cuenta de correo. La
 > 
 > No es recomendable activar la opción `Vaciar Papelera al cerrar sesión`, en caso de que un falso positivo (correo electrónico erróneamente declarado como "spam") se declare como spam para el servidor de recepción. De hecho, cuando un mensaje de correo electrónico se incluye en la carpeta "Correo electrónico", es posible comprobar si el correo es legítimo.
 
-### Gestionar las identidades y su firma <a name="identity"></a>
+#### Cifrado <a name="encryption"></a>
+
+Si su navegador lo permite, puede instalar y activar la extensión "Mailvelope". Se trata de una extensión de navegador que integra el PGP (**P**retty **G**ood **P**rivacy) en su mensajería web. El sistema de cifrado PGP y, por consiguiente, la extensión "Mailvelope" permiten:
+
+- Cifrar y descifrar mensajes de correo en su navegador.
+- Conservar el contenido de sus mensajes de correo en privado con respecto a su proveedor de correo.
+
+Solo usted podrá leer sus mensajes de correo. Esta extensión es una forma de proteger su webmail si recibe mensajes de correo de naturaleza confidencial.
+
+Para más información, consulte las FAQ de "Mailvelope" en <https://mailvelope.com/faq>.
+
+### Gestionar las identidades y su firma <a name="identity-signature"></a>
 
 En Roundcube, haga clic en `Configuración`{.action} en la barra superior y seleccione `Identidades`{.action} en la columna izquierda. "La identidad" permite personalizar los datos enviados a los destinatarios como, por ejemplo, el nombre de muestra o la firma.
 
 ![hosting](images/roundcube07.png){.thumbnail}
 
-#### Configurar atributos de identidad 
+#### Configurar atributos de identidad <a name="identity"></a>
 
 - **Nombre de visualización**: este nombre aparecerá en el apartado "Remitente" del destinatario.
 - **Correo electrónico**: es la dirección desde la que se envía el email.
@@ -197,7 +251,7 @@ En Roundcube, haga clic en `Configuración`{.action} en la barra superior y sele
 > 
 > Completar la casilla **Correo electrónico** con una dirección de correo electrónico distinta de la que está conectado se considera una usurpación de identidad electrónica (*spoofing*). La dirección IP utilizada para el envío podría estar "prohibida" y/o considerarse "spam" ante sus destinatarios. 
 
-#### Añadir una firma
+#### Añadir una firma <a name="signature"></a>
 
 Por defecto, la casilla de `firma` es "texto en claro". Este formato no permite editar o insertar una imagen en la firma. Para disfrutar de las opciones de edición avanzada para una firma, le recomendamos que active el modo HTML haciendo clic en **Firma HTML** bajo el recuadro de entrada.
 
@@ -218,7 +272,7 @@ Haga clic en el botón `< >`{.action} de la barra de herramientas HTML e inserte
 
 ![hosting](images/roundcube08.png){.thumbnail}
 
-### Agenda de contactos
+### Agenda de contactos <a name="contact-book"></a>
 
 En la barra superior, haga clic en `Contactos`{.action} para acceder a la agenda de contactos. Este se divide en **3 columnas**:
 
@@ -255,7 +309,7 @@ Introduzca la información del contacto.
 > [!primary]
 > Puede añadir campos adicionales en el menú desplegable `Añadir campo...`{.action}, situado bajo los campos `Nombre` y `Dirección`.
 
-#### Importar contactos
+#### Importar contactos <a name="import-contacts"></a>
 
 En la barra superior de la ventana de `Contactos`{.action}, haga clic en `importar`{.action} para abrir la ventana de importación.
 
@@ -265,7 +319,7 @@ En la barra superior de la ventana de `Contactos`{.action}, haga clic en `import
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-#### Exportar contactos Roundcube
+#### Exportar contactos <a name="export-contacts"></a>
 
 En la ventana `Contactos`{.action}, haga clic en la flecha situada en la esquina superior derecha del botón `Exportar`{.action}.
 
@@ -290,7 +344,15 @@ Para añadir una respuesta, haga clic en el botón `+`{.action} situado en la pa
 > 
 > Las "respuestas" se redactan en el formato "texto en claro".
 
-### Redacción de un email
+### Añadir un contestador o respuesta automática <a name="automatic-respond"></a>
+
+Desea añadir una respuesta automática a su dirección de correo cuando esté ausente o no esté disponible. Esta función no puede activarse desde el webmail, sino desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la interfaz de gestión de sus direcciones de correo. Consulte nuestra guía "[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
+
+### Cambiar la contraseña de su dirección de correo <a name="password"></a>
+
+Para cambiar la contraseña de una dirección de correo electrónico, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía "[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+
+### Redacción de un email <a name="email-writing"></a>
 
 En la pestaña `Correo electrónico`{.action} de la barra superior, haga clic en `Editar`{.action}.
 
@@ -326,11 +388,29 @@ En la barra superior, puede elegir entre las siguientes acciones:
 
 ![hosting](images/roundcube13.png){.thumbnail}
 
+### casos de uso <a name="usecase"></a>
+
+#### Error de comprobación de solicitud
+
+Cuando intente acceder a su webmail Roundcube, recibirá el siguiente mensaje:
+
+```console
+ERROR DE COMPROBACIÓN DE SOLICITUD
+Para su protección, el acceso a este recurso está protegido contra los ataques CSFR.
+Si ve esto, probablemente no cerró la sesión antes de abandonar la aplicación Web.
+Ahora se requiere la interacción humana para poder continuar.
+Póngase en contacto con el administrador del servidor.
+```
+
+Como verá en el correo electrónico, su cuenta se considerará como que ya ha iniciado sesión. Esto se denomina sesión. Esto significa que su cuenta de correo ya está siendo utilizada por el servidor de correo, y que la sesión anterior debe ser cerrada . Compruebe que su cuenta de correo electrónico no se haya abierto aún en RoundCube. También puede borrar los datos almacenados en caché en su navegador web.
+
 ## Más información
 
 [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Cambiar la contraseña de una dirección de correo MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+
+[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
 [Crear filtros para sus direcciones de correo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 

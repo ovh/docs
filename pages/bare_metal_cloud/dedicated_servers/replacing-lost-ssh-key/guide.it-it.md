@@ -1,7 +1,7 @@
 ---
-title: "Sostituzione del vostro paio di chiavi SSH perduta"
-excerpt: Come recuperare l'accesso SSH al tuo server dedicato
-updated: 2023-02-06
+title: "Sostituzione del vostro paio di chiavi SSH"
+excerpt: "Come ripristinare l’accesso al server in caso di perdita della chiave privata generando una nuova coppia di chiavi SSH"
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-02-06
 
 ## Obiettivo
 
-Se [utilizzi chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated) per connetterti al tuo server dedicato, la perdita della tua chiave SSH privata potrebbe significare la perdita totale dell'accesso al tuo server.
+Se [utilizzi chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated) per connetterti al tuo server, la perdita della tua chiave SSH privata potrebbe significare la perdita totale dell'accesso al tuo server.
 
 Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_cloud/dedicated_servers/rescue_mode), utilizza una password provvisoria che ti permette di modificare i tuoi file.
 
@@ -25,35 +25,28 @@ Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_clou
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
-### Step 1 - Disattiva la chiave SSH corrente
-
-Per accedere al tuo server in modalità Rescue, la chiave SSH attiva deve essere disattivata.
-
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e naviga fino alla sezione `Chiavi SSH`{.action}. Se necessario, consulta la guida ["Creare una chiave SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
-
-La chiave pubblica salvata nello Spazio Cliente è inutile senza la chiave privata corrispondente, puoi quindi eliminarla. Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a destra della chiave e seleziona `Elimina la chiave`{.action}.
-
-![Elimina la chiave](images/replace-lost-key-01.png){.thumbnail}
-
-Nella nuova finestra, clicca su `Conferma`{.action}.
-
-### Step 2 - Crea una nuova coppia di chiavi
+### Step 1 - Crea una nuova coppia di chiavi
 
 Crea una nuova coppia di chiavi SSH sulla tua postazione di lavoro, come descritto nella prima sezione della guida ["Creare una chiave SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-### Step 3 - Accedere al tuo server in modalità Rescue e sostituire la chiave
+<a name="step2"></a>
 
-Segui gli step della guida sulla [modalità Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) per connetterti al tuo server e montare le tue partizioni.
+### Step 2 - Accedere al tuo server in modalità Rescue e sostituire la chiave
+
+Segui gli step della guida sulla modalità Rescue per connetterti al tuo server e montare le tue partizioni:
+
+- [Modalità Rescue server dedicato](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+- [VPS modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
 Quando hai accesso ai tuoi file, apri il file "authorized_keys" in un editor di testo. Questo file salva le chiavi SSH e si trova nella cartella `home` dell'utente connesso al tuo server. (Sostituisci "USER_NAME" con il tuo nome utente)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copia e incolla la tua nuova chiave pubblica (creata allo Step 2) nel file. Il contenuto del file dovrebbe essere simile a questo esempio:
@@ -65,14 +58,18 @@ ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
 EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-Puoi eliminare la catena di chiave "old" (ormai obsoleta) dal file. Salva e lascia l'editor.
+Per motivi di sicurezza, rimuovere la stringa di chiave "old" (ormai obsoleta) dal file. Salva e lascia l'editor.
 
-Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se necessario, consulta la guida ["Attivare e utilizzare il Rescue mode"](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se necessario, consulta la guida ["Attivare e utilizzare il Rescue mode"](#step2).
 
 A questo punto hai accesso al server con la tua nuova coppia di chiavi SSH.
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Modifica la password di root su un server dedicato](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+[Introduzione a SSH ](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Modalità Rescue server dedicato](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[VPS modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

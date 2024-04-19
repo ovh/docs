@@ -15,7 +15,7 @@ Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 - A configuração [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu nome de domínio não está corretamente configurada para o seu diretório alvo
 - A pasta alvo para a qual o seu nome de domínio aponta não contém ficheiros **"index.html"** ou **"index.php"**
 
-![index_of](images/index_of.png){.thumbnail}
+![index_of](images/index-of.png){.thumbnail}
 
 **Descubra como corrigir a apresentação de uma página "Index of".**
 
@@ -23,7 +23,7 @@ Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
@@ -53,11 +53,11 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que 
 
 Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento por [FTP](/pages/web_cloud/web_hosting/ftp_connection). Se o domínio não estiver associado a esta pasta, consulte a coluna `Pasta raiz` do `Multisite`{.action}.
 
-![index_of_multisite](images/index_of_multisite.png){.thumbnail}
+![index_of_multisite](images/root-folders-empty.png){.thumbnail}
 
 Altere a `Pasta raiz` clicando no botão `...`{.action} à direita da tabela e depois em `Modificar o domínio`{.action}:
 
-![modify_domain](images/modify_domain.png){.thumbnail}
+![modify_domain](images/modify-domain.png){.thumbnail}
 
 Na nova janela:
 
@@ -65,7 +65,7 @@ Na nova janela:
 * Indique o diretório que contém o ficheiro **index.php** ou **index.html** do seu site como `Pasta raiz` (2);
 * Clique em `Seguinte` (3).
 
-![change_root_folder](images/change_root_folder01.png){.thumbnail}
+![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -74,17 +74,17 @@ Na nova janela:
 
 Na janela seguinte, clique em `Validar`{.action}.
 
-![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
+![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
 
 Dentro de alguns minutos (refrescando o seu browser), obterá o seguinte resultado:
 
-![multisite_modified](images/multisite_modified.png){.thumbnail}
+![multisite_modified](images/root-folders-full-www.png){.thumbnail}
 
 Por fim, verifique se o seu site está a aparecer corretamente. Caso contrário, reinicie o seu dispositivo e esvazie a cache do seu browser, caso seja necessário.
 
 Certifique-se igualmente de que está presente no seu diretório um ficheiro **index.php** ou **index.html**.
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Resolver os erros mais frequentes associados aos módulos 1 clique](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 

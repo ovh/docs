@@ -29,7 +29,7 @@ Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/
 
 ESXi 7.0 introduit une [option d'amorçage permettant de configurer la taille de la partition système ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur car l'augmentation de la taille de la partition système pouvait poser problème, en particulier sur les machines où les disques sont de petite taille. OVHcloud propose désormais cette fonctionnalité qui est disponible aussi bien depuis l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) que via l'[API OVHcloud](https://ca.api.ovh.com/).
 
-Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n'est possible que sur le premier disque de la grappe de disques sélectionnée pour l'installation (voir « [Choisir une grappe de disques pour installer un système d'exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid) » ), les autres disques pouvant être configurés par la suite par l'utilisateur pour être utilisés pour stocker les machines virtuelles (voir « [Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) » ).
+Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n'est possible que sur le premier disque de la grappe de disques sélectionnée pour l'installation (voir « [API OVHcloud et installation d'un OS - Grappes de disques](/pages/bare_metal_cloud/dedicated_servers/api-os-installation#disk-group) » ), les autres disques pouvant être configurés par la suite par l'utilisateur pour être utilisés pour stocker les machines virtuelles (voir « [Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) » ).
 
 4 valeurs sont possibles :
 
@@ -86,7 +86,7 @@ Ensuite, choisissez `Virtualisation`{.action}, `UNIX`{.action} et sélectionnez 
 > Comme vous pouvez le constater, vous ne pouvez pas cocher l'option `Personnaliser la configuration des partitions`{.action}, comme expliqué ci-dessus.
 >
 
-Choisissez la grappe de disques sur laquelle vous souhaitez qu'ESXi soit installé. Notez que seul le premier disque de la grappe va être utilisé pour installer le système d'exploitation. Retrouvez plus d'information dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/install_hybrid).
+Choisissez la grappe de disques sur laquelle vous souhaitez qu'ESXi soit installé. Notez que seul le premier disque de la grappe va être utilisé pour installer le système d'exploitation. Retrouvez plus d'information dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/api-os-installation#disk-group).
 
 Cliquez sur `Suivant`{.action} pour continuer.
 
@@ -161,9 +161,9 @@ Vous pouvez utiliser l'appel API suivant afin d'obtenir le détail de chaque par
 
 [Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco)
 
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-[Choisir une grappe de disques pour installer un système d'exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
+[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

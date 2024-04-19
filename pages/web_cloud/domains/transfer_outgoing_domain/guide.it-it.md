@@ -59,7 +59,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nella scheda `Informazioni generali`{.action}, visualizzi il cursore `Richiedi Auth info` sotto **Sicurezza**. Di default, questa protezione è `Attiva`{.action}.
 
-![protezione attivata](images/outgoing-transfer-step1.png){.thumbnail}
+![protezione attivata](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Clicca sul cursore e conferma nella nuova finestra che vuoi eliminare questa protezione. Attendi qualche minuto prima che lo stato passi alla `Disattivazione`{.action}.
 
@@ -74,7 +74,7 @@ Clicca sul cursore e conferma nella nuova finestra che vuoi eliminare questa pro
 > Infatti, alcuni *codici di trasferimento* sono direttamente gestiti dal *Registro* dell'estensione del tuo dominio. Un *Registro* è un'organizzazione che gestisce l'insieme dei domini per una determinata estensione. Ad esempio, l'**AFNIC** gestisce l'insieme dei domini con l'estensione "*.fr*". In questo caso, contatta direttamente il *Registro* che gestisce l'estensione del tuo dominio per recuperare il *codice di trasferimento*.
 >
 
-![disattivazione protezione](images/outgoing-transfer-step2.png){.thumbnail}
+![disattivazione protezione](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -92,7 +92,7 @@ Una volta disattivata la protezione contro il trasferimento, puoi recuperare il 
 
 A questo punto compare una finestra con il tuo codice AUTH/INFO (anche chiamato codice di trasferimento, password del dominio, AUTH-CODE o EPP-Code).
 
-![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
+![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 Il codice verrà richiesto dal tuo nuovo Registrar per completare il processo di trasferimento. Puoi verificare i dettagli presso il tuo nuovo Registrar.
 

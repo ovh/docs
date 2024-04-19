@@ -56,7 +56,7 @@ Introduza o seu domínio na barra de pesquisa do seu browser.
 
 Se os ficheiros de origem do WordPress foram corretamente colocados na sua pasta raiz, a página WordPress permite selecionar o idioma:
 
-![hosting](images/WPselectlangue.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-select-language.png){.thumbnail}
 
 Selecione a língua do website e clique em `Continue`{.action}.
 
@@ -64,13 +64,13 @@ Selecione a língua do website e clique em `Continue`{.action}.
 
 O WordPress vai pedir-lhe que obtenha os dados de acesso à sua base de dados:
 
-![hosting](images/WPstart.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-start.png){.thumbnail}
 
 Tenha consigo as credenciais da sua base de dados (se necessário, consulte ***a etapa 1.4** do tutorial para a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation). Depois clique em `Let's go !`{.action} para continuar.
 
 Surge a seguinte página:
 
-![hosting](images/WPdb.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-config-db.png){.thumbnail}
 
 Insira as informações solicitadas relativas à base de dados:
 
@@ -96,7 +96,7 @@ Clique em `Submit`{.action} para validar as informações de ligação à base d
 
 Se tudo correr bem, aparecerá a seguinte página:
 
-![hosting](images/WPafterDB.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-step-after-db-1.png){.thumbnail}
 
 Clique em `Run the installation`{.action}.
 
@@ -106,7 +106,7 @@ Uma vez concluída a instalação, o WordPress irá pedir-lhe informações sobr
 
 Este último permitir-lhe-á aceder ao espaço de administração, comummente denominado "Back-office", do seu CMS WordPress.
 
-![hosting](images/WPafterDB2.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-config-admin-user.png){.thumbnail}
 
 Insira as informações solicitadas:
 
@@ -122,7 +122,7 @@ Clique em `Install WordPress`{.action} logo que as informações estiverem corre
 
 A instalação terminará se aparecer a seguinte página:
 
-![hosting](images/WPend.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-successfull.png){.thumbnail}
 
 Só precisa de clicar no botão `Log in`{.action} para testar o acesso ao "Back-office" do novo CMS WordPress através dos identificadores de administrador previamente criados na etapa 3.3 imediatamente anterior.
 
@@ -135,7 +135,7 @@ Só precisa de clicar no botão `Log in`{.action} para testar o acesso ao "Back-
 
 Uma vez ligado, surge a seguinte página:
 
-![hosting](images/WPadminInterface.png){.thumbnail}
+![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/admin-interface.png){.thumbnail}
 
 > [!success]
 >

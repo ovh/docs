@@ -54,7 +54,7 @@ Também pode adicionar motores de execução suplementares consoante o seu servi
 
 Assim, antes de prosseguir, certifique-se de que dispõe do ou dos motores de execução necessários ao seu projeto.
 
-![cloudweb](images/cloud-web-first-steps-step1.png){.thumbnail}
+![cloudweb](images/edit-runtime.png){.thumbnail}
 
 ### 3 - Criar variáveis de ambiente (facultativo)
 
@@ -64,7 +64,7 @@ Por exemplo, desta forma pode deixar de fora um ficheiro «.env» no framework P
 
 Para adicionar uma variável de ambiente, e ainda posicionado no alojamento Cloud Web em causa, clique no separador `Variáveis de ambiente`{.action}. Um quadro exibirá as variáveis de ambiente criadas no seu serviço. Para adicionar uma nova, clique no botão `Ações`{.action} e depois em `Adicionar uma variável de ambiente`{.action}. Então, siga as indicações em função da variável que deseja criar:
 
-![cloudweb](images/cloud-web-first-steps-step2.png){.thumbnail}
+![cloudweb](images/add-environment-variable.png){.thumbnail}
 
 Se não utiliza um framework de desenvolvimento que integre as variáveis de ambiente, ou se deseja simplesmente verificar o bom funcionamento das suas variáveis, pode criar um script para efetuar esta verificação. Encontrará abaixo dois exemplos que podem ser-lhe úteis, mas que não substituem a ajuda de um webmaster:
 
@@ -109,7 +109,7 @@ Por isso, sugerimos que tenha muita atenção durante a introdução das informa
 
 Repita esta manipulação se deseja adicionar vários domínios ao seu alojamento Cloud Web. Para obter mais informação acerca da adição de um domínio enquanto Multisite, consulte o guia: [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![cloudweb](images/cloud-web-first-steps-step3.png){.thumbnail}
+![cloudweb](images/add-domain-or-subdomain.png){.thumbnail}
 
 ### 5 - Instalar o projeto no alojamento Cloud Web
 
@@ -128,7 +128,7 @@ Para mais informações sobre os módulos, consulte o guia: [Instalar um site co
 > Para utilizar estes últimos, deve imperativamente usar o motor de execução PHP.
 >
 
-![cloudweb](images/cloud-web-first-steps-step4.png){.thumbnail}
+![cloudweb](images/add-a-module.png){.thumbnail}
 
 #### 2. Instalar o seu projeto manualmente
 

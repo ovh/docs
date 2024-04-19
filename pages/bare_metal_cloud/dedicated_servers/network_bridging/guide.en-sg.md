@@ -62,6 +62,8 @@ Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware
 
 ![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
 
+After a few seconds, a virtual MAC will appear in the "Virtual MAC" column of your Additional IP row. This virtual MAC will be required when configuring your VM on the host.
+
 ### Step 2: Determine the gateway address
 
 To configure your virtual machines for internet access, you will need to know the gateway of your host machine (i.e. your dedicated server). The gateway IP address is made up of the first three octets of your server's main IP address, with 254 as the last octet. For example, if your server's main IP address was:

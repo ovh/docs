@@ -142,7 +142,7 @@ root@rescue:~# nvme list
 
 #### Sustituir el disco en frío (requiere una interrupción del servidor)
 
-Si desea solicitar la sustitución de un disco, solo tiene que crear un tíquet a nuestro soporte desde el [área de cliente de OVHcloud](https://ca.ovh.com/manager/dedicated/index.html#/ticket){.external}. Para acelerar el proceso, deberá proporcionar la información obtenida en las pruebas anteriores. Son necesarios los siguientes datos:
+Si desea solicitar la sustitución de un disco, solo tiene que crear un tíquet a nuestro soporte desde el [Centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help). Para acelerar el proceso, deberá proporcionar la información obtenida en las pruebas anteriores. Son necesarios los siguientes datos:
 
 - **Número de serie del disco que quiera sustituir, así como de todos los demás discos**: Para obtener el número de serie del disco, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial){.external}. Si por alguna razón no fuera posible obtener el número de serie del disco, indíquelo en el tíquet y comunique el número de serie del disco o discos que no haya que sustituir. Como ya hemos dicho, es importante indicar el número de serie de todos los discos para evitar errores durante la operación.
 

@@ -1,7 +1,7 @@
 ---
 title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
-updated: 2023-08-18
+updated: 2024-03-26
 ---
 
 ## Objectif
@@ -136,6 +136,9 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 ### Depuis l'API OpenStack
 
 #### Attacher une Floating IP à une instance
+
+> [!success]
+> Cliquez sur les onglets ci-dessous pour afficher et suivre successivement chacune des 9 étapes.
 
 > [!tabs]
 > **Étape 1** 
@@ -320,7 +323,7 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> Comme vous pouvez le constater, la VM n'a qu'une IP privée mais elle est disponible depuis Internet via l'adresse Floating IP.
 >>
 >> ```bash
->> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 1.1.1.1
+>> ubuntu@vm4fip:~$ sudo resolvectl dns ens3 213.186.33.99
 >> ubuntu@vm4fip:~$ curl ifconfig.me/ip
 >> 169.254.10.25
 >> ```
@@ -331,6 +334,9 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> >
 
 #### Ajouter un DNS à une adresse Floating IP
+
+> [!primary]
+> Cette manipulation doit être effectuée **après** avoir suivi les 9 étapes ci-dessus.
 
 Pour ajouter un DNS à une adresse floating IP, exécutez la commande suivante à partir de la ligne de commande:
 

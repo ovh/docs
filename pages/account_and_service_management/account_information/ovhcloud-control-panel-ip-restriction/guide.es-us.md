@@ -30,7 +30,7 @@ Esta opción, combinada con la seguridad de su cuenta mediante una [doble autent
   
 ## Procedimiento
 
-### Etapa 1 - recuperar las direcciones IP públicas autorizadas a acceder al área de cliente de OVHcloud
+### Etapa 1 - Recuperar las direcciones IP públicas autorizadas a acceder al área de cliente de OVHcloud
 
 Existen dos tipos de direcciones IP:
 
@@ -54,7 +54,7 @@ Si utiliza una red 4G/5G como complemento, no olvide recuperar también la direc
 > **Antes** de aplicar una restricción por IP en su área de cliente de OVHcloud, compruebe con su proveedor de acceso a internet que las direcciones IP recuperadas anteriormente son efectivamente direcciones IP **fijas**. De lo contrario, podría perder rápidamente el acceso al área de cliente de OVHcloud declarando una IP dinámica.
 >
 
-### Etapa 2: aplicar una restricción de acceso por IP
+### Etapa 2: Aplicar una restricción de acceso por IP
 
 Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en su `Nombre y apellido` situado en la parte superior derecha **después** en sus `iniciales` en la columna azul que aparece a la derecha.
 

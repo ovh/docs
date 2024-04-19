@@ -88,7 +88,7 @@ Visto que nenhum sistema de proteção anti-SPAM automático consegue decidir co
 
 > [!primary]
 >
-Tenha em atenção que os falsos positivos de SPAM não podem ser declarados através do OWA. Se receber e-mails falsamente assinalados como \[SPAM], recomendamos que informe o nosso Apoio ao Cliente solicitando um pedido de assistência através da sua [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new).  
+Tenha em atenção que os falsos positivos de SPAM não podem ser declarados através do OWA. Se receber e-mails falsamente assinalados como \[SPAM], recomendamos que informe o nosso Apoio ao Cliente solicitando um [pedido de assistência através](https://help.ovhcloud.com/csm?id=csm_get_help).  
 >
 
 ## Vá mais longe

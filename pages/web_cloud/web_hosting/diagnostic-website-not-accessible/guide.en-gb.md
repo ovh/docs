@@ -6,21 +6,21 @@ updated: 2022-08-02
 
 ## Objective
 
-Several error messages may appear on your browser in the event of your site being inaccessible. The examples below indicate an incorrect configuration of your [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) or a suspended domain (if your website does not display one of the error messages described here, see the [Go further](#gofurther) section of this guide):
+Several error messages may appear on your browser in the event of your site being inaccessible. The examples below indicate an incorrect configuration of your [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) or a suspended domain (if your website does not display one of the error messages described here, see the [Go further](#go-further) section of this guide):
 
 |Browser|Error Message|
 |-|---|
-|Chrome:<br>"This site can't be reached"|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
-|Firefox:<br>"Hmm. We're having trouble finding that site."|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
-|Edge:<br>"Hmmm... can't reach this page"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
-|Safari:<br>"Safari Can't Find the Server"|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
+|Chrome:<br>"This site can't be reached"|![cantbereached_chrome](images/cant-be-reached-chrome.png){.thumbnail}|
+|Firefox:<br>"Hmm. We're having trouble finding that site."|![cantbereached_firefox](images/cant-be-reached-firefox.png){.thumbnail}|
+|Edge:<br>"Hmmm... can't reach this page"|![cantbereached_edge](images/cant-be-reached-edge.png){.thumbnail}|
+|Safari:<br>"Safari Can't Find the Server"|![cantbereached_safari](images/cant-be-reached-safari.png){.thumbnail}|
 
 **This guide explains how to resolve common "This site can't be reached" type errors.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -59,11 +59,11 @@ To check that your [DNS servers](/pages/web_cloud/domains/dns_server_general_inf
 
 Check the servers listed in the `DNS servers`{.action} tab:
 
-![srv-dns-ok2](images/srv-dns-ok2.png){.thumbnail}
+![srv-dns-ok2](images/name-dns-server.png){.thumbnail}
 
 If they are identical to the targets of the `NS` type entries in the `DNS zone`{.action}, go to [step 3](#step3):
 
-![srv-dns-ok](images/srv-dns-ok.png){.thumbnail}
+![srv-dns-ok](images/dashboard-entry-ns.png){.thumbnail}
 
 #### Scenario 2: A warning appears above the DNS zone
 
@@ -71,7 +71,7 @@ A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by 
 
 - Under the sentence "You currently use the following DNS servers", the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (in which "**?**" stands for a double-digit number):
 
-![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
+![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}
 
 Modify the DNS servers as described in [this guide](/pages/web_cloud/domains/dns_server_general_information#modifying-dns-servers), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
 
@@ -79,7 +79,7 @@ Your website will then be available within a maximum of 48 hours.
 
 - Under the sentence "You currently use the following DNS servers", the servers listed are not "ns **?** .ovh.net" and "dns **?** .ovh.net".
 
-![warning_external_dns_srv](images/warning_external_dns_srv.png){.thumbnail}
+![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}
 
 > [!warning]
 >
@@ -92,17 +92,17 @@ Your website will then be available within a maximum of 48 hours.
 
 Your domain’s `DNS zone`{.action} does not contain any `NS` record:
 
-![srv_dns_missing](images/srv_dns_missing.png){.thumbnail}
+![srv_dns_missing](images/dashboard-entry-ns-missing.png){.thumbnail}
 
 Back up the current zone by clicking on the `Change in text format`{.action} button:
 
-![change_DNS_zone_change_text_format](images/change_DNS_zone_change_text_format.png){.thumbnail}
+![change_DNS_zone_change_text_format](images/change-in-text-format.png){.thumbnail}
 
 Then copy and paste the content of your `DNS zone`{.action} into a text document on your computer.
 
 Then click on `Reset my DNS zone`{.action} and select `No, but I want to reset my DNS zone`{.action}. Select your email and hosting servers and click on `Confirm`{.action}.
 
-![change_DNS_zone_reset](images/change_DNS_zone_reset.png){.thumbnail}
+![change_DNS_zone_reset](images/reset-my-dns-zone.png){.thumbnail}
 
 Your website will then be available again within a maximum of 24 hours.
 
@@ -116,15 +116,15 @@ If your site is hosted on one of our [Web Hosting offers](https://www.ovhcloud.c
 
 In the `General information`{.action} tab, copy the IPv4 and/or IPv6 address of your domain name.
 
-![ipv4-6](images/ipv4-6.png){.thumbnail}
+![find-ipv4-and-ipv6](images/find-ipv4-and-ipv6.png){.thumbnail}
 
 Then refer to it in your domain’s [DNS zone](/pages/web_cloud/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone), by modifying or creating one or more `A` entries.
 
-![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
+![ipv4-DNSzone](images/dashboard-entry-a.png){.thumbnail}
 
 Your website will then be available within a maximum of 24 hours.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Resolving a “Site not installed” error](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 

@@ -1,11 +1,11 @@
 ---
 title: "Włączanie darmowy hosting 100M"
 excerpt: "Dowiedz się, jak włączyć darmowy hosting 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie 
@@ -32,11 +32,11 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 W ramce **Informacje ogólne** znajduje się pozycja *Darmowy hosting WWW i e-mail*. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Włącz`{.action}.
 
-![free100m](images/start10m-step1-01.png){.thumbnail}
+![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 
 Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie oferty i cennika. Kliknij przycisk `Dalej`{.action}. W **etapie 2** wybierz zmiany, jakie mają zostać wprowadzone w strefie DNS:
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >

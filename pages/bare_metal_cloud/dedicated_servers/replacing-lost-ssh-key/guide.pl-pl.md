@@ -1,7 +1,7 @@
 ---
-title: "Wymiana utraconej pary kluczy SSH"
-excerpt: "Dowiedz się, jak pobrać dostęp SSH do serwera dedykowanego"
-updated: 2023-02-06
+title: "Jak zastąpić parę kluczy SSH"
+excerpt: "Dowiedz się, jak przywrócić dostęp do serwera w przypadku utraty klucza prywatnego przez wygenerowanie nowej pary kluczy SSH"
+updated: 2024-04-04
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-02-06
 
 ## Wprowadzenie
 
-Jeśli do [połączenia z serwerem dedykowanym używasz kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated), utrata prywatnego klucza SSH może oznaczać całkowitą utratę dostępu do serwera.
+Jeśli do [połączenia z serwerem używasz kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated), utrata prywatnego klucza SSH może oznaczać całkowitą utratę dostępu do serwera.
 
 Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pages/bare_metal_cloud/dedicated_servers/rescue_mode), używając hasła, które umożliwi Ci zmianę plików.
 
@@ -25,35 +25,28 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) na Twoim koncie OVHcloud
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
-### Etap 1 - Wyłącz aktualny klucz SSH
+### Etap 1 - Tworzenie nowej pary kluczy
 
-Aby uzyskać dostęp do serwera w trybie Rescue, należy najpierw wyłączyć aktywny klucz SSH.
+Utwórz nową parę kluczy SSH na Twoim komputerze, opisaną w pierwszej części przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Klucze SSH`{.action}. W razie potrzeby skorzystaj z naszego przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
+<a name="step2"></a>
 
-Klucz publiczny przechowywany w Panelu klienta jest niepotrzebny bez odpowiedniego klucza prywatnego, możesz więc go usunąć. Kliknij przycisk <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie klucza i wybierz `Usuń klucz`{.action}.
+### Etap 2 - Dostęp do serwera w trybie Rescue i wymiana klucza
 
-![Usuń klucz](images/replace-lost-key-01.png){.thumbnail}
+Postępuj zgodnie z instrukcjami zawartymi w przewodniku dotyczącym trybu Rescue, aby połączyć się z Twoim serwerem i zamontować partycje:
 
-W oknie, które się wyświetli kliknij `Zatwierdź`{.action}.
+- [Tryb Rescue dla serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+- [VPS w trybie rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-### Etap 2 - Tworzenie nowej pary kluczy
-
-Utwórz nową parę kluczy SSH na Twoim komputerze, opisaną w pierwszej części przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
-
-### Etap 3 - Dostęp do serwera w trybie Rescue i wymiana klucza
-
-Postępuj zgodnie z instrukcjami zawartymi w przewodniku dotyczącym [trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode), aby połączyć się z Twoim serwerem i zamontować partycje.
-
-Po uzyskaniu dostępu do plików otwórz odpowiedni plik "authorized_keys" w edytorze tekstu. Plik ten przechowuje klucze SSH i znajduje się w katalogu `home` użytkownika podłączonego do Twojego serwera. (Zastąp "USER_NAME" nazwą użytkownika)
+Po uzyskaniu dostępu do plików otwórz odpowiedni plik "authorized_keys" w edytorze tekstu. Plik ten przechowuje klucze SSH i znajduje się w katalogu `home` użytkownika podłączonego do Twojego serwera. (Zastąp "USER_NAME" nazwą użytkownika.)
 
 ```bash
-sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Skopiuj i wklej nowy klucz publiczny (utworzony w etapie 2) do pliku. Zawartość pliku powinna wyglądać jak następujący przykład:
@@ -65,14 +58,18 @@ ssh-rsa AAAAAAAAAABBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDEEEEOG
 EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 ```
 
-Możesz usunąć ciąg "old" (obecnie przestarzały) z pliku. Zapisz i wyjdź z edytora.
+Ze względów bezpieczeństwa usuń z pliku ciąg klucza "old" (obecnie przestarzały). Zapisz i wyjdź z edytora.
 
-Przywróć tryb "normalny" i zrestartuj serwer w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W razie potrzeby zapoznaj się z przewodnikiem ["Aktywuj i użyj trybu Rescue"](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+Przywróć tryb "normalny" i zrestartuj serwer w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W razie potrzeby zapoznaj się z przewodnikiem ["Aktywuj i użyj trybu Rescue"](#step2).
 
 Teraz masz dostęp do serwera z nową parą kluczy SSH.
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Zmiana hasła root na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
+[Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+
+[Tryb Rescue dla serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[VPS w trybie rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

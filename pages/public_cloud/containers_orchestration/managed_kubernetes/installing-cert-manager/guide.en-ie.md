@@ -1,7 +1,7 @@
 ---
 title: Installing cert-manager on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
-updated: 2022-06-27
+updated: 2024-01-18
 ---
 
 ## Objective
@@ -67,13 +67,13 @@ $ helm install \
   --create-namespace \
  --set installCRDs=true
 NAME: cert-manager
-LAST DEPLOYED: Fri Mar 25 14:30:50 2022
+LAST DEPLOYED: Thu Jan 18 15:28:23 2024
 NAMESPACE: cert-manager
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
-cert-manager v1.7.2 has been deployed successfully!
+cert-manager v1.13.3 has been deployed successfully!
 
 In order to begin issuing certificates, you will need to set up a ClusterIssuer
 or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).

@@ -36,11 +36,11 @@ Para utilizar a opção de geolocalização por IP, ligue-se ao seu [Área de Cl
 Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento correspondente na lista.<br>
 A seguir, clique no separador `Multisite`{.action} e, a seguir, no botão `...`{.action} à direita do seu domínio na tabela. Por fim, clique em `Modificar o domínio`{.action}.
 
-![hosting multi-sites](images/hosting_multisites.png){.thumbnail}
+![hosting multi-sites](images/modify-a-domain.png){.thumbnail}
 
 Na nova janela, selecione a opção `IP do país`{.action} para fazer aparecer o menu pendente.
 
-![geolocation opção](images/geolocation_option.png){.thumbnail}
+![geolocation opção](images/country-ip-selection.png){.thumbnail}
 
 Escolha o endereço IP do país para o qual deseja geolocalizar o seu site, entre os 12 países propostos: *República Checa, Finlândia, França, Alemanha, Irlanda, Itália, Lituânia, Países Baixos, Polónia, Portugal, Espanha e Reino Unido*.
 

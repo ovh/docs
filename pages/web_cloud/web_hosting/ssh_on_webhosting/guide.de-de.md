@@ -1,7 +1,7 @@
 ---
-title: 'SSH-Zugang Ihres Webhostings verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen'
-updated: 2022-01-19
+title: "SSH-Zugang Ihres Webhostings verwenden"
+excerpt: "Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen"
+updated: 2024-01-30
 ---
 
 > [!primary]
@@ -32,7 +32,7 @@ Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/aut
 
 Gehen Sie in der angezeigten Tabelle zur Spalte „SSH“ und überprüfen Sie, dass der betreffende SSH-Benutzer (oder „Login“) über einen aktiven SSH-Zugang verfügt. Ist das nicht der Fall, wird der Status „Deaktiviert“ angezeigt.
 
-![SSH verwenden](images/use-ssh-step1.png){.thumbnail}
+![SSH verwenden](images/tab-ssh.png){.thumbnail}
 
 Ist der SSH-Zugang nicht aktiv, klicken Sie rechts neben dem betreffenden Benutzer auf den Button `...`{.action} und dann auf `Bearbeiten`{.action}. Aktivieren Sie im daraufhin angezeigten Fenster den SSH-Zugang und schließen Sie die Änderung ab. Wenn Sie den Zugang nicht aktivieren können, überprüfen Sie, dass [Ihr OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} über einen SSH-Zugang verfügt.
 
@@ -68,7 +68,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren)“ übergehen.
 
-![SSH verwenden](images/use-ssh-step3.png){.thumbnail}
+![SSH verwenden](images/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2 Über eine Anwendung
 
@@ -105,13 +105,23 @@ Sie können über einen Befehl auch ein Skript ausführen, indem Sie eine bestim
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in den unten aufgeführten Anleitungen.
+Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in den unten aufgeführten Anleitungen : [Webhosting : umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+
+> [!primary]
+>
+> Dateien und Ordner können auch mit dem **S**ecure **C**opy **P**rotocol (**SCP**) kopiert werden.
+> Dieses Protokoll verwendet das SSH-Protokoll, um Inhalte sicher zu duplizieren zwischen:
+>
+> - Lokaler Computer/Gerät und Remote-Server
+> - Remote-Serverund lokaler Computer/Gerät
+> - Zwei Remote-Server
+>
+> Weitere Informationen zur Verwendung des Befehls `scp` mit unseren OVHcloud Webhostings finden Sie in unserer Anleitung "[Webhosting - Kopieren von Dateien mit dem Befehl SCP](/pages/web_cloud/web_hosting/using-scp-command)"
+>
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Webhosting : umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -1,14 +1,14 @@
 ---
 title: "How to create a subdomain"
 excerpt: "Find out how to define a subdomain and how to create one at OVHcloud"
-updated: 2023-11-28
+updated: 2024-03-05
 ---
 
 ## Objective <a name="goal"></a>
 
-The internet is made up of *servers* and *devices* that interact with each other via a global network. When these *servers* and their *devices* are connected to the internet, they are assigned a *public IP address* (equivalent to a postal address). With this *IP address*, you can connect to a server or device remotely. As a result, a user can access a website by entering this *IP address* using the web browser installed on their computer.
+The internet is made up of servers and devices that interact with each other via a global network. When these *servers* and their devices are connected to the internet, they are assigned a **public IP address** (equivalent to a postal address). With this IP address, you can connect to a server or device remotely. As a result, a user can access a website by entering this IP address using the web browser installed on their computer.
 
-**Domain names** were introduced to make it easier for users of the internet to access a website. Indeed, it is easier to remember a name composed of a string of chosen characters (example: ovhcloud.com), rather than a series of numbers that make up an *IP address* (example: 54.39.46.56).
+**Domain names** were introduced to make it easier for users of the internet to access a website. Indeed, it is easier to remember a name composed of a string of chosen characters (example: ovhcloud.com), rather than a series of numbers that make up an IP address (example: 54.39.46.56).
 
 A **domain name** is made up of levels. These levels are usually separated by a `.` (with the exception of some **extensions** of the *first level* such as the *.co.uk*, *.gouv.fr* or *.notaires.fr*):
 
@@ -21,7 +21,7 @@ A **domain name** is made up of levels. These levels are usually separated by a 
 
 - **S**econd **L**evel **D**omain (**SLD**): Represents *second level* domains. We call them **labels**. When you order a domain name, you can freely set the **label** (provided that it has not already been registered by another user on the same extension and within the limit of 63 characters). For example, *ovhcloud* corresponds to the domain name label *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): Labels from this third level on are called *subdomain*. In this guide, we will describe its definition, and explain how you can implement it with your various services.
+- Third Level Domain (**subdomain**): Labels from this third level on are called **subdomain**. In this guide, we will describe its definition, and explain how you can implement it with your various services.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
@@ -89,13 +89,13 @@ There are two possible scenarios:
 >
 > 1: To identify the location of the active DNS zone for a domain name registered with OVHcloud, you can use our guide “[Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)”.
 >
-> 2: If your domain name is not registered with OVHcloud, contact your domain name’s current *registrar* to find out where the active DNS zone is hosted.
+> 2: If your domain name is not registered with OVHcloud, contact your domain name’s current *registrar* to find out where the active DNS zone is hosted. Please note that you can use our guide on [Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) if you would like to perform this action.
 >
 
 If the DNS servers declared for your domain name have one of the following two forms:
 
-- *dnsXX.ovh.net* and *nsXX.ovh.net* (where each of the "X" represents a number)
-- *dns200.anycast.me* and *ns200.anycast.me*
+- `dnsXX.ovh.net` and `nsXX.ovh.net` (where each of the "X" represents a number)
+- `dns200.anycast.me` and `ns200.anycast.me`
 
 This means that your domain name’s active DNS zone is active with OVHcloud.
 
@@ -143,7 +143,7 @@ For more details on setting up a domain or subdomain on a web hosting plan, plea
 
 > [!warning]
 >
-> Adding a domain or subdomain to a multisite may require a validation *token* to be set up. For a subdomain, the same *token* is not taken into account and must be added not for the subdomain but for the domain name. In this case, you can add the *token* as a TXT record for the domain name in your domain name’s active DNS zone.
+> Adding a domain or subdomain to a multisite may require a validation token to be set up. For a subdomain, the same token is not taken into account and must be added not for the subdomain but for the domain name. In this case, you can add the token as a TXT record for the domain name in your domain name’s active DNS zone.
 >
 
 #### Case 2 - Create Exchange email addresses with a subdomain

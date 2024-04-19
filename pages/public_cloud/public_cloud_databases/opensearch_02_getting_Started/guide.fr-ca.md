@@ -60,7 +60,6 @@ Take note of the pricing information and click on `Next`{.action} to continue.
 #### Step 5: Configure your options
 
 You can name your database in this step and decide to attach a public or private network. 
-Please note that attaching to a private network is a feature we are currently working on and public is the only network option available at this time.
 
 #### Step 6: Review and confirm
 
@@ -72,7 +71,7 @@ In a matter of minutes, your new database service will be deployed. Messages in 
 
 ### Configure the OpenSearch service
 
-Once the Public Cloud Databases for OpenSearch service is up and running, you will have to define at least one user and one authorised IP in order to fully connect to the service.
+Once the Public Cloud Databases for OpenSearch service is up and running, you will have to define at least one user and one authorized IP in order to fully connect to the service.
 
 The `General information`{.action} tab should inform you to create users and authorized IPs.
 
@@ -111,7 +110,7 @@ Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new 
 You can edit and remove database access via the `...`{.action} button in the IP table.
 
 If you don't know how to get your IP, please visit a website such as [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
-Copy the IP address numbers shown on this website and save them for later.
+Copy the IP address shown on this website and save them for later.
 
 Your OpenSearch service is now fully accessible!
 
@@ -184,7 +183,7 @@ You can restore and delete backups via the `...`{.action} button.
 ### Connection to the OpenSearch Dashboard
 
 > [!warning]
-> Verify that the IP address visible from your browser application is part of the "Authorised IPs" defined for this OpenSearch Database service.
+> Verify that the IP address visible from your browser application is part of the "Authorized IPs" defined for this OpenSearch Database service.
 
 From the *General information* tab from the Public Cloud Databases for OpenSearch service, you can get the Kibana service URI. Use it to combine with the user login and password in a web browser and you will go to this page:
 
@@ -227,7 +226,7 @@ Once the service is up and configured, you can try to connect from a remote sess
 - the URI of the OpenSearch database service. It can be found in the `General information`{.action} tab.
 
 > [!warning]
-> Verify that the IP address of your system running the cURL command is part of the Authorised IPs defined for this OpenSearch Database service.
+> Verify that the IP address of your system running the cURL command is part of the Authorized IPs defined for this OpenSearch Database service.
 
 Once ready, try this in a command line, with your personal user and password:
 

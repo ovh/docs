@@ -1,5 +1,5 @@
 ---
-title: Données - Conformité S3 avec les AI Tools (EN)
+title: Données - Conformité S3 avec les Produits IA (EN)
 excerpt: Apprendre à utiliser les buckets S3 avec les AI Tools
 updated: 2023-08-22
 ---
@@ -28,7 +28,7 @@ First of all, you must have an S3-user with the correct rights to manage S3 buck
 
 To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
 
-Here, you can create your S3 user by clicking on `Create User`{.action}. If you already have OpenStack users, you can use them to use S3 buckets, instead of creating a new one.
+Here, you can create your S3 user by clicking on `Create User`{.action}. If you already have AI Platform users, you can use them to use S3 buckets, instead of creating a new one.
 
 > [!warning]
 >

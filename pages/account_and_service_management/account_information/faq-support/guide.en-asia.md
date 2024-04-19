@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Support FAQ
 excerpt: Find the most frequently asked questions about the OVHcloud support
-updated: 2022-11-10
+updated: 2024-01-11
 ---
 
 ## Objective
@@ -10,13 +10,19 @@ Find the most frequently asked questions about the OVHcloud support.
 
 ### What should I do if I can't reach support by phone?
 
-To avoid waiting on the phone, please create a support request via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). A contact form is available in the banner on the right at the bottom, via the “Create a ticket” link.
+To avoid waiting on the phone, please create a support request via the [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help). Click on the button `Create a ticket`{.action}.
 
-You can also refer to our documentation (FAQs, guides, diagnostic tools, etc.) in the Help Centre.
+You can also refer to our documentation (FAQs, guides, diagnostic tools, etc.) in the [Help Center](https://help.ovhcloud.com/csm/asia-documentation?id=kb_home).
 
 ### Why has the ticket creation form changed?
 
 The aim of this new form is to make the ticket creation process more comprehensive and accurate, with a questionnaire. This means we can classify your requests more efficiently in accordance with the service type, your support requirements, and how critical they are. It also avoids time-consuming back-and-forth between you and our teams.
+
+### How can I send documents and other files to the OVHcloud support?
+
+You can transmit files in these formats (max. size: 1024 MB): bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
+
+Create a support request in the [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) and attach your files.
 
 ### Where can I find my support level?
 

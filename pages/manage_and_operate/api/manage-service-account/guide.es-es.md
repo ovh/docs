@@ -1,10 +1,8 @@
 ---
 title: "Managing OVHcloud service accounts via the API (EN)"
 excerpt: "How to create and use a token to connect to all OVHcloud APIs"
-updated: 2023-08-24
+updated: 2024-03-05
 ---
-
-
 
 ## Objective
 
@@ -13,9 +11,9 @@ Access to OVHcloud products can be configured within **access policies**, which 
 When API access is required from applications or code, it is necessary to generate specific credentials in order not to link them to a user. You don't want to reset your scripts in production if your user changes their credentials or leaves your company.
 
 This guide will explain how to generate credentials to deploy within your code, as well as their use in OVHcloud access policies.
-These credentials can be used within the different APIs of our products: 
+These credentials can be used within the different APIs of our products:
 
-- OVHcloud API: [How to authenticate on the OVHcloud API with Oauth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
+- OVHcloud API: [How to authenticate on the OVHcloud API with OAuth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
 - OpenStack API: [How to use service accounts to connect to OpenStack](/pages/manage_and_operate/iam/authenticate-api-openstack-with-service-account).
 
 ## Requirements
@@ -26,9 +24,13 @@ These credentials can be used within the different APIs of our products:
 
 ## Instructions
 
+### Understanding identities
+
+Service accounts are one of the types of identities that can be set up on your OVHcloud account. Other account types are described in the [related documentation](/pages/manage_and_operate/iam/identities-management).
+
 ### How service accounts work
 
-OVHcloud service accounts are a username/token couple that allow your code to authenticate with OVHcloud APIs. These credentials follow the Oauth2 protocol by following the **client credential** authentication mechanism.
+OVHcloud service accounts are a username/token couple that allow your code to authenticate with OVHcloud APIs. These credentials follow the OAuth2 protocol by following the **client credential** authentication mechanism.
 
 This identifier/token pair has no time limit. It is therefore ideal for use within a code deployed in production. Of course, you can revoke the access associated with this service account at any time by modifying the associated access policies or by deleting this service account.
 
@@ -49,12 +51,12 @@ To create a service account, use the following API call:
 > @api {v1} /me POST /me/api/oauth2/client
 >
 
-With this API call, you can create Oauth2 credentials for several authentication mechanisms. The one we are interested in here is **CLIENT_CREDENTIALS**. This mechanism does not require a callback URL.
+With this API call, you can create OAuth2 credentials for several authentication mechanisms. The one we are interested in here is **CLIENT_CREDENTIALS**. This mechanism does not require a callback URL.
 
 You must supply the following values:
 
 - **callbackUrls**: an empty array of callback urls `[]`
-- **flow**: "CLIENT_CREDENTIALS"
+- **flow**: `CLIENT_CREDENTIALS`
 - **name**: the name you would like to provide to your identifier
 - **description**: a description of your identifier. We recommend describing how you will use this identifier. If you audit your access in the future, it is easier to link it to your application name, so that you can easily find out where the identifier is deployed (and what the impact will be if you change your access).
 
@@ -75,7 +77,7 @@ In this call, you will have access to the **identity** value in the form of a UR
 
 This URN is of the following form:
 
-urn:v1:*<eu|ca>*:identity:credential:*<xx11111-ovh>*/oauth2-*<clientId>*
+`urn:v1:*<eu|ca>*:identity:credential:*<xx11111-ovh>*/oauth2-*<clientId>*`
 
 #### Delete a service account
 
@@ -89,7 +91,7 @@ If you no longer use a service account, or want to permanently delete this acces
 > [!warning]
 >
 > Warning: this action is permanent. If you would like to cancel it, you will need to create a new service account and deploy the username/token pair within your application.
-> 
+>
 > To delete access, we recommend detaching all access policies from this service account. This action is reversible, and allows you to cancel in case of an error. Once you have ensured that this service account is not used in production, you can delete it without fear.
 >
 
@@ -141,7 +143,7 @@ This example can be used directly within the following call to create a new poli
 
 Service accounts are available in several APIs of our products. For each API, there is a guide:
 
-- [How to authenticate on the OVHcloud API with Oauth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account)
+- [How to authenticate on the OVHcloud API with OAuth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account)
 - [How to use service accounts to connect to OpenStack](/pages/manage_and_operate/iam/authenticate-api-openstack-with-service-account)
 
 ## Go further

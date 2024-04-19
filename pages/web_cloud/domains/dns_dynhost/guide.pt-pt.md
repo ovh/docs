@@ -1,7 +1,7 @@
 ---
 title: "Configurar um DNS dinâmico (DynHost/DynDNS) para o seu nome de domínio"
 excerpt: "Saiba como configurar um registo DNS dinâmico para o seu nome de domínio OVHcloud"
-updated: 2023-08-16
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 
 Para criar um utilizador DynHost, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web cloud`{.action}. Na coluna da esquerda, clique no separador `Nomes de domínio`{.action} e selecione o domínio em causa. Na página que aparece, clique no separador `DynHost`{.action}.
 
-![dynhost](images/use-dynhost-step1.png){.thumbnail}
+![dynhost](images/tab.png){.thumbnail}
 
 A seguir, clique no botão `Gerir os acessos`{.action} e, a seguir, em `Criar um identificador`{.action}. Na nova janela, preencha as informações necessárias:
 
@@ -69,7 +69,7 @@ A seguir, clique no botão `Gerir os acessos`{.action} e, a seguir, em `Criar um
 
 Depois de preencher os campos, clique no botão `Validar`{.action}. O identificador aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de dados DynHost adicionais.
 
-![dynhost](images/use-dynhost-step2.png){.thumbnail}
+![dynhost](images/create-a-dynhost-username.png){.thumbnail}
 
 ### Etapa 2: criar o registo DNS dinâmico (DynHost) <a name="step2"></a>
 
@@ -89,7 +89,7 @@ Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost
 
 Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de mais registos DynHost.
 
-![dynhost](images/use-dynhost-step3.png){.thumbnail}
+![dynhost](images/create-a-dynhost.png){.thumbnail}
 
 ### Etapa 3: automatizar a alteração do DynHost
 
@@ -110,7 +110,9 @@ Depois de escolher e instalar o cliente, deverá configurá-lo através das info
 
 Consoante o cliente utilizado, pode ser necessário um endereço URL de atualização para além dos elementos do utilizador DynHost e do subdomínio em causa. Se for este o caso, utilize o seguinte endereço URL para substituir as informações genéricas:
 
-`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
+```bash
+https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
 
 |Informações|Substituir por|
 |---|---|
@@ -124,7 +126,7 @@ Pode verificar se o endereço IP de destino foi atualizado. Para isso, aceda à 
 > Qualquer alteração na zona DNS ativa de um nome de domínio pode causar um atraso de 4 a 24 horas na propagação da atualização.
 >
 
-![dynhost](images/use-dynhost-step4.png){.thumbnail}
+![dynhost](images/target.png){.thumbnail}
 
 ## Quer saber mais? <a name="go-further"></a>
 

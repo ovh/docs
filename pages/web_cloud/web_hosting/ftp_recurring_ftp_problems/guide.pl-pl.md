@@ -5,7 +5,7 @@ updated: 2022-01-05
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie 
@@ -30,7 +30,7 @@ Korzystanie z oprogramowania FTP podczas logowania do [hostingu Cloud](https://w
 
 ### "Ten serwer nie obsługuje FTP na TLS" (FileZilla)
 
-![filezilla_error](images/filezilla_error.png){.thumbnail}
+![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 Ten komunikat w programie [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) wskazuje, że nie włączyłeś opcji SFTP lub SSH w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W związku z tym informacje wymieniane między serwerem hostingowym OVHcloud a komputerem nie będą szyfrowane.
 
@@ -67,7 +67,7 @@ Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, zaloguj się d
 
 Ilość danych zapisanych na serwerze hostingowym (poza bazami danych) wyświetla się w części `Informacje ogólne`{.action} > `Przestrzeń dyskowa`.
 
-![disk_space](images/disk_space.png){.thumbnail}
+![disk_space](images/find-disk-space.png){.thumbnail}
 
 ### Nie mogę przenieść moich plików na serwer FTP.
 
@@ -83,7 +83,7 @@ Jeśli dysponujesz [formułą Pro](https://www.ovhcloud.com/pl/web-hosting/profe
 
 Link jest domyślnie zainstalowany na hostingu OVHcloud. Wyświetla się go:
 
-![site_under_construction](images/site_under_construction.png){.thumbnail}
+![site-under-construction](images/site-under-construction.png){.thumbnail}
 
 Jeśli nie korzystałeś z funkcji "[Moduł za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" do tworzenia Twojej strony WWW, powinieneś użyć oprogramowania [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-logowanie-przez-ftp-explorer) dostępnego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby ręcznie usunąć stronę "Strona w budowie".
 

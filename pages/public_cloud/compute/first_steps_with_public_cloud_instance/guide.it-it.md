@@ -1,7 +1,7 @@
 ---
 title: Gestire le istanze Public Cloud
 excerpt: Come gestire le istanze Public Cloud dallo Spazio Cliente OVHcloud
-updated: 2023-01-04
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca sulle `Instances`{.action} nel menu a sinistra. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 In questa pagina sono elencate tutte le tue istanze Public Cloud e alcune delle loro proprietà:
 
@@ -36,7 +36,8 @@ In questa pagina sono elencate tutte le tue istanze Public Cloud e alcune delle 
 - localizzazione del datacenter, cioè la regione dell'istanza;
 - il modello dell'istanza;
 - l'immagine, cioè il sistema operativo installato sull'istanza;
-- indirizzo IPv4 dell'istanza
+- indirizzo IPv4 dell'istanza;
+- l'indirizzo privato attualmente collegato all'istanza;
 - i volumi (dischi) aggiuntivi attualmente associati all'istanza;
 - lo stato dell'istanza, che indica se è allo stato `Attivato`.
 
@@ -73,13 +74,13 @@ Clicca su `Crea un backup automatizzato`{.action}.
 
 Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/public_cloud/compute/save_an_instance#creare-un-backup-automatizzato-di-unistanza).
 
-#### Sospendi un'istanza
+#### Arrestare un'istanza
 
-Clicca su `Arrestare`{.action}.
+Clicca su `Arresta`{.action}.
 
-L'azione sospenderà l'istanza. Per maggiori informazioni, consulta la nostra guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#nello-spazio-cliente-ovhcloud).
+In questo modo l'istanza passerà allo stato `Spento`, ma all'utente verrà comunque addebitato lo stesso prezzo per l'istanza. Per maggiori informazioni, consulta la nostra guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#nello-spazio-cliente-ovhcloud).
 
-Clicca su `Avvia`{.action} per riattivare l'istanza.
+Clicca su `Comincia ora`{.action} per riattivare l'istanza.
 
 #### Utilizza la modalità Rescue
 
@@ -100,9 +101,9 @@ Conferma la richiesta di riavvio nella nuova finestra.
 
 #### Sospendere (*shelve*) un'istanza
 
-Clicca su `Sospendere`{.action}.
+Clicca su `Sospesa`{.action}.
 
-Questa azione posizionerà l'istanza nello stato "*shelved*", visualizzato come `Suspended`. Per maggiori informazioni sui diversi stati di sospensione dell'istanza, consulta la guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#sospendere-shelve-unistanza).
+Questa azione posizionerà l'istanza nello stato "*shelved*", visualizzato come `Sospesa`. Per maggiori informazioni sui diversi stati di sospensione dell'istanza, consulta la guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#sospendere-shelve-unistanza).
 
 Clicca su `Riattiva`{.action} per ripristinare lo stato `Attivato` dell'istanza.
 
@@ -121,6 +122,10 @@ Clicca su `Elimina`{.action}.
 Questa azione comporta la cancellazione definitiva dell'istanza e di tutti i suoi dati.
 
 Nella nuova finestra, conferma l'operazione.
+
+> [!warning]
+> L'eliminazione di un'istanza non comporta l'eliminazione automatica di tutte le opzioni associate (storage, snapshot, backup, ecc...). Assicurati che tutte le altre opzioni associate all'istanza siano eliminate per interrompere la fatturazione.
+>
 
 ### Accedi alla console VNC <a name="accessvnc"></a>
 

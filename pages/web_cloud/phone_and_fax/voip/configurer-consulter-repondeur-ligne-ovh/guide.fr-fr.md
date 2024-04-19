@@ -1,7 +1,7 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2022-08-23
+updated: 2024-01-03
 ---
 
 ## Objectif
@@ -9,6 +9,15 @@ updated: 2022-08-23
 Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnaliser et consulter de plusieurs manières. Selon vos besoins, vous pouvez également associer un répondeur à une seule ou plusieurs lignes.
 
 **Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud.**
+
+> [!success]
+>
+> Vous souhaitez que vos appelants arrivent directement sur votre répondeur en fonction de plages horaires ou de jours exceptionnels ?
+> Consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
+>
+> Attention ! Si vos appelants connaissent un autre numéro que celui de votre ligne directe, vous disposez alors probablement d'un « numéro alias ».
+> Vous devez alors configurer les plages horaires sur ce numéro et non sur votre ligne. Pour en savoir plus, consultez notre [FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip) et nos [guides de configuration des numéro alias](/products/web-cloud-phone-and-fax-voip-numbers-and-aliases).
+>
 
 ## Prérequis
 
@@ -138,5 +147,8 @@ Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs 
 ![repondeur](images/voicemail-step10.png){.thumbnail}
 
 ## Aller plus loin
+
+- [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels)
+- [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

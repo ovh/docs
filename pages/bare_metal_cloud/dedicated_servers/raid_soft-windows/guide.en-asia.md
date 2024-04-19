@@ -33,7 +33,7 @@ The method to use depends on the partition style of your disks. Follow the instr
 
 At the command prompt, open DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -160,7 +160,7 @@ It is best not to restart the server until the rebuild process is complete.
 
 At the command prompt, open DiskPart:
 
-```
+```console
 C:\Windows\system32> diskpart
 ```
 
@@ -357,7 +357,7 @@ Back at the command prompt, copy the boot files from the boot (EFI) partition on
 
 Type the following 3 commands and execute each one with `Enter`:
  
-```
+```console
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

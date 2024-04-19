@@ -1,7 +1,7 @@
 ---
 title: "Webhosting: Was tun, wenn meine Datenbank voll ist?"
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-updated: 2023-11-30
+updated: 2023-12-13
 ---
 
 > [!primary]
@@ -61,13 +61,13 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 Unten auf dem Bildschirm wird eine Tabelle mit den Datenbanken angezeigt.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
 
 Beachten Sie für Ihre **überlastete Datenbank** den `Benutzernamen` und die `Server-Adresse` in der Tabelle Ihrer Datenbanken. 
 
 Klicken Sie auf den Button `...`{.action} rechts neben der relevanten Datenbank und dann auf `Zugang zu phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
 Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
 
@@ -122,6 +122,11 @@ Sobald Sie festgestellt haben, ob der Inhalt der Tabellen für das Funktionieren
 #### Fall 1 - Alle Inhalte der großen Tabelle sind für das Funktionieren Ihrer Website erforderlich
 
 Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr Speicherplatz für Datenbanken enthält.
+
+> [!primary]
+>
+> Um die Größe Ihrer Datenbank zu erhöhen, müssen Sie eine neue, größere Datenbank erstellen und den Inhalt der alten Datenbank in die neue Datenbank kopieren. Es ist nicht möglich, die Größe einer Datenbank, die mit einem Webhosting verbunden ist, direkt zu vergrößern.
+>
 
 Konsultieren Sie unsere Angebotsseite [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/), um sich über die Optionen zu informieren. 
 

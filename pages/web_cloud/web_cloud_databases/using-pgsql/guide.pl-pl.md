@@ -54,7 +54,7 @@ psql --host=serwer --port=port --user=użytkownik --password=password nazwa_bazy
 ### Logowanie za pomoca oprogramowania (SQuirreL SQL)
 - Uruchom program SQuirreL SQL i kliknij na `Aliases`{.action} i na `+`{.action}
 
-![launch SQuirreL SQL](images/1.PNG){.thumbnail}
+![launch SQuirreL SQL](images/aliases.png){.thumbnail}
 
 - Wypełnij poniższe pola i kliknij na przycisk `OK`{.action}:
     - **Name**: Wybierz nazwę
@@ -63,15 +63,15 @@ psql --host=serwer --port=port --user=użytkownik --password=password nazwa_bazy
     - **User Name**: Wskaż nazwę użytkownika
     - **Password**: Wskaż hasło
 
-![config connection](images/2.PNG){.thumbnail}
+![config connection](images/add-alias-pgsql.png){.thumbnail}
 
 - Zatwierdź za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/3.PNG){.thumbnail}
+![valid connection](images/connect-to-pgsql.png){.thumbnail}
 
 Zalogowałeś się do bazy danych:
 
-![config connection](images/4.PNG){.thumbnail}
+![config connection](images/general-dashboard-pgsql.png){.thumbnail}
 
 ### Logowanie przez interfejs phppgAdmin
 *Wkrótce dostępne w innym przewodniku.*

@@ -48,21 +48,21 @@ Pour générer le lien de récupération, connectez-vous sur votre [espace clien
 
 Sélectionnez l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Générer une sauvegarde`{.action} à droite.
 
-![backupftpcw](images/GenerateABackup.png){.thumbnail}
+![backupftpcw](images/generate-a-backup.png){.thumbnail}
 
 Dans la fenêtre qui s'ouvre, sélectionnez l'une des sauvegardes disponibles puis cliquez sur `Suivant`{.action}.
 
-![backupftpcw](images/GenerateABackup2.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
 
 Une seconde fenêtre apparaît, vous précisant que le lien de récupération du fichier de sauvegarde vous sera envoyé par e-mail et qu'aucune restauration automatique sur votre hébergement Cloud Web ne sera faite par OVHcloud.
 
-![backupftpcw](images/GenerateABackup3.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} pour valider votre demande.
 
 Si la génération de la sauvegarde est bien lancée, le message suivant apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} :
 
-![backupftpcw](images/BackupInProgress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 La génération de la sauvegarde prend entre 10 et 15 minutes pour être réalisée.
 
@@ -71,7 +71,7 @@ La génération de la sauvegarde prend entre 10 et 15 minutes pour être réalis
 Une fois la génération de la sauvegarde finalisée, vous recevez un e-mail sur l'adresse e-mail associée à l'identifiant administrateur de votre hébergement Cloud Web.<br>
 Cet e-mail contient un lien de téléchargement **valable 9 jours** à compter de la réception de l'e-mail :
 
-![backupftpcw](images/mailBackup.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 Le fichier ainsi téléchargé est au format *.tar.gz*.
 

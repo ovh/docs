@@ -15,7 +15,7 @@ In diesem Fall können Sie Ihre Instanz mithilfe des Rescue-Modus neu konfigurie
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH.
+- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH.
 
 ## In der praktischen Anwendung
 

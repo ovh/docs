@@ -1,7 +1,7 @@
 ---
 title: "Mettre en ligne un site internet sur son hébergement web"
 excerpt: "Découvrez comment mettre en ligne un site internet sur votre hébergement web OVHcloud"
-updated: 2022-07-21
+updated: 2024-03-21
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer 
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}qui sera l'adresse d'accès à votre site web.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web).
 
@@ -24,7 +24,7 @@ Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer 
 
 Avoir une vision claire de votre objectif est primordial pour mener à bien votre projet. Que souhaitez-vous faire avec votre site internet ? Comment le mettre en ligne ? Plusieurs possibilités s'offrent à vous pour concrétiser votre projet sur un hébergement web OVHcloud.
 
-- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre déjà compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page [« Créer un site Internet avec les modules en 1 clic »](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/){.external}.
+- **Utiliser un site clés en main grâce aux modules en 1 clic OVHcloud** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.). OVHcloud en propose quatre déjà compatibles avec nos infrastructures avec ses modules en 1 clic à découvrir sur la page web d'OVHcloud [« Créer un site Internet avec les modules en 1 clic »](https://www.ovhcloud.com/fr-ca/web-hosting/uc-website/){.external}. Vous pouvez également consulter le guide [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Utiliser un site clés en main à installer manuellement** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.) que vous devrez installer vous-même sur votre hébergement web OVHcloud.
 
@@ -66,7 +66,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 
 Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
-![siteinstallation](images/get-website-online-step1.png){.thumbnail}
+![siteinstallation](images/tab-pro.png){.thumbnail}
 
 Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection). Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -90,7 +90,7 @@ Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulan
 >
 > Un fichier « index.php » prendra toujours le dessus sur un fichier « index.html ». Par conséquent, lorsque les deux sont présent, seul « index.php » sera appelé.
 
-![siteinstallation](images/get-website-online-step2.png){.thumbnail}
+![siteinstallation](images/root-folders.png){.thumbnail}
 
 ### Étape 3 : lier le site internet à une base de données
 
@@ -115,7 +115,7 @@ Si vous souhaitez créer une nouvelle base de données chez OVHcloud, connectez-
 
 Dès lors, cliquez sur le bouton `Créer une base de données`{.action} ou, si ce dernier n'apparaît pas, sur `Actions`{.action} puis sur `Créer une base de données`{.action}. Suivez alors les informations qui s'affichent.
 
-![siteinstallation](images/get-website-online-step3.png){.thumbnail}
+![siteinstallation](images/tab.png){.thumbnail}
 
 #### 3. Importer la base de données existante
 

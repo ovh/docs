@@ -1,12 +1,12 @@
 ---
 title: Adaptateur SPA112
-hidden: true
+flag: hidden
 updated: 2018-03-26
 ---
 
-[![](images/spa112-main.jpg){.thumbnail}](https://www.ovhtelecom.fr/telephonie/telephones/cisco_spa112/){.external-link}
+[![Cisco SPA112](images/spa112-main.jpg){.thumbnail}](https://www.ovhtelecom.fr/telephonie/telephones/cisco_spa112/){.external-link}
 
-### Fiche technique : {#fiche-technique}
+## Fiche technique : {#fiche-technique}
 
 **Description :**
 
@@ -39,3 +39,7 @@ L'adaptateur Cisco SPA 112 permet l'accès à un service de téléphonie sur IP 
 -   1 port RJ-45 pour connexions Ethernet 10/100 Mbits
 -   Compatibilité avec toutes les fonctions de votre téléphone
 
+## Liens utiles
+
+- [Branchements du Cisco SPA112](/pages/web_cloud/phone_and_fax/voip/branchements_spa112)
+- [Dépannage du Cisco SPA112](/pages/web_cloud/phone_and_fax/voip/depannage_spa112)

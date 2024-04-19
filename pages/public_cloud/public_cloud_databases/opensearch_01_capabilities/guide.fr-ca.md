@@ -1,7 +1,7 @@
 ---
 title: OpenSearch – Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for OpenSearch
-updated: 2023-12-04
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -29,7 +29,6 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 
 The Public Cloud Databases offer supports the following OpenSearch versions:
 
-- OpenSearch 1
 - OpenSearch 2
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the OpenSearch version history on their official page: <https://opensearch.org/docs/latest/version-history/>
@@ -167,7 +166,7 @@ The database service's IP address is subject to change periodically. Thus, it is
 ##### Private network considerations
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 
@@ -181,11 +180,11 @@ You can further customise your OpenSearch by using advanced parameters. See the 
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up hourly and daily during their maintenance window. Backup retention is 24 hours for hourly backups and 2 days for daily backups.
+*Essential* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 2 days for daily backups.
 
-*Business* plan clusters are automatically backed up hourly and daily during their maintenance window. Backup retention is 24 hours for hourly backups and 14 days for daily backups.
+*Business* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 14 days for daily backups.
 
-*Enterprise* plan clusters are automatically backed up hourly and daily during their maintenance window. Backup retention is 24 hours for hourly backups and 30 days for daily backups.
+*Enterprise* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 30 days for daily backups.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

@@ -74,7 +74,7 @@ Il procedimento è diverso in base ai diritti delegati e al software o all’int
 
 #### Utilizzare il “diritto di accesso”
 
-- **Dalla Webmail Outlook Web Application (OWA)**
+- **Dalla Webmail Outlook Web App (OWA)**
 
 Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Nel menu a sinistra, clicca con il tasto destro sul nome dell’account e seleziona `Aggiungi cartella condivisa...`{.action}.
 
@@ -94,7 +94,7 @@ Clicca su `Altre impostazioni...`{.action}. Nella nuova finestra, seleziona la s
 
 #### Utilizzare il “diritto di invio”
 
-- **Dalla Webmail Outlook Web Application (OWA)**
+- **Dalla Webmail Outlook Web App (OWA)**
 
 Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 
@@ -116,7 +116,7 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 #### Utilizzare il diritto di “invio da parte di”
 
-- **Dalla Webmail Outlook Web Application (OWA)**
+- **Dalla Webmail Outlook Web App (OWA)**
 
 Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 

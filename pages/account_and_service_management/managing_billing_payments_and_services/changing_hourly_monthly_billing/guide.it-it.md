@@ -1,5 +1,5 @@
 ---
-title: 'Passare dalla fatturazione oraria a quella mensile'
+title: 'Public Cloud Compute - Passare dalla fatturazione oraria a quella mensile'
 excerpt: 'Scopri come modificare il tipo di fatturazione delle tua istanza Public Cloud'
 updated: 2023-01-23
 ---

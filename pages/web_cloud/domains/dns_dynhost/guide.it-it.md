@@ -1,7 +1,7 @@
 ---
 title: "Impostare un DNS dinamico (DynHost/DynDNS) per il tuo dominio"
 excerpt: "Questa guida ti mostra come configurare un record DNS dinamico per il tuo dominio OVHcloud"
-updated: 2023-08-16
+updated: 2024-03-07
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona la sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}.
 
-![dynhost](images/use-dynhost-step1.png){.thumbnail}
+![dynhost](images/tab.png){.thumbnail}
 
 Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identificativo`{.action}. Nella nuova finestra, inserisci le informazioni richieste:
 
@@ -69,7 +69,7 @@ Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identifica
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. L’identificativo compare nella tabella della pagina corrente. Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
 
-![dynhost](images/use-dynhost-step2.png){.thumbnail}
+![dynhost](images/create-a-dynhost-username.png){.thumbnail}
 
 ### Step 2: crea il record DNS dinamico (DynHost) <a name="step2"></a>
 
@@ -87,7 +87,7 @@ Una volta che tutto è pronto per creare il record, torna alla pagina principale
 > Per l'installazione di un DynHost è possibile utilizzare solo una **IPv4**. I **IPv6** non sono disponibili.
 >
 
-![dynhost](images/use-dynhost-step3.png){.thumbnail}
+![dynhost](images/create-a-dynhost.png){.thumbnail}
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. Il record DynHost dovrebbe comparire nella tabella della pagina corrente.  Ripeti questa operazione per ogni record DynHost che da aggiungere.
 
@@ -110,7 +110,9 @@ Una volta scelto e installato il client, è necessario configurarlo utilizzando 
 
 In base al client utilizzato, oltre agli elementi dell'utente DynHost e del sottodominio in questione può essere necessario un URL di aggiornamento. In questo caso, utilizza l'indirizzo URL qui sotto sostituendo le informazioni generiche:
 
-`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
+```bash
+https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
 
 |Campo|Sostituire con...|
 |---|---|

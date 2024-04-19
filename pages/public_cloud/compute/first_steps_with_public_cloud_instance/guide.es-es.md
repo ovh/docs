@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar las instancias de Public Cloud'
 excerpt: 'Cómo gestionar las instancias de Public Cloud desde el Panel de configuración de OVHcloud'
-updated: 2023-01-04
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?ac
 
 En el menú de la izquierda, haga clic en `Instances`{.action}. 
 
-![public-cloud](images/compute.png){.thumbnail}
+![public-cloud](images/compute-2024.png){.thumbnail}
 
 Esta página lista todas sus instancias de Public Cloud y algunas de sus propiedades:
 
@@ -37,6 +37,7 @@ Esta página lista todas sus instancias de Public Cloud y algunas de sus propied
 - el modelo de la instancia;
 - la imagen, es decir, el SO instalado en la instancia;
 - la dirección IPv4 de la instancia;
+- la dirección privada actualmente asociada a la instancia;
 - volúmenes (discos) adicionales actualmente asociados a la instancia;
 - Estado de la instancia, indicando si está en estado `Activado`.
 
@@ -73,11 +74,11 @@ Haga clic en `Crear una copia de seguridad automatizada`{.action}.
 
 Para más información, consulte la guía [Guardar una instancia](/pages/public_cloud/compute/save_an_instance#crear-una-copia-de-seguridad-automatizada-de-una-instancia).
 
-#### Suspender una instancia
+#### Detener una instancia
 
 Haga clic en `Detener`{.action}.
 
-Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/public_cloud/compute/suspend_or_pause_an_instance#detener-stop-una-instancia).
+Esto pondrá la instancia en el estado `Apagada`, pero se le seguirá cobrando el mismo precio por su instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/public_cloud/compute/suspend_or_pause_an_instance#detener-stop-una-instancia).
 
 Haga clic en `Iniciar`{.action} para reactivar la instancia.
 
@@ -102,7 +103,7 @@ Confirme la solicitud de reinicio en la nueva ventana.
 
 Haga clic en `Suspender`{.action}.
 
-Esto hará que la instancia se convierta en "*shelved*", que se muestra aquí como `Suspended`. Para más información sobre el estado de suspensión de una instancia, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-una-instancia).
+Esto hará que la instancia se convierta en "*shelved*", que se muestra aquí como `Suspendida`. Para más información sobre el estado de suspensión de una instancia, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-una-instancia).
 
 Haga clic en `Reactivar`{.action} para restaurar el estado `Activado` de la instancia.
 
@@ -121,6 +122,10 @@ Haga clic en `Eliminar`{.action}.
 Esta acción eliminará definitivamente la instancia y todos sus datos.
 
 Confirme la solicitud de eliminación en la nueva ventana.
+
+> [!warning]
+> La eliminación de una instancia no elimina automáticamente todas las opciones asociadas a ella (almacenamiento, snapshot, backup, etc.). Asegúrese de que todas las demás opciones asociadas a la instancia también se eliminan para dejar de facturarse.
+>
 
 ### Acceder a la consola VNC <a name="accessvnc"></a>
 

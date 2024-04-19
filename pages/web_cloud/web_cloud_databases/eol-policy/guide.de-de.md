@@ -32,7 +32,7 @@ Die von der EOL Policy betroffenen Dienste sind:
 
 ### Definitionen und Leitlinien für EOL-Richtlinien
 
-![Timeline](images/ovh.eol.policy.timeline.png)
+![Timeline](images/ovhcloud-eol-policy-for-managed-databases-timeline.png)
 
 EOL = End of Life
 

@@ -18,7 +18,7 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
 >
 
 ## Prerequisiti
@@ -29,6 +29,8 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 ## Procedura
 
 ### "Error establishing a database connection"
+
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Verifica gli incidenti in corso
 
@@ -93,13 +95,13 @@ Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from
 
 Hai ricevuto un'email dai nostri servizi che indica che la quantità di dati sul tuo database supera il limite autorizzato. Il tuo database è quindi passato in sola lettura. In questo modo il sito non può essere modificato.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 Tre metodi ti permettono di sbloccare il tuo database:
 
 ##### Metodo 1: attiva il tuo abbonamento su un'offerta superiore
 
-Se disponi di una formula **Personale2014** o **Pro2014***, ti consigliamo di passare all'[offerta di hosting superiore](https://www.ovhcloud.com/it/web-hosting/). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
+Se disponi di una formula **Personale** o **Pro***, ti consigliamo di passare all'[offerta di hosting superiore](https://www.ovhcloud.com/it/web-hosting/). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
 
 > [!warning]
 >
@@ -150,7 +152,7 @@ Superamento della capacità della RAM
 
 Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
@@ -181,7 +183,7 @@ Per prima cosa, assicurati che il database sia vuoto dalla scheda `Database`{.ac
 
 Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima di [avviare l'importazione](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server):
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](https://community.ovh.com/en/) o un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
 
@@ -272,7 +274,7 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](https
 > Se vuoi connetterti a un database su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
 >
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

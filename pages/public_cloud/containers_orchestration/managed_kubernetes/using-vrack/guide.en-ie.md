@@ -1,7 +1,7 @@
 ---
 title: Using vRack Private Network
 excerpt: ''
-updated: 2021-09-30
+updated: 2023-12-11
 ---
 
 <style>
@@ -58,7 +58,7 @@ In the Managed Kubernetes service dashboard, you will see the cluster, with the 
 
 - All nodes within a Kubernetes cluster with a vRack private network activated are available within that single private network. (No public/private mix, single private network available.)
 - To expose some workload on the Internet, you can use the External Load Balancers that are now compatible with nodes in vRack.
-- The OVHcloud Public Cloud does not support security groups on vRack. This is planned to be supported late 2021.
+- The OVHcloud Public Cloud does not support security groups on vRack.
 - You will still see a public IPv4 address on your worker nodes. This IP won't be reachable from the Internet, and used exclusively for the administration of your nodes and its link to the Kubernetes control plane.
 - As explained in the [Known limits guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits), the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our overlay networks:
 

@@ -17,7 +17,7 @@ Quer seja para comparar as performances entre os diferentes discos, quer seja pa
 ## Requisitos
 
 - Dispor de uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}.
-- Dispor de um acesso administrativo (root) a esta instância através de SSH (unicamente para Linux).
+- Dispor de um acesso administrativo (sudo) a esta instância através de SSH (unicamente para Linux).
 
 ## Instruções
 
@@ -27,16 +27,16 @@ O comando de que precisa para verificar a velocidade do seu disco chama-se `fio`
 
 Para instalar `fio`, estabeleça uma ligação SSH à sua instância e execute o seguinte comando:
 
-```
-root@server:~$ apt-get install fio
+```bash
+apt install fio
 ```
 
 ### Teste a velocidade do seu disco
 
 O comando a ter em conta para efetuar o teste ao disco é o seguinte:
 
-```
-root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --fsync=32 --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+```bash
+fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 > [!primary]
@@ -48,15 +48,15 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 
 Para testar as performances de um disco adicional será necessário colocar-lhe num dos pontos de montagem.
 
-```
-root@server:~$ cd /mnt/disk
+```bash
+cd /mnt/disk
 ```
 
 ### Analisar os dados
 
 Devido à execução deste comando obteremos um resultado semelhante ao seguinte:
 
-```
+```console
 fio-2.1.11
 Starting 1 process
 test: Laying out IO file(s) (1 file(s) / 1024MB)
@@ -92,7 +92,7 @@ vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 
 A informação que nos interessa corresponde aos IOPS que poderemos encontrar na linha 6 do resultado:
 
-```
+```console
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 

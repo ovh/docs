@@ -28,7 +28,7 @@ Tutorial ten przedstawia podstawowe etapy ręcznej instalacji WordPressa na inst
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
 - Posiadanie zainstalowanej [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) z systemem Debian lub Ubuntu
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Dostęp administratora (root) do Twojej instancji przez SSH
+- Dostęp administratora (sudo) do Twojej instancji przez SSH
 
 ## W praktyce
 

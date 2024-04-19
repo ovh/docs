@@ -13,7 +13,7 @@ Your database usage may result in anomalies on your website or error messages in
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -25,6 +25,8 @@ Your database usage may result in anomalies on your website or error messages in
 ## Instructions
 
 ### "Error establishing a database connection"
+
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Check ongoing incidents
 
@@ -91,7 +93,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 
 You have received an email notification stating that the amount of data on your database exceeds the authorised limit. Your database has therefore been switched to read-only mode. This will prevent your website from being modified.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 There are three ways you can unblock your database in this situation.
 
@@ -149,7 +151,7 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) indicates that your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
 
@@ -183,7 +185,7 @@ First make sure that your database is empty from the `Databases`{.action} tab of
 
 You can also tick the `Empty the current database`{.action} box just before [launching the import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-your-own-backup-via-your-control-panel):
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 If necessary, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) for more information. We will not be able to assist you in correcting this issue.
 
@@ -274,7 +276,7 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 > If you want to connect to a database on a [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
 >
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Getting started with Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
