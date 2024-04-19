@@ -114,14 +114,6 @@ Example of specific questions for Windows Server 2022 Standard (Core):
                 "en-us",
                 "fr-fr"
             ]
-        },
-        {
-            "default": "false",
-            "mandatory": false,
-            "type": "boolean",
-            "name": "useSpla",
-            "description": "Use your SPLA (your own product key that you may have added for this server)",
-            "enum": []
         }
     ]
 }
@@ -266,10 +258,6 @@ Payload example to install Windows Server 2022 Standard (Core) in French:
     {
       "key": "language",
       "value": "fr-fr"
-    },
-    {
-      "key": "useSpla",
-      "value": "true"
     }
   ]
 }
