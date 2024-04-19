@@ -257,7 +257,7 @@ Il y a 2 types d'erreurs :
 
 Dans la section suivante, nous allons nous concentrer uniquement sur les types d'**erreurs client** dans l'étape de pre-processing du partitionnement, car cela n'est utile qu'aux clients.
 
-#### Les erreurs clients fréquentes
+#### Les erreurs clients fréquentes <a name="errors"></a>
 
 Le tableau suivant donne un aperçu des erreurs clients les plus connues et de la manière de les corriger.
 
