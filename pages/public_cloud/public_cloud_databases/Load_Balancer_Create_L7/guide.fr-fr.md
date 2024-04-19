@@ -45,7 +45,7 @@ Les politiques sont évaluées dans un ordre spécifique défini par l'attribut 
     - Les L7 policy ne s'appliquent qu'à des listeners de type `HTTP` ou `TERMINATED_HTTPS`.
 
 - **Règle L7 :**
-  Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie. Plusieurs règles peuvent être associées à une politique, et toutes doivent correspondre pour que l'action de la politique soit appliquée.
+  Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie. Plusieurs règles peuvent être associées à une politique, et toutes doivent correspondre (logique ET) pour que l'action de la politique soit appliquée. Pour exprimer une opération logique OR entre les règles, il est nécessaire de créer plusieurs politiques avec la même action.
 
   - **Principales caractéristiques :**
     - **type** : Le type de condition (par exemple, HEADER, COOKIE, URI).
@@ -66,7 +66,6 @@ Les politiques sont évaluées dans un ordre spécifique défini par l'attribut 
   - **value** : `/oldpath`
 
 Cet exemple montre comment rediriger le trafic de `/oldpath` vers `https://example.com/newpath` avec un code de redirection HTTP 302 lorsque l'URI commence par `/oldpath`.
-
 
 ### Étape 1 : Configuration via l'espace client OVHcloud
 
