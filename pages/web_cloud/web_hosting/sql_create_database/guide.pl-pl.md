@@ -154,7 +154,7 @@ Aby sprawdzić, czy są dostępne migawki oraz ich datę i godzinę utworzenia, 
 
 **Zbyt dużo połączeń**
 
-Bazy danych w ramach hostingu są ograniczone do 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeżeli problemy nadal się utrzymują, należy rozważyć alternatywne środki. Możesz na przykład migrować Twoją bazę danych do bazy danych [Web Cloud Databases](/links/web/databases) lub przeprowadzić [aktualizację Twojej oferty hostingu](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/).
+Bazy danych w ramach hostingu są ograniczone do 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeżeli problemy nadal się utrzymują, należy rozważyć alternatywne środki. Możesz na przykład migrować Twoją bazę danych do bazy danych [Web Cloud Databases](/links/web/databases) lub przeprowadzić [aktualizację Twojej oferty hostingu](/links/web/hosting-best-web).
 
 **Błędy połączenia "nie można znaleźć"**
 

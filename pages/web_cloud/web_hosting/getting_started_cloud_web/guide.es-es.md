@@ -16,7 +16,7 @@ El plan de hosting Cloud Web de OVHcloud es el resultado de combinar veinte año
 
 ## Requisitos
 
-- Tener contratado un plan de hosting [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/) de OVHcloud.
+- Tener contratado un plan de hosting [Cloud Web](/links/web/hosting-cloud-web-offer) de OVHcloud.
 - Haber recibido el email de confirmación de la instalación del hosting Cloud Web.
 - Disponer de un [dominio](/links/web/domains) con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
@@ -31,7 +31,7 @@ Con el fin de adaptarse lo mejor posible a cada proyecto, el plan de hosting Clo
 
 - **Establezca los requisitos técnicos para la instalación:** Es posible que el proyecto que quiera desplegar tenga requerimientos técnicos concretos. Asegúrese de conocerlos previamente.
 
-- **Asegúrese de que su proyecto es técnicamente compatible con el hosting  Cloud Web:** ¿Necesita un motor de ejecución o un SQL concretos? Si todavía no lo ha hecho, asegúrese de que están disponibles con el [hosting Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).
+- **Asegúrese de que su proyecto es técnicamente compatible con el hosting  Cloud Web:** ¿Necesita un motor de ejecución o un SQL concretos? Si todavía no lo ha hecho, asegúrese de que están disponibles con el [hosting Cloud Web](/links/web/hosting-cloud-web-offer).
 
 Una vez que haya evaluado las distintas posibilidades y haya delimitado el proyecto con precisión, puede empezar a publicarlo en internet.
 
@@ -50,7 +50,7 @@ Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área
 
 Al instalar el alojamiento, se crea automáticamente un motor, que aparece en la tabla como **Opción por defecto**. Para cambiar de motor, haga clic en el botón `...`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}. 
 
-Según el plan [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/) del que disponga, también puede añadir motores de ejecución adicionales haciendo clic en el botón `Acciones`{.action} y seleccionando `Añadir un motor de ejecución`{.action}. Tenga en cuenta que el número máximo de motores de ejecución depende del plan Cloud Web que tenga contratado. Por lo tanto, asegúrese de disponer del motor o motores de ejecución necesarios para su proyecto antes de continuar.
+Según el plan [Cloud Web](/links/web/hosting-cloud-web-offer) del que disponga, también puede añadir motores de ejecución adicionales haciendo clic en el botón `Acciones`{.action} y seleccionando `Añadir un motor de ejecución`{.action}. Tenga en cuenta que el número máximo de motores de ejecución depende del plan Cloud Web que tenga contratado. Por lo tanto, asegúrese de disponer del motor o motores de ejecución necesarios para su proyecto antes de continuar.
 
 ![Cloud Web](images/edit-runtime.png){.thumbnail}
 

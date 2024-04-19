@@ -141,7 +141,7 @@ Este segundo script de ejemplo transforma todas las URL recibidas a través del 
 
 En este segundo ejemplo, compruebe que todos los dominios o subdominios de destino tienen un certificado SSL activo.
 
-**Atención**, para los planes de hosting [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/), deberá utilizar el siguiente script:
+**Atención**, para los planes de hosting [Cloud Web](/links/web/hosting-cloud-web-offer), deberá utilizar el siguiente script:
 
 ```bash
 RewriteEngine On

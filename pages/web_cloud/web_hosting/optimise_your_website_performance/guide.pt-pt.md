@@ -52,7 +52,7 @@ A utilização de um CMS, como o WordPress, PrestaShop, Drupal ou Joomla!, reque
 Os browsers têm de carregar e ler todos estes elementos.
 Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os CMS acima indicados na [página de produto](/links/web/hosting){.external}.
 
-Encontrará mais informações acerca do plano a escolher [nesta página](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/){.external}.
+Encontrará mais informações acerca do plano a escolher [nesta página](/links/web/hosting-best-web){.external}.
 
 ### Passo 2: Verificar a versão PHP
 

@@ -158,7 +158,7 @@ Klicken Sie in der hier angezeigten Tabelle auf das Symbol neben dem grünen Kre
 
 **Too many connections**
 
-Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine [Web Cloud Databases](/links/web/databases) Datenbank oder ein [Upgrade Ihres Webhostings](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/).
+Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine [Web Cloud Databases](/links/web/databases) Datenbank oder ein [Upgrade Ihres Webhostings](/links/web/hosting-best-web).
 
 **Connection error / "not found"**
 

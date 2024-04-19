@@ -154,7 +154,7 @@ Per verificare gli Snapshot disponibili e la data e l’ora della loro creazione
 
 **Troppe connessioni**
 
-I database degli hosting Web sono limitati a 30 connessioni simultanee (variabile di sistema *max_connections*). Le richieste SQL devono quindi essere ottimizzate per evitare questo tipo di errore. Se, nonostante tutto, i problemi persistono, è necessario prendere in considerazione misure alternative. Ad esempio, è possibile migrare il database su un database [Web Cloud Databases](/links/web/databases) o effettuare un [aggiornamento del piano di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/).
+I database degli hosting Web sono limitati a 30 connessioni simultanee (variabile di sistema *max_connections*). Le richieste SQL devono quindi essere ottimizzate per evitare questo tipo di errore. Se, nonostante tutto, i problemi persistono, è necessario prendere in considerazione misure alternative. Ad esempio, è possibile migrare il database su un database [Web Cloud Databases](/links/web/databases) o effettuare un [aggiornamento del piano di hosting Web](/links/web/hosting-best-web).
 
 **Errori di connessione / "Non trovato"**
 

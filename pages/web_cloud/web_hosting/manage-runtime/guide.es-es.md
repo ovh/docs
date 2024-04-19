@@ -16,7 +16,7 @@ Cloud Web ofrece la posibilidad de utilizar distintos lenguajes de programación
 
 ## Requisitos
 
-- Tener contratado un plan de alojamiento [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).
+- Tener contratado un plan de alojamiento [Cloud Web](/links/web/hosting-cloud-web-offer).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) y accedido a la sección `«Web»`{.action}.
 
 ## Procedimiento
@@ -37,7 +37,7 @@ Se mostrará una tabla con los motores de ejecución que haya añadido a su aloj
 
 Existen diversas formas de gestionar los motores de ejecución de su alojamiento Cloud Web:
 
-- [Añadir o modificar un motor de ejecución](./#21-anadir-o-modificar-un-motor-de-ejecucion){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}).
+- [Añadir o modificar un motor de ejecución](./#21-anadir-o-modificar-un-motor-de-ejecucion){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](/links/web/hosting-cloud-web-offer){.external}).
 - Establecer un motor de ejecución como opción por defecto.
 - Eliminar un motor de ejecución.
 
@@ -118,7 +118,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 > En nuestro ejemplo, solo se crearon los motores PHP y Node.js. En su proyecto, bien podría utilizar Ruby o Python. En dicho caso, las operaciones descritas a continuación son
 > aplicables.
 > 
-> La utilización de dos motores de ejecución al mismo tiempo en su alojamiento Cloud Web depende del [plan que haya contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}.
+> La utilización de dos motores de ejecución al mismo tiempo en su alojamiento Cloud Web depende del [plan que haya contratado](/links/web/hosting-cloud-web-offer){.external}.
 > 
 
 Una vez que disponga del motor o los motores de ejecución necesarios para su proyecto, asegúrese de que estos estén correctamente asociados a sus multisitios. Para ello, abra la pestaña `«Multisitio»`{.action} del alojamiento Cloud Web de su interés. 

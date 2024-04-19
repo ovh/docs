@@ -152,7 +152,7 @@ To check which snapshots are available, and when they were created, log in to yo
 
 **Too many connections**
 
-Web hosting databases are limited to 30 concurrent connections (system variable *max_connections*). SQL requests must therefore be optimised to avoid this type of error. If problems persist nonetheless, alternative measures should be considered. For example, you can migrate your database to a [Web Cloud Databases](/links/web/databases) database, or even [upgrade your web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/uc-best-web-hosting/).
+Web hosting databases are limited to 30 concurrent connections (system variable *max_connections*). SQL requests must therefore be optimised to avoid this type of error. If problems persist nonetheless, alternative measures should be considered. For example, you can migrate your database to a [Web Cloud Databases](/links/web/databases) database, or even [upgrade your web hosting plan](/links/web/hosting-best-web).
 
 **Connection / "not found" errors**
 

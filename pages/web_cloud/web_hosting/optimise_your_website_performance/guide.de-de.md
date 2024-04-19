@@ -44,7 +44,7 @@ Für die Verwendung von CMS wie WordPress, PrestaShop, Drupal oder Joomla! sind 
 Internetbrowser müssen alle diese Elemente laden und lesen.
 Wir geben Empfehlungen dazu, welches Webhosting-Angebot für das oben aufgeführte CMS verwendet werden sollte auf [der Produktseite](/links/web/hosting).
 
-Weitere Informationen dazu, welches Hostingpaket sich eignet, finden Sie auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/).
+Weitere Informationen dazu, welches Hostingpaket sich eignet, finden Sie auf [dieser Seite](/links/web/hosting-best-web).
 
 ### Schritt 2: Überprüfen der PHP-Version
 Durch die Verwendung der neuesten PHP-Version, die mit Ihrer Seite kompatibel ist, könnte die Leistung erheblich beeinflusst werden.

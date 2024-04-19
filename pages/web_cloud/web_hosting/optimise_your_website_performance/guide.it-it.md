@@ -52,7 +52,7 @@ I CMS come WordPress, PrestaShop, Drupal o Joomla! utilizzano numerose librerie,
 Questi devono essere caricati e letti dal browser Internet dei tuoi utenti.
 Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS sopraelencati in questa [pagina](/links/web/hosting){.external}.
 
-Per maggiori informazioni clicca [qui](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/){.external}.
+Per maggiori informazioni clicca [qui](/links/web/hosting-best-web){.external}.
 
 ### Step 2: Verifica la versione PHP
 

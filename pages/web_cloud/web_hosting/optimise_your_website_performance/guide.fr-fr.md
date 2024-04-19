@@ -51,7 +51,7 @@ L’utilisation des CMS comme WordPress, PrestaShop, Drupal ou Joomla! nécessit
 Les navigateurs Internet doivent pouvoir charger et lire tous ces éléments.
 Nous fournissons des recommandations sur les solutions offertes par l’hébergement web, lesquelles peuvent être utilisées pour les CMS répertoriés ci-dessus sur la [page du produit](/links/web/hosting){.external}.
 
-Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/){.external}.
+Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](/links/web/hosting-best-web){.external}.
 
 ### Étape 2 : Vérification de la version PHP
 

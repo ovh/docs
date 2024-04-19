@@ -52,7 +52,7 @@ Do korzystania z systemów zarządzania treścią (CMS), takich jak WordPress, P
 Przeglądarki internetowe muszą załadować i odczytać te wszystkie elementy.
 Na [stronie produktu](/links/web/hosting){.external} przestawiamy oferty hostingu WWW zalecane do wskazanych powyżej systemów CMS.
 
-Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/){.external}.
+Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](/links/web/hosting-best-web){.external}.
 
 ### Krok 2: sprawdzenie wersji PHP
 

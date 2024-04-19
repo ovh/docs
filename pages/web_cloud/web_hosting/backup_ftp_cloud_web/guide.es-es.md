@@ -26,7 +26,7 @@ Su hosting Cloud Web dispone de un espacio de almacenamiento en el que podrá al
 
 ## Requisitos
 
-- Tener un [hosting Cloud Web.](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}
+- Tener un [hosting Cloud Web.](/links/web/hosting-cloud-web-offer){.external}
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 - Tener acceso a la dirección de correo electrónico de contacto asociada a su ID de cliente.
 
