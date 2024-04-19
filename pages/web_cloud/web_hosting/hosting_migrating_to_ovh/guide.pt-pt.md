@@ -71,7 +71,7 @@ Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-ma
 
 > [!primary]
 >
-> A OVHcloud oferece outras ofertas de e-mail para além da oferta "MX Plan". Por exemplo, pode combinar endereços de e-mail "MX Plan" de endereços ["Email-Pro"](https://www.ovhcloud.com/pt/emails/email-pro/) e/ou contas ["Exchange"](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
+> A OVHcloud oferece outras ofertas de e-mail para além da oferta "MX Plan". Por exemplo, pode combinar endereços de e-mail "MX Plan" de endereços ["Email-Pro"](https://www.ovhcloud.com/pt/emails/email-pro/) e/ou contas ["Exchange"](/links/web/emails-hosted-exchange).
 >
 
 ### Etapa 2 : criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud <a name="step2"></a>

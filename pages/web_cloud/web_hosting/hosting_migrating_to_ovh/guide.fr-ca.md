@@ -66,7 +66,7 @@ Une fois le paiement validé, l'installation de l'hébergement va démarrer. Un 
 
 > [!primary]
 >
-> OVHcloud propose d'autres offres e-mail en plus de l'offre « MX Plan ». Vous pouvez, par exemple, combiner à des adresses e-mail « MX Plan » des comptes [« Exchange »](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/).
+> OVHcloud propose d'autres offres e-mail en plus de l'offre « MX Plan ». Vous pouvez, par exemple, combiner à des adresses e-mail « MX Plan » des comptes [« Exchange »](/links/web/emails-hosted-exchange).
 >
 
 ### Etape 2 : créer et préconfigurer une zone DNS pour votre nom de domaine chez OVHcloud <a name="step2"></a>
