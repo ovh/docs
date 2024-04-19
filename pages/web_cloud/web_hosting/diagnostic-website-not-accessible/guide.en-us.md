@@ -42,7 +42,7 @@ Several error messages may appear on your browser in the event of your site bein
 > As a result, we strongly recommend that you enable [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instructions) for all of your OVHcloud subscriptions.
 >
 
-To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](	/links/manager), then click on `Products and services`{.action} within the right-hand menu.
+To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `Products and services`{.action} within the right-hand menu.
 
 ![control-panel](images/control-panel.png){.thumbnail}|
 
