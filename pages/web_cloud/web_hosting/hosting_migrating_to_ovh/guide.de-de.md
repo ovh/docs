@@ -70,7 +70,7 @@ Wenn Sie bereits Kunde sind, kann die Bestellung auch über Ihr [OVHcloud Kunden
 Sobald die Zahlung bestätigt wurde, startet die Installation des Hostings. Sie erhalten eine E-Mail an Ihre Kontakt-E-Mail-Adresse, die Zugangsdaten zum FTP-Speicherplatz (File Transfer Protocol) Ihres Webhostings enthält.
 
 > [!primary]
-> OVHcloud bietet neben MX Plan weitere E-Mail-Angebote an. Sie können beispielsweise [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)-Accounts und/oder [Exchange](/links/web/emails-hosted-exchange)-Accounts mit E-Mail-Accounts kombinieren.
+> OVHcloud bietet neben MX Plan weitere E-Mail-Angebote an. Sie können beispielsweise [E-Mail Pro](/links/web/email-pro)-Accounts und/oder [Exchange](/links/web/emails-hosted-exchange)-Accounts mit E-Mail-Accounts kombinieren.
 >
 
 ### Schritt 2: Eine DNS-Zone für Ihren Domainnamen bei OVHcloud erstellen und vorkonfigurieren <a name="step2"></a>

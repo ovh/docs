@@ -71,7 +71,7 @@ Una vez validado el pago, se iniciará la instalación del alojamiento. Recibir�
 
 > [!primary]
 >
-Además de la solución MX Plan, OVHcloud ofrece otras soluciones de correo. Por ejemplo, puede combinar con direcciones de correo MX Plan direcciones ["Email-Pro"](https://www.ovhcloud.com/es-es/emails/email-pro/) y/o cuentas ["Exchange"](/links/web/emails-hosted-exchange).
+Además de la solución MX Plan, OVHcloud ofrece otras soluciones de correo. Por ejemplo, puede combinar con direcciones de correo MX Plan direcciones ["Email-Pro"](/links/web/email-pro) y/o cuentas ["Exchange"](/links/web/emails-hosted-exchange).
 >
 
 ### Etapa 2: crear y preconfigurar una zona DNS para su dominio en OVHcloud <a name="step2"></a>

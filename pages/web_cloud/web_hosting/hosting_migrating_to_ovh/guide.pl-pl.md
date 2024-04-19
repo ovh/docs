@@ -71,7 +71,7 @@ Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mai
 
 > [!primary]
 >
-> OVHcloud poza ofertą "MX Plan" proponuje również inne usługi e-mail. Możesz na przykład połączyć konta e-mail "MX Plan" z adresami ["Email-Pro"](https://www.ovhcloud.com/pl/emails/email-pro/) i/lub kontami ["Exchange"](/links/web/emails-hosted-exchange).
+> OVHcloud poza ofertą "MX Plan" proponuje również inne usługi e-mail. Możesz na przykład połączyć konta e-mail "MX Plan" z adresami ["Email-Pro"](/links/web/email-pro) i/lub kontami ["Exchange"](/links/web/emails-hosted-exchange).
 >
 
 ### Etap 2: utworzyć i wstępnie skonfigurować strefę DNS dla Twojej domeny w OVHcloud <a name="step2"></a>
