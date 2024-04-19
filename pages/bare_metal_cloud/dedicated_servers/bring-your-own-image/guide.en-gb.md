@@ -157,20 +157,20 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 > The ConfigDrive partition is used by cloud-init during the first server boot in order to apply your configurations. You can choose whether you want to use the default one, or a custom one (using `configDriveUserData`).
 >
 
-#### Result examples
+#### Common customer errors <a name="errors"></a>
 
-Here are some results you might have:
+The following table gives an overview of well known customer errors and how to fix them.
 
-| Message | Meaning |
-|-|-|
-| Can't write qcow2 on disk. | Could not burn qcow2 image on disk. |
-| Could not download, qcow2 image is too big to download in memory. | There is not enough RAM space to store your image. |
-| Could not download image located: `http://path/of/your/image`. | Impossible to download image located `http://path/of/your/image`. |
-| Bad format image, expected: qcow2, raw. | Incorrect image format. |
-| Bad checkSumType, expected: sha1, sha256, md5. | Incorrect checksum type. |
-| Bad $checkSumType for downloaded file, got: 1234 while expecting 5678. | Incorrect checksum signature. |
-| Can not move backup GPT data structures to the end of disk. | Disk format is not correct. |
-| Could not create configdrive on disk. | Impossible to create config-drive partition. |
+|Error message|Details|Solution(s)|
+|---|---|---|
+|Please provide checkSum AND checkSumType or none of them|You have specified one of the 2 arguments among `imageCheckSum` and `imageCheckSumType`.|Either provide both arguments or none of them.|
+|image provided format is `x` which does not match expected qcow2 format|Not matter what the file extension is, real format has to be qcow2.|- Change value of `imageType` to `raw`.<br />- Convert your image to qcow2 format.|
+|image provided has a size of `n` bytes which is larger than `device` of `m` bytes|Image provided has a size that is bigger than the size of the disk chosen for the OS installation.|- If your server has several disk groups, you can try to reinstall the OS on another disk group by specifying the `diskgroupid` argument.<br />- You need to reduce the size of your image.|
+|Can't write `t` on disk|Impossible to write qcow2/raw image on disk.|Modify your image so that the `qemu-img convert -f "$imageType" -O raw $pathToImageFile "$device"` command works.|
+|Could not download, `t` image is too big to download in memory.|Your server doesn't have enough RAM to download the image.|You need to reduce the size of your image.|
+|Could not download image located : `url`|Cannot download image from `imageURL`.|Check that a download with `curl` command from your server in rescue works. If some HTTP specific headers are required, you can precise them with the `httpHeaders` argument.|
+|image provided format is not of type raw because no partition table was found. It seems to contain: `x`|A raw image must contain a partition table.|Check that your image contains a partition table.|
+|Bad `checkSumType` for downloaded file, got : `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with `curl` command from your server in rescue works.|
 
 ## Go further
 
