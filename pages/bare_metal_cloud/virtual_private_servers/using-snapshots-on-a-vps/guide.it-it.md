@@ -52,7 +52,7 @@ Se sei certo che desideri ripristinare il tuo VPS allo stato dello snapshot, cli
 >
 > Ricorda che quando ripristina un VPS da un'istantanea, quest'ultima verrà eliminata. Per conservare la stessa istantanea, è necessario ripeterne una prima di apportare modifiche al sistema ripristinato.
 >
-> Se la funzione Snapshot è troppo limitata per il tuo progetto, l'opzione [Backup automatizzati](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backup-on-a-vps) è un'alternativa.
+> Se la funzione Snapshot è troppo limitata per il tuo progetto, l'opzione [Backup automatizzati](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) è un'alternativa.
 >
 
 ### Scarica uno Snapshot

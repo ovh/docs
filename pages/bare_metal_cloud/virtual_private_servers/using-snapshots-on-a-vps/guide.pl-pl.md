@@ -98,7 +98,7 @@ temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=167824757
 >
 > Aby uniknąć utraty zbyt dużej ilości przestrzeni dyskowej, zalecamy usunięcie kopii zapasowych snapshot bezpośrednio z serwera VPS.
 >
-> Pobrany plik można zaimportować do projektu Public Cloud (QCOW2) jako obraz za pośrednictwem [OpenStack](products/public-cloud-compute-instance-management). (Przykład zastosowania znajduje się w [tym przewodniku](/pages/public_cloud/compute/upload_own_image.))
+> Pobrany plik można zaimportować do projektu Public Cloud (QCOW2) jako obraz za pośrednictwem [OpenStack](products/public-cloud-compute-instance-management). (Przykład zastosowania znajduje się w [tym przewodniku](/pages/public_cloud/compute/upload_own_image).)
 >
 
 ### Dobre praktyki dotyczące tworzenia migawek
