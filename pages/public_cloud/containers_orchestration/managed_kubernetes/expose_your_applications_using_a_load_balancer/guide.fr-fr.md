@@ -6,13 +6,13 @@ updated: 2024-04-22
 
 > [!warning]
 >
-> Usage of the [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) with Managed Kubernetes Service (MKS) is currently in Beta phase.
+> Usage of the [Public Cloud Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/) with Managed Kubernetes Service (MKS) is currently in Beta phase.
 > This feature is also available to customers using the services of our US subsidiary.
 >
 
 ## Objective
 
-This guide aims to explain how to use OVHcloud Public Cloud Load Balancer to expose your applications hosted on [Managed Kubernetes Service (MKS)](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
+This guide aims to explain how to use OVHcloud Public Cloud Load Balancer to expose your applications hosted on [Managed Kubernetes Service (MKS)](https://www.ovhcloud.com/fr/public-cloud/kubernetes/).
 If you're not comfortable with the different ways of exposing your applications in Kubernetes, or if you're not familiar with the notion of 'loadbalancer' service type, we do recommend to start by reading the guide explaining how to [expose your application deployed on an OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-lb). This guide details the different methods to expose your containerized applications hosted in Managed Kubernetes Service.
 
 Our Public Cloud Load Balancer is relying on the OpenStack Octavia project which provides a Cloud Controller Manager (CCM) allowing Kubernetes clusters to interact with Load Balancers. For Managed Kubernetes Service (MKS), this Cloud Controller is installed and configured by our team, allowing you to easily create, use and configure our Public Cloud Load Balancers. You can find the CCM opensource project documentation [here](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md).
@@ -24,7 +24,7 @@ This guide uses some concepts that are specific to our Public Cloud Load Balance
 
 #### Kubernetes version
 
-To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/), your Managed Kubernetes Service must run or have been upgraded to the following patch versions:
+To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/), your Managed Kubernetes Service must run or have been upgraded to the following patch versions:
 
 | Kubernetes versions |
 |-------------|
@@ -37,20 +37,20 @@ To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb
 
 The first step is to make sure that you have an existing vRack on your Public Cloud Project. To do so you can follow this guide that explains how to [Configure a vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
-If you plan to expose your Load Balancer publicly, in order to attach a [FloatingIP](https://www.ovhcloud.com/en-gb/public-cloud/floating-ip/) to your Load Balancer, it is mandatory to have an [OVHcloud Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/) (an OpenStack router) deployed on the subnet hosting your Load Balancer.
+If you plan to expose your Load Balancer publicly, in order to attach a [FloatingIP](https://www.ovhcloud.com/fr/public-cloud/floating-ip/) to your Load Balancer, it is mandatory to have an [OVHcloud Gateway](https://www.ovhcloud.com/fr/public-cloud/gateway/) (an OpenStack router) deployed on the subnet hosting your Load Balancer.
 
-If it does not exist when you create your first [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/), an S size Managed Gateway will be automatically created.
-That is why we do recommend deploying your MKS clusters on a network and subnet where an [OVHcloud Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/) can be created (manually or automatically - cf. [Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/)) or is already existing.
+If it does not exist when you create your first [Public Cloud Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/), an S size Managed Gateway will be automatically created.
+That is why we do recommend deploying your MKS clusters on a network and subnet where an [OVHcloud Gateway](https://www.ovhcloud.com/fr/public-cloud/gateway/) can be created (manually or automatically - cf. [Creating a private network with Gateway](https://www.ovhcloud.com/fr/public-cloud/gateway/)) or is already existing.
 
 If you have an existing/already deployed cluster and if:
 
 - **The Subnet's GatewayIP is already used by an OVHcloud Gateway**, nothing needs to be done. The current OVHcloud Gateway (OpenStack Router) will be used.
 - **The subnet does not have an IP reserved for a Gateway**, you will have to provide or create a compatible subnet. Three options are available:
     - Edit an existing subnet to reserve an IP for a Gateway : please refer to the [Update a subnet properties](/pages/public_cloud/public_cloud_network_services/configuration-04-update_subnet) documentation.
-    - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
+    - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/fr/public-cloud/gateway/))
     - Use a subnet dedicated for your load balancer: this option can be used in the OVHcloud Control Panel under `Advanced parameters` > `LoadbalancerS ubnet` or using APIs/Infra as Code using the 'LoadBalancerSubnetID' parameter.
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (OpenStack Router)**. Two options are available:
-    - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/en-gb/public-cloud/gateway/))
+    - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway or with an IP address reserved for a Gateway ([Creating a private network with Gateway](https://www.ovhcloud.com/fr/public-cloud/gateway/))
     - Use a subnet dedicated for your load balancers: this option can be used in the OVHcloud Control Panel under `Advanced parameters` > `Loadbalancer Subnet` or using APIs/Infra as Code with the 'LoadBalancerSubnetID' parameter.
 
 ## Limitations
@@ -62,9 +62,9 @@ If you have an existing/already deployed cluster and if:
 
 When exposing your load balancer publicly (public-to-public or public-to-private):
 
-- If it does not already exist, a single OVHcloud Gateway will be automatically created and billed for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
-- A Public Floating IP will be used: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346>.
-- Each Public Cloud Load Balancer is billed according to its flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>.
+- If it does not already exist, a single OVHcloud Gateway will be automatically created and billed for all Load Balancers spawned in the subnet <https://www.ovhcloud.com/fr/public-cloud/prices/#10394>.
+- A Public Floating IP will be used: <https://www.ovhcloud.com/fr/public-cloud/prices/#10346>.
+- Each Public Cloud Load Balancer is billed according to its flavor: <https://www.ovhcloud.com/fr/public-cloud/prices/#10420>.
 
 > [!primary]
 >
@@ -78,7 +78,7 @@ When exposing your load balancer publicly (public-to-public or public-to-private
 
 ## Instructions
 
-During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) rather than the historical [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/) solution, you'll need to add the annotation: `loadbalancer.ovhcloud.com/class: "octavia"` on your Kubernetes Service manifest.
+During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/) rather than the historical [Loadbalancer for Kubernetes](https://www.ovhcloud.com/fr/public-cloud/load-balancer-kubernetes/) solution, you'll need to add the annotation: `loadbalancer.ovhcloud.com/class: "octavia"` on your Kubernetes Service manifest.
 
 Here's a simple example of how to use the Public Cloud Load Balancer
 
@@ -232,7 +232,7 @@ spec:
 
 - `loadbalancer.ovhcloud.com/flavor:`
 
-  Not a standard OpenStack Octavia annotation (specific to OVHcloud). The size used for creating the loadbalancer. Specifications can be found on the [Load Balancer specifications](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) page. Authorized values => `small`,`medium`,`large`. Default is 'small'.
+  Not a standard OpenStack Octavia annotation (specific to OVHcloud). The size used for creating the loadbalancer. Specifications can be found on the [Load Balancer specifications](https://www.ovhcloud.com/fr/public-cloud/load-balancer/) page. Authorized values => `small`,`medium`,`large`. Default is 'small'.
 
 - `service.beta.kubernetes.io/openstack-internal-load-balancer`
 
@@ -392,9 +392,9 @@ When exposing services like nginx-ingress-controller, it's a common requirement 
 
 ### Migrate from Loadbalancer for Kubernetes to Public Cloud Load Balancer
 
-In order to migrate from an existing [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/) to a [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) you will have to modify an existing Service and change its LoadBalancer class.
+In order to migrate from an existing [Loadbalancer for Kubernetes](https://www.ovhcloud.com/fr/public-cloud/load-balancer-kubernetes/) to a [Public Cloud Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/) you will have to modify an existing Service and change its LoadBalancer class.
 
-Your existing LoadBalancer Service using [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/) should have the following annotation:
+Your existing LoadBalancer Service using [Loadbalancer for Kubernetes](https://www.ovhcloud.com/fr/public-cloud/load-balancer-kubernetes/) should have the following annotation:
 
 ```yaml
 annotations:
@@ -416,7 +416,7 @@ kubectl apply -f your-service-manifest.yaml
 
 > [!warning]
 >
-> As [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/) and [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) do not use the same solution for Public IP allocation, **it is not possible to keep the existing public IP** of your Loadbalancer for Kubernetes.
+> As [Loadbalancer for Kubernetes](https://www.ovhcloud.com/fr/public-cloud/load-balancer-kubernetes/) and [Public Cloud Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/) do not use the same solution for Public IP allocation, **it is not possible to keep the existing public IP** of your Loadbalancer for Kubernetes.
 > Changing the LoadBalancer class of your Service will lead to the creation of a new Loadbalancer and the allocation of a new Public IP (Floating IP).
 >
 
@@ -448,6 +448,6 @@ Visit the [Github examples repository](https://github.com/ovh/public-cloud-datab
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
