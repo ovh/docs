@@ -24,9 +24,10 @@ Chaque méthode offre des avantages spécifiques, permettant de personnaliser la
 
 ### Détail sur les Concepts Clés 
 #### Policies et Règles L7
-[GAL] ajouter une mention de la position des L7 policies https://docs.openstack.org/octavia/latest/user/guides/l7.html#policy-position
+
 - **Policy L7 :**
-  Une directive appliquée à un listener de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions possibles incluent la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête.
+  Une directive appliquée à un listener de Load Balancer pour contrôler le trafic en fonction de critères spécifiques, tels que l'URI, les en-têtes HTTP, ou les cookies. Les actions possibles incluent la redirection vers une URL spécifique ou un pool de serveurs, ou le rejet de la requête. **L'ordre d'évaluation des politiques L7 est crucial et est déterminé par le paramètre de position de chaque politique.** Les politiques sont évaluées dans un ordre spécifique défini par l'attribut de position, où la première politique correspondante est celle dont l'action est suivie. Si plusieurs politiques L7 sont associées à un listener, le paramètre de position devient crucial pour déterminer l'ordre d'évaluation. Les politiques de rejet (REJECT) ont la priorité sur toutes les autres, suivies par les redirections vers une URL (REDIRECT_TO_URL) et enfin les redirections vers un pool (REDIRECT_TO_POOL). Si une politique correspondante est trouvée, son action est exécutée. Si aucune politique ne correspond, la requête est dirigée vers le pool par défaut du listener, ou retourne une erreur 503 si aucun pool par défaut n'existe.
+
   - **Principales caractéristiques :**
     - **action** : L'action à réaliser (par exemple, redirect, reject).
     - **redirect_http_code** : Le code HTTP utilisé lors de la redirection.
@@ -37,8 +38,8 @@ Chaque méthode offre des avantages spécifiques, permettant de personnaliser la
     - Les L7 policy ne s'appliquent qu'à des listeners de type `HTTP` ou `TERMINATED_HTTPS`.
 
 - **Règle L7 :**
-  Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie.
-  [GAL] il peut y avoir plusieurs règles pour une policy cf https://docs.openstack.org/octavia/latest/user/guides/l7.html#policy-logic
+  Condition sous-jacente d'une policy L7, qui définit les critères spécifiques de correspondance du trafic, comme une correspondance d'URI ou de cookie. Plusieurs règles peuvent être associées à une politique, et toutes doivent correspondre pour que l'action de la politique soit appliquée.
+
   - **Principales caractéristiques :**
     - **type** : Le type de condition (par exemple, HEADER, COOKIE, URI).
     - **compare_type** : Le type de comparaison (par exemple, EQUAL_TO, STARTS_WITH).
@@ -58,6 +59,7 @@ Chaque méthode offre des avantages spécifiques, permettant de personnaliser la
   - **value** : `/oldpath`
 
 Cet exemple montre comment rediriger le trafic de `/oldpath` vers `https://example.com/newpath` avec un code de redirection HTTP 302 lorsque l'URI commence par `/oldpath`.
+
 
 ### Étape 1 : Configuration via l'espace client OVHcloud
 
