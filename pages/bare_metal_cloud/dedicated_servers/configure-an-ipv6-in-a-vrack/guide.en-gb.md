@@ -1,6 +1,6 @@
 ---
 title: Configuring an IPV6 block in a vRack
-excerpt: This guide will show you how to configure a block of public IPV6 addresses for use with the vRack.
+excerpt: This guide will show you how to configure a block of public IPV6 addresses for use with the vRack
 updated: 2024-04-18
 ---
 
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses. 
+The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses.
 
 **This guide focuses on Additional IPv6 address block configuration within a vRack network.**
 
@@ -33,31 +33,32 @@ IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limi
 
 - **Hierarchical Routing and Segmentation**: IPv6 enables efficient hierarchical routing and logical infrastructure segmentation. This improves network manageability and security, ideal for reselling VMs with dedicated subnets or organising infrastructure into distinct segments.
 
-- **Low latency**: Native, end-to-end IPv6 connectivity can be an enabler for latency-sensitive services like media streaming, as many recent provider networks is build IPv6-native. In such networks using IPv4 services brings additional latency (and costs).
+- **Low latency**: Native, end-to-end IPv6 connectivity can be an enabler for latency-sensitive services like media streaming, as many recent provider networks are built IPv6-native. In such networks, using IPv4 services brings additional latency (and costs).
 
 By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern internet usage.
 
 
 ## Requirements
 
-- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
-- A [vRack compatible server](https://www.ovh.com/ca/en/solutions/vrack/){.external} attached to your vRack network
-- Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+- A [vRack](https://www.ovhcloud.com/en-gb/network/vrack/){.external} service activated in your account
+- A [vRack compatible server](https://www.ovhcloud.com/en-gb/network/vrack/){.external} attached to your vRack network
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
 ## Instructions
 
-### Gathering new Additional IPv6 block
+### Obtaining a new Additional IPv6 block
 
-While requesting new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
+While requesting a new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
 
 **<ins>Actions</ins>**  
 
-<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using [this form](https://survey.ovh.com/index.php/483751?lang=en)
+<b>To request new Additional IPv6 block</b> please submit your participation request in Alpha product stage using [this form](https://survey.ovh.com/index.php/483751?lang=en).
 
 Once your request will be processed, we will inform you via email about Additional IPv6 block delivery.
 
@@ -79,7 +80,7 @@ In this section we will present basic IPv6 setup for your vRack connected hosts.
 
 ![Configuring IPv6 in a vRack](images/20240418-03.png){.thumbnail}
 
-Example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belongs to the first /64 subnet from given public /56 Additional IPv6 block. Both leverage vRack interface for public IPv6 connectivity.
+The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
 
 
 #### APIv6 setup
@@ -88,13 +89,13 @@ Example above shows two hosts with their vRack-side interfaces configured with I
 <summary> <b>Attributing Additional IPv6 to a vRack</b></summary>
 <blockquote>
 
-Delivered IPv6 block (as seen previously with /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
+The delivered IPv6 block (as seen previously with the /eligibleServices API call), can now be added to the vRack network configuration using this POST method:
 
 <img src="/images/post-ipv6.png" alt="api post add block"/>
 
 <br/>It can be also verified this way:
 <img src="/images/20240418-04.png" alt="GET ipv6 call"/>
-<br/>Now, we see our block configured with a vRack. Next step is to configure your host or VMs.
+<br/>Now, we see our block configured with a vRack. The next step is to configure your host or VMs.
 
 </blockquote>
 </details>
@@ -103,7 +104,7 @@ Delivered IPv6 block (as seen previously with /eligibleServices API call), can n
 <summary> <b>Static IP configuration</b></summary>
 <blockquote>
 
-    Once Additional IPv6 /56 block is attributed to a vRack network, there is always first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
+    Once the Additional IPv6 /56 block is attributed to a vRack network, there is always the first /64 subnet that is bridged with it. That means, you can easily use such IPs on your hosts. 
     Let's check exactly which subnet is bridged:
 
 
@@ -137,7 +138,7 @@ Delivered IPv6 block (as seen previously with /eligibleServices API call), can n
 <summary> <b>Static IP configuration</b></b> </summary>
 <blockquote>
 
-    In a basic configuration, you may want to setup an IP address and routing manually. This is also suggested way when your machine acts as a router (see <a href="#configuring-an-ipv6-in-a-vrack-for-routed-mode">configuring routed subnet</a>) and has ipv6.forwarding mode enabled.
+    In a basic configuration, you may want to setup an IP address and routing manually. This is also the suggested way when your machine acts as a router (see <a href="#configuring-an-ipv6-in-a-vrack-for-routed-mode">configuring routed subnet</a>) and has ipv6.forwarding mode enabled.
 
     <br/><br/>First, let's add an IP address on the vrack interface (in our example "eth1"):
 ``` bash
@@ -145,12 +146,12 @@ $ sudo ip address add 2001:41d0:abcd:ef00::2/64 dev eth1
 ```
 (Please note that the first IP address in a block, 2001:41d0:abcd:ef00::1/64 is gateway IP address and must not be used for host addressing).
 
-<br/>Optionally, if you want to use vRack interface as the main one for IPv6 traffic, default route can be configured the following way:
+<br/>Optionally, if you want to use the vRack interface as the main one for IPv6 traffic, the default route can be configured the following way:
 ``` bash
 $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1/64 dev eth1
 ```
 
-<br/>Finally, bring up the interface (and verify configured IP on it):
+<br/>Finally, bring up the interface (and verify the configured IP on it):
 ``` bash
 $ sudo ip link set up dev eth1
 $ ip -6 addr list dev eth1
@@ -165,9 +166,9 @@ $ ip -6 addr list dev eth1
 <summary> <b>Automatic IP configuration (SLAAC)</b></b> </summary>
 <blockquote>
 
-To use automatic configuration, please ensure you have configured your interface as the following:
+To use automatic configuration, please ensure you have configured your interface as follows:
 
-<br/><br/>First, let's allow our host to accept Router Advertisements (for autoconfiguration) on the vrack interface (in our example "eth1"):
+<br/><br/>First, let's allow our host to accept Router Advertisements (for autoconfiguration) on the vRack interface (in our example "eth1"):
 ``` bash
 $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=1
 ```
@@ -181,7 +182,7 @@ $ ip -6 addr list dev eth1
     inet6 2001:41d0:abcd:ef00:fe34:97ff:feb0:c166/64 scope global dynamic mngtmpaddr
        valid_lft 2322122sec preferred_lft 334922sec
 ```
-After a moment (configuration must propagate), specific IPv6 address (with flags <i>global</i> and <i>dynamic</i>) should be visible on the interface.
+After a moment (the configuration must propagate), specific IPv6 address (with the flags <i>global</i> and <i>dynamic</i>) should be visible on the interface.
 
 </blockquote>
 </details>
@@ -192,7 +193,7 @@ After a moment (configuration must propagate), specific IPv6 address (with flags
 <summary> <b>Local</b> </summary>
 <blockquote>
 
-Most basic test is to ping local IP address on a host:
+The most basic test is to ping a local IP address on a host:
 
 ``` bash
 debian@host:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
@@ -208,7 +209,7 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 <summary> <b>Remote</b> </summary>
 <blockquote>
 
-Next, let's verify connectivity from remote:    
+Next, let's verify the connectivity from remote:    
 ``` bash
 ubuntu@remote-test:~$ ping 2001:41d0:900:2100:fe34:97ff:feb0:c166
 PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c166) 56 data bytes
@@ -220,15 +221,15 @@ PING 2001:41d0:900:2100:fe34:97ff:feb0:c166(2001:41d0:900:2100:fe34:97ff:feb0:c1
 </blockquote>
 </details>
 
-### Configuring an IPv6 in a vRack for routed-mode
+### Configuring an IPv6 in a vRack for routed mode
 
-In this section we will present more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color on a schema below).
+In this section we will present a more advanced IPv6 setup, where your vRack connected hosts are acting as a routers for hosted Virtual Machines. Such VMs have delegated subnets from the main IPv6 block (presented with an orange color in the schema below).
 
 ![Configuring an IPv6 in a vRack for routed-mode](images/20240418-01.png){.thumbnail}
 
 
-The traffic path is as follows: inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local-link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
-Traffic comming back from such VM should use default route via first part of the local link (black one, fd00::1), then (possibly default) route from a host to it's gateway.
+The traffic path is as follows: Inbound traffic to a given VM (with specified subnet) is routed through the customer's vRack, first to a specified host (with a next-hop address), then using a local link (or vSwitch - black link fd00::/64 on a diagram) to the particular VM.
+Traffic comming back from such a VM should use the default route via the first part of the local link (black one, fd00::1), then (possibly default) route from a host to its gateway.
 
 #### APIv6 commands
 
@@ -240,13 +241,13 @@ To create a routed subnet, we must first define:
 <br/>- <b>subnet in CIDR notation</b> (size between /57 and /64)
 <br/>- <b>next-hop address</b> (so the host's IPv6 address)
 
-<br/><br/>Please note that given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
+<br/><br/>Please note that a given subnet can not overlap with any other subnet defined and next-hop address must belong to the first part (bridged /64 subnet) of your Additional IPv6 prefix.
 
-<br/><br/>Example below shows how to define such subnet:
+<br/><br/>The example below shows how to define such a subnet:
 
 <img src="images/20240418-02.png" alt="Define routed subnet"/>
 
-Here, we defined routed subnet 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00::2
+Here, we defined a routed subnet 2001:41d0:abcd:ef10::/60 which will be delegated to the VM hosted on: 2001:41d0:abcd:ef00::2
 
 </blockquote>
 </details>
@@ -262,7 +263,7 @@ Here, we defined routed subnet 2001:41d0:abcd:ef10::/60 which will be delegated 
 
 When hosting Virtual Machines, we strongly recommend to use static configuration on your host.
 
-<br/><br/>Setup an IPv6 address, bring up the interface and (optionally) add default route over the vRack interface:
+<br/><br/>Set up an IPv6 address, bring up the interface and (optionally) add the default route over the vRack interface:
 ``` bash
 $ sudo ip addr add 2001:41d0:abcd:ef00::2/64 dev eth1
 $ sudo ip link set dev eth1 up
@@ -277,7 +278,7 @@ $ sudo ip -6 route add default via 2001:41d0:abcd:ef00::1 dev eth1
 <blockquote>
 
 In some cases, you may want to configure your interfaces with SLAAC and IP forwarding together. 
-<br/>Please note this bring additional risks (such as loosing access not only to the host but also to all VMs) and is not recommended.
+<br/>Please note that this brings additional risks (such as losing access not only to the host but also to all VMs) and is not recommended.
 
 <br/><br/>Ensuring IPv6 forwarding is enabled:
 ``` bash
@@ -294,13 +295,13 @@ $ sudo sysctl -w net.ipv6.conf.eth1.accept_ra=2
 
 
 <details>
-<summary> <b>Routed subnet configuration on a host and inside VM</b> </summary>
+<summary> <b>Routed subnet configuration on a host and inside a VM</b> </summary>
 <blockquote>
 
-To ensure that our host knows what to do with packets addressed to the new routed subnet (that will be on a VM), we must add specific route for it.
-<br/>In our example this is veth link with fd00::2/64 address inside a VM we will use for a routing.
+To ensure that our host knows what to do with packets addressed to the new routed subnet (that will be on a VM), we must add a specific route for it.
+<br/>In our example this is the veth link with the address fd00::2/64 inside a VM we will use for routing.
 
-<br/><br/>Please note that this is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
+<br/><br/>Please note that this is very specific to the hypervisor installed (it can be vSwitch or veth interfaces). Please refer to the specific hypervisor networking guide for this setup.
 ``` bash
 $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 ```
@@ -313,7 +314,7 @@ $ sudo ip -6 route add 2001:41d0:abcd:ef10::/60 via fd00::2
 <summary> <b>Routed subnet configuration inside a VM</b> </summary>
 <blockquote>
 
-Again, please note that used link between host and VMs is very specific to the Hypervisor installed (it can be some of the vSwitch or veth interfaces). Please refer specific hypervisor networking guide for this setup.
+Again, please note that the link used between host and VMs is very specific to the hypervisor installed (it can be vSwitch or veth interfaces). Please refer to the specific hypervisor networking guide for this setup.
 
 <br/><br/>Add our routed IP block inside a VM to ensure it can accept packets:
     
@@ -321,7 +322,7 @@ Again, please note that used link between host and VMs is very specific to the H
 debian@vm-1:~$ sudo ip address add 2001:41d0:abcd:ef10::1/60 dev lo
 ```
 
-Add default route on a VM to ensure traffic can get back out of it:
+Add the default route on a VM to ensure traffic can get back out of it:
 ``` bash
 debian@vm-1:~$ sudo ip -6 route add default via fd00::1
 ```
@@ -352,7 +353,7 @@ PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=64 time=0.073 ms
 ```
 
-Check route to our /60 subnet on a host:
+Check the route to our /60 subnet on a host:
 ``` bash
 debian@host:~$ ip -6 route get 2001:41d0:abcd:ef10::1
 2001:41d0:abcd:ef10::1 from :: via fd00::2 dev veth1a src fd00::1 metric 1024 pref medium
@@ -365,7 +366,7 @@ debian@host:~$ ip -6 route get 2001:41d0:abcd:ef10::1
 <summary> <b>Local, on a VM</b> </summary>
 <blockquote>
 
-First, check routing table:
+First, check the routing table:
 ``` bash
 debian@vm-1:~$ ip -6 route show
 2001:41d0:abcd:ef10::/60 dev lo proto kernel metric 256 pref medium
@@ -389,7 +390,7 @@ PING 2001:41d0:abcd:ef00::2(2001:41d0:abcd:ef00::2) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef00::2: icmp_seq=2 ttl=64 time=0.080 ms
 ```
 
-Finally, let's ping external IPv4 from a VM:
+Finally, let's ping an external IPv6 from a VM:
 ``` bash
 debian@vm-1:~$ ping 2001:41d0:242:d300::
 PING 2001:41d0:242:d300::(2001:41d0:242:d300::) 56 data bytes
@@ -397,7 +398,7 @@ PING 2001:41d0:242:d300::(2001:41d0:242:d300::) 56 data bytes
 64 bytes from 2001:41d0:242:d300::: icmp_seq=2 ttl=57 time=0.417 ms
 ```
 
-Or, using domain name:
+Or, using a domain name:
 ``` bash
 debian@vm-1:~$ ping -6 proof.ovh.net
 PING proof.ovh.net(2001:41d0:242:d300:: (2001:41d0:242:d300::)) 56 data bytes
@@ -412,7 +413,7 @@ PING proof.ovh.net(2001:41d0:242:d300:: (2001:41d0:242:d300::)) 56 data bytes
 <summary> <b>From remote host</b> </summary>
 <blockquote>
 
-Let's check connectivity to our VM from outside of OVHcloud network:
+Let's check connectivity to our VM from outside the OVHcloud network:
 
 ``` bash
 ubuntu@remote-test:~$ ping 2001:41d0:abcd:ef10::1
@@ -421,7 +422,7 @@ PING 2001:41d0:abcd:ef10::1(2001:41d0:abcd:ef10::1) 56 data bytes
 64 bytes from 2001:41d0:abcd:ef10::1: icmp_seq=2 ttl=55 time=2.98 ms
 ```
 
-And traceroute from remote host (somewhere in the internet):
+And traceroute from a remote host (somewhere in the internet):
 ``` bash
 ubuntu@remote-test:~$ mtr -rc1 2001:41d0:abcd:ef10::1
 Start: 2024-03-26T09:26:45+0000
@@ -444,20 +445,20 @@ In this example:
 OVHcloud's vRack technology enables organizations to connect servers across different locations as if they were located within the same data center. 
 On the other hand, services like Additional IPv6 are regional, which means their functionality is linked to a particular location. 
 
-Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
+Below, an architecture is presented for learning purposes with two different regions and different Additional IPv6 blocks announced from each. Also, there is a host presented with IP addresses from both networks as well as a suboptimal route example - a host in one region addressed with IPv6 address announced in another region:
 ![image](images/20240418-08.png)
 
-Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in whole vRack** (as this may lead to unpredictable results and loosing connectivity randomly).
+Please note that in such setups (with Additional IPv6 from more than single region) SLAAC **must be turned off in the whole vRack** (as this may lead to unpredictable results and losing connectivity randomly).
 
 
 ### Benefits
 
-- **Enhanced Connectivity:** By leveraging a vRack network together with public IP blocks routed in multiple locations, businesses can ensure seamless communication around the globe, regardless of backend server physical location.
-- **Move to cloud:** vRack technology can be a great enabler on early steps of "move-to-cloud" organizational strategy, unblocking some legacy applications that still require local network communication.
+- **Enhanced Connectivity:** By leveraging a vRack network together with public IP blocks routed in multiple locations, businesses can ensure seamless communication around the globe, regardless of backend server's physical locations.
+- **Move to cloud:** vRack technology can be a great enabler of early steps toward a "move-to-cloud" organizational strategy, unblocking some legacy applications that still require local network communication.
 
 ### Risks and Considerations
 
-- **No SLAAC support in multi-location setups:** When there is more than one location acting in routing public IP traffic (both IPv4 and IPv6) into the same vRack, Stateless Address Autoconfiguration (SLAAC) **should not be used**. As an example of such situation, let's consider existing hosts using IPv4 addresses. Such hosts are becoming reconfigured automatically by SLAAC with IPv6 gateway setup from other region. Together with IPv6 prioritization over IPv4 by some Operating Systems this situation can lead to suboptimal routing or even total loss of connectivity for such hosts.
+- **No SLAAC support in multi-location setups:** When there is more than one location acting in routing public IP traffic (both IPv4 and IPv6) into the same vRack, Stateless Address Autoconfiguration (SLAAC) **should not be used**. As an example of such situation, let's consider existing hosts using IPv4 addresses. Such hosts are becoming reconfigured automatically by SLAAC with IPv6 gateway set up from other region. Together with IPv6 prioritization over IPv4 by some Operating Systems this situation can lead to suboptimal routing or even total loss of connectivity for such hosts.
 
 
 ## Known Limitations
@@ -466,13 +467,13 @@ Understanding the constraints of using **Additional IPv6** within the **vRack** 
 
 - **Additional IPv6 goes only with vRack**: Please note that Additional IPv6 addresses can only be configured with vRack-connected backends.
 - **SLAAC limitations in multi-location setups**: Stateless Address Autoconfiguration (SLAAC) is not supported when there is public IP traffic (both IPv6 and IPv4) routed into vRack in multiple region locations.
-- **Up to 128 hosts inside bridged subnet**: You can use up to 128 IP addresses directly on vRack.
+- **Up to 128 hosts inside bridged subnet**: You can use up to 128 IP addresses directly on the vRack.
 - **Up to 128 next-hop routes**: You can use up to 128 routes for routed subnets inside a vRack.
 - **Public bandwidth cap**: Outbound traffic from OVHcloud to the internet is capped at 5Gbps per region location.
 - **IPv6 block allocation limits**: Users can obtain up to three /56 Additional IPv6 blocks per region location.
-- **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend. 
+- **Mobility of Additional IPv6 blocks**: Due to the hierarchical design of the IPv6 address space, Additional IPv6 blocks are region-specific. This means blocks cannot be transferred between regions, although they can be reassigned within any vRack-connected backend.
   
 
-## Go Further
+## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
