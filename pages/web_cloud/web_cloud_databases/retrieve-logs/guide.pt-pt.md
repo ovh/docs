@@ -10,7 +10,7 @@ updated: 2024-03-07
 
 ## Objetivo
 
-A solução [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) permite alojar várias bases de dados. Em certas situações, poderá ter de consultar / recuperar os logs:
+A solução [Web Cloud Databases](/links/web/databases) permite alojar várias bases de dados. Em certas situações, poderá ter de consultar / recuperar os logs:
 
 - do seu servidor Web Cloud Databases;
 - para uma das bases de dados alojadas no seu servidor Web Cloud Databases.
@@ -19,7 +19,7 @@ A solução [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/database
 
 ## Requisitos
 
-- Ter uma solução [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) (incluída ou não numa oferta de [alojamento web performance](/links/web/hosting)).
+- Ter uma solução [Web Cloud Databases](/links/web/databases) (incluída ou não numa oferta de [alojamento web performance](/links/web/hosting)).
 Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

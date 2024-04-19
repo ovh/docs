@@ -30,7 +30,7 @@ Este motor es 100% compatible y más «libre» que su hermano mayor MySQL. Al co
 
 Para seguir los pasos de esta guía, es necesario:
 
-- Tener una [instancia Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/) (incluida en un plan de [hosting Performance](/links/web/hosting))
+- Tener una [instancia Web Cloud Databases](/links/web/databases) (incluida en un plan de [hosting Performance](/links/web/hosting))
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Haber consultado la [guía de inicio de Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 

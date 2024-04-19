@@ -6,7 +6,7 @@ updated: 2024-03-07
 
 ## Objective
 
-With the [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) solution, you can host multiple databases. In some situations, you may need to view or retrieve the logs of:
+With the [Web Cloud Databases](/links/web/databases) solution, you can host multiple databases. In some situations, you may need to view or retrieve the logs of:
 
 - Your Web Cloud Databases server.
 - One of the databases hosted on your Web Cloud Databases server.
@@ -15,7 +15,7 @@ With the [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/database
 
 ## Requirements
 
-- A [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) solution (included in a [Performance web hosting](/links/web/hosting) solution or standalone)
+- A [Web Cloud Databases](/links/web/databases) solution (included in a [Performance web hosting](/links/web/hosting) solution or standalone)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

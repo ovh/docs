@@ -28,7 +28,7 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web performance](/links/web/hosting)
+- Disporre di una [istanza Web Cloud Databases](/links/web/databases){.external} (inclusa in un'offerta di[hosting web performance](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Consulta la guida [all'avvio di Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

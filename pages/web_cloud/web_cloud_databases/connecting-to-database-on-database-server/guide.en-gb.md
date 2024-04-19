@@ -12,14 +12,14 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-gb/web-cloud/databases/){.external} (included in a [Performance web hosting plan](/links/web/hosting))
+- A [Web Cloud Databases instance](/links/web/databases){.external} (included in a [Performance web hosting plan](/links/web/hosting))
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](/links/web/databases){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 

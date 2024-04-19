@@ -6,7 +6,7 @@ updated: 2024-03-07
 
 ## Objectif
 
-La solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) permet d'héberger plusieurs bases de données. Dans certaines situations, vous pouvez être amené à consulter / récupérer les logs  :
+La solution [Web Cloud Databases](/links/web/databases) permet d'héberger plusieurs bases de données. Dans certaines situations, vous pouvez être amené à consulter / récupérer les logs  :
 
 - de votre serveur Web Cloud Databases ;
 - pour l'une des bases de données hébergée sur votre serveur Web Cloud Databases.
@@ -15,7 +15,7 @@ La solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/database
 
 ## Prérequis
 
-- Disposer d'une solution [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse ou non dans une offre d'[hébergement web performance](/links/web/hosting)).
+- Disposer d'une solution [Web Cloud Databases](/links/web/databases) (incluse ou non dans une offre d'[hébergement web performance](/links/web/hosting)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

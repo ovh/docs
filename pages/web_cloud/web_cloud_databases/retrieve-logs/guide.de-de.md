@@ -10,7 +10,7 @@ updated: 2024-03-07
 
 ## Ziel
 
-Mit der Datenbank-Lösung [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) können Sie mehrere Datenbanken hosten. In manchen Situationen kann es notwendig sein, deren Logs einzusehen oder abzurufen:
+Mit der Datenbank-Lösung [Web Cloud Databases](/links/web/databases) können Sie mehrere Datenbanken hosten. In manchen Situationen kann es notwendig sein, deren Logs einzusehen oder abzurufen:
 
 - Logs Ihres Web Cloud Databases Servers
 - Logs für eine der auf Ihrem Web Cloud Databases Server gehosteten Datenbanken
@@ -19,7 +19,7 @@ Mit der Datenbank-Lösung [Web Cloud Databases](https://www.ovhcloud.com/de/web-
 
 ## Voraussetzungen
 
-- Sie verfügen über [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten oder separat).
+- Sie verfügen über [Web Cloud Databases](/links/web/databases) (in einem [Performance Web Hosting](/links/web/hosting) Angebot enthalten oder separat).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

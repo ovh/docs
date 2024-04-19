@@ -12,14 +12,14 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
+- Disposer d'une [instance Web Cloud Databases](/links/web/databases){.external} (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
+> Il est à noter que les offres [Web Cloud Databases](/links/web/databases){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
 > <br> - Il n'y a pas d'accès super utilisateur « root ». 
 > <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 

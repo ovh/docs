@@ -10,7 +10,7 @@ updated: 2024-03-07
 
 ## Wprowadzenie
 
-Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) umożliwia hostowanie kilku baz danych. W niektórych sytuacjach możesz sprawdzić/pobrać logi:
+Rozwiązanie [Web Cloud Databases](/links/web/databases) umożliwia hostowanie kilku baz danych. W niektórych sytuacjach możesz sprawdzić/pobrać logi:
 
 - serwera Web Cloud Databases ;
 - dla jednej z baz danych hostowanych na serwerze Web Cloud Databases.
@@ -19,7 +19,7 @@ Rozwiązanie [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databas
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartego lub nie w ofercie [hostingu performance](/links/web/hosting)).
+- Posiadanie rozwiązania [Web Cloud Databases](/links/web/databases) (zawartego lub nie w ofercie [hostingu performance](/links/web/hosting)).
 - Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce

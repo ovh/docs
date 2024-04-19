@@ -12,7 +12,7 @@ updated: 2023-10-26
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
+- Disposer d'une [instance Web Cloud Databases](/links/web/databases) (incluse dans une offre d'[hébergement web Performance](/links/web/hosting)).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
